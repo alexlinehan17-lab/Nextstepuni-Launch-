@@ -169,7 +169,7 @@
     },
     "english-2010-ol-p2-prescribed-a": {
       "topicId": "english-11-24",
-      "title": "For Heidi With Blue Hair",
+      "title": "For Heidi with Blue Hair",
       "canonicalLabel": "Fleur Adcock",
       "observedHeading": "Poetry A · For Heidi With Blue Hair",
       "paperPage": 11,
@@ -177,11 +177,12 @@
       "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "sourcePages": [
         11
-      ]
+      ],
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
     },
     "english-2010-ol-p2-prescribed-b": {
       "topicId": "english-11-16",
-      "title": "My Father Perceived As A Vision Of St Francis",
+      "title": "My Father Perceived as a Vision of St Francis",
       "canonicalLabel": "Paula Meehan",
       "observedHeading": "Poetry B · My Father Perceived As A Vision Of St Francis",
       "paperPage": 13,
@@ -189,7 +190,8 @@
       "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "sourcePages": [
         13
-      ]
+      ],
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
     },
     "english-2010-ol-p2-prescribed-c": {
       "topicId": "english-11-5",
@@ -205,7 +207,7 @@
     },
     "english-2010-ol-p2-prescribed-d": {
       "topicId": "english-11-23",
-      "title": "The Wild Swans At Coole",
+      "title": "The Wild Swans at Coole",
       "canonicalLabel": "W.B. Yeats",
       "observedHeading": "Poetry D · The Wild Swans At Coole",
       "paperPage": 16,
@@ -213,7 +215,8 @@
       "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "sourcePages": [
         16
-      ]
+      ],
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
     },
     "english-2011-hl-p2-single-a": {
       "topicId": "english-12-30",
@@ -633,7 +636,7 @@
     },
     "english-2012-ol-p2-prescribed-d": {
       "topicId": "english-11-57",
-      "title": "Mirror In February",
+      "title": "Mirror in February",
       "canonicalLabel": "Thomas Kinsella",
       "observedHeading": "Poetry D · Mirror In February",
       "paperPage": 18,
@@ -641,7 +644,9 @@
       "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
       "sourcePages": [
         18
-      ]
+      ],
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF18.",
+      "titlePrintedPage": 18
     },
     "english-2013-hl-p2-single-a": {
       "topicId": "english-12-30",
@@ -695,7 +700,8 @@
       "observedHeading": "Prescribed Poetry · “Bishop’S Carefully Judged Use Of Language Aids The Reader To Uncover The Intensity · Q1",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
-      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1"
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
+      "promptHeading": "Elizabeth Bishop"
     },
     "english-2013-hl-p2-prescribed-2": {
       "topicId": "english-11-9",
@@ -704,7 +710,8 @@
       "observedHeading": "Prescribed Poetry · “Hopkins’ Innovative Style Displays His Struggle With What He Believes To Be · Q2",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
-      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1"
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
+      "promptHeading": "Gerard Manley Hopkins"
     },
     "english-2013-hl-p2-prescribed-3": {
       "topicId": "english-11-15",
@@ -713,7 +720,8 @@
       "observedHeading": "Prescribed Poetry · “Mahon Uses Language And Imagery To Transform Personal Observations Into · Q3",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
-      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1"
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
+      "promptHeading": "Derek Mahon"
     },
     "english-2013-hl-p2-prescribed-4": {
       "topicId": "english-11-19",
@@ -722,7 +730,8 @@
       "observedHeading": "Prescribed Poetry · “Plath’S Provocative Imagery Serves To Highlight The Intense Emotions Expressed In Her · Q4",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
-      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1"
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
+      "promptHeading": "Sylvia Plath"
     },
     "english-2013-ol-p2-single-a": {
       "topicId": "english-12-39",
@@ -846,7 +855,7 @@
     },
     "english-2013-ol-p2-prescribed-d": {
       "topicId": "english-11-41",
-      "title": "Like As The Waves",
+      "title": "Like as the Waves",
       "canonicalLabel": "William Shakespeare (Sonnets)",
       "observedHeading": "Poetry D · Like As The Waves",
       "paperPage": 17,
@@ -855,7 +864,8 @@
       "sourcePages": [
         17
       ],
-      "sourcePagesEvidence": "Full printed poem/extract and byline visually checked on this page. Following question-only or blank pages are not source material."
+      "sourcePagesEvidence": "Full printed poem/extract and byline visually checked on this page. Following question-only or blank pages are not source material.",
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
     },
     "english-2014-hl-p2-single-a": {
       "topicId": "english-12-17",
@@ -1037,7 +1047,7 @@
     },
     "english-2014-ol-p2-prescribed-b": {
       "topicId": "english-11-58",
-      "title": "Poems For Breakfast",
+      "title": "Poems for Breakfast",
       "canonicalLabel": "Enda Wyley",
       "observedHeading": "Poetry B · Poems For Breakfast",
       "paperPage": 14,
@@ -1045,7 +1055,9 @@
       "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
       "sourcePages": [
         14
-      ]
+      ],
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF14.",
+      "titlePrintedPage": 14
     },
     "english-2014-ol-p2-prescribed-c": {
       "topicId": "english-11-19",
@@ -1275,7 +1287,7 @@
     },
     "english-2015-ol-p2-prescribed-d": {
       "topicId": "english-11-18",
-      "title": "The Bend In The Road",
+      "title": "The Bend in the Road",
       "canonicalLabel": "Eiléan Ní Chuilleanáin",
       "observedHeading": "Poetry D · The Bend In The Road",
       "paperPage": 18,
@@ -1283,7 +1295,8 @@
       "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
       "sourcePages": [
         18
-      ]
+      ],
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
     },
     "english-2016-hl-p2-single-a": {
       "topicId": "english-12-30",
@@ -1458,21 +1471,23 @@
     },
     "english-2016-ol-p2-prescribed-b": {
       "topicId": "english-11-2",
-      "title": "I Felt A Funeral In My Brain",
+      "title": "I Felt a Funeral in My Brain",
       "canonicalLabel": "Emily Dickinson",
       "observedHeading": "Poetry B · I Felt A Funeral In My Brain",
       "paperPage": 13,
       "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
-      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
     },
     "english-2016-ol-p2-prescribed-c": {
       "topicId": "english-11-61",
-      "title": "After Viewing The Bowling Match at Castlemary, Cloyne (1847)",
+      "title": "After Viewing the Bowling Match at Castlemary, Cloyne (1847)",
       "canonicalLabel": "Greg Delanty",
       "observedHeading": "Poetry C · After Viewing The Bowling Match At Castlemary,",
       "paperPage": 14,
       "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
-      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
     },
     "english-2016-ol-p2-prescribed-d": {
       "topicId": "english-11-42",
@@ -1647,12 +1662,13 @@
     },
     "english-2017-ol-p2-prescribed-a": {
       "topicId": "english-11-19",
-      "title": "The Arrival Of The Bee Box",
+      "title": "The Arrival of the Bee Box",
       "canonicalLabel": "Sylvia Plath",
       "observedHeading": "Poetry A · The Arrival Of The Bee Box",
       "paperPage": 14,
       "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
-      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
     },
     "english-2017-ol-p2-prescribed-b": {
       "topicId": "english-11-34",
@@ -1674,12 +1690,13 @@
     },
     "english-2017-ol-p2-prescribed-d": {
       "topicId": "english-11-27",
-      "title": "Self‐Portrait In The Dark (With Cigarette)",
+      "title": "Self‐Portrait in the Dark (with Cigarette)",
       "canonicalLabel": "Colette Bryce",
       "observedHeading": "Poetry D · Self‐Portrait In The Dark (With Cigarette)",
       "paperPage": 17,
       "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
-      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
     },
     "english-2018-hl-p2-single-a": {
       "topicId": "english-12-30",
@@ -1733,7 +1750,8 @@
       "observedHeading": "Prescribed Poetry · From Your Study Of The Poetry Of Robert Frost On Your Course, Select The Poems That, · Q1",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
-      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06"
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
+      "promptHeading": "Robert Frost"
     },
     "english-2018-hl-p2-prescribed-2": {
       "topicId": "english-11-18",
@@ -1742,7 +1760,8 @@
       "observedHeading": "Prescribed Poetry · “Eiléan Ní Chuilleanáin Tells Fascinating Stories, Often Examining Themes That Are · Q2",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
-      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06"
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
+      "promptHeading": "Eiléan Ní Chuilleanáin"
     },
     "english-2018-hl-p2-prescribed-3": {
       "topicId": "english-11-17",
@@ -1751,7 +1770,8 @@
       "observedHeading": "Prescribed Poetry · From Your Study Of The Poetry Of John Montague On Your Course, Select The Poems · Q3",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
-      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06"
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
+      "promptHeading": "John Montague"
     },
     "english-2018-hl-p2-prescribed-4": {
       "topicId": "english-11-13",
@@ -1760,7 +1780,8 @@
       "observedHeading": "Prescribed Poetry · Philip Larkin Wanted His Poetry To Appeal To “The Common Reader”, Not Just Academics · Q4",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
-      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06"
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
+      "promptHeading": "Philip Larkin"
     },
     "english-2018-ol-p2-single-a": {
       "topicId": "english-12-39",
@@ -1871,7 +1892,7 @@
     },
     "english-2018-ol-p2-prescribed-c": {
       "topicId": "english-11-1",
-      "title": "Child Of Our Time",
+      "title": "Child of Our Time",
       "canonicalLabel": "Eavan Boland",
       "observedHeading": "Poetry C · Child Of Our Time",
       "paperPage": 16,
@@ -1880,7 +1901,9 @@
       "sourcePages": [
         16
       ],
-      "sourcePagesEvidence": "Full poem, byline and questions visually checked on the indicated PDF page; next page begins a different poem or is blank."
+      "sourcePagesEvidence": "Full poem, byline and questions visually checked on the indicated PDF page; next page begins a different poem or is blank.",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF16.",
+      "titlePrintedPage": 16
     },
     "english-2018-ol-p2-prescribed-d": {
       "topicId": "english-11-62",
@@ -2257,21 +2280,25 @@
     },
     "english-2020-ol-p2-prescribed-a": {
       "topicId": "english-11-48",
-      "title": "The Cadillac In The Attic",
+      "title": "The Cadillac in the Attic",
       "canonicalLabel": "Andrew Hudgins",
       "observedHeading": "Poetry A · The Cadillac In The Attic",
       "paperPage": 14,
       "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
-      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF14.",
+      "titlePrintedPage": 14
     },
     "english-2020-ol-p2-prescribed-b": {
       "topicId": "english-11-20",
-      "title": "Aunt Jennifer’S Tigers",
+      "title": "Aunt Jennifer’s Tigers",
       "canonicalLabel": "Adrienne Rich",
       "observedHeading": "Poetry B · Aunt Jennifer’S Tigers",
       "paperPage": 15,
       "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
-      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF15.",
+      "titlePrintedPage": 15
     },
     "english-2020-ol-p2-prescribed-c": {
       "topicId": "english-11-14",
@@ -2697,12 +2724,14 @@
     },
     "english-2022-ol-p2-prescribed-a": {
       "topicId": "english-11-23",
-      "title": "The Lake Isle Of Innisfree",
+      "title": "The Lake Isle of Innisfree",
       "canonicalLabel": "W.B. Yeats",
       "observedHeading": "Poetry A · The Lake Isle Of Innisfree",
       "paperPage": 15,
       "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
-      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF15.",
+      "titlePrintedPage": 15
     },
     "english-2022-ol-p2-prescribed-b": {
       "topicId": "english-11-16",
@@ -2724,12 +2753,14 @@
     },
     "english-2022-ol-p2-prescribed-d": {
       "topicId": "english-11-20",
-      "title": "The Uncle Speaks In The Drawing Room",
+      "title": "The Uncle Speaks in the Drawing Room",
       "canonicalLabel": "Adrienne Rich",
       "observedHeading": "Poetry D · The Uncle Speaks In The Drawing Room",
       "paperPage": 18,
       "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
-      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF18.",
+      "titlePrintedPage": 18
     },
     "english-2022-ol-p2-prescribed-e": {
       "topicId": "english-11-50",
@@ -2931,12 +2962,14 @@
     },
     "english-2023-ol-p2-prescribed-b": {
       "topicId": "english-11-32",
-      "title": "My Father’S Kites",
+      "title": "My Father’s Kites",
       "canonicalLabel": "Allison Joseph",
       "observedHeading": "Poetry B · My Father’S Kites",
       "paperPage": 16,
       "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
-      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF16.",
+      "titlePrintedPage": 16
     },
     "english-2023-ol-p2-prescribed-c": {
       "topicId": "english-11-41",
@@ -3614,7 +3647,7 @@
     },
     "english-2026-ol-p2-prescribed-b": {
       "topicId": "english-11-28",
-      "title": "Driving To The Hospital",
+      "title": "Driving to the Hospital",
       "canonicalLabel": "Kate Clanchy",
       "observedHeading": "Poetry B · Driving To The Hospital",
       "paperPage": 16,
@@ -3622,7 +3655,9 @@
       "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
       "sourcePages": [
         16
-      ]
+      ],
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF16.",
+      "titlePrintedPage": 16
     },
     "english-2026-ol-p2-prescribed-c": {
       "topicId": "english-11-21",

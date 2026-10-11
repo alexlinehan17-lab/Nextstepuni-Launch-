@@ -1413,7 +1413,7 @@
       "reason": "Full eight-page paper visually inspected; exact prompt and marked boundary cross-checked against scheme. Single60, comparative70 or separately practicable30/40, unseen10/10 or20 and prescribed50 verified. Short responses use the scheme’s overall combined grid without invented submark allocations. Studied texts/poems and qualified interpretations remain open."
     },
     "english-2013-hl-p2-prescribed-1": {
-      "taskSha256": "1af473e364396e2f660df51dd4eabab189345621a2e9f6d30863a4f07ea60077",
+      "taskSha256": "9f6118dc5f2e5b5ed79e119bcbb6bf02631874651f01694b78c92364da23fba0",
       "paperSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
       "schemeSha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225",
       "totalMarks": 50,
@@ -1438,7 +1438,7 @@
       "reason": "Full eight-page paper visually inspected; exact prompt and marked boundary cross-checked against scheme. Single60, comparative70 or separately practicable30/40, unseen10/10 or20 and prescribed50 verified. Short responses use the scheme’s overall combined grid without invented submark allocations. Studied texts/poems and qualified interpretations remain open."
     },
     "english-2013-hl-p2-prescribed-2": {
-      "taskSha256": "088cbfecd1cc43cf01062243b04668d3d3ac7fc79bfd45296c57183e343e9c16",
+      "taskSha256": "9a5e4760a84f2c0d9fac348ba0e87adc7598d8a3930026182cd5ca7cb2423480",
       "paperSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
       "schemeSha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225",
       "totalMarks": 50,
@@ -1463,7 +1463,7 @@
       "reason": "Full eight-page paper visually inspected; exact prompt and marked boundary cross-checked against scheme. Single60, comparative70 or separately practicable30/40, unseen10/10 or20 and prescribed50 verified. Short responses use the scheme’s overall combined grid without invented submark allocations. Studied texts/poems and qualified interpretations remain open."
     },
     "english-2013-hl-p2-prescribed-3": {
-      "taskSha256": "d7f12c71439e033d3a40cc44ab33092c70fcd1bb2cc5fad9e79ac6bf25edf03c",
+      "taskSha256": "af3c10893c07f26b63e5abd29d9b990d794cdcff3e2dfba2580f98e23c35b133",
       "paperSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
       "schemeSha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225",
       "totalMarks": 50,
@@ -1488,7 +1488,7 @@
       "reason": "Full eight-page paper visually inspected; exact prompt and marked boundary cross-checked against scheme. Single60, comparative70 or separately practicable30/40, unseen10/10 or20 and prescribed50 verified. Short responses use the scheme’s overall combined grid without invented submark allocations. Studied texts/poems and qualified interpretations remain open."
     },
     "english-2013-hl-p2-prescribed-4": {
-      "taskSha256": "b65db9fa6b9c43a375cdd2df7ed2c84018d532aaf16fcd76ef0809d7ce01ace6",
+      "taskSha256": "d62aba065153fc7016a5b97db038d6774f59ee51075c81e4ff0cc3f759ad41c3",
       "paperSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
       "schemeSha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225",
       "totalMarks": 50,
@@ -3376,7 +3376,7 @@
       "reason": "Full paper visually swept and exact task/criteria cross-checked in scheme pages. Single10-mark parts split, three alternatives30 each. Comparative parts30/40 or20/20/30 have independent grids; the same story aspect is inherited in follow-up parts. Unseen10 each; prescribed10 parts and20 alternatives. Named option pools and prescribed openings retain each route tariff; general literary evaluations may combine views."
     },
     "english-2013-ol-p2-prescribed-d-q1-a": {
-      "taskSha256": "bbe31ab8817749b0a27fea8779dd94a1d53ec2760991436b5147425717c9ce83",
+      "taskSha256": "029a959340ae32341da1395d3140f111d959b16e98f562e3108dc9a7ebce6926",
       "paperSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
       "schemeSha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
       "totalMarks": 10,
@@ -3397,7 +3397,7 @@
       "reason": "Full paper visually swept and exact task/criteria cross-checked in scheme pages. Single10-mark parts split, three alternatives30 each. Comparative parts30/40 or20/20/30 have independent grids; the same story aspect is inherited in follow-up parts. Unseen10 each; prescribed10 parts and20 alternatives. Named option pools and prescribed openings retain each route tariff; general literary evaluations may combine views."
     },
     "english-2013-ol-p2-prescribed-d-q1-b": {
-      "taskSha256": "2c54a4b3ffc8b45fa32bf77a68ed8b0e347c3a1ed78594d19a7e723d16da61aa",
+      "taskSha256": "446318729fe62b3955bdcb98b4ddc0879e8062e72e0e3686fdacf5245e6b05db",
       "paperSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
       "schemeSha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
       "totalMarks": 10,
@@ -3418,7 +3418,7 @@
       "reason": "Full paper visually swept and exact task/criteria cross-checked in scheme pages. Single10-mark parts split, three alternatives30 each. Comparative parts30/40 or20/20/30 have independent grids; the same story aspect is inherited in follow-up parts. Unseen10 each; prescribed10 parts and20 alternatives. Named option pools and prescribed openings retain each route tariff; general literary evaluations may combine views."
     },
     "english-2013-ol-p2-prescribed-d-q1-c": {
-      "taskSha256": "df9f4f51519546f13aad700c47df9f07212bb8f73851d6e95d2b38eedd1464ff",
+      "taskSha256": "711995a28da5bed1fb59dd4ab16cace588863985e52859b5a22e5be7f5395b4b",
       "paperSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
       "schemeSha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
       "totalMarks": 10,
@@ -3439,7 +3439,7 @@
       "reason": "Full paper visually swept and exact task/criteria cross-checked in scheme pages. Single10-mark parts split, three alternatives30 each. Comparative parts30/40 or20/20/30 have independent grids; the same story aspect is inherited in follow-up parts. Unseen10 each; prescribed10 parts and20 alternatives. Named option pools and prescribed openings retain each route tariff; general literary evaluations may combine views."
     },
     "english-2013-ol-p2-prescribed-d-q2-i": {
-      "taskSha256": "9dab5ceb81a16e8043a52595e90648aca788ac0ede3ac25641b8d97184d24399",
+      "taskSha256": "ff892ab4cdcabbaf04fce01c30df02036fe78ed2691049114de37c7d9688a00e",
       "paperSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
       "schemeSha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
       "totalMarks": 20,
@@ -3460,7 +3460,7 @@
       "reason": "Full paper visually swept and exact task/criteria cross-checked in scheme pages. Single10-mark parts split, three alternatives30 each. Comparative parts30/40 or20/20/30 have independent grids; the same story aspect is inherited in follow-up parts. Unseen10 each; prescribed10 parts and20 alternatives. Named option pools and prescribed openings retain each route tariff; general literary evaluations may combine views."
     },
     "english-2013-ol-p2-prescribed-d-q2-ii": {
-      "taskSha256": "c8cad2d8ca4df78f9c9c1d7d7b81407c0b5a06572379a104fdce3b6afa6a7b4d",
+      "taskSha256": "4afcb102cd4183b3f1fed78dc3b4179653b827b191a50a0800174f11825a14d3",
       "paperSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
       "schemeSha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
       "totalMarks": 20,
@@ -3481,7 +3481,7 @@
       "reason": "Full paper visually swept and exact task/criteria cross-checked in scheme pages. Single10-mark parts split, three alternatives30 each. Comparative parts30/40 or20/20/30 have independent grids; the same story aspect is inherited in follow-up parts. Unseen10 each; prescribed10 parts and20 alternatives. Named option pools and prescribed openings retain each route tariff; general literary evaluations may combine views."
     },
     "english-2013-ol-p2-prescribed-d-q2-iii": {
-      "taskSha256": "8e7fc5a47bf44d1f626ec179a7bce9cd2644612ed0bb3fb9843ad13e7293ff83",
+      "taskSha256": "8d3125586c9c9ea6f644964c4a21ab26197a54a9a4b5dfec02a59ea95bd4c1b8",
       "paperSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
       "schemeSha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
       "totalMarks": 20,
@@ -4823,7 +4823,7 @@
       "reason": "Full paper visually inspected; exact prompt, marked boundary and criteria cross-checked against the cited scheme pages. Required multiple aspects share one tariff. Closed printed options retain the full tariff per route; flexible tone, evidence counts and qualified evaluations remain open."
     },
     "english-2018-hl-p2-prescribed-1": {
-      "taskSha256": "4d7d403ddd3ac46eaeaf4521b8333122365a3948fc197e7da35f3498ac5eccae",
+      "taskSha256": "40dfd8d920dc2877de33e04b75bb35ecbae3b480329cc1383ba94225c78a28d1",
       "paperSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
       "schemeSha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49",
       "totalMarks": 50,
@@ -4847,7 +4847,7 @@
       "reason": "Full paper visually inspected; exact prompt, marked boundary and criteria cross-checked against the cited scheme pages. Required multiple aspects share one tariff. Closed printed options retain the full tariff per route; flexible tone, evidence counts and qualified evaluations remain open."
     },
     "english-2018-hl-p2-prescribed-2": {
-      "taskSha256": "b975e5772f76ca41154cab50e1408e36b963bf5f28190cb5dfee8286d9dc6b68",
+      "taskSha256": "1367782e7ef2bb19ce981986073aa4c69ff628748c4ce787ebdc3d1849514461",
       "paperSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
       "schemeSha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49",
       "totalMarks": 50,
@@ -4871,7 +4871,7 @@
       "reason": "Full paper visually inspected; exact prompt, marked boundary and criteria cross-checked against the cited scheme pages. Required multiple aspects share one tariff. Closed printed options retain the full tariff per route; flexible tone, evidence counts and qualified evaluations remain open."
     },
     "english-2018-hl-p2-prescribed-3": {
-      "taskSha256": "c55ed70e60ec128b0d343d979bd35d68fcdaf30b744b7b1dd9988b6ce6c92789",
+      "taskSha256": "2534a075c575820a17ca842de63f6333f2f9cacdab7a37ac53aaa9721c2024fa",
       "paperSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
       "schemeSha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49",
       "totalMarks": 50,
@@ -4895,7 +4895,7 @@
       "reason": "Full paper visually inspected; exact prompt, marked boundary and criteria cross-checked against the cited scheme pages. Required multiple aspects share one tariff. Closed printed options retain the full tariff per route; flexible tone, evidence counts and qualified evaluations remain open."
     },
     "english-2018-hl-p2-prescribed-4": {
-      "taskSha256": "e5d581b3335d2395425e4b4b53f2d7975e256d80adf5da715cdcc59fc5183a09",
+      "taskSha256": "e9d34c7f14550755a1f9f0961324d7e7325b1ae6a9f0045586e61d15eb5e6902",
       "paperSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
       "schemeSha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49",
       "totalMarks": 50,
@@ -6747,7 +6747,7 @@
       "reason": "Whole paper visually inspected; each 10/15/20/30/40-mark boundary and its prompt cross-checked against the cited scheme pages. Named character pairs and loyalty/betrayal options retain separate routes. Phrase-or-phrases responses, freely chosen studied texts and qualified judgements remain open. Each multiple-aspect writing response has one published tariff."
     },
     "english-2018-ol-p2-prescribed-c-q1-a": {
-      "taskSha256": "7fe628e39ca530030411897ac4a433d750c12ac444e025ba4b60620d930a4988",
+      "taskSha256": "c27625cbd4f80a77f724de26d2a197f2b0d17075ccef930c11a7914bdb9e98fc",
       "paperSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
       "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
       "totalMarks": 10,
@@ -6769,7 +6769,7 @@
       "reason": "Whole paper visually inspected; each 10/15/20/30/40-mark boundary and its prompt cross-checked against the cited scheme pages. Named character pairs and loyalty/betrayal options retain separate routes. Phrase-or-phrases responses, freely chosen studied texts and qualified judgements remain open. Each multiple-aspect writing response has one published tariff."
     },
     "english-2018-ol-p2-prescribed-c-q1-b": {
-      "taskSha256": "a8f0b8fc4d4923a3447115634fc820bde5f43410f90addbfa7e027999bfc179c",
+      "taskSha256": "370d164ebdbe85d3aa1aef8edc62258915dfe95897ebdba1d21ebbbdd3d05ec3",
       "paperSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
       "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
       "totalMarks": 10,
@@ -6791,7 +6791,7 @@
       "reason": "Whole paper visually inspected; each 10/15/20/30/40-mark boundary and its prompt cross-checked against the cited scheme pages. Named character pairs and loyalty/betrayal options retain separate routes. Phrase-or-phrases responses, freely chosen studied texts and qualified judgements remain open. Each multiple-aspect writing response has one published tariff."
     },
     "english-2018-ol-p2-prescribed-c-q1-c": {
-      "taskSha256": "dd37c55b26f808d26ffa30048d4b9e0662eceaa371442fdaad0d3af5b4f2e3ce",
+      "taskSha256": "69c9c5e4faefece11bd3a2378e4034f66f57505ec84308d26c12d6ac7430eab0",
       "paperSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
       "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
       "totalMarks": 10,
@@ -6813,7 +6813,7 @@
       "reason": "Whole paper visually inspected; each 10/15/20/30/40-mark boundary and its prompt cross-checked against the cited scheme pages. Named character pairs and loyalty/betrayal options retain separate routes. Phrase-or-phrases responses, freely chosen studied texts and qualified judgements remain open. Each multiple-aspect writing response has one published tariff."
     },
     "english-2018-ol-p2-prescribed-c-q2-i": {
-      "taskSha256": "2fb7cd86d796791b1120c26fe015b18e1448d8ae3e925d04880eb98e1cb338a0",
+      "taskSha256": "c5f47da5adb119fd21dd63625afeba767ee76f409bd282711fb01a2c63dca0e8",
       "paperSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
       "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
       "totalMarks": 20,
@@ -6835,7 +6835,7 @@
       "reason": "Whole paper visually inspected; each 10/15/20/30/40-mark boundary and its prompt cross-checked against the cited scheme pages. Named character pairs and loyalty/betrayal options retain separate routes. Phrase-or-phrases responses, freely chosen studied texts and qualified judgements remain open. Each multiple-aspect writing response has one published tariff."
     },
     "english-2018-ol-p2-prescribed-c-q2-ii": {
-      "taskSha256": "aefc8acdad288481192c912968dc725b8a6f45f9d6e8c99d41837f982c98d82f",
+      "taskSha256": "f9893183b73eebb8da10890a36484b9e29379e54778b7cf75669c06b9776a37a",
       "paperSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
       "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
       "totalMarks": 20,
@@ -6857,7 +6857,7 @@
       "reason": "Whole paper visually inspected; each 10/15/20/30/40-mark boundary and its prompt cross-checked against the cited scheme pages. Named character pairs and loyalty/betrayal options retain separate routes. Phrase-or-phrases responses, freely chosen studied texts and qualified judgements remain open. Each multiple-aspect writing response has one published tariff."
     },
     "english-2018-ol-p2-prescribed-c-q2-iii": {
-      "taskSha256": "8f27ded8f584c289430ddd57c92b8961bdabd898e61a879a351e8e77cc07272e",
+      "taskSha256": "af29946427166c56a61b56576ae8637ea1f8936607233cee0653acf631845e43",
       "paperSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
       "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
       "totalMarks": 20,
@@ -9888,7 +9888,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-a-q1-a": {
-      "taskSha256": "51f1bc0960827e0b280ac42e61167879bd48ba7f69d89b34dc71263a6e21e571",
+      "taskSha256": "dc70ad3a1fab7a1dd5047be1b1e96b895d434614f30e3e69925038311328d5ed",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 10,
@@ -9910,7 +9910,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-a-q1-b": {
-      "taskSha256": "1ecd3a02cb212b1f5d212683e86451647c6b8990ee6f8218cad7aaea175d2e59",
+      "taskSha256": "5782a74955f9bbd402425ae712b4cf574d748c23534f4e32344f4614b58773c8",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 10,
@@ -9932,7 +9932,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-a-q1-c": {
-      "taskSha256": "53bb3ebbc3ce1b360144db4f6000d841bc596d430d7b13d1210896007754f438",
+      "taskSha256": "6a29de63036fdea371c2456f65ffa3947445dcd8e5bbce02fd58c3c3ad5b432b",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 10,
@@ -9954,7 +9954,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-a-q2-i": {
-      "taskSha256": "ca64ff6829a01b7e3dba15a0f0c06732be2a1a63531fc97d1c919009a3608f83",
+      "taskSha256": "c890531d15bdd638dd8d43d5a71a185a7ecd0029a7d6922703bc6298c4c3afea",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 20,
@@ -9976,7 +9976,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-a-q2-ii": {
-      "taskSha256": "5fd51056d0e195b036c480b58cd2a6a0a5326bd3d906611f1a210c9cae1ccd18",
+      "taskSha256": "2540b7041541d8502d7c4066a0824cd3239b671837e680447546007190b8695e",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 20,
@@ -9998,7 +9998,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-a-q2-iii": {
-      "taskSha256": "2256acb2848e2982c769f3f98e7c5f86a6cff91f211e3c3330b3ba97288adb35",
+      "taskSha256": "c8188896229f7f97e4f31609e85f8afb67590b6df316c585eeb56590b1805f64",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 20,
@@ -10020,7 +10020,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-b-q1-a": {
-      "taskSha256": "0276def6f780599df11b99222f6dcdcc02238979dcbf6fc0e1c6e72ebe685f99",
+      "taskSha256": "f28f72d3a3e0e34d70a19f1779bf9faee349a52f57e6ca75f3fdf8e114bac8c7",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 10,
@@ -10043,7 +10043,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-b-q1-b": {
-      "taskSha256": "fa7f79efaaf54563cb74d0636656afacc6399a9698c4c3f05090358ed9429abd",
+      "taskSha256": "c1e7de197a367101aebab090476ffa0191b8ddb3b16cb0541e37606fc3259631",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 10,
@@ -10065,7 +10065,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-b-q1-c": {
-      "taskSha256": "5c49979d83330fbf3d6f2c84d598f064fdf0e26fe4b3dbd26004073177cdaea0",
+      "taskSha256": "b3a3d993d4cc9e31605ca36973b258af95cccbded73510dc942e80e6bed3c292",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 10,
@@ -10087,7 +10087,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-b-q2-i": {
-      "taskSha256": "b4151beb67dcc95ab7305e6b3e26f9f70983a0856bb2b5f468eb4cec1da08837",
+      "taskSha256": "54df15cc65dea6323f9a9e02fd934a22bb17a8b12ce5717c082d2c1cdd10e80e",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 20,
@@ -10109,7 +10109,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-b-q2-ii": {
-      "taskSha256": "ba3be9e0bdded16392348e8bfcd885a48588bc8264259efb7540c909f2de9f9e",
+      "taskSha256": "6e651d6267fd4e636d7886922c06e959386f45a1dd90f9a192fccebe942c039e",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 20,
@@ -10131,7 +10131,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-b-q2-iii": {
-      "taskSha256": "683b6e6f63e2e1fd4212eedcf4029e690da3ad13ed97e470287aee6f1bb9eb8c",
+      "taskSha256": "efbb576193ced8893149cc67885d966faeeb40a296ea69a9b4a5a7eaa8308cc6",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 20,
@@ -10287,7 +10287,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-d-q1-a": {
-      "taskSha256": "998ae3a9f7c823ddea35ec9a4b16f1e1247598bdd6387676eb335221dc6cab83",
+      "taskSha256": "661360a1fbc706f56251125267b81979cc13772ebb1b67a0da33bd68df32abd4",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 10,
@@ -10309,7 +10309,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-d-q1-b": {
-      "taskSha256": "20286184374d2367d3c99e8d419fbea58df5bdc0133623ea3c508d6e5f43c8e8",
+      "taskSha256": "30bc4db75a9c36e0047ea7f98a2d500ce8ca0433beb7933bdb7b26e89560e985",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 10,
@@ -10332,7 +10332,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-d-q1-c": {
-      "taskSha256": "47437908e7071599e0da214793e3cced3d6efbcadb8d9ab67da1dccda4b6a0e0",
+      "taskSha256": "00a5a2110ce211a002a08ccc3c1c64fae70fa37618ac3202a4b39ae9514bf5b1",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 10,
@@ -10354,7 +10354,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-d-q2-i": {
-      "taskSha256": "af7825cdc61fa9d28666ba78308e012cf4275c42cbf299b30084ebe174308115",
+      "taskSha256": "8f25d9ac0fe7d422f837437499e7dbae9ac1f48bcc7ada088a3ce16bc7f2791d",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 20,
@@ -10376,7 +10376,7 @@
       "reason": "Full paper visually inspected; exact task and published criteria cross-checked against cited scheme. Single Text10/30, comparative30+40 or15+15+40, unseen10+10, prescribed three10 plus one20 alternative. Closed pools expanded; reasons and flexible views remain open."
     },
     "english-2010-ol-p2-prescribed-d-q2-ii": {
-      "taskSha256": "86be36b59e479ec8011ff716de761fff7ddc1405233256548ed53783bff846d1",
+      "taskSha256": "f1a2ee400f8f323ce6e6b7e4f2afbb5481ef130f0cbe5f84e824d0a145c5d60c",
       "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
       "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
       "totalMarks": 20,
@@ -17398,7 +17398,7 @@
       "reason": "All20 paper pages visually swept; exact task and complete award cross-checked against cited scheme. Single Text9×6=54, Comparative10, Unseen2, Prescribed4×6=24. Paired diary entries retain one30-mark award. Quoted poetry lines, source pages and comparative parent stems retained."
     },
     "english-2012-ol-p2-prescribed-d-q1-a": {
-      "taskSha256": "39dcdb311c65e7b10da6b5ffda57b9706ddfd81886b680e45e465569e922db59",
+      "taskSha256": "23e3f9eed29522fdaef647f8e1c9d5586608422539bccffee43d37186861efbd",
       "paperSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
       "schemeSha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
       "totalMarks": 10,
@@ -17420,7 +17420,7 @@
       "reason": "All20 paper pages visually swept; exact task and complete award cross-checked against cited scheme. Single Text9×6=54, Comparative10, Unseen2, Prescribed4×6=24. Paired diary entries retain one30-mark award. Quoted poetry lines, source pages and comparative parent stems retained."
     },
     "english-2012-ol-p2-prescribed-d-q1-b": {
-      "taskSha256": "33525b31ed2b5f6bc08dc17029bf854f86ef97475e24aaee051a1bbdb3a04902",
+      "taskSha256": "1b7250caae1476a7cc7a4b1765eea78a17f9af281acff9262b97ad2b61419fbd",
       "paperSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
       "schemeSha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
       "totalMarks": 10,
@@ -17443,7 +17443,7 @@
       "reason": "All20 paper pages visually swept; exact task and complete award cross-checked against cited scheme. Single Text9×6=54, Comparative10, Unseen2, Prescribed4×6=24. Paired diary entries retain one30-mark award. Quoted poetry lines, source pages and comparative parent stems retained."
     },
     "english-2012-ol-p2-prescribed-d-q1-c": {
-      "taskSha256": "025b17e3a95e82d9919725e155726cbf833e0e83d29388c75be4fc0ef35c2d10",
+      "taskSha256": "c38b5d018b8fd8ab392ccf5f2c34042cb771cdf953bd64b32f42210eb4b036f6",
       "paperSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
       "schemeSha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
       "totalMarks": 10,
@@ -17465,7 +17465,7 @@
       "reason": "All20 paper pages visually swept; exact task and complete award cross-checked against cited scheme. Single Text9×6=54, Comparative10, Unseen2, Prescribed4×6=24. Paired diary entries retain one30-mark award. Quoted poetry lines, source pages and comparative parent stems retained."
     },
     "english-2012-ol-p2-prescribed-d-q2-i": {
-      "taskSha256": "5bc518d8629b52da92799244b28e559aae2e72ef35097aa6721ce2527bd12858",
+      "taskSha256": "5222c3cdd76b5033390a9db7612ed47ae1808686da1d410e79099d9e2586aaaf",
       "paperSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
       "schemeSha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
       "totalMarks": 20,
@@ -17487,7 +17487,7 @@
       "reason": "All20 paper pages visually swept; exact task and complete award cross-checked against cited scheme. Single Text9×6=54, Comparative10, Unseen2, Prescribed4×6=24. Paired diary entries retain one30-mark award. Quoted poetry lines, source pages and comparative parent stems retained."
     },
     "english-2012-ol-p2-prescribed-d-q2-ii": {
-      "taskSha256": "bcc5188d14dcc1e0411f4f8adddc57055f81c59ce4e10905be0a31a1d1d22c44",
+      "taskSha256": "40b50d2e6f10bdcadf81a7d7c21dec1c32d4f009e37ffcc105b146b0c936cbba",
       "paperSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
       "schemeSha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
       "totalMarks": 20,
@@ -17510,7 +17510,7 @@
       "reason": "All20 paper pages visually swept; exact task and complete award cross-checked against cited scheme. Single Text9×6=54, Comparative10, Unseen2, Prescribed4×6=24. Paired diary entries retain one30-mark award. Quoted poetry lines, source pages and comparative parent stems retained."
     },
     "english-2012-ol-p2-prescribed-d-q2-iii": {
-      "taskSha256": "e848c7606117b8ccc82aaf424b9337405a58d7ebcd93a264e944f5d4f1b81c37",
+      "taskSha256": "1e4d2bfb4cbb83a16ac1caeaeeb5e73c80c6589f10cf47f628139fa092fed02e",
       "paperSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
       "schemeSha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
       "totalMarks": 20,
@@ -20660,7 +20660,7 @@
       "reason": "All20 paper pages visually inspected; task and tariff checked against cited scheme. Short10/15/20 use combined6+4/9+6/12+8. Single/comparative30 and40 use discrete9/9/9/3 and12/12/12/4. Multiple compulsory diary entries retain one30. Scheme PDF37 stray OR does not alter paper PDF16 compulsory Child1(a/b/c). Preserve historical OL Language cap: BOTH P and C fail D before L capped at D; M independent."
     },
     "english-2014-ol-p2-prescribed-b-q1-a": {
-      "taskSha256": "5ec79ef284ff59eae48d00ba71ea2228244e46886fdbac35a04b80d6cca2f949",
+      "taskSha256": "dcdefb8bf8a1a51b84feae92984c2dffe51fbdcb6cf49e8f7bd7f9a19863545d",
       "paperSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
       "schemeSha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
       "totalMarks": 10,
@@ -20682,7 +20682,7 @@
       "reason": "All20 paper pages visually inspected; task and tariff checked against cited scheme. Short10/15/20 use combined6+4/9+6/12+8. Single/comparative30 and40 use discrete9/9/9/3 and12/12/12/4. Multiple compulsory diary entries retain one30. Scheme PDF37 stray OR does not alter paper PDF16 compulsory Child1(a/b/c). Preserve historical OL Language cap: BOTH P and C fail D before L capped at D; M independent."
     },
     "english-2014-ol-p2-prescribed-b-q1-b": {
-      "taskSha256": "021e955a98b83a90891750cc191bac9c71993279d2d009b7d4e461874c12bd75",
+      "taskSha256": "4046f66dc33bd91661b8c9194a5dc02a736fbb42b966d6f30f302288c4a47e71",
       "paperSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
       "schemeSha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
       "totalMarks": 10,
@@ -20704,7 +20704,7 @@
       "reason": "All20 paper pages visually inspected; task and tariff checked against cited scheme. Short10/15/20 use combined6+4/9+6/12+8. Single/comparative30 and40 use discrete9/9/9/3 and12/12/12/4. Multiple compulsory diary entries retain one30. Scheme PDF37 stray OR does not alter paper PDF16 compulsory Child1(a/b/c). Preserve historical OL Language cap: BOTH P and C fail D before L capped at D; M independent."
     },
     "english-2014-ol-p2-prescribed-b-q1-c": {
-      "taskSha256": "d24296c83cc165508766df9d18a9c32fc9e8acd2cafe29abaf828fab58b2abad",
+      "taskSha256": "44feb5b21d82bfd3404422a8469266defd18a679822d9a802346fecefec4c5b0",
       "paperSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
       "schemeSha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
       "totalMarks": 10,
@@ -20726,7 +20726,7 @@
       "reason": "All20 paper pages visually inspected; task and tariff checked against cited scheme. Short10/15/20 use combined6+4/9+6/12+8. Single/comparative30 and40 use discrete9/9/9/3 and12/12/12/4. Multiple compulsory diary entries retain one30. Scheme PDF37 stray OR does not alter paper PDF16 compulsory Child1(a/b/c). Preserve historical OL Language cap: BOTH P and C fail D before L capped at D; M independent."
     },
     "english-2014-ol-p2-prescribed-b-q2-i": {
-      "taskSha256": "8a819b57eaa292d3badd23a56f24e8e16013657a49b2a6b7eb138861c32ea3bd",
+      "taskSha256": "ad8bae236d5d6af0a61a46738c4feab66c4f47f54ccfafe55d9e982d3ff8ae58",
       "paperSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
       "schemeSha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
       "totalMarks": 20,
@@ -20748,7 +20748,7 @@
       "reason": "All20 paper pages visually inspected; task and tariff checked against cited scheme. Short10/15/20 use combined6+4/9+6/12+8. Single/comparative30 and40 use discrete9/9/9/3 and12/12/12/4. Multiple compulsory diary entries retain one30. Scheme PDF37 stray OR does not alter paper PDF16 compulsory Child1(a/b/c). Preserve historical OL Language cap: BOTH P and C fail D before L capped at D; M independent."
     },
     "english-2014-ol-p2-prescribed-b-q2-ii": {
-      "taskSha256": "f0cbbbf817a5f426d38ccae63a27962d2e00af64c73bde9e6358afdabb16721b",
+      "taskSha256": "8d89525fe66073e617c65cbaa43fad9442bf3e1a5d5403139ee327d58c9745c0",
       "paperSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
       "schemeSha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
       "totalMarks": 20,
@@ -20770,7 +20770,7 @@
       "reason": "All20 paper pages visually inspected; task and tariff checked against cited scheme. Short10/15/20 use combined6+4/9+6/12+8. Single/comparative30 and40 use discrete9/9/9/3 and12/12/12/4. Multiple compulsory diary entries retain one30. Scheme PDF37 stray OR does not alter paper PDF16 compulsory Child1(a/b/c). Preserve historical OL Language cap: BOTH P and C fail D before L capped at D; M independent."
     },
     "english-2014-ol-p2-prescribed-b-q2-iii": {
-      "taskSha256": "4ec85b89ec442c4dfcd5c7a23a5921a7718291f29058078c5260d7d06730bf77",
+      "taskSha256": "bbe9e600b6a7df17458f7a43d52d5fcf7075c9fff92617337a756438b72c8538",
       "paperSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
       "schemeSha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
       "totalMarks": 20,
@@ -24493,7 +24493,7 @@
       "reason": "All20 paper pages visually inspected and exact task matched to cited scheme, including continued awards. Short10/15/20 use combined6+4/9+6/12+8; Single30 and Comparative40 use discrete9/9/9/3 and12/12/12/4. Historical OL Language cap applies only if BOTH P and C fail D; Mechanics independent. Paper wording retained where scheme has minor misprints."
     },
     "english-2015-ol-p2-prescribed-d-q1-a": {
-      "taskSha256": "8f54ac3e842a6f9f2a45898fdf057b1a6348576fe0f7ab8de5c08b174785a9d6",
+      "taskSha256": "dcd10f902a674a40119d7abf696028a6abb118333a77f8ec603d1876e1a3be70",
       "paperSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
       "schemeSha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
       "totalMarks": 10,
@@ -24515,7 +24515,7 @@
       "reason": "All20 paper pages visually inspected and exact task matched to cited scheme, including continued awards. Short10/15/20 use combined6+4/9+6/12+8; Single30 and Comparative40 use discrete9/9/9/3 and12/12/12/4. Historical OL Language cap applies only if BOTH P and C fail D; Mechanics independent. Paper wording retained where scheme has minor misprints."
     },
     "english-2015-ol-p2-prescribed-d-q1-b": {
-      "taskSha256": "815c72ddb8816fa72db98d64026b18951891123fa120e204ffb91f4f1dbcd551",
+      "taskSha256": "411fa98d73f859481a89043962fea614b7392abcec6d53d6cf98b8b50577c40b",
       "paperSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
       "schemeSha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
       "totalMarks": 10,
@@ -24537,7 +24537,7 @@
       "reason": "All20 paper pages visually inspected and exact task matched to cited scheme, including continued awards. Short10/15/20 use combined6+4/9+6/12+8; Single30 and Comparative40 use discrete9/9/9/3 and12/12/12/4. Historical OL Language cap applies only if BOTH P and C fail D; Mechanics independent. Paper wording retained where scheme has minor misprints."
     },
     "english-2015-ol-p2-prescribed-d-q1-c": {
-      "taskSha256": "c4710c97885fec4530b561ea130a481f015c92cbb2dd54f3391a6ffe9585c8e2",
+      "taskSha256": "ada8d613f32f93a15d6e6d5a1079ba2d5396e496d144e410c34c24a49a08ef9e",
       "paperSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
       "schemeSha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
       "totalMarks": 10,
@@ -24559,7 +24559,7 @@
       "reason": "All20 paper pages visually inspected and exact task matched to cited scheme, including continued awards. Short10/15/20 use combined6+4/9+6/12+8; Single30 and Comparative40 use discrete9/9/9/3 and12/12/12/4. Historical OL Language cap applies only if BOTH P and C fail D; Mechanics independent. Paper wording retained where scheme has minor misprints."
     },
     "english-2015-ol-p2-prescribed-d-q2-i": {
-      "taskSha256": "cc6f410036b9cc583854ea9ca45cadd7fa2b0c146b458ce554f44f545aef7baa",
+      "taskSha256": "3f87290652245197f58d5efff66dc1b6f7c0c36a91125e2ddb50260bbfdf5d77",
       "paperSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
       "schemeSha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
       "totalMarks": 20,
@@ -24581,7 +24581,7 @@
       "reason": "All20 paper pages visually inspected and exact task matched to cited scheme, including continued awards. Short10/15/20 use combined6+4/9+6/12+8; Single30 and Comparative40 use discrete9/9/9/3 and12/12/12/4. Historical OL Language cap applies only if BOTH P and C fail D; Mechanics independent. Paper wording retained where scheme has minor misprints."
     },
     "english-2015-ol-p2-prescribed-d-q2-ii": {
-      "taskSha256": "f77cdb6712600cf2431a6a71976b9c11cbf495855c8a1398bf77b50bd9c22a1d",
+      "taskSha256": "b3132e838ca22c8d540358a216cacd2fb050d5010035af860a981d5edc94e208",
       "paperSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
       "schemeSha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
       "totalMarks": 20,
@@ -24603,7 +24603,7 @@
       "reason": "All20 paper pages visually inspected and exact task matched to cited scheme, including continued awards. Short10/15/20 use combined6+4/9+6/12+8; Single30 and Comparative40 use discrete9/9/9/3 and12/12/12/4. Historical OL Language cap applies only if BOTH P and C fail D; Mechanics independent. Paper wording retained where scheme has minor misprints."
     },
     "english-2015-ol-p2-prescribed-d-q2-iii": {
-      "taskSha256": "d7f5da20ba70612041cab07a46ff961f789a01cb73ca94c4949d88751770b242",
+      "taskSha256": "736997a612e75f832caae953c72a4a8c71ffa59bb55982a6367026194ed26751",
       "paperSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
       "schemeSha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
       "totalMarks": 20,
@@ -27575,7 +27575,7 @@
       "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
     },
     "english-2026-ol-p2-prescribed-b-q1-a": {
-      "taskSha256": "79040f3f884c03a3950be0095d448e5760fc8d04a744216db77694ca7258460d",
+      "taskSha256": "eaef75dd75d8d4706d942361f14413c6e3ca9ac09787f36080692be11b1beaf7",
       "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
       "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
       "totalMarks": 15,
@@ -27599,7 +27599,7 @@
       "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
     },
     "english-2026-ol-p2-prescribed-b-q1-b": {
-      "taskSha256": "e1b0243567b89df006f46cf152505abe9896bbc40a0437ef3a440cb37eaea90a",
+      "taskSha256": "6dd6ca2dbc67e0f3bb370643f3a4b1e45e1b22790b8abc0bd231517ab0f7a138",
       "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
       "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
       "totalMarks": 15,
@@ -27623,7 +27623,7 @@
       "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
     },
     "english-2026-ol-p2-prescribed-b-q2-i": {
-      "taskSha256": "56405de4bab6fe0afa04ccc842c8e22adb872d4c682af0becadf76c859a2c221",
+      "taskSha256": "5155cc1d01ec8787ffce744c77f814c790015445a89c5a69698d6ac21b18381b",
       "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
       "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
       "totalMarks": 20,
@@ -27647,7 +27647,7 @@
       "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
     },
     "english-2026-ol-p2-prescribed-b-q2-ii": {
-      "taskSha256": "7f4f2f38d3ac7fd5bde1ef64a46dab4ecf4d6d5a6933e03a2d01d81696fff28d",
+      "taskSha256": "6f6898b1cfbcac8abf319c4b98fcfe20c11edaff6ef9deabccb61d8232de3837",
       "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
       "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
       "totalMarks": 20,
@@ -27671,7 +27671,7 @@
       "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
     },
     "english-2026-ol-p2-prescribed-b-q2-iii": {
-      "taskSha256": "e6749b6bf0cf2177e806c961a542073e3935c3d07284320420037d63a0af4c8f",
+      "taskSha256": "52feaa12930cee0dd4133fad135b7e677235b8f4a94ab722ae5d1d5a8cf456f2",
       "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
       "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
       "totalMarks": 20,

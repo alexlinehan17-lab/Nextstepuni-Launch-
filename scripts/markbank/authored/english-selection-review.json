@@ -11037,30 +11037,8 @@
     },
     "english-2024-ol-p2-prescribed-a-q1-a": {
       "questionSha256": "a62c734da810162e0a8837516e2c8049b2db7c56b4726109a8ef1d2f4ab62cee",
-      "kind": "finite",
-      "reason": "The task prints a fixed pool of alternative words, statements, poems, openings or production roles. Each offered alternative remains separately practicable at the original tariff; the combined-tone answer, where listed, is itself an explicit third option.",
-      "pools": [
-        {
-          "id": "selection",
-          "label": "Selected direction",
-          "take": 1,
-          "options": [
-            {
-              "id": "1",
-              "text": "Reflective"
-            },
-            {
-              "id": "2",
-              "text": "Hopeful"
-            },
-            {
-              "id": "3",
-              "text": "A combination of both Reflective and Hopeful"
-            }
-          ]
-        }
-      ],
-      "expectedRoutes": 3
+      "kind": "flexible",
+      "reason": "Paper and scheme PDF50: reflective or hopeful “or a combination of both”, and the scheme also allows the candidate who argues the tone is not hopeful/reflective. An “or both” choice is one open judgement, decided as for 2026 OL Prescribed Q1(b) and the reviewed 2010/2013/2014/2015 “X or Y or both” tasks: one 15-mark response, not three routes. Recorded 2026-10-11; the paper is otherwise still unreviewed."
     },
     "english-2026-ol-p2-prescribed-a-q1-b": {
       "questionSha256": "22775e58cf005196c5373bc095b2f9d394568d81e30ce170777b3d77c4205c3c",
@@ -11069,30 +11047,8 @@
     },
     "english-2024-ol-p2-prescribed-b-q1-a": {
       "questionSha256": "a62c734da810162e0a8837516e2c8049b2db7c56b4726109a8ef1d2f4ab62cee",
-      "kind": "finite",
-      "reason": "The task prints a fixed pool of alternative words, statements, poems, openings or production roles. Each offered alternative remains separately practicable at the original tariff; the combined-tone answer, where listed, is itself an explicit third option.",
-      "pools": [
-        {
-          "id": "selection",
-          "label": "Selected direction",
-          "take": 1,
-          "options": [
-            {
-              "id": "1",
-              "text": "Reflective"
-            },
-            {
-              "id": "2",
-              "text": "Hopeful"
-            },
-            {
-              "id": "3",
-              "text": "A combination of both Reflective and Hopeful"
-            }
-          ]
-        }
-      ],
-      "expectedRoutes": 3
+      "kind": "flexible",
+      "reason": "Paper and scheme PDF52: reflective or hopeful “or a combination of both”, and the scheme also allows the candidate who argues the tone is not hopeful/reflective. An “or both” choice is one open judgement, decided as for 2026 OL Prescribed Q1(b) and the reviewed 2010/2013/2014/2015 “X or Y or both” tasks: one 15-mark response, not three routes. Recorded 2026-10-11; the paper is otherwise still unreviewed."
     },
     "english-2026-ol-p2-prescribed-b-q1-b": {
       "questionSha256": "22775e58cf005196c5373bc095b2f9d394568d81e30ce170777b3d77c4205c3c",
@@ -11101,30 +11057,8 @@
     },
     "english-2024-ol-p2-prescribed-c-q1-a": {
       "questionSha256": "a62c734da810162e0a8837516e2c8049b2db7c56b4726109a8ef1d2f4ab62cee",
-      "kind": "finite",
-      "reason": "The task prints a fixed pool of alternative words, statements, poems, openings or production roles. Each offered alternative remains separately practicable at the original tariff; the combined-tone answer, where listed, is itself an explicit third option.",
-      "pools": [
-        {
-          "id": "selection",
-          "label": "Selected direction",
-          "take": 1,
-          "options": [
-            {
-              "id": "1",
-              "text": "Reflective"
-            },
-            {
-              "id": "2",
-              "text": "Hopeful"
-            },
-            {
-              "id": "3",
-              "text": "A combination of both Reflective and Hopeful"
-            }
-          ]
-        }
-      ],
-      "expectedRoutes": 3
+      "kind": "flexible",
+      "reason": "Paper and scheme PDF54: reflective or hopeful “or a combination of both”, and the scheme also allows the candidate who argues the tone is not hopeful/reflective. An “or both” choice is one open judgement, decided as for 2026 OL Prescribed Q1(b) and the reviewed 2010/2013/2014/2015 “X or Y or both” tasks: one 15-mark response, not three routes. Recorded 2026-10-11; the paper is otherwise still unreviewed."
     },
     "english-2026-ol-p2-prescribed-c-q1-b": {
       "questionSha256": "22775e58cf005196c5373bc095b2f9d394568d81e30ce170777b3d77c4205c3c",
@@ -11133,30 +11067,8 @@
     },
     "english-2024-ol-p2-prescribed-d-q1-a": {
       "questionSha256": "a62c734da810162e0a8837516e2c8049b2db7c56b4726109a8ef1d2f4ab62cee",
-      "kind": "finite",
-      "reason": "The task prints a fixed pool of alternative words, statements, poems, openings or production roles. Each offered alternative remains separately practicable at the original tariff; the combined-tone answer, where listed, is itself an explicit third option.",
-      "pools": [
-        {
-          "id": "selection",
-          "label": "Selected direction",
-          "take": 1,
-          "options": [
-            {
-              "id": "1",
-              "text": "Reflective"
-            },
-            {
-              "id": "2",
-              "text": "Hopeful"
-            },
-            {
-              "id": "3",
-              "text": "A combination of both Reflective and Hopeful"
-            }
-          ]
-        }
-      ],
-      "expectedRoutes": 3
+      "kind": "flexible",
+      "reason": "Paper and scheme PDF56: reflective or hopeful “or a combination of both”, and the scheme also allows the candidate who argues the tone is not hopeful/reflective. An “or both” choice is one open judgement, decided as for 2026 OL Prescribed Q1(b) and the reviewed 2010/2013/2014/2015 “X or Y or both” tasks: one 15-mark response, not three routes. Recorded 2026-10-11; the paper is otherwise still unreviewed."
     },
     "english-2026-ol-p2-prescribed-d-q1-b": {
       "questionSha256": "22775e58cf005196c5373bc095b2f9d394568d81e30ce170777b3d77c4205c3c",
@@ -11165,30 +11077,8 @@
     },
     "english-2024-ol-p2-prescribed-e-q1-a": {
       "questionSha256": "a62c734da810162e0a8837516e2c8049b2db7c56b4726109a8ef1d2f4ab62cee",
-      "kind": "finite",
-      "reason": "The task prints a fixed pool of alternative words, statements, poems, openings or production roles. Each offered alternative remains separately practicable at the original tariff; the combined-tone answer, where listed, is itself an explicit third option.",
-      "pools": [
-        {
-          "id": "selection",
-          "label": "Selected direction",
-          "take": 1,
-          "options": [
-            {
-              "id": "1",
-              "text": "Reflective"
-            },
-            {
-              "id": "2",
-              "text": "Hopeful"
-            },
-            {
-              "id": "3",
-              "text": "A combination of both Reflective and Hopeful"
-            }
-          ]
-        }
-      ],
-      "expectedRoutes": 3
+      "kind": "flexible",
+      "reason": "Paper and scheme PDF58: reflective or hopeful “or a combination of both”, and the scheme also allows the candidate who argues the tone is not hopeful/reflective. An “or both” choice is one open judgement, decided as for 2026 OL Prescribed Q1(b) and the reviewed 2010/2013/2014/2015 “X or Y or both” tasks: one 15-mark response, not three routes. Recorded 2026-10-11; the paper is otherwise still unreviewed."
     },
     "english-2026-ol-p2-prescribed-e-q1-b": {
       "questionSha256": "22775e58cf005196c5373bc095b2f9d394568d81e30ce170777b3d77c4205c3c",
@@ -11197,30 +11087,8 @@
     },
     "english-2024-ol-p2-prescribed-f-q1-a": {
       "questionSha256": "a62c734da810162e0a8837516e2c8049b2db7c56b4726109a8ef1d2f4ab62cee",
-      "kind": "finite",
-      "reason": "The task prints a fixed pool of alternative words, statements, poems, openings or production roles. Each offered alternative remains separately practicable at the original tariff; the combined-tone answer, where listed, is itself an explicit third option.",
-      "pools": [
-        {
-          "id": "selection",
-          "label": "Selected direction",
-          "take": 1,
-          "options": [
-            {
-              "id": "1",
-              "text": "Reflective"
-            },
-            {
-              "id": "2",
-              "text": "Hopeful"
-            },
-            {
-              "id": "3",
-              "text": "A combination of both Reflective and Hopeful"
-            }
-          ]
-        }
-      ],
-      "expectedRoutes": 3
+      "kind": "flexible",
+      "reason": "Paper and scheme PDF60: reflective or hopeful “or a combination of both”, and the scheme also allows the candidate who argues the tone is not hopeful/reflective. An “or both” choice is one open judgement, decided as for 2026 OL Prescribed Q1(b) and the reviewed 2010/2013/2014/2015 “X or Y or both” tasks: one 15-mark response, not three routes. Recorded 2026-10-11; the paper is otherwise still unreviewed."
     },
     "english-2026-ol-p2-prescribed-f-q1-b": {
       "questionSha256": "22775e58cf005196c5373bc095b2f9d394568d81e30ce170777b3d77c4205c3c",
@@ -11490,12 +11358,12 @@
       "questionSha256": "27e90eebe481ed7e4f950279da8705220fda2cf01cec30d0f92b907269ad9f26"
     },
     "english-2013-hl-p2-prescribed-1": {
-      "questionSha256": "1210cd55efb2218bc2bb2276b87bccfb3cc18a028371804c259fb27d2ee1df69",
+      "questionSha256": "ba1caeeedf0456d74c80cd629cdf868e83b30d47b7f1d86f05c6cb63a234661c",
       "kind": "open",
       "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
     },
     "english-2013-hl-p2-prescribed-4": {
-      "questionSha256": "ca5e561197ca82d41525869e8616ea0bd53d503049054cc6ba418ea32022bc99",
+      "questionSha256": "ee8ade85bbdbe0e208ca1308ffad2ec9d4b1d6c454d67e8c2a9886af39ebdf12",
       "kind": "open",
       "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
     },
@@ -11815,22 +11683,22 @@
       "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
     },
     "english-2018-hl-p2-prescribed-1": {
-      "questionSha256": "4c48fcf97c4a833e7db28ea12b829fa3bf9b7502026a37dbbd197d772856a4d5",
+      "questionSha256": "9754f0e42923956c7d53772709014c9cebb28deb1baff57dcc1f2fcc1f13f626",
       "kind": "open",
       "reason": "The choice concerns freely identified lines, words, images, memories or creative details within the studied poem, or an unnamed character. No fixed named answer pool is printed. Relative clauses using which are not selection instructions."
     },
     "english-2018-hl-p2-prescribed-2": {
-      "questionSha256": "6936bcc986fdcf4eebecc9062cdb05eaf147e71628ad486f22ff9fc8c5fa665e",
+      "questionSha256": "89eaaa3719b9a01a2f7d42e5fbd6ba39ec11d8dbbd0042572f7c39709bc53941",
       "kind": "open",
       "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
     },
     "english-2018-hl-p2-prescribed-3": {
-      "questionSha256": "06f8d36c9dd80e53860e67295dbdc84a826a6260e28e68076b14ff1037bd33df",
+      "questionSha256": "de9dc7fc693f77c0fdbccdb57864b47125430ee3946d45ff327fff310cde9c1a",
       "kind": "open",
       "reason": "The choice concerns freely identified lines, words, images, memories or creative details within the studied poem, or an unnamed character. No fixed named answer pool is printed. Relative clauses using which are not selection instructions."
     },
     "english-2018-hl-p2-prescribed-4": {
-      "questionSha256": "cc3e7bbf129945b5c03f509b00cb4836b0e94059df59076c850759d07d526670",
+      "questionSha256": "bdb2b85367dd347973c054f656fe024f1f11ca4850d22730875cca6c5734dc56",
       "kind": "context",
       "reason": "The selection-looking wording is a quotation, ordinary relative/temporal prose or synonymous descriptions. It does not introduce a fixed named answer pool."
     },
@@ -14390,12 +14258,12 @@
       "reason": "Full paper visually reviewed. This task has no additional closed printed answer pool: choices of evidence, argument, examples or studied material are open. Required multiple aspects share the published tariff; outer alternatives are separately represented."
     },
     "english-2013-hl-p2-prescribed-2": {
-      "questionSha256": "43886e63e330ad31fa0342bd9a8ea4cf1bf018abedec4f6f9191b84fc694bf43",
+      "questionSha256": "0460fcfd5e7a385f6ebe290c10e67f93a15b85ad984a40576e06d6bb555b1258",
       "kind": "open",
       "reason": "Full paper visually reviewed. This task has no additional closed printed answer pool: choices of evidence, argument, examples or studied material are open. Required multiple aspects share the published tariff; outer alternatives are separately represented."
     },
     "english-2013-hl-p2-prescribed-3": {
-      "questionSha256": "38a61cced0b12c246a8bbce4c7637fcef9b7cb13638440e44ce00f333298c583",
+      "questionSha256": "46ff7178d421f9d523d1d94e93c18a9143fd99f72b3ec1da609c8fe06d037b61",
       "kind": "open",
       "reason": "Full paper visually reviewed. This task has no additional closed printed answer pool: choices of evidence, argument, examples or studied material are open. Required multiple aspects share the published tariff; outer alternatives are separately represented."
     },

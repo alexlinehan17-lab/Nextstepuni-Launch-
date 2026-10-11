@@ -754,5 +754,65 @@ class English2026ReviewedPapersTest(unittest.TestCase):
         self.assertEqual(kinds, {'tasks': 16, 'exam-instruction': 16, 'source-prose': 1, 'non-selection': 4})
 
 
+class EnglishPrintedLabelsTest(unittest.TestCase):
+    """Headings, titles and prompts carry the printed wording and case (2026-10-11)."""
+
+    @classmethod
+    def setUpClass(cls):
+        keys = ('english-2026-hl-p2', 'english-2013-ol-p2', 'english-2026-ol-p2', 'english-2015-ol-p2',
+                'english-2013-hl-p2', 'english-2018-hl-p2', 'english-2012-hl-p2')
+        cls.by_id = {t['id']: t for r in inventory()['papers'] if r['id'] in keys for t in extract_record(r)[1]}
+        cls.decisions = json.loads((ROOT / 'scripts/markbank/authored/english-selection-review.json').read_text())['decisions']
+
+    def test_comparative_mode_headings_use_printed_case(self):
+        self.assertEqual(self.by_id['english-2026-hl-p2-comparative-b-q1-a']['stem'],
+                         'Comparative B · General Vision and Viewpoint · Q1')
+        self.assertEqual(self.by_id['english-2012-hl-p2-comparative-a-q1']['stem'],
+                         'Comparative A · The General Vision and Viewpoint · Q1')
+        self.assertEqual(self.by_id['english-2013-ol-p2-comparative-b-q1-a']['stem'],
+                         'Comparative B · Aspects of Story: Tension or Climax or Resolution')
+        with self.assertRaisesRegex(ValueError, 'no printed-case label'):
+            full_cards.printed_mode_label('Theme And Something', 'THEME AND SOMETHING')
+
+    def test_poem_titles_are_pinned_to_the_page(self):
+        self.assertEqual(self.by_id['english-2026-ol-p2-prescribed-b-q1-a']['sourceMaterial']['title'],
+                         'Driving to the Hospital')
+        self.assertEqual(self.by_id['english-2026-ol-p2-prescribed-d-q1-a']['sourceMaterial']['title'],
+                         'This Is Just To Say')
+        self.assertEqual(self.by_id['english-2015-ol-p2-prescribed-d-q1-a']['sourceMaterial']['title'],
+                         'The Bend in the Road')
+        self.assertEqual(self.by_id['english-2015-ol-p2-prescribed-d-q1-a']['stem'],
+                         'The Bend in the Road — Eiléan Ní Chuilleanáin')
+
+    def test_hl_poet_headings_are_stems_not_prompt_text(self):
+        for key in ('english-2013-hl-p2', 'english-2018-hl-p2'):
+            for number in range(1, 5):
+                task = self.by_id[f'{key}-prescribed-{number}']
+                # The heading line is gone; 2018 Q4's own sentence then opens “Philip Larkin wanted …”.
+                self.assertFalse(task['questionText'].startswith(task['stem'] + ' ' + task['stem']), task['id'])
+                self.assertFalse(task['rawQuestionText'].splitlines()[0].strip() == task['stem'], task['id'])
+        self.assertTrue(self.by_id['english-2018-hl-p2-prescribed-1']['questionText'].startswith(
+            'From your study of the poetry of Robert Frost'))
+
+    def test_2024_combined_tone_is_one_open_response(self):
+        for letter in 'abcdef':
+            decision = self.decisions[f'english-2024-ol-p2-prescribed-{letter}-q1-a']
+            self.assertEqual(decision['kind'], 'flexible')
+            self.assertIn('or a combination of both', decision['reason'])
+
+    def test_repaired_ordinary_paper_two_scheme_crops(self):
+        def scheme(year, n):
+            sidecar = json.loads((ROOT / f'scripts/paper-trail/answers/{year}/LC002GLP200EV.pdf.json').read_text())
+            question = next(q for q in sidecar['q'] if q['n'] == n)
+            return (question.get('schemeRegion') or question['region'])[0]
+        self.assertEqual(scheme(2018, '11'), {'p': 40, 'r': [0.0, 0.4038, 1.0, 1.0]})
+        self.assertEqual(scheme(2014, '4'), {'p': 18, 'r': [0.0, 0.086, 1.0, 1.0]})
+        self.assertEqual(scheme(2014, '10'), {'p': 30, 'r': [0.0, 0.7079, 1.0, 1.0]})
+        self.assertEqual(scheme(2013, '11'), {'p': 33, 'r': [0.0, 0.5867, 1.0, 1.0]})
+        self.assertEqual(scheme(2012, '10'), {'p': 30, 'r': [0.0, 0.5922, 1.0, 1.0]})
+        self.assertEqual(scheme(2012, '11'), {'p': 32, 'r': [0.0, 0.418, 1.0, 1.0]})
+        self.assertEqual(scheme(2016, '10'), {'p': 37, 'r': [0.0, 0.332, 1.0, 1.0]})
+
+
 if __name__ == '__main__':
     unittest.main()

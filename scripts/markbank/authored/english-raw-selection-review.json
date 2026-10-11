@@ -17339,7 +17339,7 @@
         "english-2013-hl-p2-prescribed-1"
       ],
       "taskSha256": {
-        "english-2013-hl-p2-prescribed-1": "1210cd55efb2218bc2bb2276b87bccfb3cc18a028371804c259fb27d2ee1df69"
+        "english-2013-hl-p2-prescribed-1": "ba1caeeedf0456d74c80cd629cdf868e83b30d47b7f1d86f05c6cb63a234661c"
       },
       "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
     },
@@ -17351,7 +17351,7 @@
         "english-2013-hl-p2-prescribed-4"
       ],
       "taskSha256": {
-        "english-2013-hl-p2-prescribed-4": "ca5e561197ca82d41525869e8616ea0bd53d503049054cc6ba418ea32022bc99"
+        "english-2013-hl-p2-prescribed-4": "ee8ade85bbdbe0e208ca1308ffad2ec9d4b1d6c454d67e8c2a9886af39ebdf12"
       },
       "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
     },
@@ -20075,7 +20075,7 @@
         "english-2018-hl-p2-prescribed-1"
       ],
       "taskSha256": {
-        "english-2018-hl-p2-prescribed-1": "4c48fcf97c4a833e7db28ea12b829fa3bf9b7502026a37dbbd197d772856a4d5"
+        "english-2018-hl-p2-prescribed-1": "9754f0e42923956c7d53772709014c9cebb28deb1baff57dcc1f2fcc1f13f626"
       },
       "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
     },
@@ -20087,7 +20087,7 @@
         "english-2018-hl-p2-prescribed-2"
       ],
       "taskSha256": {
-        "english-2018-hl-p2-prescribed-2": "6936bcc986fdcf4eebecc9062cdb05eaf147e71628ad486f22ff9fc8c5fa665e"
+        "english-2018-hl-p2-prescribed-2": "89eaaa3719b9a01a2f7d42e5fbd6ba39ec11d8dbbd0042572f7c39709bc53941"
       },
       "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
     },
@@ -20099,7 +20099,7 @@
         "english-2018-hl-p2-prescribed-3"
       ],
       "taskSha256": {
-        "english-2018-hl-p2-prescribed-3": "06f8d36c9dd80e53860e67295dbdc84a826a6260e28e68076b14ff1037bd33df"
+        "english-2018-hl-p2-prescribed-3": "de9dc7fc693f77c0fdbccdb57864b47125430ee3946d45ff327fff310cde9c1a"
       },
       "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
     },
@@ -20111,7 +20111,7 @@
         "english-2018-hl-p2-prescribed-4"
       ],
       "taskSha256": {
-        "english-2018-hl-p2-prescribed-4": "cc3e7bbf129945b5c03f509b00cb4836b0e94059df59076c850759d07d526670"
+        "english-2018-hl-p2-prescribed-4": "bdb2b85367dd347973c054f656fe024f1f11ca4850d22730875cca6c5734dc56"
       },
       "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
     },

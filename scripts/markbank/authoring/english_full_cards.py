@@ -55,6 +55,49 @@ def exam_identity(record, suffix):
     return identity
 
 
+# Comparative mode headings print in capitals; the stem shows the same words in
+# their printed wording with the SEC's own case ("General Vision and Viewpoint",
+# never a title-cased "Vision And Viewpoint"). An unlisted mode fails closed.
+MODE_LABELS = {
+    'aspects of story tension or climax or resolution': 'Aspects of Story: Tension or Climax or Resolution',
+    'cultural context': 'Cultural Context',
+    'the cultural context': 'The Cultural Context',
+    'general vision and viewpoint': 'General Vision and Viewpoint',
+    'the general vision and viewpoint': 'The General Vision and Viewpoint',
+    'hero heroine villain': 'Hero, Heroine, Villain',
+    'literary genre': 'Literary Genre',
+    'relationships': 'Relationships',
+    'social setting': 'Social Setting',
+    'theme': 'Theme',
+    'theme or issue': 'Theme or Issue',
+}
+
+
+def printed_mode_label(mode, page_text):
+    key = comparable(mode)
+    if key not in MODE_LABELS:
+        raise ValueError('Comparative mode has no printed-case label: ' + mode)
+    if key not in comparable(page_text):
+        raise ValueError('Comparative mode is not printed on its page: ' + mode)
+    return MODE_LABELS[key]
+
+
+def printed_title(record, doc, identity, key):
+    """An identity title must be printed on its paper page (case-insensitively),
+    and a title recorded as printed in mixed case must appear exactly so."""
+    title = identity['title']
+    if 'titleEvidence' not in identity:
+        return title
+    if comparable(title) not in comparable(doc[identity['paperPage'] - 1].get_text()):
+        raise ValueError('Identity title is not printed on its page: ' + key)
+    page = identity.get('titlePrintedPage')
+    if page:
+        text = re.sub(r'\s+', ' ', doc[page - 1].get_text().replace('\xa0', ' '))
+        if title not in text:
+            raise ValueError('Identity title is not printed in this case: ' + key)
+    return title
+
+
 def region_text(doc, regions):
     chunks = []
     for region in regions:
@@ -406,6 +449,9 @@ def p2_cards(record, doc, sidecar, scheme_pages):
             letter = re.search(r'Comparative ([ABC])', block.label).group(1).lower()
             mode = block.label.split(' · ')[1]
             topic = MODE_TOPICS[re.sub(r'^the ', '', comparable(mode))]
+            pieces = block.label.split(' · ')
+            pieces[1] = printed_mode_label(mode, doc[block.p_page].get_text())
+            stem = ' · '.join(pieces)
             if higher:
                 number = block.label.rsplit('Q', 1)[1]
                 units = [(f'comparative-{letter}-q{number}',
@@ -450,7 +496,7 @@ def p2_cards(record, doc, sidecar, scheme_pages):
             else:
                 letter = re.search(r'Poetry ([A-F])', block.label).group(1).lower()
                 identity = exam_identity(record, f'prescribed-{letter}')
-                poem, poet = identity['title'], identity['canonicalLabel']
+                poem, poet = printed_title(record, doc, identity, f'prescribed-{letter}'), identity['canonicalLabel']
                 stem = f'{poem} — {poet}'
                 source_pages = identity.get('sourcePages') or sorted({r['p'] for r in regions if r['r'][3] > .04})
                 source = paper_source(f'PRESCRIBED POEM {letter.upper()}', poem,
