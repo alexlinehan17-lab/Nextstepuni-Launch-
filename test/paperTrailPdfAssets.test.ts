@@ -1,4 +1,7 @@
 import { describe, expect, it } from 'vitest';
+
+// Vite hook handlers are typed as unions; the tests call them directly.
+type AnyFunction = (...args: unknown[]) => unknown;
 import { pdfjsAssets } from '../scripts/vite/pdfjsAssets';
 import { PDFJS_WASM_PATH, pdfjsDocumentOptions } from '../components/PaperTrail/pdfjsAssets';
 
@@ -6,7 +9,7 @@ describe('PDF image decoder delivery', () => {
   it('ships real decoders, JavaScript fallbacks and their licences at the reader URL', () => {
     const emitted: { fileName: string; source: Buffer }[] = [];
     const plugin = pdfjsAssets();
-    const generate = plugin.generateBundle as Function;
+    const generate = plugin.generateBundle as unknown as AnyFunction;
     generate.call({ emitFile: (file: typeof emitted[number]) => emitted.push(file) });
     for (const name of ['jbig2.wasm', 'openjpeg.wasm', 'qcms_bg.wasm']) {
       const file = emitted.find(f => f.fileName === PDFJS_WASM_PATH + name)!;
@@ -20,9 +23,9 @@ describe('PDF image decoder delivery', () => {
   });
 
   it('serves binary decoder bytes under a deployment base and ignores unknown paths', () => {
-    let middleware: Function;
-    const configure = pdfjsAssets().configureServer as Function;
-    configure({ config: { base: '/preview/' }, middlewares: { use: (fn: Function) => { middleware = fn; } } });
+    let middleware: AnyFunction;
+    const configure = pdfjsAssets().configureServer as unknown as AnyFunction;
+    configure({ config: { base: '/preview/' }, middlewares: { use: (fn: AnyFunction) => { middleware = fn; } } });
     const headers: Record<string, string> = {};
     let data: Buffer | undefined;
     let missed = 0;

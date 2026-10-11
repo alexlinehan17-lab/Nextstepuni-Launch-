@@ -110,7 +110,7 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       expect(answerMapUrls(resolved)[0]).toBe(`/paper-answers/${year}/LC001ALP200IV.pdf.json`);
       const map = JSON.parse(readFileSync(`public/paper-answers/${year}/LC001ALP200IV.pdf.json`,'utf8'));
       const legacy = map.q.filter((q: { n: string }) => /^\d+$/.test(q.n))
-        .map(({paperRegion,schemeRegion,printOrder,...original}: Record<string, unknown>) => original);
+        .map(({ paperRegion: _paperRegion, schemeRegion: _schemeRegion, printOrder: _printOrder, ...original }: Record<string, unknown>) => original);
       expect(legacy).toHaveLength(12);
       expect(createHash('sha256').update(JSON.stringify(legacy)).digest('hex')).toBe(year === 2022
         ? '1e563fe88d83be836a4a4d3d02b9fa50d8db754d0f2e59218720173f5c47fdef'
