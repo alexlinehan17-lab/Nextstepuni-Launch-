@@ -615,6 +615,10 @@ export interface GeographyRubric {
   criteria: GeographyCriterion[];
   /** The mark value of one SRP on this paper, where SRPs govern the answer. */
   srpMarks?: number;
+  /** The scheme's own examiner directions (credit rules, caps, deductions)
+   *  for this task, lifted verbatim. They qualify the criteria; they carry
+   *  no marks of their own. */
+  directions?: string[];
   markingGuideNote: string;
 }
 

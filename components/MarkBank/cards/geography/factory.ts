@@ -6,6 +6,12 @@
  * short answers and source questions carry their published allocation; longer
  * responses are placed against the full tariff with the scheme's SRP caps and
  * diagram/example directions visible. Indicative examples never become ticks.
+ *
+ * Independently reviewed sittings (scripts/markbank/authored/
+ * geography-reviewed-audit.json) carry one criterion per published allocation
+ * line — an identification, a named example, an SRP explanation, a sketch
+ * feature, an option's aspects and Overall Coherence — each limited to the
+ * marks the scheme can award, plus the scheme's examiner directions.
  */
 
 import type {
@@ -17,6 +23,15 @@ import type {
 import authored from './authored.json';
 
 type GeographyLevel = 'higher' | 'ordinary';
+
+interface AuthoredGeographyCriterion {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  guidanceKind: GeographyGuidanceKind;
+  guidance: string[];
+}
 
 interface AuthoredGeographyCard {
   id: string;
@@ -37,12 +52,24 @@ interface AuthoredGeographyCard {
   schemeGuidance: string[];
   sourceMaterial?: CardSourceMaterial;
   additionalSourceMaterials?: CardSourceMaterial[];
+  /** Reviewed sittings only: the scheme's own allocation lines. */
+  criteria?: AuthoredGeographyCriterion[];
+  directions?: string[];
+  atlasTopicIds?: string[];
+  reviewed?: boolean;
 }
 
 const DATA = authored.cards as AuthoredGeographyCard[];
 
 const range = (from: number, to: number) =>
   Array.from({ length: to - from + 1 }, (_, index) => from + index);
+
+const reviewedCriteria = (card: AuthoredGeographyCard): GeographyCriterion[] =>
+  (card.criteria ?? []).map(criterion => ({
+    ...criterion,
+    permittedMarks: [...criterion.permittedMarks],
+    guidance: [...criterion.guidance],
+  }));
 
 const criterionFor = (card: AuthoredGeographyCard): GeographyCriterion => ({
   id: 'published-allocation',
@@ -81,21 +108,36 @@ const makeCard = (card: AuthoredGeographyCard): SecRubricCard => ({
     `SEC Geography ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level ` +
     `marking scheme ${card.year}, p.${card.schemePage} — © State Examinations Commission.`,
   specVersion: 'geography:outgoing',
-  qa: {
-    gates: [
-      'verbatim-paper-prompt',
-      'geography-srp-grammar',
-      'required-source-complete',
-      'finite-routes-expanded',
-      'paper-census',
-    ],
-    humanReviewedBy: 'paper-and-scheme-census',
-    humanReviewedAt: '2026-08-31',
-  },
+  qa: card.reviewed
+    ? {
+      gates: [
+        'visual-paper-sweep',
+        'visual-scheme-allocation',
+        'verbatim-paper-prompt',
+        'published-mark-boundaries',
+        'finite-routes-expanded',
+        'required-source-complete',
+        'canonical-topic',
+      ],
+      humanReviewedBy: 'independent-paper-and-scheme-review',
+      humanReviewedAt: '2026-10-11',
+    }
+    : {
+      gates: [
+        'verbatim-paper-prompt',
+        'geography-srp-grammar',
+        'required-source-complete',
+        'finite-routes-expanded',
+        'paper-census',
+      ],
+      humanReviewedBy: 'paper-and-scheme-census',
+      humanReviewedAt: '2026-08-31',
+    },
   rubric: {
     system: 'geography',
     taskRequirements: [...card.taskRequirements],
-    criteria: [criterionFor(card)],
+    criteria: card.criteria ? reviewedCriteria(card) : [criterionFor(card)],
+    directions: card.directions?.length ? [...card.directions] : undefined,
     srpMarks: card.guidanceKind === 'srp'
       ? (card.level === 'higher' ? 2 : 3)
       : undefined,

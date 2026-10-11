@@ -41,6 +41,9 @@ from typing import Any, Iterable
 
 import fitz
 
+import geography_review as GR
+import geography_review_2026_hl as REVIEW_2026_HL
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -49,6 +52,19 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'geography', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'geography', 'authored.json')
 CENSUS_OUT = os.path.join(
     ROOT, 'scripts', 'markbank', 'authored', 'geography-census.json')
+REVIEW_AUDIT_OUT = os.path.join(
+    ROOT, 'scripts', 'markbank', 'authored', 'geography-reviewed-audit.json')
+SIZES = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'sizes.json')
+ATLAS_OUT = os.path.join(
+    ROOT, 'data', 'examTopics', 'geography-reviewed-question-runtime.json')
+CROSSWALK = os.path.join(
+    ROOT, 'data', 'examTopics', 'geography-curriculum-crosswalk.json')
+
+# Sittings whose every page and scheme allocation was independently reviewed.
+# Their cards come from the review ledger, not from the generic reader below.
+REVIEWED = {
+    (2026, 'higher'): REVIEW_2026_HL,
+}
 
 YEARS = tuple(range(2021, 2027))
 LEVELS = ('higher', 'ordinary')
@@ -63,9 +79,12 @@ PART_TWO_MARKS = {
 # Paper Trail identities for the common 2026 companion set. The map extract,
 # its legend and the aerial are separate official documents, so cards retain
 # them separately instead of fabricating one combined page.
+# Verified by rendering each document (2026-10-11): CLP003 is the 1:50 000
+# Dundalk extract, CLPC00 is the Ordnance Survey legend sheet and CLP004 is the
+# aerial photograph. These were previously attached the wrong way round.
 COMPANION_SOURCE_FILEIDS = {
-    'map': 'LC005CLPC00EV',
-    'legend': 'LC005CLP003EV',
+    'map': 'LC005CLP003EV',
+    'legend': 'LC005CLPC00EV',
     'aerial': 'LC005CLP004EV',
 }
 COMPANION_SOURCE_YEARS = frozenset({2026})
@@ -856,43 +875,38 @@ def question_page_source(
     }
 
 
-def companion_sources(
-        question: PaperQuestion, year: int) -> list[dict[str, Any]]:
-    if year not in COMPANION_SOURCE_YEARS:
-        return []
-    text = question.question_text
-    out: list[dict[str, Any]] = []
-    if re.search(r'\bOrdnance Survey map\b', text, re.I):
-        out.extend((
-            {
-                'kind': 'source-illustration',
-                'label': 'OS MAP',
-                'title': 'Official 1:50 000 map extract',
-                'pages': [1],
-                'sourceFileid': COMPANION_SOURCE_FILEIDS['map'],
-                'attribution': (
-                    'State Examinations Commission Geography 2026 Ordnance '
-                    'Survey map — © State Examinations Commission.'),
-                'presentationNote': (
-                    'The exact official map extract supplied with the '
-                    'examination, reproduced without retyping or alteration.'),
-            },
-            {
-                'kind': 'source-illustration',
-                'label': 'MAP LEGEND',
-                'title': 'Official Ordnance Survey legend',
-                'pages': [1],
-                'sourceFileid': COMPANION_SOURCE_FILEIDS['legend'],
-                'attribution': (
-                    'State Examinations Commission Geography 2026 Ordnance '
-                    'Survey legend — © State Examinations Commission.'),
-                'presentationNote': (
-                    'The exact official legend supplied with the examination, '
-                    'reproduced without retyping or alteration.'),
-            },
-        ))
-    if re.search(r'\baerial photograph\b', text, re.I):
-        out.append({
+def companion_material(kind: str) -> dict[str, Any]:
+    """One separate official companion document, shown as its own source."""
+    if kind == 'map':
+        return {
+            'kind': 'source-illustration',
+            'label': 'OS MAP',
+            'title': 'Official 1:50 000 map extract',
+            'pages': [1],
+            'sourceFileid': COMPANION_SOURCE_FILEIDS['map'],
+            'attribution': (
+                'State Examinations Commission Geography 2026 Ordnance '
+                'Survey map — © State Examinations Commission.'),
+            'presentationNote': (
+                'The exact official map extract supplied with the '
+                'examination, reproduced without retyping or alteration.'),
+        }
+    if kind == 'legend':
+        return {
+            'kind': 'source-illustration',
+            'label': 'MAP LEGEND',
+            'title': 'Official Ordnance Survey legend',
+            'pages': [1],
+            'sourceFileid': COMPANION_SOURCE_FILEIDS['legend'],
+            'attribution': (
+                'State Examinations Commission Geography 2026 Ordnance '
+                'Survey legend — © State Examinations Commission.'),
+            'presentationNote': (
+                'The exact official legend supplied with the examination, '
+                'reproduced without retyping or alteration.'),
+        }
+    if kind == 'aerial':
+        return {
             'kind': 'source-illustration',
             'label': 'AERIAL PHOTOGRAPH',
             'title': 'Official Dundalk aerial photograph',
@@ -904,7 +918,20 @@ def companion_sources(
             'presentationNote': (
                 'The exact official examination photograph, preserved at its '
                 'published resolution in a single-page reader document.'),
-        })
+        }
+    raise AssertionError(f'unknown companion {kind}')
+
+
+def companion_sources(
+        question: PaperQuestion, year: int) -> list[dict[str, Any]]:
+    if year not in COMPANION_SOURCE_YEARS:
+        return []
+    text = question.question_text
+    out: list[dict[str, Any]] = []
+    if re.search(r'\bOrdnance Survey map\b', text, re.I):
+        out.extend((companion_material('map'), companion_material('legend')))
+    if re.search(r'\baerial photograph\b', text, re.I):
+        out.append(companion_material('aerial'))
     return out
 
 
@@ -961,6 +988,141 @@ def scheme_guidance_for_variant(guidance: list[str], variant: Variant) -> list[s
     return guidance[second:]
 
 
+def canonical_topic_ids() -> set[str]:
+    """Outgoing-syllabus Geography node ids, read from curriculum.ts."""
+    text = open(os.path.join(ROOT, 'curriculum.ts'), encoding='utf-8').read()
+    start = text.rfind('{', 0, text.index('"id": "geography"'))
+    depth = 0
+    for index in range(start, len(text)):
+        depth += {'{': 1, '}': -1}.get(text[index], 0)
+        if depth == 0:
+            subject = json.loads(text[start:index + 1])
+            return {topic['id'] for strand in subject['strands']
+                    for topic in strand['subtopics']}
+    raise AssertionError('Geography curriculum not found')
+
+
+def reviewed_sitting(year: int, level: str, review: Any,
+                     fileids: dict[tuple[int, str, int], str],
+                     topic_ids: set[str], crosswalk: dict[str, list[str]]) -> dict[str, Any]:
+    """Cards, census rows, audit and Atlas rows for one independently reviewed sitting."""
+    sitting = GR.Sitting.open(year, level)
+    short = LEVEL_SHORT[level]
+    for part, document in sitting.papers.items():
+        if len(document) != review.PAPER_PAGES[part]:
+            raise AssertionError(f'{year} {level} Part {part}: {len(document)} pages, '
+                                 f'review covers {review.PAPER_PAGES[part]}')
+        if sorted(review.PAGE_REVIEW[f'paper{part}']) != list(range(1, len(document) + 1)):
+            raise AssertionError(f'{year} {level} Part {part}: unreviewed paper page')
+    if len(sitting.scheme) != review.SCHEME_PAGES or sorted(
+            review.PAGE_REVIEW['scheme']) != list(range(1, review.SCHEME_PAGES + 1)):
+        raise AssertionError(f'{year} {level}: scheme page review incomplete')
+    sources = {}
+    for key, document in (('paper1', sitting.papers[1]), ('paper2', sitting.papers[2]),
+                          ('scheme', sitting.scheme)):
+        name, size = review.EXPECTED_SOURCES[key]
+        if os.path.getsize(document.path) != size:
+            raise AssertionError(f'{year} {level} {key}: bytes changed from {size}')
+        sources[key] = {'fileid': name, 'bytes': size, 'sha256': GR.sha256(document.path),
+                        'pages': len(document)}
+    for part in (1, 2):
+        if fileids[(year, level, part)] + '.pdf' != review.EXPECTED_SOURCES[f'paper{part}'][0]:
+            raise AssertionError(f'{year} {level} Part {part}: Paper Trail file id changed')
+    for kind, fileid in COMPANION_SOURCE_FILEIDS.items():
+        path = os.path.join(GR.CORPUS_ROOT, str(year), fileid + '.pdf')
+        sources[kind] = {'fileid': fileid + '.pdf', 'bytes': os.path.getsize(path),
+                         'sha256': GR.sha256(path), 'pages': len(fitz.open(path))}
+    scan = GR.selection_scan(sitting)
+    if scan != review.EXPECTED_SELECTION_SCAN:
+        raise AssertionError(f'{year} {level}: unclassified or stale selection directives '
+                             f'{scan!r}')
+    classified = [item for entry in review.SELECTION_REVIEW for item in entry['scan']]
+    if sorted(map(tuple, classified)) != sorted(map(tuple, scan)):
+        raise AssertionError(f'{year} {level}: selection review does not classify the scan')
+
+    companions = {kind: companion_material(kind) for kind in COMPANION_SOURCE_FILEIDS}
+    cards: list[dict[str, Any]] = []
+    tasks_out, base_tasks, selection_rows = [], [], []
+    totals: dict[tuple[int, str], int] = {}
+    atlas: dict[tuple[int, str], set[str]] = {}
+    for task in review.TASKS:
+        task_cards = GR.build_task_cards(
+            sitting, task, fileids[(year, level, task.part)], companions, topic_ids)
+        for card in task_cards:
+            card_topic = card['topicId']
+            for atlas_id in card['atlasTopicIds']:
+                if not atlas_id.startswith(f'geography-{level}-') or atlas_id not in crosswalk:
+                    raise AssertionError(f"{card['id']}: {atlas_id} is not a {level} Atlas topic")
+            if not any(card_topic in crosswalk[atlas_id] for atlas_id in card['atlasTopicIds']):
+                raise AssertionError(f"{card['id']}: no Atlas topic covers {card_topic}")
+        cards.extend(task_cards)
+        totals[(task.part, task.question)] = totals.get((task.part, task.question), 0) + task.marks
+        number = re.match(r'\d+', task.question).group()
+        atlas.setdefault((task.part, number), set()).update(
+            atlas_id for card in task_cards for atlas_id in card['atlasTopicIds'])
+        ref = GR.ref_label(year, level, task)
+        base_tasks.append({'id': task.card_id, 'year': year, 'level': level,
+                           'part': task.part, 'questionRef': ref,
+                           'title': task_cards[0]['stem'].split(' — ')[0],
+                           'status': 'authored'})
+        if task.routes:
+            selection_rows.append({'questionRef': ref, 'classification': 'finite-expanded',
+                                   'variants': len(task_cards),
+                                   'kinds': ['reviewed-printed-route']})
+        tasks_out.append({
+            'key': task.key, 'questionRef': ref, 'marks': task.marks,
+            'paperPage': task.page,
+            'schemePages': sorted({piece.page for piece in task.scheme}
+                                  | {piece.page for route in task.routes
+                                     for piece in (route.scheme or ())}),
+            'criteria': [{'label': c['label'], 'maxMarks': c['maxMarks']}
+                         for c in task_cards[0]['criteria']],
+            'topicIds': sorted({card['topicId'] for card in task_cards}),
+            'atlasTopicIds': sorted({a for card in task_cards for a in card['atlasTopicIds']}),
+            'sources': list(task.sources),
+            'cards': [card['id'] for card in task_cards],
+            'routes': [route.label for route in task.routes],
+        })
+    expected_totals = {(part, q): marks for part, row in review.QUESTION_TARIFFS.items()
+                       for q, marks in row.items()}
+    if totals != expected_totals:
+        raise AssertionError(f'{year} {level}: task tariffs {totals} != printed {expected_totals}')
+    ids = [card['id'] for card in cards]
+    if len(ids) != len(set(ids)):
+        raise AssertionError(f'{year} {level}: duplicate reviewed card id')
+    legacy = set(review.LEGACY_IDS)
+    if not legacy <= set(ids):
+        raise AssertionError(f'{year} {level}: lost legacy ids {sorted(legacy - set(ids))}')
+    flagged = {t.card_id for t in review.TASKS if t.legacy and not t.routes} | {
+        r.card_id for t in review.TASKS for r in t.routes if r.legacy}
+    if flagged != legacy:
+        raise AssertionError(f'{year} {level}: legacy flags disagree with LEGACY_IDS: '
+                             f'{sorted(flagged ^ legacy)}')
+    corrections = [{'id': t.card_id, 'nowQuestionRef': GR.ref_label(year, level, t),
+                    'reason': review.ID_CORRECTION_REASON}
+                   for t in review.TASKS if t.legacy and t.sub]
+    atlas_rows = [
+        {'level': level, 'year': year, 'paperKey': f'p{part}',
+         'fileid': fileids[(year, level, part)] + '.pdf', 'n': n, 'topicIds': sorted(ids_)}
+        for (part, n), ids_ in sorted(atlas.items(), key=lambda kv: (kv[0][0], int(kv[0][1])))]
+    audit = {
+        'year': year, 'level': level, 'lang': 'ev', 'status': 'reviewed',
+        'reviewedAt': '2026-10-11', 'sources': sources,
+        'pageReview': review.PAGE_REVIEW, 'selectionScan': scan,
+        'selectionReview': review.SELECTION_REVIEW,
+        'questionTotals': {f'Part {p} Q{q}': m for (p, q), m in sorted(totals.items())},
+        'taskCount': len(review.TASKS), 'cardCount': len(cards),
+        'legacyIds': sorted(legacy), 'addedIds': sorted(set(ids) - legacy),
+        'idCorrections': corrections, 'tasks': tasks_out,
+        'rule': (review.__doc__ or '').strip(),
+    }
+    sitting_row = {'year': year, 'level': level, 'paperBaseTasks': len(review.TASKS),
+                   'includedBaseTasks': len(review.TASKS), 'excludedBaseTasks': 0,
+                   'authoredCardsAfterFiniteExpansion': len(cards), 'reviewed': True}
+    return {'cards': cards, 'baseTasks': base_tasks, 'sitting': sitting_row,
+            'selection': selection_rows, 'audit': audit, 'atlas': atlas_rows}
+
+
 def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
     fileids = paper_fileids()
     cards: list[dict[str, Any]] = []
@@ -969,8 +1131,23 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
     excluded: list[dict[str, Any]] = []
     selection_audit: list[dict[str, Any]] = []
 
+    reviewed_audits: list[dict[str, Any]] = []
+    atlas_rows: list[dict[str, Any]] = []
+    topic_ids = canonical_topic_ids()
+    with open(CROSSWALK, encoding='utf-8') as handle:
+        crosswalk = json.load(handle)
     for year in YEARS:
         for level in LEVELS:
+            if (year, level) in REVIEWED:
+                built = reviewed_sitting(year, level, REVIEWED[(year, level)],
+                                         fileids, topic_ids, crosswalk)
+                cards.extend(built['cards'])
+                base_tasks.extend(built['baseTasks'])
+                sittings.append(built['sitting'])
+                selection_audit.extend(built['selection'])
+                reviewed_audits.append(built['audit'])
+                atlas_rows.extend(built['atlas'])
+                continue
             short_scheme = part_one_scheme(year, level)
             long_scheme = part_two_scheme(year, level)
             questions = [*part_one_questions(year, level),
@@ -1128,13 +1305,30 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
             'A/B/C task, or one Higher-Level option is a base task. Every finite '
             'printed route and choose-N combination is expanded. Tasks needing '
             'a missing separate OS map/aerial source are census-held, never '
-            'presented as answerable.'),
+            'presented as answerable. Independently reviewed sittings '
+            '(geography-reviewed-audit.json) instead take one base task per '
+            'separately priced printed part, from their review ledgers.'),
     }
-    return cards, census
+    topic_list = sorted({topic for row in atlas_rows for topic in row['topicIds']})
+    atlas = {
+        'schemaVersion': 1,
+        'subjectId': 'geography',
+        'topicIds': topic_list,
+        'questionMappings': [
+            ['h' if row['level'] == 'higher' else 'o', 'e', row['year'], row['paperKey'],
+             row['fileid'], row['n'], [topic_list.index(t) for t in row['topicIds']]]
+            for row in atlas_rows],
+    }
+    audit = {
+        'schemaVersion': 1, 'subjectId': 'geography',
+        'scope': 'English (EV) editions; Irish editions are deferred.',
+        'reviewedSittings': reviewed_audits,
+    }
+    return cards, census, audit, atlas
 
 
-def serialised() -> tuple[str, str]:
-    cards, census = make_corpus()
+def serialised() -> tuple[str, str, str, str]:
+    cards, census, audit, atlas = make_corpus()
     payload = {
         'meta': {
             'subjectId': 'geography',
@@ -1149,17 +1343,29 @@ def serialised() -> tuple[str, str]:
         'cards': cards,
     }
     return (json.dumps(payload, ensure_ascii=False, indent=2) + '\n',
-            json.dumps(census, ensure_ascii=False, indent=2) + '\n')
+            json.dumps(census, ensure_ascii=False, indent=2) + '\n',
+            json.dumps(audit, ensure_ascii=False, indent=2) + '\n',
+            json.dumps(atlas, ensure_ascii=False, separators=(',', ':')) + '\n')
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
-    authored, census = serialised()
+    authored, census, audit, atlas = serialised()
+    # The deck-size manifest is shared by every subject; only the Geography
+    # entry is ours to restate.
+    with open(SIZES, encoding='utf-8') as handle:
+        sizes = json.load(handle)
+    deck = json.loads(authored)['cards']
+    sizes['geography'] = {level: sum(card['level'] == level for card in deck)
+                          for level in LEVELS}
+    outputs = ((OUT, authored), (CENSUS_OUT, census),
+               (REVIEW_AUDIT_OUT, audit), (ATLAS_OUT, atlas),
+               (SIZES, json.dumps(sizes, indent=1) + '\n'))
     if args.check:
         failures = []
-        for path, expected in ((OUT, authored), (CENSUS_OUT, census)):
+        for path, expected in outputs:
             actual = ''
             if os.path.exists(path):
                 with open(path, encoding='utf-8') as handle:
@@ -1172,18 +1378,20 @@ def main() -> int:
         print('Geography authored corpus is current.')
         return 0
 
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    os.makedirs(os.path.dirname(CENSUS_OUT), exist_ok=True)
-    with open(OUT, 'w', encoding='utf-8') as handle:
-        handle.write(authored)
-    with open(CENSUS_OUT, 'w', encoding='utf-8') as handle:
-        handle.write(census)
+    for path, text in outputs:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, 'w', encoding='utf-8') as handle:
+            handle.write(text)
     payload = json.loads(authored)
     summary = json.loads(census)
+    reviewed = json.loads(audit)['reviewedSittings']
     print(
         f"Wrote {len(payload['cards'])} Geography cards from "
         f"{summary['includedBaseTasks']} answerable base tasks; "
-        f"held {summary['excludedBaseTasks']} missing-companion-source tasks.")
+        f"held {summary['excludedBaseTasks']} missing-companion-source tasks; "
+        f"{len(reviewed)} independently reviewed sitting(s): "
+        + ', '.join(f"{r['year']} {r['level']} {r['taskCount']} tasks/{r['cardCount']} cards"
+                    for r in reviewed) + '.')
     return 0
 
 

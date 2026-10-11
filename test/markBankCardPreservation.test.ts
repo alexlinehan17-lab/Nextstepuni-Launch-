@@ -39,6 +39,7 @@ import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
+import geographyReview from '../scripts/markbank/authored/geography-reviewed-audit.json';
 import { CARDS as COMPUTER_SCIENCE_HIGHER } from '../components/MarkBank/cards/computer-science/higher';
 import { CARDS as COMPUTER_SCIENCE_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENGINEERING_HIGHER } from '../components/MarkBank/cards/engineering/higher';
@@ -479,7 +480,14 @@ const decks = [
    * census-held; every 2026 task ships with its complete official source set.
    * The 2021 HL Q6C choose-two audit also adds its nine missing combinations
    * while retaining the original card id for saved-progress continuity. */
-  ['geography:higher', GEOGRAPHY_HIGHER, 445, '7768fb37a748daf2cda31ae9f8c97b6bb632b44f1243332ce5edfac06361bacc'],
+  /* 2026-10-11: the 2026 Higher sitting was independently reviewed paper by
+   * paper. 445 -> 498: every one of its 73 shipped ids survives (an id that
+   * named a whole question now names that question's first separately priced
+   * part) and 53 ids are added for the other printed parts the scheme prices
+   * on their own. The added ids are listed in
+   * scripts/markbank/authored/geography-reviewed-audit.json; removing them
+   * reproduces the previous frozen hash exactly (asserted below). */
+  ['geography:higher', GEOGRAPHY_HIGHER, 498, 'b3da6e37a9382a9e46982e8bbe25bc93db763372cf8e582d4597c1cb1d5e014a'],
   ['geography:ordinary', GEOGRAPHY_ORDINARY, 309, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
   /* Recovered from the completed Computer Science authoring branch and rebuilt
    * through the same source, tariff, figure and structural guards as every
@@ -767,7 +775,8 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328);
+    // Geography's 2026 Higher review adds 53 separately priced parts: 19,328 + 53.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_381);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -826,7 +835,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
+    // 9,768 + the 53 Geography parts added by the 2026 Higher review.
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_821);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
@@ -839,6 +849,15 @@ describe('Mark Bank card preservation', () => {
       .toBe('db478deb519637edeacce1fd96db3cf50e893e7cf1e8a72cc28c40694b0281ea');
     expect(identityHash(GEOGRAPHY_ORDINARY.filter(card => card.year <= 2025)))
       .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
+  });
+
+  it('adds the reviewed 2026 Higher Geography parts without replacing a card id', () => {
+    const review = geographyReview.reviewedSittings
+      .find(sitting => sitting.year === 2026 && sitting.level === 'higher')!;
+    const added = new Set<string>(review.addedIds);
+    expect(added.size).toBe(53);
+    expect(identityHash(GEOGRAPHY_HIGHER.filter(card => !added.has(card.id))))
+      .toBe('7768fb37a748daf2cda31ae9f8c97b6bb632b44f1243332ce5edfac06361bacc');
   });
 
   it('adds the Art choose-two routes without replacing any existing card id', () => {
