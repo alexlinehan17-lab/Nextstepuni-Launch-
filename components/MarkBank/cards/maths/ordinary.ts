@@ -7598,16 +7598,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q1-a-i", topicId: "maths-2-2", conceptId: "work-out-slope-line",
     section: "B", questionRef: "2023 OL Paper 2 Q1(a)(i)",
-    questionText: "Work out the slope of the line AB",
+    stem: "A(4, 2) and B(1, 8) are two points in the co-ordinate plane.",
+    questionText: "Work out the slope of the line AB.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p2-q1-a-i-r1", kind: "anyN", verbatim: "Correct formula fully substituted\nError(s) in substitution but finishes correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: High Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct formula fully substituted\nError(s) in substitution but finishes correctly","Correct answer without supporting work"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[31],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q1-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q1-a-i.png",
@@ -7628,16 +7642,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q1-a-ii", topicId: "maths-2-2", conceptId: "work-out-distance",
     section: "B", questionRef: "2023 OL Paper 2 Q1(a)(ii)",
-    questionText: "Work out the distance |AB|",
+    stem: "A(4, 2) and B(1, 8) are two points in the co-ordinate plane.",
+    questionText: "Work out the distance |AB|.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p2-q1-a-ii-r1", kind: "anyN", verbatim: "Correct formula fully substituted\nError(s) in substitution but finishes correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: High Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct formula fully substituted\nError(s) in substitution but finishes correctly","Correct answer without supporting work"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[31],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q1-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q1-a-ii.png",
@@ -7658,16 +7686,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q1-b", topicId: "maths-2-2", conceptId: "equation-line-through-point-slope-form",
     section: "B", questionRef: "2023 OL Paper 2 Q1(b)",
-    questionText: "Find the equation of the line through the point (−2, 7) with a slope of Give your answer in the form ax + by + c = 0, where a, b, c∈ℤ",
+    questionText: "Find the equation of the line through the point (−2, 7) with a slope of 1/3. Give your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q1-b-r1", kind: "anyN", verbatim: "Correct formula fully substituted\nOne error in substitution but finishes correctly\nAnswer not in required format Full Credit (-1):\nx−3y + 23", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Correct formula fully substituted\nOne error in substitution but finishes correctly\nAnswer not in required format Full Credit (-1):\nx−3y + 23"]} },
+    { id: "maths-2023-ol-p2-q1-b-r1", kind: "anyN", verbatim: "Correct formula fully substituted\nOne error in substitution but finishes correctly\nAnswer not in required format", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Marked in order: High Partial Credit. Full Credit −1 (a deduction, not a band): x−3y + 23.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Correct formula fully substituted\nOne error in substitution but finishes correctly\nAnswer not in required format"]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[32],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q1-b.png",
@@ -7688,16 +7729,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q1-c-i", topicId: "maths-2-2", conceptId: "draw-line-segment-through-point-slope",
     section: "B", questionRef: "2023 OL Paper 2 Q1(c)(i), (ii)",
-    questionText: "Draw the line segment through the point (4, 2) with a slope of 2 on the co-ordinate diagram below, with the range −2 ≤ y ≤ 6, y∈ℝ",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "The point (4, 2) is shown in each of the two co-ordinate diagrams below.",
+    questionText: "(i) Draw the line segment through the point (4, 2) with a slope of 2 on the co-ordinate diagram below, with the range −2 ≤ y ≤ 6, y ∈ ℝ. (ii) Draw the line segment through the point (4, 2) with a slope of −2/3 on the co-ordinate diagram below, on the domain −1 ≤ x ≤ 7, x ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q1-c-i-r1", kind: "anyN", verbatim: "Work of merit in (i) or (ii)\nIn(c)(i) line drawn with slope−2 In(c)(ii) line drawn with or/slope 2 3", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: Accept correct line segments outside the Range and Domain for Full Credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit in (i) or (ii)\nIn(c)(i) line drawn with slope−2 In(c)(ii) line drawn with or/slope 2 3","Work of merit in (i) and (ii)\nOne part correct","One part correct and work of merit in the other\nIn(c)(i) line drawn with slope−2 In(c)(ii) line drawn and/with slope 2 3 In(c)(ii) line drawn with slope 2/3"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2023-ol-p2-q1-c-i-solution-1", kind: "point", verbatim: "Low Partial Credit — Work of merit in (i) or (ii)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q1-c-i-solution-2", kind: "point", verbatim: "Mid Partial Credit — Work of merit in (i) and (ii)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q1-c-i-solution-3", kind: "point", verbatim: "Mid Partial Credit — One part correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q1-c-i-solution-4", kind: "point", verbatim: "High Partial Credit — One part correct and work of merit in the other", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q1-c-i-solution-5", kind: "point", verbatim: "Note — Accept correct line segments outside the Range and Domain for Full Credit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q1-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q1-c-i.png",
@@ -7718,16 +7777,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q2-a-i", topicId: "maths-2-2", conceptId: "write-down-centre-radius-circle",
     section: "B", questionRef: "2023 OL Paper 2 Q2(a)(i), (ii)",
-    questionText: "Write down the centre and radius of the circle s",
+    stem: "s is the circle x² + y² = 25.",
+    questionText: "(i) Write down the centre and radius of the circle s. (ii) Show that the point (3, −4) is on the circle s.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q2-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i) or (ii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in (i) or (ii)","Work of merit in (i) and (ii)\nOne part correct","One part correct and work of merit in the other Full Credit (-1):\nNo conclusion in (ii)"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q2-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i) or (ii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): No conclusion in (ii).", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in (i) or (ii)","Work of merit in (i) and (ii)\nOne part correct","One part correct and work of merit in the other"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[34],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q2-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q2-a-i.png",
@@ -7748,16 +7821,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q2-a-iii", topicId: "maths-2-2", conceptId: "iii-write-down-ordinates-two-other",
     section: "B", questionRef: "2023 OL Paper 2 Q2(a)(iii)",
-    questionText: "(iii) Write down the co-ordinates of two other points that are also on the circle s",
+    stem: "s is the circle x² + y² = 25.",
+    questionText: "Write down the co-ordinates of two other points that are also on the circle s.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q2-a-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Some substitution into equation of s", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit .", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Some substitution into equation of s","One correct point given","Correct answer without supporting work Full Credit(-1):\nAnswers not given as a pair of coordinates"],"perOptionSteps":[3,1,1]} },
+    { id: "maths-2023-ol-p2-q2-a-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Some substitution into equation of s", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit . Full Credit −1 (a deduction, not a band): Answers not given as a pair of coordinates.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Some substitution into equation of s","One correct point given","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[34],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q2-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q2-a-iii.png",
@@ -7778,16 +7865,44 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q2-b", topicId: "maths-2-2", conceptId: "points-intersection-between-different-circle-line",
     section: "B", questionRef: "2023 OL Paper 2 Q2(b)",
-    questionText: "(b) Find the points of intersection between a different circle, k, and the line l, where: l : 5x−y−13 = 0 x² + y² = 13 k :",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    questionText: "Find the points of intersection between a different circle, k, and the line l, where: l : 5x − y − 13 = 0; k : x² + y² = 13.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
     rows: [
-    { id: "maths-2023-ol-p2-q2-b-r1", kind: "anyN", verbatim: "Some work of merit e.g. Work in isolating one variable e.g. One point tested in one equation", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 8, three parts for 12. The full scale runs to 15. Note: Four steps involved in solution. 1. Express one variable in terms of the other 2. Substitutes into the quadratic 3. Find values of one variable 4. Find values of second variable. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Some work of merit e.g. Work in isolating one variable e.g. One point tested in one equation","Two steps correct e.g. One point tested in both equations e.g. Two points tested or/in one equation","Three steps correct e.g. One point tested in both equations Other point tested in and/one equation only"],"perOptionSteps":[5,3,7]} },
+    { id: "maths-2023-ol-p2-q2-b-solution-1", kind: "point", verbatim: "Model solution — y = 5x − 13", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-2", kind: "point", verbatim: "Model solution — x² − 5x + 6 = 0", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-3", kind: "point", verbatim: "Model solution — Hence Pts (3, 2) and (2, −3)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-4", kind: "point", verbatim: "Model solution — Trial and Error Method where both points are tested in both equations", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-5", kind: "point", verbatim: "Note — Express one variable in terms of the other", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-6", kind: "point", verbatim: "Note — Substitutes into the quadratic", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-7", kind: "point", verbatim: "Note — Find values of one variable", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-8", kind: "point", verbatim: "Note — Find values of second variable", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-9", kind: "point", verbatim: "Low Partial Credit — Some work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-10", kind: "point", verbatim: "Low Partial Credit — Work in isolating one variable", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-11", kind: "point", verbatim: "Low Partial Credit — One point tested in one equation", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-12", kind: "point", verbatim: "Mid Partial Credit — Two steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-13", kind: "point", verbatim: "Mid Partial Credit — One point tested in both equations", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-14", kind: "point", verbatim: "Mid Partial Credit — Two points tested in one equation", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-15", kind: "point", verbatim: "High Partial Credit — Three steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q2-b-solution-16", kind: "point", verbatim: "High Partial Credit — Other point tested in one equation only", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,5,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q2-b.png",
@@ -7808,6 +7923,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
@@ -7818,6 +7934,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2023-ol-p2-q3-a-i-r1", kind: "anyN", verbatim: "Work of merit e.g. Some correct terms multiplied", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Some correct terms multiplied","All terms listed but not multiplied\nOne error in substitution but finishes correctly","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q3-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q3-a-i.png",
@@ -7838,16 +7966,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q3-a-ii", topicId: "maths-1-1", conceptId: "how-many-arrangements-part-start-end",
     section: "B", questionRef: "2023 OL Paper 2 Q3(a)(ii)",
+    stem: "Part (a)(i) asks: In how many ways can the letters in the word CAMOGIE be arranged?",
     questionText: "How many of the arrangements in part (a)(i) start with M and end with a vowel (A, O, I, or E)?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p2-q3-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Indicates × 4 for vowels", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Indicates × 4 for vowels","Terms listed but not multiplied\nOne error in substitution but finishes correctly","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q3-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q3-a-ii.png",
@@ -7868,16 +8010,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q3-a-iii", topicId: "maths-1-1", conceptId: "iii-how-many-arrangements-different-letters",
     section: "B", questionRef: "2023 OL Paper 2 Q3(a)(iii)",
-    questionText: "(iii) How many arrangements of 3 different letters can be made from the letters in the word CAMOGIE?",
+    questionText: "How many arrangements of 3 different letters can be made from the letters in the word CAMOGIE?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p2-q3-a-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. 7 or 6 or 5 identified\nLists at least one 3 letter arrangement", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. Marked in order: Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit e.g. 7 or 6 or 5 identified\nLists at least one 3 letter arrangement","Correct answer without supporting work"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q3-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q3-a-iii.png",
@@ -7898,21 +8053,42 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q3-b-i", topicId: "maths-1-6", conceptId: "write-each-letters-correct-place-table",
     section: "B", questionRef: "2023 OL Paper 2 Q3(b)(i), (ii)",
-    questionText: "Write each of the letters A, B, and C in the correct place in the table below to show which scatterplot corresponds to each correlation coefficient. Use each letter only once",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "Three scatterplots are shown below. They are labelled A, B, and C. Each scatterplot has the same axes and scales. The correlation coefficient for each scatterplot was calculated. The results were 0·95, 0·6, and −0·95.",
+    questionText: "(i) Write each of the letters A, B, and C in the correct place in the table below to show which scatterplot corresponds to each correlation coefficient. Use each letter only once. (ii) For scatterplot B, explain why the value you picked is correct.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q3-b-i-r1", kind: "anyN", verbatim: "Work e.g. one of merit correct in (i) or/correlation (ii) coefficient identified in (i)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Note: 0∙6 −0∙95 A C. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work e.g. one of merit correct in (i) or/correlation (ii) coefficient identified in (i)","Work of merit in (i) and (ii)\nOne part correct","One part correct and work of merit in the other"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q3-b-i-solution-1", kind: "point", verbatim: "Model solution — Scatterplot (A, B, or C) B C A", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q3-b-i-solution-2", kind: "point", verbatim: "Model solution — Strong positive linear correlation so as x goes up y goes up.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q3-b-i-solution-3", kind: "point", verbatim: "Model solution — Points all lie close to a positive straight line", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q3-b-i-solution-4", kind: "point", verbatim: "Low Partial Credit — Work of merit in (i) or (ii)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q3-b-i-solution-5", kind: "point", verbatim: "Low Partial Credit — one correct correlation coefficient identified in (i)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q3-b-i-solution-6", kind: "point", verbatim: "Mid Partial Credit — Work of merit in (i) and (ii)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q3-b-i-solution-7", kind: "point", verbatim: "Mid Partial Credit — One part correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q3-b-i-solution-8", kind: "point", verbatim: "High Partial Credit — One part correct and work of merit in the other", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[37],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q3-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q3-b-i.png",
           "srcHash": "f169cf2b3c36efaf0cae807972e17baa",
-          "alt": "The question as printed on the paper — Three scatterplots are shown below. They are labelled A, B, and C. Each scatterplot has the same axes and scales. The correlation coefficient for each scatterplot was calculated. The results were 0∙95, 0∙6, and −0∙95.… Full card prompt: Write each of the letters A, B, and C in the correct place in the table below to show which scatterplot corresponds to each correlation coefficient. Use each letter only once",
+          "alt": "The question as printed on the paper — Three scatterplots are shown below. They are labelled A, B, and C. Each scatterplot has the same axes and scales. The correlation coefficient for each scatterplot was calculated. The results were 0∙95, 0∙6, and −0∙95.… Full card prompt: Three scatterplots are shown below. They are labelled A, B, and C. Each scatterplot has the same axes and scales. The correlation coefficient for each scatterplot was calculated. The results were 0·95, 0·6, and −0·95. (i) Write each of the letters A, B, and C in the correct place in the table below to show which scatterplot corresponds to each correlation coefficient. Use each letter only once. (ii) For scatterplot B, explain why the value you picked is correct.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -7928,21 +8104,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q4-a-i", topicId: "maths-1-2", conceptId: "probability-scores-his-first-free-throws",
     section: "B", questionRef: "2023 OL Paper 2 Q4(a)(i)",
-    questionText: "Find the probability that he scores his first 3 free throws",
+    stem: "Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events.",
+    questionText: "Find the probability that he scores his first 3 free throws.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p2-q4-a-i-r1", kind: "anyN", verbatim: "S . S. S = (0 ∙7)(0 ∙7)(0 ∙7)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["S . S. S = (0 ∙7)(0 ∙7)(0 ∙7)","= 0 ∙ 343 or 343/1000 or 34 ∙ 3%"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q4-a-i.png",
           "srcHash": "3cabb9192c09b95c3e00bcda28a0e988",
-          "alt": "The question as printed on the paper — Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores… Full card prompt: Find the probability that he scores his first 3 free throws",
+          "alt": "The question as printed on the paper — Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores… Full card prompt: Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores his first 3 free throws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -7958,21 +8148,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q4-a-ii", topicId: "maths-1-2", conceptId: "probability-scores-exactly-his-first-free",
     section: "B", questionRef: "2023 OL Paper 2 Q4(a)(ii)",
-    questionText: "Find the probability that he scores exactly 2 of his first 3 free throws",
+    stem: "Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events.",
+    questionText: "Find the probability that he scores exactly 2 of his first 3 free throws.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q4-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. indicates three arrangements", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. indicates three arrangements","Correct layout with correct substitution\nAnswer as 0 ∙ 147 or 147/1000","Correct answers without supporting work Zero Credit: Probability greater than 1"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q4-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. indicates three arrangements", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit. Zero Credit (not a band): Probability greater than 1.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. indicates three arrangements","Correct layout with correct substitution\nAnswer as 0 ∙ 147 or 147/1000","Correct answers without supporting work"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q4-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q4-a-ii.png",
           "srcHash": "b05723b0d85c2065b558afe63fdec503",
-          "alt": "The question as printed on the paper — Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores… Full card prompt: Find the probability that he scores exactly 2 of his first 3 free throws",
+          "alt": "The question as printed on the paper — Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores… Full card prompt: Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores exactly 2 of his first 3 free throws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -7988,21 +8192,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q4-a-iii", topicId: "maths-1-2", conceptId: "iii-one-reason-why-scoring-his",
     section: "B", questionRef: "2023 OL Paper 2 Q4(a)(iii)",
-    questionText: "(iii) Give one reason why scoring his free throws might not be independent events",
+    stem: "Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events.",
+    questionText: "Give one reason why scoring his free throws might not be independent events.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p2-q4-a-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Partial explanation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit e.g. Partial explanation"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q4-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q4-a-iii.png",
           "srcHash": "90c66f597bb0e3d828357d5febdcefc9",
-          "alt": "The question as printed on the paper — Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores… Full card prompt: (iii) Give one reason why scoring his free throws might not be independent events",
+          "alt": "The question as printed on the paper — Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores… Full card prompt: Rohan plays basketball. During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Give one reason why scoring his free throws might not be independent events.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8018,16 +8236,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q4-b", topicId: "maths-1-2", conceptId: "table-shows-number-games-which-rohan",
+    id: "maths-2023-ol-p2-q4-b", topicId: "maths-1-6", conceptId: "table-shows-number-games-which-rohan",
     section: "B", questionRef: "2023 OL Paper 2 Q4(b)",
-    questionText: "The table below shows the number of games in which Rohan scored each of the given number of points. For example, Rohan scored 12 points in 3 games",
+    stem: "Rohan plays basketball.",
+    questionText: "The table below shows the number of games in which Rohan scored each of the given number of points. For example, Rohan scored 12 points in 3 games. Number of points: 0, 6, 8, 10, 12, 16; number of games: 4, 5, 4, 2, 3, 1. Work out Rohan’s mean number of points per game, based on the values in the table. Give your answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q4-b-r1", kind: "anyN", verbatim: "Work of merit e.g. Some addition of numerator or denominator terms\n134 and/or 19 without work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Some addition of numerator or denominator terms\n134 and/or 19 without work","Correct formula fully substituted\nOne error and finishes correctly Full Credit (-1):\nIncorrect rounding","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q4-b-r1", kind: "anyN", verbatim: "Work of merit e.g. Some addition of numerator or denominator terms\n134 and/or 19 without work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit. Full Credit −1 (a deduction, not a band): Incorrect rounding.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Some addition of numerator or denominator terms\n134 and/or 19 without work","Correct formula fully substituted\nOne error and finishes correctly","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q4-b.png",
@@ -8048,21 +8280,45 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q5-a", topicId: "maths-2-2", conceptId: "length-radius-circle",
+    id: "maths-2023-ol-p2-q5-a", topicId: "maths-3-4", conceptId: "length-radius-circle",
     section: "B", questionRef: "2023 OL Paper 2 Q5(a), (b)",
-    questionText: "Find the length of the radius of the circle c",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four corners of the square.",
+    questionText: "(a) Find the length of the radius of the circle c. (b) Work out the area of the circle c. Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q5-a-r1", kind: "anyN", verbatim: "Work e.g. work of merit on diagram in either for (a) or/(a) (b)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Work e.g. work of merit on diagram in either for (a) or/(a) (b)","One part correct","One part correct and work of merit in the other part Full Credit (-1):\nIncorrect rounding\nIncorrect or omitted units\nLeaves answer in terms of 𝜋","Correct answers without supporting work"],"perOptionSteps":[4,2,2,2]} },
+    { id: "maths-2023-ol-p2-q5-a-solution-1", kind: "point", verbatim: "Model solution — Area = πr²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-a-solution-2", kind: "point", verbatim: "Model solution — = 36π", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-a-solution-3", kind: "point", verbatim: "Model solution — = 113·10 cm2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-a-solution-4", kind: "point", verbatim: "Low Partial Credit — Work of merit in either (a) or (b)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-a-solution-5", kind: "point", verbatim: "Low Partial Credit — work on diagram for (a)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-a-solution-6", kind: "point", verbatim: "Mid Partial Credit — One part correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-a-solution-7", kind: "point", verbatim: "High Partial Credit — One part correct and work of merit in the other part", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-a-solution-8", kind: "point", verbatim: "Full Credit −1 (deduction) — Incorrect rounding", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-a-solution-9", kind: "point", verbatim: "Full Credit −1 (deduction) — Incorrect or omitted units", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-a-solution-10", kind: "point", verbatim: "Full Credit −1 (deduction) — Leaves answer in terms of π", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-a-solution-11", kind: "point", verbatim: "Full Credit — Correct answers without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[40],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-a.png",
           "srcHash": "10a2679c498d79bbe8e376eba1ca88c5",
-          "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four… Full card prompt: Find the length of the radius of the circle c",
+          "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four… Full card prompt: The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four corners of the square. (a) Find the length of the radius of the circle c. (b) Work out the area of the circle c. Give your answer correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8078,21 +8334,42 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q5-c", topicId: "maths-3-4", conceptId: "work-out-percentage-area-square-taken",
     section: "B", questionRef: "2023 OL Paper 2 Q5(c)",
-    questionText: "Work out the percentage of the area of the square that is taken up by the circle c, correct to the nearest percent",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four corners of the square.",
+    questionText: "Work out the percentage of the area of the square that is taken up by the circle c, correct to the nearest percent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q5-c-r1", kind: "anyN", verbatim: "Work of merit e.g. Finds Area of square", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit .", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Finds Area of square","113∙10/12 × 12 × 100 or 0 ∙ 7854 Full Credit (-1):\nIncorrect rounding","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
+    { id: "maths-2023-ol-p2-q5-c-solution-1", kind: "point", verbatim: "Model solution — = 0·7854 × 100", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-c-solution-2", kind: "point", verbatim: "Model solution — = 78·54[%]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-c-solution-3", kind: "point", verbatim: "Model solution — = 79[%]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-c-solution-4", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-c-solution-5", kind: "point", verbatim: "Low Partial Credit — Finds Area of square", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-c-solution-6", kind: "point", verbatim: "High Partial Credit — 113·10/(12 × 12) × 100 or 0·7854", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-c-solution-7", kind: "point", verbatim: "Full Credit −1 (deduction) — Incorrect rounding", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-c-solution-8", kind: "point", verbatim: "Full Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[40],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q5-c",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-c.png",
           "srcHash": "581e4ed5291c8ea2f74da887aebdb727",
-          "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four… Full card prompt: Work out the percentage of the area of the square that is taken up by the circle c, correct to the nearest percent",
+          "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four… Full card prompt: The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four corners of the square. Work out the percentage of the area of the square that is taken up by the circle c, correct to the nearest percent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8108,21 +8385,46 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q5-d", topicId: "maths-2-2", conceptId: "radius-circle-correct-decimal-places",
+    id: "maths-2023-ol-p2-q5-d", topicId: "maths-2-3", conceptId: "radius-circle-correct-decimal-places",
     section: "B", questionRef: "2023 OL Paper 2 Q5(d)",
-    questionText: "Show that the radius of the circle k is 8∙49 cm, correct to 2 decimal places",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four corners of the square.",
+    questionText: "Show that the radius of the circle k is 8·49 cm, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q5-d-r1", kind: "anyN", verbatim: "Work of merit e.g. Pythagoras Theorem formula written as c² = a² + b² High Partial/√288 Credit:\nx = √288/2 or √72 with work Full Credit (-1):\nIncorrect rounding Zero Credit:\nNo correct substitution and no formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit e.g. Pythagoras Theorem formula written as c² = a² + b² High Partial/√288 Credit:\nx = √288/2 or √72 with work Full Credit (-1):\nIncorrect rounding Zero Credit:\nNo correct substitution and no formula"]} },
+    { id: "maths-2023-ol-p2-q5-d-solution-1", kind: "point", verbatim: "Model solution — x² = 12² + 12²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-2", kind: "point", verbatim: "Model solution — x² = 288", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-3", kind: "point", verbatim: "Model solution — x = √288", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-4", kind: "point", verbatim: "Model solution — = 8·4853", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-5", kind: "point", verbatim: "Model solution — = 8·49", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-6", kind: "point", verbatim: "Model solution — x² = 6² + 6²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-7", kind: "point", verbatim: "Model solution — x = √72", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-8", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-9", kind: "point", verbatim: "Low Partial Credit — Pythagoras Theorem formula written as c² = a² + b²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-10", kind: "point", verbatim: "High Partial Credit — x = √288/2 or √72 with work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-11", kind: "point", verbatim: "Full Credit −1 (deduction) — Incorrect rounding", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q5-d-solution-12", kind: "point", verbatim: "Zero Credit — No correct substitution and no formula", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q5-d",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-d.png",
           "srcHash": "3268d1901d8981851c0d0ca06a10ad82",
-          "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four… Full card prompt: Show that the radius of the circle k is 8∙49 cm, correct to 2 decimal places",
+          "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four… Full card prompt: The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four corners of the square. Show that the radius of the circle k is 8·49 cm, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8138,21 +8440,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q5-e", topicId: "maths-2-2", conceptId: "work-out-circumference-circle-correct-decimal",
+    id: "maths-2023-ol-p2-q5-e", topicId: "maths-3-4", conceptId: "work-out-circumference-circle-correct-decimal",
     section: "B", questionRef: "2023 OL Paper 2 Q5(e)",
-    questionText: "Work out the circumference of the circle k, correct to 2 decimal places",
+    stem: "The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four corners of the square.",
+    questionText: "Work out the circumference of the circle k, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q5-e-r1", kind: "anyN", verbatim: "Correct formula fully substituted Full Credit (-1):\nIncorrect rounding\nIncorrect or omitted units", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: High Partial Credit; Full Credit .", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct formula fully substituted Full Credit (-1):\nIncorrect rounding\nIncorrect or omitted units","Correct answer without supporting work Zero Credit:\n53 ∙3 without work"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p2-q5-e-r1", kind: "anyN", verbatim: "Correct formula fully substituted", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: High Partial Credit; Full Credit . Full Credit −1 (a deduction, not a band): Incorrect rounding; Incorrect or omitted units. Zero Credit (not a band): 53 ∙3 without work.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct formula fully substituted","Correct answer without supporting work"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q5-e",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-e.png",
           "srcHash": "35a1ceac75cf10d69713e09f93f25317",
-          "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four… Full card prompt: Work out the circumference of the circle k, correct to 2 decimal places",
+          "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four… Full card prompt: The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four corners of the square. Work out the circumference of the circle k, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8168,21 +8484,40 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q6-a", topicId: "maths-2-1", conceptId: "diagram-shows-parallelogram-abcd-not-scale",
     section: "B", questionRef: "2023 OL Paper 2 Q6(a)",
-    questionText: "The diagram below shows the parallelogram ABCD (not to scale). |AB| = 8 cm, |BC| = 6 cm, and |∠ABC| = 130°, as shown",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    questionText: "The diagram below shows the parallelogram ABCD (not to scale). |AB| = 8 cm, |BC| = 6 cm, and |∠ABC| = 130°, as shown. Construct the parallelogram ABCD in the space below. The point A is given, as is part of the line AB.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
     rows: [
-    { id: "maths-2023-ol-p2-q6-a-r1", kind: "anyN", verbatim: "Work of merit\ne.g. ONE/(Work on) correct diagram element", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 8, three parts for 12. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Work of merit\ne.g. ONE/(Work on) correct diagram element","Any TWO/constructing elements a parallelogram correct towards","THREE or more elements correct Full Credit (-1):\nIf [AD] is on the horizontal and the construction is correct"],"perOptionSteps":[5,3,7]} },
+    { id: "maths-2023-ol-p2-q6-a-solution-1", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-a-solution-2", kind: "point", verbatim: "Low Partial Credit — ONE correct element", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-a-solution-3", kind: "point", verbatim: "Low Partial Credit — Work on diagram", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-a-solution-4", kind: "point", verbatim: "Mid Partial Credit — Any TWO elements correct towards constructing a parallelogram", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-a-solution-5", kind: "point", verbatim: "High Partial Credit — THREE or more elements correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-a-solution-6", kind: "point", verbatim: "Full Credit −1 (deduction) — If [AD] is on the horizontal and the construction is correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,5,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "measurementRequired": true,
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q6-a.png",
           "srcHash": "385379802cf1dd9244256f86060536bb",
-          "alt": "The question as printed on the paper — The diagram below shows the parallelogram ABCD (not to scale). |AB| = 8 cm, |BC| = 6 cm, and |∠ABC| = 130°, as shown. 6 cm 130° 8 cm Construct the parallelogram ABCD in the space below. The point A is given, as is part… Full card prompt: The diagram below shows the parallelogram ABCD (not to scale). |AB| = 8 cm, |BC| = 6 cm, and |∠ABC| = 130°, as shown",
+          "alt": "The question as printed on the paper — The diagram below shows the parallelogram ABCD (not to scale). |AB| = 8 cm, |BC| = 6 cm, and |∠ABC| = 130°, as shown. 6 cm 130° 8 cm Construct the parallelogram ABCD in the space below. The point A is given, as is part… Full card prompt: The diagram below shows the parallelogram ABCD (not to scale). |AB| = 8 cm, |BC| = 6 cm, and |∠ABC| = 130°, as shown. Construct the parallelogram ABCD in the space below. The point A is given, as is part of the line AB.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8198,21 +8533,44 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q6-b", topicId: "maths-2-1", conceptId: "diagram-shows-another-parallelogram-not-scale",
     section: "B", questionRef: "2023 OL Paper 2 Q6(b)",
-    questionText: "(b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where x, y∈ℝ",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    questionText: "The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where x, y ∈ ℝ: 100°, (2x − 30)° and (x + 3y)°. Use the information in the diagram to work out the value of x and the value of y.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q6-b-r1", kind: "anyN", verbatim: "Work of merit e.g. sets up equation, indicates knowledge of opposite angles in a parallelogram being equal or adjacent angles summing to 180°\nWork on diagram", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit .", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. sets up equation, indicates knowledge of opposite angles in a parallelogram being equal or adjacent angles summing to 180°\nWork on diagram","Value of x found Full Credit (-1):\nAnswer without supporting work that gives x = 5 y = 65,","Correct answers without supporting work"],"perOptionSteps":[3,1,1]} },
+    { id: "maths-2023-ol-p2-q6-b-solution-1", kind: "point", verbatim: "Model solution — 2x − 30 = 100", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-b-solution-2", kind: "point", verbatim: "Model solution — x = 65", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-b-solution-3", kind: "point", verbatim: "Model solution — x + 3y = 80", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-b-solution-4", kind: "point", verbatim: "Model solution — 3y = 15", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-b-solution-5", kind: "point", verbatim: "Model solution — y = 5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-b-solution-6", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-b-solution-7", kind: "point", verbatim: "Low Partial Credit — sets up equation, indicates knowledge of opposite angles in a parallelogram being equal or adjacent angles summing to 180°", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-b-solution-8", kind: "point", verbatim: "Low Partial Credit — Work on diagram", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-b-solution-9", kind: "point", verbatim: "High Partial Credit — Value of x found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-b-solution-10", kind: "point", verbatim: "Full Credit −1 (deduction) — Answer without supporting work that gives y = 65, x = 5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q6-b-solution-11", kind: "point", verbatim: "Full Credit — Correct answers without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q6-b.png",
           "srcHash": "8fb647a7009c7bdaf1d7b6794a511ba9",
-          "alt": "The question as printed on the paper — (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where x, y∈ℝ. Use the information in the diagram to work out the value of x and the value of y. (x + 3y)°… Full card prompt: (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where x, y∈ℝ",
+          "alt": "The question as printed on the paper — (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where x, y∈ℝ. Use the information in the diagram to work out the value of x and the value of y. (x + 3y)°… Full card prompt: The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where x, y ∈ ℝ: 100°, (2x − 30)° and (x + 3y)°. Use the information in the diagram to work out the value of x and the value of y.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8228,16 +8586,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q6-c", topicId: "maths-2-1", conceptId: "state-whether-statement-true-false-justify",
     section: "B", questionRef: "2023 OL Paper 2 Q6(c)",
-    questionText: "State whether the following statement is true or false. Justify your answer",
+    questionText: "State whether the following statement is true or false. Justify your answer. Statement: “Every square is a parallelogram.” True or false? (Tick one box only)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p2-q6-c-r1", kind: "anyN", verbatim: "Work of merit e.g. Correct box (True) ticked but no work of merit in Justification\nIncorrect box (False) ticked but some correct knowledge of the properties of a parallelogram or square indicated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Correct box (True) ticked but no work of merit in Justification\nIncorrect box (False) ticked but some correct knowledge of the properties of a parallelogram or square indicated","Correct box ticked and work of merit in Justification"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[43],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q6-c",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q6-c.png",
@@ -8258,21 +8629,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q7-a-i", topicId: "maths-2-3", conceptId: "gradient-road-when-135-correct-nearest",
     section: "B", questionRef: "2023 OL Paper 2 Q7(a)(i)",
-    questionText: "Find the gradient of the road [AB] when |BC| = 24 m and |AC| = 135 m. Give your answer correct to the nearest percent",
+    stem: "Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. The gradient of the road [AB] is |BC|/|AC| written as a percentage. It is a measure of how steep the road is. In parts (a)(i) to (a)(iv), there are four different values for |AB| and |AC|, and four different gradients.",
+    questionText: "Find the gradient of the road [AB] when |BC| = 24 m and |AC| = 135 m. Give your answer correct to the nearest percent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q7-a-i-r1", kind: "anyN", verbatim: "Work of merit e.g. formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit .", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. formula with some substitution","Correct formula fully substituted Full Credit (-1):\nIncorrect rounding","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q7-a-i-r1", kind: "anyN", verbatim: "Work of merit e.g. formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit . Full Credit −1 (a deduction, not a band): Incorrect rounding.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. formula with some substitution","Correct formula fully substituted","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[44],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q7-a-i.png",
           "srcHash": "74560a52a6126e961f393a88543352a4",
-          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: Find the gradient of the road [AB] when |BC| = 24 m and |AC| = 135 m. Give your answer correct to the nearest percent",
+          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. The gradient of the road [AB] is |BC|/|AC| written as a percentage. It is a measure of how steep the road is. In parts (a)(i) to (a)(iv), there are four different values for |AB| and |AC|, and four different gradients. Find the gradient of the road [AB] when |BC| = 24 m and |AC| = 135 m. Give your answer correct to the nearest percent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8288,21 +8673,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q7-a-ii", topicId: "maths-2-3", conceptId: "when-gradient-road-correct-nearest-metre",
     section: "B", questionRef: "2023 OL Paper 2 Q7(a)(ii)",
-    questionText: "Find |AC| when |BC| = 16 m and the gradient of the road [AB] is 12%. Give your answer correct to the nearest metre",
+    stem: "Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. The gradient of the road [AB] is |BC|/|AC| written as a percentage. It is a measure of how steep the road is. In parts (a)(i) to (a)(iv), there are four different values for |AB| and |AC|, and four different gradients.",
+    questionText: "Find |AC| when |BC| = 16 m and the gradient of the road [AB] is 12%. Give your answer correct to the nearest metre.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q7-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Gradient formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit .", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Gradient formula with some substitution","Correct formula fully substituted\n|AC| isolated correctly\nOne error in substitution and finishes correctly Full Credit (-1):\nIncorrect rounding","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q7-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Gradient formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit . Full Credit −1 (a deduction, not a band): Incorrect rounding.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Gradient formula with some substitution","Correct formula fully substituted\n|AC| isolated correctly\nOne error in substitution and finishes correctly","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[44],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q7-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q7-a-ii.png",
           "srcHash": "b2ee3840fa3ab684f64ba29735a1d3cb",
-          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: Find |AC| when |BC| = 16 m and the gradient of the road [AB] is 12%. Give your answer correct to the nearest metre",
+          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. The gradient of the road [AB] is |BC|/|AC| written as a percentage. It is a measure of how steep the road is. In parts (a)(i) to (a)(iv), there are four different values for |AB| and |AC|, and four different gradients. Find |AC| when |BC| = 16 m and the gradient of the road [AB] is 12%. Give your answer correct to the nearest metre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8318,21 +8717,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q7-a-iii", topicId: "maths-2-1", conceptId: "iii-theorem-pythagoras-when-105-correct",
+    id: "maths-2023-ol-p2-q7-a-iii", topicId: "maths-2-3", conceptId: "iii-theorem-pythagoras-when-105-correct",
     section: "B", questionRef: "2023 OL Paper 2 Q7(a)(iii)",
-    questionText: "(iii) Use the Theorem of Pythagoras to find |AC| when |BC| = 27 m and |AB| = 105 m. Give your answer correct to the nearest whole number",
+    stem: "Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. The gradient of the road [AB] is |BC|/|AC| written as a percentage. It is a measure of how steep the road is. In parts (a)(i) to (a)(iv), there are four different values for |AB| and |AC|, and four different gradients.",
+    questionText: "Use the Theorem of Pythagoras to find |AC| when |BC| = 27 m and |AB| = 105 m. Give your answer correct to the nearest whole number.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q7-a-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Correct relevant formula\nFormula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Correct relevant formula\nFormula with some substitution","Correct formula fully substituted\nCorrect answer without supporting work\nx² = 11025 −729\nOne error in substitution but finishes correctly Full Credit (-1):\nIncorrect rounding\nIncorrect or omitted units"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p2-q7-a-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Correct relevant formula\nFormula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Incorrect rounding; Incorrect or omitted units.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Correct relevant formula\nFormula with some substitution","Correct formula fully substituted\nCorrect answer without supporting work\nx² = 11025 −729\nOne error in substitution but finishes correctly"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[45],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q7-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q7-a-iii.png",
           "srcHash": "6317470a726794a8ae80843b57f5bbc9",
-          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: (iii) Use the Theorem of Pythagoras to find |AC| when |BC| = 27 m and |AB| = 105 m. Give your answer correct to the nearest whole number",
+          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. The gradient of the road [AB] is |BC|/|AC| written as a percentage. It is a measure of how steep the road is. In parts (a)(i) to (a)(iv), there are four different values for |AB| and |AC|, and four different gradients. Use the Theorem of Pythagoras to find |AC| when |BC| = 27 m and |AB| = 105 m. Give your answer correct to the nearest whole number.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8348,21 +8762,42 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q7-a-iv", topicId: "maths-2-3", conceptId: "size-angle-bac-when-gradient-road",
     section: "B", questionRef: "2023 OL Paper 2 Q7(a)(iv)",
-    questionText: "(iv) Find the size of the angle ∠BAC when the gradient of the road [AB] is 9%. Give your answer correct to the nearest degree",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. The gradient of the road [AB] is |BC|/|AC| written as a percentage. It is a measure of how steep the road is. In parts (a)(i) to (a)(iv), there are four different values for |AB| and |AC|, and four different gradients.",
+    questionText: "Find the size of the angle ∠BAC when the gradient of the road [AB] is 9%. Give your answer correct to the nearest degree.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q7-a-iv-r1", kind: "anyN", verbatim: "A = Tan^−¹ (/100) 9\nCorrect answer without supporting work Full Credit (-1):\nIncorrect rounding", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Note: Incorrect Calculator Mode (Apply once in paper) Rad: = 0 ∙08975 Grad = 5 ∙714. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["A = Tan^−¹ (/100) 9\nCorrect answer without supporting work Full Credit (-1):\nIncorrect rounding"]} },
+    { id: "maths-2023-ol-p2-q7-a-iv-solution-1", kind: "point", verbatim: "Model solution — A = 5·1427", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-a-iv-solution-2", kind: "point", verbatim: "Model solution — A = 5[°]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-a-iv-solution-3", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-a-iv-solution-4", kind: "point", verbatim: "High Partial Credit — A = Tan⁻¹(9/100)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-a-iv-solution-5", kind: "point", verbatim: "High Partial Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-a-iv-solution-6", kind: "point", verbatim: "Full Credit −1 (deduction) — Incorrect rounding", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-a-iv-solution-7", kind: "point", verbatim: "Note — Incorrect Calculator Mode (Apply once in paper)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[45],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q7-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q7-a-iv.png",
           "srcHash": "eb1f8b248a4989df04d06f473514e5d4",
-          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: (iv) Find the size of the angle ∠BAC when the gradient of the road [AB] is 9%. Give your answer correct to the nearest degree",
+          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. The gradient of the road [AB] is |BC|/|AC| written as a percentage. It is a measure of how steep the road is. In parts (a)(i) to (a)(iv), there are four different values for |AB| and |AC|, and four different gradients. Find the size of the angle ∠BAC when the gradient of the road [AB] is 9%. Give your answer correct to the nearest degree.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8378,21 +8813,42 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q7-b", topicId: "maths-2-3", conceptId: "olga-wants-measure-distance-between-two",
     section: "B", questionRef: "2023 OL Paper 2 Q7(b)",
-    questionText: "Olga wants to measure the distance between two points, R and O. She marks a point P on the ground, so that the distance from R to P is 20 m. She measures the angles ∠OPR and ∠ORP. All of these are shown in the diagram below (not to scale)",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "Olga is a cyclist. She is measuring how long and how steep different roads are.",
+    questionText: "Olga wants to measure the distance between two points, R and O. She marks a point P on the ground, so that the distance from R to P is 20 m. She measures the angles ∠OPR and ∠ORP. All of these are shown in the diagram below (not to scale): |RP| = 20 m, |∠ORP| = 88° and |∠OPR| = 87°. Work out the distance |OR|. Give your answer correct to the nearest metre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q7-b-r1", kind: "anyN", verbatim: "Work of merit e.g. Sine Rule written\nIdentifies 5^o", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit e.g. Sine Rule written\nIdentifies 5^o","Correct formula fully substituted Full Credit (-1):\nIncorrect rounding Rad: = 17 ∙14 Grad: = 249 ∙61"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p2-q7-b-solution-1", kind: "point", verbatim: "Model solution — 180 − [88 + 87] = 5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-b-solution-2", kind: "point", verbatim: "Model solution — x = 229·15977 m", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-b-solution-3", kind: "point", verbatim: "Model solution — |OR| = 229[ m]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-b-solution-4", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-b-solution-5", kind: "point", verbatim: "Low Partial Credit — Sine Rule written", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-b-solution-6", kind: "point", verbatim: "Low Partial Credit — Identifies 5°", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-b-solution-7", kind: "point", verbatim: "High Partial Credit — Correct formula fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-b-solution-8", kind: "point", verbatim: "Full Credit −1 (deduction) — Incorrect rounding", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[46],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q7-b.png",
           "srcHash": "6270a1ed0aa9c8bb72e8f378ec551023",
-          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: Olga wants to measure the distance between two points, R and O. She marks a point P on the ground, so that the distance from R to P is 20 m. She measures the angles ∠OPR and ∠ORP. All of these are shown in the diagram below (not to scale)",
+          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: Olga is a cyclist. She is measuring how long and how steep different roads are. Olga wants to measure the distance between two points, R and O. She marks a point P on the ground, so that the distance from R to P is 20 m. She measures the angles ∠OPR and ∠ORP. All of these are shown in the diagram below (not to scale): |RP| = 20 m, |∠ORP| = 88° and |∠OPR| = 87°. Work out the distance |OR|. Give your answer correct to the nearest metre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8408,21 +8864,86 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q8-a", topicId: "maths-5-2", conceptId: "instruction-manual-recommends-pool-should-filled",
+    id: "maths-2023-ol-p2-q7-c", topicId: "maths-2-3", conceptId: "olga-has-already-worked-out-distances",
+    section: "B", questionRef: "2023 OL Paper 2 Q7(c)",
+    stem: "Olga is a cyclist. She is measuring how long and how steep different roads are.",
+    questionText: "Olga has already worked out the distances between three points, labelled X, Y, and Z in the diagram on the right (not to scale): |XZ| = 700 m, |ZY| = 550 m and |XY| = 800 m. Work out the size of the angle at X in the triangle XYZ. Give your answer in degrees, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-q7-c-solution-1", kind: "point", verbatim: "Model solution — Cos X = (490000 + 640000 − 302500)/(2(700)(800))", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-c-solution-2", kind: "point", verbatim: "Model solution — ∠X = Cos⁻¹(331/448)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-c-solution-3", kind: "point", verbatim: "Model solution — ∠X = Cos⁻¹ 0·738839", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-c-solution-4", kind: "point", verbatim: "Model solution — ∠X = 42·4[°]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-c-solution-5", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-c-solution-6", kind: "point", verbatim: "Low Partial Credit — Some correct substitution into Cosine formula", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-c-solution-7", kind: "point", verbatim: "High Partial Credit — Correct formula fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q7-c-solution-8", kind: "point", verbatim: "Full Credit −1 (deduction) — Incorrect rounding", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[46],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-OL-ask-p2-q7-c",
+          "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q7-c.png",
+          "srcHash": "7e716d241e834408625053226a8d1399",
+          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road [AB]. AC is horizontal and BC is vertical. The diagram is not to scale. Road The gradient of the road [AB]… Full card prompt: Olga is a cyclist. She is measuring how long and how steep different roads are. Olga has already worked out the distances between three points, labelled X, Y, and Z in the diagram on the right (not to scale): |XZ| = 700 m, |ZY| = 550 m and |XY| = 800 m. Work out the size of the angle at X in the triangle XYZ. Give your answer in degrees, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-OL-paper-p045-i1",
+          "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p045-i1.png",
+          "srcHash": "224649ed29791dfc19a03fe1e25203ab",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: 550² = 700² + 800²-2(700)(800)Cos X Cos X = (700² + 800² − 550²)/2(700)(800) Cos X = (490000 + 640000 − 302500)/2(700)(800) cos X = (/1120000) ∠X = Cos^−¹ (331/448) ∠X = Cos^(−1)0 ∙738839 ∠X = 42 ∙4^[^o^] Mathematics – Ordinary Level",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-q8-a", topicId: "maths-3-4", conceptId: "instruction-manual-recommends-pool-should-filled",
     section: "B", questionRef: "2023 OL Paper 2 Q8(a)",
-    questionText: "The instruction manual recommends that the pool should be filled to a maximum depth of 0∙75 m",
+    stem: "A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m.",
+    questionText: "The instruction manual recommends that the pool should be filled to a maximum depth of 0·75 m. Work out the volume of water in the pool when it is filled to this maximum depth. Give your answer in m³, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q8-a-r1", kind: "anyN", verbatim: "Work of merit\nIdentifies r", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit\nIdentifies r","Correct formula fully substituted\nOne error in substitution but finishes correctly Full Credit (-1):\nIncorrect rounding\nLeaves answer in terms of 𝜋"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p2-q8-a-r1", kind: "anyN", verbatim: "Work of merit\nIdentifies r", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Incorrect rounding; Leaves answer in terms of 𝜋.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit\nIdentifies r","Correct formula fully substituted\nOne error in substitution but finishes correctly"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[47],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-a",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-a.png",
           "srcHash": "656a0b7daf6255ad82df0c0118c7d5e6",
-          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: The instruction manual recommends that the pool should be filled to a maximum depth of 0∙75 m",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The instruction manual recommends that the pool should be filled to a maximum depth of 0·75 m. Work out the volume of water in the pool when it is filled to this maximum depth. Give your answer in m³, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8438,21 +8959,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q8-b-i", topicId: "maths-3-4", conceptId: "total-volume-pool-seats-375",
     section: "B", questionRef: "2023 OL Paper 2 Q8(b)(i)",
-    questionText: "Show that the total volume of the 3 pool seats is 0∙375 m³",
+    stem: "A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The family buys 3 pool seats. Each pool seat is a cube, with sides of length 0·5 m.",
+    questionText: "Show that the total volume of the 3 pool seats is 0·375 m³.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p2-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit e.g. Length of One side of cube labelled correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Length of One side of cube labelled correctly","Correct formula fully substituted"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[47],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-b-i.png",
           "srcHash": "85450e1d4191b7899af19c0876a18628",
-          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: Show that the total volume of the 3 pool seats is 0∙375 m³",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The family buys 3 pool seats. Each pool seat is a cube, with sides of length 0·5 m. Show that the total volume of the 3 pool seats is 0·375 m³.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8468,21 +9003,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q8-b-ii", topicId: "maths-3-4", conceptId: "pool-filled-water-height-pool-seats",
     section: "B", questionRef: "2023 OL Paper 2 Q8(b)(ii)",
-    questionText: "The pool is filled with water to a height of 0∙6 m. The 3 pool seats are put into the pool, so that each seat is fully covered in water",
+    stem: "A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The family buys 3 pool seats. Each pool seat is a cube, with sides of length 0·5 m.",
+    questionText: "The pool is filled with water to a height of 0·6 m. The 3 pool seats are put into the pool, so that each seat is fully covered in water. Find the amount by which the water level in the pool rises. Give your answer in metres, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q8-b-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Writes 0 ∙375\nIdentifies r", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Writes 0 ∙375\nIdentifies r","Correct formula fully substituted Full Credit (-1):\nIncorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p2-q8-b-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Writes 0 ∙375\nIdentifies r", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Writes 0 ∙375\nIdentifies r","Correct formula fully substituted"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[47],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-b-ii.png",
           "srcHash": "86886b045caae65c88410c1a7e8812ff",
-          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: The pool is filled with water to a height of 0∙6 m. The 3 pool seats are put into the pool, so that each seat is fully covered in water",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The family buys 3 pool seats. Each pool seat is a cube, with sides of length 0·5 m. The pool is filled with water to a height of 0·6 m. The 3 pool seats are put into the pool, so that each seat is fully covered in water. Find the amount by which the water level in the pool rises. Give your answer in metres, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8498,21 +9047,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q8-c-i", topicId: "maths-3-4", conceptId: "slant-height-cone-marked-diagram-correct",
     section: "B", questionRef: "2023 OL Paper 2 Q8(c)(i)",
-    questionText: "Show that the slant height of the cone, marked l in the diagram above, is 1∙53 m, correct to 2 decimal places",
+    stem: "A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The family also buys a cover for the pool, to help keep the water clean. It is in the shape of a right circular cone, with a radius of 1·3 m and a vertical height of 0·8 m.",
+    questionText: "Show that the slant height of the cone, marked l in the diagram above, is 1·53 m, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q8-c-i-r1", kind: "anyN", verbatim: "Work of merit e.g. Identifies right angled triangle in diagram or correct relevant formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit e.g. Identifies right angled triangle in diagram or correct relevant formula","Correct formula fully substituted\nOne error in substitution and finishes correctly Full Credit (-1):\nIncorrect rounding"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p2-q8-c-i-r1", kind: "anyN", verbatim: "Work of merit e.g. Identifies right angled triangle in diagram or correct relevant formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit e.g. Identifies right angled triangle in diagram or correct relevant formula","Correct formula fully substituted\nOne error in substitution and finishes correctly"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[48],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-c-i.png",
           "srcHash": "273c7c70a6ca0545201ed5dbf08e1e43",
-          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: Show that the slant height of the cone, marked l in the diagram above, is 1∙53 m, correct to 2 decimal places",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The family also buys a cover for the pool, to help keep the water clean. It is in the shape of a right circular cone, with a radius of 1·3 m and a vertical height of 0·8 m. Show that the slant height of the cone, marked l in the diagram above, is 1·53 m, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8528,21 +9091,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q8-c-ii", topicId: "maths-3-4", conceptId: "work-out-curved-surface-area-conical",
     section: "B", questionRef: "2023 OL Paper 2 Q8(c)(ii)",
-    questionText: "Work out the curved surface area of the conical cover. Give your answer correct to 2 decimal places",
+    stem: "A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The family also buys a cover for the pool, to help keep the water clean. It is in the shape of a right circular cone, with a radius of 1·3 m and a vertical height of 0·8 m.",
+    questionText: "Work out the curved surface area of the conical cover. Give your answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q8-c-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Identifies r or l", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit .", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Identifies r or l","Correct formula fully substituted","Correct answer without supporting work Full Credit (-1):\nIncorrect rounding\nIncorrect or omitted units"],"perOptionSteps":[3,1,1]} },
+    { id: "maths-2023-ol-p2-q8-c-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Identifies r or l", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit . Full Credit −1 (a deduction, not a band): Incorrect rounding; Incorrect or omitted units.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Identifies r or l","Correct formula fully substituted","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[48],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-c-ii.png",
           "srcHash": "74b6febdb719b07c69a4f524f878f7b7",
-          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: Work out the curved surface area of the conical cover. Give your answer correct to 2 decimal places",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The family also buys a cover for the pool, to help keep the water clean. It is in the shape of a right circular cone, with a radius of 1·3 m and a vertical height of 0·8 m. Work out the curved surface area of the conical cover. Give your answer correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8558,21 +9135,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q8-c-iii", topicId: "maths-2-2", conceptId: "iii-diagram-shows-net-conical-cover",
+    id: "maths-2023-ol-p2-q8-c-iii", topicId: "maths-3-4", conceptId: "iii-diagram-shows-net-conical-cover",
     section: "B", questionRef: "2023 OL Paper 2 Q8(c)(iii)",
-    questionText: "(iii) The diagram below shows the net of the conical cover (not to scale). It is a sector of a circle of radius x",
+    stem: "A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The family also buys a cover for the pool, to help keep the water clean. It is in the shape of a right circular cone, with a radius of 1·3 m and a vertical height of 0·8 m.",
+    questionText: "The diagram below shows the net of the conical cover (not to scale). It is a sector of a circle of radius x. Write down the value of x and work out the size of the angle A, correct to the nearest degree.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q8-c-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Identifies r Use of Ans (c)(i) or (c)(ii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Identifies r Use of Ans (c)(i) or (c)(ii)","Correct x value","Correct formula fully substituted\nOne error in substitution but finishes correctly Full Credit (-1):\nIncorrect rounding"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q8-c-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Identifies r Use of Ans (c)(i) or (c)(ii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Incorrect rounding.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Identifies r Use of Ans (c)(i) or (c)(ii)","Correct x value","Correct formula fully substituted\nOne error in substitution but finishes correctly"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[49],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-c-iii.png",
           "srcHash": "39cd432a6901f6f6054172d76163ac04",
-          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: (iii) The diagram below shows the net of the conical cover (not to scale). It is a sector of a circle of radius x",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The instruction manual… Full card prompt: A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2·4 m and an internal depth of 0·9 m. The family also buys a cover for the pool, to help keep the water clean. It is in the shape of a right circular cone, with a radius of 1·3 m and a vertical height of 0·8 m. The diagram below shows the net of the conical cover (not to scale). It is a sector of a circle of radius x. Write down the value of x and work out the size of the angle A, correct to the nearest degree.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8588,21 +9179,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q9-a-i", topicId: "maths-5-2", conceptId: "work-out-maximum-number-students-sample",
+    id: "maths-2023-ol-p2-q9-a-i", topicId: "maths-1-5", conceptId: "work-out-maximum-number-students-sample",
     section: "B", questionRef: "2023 OL Paper 2 Q9(a)(i), (iii)",
-    questionText: "Work out the maximum number of students in this sample who, on average, could have read for more than 100 minutes per day",
+    stem: "A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on average, they spend reading each day. Their results are shown in the table below. Minutes spent reading per day: 0 − 30, 30 − 60, 60 − 90, 90 − 120, 120 − 150, 150 − 180; number of students: 16, 35, 62, 59, 18, 10. Note: 30 − 60 means “30 minutes or more, but less than 60 minutes”, and so on.",
+    questionText: "(i) Work out the maximum number of students in this sample who, on average, could have read for more than 100 minutes per day. (iii) Explain why the method of choosing the students for this survey could limit the validity of the conclusions.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p2-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit in either (i) or (iii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in either (i) or (iii)","Work of merit in (i) and (iii)\nOne part correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[50],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q9-a-i.png",
           "srcHash": "7f3ac3bec7e3ce828f9fda947b94b0cd",
-          "alt": "The question as printed on the paper — A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on… Full card prompt: Work out the maximum number of students in this sample who, on average, could have read for more than 100 minutes per day",
+          "alt": "The question as printed on the paper — A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on… Full card prompt: A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on average, they spend reading each day. Their results are shown in the table below. Minutes spent reading per day: 0 − 30, 30 − 60, 60 − 90, 90 − 120, 120 − 150, 150 − 180; number of students: 16, 35, 62, 59, 18, 10. Note: 30 − 60 means “30 minutes or more, but less than 60 minutes”, and so on. (i) Work out the maximum number of students in this sample who, on average, could have read for more than 100 minutes per day. (iii) Explain why the method of choosing the students for this survey could limit the validity of the conclusions.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8618,21 +9223,39 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q9-a-ii", topicId: "maths-1-6", conceptId: "estimate-median-time-spent-reading-these",
     section: "B", questionRef: "2023 OL Paper 2 Q9(a)(ii)",
-    questionText: "Estimate the median time spent reading by these 200 students, as accurately as possible. Justify your answer",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on average, they spend reading each day. Their results are shown in the table below. Minutes spent reading per day: 0 − 30, 30 − 60, 60 − 90, 90 − 120, 120 − 150, 150 − 180; number of students: 16, 35, 62, 59, 18, 10. Note: 30 − 60 means “30 minutes or more, but less than 60 minutes”, and so on.",
+    questionText: "Estimate the median time spent reading by these 200 students, as accurately as possible. Justify your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q9-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Gives answer as 90", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit e.g. Gives answer as 90","[60 −90] interval indicated Zero Credit\nMean = 83 ∙7"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p2-q9-a-ii-solution-1", kind: "point", verbatim: "Model solution — Writes any value of median in the range 60 ≤ median < 90", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-a-ii-solution-2", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-a-ii-solution-3", kind: "point", verbatim: "Low Partial Credit — Gives answer as 90", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-a-ii-solution-4", kind: "point", verbatim: "High Partial Credit — [60 − 90] interval indicated", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-a-ii-solution-5", kind: "point", verbatim: "Zero Credit — Mean = 83·7", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[50],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q9-a-ii.png",
           "srcHash": "431d5eb5bfd7efda008c3c3a8a41fdd5",
-          "alt": "The question as printed on the paper — A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on… Full card prompt: Estimate the median time spent reading by these 200 students, as accurately as possible. Justify your answer",
+          "alt": "The question as printed on the paper — A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on… Full card prompt: A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on average, they spend reading each day. Their results are shown in the table below. Minutes spent reading per day: 0 − 30, 30 − 60, 60 − 90, 90 − 120, 120 − 150, 150 − 180; number of students: 16, 35, 62, 59, 18, 10. Note: 30 − 60 means “30 minutes or more, but less than 60 minutes”, and so on. Estimate the median time spent reading by these 200 students, as accurately as possible. Justify your answer.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8648,21 +9271,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q9-a-iv", topicId: "maths-1-6", conceptId: "draw-graph-chart-represent-data-table",
     section: "B", questionRef: "2023 OL Paper 2 Q9(a)(iv)",
-    questionText: "(iv) Draw a graph or chart to represent the data in the table. Show clearly any relevant calculations. Label your graph or chart clearly",
+    stem: "A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on average, they spend reading each day. Their results are shown in the table below. Minutes spent reading per day: 0 − 30, 30 − 60, 60 − 90, 90 − 120, 120 − 150, 150 − 180; number of students: 16, 35, 62, 59, 18, 10. Note: 30 − 60 means “30 minutes or more, but less than 60 minutes”, and so on.",
+    questionText: "Draw a graph or chart to represent the data in the table. Show clearly any relevant calculations. Label your graph or chart clearly.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2023-ol-p2-q9-a-iv-r1", kind: "anyN", verbatim: "Work of merit e.g. Partly drawn graph / chart\nIdentifies axes or sectors", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. The full scale runs to 15. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Work of merit e.g. Partly drawn graph / chart\nIdentifies axes or sectors","Four intervals drawn correct Full Credit (-1):\nNo labels.( once only)"],"perOptionSteps":[5,10]} },
+    { id: "maths-2023-ol-p2-q9-a-iv-r1", kind: "anyN", verbatim: "Work of merit e.g. Partly drawn graph / chart\nIdentifies axes or sectors", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. The full scale runs to 15. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): No labels.( once only).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Work of merit e.g. Partly drawn graph / chart\nIdentifies axes or sectors","Four intervals drawn correct"],"perOptionSteps":[5,10]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[51],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q9-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q9-a-iv.png",
           "srcHash": "33502b63253ca7376fb4f268b800b733",
-          "alt": "The question as printed on the paper — A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on… Full card prompt: (iv) Draw a graph or chart to represent the data in the table. Show clearly any relevant calculations. Label your graph or chart clearly",
+          "alt": "The question as printed on the paper — A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on… Full card prompt: A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on average, they spend reading each day. Their results are shown in the table below. Minutes spent reading per day: 0 − 30, 30 − 60, 60 − 90, 90 − 120, 120 − 150, 150 − 180; number of students: 16, 35, 62, 59, 18, 10. Note: 30 − 60 means “30 minutes or more, but less than 60 minutes”, and so on. Draw a graph or chart to represent the data in the table. Show clearly any relevant calculations. Label your graph or chart clearly.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8678,16 +9316,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q9-b-i", topicId: "maths-3-3", conceptId: "work-out-percentage-students-sample-who",
     section: "B", questionRef: "2023 OL Paper 2 Q9(b)(i)",
-    questionText: "Work out the percentage of students in this sample who were given a rating of Excellent",
+    stem: "A random sample of 500 students in Cork took a statistics test. 61 of these students were given a rating of Excellent.",
+    questionText: "Work out the percentage of students in this sample who were given a rating of Excellent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p2-q9-b-i-r1", kind: "anyN", verbatim: "Work of merit e.g. p̂ = 61/500 or × 100", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. p̂ = 61/500 or × 100","p̂ = 61/500 × 100 or 0 ∙ 122"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[51],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q9-b-i.png",
@@ -8708,16 +9360,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q9-b-ii", topicId: "maths-1-7", conceptId: "margin-error-sample-correct-decimal-place",
     section: "B", questionRef: "2023 OL Paper 2 Q9(b)(ii)",
-    questionText: "Show that the margin of error for this sample is 4∙5%, correct to 1 decimal place",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "A random sample of 500 students in Cork took a statistics test. 61 of these students were given a rating of Excellent.",
+    questionText: "Show that the margin of error for this sample is 4·5%, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Correct e.g. n formula = 500 or written/√500", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Correct e.g. n formula = 500 or written/√500","Correct formula fully substituted e.g. 1/√500"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p2-q9-b-ii-solution-1", kind: "point", verbatim: "Model solution — = 0·044721359", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-ii-solution-2", kind: "point", verbatim: "Model solution — = 4·5%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-ii-solution-3", kind: "point", verbatim: "Low Partial Credit — Correct formula written", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-ii-solution-4", kind: "point", verbatim: "Low Partial Credit — n = 500 or √500", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-ii-solution-5", kind: "point", verbatim: "High Partial Credit — Correct formula fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-ii-solution-6", kind: "point", verbatim: "High Partial Credit — 1/√500", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[52],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q9-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q9-b-ii.png",
@@ -8738,21 +9409,44 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q9-b-iii", topicId: "maths-1-6", conceptId: "iii-general-students-get-rating-excellent",
+    id: "maths-2023-ol-p2-q9-b-iii", topicId: "maths-1-7", conceptId: "iii-general-students-get-rating-excellent",
     section: "B", questionRef: "2023 OL Paper 2 Q9(b)(iii)",
-    questionText: "(iii) In general, 10% of students get a rating of Excellent on this statistics test",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "A random sample of 500 students in Cork took a statistics test. 61 of these students were given a rating of Excellent.",
+    questionText: "In general, 10% of students get a rating of Excellent on this statistics test. Use your answers to parts (b)(i) and (b)(ii) to test the claim that the percentage of students in Cork who would get a rating of Excellent is different to the population percentage, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q9-b-iii-r1", kind: "anyN", verbatim: "12 ∙2 −4 ∙5 ≤ p̂ ≤12 ∙2 + 4 ∙5", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":2,"options":["12 ∙2 −4 ∙5 ≤ p̂ ≤12 ∙2 + 4 ∙5","7 ∙7 ≤ p̂ ≤16 ∙7","Conclusion:","No difference between Cork and population","proportion","Reason:","10% is inside the range found. Within the CI.","Mathematics – Ordinary Level"],"perOptionSteps":[2,1,1,1]} },
+    { id: "maths-2023-ol-p2-q9-b-iii-solution-1", kind: "point", verbatim: "Model solution — 12·2 − 4·5 ≤ p̂ ≤ 12·2 + 4·5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-iii-solution-2", kind: "point", verbatim: "Model solution — 7·7 ≤ p̂ ≤ 16·7", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-iii-solution-3", kind: "point", verbatim: "Model solution — No difference between Cork and population proportion", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-iii-solution-4", kind: "point", verbatim: "Model solution — 10% is inside the range found. Within the CI.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-iii-solution-5", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-iii-solution-6", kind: "point", verbatim: "Low Partial Credit — Writes answer from (b)(i) or (b)(ii) in this part", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-iii-solution-7", kind: "point", verbatim: "Mid Partial Credit — One boundary formed", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-iii-solution-8", kind: "point", verbatim: "High Partial Credit — Both boundaries formed", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-iii-solution-9", kind: "point", verbatim: "High Partial Credit — but no conclusion and reason", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q9-b-iii-solution-10", kind: "point", verbatim: "Full Credit −1 (deduction) — Either conclusion or reason missing", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[52],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q9-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q9-b-iii.png",
           "srcHash": "68022f98712e51d17a840540460525ac",
-          "alt": "The question as printed on the paper — A random sample of 500 students in Cork took a statistics test. 61 of these students were given a rating of Excellent. Work out the percentage of students in this sample who were given a rating of Excellent. Show that… Full card prompt: (iii) In general, 10% of students get a rating of Excellent on this statistics test",
+          "alt": "The question as printed on the paper — A random sample of 500 students in Cork took a statistics test. 61 of these students were given a rating of Excellent. Work out the percentage of students in this sample who were given a rating of Excellent. Show that… Full card prompt: A random sample of 500 students in Cork took a statistics test. 61 of these students were given a rating of Excellent. In general, 10% of students get a rating of Excellent on this statistics test. Use your answers to parts (b)(i) and (b)(ii) to test the claim that the percentage of students in Cork who would get a rating of Excellent is different to the population percentage, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8768,21 +9462,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q10-a", topicId: "maths-2-3", conceptId: "work-out-cba-size-angle-cba",
+    id: "maths-2023-ol-p2-q10-a", topicId: "maths-2-1", conceptId: "work-out-cba-size-angle-cba",
     section: "B", questionRef: "2023 OL Paper 2 Q10(a)",
-    questionText: "Work out |∠CBA|, the size of the angle CBA",
+    stem: "A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the same length. The pentagon is divided into five congruent isosceles triangles. Each triangle contains the point O. |∠BOC| = 72° and |AO| = 6 cm.",
+    questionText: "Work out |∠CBA|, the size of the angle CBA.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p2-q10-a-r1", kind: "anyN", verbatim: "Work of merit e.g. Any correct geometrical interpretation worked or indicated diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Any correct geometrical interpretation worked or indicated diagram","Calculates 54^o and stops","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[53],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q10-a",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q10-a.png",
           "srcHash": "c47e59e169b8279d0e8c0a149fa8bb2c",
-          "alt": "The question as printed on the paper — A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the 6 cm same length. The pentagon is divided into… Full card prompt: Work out |∠CBA|, the size of the angle CBA",
+          "alt": "The question as printed on the paper — A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the 6 cm same length. The pentagon is divided into… Full card prompt: A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the same length. The pentagon is divided into five congruent isosceles triangles. Each triangle contains the point O. |∠BOC| = 72° and |AO| = 6 cm. Work out |∠CBA|, the size of the angle CBA.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8798,21 +9506,42 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q10-b", topicId: "maths-2-3", conceptId: "work-out-area-triangle-aob-work",
     section: "B", questionRef: "2023 OL Paper 2 Q10(b)",
-    questionText: "Work out the area of the triangle AOB, and hence work out the area of the pentagon ABCDE. Give each answer correct to 1 decimal place. (You do not need to use your answer from part (a).) Area of triangle AOB = cm² Area of pentagon = cm²",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the same length. The pentagon is divided into five congruent isosceles triangles. Each triangle contains the point O. |∠BOC| = 72° and |AO| = 6 cm.",
+    questionText: "Work out the area of the triangle AOB, and hence work out the area of the pentagon ABCDE. Give each answer correct to 1 decimal place. (You do not need to use your answer from part (a).)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Work of merit e.g. Any correct work with area of triangle formula.\nCorrect formula for area of triangle fully substituted", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Any correct work with area of triangle formula.\nCorrect formula for area of triangle fully substituted","Finds area of triangle Rad: Triangle = 4 ∙56, Pentagon = 22 ∙84 Grad: Triangle = 16 ∙28, Pentagon = 81 ∙43"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p2-q10-b-solution-1", kind: "point", verbatim: "Model solution — Area ∆ = (1/2)(6)(6) Sin 72", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q10-b-solution-2", kind: "point", verbatim: "Model solution — = 17·1 [cm2]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q10-b-solution-3", kind: "point", verbatim: "Model solution — 17·119 × 5 = 85·59", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q10-b-solution-4", kind: "point", verbatim: "Model solution — = 85·6 [cm2]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q10-b-solution-5", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q10-b-solution-6", kind: "point", verbatim: "Low Partial Credit — Any correct work with area of triangle formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q10-b-solution-7", kind: "point", verbatim: "Low Partial Credit — Correct formula for area of triangle fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2023-ol-p2-q10-b-solution-8", kind: "point", verbatim: "High Partial Credit — Finds area of triangle", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[53],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q10-b.png",
           "srcHash": "23a5b70a95abd20203862518d61bb0dd",
-          "alt": "The question as printed on the paper — A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the 6 cm same length. The pentagon is divided into… Full card prompt: Work out the area of the triangle AOB, and hence work out the area of the pentagon ABCDE. Give each answer correct to 1 decimal place. (You do not need to use your answer from part (a).) Area of triangle AOB = cm² Area of pentagon = cm²",
+          "alt": "The question as printed on the paper — A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the 6 cm same length. The pentagon is divided into… Full card prompt: A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the same length. The pentagon is divided into five congruent isosceles triangles. Each triangle contains the point O. |∠BOC| = 72° and |AO| = 6 cm. Work out the area of the triangle AOB, and hence work out the area of the pentagon ABCDE. Give each answer correct to 1 decimal place. (You do not need to use your answer from part (a).)",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8828,21 +9557,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q10-c-i", topicId: "maths-1-5", conceptId: "write-down-sample-space-all-possible",
+    id: "maths-2023-ol-p2-q10-c-i", topicId: "maths-1-3", conceptId: "write-down-sample-space-all-possible",
     section: "B", questionRef: "2023 OL Paper 2 Q10(c)(i)",
-    questionText: "Write down a sample space to show all of the 25 possible outcomes when the spinner is spun twice",
+    stem: "The triangles in the spinner are numbered 1 to 5, as shown. The spinner is spun twice, and each number landed on is recorded.",
+    questionText: "Write down a sample space to show all of the 25 possible outcomes when the spinner is spun twice. It may be useful to draw a two-way table or to list the outcomes in a systematic way.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p2-q10-c-i-r1", kind: "anyN", verbatim: "Work of merit e.g. one element correct in table or effort at tree diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. one element correct in table or effort at tree diagram","15 elements correct in table\nScores added in table"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[54],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q10-c-i.png",
           "srcHash": "ef5325fb921c70d797891d4229cebf02",
-          "alt": "The question as printed on the paper — A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the 6 cm same length. The pentagon is divided into… Full card prompt: Write down a sample space to show all of the 25 possible outcomes when the spinner is spun twice",
+          "alt": "The question as printed on the paper — A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the 6 cm same length. The pentagon is divided into… Full card prompt: The triangles in the spinner are numbered 1 to 5, as shown. The spinner is spun twice, and each number landed on is recorded. Write down a sample space to show all of the 25 possible outcomes when the spinner is spun twice. It may be useful to draw a two-way table or to list the outcomes in a systematic way.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8858,21 +9601,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q10-c-ii", topicId: "maths-5-2", conceptId: "what-maximum-minimum-possible-totals-when",
+    id: "maths-2023-ol-p2-q10-c-ii", topicId: "maths-1-3", conceptId: "what-maximum-minimum-possible-totals-when",
     section: "B", questionRef: "2023 OL Paper 2 Q10(c)(ii)",
+    stem: "The triangles in the spinner are numbered 1 to 5, as shown. The spinner is spun twice, and each number landed on is recorded. The spinner is spun twice, and the two numbers are added.",
     questionText: "What are the maximum and minimum possible totals when two numbers from the spinner are added?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q10-c-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Effort at finding totals", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Effort at finding totals","Calculates maximum or minimum Full Credit (-1):\nAnswer as Maximum = 2, Minimum = 10","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
+    { id: "maths-2023-ol-p2-q10-c-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Effort at finding totals", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit. Full Credit −1 (a deduction, not a band): Answer as Maximum = 2, Minimum = 10.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Effort at finding totals","Calculates maximum or minimum","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[54],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q10-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q10-c-ii.png",
           "srcHash": "16e5ffcb924bf5e79997e15b81c61bcd",
-          "alt": "The question as printed on the paper — A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the 6 cm same length. The pentagon is divided into… Full card prompt: What are the maximum and minimum possible totals when two numbers from the spinner are added?",
+          "alt": "The question as printed on the paper — A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the 6 cm same length. The pentagon is divided into… Full card prompt: The triangles in the spinner are numbered 1 to 5, as shown. The spinner is spun twice, and each number landed on is recorded. The spinner is spun twice, and the two numbers are added. What are the maximum and minimum possible totals when two numbers from the spinner are added?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8888,21 +9645,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q10-c-iii", topicId: "maths-1-2", conceptId: "iii-each-time-spinner-spun-each",
     section: "B", questionRef: "2023 OL Paper 2 Q10(c)(iii)",
-    questionText: "(iii) Each time the spinner is spun, each number (1 to 5) is equally likely. Work out the probability of getting a total of either 4 or 5, when the two numbers are added",
+    stem: "The triangles in the spinner are numbered 1 to 5, as shown. The spinner is spun twice, and each number landed on is recorded. The spinner is spun twice, and the two numbers are added.",
+    questionText: "Each time the spinner is spun, each number (1 to 5) is equally likely. Work out the probability of getting a total of either 4 or 5, when the two numbers are added.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p2-q10-c-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Indicates correct numerator or denominator\nSome correct work in (c)(i)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Indicates correct numerator or denominator\nSome correct work in (c)(i)","Calculates: P(4) = 3/25 and P(5) = 4/25","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[55],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q10-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q10-c-iii.png",
           "srcHash": "8e6a5b9b986e5bd03e098de30b872f6e",
-          "alt": "The question as printed on the paper — A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the 6 cm same length. The pentagon is divided into… Full card prompt: (iii) Each time the spinner is spun, each number (1 to 5) is equally likely. Work out the probability of getting a total of either 4 or 5, when the two numbers are added",
+          "alt": "The question as printed on the paper — A toy company makes spinners in the shape of a regular pentagon, as shown in the diagram on the right (not to scale). Each of the five sides of the pentagon ABCDE is the 6 cm same length. The pentagon is divided into… Full card prompt: The triangles in the spinner are numbered 1 to 5, as shown. The spinner is spun twice, and each number landed on is recorded. The spinner is spun twice, and the two numbers are added. Each time the spinner is spun, each number (1 to 5) is equally likely. Work out the probability of getting a total of either 4 or 5, when the two numbers are added.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -8918,21 +9689,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q10-d", topicId: "maths-1-3", conceptId: "different-spinner-there-different-outcomes",
     section: "B", questionRef: "2023 OL Paper 2 Q10(d)",
-    questionText: "In a different spinner, there are 4 different outcomes: N, S, E, or W",
+    questionText: "In a different spinner, there are 4 different outcomes: N, S, E, or W. In a game, Jena pays €1 to spin this spinner. The table below shows the probability of each outcome, as well as the money Jena will get, depending on the outcome. N: probability 0·3, Jena gets €1; S: 0·2, €0·50; E: 0·4, €0; W: 0·1, €5. Is this game fair? Justify your answer. Work out the expected value of this game as part of your solution.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q10-d-r1", kind: "anyN", verbatim: "Work of merit\nOne correct term or operation indicated e.g. 1(0 ∙3)\nIndicates not a fair game with no justification", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit\nOne correct term or operation indicated e.g. 1(0 ∙3)\nIndicates not a fair game with no justification","Two correct terms indicated\nExpected value correct, but no conclusion and explanation Full Credit (-1):\nEither conclusion or explanation missing."],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p2-q10-d-r1", kind: "anyN", verbatim: "Work of merit\nOne correct term or operation indicated e.g. 1(0 ∙3)\nIndicates not a fair game with no justification", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Either conclusion or explanation missing..", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit\nOne correct term or operation indicated e.g. 1(0 ∙3)\nIndicates not a fair game with no justification","Two correct terms indicated\nExpected value correct, but no conclusion and explanation"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[55],"generalNotesPages":[28,29]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q10-d",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q10-d.png",
           "srcHash": "1e334dc21d18a7614431b0286a12a216",
-          "alt": "The question as printed on the paper — In a different spinner, there are 4 different outcomes: N, S, E, or W. In a game, Jena pays €1 to spin this spinner. The table below shows the probability of each outcome, as well as the money Jena will get, depending… Full card prompt: In a different spinner, there are 4 different outcomes: N, S, E, or W",
+          "alt": "The question as printed on the paper — In a different spinner, there are 4 different outcomes: N, S, E, or W. In a game, Jena pays €1 to spin this spinner. The table below shows the probability of each outcome, as well as the money Jena will get, depending… Full card prompt: In a different spinner, there are 4 different outcomes: N, S, E, or W. In a game, Jena pays €1 to spin this spinner. The table below shows the probability of each outcome, as well as the money Jena will get, depending on the outcome. N: probability 0·3, Jena gets €1; S: 0·2, €0·50; E: 0·4, €0; W: 0·1, €5. Is this game fair? Justify your answer. Work out the expected value of this game as part of your solution.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },

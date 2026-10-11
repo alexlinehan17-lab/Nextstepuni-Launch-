@@ -31,6 +31,7 @@ import higher2023p2 from '../scripts/markbank/mathematics/reviews/2023-higher-p2
 import ordinary2024p1 from '../scripts/markbank/mathematics/reviews/2024-ordinary-p1.json';
 import ordinary2024p2 from '../scripts/markbank/mathematics/reviews/2024-ordinary-p2.json';
 import ordinary2023p1 from '../scripts/markbank/mathematics/reviews/2023-ordinary-p1.json';
+import ordinary2023p2 from '../scripts/markbank/mathematics/reviews/2023-ordinary-p2.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
@@ -786,6 +787,7 @@ describe('2023 Higher Mathematics Paper 2 independent source review', () => {
 
 describe.each([
   { number: 1, count: 48, review: ordinary2023p1 },
+  { number: 2, count: 46, review: ordinary2023p2 },
 ])('2023 Ordinary Mathematics Paper $number independent source review', ({ number, count, review: census }) => {
   const cards = ORDINARY.filter(card => card.year === 2023 && card.questionRef.includes(`Paper ${number}`));
 
@@ -816,5 +818,31 @@ describe.each([
         expect((row.group?.options ?? [row.verbatim]).join(' '), card.id).not.toMatch(/Ordinary Level|Full Credit \(-1\)/);
       }
     }
+  });
+});
+
+describe('2023 Ordinary Mathematics Paper 2 marking-point repairs', () => {
+  const card = (suffix: string) => ORDINARY.find(candidate => candidate.id === `maths-2023-ol-p2-q${suffix}`)!;
+
+  it('ships the restored cosine-rule card with its quoted scheme lines', () => {
+    expect(card('7-c').rows.map(row => row.verbatim)).toContain('Model solution — ∠X = 42·4[°]');
+    expect(card('7-c').mathematicsScale?.marks).toEqual([0, 3, 4, 5]);
+  });
+
+  it('keeps calculator-mode values, page headers and welded deductions out of every band', () => {
+    for (const repaired of ORDINARY.filter(candidate => candidate.id.startsWith('maths-2023-ol-p2-'))) {
+      for (const row of repaired.rows) {
+        const text = (row.group?.options ?? [row.verbatim]).join(' ');
+        expect(text, repaired.id).not.toMatch(/Rad:|Grad:|Mathematics – Ordinary Level/);
+        // A credit band never carries a Zero Credit note; labelled quoted points may.
+        expect((row.group?.options ?? []).join(' '), repaired.id).not.toMatch(/Zero Credit/);
+      }
+    }
+    expect(card('9-b-iii').rows.map(row => row.verbatim)).toContain('Full Credit −1 (deduction) — Either conclusion or reason missing');
+  });
+
+  it('attaches the measuring tool only to the scaled construction', () => {
+    const measured = ORDINARY.filter(candidate => candidate.id.startsWith('maths-2023-ol-p2-') && candidate.sourceMaterial?.measurementRequired);
+    expect(measured.map(candidate => candidate.id)).toEqual(['maths-2023-ol-p2-q6-a']);
   });
 });
