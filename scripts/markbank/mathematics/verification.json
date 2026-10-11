@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed on 2026-10-11 after 2023 HL Paper 1 (all reviewed papers to date)",
+  "productionBuild": "passed on 2026-10-11 after 2023 OL Paper 2 (all reviewed papers to date)",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -665,5 +665,50 @@
     "schemePagesInspected": 34,
     "coverageBaseline": "1147/3474 asks covered, 0 orphans, 0 excluded, 2327 open",
     "validation": "Deck generation (1,574 built, 3 historical rejects), Atlas generation and --check (306 placements), audit --check-reviewed, scheme quote check of all 15 re-quoted cards, ten regression files (299/299), typecheck and diff whitespace check passed."
+  },
+  "browserBatch4": {
+    "engine": "Chrome via Playwright, local Vite on port 5701 with the worktree's PDF mirror",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "cards": [
+      "maths-2023-hl-p2-q8-d-i",
+      "maths-2023-ol-p1-q3-b",
+      "maths-2023-ol-p2-q7-c",
+      "maths-2023-ol-p2-q6-a",
+      "maths-2023-ol-p2-q9-a-iv"
+    ],
+    "questionPagesRender": true,
+    "multiPageNavigation": true,
+    "schemeHiddenBeforeReveal": true,
+    "exclusiveScaleAwards": {
+      "hl10D": 5,
+      "ol5D": 3,
+      "ol5C": 4,
+      "ol15D": 12,
+      "ol15C": 10
+    },
+    "rulerKnownPrintedLengthCm": 11.654,
+    "rulerReadings": {
+      "desktop": [
+        11.64,
+        11.66
+      ],
+      "mobile": [
+        11.65,
+        11.66
+      ]
+    },
+    "schemeReaderRenders": true,
+    "escapeAndFocusReturn": true,
+    "focusDroppedOnLastPage": false,
+    "pageErrors": []
   }
 }
