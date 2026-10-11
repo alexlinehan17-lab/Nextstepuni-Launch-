@@ -485,7 +485,8 @@
           "questionText": "Solve this differential equation to find an expression for v in terms of s.",
           "topicId": "applied-mathematics-3-4",
           "examTopicIds": [
-            "applied-mathematics-higher-differential-equations"
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
           ],
           "paperPages": [
             6,
@@ -535,7 +536,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+              "date": "2026-10-11",
+              "evidence": "Scheme 2(iv): \"Let u = v^2 + 392 so du = 2v dv\".",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q2(v)",
@@ -1561,7 +1570,8 @@
           "questionText": "Use integration to calculate the work done by Áine in extending the band horizontally to a length of 1.2 m.",
           "topicId": "applied-mathematics-2-6",
           "examTopicIds": [
-            "applied-mathematics-higher-work-power-energy-momentum"
+            "applied-mathematics-higher-work-power-energy-momentum",
+            "applied-mathematics-higher-hookes-law"
           ],
           "paperPages": [
             24
@@ -1597,7 +1607,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-hookes-law",
+              "date": "2026-10-11",
+              "evidence": "Scheme 6(b)(i): W = integral of kx dx for an elastic band with k = 650 N/m.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q6(b)(ii)",
@@ -2260,7 +2278,8 @@
           "questionText": "Show that the fraction of kinetic energy lost as a result of the collision is 5/24.",
           "topicId": "applied-mathematics-2-6",
           "examTopicIds": [
-            "applied-mathematics-higher-work-power-energy-momentum"
+            "applied-mathematics-higher-work-power-energy-momentum",
+            "applied-mathematics-higher-impacts-collisions"
           ],
           "paperPages": [
             36
@@ -2317,7 +2336,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-impacts-collisions",
+              "date": "2026-10-11",
+              "evidence": "Scheme 9(b): momentum 7 = 3x + y and restitution 1/3 = (y - x)/5.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q10(a)(i)",
@@ -3799,7 +3826,8 @@
           "questionText": "Show that the speed of Q after the collision is 0.4 m s⁻¹.",
           "topicId": "applied-mathematics-2-4",
           "examTopicIds": [
-            "applied-mathematics-ordinary-impacts-collisions"
+            "applied-mathematics-ordinary-impacts-collisions",
+            "applied-mathematics-ordinary-work-energy-power-momentum"
           ],
           "paperPages": [
             18
@@ -3842,7 +3870,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-ordinary-work-energy-power-momentum",
+              "date": "2026-10-11",
+              "evidence": "Scheme 5(a)(i): impulse = mv - mu (momentum).",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q5(a)(ii)",

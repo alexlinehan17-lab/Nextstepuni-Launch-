@@ -193,6 +193,11 @@ SOURCE_POOLS={
  '15aii':[(25,'Explain how a code of ethics may apply to one of the following:')]+[(25,label) for label in ROLES],
  '18d':[(40,'Compare the barriers to physical activity participation for two of the following groups:')]+[(40,label) for label in GROUPS],
 }
+# Additional Topic Atlas headings, decided 2026-10-11 from the SEC paper,
+# scheme and NCCA specification (StudyClix parity audit).
+# Q2 asks for four types of feedback. NCCA LCPE 2.7 Psychological preparation lists "different types of feedback" (same decision as 2020 HL Q4).
+ATLAS_TOPIC_ADDITIONS = {'2': ['physical-education-higher-2-psychological-demands-of-performance']}
+
 EXPECTED_QUESTION_TOTALS={**{n:8 for n in range(1,13)},13:50,**{n:40 for n in range(14,19)}}
 EXPECTED_SELECTION_SCAN=[[2,'any three'],[2,'or'],[6,'one of'],[7,'one of'],[8,'or'],[8,'or'],[9,'named physical activity'],[12,'or'],[12,'or'],[12,'or'],[14,'or'],[14,'or'],[14,'or'],[17,'named physical activity'],[21,'any three'],[22,'one of'],[23,'one of'],[25,'one of'],[28,'or'],[31,'named physical activity'],[33,'named physical activity'],[33,'named physical activity'],[37,'named physical activity'],[43,'choose'],[44,'or'],[44,'or']]
 EXPECTED_POOL_SCAN=[[2,'any ten'],[2,'three of'],[3,'any ten'],[6,'one of'],[7,'one of'],[22,'one of'],[23,'one of'],[25,'one of'],[40,'two of']]

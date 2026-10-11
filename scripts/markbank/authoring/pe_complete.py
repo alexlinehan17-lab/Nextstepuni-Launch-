@@ -149,6 +149,13 @@ def build():
                     assert topic in ('0-5','0-6','0-7','0-8','0-9'), (part,atlas_topics)
                     atlas_topics = [f'physical-education-{level}-2-physical-demands-of-performance']
                 assert len(atlas_topics)==1, (year,short,part,atlas_topics)
+                # A task that genuinely examines a second specification topic
+                # (decided from the paper, scheme and NCCA wording) is also
+                # filed there. The primary topic stays first.
+                for extra in getattr(review,'ATLAS_TOPIC_ADDITIONS',{}).get(part,()):
+                    assert extra in crosswalk and extra.startswith(f'physical-education-{level}-') \
+                        and extra not in atlas_topics, (year,short,part,extra)
+                    atlas_topics.append(extra)
                 task_n = part_ref[1:] + (f' — {route_label}' if route_label else '')
                 atlas.append(dict(cardId=ident,subjectId='physical-education',level=level,lang='ev',year=year,
                                   fileid=fileid,paperKey='single',n=task_n,parentQuestion=str(number),

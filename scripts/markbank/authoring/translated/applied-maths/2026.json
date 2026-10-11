@@ -12,7 +12,7 @@
       "schemeLang": "iv",
       "paperSha256": "9a69bb61cec50569a6b78eb290015cef8439164f46fd98df485902ac7b6fd534",
       "schemeSha256": "97c87ab8ac92717cb2719b6f52bb7b2583702802bebabbdad95fc4c7760147ca",
-      "canonicalReviewSha256": "db4f189912b238e3c62c99a1240a2ad24eca7725ad01537841a8cd47b9f4e59f",
+      "canonicalReviewSha256": "5d089d445ca21cd416cd138fb19995482da479aa8194d6385db9be557b6cc399",
       "paperPagesReviewed": [
         1,
         2,
@@ -824,7 +824,7 @@
       "schemeLang": "iv",
       "paperSha256": "6c0f7a9fd863ba4ad3e195db4ce4354d2aa8b2de436418d21ec3950a778b064a",
       "schemeSha256": "0672ed981b7fc5d5b0d7d7f7578b83e8d8ec2ebbdcb664e3dc9d18183f965c7a",
-      "canonicalReviewSha256": "db4f189912b238e3c62c99a1240a2ad24eca7725ad01537841a8cd47b9f4e59f",
+      "canonicalReviewSha256": "5d089d445ca21cd416cd138fb19995482da479aa8194d6385db9be557b6cc399",
       "paperPagesReviewed": [
         1,
         2,
@@ -1652,5 +1652,8 @@
         }
       ]
     }
+  ],
+  "canonicalRepins": [
+    "2026-10-11: canonical English review re-pinned after a topic-metadata-only change (examTopicIds added with SEC paper/scheme evidence in topicReviewNotes; no task boundary, tariff, wording, region or crop changed). Translated correspondence is unchanged."
   ]
 }

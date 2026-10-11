@@ -182,6 +182,11 @@ SOURCE_POOLS={
  '10':[(8,'Explain two of the following terms:'),(8,'Sports endorsement'),(8,'Sports merchandising'),(8,'Sports related advertising')],
  '16c':[(23,'Explain two psychological factors from the list below'),(23,'Confidence'),(23,'Anxiety'),(23,'Motivation'),(23,'Concentration')],
 }
+# Additional Topic Atlas headings, decided 2026-10-11 from the SEC paper,
+# scheme and NCCA specification (StudyClix parity audit).
+# Q5 asks for a sports supplement and a reason for using it; NCCA LCPE 2.8 Diet and nutrition covers supplements, and the scheme rewards the effect on performance.
+ATLAS_TOPIC_ADDITIONS = {'5': ['physical-education-ordinary-2-physical-psychological-demands-of-performance']}
+
 EXPECTED_QUESTION_TOTALS={**{n:8 for n in range(1,13)},13:50,**{n:40 for n in range(14,19)}}
 EXPECTED_SELECTION_SCAN=[[2,'any 10'],[2,'any three'],[2,'or'],[3,'any 10'],[3,'one of'],[4,'or'],[7,'choose'],[9,'or'],[10,'or'],[10,'or'],[17,'any three'],[36,'or'],[36,'or']]
 SELECTION_REVIEW=[

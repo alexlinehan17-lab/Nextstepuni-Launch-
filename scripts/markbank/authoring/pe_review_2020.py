@@ -196,6 +196,11 @@ SELECTION_REVIEW = [
  {'parts':['1','4','5b','6','7','8a','9a','9b','11bi','12aii','13ci','13cii','14a','14b','15ai','16bi'], 'decision':'required-responses', 'reason':'Required headings or a number of examples/points to supply remain one response. No closed elective pool is printed for these tasks.'},
 ]
 
+# Additional Topic Atlas headings, decided 2026-10-11 from the SEC paper,
+# scheme and NCCA specification (StudyClix parity audit).
+# Q4 asks for two types of feedback for Jason; the scheme credits intrinsic/kinaesthetic and extrinsic/verbal feedback. NCCA LCPE 2.7 Psychological preparation lists "different types of feedback".
+ATLAS_TOPIC_ADDITIONS = {'4': ['physical-education-higher-2-psychological-demands-of-performance']}
+
 EXPECTED_QUESTION_TOTALS = {1:2,2:6,3:6,4:8,5:8,6:8,7:8,8:10,9:12,10:12,11:50,12:40,13:40,14:40,15:40,16:40}
 
 EXPECTED_SELECTION_SCAN = [

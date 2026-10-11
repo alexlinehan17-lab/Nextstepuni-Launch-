@@ -522,7 +522,8 @@
           "topicId": "applied-mathematics-2-1",
           "examTopicIds": [
             "applied-mathematics-higher-integration",
-            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+            "applied-mathematics-higher-differential-equations"
           ],
           "paperPages": [
             10
@@ -592,7 +593,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-differential-equations",
+              "date": "2026-10-11",
+              "evidence": "Paper: a = dv/dt = t^2 sin 2t with v = 0 when t = 0 — a first-order initial-value problem.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q3(b)(i)",
@@ -918,7 +927,8 @@
           "questionText": "Solve this differential equation to find an expression for v in terms of t, k and v₁.",
           "topicId": "applied-mathematics-3-4",
           "examTopicIds": [
-            "applied-mathematics-higher-differential-equations"
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
           ],
           "paperPages": [
             14,
@@ -993,7 +1003,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+              "date": "2026-10-11",
+              "evidence": "Scheme 4(vi): \"let u = g + kv, so du = k dv\".",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q5(a)(i)",
@@ -1391,7 +1409,8 @@
           "questionText": "Solve the differential equation to find an expression for v in terms of s, given that v = 0 when s = 0.",
           "topicId": "applied-mathematics-3-4",
           "examTopicIds": [
-            "applied-mathematics-higher-differential-equations"
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
           ],
           "paperPages": [
             24
@@ -1445,7 +1464,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+              "date": "2026-10-11",
+              "evidence": "Scheme 6(b)(i): \"let u = -v^2/4, so du = -(v/2) dv\".",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q6(b)(ii)",

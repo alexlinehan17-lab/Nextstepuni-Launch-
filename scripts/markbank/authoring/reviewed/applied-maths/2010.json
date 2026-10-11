@@ -1761,7 +1761,8 @@
           "questionText": "Find the speed of the cyclist after travelling 120 m down the hill.",
           "topicId": "applied-mathematics-3-4",
           "examTopicIds": [
-            "applied-mathematics-higher-differential-equations"
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
           ],
           "paperPages": [
             6
@@ -1822,6 +1823,14 @@
               0.96,
               0.94
             ]
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+              "date": "2026-10-11",
+              "evidence": "Scheme 10(b)(i) integrates v/(0.12 - 0.0006v^2) to a logarithm by substitution.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
           ]
         },
         {

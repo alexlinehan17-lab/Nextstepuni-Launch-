@@ -185,7 +185,8 @@
           "topicId": "applied-mathematics-2-1",
           "examTopicIds": [
             "applied-mathematics-higher-integration",
-            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+            "applied-mathematics-higher-differential-equations"
           ],
           "paperPages": [
             4,
@@ -254,7 +255,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i⃗ and j⃗ are perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i⃗ and j⃗ are perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-differential-equations",
+              "date": "2026-10-11",
+              "evidence": "Paper: v = ds/dt = 2t e^-t with s(0) = 0 — a first-order initial-value problem.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q1(b)(ii)",
@@ -688,7 +697,8 @@
           "questionText": "Calculate the time from when the orange is thrown until it hits the ground.",
           "topicId": "applied-mathematics-2-2",
           "examTopicIds": [
-            "applied-mathematics-higher-projectiles"
+            "applied-mathematics-higher-projectiles",
+            "applied-mathematics-higher-uniform-accelerated-motion"
           ],
           "paperPages": [
             10,
@@ -733,7 +743,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i⃗ and j⃗ are perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i⃗ and j⃗ are perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-uniform-accelerated-motion",
+              "date": "2026-10-11",
+              "evidence": "Scheme 3(v): \"s = ut + 1/2 at^2 so 4.9t^2 - 4t - 6 = 0\".",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q4(i)",
@@ -817,7 +835,8 @@
           "questionText": "Solve this differential equation to find an expression for v in terms of s.",
           "topicId": "applied-mathematics-3-4",
           "examTopicIds": [
-            "applied-mathematics-higher-differential-equations"
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
           ],
           "paperPages": [
             14,
@@ -886,7 +905,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i⃗ and j⃗ are perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i⃗ and j⃗ are perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+              "date": "2026-10-11",
+              "evidence": "Scheme 4(iii): \"Let u = 29.4 + v^2, so du = 2v dv\".",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q4(iv)",
@@ -1590,7 +1617,8 @@
           "questionText": "Solve the differential equation to find an expression for N in terms of k and t.",
           "topicId": "applied-mathematics-3-4",
           "examTopicIds": [
-            "applied-mathematics-higher-differential-equations"
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
           ],
           "paperPages": [
             28
@@ -1644,7 +1672,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i⃗ and j⃗ are perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i⃗ and j⃗ are perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+              "date": "2026-10-11",
+              "evidence": "Scheme 7(b)(i) integrates dN/(2000 - N) to a logarithm — the substitution u = 2000 - N (same family the SEC solves with an explicit substitution in 2024 Q4(vi)).",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q7(b)(ii)",
@@ -5408,7 +5444,8 @@
           "questionText": "Calculate the kinetic energy of the 5 kg block as it hits the table.",
           "topicId": "applied-mathematics-2-6",
           "examTopicIds": [
-            "applied-mathematics-ordinary-work-energy-power-momentum"
+            "applied-mathematics-ordinary-work-energy-power-momentum",
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
           ],
           "paperPages": [
             34,
@@ -5453,7 +5490,15 @@
               ]
             }
           ],
-          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i⃗ and j⃗ are perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i⃗ and j⃗ are perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-ordinary-uniform-accelerated-motion",
+              "date": "2026-10-11",
+              "evidence": "Scheme 9(b)(iii): v^2 = 0 + 2(2.45)(0.75).",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
         },
         {
           "ref": "Q10(i)",

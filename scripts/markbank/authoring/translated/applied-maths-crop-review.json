@@ -5,14 +5,14 @@
     {
       "year": 2010,
       "level": "higher",
-      "ledgerSha256": "90a07d8dd1ddb460e4feaefb936c245a3ddc2e88c929750bd195d71706265b10",
+      "ledgerSha256": "981e6065c730b7cb7e934579fe248fbdff99634c483ce136a8b40d93cf7244eb",
       "paperRegions": 10,
       "review": "Actual rendered question crops inspected"
     },
     {
       "year": 2010,
       "level": "ordinary",
-      "ledgerSha256": "90a07d8dd1ddb460e4feaefb936c245a3ddc2e88c929750bd195d71706265b10",
+      "ledgerSha256": "981e6065c730b7cb7e934579fe248fbdff99634c483ce136a8b40d93cf7244eb",
       "paperRegions": 9,
       "review": "Actual rendered question crops inspected"
     },
@@ -180,58 +180,71 @@
     {
       "year": 2023,
       "level": "higher",
-      "ledgerSha256": "84a3fbf3636a97b7e08c6d1ce3d4af0e8e414266b94122e27eb7a8956f983bab",
+      "ledgerSha256": "8548d8920b6c8a8762a846cdf6b671c17da68de95c7af1adf415f5a04a060911",
       "paperRegions": 35,
       "review": "Full-page question regions inspected during complete booklet visual sweep"
     },
     {
       "year": 2023,
       "level": "ordinary",
-      "ledgerSha256": "84a3fbf3636a97b7e08c6d1ce3d4af0e8e414266b94122e27eb7a8956f983bab",
+      "ledgerSha256": "8548d8920b6c8a8762a846cdf6b671c17da68de95c7af1adf415f5a04a060911",
       "paperRegions": 35,
       "review": "Full-page question regions inspected during complete booklet visual sweep"
     },
     {
       "year": 2024,
       "level": "higher",
-      "ledgerSha256": "51586ba6fddd5a2bd367c25333dd75a8826d6481946c562e6ff347b86ce1678f",
+      "ledgerSha256": "298b33c39f2c8f308fca07177b5144ed5e18a74cdf40505a39ee1cfafc3c7e2e",
       "paperRegions": 37,
       "review": "Full-page question regions inspected during complete booklet visual sweep"
     },
     {
       "year": 2024,
       "level": "ordinary",
-      "ledgerSha256": "51586ba6fddd5a2bd367c25333dd75a8826d6481946c562e6ff347b86ce1678f",
+      "ledgerSha256": "298b33c39f2c8f308fca07177b5144ed5e18a74cdf40505a39ee1cfafc3c7e2e",
       "paperRegions": 34,
       "review": "Full-page question regions inspected during complete booklet visual sweep"
     },
     {
       "year": 2025,
       "level": "higher",
-      "ledgerSha256": "fda33c6797f66303eb4e8b23fc97c48dd44be02447e5d652945ca3b6149874cd",
+      "ledgerSha256": "1cb25b3b853af1571ebbc5ed7ac272263950135d755a2b36a0032872dc8e96ee",
       "paperRegions": 37,
       "review": "Full-page question regions inspected during complete booklet visual sweep"
     },
     {
       "year": 2025,
       "level": "ordinary",
-      "ledgerSha256": "fda33c6797f66303eb4e8b23fc97c48dd44be02447e5d652945ca3b6149874cd",
+      "ledgerSha256": "1cb25b3b853af1571ebbc5ed7ac272263950135d755a2b36a0032872dc8e96ee",
       "paperRegions": 35,
       "review": "Full-page question regions inspected during complete booklet visual sweep"
     },
     {
       "year": 2026,
       "level": "higher",
-      "ledgerSha256": "e4db3f937f3807a7243c0a1acfcf943061f58ed2043e37a58f31e4111777ad75",
+      "ledgerSha256": "e91b8424efbaf36e859bf34410be5dc07fd0ee3e3318efdfad803d5d32fba781",
       "paperRegions": 34,
       "review": "Full-page question regions inspected during complete booklet visual sweep"
     },
     {
       "year": 2026,
       "level": "ordinary",
-      "ledgerSha256": "e4db3f937f3807a7243c0a1acfcf943061f58ed2043e37a58f31e4111777ad75",
+      "ledgerSha256": "e91b8424efbaf36e859bf34410be5dc07fd0ee3e3318efdfad803d5d32fba781",
       "paperRegions": 34,
       "review": "Full-page question regions inspected during complete booklet visual sweep"
+    }
+  ],
+  "ledgerRepins": [
+    {
+      "date": "2026-10-11",
+      "years": [
+        2010,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "reason": "Translated ledgers changed only in canonicalReviewSha256 (and a repin note) after topic-metadata-only edits to the English reviews; paperRegion/schemeRegion and every rendered crop are byte-identical, so the original crop inspection still applies."
     }
   ]
 }

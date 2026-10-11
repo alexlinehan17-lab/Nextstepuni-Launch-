@@ -113,7 +113,16 @@
             }
           ],
           "examTopicIds": [
-            "applied-mathematics-higher-networks-and-graphs"
+            "applied-mathematics-higher-networks-and-graphs",
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-optimal-critical-paths",
+              "date": "2026-10-11",
+              "evidence": "Paper 1(a)(ii): \"Use Dijkstra's algorithm to find the shortest path from L to S\".",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
           ]
         },
         {
@@ -1015,7 +1024,16 @@
             }
           ],
           "examTopicIds": [
-            "applied-mathematics-higher-differential-equations"
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+              "date": "2026-10-11",
+              "evidence": "Scheme 6(a): substitution \"u = 3v^2 + 4\".",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
           ]
         },
         {
@@ -1478,7 +1496,16 @@
           ],
           "examTopicIds": [
             "applied-mathematics-higher-integration",
-            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-differential-equations",
+              "date": "2026-10-11",
+              "evidence": "Paper 9(a): velocity \"modelled by the differential equation\" ds/dt = t^2 ln 2t with s = 0 when t = 0.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
           ]
         },
         {
@@ -1541,7 +1568,16 @@
             }
           ],
           "examTopicIds": [
-            "applied-mathematics-higher-vectors"
+            "applied-mathematics-higher-vectors",
+            "applied-mathematics-higher-projectiles"
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-projectiles",
+              "date": "2026-10-11",
+              "evidence": "Paper 9(b): object projected from O with u = 4.9i + 14.7j; (i) velocity at time t.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
           ]
         },
         {
@@ -1572,7 +1608,16 @@
             }
           ],
           "examTopicIds": [
-            "applied-mathematics-higher-vectors"
+            "applied-mathematics-higher-vectors",
+            "applied-mathematics-higher-projectiles"
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-projectiles",
+              "date": "2026-10-11",
+              "evidence": "Scheme 9(b)(ii): r = 4.9t i + (14.7t - 4.9t^2) j for the projected object.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
           ]
         },
         {
