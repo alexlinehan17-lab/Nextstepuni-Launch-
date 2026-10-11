@@ -28,15 +28,15 @@
     },
     "matchedLocalCardLinks": 742,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 2224,
-    "distinctStudentFacingQuestions": 2224,
+    "localPhysicalMappings": 2256,
+    "distinctStudentFacingQuestions": 2256,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 1538,
+    "retainedLocalQuestions": 1570,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 1938,
+    "newlyAddedPhysicalMappings": 1970,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -42029,6 +42029,427 @@
         "irish-higher-write-a-debate"
       ],
       "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F1-1a",
+      "topicIds": [
+        "irish-higher-aural-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F1-1b",
+      "topicIds": [
+        "irish-higher-aural-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F1-2",
+      "topicIds": [
+        "irish-higher-aural-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F1-3",
+      "topicIds": [
+        "irish-higher-aural-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F2-1",
+      "topicIds": [
+        "irish-higher-aural-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F2-2",
+      "topicIds": [
+        "irish-higher-aural-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F2-3",
+      "topicIds": [
+        "irish-higher-aural-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C1-M1-1",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C1-M1-2",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C1-M1-3",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C1-M2-1",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C1-M2-2",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C2-M1-1",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C2-M1-2",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C2-M1-3",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C2-M2-1",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C2-M2-2",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C2-M2-3",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-C-P1-1",
+      "topicIds": [
+        "irish-higher-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-C-P1-2",
+      "topicIds": [
+        "irish-higher-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-C-P1-3",
+      "topicIds": [
+        "irish-higher-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-C-P2-1",
+      "topicIds": [
+        "irish-higher-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-C-P2-2",
+      "topicIds": [
+        "irish-higher-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-a",
+      "topicIds": [
+        "irish-higher-write-a-newsmagazine-article",
+        "irish-higher-write-an-essay"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-b",
+      "topicIds": [
+        "irish-higher-write-a-newsmagazine-article",
+        "irish-higher-write-an-essay"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-c",
+      "topicIds": [
+        "irish-higher-write-a-newsmagazine-article",
+        "irish-higher-write-an-essay"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-d",
+      "topicIds": [
+        "irish-higher-write-a-newsmagazine-article",
+        "irish-higher-write-an-essay"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-e",
+      "topicIds": [
+        "irish-higher-write-a-newsmagazine-article",
+        "irish-higher-write-an-essay"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-a",
+      "topicIds": [
+        "irish-higher-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-b",
+      "topicIds": [
+        "irish-higher-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-a",
+      "topicIds": [
+        "irish-higher-write-a-debate"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-b",
+      "topicIds": [
+        "irish-higher-write-a-debate"
+      ],
+      "provenance": "retained-local"
     },
     {
       "level": "higher",
