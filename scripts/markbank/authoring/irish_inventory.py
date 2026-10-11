@@ -41,14 +41,22 @@ def inventory(corpus: Path) -> dict:
         'process.stdout.write(JSON.stringify(paperIndex.irish));',
     ], cwd=ROOT, capture_output=True, text=True, check=True)
     entries = json.loads(result.stdout)
-    cards = [c for name in ['authored.json', 'foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json']
+    cards = [c for name in ['authored.json', 'foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json', 'foundation-2010-authored.json']
              for c in json.loads((ROOT / 'components/MarkBank/cards/irish' / name).read_text())['cards']]
     foundations = [json.loads((ROOT / 'components/MarkBank/cards/irish' / name).read_text())
-                   for name in ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json']]
+                   for name in ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json', 'foundation-2010-authored.json']]
     reviews = [dict(f['review'], cardIds=[c['id'] for c in f['cards']]) for f in foundations]
     reviews += json.loads((ROOT / 'scripts/markbank/authored/irish-paper-reviews.json').read_text())
     assert len({(r['year'],r['level'],r['paperFileid']) for r in reviews})==len(reviews)
     tags = json.loads((ROOT / 'scripts/paper-trail/topic-tags/tags/irish.json').read_text())
+    # A source gap is a component whose authority material cannot be obtained
+    # (e.g. an unavailable official recording). It stays pending and visible.
+    gaps = {}
+    for ledger in sorted((ROOT / 'scripts/markbank/authored').glob('irish-foundation-*-source-review.json')):
+        review = json.loads(ledger.read_text())
+        for fileid, status in review.get('componentStatus', {}).items():
+            if status.startswith('source-gap'):
+                gaps[f"{review['year']}|{review['level']}|{fileid}"] = status
     rows = []
     seen_cards = set()
     for entry in entries:
@@ -81,6 +89,9 @@ def inventory(corpus: Path) -> dict:
                 'partAndSelectionReconciliation': 'complete' if paper_reviewed else 'pending',
                 'bankAtlasTaskParity': 'complete' if parity else 'pending',
             })
+            if rows[-1]['key'] in gaps:
+                assert not reviewed and not subset, 'A source-gap component cannot be reviewed or carded'
+                rows[-1]['sourceGap'] = gaps[rows[-1]['key']]
             if reviewed:
                 assert rows[-1]['paper']['sha256']==reviewed['paperSha256']
                 assert rows[-1]['scheme']['sha256']==reviewed['schemeSha256']
@@ -102,6 +113,7 @@ def inventory(corpus: Path) -> dict:
             'missingLocalSchemes': [r['key'] for r in rows
                                     if r['scheme'] and not r['scheme']['availableLocally']],
             'papersPendingFullReview': sum(r['fullVisualReview'] != 'complete' for r in rows),
+            'componentsWithSourceGaps': [r['key'] for r in rows if 'sourceGap' in r],
         },
         'papers': rows,
     }

@@ -41,6 +41,7 @@ describe('service worker precache stays lean', () => {
       '**/pdf.worker*.js', '**/vendor-pdfjs*.js',   // Paper Trail viewer
       '**/DiagramVault*.js',                        // Diagram Vault
       '**/higher-*.js', '**/ordinary-*.js',         // per-subject exam corpora
+      '**/foundation-*.js',                         // Foundation-level corpora (Irish passed 3 MiB)
       '**/factory-*.js', '**/reviewed-*.js',        // reviewed subject task data
       '**/exam-topic-data-*.js', '**/paper-topic-data-*.js', // Atlas registries
       '**/catchUpLaneData*.js',                     // Catch-Up Lane
