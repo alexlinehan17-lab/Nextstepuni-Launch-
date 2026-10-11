@@ -94,7 +94,8 @@ vi.mock('@/services/legalAgreement', async () => {
       return () => {};
     },
     recordLegalAcceptance: vi.fn(),
-    takeRegistrationAgreement: () => false,
+    hasRegistrationAgreement: () => false,
+    clearRegistrationAgreement: vi.fn(),
   };
 });
 

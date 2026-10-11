@@ -5,12 +5,19 @@ import { PRIVACY_POLICY_VERSION, TERMS_VERSION } from '../functions/src/legalAgr
 
 // An email-registration checkbox is a real action, but is not proof of a
 // server record. Hand it to the same server endpoint used by all other routes.
+// Keep the action for this account until the server confirms it, including
+// across connection retries or a remount during the onboarding handoff.
 const pending = new Set<string>();
 export function rememberRegistrationAgreement(uid: string): void { pending.add(uid); }
-export function takeRegistrationAgreement(uid: string): boolean { return pending.delete(uid); }
+export function hasRegistrationAgreement(uid: string): boolean { return pending.has(uid); }
+export function clearRegistrationAgreement(uid: string): void { pending.delete(uid); }
 
 export function watchLegalAcceptance(uid: string, onValue: (value: unknown) => void, onError: () => void): () => void {
-  return onSnapshot(doc(db, 'users', uid), snapshot => {
+  return onSnapshot(doc(db, 'users', uid), { includeMetadataChanges: true }, snapshot => {
+    // An initial cached profile may predate signup's agreement save. Wait for
+    // the server before deciding that another review (or a missing-account
+    // error) is needed; metadata-only updates must also release this wait.
+    if (snapshot.metadata.fromCache) return;
     if (!snapshot.exists()) { onError(); return; }
     onValue(snapshot.data().legalAcceptance);
   }, onError);
