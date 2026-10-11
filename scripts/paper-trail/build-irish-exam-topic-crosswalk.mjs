@@ -30,9 +30,10 @@ const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/irish-runtime.json');
 const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/irish-curriculum-crosswalk.json');
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
-const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json']
+const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
   .filter(card => card.reviewedAt && card.atlasQuestionId);
+const reviewedTaskKeys = new Set(reviewedHigherTasks.map(card => card.year + '|' + card.paperFileid + '.pdf|' + card.atlasQuestionId));
 const reference = readJson(REFERENCE_PATH);
 const preservationBaseline = readJson(BASELINE_PATH);
 const referenceTopics = Object.entries(reference.variants).flatMap(([level, variant]) => (
@@ -91,6 +92,32 @@ const EXTENSIONS = [
     extractedQuestionCount: 0,
     referenceTopic: false,
   },
+  // Ordinary Level prescribed works are not optional prose/poetry either;
+  // reviewed Ordinary routes get their own same-level shelves.
+  {
+    id: 'irish-ordinary-prescribed-prose-archive',
+    label: 'Prescribed Prose (NextStepUni archive)',
+    level: 'ordinary',
+    sourcePath: '/nextstepuni-preservation/irish/ordinary/prescribed-prose',
+    reportedQuestionCount: 0,
+    officialQuestionHeadings: [],
+    mockQuestionCount: 0,
+    providerSampleQuestionCount: 0,
+    extractedQuestionCount: 0,
+    referenceTopic: false,
+  },
+  {
+    id: 'irish-ordinary-prescribed-poetry-archive',
+    label: 'Prescribed Poetry (NextStepUni archive)',
+    level: 'ordinary',
+    sourcePath: '/nextstepuni-preservation/irish/ordinary/prescribed-poetry',
+    reportedQuestionCount: 0,
+    officialQuestionHeadings: [],
+    mockQuestionCount: 0,
+    providerSampleQuestionCount: 0,
+    extractedQuestionCount: 0,
+    referenceTopic: false,
+  },
 ];
 const allTopics = [...referenceTopics, ...EXTENSIONS];
 const topicById = new Map(allTopics.map(topic => [topic.id, topic]));
@@ -133,6 +160,8 @@ const O = {
   letter: topicId('ordinary', 'Write a Letter/Email...'),
   story: topicId('ordinary', 'Write a Story..'),
   folktale: topicId('ordinary', 'Write About a Studied Folktale...'),
+  prescribedProse: EXTENSIONS[4].id,
+  prescribedPoetry: EXTENSIONS[5].id,
   poetry: topicId('ordinary', 'Write About a Studied Poem (Optional)...'),
   prose: topicId('ordinary', 'Write About a Studied Prose (Optional)...'),
 };
@@ -183,9 +212,9 @@ setCurriculum(H.prose, ['irish-4-7', 'irish-7-0']);
 // Reuse the reviewed cards' existing canonical nodes; this archive shelf does
 // not define a second syllabus or relabel prescribed works as optional prose.
 setCurriculum(H.prescribedProse, [...new Set(reviewedHigherTasks
-  .filter(card => card.atlasQuestionId.startsWith('P-2A-')).map(card => card.topicId))].sort());
+  .filter(card => card.level === 'higher' && card.atlasQuestionId.startsWith('P-2A-')).map(card => card.topicId))].sort());
 setCurriculum(H.prescribedPoetry, [...new Set(reviewedHigherTasks
-  .filter(card => card.atlasQuestionId.startsWith('F-3A-')).map(card => card.topicId))].sort());
+  .filter(card => card.level === 'higher' && card.atlasQuestionId.startsWith('F-3A-')).map(card => card.topicId))].sort());
 setCurriculum(H.debate, ['irish-2-4', 'irish-2-5']);
 setCurriculum(H.article, ['irish-2-1']);
 setCurriculum(H.story, ['irish-2-3']);
@@ -205,6 +234,10 @@ setCurriculum(O.story, ['irish-2-3']);
 setCurriculum(O.folktale, ['irish-4-7', 'irish-7-1']);
 setCurriculum(O.poetry, ['irish-5-6', 'irish-7-0']);
 setCurriculum(O.prose, ['irish-4-7', 'irish-7-0']);
+setCurriculum(O.prescribedProse, [...new Set(reviewedHigherTasks
+  .filter(card => card.level === 'ordinary' && card.atlasQuestionId.startsWith('P-2A-')).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
+setCurriculum(O.prescribedPoetry, [...new Set(reviewedHigherTasks
+  .filter(card => card.level === 'ordinary' && card.atlasQuestionId.startsWith('F-3A-')).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
 setCurriculum(F.form, ['irish-9-0']);
 setCurriculum(F.match, ['irish-9-1']);
 for (const id of [F.brochure, F.extract, F.letterReading, F.news, F.poem]) {
@@ -536,6 +569,9 @@ for (const paper of papers) {
       const generic = paper.sidecar.q;
       for (const source of generic) {
         const n = String(source.n);
+        // A reviewed task written to the sidecar by an earlier run is re-added
+        // by the reviewed-task pass with its own same-level topics.
+        if (reviewedTaskKeys.has(paper.year + '|' + paper.fileid + '|' + n)) continue;
         let baseTopicIds;
         if (n === '1') baseTopicIds = [ids.reading];
         else if (n === '2') baseTopicIds = paper.level === 'higher' ? [H.prose] : [O.prose, O.folktale];
@@ -739,6 +775,12 @@ for (const card of reviewedHigherTasks) {
   const paperOneIds = card.memberCardIds ? [card.topicId, ...(card.additionalTopicIds ?? [])] : [card.topicId];
   const baseTopicIds = card.paper === 1
     ? [...new Set(paperOneIds.flatMap(id => paperOneTopics[id] ?? (id === 'irish-2-2' ? [] : (() => { throw new Error('Unmapped reviewed Paper 1 topic: ' + card.id + ' ' + id); })())))]
+    : card.level === 'ordinary'
+    // Ordinary Paper 2: reading, prescribed prose/poetry shelves, optional prose/poetry.
+    ? [card.id.includes('-reading-') ? O.reading
+      : card.atlasQuestionId.startsWith('F-3A-') ? O.prescribedPoetry
+      : card.atlasQuestionId.startsWith('P-2A-') ? O.prescribedProse
+      : card.atlasQuestionId.startsWith('P-') ? O.prose : O.poetry]
     : card.id.includes('-reading-')
     ? card.topicId === 'irish-3-3' ? [H.grammar]
       : (card.additionalTopicIds ?? []).includes('irish-3-3') ? [H.reading,H.grammar] : [H.reading]
@@ -760,7 +802,7 @@ for (const card of reviewedHigherTasks) {
   if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
   addQuestion(paper, {
     n: card.atlasQuestionId,
-    label: card.questionRef.replace(/^\d{4} HL Paper [12] /, ''),
+    label: card.questionRef.replace(/^\d{4} [HO]L Paper [12] /, ''),
     baseTopicIds,
     anchor: { pP: card.reviewedPaperPages[0], pY: [0, 1],
       paperRegion: card.reviewedPaperPages.map(p => ({ p, r: [0, 0, 1, 1] })),

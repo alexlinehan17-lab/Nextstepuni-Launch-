@@ -1,0 +1,471 @@
+{
+  "year": 2026,
+  "level": "ordinary",
+  "paperFileid": "LC001GLP200IV.pdf",
+  "schemeFileid": "LC001GLP100IV.pdf",
+  "paperSha256": "b0b8d3471daf6e303a387d7f7b3b9ec0114cd7702f0693a2c13d26c462724033",
+  "schemeSha256": "5cd471bc9b0b782f6f6e84ac41531a1716ff7e2790c94925ad321d8a82a76117",
+  "reviewDate": "2026-10-11",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "reviewedSchemePages": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "schemeScope": "Combined Ordinary scheme. PDF 14 Paper 2 general notes and reading annotation key; 15–16 Léamhthuiscint A; 17–18 Léamhthuiscint B; 19 literature annotation key; 20–25 Prós Ainmnithe (2A); 26–27 Prós Roghnach (2B); 28–31 Filíocht Ainmnithe (3A); 32–33 Filíocht Roghnach (3B); 34 modified marking (SMM). PDF 1–13 and 35–40 belong to Paper 1 or are blank.",
+  "reviewMethod": "Visual inspection of every paper page (pages 1–3 cover/instructions, 14–16 blank/acknowledgements) and every applicable scheme page; cross-checked extracted text.",
+  "selectionDecisions": [
+    {
+      "page": 3,
+      "raw": "FREAGAIR GACH CEIST (1, 2 AGUS 3).",
+      "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair Léamhthuiscint A (50 marc) agus Léamhthuiscint B (50 marc).",
+      "decision": "Both reading passages and every question in each are required; each printed (a)/(b) part is also a 5-mark practice card."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair do rogha dhá cheann as (a), (b) nó (c).",
+      "decision": "Printed four times on the instructions page (under 2A, 2B, 3A and 3B): within the chosen section any two of (a), (b), (c); expanded on pages 8, 9, 10 and 13. “nó” separates 2A from 2B and 3A from 3B (alternatives, never combined)."
+    },
+    {
+      "page": 3,
+      "raw": "nó",
+      "decision": "Printed four times on the instructions page (under 2A, 2B, 3A and 3B): within the chosen section any two of (a), (b), (c); expanded on pages 8, 9, 10 and 13. “nó” separates 2A from 2B and 3A from 3B (alternatives, never combined)."
+    },
+    {
+      "page": 3,
+      "raw": "2B. Prós Roghnach (leathanach 9)",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).",
+      "decision": "Closed choice: Q3A (Filíocht Ainmnithe) or Q3B (Filíocht Roghnach), then any two of (a), (b), (c). Six whole 25-mark routes; two routes from different letters make each 50-mark selection (3A 3, 3B 3)."
+    },
+    {
+      "page": 3,
+      "raw": "3B. Filíocht Roghnach (leathanach 13)",
+      "decision": "Closed choice: Q3A (Filíocht Ainmnithe) or Q3B (Filíocht Roghnach), then any two of (a), (b), (c). Six whole 25-mark routes; two routes from different letters make each 50-mark selection (3A 3, 3B 3)."
+    },
+    {
+      "page": 4,
+      "raw": "Freagair A agus B anseo.",
+      "decision": "Both reading passages and every question in each are required; each printed (a)/(b) part is also a 5-mark practice card."
+    },
+    {
+      "page": 4,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Both reading passages and every question in each are required; each printed (a)/(b) part is also a 5-mark practice card."
+    },
+    {
+      "page": 5,
+      "raw": "Ní Churraoin, nó An Chéad Ghlúin Eile mar",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 5,
+      "raw": "(a) Scríobh síos dhá chúis ar bunaíodh Comharchumann Ráth Chairn sa bhliain 1973. (Alt 2)",
+      "decision": "Two required points inside one printed sub-question priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Tabhair dhá phíosa eolais faoi na cluichí Gaelacha sa cheantar. (Alt 2)",
+      "decision": "Two required points inside one printed sub-question priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Both reading passages and every question in each are required; each printed (a)/(b) part is also a 5-mark practice card."
+    },
+    {
+      "page": 6,
+      "raw": "Caroline, Jim agus Sharon, nó The Corrs mar",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 7,
+      "raw": "Tabhair dhá phíosa eolais faoi thuismitheoirí The Corrs. (Alt 1)",
+      "decision": "Two required points inside one printed sub-question priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh síos dhá rud a rinne The Corrs sa bhliain 1991. (Alt 2)",
+      "decision": "Two required points inside one printed sub-question priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh síos dhá rud a rinne Sharon tar éis don ghrúpa sos a thógáil. (Alt 3)",
+      "decision": "Two required points inside one printed sub-question priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh síos dhá phíosa eolais faoin óráid bheag a thugadh Andrea ag gach ceolchoirm",
+      "decision": "Two required points inside one printed sub-question priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "Luaigh dhá ghaisce atá déanta ag an teaghlach ceolmhar seo ó tháinig siad le chéile",
+      "decision": "Two required points inside one printed sub-question priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "Tabhair dhá shampla den obair charthanacha atá déanta ag The Corrs a thuill an gradam",
+      "decision": "Two required points inside one printed sub-question priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 8,
+      "raw": "Ceist 2 Prós – Ainmnithe nó Roghnach 50 marc",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair na ceisteanna thíos faoin scannán Cáca Milis nó faoin dráma An Lasair Choille.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 8,
+      "raw": "Tabhair dhá chúis a bhfuil imní ar mháthair Catherine sa charr.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 8,
+      "raw": "Scríobh síos dhá rud a deir Paul le Catherine faoi bheith ar an raidió.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 8,
+      "raw": "Luaigh dhá bhréag a insíonn Catherine do Paul.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 8,
+      "raw": "An maith leat Catherine sa scannán seo? Tabhair dhá fháth le do fhreagra.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 8,
+      "raw": "nó",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 8,
+      "raw": "Tabhair dhá chúis a bhfágann Míoda a hathair.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 8,
+      "raw": "An maith leat Míoda sa dráma seo? Tabhair dhá fháth le do fhreagra.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair an cheist thíos faoin ngearrscéal Dís.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 8,
+      "raw": "Scríobh síos dhá cheann de na hullmhúcháin atá déanta ag Lisín don chóisir.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 8,
+      "raw": "Tabhair dhá phointe eolais faoi Phól, fear céile Lisín.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 8,
+      "raw": "Luaigh dhá rud faoi Ruán, mac Lisín agus Phóil.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 8,
+      "raw": "Scríobh síos dhá phointe eolais faoin gcuid sin de shaol Lisín.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 8,
+      "raw": "An maith leat Lisín sa ghiota seo? Tabhair dhá fháth le do fhreagra.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 9,
+      "raw": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach.",
+      "decision": "Restriction on content, not a route."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair an cheist thíos faoin scannán roghnach nó faoin dráma roghnach.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 9,
+      "raw": "Maidir le scannán roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 9,
+      "raw": "nó",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 9,
+      "raw": "Maidir le dráma roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 9,
+      "raw": "Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 9,
+      "raw": "Maidir le giota as úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 9,
+      "raw": "2B PRÓS ROGHNACH 50 marc",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then any two of (a), (b), (c); 2A(a) offers Cáca Milis or An Lasair Choille and 2B(a) a film or a play. Eight whole 25-mark routes; two routes from different letters make each 50-mark selection (2A 5, 2B 5)."
+    },
+    {
+      "page": 10,
+      "raw": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).",
+      "decision": "Closed choice: Q3A (Filíocht Ainmnithe) or Q3B (Filíocht Roghnach), then any two of (a), (b), (c). Six whole 25-mark routes; two routes from different letters make each 50-mark selection (3A 3, 3B 3)."
+    },
+    {
+      "page": 10,
+      "raw": "Freagair do rogha dhá cheann as (a), (b) nó (c).",
+      "decision": "Closed choice: Q3A (Filíocht Ainmnithe) or Q3B (Filíocht Roghnach), then any two of (a), (b), (c). Six whole 25-mark routes; two routes from different letters make each 50-mark selection (3A 3, 3B 3)."
+    },
+    {
+      "page": 10,
+      "raw": "(i) Scríobh síos dhá phointe eolais, i d’fhocail féin, faoi shaol an ainmhí i línte 1‐8",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 10,
+      "raw": "(ii) Tabhair dhá phointe eolais, i d’fhocail féin, faoin íomhá (faoin bpictiúr) den ainmhí",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 10,
+      "raw": "(iii) An bhfuil an t‐ainmhí sásta i línte 13‐17 den dán, dar leat? Tabhair dhá fháth, i d’fhocail",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 10,
+      "raw": "Ceist 3 Filíocht – Ainmnithe nó Roghnach 50 marc",
+      "decision": "Closed choice: Q3A (Filíocht Ainmnithe) or Q3B (Filíocht Roghnach), then any two of (a), (b), (c). Six whole 25-mark routes; two routes from different letters make each 50-mark selection (3A 3, 3B 3)."
+    },
+    {
+      "page": 11,
+      "raw": "(ii) Scríobh síos dhá phointe eolais, i d’fhocail féin, faoin íomhá (faoin bpictiúr) den fhear",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 11,
+      "raw": "(iii) An maith leat an dán seo? Tabhair dhá fháth, i d’fhocail féin, le do fhreagra.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 11,
+      "raw": "Cliabh dhá dhroim,",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 12,
+      "raw": "(i) Scríobh síos dhá phointe eolais, i d’fhocail féin, faoin íomhá (faoin bpictiúr) den spailpín",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 12,
+      "raw": "(ii) Tabhair dhá phointe eolais, i d’fhocail féin, faoi mhargadh na saoire i véarsa a trí.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 12,
+      "raw": "(iii) An bhfuil trua agat don spailpín fánach sa dán seo? Tabhair dhá fháth, i d’fhocail féin,",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, or opinion 1 + reasons), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 13,
+      "raw": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid sna freagraí ar an bhFilíocht Roghnach.",
+      "decision": "Restriction on content, not a route."
+    },
+    {
+      "page": 13,
+      "raw": "Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.",
+      "decision": "Closed choice: Q3A (Filíocht Ainmnithe) or Q3B (Filíocht Roghnach), then any two of (a), (b), (c). Six whole 25-mark routes; two routes from different letters make each 50-mark selection (3A 3, 3B 3)."
+    },
+    {
+      "page": 13,
+      "raw": "Níl cead an dán roghnach céanna a úsáid faoi dhó sna freagraí ar (a), (b) nó (c) thíos.",
+      "decision": "Restriction recorded on every 3B selection: the same optional poem may not be used twice."
+    },
+    {
+      "page": 13,
+      "raw": "Maidir le dán nua‐aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa,",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 13,
+      "raw": "scríobh síos príomhthéama an dáin sin, dar leat. Tabhair dhá phointe eolais, i d’fhocail",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 13,
+      "raw": "Tabhair dhá shampla, i d’fhocail féin, den mhothúchán sin sa dán.",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 13,
+      "raw": "Tabhair dhá phointe eolais, i d’fhocail féin, faoin íomhá (faoin bpictiúr) sin.",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 13,
+      "raw": "Roghnaigh íomhá (pictiúr) amháin a úsáideann an file sa dán seo. Mínigh an íomhá",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 13,
+      "raw": "(an pictiúr) sin i d’fhocail féin. (Is leor dhá phointe eolais.)",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 13,
+      "raw": "(iii) An maith leat an dán seo? Tabhair dhá fháth, i d’fhocail féin, le do fhreagra.",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 13,
+      "raw": "Maidir le dán seanaimseartha roghnach (dán a cumadh sa tréimhse roimh 1850)",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 13,
+      "raw": "i d’fhocail féin. (Is leor dhá phointe eolais.)",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 13,
+      "raw": "(iii) Cén t‐atmaisféar atá sa dán seo, dar leat? Tabhair dhá shampla den atmaisféar sin",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 13,
+      "raw": "3B FILÍOCHT ROGHNACH 50 marc",
+      "decision": "Closed choice: Q3A (Filíocht Ainmnithe) or Q3B (Filíocht Roghnach), then any two of (a), (b), (c). Six whole 25-mark routes; two routes from different letters make each 50-mark selection (3A 3, 3B 3)."
+    },
+    {
+      "page": 16,
+      "raw": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe",
+      "decision": "Copyright statement, not a task."
+    },
+    {
+      "page": 16,
+      "raw": "Cóipchirt agus Ceart Gaolmhar, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin chun",
+      "decision": "Copyright statement, not a task."
+    },
+    {
+      "page": 16,
+      "raw": "tríú páirtí a eascraíonn as dáileadh nó úsáid neamhúdaraithe an scrúdpháipéir seo.",
+      "decision": "Copyright statement, not a task."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Reading: all ten questions are required; each printed (a)/(b) part is a 5-mark practice card. “3 mharc + 2 mharc” items are order-dependent (first correct point 3, second 2) and stay whole at 0/3/5; single answers with a printed partial (“= 3 mharc”) allow 0/3/5, otherwise 0/5.",
+    "Reading language: “Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh” is one deduction from each 50-mark passage total; cards state it without applying it inside a part.",
+    "Prescribed prose and poetry: each printed text is a whole 25-mark route with its own sub-question tariffs and one 0–4 Gaeilge deduction; every printed sub-question is also a practice card at its own tariff. 3A(b)(i) prints four 2-mark questions (a)–(d): each is a practice slot (0/2, “Freagra:” keys with no printed partial).",
+    "Literature mark values: “3 mharc + 2 mharc” sub-questions keep 0/3/5; other literature sub-questions keep the full range because the scheme’s points are indicative and further relevant points are credited “de réir a bhfiúntais”.",
+    "Optional prose (2B) and optional poetry (3B) routes stay whole: the text is open content chosen by the candidate, and the title/author marks (2) belong to the whole answer.",
+    "Choose-two within 2A, 2B, 3A or 3B is expanded mechanically into every two-route selection from different letters (2A 5, 2B 5, 3A 3, 3B 3 = 16). Alternatives inside one letter (Cáca Milis or An Lasair Choille; film or play) are never combined with each other.",
+    "Q2A or Q2B and Q3A or Q3B are alternatives: selections never mix 2A with 2B or 3A with 3B.",
+    "Scheme lists of sample answers are indicative answer keys, not route pools.",
+    "The modified marking scheme (PDF 34) changes assessment for eligible candidates, not the printed tasks."
+  ],
+  "sourceFindings": [
+    "Paper 2 = 200: Léamhthuiscint A 50 + B 50 (five questions of 10, each (a) 5 + (b) 5), Prós 50 (two of three at 25), Filíocht 50 (two of three at 25).",
+    "Reading A “Pobal Ráth Chairn” (paper pages 4–5, scheme PDF 15–16) and B “The Corrs – Clann cheolmhar cháiliúil” (paper 6–7, scheme PDF 17–18).",
+    "Prescribed prose (paper 8): Cáca Milis / An Lasair Choille (i)–(v) at 5 each; Dís one 25-mark question (five points at 5 = 2 + 3); Hurlamaboc (i)–(v) at 5. Optional prose (paper 9): 23 for the account (5,5,5,4,4) + 2 for title and writer/author.",
+    "Prescribed poetry (paper 10–12): Géibheann, An tEarrach Thiar, An Spailpín Fánach at 8/8/9; An tEarrach Thiar (i) is four 2-mark questions. Optional poetry (paper 13): (a) 9/7/7, (b) 9/7/7, (c) 9/7/7, + 2 for poem and poet each; the same poem may not be used twice.",
+    "Literature language: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” after every literature route; it is a deduction from that route, applied once."
+  ],
+  "remainingWork": [],
+  "runtimeVerification": {
+    "date": "2026-10-11",
+    "viewport": [
+      390,
+      844
+    ],
+    "markBankRoutes": 7,
+    "atlasRoutes": 6,
+    "sourceReader": "Whole reading question and one reading part (passage pages 4–5 / 6–7, swiped to the last page), a prescribed prose route, an optional play route, a 3A(b)(i) two-mark slot, a 3B selection and a 2A selection rendered their paper pages; navigation, close/focus return and overflow checks passed.",
+    "atlas": "Each route rendered its paper pages plus its reviewed scheme pages (reading 2+1 and 2+2, 2A selection 1+3, 3A(b) 1+2, 3B(c) 1+1, generic Question 2 with 7 scheme pages).",
+    "browserErrors": []
+  }
+}
