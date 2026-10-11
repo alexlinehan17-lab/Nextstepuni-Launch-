@@ -69,6 +69,59 @@ def check(tasks, *, strict=True):
     return report
 
 
+def check_paper(record, tasks, *, strict=True):
+    """Strict gate for ONE paper, independent of every other paper.
+
+    Paper-by-paper shipping is approved, so a reviewed paper may publish while
+    the corpus-wide gate still refuses because of other years. Every input is
+    restricted to this paper: its freshly extracted tasks, its selection
+    decisions, its raw directive hits and their ledger rows, its scheme
+    reviews, its visual ledger entry and any reviewed context for its tasks.
+    Nothing outside the paper can make it pass, and nothing inside can be
+    skipped.
+    """
+    key = record['id']
+    if any(not task['id'].startswith(key + '-') for task in tasks):
+        raise ValueError('Paper gate received a task from another paper: ' + key)
+    task_ids = {task['id'] for task in tasks}
+    all_context = read('english-task-context.json')['tasks']
+    orphaned = sorted(tid for tid in all_context if tid.startswith(key + '-') and tid not in task_ids)
+    if orphaned:
+        raise ValueError('Orphaned reviewed task context: ' + ', '.join(orphaned))
+
+    all_decisions = read('english-selection-review.json')['decisions']
+    decisions = {tid: decision for tid, decision in all_decisions.items() if tid.startswith(key + '-')}
+    routes, selection_pending = review(tasks, decisions)
+
+    raw_ledger = read('english-raw-selection-review.json')
+    raw_subset = {
+        'sources': {key: raw_ledger.get('sources', {}).get(key)} if key in raw_ledger.get('sources', {}) else {},
+        'decisions': {hid: d for hid, d in raw_ledger.get('decisions', {}).items() if hid.startswith(key + '-p')},
+    }
+    hits = scan([record])
+    raw_pending, raw_tasks_pending = reconcile_raw(hits, [record], raw_subset, tasks, decisions)
+    if hits and raw_subset['sources'].get(key) != record['questionPaper']['sha256']:
+        raw_pending = sorted(set(raw_pending) | {key + ': raw ledger not bound to this paper'})
+
+    scheme_ledger = read('english-task-review.json')
+    scheme_subset = {'tasks': {tid: d for tid, d in scheme_ledger['tasks'].items() if tid.startswith(key + '-')}}
+    scheme_pending = reconcile_schemes(tasks, [record], scheme_subset)
+
+    visual = read('english-visual-review.json')
+    entries = [entry for entry in visual['papers'] if entry['paperId'] == key]
+    if len(entries) != 1:
+        raise ValueError('Visual ledger must hold this paper exactly once: ' + key)
+    visual_pending = check_visual([record], tasks, routes, {'papers': entries})
+
+    report = {'paperId': key, 'baseTasks': len(tasks), 'routes': len(routes),
+              'pending': {'taskSelections': selection_pending, 'rawDirectives': raw_pending,
+                          'rawLinkedTasks': raw_tasks_pending, 'schemeTasks': scheme_pending,
+                          'paperReviews': visual_pending}}
+    if strict and any(report['pending'].values()):
+        raise ValueError('English paper refused by its own gate: ' + key)
+    return report, routes
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report', action='store_true')

@@ -573,6 +573,20 @@ def census_subject(subject):
                 } for ask in asks],
                 'marksSum': None, 'marksQuestions': 0, 'flags': [],
             })
+        # Reviewed papers published paper by paper (english_publish.py), and
+        # every remaining non-legacy paper declared open with its candidate
+        # tasks, so the ratchet never hides outstanding English work.
+        from english_publish import coverage_census_papers  # noqa: E402
+        for row in coverage_census_papers():
+            papers.append({
+                'year': row['year'], 'level': row['level'],
+                'paper': f"Paper {row['paper']}",
+                'leafCount': len(row['leaves']),
+                'leaves': [{'key': [cid], 'label': label, 'text': '',
+                            'status': 'authored' if row['status'] == 'published' else 'queued'}
+                           for cid, label in row['leaves']],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
         return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
     papers = []
     for year, level, comps in sittings(subject):

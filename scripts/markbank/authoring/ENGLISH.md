@@ -143,3 +143,42 @@ dependencies. These bind both question wording and paper hashes. Carry their
 notes, each task's parent stem, sources, and criteria into every split or
 expanded route. Preserve legacy bundled card IDs while adding the separately
 practicable tasks required by the repository's corpus rules.
+
+## Publishing reviewed papers (paper by paper)
+
+`english_publish.py` is the runtime publisher for the full corpus. A paper is
+published only when its OWN strict gate passes
+(`english_review_gate.check_paper`): the paper's visual ledger entry, every one
+of its tasks scheme-reviewed against current hashes, zero pending selections,
+every raw directive on that paper classified, and no orphaned context. The
+corpus-wide gate may still refuse because of other years; that never blocks a
+reviewed paper and never lets an unreviewed one through.
+
+```bash
+python3 scripts/markbank/authoring/english_publish.py          # regenerate
+python3 scripts/markbank/authoring/english_publish.py --check  # CI-style staleness check
+node scripts/paper-trail/build-english-geography-exam-topic-runtime.mjs  # after new archive topics
+```
+
+- Output: `components/MarkBank/cards/english/published-{higher,ordinary}.json`.
+  Card id = reviewed task id, or route id for a finite printed pool (the
+  parent is then not a card). Every route keeps the parent tariff, reader,
+  context and reviewed scheme pages.
+- Legacy 2021-2025 cards stay in `authored.json` and are untouched. A legacy
+  paper is refused until `english-legacy-bridge.json` maps every legacy card
+  of that paper to a reviewed id (keeping the legacy id or recording a
+  progress alias). Reviewed companion readers of legacy leaves are aggregated
+  onto their bundled parent (`legacyAdditionalSources`).
+- Grids and caps: `scripts/markbank/authored/english-marking-grids.json` is an
+  exact transcription of each printed grid (2010-2016 HL A+..E-, 2010-2016 OL
+  A..F/NG with its printed overlaps and the 10-mark F/NG 1, 2018 and 2026
+  H1-H8/O1-O8) and of each year's cap rule (2010-2015 HL none; 2010-2015 OL
+  Language capped at the top of D only when both P and C are below D; 2016,
+  2018 HL and 2026 C/L <= P; 2018 OL none printed). The publisher refuses a
+  grid whose cells are not printed on the bound scheme page.
+- Topic Atlas: the publisher also writes additive archive topics for
+  canonical nodes the reference menu lacks and exact booklet links for every
+  published sidecar block (`data/examTopics/english-reviewed-*.json`); the
+  registry unions them in and never replaces an existing mapping.
+- Coverage: the English ledger = legacy census + published papers + every
+  other non-legacy paper declared open (candidate tasks, labelled unreviewed).
