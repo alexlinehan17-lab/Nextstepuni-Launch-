@@ -570,7 +570,113 @@ POOLS_2026_HIGHER = {
     'Q18(c)(iii)': (1, ['plants', 'animals']),
 }
 
+# 2026 Ordinary: Section A Q1-Q12 at 10 marks, Section B Q13-Q18 at 50. Scheme
+# pages 1-11 are instructions and the coursework criteria, not paper tasks.
+ORDINARY_2026 = '''
+Q1(a)|6|3|12|A – combine harvester
+Q1(b)|4|3|12|avoid overhead power lines
+Q2(a)|3|4|12|Reduces soil erosion and run off
+Q2(b)|3|4|12|polyculture maximises space
+Q2(c)|4|4|12|low intensity mowing
+Q3(a)(i)|4|5|12|Input: Carbon dioxide / water / light
+Q3(a)(ii)|6|5|12|superior seed selection
+Q3(b)(i)|3|5|13|Correct placement on diagram
+Q3(b)(ii)|3|5|13|N, P, K, S, Mg, Ca
+Q3(b)(iii)|4|5|13|Identify two possible
+Q4(a)|6|6|13|slurry gases or falling into tank
+Q4(b)|2|6|13|have side rails on pit
+Q4(c)|2|6|13|ensure machines don’t run into
+Q5(a)|7|7|13|C – Shorthorn
+Q5(b)|3|7|14|a roan colour, by placing a tick
+Q6|10|8|14|1+1+2+2+4
+Q7|10|8|14|Complete the breeding
+Q8(a)(i)|4|9|14|Bacteria / fungi / actinomycetes
+Q8(a)(ii)|6|9|14|Nutrient cycling / nutrient availability
+Q8(b)(i)|3|9|14|To stir the mixture of soil and water
+Q8(b)(ii)|3|9|14|clear water to see colour change
+Q8(b)(iii)|4|9|14|Wash the probe of the meter
+Q9(a)|10|10|15|always observe
+Q9(b)(i)|5|11|15|Poisonous or toxic
+Q9(b)(ii)|5|11|15|quarantine sick animals / closed herd
+Q10(a)|6|12|15|White clover – perennial
+Q10(b)|4|12|15|herbicide or spot
+Q11(a)|4|13|16|monogastric by placing a tick
+Q11(b)|6|13|16|C = Rectum
+Q12(a)(i)|4|14|16|100 – 95 = 5%
+Q12(a)(ii)|6|14|16|try to form thread into a ring
+Q12(b)(i)|4|15|16|A – graduated cylinder
+Q12(b)(ii)|3|15|16|To form a soil solution
+Q12(b)(iii)|3|15|16|use the soil textural
+Q13(a)(i)|6|18|17|A – Vegetative
+Q13(a)(ii)|2|18|17|A or vegetative
+Q13(a)(iii)|4|19|17|digestible sugars are the highest
+Q13(a)(iv)|8|19|17|grazing / rest period / sward composition
+Q13(b)(i)|8|19|17|5 Cover the pit
+Q13(b)(ii)|6|19|17|Identify two tests that determine
+Q13(c)(i)|8|20|17|2nd step – D
+Q13(c)(ii)|8|20|17|Data driven approach to management
+Q14(a)(i)|6|21|18|C – Blackface mountain
+Q14(a)(ii)|5|21|18|Blackface mountain or C
+Q14(a)(iii)|6|21|18|Rams A and D are classed as terminal sires.
+Q14(b)(i)|6|22|18|Correct position of X where finishing is indicated.
+Q14(b)(ii)|9|22|18|steaming up – gradual increase of concentrates
+Q14(c)(i)|10|23|19|Named grazing system
+Q14(c)(ii)|8|23|19|reliance on technology (batteries, connectivity)
+Q15(a)(i)|8|24|19|C – Parent rock
+Q15(a)(ii)|6|24|19|Soil forms slowly from the breakdown of rocks
+Q15(a)(iii)|6|24|19|crumbly texture
+Q15(b)(i)|4|25|19|Identify the meaning of the underlined term by placing a tick
+Q15(b)(ii)|4|25|19|Poor drainage / low organic matter
+Q15(b)(iii)|6|25|20|Decreased yield / poor root penetration
+Q15(b)(iv)|10|25|20|reduced lameness rates
+Q15(c)|6|26|20|places the slurry on the soil
+Q15(d)(i)|5|26|20|Explain why Teagasc included a field with no slurry
+Q15(d)(ii)|1|26|20|Trailing shoe or Field 2
+Q16(a)(i)|4|27|20|black whitehead
+Q16(a)(ii)|1|27|20|dairy or beef farm by placing a tick
+Q16(a)(iii)|2|27|20|Identification / traceability
+Q16(a)(iv)|8|27|20|know stock ancestors
+Q16(a)(v)|8|27|21|No swollen naval
+Q16(b)(i)|2|28|21|By age / by size
+Q16(b)(ii)|8|28|21|Milk or milk replacer
+Q16(b)(iii)|8|28|21|reduced workload
+Q16(c)(i)|3|29|21|Identify the disease the calf is likely to be
+Q16(c)(ii)|3|29|21|calf jacket
+Q16(c)(iii)|3|29|21|Ensure good quality colostrum
+Q16(d)(i)|3|29|21|Identify the target weaning weight
+Q16(d)(ii)|6|29|21|90 x 5.50 x 10
+Q17(a)(i)|2|30|22|Fertiliser that is protected with a urease inhibitor
+Q17(a)(ii)|8|30|22|sow multi-species swards
+Q17(a)(iii)|4|30|22|Identify inefficiencies
+Q17(b)(i)|12|31|22|B / C / D / A
+Q17(b)(ii)|2|31|22|Be careful when working near PTO
+Q17(c)|22|32|22|Drought conditions will reduce the germination rate
+Q18(a)(i)|8|33|23|Feed quality / feed type
+Q18(a)(ii)|8|33|23|check for mastitis or CMT
+Q18(a)(iii)|4|33|23|To reduce bacteria multiplication
+Q18(a)(iv)|4|33|23|Udder infection
+Q18(a)(v)|8|33|23|spoiled feed or bedding
+Q18(b)(i)|9|34|23|Correct point
+Q18(b)(ii)|9|35|23|C – median suspensory ligament
+'''
+
+POOLS_2026_ORDINARY = {
+    'Q1(a)': (3, ['A', 'B', 'C', 'D']),
+    'Q4(a)': (2, ['A', 'B', 'C']),
+    'Q4(b)': (1, ['A', 'B', 'C']),
+    'Q5(a)': (3, ['A', 'B', 'C', 'D']),
+    'Q9(a)': (3, ['Lock cows in a proper calving gate', 'Good handling facilities when moving cows to and from calving pens', 'Have two escape points in a calving pen',
+                  'Never turn your back on a freshly calved cow', 'Keep dogs/children away from calving shed']),
+    'Q9(b)(i)': (2, ['A', 'B', 'C']),
+    'Q10(a)': (2, ['Barley', 'White clover', 'Potato']),
+    'Q14(a)(i)': (3, ['A', 'B', 'C', 'D']),
+    'Q18(b)(ii)': (3, ['A', 'B', 'C', 'D']),
+}
+
 SOURCES = [
+    (2026, 'ordinary', 'G', ORDINARY_2026,
+     'b63e7223ff6e0b724984b51db9b1813f37d19496570b7614694abc85f5702e2f',
+     '5d408c95790f05c59a313f8b2e30ed789d36ddfbbe23da59474d5db79a7e1e8a'),
     (2026, 'higher', 'A', HIGHER_2026,
      '900dc33c639e740c3e50079caa34400ff62ada89418cc677142eec53335fd990',
      'efc3a2aa5656657aaec9364c23caf927f47078ecd622976e97b10628f8ecf6a6'),
@@ -618,8 +724,8 @@ def source_tasks():
             if year==2010 and level=='higher' and ref=='Q3 Option Two (b)':
                 routes = [ref+' — Hoose',ref+' — grass-tetany']
                 selection = {'kind':'closed','choose':1,'options':['Hoose','grass-tetany']}
-            elif year==2026 and level=='higher' and ref in POOLS_2026_HIGHER:
-                choose,choices = POOLS_2026_HIGHER[ref]
+            elif year==2026 and ref in (POOLS_2026_HIGHER if level=='higher' else POOLS_2026_ORDINARY):
+                choose,choices = (POOLS_2026_HIGHER if level=='higher' else POOLS_2026_ORDINARY)[ref]
                 routes = [ref+' — '+', '.join(parts) for parts in itertools.combinations(choices,choose)]
                 selection = {'kind':'closed','choose':choose,'options':choices}
             elif year<2021 and level=='higher' and (ref=='Q8(c)' or year in (2010,2012) and ref=='Q7(a)'):
@@ -632,7 +738,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -677,6 +783,8 @@ def build():
 MODERN_LAYOUTS = {
     (2026,'higher'): {'either':{'Q2','Q3','Q6','Q11'}, 'bothWithEither':{'Q14','Q16'},
                       'marks':lambda n: 10 if n<=12 else 50},
+    (2026,'ordinary'): {'either':{'Q3','Q8','Q9','Q12'}, 'bothWithEither':{'Q15','Q16'},
+                        'marks':lambda n: 10 if n<=12 else 50},
 }
 
 
@@ -749,7 +857,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62; 2026 Higher 91 / 112. Remaining editions stay open.')
+    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62; 2026 Higher 91 / 112; 2026 Ordinary 85 / 114. Remaining editions stay open.')
 
 
 if __name__=='__main__':

@@ -13562,4 +13562,3037 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q1a-route-abc", topicId: "agsci-3-3-1", conceptId: "farm-machinery-identification",
+    section: "A", questionRef: "2026 OL Q1(a) — A, B, C",
+    stem: "Practice choice: A, B, C.",
+    questionText: "Identify any three pieces of equipment commonly found on Irish farms using the words in the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – combine harvester", marks: 2, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "B – plough", marks: 2, contextNote: "B." },
+    { id: "r-3", kind: "point", verbatim: "C – drone sprayer", marks: 2, contextNote: "C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q1(a) — A, B, C",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q1a-route-abd", topicId: "agsci-3-3-1", conceptId: "farm-machinery-identification",
+    section: "A", questionRef: "2026 OL Q1(a) — A, B, D",
+    stem: "Practice choice: A, B, D.",
+    questionText: "Identify any three pieces of equipment commonly found on Irish farms using the words in the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – combine harvester", marks: 2, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "B – plough", marks: 2, contextNote: "B." },
+    { id: "r-3", kind: "point", verbatim: "D - topper", marks: 2, contextNote: "D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q1(a) — A, B, D",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q1a-route-acd", topicId: "agsci-3-3-1", conceptId: "farm-machinery-identification",
+    section: "A", questionRef: "2026 OL Q1(a) — A, C, D",
+    stem: "Practice choice: A, C, D.",
+    questionText: "Identify any three pieces of equipment commonly found on Irish farms using the words in the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – combine harvester", marks: 2, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "C – drone sprayer", marks: 2, contextNote: "C." },
+    { id: "r-3", kind: "point", verbatim: "D - topper", marks: 2, contextNote: "D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q1(a) — A, C, D",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q1a-route-bcd", topicId: "agsci-3-3-1", conceptId: "farm-machinery-identification",
+    section: "A", questionRef: "2026 OL Q1(a) — B, C, D",
+    stem: "Practice choice: B, C, D.",
+    questionText: "Identify any three pieces of equipment commonly found on Irish farms using the words in the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B – plough", marks: 2, contextNote: "B." },
+    { id: "r-2", kind: "point", verbatim: "C – drone sprayer", marks: 2, contextNote: "C." },
+    { id: "r-3", kind: "point", verbatim: "D - topper", marks: 2, contextNote: "D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q1(a) — B, C, D",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q1b", topicId: "agsci-1-5", conceptId: "drone-sprayer-safety",
+    section: "A", questionRef: "2026 OL Q1(b)",
+    stem: "Picture C in part (a) shows a drone sprayer.",
+    questionText: "Outline one safety precaution farmers must take when using the piece of machinery in picture C in part (a) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Be careful wind doesn’t catch it or avoid flying in adverse weather conditions / ensure it only flies over target or avoid collisions area or fly (at least 50 metres) away from individuals / ensure it doesn’t come down on someone / avoid overhead power lines / wear PPE during chemical spraying / avoid moving parts / avoid spraying where animals are grazing", marks: 4, group: {"claimMax":1,"perOption":4,"options":["Be careful wind doesn’t catch it or avoid flying in adverse weather conditions","ensure it only flies over target or avoid collisions area or fly (at least 50 metres) away from individuals","ensure it doesn’t come down on someone","avoid overhead power lines","wear PPE during chemical spraying","avoid moving parts","avoid spraying where animals are grazing"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q1(b)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q2a", topicId: "agsci-2-3", conceptId: "sustainable-farming-water-quality",
+    section: "A", questionRef: "2026 OL Q2(a)",
+    stem: "Sustainable farming is very important for Irish farmers. Analyse the picture and answer the questions that follow.",
+    questionText: "Identify how sustainable farming improves water quality, by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Reduces soil erosion and run off", marks: 3, contextNote: "The scheme ticks this box." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q2(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q2b", topicId: "agsci-3-3-2", conceptId: "sustainable-farming-yield",
+    section: "A", questionRef: "2026 OL Q2(b)",
+    stem: "Sustainable farming is very important for Irish farmers. Analyse the picture and answer the questions that follow.",
+    questionText: "Outline one way sustainable farming can increase the yield of crops.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Improved soil structure / improve soil health / increased nutrient availability / enhanced water retention / break pest and disease cycles or IPM (Integrated Pest Management) controls pests without stunting crop growth / reduce soil erosion / increase pollinators / polyculture maximises space", marks: 3, group: {"claimMax":1,"perOption":3,"options":["Improved soil structure","improve soil health","increased nutrient availability","enhanced water retention","break pest and disease cycles or IPM (Integrated Pest Management) controls pests without stunting crop growth","reduce soil erosion","increase pollinators","polyculture maximises space"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q2(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-2","agsci-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q2c", topicId: "agsci-3-3-2", additionalTopicIds: ["agsci-2-3"], conceptId: "pollinator-habitats",
+    section: "A", questionRef: "2026 OL Q2(c)",
+    stem: "Sustainable farming is very important for Irish farmers. Analyse the picture and answer the questions that follow.",
+    questionText: "Outline two ways farmers can provide habitats for pollinators on their farms.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Plant mixed species / sow cover crops / plant native trees / reduce chemical sprays / field margins / hedgerows / riparian or buffer zones / low intensity mowing / timing of pesticide application / create habitats", marks: 4, group: {"claimMax":2,"perOption":1,"options":["Plant mixed species","sow cover crops","plant native trees","reduce chemical sprays","field margins","hedgerows","riparian or buffer zones","low intensity mowing","timing of pesticide application","create habitats"],"perOptionSteps":[1,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q2(c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q3ai", topicId: "agsci-3-1", conceptId: "photosynthesis-inputs-outputs",
+    section: "A", questionRef: "2026 OL Q3(a)(i)",
+    stem: "The diagram shows photosynthesis in plants. Analyse the diagram and answer the questions that follow.",
+    questionText: "Identify one input (requirement) and one output (product) in the process of photosynthesis.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Carbon dioxide / water / light", marks: 2, contextNote: "Input.", group: {"claimMax":1,"perOption":2,"options":["Carbon dioxide","water","light"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Glucose / oxygen", marks: 2, contextNote: "Output.", group: {"claimMax":1,"perOption":2,"options":["Glucose","oxygen"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q3(a)(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-2","agsci-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q3aii", topicId: "agsci-3-3-2", additionalTopicIds: ["agsci-3-1"], conceptId: "photosynthesis-crop-yields",
+    section: "A", questionRef: "2026 OL Q3(a)(ii)",
+    stem: "The diagram shows photosynthesis in plants. Analyse the diagram and answer the questions that follow.",
+    questionText: "List two ways farmers use their knowledge of photosynthesis to improve crop yields.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Correct seed rate / ensure max light or canopy management or row orientation or aspect or supplemental lighting or plastic mulches / efficient water or irrigation / increase CO₂ by using a greenhouse / increased soil organic matter / increased nutrient availability / superior seed selection / ventilation control", marks: 6, group: {"claimMax":2,"perOption":3,"options":["Correct seed rate","ensure max light or canopy management or row orientation or aspect or supplemental lighting or plastic mulches","efficient water or irrigation","increase CO₂ by using a greenhouse","increased soil organic matter","increased nutrient availability","superior seed selection","ventilation control"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q3(a)(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q3bi", topicId: "agsci-3-1", conceptId: "root-hair-location",
+    section: "A", questionRef: "2026 OL Q3(b)(i)",
+    stem: "Study the diagram of the plant root.",
+    questionText: "Identify the presence of the root hair by placing an R on its location in the diagram.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct placement on diagram (anywhere on or around the root hair on the right-hand side of the diagram).", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q3(b)(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-scheme-root-hair",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-scheme-root-hair.png",
+          "srcHash": "6a3b901b206ce377e2ce094e95a7bf7b",
+          "alt": "Official root diagram with the root-hair region on the right-hand side outlined in red: the scheme accepts an R placed anywhere on or around the root hair.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level marking scheme, PDF page 13 — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q3bii", topicId: "agsci-3-1", conceptId: "root-mineral-uptake",
+    section: "A", questionRef: "2026 OL Q3(b)(ii)",
+    stem: "Study the diagram of the plant root.",
+    questionText: "State one important mineral that plants take in through their roots.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "N, P, K, S, Mg, Ca or any valid example", marks: 3, contextNote: "Any one valid mineral." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q3(b)(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-2","agsci-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q3biii", topicId: "agsci-2-2-2", additionalTopicIds: ["agsci-3-1"], conceptId: "nutrient-uptake-barriers",
+    section: "A", questionRef: "2026 OL Q3(b)(iii)",
+    questionText: "A farmer notices that plants are not growing well, even though the soil looks healthy. Identify two possible reasons why nutrients might not be reaching the plant roots properly by placing ticks (✓) in the correct boxes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Soil is too compacted / Incorrect pH", marks: 4, contextNote: "The scheme ticks these two boxes.", group: {"claimMax":2,"perOption":2,"options":["Soil is too compacted","Incorrect pH"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q3(b)(iii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "diagram",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q4a-route-ab", topicId: "agsci-1-5", conceptId: "farmyard-hazards",
+    section: "A", questionRef: "2026 OL Q4(a) — A, B",
+    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: A, B.",
+    questionText: "Identify any two potential safety hazards labelled A, B and C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A – slurry gases or falling into tank or beware of animal movement or moving vehicles / B – Moving machinery or items falling off pit or falls from pit (walls)", marks: 6, contextNote: "Identify the hazard at each of your two chosen letters. The first correct hazard earns 2 marks and the second 4.", group: {"claimMax":2,"perOption":2,"options":["A – slurry gases or falling into tank or beware of animal movement or moving vehicles","B – Moving machinery or items falling off pit or falls from pit (walls)"],"perOptionSteps":[2,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q4(a) — A, B",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-paper-farm-hazards",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-farm-hazards.png",
+          "srcHash": "3e237257a115016f777a517036aee260",
+          "alt": "Original hand-sketched farmyard map: livestock shed, milking parlour and handling unit, feed storage area, slurry tank, silage pit, machinery shed and farmhouse, with hazard triangles A, B and C.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"slurry gases or falling into tank or beware of animal movement or moving vehicles","askedInThisQuestion":true},{"letter":"B","meaning":"Moving machinery or items falling off pit or falls from pit (walls)","askedInThisQuestion":true},{"letter":"C","meaning":"moving machinery or risk of falling objects or disease risk from rodents","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "diagram",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q4a-route-ac", topicId: "agsci-1-5", conceptId: "farmyard-hazards",
+    section: "A", questionRef: "2026 OL Q4(a) — A, C",
+    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: A, C.",
+    questionText: "Identify any two potential safety hazards labelled A, B and C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A – slurry gases or falling into tank or beware of animal movement or moving vehicles / C – moving machinery or risk of falling objects or disease risk from rodents", marks: 6, contextNote: "Identify the hazard at each of your two chosen letters. The first correct hazard earns 2 marks and the second 4.", group: {"claimMax":2,"perOption":2,"options":["A – slurry gases or falling into tank or beware of animal movement or moving vehicles","C – moving machinery or risk of falling objects or disease risk from rodents"],"perOptionSteps":[2,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q4(a) — A, C",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-paper-farm-hazards",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-farm-hazards.png",
+          "srcHash": "3e237257a115016f777a517036aee260",
+          "alt": "Original hand-sketched farmyard map: livestock shed, milking parlour and handling unit, feed storage area, slurry tank, silage pit, machinery shed and farmhouse, with hazard triangles A, B and C.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"slurry gases or falling into tank or beware of animal movement or moving vehicles","askedInThisQuestion":true},{"letter":"B","meaning":"Moving machinery or items falling off pit or falls from pit (walls)","askedInThisQuestion":false},{"letter":"C","meaning":"moving machinery or risk of falling objects or disease risk from rodents","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "diagram",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q4a-route-bc", topicId: "agsci-1-5", conceptId: "farmyard-hazards",
+    section: "A", questionRef: "2026 OL Q4(a) — B, C",
+    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: B, C.",
+    questionText: "Identify any two potential safety hazards labelled A, B and C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "B – Moving machinery or items falling off pit or falls from pit (walls) / C – moving machinery or risk of falling objects or disease risk from rodents", marks: 6, contextNote: "Identify the hazard at each of your two chosen letters. The first correct hazard earns 2 marks and the second 4.", group: {"claimMax":2,"perOption":2,"options":["B – Moving machinery or items falling off pit or falls from pit (walls)","C – moving machinery or risk of falling objects or disease risk from rodents"],"perOptionSteps":[2,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q4(a) — B, C",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-paper-farm-hazards",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-farm-hazards.png",
+          "srcHash": "3e237257a115016f777a517036aee260",
+          "alt": "Original hand-sketched farmyard map: livestock shed, milking parlour and handling unit, feed storage area, slurry tank, silage pit, machinery shed and farmhouse, with hazard triangles A, B and C.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"slurry gases or falling into tank or beware of animal movement or moving vehicles","askedInThisQuestion":false},{"letter":"B","meaning":"Moving machinery or items falling off pit or falls from pit (walls)","askedInThisQuestion":true},{"letter":"C","meaning":"moving machinery or risk of falling objects or disease risk from rodents","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q4b-route-a", topicId: "agsci-1-5", conceptId: "reducing-farmyard-risk",
+    section: "A", questionRef: "2026 OL Q4(b) — A",
+    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: hazard A.",
+    questionText: "For any one safety hazard identified in part (a), suggest one measure the farmer could take to reduce the potential risk.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "do not enter shed during agitating / keep cover on tank / beware of animal or machinery movement / keep gates closed", marks: 2, contextNote: "One measure for hazard A. The scheme accepts any valid example for each hazard.", group: {"claimMax":1,"perOption":2,"options":["do not enter shed during agitating","keep cover on tank","beware of animal or machinery movement","keep gates closed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q4(b) — A",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q4b-route-b", topicId: "agsci-1-5", conceptId: "reducing-farmyard-risk",
+    section: "A", questionRef: "2026 OL Q4(b) — B",
+    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: hazard B.",
+    questionText: "For any one safety hazard identified in part (a), suggest one measure the farmer could take to reduce the potential risk.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "beware of any moving machinery / have side rails on pit / do not go under the silage cover", marks: 2, contextNote: "One measure for hazard B. The scheme accepts any valid example for each hazard.", group: {"claimMax":1,"perOption":2,"options":["beware of any moving machinery","have side rails on pit","do not go under the silage cover"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q4(b) — B",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q4b-route-c", topicId: "agsci-1-5", conceptId: "reducing-farmyard-risk",
+    section: "A", questionRef: "2026 OL Q4(b) — C",
+    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: hazard C.",
+    questionText: "For any one safety hazard identified in part (a), suggest one measure the farmer could take to reduce the potential risk.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "be aware of moving machinery or falling objects / wash hands after handling feed", marks: 2, contextNote: "One measure for hazard C. The scheme accepts any valid example for each hazard.", group: {"claimMax":1,"perOption":2,"options":["be aware of moving machinery or falling objects","wash hands after handling feed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q4(b) — C",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q4c", topicId: "agsci-1-5", conceptId: "separating-animals-machinery",
+    section: "A", questionRef: "2026 OL Q4(c)",
+    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow.",
+    questionText: "Explain why it is important to separate animal movement areas from machinery routes in a farmyard.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Avoid animals escaping / ensure machines don’t run into animals / (human) safety / biosecurity or disease control / farm efficiency or traffic flow", marks: 2, group: {"claimMax":1,"perOption":2,"options":["Avoid animals escaping","ensure machines don’t run into animals","(human) safety","biosecurity or disease control","farm efficiency or traffic flow"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q4(c)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q5a-route-abc", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
+    section: "A", questionRef: "2026 OL Q5(a) — A, B, C",
+    stem: "Practice choice: A, B, C.",
+    questionText: "Identify any three cattle breeds found on Irish farms using the list of words below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A – Aberdeen Angus / B – Friesian or Holstein or Holstein Friesian / C – Shorthorn", marks: 7, contextNote: "Identify the three pictured breeds you chose. The scheme prints 1+2+4: the first correct breed earns 1 mark, the second 2 and the third 4.", group: {"claimMax":3,"perOption":1,"options":["A – Aberdeen Angus","B – Friesian or Holstein or Holstein Friesian","C – Shorthorn"],"perOptionSteps":[1,2,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q5(a) — A, B, C",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q5a-route-abd", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
+    section: "A", questionRef: "2026 OL Q5(a) — A, B, D",
+    stem: "Practice choice: A, B, D.",
+    questionText: "Identify any three cattle breeds found on Irish farms using the list of words below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A – Aberdeen Angus / B – Friesian or Holstein or Holstein Friesian / D – Simmental", marks: 7, contextNote: "Identify the three pictured breeds you chose. The scheme prints 1+2+4: the first correct breed earns 1 mark, the second 2 and the third 4.", group: {"claimMax":3,"perOption":1,"options":["A – Aberdeen Angus","B – Friesian or Holstein or Holstein Friesian","D – Simmental"],"perOptionSteps":[1,2,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q5(a) — A, B, D",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q5a-route-acd", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
+    section: "A", questionRef: "2026 OL Q5(a) — A, C, D",
+    stem: "Practice choice: A, C, D.",
+    questionText: "Identify any three cattle breeds found on Irish farms using the list of words below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A – Aberdeen Angus / C – Shorthorn / D – Simmental", marks: 7, contextNote: "Identify the three pictured breeds you chose. The scheme prints 1+2+4: the first correct breed earns 1 mark, the second 2 and the third 4.", group: {"claimMax":3,"perOption":1,"options":["A – Aberdeen Angus","C – Shorthorn","D – Simmental"],"perOptionSteps":[1,2,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q5(a) — A, C, D",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q5a-route-bcd", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
+    section: "A", questionRef: "2026 OL Q5(a) — B, C, D",
+    stem: "Practice choice: B, C, D.",
+    questionText: "Identify any three cattle breeds found on Irish farms using the list of words below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "B – Friesian or Holstein or Holstein Friesian / C – Shorthorn / D – Simmental", marks: 7, contextNote: "Identify the three pictured breeds you chose. The scheme prints 1+2+4: the first correct breed earns 1 mark, the second 2 and the third 4.", group: {"claimMax":3,"perOption":1,"options":["B – Friesian or Holstein or Holstein Friesian","C – Shorthorn","D – Simmental"],"perOptionSteps":[1,2,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q5(a) — B, C, D",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q5b", topicId: "agsci-4-2", conceptId: "roan-colour",
+    section: "A", questionRef: "2026 OL Q5(b)",
+    questionText: "Identify which animal A, B, C or D in part (a) above has a roan colour, by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C", marks: 3, contextNote: "The scheme ticks C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q5(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-2","agsci-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q6", topicId: "agsci-3-3-2", additionalTopicIds: ["agsci-2-3"], conceptId: "organic-farming-statements",
+    section: "A", questionRef: "2026 OL Q6",
+    stem: "Organic farming is becoming more popular in Ireland as consumers look for food that is produced in a more natural and environmentally friendly way.",
+    questionText: "In relation to organic farming, indicate if the following are true or false by placing a tick (✓) in the correct box. The first one has been done as an example.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "True / False / True / True / False", marks: 10, contextNote: "In order: (i) The use of synthetic chemical fertilisers is not allowed — True; (ii) Reduces the number of pollinators — False; (iii) Aims to improve soil health — True; (iv) Crop rotation is a common practice — True; (v) Genetically modified organisms (GMOs) are allowed — False. The scheme prints 1+1+2+2+4 for one to five correct answers.", group: {"claimMax":5,"perOption":1,"options":["True","False","True","True","False"],"perOptionSteps":[1,1,2,2,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q6",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-1","agsci-4-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q7", topicId: "agsci-4-1", additionalTopicIds: ["agsci-4-3-2"], conceptId: "dairy-breeding-cycle",
+    section: "A", questionRef: "2026 OL Q7",
+    stem: "Number of days: 283, 365, 21, 45.",
+    questionText: "Complete the breeding cycle of a dairy cow only using the number of days in the following list.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "365 / 21 / 45 / 283", marks: 10, contextNote: "In order: Calving interval (calving to calving) 365; Oestrus (heat) 21; Mating (in calf) 45; Mating to calving (gestation) 283. The scheme prints 2(2)+2(3).", group: {"claimMax":4,"perOption":2,"options":["365","21","45","283"],"perOptionSteps":[2,2,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q7",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q8ai", topicId: "agsci-2-2-3", conceptId: "soil-organisms",
+    section: "A", questionRef: "2026 OL Q8(a)(i)",
+    stem: "Healthy soils are full of biological activity. Living organisms play a key role in maintaining soil fertility and supporting plant growth.",
+    questionText: "Name two types of living organisms commonly found in soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Bacteria / fungi / actinomycetes / algae / earthworms / protozoa / nematodes / arachnids / insects / (burrowing) mammals", marks: 4, group: {"claimMax":2,"perOption":2,"options":["Bacteria","fungi","actinomycetes","algae","earthworms","protozoa","nematodes","arachnids","insects","(burrowing) mammals"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q8(a)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q8aii", topicId: "agsci-2-2-3", conceptId: "soil-organism-benefits",
+    section: "A", questionRef: "2026 OL Q8(a)(ii)",
+    stem: "Healthy soils are full of biological activity. Living organisms play a key role in maintaining soil fertility and supporting plant growth.",
+    questionText: "Explain two benefits that soil organisms provide for crops or pasture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Nutrient cycling / nutrient availability or organic matter degradation / improved soil structure / moisture retention / improved aeration or drainage / disease and pest management / nitrogen fixation", marks: 6, group: {"claimMax":2,"perOption":2,"options":["Nutrient cycling","nutrient availability or organic matter degradation","improved soil structure","moisture retention","improved aeration or drainage","disease and pest management","nitrogen fixation"],"perOptionSteps":[2,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q8(a)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-2","agsci-2-2-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q8bi", topicId: "agsci-1-2", additionalTopicIds: ["agsci-2-2-1"], conceptId: "soil-ph-glass-rod",
+    section: "A", questionRef: "2026 OL Q8(b)(i)",
+    stem: "A student carried out an investigation to determine the pH of the soil and used the following equipment: Deionised water, pH meter or pH paper, filter paper, soil sample, glass rod.",
+    questionText: "Outline the use of the glass rod in this investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To stir the mixture of soil and water", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q8(b)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-2","agsci-2-2-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q8bii", topicId: "agsci-1-2", additionalTopicIds: ["agsci-2-2-1"], conceptId: "soil-ph-filter-paper",
+    section: "A", questionRef: "2026 OL Q8(b)(ii)",
+    stem: "A student carried out an investigation to determine the pH of the soil and used the following equipment: Deionised water, pH meter or pH paper, filter paper, soil sample, glass rod.",
+    questionText: "Why did the student use the filter paper?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "To keep the soil in the paper and allow the water to pass through / clear water to see colour change", marks: 3, group: {"claimMax":1,"perOption":3,"options":["To keep the soil in the paper and allow the water to pass through","clear water to see colour change"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q8(b)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-2","agsci-2-2-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q8biii", topicId: "agsci-1-2", additionalTopicIds: ["agsci-2-2-1"], conceptId: "soil-ph-measurement",
+    section: "A", questionRef: "2026 OL Q8(b)(iii)",
+    stem: "A student carried out an investigation to determine the pH of the soil and used the following equipment: Deionised water, pH meter or pH paper, filter paper, soil sample, glass rod.",
+    questionText: "Describe how the student used the pH meter or pH paper.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Wash the probe of the meter with deionised water or remove a strip of pH paper / place the pH meter or pH paper into the water / read the pH meter or compare colour change to colour chart", marks: 4, group: {"claimMax":2,"perOption":2,"options":["Wash the probe of the meter with deionised water or remove a strip of pH paper","place the pH meter or pH paper into the water","read the pH meter or compare colour change to colour chart"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q8(b)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9a-route-gate-handling-escape", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Good handling facilities when moving cows to and from calving pens; Have two escape points in a calving pen.",
+    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9a-route-gate-handling-back", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Never turn your back on a freshly calved cow",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Good handling facilities when moving cows to and from calving pens; Never turn your back on a freshly calved cow.",
+    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Never turn your back on a freshly calved cow",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9a-route-gate-handling-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Keep dogs/children away from calving shed",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Good handling facilities when moving cows to and from calving pens; Keep dogs/children away from calving shed.",
+    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Keep dogs/children away from calving shed",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9a-route-gate-escape-back", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Have two escape points in a calving pen, Never turn your back on a freshly calved cow",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Have two escape points in a calving pen; Never turn your back on a freshly calved cow.",
+    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Have two escape points in a calving pen, Never turn your back on a freshly calved cow",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9a-route-gate-escape-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Have two escape points in a calving pen, Keep dogs/children away from calving shed",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Have two escape points in a calving pen; Keep dogs/children away from calving shed.",
+    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Have two escape points in a calving pen, Keep dogs/children away from calving shed",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9a-route-gate-back-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Never turn your back on a freshly calved cow; Keep dogs/children away from calving shed.",
+    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9a-route-handling-escape-back", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a) — Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen, Never turn your back on a freshly calved cow",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Good handling facilities when moving cows to and from calving pens; Have two escape points in a calving pen; Never turn your back on a freshly calved cow.",
+    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen, Never turn your back on a freshly calved cow",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9a-route-handling-escape-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a) — Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen, Keep dogs/children away from calving shed",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Good handling facilities when moving cows to and from calving pens; Have two escape points in a calving pen; Keep dogs/children away from calving shed.",
+    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen, Keep dogs/children away from calving shed",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9a-route-handling-back-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a) — Good handling facilities when moving cows to and from calving pens, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Good handling facilities when moving cows to and from calving pens; Never turn your back on a freshly calved cow; Keep dogs/children away from calving shed.",
+    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Good handling facilities when moving cows to and from calving pens, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9a-route-escape-back-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a) — Have two escape points in a calving pen, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Have two escape points in a calving pen; Never turn your back on a freshly calved cow; Keep dogs/children away from calving shed.",
+    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Have two escape points in a calving pen, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9bi-route-ab", topicId: "agsci-1-5", conceptId: "farm-safety-signs",
+    section: "A", questionRef: "2026 OL Q9(b)(i) — A, B",
+    stem: "You are on a farm with a group of farmers and you come across the following signs. Practice choice: A, B.",
+    questionText: "Explain the meaning of any two signs A, B or C to the group of farmers.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A – Beware of bull / B – Poisonous or toxic", marks: 5, contextNote: "Meanings of your two chosen signs. The first correct meaning earns 2 marks and the second 3.", group: {"claimMax":2,"perOption":2,"options":["A – Beware of bull","B – Poisonous or toxic"],"perOptionSteps":[2,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(b)(i) — A, B",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9bi-route-ac", topicId: "agsci-1-5", conceptId: "farm-safety-signs",
+    section: "A", questionRef: "2026 OL Q9(b)(i) — A, C",
+    stem: "You are on a farm with a group of farmers and you come across the following signs. Practice choice: A, C.",
+    questionText: "Explain the meaning of any two signs A, B or C to the group of farmers.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A – Beware of bull / C – Beware of machinery", marks: 5, contextNote: "Meanings of your two chosen signs. The first correct meaning earns 2 marks and the second 3.", group: {"claimMax":2,"perOption":2,"options":["A – Beware of bull","C – Beware of machinery"],"perOptionSteps":[2,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(b)(i) — A, C",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9bi-route-bc", topicId: "agsci-1-5", conceptId: "farm-safety-signs",
+    section: "A", questionRef: "2026 OL Q9(b)(i) — B, C",
+    stem: "You are on a farm with a group of farmers and you come across the following signs. Practice choice: B, C.",
+    questionText: "Explain the meaning of any two signs A, B or C to the group of farmers.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "B – Poisonous or toxic / C – Beware of machinery", marks: 5, contextNote: "Meanings of your two chosen signs. The first correct meaning earns 2 marks and the second 3.", group: {"claimMax":2,"perOption":2,"options":["B – Poisonous or toxic","C – Beware of machinery"],"perOptionSteps":[2,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(b)(i) — B, C",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q9bii", topicId: "agsci-1-5", conceptId: "farm-biosecurity",
+    section: "A", questionRef: "2026 OL Q9(b)(ii)",
+    stem: "You are on a farm with a group of farmers.",
+    questionText: "You also notice a sign saying ‘biosecurity measures in place’ to prevent diseases entering the farm. Outline two biosecurity measures the farmer could put in place on the farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Footbath / quarantine sick animals / closed herd / restrict visitors or any valid example", marks: 5, group: {"claimMax":2,"perOption":2,"options":["Footbath","quarantine sick animals","closed herd","restrict visitors or any valid example"],"perOptionSteps":[2,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q9(b)(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q10a-route-barley-white", topicId: "agsci-3-2", conceptId: "plant-lifecycles",
+    section: "A", questionRef: "2026 OL Q10(a) — Barley, White clover",
+    stem: "Practice choice: Barley, White clover.",
+    questionText: "Identify the correct lifecycle for any two of the plants below, by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Barley – annual / White clover – perennial", marks: 6, contextNote: "Tick the lifecycle of each of your two chosen plants, 2(3).", group: {"claimMax":2,"perOption":3,"options":["Barley – annual","White clover – perennial"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q10(a) — Barley, White clover",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q10a-route-barley-potato", topicId: "agsci-3-2", conceptId: "plant-lifecycles",
+    section: "A", questionRef: "2026 OL Q10(a) — Barley, Potato",
+    stem: "Practice choice: Barley, Potato.",
+    questionText: "Identify the correct lifecycle for any two of the plants below, by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Barley – annual / Potatoes – biennial", marks: 6, contextNote: "Tick the lifecycle of each of your two chosen plants, 2(3).", group: {"claimMax":2,"perOption":3,"options":["Barley – annual","Potatoes – biennial"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q10(a) — Barley, Potato",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q10a-route-white-potato", topicId: "agsci-3-2", conceptId: "plant-lifecycles",
+    section: "A", questionRef: "2026 OL Q10(a) — White clover, Potato",
+    stem: "Practice choice: White clover, Potato.",
+    questionText: "Identify the correct lifecycle for any two of the plants below, by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "White clover – perennial / Potatoes – biennial", marks: 6, contextNote: "Tick the lifecycle of each of your two chosen plants, 2(3).", group: {"claimMax":2,"perOption":3,"options":["White clover – perennial","Potatoes – biennial"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q10(a) — White clover, Potato",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q10b", topicId: "agsci-3-3-2", conceptId: "grassland-weed-control",
+    section: "A", questionRef: "2026 OL Q10(b)",
+    questionText: "Explain how a farmer would control weeds in a grass field.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Fertilising / topping / rotational grazing / reseeding / crop rotation / machine hygiene / certified seed / herbicide or spot spraying / hand rogueing or picking", marks: 4, group: {"claimMax":2,"perOption":2,"options":["Fertilising","topping","rotational grazing","reseeding","crop rotation","machine hygiene","certified seed","herbicide or spot spraying","hand rogueing or picking"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q10(b)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q11a", topicId: "agsci-4-1", conceptId: "monogastric-pig",
+    section: "A", questionRef: "2026 OL Q11(a)",
+    stem: "The diagram shows the digestive system of a pig.",
+    questionText: "Identify if a pig is a ruminant or a monogastric by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Monogastric", marks: 4, contextNote: "The scheme ticks Monogastric. The scheme labels both parts of Question 11 “(b)”. Its first row (4 marks, Monogastric) is the paper’s part (a)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q11(a)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-1"]), kind: "diagram",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q11b", topicId: "agsci-4-1", conceptId: "pig-digestive-system-labels",
+    section: "A", questionRef: "2026 OL Q11(b)",
+    stem: "The diagram shows the digestive system of a pig. Words: rectum, stomach, colon.",
+    questionText: "Label A, B and C on the diagram using the list of words below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Stomach", marks: 2, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "Colon", marks: 2, contextNote: "B." },
+    { id: "r-3", kind: "point", verbatim: "Rectum", marks: 2, contextNote: "C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q11(b)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-paper-pig-digestive",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-pig-digestive.png",
+          "srcHash": "3a672da7e5aefde74f7d54304165f42c",
+          "alt": "Original pig digestive-system diagram labelled oesophagus, duodenum, ileum and appendix, with pointers A, B and C on unlabelled organs.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 13 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Stomach","askedInThisQuestion":true},{"letter":"B","meaning":"Colon","askedInThisQuestion":true},{"letter":"C","meaning":"Rectum","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-2","agsci-1-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q12ai", topicId: "agsci-2-2-2", additionalTopicIds: ["agsci-1-3"], conceptId: "soil-composition-calculation",
+    section: "A", questionRef: "2026 OL Q12(a)(i)",
+    stem: "The chart shows the ideal soil composition for a sample of soil: Mineral 45%, Water 25%, Air 25%, Organic matter A.",
+    questionText: "Calculate A the % organic matter in the sample of soil.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "25 + 25 + 45 = 95", marks: null, contextNote: "Addition: 1 mark." },
+    { id: "r-2", kind: "criterion", verbatim: "100 – 95 = 5%", marks: null, contextNote: "Subtraction: 1 mark. Allow 4 marks for correct answer only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q12(a)(i)",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-2","agsci-1-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q12aii", topicId: "agsci-2-2-2", additionalTopicIds: ["agsci-1-2"], conceptId: "hand-texture-test",
+    section: "A", questionRef: "2026 OL Q12(a)(ii)",
+    questionText: "An Agricultural Science student wanted to determine the texture of a soil sample they got on a farm walk. Using the hand testing method, explain how the student determined the texture of the soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Get sample of dry soil / rub between fingers / note grittiness or description of / add water / try roll into a ball / try to form a thread / try to form thread into a ring / compare to texture flow chart or described result", marks: 6, group: {"claimMax":3,"perOption":2,"options":["Get sample of dry soil","rub between fingers","note grittiness or description of","add water","try roll into a ball","try to form a thread","try to form thread into a ring","compare to texture flow chart or described result"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q12(a)(ii)",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-2"]), kind: "diagram",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q12bi", topicId: "agsci-1-2", conceptId: "sedimentation-equipment",
+    section: "A", questionRef: "2026 OL Q12(b)(i)",
+    stem: "A student wanted to determine the texture of two soil samples using the sedimentation method. They set up an investigation using the following method.",
+    questionText: "Identify the pieces of equipment labelled A and B in the diagram.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "graduated cylinder", marks: 2, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "funnel", marks: 2, contextNote: "B." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q12(b)(i)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-paper-sedimentation",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-sedimentation.png",
+          "srcHash": "a8c5f798278de7ffc83ad4ed53fb5a76",
+          "alt": "Original sedimentation set-up: two cylinders with funnels and beakers of soil being poured, soil samples 1 and 2, and leader lines labelled A and B.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 15 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"graduated cylinder","askedInThisQuestion":true},{"letter":"B","meaning":"funnel","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-2","agsci-1-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q12bii", topicId: "agsci-2-2-2", additionalTopicIds: ["agsci-1-2"], conceptId: "sedimentation-water",
+    section: "A", questionRef: "2026 OL Q12(b)(ii)",
+    stem: "A student wanted to determine the texture of two soil samples using the sedimentation method. They set up an investigation using the following method.",
+    questionText: "Outline one reason why water is mixed with the soil at the beginning of the investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "To form a soil solution / to break up or separate the different sized particles", marks: 3, group: {"claimMax":1,"perOption":3,"options":["To form a soil solution","to break up or separate the different sized particles"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q12(b)(ii)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-2","agsci-1-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q12biii", topicId: "agsci-2-2-2", additionalTopicIds: ["agsci-1-3"], conceptId: "sedimentation-texture",
+    section: "A", questionRef: "2026 OL Q12(b)(iii)",
+    stem: "A student wanted to determine the texture of two soil samples using the sedimentation method. They set up an investigation using the following method.",
+    questionText: "Explain how the student could determine the texture of each soil sample.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Allow to settle / note the volume of sand, silt and clay in the graduated cylinder (using the graduations on the cylinder) / calculate the % of each compared to the overall volume / use the soil textural triangle", marks: 3, group: {"claimMax":1,"perOption":3,"options":["Allow to settle","note the volume of sand, silt and clay in the graduated cylinder (using the graduations on the cylinder)","calculate the % of each compared to the overall volume","use the soil textural triangle"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q12(b)(iii)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-2","agsci-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q13ai", topicId: "agsci-3-3-2", additionalTopicIds: ["agsci-3-1"], conceptId: "grass-growth-stages",
+    section: "B", questionRef: "2026 OL Q13(a)(i)",
+    stem: "Grass grows in different stages throughout the year. Farmers need to understand these growth stages to manage grazing, silage, and fertiliser properly.",
+    questionText: "Identify the three stages A, B and C in the growth cycle of a grass plant using the list of words in the table.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – Vegetative", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B – Elongation", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C – Reproductive", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q13(a)(i)",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q13aii", topicId: "agsci-3-3-3", conceptId: "silage-cutting-stage",
+    section: "B", questionRef: "2026 OL Q13(a)(ii)",
+    stem: "Grass grows in different stages throughout the year. Farmers need to understand these growth stages to manage grazing, silage, and fertiliser properly.",
+    questionText: "Identify which stage A, B or C is the best stage for cutting grass for silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A or vegetative", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q13(a)(ii)",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q13aiii", topicId: "agsci-3-3-3", conceptId: "silage-cutting-reason",
+    section: "B", questionRef: "2026 OL Q13(a)(iii)",
+    stem: "Part (ii): identify which stage A, B or C is the best stage for cutting grass for silage.",
+    questionText: "Outline one reason for your answer in part (ii).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "This is when the digestible sugars are the highest in plant / leafy part is more digestible", marks: 4, contextNote: "The scheme heading refers to “your answer in part (i)”; the paper asks for a reason for the answer to part (ii), the best stage for cutting silage.", group: {"claimMax":1,"perOption":4,"options":["This is when the digestible sugars are the highest in plant","leafy part is more digestible"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q13(a)(iii)",
+          "pages": [
+                18,
+                19
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-1","agsci-3-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q13aiv", topicId: "agsci-3-1", additionalTopicIds: ["agsci-3-3-2"], conceptId: "grass-growth-factors",
+    section: "B", questionRef: "2026 OL Q13(a)(iv)",
+    stem: "Grass grows in different stages throughout the year. Farmers need to understand these growth stages to manage grazing, silage, and fertiliser properly.",
+    questionText: "State two factors that affect how grass grows.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Sunlight / water / carbon dioxide (air) / nutrients (Nitrogen is key) / pH level / temperature / oxygen levels / soil compaction / grazing / rest period / sward composition", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Sunlight","water","carbon dioxide (air)","nutrients (Nitrogen is key)","pH level","temperature","oxygen levels","soil compaction","grazing","rest period","sward composition"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q13(a)(iv)",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q13bi", topicId: "agsci-3-3-3", conceptId: "silage-production-order",
+    section: "B", questionRef: "2026 OL Q13(b)(i)",
+    stem: "Step 1 is Fertilise the field.",
+    questionText: "A farmer wants to produce good quality silage. Place the following steps 1 to 5 in the correct order, to outline the production of good quality silage. Step 1 has been completed for you.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2 Mow the grass", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "4 Roll to compact", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "5 Cover the pit", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "3 Wilt for 24 hours", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q13(b)(i)",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-3","agsci-1-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q13bii", topicId: "agsci-3-3-3", additionalTopicIds: ["agsci-1-2"], conceptId: "silage-quality-tests",
+    section: "B", questionRef: "2026 OL Q13(b)(ii)",
+    questionText: "Identify two tests that determine the quality of silage by placing ticks (✓) in the correct two boxes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "pH / Colour", marks: 6, contextNote: "The scheme ticks pH and Colour.", group: {"claimMax":2,"perOption":3,"options":["pH","Colour"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q13(b)(ii)",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-2","agsci-3-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q13ci", topicId: "agsci-1-2", additionalTopicIds: ["agsci-3-3-2"], conceptId: "dry-matter-procedure",
+    section: "B", questionRef: "2026 OL Q13(c)(i)",
+    questionText: "Another test to determine the grass quality is to measure the dry matter (DM). A student carried out this test and took the photographs below of the steps. Complete the table below by placing the photographs (A, B, C and D) in the correct order of how the student carried out this investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1st step – C", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "2nd step – D", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "3rd step – A", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "4th step - B", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q13(c)(i)",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q13cii", topicId: "agsci-3-3-2", conceptId: "grass-measurement-benefits",
+    section: "B", questionRef: "2026 OL Q13(c)(ii)",
+    questionText: "Outline two benefits of measuring grass on farms.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Data driven approach to management (grazing or winter feed planning) / informed decision making (predicting feed requirements or accurate stocking rates) / cost reduction / best grass utilisation / identify areas for reseeding / environmental benefits", marks: 8, group: {"claimMax":2,"perOption":3,"options":["Data driven approach to management (grazing or winter feed planning)","informed decision making (predicting feed requirements or accurate stocking rates)","cost reduction","best grass utilisation","identify areas for reseeding","environmental benefits"],"perOptionSteps":[3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q13(c)(ii)",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q14ai-route-abc", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
+    section: "B", questionRef: "2026 OL Q14(a)(i) — A, B, C",
+    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep. Practice choice: A, B, C.",
+    questionText: "Identify any three sheep breeds found on their farm using the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – Texel", marks: 2, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "B – Border Leicester", marks: 2, contextNote: "B." },
+    { id: "r-3", kind: "point", verbatim: "C – Blackface mountain", marks: 2, contextNote: "C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q14(a)(i) — A, B, C",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q14ai-route-abd", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
+    section: "B", questionRef: "2026 OL Q14(a)(i) — A, B, D",
+    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep. Practice choice: A, B, D.",
+    questionText: "Identify any three sheep breeds found on their farm using the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – Texel", marks: 2, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "B – Border Leicester", marks: 2, contextNote: "B." },
+    { id: "r-3", kind: "point", verbatim: "D – Suffolk", marks: 2, contextNote: "D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q14(a)(i) — A, B, D",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q14ai-route-acd", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
+    section: "B", questionRef: "2026 OL Q14(a)(i) — A, C, D",
+    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep. Practice choice: A, C, D.",
+    questionText: "Identify any three sheep breeds found on their farm using the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – Texel", marks: 2, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "C – Blackface mountain", marks: 2, contextNote: "C." },
+    { id: "r-3", kind: "point", verbatim: "D – Suffolk", marks: 2, contextNote: "D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q14(a)(i) — A, C, D",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q14ai-route-bcd", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
+    section: "B", questionRef: "2026 OL Q14(a)(i) — B, C, D",
+    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep. Practice choice: B, C, D.",
+    questionText: "Identify any three sheep breeds found on their farm using the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B – Border Leicester", marks: 2, contextNote: "B." },
+    { id: "r-2", kind: "point", verbatim: "C – Blackface mountain", marks: 2, contextNote: "C." },
+    { id: "r-3", kind: "point", verbatim: "D – Suffolk", marks: 2, contextNote: "D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q14(a)(i) — B, C, D",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-1","agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q14aii", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-2"], conceptId: "hill-sheep-breed",
+    section: "B", questionRef: "2026 OL Q14(a)(ii)",
+    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep.",
+    questionText: "Identify one breed from part (i) that is most suitable for their hill flock.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Blackface mountain or C", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q14(a)(ii)",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q14aiii", topicId: "agsci-4-3-2", conceptId: "terminal-sires",
+    section: "B", questionRef: "2026 OL Q14(a)(iii)",
+    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep.",
+    questionText: "Rams A and D, are classed as terminal sires. Explain the underlined term, by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Male animal used to produce offspring destined for meat production", marks: 6, contextNote: "The scheme ticks this box." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q14(a)(iii)",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q14bi", topicId: "agsci-4-3-3", conceptId: "sheep-weaning-timing",
+    section: "B", questionRef: "2026 OL Q14(b)(i)",
+    stem: "The diagram shows the production through the seasons on a sheep farm. Analyse the diagram and answer the questions that follow.",
+    questionText: "Draw an X on the red line on the diagram above to show when weaning occurs.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct position of X where finishing is indicated.", marks: 6, contextNote: "The scheme accepts anywhere in the region shown on its diagram." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q14(b)(i)",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-scheme-weaning-region",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-scheme-weaning-region.png",
+          "srcHash": "a9eeee7855ee5efcfe209a2b144c4744",
+          "alt": "Official sheep production timeline (housing, mid-season lambing, finishing, finishing, breeding) with the accepted weaning region marked in yellow on the red line beneath the two finishing stages.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level marking scheme, PDF page 18 — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3","agsci-4-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q14bii", topicId: "agsci-4-3-3", additionalTopicIds: ["agsci-4-1"], conceptId: "pregnant-ewe-management",
+    section: "B", questionRef: "2026 OL Q14(b)(ii)",
+    stem: "Sally and Jess are sheep farmers. Headings: Feeding, Housing, Health.",
+    questionText: "Describe how you manage a pregnant ewe from mating to lambing under the headings:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Flushing (low to high plane of nutrition) / maintenance diet / steaming up – gradual increase of concentrates prior to lambing / mineral supplementation", marks: 3, contextNote: "Feeding.", group: {"claimMax":1,"perOption":3,"options":["Flushing (low to high plane of nutrition)","maintenance diet","steaming up – gradual increase of concentrates prior to lambing","mineral supplementation"]} },
+    { id: "r-2", kind: "anyN", verbatim: "good hygiene / dry bedding or slats / adequate lying and feeding space / good ventilation / group penning / house pre or during lambing / shear or dag before housing", marks: 3, contextNote: "Housing.", group: {"claimMax":1,"perOption":3,"options":["good hygiene","dry bedding or slats","adequate lying and feeding space","good ventilation","group penning","house pre or during lambing","shear or dag before housing"]} },
+    { id: "r-3", kind: "anyN", verbatim: "introduce concentrates prior to lambing to prevent twin lamb disease / dipping / vaccination or dosing / control lameness / pre-lambing mineral ration / calcium injection to treat milk fever / monitor BCS", marks: 3, contextNote: "Health.", group: {"claimMax":1,"perOption":3,"options":["introduce concentrates prior to lambing to prevent twin lamb disease","dipping","vaccination or dosing","control lameness","pre-lambing mineral ration","calcium injection to treat milk fever","monitor BCS"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q14(b)(ii)",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-1","agsci-3-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q14ci", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-3-3-2"], conceptId: "lowland-grazing-system",
+    section: "B", questionRef: "2026 OL Q14(c)(i)",
+    stem: "Managing the grazing land for the lowland flock is very different to managing grazing for the hill flock.",
+    questionText: "Draw a labelled diagram of a named suitable grazing system that would suit their lowland flock.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Named grazing system – rotational or paddock or strip / block / creep", marks: null, contextNote: "Named system: 3 marks." },
+    { id: "r-2", kind: "criterion", verbatim: "Correct diagram", marks: null, contextNote: "Diagram = 0, 2 or 4: multiple paddocks for 2 marks; multiple paddocks and indication of direction for 4 marks." },
+    { id: "r-3", kind: "criterion", verbatim: "Correct labels", marks: null, contextNote: "Labels = 3(1). Maximum ten for name, diagram and labels." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q14(c)(i)",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q14cii", topicId: "agsci-4-3-1", conceptId: "virtual-fencing",
+    section: "B", questionRef: "2026 OL Q14(c)(ii)",
+    questionText: "Managing the grazing area of the hill flock is very difficult so Jess carried out research on the different ways to manage the sheep. She found new technology called virtual fencing. This technology involves placing a collar on the animal and then you can operate where they can graze from your smart phone. Outline one advantage and one disadvantage of using this technology.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Reduced labour or no physical fencing required / increased grazing flexibility or precision grazing or pasture optimisation / enhanced livestock welfare or tracking / environmental or eco-system protection", marks: 4, contextNote: "Advantage.", group: {"claimMax":1,"perOption":4,"options":["Reduced labour or no physical fencing required","increased grazing flexibility or precision grazing or pasture optimisation","enhanced livestock welfare or tracking","environmental or eco-system protection"]} },
+    { id: "r-2", kind: "anyN", verbatim: "High upfront costs / reliance on technology (batteries, connectivity) / potential animal welfare concerns (stress from collars/stimuli) / need for ongoing management / legal and liability risks / training period required (to associate audio cue with the boundary) / other animals can enter", marks: 4, contextNote: "Disadvantage.", group: {"claimMax":1,"perOption":4,"options":["High upfront costs","reliance on technology (batteries, connectivity)","potential animal welfare concerns (stress from collars/stimuli)","need for ongoing management","legal and liability risks","training period required (to associate audio cue with the boundary)","other animals can enter"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q14(c)(ii)",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q15ai", topicId: "agsci-2-1", conceptId: "soil-horizons",
+    section: "B", questionRef: "2026 OL Q15(a)(i)",
+    stem: "The diagram below shows how soils are formed over time. Words: Parent rock, Top soil, Subsoil, Bedrock.",
+    questionText: "Identify each horizon (a, b, c and d) using the list of words in the table below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Top soil", marks: 2, contextNote: "a." },
+    { id: "r-2", kind: "point", verbatim: "Subsoil", marks: 2, contextNote: "b." },
+    { id: "r-3", kind: "point", verbatim: "Parent rock", marks: 2, contextNote: "c." },
+    { id: "r-4", kind: "point", verbatim: "Bedrock", marks: 2, contextNote: "d." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q15(a)(i)",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q15aii", topicId: "agsci-2-1", conceptId: "soil-formation",
+    section: "B", questionRef: "2026 OL Q15(a)(ii)",
+    stem: "The diagram below shows how soils are formed over time.",
+    questionText: "Using the diagram, explain how soil is formed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Soil forms slowly from the breakdown of rocks (parent material) / by weathering (physical, chemical, biological) / colonisation by organisms / the accumulation of organic matter from dead plants and animals / influenced by climate or topography or time", marks: 6, group: {"claimMax":2,"perOption":2,"options":["Soil forms slowly from the breakdown of rocks (parent material)","by weathering (physical, chemical, biological)","colonisation by organisms","the accumulation of organic matter from dead plants and animals","influenced by climate or topography or time"],"perOptionSteps":[2,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q15(a)(ii)",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-1","agsci-2-2-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q15aiii", topicId: "agsci-2-1", additionalTopicIds: ["agsci-2-2-2"], conceptId: "topsoil-features",
+    section: "B", questionRef: "2026 OL Q15(a)(iii)",
+    stem: "The diagram below shows how soils are formed over time.",
+    questionText: "Outline one feature of horizon a.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Dark colour / rich in organic matter or higher CEC / crumbly texture or well aggregated structure / lots of micro-organisms or roots / balanced water or air capacity", marks: 6, group: {"claimMax":1,"perOption":6,"options":["Dark colour","rich in organic matter or higher CEC","crumbly texture or well aggregated structure","lots of micro-organisms or roots","balanced water or air capacity"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q15(a)(iii)",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q15bi", topicId: "agsci-2-3", conceptId: "poaching-definition",
+    section: "B", questionRef: "2026 OL Q15(b)(i)",
+    stem: "Springhill Farm is a mixed farm in County Laois. The farm has dairy cows and tillage, with some grassland fields used for silage. Recently, the farmer noticed that: cows are poaching the land in wet weather; grass growth is poor in some paddocks; soil tests show low organic matter and poor drainage in certain areas. The farmer plans to aerate compacted soils and spread farmyard manure after the second silage cut. [The term underlined on the paper is: poaching]",
+    questionText: "Identify the meaning of the underlined term by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Damage caused to land by prolonged livestock grazing in wet conditions, which creates compacted, waterlogged soils", marks: 4, contextNote: "The scheme ticks this box." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q15(b)(i)",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q15bii", topicId: "agsci-2-3", conceptId: "case-study-soil-problems",
+    section: "B", questionRef: "2026 OL Q15(b)(ii)",
+    stem: "Springhill Farm is a mixed farm in County Laois. The farm has dairy cows and tillage, with some grassland fields used for silage. Recently, the farmer noticed that: cows are poaching the land in wet weather; grass growth is poor in some paddocks; soil tests show low organic matter and poor drainage in certain areas. The farmer plans to aerate compacted soils and spread farmyard manure after the second silage cut.",
+    questionText: "From the case study, name two problems the farmer has with the soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Poor drainage / low organic matter / poor growth / compacted soil / poached land", marks: 4, group: {"claimMax":2,"perOption":2,"options":["Poor drainage","low organic matter","poor growth","compacted soil","poached land"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q15(b)(ii)",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q15biii", topicId: "agsci-2-2-2", conceptId: "compaction-grass-growth",
+    section: "B", questionRef: "2026 OL Q15(b)(iii)",
+    stem: "Springhill Farm is a mixed farm in County Laois. The farm has dairy cows and tillage, with some grassland fields used for silage. Recently, the farmer noticed that: cows are poaching the land in wet weather; grass growth is poor in some paddocks; soil tests show low organic matter and poor drainage in certain areas. The farmer plans to aerate compacted soils and spread farmyard manure after the second silage cut.",
+    questionText: "Explain how compaction can affect grass growth.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Decreased yield / poor root penetration / reduced drainage / reduced aeration / decreased nutrient uptake", marks: 6, group: {"claimMax":1,"perOption":6,"options":["Decreased yield","poor root penetration","reduced drainage","reduced aeration","decreased nutrient uptake"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q15(b)(iii)",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-3","agsci-4-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q15biv", topicId: "agsci-2-3", additionalTopicIds: ["agsci-4-3-1"], conceptId: "drainage-benefits",
+    section: "B", questionRef: "2026 OL Q15(b)(iv)",
+    stem: "Springhill Farm is a mixed farm in County Laois. The farm has dairy cows and tillage, with some grassland fields used for silage. Recently, the farmer noticed that: cows are poaching the land in wet weather; grass growth is poor in some paddocks; soil tests show low organic matter and poor drainage in certain areas. The farmer plans to aerate compacted soils and spread farmyard manure after the second silage cut.",
+    questionText: "Suggest two ways that improving soil drainage can benefit both the soil and the dairy cows.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Soils: Improved root growth / higher biological activity / increased nutrient update or higher plant yields / increased aeration or temperature or structure / reduced compaction / Cows: extended grazing season / more grass available / reduced lameness rates / lower SCC / higher grass DMI or increased milk yield / reduced fluke or parasite infection", marks: 10, contextNote: "Two benefits covering both the soil and the cows: the first five options are the scheme’s soil benefits, the rest its cow benefits. The scheme prints 4+6.", group: {"claimMax":2,"perOption":4,"options":["Soils: Improved root growth","higher biological activity","increased nutrient update or higher plant yields","increased aeration or temperature or structure","reduced compaction","Cows: extended grazing season","more grass available","reduced lameness rates","lower SCC","higher grass DMI or increased milk yield","reduced fluke or parasite infection"],"perOptionSteps":[4,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q15(b)(iv)",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q15c", topicId: "agsci-2-3", conceptId: "environmental-slurry-spreading",
+    section: "B", questionRef: "2026 OL Q15(c)",
+    questionText: "Sorcha was researching different methods of slurry spreading to see which one would best suit her farm. Identify which machine A or B spreads slurry in a more environmentally friendly way and give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A", marks: 1, contextNote: "Machine A." },
+    { id: "r-2", kind: "anyN", verbatim: "places the slurry on the soil reducing greenhouse gas emissions / reducing plant contamination / better uptake of nutrients / reduced run-off or eutrophication", marks: 5, contextNote: "Reason.", group: {"claimMax":1,"perOption":5,"options":["places the slurry on the soil reducing greenhouse gas emissions","reducing plant contamination","better uptake of nutrients","reduced run-off or eutrophication"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q15(c)",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q15di", topicId: "agsci-1-2", conceptId: "slurry-trial-control",
+    section: "B", questionRef: "2026 OL Q15(d)(i)",
+    stem: "Teagasc investigated different methods of slurry spreading. On day 1, they set up the investigation as follows; Field 1 - no slurry. Field 2 - spread using a trailing shoe. Field 3 - spread using a dribble bar. Field 4 - spread using a splash plate. On day 21, cows were introduced and grazed their preferred field. The graph shows the amount of grass left after grazing in each of the four fields: no slurry 150, trailing shoe 250, dribble bar 300, splash plate 550 kg DM/ha.",
+    questionText: "Explain why Teagasc included a field with no slurry in the investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Control", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q15(d)(i)",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-3","agsci-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q15dii", topicId: "agsci-1-3", additionalTopicIds: ["agsci-2-3"], conceptId: "slurry-trial-preference",
+    section: "B", questionRef: "2026 OL Q15(d)(ii)",
+    stem: "Teagasc investigated different methods of slurry spreading. On day 1, they set up the investigation as follows; Field 1 - no slurry. Field 2 - spread using a trailing shoe. Field 3 - spread using a dribble bar. Field 4 - spread using a splash plate. On day 21, cows were introduced and grazed their preferred field. The graph shows the amount of grass left after grazing in each of the four fields: no slurry 150, trailing shoe 250, dribble bar 300, splash plate 550 kg DM/ha.",
+    questionText: "Identify which one of the three methods of slurry spreading did the cows prefer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Trailing shoe or Field 2", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q15(d)(ii)",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16ai", topicId: "agsci-4-2", conceptId: "calf-breed-identification",
+    section: "B", questionRef: "2026 OL Q16(a)(i)",
+    stem: "Aoife was a young beef farmer who purchased 10 three-week-old beef calves to rear to weanling stage.",
+    questionText: "Identify the breeds A and B of calves that she bought using the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – Aberdeen Angus", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B – Hereford or Hereford x Friesian or black whitehead", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(a)(i)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16aii", topicId: "agsci-4-3-1", conceptId: "calf-origin",
+    section: "B", questionRef: "2026 OL Q16(a)(ii)",
+    stem: "Aoife was a young beef farmer who purchased 10 three-week-old beef calves to rear to weanling stage.",
+    questionText: "State if these calves are more likely to have come from a dairy or beef farm by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dairy", marks: 1, contextNote: "The scheme ticks Dairy." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(a)(ii)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16aiii", topicId: "agsci-4-3-1", conceptId: "calf-ear-tags",
+    section: "B", questionRef: "2026 OL Q16(a)(iii)",
+    stem: "Aoife was a young beef farmer who purchased 10 three-week-old beef calves to rear to weanling stage.",
+    questionText: "Outline why each calf has its own ear tag with a unique number.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Identification / traceability / record keeping or genetics / legal requirement", marks: 2, group: {"claimMax":1,"perOption":2,"options":["Identification","traceability","record keeping or genetics","legal requirement"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(a)(iii)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16aiv", topicId: "agsci-4-3-3", conceptId: "buying-calves-directly",
+    section: "B", questionRef: "2026 OL Q16(a)(iv)",
+    stem: "Aoife was a young beef farmer who purchased 10 three-week-old beef calves to rear to weanling stage.",
+    questionText: "Aoife bought the calves directly from two different farmers and not through the mart. Outline two advantages of buying calves directly.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Reduced disease risk or digestive disorders / less stress or calmer temperament / know stock ancestors / trusted source / known vaccination or medical history / more cost effective", marks: 8, group: {"claimMax":2,"perOption":2,"options":["Reduced disease risk or digestive disorders","less stress or calmer temperament","know stock ancestors","trusted source","known vaccination or medical history","more cost effective"],"perOptionSteps":[2,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(a)(iv)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16av", topicId: "agsci-4-3-3", conceptId: "calf-buying-characteristics",
+    section: "B", questionRef: "2026 OL Q16(a)(v)",
+    stem: "Aoife was a young beef farmer who purchased 10 three-week-old beef calves to rear to weanling stage.",
+    questionText: "State two characteristics Aoife would look for in a calf when buying them.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "No swollen naval / no discharge from mouth or nose / clean or shiny coat or no scour / alert or healthy eyes or erect ears / feeding well / not breathing heavy / vaccination history / even gait (not lame) or straight back / correct weight / good conformation", marks: 8, group: {"claimMax":2,"perOption":2,"options":["No swollen naval","no discharge from mouth or nose","clean or shiny coat or no scour","alert or healthy eyes or erect ears","feeding well","not breathing heavy","vaccination history","even gait (not lame) or straight back","correct weight","good conformation"],"perOptionSteps":[2,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(a)(v)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16bi", topicId: "agsci-4-3-3", conceptId: "sorting-calves",
+    section: "B", questionRef: "2026 OL Q16(b)(i)",
+    stem: "Aoife had to sort the calves into two pens when they arrived to ensure they reached maximum performance.",
+    questionText: "Advise Aoife on the best way to sort the calves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "By age / by size / group by rearing method / valid grouping / isolate sick calves", marks: 2, group: {"claimMax":1,"perOption":2,"options":["By age","by size","group by rearing method","valid grouping","isolate sick calves"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(b)(i)",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16bii", topicId: "agsci-4-3-3", conceptId: "calf-feeding-plan",
+    section: "B", questionRef: "2026 OL Q16(b)(ii)",
+    stem: "Aoife had to sort the calves into two pens when they arrived to ensure they reached maximum performance.",
+    questionText: "Describe the feeding plan for the calves until weaning.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Milk or milk replacer / concentrates / silage or hay or straw / access to fresh water", marks: 8, group: {"claimMax":2,"perOption":2,"options":["Milk or milk replacer","concentrates","silage or hay or straw","access to fresh water"],"perOptionSteps":[2,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(b)(ii)",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16biii", topicId: "agsci-4-3-3", conceptId: "calf-bedding",
+    section: "B", questionRef: "2026 OL Q16(b)(iii)",
+    stem: "Aoife had to sort the calves into two pens when they arrived to ensure they reached maximum performance.",
+    questionText: "Aoife was researching straw bedding and slats as different types of housing for the calves. Outline one advantage of each type of bedding for the calves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Straw bedding – increased welfare or more comfortable or less injury / warm / reduced draft or respiratory disease / Slats – good hygiene / reduced workload / lower humidity or better air quality / space efficiency", marks: 8, contextNote: "One advantage of straw bedding (first three options) and one of slats (last four). Two advantages of the same bedding earn one award. The scheme prints 2+6.", group: {"claimMax":2,"perOption":2,"options":["Straw bedding – increased welfare or more comfortable or less injury","warm","reduced draft or respiratory disease","Slats – good hygiene","reduced workload","lower humidity or better air quality","space efficiency"],"perOptionSteps":[2,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(b)(iii)",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16ci", topicId: "agsci-4-3-3", conceptId: "calf-pneumonia",
+    section: "B", questionRef: "2026 OL Q16(c)(i)",
+    stem: "Aoife noticed one of the calves not coming for their milk. The calf was away from the others, breathing heavily, had a runny nose and was coughing.",
+    questionText: "Identify the disease the calf is likely to be suffering from by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pneumonia", marks: 3, contextNote: "The scheme ticks Pneumonia." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(c)(i)",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16cii", topicId: "agsci-4-3-3", conceptId: "pneumonia-treatment",
+    section: "B", questionRef: "2026 OL Q16(c)(ii)",
+    stem: "Aoife noticed one of the calves not coming for their milk. The calf was away from the others, breathing heavily, had a runny nose and was coughing. The disease is pneumonia.",
+    questionText: "Briefly describe the treatment for this disease.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Antibiotics / deep straw bedding / eliminate draughts / calf jacket or infra- red lamp / hydration or feeding support", marks: 3, group: {"claimMax":1,"perOption":3,"options":["Antibiotics","deep straw bedding","eliminate draughts","calf jacket or infra- red lamp","hydration or feeding support"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(c)(ii)",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16ciii", topicId: "agsci-4-3-3", conceptId: "pneumonia-prevention",
+    section: "B", questionRef: "2026 OL Q16(c)(iii)",
+    stem: "Aoife noticed one of the calves not coming for their milk. The calf was away from the others, breathing heavily, had a runny nose and was coughing. The disease is pneumonia.",
+    questionText: "Outline one way this disease could be prevented.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ensure good quality colostrum / improved hygiene / good ventilation / avoid temperature fluctuations / draught free / isolate new stock / vaccination / stress or group management / isolate all newly purchased calves", marks: 3, group: {"claimMax":1,"perOption":3,"options":["Ensure good quality colostrum","improved hygiene","good ventilation","avoid temperature fluctuations","draught free","isolate new stock","vaccination","stress or group management","isolate all newly purchased calves"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(c)(iii)",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16di", topicId: "agsci-4-3-1", conceptId: "calf-weaning-weight",
+    section: "B", questionRef: "2026 OL Q16(d)(i)",
+    stem: "Aoife was a young beef farmer who purchased 10 three-week-old beef calves to rear to weanling stage.",
+    questionText: "Identify the target weaning weight for Aoife’s calves by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "90 kg", marks: 3, contextNote: "The scheme ticks 90 kg." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(d)(i)",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-1","agsci-1-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q16dii", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-1-3"], conceptId: "calf-sale-calculation",
+    section: "B", questionRef: "2026 OL Q16(d)(ii)",
+    stem: "Part (i): the target weaning weight is 90 kg.",
+    questionText: "Aoife brought the calves to the mart and got €5.50 per kg for her 10 calves. Using your weaning weight from part (i), calculate how much money she received for her 10 calves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "90 x 5.50 x 10", marks: 2, contextNote: "Correct calculation: allow 2 marks for correct calculation with incorrect answer." },
+    { id: "r-2", kind: "point", verbatim: "€4,950", marks: 4, contextNote: "Correct answer: allow 4 marks for correct answer without calculation or calculation using the wrong value." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q16(d)(ii)",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q17ai", topicId: "agsci-2-3", conceptId: "protected-urea",
+    section: "B", questionRef: "2026 OL Q17(a)(i)",
+    stem: "Read the article and answer the questions that follow. Using technology to reduce our carbon footprint. AgNav is a free online tool developed to calculate the carbon footprint and measure sustainability of farms. Teagasc climate advisers visited a farm to review AgNav figures and put plans in place to further reduce the farm’s carbon footprint. In 2023, the farmer was using 68% protected urea and 32% CAN fertiliser, had all perennial ryegrass swards, and housed his stock for 5.5 months of the year. (Adapted from Farmers Journal, 2024) [The term underlined on the paper is: protected urea]",
+    questionText: "Identify the meaning of the underlined term by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fertiliser that is protected with a urease inhibitor and reduces greenhouse gas emissions and ammonia", marks: 2, contextNote: "The scheme ticks this box." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q17(a)(i)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-3","agsci-3-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q17aii", topicId: "agsci-2-3", additionalTopicIds: ["agsci-3-3-2"], conceptId: "reducing-carbon-footprint",
+    section: "B", questionRef: "2026 OL Q17(a)(ii)",
+    stem: "Read the article and answer the questions that follow. Using technology to reduce our carbon footprint. AgNav is a free online tool developed to calculate the carbon footprint and measure sustainability of farms. Teagasc climate advisers visited a farm to review AgNav figures and put plans in place to further reduce the farm’s carbon footprint. In 2023, the farmer was using 68% protected urea and 32% CAN fertiliser, had all perennial ryegrass swards, and housed his stock for 5.5 months of the year. (Adapted from Farmers Journal, 2024)",
+    questionText: "Outline two things farmers could do to further reduce their carbon footprint.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Use LESS slurry spreading or spread more slurry in springtime / organic farming practices / extend the grazing season / less machinery use / plant hedgerows / reduce soil compaction / sow multi-species swards / sow buffer or riparian zones / test soils regularly / improve livestock or breeding efficiency / install renewable energy or any valid example", marks: 8, group: {"claimMax":2,"perOption":3,"options":["Use LESS slurry spreading or spread more slurry in springtime","organic farming practices","extend the grazing season","less machinery use","plant hedgerows","reduce soil compaction","sow multi-species swards","sow buffer or riparian zones","test soils regularly","improve livestock or breeding efficiency","install renewable energy or any valid example"],"perOptionSteps":[3,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q17(a)(ii)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q17aiii", topicId: "agsci-2-3", conceptId: "carbon-footprint-importance",
+    section: "B", questionRef: "2026 OL Q17(a)(iii)",
+    stem: "Read the article and answer the questions that follow. Using technology to reduce our carbon footprint. AgNav is a free online tool developed to calculate the carbon footprint and measure sustainability of farms. Teagasc climate advisers visited a farm to review AgNav figures and put plans in place to further reduce the farm’s carbon footprint. In 2023, the farmer was using 68% protected urea and 32% CAN fertiliser, had all perennial ryegrass swards, and housed his stock for 5.5 months of the year. (Adapted from Farmers Journal, 2024)",
+    questionText: "Outline why it is important for farmers to calculate their carbon footprint.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Identify inefficiencies / access to grants or compliance / future proof business or future sustainability / informed decision making (monitoring emissions) / profitability and input savings / protect the local environment", marks: 4, group: {"claimMax":1,"perOption":4,"options":["Identify inefficiencies","access to grants or compliance","future proof business or future sustainability","informed decision making (monitoring emissions)","profitability and input savings","protect the local environment"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q17(a)(iii)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q17bi", topicId: "agsci-3-3-1", conceptId: "seedbed-preparation-order",
+    section: "B", questionRef: "2026 OL Q17(b)(i)",
+    questionText: "Complete the table below by placing the following seedbed preparation pictures (A, B, C and D) in correct order for sowing of a crop.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "B / C / D / A", marks: 12, contextNote: "Correct order: B / C / D / A. The scheme prints 2+2+4+4 for one to four correct positions.", group: {"claimMax":4,"perOption":2,"options":["B","C","D","A"],"perOptionSteps":[2,2,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q17(b)(i)",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q17bii", topicId: "agsci-1-5", conceptId: "tillage-machinery-safety",
+    section: "B", questionRef: "2026 OL Q17(b)(ii)",
+    stem: "The machines in part (i) are seedbed preparation and sowing machines A, B, C and D.",
+    questionText: "Outline one safety measure taken when working with any of the machines shown in part (i) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Be careful when working near PTO / don’t stand at back of machine when moving / turn off machine when handling any part of machine or any valid example", marks: 2, group: {"claimMax":1,"perOption":2,"options":["Be careful when working near PTO","don’t stand at back of machine when moving","turn off machine when handling any part of machine or any valid example"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q17(b)(ii)",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-1","agsci-1-2","agsci-3-3-1"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q17c", topicId: "agsci-1-1", additionalTopicIds: ["agsci-1-2","agsci-3-3-1"], conceptId: "drought-germination-investigation",
+    section: "B", questionRef: "2026 OL Q17(c)",
+    questionText: "During sowing, the weather was very dry with very little rain. You wanted to investigate if drought conditions had any effect on the germination of the seed. Describe with the aid of a labelled diagram how you would carry out this investigation under the following headings:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 22,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Drought conditions will reduce the germination rate (as there is very little water)", marks: 3, contextNote: "Hypothesis." },
+    { id: "r-2", kind: "point", verbatim: "Amount of rain or water", marks: 3, contextNote: "Independent variable." },
+    { id: "r-3", kind: "point", verbatim: "Germination rate", marks: 3, contextNote: "Dependent variable." },
+    { id: "r-4", kind: "anyN", verbatim: "Same seed / same amount of seed / same soil type / same seed tray", marks: 3, contextNote: "Control variable.", group: {"claimMax":1,"perOption":3,"options":["Same seed","same amount of seed","same soil type","same seed tray"]} },
+    { id: "r-5", kind: "anyN", verbatim: "Plant same no of seeds (e.g. 100) in trays with same soil / add a lot of water to one tray and very little water to the other tray / place trays in a well-lit area / leave to germinate / record amount of seeds germinated", marks: 7, contextNote: "Method: two points, 3+4. The scheme prints no separate mark for the labelled diagram.", group: {"claimMax":2,"perOption":3,"options":["Plant same no of seeds (e.g. 100) in trays with same soil","add a lot of water to one tray and very little water to the other tray","place trays in a well-lit area","leave to germinate","record amount of seeds germinated"],"perOptionSteps":[3,4]} },
+    { id: "r-6", kind: "point", verbatim: "Seeds tray that had little water had reduced germination", marks: 3, contextNote: "Result." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q17(c)",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q18ai", topicId: "agsci-4-3-2", conceptId: "milk-quality-factors",
+    section: "B", questionRef: "2026 OL Q18(a)(i)",
+    stem: "Katie and Tom are dairy farmers in Co. Limerick. They want to improve the quality of milk on their farm.",
+    questionText: "State two factors that affect the quality of milk produced on a dairy farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Feed quality / feed type / genetics or breed / stage of lactation / age of cow / hygiene or storage management / disease", marks: 8, group: {"claimMax":2,"perOption":2,"options":["Feed quality","feed type","genetics or breed","stage of lactation","age of cow","hygiene or storage management","disease"],"perOptionSteps":[2,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q18(a)(i)",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q18aii", topicId: "agsci-4-3-3", conceptId: "clean-safe-milk",
+    section: "B", questionRef: "2026 OL Q18(a)(ii)",
+    stem: "Katie and Tom are dairy farmers in Co. Limerick. They want to improve the quality of milk on their farm.",
+    questionText: "Give two practices a farmer should carry out to ensure milk is clean and safe before collection.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Wash and dry udder / check for mastitis or CMT / observe withdrawal period / iodine or spray on teat / clean milking parlour / milk filter or reduced sedimentation / cool the milk adequately / store at correct temperature", marks: 8, group: {"claimMax":2,"perOption":2,"options":["Wash and dry udder","check for mastitis or CMT","observe withdrawal period","iodine or spray on teat","clean milking parlour","milk filter or reduced sedimentation","cool the milk adequately","store at correct temperature"],"perOptionSteps":[2,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q18(a)(ii)",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q18aiii", topicId: "agsci-4-3-3", conceptId: "cooling-milk",
+    section: "B", questionRef: "2026 OL Q18(a)(iii)",
+    stem: "Katie and Tom are dairy farmers in Co. Limerick. They want to improve the quality of milk on their farm.",
+    questionText: "Explain why it is important to cool milk quickly after milking.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "To reduce bacteria multiplication or spoilage / maintain quality or prolong shelf life", marks: 4, group: {"claimMax":1,"perOption":4,"options":["To reduce bacteria multiplication or spoilage","maintain quality or prolong shelf life"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q18(a)(iii)",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q18aiv", topicId: "agsci-4-3-3", conceptId: "high-tbc-causes",
+    section: "B", questionRef: "2026 OL Q18(a)(iv)",
+    stem: "Katie and Tom are dairy farmers in Co. Limerick. They want to improve the quality of milk on their farm.",
+    questionText: "Identify which two of the following contribute to a high Total Bacterial Count (TBC) in milk, by placing ticks (✓) in the correct boxes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Poor Hygiene / Udder infection", marks: 4, contextNote: "The scheme ticks these two boxes, 1+3.", group: {"claimMax":2,"perOption":1,"options":["Poor Hygiene","Udder infection"],"perOptionSteps":[1,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q18(a)(iv)",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-3"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q18av", topicId: "agsci-4-3-3", conceptId: "milk-contamination",
+    section: "B", questionRef: "2026 OL Q18(a)(v)",
+    stem: "Katie and Tom are dairy farmers in Co. Limerick. They want to improve the quality of milk on their farm.",
+    questionText: "List two ways that milk can become contaminated.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Dirt or faulty filters or poor hygienic practices / inadequate cooling / iodine or detergent residues or teat disinfectant run-off or dosing products / excess water / sediment / antibiotics / infected cows / spoiled feed or bedding", marks: 8, group: {"claimMax":2,"perOption":2,"options":["Dirt or faulty filters or poor hygienic practices","inadequate cooling","iodine or detergent residues or teat disinfectant run-off or dosing products","excess water","sediment","antibiotics","infected cows","spoiled feed or bedding"],"perOptionSteps":[2,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q18(a)(v)",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-4","agsci-1-3","agsci-4-3-2"]), kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q18bi", topicId: "agsci-1-4", additionalTopicIds: ["agsci-1-3","agsci-4-3-2"], conceptId: "scc-milk-yield-graph",
+    section: "B", questionRef: "2026 OL Q18(b)(i)",
+    stem: "Katie and Tom monitored milk yield and somatic cell count (SCC) over three months to check herd health. April: SCC 180,000 cells/ml, milk yield 1,200 litres/day; May: 240,000, 1,100; June: 300,000, 1,000. (Adapted from Teagasc, 2025)",
+    questionText: "Draw a trend graph with Somatic Cell Count (SCC) on the X-axis and milk yield on the y-axis.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct Y-axis – 3m", marks: null, contextNote: "Y-axis: 3 marks." },
+    { id: "r-2", kind: "criterion", verbatim: "Correct point – 3(1)m", marks: null, contextNote: "Three points at 1 mark each." },
+    { id: "r-3", kind: "criterion", verbatim: "Correct line – 3m", marks: null, contextNote: "Line: 3 marks. Maximum nine." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q18(b)(i)",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-1"]), kind: "diagram",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q18bii-route-abc", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2026 OL Q18(b)(ii) — A, B, C",
+    stem: "Words: Quarter, Connective tissue septum, Teat, Median suspensory ligament. Practice choice: A, B, C.",
+    questionText: "Identify any three parts labelled A, B, C and D of the udder using the list of words below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – teat", marks: 3, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "B – quarter", marks: 3, contextNote: "B." },
+    { id: "r-3", kind: "point", verbatim: "C – median suspensory ligament", marks: 3, contextNote: "C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q18(b)(ii) — A, B, C",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-paper-udder",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-udder.png",
+          "srcHash": "66075871ddb7f88e952c3829ff7f9301",
+          "alt": "Original cut-away udder diagram with arrows labelled A, B, C and D.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 35 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"teat","askedInThisQuestion":true},{"letter":"B","meaning":"quarter","askedInThisQuestion":true},{"letter":"C","meaning":"median suspensory ligament","askedInThisQuestion":true},{"letter":"D","meaning":"connective tissue septum","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-1"]), kind: "diagram",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q18bii-route-abd", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2026 OL Q18(b)(ii) — A, B, D",
+    stem: "Words: Quarter, Connective tissue septum, Teat, Median suspensory ligament. Practice choice: A, B, D.",
+    questionText: "Identify any three parts labelled A, B, C and D of the udder using the list of words below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – teat", marks: 3, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "B – quarter", marks: 3, contextNote: "B." },
+    { id: "r-3", kind: "point", verbatim: "D – connective tissue septum", marks: 3, contextNote: "D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q18(b)(ii) — A, B, D",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-paper-udder",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-udder.png",
+          "srcHash": "66075871ddb7f88e952c3829ff7f9301",
+          "alt": "Original cut-away udder diagram with arrows labelled A, B, C and D.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 35 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"teat","askedInThisQuestion":true},{"letter":"B","meaning":"quarter","askedInThisQuestion":true},{"letter":"C","meaning":"median suspensory ligament","askedInThisQuestion":false},{"letter":"D","meaning":"connective tissue septum","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-1"]), kind: "diagram",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q18bii-route-acd", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2026 OL Q18(b)(ii) — A, C, D",
+    stem: "Words: Quarter, Connective tissue septum, Teat, Median suspensory ligament. Practice choice: A, C, D.",
+    questionText: "Identify any three parts labelled A, B, C and D of the udder using the list of words below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – teat", marks: 3, contextNote: "A." },
+    { id: "r-2", kind: "point", verbatim: "C – median suspensory ligament", marks: 3, contextNote: "C." },
+    { id: "r-3", kind: "point", verbatim: "D – connective tissue septum", marks: 3, contextNote: "D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q18(b)(ii) — A, C, D",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-paper-udder",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-udder.png",
+          "srcHash": "66075871ddb7f88e952c3829ff7f9301",
+          "alt": "Original cut-away udder diagram with arrows labelled A, B, C and D.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 35 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"teat","askedInThisQuestion":true},{"letter":"B","meaning":"quarter","askedInThisQuestion":false},{"letter":"C","meaning":"median suspensory ligament","askedInThisQuestion":true},{"letter":"D","meaning":"connective tissue septum","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-1"]), kind: "diagram",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2026-ol-q18bii-route-bcd", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2026 OL Q18(b)(ii) — B, C, D",
+    stem: "Words: Quarter, Connective tissue septum, Teat, Median suspensory ligament. Practice choice: B, C, D.",
+    questionText: "Identify any three parts labelled A, B, C and D of the udder using the list of words below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B – quarter", marks: 3, contextNote: "B." },
+    { id: "r-2", kind: "point", verbatim: "C – median suspensory ligament", marks: 3, contextNote: "C." },
+    { id: "r-3", kind: "point", verbatim: "D – connective tissue septum", marks: 3, contextNote: "D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2026 Ordinary — Q18(b)(ii) — B, C, D",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
+    },
+    figure: {
+          "candId": "agsci-2026-ol-paper-udder",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-udder.png",
+          "srcHash": "66075871ddb7f88e952c3829ff7f9301",
+          "alt": "Original cut-away udder diagram with arrows labelled A, B, C and D.",
+          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 35 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"teat","askedInThisQuestion":false},{"letter":"B","meaning":"quarter","askedInThisQuestion":true},{"letter":"C","meaning":"median suspensory ligament","askedInThisQuestion":true},{"letter":"D","meaning":"connective tissue septum","askedInThisQuestion":true}],
+  } as SecCard,
 ];

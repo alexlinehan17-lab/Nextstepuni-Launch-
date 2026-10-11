@@ -270,5 +270,107 @@
       0.762
     ],
     "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-scheme-root-hair": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-scheme-root-hair.png",
+    "md5": "6a3b901b206ce377e2ce094e95a7bf7b",
+    "alt": "Official root diagram with the root-hair region on the right-hand side outlined in red: the scheme accepts an R placed anywhere on or around the root hair.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level marking scheme, PDF page 13 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "5d408c95790f05c59a313f8b2e30ed789d36ddfbbe23da59474d5db79a7e1e8a",
+    "pdfPage": 13,
+    "cropRect": [
+      0.555,
+      0.123,
+      0.8,
+      0.219
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-scheme-weaning-region": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-scheme-weaning-region.png",
+    "md5": "a9eeee7855ee5efcfe209a2b144c4744",
+    "alt": "Official sheep production timeline (housing, mid-season lambing, finishing, finishing, breeding) with the accepted weaning region marked in yellow on the red line beneath the two finishing stages.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level marking scheme, PDF page 18 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "5d408c95790f05c59a313f8b2e30ed789d36ddfbbe23da59474d5db79a7e1e8a",
+    "pdfPage": 18,
+    "cropRect": [
+      0.285,
+      0.387,
+      0.8,
+      0.545
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-paper-farm-hazards": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-farm-hazards.png",
+    "md5": "3e237257a115016f777a517036aee260",
+    "alt": "Original hand-sketched farmyard map: livestock shed, milking parlour and handling unit, feed storage area, slurry tank, silage pit, machinery shed and farmhouse, with hazard triangles A, B and C.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "b63e7223ff6e0b724984b51db9b1813f37d19496570b7614694abc85f5702e2f",
+    "pdfPage": 6,
+    "cropRect": [
+      0.22,
+      0.172,
+      0.748,
+      0.546
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-paper-sedimentation": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-sedimentation.png",
+    "md5": "a8c5f798278de7ffc83ad4ed53fb5a76",
+    "alt": "Original sedimentation set-up: two cylinders with funnels and beakers of soil being poured, soil samples 1 and 2, and leader lines labelled A and B.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 15 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "b63e7223ff6e0b724984b51db9b1813f37d19496570b7614694abc85f5702e2f",
+    "pdfPage": 15,
+    "cropRect": [
+      0.215,
+      0.14,
+      0.885,
+      0.41
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-paper-udder": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-udder.png",
+    "md5": "66075871ddb7f88e952c3829ff7f9301",
+    "alt": "Original cut-away udder diagram with arrows labelled A, B, C and D.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 35 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "b63e7223ff6e0b724984b51db9b1813f37d19496570b7614694abc85f5702e2f",
+    "pdfPage": 35,
+    "cropRect": [
+      0.12,
+      0.165,
+      0.9,
+      0.515
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-paper-pig-digestive": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-pig-digestive.png",
+    "md5": "3a672da7e5aefde74f7d54304165f42c",
+    "alt": "Original pig digestive-system diagram labelled oesophagus, duodenum, ileum and appendix, with pointers A, B and C on unlabelled organs.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 13 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "b63e7223ff6e0b724984b51db9b1813f37d19496570b7614694abc85f5702e2f",
+    "pdfPage": 13,
+    "cropRect": [
+      0.09,
+      0.205,
+      0.885,
+      0.552
+    ],
+    "reviewedAt": "2026-10-11"
   }
 }

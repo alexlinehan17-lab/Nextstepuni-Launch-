@@ -24,6 +24,7 @@ from agricultural_science_2011_ol import reviewed_tasks as reviewed_2011_ol, pap
 
 from agricultural_science_2012_hl import reviewed_tasks as reviewed_2012_hl, paper_review as higher_2012_review
 from agricultural_science_2026_hl import reviewed_tasks as reviewed_2026_hl, paper_review as higher_2026_review
+from agricultural_science_2026_ol import reviewed_tasks as reviewed_2026_ol, paper_review as ordinary_2026_review
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -160,9 +161,13 @@ def reviewed_tasks():
     cards.extend(higher_2026_cards)
     reviews.extend(higher_2026_tasks)
     paper_reviews.append(higher_2026_review())
+    ordinary_2026_cards, ordinary_2026_tasks = reviewed_2026_ol()
+    cards.extend(ordinary_2026_cards)
+    reviews.extend(ordinary_2026_tasks)
+    paper_reviews.append(ordinary_2026_review())
     # Batches reviewed after 7 October carry their own review date; earlier
     # reviewed card objects must stay byte-identical.
-    batch_dates = {id(card): '2026-10-11' for card in higher_2026_cards}
+    batch_dates = {id(card): '2026-10-11' for card in higher_2026_cards + ordinary_2026_cards}
     for reviewed in cards:
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
                           'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':batch_dates.get(id(reviewed),'2026-10-07')}

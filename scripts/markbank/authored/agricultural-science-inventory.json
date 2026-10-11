@@ -6476,163 +6476,185 @@
         "sha256": "5d408c95790f05c59a313f8b2e30ed789d36ddfbbe23da59474d5db79a7e1e8a",
         "pages": 24
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 114,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "12643a33f3a32b31",
           "page": 2,
           "cue": "Answer ten",
           "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer ten questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 m",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section A: ten of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "e8ef67ddf417a212",
           "page": 2,
           "cue": "any four",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Date of Birth in the boxes on the front cover. Write your answers in blue or black pen",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B: four of six independent questions. Every question is retained."
         },
         {
           "id": "9279a5994cd75306",
           "page": 3,
           "cue": "any ten",
           "context": "icate Examination 2026 3 Agricultural Science – Ordinary Level Section A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 (a) Identify any three pieces of equipment commonly found on Irish farms using the words in the list below. Plough Grass topper Combine harvester Drone sprayer A B C D (b) Out",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: ten independent 10-mark questions, all retained."
         },
         {
           "id": "68cb0434414120e1",
           "page": 3,
           "cue": "any three",
           "context": "0 marks Answer any ten questions. Each question carries 10 marks. Question 1 (a) Identify any three pieces of equipment commonly found on Irish farms using the words in the list below. Plough Grass topper Combine harvester Drone sprayer A B C D (b) Outline one safety precaution farmers must take when using the piece of machiner",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q1(a) prints machines A–D and asks for any three: all four three-picture routes are retained at 6 marks each."
         },
         {
           "id": "e82de7fc3df02343",
           "page": 5,
           "cue": "either",
           "context": "ng Certificate Examination 2026 5 Agricultural Science – Ordinary Level Question 3 Answer either (a) or (b). (a) The diagram shows photosynthesis in plants. Analyse the diagram and answer the questions that follow. (i) Identify one input (requirement) and one output (product) in the process of photosynthesis. (ii) List two w",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q3 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "b37292626d759374",
           "page": 6,
           "cue": "any two",
           "context": "ed them A, B and C. Analyse the sketch and answer the questions that follow. (a) Identify any two potential safety hazards labelled A, B and C. (b) For any one safety hazard identified in part (a), suggest one measure the farmer could take to reduce the potential risk. Safety hazard Way to reduce potential risk (c) Explain wh",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q4(a) prints hazards A, B and C and asks for any two: all three two-hazard routes are retained at 6 marks each."
         },
         {
           "id": "eef9f5121da5b37c",
           "page": 6,
           "cue": "any one",
           "context": "s that follow. (a) Identify any two potential safety hazards labelled A, B and C. (b) For any one safety hazard identified in part (a), suggest one measure the farmer could take to reduce the potential risk. Safety hazard Way to reduce potential risk (c) Explain why it is important to separate animal movement areas from machi",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q4(b) asks for any one of the three printed hazards: three routes, each with its own scheme measures, at 2 marks."
         },
         {
           "id": "31d5f1b76a0150b1",
           "page": 7,
           "cue": "any three",
           "context": "tificate Examination 2026 7 Agricultural Science – Ordinary Level Question 5 (a) Identify any three cattle breeds found on Irish farms using the list of words below. Simmental Aberdeen Angus Friesian Shorthorn A B C D (b) Identify which animal A, B, C or D in part (a) above has a roan colour, by placing a tick () in the correc",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q5(a) prints cattle A–D and asks for any three: all four routes are retained at 7 marks each."
         },
         {
           "id": "e526e5630e3eef3e",
           "page": 9,
           "cue": "either",
           "context": "ng Certificate Examination 2026 9 Agricultural Science – Ordinary Level Question 8 Answer either (a) or (b). (a) Healthy soils are full of biological activity. Living organisms play a key role in maintaining soil fertility and supporting plant growth. (i) Name two types of living organisms commonly found in soil. (ii) Explai",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "e84ceadf8f49b84e",
           "page": 10,
           "cue": "either",
           "context": "g Certificate Examination 2026 10 Agricultural Science – Ordinary Level Question 9 Answer either (a) or (b). The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dange",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "b4dda66070736477",
           "page": 10,
           "cue": "any three",
           "context": " injury during the calving season are outlined in the table below. Outline one reason for any three safety features. Safety feature Reason Lock cows in a proper calving gate Good handling facilities when moving cows to and from calving pens Have two escape points in a calving pen Never turn your back on a freshly calved cow Kee",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q9(a) prints five safety features and asks for a reason for any three: all ten routes are retained at 10 marks each."
         },
         {
           "id": "d67d299c87eb8406",
           "page": 11,
           "cue": "any two",
           "context": "roup of farmers and you come across the following signs. A B C (i) Explain the meaning of any two signs A, B or C to the group of farmers. Safety sign Meaning A B C (ii) You also notice a sign saying ‘biosecurity measures in place’ to prevent diseases entering the farm. Outline two biosecurity measures the farmer could put in",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q9(b)(i) prints signs A, B and C and asks for any two: all three routes are retained at 5 marks each."
         },
         {
           "id": "548b7645ecdfb3cb",
           "page": 12,
           "cue": "any two",
           "context": " Agricultural Science – Ordinary Level Question 10 (a) Identify the correct lifecycle for any two of the plants below, by placing a tick () in the correct box. Barley is a Annual Biennial Perennial White clover is a Annual Biennial Perennial Potato is a Annual Biennial Perennial (b) Explain how a farmer would control weeds i",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q10(a) prints three plants and asks for the lifecycle of any two: all three routes are retained at 6 marks each."
         },
         {
           "id": "f08ddcaeb5138cee",
           "page": 14,
           "cue": "either",
           "context": " Certificate Examination 2026 14 Agricultural Science – Ordinary Level Question 12 Answer either (a) or (b). (a) The chart shows the ideal soil composition for a sample of soil. (i) Calculate A the % organic matter in the sample of soil. (ii) An Agricultural Science student wanted to determine the texture of a soil sample th",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q12 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "024b108b32f221f3",
           "page": 18,
           "cue": "any four",
           "context": "cate Examination 2026 18 Agricultural Science – Ordinary Level Section B 200 marks Answer any four questions. Each question carries 50 marks. Question 13 Grass grows in different stages throughout the year. Farmers need to understand these growth stages to manage grazing, silage, and fertiliser properly. (a) (i) Identify the t",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: four of six independent 50-mark questions, all retained."
         },
         {
           "id": "2c4216f9686097b8",
           "page": 21,
           "cue": "any three",
           "context": " are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep. (a) (i) Identify any three sheep breeds found on their farm using the list below. Suffolk Texel Border Leicester Blackface mountain A B C D (ii) Identify one breed from part (i) that is most suitable for their hill flock. (iii) Rams A and D, are classed as",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q14(a)(i) prints sheep A–D and asks for any three: all four routes are retained at 6 marks each."
         },
         {
           "id": "8bc895fb618589af",
           "page": 24,
           "cue": "either",
           "context": "on 2026 24 Agricultural Science – Ordinary Level Question 15 Answer both (a) and (b) with either (c) or (d). (a) The diagram below shows how soils are formed over time. (i) Identify each horizon (a, b, c and d) using the list of words in the table below. Parent rock Top soil Subsoil Bedrock (ii) Using the diagram, explain ho",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q15: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "1e3a8ee0704d5ce3",
           "page": 26,
           "cue": "one of",
           "context": "ain why Teagasc included a field with no slurry in the investigation. (ii) Identify which one of the three methods of slurry spreading did the cows prefer. 150 250 300 550 0 100 200 300 400 500 600 No Slurry Trailing shoe Dribble bar Splash plate Field 1 Field 2 Field 3 Field 4 Amount of grass left after grazing (kg DM/ha) E",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q15(d)(ii): identify the one method the cows preferred from the graph; one correct answer, not a route."
         },
         {
           "id": "b7955337ee8d60ec",
           "page": 27,
           "cue": "either",
           "context": "on 2026 27 Agricultural Science – Ordinary Level Question 16 Answer both (a) and (b) with either (c) or (d). Aoife was a young beef farmer who purchased 10 three-week-old beef calves to rear to weanling stage. (a) (i) Identify the breeds A and B of calves that she bought using the list below. Hereford Aberdeen Angus A B (ii)",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q16: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "c5a0a84851b40d40",
           "page": 29,
           "cue": "one of",
           "context": "g Certificate Examination 2026 29 Agricultural Science – Ordinary Level (c) Aoife noticed one of the calves not coming for their milk. The calf was away from the others, breathing heavily, had a runny nose and was coughing. (i) Identify the disease the calf is likely to be suffering from by placing a tick () in the correct ",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q16(c) stem (\"one of the calves\"); no response choice."
         },
         {
           "id": "255d6f8999e58e46",
           "page": 33,
           "cue": "two of",
           "context": "(iii) Explain why it is important to cool milk quickly after milking. (iv) Identify which two of the following contribute to a high Total Bacterial Count (TBC) in milk, by placing ticks () in the correct boxes. Poor hygiene Udder infection Poor nutrition (v) List two ways that milk can become contaminated. 1. 2. 1. 2. 1. 2.",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q18(a)(iv): tick the two correct contributors; the third box is a distractor, not a route."
         },
         {
           "id": "1a034decc5bb8379",
           "page": 35,
           "cue": "any three",
           "context": "aving Certificate Examination 2026 35 Agricultural Science – Ordinary Level (ii) Identify any three parts labelled A, B, C and D of the udder using the list of words below. Quarter Connective tissue septum Teat Median suspensory ligament A B C D A B C D",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q18(b)(ii) prints udder parts A–D and asks for any three: all four routes are retained at 9 marks each."
         }
       ]
     },
@@ -6651,7 +6673,7 @@
         "sha256": "86685f54c4864ee4adf7d3fd9fb6c3330e1ba8a997776f472a750f84fdf08d2a",
         "pages": 27
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 114,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

@@ -38,7 +38,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(61);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(60);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(1);
   });
 
@@ -390,7 +390,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(10);
+    expect(review.paperReviews).toHaveLength(11);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -476,6 +476,69 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
+  it('expands every printed 2026 Ordinary pool and keeps answer-identification ticks whole', () => {
+    const year = ordinary.filter(card => card.year === 2026);
+    expect(year).toHaveLength(114);
+    const pools: Array<[string, number, number]> = [
+      ['q1a', 4, 6], ['q4a', 3, 6], ['q4b', 3, 2], ['q5a', 4, 7], ['q9a', 10, 10],
+      ['q9bi', 3, 5], ['q10a', 3, 6], ['q14ai', 4, 6], ['q18bii', 4, 9],
+    ];
+    for (const [key, count, marks] of pools) {
+      const routes = year.filter(card => card.id.startsWith(`agsci-2026-ol-${key}-route-`));
+      expect(routes, key).toHaveLength(count);
+      expect(new Set(routes.map(card => card.id)).size).toBe(count);
+      for (const candidate of routes) {
+        const card = get(candidate.id);
+        expect(card.totalMarks, card.id).toBe(marks);
+        expect(card.stem).toContain('Practice choice:');
+        expect(tariffReconciles(card)).toBe(true);
+        expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection.kind).toBe('closed');
+      }
+    }
+    const cattle = get('agsci-2026-ol-q5a-route-acd');
+    expect(cattle.rows[0].group?.perOptionSteps).toEqual([1, 2, 4]);
+    expect(marksClaimed(cattle, {}, { 'r-1': [2] })).toBe(1);
+    expect(marksClaimed(cattle, {}, { 'r-1': [0, 1, 2] })).toBe(7);
+    const organic = get('agsci-2026-ol-q6');
+    expect(organic.rows[0].group?.perOptionSteps).toEqual([1, 1, 2, 2, 4]);
+    expect(marksClaimed(organic, {}, { 'r-1': [0, 1, 2, 3, 4] })).toBe(10);
+    for (const id of ['q2a', 'q11a', 'q14aiii', 'q15bi', 'q16aii', 'q16ci', 'q16di', 'q17ai']) {
+      const card = get(`agsci-2026-ol-${id}`);
+      expect(card.rows).toHaveLength(1);
+      expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection.kind).toBe('none');
+    }
+    for (const id of ['q4a-route-ab', 'q11b', 'q12bi', 'q18bii-route-abc']) {
+      const card = ordinary.find(candidate => candidate.id === `agsci-2026-ol-${id}`)!;
+      expect(card.kind, id).toBe('diagram');
+      if (card.kind !== 'diagram') throw new Error('Expected a diagram card');
+      expect(card.figure?.solution).not.toBe(true);
+    }
+    for (const id of ['q3bi', 'q14bi']) expect(get(`agsci-2026-ol-${id}`).figure?.solution).toBe(true);
+    const units = census.questionMarkChecks.filter(check => check.year === 2026 && check.level === 'ordinary');
+    expect(units).toHaveLength(18);
+    for (const check of units) expect(check.candidateTotalsFromScheme).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+  });
+
+  it('keeps 2026 Ordinary drawings, graph and calculation under the published awards', () => {
+    for (const [key, total] of [['q12ai', 4], ['q14ci', 10], ['q18bi', 9]] as const) {
+      const card = get(`agsci-2026-ol-${key}`);
+      expect(card.tariffModel.kind).toBe('questionTotal');
+      expect(card.totalMarks).toBe(total);
+    }
+    expect(get('agsci-2026-ol-q17c').totalMarks).toBe(22);
+    expect(get('agsci-2026-ol-q16dii').rows.map(row => row.marks)).toEqual([2, 4]);
+    const map: PaperAnswerMap = JSON.parse(readFileSync(resolve(__dirname, '../public/paper-answers/2026/LC024GLP000EV.pdf.json'), 'utf8'));
+    expect(map.q.find(q => q.n === '11')?.schemeNote).toContain('(b)');
+    expect(map.q.find(q => q.n === '13')?.schemeNote).toContain('part (ii)');
+    expect(preferredAnswersUrl('agricultural-science', 2026, 'LC024GLP000EV.pdf', 'old-storage')).toBe('/paper-answers/2026/LC024GLP000EV.pdf.json');
+    for (const card of ordinary.filter(card => card.year === 2026)) {
+      const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
+      expect(card.specificationId).toBe(specification.id);
+      expect(card.curriculumNodeIds?.[0]).toBe(card.topicId);
+      for (const id of card.curriculumNodeIds!) expect(findCanonicalTopic(specification, id)).toBeDefined();
+    }
+  });
+
   it('awards 2010 first-correct marks independently of the named instrument', () => {
     const card = get('agsci-2010-hl-q1e');
     for (const first of [0, 1, 2]) expect(marksClaimed(card, {}, { 'r-1': [first] })).toBe(6);
@@ -527,7 +590,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(480);
+    expect(atlas.markBankCards).toHaveLength(594);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

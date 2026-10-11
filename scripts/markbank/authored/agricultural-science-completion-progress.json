@@ -12,12 +12,12 @@
       2010,
       2026
     ],
-    "selectionCuesPendingClassification": 693,
-    "fullPaperAndSchemeSweepsCompleted": 10,
-    "distinctEnglishPaperSweepsCompleted": 6,
+    "selectionCuesPendingClassification": 671,
+    "fullPaperAndSchemeSweepsCompleted": 11,
+    "distinctEnglishPaperSweepsCompleted": 7,
     "irishEditionComparisonsCompleted": 4,
-    "independentSourceCensusEditionsCompleted": 7,
-    "independentSourceCensusEditionsOpen": 61
+    "independentSourceCensusEditionsCompleted": 8,
+    "independentSourceCensusEditionsOpen": 60
   },
   "completedBatch": {
     "reviewedPapers": [
@@ -30,7 +30,8 @@
       "2011 Ordinary English: 12 paper pages and 16 scheme pages",
       "2011 Ordinary Irish: 12 paper pages and 16 scheme pages",
       "2012 Higher English: 8 paper pages and 16 scheme pages",
-      "2026 Higher English: 44 paper pages and 33 scheme pages"
+      "2026 Higher English: 44 paper pages and 33 scheme pages",
+      "2026 Ordinary English: 40 paper pages and 24 scheme pages"
     ],
     "previousReviewedTasks": [
       "2022 OL Q2(b)(ii)",
@@ -38,15 +39,15 @@
       "2023 HL Q18(a)(i)",
       "2025 OL Q8(b)"
     ],
-    "addedMarkBankCards": 479,
-    "addedThisBatch": 112,
+    "addedMarkBankCards": 593,
+    "addedThisBatch": 226,
     "correctedMarkBankCards": 1,
-    "markBankCardsNow": 1348,
+    "markBankCardsNow": 1462,
     "higherCards": 748,
-    "ordinaryCards": 600,
+    "ordinaryCards": 714,
     "originalCardIdsPreserved": 869,
-    "atlasPracticeCardsAdded": 480,
-    "atlasCardsNow": 938,
+    "atlasPracticeCardsAdded": 594,
+    "atlasCardsNow": 1052,
     "priorAnchorsPreservedThisBatch": 9,
     "obsoleteExclusionsResolved": 4,
     "legacyRoutes": {
@@ -70,7 +71,13 @@
       "2011 cell division",
       "2012 calf-to-beef growth curve",
       "2012 oat hybrid Punnett cross",
-      "2026 cow reproductive system (scheme solution)"
+      "2026 cow reproductive system (scheme solution)",
+      "2026 OL farmyard hazard sketch",
+      "2026 OL sedimentation set-up",
+      "2026 OL pig digestive system",
+      "2026 OL udder diagram",
+      "2026 OL root-hair region (scheme solution)",
+      "2026 OL weaning region (scheme solution)"
     ],
     "curriculum": "Reviewed legacy cards resolve the existing registry by examination year. Added the SEC-derived Higher circulatory-system Atlas topic, crosswalked to the registered Animal Physiology node. Mixed tasks retain all assessed topics. Added the SEC-derived Higher respiratory-system browse topic for the alveolus, using the existing Animal Physiology registry node. Soil texture remains under physical properties, also linked to chemical fertility.",
     "priorAuthoredCardsUnchangedThisBatch": 1236,
@@ -78,11 +85,11 @@
     "translatedAtlasPracticeBindings": 298,
     "originalWholeQuestionIdentitiesRetained": 458,
     "independentReconciliation": {
-      "reviewedEnglishRoutes": 472,
+      "reviewedEnglishRoutes": 586,
       "translatedBindings": 298,
       "reviewedBatchIssues": 0,
-      "remainingIndependentCensusEditions": 61,
-      "scope": "2010/2011 Higher and Ordinary, 2012 Higher and 2026 Higher English (472 routes), all 298 existing Irish bindings, and the independently transcribed 2011 Ordinary Irish denominator (81). Remaining editions stay open.",
+      "remainingIndependentCensusEditions": 60,
+      "scope": "2010/2011 Higher and Ordinary, 2012 Higher and 2026 Higher/Ordinary English (586 routes), all 298 existing Irish bindings, and the independently transcribed 2011 Ordinary Irish denominator (81). Remaining editions stay open.",
       "independentlyReviewedTranslatedRoutes": 81
     },
     "readerCorrections": [
@@ -91,7 +98,7 @@
       "Genotype and chemical-symbol case is retained in unclaimed summaries.",
       "Question-total criteria use student judgement and do not invent automatic numeric grade suggestions."
     ],
-    "englishSourceNotes": "2011 Ordinary scheme notes preserve the historical fungus classification for potato blight, distinguish digestibility from retention, and explain the Kilkenny marble commercial name. Original scheme text remains unchanged. 2012 Higher: potassium reagent/test-result clarification (WHO), hay moisture versus dry matter (FAO), the duplicated potato and crop-comparison numerals, and the oat-intercross generation label. Original scheme wording and tariffs remain visible. 2026 Higher: the Q11(b)(i) scheme heading adds “feed space” not asked on the paper; the Q17(a)(iv) descriptors print 3 marks each while the mark column prints 4+4+3 = 11.",
+    "englishSourceNotes": "2011 Ordinary scheme notes preserve the historical fungus classification for potato blight, distinguish digestibility from retention, and explain the Kilkenny marble commercial name. Original scheme text remains unchanged. 2012 Higher: potassium reagent/test-result clarification (WHO), hay moisture versus dry matter (FAO), the duplicated potato and crop-comparison numerals, and the oat-intercross generation label. Original scheme wording and tariffs remain visible. 2026 Higher: the Q11(b)(i) scheme heading adds “feed space” not asked on the paper; the Q17(a)(iv) descriptors print 3 marks each while the mark column prints 4+4+3 = 11. 2026 Ordinary: the scheme labels both parts of Q11 “(b)”, and its Q13(a)(iii) heading refers to part (i) where the paper asks about part (ii).",
     "answerMapRecovery": "2011 Ordinary English lacked a local answer sidecar and the hosted endpoint returned 404. Added 13 reviewed whole-question parents plus 81 practice anchors, registered the hosted override and enabled its reproducible answers flag.",
     "modernRoutes2026Higher": {
       "threeOfFourPhotosynthesisHeadings": 4,
@@ -99,13 +106,19 @@
       "twoOfThreeWeeds": 3,
       "cloverSowingMethodAorB": 2,
       "plantsOrAnimals": 2
+    },
+    "modernRoutes2026Ordinary": {
+      "threeOfFourIdentifications": 16,
+      "twoOfThreeHazardsSignsLifecycles": 9,
+      "oneOfThreeHazardMeasures": 3,
+      "threeOfFiveCalvingSafetyFeatures": 10
     }
   },
   "verification": {
-    "targetedTestsPassed": 153,
+    "targetedTestsPassed": 179,
     "sourceReaderOpenCloseTestPassed": true,
-    "renderedCropReview": "2010 Ordinary: all 38 distinct paper crops and 61 distinct scheme crops inspected and corrected, plus 4 original diagram images. Prior 2010 Higher 49 crop pairs and 2 solution images retained. Every new Ordinary marking claim matches its specific cropped scheme text. Irish Higher: all 43 distinct paper and 44 scheme crop sets inspected. Irish Ordinary: all 48 paper and 64 scheme crop sets inspected. Final fixes re-rendered and inspected. 2011 Higher: all 55 distinct English paper/scheme pairs and all 53 distinct Irish pairs inspected. Irish bindings comprise 40 paper crop sets and 53 scheme crop sets; final heart and ratio crop corrections re-rendered. Both new source images inspected. 2011 Ordinary English: all 65 distinct paper/scheme pairs and five source diagrams visually inspected; final clipped tariffs and table borders corrected and inspected again. 2011 Ordinary Irish: all 66 distinct crop pairs inspected (31 paper crop sets, 66 scheme sets), corrected missing/clipped lines re-rendered, including the final fertiliser note margin. All 28 original PDF pages inspected. 2012 Higher: all 56 distinct paper/scheme crop pairs and both solution figures inspected. Clipped lines, the growth-curve time label and shared tariffs corrected and re-rendered. 2026 Higher: all 91 distinct paper/scheme crop pairs and the reproductive-system solution image inspected; the Q18(b)(iii) crop was trimmed to exclude the (c) table and re-rendered.",
-    "cardBuild": "1348 built, zero dropped",
+    "renderedCropReview": "2010 Ordinary: all 38 distinct paper crops and 61 distinct scheme crops inspected and corrected, plus 4 original diagram images. Prior 2010 Higher 49 crop pairs and 2 solution images retained. Every new Ordinary marking claim matches its specific cropped scheme text. Irish Higher: all 43 distinct paper and 44 scheme crop sets inspected. Irish Ordinary: all 48 paper and 64 scheme crop sets inspected. Final fixes re-rendered and inspected. 2011 Higher: all 55 distinct English paper/scheme pairs and all 53 distinct Irish pairs inspected. Irish bindings comprise 40 paper crop sets and 53 scheme crop sets; final heart and ratio crop corrections re-rendered. Both new source images inspected. 2011 Ordinary English: all 65 distinct paper/scheme pairs and five source diagrams visually inspected; final clipped tariffs and table borders corrected and inspected again. 2011 Ordinary Irish: all 66 distinct crop pairs inspected (31 paper crop sets, 66 scheme sets), corrected missing/clipped lines re-rendered, including the final fertiliser note margin. All 28 original PDF pages inspected. 2012 Higher: all 56 distinct paper/scheme crop pairs and both solution figures inspected. Clipped lines, the growth-curve time label and shared tariffs corrected and re-rendered. 2026 Higher: all 91 distinct paper/scheme crop pairs and the reproductive-system solution image inspected; the Q18(b)(iii) crop was trimmed to exclude the (c) table and re-rendered. 2026 Ordinary: all 85 distinct crop pairs inspected; Q3(b)(ii), Q12(b)(ii), Q16(a)(ii), Q17(a)(ii)/(iii), Q17(b)(ii) and Q18(a)(ii)–(v) re-cropped and re-inspected; six figures inspected (three re-cropped).",
+    "cardBuild": "1462 built, zero dropped",
     "generationChecks": [
       "agricultural_science_completion.py --check",
       "agricultural_science_atlas.py --check",
@@ -115,7 +128,7 @@
     ],
     "testTypecheck": "Only the same 3 pre-existing programmeAnalytics errors at programmeAnalyticsClient.test.ts:32/56 and programmeAnalytics.ts:50; no new errors.",
     "applicationTypecheck": "Passed",
-    "targetedSuitesPassed": 5,
+    "targetedSuitesPassed": 6,
     "schemeNoteRevealHideTestPassed": true,
     "previousBatchRegression": {
       "testsPassed": 271,
@@ -145,13 +158,13 @@
   },
   "remaining": [
     "Independently sweep the remaining 29 English papers and matching schemes; compare the remaining 30 Irish editions. Nine complete edition sweeps do not establish corpus-wide completeness.",
-    "Author 2012 Ordinary, 2013–2020 and 2026 Ordinary tasks; recheck every 2021–2025 boundary, stem, tariff, figure, topic and finite choice.",
-    "Classify all 693 pending raw selection directives. Expand genuine closed pools mechanically and retain written reasons for non-expansions.",
+    "Author 2012 Ordinary and 2013–2020 tasks; reconcile 2021–2025 against their original cards (see the 2025 Higher legacy-boundary decision).",
+    "Classify all 671 pending raw selection directives. Expand genuine closed pools mechanically and retain written reasons for non-expansions.",
     "Extend the independent source census beyond the six reviewed editions, including the other Irish denominators. Resolve the generic parser’s 60 flags and legacy option/shared-award mismatches; do not treat its percentages as completion evidence.",
     "Extend exact Mark Bank/Topic Atlas reconciliation through every remaining sitting, including modern orphan candidates, while preserving all existing identities and crops.",
     "Check signed-in full-application navigation as well as the component reader/session QA already completed.",
     "Keep coverage and original preservation baselines frozen until the whole-corpus zero-open/zero-orphan reconciliation and regression gates pass.",
     "Review integration with other terminals. Changes remain on the isolated branch; nothing is merged or published."
   ],
-  "nextAction": "2026 Ordinary English, then 2025 Higher English (reconcile against its 88 original cards without altering them). The 2012 Higher Irish batch is parked on branch park/agri-2012-hl-irish (Irish editions deferred)."
+  "nextAction": "Decision needed before 2025 Higher: its 88 original cards conflict with the independent boundaries (Q2(a) two-of-three lifecycles carded as one card; Q2(b)(ii) two-of-five characteristics as one 2-mark card; Q12 four-of-five reasons carded as five 2-mark items although the scheme prints a 10-mark 2(4)+2(1) first-correct scale; Q6(b) one-of-three equipment unexpanded). Missing tasks: Q1(b), Q3(a)(ii), Q6(a), Q7(b) (one of four processes) and Q15(c). The 2012 Higher Irish batch is parked on park/agri-2012-hl-irish (Irish editions deferred)."
 }
