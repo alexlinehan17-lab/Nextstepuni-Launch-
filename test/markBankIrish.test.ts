@@ -4,6 +4,7 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { CARDS as HIGHER_DECK } from '../components/MarkBank/cards/irish/higher';
 import reviewed2026P1 from '../components/MarkBank/cards/irish/higher-2026-p1-authored.json';
+import reviewed2026P2 from '../components/MarkBank/cards/irish/higher-2026-p2-authored.json';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import authoredJson from '../components/MarkBank/cards/irish/authored.json';
 import {
@@ -76,8 +77,8 @@ const census = JSON.parse(readFileSync(resolve(
   __dirname, '../scripts/markbank/authored/irish-census.json'), 'utf8')) as IrishCensus;
 const manifest = authoredJson as unknown as IrishManifest;
 // These pins cover the legacy census output. Paper-reviewed components ship
-// beside it and carry their own regression file (2026 Higher Paper 1).
-const REVIEWED_IDS = new Set(reviewed2026P1.cards.map(card => card.id));
+// beside it and carry their own regression files (2026 Higher Papers 1 and 2).
+const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards].map(card => card.id));
 const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 const ALL: SecRubricCard[] = [...HIGHER, ...ORDINARY];
 const byId = new Map(ALL.map(card => [card.id, card]));

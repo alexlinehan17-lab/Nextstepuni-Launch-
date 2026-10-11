@@ -27,15 +27,15 @@
     },
     "matchedLocalCardLinks": 744,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 2256,
-    "distinctStudentFacingQuestions": 2256,
+    "localPhysicalMappings": 2328,
+    "distinctStudentFacingQuestions": 2328,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 1570,
+    "retainedLocalQuestions": 1642,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 1970,
+    "newlyAddedPhysicalMappings": 2042,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -42613,6 +42613,945 @@
       "kind": "p2",
       "n": "X",
       "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-1-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-1-bi",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-1-bii",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-2-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-2-bi",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-2-bii",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-3-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-3-bi",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-3-bii",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-4-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-4-bi",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-4-bii",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-5-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-5-bi",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-5-bii",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-6-a",
+      "topicIds": [
+        "irish-higher-grammar"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-6-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-6-b-1",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-6-b-2",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-1",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-2",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-3",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-4",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-5",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-6",
+      "topicIds": [
+        "irish-higher-grammar",
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-1-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-1-bi",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-1-bii",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-1-bii-1",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-1-bii-2",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-2-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-2-bi",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-2-bi-1",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-2-bi-2",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-2-bii",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-2-bii-1",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-2-bii-2",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-3-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-3-bi",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-3-bii",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-4-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-4-bi",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-4-bii",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-4-bii-1",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-4-bii-2",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-5-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-5-bi",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-5-bii",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-6-a",
+      "topicIds": [
+        "irish-higher-grammar"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-6-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-1",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-2",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-3",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-4",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-5",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-6",
+      "topicIds": [
+        "irish-higher-grammar",
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-a-caca-milis",
+      "topicIds": [
+        "irish-higher-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-a-an-lasair-choille",
+      "topicIds": [
+        "irish-higher-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-b",
+      "topicIds": [
+        "irish-higher-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-a-scannan",
+      "topicIds": [
+        "irish-higher-studied-prose-pros-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-a-drama",
+      "topicIds": [
+        "irish-higher-studied-prose-pros-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-b",
+      "topicIds": [
+        "irish-higher-studied-prose-pros-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-a",
+      "topicIds": [
+        "irish-higher-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-b",
+      "topicIds": [
+        "irish-higher-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-a",
+      "topicIds": [
+        "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-b",
+      "topicIds": [
+        "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4A",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4B",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4C",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4D",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4E",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4F",
+      "topicIds": [
+        "irish-higher-danta-breise",
         "irish-higher-historic-additional-literature"
       ],
       "provenance": "retained-local"

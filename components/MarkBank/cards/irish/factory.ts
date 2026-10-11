@@ -15,6 +15,7 @@ import type {
 } from '../../../../types/markBank';
 import authored from './authored.json';
 import higher2026P1 from './higher-2026-p1-authored.json';
+import higher2026P2 from './higher-2026-p2-authored.json';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 
 type IrishLevel = 'higher' | 'ordinary';
@@ -43,7 +44,7 @@ interface AuthoredIrishCard {
 }
 
 // Paper-reviewed components ship as their own files beside the legacy census output.
-const DATA = [...authored.cards, ...higher2026P1.cards] as AuthoredIrishCard[];
+const DATA = [...authored.cards, ...higher2026P1.cards, ...higher2026P2.cards] as AuthoredIrishCard[];
 
 const cloneCriteria = (criteria: IrishCriterion[]): IrishCriterion[] =>
   criteria.map(criterion => ({
