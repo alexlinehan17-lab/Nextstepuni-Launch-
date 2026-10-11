@@ -118,7 +118,16 @@ describe('Topic Vault feed primitives', () => {
   it('topicsForPaper resolves a real paper and returns null for an unknown one', () => {
     const got = topicsForPaper(sampleTag.subjectId, sampleTag.year, sampleTag.level, sampleTag.lang, sampleTag.fileid);
     expect(got).not.toBeNull();
-    expect(got!.q.length).toBe(sampleTag.q.length);
+    // Every committed source row survives unchanged. Reviewed task rows may be
+    // appended (Accounting adds e.g. 1(a), 8(a)(ii)-break-even), but each must
+    // belong to one of the paper's original printed questions.
+    for (const original of sampleTag.q) {
+      expect(got!.q.find(q => q.n === original.n)).toEqual(original);
+    }
+    const parents = new Set(sampleTag.q.map(q => q.n));
+    for (const added of got!.q.filter(q => !parents.has(q.n))) {
+      expect(parents.has(added.n.match(/^\d+/)?.[0] ?? ''), added.n).toBe(true);
+    }
     expect(topicsForPaper('nope', 1900, 'higher', 'ev', 'nope.pdf')).toBeNull();
   });
 });

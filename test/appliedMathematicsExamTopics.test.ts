@@ -44,6 +44,9 @@ const higherLabels = [
   'Hydrostatics',
   'Rigid Body Motion & Moments of Inertia',
   "Simple Harmonic Motion & Hooke's Law",
+  // Reviewed addition: 2023 HL Q3(iii) and 2024 HL Q8(b) print "Use dimensional
+  // analysis…"; mapped to curriculum node applied-mathematics-2-8.
+  'Dimensional Analysis',
 ];
 
 const ordinaryLabels = [
@@ -85,7 +88,7 @@ describe('Applied Mathematics exam-topic registry', () => {
     expect(taxonomy.groups.map(group => group.label)).toEqual(['Higher Level', 'Ordinary Level']);
     expect(taxonomy.topics.filter(topic => topic.level === 'higher').map(topic => topic.label)).toEqual(higherLabels);
     expect(taxonomy.topics.filter(topic => topic.level === 'ordinary').map(topic => topic.label)).toEqual(ordinaryLabels);
-    expect(topicsForSubject('applied-mathematics')).toHaveLength(38);
+    expect(topicsForSubject('applied-mathematics')).toHaveLength(39);
   });
 
   it('crosswalks every exam topic to real official-curriculum nodes', () => {
@@ -169,7 +172,7 @@ describe('Applied Mathematics exam-topic registry', () => {
     }
     expect(subjectAtlasStats('applied-mathematics')).toMatchObject({
       questions: 318,
-      topics: 38,
+      topics: 39,
       yearMin: 2010,
       yearMax: 2026,
     });
