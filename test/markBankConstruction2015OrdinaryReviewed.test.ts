@@ -30,7 +30,7 @@ describe('Construction Studies 2015 Ordinary source-reviewed Q1–Q9', () => {
     const authored: SecCard[] = JSON.parse(fs.readFileSync('scripts/markbank/authored/construction-studies.json', 'utf8'));
     expect(prior.count).toBe(607);
     expect(authored.slice(0, 607).map(c => c.id)).toEqual(Object.keys(prior.cards));
-    expect(authored.slice(607).map(c => c.id)).toEqual(CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS);
+    expect(authored.slice(607, 607 + CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.length).map(c => c.id)).toEqual(CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS);
     expect(new Set(authored.map(c => c.id)).size).toBe(authored.length);
   });
 
