@@ -27,6 +27,8 @@ import { releaseVaultPdfs } from './vaultDocs';
 import { buildVaultLink, consumeInitialVaultLocation } from './vaultDeepLink';
 import { examTopicTaxonomyFor } from '../../data/examTopics/registry';
 
+const PoliticsTopicFeed = React.lazy(() => import('./PoliticsTopicFeed'));
+
 const INK = '#1a1a1a';
 const LVL: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
 const CATEGORY_TINT: Record<string, { bg: string; ink: string }> = {
@@ -88,6 +90,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [levelFilter, setLevelFilter] = useState<'all' | string>(restore?.subjectId === subjectId ? restore.level ?? 'all' : 'all');
   const [yearFilter, setYearFilter] = useState<'all' | number>('all');
   const [topicQuery, setTopicQuery] = useState('');
+  const [politicsView, setPoliticsView] = useState<'tasks' | 'papers'>('tasks');
   const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
   // Language preference — English by default, remembered per device. The feed
   // shows one edition per question; the other stays a click away.
@@ -192,6 +195,17 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     }
     return [...byQ.values()].sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || Number(a.n) - Number(b.n));
   }, [allEditions, langPref]);
+
+  if (subjectId === 'politics-and-society' && subtopicId && politicsView === 'tasks') {
+    return <div className="w-full max-w-2xl mx-auto pb-12">
+      <button onClick={() => setSubtopicId(null)} className="mb-5 flex items-center gap-2 rounded-lg border-2 border-[#383838] px-3 py-2 text-sm font-semibold"><ArrowLeft size={15} /> Politics and Society</button>
+      <h2 ref={headingRef} tabIndex={-1} className="mb-3 text-2xl font-semibold outline-none" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
+      <button onClick={() => setPoliticsView('papers')} className="mb-5 rounded-lg border-2 border-[#383838] px-3 py-2 text-sm font-semibold">Browse full printed questions</button>
+      <React.Suspense fallback={<p role="status">Loading practice tasks…</p>}>
+        <PoliticsTopicFeed key={subtopicId} topicId={subtopicId} />
+      </React.Suspense>
+    </div>;
+  }
 
   // ── Level 2: the feed — one edition per question, newest first, real
   //    paper crops with the scheme a tap below. Quiet text controls. ──
@@ -302,6 +316,8 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             {copied ? <><CheckIcon size={13} /> Copied</> : <><Link2 size={13} /> Share</>}
           </button>
         </div>
+
+        {subjectId === 'politics-and-society' && <button onClick={() => setPoliticsView('tasks')} className="mb-5 rounded-lg border-2 border-[#383838] px-3 py-2 text-sm font-semibold">Browse individual practice tasks</button>}
 
         <div className="space-y-5">
           {referenceOnly ? (

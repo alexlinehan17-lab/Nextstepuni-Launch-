@@ -33,6 +33,9 @@ import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
 
+import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
+import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
+
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
@@ -47,6 +50,9 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
   if (subject === 'art') {
     return [...ART_HIGHER, ...ART_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'politics-and-society') {
+    return [...POLITICS_HIGHER, ...POLITICS_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
   }
   if (subject === 'geography') {
     return [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY]
@@ -142,7 +148,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography') identities.sort();
+      || subject === 'geography' || subject === 'politics-and-society') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -193,7 +199,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
       try { h.update(readFileSync(path)); } catch { /* single-level deck */ }
     }
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography') {
+      || subject === 'geography' || subject === 'politics-and-society') {
       for (const name of ['factory.ts', 'authored.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));

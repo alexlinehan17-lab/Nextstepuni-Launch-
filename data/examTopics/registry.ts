@@ -49,6 +49,7 @@ import physicalEducationRuntimeJson from './physical-education-runtime.json';
 import physicsRuntimeJson from './physics-runtime.json';
 import physicsAndChemistryRuntimeJson from './physics-and-chemistry-runtime.json';
 import politicsAndSocietyAuditJson from './politics-and-society.json';
+import politicsTaskJson from './politics-tasks.json';
 import religiousEducationRuntimeJson from './religious-education-runtime.json';
 import spanishRuntimeJson from './spanish-runtime.json';
 import technologyRuntimeJson from './technology-runtime.json';
@@ -106,6 +107,9 @@ export interface ExamQuestionPartReference {
   n: string;
   /** Factual heading only (section/part/roman-numeral range); never question text. */
   subdivision?: string;
+  /** Exact practice task, including finite routes; original n remains the paper jump. */
+  markBankCardId?: string;
+  curriculumNodeId?: string;
   topicId: string;
 }
 
@@ -3296,6 +3300,31 @@ const politicsAndSocietyTopics: ExamTopicDefinition[] = politicsAndSocietyLevels
   }),
 );
 
+export interface PoliticsExamTask {
+  id: string; year: number; level: 'higher' | 'ordinary'; n: string;
+  questionRef: string; topicId: string; section: string; fileid: string; thinker: boolean;
+}
+export const POLITICS_EXAM_TASKS = politicsTaskJson as PoliticsExamTask[];
+export const politicsExamTopicIdsForTask = (task: PoliticsExamTask): string[] => {
+  const content = Object.entries(POLITICS_AND_SOCIETY_CONTENT_CROSSWALK)
+    .filter(([, ids]) => ids.includes(task.topicId))
+    .map(([slug]) => `politics-and-society-${task.level}-${slug}`);
+  if (content.length !== 1) throw new Error(`Politics task ${task.id} has no unique content topic`);
+  if (task.section === 'B') content.push(`politics-and-society-${task.level}-data-based-questions`);
+  if (task.thinker) content.push(`politics-and-society-${task.level}-key-thinkers`);
+  return content;
+};
+for (const task of POLITICS_EXAM_TASKS) {
+  for (const topicId of politicsExamTopicIdsForTask(task)) {
+    politicsAndSocietyPartReferences.push({
+      subjectId: 'politics-and-society', level: task.level, year: task.year,
+      sitting: 'main', paperKey: 'single', fileid: task.fileid, n: task.n,
+      subdivision: task.questionRef, topicId, markBankCardId: task.id,
+      curriculumNodeId: task.topicId,
+    });
+  }
+}
+
 const POLITICS_AND_SOCIETY_TAXONOMY: ExamTopicTaxonomy = {
   subjectId: politicsAndSocietyAudit.subjectId,
   capturedAt: politicsAndSocietyAudit.capturedAt,
@@ -3515,6 +3544,24 @@ registerBrowserQuestionRuntime(geographyQuestionRuntime);
 registerBrowserQuestionRuntime(homeEconomicsQuestionRuntime);
 registerBrowserQuestionRuntime(mathematicsQuestionRuntime);
 registerBrowserQuestionRuntime(physicalEducationQuestionRuntime);
+
+// Exact SEC-task evidence supplements the preserved historical reference map.
+// Each paper question keeps its original identity, while the Atlas task feed
+// uses markBankCardId to expose only the relevant parts and answer routes.
+const politicsQuestionTopics = new Map<string, Set<string>>();
+for (const task of POLITICS_EXAM_TASKS) {
+  const key = fileQuestionKey('politics-and-society', task.level, task.year, 'main', task.fileid, task.n, 'single', 'ev');
+  const ids = politicsQuestionTopics.get(key) ?? new Set<string>();
+  politicsExamTopicIdsForTask(task).forEach(id => ids.add(id));
+  politicsAndSocietyTopics.filter(topic => topic.level === task.level &&
+    topic.officialQuestionKeys.includes(`${task.year}|main|${task.n}`))
+    .forEach(topic => ids.add(topic.id));
+  politicsQuestionTopics.set(key, ids);
+}
+for (const [key, ids] of politicsQuestionTopics) {
+  FILE_QUESTION_TOPICS.set(key, [...new Set([...(FILE_QUESTION_TOPICS.get(key) ?? []), ...ids])]);
+}
+
 
 /**
  * These browser-audited subjects entered the exam hierarchy after their

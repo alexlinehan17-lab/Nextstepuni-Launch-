@@ -207,7 +207,7 @@ export interface CardFigure {
  * passage, no fabricated facsimile, and no second copy bundled into the app.
  */
 export interface CardSourceMaterial {
-  kind: 'source-text' | 'source-illustration';
+  kind: 'source-text' | 'source-illustration' | 'source-data';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
@@ -618,7 +618,29 @@ export interface GeographyRubric {
   markingGuideNote: string;
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric;
+/** Politics answers mix exact allocations, quality bands and six essay criteria. */
+export interface PoliticsCriterion {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  guidance: string[];
+  bands?: Array<{ label: string; marks: number[]; guidance: string }>;
+}
+
+export interface PoliticsRubric {
+  system: 'politics';
+  taskRequirements: string[];
+  criteria: PoliticsCriterion[];
+  /** Shared published guidance, shown once even when several criteria apply. */
+  schemeGuidance?: string[];
+  markingGuideNote: string;
+  /** Exact scheme pages remain available after reveal, including grade grids. */
+  schemePages: number[];
+  schemeFileid: string;
+}
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -831,6 +853,27 @@ export function groupMarks(g: { claimMax: number; perOption: number; perOptionSt
 
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
+    if (card.rubric.system === 'politics') {
+      const { criteria, schemePages, schemeFileid } = card.rubric;
+      return Boolean(schemeFileid)
+        && schemePages.length > 0
+        && schemePages.every(page => Number.isInteger(page) && page > 0)
+        && criteria.length > 0
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
+        && criteria.every(criterion => {
+          const permitted = criterion.permittedMarks;
+          if (!permitted.length || Math.min(...permitted) !== 0
+              || Math.max(...permitted) !== criterion.maxMarks
+              || new Set(permitted).size !== permitted.length
+              || permitted.some(mark => !Number.isInteger(mark) || mark < 0)) return false;
+          if (!criterion.bands) return true;
+          const marks = criterion.bands.flatMap(band => band.marks).sort((a, b) => a - b);
+          return marks.length === permitted.length
+            && new Set(marks).size === marks.length
+            && marks.every((mark, index) => mark === [...permitted].sort((a, b) => a - b)[index]);
+        });
+    }
     if (card.rubric.system === 'irish') {
       const { criteria } = card.rubric;
       const awardMaximum = criteria
