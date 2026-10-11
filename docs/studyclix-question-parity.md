@@ -1,6 +1,6 @@
 # StudyClix official-question parity ledger
 
-Generated: 2026-10-11T18:30:29.252Z
+Generated: 2026-10-11T19:17:52.711Z
 
 This is the question-level completion ledger. Mock questions are excluded. A
 topic is complete only when every factual StudyClix State-exam heading points
@@ -28,7 +28,7 @@ paper/marking-scheme boundary has been visually checked.
 | german | 25 | 479 | 379 | 100 | 0 | 22 |
 | history | 24 | 466 | 405 | 59 | 0 | 24 |
 | home-economics-s-and-s | 54 | 1,561 | 1,172 | 389 | 0 | 49 |
-| irish | 62 | 842 | 534 | 308 | 0 | 35 |
+| irish | 62 | 842 | 532 | 308 | 0 | 35 |
 | italian | 24 | 340 | 317 | 23 | 0 | 14 |
 | japanese | 14 | 232 | 230 | 2 | 0 | 1 |
 | link-modules | 10 | 181 | 136 | 45 | 0 | 10 |
@@ -43,7 +43,7 @@ paper/marking-scheme boundary has been visually checked.
 | technology | 37 | 1,190 | 1,118 | 72 | 0 | 26 |
 
 Total: **1,609 topics**, **37,105 official topic associations**, 
-**27,210 matched**, **9,856 source blocked**, and **0 awaiting exact crosswalk review**.
+**27,208 matched**, **9,856 source blocked**, and **0 awaiting exact crosswalk review**.
 
 The machine-readable companion contains every non-matched heading under its
 exact subject and topic: `data/examTopics/studyclix-question-parity.json`.

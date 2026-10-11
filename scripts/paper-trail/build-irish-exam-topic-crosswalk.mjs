@@ -1072,6 +1072,34 @@ if (new Set(mappingIdentities).size !== mappingIdentities.length) {
   throw new Error('Duplicate Irish local question mapping');
 }
 
+// A reviewed source correction (sourceTopicCorrection above, from the SEC
+// page's own task label) can contradict an inherited StudyClix association.
+// Record that as an audited reference anomaly carrying the reason rather than
+// keeping a heading the live card no longer carries; a heading that still
+// matches other questions only drops the contradicted ones.
+const correctedMapping = new Map(localQuestionMappings
+  .filter(mapping => mapping.sourceTopicCorrection)
+  .map(mapping => [[mapping.level, mapping.year, mapping.fileid, mapping.n].join('|'), mapping]));
+for (const association of associations) {
+  if (association.resolution !== 'matched') continue;
+  const contradicted = association.target.questionNumbers.filter(number => correctedMapping
+    .get([association.target.level, association.year, association.target.fileid, number].join('|'))
+    ?.sourceTopicCorrection.excludedReferenceTopicIds.includes(association.topicId));
+  if (!contradicted.length) continue;
+  const reasons = [...new Set(contradicted.map(number => correctedMapping
+    .get([association.target.level, association.year, association.target.fileid, number].join('|'))
+    .sourceTopicCorrection.reason))];
+  const kept = association.target.questionNumbers.filter(number => !contradicted.includes(number));
+  if (kept.length) {
+    association.target.questionNumbers = kept;
+    association.excludedQuestionNumbers = contradicted;
+    association.exclusionReason = reasons.join(' ');
+  } else {
+    association.resolution = 'reference-anomaly';
+    association.reason = `Reviewed SEC source: ${reasons.join(' ')}`;
+  }
+}
+
 const tagPapers = papers
   .sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || a.fileid.localeCompare(b.fileid))
   .map(paper => ({
@@ -1196,10 +1224,11 @@ const summary = {
   referenceOfficialAssociations: associations.length,
   referenceMockAssociations: referenceTopics.reduce((sum, topic) => sum + topic.mockQuestionCount, 0),
   referenceProviderSampleAssociations: referenceTopics.reduce((sum, topic) => sum + topic.providerSampleQuestionCount, 0),
-  matchedAssociations: matched.length,
+  matchedAssociations: associations.filter(association => association.resolution === 'matched').length,
+  referenceAnomalyAssociations: associations.filter(association => association.resolution === 'reference-anomaly').length,
   sourceBlockedAssociations: sourceBlocked.length,
   sourceBlockedByReason: blockedByReason,
-  matchedLocalCardLinks: matched.reduce((sum, association) => sum + association.target.questionNumbers.length, 0),
+  matchedLocalCardLinks: associations.filter(association => association.resolution === 'matched').reduce((sum, association) => sum + association.target.questionNumbers.length, 0),
   localPaperVariants: papers.length,
   localPhysicalMappings: localQuestionMappings.length,
   distinctStudentFacingQuestions: logicalQuestions.size,

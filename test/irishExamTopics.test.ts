@@ -118,7 +118,11 @@ describe('Irish exam-topic registry', () => {
       referenceOfficialAssociations: 842,
       referenceMockAssociations: 563,
       referenceProviderSampleAssociations: 76,
-      matchedAssociations: 534,
+      // 2017 and 2024 Foundation Q4(b) carry reviewed source corrections
+      // (Freagra ar chuireadh; Foirm Iarratais): their StudyClix headings are
+      // audited anomalies, 534 → 532 matched, 744 → 742 card links.
+      matchedAssociations: 532,
+      referenceAnomalyAssociations: 2,
       sourceBlockedAssociations: 308,
       sourceBlockedByReason: {
         deferred: 91,
@@ -126,8 +130,11 @@ describe('Irish exam-topic registry', () => {
         sample: 28,
         'oral-material': 60,
       },
-      matchedLocalCardLinks: 744,
+      matchedLocalCardLinks: 742,
     });
+    const anomalies = irishCrosswalk.associations.filter(item => item.resolution === 'reference-anomaly');
+    expect(anomalies).toHaveLength(2);
+    expect(anomalies.every(item => 'reason' in item && /^Reviewed SEC source: \S/.test(item.reason as string))).toBe(true);
     expect(irishCrosswalk.policy.excludedContent).toContain('No commercial mock question');
     const blocked = irishCrosswalk.associations.filter(item => item.resolution === 'source-blocked');
     expect(blocked).toHaveLength(308);

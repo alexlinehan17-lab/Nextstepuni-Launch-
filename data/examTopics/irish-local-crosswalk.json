@@ -17,7 +17,8 @@
     "referenceOfficialAssociations": 842,
     "referenceMockAssociations": 563,
     "referenceProviderSampleAssociations": 76,
-    "matchedAssociations": 534,
+    "matchedAssociations": 532,
+    "referenceAnomalyAssociations": 2,
     "sourceBlockedAssociations": 308,
     "sourceBlockedByReason": {
       "deferred": 91,
@@ -25,7 +26,7 @@
       "sample": 28,
       "oral-material": 60
     },
-    "matchedLocalCardLinks": 744,
+    "matchedLocalCardLinks": 742,
     "localPaperVariants": 91,
     "localPhysicalMappings": 2091,
     "distinctStudentFacingQuestions": 2091,
@@ -12728,7 +12729,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "W-4B",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "foundation",
         "lang": "iv",
@@ -12738,7 +12739,8 @@
         "questionNumbers": [
           "W-4B"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: SEC 2024 Foundation PDF page 15 identifies this task as Scríobh · Foirm Iarratais; the retained external heading is mis-grouped."
     },
     {
       "topicId": "irish-foundation-write-a-letter",
@@ -13642,7 +13644,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "W-4B",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "foundation",
         "lang": "iv",
@@ -13652,7 +13654,8 @@
         "questionNumbers": [
           "W-4B"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: SEC 2017 Foundation PDF page 15 identifies this task as Scríobh · Freagra ar chuireadh; the retained external heading is mis-grouped."
     },
     {
       "topicId": "irish-foundation-write-from-pictures",

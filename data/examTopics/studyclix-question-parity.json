@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T18:30:29.252Z",
+  "generatedAt": "2026-10-11T19:17:52.711Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,9 +11,9 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 27210,
+    "matched": 27208,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 39,
+    "referenceAnomaly": 41,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
     "topicsWithGaps": 1343
@@ -42522,9 +42522,9 @@
       "totals": {
         "referenceTopics": 62,
         "referenceOfficialAssociations": 842,
-        "matched": 534,
+        "matched": 532,
         "sourceBlocked": 308,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 2,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
         "topicsWithGaps": 35
@@ -44360,9 +44360,9 @@
           "label": "Write a Letter...",
           "sourcePath": "/leaving-certificate/irish/foundation/write-a-letter",
           "referenceOfficialAssociations": 12,
-          "matched": 8,
+          "matched": 7,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -44380,6 +44380,10 @@
             {
               "heading": "2012 - Paper Sample - Section 2 - Question 4 - Part b",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2024 - Question 4 - Part B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -44452,9 +44456,9 @@
           "label": "Write From Pictures...",
           "sourcePath": "/leaving-certificate/irish/foundation/write-from-pictures",
           "referenceOfficialAssociations": 20,
-          "matched": 15,
+          "matched": 14,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -44476,6 +44480,10 @@
             {
               "heading": "2012 - Paper Sample - Section 2 - Question 5 - Part a",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2017 - Section 2 - Question 4 - Part b",
+              "resolution": "reference-anomaly"
             }
           ]
         }
