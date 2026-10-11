@@ -64,7 +64,12 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   source, subjectId, year, paperFileid,
 }) => {
   const isIllustration = source.kind === 'source-illustration';
-  const materialLabel = isIllustration ? 'illustration sheet' : 'source text';
+  const isSupplementary = source.kind === 'supplementary-text';
+  const isLinked = source.kind === 'linked-reading';
+  const readings = source.readings ?? [];
+  const texts = source.texts ?? [];
+  const itemCount = isLinked ? readings.length : isSupplementary ? texts.length : source.pages.length;
+  const materialLabel = isSupplementary || isLinked ? 'supplementary reading' : isIllustration ? 'illustration sheet' : 'source text';
   const [open, setOpen] = useState(false);
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
   const [failed, setFailed] = useState(false);
@@ -77,8 +82,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const swipeStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
 
   const url = useMemo(() => paperUrl(paperStoragePath(
-    'lc', subjectId, year, 'paper', withPdfExtension(paperFileid),
-  )), [paperFileid, subjectId, year]);
+    'lc', subjectId, source.sourceYear ?? year, 'paper', withPdfExtension(source.sourceFileid ?? paperFileid),
+  )), [paperFileid, subjectId, year, source.sourceYear, source.sourceFileid]);
   const regions = useMemo(
     () => source.pages.map(page => [{ p: page }]),
     [source.pages],
@@ -101,6 +106,18 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   useEffect(() => {
     if (!open) return;
+    const escape = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      event.preventDefault();
+      event.stopPropagation();
+      close();
+    };
+    document.addEventListener('keydown', escape, true);
+    return () => document.removeEventListener('keydown', escape, true);
+  }, [open, close]);
+
+  useEffect(() => {
+    if (!open || isSupplementary || isLinked) return;
     let cancelled = false;
     setFailed(false);
     setPdf(null);
@@ -108,7 +125,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       .then(document => { if (!cancelled) setPdf(document); })
       .catch(() => { if (!cancelled) setFailed(true); });
     return () => { cancelled = true; };
-  }, [open, url]);
+  }, [open, url, isSupplementary, isLinked]);
 
   useEffect(() => {
     if (!open) return;
@@ -122,22 +139,31 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, [open]);
 
   const goTo = useCallback((next: number) => {
-    const index = clamp(next, source.pages.length - 1);
+    const index = clamp(next, itemCount - 1);
+    const activeControl = document.activeElement;
     setPageIndex(index);
     const slide = trackRef.current?.children[index] as HTMLElement | undefined;
     if (slide && typeof slide.scrollIntoView === 'function') {
       slide.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
     }
-  }, [source.pages.length]);
+    // Reaching the first/last item disables the arrow that was just pressed.
+    // Keep keyboard focus in the reader when the browser blurs that control.
+    requestAnimationFrame(() => {
+      if (activeControl instanceof HTMLButtonElement && activeControl.disabled) {
+        activeControl.closest('[role="dialog"]')
+          ?.querySelector<HTMLButtonElement>('[aria-current="page"]')?.focus();
+      }
+    });
+  }, [itemCount]);
 
   const trackScrolled = useCallback(() => {
     if (scrollFrame.current !== null) cancelAnimationFrame(scrollFrame.current);
     scrollFrame.current = requestAnimationFrame(() => {
       const track = trackRef.current;
       if (!track || track.clientWidth === 0) return;
-      setPageIndex(clamp(Math.round(track.scrollLeft / track.clientWidth), source.pages.length - 1));
+      setPageIndex(clamp(Math.round(track.scrollLeft / track.clientWidth), itemCount - 1));
     });
-  }, [source.pages.length]);
+  }, [itemCount]);
 
   const swipeStarted = useCallback((event: React.PointerEvent<HTMLDivElement>) => {
     if (zoom !== 1 || event.isPrimary === false) return;
@@ -192,12 +218,6 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, [completeSwipe]);
 
   const trapDialogKeys = useCallback((event: React.KeyboardEvent<HTMLDivElement>) => {
-    if (event.key === 'Escape') {
-      event.preventDefault();
-      event.stopPropagation();
-      close();
-      return;
-    }
     if (event.key !== 'Tab') return;
     const controls = Array.from(event.currentTarget.querySelectorAll<HTMLElement>(
       'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])',
@@ -215,7 +235,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       event.preventDefault();
       first.focus();
     }
-  }, [close]);
+  }, []);
 
   const modal = open && typeof document !== 'undefined' ? createPortal(
     <div className="mark-bank-theme mb-source-reader-overlay">
@@ -226,12 +246,12 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
         aria-labelledby="mb-source-reader-title"
         onKeyDown={trapDialogKeys}
       >
-        <header className="mb-source-reader-header">
+        <header className={`mb-source-reader-header${isLinked ? ' mb-source-reader-header-linked' : ''}`}>
           <div className="mb-source-reader-heading">
             <span>{source.label} · {materialLabel}</span>
             <h2 id="mb-source-reader-title">{source.title}</h2>
           </div>
-          <div className="mb-source-reader-tools" aria-label="Page display controls">
+          {!isLinked && <div className="mb-source-reader-tools" aria-label="Page display controls">
             <button
               type="button"
               onClick={() => setZoom(value => Math.max(1, Number((value - 0.25).toFixed(2))))}
@@ -251,13 +271,27 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
             >
               <span aria-hidden="true">+</span>
             </button>
-          </div>
+          </div>}
           <button ref={closeRef} type="button" className="mb-source-reader-close" onClick={close} aria-label={`Close ${materialLabel}`}>
             <CloseIcon />
           </button>
         </header>
 
-        <div
+        {isLinked ? (
+          <div className="mb-source-reader-reading-list">
+            <p>{source.presentationNote}</p>
+            {readings.map(reading => (
+              <article key={reading.sourceUrl}>
+                <h3>{reading.title}</h3>
+                <p>{reading.author} · {reading.edition}</p>
+                <p>{reading.location}</p>
+                <a href={reading.sourceUrl} target="_blank" rel="noreferrer">
+                  Read {reading.title}{' '}<span>Opens in a new tab</span>
+                </a>
+              </article>
+            ))}
+          </div>
+        ) : <div
           ref={trackRef}
           className="mb-source-reader-track"
           onScroll={trackScrolled}
@@ -269,9 +303,26 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
           onTouchStart={touchSwipeStarted}
           onTouchEnd={touchSwipeFinished}
           style={{ touchAction: zoom === 1 ? 'pan-y' : 'auto' }}
-          aria-label={`${source.label} pages`}
+          aria-label={`${source.label} ${isSupplementary ? 'poems' : 'pages'}`}
         >
-          {source.pages.map((page, index) => (
+          {isSupplementary ? texts.map((text, index) => (
+            <section key={text.title} className="mb-source-reader-slide" aria-label={`Poem ${index + 1} of ${itemCount}`}>
+              <div className="mb-source-reader-page-meta">
+                <span>Supplementary reading</span><span>{index + 1} / {itemCount}</span>
+              </div>
+              <div className="mb-source-reader-page-pan">
+                <article className="mb-source-reader-poem" style={{ fontSize: `${zoom}em` }}>
+                  <h3>{text.title}</h3>
+                  <p className="mb-source-reader-poet">{text.author}</p>
+                  {text.stanzas.map((lines, stanza) => (
+                    <p className="mb-source-reader-stanza" key={stanza}>
+                      {lines.map((line, number) => <span key={number}>{line}</span>)}
+                    </p>
+                  ))}
+                </article>
+              </div>
+            </section>
+          )) : source.pages.map((page, index) => (
             <section
               key={page}
               className="mb-source-reader-slide"
@@ -314,41 +365,41 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
               </div>
             </section>
           ))}
-        </div>
+        </div>}
 
         <footer className="mb-source-reader-footer">
           <div className="mb-source-reader-provenance">
-            <strong>{source.attribution}</strong>
-            <span>{source.presentationNote}</span>
-            <a href={`${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
-              Open the original {isIllustration ? 'illustration sheet' : 'paper'}
-            </a>
+            <strong>{isSupplementary ? texts[pageIndex]?.edition : source.attribution}</strong>
+            {!isLinked && <span>{source.presentationNote}</span>}
+            {!isLinked && <a href={isSupplementary ? texts[pageIndex]?.sourceUrl : `${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
+              {isSupplementary ? 'View this edition and attribution' : `Open the original ${isIllustration ? 'illustration sheet' : 'paper'}`}
+            </a>}
           </div>
-          <div className="mb-source-reader-navigation">
+          {!isLinked && <div className="mb-source-reader-navigation">
             <button
               type="button" onClick={() => goTo(pageIndex - 1)} disabled={pageIndex === 0}
-              aria-label="Previous source page"
+              aria-label={isSupplementary ? 'Previous poem' : 'Previous source page'}
             >
               <ArrowIcon direction="left" />
             </button>
-            <div className="mb-source-reader-dots" aria-label={`Page ${pageIndex + 1} of ${source.pages.length}`}>
-              {source.pages.map((page, index) => (
+            <div className="mb-source-reader-dots" aria-label={`${isSupplementary ? 'Poem' : 'Page'} ${pageIndex + 1} of ${itemCount}`}>
+              {Array.from({ length: itemCount }, (_, index) => (
                 <button
-                  key={page}
+                  key={index}
                   type="button"
                   onClick={() => goTo(index)}
-                  aria-label={`Go to source page ${index + 1}`}
+                  aria-label={isSupplementary ? `Read ${texts[index].title}` : `Go to source page ${index + 1}`}
                   aria-current={index === pageIndex ? 'page' : undefined}
                 />
               ))}
             </div>
             <button
-              type="button" onClick={() => goTo(pageIndex + 1)} disabled={pageIndex === source.pages.length - 1}
-              aria-label="Next source page"
+              type="button" onClick={() => goTo(pageIndex + 1)} disabled={pageIndex === itemCount - 1}
+              aria-label={isSupplementary ? 'Next poem' : 'Next source page'}
             >
               <ArrowIcon direction="right" />
             </button>
-          </div>
+          </div>}
         </footer>
       </div>
     </div>,
@@ -363,7 +414,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
           <span>Read {source.label}</span>
           <strong>{source.title}</strong>
           <small>
-            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {isIllustration ? 'official examination imagery' : 'exact examination text'}
+            {isLinked ? `${itemCount} poems · published reading copies` : isSupplementary ? `${itemCount} poems · supplementary reading editions` :
+              `${itemCount} printed ${itemCount === 1 ? 'page' : 'pages'} · ${isIllustration ? 'official examination imagery' : 'exact examination text'}`}
           </small>
         </span>
         <span className="mb-source-material-open" aria-hidden="true">

@@ -35,6 +35,7 @@ interface AuthoredEnglishCard {
   taskRequirements: string[];
   stem?: string;
   sourceMaterial?: CardSourceMaterial;
+  additionalSourceMaterials?: CardSourceMaterial[];
 }
 
 const DATA = authored.cards as AuthoredEnglishCard[];
@@ -84,8 +85,11 @@ const COMBINED_CRITERIA = [
 ];
 
 const discreteCriteria = (total: number, requirements: string[]): PclmCriterion[] => {
-  const main = total * .3;
-  const mechanics = total * .1;
+  // The COVID-adjusted 2021/2022 Ordinary Single Text schemes publish
+  // P=11, C=11, L=11, M=2 for a 35-mark response. It is not a 30/30/30/10
+  // percentage split; preserve the SEC's actual allocation.
+  const main = total === 35 ? 11 : total * .3;
+  const mechanics = total === 35 ? 2 : total * .1;
   if (!Number.isInteger(main) || !Number.isInteger(mechanics)) {
     throw new Error(`English discrete PCLM total ${total} cannot be divided 30/30/30/10`);
   }
@@ -188,6 +192,7 @@ const makeCard = (card: AuthoredEnglishCard): SecRubricCard => ({
   questionRef: card.questionRef,
   stem: card.stem,
   sourceMaterial: card.sourceMaterial,
+  additionalSourceMaterials: card.additionalSourceMaterials,
   questionText: card.questionText,
   totalMarks: card.totalMarks,
   schemeCitation:

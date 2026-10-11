@@ -206,14 +206,36 @@ export interface CardFigure {
  * are rendered from the real paper PDF already held by Paper Trail: no retyped
  * passage, no fabricated facsimile, and no second copy bundled into the app.
  */
+export interface SupplementaryReading {
+  title: string;
+  author: string;
+  /** Preserve the edition's stanza and line breaks. */
+  stanzas: string[][];
+  edition: string;
+  sourceUrl: string;
+}
+
+export interface LinkedReading {
+  title: string;
+  author: string;
+  edition: string;
+  /** Page-aware link to the publisher's reading copy, opened in a new tab. */
+  sourceUrl: string;
+  location: string;
+}
+
 export interface CardSourceMaterial {
-  kind: 'source-text' | 'source-illustration';
+  kind: 'source-text' | 'source-illustration' | 'supplementary-text' | 'linked-reading';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
   title: string;
-  /** One-based PDF pages, in reading order. */
+  /** One-based PDF pages, in reading order; empty for supplementary texts. */
   pages: number[];
+  /** Attributed reading editions for named studied works absent from the paper. */
+  texts?: SupplementaryReading[];
+  /** Published reading copies for named studied works absent from this paper. */
+  readings?: LinkedReading[];
   /**
    * A separate official SEC document when the required material is not inside
    * the question paper itself. Art publishes its illustrations as a companion
@@ -221,6 +243,8 @@ export interface CardSourceMaterial {
    * wrong PDF. Omitted for passages that live in the question paper.
    */
   sourceFileid?: string;
+  /** Examination year of a verified reading copy from another paper. */
+  sourceYear?: number;
   /** The author/publication acknowledgement printed by the SEC. */
   attribution: string;
   /** Clarifies that the displayed layout is the official examination version. */

@@ -511,13 +511,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   const strands = strandsFor(subjectId);
   const coveredTopics = strands.flatMap(strand => strand.topics).filter(topic => cardsForTopic(topic.id, cards).length > 0).length;
   const totalTopics = strands.reduce((sum, strand) => sum + strand.topics.length, 0);
-  // English is reconciled against every selectable response in all twenty
-  // 2021–2025 papers. Empty taxonomy rows there mean "not examined in this
-  // corpus", not "unfinished". Showing dozens of disabled poets and roll-up
-  // categories made a complete subject look half-built and buried the useful
-  // choices on mobile.
-  const completePaperCorpus = subjectId === 'english' || subjectId === 'irish';
-  const visibleStrands = completePaperCorpus
+  // Keep the literature menu focused on topics with practice cards. This is
+  // a display choice, not evidence that every Paper Trail task is covered.
+  const showOnlyExaminedTopics = subjectId === 'english' || subjectId === 'irish';
+  const completePaperCorpus = subjectId === 'irish';
+  const visibleStrands = showOnlyExaminedTopics
     ? strands
       .map(strand => ({
         ...strand,

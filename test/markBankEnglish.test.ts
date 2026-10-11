@@ -277,6 +277,29 @@ describe('English PCLM cards', () => {
     expect(ALL.filter(card => !tariffReconciles(card)).map(card => card.questionRef)).toEqual([]);
   });
 
+  it('retains the 2021–2022 Ordinary Single Text adjustment and its published PCLM allocation', () => {
+    const adjusted = ALL.filter(card => card.level === 'ordinary'
+      && (card.year === 2021 || card.year === 2022)
+      && card.questionRef.includes('Single Text'));
+    // SEC Ordinary schemes, PDF p.19: all nine texts have four 35-mark
+    // questions. Q1 is 10+10+15; Q2–4 use P=11,C=11,L=11,M=2.
+    expect(adjusted).toHaveLength(72);
+    for (const card of adjusted) {
+      expect(card.totalMarks, card.id).toBe(35);
+      const assessment = card.rubric.assessment;
+      if (card.id.endsWith('-q1')) {
+        expect(assessment.mode, card.id).toBe('composite');
+        if (assessment.mode !== 'composite') throw new Error(card.id);
+        expect(assessment.components.map(part => part.totalMarks), card.id).toEqual([10, 10, 15]);
+      } else {
+        expect(assessment.mode, card.id).toBe('discrete');
+        if (assessment.mode !== 'discrete') throw new Error(card.id);
+        expect(assessment.criteria.map(criterion => criterion.maxMarks), card.id).toEqual([11, 11, 11, 2]);
+        expect(pclmMarks(card, { purpose: 11, coherence: 11, language: 11, mechanics: 2 }), card.id).toBe(35);
+      }
+    }
+  });
+
   it('keeps Higher and Ordinary grade families separate', () => {
     for (const card of ALL) {
       const assessment = card.rubric.assessment;

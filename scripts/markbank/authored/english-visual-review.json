@@ -1,0 +1,2152 @@
+{
+  "evidenceRule": "Only pages actually displayed and inspected are recorded. Rendering files or passing a parser does not count as visual review. Task/scheme and finite-route gates are deliberately separate.",
+  "papers": [
+    {
+      "paperId": "english-2010-hl-p1",
+      "paperSha256": "197fc287a180cc0c7e0fb4b9296bb0cb3fbf11308ce4d25f48b81ce3663cee33",
+      "schemeSha256": "74474e375f2d158a1d2bb61a48eb0cc71cc8dc3ddf6d418a89d1d1dcbad54804",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "QA/B boundaries on these pages; Text 2 quotations are not a numbered choice pool; Text 3 has two book covers.",
+        "Three texts each contain QA15/15/20 and B50; seven compositions100. HL Text3 QA(ii) prefers one of two covers but requires both in the comparison: one additional route."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        38,
+        39
+      ],
+      "independentPaperTally": {
+        "baseTasks": 19,
+        "finiteRoutes": 20,
+        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100. HL Text3 QA(ii) prefers one of two covers but requires both in the comparison: one additional route."
+      }
+    },
+    {
+      "paperId": "english-2010-hl-p2",
+      "paperSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac",
+      "schemeSha256": "74474e375f2d158a1d2bb61a48eb0cc71cc8dc3ddf6d418a89d1d1dcbad54804",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Five Single Text works each offer two60-mark essays; two comparative modes each offer70 or30+40; unseen10+10 or20; four prescribed50-mark essays. No additional closed options: studied texts/poems and at-least evidence counts remain open. Total23 tasks/routes."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "independentPaperTally": {
+        "baseTasks": 23,
+        "finiteRoutes": 23,
+        "basis": "Five Single Text works each offer two60-mark essays; two comparative modes each offer70 or30+40; unseen10+10 or20; four prescribed50-mark essays. No additional closed options: studied texts/poems and at-least evidence counts remain open. Total23 tasks/routes."
+      }
+    },
+    {
+      "paperId": "english-2010-ol-p1",
+      "paperSha256": "e27c0e994d43d94a0e886544222e929ef27a6ecf76f065e5dd2051547b5fce72",
+      "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Four numbered images; QA(i) choose one, QA(ii) choose three, QA(iii) least preferred situation; B is an open activity holiday.",
+        "Three texts each contain QA15/15/20 and B50; seven compositions100. OL Text3 description has four choices, three-caption selection has C(4,3)=4, and least-liked situation has four: nine additional routes. Composition7 for/against adds one route. Brave/foolish/both is flexible."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        36,
+        37
+      ],
+      "independentPaperTally": {
+        "baseTasks": 19,
+        "finiteRoutes": 29,
+        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100. OL Text3 description has four choices, three-caption selection has C(4,3)=4, and least-liked situation has four: nine additional routes. Composition7 for/against adds one route. Brave/foolish/both is flexible."
+      }
+    },
+    {
+      "paperId": "english-2010-ol-p2",
+      "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Wuthering Heights Q1(a)(b) at 10 each, Q2 at 10 and three Q3 alternatives at 30; inner sentence/atmosphere choices remain to expand.",
+        "Nine Single Text blocks each contain six leaf tasks (three10 and three30 alternatives):54. Comparative A has four tasks; B five including15+15+40:9. Unseen2. Four prescribed blocks six each:24. Base89. Additional closed routes:13 Single Text (including five Mundy sisters),13 poetry (including five favourite stanzas and five inherited exclusion choices). Total115.",
+        "Resolved D Q2(iii) reader: attributed 1908/1919 Yeats editions of the two named poems supplied as supplementary reading, with separate provenance and preserved stanza/line breaks. Verified desktop and390px phone, light/dark, navigation/zoom/close/focus. All89 scheme tasks now reviewed."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "openFindings": [],
+      "independentPaperTally": {
+        "baseTasks": 89,
+        "finiteRoutes": 115,
+        "basis": "Nine Single Text blocks each contain six leaf tasks (three10 and three30 alternatives):54. Comparative A has four tasks; B five including15+15+40:9. Unseen2. Four prescribed blocks six each:24. Base89. Additional closed routes:13 Single Text (including five Mundy sisters),13 poetry (including five favourite stanzas and five inherited exclusion choices). Total115."
+      }
+    },
+    {
+      "paperId": "english-2011-hl-p1",
+      "paperSha256": "f385793c803cd54ff0367395fb10d1230e32413ed99a40328b1ce341b57ace2a",
+      "schemeSha256": "083fb122da5ff788e1005d01cce7aabafc1321fb1250038cbf188c79448e3354",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Three texts each contain QA15/15/20 and B50; seven compositions100:19 tasks. Composition2 offers newspaper/magazine2, adding one route:20. Mystery-genre suggestions and at-least stylistic features stay open."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        38,
+        39
+      ],
+      "independentPaperTally": {
+        "baseTasks": 19,
+        "finiteRoutes": 20,
+        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100:19 tasks. Composition2 offers newspaper/magazine2, adding one route:20. Mystery-genre suggestions and at-least stylistic features stay open."
+      }
+    },
+    {
+      "paperId": "english-2011-hl-p2",
+      "paperSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4",
+      "schemeSha256": "083fb122da5ff788e1005d01cce7aabafc1321fb1250038cbf188c79448e3354",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Five Single Text works with two60-mark alternatives:10. Comparative A and B each70 or30+40:6. Unseen10+10 or20:3. Four prescribed50 options:4. Total23 tasks and23 routes. Same/different insight, changed/reinforced interpretation and male/female/both are flexible, not fixed take-N choices."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "independentPaperTally": {
+        "baseTasks": 23,
+        "finiteRoutes": 23,
+        "basis": "Five Single Text works with two60-mark alternatives:10. Comparative A and B each70 or30+40:6. Unseen10+10 or20:3. Four prescribed50 options:4. Total23 tasks and23 routes. Same/different insight, changed/reinforced interpretation and male/female/both are flexible, not fixed take-N choices."
+      }
+    },
+    {
+      "paperId": "english-2011-ol-p1",
+      "paperSha256": "b577de868fcbbe1ee2b6718f0a2d22b153212489bddea777d29d73c97790aaab",
+      "schemeSha256": "d4950526ba99257a5423db292a593ad8f22607536d5b0847c493e8d91519ec98",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Three texts each contain QA15/15/20 and B50; seven compositions100:19 tasks. Composition1 names three event settings (own life/school/local area), adding two routes:21. All three QA(iii) responses have linked a/b parts sharing20, confirmed in scheme. Open illustration media and free personal views do not add closed routes."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        37,
+        38
+      ],
+      "independentPaperTally": {
+        "baseTasks": 19,
+        "finiteRoutes": 21,
+        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100:19 tasks. Composition1 names three event settings (own life/school/local area), adding two routes:21. All three QA(iii) responses have linked a/b parts sharing20, confirmed in scheme. Open illustration media and free personal views do not add closed routes."
+      }
+    },
+    {
+      "paperId": "english-2011-ol-p2",
+      "paperSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303",
+      "schemeSha256": "d4950526ba99257a5423db292a593ad8f22607536d5b0847c493e8d91519ec98",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Damaged text pages visually transcribed with source hashes; unseen has three 10-mark alternatives, answer any two.",
+        "Independent tally: Single Text54 + Comparative10 + Unseen3 + Prescribed24 =91 tasks. Fixed routes add20: two place pairs(+2), Boatwright sisters(+2), for/against(+1), five women(+4), Hamlet relationships(+1), four three-phrase pools(+8), three seasons other than spring(+2). Total111 routes. Unseen any-two governs three separately marked10 tasks. Required two diary entries and paired image/title prompts each retain one published award.",
+        "All prescribed poems and accompanying pictures verified on PDF11/13/15/16; PDF17–20 blank. Source repairs checked against original pages. Hopkins2(iii) carries Spring plus a separately attributed2021 Inversnaid reading copy, as schemePDF36 requires both."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "independentPaperTally": {
+        "baseTasks": 91,
+        "finiteRoutes": 111,
+        "basis": "Independent tally: Single Text54 + Comparative10 + Unseen3 + Prescribed24 =91 tasks. Fixed routes add20: two place pairs(+2), Boatwright sisters(+2), for/against(+1), five women(+4), Hamlet relationships(+1), four three-phrase pools(+8), three seasons other than spring(+2). Total111 routes. Unseen any-two governs three separately marked10 tasks. Required two diary entries and paired image/title prompts each retain one published award."
+      }
+    },
+    {
+      "paperId": "english-2012-hl-p1",
+      "paperSha256": "fa2ee483a139b7a6bb6689d7ef894ef01052b32451a609539aff5b793b4f95ce",
+      "schemeSha256": "ea583e9592832ae169f04bae190a0ccdcc52481d807dd44624495e52d22be320",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Text 2 has three numbered images, choose two at 20 marks; Text 3 chooses image A/B at 15 while referring to both.",
+        "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Internal expansions: choose2of3images(+2), chooseA/Billustration(+1), support/opposeoutings(+1), newspaper/magazine(+1)=24routes."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        38,
+        39
+      ],
+      "independentPaperTally": {
+        "baseTasks": 19,
+        "finiteRoutes": 24,
+        "basis": "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Internal expansions: choose2of3images(+2), chooseA/Billustration(+1), support/opposeoutings(+1), newspaper/magazine(+1)=24routes."
+      }
+    },
+    {
+      "paperId": "english-2012-hl-p2",
+      "paperSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474",
+      "schemeSha256": "ea583e9592832ae169f04bae190a0ccdcc52481d807dd44624495e52d22be320",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Five Single Text works with two60-mark alternatives:10. Comparative General Vision and Viewpoint / Literary Genre each70 or30+40:6. Unseen10+10 or20:3. Four prescribed50 options:4. Total23 tasks and23 routes. At-least-two texts and setting or settings are flexible; open emotions, images, studied poems and qualified literary judgements do not yield closed answer pools."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "independentPaperTally": {
+        "baseTasks": 23,
+        "finiteRoutes": 23,
+        "basis": "Five Single Text works with two60-mark alternatives:10. Comparative General Vision and Viewpoint / Literary Genre each70 or30+40:6. Unseen10+10 or20:3. Four prescribed50 options:4. Total23 tasks and23 routes. At-least-two texts and setting or settings are flexible; open emotions, images, studied poems and qualified literary judgements do not yield closed answer pools."
+      }
+    },
+    {
+      "paperId": "english-2012-ol-p1",
+      "paperSha256": "28b776a0d6e7eeeefcff36182dfc359185f088f4feb9fc64a520d11de5ae726b",
+      "schemeSha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Google Image 1 has five words: Original, Unconventional, Successful, Creative, Intelligent. Choose three, 15 marks.",
+        "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Text1B has sporting ambition/fear/schoolplay/musical/debate=5routes(+4); Text3QAi chooses3of5printedwords=10routes(+9). Total35routes. Three diary entries remain a single50-mark award. All other choices concern open evidence, personal material or flexible judgements."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        43,
+        44
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 35,
+        "basis": "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Text1B has sporting ambition/fear/schoolplay/musical/debate=5routes(+4); Text3QAi chooses3of5printedwords=10routes(+9). Total35routes. Three diary entries remain a single50-mark award. All other choices concern open evidence, personal material or flexible judgements."
+      }
+    },
+    {
+      "paperId": "english-2012-ol-p2",
+      "paperSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
+      "schemeSha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Independent tally: Single Text54 + Comparative10 + Unseen2 + Prescribed24 =90 tasks. Fixed routes add23: five prescribed-opening pairs(+5), four three-statement pools(+8), Hamlet/Polonius(+1), four three-collection pools(+8), two Kinsella attitudes(+1). Total113 routes. Two unseen10 tasks are compulsory; paired diary entries each retain one30-mark award.",
+        "Complete unillustrated poems verified: Shoulders/Naomi Shihab Nye PDF11; A Constable Calls/Seamus Heaney PDF12; The Sun/Mary Oliver PDF14; A Summer Morning/Richard Wilbur PDF16; Mirror in February/Thomas Kinsella PDF18. All quoted lines retained, including Sun1(c). PDF20 blank. Prescribed openings now use exact printed wording and preserve option IDs."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "independentPaperTally": {
+        "baseTasks": 90,
+        "finiteRoutes": 113,
+        "basis": "Independent tally: Single Text54 + Comparative10 + Unseen2 + Prescribed24 =90 tasks. Fixed routes add23: five prescribed-opening pairs(+5), four three-statement pools(+8), Hamlet/Polonius(+1), four three-collection pools(+8), two Kinsella attitudes(+1). Total113 routes. Two unseen10 tasks are compulsory; paired diary entries each retain one30-mark award."
+      }
+    },
+    {
+      "paperId": "english-2013-hl-p1",
+      "paperSha256": "03235bda5290e5627605b78e8d8d5b6fa81a21ff8b605c5016224b85b1073961",
+      "schemeSha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Three texts each have three QA parts (15/15/20) and B50; seven compositions100. Debate sides and manipulated/manipulative story directions each add one route. Both images in Text1 QA(ii) are required; Text3 QA(ii) allows open written images with optional visual combination.",
+        "Every raw selection directive reconciled, including source prose and outer alternatives. Task boundary/criteria ledger covers all tasks and finite route count matches independent visual tally."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "independentPaperTally": {
+        "baseTasks": 19,
+        "finiteRoutes": 21,
+        "basis": "Three texts each have three QA parts (15/15/20) and B50; seven compositions100. Debate sides and manipulated/manipulative story directions each add one route. Both images in Text1 QA(ii) are required; Text3 QA(ii) allows open written images with optional visual combination."
+      },
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "paperId": "english-2013-hl-p2",
+      "paperSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
+      "schemeSha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Five single texts with two alternatives60 each. Two comparative modes each Q1=70, Q2=30+40. Unseen Q1=10+10 or Q2=20. Four prescribed essays50. No closed internal named pool. Paper8 blank.",
+        "Every raw selection directive reconciled, including source prose and outer alternatives. Task boundary/criteria ledger covers all tasks and finite route count matches independent visual tally."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "independentPaperTally": {
+        "baseTasks": 23,
+        "finiteRoutes": 23,
+        "basis": "Five single texts with two alternatives60 each. Two comparative modes each Q1=70, Q2=30+40. Unseen Q1=10+10 or Q2=20. Four prescribed essays50. No closed internal named pool. Paper8 blank."
+      },
+      "schemePagesTextChecked": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "paperId": "english-2013-ol-p1",
+      "paperSha256": "aa623adf5e183f4d7fe49eb3dbe7f403da8f345cf391e8c6e305cf9490d54cc8",
+      "schemeSha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Three texts each have four QA parts (15/15/10/10) and B50; seven compositions100. Two three-word choose-two pools add four routes; four review formats add three; three essay topics add two; two debate sides add one.",
+        "Every raw selection directive reconciled, including source prose and outer alternatives. Task boundary/criteria ledger covers all tasks and finite route count matches independent visual tally."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 32,
+        "basis": "Three texts each have four QA parts (15/15/10/10) and B50; seven compositions100. Two three-word choose-two pools add four routes; four review formats add three; three essay topics add two; two debate sides add one."
+      },
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "paperId": "english-2013-ol-p2",
+      "paperSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
+      "schemeSha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Visually confirmed corrected Comparative A scheme start and continuation; legacy crop started after opening tasks. Per-task full-paper reconciliation remains pending.",
+        "Inspected cover and Single Text A–E opening pages, including C Q3(ii)’s two prescribed openings and B’s continuation onto p.3.",
+        "Full 20-page visual sweep: all work identities and A–I task continuations checked. Comparative Aspects of Story p.9 has Tension/Climax/Resolution in both outer questions and each dependent marked part. Earbud by Bill Holm and earbud photograph p.10. Anseo by Paul Muldoon p.11; Jungian Cows by Penelope Shuttle p.13; The Fish lines 1–33 by Elizabeth Bishop p.15; Like as the Waves by William Shakespeare p.17. Question-only continuation pages 12/14/16 and blank pp.18–20 are excluded from poem source readers.",
+        "Every raw selection directive reconciled, including source prose and outer alternatives. Task boundary/criteria ledger covers all tasks and finite route count matches independent visual tally."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesInspected": [
+        31,
+        32,
+        33
+      ],
+      "independentPaperTally": {
+        "singleTextTasks": 54,
+        "comparativeTasks": 10,
+        "unseenPoetryTasks": 2,
+        "prescribedPoetryTasks": 24,
+        "baseTasks": 90,
+        "finiteRoutes": 107,
+        "basis": "Visually read all 20 pages. Single Text 9 x 6 tasks, four two-opening choices add four. Comparative each mode Q1 30+40 and Q2 20+20+30; Aspects of Story gives three routes for each of five marked tasks, adding ten. Unseen 2 x 10. Prescribed 4 x 6 tasks; Jungian Cows Q1(c) has two statements and The Fish Q1(a) three, adding three. Scheme boundaries and criteria cross-checked; raw directive scan fully reconciled."
+      },
+      "schemePagesTextChecked": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "paperId": "english-2014-hl-p1",
+      "paperSha256": "c3d418ab7f8ad20e6315e40322a83e0e994b62c36afde8231206291405f0f941",
+      "schemeSha256": "a7970f165e738600e8f3226db66d7f5a4da1f1238c34696830eddc0104efff1f",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Two named writers, Alan Warner and John Lanchester. QA(i) selects one summary, QA(ii) both required, QA(iii) selects more effective while discussing both.",
+        "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Outline of Warner or Lanchester creates two15-mark routes(+1), total20. Comparing their effectiveness allows equality; observations, optional register and beautiful/exotic remain open or flexible."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        38,
+        39,
+        42
+      ],
+      "independentPaperTally": {
+        "baseTasks": 19,
+        "finiteRoutes": 20,
+        "basis": "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Outline of Warner or Lanchester creates two15-mark routes(+1), total20. Comparing their effectiveness allows equality; observations, optional register and beautiful/exotic remain open or flexible."
+      }
+    },
+    {
+      "paperId": "english-2014-hl-p2",
+      "paperSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df",
+      "schemeSha256": "a7970f165e738600e8f3226db66d7f5a4da1f1238c34696830eddc0104efff1f",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Five Single Text works with two60-mark alternatives:10. Comparative Cultural Context Q1=70/Q2=30+40 and General Vision and Viewpoint Q1=30+40/Q2=70:6. Unseen10+10 or20:3. Four prescribed50 options:4. Total23 tasks and23 routes. The named Kathy/Ruth/Tommy response allows at least two or all three rather than an exclusive fixed-size choice; other character, technique, social-group, image and poem choices are open. ComparativeB1(b) retains its earlier-aspect exclusion and original-text requirement."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ],
+      "independentPaperTally": {
+        "baseTasks": 23,
+        "finiteRoutes": 23,
+        "basis": "Five Single Text works with two60-mark alternatives:10. Comparative Cultural Context Q1=70/Q2=30+40 and General Vision and Viewpoint Q1=30+40/Q2=70:6. Unseen10+10 or20:3. Four prescribed50 options:4. Total23 tasks and23 routes. The named Kathy/Ruth/Tommy response allows at least two or all three rather than an exclusive fixed-size choice; other character, technique, social-group, image and poem choices are open. ComparativeB1(b) retains its earlier-aspect exclusion and original-text requirement."
+      }
+    },
+    {
+      "paperId": "english-2014-ol-p1",
+      "paperSha256": "4c5784a4ae046dff3442d545cc8da34142fb3b000c37678d658c76572938b34f",
+      "schemeSha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Cover1/2(+1), lucky/unlucky story(+1), three essay topics(+2)=26routes. Cruel/amusing/both and painful/embarrassing permit nuanced or overlapping treatment, not fixed exclusive pools."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        41,
+        42
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 26,
+        "basis": "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Cover1/2(+1), lucky/unlucky story(+1), three essay topics(+2)=26routes. Cruel/amusing/both and painful/embarrassing permit nuanced or overlapping treatment, not fixed exclusive pools."
+      }
+    },
+    {
+      "paperId": "english-2014-ol-p2",
+      "paperSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
+      "schemeSha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Independent tally: Single54 + Comparative10 + Unseen2 + Prescribed24 =90 tasks. Nine three-word pools(+18), Kathy/Ruth/Tommy(+2), two compulsory comparative openings(+1), three Heaney favourites(+2), three Wyley collections(+2), three Plath favourites(+2) give117 routes. Flexible word-or-words pools and compulsory diary pairs are not split.",
+        "Verified full unillustrated poems: Coming Home/Owen Sheers11; The Underground/Heaney12; Poems for Breakfast/Enda Wyley14; Child/Plath16; The Collar/Herbert18 (36lines). PDF20 blank. Heaney companion poems from2012PDF12 and2024PDF16 visually verified. The printed Chose in Wyley1(c) is retained. Scheme PDF37 stray OR after Child1(a) is absent from paper and does not make compulsory parts alternative.",
+        "Plath source finding resolved: Poppies in July is linked to CCEA anthology PDF54 (printed52), and The Arrival of the Bee Box to official SEC2003OLP2PDF12. Full poems visually checked. They open at the stated page in a new tab; absent poems are not falsely labelled as2014 printed content or copied into the app."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "independentPaperTally": {
+        "baseTasks": 90,
+        "finiteRoutes": 117,
+        "basis": "Independent tally: Single54 + Comparative10 + Unseen2 + Prescribed24 =90 tasks. Nine three-word pools(+18), Kathy/Ruth/Tommy(+2), two compulsory comparative openings(+1), three Heaney favourites(+2), three Wyley collections(+2), three Plath favourites(+2) give117 routes. Flexible word-or-words pools and compulsory diary pairs are not split."
+      },
+      "openFindings": []
+    },
+    {
+      "paperId": "english-2015-hl-p1",
+      "paperSha256": "be5995502b96260d62f6b4daa0b456344fcb71eca68f46f298250f39799d436b",
+      "schemeSha256": "e787bb50a66a33be8e13c89e21dad8b981c6e7be805aee61245fbe4b6ab7a0df",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Six writing genres(+5) and past/future traveller(+1)=25routes. Both covers AND passage compulsory for Aiii. Tone and number of endings remain flexible."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        40,
+        41,
+        44
+      ],
+      "independentPaperTally": {
+        "baseTasks": 19,
+        "finiteRoutes": 25,
+        "basis": "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Six writing genres(+5) and past/future traveller(+1)=25routes. Both covers AND passage compulsory for Aiii. Tone and number of endings remain flexible."
+      }
+    },
+    {
+      "paperId": "english-2015-hl-p2",
+      "paperSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747",
+      "schemeSha256": "e787bb50a66a33be8e13c89e21dad8b981c6e7be805aee61245fbe4b6ab7a0df",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Five Single Text works with two60-mark alternatives:10. Theme or Issue and Literary Genre each have Q1=70/Q2=30+40:6. Unseen10+10 or20:3. Four prescribed50:4. Total23 marked tasks. Never Let Me Go(ii) requires exactly two of Kathy/Ruth/Tommy, producing three60-mark routes(+2), total25. Surprised/shocked/both stays flexible. ComparativeB2(b) permits an earlier technique or any other, with no compulsory link back to2(a). Peter Street’s six tercets and its footnote are complete on PDF6."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        44
+      ],
+      "independentPaperTally": {
+        "baseTasks": 23,
+        "finiteRoutes": 25,
+        "basis": "Five Single Text works with two60-mark alternatives:10. Theme or Issue and Literary Genre each have Q1=70/Q2=30+40:6. Unseen10+10 or20:3. Four prescribed50:4. Total23 marked tasks. Never Let Me Go(ii) requires exactly two of Kathy/Ruth/Tommy, producing three60-mark routes(+2), total25. Surprised/shocked/both stays flexible. ComparativeB2(b) permits an earlier technique or any other, with no compulsory link back to2(a). Peter Street’s six tercets and its footnote are complete on PDF6."
+      }
+    },
+    {
+      "paperId": "english-2015-ol-p1",
+      "paperSha256": "b3aa2647ce64b9eee1b9da0ff45602776eac3343877da6e95f61355b1b9c562e",
+      "schemeSha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Text 2 role choice Lizzie/Michael; word-or-words lists remain flexible. Tatty covers explicitly labelled Cover 1/2; both descriptions plus a preference required.",
+        "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Lizzie/Michael(+1), podcast/radio diary(+1), Cover1/Cover2 preference with BOTH descriptions(+1)=25routes. Word or words, numbers of devices/characters and qualified judgements remain flexible/open. Two diary entries form one50-mark response."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        46,
+        47
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 25,
+        "basis": "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Lizzie/Michael(+1), podcast/radio diary(+1), Cover1/Cover2 preference with BOTH descriptions(+1)=25routes. Word or words, numbers of devices/characters and qualified judgements remain flexible/open. Two diary entries form one50-mark response."
+      }
+    },
+    {
+      "paperId": "english-2015-ol-p2",
+      "paperSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
+      "schemeSha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Independent tally: Single54 + Comparative12 + Unseen2 + Prescribed24 =92 tasks. Nine three-statement pools(+18); comparative social-class/conflict twice(+2), shocked/impressed twice(+2), clever/cruel/brave twice(+4); three prescribed10-mark descriptor pools(+6), two prescribed20-mark collection/statement pools(+4):128routes. Open40-mark comparisons retain parent context without imposing the prior attribute as a fixed focus. One-or-more pools and happy/sad/both remain flexible.",
+        "Complete poems visually checked: Today/Vivienne McKechnie11; The Locket/John Montague12; Revelation/Liz Lochhead14; Ghost Estate/William Wall16; The Bend in the Road/Eiléan Ní Chuilleanáin18. All continuation questions retain their original complete poem page. PDF20 blank. Paper memory in D2iii retained over scheme memories; paper social class retained over scheme33 missing class; Othello paper correctly says play despite scheme28 novel."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "independentPaperTally": {
+        "baseTasks": 92,
+        "finiteRoutes": 128,
+        "basis": "Independent tally: Single54 + Comparative12 + Unseen2 + Prescribed24 =92 tasks. Nine three-statement pools(+18); comparative social-class/conflict twice(+2), shocked/impressed twice(+2), clever/cruel/brave twice(+4); three prescribed10-mark descriptor pools(+6), two prescribed20-mark collection/statement pools(+4):128routes. Open40-mark comparisons retain parent context without imposing the prior attribute as a fixed focus. One-or-more pools and happy/sad/both remain flexible."
+      }
+    },
+    {
+      "paperId": "english-2016-hl-p1",
+      "paperSha256": "a8736e7ab6a70df1c5082cbe4037013f7b0fe2185432e82d1854ca133962a6af",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Four posters labelled 1–4. QA(ii) selects one. B awards distinct first/second prizes and requires the actual posters.",
+        "Three QA groups of 15/15/20 plus three B50 and seven composing100 = 19 tasks. Text 1 A(ii) one of four posters (+3), Text 1 B distinct first and second prizes from the four posters, ordered 4×3 = 12 (+11), composing 5 for/against (+1) = 34 routes. At-least-one Shakespearean play, to-what-extent and agree/disagree judgements and serious/amusing/both register stay open or flexible. Text 2 B keeps the printed “identity”.",
+        "Readers: Text 1 A on PDF2–3, Text 1 B posters on PDF2 only, Text 2 PDF4–5 and Text 3 PDF6–7 for every A and B task. C and L cannot exceed P (PDF3); historical A+–E- grid PDF40."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        39,
+        40,
+        43
+      ],
+      "independentPaperTally": {
+        "baseTasks": 19,
+        "finiteRoutes": 34,
+        "basis": "Three QA groups of 15/15/20 plus three B50 and seven composing100 = 19 tasks. Text 1 A(ii) one of four posters (+3), Text 1 B distinct first and second prizes from the four posters, ordered 4×3 = 12 (+11), composing 5 for/against (+1) = 34 routes. At-least-one Shakespearean play, to-what-extent and agree/disagree judgements and serious/amusing/both register stay open or flexible. Text 2 B keeps the printed “identity”."
+      }
+    },
+    {
+      "paperId": "english-2016-hl-p2",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2016-ol-p1",
+      "paperSha256": "64df6660ac6ca3b198a524841aa737e5aba7a8288fa49dfb35362dbab3d49794",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Both diaries date 24–27 April 1916. QA(iii)(a) chooses one date. B based on diaries, broadsheet/tabloid alternative.",
+        "Three QA groups of 15/15/10/10 plus three B50 and seven composing100 = 22 tasks. Text 1 A(ii) mainly positive or mainly negative view (+1, scheme PDF5), Chris/Anna (+1), four dates 24–27 April (+3), broadsheet/tabloid (+1), notebook/blog (+1), magazine/website (+1), any two of five virtues C(5,2) = 10 (+9) = 39 routes. Social-media agree/disagree/both and Ireland/abroad, three of Palin’s reasons, the holiday destination and at-least-one occasion remain open or flexible. Three Mars diary entries form one 100-mark composition.",
+        "Readers: Text 1 A(iii)(b) and Text 3 A(iii)(a) are self-contained, with reviewed source exclusions. Text 2 A(i) uses De Brún’s diary on PDF4 only; other Text 2 tasks use PDF4–5. C and L cannot exceed P (PDF3, unlike 2015 OL); historical A–F/NG grid PDF52."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        51,
+        52
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 39,
+        "basis": "Three QA groups of 15/15/10/10 plus three B50 and seven composing100 = 22 tasks. Text 1 A(ii) mainly positive or mainly negative view (+1, scheme PDF5), Chris/Anna (+1), four dates 24–27 April (+3), broadsheet/tabloid (+1), notebook/blog (+1), magazine/website (+1), any two of five virtues C(5,2) = 10 (+9) = 39 routes. Social-media agree/disagree/both and Ireland/abroad, three of Palin’s reasons, the holiday destination and at-least-one occasion remain open or flexible. Three Mars diary entries form one 100-mark composition."
+      }
+    },
+    {
+      "paperId": "english-2016-ol-p2",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "paperPagesInspected": [
+        9
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Visually confirmed corrected Poetry D scheme start and continuation; legacy crop started after opening tasks. Per-task full-paper reconciliation remains pending.",
+        "Comparative B Q1(a) shared statement precedes (i)15, then (ii)15 and (b)40. Missing candidate roman label verified.",
+        "Comparative B Q1 and Q2 scheme PDF39–40 visually checked: each (a)(i)15+(a)(ii)15 combined9+6, (b)40 discrete12/12/12/4."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false,
+      "schemePagesInspected": [
+        39,
+        40,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "paperId": "english-2017-hl-p1",
+      "paperSha256": "e261c6bc026da5aa11bc71ca82005295a4dc2041a02542f7054580974a7937b1",
+      "schemeSha256": "b2bcd5afd1e1952d5bcd5ddfe261c0a8e5e6b44ae90b1e0392fee7833f9dfe51",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2017-hl-p2",
+      "paperSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+      "schemeSha256": "b2bcd5afd1e1952d5bcd5ddfe261c0a8e5e6b44ae90b1e0392fee7833f9dfe51",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2017-ol-p1",
+      "paperSha256": "7b059877758f5f35944836bad6e7c93eb3adae1e878ab5e3fea693ad2837ee2c",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "paperPagesInspected": [
+        6,
+        7
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Robot teachers Image 1/2; QA(iii)(a) selects preferred robot appearance. Descriptive word-or-words list remains flexible."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2017-ol-p2",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "paperPagesInspected": [
+        12
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Comparative B Q2(a) shared statement precedes (i)15, then (ii)15 and (b)40. Missing candidate roman label verified.",
+        "Comparative B Q2 scheme PDF35 visually checked: (a)(i)15+(a)(ii)15 combined9+6, (b)40 discrete12/12/12/4. PDF36 unseen scheme also inspected; paper check still pending."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false,
+      "schemePagesInspected": [
+        35,
+        36
+      ]
+    },
+    {
+      "paperId": "english-2018-hl-p1",
+      "paperSha256": "1688f7fbf03ad59b3c712a7c9203e87a05d63df21fe9bc323a6f136ad4b51d17",
+      "schemeSha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Three texts each QA15/15/20 and B50; seven compositions100. Text3 B requires one of two formats as the first experience, adding one route. Composition7 permits a free judgement, not a formal side; composition1 allows some or all seasons."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "independentPaperTally": {
+        "baseTasks": 19,
+        "finiteRoutes": 20,
+        "basis": "Three texts each QA15/15/20 and B50; seven compositions100. Text3 B requires one of two formats as the first experience, adding one route. Composition7 permits a free judgement, not a formal side; composition1 allows some or all seasons."
+      },
+      "schemePagesTextChecked": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "paperId": "english-2018-hl-p2",
+      "paperSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
+      "schemeSha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Five works with two60-mark single alternatives. Two comparative modes each Q1=30+40 or Q2=70. Unseen two10-mark parts or one20-mark response. Four50-mark prescribed essays. King Lear Q(ii) explicitly requires all three sisters, not a Goneril/Regan choice."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "independentPaperTally": {
+        "baseTasks": 23,
+        "finiteRoutes": 23,
+        "basis": "Five works with two60-mark single alternatives. Two comparative modes each Q1=30+40 or Q2=70. Unseen two10-mark parts or one20-mark response. Four50-mark prescribed essays. King Lear Q(ii) explicitly requires all three sisters, not a Goneril/Regan choice."
+      },
+      "schemePagesTextChecked": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "paperId": "english-2018-ol-p1",
+      "paperSha256": "c9845f45521246b3c63a72b1e18f9eec1cad1e4e90012fed5fef045e5ac26f79",
+      "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Three texts each QA15/15/10/10 and B50; seven compositions100. Text2 QA(ii) front-page/sports alternatives add one route; composition2 twin brothers/sisters adds one. Composition4 at least three of six areas remains flexible; composition7 personal reflection on siblings is open."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 24,
+        "basis": "Three texts each QA15/15/10/10 and B50; seven compositions100. Text2 QA(ii) front-page/sports alternatives add one route; composition2 twin brothers/sisters adds one. Composition4 at least three of six areas remains flexible; composition7 personal reflection on siblings is open."
+      },
+      "schemePagesTextChecked": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "paperId": "english-2018-ol-p2",
+      "paperSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
+      "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Visually confirmed corrected Poetry C scheme start and continuation; legacy crop started after opening tasks. Per-task full-paper reconciliation remains pending.",
+        "Full 20-page visual sweep: Single Text A–I and authors verified; 10+10+10 marks plus three 30-mark alternatives. Q3(iii) named pairs and E/G/I Q3(i) loyalty/betrayal pairs verified. Comparative 15+15+40 each question, unseen Walking to Dublin by Richard Peabody p.13 at 10+10; Larkin/Hughes/Boland/Coady poems pp.14–17 at 10+10+10 plus three 20-mark alternatives; pp.18–19 blank, p.20 copyright. Prescribed source pages are single pages, not the next poem’s heading page."
+      ],
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesInspected": [
+        47,
+        48,
+        49,
+        50
+      ],
+      "independentPaperTally": {
+        "singleTextTasks": 54,
+        "comparativeTasks": 12,
+        "unseenPoetryTasks": 2,
+        "prescribedPoetryTasks": 24,
+        "baseTasks": 92,
+        "finiteRoutes": 104,
+        "basis": "Visually read all 20 pages: 9 Single Text options x 6 marked tasks; 2 comparative modes x 2 questions x 3 marked parts; 2 unseen tasks; 4 prescribed poems x 6 tasks. Nine named-character pairs and three loyalty/betrayal pairs each add one route. Phrase OR phrases is flexible. These counts still require scheme reconciliation."
+      },
+      "schemePagesTextChecked": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "paperId": "english-2019-hl-p1",
+      "paperSha256": "5b985714c27efb1815b22ba254301a9bcc098bbc93e3ca948458e22d7ff9cb94",
+      "schemeSha256": "b609f26657d2ccc5fa70fbb6a27de78391dac871bfbe9c8396ec5b806395eceb",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2019-hl-p2",
+      "paperSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363",
+      "schemeSha256": "b609f26657d2ccc5fa70fbb6a27de78391dac871bfbe9c8396ec5b806395eceb",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2019-ol-p1",
+      "paperSha256": "2960c8b89d165eaf54a55113c7a57ef172c52646e7dfa42a5e382844c24ed736",
+      "schemeSha256": "5fb482bf9bb51ef699d4b98d6aac2936b00f418340faa891c7cc3e303fea3dff",
+      "paperPagesInspected": [
+        4,
+        5
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Selfie images 1/2 on separate pages. QA(iii)(a) selects one at 10 marks; B stimulus self-contained."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2019-ol-p2",
+      "paperSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+      "schemeSha256": "5fb482bf9bb51ef699d4b98d6aac2936b00f418340faa891c7cc3e303fea3dff",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2020-hl-p1",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "paperPagesInspected": [
+        2,
+        3
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Text1 From Genre to Genre by Alan McMonagle p.2 and Tom Gauld Rentals for Writers cartoon p.3. QA15/15/20 and B50, cartoon source for B verified."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2020-hl-p2",
+      "paperSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2020-ol-p1",
+      "paperSha256": "ec5f020cddc20d6e89456c09280bd2cbc1070fb113ea9aaa0a163669b3a63b73",
+      "schemeSha256": "e60d6c33c55692216015486910f12467a588072f34528935c067de8c32bd578a",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2020-ol-p2",
+      "paperSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+      "schemeSha256": "e60d6c33c55692216015486910f12467a588072f34528935c067de8c32bd578a",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2021-hl-p1",
+      "paperSha256": "27ccbb8626788335a1cd041945ba08271afec7aaca471da68543502954635fe0",
+      "schemeSha256": "3703979a0ddd5f8ebee9955c4022f6478d5781502461c362547d38fca685fdfa",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2021-hl-p2",
+      "paperSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2",
+      "schemeSha256": "3703979a0ddd5f8ebee9955c4022f6478d5781502461c362547d38fca685fdfa",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2021-ol-p1",
+      "paperSha256": "a3542b882bf9bb5e7c4708c1ca16516f43b8649d2ae1ac5bd9b1515763d25b7c",
+      "schemeSha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b",
+      "paperPagesInspected": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "QA/B is 40 marks under adjusted paper. Text 2 real/virtual performer choice; Text 3 three numbered musical experiences at 10 marks."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2021-ol-p2",
+      "paperSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "schemeSha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b",
+      "paperPagesInspected": [
+        2,
+        19,
+        20
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Single Text each question carries 35 marks. Q1 10+10+15; discrete responses published as 11/11/11/2.",
+        "Visually confirmed corrected Single Text G scheme start and continuation; legacy crop started after opening tasks. Per-task full-paper reconciliation remains pending.",
+        "Jungian Cows by Penelope Shuttle p.19; Inversnaid by Gerard Manley Hopkins p.20. Each has Q1(a)(b)15+15 and three Q2 alternatives20. Footer under E Q2(iii) excluded. Readers restricted to own poem page."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false,
+      "schemePagesInspected": [
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "paperId": "english-2022-hl-p1",
+      "paperSha256": "d636df778b32aad6b402d2d16d646b237b1b9a1e68ec23bcdea9dc5a20c02c6d",
+      "schemeSha256": "a9bc842c33564010b021af8c82220ae76eb93218272924b43bba200ce065c001",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2022-hl-p2",
+      "paperSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e",
+      "schemeSha256": "a9bc842c33564010b021af8c82220ae76eb93218272924b43bba200ce065c001",
+      "paperPagesInspected": [
+        7,
+        8
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Five prescribed poetry questions, shared 50 tariff. Dickinson wording visually verified; p.8 administration/copyright."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2022-ol-p1",
+      "paperSha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
+      "schemeSha256": "d3eb474c27b644da5779765503e9634eff5d9ac414e56199e6a00c76073bbd85",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2022-ol-p2",
+      "paperSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "schemeSha256": "d3eb474c27b644da5779765503e9634eff5d9ac414e56199e6a00c76073bbd85",
+      "paperPagesInspected": [
+        2
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Single Text each question carries 35 marks. Q1 10+10+15; discrete responses published as 11/11/11/2."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2023-hl-p1",
+      "paperSha256": "baab746a1a80e6cd21625755136f6b38a4b2f907bb43f6d62e58407a0e66d1d8",
+      "schemeSha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2023-hl-p2",
+      "paperSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "schemeSha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2023-ol-p1",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "paperPagesInspected": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Text 1 has three named adjectives, choose two, and photos A/B. Text 2 images A/B. Both image choices at 10 marks."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2023-ol-p2",
+      "paperSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2024-hl-p1",
+      "paperSha256": "c8899fa9a8009351e60f2d6c28b3a62d9cfa33329fc4e07a06fdd495cf893bf5",
+      "schemeSha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2024-hl-p2",
+      "paperSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "schemeSha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2024-ol-p1",
+      "paperSha256": "fc626a7ffe7ca903ae6deaf143ec14b378c11dc79bd16f244a9b9cc1cf0c65f5",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "paperPagesInspected": [
+        2,
+        3,
+        6,
+        7
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Book covers A/B; Text 3 has ten numbered quotations, choose three. Images A–D allow any number, not a fixed pool size."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2024-ol-p2",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2025-hl-p1",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2025-hl-p2",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2025-ol-p1",
+      "paperSha256": "3ff6b77cf7fb30f3c61cb07c74a16c95ad4e32b4bf8e664d31fb5bf47f0cff91",
+      "schemeSha256": "1ffaf4e11d7e4cf6576ac088ed540feb6d19fae29c13aaf4f35ea59b9e1a033b",
+      "paperPagesInspected": [
+        6,
+        7
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Source visibly has TWELVE quotations; question inaccurately says ten. Scheme PDF p.10 permits any three. Four images A–D, choose two."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2025-ol-p2",
+      "paperSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+      "schemeSha256": "1ffaf4e11d7e4cf6576ac088ed540feb6d19fae29c13aaf4f35ea59b9e1a033b",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2026-hl-p1",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2026-hl-p2",
+      "paperSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "paperPagesInspected": [],
+      "visualSweepComplete": false,
+      "notes": [],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2026-ol-p1",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "paperPagesInspected": [
+        6,
+        7
+      ],
+      "visualSweepComplete": false,
+      "notes": [
+        "Ten numbered advice items; choose two most valuable and a distinct least valuable. Four images A–D, choose two."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    },
+    {
+      "paperId": "english-2026-ol-p2",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "visualSweepComplete": true,
+      "notes": [
+        "Full page sweep completed. Nine single texts, three comparative modes, unseen Long Distance by Moya Roddy, six prescribed poems. Outer task scheme-region matches checked; leaf and finite-route reconciliation remains outstanding."
+      ],
+      "allTaskBoundariesSchemeChecked": false,
+      "allFiniteRoutesReconciled": false
+    }
+  ]
+}

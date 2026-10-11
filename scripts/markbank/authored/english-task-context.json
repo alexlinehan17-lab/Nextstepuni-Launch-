@@ -1,0 +1,104 @@
+{
+  "evidenceRule": "Source-bound context outside the extracted numbered task. Each note must be visually verified before authoring.",
+  "tasks": {
+    "english-2010-ol-p2-comparative-a-q1-a": {
+      "questionSha256": "7f77f8fde5d47e05570b5a17ff0da8972525accfd3ed1679c07022974fc8be2b",
+      "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "paperPages": [
+        8
+      ],
+      "notes": [
+        "Before beginning, name the texts studied for your comparative course and name the hero/heroine/villain that you are going to discuss."
+      ],
+      "reason": "Visually checked shared section instructions preceding the numbered tasks; retain them with every separately practicable part."
+    },
+    "english-2010-ol-p2-comparative-a-q1-b": {
+      "questionSha256": "7dc622046f4c259151c9f31c8de68739cb428ae9baf86cca13c467bcec7329c9",
+      "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "paperPages": [
+        8
+      ],
+      "notes": [
+        "Before beginning, name the texts studied for your comparative course and name the hero/heroine/villain that you are going to discuss."
+      ],
+      "reason": "Visually checked shared section instructions preceding the numbered tasks; retain them with every separately practicable part."
+    },
+    "english-2010-ol-p2-comparative-a-q2-a": {
+      "questionSha256": "cfdf67463d8fdeef71b154704edc6774b986a4b0e778ff065fa81e748efe3922",
+      "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "paperPages": [
+        8
+      ],
+      "notes": [
+        "Before beginning, name the texts studied for your comparative course and name the hero/heroine/villain that you are going to discuss."
+      ],
+      "reason": "Visually checked shared section instructions preceding the numbered tasks; retain them with every separately practicable part."
+    },
+    "english-2010-ol-p2-comparative-a-q2-b": {
+      "questionSha256": "932b1fda3954bdd010f788375671081e588247c9418568cef10b20768d23eee5",
+      "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "paperPages": [
+        8
+      ],
+      "notes": [
+        "Before beginning, name the texts studied for your comparative course and name the hero/heroine/villain that you are going to discuss."
+      ],
+      "reason": "Visually checked shared section instructions preceding the numbered tasks; retain them with every separately practicable part."
+    },
+    "english-2010-ol-p2-comparative-b-q1-a": {
+      "questionSha256": "06c8b1e38dca5ede02b8da64ebd5b25c802a2170cd327dea54af514169285592",
+      "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "paperPages": [
+        9
+      ],
+      "notes": [
+        "Before beginning, name the texts studied for your comparative course and name the theme that you are going to discuss."
+      ],
+      "reason": "Visually checked shared section instructions preceding the numbered tasks; retain them with every separately practicable part."
+    },
+    "english-2010-ol-p2-comparative-b-q1-b": {
+      "questionSha256": "5faa4822e681f69bfc0e8b02e26fb707a5026fc5140be86e46e8a059e37b32e8",
+      "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "paperPages": [
+        9
+      ],
+      "notes": [
+        "Before beginning, name the texts studied for your comparative course and name the theme that you are going to discuss."
+      ],
+      "reason": "Visually checked shared section instructions preceding the numbered tasks; retain them with every separately practicable part."
+    },
+    "english-2010-ol-p2-comparative-b-q2-a-i": {
+      "questionSha256": "01a16d2fe06cdc1adcc503b836570e9908b8bc685c24b1180d69f57b62061810",
+      "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "paperPages": [
+        9
+      ],
+      "notes": [
+        "Before beginning, name the texts studied for your comparative course and name the theme that you are going to discuss."
+      ],
+      "reason": "Visually checked shared section instructions preceding the numbered tasks; retain them with every separately practicable part."
+    },
+    "english-2010-ol-p2-comparative-b-q2-a-ii": {
+      "questionSha256": "4b302227b2215f874afe05fd4a3e99a53835df3d992648183fee30541c4374d8",
+      "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "paperPages": [
+        9
+      ],
+      "notes": [
+        "Before beginning, name the texts studied for your comparative course and name the theme that you are going to discuss."
+      ],
+      "reason": "Visually checked shared section instructions preceding the numbered tasks; retain them with every separately practicable part."
+    },
+    "english-2010-ol-p2-comparative-b-q2-b": {
+      "questionSha256": "e6451afa6341006cba8cba0e901dce2fb03a88ea4a19cfb36f48950a8181955c",
+      "paperSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "paperPages": [
+        9
+      ],
+      "notes": [
+        "Before beginning, name the texts studied for your comparative course and name the theme that you are going to discuss."
+      ],
+      "reason": "Visually checked shared section instructions preceding the numbered tasks; retain them with every separately practicable part."
+    }
+  }
+}

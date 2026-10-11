@@ -25,6 +25,8 @@ import sys
 
 import fitz
 
+from english_p1_comprehending import scheme_for
+
 from english_p2_complete import (
     Card,
     crop_text,
@@ -44,7 +46,7 @@ ANSWERS = os.path.join(HERE, "answers")
 
 PAPER_FILEID = "LC002GLP200EV.pdf"
 SCHEME_FILEID = "LC002GLP000EV.pdf"
-YEARS = list(range(2010, 2026))
+YEARS = list(range(2010, 2027))
 COPYRIGHT = "© State Examinations Commission"
 
 
@@ -183,7 +185,17 @@ def collect_cards(paper, year):
     unseen.min_region_overlap = 0.15 if year == 2011 else 0.33
     cards.append(unseen)
 
-    last_poetry_end = (poetry_headers[-1][2], 1.0)
+    # Older Ordinary papers continue the final poem's questions onto the
+    # following page. Ending at its heading page silently omitted those asks.
+    # Stop before acknowledgements/blank leaves, not at an assumed page count.
+    last_page = poetry_headers[-1][2]
+    for page_index in range(last_page + 1, len(paper)):
+        text = paper[page_index].get_text()
+        if re.search(r'Copyright notice|Acknowledg[em]+ents', text, re.I):
+            break
+        if re.search(r'\(ii?i?\)|\b2\.\s*Answer', text, re.I):
+            last_page = page_index
+    last_poetry_end = (last_page, 1.0)
     prescribed_cards = cards_from_headers(
         paper, "prescribed", "Poetry", poetry_headers, last_poetry_end)
     if year == 2011:
@@ -233,6 +245,12 @@ def locate_scheme_cards(cards, paper, scheme, year):
             "Poetry C": (32, 0.5501),
             "Poetry D": (34, 0.0416),
         },
+        # Visually checked against the official scheme. Lexical matching
+        # selected later response paragraphs and omitted the opening tasks;
+        # centred headings also evade the left-aligned header detector.
+        2013: {"Comparative A": (30, 0.8106)},
+        2018: {"Poetry C": (47, 0.0892)},
+        2021: {"Single Text G": (37, 0.0888)},
         2023: {
             "Poetry A": (49, 0.5204),
             "Poetry B": (51, 0.5771),
@@ -402,9 +420,10 @@ def audited_region(cards, index, scheme):
 
 def build_year(year):
     paper_path = os.path.join(CORPUS, "exampapers", str(year), PAPER_FILEID)
-    scheme_path = os.path.join(CORPUS, "markingschemes", str(year), SCHEME_FILEID)
+    # 2026's combined Ordinary scheme is filed as LP100, not LP000.
+    scheme_path = scheme_for(year, 'G')
     sidecar_path = os.path.join(ANSWERS, str(year), f"{PAPER_FILEID}.json")
-    if not os.path.exists(paper_path) or not os.path.exists(scheme_path):
+    if not os.path.exists(paper_path) or not scheme_path or not os.path.exists(scheme_path):
         return None, "official paper or scheme missing"
 
     paper = fitz.open(paper_path)
@@ -419,7 +438,7 @@ def build_year(year):
         sidecar = {
             "v": 1,
             "paperFileid": PAPER_FILEID,
-            "schemeFileid": SCHEME_FILEID,
+            "schemeFileid": os.path.basename(scheme_path),
             "component": "200",
             "copyright": COPYRIGHT,
             "q": [],

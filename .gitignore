@@ -63,3 +63,6 @@ android/keystore.properties
 examiner-reports/*/papers/*.pdf
 examiner-reports/*/schemes/*.pdf
 examiner-reports/*/supplements/
+
+# Reproducible English corpus extraction and PDF review intermediates.
+tmp/english-audit/

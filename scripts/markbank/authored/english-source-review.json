@@ -1,0 +1,2820 @@
+{
+  "evidenceRule": "Explicit source dependencies outside the default comprehension/poetry readers, plus reviewed `not-required` exclusions that remove a default reader from a self-contained task. An exclusion binds the paper hash, the question wording and the exact default reader (label, title, pages) it removes, and carries a written reason. This list is being extended during the full paper sweep; absence is not an assertion of independence.",
+  "attachments": {
+    "english-2016-hl-p1-t1-b": {
+      "kind": "source-illustration",
+      "label": "POSTER FINALISTS",
+      "title": "The Comedy of Errors — four competition posters",
+      "pages": [
+        2
+      ],
+      "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
+      "reason": "The speech must award first and second prizes to the printed finalists and explain their visual appeal.",
+      "questionSha256": "4ca13515b72a4936991f59adaec5a2bf1f6211b5d65fe6fa06cef44a62acac89"
+    },
+    "english-2016-ol-p1-t2-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Two Diaries from 1916",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mick O’Farrell — edited adaptation of extracts from The 1916 Diaries: Seosamh De Brún’s diary (PDF4) and Sergeant-Major Samuel H. Lomas’ diary (PDF5), with the Jacob’s Biscuit Factory illustration. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "d61191a4368ca6eae36f8dba40f54abeca9cd16a6e0ff55de0a6a5bf72ddeea3",
+      "reason": "The newspaper article must be based on both printed diaries, reporting events from 24 to 27 April 1916 (scheme PDF8)."
+    },
+    "english-2020-hl-p1-composing-5": {
+      "kind": "source-illustration",
+      "label": "MAGAZINE COVER",
+      "title": "The three characters on the magazine cover in Text 3",
+      "pages": [
+        7
+      ],
+      "attribution": "Magazine cover as reproduced on page 7 of the SEC 2020 Higher Level English paper.",
+      "reason": "The short story must feature the three characters pictured on this cover.",
+      "questionSha256": "49c8acce539bb1f9e85cce7776864c0dec79aacdca788c88fa831a352bfc77fe"
+    },
+    "english-2010-ol-p1-t2-b": {
+      "kind": "source-text",
+      "label": "SOURCE MATERIAL",
+      "title": "The Brendan Voyage",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "The application concerns joining the specific voyage described in Text 2.",
+      "questionSha256": "fb57917998fa17ab34d9dda17bad237d41480f30ff82cb73d8f4198449803945"
+    },
+    "english-2011-hl-p1-t3-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Wintersongs",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Kevin Barry, There are Little Kingdoms. Material as reproduced in the official SEC paper.",
+      "questionSha256": "99710d158a223fc921f9e097484f00d8e4890f8cf3d2078082c90f1e8ab950a3",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2012-hl-p1-t1-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Personal Memories",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Margaret Laurence — edited extract from Where the World Began, with the prairie photograph. As reproduced in the SEC2012 paper.",
+      "questionSha256": "4e9bea0dff15d30579a62a434d86e006b26da302a3c6a1fbae727104f046a463",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2013-ol-p1-t2-b": {
+      "kind": "source-illustration",
+      "label": "SOURCE MATERIAL",
+      "title": "Gary Larson’s cartoon — Image 2",
+      "pages": [
+        5
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "Image 2 (Fifi cartoon) visually checked on PDF p.5. Paper and scheme require the letter to respond to this cartoon.",
+      "questionSha256": "cc4d4681df5577d3616fb0809bd4292a059cce8e914346a763b196bf5847609b"
+    },
+    "english-2014-hl-p1-t1-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "An Influential Event",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Richard Ford — edited extract from Canada, with the book cover. As reproduced in the SEC2014 paper.",
+      "questionSha256": "958ec5f5ef22140e1bbe04ca3129bfb4cc2d3667270d34beae509b305d3e3fe0",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-hl-p1-t3-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Influence of the Past",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Seamus Heaney — edited essay The Sense of the Past from History Ireland, including The Garden Seat by Thomas Hardy, the Neruda quotation and both photographs. As reproduced in the SEC2014 paper.",
+      "questionSha256": "11e79dbf14a735756f7d612b6ff1e98abe1ccd21a22eb4df138b7955af7553a4",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t2-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Malala Yousafzai",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Malala Yousafzai with Christina Lamb — I Am Malala, with the book cover. As reproduced in the SEC2014 paper.",
+      "questionSha256": "f3d701bb3803e776d54c01623070dae7d0511a92e02d7f399acae02a1b5a637f",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages. Paper PDF5 and scheme PDF7 base the letter on Malala’s experiences in the extract, so the whole passage is retained."
+    },
+    "english-2015-ol-p1-t1-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Animals",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Roddy Doyle — edited extract from Animals, with the photograph of a finch. As reproduced in the SEC2015 paper.",
+      "questionSha256": "00cedcf4742e46182643880756e34a0de07cd2730483aff33aa36371b7575ac1",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages. Retain useful context for the specifically named Wacker’s pet shop. Scheme PDF5 permits drawing on this passage but does not require it."
+    },
+    "english-2016-hl-p1-t2-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Personal Journey",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Sara Baume — edited extract adapted from her debut novel spill simmer falter wither, with the book cover. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "8c5c344b6368d8a6dcbaa6807ba5244e7f9b48f672b391605ff620e1010f8d95",
+      "reason": "The competition entry must identify filmable elements in the above extract and the contemporary Irish life it portrays (scheme PDF10); the full extract and cover (PDF4–5) are required."
+    },
+    "english-2016-hl-p1-t3-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Journey into Space",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Barack Obama — edited text adapted from his speech at NASA’s Kennedy Space Centre, Florida, with the accompanying image of astronauts. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "d2cce7e3b5d29dd190a6e86f7c8f89fec4700188e07f1b3d632febc85dff890d",
+      "reason": "The blog responds to the President’s speech and the public money it commits (scheme PDF14); the full speech (PDF6–7) is required."
+    },
+    "english-2018-ol-p1-t3-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Kailash Satyarthi — interview and child-labour poster",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Interview source: UNESCO; material and poster as reproduced in the official SEC paper.",
+      "reason": "Letter explicitly draws on Text3. The complete interview and poster were visually verified on pp.6–7.",
+      "questionSha256": "a95fdbe16a55864d941b345159f9b3d6e40b46c4d8eeb8abc88570a646d84b08"
+    },
+    "english-2019-hl-p1-t2-b": {
+      "kind": "source-illustration",
+      "label": "SOURCE MATERIAL",
+      "title": "Earth from space — photograph in Text 2",
+      "pages": [
+        5
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "The prompt explicitly directs the student to look at this photograph.",
+      "questionSha256": "a3dc7e0f6934a6afc44716d6f4bcb444f4c669897c0e2c260e29790356f8b94e"
+    },
+    "english-2020-hl-p1-t1-b": {
+      "kind": "source-illustration",
+      "label": "SOURCE MATERIAL",
+      "title": "Rentals for Writers — cartoon",
+      "pages": [
+        3
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "Visually verified on PDF p.3: Rentals for Writers cartoon by Tom Gauld, with four properties for romance, science-fiction, realist and horror writers. The promotional article uses these pictured properties.",
+      "questionSha256": "1f2a125ed2ded304cc102cd29fe0c7ff99cd6a84125d74ff974061e3acf6e304"
+    },
+    "english-2020-ol-p1-t3-b": {
+      "kind": "source-text",
+      "label": "SOURCE MATERIAL",
+      "title": "Svalbard — Arctic Adventures",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "The leaflet concerns the particular location featured in Text 3.",
+      "questionSha256": "1c9393c32cc0473fab82a42a39ae33c4bbaf0a7e1e3cb0012db875e81aa857a2"
+    },
+    "english-2022-hl-p1-t3-b": {
+      "kind": "source-text",
+      "label": "SOURCE MATERIAL",
+      "title": "Book burning — Text 3",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "The imagined editorial responds to an event explicitly modelled on this extract.",
+      "questionSha256": "4e8e4f3f3bcf74b677e02fff74adfb9f9ff326cab4f132b298107a509b6f8ebe"
+    },
+    "english-2023-hl-p1-t1-b": {
+      "kind": "source-text",
+      "label": "SOURCE MATERIAL",
+      "title": "Salim in London — Text 1",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "The task adopts Salim’s identity and relationship with his mother from the extract.",
+      "questionSha256": "6f341b922bbd820ef499c843b5eeb397bf43e49dd00ab82505d644140755a5f0"
+    },
+    "english-2010-ol-p1-composing-7": {
+      "kind": "source-illustration",
+      "label": "SOURCE MATERIAL",
+      "title": "Facing Danger — visual images",
+      "pages": [
+        6
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "The task explicitly instructs the student to look at Text 3’s images before writing about animals in sport.",
+      "questionSha256": "31da4cc9d8fffbdeb8457f6663ddea70c77a8c3b9ebcf35bfdae7d8a143a76d7"
+    },
+    "english-2020-ol-p1-composing-3": {
+      "kind": "source-text",
+      "label": "SOURCE MATERIAL",
+      "title": "A.A. Gill in Svalbard",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "The diary adopts a place on the particular Arctic trip described in Text 3.",
+      "questionSha256": "60f360b0b919f9db026f279c90135b9a9b8faa02742b126a8db8bfe9c70b516a"
+    },
+    "english-2021-ol-p1-composing-5": {
+      "kind": "source-illustration",
+      "label": "SOURCE MATERIAL",
+      "title": "Hatsune Miku — virtual singer",
+      "pages": [
+        4
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "The story features the specific pictured singer from Text 2.",
+      "questionSha256": "98dce90b5d6c829ffc4a8f5c02bbee9fc1bdf74f20bba0987166745d3a46022f"
+    },
+    "english-2022-hl-p1-composing-3": {
+      "kind": "source-text",
+      "label": "SOURCE MATERIAL",
+      "title": "Dieter Knecht — rescuing Rebellion",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "The story must use the student and book-rescue incident in Text 3.",
+      "questionSha256": "f502155c15d2af16227eac15fd59c13baf2aa15b31a5505edbd14816374b2f69"
+    },
+    "english-2026-hl-p1-composing-6": {
+      "kind": "source-text",
+      "label": "SOURCE MATERIAL",
+      "title": "The young woman in the hansom cab",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Source as reproduced in the official SEC English paper.",
+      "reason": "The story must feature this specific character from Text 2.",
+      "questionSha256": "2d2eaa28ce626dfe76ca90d7900f2bc3f38e0245e0fc5b1f0ab18158eca953ad"
+    },
+    "english-2018-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Walking to Dublin",
+      "pages": [
+        13
+      ],
+      "attribution": "Walking to Dublin — Richard Peabody. Source as reproduced in the official SEC paper.",
+      "reason": "Full title, poem, glossary and byline visually verified on PDF p.13.",
+      "questionSha256": "3eadb7a51ac185dcedd4252ab9114bfc7418b3cdb0d5f7f687ed22369c669052"
+    },
+    "english-2018-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Walking to Dublin",
+      "pages": [
+        13
+      ],
+      "attribution": "Walking to Dublin — Richard Peabody. Source as reproduced in the official SEC paper.",
+      "reason": "Full title, poem, glossary and byline visually verified on PDF p.13.",
+      "questionSha256": "b0271f3f1a97d39c85cb35126ce023f165b2f037e278ff44a4678bcca83592ef"
+    },
+    "english-2013-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Earbud",
+      "pages": [
+        10
+      ],
+      "attribution": "Earbud — Bill Holm. Poem and accompanying photograph as reproduced in the official SEC paper.",
+      "reason": "Full title, poem, byline and supporting earbud photograph visually verified on PDF p.10.",
+      "questionSha256": "ccaa8b426604112e1c0d5c94464395c61bfd1f405c58a84a3ee466a61f04d872"
+    },
+    "english-2013-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Earbud",
+      "pages": [
+        10
+      ],
+      "attribution": "Earbud — Bill Holm. Poem and accompanying photograph as reproduced in the official SEC paper.",
+      "reason": "Full title, poem, byline and supporting earbud photograph visually verified on PDF p.10.",
+      "questionSha256": "edb6f27f7bf23c1a4a464de3f4e86e3a17b08570acf201ae8bb887b5ae3f4b2d"
+    },
+    "english-2013-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Tune in Next Week — The Curious Staying Power of the Cliff-hanger",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Emily Nussbaum — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "0a3d29356894d7986e1e5e576c33998fad1303ba41fc9e9b6374235ac8c51f49"
+    },
+    "english-2013-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Tune in Next Week — The Curious Staying Power of the Cliff-hanger",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Emily Nussbaum — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "816667d5a0d6dbfa4e016fe8755e2f995eb0562da817f0db349d794c66b18355"
+    },
+    "english-2013-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Tune in Next Week — The Curious Staying Power of the Cliff-hanger",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Emily Nussbaum — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "0d251bf2d28ef39900ab3b69aba3a66c69b21d86e0b985074a98022380c28fe8"
+    },
+    "english-2013-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Art of Fiction — interview with William Trevor",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mira Stout — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "b94ed1e3c4c1049cad262d6c15be9d1f7c4b31cb80e86d1956c62282d0a58f53"
+    },
+    "english-2013-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Art of Fiction — interview with William Trevor",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mira Stout — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "1a53f2f5b4a48ada69202152b1b649859bb2d9792d9e36cdfdd42ffd8095464c"
+    },
+    "english-2013-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Art of Fiction — interview with William Trevor",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mira Stout — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "9bc02b4c806b296a159feba58597a713d04129740c28edef98c4a0bf3ba13979"
+    },
+    "english-2013-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "New York Stories on a Perfect Platform",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Belinda McKeon — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "c6166174317e175c95818f4c373e13811f68f9a2affb25ce3030040585928f72"
+    },
+    "english-2013-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "New York Stories on a Perfect Platform",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Belinda McKeon — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "733c3a8259b5af8d08f6db6ad96a348ddb7fc0ecee2c65fc09b998f6ff0f7f53"
+    },
+    "english-2013-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "New York Stories on a Perfect Platform",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Belinda McKeon — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "43ee0d645c649009ab57af6e3408bfe5cf0d970191fe916971d3463d37f4757c"
+    },
+    "english-2013-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Fist",
+      "pages": [
+        6
+      ],
+      "attribution": "The Fist — Derek Walcott, as reproduced in the official SEC paper.",
+      "reason": "Full title, poem and byline visually checked on PDF p.6.",
+      "questionSha256": "a8fb28021c0b20d55912708d6a7cc6d25f14b8595b6ebb44b75a7bdebd8b62df"
+    },
+    "english-2013-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Fist",
+      "pages": [
+        6
+      ],
+      "attribution": "The Fist — Derek Walcott, as reproduced in the official SEC paper.",
+      "reason": "Full title, poem and byline visually checked on PDF p.6.",
+      "questionSha256": "f32b27a091941f856438316aad41a2573d240e2f8c7cf076053c0a8c36b3e3a7"
+    },
+    "english-2013-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Fist",
+      "pages": [
+        6
+      ],
+      "attribution": "The Fist — Derek Walcott, as reproduced in the official SEC paper.",
+      "reason": "Full title, poem and byline visually checked on PDF p.6.",
+      "questionSha256": "79b165c3c27d2c005133361e293e37e2fcea14c0bcf3c59636f0d3ec36c9fd0e"
+    },
+    "english-2013-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "My Dad Was Nearly James Bond",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Des Bishop — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "4fa0b6053a684756f9b41fd28f37d2dbe0d2621e9152e2df9a7ac95d31e18006"
+    },
+    "english-2013-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "My Dad Was Nearly James Bond",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Des Bishop — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "0d2701fb47465fdc38293354ee0a3c5f5d6e75190dc40e5a1a4fcd402387d3bb"
+    },
+    "english-2013-ol-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "My Dad Was Nearly James Bond",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Des Bishop — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "37d4ef92e446c87f5f26afa77e3dfd0e2b89beafe3a7a7f868e148c588b701ec"
+    },
+    "english-2013-ol-p1-t1-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "My Dad Was Nearly James Bond",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Des Bishop — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "48411f4361d00fc2dd610e65d9f64ee56abb5f01901fa4b80f1916109dfadebb"
+    },
+    "english-2013-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Gary Larson — Far Side Cartoonist",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Gary Larson — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "f7b88ac9b90fe2f49ce6c85bc26bc35f1afac478d03bfffb699d461812bdafae"
+    },
+    "english-2013-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Gary Larson — Far Side Cartoonist",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Gary Larson — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "ddadbc09d4e98520204d410d008f3b7d1f4b7931232fc34b9f1c09f58342ed71"
+    },
+    "english-2013-ol-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Gary Larson — Far Side Cartoonist",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Gary Larson — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "ff35c28f48a1d3bbabc76c803b5404a7bce0dc4e5b73d966caabaef2d1db67ed"
+    },
+    "english-2013-ol-p1-t2-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Gary Larson — Far Side Cartoonist",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Gary Larson — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "e04ec2b03c0dfcfbb1d3a67deec7d21cc28e5f7fe686310612c38334f9a2abf1"
+    },
+    "english-2013-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Life and Laughing",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael McIntyre — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "c1e1e9f275ba1e3f7b84343690d9416911e7652bd6f16a9b4b348c86bbe5d809"
+    },
+    "english-2013-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Life and Laughing",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael McIntyre — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "e05879ac9a688ba09a6ccaaba4f1751927e4227a3a944e957cc6cc93a99e802d"
+    },
+    "english-2013-ol-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Life and Laughing",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael McIntyre — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "569bdf5ae64ea40d4920f0192c84a6156c4efcf8e6a7c034b3bf27355702393b"
+    },
+    "english-2013-ol-p1-t3-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Life and Laughing",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael McIntyre — passage and accompanying images as reproduced in the official SEC paper.",
+      "reason": "Full two-page source and all accompanying images visually checked in the full paper sweep.",
+      "questionSha256": "569f7858cc8aecf02047b5c5981d14dc0d2cdeb09c9ac873f302003b49becdc9"
+    },
+    "english-2018-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Advice to Young Writers — Letters to a Young Writer",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Colum McCann. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "817aae9cc656d205669ec86335c887270fb2e96fd8360f3f91b7750d8837e7cb"
+    },
+    "english-2018-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Advice to Young Writers — Letters to a Young Writer",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Colum McCann. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "3beb5f0411a409a14d012757f86bf0bd887de781cc91f02119ab3a3f2b3037e0"
+    },
+    "english-2018-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Advice to Young Writers — Letters to a Young Writer",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Colum McCann. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "f7e601269ce1b2d513b7a68d598fe9e501bfbfdbb4b9afcb7d74f7faeadcbfe5"
+    },
+    "english-2018-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Successful Young Writer — Elmet",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Fiona Mozley. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "6464012e6963c5d76b1e7dec8b5b1daa7e89ee8a18f4c8e3c577aef6c1358f2f"
+    },
+    "english-2018-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Successful Young Writer — Elmet",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Fiona Mozley. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "f236163e9033e63964cb28704b003bb1de7c23088389c067b2a9ef90cd2faa31"
+    },
+    "english-2018-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Successful Young Writer — Elmet",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Fiona Mozley. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "c54276506b42770d7cb1bb607cabebb9cedfd4cf21dbd9c8f4c7b84e5bd77a4f"
+    },
+    "english-2018-hl-p1-t3-a-i": {
+      "kind": "source-illustration",
+      "label": "TEXT 3",
+      "title": "A Tragic Young Poet — Dead Man’s Dump",
+      "pages": [
+        6
+      ],
+      "attribution": "Poem: Isaac Rosenberg; illustrated material: Pat Mills, David Hitchcock and Todd Klein. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "b234123b8da760a2b69bfbece2776bb75dae003c6b412dfa1206af5aba094d52"
+    },
+    "english-2018-hl-p1-t3-a-ii": {
+      "kind": "source-illustration",
+      "label": "TEXT 3",
+      "title": "A Tragic Young Poet — Dead Man’s Dump",
+      "pages": [
+        6
+      ],
+      "attribution": "Poem: Isaac Rosenberg; illustrated material: Pat Mills, David Hitchcock and Todd Klein. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "d26fc3cee3f819bac5e19543db499b84bb11bdbd42346d64eebedeeafce2624d"
+    },
+    "english-2018-hl-p1-t3-a-iii": {
+      "kind": "source-illustration",
+      "label": "TEXT 3",
+      "title": "A Tragic Young Poet — Dead Man’s Dump",
+      "pages": [
+        6
+      ],
+      "attribution": "Poem: Isaac Rosenberg; illustrated material: Pat Mills, David Hitchcock and Todd Klein. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "aede8df4fab72c1471a71159d922bd8aa2652606bdd922b17ab396bbff49fec0"
+    },
+    "english-2018-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Two ivory swans",
+      "pages": [
+        6
+      ],
+      "attribution": "Two ivory swans — Moya Cannon, as reproduced in the official SEC paper.",
+      "reason": "Full poem, title and byline visually verified on PDF p.6.",
+      "questionSha256": "33cee64d12880ee44c573d2b67abb6cc30bd7a99e3a8cf47172a3a6da9d1dda4"
+    },
+    "english-2018-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Two ivory swans",
+      "pages": [
+        6
+      ],
+      "attribution": "Two ivory swans — Moya Cannon, as reproduced in the official SEC paper.",
+      "reason": "Full poem, title and byline visually verified on PDF p.6.",
+      "questionSha256": "e4109494310dbacc282afe0e33b4870af4d8e235f29ecf0af64d19118c04583b"
+    },
+    "english-2018-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Two ivory swans",
+      "pages": [
+        6
+      ],
+      "attribution": "Two ivory swans — Moya Cannon, as reproduced in the official SEC paper.",
+      "reason": "Full poem, title and byline visually verified on PDF p.6.",
+      "questionSha256": "9f81c5e11624456efb6b0916dfc720b612fbb5afb6eb254ce8e26910d208b141"
+    },
+    "english-2018-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Joanne O’Riordan — United Nations speech",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Joanne O’Riordan. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "6f4de84a461a721124d1cb1ee08371245c48a51cd3599fe77f141e3c6aa67397"
+    },
+    "english-2018-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Joanne O’Riordan — United Nations speech",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Joanne O’Riordan. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "d638535dfad2c5a09e28685861fca8a42c38838089fb23378e9debc81964b2fa"
+    },
+    "english-2018-ol-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Joanne O’Riordan — United Nations speech",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Joanne O’Riordan. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "96e8ad6bce51ae6df1e5f3479dec958a8642789410c407786995d3e533fd9d19"
+    },
+    "english-2018-ol-p1-t1-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Joanne O’Riordan — United Nations speech",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Joanne O’Riordan. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "b7f528cea6a64820aafc6bfe30ab1ea20e308a8deae7d65c69306f116ac8fcad"
+    },
+    "english-2018-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Big Interview: How Paul’s Drive Ignited the Champion in Gary O’Donovan",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Larry Ryan. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "79422a743c91dbcaac19367324544ffcecbf2f536cedf409d52d4539dcb85a64"
+    },
+    "english-2018-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Big Interview: How Paul’s Drive Ignited the Champion in Gary O’Donovan",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Larry Ryan. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "e59e2f427770324590920dc3a6182a7232374d10d9889d2bbd36288d718a3437"
+    },
+    "english-2018-ol-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Big Interview: How Paul’s Drive Ignited the Champion in Gary O’Donovan",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Larry Ryan. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "98970d36b97aa6247dd6a9d55d412f0bb0c3fdacc6d3a420aae02bf27cb03d8b"
+    },
+    "english-2018-ol-p1-t2-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Big Interview: How Paul’s Drive Ignited the Champion in Gary O’Donovan",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Larry Ryan. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "b7f528cea6a64820aafc6bfe30ab1ea20e308a8deae7d65c69306f116ac8fcad"
+    },
+    "english-2018-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Kailash Satyarthi — interview and child-labour poster",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Interview source: UNESCO; poster as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "605da78e28e9b49f7def06fe6ed60d9b0b2bf1cc6be810016946b3b856d3cd78"
+    },
+    "english-2018-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Kailash Satyarthi — interview and child-labour poster",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Interview source: UNESCO; poster as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "40836615956092ee3e076830c9726d42a2a762baf1e202c536304ccb27f58528"
+    },
+    "english-2018-ol-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Kailash Satyarthi — interview and child-labour poster",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Interview source: UNESCO; poster as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "13957c2f6d9fc8ff3339c58eb55b17e5544069454c23d998f8e8df4bd63950eb"
+    },
+    "english-2018-ol-p1-t3-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Kailash Satyarthi — interview and child-labour poster",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Interview source: UNESCO; poster as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "questionSha256": "b7f528cea6a64820aafc6bfe30ab1ea20e308a8deae7d65c69306f116ac8fcad"
+    },
+    "english-2010-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Personal Future — Stepping Stones: Interviews with Seamus Heaney",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Seamus Heaney interviewed by Dennis O’Driscoll. Material as reproduced in the official SEC paper.",
+      "questionSha256": "28c20dedcc7d095caed92b4d26a82ac32ab7968f5f2862c32852e7e7e5e0de28",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Personal Future — Stepping Stones: Interviews with Seamus Heaney",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Seamus Heaney interviewed by Dennis O’Driscoll. Material as reproduced in the official SEC paper.",
+      "questionSha256": "4b9bb677c8174d4cd288eef2b4de5e59d2604019cbdcb49f87ee6d91ba4b25db",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Personal Future — Stepping Stones: Interviews with Seamus Heaney",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Seamus Heaney interviewed by Dennis O’Driscoll. Material as reproduced in the official SEC paper.",
+      "questionSha256": "ba200000489da0b38aa63cc0619d81444c8da60f01a0fba8e436f56620e2b961",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Global Future — Nobel Prize Acceptance Speech",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Al Gore, 2007. Material as reproduced in the official SEC paper.",
+      "questionSha256": "0c0738199021323f6d3ab8ab3c771bd4bf27fb9e889ebddc849a3f8774164561",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Global Future — Nobel Prize Acceptance Speech",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Al Gore, 2007. Material as reproduced in the official SEC paper.",
+      "questionSha256": "60d8983d517a5c1068613a9ee27dcb16e04818ef699e5efaca7562b6e6ee7f14",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Global Future — Nobel Prize Acceptance Speech",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Al Gore, 2007. Material as reproduced in the official SEC paper.",
+      "questionSha256": "b91c2a4086664e9641a819e164da9fde42ca520c512cab689c4e9f87fe267f6c",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "An Imagined Future — Fahrenheit 451",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Ray Bradbury; covers and photograph as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "questionSha256": "dd1c73d66573a53464a62febf0fea8d055a43de4027cacdb5bc1b6bb30f889a5",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-hl-p1-t3-a-ii": {
+      "kind": "source-illustration",
+      "label": "TEXT 3",
+      "title": "Fahrenheit 451 — two book covers",
+      "pages": [
+        7
+      ],
+      "attribution": "Ray Bradbury; covers and photograph as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "questionSha256": "91cb6d99b35578448230dec7fdf41ca28873aca4a31dd558d4f646b0b5f34d80",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "An Imagined Future — Fahrenheit 451",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Ray Bradbury; covers and photograph as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "questionSha256": "7e7bb4ca7a84b4d7fd505c06a76faf431278d1176cf7b284e4b307129b2ec97f",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Dangerous Challenges — Martin Strel and Sophie Collett",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Passages and photographs as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "questionSha256": "711035eb691e35af51528e6e1dba0cfad78a4d84affa66cd21ee856f599acab6",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Dangerous Challenges — Martin Strel and Sophie Collett",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Passages and photographs as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "questionSha256": "055a46217cfe75fd5b57f739221df165557b9a84249da7b0361bf1e1f30efabd",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-ol-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Dangerous Challenges — Martin Strel and Sophie Collett",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Passages and photographs as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "questionSha256": "a3b2e0a246ee1ae11148c068ada2e1d7b66c89f80f7ba5365ad11030ea3fbebd",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Across the Atlantic in a Leather Boat — The Brendan Voyage",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Tim Severin. Material as reproduced in the official SEC paper.",
+      "questionSha256": "955cd950fdadd0facdd7f23ebb849378c70b31b0582f6d941c376bfc68a5eacc",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Across the Atlantic in a Leather Boat — The Brendan Voyage",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Tim Severin. Material as reproduced in the official SEC paper.",
+      "questionSha256": "2ccbfe28eff7cf5bb3efc2600891c45c866735a0b150fa36aacd1fd18ff9dd34",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-ol-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Across the Atlantic in a Leather Boat — The Brendan Voyage",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Tim Severin. Material as reproduced in the official SEC paper.",
+      "questionSha256": "9d0a1a9989f4570ce3f86454ec6ac94661b034228afc91dcffe540e1e0798253",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-ol-p1-t3-a-i": {
+      "kind": "source-illustration",
+      "label": "TEXT 3",
+      "title": "Facing Danger — four numbered images",
+      "pages": [
+        6
+      ],
+      "attribution": "Images as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "questionSha256": "173918e7eb92298373791282c2b7d57a4e966088a6415c6696a933a871b99f0a",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-ol-p1-t3-a-ii": {
+      "kind": "source-illustration",
+      "label": "TEXT 3",
+      "title": "Facing Danger — four numbered images",
+      "pages": [
+        6
+      ],
+      "attribution": "Images as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "questionSha256": "bf1bc41dec7136067f1b0f8094e1305c4c4e2734396be83cb54b157f04c70ece",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-ol-p1-t3-a-iii": {
+      "kind": "source-illustration",
+      "label": "TEXT 3",
+      "title": "Facing Danger — four numbered images",
+      "pages": [
+        6
+      ],
+      "attribution": "Images as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
+      "questionSha256": "de8c15d494f9494e87bdf8508b3d403b6bdf7743575b71bef2d2fe639c89b60d",
+      "reason": "Full paper visually swept. The complete passage and images were checked against each prompt. OL Text3 is entirely on p.6; HL Text3 cover comparison uses the two covers on p.7, while its prose questions need pp.6–7."
+    },
+    "english-2010-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Seed",
+      "pages": [
+        6
+      ],
+      "attribution": "Seed — Paula Meehan, as reproduced in the official SEC paper.",
+      "presentationNote": "The official paper prints “useless” in line 12. The marking scheme corrects this to “useful” and accepts responses based on either version. The reader preserves the paper as issued.",
+      "questionSha256": "892c174e949b9f0ca0c68479838a0ffc064123212186f9a13149e84e0e4ad92b",
+      "reason": "Poem, title and byline visually verified on paper p.6. The explicit erratum and acceptance of both readings were verified on marking-scheme PDF p.31."
+    },
+    "english-2010-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Seed",
+      "pages": [
+        6
+      ],
+      "attribution": "Seed — Paula Meehan, as reproduced in the official SEC paper.",
+      "presentationNote": "The official paper prints “useless” in line 12. The marking scheme corrects this to “useful” and accepts responses based on either version. The reader preserves the paper as issued.",
+      "questionSha256": "2d8647819aa9d328316d30bb7087f7c50f18520764a6662d48d160bfd02154b0",
+      "reason": "Poem, title and byline visually verified on paper p.6. The explicit erratum and acceptance of both readings were verified on marking-scheme PDF p.31."
+    },
+    "english-2010-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Seed",
+      "pages": [
+        6
+      ],
+      "attribution": "Seed — Paula Meehan, as reproduced in the official SEC paper.",
+      "presentationNote": "The official paper prints “useless” in line 12. The marking scheme corrects this to “useful” and accepts responses based on either version. The reader preserves the paper as issued.",
+      "questionSha256": "ac0c9ec49cd621d75241af7d4dc04f7a8894b6a8d0cb9417f8ce1dce7af0b882",
+      "reason": "Poem, title and byline visually verified on paper p.6. The explicit erratum and acceptance of both readings were verified on marking-scheme PDF p.31."
+    },
+    "english-2010-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Nettles",
+      "pages": [
+        10
+      ],
+      "attribution": "Nettles — Vernon Scannell, as reproduced in the official SEC paper.",
+      "questionSha256": "cacb8b8f5d50bb7066f221c00c6f39ce956d5c6d10db7f464e838bc5d76a269f",
+      "reason": "Full poem, illustration, glossary, title and byline visually checked on paper PDF10."
+    },
+    "english-2010-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Nettles",
+      "pages": [
+        10
+      ],
+      "attribution": "Nettles — Vernon Scannell, as reproduced in the official SEC paper.",
+      "questionSha256": "0257569d547abc96a21580bd311aecdab4ed9e2f17c86e4f9842c2f64b7d0fc3",
+      "reason": "Full poem, illustration, glossary, title and byline visually checked on paper PDF10."
+    },
+    "english-2010-ol-p2-prescribed-d-q2-iii": {
+      "kind": "supplementary-text",
+      "label": "THE TWO NAMED POEMS",
+      "title": "The Lake Isle of Innisfree / An Irish Airman Foresees his Death",
+      "pages": [],
+      "texts": [
+        {
+          "title": "The Lake Isle of Innisfree",
+          "author": "W. B. Yeats",
+          "stanzas": [
+            [
+              "I will arise and go now, and go to Innisfree,",
+              "And a small cabin build there, of clay and wattles made;",
+              "Nine bean rows will I have there, a hive for the honey bee,",
+              "And live alone in the bee-loud glade."
+            ],
+            [
+              "And I shall have some peace there, for peace comes dropping slow,",
+              "Dropping from the veils of the morning to where the cricket sings;",
+              "There midnight’s all a glimmer, and noon a purple glow,",
+              "And evening full of the linnet’s wings."
+            ],
+            [
+              "I will arise and go now, for always night and day",
+              "I hear lake water lapping with low sounds by the shore;",
+              "While I stand on the roadway, or on the pavements gray,",
+              "I hear it in the deep heart’s core."
+            ]
+          ],
+          "edition": "Poems Lyrical and Narrative, Collected Works, volume I (Shakespeare Head Press, 1908), p.154. Text from Project Gutenberg.",
+          "sourceUrl": "https://www.gutenberg.org/files/49608/49608-h/49608-h.htm#Page_154"
+        },
+        {
+          "title": "An Irish Airman Foresees his Death",
+          "author": "W. B. Yeats",
+          "stanzas": [
+            [
+              "I know that I shall meet my fate",
+              "Somewhere among the clouds above;",
+              "Those that I fight I do not hate",
+              "Those that I guard I do not love;",
+              "My country is Kiltartan Cross,",
+              "My countrymen Kiltartan's poor,",
+              "No likely end could bring them loss",
+              "Or leave them happier than before.",
+              "Nor law, nor duty bade me fight,",
+              "Nor public man, nor angry crowds,",
+              "A lonely impulse of delight",
+              "Drove to this tumult in the clouds;",
+              "I balanced all, brought all to mind,",
+              "The years to come seemed waste of breath,",
+              "A waste of breath the years behind",
+              "In balance with this life, this death."
+            ]
+          ],
+          "edition": "The Wild Swans at Coole (Macmillan, 1919), p.13. Text from Project Gutenberg.",
+          "sourceUrl": "https://www.gutenberg.org/files/32491/32491-h/32491-h.htm#Page_13"
+        }
+      ],
+      "attribution": "W. B. Yeats. Reading editions supplied from Project Gutenberg.",
+      "presentationNote": "These studied poems are named in the question but are not printed in the 2010 examination paper. The reader supplies the cited historical editions, preserving their wording, line breaks and stanzas.",
+      "questionSha256": "3610b6815a73e7dc69fd38699ef605df125b6bbae4c61a303fe3a9d30a96702b",
+      "reason": "Paper PDF17 names these two studied poems; scheme PDF35–36 accepts discussion of one or both. The Wild Swans at Coole on paper PDF16 is not this question’s source. The public-domain 1908 and 1919 reading editions are separately attributed and are not represented as SEC examination material.",
+      "editionEvidence": [
+        {
+          "url": "https://www.gutenberg.org/files/49608/49608-h/49608-h.htm",
+          "downloadSha256": "6a99dc7bec7ee91699667c895cd43daec5d9000388402cda39affb6d57a02326",
+          "editionYear": 1908
+        },
+        {
+          "url": "https://www.gutenberg.org/files/32491/32491-h/32491-h.htm",
+          "downloadSha256": "e8cf4d33924152f5b20c482e9c514d02dada3ea58679ad534f8f77a37602491d",
+          "editionYear": 1919
+        }
+      ]
+    },
+    "english-2011-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "An Irishwoman’s Diary",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Lara Marlowe, The Irish Times; Juliet Manet with Cat by Renoir and Summer: Cat on a balustrade by T. A. Steinlen. Material as reproduced in the official SEC paper.",
+      "questionSha256": "6ce15ecbc1e07a239636515627785b235bf0590713ee6b382e70ad3e6115b39c",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "An Irishwoman’s Diary",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Lara Marlowe, The Irish Times; Juliet Manet with Cat by Renoir and Summer: Cat on a balustrade by T. A. Steinlen. Material as reproduced in the official SEC paper.",
+      "questionSha256": "033efbffdae7ab3fa12a5fc444246deb02b0ce0d0d398207b2939ed644e3984c",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "An Irishwoman’s Diary",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Lara Marlowe, The Irish Times; Juliet Manet with Cat by Renoir and Summer: Cat on a balustrade by T. A. Steinlen. Material as reproduced in the official SEC paper.",
+      "questionSha256": "afc4c742337f599278a24c1e612df5a184e5ff860d0c5b2e7de7e7cff20c12de",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Let the Great World Spin",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Colum McCann; accompanying images of Philippe Petit’s tight-rope walk. Material as reproduced in the official SEC paper.",
+      "questionSha256": "63ce070dce236c45d25c9108414e5e7c9c2428a17ff5181a5a66de0bc98988f3",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Let the Great World Spin",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Colum McCann; accompanying images of Philippe Petit’s tight-rope walk. Material as reproduced in the official SEC paper.",
+      "questionSha256": "d572036468e03aebb110a3501088df3fd3dd3228edb80442c1234afe44ce8ee5",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Let the Great World Spin",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Colum McCann; accompanying images of Philippe Petit’s tight-rope walk. Material as reproduced in the official SEC paper.",
+      "questionSha256": "4cd8dc2be6b916ce2ef7fb0d1dbb03d0e753a8b046dd782b29391189f8156dd2",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Wintersongs",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Kevin Barry, There are Little Kingdoms. Material as reproduced in the official SEC paper.",
+      "questionSha256": "f9ecf068bfeab51b7a21080472b07a26805d932824919f4f774bd7fa342cc5a0",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Wintersongs",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Kevin Barry, There are Little Kingdoms. Material as reproduced in the official SEC paper.",
+      "questionSha256": "ad2cb617ca727815b37f0a44d77377eddc6340c8e5a7006fa304164f608efb1f",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Wintersongs",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Kevin Barry, There are Little Kingdoms. Material as reproduced in the official SEC paper.",
+      "questionSha256": "766ed7663d5547123fc8738ca4f1cca2f943bc9187fbaceaf049bde37707bad6",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Out of This World — Magnificent Desolation",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Buzz Aldrin. Material as reproduced in the official SEC paper.",
+      "questionSha256": "1778feddd083124302aaad0e95ddf057672643a15cfbe2b0b1c19624f3dbb007",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Out of This World — Magnificent Desolation",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Buzz Aldrin. Material as reproduced in the official SEC paper.",
+      "questionSha256": "d8fb2f32c8da59a1c4fb5e0ae72ab615ed92d823f5db7d4bf430a7a679115ba0",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-ol-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Out of This World — Magnificent Desolation",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Buzz Aldrin. Material as reproduced in the official SEC paper.",
+      "questionSha256": "f51fb59a34e14b24220dd2e56af69f4ebdea364d3ecf898e7bd14ac480d22065",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Discovering India on a Bicycle! — Full Tilt, Ireland to India with a Bicycle",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Dervla Murphy. Material as reproduced in the official SEC paper.",
+      "questionSha256": "a007d67890cbb01b80b84c529ab36abf0d6048fb6fdc87b25d5363deb986c95d",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Discovering India on a Bicycle! — Full Tilt, Ireland to India with a Bicycle",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Dervla Murphy. Material as reproduced in the official SEC paper.",
+      "questionSha256": "203ce0bd01b2806986b3b52628e17e6e13a44e717a44f215d48d53905c30fa65",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-ol-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Discovering India on a Bicycle! — Full Tilt, Ireland to India with a Bicycle",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Dervla Murphy. Material as reproduced in the official SEC paper.",
+      "questionSha256": "b27cfc577fcfe6f0b8f31ddd008c00ee0e952551aeff02277a7efaf651419a10",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Continuing Voyages… — Constellations",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Marco Palmieri, introduction to Constellations, celebrating forty years of Star Trek. Material as reproduced in the official SEC paper.",
+      "questionSha256": "87667d045c932642a7542b5144c4f798c9000a4bed53314c850ec13113b0aa0a",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Continuing Voyages… — Constellations",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Marco Palmieri, introduction to Constellations, celebrating forty years of Star Trek. Material as reproduced in the official SEC paper.",
+      "questionSha256": "4770e9f8701fe5914d86925d9e0d2af6d2bf6e450da22b9de251a724ffc80eb2",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-ol-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Continuing Voyages… — Constellations",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Marco Palmieri, introduction to Constellations, celebrating forty years of Star Trek. Material as reproduced in the official SEC paper.",
+      "questionSha256": "55d2d40dc4f2618f718b02ba80c27b85d60b7bd027bfd32b7fd7f46400adc3b7",
+      "reason": "Full paper visually swept. Complete passage, accompanying illustrations, title and introduction checked on both pages. Higher Text3 B explicitly requires the same short-story extract for both diary entries; its scheme confirms this dependency."
+    },
+    "english-2011-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Poetry",
+      "pages": [
+        6
+      ],
+      "attribution": "Poetry — Leanne O’Sullivan, as reproduced in the official SEC paper.",
+      "questionSha256": "e527d46422a17562f2d680d0985b792e846f2783b5b4313c52fc5082a11212ed",
+      "reason": "Title, byline, both stanzas and Minerva glossary visually verified on paper PDF6."
+    },
+    "english-2011-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Poetry",
+      "pages": [
+        6
+      ],
+      "attribution": "Poetry — Leanne O’Sullivan, as reproduced in the official SEC paper.",
+      "questionSha256": "795cd2efab43fd306a19081be68f63fe73218ed7145ff44a5d87689f250158f4",
+      "reason": "Title, byline, both stanzas and Minerva glossary visually verified on paper PDF6."
+    },
+    "english-2011-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Poetry",
+      "pages": [
+        6
+      ],
+      "attribution": "Poetry — Leanne O’Sullivan, as reproduced in the official SEC paper.",
+      "questionSha256": "bdec1fd1b3826b1789fb42d0d64c661803602bd8f17d32a82d3fb5ba5d1cd6ac",
+      "reason": "Title, byline, both stanzas and Minerva glossary visually verified on paper PDF6."
+    },
+    "english-2011-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "A Room in the Past",
+      "pages": [
+        10
+      ],
+      "attribution": "A Room in the Past — Ted Kooser, with the kitchen photograph as reproduced in the SEC paper.",
+      "questionSha256": "9b9fada8b1513e0e52e6f5aa8a63f2820cd3bc88fe0c489d3e44372c76f99f82",
+      "reason": "Paper PDF10 visually verified, including entire poem, author and kitchen photograph required by Q2."
+    },
+    "english-2011-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "A Room in the Past",
+      "pages": [
+        10
+      ],
+      "attribution": "A Room in the Past — Ted Kooser, with the kitchen photograph as reproduced in the SEC paper.",
+      "questionSha256": "00ab710483a40adc0a63c857aa109702d960cc41c324b47a782aeca3b25558e1",
+      "reason": "Paper PDF10 visually verified, including entire poem, author and kitchen photograph required by Q2."
+    },
+    "english-2011-ol-p2-unseen-q3": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "A Room in the Past",
+      "pages": [
+        10
+      ],
+      "attribution": "A Room in the Past — Ted Kooser, with the kitchen photograph as reproduced in the SEC paper.",
+      "questionSha256": "8ac8640ba9465850c1fd2720a4d89227fc642c94f30879c5714dd3d9fe027dee",
+      "reason": "Paper PDF10 visually verified, including entire poem, author and kitchen photograph required by Q2."
+    },
+    "english-2011-ol-p2-prescribed-d-q2-iii": {
+      "kind": "source-text",
+      "label": "PRESCRIBED POEM",
+      "title": "Spring",
+      "pages": [
+        16
+      ],
+      "attribution": "Spring — Gerard Manley Hopkins, as printed in the 2011 SEC paper.",
+      "questionSha256": "eace9d48e019a783ecbb6e23c667205de82c54ea51570a278761ebb57b9896b3",
+      "reason": "2011 scheme PDF36 requires discussion of both named poems. Spring is on paper PDF16; Inversnaid is absent and supplied separately from visually verified 2021 OL P2 PDF20.",
+      "additionalSources": [
+        {
+          "kind": "source-text",
+          "label": "OTHER STUDIED POEM",
+          "title": "Inversnaid",
+          "pages": [
+            20
+          ],
+          "attribution": "Gerard Manley Hopkins — reading copy from SEC 2021 Ordinary English Paper 2.",
+          "presentationNote": "Inversnaid is named in the 2011 question but is not printed there. This reading copy uses its page from the 2021 SEC examination.",
+          "sourcePaperId": "english-2021-ol-p2",
+          "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+        }
+      ]
+    },
+    "english-2012-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Personal Memories",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Margaret Laurence — edited extract from Where the World Began, with the prairie photograph. As reproduced in the SEC2012 paper.",
+      "questionSha256": "3a0078b8c1844248a1091c2ae1ae9fc2a096e608144d2cb307de86291eb9e14e",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Personal Memories",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Margaret Laurence — edited extract from Where the World Began, with the prairie photograph. As reproduced in the SEC2012 paper.",
+      "questionSha256": "33dc68ba76e1101e5565b260c515d8c9ee073c7ef72a7c300f359901e28c7caa",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Personal Memories",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Margaret Laurence — edited extract from Where the World Began, with the prairie photograph. As reproduced in the SEC2012 paper.",
+      "questionSha256": "d379d41e0ea7f575538da3785106cbd54be3cc7df83b8fd67e264a0b8fb4c939",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Shared Memories",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mary Robinson — edited speech to an international conference on hunger, with three accompanying images. As reproduced in the SEC2012 paper.",
+      "questionSha256": "bb52d58232a90d72c702c5baafd74954c51d991ca1546a5c887b62a9660e5bfc",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Shared Memories",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mary Robinson — edited speech to an international conference on hunger, with three accompanying images. As reproduced in the SEC2012 paper.",
+      "questionSha256": "bbb7189cdca02556bb5b5c029fa94d1bd8282ed82ca9f201f1fd0600fcbd7133",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Shared Memories",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mary Robinson — edited speech to an international conference on hunger, with three accompanying images. As reproduced in the SEC2012 paper.",
+      "questionSha256": "fe76bf61db9262fa40bd9c21941641fd957184948ccbd0b2301e84f84c7889f5",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A journey remembered and revisited",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Paul Theroux — edited extract from Ghost Train to the Eastern Star, with Images A and B. As reproduced in the SEC2012 paper.",
+      "questionSha256": "10aefb6daba8229576feffc8ee0c8a0345d66056edb9a9b238008d417461c4b6",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A journey remembered and revisited",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Paul Theroux — edited extract from Ghost Train to the Eastern Star, with Images A and B. As reproduced in the SEC2012 paper.",
+      "questionSha256": "77034c9ba0970c3f304c5634296af89d4cd5725fbf250dbdbcb3fc5546945534",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A journey remembered and revisited",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Paul Theroux — edited extract from Ghost Train to the Eastern Star, with Images A and B. As reproduced in the SEC2012 paper.",
+      "questionSha256": "9dd2bd32ea7064c74122167899873a01d4cc6c3c5f58da436684caafe392c28e",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Brian O’Driscoll — Sporting Leader",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Steve Beacom — article from The Belfast Telegraph, with three photographs of Brian O’Driscoll. As reproduced in the SEC2012 paper.",
+      "questionSha256": "77ec90eb7a7c0beeca5a4aae5faa656b934b8fe600db0b2b6f863c7f052070ad",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Brian O’Driscoll — Sporting Leader",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Steve Beacom — article from The Belfast Telegraph, with three photographs of Brian O’Driscoll. As reproduced in the SEC2012 paper.",
+      "questionSha256": "beff53d8b827f496ae85e29ecb0008b3e5e69568325c1f166514d67e625a635a",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Brian O’Driscoll — Sporting Leader",
+      "pages": [
+        2
+      ],
+      "attribution": "Steve Beacom — article from The Belfast Telegraph, with three photographs of Brian O’Driscoll. As reproduced in the SEC2012 paper.",
+      "questionSha256": "72513eb9e68dc277b97af4411d8574117c31dd82c4a08eaaf90aa4ebbef13997",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t1-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Brian O’Driscoll — Sporting Leader",
+      "pages": [
+        3
+      ],
+      "attribution": "Steve Beacom — article from The Belfast Telegraph, with three photographs of Brian O’Driscoll. As reproduced in the SEC2012 paper.",
+      "questionSha256": "8c6175d5e1f3d83567cd63fbdf6421bf164291b8d33738a5205c306265068247",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Mary McAleese — National Leader",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mary McAleese — open letter to the people of Ireland published in The Irish Times, with three photographs. As reproduced in the SEC2012 paper.",
+      "questionSha256": "b684f0cb45128aa5f0002139b73f39705343143ba7e6cffc402ea49bd3bcf91c",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Mary McAleese — National Leader",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mary McAleese — open letter to the people of Ireland published in The Irish Times, with three photographs. As reproduced in the SEC2012 paper.",
+      "questionSha256": "bfc9277adc81b1650742a230ff3b6998b04654dd9a9996277fc634e1039c7c04",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Mary McAleese — National Leader",
+      "pages": [
+        4
+      ],
+      "attribution": "Mary McAleese — open letter to the people of Ireland published in The Irish Times, with three photographs. As reproduced in the SEC2012 paper.",
+      "questionSha256": "334e5f540092945e9d5f00747d5bbf639669c9f8ce8d76c82eb7a4627d273b90",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t2-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Mary McAleese — National Leader",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mary McAleese — open letter to the people of Ireland published in The Irish Times, with three photographs. As reproduced in the SEC2012 paper.",
+      "questionSha256": "e20b8fa9ecb378cc56cbb91783e22c7029f5f9269872f3a34097ec0574b290b5",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t2-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Mary McAleese — National Leader",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mary McAleese — open letter to the people of Ireland published in The Irish Times, with three photographs. As reproduced in the SEC2012 paper.",
+      "questionSha256": "16e6641c2fd897729a024fa3d51cf6ad390786d520b1d1b7c37d928647b9a56b",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages. Scheme PDF7 expects references to McAleese’s letter, so the letter remains available alongside the self-contained prompt."
+    },
+    "english-2012-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Google — Creative Market Leaders",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Rhymer Rigby — edited extract from 28 Business Thinkers Who Changed the World, with the Google logo and five-word image. As reproduced in the SEC2012 paper.",
+      "questionSha256": "43a51ba5ef7a856f851c9b8e048d9ddae2bb604bfc10502933c75de3897070d9",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Google — Creative Market Leaders",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Rhymer Rigby — edited extract from 28 Business Thinkers Who Changed the World, with the Google logo and five-word image. As reproduced in the SEC2012 paper.",
+      "questionSha256": "e182f836eb2e3086e8f130bb96dcfa91849f97917fc1ab11aa316768bfb1385c",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Google — Creative Market Leaders",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Rhymer Rigby — edited extract from 28 Business Thinkers Who Changed the World, with the Google logo and five-word image. As reproduced in the SEC2012 paper.",
+      "questionSha256": "2c0fd305487f6f06b6a49076fcc375d3609c2dacea6d9e4cacff19527849ee27",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-ol-p1-t3-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Google — Creative Market Leaders",
+      "pages": [
+        6
+      ],
+      "attribution": "Rhymer Rigby — edited extract from 28 Business Thinkers Who Changed the World, with the Google logo and five-word image. As reproduced in the SEC2012 paper.",
+      "questionSha256": "5d3b203f309593f0207c9e1efaa14d890504ba9c9ccd636949758f96410bae1f",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2012-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Beautiful Lie",
+      "pages": [
+        6
+      ],
+      "attribution": "The Beautiful Lie — Sheenagh Pugh, as reproduced in the official SEC paper.",
+      "questionSha256": "52f8340e5e63e3cfea546f334026661238565ea4610ac646b94ab71fa33da52c",
+      "reason": "Title, byline and all five stanzas visually verified on paper PDF6."
+    },
+    "english-2012-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Beautiful Lie",
+      "pages": [
+        6
+      ],
+      "attribution": "The Beautiful Lie — Sheenagh Pugh, as reproduced in the official SEC paper.",
+      "questionSha256": "2d8647819aa9d328316d30bb7087f7c50f18520764a6662d48d160bfd02154b0",
+      "reason": "Title, byline and all five stanzas visually verified on paper PDF6."
+    },
+    "english-2012-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Beautiful Lie",
+      "pages": [
+        6
+      ],
+      "attribution": "The Beautiful Lie — Sheenagh Pugh, as reproduced in the official SEC paper.",
+      "questionSha256": "ac0c9ec49cd621d75241af7d4dc04f7a8894b6a8d0cb9417f8ce1dce7af0b882",
+      "reason": "Title, byline and all five stanzas visually verified on paper PDF6."
+    },
+    "english-2012-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Shoulders",
+      "pages": [
+        11
+      ],
+      "attribution": "Shoulders — Naomi Shihab Nye, as reproduced in the SEC paper.",
+      "questionSha256": "73a2e633fd0e602671848055429c69a1be8ef70327aec0697e905342ec95e1e4",
+      "reason": "Paper PDF11 visually verified: complete poem, author and final six lines; PDF12 starts a different prescribed poem."
+    },
+    "english-2012-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Shoulders",
+      "pages": [
+        11
+      ],
+      "attribution": "Shoulders — Naomi Shihab Nye, as reproduced in the SEC paper.",
+      "questionSha256": "29fe05aba3da84b66968499b2808ad5ed3b3ec4fbf066eaa4ea3345651378e56",
+      "reason": "Paper PDF11 visually verified: complete poem, author and final six lines; PDF12 starts a different prescribed poem."
+    },
+    "english-2014-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "An Influential Event",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Richard Ford — edited extract from Canada, with the book cover. As reproduced in the SEC2014 paper.",
+      "questionSha256": "2e41705a2441c377696adb2c70f4316db3161fd5934b257cc62215efdc73bff3",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "An Influential Event",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Richard Ford — edited extract from Canada, with the book cover. As reproduced in the SEC2014 paper.",
+      "questionSha256": "aeefa4f09bca7c46d059ed7150704a8540c9d6a195666276024ace69095105e7",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "An Influential Event",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Richard Ford — edited extract from Canada, with the book cover. As reproduced in the SEC2014 paper.",
+      "questionSha256": "8b95823e5338b05eabfd04583cfcdf7bbaa18783566cee8f417d2344ae460fe0",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Cultural Influences",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Alan Warner and John Lanchester — The Joy of Influence contributions adapted from The Guardian, with the pop-music and video-game word clouds. As reproduced in the SEC2014 paper.",
+      "questionSha256": "16a7c7c29955f68abe2247bc54805dcdecad92a2f7f649e8880bb1984ec96f77",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Cultural Influences",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Alan Warner and John Lanchester — The Joy of Influence contributions adapted from The Guardian, with the pop-music and video-game word clouds. As reproduced in the SEC2014 paper.",
+      "questionSha256": "2024e3e9e64b2d8bda4e8053593c969c9c6fb1c5d06b6f63dfa66849aac00984",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Cultural Influences",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Alan Warner and John Lanchester — The Joy of Influence contributions adapted from The Guardian, with the pop-music and video-game word clouds. As reproduced in the SEC2014 paper.",
+      "questionSha256": "4384477f97f32fa47a8789fe3ce8675e808dc491a77852f480c1f4238f1c0f37",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Influence of the Past",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Seamus Heaney — edited essay The Sense of the Past from History Ireland, including The Garden Seat by Thomas Hardy, the Neruda quotation and both photographs. As reproduced in the SEC2014 paper.",
+      "questionSha256": "a07cee9bf529d6a2041d899ee106892688b340cbbf04b3354dc86d8498e303cb",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Influence of the Past",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Seamus Heaney — edited essay The Sense of the Past from History Ireland, including The Garden Seat by Thomas Hardy, the Neruda quotation and both photographs. As reproduced in the SEC2014 paper.",
+      "questionSha256": "2fc913ae18270f705160790e18df00b42ccb7ebd25e9d4f39978402a05db9605",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Influence of the Past",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Seamus Heaney — edited essay The Sense of the Past from History Ireland, including The Garden Seat by Thomas Hardy, the Neruda quotation and both photographs. As reproduced in the SEC2014 paper.",
+      "questionSha256": "154d4aac9dfdfdd21c779df354817d9d4bde4256678e245b066d010f936c829c",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Roy Keane",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Roy Keane with Eamon Dunphy — Keane, The Autobiography, with both photographs. As reproduced in the SEC2014 paper.",
+      "questionSha256": "e9d76ca9bc7e6d206c31197befdebb40c02a4b2679b0cb24ddc96070063c0001",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Roy Keane",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Roy Keane with Eamon Dunphy — Keane, The Autobiography, with both photographs. As reproduced in the SEC2014 paper.",
+      "questionSha256": "dc561fa95a3b82c76f6bc5fe7a0b1b9e30766eafa558f7ad0f4396cf9e66c25a",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Roy Keane",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Roy Keane with Eamon Dunphy — Keane, The Autobiography, with both photographs. As reproduced in the SEC2014 paper.",
+      "questionSha256": "617d2ceaa5b20027d6068033462a643093b3921b5f39e30f225057d7b7bcad4b",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t1-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Roy Keane",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Roy Keane with Eamon Dunphy — Keane, The Autobiography, with both photographs. As reproduced in the SEC2014 paper.",
+      "questionSha256": "ac5f9b54b25ca5d70e4f52a48b04c3de7a1ac174bf9bc25fbdc06f445caba20c",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Malala Yousafzai",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Malala Yousafzai with Christina Lamb — I Am Malala, with the book cover. As reproduced in the SEC2014 paper.",
+      "questionSha256": "bf2db34b0216f3c6d271248367a40ab8316d5c07e6ec5b2fcdf63402d4141696",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Malala Yousafzai",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Malala Yousafzai with Christina Lamb — I Am Malala, with the book cover. As reproduced in the SEC2014 paper.",
+      "questionSha256": "c29b76c1c68ac20f2661cc1c2d69bb76f96fa18d19274dd420be824f90bcf684",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Malala Yousafzai",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Malala Yousafzai with Christina Lamb — I Am Malala, with the book cover. As reproduced in the SEC2014 paper.",
+      "questionSha256": "ac8d1fde2b7ab46066b1bc64882707495a0342018dec429633b18602a3c13a86",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t2-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Malala Yousafzai",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Malala Yousafzai with Christina Lamb — I Am Malala, with the book cover. As reproduced in the SEC2014 paper.",
+      "questionSha256": "7671e60fc63eb3d83ea9baa58137c8a67b4f614bc5a860f9014494aa27912f5f",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Sisters Brothers",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Patrick deWitt — edited extract from The Sisters Brothers, with both covers. As reproduced in the SEC2014 paper.",
+      "questionSha256": "b373962acd0c1b0da62c26f8779d55324e2bd41e084ca742c423e10249be8bf4",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Sisters Brothers",
+      "pages": [
+        6
+      ],
+      "attribution": "Patrick deWitt — edited extract from The Sisters Brothers, with both covers. As reproduced in the SEC2014 paper.",
+      "questionSha256": "7f33259b3d84cd610c86881175fd91e15da0fc851e3f7030396788c72da8e6c8",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Sisters Brothers",
+      "pages": [
+        7
+      ],
+      "attribution": "Patrick deWitt — edited extract from The Sisters Brothers, with both covers. As reproduced in the SEC2014 paper.",
+      "questionSha256": "113afdf435da0b33677869fb45702825e8f0f65eea40c06c86f06dfe6e5bf698",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-ol-p1-t3-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Sisters Brothers",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Patrick deWitt — edited extract from The Sisters Brothers, with both covers. As reproduced in the SEC2014 paper.",
+      "questionSha256": "60a691eec8982d43a53e2e7611c0d8ca7242270383924eb31868c53fc4d5cfa4",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2014-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Peninsula",
+      "pages": [
+        6
+      ],
+      "attribution": "The Peninsula — Seamus Heaney — Door into the Dark, as reproduced in the official SEC paper.",
+      "questionSha256": "e7c7286b69e5a13568121a6c5feaa6a25ef06eb1511569df625d7d55be6731d6",
+      "reason": "Title, byline and all four stanzas visually verified on paper PDF6."
+    },
+    "english-2014-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Peninsula",
+      "pages": [
+        6
+      ],
+      "attribution": "The Peninsula — Seamus Heaney — Door into the Dark, as reproduced in the official SEC paper.",
+      "questionSha256": "2909ebc7ef56198a755ea7f3291c6e4aa20a15eec578d1ad62d623055c2ad5bc",
+      "reason": "Title, byline and all four stanzas visually verified on paper PDF6."
+    },
+    "english-2014-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Peninsula",
+      "pages": [
+        6
+      ],
+      "attribution": "The Peninsula — Seamus Heaney — Door into the Dark, as reproduced in the official SEC paper.",
+      "questionSha256": "1c11438a9d3d0b5abb48bd7ec19197305258715ec008576aa0f318b2c263d179",
+      "reason": "Title, byline and all four stanzas visually verified on paper PDF6."
+    },
+    "english-2014-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Coming Home",
+      "pages": [
+        11
+      ],
+      "attribution": "Coming Home — Owen Sheers, as reproduced in the SEC paper.",
+      "questionSha256": "6309a809295a859512cdfda698794e80e2c5f71b9df93437a9bdb6b39fbbf7f6",
+      "reason": "Paper PDF11 visually verified: all three stanzas, asterisk dividers and byline. PDF12 starts a different prescribed poem."
+    },
+    "english-2014-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Coming Home",
+      "pages": [
+        11
+      ],
+      "attribution": "Coming Home — Owen Sheers, as reproduced in the SEC paper.",
+      "questionSha256": "3d53745f409cb0a871c291447cc32cc902487536d3c32e760da24ce0629250f9",
+      "reason": "Paper PDF11 visually verified: all three stanzas, asterisk dividers and byline. PDF12 starts a different prescribed poem."
+    },
+    "english-2014-ol-p2-prescribed-a-q2-iii": {
+      "kind": "source-text",
+      "label": "PRESCRIBED POEM",
+      "title": "The Underground",
+      "pages": [
+        12
+      ],
+      "attribution": "The Underground — Seamus Heaney, as printed in the 2014 SEC paper.",
+      "questionSha256": "07978fcbfba5a4d7706980a5f7c4fbd569a9625494e46dc6838d30d91adcc4a2",
+      "reason": "Paper PDF13 and scheme PDF35 require preference among three named poems. The Underground appears on PDF12; A Constable Calls and A Call are supplied from visually verified SEC2012PDF12 and SEC2024PDF16 respectively.",
+      "additionalSources": [
+        {
+          "kind": "source-text",
+          "label": "OTHER STUDIED POEM",
+          "title": "A Constable Calls",
+          "pages": [
+            12
+          ],
+          "attribution": "Seamus Heaney — reading copy from SEC 2012 Ordinary English Paper 2.",
+          "presentationNote": "A Constable Calls is named in the 2014 question but is not printed there. This reading copy uses its page from the 2012 SEC examination.",
+          "sourcePaperId": "english-2012-ol-p2",
+          "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35"
+        },
+        {
+          "kind": "source-text",
+          "label": "OTHER STUDIED POEM",
+          "title": "A Call",
+          "pages": [
+            16
+          ],
+          "attribution": "Seamus Heaney — reading copy from SEC 2024 Ordinary English Paper 2.",
+          "presentationNote": "A Call is named in the 2014 question but is not printed there. This reading copy uses its page from the 2024 SEC examination.",
+          "sourcePaperId": "english-2024-ol-p2",
+          "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+        }
+      ]
+    },
+    "english-2014-ol-p2-prescribed-c-q2-iii": {
+      "kind": "source-text",
+      "label": "PRESCRIBED POEM",
+      "title": "Child",
+      "pages": [
+        16
+      ],
+      "attribution": "Child — Sylvia Plath, as printed in the 2014 SEC paper.",
+      "questionSha256": "114e41f533a9502391db3adbdb68d958d78e8a691c86dd3431d5c7da7e40e780",
+      "reason": "Paper PDF17 and scheme PDF39 require a favourite among three named poems. Child is printed on PDF16. Two absent poems have visually verified page-specific primary reading links; they are not reproduced in the app.",
+      "additionalSources": [
+        {
+          "kind": "linked-reading",
+          "label": "OTHER STUDIED POEMS",
+          "title": "Two other poems by Sylvia Plath",
+          "pages": [],
+          "attribution": "Sylvia Plath · published reading copies from CCEA and the SEC.",
+          "presentationNote": "These poems are named in the question but are not printed in this examination. Open a reading copy below, then return to your answer.",
+          "readings": [
+            {
+              "title": "Poppies in July",
+              "author": "Sylvia Plath",
+              "edition": "CCEA GCE AS English Literature Poetry Anthology",
+              "sourceUrl": "https://ccea.org.uk/downloads/docs/Support/General/2019/GCE%20English%20Literature%20Poetry%20Anthology%202016.pdf#page=54",
+              "location": "Printed page 52 · PDF page 54"
+            },
+            {
+              "title": "The Arrival of the Bee Box",
+              "author": "Sylvia Plath",
+              "edition": "SEC 2003 Ordinary English Paper 2",
+              "sourceUrl": "https://www.examinations.ie/archive/exampapers/2003/LC002GLP200EV.pdf#page=12",
+              "location": "Printed page 12 · PDF page 12"
+            }
+          ],
+          "evidence": [
+            {
+              "sha256": "c16be373d2b369b201c4590b1e9af72b8b3084e5ec080dfba2b11c0497d14e86",
+              "pages": [
+                54
+              ],
+              "reason": "Full15-line poem and final line visually checked; seven couplets and closing single line. CCEA page acknowledges reproduction from Ariel by permission of Faber and Faber Ltd. This app links to that edition rather than reproducing it."
+            },
+            {
+              "sha256": "70a415dce4641a5f0aa1190b2e5d88297515d2d3ac4f6f190be624c5cdae3243",
+              "pages": [
+                12
+              ],
+              "reason": "Full36-line poem visually checked: seven5-line stanzas and closing single line, title and byline. Direct official SEC archive download."
+            }
+          ]
+        }
+      ]
+    },
+    "english-2015-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Because We Can, We Must",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Bono — University of Pennsylvania graduation speech, with his photograph. As reproduced in the SEC2015 paper.",
+      "questionSha256": "0ad3ea5d6636ceb8108f342d6047c25697a49565f03e68656e64120678c554ac",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Because We Can, We Must",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Bono — University of Pennsylvania graduation speech, with his photograph. As reproduced in the SEC2015 paper.",
+      "questionSha256": "19613dd66e05df127f82c3a142c43f36037726e65d5c040aea03cd66eaad0ce8",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Because We Can, We Must",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Bono — University of Pennsylvania graduation speech, with his photograph. As reproduced in the SEC2015 paper.",
+      "questionSha256": "1578f8d83157691ac8903c7162f061782d454fc79813936139beee4193ec63ca",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Ghosts Don’t Show up on CCTV",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Joanna Briscoe — edited article from The Guardian Review, July 2014, with both book covers. As reproduced in the SEC2015 paper.",
+      "questionSha256": "5556ee7bb66ca93ae7f3f5d609e1c8875ece8035028b5f2f24ab4b1860fbb74a",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Ghosts Don’t Show up on CCTV",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Joanna Briscoe — edited article from The Guardian Review, July 2014, with both book covers. As reproduced in the SEC2015 paper.",
+      "questionSha256": "7f68b1dbbc388268dcaa81cca3e3b2f63e77e271d996a142d9a866424f4507c4",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Ghosts Don’t Show up on CCTV",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Joanna Briscoe — edited article from The Guardian Review, July 2014, with both book covers. As reproduced in the SEC2015 paper.",
+      "questionSha256": "888c73e41e25852228fd7b6fe1d6eb3976b723d3cbfc526f51e9c4fa2d20be75",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A Life in Time",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Penelope Lively — edited extract from Ammonites and Leaping Fish, with the book cover. As reproduced in the SEC2015 paper.",
+      "questionSha256": "fbf64009c130cd0c7038a6160f735e95778a834dd20a3f67cb800c215d5c240f",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A Life in Time",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Penelope Lively — edited extract from Ammonites and Leaping Fish, with the book cover. As reproduced in the SEC2015 paper.",
+      "questionSha256": "2f97cc701c1b9f78f6ba5b7853f024bb5e3026e240e6e0a6f66600b3daecdca9",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A Life in Time",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Penelope Lively — edited extract from Ammonites and Leaping Fish, with the book cover. As reproduced in the SEC2015 paper.",
+      "questionSha256": "f2fab9890ab53ff306e1c7e93dbbf0f77187ca87e39051666930987fe90e1c92",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Animals",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Roddy Doyle — edited extract from Animals, with the photograph of a finch. As reproduced in the SEC2015 paper.",
+      "questionSha256": "893a9c817be454e9796a2f04b7ee9cffbe81f07402c20157222333858e3ac76e",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Animals",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Roddy Doyle — edited extract from Animals, with the photograph of a finch. As reproduced in the SEC2015 paper.",
+      "questionSha256": "19774fa29880e3a07a366c22fa2be64257dd6085aa6053eda7cbc23d8fc5732f",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Animals",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Roddy Doyle — edited extract from Animals, with the photograph of a finch. As reproduced in the SEC2015 paper.",
+      "questionSha256": "b4368749f68a38110805fa7dde6d4fb4a3bdc2862b8a8c04155cc8929dcbc778",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t1-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Animals",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Roddy Doyle — edited extract from Animals, with the photograph of a finch. As reproduced in the SEC2015 paper.",
+      "questionSha256": "c9bf93daa767be0f0b60efd8ec7d85d5d67831fc21ea71eedf81f629b8ca31ab",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Real Mrs. Brown",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Brian Beacom — edited extract from the authorised biography of Brendan O’Carroll, with the book cover and photograph of Maureen O’Carroll. As reproduced in the SEC2015 paper.",
+      "questionSha256": "91906956c4445c72b03e14b0a6b7d39a6c8063a100ef8c5d9014e9ebfdbad1a8",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Real Mrs. Brown",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Brian Beacom — edited extract from the authorised biography of Brendan O’Carroll, with the book cover and photograph of Maureen O’Carroll. As reproduced in the SEC2015 paper.",
+      "questionSha256": "8589d406d06d3d5b548f8bf187ff4b70eca0f8c24e3865f77b03c3a5cf5515b1",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Real Mrs. Brown",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Brian Beacom — edited extract from the authorised biography of Brendan O’Carroll, with the book cover and photograph of Maureen O’Carroll. As reproduced in the SEC2015 paper.",
+      "questionSha256": "99beae2e996205fdcb7ee4b80c968ca577e6955097ef4df97dae9afc15ebc6f1",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t2-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Real Mrs. Brown",
+      "pages": [
+        4
+      ],
+      "attribution": "Brian Beacom — edited extract from the authorised biography of Brendan O’Carroll, with the book cover and photograph of Maureen O’Carroll. As reproduced in the SEC2015 paper.",
+      "questionSha256": "ce08045b7f9076c030d93ba72afea7c216fcb71f6d1841db73d383eabc305359",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Tatty",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Christine Dwyer Hickey — edited extract from Tatty, with both book covers. As reproduced in the SEC2015 paper.",
+      "questionSha256": "5ee00d6477eee4a36dd3724ba6e3d1f91aaabda3ac45c4ccde8c071189f15c6e",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Tatty",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Christine Dwyer Hickey — edited extract from Tatty, with both book covers. As reproduced in the SEC2015 paper.",
+      "questionSha256": "421292e86ed003fe110e016cef3cb9e1e300f244c0df7d5687fa113b8d12e754",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Tatty",
+      "pages": [
+        7
+      ],
+      "attribution": "Christine Dwyer Hickey — edited extract from Tatty, with both book covers. As reproduced in the SEC2015 paper.",
+      "questionSha256": "2ba940f423ae6385a2fff3b163c9ee41cd7ad45d3d0b1f9da58018c6ee098529",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-ol-p1-t3-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Tatty",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Christine Dwyer Hickey — edited extract from Tatty, with both book covers. As reproduced in the SEC2015 paper.",
+      "questionSha256": "86bb2646b1d14b8dacf2189d9f2195a14db0525a38a31da60003b1d06ec88141",
+      "reason": "Full12-page visual sweep: original passage, heading, author and images checked. All required written and visual material included; image-only prompts use their specific pages."
+    },
+    "english-2015-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Peter Street",
+      "pages": [
+        6
+      ],
+      "attribution": "Peter Street — Peter Sirr, as reproduced in the official SEC paper.",
+      "questionSha256": "47300443e72dc061fc1b0ec9f93e4fe05906274d349ddb0dbbd8a221d073eba9",
+      "reason": "Title, byline and all six three-line stanzas and the Whitefriar Street footnote visually verified on paper PDF6."
+    },
+    "english-2015-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Peter Street",
+      "pages": [
+        6
+      ],
+      "attribution": "Peter Street — Peter Sirr, as reproduced in the official SEC paper.",
+      "questionSha256": "2e82dfa5f714e701d6c6ded00bb20f37dd5dd15ca526776bfd10496648766cef",
+      "reason": "Title, byline and all six three-line stanzas and the Whitefriar Street footnote visually verified on paper PDF6."
+    },
+    "english-2015-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Peter Street",
+      "pages": [
+        6
+      ],
+      "attribution": "Peter Street — Peter Sirr, as reproduced in the official SEC paper.",
+      "questionSha256": "952cff60bdd591f47d3785dafd47855f6b6a877b79c91b1e5353da8f7a9fecb0",
+      "reason": "Title, byline and all six three-line stanzas and the Whitefriar Street footnote visually verified on paper PDF6."
+    },
+    "english-2015-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Today",
+      "pages": [
+        11
+      ],
+      "attribution": "Today — Vivienne McKechnie, as reproduced in the SEC paper.",
+      "questionSha256": "cac30217f92302b2da8573a8e106a8f8bdca9f1567d098dd88ebc84f6b9b5bad",
+      "reason": "All14 lines, byline and River Shannon introduction visually verified on PDF11. PDF12 begins The Locket and is excluded."
+    },
+    "english-2015-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Today",
+      "pages": [
+        11
+      ],
+      "attribution": "Today — Vivienne McKechnie, as reproduced in the SEC paper.",
+      "questionSha256": "704af388111984e610e5f95e81d0c892f24436e67eaf5d5bb770015f1fa4e976",
+      "reason": "All14 lines, byline and River Shannon introduction visually verified on PDF11. PDF12 begins The Locket and is excluded."
+    },
+    "english-2016-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Dramatic Journey",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Andrew Dickson — written text adapted from his book Worlds Elsewhere – Journeys Around Shakespeare’s Globe, with four posters for The Comedy of Errors. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "a0a22d44ad6961f26ed351b9e5453f1c830f4417301160f3356bd2cbaebc00e4",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Dramatic Journey",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Andrew Dickson — written text adapted from his book Worlds Elsewhere – Journeys Around Shakespeare’s Globe, with four posters for The Comedy of Errors. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "cb4872d8a0cff089999d437f14d79a5b7994a2c6103bc1327ee79481fe0699d9",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Dramatic Journey",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Andrew Dickson — written text adapted from his book Worlds Elsewhere – Journeys Around Shakespeare’s Globe, with four posters for The Comedy of Errors. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "34208d22345a907791599df8ef775c2dd3aad3f6369ee2cac90db5b9c3f08fad",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Personal Journey",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Sara Baume — edited extract adapted from her debut novel spill simmer falter wither, with the book cover. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "a9c345aabd3191cb19456a9a679d371ceaef89e9e641b5d462cc55f9e7e3e349",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Personal Journey",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Sara Baume — edited extract adapted from her debut novel spill simmer falter wither, with the book cover. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "edad552bbd151bc38095130db947e286ad028be41fc792075690a2129e6898c6",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Personal Journey",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Sara Baume — edited extract adapted from her debut novel spill simmer falter wither, with the book cover. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "253f62925e974897604818127070cd9097e0e66e062539616f96d25bae72dce0",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Journey into Space",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Barack Obama — edited text adapted from his speech at NASA’s Kennedy Space Centre, Florida, with the accompanying image of astronauts. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "365dd3481ec8f1f5dd0089d8ff44793eb985019c9b5f61e9be84c147fb006066",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Journey into Space",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Barack Obama — edited text adapted from his speech at NASA’s Kennedy Space Centre, Florida, with the accompanying image of astronauts. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "ed4cc42f5c859110330a0b78dda21128e0a96fc1368ab3be1672bd0a27c834b1",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Journey into Space",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Barack Obama — edited text adapted from his speech at NASA’s Kennedy Space Centre, Florida, with the accompanying image of astronauts. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "f56dcb20bc4c8727dcb1c20bbe98b42bd493a2a4286c6b6e88900525aa9a6c79",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Travel Blog",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Anna and Chris — edited adaptation of their travelblog.org entry posted on 8 October 2010, with two captioned images. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "8c0237706415eb5f166b05e3fd3e75e348e3f18437bd83ec33be491f5264ffa9",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Travel Blog",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Anna and Chris — edited adaptation of their travelblog.org entry posted on 8 October 2010, with two captioned images. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "7947d00133e914209adce45d6f062ed50a1c478c8ef68267ce1b9395e3d71a41",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-ol-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Travel Blog",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Anna and Chris — edited adaptation of their travelblog.org entry posted on 8 October 2010, with two captioned images. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "7a30f89b04aba45969d853d2027ce647ddde5a8aba6c9197f4e870d6418d69b1",
+      "reason": "The persona is one of the bloggers; the blog and both images are retained for their voice and travels. Scheme PDF5 does not require textual reference."
+    },
+    "english-2016-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Two Diaries from 1916",
+      "pages": [
+        4
+      ],
+      "attribution": "Mick O’Farrell — edited adaptation of extracts from The 1916 Diaries: Seosamh De Brún’s diary (PDF4) and Sergeant-Major Samuel H. Lomas’ diary (PDF5), with the Jacob’s Biscuit Factory illustration. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "e67b631a2803d9541d99d644364295d924e810421ea5d051ea0be561226ffec6",
+      "reason": "The task is limited to Seosamh De Brún’s diary extracts, all on PDF4 with the Text 2 introduction and the Jacob’s Biscuit Factory illustration."
+    },
+    "english-2016-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Two Diaries from 1916",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mick O’Farrell — edited adaptation of extracts from The 1916 Diaries: Seosamh De Brún’s diary (PDF4) and Sergeant-Major Samuel H. Lomas’ diary (PDF5), with the Jacob’s Biscuit Factory illustration. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "58c933ab1f17bfa45676fa453fa804ddb1df6da24084bb2dfeb0b3821492ddea",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-ol-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Two Diaries from 1916",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mick O’Farrell — edited adaptation of extracts from The 1916 Diaries: Seosamh De Brún’s diary (PDF4) and Sergeant-Major Samuel H. Lomas’ diary (PDF5), with the Jacob’s Biscuit Factory illustration. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "e41ab5e9ec0b218dae7f9b37a93682fdc8894aef63b5e819d11616f442895b9b",
+      "reason": "“Based on what you have read above”: the dates 24–27 April appear in both diaries (PDF4–5) and scheme PDF7 requires the text provided to be taken into consideration. Paddy Callan appears only in De Brún’s diary (PDF4), which the reader opens first."
+    },
+    "english-2016-ol-p1-t2-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Two Diaries from 1916",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Mick O’Farrell — edited adaptation of extracts from The 1916 Diaries: Seosamh De Brún’s diary (PDF4) and Sergeant-Major Samuel H. Lomas’ diary (PDF5), with the Jacob’s Biscuit Factory illustration. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "9f28107df9fc07347fd82f9977b050c45b4ef69494c4e3f73be35c4b8a713b05",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Keeping a Diary",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael Palin — edited adaptation of his article from The Guardian, with his photograph and caption. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "478700f63ad326435e928b43f0c3c05b5e3716378fa7b1671b11465bf49e1413",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Keeping a Diary",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael Palin — edited adaptation of his article from The Guardian, with his photograph and caption. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "432d3c2ad9609db1f25afe553721a7303e62b9073e43d40c1ded109579639b32",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, passage and images checked. All written and visual material the task needs is included."
+    },
+    "english-2016-ol-p1-t3-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Keeping a Diary",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael Palin — edited adaptation of his article from The Guardian, with his photograph and caption. As reproduced in the SEC 2016 paper.",
+      "questionSha256": "fa7cb98053f9d6fdbe648957a0088a3f20b2d4e77245f8293fe5d65824ac31ef",
+      "reason": "“Having read the above article”: the whole article (PDF6–7) is retained; paragraph 7 on PDF7 sets Palin’s view of an online blog against a handwritten notebook."
+    },
+    "english-2016-ol-p1-t1-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "A TRAVEL BLOG",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "64df6660ac6ca3b198a524841aa737e5aba7a8288fa49dfb35362dbab3d49794",
+      "questionSha256": "f55dcddad8af5e8d180f47db7d5140b7bc1f98e29da0a5c04e7b4500d7653d7b",
+      "reason": "Self-contained: whether social media would help plan a trip of the candidate’s own, either in Ireland or abroad. Scheme PDF5 assesses the candidate’s own view (agree, disagree or both) and its general indicative material never refers to Text 1. No passage is needed to answer faithfully, so the default Text 1 reader is removed."
+    },
+    "english-2016-ol-p1-t3-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "KEEPING A DIARY",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "64df6660ac6ca3b198a524841aa737e5aba7a8288fa49dfb35362dbab3d49794",
+      "questionSha256": "0147d94598c22b061efb603ba2d18c3e779d3a92b9805483def6471843b79041",
+      "reason": "Self-contained: an entry from the candidate’s own rediscovered First Year diary. Scheme PDF9 assesses a recognisable diary entry of their own feelings and experiences and never refers to Text 3. No passage is needed to answer faithfully, so the default Text 3 reader is removed."
+    }
+  }
+}
