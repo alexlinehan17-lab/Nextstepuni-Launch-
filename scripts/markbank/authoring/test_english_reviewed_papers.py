@@ -563,7 +563,8 @@ class EnglishSourceExclusionTest(unittest.TestCase):
 
     def test_recorded_2016_exclusions_are_bound_to_the_verified_defaults(self):
         attachments = json.loads((ROOT / 'scripts/markbank/authored/english-source-review.json').read_text())['attachments']
-        exclusions = {key: value for key, value in attachments.items() if value['kind'] == full_cards.SOURCE_NOT_REQUIRED}
+        exclusions = {key: value for key, value in attachments.items()
+                      if value['kind'] == full_cards.SOURCE_NOT_REQUIRED and key.startswith('english-2016-')}
         self.assertEqual(exclusions.keys(), {'english-2016-ol-p1-t1-a-iii-b', 'english-2016-ol-p1-t3-a-iii-a'})
         record = next(r for r in inventory()['papers'] if r['id'] == 'english-2016-ol-p1')
         for entry in exclusions.values():
@@ -576,7 +577,7 @@ class EnglishSourceExclusionTest(unittest.TestCase):
 class English2026ReviewedPapersTest(unittest.TestCase):
     """Pin the independent 2026 reviews: tallies, routes, readers, tariffs and raw scan."""
 
-    KEYS = ('english-2026-ol-p2', 'english-2026-hl-p1', 'english-2026-hl-p2')
+    KEYS = ('english-2026-ol-p2', 'english-2026-hl-p1', 'english-2026-hl-p2', 'english-2026-ol-p1')
 
     @classmethod
     def setUpClass(cls):
@@ -752,6 +753,39 @@ class English2026ReviewedPapersTest(unittest.TestCase):
             kind = self.raw['decisions'][hit['id']]['kind']
             kinds[kind] = kinds.get(kind, 0) + 1
         self.assertEqual(kinds, {'tasks': 16, 'exam-instruction': 16, 'source-prose': 1, 'non-selection': 4})
+
+    def test_2026_ordinary_paper_one_routes_readers_and_exclusions(self):
+        key = 'english-2026-ol-p1'
+        tasks, routes = self.tasks[key], self.routes(key)
+        self.assertEqual((len(tasks), len(routes), len({r['id'] for r in routes})), (22, 390, 390))
+        advice = [r for r in routes if r.get('choiceParentId') == key + '-t3-a-i']
+        self.assertEqual(len(advice), 360)
+        pairs = {(tuple(r['choiceRoute']['selections']['most']), r['choiceRoute']['selections']['least'][0]) for r in advice}
+        self.assertEqual(pairs, {(pair, least) for pair in combinations([str(i) for i in range(1, 11)], 2)
+                                 for least in map(str, range(1, 11)) if least not in pair})
+        self.assertTrue(all(r['totalMarks'] == 15 and r['sourceMaterial']['pages'] == [6] for r in advice))
+        self.assertIn('Most valuable: Spare the rod and spoil the child.; Children should be seen and not heard.',
+                      advice[0]['questionText'])
+        images = [r for r in routes if r.get('choiceParentId') == key + '-t3-a-ii']
+        self.assertEqual({tuple(r['choiceRoute']['selections']['selection']) for r in images},
+                         set(combinations('1234', 2)))
+        self.assertTrue(all(r['sourceMaterial']['pages'] == [6, 7] for r in images))
+        for number in (1, 2, 3):
+            either = [r for r in routes if r.get('choiceParentId') == f'{key}-t{number}-a-iii-a']
+            self.assertEqual((len(either), {r['totalMarks'] for r in either}), (2, {10}))
+            self.assertTrue(all('sourceMaterial' not in r for r in either))
+        self.assertEqual([r['totalMarks'] for r in routes if r.get('choiceParentId') == key + '-composing-3'], [100, 100])
+        titles = {1: ('School Days', [2, 3]), 2: ('Play Centre', [4, 5]), 3: ('Advice and Images about Raising Children', [6, 7])}
+        for task in tasks:
+            suffix = task['id'][len(key) + 1:]
+            source = task.get('sourceMaterial')
+            if '-a-' in suffix and not suffix.endswith('iii-a'):
+                title, pages = titles[int(suffix[1])]
+                self.assertEqual((source['title'], source['pages']), (title, [6] if suffix == 't3-a-i' else pages))
+            else:
+                self.assertIsNone(source, suffix)
+        subset = {'tasks': {t['id']: self.ledger['tasks'][t['id']] for t in tasks}}
+        self.assertEqual(reconcile_schemes(tasks, inventory()['papers'], subset), [])
 
 
 class EnglishPrintedLabelsTest(unittest.TestCase):

@@ -393,7 +393,9 @@ const decks = [
    * cap rule. Every one of the 650 legacy 2021-2025 ids is unchanged; the
    * legacy-only hashes below are the previous frozen baselines verbatim. */
   ['english:higher', ENGLISH_HIGHER, 605, '093bfdb823117bbec6e0559b3adc967ea7f4335b13a80bc630789dbf03326c4c'],
-  ['english:ordinary', ENGLISH_ORDINARY, 1571, '3c1b95ab6f7b51af2757e2cdc52afc3ac160654ea2e438dfb82d3cdcc1c46ad3'],
+  /* 2026-10-11 (later): + 2026 OL Paper 1, 390 cards added (360 of them the
+   * printed choose-two-plus-one advice routes), none removed. */
+  ['english:ordinary', ENGLISH_ORDINARY, 1961, 'e64f9b049d55ff649f4248b26915face4c9a531e2a38aa10a60e8f3a3fcf7fe5'],
   /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
    * responses across 2021–2025 Higher and Ordinary are present, including
    * listening audio and the real PDF pages for passages and printed poems. */
@@ -437,7 +439,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_021);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_411);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -451,13 +453,13 @@ describe('Mark Bank card preservation', () => {
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_253);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_643);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(1_526);
+    expect(published.size).toBe(1_916);
     // The legacy 2021-2025 decks keep exactly their previous frozen identities.
     expect(identityHash(ENGLISH_HIGHER.filter(card => !published.has(card.id))))
       .toBe('231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0');

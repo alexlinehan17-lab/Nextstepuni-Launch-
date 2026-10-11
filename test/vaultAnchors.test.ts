@@ -67,9 +67,9 @@ describe('audited hosted answer maps', () => {
   });
 
   it('ships every override and keeps it byte-identical to the reviewed source map', () => {
-    // 23 Art/Physics maps plus the 33 reviewed English maps (one per paper
+    // 23 Art/Physics maps plus the 34 reviewed English maps (one per paper
     // published by english_publish.py).
-    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(56);
+    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(57);
     for (const key of HOSTED_ANSWER_OVERRIDES) {
       const [subjectId, year, fileid] = key.split('|');
       expect(['art', 'physics', 'english']).toContain(subjectId);

@@ -2978,6 +2978,154 @@
       "attribution": "Library — Alvy Carragher, as reproduced in the SEC 2026 paper.",
       "questionSha256": "047633c27421a372f199fa365ddaccaaf0c64ea36397ab86f8d33cb741f7f7f6",
       "reason": "Paper PDF6 prints the instruction, the title, all three stanzas (6 + 6 + 2 lines) and the byline above the questions; visually verified. The whole poem is on PDF6."
+    },
+    "english-2026-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "School Days",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Katriona O’Sullivan — adapted extract from her memoir Poor (Penguin, 2023), with the book cover (PDF2–3). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "200263063b77fd1bb6fa1b10a9b3d0419ec4dbcb631713708fdedd6bcb08bf35",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. The whole printed text is retained."
+    },
+    "english-2026-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "School Days",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Katriona O’Sullivan — adapted extract from her memoir Poor (Penguin, 2023), with the book cover (PDF2–3). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "502acb88fe5d23972d71e4fd32d975f8e011a1cd92eabf17f14f8fa15c981cff",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. The whole printed text is retained."
+    },
+    "english-2026-ol-p1-t1-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "School Days",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Katriona O’Sullivan — adapted extract from her memoir Poor (Penguin, 2023), with the book cover (PDF2–3). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "a1022effbc361be0738bfd2868f93ddc0365af5b8dd614ae7760fd031ea2b87c",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. The whole printed text is retained."
+    },
+    "english-2026-ol-p1-t1-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "is an adapted extract from the award-winning memoir, “Poor” by Katriona O’Sullivan.",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "questionSha256": "d0a7931e012d065181a64503b8539edb7745563ec1078038c62d691250333331",
+      "reason": "Self-contained: a moment from the candidate’s own childhood (meeting an interesting person or a new event). Scheme PDF6 assesses the candidate’s own reflective account and never refers to TEXT 1. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2026-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Play Centre",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Jan Carson — based on the short story Fair Play from her collection Quickly, While They Still Have Horses (Transworld, 2024), with the book cover (PDF4–5). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "874a19a12acff9a218439852df621259551ac0cc44dcc94097a6c3b54e844a4e",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. The whole printed text is retained."
+    },
+    "english-2026-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Play Centre",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Jan Carson — based on the short story Fair Play from her collection Quickly, While They Still Have Horses (Transworld, 2024), with the book cover (PDF4–5). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "56d92e63e31f6d946f05d5f0bf5380d519356c58e854ec8e08b59c99e78cd49a",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. The whole printed text is retained."
+    },
+    "english-2026-ol-p1-t2-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Play Centre",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Jan Carson — based on the short story Fair Play from her collection Quickly, While They Still Have Horses (Transworld, 2024), with the book cover (PDF4–5). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "0291140771a753353b71b3af5c1a03ef274a70b9d8d735d9049f3c775f483fa2",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. The whole printed text is retained."
+    },
+    "english-2026-ol-p1-t2-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "is based on the short story, Fair Play, from award-winning writer Jan Carson’s",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "questionSha256": "d0a7931e012d065181a64503b8539edb7745563ec1078038c62d691250333331",
+      "reason": "Self-contained: a moment from the candidate’s own childhood (meeting an interesting person or a new event). Scheme PDF9 assesses the candidate’s own reflective account and never refers to TEXT 2. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2026-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Advice and Images about Raising Children",
+      "pages": [
+        6
+      ],
+      "attribution": "Advice from nineteenth- and twenty-first-century books about raising children (PDF6) and four photographs, Images A–D (PDF6–7). The printed introduction calls the photographs “the second part of TEXT 2”; it means TEXT 3 and is shown as printed. As reproduced in the SEC 2026 paper.",
+      "questionSha256": "7e3f77b28b301fa7b93894634a1256f54c77d78390aa42da87171cf83a4c760a",
+      "reason": "The task is limited to “the above written list”: the ten numbered pieces of advice, all on PDF6 with the TEXT 3 heading and introduction."
+    },
+    "english-2026-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Advice and Images about Raising Children",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Advice from nineteenth- and twenty-first-century books about raising children (PDF6) and four photographs, Images A–D (PDF6–7). The printed introduction calls the photographs “the second part of TEXT 2”; it means TEXT 3 and is shown as printed. As reproduced in the SEC 2026 paper.",
+      "questionSha256": "fbda00a4f577b056cd4d1acf1e17760e36a2146354641b7ee5fd98d6a61627c6",
+      "reason": "The four photographs, Images A and B on PDF6 and C and D on PDF7, are all required to choose two."
+    },
+    "english-2026-ol-p1-t3-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Advice and Images about Raising Children",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Advice from nineteenth- and twenty-first-century books about raising children (PDF6) and four photographs, Images A–D (PDF6–7). The printed introduction calls the photographs “the second part of TEXT 2”; it means TEXT 3 and is shown as printed. As reproduced in the SEC 2026 paper.",
+      "questionSha256": "abe0bffab2a020d663f4b3cac79b2aee0ac2302bdda79ec308aa4d7c40a98336",
+      "reason": "The task adds two pictures “to the collection of photographs in TEXT 3”; the collection spans PDF6–7."
+    },
+    "english-2026-ol-p1-t3-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": ", showing what you believe are other important aspects of childhood. In both",
+        "pages": [
+          7
+        ]
+      },
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "questionSha256": "d0a7931e012d065181a64503b8539edb7745563ec1078038c62d691250333331",
+      "reason": "Self-contained: a moment from the candidate’s own childhood (meeting an interesting person or a new event). Scheme PDF12 assesses the candidate’s own reflective account and never refers to TEXT 3. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
     }
   }
 }

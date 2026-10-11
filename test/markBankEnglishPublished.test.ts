@@ -73,7 +73,7 @@ describe('English paper-by-paper publication', () => {
       && entry.allFiniteRoutesReconciled && !legacyPapers.has(entry.paperId));
     const published = [...publishedHigher.papers, ...publishedOrdinary.papers];
     expect(published.map(paper => paper.paperId).sort()).toEqual(reviewed.map(entry => entry.paperId).sort());
-    expect(published).toHaveLength(33);
+    expect(published).toHaveLength(34);
     for (const paper of published) {
       const entry = reviewed.find(row => row.paperId === paper.paperId)!;
       const tally = (entry as unknown as { independentPaperTally: { baseTasks: number; finiteRoutes: number } })
@@ -82,12 +82,12 @@ describe('English paper-by-paper publication', () => {
       expect(RECORDS.filter(record => record.id.startsWith(`${paper.paperId}-`)), paper.paperId)
         .toHaveLength(paper.cards);
     }
-    expect(PUBLISHED).toHaveLength(1_526);
+    expect(PUBLISHED).toHaveLength(1_916);
   });
 
   it('never publishes an unreviewed or legacy-served paper', () => {
     const unreviewed = ['english-2016-hl-p2', 'english-2016-ol-p2', 'english-2017-hl-p1',
-      'english-2019-ol-p2', 'english-2020-hl-p1', 'english-2026-ol-p1'];
+      'english-2019-ol-p2', 'english-2020-hl-p1'];
     for (const paper of unreviewed) {
       expect(ALL.some(entry => entry.id.startsWith(`${paper}-`)), paper).toBe(false);
     }
@@ -270,7 +270,7 @@ describe('English Topic Atlas parity for published papers', () => {
       .filter(item => item.answers === 1)
       .map(item => `${entry.year}|${entry.level}|${item.doc.f}`)));
     const papers = [...new Set(RECORDS.map(record => `${record.year}|${record.level}|${record.atlas.fileid}`))];
-    expect(papers).toHaveLength(33);
+    expect(papers).toHaveLength(34);
     for (const paper of papers) {
       const [year, , fileid] = paper.split('|');
       expect(live.has(paper), `${paper} answers flag`).toBe(true);

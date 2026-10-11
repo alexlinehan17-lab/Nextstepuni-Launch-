@@ -2263,15 +2263,75 @@
       "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
       "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
       "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
         6,
-        7
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
-      "visualSweepComplete": false,
+      "visualSweepComplete": true,
       "notes": [
-        "Ten numbered advice items; choose two most valuable and a distinct least valuable. Four images A–D, choose two."
+        "Ten numbered advice items; choose two most valuable and a distinct least valuable. Four images A–D, choose two.",
+        "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks. Finite routes: TEXT 3 A(i) two most valuable and a distinct least valuable of the ten printed pieces of advice C(10,2) × 8 = 360 (+359); TEXT 3 A(ii) two of the four images C(4,2) = 6 (+5); the A(iii)(a) person-or-event choice printed under all three texts (+1 each, +3); composing 3 for/against (+1) = 390 routes. Serious/humorous registers, agree/disagree judgements, three points and the worst jobs stay open.",
+        "Readers under printed headings: TEXT 1 School Days PDF2–3, TEXT 2 Play Centre PDF4–5, TEXT 3 Advice and Images about Raising Children PDF6–7 (A(i) the advice list PDF6 only). The three A(iii)(a) tasks are self-contained (reviewed exclusions). TEXT 3’s printed introduction says “the second part of TEXT 2” (means TEXT 3); shown as printed. Modern C/L ≤ P (PDF3); O1–O8 grids PDF71/72."
       ],
-      "allTaskBoundariesSchemeChecked": false,
-      "allFiniteRoutesReconciled": false
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "schemePagesVisuallyChecked": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        71,
+        72
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 390,
+        "basis": "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks. Finite routes: TEXT 3 A(i) two most valuable and a distinct least valuable of the ten printed pieces of advice C(10,2) × 8 = 360 (+359); TEXT 3 A(ii) two of the four images C(4,2) = 6 (+5); the A(iii)(a) person-or-event choice printed under all three texts (+1 each, +3); composing 3 for/against (+1) = 390 routes. Serious/humorous registers, agree/disagree judgements, three points and the worst jobs stay open."
+      }
     },
     {
       "paperId": "english-2026-ol-p2",

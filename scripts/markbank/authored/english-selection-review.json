@@ -933,7 +933,8 @@
     "english-2026-ol-p1-t1-a-iii-a": {
       "questionSha256": "d0a7931e012d065181a64503b8539edb7745563ec1078038c62d691250333331",
       "kind": "finite",
-      "reason": "The prompt explicitly offers either of two personal-account tasks. People and events remain open choices within each task.",
+      "expectedRoutes": 2,
+      "reason": "Paper PDF3 prints “either met an interesting person or experienced a new event for the first time” (with “or” in bold); scheme PDF6 expects an experience of either meeting an interesting person or experiencing a new event. Two 10-mark routes; the person or event remains the candidate’s own. Self-contained: no reader.",
       "pools": [
         {
           "id": "selection",
@@ -942,16 +943,15 @@
           "options": [
             {
               "id": "1",
-              "text": "Meeting an interesting person for the first time"
+              "text": "A moment when I met an interesting person"
             },
             {
               "id": "2",
-              "text": "Experiencing a new event for the first time"
+              "text": "A moment when I experienced a new event for the first time"
             }
           ]
         }
-      ],
-      "expectedRoutes": 2
+      ]
     },
     "english-2025-ol-p1-t2-a-iii-b": {
       "questionSha256": "dfd0409301d62e3686b0d4a4db787c2df1d0173881013cfd020e999b3c1b29d2",
@@ -979,7 +979,8 @@
     "english-2026-ol-p1-t2-a-iii-a": {
       "questionSha256": "d0a7931e012d065181a64503b8539edb7745563ec1078038c62d691250333331",
       "kind": "finite",
-      "reason": "The prompt explicitly offers either of two personal-account tasks. People and events remain open choices within each task.",
+      "expectedRoutes": 2,
+      "reason": "Paper PDF5 prints “either met an interesting person or experienced a new event for the first time” (with “or” in bold); scheme PDF9 expects an experience of either meeting an interesting person or experiencing a new event. Two 10-mark routes; the person or event remains the candidate’s own. Self-contained: no reader.",
       "pools": [
         {
           "id": "selection",
@@ -988,16 +989,15 @@
           "options": [
             {
               "id": "1",
-              "text": "Meeting an interesting person for the first time"
+              "text": "A moment when I met an interesting person"
             },
             {
               "id": "2",
-              "text": "Experiencing a new event for the first time"
+              "text": "A moment when I experienced a new event for the first time"
             }
           ]
         }
-      ],
-      "expectedRoutes": 2
+      ]
     },
     "english-2025-ol-p1-t3-a-iii-b": {
       "questionSha256": "dfd0409301d62e3686b0d4a4db787c2df1d0173881013cfd020e999b3c1b29d2",
@@ -1025,7 +1025,8 @@
     "english-2026-ol-p1-t3-a-iii-a": {
       "questionSha256": "d0a7931e012d065181a64503b8539edb7745563ec1078038c62d691250333331",
       "kind": "finite",
-      "reason": "The prompt explicitly offers either of two personal-account tasks. People and events remain open choices within each task.",
+      "expectedRoutes": 2,
+      "reason": "Paper PDF7 prints “either met an interesting person or experienced a new event for the first time” (with “or” in bold); scheme PDF12 expects an experience of either meeting an interesting person or experiencing a new event. Two 10-mark routes; the person or event remains the candidate’s own. Self-contained: no reader.",
       "pools": [
         {
           "id": "selection",
@@ -1034,21 +1035,22 @@
           "options": [
             {
               "id": "1",
-              "text": "Meeting an interesting person for the first time"
+              "text": "A moment when I met an interesting person"
             },
             {
               "id": "2",
-              "text": "Experiencing a new event for the first time"
+              "text": "A moment when I experienced a new event for the first time"
             }
           ]
         }
-      ],
-      "expectedRoutes": 2
+      ]
     },
     "english-2026-ol-p1-t3-a-i": {
       "questionSha256": "7e3f77b28b301fa7b93894634a1256f54c77d78390aa42da87171cf83a4c760a",
       "kind": "finite",
-      "reason": "The numbered source has ten pieces of advice. Select two most valuable, then one different least valuable: C(10,2)×8=360. Paper pp.6–7 and scheme p.11 checked; either column is allowed and the whole response remains 15 marks.",
+      "expectedRoutes": 360,
+      "distinctAcrossPools": true,
+      "reason": "Paper PDF7 asks for the two pieces of advice the candidate considers most valuable and the one piece considered least valuable, from the ten numbered pieces printed on PDF6; scheme PDF11: free to choose from either list, entirely from one list if desired, explaining every choice. A closed choose-2 plus a distinct choose-1 from the same ten: C(10,2) × 8 = 360 15-mark routes, each retaining the list (PDF6). Option wording is the printed bold advice.",
       "pools": [
         {
           "id": "most",
@@ -1057,43 +1059,43 @@
           "options": [
             {
               "id": "1",
-              "text": "Advice 1"
+              "text": "Spare the rod and spoil the child."
             },
             {
               "id": "2",
-              "text": "Advice 2"
+              "text": "Children should be seen and not heard."
             },
             {
               "id": "3",
-              "text": "Advice 3"
+              "text": "Parents should maintain emotional distance from their children."
             },
             {
               "id": "4",
-              "text": "Advice 4"
+              "text": "Do not praise children excessively."
             },
             {
               "id": "5",
-              "text": "Advice 5"
+              "text": "Avoid showing anger in front of children."
             },
             {
               "id": "6",
-              "text": "Advice 6"
+              "text": "Acknowledge and validate your child’s emotions."
             },
             {
               "id": "7",
-              "text": "Advice 7"
+              "text": "Discipline with empathy."
             },
             {
               "id": "8",
-              "text": "Advice 8"
+              "text": "Encourage independence."
             },
             {
               "id": "9",
-              "text": "Advice 9"
+              "text": "Teach children to talk about their feelings."
             },
             {
               "id": "10",
-              "text": "Advice 10"
+              "text": "Protect your child’s connection to you."
             }
           ]
         },
@@ -1104,58 +1106,57 @@
           "options": [
             {
               "id": "1",
-              "text": "Advice 1"
+              "text": "Spare the rod and spoil the child."
             },
             {
               "id": "2",
-              "text": "Advice 2"
+              "text": "Children should be seen and not heard."
             },
             {
               "id": "3",
-              "text": "Advice 3"
+              "text": "Parents should maintain emotional distance from their children."
             },
             {
               "id": "4",
-              "text": "Advice 4"
+              "text": "Do not praise children excessively."
             },
             {
               "id": "5",
-              "text": "Advice 5"
+              "text": "Avoid showing anger in front of children."
             },
             {
               "id": "6",
-              "text": "Advice 6"
+              "text": "Acknowledge and validate your child’s emotions."
             },
             {
               "id": "7",
-              "text": "Advice 7"
+              "text": "Discipline with empathy."
             },
             {
               "id": "8",
-              "text": "Advice 8"
+              "text": "Encourage independence."
             },
             {
               "id": "9",
-              "text": "Advice 9"
+              "text": "Teach children to talk about their feelings."
             },
             {
               "id": "10",
-              "text": "Advice 10"
+              "text": "Protect your child’s connection to you."
             }
           ]
         }
-      ],
-      "expectedRoutes": 360,
-      "distinctAcrossPools": true
+      ]
     },
     "english-2026-ol-p1-t3-a-ii": {
       "questionSha256": "fbda00a4f577b056cd4d1acf1e17760e36a2146354641b7ee5fd98d6a61627c6",
       "kind": "finite",
-      "reason": "The task requires a fixed selection from the specifically printed options. Every unordered selection is a separate practice route, retaining the complete published tariff.",
+      "expectedRoutes": 6,
+      "reason": "Paper PDF7 asks which two of the four printed photographs show the most important aspects of childhood; scheme PDF11: free to choose any two of the four images. C(4,2) = 6 15-mark routes, each retaining all four images (PDF6–7).",
       "pools": [
         {
           "id": "selection",
-          "label": "Selected option",
+          "label": "Selected images",
           "take": 2,
           "options": [
             {
@@ -1176,8 +1177,7 @@
             }
           ]
         }
-      ],
-      "expectedRoutes": 6
+      ]
     },
     "english-2016-hl-p1-t1-b": {
       "questionSha256": "4ca13515b72a4936991f59adaec5a2bf1f6211b5d65fe6fa06cef44a62acac89",
@@ -2478,17 +2478,17 @@
     "english-2026-ol-p1-t1-b": {
       "questionSha256": "0bf5c626c6d0e713d7f2e610f8fb35f8587f533fe8dba39b067d226ab61c131c",
       "kind": "flexible",
-      "reason": "The register may be serious, humorous, or a mixture; this flexible direction does not prescribe a fixed answer-route selection. The other listed content is required."
+      "reason": "Paper PDF3 and scheme PDF7: the talk may be serious or humorous or a mixture of both, so register is flexible; greeting, reflection and advice are all required. One 50-mark talk."
     },
     "english-2026-ol-p1-t2-b": {
       "questionSha256": "ac48e5b797f94e68d176eeef27ca4a93400a9b55c4c721dcd2ab444082ed6b05",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF10: one email describing equipment and activities, the community benefits and why each business benefits. Content is open; one 50-mark response."
     },
     "english-2026-ol-p1-t3-b": {
       "questionSha256": "a675e7c6a0be064a24fa4a89e7aa94686f2a0f3a87207d7e2334bce293f1bf18",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF13: one dialogue covering both views, a high level of emotion and a compromise. One 50-mark response."
     },
     "english-2010-ol-p1-composing-7": {
       "questionSha256": "31da4cc9d8fffbdeb8457f6663ddea70c77a8c3b9ebcf35bfdae7d8a143a76d7",
@@ -3136,7 +3136,8 @@
     "english-2026-ol-p1-composing-3": {
       "questionSha256": "26d5f13a54de1ccef3f6644fe735988d6d22868f3f7b53992ccc05d44ca62a63",
       "kind": "finite",
-      "reason": "The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "expectedRoutes": 2,
+      "reason": "Paper PDF8 and scheme PDF17: a speech arguing for or against the printed motion. Two 100-mark routes; register and arguments remain open.",
       "pools": [
         {
           "id": "selection",
@@ -3153,8 +3154,7 @@
             }
           ]
         }
-      ],
-      "expectedRoutes": 2
+      ]
     },
     "english-2016-ol-p1-composing-4": {
       "questionSha256": "553c644798c78f0a96896ce05b6aab22fd232e988be49dd12a47c208289ce9c5",
@@ -4199,32 +4199,32 @@
     "english-2026-ol-p1-composing-1": {
       "questionSha256": "5eb1fc4c1453fb11025db3058d881787579747d50e5626ab61eda393d1d7bd45",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a personal essay on how important independence is to the candidate. One 100-mark composition."
     },
     "english-2026-ol-p1-composing-2": {
       "questionSha256": "9b7a1b27a8e8555a76ed844e339fc6d3f2b9dbd618ea65df6d0f680bc526d1e5",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF16: a short story in which arrogance leads to disaster; serious or humorous or both. One 100-mark composition."
     },
     "english-2026-ol-p1-composing-4": {
       "questionSha256": "59e691ce1c80f2f76b9070912c5f9359b2db0b1eee2afb63fbf7a302c77209a0",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF18: an opinion piece on being a valuable, involved citizen; serious, humorous or both. One 100-mark composition."
     },
     "english-2026-ol-p1-composing-5": {
       "questionSha256": "33c24823c0e56454b88a66f4004d8b12d53bfd1215f6c12b692968d916b27928",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF19: a short story set in a play centre where curious toddlers solve a mystery. One 100-mark composition."
     },
     "english-2026-ol-p1-composing-6": {
       "questionSha256": "dd7a7fc787be617444f29c1fbe6825a398ac0c2dc30f9bfc2ba97b8199613941",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Paper PDF8 and scheme PDF20: the article can be serious or humorous or both; register is flexible. One 100-mark composition."
     },
     "english-2026-ol-p1-composing-7": {
       "questionSha256": "d0beab01d47df726f8aa2ffb081e6ef5323e35b4c7b973eb4ad8f8d2c0d60fb1",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF21: a personal essay on some of the worst jobs, at least two. One 100-mark composition."
     },
     "english-2010-ol-p2-single-a-q3-i": {
       "questionSha256": "e67c2c6080f3680949833b2f81b39bc09586fd4d40e4e1d8226b17f71dca5ff0",
@@ -16053,6 +16053,41 @@
       "questionSha256": "005f39d983c3f2624906b82f234bbcf69cf7fe710bd3993d62bd14c9ac3eb04a",
       "kind": "open",
       "reason": "Scheme PDF45, 50: both “cryptic” and “entertaining”, broadly interpreted; poems freely chosen. One 50-mark response."
+    },
+    "english-2026-ol-p1-t1-a-i": {
+      "questionSha256": "200263063b77fd1bb6fa1b10a9b3d0419ec4dbcb631713708fdedd6bcb08bf35",
+      "kind": "open",
+      "reason": "Scheme PDF5: three aspects of Mrs Arkinson’s character, supported from the text. Three points of the candidate’s own; one 15-mark response."
+    },
+    "english-2026-ol-p1-t1-a-ii": {
+      "questionSha256": "502acb88fe5d23972d71e4fd32d975f8e011a1cd92eabf17f14f8fa15c981cff",
+      "kind": "open",
+      "reason": "Scheme PDF5: candidates are free to agree or disagree that the writer creates a sense of place; a graded judgement, one 15-mark response."
+    },
+    "english-2026-ol-p1-t1-a-iii-b": {
+      "questionSha256": "a1022effbc361be0738bfd2868f93ddc0365af5b8dd614ae7760fd031ea2b87c",
+      "kind": "open",
+      "reason": "Scheme PDF6: explain what the quoted sentence means. One open 10-mark response."
+    },
+    "english-2026-ol-p1-t2-a-i": {
+      "questionSha256": "874a19a12acff9a218439852df621259551ac0cc44dcc94097a6c3b54e844a4e",
+      "kind": "open",
+      "reason": "Scheme PDF8: three aspects of Andrew’s character, supported from the text. One 15-mark response."
+    },
+    "english-2026-ol-p1-t2-a-ii": {
+      "questionSha256": "56d92e63e31f6d946f05d5f0bf5380d519356c58e854ec8e08b59c99e78cd49a",
+      "kind": "open",
+      "reason": "Scheme PDF8: candidates are free to agree or disagree; one 15-mark response."
+    },
+    "english-2026-ol-p1-t2-a-iii-b": {
+      "questionSha256": "0291140771a753353b71b3af5c1a03ef274a70b9d8d735d9049f3c775f483fa2",
+      "kind": "open",
+      "reason": "Scheme PDF9: explain what the writer is saying in the quoted line. One open 10-mark response."
+    },
+    "english-2026-ol-p1-t3-a-iii-b": {
+      "questionSha256": "abe0bffab2a020d663f4b3cac79b2aee0ac2302bdda79ec308aa4d7c40a98336",
+      "kind": "open",
+      "reason": "Scheme PDF12: two new pictures of the candidate’s own; “allow for a broad range of responses”. Not a printed pool; one 10-mark response."
     }
   }
 }

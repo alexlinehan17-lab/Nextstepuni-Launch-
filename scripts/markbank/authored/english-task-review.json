@@ -29314,6 +29314,586 @@
         "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
       },
       "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the printed H1–H8 band (combined criteria, PDF52/54), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t1-a-i": {
+      "taskSha256": "b2cfa4a1c71422b89b8efa2b8001e02bf6c2f5b62f39f5f9650642ee6e51022f",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t1-a-ii": {
+      "taskSha256": "c903aaba18da2e856cbebd1bf59935d7de4bd37b8a5d84aa8c973d09bc33d292",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        5,
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t1-a-iii-a": {
+      "taskSha256": "f43cb4ab0fba8186b141344fafe6e312976b568b3606335f167b49b5113055e7",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t1-a-iii-b": {
+      "taskSha256": "f1fffe680cd20afa2e013ab3c803a0cc69ee6207cc04d7a94bcc4f46f53fd2fb",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t1-b": {
+      "taskSha256": "c75fa789fe53297ad2871b8d2b49da55efd8d3a5f3a42fe041fac6fdf0c1134f",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 50,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t2-a-i": {
+      "taskSha256": "20c8a6502895c21264b3e95205727c076d1a2871feb4e2b06a753ca90bc72dd7",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t2-a-ii": {
+      "taskSha256": "7e279dd327aeeb19f57076b692b773546a8aa73b1a82ca73506e836966b5220e",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        8,
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t2-a-iii-a": {
+      "taskSha256": "6e7b706bd53986337a6add50a535241f162c0cc02d53497cb8e21d1f4212f53a",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t2-a-iii-b": {
+      "taskSha256": "3c4c317953c90bb52a6714c13ac89a71124797d2a52d698dd067b4579b44e99e",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t2-b": {
+      "taskSha256": "b6a5dd8b1d7956c65ea4e7ef0bb0dd054b6533aaa8530af2926423aabae300a6",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 50,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t3-a-i": {
+      "taskSha256": "d3cd09c5b159f39bb7f593a07b66dff7bd7c1e03941d1f86d2a90a80ea820dd5",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        11
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t3-a-ii": {
+      "taskSha256": "b603b1efebe362b933d05316303b9c4aa165700cbae0f29ac4b51eb738215442",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        11,
+        12
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t3-a-iii-a": {
+      "taskSha256": "f64c7958322e1b6e8a32d6940fab649804951d6e4db154c283c605a7260cef54",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        12
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t3-a-iii-b": {
+      "taskSha256": "d56e7a33de6890919adbfc57532d378714330578b07d9c223217444fb27b11e3",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        12
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-t3-b": {
+      "taskSha256": "52d810938fc20bb3c46969330c4a50e307c32f8e5488d4dff31570e2601a8d1d",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 50,
+      "schemePages": [
+        13
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-composing-1": {
+      "taskSha256": "bf64a2f3e32aaee38c7cead4f5d1753153c91e14238cad78a9e1612cb596b72d",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-composing-2": {
+      "taskSha256": "21cf6f401bbe00c34e474bdbe6995b48118c0ed140cc491f73fb9ee9039fcbd8",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-composing-3": {
+      "taskSha256": "d5480b9694bc8f6238935468753a0b4d40c6f5558270867d1b2c89cb81ddf4cf",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-composing-4": {
+      "taskSha256": "af954bd374999fdc4d75b0ada61ee0fdb64d4a506566463743f8b5b1cc32fa0a",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-composing-5": {
+      "taskSha256": "ca3055fa681d5108a6f4a5a34dfa3485360f4b1e3094844ec2c5aa506ef38933",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-composing-6": {
+      "taskSha256": "d9e7e04ecfa5037110207a92fc706384d4724f3cadc422405e69564f33234450",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p1-composing-7": {
+      "taskSha256": "7c7ac283548f4b96a08ec693bd52320e7b1867ae516f7ff0166970a5e3e6ce69",
+      "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
     }
   }
 }

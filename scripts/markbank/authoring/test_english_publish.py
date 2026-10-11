@@ -48,14 +48,14 @@ class EnglishPublisherTest(unittest.TestCase):
             self.assertEqual(path.read_text(), publish.dump(value), str(path.relative_to(ROOT)))
 
     def test_only_reviewed_non_legacy_papers_publish(self):
-        self.assertEqual(len(self.published), 33)
-        self.assertEqual(sum(paper['cards'] for paper in self.published), 1526)
+        self.assertEqual(len(self.published), 34)
+        self.assertEqual(sum(paper['cards'] for paper in self.published), 1916)
         reasons = {row['paperId']: row['reason'] for row in self.refused}
         for year in range(2021, 2026):
             for level in ('hl', 'ol'):
                 for paper in (1, 2):
                     self.assertIn('legacy', reasons[f'english-{year}-{level}-p{paper}'])
-        for paper_id in ('english-2016-hl-p2', 'english-2017-ol-p1', 'english-2019-hl-p2', 'english-2026-ol-p1'):
+        for paper_id in ('english-2016-hl-p2', 'english-2017-ol-p1', 'english-2019-hl-p2'):
             self.assertNotIn(paper_id, {paper['paperId'] for paper in self.published})
             self.assertIn(paper_id, reasons)
 
