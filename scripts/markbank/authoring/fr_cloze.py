@@ -40,6 +40,9 @@ def build():
         assert len(re.findall(r'_{3,}', text)) == 10
         bank_start = text.index('(N.B.')
         bank_start = text.index(')', bank_start) + 1
+        # The paper's own instruction, exactly as printed above the word bank.
+        instruction = ' '.join(text[:bank_start].split())
+        assert instruction.startswith('Complétez la lettre') and compact(instruction) in compact(printed_page), year
         # Ten comma-separated words precede the location/date, which are not
         # part of the bank. The final word is one token in every reviewed paper.
         if record.get('wordBank'):
@@ -52,6 +55,11 @@ def build():
             words = text[bank_start:].strip().split(',', 9)
             words = [word.strip() for word in words[:9]] + [words[9].split()[0]]
         assert set(words) == set(record['answers']), (year, words)
+        # The bank as printed: its words, commas and (where printed) final stop.
+        bank = ', '.join(words)
+        if compact(bank + '.') in compact(printed_page):
+            bank += '.'
+        assert compact(bank) in compact(printed_page), year
         with fitz.open(ROOT / f'examiner-reports/french/schemes/{year}-ol.pdf') as scheme:
             scheme_text = ' '.join(scheme[record['schemePage'] - 1].get_text().split())
             for answer in record['answers']:
@@ -65,6 +73,18 @@ def build():
                 assert all(answer in words and answer in scheme_text for answer in alternatives)
             # 2012 excepts one word from the capital-letter allowance; lift the year's own line.
             capitals = record.get('capitalLetters', 'Accept capital letters.')
+            # Each gap's entry in the scheme's numbered answer list, as printed
+            # (2019 prints "6 travaille" without a stop; 2020 "2. passe/serai").
+            list_entries = {}
+            for gap, answer in enumerate(record['answers'], 1):
+                entry = record.get('answerListEntries', {}).get(str(gap), f'{gap}. {answer}')
+                assert re.search(r'(?<!\S)' + re.escape(entry) + r'(?=\s|$)', scheme_text), (year, gap, entry)
+                list_entries[gap] = entry
+            # Where the numbered list misprints or omits an answer, the scheme's
+            # completed letter prints it; lift that line too.
+            evidence = record.get('answerEvidence', {})
+            for gap, item in evidence.items():
+                assert item['printed'] in scheme_text and item['note'], (year, gap)
             for phrase in ['10 gaps for 3 marks each', 'Careless transcription, including accents, deduct 1 mark.', capitals]:
                 assert phrase in scheme_text, (year, phrase)
         if record.get('salutation'):
@@ -77,6 +97,7 @@ def build():
         # Fail closed on any dropped word or mark: apart from whitespace, the
         # whole letter body every gap excerpt is cut from is the printed page.
         assert compact(body) in compact(printed_page), (year, 'letter body differs from the printed page')
+        blanks = re.findall(r'_{3,}', body)
         counter = iter(range(1, 11))
         numbered = re.sub(r'_{3,}', lambda _: f'[{next(counter)}]', body)
         entry = next(e for e in entries if e['year'] == year and e['level'] == 'ordinary' and e['lang'] == 'ev')
@@ -85,13 +106,14 @@ def build():
         tag = next(q for q in paper_tag['q'] if q['n'] == 'B1A')
         topic_indexes = next(m[5] for m in runtime['questionMappings'] if m[:5] == ['o', 'e', year - 2000, 's', 'B1A'])
         for gap, answer in enumerate(record['answers'], 1):
-            accepted = ' / '.join([answer] + record.get('acceptedAlternatives', {}).get(str(gap), []))
             sentences = re.split(r'(?<=[.!?])\s+', numbered)
             excerpt = next(sentence for sentence in sentences if f'[{gap}]' in sentence)
+            # Only this card's gap carries its number; any other gap in the same
+            # sentence keeps the printed blank, so the target is unambiguous.
+            excerpt = re.sub(r'\[(\d+)\]', lambda m: m.group(0) if int(m.group(1)) == gap else blanks[int(m.group(1)) - 1], excerpt)
             n, cid = f'B1A-gap-{gap}', f'fr-{year}-ol-cloze-b1a-gap-{gap}'
-            prompt = (f'Complétez l’espace [{gap}] de la lettre avec un mot de la liste. '
-                      'Les espaces sont numérotés dans l’ordre du texte.\n\n'
-                      f'{excerpt}\n\nMots proposés : {", ".join(words)}')
+            prompt = f'{instruction}\n\n{bank}\n\n{excerpt}'
+            gap_evidence = evidence.get(str(gap))
             source = dict(kind='source-text', label='Original letter', title=f'Section B · Q1(a) — gap {gap}', pages=[page],
                           attribution=f'SEC French {year} Ordinary Level examination paper — © State Examinations Commission.',
                           presentationNote='Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter.')
@@ -101,9 +123,16 @@ def build():
                         sourceMaterial=source, specVersion='lc-french-syllabus',
                         schemeCitation=f'SEC French {year} Ordinary Level marking scheme, p.{record["schemePage"]} — © State Examinations Commission.',
                         schemeRegion=dict(schemeFileid=doc['scheme']['f'], p=record['schemePage'], r=[0, 0, 1, 1]),
-                        rubric=dict(system='french', taskRequirements=['Complete only the selected gap.'], answerGuide=[f'Gap {gap}: {accepted} — 3 marks.', *([record['gapNotes'][str(gap)]] if str(gap) in record.get('gapNotes', {}) else []), f'Careless transcription, including accents, deduct 1 mark. {capitals}'],
-                                    criteria=[dict(id='response', label='Response', maxMarks=3, permittedMarks=[0, 2, 3], guidance=['3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0.'])],
-                                    markingGuideNote='The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap.'),
+                        rubric=dict(system='french', taskRequirements=[],
+                                    answerGuide=[list_entries[gap], *([gap_evidence['printed']] if gap_evidence else []),
+                                                 *([record['gapNotes'][str(gap)]] if str(gap) in record.get('gapNotes', {}) else []),
+                                                 '10 gaps for 3 marks each', f'Careless transcription, including accents, deduct 1 mark. {capitals}'],
+                                    criteria=[dict(id='response', label='Response', maxMarks=3, permittedMarks=[0, 2, 3], guidance=[])],
+                                    markingGuideNote='',
+                                    # Our guidance, shown under the app's own label, never as scheme text.
+                                    practiceNotes=[f'This card practises gap [{gap}] only; any other numbered gap in the excerpt is a separate card.',
+                                                   'Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0.',
+                                                   *([gap_evidence['note']] if gap_evidence else [])]),
                         qa=dict(gates=['visual-paper-scheme-review', 'published-gap-tariff', 'selection-review'], humanReviewedBy='agent-verified', humanReviewedAt=review['reviewedAt']))
             cards.append(card)
             tasks.append(dict(cardId=cid, subjectId='french', level='ordinary', year=year, sitting='main', paperKey='single', lang='ev', fileid=doc['doc']['f'],

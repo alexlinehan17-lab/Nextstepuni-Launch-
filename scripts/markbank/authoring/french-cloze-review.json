@@ -33,7 +33,10 @@
           "sha256": "c74939532c97afcf6b20aba6a2f130684443d9d2eb8c5cbb027f7e789e16a67c"
         }
       ],
-      "reviewNote": "The numbered answer list and completed letter both accept passe or serai for gap 2. These are accepted answers within one 3-mark gap, not separate task routes."
+      "reviewNote": "The numbered answer list and completed letter both accept passe or serai for gap 2. These are accepted answers within one 3-mark gap, not separate task routes.",
+      "answerListEntries": {
+        "2": "2. passe/serai"
+      }
     },
     {
       "year": 2021,
@@ -87,7 +90,16 @@
           "path": "examiner-reports/french/schemes/2022-ol.pdf",
           "sha256": "beda30ae2b8e6b919afeb960903e5bdbb46982921b12987846f532b0cb126dad"
         }
-      ]
+      ],
+      "answerListEntries": {
+        "10": "10."
+      },
+      "answerEvidence": {
+        "10": {
+          "printed": "On pourrait faire __du____ vélo",
+          "note": "The scheme’s numbered list leaves item 10 blank; its completed letter prints du, which is also in the paper’s word bank."
+        }
+      }
     },
     {
       "year": 2023,
@@ -168,7 +180,16 @@
           "path": "examiner-reports/french/schemes/2025-ol.pdf",
           "sha256": "c09f4c7db1e33b0314f0cf5461b76fde5f7c99df4f04dd3d99776f947d791980"
         }
-      ]
+      ],
+      "answerListEntries": {
+        "6": "6. maqnifiques"
+      },
+      "answerEvidence": {
+        "6": {
+          "printed": "Les feux d’artifice sont magnifiques.",
+          "note": "The scheme’s numbered list prints maqnifiques; its completed letter and the paper’s word bank print magnifiques."
+        }
+      }
     },
     {
       "year": 2026,
@@ -236,7 +257,14 @@
         "lettre"
       ],
       "wordBankReason": "The full-width bank crosses the inferred bilingual column boundary, losing its last two words in FrPaper. Pin the complete visually reviewed list in printed order and verify it against the original page text.",
-      "boundaryDecision": "Ten separately priced3markgaps; preserve complete letter and all ten words. No finite task alternative pool: each gap has one answer from the shared wordbank."
+      "boundaryDecision": "Ten separately priced3markgaps; preserve complete letter and all ten words. No finite task alternative pool: each gap has one answer from the shared wordbank.",
+      "answerListEntries": {
+        "6": "6 travaille",
+        "7": "7 clients",
+        "8": "8 heure",
+        "9": "9 acheter",
+        "10": "10 l’"
+      }
     },
     {
       "year": 2018,

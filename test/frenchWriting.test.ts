@@ -104,7 +104,8 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     for (const card of cards.filter(card => /-writing-b[23][ab]-route-/.test(card.id))) {
       const task = card.id.split('-writing-')[1].split('-route-')[0];
       const word = card.year >= 2022 && ['b2a', 'b2b'].includes(task) ? 'parts' : 'points';
-      const tariff = task === 'b3b' ? '4 marks (2 + 2).' : '5 marks (3 + 2).';
+      // Printed without a closing stop.
+      const tariff = task === 'b3b' ? '4 marks (2 + 2)' : '5 marks (3 + 2)';
       for (const criterion of card.rubric.criteria.filter(c => c.id.startsWith('communication-'))) {
         expect(criterion.guidance[1]).toBe(`Two ${word} required for ${tariff}`);
         seen.set(word, (seen.get(word) ?? 0) + 1);
@@ -137,6 +138,35 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     const field = group.find(card => card.id === 'fr-2015-ol-writing-b1b-field-5')!;
     expect(field.rubric.criteria[0].guidance).toEqual(['Level of French – accept any level']);
     expect(field.rubric.taskRequirements).toEqual([]);
+  });
+
+  it('shows only SEC printed wording in the scheme panel and keeps our guidance in practice notes', () => {
+    const written = /Assess how clearly|message not clear\. 3: message clear|^France not necessary in address\.$|^Write in French|^Answer in French|^Answer (?:all four|the three)|^Use the formal letter layout|Use the published descriptors|^Source discrepancy/;
+    for (const card of cards) {
+      const scheme = [...card.rubric.taskRequirements, ...card.rubric.criteria.flatMap(c => [...c.guidance, ...(c.bands ?? []).flatMap(b => b.guidance)])];
+      for (const text of scheme) expect(text, card.id).not.toMatch(written);
+      expect(card.rubric.markingGuideNote, card.id).toBe('');
+      expect(card.rubric.practiceNotes?.at(-1), card.id).toBe('Use the published descriptors to place the response you wrote. The marks apply to this selected task; alternative routes are not added together.');
+    }
+    const byId = (id: string) => cards.find(card => card.id === id)!;
+    const message = byId('fr-2014-ol-writing-b2a-route-123');
+    expect(message.rubric.taskRequirements).toEqual(['Rédigez vos réponses en français.', 'Ignore layout.']);
+    expect(message.rubric.criteria[0].guidance.slice(-2)).toEqual(['1st Category - message not clear.', '2nd Category - message clear.']);
+    expect(byId('fr-2014-ol-writing-b3a-route-123').rubric.taskRequirements).toEqual(['Rédigez vos réponses en français.', 'No marks for layout.']);
+    const letter = byId('fr-2014-ol-writing-b3b-route-123');
+    expect(letter.rubric.criteria[0].guidance[0]).toBe('Top of page - 3 marks (France not necessary in address)');
+    expect(letter.rubric.criteria.find(c => c.id === 'communication-1')!.guidance.slice(-2))
+      .toEqual(['1st Category 0 - 1 - message not clear.', '2nd Category 2 - message clear.']);
+    expect(letter.rubric.practiceNotes).toContain('Use the formal letter layout and the supplied addresses.');
+    expect(byId('fr-2026-ol-writing-b1b-route-678').rubric.taskRequirements)
+      .toEqual(['Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes.']);
+    expect(byId('fr-2025-ol-writing-b1b-route-678').rubric.taskRequirements)
+      .toEqual(['Pour 6, 7, 8 et 9 : choisissez trois questions et répondez par des phrases complètes.']);
+    expect(byId('fr-2026-ol-writing-b2a-route-135').rubric.practiceNotes![0]).toBe('This practice route uses three of the five printed points.');
+    expect(byId('fr-2021-hl-writing-b4').rubric.criteria[0].guidance).toEqual(['Q. 4 No particular layout required']);
+    expect(byId('fr-2026-hl-writing-b3').rubric.criteria[0].guidance).toEqual(['Q. 3 – no particular layout required']);
+    expect(byId('fr-2014-hl-writing-b1a').rubric.taskRequirements).toEqual([]);
+    expect(byId('fr-2014-hl-writing-b1a').rubric.practiceNotes![0]).toBe('Write your answer in French.');
   });
 
   it('reproduces each year’s printed wording: word-count line, diary instruction, grid case and letter notes', () => {
@@ -211,7 +241,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     const form = group.find(card => card.id === 'fr-2012-ol-writing-b1b-route-6789')!;
     const tense = 'N.B. Correct tense required for full marks in Communication.';
     expect(form.rubric.criteria.find(c => c.id === 'communication-7')?.guidance).toEqual([
-      'Quels sports pratiquez-vous ?', '0–2: message not clear. 3: message clear.',
+      'Quels sports pratiquez-vous ?', '1st Category 0 - 2 - message not clear.', '2nd Category 3 - message clear.',
       'Two or more sports required here for full marks', tense,
     ]);
     for (const id of ['communication-6', 'communication-8', 'communication-9']) {
@@ -316,7 +346,9 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     const field = group.find(card => card.id === 'fr-2016-ol-writing-b1b-field-5')!;
     expect(field.questionText).toContain('Niveau de français');
     expect(field.rubric.criteria[0].guidance).toEqual(['Years of study – accept any appropriate number']);
-    expect(field.rubric.taskRequirements.join(' ')).toContain('Source discrepancy');
+    // The discrepancy is our disclosure, so it sits in the app-labelled practice notes.
+    expect(field.rubric.practiceNotes!.join(' ')).toContain('Source discrepancy');
+    expect(field.rubric.taskRequirements).toEqual([]);
     expect(group.find(card => card.id === 'fr-2016-ol-writing-b1b-field-4')!.rubric.taskRequirements).toEqual([]);
     const ordinaryLetter = group.find(card => card.id === 'fr-2016-ol-writing-b3b-route-123')!;
     expect(ordinaryLetter.rubric.criteria[0].guidance).toContain('More than 3 mistakes - award 0.');
@@ -341,7 +373,8 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     expect(form.questionText).toContain('avec ou sans animal ? Pourquoi ?');
     const letter = group.find(card => card.id === 'fr-2017-ol-writing-b3b-route-123')!;
     expect(letter.questionText).toContain('26 rue Pasterolli');
-    expect(letter.rubric.taskRequirements.join(' ')).toContain('appendix prints rue Pastorelli');
+    expect(letter.rubric.practiceNotes!.join(' ')).toContain('appendix prints rue Pastorelli');
+    expect(letter.rubric.taskRequirements).toEqual(['Rédigez vos réponses en français.']);
     expect(letter.schemeCitation).toContain('pp.17, 20, 21');
     for (const parent of ['b2a', 'b2b', 'b3a', 'b3b']) expect(group.filter(card => card.id.includes(`ol-writing-${parent}-route-`))).toHaveLength(1);
   });

@@ -712,6 +712,10 @@ export interface FrenchRubric {
   answerGuide?: string[];
   criteria: FrenchCriterion[];
   markingGuideNote: string;
+  /** NextStepUni's own practice guidance. Never SEC text: rendered apart from
+   *  the scheme under an explicit app label. Every other field of this rubric
+   *  shows the SEC's printed wording. */
+  practiceNotes?: string[];
 }
 
 export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric;

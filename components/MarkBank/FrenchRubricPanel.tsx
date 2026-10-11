@@ -46,6 +46,12 @@ export default function FrenchRubricPanel({ card, scores, onScore }: {
       </section>;
     })}
     <div className="mb-french-total"><span>Your placement</span><strong>{frenchMarks(card, scores)} / {card.totalMarks}</strong></div>
-    <p className="mb-french-note">{rubric.markingGuideNote}</p>
+    {rubric.markingGuideNote && <p className="mb-french-note">{rubric.markingGuideNote}</p>}
+    {rubric.practiceNotes && rubric.practiceNotes.length > 0 &&
+      <section className="mb-french-practice" aria-label="NextStepUni practice notes">
+        <p className="mb-french-eyebrow">NextStepUni practice notes</p>
+        <p className="mb-french-practice-source">Our guidance for using this card. Not part of the SEC marking scheme.</p>
+        <ul>{rubric.practiceNotes.map((text, index) => <li key={index}>{text}</li>)}</ul>
+      </section>}
   </div>;
 }

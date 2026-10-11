@@ -2069,7 +2069,9 @@
       "The Ordinary bottom language band has three descriptors. It does not include the vocabulary descriptor introduced in later schemes."
     ],
     "hlSelectionNote": "Q1a/b/c are independent alternatives. Q4 email bullets are all required. Q1c asks about personal travel intentions and destinations, with open response scope. Gender alternatives and personal experience do not define task pools.",
-    "diaryInstruction": "Note three of the following five points in French in your diary:"
+    "diaryInstruction": "Note three of the following five points in French in your diary:",
+    "hlNoLayoutNote": "Q. 4 No particular layout required",
+    "formInstruction": "Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes."
   },
   {
     "year": 2022,
@@ -2222,7 +2224,8 @@
       "The 2022 Higher PDF has a one-page offset: PDF page 15 is printed page 14. Viewer regions use PDF indices; citations distinguish both."
     ],
     "hlSchemePageOffset": -1,
-    "diaryInstruction": "Note three of the following five points in French in your diary:"
+    "diaryInstruction": "Note three of the following five points in French in your diary:",
+    "formInstruction": "Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes."
   },
   {
     "year": 2023,
@@ -2385,7 +2388,8 @@
     "sourceNotes": [
       "The cartoon speech/text is retained in the original illustration. Its text layer interleaves the three separate bubbles; the card uses the title and the printed ask."
     ],
-    "diaryInstruction": "Note three of the following five points in French in your diary:"
+    "diaryInstruction": "Note three of the following five points in French in your diary:",
+    "formInstruction": "Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes."
   },
   {
     "year": 2024,
@@ -2532,7 +2536,8 @@
       "B5",
       "B6"
     ],
-    "diaryInstruction": "Note three of the following five points in French in your diary:"
+    "diaryInstruction": "Note three of the following five points in French in your diary:",
+    "formInstruction": "Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes."
   },
   {
     "year": 2025,
@@ -2679,7 +2684,8 @@
       "B5",
       "B6"
     ],
-    "diaryInstruction": "Note three of the following five points in French in your diary:"
+    "diaryInstruction": "Note three of the following five points in French in your diary:",
+    "formInstruction": "Pour 6, 7, 8 et 9 : choisissez trois questions et répondez par des phrases complètes."
   },
   {
     "year": 2026,
@@ -2826,6 +2832,7 @@
       "B5",
       "B6"
     ],
-    "diaryInstruction": "Note three of the following five points in French in your diary:"
+    "diaryInstruction": "Note three of the following five points in French in your diary:",
+    "formInstruction": "Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes."
   }
 ]

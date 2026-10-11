@@ -49,6 +49,18 @@ describe('French writing presentation', () => {
     expect(screen.queryByText(/PCLM/)).not.toBeInTheDocument();
   });
 
+  it('keeps our practice guidance apart from the SEC scheme under its own label', () => {
+    const card = cards.find(c => c.id === 'fr-2014-ol-writing-b3b-route-123')! as SecRubricCard & { rubric: FrenchRubric };
+    render(<FrenchRubricPanel card={card} scores={{}} onScore={vi.fn()} />);
+    const notes = screen.getByRole('region', { name: 'NextStepUni practice notes' });
+    expect(within(notes).getByText('Not part of the SEC marking scheme.', { exact: false })).toBeInTheDocument();
+    expect(within(notes).getByText('Use the formal letter layout and the supplied addresses.')).toBeInTheDocument();
+    expect(screen.getByText('Top of page - 3 marks (France not necessary in address)')).toBeInTheDocument();
+    expect(screen.getByText('Rédigez vos réponses en français.')).toBeInTheDocument();
+    // The empty legacy note no longer renders as scheme text.
+    expect(document.querySelector('.mb-french-note')).toBeNull();
+  });
+
   it('opens and closes required source material before revealing the marking grid', () => {
     const card = cards.find(c => c.id.endsWith('hl-writing-b1a'))!;
     render(<SessionScreen cards={[card]} subjectLabel="French" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
