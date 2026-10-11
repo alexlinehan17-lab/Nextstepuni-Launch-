@@ -5425,149 +5425,169 @@
         "sha256": "47f040304b88a81e2c6de9783dc71914ac5863ea80416a280cf242c64014ba6d",
         "pages": 25
       },
-      "authoredEnglishCardsForSitting": 88,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 112,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "1f08be7d0bf08721",
           "page": 2,
           "cue": "Answer ten",
           "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer ten questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 m",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section A: ten of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "ae168e9a0c211b77",
           "page": 2,
           "cue": "any four",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day, Month and Year of Birth in the boxes on the front cover. Write your answers in bl",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B: four of six independent questions. Every question is retained."
         },
         {
           "id": "4d0e9772893bc740",
           "page": 3,
           "cue": "any ten",
           "context": "ificate Examination 2025 3 Agricultural Science – Higher Level Section A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 (a) Identify both cattle breeds in A and B. A B (b) State which breed A or B has a dominant polled trait as a characteristic of the breed. (c) Explain the underlined term in p",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: ten independent 10-mark questions, all retained."
         },
         {
           "id": "82944548c2c72701",
           "page": 4,
           "cue": "either",
           "context": "ving Certificate Examination 2025 4 Agricultural Science – Higher Level Question 2 Answer either (a) or (b). (a) Plant lifecycles can be distinguished as annual, biennial and perennial. Explain any two plant lifecycles and provide an example of each one. Annual Example of plant Biennial Example of plant Perennial Example of ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q2 either (a) or (b): both independently marked alternatives are retained."
         },
         {
           "id": "6cfb3ad3b6d6408b",
           "page": 4,
           "cue": "any two",
           "context": "(b). (a) Plant lifecycles can be distinguished as annual, biennial and perennial. Explain any two plant lifecycles and provide an example of each one. Annual Example of plant Biennial Example of plant Perennial Example of plant",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(a) prints annual, biennial and perennial and asks for any two: three routes at 10 marks each."
         },
         {
           "id": "2e6cd11be874308c",
           "page": 5,
           "cue": "Choose",
           "context": "ntify the correct explanation for marbling by placing a tick () in the correct box. (ii) Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows. Meat quality Good growth rates Ease of calving Docility Fe",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(b)(ii) \"Choose\" any two of five printed characteristics: ten routes at 2 marks each."
         },
         {
           "id": "9ab2b0c47cfe5005",
           "page": 5,
           "cue": "any two",
           "context": "he correct explanation for marbling by placing a tick () in the correct box. (ii) Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows. Meat quality Good growth rates Ease of calving Docility Fertility ",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Second regex match in the same Q2(b)(ii) instruction (\"any two\"); the same ten routes."
         },
         {
           "id": "4090a61f0e3cfda9",
           "page": 6,
           "cue": "either",
           "context": "ving Certificate Examination 2025 6 Agricultural Science – Higher Level Question 3 Answer either (a) or (b). (a) Cow brushes on dairy farms are becoming increasingly popular. (i) Outline reasons why farmers install cow brushes in cattle sheds. (ii) In relation to environmental sustainability, briefly describe the advantages ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q3 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "9e6f5de3f3c38902",
           "page": 8,
           "cue": "either",
           "context": "ving Certificate Examination 2025 8 Agricultural Science – Higher Level Question 4 Answer either (a) or (b) (a) Bovine Tuberculosis (TB) is a notifiable disease and zoonosis. TB is on the increase across Ireland with some areas around the country seeing cases rise by 22%. (i) Explain the underlined terms. (ii) Briefly descri",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "980037ae98923503",
           "page": 11,
           "cue": "any one",
           "context": "ipment needed for lambing from the six images below. A B C D E F (b) Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period. Named piece of equipment:",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q6(b): any one of the three lambing tools identified in part (a); the scheme prints one description per tool, so three 4-mark routes."
         },
         {
           "id": "a00923023b1eed61",
           "page": 12,
           "cue": "any two",
           "context": "– Higher Level Question 7 The soil microbiome plays a large role in soil health. (a) List any two components of the soil microbiome. (b) Analyse the diagram below which shows processes that are carried out by the soil microbiome and answer the questions that follow. Water retention Plant carbon sink Carbon sequestration Plant",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q7(a): any two components of the soil microbiome; no printed pool, the scheme examples are a marking menu."
         },
         {
           "id": "6cd6108e84f08878",
           "page": 12,
           "cue": "any one",
           "context": "arbon sequestration Plant growth promotion Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop. 1. 2. Named process: Contribution: Named energy or catch crop: Benefits productivity:",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q7(b): any one of the four printed processes; four 5-mark routes, each with its own contribution and benefit."
         },
         {
           "id": "57ae0134389e1d7a",
           "page": 14,
           "cue": "either",
           "context": "ing Certificate Examination 2025 14 Agricultural Science – Higher Level Question 9 Answer either (a) or (b). Jack was carrying out research to see if he could sow barley in his fields and found that barley crops grow best between pH 6.0 and 7.0. (a) Briefly describe with the aid of a labelled diagram how Jack could test the ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "4303f26dc3d09f03",
           "page": 17,
           "cue": "one of",
           "context": "assure Irish access to meat, milk and egg export markets. Ireland is recognised as having one of the best livestock traceability systems in the world. Innovation in this area is ongoing, which has enabled Irish farmers to continue to access valuable markets abroad. (Adapted from Agriland, 2021) (a) Outline ways farmers can e",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q11 stem (\"one of the best\"); no response choice."
         },
         {
           "id": "00fdc88683e221c4",
           "page": 18,
           "cue": "any four",
           "context": "2025 18 Agricultural Science – Higher Level Question 12 Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water ",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q12: any four of five printed prompts under one 2(4)+2(1) scale; five 10-mark routes."
         },
         {
           "id": "9fcb3888322d99ac",
           "page": 21,
           "cue": "any four",
           "context": "ficate Examination 2025 21 Agricultural Science – Higher Level Section B 200 marks Answer any four questions. Each question carries 50 marks. Question 13 Answer both (a) and (b) with either (c) or (d). (a) Paula and Bill’s dairy calving records for 2023 from their 120-cow dairy herd are shown in the table below. A mixture of A",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: four of six independent 50-mark questions, all retained."
         },
         {
           "id": "145c11c431516d76",
           "page": 21,
           "cue": "either",
           "context": " four questions. Each question carries 50 marks. Question 13 Answer both (a) and (b) with either (c) or (d). (a) Paula and Bill’s dairy calving records for 2023 from their 120-cow dairy herd are shown in the table below. A mixture of Artificial Insemination (AI) and an Aubrac beef stock bull (shown in the image below) was us",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "b79207c595ecd897",
           "page": 25,
           "cue": "either",
           "context": "tion 2025 25 Agricultural Science – Higher Level Question 14 Answer both (a) and (b) with either (c) or (d). The picture shows crop growth in compacted and uncompacted soil. Analyse the picture and answer the questions that follow. (a) (i) Identify which soil A or B is most compacted and outline a reason for your answer. The",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q14: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "f937232b4d54fbc3",
           "page": 28,
           "cue": "any two",
           "context": "lined terms. (ii) Outline characteristics a scientist would be looking for when selecting any two parent plants for breeding. Physical traits: Disease resistance:",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q15(a)(ii): characteristics for \"any two parent plants\" the student selects; no printed pool of plants."
         },
         {
           "id": "708d97ce6238b64b",
           "page": 30,
           "cue": "any three",
           "context": "Leaving Certificate Examination 2025 30 Agricultural Science – Higher Level (b) Identify any three common plants found on Irish farms in the photographs below. A B C D (c) You have been asked to address a group of tillage and dairy farmers on controlling weeds on their farms in order to maximise crop productivity. Using the di",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q15(b): any three of four printed photographs A–D; four 3-mark routes."
         }
       ]
     },
@@ -5586,7 +5606,7 @@
         "sha256": "26974354488ac9493e055619e9864e787b3d1400dc7123d9fb8fb312fe1a2303",
         "pages": 28
       },
-      "authoredEnglishCardsForSitting": 88,
+      "authoredEnglishCardsForSitting": 112,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

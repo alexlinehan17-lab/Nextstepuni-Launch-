@@ -25,6 +25,7 @@ from agricultural_science_2011_ol import reviewed_tasks as reviewed_2011_ol, pap
 from agricultural_science_2012_hl import reviewed_tasks as reviewed_2012_hl, paper_review as higher_2012_review
 from agricultural_science_2026_hl import reviewed_tasks as reviewed_2026_hl, paper_review as higher_2026_review
 from agricultural_science_2026_ol import reviewed_tasks as reviewed_2026_ol, paper_review as ordinary_2026_review
+from agricultural_science_2025_hl import reviewed_tasks as reviewed_2025_hl, paper_review as higher_2025_review, SNAPSHOT, original_hash
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -165,16 +166,25 @@ def reviewed_tasks():
     cards.extend(ordinary_2026_cards)
     reviews.extend(ordinary_2026_tasks)
     paper_reviews.append(ordinary_2026_review())
+    # 2025 Higher reviews every original card; only corrected and added cards
+    # are (re)written. Untouched originals are bound to Atlas, never rewritten.
+    existing = {c['id']: c for c in json.loads(AUTHORED.read_text())}
+    higher_2025_cards, higher_2025_tasks, corrections_2025 = reviewed_2025_hl(existing)
+    cards.extend(higher_2025_cards)
+    reviews.extend(higher_2025_tasks)
+    paper_reviews.append(higher_2025_review())
     # Batches reviewed after 7 October carry their own review date; earlier
     # reviewed card objects must stay byte-identical.
-    batch_dates = {id(card): '2026-10-11' for card in higher_2026_cards + ordinary_2026_cards}
+    batch_dates = {id(card): '2026-10-11' for card in higher_2026_cards + ordinary_2026_cards + higher_2025_cards}
     for reviewed in cards:
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
                           'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':batch_dates.get(id(reviewed),'2026-10-07')}
+    corrected = ['agsci-2025-ol-q8b', *sorted(corrections_2025)]
     return cards, {'status': 'in-progress', 'reviewedAt': '2026-10-07',
-                   'addedCardIds': [c['id'] for c in cards if c['id'] != 'agsci-2025-ol-q8b'],
-                   'correctedCardIds': ['agsci-2025-ol-q8b'], 'tasks': reviews,
-                   'paperReviews': paper_reviews}
+                   'addedCardIds': [c['id'] for c in cards if c['id'] not in corrected],
+                   'correctedCardIds': corrected,
+                   'corrections': {cid: {k: v for k, v in record.items()} for cid, record in sorted(corrections_2025.items())},
+                   'tasks': reviews, 'paperReviews': paper_reviews}
 
 
 def main():
@@ -190,8 +200,16 @@ def main():
         assert json.loads(REVIEW.read_text()) == review, 'Review record stale'
         print(f'OK: {len(cards)} cards for {len(review["tasks"])} reviewed tasks; full corpus review remains open')
     elif args.write:
-        # Updates are allowed only for this script's own previously recorded IDs.
-        managed = {cid for task in json.loads(REVIEW.read_text())['tasks'] for cid in task['cardIds']} if REVIEW.exists() else set()
+        # Updates are allowed only for this script's own previously written IDs:
+        # its additions and its recorded corrections. Reviewed-but-untouched
+        # original cards are never rewritten.
+        previous = json.loads(REVIEW.read_text()) if REVIEW.exists() else {}
+        managed = set(previous.get('addedCardIds', [])) | set(previous.get('correctedCardIds', []))
+        snapshot = json.loads(SNAPSHOT.read_text())
+        for cid, record in review.get('corrections', {}).items():
+            if cid not in managed:
+                assert original_hash(by_id[cid]) == record['originalSha256'] == snapshot[cid]['originalSha256'], f'{cid} changed since its correction was reviewed'
+                managed.add(cid)
         if 'agsci-2025-ol-q8b' not in managed:
             old = by_id['agsci-2025-ol-q8b']
             assert old['rows'] == [{'id': 'r-1', 'kind': 'point', 'verbatim': 'Symbols 2 and 3', 'marks': 5}], 'The independently verified correction needs re-review'

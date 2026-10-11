@@ -1,0 +1,590 @@
+{
+ "agsci-2025-hl-q2a": {
+  "original": {
+   "id": "agsci-2025-hl-q2a",
+   "topicId": "agsci-3-2",
+   "conceptId": "plant-lifecycles",
+   "level": "higher",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 HL Q2(a)",
+   "stem": "Plant lifecycles can be distinguished as annual, biennial and perennial.",
+   "questionText": "Explain any two plant lifecycles and provide an example of each one.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "(3+2) + (3+2)"
+   },
+   "totalMarks": 10,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "First lifecycle explained — Annual: Completes its life cycle in one year",
+     "marks": 3,
+     "accepts": [
+      "Biennial: Completes its life cycle in two years",
+      "Perennial: Flower and reproduce for multiple years"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Example of the first lifecycle — wheat",
+     "marks": 2,
+     "accepts": [
+      "carrot",
+      "perennial ryegrass"
+     ],
+     "openList": true,
+     "contextNote": "The example must match the lifecycle explained in the row above - the scheme pairs them line by line (annual/wheat, biennial/carrot, perennial/perennial ryegrass). Any other valid plant of the same lifecycle scores."
+    },
+    {
+     "id": "r-3",
+     "kind": "alt",
+     "verbatim": "Second lifecycle explained — Biennial: Completes its life cycle in two years",
+     "marks": 3,
+     "accepts": [
+      "Annual: Completes its life cycle in one year",
+      "Perennial: Flower and reproduce for multiple years"
+     ]
+    },
+    {
+     "id": "r-4",
+     "kind": "alt",
+     "verbatim": "Example of the second lifecycle — carrot",
+     "marks": 2,
+     "accepts": [
+      "wheat",
+      "perennial ryegrass"
+     ],
+     "openList": true,
+     "contextNote": "The example must match the lifecycle explained in the row above - the scheme pairs them line by line (annual/wheat, biennial/carrot, perennial/perennial ryegrass). Any other valid plant of the same lifecycle scores."
+    }
+   ],
+   "notes": "The scheme prints three lifecycles at (3+2) each but the paper asks for any TWO, so the tariff is (3+2)+(3+2) = 10, not 15. Rows 1-2 are whichever lifecycle the student explained first and rows 3-4 the second; annual and biennial are the worked pair and the perennial wording sits in accepts on both explanation rows. Examples are openList because the scheme adds '(Any other valid example of a plant)', and each example row carries a contextNote so a student cannot claim an example belonging to a different lifecycle."
+  },
+  "originalSha256": "07a96fdb316654b890dbfb4d7a24c3b8d2b7ab1274716d816071b7de81cda833",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-hl-q2bii": {
+  "original": {
+   "id": "agsci-2025-hl-q2bii",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "beef-cross-sire-selection",
+   "level": "higher",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 HL Q2(b)(ii)",
+   "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024)",
+   "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows. Meat quality / Good growth rates / Ease of calving / Docility / Fertility",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "1+1"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "First characteristic described — Meat quality: Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)",
+     "marks": 1,
+     "accepts": [
+      "many cows go into calf to beef system so improved beef traits",
+      "Good growth rates: Will influence when an animal gets to slaughter and kill out weight (fast maturing)",
+      "Ease of calving: Reduced risk of complications",
+      "better suited for crossing with dairy cows rather than bigger continental breeds",
+      "Docility: Animals with good temperament are easier to handle",
+      "less risk of injury",
+      "Fertility: greater number of calves over lifetime of bull"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Second characteristic described — Good growth rates: Will influence when an animal gets to slaughter and kill out weight (fast maturing)",
+     "marks": 1,
+     "accepts": [
+      "Meat quality: Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)",
+      "many cows go into calf to beef system so improved beef traits",
+      "Ease of calving: Reduced risk of complications",
+      "better suited for crossing with dairy cows rather than bigger continental breeds",
+      "Docility: Animals with good temperament are easier to handle",
+      "less risk of injury",
+      "Fertility: greater number of calves over lifetime of bull"
+     ]
+    }
+   ],
+   "notes": "Only 2 marks on this part (the scheme prints 1+1), so it is two rows of one, not five. The scheme lists all five characteristics; the student picks any two, so both rows carry the whole remaining pool in accepts. Within a characteristic the solidus separates alternative wordings of the SAME point (e.g. 'Reduced risk of complications / better suited for crossing with dairy cows rather than bigger continental breeds') and is not split into extra rows."
+  },
+  "originalSha256": "ac54d5787c47fb8f0775872f5fc2149726064eb907d343e814af236fa11aaa9e",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-hl-q6b": {
+  "original": {
+   "id": "agsci-2025-hl-q6b",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "lambing-equipment-use",
+   "level": "higher",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 HL Q6(b)",
+   "stem": "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing. In part (a) he identified three pieces of lambing equipment: a stomach tube, a heat lamp and ropes.",
+   "questionText": "Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Stomach tube: Tube is placed into stomach through oesophagus to deliver milk to stomach",
+     "marks": 4,
+     "accepts": [
+      "Heat lamp: The heat lamp is placed above the lamb",
+      "Ropes: Ropes are tied above the hooves of lambs to pull lamb during birth"
+     ]
+    }
+   ],
+   "notes": "Part (a) is image-based (six photographs, A-F) and is skipped; (b) carries its own 4-mark tariff and is answerable in words once the three items are named, so the stem names them (scheme: 'A: Stomach tube / C: heat lamp / D: ropes') without referring to photographs the card does not carry. Only one description is required, so this is one 4-mark row with the other two descriptions as accepts."
+  },
+  "originalSha256": "0a049306ec51752e8a2b2d45cabd28f0f357e231fc40c45d589c572b8026eac3",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-hl-q12a": {
+  "original": {
+   "id": "agsci-2025-hl-q12a",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "why-progeny-test-dairy-cows",
+   "level": "higher",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 HL Q12(a)",
+   "questionText": "Progeny testing in dairy cows.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(4) + 2(1)"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring",
+     "marks": 2
+    }
+   ],
+   "stem": "Outline one scientific reason for any four of the following:",
+   "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
+  },
+  "originalSha256": "9ba7c955cf8ebb2cf57ee73b752d016656235ced5c4e3bbe392591db01701e5c",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-hl-q12b": {
+  "original": {
+   "id": "agsci-2025-hl-q12b",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "why-buffer-zones-beside-waterways",
+   "level": "higher",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 HL Q12(b)",
+   "questionText": "Having a buffer zone close to a waterway.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(4) + 2(1)"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Reduce run off or prevent eutrophication",
+     "marks": 2,
+     "accepts": [
+      "reduce sediment in rivers",
+      "increased bank stability",
+      "increased biodiversity"
+     ]
+    }
+   ],
+   "stem": "Outline one scientific reason for any four of the following:",
+   "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
+  },
+  "originalSha256": "17ba0616a87cf8d00641c1edfface6f2af551517e9c72e97d2f9f1c57c9aff0f",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-hl-q12c": {
+  "original": {
+   "id": "agsci-2025-hl-q12c",
+   "topicId": "agsci-3-1",
+   "conceptId": "why-chloroplasts-sit-in-the-palisade-layer",
+   "level": "higher",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 HL Q12(c)",
+   "questionText": "Presence of chloroplasts in the palisade layer of a leaf.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(4) + 2(1)"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Close to surface to maximise photosynthesis",
+     "marks": 2
+    }
+   ],
+   "stem": "Outline one scientific reason for any four of the following:",
+   "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
+  },
+  "originalSha256": "e56b57077ca7ecae0562cbc7bb33ecf25a315feef89ae5e1fdeec4392e8e922a",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-hl-q12d": {
+  "original": {
+   "id": "agsci-2025-hl-q12d",
+   "topicId": "agsci-4-3-1",
+   "conceptId": "why-cull-breeding-ewes",
+   "level": "higher",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 HL Q12(d)",
+   "questionText": "Culling of breeding ewes on a sheep farm.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(4) + 2(1)"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)",
+     "marks": 2
+    }
+   ],
+   "stem": "Outline one scientific reason for any four of the following:",
+   "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
+  },
+  "originalSha256": "b749a1cc989225ea309dfad2c488a772911e8c682565679c696ccd49b6339f6d",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-hl-q12e": {
+  "original": {
+   "id": "agsci-2025-hl-q12e",
+   "topicId": "agsci-3-1",
+   "conceptId": "why-water-moves-through-the-plant",
+   "level": "higher",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 HL Q12(e)",
+   "questionText": "Movement of water from the soil through the plant to the atmosphere.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(4) + 2(1)"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "To transport minerals",
+     "marks": 2,
+     "accepts": [
+      "to provide water for photosynthesis",
+      "to cool the plant"
+     ]
+    }
+   ],
+   "stem": "Additional writing space for Section A. Label all work clearly with the question number and part. Section B 200 marks Each question carries 50 marks.",
+   "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
+  },
+  "originalSha256": "65eef234725cc7322fcb7b0d200c44d7c6e7a5bc1836d6faec5a2854a73c4b31",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-hl-q14bi": {
+  "original": {
+   "id": "agsci-2025-hl-q14bi",
+   "topicId": "agsci-1-2",
+   "conceptId": "capillarity-compacted-vs-uncompacted",
+   "level": "higher",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2025 HL Q14(b)(i)",
+   "stem": "Question 14, part (b). The question is set on soil compaction: the paper has already shown crop growth in compacted and uncompacted soil and a graph of water availability by soil type. Part (b) turns to an investigation you carry out yourself, so the labelled diagram is one you draw, not one printed on the paper.",
+   "questionText": "Compare, with the aid of a labelled diagram, the capillarity of a compacted and uncompacted soil. State the results of this investigation.",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "answer": 4,
+    "ofParts": 5,
+    "perPart": 4,
+    "notation": "4x4"
+   },
+   "totalMarks": 16,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Put cotton wool or muslin cloth in open end of one tube (and place in retort stand)",
+     "marks": 4
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "obtain dry soil sample",
+     "marks": 4,
+     "contextNote": "The scheme's step reads in full 'obtain dry soil sample and compact one half of the sample' — compacting one half is the point of the comparison."
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "place equal amounts of compacted soil in open end of the tubes and uncompacted soil in the other open-ended tube",
+     "marks": 4
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "place both tubes in equal amounts of water",
+     "marks": 4
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "measure or observe the level of water in each tube",
+     "marks": 4,
+     "openList": true,
+     "contextNote": "The scheme's pool also carries 'leave for a suitable valid time' and closes with 'other valid method', so a sound step of your own that is not printed here still scores."
+    }
+   ],
+   "notes": "The paper prints 17 for this part: 4x4 for the method plus one mark for stating the result. The result entry reads '*Result: valid result for investigation described' — a tariff with no answer in it, which cannot be a row, so the card covers the 16 method marks and totalMarks is 16 rather than 17. Reviewer should note that gap. bestNofParts because the scheme lists more steps than the four that score. Row 2 stops at 'obtain dry soil sample' because the 4x4 mark cell is typeset inside that step in the extracted markdown; the full step is in its contextNote. 'leave for a suitable valid time' is left out of the rows as a time instruction rather than an answer.",
+   "figureKey": "agricultural-science-2025-hl-paper-p025-i0"
+  },
+  "originalSha256": "5f86aad0b539eb548488d47ebd13183717c2fa7d08707a3df7ab3e08f92c543c",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-hl-q15b": {
+  "original": {
+   "id": "agsci-2025-hl-q15b",
+   "topicId": "agsci-3-1",
+   "conceptId": "identifying-common-farm-weeds",
+   "level": "higher",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2025 HL Q15(b)",
+   "questionText": "Identify any three common plants found on Irish farms in the photographs below.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3x1"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "A: Cleavers",
+     "marks": 1,
+     "accepts": [
+      "D: Oilseed rape"
+     ],
+     "contextNote": "Four photographs lettered A to D: A narrow leaves in whorls up square stems, B open sky-blue daisy-like flowers, C small yellow five-petalled flowers among toothed silvery leaflets, D a field of tall yellow four-petalled flowers. Any three of the four score."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B: Chicory",
+     "marks": 1,
+     "accepts": [
+      "D: Oilseed rape"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "C: Silverweed",
+     "marks": 1,
+     "accepts": [
+      "D: Oilseed rape"
+     ]
+    }
+   ],
+   "figureKey": "agricultural-science-2025-HL-paper-p30-art",
+   "labelKey": [
+    {
+     "letter": "A",
+     "meaning": "Cleavers",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "B",
+     "meaning": "Chicory",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "C",
+     "meaning": "Silverweed",
+     "askedInThisQuestion": true
+    }
+   ]
+  },
+  "originalSha256": "8fc63feef0803acc0b9cb018c4481a93905f2c83e2b6abf428533d358039a670",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-ol-q1ai": {
+  "original": {
+   "id": "agsci-2025-ol-q1ai",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "identifying-cattle-breeds-from-a-list",
+   "level": "ordinary",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 OL Q1(a)(i)",
+   "questionText": "Identify any three breeds A, B, C or D using the list below.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3x2"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "A: Charolais",
+     "marks": 2,
+     "accepts": [
+      "D: Holstein Friesian"
+     ],
+     "contextNote": "Four cattle photographs under a word bank of Jersey, Holstein Friesian, Charolais and Limousin. A is a cream-white bull, B a fawn cow grazing among a fawn herd, C a deep red-brown heavily muscled bull in a straw shed, D a black-and-white cow grazing."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B: Jersey",
+     "marks": 2,
+     "accepts": [
+      "D: Holstein Friesian"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "C: Limousin",
+     "marks": 2,
+     "accepts": [
+      "D: Holstein Friesian"
+     ]
+    }
+   ],
+   "stem": "Jersey Holstein Friesian Charolais Limousin Or",
+   "notes": "Any three of the four score at 2 marks each; the fourth is carried as an accepted alternative.",
+   "figureKey": "agricultural-science-2025-OL-paper-p03-art",
+   "labelKey": [
+    {
+     "letter": "A",
+     "meaning": "Charolais",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "B",
+     "meaning": "Jersey",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "C",
+     "meaning": "Limousin",
+     "askedInThisQuestion": true
+    }
+   ]
+  },
+  "originalSha256": "117b9d0672688eed776e45baaf53e3f78b121af8c1b625b3539f7d6d1e429040",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-ol-q9bi-ii": {
+  "original": {
+   "id": "agsci-2025-ol-q9bi-ii",
+   "topicId": "agsci-1-3",
+   "conceptId": "agricultural-input-price-index",
+   "level": "ordinary",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 OL Q9(b)(i)–(ii)",
+   "stem": "The picture shows the Agricultural Price Index for 12 months up to March 2024.\nChanges in Agricultural Input Price: Electricity down 22% · Fertilisers down 40% · Feedstuffs down 21%\nChanges in Agricultural Output Price: Sheep up 30% · Cereals down 31% · Milk down 5%",
+   "questionText": "(i) State if the input prices have increased or decreased. (ii) Identify what your answer in part (i) above means for farmers by placing a tick in the correct box: Costs less to produce / Cost the same to produce / Costs more to produce.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 5,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Decreased",
+     "marks": 3,
+     "contextNote": "Part (i) — all three input prices in the index fell."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Costs less to produce",
+     "marks": 2,
+     "contextNote": "Part (ii) — the tick-box consequence of the answer to (i)."
+    }
+   ],
+   "notes": "The Agricultural Price Index graphic is a text infographic: every figure in it extracts as real text from the paper, and the two panels are unambiguously separated by x-position (inputs at left, outputs at right). The stem transcribes it verbatim, so the card needs no image crop. Parts (i) and (ii) are combined into one card because (ii) is phrased entirely as a reference to (i) and dangles on its own; their tariffs (3 and 2) are printed separately and are kept as separate rows summing to 5. Q9(b) reconciles as 3 + 2 + 3 + 2 = 10.",
+   "figureKey": "agricultural-science-2025-OL-paper-p11-i0"
+  },
+  "originalSha256": "ecd952ca8c42cd3fa600e29e69c5ae364eec1892e86e3b0a04afa52945ec3cdb",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2025-ol-q9biii-iv": {
+  "original": {
+   "id": "agsci-2025-ol-q9biii-iv",
+   "topicId": "agsci-1-3",
+   "conceptId": "agricultural-output-price-index",
+   "level": "ordinary",
+   "year": 2025,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2025 OL Q9(b)(iii)–(iv)",
+   "stem": "The picture shows the Agricultural Price Index for 12 months up to March 2024.\nChanges in Agricultural Input Price: Electricity down 22% · Fertilisers down 40% · Feedstuffs down 21%\nChanges in Agricultural Output Price: Sheep up 30% · Cereals down 31% · Milk down 5%",
+   "questionText": "(iii) Which agricultural enterprise's output price has increased? (iv) Identify what your answer in part (iii) above means for farmers by placing a tick in the correct box: Increased profit / Increased cost.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 5,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Sheep",
+     "marks": 3,
+     "contextNote": "Part (iii) — sheep is the only output price up (30%); cereals and milk both fell."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Increased profit",
+     "marks": 2,
+     "contextNote": "Part (iv) — the tick-box consequence of the answer to (iii)."
+    }
+   ],
+   "notes": "Same transcribed price-index stem as the (i)–(ii) card. Parts (iii) and (iv) are combined because (iv) is written purely as a reference to (iii). Marks printed separately as 3 and 2, kept as separate rows summing to 5."
+  },
+  "originalSha256": "e6d0ad7066be9f2300fa2302fdb11bcb15b8a15972c2f95226ba069dff0e3e52",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ }
+}

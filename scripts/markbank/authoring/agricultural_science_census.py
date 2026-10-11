@@ -673,7 +673,115 @@ POOLS_2026_ORDINARY = {
     'Q18(b)(ii)': (3, ['A', 'B', 'C', 'D']),
 }
 
+# 2025 Higher: Section A Q1-Q12 at 10 marks, Section B Q13-Q18 at 50. The
+# scheme's Q14(b)(i) prints 4x4 plus a separate 1 for the result: 17.
+HIGHER_2025 = '''
+Q1(a)|6|3|12|A: Aberdeen Angus
+Q1(b)|2|3|12|A or Aberdeen Angus
+Q1(c)|2|3|12|Does not have horns
+Q2(a)|10|4|12|Completes its life cycle in one year
+Q2(b)(i)|4|5|12|Intramuscular fat found in meat
+Q2(b)(ii)|2|5|12|Animals with good temperament are easier to handle
+Q2(b)(iii)|4|5|12|Guaranteed income / no unwanted calves
+Q3(a)(i)|6|6|13|Allow cows to groom or scratch
+Q3(a)(ii)|4|6|13|Two points on any named valid piece of technology
+Q3(b)(i)|5|7|13|Less risk to animals from noxious (harmful) gases
+Q3(b)(ii)|5|7|13|Increased nutrient levels in slurry
+Q4(a)(i)|5|8|13|disease that can be transmitted from animal to human
+Q4(a)(ii)|3|8|13|Sale or movement of infected cattle
+Q4(a)(iii)|2|8|13|Stock proof fencing on farm boundaries
+Q4(b)(i)|2|9|14|Clostridium chauvoei
+Q4(b)(ii)|3|9|14|Soil / animal faeces
+Q4(b)(iii)|3|9|14|Swollen joints or muscles
+Q4(b)(iv)|2|9|14|Vaccination / remove from infected land
+Q5(a)|4|10|14|Reduced feed intake due to stress
+Q5(b)|4|10|14|Rapeseed, vegetable oil
+Q5(c)|2|10|14|56 x 63 = 3528 kg
+Q6(a)|6|11|15|A: Stomach tube / C: heat lamp / D: ropes
+Q6(b)|4|11|15|Ropes are tied above the hooves
+Q7(a)|5|12|15|Bacteria / fungi / actinomycetes
+Q7(b)|5|12|15|Decomposition of OM to humus
+Q8(a)|10|13|16|Symbiotic bacteria or Rhizobium
+Q9(a)|10|14|16|Put a soil sample in clean beaker
+Q9(b)(i)|4|15|16|Field 2 and Field 3
+Q9(b)(ii)|4|15|16|Liming the soil to raise pH
+Q9(b)(iii)|2|15|16|pH affects nutrient availability
+Q10(a)|4|16|16|who is used for producing lambs for
+Q10(b)|6|16|16|assessing muscle and fat would allow the farmer to
+Q11(a)|6|17|17|Be part of quality assurance scheme
+Q11(b)|4|17|17|Contribute to farm income
+Q12|10|18|17|Close to surface to maximise photosynthesis
+Q13(a)(i)|4|21|18|Sell as beef animals
+Q13(a)(ii)|2|21|18|Early calving cows
+Q13(a)(iii)|1|21|18|These calves will be used as replacements
+Q13(a)(iv)|2|21|18|Calculate the replacement rate for the herd.
+Q13(a)(v)|6|22|18|120 – 113 = 7 barren cows
+Q13(a)(vi)|6|22|18|Jersey / Norwegian Red / Holstein
+Q13(a)(vii)|6|22|18|Disease control / biosecurity
+Q13(b)(i)|3|22|18|Keeping data (records) on the milk yield
+Q13(b)(ii)|5|22|18|Identify barren cows / predicting calving dates
+Q13(b)(iii)|5|23|19|Identify best and worst producing animals
+Q13(c)(i)|5|23|19|12 – 18 hours
+Q13(c)(ii)|5|23|19|Missed ovulation / inaccurate heat detection
+Q13(d)(i)|5|24|19|Oxytocin
+Q13(d)(ii)|5|24|19|Sight of the calf
+Q14(a)(i)|10|25|19|(Compacted structure or) hard pan
+Q14(a)(ii)|6|25|19|30 – 10 = 20%
+Q14(a)(iii)|3|26|19|Sand has larger pore spaces
+Q14(b)(i)|17|26|19|*Result: valid result for investigation described
+Q14(b)(ii)|6|27|20|Compacted and uncompacted soil
+Q14(b)(iii)|2|27|20|Record the exact mass
+Q14(c)|6|27|20|Ploughing / subsoiling
+Q14(d)|6|27|20|Poaching/use of heavy machinery
+Q15(a)(i)|8|28|20|The observable characteristics of an organism
+Q15(a)(ii)|7|28|20|Disease resistance / yield / early ripening
+Q15(a)(iii)|8|29|20|C and D are first two steps in either order
+Q15(a)(iv)|8|29|21|Dominant trait: Purple
+Q15(b)|3|30|21|D: Oilseed rape
+Q15(c)|16|30|21|One point under each heading and the fourth point from any heading
+Q16(a)(i)|4|32|22|Identify the animal with the higher intake of feed.
+Q16(a)(ii)|4|32|22|Identify which animal had the better food conversion ratio (FCR).
+Q16(a)(iii)|4|32|22|Charolais: 725/654 = 1.1 kg
+Q16(a)(iv)|3|32|22|Identify the animal with the inferior feed efficiency.
+Q16(a)(v)|2|33|22|The amount of feed required to produced (1) kg of liveweight gain
+Q16(a)(vi)|9|33|22|Breed / sex / health or disease
+Q16(b)|6|33|22|446 x 5.25 = 2341.50
+Q16(c)(i)|6|34|22|Presence of oxygen allows anaerobic bacteria
+Q16(c)(ii)|6|34|22|Butyric acid – lactic acid
+Q16(c)(iii)|3|34|22|Be more specific on the location
+Q16(c)(iv)|3|34|22|Teagasc / Department of Agriculture
+Q17(a)(i)|2|35|23|A sheep that is 1-2 years old
+Q17(a)(ii)|4|35|23|145-150 days
+Q17(a)(iii)|6|35|23|Ensure sheep are at the correct BCS
+Q17(a)(iv)|6|36|23|udder with no defects
+Q17(a)(v)|6|36|23|Could interfere with breeding program
+Q17(b)(i)|6|36|23|Good ventilation / good hygiene
+Q17(b)(ii)|6|36|23|Sheep crate or race for examining livestock
+Q17(c)(i)|10|37|23|6 points plotted for Caledonia
+Q17(c)(ii)|4|37|23|Variety: Caledonia
+Q18(a)(i)|12|38|24|Anthelminthic properties / drought resistant
+Q18(a)(ii)|6|38|24|Direct drilling: Land is grazed bare
+Q18(a)(iii)|6|38|24|Do a soil test to establish nutrients
+Q18(b)|12|39|24|Throw a quadrat / do a plant count
+Q18(c)(i)|2|40|24|The point at which a seedling is able to absorb nutrients
+Q18(c)(ii)|12|40|24|Difficulties to cultivate land
+'''
+
+POOLS_2025_HIGHER = {
+    'Q2(a)': (2, ['Annual', 'Biennial', 'Perennial']),
+    'Q2(b)(ii)': (2, ['Meat quality', 'Good growth rates', 'Ease of calving', 'Docility', 'Fertility']),
+    'Q6(b)': (1, ['Stomach tube', 'Heat lamp', 'Ropes']),
+    'Q7(b)': (1, ['Water retention', 'Plant carbon sink', 'Carbon sequestration', 'Plant growth promotion']),
+    'Q12': (4, ['a', 'b', 'c', 'd', 'e']),
+    'Q15(b)': (3, ['A', 'B', 'C', 'D']),
+}
+
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER}
+
 SOURCES = [
+    (2025, 'higher', 'A', HIGHER_2025,
+     '5d6ace875795ceeed7f7738b6c137a17f62e7247be067b540907afa71f9880f0',
+     '47f040304b88a81e2c6de9783dc71914ac5863ea80416a280cf242c64014ba6d'),
     (2026, 'ordinary', 'G', ORDINARY_2026,
      'b63e7223ff6e0b724984b51db9b1813f37d19496570b7614694abc85f5702e2f',
      '5d408c95790f05c59a313f8b2e30ed789d36ddfbbe23da59474d5db79a7e1e8a'),
@@ -724,8 +832,8 @@ def source_tasks():
             if year==2010 and level=='higher' and ref=='Q3 Option Two (b)':
                 routes = [ref+' — Hoose',ref+' — grass-tetany']
                 selection = {'kind':'closed','choose':1,'options':['Hoose','grass-tetany']}
-            elif year==2026 and ref in (POOLS_2026_HIGHER if level=='higher' else POOLS_2026_ORDINARY):
-                choose,choices = (POOLS_2026_HIGHER if level=='higher' else POOLS_2026_ORDINARY)[ref]
+            elif ref in MODERN_POOLS.get((year,level),{}):
+                choose,choices = MODERN_POOLS[(year,level)][ref]
                 routes = [ref+' — '+', '.join(parts) for parts in itertools.combinations(choices,choose)]
                 selection = {'kind':'closed','choose':choose,'options':choices}
             elif year<2021 and level=='higher' and (ref=='Q8(c)' or year in (2010,2012) and ref=='Q7(a)'):
@@ -738,7 +846,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -785,6 +893,8 @@ MODERN_LAYOUTS = {
                       'marks':lambda n: 10 if n<=12 else 50},
     (2026,'ordinary'): {'either':{'Q3','Q8','Q9','Q12'}, 'bothWithEither':{'Q15','Q16'},
                         'marks':lambda n: 10 if n<=12 else 50},
+    (2025,'higher'): {'either':{'Q2','Q3','Q4','Q9'}, 'bothWithEither':{'Q13','Q14'},
+                      'marks':lambda n: 10 if n<=12 else 50},
 }
 
 
@@ -857,7 +967,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62; 2026 Higher 91 / 112; 2026 Ordinary 85 / 114. Remaining editions stay open.')
+    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62; 2026 Higher 91 / 112; 2026 Ordinary 85 / 114; 2025 Higher 89 / 112. Remaining editions stay open.')
 
 
 if __name__=='__main__':

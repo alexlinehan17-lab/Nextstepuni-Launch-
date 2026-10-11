@@ -456,11 +456,105 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-hl-q10a": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2025-hl-q10b": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2025-hl-q11a": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2025-hl-q11b": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2025-hl-q13ai": {
+      "pages": [
+        21
+      ]
+    },
     "agsci-2025-hl-q13aii": {
       "pages": [
         21
       ],
       "stripStem": true
+    },
+    "agsci-2025-hl-q13aiii": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2025-hl-q13aiv": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2025-hl-q13av": {
+      "pages": [
+        21,
+        22
+      ]
+    },
+    "agsci-2025-hl-q13avi": {
+      "pages": [
+        21,
+        22
+      ]
+    },
+    "agsci-2025-hl-q13avii": {
+      "pages": [
+        21,
+        22
+      ]
+    },
+    "agsci-2025-hl-q13bi": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2025-hl-q13bii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2025-hl-q13biii": {
+      "pages": [
+        22,
+        23
+      ]
+    },
+    "agsci-2025-hl-q13ci": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2025-hl-q13cii": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2025-hl-q13di": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2025-hl-q13dii": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2025-hl-q14ai": {
+      "pages": [
+        25
+      ]
     },
     "agsci-2025-hl-q14aii": {
       "pages": [
@@ -468,17 +562,308 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-hl-q14aiii": {
+      "pages": [
+        25,
+        26
+      ]
+    },
+    "agsci-2025-hl-q14bii": {
+      "pages": [
+        26,
+        27
+      ]
+    },
+    "agsci-2025-hl-q14biii": {
+      "pages": [
+        26,
+        27
+      ]
+    },
+    "agsci-2025-hl-q14c": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2025-hl-q14d": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2025-hl-q15ai": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2025-hl-q15aii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2025-hl-q15aiii": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2025-hl-q15aiv": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2025-hl-q16ai": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2025-hl-q16aii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2025-hl-q16aiii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2025-hl-q16aiv": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2025-hl-q16av": {
+      "pages": [
+        32,
+        33
+      ]
+    },
+    "agsci-2025-hl-q16avi": {
+      "pages": [
+        32,
+        33
+      ]
+    },
+    "agsci-2025-hl-q16b": {
+      "pages": [
+        32,
+        33
+      ]
+    },
+    "agsci-2025-hl-q16ci": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-hl-q16cii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-hl-q16ciii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-hl-q16civ": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-hl-q17ai": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-hl-q17aii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-hl-q17aiii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-hl-q17aiv": {
+      "pages": [
+        35,
+        36
+      ]
+    },
+    "agsci-2025-hl-q17av": {
+      "pages": [
+        35,
+        36
+      ]
+    },
+    "agsci-2025-hl-q17bi": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2025-hl-q17bii": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2025-hl-q17ci": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2025-hl-q17cii": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2025-hl-q18ai": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2025-hl-q18aii": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2025-hl-q18aiii": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2025-hl-q18b": {
+      "pages": [
+        39
+      ]
+    },
+    "agsci-2025-hl-q18ci": {
+      "pages": [
+        40
+      ]
+    },
+    "agsci-2025-hl-q18cii": {
+      "pages": [
+        40
+      ]
+    },
+    "agsci-2025-hl-q1a": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2025-hl-q1c": {
+      "pages": [
+        3
+      ]
+    },
     "agsci-2025-hl-q2bi": {
       "pages": [
         5
       ],
       "stripStem": true
     },
+    "agsci-2025-hl-q2biii": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2025-hl-q3ai": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2025-hl-q3bi": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2025-hl-q3bii": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2025-hl-q4ai": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2025-hl-q4aii": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2025-hl-q4aiii": {
+      "pages": [
+        8
+      ]
+    },
     "agsci-2025-hl-q4bi": {
       "pages": [
         9
       ],
       "stripStem": true
+    },
+    "agsci-2025-hl-q4bii": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2025-hl-q4biii": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2025-hl-q4biv": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2025-hl-q5a": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2025-hl-q5b": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2025-hl-q5c": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2025-hl-q7a": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2025-hl-q8a": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2025-hl-q9a": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2025-hl-q9bi": {
+      "pages": [
+        14,
+        15
+      ]
+    },
+    "agsci-2025-hl-q9bii": {
+      "pages": [
+        14,
+        15
+      ]
+    },
+    "agsci-2025-hl-q9biii": {
+      "pages": [
+        14,
+        15
+      ]
     },
     "agsci-2025-ol-q11ai": {
       "kind": "text",

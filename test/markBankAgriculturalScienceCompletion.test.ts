@@ -38,7 +38,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(60);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(59);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(1);
   });
 
@@ -390,7 +390,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(11);
+    expect(review.paperReviews).toHaveLength(12);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -539,6 +539,52 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
+  it('reconciles all 88 original 2025 Higher cards and expands every printed pool', () => {
+    const year = higher.filter(card => card.year === 2025);
+    expect(year).toHaveLength(112);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2025 HL'));
+    expect(tasks).toHaveLength(112);
+    const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
+    expect(states.filter(state => state === 'unchanged')).toHaveLength(78);
+    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(10);
+    expect(states.filter(state => state === 'added')).toHaveLength(24);
+    const pools: Array<[string, number, number]> = [['q2a', 3, 10], ['q2bii', 10, 2], ['q6b', 3, 4], ['q7b', 4, 5], ['q12', 5, 10], ['q15b', 4, 3]];
+    for (const [key, count, marks] of pools) {
+      const routes = year.filter(card => card.questionRef.startsWith(`2025 HL Q${key.slice(1).replace(/^(\d+)([a-z]?)(i*)$/, (_m, n, l, r) => n + (l ? `(${l})` : '') + (r ? `(${r})` : ''))}`)
+        && card.questionRef.includes(' — '));
+      expect(routes, key).toHaveLength(count);
+      for (const candidate of routes) {
+        const card = get(candidate.id);
+        expect(card.totalMarks, card.id).toBe(marks);
+        expect(tariffReconciles(card)).toBe(true);
+        expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection.kind).toBe('closed');
+      }
+    }
+    // Legacy IDs become the first printed route.
+    expect(get('agsci-2025-hl-q2a').questionRef).toBe('2025 HL Q2(a) — Annual, Biennial');
+    expect(get('agsci-2025-hl-q6b').questionRef).toBe('2025 HL Q6(b) — Stomach tube');
+    expect(get('agsci-2025-hl-q15b').questionRef).toBe('2025 HL Q15(b) — A, B, C');
+    const q12 = get('agsci-2025-hl-q12c');
+    expect(q12.rows[0].group?.perOptionSteps).toEqual([4, 4, 1, 1]);
+    expect(q12.rows[0].group?.options[1]).toContain('Close to surface to maximise photosynthesis');
+    expect(marksClaimed(q12, {}, { 'r-1': [0, 1, 2, 3] })).toBe(10);
+    expect(marksClaimed(q12, {}, { 'r-1': [3] })).toBe(4);
+    const capillarity = get('agsci-2025-hl-q14bi');
+    expect(capillarity.totalMarks).toBe(17);
+    expect(marksClaimed(capillarity, { 'r-2': 'yes' }, { 'r-1': [0, 1, 2, 3] })).toBe(17);
+    expect(get('agsci-2025-hl-q15c').answerVariants).toHaveLength(3);
+    for (const variant of get('agsci-2025-hl-q15c').answerVariants!) {
+      expect(tariffReconciles({ ...get('agsci-2025-hl-q15c'), rows: variant.rows })).toBe(true);
+    }
+    const plants = higher.find(card => card.id === 'agsci-2025-hl-q15b-route-bcd')!;
+    expect(plants.kind).toBe('diagram');
+    const units = census.questionMarkChecks.filter(check => check.year === 2025 && check.level === 'higher');
+    expect(units).toHaveLength(18);
+    for (const check of units) expect(check.candidateTotalsFromScheme).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+    const map: PaperAnswerMap = JSON.parse(readFileSync(resolve(__dirname, '../public/paper-answers/2025/LC024ALP000EV.pdf.json'), 'utf8'));
+    expect(map.q.find(q => q.n === '14')?.schemeNote).toContain('17');
+  });
+
   it('awards 2010 first-correct marks independently of the named instrument', () => {
     const card = get('agsci-2010-hl-q1e');
     for (const first of [0, 1, 2]) expect(marksClaimed(card, {}, { 'r-1': [first] })).toBe(6);
@@ -590,7 +636,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(594);
+    expect(atlas.markBankCards).toHaveLength(706);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

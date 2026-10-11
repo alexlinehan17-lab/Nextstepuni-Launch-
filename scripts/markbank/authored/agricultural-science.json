@@ -9691,70 +9691,6 @@
   "figureKey": "agricultural-science-2024-OL-paper-p16-i0"
  },
  {
-  "id": "agsci-2025-hl-q2a",
-  "topicId": "agsci-3-2",
-  "conceptId": "plant-lifecycles",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 HL Q2(a)",
-  "stem": "Plant lifecycles can be distinguished as annual, biennial and perennial.",
-  "questionText": "Explain any two plant lifecycles and provide an example of each one.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "(3+2) + (3+2)"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "First lifecycle explained — Annual: Completes its life cycle in one year",
-    "marks": 3,
-    "accepts": [
-     "Biennial: Completes its life cycle in two years",
-     "Perennial: Flower and reproduce for multiple years"
-    ]
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "Example of the first lifecycle — wheat",
-    "marks": 2,
-    "accepts": [
-     "carrot",
-     "perennial ryegrass"
-    ],
-    "openList": true,
-    "contextNote": "The example must match the lifecycle explained in the row above - the scheme pairs them line by line (annual/wheat, biennial/carrot, perennial/perennial ryegrass). Any other valid plant of the same lifecycle scores."
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "Second lifecycle explained — Biennial: Completes its life cycle in two years",
-    "marks": 3,
-    "accepts": [
-     "Annual: Completes its life cycle in one year",
-     "Perennial: Flower and reproduce for multiple years"
-    ]
-   },
-   {
-    "id": "r-4",
-    "kind": "alt",
-    "verbatim": "Example of the second lifecycle — carrot",
-    "marks": 2,
-    "accepts": [
-     "wheat",
-     "perennial ryegrass"
-    ],
-    "openList": true,
-    "contextNote": "The example must match the lifecycle explained in the row above - the scheme pairs them line by line (annual/wheat, biennial/carrot, perennial/perennial ryegrass). Any other valid plant of the same lifecycle scores."
-   }
-  ],
-  "notes": "The scheme prints three lifecycles at (3+2) each but the paper asks for any TWO, so the tariff is (3+2)+(3+2) = 10, not 15. Rows 1-2 are whichever lifecycle the student explained first and rows 3-4 the second; annual and biennial are the worked pair and the perennial wording sits in accepts on both explanation rows. Examples are openList because the scheme adds '(Any other valid example of a plant)', and each example row carries a contextNote so a student cannot claim an example belonging to a different lifecycle."
- },
- {
   "id": "agsci-2025-hl-q2bi",
   "topicId": "agsci-4-3-1",
   "conceptId": "marbling",
@@ -9778,56 +9714,6 @@
    }
   ],
   "notes": "Tick-box question, but every option is printed as text in the paper, so no figure is needed. The three options are transcribed into questionText in the order the paper prints them."
- },
- {
-  "id": "agsci-2025-hl-q2bii",
-  "topicId": "agsci-4-3-2",
-  "conceptId": "beef-cross-sire-selection",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 HL Q2(b)(ii)",
-  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024)",
-  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows. Meat quality / Good growth rates / Ease of calving / Docility / Fertility",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "1+1"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "First characteristic described — Meat quality: Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)",
-    "marks": 1,
-    "accepts": [
-     "many cows go into calf to beef system so improved beef traits",
-     "Good growth rates: Will influence when an animal gets to slaughter and kill out weight (fast maturing)",
-     "Ease of calving: Reduced risk of complications",
-     "better suited for crossing with dairy cows rather than bigger continental breeds",
-     "Docility: Animals with good temperament are easier to handle",
-     "less risk of injury",
-     "Fertility: greater number of calves over lifetime of bull"
-    ]
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "Second characteristic described — Good growth rates: Will influence when an animal gets to slaughter and kill out weight (fast maturing)",
-    "marks": 1,
-    "accepts": [
-     "Meat quality: Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)",
-     "many cows go into calf to beef system so improved beef traits",
-     "Ease of calving: Reduced risk of complications",
-     "better suited for crossing with dairy cows rather than bigger continental breeds",
-     "Docility: Animals with good temperament are easier to handle",
-     "less risk of injury",
-     "Fertility: greater number of calves over lifetime of bull"
-    ]
-   }
-  ],
-  "notes": "Only 2 marks on this part (the scheme prints 1+1), so it is two rows of one, not five. The scheme lists all five characteristics; the student picks any two, so both rows carry the whole remaining pool in accepts. Within a characteristic the solidus separates alternative wordings of the SAME point (e.g. 'Reduced risk of complications / better suited for crossing with dairy cows rather than bigger continental breeds') and is not split into extra rows."
  },
  {
   "id": "agsci-2025-hl-q2biii",
@@ -10298,35 +10184,6 @@
   ],
   "notes": "Scheme states '1m for method, 1m for final answer, if answer is given and correct with no method award 2m'. Both the pre- and post-weaning lines are the one method mark, so they form a single row.",
   "figureKey": "agricultural-science-2025-HL-paper-p10-i0"
- },
- {
-  "id": "agsci-2025-hl-q6b",
-  "topicId": "agsci-4-3-3",
-  "conceptId": "lambing-equipment-use",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 HL Q6(b)",
-  "stem": "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing. In part (a) he identified three pieces of lambing equipment: a stomach tube, a heat lamp and ropes.",
-  "questionText": "Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Stomach tube: Tube is placed into stomach through oesophagus to deliver milk to stomach",
-    "marks": 4,
-    "accepts": [
-     "Heat lamp: The heat lamp is placed above the lamb",
-     "Ropes: Ropes are tied above the hooves of lambs to pull lamb during birth"
-    ]
-   }
-  ],
-  "notes": "Part (a) is image-based (six photographs, A-F) and is skipped; (b) carries its own 4-mark tariff and is answerable in words once the three items are named, so the stem names them (scheme: 'A: Stomach tube / C: heat lamp / D: ropes') without referring to photographs the card does not carry. Only one description is required, so this is one 4-mark row with the other two descriptions as accepts."
  },
  {
   "id": "agsci-2025-hl-q7a",
@@ -27087,63 +26944,6 @@
   "notes": "One comparison is asked for and 3 marks are printed against the whole entry, so this is one marking point stated two equivalent ways, not two points. The clay half is the row because the sand half is broken across the mark cell in the extracted markdown ('...or lower water | 3 | retention'); both halves are quoted in the contextNote."
  },
  {
-  "id": "agsci-2025-hl-q14bi",
-  "topicId": "agsci-1-2",
-  "conceptId": "capillarity-compacted-vs-uncompacted",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2025 HL Q14(b)(i)",
-  "stem": "Question 14, part (b). The question is set on soil compaction: the paper has already shown crop growth in compacted and uncompacted soil and a graph of water availability by soil type. Part (b) turns to an investigation you carry out yourself, so the labelled diagram is one you draw, not one printed on the paper.",
-  "questionText": "Compare, with the aid of a labelled diagram, the capillarity of a compacted and uncompacted soil. State the results of this investigation.",
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "answer": 4,
-   "ofParts": 5,
-   "perPart": 4,
-   "notation": "4x4"
-  },
-  "totalMarks": 16,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Put cotton wool or muslin cloth in open end of one tube (and place in retort stand)",
-    "marks": 4
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "obtain dry soil sample",
-    "marks": 4,
-    "contextNote": "The scheme's step reads in full 'obtain dry soil sample and compact one half of the sample' — compacting one half is the point of the comparison."
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "place equal amounts of compacted soil in open end of the tubes and uncompacted soil in the other open-ended tube",
-    "marks": 4
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "place both tubes in equal amounts of water",
-    "marks": 4
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "measure or observe the level of water in each tube",
-    "marks": 4,
-    "openList": true,
-    "contextNote": "The scheme's pool also carries 'leave for a suitable valid time' and closes with 'other valid method', so a sound step of your own that is not printed here still scores."
-   }
-  ],
-  "notes": "The paper prints 17 for this part: 4x4 for the method plus one mark for stating the result. The result entry reads '*Result: valid result for investigation described' — a tariff with no answer in it, which cannot be a row, so the card covers the 16 method marks and totalMarks is 16 rather than 17. Reviewer should note that gap. bestNofParts because the scheme lists more steps than the four that score. Row 2 stops at 'obtain dry soil sample' because the 4x4 mark cell is typeset inside that step in the extracted markdown; the full step is in its contextNote. 'leave for a suitable valid time' is left out of the rows as a time instruction rather than an answer.",
-  "figureKey": "agricultural-science-2025-hl-paper-p025-i0"
- },
- {
   "id": "agsci-2025-hl-q14bii",
   "topicId": "agsci-1-2",
   "conceptId": "capillarity-investigation-variables",
@@ -35129,70 +34929,6 @@
   "stem": "Single file race Round crowd pen Wrong way Right way Headgate Cattle see place to go"
  },
  {
-  "id": "agsci-2025-hl-q15b",
-  "topicId": "agsci-3-1",
-  "conceptId": "identifying-common-farm-weeds",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2025 HL Q15(b)",
-  "questionText": "Identify any three common plants found on Irish farms in the photographs below.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "3x1"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A: Cleavers",
-    "marks": 1,
-    "accepts": [
-     "D: Oilseed rape"
-    ],
-    "contextNote": "Four photographs lettered A to D: A narrow leaves in whorls up square stems, B open sky-blue daisy-like flowers, C small yellow five-petalled flowers among toothed silvery leaflets, D a field of tall yellow four-petalled flowers. Any three of the four score."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "B: Chicory",
-    "marks": 1,
-    "accepts": [
-     "D: Oilseed rape"
-    ]
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "C: Silverweed",
-    "marks": 1,
-    "accepts": [
-     "D: Oilseed rape"
-    ]
-   }
-  ],
-  "figureKey": "agricultural-science-2025-HL-paper-p30-art",
-  "labelKey": [
-   {
-    "letter": "A",
-    "meaning": "Cleavers",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "B",
-    "meaning": "Chicory",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "C",
-    "meaning": "Silverweed",
-    "askedInThisQuestion": true
-   }
-  ]
- },
- {
   "id": "agsci-2025-hl-q1a",
   "topicId": "agsci-4-2",
   "conceptId": "identifying-cattle-breeds",
@@ -35316,145 +35052,6 @@
    }
   ],
   "stem": "The graph shows water availability in different soil types. Analyse the graph and answer the questions that follow. (ii) Calculate the % available water in a silt loam soil. Sand Sandy loam Loam Silt loam Clay loam Clay Smaller pore size More porosity Greater pore size Less porosity"
- },
- {
-  "id": "agsci-2025-hl-q12a",
-  "topicId": "agsci-4-3-2",
-  "conceptId": "why-progeny-test-dairy-cows",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 HL Q12(a)",
-  "questionText": "Progeny testing in dairy cows.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2(4) + 2(1)"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring",
-    "marks": 2
-   }
-  ],
-  "stem": "Outline one scientific reason for any four of the following:",
-  "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
- },
- {
-  "id": "agsci-2025-hl-q12b",
-  "topicId": "agsci-3-3-1",
-  "conceptId": "why-buffer-zones-beside-waterways",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 HL Q12(b)",
-  "questionText": "Having a buffer zone close to a waterway.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2(4) + 2(1)"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Reduce run off or prevent eutrophication",
-    "marks": 2,
-    "accepts": [
-     "reduce sediment in rivers",
-     "increased bank stability",
-     "increased biodiversity"
-    ]
-   }
-  ],
-  "stem": "Outline one scientific reason for any four of the following:",
-  "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
- },
- {
-  "id": "agsci-2025-hl-q12c",
-  "topicId": "agsci-3-1",
-  "conceptId": "why-chloroplasts-sit-in-the-palisade-layer",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 HL Q12(c)",
-  "questionText": "Presence of chloroplasts in the palisade layer of a leaf.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2(4) + 2(1)"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Close to surface to maximise photosynthesis",
-    "marks": 2
-   }
-  ],
-  "stem": "Outline one scientific reason for any four of the following:",
-  "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
- },
- {
-  "id": "agsci-2025-hl-q12d",
-  "topicId": "agsci-4-3-1",
-  "conceptId": "why-cull-breeding-ewes",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 HL Q12(d)",
-  "questionText": "Culling of breeding ewes on a sheep farm.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2(4) + 2(1)"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)",
-    "marks": 2
-   }
-  ],
-  "stem": "Outline one scientific reason for any four of the following:",
-  "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
- },
- {
-  "id": "agsci-2025-hl-q12e",
-  "topicId": "agsci-3-1",
-  "conceptId": "why-water-moves-through-the-plant",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 HL Q12(e)",
-  "questionText": "Movement of water from the soil through the plant to the atmosphere.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2(4) + 2(1)"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "To transport minerals",
-    "marks": 2,
-    "accepts": [
-     "to provide water for photosynthesis",
-     "to cool the plant"
-    ]
-   }
-  ],
-  "stem": "Additional writing space for Section A. Label all work clearly with the question number and part. Section B 200 marks Each question carries 50 marks.",
-  "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
  },
  {
   "id": "agsci-2025-ol-q9bii",
@@ -75226,6 +74823,2576 @@
     "letter": "D",
     "meaning": "connective tissue septum",
     "askedInThisQuestion": true
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q1b",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q1(b)",
+  "topicId": "agsci-4-2",
+  "curriculumNodeIds": [
+   "agsci-4-2",
+   "agsci-4-3-2"
+  ],
+  "conceptId": "polled-breed",
+  "questionText": "State which breed A or B has a dominant polled trait as a characteristic of the breed.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A or Aberdeen Angus",
+    "marks": 2,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q1(b)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-2"
+  ],
+  "stem": "Photographs A and B show two cattle breeds (part (a): identify both cattle breeds in A and B).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2a",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(a) — Annual, Biennial",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2",
+   "agsci-3-1"
+  ],
+  "conceptId": "plant-lifecycles",
+  "questionText": "Explain any two plant lifecycles and provide an example of each one.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Completes its life cycle in one year",
+    "marks": 3,
+    "contextNote": "Annual: explanation.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "wheat",
+    "marks": 2,
+    "contextNote": "Example of a annual plant. (Any other valid example of a plant)",
+    "openList": true,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Completes its life cycle in two years",
+    "marks": 3,
+    "contextNote": "Biennial: explanation.",
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "carrot",
+    "marks": 2,
+    "contextNote": "Example of a biennial plant. (Any other valid example of a plant)",
+    "openList": true,
+    "id": "r-4"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(a) — Annual, Biennial",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-1"
+  ],
+  "stem": "Plant lifecycles can be distinguished as annual, biennial and perennial. Practice choice: Annual, Biennial.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2a-route-annual-perennial",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(a) — Annual, Perennial",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2",
+   "agsci-3-1"
+  ],
+  "conceptId": "plant-lifecycles",
+  "questionText": "Explain any two plant lifecycles and provide an example of each one.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Completes its life cycle in one year",
+    "marks": 3,
+    "contextNote": "Annual: explanation.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "wheat",
+    "marks": 2,
+    "contextNote": "Example of a annual plant. (Any other valid example of a plant)",
+    "openList": true,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Flower and reproduce for multiple years",
+    "marks": 3,
+    "contextNote": "Perennial: explanation.",
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "perennial ryegrass",
+    "marks": 2,
+    "contextNote": "Example of a perennial plant. (Any other valid example of a plant)",
+    "openList": true,
+    "id": "r-4"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(a) — Annual, Perennial",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-1"
+  ],
+  "stem": "Plant lifecycles can be distinguished as annual, biennial and perennial. Practice choice: Annual, Perennial.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2a-route-biennial-perennial",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(a) — Biennial, Perennial",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2",
+   "agsci-3-1"
+  ],
+  "conceptId": "plant-lifecycles",
+  "questionText": "Explain any two plant lifecycles and provide an example of each one.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Completes its life cycle in two years",
+    "marks": 3,
+    "contextNote": "Biennial: explanation.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "carrot",
+    "marks": 2,
+    "contextNote": "Example of a biennial plant. (Any other valid example of a plant)",
+    "openList": true,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Flower and reproduce for multiple years",
+    "marks": 3,
+    "contextNote": "Perennial: explanation.",
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "perennial ryegrass",
+    "marks": 2,
+    "contextNote": "Example of a perennial plant. (Any other valid example of a plant)",
+    "openList": true,
+    "id": "r-4"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(a) — Biennial, Perennial",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-1"
+  ],
+  "stem": "Plant lifecycles can be distinguished as annual, biennial and perennial. Practice choice: Biennial, Perennial.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2bii",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii) — Meat quality, Good growth rates",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "beef-cross-sire-selection",
+  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers) / many cows go into calf to beef system so improved beef traits",
+    "marks": 1,
+    "contextNote": "Meat quality: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)",
+      "many cows go into calf to beef system so improved beef traits"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Will influence when an animal gets to slaughter and kill out weight (fast maturing)",
+    "marks": 1,
+    "contextNote": "Good growth rates: description.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Meat quality, Good growth rates",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Meat quality, Good growth rates.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2bii-route-meat-quality-ease-of-calving",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii) — Meat quality, Ease of calving",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "beef-cross-sire-selection",
+  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers) / many cows go into calf to beef system so improved beef traits",
+    "marks": 1,
+    "contextNote": "Meat quality: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)",
+      "many cows go into calf to beef system so improved beef traits"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Reduced risk of complications / better suited for crossing with dairy cows rather than bigger continental breeds",
+    "marks": 1,
+    "contextNote": "Ease of calving: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Reduced risk of complications",
+      "better suited for crossing with dairy cows rather than bigger continental breeds"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Meat quality, Ease of calving",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Meat quality, Ease of calving.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2bii-route-meat-quality-docility",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii) — Meat quality, Docility",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "beef-cross-sire-selection",
+  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers) / many cows go into calf to beef system so improved beef traits",
+    "marks": 1,
+    "contextNote": "Meat quality: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)",
+      "many cows go into calf to beef system so improved beef traits"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Animals with good temperament are easier to handle / less risk of injury",
+    "marks": 1,
+    "contextNote": "Docility: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Animals with good temperament are easier to handle",
+      "less risk of injury"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Meat quality, Docility",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Meat quality, Docility.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2bii-route-meat-quality-fertility",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii) — Meat quality, Fertility",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "beef-cross-sire-selection",
+  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers) / many cows go into calf to beef system so improved beef traits",
+    "marks": 1,
+    "contextNote": "Meat quality: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)",
+      "many cows go into calf to beef system so improved beef traits"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "greater number of calves over lifetime of bull",
+    "marks": 1,
+    "contextNote": "Fertility: description.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Meat quality, Fertility",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Meat quality, Fertility.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2bii-route-good-growth-rates-ease-of-calving",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii) — Good growth rates, Ease of calving",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "beef-cross-sire-selection",
+  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Will influence when an animal gets to slaughter and kill out weight (fast maturing)",
+    "marks": 1,
+    "contextNote": "Good growth rates: description.",
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Reduced risk of complications / better suited for crossing with dairy cows rather than bigger continental breeds",
+    "marks": 1,
+    "contextNote": "Ease of calving: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Reduced risk of complications",
+      "better suited for crossing with dairy cows rather than bigger continental breeds"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Good growth rates, Ease of calving",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Good growth rates, Ease of calving.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2bii-route-good-growth-rates-docility",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii) — Good growth rates, Docility",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "beef-cross-sire-selection",
+  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Will influence when an animal gets to slaughter and kill out weight (fast maturing)",
+    "marks": 1,
+    "contextNote": "Good growth rates: description.",
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Animals with good temperament are easier to handle / less risk of injury",
+    "marks": 1,
+    "contextNote": "Docility: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Animals with good temperament are easier to handle",
+      "less risk of injury"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Good growth rates, Docility",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Good growth rates, Docility.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2bii-route-good-growth-rates-fertility",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii) — Good growth rates, Fertility",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "beef-cross-sire-selection",
+  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Will influence when an animal gets to slaughter and kill out weight (fast maturing)",
+    "marks": 1,
+    "contextNote": "Good growth rates: description.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "greater number of calves over lifetime of bull",
+    "marks": 1,
+    "contextNote": "Fertility: description.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Good growth rates, Fertility",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Good growth rates, Fertility.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2bii-route-ease-of-calving-docility",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii) — Ease of calving, Docility",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "beef-cross-sire-selection",
+  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Reduced risk of complications / better suited for crossing with dairy cows rather than bigger continental breeds",
+    "marks": 1,
+    "contextNote": "Ease of calving: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Reduced risk of complications",
+      "better suited for crossing with dairy cows rather than bigger continental breeds"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Animals with good temperament are easier to handle / less risk of injury",
+    "marks": 1,
+    "contextNote": "Docility: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Animals with good temperament are easier to handle",
+      "less risk of injury"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Ease of calving, Docility",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Ease of calving, Docility.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2bii-route-ease-of-calving-fertility",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii) — Ease of calving, Fertility",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "beef-cross-sire-selection",
+  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Reduced risk of complications / better suited for crossing with dairy cows rather than bigger continental breeds",
+    "marks": 1,
+    "contextNote": "Ease of calving: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Reduced risk of complications",
+      "better suited for crossing with dairy cows rather than bigger continental breeds"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "greater number of calves over lifetime of bull",
+    "marks": 1,
+    "contextNote": "Fertility: description.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Ease of calving, Fertility",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Ease of calving, Fertility.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q2bii-route-docility-fertility",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii) — Docility, Fertility",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "beef-cross-sire-selection",
+  "questionText": "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Animals with good temperament are easier to handle / less risk of injury",
+    "marks": 1,
+    "contextNote": "Docility: one description.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Animals with good temperament are easier to handle",
+      "less risk of injury"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "greater number of calves over lifetime of bull",
+    "marks": 1,
+    "contextNote": "Fertility: description.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Docility, Fertility",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Docility, Fertility.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q3aii",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q3(a)(ii)",
+  "topicId": "agsci-4-3-1",
+  "curriculumNodeIds": [
+   "agsci-4-3-1",
+   "agsci-2-3"
+  ],
+  "conceptId": "technology-environmental-sustainability",
+  "questionText": "In relation to environmental sustainability, briefly describe the advantages of one other named piece of farm technology you have studied.",
+  "rows": [
+   {
+    "kind": "criterion",
+    "verbatim": "Two points on any named valid piece of technology relating to environmental sustainability",
+    "marks": null,
+    "contextNote": "The scheme prints 3+1: the first valid advantage earns 3 marks and the second 1. The technology is the student’s own choice.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q3(a)(ii)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-2-3"
+  ],
+  "stem": "Cow brushes on dairy farms are becoming increasingly popular.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q6a",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q6(a)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agsci-4-3-3",
+   "agsci-4-2"
+  ],
+  "conceptId": "lambing-equipment-identification",
+  "questionText": "Identify the three pieces of equipment needed for lambing from the six images below.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Stomach tube / heat lamp / ropes",
+    "marks": 3,
+    "contextNote": "Names: one mark for each correct piece of equipment named.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Stomach tube",
+      "heat lamp",
+      "ropes"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "A: Stomach tube / C: heat lamp / D: ropes",
+    "marks": 3,
+    "contextNote": "Identified: one mark for each correct photograph matched to its equipment. The scheme prints 3x1 (names) and 3x1 (identified).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "A: Stomach tube",
+      "C: heat lamp",
+      "D: ropes"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q6(a)",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-2"
+  ],
+  "stem": "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q6b",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q6(b) — Stomach tube",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agsci-4-3-3"
+  ],
+  "conceptId": "lambing-equipment-use",
+  "questionText": "Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Tube is placed into stomach through oesophagus to deliver milk to stomach",
+    "marks": 4,
+    "contextNote": "Stomach tube.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q6(b) — Stomach tube",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing. Part (a): the three pieces of lambing equipment are a stomach tube, a heat lamp and ropes. Practice choice: Stomach tube.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q6b-route-heat-lamp",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q6(b) — Heat lamp",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agsci-4-3-3"
+  ],
+  "conceptId": "lambing-equipment-use",
+  "questionText": "Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "The heat lamp is placed above the lamb",
+    "marks": 4,
+    "contextNote": "Heat lamp.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q6(b) — Heat lamp",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing. Part (a): the three pieces of lambing equipment are a stomach tube, a heat lamp and ropes. Practice choice: Heat lamp.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q6b-route-ropes",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q6(b) — Ropes",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agsci-4-3-3"
+  ],
+  "conceptId": "lambing-equipment-use",
+  "questionText": "Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Ropes are tied above the hooves of lambs to pull lamb during birth",
+    "marks": 4,
+    "contextNote": "Ropes.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q6(b) — Ropes",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing. Part (a): the three pieces of lambing equipment are a stomach tube, a heat lamp and ropes. Practice choice: Ropes.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q7b-route-water-retention",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q7(b) — Water retention",
+  "topicId": "agsci-2-2-3",
+  "curriculumNodeIds": [
+   "agsci-2-2-3",
+   "agsci-3-3-2"
+  ],
+  "conceptId": "soil-microbiome-processes",
+  "questionText": "Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "(Mycorrhizal fungi) increase area for water absorption / (bacteria and fungi) break down OM to humus which increase water retention / improves soil structure",
+    "marks": 4,
+    "contextNote": "Water retention: contribution of the soil microbiome.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "(Mycorrhizal fungi) increase area for water absorption",
+      "(bacteria and fungi) break down OM to humus which increase water retention",
+      "improves soil structure"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Increased water availability to the crop / reduces effects of drought",
+    "marks": 1,
+    "contextNote": "Benefit to productivity in a named catch or energy crop. The scheme prints 4+1.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Increased water availability to the crop",
+      "reduces effects of drought"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q7(b) — Water retention",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-3-2"
+  ],
+  "stem": "The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion. Practice choice: Water retention.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q7b-route-plant-carbon-sink",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q7(b) — Plant carbon sink",
+  "topicId": "agsci-2-2-3",
+  "curriculumNodeIds": [
+   "agsci-2-2-3",
+   "agsci-3-3-2"
+  ],
+  "conceptId": "soil-microbiome-processes",
+  "questionText": "Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Micro-organisms feed on OM and allow for nutrient recycling (store carbon) in soil (biomass or humus)",
+    "marks": 4,
+    "contextNote": "Plant carbon sink: contribution of the soil microbiome.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Greater nutrient availability for crop growth",
+    "marks": 1,
+    "contextNote": "Benefit to productivity in a named catch or energy crop. The scheme prints 4+1.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q7(b) — Plant carbon sink",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-3-2"
+  ],
+  "stem": "The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion. Practice choice: Plant carbon sink.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q7b-route-carbon-sequestration",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q7(b) — Carbon sequestration",
+  "topicId": "agsci-2-2-3",
+  "curriculumNodeIds": [
+   "agsci-2-2-3",
+   "agsci-3-3-2"
+  ],
+  "conceptId": "soil-microbiome-processes",
+  "questionText": "Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Decomposition of OM to humus for carbon storage in soil",
+    "marks": 4,
+    "contextNote": "Carbon sequestration: contribution of the soil microbiome.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Improved soil structure for crop growth or greater nutrient availability for crop growth",
+    "marks": 1,
+    "contextNote": "Benefit to productivity in a named catch or energy crop. The scheme prints 4+1.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q7(b) — Carbon sequestration",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-3-2"
+  ],
+  "stem": "The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion. Practice choice: Carbon sequestration.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q7b-route-plant-growth-promotion",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q7(b) — Plant growth promotion",
+  "topicId": "agsci-2-2-3",
+  "curriculumNodeIds": [
+   "agsci-2-2-3",
+   "agsci-3-3-2"
+  ],
+  "conceptId": "soil-microbiome-processes",
+  "questionText": "Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Symbiotic relationship (between plants and mycorrhizal fungi/bacteria) fixes nitrogen or makes phosphate available / mycorrhizal fungi produce growth hormones",
+    "marks": 4,
+    "contextNote": "Plant growth promotion: contribution of the soil microbiome.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Symbiotic relationship (between plants and mycorrhizal fungi/bacteria) fixes nitrogen or makes phosphate available",
+      "mycorrhizal fungi produce growth hormones"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Improved nutrient availability leading to improved yield / improved yield due to growth hormones",
+    "marks": 1,
+    "contextNote": "Benefit to productivity in a named catch or energy crop. The scheme prints 4+1.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Improved nutrient availability leading to improved yield",
+      "improved yield due to growth hormones"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q7(b) — Plant growth promotion",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-3-2"
+  ],
+  "stem": "The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion. Practice choice: Plant growth promotion.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q12a",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q12 — a, b, c, d",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-2-3",
+   "agsci-3-1",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "scientific-reasons-abcd",
+  "questionText": "Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring / Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity / Close to surface to maximise photosynthesis / Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)",
+    "marks": 10,
+    "contextNote": "One reason for each of your four prompts, in order: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring",
+      "Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity",
+      "Close to surface to maximise photosynthesis",
+      "Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      1,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q12 — a, b, c, d",
+   "pages": [
+    18
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-2-3",
+   "agsci-3-1",
+   "agsci-4-3-1"
+  ],
+  "stem": "Practice choice: (a), (b), (c), (d).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q12b",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q12 — b, c, d, e",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agsci-2-3",
+   "agsci-3-1",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "scientific-reasons-bcde",
+  "questionText": "Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity / Close to surface to maximise photosynthesis / Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding) / To transport minerals / to provide water for photosynthesis / to cool the plant",
+    "marks": 10,
+    "contextNote": "One reason for each of your four prompts, in order: (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity",
+      "Close to surface to maximise photosynthesis",
+      "Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)",
+      "To transport minerals / to provide water for photosynthesis / to cool the plant"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      1,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q12 — b, c, d, e",
+   "pages": [
+    18
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-1",
+   "agsci-4-3-1"
+  ],
+  "stem": "Practice choice: (b), (c), (d), (e).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q12c",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q12 — a, c, d, e",
+  "topicId": "agsci-3-1",
+  "curriculumNodeIds": [
+   "agsci-3-1",
+   "agsci-4-3-1",
+   "agsci-4-3-2"
+  ],
+  "conceptId": "scientific-reasons-acde",
+  "questionText": "Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring / Close to surface to maximise photosynthesis / Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding) / To transport minerals / to provide water for photosynthesis / to cool the plant",
+    "marks": 10,
+    "contextNote": "One reason for each of your four prompts, in order: (a) Progeny testing in dairy cows. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring",
+      "Close to surface to maximise photosynthesis",
+      "Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)",
+      "To transport minerals / to provide water for photosynthesis / to cool the plant"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      1,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q12 — a, c, d, e",
+   "pages": [
+    18
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1",
+   "agsci-4-3-2"
+  ],
+  "stem": "Practice choice: (a), (c), (d), (e).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q12d",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q12 — a, b, d, e",
+  "topicId": "agsci-4-3-1",
+  "curriculumNodeIds": [
+   "agsci-4-3-1",
+   "agsci-3-1",
+   "agsci-4-3-2",
+   "agsci-2-3"
+  ],
+  "conceptId": "scientific-reasons-abde",
+  "questionText": "Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring / Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity / Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding) / To transport minerals / to provide water for photosynthesis / to cool the plant",
+    "marks": 10,
+    "contextNote": "One reason for each of your four prompts, in order: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring",
+      "Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity",
+      "Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)",
+      "To transport minerals / to provide water for photosynthesis / to cool the plant"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      1,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q12 — a, b, d, e",
+   "pages": [
+    18
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-1",
+   "agsci-4-3-2",
+   "agsci-2-3"
+  ],
+  "stem": "Practice choice: (a), (b), (d), (e).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q12e",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2025 HL Q12 — a, b, c, e",
+  "topicId": "agsci-3-1",
+  "curriculumNodeIds": [
+   "agsci-3-1",
+   "agsci-4-3-2",
+   "agsci-2-3"
+  ],
+  "conceptId": "scientific-reasons-abce",
+  "questionText": "Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring / Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity / Close to surface to maximise photosynthesis / To transport minerals / to provide water for photosynthesis / to cool the plant",
+    "marks": 10,
+    "contextNote": "One reason for each of your four prompts, in order: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (e) Movement of water from the soil through the plant to the atmosphere. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring",
+      "Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity",
+      "Close to surface to maximise photosynthesis",
+      "To transport minerals / to provide water for photosynthesis / to cool the plant"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      1,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q12 — a, b, c, e",
+   "pages": [
+    18
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-2",
+   "agsci-2-3"
+  ],
+  "stem": "Practice choice: (a), (b), (c), (e).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q14bi",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2025 HL Q14(b)(i)",
+  "topicId": "agsci-1-2",
+  "curriculumNodeIds": [
+   "agsci-1-2",
+   "agsci-2-2-2"
+  ],
+  "conceptId": "capillarity-compacted-vs-uncompacted",
+  "questionText": "Compare, with the aid of a labelled diagram, the capillarity of a compacted and uncompacted soil. State the results of this investigation.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Put cotton wool or muslin cloth in open end of one tube (and place in retort stand) / obtain dry soil sample and compact one half of the sample / place equal amounts of compacted soil in open end of the tubes and uncompacted soil in the other open-ended tube / place both tubes in equal amounts of water / leave for a suitable valid time / measure or observe the level of water in each tube / other valid method",
+    "marks": 16,
+    "contextNote": "Four method points from one coherent investigation, 4x4. The scheme prints 4x4 for four method points and a separate 1 mark for “*Result: valid result for investigation described”. This part totals 17, which Question 14 needs to total 50.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Put cotton wool or muslin cloth in open end of one tube (and place in retort stand)",
+      "obtain dry soil sample and compact one half of the sample",
+      "place equal amounts of compacted soil in open end of the tubes and uncompacted soil in the other open-ended tube",
+      "place both tubes in equal amounts of water",
+      "leave for a suitable valid time",
+      "measure or observe the level of water in each tube",
+      "other valid method"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "criterion",
+    "verbatim": "*Result: valid result for investigation described",
+    "marks": 1,
+    "contextNote": "Result (compulsory, *): 1 mark.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 17,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q14(b)(i)",
+   "pages": [
+    26
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-2-2-2"
+  ],
+  "stem": "The picture shows crop growth in compacted and uncompacted soil. Part (b) is an investigation you carry out yourself; the labelled diagram is one you draw.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q15b",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2025 HL Q15(b) — A, B, C",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2",
+   "agsci-3-1"
+  ],
+  "conceptId": "identifying-common-farm-weeds",
+  "questionText": "Identify any three common plants found on Irish farms in the photographs below.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A: Cleavers",
+    "marks": 1,
+    "contextNote": "Photograph A.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "B: Chicory",
+    "marks": 1,
+    "contextNote": "Photograph B.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "C: Silverweed",
+    "marks": 1,
+    "contextNote": "Photograph C.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q15(b) — A, B, C",
+   "pages": [
+    30
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-1"
+  ],
+  "stem": "Practice choice: photographs A, B, C.",
+  "figureKey": "agricultural-science-2025-HL-paper-p30-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cleavers",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Chicory",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Silverweed",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Oilseed rape",
+    "askedInThisQuestion": false
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q15b-route-abd",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2025 HL Q15(b) — A, B, D",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2",
+   "agsci-3-1"
+  ],
+  "conceptId": "identifying-common-farm-weeds",
+  "questionText": "Identify any three common plants found on Irish farms in the photographs below.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A: Cleavers",
+    "marks": 1,
+    "contextNote": "Photograph A.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "B: Chicory",
+    "marks": 1,
+    "contextNote": "Photograph B.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "D: Oilseed rape",
+    "marks": 1,
+    "contextNote": "Photograph D.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q15(b) — A, B, D",
+   "pages": [
+    30
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-1"
+  ],
+  "stem": "Practice choice: photographs A, B, D.",
+  "figureKey": "agricultural-science-2025-HL-paper-p30-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cleavers",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Chicory",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Silverweed",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Oilseed rape",
+    "askedInThisQuestion": true
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q15b-route-acd",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2025 HL Q15(b) — A, C, D",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2",
+   "agsci-3-1"
+  ],
+  "conceptId": "identifying-common-farm-weeds",
+  "questionText": "Identify any three common plants found on Irish farms in the photographs below.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A: Cleavers",
+    "marks": 1,
+    "contextNote": "Photograph A.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "C: Silverweed",
+    "marks": 1,
+    "contextNote": "Photograph C.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "D: Oilseed rape",
+    "marks": 1,
+    "contextNote": "Photograph D.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q15(b) — A, C, D",
+   "pages": [
+    30
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-1"
+  ],
+  "stem": "Practice choice: photographs A, C, D.",
+  "figureKey": "agricultural-science-2025-HL-paper-p30-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cleavers",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Chicory",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Silverweed",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Oilseed rape",
+    "askedInThisQuestion": true
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q15b-route-bcd",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2025 HL Q15(b) — B, C, D",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2",
+   "agsci-3-1"
+  ],
+  "conceptId": "identifying-common-farm-weeds",
+  "questionText": "Identify any three common plants found on Irish farms in the photographs below.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "B: Chicory",
+    "marks": 1,
+    "contextNote": "Photograph B.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "C: Silverweed",
+    "marks": 1,
+    "contextNote": "Photograph C.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "D: Oilseed rape",
+    "marks": 1,
+    "contextNote": "Photograph D.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q15(b) — B, C, D",
+   "pages": [
+    30
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-1"
+  ],
+  "stem": "Practice choice: photographs B, C, D.",
+  "figureKey": "agricultural-science-2025-HL-paper-p30-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cleavers",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Chicory",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Silverweed",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Oilseed rape",
+    "askedInThisQuestion": true
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-hl-q15c",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2025 HL Q15(c)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-3-2",
+   "agsci-1-5"
+  ],
+  "conceptId": "weed-control-advice",
+  "questionText": "You have been asked to address a group of tillage and dairy farmers on controlling weeds on their farms in order to maximise crop productivity. Using the diagram below, outline the advice you would give them under the following headings: types of weed control; negative effects of weed control on farms; safety considerations farmers need to consider when controlling weeds.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Crop rotation to reduce the build-up of weeds / correct seeding rate to increase competition / spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop / ensure the machines are cleaned between fields to reduce weed seeds being carried / valid named biological control e.g. dock beetle to control dock leaves / stubble cleaning – depth of cultivation to target specific weeds / any valid qualified description of a point from diagram",
+    "marks": 8,
+    "contextNote": "Types of weed control. Two points from this heading in this allocation. (One point under each heading and the fourth point from any heading). 4x4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Crop rotation to reduce the build-up of weeds",
+      "correct seeding rate to increase competition",
+      "spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop",
+      "ensure the machines are cleaned between fields to reduce weed seeds being carried",
+      "valid named biological control e.g. dock beetle to control dock leaves",
+      "stubble cleaning – depth of cultivation to target specific weeds",
+      "any valid qualified description of a point from diagram"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Herbicides can kill non-target plants / reduced biodiversity / residues from herbicides in human or animal food chain / chemical run off into waterways / herbicide resistance in weeds",
+    "marks": 4,
+    "contextNote": "Negative effects of weed control on farms.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Herbicides can kill non-target plants",
+      "reduced biodiversity",
+      "residues from herbicides in human or animal food chain",
+      "chemical run off into waterways",
+      "herbicide resistance in weeds"
+     ]
+    },
+    "id": "r-2"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Wear masks when spraying or wear gloves / take precaution when operating machinery / avoid drift / correct storage of chemicals",
+    "marks": 4,
+    "contextNote": "Safety considerations farmers need to take into account when controlling weeds.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Wear masks when spraying or wear gloves",
+      "take precaution when operating machinery",
+      "avoid drift",
+      "correct storage of chemicals"
+     ]
+    },
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Higher — Q15(c)",
+   "pages": [
+    30
+   ],
+   "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-1-5"
+  ],
+  "answerVariants": [
+   {
+    "id": "types",
+    "label": "Fourth point under: Types of weed control",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Crop rotation to reduce the build-up of weeds / correct seeding rate to increase competition / spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop / ensure the machines are cleaned between fields to reduce weed seeds being carried / valid named biological control e.g. dock beetle to control dock leaves / stubble cleaning – depth of cultivation to target specific weeds / any valid qualified description of a point from diagram",
+      "marks": 8,
+      "contextNote": "Types of weed control. Two points from this heading in this allocation. (One point under each heading and the fourth point from any heading). 4x4.",
+      "group": {
+       "claimMax": 2,
+       "perOption": 4,
+       "options": [
+        "Crop rotation to reduce the build-up of weeds",
+        "correct seeding rate to increase competition",
+        "spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop",
+        "ensure the machines are cleaned between fields to reduce weed seeds being carried",
+        "valid named biological control e.g. dock beetle to control dock leaves",
+        "stubble cleaning – depth of cultivation to target specific weeds",
+        "any valid qualified description of a point from diagram"
+       ]
+      },
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "Herbicides can kill non-target plants / reduced biodiversity / residues from herbicides in human or animal food chain / chemical run off into waterways / herbicide resistance in weeds",
+      "marks": 4,
+      "contextNote": "Negative effects of weed control on farms.",
+      "group": {
+       "claimMax": 1,
+       "perOption": 4,
+       "options": [
+        "Herbicides can kill non-target plants",
+        "reduced biodiversity",
+        "residues from herbicides in human or animal food chain",
+        "chemical run off into waterways",
+        "herbicide resistance in weeds"
+       ]
+      },
+      "id": "r-2"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "Wear masks when spraying or wear gloves / take precaution when operating machinery / avoid drift / correct storage of chemicals",
+      "marks": 4,
+      "contextNote": "Safety considerations farmers need to take into account when controlling weeds.",
+      "group": {
+       "claimMax": 1,
+       "perOption": 4,
+       "options": [
+        "Wear masks when spraying or wear gloves",
+        "take precaution when operating machinery",
+        "avoid drift",
+        "correct storage of chemicals"
+       ]
+      },
+      "id": "r-3"
+     }
+    ]
+   },
+   {
+    "id": "negative",
+    "label": "Fourth point under: Negative effects of weed control on farms",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Crop rotation to reduce the build-up of weeds / correct seeding rate to increase competition / spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop / ensure the machines are cleaned between fields to reduce weed seeds being carried / valid named biological control e.g. dock beetle to control dock leaves / stubble cleaning – depth of cultivation to target specific weeds / any valid qualified description of a point from diagram",
+      "marks": 4,
+      "contextNote": "Types of weed control. (One point under each heading and the fourth point from any heading). 4x4.",
+      "group": {
+       "claimMax": 1,
+       "perOption": 4,
+       "options": [
+        "Crop rotation to reduce the build-up of weeds",
+        "correct seeding rate to increase competition",
+        "spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop",
+        "ensure the machines are cleaned between fields to reduce weed seeds being carried",
+        "valid named biological control e.g. dock beetle to control dock leaves",
+        "stubble cleaning – depth of cultivation to target specific weeds",
+        "any valid qualified description of a point from diagram"
+       ]
+      },
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "Herbicides can kill non-target plants / reduced biodiversity / residues from herbicides in human or animal food chain / chemical run off into waterways / herbicide resistance in weeds",
+      "marks": 8,
+      "contextNote": "Negative effects of weed control on farms. Two points from this heading in this allocation.",
+      "group": {
+       "claimMax": 2,
+       "perOption": 4,
+       "options": [
+        "Herbicides can kill non-target plants",
+        "reduced biodiversity",
+        "residues from herbicides in human or animal food chain",
+        "chemical run off into waterways",
+        "herbicide resistance in weeds"
+       ]
+      },
+      "id": "r-2"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "Wear masks when spraying or wear gloves / take precaution when operating machinery / avoid drift / correct storage of chemicals",
+      "marks": 4,
+      "contextNote": "Safety considerations farmers need to take into account when controlling weeds.",
+      "group": {
+       "claimMax": 1,
+       "perOption": 4,
+       "options": [
+        "Wear masks when spraying or wear gloves",
+        "take precaution when operating machinery",
+        "avoid drift",
+        "correct storage of chemicals"
+       ]
+      },
+      "id": "r-3"
+     }
+    ]
+   },
+   {
+    "id": "safety",
+    "label": "Fourth point under: Safety considerations farmers need to take into account when controlling weeds",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Crop rotation to reduce the build-up of weeds / correct seeding rate to increase competition / spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop / ensure the machines are cleaned between fields to reduce weed seeds being carried / valid named biological control e.g. dock beetle to control dock leaves / stubble cleaning – depth of cultivation to target specific weeds / any valid qualified description of a point from diagram",
+      "marks": 4,
+      "contextNote": "Types of weed control. (One point under each heading and the fourth point from any heading). 4x4.",
+      "group": {
+       "claimMax": 1,
+       "perOption": 4,
+       "options": [
+        "Crop rotation to reduce the build-up of weeds",
+        "correct seeding rate to increase competition",
+        "spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop",
+        "ensure the machines are cleaned between fields to reduce weed seeds being carried",
+        "valid named biological control e.g. dock beetle to control dock leaves",
+        "stubble cleaning – depth of cultivation to target specific weeds",
+        "any valid qualified description of a point from diagram"
+       ]
+      },
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "Herbicides can kill non-target plants / reduced biodiversity / residues from herbicides in human or animal food chain / chemical run off into waterways / herbicide resistance in weeds",
+      "marks": 4,
+      "contextNote": "Negative effects of weed control on farms.",
+      "group": {
+       "claimMax": 1,
+       "perOption": 4,
+       "options": [
+        "Herbicides can kill non-target plants",
+        "reduced biodiversity",
+        "residues from herbicides in human or animal food chain",
+        "chemical run off into waterways",
+        "herbicide resistance in weeds"
+       ]
+      },
+      "id": "r-2"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "Wear masks when spraying or wear gloves / take precaution when operating machinery / avoid drift / correct storage of chemicals",
+      "marks": 8,
+      "contextNote": "Safety considerations farmers need to take into account when controlling weeds. Two points from this heading in this allocation.",
+      "group": {
+       "claimMax": 2,
+       "perOption": 4,
+       "options": [
+        "Wear masks when spraying or wear gloves",
+        "take precaution when operating machinery",
+        "avoid drift",
+        "correct storage of chemicals"
+       ]
+      },
+      "id": "r-3"
+     }
+    ]
    }
   ],
   "qa": {

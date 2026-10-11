@@ -436,10 +436,42 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(593);
+    expect(additions.size).toBe(617);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length).toBe(10_495);
+  });
+
+  it('keeps every Agricultural Science card corrected in place, each with its SEC evidence', () => {
+    // Corrected IDs are NOT additions: they stay inside the frozen 869-card
+    // identity hash above. Each is listed here with the reason it changed.
+    const corrected: Record<string, string> = {
+      'agsci-2025-ol-q8b': 'Symbols 2 and 3 marked 3+2 as a two-option group, not an all-or-nothing tick.',
+      'agsci-2025-hl-q2a': 'Any two of three printed lifecycles: first printed route (Annual, Biennial).',
+      'agsci-2025-hl-q2bii': 'Any two of five printed Wagyu characteristics: first printed route (Meat quality, Good growth rates).',
+      'agsci-2025-hl-q6b': 'Any one of three lambing tools: first printed route (Stomach tube).',
+      'agsci-2025-hl-q12a': 'Q12 is one any-four-of-five 2(4)+2(1) task: route (a)(b)(c)(d), 10 marks.',
+      'agsci-2025-hl-q12b': 'Q12 any-four-of-five: route (b)(c)(d)(e), 10 marks.',
+      'agsci-2025-hl-q12c': 'Q12 any-four-of-five: route (c)(d)(e)(a), 10 marks.',
+      'agsci-2025-hl-q12d': 'Q12 any-four-of-five: route (d)(e)(a)(b), 10 marks.',
+      'agsci-2025-hl-q12e': 'Q12 any-four-of-five: route (e)(a)(b)(c), 10 marks.',
+      'agsci-2025-hl-q14bi': 'Restores the published result mark: 4x4 + 1 = 17, so Question 14 totals 50.',
+      'agsci-2025-hl-q15b': 'Any three of four printed plants: first printed route (A, B, C).',
+    };
+    expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
+    const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
+    for (const id of Object.keys(corrected)) {
+      expect(live.has(id), id).toBe(true);
+      expect(additions.has(id), `${id} must stay a baseline identity`).toBe(false);
+    }
+    const records = (agriculturalReview as { corrections: Record<string, { reason: string; originalSha256: string }> }).corrections;
+    expect(Object.keys(records).sort()).toEqual(Object.keys(corrected).filter(id => id.startsWith('agsci-2025-hl-')).sort());
+    for (const record of Object.values(records)) {
+      expect(record.reason).toMatch(/Visually verified paper PDF page \d+/);
+      expect(record.originalSha256).toMatch(/^[0-9a-f]{64}$/);
+    }
+    expect(live.get('agsci-2025-hl-q14bi')?.totalMarks).toBe(17);
+    for (const key of ['a', 'b', 'c', 'd', 'e']) expect(live.get(`agsci-2025-hl-q12${key}`)?.totalMarks).toBe(10);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
