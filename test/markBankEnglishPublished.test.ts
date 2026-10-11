@@ -26,6 +26,9 @@ import {
 } from '../data/examTopics/registry';
 import { questionsForTopics } from '../components/PaperTrail/topics';
 import { PAPER_TRAIL_INDEX } from '../paperTrailData';
+import { HOSTED_ANSWER_OVERRIDES, preferredAnswersUrl } from '../components/PaperTrail/vaultResolve';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import {
   tariffReconciles,
   type PclmAssessment,
@@ -259,23 +262,33 @@ describe('English Topic Atlas parity for published papers', () => {
     expect(lost).toEqual([]);
   });
 
-  it('makes every published block browsable once its answer map is live', () => {
-    // The Atlas only lists a block whose sidecar anchor is live (index
-    // `answers: 1`); inventing rows would create dead jumps. 2026 OL Paper 2's
-    // sidecar is committed on this branch but not yet uploaded or indexed, so
-    // its 19 blocks are DECLARED pending here rather than hidden.
+  it('serves every published paper\'s reviewed answer map and lists every block', () => {
+    // Each published paper's reviewed sidecar is hosted byte-identically
+    // (public/paper-answers, HOSTED_ANSWER_OVERRIDES) and flagged live in the
+    // index, so its Atlas blocks resolve to the reviewed paper and scheme crops.
     const live = new Set(PAPER_TRAIL_INDEX.english.flatMap(entry => entry.papers
       .filter(item => item.answers === 1)
       .map(item => `${entry.year}|${entry.level}|${item.doc.f}`)));
+    const papers = [...new Set(RECORDS.map(record => `${record.year}|${record.level}|${record.atlas.fileid}`))];
+    expect(papers).toHaveLength(33);
+    for (const paper of papers) {
+      const [year, , fileid] = paper.split('|');
+      expect(live.has(paper), `${paper} answers flag`).toBe(true);
+      expect(HOSTED_ANSWER_OVERRIDES.has(`english|${year}|${fileid}`), `${paper} hosted`).toBe(true);
+      expect(preferredAnswersUrl('english', Number(year), fileid, 'storage'))
+        .toBe(`/paper-answers/${year}/${fileid}.json`);
+      const hosted = readFileSync(resolve(__dirname, `../public/paper-answers/${year}/${fileid}.json`), 'utf8');
+      const reviewed = readFileSync(resolve(__dirname, `../scripts/paper-trail/answers/${year}/${fileid}.json`), 'utf8');
+      expect(hosted, paper).toBe(reviewed);
+      const blocks = new Set((JSON.parse(hosted) as { q: Array<{ n: string }> }).q.map(question => question.n));
+      for (const record of RECORDS.filter(entry => `${entry.year}|${entry.level}|${entry.atlas.fileid}` === paper)) {
+        expect(blocks.has(record.atlas.n), `${record.id} block ${record.atlas.n}`).toBe(true);
+      }
+    }
     const browsable = new Set(questionsForTopics('english', null)
       .map(question => `${question.year}|${question.fileid}|${question.n}`));
-    const blocks = [...new Set(RECORDS.map(record =>
-      `${record.year}|${record.level}|${record.atlas.fileid}|${record.atlas.n}`))];
-    const pending = blocks.filter(key => !live.has(key.split('|').slice(0, 3).join('|')));
-    expect(pending).toEqual(Array.from({ length: 19 }, (_, index) => `2026|ordinary|LC002GLP200EV.pdf|${index + 1}`));
-    const absent = blocks.filter(key => !pending.includes(key))
-      .map(key => key.split('|'))
-      .filter(([year, , fileid, n]) => !browsable.has(`${year}|${fileid}|${n}`));
+    const absent = [...new Set(RECORDS.map(record => `${record.year}|${record.atlas.fileid}|${record.atlas.n}`))]
+      .filter(key => !browsable.has(key));
     expect(absent).toEqual([]);
   });
 });

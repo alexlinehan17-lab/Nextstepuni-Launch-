@@ -71,6 +71,44 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'art|2026|LC014ALP000IV.pdf',
   'art|2026|LC014GLP000EV.pdf',
   'art|2026|LC014GLP000IV.pdf',
+  // English: every paper whose own independent review gate passed is
+  // published to Mark Bank (scripts/markbank/authoring/english_publish.py) and
+  // linked in Topic Atlas by its reviewed sidecar block numbers. The Storage
+  // copies predate those reviews (Paper 1 maps hold 7 blocks, not 13; several
+  // Ordinary Paper 2 maps are absent), so serve the reviewed maps from Hosting.
+  'english|2010|LC002ALP100EV.pdf',
+  'english|2010|LC002ALP200EV.pdf',
+  'english|2010|LC002GLP100EV.pdf',
+  'english|2010|LC002GLP200EV.pdf',
+  'english|2011|LC002ALP100EV.pdf',
+  'english|2011|LC002ALP200EV.pdf',
+  'english|2011|LC002GLP100EV.pdf',
+  'english|2011|LC002GLP200EV.pdf',
+  'english|2012|LC002ALP100EV.pdf',
+  'english|2012|LC002ALP200EV.pdf',
+  'english|2012|LC002GLP100EV.pdf',
+  'english|2012|LC002GLP200EV.pdf',
+  'english|2013|LC002ALP100EV.pdf',
+  'english|2013|LC002ALP200EV.pdf',
+  'english|2013|LC002GLP100EV.pdf',
+  'english|2013|LC002GLP200EV.pdf',
+  'english|2014|LC002ALP100EV.pdf',
+  'english|2014|LC002ALP200EV.pdf',
+  'english|2014|LC002GLP100EV.pdf',
+  'english|2014|LC002GLP200EV.pdf',
+  'english|2015|LC002ALP100EV.pdf',
+  'english|2015|LC002ALP200EV.pdf',
+  'english|2015|LC002GLP100EV.pdf',
+  'english|2015|LC002GLP200EV.pdf',
+  'english|2016|LC002ALP100EV.pdf',
+  'english|2016|LC002GLP100EV.pdf',
+  'english|2018|LC002ALP100EV.pdf',
+  'english|2018|LC002ALP200EV.pdf',
+  'english|2018|LC002GLP100EV.pdf',
+  'english|2018|LC002GLP200EV.pdf',
+  'english|2026|LC002ALP100EV.pdf',
+  'english|2026|LC002ALP200EV.pdf',
+  'english|2026|LC002GLP200EV.pdf',
 ]);
 
 export const hostedAnswersUrl = (year: number, fileid: string) =>

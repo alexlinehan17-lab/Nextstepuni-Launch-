@@ -248,8 +248,25 @@ def locate_scheme_cards(cards, paper, scheme, year):
         # Visually checked against the official scheme. Lexical matching
         # selected later response paragraphs and omitted the opening tasks;
         # centred headings also evade the left-aligned header detector.
-        2013: {"Comparative A": (30, 0.8106)},
-        2018: {"Poetry C": (47, 0.0892)},
+        # 2013 Comparative B: the centred "B ASPECTS OF STORY" heading on PDF33
+        # (y 0.5867) precedes its choose-one list; lexical matching started at
+        # the list's last line (viewed 2026-10-11).
+        2013: {"Comparative A": (30, 0.8106), "Comparative B": (32, 0.5867)},
+        # 2014: "D TRANSLATONS" (sic) opens PDF18 and "A RELATIONSHIPS" sits
+        # low on PDF30; lexical matching started both at their (b) parts, so
+        # the preceding crops swallowed each (a) (viewed 2026-10-11).
+        # 2012: both comparative modes were started at their (b) parts; the
+        # centred "A"/"B" headings sit on PDF30 y 0.5922 and PDF32 y 0.418
+        # (viewed 2026-10-11).
+        2012: {"Comparative A": (29, 0.5922), "Comparative B": (31, 0.418)},
+        2014: {"Single Text D": (17, 0.086), "Comparative A": (29, 0.7079)},
+        # 2016: "A RELATIONSHIPS" sits at y 0.332 on PDF37; matching began at
+        # the (a)(ii) award and dropped (a)(i) (viewed 2026-10-11).
+        2016: {"Comparative A": (36, 0.332)},
+        # 2018: the centred "B SOCIAL SETTING" heading sits mid-page on PDF40,
+        # so the detector started Comparative B at its Q1(b) on PDF41 and
+        # Comparative A's crop swallowed B's Q1(a)(i)/(ii) (viewed 2026-10-11).
+        2018: {"Poetry C": (47, 0.0892), "Comparative B": (39, 0.4038)},
         2021: {"Single Text G": (37, 0.0888)},
         2023: {
             "Poetry A": (49, 0.5204),
@@ -309,6 +326,9 @@ def locate_scheme_cards(cards, paper, scheme, year):
             ))
         if not candidates:
             raise ValueError(f"{card.label}: no later scheme page")
+        # Reset per card: a manual point `continue`s before this line, and a
+        # stale list from an earlier card must never choose this card's page.
+        titled = []
         if card.kind == "unseen":
             forced = [row for row in candidates if row[5] == unseen_marker[0]]
             if not forced:
@@ -329,7 +349,7 @@ def locate_scheme_cards(cards, paper, scheme, year):
                 if card.kind == "single" else max(titled)
             _, prompt_score, anchor_score, _, _, best_page = selected
             min_prompt, min_anchor = 0.08, 0.03
-        else:
+        elif card.kind != "unseen":
             _, prompt_score, anchor_score, _, _, best_page = max(candidates)
             min_prompt = 0.10 if card.kind == "unseen" else 0.12
             min_anchor = 0.10 if card.kind == "unseen" else 0.25
