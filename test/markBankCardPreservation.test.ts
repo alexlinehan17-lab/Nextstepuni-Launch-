@@ -102,7 +102,12 @@ import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
 import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
 const decks = [
-  ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
+  /* 2026-10-11: biology higher 673 -> 861. The 2026 Higher sitting is added
+   * from a paper-by-paper review (bio_review_2026_hl.py): 184 tasks at the
+   * scheme's own mark boundaries, 188 cards once Q12(c)(ii) and (iii) are
+   * expanded into their three printed areas each. Nothing removed: the 673
+   * cards from 2021-2025 keep their identity hash, pinned below. */
+  ['biology:higher', BIO_HIGHER, 861, 'c05852c5659b8d0d88e873a68d0d907f4a35328a24259b2328db0f82e6434748'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
@@ -767,7 +772,8 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328);
+    // ...and the 2026 Higher Biology review: 19,328 + 188.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_516);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -825,7 +831,10 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
-      .reduce((total, [, cards]) => total + cards.length, 0);
+      // Biology's reviewed 2026 sittings are additions, counted by their own test.
+      .reduce((total, [name, cards]) => total + (name.startsWith('biology:')
+        ? cards.filter(card => card.year <= 2025).length
+        : cards.length), 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 
@@ -839,6 +848,17 @@ describe('Mark Bank card preservation', () => {
       .toBe('db478deb519637edeacce1fd96db3cf50e893e7cf1e8a72cc28c40694b0281ea');
     expect(identityHash(GEOGRAPHY_ORDINARY.filter(card => card.year <= 2025)))
       .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
+  });
+
+  it('adds the reviewed 2026 Biology sittings without replacing a prior card id', () => {
+    // Every 2021-2025 card keeps its identity; the 2026 cards are new ids.
+    expect(identityHash(BIO_HIGHER.filter(card => card.year <= 2025)))
+      .toBe('45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836');
+    expect(identityHash(BIO_ORDINARY.filter(card => card.year <= 2025)))
+      .toBe('5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e');
+    const added = BIO_HIGHER.filter(card => card.year === 2026);
+    expect(added).toHaveLength(188);
+    expect(added.every(card => card.id.startsWith('bio-2026-hl-'))).toBe(true);
   });
 
   it('adds the Art choose-two routes without replacing any existing card id', () => {

@@ -315,6 +315,15 @@ describe('no card can repeat the fabrication that shipped first time', () => {
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
       for (const row of card.rows) {
+        // A declared criterion row prices a judgement the scheme prints
+        // ("Safety precaution described"); it is exempt from the answer test
+        // but may never be a tariff written in place of the criterion.
+        if (row.kind === 'criterion') {
+          if (!row.verbatim.trim() || /\bmarks? each\b|^\s*any (one|two|three|four|five|\d+)\b[^.]*\bmarks?\b/i.test(row.verbatim)) {
+            bad.push(`${card.questionRef}: "${row.verbatim}"`);
+          }
+          continue;
+        }
         if (row.kind !== 'anyN' && isContentFreeRow(row.verbatim)) {
           bad.push(`${card.questionRef}: "${row.verbatim}"`);
         }

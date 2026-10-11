@@ -55,7 +55,14 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
 # mode + how a component code maps to a display name. Subjects not listed use
 # 'merged' with no component split.
 SUBJECTS = {
-    'biology': {'mode': 'merged'},
+    # Biology's carded corpus starts at 2021, the first sitting carded in
+    # 2026-08 and the scope of its committed coverage baseline. The papers
+    # folder also holds the 2010-2020 sittings, fetched for Paper Trail; read
+    # as a side effect they turned a 1,636-ask ledger into 4,677 asks with no
+    # card ever written against them (the trap recorded in
+    # markbank-card-text-corrections). The window is a DECISION, like DCG's:
+    # widen it when those sittings are audited, never by fetching.
+    'biology': {'mode': 'merged', 'from': 2021},
     'chemistry': {'mode': 'merged'},
     'physics': {'mode': 'merged'},
     'agricultural-science': {'mode': 'merged'},

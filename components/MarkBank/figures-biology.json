@@ -1,0 +1,515 @@
+{
+ "biology-2026-hl-q12-population-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q12-population-graph.png",
+  "md5": "f9c7e4a4d3901c78cd7815a6badb138d",
+  "alt": "Graph of Population against Time with two wavy lines. Solid line A rises and falls in two tall peaks; dashed line B, lower on the graph, rises and falls in smaller peaks that come a little after the peaks of A.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q12(b)(vi)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   402,
+   384,
+   542,
+   498
+  ]
+ },
+ "biology-2026-hl-q13a-scheme-nucleotide": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q13a-scheme-nucleotide.png",
+  "md5": "26b4d02d417cb4826d32168533b17a86",
+  "alt": "The scheme's model drawing of a DNA nucleotide: a circle labelled Phosphate joined to a pentagon labelled Deoxyribose, which is joined at another corner, at an angle, to a double ring of a hexagon and a pentagon labelled (Nitrogenous) base.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q13(a)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   258,
+   100,
+   508,
+   204
+  ],
+  "solution": true
+ },
+ "biology-2026-hl-q13b-ii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q13b-ii-scheme.png",
+  "md5": "a1ce6fa052ffc77f40008c6280f4bf4c",
+  "alt": "The scheme's accepted forms of the heterozygous female genotype: XXNn, XNXn, X with N and X with n written as subscripts, and X with N and X with n written as superscripts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q13(b)(ii)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   108,
+   324,
+   296,
+   344
+  ],
+  "solution": true
+ },
+ "biology-2026-hl-q13b-iii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q13b-iii-scheme.png",
+  "md5": "074b4b79fd003f3772055f7e345ef66b",
+  "alt": "The scheme's accepted forms of the colour-blind male genotype: XYn followed by a dash, XnY followed by a dash, and the same with n written as a subscript and as a superscript on the X.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q13(b)(iii)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   108,
+   364,
+   296,
+   384
+  ],
+  "solution": true
+ },
+ "biology-2026-hl-q13b-iv-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q13b-iv-scheme.png",
+  "md5": "6deaa73b270618c12a91d7db78b59589",
+  "alt": "The scheme's table of the four possible offspring: each row gives a genotype in four equivalent notations (letters in line, then as subscripts, then as superscripts on the X) worth 2 marks, and its matching phenotype worth 1 mark — female normal (colour vision), female colour-blind, male normal (colour vision), male colour-blind.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q13(b)(iv)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   104,
+   415,
+   490,
+   497
+  ],
+  "solution": true
+ },
+ "biology-2026-hl-q14-germinating-seed": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q14-germinating-seed.png",
+  "md5": "b79e3286d465ddf1191d99ace9ab379b",
+  "alt": "Photograph of a bean seed shortly after germination began. Arrow A points to the rounded seed itself; a curved shoot with a small pair of leaves grows up and to the right of it, labelled C; a long pale root with thin side branches grows downwards, labelled B.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q14(b)(v)1",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   426,
+   284,
+   550,
+   458
+  ],
+  "maskedFurniture": [
+   [
+    426,
+    430,
+    466,
+    458
+   ]
+  ]
+ },
+ "biology-2026-hl-q14-xylem-vessel": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q14-xylem-vessel.png",
+  "md5": "40d05b41b6c63e3e814e30c73d2b0ca0",
+  "alt": "Drawing of a single upright xylem vessel: a long tube with pitted, wavy side walls, open at the top, with water drawn as dots inside it and two upward arrows showing water moving up the vessel. A leader line labels Water.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q14(c)(i)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   420,
+   520,
+   546,
+   690
+  ]
+ },
+ "biology-2026-hl-q15-embryo-stages": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q15-embryo-stages.png",
+  "md5": "5c97a90d3a90d82aac11220a5ccf20b2",
+  "alt": "Three circles joined by arrows, left to right, showing early human embryo stages. A is a single cell with a membrane around it and two small round bodies inside; B is a solid ball of about a dozen cells; C is a hollow ball of many small cells with a cluster of cells at the top inside it.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q15(c)(i)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   134,
+   374,
+   512,
+   470
+  ]
+ },
+ "biology-2026-hl-q16-cell-division": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q16-cell-division.png",
+  "md5": "0680aa8f072c56f5fb8d5496e5d62ce0",
+  "alt": "Two boxed diagrams. Box A: a parent cell marked 2n divides into two daughter cells, each marked 2n. Box B: a parent cell marked 2n divides into four daughter cells, each also marked 2n. The scheme records that the labelling of Diagram B is an error.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q16(a)(i)1",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   110,
+   102,
+   512,
+   246
+  ]
+ },
+ "biology-2026-hl-q16-plant-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q16-plant-cells.png",
+  "md5": "f9e76c2e5053368ed4fd5d4be5a51d6d",
+  "alt": "Two plant cells side by side in rectangular containers. In solution A the cell contents have shrunk away from the cell wall into an irregular shape held by thin strands. In solution B the cell is full, with a large vacuole pressing the contents against the wall.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q16(c)(i)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   344,
+   52,
+   543,
+   202
+  ]
+ },
+ "biology-2026-hl-q16-virus": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q16-virus.png",
+  "md5": "89ae295bc0d3e60803bd947f9dff925a",
+  "alt": "Diagram 1: a round virus with spikes around its outer coat. Arrow X points to the tip of a spike on the outer coat; arrow Y points to a coiled strand inside the virus.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q16(b)(i)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   424,
+   444,
+   542,
+   570
+  ]
+ },
+ "biology-2026-hl-q16-virus-host": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q16-virus-host.png",
+  "md5": "19925958e76508e20ca969f1baeffe44",
+  "alt": "Diagram 2: a small round virus at the edge of a large host cell, with a short arrow pointing from the virus into the cell, which has a round nucleus drawn inside it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q16(b)(iii)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   424,
+   572,
+   542,
+   692
+  ]
+ },
+ "biology-2026-hl-q16-yeast": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q16-yeast.png",
+  "md5": "b45515b0e93d9e07d73b07f7228061cb",
+  "alt": "Diagram of a yeast cell with a small bud growing from its top: a dark nucleus stretches up into the bud, a large pale vacuole fills the lower half of the cell, and a few small striped organelles lie in the cytoplasm.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q16(d)(i)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   420,
+   400,
+   546,
+   610
+  ]
+ },
+ "biology-2026-hl-q17-capillary-network": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q17-capillary-network.png",
+  "md5": "860c625c76280e0a11b47616a0aa95e4",
+  "alt": "A capillary network between two vessels. Blood in enters a vessel on the left; X labels the small vessel branching into a mesh of fine capillaries among round cells; the capillaries rejoin into the small vessel labelled Y on the right, which leads to Blood out. An arrow along the bottom is labelled Blood flow, pointing left to right.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q17(a)(i)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   350,
+   82,
+   546,
+   252
+  ]
+ },
+ "biology-2026-hl-q17-nephron": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q17-nephron.png",
+  "md5": "6800900fea0a6979fcef3ba7a5cd37e5",
+  "alt": "Diagram of a nephron: a cup-shaped capsule holding a knot of capillaries at the top left, labelled A, leads into a coiled tubule, a long hairpin loop labelled B at the bottom, a second coiled tubule, and a collecting duct on the right.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q17(c)(iii)1",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   371,
+   172.5,
+   527,
+   338
+  ]
+ },
+ "biology-2026-hl-q17-skin": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q17-skin.png",
+  "md5": "3e8b0e9b6906d11cb05e55dd83c4bfea",
+  "alt": "Outline of a block of skin, labelled Skin: three roughly horizontal lines divide it into layers, with no glands, hairs or vessels drawn in.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q17(b)(i)1",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   336,
+   456,
+   546,
+   572
+  ]
+ },
+ "biology-2026-hl-q17-spinal-cord": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q17-spinal-cord.png",
+  "md5": "a9a4903f7facac4f89aab8fbef794298",
+  "alt": "Cross-section of the spinal cord: a pale outer region labelled P around a darker butterfly-shaped inner region labelled Q, with a tiny central canal labelled Central canal. Y labels the thin layered covering around the outside of the cord.",
+  "lettersVisible": [
+   "P",
+   "Q",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q17(d)(i)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   338,
+   452,
+   550,
+   606
+  ]
+ },
+ "biology-2026-hl-q2-cheek-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q2-cheek-cells.png",
+  "md5": "7a92208417fa8151c01429d357e165ad",
+  "alt": "Black-and-white light micrograph of two flattened human cheek cells lying side by side. Each is an irregular, many-sided cell with one dark oval nucleus near its centre; small dark specks are scattered over the cytoplasm.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q2(a)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: alamy.com",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   300,
+   76,
+   506,
+   244
+  ]
+ },
+ "biology-2026-hl-q3-breathing-system": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q3-breathing-system.png",
+  "md5": "791c48a41748545e713f31fdd56742da",
+  "alt": "Grey diagram of a human head in side section above a windpipe and two lungs. A leader line labelled Epiglottis points to the flap at the top of the windpipe; Trachea labels the ringed tube that runs down and branches into the lungs, the left-hand lung drawn solid and the right-hand lung showing branching airways. No diaphragm and no ribs are drawn.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q3(d)(i)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   196,
+   72,
+   404,
+   322
+  ]
+ },
+ "biology-2026-hl-q4-graphs": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q4-graphs.png",
+  "md5": "9aadfe1d556379ba02d73b9495e8ada8",
+  "alt": "Two line graphs side by side, each with Time on the horizontal axis. Graph 1, \"Concentration of gas X\", is a straight line rising steadily from a point part-way up the vertical axis. Graph 2, \"Size of openings P\", is a curve that starts high and falls, levelling off towards the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q4(c)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   128,
+   270,
+   412,
+   424
+  ]
+ },
+ "biology-2026-hl-q4-leaf-surface": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q4-leaf-surface.png",
+  "md5": "724df446cf08ee1a6a51ce2d5478aae5",
+  "alt": "Light micrograph of the undersurface of a leaf: long, wavy-walled cells packed in rows, with five small lens-shaped pores scattered among them. Each pore is bordered by two curved cells, which a leader line labels Guard cells. Two arrows labelled P point to pores; two arrows labelled Q point to the ordinary surface cells between them.",
+  "lettersVisible": [
+   "P",
+   "Q"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q4(a)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: alamy.com",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   316,
+   52,
+   541,
+   226
+  ],
+  "maskedFurniture": [
+   [
+    316,
+    118,
+    338,
+    226
+   ]
+  ]
+ },
+ "biology-2026-hl-q4d-scheme-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q4d-scheme-graph.png",
+  "md5": "b4bc0d382721346db3900e4166f9725f",
+  "alt": "The scheme's answer to Question 4(d): graph 2, Size of openings P against Time, with the printed falling curve continued by the examiner: it flattens at a low point and then rises again towards the top right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q4(d)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   96,
+   230,
+   330,
+   351.4
+  ],
+  "solution": true
+ },
+ "biology-2026-hl-q5-translation": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q5-translation.png",
+  "md5": "f3a5fe3fc0d06b5b2b84c9c454c58e0b",
+  "alt": "Diagram of translation: a large grey blob labelled Structure A sits on a horizontal strand labelled mRNA, whose bases read A U G, G A G, C U G, C U A, G U A, A C A. Clover-shaped molecules carrying small balls dock on the strand by matching three-base sequences (U A C, C U C, G A C, G A U); an arrow labelled B points to one of them. The balls joined in a chain above are labelled Growing amino acid sequence.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q5(c)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   288,
+   238,
+   545,
+   482
+  ]
+ },
+ "biology-2026-hl-q6-nitrogen-cycle": {
+  "src": "/exam-figures/biology/markbank/biology-2026-hl-q6-nitrogen-cycle.png",
+  "md5": "9c16b680d3ae165c3110ff5980b3b300",
+  "alt": "Flow diagram of the nitrogen cycle with boxes for Nitrogen gas, Nitrate, Plant biomolecules, Animal biomolecules, Urea, Molecule X and Molecule Y. A curved arrow A runs from Nitrogen gas to Nitrate. Nitrate leads to Plant biomolecules, and arrow B runs from Plant biomolecules to Animal biomolecules. Animal biomolecules, Urea and Plant biomolecules all lead to Molecule X; a curved arrow C runs from Molecule X up to Molecule Y and on, as C again, to Nitrate. No arrow leaves Nitrate or the molecules for Nitrogen gas.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q6(a)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   110,
+   140,
+   362,
+   330
+  ]
+ }
+}

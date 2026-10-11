@@ -1,0 +1,530 @@
+#!/usr/bin/env python3
+"""Build one reviewed Biology sitting into Mark Bank cards, or check it.
+
+    python3 scripts/markbank/authoring/bio_review.py 2026 hl           # check only
+    python3 scripts/markbank/authoring/bio_review.py 2026 hl --write   # write cards
+
+The ledger is bio_review_<year>_<level>.py. Everything a student reads as the
+SEC's words is lifted from the PDFs by bio_review_lib; this script assembles
+the cards, crops the figures, and refuses on any of:
+
+  * a source PDF whose bytes or page count differ from the ledger's pins;
+  * a selection directive on the question pages that the ledger has not
+    classified, or a classified one the paper no longer prints;
+  * a task whose rows do not add up to its total, a question or part whose
+    tasks do not add up to the printed total, or rows whose mark units do not
+    reproduce the scheme's own tick summary;
+  * a paper ask and its scheme reprint that do not share their wording;
+  * a census leaf (paper_census.py, an independent reader) no task claims, or a
+    task that resolves to no census leaf;
+  * a task filed under a topic the Topic Atlas does not give its question;
+  * a card id that existed before and is not produced again.
+
+With --write it replaces this sitting's cards in authored/biology.json (and
+only those), writes the figures into public/exam-figures/biology/markbank/
+and components/MarkBank/figures-biology.json, and records the review ledger
+in authored/biology-review-audit.json.
+"""
+import argparse
+import copy
+import hashlib
+import importlib
+import json
+import os
+import re
+import sys
+from collections import Counter, defaultdict
+
+import fitz
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import bio_review_lib as B  # noqa: E402
+import paper_census as PC  # noqa: E402
+
+ROOT = B.ROOT
+AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'biology.json')
+AUDIT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'biology-review-audit.json')
+FIG_DIR = os.path.join(ROOT, 'public', 'exam-figures', 'biology', 'markbank')
+FIG_MANIFEST = os.path.join(ROOT, 'components', 'MarkBank', 'figures-biology.json')
+ATLAS_MAP = os.path.join(ROOT, 'data', 'examTopics', 'biology-{year}-exam-topic-map.json')
+CROSSWALK = os.path.join(ROOT, 'data', 'examTopics', 'biology-curriculum-crosswalk.json')
+
+SCAN = re.compile(r'\b(any\s+(?:one|two|three|four|five|six)|either|choose|one of the following'
+                  r'|the following|or|both)\b', re.I)
+LABEL_SPLIT = re.compile(r'^([A-Z][A-Za-z ()-]{0,30}):\s+(\S.*)$')
+
+
+class Refusal(Exception):
+    pass
+
+
+def fail(problems):
+    if problems:
+        raise Refusal('\n'.join(f'  - {p}' for p in problems))
+
+
+def level_word(level):
+    return B.LEVEL_WORD[level]
+
+
+def booklet(sec):
+    return '038' if sec in ('A', 'B') else '040'
+
+
+# ------------------------------------------------------------------ lifting --
+
+class Lifter:
+    def __init__(self, ledger):
+        self.ledger = ledger
+        self.srcs = {}
+        problems = []
+        for key, pin in ledger.SOURCES.items():
+            path = os.path.join(ROOT, pin['path'])
+            if not os.path.exists(path):
+                problems.append(f'{key}: {pin["path"]} is missing')
+                continue
+            src = B.Src(path, key)
+            if src.sha != pin['sha256']:
+                problems.append(f'{key}: sha256 {src.sha} != pinned {pin["sha256"]}')
+            if src.pages != pin['pages']:
+                problems.append(f'{key}: {src.pages} pages != pinned {pin["pages"]}')
+            self.srcs[key] = src
+        fail(problems)
+        self.used = defaultdict(set)   # src -> pages lifted from
+
+    def lift(self, sel, task_doc, scheme_page=None, scheme_lo=None):
+        if sel.get('src') == 'marker':
+            doc = sel.get('doc') or task_doc
+            lines = self.srcs[doc].lines[sel['page']]
+            if not any(l == sel['text'] or l.startswith(sel['text'] + ' ') for l in lines):
+                raise LookupError(f'{doc} p{sel["page"]}: marker {sel["text"]!r} is not printed')
+            return sel['text'], {'page': sel['page'], 'starred': False, 'lines': None, 'doc': doc}
+        doc = (sel.get('doc') or task_doc) if sel.get('src') == 'paper' else 'scheme'
+        src = self.srcs[doc]
+        page = sel.get('page') or scheme_page
+        lo = scheme_lo if (doc == 'scheme' and page == scheme_page and scheme_lo
+                           and not sel.get('after')) else 0
+        text, meta = src.select(page, sel['start'], sel.get('end'), after=sel.get('after'),
+                                before=sel.get('before'), nth=sel.get('nth', 1), lo=lo,
+                                end_nth=sel.get('end_nth', 1))
+        self.used[doc].add(page)
+        return text, {**meta, 'doc': doc}
+
+
+def join(parts):
+    return B.join_lines(p for p in parts if p)
+
+
+def strip_stars(text):
+    return re.sub(r'\s+', ' ', text.replace('*', '')).strip()
+
+
+# ------------------------------------------------------------------- building --
+
+def build_row(lifter, spec, row_id, task_doc, sp, lo):
+    notes = []
+    if spec['type'] == 'pt':
+        text, meta = lifter.lift(spec['sel'], task_doc, sp, lo)
+        starred = meta['starred'] or text.startswith('*')
+        if spec.get('first_alt'):
+            text = text.split(' or ')[0]
+        text = strip_stars(text)
+        label = None
+        if spec.get('label'):
+            label, _ = lifter.lift(spec['label'], task_doc, sp, lo)
+            label = label.rstrip(':').strip()
+        else:
+            m = LABEL_SPLIT.match(text)
+            if m:
+                label, text = m.group(1), m.group(2)
+        kind = spec.get('kind')
+        if not kind:
+            kind = 'gate' if starred else ('alt' if ' or ' in text else 'point')
+        row = {'id': row_id, 'kind': kind,
+               'verbatim': f'{label} — {text}' if label else text,
+               'marks': spec['marks']}
+        if kind == 'gate':
+            row['exactTermRequired'] = True
+        if 'other correct' in text.lower():
+            row['openList'] = True
+        units = spec['units']
+        worth = spec['marks']
+    else:
+        options, starred_any = [], False
+        if spec.get('options'):
+            for o in spec['options']:
+                sel = o['sel'] if 'sel' in o else o
+                osel = dict(sel)
+                if isinstance(o, dict) and o.get('end_nth'):
+                    osel['end_nth'] = o['end_nth']
+                t, meta = lifter.lift(osel, task_doc, sp, lo)
+                starred_any |= meta['starred'] or '*' in t
+                if o.get('first_alt'):
+                    t = t.split(' or ')[0]
+                options.append(strip_stars(t))
+        else:
+            t, meta = lifter.lift(spec['sel'], task_doc, sp, lo)
+            starred_any |= '*' in t
+            options = [strip_stars(B.clean_option(x)) for x in t.split('/')]
+        open_list = any(o.lower() == 'other correct' for o in options)
+        options = [o for o in options if o and o.lower() != 'other correct']
+        if any('other correct' in o.lower() for o in options):
+            open_list = True
+        group = {'claimMax': spec['claim'], 'perOption': spec['per'], 'options': options}
+        if spec.get('steps'):
+            group['perOptionSteps'] = spec['steps']
+        row = {'id': row_id, 'kind': 'anyN', 'verbatim': ' / '.join(options), 'marks': None,
+               'group': group}
+        if open_list:
+            row['openList'] = True
+        units = spec['steps'] or [spec['per']] * spec['claim']
+        worth = sum(units)
+        if len(options) < spec['claim']:
+            raise Refusal(f'{row_id}: {len(options)} options for claim {spec["claim"]}')
+    if spec.get('note_sel'):
+        n, _ = lifter.lift(spec['note_sel'], task_doc, sp, lo)
+        notes.append(strip_stars(n))
+    if spec.get('note'):
+        notes.append(spec['note'])
+    if notes:
+        row['contextNote'] = ' '.join(notes)
+    return row, units, worth
+
+
+def build(ledger, year, level):
+    lifter = Lifter(ledger)
+    LT = B.LEVEL_TOKEN[level]
+    problems = []
+
+    # --- selection scan ---------------------------------------------------
+    found = []
+    for doc, pages in ledger.SCAN_PAGES.items():
+        for p in pages:
+            text = lifter.srcs[doc].page_text(p)
+            found += [(doc, p, m.group(0).lower()) for m in SCAN.finditer(text)]
+    pinned = [(d, p, w) for d, p, w, _ in ledger.SELECTION_SCAN]
+    if found != pinned:
+        a, b = Counter(found), Counter(pinned)
+        problems.append(f'selection scan drifted: unclassified {sorted((a - b).elements())}, '
+                        f'stale {sorted((b - a).elements())}')
+    fail(problems)
+
+    # --- tasks ------------------------------------------------------------
+    cards, audit_tasks = [], []
+    units_by = defaultdict(Counter)
+    totals_q, totals_part = defaultdict(int), defaultdict(int)
+    seen_ids = set()
+    for t in ledger.TASKS:
+        doc = booklet(t['sec'])
+        # The paper's own ask.
+        qsels = t['q'] if isinstance(t['q'], list) else [t['q']]
+        qparts, qmetas = [], []
+        for s in qsels:
+            txt, meta = lifter.lift(s, doc)
+            qparts.append(txt)
+            qmetas.append(meta)
+        qtext = join(qparts)
+        stem = join(lifter.lift(s, doc)[0] for s in t['stem'])
+        # The scheme's reprint: the pairing anchor and the scope of the rows.
+        sq = t['sq']
+        sq_text, sq_meta = lifter.srcs['scheme'].select(sq['page'], sq['start'], sq.get('end'),
+                                                         after=sq.get('after'), nth=sq.get('nth', 1))
+        lifter.used['scheme'].add(sq['page'])
+        lo = sq_meta['lines'][1] + 1
+        # Wording check: most of the scheme reprint's content words are in the ask
+        # (or its stem: the scheme often reprints the lead-in with the ask).
+        score = B.overlap(sq_text, qtext + ' ' + stem)
+        if score < 0.6:
+            problems.append(f'{t["key"]}: scheme reprint "{sq_text[:60]}" shares {score:.0%} of its '
+                            f'words with the paper ask "{qtext[:60]}"')
+        rows, task_units, worth = [], [], 0
+        for i, spec in enumerate(t['rows']):
+            try:
+                row, units, w = build_row(lifter, spec, f'r{i + 1}', doc, sq['page'], lo)
+            except (LookupError, Refusal) as e:
+                problems.append(f'{t["key"]} row {i + 1}: {e}')
+                continue
+            rows.append(row)
+            task_units += units
+            worth += w
+        if worth != t['total']:
+            problems.append(f'{t["key"]}: rows are worth {worth}, task total is {t["total"]}')
+        variants = None
+        if t['key'] in getattr(ledger, 'ANSWER_VARIANTS', {}):
+            variants = []
+            for vid, vlabel, specs in ledger.ANSWER_VARIANTS[t['key']]:
+                vrows, vworth = [], 0
+                for i, spec in enumerate(specs):
+                    row, _, w = build_row(lifter, spec, f'r{i + 1}', doc, sq['page'], lo)
+                    vrows.append(row)
+                    vworth += w
+                if vworth != t['total']:
+                    problems.append(f'{t["key"]} variant {vid}: worth {vworth} != {t["total"]}')
+                variants.append({'id': vid, 'label': vlabel, 'rows': vrows})
+        qn, letter, roman, item = B.parse_ref(t['ref'])
+        key_part = (qn, letter)
+        cid = B.card_id(year, level, t['ref'], t['route'])
+        if cid in seen_ids:
+            problems.append(f'{cid}: duplicate card id')
+        seen_ids.add(cid)
+        # Route cards share one task: count its tariff once.
+        first_route = not t['route'] or t['route'] == ledger.ROUTES[t['ref']][0]
+        if first_route:
+            ck = key_part if key_part in ledger.CHECKSUMS else qn
+            units_by[ck].update(task_units)
+            totals_q[qn] += t['total']
+            if key_part in ledger.PART_TOTALS:
+                totals_part[key_part] += t['total']
+        card = {
+            'id': cid, 'subjectId': 'biology', 'topicId': t['topic'], 'conceptId': t['concept'],
+            'section': t['sec'],
+            'questionRef': f'{year} {LT} {t["ref"]}' + (f' — {t["route"]}' if t['route'] else ''),
+        }
+        if stem:
+            card['stem'] = stem
+        card.update({'questionText': qtext, 'tariffModel': {'kind': 'fixed'},
+                     'totalMarks': t['total'], 'rows': rows})
+        if variants:
+            card['answerVariants'] = variants
+        notes = ' '.join(x for x in (t['decision'], t['notes']) if x)
+        card['notes'] = (notes + ' ' if notes else '') + \
+            f'Reviewed {year}-10-11 against the paper and scheme; ledger bio_review_{year}_{level}.py.'
+        card.update({'year': year, 'level': level_word(level)})
+        if t['fig']:
+            card['figureKey'] = f'biology-{year}-{level}-{t["fig"]}'
+        if t['qfig']:
+            card['questionFigureKey'] = f'biology-{year}-{level}-{t["qfig"]}'
+        if t['labels']:
+            key = []
+            for lab in t['labels']:
+                meaning, _ = lifter.lift(lab['sel'], doc)
+                meaning = strip_stars(meaning)
+                key.append({'letter': lab['letter'], 'meaning': meaning,
+                            'askedInThisQuestion': lab['asked']})
+            card['labelKey'] = key
+        if t['source_pages']:
+            card['sourceMaterial'] = {
+                'kind': 'source-illustration', 'label': 'OFFICIAL QUESTION PAGE',
+                'title': 'Official question page', 'pages': t['source_pages'],
+                'attribution': f'SEC Biology {year} {"Higher" if level == "hl" else "Ordinary"} '
+                               'Level examination paper — © State Examinations Commission.',
+                'presentationNote': 'Open the exact examination page to use its published chart, '
+                                    'table, photograph or diagram.',
+            }
+        cards.append(card)
+        audit_tasks.append({
+            'key': t['key'], 'id': cid, 'questionRef': card['questionRef'], 'section': t['sec'],
+            'paper': {'doc': doc, 'pages': sorted({m['page'] for m in qmetas})},
+            'scheme': {'pages': sorted({sq['page']})},
+            'total': t['total'], 'markUnits': task_units, 'topic': t['topic'],
+            'concept': t['concept'], 'route': t['route'], 'rows': len(rows),
+            'figure': t['fig'], 'questionFigure': t['qfig'],
+            'sourcePages': t['source_pages'], 'pairingScore': round(score, 2),
+            'decision': t['decision'] or None, 'notes': t['notes'] or None,
+        })
+
+    # --- totals and checksums --------------------------------------------
+    for qn, total in ledger.QUESTION_TOTALS.items():
+        got = totals_q.get(qn, 0)
+        if qn in ledger.BEST_OF:
+            n, per = ledger.BEST_OF[qn]
+            parts = [c for c in cards
+                     if B.parse_ref(c['questionRef'].split(' ', 2)[2].split(' — ')[0])[0] == qn]
+            if any(c['totalMarks'] != per for c in parts) or n * per != total:
+                problems.append(f'Q{qn}: best {n} of parts at {per} does not make {total}')
+        elif got != total:
+            problems.append(f'Q{qn}: tasks total {got}, paper prints {total}')
+    for kp, total in ledger.PART_TOTALS.items():
+        if totals_part.get(kp, 0) != total:
+            problems.append(f'Q{kp[0]}({kp[1]}): tasks total {totals_part.get(kp, 0)}, '
+                            f'scheme prints {total}')
+    for ck, want in ledger.CHECKSUMS.items():
+        got = dict(units_by.get(ck, {}))
+        if got != want:
+            problems.append(f'checksum {ck}: rows give {got}, scheme tick summary says {want}')
+
+    # --- census: every leaf claimed, every task a leaf --------------------
+    parts, _texts, _files = PC.census_merged('biology', year, level, None)
+    leaves = set(PC.leaves_of(parts))
+    claimed = set()
+    for t in ledger.TASKS:
+        qn, letter, roman, _ = B.parse_ref(t['ref'])
+        key = (qn, letter, roman)
+        hit = [l for l in leaves if l == key or (l[0] == qn and l[1] == letter and roman is None)]
+        if not hit:
+            problems.append(f'{t["key"]}: {t["ref"]} is no census leaf')
+        claimed.update(hit)
+    for leaf in sorted(leaves - claimed, key=str):
+        problems.append(f'census leaf {leaf} has no task')
+
+    # --- Atlas topics -----------------------------------------------------
+    atlas = json.load(open(ATLAS_MAP.format(year=year), encoding='utf-8'))
+    crosswalk = json.load(open(CROSSWALK, encoding='utf-8'))
+    atlas_view = defaultdict(lambda: {'atlasTopics': [], 'taskTopics': set()})
+    for t in ledger.TASKS:
+        qn = B.parse_ref(t['ref'])[0]
+        topics = atlas['questions'].get(f'{level_word(level)}|{qn}', [])
+        nodes = {n for tp in topics for n in crosswalk.get(tp, [])}
+        view = atlas_view[qn]
+        view['atlasTopics'] = topics
+        view['taskTopics'].add(t['topic'])
+        if t['topic'] not in nodes:
+            problems.append(f'{t["key"]}: topic {t["topic"]} is not among the Atlas topics for '
+                            f'Q{qn} ({sorted(nodes)})')
+    fail(problems)
+    checks = {
+        'censusLeaves': len(leaves), 'censusLeavesClaimed': len(claimed),
+        'atlas': {str(q): {'atlasTopics': v['atlasTopics'], 'taskTopics': sorted(v['taskTopics'])}
+                  for q, v in sorted(atlas_view.items())},
+        'atlasRule': 'every task topic is a curriculum node of one of its question\'s Topic '
+                     'Atlas topics (biology-<year>-exam-topic-map.json via '
+                     'biology-curriculum-crosswalk.json)',
+        'tickChecksumsMatched': len(ledger.CHECKSUMS),
+    }
+    return lifter, cards, audit_tasks, checks
+
+
+# ------------------------------------------------------------------ figures --
+
+def figures(ledger, lifter, year, level, write):
+    out, records = {}, []
+    for suffix, spec in ledger.FIGURES.items():
+        doc, page, rect, credit, letters, alt, solution = spec[:7]
+        masks = spec[7] if len(spec) > 7 else []
+        key = f'biology-{year}-{level}-{suffix}'
+        src = lifter.srcs[doc]
+        pg = src.doc[page - 1]
+        clip = fitz.Rect(*rect)
+        if not pg.rect.contains(clip):
+            raise Refusal(f'{key}: crop {rect} leaves page {page}')
+        zoom = 4 if clip.height < 60 else 3
+        pix = pg.get_pixmap(matrix=fitz.Matrix(zoom, zoom), clip=clip)
+        for m in masks:
+            mr = fitz.Rect(*m) & clip
+            if mr.is_empty:
+                raise Refusal(f'{key}: mask {m} is outside the crop')
+            # A clipped pixmap keeps page coordinates: its irect starts at the
+            # clip's own origin, not at (0, 0).
+            ir = fitz.IRect(round(mr.x0 * zoom), round(mr.y0 * zoom),
+                            round(mr.x1 * zoom), round(mr.y1 * zoom)) & pix.irect
+            pix.set_rect(ir, (255, 255, 255))
+        png = pix.tobytes('png')
+        rel = f'/exam-figures/biology/markbank/{key}.png'
+        level_name = 'Higher' if level == 'hl' else 'Ordinary'
+        what = 'marking scheme' if doc == 'scheme' else 'examination paper'
+        attribution = f'SEC Leaving Certificate Biology {year} {level_name} Level {what} — © State Examinations Commission'
+        if credit != ledger.SEC:
+            attribution += f'; source credited in the paper\'s acknowledgements: {credit}'
+        entry = {'src': rel, 'md5': hashlib.md5(png).hexdigest(), 'alt': alt,
+                 'lettersVisible': letters, 'labelMeanings': [], 'questionRef': None,
+                 'year': year, 'level': level_word(level), 'attribution': attribution,
+                 'sourceDocument': ledger.SOURCES[doc]['fileid'], 'sourcePage': page,
+                 'sourceRect': list(rect)}
+        if masks:
+            entry['maskedFurniture'] = [list(m) for m in masks]
+        if solution:
+            entry['solution'] = True
+        out[key] = entry
+        records.append((key, png))
+        if write:
+            os.makedirs(FIG_DIR, exist_ok=True)
+            with open(os.path.join(FIG_DIR, f'{key}.png'), 'wb') as fh:
+                fh.write(png)
+    return out, records
+
+
+# -------------------------------------------------------------------- write --
+
+def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
+    prefix = f'bio-{year}-{level}-'
+    raw = open(AUTHORED, encoding='utf-8').read()
+    bank = json.loads(raw)
+    before = [c['id'] for c in bank if c['id'].startswith(prefix)]
+    new_ids = {c['id'] for c in cards}
+    lost = [i for i in before if i not in new_ids]
+    if lost:
+        raise Refusal(f'refusing to drop existing card ids: {lost}')
+    kept = [c for c in bank if not c['id'].startswith(prefix)]
+    bank = kept + cards
+    with open(AUTHORED, 'w', encoding='utf-8') as fh:
+        fh.write(json.dumps(bank, indent=1, ensure_ascii=False))
+
+    manifest = {}
+    if os.path.exists(FIG_MANIFEST):
+        manifest = json.load(open(FIG_MANIFEST, encoding='utf-8'))
+    manifest = {k: v for k, v in manifest.items() if not k.startswith(f'biology-{year}-{level}-')}
+    for c in cards:
+        for field in ('figureKey', 'questionFigureKey'):
+            if c.get(field):
+                figs[c[field]].setdefault('usedBy', []).append(c['id'])
+    unused = [k for k, v in figs.items() if not v.get('usedBy')]
+    if unused:
+        raise Refusal(f'figures cropped but bound to no card: {unused}')
+    for k, v in figs.items():
+        v['questionRef'] = sorted({next(c['questionRef'] for c in cards if c['id'] == i)
+                                   for i in v['usedBy']})[0]
+        v.pop('usedBy')
+    manifest.update(figs)
+    with open(FIG_MANIFEST, 'w', encoding='utf-8') as fh:
+        json.dump(dict(sorted(manifest.items())), fh, indent=1, ensure_ascii=False)
+        fh.write('\n')
+
+    audit = {}
+    if os.path.exists(AUDIT):
+        audit = json.load(open(AUDIT, encoding='utf-8'))
+    audit.setdefault('schemaVersion', 1)
+    audit.setdefault('subject', 'biology')
+    audit.setdefault('sittings', {})
+    srcs = {k: {'path': v['path'], 'fileid': v['fileid'], 'sha256': v['sha256'],
+                'bytes': lifter.srcs[k].bytes, 'pages': v['pages'],
+                'pageRoles': {str(p): r for p, r in ledger.PAGE_ROLES[k].items()},
+                'pagesLifted': sorted(lifter.used.get(k, []))}
+            for k, v in ledger.SOURCES.items()}
+    audit['sittings'][f'{year}-{level}'] = {
+        'status': 'reviewed',
+        'reviewedAt': f'{year}-10-11',
+        'ledger': f'scripts/markbank/authoring/bio_review_{year}_{level}.py',
+        'method': ledger.__doc__.strip().split('\n\n')[0],
+        'sources': srcs,
+        'visualSweep': {k: f'all {v["pages"]} pages rendered and read' for k, v in ledger.SOURCES.items()},
+        'questionTotals': {str(k): v for k, v in ledger.QUESTION_TOTALS.items()},
+        'partTotals': {f'{k[0]}{k[1]}': v for k, v in ledger.PART_TOTALS.items()},
+        'tickChecksums': {(f'{k[0]}{k[1]}' if isinstance(k, tuple) else str(k)):
+                          {str(m): n for m, n in v.items()} for k, v in ledger.CHECKSUMS.items()},
+        'selectionScan': [{'doc': d, 'page': p, 'directive': w, 'disposition': r}
+                          for d, p, w, r in ledger.SELECTION_SCAN],
+        'routes': ledger.ROUTES,
+        'tasks': audit_tasks,
+        'cardCount': len(cards),
+        'baseTaskCount': len({t['key'] for t in ledger.TASKS}),
+        'figures': sorted(figs),
+        'checks': checks,
+    }
+    with open(AUDIT, 'w', encoding='utf-8') as fh:
+        json.dump(audit, fh, indent=1, ensure_ascii=False)
+        fh.write('\n')
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('year', type=int)
+    ap.add_argument('level', choices=['hl', 'ol'])
+    ap.add_argument('--write', action='store_true')
+    args = ap.parse_args()
+    ledger = importlib.import_module(f'bio_review_{args.year}_{args.level}')
+    try:
+        lifter, cards, audit_tasks, checks = build(ledger, args.year, args.level)
+        figs, _ = figures(ledger, lifter, args.year, args.level, args.write)
+        if args.write:
+            write_all(ledger, args.year, args.level, cards, audit_tasks, figs, lifter, checks)
+    except Refusal as e:
+        print(f'REFUSED {args.year} {args.level}:\n{e}')
+        sys.exit(1)
+    base = len({t['key'] for t in ledger.TASKS})
+    print(f'biology {args.year} {args.level}: {base} reviewed tasks -> {len(cards)} cards, '
+          f'{len(figs)} figures' + (' (written)' if args.write else ' (check only)'))
+
+
+if __name__ == '__main__':
+    main()

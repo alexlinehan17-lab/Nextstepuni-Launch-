@@ -1,0 +1,273 @@
+#!/usr/bin/env python3
+"""Biology paper-by-paper review: the lifting and checking machinery.
+
+A reviewed sitting is written as a LEDGER (bio_review_<year>_<level>.py): one
+entry per independently practicable task at the scheme's own mark boundary,
+with the page it is printed on, the page its scheme prices it on, its tariff,
+its topic and the reason for every non-obvious decision. This module turns a
+ledger into Mark Bank cards and refuses, loudly, whenever the ledger and the
+SEC documents disagree.
+
+What it guarantees, and how:
+
+* Every word a student reads as the SEC's is a SLICE of the SEC's own PDF.
+  Selectors name where a slice starts and ends; the text between comes out of
+  the PDF's text layer. A selector must open at the start of a printed line
+  (after nothing but a part marker) and close at the end of one, so a
+  selection is always whole printed cells and lines, never a fragment of one
+  and never typed words checked afterwards (lift-never-write-exam-content).
+* Paper and scheme are paired by WORDING, not by part labels: each task names
+  the scheme's reprint of its question and the pairing must share most of its
+  words with the paper's own ask.
+* Tariffs are summed per task and per question against the printed totals,
+  and the scheme's own tick-annotation checksum ("6 x 3 + 1 x 2") is matched
+  against the mark units of the rows authored under it.
+* Every census leaf the independent paper reader finds is claimed by at least
+  one task, and every task resolves to a census leaf.
+"""
+import hashlib
+import json
+import os
+import re
+import sys
+from collections import Counter
+
+import fitz  # PyMuPDF
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
+sys.path.insert(0, HERE)
+sys.path.insert(0, os.path.dirname(HERE))
+
+from markbank_text import unligature  # noqa: E402
+
+LEVEL_TOKEN = {'hl': 'HL', 'ol': 'OL'}
+LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
+
+# What may stand in front of a selection on its printed line: part markers
+# ("(b)", "(iii)", "2.") and the scheme's asterisk. Anything else in front means
+# the selector cut into a sentence, which is refused.
+_LEAD = re.compile(r'^(?:\s*(?:\([a-h]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)|\d{1,2}\.|\*))*\s*$')
+# ...or a whole earlier SENTENCE on the same printed line: a selection may open
+# at a sentence boundary ("...of the leaf.  To which tissue type...").
+_AFTER_SENTENCE = re.compile(r'[.?!:]\s+$')
+# What may follow a selection on its line: nothing, a new sentence, or the
+# scheme's own tariff cell glued to the end of a menu ("... / pole Any three 3(1)").
+_TARIFF_TAIL = re.compile(r'^\s*(?:Any\s+\w+\s*)?(?:\d+\(\d\)|\d\+\d)?\s*$')
+
+
+def _closes(text_after, end):
+    if text_after.strip() == '':
+        return True
+    if end[-1:] in '.?:' and text_after[:1].isspace():
+        return True
+    return bool(_TARIFF_TAIL.match(text_after))
+
+
+def sha256(path):
+    h = hashlib.sha256()
+    with open(path, 'rb') as fh:
+        for chunk in iter(lambda: fh.read(1 << 16), b''):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def _norm(line):
+    line = unligature(line.replace(' ', ' ').replace(' ', ' '))
+    return re.sub(r'\s+', ' ', line).strip()
+
+
+class Src:
+    """One SEC PDF read as printed lines, page by page (1-based pages)."""
+
+    def __init__(self, path, label):
+        self.path, self.label = path, label
+        self.doc = fitz.open(path)
+        self.sha = sha256(path)
+        self.bytes = os.path.getsize(path)
+        self.pages = self.doc.page_count
+        self.lines = {}
+        for i, page in enumerate(self.doc):
+            self.lines[i + 1] = [n for n in (_norm(l) for l in page.get_text().splitlines()) if n]
+
+    def page_text(self, page):
+        return ' '.join(self.lines[page])
+
+    def _line_of(self, page, anchor, lo, hi, what):
+        L = self.lines[page]
+        hits = [i for i in range(lo, hi) if anchor in L[i]]
+        if not hits:
+            raise LookupError(f'{self.label} p{page}: {what} {anchor!r} not found')
+        return hits[0]
+
+    def select(self, page, start, end=None, after=None, before=None, nth=1, lo=0, end_nth=1):
+        """The printed text from `start` to `end` on one page.
+
+        Returns (text, meta) where meta records the line span and whether the
+        scheme's asterisk (exact term required) opened the selection.
+        """
+        if page not in self.lines:
+            raise LookupError(f'{self.label}: no page {page}')
+        L = self.lines[page]
+        hi = len(L)
+        if after:
+            lo = self._line_of(page, after, lo, hi, 'after-anchor') + 1
+        if before:
+            hi = self._line_of(page, before, lo, hi, 'before-anchor')
+        hits = []
+        for i in range(lo, hi):
+            off = L[i].find(start)
+            while off >= 0:
+                lead = L[i][:off]
+                if _LEAD.match(lead) or _AFTER_SENTENCE.search(lead):
+                    hits.append((i, off))
+                    break
+                off = L[i].find(start, off + 1)
+        if len(hits) < nth:
+            raise LookupError(f'{self.label} p{page}: start {start!r} does not open a printed '
+                              f'line (after={after!r}, before={before!r}); found {len(hits)}')
+        i, off = hits[nth - 1]
+        starred = '*' in L[i][:off]
+        meta = {'page': page, 'starred': starred}
+        if end is None:
+            # The whole rest of the line, short of a tariff cell glued to it.
+            rest = L[i][off:]
+            m = re.search(r'\s+(?:Any\s+\w+\s*)?(?:\d+\(\d\)|\d\+\d)\s*$', rest)
+            if m:
+                rest = rest[:m.start()]
+            return rest.strip(), {**meta, 'lines': [i, i]}
+        seen = 0
+        for j in range(i, hi):
+            base = off if j == i else 0
+            k = L[j].find(end, base)
+            while k >= 0:
+                if _closes(L[j][k + len(end):], end) and (seen := seen + 1) == end_nth:
+                    if j == i:
+                        seg = [L[i][off:k + len(end)]]
+                    else:
+                        seg = [L[i][off:]] + L[i + 1:j] + [L[j][:k + len(end)]]
+                    return join_lines(seg), {**meta, 'lines': [i, j]}
+                k = L[j].find(end, k + 1)
+        raise LookupError(f'{self.label} p{page}: end {end!r} closes no printed line after '
+                          f'{start!r}')
+
+
+def join_lines(segments):
+    """Printed lines joined as the reader reads them: with a space, except
+    where a word is broken over the line end by its own hyphen ("three-" /
+    "base sequences" is the one word "three-base")."""
+    out = ''
+    for seg in (s.strip() for s in segments):
+        if not seg:
+            continue
+        if out.endswith('-') and len(out) > 1 and out[-2].isalpha():
+            out += seg
+        else:
+            out = f'{out} {seg}' if out else seg
+    return out
+
+
+# --------------------------------------------------------------- ledger API --
+# The ledger is data. These constructors only record selectors; nothing is
+# lifted until build() runs against the PDFs.
+
+def Q(page, start, end=None, doc=None, after=None, before=None, nth=1):
+    """A slice of the QUESTION paper (doc defaults to the task's booklet)."""
+    return {'src': 'paper', 'doc': doc, 'page': page, 'start': start, 'end': end,
+            'after': after, 'before': before, 'nth': nth}
+
+
+def M(marker, page, doc=None):
+    """A printed part marker ("(ii)", "1.") placed before a lifted earlier ask
+    in a stem, so the stem reads as the paper sets it. Checked to be a marker
+    and to be printed on that page."""
+    if not re.fullmatch(r'\((?:[a-h]|i|ii|iii|iv|v|vi|vii|viii)\)|\d\.', marker):
+        raise ValueError(f'{marker!r} is not a part marker')
+    return {'src': 'marker', 'text': marker, 'page': page, 'doc': doc}
+
+
+def SQ(page, start, end=None, after=None, nth=1):
+    """The scheme's reprint of the task's question: the pairing anchor."""
+    return {'page': page, 'start': start, 'end': end, 'after': after, 'nth': nth}
+
+
+def S(start, end=None, page=None, after=None, before=None, nth=1):
+    """A slice of the SCHEME (page defaults to the task's scheme page, and the
+    search starts after the task's own reprinted question)."""
+    return {'src': 'scheme', 'page': page, 'start': start, 'end': end,
+            'after': after, 'before': before, 'nth': nth}
+
+
+def pt(sel, marks, label=None, kind=None, note=None, units=None, first_alt=False,
+       note_sel=None):
+    """One marking row lifted whole from the scheme."""
+    return {'type': 'pt', 'sel': sel, 'marks': marks, 'label': label, 'kind': kind,
+            'note': note, 'units': units or [marks], 'first_alt': first_alt,
+            'note_sel': note_sel}
+
+
+def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None):
+    """A bounded menu: "Any two 2(3)". `sel` is the whole printed list, cut
+    into options at the SEC's own solidus; or `options` is a list of
+    selectors, one per option, for menus printed one per line."""
+    return {'type': 'anyn', 'sel': sel, 'claim': claim, 'per': per, 'steps': steps,
+            'note': note, 'options': options, 'note_sel': note_sel}
+
+
+def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
+      qfig=None, labels=None, source_pages=None, route=None, notes='', decision='',
+      paper_pages=None, scheme_pages=None, leaf=None):
+    """One reviewed task -> one card."""
+    return dict(key=key, ref=ref, sec=sec, q=q, rows=rows, topic=topic, concept=concept,
+                sq=sq, total=total, stem=stem or [], fig=fig, qfig=qfig, labels=labels or [],
+                source_pages=source_pages, route=route, notes=notes, decision=decision,
+                paper_pages=paper_pages, scheme_pages=scheme_pages, leaf=leaf)
+
+
+def L(letter, meaning_sel, asked):
+    """One letter of a lettered figure, its meaning lifted from a document."""
+    return {'letter': letter, 'sel': meaning_sel, 'asked': asked}
+
+
+# ------------------------------------------------------------------ helpers --
+
+WORD = re.compile(r"[a-z0-9]+")
+STOP = set('the a an of to in and or is are be for this that which what how why does do '
+           'on as by its it with from at your you named name state give'.split())
+
+
+def overlap(a, b):
+    wa = [w for w in WORD.findall(a.lower()) if w not in STOP]
+    wb = set(w for w in WORD.findall(b.lower()) if w not in STOP)
+    if not wa:
+        return 1.0
+    return sum(1 for w in wa if w in wb) / len(wa)
+
+
+def strip_star(text):
+    return re.sub(r'\s*\*\s*', ' ', text).strip() if text.startswith('*') or ' *' in text \
+        else text
+
+
+def clean_option(text):
+    return text.strip().strip('/').strip()
+
+
+ROMAN = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii']
+
+
+def parse_ref(ref):
+    """'Q11(b)(iii)1' -> (11, 'b', 'iii', '1')."""
+    m = re.fullmatch(r'Q(\d+)(?:\(([a-h])\))?(?:\(((?:i|ii|iii|iv|v|vi|vii|viii))\))?(\d)?', ref)
+    if not m:
+        raise ValueError(f'unparseable ref {ref!r}')
+    return int(m.group(1)), m.group(2), m.group(3), m.group(4)
+
+
+def card_id(year, level, ref, route=None):
+    q, letter, roman, item = parse_ref(ref)
+    parts = [f'bio-{year}-{level}-q{q}']
+    parts += [p for p in (letter, roman, item) if p]
+    if route:
+        parts.append(route)
+    return '-'.join(parts)

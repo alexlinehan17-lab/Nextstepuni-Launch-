@@ -1034,6 +1034,23 @@ function tariffFault(c) {
  */
 const TARIFF_PROSE = /\bmarks? each\b|^\s*any (one|two|three|four|five|\d+)\b[^.]*\bmarks?\b/i;
 
+/**
+ * A row that states neither an answer nor an honest criterion.
+ *
+ * A row DECLARED `criterion` is the scheme pricing a judgement -- "Safety
+ * precaution described", "Any correct vitamin deficiency to match named
+ * vitamin" -- and the type reserves the kind for exactly that. Dropping the
+ * card for carrying one either loses the printed task or ships it with part of
+ * its published tariff missing, which the paper-by-paper audits forbid. Such a
+ * row is still refused when it is a tariff written where the criterion should
+ * be. Every other kind is held to the content-free test as before.
+ */
+function contentFreeRow(r) {
+  if (r.kind === 'anyN') return false;
+  if (r.kind === 'criterion') return TARIFF_PROSE.test(r.verbatim ?? '') || !String(r.verbatim ?? '').trim();
+  return isContentFreeRow(r.verbatim);
+}
+
 /** Faults in a bounded pick-list that arithmetic can settle without an agent. */
 function groupFault(c) {
   for (const r of c.rows) {
@@ -1119,7 +1136,7 @@ function answerVariantsFault(card) {
       if (!ROW_KINDS.has(row.kind)) {
         return `answer variant "${variant.id}" row "${row.id}" has invalid kind "${row.kind}"`;
       }
-      if (row.kind !== 'anyN' && isContentFreeRow(row.verbatim)) {
+      if (contentFreeRow(row)) {
         return `answer variant "${variant.id}" contains content-free row "${row.verbatim}"`;
       }
     }
@@ -1206,7 +1223,7 @@ for (const c of cards) {
     }
   }
 
-  const contentFree = c.rows.filter(r => r.kind !== 'anyN' && isContentFreeRow(r.verbatim));
+  const contentFree = c.rows.filter(contentFreeRow);
   if (contentFree.length) {
     dropped.push(`${c.id}: ${contentFree.length} content-free row(s), e.g. "${contentFree[0].verbatim}"`);
     continue;

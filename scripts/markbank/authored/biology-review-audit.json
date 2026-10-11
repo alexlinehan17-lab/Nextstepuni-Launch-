@@ -1,0 +1,6874 @@
+{
+ "schemaVersion": 1,
+ "subject": "biology",
+ "sittings": {
+  "2026-hl": {
+   "status": "reviewed",
+   "reviewedAt": "2026-10-11",
+   "ledger": "scripts/markbank/authoring/bio_review_2026_hl.py",
+   "method": "Biology 2026 Higher Level — reviewed task ledger.",
+   "sources": {
+    "038": {
+     "path": "examiner-reports/biology/papers/2026-hl-038-paper.pdf",
+     "fileid": "LC025ALP038EV.pdf",
+     "sha256": "1c3aa8ed6f7543e9ee2ced1f749ccdf8f85c708317bd243d51c2d4d8503dfa51",
+     "bytes": 1855085,
+     "pages": 40,
+     "pageRoles": {
+      "1": "cover",
+      "2": "instructions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "questions",
+      "12": "questions",
+      "13": "answerbook-instructions",
+      "14": "graph-paper",
+      "15": "graph-paper",
+      "16": "answer-pages",
+      "17": "answer-pages",
+      "18": "answer-pages",
+      "19": "answer-pages",
+      "20": "answer-pages",
+      "21": "answer-pages",
+      "22": "answer-pages",
+      "23": "answer-pages",
+      "24": "answer-pages",
+      "25": "answer-pages",
+      "26": "answer-pages",
+      "27": "answer-pages",
+      "28": "answer-pages",
+      "29": "answer-pages",
+      "30": "answer-pages",
+      "31": "answer-pages",
+      "32": "answer-pages",
+      "33": "answer-pages",
+      "34": "answer-pages",
+      "35": "answer-pages",
+      "36": "answer-pages",
+      "37": "answer-pages",
+      "38": "answer-pages",
+      "39": "acknowledgements",
+      "40": "back-cover"
+     },
+     "pagesLifted": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "040": {
+     "path": "examiner-reports/biology/papers/2026-hl-040-paper.pdf",
+     "fileid": "LC025ALP040EV.pdf",
+     "sha256": "c86209f155cfce3e0a9ddbd23567c5029b2ae59e8f631b56e951adf911966c24",
+     "bytes": 1359733,
+     "pages": 12,
+     "pageRoles": {
+      "1": "cover",
+      "2": "questions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "acknowledgements",
+      "12": "back-cover"
+     },
+     "pagesLifted": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    "scheme": {
+     "path": "examiner-reports/biology/schemes/2026-hl.pdf",
+     "fileid": "LC025ALP000EV.pdf",
+     "sha256": "82da86ffaa8e6989e44d4d4175488b5debe07193c31d05316089446888c0571e",
+     "bytes": 1234164,
+     "pages": 36,
+     "pageRoles": {
+      "1": "cover",
+      "2": "note",
+      "3": "introduction",
+      "4": "marking-examples",
+      "5": "marking-examples",
+      "6": "annotations-grading",
+      "7": "irish-bonus",
+      "8": "marking",
+      "9": "marking",
+      "10": "marking",
+      "11": "marking",
+      "12": "marking",
+      "13": "marking",
+      "14": "marking",
+      "15": "marking",
+      "16": "marking",
+      "17": "marking",
+      "18": "marking",
+      "19": "marking",
+      "20": "marking",
+      "21": "marking",
+      "22": "marking",
+      "23": "marking",
+      "24": "marking",
+      "25": "marking",
+      "26": "marking",
+      "27": "marking",
+      "28": "marking",
+      "29": "marking",
+      "30": "marking",
+      "31": "marking",
+      "32": "marking",
+      "33": "marking",
+      "34": "marking",
+      "35": "blank",
+      "36": "back-cover"
+     },
+     "pagesLifted": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+     ]
+    }
+   },
+   "visualSweep": {
+    "038": "all 40 pages rendered and read",
+    "040": "all 12 pages rendered and read",
+    "scheme": "all 36 pages rendered and read"
+   },
+   "questionTotals": {
+    "1": 20,
+    "2": 20,
+    "3": 20,
+    "4": 20,
+    "5": 20,
+    "6": 20,
+    "7": 20,
+    "8": 30,
+    "9": 30,
+    "10": 30,
+    "11": 60,
+    "12": 60,
+    "13": 60,
+    "14": 60,
+    "15": 60
+   },
+   "partTotals": {
+    "8a": 6,
+    "8b": 24,
+    "9a": 6,
+    "9b": 24,
+    "10a": 6,
+    "10b": 24,
+    "11a": 9,
+    "11b": 27,
+    "11c": 24,
+    "12a": 9,
+    "12b": 27,
+    "12c": 24,
+    "13a": 9,
+    "13b": 27,
+    "13c": 24,
+    "14a": 9,
+    "14b": 27,
+    "14c": 24,
+    "15a": 9,
+    "15b": 27,
+    "15c": 24,
+    "16a": 30,
+    "16b": 30,
+    "16c": 30,
+    "16d": 30,
+    "17a": 30,
+    "17b": 30,
+    "17c": 30,
+    "17d": 30
+   },
+   "tickChecksums": {
+    "1": {
+     "2": 2,
+     "4": 5
+    },
+    "2": {
+     "2": 1,
+     "3": 6
+    },
+    "3": {
+     "3": 6,
+     "2": 1
+    },
+    "4": {
+     "3": 6,
+     "2": 1
+    },
+    "5": {
+     "3": 6,
+     "2": 1
+    },
+    "6": {
+     "3": 2,
+     "2": 7
+    },
+    "7": {
+     "2": 10
+    },
+    "8a": {
+     "3": 2
+    },
+    "8b": {
+     "3": 8
+    },
+    "9a": {
+     "3": 2
+    },
+    "9b": {
+     "3": 8
+    },
+    "10a": {
+     "3": 2
+    },
+    "10b": {
+     "3": 8
+    },
+    "11a": {
+     "3": 3
+    },
+    "11b": {
+     "3": 9
+    },
+    "11c": {
+     "3": 8
+    },
+    "12a": {
+     "3": 3
+    },
+    "12b": {
+     "3": 8,
+     "2": 1,
+     "1": 1
+    },
+    "12c": {
+     "3": 8
+    },
+    "13a": {
+     "3": 2,
+     "1": 3
+    },
+    "13b": {
+     "3": 5,
+     "2": 4,
+     "1": 4
+    },
+    "13c": {
+     "3": 7,
+     "2": 1,
+     "1": 1
+    },
+    "14a": {
+     "3": 3
+    },
+    "14b": {
+     "3": 7,
+     "2": 3
+    },
+    "14c": {
+     "3": 7,
+     "2": 1,
+     "1": 1
+    },
+    "15a": {
+     "3": 1,
+     "2": 3
+    },
+    "15b": {
+     "3": 7,
+     "1": 6
+    },
+    "15c": {
+     "3": 4,
+     "2": 3,
+     "1": 6
+    },
+    "16a": {
+     "3": 9,
+     "1": 3
+    },
+    "16b": {
+     "3": 9,
+     "2": 1,
+     "1": 1
+    },
+    "16c": {
+     "3": 9,
+     "2": 1,
+     "1": 1
+    },
+    "16d": {
+     "3": 9,
+     "1": 3
+    },
+    "17a": {
+     "3": 6,
+     "2": 5,
+     "1": 2
+    },
+    "17b": {
+     "3": 4,
+     "2": 9
+    },
+    "17c": {
+     "3": 6,
+     "2": 4,
+     "1": 4
+    },
+    "17d": {
+     "3": 5,
+     "2": 6,
+     "1": 3
+    }
+   },
+   "selectionScan": [
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Instructions: \"blue or black pen\", not a question."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any five",
+     "disposition": "Section A rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any two",
+     "disposition": "Section B rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any four",
+     "disposition": "Section C rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "any five",
+     "disposition": "Section A rubric repeated."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "any five",
+     "disposition": "Q1 best five of (a)-(f): each part is its own card at 4 marks."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "Q1 parts list."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q1(f) \"or of any other named vitamin\": open choice, one card."
+    },
+    {
+     "doc": "038",
+     "page": 4,
+     "directive": "or",
+     "disposition": "Q2(e) \"(or uses)\": synonym, not a choice."
+    },
+    {
+     "doc": "038",
+     "page": 7,
+     "directive": "the following",
+     "disposition": "Q5 lead-in."
+    },
+    {
+     "doc": "038",
+     "page": 7,
+     "directive": "or",
+     "disposition": "Q5(e) examples \"G A G or C U G\", not a choice."
+    },
+    {
+     "doc": "038",
+     "page": 8,
+     "directive": "the following",
+     "disposition": "Q6 lead-in."
+    },
+    {
+     "doc": "038",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Q7 compulsory list of five structures, each its own letter."
+    },
+    {
+     "doc": "038",
+     "page": 10,
+     "directive": "any two",
+     "disposition": "Section B rubric: whole-question choice."
+    },
+    {
+     "doc": "038",
+     "page": 10,
+     "directive": "the following",
+     "disposition": "Q8(b)(iii) compulsory numbered items 1 and 2."
+    },
+    {
+     "doc": "038",
+     "page": 10,
+     "directive": "or",
+     "disposition": "Q8(b)(iii)1 \"Washing up liquid or detergent\": synonym."
+    },
+    {
+     "doc": "038",
+     "page": 10,
+     "directive": "or",
+     "disposition": "Answer-box label repeating the same synonym."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "any four",
+     "disposition": "Section C rubric: whole-question choice."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "Q11(b) lead-in."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q12(b)(ii) \"From the passage or otherwise\": flexible source, one card."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q12(b)(vi) \"A or B\": the answer, not a route."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "one of the following",
+     "disposition": "Q12(c)(ii) closed pool of three areas: three route cards."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q12(c)(ii) pool: agriculture or fisheries."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q12(c)(ii) pool: fisheries or forestry."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "one of the following",
+     "disposition": "Q12(c)(iii) closed pool of three areas: three route cards."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q12(c)(iii) pool: agriculture or fisheries."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q12(c)(iii) pool: fisheries or forestry."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "any one",
+     "disposition": "Q12(c)(v) \"any one pollutant\": open choice, one card."
+    },
+    {
+     "doc": "040",
+     "page": 4,
+     "directive": "both",
+     "disposition": "Q13(c)(iii) both naturalists required, not a choice."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "or",
+     "disposition": "Q14(a) \"monocotyledonous (monocot) or dicotyledonous\": classification."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "any one",
+     "disposition": "Q14(b)(ii) any one method of dispersal: open choice."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "any three",
+     "disposition": "Q15(a)(ii) any three methods: open, priced 3(2)."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "the following",
+     "disposition": "Q15(b) lead-in."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "the following",
+     "disposition": "Q15(b)(i) compulsory label list."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "any one",
+     "disposition": "Q15(b)(ii) any one role of oestrogen: open choice."
+    },
+    {
+     "doc": "040",
+     "page": 7,
+     "directive": "any two",
+     "disposition": "Q16 any two of (a)-(d): every part carded."
+    },
+    {
+     "doc": "040",
+     "page": 7,
+     "directive": "the following",
+     "disposition": "Q16(a) lead-in."
+    },
+    {
+     "doc": "040",
+     "page": 7,
+     "directive": "the following",
+     "disposition": "Q16(a)(i) compulsory numbered terms 1 and 2."
+    },
+    {
+     "doc": "040",
+     "page": 7,
+     "directive": "any three",
+     "disposition": "Q16(a)(iv) label any three parts: scheme menu, Any three 3(1)."
+    },
+    {
+     "doc": "040",
+     "page": 8,
+     "directive": "or",
+     "disposition": "Q16(c)(vii) \"(A or B)\": the answer, not a route."
+    },
+    {
+     "doc": "040",
+     "page": 8,
+     "directive": "any three",
+     "disposition": "Q16(d)(iv) label any three parts: open, priced 3(1)."
+    },
+    {
+     "doc": "040",
+     "page": 8,
+     "directive": "both",
+     "disposition": "Q16(d)(v) both underlined terms required."
+    },
+    {
+     "doc": "040",
+     "page": 9,
+     "directive": "any two",
+     "disposition": "Q17 any two of (a)-(d): every part carded."
+    },
+    {
+     "doc": "040",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Q17(a)(ii) compulsory numbered terms."
+    },
+    {
+     "doc": "040",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Q17(a)(vi) compulsory numbered factors."
+    },
+    {
+     "doc": "040",
+     "page": 10,
+     "directive": "the following",
+     "disposition": "Q17(c)(ii)1 compulsory label list."
+    },
+    {
+     "doc": "040",
+     "page": 10,
+     "directive": "the following",
+     "disposition": "Q17(d)(iv)2 compulsory label list."
+    }
+   ],
+   "routes": {
+    "Q12(c)(ii)": [
+     "agriculture",
+     "fisheries",
+     "forestry"
+    ],
+    "Q12(c)(iii)": [
+     "agriculture",
+     "fisheries",
+     "forestry"
+    ]
+   },
+   "tasks": [
+    {
+     "key": "1a",
+     "id": "bio-2026-hl-q1-a",
+     "questionRef": "2026 HL Q1(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-1-2",
+     "concept": "why-organisms-need-food",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "1b",
+     "id": "bio-2026-hl-q1-b",
+     "questionRef": "2026 HL Q1(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "elements-in-lipids",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "One 4-mark line naming all three elements: carded as one all-of row.",
+     "notes": null
+    },
+    {
+     "key": "1c",
+     "id": "bio-2026-hl-q1-c",
+     "questionRef": "2026 HL Q1(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "basic-unit-of-a-lipid",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "1d",
+     "id": "bio-2026-hl-q1-d",
+     "questionRef": "2026 HL Q1(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "metabolic-role-of-lipids",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "1e",
+     "id": "bio-2026-hl-q1-e",
+     "questionRef": "2026 HL Q1(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "fat-soluble-vitamins",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "1f",
+     "id": "bio-2026-hl-q1-f",
+     "questionRef": "2026 HL Q1(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "vitamin-deficiency-disorders",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Depends on (e): the stem carries the printed (e) ask. The scheme prices a judgement, so the row is a criterion.",
+     "notes": null
+    },
+    {
+     "key": "2a",
+     "id": "bio-2026-hl-q2-a",
+     "questionRef": "2026 HL Q2(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-1-3",
+     "concept": "eukaryotic-cell-evidence",
+     "route": null,
+     "rows": 1,
+     "figure": "q2-cheek-cells",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "2b",
+     "id": "bio-2026-hl-q2-b",
+     "questionRef": "2026 HL Q2(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "prokaryotic-cells",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "2c",
+     "id": "bio-2026-hl-q2-c",
+     "questionRef": "2026 HL Q2(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "tissue-culture",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "2d",
+     "id": "bio-2026-hl-q2-d",
+     "questionRef": "2026 HL Q2(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "tissue-culture-conditions",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "2e",
+     "id": "bio-2026-hl-q2-e",
+     "questionRef": "2026 HL Q2(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "tissue-culture-uses",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "3a",
+     "id": "bio-2026-hl-q3-a",
+     "questionRef": "2026 HL Q3(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "thoracic-cavity",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "3b",
+     "id": "bio-2026-hl-q3-b",
+     "questionRef": "2026 HL Q3(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "epiglottis-function",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "3c",
+     "id": "bio-2026-hl-q3-c",
+     "questionRef": "2026 HL Q3(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "tracheal-cartilage-rings",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "3di",
+     "id": "bio-2026-hl-q3-d-i",
+     "questionRef": "2026 HL Q3(d)(i)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "diaphragm-position",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-breathing-system",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "3dii",
+     "id": "bio-2026-hl-q3-d-ii",
+     "questionRef": "2026 HL Q3(d)(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-6",
+     "concept": "diaphragm-in-inhalation",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-breathing-system",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "3e",
+     "id": "bio-2026-hl-q3-e",
+     "questionRef": "2026 HL Q3(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "muscles-of-inhalation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "3f",
+     "id": "bio-2026-hl-q3-f",
+     "questionRef": "2026 HL Q3(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "rib-cage-in-inhalation",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-breathing-system",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "4a",
+     "id": "bio-2026-hl-q4-a",
+     "questionRef": "2026 HL Q4(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "stomata",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-leaf-surface",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "4b",
+     "id": "bio-2026-hl-q4-b",
+     "questionRef": "2026 HL Q4(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "carbon-dioxide-and-stomata",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "4c",
+     "id": "bio-2026-hl-q4-c",
+     "questionRef": "2026 HL Q4(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "carbon-dioxide-and-stomatal-size",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-graphs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "4d",
+     "id": "bio-2026-hl-q4-d",
+     "questionRef": "2026 HL Q4(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-6",
+     "concept": "stomata-reopen-as-carbon-dioxide-falls",
+     "route": null,
+     "rows": 1,
+     "figure": "q4d-scheme-graph",
+     "questionFigure": null,
+     "sourcePages": [
+      6
+     ],
+     "pairingScore": 1.0,
+     "decision": "The scheme prints no words for (d), only the continued curve. The row quotes the scheme's own priced line; the scheme drawing is the solution figure and the question page (graph 2) opens from the card before reveal.",
+     "notes": null
+    },
+    {
+     "key": "4ei",
+     "id": "bio-2026-hl-q4-e-i",
+     "questionRef": "2026 HL Q4(e)(i)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "leaf-dermal-tissue",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-leaf-surface",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "4eii",
+     "id": "bio-2026-hl-q4-e-ii",
+     "questionRef": "2026 HL Q4(e)(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "dermal-tissue-function",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-leaf-surface",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "4f",
+     "id": "bio-2026-hl-q4-f",
+     "questionRef": "2026 HL Q4(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "lenticels",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "5a",
+     "id": "bio-2026-hl-q5-a",
+     "questionRef": "2026 HL Q5(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "transcription",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "5b",
+     "id": "bio-2026-hl-q5-b",
+     "questionRef": "2026 HL Q5(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "where-transcription-occurs",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "5c",
+     "id": "bio-2026-hl-q5-c",
+     "questionRef": "2026 HL Q5(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "ribosome-and-translation",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-translation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "5d",
+     "id": "bio-2026-hl-q5-d",
+     "questionRef": "2026 HL Q5(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "transfer-rna",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-translation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "5e",
+     "id": "bio-2026-hl-q5-e",
+     "questionRef": "2026 HL Q5(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "codons",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-translation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "The paper prints \"(such as G A G or C U G)\"; the scheme reprint reads \"G A G or G U C\". The card uses the paper."
+    },
+    {
+     "key": "5f",
+     "id": "bio-2026-hl-q5-f",
+     "questionRef": "2026 HL Q5(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "dna-sequence-from-mrna",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-translation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "5g",
+     "id": "bio-2026-hl-q5-g",
+     "questionRef": "2026 HL Q5(g)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-3",
+     "concept": "protein-folding",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "6a",
+     "id": "bio-2026-hl-q6-a",
+     "questionRef": "2026 HL Q6(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-3-2",
+     "concept": "denitrification",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-nitrogen-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "6b",
+     "id": "bio-2026-hl-q6-b",
+     "questionRef": "2026 HL Q6(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      2,
+      2,
+      2
+     ],
+     "topic": "bio-3-2",
+     "concept": "nitrogen-cycle-processes",
+     "route": null,
+     "rows": 3,
+     "figure": "q6-nitrogen-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "6ci",
+     "id": "bio-2026-hl-q6-c-i",
+     "questionRef": "2026 HL Q6(c)(i)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "how-nitrogen-is-fixed",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-nitrogen-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "6cii",
+     "id": "bio-2026-hl-q6-c-ii",
+     "questionRef": "2026 HL Q6(c)(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "advantage-of-nitrogen-fixation",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-nitrogen-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "6d",
+     "id": "bio-2026-hl-q6-d",
+     "questionRef": "2026 HL Q6(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-3-2",
+     "concept": "nitrogen-cycle-molecules",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-nitrogen-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.67,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "7a",
+     "id": "bio-2026-hl-q7-a",
+     "questionRef": "2026 HL Q7(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "retina",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "7b",
+     "id": "bio-2026-hl-q7-b",
+     "questionRef": "2026 HL Q7(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-2-6",
+     "concept": "sino-atrial-node",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "7c",
+     "id": "bio-2026-hl-q7-c",
+     "questionRef": "2026 HL Q7(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-2-6",
+     "concept": "gall-bladder",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "7d",
+     "id": "bio-2026-hl-q7-d",
+     "questionRef": "2026 HL Q7(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "adrenal-gland",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "7e",
+     "id": "bio-2026-hl-q7-e",
+     "questionRef": "2026 HL Q7(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "cerebellum",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "8a",
+     "id": "bio-2026-hl-q8-a",
+     "questionRef": "2026 HL Q8(a)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "qualitative-and-quantitative",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "8bi",
+     "id": "bio-2026-hl-q8-b-i",
+     "questionRef": "2026 HL Q8(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "test-for-reducing-sugar",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "8bii",
+     "id": "bio-2026-hl-q8-b-ii",
+     "questionRef": "2026 HL Q8(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "preparing-stained-plant-cells",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.89,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "8biii1",
+     "id": "bio-2026-hl-q8-b-iii-1",
+     "questionRef": "2026 HL Q8(b)(iii)1",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "dna-isolation-detergent",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "8biii2",
+     "id": "bio-2026-hl-q8-b-iii-2",
+     "questionRef": "2026 HL Q8(b)(iii)2",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "dna-isolation-ethanol",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "9ai",
+     "id": "bio-2026-hl-q9-a-i",
+     "questionRef": "2026 HL Q9(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "what-is-an-enzyme",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "9aii",
+     "id": "bio-2026-hl-q9-a-ii",
+     "questionRef": "2026 HL Q9(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "enzyme-denaturation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "9b",
+     "id": "bio-2026-hl-q9-b",
+     "questionRef": "2026 HL Q9(b)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 24,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "effect-of-ph-on-enzyme-activity",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Eight compulsory 3-mark points, grouped as one all-of-eight menu so the card carries the full 24 within the five-row cap (AGENTS.md: compact, never re-tariff).",
+     "notes": null
+    },
+    {
+     "key": "10ai",
+     "id": "bio-2026-hl-q10-a-i",
+     "questionRef": "2026 HL Q10(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "geotropism",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "10aii",
+     "id": "bio-2026-hl-q10-a-ii",
+     "questionRef": "2026 HL Q10(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "where-growth-regulators-are-made",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "10bi",
+     "id": "bio-2026-hl-q10-b-i",
+     "questionRef": "2026 HL Q10(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 21,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "effect-of-iaa-on-plant-tissue",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Seven compulsory 3-mark points grouped as one all-of-seven menu.",
+     "notes": null
+    },
+    {
+     "key": "10bii",
+     "id": "bio-2026-hl-q10-b-ii",
+     "questionRef": "2026 HL Q10(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "iaa-investigation-result",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11ai",
+     "id": "bio-2026-hl-q11-a-i",
+     "questionRef": "2026 HL Q11(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "metabolism",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11aii",
+     "id": "bio-2026-hl-q11-a-ii",
+     "questionRef": "2026 HL Q11(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "atp-name",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11aiii",
+     "id": "bio-2026-hl-q11-a-iii",
+     "questionRef": "2026 HL Q11(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "role-of-atp",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11bi",
+     "id": "bio-2026-hl-q11-b-i",
+     "questionRef": "2026 HL Q11(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "glycolysis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11bii",
+     "id": "bio-2026-hl-q11-b-ii",
+     "questionRef": "2026 HL Q11(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "events-of-glycolysis",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11biii1",
+     "id": "bio-2026-hl-q11-b-iii-1",
+     "questionRef": "2026 HL Q11(b)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "oxygen-and-stage-two",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11biii2",
+     "id": "bio-2026-hl-q11-b-iii-2",
+     "questionRef": "2026 HL Q11(b)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "site-of-stage-two",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.88,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11biii3",
+     "id": "bio-2026-hl-q11-b-iii-3",
+     "questionRef": "2026 HL Q11(b)(iii)3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "krebs-cycle-and-electron-transport",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.86,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11ci",
+     "id": "bio-2026-hl-q11-c-i",
+     "questionRef": "2026 HL Q11(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "light-dependent-stage",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11cii1",
+     "id": "bio-2026-hl-q11-c-ii-1",
+     "questionRef": "2026 HL Q11(c)(ii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "chlorophyll-releases-electrons",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11cii2",
+     "id": "bio-2026-hl-q11-c-ii-2",
+     "questionRef": "2026 HL Q11(c)(ii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "cyclic-electron-flow",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11ciii1",
+     "id": "bio-2026-hl-q11-c-iii-1",
+     "questionRef": "2026 HL Q11(c)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "photolysis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11ciii2",
+     "id": "bio-2026-hl-q11-c-iii-2",
+     "questionRef": "2026 HL Q11(c)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "where-water-is-split",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11civ",
+     "id": "bio-2026-hl-q11-c-iv",
+     "questionRef": "2026 HL Q11(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "fate-of-protons",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "11cv",
+     "id": "bio-2026-hl-q11-c-v",
+     "questionRef": "2026 HL Q11(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "greenhouse-crop-growth",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12ai",
+     "id": "bio-2026-hl-q12-a-i",
+     "questionRef": "2026 HL Q12(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "competition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12aii",
+     "id": "bio-2026-hl-q12-a-ii",
+     "questionRef": "2026 HL Q12(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "types-of-competition",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12bi",
+     "id": "bio-2026-hl-q12-b-i",
+     "questionRef": "2026 HL Q12(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "behavioural-adaptation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12bii",
+     "id": "bio-2026-hl-q12-b-ii",
+     "questionRef": "2026 HL Q12(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "benefit-of-an-adaptation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12biii",
+     "id": "bio-2026-hl-q12-b-iii",
+     "questionRef": "2026 HL Q12(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "population-recovery",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12biv",
+     "id": "bio-2026-hl-q12-b-iv",
+     "questionRef": "2026 HL Q12(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "food-chain",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12bv",
+     "id": "bio-2026-hl-q12-b-v",
+     "questionRef": "2026 HL Q12(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "pyramid-of-numbers",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12bvi",
+     "id": "bio-2026-hl-q12-b-vi",
+     "questionRef": "2026 HL Q12(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      2,
+      1
+     ],
+     "topic": "bio-3-1",
+     "concept": "predator-prey-graph",
+     "route": null,
+     "rows": 2,
+     "figure": "q12-population-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12bvii",
+     "id": "bio-2026-hl-q12-b-vii",
+     "questionRef": "2026 HL Q12(b)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "predator-prey-time-lag",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-population-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12bviii",
+     "id": "bio-2026-hl-q12-b-viii",
+     "questionRef": "2026 HL Q12(b)(viii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "factors-controlling-populations",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12ci",
+     "id": "bio-2026-hl-q12-c-i",
+     "questionRef": "2026 HL Q12(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "conservation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12cii",
+     "id": "bio-2026-hl-q12-c-ii-agriculture",
+     "questionRef": "2026 HL Q12(c)(ii) — agriculture",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "conservation-practice-agriculture",
+     "route": "agriculture",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Closed choose-one pool of three printed areas: one card per area at the route tariff of 6.",
+     "notes": null
+    },
+    {
+     "key": "12cii",
+     "id": "bio-2026-hl-q12-c-ii-fisheries",
+     "questionRef": "2026 HL Q12(c)(ii) — fisheries",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "conservation-practice-fisheries",
+     "route": "fisheries",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Closed choose-one pool of three printed areas: one card per area at the route tariff of 6.",
+     "notes": null
+    },
+    {
+     "key": "12cii",
+     "id": "bio-2026-hl-q12-c-ii-forestry",
+     "questionRef": "2026 HL Q12(c)(ii) — forestry",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "conservation-practice-forestry",
+     "route": "forestry",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Closed choose-one pool of three printed areas: one card per area at the route tariff of 6.",
+     "notes": null
+    },
+    {
+     "key": "12ciii",
+     "id": "bio-2026-hl-q12-c-iii-agriculture",
+     "questionRef": "2026 HL Q12(c)(iii) — agriculture",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "waste-management-agriculture",
+     "route": "agriculture",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Closed choose-one pool of three printed areas: one card per area at the route tariff of 3.",
+     "notes": null
+    },
+    {
+     "key": "12ciii",
+     "id": "bio-2026-hl-q12-c-iii-fisheries",
+     "questionRef": "2026 HL Q12(c)(iii) — fisheries",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "waste-management-fisheries",
+     "route": "fisheries",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Closed choose-one pool of three printed areas: one card per area at the route tariff of 3.",
+     "notes": null
+    },
+    {
+     "key": "12ciii",
+     "id": "bio-2026-hl-q12-c-iii-forestry",
+     "questionRef": "2026 HL Q12(c)(iii) — forestry",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "waste-management-forestry",
+     "route": "forestry",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Closed choose-one pool of three printed areas: one card per area at the route tariff of 3.",
+     "notes": null
+    },
+    {
+     "key": "12civ",
+     "id": "bio-2026-hl-q12-c-iv",
+     "questionRef": "2026 HL Q12(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "pollution",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12cv",
+     "id": "bio-2026-hl-q12-c-v",
+     "questionRef": "2026 HL Q12(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "pollutant-and-effect",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "12cvi",
+     "id": "bio-2026-hl-q12-c-vi",
+     "questionRef": "2026 HL Q12(c)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "waste-disposal-problems",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "13a",
+     "id": "bio-2026-hl-q13-a",
+     "questionRef": "2026 HL Q13(a)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-1-2",
+     "concept": "dna-nucleotide",
+     "route": null,
+     "rows": 3,
+     "figure": "q13a-scheme-nucleotide",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "13bi",
+     "id": "bio-2026-hl-q13-b-i",
+     "questionRef": "2026 HL Q13(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "sex-linkage-and-recessive-alleles",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": [
+      4
+     ],
+     "pairingScore": 1.0,
+     "decision": "The paper underlines the two terms. The lifted text cannot carry an underline, so the official question page opens from the card; a crop of the full-width paragraph was tried and is illegible at phone width.",
+     "notes": null
+    },
+    {
+     "key": "13bii",
+     "id": "bio-2026-hl-q13-b-ii",
+     "questionRef": "2026 HL Q13(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "heterozygous-female-genotype",
+     "route": null,
+     "rows": 1,
+     "figure": "q13b-ii-scheme",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "13biii",
+     "id": "bio-2026-hl-q13-b-iii",
+     "questionRef": "2026 HL Q13(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "colour-blind-male-genotype",
+     "route": null,
+     "rows": 1,
+     "figure": "q13b-iii-scheme",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "13biv",
+     "id": "bio-2026-hl-q13-b-iv",
+     "questionRef": "2026 HL Q13(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-1-4",
+     "concept": "sex-linked-cross",
+     "route": null,
+     "rows": 2,
+     "figure": "q13b-iv-scheme",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Four genotypes at 2 and four phenotypes at 1, all asterisked: two all-of menus keep the 2/1 split within the row cap.",
+     "notes": null
+    },
+    {
+     "key": "13bv",
+     "id": "bio-2026-hl-q13-b-v",
+     "questionRef": "2026 HL Q13(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "why-males-are-colour-blind",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "13ci",
+     "id": "bio-2026-hl-q13-c-i",
+     "questionRef": "2026 HL Q13(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-5",
+     "concept": "evolution-and-variation",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": [
+      4
+     ],
+     "pairingScore": 1.0,
+     "decision": "The underlined terms are visible on the official question page, which opens from the card.",
+     "notes": null
+    },
+    {
+     "key": "13cii",
+     "id": "bio-2026-hl-q13-c-ii",
+     "questionRef": "2026 HL Q13(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "types-of-mutation",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "13ciii",
+     "id": "bio-2026-hl-q13-c-iii",
+     "questionRef": "2026 HL Q13(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      2,
+      1
+     ],
+     "topic": "bio-1-5",
+     "concept": "darwin-and-wallace",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "13civ",
+     "id": "bio-2026-hl-q13-c-iv",
+     "questionRef": "2026 HL Q13(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-5",
+     "concept": "why-produce-many-offspring",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "13cv",
+     "id": "bio-2026-hl-q13-c-v",
+     "questionRef": "2026 HL Q13(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-5",
+     "concept": "favourable-traits",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "13cvi",
+     "id": "bio-2026-hl-q13-c-vi",
+     "questionRef": "2026 HL Q13(c)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-5",
+     "concept": "evidence-for-natural-selection",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14ai",
+     "id": "bio-2026-hl-q14-a-i",
+     "questionRef": "2026 HL Q14(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "cotyledon",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14aii",
+     "id": "bio-2026-hl-q14-a-ii",
+     "questionRef": "2026 HL Q14(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "monocots-and-dicots",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14bi",
+     "id": "bio-2026-hl-q14-b-i",
+     "questionRef": "2026 HL Q14(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "ovule-becomes-seed",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14bii",
+     "id": "bio-2026-hl-q14-b-ii",
+     "questionRef": "2026 HL Q14(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "seed-dispersal-methods",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14biii",
+     "id": "bio-2026-hl-q14-b-iii",
+     "questionRef": "2026 HL Q14(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "advantage-of-seed-dispersal",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14biv",
+     "id": "bio-2026-hl-q14-b-iv",
+     "questionRef": "2026 HL Q14(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "advantage-of-dormancy",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14bv1",
+     "id": "bio-2026-hl-q14-b-v-1",
+     "questionRef": "2026 HL Q14(b)(v)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "germination",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-germinating-seed",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14bv2",
+     "id": "bio-2026-hl-q14-b-v-2",
+     "questionRef": "2026 HL Q14(b)(v)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-5",
+     "concept": "testa",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-germinating-seed",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14bv3",
+     "id": "bio-2026-hl-q14-b-v-3",
+     "questionRef": "2026 HL Q14(b)(v)3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-2-5",
+     "concept": "radicle-and-plumule",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-germinating-seed",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14bvi",
+     "id": "bio-2026-hl-q14-b-vi",
+     "questionRef": "2026 HL Q14(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "water-in-germination",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14bvii",
+     "id": "bio-2026-hl-q14-b-vii",
+     "questionRef": "2026 HL Q14(b)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "temperature-in-germination",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14ci",
+     "id": "bio-2026-hl-q14-c-i",
+     "questionRef": "2026 HL Q14(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       24
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "xylem-carries-minerals",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-xylem-vessel",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14cii",
+     "id": "bio-2026-hl-q14-c-ii",
+     "questionRef": "2026 HL Q14(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       24
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "xylem-structure",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-xylem-vessel",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14ciii1",
+     "id": "bio-2026-hl-q14-c-iii-1",
+     "questionRef": "2026 HL Q14(c)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       24
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      2,
+      1
+     ],
+     "topic": "bio-2-6",
+     "concept": "dixon-and-joly",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-xylem-vessel",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "14ciii2",
+     "id": "bio-2026-hl-q14-c-iii-2",
+     "questionRef": "2026 HL Q14(c)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       24
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "cohesion-tension-model",
+     "route": null,
+     "rows": 4,
+     "figure": "q14-xylem-vessel",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "15ai",
+     "id": "bio-2026-hl-q15-a-i",
+     "questionRef": "2026 HL Q15(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "contraception",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "15aii",
+     "id": "bio-2026-hl-q15-a-ii",
+     "questionRef": "2026 HL Q15(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      2,
+      2,
+      2
+     ],
+     "topic": "bio-2-5",
+     "concept": "methods-of-contraception",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "15bi",
+     "id": "bio-2026-hl-q15-b-i",
+     "questionRef": "2026 HL Q15(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-2-5",
+     "concept": "female-reproductive-system",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "15bii",
+     "id": "bio-2026-hl-q15-b-ii",
+     "questionRef": "2026 HL Q15(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "role-of-oestrogen",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "15biii",
+     "id": "bio-2026-hl-q15-b-iii",
+     "questionRef": "2026 HL Q15(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "female-sex-hormones",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Open choice of hormone; the scheme prints three name-and-function routes (progesterone, FSH, LH). Carded once with the three as answer variants, not as separate cards, because the paper prints no pool.",
+     "notes": null
+    },
+    {
+     "key": "15biv",
+     "id": "bio-2026-hl-q15-b-iv",
+     "questionRef": "2026 HL Q15(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "menstrual-disorder-cause",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "15ci",
+     "id": "bio-2026-hl-q15-c-i",
+     "questionRef": "2026 HL Q15(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-2-5",
+     "concept": "zygote-morula-blastocyst",
+     "route": null,
+     "rows": 3,
+     "figure": "q15-embryo-stages",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "15cii",
+     "id": "bio-2026-hl-q15-c-ii",
+     "questionRef": "2026 HL Q15(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "where-the-morula-forms",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-embryo-stages",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.88,
+     "decision": null,
+     "notes": "The paper says \"reproductive system\"; the scheme reprint says \"reproductive tract\"."
+    },
+    {
+     "key": "15ciii",
+     "id": "bio-2026-hl-q15-c-iii",
+     "questionRef": "2026 HL Q15(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "implantation",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-embryo-stages",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "15civ",
+     "id": "bio-2026-hl-q15-c-iv",
+     "questionRef": "2026 HL Q15(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      2,
+      2,
+      2,
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-2-5",
+     "concept": "germ-layers",
+     "route": null,
+     "rows": 2,
+     "figure": "q15-embryo-stages",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Three layers at 2 and a matching structure for each at 1: two all-of menus keep the 2/1 tariff within the row cap.",
+     "notes": null
+    },
+    {
+     "key": "15cv",
+     "id": "bio-2026-hl-q15-c-v",
+     "questionRef": "2026 HL Q15(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "treating-infertility",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16ai1",
+     "id": "bio-2026-hl-q16-a-i-1",
+     "questionRef": "2026 HL Q16(a)(i)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "mitosis",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-cell-division",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": "Scheme erratum: full marks for (i) and (ii) to every candidate who attempted 16(a)."
+    },
+    {
+     "key": "16ai2",
+     "id": "bio-2026-hl-q16-a-i-2",
+     "questionRef": "2026 HL Q16(a)(i)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "meiosis",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-cell-division",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16aii1",
+     "id": "bio-2026-hl-q16-a-ii-1",
+     "questionRef": "2026 HL Q16(a)(ii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "role-of-mitosis",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-cell-division",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16aii2",
+     "id": "bio-2026-hl-q16-a-ii-2",
+     "questionRef": "2026 HL Q16(a)(ii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "role-of-meiosis",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-cell-division",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16aiii",
+     "id": "bio-2026-hl-q16-a-iii",
+     "questionRef": "2026 HL Q16(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "haploid-and-diploid",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16aiv",
+     "id": "bio-2026-hl-q16-a-iv",
+     "questionRef": "2026 HL Q16(a)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-2-3",
+     "concept": "anaphase-of-mitosis",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16av",
+     "id": "bio-2026-hl-q16-a-v",
+     "questionRef": "2026 HL Q16(a)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "cancer",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16bi",
+     "id": "bio-2026-hl-q16-b-i",
+     "questionRef": "2026 HL Q16(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       28
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      2,
+      1
+     ],
+     "topic": "bio-3-2",
+     "concept": "virus-biomolecules",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-virus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16bii",
+     "id": "bio-2026-hl-q16-b-ii",
+     "questionRef": "2026 HL Q16(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       28
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "virus-shapes",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-virus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16biii",
+     "id": "bio-2026-hl-q16-b-iii",
+     "questionRef": "2026 HL Q16(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       28
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "viral-replication",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-virus-host",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16biv",
+     "id": "bio-2026-hl-q16-b-iv",
+     "questionRef": "2026 HL Q16(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       28
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "red-blood-cells-and-viruses",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16bv",
+     "id": "bio-2026-hl-q16-b-v",
+     "questionRef": "2026 HL Q16(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       28
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "harmful-viruses",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16bvi",
+     "id": "bio-2026-hl-q16-b-vi",
+     "questionRef": "2026 HL Q16(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       28
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "beneficial-viruses",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16ci",
+     "id": "bio-2026-hl-q16-c-i",
+     "questionRef": "2026 HL Q16(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       29
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "plasmolysis",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-plant-cells",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16cii",
+     "id": "bio-2026-hl-q16-c-ii",
+     "questionRef": "2026 HL Q16(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       29
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "turgidity",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-plant-cells",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16ciii1",
+     "id": "bio-2026-hl-q16-c-iii-1",
+     "questionRef": "2026 HL Q16(c)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       29
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "diffusion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.75,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16ciii2",
+     "id": "bio-2026-hl-q16-c-iii-2",
+     "questionRef": "2026 HL Q16(c)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       29
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "osmosis-as-special-diffusion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.75,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16ciii3",
+     "id": "bio-2026-hl-q16-c-iii-3",
+     "questionRef": "2026 HL Q16(c)(iii)3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       29
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "passive-transport",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16civ",
+     "id": "bio-2026-hl-q16-c-iv",
+     "questionRef": "2026 HL Q16(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       29
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "how-plant-cells-keep-their-shape",
+     "route": null,
+     "rows": 2,
+     "figure": "q16-plant-cells",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16cv",
+     "id": "bio-2026-hl-q16-c-v",
+     "questionRef": "2026 HL Q16(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       29
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "comparing-solutions",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-plant-cells",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16cvi",
+     "id": "bio-2026-hl-q16-c-vi",
+     "questionRef": "2026 HL Q16(c)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       29
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "animal-cell-in-dilute-solution",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-plant-cells",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16cvii",
+     "id": "bio-2026-hl-q16-c-vii",
+     "questionRef": "2026 HL Q16(c)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       29
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      2,
+      1
+     ],
+     "topic": "bio-2-6",
+     "concept": "osmosis-in-food-preservation",
+     "route": null,
+     "rows": 2,
+     "figure": "q16-plant-cells",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16di",
+     "id": "bio-2026-hl-q16-d-i",
+     "questionRef": "2026 HL Q16(d)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       30
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "yeast-kingdom",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-yeast",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16dii",
+     "id": "bio-2026-hl-q16-d-ii",
+     "questionRef": "2026 HL Q16(d)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       30
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "budding",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-yeast",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16diii",
+     "id": "bio-2026-hl-q16-d-iii",
+     "questionRef": "2026 HL Q16(d)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       30
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "advantage-of-asexual-reproduction",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16div",
+     "id": "bio-2026-hl-q16-d-iv",
+     "questionRef": "2026 HL Q16(d)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       30
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-3-2",
+     "concept": "yeast-cell-structure",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-yeast",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16dv",
+     "id": "bio-2026-hl-q16-d-v",
+     "questionRef": "2026 HL Q16(d)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       30
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "asepsis-and-sterility",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16dvi",
+     "id": "bio-2026-hl-q16-d-vi",
+     "questionRef": "2026 HL Q16(d)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       30
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "rhizopus",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16dvii",
+     "id": "bio-2026-hl-q16-d-vii",
+     "questionRef": "2026 HL Q16(d)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       30
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "asexual-reproduction-in-rhizopus",
+     "route": null,
+     "rows": 1,
+     "figure": "q16-yeast",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "16dviii",
+     "id": "bio-2026-hl-q16-d-viii",
+     "questionRef": "2026 HL Q16(d)(viii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       30
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "unicellular-organisms",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17ai",
+     "id": "bio-2026-hl-q17-a-i",
+     "questionRef": "2026 HL Q17(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       31
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-2-6",
+     "concept": "arterioles-and-venules",
+     "route": null,
+     "rows": 2,
+     "figure": "q17-capillary-network",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17aii1",
+     "id": "bio-2026-hl-q17-a-ii-1",
+     "questionRef": "2026 HL Q17(a)(ii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       31
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "blood-pressure",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17aii2",
+     "id": "bio-2026-hl-q17-a-ii-2",
+     "questionRef": "2026 HL Q17(a)(ii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       31
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "pulse",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17aiii",
+     "id": "bio-2026-hl-q17-a-iii",
+     "questionRef": "2026 HL Q17(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       31
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "blood-pressure-in-capillaries",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-capillary-network",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17aiv",
+     "id": "bio-2026-hl-q17-a-iv",
+     "questionRef": "2026 HL Q17(a)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       31
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      2,
+      2,
+      2,
+      1,
+      1
+     ],
+     "topic": "bio-2-6",
+     "concept": "artery-vein-capillary",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17av",
+     "id": "bio-2026-hl-q17-a-v",
+     "questionRef": "2026 HL Q17(a)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       31
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "lymph-vessels",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.86,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17avi1",
+     "id": "bio-2026-hl-q17-a-vi-1",
+     "questionRef": "2026 HL Q17(a)(vi)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       31
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "exercise-and-the-circulatory-system",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17avi2",
+     "id": "bio-2026-hl-q17-a-vi-2",
+     "questionRef": "2026 HL Q17(a)(vi)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       31
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "diet-and-the-circulatory-system",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17bi1",
+     "id": "bio-2026-hl-q17-b-i-1",
+     "questionRef": "2026 HL Q17(b)(i)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       32
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "sweat-gland-in-skin",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-skin",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17bi2",
+     "id": "bio-2026-hl-q17-b-i-2",
+     "questionRef": "2026 HL Q17(b)(i)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       32
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "hair-in-skin",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-skin",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17bii",
+     "id": "bio-2026-hl-q17-b-ii",
+     "questionRef": "2026 HL Q17(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       32
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "components-of-sweat",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17biii",
+     "id": "bio-2026-hl-q17-b-iii",
+     "questionRef": "2026 HL Q17(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       32
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      2,
+      2,
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "sweating-and-temperature",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17biv",
+     "id": "bio-2026-hl-q17-b-iv",
+     "questionRef": "2026 HL Q17(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       32
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      2,
+      2,
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "hair-and-temperature",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17bv",
+     "id": "bio-2026-hl-q17-b-v",
+     "questionRef": "2026 HL Q17(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       32
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "endotherms",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17bvi",
+     "id": "bio-2026-hl-q17-b-vi",
+     "questionRef": "2026 HL Q17(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       32
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "homeostasis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17bvii",
+     "id": "bio-2026-hl-q17-b-vii",
+     "questionRef": "2026 HL Q17(b)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       32
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "why-homeostasis-matters",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17ci",
+     "id": "bio-2026-hl-q17-c-i",
+     "questionRef": "2026 HL Q17(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       33
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "excretion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17cii1",
+     "id": "bio-2026-hl-q17-c-ii-1",
+     "questionRef": "2026 HL Q17(c)(ii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       33
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      3,
+      3,
+      1,
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-2-6",
+     "concept": "urinary-system",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17cii2",
+     "id": "bio-2026-hl-q17-c-ii-2",
+     "questionRef": "2026 HL Q17(c)(ii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       33
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-6",
+     "concept": "path-of-urine",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17ciii1",
+     "id": "bio-2026-hl-q17-c-iii-1",
+     "questionRef": "2026 HL Q17(c)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       33
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-6",
+     "concept": "nephron",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-nephron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17ciii2",
+     "id": "bio-2026-hl-q17-c-iii-2",
+     "questionRef": "2026 HL Q17(c)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       33
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-2-6",
+     "concept": "bowmans-capsule-and-loop-of-henle",
+     "route": null,
+     "rows": 2,
+     "figure": "q17-nephron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17ciii3",
+     "id": "bio-2026-hl-q17-c-iii-3",
+     "questionRef": "2026 HL Q17(c)(iii)3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       33
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "filtration-and-reabsorption",
+     "route": null,
+     "rows": 2,
+     "figure": "q17-nephron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17civ",
+     "id": "bio-2026-hl-q17-c-iv",
+     "questionRef": "2026 HL Q17(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       33
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "no-protein-in-urine",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17di",
+     "id": "bio-2026-hl-q17-d-i",
+     "questionRef": "2026 HL Q17(d)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       34
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "cerebrospinal-fluid",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-spinal-cord",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17dii1",
+     "id": "bio-2026-hl-q17-d-ii-1",
+     "questionRef": "2026 HL Q17(d)(ii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       34
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "meninges",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-spinal-cord",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.9,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17dii2",
+     "id": "bio-2026-hl-q17-d-ii-2",
+     "questionRef": "2026 HL Q17(d)(ii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       34
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "vertebrae-protect-the-cord",
+     "route": null,
+     "rows": 1,
+     "figure": "q17-spinal-cord",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.86,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17diii",
+     "id": "bio-2026-hl-q17-d-iii",
+     "questionRef": "2026 HL Q17(d)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       34
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "white-and-grey-matter",
+     "route": null,
+     "rows": 2,
+     "figure": "q17-spinal-cord",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17div1",
+     "id": "bio-2026-hl-q17-d-iv-1",
+     "questionRef": "2026 HL Q17(d)(iv)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       34
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "neuron-diagram",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17div2",
+     "id": "bio-2026-hl-q17-d-iv-2",
+     "questionRef": "2026 HL Q17(d)(iv)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       34
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-2-4",
+     "concept": "parts-of-a-neuron",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17div3",
+     "id": "bio-2026-hl-q17-d-iv-3",
+     "questionRef": "2026 HL Q17(d)(iv)3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       34
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "direction-of-an-impulse",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.86,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "key": "17dv",
+     "id": "bio-2026-hl-q17-d-v",
+     "questionRef": "2026 HL Q17(d)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       34
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "reflex-action",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    }
+   ],
+   "cardCount": 188,
+   "baseTaskCount": 184,
+   "figures": [
+    "biology-2026-hl-q12-population-graph",
+    "biology-2026-hl-q13a-scheme-nucleotide",
+    "biology-2026-hl-q13b-ii-scheme",
+    "biology-2026-hl-q13b-iii-scheme",
+    "biology-2026-hl-q13b-iv-scheme",
+    "biology-2026-hl-q14-germinating-seed",
+    "biology-2026-hl-q14-xylem-vessel",
+    "biology-2026-hl-q15-embryo-stages",
+    "biology-2026-hl-q16-cell-division",
+    "biology-2026-hl-q16-plant-cells",
+    "biology-2026-hl-q16-virus",
+    "biology-2026-hl-q16-virus-host",
+    "biology-2026-hl-q16-yeast",
+    "biology-2026-hl-q17-capillary-network",
+    "biology-2026-hl-q17-nephron",
+    "biology-2026-hl-q17-skin",
+    "biology-2026-hl-q17-spinal-cord",
+    "biology-2026-hl-q2-cheek-cells",
+    "biology-2026-hl-q3-breathing-system",
+    "biology-2026-hl-q4-graphs",
+    "biology-2026-hl-q4-leaf-surface",
+    "biology-2026-hl-q4d-scheme-graph",
+    "biology-2026-hl-q5-translation",
+    "biology-2026-hl-q6-nitrogen-cycle"
+   ],
+   "checks": {
+    "censusLeaves": 163,
+    "censusLeavesClaimed": 163,
+    "atlas": {
+     "1": {
+      "atlasTopics": [
+       "biology-higher-new-course-12-chemicals-of-life-biomolecules",
+       "biology-higher-old-course-food-food-tests"
+      ],
+      "taskTopics": [
+       "bio-1-2"
+      ]
+     },
+     "2": {
+      "atlasTopics": [
+       "biology-higher-new-course-13-unit-of-life-cells",
+       "biology-higher-old-course-cell-structure"
+      ],
+      "taskTopics": [
+       "bio-1-3"
+      ]
+     },
+     "3": {
+      "atlasTopics": [
+       "biology-higher-new-course-26-the-breathing-system",
+       "biology-higher-old-course-breathing-system"
+      ],
+      "taskTopics": [
+       "bio-2-6"
+      ]
+     },
+     "4": {
+      "atlasTopics": [
+       "biology-higher-new-course-26-plant-structure-and-transport",
+       "biology-higher-old-course-plant-structure",
+       "biology-higher-old-course-plant-transport"
+      ],
+      "taskTopics": [
+       "bio-2-6"
+      ]
+     },
+     "5": {
+      "atlasTopics": [
+       "biology-higher-new-course-12-dna-rna-and-the-genetic-code",
+       "biology-higher-new-course-23-dna-replication-protein-synthesis-and-mutations",
+       "biology-higher-old-course-genetics-dna-evolution"
+      ],
+      "taskTopics": [
+       "bio-2-3"
+      ]
+     },
+     "6": {
+      "atlasTopics": [
+       "biology-higher-new-course-32-nutrient-recycling",
+       "biology-higher-new-course-32-microorganisms",
+       "biology-higher-old-course-ecology",
+       "biology-higher-old-course-bacteria"
+      ],
+      "taskTopics": [
+       "bio-3-2"
+      ]
+     },
+     "7": {
+      "atlasTopics": [
+       "biology-higher-new-course-24-the-nervous-system",
+       "biology-higher-new-course-24-the-endocrine-system",
+       "biology-higher-new-course-26-the-digestive-system",
+       "biology-higher-new-course-26-the-circulatory-system-and-blood",
+       "biology-higher-old-course-eye-and-ear",
+       "biology-higher-old-course-nervous-system",
+       "biology-higher-old-course-hormonalendocrine-system",
+       "biology-higher-old-course-digestive-system",
+       "biology-higher-old-course-blood-circulatory-system"
+      ],
+      "taskTopics": [
+       "bio-2-4",
+       "bio-2-6"
+      ]
+     },
+     "8": {
+      "atlasTopics": [
+       "biology-higher-new-course-u2-investigating-in-science",
+       "biology-higher-new-course-12-chemicals-of-life-biomolecules",
+       "biology-higher-new-course-13-unit-of-life-cells",
+       "biology-higher-new-course-12-dna-rna-and-the-genetic-code",
+       "biology-higher-old-course-experiment-questions",
+       "biology-higher-old-course-food-food-tests",
+       "biology-higher-old-course-cell-structure",
+       "biology-higher-old-course-genetics-dna-evolution"
+      ],
+      "taskTopics": [
+       "bio-1-2",
+       "bio-1-3",
+       "bio-u2"
+      ]
+     },
+     "9": {
+      "atlasTopics": [
+       "biology-higher-new-course-21-enzymes",
+       "biology-higher-new-course-u2-investigating-in-science",
+       "biology-higher-old-course-cell-metabolism-enzymes",
+       "biology-higher-old-course-experiment-questions"
+      ],
+      "taskTopics": [
+       "bio-2-1"
+      ]
+     },
+     "10": {
+      "atlasTopics": [
+       "biology-higher-new-course-24-plant-responses",
+       "biology-higher-new-course-u2-investigating-in-science",
+       "biology-higher-old-course-plant-responses",
+       "biology-higher-old-course-experiment-questions"
+      ],
+      "taskTopics": [
+       "bio-2-4"
+      ]
+     },
+     "11": {
+      "atlasTopics": [
+       "biology-higher-new-course-22-respiration",
+       "biology-higher-new-course-22-photosynthesis",
+       "biology-higher-old-course-respiration",
+       "biology-higher-old-course-photosynthesis"
+      ],
+      "taskTopics": [
+       "bio-2-2"
+      ]
+     },
+     "12": {
+      "atlasTopics": [
+       "biology-higher-new-course-31-ecology-ecosystems-and-biodiversity",
+       "biology-higher-new-course-31-investigating-an-ecosystem",
+       "biology-higher-new-course-32-nutrient-recycling",
+       "biology-higher-old-course-ecology",
+       "biology-higher-old-course-the-study-of-an-ecosystem"
+      ],
+      "taskTopics": [
+       "bio-3-1"
+      ]
+     },
+     "13": {
+      "atlasTopics": [
+       "biology-higher-new-course-12-dna-rna-and-the-genetic-code",
+       "biology-higher-new-course-14-information-of-life-genetic-inheritance",
+       "biology-higher-new-course-15-origins-of-life-evolution",
+       "biology-higher-new-course-23-dna-replication-protein-synthesis-and-mutations",
+       "biology-higher-old-course-genetics-dna-evolution"
+      ],
+      "taskTopics": [
+       "bio-1-2",
+       "bio-1-4",
+       "bio-1-5",
+       "bio-2-3"
+      ]
+     },
+     "14": {
+      "atlasTopics": [
+       "biology-higher-new-course-25-reproduction-plant",
+       "biology-higher-new-course-26-plant-structure-and-transport",
+       "biology-higher-old-course-plant-reproduction",
+       "biology-higher-old-course-plant-structure",
+       "biology-higher-old-course-plant-transport"
+      ],
+      "taskTopics": [
+       "bio-2-5",
+       "bio-2-6"
+      ]
+     },
+     "15": {
+      "atlasTopics": [
+       "biology-higher-new-course-25-reproduction-human",
+       "biology-higher-old-course-human-reproduction"
+      ],
+      "taskTopics": [
+       "bio-2-5"
+      ]
+     },
+     "16": {
+      "atlasTopics": [
+       "biology-higher-new-course-23-cell-division-and-cancer",
+       "biology-higher-new-course-11-viruses-classification-and-the-domains-of-life",
+       "biology-higher-new-course-26-transport-across-membranes",
+       "biology-higher-new-course-32-microorganisms",
+       "biology-higher-old-course-cell-division",
+       "biology-higher-old-course-viruses",
+       "biology-higher-old-course-movement-through-cell-membranes",
+       "biology-higher-old-course-fungi",
+       "biology-higher-old-course-protista"
+      ],
+      "taskTopics": [
+       "bio-2-3",
+       "bio-2-6",
+       "bio-3-2"
+      ]
+     },
+     "17": {
+      "atlasTopics": [
+       "biology-higher-new-course-26-the-circulatory-system-and-blood",
+       "biology-higher-new-course-24-homeostasis",
+       "biology-higher-new-course-26-the-urinary-system",
+       "biology-higher-new-course-24-the-nervous-system",
+       "biology-higher-old-course-blood-circulatory-system",
+       "biology-higher-old-course-excretion-thermoregulation",
+       "biology-higher-old-course-nervous-system"
+      ],
+      "taskTopics": [
+       "bio-2-4",
+       "bio-2-6"
+      ]
+     }
+    },
+    "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (biology-<year>-exam-topic-map.json via biology-curriculum-crosswalk.json)",
+    "tickChecksumsMatched": 36
+   }
+  }
+ }
+}
