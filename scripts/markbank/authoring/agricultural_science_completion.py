@@ -23,6 +23,7 @@ from agricultural_science_2011_ol_irish import paper_review as irish_2011_ordina
 from agricultural_science_2011_ol import reviewed_tasks as reviewed_2011_ol, paper_review as ordinary_2011_review
 
 from agricultural_science_2012_hl import reviewed_tasks as reviewed_2012_hl, paper_review as higher_2012_review
+from agricultural_science_2026_hl import reviewed_tasks as reviewed_2026_hl, paper_review as higher_2026_review
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -155,9 +156,16 @@ def reviewed_tasks():
     cards.extend(higher_2012_cards)
     reviews.extend(higher_2012_tasks)
     paper_reviews.append(higher_2012_review())
+    higher_2026_cards, higher_2026_tasks = reviewed_2026_hl()
+    cards.extend(higher_2026_cards)
+    reviews.extend(higher_2026_tasks)
+    paper_reviews.append(higher_2026_review())
+    # Batches reviewed after 7 October carry their own review date; earlier
+    # reviewed card objects must stay byte-identical.
+    batch_dates = {id(card): '2026-10-11' for card in higher_2026_cards}
     for reviewed in cards:
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
-                          'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':'2026-10-07'}
+                          'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':batch_dates.get(id(reviewed),'2026-10-07')}
     return cards, {'status': 'in-progress', 'reviewedAt': '2026-10-07',
                    'addedCardIds': [c['id'] for c in cards if c['id'] != 'agsci-2025-ol-q8b'],
                    'correctedCardIds': ['agsci-2025-ol-q8b'], 'tasks': reviews,

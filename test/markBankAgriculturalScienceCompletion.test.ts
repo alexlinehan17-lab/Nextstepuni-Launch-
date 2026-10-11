@@ -38,7 +38,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(62);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(61);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(1);
   });
 
@@ -390,7 +390,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(9);
+    expect(review.paperReviews).toHaveLength(10);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -410,6 +410,70 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(irish2011.q.find(q => q.n === '6')?.schemeNote).toContain('high protein');
     expect(irish2011.q.find(q => q.n === '7')?.schemeNote).toContain('CcFf');
     expect(preferredAnswersUrl('agricultural-science',2011,'LC024ALP000IV.pdf','old-storage')).toBe('/paper-answers/2011/LC024ALP000IV.pdf.json');
+  });
+
+  it('expands every printed 2026 Higher pool mechanically at the route tariff', () => {
+    const year = higher.filter(card => card.year === 2026);
+    expect(year).toHaveLength(112);
+    const pools: Array<[string, number, number, string[]]> = [
+      ['q2b', 4, 10, ['fertilising-light-genetic', 'fertilising-light-grassland', 'fertilising-genetic-grassland', 'light-genetic-grassland']],
+      ['q7', 15, 10, []],
+      ['q10a', 3, 5, ['ab', 'ac', 'bc']],
+      ['q14ci', 2, 9, ['a', 'b']],
+      ['q18ciii', 2, 3, ['plants', 'animals']],
+    ];
+    for (const [key, count, marks, suffixes] of pools) {
+      const routes = year.filter(card => card.id.startsWith(`agsci-2026-hl-${key}-route-`));
+      expect(routes, key).toHaveLength(count);
+      expect(new Set(routes.map(card => card.questionText)).size, key).toBe(1);
+      if (suffixes.length) expect(routes.map(card => card.id.split('-route-')[1])).toEqual(suffixes);
+      for (const candidate of routes) {
+        const card = get(candidate.id);
+        expect(card.totalMarks).toBe(marks);
+        expect(card.stem).toContain('Practice choice:');
+        expect(tariffReconciles(card)).toBe(true);
+        const task = review.tasks.find(task => task.cardIds.includes(card.id))!;
+        expect(task.selection.kind).toBe('closed');
+      }
+    }
+    const benefits = get('agsci-2026-hl-q7-route-carbon-losses-food-nutrients');
+    expect(benefits.rows[0].group?.options).toHaveLength(4);
+    expect(benefits.rows[0].group?.perOptionSteps).toEqual([5, 3, 1, 1]);
+    expect(marksClaimed(benefits, {}, { 'r-1': [3] })).toBe(5);
+    expect(marksClaimed(benefits, {}, { 'r-1': [0, 1, 2, 3] })).toBe(10);
+    // Section A questions total 10 and Section B 50 for every candidate route.
+    const units = census.questionMarkChecks.filter(check => check.year === 2026 && check.level === 'higher');
+    expect(units).toHaveLength(18);
+    for (const check of units) expect(check.candidateTotalsFromScheme).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+  });
+
+  it('keeps 2026 Higher drawings, graph and fertility comparisons under the published manual totals', () => {
+    for (const [key, total] of [['q8b', 5], ['q13ci', 12], ['q15bi', 10], ['q17aiv', 11]] as const) {
+      const card = get(`agsci-2026-hl-${key}`);
+      expect(card.tariffModel.kind).toBe('questionTotal');
+      expect(card.totalMarks).toBe(total);
+      expect(card.rows.every(row => row.kind === 'criterion' && row.marks === null)).toBe(true);
+    }
+    expect(get('agsci-2026-hl-q15bi').figure?.solution).toBe(true);
+    expect(get('agsci-2026-hl-q17aiv').rows[0].contextNote).toContain('4+4+3');
+    expect(get('agsci-2026-hl-q11bi').rows[0].contextNote).toContain('floor space alone');
+    const map: PaperAnswerMap = JSON.parse(readFileSync(resolve(__dirname, '../public/paper-answers/2026/LC024ALP000EV.pdf.json'), 'utf8'));
+    expect(map.q.find(q => q.n === '11')?.schemeNote).toContain('feed space');
+    expect(map.q.find(q => q.n === '17')?.schemeNote).toContain('4+4+3');
+    expect(preferredAnswersUrl('agricultural-science', 2026, 'LC024ALP000EV.pdf', 'old-storage')).toBe('/paper-answers/2026/LC024ALP000EV.pdf.json');
+    const flocculation = get('agsci-2026-hl-q13biii');
+    expect(flocculation.totalMarks).toBe(16);
+    expect(flocculation.rows[0].contextNote).toContain('Compulsory');
+    expect(marksClaimed(flocculation, { 'r-1': 'yes' }, { 'r-2': [0, 1, 2] })).toBe(16);
+    const minerals = get('agsci-2026-hl-q4c');
+    expect(minerals.answerVariants?.map(variant => variant.id)).toEqual(['magnesium', 'phosphorus', 'selenium']);
+    expect(get('agsci-2026-hl-q16av').answerVariants?.map(variant => variant.id)).toEqual(['no', 'yes']);
+    for (const card of higher.filter(card => card.year === 2026)) {
+      const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
+      expect(card.specificationId).toBe(specification.id);
+      expect(card.curriculumNodeIds?.[0]).toBe(card.topicId);
+      for (const id of card.curriculumNodeIds!) expect(findCanonicalTopic(specification, id)).toBeDefined();
+    }
   });
 
   it('awards 2010 first-correct marks independently of the named instrument', () => {
@@ -463,7 +527,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(368);
+    expect(atlas.markBankCards).toHaveLength(480);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

@@ -6167,114 +6167,129 @@
         "sha256": "efc3a2aa5656657aaec9364c23caf927f47078ecd622976e97b10628f8ecf6a6",
         "pages": 33
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 112,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "babe7659cb22db72",
           "page": 2,
           "cue": "Answer ten",
           "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer ten questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 m",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section A: ten of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "e8c019ae0b41ecb7",
           "page": 2,
           "cue": "any four",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Date of Birth in the boxes on the front cover. Write your answers in blue or black pen",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B: four of six independent questions. Every question is retained."
         },
         {
           "id": "7432b25456cb2ca8",
           "page": 3,
           "cue": "any ten",
           "context": "ificate Examination 2026 3 Agricultural Science – Higher Level Section A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 Irish weather conditions can prove a challenge to crop production, resulting in shorter working windows and the need to use large machines. Analyse the photograph and answer t",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: ten independent 10-mark questions, all retained."
         },
         {
           "id": "9707f8e403d3e354",
           "page": 4,
           "cue": "either",
           "context": "ving Certificate Examination 2026 4 Agricultural Science – Higher Level Question 2 Answer either (a) or (b). (a) Photosynthesis is fundamental to agriculture. (i) Outline the role of two named plant structures in photosynthesis. Named plant structure Role in photosynthesis 1. 2. (ii) Briefly describe one role photosynthesis ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q2 either (a) or (b): both independently marked alternatives are retained at their own addresses."
         },
         {
           "id": "dede8045c702dde8",
           "page": 5,
           "cue": "any three",
           "context": "hotosynthesis is used to enhance crop production on Irish farms. In your answer, refer to any three of the following: Photosynthesis to enhance crop production Fertilising the crop Optimising light capture Genetic improvement of crops Grassland management",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(b) prints four headings and asks for any three: all four three-heading routes are retained at 10 marks each."
         },
         {
           "id": "1dbe2dc4871a9fc0",
           "page": 6,
           "cue": "either",
           "context": "ving Certificate Examination 2026 6 Agricultural Science – Higher Level Question 3 Answer either (a) or (b). (a) Teagasc have confirmed the first reported case of a field population of Italian ryegrass which has proven resistant to the chemical herbicide glyphosate. Italian ryegrass is already a major challenge on some Irish",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q3 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "814a14887d2c6953",
           "page": 9,
           "cue": "one of",
           "context": "Certificate Examination 2026 9 Agricultural Science – Higher Level Question 5 Lameness is one of the most costly and challenging issues in dairy farming, costing on average €8,750 per annum for a 100-cow herd in 2024. Artificial intelligence (AI) powered smart technology has emerged which uses camera and vision technology to",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q5 stem (\"one of the most costly\"); no response choice."
         },
         {
           "id": "cf26516051e681aa",
           "page": 10,
           "cue": "either",
           "context": "ing Certificate Examination 2026 10 Agricultural Science – Higher Level Question 6 Answer either (a) or (b). (a) A relatively new challenge on Irish farms is the blood sucking Barber’s Pole worm. It is very efficient at reproducing, with faecal egg counts in excess of 5,000 eggs per gram, in a short period of time. Symptoms ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q6 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "6dac7ebdeb2a6e5c",
           "page": 12,
           "cue": "any four",
           "context": "ect of all farming. Analyse the diagram and answer the questions that follow. Outline how any four benefits can improve agricultural productivity and/or ecosystem health. Benefits of Soil Biological Health Protection from pests and diseases Carbon storage Reduced environmental losses Improve plant resilience Food quality Nutri",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q7 prints six benefits and asks for any four: all fifteen four-benefit routes are retained at 10 marks each."
         },
         {
           "id": "00f8ddba32153c18",
           "page": 15,
           "cue": "any two",
           "context": "farmer was asked to identify the three plants A, B and C found in the field. (a) Identify any two of the plants A, B, and C. A B C (b) The farmer accidentally bought uncertified seed containing a high percentage of weed seeds. Explain two risks this poses to productivity and sustainability on his farm. 1. 2.",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q10(a) prints plants A, B and C and asks for any two: all three two-plant routes are retained at 5 marks each."
         },
         {
           "id": "66628fc3651b1157",
           "page": 16,
           "cue": "either",
           "context": "ng Certificate Examination 2026 16 Agricultural Science – Higher Level Question 11 Answer either (a) or (b). (a) A farmer is building new winter housing for beef cattle. (i) Outline with reason two features of good animal housing that promote animal health and welfare. Feature Reason 1. 2. (ii) Explain how poor housing desig",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q11 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "f726bead2abb20bc",
           "page": 18,
           "cue": "select",
           "context": "tion, answer the questions that follow. (a) Suggest two desirable traits the farmer might select when breeding pigs. (b) Explain how hybrid vigour could improve the performance in a pig herd. (c) Outline one genetic risk of relying heavily on pedigree breeding in animals. 1. 2.",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Q12(a) uses \"select\" for breeding selection of traits; the two traits are open, not a printed pool."
         },
         {
           "id": "246c040a8fc33fc0",
           "page": 21,
           "cue": "any four",
           "context": "ficate Examination 2026 21 Agricultural Science – Higher Level Section B 200 marks Answer any four questions. Each question carries 50 marks. Question 13 Dermot and Pauline are mixed tillage and sheep farmers in Co. Galway. They are planning on reseeding 10% of their 70-hectare farm and are preparing a nutrient management plan",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: four of six independent 50-mark questions, all retained."
         },
         {
           "id": "d2c81f14fad6809d",
           "page": 24,
           "cue": "either",
           "context": "tion 2026 24 Agricultural Science – Higher Level Question 14 Answer both (a) and (b) with either (c) or (d). Beef farmers Dylan and Margaret are aiming to improve the sustainability and profitability of their suckler-to-beef enterprise. Based on a visit from their local Teasgasc advisor they were advised to:  Improve soil f",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q14: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "4a520afd30e05775",
           "page": 31,
           "cue": "either",
           "context": "tion 2026 31 Agricultural Science – Higher Level Question 16 Answer both (a) and (b) with either (c) or (d). Silage is a key winter feed for dairy cows in Ireland. High-quality silage depends on grass variety, growth stage at cutting, and proper storage. (a) (i) Describe three stages of grass growth and identify the ideal gr",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q16: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         }
       ]
     },
@@ -6293,7 +6308,7 @@
         "sha256": "44c7b71726d7dca75a06d01e518f726f1873161cfe92fed522f3a6606fbca30e",
         "pages": 34
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 112,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

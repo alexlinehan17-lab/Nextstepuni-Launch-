@@ -4,6 +4,1619 @@
   "method": "Independent English 2010 and 2011 Higher/Ordinary, English 2012 Higher, plus Irish 2011 Ordinary, paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.",
   "papers": [
     {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "sourceHashes": {
+        "exampapers": "900dc33c639e740c3e50079caa34400ff62ada89418cc677142eec53335fd990",
+        "markingschemes": "efc3a2aa5656657aaec9364c23caf927f47078ecd622976e97b10628f8ecf6a6"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2026 HL Q1(a)",
+          "marksPerResponse": 8,
+          "paperPage": 3,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Reduced Soil Compaction or weight"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q1(a)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q1(b)",
+          "marksPerResponse": 2,
+          "paperPage": 3,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "High maintenance or costs or emissions"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q1(b)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q2(a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Contain chlorophyll which is used to"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q2(a)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q2(a)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Carbon Sequestration"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q2(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q2(b)",
+          "marksPerResponse": 10,
+          "paperPage": 5,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Sow crops in rows / correct spacing"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 3,
+            "options": [
+              "Fertilising the crop",
+              "Optimising light capture",
+              "Genetic improvement of crops",
+              "Grassland management"
+            ]
+          },
+          "routes": [
+            "2026 HL Q2(b) — Fertilising the crop, Optimising light capture, Genetic improvement of crops",
+            "2026 HL Q2(b) — Fertilising the crop, Optimising light capture, Grassland management",
+            "2026 HL Q2(b) — Fertilising the crop, Genetic improvement of crops, Grassland management",
+            "2026 HL Q2(b) — Optimising light capture, Genetic improvement of crops, Grassland management"
+          ]
+        },
+        {
+          "ref": "2026 HL Q3(a)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 6,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "The ability of an organism to remain unaffected"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q3(a)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q3(a)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 6,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "High seed production / herbicide resistance"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q3(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q3(a)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 6,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "crop rotation involving sowing a variety of crops"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q3(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q3(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 7,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "there are few patches of wild oats present"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q3(b)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q3(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 7,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "hand rogueing / mechanical control"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q3(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q4(a)",
+          "marksPerResponse": 2,
+          "paperPage": 8,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Metabolic disorder caused by low blood calcium"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q4(a)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q4(b)",
+          "marksPerResponse": 2,
+          "paperPage": 8,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Staggering - cow has difficulty walking"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q4(b)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q4(c)",
+          "marksPerResponse": 6,
+          "paperPage": 8,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Boosts immunity or reduces retained"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q4(c)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q5(a)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Sole ulcers pressure on sole of foot"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q5(a)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q5(b)",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Regular hoof trimming / foot baths"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q5(b)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q5(c)",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Decreased production (reduced milk yield"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q5(c)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q6(a)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 10,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Quantitative measure of how many worm eggs"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q6(a)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q6(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Identify if the parasite is an"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q6(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q6(a)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Rotational Grazing - prevents lambs grazing"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q6(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q6(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "The incidence of barber pole in increasing rapidly"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q6(b)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q6(b)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 11,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "As Ireland’s climate is getting milder"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q6(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q6(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Weigh animals to ensure accurate weight"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q6(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q7",
+          "marksPerResponse": 10,
+          "paperPage": 12,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Healthy soil biome prevents nitrate leaching"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 4,
+            "options": [
+              "Protection from pests and diseases",
+              "Carbon storage",
+              "Reduced environmental losses",
+              "Improve plant resilience",
+              "Food quality",
+              "Nutrient provision"
+            ]
+          },
+          "routes": [
+            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Improve plant resilience",
+            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Food quality",
+            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Nutrient provision",
+            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Improve plant resilience, Food quality",
+            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Improve plant resilience, Nutrient provision",
+            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Food quality, Nutrient provision",
+            "2026 HL Q7 — Protection from pests and diseases, Reduced environmental losses, Improve plant resilience, Food quality",
+            "2026 HL Q7 — Protection from pests and diseases, Reduced environmental losses, Improve plant resilience, Nutrient provision",
+            "2026 HL Q7 — Protection from pests and diseases, Reduced environmental losses, Food quality, Nutrient provision",
+            "2026 HL Q7 — Protection from pests and diseases, Improve plant resilience, Food quality, Nutrient provision",
+            "2026 HL Q7 — Carbon storage, Reduced environmental losses, Improve plant resilience, Food quality",
+            "2026 HL Q7 — Carbon storage, Reduced environmental losses, Improve plant resilience, Nutrient provision",
+            "2026 HL Q7 — Carbon storage, Reduced environmental losses, Food quality, Nutrient provision",
+            "2026 HL Q7 — Carbon storage, Improve plant resilience, Food quality, Nutrient provision",
+            "2026 HL Q7 — Reduced environmental losses, Improve plant resilience, Food quality, Nutrient provision"
+          ]
+        },
+        {
+          "ref": "2026 HL Q8(a)",
+          "marksPerResponse": 5,
+          "paperPage": 13,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "A – Limousin"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q8(a)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q8(b)",
+          "marksPerResponse": 5,
+          "paperPage": 13,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "Lively / excitable"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q8(b)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q9(a)",
+          "marksPerResponse": 3,
+          "paperPage": 14,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "Used equal amounts of samples"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q9(a)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q9(b)",
+          "marksPerResponse": 3,
+          "paperPage": 14,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "Water drains fastest in the sand"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q9(b)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q9(c)",
+          "marksPerResponse": 4,
+          "paperPage": 14,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "Soil type = loam"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q9(c)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q10(a)",
+          "marksPerResponse": 5,
+          "paperPage": 15,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "A – Ragwort"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 2,
+            "options": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "routes": [
+            "2026 HL Q10(a) — A, B",
+            "2026 HL Q10(a) — A, C",
+            "2026 HL Q10(a) — B, C"
+          ]
+        },
+        {
+          "ref": "2026 HL Q10(b)",
+          "marksPerResponse": 5,
+          "paperPage": 15,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "seeds can remain viable in soil for many years"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q10(b)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q11(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 16,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "Comfortable lying areas prevent"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q11(a)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q11(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 16,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "Overcrowding causes competition for feed"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q11(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q11(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 17,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "4 x 40 = 160"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q11(b)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q11(b)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 17,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "Bulls would have to be split between the two pens"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q11(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q11(b)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 17,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "slats are not designed to support heavier animals"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q11(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q12(a)",
+          "marksPerResponse": 6,
+          "paperPage": 18,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "Prolificacy (large litter size)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q12(a)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q12(b)",
+          "marksPerResponse": 2,
+          "paperPage": 18,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "Increased litter size / fast growth rate"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q12(b)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q12(c)",
+          "marksPerResponse": 2,
+          "paperPage": 18,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "Greater risk of Inbreeding"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q12(c)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q13(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 21,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "Blueprint for managing nutrient inputs"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q13(a)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q13(a)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 21,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "Essential for root development / low P"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q13(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q13(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 21,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "Process by which fine soil particles"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q13(b)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q13(b)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 22,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "Maintaining a suitable soil pH (pH 6-8)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q13(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q13(b)(iii)",
+          "marksPerResponse": 16,
+          "paperPage": 22,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "stopper and shake"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q13(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q13(c)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 23,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "Field B has good fertility due to Optimum pH"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q13(c)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q13(c)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 23,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "(corrective action) Addition of Lime"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q13(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q14(a)(i)",
+          "marksPerResponse": 5,
+          "paperPage": 24,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Clover fixes atmospheric nitrogen"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q14(a)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q14(a)(ii)",
+          "marksPerResponse": 1,
+          "paperPage": 24,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "If soil is too acidic"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q14(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q14(a)(iii)",
+          "marksPerResponse": 12,
+          "paperPage": 24,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Identify hazards and risks and remove them"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q14(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q14(b)(i)",
+          "marksPerResponse": 5,
+          "paperPage": 25,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Improves the nutritional value of the diet"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q14(b)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q14(b)(ii)",
+          "marksPerResponse": 5,
+          "paperPage": 25,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Risk: Bloat"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q14(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q14(b)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 25,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Maintain correct soil pH (around 6.3"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q14(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q14(b)(iv)",
+          "marksPerResponse": 2,
+          "paperPage": 25,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Identify the average recommended clover"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q14(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q14(c)(i)",
+          "marksPerResponse": 9,
+          "paperPage": 26,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Direct Drilling/stitching in/slit sowing"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "A",
+              "B"
+            ]
+          },
+          "routes": [
+            "2026 HL Q14(c)(i) — A",
+            "2026 HL Q14(c)(i) — B"
+          ]
+        },
+        {
+          "ref": "2026 HL Q14(c)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 26,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Identify the ideal post-grazing height"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q14(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q14(d)",
+          "marksPerResponse": 12,
+          "paperPage": 27,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "remove nodules with scalpel or crush root nodules"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q14(d)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q15(a)(i)",
+          "marksPerResponse": 5,
+          "paperPage": 28,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "36 days"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q15(a)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q15(a)(ii)",
+          "marksPerResponse": 5,
+          "paperPage": 28,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "3 or 3.2"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q15(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q15(a)(iii)",
+          "marksPerResponse": 5,
+          "paperPage": 28,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "AI accuracy is 36.2 days"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q15(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q15(a)(iv)",
+          "marksPerResponse": 5,
+          "paperPage": 28,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "freemartin"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q15(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q15(a)(v)",
+          "marksPerResponse": 2,
+          "paperPage": 29,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "Knowing the expected calving date"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q15(a)(v)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q15(b)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 29,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "Draw a labelled diagram of the cow’s reproductive system"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q15(b)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q15(b)(ii)",
+          "marksPerResponse": 11,
+          "paperPage": 30,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "Y = 275 days"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q15(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q15(b)(iii)",
+          "marksPerResponse": 2,
+          "paperPage": 30,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "1st to 3rd Dec"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q15(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q15(b)(iv)",
+          "marksPerResponse": 5,
+          "paperPage": 30,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "if missed has to wait 21 days"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q15(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q16(a)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 31,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "The radicle and plumule emerge"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q16(a)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q16(a)(ii)",
+          "marksPerResponse": 9,
+          "paperPage": 31,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "A – Plantain"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q16(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q16(a)(iii)",
+          "marksPerResponse": 2,
+          "paperPage": 32,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "drought tolerance or increased nutrient"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q16(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q16(a)(iv)",
+          "marksPerResponse": 3,
+          "paperPage": 32,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "Identify if a multi-species sward is a monoculture"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q16(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q16(a)(v)",
+          "marksPerResponse": 6,
+          "paperPage": 32,
+          "schemePage": 27,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 27,
+            "text": "Yield reduction - grazing too tightly"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q16(a)(v)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q16(b)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 33,
+          "schemePage": 27,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 27,
+            "text": "The better the soil fertility"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q16(b)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q16(b)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 33,
+          "schemePage": 27,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 27,
+            "text": "If the target yield is 5 tonnes"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q16(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q16(b)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 33,
+          "schemePage": 27,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 27,
+            "text": "Good quality soil can produce 5 ton DM"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q16(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q16(c)",
+          "marksPerResponse": 6,
+          "paperPage": 33,
+          "schemePage": 27,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 27,
+            "text": "Roll continuously during filling"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q16(c)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q16(d)",
+          "marksPerResponse": 6,
+          "paperPage": 33,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "Flexibility and scalability"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q16(d)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q17(a)(i)",
+          "marksPerResponse": 5,
+          "paperPage": 34,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "40 – 50kg"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q17(a)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q17(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 34,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "200 / 205 = 0.975"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q17(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q17(a)(iii)",
+          "marksPerResponse": 2,
+          "paperPage": 34,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "Maintenance diet in 1st winter"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q17(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q17(a)(iv)",
+          "marksPerResponse": 11,
+          "paperPage": 35,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "correct data plotted (5 plotted points)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q17(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q17(a)(v)",
+          "marksPerResponse": 6,
+          "paperPage": 36,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "Cattle that fail to reach target daily live-weight gain"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q17(a)(v)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q17(b)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 36,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "Ireland has a mild, temperate climate"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q17(b)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q17(b)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 37,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "In relation to grass-fed beef identify if"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q17(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q17(b)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 37,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "Food safety - tracked from farm to fork"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q17(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q18(a)",
+          "marksPerResponse": 4,
+          "paperPage": 38,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "Comparison of the performance of an organism’s"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q18(a)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q18(b)(i)",
+          "marksPerResponse": 7,
+          "paperPage": 38,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "average milk yield or milk solids of the"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q18(b)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q18(b)(ii)",
+          "marksPerResponse": 7,
+          "paperPage": 38,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "provides farmers with reliable"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q18(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q18(b)(iii)",
+          "marksPerResponse": 7,
+          "paperPage": 39,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "milk yield / fertility / calving difficulty"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q18(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q18(c)(i)",
+          "marksPerResponse": 5,
+          "paperPage": 39,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "Wheat A"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q18(c)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q18(c)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 39,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "Matures (9 days) earlier than Wheat B"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q18(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q18(c)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 39,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "Native cattle or sheep breeds cope better"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "plants",
+              "animals"
+            ]
+          },
+          "routes": [
+            "2026 HL Q18(c)(iii) — plants",
+            "2026 HL Q18(c)(iii) — animals"
+          ]
+        },
+        {
+          "ref": "2026 HL Q18(d)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 40,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "Genetic make-up of an organism determined"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q18(d)(i)"
+          ]
+        },
+        {
+          "ref": "2026 HL Q18(d)(ii)",
+          "marksPerResponse": 7,
+          "paperPage": 40,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "Ensuring low SCC reduces the incidence of mastitis"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2026 HL Q18(d)(ii)"
+          ]
+        }
+      ]
+    },
+    {
       "year": 2012,
       "level": "higher",
       "lang": "ev",
@@ -7834,7 +9447,7 @@
       "level": "higher",
       "lang": "ev",
       "paperFileid": "LC024ALP000EV.pdf",
-      "independentCensus": "open"
+      "independentCensus": "boundary-reviewed"
     },
     {
       "year": 2026,
@@ -7859,6 +9472,304 @@
     }
   ],
   "questionMarkChecks": [
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "(a)": 8,
+        "(b)": 2
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q3",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "(a)": 2,
+        "(b)": 2,
+        "(c)": 6
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "(a)": 4,
+        "(b)": 3,
+        "(c)": 3
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "all": 10
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "(a)": 5,
+        "(b)": 5
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "(a)": 3,
+        "(b)": 3,
+        "(c)": 4
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q10",
+      "units": {
+        "(a)": 5,
+        "(b)": 5
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q11",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q12",
+      "units": {
+        "(a)": 6,
+        "(b)": 2,
+        "(c)": 2
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q13",
+      "units": {
+        "(a)": 8,
+        "(b)": 22,
+        "(c)": 20
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q14",
+      "units": {
+        "(a)": 18,
+        "(b)": 20,
+        "(c)": 12,
+        "(d)": 12
+      },
+      "rule": "both (a) and (b) with either (c) or (d)",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q15",
+      "units": {
+        "(a)": 22,
+        "(b)": 28
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q16",
+      "units": {
+        "(a)": 30,
+        "(b)": 14,
+        "(c)": 6,
+        "(d)": 6
+      },
+      "rule": "both (a) and (b) with either (c) or (d)",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q17",
+      "units": {
+        "(a)": 30,
+        "(b)": 20
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q18",
+      "units": {
+        "(a)": 4,
+        "(b)": 21,
+        "(c)": 16,
+        "(d)": 9
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
     {
       "year": 2012,
       "level": "higher",

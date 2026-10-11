@@ -464,7 +464,116 @@ Q9(d)|12|5|14|Protection for animals
 Q9(e)|12|5|14|Presence of boar stimulates
 '''
 
+# 2026 Higher: Section A Q1-Q12 at 10 marks, Section B Q13-Q18 at 50. Scheme
+# pages 1-11 are instructions and the coursework criteria, not paper tasks.
+HIGHER_2026 = '''
+Q1(a)|8|3|12|Reduced Soil Compaction or weight
+Q1(b)|2|3|12|High maintenance or costs or emissions
+Q2(a)(i)|8|4|12|Contain chlorophyll which is used to
+Q2(a)(ii)|2|4|12|Carbon Sequestration
+Q2(b)|10|5|13|Sow crops in rows / correct spacing
+Q3(a)(i)|2|6|13|The ability of an organism to remain unaffected
+Q3(a)(ii)|2|6|13|High seed production / herbicide resistance
+Q3(a)(iii)|6|6|13|crop rotation involving sowing a variety of crops
+Q3(b)(i)|4|7|14|there are few patches of wild oats present
+Q3(b)(ii)|6|7|14|hand rogueing / mechanical control
+Q4(a)|2|8|14|Metabolic disorder caused by low blood calcium
+Q4(b)|2|8|14|Staggering - cow has difficulty walking
+Q4(c)|6|8|14|Boosts immunity or reduces retained
+Q5(a)|4|9|15|Sole ulcers pressure on sole of foot
+Q5(b)|3|9|15|Regular hoof trimming / foot baths
+Q5(c)|3|9|15|Decreased production (reduced milk yield
+Q6(a)(i)|2|10|15|Quantitative measure of how many worm eggs
+Q6(a)(ii)|4|10|15|Identify if the parasite is an
+Q6(a)(iii)|4|10|15|Rotational Grazing - prevents lambs grazing
+Q6(b)(i)|4|11|16|The incidence of barber pole in increasing rapidly
+Q6(b)(ii)|2|11|16|As Ireland’s climate is getting milder
+Q6(b)(iii)|4|11|16|Weigh animals to ensure accurate weight
+Q7|10|12|16|Healthy soil biome prevents nitrate leaching
+Q8(a)|5|13|17|A – Limousin
+Q8(b)|5|13|17|Lively / excitable
+Q9(a)|3|14|17|Used equal amounts of samples
+Q9(b)|3|14|17|Water drains fastest in the sand
+Q9(c)|4|14|17|Soil type = loam
+Q10(a)|5|15|17|A – Ragwort
+Q10(b)|5|15|17|seeds can remain viable in soil for many years
+Q11(a)(i)|6|16|18|Comfortable lying areas prevent
+Q11(a)(ii)|4|16|19|Overcrowding causes competition for feed
+Q11(b)(i)|4|17|19|4 x 40 = 160
+Q11(b)(ii)|3|17|19|Bulls would have to be split between the two pens
+Q11(b)(iii)|3|17|20|slats are not designed to support heavier animals
+Q12(a)|6|18|20|Prolificacy (large litter size)
+Q12(b)|2|18|20|Increased litter size / fast growth rate
+Q12(c)|2|18|20|Greater risk of Inbreeding
+Q13(a)(i)|6|21|21|Blueprint for managing nutrient inputs
+Q13(a)(ii)|2|21|21|Essential for root development / low P
+Q13(b)(i)|4|21|21|Process by which fine soil particles
+Q13(b)(ii)|2|22|21|Maintaining a suitable soil pH (pH 6-8)
+Q13(b)(iii)|16|22|21|stopper and shake
+Q13(c)(i)|12|23|22|Field B has good fertility due to Optimum pH
+Q13(c)(ii)|8|23|22|(corrective action) Addition of Lime
+Q14(a)(i)|5|24|23|Clover fixes atmospheric nitrogen
+Q14(a)(ii)|1|24|23|If soil is too acidic
+Q14(a)(iii)|12|24|23|Identify hazards and risks and remove them
+Q14(b)(i)|5|25|23|Improves the nutritional value of the diet
+Q14(b)(ii)|5|25|23|Risk: Bloat
+Q14(b)(iii)|8|25|23|Maintain correct soil pH (around 6.3
+Q14(b)(iv)|2|25|24|Identify the average recommended clover
+Q14(c)(i)|9|26|24|Direct Drilling/stitching in/slit sowing
+Q14(c)(ii)|3|26|24|Identify the ideal post-grazing height
+Q14(d)|12|27|24|remove nodules with scalpel or crush root nodules
+Q15(a)(i)|5|28|25|36 days
+Q15(a)(ii)|5|28|25|3 or 3.2
+Q15(a)(iii)|5|28|25|AI accuracy is 36.2 days
+Q15(a)(iv)|5|28|25|freemartin
+Q15(a)(v)|2|29|25|Knowing the expected calving date
+Q15(b)(i)|10|29|25|Draw a labelled diagram of the cow’s reproductive system
+Q15(b)(ii)|11|30|25|Y = 275 days
+Q15(b)(iii)|2|30|26|1st to 3rd Dec
+Q15(b)(iv)|5|30|26|if missed has to wait 21 days
+Q16(a)(i)|10|31|26|The radicle and plumule emerge
+Q16(a)(ii)|9|31|26|A – Plantain
+Q16(a)(iii)|2|32|26|drought tolerance or increased nutrient
+Q16(a)(iv)|3|32|26|Identify if a multi-species sward is a monoculture
+Q16(a)(v)|6|32|27|Yield reduction - grazing too tightly
+Q16(b)(i)|3|33|27|The better the soil fertility
+Q16(b)(ii)|8|33|27|If the target yield is 5 tonnes
+Q16(b)(iii)|3|33|27|Good quality soil can produce 5 ton DM
+Q16(c)|6|33|27|Roll continuously during filling
+Q16(d)|6|33|28|Flexibility and scalability
+Q17(a)(i)|5|34|28|40 – 50kg
+Q17(a)(ii)|6|34|28|200 / 205 = 0.975
+Q17(a)(iii)|2|34|28|Maintenance diet in 1st winter
+Q17(a)(iv)|11|35|28|correct data plotted (5 plotted points)
+Q17(a)(v)|6|36|28|Cattle that fail to reach target daily live-weight gain
+Q17(b)(i)|6|36|29|Ireland has a mild, temperate climate
+Q17(b)(ii)|8|37|29|In relation to grass-fed beef identify if
+Q17(b)(iii)|6|37|29|Food safety - tracked from farm to fork
+Q18(a)|4|38|29|Comparison of the performance of an organism’s
+Q18(b)(i)|7|38|29|average milk yield or milk solids of the
+Q18(b)(ii)|7|38|29|provides farmers with reliable
+Q18(b)(iii)|7|39|30|milk yield / fertility / calving difficulty
+Q18(c)(i)|5|39|30|Wheat A
+Q18(c)(ii)|8|39|30|Matures (9 days) earlier than Wheat B
+Q18(c)(iii)|3|39|30|Native cattle or sheep breeds cope better
+Q18(d)(i)|2|40|30|Genetic make-up of an organism determined
+Q18(d)(ii)|7|40|30|Ensuring low SCC reduces the incidence of mastitis
+'''
+
+# Printed finite pools, transcribed from the paper in printed order. A route is
+# one complete response, carrying the marks for that response only.
+POOLS_2026_HIGHER = {
+    'Q2(b)': (3, ['Fertilising the crop', 'Optimising light capture', 'Genetic improvement of crops', 'Grassland management']),
+    'Q7': (4, ['Protection from pests and diseases', 'Carbon storage', 'Reduced environmental losses', 'Improve plant resilience', 'Food quality', 'Nutrient provision']),
+    'Q10(a)': (2, ['A', 'B', 'C']),
+    'Q14(c)(i)': (1, ['A', 'B']),
+    'Q18(c)(iii)': (1, ['plants', 'animals']),
+}
+
 SOURCES = [
+    (2026, 'higher', 'A', HIGHER_2026,
+     '900dc33c639e740c3e50079caa34400ff62ada89418cc677142eec53335fd990',
+     'efc3a2aa5656657aaec9364c23caf927f47078ecd622976e97b10628f8ecf6a6'),
     (2012, 'higher', 'A', HIGHER_2012,
      '9c36dd32194d49ccb00554ebfe7960cc6be0d95e4c2e3e26c9e60df5164b571d',
      'eb8f1a690343c38320680ed8425bdf0365e4ea1e4afe240d478026bf8909fdc1'),
@@ -509,7 +618,11 @@ def source_tasks():
             if year==2010 and level=='higher' and ref=='Q3 Option Two (b)':
                 routes = [ref+' — Hoose',ref+' — grass-tetany']
                 selection = {'kind':'closed','choose':1,'options':['Hoose','grass-tetany']}
-            elif level=='higher' and (ref=='Q8(c)' or year in (2010,2012) and ref=='Q7(a)'):
+            elif year==2026 and level=='higher' and ref in POOLS_2026_HIGHER:
+                choose,choices = POOLS_2026_HIGHER[ref]
+                routes = [ref+' — '+', '.join(parts) for parts in itertools.combinations(choices,choose)]
+                selection = {'kind':'closed','choose':choose,'options':choices}
+            elif year<2021 and level=='higher' and (ref=='Q8(c)' or year in (2010,2012) and ref=='Q7(a)'):
                 choices = ['i','ii','iii','iv']
                 routes = [ref+' — '+', '.join(parts) for parts in itertools.combinations(choices,3)]
                 selection = {'kind':'closed','choose':3,'options':choices}
@@ -519,7 +632,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -559,6 +672,34 @@ def build():
             'questionMarkChecks':question_mark_checks(papers)}
 
 
+# Outer choices printed on the 2021+ papers, transcribed from each paper's own
+# instructions. Section totals are the printed per-question marks.
+MODERN_LAYOUTS = {
+    (2026,'higher'): {'either':{'Q2','Q3','Q6','Q11'}, 'bothWithEither':{'Q14','Q16'},
+                      'marks':lambda n: 10 if n<=12 else 50},
+}
+
+
+def modern_question_check(paper,question,tasks,layout):
+    units = {}
+    for task in tasks:
+        letter = re.search(r'Q\d+(\([a-z]\))?',task['ref'].split(' ',2)[2]).group(1) or 'all'
+        units[letter] = units.get(letter,0)+task['marksPerResponse']
+    if question in layout['either']:
+        assert sorted(units)==['(a)','(b)'], (question,units)
+        totals, rule = sorted(set(units.values())), 'either (a) or (b)'
+    elif question in layout['bothWithEither']:
+        assert sorted(units)==['(a)','(b)','(c)','(d)'], (question,units)
+        totals = sorted({units['(a)']+units['(b)']+units[x] for x in ['(c)','(d)']})
+        rule = 'both (a) and (b) with either (c) or (d)'
+    else:
+        totals, rule = [sum(units.values())], 'all parts'
+    expected = layout['marks'](int(question[1:]))
+    assert totals==[expected], (paper['year'],paper['level'],question,units,totals)
+    return {'year':paper['year'],'level':paper['level'],'lang':paper['lang'],'question':question,'units':units,
+            'rule':rule,'candidateTotalsFromScheme':totals,'printedQuestionMarks':expected,'sourceException':None}
+
+
 def question_mark_checks(papers):
     """Candidate budgets collapse routes, then apply the printed outer choice.
 
@@ -573,7 +714,11 @@ def question_mark_checks(papers):
             address = task['ref'].split(' ',2)[2]
             question = re.match(r'Q\d+(?: Option (?:One|Two))?',address).group()
             groups.setdefault(question,[]).append(task)
+        modern = MODERN_LAYOUTS.get((paper['year'],paper['level']))
         for question,tasks in groups.items():
+            if modern:
+                checks.append(modern_question_check(paper,question,tasks,modern))
+                continue
             units = {}
             choose = None
             if higher and question in ['Q1','Q4','Q8','Q9']:
@@ -604,7 +749,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62. Remaining editions stay open.')
+    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62; 2026 Higher 91 / 112. Remaining editions stay open.')
 
 
 if __name__=='__main__':

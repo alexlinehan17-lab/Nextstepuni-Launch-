@@ -253,5 +253,22 @@
       0.497
     ],
     "reviewedAt": "2026-10-07"
+  },
+  "agsci-2026-hl-scheme-cow-reproductive-system": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-hl-scheme-cow-reproductive-system.png",
+    "md5": "2a991a089f4801a9e9864722c772e308",
+    "alt": "Official labelled diagram of the cow’s reproductive system: uterus, cervix, vagina, vulva, ovary, oviduct and uterine horns.",
+    "attribution": "SEC Agricultural Science 2026 Higher Level marking scheme, PDF page 25 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2026/LC024ALP000EV.pdf",
+    "sourceSha256": "efc3a2aa5656657aaec9364c23caf927f47078ecd622976e97b10628f8ecf6a6",
+    "pdfPage": 25,
+    "cropRect": [
+      0.3,
+      0.612,
+      0.725,
+      0.762
+    ],
+    "reviewedAt": "2026-10-11"
   }
 }
