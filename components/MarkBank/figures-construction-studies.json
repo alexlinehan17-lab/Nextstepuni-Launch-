@@ -740,5 +740,236 @@
     "alt": "Original SEC 2026 Higher Construction Studies alternative Question 10: the printed quotation on indoor air quality and its two parts.",
     "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
     "solution": false
+  },
+  "construction-studies-2026-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q1-original.png",
+    "md5": "8b73b7a3c8de7165a91bdaa370745c11",
+    "alt": "Original SEC 2026 Ordinary Construction Studies Question 1: the printed question with a cut-away sketch of the strip foundation, cavity wall and floating timber floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q2-original.png",
+    "md5": "d7d7a89f454de5205f03b5dde77633d6",
+    "alt": "Original SEC 2026 Ordinary Construction Studies Question 2: the printed question with a sketch of a 1970s bungalow.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q3-original.png",
+    "md5": "8f21a39511cb00f438e1e663fd71a9e7",
+    "alt": "Original SEC 2026 Ordinary Construction Studies Question 3: the printed question with a cross-section of a two-storey house showing the bath, basin, toilet and kitchen sink.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q4-original.png",
+    "md5": "4b38616b76b43225eca25ee6cac3356e",
+    "alt": "Original SEC 2026 Ordinary Construction Studies Question 4: the printed question with the site location map showing site A, the road and the north point.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q5-original.png",
+    "md5": "f2e4d167ebce43f38279b21c4a00b3cc",
+    "alt": "Original SEC 2026 Ordinary Construction Studies Question 5: the printed question with a sketch of the cavity wall beside an external wooden door.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q6-original.png",
+    "md5": "2d1f80b93584fbc8e5a181bdbe5655e3",
+    "alt": "Original SEC 2026 Ordinary Construction Studies Question 6: the printed question with a sketch of a student using a pillar drill.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q7-original.png",
+    "md5": "4c24ee1fd8de0417fef7854325e9661c",
+    "alt": "Original SEC 2026 Ordinary Construction Studies Question 7: the printed question with the plan of the rear garden and patio.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-original.png",
+    "md5": "43adb37e9025ca7b4df1956a07de976b",
+    "alt": "Original SEC 2026 Ordinary Construction Studies Question 8: the printed list of nine terms, any five of which are explained.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q9-original.png",
+    "md5": "382cce7f1ded2ff270fd40aa9ae8430b",
+    "alt": "Original SEC 2026 Ordinary Construction Studies Question 9: the printed question with a sketch of a farmhouse and its proposed timber-clad extension.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-OL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q1-section.png",
+    "md5": "7a498fa8daa2ce5f3c57319ac1b3d920",
+    "alt": "SEC model section through the strip foundation, cavity wall and insulated floor, with an arrow (b) to the radon barrier under the floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q1-scheme.png",
+    "md5": "236be274d4ce55eb15105df66199eba7",
+    "alt": "SEC 2026 Ordinary marking scheme page for Question 1: the model foundation, wall and floor section with its typical specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q2-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q2-scheme.png",
+    "md5": "9c0d07de089afe62b7ca2675f9a5797e",
+    "alt": "SEC 2026 Ordinary marking scheme page for Question 2: advantages, the cavity-fill method with sketches, insulation types and thickness, and other upgrade areas.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q2-upgrade": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q2-upgrade.png",
+    "md5": "5eef80c8739d35487cb949d486583d30",
+    "alt": "SEC model sketch of a window section and a roll of insulation, illustrating other upgrade areas.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q3-system.png",
+    "md5": "f123509580d1171e0a3a78207212d333",
+    "alt": "SEC model cold water diagram: attic storage tank with overflow and valves, rising main, and cold feeds to the kitchen sink, bath, basin and toilet cistern, with the typical details listed.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q3-water-butt": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q3-water-butt.png",
+    "md5": "a77f4f8c5e8c57000e882d2f2bc5b58a",
+    "alt": "SEC model sketch of a green rainwater butt on a stand.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q4-site-plan": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q4-site-plan.png",
+    "md5": "ebbfa82bc0d58dd1080eb2b5ded2a128",
+    "alt": "SEC model sketch of site A with the house, a curved driveway from the road, the garage in a corner and hedgerow boundaries.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q4-site-notice": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q4-site-notice.png",
+    "md5": "efb7ae188748cbefadfd1e83a904d1f9",
+    "alt": "SEC model sketch of a planning site notice headed Notice of Proposed Development.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q5-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q5-section.png",
+    "md5": "ce712064a53bc637e51a46418900aa99",
+    "alt": "SEC model section through the cavity wall, lintels, thermally broken door frame and insulated door, with the typical specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q5-wall-tie": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q5-wall-tie.png",
+    "md5": "5926cd14b11a2d1b3c8f7b05bbc49586",
+    "alt": "SEC model detail with an arrow to a wall tie spanning the insulated cavity.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q6-precautions": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q6-precautions.png",
+    "md5": "cfbda3b1133e899e9e6e8c12c3dd1cef",
+    "alt": "SEC table of safety precautions for using a scroll saw and for applying a spray finish, with a sketch of a respirator mask.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q6-pillar-drill": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q6-pillar-drill.png",
+    "md5": "d8e6514f6eecf2bb22825090bbadd65d",
+    "alt": "SEC model sketch of a pillar drill with its guard, chuck and the work piece clamped in a vice.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q7-garden-plan": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q7-garden-plan.png",
+    "md5": "654eb6f54939b208702fda986ee340a9",
+    "alt": "SEC model garden plan with a patio dining area and cooking area by the house, a lawn with a play frame, and flowerbeds and trees along the boundary.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q8-triple-glazing": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-triple-glazing.png",
+    "md5": "2a2b5847e4b4a11a59ef90f3bb9e4be7",
+    "alt": "SEC model sketch of a triple-glazed window section with three panes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q8-wind-turbine": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-wind-turbine.png",
+    "md5": "cb87a339450c98c5bd6f1b1b5c5ffeab",
+    "alt": "SEC model sketch of a vertical-axis wind turbine.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q8-carbon-monoxide-alarm": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-carbon-monoxide-alarm.png",
+    "md5": "bdf3c1d4ee5384ca995625ccbf35f353",
+    "alt": "SEC model sketch of a carbon monoxide alarm.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q8-mortise-and-tenon-joint": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-mortise-and-tenon-joint.png",
+    "md5": "73ce94d9b8ed4e3098d16b7ba6eb9c66",
+    "alt": "SEC model sketch of a mortise and tenon joint with the two parts separated.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q8-butt-hinge": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-butt-hinge.png",
+    "md5": "88998521700fa5a2d77a5b08abd255f2",
+    "alt": "SEC model sketch of a butt hinge with its two leaves, knuckles and screw holes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q8-ball-valve": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-ball-valve.png",
+    "md5": "756dfda8ebe61c6e2886fc411964b02f",
+    "alt": "SEC model sketch of a lever-operated ball valve.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q8-cordless-circular-saw": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-cordless-circular-saw.png",
+    "md5": "7987b71200ca5e468d5e05f525be0567",
+    "alt": "SEC model sketch of a cordless circular saw.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q8-fascia-board": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-fascia-board.png",
+    "md5": "c8bb0d7f0aa14422fe1d278821f32ced",
+    "alt": "SEC model sketch of a profiled fascia board.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q8-smart-meter": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-smart-meter.png",
+    "md5": "2bf82b0322f0da77e7e89a80d43389a8",
+    "alt": "SEC model sketch of a smart electricity meter with its display.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q9-extension": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q9-extension.png",
+    "md5": "eb414bc2ec095dc5ecf8abfeaddd2640",
+    "alt": "SEC model sketch of the timber-clad extension with additional windows, a large glazed door and decking to the garden.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-OL-q9-cladding": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q9-cladding.png",
+    "md5": "91b41634460132e1369d52fe96378589",
+    "alt": "Photograph from the SEC scheme of dark charred timber cladding around a glazed door.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }
