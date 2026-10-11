@@ -9,6 +9,7 @@ import reviewedOrdinary2026P1 from '../components/MarkBank/cards/irish/ordinary-
 import reviewedOrdinary2026P2 from '../components/MarkBank/cards/irish/ordinary-2026-p2-authored.json';
 import { CARDS as ORDINARY_DECK } from '../components/MarkBank/cards/irish/ordinary';
 import authoredJson from '../components/MarkBank/cards/irish/authored.json';
+import reviewedHigher2025P1 from '../scripts/markbank/authored/irish-higher-2025-p1-component-review.json';
 import {
   irishMarks,
   irishScoreId,
@@ -82,6 +83,9 @@ const manifest = authoredJson as unknown as IrishManifest;
 // beside it and carry their own regression files (2026 Higher and Ordinary Papers 1 and 2).
 const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards].map(card => card.id));
 const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
+// Reviewed legacy components keep their cards here, corrected in place (IDs unchanged).
+const REVIEWED_LEGACY = new Set<string>([...reviewedHigher2025P1.cardIds]);
+const REVIEWED_SEGMENTS = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds]);
 const ORDINARY = ORDINARY_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 const ALL: SecRubricCard[] = [...HIGHER, ...ORDINARY];
 const byId = new Map(ALL.map(card => [card.id, card]));
@@ -173,7 +177,7 @@ describe('Irish prompt, paper and source integrity', () => {
 
   it('attaches every required reading passage and printed poem as real PDF pages', () => {
     const sourced = ALL.filter(card => card.sourceMaterial);
-    expect(sourced).toHaveLength(184);
+    expect(sourced).toHaveLength(184 + REVIEWED_LEGACY.size);
     expect(sourced.filter(card => family(card) === 'reading')).toHaveLength(154);
     expect(sourced.filter(card => card.id.includes('-poetry-3a-'))).toHaveLength(25);
     expect(sourced.filter(card => card.id.includes('-literature-4-'))).toHaveLength(5);
@@ -329,11 +333,23 @@ describe('Irish marking grammar', () => {
     // Older cards retain their published legacy rubric shapes. Reviewed reading
     // parts/parents are checked separately at their actual scheme boundaries.
     const exact = ALL.filter(card => ['listening', 'reading'].includes(family(card))
-      && !(card.year === 2024 && card.level === 'higher' && family(card) === 'reading'));
+      && !(card.year === 2024 && card.level === 'higher' && family(card) === 'reading')
+      && !REVIEWED_SEGMENTS.has(card.id));
     const reviewedReading = ALL.filter(card => card.year === 2024 && card.level === 'higher' && family(card) === 'reading');
     expect(reviewedReading).toHaveLength(56);
     expect(reviewedReading.every(card => irishRubric(card).criteria.every(c => c.guidance.length > 0))).toBe(true);
-    expect(exact).toHaveLength(168);
+    expect(exact).toHaveLength(168 - REVIEWED_SEGMENTS.size);
+    // Reviewed listening segments mark each printed question as its own exact criterion.
+    for (const card of ALL.filter(entry => REVIEWED_SEGMENTS.has(entry.id))) {
+      const criteria = irishRubric(card).criteria;
+      expect(criteria.length, card.id).toBeGreaterThan(1);
+      expect(criteria.reduce((sum, c) => sum + c.maxMarks, 0), card.id).toBe(card.totalMarks);
+      for (const criterion of criteria) {
+        expect(criterion.guidanceKind, card.id).toBe('exact');
+        expect(criterion.guidance.join(' '), card.id)
+          .not.toMatch(/Siombailí Anótála|Stíl chuí scríbhneoireachta|An Cumas Gaeilge \((?:40|80) marc|Roinn ar an bpáipéar/i);
+      }
+    }
     for (const card of exact) {
       const criteria = irishRubric(card).criteria;
       expect(criteria).toHaveLength(1);

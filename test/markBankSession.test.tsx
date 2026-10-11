@@ -417,10 +417,14 @@ describe('the question comes first and stays', () => {
     expect(screen.getByText('1 of 2 this review')).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
-    const firstScheme = screen.getByText('Fógra a hAon · Tuiscint / Eolas').closest('section')!;
-    const secondScheme = screen.getByText('Fógra a Dó · Tuiscint / Eolas').closest('section')!;
-    fireEvent.click(within(firstScheme).getByRole('button', { name: 'Set Fógra a hAon · Tuiscint / Eolas to 10 marks' }));
-    fireEvent.click(within(secondScheme).getByRole('button', { name: 'Set Fógra a Dó · Tuiscint / Eolas to 8 marks' }));
+    // Each printed question is its own criterion at its published tariff (2025 scheme).
+    for (const [label, marks] of [
+      ['Fógra a hAon · Ceist 1(a)', 2], ['Fógra a hAon · Ceist 1(b)', 2], ['Fógra a hAon · Ceist 2', 4], ['Fógra a hAon · Ceist 3', 2],
+      ['Fógra a Dó · Ceist 1', 2], ['Fógra a Dó · Ceist 2(a)', 2], ['Fógra a Dó · Ceist 2(b)', 2], ['Fógra a Dó · Ceist 3', 2],
+    ] as const) {
+      const scheme = screen.getByText(label).closest('section')!;
+      fireEvent.click(within(scheme).getByRole('button', { name: `Set ${label} to ${marks} marks` }));
+    }
     expect(screen.getByText('18 / 18')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /^Got it/i }));
     expect(onGrade).toHaveBeenCalledTimes(2);
