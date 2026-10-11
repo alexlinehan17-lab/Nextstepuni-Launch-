@@ -1,5 +1,204 @@
 [
   {
+    "year": 2010,
+    "hlGridPage": 15,
+    "hlSchemePageOffset": -2,
+    "hlCriteriaMax": [
+      20,
+      15
+    ],
+    "hlNoLayoutQuestion": 2,
+    "hlNoLayoutNote": "Q. 2 (a) and (b) No particular layout required.",
+    "hlPassageRefs": {
+      "B1A": 1,
+      "B1B": 2
+    },
+    "illustrationTasks": [
+      "B3A",
+      "B4B"
+    ],
+    "hlWordCountLines": {
+      "B2B": "(about 75 words)"
+    },
+    "hlPromptParagraphs": {
+      "B2B": [
+        "You are travelling with some family members to your cousin's wedding in Toulouse. His French fiancée, Stéphanie, has offered to help you organise your trip.",
+        "Write an e-mail to Stéphanie, in which you make the following points:",
+        "- You are really looking forward to attending a wedding in France in Spring;",
+        "- Unfortunately, the flights are expensive because of a rugby match that weekend;",
+        "- Your plane will arrive in Toulouse at 2.30 p.m. on Friday, 30th April;",
+        "- Ask her to book you three double rooms in a hotel near her house;",
+        "- Your mother would like to know if guests at French weddings wear hats."
+      ],
+      "B3A": [
+        "Le « fast food » fait partie du style de vie d’aujourd’hui et il peut tenir une certaine place dans une alimentation saine – ceci pour autant que les autres repas du jour rééquilibrent les choses !",
+        "Donnez vos réactions à cette illustration."
+      ],
+      "B3B": [
+        "Pourquoi ne pas devenir bénévole ou volontaire ?",
+        "Il y a un grand nombre d’associations caritatives, sportives ou culturelles en Irlande aujourd’hui qui ont besoin d’aide. Tout le monde peut offrir du temps, des compétences ou des connaissances, sans être rémunéré, pour avoir une influence positive sur les conditions de vie des autres.",
+        "Qu'en pensez-vous ?"
+      ],
+      "B4A": [
+        "« Aujourd'hui, il me semble que la mode est aussi importante pour les garçons que pour les filles. »",
+        "Armand, 20 ans",
+        "Qu'en pensez-vous ?"
+      ],
+      "B4B": [
+        "Pour lutter contre l'absentéisme dans les lycées et encourager les élèves à venir en cours, certaines écoles en France proposent de les récompenser. Si les professeurs sont satisfaits de leur progrès, les élèves pourront recevoir de l’argent pour financer un projet commun comme, par exemple, un voyage scolaire.",
+        "Donnez vos réactions."
+      ]
+    },
+    "hlSelectionNote": "Eight independently priced 40/30-mark alternatives. Q1(a) real/imaginary is open creative scope; Q1(b) for or against is open opinion scope. Q2(b) is printed in Irish and English; the English rendering is used and all five e-mail points are required. Q3(a), Q3(b), Q4(a) and Q4(b) are open reaction or opinion scope. The Q3(a) fast-food cartoon and Q4(b) classroom cartoon open in the illustration viewer; their speech bubbles and hand-lettered title are not inserted into the question, while the printed board and box text is. All four form sentences and all three Ordinary writing points are required.",
+    "languageBottom": null,
+    "olLanguagePage": 10,
+    "formPage": 11,
+    "formSchemePage": 9,
+    "formChoose": 4,
+    "formInstruction": "N.B. Répondez à 6, 7, 8 et 9 par des phrases complètes.",
+    "form_stem": "Vous vous appelez Paul / Mary O’Reilly. Vous cherchez du travail dans une banque. Remplissez le formulaire suivant.",
+    "fields": [
+      "Nom",
+      "Prénom",
+      "Date de naissance",
+      "Pays de votre naissance",
+      "Langue(s) parlée(s)"
+    ],
+    "answers": [
+      "Surname – accept any reasonable name",
+      "Christian Name – accept any reasonable name",
+      "Date of birth – accept any appropriate date",
+      "Any country acceptable",
+      "Accept any language"
+    ],
+    "form_questions": [
+      "Parlez un peu de vous.",
+      "À part les langues, quelles étaient vos matières préférées au lycée ?",
+      "Faites une brève description de votre expérience de travail.",
+      "Pourquoi voulez-vous travailler dans une banque ?"
+    ],
+    "formQuestionNotes": {
+      "7": "Two or more subjects required for full marks"
+    },
+    "olCommunicationNote": "N.B. Correct tense required for full marks in Communication.",
+    "olCommunicationNoteByPage": {
+      "11": "NB. Correct tense required for full marks in Communication."
+    },
+    "letterIdentity": "You are Micheal / Maura O’Neill, 3 Fairfield Rise, Ennis, Co. Clare.",
+    "diaryInstruction": "Note the following in your diary:",
+    "pools": [
+      [
+        "B2A",
+        12,
+        11,
+        "Leave the following message for Didier / Denise with whom you are staying in Limoges:",
+        [
+          "Say that it is half past ten and you are going to bed now.",
+          "Say that you have done your homework and it was easy.",
+          "Say that you hope that he / she liked the concert."
+        ],
+        [
+          "Say that it is half past ten / and you are going to bed now.",
+          "Say that you have done your homework / and it was easy.",
+          "Say that you hope / that (s)he liked the concert."
+        ]
+      ],
+      [
+        "B2B",
+        12,
+        12,
+        "You are staying in La Rochelle with your penpal André / Sylvine. Write a postcard to your parents in which you say that:",
+        [
+          "Your penpal lives in a beautiful house near the beach.",
+          "You went water-skiing yesterday with some friends.",
+          "You will go to a football match on Tuesday evening."
+        ],
+        [
+          "Your penpal lives in a beautiful house / near the beach.",
+          "You went water-skiing yesterday / with some friends.",
+          "You will go to a football match / on Tuesday evening."
+        ]
+      ],
+      [
+        "B3A",
+        14,
+        13,
+        "It’s the night before you return to school after the summer holidays.",
+        [
+          "You are very sad and you hate the return to school.",
+          "You enjoyed yourself a lot this summer.",
+          "You will have to get up early tomorrow morning."
+        ],
+        [
+          "You are very sad / and you hate the return to school.",
+          "You enjoyed yourself a lot / this summer.",
+          "You will have to get up early / tomorrow morning."
+        ]
+      ],
+      [
+        "B3B",
+        14,
+        14,
+        "Write a formal letter to Monsieur le Directeur, Office de Tourisme, 11 Rue des Forges, 21000 Dijon. In the letter:",
+        [
+          "Say that you plan to go to Dijon with your aunt in April.",
+          "Say that you would like some brochures on the city and the area.",
+          "Ask if it would be possible to rent a car for two weeks."
+        ],
+        [
+          "Say that you plan to go to Dijon / with your aunt in April.",
+          "Say that you would like some brochures / on the city and the area.",
+          "Ask if it would be possible to rent a car / for two weeks."
+        ]
+      ]
+    ],
+    "formatSchemePage": 17,
+    "formatSchemePages": [
+      17,
+      18
+    ],
+    "formatNotes": {
+      "top": [
+        "Name and address of sender in top left corner – with name on first line, number & street on second line, etc.",
+        "City / town / village & date (Ennis, le 16 juin 2010) in top right corner or underneath.",
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
+      ],
+      "close": [
+        "Formal ending required.",
+        "Treat one or more incorrect accents in closing formula as one mistake."
+      ],
+      "deductions": [
+        "1 mistake - ignore.",
+        "2 mistakes - deduct 1 mark.",
+        "3 mistakes - deduct 2 marks.",
+        "More than 3 mistakes - award 0.",
+        "If candidate has general layout of Top of Page correct, despite numerous mistakes - award one mark."
+      ]
+    },
+    "olTaskLanguageOmit": {
+      "B2A": {
+        "page": 11,
+        "descriptors": [
+          "some sense of register"
+        ]
+      },
+      "B2B": {
+        "page": 11,
+        "descriptors": [
+          "some sense of register"
+        ]
+      },
+      "B3A": {
+        "page": 11,
+        "descriptors": [
+          "some sense of register"
+        ]
+      }
+    },
+    "taskSourceNotes": {}
+  },
+  {
     "year": 2011,
     "hlGridPage": 16,
     "hlSchemePageOffset": -2,

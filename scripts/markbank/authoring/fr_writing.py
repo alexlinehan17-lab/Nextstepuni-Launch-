@@ -124,16 +124,17 @@ OL_LANGUAGE = [
 
 # Each Ordinary Level message/postcard/diary/letter prints its own communication
 # tariff as an underlined heading on its scheme page. Lift it verbatim, never a
-# shared paraphrase: 2011–2021 print "Two points" on all four tasks; 2022–2026
+# shared paraphrase: 2010–2021 print "Two points" on all four tasks; 2022–2026
 # print "Two parts" for B2A/B2B and "Two points" for B3A/B3B. Entries are
 # (scheme PDF page, exact printed line); every line was checked against the
 # rendered scheme page (2015–2026 on 11 October 2026; 2014 and 2013 on 11 October
-# 2026 from their own scheme pages 12–15, 2012 and 2011 from pages 11–14). A
-# year without an entry fails.
+# 2026 from their own scheme pages 12–15, 2010–2012 from pages 11–14). A year
+# without an entry fails.
 POINTS_5 = 'Two points required for 5 marks (3 + 2)'
 PARTS_5 = 'Two parts required for 5 marks (3 + 2)'
 POINTS_4 = 'Two points required for 4 marks (2 + 2)'
 OL_POINT_TARIFFS = {
+    2010: {'B2A': (11, POINTS_5), 'B2B': (12, POINTS_5), 'B3A': (13, POINTS_5), 'B3B': (14, POINTS_4)},
     2011: {'B2A': (11, POINTS_5), 'B2B': (12, POINTS_5), 'B3A': (13, POINTS_5), 'B3B': (14, POINTS_4)},
     2012: {'B2A': (11, POINTS_5), 'B2B': (12, POINTS_5), 'B3A': (13, POINTS_5), 'B3B': (14, POINTS_4)},
     2013: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
@@ -170,7 +171,8 @@ def communication_notes(config, scheme_ol, page):
     writing page), asserted verbatim on that page. A page that prints the
     note while the year's source entry omits it fails rather than drops it."""
     printed = ' '.join(scheme_ol[page - 1].get_text().split())
-    note = config.get('olCommunicationNote')
+    # A page can print its own form of the note (2010 p11 prints "NB.").
+    note = config.get('olCommunicationNoteByPage', {}).get(str(page), config.get('olCommunicationNote'))
     if note is None:
         assert 'Correct tense required' not in printed, (config['year'], page)
         return []
@@ -306,8 +308,9 @@ def build_year(config):
             assert_on_page(note, scheme_hl, config['hlGridPage'] - 1)
             criteria[0]['guidance'] = [note.rstrip('.') + '.']
         if q == 1:
-            ref = re.search(r'Section\s*(?:A|I),\s*Q[.,]\s*([12])', prompt, re.I)
-            assert ref and int(ref[1]) == config['hlPassageRefs'][parent], (YEAR, parent, prompt)
+            # 2010 Q1(a) says "Dans le texte de la Question 1 (Section I)".
+            ref = re.search(r'Section\s*(?:A|I),\s*Q[.,]\s*([12])|Question\s*([12])\s*\(Section\s*I\)', prompt, re.I)
+            assert ref and int(ref[1] or ref[2]) == config['hlPassageRefs'][parent], (YEAR, parent, prompt)
         add('higher', parent, parent, prompt, page, config['hlGridPage'], criteria,
             [f'Answer in French, approximately {word_count} words.'],
             passage=paper.rc_pages[config['hlPassageRefs'][parent]] if q == 1 else None)

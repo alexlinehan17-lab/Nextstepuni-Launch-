@@ -1,8 +1,92 @@
 {
   "status": "partial-corpus-review",
   "reviewedAt": "2026-10-07",
-  "cards": 522,
+  "cards": 540,
   "review": [
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 11
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 12
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 13
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 4,
+      "poolSize": 4,
+      "routes": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 11,
+      "schemePage": 9
+    },
+    {
+      "year": 2010,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "schemePages": [
+        14,
+        15
+      ],
+      "notes": "Eight independently priced 40/30-mark alternatives. Q1(a) real/imaginary is open creative scope; Q1(b) for or against is open opinion scope. Q2(b) is printed in Irish and English; the English rendering is used and all five e-mail points are required. Q3(a), Q3(b), Q4(a) and Q4(b) are open reaction or opinion scope. The Q3(a) fast-food cartoon and Q4(b) classroom cartoon open in the illustration viewer; their speech bubbles and hand-lettered title are not inserted into the question, while the printed board and box text is. All four form sentences and all three Ordinary writing points are required."
+    },
+    {
+      "source": "examiner-reports/french/papers/2010-hl-000-paper.pdf",
+      "sha256": "b1c407a961bc97470c1e23180eaabfbf0b87309475ceb4c24bade6f01ea713c3"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2010-hl.pdf",
+      "sha256": "606fb820a316ddfd893dc4568db892c8b7de35b8c4143e04e4011c8904509666"
+    },
+    {
+      "source": "examiner-reports/french/papers/2010-ol-000-paper.pdf",
+      "sha256": "117e19a388d3a116dd40db562ca061fb0e94a0e822f94bfc8de276153506c6ba"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2010-ol.pdf",
+      "sha256": "f6b38541886a6ea1fa0fde5898f249ee72da213f11bd16d4995dfb5e566db9ed"
+    },
     {
       "year": 2011,
       "level": "ordinary",
