@@ -134,6 +134,7 @@ export default defineConfig(() => {
           // tools and cached by app-chunks; keep growing corpora out of install.
           '**/factory-*.js', '**/reviewed-*.js',
           '**/exam-topic-data-*.js', '**/paper-topic-data-*.js',
+          '**/markbank-french-*.js',
           '**/catchUpLaneData*.js', '**/commandWordData*.js',
           '**/vendor-three*.js',
           // PDF export libraries — only pulled in when a student or GC actually
@@ -265,6 +266,11 @@ export default defineConfig(() => {
             // first keeps it in vendor-react; three/jspdf then stay in their
             // own chunks, reachable only via the lazy Journey / PDF routes.
             manualChunks(id) {
+              // Both French levels share these reviewed corpora. Give each
+              // category its own chunk so the complete deck stays within cache
+              // limits, and runtime-cache it with the other lazy subject decks.
+              const frenchCards = id.match(/\/components\/MarkBank\/cards\/french\/(writing|reading|cloze|listening)\.(?:json|ts)$/);
+              if (frenchCards) return `markbank-french-${frenchCards[1]}`;
               // Paper Trail's generated corpus index and audited exam-topic
               // registries are static data, used only by the lazy Paper Trail
               // route. Keep both outside its interactive viewer chunk, and in

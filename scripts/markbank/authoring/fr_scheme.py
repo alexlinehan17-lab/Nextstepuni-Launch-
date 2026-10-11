@@ -48,6 +48,7 @@ exclusions with the scheme evidence quoted.
 """
 import argparse
 import glob
+import json
 import os
 import re
 import sys
@@ -67,7 +68,7 @@ def schemes_dir(subject=SUBJECT):
 # "Q.1 (40 marks)" at Ordinary, where the paper sets four rather than two.
 RC_HEAD = re.compile(r'^Q\.\s*(\d)\s*\((\d{1,3})\s*(?:marks?|points?)\)\s*$', re.I)
 
-UNIT_A = re.compile(r'^SECTION\s+A\b\s*[:.]?\s*COMPR', re.I)
+UNIT_A = re.compile(r'^SECTION\s+(?:A\b\s*[:.]?\s*COMPR|I\b)', re.I)
 # 2023 Higher sets "SECTION B" on its own line with "PRODUCTION ÉCRITE (100
 # Marks)" beneath it, so requiring both words on one line left Section A open
 # to the end of the file and welded the marking grid onto the last ask. The
@@ -75,7 +76,7 @@ UNIT_A = re.compile(r'^SECTION\s+A\b\s*[:.]?\s*COMPR', re.I)
 # Section A: inside the listening test "Section B (21 Marks)" is a listening
 # section, and the negative lookahead keeps 2021 Ordinary's "Section B
 # Listening Comprehension" with the listening test where it belongs.
-UNIT_B = re.compile(r'^SECTION\s+B\b(?!\s+Listening)', re.I)
+UNIT_B = re.compile(r'^SECTION\s+(?:B\b(?!\s+Listening)|II\b)', re.I)
 # 2021 and 2022 Ordinary head the listening test "Section B Listening
 # Comprehension 100 points" — the SEC numbers it as a section of the whole
 # examination. Anchoring on "Listening" alone missed it, and both sittings
@@ -103,7 +104,7 @@ LISTEN_ITEM = re.compile(r'^(\d{1,2})\s*\.\s*(?:\(([a-h])\)\s*)?(.*)$')
 # four rather than a literal run of dots.
 ITEM_HEAD = re.compile(
     r'^(\d{1,2})\s*\.?\s*'
-    r'(?:\(\s*([a-h])\s*(?:[-–‐]\s*([a-h])\s*)?\)\s*\.?)?'
+    r'(?:\(\s*([a-h]|i{1,3}|iv|v)\s*(?:[-–‐]\s*([a-h])\s*)?\)\s*\.?)?'
     r'\s*[.…\s‐-]{4,}\s*'
     r'(\d{1,2}(?:\s*[+x×]\s*\d{1,2})?\s*Marks?)\s*$', re.I)
 
@@ -121,7 +122,8 @@ LINE_MARKS = re.compile(r'\s*[.…\s‐]*[.…]\s*\.?\s*(\d{1,2})\s*Marks?\.?\s*
 # leader collapsed in extraction.
 BARE_MARKS = re.compile(r'\s+(\d{1,2})\s*Marks?\.?\s*$', re.I)
 
-FULL = '•●▪■'                     # a full-mark bullet
+# The 2021 PDF exposes its Symbol-font bullet as U+F0B7.
+FULL = '•●▪■\uf0b7'                     # a full-mark bullet
 # Every character the five years use for the partial-credit dash. U+F02D is the
 # Symbol font's hyphen, which is what 2021 leaves in the text layer.
 # The hyphen is LAST on purpose. Written between two characters it is a
@@ -260,20 +262,51 @@ class Ask:
 class FrScheme:
     """One published French marking scheme, read as a list of asks."""
 
-    def __init__(self, year, level, subject=SUBJECT):
+    def __init__(self, year, level, subject=SUBJECT, *, raw_text=None):
         self.year, self.level, self.subject = year, level, subject
         self.path = os.path.join(schemes_dir(subject), f'{year}-{level}.md')
-        with open(self.path, encoding='utf-8') as fh:
-            raw = fh.read()
+        if raw_text is None:
+            with open(self.path, encoding='utf-8') as fh:
+                raw = fh.read()
+        else:
+            # Explicit opt-in for a separately reviewed PDF extraction. Never
+            # silently treat an unreadable older scheme as an empty census.
+            raw = raw_text
         for old, new in MISPRINTS.get((year, level), ()):
             assert old in raw, f'{year} {level}: misprint {old!r} is not in the scheme'
             raw = raw.replace(old, new)
-        self.lines = [l.rstrip() for l in raw.split('\n')]
+        # PDF text companions can indent entire section headings (2020 HL).
+        self.lines = [l.strip() for l in raw.split('\n')]
+        self.legacy_ordinary = year in range(2010, 2020) and level == 'ol'
+        ledger = os.path.join(HERE, 'french-reading-review.json')
+        with open(ledger, encoding='utf-8') as source:
+            records = json.load(source)['papers']
+        record = next((r for r in records if r['year'] == year and r['level'] == level), {})
+        for alias in record.get('schemeBulletAliases', []):
+            pattern = re.compile(r'^' + re.escape(alias['glyph']) + r'\s+')
+            assert alias['reason'] and any(pattern.match(line) for line in self.lines), alias
+            self.lines = [pattern.sub('• ', line) for line in self.lines]
+        for correction in record.get('schemeLineCorrections', []):
+            matches = [i for i, line in enumerate(self.lines) if ' '.join(line.split()) == correction['from']]
+            assert len(matches) == 1 and correction['reason'], correction
+            self.lines[matches[0]] = correction['to']
+        from fr_legacy_reading import apply_reviewed_blocks
+        self.lines = apply_reviewed_blocks(self.lines, record.get('schemeBlocks', []))
+        self.paper_question_groups = record.get('paperQuestionGroups', {})
+        if self.legacy_ordinary:
+            from fr_legacy_reading import normalize_ordinary
+            self.lines = normalize_ordinary(self.lines, record.get('schemePartSplits', {}), record.get('schemeCombinedParts', {}))
         self.asks = []
         self.refused = []
         self.rc_totals = {}                # RC number -> the tariff it prints
         self.listen_totals = {}            # listening section -> its tariff
         self._read()
+        # Older Ordinary schemes omit the question; older Higher MCQs repeat
+        # all lettered options inside the cue. Source-reviewed paper stems
+        # locate these asks without mistaking a numbered passage for a task.
+        for ask in self.reading():
+            key = f'A{ask.rc}-Q{ask.item}' + (f'-{ask.letter}' if ask.letter and not ask.letter_to else '')
+            ask.cue = record.get('paperCues', {}).get(key, '' if self.legacy_ordinary else ask.cue)
 
     # -- segmentation -------------------------------------------------------
     def _heads(self):
@@ -285,7 +318,7 @@ class FrScheme:
         for i, line in enumerate(self.lines):
             if APPENDIX.match(line):
                 break
-            if UNIT_A.match(line):
+            if unit != 'L' and UNIT_A.match(line):
                 unit, rc, lsec = 'A', None, None
                 continue
             if UNIT_L.match(line):
@@ -376,6 +409,11 @@ class FrScheme:
             short = printed - got
             suspects = [a for a in asks
                         if a.count == 1 and a.per and MULTI_ANSWER.search(a.cue)]
+            explicit = [a for a in suspects if any(re.match(
+                r'^(?:Two of|Three of|Any two|Accept any two)\b', d, re.I)
+                for d in a.directives)]
+            if explicit:
+                suspects = explicit
             if short > 0 and suspects and sum(a.per for a in suspects) == short:
                 for a in suspects:
                     a.fault = (
@@ -494,7 +532,14 @@ class FrScheme:
         # two marks each and the paper prints two answer lines.
         priced = [a['marks'] for a in answers if a['marks'] is not None]
         fault = None
-        if priced:
+        if self.legacy_ordinary and unit == 'A':
+            # Dash answers inherit the printed head rate; a lower asterisk
+            # rung must never become the full-credit rate when the full
+            # answers themselves omit a repeated mark.
+            for answer in answers:
+                if answer['bullet'] and answer['marks'] is None:
+                    answer['marks'] = per
+        if priced and not (self.legacy_ordinary and unit == 'A'):
             per = max(priced)
         if total is not None and per:
             if total % per:

@@ -155,6 +155,12 @@ def shipped_cards(subject):
             ref = re.search(r'questionRef: "([^"]+)"', chunk)
             if cid and ref:
                 out.append((cid.group(1), ref.group(1)))
+        if subject == 'french':
+            # French retains its original literal cards and appends reviewed
+            # task data. Count both, in the same order as the runtime deck.
+            for name in ('writing.json', 'reading.json', 'cloze.json', 'listening.json'):
+                data = json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8'))
+                out.extend((card['id'], card['questionRef']) for card in data if card['level'] == level)
     if subject == 'applied-maths':
         # Mirror withReviewedCards: preserve literal identities, apply audited
         # corrections, then append newly reviewed tasks. CI imports the actual
@@ -544,7 +550,7 @@ def reconcile_subject(subject, census=None):
                 hit = True
         if not hit:
             orphans.append({'id': cid, 'ref': refstr,
-                            'why': 'no paper on disk for that year/level'
+                            'why': 'no readable paper census for that year/level'
                             if not candidates else
                             'cites a part the paper does not print'})
 
@@ -589,14 +595,19 @@ def reconcile_subject(subject, census=None):
         'orphans': orphans, 'unparsed': unparsed, 'staleExclusions': stale,
         'papers': papers,
         'censusFlags': sum(len(p.get('flags', [])) for p in census['papers']),
+        'unreadPapers': [p for p in census['papers'] if p.get('error')],
     }
 
 
 def report(r, show_open=False):
+    unread = r.get('unreadPapers', [])
+    incomplete = f' | INCOMPLETE CENSUS: {len(unread)} unread paper(s)' if unread else ''
     print(f"{r['subject']}: {r['covered']}/{r['leaves']} paper asks covered "
           f"({r['coveragePct']}%), {r['excluded']} excluded, {r['open']} OPEN "
           f"| {r['cards']} cards, {len(r['orphans'])} orphan(s), "
-          f"{len(r['unparsed'])} unparsed, {r['censusFlags']} census flag(s)")
+          f"{len(r['unparsed'])} unparsed, {r['censusFlags']} census flag(s){incomplete}")
+    for paper in unread[:3]:
+        print(f"    UNREAD {paper['year']} {paper['level']}: {paper['error']}")
     for o in r['orphans'][:8]:
         print(f"    ORPHAN {o['id']}: \"{o['ref']}\" — {o['why']}")
     for u in r['unparsed'][:4]:
@@ -670,6 +681,9 @@ def content_hash(subject):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject in ('physical-education', 'applied-maths'):
         for name in (('factory.ts', 'reviewed.json') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject == 'french':
+        for name in ('writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 

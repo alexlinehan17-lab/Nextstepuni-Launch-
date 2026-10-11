@@ -265,14 +265,14 @@ describe('the question comes first and stays', () => {
 
     fireEvent.click(screen.getByRole('button', { name: /Read TEXT 1/i }));
     expect(screen.getByRole('dialog', { name: /The Underdog Effect/i })).toBeInTheDocument();
-    expect(screen.getByText('Printed page 2')).toBeInTheDocument();
+    expect(screen.getByText('PDF page 2')).toBeInTheDocument();
     expect(screen.queryByText('Oesophagus')).not.toBeInTheDocument();
 
     const pages = screen.getByLabelText('TEXT 1 pages');
     fireEvent.touchStart(pages, { touches: [{ clientX: 320, clientY: 360 }] });
     fireEvent.touchEnd(pages, { changedTouches: [{ clientX: 80, clientY: 365 }] });
     expect(screen.getByLabelText('Page 2 of 2')).toBeInTheDocument();
-    expect(screen.getByText('Printed page 3')).toBeInTheDocument();
+    expect(screen.getByText('PDF page 3')).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /Previous source page/i }));
     expect(screen.getByLabelText('Page 1 of 2')).toBeInTheDocument();
