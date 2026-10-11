@@ -1,4 +1,4 @@
-import { CONSTRUCTION_2015_HIGHER_REVIEWED_IDS } from './fixtures/construction2015Reviewed';
+import { CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS } from './fixtures/construction2015Reviewed';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -302,9 +302,9 @@ describe('Construction Studies exam-topic registry', () => {
       yearMax: 2026,
     });
     expect(CONSTRUCTION_HIGHER).toHaveLength(255 + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length);
-    expect(CONSTRUCTION_ORDINARY).toHaveLength(250);
+    expect(CONSTRUCTION_ORDINARY).toHaveLength(250 + CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.length);
     expect(new Set(
       [...CONSTRUCTION_HIGHER, ...CONSTRUCTION_ORDINARY].map(card => card.id),
-    ).size).toBe(505 + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length);
+    ).size).toBe(505 + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.length);
   });
 });

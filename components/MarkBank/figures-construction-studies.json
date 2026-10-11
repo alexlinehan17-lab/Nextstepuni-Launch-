@@ -243,5 +243,250 @@
     "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
     "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2015-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q1-original.png",
+    "md5": "cb9771f463f9c05771412678e4676ea4",
+    "alt": "Original SEC 2015 Ordinary Construction Studies Question 1: the printed question with a sketch of a house with a tiled front porch.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-OL-q1-roof-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q1-roof-section.png",
+    "md5": "0e4aadeade961aaa0aff03e7a3f1644e",
+    "alt": "SEC model section through one half of the insulated porch roof, from below the wallplate through the cavity wall and eaves to the ridge, with the typical specification list and the stainless-steel strap securing the wallplate.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q2-original.png",
+    "md5": "2f85763f78ca0e662ddc102df8f9f4f7",
+    "alt": "Original SEC 2015 Ordinary Construction Studies Question 2: the printed question with a sketch of a single-storey house built over 40 years ago.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-OL-q2-cavity-fill": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q2-cavity-fill.png",
+    "md5": "7727fd90cb934f1ec007fc362e81280e",
+    "alt": "SEC model sketches of cavity-fill insulation: a drill entering the outer leaf of a cavity wall, and the wall face with injection holes spaced 800 mm horizontally and 1350 mm vertically.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q2-external-insulation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q2-external-insulation.png",
+    "md5": "5b2818ca4d5955f5d67595ac9e9920da",
+    "alt": "SEC model sketch of an external insulation system on a cavity wall, showing the wall, adhesive, insulation board and a mechanical fixing labelled A to D.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q2-insulated-wall": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q2-insulated-wall.png",
+    "md5": "4f452597e6a5b75f3a0f168207f94a7f",
+    "alt": "SEC model sketch of insulation being pumped into a wall cavity through a hose, with arrows showing heat kept in by the insulated wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q2-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q2-scheme.png",
+    "md5": "e0ee117f23e5b3d08fc9a95808cd5e84",
+    "alt": "SEC 2015 Ordinary marking scheme page for Question 2: typical steps and sketches for filling the cavity and adding external insulation, and advantages of insulating the house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q3-original.png",
+    "md5": "643e56bc00caa94092ed16a662a9c5eb",
+    "alt": "Original SEC 2015 Ordinary Construction Studies Question 3: the printed question with a sketch of a bathroom with a shower and toilet.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q3-system.png",
+    "md5": "22ae6a4bdee348754947e536201f9e01",
+    "alt": "SEC model single-line diagram: attic storage tank with overflow, rising main, valves, cold feed to the hot water cylinder, expansion pipe, hot and cold supplies to the mixer-shower and cold supply to the toilet cistern, with insulation shown.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q3-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q3-scheme.png",
+    "md5": "d4ef3db462e81f5b8dea0ad3f67ae3dc",
+    "alt": "SEC 2015 Ordinary marking scheme page for Question 3: typical pipework specifications and diagram, and sketched water-saving methods for the shower, wash hand basin, toilet and bath.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q4-original.png",
+    "md5": "d4e079e73add51230b5749704af66615",
+    "alt": "Original SEC 2015 Ordinary Construction Studies Question 4: the printed question with the site map showing site A, house B, roadway C-C and the north point.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-OL-q4-site-plans": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q4-site-plans.png",
+    "md5": "f2854c46f29e019f385334267ba1d7b0",
+    "alt": "Two SEC model site plans showing a curved driveway from a splayed entrance at roadway C-C to house B, the septic tank and percolation area, and trees planted along the boundaries.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q5-original.png",
+    "md5": "e5e9a236834dcf05af50b6ca6a1b2c13",
+    "alt": "Original SEC 2015 Ordinary Construction Studies Question 5: the printed question with a cut-away sketch of a strip foundation, timber-frame external wall and insulated ground floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-OL-q5-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q5-section.png",
+    "md5": "6e3d77b09aa377126e12929ca33c187d",
+    "alt": "SEC 2015 Ordinary marking scheme page for Question 5: model section through the strip foundation, timber-frame wall and insulated concrete floor, with typical construction details and the insulation positions.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q6-original.png",
+    "md5": "da7992b4de2079b0fb16950096378642",
+    "alt": "Original SEC 2015 Ordinary Construction Studies Question 6: the printed question with a sketch of site hoarding displaying safety signs.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-OL-q6-hand-sign": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q6-hand-sign.png",
+    "md5": "26ac639463e45324c869ea7df2ea814d",
+    "alt": "SEC model blue circular mandatory sign with white gloves, labelled Hand protection.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q6-ear-sign": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q6-ear-sign.png",
+    "md5": "1f57bdd43ed087f8011b5209428e6134",
+    "alt": "SEC model blue circular mandatory sign with a head wearing ear defenders, labelled Ear protection.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q6-eye-sign": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q6-eye-sign.png",
+    "md5": "35cdb0bf09c5ce75debe5357102f8aca",
+    "alt": "SEC model blue circular mandatory sign with a face wearing safety goggles, labelled Eye protection.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q6-signs": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q6-signs.png",
+    "md5": "81d7413875107ff82fa000e1e63f058a",
+    "alt": "The three SEC model mandatory safety signs for hand protection, ear protection and eye protection.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q7-original.png",
+    "md5": "49b700ed26dc04738f20986baf6e5dd9",
+    "alt": "Original SEC 2015 Ordinary Construction Studies Question 7: the printed question with a sketch of a water butt beside a house under a pitched roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-OL-q7-water-butt": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q7-water-butt.png",
+    "md5": "1359d20a2f960ef569a077216ab9e3f7",
+    "alt": "SEC model sketch of a water butt on a stand beside a house, fed from the downpipe through a diverter and hose, with the eaves gutter above.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-original.png",
+    "md5": "6a4e48aae7cf8dc533c4d17ab6ee0bd6",
+    "alt": "Original SEC 2015 Ordinary Construction Studies Question 8: the printed list of nine terms, any five of which are explained.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-OL-q8-box-dovetail-joint": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-box-dovetail-joint.png",
+    "md5": "a221c74890157e559525005a53f13163",
+    "alt": "SEC model sketch of a box dovetail joint at the corner of a box.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q8-triple-glazing": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-triple-glazing.png",
+    "md5": "e37fd2318d1a22a6cf2a061281e21da9",
+    "alt": "SEC model sketch of a triple-glazed unit: three panes separated by two cavities and spacers.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q8-solar-panel": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-solar-panel.png",
+    "md5": "a108ecfe0767ad732a51341e3eb4bc8b",
+    "alt": "SEC model sketches of a flat-plate solar collector on a roof and an evacuated-tube collector.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q8-cordless-drill": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-cordless-drill.png",
+    "md5": "280598921d3fd403128954239513b46f",
+    "alt": "SEC model sketch of a cordless drill with its battery.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q8-skirting-board": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-skirting-board.png",
+    "md5": "f61f99ff549ce8654ac7760c4868df37",
+    "alt": "SEC model sketch of a profiled skirting board fixed at the base of a wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q8-compression-fitting": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-compression-fitting.png",
+    "md5": "d1b927a5ac44747e86d9751f5d95948d",
+    "alt": "SEC model sketch of a compression fitting joining two pipes, with its nuts.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q8-natural-seasoning": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-natural-seasoning.png",
+    "md5": "81d0f7081abbc2264cee8739ba2d503b",
+    "alt": "SEC 2015 Ordinary marking scheme notes on natural seasoning, with sketches of timber stacked on piers in an open-sided shed and a covered stack separated by stickers.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q8-concrete-lintel": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-concrete-lintel.png",
+    "md5": "6063025e200eed64dc00f7b5ce73bbfe",
+    "alt": "SEC model sketch of a concrete lintel bearing on blockwork.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q8-radon-barrier": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-radon-barrier.png",
+    "md5": "0ee966a36098f837b49d4db97375436d",
+    "alt": "SEC model cut-away of a floor and external wall showing the radon barrier A laid under the floor and continued through the wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q9-original.png",
+    "md5": "b018dc4fa8cf9ba5f87e58331346e72e",
+    "alt": "Original SEC 2015 Ordinary Construction Studies Question 9: the printed question with a sketch of the corner of a slatted wooden table.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-OL-q9-joint": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q9-joint.png",
+    "md5": "50b04f70641c0fb6ba9f02dd6e4c3f26",
+    "alt": "SEC model haunched mortise and tenon joint: the leg with its mortise (A), the rail with its haunched tenon (B), the assembled joint, the notes and the reasons for choosing it.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q9-table-features": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q9-table-features.png",
+    "md5": "9a9f2ef8a8bf68689bc01c0b7efdf26e",
+    "alt": "SEC model sketch of spaced tabletop boards, with arrows showing water dripping through the gaps at A and B.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-OL-q9-finish": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q9-finish.png",
+    "md5": "086c52985cf77faf2767e5373de4f9ad",
+    "alt": "SEC model sketches of an orbital sander, a paintbrush and a tin of finish.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }

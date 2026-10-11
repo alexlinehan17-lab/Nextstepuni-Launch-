@@ -1,0 +1,3891 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "ordinary",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "reviewedAt": "2026-10-11T19:43:09.032343+00:00",
+  "authoringReview": "scripts/markbank/authored/construction-studies-2015-ordinary-reviewed.json",
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf": "6a5e6c2c39fcfc5d7d3d4eebae139ed927eaaaa16fb429d0eab333c3f0d7e99f",
+    "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf": "ca21a4dccfd47aea12de99758ce82058a9b33138a0ab9742dba1197b47364e07"
+  },
+  "expectedRuntimeCards": 176,
+  "reason": "2015 Ordinary main English theory: all nine printed questions and 176 source-reviewed tasks, including all 126 Q8 choose-five routes. Exact original-question anchors and constituent topics; joinery/tools nodes without an Ordinary reference heading are declared in taxonomyGaps. Practical/Irish/other papers remain open.",
+  "questions": [
+    {
+      "n": "1",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "n": "2",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "n": "3",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "n": "4",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "n": "5",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "n": "6",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-sound"
+      ]
+    },
+    {
+      "n": "7",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "n": "8",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "n": "9",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "cardId": "cons-2015-ol-q1-a",
+      "markBankTopicId": "cons-3-8",
+      "canonicalTopicIds": [
+        "cons-3-8",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-6-2",
+        "cons-1-5"
+      ],
+      "canonicalTopicReview": "2015 outgoing syllabus: traditional cut roof form (3.8), tiled covering and roof insulation (3.9), the supporting cavity wall (3.3), thermal insulation (6.2) and the 1:5 scaled drawing of Question 1 (1.5). Ordinary Atlas files the wall under its combined Foundations/Floors/Walls heading.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-question-one-drawing-questions"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q1-b",
+      "markBankTopicId": "cons-3-8",
+      "canonicalTopicIds": [
+        "cons-3-8",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Securing the wallplate is the roof-to-wall junction: roof structure (3.8) restrained to the external wall (3.3).",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q1-complete",
+      "markBankTopicId": "cons-3-8",
+      "canonicalTopicIds": [
+        "cons-3-8",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-6-2",
+        "cons-1-5"
+      ],
+      "canonicalTopicReview": "Complete Question 1 keeps the union of its separately reviewed parts.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-question-one-drawing-questions"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q2-a-cavity-fill",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Retrofitting insulation material (6.2) into the existing cavity wall (3.3).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q2-a-external-insulation",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "External insulation system (6.2) applied to the existing external wall (3.3).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q2-a",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Part (a) keeps the union of both required insulation systems.",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q2-b",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Benefits of insulating materials (6.2) through reduced heat loss and running costs (6.3).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q2-complete",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-3",
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Complete Question 2 keeps the union of its separately reviewed parts.",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q3-a",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-5-1"
+      ],
+      "canonicalTopicReview": "Hot and cold water system with storage tank and cylinder (5.2) and protection of the installation by insulating tank and pipework (5.1).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q3-b",
+      "markBankTopicId": "cons-5-6",
+      "canonicalTopicIds": [
+        "cons-5-6",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "Water-saving sanitary fitments (5.6) and the cold/hot water supply to them (5.2).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q3-complete",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-5-1",
+        "cons-5-6"
+      ],
+      "canonicalTopicReview": "Complete Question 3 keeps the union of its separately reviewed parts.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q4-a",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3",
+        "cons-5-5"
+      ],
+      "canonicalTopicReview": "Site layout for a house on a chosen site (1.3) including the septic tank and percolation area (5.5).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q4-b-entrance",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Entrance location: a site-planning decision (1.3).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q4-b-driveway",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Driveway location: a site-planning decision (1.3).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q4-b-septic-tank",
+      "markBankTopicId": "cons-5-5",
+      "canonicalTopicIds": [
+        "cons-5-5",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Septic tank and percolation area (5.5) located as part of the site layout (1.3).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q4-b",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3",
+        "cons-5-5"
+      ],
+      "canonicalTopicReview": "Part (b) keeps the union of its three required reasons.",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q4-c",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Landscaping and its effect on the built environment (1.2) within the site plan (1.3).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q4-complete",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3",
+        "cons-5-5",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Complete Question 4 keeps the union of its separately reviewed parts.",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q5-a",
+      "markBankTopicId": "cons-2-4",
+      "canonicalTopicIds": [
+        "cons-2-4",
+        "cons-3-3",
+        "cons-4-2",
+        "cons-3-4",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Strip foundation (2.4), external wall (3.3), insulated solid ground floor (4.2), DPC and radon barrier (3.4) and insulation (6.2) are all explicit in the printed section.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q5-b",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-3",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "Insulation position (6.2) in the external wall (3.3) and ground floor (4.2).",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q5-complete",
+      "markBankTopicId": "cons-2-4",
+      "canonicalTopicIds": [
+        "cons-2-4",
+        "cons-3-3",
+        "cons-4-2",
+        "cons-3-4",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Complete Question 5 keeps the union of its separately reviewed parts.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q6-a-hand",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8"
+      ],
+      "canonicalTopicReview": "Hand protection on site: safety precautions on site (1.8).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q6-a-ear",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8",
+        "cons-8-4"
+      ],
+      "canonicalTopicReview": "Ear protection: site safety (1.8) and noise levels and hearing-protection devices (8.4).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-sound"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q6-a-eye",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8"
+      ],
+      "canonicalTopicReview": "Eye protection on site: safety precautions on site (1.8).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q6-b-hand",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8"
+      ],
+      "canonicalTopicReview": "Hand protection on site: safety precautions on site (1.8).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q6-b-ear",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8",
+        "cons-8-4"
+      ],
+      "canonicalTopicReview": "Ear protection: site safety (1.8) and noise levels and hearing-protection devices (8.4).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-sound"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q6-b-eye",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8"
+      ],
+      "canonicalTopicReview": "Eye protection on site: safety precautions on site (1.8).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q6-a",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8",
+        "cons-8-4"
+      ],
+      "canonicalTopicReview": "Part (a) keeps the union of its three required signs.",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-sound"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q6-b",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8",
+        "cons-8-4"
+      ],
+      "canonicalTopicReview": "Part (b) keeps the union of its three required activities.",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-sound"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q6-c",
+      "markBankTopicId": "cons-9-4",
+      "canonicalTopicIds": [
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Safe use of tools and machines in the Construction Studies room (9.4).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q6-complete",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8",
+        "cons-8-4",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Complete Question 6 keeps the union of its separately reviewed parts.",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-sound"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q7-a",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4"
+      ],
+      "canonicalTopicReview": "Eaves gutters and rainwater pipes (5.4).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q7-b-advantages",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4"
+      ],
+      "canonicalTopicReview": "Rainwater collected from gutters and downpipes (5.4).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q7-b-disadvantages",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4"
+      ],
+      "canonicalTopicReview": "Rainwater collected from gutters and downpipes (5.4).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q7-b",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4"
+      ],
+      "canonicalTopicReview": "Part (b) keeps the union of both required lists.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q7-c",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4"
+      ],
+      "canonicalTopicReview": "Harvesting surface water from roofs (5.4).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q7-complete",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4"
+      ],
+      "canonicalTopicReview": "Complete Question 7 keeps the union of its separately reviewed parts.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-box-dovetail-joint",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4"
+      ],
+      "canonicalTopicReview": "Box construction (10.2) and choice of joint for strength and decorative effect (10.4). The Ordinary reference taxonomy has no joinery heading; the original question is browsed under its existing Wood, Rot & Ventilation association, and 10.2/10.4 are declared outside that heading's crosswalk.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-triple-glazing",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6"
+      ],
+      "canonicalTopicReview": "Glass and glazing (3.6), insulating performance (6.2) and reduced surface condensation (6.6).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-solar-panel",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3"
+      ],
+      "canonicalTopicReview": "Solar heat gain (6.4) used by a heating/hot-water system (5.3).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-cordless-drill",
+      "markBankTopicId": "cons-9-2",
+      "canonicalTopicIds": [
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Power tools and their uses (9.2) and safety with electricity (9.4). The Ordinary reference taxonomy has no tools heading; 9.2 is declared outside the Site Safety crosswalk, which covers 9.4.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-skirting-board",
+      "markBankTopicId": "cons-4-5",
+      "canonicalTopicIds": [
+        "cons-4-5"
+      ],
+      "canonicalTopicReview": "Second-fixing joinery (4.5).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-compression-fitting",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-5-1"
+      ],
+      "canonicalTopicReview": "Water supply pipework (5.2) and service installation materials (5.1).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-natural-seasoning",
+      "markBankTopicId": "cons-10-3",
+      "canonicalTopicIds": [
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "Timber as a construction material (10.3). The outgoing registry has no separate timber-seasoning node; the reviewed Ordinary Wood, Rot & Ventilation crosswalk node for timber boards is used, matching the question's existing Atlas association.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-concrete-lintel",
+      "markBankTopicId": "cons-3-4",
+      "canonicalTopicIds": [
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "Lintels over openings (3.4).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-radon-barrier",
+      "markBankTopicId": "cons-3-4",
+      "canonicalTopicIds": [
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "Membranes (3.4) within the solid ground floor (4.2).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--cordless-drill--skirting-board",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--cordless-drill--compression-fitting",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--cordless-drill--natural-seasoning",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--cordless-drill--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--cordless-drill--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--skirting-board--compression-fitting",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--skirting-board--natural-seasoning",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--skirting-board--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--skirting-board--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--compression-fitting--natural-seasoning",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--compression-fitting--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--compression-fitting--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--solar-panel--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--cordless-drill--skirting-board--compression-fitting",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--cordless-drill--skirting-board--natural-seasoning",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--cordless-drill--skirting-board--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--cordless-drill--skirting-board--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--cordless-drill--compression-fitting--natural-seasoning",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--cordless-drill--compression-fitting--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--cordless-drill--compression-fitting--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--cordless-drill--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--cordless-drill--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--cordless-drill--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--skirting-board--compression-fitting--natural-seasoning",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--skirting-board--compression-fitting--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--skirting-board--compression-fitting--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--skirting-board--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--skirting-board--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--skirting-board--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-4-5",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--compression-fitting--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--compression-fitting--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--compression-fitting--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--triple-glazing--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--cordless-drill--skirting-board--compression-fitting",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--cordless-drill--skirting-board--natural-seasoning",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--cordless-drill--skirting-board--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--cordless-drill--skirting-board--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--cordless-drill--compression-fitting--natural-seasoning",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--cordless-drill--compression-fitting--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--cordless-drill--compression-fitting--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--cordless-drill--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--cordless-drill--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--cordless-drill--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--skirting-board--compression-fitting--natural-seasoning",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--skirting-board--compression-fitting--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--skirting-board--compression-fitting--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--skirting-board--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--skirting-board--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--skirting-board--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--compression-fitting--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--compression-fitting--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--compression-fitting--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--solar-panel--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--cordless-drill--skirting-board--compression-fitting--natural-seasoning",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--cordless-drill--skirting-board--compression-fitting--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--cordless-drill--skirting-board--compression-fitting--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--cordless-drill--skirting-board--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--cordless-drill--skirting-board--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--cordless-drill--skirting-board--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--cordless-drill--compression-fitting--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--cordless-drill--compression-fitting--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--cordless-drill--compression-fitting--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--cordless-drill--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--skirting-board--compression-fitting--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--skirting-board--compression-fitting--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--skirting-board--compression-fitting--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--skirting-board--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-box-dovetail-joint--compression-fitting--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-10-2",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--cordless-drill--skirting-board--compression-fitting",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--cordless-drill--skirting-board--natural-seasoning",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--cordless-drill--skirting-board--concrete-lintel",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--cordless-drill--skirting-board--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--cordless-drill--compression-fitting--natural-seasoning",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--cordless-drill--compression-fitting--concrete-lintel",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--cordless-drill--compression-fitting--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--cordless-drill--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--cordless-drill--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--cordless-drill--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--skirting-board--compression-fitting--natural-seasoning",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--skirting-board--compression-fitting--concrete-lintel",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--skirting-board--compression-fitting--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--skirting-board--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--skirting-board--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--skirting-board--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--compression-fitting--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--compression-fitting--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--compression-fitting--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--solar-panel--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-5-3",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--cordless-drill--skirting-board--compression-fitting--natural-seasoning",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--cordless-drill--skirting-board--compression-fitting--concrete-lintel",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--cordless-drill--skirting-board--compression-fitting--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--cordless-drill--skirting-board--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--cordless-drill--skirting-board--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--cordless-drill--skirting-board--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--cordless-drill--compression-fitting--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--cordless-drill--compression-fitting--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--cordless-drill--compression-fitting--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--cordless-drill--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--skirting-board--compression-fitting--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--skirting-board--compression-fitting--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--skirting-board--compression-fitting--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--skirting-board--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-triple-glazing--compression-fitting--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-6-6",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--cordless-drill--skirting-board--compression-fitting--natural-seasoning",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--cordless-drill--skirting-board--compression-fitting--concrete-lintel",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--cordless-drill--skirting-board--compression-fitting--radon-barrier",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--cordless-drill--skirting-board--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--cordless-drill--skirting-board--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--cordless-drill--skirting-board--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--cordless-drill--compression-fitting--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--cordless-drill--compression-fitting--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--cordless-drill--compression-fitting--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--cordless-drill--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--skirting-board--compression-fitting--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--skirting-board--compression-fitting--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--skirting-board--compression-fitting--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--skirting-board--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-solar-panel--compression-fitting--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-cordless-drill--skirting-board--compression-fitting--natural-seasoning--concrete-lintel",
+      "markBankTopicId": "cons-9-2",
+      "canonicalTopicIds": [
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-cordless-drill--skirting-board--compression-fitting--natural-seasoning--radon-barrier",
+      "markBankTopicId": "cons-9-2",
+      "canonicalTopicIds": [
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-cordless-drill--skirting-board--compression-fitting--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-9-2",
+      "canonicalTopicIds": [
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-cordless-drill--skirting-board--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-9-2",
+      "canonicalTopicIds": [
+        "cons-9-2",
+        "cons-9-4",
+        "cons-4-5",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-cordless-drill--compression-fitting--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-9-2",
+      "canonicalTopicIds": [
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q8-complete-skirting-board--compression-fitting--natural-seasoning--concrete-lintel--radon-barrier",
+      "markBankTopicId": "cons-4-5",
+      "canonicalTopicIds": [
+        "cons-4-5",
+        "cons-5-2",
+        "cons-5-1",
+        "cons-10-3",
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "This complete route keeps the union of its five separately reviewed terms.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q9-a",
+      "markBankTopicId": "cons-10-4",
+      "canonicalTopicIds": [
+        "cons-10-4",
+        "cons-10-6"
+      ],
+      "canonicalTopicReview": "Choice of joint (10.4) and waterproof glue (10.6). The Ordinary reference taxonomy has no joinery heading; the original question keeps its existing Wood, Rot & Ventilation association and 10.4/10.6 are declared outside that heading's crosswalk.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q9-b",
+      "markBankTopicId": "cons-10-3",
+      "canonicalTopicIds": [
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "Solid timber boards spaced for movement and protected from moisture (10.3). Exposure to the elements (1.7) is not a reviewed canonical library node, so it is not claimed.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q9-c",
+      "markBankTopicId": "cons-10-7",
+      "canonicalTopicIds": [
+        "cons-10-7"
+      ],
+      "canonicalTopicReview": "Surface preparation and finishing (10.7).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q9-complete",
+      "markBankTopicId": "cons-10-4",
+      "canonicalTopicIds": [
+        "cons-10-4",
+        "cons-10-6",
+        "cons-10-3",
+        "cons-10-7"
+      ],
+      "canonicalTopicReview": "Complete Question 9 keeps the union of its separately reviewed parts.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    }
+  ],
+  "taxonomyGaps": [
+    {
+      "cardId": "cons-2015-ol-q8-box-dovetail-joint",
+      "canonicalTopicIds": [
+        "cons-10-2",
+        "cons-10-4"
+      ],
+      "atlasTopicId": "construction-studies-ordinary-wood-rot-ventilation",
+      "reason": "No Ordinary outgoing reference heading covers joinery (10.x joints)."
+    },
+    {
+      "cardId": "cons-2015-ol-q8-cordless-drill",
+      "canonicalTopicIds": [
+        "cons-9-2"
+      ],
+      "atlasTopicId": "construction-studies-ordinary-site-safety",
+      "reason": "No Ordinary outgoing reference heading covers tools (9.2)."
+    },
+    {
+      "cardId": "cons-2015-ol-q9-a",
+      "canonicalTopicIds": [
+        "cons-10-4",
+        "cons-10-6"
+      ],
+      "atlasTopicId": "construction-studies-ordinary-wood-rot-ventilation",
+      "reason": "No Ordinary outgoing reference heading covers joinery and glues (10.4, 10.6)."
+    }
+  ]
+}
