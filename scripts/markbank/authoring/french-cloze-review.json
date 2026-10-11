@@ -510,9 +510,45 @@
         }
       ],
       "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
+    },
+    {
+      "year": 2012,
+      "paperPage": 10,
+      "schemePage": 9,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2012-ol-000-paper.pdf",
+          "sha256": "a19c7f11631b14d2d66d61232c7bf67eec54cda21f3ee9db46335b5858c47b79"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2012-ol.pdf",
+          "sha256": "ab376e4206d7ecaf22e2afebd97af05c277ab75dcafff32a925cb636810faf25"
+        }
+      ],
+      "answers": [
+        "musique",
+        "pas",
+        "dit",
+        "boulot",
+        "magasin",
+        "argent",
+        "est",
+        "samedi",
+        "à",
+        "tes"
+      ],
+      "capitalLetters": "Accept capital letters (apart from samedi).",
+      "letterRepairs": [
+        {
+          "extracted": "faire. de ma part",
+          "printed": "faire. Dis bonjour de ma part",
+          "reason": "Paper p10 prints “Dis bonjour” at the end of the line before “de ma part à [10] parents”; the column reader dropped it, leaving gap 10’s sentence without its verb."
+        }
+      ],
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
     }
   ],
-  "expectedCards": 140,
+  "expectedCards": 150,
   "boundaryDecision": "Each of ten gaps is separately priced at 3 marks. The word bank contains possible answers, not selectable task alternatives. Preserve the original whole-letter practice cards and add each separately practicable gap.",
   "verifiedCorrections": [
     "2022 OL scheme p11 leaves item 10 empty in the numbered answer list, but its completed letter explicitly prints du in On pourrait faire du vélo. The paper word bank also contains du. All ten gaps are supported.",

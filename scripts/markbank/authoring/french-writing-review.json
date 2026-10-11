@@ -1,8 +1,92 @@
 {
   "status": "partial-corpus-review",
   "reviewedAt": "2026-10-07",
-  "cards": 486,
+  "cards": 504,
   "review": [
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 11
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 12
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 13
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 4,
+      "poolSize": 4,
+      "routes": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 11,
+      "schemePage": 9
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "schemePages": [
+        13,
+        14
+      ],
+      "notes": "Eight independently priced 40/30-mark alternatives. Q1(a) is an open opinion prompt on its Section I passage; Q1(b) real/imaginary is open creative scope. Q2(b) requires answers to all three of Jean-Luc’s questions; they are compulsory parts of one email, not a closed pool. Q3(a) concerts, Q3(b) and Q4(b) reactions and Q4(a) agreement are open opinion scope; the Q3(a) and Q4(a) photographs are retained in the illustration viewer. All four form sentences and all three Ordinary writing points are required."
+    },
+    {
+      "source": "examiner-reports/french/papers/2012-hl-000-paper.pdf",
+      "sha256": "ad2588a3b72470e19c4b2bcc61b79c882c7b15a0422daccd3b8160185d67bbc0"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2012-hl.pdf",
+      "sha256": "a34ab7035ac1099a0f93b63c0427d78084527fe46dd0ef19ae9b55a138933086"
+    },
+    {
+      "source": "examiner-reports/french/papers/2012-ol-000-paper.pdf",
+      "sha256": "a19c7f11631b14d2d66d61232c7bf67eec54cda21f3ee9db46335b5858c47b79"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2012-ol.pdf",
+      "sha256": "ab376e4206d7ecaf22e2afebd97af05c277ab75dcafff32a925cb636810faf25"
+    },
     {
       "year": 2013,
       "level": "ordinary",

@@ -10078,5 +10078,725 @@
       "humanReviewedBy": "agent-verified",
       "humanReviewedAt": "2026-10-07"
     }
+  },
+  {
+    "id": "fr-2012-ol-cloze-b1a-gap-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2012,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2012 OL Section B Q1(a) · gap 1",
+    "questionText": "Complétez l’espace [1] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nComme tu sais bien, je me passionne pour la [1], mais le mois dernier quelqu’un a volé ma clarinette.\n\nMots proposés : samedi, pas, argent, à, musique, dit, tes, magasin, est, boulot",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 1",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2012 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2012 Ordinary Level marking scheme, p.9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 1: musique — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi)."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2012-ol-cloze-b1a-gap-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2012,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2012 OL Section B Q1(a) · gap 2",
+    "questionText": "Complétez l’espace [2] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nPapa ne veut [2] m’en acheter une autre.\n\nMots proposés : samedi, pas, argent, à, musique, dit, tes, magasin, est, boulot",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 2",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2012 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2012 Ordinary Level marking scheme, p.9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 2: pas — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi)."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2012-ol-cloze-b1a-gap-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2012,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2012 OL Section B Q1(a) · gap 3",
+    "questionText": "Complétez l’espace [3] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nIl [3] que je ne fais pas attention à mes affaires.\n\nMots proposés : samedi, pas, argent, à, musique, dit, tes, magasin, est, boulot",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 3",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2012 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2012 Ordinary Level marking scheme, p.9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 3: dit — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi)."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2012-ol-cloze-b1a-gap-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2012,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2012 OL Section B Q1(a) · gap 4",
+    "questionText": "Complétez l’espace [4] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nHeureusement j’ai trouvé un petit [4] .\n\nMots proposés : samedi, pas, argent, à, musique, dit, tes, magasin, est, boulot",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 4",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2012 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2012 Ordinary Level marking scheme, p.9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 4: boulot — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi)."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2012-ol-cloze-b1a-gap-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2012,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2012 OL Section B Q1(a) · gap 5",
+    "questionText": "Complétez l’espace [5] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nTous les samedis, je travaille dans un [5] et le travail me plaît beaucoup.\n\nMots proposés : samedi, pas, argent, à, musique, dit, tes, magasin, est, boulot",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 5",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2012 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2012 Ordinary Level marking scheme, p.9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 5: magasin — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi)."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2012-ol-cloze-b1a-gap-6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2012,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2012 OL Section B Q1(a) · gap 6",
+    "questionText": "Complétez l’espace [6] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nComme ça, je gagne de l’ [6] et je fais des économies.\n\nMots proposés : samedi, pas, argent, à, musique, dit, tes, magasin, est, boulot",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 6",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2012 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2012 Ordinary Level marking scheme, p.9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 6: argent — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi)."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2012-ol-cloze-b1a-gap-7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2012,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2012 OL Section B Q1(a) · gap 7",
+    "questionText": "Complétez l’espace [7] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nLe patron [7] très gentil mais je dois admettre que je suis souvent fatiguée le [8] soir !\n\nMots proposés : samedi, pas, argent, à, musique, dit, tes, magasin, est, boulot",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 7",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2012 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2012 Ordinary Level marking scheme, p.9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 7: est — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi)."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2012-ol-cloze-b1a-gap-8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2012,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2012 OL Section B Q1(a) · gap 8",
+    "questionText": "Complétez l’espace [8] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nLe patron [7] très gentil mais je dois admettre que je suis souvent fatiguée le [8] soir !\n\nMots proposés : samedi, pas, argent, à, musique, dit, tes, magasin, est, boulot",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 8",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2012 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2012 Ordinary Level marking scheme, p.9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 8: samedi — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi)."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2012-ol-cloze-b1a-gap-9",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2012,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2012 OL Section B Q1(a) · gap 9",
+    "questionText": "Complétez l’espace [9] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nBon, j’ai assez écrit, et j’ai encore un tas de devoirs [9] faire.\n\nMots proposés : samedi, pas, argent, à, musique, dit, tes, magasin, est, boulot",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 9",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2012 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2012 Ordinary Level marking scheme, p.9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 9: à — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi)."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2012-ol-cloze-b1a-gap-10",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2012,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2012 OL Section B Q1(a) · gap 10",
+    "questionText": "Complétez l’espace [10] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nDis bonjour de ma part à [10] parents.\n\nMots proposés : samedi, pas, argent, à, musique, dit, tes, magasin, est, boulot",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 10",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2012 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2012 Ordinary Level marking scheme, p.9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 10: tes — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi)."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
   }
 ]

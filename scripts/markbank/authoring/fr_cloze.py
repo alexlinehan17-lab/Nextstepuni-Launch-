@@ -59,7 +59,9 @@ def build():
             for gap, alternatives in record.get('acceptedAlternatives', {}).items():
                 assert 1 <= int(gap) <= 10
                 assert all(answer in words and answer in scheme_text for answer in alternatives)
-            for phrase in ['10 gaps for 3 marks each', 'Careless transcription, including accents, deduct 1 mark.', 'Accept capital letters.']:
+            # 2012 excepts one word from the capital-letter allowance; lift the year's own line.
+            capitals = record.get('capitalLetters', 'Accept capital letters.')
+            for phrase in ['10 gaps for 3 marks each', 'Careless transcription, including accents, deduct 1 mark.', capitals]:
                 assert phrase in scheme_text, (year, phrase)
         if record.get('salutation'):
             salutation = record['salutation']
@@ -95,7 +97,7 @@ def build():
                         sourceMaterial=source, specVersion='lc-french-syllabus',
                         schemeCitation=f'SEC French {year} Ordinary Level marking scheme, p.{record["schemePage"]} — © State Examinations Commission.',
                         schemeRegion=dict(schemeFileid=doc['scheme']['f'], p=record['schemePage'], r=[0, 0, 1, 1]),
-                        rubric=dict(system='french', taskRequirements=['Complete only the selected gap.'], answerGuide=[f'Gap {gap}: {accepted} — 3 marks.', 'Careless transcription, including accents, deduct 1 mark. Accept capital letters.'],
+                        rubric=dict(system='french', taskRequirements=['Complete only the selected gap.'], answerGuide=[f'Gap {gap}: {accepted} — 3 marks.', f'Careless transcription, including accents, deduct 1 mark. {capitals}'],
                                     criteria=[dict(id='response', label='Response', maxMarks=3, permittedMarks=[0, 2, 3], guidance=['3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0.'])],
                                     markingGuideNote='The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap.'),
                         qa=dict(gates=['visual-paper-scheme-review', 'published-gap-tariff', 'selection-review'], humanReviewedBy='agent-verified', humanReviewedAt=review['reviewedAt']))
