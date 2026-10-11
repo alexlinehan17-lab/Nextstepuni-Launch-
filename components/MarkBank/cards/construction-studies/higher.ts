@@ -8538,4 +8538,3100 @@ export const CARDS: SecCard[] = [
           "includesPrompt": true
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q1-a", topicId: "cons-1-5", conceptId: "cut-roof-section-a",
+    section: "B", questionRef: "2026 HL Q1(a)",
+    stem: "The sketch shows a dwelling house with a traditional slated cut roof. The roof has a pitch of 30° and is highly insulated at ceiling joist level. The internal span of the house is 5.8 metres. The walls of the house are of 450 mm rendered concrete block construction with a full-fill insulated cavity.",
+    questionText: "To a scale of 1:10, draw a vertical section through one half of the roof structure, from just below eaves up to the ridge. Show one external wall and one rafter length. Include the typical construction details from 600 mm below the ceiling joists up to the ridge, and include three courses of slate at eaves. Include four typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 56,
+    rows: [
+    { id: "external-wall", kind: "criterion", verbatim: "External Wall – typical detailing", marks: 12, contextNote: "Three external-wall details, 4 each (3 for drawing, 1 for annotation). Typical: external and internal render; 100 mm external and internal block leaves; wall ties; 250 mm full-fill insulated cavity; cavity closer; 100 mm × 75 mm wallplate(s).", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "roof-structure", kind: "criterion", verbatim: "Roof Structure – typical detailing", marks: 16, contextNote: "Four roof-structure details, 4 each (3 drawing, 1 annotation). Typical: 200 mm × 50 mm rafters at 400 mm centres; ceiling joists at 400 mm centres; 225 mm × 75 mm purlin; strut supporting the purlin; hanger; collar tie at each couple or at 1200 mm centres; ridge board; plasterboard with 350 mm insulation laid in three layers.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "eaves", kind: "criterion", verbatim: "Eaves detail – typical detailing", marks: 16, contextNote: "Four eaves details, 4 each (3 drawing, 1 annotation). Typical: tilting fillet; fascia board, soffit and gutter (any two); 25 mm fascia ventilator and 50 mm proprietary eaves ventilator; wind-tightness barrier; breather membrane laid over the rafters; 50 mm × 30 mm slating battens; three courses of slates.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "dimensions", kind: "criterion", verbatim: "Four typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Scale - 4 marks Drafting - 4 marks", marks: 8, contextNote: "Scale 4 and drafting 4, assessed together: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Traditional cut roof section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the airtightness detail in (b) is marked separately. Any alternative detailing that meets current Building Regulations is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q1-original.png",
+          "srcHash": "6845c8d8d47c2cb70d5b3cc28a73e921",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 1: the printed question with a sketch of a house with a slated cut roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q1-roof-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q1-roof-section.png",
+          "srcHash": "ac98aa8809756a2e2907663d1d9e0291",
+          "alt": "SEC model section through one half of a traditional cut roof and cavity external wall: rafters, purlin, strut, collar tie, ceiling joists with layered insulation, eaves ventilation, slates and gutter.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q1-b", topicId: "cons-6-6", conceptId: "cut-roof-section-b",
+    section: "B", questionRef: "2026 HL Q1(b)",
+    stem: "The sketch shows a dwelling house with a traditional slated cut roof. The roof has a pitch of 30° and is highly insulated at ceiling joist level. The internal span of the house is 5.8 metres. The walls of the house are of 450 mm rendered concrete block construction with a full-fill insulated cavity.",
+    questionText: "On your drawing, show the typical design detailing that will ensure airtightness at the junction of the ceiling and the external wall.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "airtightness", kind: "criterion", verbatim: "Design detailing identified to ensure airtightness at the junction of the ceiling and the external wall.", marks: 4, contextNote: "Show and identify a detail that makes the ceiling-to-external-wall junction airtight, such as airtightness tape sealing the ceiling airtightness layer to the wall. Any other valid airtight detail is acceptable.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Traditional cut roof section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the airtightness detail in (b) is marked separately. Any alternative detailing that meets current Building Regulations is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q1-original.png",
+          "srcHash": "6845c8d8d47c2cb70d5b3cc28a73e921",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 1: the printed question with a sketch of a house with a slated cut roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q1-airtightness",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q1-airtightness.png",
+          "srcHash": "eb25888fdef1cfe1790f89bae059b4a4",
+          "alt": "SEC model eaves detail with an arrow to the airtightness tape sealing the junction of the ceiling and the external wall.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q1-complete", topicId: "cons-1-5", conceptId: "cut-roof-section-complete",
+    section: "B", questionRef: "2026 HL Q1 — complete",
+    stem: "The sketch shows a dwelling house with a traditional slated cut roof. The roof has a pitch of 30° and is highly insulated at ceiling joist level. The internal span of the house is 5.8 metres. The walls of the house are of 450 mm rendered concrete block construction with a full-fill insulated cavity.",
+    questionText: "(a) To a scale of 1:10, draw a vertical section through one half of the roof structure, from just below eaves up to the ridge. Show one external wall and one rafter length. Include the typical construction details from 600 mm below the ceiling joists up to the ridge, and include three courses of slate at eaves. Include four typical dimensions. (b) On your drawing, show the typical design detailing that will ensure airtightness at the junction of the ceiling and the external wall.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-external-wall", kind: "criterion", verbatim: "External Wall – typical detailing", marks: 12, contextNote: "Three external-wall details, 4 each (3 for drawing, 1 for annotation). Typical: external and internal render; 100 mm external and internal block leaves; wall ties; 250 mm full-fill insulated cavity; cavity closer; 100 mm × 75 mm wallplate(s).", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-roof-structure", kind: "criterion", verbatim: "Roof Structure – typical detailing", marks: 16, contextNote: "Four roof-structure details, 4 each (3 drawing, 1 annotation). Typical: 200 mm × 50 mm rafters at 400 mm centres; ceiling joists at 400 mm centres; 225 mm × 75 mm purlin; strut supporting the purlin; hanger; collar tie at each couple or at 1200 mm centres; ridge board; plasterboard with 350 mm insulation laid in three layers.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-eaves", kind: "criterion", verbatim: "Eaves detail – typical detailing", marks: 16, contextNote: "Four eaves details, 4 each (3 drawing, 1 annotation). Typical: tilting fillet; fascia board, soffit and gutter (any two); 25 mm fascia ventilator and 50 mm proprietary eaves ventilator; wind-tightness barrier; breather membrane laid over the rafters; 50 mm × 30 mm slating battens; three courses of slates.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Four typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Scale - 4 marks Drafting - 4 marks", marks: 8, contextNote: "Scale 4 and drafting 4, assessed together: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-airtightness", kind: "criterion", verbatim: "Design detailing identified to ensure airtightness at the junction of the ceiling and the external wall.", marks: 4, contextNote: "Show and identify a detail that makes the ceiling-to-external-wall junction airtight, such as airtightness tape sealing the ceiling airtightness layer to the wall. Any other valid airtight detail is acceptable.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q1-a","label":"a","marks":56,"rowIds":["a-external-wall","a-roof-structure","a-eaves","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2026-hl-q1-b","label":"b","marks":4,"rowIds":["b-airtightness"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Traditional cut roof section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the airtightness detail in (b) is marked separately. Any alternative detailing that meets current Building Regulations is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q1-original.png",
+          "srcHash": "6845c8d8d47c2cb70d5b3cc28a73e921",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 1: the printed question with a sketch of a house with a slated cut roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q1-roof-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q1-roof-section.png",
+          "srcHash": "ac98aa8809756a2e2907663d1d9e0291",
+          "alt": "SEC model section through one half of a traditional cut roof and cavity external wall: rafters, purlin, strut, collar tie, ceiling joists with layered insulation, eaves ventilation, slates and gutter.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q2-a-entrance-access", topicId: "cons-1-2", conceptId: "lifetime-use-a-entrance-access",
+    section: "B", questionRef: "2026 HL Q2(a) — entrance access",
+    stem: "Lifetime use of a dwelling should be a key consideration at the design stage.",
+    questionText: "Using notes and freehand sketches, discuss two best-practice guidelines that should be followed when designing for lifetime use at each of the following areas of a dwelling: entrance access.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "guideline-1", kind: "criterion", verbatim: "Entrance access", marks: 8, contextNote: "First guideline for the entrance access: notes 4 and sketches 4. Such as: a level threshold (maximum 15 mm upstand, chamfered or rounded edges) with a recessed drainage channel and the internal floor flush; a 1000 mm minimum clear door opening; a slip-resistant approach path at 1:20 or flatter (ramps no steeper than 1:12, with level landings); a level landing of at least 1500 mm × 1500 mm outside the door and 300 mm clear space at the leading edge; a canopy or recess at least 900 mm deep; lever handles 800–1050 mm above floor level and low door-closer force; a vision panel; motion-sensor lighting.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "guideline-2", kind: "criterion", verbatim: "Entrance access", marks: 8, contextNote: "Second, different guideline for the entrance access: notes 4 and sketches 4. Do not credit the same guideline twice.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Designing for lifetime use",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original garage-conversion plan retained. Both areas in (a) are required. The scheme guidelines and dimensions are typical best practice, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-original.png",
+          "srcHash": "f4d719a24e1c1767f062cc3b021a8227",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 2: the printed question with the ground-floor plan of a draft garage conversion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q2-entrance-access",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-entrance-access.png",
+          "srcHash": "36b075b5bf32ee2c76237b8645fa370d",
+          "alt": "SEC 2026 Higher marking scheme page on lifetime-use entrance access, with sketches of a level threshold under a canopy, a recessed drainage channel and a 1000 mm wide entrance door.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q2-a-bathroom", topicId: "cons-1-2", conceptId: "lifetime-use-a-bathroom",
+    section: "B", questionRef: "2026 HL Q2(a) — bathroom",
+    stem: "Lifetime use of a dwelling should be a key consideration at the design stage.",
+    questionText: "Using notes and freehand sketches, discuss two best-practice guidelines that should be followed when designing for lifetime use at each of the following areas of a dwelling: bathroom.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "guideline-1", kind: "criterion", verbatim: "Bathroom", marks: 8, contextNote: "First guideline for the bathroom: notes 4 and sketches 4. Such as: an accessible bathroom on the entry level; a clear turning circle of at least Ø1500 mm (ideally Ø1800 mm); walls reinforced with 18 mm plywood or noggins for future grab rails; a level-access (wet-room) shower graded to a gully; a door opening outwards or sliding with at least 800 mm clear opening; a WC 450–480 mm high and a wall-hung basin; lever taps; large rocker switches or pull cords 900–1200 mm above floor level; slip-resistant flooring.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "guideline-2", kind: "criterion", verbatim: "Bathroom", marks: 8, contextNote: "Second, different guideline for the bathroom: notes 4 and sketches 4. Do not credit the same guideline twice.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Designing for lifetime use",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original garage-conversion plan retained. Both areas in (a) are required. The scheme guidelines and dimensions are typical best practice, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-original.png",
+          "srcHash": "f4d719a24e1c1767f062cc3b021a8227",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 2: the printed question with the ground-floor plan of a draft garage conversion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q2-bathroom",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-bathroom.png",
+          "srcHash": "1bf6de1fdcc671196980b5aedb67e830",
+          "alt": "SEC 2026 Higher marking scheme page on a lifetime-use bathroom, with sketches of a Ø1800 mm turning circle in plan and grab rails, WC and basin heights in elevation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q2-a", topicId: "cons-1-2", conceptId: "lifetime-use-a",
+    section: "B", questionRef: "2026 HL Q2(a)",
+    stem: "Lifetime use of a dwelling should be a key consideration at the design stage.",
+    questionText: "Using notes and freehand sketches, discuss two best-practice guidelines that should be followed when designing for lifetime use at each of the following areas of a dwelling: entrance access; bathroom.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 32,
+    rows: [
+    { id: "a-entrance-access-guideline-1", kind: "criterion", verbatim: "Entrance access", marks: 8, contextNote: "First guideline for the entrance access: notes 4 and sketches 4. Such as: a level threshold (maximum 15 mm upstand, chamfered or rounded edges) with a recessed drainage channel and the internal floor flush; a 1000 mm minimum clear door opening; a slip-resistant approach path at 1:20 or flatter (ramps no steeper than 1:12, with level landings); a level landing of at least 1500 mm × 1500 mm outside the door and 300 mm clear space at the leading edge; a canopy or recess at least 900 mm deep; lever handles 800–1050 mm above floor level and low door-closer force; a vision panel; motion-sensor lighting.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-entrance-access-guideline-2", kind: "criterion", verbatim: "Entrance access", marks: 8, contextNote: "Second, different guideline for the entrance access: notes 4 and sketches 4. Do not credit the same guideline twice.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-bathroom-guideline-1", kind: "criterion", verbatim: "Bathroom", marks: 8, contextNote: "First guideline for the bathroom: notes 4 and sketches 4. Such as: an accessible bathroom on the entry level; a clear turning circle of at least Ø1500 mm (ideally Ø1800 mm); walls reinforced with 18 mm plywood or noggins for future grab rails; a level-access (wet-room) shower graded to a gully; a door opening outwards or sliding with at least 800 mm clear opening; a WC 450–480 mm high and a wall-hung basin; lever taps; large rocker switches or pull cords 900–1200 mm above floor level; slip-resistant flooring.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-bathroom-guideline-2", kind: "criterion", verbatim: "Bathroom", marks: 8, contextNote: "Second, different guideline for the bathroom: notes 4 and sketches 4. Do not credit the same guideline twice.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q2-a-entrance-access","label":"entrance access","marks":16,"rowIds":["a-entrance-access-guideline-1","a-entrance-access-guideline-2"]},{"sourceCardId":"cons-2026-hl-q2-a-bathroom","label":"bathroom","marks":16,"rowIds":["a-bathroom-guideline-1","a-bathroom-guideline-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Designing for lifetime use",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original garage-conversion plan retained. Both areas in (a) are required. The scheme guidelines and dimensions are typical best practice, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-original.png",
+          "srcHash": "f4d719a24e1c1767f062cc3b021a8227",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 2: the printed question with the ground-floor plan of a draft garage conversion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q2-entrance-access",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-entrance-access.png",
+          "srcHash": "36b075b5bf32ee2c76237b8645fa370d",
+          "alt": "SEC 2026 Higher marking scheme page on lifetime-use entrance access, with sketches of a level threshold under a canopy, a recessed drainage channel and a 1000 mm wide entrance door.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q2-b", topicId: "cons-1-2", conceptId: "lifetime-use-b",
+    section: "B", questionRef: "2026 HL Q2(b)",
+    stem: "Lifetime use of a dwelling should be a key consideration at the design stage.",
+    questionText: "The drawing shows the ground floor plan of a draft design for an adjoining garage conversion. The homeowner wishes to convert the garage, so that a family member with reduced mobility can live independently. With reference to the design shown, using notes and freehand sketches, discuss three specific design considerations for the open-plan kitchen/dining and living area, that ensures ease of use by a person with reduced mobility. Indicate on your sketches, typical dimensions as appropriate.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "consideration-1", kind: "criterion", verbatim: "Design consideration 1", marks: 6, contextNote: "Notes 3 and sketches 3, related to the plan shown. Such as: Ø1500 mm (ideally Ø1800 mm) turning circles and 1200 mm clear routes between furniture and units.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "consideration-2", kind: "criterion", verbatim: "Design consideration 2", marks: 6, contextNote: "Notes 3 and sketches 3. Such as: worktops lowered to 760–820 mm with knee space (minimum 700 mm high × 600 mm deep) under the sink and hob; pull-out or pull-down storage within the 400–1200 mm reach zone.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "consideration-3", kind: "criterion", verbatim: "Design consideration 3", marks: 6, contextNote: "Notes 3 and sketches 3. Such as: dining table with 1200 mm clearance and 700 mm clear underside; firm slip-resistant level floors (transitions no more than 5 mm); level threshold to the folding doors; sockets at least 400 mm and switches/thermostats no higher than 1200 mm. Three distinct considerations are needed.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "dimensions", kind: "criterion", verbatim: "Dimensions - Any two", marks: 2, contextNote: "Two appropriate typical dimensions shown on the sketches.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Designing for lifetime use",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original garage-conversion plan retained. Both areas in (a) are required. The scheme guidelines and dimensions are typical best practice, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-original.png",
+          "srcHash": "f4d719a24e1c1767f062cc3b021a8227",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 2: the printed question with the ground-floor plan of a draft garage conversion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q2-kitchen-plan",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-kitchen-plan.png",
+          "srcHash": "f0aa3d4e24ae96eabfe11e251448c199",
+          "alt": "SEC model plan of the garage conversion with wheelchair turning circles marked in the kitchen, dining and living areas.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q2-c", topicId: "cons-1-2", conceptId: "lifetime-use-c",
+    section: "B", questionRef: "2026 HL Q2(c)",
+    stem: "Lifetime use of a dwelling should be a key consideration at the design stage.",
+    questionText: "Discuss in detail two reasons why it is important to consider lifetime use at the design stage of a dwelling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1 (2 for point, 2 for discussion)", marks: 4, contextNote: "Point 2 and discussion 2. Such as: future-proofing so occupants can age in place; accessible features are far cheaper built in than retrofitted.", permittedMarks: [0,1,2,3,4] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2 (2 for point, 2 for discussion)", marks: 4, contextNote: "A second, different reason: point 2 and discussion 2. Such as: inclusivity for visitors and families with young children; fewer trips and falls; an adaptable house lasts longer and needs less new construction; wider market appeal and resale value.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Designing for lifetime use",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original garage-conversion plan retained. Both areas in (a) are required. The scheme guidelines and dimensions are typical best practice, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-original.png",
+          "srcHash": "f4d719a24e1c1767f062cc3b021a8227",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 2: the printed question with the ground-floor plan of a draft garage conversion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q2-complete", topicId: "cons-1-2", conceptId: "lifetime-use-complete",
+    section: "B", questionRef: "2026 HL Q2 — complete",
+    stem: "Lifetime use of a dwelling should be a key consideration at the design stage.",
+    questionText: "(a) Using notes and freehand sketches, discuss two best-practice guidelines that should be followed when designing for lifetime use at each of the following areas of a dwelling: entrance access; bathroom. (b) The drawing shows the ground floor plan of a draft design for an adjoining garage conversion. The homeowner wishes to convert the garage, so that a family member with reduced mobility can live independently. With reference to the design shown, using notes and freehand sketches, discuss three specific design considerations for the open-plan kitchen/dining and living area, that ensures ease of use by a person with reduced mobility. Indicate on your sketches, typical dimensions as appropriate. (c) Discuss in detail two reasons why it is important to consider lifetime use at the design stage of a dwelling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-a-entrance-access-guideline-1", kind: "criterion", verbatim: "Entrance access", marks: 8, contextNote: "First guideline for the entrance access: notes 4 and sketches 4. Such as: a level threshold (maximum 15 mm upstand, chamfered or rounded edges) with a recessed drainage channel and the internal floor flush; a 1000 mm minimum clear door opening; a slip-resistant approach path at 1:20 or flatter (ramps no steeper than 1:12, with level landings); a level landing of at least 1500 mm × 1500 mm outside the door and 300 mm clear space at the leading edge; a canopy or recess at least 900 mm deep; lever handles 800–1050 mm above floor level and low door-closer force; a vision panel; motion-sensor lighting.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-a-entrance-access-guideline-2", kind: "criterion", verbatim: "Entrance access", marks: 8, contextNote: "Second, different guideline for the entrance access: notes 4 and sketches 4. Do not credit the same guideline twice.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-a-bathroom-guideline-1", kind: "criterion", verbatim: "Bathroom", marks: 8, contextNote: "First guideline for the bathroom: notes 4 and sketches 4. Such as: an accessible bathroom on the entry level; a clear turning circle of at least Ø1500 mm (ideally Ø1800 mm); walls reinforced with 18 mm plywood or noggins for future grab rails; a level-access (wet-room) shower graded to a gully; a door opening outwards or sliding with at least 800 mm clear opening; a WC 450–480 mm high and a wall-hung basin; lever taps; large rocker switches or pull cords 900–1200 mm above floor level; slip-resistant flooring.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-a-bathroom-guideline-2", kind: "criterion", verbatim: "Bathroom", marks: 8, contextNote: "Second, different guideline for the bathroom: notes 4 and sketches 4. Do not credit the same guideline twice.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-consideration-1", kind: "criterion", verbatim: "Design consideration 1", marks: 6, contextNote: "Notes 3 and sketches 3, related to the plan shown. Such as: Ø1500 mm (ideally Ø1800 mm) turning circles and 1200 mm clear routes between furniture and units.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-consideration-2", kind: "criterion", verbatim: "Design consideration 2", marks: 6, contextNote: "Notes 3 and sketches 3. Such as: worktops lowered to 760–820 mm with knee space (minimum 700 mm high × 600 mm deep) under the sink and hob; pull-out or pull-down storage within the 400–1200 mm reach zone.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-consideration-3", kind: "criterion", verbatim: "Design consideration 3", marks: 6, contextNote: "Notes 3 and sketches 3. Such as: dining table with 1200 mm clearance and 700 mm clear underside; firm slip-resistant level floors (transitions no more than 5 mm); level threshold to the folding doors; sockets at least 400 mm and switches/thermostats no higher than 1200 mm. Three distinct considerations are needed.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-dimensions", kind: "criterion", verbatim: "Dimensions - Any two", marks: 2, contextNote: "Two appropriate typical dimensions shown on the sketches.", permittedMarks: [0,1,2] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Reason 1 (2 for point, 2 for discussion)", marks: 4, contextNote: "Point 2 and discussion 2. Such as: future-proofing so occupants can age in place; accessible features are far cheaper built in than retrofitted.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Reason 2 (2 for point, 2 for discussion)", marks: 4, contextNote: "A second, different reason: point 2 and discussion 2. Such as: inclusivity for visitors and families with young children; fewer trips and falls; an adaptable house lasts longer and needs less new construction; wider market appeal and resale value.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q2-a","label":"a","marks":32,"rowIds":["a-a-entrance-access-guideline-1","a-a-entrance-access-guideline-2","a-a-bathroom-guideline-1","a-a-bathroom-guideline-2"]},{"sourceCardId":"cons-2026-hl-q2-b","label":"b","marks":20,"rowIds":["b-consideration-1","b-consideration-2","b-consideration-3","b-dimensions"]},{"sourceCardId":"cons-2026-hl-q2-c","label":"c","marks":8,"rowIds":["c-reason-1","c-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Designing for lifetime use",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original garage-conversion plan retained. Both areas in (a) are required. The scheme guidelines and dimensions are typical best practice, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-original.png",
+          "srcHash": "f4d719a24e1c1767f062cc3b021a8227",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 2: the printed question with the ground-floor plan of a draft garage conversion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q2-kitchen-plan",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-kitchen-plan.png",
+          "srcHash": "f0aa3d4e24ae96eabfe11e251448c199",
+          "alt": "SEC model plan of the garage conversion with wheelchair turning circles marked in the kitchen, dining and living areas.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q3-a", topicId: "cons-1-2", conceptId: "farmhouse-layout-a",
+    section: "B", questionRef: "2026 HL Q3(a)",
+    stem: "The drawing shows the front elevation and ground floor plan of a farmhouse built in the 1920’s. The wall A-A is south-facing and the wall B-B is load-bearing. The owners wish to build a single-storey extension, no greater than 15 m² in area, to increase and revise the ground floor layout. Consideration at the design stage is to be given to: creating an open-plan kitchen/dining and living space; optimising daylight; retaining a bedroom and family bathroom on the ground floor.",
+    questionText: "Using notes and freehand sketches, show a revised ground floor layout, that incorporates the proposed extension, and each of the above design requirements.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 27,
+    rows: [
+    { id: "layout", kind: "criterion", verbatim: "Revised internal layout for the ground floor including extension", marks: 18, contextNote: "Notes and freehand sketch of a coherent revised plan with the extension (no more than 15 m²), respecting south-facing wall A-A and load-bearing wall B-B. The scheme shows a rear/north-west extension and a south extension as alternatives.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18] },
+    { id: "open-plan", kind: "criterion", verbatim: "Create an open-plan kitchen/dining and living area", marks: 3, contextNote: "An open-plan kitchen/dining and living space, for example zoned by a kitchen island.", permittedMarks: [0,1,2,3] },
+    { id: "daylight", kind: "criterion", verbatim: "Optimising daylight into the ground floor", marks: 3, contextNote: "Daylight optimised, for example living spaces on the south side with large south-facing openings, or glazing on three sides of a south extension.", permittedMarks: [0,1,2,3] },
+    { id: "bedroom-bathroom", kind: "criterion", verbatim: "Retaining a downstairs bathroom and bedroom", marks: 3, contextNote: "A bedroom and family bathroom retained on the ground floor, for example as a private wing near the existing plumbing.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Revising a 1920s farmhouse layout",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. The scheme shows two acceptable layouts (a rear/north-west extension and a south extension); any well-reasoned layout meeting all three requirements is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q3-original.png",
+          "srcHash": "6da065be11a4513ffbbb7136ca2f72ca",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 3: the printed question with the farmhouse front elevation and ground-floor plan marked A-A and B-B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q3-option-1",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q3-option-1.png",
+          "srcHash": "40d5201e815eaf3859e0730742eb1079",
+          "alt": "SEC model option 1: revised farmhouse ground-floor plan with a rear extension, open-plan kitchen, dining and living area on the south side, and the layout notes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q3-b", topicId: "cons-1-2", conceptId: "farmhouse-layout-b",
+    section: "B", questionRef: "2026 HL Q3(b)",
+    stem: "The drawing shows the front elevation and ground floor plan of a farmhouse built in the 1920’s. The wall A-A is south-facing and the wall B-B is load-bearing. The owners wish to build a single-storey extension, no greater than 15 m² in area, to increase and revise the ground floor layout. Consideration at the design stage is to be given to: creating an open-plan kitchen/dining and living space; optimising daylight; retaining a bedroom and family bathroom on the ground floor.",
+    questionText: "Discuss three reasons for your proposed design layout.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 21,
+    rows: [
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1 (3 for point, 4 for discussion)", marks: 7, contextNote: "Point 3 and discussion 4. Such as: environmental performance and passive solar gain from the south-facing wall A-A, with light reaching deep into the plan.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2 (3 for point, 4 for discussion)", marks: 7, contextNote: "Point 3 and discussion 4. Such as: functional zoning and social connection in one open space, with no wasted hallway.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    { id: "reason-3", kind: "criterion", verbatim: "Reason 3 (3 for point, 4 for discussion)", marks: 7, contextNote: "Point 3 and discussion 4. Such as: privacy and acoustic separation of the bedroom wing; services grouped near existing plumbing; ground-floor bedroom and bathroom for lifetime use. Three distinct reasons are needed.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Revising a 1920s farmhouse layout",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. The scheme shows two acceptable layouts (a rear/north-west extension and a south extension); any well-reasoned layout meeting all three requirements is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q3-original.png",
+          "srcHash": "6da065be11a4513ffbbb7136ca2f72ca",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 3: the printed question with the farmhouse front elevation and ground-floor plan marked A-A and B-B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q3-option-2",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q3-option-2.png",
+          "srcHash": "711ef774e4c34964688953acd0c37847",
+          "alt": "SEC model option 2: revised farmhouse ground-floor plan with a glazed south extension for the living area, and the layout notes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q3-c", topicId: "cons-1-2", conceptId: "farmhouse-layout-c",
+    section: "B", questionRef: "2026 HL Q3(c)",
+    stem: "The drawing shows the front elevation and ground floor plan of a farmhouse built in the 1920’s. The wall A-A is south-facing and the wall B-B is load-bearing. The owners wish to build a single-storey extension, no greater than 15 m² in area, to increase and revise the ground floor layout. Consideration at the design stage is to be given to: creating an open-plan kitchen/dining and living space; optimising daylight; retaining a bedroom and family bathroom on the ground floor.",
+    questionText: "Discuss two benefits to the occupants of revising the internal layout of an existing house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "benefit-1", kind: "criterion", verbatim: "Benefit 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: better use of space and flow with fewer partitions and dark hallways; more daylight and ventilation.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "benefit-2", kind: "criterion", verbatim: "Benefit 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different benefit: point 3 and discussion 3. Such as: thermal comfort and lower bills from south-facing living zones; adaptability for changing needs; quieter, more private zones; higher property value.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Revising a 1920s farmhouse layout",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. The scheme shows two acceptable layouts (a rear/north-west extension and a south extension); any well-reasoned layout meeting all three requirements is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q3-original.png",
+          "srcHash": "6da065be11a4513ffbbb7136ca2f72ca",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 3: the printed question with the farmhouse front elevation and ground-floor plan marked A-A and B-B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q3-complete", topicId: "cons-1-2", conceptId: "farmhouse-layout-complete",
+    section: "B", questionRef: "2026 HL Q3 — complete",
+    stem: "The drawing shows the front elevation and ground floor plan of a farmhouse built in the 1920’s. The wall A-A is south-facing and the wall B-B is load-bearing. The owners wish to build a single-storey extension, no greater than 15 m² in area, to increase and revise the ground floor layout. Consideration at the design stage is to be given to: creating an open-plan kitchen/dining and living space; optimising daylight; retaining a bedroom and family bathroom on the ground floor.",
+    questionText: "(a) Using notes and freehand sketches, show a revised ground floor layout, that incorporates the proposed extension, and each of the above design requirements. (b) Discuss three reasons for your proposed design layout. (c) Discuss two benefits to the occupants of revising the internal layout of an existing house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-layout", kind: "criterion", verbatim: "Revised internal layout for the ground floor including extension", marks: 18, contextNote: "Notes and freehand sketch of a coherent revised plan with the extension (no more than 15 m²), respecting south-facing wall A-A and load-bearing wall B-B. The scheme shows a rear/north-west extension and a south extension as alternatives.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18] },
+    { id: "a-open-plan", kind: "criterion", verbatim: "Create an open-plan kitchen/dining and living area", marks: 3, contextNote: "An open-plan kitchen/dining and living space, for example zoned by a kitchen island.", permittedMarks: [0,1,2,3] },
+    { id: "a-daylight", kind: "criterion", verbatim: "Optimising daylight into the ground floor", marks: 3, contextNote: "Daylight optimised, for example living spaces on the south side with large south-facing openings, or glazing on three sides of a south extension.", permittedMarks: [0,1,2,3] },
+    { id: "a-bedroom-bathroom", kind: "criterion", verbatim: "Retaining a downstairs bathroom and bedroom", marks: 3, contextNote: "A bedroom and family bathroom retained on the ground floor, for example as a private wing near the existing plumbing.", permittedMarks: [0,1,2,3] },
+    { id: "b-reason-1", kind: "criterion", verbatim: "Reason 1 (3 for point, 4 for discussion)", marks: 7, contextNote: "Point 3 and discussion 4. Such as: environmental performance and passive solar gain from the south-facing wall A-A, with light reaching deep into the plan.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    { id: "b-reason-2", kind: "criterion", verbatim: "Reason 2 (3 for point, 4 for discussion)", marks: 7, contextNote: "Point 3 and discussion 4. Such as: functional zoning and social connection in one open space, with no wasted hallway.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    { id: "b-reason-3", kind: "criterion", verbatim: "Reason 3 (3 for point, 4 for discussion)", marks: 7, contextNote: "Point 3 and discussion 4. Such as: privacy and acoustic separation of the bedroom wing; services grouped near existing plumbing; ground-floor bedroom and bathroom for lifetime use. Three distinct reasons are needed.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    { id: "c-benefit-1", kind: "criterion", verbatim: "Benefit 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: better use of space and flow with fewer partitions and dark hallways; more daylight and ventilation.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-benefit-2", kind: "criterion", verbatim: "Benefit 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different benefit: point 3 and discussion 3. Such as: thermal comfort and lower bills from south-facing living zones; adaptability for changing needs; quieter, more private zones; higher property value.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q3-a","label":"a","marks":27,"rowIds":["a-layout","a-open-plan","a-daylight","a-bedroom-bathroom"]},{"sourceCardId":"cons-2026-hl-q3-b","label":"b","marks":21,"rowIds":["b-reason-1","b-reason-2","b-reason-3"]},{"sourceCardId":"cons-2026-hl-q3-c","label":"c","marks":12,"rowIds":["c-benefit-1","c-benefit-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Revising a 1920s farmhouse layout",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. The scheme shows two acceptable layouts (a rear/north-west extension and a south extension); any well-reasoned layout meeting all three requirements is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q3-original.png",
+          "srcHash": "6da065be11a4513ffbbb7136ca2f72ca",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 3: the printed question with the farmhouse front elevation and ground-floor plan marked A-A and B-B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q3-option-1",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q3-option-1.png",
+          "srcHash": "40d5201e815eaf3859e0730742eb1079",
+          "alt": "SEC model option 1: revised farmhouse ground-floor plan with a rear extension, open-plan kitchen, dining and living area on the south side, and the layout notes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-a-stone-wall", topicId: "cons-1-1", conceptId: "heritage-cottage-a-stone-wall",
+    section: "B", questionRef: "2026 HL Q4(a) — stone wall",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "A survey of the cottage reveals: 500 mm solid external wall of stone construction, uninsulated, with an internal lime render. Using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the stone wall, respecting the cottage’s character. Such as: keep the wall breathable, with layers more vapour-permeable towards the outside and no impermeable vapour barriers; use hygroscopic natural insulation (hemp/hempcrete, lime, wood fibre, cork, sheep’s wool); rake out and repoint with lime mortar by hand (joints raked to twice their width, dampened first, filled in stages, protected with hessian while it carbonates); apply hempcrete internally and allow 4–6 weeks to dry, then lime render, or a three-coat lime plaster (scud coat, haired scratch coat, float coat, lime-putty finish).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the stone wall.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-stone-wall",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
+          "srcHash": "fe20ec15790428913f389a5cda97b44b",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-a-cut-roof", topicId: "cons-1-1", conceptId: "heritage-cottage-a-cut-roof",
+    section: "B", questionRef: "2026 HL Q4(a) — cut roof",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "A survey of the cottage reveals: uninsulated traditional cut roof with natural slate. Using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the cut roof, respecting the cottage’s character. Such as: remove and set aside the slates, cleaning only their undersides; check and repair decayed rafters, wallplate and fascia in the same species and profile with traditional joints; treat new timber (boron); fit a vapour-permeable breathable membrane with counter-battens for ventilation; insulate with hygroscopic materials (sheep’s wool between rafters, wood fibre board above or below); keep the roof ventilated; re-lay the slates with the heaviest at the eaves, replacing broken ones with reclaimed slate; period cast-iron rainwater goods.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the cut roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-cut-roof",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-cut-roof.png",
+          "srcHash": "46235df0bd69a5a573f653d223871dbb",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a traditional cut roof, with sketches of spliced rafter repairs and an insulated slated roof at the eaves.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-a-sash-windows", topicId: "cons-1-1", conceptId: "heritage-cottage-a-sash-windows",
+    section: "B", questionRef: "2026 HL Q4(a) — sash windows",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "A survey of the cottage reveals: single-glazed, softwood sliding sash windows. Using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the sash windows, respecting the cottage’s character. Such as: repair rather than replace the original sashes, using a specialist conservation joiner; remove sashes and glass carefully, recording positions; replace only rotten timber in the same species and profiles with traditional joints and animal glue; free the pulleys, renew the sash cords and reuse the weights; reglaze with linseed-oil putty (salvaged or sourced float glass); repaint with non-toxic paint; add discreet secondary glazing to cut heat loss; record the repair.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the sash windows.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-sash-windows",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-sash-windows.png",
+          "srcHash": "aca0e9475cd8101f47f70fac974e8463",
+          "alt": "SEC 2026 Higher marking scheme page on repairing sliding sash windows, with sketches of a sash window and of secondary glazing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-b-conservation-original-materials", topicId: "cons-1-1", conceptId: "heritage-cottage-b-conservation-original-materials",
+    section: "B", questionRef: "2026 HL Q4(b) — conservation of original materials",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "Discuss the importance of the following when restoring traditional heritage buildings: conservation of original materials.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of conservation of original materials when restoring traditional heritage buildings. Such as: preserves authenticity and significance; traditional materials have qualities modern replacements cannot match; repair is usually more sustainable than replacement; original fabric records the building’s age and history.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-b-breathable-structure", topicId: "cons-1-1", conceptId: "heritage-cottage-b-breathable-structure",
+    section: "B", questionRef: "2026 HL Q4(b) — breathable structure",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "Discuss the importance of the following when restoring traditional heritage buildings: breathable structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of breathable structure when restoring traditional heritage buildings. Such as: moisture is not trapped in walls, floors and roofs; less risk of damp, mould and timber decay; protects masonry from freeze–thaw and salt damage; healthier indoor environment; the building performs as originally intended.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-b-respect-built-heritage", topicId: "cons-1-1", conceptId: "heritage-cottage-b-respect-built-heritage",
+    section: "B", questionRef: "2026 HL Q4(b) — respect for our built heritage",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "Discuss the importance of the following when restoring traditional heritage buildings: respect for our built heritage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of respect for our built heritage when restoring traditional heritage buildings. Such as: understand the building’s significance before work; preserve distinctive features and craftsmanship; make sympathetic alterations; follow conservation principles and guidelines; heritage buildings are irreplaceable cultural resources.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-a-stone-wall-and-cut-roof", topicId: "cons-1-1", conceptId: "heritage-cottage-a-stone-wall-and-cut-roof",
+    section: "B", questionRef: "2026 HL Q4(a) — stone wall and cut roof",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "A survey of the cottage reveals: 500 mm solid external wall of stone construction, uninsulated, with an internal lime render; uninsulated traditional cut roof with natural slate. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "a-stone-wall-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the stone wall, respecting the cottage’s character. Such as: keep the wall breathable, with layers more vapour-permeable towards the outside and no impermeable vapour barriers; use hygroscopic natural insulation (hemp/hempcrete, lime, wood fibre, cork, sheep’s wool); rake out and repoint with lime mortar by hand (joints raked to twice their width, dampened first, filled in stages, protected with hessian while it carbonates); apply hempcrete internally and allow 4–6 weeks to dry, then lime render, or a three-coat lime plaster (scud coat, haired scratch coat, float coat, lime-putty finish).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the stone wall.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-cut-roof-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the cut roof, respecting the cottage’s character. Such as: remove and set aside the slates, cleaning only their undersides; check and repair decayed rafters, wallplate and fascia in the same species and profile with traditional joints; treat new timber (boron); fit a vapour-permeable breathable membrane with counter-battens for ventilation; insulate with hygroscopic materials (sheep’s wool between rafters, wood fibre board above or below); keep the roof ventilated; re-lay the slates with the heaviest at the eaves, replacing broken ones with reclaimed slate; period cast-iron rainwater goods.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-cut-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the cut roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-stone-wall","label":"stone wall","marks":20,"rowIds":["a-stone-wall-notes","a-stone-wall-sketches"]},{"sourceCardId":"cons-2026-hl-q4-a-cut-roof","label":"cut roof","marks":20,"rowIds":["a-cut-roof-notes","a-cut-roof-sketches"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-stone-wall",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
+          "srcHash": "fe20ec15790428913f389a5cda97b44b",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-a-stone-wall-and-sash-windows", topicId: "cons-1-1", conceptId: "heritage-cottage-a-stone-wall-and-sash-windows",
+    section: "B", questionRef: "2026 HL Q4(a) — stone wall and sash windows",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "A survey of the cottage reveals: 500 mm solid external wall of stone construction, uninsulated, with an internal lime render; single-glazed, softwood sliding sash windows. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "a-stone-wall-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the stone wall, respecting the cottage’s character. Such as: keep the wall breathable, with layers more vapour-permeable towards the outside and no impermeable vapour barriers; use hygroscopic natural insulation (hemp/hempcrete, lime, wood fibre, cork, sheep’s wool); rake out and repoint with lime mortar by hand (joints raked to twice their width, dampened first, filled in stages, protected with hessian while it carbonates); apply hempcrete internally and allow 4–6 weeks to dry, then lime render, or a three-coat lime plaster (scud coat, haired scratch coat, float coat, lime-putty finish).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the stone wall.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-sash-windows-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the sash windows, respecting the cottage’s character. Such as: repair rather than replace the original sashes, using a specialist conservation joiner; remove sashes and glass carefully, recording positions; replace only rotten timber in the same species and profiles with traditional joints and animal glue; free the pulleys, renew the sash cords and reuse the weights; reglaze with linseed-oil putty (salvaged or sourced float glass); repaint with non-toxic paint; add discreet secondary glazing to cut heat loss; record the repair.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-sash-windows-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the sash windows.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-stone-wall","label":"stone wall","marks":20,"rowIds":["a-stone-wall-notes","a-stone-wall-sketches"]},{"sourceCardId":"cons-2026-hl-q4-a-sash-windows","label":"sash windows","marks":20,"rowIds":["a-sash-windows-notes","a-sash-windows-sketches"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-stone-wall",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
+          "srcHash": "fe20ec15790428913f389a5cda97b44b",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-a-cut-roof-and-sash-windows", topicId: "cons-1-1", conceptId: "heritage-cottage-a-cut-roof-and-sash-windows",
+    section: "B", questionRef: "2026 HL Q4(a) — cut roof and sash windows",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "A survey of the cottage reveals: uninsulated traditional cut roof with natural slate; single-glazed, softwood sliding sash windows. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "a-cut-roof-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the cut roof, respecting the cottage’s character. Such as: remove and set aside the slates, cleaning only their undersides; check and repair decayed rafters, wallplate and fascia in the same species and profile with traditional joints; treat new timber (boron); fit a vapour-permeable breathable membrane with counter-battens for ventilation; insulate with hygroscopic materials (sheep’s wool between rafters, wood fibre board above or below); keep the roof ventilated; re-lay the slates with the heaviest at the eaves, replacing broken ones with reclaimed slate; period cast-iron rainwater goods.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-cut-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the cut roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-sash-windows-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the sash windows, respecting the cottage’s character. Such as: repair rather than replace the original sashes, using a specialist conservation joiner; remove sashes and glass carefully, recording positions; replace only rotten timber in the same species and profiles with traditional joints and animal glue; free the pulleys, renew the sash cords and reuse the weights; reglaze with linseed-oil putty (salvaged or sourced float glass); repaint with non-toxic paint; add discreet secondary glazing to cut heat loss; record the repair.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-sash-windows-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the sash windows.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-cut-roof","label":"cut roof","marks":20,"rowIds":["a-cut-roof-notes","a-cut-roof-sketches"]},{"sourceCardId":"cons-2026-hl-q4-a-sash-windows","label":"sash windows","marks":20,"rowIds":["a-sash-windows-notes","a-sash-windows-sketches"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-cut-roof",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-cut-roof.png",
+          "srcHash": "46235df0bd69a5a573f653d223871dbb",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a traditional cut roof, with sketches of spliced rafter repairs and an insulated slated roof at the eaves.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-b-conservation-original-materials-and-breathable-structure", topicId: "cons-1-1", conceptId: "heritage-cottage-b-conservation-original-materials-and-breathable-structure",
+    section: "B", questionRef: "2026 HL Q4(b) — conservation of original materials and breathable structure",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "Discuss the importance of any two of the following when restoring traditional heritage buildings: conservation of original materials; breathable structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "b-conservation-original-materials-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of conservation of original materials when restoring traditional heritage buildings. Such as: preserves authenticity and significance; traditional materials have qualities modern replacements cannot match; repair is usually more sustainable than replacement; original fabric records the building’s age and history.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-breathable-structure-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of breathable structure when restoring traditional heritage buildings. Such as: moisture is not trapped in walls, floors and roofs; less risk of damp, mould and timber decay; protects masonry from freeze–thaw and salt damage; healthier indoor environment; the building performs as originally intended.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-b-conservation-original-materials","label":"conservation of original materials","marks":10,"rowIds":["b-conservation-original-materials-discussion"]},{"sourceCardId":"cons-2026-hl-q4-b-breathable-structure","label":"breathable structure","marks":10,"rowIds":["b-breathable-structure-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-b-conservation-original-materials-and-respect-built-heritage", topicId: "cons-1-1", conceptId: "heritage-cottage-b-conservation-original-materials-and-respect-built-heritage",
+    section: "B", questionRef: "2026 HL Q4(b) — conservation of original materials and respect for our built heritage",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "Discuss the importance of any two of the following when restoring traditional heritage buildings: conservation of original materials; respect for our built heritage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "b-conservation-original-materials-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of conservation of original materials when restoring traditional heritage buildings. Such as: preserves authenticity and significance; traditional materials have qualities modern replacements cannot match; repair is usually more sustainable than replacement; original fabric records the building’s age and history.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-respect-built-heritage-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of respect for our built heritage when restoring traditional heritage buildings. Such as: understand the building’s significance before work; preserve distinctive features and craftsmanship; make sympathetic alterations; follow conservation principles and guidelines; heritage buildings are irreplaceable cultural resources.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-b-conservation-original-materials","label":"conservation of original materials","marks":10,"rowIds":["b-conservation-original-materials-discussion"]},{"sourceCardId":"cons-2026-hl-q4-b-respect-built-heritage","label":"respect for our built heritage","marks":10,"rowIds":["b-respect-built-heritage-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-b-breathable-structure-and-respect-built-heritage", topicId: "cons-1-1", conceptId: "heritage-cottage-b-breathable-structure-and-respect-built-heritage",
+    section: "B", questionRef: "2026 HL Q4(b) — breathable structure and respect for our built heritage",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "Discuss the importance of any two of the following when restoring traditional heritage buildings: breathable structure; respect for our built heritage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "b-breathable-structure-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of breathable structure when restoring traditional heritage buildings. Such as: moisture is not trapped in walls, floors and roofs; less risk of damp, mould and timber decay; protects masonry from freeze–thaw and salt damage; healthier indoor environment; the building performs as originally intended.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-respect-built-heritage-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of respect for our built heritage when restoring traditional heritage buildings. Such as: understand the building’s significance before work; preserve distinctive features and craftsmanship; make sympathetic alterations; follow conservation principles and guidelines; heritage buildings are irreplaceable cultural resources.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-b-breathable-structure","label":"breathable structure","marks":10,"rowIds":["b-breathable-structure-discussion"]},{"sourceCardId":"cons-2026-hl-q4-b-respect-built-heritage","label":"respect for our built heritage","marks":10,"rowIds":["b-respect-built-heritage-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-complete-stone-wall-and-cut-roof--conservation-original-materials-and-breathable-structure", topicId: "cons-1-1", conceptId: "heritage-cottage-complete-stone-wall-and-cut-roof--conservation-original-materials-and-breathable-structure",
+    section: "B", questionRef: "2026 HL Q4 — complete: stone wall and cut roof; conservation of original materials and breathable structure",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "(a) A survey of the cottage reveals: 500 mm solid external wall of stone construction, uninsulated, with an internal lime render; uninsulated traditional cut roof with natural slate. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage. (b) Discuss the importance of any two of the following when restoring traditional heritage buildings: conservation of original materials; breathable structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-stone-wall-and-cut-roof-a-stone-wall-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the stone wall, respecting the cottage’s character. Such as: keep the wall breathable, with layers more vapour-permeable towards the outside and no impermeable vapour barriers; use hygroscopic natural insulation (hemp/hempcrete, lime, wood fibre, cork, sheep’s wool); rake out and repoint with lime mortar by hand (joints raked to twice their width, dampened first, filled in stages, protected with hessian while it carbonates); apply hempcrete internally and allow 4–6 weeks to dry, then lime render, or a three-coat lime plaster (scud coat, haired scratch coat, float coat, lime-putty finish).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-cut-roof-a-stone-wall-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the stone wall.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-stone-wall-and-cut-roof-a-cut-roof-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the cut roof, respecting the cottage’s character. Such as: remove and set aside the slates, cleaning only their undersides; check and repair decayed rafters, wallplate and fascia in the same species and profile with traditional joints; treat new timber (boron); fit a vapour-permeable breathable membrane with counter-battens for ventilation; insulate with hygroscopic materials (sheep’s wool between rafters, wood fibre board above or below); keep the roof ventilated; re-lay the slates with the heaviest at the eaves, replacing broken ones with reclaimed slate; period cast-iron rainwater goods.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-cut-roof-a-cut-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the cut roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-conservation-original-materials-and-breathable-structure-b-conservation-original-materials-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of conservation of original materials when restoring traditional heritage buildings. Such as: preserves authenticity and significance; traditional materials have qualities modern replacements cannot match; repair is usually more sustainable than replacement; original fabric records the building’s age and history.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-conservation-original-materials-and-breathable-structure-b-breathable-structure-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of breathable structure when restoring traditional heritage buildings. Such as: moisture is not trapped in walls, floors and roofs; less risk of damp, mould and timber decay; protects masonry from freeze–thaw and salt damage; healthier indoor environment; the building performs as originally intended.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-stone-wall-and-cut-roof","label":"a","marks":40,"rowIds":["a-stone-wall-and-cut-roof-a-stone-wall-notes","a-stone-wall-and-cut-roof-a-stone-wall-sketches","a-stone-wall-and-cut-roof-a-cut-roof-notes","a-stone-wall-and-cut-roof-a-cut-roof-sketches"]},{"sourceCardId":"cons-2026-hl-q4-b-conservation-original-materials-and-breathable-structure","label":"b","marks":20,"rowIds":["b-conservation-original-materials-and-breathable-structure-b-conservation-original-materials-discussion","b-conservation-original-materials-and-breathable-structure-b-breathable-structure-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-stone-wall",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
+          "srcHash": "fe20ec15790428913f389a5cda97b44b",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-complete-stone-wall-and-cut-roof--conservation-original-materials-and-respect-built-heritage", topicId: "cons-1-1", conceptId: "heritage-cottage-complete-stone-wall-and-cut-roof--conservation-original-materials-and-respect-built-heritage",
+    section: "B", questionRef: "2026 HL Q4 — complete: stone wall and cut roof; conservation of original materials and respect for our built heritage",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "(a) A survey of the cottage reveals: 500 mm solid external wall of stone construction, uninsulated, with an internal lime render; uninsulated traditional cut roof with natural slate. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage. (b) Discuss the importance of any two of the following when restoring traditional heritage buildings: conservation of original materials; respect for our built heritage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-stone-wall-and-cut-roof-a-stone-wall-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the stone wall, respecting the cottage’s character. Such as: keep the wall breathable, with layers more vapour-permeable towards the outside and no impermeable vapour barriers; use hygroscopic natural insulation (hemp/hempcrete, lime, wood fibre, cork, sheep’s wool); rake out and repoint with lime mortar by hand (joints raked to twice their width, dampened first, filled in stages, protected with hessian while it carbonates); apply hempcrete internally and allow 4–6 weeks to dry, then lime render, or a three-coat lime plaster (scud coat, haired scratch coat, float coat, lime-putty finish).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-cut-roof-a-stone-wall-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the stone wall.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-stone-wall-and-cut-roof-a-cut-roof-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the cut roof, respecting the cottage’s character. Such as: remove and set aside the slates, cleaning only their undersides; check and repair decayed rafters, wallplate and fascia in the same species and profile with traditional joints; treat new timber (boron); fit a vapour-permeable breathable membrane with counter-battens for ventilation; insulate with hygroscopic materials (sheep’s wool between rafters, wood fibre board above or below); keep the roof ventilated; re-lay the slates with the heaviest at the eaves, replacing broken ones with reclaimed slate; period cast-iron rainwater goods.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-cut-roof-a-cut-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the cut roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-conservation-original-materials-and-respect-built-heritage-b-conservation-original-materials-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of conservation of original materials when restoring traditional heritage buildings. Such as: preserves authenticity and significance; traditional materials have qualities modern replacements cannot match; repair is usually more sustainable than replacement; original fabric records the building’s age and history.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-conservation-original-materials-and-respect-built-heritage-b-respect-built-heritage-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of respect for our built heritage when restoring traditional heritage buildings. Such as: understand the building’s significance before work; preserve distinctive features and craftsmanship; make sympathetic alterations; follow conservation principles and guidelines; heritage buildings are irreplaceable cultural resources.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-stone-wall-and-cut-roof","label":"a","marks":40,"rowIds":["a-stone-wall-and-cut-roof-a-stone-wall-notes","a-stone-wall-and-cut-roof-a-stone-wall-sketches","a-stone-wall-and-cut-roof-a-cut-roof-notes","a-stone-wall-and-cut-roof-a-cut-roof-sketches"]},{"sourceCardId":"cons-2026-hl-q4-b-conservation-original-materials-and-respect-built-heritage","label":"b","marks":20,"rowIds":["b-conservation-original-materials-and-respect-built-heritage-b-conservation-original-materials-discussion","b-conservation-original-materials-and-respect-built-heritage-b-respect-built-heritage-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-stone-wall",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
+          "srcHash": "fe20ec15790428913f389a5cda97b44b",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-complete-stone-wall-and-cut-roof--breathable-structure-and-respect-built-heritage", topicId: "cons-1-1", conceptId: "heritage-cottage-complete-stone-wall-and-cut-roof--breathable-structure-and-respect-built-heritage",
+    section: "B", questionRef: "2026 HL Q4 — complete: stone wall and cut roof; breathable structure and respect for our built heritage",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "(a) A survey of the cottage reveals: 500 mm solid external wall of stone construction, uninsulated, with an internal lime render; uninsulated traditional cut roof with natural slate. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage. (b) Discuss the importance of any two of the following when restoring traditional heritage buildings: breathable structure; respect for our built heritage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-stone-wall-and-cut-roof-a-stone-wall-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the stone wall, respecting the cottage’s character. Such as: keep the wall breathable, with layers more vapour-permeable towards the outside and no impermeable vapour barriers; use hygroscopic natural insulation (hemp/hempcrete, lime, wood fibre, cork, sheep’s wool); rake out and repoint with lime mortar by hand (joints raked to twice their width, dampened first, filled in stages, protected with hessian while it carbonates); apply hempcrete internally and allow 4–6 weeks to dry, then lime render, or a three-coat lime plaster (scud coat, haired scratch coat, float coat, lime-putty finish).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-cut-roof-a-stone-wall-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the stone wall.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-stone-wall-and-cut-roof-a-cut-roof-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the cut roof, respecting the cottage’s character. Such as: remove and set aside the slates, cleaning only their undersides; check and repair decayed rafters, wallplate and fascia in the same species and profile with traditional joints; treat new timber (boron); fit a vapour-permeable breathable membrane with counter-battens for ventilation; insulate with hygroscopic materials (sheep’s wool between rafters, wood fibre board above or below); keep the roof ventilated; re-lay the slates with the heaviest at the eaves, replacing broken ones with reclaimed slate; period cast-iron rainwater goods.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-cut-roof-a-cut-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the cut roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-breathable-structure-and-respect-built-heritage-b-breathable-structure-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of breathable structure when restoring traditional heritage buildings. Such as: moisture is not trapped in walls, floors and roofs; less risk of damp, mould and timber decay; protects masonry from freeze–thaw and salt damage; healthier indoor environment; the building performs as originally intended.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-breathable-structure-and-respect-built-heritage-b-respect-built-heritage-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of respect for our built heritage when restoring traditional heritage buildings. Such as: understand the building’s significance before work; preserve distinctive features and craftsmanship; make sympathetic alterations; follow conservation principles and guidelines; heritage buildings are irreplaceable cultural resources.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-stone-wall-and-cut-roof","label":"a","marks":40,"rowIds":["a-stone-wall-and-cut-roof-a-stone-wall-notes","a-stone-wall-and-cut-roof-a-stone-wall-sketches","a-stone-wall-and-cut-roof-a-cut-roof-notes","a-stone-wall-and-cut-roof-a-cut-roof-sketches"]},{"sourceCardId":"cons-2026-hl-q4-b-breathable-structure-and-respect-built-heritage","label":"b","marks":20,"rowIds":["b-breathable-structure-and-respect-built-heritage-b-breathable-structure-discussion","b-breathable-structure-and-respect-built-heritage-b-respect-built-heritage-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-stone-wall",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
+          "srcHash": "fe20ec15790428913f389a5cda97b44b",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-complete-stone-wall-and-sash-windows--conservation-original-materials-and-breathable-structure", topicId: "cons-1-1", conceptId: "heritage-cottage-complete-stone-wall-and-sash-windows--conservation-original-materials-and-breathable-structure",
+    section: "B", questionRef: "2026 HL Q4 — complete: stone wall and sash windows; conservation of original materials and breathable structure",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "(a) A survey of the cottage reveals: 500 mm solid external wall of stone construction, uninsulated, with an internal lime render; single-glazed, softwood sliding sash windows. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage. (b) Discuss the importance of any two of the following when restoring traditional heritage buildings: conservation of original materials; breathable structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-stone-wall-and-sash-windows-a-stone-wall-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the stone wall, respecting the cottage’s character. Such as: keep the wall breathable, with layers more vapour-permeable towards the outside and no impermeable vapour barriers; use hygroscopic natural insulation (hemp/hempcrete, lime, wood fibre, cork, sheep’s wool); rake out and repoint with lime mortar by hand (joints raked to twice their width, dampened first, filled in stages, protected with hessian while it carbonates); apply hempcrete internally and allow 4–6 weeks to dry, then lime render, or a three-coat lime plaster (scud coat, haired scratch coat, float coat, lime-putty finish).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-sash-windows-a-stone-wall-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the stone wall.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-stone-wall-and-sash-windows-a-sash-windows-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the sash windows, respecting the cottage’s character. Such as: repair rather than replace the original sashes, using a specialist conservation joiner; remove sashes and glass carefully, recording positions; replace only rotten timber in the same species and profiles with traditional joints and animal glue; free the pulleys, renew the sash cords and reuse the weights; reglaze with linseed-oil putty (salvaged or sourced float glass); repaint with non-toxic paint; add discreet secondary glazing to cut heat loss; record the repair.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-sash-windows-a-sash-windows-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the sash windows.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-conservation-original-materials-and-breathable-structure-b-conservation-original-materials-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of conservation of original materials when restoring traditional heritage buildings. Such as: preserves authenticity and significance; traditional materials have qualities modern replacements cannot match; repair is usually more sustainable than replacement; original fabric records the building’s age and history.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-conservation-original-materials-and-breathable-structure-b-breathable-structure-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of breathable structure when restoring traditional heritage buildings. Such as: moisture is not trapped in walls, floors and roofs; less risk of damp, mould and timber decay; protects masonry from freeze–thaw and salt damage; healthier indoor environment; the building performs as originally intended.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-stone-wall-and-sash-windows","label":"a","marks":40,"rowIds":["a-stone-wall-and-sash-windows-a-stone-wall-notes","a-stone-wall-and-sash-windows-a-stone-wall-sketches","a-stone-wall-and-sash-windows-a-sash-windows-notes","a-stone-wall-and-sash-windows-a-sash-windows-sketches"]},{"sourceCardId":"cons-2026-hl-q4-b-conservation-original-materials-and-breathable-structure","label":"b","marks":20,"rowIds":["b-conservation-original-materials-and-breathable-structure-b-conservation-original-materials-discussion","b-conservation-original-materials-and-breathable-structure-b-breathable-structure-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-stone-wall",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
+          "srcHash": "fe20ec15790428913f389a5cda97b44b",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-complete-stone-wall-and-sash-windows--conservation-original-materials-and-respect-built-heritage", topicId: "cons-1-1", conceptId: "heritage-cottage-complete-stone-wall-and-sash-windows--conservation-original-materials-and-respect-built-heritage",
+    section: "B", questionRef: "2026 HL Q4 — complete: stone wall and sash windows; conservation of original materials and respect for our built heritage",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "(a) A survey of the cottage reveals: 500 mm solid external wall of stone construction, uninsulated, with an internal lime render; single-glazed, softwood sliding sash windows. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage. (b) Discuss the importance of any two of the following when restoring traditional heritage buildings: conservation of original materials; respect for our built heritage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-stone-wall-and-sash-windows-a-stone-wall-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the stone wall, respecting the cottage’s character. Such as: keep the wall breathable, with layers more vapour-permeable towards the outside and no impermeable vapour barriers; use hygroscopic natural insulation (hemp/hempcrete, lime, wood fibre, cork, sheep’s wool); rake out and repoint with lime mortar by hand (joints raked to twice their width, dampened first, filled in stages, protected with hessian while it carbonates); apply hempcrete internally and allow 4–6 weeks to dry, then lime render, or a three-coat lime plaster (scud coat, haired scratch coat, float coat, lime-putty finish).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-sash-windows-a-stone-wall-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the stone wall.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-stone-wall-and-sash-windows-a-sash-windows-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the sash windows, respecting the cottage’s character. Such as: repair rather than replace the original sashes, using a specialist conservation joiner; remove sashes and glass carefully, recording positions; replace only rotten timber in the same species and profiles with traditional joints and animal glue; free the pulleys, renew the sash cords and reuse the weights; reglaze with linseed-oil putty (salvaged or sourced float glass); repaint with non-toxic paint; add discreet secondary glazing to cut heat loss; record the repair.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-sash-windows-a-sash-windows-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the sash windows.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-conservation-original-materials-and-respect-built-heritage-b-conservation-original-materials-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of conservation of original materials when restoring traditional heritage buildings. Such as: preserves authenticity and significance; traditional materials have qualities modern replacements cannot match; repair is usually more sustainable than replacement; original fabric records the building’s age and history.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-conservation-original-materials-and-respect-built-heritage-b-respect-built-heritage-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of respect for our built heritage when restoring traditional heritage buildings. Such as: understand the building’s significance before work; preserve distinctive features and craftsmanship; make sympathetic alterations; follow conservation principles and guidelines; heritage buildings are irreplaceable cultural resources.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-stone-wall-and-sash-windows","label":"a","marks":40,"rowIds":["a-stone-wall-and-sash-windows-a-stone-wall-notes","a-stone-wall-and-sash-windows-a-stone-wall-sketches","a-stone-wall-and-sash-windows-a-sash-windows-notes","a-stone-wall-and-sash-windows-a-sash-windows-sketches"]},{"sourceCardId":"cons-2026-hl-q4-b-conservation-original-materials-and-respect-built-heritage","label":"b","marks":20,"rowIds":["b-conservation-original-materials-and-respect-built-heritage-b-conservation-original-materials-discussion","b-conservation-original-materials-and-respect-built-heritage-b-respect-built-heritage-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-stone-wall",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
+          "srcHash": "fe20ec15790428913f389a5cda97b44b",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-complete-stone-wall-and-sash-windows--breathable-structure-and-respect-built-heritage", topicId: "cons-1-1", conceptId: "heritage-cottage-complete-stone-wall-and-sash-windows--breathable-structure-and-respect-built-heritage",
+    section: "B", questionRef: "2026 HL Q4 — complete: stone wall and sash windows; breathable structure and respect for our built heritage",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "(a) A survey of the cottage reveals: 500 mm solid external wall of stone construction, uninsulated, with an internal lime render; single-glazed, softwood sliding sash windows. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage. (b) Discuss the importance of any two of the following when restoring traditional heritage buildings: breathable structure; respect for our built heritage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-stone-wall-and-sash-windows-a-stone-wall-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the stone wall, respecting the cottage’s character. Such as: keep the wall breathable, with layers more vapour-permeable towards the outside and no impermeable vapour barriers; use hygroscopic natural insulation (hemp/hempcrete, lime, wood fibre, cork, sheep’s wool); rake out and repoint with lime mortar by hand (joints raked to twice their width, dampened first, filled in stages, protected with hessian while it carbonates); apply hempcrete internally and allow 4–6 weeks to dry, then lime render, or a three-coat lime plaster (scud coat, haired scratch coat, float coat, lime-putty finish).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-sash-windows-a-stone-wall-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the stone wall.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-stone-wall-and-sash-windows-a-sash-windows-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the sash windows, respecting the cottage’s character. Such as: repair rather than replace the original sashes, using a specialist conservation joiner; remove sashes and glass carefully, recording positions; replace only rotten timber in the same species and profiles with traditional joints and animal glue; free the pulleys, renew the sash cords and reuse the weights; reglaze with linseed-oil putty (salvaged or sourced float glass); repaint with non-toxic paint; add discreet secondary glazing to cut heat loss; record the repair.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-stone-wall-and-sash-windows-a-sash-windows-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the sash windows.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-breathable-structure-and-respect-built-heritage-b-breathable-structure-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of breathable structure when restoring traditional heritage buildings. Such as: moisture is not trapped in walls, floors and roofs; less risk of damp, mould and timber decay; protects masonry from freeze–thaw and salt damage; healthier indoor environment; the building performs as originally intended.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-breathable-structure-and-respect-built-heritage-b-respect-built-heritage-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of respect for our built heritage when restoring traditional heritage buildings. Such as: understand the building’s significance before work; preserve distinctive features and craftsmanship; make sympathetic alterations; follow conservation principles and guidelines; heritage buildings are irreplaceable cultural resources.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-stone-wall-and-sash-windows","label":"a","marks":40,"rowIds":["a-stone-wall-and-sash-windows-a-stone-wall-notes","a-stone-wall-and-sash-windows-a-stone-wall-sketches","a-stone-wall-and-sash-windows-a-sash-windows-notes","a-stone-wall-and-sash-windows-a-sash-windows-sketches"]},{"sourceCardId":"cons-2026-hl-q4-b-breathable-structure-and-respect-built-heritage","label":"b","marks":20,"rowIds":["b-breathable-structure-and-respect-built-heritage-b-breathable-structure-discussion","b-breathable-structure-and-respect-built-heritage-b-respect-built-heritage-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-stone-wall",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
+          "srcHash": "fe20ec15790428913f389a5cda97b44b",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-complete-cut-roof-and-sash-windows--conservation-original-materials-and-breathable-structure", topicId: "cons-1-1", conceptId: "heritage-cottage-complete-cut-roof-and-sash-windows--conservation-original-materials-and-breathable-structure",
+    section: "B", questionRef: "2026 HL Q4 — complete: cut roof and sash windows; conservation of original materials and breathable structure",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "(a) A survey of the cottage reveals: uninsulated traditional cut roof with natural slate; single-glazed, softwood sliding sash windows. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage. (b) Discuss the importance of any two of the following when restoring traditional heritage buildings: conservation of original materials; breathable structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-cut-roof-and-sash-windows-a-cut-roof-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the cut roof, respecting the cottage’s character. Such as: remove and set aside the slates, cleaning only their undersides; check and repair decayed rafters, wallplate and fascia in the same species and profile with traditional joints; treat new timber (boron); fit a vapour-permeable breathable membrane with counter-battens for ventilation; insulate with hygroscopic materials (sheep’s wool between rafters, wood fibre board above or below); keep the roof ventilated; re-lay the slates with the heaviest at the eaves, replacing broken ones with reclaimed slate; period cast-iron rainwater goods.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-cut-roof-and-sash-windows-a-cut-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the cut roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-cut-roof-and-sash-windows-a-sash-windows-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the sash windows, respecting the cottage’s character. Such as: repair rather than replace the original sashes, using a specialist conservation joiner; remove sashes and glass carefully, recording positions; replace only rotten timber in the same species and profiles with traditional joints and animal glue; free the pulleys, renew the sash cords and reuse the weights; reglaze with linseed-oil putty (salvaged or sourced float glass); repaint with non-toxic paint; add discreet secondary glazing to cut heat loss; record the repair.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-cut-roof-and-sash-windows-a-sash-windows-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the sash windows.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-conservation-original-materials-and-breathable-structure-b-conservation-original-materials-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of conservation of original materials when restoring traditional heritage buildings. Such as: preserves authenticity and significance; traditional materials have qualities modern replacements cannot match; repair is usually more sustainable than replacement; original fabric records the building’s age and history.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-conservation-original-materials-and-breathable-structure-b-breathable-structure-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of breathable structure when restoring traditional heritage buildings. Such as: moisture is not trapped in walls, floors and roofs; less risk of damp, mould and timber decay; protects masonry from freeze–thaw and salt damage; healthier indoor environment; the building performs as originally intended.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-cut-roof-and-sash-windows","label":"a","marks":40,"rowIds":["a-cut-roof-and-sash-windows-a-cut-roof-notes","a-cut-roof-and-sash-windows-a-cut-roof-sketches","a-cut-roof-and-sash-windows-a-sash-windows-notes","a-cut-roof-and-sash-windows-a-sash-windows-sketches"]},{"sourceCardId":"cons-2026-hl-q4-b-conservation-original-materials-and-breathable-structure","label":"b","marks":20,"rowIds":["b-conservation-original-materials-and-breathable-structure-b-conservation-original-materials-discussion","b-conservation-original-materials-and-breathable-structure-b-breathable-structure-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-cut-roof",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-cut-roof.png",
+          "srcHash": "46235df0bd69a5a573f653d223871dbb",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a traditional cut roof, with sketches of spliced rafter repairs and an insulated slated roof at the eaves.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-complete-cut-roof-and-sash-windows--conservation-original-materials-and-respect-built-heritage", topicId: "cons-1-1", conceptId: "heritage-cottage-complete-cut-roof-and-sash-windows--conservation-original-materials-and-respect-built-heritage",
+    section: "B", questionRef: "2026 HL Q4 — complete: cut roof and sash windows; conservation of original materials and respect for our built heritage",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "(a) A survey of the cottage reveals: uninsulated traditional cut roof with natural slate; single-glazed, softwood sliding sash windows. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage. (b) Discuss the importance of any two of the following when restoring traditional heritage buildings: conservation of original materials; respect for our built heritage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-cut-roof-and-sash-windows-a-cut-roof-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the cut roof, respecting the cottage’s character. Such as: remove and set aside the slates, cleaning only their undersides; check and repair decayed rafters, wallplate and fascia in the same species and profile with traditional joints; treat new timber (boron); fit a vapour-permeable breathable membrane with counter-battens for ventilation; insulate with hygroscopic materials (sheep’s wool between rafters, wood fibre board above or below); keep the roof ventilated; re-lay the slates with the heaviest at the eaves, replacing broken ones with reclaimed slate; period cast-iron rainwater goods.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-cut-roof-and-sash-windows-a-cut-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the cut roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-cut-roof-and-sash-windows-a-sash-windows-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the sash windows, respecting the cottage’s character. Such as: repair rather than replace the original sashes, using a specialist conservation joiner; remove sashes and glass carefully, recording positions; replace only rotten timber in the same species and profiles with traditional joints and animal glue; free the pulleys, renew the sash cords and reuse the weights; reglaze with linseed-oil putty (salvaged or sourced float glass); repaint with non-toxic paint; add discreet secondary glazing to cut heat loss; record the repair.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-cut-roof-and-sash-windows-a-sash-windows-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the sash windows.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-conservation-original-materials-and-respect-built-heritage-b-conservation-original-materials-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of conservation of original materials when restoring traditional heritage buildings. Such as: preserves authenticity and significance; traditional materials have qualities modern replacements cannot match; repair is usually more sustainable than replacement; original fabric records the building’s age and history.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-conservation-original-materials-and-respect-built-heritage-b-respect-built-heritage-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of respect for our built heritage when restoring traditional heritage buildings. Such as: understand the building’s significance before work; preserve distinctive features and craftsmanship; make sympathetic alterations; follow conservation principles and guidelines; heritage buildings are irreplaceable cultural resources.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-cut-roof-and-sash-windows","label":"a","marks":40,"rowIds":["a-cut-roof-and-sash-windows-a-cut-roof-notes","a-cut-roof-and-sash-windows-a-cut-roof-sketches","a-cut-roof-and-sash-windows-a-sash-windows-notes","a-cut-roof-and-sash-windows-a-sash-windows-sketches"]},{"sourceCardId":"cons-2026-hl-q4-b-conservation-original-materials-and-respect-built-heritage","label":"b","marks":20,"rowIds":["b-conservation-original-materials-and-respect-built-heritage-b-conservation-original-materials-discussion","b-conservation-original-materials-and-respect-built-heritage-b-respect-built-heritage-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-cut-roof",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-cut-roof.png",
+          "srcHash": "46235df0bd69a5a573f653d223871dbb",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a traditional cut roof, with sketches of spliced rafter repairs and an insulated slated roof at the eaves.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q4-complete-cut-roof-and-sash-windows--breathable-structure-and-respect-built-heritage", topicId: "cons-1-1", conceptId: "heritage-cottage-complete-cut-roof-and-sash-windows--breathable-structure-and-respect-built-heritage",
+    section: "B", questionRef: "2026 HL Q4 — complete: cut roof and sash windows; breathable structure and respect for our built heritage",
+    stem: "The sketch shows a railway keepers cottage built over 130 years ago. These traditional cottages can be seen at railway crossing points throughout our rural landscape. They form an important part of our built heritage.",
+    questionText: "(a) A survey of the cottage reveals: uninsulated traditional cut roof with natural slate; single-glazed, softwood sliding sash windows. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage. (b) Discuss the importance of any two of the following when restoring traditional heritage buildings: breathable structure; respect for our built heritage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-cut-roof-and-sash-windows-a-cut-roof-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the cut roof, respecting the cottage’s character. Such as: remove and set aside the slates, cleaning only their undersides; check and repair decayed rafters, wallplate and fascia in the same species and profile with traditional joints; treat new timber (boron); fit a vapour-permeable breathable membrane with counter-battens for ventilation; insulate with hygroscopic materials (sheep’s wool between rafters, wood fibre board above or below); keep the roof ventilated; re-lay the slates with the heaviest at the eaves, replacing broken ones with reclaimed slate; period cast-iron rainwater goods.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-cut-roof-and-sash-windows-a-cut-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the cut roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-cut-roof-and-sash-windows-a-sash-windows-notes", kind: "criterion", verbatim: "Steps involved in upgrading the thermal performance of each area selected", marks: 8, contextNote: "Notes on the steps for the sash windows, respecting the cottage’s character. Such as: repair rather than replace the original sashes, using a specialist conservation joiner; remove sashes and glass carefully, recording positions; replace only rotten timber in the same species and profiles with traditional joints and animal glue; free the pulleys, renew the sash cords and reuse the weights; reglaze with linseed-oil putty (salvaged or sourced float glass); repaint with non-toxic paint; add discreet secondary glazing to cut heat loss; record the repair.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-cut-roof-and-sash-windows-a-sash-windows-sketches", kind: "criterion", verbatim: "Sketches", marks: 12, contextNote: "Sketches showing the upgrade steps and construction for the sash windows.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-breathable-structure-and-respect-built-heritage-b-breathable-structure-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of breathable structure when restoring traditional heritage buildings. Such as: moisture is not trapped in walls, floors and roofs; less risk of damp, mould and timber decay; protects masonry from freeze–thaw and salt damage; healthier indoor environment; the building performs as originally intended.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-breathable-structure-and-respect-built-heritage-b-respect-built-heritage-discussion", kind: "criterion", verbatim: "Discussion/notes 1", marks: 10, contextNote: "Discuss the importance of respect for our built heritage when restoring traditional heritage buildings. Such as: understand the building’s significance before work; preserve distinctive features and craftsmanship; make sympathetic alterations; follow conservation principles and guidelines; heritage buildings are irreplaceable cultural resources.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q4-a-cut-roof-and-sash-windows","label":"a","marks":40,"rowIds":["a-cut-roof-and-sash-windows-a-cut-roof-notes","a-cut-roof-and-sash-windows-a-cut-roof-sketches","a-cut-roof-and-sash-windows-a-sash-windows-notes","a-cut-roof-and-sash-windows-a-sash-windows-sketches"]},{"sourceCardId":"cons-2026-hl-q4-b-breathable-structure-and-respect-built-heritage","label":"b","marks":20,"rowIds":["b-breathable-structure-and-respect-built-heritage-b-breathable-structure-discussion","b-breathable-structure-and-respect-built-heritage-b-respect-built-heritage-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Railway keeper’s cottage: thermal upgrade and heritage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+          "srcHash": "5f069d2a2d3fce1a6a490f632831ee43",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-cut-roof",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-cut-roof.png",
+          "srcHash": "46235df0bd69a5a573f653d223871dbb",
+          "alt": "SEC 2026 Higher marking scheme page on upgrading a traditional cut roof, with sketches of spliced rafter repairs and an insulated slated roof at the eaves.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q5-a", topicId: "cons-6-1", conceptId: "timber-frame-wall-a",
+    section: "B", questionRef: "2026 HL Q5(a)",
+    stem: "Shown in the sketch is the proposed external wall design detail for a new house of timber frame construction.",
+    questionText: "Calculate the U-value of the proposed wall, given the construction has the following sequence and data: External render thickness 16 mm External concrete block thickness 100 mm Clear cavity width 60 mm Oriented Strand Board (OSB) thickness 12 mm Timber stud thickness 250 mm Insulation between studs thickness 250 mm Oriented Strand Board (OSB) thickness 12 mm Plasterboard thickness 12.5 mm. Thermal data of the external wall: Resistance of external surface (R) 0.048 m2 ºC/W; Resistivity of external render (r) 2.170 m ºC/W; Conductivity of concrete block (k) 1.440 W/m ºC; Resistance of clear cavity (R) 0.440 m2 ºC/W; Conductivity of OSB (k) 0.130 W/m ºC; Conductivity of insulation (k) 0.039 W/m ºC; Conductivity of OSB (k) 0.130 W/m ºC; Conductivity of plasterboard (k) 0.250 W/m ºC; Resistance of internal surface (R) 0.130 m2 ºC/W. Note: The timber studs need not be considered in your calculations.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 36,
+    rows: [
+    { id: "tabulation", kind: "criterion", verbatim: "Tabulation", marks: 3, contextNote: "Set out the layers, thicknesses (in metres), k or r values and resistances in a table.", permittedMarks: [0,1,2,3] },
+    { id: "surfaces", kind: "criterion", verbatim: "External surface resistance", marks: 6, contextNote: "External surface resistance 0.048 and internal surface resistance 0.130 m²°C/W, 3 each.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "layers", kind: "criterion", verbatim: "Formulae: R=T/k R=T × r", marks: 21, contextNote: "Seven layer resistances, 3 each: render 0.016 × 2.170 = 0.035; concrete block 0.100 ÷ 1.440 = 0.069; clear cavity 0.440 (given); OSB 0.012 ÷ 0.130 = 0.092; insulation 0.250 ÷ 0.039 = 6.410; OSB 0.092; plasterboard 0.0125 ÷ 0.250 = 0.050 m²°C/W. The studs are ignored, as the question states.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21] },
+    { id: "total-resistance", kind: "criterion", verbatim: "Total resistance", marks: 3, contextNote: "Total resistance Rt = 7.367 m²°C/W (sum of all resistances).", permittedMarks: [0,1,2,3] },
+    { id: "u-value", kind: "criterion", verbatim: "Calculation of U-value (w/m2 °C or w/m2k)", marks: 3, contextNote: "U = 1 ÷ Rt = 1 ÷ 7.367 = 0.136 W/m²°C, with units.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Timber-frame wall: U-value, heat-loss cost and moisture",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from part (a); the scheme’s worked answers are U = 0.136 W/m²°C and an annual cost of €40.27."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-original.png",
+          "srcHash": "5ea6943a56c42fd1913da2bcb830fb49",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 5: the printed question with a cut-away sketch of the timber-frame wall and all the construction and thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-calculation.png",
+          "srcHash": "335e23c0d72185b549b69181c3e044b3",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 7.367 and U = 0.136 W/m²°C, and the annual heat-loss cost of €40.27 by two methods.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q5-b", topicId: "cons-6-3", conceptId: "timber-frame-wall-b",
+    section: "B", questionRef: "2026 HL Q5(b)",
+    stem: "Shown in the sketch is the proposed external wall design detail for a new house of timber frame construction.",
+    questionText: "Using the U-value of the wall obtained at 5(a) above and the following data, calculate the cost of heat lost annually through this wall: area of external wall 144 m2; average internal temperature 20 ºC; average external temperature 7 ºC; heating period 6 hours daily for 33 weeks per annum; cost of wood pellets 55 cent per kg; calorific value of wood pellets 17350 kJ per kg; 1000 watts 1 kJ per second.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "heat-loss", kind: "criterion", verbatim: "Heat loss formula and calculation", marks: 3, contextNote: "Heat loss = U × area × temperature difference = 0.136 × 144 × (20 − 7) = 254.592 W (J/s).", permittedMarks: [0,1,2,3] },
+    { id: "duration", kind: "criterion", verbatim: "Heating duration for one year", marks: 3, contextNote: "Heating time = 60 × 60 × 6 × 7 × 33 = 4,989,600 seconds per year.", permittedMarks: [0,1,2,3] },
+    { id: "energy", kind: "criterion", verbatim: "k/Joules calculation for one year", marks: 3, contextNote: "Energy = 254.592 × 4,989,600 ÷ 1000 = 1,270,312.243 kJ per year.", permittedMarks: [0,1,2,3] },
+    { id: "pellets", kind: "criterion", verbatim: "Kgs of wood pellets for one year", marks: 3, contextNote: "Wood pellets = 1,270,312.243 ÷ 17,350 = 73.2168 kg per year.", permittedMarks: [0,1,2,3] },
+    { id: "cost", kind: "criterion", verbatim: "Annual cost of heat loss", marks: 3, contextNote: "Cost = 73.2168 × €0.55 = €40.27 per year. The single-formula method (U × area × ΔT × seconds × cost ÷ (calorific value × 1000)) gives the same €40.27.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Timber-frame wall: U-value, heat-loss cost and moisture",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from part (a); the scheme’s worked answers are U = 0.136 W/m²°C and an annual cost of €40.27."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-original.png",
+          "srcHash": "5ea6943a56c42fd1913da2bcb830fb49",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 5: the printed question with a cut-away sketch of the timber-frame wall and all the construction and thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-calculation.png",
+          "srcHash": "335e23c0d72185b549b69181c3e044b3",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 7.367 and U = 0.136 W/m²°C, and the annual heat-loss cost of €40.27 by two methods.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q5-c", topicId: "cons-6-6", conceptId: "timber-frame-wall-c",
+    section: "B", questionRef: "2026 HL Q5(c)",
+    stem: "Shown in the sketch is the proposed external wall design detail for a new house of timber frame construction.",
+    questionText: "Using notes and freehand sketches, show the typical design detailing that will prevent the build-up of moisture within the timber frame structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "notes", kind: "criterion", verbatim: "Notes/discussion", marks: 3, contextNote: "Such as: a breather membrane on the outer face that lets vapour escape but sheds external water, with taped joints; a vapour control layer on the warm (inner) side, continuous and sealed at every lap, so warm humid air cannot reach the frame and cause interstitial condensation and rot.", permittedMarks: [0,1,2,3] },
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 6, contextNote: "Sketch of the wall section locating the breather membrane outside the frame and the vapour control layer on the warm side.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Timber-frame wall: U-value, heat-loss cost and moisture",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from part (a); the scheme’s worked answers are U = 0.136 W/m²°C and an annual cost of €40.27."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-original.png",
+          "srcHash": "5ea6943a56c42fd1913da2bcb830fb49",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 5: the printed question with a cut-away sketch of the timber-frame wall and all the construction and thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q5-moisture",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-moisture.png",
+          "srcHash": "e1a631bcae16c125408594375c2ef2b1",
+          "alt": "SEC model timber-frame wall section with arrows to the outer breather membrane and the inner vapour control layer, with notes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q5-complete", topicId: "cons-6-1", conceptId: "timber-frame-wall-complete",
+    section: "B", questionRef: "2026 HL Q5 — complete",
+    stem: "Shown in the sketch is the proposed external wall design detail for a new house of timber frame construction.",
+    questionText: "(a) Calculate the U-value of the proposed wall, given the construction has the following sequence and data: External render thickness 16 mm External concrete block thickness 100 mm Clear cavity width 60 mm Oriented Strand Board (OSB) thickness 12 mm Timber stud thickness 250 mm Insulation between studs thickness 250 mm Oriented Strand Board (OSB) thickness 12 mm Plasterboard thickness 12.5 mm. Thermal data of the external wall: Resistance of external surface (R) 0.048 m2 ºC/W; Resistivity of external render (r) 2.170 m ºC/W; Conductivity of concrete block (k) 1.440 W/m ºC; Resistance of clear cavity (R) 0.440 m2 ºC/W; Conductivity of OSB (k) 0.130 W/m ºC; Conductivity of insulation (k) 0.039 W/m ºC; Conductivity of OSB (k) 0.130 W/m ºC; Conductivity of plasterboard (k) 0.250 W/m ºC; Resistance of internal surface (R) 0.130 m2 ºC/W. Note: The timber studs need not be considered in your calculations. (b) Using the U-value of the wall obtained at 5(a) above and the following data, calculate the cost of heat lost annually through this wall: area of external wall 144 m2; average internal temperature 20 ºC; average external temperature 7 ºC; heating period 6 hours daily for 33 weeks per annum; cost of wood pellets 55 cent per kg; calorific value of wood pellets 17350 kJ per kg; 1000 watts 1 kJ per second. (c) Using notes and freehand sketches, show the typical design detailing that will prevent the build-up of moisture within the timber frame structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-tabulation", kind: "criterion", verbatim: "Tabulation", marks: 3, contextNote: "Set out the layers, thicknesses (in metres), k or r values and resistances in a table.", permittedMarks: [0,1,2,3] },
+    { id: "a-surfaces", kind: "criterion", verbatim: "External surface resistance", marks: 6, contextNote: "External surface resistance 0.048 and internal surface resistance 0.130 m²°C/W, 3 each.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-layers", kind: "criterion", verbatim: "Formulae: R=T/k R=T × r", marks: 21, contextNote: "Seven layer resistances, 3 each: render 0.016 × 2.170 = 0.035; concrete block 0.100 ÷ 1.440 = 0.069; clear cavity 0.440 (given); OSB 0.012 ÷ 0.130 = 0.092; insulation 0.250 ÷ 0.039 = 6.410; OSB 0.092; plasterboard 0.0125 ÷ 0.250 = 0.050 m²°C/W. The studs are ignored, as the question states.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21] },
+    { id: "a-total-resistance", kind: "criterion", verbatim: "Total resistance", marks: 3, contextNote: "Total resistance Rt = 7.367 m²°C/W (sum of all resistances).", permittedMarks: [0,1,2,3] },
+    { id: "a-u-value", kind: "criterion", verbatim: "Calculation of U-value (w/m2 °C or w/m2k)", marks: 3, contextNote: "U = 1 ÷ Rt = 1 ÷ 7.367 = 0.136 W/m²°C, with units.", permittedMarks: [0,1,2,3] },
+    { id: "b-heat-loss", kind: "criterion", verbatim: "Heat loss formula and calculation", marks: 3, contextNote: "Heat loss = U × area × temperature difference = 0.136 × 144 × (20 − 7) = 254.592 W (J/s).", permittedMarks: [0,1,2,3] },
+    { id: "b-duration", kind: "criterion", verbatim: "Heating duration for one year", marks: 3, contextNote: "Heating time = 60 × 60 × 6 × 7 × 33 = 4,989,600 seconds per year.", permittedMarks: [0,1,2,3] },
+    { id: "b-energy", kind: "criterion", verbatim: "k/Joules calculation for one year", marks: 3, contextNote: "Energy = 254.592 × 4,989,600 ÷ 1000 = 1,270,312.243 kJ per year.", permittedMarks: [0,1,2,3] },
+    { id: "b-pellets", kind: "criterion", verbatim: "Kgs of wood pellets for one year", marks: 3, contextNote: "Wood pellets = 1,270,312.243 ÷ 17,350 = 73.2168 kg per year.", permittedMarks: [0,1,2,3] },
+    { id: "b-cost", kind: "criterion", verbatim: "Annual cost of heat loss", marks: 3, contextNote: "Cost = 73.2168 × €0.55 = €40.27 per year. The single-formula method (U × area × ΔT × seconds × cost ÷ (calorific value × 1000)) gives the same €40.27.", permittedMarks: [0,1,2,3] },
+    { id: "c-notes", kind: "criterion", verbatim: "Notes/discussion", marks: 3, contextNote: "Such as: a breather membrane on the outer face that lets vapour escape but sheds external water, with taped joints; a vapour control layer on the warm (inner) side, continuous and sealed at every lap, so warm humid air cannot reach the frame and cause interstitial condensation and rot.", permittedMarks: [0,1,2,3] },
+    { id: "c-sketch", kind: "criterion", verbatim: "Sketch", marks: 6, contextNote: "Sketch of the wall section locating the breather membrane outside the frame and the vapour control layer on the warm side.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q5-a","label":"a","marks":36,"rowIds":["a-tabulation","a-surfaces","a-layers","a-total-resistance","a-u-value"]},{"sourceCardId":"cons-2026-hl-q5-b","label":"b","marks":15,"rowIds":["b-heat-loss","b-duration","b-energy","b-pellets","b-cost"]},{"sourceCardId":"cons-2026-hl-q5-c","label":"c","marks":9,"rowIds":["c-notes","c-sketch"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Timber-frame wall: U-value, heat-loss cost and moisture",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from part (a); the scheme’s worked answers are U = 0.136 W/m²°C and an annual cost of €40.27."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-original.png",
+          "srcHash": "5ea6943a56c42fd1913da2bcb830fb49",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 5: the printed question with a cut-away sketch of the timber-frame wall and all the construction and thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-calculation.png",
+          "srcHash": "335e23c0d72185b549b69181c3e044b3",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 7.367 and U = 0.136 W/m²°C, and the annual heat-loss cost of €40.27 by two methods.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q6-a", topicId: "cons-1-2", conceptId: "nature-connected-house-a",
+    section: "B", questionRef: "2026 HL Q6(a)",
+    stem: "The elevation and ground floor plan of a house are shown. The external walls are of timber frame construction with a rendered concrete block, locally sourced timber cladding, and stone finish. Space heating is provided using a renewable heat source. The house is designed to increase the occupants’ connection with nature and to have a low environmental impact.",
+    questionText: "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 36,
+    rows: [
+    { id: "feature-1", kind: "criterion", verbatim: "Design Feature 1", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: sustainable materials — locally sourced timber cladding with low transport emissions, timber frame as a renewable carbon store, durable low-maintenance natural stone.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "feature-2", kind: "criterion", verbatim: "Design Feature 2", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: passive solar gain from extensive south-facing glazing, reducing space-heating demand; or a compact form with a low surface-to-volume ratio.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "feature-3", kind: "criterion", verbatim: "Design Feature 3", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: a renewable heat source (heat pump or geothermal) in a well-insulated envelope; or indoor–outdoor living with cross-ventilation and daylight; or planting and permeable surfaces for drainage and biodiversity. Three distinct features are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low-impact house connected to nature",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Features are open choices; the scheme lists typical examples. Its environmental and health statements are model points, not universal guarantees."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q6-original.png",
+          "srcHash": "ef20925b34780326f5825bf664e1663d",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 6: the printed question with the house elevation and ground-floor plan around a central courtyard.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q6-low-impact",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q6-low-impact.png",
+          "srcHash": "d2f31a1cd42accc0d876d8433f07f3f1",
+          "alt": "SEC 2026 Higher marking scheme page on low-environmental-impact features, with sketches of timber-frame and stone walls and of south-facing glazing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q6-b", topicId: "cons-1-2", conceptId: "nature-connected-house-b",
+    section: "B", questionRef: "2026 HL Q6(b)",
+    stem: "The elevation and ground floor plan of a house are shown. The external walls are of timber frame construction with a rendered concrete block, locally sourced timber cladding, and stone finish. Space heating is provided using a renewable heat source. The house is designed to increase the occupants’ connection with nature and to have a low environmental impact.",
+    questionText: "Discuss using notes and freehand sketches, two features of the design that contribute to increasing the occupants’ connection with nature.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "feature-1", kind: "criterion", verbatim: "Design Feature 1", marks: 8, contextNote: "Notes 4 and sketches 4. Such as: the central courtyard garden at the heart of the plan, with views of greenery from living and circulation areas.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "feature-2", kind: "criterion", verbatim: "Design Feature 2", marks: 8, contextNote: "Notes 4 and sketches 4. Such as: large floor-to-ceiling glazing and folding doors framing the landscape; natural local stone and timber; daylight throughout; level access to terraces; cross-ventilation; the courtyard water feature. Two distinct features are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low-impact house connected to nature",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Features are open choices; the scheme lists typical examples. Its environmental and health statements are model points, not universal guarantees."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q6-original.png",
+          "srcHash": "ef20925b34780326f5825bf664e1663d",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 6: the printed question with the house elevation and ground-floor plan around a central courtyard.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q6-nature",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q6-nature.png",
+          "srcHash": "2bd61b608a1338afd7ebb9992899c621",
+          "alt": "SEC 2026 Higher marking scheme page on connection with nature, with sketches of large folding glazed doors and of a person working beside a window.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q6-c", topicId: "cons-1-2", conceptId: "nature-connected-house-c",
+    section: "B", questionRef: "2026 HL Q6(c)",
+    stem: "The elevation and ground floor plan of a house are shown. The external walls are of timber frame construction with a rendered concrete block, locally sourced timber cladding, and stone finish. Space heating is provided using a renewable heat source. The house is designed to increase the occupants’ connection with nature and to have a low environmental impact.",
+    questionText: "Discuss in detail two advantages of designing a house that will enhance the connection to nature for the occupants.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1 (2 for point, 2 for discussion)", marks: 4, contextNote: "Point 2 and discussion 2. Such as: improved mental health and well-being; daylight regulating circadian rhythms and sleep.", permittedMarks: [0,1,2,3,4] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2 (2 for point, 2 for discussion)", marks: 4, contextNote: "A second, different advantage: point 2 and discussion 2. Such as: natural ventilation and cooling; passive solar savings; a richer sensory environment; more outdoor living and activity; a sense of more space; appreciation of biodiversity.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low-impact house connected to nature",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Features are open choices; the scheme lists typical examples. Its environmental and health statements are model points, not universal guarantees."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q6-original.png",
+          "srcHash": "ef20925b34780326f5825bf664e1663d",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 6: the printed question with the house elevation and ground-floor plan around a central courtyard.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q6-complete", topicId: "cons-1-2", conceptId: "nature-connected-house-complete",
+    section: "B", questionRef: "2026 HL Q6 — complete",
+    stem: "The elevation and ground floor plan of a house are shown. The external walls are of timber frame construction with a rendered concrete block, locally sourced timber cladding, and stone finish. Space heating is provided using a renewable heat source. The house is designed to increase the occupants’ connection with nature and to have a low environmental impact.",
+    questionText: "(a) With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact. (b) Discuss using notes and freehand sketches, two features of the design that contribute to increasing the occupants’ connection with nature. (c) Discuss in detail two advantages of designing a house that will enhance the connection to nature for the occupants.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-feature-1", kind: "criterion", verbatim: "Design Feature 1", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: sustainable materials — locally sourced timber cladding with low transport emissions, timber frame as a renewable carbon store, durable low-maintenance natural stone.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-feature-2", kind: "criterion", verbatim: "Design Feature 2", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: passive solar gain from extensive south-facing glazing, reducing space-heating demand; or a compact form with a low surface-to-volume ratio.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-feature-3", kind: "criterion", verbatim: "Design Feature 3", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: a renewable heat source (heat pump or geothermal) in a well-insulated envelope; or indoor–outdoor living with cross-ventilation and daylight; or planting and permeable surfaces for drainage and biodiversity. Three distinct features are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-feature-1", kind: "criterion", verbatim: "Design Feature 1", marks: 8, contextNote: "Notes 4 and sketches 4. Such as: the central courtyard garden at the heart of the plan, with views of greenery from living and circulation areas.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-feature-2", kind: "criterion", verbatim: "Design Feature 2", marks: 8, contextNote: "Notes 4 and sketches 4. Such as: large floor-to-ceiling glazing and folding doors framing the landscape; natural local stone and timber; daylight throughout; level access to terraces; cross-ventilation; the courtyard water feature. Two distinct features are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage 1 (2 for point, 2 for discussion)", marks: 4, contextNote: "Point 2 and discussion 2. Such as: improved mental health and well-being; daylight regulating circadian rhythms and sleep.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage 2 (2 for point, 2 for discussion)", marks: 4, contextNote: "A second, different advantage: point 2 and discussion 2. Such as: natural ventilation and cooling; passive solar savings; a richer sensory environment; more outdoor living and activity; a sense of more space; appreciation of biodiversity.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q6-a","label":"a","marks":36,"rowIds":["a-feature-1","a-feature-2","a-feature-3"]},{"sourceCardId":"cons-2026-hl-q6-b","label":"b","marks":16,"rowIds":["b-feature-1","b-feature-2"]},{"sourceCardId":"cons-2026-hl-q6-c","label":"c","marks":8,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low-impact house connected to nature",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Features are open choices; the scheme lists typical examples. Its environmental and health statements are model points, not universal guarantees."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q6-original.png",
+          "srcHash": "ef20925b34780326f5825bf664e1663d",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 6: the printed question with the house elevation and ground-floor plan around a central courtyard.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q6-low-impact",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q6-low-impact.png",
+          "srcHash": "d2f31a1cd42accc0d876d8433f07f3f1",
+          "alt": "SEC 2026 Higher marking scheme page on low-environmental-impact features, with sketches of timber-frame and stone walls and of south-facing glazing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q7-a", topicId: "cons-4-4", conceptId: "open-riser-stairs-a",
+    section: "B", questionRef: "2026 HL Q7(a)",
+    stem: "The main hallway of a two-storey dwelling has an open riser wooden stairs. The newel post is 120 mm × 120 mm. The rise of the step should not exceed 175 mm.",
+    questionText: "To a scale of 1:5, draw a vertical section through the centre of the stairs. The section should show the typical construction details through the bottom three steps of the stairs, showing the newel post, balusters, string, and handrail. Include the typical dimensions of three structural members of the stairs.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 54,
+    rows: [
+    { id: "construction", kind: "criterion", verbatim: "Vertical section through centre of an open riser stairs", marks: 40, contextNote: "Best eight details, 5 each (4 drawing + 1 annotation). Marking menu: closed string; string capping; newel post (120 mm × 120 mm); riser; tread; handrail; balusters; nosing; pitch line; jointing of handrail to newel post, string to newel post, riser to tread, and baluster to handrail/string. Keep the rise at or below 175 mm.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40] },
+    { id: "dimensions", kind: "criterion", verbatim: "Three dimensions", marks: 6, contextNote: "Typical dimensions of three structural members (6 marks).", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "presentation", kind: "criterion", verbatim: "Scale - 4 marks Drafting - 4 marks", marks: 8, contextNote: "Scale 4 and drafting 4, assessed together: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Open riser stairs section",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction, dimension and scale/drafting marks belong to part (a); the two safety details in (b) are marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q7-original.png",
+          "srcHash": "281118767286a692df9ed232c9e58a5b",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 7: the printed question with a sketch of an open riser wooden stairs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q7-stairs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q7-stairs.png",
+          "srcHash": "21a10593ab53a5090970096b927e1b84",
+          "alt": "SEC model section through an open riser stairs showing newel post, balusters, string and handrail, 100 mm sphere gaps, the 840–900 mm handrail height and the design rules.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q7-b", topicId: "cons-4-4", conceptId: "open-riser-stairs-b",
+    section: "B", questionRef: "2026 HL Q7(b)",
+    stem: "The main hallway of a two-storey dwelling has an open riser wooden stairs. The newel post is 120 mm × 120 mm. The rise of the step should not exceed 175 mm.",
+    questionText: "On your drawing, show two design details of an open riser stairs that will ensure the stairs is safe for all users.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Design detail 1", marks: 3, contextNote: "One safety detail on the drawing. Such as: gaps between treads and between balusters that will not let a 100 mm sphere pass; handrail 840–900 mm above the pitch line.", permittedMarks: [0,1,2,3] },
+    { id: "detail-2", kind: "criterion", verbatim: "Design detail 2", marks: 3, contextNote: "A second, different safety detail. Such as: going at least 220 mm and rise no more than 175 mm here, 2R + G between 550 and 700 mm, pitch no more than 42°, guarding that is not easily climbed, 2 m headroom.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Open riser stairs section",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction, dimension and scale/drafting marks belong to part (a); the two safety details in (b) are marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q7-original.png",
+          "srcHash": "281118767286a692df9ed232c9e58a5b",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 7: the printed question with a sketch of an open riser wooden stairs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q7-stairs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q7-stairs.png",
+          "srcHash": "21a10593ab53a5090970096b927e1b84",
+          "alt": "SEC model section through an open riser stairs showing newel post, balusters, string and handrail, 100 mm sphere gaps, the 840–900 mm handrail height and the design rules.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q7-complete", topicId: "cons-4-4", conceptId: "open-riser-stairs-complete",
+    section: "B", questionRef: "2026 HL Q7 — complete",
+    stem: "The main hallway of a two-storey dwelling has an open riser wooden stairs. The newel post is 120 mm × 120 mm. The rise of the step should not exceed 175 mm.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the centre of the stairs. The section should show the typical construction details through the bottom three steps of the stairs, showing the newel post, balusters, string, and handrail. Include the typical dimensions of three structural members of the stairs. (b) On your drawing, show two design details of an open riser stairs that will ensure the stairs is safe for all users.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-construction", kind: "criterion", verbatim: "Vertical section through centre of an open riser stairs", marks: 40, contextNote: "Best eight details, 5 each (4 drawing + 1 annotation). Marking menu: closed string; string capping; newel post (120 mm × 120 mm); riser; tread; handrail; balusters; nosing; pitch line; jointing of handrail to newel post, string to newel post, riser to tread, and baluster to handrail/string. Keep the rise at or below 175 mm.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Three dimensions", marks: 6, contextNote: "Typical dimensions of three structural members (6 marks).", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Scale - 4 marks Drafting - 4 marks", marks: 8, contextNote: "Scale 4 and drafting 4, assessed together: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-detail-1", kind: "criterion", verbatim: "Design detail 1", marks: 3, contextNote: "One safety detail on the drawing. Such as: gaps between treads and between balusters that will not let a 100 mm sphere pass; handrail 840–900 mm above the pitch line.", permittedMarks: [0,1,2,3] },
+    { id: "b-detail-2", kind: "criterion", verbatim: "Design detail 2", marks: 3, contextNote: "A second, different safety detail. Such as: going at least 220 mm and rise no more than 175 mm here, 2R + G between 550 and 700 mm, pitch no more than 42°, guarding that is not easily climbed, 2 m headroom.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q7-a","label":"a","marks":54,"rowIds":["a-construction","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2026-hl-q7-b","label":"b","marks":6,"rowIds":["b-detail-1","b-detail-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Open riser stairs section",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction, dimension and scale/drafting marks belong to part (a); the two safety details in (b) are marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q7-original.png",
+          "srcHash": "281118767286a692df9ed232c9e58a5b",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 7: the printed question with a sketch of an open riser wooden stairs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q7-stairs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q7-stairs.png",
+          "srcHash": "21a10593ab53a5090970096b927e1b84",
+          "alt": "SEC model section through an open riser stairs showing newel post, balusters, string and handrail, 100 mm sphere gaps, the 840–900 mm handrail height and the design rules.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q8-a", topicId: "cons-5-6", conceptId: "first-floor-drainage-a",
+    section: "B", questionRef: "2026 HL Q8(a)",
+    stem: "A bedroom with an en-suite bathroom is located on the first floor of a dwelling house.",
+    questionText: "Discuss two considerations that should be taken into account when planning the drainage layout of a bathroom located on the first floor of a house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "consideration-1", kind: "criterion", verbatim: "Consideration 1", marks: 8, contextNote: "Point 4 and discussion 4. Such as: place the bathroom above or near ground-floor wet areas for a short run to the SVP; run pipes parallel to joists and limit notching (or use engineered joists).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "consideration-2", kind: "criterion", verbatim: "Consideration 2", marks: 8, contextNote: "A second, different consideration: point 4 and discussion 4. Such as: self-cleansing falls (waste 1:18–1:40, soil 1:40–1:80); acoustic lagging of pipes; access for cleaning; venting to prevent siphonage; deep-seal traps; floor depth for shower traps and tanking.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "First-floor en-suite drainage",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three appliances are required in part (b). Pipe sizes and gradients in the scheme are typical values."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q8-original.png",
+          "srcHash": "b1f2472cd88e38d4727bbb0bcb79f3ac",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 8: the printed question with a sketch of an en-suite shower room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q8-b", topicId: "cons-5-6", conceptId: "first-floor-drainage-b",
+    section: "B", questionRef: "2026 HL Q8(b)",
+    stem: "A bedroom with an en-suite bathroom is located on the first floor of a dwelling house.",
+    questionText: "Using notes and freehand sketches, show the above-ground pipework necessary for the safe removal of waste from the following appliances: shower; water closet (W.C.); wash basin. Include on your sketch typical sizes of the soil and vent pipe (svp) and the waste pipe from each appliance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 32,
+    rows: [
+    { id: "notes", kind: "criterion", verbatim: "Typical layout above-ground", marks: 12, contextNote: "Notes on a single-stack layout: 110 mm uPVC SVP vented above the roof (or an air admittance valve); W.C. connected by a short 110 mm branch at 1:40–1:80 with its integral 75 mm seal; shower waste 40–50 mm with a 75 mm deep-seal trap at 1:18–1:40; basin waste (typically 32 mm) with a deep-seal trap; small branches not entering the SVP within 200 mm of the W.C. connection.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "sketch", kind: "criterion", verbatim: "Above-ground pipework necessary for the safe removal of waste", marks: 16, contextNote: "Sketch showing all three appliances connected to the stack.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "dimensions", kind: "criterion", verbatim: "Typical dimensions - Any four", marks: 4, contextNote: "Any four typical sizes, such as SVP 110 mm, W.C. branch 110 mm, shower waste 40–50 mm, basin waste 32 mm.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "First-floor en-suite drainage",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three appliances are required in part (b). Pipe sizes and gradients in the scheme are typical values."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q8-original.png",
+          "srcHash": "b1f2472cd88e38d4727bbb0bcb79f3ac",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 8: the printed question with a sketch of an en-suite shower room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q8-stack",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q8-stack.png",
+          "srcHash": "13cc81c7a9f397fe9db36c6e6904f22d",
+          "alt": "SEC model sketch of a single-stack soil and vent pipe serving a shower, basin and WC on the first floor.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q8-c", topicId: "cons-5-6", conceptId: "first-floor-drainage-c",
+    section: "B", questionRef: "2026 HL Q8(c)",
+    stem: "A bedroom with an en-suite bathroom is located on the first floor of a dwelling house.",
+    questionText: "Using notes and freehand sketches, outline one design detail in above-ground pipework that will prevent foul odours entering a dwelling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "notes", kind: "criterion", verbatim: "Design detailing to prevent foul odours entering the building", marks: 6, contextNote: "Notes on one detail. Such as: a deep-seal trap holding a 75 mm water seal; a vented stack; correct branch gradients and diameters; an air admittance valve; anti-siphon traps; avoiding cross-flow; airtight joints tested during construction.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "sketches", kind: "criterion", verbatim: "Sketches", marks: 6, contextNote: "Sketch of the chosen detail, for example a trap with its water seal.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "First-floor en-suite drainage",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three appliances are required in part (b). Pipe sizes and gradients in the scheme are typical values."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q8-original.png",
+          "srcHash": "b1f2472cd88e38d4727bbb0bcb79f3ac",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 8: the printed question with a sketch of an en-suite shower room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q8-traps",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q8-traps.png",
+          "srcHash": "928418a56d72f5c087c200c9def6c102",
+          "alt": "SEC model sketches of a deep-seal trap and a basin trap connected to the stack.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q8-complete", topicId: "cons-5-6", conceptId: "first-floor-drainage-complete",
+    section: "B", questionRef: "2026 HL Q8 — complete",
+    stem: "A bedroom with an en-suite bathroom is located on the first floor of a dwelling house.",
+    questionText: "(a) Discuss two considerations that should be taken into account when planning the drainage layout of a bathroom located on the first floor of a house. (b) Using notes and freehand sketches, show the above-ground pipework necessary for the safe removal of waste from the following appliances: shower; water closet (W.C.); wash basin. Include on your sketch typical sizes of the soil and vent pipe (svp) and the waste pipe from each appliance. (c) Using notes and freehand sketches, outline one design detail in above-ground pipework that will prevent foul odours entering a dwelling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-consideration-1", kind: "criterion", verbatim: "Consideration 1", marks: 8, contextNote: "Point 4 and discussion 4. Such as: place the bathroom above or near ground-floor wet areas for a short run to the SVP; run pipes parallel to joists and limit notching (or use engineered joists).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-consideration-2", kind: "criterion", verbatim: "Consideration 2", marks: 8, contextNote: "A second, different consideration: point 4 and discussion 4. Such as: self-cleansing falls (waste 1:18–1:40, soil 1:40–1:80); acoustic lagging of pipes; access for cleaning; venting to prevent siphonage; deep-seal traps; floor depth for shower traps and tanking.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-notes", kind: "criterion", verbatim: "Typical layout above-ground", marks: 12, contextNote: "Notes on a single-stack layout: 110 mm uPVC SVP vented above the roof (or an air admittance valve); W.C. connected by a short 110 mm branch at 1:40–1:80 with its integral 75 mm seal; shower waste 40–50 mm with a 75 mm deep-seal trap at 1:18–1:40; basin waste (typically 32 mm) with a deep-seal trap; small branches not entering the SVP within 200 mm of the W.C. connection.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-sketch", kind: "criterion", verbatim: "Above-ground pipework necessary for the safe removal of waste", marks: 16, contextNote: "Sketch showing all three appliances connected to the stack.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "b-dimensions", kind: "criterion", verbatim: "Typical dimensions - Any four", marks: 4, contextNote: "Any four typical sizes, such as SVP 110 mm, W.C. branch 110 mm, shower waste 40–50 mm, basin waste 32 mm.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-notes", kind: "criterion", verbatim: "Design detailing to prevent foul odours entering the building", marks: 6, contextNote: "Notes on one detail. Such as: a deep-seal trap holding a 75 mm water seal; a vented stack; correct branch gradients and diameters; an air admittance valve; anti-siphon traps; avoiding cross-flow; airtight joints tested during construction.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-sketches", kind: "criterion", verbatim: "Sketches", marks: 6, contextNote: "Sketch of the chosen detail, for example a trap with its water seal.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q8-a","label":"a","marks":16,"rowIds":["a-consideration-1","a-consideration-2"]},{"sourceCardId":"cons-2026-hl-q8-b","label":"b","marks":32,"rowIds":["b-notes","b-sketch","b-dimensions"]},{"sourceCardId":"cons-2026-hl-q8-c","label":"c","marks":12,"rowIds":["c-notes","c-sketches"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "First-floor en-suite drainage",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three appliances are required in part (b). Pipe sizes and gradients in the scheme are typical values."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q8-original.png",
+          "srcHash": "b1f2472cd88e38d4727bbb0bcb79f3ac",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 8: the printed question with a sketch of an en-suite shower room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q8-stack",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q8-stack.png",
+          "srcHash": "13cc81c7a9f397fe9db36c6e6904f22d",
+          "alt": "SEC model sketch of a single-stack soil and vent pipe serving a shower, basin and WC on the first floor.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-a-wall-roof", topicId: "cons-6-2", conceptId: "thermal-bridging-a-wall-roof",
+    section: "B", questionRef: "2026 HL Q9(a) — wall and roof junction",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at locations circled on the drawing — wall and roof junction",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and roof junction. Such as: wall and roof insulation meeting to keep the envelope continuous; a thermal break at the wallplate (insulated barrier or thermal blocks); cavity insulation continued and the eaves detailed to avoid a cold bridge; no direct structural or steel connections bridging the insulation.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and roof junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-wall-roof",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-wall-roof.png",
+          "srcHash": "7ac4104df62230ead477d9265f98feb4",
+          "alt": "SEC model detail at the wall and roof junction showing continuous wall and roof insulation at the eaves.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-a-window-head", topicId: "cons-6-2", conceptId: "thermal-bridging-a-window-head",
+    section: "B", questionRef: "2026 HL Q9(a) — window head",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at locations circled on the drawing — window head",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window head. Such as: wall insulation continuous with the window frame insulation; thermally broken frame and insulated cavity closers at the opening; insulated lintels or thermal-break details above the window; airtight seals around the frame.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window head detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-window-head",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-window-head.png",
+          "srcHash": "94271c0366dff22e500bcaa8057ed25c",
+          "alt": "SEC model detail at the window head showing the insulated head and cavity closer.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-a-window-cill", topicId: "cons-6-2", conceptId: "thermal-bridging-a-window-cill",
+    section: "B", questionRef: "2026 HL Q9(a) — window cill",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at locations circled on the drawing — window cill",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window cill. Such as: wall insulation and cavity closers continued around the opening; an insulated cill detail or insulation behind the concrete cill; thermally broken frame with insulated perimeter seals; airtight frame-to-wall junction.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window cill detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-window-cill",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-window-cill.png",
+          "srcHash": "28396b3a609cc9d3bcdfb19bde1e763d",
+          "alt": "SEC model detail at the window cill showing insulation continued under the cill.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-a-wall-floor", topicId: "cons-6-2", conceptId: "thermal-bridging-a-wall-floor",
+    section: "B", questionRef: "2026 HL Q9(a) — wall and floor junction",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at locations circled on the drawing — wall and floor junction",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and floor junction. Such as: floor and wall insulation continuous; insulated slab-edge (perimeter) detail; cavity insulation taken down to meet the floor insulation; thermal blocks where the slab abuts the external wall, with no exposed concrete bridging inside to outside.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and floor junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-wall-floor",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-wall-floor.png",
+          "srcHash": "ce8ffeb77a3fb2bd8168ad621f388824",
+          "alt": "SEC model detail at the wall and floor junction showing perimeter insulation meeting the cavity insulation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-a-wall-roof-window-head-window-cill", topicId: "cons-6-2", conceptId: "thermal-bridging-a-wall-roof-window-head-window-cill",
+    section: "B", questionRef: "2026 HL Q9(a) — wall and roof junction, window head, window cill",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at any three locations circled on the drawing — wall and roof junction; window head; window cill",
+    tariffModel: {"kind":"fixed"}, totalMarks: 48,
+    rows: [
+    { id: "a-wall-roof-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and roof junction. Such as: wall and roof insulation meeting to keep the envelope continuous; a thermal break at the wallplate (insulated barrier or thermal blocks); cavity insulation continued and the eaves detailed to avoid a cold bridge; no direct structural or steel connections bridging the insulation.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and roof junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-head-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window head. Such as: wall insulation continuous with the window frame insulation; thermally broken frame and insulated cavity closers at the opening; insulated lintels or thermal-break details above the window; airtight seals around the frame.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-head-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window head detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window cill. Such as: wall insulation and cavity closers continued around the opening; an insulated cill detail or insulation behind the concrete cill; thermally broken frame with insulated perimeter seals; airtight frame-to-wall junction.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window cill detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q9-a-wall-roof","label":"wall and roof junction","marks":16,"rowIds":["a-wall-roof-note","a-wall-roof-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-window-head","label":"window head","marks":16,"rowIds":["a-window-head-note","a-window-head-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-window-cill","label":"window cill","marks":16,"rowIds":["a-window-cill-note","a-window-cill-sketches"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-details",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-details.png",
+          "srcHash": "c546d33e4aa3e4ded261a9b178476e06",
+          "alt": "SEC model details for all four circled locations: eaves, window head, window cill and the wall-floor junction.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-a-wall-roof-window-head-wall-floor", topicId: "cons-6-2", conceptId: "thermal-bridging-a-wall-roof-window-head-wall-floor",
+    section: "B", questionRef: "2026 HL Q9(a) — wall and roof junction, window head, wall and floor junction",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at any three locations circled on the drawing — wall and roof junction; window head; wall and floor junction",
+    tariffModel: {"kind":"fixed"}, totalMarks: 48,
+    rows: [
+    { id: "a-wall-roof-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and roof junction. Such as: wall and roof insulation meeting to keep the envelope continuous; a thermal break at the wallplate (insulated barrier or thermal blocks); cavity insulation continued and the eaves detailed to avoid a cold bridge; no direct structural or steel connections bridging the insulation.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and roof junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-head-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window head. Such as: wall insulation continuous with the window frame insulation; thermally broken frame and insulated cavity closers at the opening; insulated lintels or thermal-break details above the window; airtight seals around the frame.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-head-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window head detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and floor junction. Such as: floor and wall insulation continuous; insulated slab-edge (perimeter) detail; cavity insulation taken down to meet the floor insulation; thermal blocks where the slab abuts the external wall, with no exposed concrete bridging inside to outside.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and floor junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q9-a-wall-roof","label":"wall and roof junction","marks":16,"rowIds":["a-wall-roof-note","a-wall-roof-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-window-head","label":"window head","marks":16,"rowIds":["a-window-head-note","a-window-head-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-wall-floor","label":"wall and floor junction","marks":16,"rowIds":["a-wall-floor-note","a-wall-floor-sketches"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-details",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-details.png",
+          "srcHash": "c546d33e4aa3e4ded261a9b178476e06",
+          "alt": "SEC model details for all four circled locations: eaves, window head, window cill and the wall-floor junction.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-a-wall-roof-window-cill-wall-floor", topicId: "cons-6-2", conceptId: "thermal-bridging-a-wall-roof-window-cill-wall-floor",
+    section: "B", questionRef: "2026 HL Q9(a) — wall and roof junction, window cill, wall and floor junction",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at any three locations circled on the drawing — wall and roof junction; window cill; wall and floor junction",
+    tariffModel: {"kind":"fixed"}, totalMarks: 48,
+    rows: [
+    { id: "a-wall-roof-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and roof junction. Such as: wall and roof insulation meeting to keep the envelope continuous; a thermal break at the wallplate (insulated barrier or thermal blocks); cavity insulation continued and the eaves detailed to avoid a cold bridge; no direct structural or steel connections bridging the insulation.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and roof junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window cill. Such as: wall insulation and cavity closers continued around the opening; an insulated cill detail or insulation behind the concrete cill; thermally broken frame with insulated perimeter seals; airtight frame-to-wall junction.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window cill detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and floor junction. Such as: floor and wall insulation continuous; insulated slab-edge (perimeter) detail; cavity insulation taken down to meet the floor insulation; thermal blocks where the slab abuts the external wall, with no exposed concrete bridging inside to outside.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and floor junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q9-a-wall-roof","label":"wall and roof junction","marks":16,"rowIds":["a-wall-roof-note","a-wall-roof-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-window-cill","label":"window cill","marks":16,"rowIds":["a-window-cill-note","a-window-cill-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-wall-floor","label":"wall and floor junction","marks":16,"rowIds":["a-wall-floor-note","a-wall-floor-sketches"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-details",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-details.png",
+          "srcHash": "c546d33e4aa3e4ded261a9b178476e06",
+          "alt": "SEC model details for all four circled locations: eaves, window head, window cill and the wall-floor junction.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-a-window-head-window-cill-wall-floor", topicId: "cons-6-2", conceptId: "thermal-bridging-a-window-head-window-cill-wall-floor",
+    section: "B", questionRef: "2026 HL Q9(a) — window head, window cill, wall and floor junction",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at any three locations circled on the drawing — window head; window cill; wall and floor junction",
+    tariffModel: {"kind":"fixed"}, totalMarks: 48,
+    rows: [
+    { id: "a-window-head-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window head. Such as: wall insulation continuous with the window frame insulation; thermally broken frame and insulated cavity closers at the opening; insulated lintels or thermal-break details above the window; airtight seals around the frame.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-head-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window head detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window cill. Such as: wall insulation and cavity closers continued around the opening; an insulated cill detail or insulation behind the concrete cill; thermally broken frame with insulated perimeter seals; airtight frame-to-wall junction.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window cill detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and floor junction. Such as: floor and wall insulation continuous; insulated slab-edge (perimeter) detail; cavity insulation taken down to meet the floor insulation; thermal blocks where the slab abuts the external wall, with no exposed concrete bridging inside to outside.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and floor junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q9-a-window-head","label":"window head","marks":16,"rowIds":["a-window-head-note","a-window-head-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-window-cill","label":"window cill","marks":16,"rowIds":["a-window-cill-note","a-window-cill-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-wall-floor","label":"wall and floor junction","marks":16,"rowIds":["a-wall-floor-note","a-wall-floor-sketches"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-details",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-details.png",
+          "srcHash": "c546d33e4aa3e4ded261a9b178476e06",
+          "alt": "SEC model details for all four circled locations: eaves, window head, window cill and the wall-floor junction.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-b", topicId: "cons-6-2", conceptId: "thermal-bridging-b",
+    section: "B", questionRef: "2026 HL Q9(b)",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "Discuss in detail two benefits to the homeowner of eliminating thermal bridging.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "benefit-1", kind: "criterion", verbatim: "Benefit 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: less heat loss at junctions and better thermal comfort; lower heating bills and fuel use.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "benefit-2", kind: "criterion", verbatim: "Benefit 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different benefit: point 3 and discussion 3. Such as: no cold-spot condensation, damp and mould, so a healthier home; lower carbon emissions; a better BER and market value; longer-lasting building materials; a more efficient heating system.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-complete-wall-roof-window-head-window-cill", topicId: "cons-6-2", conceptId: "thermal-bridging-complete-wall-roof-window-head-window-cill",
+    section: "B", questionRef: "2026 HL Q9 — complete: wall and roof junction, window head, window cill",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "(a) Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at any three locations circled on the drawing — wall and roof junction; window head; window cill (b) Discuss in detail two benefits to the homeowner of eliminating thermal bridging.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-wall-roof-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and roof junction. Such as: wall and roof insulation meeting to keep the envelope continuous; a thermal break at the wallplate (insulated barrier or thermal blocks); cavity insulation continued and the eaves detailed to avoid a cold bridge; no direct structural or steel connections bridging the insulation.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and roof junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-head-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window head. Such as: wall insulation continuous with the window frame insulation; thermally broken frame and insulated cavity closers at the opening; insulated lintels or thermal-break details above the window; airtight seals around the frame.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-head-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window head detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window cill. Such as: wall insulation and cavity closers continued around the opening; an insulated cill detail or insulation behind the concrete cill; thermally broken frame with insulated perimeter seals; airtight frame-to-wall junction.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window cill detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-benefit-1", kind: "criterion", verbatim: "Benefit 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: less heat loss at junctions and better thermal comfort; lower heating bills and fuel use.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-benefit-2", kind: "criterion", verbatim: "Benefit 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different benefit: point 3 and discussion 3. Such as: no cold-spot condensation, damp and mould, so a healthier home; lower carbon emissions; a better BER and market value; longer-lasting building materials; a more efficient heating system.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q9-a-wall-roof","label":"(a) wall and roof junction","marks":16,"rowIds":["a-wall-roof-note","a-wall-roof-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-window-head","label":"(a) window head","marks":16,"rowIds":["a-window-head-note","a-window-head-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-window-cill","label":"(a) window cill","marks":16,"rowIds":["a-window-cill-note","a-window-cill-sketches"]},{"sourceCardId":"cons-2026-hl-q9-b","label":"(b)","marks":12,"rowIds":["b-benefit-1","b-benefit-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-details",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-details.png",
+          "srcHash": "c546d33e4aa3e4ded261a9b178476e06",
+          "alt": "SEC model details for all four circled locations: eaves, window head, window cill and the wall-floor junction.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-complete-wall-roof-window-head-wall-floor", topicId: "cons-6-2", conceptId: "thermal-bridging-complete-wall-roof-window-head-wall-floor",
+    section: "B", questionRef: "2026 HL Q9 — complete: wall and roof junction, window head, wall and floor junction",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "(a) Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at any three locations circled on the drawing — wall and roof junction; window head; wall and floor junction (b) Discuss in detail two benefits to the homeowner of eliminating thermal bridging.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-wall-roof-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and roof junction. Such as: wall and roof insulation meeting to keep the envelope continuous; a thermal break at the wallplate (insulated barrier or thermal blocks); cavity insulation continued and the eaves detailed to avoid a cold bridge; no direct structural or steel connections bridging the insulation.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and roof junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-head-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window head. Such as: wall insulation continuous with the window frame insulation; thermally broken frame and insulated cavity closers at the opening; insulated lintels or thermal-break details above the window; airtight seals around the frame.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-head-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window head detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and floor junction. Such as: floor and wall insulation continuous; insulated slab-edge (perimeter) detail; cavity insulation taken down to meet the floor insulation; thermal blocks where the slab abuts the external wall, with no exposed concrete bridging inside to outside.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and floor junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-benefit-1", kind: "criterion", verbatim: "Benefit 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: less heat loss at junctions and better thermal comfort; lower heating bills and fuel use.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-benefit-2", kind: "criterion", verbatim: "Benefit 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different benefit: point 3 and discussion 3. Such as: no cold-spot condensation, damp and mould, so a healthier home; lower carbon emissions; a better BER and market value; longer-lasting building materials; a more efficient heating system.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q9-a-wall-roof","label":"(a) wall and roof junction","marks":16,"rowIds":["a-wall-roof-note","a-wall-roof-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-window-head","label":"(a) window head","marks":16,"rowIds":["a-window-head-note","a-window-head-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-wall-floor","label":"(a) wall and floor junction","marks":16,"rowIds":["a-wall-floor-note","a-wall-floor-sketches"]},{"sourceCardId":"cons-2026-hl-q9-b","label":"(b)","marks":12,"rowIds":["b-benefit-1","b-benefit-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-details",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-details.png",
+          "srcHash": "c546d33e4aa3e4ded261a9b178476e06",
+          "alt": "SEC model details for all four circled locations: eaves, window head, window cill and the wall-floor junction.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-complete-wall-roof-window-cill-wall-floor", topicId: "cons-6-2", conceptId: "thermal-bridging-complete-wall-roof-window-cill-wall-floor",
+    section: "B", questionRef: "2026 HL Q9 — complete: wall and roof junction, window cill, wall and floor junction",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "(a) Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at any three locations circled on the drawing — wall and roof junction; window cill; wall and floor junction (b) Discuss in detail two benefits to the homeowner of eliminating thermal bridging.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-wall-roof-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and roof junction. Such as: wall and roof insulation meeting to keep the envelope continuous; a thermal break at the wallplate (insulated barrier or thermal blocks); cavity insulation continued and the eaves detailed to avoid a cold bridge; no direct structural or steel connections bridging the insulation.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-roof-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and roof junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window cill. Such as: wall insulation and cavity closers continued around the opening; an insulated cill detail or insulation behind the concrete cill; thermally broken frame with insulated perimeter seals; airtight frame-to-wall junction.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window cill detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and floor junction. Such as: floor and wall insulation continuous; insulated slab-edge (perimeter) detail; cavity insulation taken down to meet the floor insulation; thermal blocks where the slab abuts the external wall, with no exposed concrete bridging inside to outside.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and floor junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-benefit-1", kind: "criterion", verbatim: "Benefit 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: less heat loss at junctions and better thermal comfort; lower heating bills and fuel use.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-benefit-2", kind: "criterion", verbatim: "Benefit 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different benefit: point 3 and discussion 3. Such as: no cold-spot condensation, damp and mould, so a healthier home; lower carbon emissions; a better BER and market value; longer-lasting building materials; a more efficient heating system.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q9-a-wall-roof","label":"(a) wall and roof junction","marks":16,"rowIds":["a-wall-roof-note","a-wall-roof-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-window-cill","label":"(a) window cill","marks":16,"rowIds":["a-window-cill-note","a-window-cill-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-wall-floor","label":"(a) wall and floor junction","marks":16,"rowIds":["a-wall-floor-note","a-wall-floor-sketches"]},{"sourceCardId":"cons-2026-hl-q9-b","label":"(b)","marks":12,"rowIds":["b-benefit-1","b-benefit-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-details",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-details.png",
+          "srcHash": "c546d33e4aa3e4ded261a9b178476e06",
+          "alt": "SEC model details for all four circled locations: eaves, window head, window cill and the wall-floor junction.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q9-complete-window-head-window-cill-wall-floor", topicId: "cons-6-2", conceptId: "thermal-bridging-complete-window-head-window-cill-wall-floor",
+    section: "B", questionRef: "2026 HL Q9 — complete: window head, window cill, wall and floor junction",
+    stem: "A continuous thermal envelope is essential to prevent thermal bridging in a dwelling. The drawing shows a vertical section through the external leaf of a bungalow having a 450 mm concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and an insulated concrete ground floor. The window frame is thermally broken.",
+    questionText: "(a) Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at any three locations circled on the drawing — window head; window cill; wall and floor junction (b) Discuss in detail two benefits to the homeowner of eliminating thermal bridging.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-window-head-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window head. Such as: wall insulation continuous with the window frame insulation; thermally broken frame and insulated cavity closers at the opening; insulated lintels or thermal-break details above the window; airtight seals around the frame.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-head-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window head detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled window cill. Such as: wall insulation and cavity closers continued around the opening; an insulated cill detail or insulation behind the concrete cill; thermally broken frame with insulated perimeter seals; airtight frame-to-wall junction.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-window-cill-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the window cill detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-note", kind: "criterion", verbatim: "Note", marks: 8, contextNote: "Notes on best-practice detailing at the circled wall and floor junction. Such as: floor and wall insulation continuous; insulated slab-edge (perimeter) detail; cavity insulation taken down to meet the floor insulation; thermal blocks where the slab abuts the external wall, with no exposed concrete bridging inside to outside.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-wall-floor-sketches", kind: "criterion", verbatim: "Sketches", marks: 8, contextNote: "Sketches of the wall and floor junction detail showing the continuous insulation line.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-benefit-1", kind: "criterion", verbatim: "Benefit 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: less heat loss at junctions and better thermal comfort; lower heating bills and fuel use.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-benefit-2", kind: "criterion", verbatim: "Benefit 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different benefit: point 3 and discussion 3. Such as: no cold-spot condensation, damp and mould, so a healthier home; lower carbon emissions; a better BER and market value; longer-lasting building materials; a more efficient heating system.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q9-a-window-head","label":"(a) window head","marks":16,"rowIds":["a-window-head-note","a-window-head-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-window-cill","label":"(a) window cill","marks":16,"rowIds":["a-window-cill-note","a-window-cill-sketches"]},{"sourceCardId":"cons-2026-hl-q9-a-wall-floor","label":"(a) wall and floor junction","marks":16,"rowIds":["a-wall-floor-note","a-wall-floor-sketches"]},{"sourceCardId":"cons-2026-hl-q9-b","label":"(b)","marks":12,"rowIds":["b-benefit-1","b-benefit-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing thermal bridging",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+          "srcHash": "7bfdc5f2e4c08cd3bf38663e64835e34",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q9-details",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-details.png",
+          "srcHash": "c546d33e4aa3e4ded261a9b178476e06",
+          "alt": "SEC model details for all four circled locations: eaves, window head, window cill and the wall-floor junction.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q10-a", topicId: "cons-6-2", conceptId: "enerphit-retrofit-a",
+    section: "B", questionRef: "2026 HL Q10(a)",
+    stem: "EnerPHit is a certified standard that can be achieved when retrofitting an older house to improve its energy efficiency. The sketch shows a bungalow which has been retrofitted to the EnerPHit Passive House standard.",
+    questionText: "Select any three areas of the building fabric of an older house that would need to be retrofitted to achieve the EnerPHit Passive House standard. Give a reason for each area selected.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "selection-1", kind: "criterion", verbatim: "Selection 1 (1 for selection, 5 for reason)", marks: 6, contextNote: "Area 1 and its reason (1 + 5). Such as: external walls — external wall insulation or pumped cavity bead to cut the U-value and junction thermal bridges.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "selection-2", kind: "criterion", verbatim: "Selection 2 (1 for selection, 5 for reason)", marks: 6, contextNote: "Area 2 and its reason (1 + 5). Such as: ground floor — sub-floor insulation under a new slab; or the roof/attic — 400 mm+ insulation.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "selection-3", kind: "criterion", verbatim: "Selection 3 (1 for selection, 5 for reason)", marks: 6, contextNote: "Area 3 and its reason (1 + 5). Such as: windows and doors — triple-glazed, airtight units; the airtightness layer — sealed membrane and tapes for a low air-change rate; thermal-bridge elimination at junctions. Three distinct areas are needed.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "EnerPHit retrofit",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The three building-fabric areas are an open choice, not a printed list; part (b) retrofits the same three areas chosen in (a)."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-original.png",
+          "srcHash": "713d95932dd3fd255d0c4719d1539c9c",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 10: the printed question with a sketch of a retrofitted bungalow.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q10-areas",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-areas.png",
+          "srcHash": "844b8bb12515c74826fb7c4fe34f1c10",
+          "alt": "SEC 2026 Higher marking scheme page listing building-fabric areas for an EnerPHit retrofit, with a sketch of the insulated envelope.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q10-b", topicId: "cons-6-2", conceptId: "enerphit-retrofit-b",
+    section: "B", questionRef: "2026 HL Q10(b)",
+    stem: "EnerPHit is a certified standard that can be achieved when retrofitting an older house to improve its energy efficiency. The sketch shows a bungalow which has been retrofitted to the EnerPHit Passive House standard.",
+    questionText: "Discuss in detail, using notes and freehand sketches, how you would retrofit each of the areas you specified at 10(a) above, to achieve the EnerPHit Passive House standard.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "retrofit-1", kind: "criterion", verbatim: "Retrofit area 1 (5 for notes, 5 for sketches)", marks: 10, contextNote: "Notes 5 and sketches 5 for the first area. Such as: 200 mm+ EPS or mineral-wool external insulation, adhesive and mechanical fixings, meshed base coat and breathable render, taken below the DPC to the footing.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "retrofit-2", kind: "criterion", verbatim: "Retrofit area 2 (5 for notes, 5 for sketches)", marks: 10, contextNote: "Notes 5 and sketches 5 for the second area. Such as: excavate and relay the floor with radon barrier/DPM, 150–200 mm PIR/EPS and a perimeter upstand meeting the wall insulation; or an airtight membrane under the ceiling joists with 400 mm cross-laid insulation and eaves ventilation.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "retrofit-3", kind: "criterion", verbatim: "Retrofit area 3 (5 for notes, 5 for sketches)", marks: 10, contextNote: "Notes 5 and sketches 5 for the third area. Such as: Passive House certified triple glazing moved out into the insulation line and taped airtight inside and out; or a continuous airtight layer with tapes and grommets at every junction and penetration, needed for MVHR to work.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "EnerPHit retrofit",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The three building-fabric areas are an open choice, not a printed list; part (b) retrofits the same three areas chosen in (a)."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-original.png",
+          "srcHash": "713d95932dd3fd255d0c4719d1539c9c",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 10: the printed question with a sketch of a retrofitted bungalow.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q10-retrofit",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-retrofit.png",
+          "srcHash": "4b37f76dbd2451d21f373c68f556b81b",
+          "alt": "SEC 2026 Higher marking scheme page on retrofitting external walls and the ground floor, with insulated wall and floor sketches.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q10-c", topicId: "cons-6-5", conceptId: "enerphit-retrofit-c",
+    section: "B", questionRef: "2026 HL Q10(c)",
+    stem: "EnerPHit is a certified standard that can be achieved when retrofitting an older house to improve its energy efficiency. The sketch shows a bungalow which has been retrofitted to the EnerPHit Passive House standard.",
+    questionText: "Describe using notes and freehand sketches, one test that could be carried out to determine the efficiency of the retrofit.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "notes", kind: "criterion", verbatim: "Testing method to determine efficiency of the retrofit", marks: 6, contextNote: "Such as the blower door test: a calibrated fan in a temporary door frame, with a manometer, depressurises or pressurises the house to 50 Pa with external openings closed, internal doors open and vents sealed; the airflow needed gives the leakage rate (EnerPHit target 1.0 air change per hour at 50 Pa); leaks are found with thermal imaging or smoke pencils.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "sketches", kind: "criterion", verbatim: "Sketches", marks: 6, contextNote: "Sketch of the test set-up.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "EnerPHit retrofit",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The three building-fabric areas are an open choice, not a printed list; part (b) retrofits the same three areas chosen in (a)."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-original.png",
+          "srcHash": "713d95932dd3fd255d0c4719d1539c9c",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 10: the printed question with a sketch of a retrofitted bungalow.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q10-blower-door",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-blower-door.png",
+          "srcHash": "7878d25f74dd95d35160ff24197397d2",
+          "alt": "SEC model sketch of a blower door test: a fan in a frame fitted to the doorway, with arrows showing air leakage through the house.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q10-complete", topicId: "cons-6-2", conceptId: "enerphit-retrofit-complete",
+    section: "B", questionRef: "2026 HL Q10 — complete",
+    stem: "EnerPHit is a certified standard that can be achieved when retrofitting an older house to improve its energy efficiency. The sketch shows a bungalow which has been retrofitted to the EnerPHit Passive House standard.",
+    questionText: "(a) Select any three areas of the building fabric of an older house that would need to be retrofitted to achieve the EnerPHit Passive House standard. Give a reason for each area selected. (b) Discuss in detail, using notes and freehand sketches, how you would retrofit each of the areas you specified at 10(a) above, to achieve the EnerPHit Passive House standard. (c) Describe using notes and freehand sketches, one test that could be carried out to determine the efficiency of the retrofit.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-selection-1", kind: "criterion", verbatim: "Selection 1 (1 for selection, 5 for reason)", marks: 6, contextNote: "Area 1 and its reason (1 + 5). Such as: external walls — external wall insulation or pumped cavity bead to cut the U-value and junction thermal bridges.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-selection-2", kind: "criterion", verbatim: "Selection 2 (1 for selection, 5 for reason)", marks: 6, contextNote: "Area 2 and its reason (1 + 5). Such as: ground floor — sub-floor insulation under a new slab; or the roof/attic — 400 mm+ insulation.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-selection-3", kind: "criterion", verbatim: "Selection 3 (1 for selection, 5 for reason)", marks: 6, contextNote: "Area 3 and its reason (1 + 5). Such as: windows and doors — triple-glazed, airtight units; the airtightness layer — sealed membrane and tapes for a low air-change rate; thermal-bridge elimination at junctions. Three distinct areas are needed.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-retrofit-1", kind: "criterion", verbatim: "Retrofit area 1 (5 for notes, 5 for sketches)", marks: 10, contextNote: "Notes 5 and sketches 5 for the first area. Such as: 200 mm+ EPS or mineral-wool external insulation, adhesive and mechanical fixings, meshed base coat and breathable render, taken below the DPC to the footing.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-retrofit-2", kind: "criterion", verbatim: "Retrofit area 2 (5 for notes, 5 for sketches)", marks: 10, contextNote: "Notes 5 and sketches 5 for the second area. Such as: excavate and relay the floor with radon barrier/DPM, 150–200 mm PIR/EPS and a perimeter upstand meeting the wall insulation; or an airtight membrane under the ceiling joists with 400 mm cross-laid insulation and eaves ventilation.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-retrofit-3", kind: "criterion", verbatim: "Retrofit area 3 (5 for notes, 5 for sketches)", marks: 10, contextNote: "Notes 5 and sketches 5 for the third area. Such as: Passive House certified triple glazing moved out into the insulation line and taped airtight inside and out; or a continuous airtight layer with tapes and grommets at every junction and penetration, needed for MVHR to work.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "c-notes", kind: "criterion", verbatim: "Testing method to determine efficiency of the retrofit", marks: 6, contextNote: "Such as the blower door test: a calibrated fan in a temporary door frame, with a manometer, depressurises or pressurises the house to 50 Pa with external openings closed, internal doors open and vents sealed; the airflow needed gives the leakage rate (EnerPHit target 1.0 air change per hour at 50 Pa); leaks are found with thermal imaging or smoke pencils.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-sketches", kind: "criterion", verbatim: "Sketches", marks: 6, contextNote: "Sketch of the test set-up.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q10-a","label":"a","marks":18,"rowIds":["a-selection-1","a-selection-2","a-selection-3"]},{"sourceCardId":"cons-2026-hl-q10-b","label":"b","marks":30,"rowIds":["b-retrofit-1","b-retrofit-2","b-retrofit-3"]},{"sourceCardId":"cons-2026-hl-q10-c","label":"c","marks":12,"rowIds":["c-notes","c-sketches"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "EnerPHit retrofit",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The three building-fabric areas are an open choice, not a printed list; part (b) retrofits the same three areas chosen in (a)."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-original.png",
+          "srcHash": "713d95932dd3fd255d0c4719d1539c9c",
+          "alt": "Original SEC 2026 Higher Construction Studies Question 10: the printed question with a sketch of a retrofitted bungalow.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q10-retrofit",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-retrofit.png",
+          "srcHash": "4b37f76dbd2451d21f373c68f556b81b",
+          "alt": "SEC 2026 Higher marking scheme page on retrofitting external walls and the ground floor, with insulated wall and floor sketches.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q10-alt-a", topicId: "cons-6-5", conceptId: "indoor-air-quality-a",
+    section: "B", questionRef: "2026 HL Q10-alt(a)",
+    stem: "“It would be reasonable to assume that ensuring good indoor air quality would be a key factor when designing and constructing buildings. The term sick building syndrome became well known in the 1980’s and still lingers today, though largely associated with poorly air-conditioned offices. However, the health impacts of buildings are still poorly understood and rarely taken into account as a key priority when buildings are designed or renovated. Architects, when specifying building materials are mainly concerned with cost, availability, robustness and aesthetics, not their impacts on health.” Adapted from: Building Materials, Health and Indoor Air Quality: No Breathing Space by Tom Wooley",
+    questionText: "Discuss the above statement in detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "point-1", kind: "criterion", verbatim: "Discussion Point 1", marks: 10, contextNote: "Point 5 and discussion 5. Such as: people spend most of their lives indoors, yet health is often overlooked behind cost, appearance, durability and availability; sick building syndrome symptoms linked to poor ventilation, mould and chemical emissions.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "point-2", kind: "criterion", verbatim: "Discussion Point 2", marks: 10, contextNote: "Point 5 and discussion 5. Such as: more airtight buildings need carefully designed ventilation; VOCs and formaldehyde from paints, adhesives, finishes and composite boards; condensation and mould from poor detailing, especially in Ireland’s damp climate.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "point-3", kind: "criterion", verbatim: "Discussion Point 3", marks: 10, contextNote: "Point 5 and discussion 5. Such as: health impacts are harder to measure and appear later, while healthier materials can cost more; Passive House/EnerPHit ventilation with heat recovery, low-VOC materials, daylight and newer certification standards show a growing focus on wellbeing. Three distinct, well-argued points are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Indoor air quality (alternative Question 10)",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the EnerPHit question."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-alt-original.png",
+          "srcHash": "994deeee12a79739f1949943229a6f57",
+          "alt": "Original SEC 2026 Higher Construction Studies alternative Question 10: the printed quotation on indoor air quality and its two parts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q10-alt-b", topicId: "cons-6-5", conceptId: "indoor-air-quality-b",
+    section: "B", questionRef: "2026 HL Q10-alt(b)",
+    stem: "“It would be reasonable to assume that ensuring good indoor air quality would be a key factor when designing and constructing buildings. The term sick building syndrome became well known in the 1980’s and still lingers today, though largely associated with poorly air-conditioned offices. However, the health impacts of buildings are still poorly understood and rarely taken into account as a key priority when buildings are designed or renovated. Architects, when specifying building materials are mainly concerned with cost, availability, robustness and aesthetics, not their impacts on health.” Adapted from: Building Materials, Health and Indoor Air Quality: No Breathing Space by Tom Wooley",
+    questionText: "Propose three best practice guidelines that would ensure a healthy indoor environment in our homes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "guideline-1", kind: "criterion", verbatim: "Guideline 1", marks: 10, contextNote: "Point 5 and discussion 5. Such as: continuous balanced ventilation (demand-controlled or MVHR) removing moisture and pollutants.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guideline-2", kind: "criterion", verbatim: "Guideline 2", marks: 10, contextNote: "Point 5 and discussion 5. Such as: control moisture at source with vapour control, airtightness and extract ventilation; low-VOC, non-toxic materials.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guideline-3", kind: "criterion", verbatim: "Guideline 3", marks: 10, contextNote: "Point 5 and discussion 5. Such as: good daylight without glare; stable temperatures with insulation and no thermal bridges; acoustic comfort; filtration; occupant control of heating and ventilation. Three distinct guidelines are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Indoor air quality (alternative Question 10)",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the EnerPHit question."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-alt-original.png",
+          "srcHash": "994deeee12a79739f1949943229a6f57",
+          "alt": "Original SEC 2026 Higher Construction Studies alternative Question 10: the printed quotation on indoor air quality and its two parts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    id: "cons-2026-hl-q10-alt-complete", topicId: "cons-6-5", conceptId: "indoor-air-quality-complete",
+    section: "B", questionRef: "2026 HL Q10-alt — complete",
+    stem: "“It would be reasonable to assume that ensuring good indoor air quality would be a key factor when designing and constructing buildings. The term sick building syndrome became well known in the 1980’s and still lingers today, though largely associated with poorly air-conditioned offices. However, the health impacts of buildings are still poorly understood and rarely taken into account as a key priority when buildings are designed or renovated. Architects, when specifying building materials are mainly concerned with cost, availability, robustness and aesthetics, not their impacts on health.” Adapted from: Building Materials, Health and Indoor Air Quality: No Breathing Space by Tom Wooley",
+    questionText: "(a) Discuss the above statement in detail. (b) Propose three best practice guidelines that would ensure a healthy indoor environment in our homes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-point-1", kind: "criterion", verbatim: "Discussion Point 1", marks: 10, contextNote: "Point 5 and discussion 5. Such as: people spend most of their lives indoors, yet health is often overlooked behind cost, appearance, durability and availability; sick building syndrome symptoms linked to poor ventilation, mould and chemical emissions.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "a-point-2", kind: "criterion", verbatim: "Discussion Point 2", marks: 10, contextNote: "Point 5 and discussion 5. Such as: more airtight buildings need carefully designed ventilation; VOCs and formaldehyde from paints, adhesives, finishes and composite boards; condensation and mould from poor detailing, especially in Ireland’s damp climate.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "a-point-3", kind: "criterion", verbatim: "Discussion Point 3", marks: 10, contextNote: "Point 5 and discussion 5. Such as: health impacts are harder to measure and appear later, while healthier materials can cost more; Passive House/EnerPHit ventilation with heat recovery, low-VOC materials, daylight and newer certification standards show a growing focus on wellbeing. Three distinct, well-argued points are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-guideline-1", kind: "criterion", verbatim: "Guideline 1", marks: 10, contextNote: "Point 5 and discussion 5. Such as: continuous balanced ventilation (demand-controlled or MVHR) removing moisture and pollutants.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-guideline-2", kind: "criterion", verbatim: "Guideline 2", marks: 10, contextNote: "Point 5 and discussion 5. Such as: control moisture at source with vapour control, airtightness and extract ventilation; low-VOC, non-toxic materials.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-guideline-3", kind: "criterion", verbatim: "Guideline 3", marks: 10, contextNote: "Point 5 and discussion 5. Such as: good daylight without glare; stable temperatures with insulation and no thermal bridges; acoustic comfort; filtration; occupant control of heating and ventilation. Three distinct guidelines are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2026-hl-q10-alt-a","label":"a","marks":30,"rowIds":["a-point-1","a-point-2","a-point-3"]},{"sourceCardId":"cons-2026-hl-q10-alt-b","label":"b","marks":30,"rowIds":["b-guideline-1","b-guideline-2","b-guideline-3"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Indoor air quality (alternative Question 10)",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the EnerPHit question."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2026-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-alt-original.png",
+          "srcHash": "994deeee12a79739f1949943229a6f57",
+          "alt": "Original SEC 2026 Higher Construction Studies alternative Question 10: the printed quotation on indoor air quality and its two parts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
 ];

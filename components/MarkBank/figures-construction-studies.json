@@ -488,5 +488,257 @@
     "alt": "SEC model sketches of an orbital sander, a paintbrush and a tin of finish.",
     "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2026-HL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q1-original.png",
+    "md5": "6845c8d8d47c2cb70d5b3cc28a73e921",
+    "alt": "Original SEC 2026 Higher Construction Studies Question 1: the printed question with a sketch of a house with a slated cut roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-HL-q1-roof-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q1-roof-section.png",
+    "md5": "ac98aa8809756a2e2907663d1d9e0291",
+    "alt": "SEC model section through one half of a traditional cut roof and cavity external wall: rafters, purlin, strut, collar tie, ceiling joists with layered insulation, eaves ventilation, slates and gutter.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q1-airtightness": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q1-airtightness.png",
+    "md5": "eb25888fdef1cfe1790f89bae059b4a4",
+    "alt": "SEC model eaves detail with an arrow to the airtightness tape sealing the junction of the ceiling and the external wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-original.png",
+    "md5": "f4d719a24e1c1767f062cc3b021a8227",
+    "alt": "Original SEC 2026 Higher Construction Studies Question 2: the printed question with the ground-floor plan of a draft garage conversion.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-HL-q2-entrance-access": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-entrance-access.png",
+    "md5": "36b075b5bf32ee2c76237b8645fa370d",
+    "alt": "SEC 2026 Higher marking scheme page on lifetime-use entrance access, with sketches of a level threshold under a canopy, a recessed drainage channel and a 1000 mm wide entrance door.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q2-bathroom": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-bathroom.png",
+    "md5": "1bf6de1fdcc671196980b5aedb67e830",
+    "alt": "SEC 2026 Higher marking scheme page on a lifetime-use bathroom, with sketches of a Ø1800 mm turning circle in plan and grab rails, WC and basin heights in elevation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q2-kitchen-plan": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q2-kitchen-plan.png",
+    "md5": "f0aa3d4e24ae96eabfe11e251448c199",
+    "alt": "SEC model plan of the garage conversion with wheelchair turning circles marked in the kitchen, dining and living areas.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q3-original.png",
+    "md5": "6da065be11a4513ffbbb7136ca2f72ca",
+    "alt": "Original SEC 2026 Higher Construction Studies Question 3: the printed question with the farmhouse front elevation and ground-floor plan marked A-A and B-B.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-HL-q3-option-1": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q3-option-1.png",
+    "md5": "40d5201e815eaf3859e0730742eb1079",
+    "alt": "SEC model option 1: revised farmhouse ground-floor plan with a rear extension, open-plan kitchen, dining and living area on the south side, and the layout notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q3-option-2": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q3-option-2.png",
+    "md5": "711ef774e4c34964688953acd0c37847",
+    "alt": "SEC model option 2: revised farmhouse ground-floor plan with a glazed south extension for the living area, and the layout notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-original.png",
+    "md5": "5f069d2a2d3fce1a6a490f632831ee43",
+    "alt": "Original SEC 2026 Higher Construction Studies Question 4: the printed question with a sketch of a brick railway keeper’s cottage.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-HL-q4-stone-wall": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
+    "md5": "fe20ec15790428913f389a5cda97b44b",
+    "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q4-cut-roof": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-cut-roof.png",
+    "md5": "46235df0bd69a5a573f653d223871dbb",
+    "alt": "SEC 2026 Higher marking scheme page on upgrading a traditional cut roof, with sketches of spliced rafter repairs and an insulated slated roof at the eaves.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q4-sash-windows": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-sash-windows.png",
+    "md5": "aca0e9475cd8101f47f70fac974e8463",
+    "alt": "SEC 2026 Higher marking scheme page on repairing sliding sash windows, with sketches of a sash window and of secondary glazing.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-original.png",
+    "md5": "5ea6943a56c42fd1913da2bcb830fb49",
+    "alt": "Original SEC 2026 Higher Construction Studies Question 5: the printed question with a cut-away sketch of the timber-frame wall and all the construction and thermal data.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-HL-q5-calculation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-calculation.png",
+    "md5": "335e23c0d72185b549b69181c3e044b3",
+    "alt": "SEC worked solution: the U-value table giving a total resistance of 7.367 and U = 0.136 W/m²°C, and the annual heat-loss cost of €40.27 by two methods.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q5-moisture": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-moisture.png",
+    "md5": "e1a631bcae16c125408594375c2ef2b1",
+    "alt": "SEC model timber-frame wall section with arrows to the outer breather membrane and the inner vapour control layer, with notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q6-original.png",
+    "md5": "ef20925b34780326f5825bf664e1663d",
+    "alt": "Original SEC 2026 Higher Construction Studies Question 6: the printed question with the house elevation and ground-floor plan around a central courtyard.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-HL-q6-low-impact": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q6-low-impact.png",
+    "md5": "d2f31a1cd42accc0d876d8433f07f3f1",
+    "alt": "SEC 2026 Higher marking scheme page on low-environmental-impact features, with sketches of timber-frame and stone walls and of south-facing glazing.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q6-nature": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q6-nature.png",
+    "md5": "2bd61b608a1338afd7ebb9992899c621",
+    "alt": "SEC 2026 Higher marking scheme page on connection with nature, with sketches of large folding glazed doors and of a person working beside a window.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q7-original.png",
+    "md5": "281118767286a692df9ed232c9e58a5b",
+    "alt": "Original SEC 2026 Higher Construction Studies Question 7: the printed question with a sketch of an open riser wooden stairs.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-HL-q7-stairs": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q7-stairs.png",
+    "md5": "21a10593ab53a5090970096b927e1b84",
+    "alt": "SEC model section through an open riser stairs showing newel post, balusters, string and handrail, 100 mm sphere gaps, the 840–900 mm handrail height and the design rules.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q8-original.png",
+    "md5": "b1f2472cd88e38d4727bbb0bcb79f3ac",
+    "alt": "Original SEC 2026 Higher Construction Studies Question 8: the printed question with a sketch of an en-suite shower room.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-HL-q8-stack": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q8-stack.png",
+    "md5": "13cc81c7a9f397fe9db36c6e6904f22d",
+    "alt": "SEC model sketch of a single-stack soil and vent pipe serving a shower, basin and WC on the first floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q8-traps": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q8-traps.png",
+    "md5": "928418a56d72f5c087c200c9def6c102",
+    "alt": "SEC model sketches of a deep-seal trap and a basin trap connected to the stack.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-original.png",
+    "md5": "7bfdc5f2e4c08cd3bf38663e64835e34",
+    "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-HL-q9-wall-roof": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-wall-roof.png",
+    "md5": "7ac4104df62230ead477d9265f98feb4",
+    "alt": "SEC model detail at the wall and roof junction showing continuous wall and roof insulation at the eaves.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q9-window-head": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-window-head.png",
+    "md5": "94271c0366dff22e500bcaa8057ed25c",
+    "alt": "SEC model detail at the window head showing the insulated head and cavity closer.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q9-window-cill": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-window-cill.png",
+    "md5": "28396b3a609cc9d3bcdfb19bde1e763d",
+    "alt": "SEC model detail at the window cill showing insulation continued under the cill.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q9-wall-floor": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-wall-floor.png",
+    "md5": "ce8ffeb77a3fb2bd8168ad621f388824",
+    "alt": "SEC model detail at the wall and floor junction showing perimeter insulation meeting the cavity insulation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q9-details": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-details.png",
+    "md5": "c546d33e4aa3e4ded261a9b178476e06",
+    "alt": "SEC model details for all four circled locations: eaves, window head, window cill and the wall-floor junction.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q10-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-original.png",
+    "md5": "713d95932dd3fd255d0c4719d1539c9c",
+    "alt": "Original SEC 2026 Higher Construction Studies Question 10: the printed question with a sketch of a retrofitted bungalow.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2026-HL-q10-areas": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-areas.png",
+    "md5": "844b8bb12515c74826fb7c4fe34f1c10",
+    "alt": "SEC 2026 Higher marking scheme page listing building-fabric areas for an EnerPHit retrofit, with a sketch of the insulated envelope.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q10-retrofit": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-retrofit.png",
+    "md5": "4b37f76dbd2451d21f373c68f556b81b",
+    "alt": "SEC 2026 Higher marking scheme page on retrofitting external walls and the ground floor, with insulated wall and floor sketches.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q10-blower-door": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-blower-door.png",
+    "md5": "7878d25f74dd95d35160ff24197397d2",
+    "alt": "SEC model sketch of a blower door test: a fan in a frame fitted to the doorway, with arrows showing air leakage through the house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2026-HL-q10-alt-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q10-alt-original.png",
+    "md5": "994deeee12a79739f1949943229a6f57",
+    "alt": "Original SEC 2026 Higher Construction Studies alternative Question 10: the printed quotation on indoor air quality and its two parts.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+    "solution": false
   }
 }
