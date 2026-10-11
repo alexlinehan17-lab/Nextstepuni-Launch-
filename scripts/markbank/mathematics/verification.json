@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher Level Papers 1 and 2, 2026 Ordinary Level Papers 1 and 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1555,
-  "reviewedTasks": 884,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1557,
+  "reviewedTasks": 925,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 265,
+  "targetedRegressionTests": 267,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -370,5 +370,26 @@
     ],
     "coverageBaseline": "1121/3474 asks covered, 0 orphans, 0 excluded, 2353 open",
     "validation": "Deck generation (1,555 built, the same 13 historical rejects), Atlas generation and --check (226 placements), audit --check-reviewed, nine regression files (265/265, including coverage, accessibility and StudyClix placement tests), typecheck and diff whitespace check passed."
+  },
+  "higher2024p1": {
+    "paper": "2024 Higher Level Paper 1",
+    "paperFileid": "LC003ALP100EV.pdf",
+    "schemeFileid": "LC003ALP000EV.pdf",
+    "reviewedAt": "2026-10-11",
+    "independentlyReviewedTasks": 41,
+    "existingRuntimeCardsReviewed": 39,
+    "addedRuntimeCards": [
+      "maths-2024-hl-p1-q8-a-i-ii",
+      "maths-2024-hl-p1-q9-b-i"
+    ],
+    "historicalRejectsRemaining": 12,
+    "targetedRegressionTests": 267,
+    "previousRuntimeIdsRetained": 1555,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 29,
+    "coverageBaseline": "1125/3474 asks covered, 0 orphans, 0 excluded, 2349 open",
+    "validation": "Deck generation (1,557 built, 12 historical rejects), Atlas generation and --check (236 placements), audit --check-reviewed, nine regression files (267/267), typecheck and diff whitespace check passed."
   }
 }

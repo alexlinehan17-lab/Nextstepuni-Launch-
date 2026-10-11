@@ -7229,16 +7229,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q1-a", topicId: "maths-4-2", conceptId: "solve-equation",
     section: "B", questionRef: "2024 HL Paper 1 Q1(a)",
-    questionText: "Solve the following equation for n∈ℕ : n−3 = √3n + 1",
+    questionText: "Solve the following equation for n ∈ ℕ: n − 3 = √(3n + 1)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q1-a-r1", kind: "anyN", verbatim: "Work of merit, for example, indication of squaring\nTrials values of n", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Apply a * for incorrect solution(s) not eliminated. Note: Low partial credit at most for a linear equation. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, indication of squaring\nTrials values of n","Fully correct quadratic (2nd line in solution)","Quadratic factorised\nFully correct substitution into the quadratic formula\nVerifies n = 8 is a solution"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[6],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q1-a.png",
@@ -7259,16 +7272,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q1-b", topicId: "maths-4-1", conceptId: "write-expression-single-fraction-terms-2tt",
     section: "B", questionRef: "2024 HL Paper 1 Q1(b)",
-    questionText: "Write the following expression as a single fraction in terms of t : 4/(2tt + ) 1 − 7 12t",
+    questionText: "Write the following expression as a single fraction in terms of t: 4/(2t + 1) − 7/(12t)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q1-b-r1", kind: "anyN", verbatim: "Work of merit, for example, identifies the numerator or the common denominator", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: Numerator simplified correctly with an incorrect common denominator, where the correct common denominator appears earlier in the solution. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, identifies the numerator or the common denominator","(4(12tt)−7(2tt + 1))/(2tt + 1)(12tt)\n4(12tt)/(2tt + 1)(12tt) − (7(2tt + 1))/(2tt + 1)(12tt)"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[6],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q1-b.png",
@@ -7289,16 +7315,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q1-c", topicId: "maths-4-2", conceptId: "solve-simultaneous-equations-143",
     section: "B", questionRef: "2024 HL Paper 1 Q1(c)",
-    questionText: "Solve the following simultaneous equations for x, y, w∈ℤ: x + 2y = 143 y + 3w = −74 4x + 5w = 4",
+    questionText: "Solve the following simultaneous equations for x, y, w ∈ ℤ: x + 2y = 143; y + 3w = −74; 4x + 5w = 4",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q1-c-r1", kind: "anyN", verbatim: "Work of merit, for example, any correct transposition", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Consider solution as involving 3 steps: 1. Arrives at 2 equations in the same 2 variables (one can be a given equation) 2. Finds 1 equation in 1 variable 3. Finds 3 variables. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, any correct transposition","One step correct","Two steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q1-c.png",
@@ -7319,16 +7358,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q2-a", topicId: "maths-4-4", conceptId: "two-solutions-equation-complex-number-each",
     section: "B", questionRef: "2024 HL Paper 1 Q2(a)",
-    questionText: "Find the two solutions of the following equation in z, where z is a complex number. Give each answer in the form a + bi, where a, b∈ℝ",
+    stem: "In this question, i² = −1.",
+    questionText: "Find the two solutions of the following equation in z, where z is a complex number. Give each answer in the form a + bi, where a, b ∈ ℝ. z² + 12z + 261 = 0",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q2-a-r1", kind: "anyN", verbatim: "Some correct substitution into the quadratic formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Note: Award Mid Partial Credit at most if the solutions are not complex Method 1. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Some correct substitution into the quadratic formula","Fully correct substitution into the quadratic formula","(−12±30ii)/2\nError(s) in finding the coefficient of i from a fully correct substitution in the quadratic formula, otherwise correct Method 2","Some correct substitution of x + y in the in the equation","Equates Reals to zero and equates Imaginaries to zero\nFinds the x value","Correct quadratic equation in y Method 3","Work of merit for example, sum of the roots = −12","x + y + x−y = −12 and (x + i)(x−i) = 261\nFinds the x value","Correct quadratic equation in y"],"perOptionSteps":[2,1,1,1]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q2-a.png",
@@ -7349,16 +7402,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q2-b", topicId: "maths-4-4", conceptId: "moivre-theorem-write-form",
     section: "B", questionRef: "2024 HL Paper 1 Q2(b)",
-    questionText: "Use de Moivre’s theorem to write (1 −√3 i) 9 in the form a+ b, where a, b∈ℝ",
+    stem: "In this question, i² = −1.",
+    questionText: "Use de Moivre’s theorem to write (1 − √3 i)⁹ in the form a + bi, where a, b ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q2-b-r1", kind: "anyN", verbatim: "Work of merit in finding r or 𝜃", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit-1: Answer in the form 512(−1 + 0i). Note: Candidates must engage with polar form or de Moivre’s theorem in order to be awarded any credit. Consider the solution as involving 4 steps: 1. Finds r 2. Finds 𝜃 3. Applies de Moivre’s Theorem 4. Finishes (answer in rectangular form). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in finding r or 𝜃","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q2-b.png",
@@ -7379,16 +7446,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q2-c-i", topicId: "maths-4-4", conceptId: "plot-label-complex-number-cos-isin",
     section: "B", questionRef: "2024 HL Paper 1 Q2(c)(i), (ii)",
-    questionText: "Plot and label the complex number u= 4 (cos 𝜋 6 + isin 𝜋 6) on the diagram, as accurately as possible",
+    stem: "In this question, i² = −1. The point w = −2 + 2i is shown in the Argand diagram below.",
+    questionText: "(i) Plot and label the complex number u = 4(cos π/6 + i sin π/6) on the diagram, as accurately as possible. (ii) The complex number o is 0 + 0i. Find the size of the angle ∠wou. Give your answer in radians.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p1-q2-c-i-r1", kind: "anyN", verbatim: "Work of merit in calculating or plotting u in (i)\nWork of merit in finding any relevant angle in (ii)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Full Credit -1: Apply a * if u is plotted but not labelled; Apply a * for answer in degrees, or answer given as 1.8325 … in part (ii); Apply a * for calculator in incorrect mode. Note: Tolerance for plotting real coordinate: 3 < x ≤ 3.5 Tolerance for plotting imaginary co-ord: 1∙8 ≤ y ≤ 2∙2. Note: If calculator is in an incorrect mode, then the rectangular form of u must be stated to gain any credit for (i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in calculating or plotting u in (i)\nWork of merit in finding any relevant angle in (ii)","One part correct\nWork of merit in both parts","One part correct and work of merit in the other part"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q2-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q2-c-i.png",
@@ -7409,16 +7490,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q3-a", topicId: "maths-5-2", conceptId: "integral-cos",
     section: "B", questionRef: "2024 HL Paper 1 Q3(a)",
-    questionText: "Find the integral: ∫cos 6x d",
+    questionText: "Find the integral: ∫ cos 6x dx",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q3-a-r1", kind: "anyN", verbatim: "Some correct integration, for example, sin x", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit –1: Apply a * if the + C term is missing. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some correct integration, for example, sin x"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q3-a.png",
@@ -7439,16 +7533,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q3-b-i", topicId: "maths-4-1", conceptId: "equation-tangent-graph-point-you-not",
+    id: "maths-2024-hl-p1-q3-b-i", topicId: "maths-5-2", conceptId: "equation-tangent-graph-point-you-not",
     section: "B", questionRef: "2024 HL Paper 1 Q3(b)(i)",
-    questionText: "Find the equation of the tangent to the graph of f at the point where x = 2. You do not need to simplify your answer",
+    stem: "The function f is defined for x ∈ ℝ as: f(x) = 2x³ − 9x² + 5x − 11",
+    questionText: "Find the equation of the tangent to the graph of f at the point where x = 2. You do not need to simplify your answer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q3-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct differentiation; Substitutes x = 2 in f(x); Formula for the equation of a line with some relevant substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: Engagement with Step 3 is required to be awarded credit for Step 4 Consider solution as involving 4 steps: 1. Finds y-value at x = 2 2. Differentiates 2x³−9x² + 5−1 3. Finds f′(2) 4. Finds the equation of the tangent. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, some correct differentiation; Substitutes x = 2 in f(x); Formula for the equation of a line with some relevant substitution","2 steps correct","3 steps correct"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q3-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q3-b-i.png",
@@ -7469,16 +7577,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q3-b-ii", topicId: "maths-2-2", conceptId: "ordinate-point-inflection",
+    id: "maths-2024-hl-p1-q3-b-ii", topicId: "maths-5-2", conceptId: "ordinate-point-inflection",
     section: "B", questionRef: "2024 HL Paper 1 Q3(b)(ii)",
-    questionText: "Find the x co-ordinate of the point of inflection of f",
+    stem: "The function f is defined for x ∈ ℝ as: f(x) = 2x³ − 9x² + 5x − 11",
+    questionText: "Find the x co-ordinate of the point of inflection of f.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q3-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct differentiation of f(x) or f′(x); states f′′(x) = 0\nBrings down derivative from (i)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct differentiation of f(x) or f′(x); states f′′(x) = 0\nBrings down derivative from (i)","Correct f′′(x)\nFinds x values of local maximum and local minimum"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q3-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q3-b-ii.png",
@@ -7499,21 +7621,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q3-c", topicId: "maths-3-1", conceptId: "diagram-shows-curve-line",
+    id: "maths-2024-hl-p1-q3-c", topicId: "maths-5-2", conceptId: "diagram-shows-curve-line",
     section: "B", questionRef: "2024 HL Paper 1 Q3(c)",
-    questionText: "The diagram below shows the curve y = p(x) and the line y = l(x), for 0 ≤ x ≤ 10, x∈ℝ",
+    questionText: "The diagram below shows the curve y = p(x) and the line y = l(x), for 0 ≤ x ≤ 10, x ∈ ℝ. There are two values of x in the domain 0 ≤ x ≤ 10 for which: p′(x) = l′(x), where p′(x) is the derivative of p(x). Use the infomation in the diagram to estimate these two values of x, as accurately as you can. Show your work on the diagram.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p1-q3-c-r1", kind: "anyN", verbatim: "Work of merit, for example, mentions slope of ll = 1/2\nDraws a line parallel to l(x)\nDraws a horizontal line at yy = 1/2\nRelevant work to draw graph of p′(x)\nDraws two parallel tangents to p(x) that are not parallel to l(x)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, mentions slope of ll = 1/2\nDraws a line parallel to l(x)\nDraws a horizontal line at yy = 1/2\nRelevant work to draw graph of p′(x)\nDraws two parallel tangents to p(x) that are not parallel to l(x)","One tangent drawn correctly","Two tangents drawn correctly\nOne tangent drawn correctly and corresponding x value estimated correctly\nGraphs of l′(x) and p′(x) shown on the diagram"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q3-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q3-c.png",
           "srcHash": "0b7d5a748e0a36382ca2c19e1a6ce631",
-          "alt": "The question as printed on the paper — The diagram below shows the curve y = p(x) and the line y = l(x), for 0 ≤ x ≤ 10, x∈ℝ. y y = p(x) 3 2 y = l(x) 1 x 4 2 6 8 10 -1 -2 -3 There are two values of x in the domain 0 ≤ x ≤ 10 for which: p′(x) = l′(x) where… Full card prompt: The diagram below shows the curve y = p(x) and the line y = l(x), for 0 ≤ x ≤ 10, x∈ℝ",
+          "alt": "The question as printed on the paper — The diagram below shows the curve y = p(x) and the line y = l(x), for 0 ≤ x ≤ 10, x∈ℝ. y y = p(x) 3 2 y = l(x) 1 x 4 2 6 8 10 -1 -2 -3 There are two values of x in the domain 0 ≤ x ≤ 10 for which: p′(x) = l′(x) where… Full card prompt: The diagram below shows the curve y = p(x) and the line y = l(x), for 0 ≤ x ≤ 10, x ∈ ℝ. There are two values of x in the domain 0 ≤ x ≤ 10 for which: p′(x) = l′(x), where p′(x) is the derivative of p(x). Use the infomation in the diagram to estimate these two values of x, as accurately as you can. Show your work on the diagram.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7529,16 +7664,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q4-a", topicId: "maths-5-2", conceptId: "differentiate-function-first-principles-respect",
     section: "B", questionRef: "2024 HL Paper 1 Q4(a)",
-    questionText: "Differentiate the following function from first principles, with respect to x: f(x) = x² −7x−10",
+    questionText: "Differentiate the following function from first principles, with respect to x: f(x) = x² − 7x − 10",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q4-a-r1", kind: "anyN", verbatim: "Work of merit, for example f(x + h)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: States lim h = 0 or lim h→∞but otherwise correct. Note: No credit if first principles is not used. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example f(x + h)","f(x + h) expanded correctly\nf(x + h) −f(x) unsimplified","f(x + h) −f(x) = 2hx + h² −7h\nPresents complete RHS without LHS"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q4-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q4-a.png",
@@ -7559,16 +7707,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q4-b", topicId: "maths-5-2", conceptId: "function-defined-6xx-value-derivative-when",
     section: "B", questionRef: "2024 HL Paper 1 Q4(b)",
-    questionText: "The function g(x) is defined for x∈ℝ by: = (6xx + 1)/(xx⁴ + 3) g(x) = 6x + 1 Find the value of g′(−2), the derivative of g(x) when x = −2",
+    questionText: "The function g(x) is defined for x ∈ ℝ by: g(x) = (6x + 1)/(x⁴ + 3). Find the value of g′(−2), the derivative of g(x) when x = −2.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q4-b-r1", kind: "anyN", verbatim: "Work of merit in one step, for example, some correct substitution in to the quotient/product rule", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Answer given as a decimal. Note: Award MPC at most if quotient/product rule is not used Consider the solution as involving 4 steps: 1. Find dddd/dddd 2. Find dddd/dddd 3. Correct substitution in to quotient/product rule 4. Find g′(−2). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in one step, for example, some correct substitution in to the quotient/product rule","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q4-b.png",
@@ -7589,21 +7750,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q4-c", topicId: "maths-5-2", conceptId: "continuous-function-graph-has-local-minimum",
+    id: "maths-2024-hl-p1-q4-c", topicId: "maths-5-1", conceptId: "continuous-function-graph-has-local-minimum",
     section: "B", questionRef: "2024 HL Paper 1 Q4(c)",
-    questionText: "h: ℝ→ℝ is a continuous function. The graph of h(x) has a local minimum at the point (0, 5)",
+    questionText: "h: ℝ → ℝ is a continuous function. The graph of h(x) has a local minimum at the point (0, 5). State whether the following statement is true or false: “The value of h(x) must be at least 5 for all real values of x.” Justify your answer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q4-c-r1", kind: "anyN", verbatim: "Answer correct\nNo answer or incorrect answer, but work of merit in justification, for example, any graph with local mimimum indicated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Answer correct\nNo answer or incorrect answer, but work of merit in justification, for example, any graph with local mimimum indicated"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,4,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q4-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q4-c.png",
           "srcHash": "62375261082569a7ce979ee7302afeea",
-          "alt": "The question as printed on the paper — h: ℝ→ℝ is a continuous function. The graph of h(x) has a local minimum at the point (0, 5). State whether the following statement is true or false: “The value of h(x) must be at least 5 for all real values of x.”… Full card prompt: h: ℝ→ℝ is a continuous function. The graph of h(x) has a local minimum at the point (0, 5)",
+          "alt": "The question as printed on the paper — h: ℝ→ℝ is a continuous function. The graph of h(x) has a local minimum at the point (0, 5). State whether the following statement is true or false: “The value of h(x) must be at least 5 for all real values of x.”… Full card prompt: h: ℝ → ℝ is a continuous function. The graph of h(x) has a local minimum at the point (0, 5). State whether the following statement is true or false: “The value of h(x) must be at least 5 for all real values of x.” Justify your answer.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7619,16 +7793,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q5-a", topicId: "maths-3-1", conceptId: "first-three-terms-arithmetic-sequence-follows",
+    id: "maths-2024-hl-p1-q5-a", topicId: "maths-4-1", conceptId: "first-three-terms-arithmetic-sequence-follows",
     section: "B", questionRef: "2024 HL Paper 1 Q5(a)",
-    questionText: "The first three terms of an arithmetic sequence are as follows, where p∈ℝ: T₁ = 2p + 1 T₂ = 5p−3 T₃ = 6p + 7 Find the value of p",
+    questionText: "The first three terms of an arithmetic sequence are as follows, where p ∈ ℝ: T₁ = 2p + 1; T₂ = 5p − 3; T₃ = 6p + 7. Find the value of p.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q5-a-r1", kind: "anyN", verbatim: "Work of merit in establishing equation, for example, indicates T₂ −T₁\na = 2p + 1\nd = 3p−4 or d = p + 10", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit in establishing equation, for example, indicates T₂ −T₁\na = 2p + 1\nd = 3p−4 or d = p + 10","Correct equation in p established"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q5-a.png",
@@ -7649,16 +7836,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q5-b", topicId: "maths-4-1", conceptId: "g11-7th-11th-terms-geometric-sequence",
     section: "B", questionRef: "2024 HL Paper 1 Q5(b)",
-    questionText: "G7 = 6 and G11 = 3 8 are the 7th and 11th terms of a geometric sequence, respectively",
+    questionText: "G₇ = 6 and G₁₁ = 3/8 are the 7th and 11th terms of a geometric sequence, respectively. Find the two possible values of r, the common ratio of this sequence, where r ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q5-b-r1", kind: "anyN", verbatim: "Work of merit in establishing an equation in r, for example, multiplication by r indicated", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit –1: Apply a * if only 1 value of r is given. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit in establishing an equation in r, for example, multiplication by r indicated"]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q5-b.png",
@@ -7679,16 +7879,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q5-c-i", topicId: "maths-4-1", conceptId: "write-terms",
+    id: "maths-2024-hl-p1-q5-c-i", topicId: "maths-5-2", conceptId: "write-terms",
     section: "B", questionRef: "2024 HL Paper 1 Q5(c)(i), (ii)",
-    questionText: "Write F₁ and F₂ in terms of x",
+    stem: "A sequence of functions F₀, F₁, F₂, … is defined as follows, for x ∈ ℝ, x > 0: F₀ = x²⁰²⁴; for n ≥ 1, the function Fₙ is the derivative of Fₙ₋₁ with respect to x.",
+    questionText: "(i) Write F₁ and F₂ in terms of x. (ii) Find the first value of n for which Fₙ = 0.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 8, 11, 13, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "maths-2024-hl-p1-q5-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, in (i): F₁ or F₂ correct; in (ii): finds F₃, or indicates that derivative of a constant is 0", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 8, two parts for 11, three parts for 13. The full scale runs to 20. Note: Accept correct answer without work in (ii). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":8,"options":["Work of merit, for example, in (i): F₁ or F₂ correct; in (ii): finds F₃, or indicates that derivative of a constant is 0","(i) correct\nWork of merit in both (i) and (ii)","(i) correct and work of merit in (ii)\n(ii) correct"],"perOptionSteps":[8,3,9]} },
     ],
+    mathematicsScale: {"code":"20D","marks":[0,8,11,13,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q5-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q5-c-i.png",
@@ -7709,16 +7923,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q6-a", topicId: "maths-3-1", conceptId: "constant-value-which-factor",
+    id: "maths-2024-hl-p1-q6-a", topicId: "maths-4-1", conceptId: "constant-value-which-factor",
     section: "B", questionRef: "2024 HL Paper 1 Q6(a)",
-    questionText: "h(x) = x² + b−12, where x∈ℝ and b is a constant. Find the value of b for which x−4 is a factor of h(x)",
+    questionText: "h(x) = x² + bx − 12, where x ∈ ℝ and b is a constant. Find the value of b for which x − 4 is a factor of h(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q6-a-r1", kind: "anyN", verbatim: "Work of merit, for example, x = 4\nLong division set up\n(−4)² + b(−4) −12 = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, x = 4\nLong division set up\n(−4)² + b(−4) −12 = 0","Substitutes x = 4 in h(x) = 0\nFinds x + 3 the other factor of h(x)\nh(4) simplified to 4b + 4\nFinds correct remainder in long division\nFinds x = −3, the other root of h(x)\nh(−4) = 0 and finishes correctly"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q6-a.png",
@@ -7739,21 +7966,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q6-b-i", topicId: "maths-3-1", conceptId: "value",
+    id: "maths-2024-hl-p1-q6-b-i", topicId: "maths-3-2", conceptId: "value",
     section: "B", questionRef: "2024 HL Paper 1 Q6(b)(i)",
-    questionText: "Find the value of f(1∙2)",
+    stem: "Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii).",
+    questionText: "Find the value of f(1·2). Give your answer in the form a × 10ⁿ, where a ∈ ℝ, 1 ≤ a < 10, n ∈ ℕ, and a is correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q6-b-i-r1", kind: "anyN", verbatim: "Correct substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit -1: Apply a * if a is not correct to one decimal place. Note: If answer is not in the form, a × 10ⁿ, award Partial Credit at most. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Correct substitution"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q6-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q6-b-i.png",
           "srcHash": "2a272d1d1ba7c8269ae5111e03542f35",
-          "alt": "The question as printed on the paper — Two functions, f(x) and g(x), are defined as follows, for x∈ℝ, x > 0: f(x) = e^(9x) g(x) = ln √x Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii). Find the value of f(1∙2). Give your answer in the form… Full card prompt: Find the value of f(1∙2)",
+          "alt": "The question as printed on the paper — Two functions, f(x) and g(x), are defined as follows, for x∈ℝ, x > 0: f(x) = e^(9x) g(x) = ln √x Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii). Find the value of f(1∙2). Give your answer in the form… Full card prompt: Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii). Find the value of f(1·2). Give your answer in the form a × 10ⁿ, where a ∈ ℝ, 1 ≤ a < 10, n ∈ ℕ, and a is correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7769,21 +8010,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q6-b-ii", topicId: "maths-3-1", conceptId: "value-which-form",
+    id: "maths-2024-hl-p1-q6-b-ii", topicId: "maths-3-2", conceptId: "value-which-form",
     section: "B", questionRef: "2024 HL Paper 1 Q6(b)(ii)",
-    questionText: "Find the value of x for which g(x) = 3∙5. Give your answer in the form e^p, where p∈ℝ",
+    stem: "Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii).",
+    questionText: "Find the value of x for which g(x) = 3·5. Give your answer in the form e^p, where p ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q6-b-ii-r1", kind: "anyN", verbatim: "Sets up log equation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Sets up log equation","Method 1: correct equation in x without logs [line 2]\nMethod 2: correct equation in ln x [line 2]"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q6-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q6-b-ii.png",
           "srcHash": "f059723d4247c3b325cd79402d8672cb",
-          "alt": "The question as printed on the paper — Two functions, f(x) and g(x), are defined as follows, for x∈ℝ, x > 0: f(x) = e^(9x) g(x) = ln √x Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii). Find the value of f(1∙2). Give your answer in the form… Full card prompt: Find the value of x for which g(x) = 3∙5. Give your answer in the form e^p, where p∈ℝ",
+          "alt": "The question as printed on the paper — Two functions, f(x) and g(x), are defined as follows, for x∈ℝ, x > 0: f(x) = e^(9x) g(x) = ln √x Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii). Find the value of f(1∙2). Give your answer in the form… Full card prompt: Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii). Find the value of x for which g(x) = 3·5. Give your answer in the form e^p, where p ∈ ℝ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7799,21 +8055,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q6-b-iii", topicId: "maths-4-1", conceptId: "iii-write-function-terms-its-simplest",
+    id: "maths-2024-hl-p1-q6-b-iii", topicId: "maths-5-1", conceptId: "iii-write-function-terms-its-simplest",
     section: "B", questionRef: "2024 HL Paper 1 Q6(b)(iii)",
-    questionText: "(iii) Write the function g(f(x)) in terms of x, in its simplest form",
+    stem: "Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii).",
+    questionText: "Write the function g(f(x)) in terms of x, in its simplest form.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q6-b-iii-r1", kind: "anyN", verbatim: "Some correct substitution into composite function\nSome correct substitution into f(g(x))\nHigh Writes Partial ln Credit:/√ee⁹^x^x as ln(ee⁹^x^x) 1/2 or equivalent\nff(gg(xx)) = xx 9/2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Some correct substitution into composite function\nSome correct substitution into f(g(x))\nHigh Writes Partial ln Credit:/√ee⁹^x^x as ln(ee⁹^x^x) 1/2 or equivalent\nff(gg(xx)) = xx 9/2"]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q6-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q6-b-iii.png",
           "srcHash": "a174f3163c494428a196270de4f040d6",
-          "alt": "The question as printed on the paper — Two functions, f(x) and g(x), are defined as follows, for x∈ℝ, x > 0: f(x) = e^(9x) g(x) = ln √x Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii). Find the value of f(1∙2). Give your answer in the form… Full card prompt: (iii) Write the function g(f(x)) in terms of x, in its simplest form",
+          "alt": "The question as printed on the paper — Two functions, f(x) and g(x), are defined as follows, for x∈ℝ, x > 0: f(x) = e^(9x) g(x) = ln √x Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii). Find the value of f(1∙2). Give your answer in the form… Full card prompt: Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii). Write the function g(f(x)) in terms of x, in its simplest form.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7829,21 +8100,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q7-a", topicId: "maths-3-3", conceptId: "fiadh-has-gross-annual-salary-000",
     section: "B", questionRef: "2024 HL Paper 1 Q7(a)",
-    questionText: "Fiadh has a gross annual salary of €54 000",
+    questionText: "Fiadh has a gross annual salary of €54 000. She pays income tax at a rate of 20% on the first €40 000 of her salary and at a rate of 40% on the remainder. She has an annual tax credit of €1775. Work out her net annual pay, assuming that there are no other deductions.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q7-a-r1", kind: "anyN", verbatim: "Work of merit in one step", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Consider the solution as involving 3 steps 1. Finds Gross Tax 2. Subtracts Gross Tax from Gross Income 3. Deals with Tax Credit. Note: 3 may happen before 2, that is, Tax Credit may be subtracted from Gross Tax, or added to Gross Income (because Tax Credit is less than Gross Tax). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in one step","One step correct","Two steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q7-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q7-a.png",
           "srcHash": "fb74c1af633fca06b54a9c7369f3449a",
-          "alt": "The question as printed on the paper — Fiadh has a gross annual salary of €54 000. She pays income tax at a rate of 20% on the first €40 000 of her salary and at a rate of 40% on the remainder. She has an annual tax credit of €1775. Work out her net annual… Full card prompt: Fiadh has a gross annual salary of €54 000",
+          "alt": "The question as printed on the paper — Fiadh has a gross annual salary of €54 000. She pays income tax at a rate of 20% on the first €40 000 of her salary and at a rate of 40% on the remainder. She has an annual tax credit of €1775. Work out her net annual… Full card prompt: Fiadh has a gross annual salary of €54 000. She pays income tax at a rate of 20% on the first €40 000 of her salary and at a rate of 40% on the remainder. She has an annual tax credit of €1775. Work out her net annual pay, assuming that there are no other deductions.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7859,21 +8143,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q7-b-i", topicId: "maths-5-2", conceptId: "write-down-present-value-each-their",
+    id: "maths-2024-hl-p1-q7-b-i", topicId: "maths-3-3", conceptId: "write-down-present-value-each-their",
     section: "B", questionRef: "2024 HL Paper 1 Q7(b)(i), (ii)",
-    questionText: "Write down the present value of each of their first three monthly repayments, at the time when they take out the mortgage",
+    stem: "Fiadh and her partner take out a 25-year mortgage with a monthly interest rate of 0·279%. They make equal monthly repayments of €1647·75 at the end of each month. They make the first repayment exactly one month after they take out the mortgage.",
+    questionText: "(i) Write down the present value of each of their first three monthly repayments, at the time when they take out the mortgage. Give each value as a fraction. Do not multiply out any powers. (ii) Work out the amount of money that Fiadh and her partner borrowed for their mortgage. Give your answer correct to the nearest euro.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p1-q7-b-i-r1", kind: "anyN", verbatim: "Work of merit in either part, for example, in (i) writes 0.279% as a decimal; in (ii) some correct substitution into relevant formula", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Full Credit-1: Repayments made at the start of each month, otherwise correct; Rounded incorrectly or no rounding, otherwise correct; (i) not written in the correct form, otherwise correct. Note1: Step 3 is not given if there is more than one error in substitution in Step 2 Note2: If work of merit is awarded in (i), then the same work of merit cannot get credit in (ii). For example, if 0.00279 is awarded WOM in (i), then 0.00279 cannot be awarded WOM in (ii). Note 3: It is acceptable for the solution to part (ii) to appear in the answer box for part (i) Note 4: Accept solutions where two monthly repayments of €1∙7 are being made, that is all correct answers will be doubled 3 Steps 1. Present values of the 1st three monthly repayments 2. Fully correct substitution into geometric/amortisation formula 3. Finds sum of money borrowed. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in either part, for example, in (i) writes 0.279% as a decimal; in (ii) some correct substitution into relevant formula","1 step correct\nWork of merit in both parts","2 steps correct"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q7-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q7-b-i.png",
           "srcHash": "d78922143f433d25d30378d4b9940d57",
-          "alt": "The question as printed on the paper — Fiadh and her partner take out a 25-year mortgage with a monthly interest rate of 0∙279%. They make equal monthly repayments of €1647∙75 at the end of each month. They make the first repayment exactly one month after… Full card prompt: Write down the present value of each of their first three monthly repayments, at the time when they take out the mortgage",
+          "alt": "The question as printed on the paper — Fiadh and her partner take out a 25-year mortgage with a monthly interest rate of 0∙279%. They make equal monthly repayments of €1647∙75 at the end of each month. They make the first repayment exactly one month after… Full card prompt: Fiadh and her partner take out a 25-year mortgage with a monthly interest rate of 0·279%. They make equal monthly repayments of €1647·75 at the end of each month. They make the first repayment exactly one month after they take out the mortgage. (i) Write down the present value of each of their first three monthly repayments, at the time when they take out the mortgage. Give each value as a fraction. Do not multiply out any powers. (ii) Work out the amount of money that Fiadh and her partner borrowed for their mortgage. Give your answer correct to the nearest euro.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7889,21 +8188,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q7-c-i", topicId: "maths-5-2", conceptId: "differentiation-rate-which-amount-money-account",
     section: "B", questionRef: "2024 HL Paper 1 Q7(c)(i)",
-    questionText: "Use differentiation to find the rate at which the amount of money in the account is increasing after 3∙5 years. Give your answer correct to the nearest euro per year",
+    stem: "Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii).",
+    questionText: "Use differentiation to find the rate at which the amount of money in the account is increasing after 3·5 years. Give your answer correct to the nearest euro per year.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q7-c-i-r1", kind: "anyN", verbatim: "Work of merit in differentiation, for example, F′(t) = ae^(0.04t)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: Apply a * for incorrect rounding or no rounding. Note: F′(t) = 5000e^(0.04t) – Award LPC at most. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in differentiation, for example, F′(t) = ae^(0.04t)","Differentiation fully correct\nFF′(tt) = 5000ee⁰^.⁰⁴^t^t/0.04 and finishes correctly"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q7-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q7-c-i.png",
           "srcHash": "50d12b232fdb261f172c95b23ba445c4",
-          "alt": "The question as printed on the paper — Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t∈ℝ, t ≥ 0: F(t) = 5000 e^(0∙04t)… Full card prompt: Use differentiation to find the rate at which the amount of money in the account is increasing after 3∙5 years. Give your answer correct to the nearest euro per year",
+          "alt": "The question as printed on the paper — Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t∈ℝ, t ≥ 0: F(t) = 5000 e^(0∙04t)… Full card prompt: Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii). Use differentiation to find the rate at which the amount of money in the account is increasing after 3·5 years. Give your answer correct to the nearest euro per year.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7919,21 +8232,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q7-c-ii", topicId: "maths-5-2", conceptId: "integration-average-amount-money-account-over",
     section: "B", questionRef: "2024 HL Paper 1 Q7(c)(ii)",
-    questionText: "Use integration to find the average amount of money in the account over the first 5 years. Give your answer correct to the nearest euro",
+    stem: "Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii).",
+    questionText: "Use integration to find the average amount of money in the account over the first 5 years. Give your answer correct to the nearest euro.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q7-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, integration indicated Mid Partial\n2 steps correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. The full scale runs to 10. Full Credit -1: Apply a * for incorrect rounding or no rounding. Note1: Indication of integration is required to be awarded any credit Note2: If 11/55 is omitted, treat step 1 as not fully correct, but all other steps can be accepted as correct 1. 11/55 [∫ 00 55 FF(tt)dddd ] 2. Integrates correctly 3. Subs in limits 4. Evaluates correctly. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, integration indicated Mid Partial\n2 steps correct","3 steps correct"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17,
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q7-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q7-c-ii.png",
           "srcHash": "cad38aa823b2a03115b6b618ec69f744",
-          "alt": "The question as printed on the paper — Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t∈ℝ, t ≥ 0: F(t) = 5000 e^(0∙04t)… Full card prompt: Use integration to find the average amount of money in the account over the first 5 years. Give your answer correct to the nearest euro",
+          "alt": "The question as printed on the paper — Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t∈ℝ, t ≥ 0: F(t) = 5000 e^(0∙04t)… Full card prompt: Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii). Use integration to find the average amount of money in the account over the first 5 years. Give your answer correct to the nearest euro.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7949,21 +8277,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q7-c-iii", topicId: "maths-3-3", conceptId: "iii-work-out-annual-rate-interest",
     section: "B", questionRef: "2024 HL Paper 1 Q7(c)(iii)",
-    questionText: "(iii) Work out the annual rate of interest (AER) for this account. That is, find the percentage increase in the amount of money in the account over the course of one year. Give your answer as a percentage, correct to 2 decimal places",
+    stem: "Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii).",
+    questionText: "Work out the annual rate of interest (AER) for this account. That is, find the percentage increase in the amount of money in the account over the course of one year. Give your answer as a percentage, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q7-c-iii-r1", kind: "anyN", verbatim: "Finds any one term in F(t)\nIdentifies e^(0·04) as the compounding factor", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit -1: Answer given as 0.04, with work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Finds any one term in F(t)\nIdentifies e^(0·04) as the compounding factor"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17,
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q7-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q7-c-iii.png",
           "srcHash": "0c4d2a055c13e015de76d49a40b3d7d3",
-          "alt": "The question as printed on the paper — Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t∈ℝ, t ≥ 0: F(t) = 5000 e^(0∙04t)… Full card prompt: (iii) Work out the annual rate of interest (AER) for this account. That is, find the percentage increase in the amount of money in the account over the course of one year. Give your answer as a percentage, correct to 2 decimal places",
+          "alt": "The question as printed on the paper — Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t∈ℝ, t ≥ 0: F(t) = 5000 e^(0∙04t)… Full card prompt: Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii). Work out the annual rate of interest (AER) for this account. That is, find the percentage increase in the amount of money in the account over the course of one year. Give your answer as a percentage, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7979,21 +8322,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q8-b", topicId: "maths-5-2", conceptId: "work-out-maximum-minimum-daily-sales",
+    id: "maths-2024-hl-p1-q8-b", topicId: "maths-2-3", conceptId: "work-out-maximum-minimum-daily-sales",
     section: "B", questionRef: "2024 HL Paper 1 Q8(b)",
-    questionText: "Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation",
+    stem: "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians.",
+    questionText: "Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q8-b-r1", kind: "anyN", verbatim: "Work of merit, for example, mentions max value of c = 1\nIndicates + 19 or −19\nCorrect indication of 21 or 19 on the graph\nSome correct differentiation of S(t)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit -1: Answers given as 2 and 40, but doesn’t indicate which is maximum and which is minimum; Maximum = 2 and Minimum = 40. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, mentions max value of c = 1\nIndicates + 19 or −19\nCorrect indication of 21 or 19 on the graph\nSome correct differentiation of S(t)","Max or min correct\nFinds the values of t for which S′(t) = 0\nIndicates ±19"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q8-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q8-b.png",
           "srcHash": "f3468bbbb122dc66c20b35a27dd1ddaf",
-          "alt": "The question as printed on the paper — Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation. Maximum = ________________ Minimum = ________________ A different function, C(t), can also be used to… Full card prompt: Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation",
+          "alt": "The question as printed on the paper — Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation. Maximum = ________________ Minimum = ________________ A different function, C(t), can also be used to… Full card prompt: The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8009,21 +8366,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q8-c", topicId: "maths-5-2", conceptId: "value-which-same-number-daily-sales",
+    id: "maths-2024-hl-p1-q8-c", topicId: "maths-4-2", conceptId: "value-which-same-number-daily-sales",
     section: "B", questionRef: "2024 HL Paper 1 Q8(c)",
-    questionText: "Find the value of t for which S(t) and C(t) give the same number of daily sales",
+    stem: "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians.",
+    questionText: "Find the value of t for which S(t) and C(t) give the same number of daily sales.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q8-c-r1", kind: "anyN", verbatim: "Work of merit in setting up equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in setting up equation","−2 ∙4 + 0 ∙03t = 0"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q8-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q8-c.png",
           "srcHash": "b4f4802dc463a5ff7cd18a0a56484731",
-          "alt": "The question as printed on the paper — Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation. Maximum = ________________ Minimum = ________________ A different function, C(t), can also be used to… Full card prompt: Find the value of t for which S(t) and C(t) give the same number of daily sales",
+          "alt": "The question as printed on the paper — Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation. Maximum = ________________ Minimum = ________________ A different function, C(t), can also be used to… Full card prompt: The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. Find the value of t for which S(t) and C(t) give the same number of daily sales.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8039,21 +8410,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q8-d", topicId: "maths-5-2", conceptId: "graphs-three-functions-shown-not-scale",
+    id: "maths-2024-hl-p1-q8-d", topicId: "maths-5-1", conceptId: "graphs-three-functions-shown-not-scale",
     section: "B", questionRef: "2024 HL Paper 1 Q8(d)",
-    questionText: "The graphs, J, K, and L, of three functions are shown below (not to scale)",
+    stem: "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians.",
+    questionText: "The graphs, J, K, and L, of three functions are shown below (not to scale). One of these graphs shows the function C(t) over a number of years, where C(t) = S(t) − 2·4 + 0·03t. Write down which graph this is. Justify your answer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p1-q8-d-r1", kind: "anyN", verbatim: "Correct graph selected\nWork of merit in justification, for example, connects function type with graphs", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8. The full scale runs to 15. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Correct graph selected\nWork of merit in justification, for example, connects function type with graphs","Justification for the graph increasing over time, but doesn’t justify the wave nature of the graph\nJustification for the wave nature of the graph but doesn’t justify the increase over time"],"perOptionSteps":[6,9]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q8-d",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q8-d.png",
           "srcHash": "2a16c8252d8a09f9d204e9a21e25800f",
-          "alt": "The question as printed on the paper — The graphs, J, K, and L, of three functions are shown below (not to scale). Graph J Graph K Graph L t t t One of these graphs shows the function C(t) over a number of years, where C(t) = S(t) −2∙4 + 0∙03t. Write down… Full card prompt: The graphs, J, K, and L, of three functions are shown below (not to scale)",
+          "alt": "The question as printed on the paper — The graphs, J, K, and L, of three functions are shown below (not to scale). Graph J Graph K Graph L t t t One of these graphs shows the function C(t) over a number of years, where C(t) = S(t) −2∙4 + 0∙03t. Write down… Full card prompt: The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. The graphs, J, K, and L, of three functions are shown below (not to scale). One of these graphs shows the function C(t) over a number of years, where C(t) = S(t) − 2·4 + 0·03t. Write down which graph this is. Justify your answer.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8069,21 +8455,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q8-e", topicId: "maths-5-2", conceptId: "derivative-given-365-sin-365",
     section: "B", questionRef: "2024 HL Paper 1 Q8(e)",
-    questionText: "The derivative of C(t) is given by C′(t) = 0∙03 − 38𝜋 365 sin ( 2𝜋 365)",
+    stem: "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians.",
+    questionText: "The derivative of C(t) is given by C′(t) = 0·03 − (38π/365) sin(2πt/365). Find the value of t that gives the first local maximum of C, that is, the first time that C′(t) = 0. Give your answer correct to the nearest day.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q8-e-r1", kind: "anyN", verbatim: "Work of merit, for example, sets up equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: Apply a * for calculator in incorrect mode. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, sets up equation","0·03(365)/38𝜋 = sin ( 2𝜋/365)"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q8-e",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q8-e.png",
           "srcHash": "03552721994044d13d3eed03dcb31a79",
-          "alt": "The question as printed on the paper — Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation. Maximum = ________________ Minimum = ________________ A different function, C(t), can also be used to… Full card prompt: The derivative of C(t) is given by C′(t) = 0∙03 − 38𝜋 365 sin ( 2𝜋 365)",
+          "alt": "The question as printed on the paper — Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation. Maximum = ________________ Minimum = ________________ A different function, C(t), can also be used to… Full card prompt: The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. The derivative of C(t) is given by C′(t) = 0·03 − (38π/365) sin(2πt/365). Find the value of t that gives the first local maximum of C, that is, the first time that C′(t) = 0. Give your answer correct to the nearest day.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8099,21 +8500,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q9-a", topicId: "maths-3-4", conceptId: "value-volume-cap-when-terms",
     section: "B", questionRef: "2024 HL Paper 1 Q9(a)",
-    questionText: "Find the value of C, the volume of the cap, when R = 13 and k = 4. Give your answer in terms of 𝜋",
+    stem: "A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: C = (πk²/3)(3R − k). Here, C is the volume of the cap and k is the height of the cap, with 0 < k ≤ R.",
+    questionText: "Find the value of C, the volume of the cap, when R = 13 and k = 4. Give your answer in terms of π.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q9-a-r1", kind: "anyN", verbatim: "Some correct substitution into the given formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some correct substitution into the given formula","Fully correct substitution"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q9-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-a.png",
           "srcHash": "e5e50045e301afec2459c68f549e1dcc",
-          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the… Full card prompt: Find the value of C, the volume of the cap, when R = 13 and k = 4. Give your answer in terms of 𝜋",
+          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the… Full card prompt: A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: C = (πk²/3)(3R − k). Here, C is the volume of the cap and k is the height of the cap, with 0 < k ≤ R. Find the value of C, the volume of the cap, when R = 13 and k = 4. Give your answer in terms of π.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8129,21 +8544,85 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-q9-b-i", topicId: "maths-4-2", conceptId: "expression",
+    section: "B", questionRef: "2024 HL Paper 1 Q9(b)(i), (ii)",
+    stem: "A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: C = (πk²/3)(3R − k). Here, C is the volume of the cap and k is the height of the cap, with 0 < k ≤ R. A different sphere has a radius of 8 units and a cap with a height of y units, with 0 < y ≤ 8. The volume of this cap is (36πy) units³.",
+    questionText: "(i) Use this, and the expression for C above, to show that: (y/3)(24 − y) = 36. (ii) Multiply out and solve the equation (y/3)(24 − y) = 36 to find the height of this cap.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-q9-b-i-solution-1", kind: "point", verbatim: "(y − 6)(y − 18) = 0", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-q9-b-i-solution-2", kind: "point", verbatim: "Ans: y = 6 [as y ≤ 8]", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-q9-b-i-solution-3", kind: "point", verbatim: "Work of merit in one part, for example, some relevant substitution in C", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-q9-b-i-solution-4", kind: "point", verbatim: "Part (i) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-q9-b-i-solution-5", kind: "point", verbatim: "Part (ii) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-q9-b-i-solution-6", kind: "point", verbatim: "y = 18 not eliminated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-HL-ask-p1-q9-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-b-i.png",
+          "srcHash": "4ef7db1d899ad0bee768fa68bf43f43f",
+          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the… Full card prompt: A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: C = (πk²/3)(3R − k). Here, C is the volume of the cap and k is the height of the cap, with 0 < k ≤ R. A different sphere has a radius of 8 units and a cap with a height of y units, with 0 < y ≤ 8. The volume of this cap is (36πy) units³. (i) Use this, and the expression for C above, to show that: (y/3)(24 − y) = 36. (ii) Multiply out and solve the equation (y/3)(24 − y) = 36 to find the height of this cap.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-HL-paper-p023-i1",
+          "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p023-i1.png",
+          "srcHash": "9540565b07a31b5961e38a640634cf95",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(b)(i), typeset as the State Examinations Commission set it. It reads: CC = 𝜋(yy)²/3 (3(8) − yy) = 36𝜋 [ yy²/3 (24 − yy) = 36yy] yy/3 (24 − yy) = 36 yy/3 (24 − yy) = 36 24y−y² = 108 y² −24y + 108 = 0 (y−6)(y−18) = 0 y = 6, y = 18 Ans: y = 6 [as y ≤ 8]",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q9-c", topicId: "maths-3-4", conceptId: "value-when-volume-hemisphere-litres-correct",
     section: "B", questionRef: "2024 HL Paper 1 Q9(c)",
-    questionText: "Find the value of x when the volume of the hemisphere is 3 litres. Give your answer correct to 1 decimal place",
+    stem: "A hemisphere has a diameter of x cm. V(x), the volume of this hemisphere in cm³, is given by: V(x) = (π/12)x³.",
+    questionText: "Find the value of x when the volume of the hemisphere is 3 litres. Give your answer correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p1-q9-c-r1", kind: "anyN", verbatim: "Work of merit in setting up the equation, states 3 litres = 3000 cm³", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8. The full scale runs to 15. Full Credit-1: Apply a * for incorrect rounding or no rounding. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Work of merit in setting up the equation, states 3 litres = 3000 cm³","Finds x³\nIncorrect volume used but finishes correctly"],"perOptionSteps":[6,9]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q9-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-c.png",
           "srcHash": "67b9ee405327be953707287742bfc79e",
-          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the… Full card prompt: Find the value of x when the volume of the hemisphere is 3 litres. Give your answer correct to 1 decimal place",
+          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the… Full card prompt: A hemisphere has a diameter of x cm. V(x), the volume of this hemisphere in cm³, is given by: V(x) = (π/12)x³. Find the value of x when the volume of the hemisphere is 3 litres. Give your answer correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8159,21 +8638,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q9-d", topicId: "maths-3-4", conceptId: "volume-hemisphere-increasing-constant-rate-450",
+    id: "maths-2024-hl-p1-q9-d", topicId: "maths-5-2", conceptId: "volume-hemisphere-increasing-constant-rate-450",
     section: "B", questionRef: "2024 HL Paper 1 Q9(d)",
-    questionText: "The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second",
+    stem: "A hemisphere has a diameter of x cm. V(x), the volume of this hemisphere in cm³, is given by: V(x) = (π/12)x³.",
+    questionText: "The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second. Find the rate at which the diameter (x) of the hemisphere is increasing with respect to time, when x = 20 cm. Give your answer in cm per second, correct to 1 decimal place. Remember that the volume of the hemisphere is V(x) = (π/12)x³.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q9-d-r1", kind: "anyN", verbatim: "States a relevant derivative\nWork of merit in finding a relevant derivative\nSome correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Incorrect rounding or no rounding. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["States a relevant derivative\nWork of merit in finding a relevant derivative\nSome correct differentiation","Any two of the following: o dddd/dddd = 450 d 𝜋 o 4 x² d = o dddd/dddd = dddd/dddd × dddd/dddd or equivalent","Finds dddd/dddd = 4/𝜋xx2 × 450"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23,
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q9-d",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-d.png",
           "srcHash": "52fb4cfbea066d451a6d44155679b465",
-          "alt": "The question as printed on the paper — The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second. Find the rate at which the diameter (x) of the hemisphere is increasing with respect to time, when x = 20 cm. Give your answer in cm… Full card prompt: The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second",
+          "alt": "The question as printed on the paper — The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second. Find the rate at which the diameter (x) of the hemisphere is increasing with respect to time, when x = 20 cm. Give your answer in cm… Full card prompt: A hemisphere has a diameter of x cm. V(x), the volume of this hemisphere in cm³, is given by: V(x) = (π/12)x³. The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second. Find the rate at which the diameter (x) of the hemisphere is increasing with respect to time, when x = 20 cm. Give your answer in cm per second, correct to 1 decimal place. Remember that the volume of the hemisphere is V(x) = (π/12)x³.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8189,21 +8683,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q9-e", topicId: "maths-3-4", conceptId: "cone-has-radius-height-curved-surface",
+    id: "maths-2024-hl-p1-q9-e", topicId: "maths-4-1", conceptId: "cone-has-radius-height-curved-surface",
     section: "B", questionRef: "2024 HL Paper 1 Q9(e)",
-    questionText: "A cone has a radius of r cm and a height of h cm. The curved surface area of the cone, S, can be written as: S = 𝜋√r₂ + h² Rearrange this to write h in terms of S, r, and 𝜋",
+    questionText: "A cone has a radius of r cm and a height of h cm. The curved surface area of the cone, S, can be written as: S = πr√(r² + h²). Rearrange this to write h in terms of S, r, and π. Give your answer in the form √(S² − arⁿ)/(br), where a, b, and n are constants.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q9-e-r1", kind: "anyN", verbatim: "Any work of merit, for example, squares both sides or divides both sides by 𝜋", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Any work of merit, for example, squares both sides or divides both sides by 𝜋","Writes h² in terms of S, 𝜋 and r."],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q9-e",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-e.png",
           "srcHash": "1b2be293b45a31327f7412e58ce4fc5b",
-          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the… Full card prompt: A cone has a radius of r cm and a height of h cm. The curved surface area of the cone, S, can be written as: S = 𝜋√r₂ + h² Rearrange this to write h in terms of S, r, and 𝜋",
+          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the… Full card prompt: A cone has a radius of r cm and a height of h cm. The curved surface area of the cone, S, can be written as: S = πr√(r² + h²). Rearrange this to write h in terms of S, r, and π. Give your answer in the form √(S² − arⁿ)/(br), where a, b, and n are constants.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8219,21 +8726,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q10-a-i", topicId: "maths-3-1", conceptId: "estimate-height-water-spinach-plant-after",
+    id: "maths-2024-hl-p1-q10-a-i", topicId: "maths-5-1", conceptId: "estimate-height-water-spinach-plant-after",
     section: "B", questionRef: "2024 HL Paper 1 Q10(a)(i)",
-    questionText: "Use W(x) to estimate the height of a water spinach plant after 15 days. Give your answer correct to the nearest mm",
+    stem: "A company grows and sells plants. The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0·667x + 1·5x² − 0·025x³. Here, x is the number of days after the plant starts to grow, where 0 ≤ x ≤ 35, x ∈ ℝ.",
+    questionText: "Use W(x) to estimate the height of a water spinach plant after 15 days. Give your answer correct to the nearest mm.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q10-a-i-r1", kind: "anyN", verbatim: "Some correct substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit -1: Incorrect rounding or no rounding. Note: Accept correct answer without work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some correct substitution"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-a-i.png",
           "srcHash": "6ae61017d32e9902dc673fcd925d2c75",
-          "alt": "The question as printed on the paper — The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0∙667 x + 1∙5 x² − 0∙025 x³ Here, x is the number of days… Full card prompt: Use W(x) to estimate the height of a water spinach plant after 15 days. Give your answer correct to the nearest mm",
+          "alt": "The question as printed on the paper — The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0∙667 x + 1∙5 x² − 0∙025 x³ Here, x is the number of days… Full card prompt: A company grows and sells plants. The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0·667x + 1·5x² − 0·025x³. Here, x is the number of days after the plant starts to grow, where 0 ≤ x ≤ 35, x ∈ ℝ. Use W(x) to estimate the height of a water spinach plant after 15 days. Give your answer correct to the nearest mm.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8249,21 +8770,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q10-a-ii", topicId: "maths-5-2", conceptId: "write-down-derivative",
     section: "B", questionRef: "2024 HL Paper 1 Q10(a)(ii)",
-    questionText: "Write down W′(x), the derivative of W(x)",
+    stem: "A company grows and sells plants. The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0·667x + 1·5x² − 0·025x³. Here, x is the number of days after the plant starts to grow, where 0 ≤ x ≤ 35, x ∈ ℝ.",
+    questionText: "Write down W′(x), the derivative of W(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q10-a-ii-r1", kind: "anyN", verbatim: "Any term correctly differentiated", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Any term correctly differentiated"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-a-ii.png",
           "srcHash": "471465aa6bdd99d39a9b638702d31f42",
-          "alt": "The question as printed on the paper — The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0∙667 x + 1∙5 x² − 0∙025 x³ Here, x is the number of days… Full card prompt: Write down W′(x), the derivative of W(x)",
+          "alt": "The question as printed on the paper — The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0∙667 x + 1∙5 x² − 0∙025 x³ Here, x is the number of days… Full card prompt: A company grows and sells plants. The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0·667x + 1·5x² − 0·025x³. Here, x is the number of days after the plant starts to grow, where 0 ≤ x ≤ 35, x ∈ ℝ. Write down W′(x), the derivative of W(x).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8279,21 +8814,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q10-b", topicId: "maths-5-1", conceptId: "height-different-plant-can-modelled-function",
+    id: "maths-2024-hl-p1-q10-b", topicId: "maths-4-3", conceptId: "height-different-plant-can-modelled-function",
     section: "B", questionRef: "2024 HL Paper 1 Q10(b)",
-    questionText: "The height of a different plant can be modelled by the function P(x), where x is again the number of days after the plant starts to grow",
+    stem: "A company grows and sells plants.",
+    questionText: "The height of a different plant can be modelled by the function P(x), where x is again the number of days after the plant starts to grow. The derivative of this function is: P′(x) = 1·1 + 2·73x − 0·078x². Find the range of values of x for which P′(x) > 24. In your answer, give each value correct to the nearest whole number.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q10-b-r1", kind: "anyN", verbatim: "Inequality correctly formulated\nTrials one value of x", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Incorrect rounding or no rounding. Note: For a linear inequality, award low partial credit at most. Note: Accept set of natural numbers listed: {14, 15, 16, 17, 18, 19, 20, 21}. Note: Accept correct solution set for Full Credit if 13 and 14 and 21 and 22 have been trialled (so end points have been established). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Inequality correctly formulated\nTrials one value of x","Quadratic formula fully substituted\nTrials 13 and 14\nTrials 21 and 22","Roots of quadratic found\nTrials 13 and 14 and 21 and 22\nSolves P′(x) > 0 correctly"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-b.png",
           "srcHash": "4a55c3a99d53c831ed4393d8de6fb09b",
-          "alt": "The question as printed on the paper — The height of a different plant can be modelled by the function P(x), where x is again the number of days after the plant starts to grow. The derivative of this function is: P′(x) = 1∙1 + 2∙73 x − 0∙078 x² Find the… Full card prompt: The height of a different plant can be modelled by the function P(x), where x is again the number of days after the plant starts to grow",
+          "alt": "The question as printed on the paper — The height of a different plant can be modelled by the function P(x), where x is again the number of days after the plant starts to grow. The derivative of this function is: P′(x) = 1∙1 + 2∙73 x − 0∙078 x² Find the… Full card prompt: A company grows and sells plants. The height of a different plant can be modelled by the function P(x), where x is again the number of days after the plant starts to grow. The derivative of this function is: P′(x) = 1·1 + 2·73x − 0·078x². Find the range of values of x for which P′(x) > 24. In your answer, give each value correct to the nearest whole number.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8309,16 +8858,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q10-c-i", topicId: "maths-5-2", conceptId: "integration-work-out-area-logo",
     section: "B", questionRef: "2024 HL Paper 1 Q10(c)(i)",
-    questionText: "Use integration to work out the area of the logo",
+    stem: "A company grows and sells plants. The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions c, s, and k: c(x) = x², for −1 ≤ x ≤ 1, x ∈ ℝ; s(x) = 2x − x², for 0 ≤ x ≤ 1, x ∈ ℝ; k(x) is the image of s(x) under axial symmetry in the y-axis.",
+    questionText: "Use integration to work out the area of the logo. Hint: find the area of the logo in the first quadrant, and then double it.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p1-q10-c-i-r1", kind: "anyN", verbatim: "Integration indicated\nSome correct integration", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Full Credit-1: Finds the correct area in the 1st quadrant, but does not double the answer. Note: 3 steps: 1. Integrate s and c 2. Combine 3. Evaluate with limits They may do these in a different order, e.g., combine s and c and then integrate this function. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Integration indicated\nSome correct integration","1 Step correct\n1 relevant area calculated","2 relevant areas calculated correctly\nStep 1 correct and one relevant area calculated\n2 steps correct"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-c-i.png",
@@ -8339,16 +8902,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q10-c-ii", topicId: "maths-3-1", conceptId: "function-can-written-form-constants-value",
+    id: "maths-2024-hl-p1-q10-c-ii", topicId: "maths-5-1", conceptId: "function-can-written-form-constants-value",
     section: "B", questionRef: "2024 HL Paper 1 Q10(c)(ii)",
-    questionText: "The function k can be written in the form k(x) = −x2 + b+ c, where b, c∈ℝ are constants. Find the value of b and the value of c",
+    stem: "A company grows and sells plants. The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions c, s, and k: c(x) = x², for −1 ≤ x ≤ 1, x ∈ ℝ; s(x) = 2x − x², for 0 ≤ x ≤ 1, x ∈ ℝ; k(x) is the image of s(x) under axial symmetry in the y-axis.",
+    questionText: "The function k can be written in the form k(x) = −x² + bx + c, where b, c ∈ ℝ are constants. Find the value of b and the value of c. Remember that k is the image of s under axial symmetry in the y-axis.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p1-q10-c-ii-r1", kind: "anyN", verbatim: "Some work of merit, for example references s(−x)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8. The full scale runs to 15. Full Credit -1: Apply a * if k(x) is correct but b and c are not explicitly identified. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Some work of merit, for example references s(−x)","Either b or c correct"],"perOptionSteps":[6,9]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q10-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-c-ii.png",
@@ -8369,21 +8947,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q10-d", topicId: "maths-3-1", conceptId: "part-constants",
+    id: "maths-2024-hl-p1-q10-d", topicId: "maths-4-1", conceptId: "part-constants",
     section: "B", questionRef: "2024 HL Paper 1 Q10(d)",
-    questionText: "In this part, p and r are constants, with p, r∈ℝ and 0 < r < 0∙9 p",
+    stem: "A company grows and sells plants.",
+    questionText: "In this part, p and r are constants, with p, r ∈ ℝ and 0 < r < 0·9p. The company sells bags of plant food. The usual price of one bag is €p. In a sale, the customer can choose to pay using either Option 1 or Option 2, as follows: Option 1: the usual price reduced by 10%, and then reduced by a further €r; Option 2: the usual price reduced by €r, and then this new price reduced by 10%. Which option (1 or 2), if either, is cheaper? Write the price for each option (1 and 2) in terms of p and r, to support your answer. Tick one box only: Option 1; Option 2; It depends on the value of p and of r.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q10-d-r1", kind: "anyN", verbatim: "Answer correct\nWork of merit in writing one option in terms of p and r\nWork of merit in evaluating answer for one set of values of p and r", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Checking for particular values of p and r is given at most Low Partial Credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Answer correct\nWork of merit in writing one option in terms of p and r\nWork of merit in evaluating answer for one set of values of p and r","One option correctly written in terms of p and r","Both options in terms of p and r, but incorrect or no option picked"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q10-d",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-d.png",
           "srcHash": "113f2ddc55fa216a5b8954e8b3582675",
-          "alt": "The question as printed on the paper — A company grows and sells plants. In this part, p and r are constants, with p, r∈ℝ and 0 < r < 0∙9 p. The company sells bags of plant food. The usual price of one bag is € p. In a sale, the customer can choose to pay… Full card prompt: In this part, p and r are constants, with p, r∈ℝ and 0 < r < 0∙9 p",
+          "alt": "The question as printed on the paper — A company grows and sells plants. In this part, p and r are constants, with p, r∈ℝ and 0 < r < 0∙9 p. The company sells bags of plant food. The usual price of one bag is € p. In a sale, the customer can choose to pay… Full card prompt: A company grows and sells plants. In this part, p and r are constants, with p, r ∈ ℝ and 0 < r < 0·9p. The company sells bags of plant food. The usual price of one bag is €p. In a sale, the customer can choose to pay using either Option 1 or Option 2, as follows: Option 1: the usual price reduced by 10%, and then reduced by a further €r; Option 2: the usual price reduced by €r, and then this new price reduced by 10%. Which option (1 or 2), if either, is cheaper? Write the price for each option (1 and 2) in terms of p and r, to support your answer. Tick one box only: Option 1; Option 2; It depends on the value of p and of r.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -15617,6 +16209,38 @@ export const CARDS: SecCard[] = [
           ],
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-q8-a-i-ii", topicId: "maths-5-1", conceptId: "p1-q8-a-i-ii",
+    section: "B", questionRef: "2024 HL Paper 1 Q8(a)(i), (ii)",
+    stem: "A clothing company sells t-shirts. The daily sales of t-shirts over a 360-day period can be modelled using the following function, T(x), where 0 ≤ x ≤ 360, x ∈ ℝ: T(x) = ((x − 240)/60)³ + 70",
+    questionText: "(i) Fill in the table below, showing the value of T(x) for each of the given values of x. Give each value correct to the nearest whole number. Two values have already been filled in: T(60) = 43 and T(360) = 78; the values for x = 0, 120, 180, 240 and 300 are blank. (ii) Draw the graph of y = T(x) on the axes below, for 0 ≤ x ≤ 360, x ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-q8-a-i-ii-solution-1", kind: "point", verbatim: "Solution consists of 13 parts:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-q8-a-i-ii-solution-2", kind: "point", verbatim: "Points joined appropriately (not with line segments)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-q8-a-i-ii-solution-3", kind: "point", verbatim: "Work of merit in finding one value of T", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-q8-a-i-ii-solution-4", kind: "point", verbatim: "10 parts correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-q8-a-i-ii-solution-5", kind: "point", verbatim: "12 parts correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-q8-a-i-ii-solution-6", kind: "point", verbatim: "Correct graph with no table entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,

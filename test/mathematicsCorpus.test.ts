@@ -24,6 +24,7 @@ import { resolveCurriculumSpecification, findCanonicalTopic } from '../curriculu
 import { examTopicIdsForQuestion } from '../data/examTopics/registry';
 import review from '../scripts/markbank/mathematics/reviews/2025-higher-p1.json';
 import paper2 from '../scripts/markbank/mathematics/reviews/2025-higher-p2.json';
+import higher2024p1 from '../scripts/markbank/mathematics/reviews/2024-higher-p1.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
@@ -563,4 +564,45 @@ it('keeps the 2026 Ordinary Paper 2 bands, measurement ruler and all-or-nothing 
   for (const suffix of ['q6-a-i', 'q6-a-ii-iii']) expect(card(suffix).sourceMaterial?.measurementRequired, suffix).toBe(true);
   expect(card('q9-c-iii').stem).toContain('350 of the 540');
   expect(card('q10-b-iii').sourceMaterial?.pages).toEqual([27, 28]);
+});
+
+describe('2024 Higher Mathematics Paper 1 independent source review', () => {
+  const cards = HIGHER.filter(card => card.year === 2024 && card.questionRef.includes('Paper 1'));
+  const added = new Set(['maths-2024-hl-p1-q8-a-i-ii', 'maths-2024-hl-p1-q9-b-i']);
+
+  it('retains all 41 published scale units and all 380 offered marks', () => {
+    expect(cards.map(card => card.id).sort()).toEqual(higher2024p1.cards.map(card => card.id).sort());
+    expect(cards).toHaveLength(41);
+    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(380);
+    for (const [question, marks] of Object.entries(higher2024p1.printedQuestionMarks)) {
+      expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
+        .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
+    }
+  });
+
+  it('restores prompts, keeps existing crops, and files every task in both taxonomies', () => {
+    const specification = resolveCurriculumSpecification('mathematics', 2024)!;
+    for (const task of higher2024p1.cards) {
+      const card = cards.find(candidate => candidate.id === task.id)!;
+      expect(card.stem ?? '', card.id).toBe((task as { stem?: string }).stem ?? '');
+      expect(card.questionText, card.id).toBe(task.questionText);
+      expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
+      expect(card.sourceMaterial?.sourceFileid, card.id).toBe(higher2024p1.paperFileid);
+      expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
+      expect(card.topicId, card.id).toBe(task.topicId);
+      expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
+      if (task.id !== 'maths-2024-hl-p1-q8-a-i-ii') {
+        expect('questionFigure' in card && card.questionFigure, card.id).toBeTruthy();
+      }
+      const question = task.printedParts[0].match(/^Q(\d+)/)![1];
+      expect(examTopicIdsForQuestion('mathematics', 'higher', 2024, 'main', question, 'p1', 'ev', higher2024p1.paperFileid), card.id)
+        .toEqual(expect.arrayContaining(task.examTopicIds));
+    }
+    expect(cards.filter(card => added.has(card.id))).toHaveLength(2);
+    const roots = cards.find(card => card.id === 'maths-2024-hl-p1-q9-b-i')!;
+    expect(roots.questionText).toContain('(ii)');
+    expect(roots.rows.map(row => row.verbatim)).toContain('Ans: y = 6 [as y ≤ 8]');
+    const table = cards.find(card => card.id === 'maths-2024-hl-p1-q8-a-i-ii')!;
+    expect('mathematicsScale' in table && table.mathematicsScale?.marks).toEqual([0, 3, 5, 7, 10]);
+  });
 });

@@ -23729,7 +23729,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q1(a)",
-  "questionText": "Solve the following equation for n∈ℕ : n−3 = √3n + 1",
+  "questionText": "Solve the following equation for n ∈ ℕ: n − 3 = √(3n + 1)",
   "figureKey": "maths-2024-HL-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
@@ -23764,7 +23764,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q1-a"
  },
  {
@@ -23776,7 +23776,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q1(b)",
-  "questionText": "Write the following expression as a single fraction in terms of t : 4/(2tt + ) 1 − 7 12t",
+  "questionText": "Write the following expression as a single fraction in terms of t: 4/(2t + 1) − 7/(12t)",
   "figureKey": "maths-2024-HL-paper-p005-i1",
   "labelKey": [],
   "tariffModel": {
@@ -23809,7 +23809,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q1-b"
  },
  {
@@ -23821,7 +23821,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q1(c)",
-  "questionText": "Solve the following simultaneous equations for x, y, w∈ℤ: x + 2y = 143 y + 3w = −74 4x + 5w = 4",
+  "questionText": "Solve the following simultaneous equations for x, y, w ∈ ℤ: x + 2y = 143; y + 3w = −74; 4x + 5w = 4",
   "figureKey": "maths-2024-HL-paper-p006-i0",
   "labelKey": [],
   "tariffModel": {
@@ -23856,7 +23856,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q1-c"
  },
  {
@@ -23868,7 +23868,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q2(a)",
-  "questionText": "Find the two solutions of the following equation in z, where z is a complex number. Give each answer in the form a + bi, where a, b∈ℝ",
+  "questionText": "Find the two solutions of the following equation in z, where z is a complex number. Give each answer in the form a + bi, where a, b ∈ ℝ. z² + 12z + 261 = 0",
   "figureKey": "maths-2024-HL-paper-p007-i0",
   "labelKey": [],
   "tariffModel": {
@@ -23910,8 +23910,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q2-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q2-a",
+  "stem": "In this question, i² = −1."
  },
  {
   "id": "maths-2024-hl-p1-q2-b",
@@ -23922,7 +23923,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q2(b)",
-  "questionText": "Use de Moivre’s theorem to write (1 −√3 i) 9 in the form a+ b, where a, b∈ℝ",
+  "questionText": "Use de Moivre’s theorem to write (1 − √3 i)⁹ in the form a + bi, where a, b ∈ ℝ.",
   "figureKey": "maths-2024-HL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -23957,8 +23958,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q2-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q2-b",
+  "stem": "In this question, i² = −1."
  },
  {
   "id": "maths-2024-hl-p1-q2-c-i",
@@ -23969,7 +23971,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q2(c)(i), (ii)",
-  "questionText": "Plot and label the complex number u= 4 (cos 𝜋 6 + isin 𝜋 6) on the diagram, as accurately as possible",
+  "questionText": "(i) Plot and label the complex number u = 4(cos π/6 + i sin π/6) on the diagram, as accurately as possible. (ii) The complex number o is 0 + 0i. Find the size of the angle ∠wou. Give your answer in radians.",
   "figureKey": "maths-2024-HL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24004,8 +24006,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q2-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q2-c-i",
+  "stem": "In this question, i² = −1. The point w = −2 + 2i is shown in the Argand diagram below."
  },
  {
   "id": "maths-2024-hl-p1-q3-a",
@@ -24016,7 +24019,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q3(a)",
-  "questionText": "Find the integral: ∫cos 6x d",
+  "questionText": "Find the integral: ∫ cos 6x dx",
   "figureKey": "maths-2024-HL-paper-p010-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24044,7 +24047,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q3-a"
  },
  {
@@ -24056,7 +24059,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q3(b)(i)",
-  "questionText": "Find the equation of the tangent to the graph of f at the point where x = 2. You do not need to simplify your answer",
+  "questionText": "Find the equation of the tangent to the graph of f at the point where x = 2. You do not need to simplify your answer.",
   "figureKey": "maths-2024-HL-paper-p010-i1",
   "labelKey": [],
   "tariffModel": {
@@ -24091,8 +24094,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q3-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q3-b-i",
+  "stem": "The function f is defined for x ∈ ℝ as: f(x) = 2x³ − 9x² + 5x − 11"
  },
  {
   "id": "maths-2024-hl-p1-q3-b-ii",
@@ -24103,7 +24107,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q3(b)(ii)",
-  "questionText": "Find the x co-ordinate of the point of inflection of f",
+  "questionText": "Find the x co-ordinate of the point of inflection of f.",
   "figureKey": "maths-2024-HL-paper-p011-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24136,8 +24140,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q3-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q3-b-ii",
+  "stem": "The function f is defined for x ∈ ℝ as: f(x) = 2x³ − 9x² + 5x − 11"
  },
  {
   "id": "maths-2024-hl-p1-q3-c",
@@ -24148,7 +24153,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q3(c)",
-  "questionText": "The diagram below shows the curve y = p(x) and the line y = l(x), for 0 ≤ x ≤ 10, x∈ℝ",
+  "questionText": "The diagram below shows the curve y = p(x) and the line y = l(x), for 0 ≤ x ≤ 10, x ∈ ℝ. There are two values of x in the domain 0 ≤ x ≤ 10 for which: p′(x) = l′(x), where p′(x) is the derivative of p(x). Use the infomation in the diagram to estimate these two values of x, as accurately as you can. Show your work on the diagram.",
   "figureKey": "maths-2024-HL-paper-p011-i1",
   "labelKey": [],
   "tariffModel": {
@@ -24183,7 +24188,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q3-c"
  },
  {
@@ -24195,7 +24200,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q4(a)",
-  "questionText": "Differentiate the following function from first principles, with respect to x: f(x) = x² −7x−10",
+  "questionText": "Differentiate the following function from first principles, with respect to x: f(x) = x² − 7x − 10",
   "figureKey": "maths-2024-HL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24230,7 +24235,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q4-a"
  },
  {
@@ -24242,7 +24247,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q4(b)",
-  "questionText": "The function g(x) is defined for x∈ℝ by: = (6xx + 1)/(xx⁴ + 3) g(x) = 6x + 1 Find the value of g′(−2), the derivative of g(x) when x = −2",
+  "questionText": "The function g(x) is defined for x ∈ ℝ by: g(x) = (6x + 1)/(x⁴ + 3). Find the value of g′(−2), the derivative of g(x) when x = −2.",
   "figureKey": "maths-2024-HL-paper-p012-i1",
   "labelKey": [],
   "tariffModel": {
@@ -24277,7 +24282,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q4-b"
  },
  {
@@ -24289,7 +24294,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q4(c)",
-  "questionText": "h: ℝ→ℝ is a continuous function. The graph of h(x) has a local minimum at the point (0, 5)",
+  "questionText": "h: ℝ → ℝ is a continuous function. The graph of h(x) has a local minimum at the point (0, 5). State whether the following statement is true or false: “The value of h(x) must be at least 5 for all real values of x.” Justify your answer.",
   "figureKey": "maths-2024-HL-paper-p012-i2",
   "labelKey": [],
   "tariffModel": {
@@ -24317,7 +24322,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q4-c"
  },
  {
@@ -24329,7 +24334,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q5(a)",
-  "questionText": "The first three terms of an arithmetic sequence are as follows, where p∈ℝ: T₁ = 2p + 1 T₂ = 5p−3 T₃ = 6p + 7 Find the value of p",
+  "questionText": "The first three terms of an arithmetic sequence are as follows, where p ∈ ℝ: T₁ = 2p + 1; T₂ = 5p − 3; T₃ = 6p + 7. Find the value of p.",
   "figureKey": "maths-2024-HL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24362,7 +24367,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q5-a"
  },
  {
@@ -24374,7 +24379,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q5(b)",
-  "questionText": "G7 = 6 and G11 = 3 8 are the 7th and 11th terms of a geometric sequence, respectively",
+  "questionText": "G₇ = 6 and G₁₁ = 3/8 are the 7th and 11th terms of a geometric sequence, respectively. Find the two possible values of r, the common ratio of this sequence, where r ∈ ℝ.",
   "figureKey": "maths-2024-HL-paper-p013-i1",
   "labelKey": [],
   "tariffModel": {
@@ -24402,7 +24407,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q5-b"
  },
  {
@@ -24414,7 +24419,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q5(c)(i), (ii)",
-  "questionText": "Write F₁ and F₂ in terms of x",
+  "questionText": "(i) Write F₁ and F₂ in terms of x. (ii) Find the first value of n for which Fₙ = 0.",
   "figureKey": "maths-2024-HL-paper-p013-i2",
   "labelKey": [],
   "tariffModel": {
@@ -24449,8 +24454,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q5-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q5-c-i",
+  "stem": "A sequence of functions F₀, F₁, F₂, … is defined as follows, for x ∈ ℝ, x > 0: F₀ = x²⁰²⁴; for n ≥ 1, the function Fₙ is the derivative of Fₙ₋₁ with respect to x."
  },
  {
   "id": "maths-2024-hl-p1-q6-a",
@@ -24461,7 +24467,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q6(a)",
-  "questionText": "h(x) = x² + b−12, where x∈ℝ and b is a constant. Find the value of b for which x−4 is a factor of h(x)",
+  "questionText": "h(x) = x² + bx − 12, where x ∈ ℝ and b is a constant. Find the value of b for which x − 4 is a factor of h(x).",
   "figureKey": "maths-2024-HL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24494,7 +24500,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q6-a"
  },
  {
@@ -24506,7 +24512,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q6(b)(i)",
-  "questionText": "Find the value of f(1∙2)",
+  "questionText": "Find the value of f(1·2). Give your answer in the form a × 10ⁿ, where a ∈ ℝ, 1 ≤ a < 10, n ∈ ℕ, and a is correct to 1 decimal place.",
   "figureKey": "maths-2024-HL-paper-p014-i1",
   "labelKey": [],
   "tariffModel": {
@@ -24534,8 +24540,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q6-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q6-b-i",
+  "stem": "Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii)."
  },
  {
   "id": "maths-2024-hl-p1-q6-b-ii",
@@ -24546,7 +24553,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q6(b)(ii)",
-  "questionText": "Find the value of x for which g(x) = 3∙5. Give your answer in the form e^p, where p∈ℝ",
+  "questionText": "Find the value of x for which g(x) = 3·5. Give your answer in the form e^p, where p ∈ ℝ.",
   "figureKey": "maths-2024-HL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24579,8 +24586,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q6-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q6-b-ii",
+  "stem": "Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii)."
  },
  {
   "id": "maths-2024-hl-p1-q6-b-iii",
@@ -24591,7 +24599,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q6(b)(iii)",
-  "questionText": "(iii) Write the function g(f(x)) in terms of x, in its simplest form",
+  "questionText": "Write the function g(f(x)) in terms of x, in its simplest form.",
   "figureKey": "maths-2024-HL-paper-p015-i1",
   "labelKey": [],
   "tariffModel": {
@@ -24619,8 +24627,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q6-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q6-b-iii",
+  "stem": "Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii)."
  },
  {
   "id": "maths-2024-hl-p1-q7-a",
@@ -24631,7 +24640,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q7(a)",
-  "questionText": "Fiadh has a gross annual salary of €54 000",
+  "questionText": "Fiadh has a gross annual salary of €54 000. She pays income tax at a rate of 20% on the first €40 000 of her salary and at a rate of 40% on the remainder. She has an annual tax credit of €1775. Work out her net annual pay, assuming that there are no other deductions.",
   "figureKey": "maths-2024-HL-paper-p016-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24666,7 +24675,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q7-a"
  },
  {
@@ -24678,7 +24687,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q7(b)(i), (ii)",
-  "questionText": "Write down the present value of each of their first three monthly repayments, at the time when they take out the mortgage",
+  "questionText": "(i) Write down the present value of each of their first three monthly repayments, at the time when they take out the mortgage. Give each value as a fraction. Do not multiply out any powers. (ii) Work out the amount of money that Fiadh and her partner borrowed for their mortgage. Give your answer correct to the nearest euro.",
   "figureKey": "maths-2024-HL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24713,8 +24722,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q7-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q7-b-i",
+  "stem": "Fiadh and her partner take out a 25-year mortgage with a monthly interest rate of 0·279%. They make equal monthly repayments of €1647·75 at the end of each month. They make the first repayment exactly one month after they take out the mortgage."
  },
  {
   "id": "maths-2024-hl-p1-q7-c-i",
@@ -24725,7 +24735,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q7(c)(i)",
-  "questionText": "Use differentiation to find the rate at which the amount of money in the account is increasing after 3∙5 years. Give your answer correct to the nearest euro per year",
+  "questionText": "Use differentiation to find the rate at which the amount of money in the account is increasing after 3·5 years. Give your answer correct to the nearest euro per year.",
   "figureKey": "maths-2024-HL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24758,8 +24768,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q7-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q7-c-i",
+  "stem": "Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii)."
  },
  {
   "id": "maths-2024-hl-p1-q7-c-ii",
@@ -24770,7 +24781,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q7(c)(ii)",
-  "questionText": "Use integration to find the average amount of money in the account over the first 5 years. Give your answer correct to the nearest euro",
+  "questionText": "Use integration to find the average amount of money in the account over the first 5 years. Give your answer correct to the nearest euro.",
   "figureKey": "maths-2024-HL-paper-p018-i1",
   "labelKey": [],
   "tariffModel": {
@@ -24803,8 +24814,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q7-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q7-c-ii",
+  "stem": "Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii)."
  },
  {
   "id": "maths-2024-hl-p1-q7-c-iii",
@@ -24815,7 +24827,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q7(c)(iii)",
-  "questionText": "(iii) Work out the annual rate of interest (AER) for this account. That is, find the percentage increase in the amount of money in the account over the course of one year. Give your answer as a percentage, correct to 2 decimal places",
+  "questionText": "Work out the annual rate of interest (AER) for this account. That is, find the percentage increase in the amount of money in the account over the course of one year. Give your answer as a percentage, correct to 2 decimal places.",
   "figureKey": "maths-2024-HL-paper-p019-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24843,8 +24855,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q7-c-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q7-c-iii",
+  "stem": "Fiadh puts money in a savings account, and leaves it there for a number of years. The following expression gives F(t), the amount of money in the account in euro after t years, where t ∈ ℝ, t ≥ 0: F(t) = 5000e^(0·04t). Use this expression to answer parts (c)(i), (c)(ii), and (c)(iii)."
  },
  {
   "id": "maths-2024-hl-p1-q8-b",
@@ -24855,7 +24868,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q8(b)",
-  "questionText": "Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation",
+  "questionText": "Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation.",
   "figureKey": "maths-2024-HL-paper-p021-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24888,8 +24901,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q8-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q8-b",
+  "stem": "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians."
  },
  {
   "id": "maths-2024-hl-p1-q8-c",
@@ -24900,7 +24914,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q8(c)",
-  "questionText": "Find the value of t for which S(t) and C(t) give the same number of daily sales",
+  "questionText": "Find the value of t for which S(t) and C(t) give the same number of daily sales.",
   "figureKey": "maths-2024-HL-paper-p021-i1",
   "labelKey": [],
   "tariffModel": {
@@ -24933,8 +24947,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q8-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q8-c",
+  "stem": "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians."
  },
  {
   "id": "maths-2024-hl-p1-q8-d",
@@ -24945,7 +24960,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q8(d)",
-  "questionText": "The graphs, J, K, and L, of three functions are shown below (not to scale)",
+  "questionText": "The graphs, J, K, and L, of three functions are shown below (not to scale). One of these graphs shows the function C(t) over a number of years, where C(t) = S(t) − 2·4 + 0·03t. Write down which graph this is. Justify your answer.",
   "figureKey": "maths-2024-HL-paper-p021-i2",
   "labelKey": [],
   "tariffModel": {
@@ -24978,8 +24993,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q8-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q8-d",
+  "stem": "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians."
  },
  {
   "id": "maths-2024-hl-p1-q8-e",
@@ -24990,7 +25006,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q8(e)",
-  "questionText": "The derivative of C(t) is given by C′(t) = 0∙03 − 38𝜋 365 sin ( 2𝜋 365)",
+  "questionText": "The derivative of C(t) is given by C′(t) = 0·03 − (38π/365) sin(2πt/365). Find the value of t that gives the first local maximum of C, that is, the first time that C′(t) = 0. Give your answer correct to the nearest day.",
   "figureKey": "maths-2024-HL-paper-p022-i0",
   "labelKey": [],
   "tariffModel": {
@@ -25023,8 +25039,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q8-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q8-e",
+  "stem": "The clothing company also sells scarves. The daily sales of scarves can be modelled using the following function, S(t), which is a periodic function with a period of 365 days: S(t) = 21 + 19 cos(2πt/365). Here, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians. A different function, C(t), can also be used to model the daily sales of scarves, where: C(t) = S(t) − 2·4 + 0·03t. Again, t ∈ ℝ is the time, in days, from 1 January 2024, t ≥ 0, and 2πt/365 is in radians."
  },
  {
   "id": "maths-2024-hl-p1-q9-a",
@@ -25035,7 +25052,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q9(a)",
-  "questionText": "Find the value of C, the volume of the cap, when R = 13 and k = 4. Give your answer in terms of 𝜋",
+  "questionText": "Find the value of C, the volume of the cap, when R = 13 and k = 4. Give your answer in terms of π.",
   "figureKey": "maths-2024-HL-paper-p023-i0",
   "labelKey": [],
   "tariffModel": {
@@ -25068,8 +25085,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q9-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q9-a",
+  "stem": "A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: C = (πk²/3)(3R − k). Here, C is the volume of the cap and k is the height of the cap, with 0 < k ≤ R."
  },
  {
   "id": "maths-2024-hl-p1-q9-b-i",
@@ -25080,43 +25098,60 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q9(b)(i), (ii)",
-  "questionText": "Use this, and the expression for C above, to show that: yy/3 (24 −y) = 36",
+  "questionText": "(i) Use this, and the expression for C above, to show that: (y/3)(24 − y) = 36. (ii) Multiply out and solve the equation (y/3)(24 − y) = 36 to find the height of this cap.",
   "figureKey": "maths-2024-HL-paper-p023-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2024-hl-p1-q9-b-i-r1",
-    "kind": "anyN",
+    "id": "maths-2024-hl-p1-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "(y − 6)(y − 18) = 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p1-q9-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Ans: y = 6 [as y ≤ 8]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p1-q9-b-i-solution-3",
+    "kind": "point",
     "verbatim": "Work of merit in one part, for example, some relevant substitution in C",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: y = 18 not eliminated. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Work of merit in one part, for example, some relevant substitution in C",
-      "Part (i) correct\nPart (ii) correct\nWork of merit in both parts",
-      "Part (i) correct and work of merit in part (ii)\nPart (ii) correct and work of merit in part (i)"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p1-q9-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Part (i) correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p1-q9-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "Part (ii) correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p1-q9-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "y = 18 not eliminated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q9-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q9-b-i",
+  "stem": "A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: C = (πk²/3)(3R − k). Here, C is the volume of the cap and k is the height of the cap, with 0 < k ≤ R. A different sphere has a radius of 8 units and a cap with a height of y units, with 0 < y ≤ 8. The volume of this cap is (36πy) units³."
  },
  {
   "id": "maths-2024-hl-p1-q9-c",
@@ -25127,7 +25162,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q9(c)",
-  "questionText": "Find the value of x when the volume of the hemisphere is 3 litres. Give your answer correct to 1 decimal place",
+  "questionText": "Find the value of x when the volume of the hemisphere is 3 litres. Give your answer correct to 1 decimal place.",
   "figureKey": "maths-2024-HL-paper-p023-i2",
   "labelKey": [],
   "tariffModel": {
@@ -25160,8 +25195,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q9-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q9-c",
+  "stem": "A hemisphere has a diameter of x cm. V(x), the volume of this hemisphere in cm³, is given by: V(x) = (π/12)x³."
  },
  {
   "id": "maths-2024-hl-p1-q9-d",
@@ -25172,7 +25208,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q9(d)",
-  "questionText": "The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second",
+  "questionText": "The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second. Find the rate at which the diameter (x) of the hemisphere is increasing with respect to time, when x = 20 cm. Give your answer in cm per second, correct to 1 decimal place. Remember that the volume of the hemisphere is V(x) = (π/12)x³.",
   "figureKey": "maths-2024-HL-paper-p024-i0",
   "labelKey": [],
   "tariffModel": {
@@ -25207,8 +25243,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q9-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q9-d",
+  "stem": "A hemisphere has a diameter of x cm. V(x), the volume of this hemisphere in cm³, is given by: V(x) = (π/12)x³."
  },
  {
   "id": "maths-2024-hl-p1-q9-e",
@@ -25219,7 +25256,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q9(e)",
-  "questionText": "A cone has a radius of r cm and a height of h cm. The curved surface area of the cone, S, can be written as: S = 𝜋√r₂ + h² Rearrange this to write h in terms of S, r, and 𝜋",
+  "questionText": "A cone has a radius of r cm and a height of h cm. The curved surface area of the cone, S, can be written as: S = πr√(r² + h²). Rearrange this to write h in terms of S, r, and π. Give your answer in the form √(S² − arⁿ)/(br), where a, b, and n are constants.",
   "figureKey": "maths-2024-HL-paper-p024-i1",
   "labelKey": [],
   "tariffModel": {
@@ -25252,7 +25289,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p1-q9-e"
  },
  {
@@ -25264,7 +25301,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q10(a)(i)",
-  "questionText": "Use W(x) to estimate the height of a water spinach plant after 15 days. Give your answer correct to the nearest mm",
+  "questionText": "Use W(x) to estimate the height of a water spinach plant after 15 days. Give your answer correct to the nearest mm.",
   "figureKey": "maths-2024-HL-paper-p025-i0",
   "labelKey": [],
   "tariffModel": {
@@ -25292,8 +25329,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q10-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q10-a-i",
+  "stem": "A company grows and sells plants. The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0·667x + 1·5x² − 0·025x³. Here, x is the number of days after the plant starts to grow, where 0 ≤ x ≤ 35, x ∈ ℝ."
  },
  {
   "id": "maths-2024-hl-p1-q10-a-ii",
@@ -25304,7 +25342,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q10(a)(ii)",
-  "questionText": "Write down W′(x), the derivative of W(x)",
+  "questionText": "Write down W′(x), the derivative of W(x).",
   "figureKey": "maths-2024-HL-paper-p025-i1",
   "labelKey": [],
   "tariffModel": {
@@ -25332,8 +25370,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q10-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q10-a-ii",
+  "stem": "A company grows and sells plants. The function W(x) is defined below. It can be used to model the height, in mm, of a water spinach plant, for the first 35 days after it starts to grow. W(x) = 0·667x + 1·5x² − 0·025x³. Here, x is the number of days after the plant starts to grow, where 0 ≤ x ≤ 35, x ∈ ℝ."
  },
  {
   "id": "maths-2024-hl-p1-q10-b",
@@ -25344,7 +25383,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q10(b)",
-  "questionText": "The height of a different plant can be modelled by the function P(x), where x is again the number of days after the plant starts to grow",
+  "questionText": "The height of a different plant can be modelled by the function P(x), where x is again the number of days after the plant starts to grow. The derivative of this function is: P′(x) = 1·1 + 2·73x − 0·078x². Find the range of values of x for which P′(x) > 24. In your answer, give each value correct to the nearest whole number.",
   "figureKey": "maths-2024-HL-paper-p025-i2",
   "labelKey": [],
   "tariffModel": {
@@ -25379,8 +25418,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q10-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q10-b",
+  "stem": "A company grows and sells plants."
  },
  {
   "id": "maths-2024-hl-p1-q10-c-i",
@@ -25391,7 +25431,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q10(c)(i)",
-  "questionText": "Use integration to work out the area of the logo",
+  "questionText": "Use integration to work out the area of the logo. Hint: find the area of the logo in the first quadrant, and then double it.",
   "figureKey": "maths-2024-HL-paper-p026-i0",
   "labelKey": [],
   "tariffModel": {
@@ -25426,8 +25466,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q10-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q10-c-i",
+  "stem": "A company grows and sells plants. The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions c, s, and k: c(x) = x², for −1 ≤ x ≤ 1, x ∈ ℝ; s(x) = 2x − x², for 0 ≤ x ≤ 1, x ∈ ℝ; k(x) is the image of s(x) under axial symmetry in the y-axis."
  },
  {
   "id": "maths-2024-hl-p1-q10-c-ii",
@@ -25438,7 +25479,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q10(c)(ii)",
-  "questionText": "The function k can be written in the form k(x) = −x2 + b+ c, where b, c∈ℝ are constants. Find the value of b and the value of c",
+  "questionText": "The function k can be written in the form k(x) = −x² + bx + c, where b, c ∈ ℝ are constants. Find the value of b and the value of c. Remember that k is the image of s under axial symmetry in the y-axis.",
   "figureKey": "maths-2024-HL-paper-p027-i0",
   "labelKey": [],
   "tariffModel": {
@@ -25471,8 +25512,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q10-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q10-c-ii",
+  "stem": "A company grows and sells plants. The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions c, s, and k: c(x) = x², for −1 ≤ x ≤ 1, x ∈ ℝ; s(x) = 2x − x², for 0 ≤ x ≤ 1, x ∈ ℝ; k(x) is the image of s(x) under axial symmetry in the y-axis."
  },
  {
   "id": "maths-2024-hl-p1-q10-d",
@@ -25483,7 +25525,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q10(d)",
-  "questionText": "In this part, p and r are constants, with p, r∈ℝ and 0 < r < 0∙9 p",
+  "questionText": "In this part, p and r are constants, with p, r ∈ ℝ and 0 < r < 0·9p. The company sells bags of plant food. The usual price of one bag is €p. In a sale, the customer can choose to pay using either Option 1 or Option 2, as follows: Option 1: the usual price reduced by 10%, and then reduced by a further €r; Option 2: the usual price reduced by €r, and then this new price reduced by 10%. Which option (1 or 2), if either, is cheaper? Write the price for each option (1 and 2) in terms of p and r, to support your answer. Tick one box only: Option 1; Option 2; It depends on the value of p and of r.",
   "figureKey": "maths-2024-HL-paper-p027-i1",
   "labelKey": [],
   "tariffModel": {
@@ -25518,8 +25560,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p1-q10-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q10-d",
+  "stem": "A company grows and sells plants."
  },
  {
   "id": "maths-2024-hl-p2-q1-a-i",
@@ -61339,5 +61382,66 @@
    }
   ],
   "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2024-hl-p1-q8-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-a-i-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 1 Q8(a)(i), (ii)",
+  "stem": "A clothing company sells t-shirts. The daily sales of t-shirts over a 360-day period can be modelled using the following function, T(x), where 0 ≤ x ≤ 360, x ∈ ℝ: T(x) = ((x − 240)/60)³ + 70",
+  "questionText": "(i) Fill in the table below, showing the value of T(x) for each of the given values of x. Give each value correct to the nearest whole number. Two values have already been filled in: T(60) = 43 and T(360) = 78; the values for x = 0, 120, 180, 240 and 300 are blank. (ii) Draw the graph of y = T(x) on the axes below, for 0 ≤ x ≤ 360, x ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p1-q8-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Solution consists of 13 parts:",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p1-q8-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Points joined appropriately (not with line segments)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p1-q8-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Work of merit in finding one value of T",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p1-q8-a-i-ii-solution-4",
+    "kind": "point",
+    "verbatim": "10 parts correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p1-q8-a-i-ii-solution-5",
+    "kind": "point",
+    "verbatim": "12 parts correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p1-q8-a-i-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Correct graph with no table entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review."
  }
 ]
