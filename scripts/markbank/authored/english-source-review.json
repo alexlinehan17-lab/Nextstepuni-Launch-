@@ -2945,6 +2945,39 @@
       "attribution": "Two edited extracts: Colm Tóibín, from his essay on Thomson Gunn in Ship in Full Sail, and Enuma Okoro, Art can Change how we Understand the World, with two images (PDF6–7). As reproduced in the SEC 2026 paper.",
       "questionSha256": "2f1df173131810b745d03ba3d200d88f4613f9275cc447dc52193980e220b5e9",
       "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF5: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2026-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Library",
+      "pages": [
+        6
+      ],
+      "attribution": "Library — Alvy Carragher, as reproduced in the SEC 2026 paper.",
+      "questionSha256": "e6e9ff5e5ff0216ac1ff7500a5d7ec25325f2d1f43acd0c7acdafd347d8af161",
+      "reason": "Paper PDF6 prints the instruction, the title, all three stanzas (6 + 6 + 2 lines) and the byline above the questions; visually verified. The whole poem is on PDF6."
+    },
+    "english-2026-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Library",
+      "pages": [
+        6
+      ],
+      "attribution": "Library — Alvy Carragher, as reproduced in the SEC 2026 paper.",
+      "questionSha256": "b0c6c78e683c61f7c6f730cef3d5402cf6b408cc7234753a3b2b7bffd8d8b7ba",
+      "reason": "Paper PDF6 prints the instruction, the title, all three stanzas (6 + 6 + 2 lines) and the byline above the questions; visually verified. The whole poem is on PDF6."
+    },
+    "english-2026-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Library",
+      "pages": [
+        6
+      ],
+      "attribution": "Library — Alvy Carragher, as reproduced in the SEC 2026 paper.",
+      "questionSha256": "047633c27421a372f199fa365ddaccaaf0c64ea36397ab86f8d33cb741f7f7f6",
+      "reason": "Paper PDF6 prints the instruction, the title, all three stanzas (6 + 6 + 2 lines) and the byline above the questions; visually verified. The whole poem is on PDF6."
     }
   }
 }

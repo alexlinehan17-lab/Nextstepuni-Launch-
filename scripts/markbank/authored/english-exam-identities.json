@@ -3476,7 +3476,8 @@
       "observedHeading": "Prescribed Poetry · “Bishop’S Precise And Measured Style Enables Her To Explore A Mood That Is Often · Q1",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
-      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95"
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "promptHeading": "Elizabeth Bishop"
     },
     "english-2026-hl-p2-prescribed-2": {
       "topicId": "english-11-18",
@@ -3485,7 +3486,8 @@
       "observedHeading": "Prescribed Poetry · “Ní Chuilleanáin’S Unique Narrative Style Reveals Multiple Meanings And Enigmatic · Q2",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
-      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95"
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "promptHeading": "Eiléan Ní Chuilleanáin"
     },
     "english-2026-hl-p2-prescribed-3": {
       "topicId": "english-11-23",
@@ -3494,7 +3496,8 @@
       "observedHeading": "Prescribed Poetry · “Yeats’S Powerful Language Charts His Frustrating Pursuit Of Both Personal And Political · Q3",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
-      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95"
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "promptHeading": "W.B. Yeats"
     },
     "english-2026-hl-p2-prescribed-4": {
       "topicId": "english-11-16",
@@ -3503,7 +3506,8 @@
       "observedHeading": "Prescribed Poetry · “Meehan Uses Language Skilfully, To Modulate And Control The Harshness Of Her Critical · Q4",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
-      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95"
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "promptHeading": "Paula Meehan"
     },
     "english-2026-hl-p2-prescribed-5": {
       "topicId": "english-11-3",
@@ -3512,7 +3516,8 @@
       "observedHeading": "Prescribed Poetry · “Donne Utilises Language That Is Both Cryptic And Entertaining In Order To Explore The · Q5",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
-      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95"
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "promptHeading": "John Donne"
     },
     "english-2026-ol-p2-single-a": {
       "topicId": "english-12-28",

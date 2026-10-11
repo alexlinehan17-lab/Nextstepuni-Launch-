@@ -576,7 +576,7 @@ class EnglishSourceExclusionTest(unittest.TestCase):
 class English2026ReviewedPapersTest(unittest.TestCase):
     """Pin the independent 2026 reviews: tallies, routes, readers, tariffs and raw scan."""
 
-    KEYS = ('english-2026-ol-p2', 'english-2026-hl-p1')
+    KEYS = ('english-2026-ol-p2', 'english-2026-hl-p1', 'english-2026-hl-p2')
 
     @classmethod
     def setUpClass(cls):
@@ -711,6 +711,47 @@ class English2026ReviewedPapersTest(unittest.TestCase):
             kind = self.raw['decisions'][hit['id']]['kind']
             kinds[kind] = kinds.get(kind, 0) + 1
         self.assertEqual(kinds, {'tasks': 9, 'exam-instruction': 2, 'source-prose': 27, 'non-selection': 4})
+
+    def test_2026_higher_paper_two_routes_headings_and_criteria(self):
+        key = 'english-2026-hl-p2'
+        tasks, routes = self.tasks[key], self.routes(key)
+        self.assertEqual((len(tasks), len(routes), len({r['id'] for r in routes})), (27, 28, 28))
+        # Only the single-text General Vision judgement requires a final side (scheme PDF37).
+        variants = [r for r in routes if 'choiceParentId' in r]
+        self.assertEqual([r['id'] for r in variants], [key + '-comparative-b-q1-a-route-selection-1',
+                                                       key + '-comparative-b-q1-a-route-selection-2'])
+        self.assertTrue(all(r['totalMarks'] == 30 for r in variants))
+        self.assertIn('predominantly by my emotional response', variants[0]['questionText'])
+        self.assertIn('predominantly by my rational response', variants[1]['questionText'])
+        self.assertEqual(self.decisions[key + '-comparative-b-q1-b']['kind'], 'flexible')
+        self.assertEqual(self.decisions[key + '-unseen-q2']['kind'], 'open')
+        # Poet headings are stems, not prompt text.
+        for number, poet in enumerate(('Elizabeth Bishop', 'Eiléan Ní Chuilleanáin', 'W.B. Yeats', 'Paula Meehan', 'John Donne'), 1):
+            task = self.by_id[f'{key}-prescribed-{number}']
+            self.assertTrue(task['questionText'].startswith('“'), task['questionText'][:40])
+            self.assertEqual(task['stem'], poet)
+            self.assertNotIn('sourceMaterial', task)
+        for task in tasks:
+            suffix = task['id'][len(key) + 1:]
+            if suffix.startswith('unseen-'):
+                self.assertEqual((task['sourceMaterial']['title'], task['sourceMaterial']['pages']), ('Library', [6]))
+            else:
+                self.assertNotIn('sourceMaterial', task)
+            criteria = self.ledger['tasks'][task['id']]['criteria']
+            marks = task['totalMarks']
+            if marks in (10, 20, 30, 40):
+                self.assertEqual(criteria['mode'], 'holistic')
+            else:
+                self.assertEqual(criteria['allocation'], {'P': marks * 3 // 10, 'C': marks * 3 // 10,
+                                                          'L': marks * 3 // 10, 'M': marks // 10})
+        subset = {'tasks': {t['id']: self.ledger['tasks'][t['id']] for t in tasks}}
+        self.assertEqual(reconcile_schemes(tasks, inventory()['papers'], subset), [])
+        from english_raw_selection import scan
+        kinds = {}
+        for hit in scan([self.records[key]]):
+            kind = self.raw['decisions'][hit['id']]['kind']
+            kinds[kind] = kinds.get(kind, 0) + 1
+        self.assertEqual(kinds, {'tasks': 16, 'exam-instruction': 16, 'source-prose': 1, 'non-selection': 4})
 
 
 if __name__ == '__main__':

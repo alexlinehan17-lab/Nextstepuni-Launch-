@@ -15039,37 +15039,37 @@
       "textSha256": "bcc7b884b37ec6c2af0e6b0abd0a7e9c249f1c769c98f59c6e302f57d99b5640",
       "contextSha256": "e002ece12aad6b93a86243c1afc63ab9932aa382fe84bda25a8e300981127340",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2026-hl-p2-single-a-i"
       ],
       "taskSha256": {
         "english-2026-hl-p2-single-a-i": "56853f91db0fe0b18e14a108bc075af1d9ff9e52c8c1fada2157db40b67ce805"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p2-pdf-33-5efdb5fd83cf": {
       "textSha256": "5efdb5fd83cf542dc14dce285949c8eee5afa3c07111fef1964984bea76a840c",
       "contextSha256": "f30fa32c183d4eea8c128fadd3ab30ffe1e9327dde159a8431da33e7bb8dcc53",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2026-hl-p2-single-c-i"
       ],
       "taskSha256": {
         "english-2026-hl-p2-single-c-i": "b07b37e213b2d80ddac3cd71a632616aae49a4273536cd9d2854d39386521854"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p3-pdf-15-f64373357c63": {
       "textSha256": "f64373357c63a9dbbf74e1f7de71d2be61ce22c399a04b0564832791bb778725",
       "contextSha256": "c941574414e9f74351aafdf0fea6210697091fadefd4f2a9b9498d459b7e14b8",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2026-hl-p2-single-e-i"
       ],
       "taskSha256": {
         "english-2026-hl-p2-single-e-i": "cba2745685d0a63bf9ca24dcb783a5b047c17f119b8a575de65a7adb5cba507c"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-ol-p1-p3-pdf-38-8c3671b984c5": {
       "textSha256": "8c3671b984c5f424700a9cb21d0583c10c153202031dcf139776adfa9cf07bd9",
@@ -25262,162 +25262,160 @@
       "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
     },
     "english-2026-hl-p2-p4-pdf-21-15a432ae3da3": {
-      "kind": "tasks",
       "textSha256": "15a432ae3da3f223a151e954c3b4ae0bf7ff338e16d086f415b4fa57760074dc",
       "contextSha256": "3398c119411eb74f6546348812a0ffd8c2ce864c05ce495b853a5d70c4478d14",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-a-q1-a"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-a-q1-a": "7dd4981babbb0704af6692f00c7918c8f57fb491555ab8ace46215d6edabb976"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p4-pdf-28-4af176954759": {
-      "kind": "tasks",
       "textSha256": "4af176954759ffab6df48c8620e0a6449f0bd9164db64660f35e8d1b17e90dc0",
       "contextSha256": "ae202062b2033bdaa0a83791ae17eaf5a615bb91154f84dca745414852276a62",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-a-q1-b"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-a-q1-b": "512003cd8abbbb73d76813eb8cc242518e41725064295ff4e0d59098fabfea2b"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p4-pdf-34-29cd784dd36f": {
-      "kind": "tasks",
       "textSha256": "29cd784dd36f3f616b9e75433333f6ca3409269bd7b9f905c79a0dc2d033bb9f",
       "contextSha256": "66e903a71a2aebc75c12b183eb0ce215e01d9e40833c6b88700a500f7e09063b",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-a-q2"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-a-q2": "5d89b8695856167731e41cddbfbbd62772f37453eb9c5f754e2250de21904696"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p5-pdf-7-c8ae03b930ee": {
-      "kind": "tasks",
       "textSha256": "c8ae03b930eed26396d8095b9a76297514d601d450d6b3c2c1dfadec4f39527f",
       "contextSha256": "5df674165dd4fe73d2ddbcd13a2252928683c9c8e2edf1ba65a9ba2880947c32",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-b-q1-a"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-b-q1-a": "a2a05b862c652e26f99f867040a11f4a53cf047cde710ee68196bb91fba4c41b"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p5-pdf-11-f24d79909faf": {
-      "kind": "tasks",
       "textSha256": "f24d79909faffa5f56554689827862d4cb43e9381d48f2b811d3760022b32f8f",
       "contextSha256": "4096ba7d9c0fc216fde827b94d4b7c709da414419fa4fa8e49af22241b9b8ad0",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-b-q1-b"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-b-q1-b": "f2b45dd7850b5c5676dbcecc9241527e69ade2f04798509be6ca54babb9e336d"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p5-pdf-12-a46285343e83": {
-      "kind": "tasks",
       "textSha256": "a46285343e8384f2cebd0909b871562ec614b0a927965925a0676f7006202a4c",
       "contextSha256": "97c39f0bd18e14fa33cba6b65d1fb09bf7d27d80c26037e7a84794cfcbfdb8e7",
+      "kind": "tasks",
       "taskIds": [
-        "english-2026-hl-p2-comparative-b-q1-a",
         "english-2026-hl-p2-comparative-b-q1-b"
       ],
       "taskSha256": {
-        "english-2026-hl-p2-comparative-b-q1-a": "a2a05b862c652e26f99f867040a11f4a53cf047cde710ee68196bb91fba4c41b",
         "english-2026-hl-p2-comparative-b-q1-b": "f2b45dd7850b5c5676dbcecc9241527e69ade2f04798509be6ca54babb9e336d"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p5-pdf-15-a72019ad633c": {
-      "kind": "tasks",
       "textSha256": "a72019ad633c177874ebc71aaebddc206e948cdc838ea04942a6cdc7e7ac852f",
       "contextSha256": "91301ddd25878145360ce103fa4c9b3e944482bed7618fd668394190e76d3cc9",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-b-q1-b"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-b-q1-b": "f2b45dd7850b5c5676dbcecc9241527e69ade2f04798509be6ca54babb9e336d"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p5-pdf-16-6596f86d717b": {
-      "kind": "tasks",
       "textSha256": "6596f86d717b49e90e7eea3913bdeff859d19d21a02180ff318ec67ef4257ce8",
       "contextSha256": "b2ad9d93c9e202d23361ddfe27f5c416f10aead9c703d930b581c5bafe75bb7d",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-b-q1-b"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-b-q1-b": "f2b45dd7850b5c5676dbcecc9241527e69ade2f04798509be6ca54babb9e336d"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p5-pdf-20-4feb00958d1c": {
-      "kind": "tasks",
       "textSha256": "4feb00958d1ce61150e73507a81fc0c73831737e5c17a4eddbabcb7bb04b4177",
       "contextSha256": "4b6b8b71d986378beef27f4137bfd42ba983d8bf9ef23716515e8673c1dfba4e",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-b-q2"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-b-q2": "84a8c4288d23fed3bea21093e86f9d3bd4ef6e715c11f87456e5e30eb415133b"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p5-pdf-38-01e083a87b79": {
-      "kind": "tasks",
       "textSha256": "01e083a87b7957ddc725c694b4a51374775884bc807a55c58a255ab3b77628d4",
       "contextSha256": "a3beba47311b8a522064892aaa2c6b135cbb33e4b3ee9ebab7b8ee608c03868c",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-c-q1-b"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-c-q1-b": "e3473c3bbae2fb7c5744e6d135d26afccf4f0b444081346681fb32f3e6e6e7a0"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p5-pdf-39-da1ddf69267c": {
-      "kind": "tasks",
       "textSha256": "da1ddf69267c3d623b0da2fec0b54e593996d5c84052f9f717233c216b8bf476",
       "contextSha256": "21b46f6f27c490c2cceff7a73087d74249d35ea631c0bbf929ccba22bbb66468",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-c-q1-b"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-c-q1-b": "e3473c3bbae2fb7c5744e6d135d26afccf4f0b444081346681fb32f3e6e6e7a0"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p5-pdf-45-4badd630679b": {
-      "kind": "tasks",
       "textSha256": "4badd630679b11ce88a2469c0db45fdd4f1ccbc4bc5aaf44d62707cfea84fcdc",
       "contextSha256": "f6595ad89c227d98ec303c18cff5a8c32806989e1dd8d62f077e240cd2372b79",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-c-q2"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-c-q2": "ee92aacc32d9035c377a4faa08c142d7db2ad7b6d3f3119acbbdb06585554c85"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-hl-p2-p5-pdf-47-42da052511cb": {
-      "kind": "tasks",
       "textSha256": "42da052511cb83dd9942ff412bea4aa97e670f95e10801da5604982c0aff3e46",
       "contextSha256": "4bc51b0d983931c20397f24f6915746a054fb5b1e5fc0c97f1c5d3a64118291c",
+      "kind": "tasks",
       "taskIds": [
         "english-2026-hl-p2-comparative-c-q2"
       ],
       "taskSha256": {
         "english-2026-hl-p2-comparative-c-q2": "ee92aacc32d9035c377a4faa08c142d7db2ad7b6d3f3119acbbdb06585554c85"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2026-ol-p2-p11-pdf-16-c692002bff7d": {
       "textSha256": "c692002bff7d6873a01cb27c3c4f4c21b37d3c4d43805b2b5453965610117f50",
@@ -34762,6 +34760,132 @@
     "english-2026-hl-p1-p12-pdf-24-be95d5fa9b54": {
       "textSha256": "be95d5fa9b5463912f81ea308b6812fe16c73b2cab3db039772f025c4631ae69",
       "contextSha256": "7ceaf9b4943dcd4f401fedb44285aec51add3b29ac691ecac05ad55e5c967850",
+      "kind": "non-selection",
+      "reason": "Copyright and authorised-use notice on the final page; not a candidate task or answer-route selection."
+    },
+    "english-2026-hl-p2-p1-pdf-9-e0678d7b7e39": {
+      "textSha256": "e0678d7b7e391d2e639080b8bfe9210a602c75919634f1e62422db5b6fe0d68e",
+      "contextSha256": "42ddde3ac768225dc134efab5674b46695eec3229623decc351ee39c65f6cbd0",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p1-pdf-15-62271d155083": {
+      "textSha256": "62271d15508388d441d9d62caab7fac8ed2fe4d03ece3c855cfc72ff06fd0283",
+      "contextSha256": "d7273b43c49d9b09da77e3b50ac8782ea4ebc8d30fee4a1406ebc70f022d809d",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p2-pdf-12-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "28b51e639a9b14dbc7866b1b01d66e97a9baf9ff34b66522c81a6fc4b4fad104",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p2-pdf-24-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "507ce1fda86af725ba094962603c1c915df50f46e488608ac95713f0ff91886d",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p2-pdf-37-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "4b81a14ad78740d4c5fe8b1d02a8ed6981fdf7154a0e5e2f57a10cbff841c557",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p3-pdf-7-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "13bec4c808e6349ab7a7ac019c3e20ea70d9ee825dcd6b58857b1f340e3ea60c",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p3-pdf-19-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "c7feb4f06a73b2b15bca610ca73b1f60c532ba2afa78c9a320260f08bb34412b",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p4-pdf-4-eb5ccbf3db1b": {
+      "textSha256": "eb5ccbf3db1b3cc9548f86eae568de76812b3ae2b2995232089e847946009367",
+      "contextSha256": "389deff4559b200f5848a352ee0d619fc36af6cc89987ed474039141454c87a8",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p4-pdf-5-5bb293f6779d": {
+      "textSha256": "5bb293f6779d8d0ac22809f6ad386d448b6d4a743170c97f179c4322eaebe1e3",
+      "contextSha256": "02421469dd37765d42502a3c13085108d4948c624e56b6f21896b47169948067",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p4-pdf-32-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "ab0fa538e0d5e9f1248d7b0a7778330cc26eb74da4dbe727c30bca1098ae50da",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p5-pdf-18-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "4b317202aff87e575e6d8b696e4fd622469d43f4e914689f8e2e150712dfe462",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p5-pdf-42-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "3dd239754b7a2794e38e979369b998dd687d770e9396a28f454dadacb401de55",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p6-pdf-7-668b74599934": {
+      "textSha256": "668b745999341210ad79a6aad05f9b239a7fd2636f89d93c7092b7ae6070a4a5",
+      "contextSha256": "a78eba656d8e4567489b51fa5048556e265c74c9716c6de612ad7ba6e896935d",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p6-pdf-8-cd1df9617c70": {
+      "textSha256": "cd1df9617c70d4822c849341768c20b2441f22fc34e7446cfc3ad647ee685659",
+      "contextSha256": "ad78a97e5b815295d919312a8de4c887471d43bedf0c33791d88e7882afa1cf2",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p6-pdf-18-57a4d1276e53": {
+      "textSha256": "57a4d1276e530bca9ead74cae8c4b80764f9279b2dc781b94df0c043fb427727",
+      "contextSha256": "af45b9a05c7a6114de5cb3873fa4a989471de675664813016022c4d6db1088e8",
+      "kind": "source-prose",
+      "reason": "A line of the printed unseen poem Library, visually verified; the matched word is poetry, not an answer-choice directive."
+    },
+    "english-2026-hl-p2-p6-pdf-32-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "72c9e117aed8b13ff38a9855c8a701fdf703b840275606eb3cae9f815691a421",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p7-pdf-3-80b7fb7e97de": {
+      "textSha256": "80b7fb7e97de50783f55c9d20c382ca0498128af602c70740c8506228b673043",
+      "contextSha256": "b137b1b0c14ca2815be6622a0376eee2f1a82bf0e9c002e2d75a9ffe86cfdf86",
+      "kind": "exam-instruction",
+      "reason": "Visually verified cover rubric (attempt one question per section; the Shakespearean drama requirement), an OR separator between numbered alternatives, the comparative mode rubric, “Answer either Question 1 or Question 2” or “answer one of the following questions (1 – 5)”. Every alternative is its own reviewed task."
+    },
+    "english-2026-hl-p2-p8-pdf-3-77255b5ce15d": {
+      "textSha256": "77255b5ce15d9949db2a698558f11a0d5b3a9838b73f36c1baff26b25e868898",
+      "contextSha256": "095228522c5fda0eab70e0cd29bab34ed5c0367263ffa662c708020ecc9ab8da",
+      "kind": "non-selection",
+      "reason": "Copyright and authorised-use notice on the final page; not a candidate task or answer-route selection."
+    },
+    "english-2026-hl-p2-p8-pdf-4-640d9c6ddcf1": {
+      "textSha256": "640d9c6ddcf17ab84724edb8470b7e34203caae664045f0ab5bf0589d389ad00",
+      "contextSha256": "5a18b0cc46bb7b2b5ef578b53d471337ecf341bce506309520a6918da6c6d338",
+      "kind": "non-selection",
+      "reason": "Copyright and authorised-use notice on the final page; not a candidate task or answer-route selection."
+    },
+    "english-2026-hl-p2-p8-pdf-6-b3f5c0004b81": {
+      "textSha256": "b3f5c0004b81ae661ae7e28783356a92ff299b031c14202429ac8a25bb625c19",
+      "contextSha256": "e300fc6b0d81898fc64fae7eb083e5034577e3b6b68366fa53c7ad8e96d66396",
+      "kind": "non-selection",
+      "reason": "Copyright and authorised-use notice on the final page; not a candidate task or answer-route selection."
+    },
+    "english-2026-hl-p2-p8-pdf-7-fcd02c5a3dcf": {
+      "textSha256": "fcd02c5a3dcfa50c2564b9cdeb6f85b634a5fd7665ecec429a0d945e2768970e",
+      "contextSha256": "5358d63dc350179e04d5b2d2e3be19c8a0ba4f5870211b607759ed5af94bdda9",
       "kind": "non-selection",
       "reason": "Copyright and authorised-use notice on the final page; not a candidate task or answer-route selection."
     }

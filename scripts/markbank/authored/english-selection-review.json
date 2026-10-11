@@ -9377,28 +9377,28 @@
     },
     "english-2026-hl-p2-single-a-i": {
       "questionSha256": "56853f91db0fe0b18e14a108bc075af1d9ff9e52c8c1fada2157db40b67ce805",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF23: at least two factors; “Allow for a discussion that may include both points of view”, so limits/enhances is a graded judgement within one 60-mark response, not two routes."
     },
     "english-2026-hl-p2-single-b-i": {
       "questionSha256": "35b3dcb35d818aa334f667337395caf419f1e6f5dc01032e426dfed93affd97d",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "flexible",
+      "reason": "Paper PDF2 and scheme PDF25: at least two characters and at least two dramatic techniques, freely chosen; “at least” is a flexible minimum. One 60-mark response."
     },
     "english-2026-hl-p2-single-c-i": {
       "questionSha256": "b07b37e213b2d80ddac3cd71a632616aae49a4273536cd9d2854d39386521854",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF27: at least two factors; “Allow for a discussion that may include both points of view”, so limits/enhances is a graded judgement within one 60-mark response, not two routes."
     },
     "english-2026-hl-p2-single-d-i": {
       "questionSha256": "dbd0d97689dc3c7503d936ec238c776e88acadde9984a042641e6cb922447e1e",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "flexible",
+      "reason": "Paper PDF3 and scheme PDF29: at least two dramatic techniques, freely chosen, that heighten sympathy for Macbeth. Flexible minimum; one 60-mark response."
     },
     "english-2026-hl-p2-single-e-i": {
       "questionSha256": "cba2745685d0a63bf9ca24dcb783a5b047c17f119b8a575de65a7adb5cba507c",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF31: at least two factors; “Allow for a discussion that may include both points of view”, so limits/enhances is a graded judgement within one 60-mark response, not two routes."
     },
     "english-2026-ol-p2-single-a-q1-a": {
       "questionSha256": "aff63a9bb8297e6333d0397c0a07ff8f12219ed02a74c429f52bc0815012960f",
@@ -14164,42 +14164,60 @@
     "english-2026-hl-p2-comparative-a-q1-a": {
       "questionSha256": "7dd4981babbb0704af6692f00c7918c8f57fb491555ab8ace46215d6edabb976",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF34: one freely chosen text; the extent to which social mobility is possible, broadly defined. One 30-mark response."
     },
     "english-2026-hl-p2-comparative-a-q1-b": {
       "questionSha256": "512003cd8abbbb73d76813eb8cc242518e41725064295ff4e0d59098fabfea2b",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF35: two other freely chosen texts compared on the extent of social mobility; no link to part (a) required. One 40-mark response."
     },
     "english-2026-hl-p2-comparative-a-q2": {
       "questionSha256": "5d89b8695856167731e41cddbfbbd62772f37453eb9c5f754e2250de21904696",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF36: at least two texts; both “nurtured” and “maintained” must be addressed, not necessarily equally. Flexible minimum of texts; one 70-mark response."
     },
     "english-2026-hl-p2-comparative-b-q1-a": {
       "questionSha256": "a2a05b862c652e26f99f867040a11f4a53cf047cde710ee68196bb91fba4c41b",
-      "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "kind": "finite",
+      "expectedRoutes": 2,
+      "reason": "Paper PDF5 asks whether perception of the general vision and viewpoint of one text was formed predominantly by an emotional or by a rational response; scheme PDF37: candidates may discuss both but “should decide which is the more dominant”. That required final judgement gives two 30-mark routes (as 2016 OL Text 1 A(ii) mainly positive/negative); each may still discuss both responses and at least two elements.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected direction",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "Formed predominantly by my emotional response"
+            },
+            {
+              "id": "2",
+              "text": "Formed predominantly by my rational response"
+            }
+          ]
+        }
+      ]
     },
     "english-2026-hl-p2-comparative-b-q1-b": {
       "questionSha256": "f2b45dd7850b5c5676dbcecc9241527e69ade2f04798509be6ca54babb9e336d",
       "kind": "flexible",
-      "reason": "The paper explicitly allows combined approaches, repeated or different aspects, and/or alternatives supplied by the student. It does not prescribe a fixed named pool of exclusive answers."
+      "reason": "Paper PDF5 and scheme PDF38: compare, across two other texts, the extent to which perception was formed predominantly by an emotional or by a rational response; same or different elements allowed. The dominant response is decided for each freely chosen text and may differ between them, so “compare the extent” is not a single printed choice. One 40-mark response."
     },
     "english-2026-hl-p2-comparative-b-q2": {
       "questionSha256": "84a8c4288d23fed3bea21093e86f9d3bd4ef6e715c11f87456e5e30eb415133b",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF39: at least two texts; “catalyst for change” interpreted broadly. Flexible minimum; one 70-mark response."
     },
     "english-2026-hl-p2-comparative-c-q1-b": {
       "questionSha256": "e3473c3bbae2fb7c5744e6d135d26afccf4f0b444081346681fb32f3e6e6e7a0",
       "kind": "flexible",
-      "reason": "The paper explicitly allows combined approaches, repeated or different aspects, and/or alternatives supplied by the student. It does not prescribe a fixed named pool of exclusive answers."
+      "reason": "Paper PDF5 and scheme PDF41: two other texts; at least two techniques per author, the same or different techniques allowed. One 40-mark response."
     },
     "english-2026-hl-p2-comparative-c-q2": {
       "questionSha256": "ee92aacc32d9035c377a4faa08c142d7db2ad7b6d3f3119acbbdb06585554c85",
       "kind": "flexible",
-      "reason": "The paper explicitly allows combined approaches, repeated or different aspects, and/or alternatives supplied by the student. It does not prescribe a fixed named pool of exclusive answers."
+      "reason": "Paper PDF5 and scheme PDF42: at least one technique in at least two texts, to convey “a psychological or an emotional conflict”; the scheme allows a broad interpretation (e.g. moral, philosophical), so the conflict type is an open category, not a route. One 70-mark response."
     },
     "english-2026-ol-p2-comparative-a-q1-a-i": {
       "questionSha256": "440b2ece54f91bfdb56d1e259436397f5088f3ce19ed11d0f40496afdefed01d",
@@ -16097,6 +16115,76 @@
       "questionSha256": "df028503a1c7718fc7b425962258b317ff3a236ffe49e7438f50e66943430d59",
       "kind": "open",
       "reason": "Scheme PDF11: “Allow for a variety of personal opinions”; at least two points. “How valid” is a graded judgement, not two exclusive routes. One 15-mark response. The question prints “Okora”; the passage and scheme spell Okoro."
+    },
+    "english-2026-hl-p2-single-a-ii": {
+      "questionSha256": "e9b44b2e032c0e2475a00e38e5bf117d63655dcfc40c15cc86d3e40d380dbbe9",
+      "kind": "open",
+      "reason": "Scheme PDF24: at least two insights, broad interpretation of “fascinating”. One open 60-mark response."
+    },
+    "english-2026-hl-p2-single-b-ii": {
+      "questionSha256": "6662360541d77ab2b5788931aef1b8f0d7aaf8c6034d81fa104ef0438567cee0",
+      "kind": "open",
+      "reason": "Scheme PDF26: at least two insights, broad interpretation of “fascinating”. One open 60-mark response."
+    },
+    "english-2026-hl-p2-single-c-ii": {
+      "questionSha256": "f1afc98dfb13ca3e763618fe32a08f66e4f4da8885ab4f1960d7de122dac8bad",
+      "kind": "open",
+      "reason": "Scheme PDF28: at least two insights, broad interpretation of “fascinating”. One open 60-mark response."
+    },
+    "english-2026-hl-p2-single-d-ii": {
+      "questionSha256": "c0fb6eb86d31f9628b4d5f728cb82ea5195497366b0d90dbd02c209af839517c",
+      "kind": "open",
+      "reason": "Scheme PDF30: at least two insights, broad interpretation of “fascinating”. One open 60-mark response."
+    },
+    "english-2026-hl-p2-single-e-ii": {
+      "questionSha256": "f748a27744264a98294e8c44614b016d54a03a37c5e63e01a789fb09d8867012",
+      "kind": "open",
+      "reason": "Scheme PDF32: at least two insights, broad interpretation of “fascinating”. One open 60-mark response."
+    },
+    "english-2026-hl-p2-comparative-c-q1-a": {
+      "questionSha256": "116591f461e81327d5b54601d66828626b079e1aa1bba7d38bf755c1058bcefb",
+      "kind": "open",
+      "reason": "Scheme PDF40: one text; at least two literary techniques used to create an engaging opening (first few chapters/scenes/sequences). One 30-mark response."
+    },
+    "english-2026-hl-p2-unseen-q1-a": {
+      "questionSha256": "e6e9ff5e5ff0216ac1ff7500a5d7ec25325f2d1f43acd0c7acdafd347d8af161",
+      "kind": "open",
+      "reason": "Scheme PDF43: two reasons of the candidate’s own, supported from the poem. One 10-mark response."
+    },
+    "english-2026-hl-p2-unseen-q1-b": {
+      "questionSha256": "b0c6c78e683c61f7c6f730cef3d5402cf6b408cc7234753a3b2b7bffd8d8b7ba",
+      "kind": "open",
+      "reason": "Scheme PDF43: the candidate describes the tone in their own terms; no printed word pool. One 10-mark response."
+    },
+    "english-2026-hl-p2-unseen-q2": {
+      "questionSha256": "047633c27421a372f199fa365ddaccaaf0c64ea36397ab86f8d33cb741f7f7f6",
+      "kind": "open",
+      "reason": "Scheme PDF44: at least two reasons; candidates may agree, disagree or offer a combined view. A graded judgement, not two routes. One 20-mark response."
+    },
+    "english-2026-hl-p2-prescribed-1": {
+      "questionSha256": "1798323aff21d3dd8894b8d020df0a9594d641540b720d777b9bf7cb95527b55",
+      "kind": "open",
+      "reason": "Scheme PDF45–46: freedom of choice of poems studied; discuss the statement. One 50-mark response."
+    },
+    "english-2026-hl-p2-prescribed-2": {
+      "questionSha256": "13c48511a9e3b7b029484c03aa514f83a291455d62fb50d96a0044236661fa7b",
+      "kind": "open",
+      "reason": "Scheme PDF45, 47: freedom of choice of poems studied; broad interpretation of “unique” and “enigmatic”. One 50-mark response."
+    },
+    "english-2026-hl-p2-prescribed-3": {
+      "questionSha256": "6d3d7e8de67b847e614263aad7540103d57dd5694c7b8ec747275a15d6c68339",
+      "kind": "open",
+      "reason": "Scheme PDF45, 48: candidates may agree or disagree that the pursuit is frustrating; both personal and political ideals are required, not necessarily equally. One 50-mark response."
+    },
+    "english-2026-hl-p2-prescribed-4": {
+      "questionSha256": "def4b0534b636a0694841ee01a014e2823addec37d6a10cec0b1a66eb0be80f2",
+      "kind": "open",
+      "reason": "Scheme PDF45, 49: freedom of choice of poems studied; broad interpretation of “modulate”. One 50-mark response."
+    },
+    "english-2026-hl-p2-prescribed-5": {
+      "questionSha256": "005f39d983c3f2624906b82f234bbcf69cf7fe710bd3993d62bd14c9ac3eb04a",
+      "kind": "open",
+      "reason": "Scheme PDF45, 50: both “cryptic” and “entertaining”, broadly interpreted; poems freely chosen. One 50-mark response."
     }
   }
 }

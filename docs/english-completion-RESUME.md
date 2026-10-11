@@ -1,6 +1,33 @@
-## Current checkpoint — 2026 Higher Paper 1 recorded, 2026-10-11
+## Current checkpoint — 2026 Higher Paper 2 recorded, 2026-10-11
 
-Supersedes the counts below. Recorded by `tmp/english-audit/record-2026-hl-p1-review.py`.
+Supersedes the counts below. Recorded by `tmp/english-audit/record-2026-hl-p2-review.py`.
+2026 OL P2, HL P1 and HL P2 are now fully reviewed; 2026 OL P1 is the only
+2026 paper still open (2 pages viewed earlier, nothing recorded).
+
+- All 8 paper pages viewed. Scheme text PDF22–57; PDF22–50, 52 and 54 viewed.
+- Independent tally **27 tasks / 28 routes**: Single 5 × (i)/(ii) 60; Comparative
+  3 × (Q1(a) 30, Q1(b) 40, Q2 70); Unseen Q1(a) 10, Q1(b) 10, Q2 20 (either Q1
+  or Q2); Prescribed 5 × 50. Only finite pool: General Vision Q1(a)
+  “predominantly emotional or rational” (scheme PDF37 “should decide which is
+  the more dominant”, same rule as 2016 OL T1 A(ii)). Q1(b) stays flexible:
+  the dominant response is decided per freely chosen text and may differ.
+- Poet headings removed from prescribed prompts via `promptHeading` (as
+  2010–2015; NOTE 2018 HL P2 still carries the heading in its prompts — fix
+  deliberately with its review hashes if wanted). Unseen reader “Library”
+  (Alvy Carragher) PDF6.
+- Criteria: Single 60, Comparative 70, Prescribed 50 discrete (C/L ≤ P);
+  Comparative 30/40 and Unseen 10/20 holistic H1–H8 (PDF52, PDF54).
+- 37 raw hits classified (16 task, 16 rubric, 1 poem line, 4 notice).
+  Gate: routes 3,800; pending taskSelections 10 / raw 1,079 / scheme 1,448 /
+  paperReviews 35. Python 45 tests, TS 132 tests, diff check pass.
+- NEXT: 2026 OL Paper 1, then 2025 (newest first), then 2016 P2, 2017,
+  2019–2024. Publisher work is a separate coordinated task.
+
+---
+
+## Earlier checkpoint — 2026 Higher Paper 1 recorded, 2026-10-11
+
+Recorded by `tmp/english-audit/record-2026-hl-p1-review.py`.
 
 - All 12 paper pages viewed (PDF9–11 “no examination material”, PDF12
   acknowledgements/copyright). Scheme (shared HL P1/P2) text PDF4–21, 51–57;
