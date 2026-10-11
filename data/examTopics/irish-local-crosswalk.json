@@ -27,15 +27,15 @@
     },
     "matchedLocalCardLinks": 744,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 2158,
-    "distinctStudentFacingQuestions": 2158,
+    "localPhysicalMappings": 2224,
+    "distinctStudentFacingQuestions": 2224,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 1472,
+    "retainedLocalQuestions": 1538,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 1872,
+    "newlyAddedPhysicalMappings": 1938,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -42236,7 +42236,6 @@
       "kind": "foundation",
       "n": "3",
       "topicIds": [
-        "irish-foundation-fill-in-a-form",
         "irish-foundation-write-a-letter",
         "irish-foundation-write-a-notice",
         "irish-foundation-write-a-story",
@@ -42292,7 +42291,7 @@
       "kind": "foundation",
       "n": "R-2C",
       "topicIds": [
-        "irish-foundation-reading-newspaper-article"
+        "irish-foundation-reading-extract"
       ],
       "provenance": "retained-local"
     },
@@ -42343,6 +42342,792 @@
       "fileid": "LC001BLP100IV.pdf",
       "paperKey": "p1",
       "kind": "foundation",
+      "n": "A-1a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-1b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-2a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-2b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-3",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-4",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-5a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-5b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-6a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-6b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-7a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-7b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-8a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "A-8b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-1-1",
+      "topicIds": [
+        "irish-foundation-match-the-pictures-with-the-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-1-2",
+      "topicIds": [
+        "irish-foundation-match-the-pictures-with-the-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-1-3",
+      "topicIds": [
+        "irish-foundation-match-the-pictures-with-the-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-1-4",
+      "topicIds": [
+        "irish-foundation-match-the-pictures-with-the-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-1-5",
+      "topicIds": [
+        "irish-foundation-match-the-pictures-with-the-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-1-6",
+      "topicIds": [
+        "irish-foundation-match-the-pictures-with-the-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-1-7",
+      "topicIds": [
+        "irish-foundation-match-the-pictures-with-the-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-1-8",
+      "topicIds": [
+        "irish-foundation-match-the-pictures-with-the-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-1-9",
+      "topicIds": [
+        "irish-foundation-match-the-pictures-with-the-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-1-10",
+      "topicIds": [
+        "irish-foundation-match-the-pictures-with-the-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2A-1",
+      "topicIds": [
+        "irish-foundation-reading-letter"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2A-2",
+      "topicIds": [
+        "irish-foundation-reading-letter"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2A-3",
+      "topicIds": [
+        "irish-foundation-reading-letter"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2A-4",
+      "topicIds": [
+        "irish-foundation-reading-letter"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2A-5",
+      "topicIds": [
+        "irish-foundation-reading-letter"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2B-1",
+      "topicIds": [
+        "irish-foundation-reading-brochure"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2B-2",
+      "topicIds": [
+        "irish-foundation-reading-brochure"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2B-3",
+      "topicIds": [
+        "irish-foundation-reading-brochure"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2B-4",
+      "topicIds": [
+        "irish-foundation-reading-brochure"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2B-5",
+      "topicIds": [
+        "irish-foundation-reading-brochure"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2C-1",
+      "topicIds": [
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2C-2",
+      "topicIds": [
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2C-3",
+      "topicIds": [
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2C-4",
+      "topicIds": [
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2C-5",
+      "topicIds": [
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3A-1",
+      "topicIds": [
+        "irish-foundation-reading-newspaper-article"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3A-2",
+      "topicIds": [
+        "irish-foundation-reading-newspaper-article"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3A-3",
+      "topicIds": [
+        "irish-foundation-reading-newspaper-article"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3A-4",
+      "topicIds": [
+        "irish-foundation-reading-newspaper-article"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3A-5",
+      "topicIds": [
+        "irish-foundation-reading-newspaper-article"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3B-1",
+      "topicIds": [
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3B-2",
+      "topicIds": [
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3B-3",
+      "topicIds": [
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3B-4",
+      "topicIds": [
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3B-5",
+      "topicIds": [
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3C-1",
+      "topicIds": [
+        "irish-foundation-reading-poem"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3C-2",
+      "topicIds": [
+        "irish-foundation-reading-poem"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3C-3",
+      "topicIds": [
+        "irish-foundation-reading-poem"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3C-4",
+      "topicIds": [
+        "irish-foundation-reading-poem"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3C-5",
+      "topicIds": [
+        "irish-foundation-reading-poem"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2-AB",
+      "topicIds": [
+        "irish-foundation-reading-brochure",
+        "irish-foundation-reading-letter"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2-AC",
+      "topicIds": [
+        "irish-foundation-reading-extract",
+        "irish-foundation-reading-letter"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-2-BC",
+      "topicIds": [
+        "irish-foundation-reading-brochure",
+        "irish-foundation-reading-extract"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3-AB",
+      "topicIds": [
+        "irish-foundation-reading-extract",
+        "irish-foundation-reading-newspaper-article"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3-AC",
+      "topicIds": [
+        "irish-foundation-reading-newspaper-article",
+        "irish-foundation-reading-poem"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "R-3-BC",
+      "topicIds": [
+        "irish-foundation-reading-extract",
+        "irish-foundation-reading-poem"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
       "n": "W-4A",
       "topicIds": [
         "irish-foundation-write-a-notice"
@@ -42358,7 +43143,6 @@
       "kind": "foundation",
       "n": "W-4B",
       "topicIds": [
-        "irish-foundation-fill-in-a-form",
         "irish-foundation-write-a-letter"
       ],
       "provenance": "retained-local"
@@ -42372,7 +43156,8 @@
       "kind": "foundation",
       "n": "W-5A",
       "topicIds": [
-        "irish-foundation-write-a-story"
+        "irish-foundation-write-a-story",
+        "irish-foundation-write-from-pictures"
       ],
       "provenance": "retained-local"
     },
@@ -42384,6 +43169,94 @@
       "paperKey": "p1",
       "kind": "foundation",
       "n": "W-5B",
+      "topicIds": [
+        "irish-foundation-write-a-story",
+        "irish-foundation-write-from-pictures"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "W-4A-4B",
+      "topicIds": [
+        "irish-foundation-write-a-letter",
+        "irish-foundation-write-a-notice"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "W-4A-5A",
+      "topicIds": [
+        "irish-foundation-write-a-notice",
+        "irish-foundation-write-a-story",
+        "irish-foundation-write-from-pictures"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "W-4A-5B",
+      "topicIds": [
+        "irish-foundation-write-a-notice",
+        "irish-foundation-write-a-story",
+        "irish-foundation-write-from-pictures"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "W-4B-5A",
+      "topicIds": [
+        "irish-foundation-write-a-letter",
+        "irish-foundation-write-a-story",
+        "irish-foundation-write-from-pictures"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "W-4B-5B",
+      "topicIds": [
+        "irish-foundation-write-a-letter",
+        "irish-foundation-write-a-story",
+        "irish-foundation-write-from-pictures"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001BLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "foundation",
+      "n": "W-5A-5B",
       "topicIds": [
         "irish-foundation-write-a-story",
         "irish-foundation-write-from-pictures"
