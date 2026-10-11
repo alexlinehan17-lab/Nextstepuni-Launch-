@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher Level Papers 1 and 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1558,
-  "reviewedTasks": 965,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher Papers 1 and 2 and Ordinary Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1561,
+  "reviewedTasks": 1004,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 277,
+  "targetedRegressionTests": 273,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -453,5 +453,27 @@
       "mobile125": 3.99
     },
     "pageErrors": []
+  },
+  "ordinary2024p1": {
+    "paper": "2024 Ordinary Level Paper 1",
+    "paperFileid": "LC003GLP100EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-11",
+    "independentlyReviewedTasks": 39,
+    "existingRuntimeCardsReviewed": 36,
+    "restoredHeldBackCards": [
+      "maths-2024-ol-p1-q2-c",
+      "maths-2024-ol-p1-q3-a",
+      "maths-2024-ol-p1-q10-b-iv"
+    ],
+    "historicalRejectsRemaining": 9,
+    "targetedRegressionTests": 273,
+    "previousRuntimeIdsRetained": 1558,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 23,
+    "coverageBaseline": "1129/3474 asks covered, 0 orphans, 0 excluded, 2345 open",
+    "validation": "Deck generation (1,561 built, 9 historical rejects), Atlas generation and --check (256 placements), audit --check-reviewed, nine regression files (273/273), typecheck and diff whitespace check passed."
   }
 }

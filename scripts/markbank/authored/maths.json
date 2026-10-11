@@ -27351,7 +27351,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q1(a)(i), (ii)",
-  "questionText": "Find the value of the machine after 1 year",
+  "questionText": "(i) Find the value of the machine after 1 year. (ii) Hence, or otherwise, find the value of the machine after 2 years.",
   "figureKey": "maths-2024-OL-paper-p006-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27386,8 +27386,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q1-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q1-a-i",
+  "stem": "A farmer buys a new machine for €30 000. It depreciates (decreases in value) by 20% each year."
  },
  {
   "id": "maths-2024-ol-p1-q1-b",
@@ -27398,7 +27399,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q1(b)",
-  "questionText": "A farmer bought some livestock for €4716, including VAT. The cost of the livestock was €4500, excluding VAT",
+  "questionText": "A farmer bought some livestock for €4716, including VAT. The cost of the livestock was €4500, excluding VAT. Calculate the percentage VAT rate used.",
   "figureKey": "maths-2024-OL-paper-p006-i1",
   "labelKey": [],
   "tariffModel": {
@@ -27431,7 +27432,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q1-b"
  },
  {
@@ -27443,7 +27444,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q1(c)",
-  "questionText": "The farmer also bought land. One year later its value had increased by 12∙5% and was now €52 875",
+  "questionText": "The farmer also bought land. One year later its value had increased by 12·5% and was now €52 875. Find the value of the land when the farmer bought it.",
   "figureKey": "maths-2024-OL-paper-p007-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27476,7 +27477,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q1-c"
  },
  {
@@ -27488,7 +27489,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q2(a)(i), (ii)",
-  "questionText": "Using the Argand diagram, write down the values of z₁, z₂ and z₃ in the form a + b where a, b∈ℤ",
+  "questionText": "(i) Using the Argand diagram, write down the values of z₁, z₂ and z₃ in the form a + bi where a, b ∈ ℤ. (ii) Write down the value of |z₂|.",
   "figureKey": "maths-2024-OL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27523,8 +27524,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q2-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q2-a-i",
+  "stem": "In this question, i² = −1. The complex numbers z₁, z₂, and z₃ are shown on the Argand diagram below. One of these numbers is on the imaginary axis."
  },
  {
   "id": "maths-2024-ol-p1-q2-b",
@@ -27535,7 +27537,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q2(b)",
-  "questionText": "v= 15 1+2i. Write v in the form a+ b, where a, b∈ℤ",
+  "questionText": "v = 15/(1 + 2i). Write v in the form a + bi, where a, b ∈ ℤ.",
   "figureKey": "maths-2024-OL-paper-p008-i1",
   "labelKey": [],
   "tariffModel": {
@@ -27568,8 +27570,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q2-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q2-b",
+  "stem": "In this question, i² = −1."
  },
  {
   "id": "maths-2024-ol-p1-q2-c",
@@ -27580,36 +27583,46 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q2(c)",
-  "questionText": "The complex number w = 1 + 2i is shown on the Argand diagram below (drawn to scale). The three complex numbers labelled A, B, and C are also shown on the Argand diagram",
+  "questionText": "The complex number w = 1 + 2i is shown on the Argand diagram below (drawn to scale). The three complex numbers labelled A, B, and C are also shown on the Argand diagram. One of these is w̅, the complex conjugate of w. Which of the complex numbers A, B or C is w̅? Give a reason for your answer. Tick one box only.",
   "figureKey": "maths-2024-OL-paper-p008-i2",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2024-ol-p1-q2-c-r1",
-    "kind": "anyN",
-    "verbatim": "Correct box ticked\nWork of merit in reason, for example, 1 −2i",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.",
-    "group": {
-     "claimMax": 1,
-     "perOption": 5,
-     "options": [
-      "Correct box ticked\nWork of merit in reason, for example, 1 −2i"
-     ]
-    }
+    "id": "maths-2024-ol-p1-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "Box C ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p1-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "The conjugate is reflected in the real axis",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p1-q2-c-solution-3",
+    "kind": "point",
+    "verbatim": "Correct box ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p1-q2-c-solution-4",
+    "kind": "point",
+    "verbatim": "Work of merit in reason, for example, 1 − 2i",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q2-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q2-c",
+  "stem": "In this question, i² = −1."
  },
  {
   "id": "maths-2024-ol-p1-q3-a",
@@ -27620,40 +27633,51 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q3(a)",
-  "questionText": "A toy shop sells two different sets of the same building blocks, Set A and Set B, as shown in the table below",
+  "questionText": "A toy shop sells two different sets of the same building blocks, Set A and Set B, as shown in the table below: Set A has 60 blocks and costs €12; Set B has 150 blocks and costs €28. Which set of building blocks works out cheaper per block? Use calculations to support your answer. Tick one box only: Set A or Set B.",
   "figureKey": "maths-2024-OL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 6, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2024-ol-p1-q3-a-r1",
-    "kind": "anyN",
-    "verbatim": "Correct box ticked\nWork of merit, for example, a correct calculation/setup, 12/60 or similar",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 4,
-     "options": [
-      "Correct box ticked\nWork of merit, for example, a correct calculation/setup, 12/60 or similar",
-      "A full comparable calculation worked out, for example, 150 of set A calculated or 60 of Set B calculated OR The per unit cost of both\nCorrect box ticked and work of merit"
-     ],
-     "perOptionSteps": [
-      4,
-      6
-     ]
-    }
+    "id": "maths-2024-ol-p1-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Set B",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p1-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Correct box ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p1-q3-a-solution-3",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, a correct calculation/setup",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p1-q3-a-solution-4",
+    "kind": "point",
+    "verbatim": "A full comparable calculation worked out",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p1-q3-a-solution-5",
+    "kind": "point",
+    "verbatim": "Correct box ticked and work of merit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q3-a"
  },
  {
@@ -27665,7 +27689,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q3(b)",
-  "questionText": "Solve the following equation in x∈ℝ: 3x² −5x + 1 = 0 Give each answer correct to 2 decimal places",
+  "questionText": "Solve the following equation in x ∈ ℝ: 3x² − 5x + 1 = 0. Give each answer correct to 2 decimal places.",
   "figureKey": "maths-2024-OL-paper-p009-i1",
   "labelKey": [],
   "tariffModel": {
@@ -27698,7 +27722,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q3-b"
  },
  {
@@ -27710,7 +27734,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q3(c)",
-  "questionText": "Use algebra to solve the simultaneous equations: 2x + y = 5 x² + y² = 25 Hint: first, use 2x + y = 5 to write y in terms of x",
+  "questionText": "Use algebra to solve the simultaneous equations: 2x + y = 5; x² + y² = 25. Hint: first, use 2x + y = 5 to write y in terms of x.",
   "figureKey": "maths-2024-OL-paper-p010-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27745,7 +27769,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q3-c"
  },
  {
@@ -27757,7 +27781,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q4(a)",
-  "questionText": "Solve the following equation in x∈ℝ: 4(2x−5) −1 = 3x + 7",
+  "questionText": "Solve the following equation in x ∈ ℝ: 4(2x − 5) − 1 = 3x + 7",
   "figureKey": "maths-2024-OL-paper-p011-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27790,7 +27814,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q4-a"
  },
  {
@@ -27802,7 +27826,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q4(b)",
-  "questionText": "Liam, Joan and Martha split a bill in the following ratio: Liam Joan Martha : Liam and Joan paid €154 in total 4 :/between 3 them. between them. 3 5 Martha paid the rest of the bill",
+  "questionText": "Liam, Joan and Martha split a bill in the following ratio: Liam : Joan : Martha = 4 : 3 : 5. Liam and Joan paid €154 in total between them. Martha paid the rest of the bill. Work out how much Martha paid.",
   "figureKey": "maths-2024-OL-paper-p011-i1",
   "labelKey": [],
   "tariffModel": {
@@ -27835,7 +27859,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q4-b"
  },
  {
@@ -27847,7 +27871,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q4(c)(i), (ii)",
-  "questionText": "Write 128 in the form 2^k, where k∈ℕ",
+  "questionText": "(i) Write 128 in the form 2^k, where k ∈ ℕ. (ii) Hence, or otherwise, solve the following equation, where x ∈ ℝ: 2^(4x+1) = 128",
   "figureKey": "maths-2024-OL-paper-p011-i2",
   "labelKey": [],
   "tariffModel": {
@@ -27880,7 +27904,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q4-c-i"
  },
  {
@@ -27892,7 +27916,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q5(a)",
-  "questionText": "Find the value of the following expression when x = 2",
+  "questionText": "Find the value of the following expression when x = 2. Give your answer in the form a/b where a, b ∈ ℕ. (3x + 5)/10 − 1/(x + 3)",
   "figureKey": "maths-2024-OL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27925,7 +27949,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q5-a"
  },
  {
@@ -27937,7 +27961,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q5(b)",
-  "questionText": "The function f is defined as f(x) = 5x² −20x + 2, where x∈ℝ",
+  "questionText": "The function f is defined as f(x) = 5x² − 20x + 2, where x ∈ ℝ. Use calculus to find the co-ordinates of the local minimum point of f.",
   "figureKey": "maths-2024-OL-paper-p012-i1",
   "labelKey": [],
   "tariffModel": {
@@ -27972,7 +27996,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q5-b"
  },
  {
@@ -27984,7 +28008,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q5(c)",
-  "questionText": "The graph of the linear function g(x) is shown below",
+  "questionText": "The graph of the linear function g(x) is shown below. Use the graph to find the rate of change of g(x), that is, find g′(x). Give your answer in the form a/b where a, b ∈ ℕ.",
   "figureKey": "maths-2024-OL-paper-p012-i2",
   "labelKey": [],
   "tariffModel": {
@@ -28012,7 +28036,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q5-c"
  },
  {
@@ -28024,7 +28048,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q6(a)(i), (ii)",
-  "questionText": "Estimate the value of k(x) when x = 2∙5. Show your work on the graph",
+  "questionText": "(i) Estimate the value of k(x) when x = 2·5. Show your work on the graph. (ii) Estimate the range of values of x, for which k(x) ≤ 7. Show your work on the graph.",
   "figureKey": "maths-2024-OL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28059,8 +28083,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q6-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q6-a-i",
+  "stem": "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ."
  },
  {
   "id": "maths-2024-ol-p1-q6-b-i",
@@ -28071,7 +28096,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q6(b)(i)",
-  "questionText": "Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32∙1 units² for this area",
+  "questionText": "Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32·1 units² for this area.",
   "figureKey": "maths-2024-OL-paper-p013-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28104,8 +28129,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q6-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q6-b-i",
+  "stem": "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ. Liam uses the Trapezoidal Rule to estimate the area under the graph of k(x) between 0 and 5. He takes the following measurements from the graph: k(0) = 12, k(1) = 9, k(2) = 6·8, k(3) = 5·1, k(4) = 3·8, k(5) = 2·8."
  },
  {
   "id": "maths-2024-ol-p1-q6-b-ii",
@@ -28116,7 +28142,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q6(b)(ii)",
-  "questionText": "The actual area under k(x), between 0 and 5, is 31∙8 units². Liam estimated the area was 32∙1 units² by using the Trapezoidal Rule",
+  "questionText": "The actual area under k(x), between 0 and 5, is 31·8 units². Liam estimated the area was 32·1 units² by using the Trapezoidal Rule. Work out the percentage error in Liam’s estimate. Give your answer as a percent, correct to 2 decimal places.",
   "figureKey": "maths-2024-OL-paper-p013-i2",
   "labelKey": [],
   "tariffModel": {
@@ -28149,8 +28175,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q6-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q6-b-ii",
+  "stem": "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ. Liam uses the Trapezoidal Rule to estimate the area under the graph of k(x) between 0 and 5. He takes the following measurements from the graph: k(0) = 12, k(1) = 9, k(2) = 6·8, k(3) = 5·1, k(4) = 3·8, k(5) = 2·8."
  },
  {
   "id": "maths-2024-ol-p1-q7-a-i",
@@ -28161,7 +28188,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q7(a)(i), (ii)",
-  "questionText": "Complete the table below to show the values of p(t) for the given values of t",
+  "questionText": "(i) Complete the table below to show the values of p(t) for the given values of t. The table gives p(2) = 16 and p(4) = 12 and leaves t = 0, 1, 3 and 5 to complete. (ii) Draw the graph of p(t) on the axes below, for 0 ≤ t ≤ 5, t ∈ ℝ.",
   "figureKey": "maths-2024-OL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28196,8 +28223,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q7-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q7-a-i",
+  "stem": "During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ."
  },
  {
   "id": "maths-2024-ol-p1-q7-a-iii",
@@ -28208,7 +28236,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q7(a)(iii), (iv)",
-  "questionText": "(iii) Find p′(t), the derivative of p(t). Remember that: p(t) = t³ −6t² + 6t + 20",
+  "questionText": "(iii) Find p′(t), the derivative of p(t). Remember that: p(t) = t³ − 6t² + 6t + 20 (iv) Find the value of p′(2).",
   "figureKey": "maths-2024-OL-paper-p014-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28243,8 +28271,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q7-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q7-a-iii",
+  "stem": "During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ."
  },
  {
   "id": "maths-2024-ol-p1-q7-a-v",
@@ -28255,7 +28284,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q7(a)(v)",
-  "questionText": "p′(4) = 6. Explain what this means in terms of the number of bacteria",
+  "questionText": "p′(4) = 6. Explain what this means in terms of the number of bacteria.",
   "figureKey": "maths-2024-OL-paper-p014-i2",
   "labelKey": [],
   "tariffModel": {
@@ -28283,8 +28312,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q7-a-v"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q7-a-v",
+  "stem": "During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ."
  },
  {
   "id": "maths-2024-ol-p1-q7-b-i",
@@ -28295,7 +28325,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q7(b)(i)",
-  "questionText": "Use k(t) to find the number of bacteria after 1 hour and after 2 hours. Give each answer correct to the nearest whole number",
+  "questionText": "Use k(t) to find the number of bacteria after 1 hour and after 2 hours. Give each answer correct to the nearest whole number.",
   "figureKey": "maths-2024-OL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28328,8 +28358,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q7-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q7-b-i",
+  "stem": "The number of bacteria in a different experiment can be modelled by the function: k(t) = 3000 × 2·72^(0·5t), where k(t) is the number of bacteria and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 8, t ∈ ℝ. There are 3000 bacteria at the beginning of the experiment."
  },
  {
   "id": "maths-2024-ol-p1-q7-b-ii",
@@ -28340,7 +28371,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q7(b)(ii)",
-  "questionText": "After n hours, there are at least 35 000 bacteria according to k(t), where n∈ℕ. By continuing the pattern above, or otherwise, find the smallest possible value of n",
+  "questionText": "After n hours, there are at least 35 000 bacteria according to k(t), where n ∈ ℕ. By continuing the pattern above, or otherwise, find the smallest possible value of n.",
   "figureKey": "maths-2024-OL-paper-p015-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28373,8 +28404,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q7-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q7-b-ii",
+  "stem": "The number of bacteria in a different experiment can be modelled by the function: k(t) = 3000 × 2·72^(0·5t), where k(t) is the number of bacteria and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 8, t ∈ ℝ. There are 3000 bacteria at the beginning of the experiment."
  },
  {
   "id": "maths-2024-ol-p1-q8-a-i",
@@ -28385,7 +28417,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q8(a)(i)",
-  "questionText": "Use the graph to estimate the distance Liam had cycled by 08: 00. Show your work on the diagram above",
+  "questionText": "Use the graph to estimate the distance Liam had cycled by 08:00. Show your work on the diagram above.",
   "figureKey": "maths-2024-OL-paper-p016-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28413,8 +28445,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q8-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q8-a-i",
+  "stem": "Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B."
  },
  {
   "id": "maths-2024-ol-p1-q8-a-ii",
@@ -28425,7 +28458,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q8(a)(ii)",
-  "questionText": "Find his speed in km/hour while he was travelling from A to B",
+  "questionText": "Find his speed in km/hour while he was travelling from A to B.",
   "figureKey": "maths-2024-OL-paper-p016-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28458,8 +28491,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q8-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q8-a-ii",
+  "stem": "Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B."
  },
  {
   "id": "maths-2024-ol-p1-q8-a-iii",
@@ -28470,7 +28504,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q8(a)(iii)",
-  "questionText": "(iii) Use the following information to complete the graph on the diagram above to show the rest of Liam’s journey: • Liam stopped at B for 30 minutes • He then cycled the 32 km back home at a constant speed. This took him 1 hour",
+  "questionText": "Use the following information to complete the graph on the diagram above to show the rest of Liam’s journey: Liam stopped at B for 30 minutes; He then cycled the 32 km back home at a constant speed. This took him 1 hour.",
   "figureKey": "maths-2024-OL-paper-p016-i2",
   "labelKey": [],
   "tariffModel": {
@@ -28503,8 +28537,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q8-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q8-a-iii",
+  "stem": "Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B."
  },
  {
   "id": "maths-2024-ol-p1-q8-b-i",
@@ -28515,7 +28550,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q8(b)(i), (ii)",
-  "questionText": "Complete the table below to show the distance Ellie runs each week for the first six weeks",
+  "questionText": "(i) Complete the table below to show the distance Ellie runs each week for the first six weeks. The table gives week 1 as 6 km and week 2 as 7·5 km. (ii) If Ellie continued with this pattern, find the distance she would run in week 100.",
   "figureKey": "maths-2024-OL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28550,8 +28585,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q8-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q8-b-i",
+  "stem": "Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1·5 km more than the previous week."
  },
  {
   "id": "maths-2024-ol-p1-q8-b-iii",
@@ -28562,7 +28598,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q8(b)(iii)",
-  "questionText": "(iii) Explain why Ellie cannot continue this pattern indefinitely",
+  "questionText": "Explain why Ellie cannot continue this pattern indefinitely.",
   "figureKey": "maths-2024-OL-paper-p017-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28590,8 +28626,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q8-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q8-b-iii",
+  "stem": "Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1·5 km more than the previous week."
  },
  {
   "id": "maths-2024-ol-p1-q8-b-iv",
@@ -28602,7 +28639,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q8(b)(iv), (v)",
-  "questionText": "(iv) Sₙ is the total distance, in km, run by Ellie after n weeks, where n∈ℕ. Write Sₙ in terms of n",
+  "questionText": "(iv) Sₙ is the total distance, in km, run by Ellie after n weeks, where n ∈ ℕ. Write Sₙ in terms of n. (v) Using your answer to part (b)(iv), or otherwise, find the total distance run by Ellie, in km, after 10 weeks if she continues the pattern (that is, find S₁₀).",
   "figureKey": "maths-2024-OL-paper-p017-i2",
   "labelKey": [],
   "tariffModel": {
@@ -28637,8 +28674,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q8-b-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q8-b-iv",
+  "stem": "Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1·5 km more than the previous week."
  },
  {
   "id": "maths-2024-ol-p1-q9-a-i",
@@ -28649,7 +28687,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q9(a)(i), (ii)",
-  "questionText": "Using the exchange rate €1 = £0∙85, find the cost of the concert ticket, in euro",
+  "questionText": "(i) Using the exchange rate €1 = £0·85, find the cost of the concert ticket, in euro. (ii) Liam is a member of the venue’s Loyalty Club, so he gets a discount of 20% on all tickets. He buys 8 tickets for the concert. Work out the total cost of the 8 tickets, in euro.",
   "figureKey": "maths-2024-OL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28684,8 +28722,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q9-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q9-a-i",
+  "stem": "A ticket for a concert in Wales costs £59·50."
  },
  {
   "id": "maths-2024-ol-p1-q9-b",
@@ -28696,7 +28735,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q9(b)",
-  "questionText": "Liam flies to the concert. He finds the following information: • The aeroplane emits 28 000 grams of carbon per km, during the flight • His total flight distance is 394 km • There are 244 passengers on the flight",
+  "questionText": "Liam flies to the concert. He finds the following information: The aeroplane emits 28 000 grams of carbon per km, during the flight; His total flight distance is 394 km; There are 244 passengers on the flight. Work out the amount of carbon emitted during the flight, per passenger. Give your answer in kg, correct to 1 decimal place.",
   "figureKey": "maths-2024-OL-paper-p018-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28729,7 +28768,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-OL-ask-p1-q9-b"
  },
  {
@@ -28741,7 +28780,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q9(c)(i)",
-  "questionText": "Find the attendance at this concert if the price of a ticket is €20",
+  "questionText": "Find the attendance at this concert if the price of a ticket is €20.",
   "figureKey": "maths-2024-OL-paper-p018-i2",
   "labelKey": [],
   "tariffModel": {
@@ -28769,8 +28808,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q9-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q9-c-i",
+  "stem": "The number of people who will attend a concert (the attendance) can change depending on the price of a ticket. For a particular concert, this can be modelled by the function: A(x) = 17 600 − 160x, where A(x) is the attendance at the concert and x is the price of a ticket, in euro, with 0 ≤ x ≤ 110, x ∈ ℝ. Use the function A(x) to answer parts (c)(i) and (c)(ii)."
  },
  {
   "id": "maths-2024-ol-p1-q9-c-ii",
@@ -28781,7 +28821,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q9(c)(ii)",
-  "questionText": "Find the price of a ticket (value of x) for which the attendance would be 12 800",
+  "questionText": "Find the price of a ticket (value of x) for which the attendance would be 12 800.",
   "figureKey": "maths-2024-OL-paper-p019-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28814,8 +28854,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q9-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q9-c-ii",
+  "stem": "The number of people who will attend a concert (the attendance) can change depending on the price of a ticket. For a particular concert, this can be modelled by the function: A(x) = 17 600 − 160x, where A(x) is the attendance at the concert and x is the price of a ticket, in euro, with 0 ≤ x ≤ 110, x ∈ ℝ. Use the function A(x) to answer parts (c)(i) and (c)(ii)."
  },
  {
   "id": "maths-2024-ol-p1-q9-d-i",
@@ -28826,7 +28867,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q9(d)(i), (ii)",
-  "questionText": "For this concert the total tickets sales are €360 000. Use this information to show that: x² −100x + 2400 = 0",
+  "questionText": "(i) For this concert the total tickets sales are €360 000. Use this information to show that: x² − 100x + 2400 = 0 (ii) Solve the equation x² − 100x + 2400 = 0 to find the two possible ticket prices for this concert.",
   "figureKey": "maths-2024-OL-paper-p019-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28861,8 +28902,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q9-d-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q9-d-i",
+  "stem": "For a different concert the total tickets sales, in euro, can be modelled by: 15 000x − 150x². Again, x is the price of a ticket, in euro."
  },
  {
   "id": "maths-2024-ol-p1-q10-a-i",
@@ -28873,7 +28915,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q10(a)(i), (ii)",
-  "questionText": "Work out his net annual income",
+  "questionText": "(i) Work out his net annual income. (ii) Hence, write his net annual income as a percentage of his gross annual income. Give your answer correct to the nearest percent.",
   "figureKey": "maths-2024-OL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28908,8 +28950,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q10-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q10-a-i",
+  "stem": "In 2023 Joseph has a gross annual income of €48 000. He pays net annual income tax of €7650, annual PRSI of €1920, and pays €1407 in USC each year. He has no further deductions from his gross income."
  },
  {
   "id": "maths-2024-ol-p1-q10-b-i",
@@ -28920,7 +28963,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q10(b)(i), (ii)",
-  "questionText": "Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net annual income",
+  "questionText": "(i) Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net annual income. (ii) Caroline’s gross annual income is €50 000. Her annual tax credit is €3550. Find how much annual income tax she pays.",
   "figureKey": "maths-2024-OL-paper-p020-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28955,8 +28998,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q10-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q10-b-i",
+  "stem": "The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%."
  },
  {
   "id": "maths-2024-ol-p1-q10-b-iii",
@@ -28967,7 +29011,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q10(b)(iii)",
-  "questionText": "(iii) The personal tax credit for an employee in Ireland in 2023 is €3550. Find the greatest amount of income an employee can earn before paying any income tax",
+  "questionText": "The personal tax credit for an employee in Ireland in 2023 is €3550. Find the greatest amount of income an employee can earn before paying any income tax. Hint: The lowest income tax rate is 20%.",
   "figureKey": "maths-2024-OL-paper-p021-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28995,8 +29039,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q10-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q10-b-iii",
+  "stem": "The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%."
  },
  {
   "id": "maths-2024-ol-p1-q10-b-iv",
@@ -29007,41 +29052,46 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q10(b)(iv)",
-  "questionText": "(iv) In 2024, the amount of income being taxed at the 20% rate was increased from €40 000 to €42 000",
+  "questionText": "In 2024, the amount of income being taxed at the 20% rate was increased from €40 000 to €42 000. Work out how much less income tax a person earning more than €42 000 would pay in 2024 compared to 2023 due to this increase.",
   "figureKey": "maths-2024-OL-paper-p021-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2024-ol-p1-q10-b-iv-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, finding 2000",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "Work of merit, for example, finding 2000",
-      "2000 × 20%\nFinding total tax for a person earning 42 000 or more for both years"
-     ],
-     "perOptionSteps": [
-      2,
-      3
-     ]
-    }
+    "id": "maths-2024-ol-p1-q10-b-iv-solution-1",
+    "kind": "point",
+    "verbatim": "(42 000 − 40 000) × 0·2 = [€]400",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p1-q10-b-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, finding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p1-q10-b-iv-solution-3",
+    "kind": "point",
+    "verbatim": "2000 × 20%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p1-q10-b-iv-solution-4",
+    "kind": "point",
+    "verbatim": "Finding total tax for a person earning 42 000 or more for both years",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q10-b-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q10-b-iv",
+  "stem": "The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%."
  },
  {
   "id": "maths-2024-ol-p1-q10-c-i",
@@ -29052,7 +29102,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q10(c)(i), (ii)",
-  "questionText": "Anne’s annual electricity bill was €1950 and broadband bill was €400. She worked from home for 120 days in the year",
+  "questionText": "(i) Anne’s annual electricity bill was €1950 and broadband bill was €400. She worked from home for 120 days in the year. Find how much tax relief she can claim. Give your answer correct to the nearest cent. (ii) Tara also worked from home for a number of days. Tara’s total electricity and broadband bills were €2250. She claimed tax relief of €135 for working from home. Calculate how many days she worked from home.",
   "figureKey": "maths-2024-OL-paper-p021-i2",
   "labelKey": [],
   "tariffModel": {
@@ -29087,8 +29137,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-OL-ask-p1-q10-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q10-c-i",
+  "stem": "An employee who works from home may qualify for tax relief on their electricity and broadband bills. The amount of tax relief such an employee can claim, A, is calculated using the formula: A = (Total annual electricity and broadband bills) × d/365 × 0·3, where d is the number of days worked from home."
  },
  {
   "id": "maths-2024-ol-p2-q1-a-i",

@@ -26,6 +26,7 @@ import review from '../scripts/markbank/mathematics/reviews/2025-higher-p1.json'
 import paper2 from '../scripts/markbank/mathematics/reviews/2025-higher-p2.json';
 import higher2024p1 from '../scripts/markbank/mathematics/reviews/2024-higher-p1.json';
 import higher2024p2 from '../scripts/markbank/mathematics/reviews/2024-higher-p2.json';
+import ordinary2024p1 from '../scripts/markbank/mathematics/reviews/2024-ordinary-p1.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
@@ -653,4 +654,45 @@ describe('2024 Higher Mathematics Paper 2 independent source review', () => {
     }
     expect(card('q4-a').sourceMaterial?.measurementRequired).toBe(true);
   });
+});
+
+describe.each([
+  { number: 1, count: 39, review: ordinary2024p1 },
+])('2024 Ordinary Mathematics Paper $number independent source review', ({ number, count, review: census }) => {
+  const cards = ORDINARY.filter(card => card.year === 2024 && card.questionRef.includes(`Paper ${number}`));
+
+  it('retains every published unit and all 380 offered marks', () => {
+    expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
+    expect(cards).toHaveLength(count);
+    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(380);
+    for (const [question, marks] of Object.entries(census.printedQuestionMarks)) {
+      expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
+        .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
+    }
+  });
+
+  it('restores prompts and files every task in both taxonomies', () => {
+    const specification = resolveCurriculumSpecification('mathematics', 2024)!;
+    for (const task of census.cards) {
+      const card = cards.find(candidate => candidate.id === task.id)!;
+      expect(card.stem ?? '', card.id).toBe((task as { stem?: string }).stem ?? '');
+      expect(card.questionText, card.id).toBe(task.questionText);
+      expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
+      expect(card.sourceMaterial?.sourceFileid, card.id).toBe(census.paperFileid);
+      expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
+      expect(card.topicId, card.id).toBe(task.topicId);
+      expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
+      const question = task.printedParts[0].match(/^Q(\d+)/)![1];
+      expect(examTopicIdsForQuestion('mathematics', 'ordinary', 2024, 'main', question, `p${number}`, 'ev', census.paperFileid), card.id)
+        .toEqual(expect.arrayContaining(task.examTopicIds));
+    }
+  });
+});
+
+it('ships the three 2024 Ordinary Paper 1 tasks the build used to refuse', () => {
+  for (const suffix of ['q2-c', 'q3-a', 'q10-b-iv']) {
+    const card = ORDINARY.find(candidate => candidate.id === `maths-2024-ol-p1-${suffix}`);
+    expect(card, suffix).toBeDefined();
+    expect(card!.rows.length, suffix).toBeGreaterThan(1);
+  }
 });

@@ -8249,16 +8249,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q1-a-i", topicId: "maths-3-3", conceptId: "value-machine-after-year",
     section: "B", questionRef: "2024 OL Paper 1 Q1(a)(i), (ii)",
-    questionText: "Find the value of the machine after 1 year",
+    stem: "A farmer buys a new machine for €30 000. It depreciates (decreases in value) by 20% each year.",
+    questionText: "(i) Find the value of the machine after 1 year. (ii) Hence, or otherwise, find the value of the machine after 2 years.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q1-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, a relevant formula, finds 20%, 0 ∙8 or 80% written down", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Correct answer for (ii) only (i.e. €19 200) given without work. Note: Accept correct answers without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, a relevant formula, finds 20%, 0 ∙8 or 80% written down","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q1-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q1-a-i.png",
@@ -8279,16 +8293,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q1-b", topicId: "maths-3-3", conceptId: "farmer-bought-some-livestock-4716-including",
     section: "B", questionRef: "2024 OL Paper 1 Q1(b)",
-    questionText: "A farmer bought some livestock for €4716, including VAT. The cost of the livestock was €4500, excluding VAT",
+    questionText: "A farmer bought some livestock for €4716, including VAT. The cost of the livestock was €4500, excluding VAT. Calculate the percentage VAT rate used.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q1-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct subtraction or relevant fraction", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some correct subtraction or relevant fraction","(4716−4500)/4500 × 100\n104 ∙8 with work"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q1-b.png",
@@ -8309,16 +8336,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q1-c", topicId: "maths-3-3", conceptId: "farmer-also-bought-land-one-year",
     section: "B", questionRef: "2024 OL Paper 1 Q1(c)",
-    questionText: "The farmer also bought land. One year later its value had increased by 12∙5% and was now €52 875",
+    questionText: "The farmer also bought land. One year later its value had increased by 12·5% and was now €52 875. Find the value of the land when the farmer bought it.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q1-c-r1", kind: "anyN", verbatim: "Work of merit, for example, mentions 112 ∙5 or 1 ∙125\nFinds 12 ∙5 % and continues or stops", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, mentions 112 ∙5 or 1 ∙125\nFinds 12 ∙5 % and continues or stops","(52 875)/112∙5 × 100\n470"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q1-c.png",
@@ -8339,16 +8379,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q2-a-i", topicId: "maths-4-4", conceptId: "using-argand-diagram-write-down-values",
+    id: "maths-2024-ol-p1-q2-a-i", topicId: "maths-3-1", conceptId: "using-argand-diagram-write-down-values",
     section: "B", questionRef: "2024 OL Paper 1 Q2(a)(i), (ii)",
-    questionText: "Using the Argand diagram, write down the values of z₁, z₂ and z₃ in the form a + b where a, b∈ℤ",
+    stem: "In this question, i² = −1. The complex numbers z₁, z₂, and z₃ are shown on the Argand diagram below. One of these numbers is on the imaginary axis.",
+    questionText: "(i) Using the Argand diagram, write down the values of z₁, z₂ and z₃ in the form a + bi where a, b ∈ ℤ. (ii) Write down the value of |z₂|.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q2-a-i-r1", kind: "anyN", verbatim: "One ordinate of one complex number correct\nModulus formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Four items involved in solution: 1. z₁ 2. z₂ 3. z₃ 4. |z₂|. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["One ordinate of one complex number correct\nModulus formula","Work of merit in (i) AND (ii)\nTwo items correct","Three items correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q2-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q2-a-i.png",
@@ -8369,16 +8423,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q2-b", topicId: "maths-3-1", conceptId: "write-form",
     section: "B", questionRef: "2024 OL Paper 1 Q2(b)",
-    questionText: "v= 15 1+2i. Write v in the form a+ b, where a, b∈ℤ",
+    stem: "In this question, i² = −1.",
+    questionText: "v = 15/(1 + 2i). Write v in the form a + bi, where a, b ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-ol-p1-q2-b-r1", kind: "anyN", verbatim: "Work of merit, for example, writes down the conjugate\nSome correct multiplication", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 8. The full scale runs to 15. Full Credit -1: Apply a * if in the form (15−30ii)/5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Work of merit, for example, writes down the conjugate\nSome correct multiplication","15/(1 + 2i) × (1−2i)/(1−2i) with some correct multiplication"],"perOptionSteps":[5,10]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,5,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q2-b.png",
@@ -8399,16 +8467,123 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-q2-c", topicId: "maths-3-1", conceptId: "complex-number-shown-argand-diagram-drawn",
+    section: "B", questionRef: "2024 OL Paper 1 Q2(c)",
+    stem: "In this question, i² = −1.",
+    questionText: "The complex number w = 1 + 2i is shown on the Argand diagram below (drawn to scale). The three complex numbers labelled A, B, and C are also shown on the Argand diagram. One of these is w̅, the complex conjugate of w. Which of the complex numbers A, B or C is w̅? Give a reason for your answer. Tick one box only.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-q2-c-solution-1", kind: "point", verbatim: "Box C ticked", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-q2-c-solution-2", kind: "point", verbatim: "The conjugate is reflected in the real axis", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-q2-c-solution-3", kind: "point", verbatim: "Correct box ticked", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-q2-c-solution-4", kind: "point", verbatim: "Work of merit in reason, for example, 1 − 2i", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-OL-ask-p1-q2-c",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q2-c.png",
+          "srcHash": "b20ca7cf46eafe624bce60ce763c7f17",
+          "alt": "The question as printed on the paper — The complex number w = 1 + 2i is shown on the Argand diagram below (drawn to scale). The three complex numbers labelled A, B, and C are also shown on the Argand diagram. One of these is w̅, the complex conjugate of w.… Full card prompt: In this question, i² = −1. The complex number w = 1 + 2i is shown on the Argand diagram below (drawn to scale). The three complex numbers labelled A, B, and C are also shown on the Argand diagram. One of these is w̅, the complex conjugate of w. Which of the complex numbers A, B or C is w̅? Give a reason for your answer. Tick one box only.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-OL-paper-p008-i2",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p008-i2.png",
+          "srcHash": "8380af897df9a63556715d1cbbbca8a8",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q2(c), typeset as the State Examinations Commission set it. It reads: Box C ticked 1 −2i OR The conjugate is reflected in the real",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-q3-a", topicId: "maths-3-3", conceptId: "toy-shop-sells-two-different-sets",
+    section: "B", questionRef: "2024 OL Paper 1 Q3(a)",
+    questionText: "A toy shop sells two different sets of the same building blocks, Set A and Set B, as shown in the table below: Set A has 60 blocks and costs €12; Set B has 150 blocks and costs €28. Which set of building blocks works out cheaper per block? Use calculations to support your answer. Tick one box only: Set A or Set B.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-q3-a-solution-1", kind: "point", verbatim: "Set B", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-q3-a-solution-2", kind: "point", verbatim: "Correct box ticked", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-q3-a-solution-3", kind: "point", verbatim: "Work of merit, for example, a correct calculation/setup", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-q3-a-solution-4", kind: "point", verbatim: "A full comparable calculation worked out", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-q3-a-solution-5", kind: "point", verbatim: "Correct box ticked and work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-OL-ask-p1-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q3-a.png",
+          "srcHash": "921a53d51cbb5a5ced2dc9447c972613",
+          "alt": "The question as printed on the paper — A toy shop sells two different sets of the same building blocks, Set A and Set B, as shown in the table below. Number of blocks Cost Set A 60 €12 Set B 150 €28 Which set of building blocks works out cheaper per block?… Full card prompt: A toy shop sells two different sets of the same building blocks, Set A and Set B, as shown in the table below: Set A has 60 blocks and costs €12; Set B has 150 blocks and costs €28. Which set of building blocks works out cheaper per block? Use calculations to support your answer. Tick one box only: Set A or Set B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-OL-paper-p009-i0",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p009-i0.png",
+          "srcHash": "666b5a6426ce276193fdce6b2e2135c0",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q3(a), typeset as the State Examinations Commission set it. It reads: Set B Set A cost per block 12/60 = 0 ∙ 2 Set B cost per block 28/150 = 0 ∙ 1867",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q3-b", topicId: "maths-4-2", conceptId: "solve-equation-each-correct-decimal-places",
     section: "B", questionRef: "2024 OL Paper 1 Q3(b)",
-    questionText: "Solve the following equation in x∈ℝ: 3x² −5x + 1 = 0 Give each answer correct to 2 decimal places",
+    questionText: "Solve the following equation in x ∈ ℝ: 3x² − 5x + 1 = 0. Give each answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p1-q3-b-r1", kind: "anyN", verbatim: "Quadratic formula written\nWork of merit, for example, identifies one of a, b or c", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit -1: Apply a * for no or incorrect rounding. Note: Three steps involved in solution: 1. Identifies a, b, and c 2. Fully substituted formula 3. Both correctly evaluated. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Quadratic formula written\nWork of merit, for example, identifies one of a, b or c","Two steps correct\nFormula fully correctly substituted\nSecond value not found"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q3-b.png",
@@ -8429,16 +8604,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q3-c", topicId: "maths-4-2", conceptId: "algebra-solve-simultaneous-equations-hint-first",
     section: "B", questionRef: "2024 OL Paper 1 Q3(c)",
-    questionText: "Use algebra to solve the simultaneous equations: 2x + y = 5 x² + y² = 25 Hint: first, use 2x + y = 5 to write y in terms of x",
+    questionText: "Use algebra to solve the simultaneous equations: 2x + y = 5; x² + y² = 25. Hint: first, use 2x + y = 5 to write y in terms of x.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 7, 9, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-ol-p1-q3-c-r1", kind: "anyN", verbatim: "Some work of merit, for example, one correct transposition on any step\nTrial and improvement\nWrites the quadratic formula", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 7, three parts for 9. The full scale runs to 15. Note: Four steps involved in solution: 1. Writes one variable in terms of the other 2. Substitute this into the quadratic 3. Finds both values of x (or y) OR one co-ordinate set 4. Finds the two co-ordinate sets. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Some work of merit, for example, one correct transposition on any step\nTrial and improvement\nWrites the quadratic formula","Two steps correct","Three steps correct"],"perOptionSteps":[5,2,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q3-c",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q3-c.png",
@@ -8459,16 +8647,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q4-a", topicId: "maths-4-2", conceptId: "solve-equation",
     section: "B", questionRef: "2024 OL Paper 1 Q4(a)",
-    questionText: "Solve the following equation in x∈ℝ: 4(2x−5) −1 = 3x + 7",
+    questionText: "Solve the following equation in x ∈ ℝ: 4(2x − 5) − 1 = 3x + 7",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q4-a-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct operation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Three steps involved in solution: 1. Distribution of 4 2. Transposing 3. Solves. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one correct operation","Two steps correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q4-a",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q4-a.png",
@@ -8489,16 +8690,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q4-b", topicId: "maths-3-3", conceptId: "liam-joan-martha-split-bill-ratio",
     section: "B", questionRef: "2024 OL Paper 1 Q4(b)",
-    questionText: "Liam, Joan and Martha split a bill in the following ratio: Liam Joan Martha : Liam and Joan paid €154 in total 4 :/between 3 them. between them. 3 5 Martha paid the rest of the bill",
+    questionText: "Liam, Joan and Martha split a bill in the following ratio: Liam : Joan : Martha = 4 : 3 : 5. Liam and Joan paid €154 in total between them. Martha paid the rest of the bill. Work out how much Martha paid.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q4-b-r1", kind: "anyN", verbatim: "Work of merit, for example, 4 + 3, 12", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, 4 + 3, 12","Calculates one part"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q4-b.png",
@@ -8519,16 +8733,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q4-c-i", topicId: "maths-3-1", conceptId: "write-128-form",
+    id: "maths-2024-ol-p1-q4-c-i", topicId: "maths-3-2", conceptId: "write-128-form",
     section: "B", questionRef: "2024 OL Paper 1 Q4(c)(i), (ii)",
-    questionText: "Write 128 in the form 2^k, where k∈ℕ",
+    questionText: "(i) Write 128 in the form 2^k, where k ∈ ℕ. (ii) Hence, or otherwise, solve the following equation, where x ∈ ℝ: 2^(4x+1) = 128",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q4-c-i-r1", kind: "anyN", verbatim: "(i) correct\nSome work of merit in (ii), for example, equates 2^(4x + 1) to their answer from (i)\nSome correct work with indices", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept when part (i) is correct and part (ii) is solved by correct value trialled. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["(i) correct\nSome work of merit in (ii), for example, equates 2^(4x + 1) to their answer from (i)\nSome correct work with indices","Part (i) correct and work of merit in part (ii)\nPart (ii) correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q4-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q4-c-i.png",
@@ -8549,16 +8776,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q5-a", topicId: "maths-4-1", conceptId: "value-expression-when",
     section: "B", questionRef: "2024 OL Paper 1 Q5(a)",
-    questionText: "Find the value of the following expression when x = 2",
+    questionText: "Find the value of the following expression when x = 2. Give your answer in the form a/b where a, b ∈ ℕ. (3x + 5)/10 − 1/(x + 3)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p1-q5-a-r1", kind: "anyN", verbatim: "Some correct substitution\nWork towards a single fraction", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit -1: Apply a * for incorrect form. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some correct substitution\nWork towards a single fraction","Fully correct substitution"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q5-a.png",
@@ -8579,16 +8819,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q5-b", topicId: "maths-3-1", conceptId: "function-defined-20x",
+    id: "maths-2024-ol-p1-q5-b", topicId: "maths-5-2", conceptId: "function-defined-20x",
     section: "B", questionRef: "2024 OL Paper 1 Q5(b)",
-    questionText: "The function f is defined as f(x) = 5x² −20x + 2, where x∈ℝ",
+    questionText: "The function f is defined as f(x) = 5x² − 20x + 2, where x ∈ ℝ. Use calculus to find the co-ordinates of the local minimum point of f.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10, 12, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "maths-2024-ol-p1-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates differentiation or dddd/dddd\nSome correct differentiation", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10, three parts for 12. The full scale runs to 20. Note: Three steps involved in solution: 1. Correct differentiation 2. Finds value of x 3. Finds f(2). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":7,"options":["Work of merit, for example, indicates differentiation or dddd/dddd\nSome correct differentiation","One step correct","Two steps correct"],"perOptionSteps":[7,3,10]} },
     ],
+    mathematicsScale: {"code":"20D","marks":[0,7,10,12,20],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q5-b.png",
@@ -8609,21 +8862,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q5-c", topicId: "maths-5-1", conceptId: "graph-linear-function-shown",
+    id: "maths-2024-ol-p1-q5-c", topicId: "maths-5-2", conceptId: "graph-linear-function-shown",
     section: "B", questionRef: "2024 OL Paper 1 Q5(c)",
-    questionText: "The graph of the linear function g(x) is shown below",
+    questionText: "The graph of the linear function g(x) is shown below. Use the graph to find the rate of change of g(x), that is, find g′(x). Give your answer in the form a/b where a, b ∈ ℕ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p1-q5-c-r1", kind: "anyN", verbatim: "Work of merit, for example, work towards finding the equation of the line\nSome reference to differentiation\nWork on graph towards finding the slope\nRRRRRRRR/RRRRRR or mentions slope", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept correct answer without work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, work towards finding the equation of the line\nSome reference to differentiation\nWork on graph towards finding the slope\nRRRRRRRR/RRRRRR or mentions slope"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q5-c",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q5-c.png",
           "srcHash": "0b1acddbd6c4e15f9dedcf5faa38dc00",
-          "alt": "The question as printed on the paper — The graph of the linear function g(x) is shown below. y 6 g(x) 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 6 -1 -2 Use the graph to find the rate of change of g(x), that is, find g′(x). Give your answer in the form aa/bb where aa,… Full card prompt: The graph of the linear function g(x) is shown below",
+          "alt": "The question as printed on the paper — The graph of the linear function g(x) is shown below. y 6 g(x) 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 6 -1 -2 Use the graph to find the rate of change of g(x), that is, find g′(x). Give your answer in the form aa/bb where aa,… Full card prompt: The graph of the linear function g(x) is shown below. Use the graph to find the rate of change of g(x), that is, find g′(x). Give your answer in the form a/b where a, b ∈ ℕ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8639,21 +8905,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q6-a-i", topicId: "maths-5-1", conceptId: "estimate-value-when-work-graph",
     section: "B", questionRef: "2024 OL Paper 1 Q6(a)(i), (ii)",
-    questionText: "Estimate the value of k(x) when x = 2∙5. Show your work on the graph",
+    stem: "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ.",
+    questionText: "(i) Estimate the value of k(x) when x = 2·5. Show your work on the graph. (ii) Estimate the range of values of x, for which k(x) ≤ 7. Show your work on the graph.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 7, 9, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-ol-p1-q6-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example some correct work on diagram", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 7, three parts for 9. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Work of merit, for example some correct work on diagram","(i) or (ii) correct\nWork of merit in (i) AND (ii)","One part correct and work of merit in the other part\nBoth answers correct but no work on the graph"],"perOptionSteps":[5,2,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q6-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q6-a-i.png",
           "srcHash": "2f5b8cac34114a640c6a3c8c38d1553c",
-          "alt": "The question as printed on the paper — The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. Use the graph to answer parts (a)(i) and (a)(ii). y 12 11 10 9 8 7 6 5 4 3 k(x) 2 1 x 1 2 3 4 5 0 Estimate the value of k(x)… Full card prompt: Estimate the value of k(x) when x = 2∙5. Show your work on the graph",
+          "alt": "The question as printed on the paper — The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. Use the graph to answer parts (a)(i) and (a)(ii). y 12 11 10 9 8 7 6 5 4 3 k(x) 2 1 x 1 2 3 4 5 0 Estimate the value of k(x)… Full card prompt: The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ. (i) Estimate the value of k(x) when x = 2·5. Show your work on the graph. (ii) Estimate the range of values of x, for which k(x) ≤ 7. Show your work on the graph.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8669,21 +8949,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q6-b-i", topicId: "maths-5-1", conceptId: "using-values-table-trapezoidal-rule-will",
+    id: "maths-2024-ol-p1-q6-b-i", topicId: "maths-3-4", conceptId: "using-values-table-trapezoidal-rule-will",
     section: "B", questionRef: "2024 OL Paper 1 Q6(b)(i)",
-    questionText: "Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32∙1 units² for this area",
+    stem: "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ. Liam uses the Trapezoidal Rule to estimate the area under the graph of k(x) between 0 and 5. He takes the following measurements from the graph: k(0) = 12, k(1) = 9, k(2) = 6·8, k(3) = 5·1, k(4) = 3·8, k(5) = 2·8.",
+    questionText: "Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32·1 units² for this area.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p1-q6-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, a relevant formula or relevant addition\nRelevant work on diagram", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, a relevant formula or relevant addition\nRelevant work on diagram","Fully correct substitution"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q6-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q6-b-i.png",
           "srcHash": "3583aac6dc9abdc1048cb6145dc3b4b1",
-          "alt": "The question as printed on the paper — The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. Use the graph to answer parts (a)(i) and (a)(ii). y 12 11 10 9 8 7 6 5 4 3 k(x) 2 1 x 1 2 3 4 5 0 Estimate the value of k(x)… Full card prompt: Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32∙1 units² for this area",
+          "alt": "The question as printed on the paper — The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. Use the graph to answer parts (a)(i) and (a)(ii). y 12 11 10 9 8 7 6 5 4 3 k(x) 2 1 x 1 2 3 4 5 0 Estimate the value of k(x)… Full card prompt: The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ. Liam uses the Trapezoidal Rule to estimate the area under the graph of k(x) between 0 and 5. He takes the following measurements from the graph: k(0) = 12, k(1) = 9, k(2) = 6·8, k(3) = 5·1, k(4) = 3·8, k(5) = 2·8. Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32·1 units² for this area.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8699,21 +8994,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q6-b-ii", topicId: "maths-5-1", conceptId: "actual-area-under-between-units-liam",
+    id: "maths-2024-ol-p1-q6-b-ii", topicId: "maths-3-3", conceptId: "actual-area-under-between-units-liam",
     section: "B", questionRef: "2024 OL Paper 1 Q6(b)(ii)",
-    questionText: "The actual area under k(x), between 0 and 5, is 31∙8 units². Liam estimated the area was 32∙1 units² by using the Trapezoidal Rule",
+    stem: "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ. Liam uses the Trapezoidal Rule to estimate the area under the graph of k(x) between 0 and 5. He takes the following measurements from the graph: k(0) = 12, k(1) = 9, k(2) = 6·8, k(3) = 5·1, k(4) = 3·8, k(5) = 2·8.",
+    questionText: "The actual area under k(x), between 0 and 5, is 31·8 units². Liam estimated the area was 32·1 units² by using the Trapezoidal Rule. Work out the percentage error in Liam’s estimate. Give your answer as a percent, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q6-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, a relevant formula\nCorrect numerator or denominator", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: Apply a * for no or incorrect rounding. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, a relevant formula\nCorrect numerator or denominator","Fully correct substitution\nIncorrect denominator but finishes correctly"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q6-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q6-b-ii.png",
           "srcHash": "507617fa2ced50d7597243a696683723",
-          "alt": "The question as printed on the paper — The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. Use the graph to answer parts (a)(i) and (a)(ii). y 12 11 10 9 8 7 6 5 4 3 k(x) 2 1 x 1 2 3 4 5 0 Estimate the value of k(x)… Full card prompt: The actual area under k(x), between 0 and 5, is 31∙8 units². Liam estimated the area was 32∙1 units² by using the Trapezoidal Rule",
+          "alt": "The question as printed on the paper — The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. Use the graph to answer parts (a)(i) and (a)(ii). y 12 11 10 9 8 7 6 5 4 3 k(x) 2 1 x 1 2 3 4 5 0 Estimate the value of k(x)… Full card prompt: The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ. Liam uses the Trapezoidal Rule to estimate the area under the graph of k(x) between 0 and 5. He takes the following measurements from the graph: k(0) = 12, k(1) = 9, k(2) = 6·8, k(3) = 5·1, k(4) = 3·8, k(5) = 2·8. The actual area under k(x), between 0 and 5, is 31·8 units². Liam estimated the area was 32·1 units² by using the Trapezoidal Rule. Work out the percentage error in Liam’s estimate. Give your answer as a percent, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8729,21 +9039,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q7-a-i", topicId: "maths-5-2", conceptId: "complete-table-values-given-values",
+    id: "maths-2024-ol-p1-q7-a-i", topicId: "maths-5-1", conceptId: "complete-table-values-given-values",
     section: "B", questionRef: "2024 OL Paper 1 Q7(a)(i), (ii)",
-    questionText: "Complete the table below to show the values of p(t) for the given values of t",
+    stem: "During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ.",
+    questionText: "(i) Complete the table below to show the values of p(t) for the given values of t. The table gives p(2) = 16 and p(4) = 12 and leaves t = 0, 1, 3 and 5 to complete. (ii) Draw the graph of p(t) on the axes below, for 0 ≤ t ≤ 5, t ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q7-a-i-r1", kind: "anyN", verbatim: "1 to 3 items correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Apply a * if 10 items correct. Note: Solution requires 11 items, 4 values in table, 6 points plotted and the curve. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["1 to 3 items correct","4 to 6 items correct","7 to 9 items correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q7-a-i.png",
           "srcHash": "8016441f82ab4ef317bd06a11e29cf9b",
-          "alt": "The question as printed on the paper — During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ −6t² + 6t + 20 where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the… Full card prompt: Complete the table below to show the values of p(t) for the given values of t",
+          "alt": "The question as printed on the paper — During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ −6t² + 6t + 20 where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the… Full card prompt: During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ. (i) Complete the table below to show the values of p(t) for the given values of t. The table gives p(2) = 16 and p(4) = 12 and leaves t = 0, 1, 3 and 5 to complete. (ii) Draw the graph of p(t) on the axes below, for 0 ≤ t ≤ 5, t ∈ ℝ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8759,21 +9083,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q7-a-iii", topicId: "maths-5-2", conceptId: "iii-derivative-remember",
     section: "B", questionRef: "2024 OL Paper 1 Q7(a)(iii), (iv)",
-    questionText: "(iii) Find p′(t), the derivative of p(t). Remember that: p(t) = t³ −6t² + 6t + 20",
+    stem: "During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ.",
+    questionText: "(iii) Find p′(t), the derivative of p(t). Remember that: p(t) = t³ − 6t² + 6t + 20 (iv) Find the value of p′(2).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p1-q7-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct differentiation in (iii) or some correct substitution in (iv)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, some correct differentiation in (iii) or some correct substitution in (iv)","Work of merit in (iii) AND (iv)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q7-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q7-a-iii.png",
           "srcHash": "f2374a4e943566758ea20611a7fd608e",
-          "alt": "The question as printed on the paper — During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ −6t² + 6t + 20 where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the… Full card prompt: (iii) Find p′(t), the derivative of p(t). Remember that: p(t) = t³ −6t² + 6t + 20",
+          "alt": "The question as printed on the paper — During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ −6t² + 6t + 20 where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the… Full card prompt: During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ. (iii) Find p′(t), the derivative of p(t). Remember that: p(t) = t³ − 6t² + 6t + 20 (iv) Find the value of p′(2).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8789,21 +9128,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q7-a-v", topicId: "maths-5-2", conceptId: "explain-what-means-terms-number-bacteria",
     section: "B", questionRef: "2024 OL Paper 1 Q7(a)(v)",
-    questionText: "p′(4) = 6. Explain what this means in terms of the number of bacteria",
+    stem: "During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ.",
+    questionText: "p′(4) = 6. Explain what this means in terms of the number of bacteria.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q7-a-v-r1", kind: "anyN", verbatim: "Partially correct explanation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Partially correct explanation"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,4,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q7-a-v",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q7-a-v.png",
           "srcHash": "cd3ba6154a25dbeae0b0f65a5861f571",
-          "alt": "The question as printed on the paper — During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ −6t² + 6t + 20 where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the… Full card prompt: p′(4) = 6. Explain what this means in terms of the number of bacteria",
+          "alt": "The question as printed on the paper — During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ −6t² + 6t + 20 where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the… Full card prompt: During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ. p′(4) = 6. Explain what this means in terms of the number of bacteria.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8819,16 +9173,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q7-b-i", topicId: "maths-5-2", conceptId: "number-bacteria-after-hour-after-hours",
+    id: "maths-2024-ol-p1-q7-b-i", topicId: "maths-5-1", conceptId: "number-bacteria-after-hour-after-hours",
     section: "B", questionRef: "2024 OL Paper 1 Q7(b)(i)",
-    questionText: "Use k(t) to find the number of bacteria after 1 hour and after 2 hours. Give each answer correct to the nearest whole number",
+    stem: "The number of bacteria in a different experiment can be modelled by the function: k(t) = 3000 × 2·72^(0·5t), where k(t) is the number of bacteria and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 8, t ∈ ℝ. There are 3000 bacteria at the beginning of the experiment.",
+    questionText: "Use k(t) to find the number of bacteria after 1 hour and after 2 hours. Give each answer correct to the nearest whole number.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q7-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution in one or both", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some correct substitution in one or both","After 1 hour OR after 2 hours calculated correctly"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q7-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q7-b-i.png",
@@ -8849,21 +9217,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q7-b-ii", topicId: "maths-3-1", conceptId: "after-hours-there-least-000-bacteria",
+    id: "maths-2024-ol-p1-q7-b-ii", topicId: "maths-5-1", conceptId: "after-hours-there-least-000-bacteria",
     section: "B", questionRef: "2024 OL Paper 1 Q7(b)(ii)",
-    questionText: "After n hours, there are at least 35 000 bacteria according to k(t), where n∈ℕ. By continuing the pattern above, or otherwise, find the smallest possible value of n",
+    stem: "The number of bacteria in a different experiment can be modelled by the function: k(t) = 3000 × 2·72^(0·5t), where k(t) is the number of bacteria and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 8, t ∈ ℝ. There are 3000 bacteria at the beginning of the experiment.",
+    questionText: "After n hours, there are at least 35 000 bacteria according to k(t), where n ∈ ℕ. By continuing the pattern above, or otherwise, find the smallest possible value of n.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-ol-p1-q7-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, trialling values for n where n ≠ 1 , 2", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 8. The full scale runs to 15. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Work of merit, for example, trialling values for n where n ≠ 1 , 2","k(4) and k(5) calculated"],"perOptionSteps":[5,10]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,5,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q7-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q7-b-ii.png",
           "srcHash": "7ae24ecf659a7dd2047cdba5ffa169e9",
-          "alt": "The question as printed on the paper — Draw the graph of p(t) on the axes below, for 0 ≤ t ≤ 5, t∈ℝ. 28 26 24 Number of bacteria, p(t) 22 20 (thousands) 18 16 14 12 10 8 6 4 2 0 0 1 2 3 4 5 Time, t (hours) 16 Leaving Certificate, 2024 Mathematics, Paper 1 –… Full card prompt: After n hours, there are at least 35 000 bacteria according to k(t), where n∈ℕ. By continuing the pattern above, or otherwise, find the smallest possible value of n",
+          "alt": "The question as printed on the paper — Draw the graph of p(t) on the axes below, for 0 ≤ t ≤ 5, t∈ℝ. 28 26 24 Number of bacteria, p(t) 22 20 (thousands) 18 16 14 12 10 8 6 4 2 0 0 1 2 3 4 5 Time, t (hours) 16 Leaving Certificate, 2024 Mathematics, Paper 1 –… Full card prompt: The number of bacteria in a different experiment can be modelled by the function: k(t) = 3000 × 2·72^(0·5t), where k(t) is the number of bacteria and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 8, t ∈ ℝ. There are 3000 bacteria at the beginning of the experiment. After n hours, there are at least 35 000 bacteria according to k(t), where n ∈ ℕ. By continuing the pattern above, or otherwise, find the smallest possible value of n.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8879,21 +9261,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q8-a-i", topicId: "maths-4-1", conceptId: "graph-estimate-distance-liam-had-cycled",
+    id: "maths-2024-ol-p1-q8-a-i", topicId: "maths-5-1", conceptId: "graph-estimate-distance-liam-had-cycled",
     section: "B", questionRef: "2024 OL Paper 1 Q8(a)(i)",
-    questionText: "Use the graph to estimate the distance Liam had cycled by 08: 00. Show your work on the diagram above",
+    stem: "Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B.",
+    questionText: "Use the graph to estimate the distance Liam had cycled by 08:00. Show your work on the diagram above.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p1-q8-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, work on diagram\nNo work shown on graph", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept correct answer without units. Note: Accept distances greater than 12 and less than 15. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, work on diagram\nNo work shown on graph"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q8-a-i.png",
           "srcHash": "550f38d13dfe454093218e1502353002",
-          "alt": "The question as printed on the paper — Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows… Full card prompt: Use the graph to estimate the distance Liam had cycled by 08: 00. Show your work on the diagram above",
+          "alt": "The question as printed on the paper — Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows… Full card prompt: Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B. Use the graph to estimate the distance Liam had cycled by 08:00. Show your work on the diagram above.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8909,21 +9305,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q8-a-ii", topicId: "maths-3-3", conceptId: "his-speed-hour-while-was-travelling",
     section: "B", questionRef: "2024 OL Paper 1 Q8(a)(ii)",
-    questionText: "Find his speed in km/hour while he was travelling from A to B",
+    stem: "Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B.",
+    questionText: "Find his speed in km/hour while he was travelling from A to B.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q8-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct value identified\nSS = DD/TT\nRelevant work on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one correct value identified\nSS = DD/TT\nRelevant work on the diagram","Both values identified and some substitution into SS = DD/TT"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q8-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q8-a-ii.png",
           "srcHash": "7789207fe44e9906079d247a0aef19bd",
-          "alt": "The question as printed on the paper — Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows… Full card prompt: Find his speed in km/hour while he was travelling from A to B",
+          "alt": "The question as printed on the paper — Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows… Full card prompt: Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B. Find his speed in km/hour while he was travelling from A to B.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8939,21 +9349,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q8-a-iii", topicId: "maths-3-3", conceptId: "iii-information-complete-graph-diagram-rest",
+    id: "maths-2024-ol-p1-q8-a-iii", topicId: "maths-5-1", conceptId: "iii-information-complete-graph-diagram-rest",
     section: "B", questionRef: "2024 OL Paper 1 Q8(a)(iii)",
-    questionText: "(iii) Use the following information to complete the graph on the diagram above to show the rest of Liam’s journey: • Liam stopped at B for 30 minutes • He then cycled the 32 km back home at a constant speed. This took him 1 hour",
+    stem: "Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B.",
+    questionText: "Use the following information to complete the graph on the diagram above to show the rest of Liam’s journey: Liam stopped at B for 30 minutes; He then cycled the 32 km back home at a constant speed. This took him 1 hour.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q8-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, a relevant point on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, a relevant point on the diagram","One line segment correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q8-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q8-a-iii.png",
           "srcHash": "45a52afdc31c929ac7a8ba77ff1020cf",
-          "alt": "The question as printed on the paper — Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows… Full card prompt: (iii) Use the following information to complete the graph on the diagram above to show the rest of Liam’s journey: • Liam stopped at B for 30 minutes • He then cycled the 32 km back home at a constant speed. This took him 1 hour",
+          "alt": "The question as printed on the paper — Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows… Full card prompt: Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B. Use the following information to complete the graph on the diagram above to show the rest of Liam’s journey: Liam stopped at B for 30 minutes; He then cycled the 32 km back home at a constant speed. This took him 1 hour.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8969,16 +9393,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q8-b-i", topicId: "maths-4-1", conceptId: "complete-table-distance-ellie-runs-each",
     section: "B", questionRef: "2024 OL Paper 1 Q8(b)(i), (ii)",
-    questionText: "Complete the table below to show the distance Ellie runs each week for the first six weeks",
+    stem: "Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1·5 km more than the previous week.",
+    questionText: "(i) Complete the table below to show the distance Ellie runs each week for the first six weeks. The table gives week 1 as 6 km and week 2 as 7·5 km. (ii) If Ellie continued with this pattern, find the distance she would run in week 100.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, 13∙5 one correct term in the table\nWork of merit in (ii), for example, a new term found or a relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Apply a * for no units. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, 13∙5 one correct term in the table\nWork of merit in (ii), for example, a new term found or a relevant formula","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q8-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q8-b-i.png",
@@ -8999,21 +9437,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q8-b-iii", topicId: "maths-4-1", conceptId: "iii-explain-why-ellie-cannot-continue",
     section: "B", questionRef: "2024 OL Paper 1 Q8(b)(iii)",
-    questionText: "(iii) Explain why Ellie cannot continue this pattern indefinitely",
+    stem: "Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1·5 km more than the previous week.",
+    questionText: "Explain why Ellie cannot continue this pattern indefinitely.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p1-q8-b-iii-r1", kind: "anyN", verbatim: "Too far to run", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Too far to run"]} },
     ],
+    mathematicsScale: {"code":"5A","marks":[0,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q8-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q8-b-iii.png",
           "srcHash": "e4828a5bc270ab7c8c7b4458f8c7c2cd",
-          "alt": "The question as printed on the paper — Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows… Full card prompt: (iii) Explain why Ellie cannot continue this pattern indefinitely",
+          "alt": "The question as printed on the paper — Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows… Full card prompt: Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1·5 km more than the previous week. Explain why Ellie cannot continue this pattern indefinitely.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -9029,16 +9481,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q8-b-iv", topicId: "maths-3-1", conceptId: "total-distance-run-ellie-after-weeks",
+    id: "maths-2024-ol-p1-q8-b-iv", topicId: "maths-4-1", conceptId: "total-distance-run-ellie-after-weeks",
     section: "B", questionRef: "2024 OL Paper 1 Q8(b)(iv), (v)",
-    questionText: "(iv) Sₙ is the total distance, in km, run by Ellie after n weeks, where n∈ℕ. Write Sₙ in terms of n",
+    stem: "Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1·5 km more than the previous week.",
+    questionText: "(iv) Sₙ is the total distance, in km, run by Ellie after n weeks, where n ∈ ℕ. Write Sₙ in terms of n. (v) Using your answer to part (b)(iv), or otherwise, find the total distance run by Ellie, in km, after 10 weeks if she continues the pattern (that is, find S₁₀).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q8-b-iv-r1", kind: "anyN", verbatim: "Sₙ formula\na or d identified\nSome correct addition in (v)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer without units. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Sₙ formula\na or d identified\nSome correct addition in (v)","Work of merit in (iv) AND (v)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q8-b-iv",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q8-b-iv.png",
@@ -9059,21 +9526,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q9-a-i", topicId: "maths-3-3", conceptId: "using-exchange-rate-cost-concert-ticket",
     section: "B", questionRef: "2024 OL Paper 1 Q9(a)(i), (ii)",
-    questionText: "Using the exchange rate €1 = £0∙85, find the cost of the concert ticket, in euro",
+    stem: "A ticket for a concert in Wales costs £59·50.",
+    questionText: "(i) Using the exchange rate €1 = £0·85, find the cost of the concert ticket, in euro. (ii) Liam is a member of the venue’s Loyalty Club, so he gets a discount of 20% on all tickets. He buys 8 tickets for the concert. Work out the total cost of the 8 tickets, in euro.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 7, 9, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-ol-p1-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, relevant use of the exchange rate\nWork of merit in (ii), for example, some relevant multiplication", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 7, three parts for 9. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Work of merit in (i), for example, relevant use of the exchange rate\nWork of merit in (ii), for example, some relevant multiplication","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[5,2,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q9-a-i.png",
           "srcHash": "e4136c9e773114be35e4d81e9b557bbf",
-          "alt": "The question as printed on the paper — A ticket for a concert in Wales costs £59∙50. Using the exchange rate €1 = £0∙85, find the cost of the concert ticket, in euro. Liam is a member of the venue’s Loyalty Club, so he gets a discount of 20% on all tickets.… Full card prompt: Using the exchange rate €1 = £0∙85, find the cost of the concert ticket, in euro",
+          "alt": "The question as printed on the paper — A ticket for a concert in Wales costs £59∙50. Using the exchange rate €1 = £0∙85, find the cost of the concert ticket, in euro. Liam is a member of the venue’s Loyalty Club, so he gets a discount of 20% on all tickets.… Full card prompt: A ticket for a concert in Wales costs £59·50. (i) Using the exchange rate €1 = £0·85, find the cost of the concert ticket, in euro. (ii) Liam is a member of the venue’s Loyalty Club, so he gets a discount of 20% on all tickets. He buys 8 tickets for the concert. Work out the total cost of the 8 tickets, in euro.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -9089,21 +9570,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q9-b", topicId: "maths-3-3", conceptId: "liam-flies-concert-finds-information-aeroplane",
     section: "B", questionRef: "2024 OL Paper 1 Q9(b)",
-    questionText: "Liam flies to the concert. He finds the following information: • The aeroplane emits 28 000 grams of carbon per km, during the flight • His total flight distance is 394 km • There are 244 passengers on the flight",
+    questionText: "Liam flies to the concert. He finds the following information: The aeroplane emits 28 000 grams of carbon per km, during the flight; His total flight distance is 394 km; There are 244 passengers on the flight. Work out the amount of carbon emitted during the flight, per passenger. Give your answer in kg, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q9-b-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct operation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: Apply a * for no or incorrect rounding. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one correct operation","Completed with one error\n(28 000 × 394)/244 × 1000"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q9-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q9-b.png",
           "srcHash": "20fa9bfba5c728a5f9cb8ef7c2a9ba00",
-          "alt": "The question as printed on the paper — Liam flies to the concert. He finds the following information: • The aeroplane emits 28 000 grams of carbon per km, during the flight • His total flight distance is 394 km • There are 244 passengers on the flight. Work… Full card prompt: Liam flies to the concert. He finds the following information: • The aeroplane emits 28 000 grams of carbon per km, during the flight • His total flight distance is 394 km • There are 244 passengers on the flight",
+          "alt": "The question as printed on the paper — Liam flies to the concert. He finds the following information: • The aeroplane emits 28 000 grams of carbon per km, during the flight • His total flight distance is 394 km • There are 244 passengers on the flight. Work… Full card prompt: Liam flies to the concert. He finds the following information: The aeroplane emits 28 000 grams of carbon per km, during the flight; His total flight distance is 394 km; There are 244 passengers on the flight. Work out the amount of carbon emitted during the flight, per passenger. Give your answer in kg, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -9119,16 +9613,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q9-c-i", topicId: "maths-3-3", conceptId: "attendance-concert-price-ticket",
+    id: "maths-2024-ol-p1-q9-c-i", topicId: "maths-5-1", conceptId: "attendance-concert-price-ticket",
     section: "B", questionRef: "2024 OL Paper 1 Q9(c)(i)",
-    questionText: "Find the attendance at this concert if the price of a ticket is €20",
+    stem: "The number of people who will attend a concert (the attendance) can change depending on the price of a ticket. For a particular concert, this can be modelled by the function: A(x) = 17 600 − 160x, where A(x) is the attendance at the concert and x is the price of a ticket, in euro, with 0 ≤ x ≤ 110, x ∈ ℝ. Use the function A(x) to answer parts (c)(i) and (c)(ii).",
+    questionText: "Find the attendance at this concert if the price of a ticket is €20.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p1-q9-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some relevant substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, some relevant substitution"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q9-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q9-c-i.png",
@@ -9149,16 +9657,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q9-c-ii", topicId: "maths-3-3", conceptId: "price-ticket-value-which-attendance-would",
+    id: "maths-2024-ol-p1-q9-c-ii", topicId: "maths-4-2", conceptId: "price-ticket-value-which-attendance-would",
     section: "B", questionRef: "2024 OL Paper 1 Q9(c)(ii)",
-    questionText: "Find the price of a ticket (value of x) for which the attendance would be 12 800",
+    stem: "The number of people who will attend a concert (the attendance) can change depending on the price of a ticket. For a particular concert, this can be modelled by the function: A(x) = 17 600 − 160x, where A(x) is the attendance at the concert and x is the price of a ticket, in euro, with 0 ≤ x ≤ 110, x ∈ ℝ. Use the function A(x) to answer parts (c)(i) and (c)(ii).",
+    questionText: "Find the price of a ticket (value of x) for which the attendance would be 12 800.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q9-c-ii-r1", kind: "anyN", verbatim: "A(x) = 12 800\nTrial and improvement", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["A(x) = 12 800\nTrial and improvement","xx = (17 600−12 800)/160 and stops"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q9-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q9-c-ii.png",
@@ -9179,16 +9701,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q9-d-i", topicId: "maths-3-3", conceptId: "concert-total-tickets-sales-360-000",
+    id: "maths-2024-ol-p1-q9-d-i", topicId: "maths-4-2", conceptId: "concert-total-tickets-sales-360-000",
     section: "B", questionRef: "2024 OL Paper 1 Q9(d)(i), (ii)",
-    questionText: "For this concert the total tickets sales are €360 000. Use this information to show that: x² −100x + 2400 = 0",
+    stem: "For a different concert the total tickets sales, in euro, can be modelled by: 15 000x − 150x². Again, x is the price of a ticket, in euro.",
+    questionText: "(i) For this concert the total tickets sales are €360 000. Use this information to show that: x² − 100x + 2400 = 0 (ii) Solve the equation x² − 100x + 2400 = 0 to find the two possible ticket prices for this concert.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q9-d-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, equates expression to 360 000\nWork of merit in (ii), for example, some relevant work towards solving the quadratic", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer without units. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, equates expression to 360 000\nWork of merit in (ii), for example, some relevant work towards solving the quadratic","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q9-d-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q9-d-i.png",
@@ -9209,21 +9745,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q10-a-i", topicId: "maths-3-3", conceptId: "work-out-his-net-annual-income",
     section: "B", questionRef: "2024 OL Paper 1 Q10(a)(i), (ii)",
-    questionText: "Work out his net annual income",
+    stem: "In 2023 Joseph has a gross annual income of €48 000. He pays net annual income tax of €7650, annual PRSI of €1920, and pays €1407 in USC each year. He has no further deductions from his gross income.",
+    questionText: "(i) Work out his net annual income. (ii) Hence, write his net annual income as a percentage of his gross annual income. Give your answer correct to the nearest percent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p1-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, adds some of the deductions\nWork of merit in (ii), for example, numerator or denominator correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Full Credit -1: Apply a * for no or incorrect rounding. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit in (i), for example, adds some of the deductions\nWork of merit in (ii), for example, numerator or denominator correct","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q10-a-i.png",
           "srcHash": "91d511471ce84cfe8086e01e4d97ecb5",
-          "alt": "The question as printed on the paper — In 2023 Joseph has a gross annual income of €48 000. He pays net annual income tax of €7650, annual PRSI of €1920, and pays €1407 in USC each year. He has no further deductions from his gross income. Work out his net… Full card prompt: Work out his net annual income",
+          "alt": "The question as printed on the paper — In 2023 Joseph has a gross annual income of €48 000. He pays net annual income tax of €7650, annual PRSI of €1920, and pays €1407 in USC each year. He has no further deductions from his gross income. Work out his net… Full card prompt: In 2023 Joseph has a gross annual income of €48 000. He pays net annual income tax of €7650, annual PRSI of €1920, and pays €1407 in USC each year. He has no further deductions from his gross income. (i) Work out his net annual income. (ii) Hence, write his net annual income as a percentage of his gross annual income. Give your answer correct to the nearest percent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -9239,21 +9789,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q10-b-i", topicId: "maths-3-3", conceptId: "olivia-gross-annual-income-000-her",
     section: "B", questionRef: "2024 OL Paper 1 Q10(b)(i), (ii)",
-    questionText: "Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net annual income",
+    stem: "The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%.",
+    questionText: "(i) Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net annual income. (ii) Caroline’s gross annual income is €50 000. Her annual tax credit is €3550. Find how much annual income tax she pays.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 7, 9, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-ol-p1-q10-b-i-r1", kind: "anyN", verbatim: "Work of merit in (i) or (ii), for example, indicates 0 ∙2 or 0 ∙4or relevant use of tax credit", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 7, three parts for 9. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Work of merit in (i) or (ii), for example, indicates 0 ∙2 or 0 ∙4or relevant use of tax credit","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[5,2,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q10-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q10-b-i.png",
           "srcHash": "66ccb2ec5c7509a1c80e03e24b6f8881",
-          "alt": "The question as printed on the paper — The two income tax rates in Ireland in 2023 are given in the table below. Annual Income Tax Rate First €40 000 20% Balance 40% Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net… Full card prompt: Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net annual income",
+          "alt": "The question as printed on the paper — The two income tax rates in Ireland in 2023 are given in the table below. Annual Income Tax Rate First €40 000 20% Balance 40% Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net… Full card prompt: The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%. (i) Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net annual income. (ii) Caroline’s gross annual income is €50 000. Her annual tax credit is €3550. Find how much annual income tax she pays.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -9269,21 +9833,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q10-b-iii", topicId: "maths-3-3", conceptId: "iii-personal-tax-credit-employee-ireland",
     section: "B", questionRef: "2024 OL Paper 1 Q10(b)(iii)",
-    questionText: "(iii) The personal tax credit for an employee in Ireland in 2023 is €3550. Find the greatest amount of income an employee can earn before paying any income tax",
+    stem: "The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%.",
+    questionText: "The personal tax credit for an employee in Ireland in 2023 is €3550. Find the greatest amount of income an employee can earn before paying any income tax. Hint: The lowest income tax rate is 20%.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q10-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, gets 20% of an income", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, gets 20% of an income"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,4,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27,
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q10-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q10-b-iii.png",
           "srcHash": "92913e9e494ddd9c9884936e7330f475",
-          "alt": "The question as printed on the paper — The two income tax rates in Ireland in 2023 are given in the table below. Annual Income Tax Rate First €40 000 20% Balance 40% Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net… Full card prompt: (iii) The personal tax credit for an employee in Ireland in 2023 is €3550. Find the greatest amount of income an employee can earn before paying any income tax",
+          "alt": "The question as printed on the paper — The two income tax rates in Ireland in 2023 are given in the table below. Annual Income Tax Rate First €40 000 20% Balance 40% Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net… Full card prompt: The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%. The personal tax credit for an employee in Ireland in 2023 is €3550. Find the greatest amount of income an employee can earn before paying any income tax. Hint: The lowest income tax rate is 20%.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -9299,21 +9878,83 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-q10-b-iv", topicId: "maths-3-3", conceptId: "2024-amount-income-being-taxed-rate",
+    section: "B", questionRef: "2024 OL Paper 1 Q10(b)(iv)",
+    stem: "The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%.",
+    questionText: "In 2024, the amount of income being taxed at the 20% rate was increased from €40 000 to €42 000. Work out how much less income tax a person earning more than €42 000 would pay in 2024 compared to 2023 due to this increase.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-q10-b-iv-solution-1", kind: "point", verbatim: "(42 000 − 40 000) × 0·2 = [€]400", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-q10-b-iv-solution-2", kind: "point", verbatim: "Work of merit, for example, finding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-q10-b-iv-solution-3", kind: "point", verbatim: "2000 × 20%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-q10-b-iv-solution-4", kind: "point", verbatim: "Finding total tax for a person earning 42 000 or more for both years", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27,
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-OL-ask-p1-q10-b-iv",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q10-b-iv.png",
+          "srcHash": "3243ee4078ff5c7194bf1aa141e3c648",
+          "alt": "The question as printed on the paper — The two income tax rates in Ireland in 2023 are given in the table below. Annual Income Tax Rate First €40 000 20% Balance 40% Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net… Full card prompt: The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%. In 2024, the amount of income being taxed at the 20% rate was increased from €40 000 to €42 000. Work out how much less income tax a person earning more than €42 000 would pay in 2024 compared to 2023 due to this increase.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-OL-paper-p021-i1",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p021-i1.png",
+          "srcHash": "ded144a8afab0f1ed6b8068e76acbd0e",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q10(b)(iv), typeset as the State Examinations Commission set it. It reads: (42 000 −40 000) × 0 ∙2 = [€]400 OR 42 000 × 0 ∙2 = 8400 40 000 × 0 ∙2 = 8000 2000 × 0 ∙4 = 800 8000 + 800 = 8800 8800 −8400 = [€]400 Or similar",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q10-c-i", topicId: "maths-3-3", conceptId: "anne-annual-electricity-bill-was-1950",
     section: "B", questionRef: "2024 OL Paper 1 Q10(c)(i), (ii)",
-    questionText: "Anne’s annual electricity bill was €1950 and broadband bill was €400. She worked from home for 120 days in the year",
+    stem: "An employee who works from home may qualify for tax relief on their electricity and broadband bills. The amount of tax relief such an employee can claim, A, is calculated using the formula: A = (Total annual electricity and broadband bills) × d/365 × 0·3, where d is the number of days worked from home.",
+    questionText: "(i) Anne’s annual electricity bill was €1950 and broadband bill was €400. She worked from home for 120 days in the year. Find how much tax relief she can claim. Give your answer correct to the nearest cent. (ii) Tara also worked from home for a number of days. Tara’s total electricity and broadband bills were €2250. She claimed tax relief of €135 for working from home. Calculate how many days she worked from home.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 7, 9, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-ol-p1-q10-c-i-r1", kind: "anyN", verbatim: "Work of merit in (i) OR (ii), for example, some correct substitution", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 7, three parts for 9. The full scale runs to 15. Full Credit -1: Apply a * for no or incorrect rounding. Note: Accept correct answer without units. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Work of merit in (i) OR (ii), for example, some correct substitution","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[5,2,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q10-c-i.png",
           "srcHash": "0b72e73c572f59aa60dc37fb77f4163b",
-          "alt": "The question as printed on the paper — An employee who works from home may qualify for tax relief on their electricity and broadband bills. The amount of tax relief such an employee can claim, A, is calculated using the formula: broadband bills) × dd/365 ×… Full card prompt: Anne’s annual electricity bill was €1950 and broadband bill was €400. She worked from home for 120 days in the year",
+          "alt": "The question as printed on the paper — An employee who works from home may qualify for tax relief on their electricity and broadband bills. The amount of tax relief such an employee can claim, A, is calculated using the formula: broadband bills) × dd/365 ×… Full card prompt: An employee who works from home may qualify for tax relief on their electricity and broadband bills. The amount of tax relief such an employee can claim, A, is calculated using the formula: A = (Total annual electricity and broadband bills) × d/365 × 0·3, where d is the number of days worked from home. (i) Anne’s annual electricity bill was €1950 and broadband bill was €400. She worked from home for 120 days in the year. Find how much tax relief she can claim. Give your answer correct to the nearest cent. (ii) Tara also worked from home for a number of days. Tara’s total electricity and broadband bills were €2250. She claimed tax relief of €135 for working from home. Calculate how many days she worked from home.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },

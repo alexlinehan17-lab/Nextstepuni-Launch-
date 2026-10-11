@@ -1,0 +1,1207 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2024,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "416ebb5f564b8dae7a603ceae9db02e50c45d6423da031b6d96f817c69415a6e",
+  "schemeSha256": "c856460b3a5a9b69a4ee84eb9661cfc32a76489fc5dc5c9a52b6dfc7176490d3",
+  "reviewedAt": "2026-10-11",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 1–23 of the combined Ordinary Level scheme (cover, notes, the Paper 1 scale table on page 4, the slips note and printed summary of allocations on page 5, annotation palette, every Paper 1 model solution and marking note, and the Paper 2 title page). Each task boundary is the published scale, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5
+  ],
+  "sourceNotes": [
+    "Candidates answer any five of Q1–6 (30 marks each) and any three of Q7–10 (50 marks each): 380 offered marks, 300 candidate marks. Every question is retained.",
+    "39 independently marked units, matching the printed summary of allocations on scheme page 5.",
+    "Paper 1 bands from scheme page 4: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,4,10; 10C 0,4,6,10; 10D 0,3,5,7,10; 15C 0,5,8,15; 15D 0,5,7,9,15; 20D 0,7,10,12,20.",
+    "All 39 units were already authored, but three never shipped: Q2(c) was refused for naming lettered points without a decoded figure (the original page now supplies the Argand diagram), and Q3(a) and Q10(b)(iv) were refused because their joined credit-band text does not match the scheme text layer. Their marking points are now quoted line by line from the printed scheme. All existing IDs are kept; prompts are restored from the paper and topics corrected as metadata (complex numbers follow the Ordinary precedent of 3.1 Number systems).",
+    "The question booklet is LC003GLP100EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 2. All page references are PDF positions."
+  ],
+  "cards": [
+    {
+      "id": "maths-2024-ol-p1-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "A farmer buys a new machine for €30 000. It depreciates (decreases in value) by 20% each year.",
+      "questionText": "(i) Find the value of the machine after 1 year. (ii) Hence, or otherwise, find the value of the machine after 2 years."
+    },
+    {
+      "id": "maths-2024-ol-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "A farmer bought some livestock for €4716, including VAT. The cost of the livestock was €4500, excluding VAT. Calculate the percentage VAT rate used."
+    },
+    {
+      "id": "maths-2024-ol-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "The farmer also bought land. One year later its value had increased by 12·5% and was now €52 875. Find the value of the land when the farmer bought it."
+    },
+    {
+      "id": "maths-2024-ol-p1-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. The complex numbers z₁, z₂, and z₃ are shown on the Argand diagram below. One of these numbers is on the imaginary axis.",
+      "questionText": "(i) Using the Argand diagram, write down the values of z₁, z₂ and z₃ in the form a + bi where a, b ∈ ℤ. (ii) Write down the value of |z₂|."
+    },
+    {
+      "id": "maths-2024-ol-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "v = 15/(1 + 2i). Write v in the form a + bi, where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2024-ol-p1-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "The complex number w = 1 + 2i is shown on the Argand diagram below (drawn to scale). The three complex numbers labelled A, B, and C are also shown on the Argand diagram. One of these is w̅, the complex conjugate of w. Which of the complex numbers A, B or C is w̅? Give a reason for your answer. Tick one box only."
+    },
+    {
+      "id": "maths-2024-ol-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "A toy shop sells two different sets of the same building blocks, Set A and Set B, as shown in the table below: Set A has 60 blocks and costs €12; Set B has 150 blocks and costs €28. Which set of building blocks works out cheaper per block? Use calculations to support your answer. Tick one box only: Set A or Set B."
+    },
+    {
+      "id": "maths-2024-ol-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the following equation in x ∈ ℝ: 3x² − 5x + 1 = 0. Give each answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2024-ol-p1-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Use algebra to solve the simultaneous equations: 2x + y = 5; x² + y² = 25. Hint: first, use 2x + y = 5 to write y in terms of x."
+    },
+    {
+      "id": "maths-2024-ol-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the following equation in x ∈ ℝ: 4(2x − 5) − 1 = 3x + 7"
+    },
+    {
+      "id": "maths-2024-ol-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "Liam, Joan and Martha split a bill in the following ratio: Liam : Joan : Martha = 4 : 3 : 5. Liam and Joan paid €154 in total between them. Martha paid the rest of the bill. Work out how much Martha paid."
+    },
+    {
+      "id": "maths-2024-ol-p1-q4-c-i",
+      "printedParts": [
+        "Q4(c)(i)",
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices"
+      ],
+      "questionText": "(i) Write 128 in the form 2^k, where k ∈ ℕ. (ii) Hence, or otherwise, solve the following equation, where x ∈ ℝ: 2^(4x+1) = 128"
+    },
+    {
+      "id": "maths-2024-ol-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "questionText": "Find the value of the following expression when x = 2. Give your answer in the form a/b where a, b ∈ ℕ. (3x + 5)/10 − 1/(x + 3)"
+    },
+    {
+      "id": "maths-2024-ol-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        7,
+        10,
+        12,
+        20
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "questionText": "The function f is defined as f(x) = 5x² − 20x + 2, where x ∈ ℝ. Use calculus to find the co-ordinates of the local minimum point of f."
+    },
+    {
+      "id": "maths-2024-ol-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "questionText": "The graph of the linear function g(x) is shown below. Use the graph to find the rate of change of g(x), that is, find g′(x). Give your answer in the form a/b where a, b ∈ ℕ."
+    },
+    {
+      "id": "maths-2024-ol-p1-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ.",
+      "questionText": "(i) Estimate the value of k(x) when x = 2·5. Show your work on the graph. (ii) Estimate the range of values of x, for which k(x) ≤ 7. Show your work on the graph."
+    },
+    {
+      "id": "maths-2024-ol-p1-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ. Liam uses the Trapezoidal Rule to estimate the area under the graph of k(x) between 0 and 5. He takes the following measurements from the graph: k(0) = 12, k(1) = 9, k(2) = 6·8, k(3) = 5·1, k(4) = 3·8, k(5) = 2·8.",
+      "questionText": "Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32·1 units² for this area."
+    },
+    {
+      "id": "maths-2024-ol-p1-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x ∈ ℝ. Liam uses the Trapezoidal Rule to estimate the area under the graph of k(x) between 0 and 5. He takes the following measurements from the graph: k(0) = 12, k(1) = 9, k(2) = 6·8, k(3) = 5·1, k(4) = 3·8, k(5) = 2·8.",
+      "questionText": "The actual area under k(x), between 0 and 5, is 31·8 units². Liam estimated the area was 32·1 units² by using the Trapezoidal Rule. Work out the percentage error in Liam’s estimate. Give your answer as a percent, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2024-ol-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)",
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ.",
+      "questionText": "(i) Complete the table below to show the values of p(t) for the given values of t. The table gives p(2) = 16 and p(4) = 12 and leaves t = 0, 1, 3 and 5 to complete. (ii) Draw the graph of p(t) on the axes below, for 0 ≤ t ≤ 5, t ∈ ℝ."
+    },
+    {
+      "id": "maths-2024-ol-p1-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)",
+        "Q7(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ.",
+      "questionText": "(iii) Find p′(t), the derivative of p(t). Remember that: p(t) = t³ − 6t² + 6t + 20 (iv) Find the value of p′(2)."
+    },
+    {
+      "id": "maths-2024-ol-p1-q7-a-v",
+      "printedParts": [
+        "Q7(a)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "During an experiment, the number of bacteria in a dish can be modelled by the function: p(t) = t³ − 6t² + 6t + 20, where p(t) is the number of bacteria, in thousands, and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 5, t ∈ ℝ.",
+      "questionText": "p′(4) = 6. Explain what this means in terms of the number of bacteria."
+    },
+    {
+      "id": "maths-2024-ol-p1-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions",
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "The number of bacteria in a different experiment can be modelled by the function: k(t) = 3000 × 2·72^(0·5t), where k(t) is the number of bacteria and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 8, t ∈ ℝ. There are 3000 bacteria at the beginning of the experiment.",
+      "questionText": "Use k(t) to find the number of bacteria after 1 hour and after 2 hours. Give each answer correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2024-ol-p1-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions",
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "The number of bacteria in a different experiment can be modelled by the function: k(t) = 3000 × 2·72^(0·5t), where k(t) is the number of bacteria and t is the time in hours since the start of the experiment, with 0 ≤ t ≤ 8, t ∈ ℝ. There are 3000 bacteria at the beginning of the experiment.",
+      "questionText": "After n hours, there are at least 35 000 bacteria according to k(t), where n ∈ ℕ. By continuing the pattern above, or otherwise, find the smallest possible value of n."
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B.",
+      "questionText": "Use the graph to estimate the distance Liam had cycled by 08:00. Show your work on the diagram above."
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B.",
+      "questionText": "Find his speed in km/hour while he was travelling from A to B."
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Liam left home at 07:00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows his distance from home along the route cycled until he reached B.",
+      "questionText": "Use the following information to complete the graph on the diagram above to show the rest of Liam’s journey: Liam stopped at B for 30 minutes; He then cycled the 32 km back home at a constant speed. This took him 1 hour."
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)",
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1·5 km more than the previous week.",
+      "questionText": "(i) Complete the table below to show the distance Ellie runs each week for the first six weeks. The table gives week 1 as 6 km and week 2 as 7·5 km. (ii) If Ellie continued with this pattern, find the distance she would run in week 100."
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1·5 km more than the previous week.",
+      "questionText": "Explain why Ellie cannot continue this pattern indefinitely."
+    },
+    {
+      "id": "maths-2024-ol-p1-q8-b-iv",
+      "printedParts": [
+        "Q8(b)(iv)",
+        "Q8(b)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1·5 km more than the previous week.",
+      "questionText": "(iv) Sₙ is the total distance, in km, run by Ellie after n weeks, where n ∈ ℕ. Write Sₙ in terms of n. (v) Using your answer to part (b)(iv), or otherwise, find the total distance run by Ellie, in km, after 10 weeks if she continues the pattern (that is, find S₁₀)."
+    },
+    {
+      "id": "maths-2024-ol-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "A ticket for a concert in Wales costs £59·50.",
+      "questionText": "(i) Using the exchange rate €1 = £0·85, find the cost of the concert ticket, in euro. (ii) Liam is a member of the venue’s Loyalty Club, so he gets a discount of 20% on all tickets. He buys 8 tickets for the concert. Work out the total cost of the 8 tickets, in euro."
+    },
+    {
+      "id": "maths-2024-ol-p1-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "Liam flies to the concert. He finds the following information: The aeroplane emits 28 000 grams of carbon per km, during the flight; His total flight distance is 394 km; There are 244 passengers on the flight. Work out the amount of carbon emitted during the flight, per passenger. Give your answer in kg, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2024-ol-p1-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The number of people who will attend a concert (the attendance) can change depending on the price of a ticket. For a particular concert, this can be modelled by the function: A(x) = 17 600 − 160x, where A(x) is the attendance at the concert and x is the price of a ticket, in euro, with 0 ≤ x ≤ 110, x ∈ ℝ. Use the function A(x) to answer parts (c)(i) and (c)(ii).",
+      "questionText": "Find the attendance at this concert if the price of a ticket is €20."
+    },
+    {
+      "id": "maths-2024-ol-p1-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The number of people who will attend a concert (the attendance) can change depending on the price of a ticket. For a particular concert, this can be modelled by the function: A(x) = 17 600 − 160x, where A(x) is the attendance at the concert and x is the price of a ticket, in euro, with 0 ≤ x ≤ 110, x ∈ ℝ. Use the function A(x) to answer parts (c)(i) and (c)(ii).",
+      "questionText": "Find the price of a ticket (value of x) for which the attendance would be 12 800."
+    },
+    {
+      "id": "maths-2024-ol-p1-q9-d-i",
+      "printedParts": [
+        "Q9(d)(i)",
+        "Q9(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "For a different concert the total tickets sales, in euro, can be modelled by: 15 000x − 150x². Again, x is the price of a ticket, in euro.",
+      "questionText": "(i) For this concert the total tickets sales are €360 000. Use this information to show that: x² − 100x + 2400 = 0 (ii) Solve the equation x² − 100x + 2400 = 0 to find the two possible ticket prices for this concert."
+    },
+    {
+      "id": "maths-2024-ol-p1-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)",
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "In 2023 Joseph has a gross annual income of €48 000. He pays net annual income tax of €7650, annual PRSI of €1920, and pays €1407 in USC each year. He has no further deductions from his gross income.",
+      "questionText": "(i) Work out his net annual income. (ii) Hence, write his net annual income as a percentage of his gross annual income. Give your answer correct to the nearest percent."
+    },
+    {
+      "id": "maths-2024-ol-p1-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)",
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%.",
+      "questionText": "(i) Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net annual income. (ii) Caroline’s gross annual income is €50 000. Her annual tax credit is €3550. Find how much annual income tax she pays."
+    },
+    {
+      "id": "maths-2024-ol-p1-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        27,
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%.",
+      "questionText": "The personal tax credit for an employee in Ireland in 2023 is €3550. Find the greatest amount of income an employee can earn before paying any income tax. Hint: The lowest income tax rate is 20%."
+    },
+    {
+      "id": "maths-2024-ol-p1-q10-b-iv",
+      "printedParts": [
+        "Q10(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        27,
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The two income tax rates in Ireland in 2023 are given in the table below: the first €40 000 of annual income is taxed at 20% and the balance at 40%.",
+      "questionText": "In 2024, the amount of income being taxed at the 20% rate was increased from €40 000 to €42 000. Work out how much less income tax a person earning more than €42 000 would pay in 2024 compared to 2023 due to this increase."
+    },
+    {
+      "id": "maths-2024-ol-p1-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)",
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "An employee who works from home may qualify for tax relief on their electricity and broadband bills. The amount of tax relief such an employee can claim, A, is calculated using the formula: A = (Total annual electricity and broadband bills) × d/365 × 0·3, where d is the number of days worked from home.",
+      "questionText": "(i) Anne’s annual electricity bill was €1950 and broadband bill was €400. She worked from home for 120 days in the year. Find how much tax relief she can claim. Give your answer correct to the nearest cent. (ii) Tara also worked from home for a number of days. Tara’s total electricity and broadband bills were €2250. She claimed tax relief of €135 for working from home. Calculate how many days she worked from home."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        4,
+        11,
+        18,
+        21
+      ],
+      "wording": "Hence, or otherwise / or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative solution methods for the same marked task; no printed pool of prompts."
+    },
+    {
+      "pages": [
+        7,
+        8
+      ],
+      "wording": "Tick one box only",
+      "classification": "answer-selection",
+      "reason": "Choosing A, B or C (the conjugate) and Set A or Set B is the answer to one required task with justification, not a choice of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:827108cb63990dad": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:4c98507938962b60": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "6:bd712db6d570ad2d": {
+      "classification": "given-context",
+      "reason": "States that one of the printed numbers lies on an axis (or is the conjugate); data for a required task, not a choice of prompts."
+    },
+    "7:19774b27bb18f737": {
+      "classification": "given-context",
+      "reason": "States that one of the printed numbers lies on an axis (or is the conjugate); data for a required task, not a choice of prompts."
+    },
+    "11:01c0ecb70a227047": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "16:87eadda673092991": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "18:2e6ba192cc700bb6": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "21:d78f8539e87a50cd": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    }
+  }
+}
