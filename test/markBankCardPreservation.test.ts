@@ -44,6 +44,8 @@ import { CARDS as COMPUTER_SCIENCE_ORDINARY } from '../components/MarkBank/cards
 import { CARDS as ENGINEERING_HIGHER } from '../components/MarkBank/cards/engineering/higher';
 import { CARDS as ENGINEERING_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
+import publishedEnglishHigher from '../components/MarkBank/cards/english/published-higher.json';
+import publishedEnglishOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
@@ -383,8 +385,15 @@ const decks = [
    * This includes all three OL prescribed-poetry Q2 alternatives per poem;
    * compulsory linked parts remain together but retain separate PCLM grids.
    * 205 cards open the real paper passage or poem in the source reader. */
-  ['english:higher', ENGLISH_HIGHER, 210, '231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0'],
-  ['english:ordinary', ENGLISH_ORDINARY, 440, '9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f'],
+  /* 2026-10-11: English 210/440 -> 605/1571. 1,526 cards ADDED, none removed
+   * or renamed: the 33 papers whose own independent review gate passes
+   * (2010-2015 all four, 2016 HL/OL P1, 2018 all four, 2026 OL P2, HL P1,
+   * HL P2) are published by english_publish.py as separately practicable
+   * tasks and finite printed routes, each on its own year's printed grid and
+   * cap rule. Every one of the 650 legacy 2021-2025 ids is unchanged; the
+   * legacy-only hashes below are the previous frozen baselines verbatim. */
+  ['english:higher', ENGLISH_HIGHER, 605, '093bfdb823117bbec6e0559b3adc967ea7f4335b13a80bc630789dbf03326c4c'],
+  ['english:ordinary', ENGLISH_ORDINARY, 1571, '3c1b95ab6f7b51af2757e2cdc52afc3ac160654ea2e438dfb82d3cdcc1c46ad3'],
   /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
    * responses across 2021–2025 Higher and Ordinary are present, including
    * listening audio and the real PDF pages for passages and printed poems. */
@@ -428,7 +437,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_495);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_021);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -442,7 +451,23 @@ describe('Mark Bank card preservation', () => {
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_253);
+  });
+
+  it('adds reviewed English papers without replacing any legacy card id or alias', () => {
+    const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
+      .map(card => card.id));
+    expect(published.size).toBe(1_526);
+    // The legacy 2021-2025 decks keep exactly their previous frozen identities.
+    expect(identityHash(ENGLISH_HIGHER.filter(card => !published.has(card.id))))
+      .toBe('231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0');
+    expect(identityHash(ENGLISH_ORDINARY.filter(card => !published.has(card.id))))
+      .toBe('9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f');
+    for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
+      expect(published.has(oldId), `${oldId} is a withdrawn alias`).toBe(false);
+      if (oldId.startsWith('english-')) expect(published.has(canonicalId)).toBe(false);
+    }
+    expect([...published].every(id => /^english-(?:201[0-6]|2018|2026)-(?:hl|ol)-p[12]-/.test(id))).toBe(true);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

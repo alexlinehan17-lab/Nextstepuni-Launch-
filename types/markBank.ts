@@ -393,13 +393,54 @@ export interface SecPointCardBase extends SecCardBase {
 
 export type PclmCriterionId = 'purpose' | 'coherence' | 'language' | 'mechanics';
 
+/**
+ * Grade labels exactly as each year's SEC grid prints them: the modern H1–H8
+ * and O1–O8 scales (2017 onward), the 2010–2016 Higher Level A+/B/C/D/E-
+ * anchors, and the 2010–2016 Ordinary Level A–F and N/G (F/NG on the combined
+ * grid) bands.
+ */
+export type PclmGradeLabel =
+  | 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8'
+  | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8'
+  | 'A+' | 'A' | 'B' | 'C' | 'D' | 'E' | 'E-' | 'F' | 'N/G' | 'F/NG';
+
 /** One score family exactly as the SEC grade grid prints it. */
 export interface PclmGradeBand {
-  grade:
-    | 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8'
-    | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8';
+  grade: PclmGradeLabel;
   /** Every mark the published grid permits in this band. */
   marks: number[];
+}
+
+/**
+ * How Coherence and Language are limited, exactly as the year's criteria page
+ * prints it. The modern rule (C and L cannot exceed P) must not be projected
+ * onto years that print a different rule or none:
+ * - `purpose-primacy`: C and L cannot exceed P (2016 onward where printed).
+ * - `language-at-d-band`: 2010–2015 Ordinary Level — only when BOTH P and C
+ *   fall below the D band is L limited, to the top of its D band.
+ * - `none`: the scheme prints no cap (2010–2015 Higher, 2018 Ordinary).
+ * Mechanics is always assessed on its own merits.
+ */
+export type PclmCapRule =
+  | { kind: 'purpose-primacy' }
+  | { kind: 'none' }
+  | { kind: 'language-at-d-band'; purposeBelow: number; coherenceBelow: number; languageMax: number };
+
+/** Where a card's grid was transcribed from, when it is a year-specific print. */
+export interface PclmPrintedGrid {
+  /** `<year>-<level>`, e.g. `2015-ordinary`. */
+  sitting: string;
+  /** Marking-scheme PDF pages that print the grid. */
+  schemePages: number[];
+  /** Adjacent printed cells share a mark (2010–2016 Ordinary Level grid). */
+  overlapping?: true;
+  /** Lowest printed mark when it is not 0 (2010–2016 OL 10-mark F/NG prints 1). */
+  lowestMark?: number;
+}
+
+/** The cap a discrete assessment declares, defaulting legacy cards to C/L <= P. */
+export function pclmCapRule(assessment: { primacyOfPurpose?: true; capRule?: PclmCapRule }): PclmCapRule {
+  return assessment.capRule ?? (assessment.primacyOfPurpose ? { kind: 'purpose-primacy' } : { kind: 'none' });
 }
 
 export interface PclmCriterion {
@@ -434,7 +475,9 @@ export interface PclmDiscreteComponent extends PclmComponentBase {
   bands: PclmGradeBand[];
   criteria: PclmCriterion[];
   /** C and L may not exceed P within this component. */
-  primacyOfPurpose: true;
+  primacyOfPurpose?: true;
+  /** The year's printed cap rule; absent on legacy cards (C/L <= P). */
+  capRule?: PclmCapRule;
 }
 
 export type PclmComponent = PclmCombinedComponent | PclmDiscreteComponent;
@@ -445,6 +488,7 @@ export type PclmAssessment =
       mode: 'combined';
       bands: PclmGradeBand[];
       criteria: string[];
+      printedGrid?: PclmPrintedGrid;
     }
   | {
       /** Longer responses receive separate P, C, L and M marks. */
@@ -452,7 +496,10 @@ export type PclmAssessment =
       bands: PclmGradeBand[];
       criteria: PclmCriterion[];
       /** C and L may not exceed P. */
-      primacyOfPurpose: true;
+      primacyOfPurpose?: true;
+      /** The year's printed cap rule; absent on legacy cards (C/L <= P). */
+      capRule?: PclmCapRule;
+      printedGrid?: PclmPrintedGrid;
     }
   | {
       /**
@@ -823,15 +870,17 @@ export function tariffReconciles(card: SecCard): boolean {
           && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
     }
     const { assessment } = card.rubric;
-    const bandsReconcile = (bands: PclmGradeBand[], total: number) => {
+    const bandsReconcile = (bands: PclmGradeBand[], total: number, printed?: PclmPrintedGrid) => {
       const marks = bands.flatMap(band => band.marks);
+      // A year-specific print may share a mark between adjacent cells or start
+      // above 0; only a card that declares that printed grid may do so.
       return marks.length > 0
-        && Math.min(...marks) === 0
+        && Math.min(...marks) === (printed?.lowestMark ?? 0)
         && Math.max(...marks) === total
-        && new Set(marks).size === marks.length;
+        && (printed?.overlapping ? true : new Set(marks).size === marks.length);
     };
     if (assessment.mode === 'combined') {
-      return bandsReconcile(assessment.bands, card.totalMarks);
+      return bandsReconcile(assessment.bands, card.totalMarks, assessment.printedGrid);
     }
     if (assessment.mode === 'composite') {
       const criteriaReconcile = (criteria: PclmCriterion[], total: number) =>

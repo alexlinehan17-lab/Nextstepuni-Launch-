@@ -358,7 +358,12 @@ describe('every card points at the question paper it came from', () => {
     for (const card of SAMPLE_CARDS) {
       const source = card.sourceMaterial;
       if (!source) continue;
-      const pagesAreValid = source.pages.length > 0
+      // A supplementary reading edition or a linked publisher reading copy is
+      // deliberately NOT a page of the SEC paper (types/markBank.ts): it carries
+      // its verified texts or readings instead, and never a page number.
+      const offPaper = (source.kind === 'supplementary-text' && (source.texts?.length ?? 0) > 0)
+        || (source.kind === 'linked-reading' && (source.readings?.length ?? 0) > 0);
+      const pagesAreValid = offPaper ? source.pages.length === 0 : source.pages.length > 0
         && source.pages.every(page => Number.isInteger(page) && page > 0)
         && new Set(source.pages).size === source.pages.length
         && source.pages.every((page, index) => index === 0 || page > source.pages[index - 1]);

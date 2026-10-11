@@ -21,7 +21,8 @@ import type {
   PclmGradeBand,
   SecRubricCard,
 } from '../../../../types/markBank';
-import { generatedCardsForLevel } from './factory';
+import { generatedCardsForLevel, publishedCards, type PublishedEnglishManifest } from './factory';
+import publishedJson from './published-higher.json';
 
 const range = (from: number, to: number) =>
   Array.from({ length: to - from + 1 }, (_, index) => from + index);
@@ -380,9 +381,18 @@ const reviewedIds = new Set(REVIEWED_2025_PAPER_1.map(card => card.id));
  * SEC-derived possible directions.  The corpus factory supplies every other
  * Higher Level choice, then the whole deck is ordered newest-paper-first.
  */
+const PUBLISHED = publishedJson as unknown as PublishedEnglishManifest;
+
+/**
+ * Papers whose own independent review gate passed are appended from
+ * published-higher.json (2010–2016, 2018 and 2026 so far). Their ids are new;
+ * every legacy id above is unchanged.
+ */
 export const CARDS: SecRubricCard[] = [
   ...REVIEWED_2025_PAPER_1,
-  ...generatedCardsForLevel('higher').filter(card => !reviewedIds.has(card.id)),
+  ...generatedCardsForLevel('higher', PUBLISHED.legacyAdditionalSources)
+    .filter(card => !reviewedIds.has(card.id)),
+  ...publishedCards(PUBLISHED),
 ].sort((left, right) =>
   right.year - left.year
   || left.section.localeCompare(right.section)

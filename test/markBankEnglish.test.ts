@@ -6,6 +6,8 @@ import { CARDS as HIGHER } from '../components/MarkBank/cards/english/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import authoredJson from '../components/MarkBank/cards/english/authored.json';
+import publishedHigher from '../components/MarkBank/cards/english/published-higher.json';
+import publishedOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 import {
   effectivePclmScores,
   pclmMarks,
@@ -64,7 +66,13 @@ const census = JSON.parse(readFileSync(
 )) as EnglishCensus;
 const manifest = authoredJson as unknown as EnglishManifest;
 type EnglishCard = SecRubricCard & { rubric: PclmRubric };
-const ALL = [...HIGHER, ...ORDINARY] as EnglishCard[];
+// Reviewed full-corpus papers are published alongside the legacy manifest
+// (see test/markBankEnglishPublished.test.ts). These legacy assertions cover
+// the 650 preserved 2021–2025 runtime cards, which must stay exactly as they were.
+const PUBLISHED_IDS = new Set([...publishedHigher.cards, ...publishedOrdinary.cards].map(card => card.id));
+const LEGACY_HIGHER = HIGHER.filter(card => !PUBLISHED_IDS.has(card.id));
+const LEGACY_ORDINARY = ORDINARY.filter(card => !PUBLISHED_IDS.has(card.id));
+const ALL = [...LEGACY_HIGHER, ...LEGACY_ORDINARY] as EnglishCard[];
 const byId = new Map(ALL.map(card => [card.id, card]));
 
 const comparable = (value: string) => value
@@ -147,8 +155,8 @@ describe('English all-question census', () => {
     const authored = census.asks.filter(ask => ask.status === 'authored');
     const canonicalAuthoredIds = [...new Set(authored.map(ask =>
       CARD_ID_ALIASES[ask.id] ?? ask.id))].sort();
-    expect(HIGHER).toHaveLength(210);
-    expect(ORDINARY).toHaveLength(440);
+    expect(LEGACY_HIGHER).toHaveLength(210);
+    expect(LEGACY_ORDINARY).toHaveLength(440);
     expect(ALL).toHaveLength(650);
     expect(manifest.cardCount).toBe(650);
     expect(new Set(ALL.map(card => card.id)).size).toBe(650);
