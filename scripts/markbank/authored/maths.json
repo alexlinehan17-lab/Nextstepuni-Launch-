@@ -56570,5 +56570,1598 @@
    }
   ],
   "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q1-a",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q1-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q1(a)",
+  "stem": "A shop records the number of sales that it makes each hour over a period of time. Some of the results are shown in the stem-and-leaf graph below: 5 | 4 4 5 5 7 7 8; 6 | 2 3 3 4 5 7 9 9; 7 | 0 3 7; 8 | 0 5. Key: 5|7 = 57 sales.",
+  "questionText": "Work out the following statistics for the data above: the median, the range and the interquartile range. (The table already gives n, the number of observations, as 20.)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "so = 63·5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "Range: 85 − 54 = 31",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q1-a-solution-3",
+    "kind": "point",
+    "verbatim": "Then IQR = 69·5 − 57 = 12·5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q1-a-solution-4",
+    "kind": "point",
+    "verbatim": "Uses 5th, 10th, 15th value, otherwise correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q1-b",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q1-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q1(b)",
+  "stem": "A shop records the number of sales that it makes each hour over a period of time. Some of the results are shown in the stem-and-leaf graph below: 5 | 4 4 5 5 7 7 8; 6 | 2 3 3 4 5 7 9 9; 7 | 0 3 7; 8 | 0 5. Key: 5|7 = 57 sales.",
+  "questionText": "Draw a pie chart to represent this data. Use the classes 50 − 59, 60 − 69, 70 − 79, and 80 − 89. Label each sector and the size of each angle clearly. Show all of your calculations.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Tolerance of ±3°",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Note: Only need to calculate 3 angles.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Calculates remaining 2 angles",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q1-b-solution-4",
+    "kind": "point",
+    "verbatim": "2 angles calculated correctly, and 2 sectors correctly drawn",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q1-c",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q1-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q1(c)",
+  "stem": "A shop records the number of sales that it makes each hour over a period of time. Some of the results are shown in the stem-and-leaf graph below: 5 | 4 4 5 5 7 7 8; 6 | 2 3 3 4 5 7 9 9; 7 | 0 3 7; 8 | 0 5. Key: 5|7 = 57 sales.",
+  "questionText": "The shop records the number of sales each hour for a further k hours. Each of these k hours had sales in the range 70 − 79. When the sales for these k hours were combined with the sales in the stem-and-leaf graph on the previous page, 32% of the total number of hours had sales in the range 70 − 79. Work out the value of k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "and k = 5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Sets up equation in k (1st line, or equivalent)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q1-c-solution-3",
+    "kind": "point",
+    "verbatim": "Note: Correct value of k verified, award full marks",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q2-a",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q2-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q2(a)",
+  "stem": "A company makes mobile phones.",
+  "questionText": "The company carries out a survey on a random sample of n of their customers, where n ∈ ℕ. Based on this survey, the margin of error for the population proportion, 1/√n, is 3·4%, correct to 1 decimal place. Find one possible value of n.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Note: n = 841 to n = 891 inclusive will give correct margin of error.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Accept a correct value of n, fully verified",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "Note: can use margin of error between 0·0335 and 0·0345.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q2-b-i-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q2-b-i-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q2(b)(i), Q2(b)(ii)",
+  "stem": "A company makes mobile phones. The company makes two types of mobile phones: an old model and a new model. A random sample of 80 of the company’s new mobile phones is tested, to see how long it takes to charge them from empty to fully charged. The mean time for this sample is 45·4 minutes, with a standard deviation of 3·1 minutes.",
+  "questionText": "(i) Use this information to find a 95% confidence interval for the population mean time. Give each value in your answer in minutes, correct to 1 decimal place. (ii) The mean time taken to charge the old model mobile phone from empty to fully charged is 44 minutes. The company says that the mean time taken to charge the new model mobile phone is the same as this. Using your answer to part (b)(i), or otherwise, carry out a hypothesis test at the 5% level of significance to test the company’s claim. The null hypothesis is given: The mean time taken to fully charge the new model mobile phone is 44 minutes. State clearly the alternative hypothesis, your conclusion, and the reason for your conclusion. If necessary, provide calculations.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q2-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= (44·7, 46·1)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q2-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Correct alternative hypothesis",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q2-b-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Alternative: “The mean time taken to charge is not 44 minutes”",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q2-b-i-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Reason: “44 is outside the 95% C.I.”",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q2-c",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q2-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q2(c)",
+  "stem": "A company makes mobile phones.",
+  "questionText": "In a different survey, two hypothesis tests were carried out at the 5% level of significance. The p-value for the first test was 0·046. The p-value for the second test was 0·0002. Write a sentence to explain what the difference in the sizes of these p-values means about the conclusions to these two tests. You do not need to carry out any calculations.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "We would have more confidence in the conclusion of the second test",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "The conclusion of the second test is more reliable",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q3-a",
+  "topicId": "maths-2-4",
+  "conceptId": "p2-q3-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q3(a)",
+  "questionText": "The diagram below shows the triangle t and the line l. Construct the image of the triangle t under axial symmetry in l. Show all construction lines clearly. If you use measurements, write them in an appropriate place on your solution.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Tolerance: ±3 mm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Correct image (triangle) drawn, but no construction lines or measurements",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q3-a-solution-3",
+    "kind": "point",
+    "verbatim": "Two vertices reflected correctly, with the required construction lines / measurements",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q3-b",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q3-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q3(b)",
+  "questionText": "A right circular cone has a height of h cm and a radius of h/4 cm, where h ∈ ℕ is a constant. The volume of the cone is 36 000π cm³. Work out the value of h.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "and ℎ = ∛1 728 000 = 120",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Deals with squaring and power of ℎ",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Note: there must be a ℎ² or higher power of ℎ in order for Step 3 to be considered correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q3-c",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q3-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q3(c)",
+  "questionText": "A cuboid has sides of length 24 cm, 36 cm, and 60 cm. This cuboid lies inside a sphere, so that the eight vertices (corners) of the cuboid lie on the surface of the sphere. Work out the volume of the sphere. Give your answer in the form a√38 π cm³, where a ∈ ℕ. It might be helpful to find the length of the internal diagonal of the cuboid.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "= 10 944√38 π [cm³]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q3-c-solution-2",
+    "kind": "point",
+    "verbatim": "Note: If Pythagoras is not used, award Low Partial Credit at most.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q3-c-solution-3",
+    "kind": "point",
+    "verbatim": "Volume formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q4-a",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q4-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q4(a)",
+  "questionText": "The lines l and k have the following equations: l: 3x − 2y = 0; k: y = −(3/2)x + 7. Are the lines l and k perpendicular? Justify your answer using calculations.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: No",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit in justification, for example, finds one or two slopes",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q4-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q4-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q4(b)",
+  "questionText": "A line has equation y = mx + 8, where m ∈ ℝ is a constant. Find the ranges of values of m for which this line does not intersect the line segment from (3, 7) to (3, 11). It may be helpful to draw a diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Finds one relevant slope",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Finds second relevant slope",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Finds inequalities in correct direction",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q4-c",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q4-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q4(c)",
+  "questionText": "P is the point (1, 0). The perpendicular distance from P to the line ax + y − 5 = 0 is 5, where a ∈ ℝ is a constant. Find the two possible values of a.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q4-c-solution-1",
+    "kind": "point",
+    "verbatim": "a(24a + 10) = 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q4-c-solution-2",
+    "kind": "point",
+    "verbatim": "a = 0 or 24a + 10 = 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q4-c-solution-3",
+    "kind": "point",
+    "verbatim": "Note: if denominator = 1, Step 2 is not considered correct (oversimplified)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q5-a",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q5-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q5(a)",
+  "questionText": "The circle c has equation: x² + y² + 4x − 10y − 52 = 0. Write down the centre and radius of the circle c.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "Centre: (−2, 5)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "Centre or radius correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q5-b-i-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-q5-b-i-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q5(b)(i), Q5(b)(ii)",
+  "stem": "Three standard unbiased 6-sided dice are labelled h, k, and r. Gino rolls the three dice and uses the numbers shown to form the equation of a circle in the form: (x − h)² + (y − k)² = r², where h, k, and r are the numbers shown on each of the dice. Each different set of values for h, k, and r gives a different circle.",
+  "questionText": "(i) Write down an example of one set of numbers h, k, and r that Gino could throw, and write down the equation of the circle formed using these numbers. (ii) In total, how many different circles can Gino make in this way?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q5-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Any valid combination and the matching circle, for example",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q5-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "6 × 6 × 6 [= 216]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q5-b-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "1 part correct and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q5-b-iii-iv",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q5-b-iii-iv",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q5(b)(iii), Q5(b)(iv)",
+  "stem": "Three standard unbiased 6-sided dice are labelled h, k, and r. Gino rolls the three dice and uses the numbers shown to form the equation of a circle in the form: (x − h)² + (y − k)² = r², where h, k, and r are the numbers shown on each of the dice. Each different set of values for h, k, and r gives a different circle.",
+  "questionText": "(iii) How many of these circles have both the x-axis and the y-axis as a tangent? (iv) How many of these circles lie entirely inside the first quadrant? (That is, how many neither touch nor cross the x-axis nor the y-axis?)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q5-b-iii-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Answer = 6",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q5-b-iii-iv-solution-2",
+    "kind": "point",
+    "verbatim": "= 55",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q5-b-iii-iv-solution-3",
+    "kind": "point",
+    "verbatim": "(iii) correct and work of merit in (iv)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q6-a",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q6-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q6(a)",
+  "questionText": "θ is an acute angle, with sin θ = 1/4. Find the value of cos θ, without using a calculator. Give your answer in surd form. Show your working out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "x² = 4² − 1² = 15",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Finds length of third side",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q6-a-solution-3",
+    "kind": "point",
+    "verbatim": "Clear calculator work is not considered correct work / work of merit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q6-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q6-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q6(b)",
+  "questionText": "The diagram below shows the graph of y = cos² x for a limited domain. On the diagram, draw and label the graph of y = sin² x, using the same axes and scales. Use the fact that cos² A + sin² A = 1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "correct start, middle, and end points",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "local max at middle point",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Graph of y = −cos² x drawn",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q6-c",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q6-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 2 Q6(c)",
+  "questionText": "Prove that: cos(A − B) = cos A cos B + sin A sin B, where A and B are angles, with A > B. It might be helpful to use two points, P and Q, on the unit circle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q6-c-solution-1",
+    "kind": "point",
+    "verbatim": "So cos(A − B) = cos A cos B + sin A sin B",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q6-c-solution-2",
+    "kind": "point",
+    "verbatim": "Finishes proof",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q6-c-solution-3",
+    "kind": "point",
+    "verbatim": "Accept a correct proof, even if inconsistent with labelling on diagram",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q7-a-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q7-a-i",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q7(a)(i)",
+  "stem": "In this question, all lengths are in cm. Áine has 100 sticks. Each stick has a different integer length from 1 to 100, so the lengths are: 1 cm, 2 cm, 3 cm, …, 99 cm, 100 cm. Áine makes triangles, using three of these sticks each time. Áine makes the triangle shown below, with sides of length 12, 20, and x, where x ∈ ℕ. The size of the angle between the sides of length 12 and 20 is 58°, correct to the nearest degree.",
+  "questionText": "Find the area of the triangle, correct to the nearest cm².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "= 102 [cm²] [∈ ℕ]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q7-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Full substituted area formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q7-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q7-a-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q7(a)(ii)",
+  "stem": "In this question, all lengths are in cm. Áine has 100 sticks. Each stick has a different integer length from 1 to 100, so the lengths are: 1 cm, 2 cm, 3 cm, …, 99 cm, 100 cm. Áine makes triangles, using three of these sticks each time. Áine makes the triangle shown below, with sides of length 12, 20, and x, where x ∈ ℕ. The size of the angle between the sides of length 12 and 20 is 58°, correct to the nearest degree.",
+  "questionText": "Find the value of x ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 17 [cm] [∈ ℕ]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q7-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Fully substituted Cosine formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q7-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Accept 17·0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q7-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q7-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q7(b)",
+  "stem": "In this question, all lengths are in cm. Áine has 100 sticks. Each stick has a different integer length from 1 to 100, so the lengths are: 1 cm, 2 cm, 3 cm, …, 99 cm, 100 cm. Áine makes triangles, using three of these sticks each time.",
+  "questionText": "Áine also makes the triangle shown below. One side has a length of 72 and another has a length of y, where y ∈ ℕ. The sizes of two of the angles are 34° and 59°, each correct to the nearest degree, as shown. Find the value of y ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "= 62 [∈ ℕ]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q7-b-solution-2",
+    "kind": "point",
+    "verbatim": "Finds third angle in triangle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q7-b-solution-3",
+    "kind": "point",
+    "verbatim": "Fully substituted Sine Rule",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q7-c-i",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q7-c-i",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q7(c)(i)",
+  "stem": "In this question, all lengths are in cm. Áine has 100 sticks. Each stick has a different integer length from 1 to 100, so the lengths are: 1 cm, 2 cm, 3 cm, …, 99 cm, 100 cm. Áine makes triangles, using three of these sticks each time. Áine makes a number of different triangles with sides of length n, n + 5, and n + 10, where n ∈ ℕ. The angle between the sides of length n and n + 5 is A, as shown in the diagram below. When Áine changes the value of n, this changes the shape of the triangle and the size of the angle A.",
+  "questionText": "A = 90° for one value of n ∈ ℕ. Find this value of n.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q7-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "i.e. n = 15 [as n > 0]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q7-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Sets up Pythagoras Theorem",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q7-c-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q7-c-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q7(c)(ii)",
+  "stem": "In this question, all lengths are in cm. Áine has 100 sticks. Each stick has a different integer length from 1 to 100, so the lengths are: 1 cm, 2 cm, 3 cm, …, 99 cm, 100 cm. Áine makes triangles, using three of these sticks each time. Áine makes a number of different triangles with sides of length n, n + 5, and n + 10, where n ∈ ℕ. The angle between the sides of length n and n + 5 is A, as shown in the diagram below. When Áine changes the value of n, this changes the shape of the triangle and the size of the angle A.",
+  "questionText": "Estimate the limit of the size of the angle A, as n tends to infinity. Write a sentence to justify your answer. For this part only, assume that n can get extremely big (beyond 100).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q7-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: 60°",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q7-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "As n gets very big, the triangle gets closer and closer to being equilateral.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q7-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Incorrect answer, but indicates equilateral triangle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q7-d",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q7-d",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q7(d)",
+  "stem": "In this question, all lengths are in cm. Áine has 100 sticks. Each stick has a different integer length from 1 to 100, so the lengths are: 1 cm, 2 cm, 3 cm, …, 99 cm, 100 cm. Áine makes triangles, using three of these sticks each time.",
+  "questionText": "Áine makes another triangle with three of her sticks, with sides of length 12, 24, and 30. Find how many different (non-congruent) triangles Áine could make that would be similar to this triangle. Show your working out. Remember that Áine only uses three sticks for each triangle, and that the length of each stick is a different whole number from 1 to 100, inclusive.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "Answer = 19",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q7-d-solution-2",
+    "kind": "point",
+    "verbatim": "Smallest such triangle is 2, 4, 5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q7-d-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * if the given triangle is not excluded (i.e. answer = 20)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q8-a",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q8-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q8(a)",
+  "stem": "This question is about solar panels. The graph below shows the energy produced each day by a number of solar panels, depending on the number of daylight hours. The axes do not meet at (0, 0). The energy produced is measured in kWh.",
+  "questionText": "Which of the following is closest to the value of r, the correlation coefficient, for this data? Justify your answer, based on the information in the graph. The values given are −0·95, −0·80, −0·25, 0·25, 0·80 and 0·95.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q8-a-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: 0·8",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-a-solution-2",
+    "kind": "point",
+    "verbatim": "Accept “positive” instead of “increasing”",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-a-solution-3",
+    "kind": "point",
+    "verbatim": "Direction and strength acceptable in justification",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q8-b-i-ii-iii",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q8-b-i-ii-iii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q8(b)(i), Q8(b)(ii), Q8(b)(iii)",
+  "stem": "This question is about solar panels. The graph below shows the energy produced each day by a number of solar panels, depending on the number of daylight hours. The axes do not meet at (0, 0). The energy produced is measured in kWh. According to the line of best fit, a day with 13 daylight hours corresponds to 10·7 kWh of energy being produced.",
+  "questionText": "(i) Plot a point on the diagram on the previous page to represent this information. Label this point P. (ii) Draw the line of best fit, by eye, on the diagram on the previous page. Your line of best fit should go through the point P. (iii) Use the line of best fit that you have drawn to estimate the amount of energy that would be produced for a day with 11 daylight hours. Show your work on the diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q8-b-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Point P plotted and labelled",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-b-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Reasonable line of best fit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-b-i-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Value read from line of best fit.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q8-b-iv",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q8-b-iv",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q8(b)(iv)",
+  "stem": "This question is about solar panels. The graph below shows the energy produced each day by a number of solar panels, depending on the number of daylight hours. The axes do not meet at (0, 0). The energy produced is measured in kWh. According to the line of best fit, a day with 13 daylight hours corresponds to 10·7 kWh of energy being produced.",
+  "questionText": "Find the equation of the line of best fit that you drew in part (b)(ii). Use the point P you plotted in part (b)(i) and your answer from part (b)(iii). Give your answer in the form y = ax + b, where x ∈ ℝ is the number of daylight hours, y is the energy produced (in kWh), and a and b are constants.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q8-b-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Equation found using (13, 10·7) and their answer to part (b)(iii)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-b-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Fully substituted formula for equation of a line",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-b-iv-solution-3",
+    "kind": "point",
+    "verbatim": "Equation in the required form",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q8-c",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q8-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q8(c)",
+  "stem": "Lee has a solar farm.",
+  "questionText": "There are 128 solar panels in Lee’s solar farm. Each week, he chooses 2 of the 128 solar panels at random to test. Find the probability that, in a given week, he chooses at least one of the same solar panels as he chose the week before. Give your answer correct to 3 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q8-c-solution-1",
+    "kind": "point",
+    "verbatim": "P(at least 1) = 1 − P(none in common)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-c-solution-2",
+    "kind": "point",
+    "verbatim": "= 0·0311 … = 0·031 [3 D.P.]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-c-solution-3",
+    "kind": "point",
+    "verbatim": "Correct answer, not evaluated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q8-d-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q8-d-i",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q8(d)(i)",
+  "stem": "Lee has a solar farm. The number of daylight hours per day in the solar farm over the course of one year can be modelled by the following function, H(t), for 0 ≤ t ≤ 365, t ∈ ℤ: H(t) = 4·5 sin((2π/365)t) + 12. Here, H is in hours, t is the number of days after 21st March, and (2π/365)t is in radians.",
+  "questionText": "Use H(t) to find the number of daylight hours on 28th March. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q8-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "= 12·54 [2 D.P.]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Note: if the calculator is in a mode other than radian mode, this is considered an error, so Step 3 will not be correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q8-d-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q8-d-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q8(d)(ii)",
+  "stem": "Lee has a solar farm. The number of daylight hours per day in the solar farm over the course of one year can be modelled by the following function, H(t), for 0 ≤ t ≤ 365, t ∈ ℤ: H(t) = 4·5 sin((2π/365)t) + 12. Here, H is in hours, t is the number of days after 21st March, and (2π/365)t is in radians.",
+  "questionText": "Using H(t), solve an equation to find the first day (value of t) and the last day (value of t), after 21st March, for which the number of daylight hours is less than 8. Give each answer as a value of t ∈ ℤ, with 0 ≤ t ≤ 365. You do not need to find the actual date for each day.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q8-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "So first day: t = 247 [first day after 246·10]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "and last day: t = 301 [last day before 301·39]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q8-d-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Finds second value of t",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q9-a",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q9-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q9(a)",
+  "stem": "The diagram below shows a belt drive system. In the diagram, the belt is the path from A to D to C to B and back to A, made up of two line segments and two major arcs of circles. The circles k and s have centres P and Q, respectively. A and B are points on k, and C and D are points on s. AD and BC are tangents to both circles, as shown, and intersect at the point O, which lies on PQ.",
+  "questionText": "Fill in the two missing statements and four missing reasons in the table below to prove that the triangles POA and POB are congruent. The table gives Statement 1 as |PA| = |PB|, leaves Statements 2 and 3 blank, and gives the Conclusion as: Therefore, Δ POA and Δ POB are congruent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q9-a-solution-1",
+    "kind": "point",
+    "verbatim": "Tangents are perpendicular to radii at point of contact",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q9-a-solution-2",
+    "kind": "point",
+    "verbatim": "Common side",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q9-a-solution-3",
+    "kind": "point",
+    "verbatim": "Note: For each statement on the left, must give matching reason on the right.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q9-b-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q9-b-i",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q9(b)(i)",
+  "stem": "The diagram below shows a belt drive system. In the diagram, the belt is the path from A to D to C to B and back to A, made up of two line segments and two major arcs of circles. The circles k and s have centres P and Q, respectively. A and B are points on k, and C and D are points on s. AD and BC are tangents to both circles, as shown, and intersect at the point O, which lies on PQ. The radius of the circle k is |PA| = 12 cm. The size of the angle ∠APO is 70°.",
+  "questionText": "Find the distance |AO|, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "= 33·0 cm [1 D.P.]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q9-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Accept 33 (i.e. 33·0 not required)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q9-b-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q9-b-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q9(b)(ii)",
+  "stem": "The diagram below shows a belt drive system. In the diagram, the belt is the path from A to D to C to B and back to A, made up of two line segments and two major arcs of circles. The circles k and s have centres P and Q, respectively. A and B are points on k, and C and D are points on s. AD and BC are tangents to both circles, as shown, and intersect at the point O, which lies on PQ. The radius of the circle k is |PA| = 12 cm. The size of the angle ∠APO is 70°.",
+  "questionText": "The triangles POA and QOC are similar. The radius of circle s is |QC| = 8 cm. Find the total length of the belt, that is, the path from A to D to C to B and back to A. Give your answer correct to the nearest cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 187 [cm] [∈ ℕ]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q9-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Finds total length",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q9-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * once for incorrect rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q9-c",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q9-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q9(c)",
+  "questionText": "The gear belt is packed in a closed box. The net of the box is the shaded part in the diagram below. It can be cut from a sheet of cardboard of size 55 cm by 120 cm. The height of the box, when assembled, is x cm, as shown. Two other lengths are marked j and k in the diagram. Find the volume of the box in cm³, when assembled. Give your answer in the form ax³ + bx² + cx, where a, b, c ∈ ℝ are constants. As part of your solution, express the lengths marked j and k in terms of x.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "j = 55 − 2x",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q9-c-solution-2",
+    "kind": "point",
+    "verbatim": "k = 60 − x",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q9-c-solution-3",
+    "kind": "point",
+    "verbatim": "= 2x³ − 175x² + 3300x",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q9-c-solution-4",
+    "kind": "point",
+    "verbatim": "Multiplies two linear factors (simplification not required)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q9-d",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q9-d",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q9(d)",
+  "questionText": "The gear belt is part of a robot lawnmower. It is used to cut the grass in the region shown in the diagram below. The perimeter of this region is made up of a number of line segments, plus the arc of one quarter of a circle from A to B with its centre on the side BC. BC is divided into six segments of equal length. The length, in metres, of five line segments are shown in the diagram (6·7, 9·1, 10·2, 8·8 and 8·8). Each of these line segments is perpendicular to BC. Liam uses the trapezoidal rule to estimate the total area of this region. By finding the actual total area, or otherwise, work out the error in Liam’s estimate for the total area of this region. Give your answer correct to the nearest m².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "= 8 [m²] [∈ ℕ]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q9-d-solution-2",
+    "kind": "point",
+    "verbatim": "Finds area of quarter circle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q9-d-solution-3",
+    "kind": "point",
+    "verbatim": "Step 4 cannot be considered correct unless Step 1 and Step 3 are both completed (with or without errors)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q10-a-i",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q10-a-i",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q10(a)(i)",
+  "stem": "The amount of money spent on entertainment per month by the adult population in a particular city is roughly normally distributed, with a mean of €46·02 and a standard deviation of €11·72.",
+  "questionText": "Work out the percentage of the adult population who spend more than €50 on entertainment per month. Give your answer correct to the nearest percent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "= 37 [%] [∈ ℕ]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q10-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Finds z-score (0·33 or 0·34)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q10-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Finds required probability",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q10-a-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q10-a-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q10(a)(ii)",
+  "stem": "The amount of money spent on entertainment per month by the adult population in a particular city is roughly normally distributed, with a mean of €46·02 and a standard deviation of €11·72.",
+  "questionText": "90% of the adult population spend less than €X on entertainment per month. Work out the value of X, correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q10-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= [€] 61 [∈ ℕ]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q10-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Finds z-score (1·28 or 1·29)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q10-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Equation in X",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q10-b-i-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q10-b-i-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q10(b)(i), Q10(b)(ii)",
+  "stem": "In a game, each player wants to collect as many tokens as possible. When each player takes their turn, they roll a standard unbiased 6-sided die once. Each time they roll the die: if they roll a 1, 2, 3, or 4, they get nothing; if they roll a 5 or a 6, they get 1 token.",
+  "questionText": "(i) Write down the probability that a player gets 1 token on their first turn. Amelie takes her turn 5 times in total. (ii) Work out the probability that she gets 1 token for the first time on her 5th turn. Give your answer as a fraction.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q10-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "(i) correct and work of merit in (ii)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q10-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "(ii) correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q10-b-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * if probability is as a decimal rather than a fraction in part (ii)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q10-b-iii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q10-b-iii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q10(b)(iii)",
+  "stem": "In a game, each player wants to collect as many tokens as possible. When each player takes their turn, they roll a standard unbiased 6-sided die once. Each time they roll the die: if they roll a 1, 2, 3, or 4, they get nothing; if they roll a 5 or a 6, they get 1 token. Amelie takes her turn 5 times in total.",
+  "questionText": "Work out the probability that she gets 4 or more tokens in her 5 turns. Give your answer as a fraction.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q10-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "P(4 or more) = P(4 or 5)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q10-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "P(less than 4) evaluated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q10-b-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * if probability is as a decimal rather than a fraction",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q10-c-i",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q10-c-i",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q10(c)(i)",
+  "stem": "In a game, each player wants to collect as many tokens as possible. When each player takes their turn, they roll a standard unbiased 6-sided die once. Each time they roll the die: if they roll a 1, 2, 3, or 4, they get nothing; if they roll a 5 or a 6, they get 1 token. The rules of the game are changed. Each time a player takes their turn, if they roll a 1, 2, 3, or 4, they still get nothing. If a player rolls a 5 or a 6, they have a choice. They can either: take 1 token and finish their turn; or: roll the die again, as part of the same turn. If they roll a 1, 2, 3, or 4 this time, they get nothing at all for this turn. If they roll a 5 or a 6, they get a total of 4 tokens for this turn. p is the probability that a player who gets a 5 or a 6 when they roll the die the first time will take 1 token and finish their turn, where 0 ≤ p ≤ 1.",
+  "questionText": "Work out the expected value (in tokens) of taking one turn using these rules. Remember that a turn can involve one or two rolls of the die. Give your answer in the form (a + bp)/9 where a, b are constants. It may be helpful to draw a tree diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q10-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Probability of rolling again = 1 − p",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q10-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Note: if 1 − p is not used in Step 3, then Step 4 cannot be considered correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p2-q10-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Answer (in correct form)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p2-q10-c-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q10-c-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 2 Q10(c)(ii)",
+  "stem": "In a game, each player wants to collect as many tokens as possible. When each player takes their turn, they roll a standard unbiased 6-sided die once. Each time they roll the die: if they roll a 1, 2, 3, or 4, they get nothing; if they roll a 5 or a 6, they get 1 token. The rules of the game are changed. Each time a player takes their turn, if they roll a 1, 2, 3, or 4, they still get nothing. If a player rolls a 5 or a 6, they have a choice. They can either: take 1 token and finish their turn; or: roll the die again, as part of the same turn. If they roll a 1, 2, 3, or 4 this time, they get nothing at all for this turn. If they roll a 5 or a 6, they get a total of 4 tokens for this turn. p is the probability that a player who gets a 5 or a 6 when they roll the die the first time will take 1 token and finish their turn, where 0 ≤ p ≤ 1.",
+  "questionText": "The expected value from part (c)(i) is biggest when p = 0. Explain what this means each player should do, in order to maximise the expected value (in tokens) of each turn.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p2-q10-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Player should roll again [if they get a 5 or a 6]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
  }
 ]

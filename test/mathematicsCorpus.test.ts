@@ -25,6 +25,7 @@ import { examTopicIdsForQuestion } from '../data/examTopics/registry';
 import review from '../scripts/markbank/mathematics/reviews/2025-higher-p1.json';
 import paper2 from '../scripts/markbank/mathematics/reviews/2025-higher-p2.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
+import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 
 describe('Mathematics booklet identities', () => {
   const question = {
@@ -458,6 +459,7 @@ it('restores omitted Ordinary subparts and symbols without changing their card i
 
 describe.each([
   { level: 'higher' as const, number: 1, count: 42, review: higher2026p1 },
+  { level: 'higher' as const, number: 2, count: 41, review: higher2026p2 },
 ])('2026 $level Mathematics Paper $number independent source review', ({ level, number, count, review: census }) => {
   const deck = { higher: HIGHER, ordinary: ORDINARY }[level];
   const cards = deck.filter(card => card.year === 2026 && card.sourceMaterial?.sourceFileid === census.paperFileid);
@@ -511,4 +513,22 @@ it('keeps the 2026 Higher Paper 1 shared scales and continued scheme pages toget
   expect('mathematicsScale' in induction && induction.mathematicsScale?.marks).toEqual([0, 3, 8, 12, 15]);
   expect(card('q7-f').sourceMaterial?.pages).toEqual([18, 19]);
   expect(card('q8-e-i-ii').questionText).toContain('Tick one box only');
+});
+
+it('keeps the 2026 Higher Paper 2 all-or-nothing scales, shared units and construction ruler', () => {
+  const card = (suffix: string) => HIGHER.find(candidate => candidate.id === `maths-2026-hl-p2-${suffix}`)!;
+  for (const suffix of ['q2-c', 'q10-c-ii']) {
+    const task = card(suffix);
+    expect('mathematicsScale' in task && task.mathematicsScale?.marks, suffix).toEqual([0, 5]);
+  }
+  for (const [suffix, marks, last] of [
+    ['q2-b-i-ii', 15, '(ii)'], ['q5-b-i-ii', 10, '(ii)'], ['q5-b-iii-iv', 15, '(iv)'],
+    ['q8-b-i-ii-iii', 5, '(iii)'], ['q10-b-i-ii', 5, '(ii)'],
+  ] as const) {
+    expect(card(suffix).totalMarks, suffix).toBe(marks);
+    expect(card(suffix).questionText, suffix).toContain(last);
+  }
+  expect(card('q3-a').sourceMaterial?.measurementRequired).toBe(true);
+  expect(card('q10-c-i').sourceMaterial?.pages).toEqual([29, 30]);
+  expect(card('q10-c-i').stem).toContain('p is the probability');
 });
