@@ -87,11 +87,19 @@ describe('French exam-topic registry', () => {
       referenceOfficialAssociations: 739,
       referenceMockAssociations: 505,
       referenceProviderSampleAssociations: 0,
-      matchedAssociations: 505,
+      // 20 passages were re-typed from their printed SEC source attribution
+      // (french-reading-review.json): 19 headings become audited anomalies and
+      // 2014 HL archive marker 11 (passage 1's opinion question) leaves the
+      // passage-2 heading. 505 → 486 matched, 992 → 922 card links.
+      matchedAssociations: 486,
+      referenceAnomalyAssociations: 19,
       sourceBlockedAssociations: 234,
       sourceBlockedByReason: { preCorpus: 170, deferred: 60, oralMaterial: 4 },
-      matchedLocalCardLinks: 992,
+      matchedLocalCardLinks: 922,
     });
+    const anomalies = frenchCrosswalk.associations.filter(item => item.resolution === 'reference-anomaly');
+    expect(anomalies).toHaveLength(19);
+    expect(anomalies.every(item => 'reason' in item && /^Reviewed SEC source: \S/.test(item.reason as string))).toBe(true);
     expect(frenchCrosswalk.policy.excludedContent).toContain('No commercial mock question');
     const blocked = frenchCrosswalk.associations.filter(item => item.resolution === 'source-blocked');
     expect(blocked).toHaveLength(234);
@@ -106,7 +114,8 @@ describe('French exam-topic registry', () => {
     const actual = [...new Set(references.map(reference => (
       `${reference.topicId}|${reference.subdivision}`
     )))].sort();
-    expect(references).toHaveLength(1226);
+    // Anomalies keep one passage-level reference instead of per-question rows.
+    expect(references).toHaveLength(1175);
     expect(actual).toEqual(expected);
     expect(references.filter(reference => reference.sitting === 'deferred')).toHaveLength(60);
     expect(references.filter(reference => reference.paperKey === 'oral')).toHaveLength(4);
