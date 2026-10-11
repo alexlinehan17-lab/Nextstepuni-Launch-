@@ -20,7 +20,7 @@
  * so there is no cohort left for whom the old taxonomy is correct.
  */
 
-import type { SecCard, SecDiagramCard } from '../../types/markBank';
+import { MARK_BANK_LEVEL_LABELS, type MarkBankLevel, type SecCard, type SecDiagramCard } from '../../types/markBank';
 import { CURRICULUM } from '../../curriculum';
 import DECK_SIZES from './cards/sizes.json';
 
@@ -157,14 +157,14 @@ export const ENGLISH_STRANDS: StrandRef[] = [...englishCurriculum.strands]
   }));
 
 /**
- * The 2021–2025 Irish papers use the outgoing syllabus.  Keep the canonical
- * Gaeilge names and taxonomy; Mark Bank hides oral and 2027+ rows because this
- * completed written-paper corpus contains no card against them.
+ * Keep the canonical Gaeilge names and taxonomy. The board shows authored
+ * topics for the selected level; a hidden empty row makes no claim that the
+ * historical archive is complete.
  */
 export const IRISH_STRANDS: StrandRef[] = irishCurriculum.strands.map(strand => ({
   id: strand.id,
   label: strand.id === 'irish-1' || strand.id === 'irish-2' ? 'Páipéar 1' :
-    strand.id === 'irish-0' ? 'Béaltriail' : 'Páipéar 2',
+    strand.id === 'irish-0' ? 'Béaltriail' : strand.id === 'irish-9' ? 'Bonnleibhéal' : 'Páipéar 2',
   title: strand.name,
   topics: strand.subtopics
     .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
@@ -2038,6 +2038,7 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   irish: {
     higher: () => import('./cards/irish/higher'),
     ordinary: () => import('./cards/irish/ordinary'),
+    foundation: () => import('./cards/irish/foundation'),
   },
   art: {
     higher: () => import('./cards/art/higher'),
@@ -2201,14 +2202,13 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
 /**
  * 'common' is a level the SEC actually prints, not a third difficulty: a
  * handful of subjects — LCVP's Link Modules among them — are examined at one
- * level by everyone. `levelsFor` below is what the picker must use, so a
- * common-level subject never offers a Higher/Ordinary choice it does not have.
+ * level by everyone. 'foundation' is Irish and Mathematics Foundation Level.
+ * `levelsFor` below is what the picker must use, so a subject never offers a
+ * level it does not have.
  */
-export type Level = 'higher' | 'ordinary' | 'common';
-export const LEVELS: Level[] = ['higher', 'ordinary', 'common'];
-export const LEVEL_LABEL: Record<Level, string> = {
-  higher: 'Higher', ordinary: 'Ordinary', common: 'Common',
-};
+export type Level = MarkBankLevel;
+export const LEVELS: Level[] = ['higher', 'ordinary', 'common', 'foundation'];
+export const LEVEL_LABEL: Record<Level, string> = MARK_BANK_LEVEL_LABELS;
 
 /**
  * How many cards each deck holds, written by the build script.
@@ -2251,7 +2251,7 @@ export async function loadCards(subjectId: string, level: Level): Promise<SecCar
 }
 
 export const cardsForTopic = (topicId: string, cards: SecCard[]) =>
-  cards.filter(c => c.topicId === topicId);
+  cards.filter(c => c.topicId === topicId || c.additionalTopicIds?.includes(topicId));
 
 /** Total marks available in a topic — the denominator for "marks secure". */
 export const topicMarks = (topicId: string, cards: SecCard[]) =>

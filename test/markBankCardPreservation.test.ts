@@ -110,6 +110,23 @@ import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
 import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
+// Additive partial-review routes are checked separately while the original
+// Irish 215-ID hash stays frozen. Do not refresh it during the archive audit.
+const addedIrishRoutes = new Set([
+  'irish-2022-hl-p2-prose-2a-a-an-lasair-choille',
+  'irish-2022-hl-p2-prose-2b-a-drama',
+  'irish-2022-hl-p2-poetry-3b-a-iomhanna',
+  'irish-2022-hl-p2-poetry-3b-a-codarsnacht',
+  'irish-2022-hl-p2-poetry-3b-a-mothuchain',
+  'irish-2024-hl-p2-prose-2a-a-an-lasair-choille',
+  'irish-2024-hl-p2-prose-2b-a-drama',
+  ...['a','b'].flatMap(passage => [1,2,3,4,5].flatMap(number =>
+    ['a','bi','bii'].map(part => `irish-2024-hl-p2-reading-${passage}-q${number}-${part}`))),
+  ...['a','b'].flatMap(passage => ['a','b'].map(part => `irish-2024-hl-p2-reading-${passage}-q6-${part}`)),
+  ...['1-bi','4-bi','4-bii','5-bii'].flatMap(key => [1,2].map(slot => `irish-2024-hl-p2-reading-b-q${key}-${slot}`)),
+  ...[1,2].map(slot => `irish-2024-hl-p2-reading-b-q6-b-${slot}`),
+]);
+
 const decks = [
   // 2026-10-07: new Politics corpus, 17 paper/scheme pairs visually reviewed.
   // No prior Politics IDs existed. All prior subject preservation checks and
@@ -484,10 +501,9 @@ const decks = [
    * 205 cards open the real paper passage or poem in the source reader. */
   ['english:higher', ENGLISH_HIGHER, 210, '231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0'],
   ['english:ordinary', ENGLISH_ORDINARY, 440, '9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f'],
-  /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
-   * responses across 2021–2025 Higher and Ordinary are present, including
-   * listening audio and the real PDF pages for passages and printed poems. */
-  ['irish:higher', IRISH_HIGHER, 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
+  /* Original 400 Irish identities. Their presence does not establish coverage
+   * of every task or route; the full 2010–2026 review remains in progress. */
+  ['irish:higher', IRISH_HIGHER.filter(card => !addedIrishRoutes.has(card.id)), 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
   ['irish:ordinary', IRISH_ORDINARY, 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
   /* 2026-08-30: complete Art written-paper launch. All 462 separately marked
    * tasks and finite printed answer routes across 2021–2025 are present. This
@@ -867,6 +883,12 @@ describe('Mark Bank card preservation', () => {
     // Russian 199, Japanese 600, Classical Studies 516 and Polish 237.
     // Russian 199, Japanese 600, Classical Studies 516 and Arabic 250.
     // Polish 237, Arabic 250, Ancient Greek 383 and Modern Greek 79.
+  });
+
+  it('adds the reviewed Irish internal routes alongside the frozen 215-card Higher baseline', () => {
+    expect(IRISH_HIGHER.filter(card => addedIrishRoutes.has(card.id)).map(card => card.id).sort())
+      .toEqual([...addedIrishRoutes].sort());
+    expect(IRISH_HIGHER).toHaveLength(215 + addedIrishRoutes.size);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {

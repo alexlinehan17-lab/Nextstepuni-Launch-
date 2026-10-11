@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the complete 2021–2025 Irish Mark Bank corpus.
+"""Build the legacy 2021–2025 Irish Mark Bank corpus.
 
 The question paper is the source of every prompt.  The marking scheme supplies
 the published Eolas/Ábhar, Gaeilge, task/style and deduction grammar.  Printed
@@ -9,11 +9,14 @@ real SEC recording, never a transcript that would reveal the answers.
     python3 scripts/markbank/authoring/irish_cards.py
     python3 scripts/markbank/authoring/irish_cards.py --check
 
-One card is one independently selectable response opportunity.  Linked parts
-which the candidate must answer together stay together.  This produces exactly
-400 cards across twenty papers:
+This generator currently emits 451 cards across twenty papers; that is NOT a
+source-independent completeness claim. The October 2026 review found omitted
+internal alternatives and truncated compulsory parts. See irish_inventory.py
+for the full Paper Trail scope, including older papers and Foundation Level.
 
-  * 215 Higher Level (17 Paper 1 + 26 Paper 2 per year)
+The existing output counts are:
+
+  * 266 Higher Level (215 legacy identities + 51 reviewed routes/reading tasks)
   * 185 Ordinary Level (15 Paper 1 + 22 Paper 2 per year)
 
 The generated runtime JSON and the census ledger are committed because the
@@ -33,6 +36,9 @@ from difflib import SequenceMatcher
 from typing import Iterable, Sequence
 
 import fitz
+from irish_higher_routes import apply_review
+from irish_reading import apply_reading_review
+from irish_literature_2024 import apply_literature_review
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -906,6 +912,57 @@ def literature_scheme(prompt: str, scheme_pages: list[str]) -> tuple[int, int, l
     return page, trace, chunk_guide(excerpt, indicative=True)
 
 
+def additional_poetry_criteria(year: int, scheme_pages: list[str]) -> tuple[int, list[int], list[dict]]:
+    """Read all three Q4F allocations, not a fuzzy match on part (i).
+
+    Reviewed against the paper and the complete Q4F scheme pages. These parts
+    share ONE five-mark Gaeilge award, so retain the full response and expose
+    its three knowledge allocations separately. Allocating that shared award
+    to three independent cards would invent a tariff the SEC does not print.
+    """
+    reviewed = {
+        2021: (46, 49, (19, 7, 9)),
+        2022: (48, 50, (19, 8, 8)),
+        2023: (47, 49, (19, 7, 9)),
+        2024: (47, 50, (19, 7, 9)),
+        2025: (45, 47, (17, 9, 9)),
+    }
+    first, last, expected_marks = reviewed[year]
+    text = '\n'.join(scheme_pages[first - 1:last])
+    heading = re.search(r'4F\.\s*Dánta\s+Breise', text)
+    if not heading:
+        raise AssertionError(f'{year} Q4F scheme heading moved from reviewed pages')
+    text = text[heading.end():]
+    language = re.search(r'(?m)^\s*Gaeilge\s*\n', text)
+    if not language:
+        raise AssertionError(f'{year} Q4F shared Gaeilge rubric missing')
+    text = text[:language.start()]
+    parts = split_options(text, ('i', 'ii', 'iii'))
+    if len(parts) != len(expected_marks):
+        raise AssertionError(f'{year} Q4F must contain three separately marked parts')
+    criteria = []
+    for (label, body, _), expected in zip(parts, expected_marks):
+        allocation = re.search(r'(?:Eolas|Míniú)\s*=\s*(\d+)\s+mh?arc', body)
+        if not allocation or int(allocation.group(1)) != expected:
+            raise AssertionError(f'{year} Q4F({label}) scheme tariff changed')
+        # Preserve the complete part's guidance. No character-limited excerpt
+        # may discard a later compulsory part or cut a quoted line in half.
+        lines = [compact(line) for line in clean_lines(
+            body, drop_answer_slots=False).splitlines() if compact(line)]
+        guidance: list[str] = []
+        for line in lines:
+            if guidance and len(guidance[-1]) + len(line) < 650:
+                guidance[-1] += ' ' + line
+            else:
+                guidance.append(line)
+        criteria.append(criterion(
+            f'eolas-{label}', f'({label}) Eolas', expected, guidance,
+            guidance_kind='indicative'))
+    if sum(item['maxMarks'] for item in criteria) != 35:
+        raise AssertionError(f'{year} Q4F knowledge must total 35 before Gaeilge')
+    return first, list(range(first, last + 1)), criteria
+
+
 def option_source_pages(
     prompt: str,
     paper_pages: Sequence[str],
@@ -975,14 +1032,18 @@ def literature_cards(year: int, level: str, paper_pages: list[str], scheme_pages
     def add_literature(
         *, family: str, section_key: str, option: str, body: str, topic: str,
         total: int, source: dict | None = None,
+        knowledge_criteria: list[dict] | None = None,
+        reviewed_scheme_pages: list[int] | None = None,
     ) -> None:
         body = without_literature_footer(body)
         question = prompt_text(
             f'({option}) {body}', preserve_part_labels=True)
         scheme_page, trace, guide = literature_scheme(question, scheme_pages)
         knowledge = total - 5 if level == 'higher' else total
-        criteria = [criterion(
+        criteria = list(knowledge_criteria) if knowledge_criteria else [criterion(
             'eolas', 'Eolas', knowledge, guide, guidance_kind='indicative')]
+        if reviewed_scheme_pages:
+            scheme_page = reviewed_scheme_pages[0]
         if level == 'higher':
             criteria.append(criterion(
                 'gaeilge', 'Gaeilge', 5,
@@ -1013,6 +1074,8 @@ def literature_cards(year: int, level: str, paper_pages: list[str], scheme_pages
             guide_note='SEC supporting points for literature are indicative rather than exhaustive. Relevant alternatives must be judged on their merits; the language criterion or deduction is applied separately exactly as printed.',
             source=source,
         ))
+        if reviewed_scheme_pages:
+            cards[-1]['schemePages'] = reviewed_scheme_pages
 
     prose_labels = ('a', 'b') if level == 'higher' else ('a', 'b', 'c')
     poetry_labels = prose_labels
@@ -1063,7 +1126,9 @@ def literature_cards(year: int, level: str, paper_pages: list[str], scheme_pages
         for index, match in enumerate(option_matches):
             letter = match.group(1).lower()
             end = option_matches[index + 1].start() if index + 1 < len(option_matches) else len(q4_text)
-            body = cut_after_n_marks(q4_text[match.end():end], 1)
+            # A–E are single essays. F has three compulsory marked parts;
+            # stopping at the first tariff silently dropped (ii) and (iii).
+            body = cut_after_n_marks(q4_text[match.end():end], 3 if letter == 'f' else 1)
             question = prompt_text(f'4{letter.upper()}. {body}')
             topic = title_topic(question, ADDITIONAL_TOPICS, 'irish-6-5')
             source = None
@@ -1081,10 +1146,18 @@ def literature_cards(year: int, level: str, paper_pages: list[str], scheme_pages
                     r'Dánta\s+Breise\s*[–—-]\s*(.+?)\s+Freagair\b', printed, re.I)
                 title = title_match.group(1).strip() if title_match else printed.split('‘', 1)[0][:110]
                 source = source_material('Litríocht Bhreise', title or 'Téacs Clóite', pages)
+            knowledge_criteria = None
+            reviewed_scheme_pages = None
+            if letter == 'f':
+                _, reviewed_scheme_pages, knowledge_criteria = additional_poetry_criteria(
+                    year, scheme_pages)
+                if not re.search(r'\(i\).*\(ii\).*\(iii\)', prompt_text(body)):
+                    raise AssertionError(f'{year} Q4F compulsory parts missing')
             add_literature(
                 family='literature', section_key='4', option=letter,
                 body='4' + letter.upper() + '. ' + body, topic=topic, total=40,
-                source=source)
+                source=source, knowledge_criteria=knowledge_criteria,
+                reviewed_scheme_pages=reviewed_scheme_pages)
 
     expected = 14 if level == 'higher' else 12
     if len(cards) != expected:
@@ -1179,6 +1252,8 @@ def census(cards: Sequence[dict]) -> dict:
     return {
         'subject': 'irish',
         'scope': 'Leaving Certificate Higher and Ordinary Level, 2021–2025',
+        'coverageStatus': 'not-established',
+        'coverageNote': 'This ledger counts generated cards, not independently reviewed paper tasks. Zero queued cards does not mean zero missing questions. See irish-archive-inventory.json and irish-review.json.',
         'definition': 'One independently selectable response; compulsory linked parts remain together.',
         'paperCount': len(papers),
         'cardUnitCount': len(asks),
@@ -1225,10 +1300,18 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
-    cards = build_corpus()
+    cards, route_reviews = apply_review(build_corpus())
+    cards, reading_review = apply_reading_review(cards)
+    cards, literature_review = apply_literature_review(cards)
     manifest = serialise(cards)
     ledger = json.dumps(census(cards), ensure_ascii=False, indent=2) + '\n'
     schemes = scheme_text_exports()
+    schemes[os.path.join(ROOT, 'scripts/markbank/authored/irish-higher-route-review.json')] = json.dumps(
+        route_reviews, ensure_ascii=False, indent=2) + '\n'
+    schemes[os.path.join(ROOT, 'scripts/markbank/authored/irish-reading-review.json')] = json.dumps(
+        reading_review, ensure_ascii=False, indent=2) + '\n'
+    schemes[os.path.join(ROOT, 'scripts/markbank/authored/irish-literature-2024-review.json')] = json.dumps(
+        literature_review, ensure_ascii=False, indent=2) + '\n'
     if args.check:
         existing_manifest = open(OUT, encoding='utf-8').read() if os.path.exists(OUT) else ''
         existing_census = open(CENSUS_OUT, encoding='utf-8').read() if os.path.exists(CENSUS_OUT) else ''
@@ -1238,7 +1321,7 @@ def main() -> int:
         if existing_manifest != manifest or existing_census != ledger or stale_schemes:
             print('Irish generated files are stale; run irish_cards.py', file=sys.stderr)
             return 1
-        print(f'Irish corpus verified: {len(cards)} cards across 20 papers')
+        print(f'Irish generated outputs match: {len(cards)} cards across 20 papers; question coverage remains under review')
         return 0
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

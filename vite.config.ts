@@ -7,6 +7,7 @@ import { standaloneDocumentRoutes } from './utils/pwaNavigation';
 import { readFileSync } from 'node:fs';
 import type { LegalDoc } from './components/legal/legalContent';
 import { renderLegalPage } from './components/legal/legalPage';
+import { pdfjsAssets } from './scripts/vite/pdfjsAssets';
 
 // The app and public documents share the same copy, renderer helpers and CSS.
 const legalStyles = () => readFileSync(new URL('./components/legal/legal-document.css', import.meta.url), 'utf8');
@@ -66,6 +67,7 @@ export default defineConfig(() => {
       plugins: [
         react(),
         landingRoute(),
+        pdfjsAssets(),
         legalStaticPages(),
         VitePWA({
           registerType: 'autoUpdate',
@@ -129,6 +131,7 @@ export default defineConfig(() => {
         // every deploy. Bad trade; they are runtime-cached instead.
         globIgnores: [
           '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
+          '**/pdfjs-*/**',
           '**/higher-*.js', '**/ordinary-*.js',
           // Subject factories and Atlas registries are fetched with their lazy
           // tools and cached by app-chunks; keep growing corpora out of install.
@@ -201,7 +204,7 @@ export default defineConfig(() => {
                 options: { cacheName: 'journey-visitors-v1', expiration: { maxEntries: 24, maxAgeSeconds: 60 * 60 * 24 * 90, purgeOnQuotaError: true } },
               },
               {
-                urlPattern: /\/(assets|models)\/.*\.(glb|png|jpg|svg|webp|woff2?)$/i,
+                urlPattern: /\/(assets|models)\/.*\.(glb|png|jpg|svg|webp|woff2?|wasm)$/i,
                 handler: 'CacheFirst',
                 options: { cacheName: 'app-assets', expiration: { maxAgeSeconds: 60 * 60 * 24 * 30 } },
               },

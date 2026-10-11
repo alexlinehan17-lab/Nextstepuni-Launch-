@@ -67,12 +67,13 @@ describe('audited hosted answer maps', () => {
       .toBe(storage);
   });
 
-  it('keeps the 23 original Art and Physics overrides byte-identical to their reviewed source maps', () => {
-    const originalOverrides = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('art|') || key.startsWith('physics|'));
-    expect(originalOverrides).toHaveLength(23);
-    for (const key of originalOverrides) {
+  it('keeps the original Art and Physics overrides and the reviewed Irish overrides byte-identical to their source maps', () => {
+    const sourceMirrored = [...HOSTED_ANSWER_OVERRIDES].filter(key => /^(art|physics|irish)\|/.test(key));
+    expect(sourceMirrored.filter(key => !key.startsWith('irish|'))).toHaveLength(23);
+    expect(sourceMirrored.filter(key => key.startsWith('irish|'))).toHaveLength(18);
+    for (const key of sourceMirrored) {
       const [subjectId, year, fileid] = key.split('|');
-      expect(['art', 'physics']).toContain(subjectId);
+      expect(['art', 'physics', 'irish']).toContain(subjectId);
       const hosted = path.join(HOSTED_ANSWERS_DIR, year, `${fileid}.json`);
       const source = path.join(SOURCE_ANSWERS_DIR, year, `${fileid}.json`);
       expect(existsSync(hosted), hosted).toBe(true);

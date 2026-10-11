@@ -1,0 +1,436 @@
+{
+  "year": 2011,
+  "level": "foundation",
+  "paperFileids": [
+    "LC001BLP100IV.pdf",
+    "LC001BLPA00IV.pdf"
+  ],
+  "schemeFileid": "LC001BLP000EV.pdf",
+  "reviewDate": "2026-10-07",
+  "status": "reviewed",
+  "fullPaperAndApplicableSchemeVisualSweep": true,
+  "reviewedPaperPages": {
+    "LC001BLP100IV.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "LC001BLPA00IV.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "selectionDecisions": [
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 2,
+      "raw": "FREAGAIR GACH CEIST (1, 2 agus 3).",
+      "decision": "Required answers, no optional task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 3,
+      "raw": "freagair na c",
+      "decision": "Choose2ofA/B/C expandsAB,AC,BC. All five questions in each selected passage required. Raw PDF fragments are cross-checked with spatially reconstructed text."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 4,
+      "raw": "r tae nó caife",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 4,
+      "raw": "gus freagair",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 4,
+      "raw": "nó ag snámh,",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 4,
+      "raw": "nó caife",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 5,
+      "raw": "gus freagair",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 6,
+      "raw": "Freagair",
+      "decision": "Choose2ofA/B/C expandsAB,AC,BC. All five questions in each selected passage required. Raw PDF fragments are cross-checked with spatially reconstructed text."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 6,
+      "raw": "do rogha d",
+      "decision": "Choose2ofA/B/C expandsAB,AC,BC. All five questions in each selected passage required. Raw PDF fragments are cross-checked with spatially reconstructed text."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 7,
+      "raw": "áil nó a fho",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 9,
+      "raw": "FREAGAIR GACH CEIST (4, 5 agus 6)",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 10,
+      "raw": "Freagair",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 10,
+      "raw": "(a) NÓ (b)",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 11,
+      "raw": "NÓ",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 12,
+      "raw": "Freagair (a) NÓ (b).",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 12,
+      "raw": "Tá tusa ag obair sa Gharáiste seo an samhradh seo. Scríobh litir abhaile chuig do chara. Inis dó/di:",
+      "decision": "Open friend and flexible pronoun; required picture details with illustrative examples. One wholeletter."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 12,
+      "raw": "Faoi na daoine a thagann go dtí an Garáiste. (Dhá phointe ag teastáil) } Pictiúr 3",
+      "decision": "Open friend and flexible pronoun; required picture details with illustrative examples. One wholeletter."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 13,
+      "raw": "NÓ",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 13,
+      "raw": "Ainmnigh cúig ábhar scoile a rinne tú sa scrúdú sin: ..………………….……………………………..……………",
+      "decision": "Required five school subjects or three hobbies are open content, not an enumerated pool."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 13,
+      "raw": "Ainmnigh trí chaitheamh aimsire atá agat: …………..…………………………………….…………………….....",
+      "decision": "Required five school subjects or three hobbies are open content, not an enumerated pool."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 13,
+      "raw": "Cuir ciorcal timpeall ar an dáta i mí Lúnasa is fearr leat le haghaidh agallaimh: 15ú 17ú 19ú",
+      "decision": "Closed interview pool15/17/19Lúnasa expands three whole40-mark forms and their16fullQ4/Q5/Q6writing combinations."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 14,
+      "raw": "Freagair (a) NÓ (b).",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 15,
+      "raw": "NÓ",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLPA00IV.pdf",
+      "page": 2,
+      "raw": "Freagair gach ceist. Tá na treoracha don Roinn seo ar an dlúthdhiosca.",
+      "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+    },
+    {
+      "paperFileid": "LC001BLPA00IV.pdf",
+      "page": 2,
+      "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+      "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+    },
+    {
+      "paperFileid": "LC001BLPA00IV.pdf",
+      "page": 3,
+      "raw": "Cá bhfuil an banc suite? (Cuir tic () sa bhosca ceart.)",
+      "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+    }
+  ],
+  "spatialSelectionDecisions": [
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 2,
+      "raw": "FREAGAIR GACH CEIST (1, 2 agus 3).",
+      "decision": "Required answers, no optional task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 3,
+      "raw": "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos. (50 marc)",
+      "decision": "Choose2ofA/B/C expandsAB,AC,BC. All five questions in each selected passage required. Raw PDF fragments are cross-checked with spatially reconstructed text."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 3,
+      "raw": "(a) Léigh an litir atá anseo thíos agus freagair na ceisteanna atá fúithi. (25 mharc)",
+      "decision": "Choose2ofA/B/C expandsAB,AC,BC. All five questions in each selected passage required. Raw PDF fragments are cross-checked with spatially reconstructed text."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 4,
+      "raw": "(b) Léigh an bróisiúr atá anseo thíos agus freagair na ceisteanna atá faoi. (25 mharc)",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 4,
+      "raw": "an-chompordach. Is féidir tae nó caife a dhéanamh i ngach seomra. Tá seomra suite compordach ann",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 4,
+      "raw": "Caith cúpla lá linn anseo, ag siúl, ag iascaireacht nó ag snámh, agus rachaidh tú abhaile le neart, le fuinneamh",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 4,
+      "raw": "Tae nó caife",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 5,
+      "raw": "(c) Léigh an scéal nuachta atá thíos agus freagair na ceisteanna ar fad atá faoi. (25 mharc)",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 6,
+      "raw": "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos. (60 marc)",
+      "decision": "Choose2ofA/B/C expandsAB,AC,BC. All five questions in each selected passage required. Raw PDF fragments are cross-checked with spatially reconstructed text."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 6,
+      "raw": "(a) Léigh an t-alt atá anseo thíos agus freagair na ceisteanna atá faoi. (30 marc)",
+      "decision": "Choose2ofA/B/C expandsAB,AC,BC. All five questions in each selected passage required. Raw PDF fragments are cross-checked with spatially reconstructed text."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 7,
+      "raw": "(b) Léigh an giota seo a leanas agus freagair na ceisteanna atá faoi. (30 marc)",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 7,
+      "raw": "Más mian leat an ceol traidisiúnta a chloisteáil nó a fhoghlaim tabhair",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 8,
+      "raw": "(c) Léigh na véarsaí seo a leanas agus freagair na ceisteanna atá fúthu. (30 marc)",
+      "decision": "Required passage questions or source-text conjunction; no extra task selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 9,
+      "raw": "FREAGAIR GACH CEIST (4, 5 agus 6)",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 10,
+      "raw": "Ceist 4 Freagair (a) NÓ (b). (30 marc)",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 11,
+      "raw": "NÓ",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 12,
+      "raw": "Ceist 5 Freagair (a) NÓ (b). (40 marc)",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 12,
+      "raw": "Tá tusa ag obair sa Gharáiste seo an samhradh seo. Scríobh litir abhaile chuig do chara. Inis dó/di:",
+      "decision": "Open friend and flexible pronoun; required picture details with illustrative examples. One wholeletter."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 12,
+      "raw": "- Faoi na daoine a thagann go dtí an Garáiste. (Dhá phointe ag teastáil) } Pictiúr 3",
+      "decision": "Open friend and flexible pronoun; required picture details with illustrative examples. One wholeletter."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 13,
+      "raw": "NÓ",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 13,
+      "raw": "Ainmnigh cúig ábhar scoile a rinne tú sa scrúdú sin: ..………………….……………………………..……………",
+      "decision": "Required five school subjects or three hobbies are open content, not an enumerated pool."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 13,
+      "raw": "Ainmnigh trí chaitheamh aimsire atá agat: …………..…………………………………….…………………….....",
+      "decision": "Required five school subjects or three hobbies are open content, not an enumerated pool."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 13,
+      "raw": "Cuir ciorcal timpeall ar an dáta i mí Lúnasa is fearr leat le haghaidh agallaimh: 15ú 17ú 19ú",
+      "decision": "Closed interview pool15/17/19Lúnasa expands three whole40-mark forms and their16fullQ4/Q5/Q6writing combinations."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 14,
+      "raw": "Ceist 6 Freagair (a) NÓ (b). (50 marc)",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLP100IV.pdf",
+      "page": 15,
+      "raw": "NÓ",
+      "decision": "All Q4,Q5,Q6 required with one A/B choice in each; expand2×4×2=16full120-mark products after form-date selection."
+    },
+    {
+      "paperFileid": "LC001BLPA00IV.pdf",
+      "page": 2,
+      "raw": "Freagair gach ceist. Tá na treoracha don Roinn seo ar an dlúthdhiosca.",
+      "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+    },
+    {
+      "paperFileid": "LC001BLPA00IV.pdf",
+      "page": 2,
+      "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+      "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+    },
+    {
+      "paperFileid": "LC001BLPA00IV.pdf",
+      "page": 3,
+      "raw": "Ceist 5 Cá bhfuil an banc suite? (Cuir tic () sa bhosca ceart.)",
+      "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+    }
+  ],
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+    "verification": "HTTP 200 audio/mpeg, 29851366 bytes. Bank and Atlas mobile playback verified, readyState 4, duration 1865.613063 seconds.",
+    "contentLength": 29851366,
+    "contentType": "audio/mpeg"
+  },
+  "nonPoolDecisions": [
+    "MCQ distractors and map boxes are candidate answers to one question, not independently valid task routes.",
+    "Notice headings, all invitation details to requiredÚna, letter content and form fields are compulsory. Openfriend/dó/di is flexible wording.",
+    "Five schoolsubjects and three hobbies are open content; three explicitly printed interviewdates are a finite selection.",
+    "Story five-reference requirement and scheme example lists are not a choose-five finite menu.2011 prints no fixed missing-reference penalty.",
+    "Reasonable-accommodation guidance changes marking for eligible candidates, not task selection."
+  ],
+  "sourceFindings": [
+    "Fullvisualsweep:16written+8listening+20scheme pages, including blanks/covers. Written270=40matching+50Q2+60Q3+30Q4+40Q5+50Q6; independentlistening180.92cards:22aural +70written(48atomic+6readingpairs+16writingproducts).",
+    "Original2011paper duplicates glyphs at fragment boundaries on severalpages. A spatial extractor removes only identicalglyphs within0.12point at the samebaseline; repeatedletters atdifferentpositions remain. Raw and spatial selection scans both fail unknown/stale directives. OriginalPDFs unchanged.",
+    "Aural22parts onPDF2–6,scheme3. Q1–3a/b7each,Q4/5seven,Q6–9a/b8each,Q10–12a/b10each. Mapbottomleft. Correctofficialaudiofile verified fromSECmanifest. WrittenmatchingEJAHDIFCGB onPDF2/scheme4; no later alternative-numbering rule.",
+    "Q2 BordGáisletter,FeirmChinnSléibhebrochure,SeanfhearClisteCróganews onPDF3/4/5. Q3 DáithíDraíochta,WillieClancy,AnSionnachagusanPréachán onPDF6/7/8. Poemfullthree stanzas20lines andfox/crow/cheeseimages retained.",
+    "Q2B2publishedmismatch:scheme4RangannaCéilí is absent frompassage/options; paper4saysTrághainmheachoppositehouse. Explicitnoticepropagatesatomic,pairs,passage,wholeReading. No inventedSECacceptance.",
+    "Q3A2/B4/C2specialnotesPDF6:6markacceptedanswers inclbutcher/workhistory,WilliereturnedClare/home,andpoemoneortwolines. Extrasentences−2/−4/−6. SchemeB4acceptedtwosentenceexampleprints“mílte”wherepaperhas“céadta”; originalsandwordingretained.",
+    "NoticePDF10/scheme8–10whole30:layout1+pics6/9/3/3+language8. Generalinappropriatetense−1; venue3/2/1,day3/2/1/0,date2/1/0,time2or0,fee2or0,malehost3/2,childrenhospitalcontext3/2/0. No2012tariffimport.",
+    "InvitationPDF11/scheme11–12whole30:greeting2/invitation1/signature1,pics12/2/2/2,language8. NamedrecipientÚna. PDF12dayblockcontradicts itself:innéappearsin2markexamplesandexplicit0row. Visibleconflictnotice,noinventedresolution.",
+    "GarageletterPDF12/scheme13–15whole40:layout6+pics4/12/4/4+language10. Paperanddetailedguide requiretwopointsforpic3despiteoverview1×4;keepgrouptotal4andexplicit2references. PDF15workedlabelsCum22/Cr8conflictcorrectactual30/10;preservedandflagged.",
+    "TescoformPDF13/scheme15–16Phil deRóiste,dates15/17/19Lúnasa. Fields15 doubled30÷2rounduponce. Undoubledhobbyrow2conflictsdouble6andsum15;useexplicitdoubledmethodwithvisibleconflict. Relevantparagraph15/offtopic5;20wordshalf,32words−1/5paragraphawardonly;sharedlanguage10. No2012DOB/spellinglistimport.",
+    "Stories6AChristmasclubpartyPDF14/scheme16;6BcyclingriverrescuePDF15/scheme17. Communication37adjustproportionallyforlength,language13separate. Fivereferencesrequired,6Boneperpicture+fifth. No fixed5markmissingreferencepenaltyorworked2012examplesprinted. Generalstandardlanguage8;reasonableaccommodation18,no4pointconversiontable;19blank,20cover. No audio transcript inthisscheme."
+  ],
+  "remainingWork": [],
+  "runtimeVerification": {
+    "date": "2026-10-08",
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "markBankRoutes": 20,
+    "atlasRoutes": 21,
+    "listeningSourcePages": 5,
+    "threeQuestionWritingPages": 3,
+    "wholeWritingSchemePages": 11,
+    "sourceImagesVisuallyVerified": true,
+    "audioPlaybackVerified": true,
+    "readerFocusRestored": true,
+    "horizontalOverflow": false,
+    "pdfDecoderErrors": []
+  }
+}

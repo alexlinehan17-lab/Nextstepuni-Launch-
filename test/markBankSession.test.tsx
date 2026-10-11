@@ -282,6 +282,26 @@ describe('the question comes first and stays', () => {
     expect(screen.getByRole('button', { name: /Reveal the marking scheme/i })).toBeInTheDocument();
   });
 
+  test('does not lose a rapid Next click to an intermediate source-page scroll', async () => {
+    renderSession([card({ sourceMaterial: {
+      kind: 'source-text', label: 'Listening pictures', title: 'Three printed pages',
+      pages: [3, 4, 5], attribution: 'SEC', presentationNote: 'Original pages.',
+    } })]);
+    fireEvent.click(screen.getByRole('button', { name: /Read Listening pictures/i }));
+    const track = screen.getByLabelText('Listening pictures pages');
+    Object.defineProperty(track, 'clientWidth', { value: 390 });
+    fireEvent.click(screen.getByRole('button', { name: 'Next source page' }));
+    track.scrollLeft = 40;
+    await act(async () => {
+      fireEvent.scroll(track);
+      await new Promise(resolve => requestAnimationFrame(resolve));
+    });
+    expect(screen.getByLabelText('Page 2 of 3')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Next source page' }));
+    expect(screen.getByLabelText('Page 3 of 3')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Open the original paper' })).toHaveAttribute('href', expect.stringContaining('#page=5'));
+  });
+
   test('opens Art imagery from the companion booklet, not the question paper', () => {
     const art = ART_HIGHER.find(entry => entry.id === 'art-2025-hl-q1-a')!;
     renderSession([art]);
@@ -292,6 +312,27 @@ describe('the question comes first and stays', () => {
     const original = screen.getByRole('link', { name: /Open the original illustration sheet/i });
     expect(original).toHaveAttribute('href', expect.stringContaining('LC014ALP004BV.pdf'));
     expect(original).not.toHaveAttribute('href', expect.stringContaining('LC014ALP000EV.pdf'));
+  });
+
+  test('keeps every Irish additional-poetry part when opening and closing both printed versions', () => {
+    const irish = IRISH_HIGHER.find(entry => entry.id === 'irish-2025-hl-p2-literature-4-f')!;
+    renderSession([irish]);
+    const prompt = screen.getByTestId('mark-bank-question-text');
+    expect(prompt).toHaveTextContent('Tabhair sampla amháin');
+    expect(prompt).toHaveTextContent('Scríobh síos tréith amháin');
+    fireEvent.click(screen.getByRole('button', { name: /Read Litríocht Bhreise/i }));
+    expect(screen.getByRole('dialog', { name: /Caoineadh Airt Uí Laoghaire/i })).toBeInTheDocument();
+    expect(screen.getByText('PDF page 13')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Next source page/i }));
+    expect(screen.getByText('PDF page 14')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Close source text/i }));
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(prompt).toHaveTextContent('Scríobh síos tréith amháin');
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    for (const [label, marks] of [['(i) Eolas', 17], ['(ii) Eolas', 9], ['(iii) Eolas', 9], ['Gaeilge', 5]] as const) {
+      fireEvent.click(screen.getByRole('button', { name: `Set ${label} to ${marks} marks` }));
+    }
+    expect(screen.getByText('40 / 40')).toBeInTheDocument();
   });
 
   test('renders and scores the published Art descriptor bands', () => {
@@ -363,8 +404,8 @@ describe('the question comes first and stays', () => {
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     const firstScheme = screen.getByText('Fógra a hAon · Tuiscint / Eolas').closest('section')!;
     const secondScheme = screen.getByText('Fógra a Dó · Tuiscint / Eolas').closest('section')!;
-    fireEvent.click(within(firstScheme).getByRole('button', { name: '10' }));
-    fireEvent.click(within(secondScheme).getByRole('button', { name: '8' }));
+    fireEvent.click(within(firstScheme).getByRole('button', { name: 'Set Fógra a hAon · Tuiscint / Eolas to 10 marks' }));
+    fireEvent.click(within(secondScheme).getByRole('button', { name: 'Set Fógra a Dó · Tuiscint / Eolas to 8 marks' }));
     expect(screen.getByText('18 / 18')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /^Got it/i }));
     expect(onGrade).toHaveBeenCalledTimes(2);

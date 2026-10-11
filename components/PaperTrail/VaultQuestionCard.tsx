@@ -32,6 +32,7 @@ import { physicalEducationTask } from './physicalEducationTasks';
 const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard'));
 import { frenchAudioForPaper } from './frenchAudio';
 import FrenchPaperAudio from './FrenchPaperAudio';
+import AudioSourcePlayer from '../MarkBank/AudioSourcePlayer';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -238,6 +239,8 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
         // Stays light in dark mode too — the card itself is forced white
         // (design system), so a zinc-950 strip here read as a black band.
         <div className="px-3 pt-3 pb-1 bg-[#fafafa]">
+          {state.q.audioMaterial && <AudioSourcePlayer source={state.q.audioMaterial} />}
+          {state.q.practiceInstruction && <p className="mb-3 text-sm font-semibold text-[#2a2520]">{state.q.practiceInstruction}</p>}
           {state.q.practiceTask && (
             <div className="px-1 pb-4" style={{ color: INK }}>
               <p className="text-[13px] font-semibold whitespace-pre-line">{state.q.practiceTask.prompt}</p>

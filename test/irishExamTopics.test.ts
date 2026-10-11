@@ -56,7 +56,7 @@ const paperIdentity = (paper: { level: string; lang: string; year: number; filei
 describe('Irish exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('irish')!;
 
-  it('pins the exact three reference menus and appends only two labelled preservation shelves', () => {
+  it('pins the exact three reference menus and appends four labelled preservation shelves', () => {
     expect(taxonomy).not.toBeNull();
     expect(taxonomy.groups.map(group => ({ id: group.id, label: group.label, level: group.level })))
       .toEqual([
@@ -80,8 +80,16 @@ describe('Irish exam-topic registry', () => {
           id: 'irish-foundation-aural-cluastuiscint',
           label: 'Cluastuiscint (NextStepUni archive)',
         },
+        {
+          id: 'irish-higher-prescribed-prose-archive',
+          label: 'Prescribed Prose (NextStepUni archive)',
+        },
+        {
+          id: 'irish-higher-prescribed-poetry-archive',
+          label: 'Prescribed Poetry (NextStepUni archive)',
+        },
       ]);
-    expect(taxonomy.groups.map(group => group.topicIds.length)).toEqual([26, 26, 12]);
+    expect(taxonomy.groups.map(group => group.topicIds.length)).toEqual([28, 26, 12]);
     expect(strandsFor('irish', taxonomy.topics.map(topic => topic.id)).map(group => group.name))
       .toEqual(['Higher Level', 'Ordinary Level', 'Foundation Level']);
   });
@@ -92,7 +100,7 @@ describe('Irish exam-topic registry', () => {
         .find(subject => subject.id === 'irish')!
         .strands.flatMap(strand => strand.subtopics.map(topic => topic.id)),
     );
-    expect(Object.keys(curriculumCrosswalk)).toHaveLength(64);
+    expect(Object.keys(curriculumCrosswalk)).toHaveLength(66);
     for (const topic of taxonomy.topics) {
       const ids = curriculumNodeIdsForExamTopic(topic.id);
       expect(ids, topic.id).toEqual(curriculumCrosswalk[topic.id as keyof typeof curriculumCrosswalk]);
@@ -104,8 +112,8 @@ describe('Irish exam-topic registry', () => {
   it('reconciles all 842 official headings at an explicit source boundary', () => {
     expect(irishCrosswalk.summary).toMatchObject({
       referenceTopics: 62,
-      preservationExtensionTopics: 2,
-      runtimeTopics: 64,
+      preservationExtensionTopics: 4,
+      runtimeTopics: 66,
       referenceReportedAssociations: 1481,
       referenceOfficialAssociations: 842,
       referenceMockAssociations: 563,
@@ -157,18 +165,18 @@ describe('Irish exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(irishCrosswalk.summary).toMatchObject({
       localPaperVariants: 91,
-      localPhysicalMappings: 979,
-      distinctStudentFacingQuestions: 979,
+      localPhysicalMappings: 2091,
+      distinctStudentFacingQuestions: 2091,
       referenceMappedLocalQuestions: 686,
-      retainedLocalQuestions: 293,
+      retainedLocalQuestions: 1405,
       hostedPaperAnchorMaps: 91,
       preservedBaselineVariants: 26,
       preservedBaselineCards: 286,
       newlyAddedPaperVariants: 65,
-      newlyAddedPhysicalMappings: 693,
+      newlyAddedPhysicalMappings: 1805,
     });
     expect(papers).toHaveLength(91);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(979);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(2091);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
     const indexPapers = PAPER_TRAIL_INDEX.irish.flatMap(entry => entry.papers);
@@ -186,7 +194,7 @@ describe('Irish exam-topic registry', () => {
     const topics = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(examQuestionTopicMappingsForSubject('irish').filter(mapping => mapping.lang === 'iv'))
-      .toHaveLength(979);
+      .toHaveLength(2091);
     for (const paper of papers) {
       for (const question of paper.q) {
         const ids = browseTopicIdsForQuestion(paper, question);
@@ -227,12 +235,11 @@ describe('Irish exam-topic registry', () => {
     expect(examTopicIdsForQuestion(
       'irish', 'foundation', 2024, 'main', 'W-4B', 'single', 'iv', 'LC001BLP000IV.pdf',
     )).toEqual([
-      'irish-foundation-write-a-letter',
       'irish-foundation-fill-in-a-form',
     ]);
   });
 
-  it('ships a finite paper-only fallback for all 979 cards', () => {
+  it('ships a finite paper-only fallback for all 2091 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(VAULT_PREFER_ANCHORS.get('irish')?.('LC001ALP100IV.pdf')).toBe(true);
     for (const paper of papers) {
@@ -254,10 +261,10 @@ describe('Irish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 979 questions while keeping provider-only and oral buckets visibly empty', () => {
+  it('surfaces all 2091 questions while keeping provider-only and oral buckets visibly empty', () => {
     expect(subjectAtlasStats('irish')).toMatchObject({
-      questions: 979,
-      topics: 64,
+      questions: 2091,
+      topics: 66,
       yearMin: 2010,
       yearMax: 2026,
     });

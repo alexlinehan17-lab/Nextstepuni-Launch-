@@ -19,6 +19,17 @@ import { type PaperCycle } from '../../types/paperTrail';
 
 const BUCKET = 'nextstepuni-app.firebasestorage.app';
 
+// Recovered SEC schemes were absent from the Storage harvest. Ship these
+// verified PDFs with Hosting so the corrected index never points at a 404.
+const HOSTED_DOCUMENTS = new Set([
+  'papers/lc/irish/2010/scheme/LC001ALP000EV.pdf',
+  'papers/lc/irish/2010/scheme/LC001GLP000EV.pdf',
+  'papers/lc/irish/2011/scheme/LC001BLP000EV.pdf',
+]);
+
+export const hostedPaperDocumentUrl = (path: string): string | null =>
+  HOSTED_DOCUMENTS.has(path) ? `/paper-documents/${path}` : null;
+
 export const paperStoragePath = (
   cycle: PaperCycle,
   subjectId: string,
@@ -50,7 +61,8 @@ const LOCAL_BASE = (import.meta as unknown as {
 export const paperUrl = (path: string) =>
   LOCAL_BASE
     ? `${LOCAL_BASE}/${path}`
-    : `https://firebasestorage.googleapis.com/v0/b/${BUCKET}/o/${encodeURIComponent(path)}?alt=media`;
+    : hostedPaperDocumentUrl(path)
+      ?? `https://firebasestorage.googleapis.com/v0/b/${BUCKET}/o/${encodeURIComponent(path)}?alt=media`;
 
 export const prettyBytes = (b: number) => {
   if (!b) return '';

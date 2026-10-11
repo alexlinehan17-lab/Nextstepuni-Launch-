@@ -39,7 +39,7 @@ import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
   writeChoice, writeLocal, type DeckState,
 } from './store';
-import type { SecCard } from '../../types/markBank';
+import { MARK_BANK_LEVEL_LABELS, type SecCard } from '../../types/markBank';
 
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { ResultStatGrid } from '../ui/ProductPatterns';
@@ -116,8 +116,10 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
     // A common-level subject has no Higher/Ordinary to read off the profile,
     // and a profile that says "Higher" for one is saying nothing about it.
     const levels = levelsFor(subject.id);
+    const rawLevel = profileSubject.level?.toLowerCase();
     const level: Level = levels.length === 1 ? levels[0]
-      : profileSubject.level?.toLowerCase().startsWith('ordinary') ? 'ordinary' : 'higher';
+      : rawLevel?.startsWith('foundation') && levels.includes('foundation') ? 'foundation'
+        : rawLevel?.startsWith('ordinary') ? 'ordinary' : 'higher';
     if (deckSize(subject.id, level) > 0) return { subjectId: subject.id, level };
   }
   return null;
@@ -338,7 +340,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
             {left === 0 ? 'Every mark banked.' : 'Good work. Keep building.'}
           </h2>
           <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED, margin: '0 0 28px' }}>
-            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {level === 'higher' ? 'Higher level' : 'Ordinary level'}
+            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {MARK_BANK_LEVEL_LABELS[level]} level
           </p>
 
           <ResultStatGrid items={[

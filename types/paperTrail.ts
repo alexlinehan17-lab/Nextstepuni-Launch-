@@ -9,6 +9,8 @@
  * these types are the contract between the generator and the tool UI.
  */
 
+import type { CardAudioMaterial } from './markBank';
+
 export type PaperLevel = 'higher' | 'ordinary' | 'foundation' | 'common';
 export type PaperLang = 'ev' | 'iv';
 export type PaperCycle = 'lc' | 'jc' | 'lca';
@@ -71,6 +73,10 @@ export interface PaperAnswerQuestion {
    *  anchor omits shared instructions or table headings. Like `schemeRegion`,
    *  this improves display without changing the shipped pP/pY identity. */
   paperRegion?: PaperAnswerSeg[];
+  /** Verified recording required to answer this listening task. */
+  audioMaterial?: CardAudioMaterial;
+  /** Visible route instruction when several practice tasks share a paper page. */
+  practiceInstruction?: string;
   /** Marking-scheme region: ordered page crops (mode 'crop') or a single
    *  jump target (mode 'pagejump'). */
   region: PaperAnswerSeg[];

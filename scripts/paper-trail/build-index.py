@@ -89,6 +89,14 @@ PAIR_OVERRIDES = {
 FILEID_FIXES = {
     "LC462CCLP000EV.pdf": "LC462CLP000EV.pdf",  # 2010 LCVP EV scheme: doubled 'C'
 }
+# The SEC labels these Irish schemes EV in both filename and archive menu,
+# but the downloaded PDFs are Irish and cover the corresponding IV papers.
+# Covers/content verified 2026-10-07; retain the exact SEC filename for URLs.
+SCHEME_LANGUAGE_OVERRIDES = {
+    ("lc", 2010, "LC001ALP000EV.pdf"): "iv",
+    ("lc", 2010, "LC001GLP000EV.pdf"): "iv",
+    ("lc", 2011, "LC001BLP000EV.pdf"): "iv",
+}
 # Archive artifacts that are deliberate skips, not decode failures.
 ARTIFACT_RE = re.compile(r"\s(\(2\)|hold)\.pdf$", re.I)
 
@@ -664,6 +672,8 @@ def decode_row(row, issues):
     lm = LANG_LABEL_RE.search(label)
     label_lang = lm.group(1).lower() if lm else None
     lang = label_lang or code_lang
+    if row["view"] == "markingschemes":
+        lang = SCHEME_LANGUAGE_OVERRIDES.get((exam, year, fileid), lang)
     if label_lang and code_lang and label_lang != code_lang:
         issues.lang_disagree.append(f"{where}: label ({label_lang}) vs fileid ({code_lang})")
     bilingual = lang == "bv"

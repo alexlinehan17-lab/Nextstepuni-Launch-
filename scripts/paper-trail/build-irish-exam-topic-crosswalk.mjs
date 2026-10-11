@@ -30,6 +30,8 @@ const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/irish-runtime.json');
 const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/irish-curriculum-crosswalk.json');
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
+const reviewedHigherTasks = readJson(path.join(ROOT, 'components/MarkBank/cards/irish/authored.json'))
+  .cards.filter(card => card.reviewedAt && card.atlasQuestionId);
 const reference = readJson(REFERENCE_PATH);
 const preservationBaseline = readJson(BASELINE_PATH);
 const referenceTopics = Object.entries(reference.variants).flatMap(([level, variant]) => (
@@ -64,6 +66,30 @@ const EXTENSIONS = [
     extractedQuestionCount: 0,
     referenceTopic: false,
   },
+  {
+    id: 'irish-higher-prescribed-prose-archive',
+    label: 'Prescribed Prose (NextStepUni archive)',
+    level: 'higher',
+    sourcePath: '/nextstepuni-preservation/irish/higher/prescribed-prose',
+    reportedQuestionCount: 0,
+    officialQuestionHeadings: [],
+    mockQuestionCount: 0,
+    providerSampleQuestionCount: 0,
+    extractedQuestionCount: 0,
+    referenceTopic: false,
+  },
+  {
+    id: 'irish-higher-prescribed-poetry-archive',
+    label: 'Prescribed Poetry (NextStepUni archive)',
+    level: 'higher',
+    sourcePath: '/nextstepuni-preservation/irish/higher/prescribed-poetry',
+    reportedQuestionCount: 0,
+    officialQuestionHeadings: [],
+    mockQuestionCount: 0,
+    providerSampleQuestionCount: 0,
+    extractedQuestionCount: 0,
+    referenceTopic: false,
+  },
 ];
 const allTopics = [...referenceTopics, ...EXTENSIONS];
 const topicById = new Map(allTopics.map(topic => [topic.id, topic]));
@@ -90,6 +116,8 @@ const H = {
   story: topicId('higher', 'Write a Story..'),
   essay: topicId('higher', 'Write an Essay..'),
   historic: EXTENSIONS[0].id,
+  prescribedProse: EXTENSIONS[2].id,
+  prescribedPoetry: EXTENSIONS[3].id,
 };
 const O = {
   conversation: topicId('ordinary', 'AURAL - Comhrá (Conversation)'),
@@ -144,12 +172,19 @@ const setCurriculum = (id, nodes) => { CURRICULUM_CROSSWALK[id] = nodes; };
 setCurriculum(H.conversation, ['irish-1-1', 'irish-1-3']);
 setCurriculum(H.announcement, ['irish-1-0', 'irish-1-3']);
 setCurriculum(H.news, ['irish-1-2', 'irish-1-3']);
-setCurriculum(H.extraPoetry, ['irish-6-5']);
+setCurriculum(H.extraPoetry, [...new Set(['irish-6-5', ...reviewedHigherTasks
+  .filter(card => card.atlasQuestionId === 'X-4F').map(card => card.topicId)])]);
 setCurriculum(H.grammar, ['irish-3-3', 'irish-8-4']);
 setCurriculum(H.oral, ['irish-0-0', 'irish-0-1', 'irish-0-2', 'irish-0-3', 'irish-0-4', 'irish-0-5', 'irish-0-6']);
 setCurriculum(H.reading, ['irish-3-0', 'irish-3-1', 'irish-3-2']);
 setCurriculum(H.poetry, ['irish-5-6', 'irish-7-0']);
 setCurriculum(H.prose, ['irish-4-7', 'irish-7-0']);
+// Reuse the reviewed cards' existing canonical nodes; this archive shelf does
+// not define a second syllabus or relabel prescribed works as optional prose.
+setCurriculum(H.prescribedProse, [...new Set(reviewedHigherTasks
+  .filter(card => card.atlasQuestionId.startsWith('P-2A-')).map(card => card.topicId))].sort());
+setCurriculum(H.prescribedPoetry, [...new Set(reviewedHigherTasks
+  .filter(card => card.atlasQuestionId.startsWith('F-3A-')).map(card => card.topicId))].sort());
 setCurriculum(H.debate, ['irish-2-4', 'irish-2-5']);
 setCurriculum(H.article, ['irish-2-1']);
 setCurriculum(H.story, ['irish-2-3']);
@@ -661,6 +696,166 @@ for (const paper of papers) {
   }
 }
 
+// Reviewed task boundaries override generic section guesses for this exact
+// paper. Frozen baseline identities remain below; new parts/routes are additive.
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json']
+  .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
+for (const card of foundationTasks.cards) {
+  const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
+  if (!paper) throw new Error('Unindexed reviewed Foundation task: ' + card.id);
+  const existing = paper.q.find(q => q.n === card.atlasQuestionId);
+  if (existing?.baseline) throw new Error('Reviewed task collides with frozen identity: ' + card.id);
+  if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
+  addQuestion(paper, {
+    n: card.atlasQuestionId,
+    label: card.questionRef.replace(/^\d{4} FL /, ''),
+    referenceSlots: existing?.referenceSlots ?? [],
+    baseTopicIds: card.examTopicKeys.map(key => F[key]),
+    anchor: { pP: card.sourceMaterial.pages[0], pY: [0, 1],
+      paperRegion: card.sourceMaterial.pages.map(p => ({ p, r: [0, 0, 1, 1] })),
+    },
+  });
+  paper.q.at(-1).reviewedSchemePages = card.schemePages;
+  paper.q.at(-1).audioMaterial = card.audioMaterial;
+  if (card.year <= 2024) paper.q.at(-1).practiceInstruction = 'Don chárta seo: ' + card.questionRef.replace(/^\d{4} FL /, '') + '.';
+  paper.hasReviewedFoundationTasks = true;
+  paper.reviewedFoundationSchemeFileid = (card.schemeFileid ?? card.paperFileid) + '.pdf';
+}
+for (const card of reviewedHigherTasks) {
+  const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
+  if (!paper) throw new Error('Unindexed reviewed Higher task: ' + card.id);
+  const existing = paper.q.find(q => q.n === card.atlasQuestionId);
+  const baseTopicIds = card.id.includes('-reading-')
+    ? card.topicId === 'irish-3-3' ? [H.grammar]
+      : (card.additionalTopicIds ?? []).includes('irish-3-3') ? [H.reading,H.grammar] : [H.reading]
+    : card.atlasQuestionId === 'X-4F' ? [H.extraPoetry,H.historic]
+    : [card.atlasQuestionId.startsWith('X-') ? H.historic
+      : card.atlasQuestionId.startsWith('F-3A-') ? H.prescribedPoetry
+      : card.atlasQuestionId.startsWith('P-2A-') ? H.prescribedProse
+      : card.atlasQuestionId.startsWith('P-') ? H.prose : H.poetry];
+  if (existing?.baseline) {
+    // Frozen reading identities/tags remain. The additive regions restore the
+    // entire passage and the reviewed scheme without renumbering the question.
+    if (!card.id.includes('-reading-')) throw new Error('Reviewed task collides with frozen identity: ' + card.id);
+    existing.anchor.paperRegion = card.reviewedPaperPages.map(p => ({p,r:[0,0,1,1]}));
+    existing.reviewedSchemePages = card.schemePages;
+    existing.baseTopicIds = [...new Set([...existing.baseTopicIds,...baseTopicIds])];
+    paper.hasReviewedHigherTasks = true;
+    continue;
+  }
+  if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
+  addQuestion(paper, {
+    n: card.atlasQuestionId,
+    label: card.questionRef.replace(/^\d{4} HL Paper 2 /, ''),
+    baseTopicIds,
+    anchor: { pP: card.reviewedPaperPages[0], pY: [0, 1],
+      paperRegion: card.reviewedPaperPages.map(p => ({ p, r: [0, 0, 1, 1] })),
+    },
+  });
+  const question = paper.q.at(-1);
+  question.primary = card.topicId;
+  delete question.secondary;
+  question.reviewedSchemePages = card.schemePages;
+  question.practiceInstruction = card.practiceInstruction ?? ('Don chárta seo: ' + question.label + '.'
+    + (card.selectedRoute ? ' Freagair (i), (ii) agus (iii).' : ''));
+  paper.hasReviewedHigherTasks = true;
+}
+for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks)) {
+  const reviewedCards = foundationTasks.cards.filter(c => c.year === reviewedFoundation.year && c.paperFileid + '.pdf' === reviewedFoundation.fileid);
+  if (reviewedFoundation.kind === 'foundation-aural') {
+    // Retain the twelve frozen whole-question identities alongside each newly
+    // reviewed mark boundary, all linked to this separate aural paper.
+    for (const question of reviewedFoundation.q) {
+      if (/^\d+$/.test(question.n)) {
+        const parts = reviewedCards.filter(c => new RegExp('^A-' + question.n + '[ab]?$').test(c.atlasQuestionId));
+        if (!parts.length) throw new Error('Unreviewed Foundation listening question: ' + question.n);
+        question.reviewedSchemePages = [...new Set(parts.flatMap(c => c.schemePages))].sort((a,b) => a-b);
+        question.anchor.paperRegion = [...new Set(parts.flatMap(c => c.sourceMaterial.pages))].sort((a,b) => a-b).map(p => ({ p, r: [0,0,1,1] }));
+        question.audioMaterial = { ...parts[0].audioMaterial, label: 'Cluastuiscint · Ceist ' + question.n };
+      }
+      if (!question.reviewedSchemePages) throw new Error('Unreviewed Foundation aural scheme: ' + question.n);
+    }
+    continue;
+  }
+  // Older papers may never have had an answer sidecar. Add their reviewed
+  // whole-section entries before attaching the complete paper/scheme regions.
+  for (const [n, label] of [['2', 'Léamhthuiscint'], ['3', 'Scríbhneoireacht']]) {
+    if (reviewedFoundation.q.some(q => q.n === n)) continue;
+    const sectionCards = reviewedCards.filter(c => c.section === n);
+    addQuestion(reviewedFoundation, {
+      n, label,
+      baseTopicIds: [...new Set(sectionCards.flatMap(c => c.examTopicKeys.map(key => F[key])))],
+      fallbackPage: Math.min(...sectionCards.flatMap(c => c.sourceMaterial.pages)) - (n === '3' ? 1 : 0),
+    });
+  }
+  const passage = reviewedCards.find(c => c.atlasQuestionId === 'R-2C-1');
+  const formSlot = reviewedFoundation.year <= 2011 ? 'W-5B' : 'W-4B';
+  const letterOrForm = reviewedCards.find(c => c.atlasQuestionId === formSlot || c.atlasQuestionId.startsWith(formSlot + '-'));
+  const writingTopics = [...new Set(reviewedCards.filter(c => c.section === '3').flatMap(c => c.examTopicKeys.map(key => F[key])))];
+  for (const [n, label, topics] of [
+    ['R-2C', passage.examTopicKeys.includes('news') ? 'Léamhthuiscint · Scéal Nuachta' : 'Léamhthuiscint · Scéal', passage.examTopicKeys.map(key => F[key])],
+    [formSlot, letterOrForm.taskFormatLabel ? 'Scríobh · ' + letterOrForm.taskFormatLabel : letterOrForm.examTopicKeys.includes('letterWriting') ? 'Scríobh · Litir' : 'Scríobh · Foirm Iarratais', letterOrForm.examTopicKeys.map(key => F[key])],
+  ]) {
+    const q = reviewedFoundation.q.find(q => q.n === n);
+    q.label = label;
+    q.baseTopicIds = topics;
+    q.reviewedTopicIds = topics;
+    const { secondary: ignored, ...previous } = q;
+    Object.keys(q).forEach(key => delete q[key]);
+    Object.assign(q, previous, canonicalForTopicIds(topics));
+  }
+
+  // Whole-section archive entries retain their identities, but only advertise
+  // writing formats actually printed in this reviewed year's four choices.
+  const writingSection = reviewedFoundation.q.find(q => q.n === '3');
+  writingSection.baseTopicIds = writingTopics;
+  writingSection.reviewedTopicIds = writingTopics;
+  const writingCanonical = [...new Set(writingTopics.flatMap(id => CURRICULUM_CROSSWALK[id]))];
+  if (!writingCanonical.includes(writingSection.primary)) {
+    delete writingSection.secondary;
+    Object.assign(writingSection, canonicalForTopicIds(writingTopics));
+  }
+
+  const reviewedSchemeUnion = predicate => [...new Set(reviewedCards.filter(predicate).flatMap(c => c.schemePages))].sort((a,b) => a-b);
+  const writingSchemePages = reviewedSchemeUnion(c => c.section === '3');
+  const foundationSchemeSections = {
+    '1': reviewedSchemeUnion(c => c.section === '1'),
+    '2': reviewedSchemeUnion(c => c.section === '2'),
+    // Standard writing guidance precedes the first writing-task scheme page.
+    '3': [writingSchemePages[0] - 1, ...writingSchemePages],
+    ...Object.fromEntries(['R-1', 'R-2A', 'R-2B', 'R-2C', 'R-3A', 'R-3B', 'R-3C', formSlot]
+      .map(n => [n, reviewedSchemeUnion(c => !c.memberCardIds && (c.atlasQuestionId === n || c.atlasQuestionId.startsWith(n + '-')))])),
+  };
+  for (const n of ['1', '2', '3'].filter(n => reviewedCards.some(c => c.section === n))) {
+    const sourcePages = [...new Set(reviewedCards.filter(c => c.section === n).flatMap(c => c.sourceMaterial.pages))].sort((a,b) => a-b);
+    // The writing choice instruction occupies the preceding page in these
+    // reviewed papers. Listening/reading start one page earlier in 2022.
+    if (n === '3') sourcePages.unshift(sourcePages[0] - 1);
+    reviewedFoundation.q.find(q => q.n === n).anchor.paperRegion =
+      sourcePages.map(p => ({ p, r: [0, 0, 1, 1] }));
+  }
+  for (const question of reviewedFoundation.q) {
+    question.reviewedSchemePages ??= foundationSchemeSections[question.n];
+    if (!question.reviewedSchemePages) throw new Error('Unreviewed Foundation scheme: ' + question.n);
+  }
+  // Carry a documented source/key mismatch into the atomic task, its passage,
+  // whole section and every mechanically generated route containing that task.
+  for (const issue of reviewedCards.filter(c => c.sourceDiscrepancyNotice)) {
+    const affected = new Set([issue.atlasQuestionId, issue.section, issue.atlasQuestionId.replace(/-\d+$/, ''), issue.atlasQuestionId.replace(/^(W-\d+[A-Z])-.*/, '$1')]);
+    reviewedCards.filter(c => c.memberCardIds?.includes(issue.id)).forEach(c => affected.add(c.atlasQuestionId));
+    for (const question of reviewedFoundation.q.filter(q => affected.has(q.n))) {
+      if (!question.practiceInstruction?.includes(issue.sourceDiscrepancyNotice)) {
+        question.practiceInstruction = (question.practiceInstruction ?? ('Don chárta seo: ' + question.label + '.'))
+          + ' ' + issue.sourceDiscrepancyNotice;
+      }
+    }
+  }
+  const listeningCard = reviewedCards.find(card => card.audioMaterial);
+  if (listeningCard) reviewedFoundation.q.find(q => q.n === '1').audioMaterial = {
+    ...listeningCard.audioMaterial, label: 'Cluastuiscint · Ceisteanna 1–8',
+  };
+}
+
 let preservedBaselineCards = 0;
 for (const expected of preservationBaseline) {
   const paper = papers.find(candidate => candidate.year === expected.year && candidate.fileid === expected.fileid);
@@ -839,7 +1034,7 @@ for (const association of matched) {
 const localQuestionMappings = papers.flatMap(paper => paper.q.map(question => {
   const key = [paper.level, paper.year, paper.fileid, question.n].join('|');
   const referenced = referenceTopicsByLocalQuestion.get(key) ?? [];
-  const topicIds = [...new Set([...referenced, ...question.baseTopicIds])]
+  const topicIds = [...new Set(question.reviewedTopicIds ?? [...referenced, ...question.baseTopicIds])]
     .sort((a, b) => topicIndex.get(a) - topicIndex.get(b));
   if (!topicIds.length || topicIds.some(id => !topicById.has(id))) {
     throw new Error(paper.fileid + ' Q' + question.n + ': invalid Irish topic mapping');
@@ -856,6 +1051,12 @@ const localQuestionMappings = papers.flatMap(paper => paper.q.map(question => {
     kind: paper.kind,
     n: question.n,
     topicIds,
+    ...(question.reviewedTopicIds && referenced.some(id => !topicIds.includes(id)) ? {
+      sourceTopicCorrection: {
+        excludedReferenceTopicIds: referenced.filter(id => !topicIds.includes(id)),
+        reason: `SEC ${paper.year} Foundation PDF page ${question.anchor.pP} identifies this task as ${question.label}; the retained external heading is mis-grouped.`,
+      },
+    } : {}),
     provenance: referenced.length
       ? question.baseTopicIds.some(id => !referenced.includes(id))
         ? 'reference+retained-local'
@@ -890,8 +1091,13 @@ fs.writeFileSync(TAGS_PATH, JSON.stringify(tagPapers, null, 2) + '\n');
 
 const hostedAnchorMaps = [];
 for (const paper of papers) {
+  // Reviewed Foundation regions override older section anchors that sometimes
+  // matched a numbered answer inside a reading passage (2022 writing section).
+  // Keep those frozen crop fields, but order using the actual displayed page.
+  const pageForOrder = q => paper.hasReviewedFoundationTasks
+    ? (q.anchor.paperRegion?.[0]?.p ?? q.anchor.pP) : q.anchor.pP;
   const physicalOrder = [...paper.q].sort((a, b) => (
-    a.anchor.pP - b.anchor.pP
+    pageForOrder(a) - pageForOrder(b)
     || a.anchor.pY[0] - b.anchor.pY[0]
     || paper.q.indexOf(a) - paper.q.indexOf(b)
   ));
@@ -909,6 +1115,7 @@ for (const paper of papers) {
     band: [1, 1],
     copyright: '© State Examinations Commission',
     paperOnly: 1,
+    ...(paper.hasReviewedFoundationTasks ? { maxCropPages: 10 } : {}),
     q: paper.q.map(question => {
       const collision = anchorCounts.get(question.anchor.pP + '|' + question.anchor.pY[0]) > 1;
       return {
@@ -917,6 +1124,8 @@ for (const paper of papers) {
         printOrder: printOrder.get(question),
         pP: question.anchor.pP,
         pY: question.anchor.pY,
+        ...(question.audioMaterial ? { audioMaterial: question.audioMaterial } : {}),
+        ...(question.practiceInstruction ? { practiceInstruction: question.practiceInstruction } : {}),
         ...(question.anchor.paperRegion
           ? { paperRegion: question.anchor.paperRegion }
           : collision
@@ -934,6 +1143,41 @@ for (const paper of papers) {
   fs.mkdirSync(yearDir, { recursive: true });
   const outputPath = path.join(yearDir, paper.fileid + '.json');
   fs.writeFileSync(outputPath, JSON.stringify(artifact) + '\n');
+  if (paper.hasReviewedFoundationTasks || paper.hasReviewedHigherTasks) {
+    const { paperOnly, ...answerMap } = artifact;
+    answerMap.schemeFileid = paper.hasReviewedFoundationTasks ? paper.reviewedFoundationSchemeFileid : 'LC001ALP000IV.pdf';
+    answerMap.band = paper.hasReviewedFoundationTasks ? [3, 16] : [27, 41];
+    answerMap.maxCropPages = 10;
+    answerMap.q = artifact.q.filter(q => paper.q.find(question => question.n === q.n).reviewedSchemePages).map(q => {
+      const question = paper.q.find(question => question.n === q.n);
+      const region = question.reviewedSchemePages.map(p => ({ p, r: [0, 0, 1, 1] }));
+      const previous = (question.baseline || (paper.hasReviewedFoundationTasks && /^\d+$/.test(question.n)))
+        && paper.sidecar?.q.find(old => old.n === q.n);
+      return previous
+        ? { ...previous, ...(q.audioMaterial ? { audioMaterial: q.audioMaterial } : {}),
+            ...(!previous.practiceInstruction && q.practiceInstruction ? { practiceInstruction: q.practiceInstruction } : {}),
+            paperRegion: q.paperRegion, schemeRegion: region, printOrder: q.printOrder }
+        : { ...q, region, mode: 'crop', conf: 1 };
+    });
+    if (paper.hasReviewedHigherTasks) {
+      // Preserve every prior answer identity. Frozen fields remain intact;
+      // reviewed display corrections use the additive region fields above.
+      const reviewedIds = new Set(answerMap.q.map(q => q.n));
+      answerMap.q = [...(paper.sidecar?.q ?? []).filter(q => !reviewedIds.has(q.n)), ...answerMap.q];
+      answerMap.band = [Math.min(paper.sidecar?.band?.[0] ?? 27, 27), Math.max(paper.sidecar?.band?.[1] ?? 41, 41)];
+    }
+    // Mixed numeric/lettered task identities use explicit physical order.
+    // The band must include every reviewed scheme page, including Q4's tail.
+    const orderFor = new Map(artifact.q.map(q => [q.n,q.printOrder]));
+    answerMap.q = answerMap.q.map(q => ({...q,printOrder:orderFor.get(q.n)}));
+    const schemePages = answerMap.q.flatMap(q => (q.schemeRegion ?? q.region).map(r => r.p));
+    answerMap.band = [Math.min(...schemePages),Math.max(...schemePages)+1];
+    for (const folder of [ANSWERS_ROOT, path.join(ROOT, 'public/paper-answers')]) {
+      const directory = path.join(folder, String(paper.year));
+      fs.mkdirSync(directory, { recursive: true });
+      fs.writeFileSync(path.join(directory, paper.fileid + '.json'), JSON.stringify(answerMap) + '\n');
+    }
+  }
   hostedAnchorMaps.push(path.relative(ROOT, outputPath));
 }
 
@@ -978,7 +1222,7 @@ const output = {
     matchedSource: 'Entitled local State Examinations Commission corpus only.',
     excludedContent: 'No commercial mock question, solution, note, question text, StudyClix image or StudyClix-hosted PDF is copied.',
     restoredCards: 'Missing listening, composition, literature and Foundation choices use section/page boundaries checked in the official SEC booklets.',
-    preservationExtensions: 'Two explicitly labelled local archive topics retain Higher additional literature and Foundation listening omitted by the reference menu.',
+    preservationExtensions: 'Explicit local archive topics retain Higher additional literature, Foundation listening and reviewed prescribed prose/poetry omitted by the reference menu.',
     referenceOmissions: 'Valid local tasks omitted or mis-grouped by the reference retain truthful Irish curriculum tags and retained-local provenance.',
   },
   summary,

@@ -1,0 +1,222 @@
+{
+  "year": 2019,
+  "level": "foundation",
+  "paperFileid": "LC001BLP000IV.pdf",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "fullPaperAndApplicableSchemeVisualSweep": true,
+  "reviewDate": "2026-10-07",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "Freagair gach ceist. Tá na treoracha don chuid seo ar an dlúthdhiosca.",
+      "decision": "Required answers within this section or selected passage; no additional selection."
+    },
+    {
+      "page": 2,
+      "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+      "decision": "Correct-answer/map-box selection. Distractors are not valid independent task routes."
+    },
+    {
+      "page": 3,
+      "raw": "Cá bhfuil an siopa troscáin? (Cuir tic () sa bhosca ceart.)",
+      "decision": "Correct-answer/map-box selection. Distractors are not valid independent task routes."
+    },
+    {
+      "page": 4,
+      "raw": "Nuair a bheidh an Chluastuiscint críochnaithe agat lean ar aghaidh agus freagair na ceisteanna",
+      "decision": "Required answers within this section or selected passage; no additional selection."
+    },
+    {
+      "page": 5,
+      "raw": "FREAGAIR GACH CEIST (1, 2 agus 3).",
+      "decision": "Required answers within this section or selected passage; no additional selection."
+    },
+    {
+      "page": 6,
+      "raw": "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Choose two of A/B/C: mechanically generate AB, AC, BC, retaining both source pages and all ten answers. Q2=50, Q3=60."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an litir atá anseo thíos agus freagair na ceisteanna ar fad atá fúithi.",
+      "decision": "Required answers within this section or selected passage; no additional selection."
+    },
+    {
+      "page": 7,
+      "raw": "Léigh an bróisiúr atá anseo thíos agus freagair na ceisteanna ar fad atá faoi. (25 marc)",
+      "decision": "Required answers within this section or selected passage; no additional selection."
+    },
+    {
+      "page": 7,
+      "raw": "uait? Má tá, is iomaí rogha atá agat, ina measc, Corca Dhuibhne",
+      "decision": "Source-brochure narrative, not a candidate task-selection instruction."
+    },
+    {
+      "page": 7,
+      "raw": "nó ag rothaíocht timpeall na páirce. Tabhair cuairt ar an gcaisleán agus bain taitneamh as na",
+      "decision": "Source-brochure narrative, not a candidate task-selection instruction."
+    },
+    {
+      "page": 8,
+      "raw": "Léigh an scéal nuachta atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within this section or selected passage; no additional selection."
+    },
+    {
+      "page": 9,
+      "raw": "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Choose two of A/B/C: mechanically generate AB, AC, BC, retaining both source pages and all ten answers. Q2=50, Q3=60."
+    },
+    {
+      "page": 9,
+      "raw": "Léigh an t‐alt atá anseo thíos agus freagair na ceisteanna ar fad atá faoi. (30 marc)",
+      "decision": "Required answers within this section or selected passage; no additional selection."
+    },
+    {
+      "page": 10,
+      "raw": "(b) Léigh an giota seo a leanas agus freagair na ceisteanna ar fad atá faoi. (30 marc)",
+      "decision": "Required answers within this section or selected passage; no additional selection."
+    },
+    {
+      "page": 11,
+      "raw": "Léigh na véarsaí seo a leanas agus freagair na ceisteanna ar fad atá fúthu. (30 marc)",
+      "decision": "Required answers within this section or selected passage; no additional selection."
+    },
+    {
+      "page": 13,
+      "raw": "FREAGAIR GACH CEIST (4 AGUS 5)",
+      "decision": "Both Q4 and Q5 required, each chooses A/B. Q4=40 and Q5=50. Including two4B recipients, generate six writing products each90, never4A+4B or5A+5B."
+    },
+    {
+      "page": 14,
+      "raw": "Ceist 4 Freagair (a) NÓ (b).",
+      "decision": "Both Q4 and Q5 required, each chooses A/B. Q4=40 and Q5=50. Including two4B recipients, generate six writing products each90, never4A+4B or5A+5B."
+    },
+    {
+      "page": 14,
+      "raw": "NÓ",
+      "decision": "Both Q4 and Q5 required, each chooses A/B. Q4=40 and Q5=50. Including two4B recipients, generate six writing products each90, never4A+4B or5A+5B."
+    },
+    {
+      "page": 15,
+      "raw": "NÓ",
+      "decision": "Both Q4 and Q5 required, each chooses A/B. Q4=40 and Q5=50. Including two4B recipients, generate six writing products each90, never4A+4B or5A+5B."
+    },
+    {
+      "page": 15,
+      "raw": "Bhí tú ag cluiche mór i bPáirc an Chrócaigh le déanaí. Scríobh litir chuig do dheartháir / do dheirfiúr",
+      "decision": "Two finite recipients: brother or sister in London. Two whole40-mark letters and both recipient variants within each applicable90-mark writing product. The matching dó/di pronoun is not a separate pool."
+    },
+    {
+      "page": 15,
+      "raw": "Faoin bpóstaer a chonaic tú (dhá phointe eolais)",
+      "decision": "Two open information points about this compulsory picture; no printed finite menu of alternative prompts."
+    },
+    {
+      "page": 15,
+      "raw": "Faoin turas go dtí an cluiche (dhá phointe eolais) Pictiúr 2",
+      "decision": "Two open information points about this compulsory picture; no printed finite menu of alternative prompts."
+    },
+    {
+      "page": 15,
+      "raw": "Faoin gcluiche (dhá phointe eolais) Pictiúr 3",
+      "decision": "Two open information points about this compulsory picture; no printed finite menu of alternative prompts."
+    },
+    {
+      "page": 15,
+      "raw": "Faoi na rudaí a rinne tú nuair a bhí an cluiche thart (dhá phointe eolais) Pictiúr 4",
+      "decision": "Two open information points about this compulsory picture; no printed finite menu of alternative prompts."
+    },
+    {
+      "page": 16,
+      "raw": "Ceist 5 Freagair (a) NÓ (b).",
+      "decision": "Both Q4 and Q5 required, each chooses A/B. Q4=40 and Q5=50. Including two4B recipients, generate six writing products each90, never4A+4B or5A+5B."
+    },
+    {
+      "page": 17,
+      "raw": "NÓ",
+      "decision": "Both Q4 and Q5 required, each chooses A/B. Q4=40 and Q5=50. Including two4B recipients, generate six writing products each90, never4A+4B or5A+5B."
+    }
+  ],
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2019/LC001BLP017IV.mp3",
+    "httpStatus": 200,
+    "contentType": "audio/mpeg",
+    "bytes": 57150370,
+    "verified": "2026-10-07",
+    "browserReadyState": 4,
+    "durationSeconds": 1785.887344,
+    "playbackAdvanced": true
+  },
+  "sourceFindings": [
+    "20 paper and24 scheme pages swept. Total360:120 listening+40 matching+50 Q2+60 Q3+40 Q4+50 Q5. Both Q4/Q5 required, one choice in each. Brother/sister recipient alternatives yield six writing products.",
+    "14 listening exact0/full awards. Matching HDBFCAIJEG. Full map and all picture options retained.",
+    "Q3A(5) accepts Corn an Domhain sa rugbaí, Corn an Domhain, and either with le foireann na hÉireann for6. Q3B(2) fullanswer6, Tháinig daoine chun cónaithe i Ráth Chairn4, Tháinig daoine ó Chonamara chun cónaithe / Tháinig daoine ó Chonamara2; permitted0/2/4/6.",
+    "Q3C(5) Ní fios cá fhad atá sé ann / Leathchéad bliain ar a laghad / lines1–3 of stanza3=6; Leathchéad bliain / Caoga bliain / whole stanzaoverquote=4; Bhí sé ann nuair a bhí mise óg=3. Permitted0/3/4/6. Carry every partial-credit exception into reading pairs.",
+    "Q2C is scéal nuachta Is olc an ghaoth. Poem An Crann has three stanzas and two tree illustrations; fullsourcepage retained.",
+    "Notice4A football match, Sinéad Aherne, money for computer room. Layout1+8(4+4)+13(4+3+3+3)+4+4+language10. Preserve activity/place partialcredit, -1 pasttense/day/date, -2 uncontextualized entrancefee, -3 uncontextualized guestname; money3 for specified shorter wording,0 for Seomra Ríomhairí alone.",
+    "Letter4B about big match in Páirc an Chrócaigh to brother/sister in London. Layout6(2+1+1+2), four pictures each6(3+3), language10. Two open details per picture, no length penalty; retain poster/train/match/return images.",
+    "5A Céilí Mór PDF16/scheme13. 5B ice-fall injury on way to school PDF17/scheme14–15. Each37 communication+13 language. Minus5 communication ceiling per missing reference. Five references,5B allfourpictures plusone. Approx90words; proportionate shortlength reduction of awarded mark (45words:50%). No later-year fixed penalty table. Whole50-mark score retains both parts and confines adjustment to this response in pairs.",
+    "Language band table on schemePDF16 is modified scheme only. Standard language uses structure/grammar,vocabulary/spelling with10 or13 total. TranscriptsPDF17–20;21–23blank,24cover."
+  ],
+  "remainingWork": [],
+  "runtimeVerification": {
+    "viewport": [
+      390,
+      844
+    ],
+    "sourceReaderRoutesChecked": 15,
+    "atlasRoutesChecked": 6,
+    "sourceReader": "All source formats, both letter recipients, paired reading and writing pages rendered. Navigation, close/focus return and horizontal overflow checks passed.",
+    "atlas": "Every expected source and marking page rendered; both letter-recipient instructions visible.",
+    "audio": "Official SEC Foundation 2019 recording played in Bank and Atlas, readyState4, duration1785.887344seconds.",
+    "browserErrors": []
+  }
+}

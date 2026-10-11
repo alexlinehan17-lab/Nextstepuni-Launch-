@@ -1,10 +1,12 @@
 {
   "subject": "irish",
   "scope": "Leaving Certificate Higher and Ordinary Level, 2021–2025",
+  "coverageStatus": "not-established",
+  "coverageNote": "This ledger counts generated cards, not independently reviewed paper tasks. Zero queued cards does not mean zero missing questions. See irish-archive-inventory.json and irish-review.json.",
   "definition": "One independently selectable response; compulsory linked parts remain together.",
   "paperCount": 20,
-  "cardUnitCount": 400,
-  "authoredCount": 400,
+  "cardUnitCount": 451,
+  "authoredCount": 451,
   "queuedCount": 0,
   "papers": [
     {
@@ -51,8 +53,8 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "cardUnits": 26,
-      "authored": 26,
+      "cardUnits": 31,
+      "authored": 31,
       "queued": 0
     },
     {
@@ -115,8 +117,8 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "cardUnits": 26,
-      "authored": 26,
+      "cardUnits": 72,
+      "authored": 72,
       "queued": 0
     },
     {
@@ -1046,7 +1048,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Prose 2A(a)",
+      "questionRef": "2022 HL Paper 2 Prós 2A(a) · Cáca Milis",
       "status": "authored"
     },
     {
@@ -1054,7 +1056,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Prose 2A(b)",
+      "questionRef": "2022 HL Paper 2 Prós 2A(b) · Hurlamaboc",
       "status": "authored"
     },
     {
@@ -1062,7 +1064,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Prose 2B(a)",
+      "questionRef": "2022 HL Paper 2 Prós 2B(a) · Scannán roghnach",
       "status": "authored"
     },
     {
@@ -1070,7 +1072,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Prose 2B(b)",
+      "questionRef": "2022 HL Paper 2 Prós 2B(b) · Úrscéal roghnach",
       "status": "authored"
     },
     {
@@ -1094,7 +1096,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Poetry 3B(a)",
+      "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · Dán roghnach",
       "status": "authored"
     },
     {
@@ -1102,7 +1104,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Poetry 3B(b)",
+      "questionRef": "2022 HL Paper 2 Filíocht 3B(b) · Dán roghnach",
       "status": "authored"
     },
     {
@@ -2326,7 +2328,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Prose 2A(a)",
+      "questionRef": "2024 HL Paper 2 Prós 2A(a) · Cáca Milis",
       "status": "authored"
     },
     {
@@ -2334,7 +2336,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Prose 2A(b)",
+      "questionRef": "2024 HL Paper 2 Prós 2A(b) · Dís",
       "status": "authored"
     },
     {
@@ -2342,7 +2344,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Prose 2B(a)",
+      "questionRef": "2024 HL Paper 2 Prós 2B(a) · Scannán roghnach",
       "status": "authored"
     },
     {
@@ -2350,7 +2352,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Prose 2B(b)",
+      "questionRef": "2024 HL Paper 2 Prós 2B(b) · Gearrscéal roghnach",
       "status": "authored"
     },
     {
@@ -2358,7 +2360,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Poetry 3A(a)",
+      "questionRef": "2024 HL Paper 2 Filíocht 3A(a) · Géibheann",
       "status": "authored"
     },
     {
@@ -2366,7 +2368,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Poetry 3A(b)",
+      "questionRef": "2024 HL Paper 2 Filíocht 3A(b) · An tEarrach Thiar",
       "status": "authored"
     },
     {
@@ -2374,7 +2376,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Poetry 3B(a)",
+      "questionRef": "2024 HL Paper 2 Filíocht 3B(a) · Dán roghnach",
       "status": "authored"
     },
     {
@@ -2382,7 +2384,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Poetry 3B(b)",
+      "questionRef": "2024 HL Paper 2 Filíocht 3B(b) · Dán roghnach",
       "status": "authored"
     },
     {
@@ -2390,7 +2392,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Literature 4(a)",
+      "questionRef": "2024 HL Paper 2 Litríocht 4A · An Triail",
       "status": "authored"
     },
     {
@@ -2398,7 +2400,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Literature 4(b)",
+      "questionRef": "2024 HL Paper 2 Litríocht 4B · A Thig Ná Tit Orm",
       "status": "authored"
     },
     {
@@ -2406,7 +2408,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Literature 4(c)",
+      "questionRef": "2024 HL Paper 2 Litríocht 4C · Tóraíocht Dhiarmada agus Ghráinne",
       "status": "authored"
     },
     {
@@ -2414,7 +2416,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Literature 4(d)",
+      "questionRef": "2024 HL Paper 2 Litríocht 4D · Gafa",
       "status": "authored"
     },
     {
@@ -2422,7 +2424,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Literature 4(e)",
+      "questionRef": "2024 HL Paper 2 Litríocht 4E · Canary Wharf",
       "status": "authored"
     },
     {
@@ -2430,7 +2432,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Literature 4(f)",
+      "questionRef": "2024 HL Paper 2 Litríocht 4F · Dánta Breise – Fill Arís",
       "status": "authored"
     },
     {
@@ -3367,6 +3369,414 @@
       "level": "ol",
       "paper": 2,
       "questionRef": "2025 OL Paper 2 Poetry 3B(c)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2022-hl-p2-prose-2a-a-an-lasair-choille",
+      "year": 2022,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2022 HL Paper 2 Prós 2A(a) · An Lasair Choille",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2022-hl-p2-prose-2b-a-drama",
+      "year": 2022,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2022 HL Paper 2 Prós 2B(a) · Dráma roghnach",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2022-hl-p2-poetry-3b-a-iomhanna",
+      "year": 2022,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · íomhánna",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2022-hl-p2-poetry-3b-a-codarsnacht",
+      "year": 2022,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · codarsnacht",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2022-hl-p2-poetry-3b-a-mothuchain",
+      "year": 2022,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · mothúcháin",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-prose-2a-a-an-lasair-choille",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Prós 2A(a) · An Lasair Choille",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-prose-2b-a-drama",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Prós 2B(a) · Dráma roghnach",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q1-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 1(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q1-bi",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 1(b)(i)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q1-bii",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 1(b)(ii)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q2-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 2(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q2-bi",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 2(b)(i)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q2-bii",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 2(b)(ii)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q3-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 3(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q3-bi",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 3(b)(i)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q3-bii",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 3(b)(ii)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q4-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 4(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q4-bi",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 4(b)(i)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q4-bii",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 4(b)(ii)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q5-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 5(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q5-bi",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 5(b)(i)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q5-bii",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 5(b)(ii)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q6-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 6(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q6-b",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 6(b)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q1-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 1(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q1-bi",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(i)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q1-bi-1",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(i) · Sampla 1",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q1-bi-2",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(i) · Sampla 2",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q1-bii",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(ii)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q2-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 2(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q2-bi",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(i)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q2-bii",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(ii)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q3-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 3(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q3-bi",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(i)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q3-bii",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(ii)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bi",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(i)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bi-1",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(i) · Dúshlán 1",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bi-2",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(i) · Dúshlán 2",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bii",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(ii)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bii-1",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(ii) · Cúis 1",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bii-2",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(ii) · Cúis 2",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q5-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 5(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q5-bi",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(i)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q5-bii",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(ii)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q5-bii-1",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(ii) · Ceist 1",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q5-bii-2",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(ii) · Ceist 2",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q6-a",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 6(a)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q6-b",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 6(b)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q6-b-1",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 6(b) · Léargas 1",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q6-b-2",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 6(b) · Léargas 2",
       "status": "authored"
     }
   ]

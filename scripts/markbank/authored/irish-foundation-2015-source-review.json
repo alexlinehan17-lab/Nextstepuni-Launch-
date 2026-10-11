@@ -1,0 +1,216 @@
+{
+  "year": 2015,
+  "level": "foundation",
+  "paperFileid": "LC001BLP000IV.pdf",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "fullPaperAndApplicableSchemeVisualSweep": true,
+  "reviewDate": "2026-10-07",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "Freagair gach ceist. Tá na treoracha don Roinn seo ar an dlúthdhiosca.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 2,
+      "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+      "decision": "Correct-answer/map-box selection. Distractors are answers to one task, not alternative valid task routes."
+    },
+    {
+      "page": 3,
+      "raw": "Cá bhfuil Siopa na Ríomhairí? (Cuir tic () sa bhosca ceart.)",
+      "decision": "Correct-answer/map-box selection. Distractors are answers to one task, not alternative valid task routes."
+    },
+    {
+      "page": 4,
+      "raw": "Nuair a bheidh an Chluastuiscint críochnaithe agat lean ar aghaidh agus freagair na ceisteanna eile",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 5,
+      "raw": "FREAGAIR GACH CEIST (1, 2 agus 3).",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 6,
+      "raw": "Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Choose two of A/B/C: mechanically expand AB,AC,BC, each with both full sources and ten answers. Q2=50,Q3=60."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an litir atá anseo thíos agus freagair na ceisteanna ar fad atá fúithi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 7,
+      "raw": "Léigh an bróisiúr atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 8,
+      "raw": "Léigh an scéal nuachta atá anseo thíos agus freagair na ceisteanna ar fad atá faoi. (25 marc)",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 8,
+      "raw": "scoláirí, Muiris Ó Broin agus a dheirfiúr, Emer,",
+      "decision": "Source narrative, not a candidate task-choice instruction."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Choose two of A/B/C: mechanically expand AB,AC,BC, each with both full sources and ten answers. Q2=50,Q3=60."
+    },
+    {
+      "page": 9,
+      "raw": "Léigh an t-alt atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 9,
+      "raw": "a bhíonn sí neirbhíseach roimh throid, deir sí paidreacha nó léann sí véarsaí speisialta ón mBíobla.",
+      "decision": "Source narrative, not a candidate task-choice instruction."
+    },
+    {
+      "page": 9,
+      "raw": "Nuair a bhíonn am saor ag Katie, téann sí chuig an bpictiúrlann nó chuig bialann lena cairde. Ní maith léi",
+      "decision": "Source narrative, not a candidate task-choice instruction."
+    },
+    {
+      "page": 10,
+      "raw": "Léigh an giota seo a leanas agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 10,
+      "raw": "litreacha a chur sa phost nó airgead a shábháil i gcuntas ann. Tá stair spéisiúil ag an bhfoirgneamh seo.",
+      "decision": "Source narrative, not a candidate task-choice instruction."
+    },
+    {
+      "page": 11,
+      "raw": "Léigh na véarsaí seo a leanas agus freagair na ceisteanna ar fad atá fúthu. (30 marc)",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 13,
+      "raw": "FREAGAIR GACH CEIST (4 AGUS 5)",
+      "decision": "Both Q4/Q5 required; one A/B in each. Four writing products at40+50=90, not4A+4B or5A+5B."
+    },
+    {
+      "page": 14,
+      "raw": "Freagair (a) NÓ (b).",
+      "decision": "Both Q4/Q5 required; one A/B in each. Four writing products at40+50=90, not4A+4B or5A+5B."
+    },
+    {
+      "page": 15,
+      "raw": "NÓ",
+      "decision": "Both Q4/Q5 required; one A/B in each. Four writing products at40+50=90, not4A+4B or5A+5B."
+    },
+    {
+      "page": 15,
+      "raw": "Faoi na daoine a fheiceann tú san aerfort (dhá phointe eolais)",
+      "decision": "One open friend; dó/dí is flexible pronoun wording, not finite recipient alternatives. Required1/2/3/2 details refer to compulsory pictures and open examples; retain one whole letter with sharedlanguage10."
+    },
+    {
+      "page": 15,
+      "raw": "Faoi na rudaí a dhéanann tú nuair a bhíonn lá saor agat (dhá phointe eolais) Pictiúr 4",
+      "decision": "One open friend; dó/dí is flexible pronoun wording, not finite recipient alternatives. Required1/2/3/2 details refer to compulsory pictures and open examples; retain one whole letter with sharedlanguage10."
+    },
+    {
+      "page": 15,
+      "raw": "Tá tú ag obair san aerfort an samhradh seo. Scríobh litir abhaile chuig do chara ag insint dó / di:",
+      "decision": "One open friend; dó/di is flexible pronoun wording, not finite recipient alternatives. Required1/2/3/2 details refer to compulsory pictures and open examples; retain one whole letter with sharedlanguage10."
+    },
+    {
+      "page": 16,
+      "raw": "Freagair (a) NÓ (b).",
+      "decision": "Both Q4/Q5 required; one A/B in each. Four writing products at40+50=90, not4A+4B or5A+5B."
+    },
+    {
+      "page": 17,
+      "raw": "NÓ",
+      "decision": "Both Q4/Q5 required; one A/B in each. Four writing products at40+50=90, not4A+4B or5A+5B."
+    }
+  ],
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2015/LC001BLP017IV.mp3",
+    "httpStatus": 200,
+    "contentType": "audio/mpeg",
+    "bytes": 46688851,
+    "verified": "2026-10-07",
+    "browserReadyState": 4,
+    "durationSeconds": 1458.964875,
+    "playbackAdvanced": true
+  },
+  "sourceFindings": [
+    "All20paper/24scheme pages swept. Total360=120aural+40matching+50Q2+60Q3+40Q4+50Q5. One Q4 and one Q5 required: four writing products. No internal closed writing pool.",
+    "Listening14 exact0/full tasks; map beside hospital at top-right. Matching GIBHADJFCE. Original picture options/map and official recording retained.",
+    "Q2 hotel-job letter, Slí an Atlantaigh Fhiáin brochure, In Am an Ghátair...news. Q3 Katie Taylor profile, Ard-Oifig an Phoist extract, An tEarrach (all three stanzas and three illustrations).",
+    "Q3A5 Katie leisure:0/1/3/6 incl one named destination with friends6 or both destinations6; one destination with verb3; destination alone1; Téann sí lena cairde0. Q3B4 Bratach na hÉireann6/bareBratach3. Q3C5 Áthas6,Dóchas2; thirdverse lines3+4=6,2+3=4,1+2+3=2. Exact variants inherited by pairs.",
+    "NoticePDF14/scheme8–10: céilí inhall,Uachtarán na hÉireann,moneySimon/homeless. Layout1+pictures8,13,4,4+language10. Activity4/3/2/1, place4/2/0, datewithnamedmonth ormonth-only−1; fee−2 with barefigure0. Barepresident−3. Charity namedSimon/homelesswithoutcontext−3 or Rachaidh...Simonwithoutclearconnection−2;othercharity0.",
+    "LetterPDF15/scheme11–12: airportsummerjob to one open friend. Dó/dí does not enumerate distinct tasks. Required picture1/2/3/4 detailcounts1/2/3/2→3+6+9+6=24. Layout6=address2,date1,greeting1,ending2;sharedlanguage10. Allpictures and instructions retained. No length requirement/penalty.",
+    "5A Cluiche Mór i bPáirc an Chrócaigh scheme13;5B theatre-ticket incident scheme14.37communication+13language,fivereferences,5B onepereachpicture plus fifth. Minus5communicationceiling per missingreference. Proportional wholeaward shortlength deduction:45of90words→50%; no later fixed table.",
+    "Standardwriting guidancePDF7 includes spelling but explicitly advises against excessive emphasis at this level. ModifiedschemePDF15 uses four-marklanguage score scaled to10/13 and is not the standardrubric. Transcripts16–19;20–23blank;24cover."
+  ],
+  "remainingWork": [],
+  "runtimeVerification": {
+    "viewport": [
+      390,
+      844
+    ],
+    "sourceReaderRoutesChecked": 15,
+    "atlasRoutesChecked": 9,
+    "sourceReader": "All source formats and paired routes rendered; navigation, close/focus return and horizontal overflow passed.",
+    "atlas": "Every expected paper/scheme page rendered, including airport letter, full poem, paired routes and complete reading/writing sections.",
+    "audio": "Official 2015 recording played in Bank and Atlas; readyState4, duration1458.964875seconds.",
+    "browserErrors": []
+  }
+}

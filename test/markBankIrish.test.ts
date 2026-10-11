@@ -89,19 +89,19 @@ const family = (card: { id: string }) => {
   return 'literature';
 };
 
-describe('Irish all-question census', () => {
-  it('accounts for every selectable response on all twenty written papers', () => {
+describe('Irish legacy generated-card ledger (not a completeness audit)', () => {
+  it('accounts for the generated cards on twenty recent written papers', () => {
     expect(census.paperCount).toBe(20);
-    expect(census.cardUnitCount).toBe(400);
-    expect(census.authoredCount).toBe(400);
+    expect(census.cardUnitCount).toBe(451);
+    expect(census.authoredCount).toBe(451);
     expect(census.queuedCount).toBe(0);
-    expect(census.asks).toHaveLength(400);
-    expect(new Set(census.asks.map(ask => ask.id)).size).toBe(400);
+    expect(census.asks).toHaveLength(451);
+    expect(new Set(census.asks.map(ask => ask.id)).size).toBe(451);
     expect(census.papers.every(paper =>
       paper.cardUnits === paper.authored + paper.queued)).toBe(true);
   });
 
-  it('pins the independently audited count for every paper', () => {
+  it('pins the legacy output count for each paper while the independent audit proceeds', () => {
     const expected = new Map([
       ['hl-1', 17], ['hl-2', 26], ['ol-1', 15], ['ol-2', 22],
     ]);
@@ -110,17 +110,17 @@ describe('Irish all-question census', () => {
         const [level, paper] = key.split('-');
         expect(census.asks.filter(ask => ask.year === year
           && ask.level === level && ask.paper === Number(paper)), `${year} ${key}`)
-          .toHaveLength(count);
+          .toHaveLength(count + (key === 'hl-2' ? year === 2022 ? 5 : year === 2024 ? 46 : 0 : 0));
       }
     }
   });
 
   it('maps the census and generated manifest one-to-one to the live decks', () => {
-    expect(HIGHER).toHaveLength(215);
+    expect(HIGHER).toHaveLength(266);
     expect(ORDINARY).toHaveLength(185);
-    expect(ALL).toHaveLength(400);
-    expect(manifest.cardCount).toBe(400);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(400);
+    expect(ALL).toHaveLength(451);
+    expect(manifest.cardCount).toBe(451);
+    expect(new Set(ALL.map(card => card.id)).size).toBe(451);
     expect(ALL.map(card => card.id).sort()).toEqual(census.asks.map(ask => ask.id).sort());
     expect(manifest.cards.map(card => card.id).sort())
       .toEqual(census.asks.map(ask => ask.id).sort());
@@ -163,8 +163,8 @@ describe('Irish prompt, paper and source integrity', () => {
 
   it('attaches every required reading passage and printed poem as real PDF pages', () => {
     const sourced = ALL.filter(card => card.sourceMaterial);
-    expect(sourced).toHaveLength(140);
-    expect(sourced.filter(card => family(card) === 'reading')).toHaveLength(110);
+    expect(sourced).toHaveLength(184);
+    expect(sourced.filter(card => family(card) === 'reading')).toHaveLength(154);
     expect(sourced.filter(card => card.id.includes('-poetry-3a-'))).toHaveLength(25);
     expect(sourced.filter(card => card.id.includes('-literature-4-'))).toHaveLength(5);
 
@@ -224,6 +224,33 @@ describe('Irish prompt, paper and source integrity', () => {
       /Cuid\s+[ABC]\s+ar\s+leanúint|Freagair\s+do\s+rogha\s+ceann\s+amháin\s+as\s*$/i
         .test(card.questionText));
     expect(furniture.map(card => card.id)).toEqual([]);
+  });
+
+  it('retains all compulsory Q4F parts and their published allocations, including cross-page scheme guidance', () => {
+    const reviewed = [
+      [2021, [19, 7, 9], [46, 49], 'Cén t-atmaisféar'],
+      [2022, [19, 8, 8], [48, 50], 'Cén mheadaracht'],
+      [2023, [19, 7, 9], [47, 49], 'Chloífinn fuath is díoltas'],
+      [2024, [19, 7, 9], [47, 50], 'Sin é do dhoras'],
+      [2025, [17, 9, 9], [45, 47], 'Scríobh síos tréith amháin'],
+    ] as const;
+    for (const [year, knowledge, pages, essentialText] of reviewed) {
+      const card = byId.get(`irish-${year}-hl-p2-literature-4-f`)!;
+      expect(card.questionText).toMatch(/\(i\).*\(ii\).*\(iii\)/);
+      expect(card.questionText).toContain(essentialText);
+      expect(card.questionText.match(/\(\d+ mh?arc\)/g)).toEqual([
+        '(20 marc)', '(10 marc)', '(10 marc)',
+      ]);
+      expect(card.totalMarks).toBe(40);
+      expect(irishRubric(card).criteria.map(c => [c.id, c.maxMarks])).toEqual([
+        ['eolas-i', knowledge[0]], ['eolas-ii', knowledge[1]],
+        ['eolas-iii', knowledge[2]], ['gaeilge', 5],
+      ]);
+      expect(card.schemeCitation).toContain(`p.${pages[0]}–${pages[1]}`);
+      expect(card.sourceMaterial?.pages.length).toBeGreaterThan(0);
+      expect(irishMarks(card, Object.fromEntries(irishRubric(card).criteria
+        .map(c => [irishScoreId(c.id), c.maxMarks])))).toBe(40);
+    }
   });
 
   it('puts the official listening recording on every listening card and nowhere else', () => {
@@ -287,8 +314,14 @@ describe('Irish marking grammar', () => {
   });
 
   it('keeps exact answers distinct from indicative and quality guidance', () => {
-    const exact = ALL.filter(card => ['listening', 'reading'].includes(family(card)));
-    expect(exact).toHaveLength(180);
+    // Older cards retain their published legacy rubric shapes. Reviewed reading
+    // parts/parents are checked separately at their actual scheme boundaries.
+    const exact = ALL.filter(card => ['listening', 'reading'].includes(family(card))
+      && !(card.year === 2024 && card.level === 'higher' && family(card) === 'reading'));
+    const reviewedReading = ALL.filter(card => card.year === 2024 && card.level === 'higher' && family(card) === 'reading');
+    expect(reviewedReading).toHaveLength(56);
+    expect(reviewedReading.every(card => irishRubric(card).criteria.every(c => c.guidance.length > 0))).toBe(true);
+    expect(exact).toHaveLength(168);
     for (const card of exact) {
       const criteria = irishRubric(card).criteria;
       expect(criteria).toHaveLength(1);
@@ -299,11 +332,11 @@ describe('Irish marking grammar', () => {
     }
 
     const literature = ALL.filter(card => family(card) === 'literature');
-    expect(literature).toHaveLength(130);
+    expect(literature).toHaveLength(137);
     expect(literature.every(card => irishRubric(card).criteria[0].guidanceKind === 'indicative'))
       .toBe(true);
     expect(literature.every(card =>
-      irishRubric(card).markingGuideNote.includes('indicative rather than exhaustive')))
+      /indicative(?: rather than exhaustive|;)/.test(irishRubric(card).markingGuideNote)))
       .toBe(true);
   });
 
@@ -333,7 +366,7 @@ describe('Irish marking grammar', () => {
   it('awards Higher literature language marks but subtracts the Ordinary penalty', () => {
     const higher = HIGHER.filter(card => family(card) === 'literature');
     const ordinary = ORDINARY.filter(card => family(card) === 'literature');
-    expect(higher).toHaveLength(70);
+    expect(higher).toHaveLength(77);
     expect(ordinary).toHaveLength(60);
     expect(higher.every(card => irishRubric(card).criteria.at(-1)?.kind === 'award'))
       .toBe(true);
