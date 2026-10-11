@@ -28,6 +28,7 @@ import directQuestionRuntimeJson from './direct-question-runtime.json';
 import economicsRuntimeJson from './economics-runtime.json';
 import engineeringRuntimeJson from './engineering-runtime.json';
 import englishQuestionRuntimeJson from './english-question-runtime.json';
+import englishReviewedQuestionRuntimeJson from './english-reviewed-question-runtime.json';
 import englishRuntimeJson from './english-runtime.json';
 import frenchRuntimeJson from './french-runtime.json';
 import geographyQuestionRuntimeJson from './geography-question-runtime.json';
@@ -577,6 +578,7 @@ const directQuestionRuntime = directQuestionRuntimeJson as unknown as DirectQues
 const economicsRuntime = economicsRuntimeJson as unknown as EconomicsRuntime;
 const engineeringRuntime = engineeringRuntimeJson as unknown as EngineeringRuntime;
 const englishQuestionRuntime = englishQuestionRuntimeJson as unknown as BrowserQuestionRuntime;
+const englishReviewedQuestionRuntime = englishReviewedQuestionRuntimeJson as unknown as BrowserQuestionRuntime;
 const englishRuntime = englishRuntimeJson as unknown as BrowserAuditedRuntime;
 const frenchRuntime = frenchRuntimeJson as unknown as FrenchRuntime;
 const geographyQuestionRuntime = geographyQuestionRuntimeJson as unknown as BrowserQuestionRuntime;
@@ -3582,6 +3584,37 @@ registerCanonicalTagBridge(GEOGRAPHY_TAXONOMY);
 registerCanonicalTagBridge(HOME_ECONOMICS_TAXONOMY);
 registerCanonicalTagBridge(MATHEMATICS_TAXONOMY);
 registerCanonicalTagBridge(PHYSICAL_EDUCATION_TAXONOMY);
+
+/**
+ * English papers whose own independent review gate passed are published to
+ * Mark Bank paper by paper (scripts/markbank/authoring/english_publish.py).
+ * Their sidecar blocks gain exact booklet links to every topic carrying a
+ * published card's canonical node. This is strictly additive: a new link is
+ * unioned with whatever the question already resolved to (exact mapping or
+ * canonical tag bridge) and never replaces or removes an existing topic.
+ */
+const registerAdditiveQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
+  for (const [levelCode, langCode, year, paperKey, fileid, n, topicIndexes] of runtime.questionMappings) {
+    const level = browserAuditLevel(levelCode);
+    const lang: PaperLang = langCode === 'e' ? 'ev' : 'iv';
+    const added = topicIndexes.map(topicIndex => {
+      const topicId = runtime.topicIds[topicIndex];
+      if (!topicId || !TOPICS_BY_ID.has(topicId)) {
+        throw new Error(`${runtime.subjectId}: unknown additive topic index ${topicIndex}`);
+      }
+      return topicId;
+    }).filter(topicId => topicAppliesToExamYear(runtime.subjectId, TOPICS_BY_ID.get(topicId)!, year));
+    if (!added.length) continue;
+    const key = fileQuestionKey(runtime.subjectId, level, year, 'main', fileid, n, paperKey, lang);
+    const current = FILE_QUESTION_TOPICS.get(key) ?? [
+      ...(QUESTION_TOPICS.get(questionKey(runtime.subjectId, level, year, 'main', n, paperKey)) ?? []),
+      ...(QUESTION_TOPICS.get(questionKey(runtime.subjectId, level, year, 'main', n, paperKey, lang)) ?? []),
+    ];
+    FILE_QUESTION_TOPICS.set(key, [...new Set([...current, ...added])]);
+  }
+};
+
+registerAdditiveQuestionRuntime(englishReviewedQuestionRuntime);
 
 // History keeps the StudyClix-equivalent Later Modern hierarchy level-aware,
 // while this generated join covers every English and Irish SEC card—including
