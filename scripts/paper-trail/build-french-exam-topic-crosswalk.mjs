@@ -16,6 +16,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { addFrenchReviewedAnchors } from './french-reviewed-anchors.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, '../..');
@@ -31,6 +32,7 @@ const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/french-curriculum-cross
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const reference = readJson(REFERENCE_PATH);
 const preservationBaseline = readJson(BASELINE_PATH);
+const readingReview = readJson(path.join(ROOT, 'scripts/markbank/authoring/french-reading-review.json'));
 const referenceTopics = Object.entries(reference.variants).flatMap(([level, variant]) => (
   variant.topics.map(topic => ({ ...topic, level }))
 ));
@@ -589,7 +591,17 @@ for (const association of matched) {
 
 const localQuestionMappings = localPapers.flatMap(paper => paper.q.map(question => {
   const referenced = referenceTopicsByLocalQuestion.get(localQuestionIdentity(paper, question.n)) ?? [];
-  const topicIds = [...new Set([...referenced, ...(question.baseTopicIds ?? [])])]
+  // An inspected SEC source can correct an inherited reference association.
+  // Preserve archived IDs/tags while filing the live question under its actual
+  // source type (for example a novel extract mistakenly called an article).
+  const readingRecord = readingReview.papers.find(record => record.year === paper.year
+    && record.level === (paper.level === 'higher' ? 'hl' : 'ol'));
+  const correction = paper.kind === 'written' && /^A[1-4]$/.test(question.referenceSlot ?? '')
+    ? readingRecord?.questionTopicCorrections?.[question.n]
+      ?? readingRecord?.topicCorrections?.[question.referenceSlot.slice(1)]
+    : undefined;
+  if (correction && !correction.reason) throw new Error(`French source correction lacks evidence: ${paperIdentity(paper)}`);
+  const topicIds = [...new Set(correction?.topicIds ?? [...referenced, ...(question.baseTopicIds ?? [])])]
     .sort((a, b) => topicIndex.get(a) - topicIndex.get(b));
   if (!topicIds.length || topicIds.some(id => !topicById.has(id))) {
     throw new Error(`${paperIdentity(paper)} Q${question.n}: invalid topic mapping ${topicIds.join(', ')}`);
@@ -606,7 +618,7 @@ const localQuestionMappings = localPapers.flatMap(paper => paper.q.map(question 
     kind: paper.kind,
     n: question.n,
     topicIds,
-    provenance: referenced.length
+    provenance: correction ? 'reviewed-reading-source' : referenced.length
       ? question.baseTopicIds?.some(id => !referenced.includes(id))
         ? 'reference+retained-local'
         : 'reference'
@@ -669,7 +681,7 @@ for (const paper of localPapers) {
   const yearDir = path.join(HOSTED_ROOT, String(paper.year));
   fs.mkdirSync(yearDir, { recursive: true });
   const outputPath = path.join(yearDir, `${paper.fileid}.json`);
-  fs.writeFileSync(outputPath, `${JSON.stringify(artifact)}\n`);
+  fs.writeFileSync(outputPath, `${JSON.stringify(addFrenchReviewedAnchors(artifact, paper.year))}\n`);
   hostedAnchorMaps.push(path.relative(ROOT, outputPath));
 }
 

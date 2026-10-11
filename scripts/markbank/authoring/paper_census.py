@@ -1168,13 +1168,35 @@ def census_lang(subject, year, level):
 
     P = FrPaper(year, level, subject)
     S = FrScheme(year, level, subject)
+    # A readable text file is not proof that this parser understood its layout.
+    # Older schemes use Roman sections and paired 7+1 allocations. Without
+    # this guard they silently census zero reading tasks after PDF extraction.
+    expected_reading = set(range(1, 3 if level == 'hl' else 5))
+    priced_reading = {ask.rc for ask in S.reading()}
+    if set(S.rc_totals) != expected_reading or priced_reading != expected_reading:
+        raise ValueError(
+            f'French {year} {level}: unsupported or incomplete reading-scheme layout; '
+            f'expected comprehensions {sorted(expected_reading)}, '
+            f'found headings {sorted(S.rc_totals)} and priced tasks {sorted(priced_reading)}')
     texts = {}
     claimed = set()
     for ask in S.reading():
         hit = P.find(ask.rc, ask.item, None if ask.letter_to else ask.letter, ask.cue)
         if hit is None:
-            continue
+            raise ValueError(
+                f'French {year} {level}: priced reading task has no matched paper question: '
+                f'A{ask.rc} Q{ask.item}({ask.letter or ""})')
         text = hit[0]
+        group = getattr(S, 'paper_question_groups', {}).get(f'A{ask.rc}-Q{ask.item}')
+        if group:
+            group_text = []
+            for item in group['questions']:
+                grouped_ask = P.find(ask.rc, item, None, group['paperCues'][str(item)])
+                if grouped_ask is None:
+                    raise ValueError(f'French {year} {level}: shared tariff has no paper question A{ask.rc} Q{item}')
+                group_text.append(f'Question {item}: {grouped_ask[0]}')
+                claimed.add((ask.rc, item, None))
+            text = '\n\n'.join(group_text)
         section = f'A{ask.rc}'
         if ask.letter_to:
             # One head, four printed answer lines: "1.(a - d)" prices a
@@ -1197,7 +1219,8 @@ def census_lang(subject, year, level):
     for sec, item, letter, text in aural:
         if letter is None and (sec, item) in lettered:
             continue                     # a head whose lettered parts are the asks
-        texts[(f'L{sec}', item, letter, None)] = text
+        section = sec if sec in {'I', 'II', 'III', 'IV', 'V'} else f'L{sec}'
+        texts[(section, item, letter, None)] = text
 
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S, claimed

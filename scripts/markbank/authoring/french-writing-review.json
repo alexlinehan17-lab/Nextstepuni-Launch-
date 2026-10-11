@@ -1,0 +1,1010 @@
+{
+  "status": "partial-corpus-review",
+  "reviewedAt": "2026-10-07",
+  "cards": 450,
+  "review": [
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 12
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 13
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 15
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 4,
+      "poolSize": 4,
+      "routes": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 11,
+      "schemePage": 10
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "schemePages": [
+        14,
+        15
+      ],
+      "notes": "Eight independently priced 40/30-mark alternatives. Q1(b) real/imaginary is open creative scope. Q2(b) requires all three questions; cuisine, art, cinema and other culture examples are an illustrative open list, not a closed task pool. Q3(a) personal or others’ experience and Q3(b) ways to earn money are open opinion scope. All four form sentences and all three Ordinary writing points are required."
+    },
+    {
+      "source": "examiner-reports/french/papers/2015-hl-000-paper.pdf",
+      "sha256": "a2442a72d838036951ff48dd96691bcd989a58e41f8fdcd972ead27aaf7b0a4d"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2015-hl.pdf",
+      "sha256": "ea67963a30db12d5d0a2b93ccc1ca6a0559a2583de33ec85f4cdaef6fb297235"
+    },
+    {
+      "source": "examiner-reports/french/papers/2015-ol-000-paper.pdf",
+      "sha256": "c035611b1f9da0072302fd833e6fb8bc4636de51c053fadabe72ce7521724178"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2015-ol.pdf",
+      "sha256": "ad24f18961500e6c6c36130f4d048e462a58d3b63982637482d34f02efd3a11c"
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 12
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 13
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 15
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 4,
+      "poolSize": 4,
+      "routes": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 11,
+      "schemePage": 10
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "schemePages": [
+        14,
+        15
+      ],
+      "notes": "Eight independently priced 40/30-mark alternatives. Q1(b) real/imaginary is open creative scope. Q2(b) requires all five application points and uses its own Formule 6 + Communication 12 + Language 12 grid. Q3(a) asks an open opinion on being an only child or having siblings, not selection from finite tasks. No internal finite selection."
+    },
+    {
+      "source": "examiner-reports/french/papers/2016-hl-000-paper.pdf",
+      "sha256": "0a584d304da1ec9e742365688ad1ac4344e1ceff468e1d830e43d647ed18810f"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2016-hl.pdf",
+      "sha256": "27478d7e3486b1a9cff65a8d95a6c4255b26f31511c53d6b1fb6bcbe0de614b3"
+    },
+    {
+      "source": "examiner-reports/french/papers/2016-ol-000-paper.pdf",
+      "sha256": "712a0d3f9c58b022abde8040f88683eac4f88e7eef6654e3cfa9939059838161"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2016-ol.pdf",
+      "sha256": "619b06c0c1ea0fcdb5c768ed0b102dd2b034c70297f24709ac55b2866f58bb2d"
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 14
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 15
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 16
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 17
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 4,
+      "poolSize": 4,
+      "routes": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 11,
+      "schemePage": 12
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "schemePages": [
+        16,
+        17
+      ],
+      "notes": "Eight independently priced40/30mark alternatives. Q1(b)real/imaginary is open creative scope. Q2(b)email requires answers to all four printed questions. Q4(b)cartoon retained in source viewer. Ordinary formQ8invites an open preference with reason, not finite separate tasks. No internal finite task selection."
+    },
+    {
+      "source": "examiner-reports/french/papers/2017-hl-000-paper.pdf",
+      "sha256": "c178d05d68583116e2975d1d34a531727f6574fb7b06da16d68535c8f4133eab"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2017-hl.pdf",
+      "sha256": "1c5540d8f392b1f49ef310f16f79c8180ae3d8ca870a40bc46a6e53d75c68f3f"
+    },
+    {
+      "source": "examiner-reports/french/papers/2017-ol-000-paper.pdf",
+      "sha256": "6f4dd599b90255647e3f01b2c3b29e525236ce8ca0647921411c9a52ab090e34"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2017-ol.pdf",
+      "sha256": "d6e9f3cd1fe11308693adbed741ecef63216e7e828d7efa9fee12bbf0fcc6c0d"
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 14
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 15
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 16
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 17
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 4,
+      "poolSize": 4,
+      "routes": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 11,
+      "schemePage": 12
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "schemePages": [
+        18,
+        19
+      ],
+      "notes": "Eight independently priced40/30mark alternatives. Q1(b)real/imaginary is open creative scope. Q2(b)email requires all five points and retains its complete advert. Q3(b)cartoon retained in source viewer; do not insert fragments of speech bubbles into the question. No internal finite task selection."
+    },
+    {
+      "source": "examiner-reports/french/papers/2018-hl-000-paper.pdf",
+      "sha256": "124bef52eb8f91718bdfe532881d9e8e3d9e6731b0ab69223875c44be99777d3"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2018-hl.pdf",
+      "sha256": "b7e439b693dd3ab593ef96ba83a6ebe493eda611d4d9d26653e8846f9acc6b4d"
+    },
+    {
+      "source": "examiner-reports/french/papers/2018-ol-000-paper.pdf",
+      "sha256": "f71ac58bc1cede7e93b31d1e1b1cad996df3035f834af1e8ee43f376ad17052a"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2018-ol.pdf",
+      "sha256": "79bb9b5d8c7699de280089844564c39771ab331b38d667319e2385aa13f83c52"
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 12
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 13
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 15
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 4,
+      "poolSize": 4,
+      "routes": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 11,
+      "schemePage": 10
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "schemePages": [
+        17,
+        18
+      ],
+      "notes": "Eight alternatives at their40/30mark boundaries. Q2(b) requires congratulations and answers to all three email questions. Q4(b) requires the original cartoon, retained in its illustration viewer. No task-internal finite elective pool."
+    },
+    {
+      "source": "examiner-reports/french/papers/2019-hl-000-paper.pdf",
+      "sha256": "d0c760ac0e85cbd8926aeac2eb7587ef4f7ee6cd38dbf09a8a42f323c63c6367"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2019-hl.pdf",
+      "sha256": "b691ad1036b61d5da864e2ddf646771ee4d9ef7aeeacbeaf252d6b21d403f5e0"
+    },
+    {
+      "source": "examiner-reports/french/papers/2019-ol-000-paper.pdf",
+      "sha256": "438a1121ce5e2556ec1af69e927f574527cf4c4789ae29ac5b000c7853326283"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2019-ol.pdf",
+      "sha256": "4f2e9eb006e10cbd8433e0154b693c8d939a190963f55ddb5ae56caa7730a2c1"
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 15
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 16,
+      "schemePage": 16
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 16,
+      "schemePage": 17
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 4,
+      "poolSize": 4,
+      "routes": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 13
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "schemePages": [
+        13,
+        14
+      ],
+      "notes": "Q1(a/b) each has a 40-mark tariff; Q2–4(a/b) each has a 30-mark tariff. Every alternative is separate. The Q2(b) review requires all four points. A real or imaginary narrative is open creative scope, not a finite task pool."
+    },
+    {
+      "source": "examiner-reports/french/papers/2020-hl-000-paper.pdf",
+      "sha256": "edd759d70996831aa8a06183bd731bbaab4a6afde3359871b43873d6e2ed2bca"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2020-hl.pdf",
+      "sha256": "2b49a3ffbf024de41ae7c9d4fd0eec83c83ce8899d6b89d42a41afaf90a3a66a"
+    },
+    {
+      "source": "examiner-reports/french/papers/2020-ol-000-paper.pdf",
+      "sha256": "caf1d9c877713de4e89a442f7aad696413089c5b00c9e336385c2c803ef5e71b"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2020-ol.pdf",
+      "sha256": "c74939532c97afcf6b20aba6a2f130684443d9d2eb8c5cbb027f7e789e16a67c"
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 15
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 16
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 17
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 3,
+      "poolSize": 4,
+      "routes": 4,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 13
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        11,
+        12
+      ],
+      "schemePages": [
+        14,
+        15
+      ],
+      "notes": "Q1a/b/c are independent alternatives. Q4 email bullets are all required. Q1c asks about personal travel intentions and destinations, with open response scope. Gender alternatives and personal experience do not define task pools."
+    },
+    {
+      "source": "examiner-reports/french/papers/2021-hl-000-paper.pdf",
+      "sha256": "ca63a09a0533dc98d565839024f251cb0ad4b01d78015d11278c149ed9519974"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2021-hl.pdf",
+      "sha256": "f96b4055732d9826aa0af74af4c17f7b2c66e44ed50f036a59d338868ab6c7bc"
+    },
+    {
+      "source": "examiner-reports/french/papers/2021-ol-000-paper.pdf",
+      "sha256": "32e99cc50a223e19ea01bb6a6662a0e4fa4a5c56ad579df41c52ba6511fa8aaf"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2021-ol.pdf",
+      "sha256": "abaa99c727041369a7f94b06d4258f0f167403ab6131c2daa271cc3a1473c762"
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 13
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 15
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 16
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 3,
+      "poolSize": 4,
+      "routes": 4,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 12
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        11,
+        12
+      ],
+      "schemePages": [
+        14,
+        15
+      ],
+      "notes": "Q1a/b/c are alternatives. Q3 email bullets are all required. Q1c real/imaginary is open creative scope, not a finite response pool."
+    },
+    {
+      "source": "examiner-reports/french/papers/2022-hl-000-paper.pdf",
+      "sha256": "ade4bb9b719cebaf63b36942a3d41fcaff240430e1052ac2a9812cb6d44e8a3c"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2022-hl.pdf",
+      "sha256": "0d3d6902d2df698d829aab8e960317584b883f1d3e4e51dc0564bb272c0b8139"
+    },
+    {
+      "source": "examiner-reports/french/papers/2022-ol-000-paper.pdf",
+      "sha256": "8379e3101de945ce7d061b1e1a76e96cac6c8dbc44c721aed95929f9c2d9d19a"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2022-ol.pdf",
+      "sha256": "beda30ae2b8e6b919afeb960903e5bdbb46982921b12987846f532b0cb126dad"
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 13
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 15
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 16
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 3,
+      "poolSize": 4,
+      "routes": 4,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 12
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        11,
+        12
+      ],
+      "schemePages": [
+        17,
+        18
+      ],
+      "notes": "Q1a/b/c are alternatives. Q4 email bullets are all required. Q1c real/imaginary is open creative scope, not a finite response pool."
+    },
+    {
+      "source": "examiner-reports/french/papers/2023-hl-000-paper.pdf",
+      "sha256": "332bcbdd20d3f8e61f486e15d83a48e2bf0aacea7017f09a01aa31a1348826ad"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2023-hl.pdf",
+      "sha256": "7d968c691a28cc71175d9430d8778fe90359a3a6f16ffe3c238b63346920395c"
+    },
+    {
+      "source": "examiner-reports/french/papers/2023-ol-000-paper.pdf",
+      "sha256": "2d088317280f63688ea6b408f7af9131dc16b12c99dc9c8097c0938576c3571f"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2023-ol.pdf",
+      "sha256": "87e25b1c07f8b7040ccb0fffb2d21f0f41f54f646f680aeb4a331c5480b9d863"
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 15
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 16
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 17
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 18
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 3,
+      "poolSize": 4,
+      "routes": 4,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 14
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        11,
+        12
+      ],
+      "schemePages": [
+        14,
+        15
+      ],
+      "notes": "Q1a/b/c are alternatives. Q3 email bullets are all required. Q1c real/imaginary is open creative scope, not a finite response pool."
+    },
+    {
+      "source": "examiner-reports/french/papers/2024-hl-000-paper.pdf",
+      "sha256": "763a3491be6a1b46a50f894f888541aa402a94276b670bd945e5a5c1a507e268"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2024-hl.pdf",
+      "sha256": "219ee8187ba5c764833ab6d6a2734014fc0c6f4f9a5813421d43fbc74e54a6cc"
+    },
+    {
+      "source": "examiner-reports/french/papers/2024-ol-000-paper.pdf",
+      "sha256": "7f587ddf13dce38cb665504faff42a80e23712db6d9cb40cd7e2050e00914979"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2024-ol.pdf",
+      "sha256": "d390b86fe38978c9a0b72e5bcd9dd0563a29ddd06d6d8842d6f4d5989a827df1"
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 15
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 16
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 17
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 3,
+      "poolSize": 4,
+      "routes": 4,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 13
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        11,
+        12
+      ],
+      "schemePages": [
+        15,
+        16
+      ],
+      "notes": "Q1a/b/c are alternatives. Q3 email bullets are all required. Q1c real/imaginary is open creative scope, not a finite response pool."
+    },
+    {
+      "source": "examiner-reports/french/papers/2025-hl-000-paper.pdf",
+      "sha256": "245769e43a3856acccf5b8aaa06b107ace8bf15085c50cbf2b41c35a0a3aa715"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2025-hl.pdf",
+      "sha256": "6f1920f63f40b3bf2d6c80fc84705193c7050583abd23ec703adaf6ad9fdb535"
+    },
+    {
+      "source": "examiner-reports/french/papers/2025-ol-000-paper.pdf",
+      "sha256": "382bfb8b67848bcb1c772d245ed99bd9a3a241ffef8b5971c4b3d468b59ea764"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2025-ol.pdf",
+      "sha256": "c09f4c7db1e33b0314f0cf5461b76fde5f7c99df4f04dd3d99776f947d791980"
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 16
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 14,
+      "schemePage": 17
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 18
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 5,
+      "routes": 10,
+      "paperPage": 16,
+      "schemePage": 19
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 3,
+      "poolSize": 4,
+      "routes": 4,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 15
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        11,
+        12
+      ],
+      "schemePages": [
+        18,
+        19
+      ],
+      "notes": "Q1a/b/c are alternatives. Q3 email bullets are all required. Q1c real/imaginary is open creative scope, not a finite response pool."
+    },
+    {
+      "source": "examiner-reports/french/papers/2026-hl-000-paper.pdf",
+      "sha256": "75ac17b71dd805f7667b389a6d65c89ff3c68bacdf2b10abd07c790f6c87e768"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2026-hl.pdf",
+      "sha256": "13405a67c87128fcf49ff3ce98ba49f3afd77f4e4611f1e020ad5373053926a3"
+    },
+    {
+      "source": "examiner-reports/french/papers/2026-ol-000-paper.pdf",
+      "sha256": "ede242e0aa983f8784877602a8a9fa151f165a1d88daa76b15dc98d436a84fb4"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2026-ol.pdf",
+      "sha256": "15fc31a3a83e6e3d614bac20f1813f7462f9cb90b566e7b97e61bcdd6b368f15"
+    }
+  ],
+  "examSelectionPolicy": "Choosing two separately marked examination questions does not create one combined practice card. Each task is independently practicable at its own tariff."
+}

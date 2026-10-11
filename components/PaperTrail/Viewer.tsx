@@ -67,6 +67,8 @@ import CropView from './CropView';
 import MobileQuestionTools from './MobileQuestionTools';
 import { printedQuestionAnchors, questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
+import { frenchAudioForPaper } from './frenchAudio';
+import FrenchPaperAudio from './FrenchPaperAudio';
 
 /** The viewer's square ink buttons (option E): hairline, offset shadow, orange when on. */
 const E_BUTTON = 'inline-flex items-center gap-1.5 h-[34px] px-3 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 text-[13px] font-bold transition-[transform,box-shadow,background-color,color] duration-150 shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none';
@@ -198,6 +200,7 @@ const Viewer: React.FC<ViewerProps> = ({
   onClose,
   onPosition,
 }) => {
+  const audioSource = useMemo(() => topics ? frenchAudioForPaper(topics) : null, [topics]);
   const [side, setSide] = useState<Side>(initialSide === 'scheme' && scheme ? 'scheme' : 'paper');
   const [zoom, setZoom] = useState(1);
   const [epoch, setEpoch] = useState(0); // bumped on resize/rotation → canvases re-render
@@ -1281,6 +1284,9 @@ const Viewer: React.FC<ViewerProps> = ({
         </div>
       </div>
 
+      {audioSource && <div className="shrink-0 bg-white border-b border-zinc-200">
+        <div className="max-w-3xl mx-auto"><FrenchPaperAudio source={audioSource} /></div>
+      </div>}
       <div className="pt-reader-workspace" data-split={inlineScheme || undefined}>
       {/* Body */}
       {session.state === 'ready' && session.pdf ? (

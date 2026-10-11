@@ -25,8 +25,8 @@
     "localPaperVariants": 98,
     "localPhysicalMappings": 1423,
     "distinctStudentFacingQuestions": 1003,
-    "referenceMappedLocalQuestions": 982,
-    "retainedLocalQuestions": 441,
+    "referenceMappedLocalQuestions": 874,
+    "retainedLocalQuestions": 549,
     "hostedPaperAnchorMaps": 98,
     "preservedBaselineVariants": 20,
     "preservedBaselineCards": 278,
@@ -13939,9 +13939,9 @@
       "kind": "written",
       "n": "23",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -13952,9 +13952,9 @@
       "kind": "written",
       "n": "24",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -13965,9 +13965,9 @@
       "kind": "written",
       "n": "25",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -13978,9 +13978,9 @@
       "kind": "written",
       "n": "26",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -13991,9 +13991,9 @@
       "kind": "written",
       "n": "27",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14004,9 +14004,9 @@
       "kind": "written",
       "n": "28",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14017,9 +14017,9 @@
       "kind": "written",
       "n": "29",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14030,9 +14030,9 @@
       "kind": "written",
       "n": "30",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14695,7 +14695,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14708,7 +14708,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14721,7 +14721,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14734,7 +14734,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14747,7 +14747,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14760,7 +14760,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14773,7 +14773,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -14786,7 +14786,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15371,9 +15371,9 @@
       "kind": "written",
       "n": "1",
       "topicIds": [
-        "french-ordinary-reading-comprehension-book-extract"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15384,9 +15384,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-book-extract"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15397,9 +15397,9 @@
       "kind": "written",
       "n": "3",
       "topicIds": [
-        "french-ordinary-reading-comprehension-book-extract"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15410,9 +15410,9 @@
       "kind": "written",
       "n": "4",
       "topicIds": [
-        "french-ordinary-reading-comprehension-book-extract"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15423,9 +15423,9 @@
       "kind": "written",
       "n": "5",
       "topicIds": [
-        "french-ordinary-reading-comprehension-book-extract"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15436,9 +15436,9 @@
       "kind": "written",
       "n": "6",
       "topicIds": [
-        "french-ordinary-reading-comprehension-book-extract"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15451,7 +15451,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15464,7 +15464,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15477,7 +15477,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15490,7 +15490,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15503,7 +15503,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15516,7 +15516,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15529,7 +15529,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15542,7 +15542,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15553,9 +15553,9 @@
       "kind": "written",
       "n": "15",
       "topicIds": [
-        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+        "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15566,9 +15566,9 @@
       "kind": "written",
       "n": "16",
       "topicIds": [
-        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+        "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15579,9 +15579,9 @@
       "kind": "written",
       "n": "17",
       "topicIds": [
-        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+        "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15592,9 +15592,9 @@
       "kind": "written",
       "n": "18",
       "topicIds": [
-        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+        "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15605,9 +15605,9 @@
       "kind": "written",
       "n": "19",
       "topicIds": [
-        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+        "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15618,9 +15618,9 @@
       "kind": "written",
       "n": "20",
       "topicIds": [
-        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+        "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15631,9 +15631,9 @@
       "kind": "written",
       "n": "21",
       "topicIds": [
-        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+        "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15644,9 +15644,9 @@
       "kind": "written",
       "n": "22",
       "topicIds": [
-        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+        "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15657,9 +15657,9 @@
       "kind": "written",
       "n": "23",
       "topicIds": [
-        "french-ordinary-reading-comprehension-interview"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15670,9 +15670,9 @@
       "kind": "written",
       "n": "24",
       "topicIds": [
-        "french-ordinary-reading-comprehension-interview"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15683,9 +15683,9 @@
       "kind": "written",
       "n": "25",
       "topicIds": [
-        "french-ordinary-reading-comprehension-interview"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15696,9 +15696,9 @@
       "kind": "written",
       "n": "26",
       "topicIds": [
-        "french-ordinary-reading-comprehension-interview"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15709,9 +15709,9 @@
       "kind": "written",
       "n": "27",
       "topicIds": [
-        "french-ordinary-reading-comprehension-interview"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15722,9 +15722,9 @@
       "kind": "written",
       "n": "28",
       "topicIds": [
-        "french-ordinary-reading-comprehension-interview"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15735,9 +15735,9 @@
       "kind": "written",
       "n": "29",
       "topicIds": [
-        "french-ordinary-reading-comprehension-interview"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -15748,9 +15748,9 @@
       "kind": "written",
       "n": "30",
       "topicIds": [
-        "french-ordinary-reading-comprehension-interview"
+        "french-ordinary-reading-comprehension-book-extract"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -17959,9 +17959,9 @@
       "kind": "written",
       "n": "1",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -17972,9 +17972,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -17985,9 +17985,9 @@
       "kind": "written",
       "n": "3",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -17998,9 +17998,9 @@
       "kind": "written",
       "n": "4",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -18011,9 +18011,9 @@
       "kind": "written",
       "n": "5",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -18024,9 +18024,9 @@
       "kind": "written",
       "n": "6",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -18037,9 +18037,9 @@
       "kind": "written",
       "n": "7",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -18050,9 +18050,9 @@
       "kind": "written",
       "n": "8",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -18063,9 +18063,9 @@
       "kind": "written",
       "n": "9",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -18076,9 +18076,9 @@
       "kind": "written",
       "n": "10",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -18089,9 +18089,9 @@
       "kind": "written",
       "n": "11",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -18102,9 +18102,9 @@
       "kind": "written",
       "n": "12",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -18115,9 +18115,9 @@
       "kind": "written",
       "n": "13",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -18128,9 +18128,9 @@
       "kind": "written",
       "n": "14",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20040,9 +20040,9 @@
       "kind": "written",
       "n": "1",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20053,9 +20053,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20066,9 +20066,9 @@
       "kind": "written",
       "n": "3",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20079,9 +20079,9 @@
       "kind": "written",
       "n": "4",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20092,9 +20092,9 @@
       "kind": "written",
       "n": "5",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20105,9 +20105,9 @@
       "kind": "written",
       "n": "6",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20118,9 +20118,9 @@
       "kind": "written",
       "n": "7",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20131,9 +20131,9 @@
       "kind": "written",
       "n": "8",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20144,9 +20144,9 @@
       "kind": "written",
       "n": "9",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20157,9 +20157,9 @@
       "kind": "written",
       "n": "10",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20170,9 +20170,9 @@
       "kind": "written",
       "n": "11",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20183,9 +20183,9 @@
       "kind": "written",
       "n": "12",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20196,9 +20196,9 @@
       "kind": "written",
       "n": "13",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20209,9 +20209,9 @@
       "kind": "written",
       "n": "14",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20573,9 +20573,9 @@
       "kind": "written",
       "n": "1",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20586,9 +20586,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20599,9 +20599,9 @@
       "kind": "written",
       "n": "3",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20612,9 +20612,9 @@
       "kind": "written",
       "n": "4",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20625,9 +20625,9 @@
       "kind": "written",
       "n": "5",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20638,9 +20638,9 @@
       "kind": "written",
       "n": "6",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20651,9 +20651,9 @@
       "kind": "written",
       "n": "7",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20664,9 +20664,9 @@
       "kind": "written",
       "n": "8",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20677,9 +20677,9 @@
       "kind": "written",
       "n": "9",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20690,9 +20690,9 @@
       "kind": "written",
       "n": "10",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20703,9 +20703,9 @@
       "kind": "written",
       "n": "11",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20716,9 +20716,9 @@
       "kind": "written",
       "n": "12",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20729,9 +20729,9 @@
       "kind": "written",
       "n": "13",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -20742,9 +20742,9 @@
       "kind": "written",
       "n": "14",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -22085,9 +22085,9 @@
       "kind": "written",
       "n": "6",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -22100,7 +22100,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -22113,7 +22113,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -22345,9 +22345,9 @@
       "kind": "written",
       "n": "6",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -22360,7 +22360,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -22373,7 +22373,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -23454,7 +23454,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -23649,7 +23649,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -23662,7 +23662,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -23675,7 +23675,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -23688,7 +23688,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -23701,7 +23701,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -24430,7 +24430,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -24443,7 +24443,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -24456,7 +24456,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -24469,7 +24469,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -24482,7 +24482,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -24495,7 +24495,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -24508,7 +24508,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -24521,7 +24521,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -24534,7 +24534,7 @@
       "topicIds": [
         "french-ordinary-reading-comprehension-interview"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -24768,7 +24768,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -24781,7 +24781,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -24794,7 +24794,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -24807,7 +24807,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -24820,7 +24820,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -24833,7 +24833,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -24846,7 +24846,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -24859,7 +24859,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -24872,7 +24872,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -24885,7 +24885,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -24896,9 +24896,9 @@
       "kind": "written",
       "n": "11",
       "topicIds": [
-        "french-higher-literarynovel-comprehension"
+        "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25223,7 +25223,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25236,7 +25236,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25249,7 +25249,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25262,7 +25262,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25275,7 +25275,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25288,7 +25288,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25301,7 +25301,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25314,7 +25314,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25327,7 +25327,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25340,7 +25340,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25353,7 +25353,7 @@
       "topicIds": [
         "french-higher-newspapermagazine-comprehension"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "higher",
@@ -25689,9 +25689,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -25884,9 +25884,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -26989,9 +26989,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -27184,9 +27184,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -28211,9 +28211,9 @@
       "kind": "written",
       "n": "1",
       "topicIds": [
-        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+        "french-ordinary-reading-comprehension-article"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -28224,9 +28224,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -28237,9 +28237,9 @@
       "kind": "written",
       "n": "3",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -28406,9 +28406,9 @@
       "kind": "written",
       "n": "1",
       "topicIds": [
-        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
+        "french-ordinary-reading-comprehension-article"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -28419,9 +28419,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -28432,9 +28432,9 @@
       "kind": "written",
       "n": "3",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -29355,9 +29355,9 @@
       "kind": "written",
       "n": "1",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -29368,9 +29368,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -29550,9 +29550,9 @@
       "kind": "written",
       "n": "1",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -29563,9 +29563,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -30594,9 +30594,9 @@
       "kind": "written",
       "n": "1",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -30607,9 +30607,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -30620,9 +30620,9 @@
       "kind": "written",
       "n": "3",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "reference"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -30789,9 +30789,9 @@
       "kind": "written",
       "n": "1",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -30802,9 +30802,9 @@
       "kind": "written",
       "n": "2",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",
@@ -30815,9 +30815,9 @@
       "kind": "written",
       "n": "3",
       "topicIds": [
-        "french-ordinary-reading-comprehension-article"
+        "french-ordinary-reading-comprehension-other-website-magazine-extracts"
       ],
-      "provenance": "retained-local"
+      "provenance": "reviewed-reading-source"
     },
     {
       "level": "ordinary",

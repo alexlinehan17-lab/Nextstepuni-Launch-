@@ -108,25 +108,26 @@ BASELINE_TOL = 3.5
 # The head of a reading comprehension. The paper sets the Irish "C.1" (Ceist) in
 # its left column and the English "Q.1" in its right, so both open the same one.
 RC_HEAD = re.compile(r'^[QC]\s*\.\s*(\d)\b')
-SECTION_A = re.compile(r'Section\s+A\b.*Compr[ée]hension|Roinn\s+A\b.*L[ée]amhthuiscint', re.I)
+SECTION_A = re.compile(r'Section\s+A\b.*Compr[ée]hension|Roinn\s+A\b.*L[ée]amhthuiscint|^(?:Roinn\s+I\b.*)?Section\s+I\b', re.I)
 # The written-production section as it opens on its own page. The paper also
 # names it on its instructions page — "Section B Written Production / Production
 # Écrite 100 marks" — five pages before the section itself, and anchoring on the
 # name alone starts Section B in the middle of Section A. The section's own head
 # prices itself in POINTS, as the French half of the paper does throughout; the
 # instruction page prices it in marks.
-SECTION_B = re.compile(r'Section\s+B\b.*(?:Production|Expression)\s+[ÉE]crite.*points',
+SECTION_B = re.compile(r'Section\s+B\b.*(?:Production|Expression)\s+[ÉE]crite.*points|^(?:Roinn\s+II\b.*)?Section\s+II\b',
                        re.I)
 # A written-production question and its printed alternatives.
 # 2022 and 2023 Ordinary head each written-production question bilingually on
 # one line — "Ceist 1/Question 1" — where every other sitting prints "Question
 # 1" alone. Requiring the bare form censused those two sittings at zero.
-B_QUESTION = re.compile(r'^(?:Ceist\s+\d\s*/\s*)?Question\s+(\d)\b\s*(.*)$')
+B_QUESTION = re.compile(r'^(?:(?:Ceist\s+\d\s*/\s*)?Question\s+|Q\s*\.\s*)(\d)\b\.?\s*(.*)$')
 B_LETTER = re.compile(r'^\(\s*([a-c])\s*\)\s*(.*)$')
 B_RUBRIC = re.compile(
     r'^(?:OU$|N\.B\.|R[ée]pondez\b|Dans cette section|Choisissez|\(\d{1,3}\s*mots)', re.I)
-# A-E: 2025 Higher sets a fifth listening section.
-AURAL_SECTION = re.compile(r'^(?:SECTION|ROINN)\s+([A-E])\b')
+# Older booklets use I–V; modern ones use A–E. Keep the printed section name
+# so the independent census can reconcile the source references on both.
+AURAL_SECTION = re.compile(r'^(?:SECTION|ROINN)\s+(IV|III|II|I|V|[A-E])\b')
 # Where the listening booklet's examination material stops. Everything after
 # it is the SEC's copyright notice, and the ask that happened to be open when
 # it began swallowed it.
@@ -135,17 +136,18 @@ AURAL_END = re.compile(
     r"|^(?:F[óo]gra c[óo]ipchirt|Copyright notice|Acknowledge)", re.I)
 
 # A printed marker at the head of a column: "1.", "1. (a)", "(b)".
-NUM_MARK = re.compile(r'^(\d{1,2})\s*\.\s*(?:\(\s*([a-h])\s*\)\s*)?(.*)$', re.S)
-LETTER_MARK = re.compile(r'^\(\s*([a-h])\s*\)\s*(.*)$', re.S)
+PART_MARK = r'(?:[a-h]|i{1,3}|iv|v)'
+NUM_MARK = re.compile(rf'^(\d{{1,2}})\s*\.\s*(?:\(\s*({PART_MARK})\s*\)\s*)?(.*)$', re.S)
+LETTER_MARK = re.compile(rf'^\(\s*({PART_MARK})\s*\)\s*(.*)$', re.S)
 
 # Page furniture the SEC prints on every page.
 FURNITURE = re.compile(
     r'^(?:Leaving Certificate Examination|Scr[úu]d[úu] na hArdteistim|French\s+[–-]|'
     r'Fraincis\s+[–-]|Do not write on this page|N[áa] scr[íi]obh ar an leathanach|'
-    r'Page \d+$|\d{1,3}$)', re.I)
+    r'Lch\.?\s+\d+\s+de\s+\d+\s*/\s*Page|Page \d+$|\d{1,3}$)', re.I)
 
 
-MARKER_START = re.compile(r'^(?:\d{1,2}\s*\.|\(\s*[a-h]\s*\)|[QC]\s*\.\s*\d)')
+MARKER_START = re.compile(rf'^(?:\d{{1,2}}\s*\.|\(\s*{PART_MARK}\s*\)|[QC]\s*\.\s*\d)')
 
 
 def _gap_groups(words):
@@ -189,7 +191,7 @@ def _column_x(rows, width, marker=None):
 
 
 def _rows(path, page_from=0, page_to=None, marker=None, split_at=None,
-          fallback_split=None):
+          fallback_split=None, deduplicate_pages=()):
     """[(page, [(x0, side, text), …])] — every row, cut into its columns.
 
     `marker` is what opens a printed column, and it is a parameter because the
@@ -226,7 +228,12 @@ def _rows(path, page_from=0, page_to=None, marker=None, split_at=None,
         for pno in range(page_from, last):
             width = doc[pno].rect.width
             rows = []
-            for x0, y0, x1, y1, word, *_ in doc[pno].get_text('words'):
+            if pno in deduplicate_pages:
+                from fr_pdf_words import fragmented_words
+                words = fragmented_words(doc[pno])
+            else:
+                words = doc[pno].get_text('words')
+            for x0, y0, x1, y1, word, *_ in words:
                 if not word.strip():
                     continue
                 mid = (y0 + y1) / 2
@@ -350,7 +357,17 @@ class FrPaper:
         lead = {}                # side -> the lines introducing this rc
         rc_first_page = {}
         rc_last_page = {}
-        for pno, groups in _rows(self.path):
+        # These four visually reviewed pages repeat boundary glyphs across
+        # clipping tiles. Their source PDF is pinned in the reading ledger.
+        tiled_pages = {1, 3, 5, 7} if (self.year, self.level, self.subject) == (2011, 'ol', 'french') else set()
+        for pno, groups in _rows(self.path, deduplicate_pages=tiled_pages):
+            # A short full-width French question can leave its bold source
+            # reference just across the passage's column bound (2012 OL Q4.2).
+            # It belongs to the numbered question on the same printed row.
+            left = [t for _x, side, t in groups if side == 'L']
+            right = [t for _x, side, t in groups if side == 'R']
+            if left and NUM_MARK.match(' '.join(left)) and left[-1].endswith(('?', '.')) and len(right) == 1 and re.fullmatch(r'\(Section \d+\)', right[0]):
+                groups = [(x, 'L', text) for x, _side, text in groups]
             joined = ' '.join(t for _x, _s, t in groups)
             if SECTION_A.search(joined):
                 section, rc = 'A', None
@@ -480,8 +497,21 @@ class FrPaper:
         out = []
         q = None
         cur = None
+        examiner_box_page = None
         for pno, groups in _rows(self.path, self.section_b_page):
             for _x0, side, text in groups:
+                if self.level == 'ol' and self.year <= 2019:
+                    if text.startswith('Don scrúdaitheoir'):
+                        examiner_box_page = pno
+                        cur = None
+                    if pno == examiner_box_page:
+                        continue
+                if self.level == 'ol' and self.year <= 2019 and re.fullmatch('[ABC]', text):
+                    # The older OL paper calls its writing exercises options
+                    # A/B/C. Keep the stable B1/B2/B3 identities used by Atlas.
+                    q = ord(text) - ord('A') + 1
+                    cur = None
+                    continue
                 if FURNITURE.match(text) or B_RUBRIC.match(text):
                     cur = None
                     continue
@@ -526,8 +556,8 @@ class FrPaper:
     def aural_asks(self):
         """[(section, item, letter, text)] for the Listening Comprehension.
 
-        Read for the census only: an ask here is answerable from the recording
-        alone, and fr_all.py excludes every one of them with that evidence.
+        Read independently from the booklet for reconciliation with authored
+        listening tasks. Blank answer slots and MCQ choices are not new asks.
         """
         if not self.aural_path:
             return []
@@ -554,7 +584,11 @@ class FrPaper:
                     item, letter, rest = int(m.group(1)), m.group(2), m.group(3)
                 else:
                     m = LETTER_MARK.match(text)
-                    if m and cur_item.get(side):
+                    # Roman-section booklets use (a)/(b) for unnamed response
+                    # slots and (a)–(d) for MCQ choices. Their priced question
+                    # parts use (i)/(ii); the choices stay in the current ask.
+                    is_slot = m and section in {'I', 'II', 'III', 'IV', 'V'} and m.group(1) in 'abcdefgh'
+                    if m and cur_item.get(side) and not is_slot:
                         item, letter, rest = cur_item[side], m.group(1), m.group(2)
                 if item is None:
                     if cur.get(side):
