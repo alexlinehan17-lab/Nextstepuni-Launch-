@@ -33,7 +33,7 @@ import { LegalAgreementGate } from './legal/LegalAgreementGate';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import { toDateKey } from './subjectData';
 const LoginPage = lazy(() => import('./LoginPage'));
-const ResetPasswordPage = lazy(() => import('./ResetPasswordPage'));
+const AuthActionPage = lazy(() => import('./AuthActionPage'));
 const AdminDashboard = lazy(() => import('./AdminDashboard').then(m => ({ default: m.AdminDashboard })));
 const GCDashboard = lazy(() => import('./GCDashboard').then(m => ({ default: m.GCDashboard })));
 const DashboardView = lazy(() => import('./DashboardView'));
@@ -62,6 +62,7 @@ import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
 import { useProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
+import { isAuthActionRequest } from '../utils/authActionLink';
 import { isProgressReadyForUser } from '../utils/progressHydration';
 import {
   GUEST_USER_ID,
@@ -268,13 +269,6 @@ function useRegistrationHold(): boolean {
   return held;
 }
 
-function isPasswordResetRequest(): boolean {
-  if (typeof window === 'undefined') return false;
-  const params = new URLSearchParams(window.location.search);
-  const path = window.location.pathname;
-  return (params.get('mode') === 'resetPassword' && !!params.get('oobCode'))
-    || path === '/reset-password' || path.startsWith('/reset-password/');
-}
 
 const AppRouter: React.FC<AppRouterProps> = (props) => {
   const { user, userResolved, handleLogout } = useAuth();
@@ -283,7 +277,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const avatar = registrationHeld ? getRegistrationLoadingAvatar() : undefined;
   const transitionKey = [user?.uid ?? 'guest', state.viewState, state.currentCategory, state.currentModuleId, state.activeTool].join(':');
   return <LoadingCrewProvider avatar={avatar ?? (userResolved && user ? props.settings.avatar || user.avatar : undefined)} transitionKey={transitionKey}>
-    <LegalAgreementGate user={user} ready={userResolved && !registrationHeld && !isPasswordResetRequest()} onLogout={handleLogout}>
+    <LegalAgreementGate user={user} ready={userResolved && !registrationHeld && !isAuthActionRequest()} onLogout={handleLogout}>
       <AppRouterContent {...props} />
     </LegalAgreementGate>
   </LoadingCrewProvider>;
@@ -356,12 +350,11 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   const handleGoToCutContent = () => { nav.navigateToCutContent(); };
   const handleGoToAccreditation = () => { nav.navigateToAccreditation(); };
 
-  // Firebase password-reset action URL — handled before any auth gating so the
-  // user can land here whether or not they're signed in. Triggered by either
-  // the path /reset-password or the query params mode=resetPassword + oobCode
-  // (the latter is what Firebase appends to the configured Action URL).
-  if (isPasswordResetRequest()) {
-    return <Suspense fallback={<LoadingSpinner selection="random" label="Opening password reset" />}><ResetPasswordPage /></Suspense>;
+  // Firebase email action links (password reset, email confirmation, email
+  // recovery) — handled before any auth gating so the student can land here
+  // whether or not they're signed in. See utils/authActionLink.ts.
+  if (isAuthActionRequest()) {
+    return <Suspense fallback={<LoadingSpinner selection="random" label="Opening your link" />}><AuthActionPage /></Suspense>;
   }
 
   // Auth gate: show branded loading until userResolved, then decide login vs app.
