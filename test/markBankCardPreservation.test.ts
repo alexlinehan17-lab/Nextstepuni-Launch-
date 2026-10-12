@@ -757,8 +757,8 @@ const idHash = (ids: readonly string[]) => createHash('sha256')
 
 /* Art keeps its 462 pre-collapse IDs frozen (222 Higher + 240 Ordinary, the
  * original identity hashes above). The one-card-per-printed-task rule withdraws
- * the per-option cards of each printed choice (one named artist, work, building
- * or movement; any two of five headings); each withdrawn ID is an explicit
+ * the per-option cards of a printed choice whose options share one Topic Atlas
+ * heading, and every choose-two route; each withdrawn ID is an explicit
  * cardAliases.ts key resolving in one step to the card for its own part, so the
  * frozen identity = live Art IDs + Art alias keys. No Art card is added. */
 const artAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('art-'));
@@ -781,7 +781,7 @@ describe('Mark Bank card preservation', () => {
   it('collapses each Art printed choice to one card and resolves every withdrawn ID', () => {
     const higher = new Map(ART_HIGHER.map(card => [card.id, card]));
     const ordinary = new Map(ART_ORDINARY.map(card => [card.id, card]));
-    expect(artAliasIds).toHaveLength(126);
+    expect(artAliasIds).toHaveLength(68);
     for (const oldId of artAliasIds) {
       const canonical = CARD_ID_ALIASES[oldId];
       const deck = oldId.includes('-hl-') ? higher : ordinary;
@@ -791,7 +791,7 @@ describe('Mark Bank card preservation', () => {
       expect(canonical.slice(0, 12), `${oldId} must stay in its year and level`).toBe(oldId.slice(0, 12));
     }
     const aliased = (level: string) => artAliasIds.filter(id => id.includes(level)).length;
-    expect([aliased('-hl-'), aliased('-ol-')]).toEqual([62, 64]);
+    expect([aliased('-hl-'), aliased('-ol-')]).toEqual([20, 48]);
     expect(ART_HIGHER).toHaveLength(222 - aliased('-hl-'));
     expect(ART_ORDINARY).toHaveLength(240 - aliased('-ol-'));
   });
@@ -821,8 +821,8 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    // 54 earlier consolidations + 126 Art per-option cards (2026-10-12).
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(180);
+    // 54 earlier consolidations + 68 Art per-option cards (2026-10-12).
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(122);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);

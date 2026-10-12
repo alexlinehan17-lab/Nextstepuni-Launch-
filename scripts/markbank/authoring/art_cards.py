@@ -12,13 +12,17 @@ the two tasks separated by the legacy paper's standalone "and" are split.  When
 the student chooses among printed items (one named artist, work, building or
 movement; any two of five headings), the task is ONE card: its question is the
 printed question with every option, and the scheme marks every option the same
-way.  The four-criterion Section B/C essay remains intact because the SEC
-applies that rubric holistically.
+way.  The exception is a choose-one list whose options sit under different
+Topic Atlas headings (OPTION_TOPICS): it keeps one card per option, each with
+the printed question verbatim and the option named in its reference, so each
+files under its own heading.  A choose-N (N >= 2) list is always one card.  The
+four-criterion Section B/C essay remains intact because the SEC applies that
+rubric holistically.
 
-The complete corpus is therefore 336 cards across ten papers:
+The complete corpus is therefore 394 cards across ten papers:
 
-  * Higher Level:   41 + 41 + 26 + 26 + 26 = 160 cards
-  * Ordinary Level: 49 + 49 + 26 + 26 + 26 = 176 cards
+  * Higher Level:   62 + 62 + 26 + 26 + 26 = 202 cards
+  * Ordinary Level: 57 + 57 + 26 + 26 + 26 = 192 cards
 
 Run:
 
@@ -69,10 +73,10 @@ EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
 }
 
 EXPECTED_CARDS_BY_YEAR_LEVEL = {
-    (2021, 'higher'): 41,
-    (2021, 'ordinary'): 49,
-    (2022, 'higher'): 41,
-    (2022, 'ordinary'): 49,
+    (2021, 'higher'): 62,
+    (2021, 'ordinary'): 57,
+    (2022, 'higher'): 62,
+    (2022, 'ordinary'): 57,
     (2023, 'higher'): 26,
     (2023, 'ordinary'): 26,
     (2024, 'higher'): 26,
@@ -180,6 +184,40 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
         ('bauhaus', 'Bauhaus'),
         ('surrealism', 'Surrealism'),
     ),
+}
+
+# A choose-one list whose options sit under DIFFERENT Topic Atlas headings
+# keeps one card per option, so each files under its own heading. These are
+# the legacy Section II questions the Atlas can only file as "Section B:
+# Generic Questions" because their options span periods. Each option's heading
+# is editorial, from the dates and movements the paper prints; an option no
+# current heading covers (Neoclassicism, Romanticism) stays generic. Lists
+# whose options share one heading (2025 HL Q12, all Modernism; the Irish Q7
+# artists; the Georgian buildings) remain one card.
+OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
+    (2021, 'higher', 14): {
+        'jan-van-eyck': 'art-4-1', 'el-greco': 'art-4-1', 'ingres': 'art-4-6',
+        'paul-gauguin': 'art-4-3', 'henry-moore': 'art-4-4',
+    },
+    (2021, 'higher', 15): {
+        'baroque': 'art-4-2', 'rococo': 'art-4-2', 'cubism': 'art-4-4', 'futurism': 'art-4-4',
+    },
+    (2021, 'ordinary', 14): {
+        'arnolfini-portrait': 'art-4-1', 'taking-of-christ': 'art-4-2', 'night-watch': 'art-4-2',
+        'van-goghs-bedroom': 'art-4-3', 'madame-matisse-green-line': 'art-4-4',
+    },
+    (2022, 'higher', 14): {
+        'paolo-uccello': 'art-4-1', 'diego-velazquez': 'art-4-2', 'jmw-turner': 'art-4-6',
+        'edvard-munch': 'art-4-4', 'pablo-picasso': 'art-4-4',
+    },
+    (2022, 'higher', 15): {
+        'international-gothic': 'art-4-0', 'impressionism': 'art-4-3',
+        'die-brucke': 'art-4-4', 'surrealism': 'art-4-4',
+    },
+    (2022, 'ordinary', 14): {
+        'mary-magdalene': 'art-4-1', 'girl-with-a-pearl-earring': 'art-4-2',
+        'death-of-marat': 'art-4-6', 'bar-at-the-folies-bergere': 'art-4-3', 'the-scream': 'art-4-4',
+    },
 }
 
 # A closed "choose N" instruction inside one marked task (any two of five
@@ -1003,10 +1041,17 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
     choices = PRINTED_CHOICES.get((year, level, number), ())
     if choices:
         verify_printed_choices(outer['questionText'], choices)
-    # One card per printed task, whatever the student chooses inside it. The
-    # first option's key keeps the established id.
-    variants: tuple[tuple[str | None, str | None], ...] = (
-        ((choices[0][0], None),) if choices else ((None, None),))
+    option_topics = OPTION_TOPICS.get((year, level, number))
+    if option_topics is not None:
+        if set(option_topics) != {slug for slug, _ in choices}:
+            raise AssertionError(f"{outer['id']}: option topics do not match the printed choices")
+        # Options under different Atlas headings: one card per option, each
+        # with the printed question verbatim and the option in its reference.
+        variants: tuple[tuple[str | None, str | None], ...] = tuple(choices)
+    else:
+        # One card per printed task, whatever the student chooses inside it.
+        # The first option's key keeps the established id.
+        variants = ((choices[0][0], None),) if choices else ((None, None),)
     expanded: list[dict[str, Any]] = []
 
     for choice_slug, choice_label in variants:
@@ -1079,6 +1124,8 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
                     stem_parts.append(stem)
 
                 reference = f"{outer['questionRef']}{unit['reference']}"
+                if choice_label:
+                    reference += f' · {choice_label}'
 
                 concept_suffixes = [suffix]
                 if choice_slug:
@@ -1089,6 +1136,7 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
                     **outer,
                     'id': card_id,
                     'questionRef': reference,
+                    'topicId': option_topics[choice_slug] if choice_label else outer['topicId'],
                     'questionText': question_text,
                     'conceptId': f"{outer['conceptId']}-{'-'.join(concept_suffixes)}",
                     'taskRequirements': [compact_requirement(question_text)],

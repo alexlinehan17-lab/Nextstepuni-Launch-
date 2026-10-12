@@ -10,24 +10,24 @@ import { artMarks, suggestRubricGrade } from '../components/MarkBank/SessionScre
 const CARDS = [...HIGHER, ...ORDINARY];
 
 describe('complete 2021–2025 Art corpus', () => {
-  it('cards every separately marked task on all ten papers, one card per printed choice', () => {
-    expect(HIGHER).toHaveLength(160);
-    expect(ORDINARY).toHaveLength(176);
-    expect(CARDS).toHaveLength(336);
-    expect(new Set(CARDS.map(card => card.id)).size).toBe(336);
+  it('cards every separately marked task on all ten papers', () => {
+    expect(HIGHER).toHaveLength(202);
+    expect(ORDINARY).toHaveLength(192);
+    expect(CARDS).toHaveLength(394);
+    expect(new Set(CARDS.map(card => card.id)).size).toBe(394);
 
     const censusIds = census.papers.flatMap(paper => paper.cards.map(card => card.cardId));
     expect([...CARDS.map(card => card.id)].sort()).toEqual([...censusIds].sort());
     expect(census.papers).toHaveLength(10);
-    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(336);
+    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(394);
   });
 
   it('keeps the audited task census for each paper', () => {
     const expected = {
-      '2021-higher': 41,
-      '2021-ordinary': 49,
-      '2022-higher': 41,
-      '2022-ordinary': 49,
+      '2021-higher': 62,
+      '2021-ordinary': 57,
+      '2022-higher': 62,
+      '2022-ordinary': 57,
       '2023-higher': 26,
       '2023-ordinary': 26,
       '2024-higher': 26,
@@ -42,7 +42,7 @@ describe('complete 2021–2025 Art corpus', () => {
     }
   });
 
-  it('splits separately marked parts but keeps each printed choice as one card', () => {
+  it('splits separately marked parts and keeps a printed choice as one card unless its options span Atlas headings', () => {
     const legacy = HIGHER.filter(card => card.id.startsWith('art-2021-hl-q1-task'));
     expect(legacy.map(card => card.totalMarks)).toEqual([30, 20]);
     expect(legacy.reduce((sum, card) => sum + card.totalMarks, 0)).toBe(50);
@@ -65,10 +65,25 @@ describe('complete 2021–2025 Art corpus', () => {
     expect(embroidery[0].totalMarks).toBe(6);
     expect(ORDINARY.filter(card => card.id === 'art-2025-ol-q4-b')).toHaveLength(1);
 
-    // A named-artist choice keeps every printed artist on its one card.
+    // A named-artist choice under one heading keeps every printed artist on its one card.
     const artists = HIGHER.find(card => card.questionRef === '2022 HL Q7')!;
     for (const artist of ['James Barry (1741-1806)', 'Colin Davidson (b.1968)']) {
       expect(artists.questionText).toContain(artist);
+    }
+
+    // Options under different Atlas headings keep a card each: the printed
+    // question verbatim, the option in the reference, its own heading.
+    const movements2021 = HIGHER.filter(card => card.questionRef.startsWith('2021 HL Q15(a) · '));
+    expect(movements2021.map(card => card.questionRef.split(' · ')[1])).toEqual(['Baroque', 'Rococo', 'Cubism', 'Futurism']);
+    expect(new Set(movements2021.map(card => card.questionText)).size).toBe(1);
+    expect(movements2021[0].questionText).toContain('one of the following art styles or movements');
+    expect(movements2021.map(card => card.topicId)).toEqual(['art-4-2', 'art-4-2', 'art-4-4', 'art-4-4']);
+    for (const ref of ['2021 HL Q14(a)', '2021 HL Q15(a)', '2022 HL Q14(a)', '2022 HL Q15(a)', '2021 OL Q14(a)', '2022 OL Q14(a)']) {
+      const [year, level] = [Number(ref.slice(0, 4)), ref.includes(' HL ') ? 'higher' : 'ordinary'];
+      const family = CARDS.filter(card => card.year === year && card.level === level && card.questionRef.startsWith(`${ref} · `));
+      expect(family.length, ref).toBeGreaterThan(1);
+      expect(new Set(family.map(card => card.topicId)).size, ref).toBeGreaterThan(1);
+      expect(new Set(family.map(card => card.questionText)).size, ref).toBe(1);
     }
 
     // Guard: no two cards for one printed task (same paper and question).

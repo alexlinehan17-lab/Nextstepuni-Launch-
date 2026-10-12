@@ -13,16 +13,16 @@
   ],
   "selectionUnit": "One card per separately marked printed task. Where the student chooses among printed items, the task is one card showing every option; holistic Section B/C essays remain intact.",
   "expectedCards": {
-    "higher": 160,
-    "ordinary": 176,
-    "total": 336
+    "higher": 202,
+    "ordinary": 192,
+    "total": 394
   },
   "papers": [
     {
       "year": 2021,
       "level": "higher",
       "paperFileid": "LC014ALP000EV",
-      "expectedCards": 41,
+      "expectedCards": 62,
       "cards": [
         {
           "number": 1,
@@ -252,7 +252,7 @@
         {
           "number": 14,
           "cardId": "art-2021-hl-q14-a-jan-van-eyck",
-          "questionRef": "2021 HL Q14(a)",
+          "questionRef": "2021 HL Q14(a) · Jan van Eyck (c.1390-1441)",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 5,
@@ -261,7 +261,7 @@
         {
           "number": 14,
           "cardId": "art-2021-hl-q14-b-jan-van-eyck",
-          "questionRef": "2021 HL Q14(b)",
+          "questionRef": "2021 HL Q14(b) · Jan van Eyck (c.1390-1441)",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 20,
@@ -270,7 +270,115 @@
         {
           "number": 14,
           "cardId": "art-2021-hl-q14-c-jan-van-eyck",
-          "questionRef": "2021 HL Q14(c)",
+          "questionRef": "2021 HL Q14(c) · Jan van Eyck (c.1390-1441)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-a-el-greco",
+          "questionRef": "2021 HL Q14(a) · El Greco (1541-1614)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-b-el-greco",
+          "questionRef": "2021 HL Q14(b) · El Greco (1541-1614)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-c-el-greco",
+          "questionRef": "2021 HL Q14(c) · El Greco (1541-1614)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-a-ingres",
+          "questionRef": "2021 HL Q14(a) · Jean-Auguste-Dominique Ingres (1780-1867)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-b-ingres",
+          "questionRef": "2021 HL Q14(b) · Jean-Auguste-Dominique Ingres (1780-1867)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-c-ingres",
+          "questionRef": "2021 HL Q14(c) · Jean-Auguste-Dominique Ingres (1780-1867)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-a-paul-gauguin",
+          "questionRef": "2021 HL Q14(a) · Paul Gauguin (1848-1903)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-b-paul-gauguin",
+          "questionRef": "2021 HL Q14(b) · Paul Gauguin (1848-1903)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-c-paul-gauguin",
+          "questionRef": "2021 HL Q14(c) · Paul Gauguin (1848-1903)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-a-henry-moore",
+          "questionRef": "2021 HL Q14(a) · Henry Moore (1898-1986)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-b-henry-moore",
+          "questionRef": "2021 HL Q14(b) · Henry Moore (1898-1986)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-hl-q14-c-henry-moore",
+          "questionRef": "2021 HL Q14(c) · Henry Moore (1898-1986)",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 25,
@@ -279,7 +387,7 @@
         {
           "number": 15,
           "cardId": "art-2021-hl-q15-a-baroque",
-          "questionRef": "2021 HL Q15(a)",
+          "questionRef": "2021 HL Q15(a) · Baroque",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 10,
@@ -288,7 +396,7 @@
         {
           "number": 15,
           "cardId": "art-2021-hl-q15-b-baroque",
-          "questionRef": "2021 HL Q15(b)",
+          "questionRef": "2021 HL Q15(b) · Baroque",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 10,
@@ -297,7 +405,88 @@
         {
           "number": 15,
           "cardId": "art-2021-hl-q15-c-baroque",
-          "questionRef": "2021 HL Q15(c)",
+          "questionRef": "2021 HL Q15(c) · Baroque",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2021-hl-q15-a-rococo",
+          "questionRef": "2021 HL Q15(a) · Rococo",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2021-hl-q15-b-rococo",
+          "questionRef": "2021 HL Q15(b) · Rococo",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2021-hl-q15-c-rococo",
+          "questionRef": "2021 HL Q15(c) · Rococo",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2021-hl-q15-a-cubism",
+          "questionRef": "2021 HL Q15(a) · Cubism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2021-hl-q15-b-cubism",
+          "questionRef": "2021 HL Q15(b) · Cubism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2021-hl-q15-c-cubism",
+          "questionRef": "2021 HL Q15(c) · Cubism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2021-hl-q15-a-futurism",
+          "questionRef": "2021 HL Q15(a) · Futurism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2021-hl-q15-b-futurism",
+          "questionRef": "2021 HL Q15(b) · Futurism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2021-hl-q15-c-futurism",
+          "questionRef": "2021 HL Q15(c) · Futurism",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 30,
@@ -399,7 +588,7 @@
       "year": 2021,
       "level": "ordinary",
       "paperFileid": "LC014GLP000EV",
-      "expectedCards": 49,
+      "expectedCards": 57,
       "cards": [
         {
           "number": 1,
@@ -701,7 +890,7 @@
         {
           "number": 14,
           "cardId": "art-2021-ol-q14-a-arnolfini-portrait",
-          "questionRef": "2021 OL Q14(a)",
+          "questionRef": "2021 OL Q14(a) · ‘The Arnolfini Portrait’ by Jan van Eyck (c.1390-1441)",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 25,
@@ -710,7 +899,79 @@
         {
           "number": 14,
           "cardId": "art-2021-ol-q14-b-arnolfini-portrait",
-          "questionRef": "2021 OL Q14(b)",
+          "questionRef": "2021 OL Q14(b) · ‘The Arnolfini Portrait’ by Jan van Eyck (c.1390-1441)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-ol-q14-a-taking-of-christ",
+          "questionRef": "2021 OL Q14(a) · ‘The Taking of Christ’ by Caravaggio (1571-1610)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-ol-q14-b-taking-of-christ",
+          "questionRef": "2021 OL Q14(b) · ‘The Taking of Christ’ by Caravaggio (1571-1610)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-ol-q14-a-night-watch",
+          "questionRef": "2021 OL Q14(a) · ‘Night Watch’ by Rembrandt van Rijn (1606-1669)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-ol-q14-b-night-watch",
+          "questionRef": "2021 OL Q14(b) · ‘Night Watch’ by Rembrandt van Rijn (1606-1669)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-ol-q14-a-van-goghs-bedroom",
+          "questionRef": "2021 OL Q14(a) · ‘Van Gogh’s Bedroom in Arles’ by Vincent van Gogh (1853-1890)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-ol-q14-b-van-goghs-bedroom",
+          "questionRef": "2021 OL Q14(b) · ‘Van Gogh’s Bedroom in Arles’ by Vincent van Gogh (1853-1890)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-ol-q14-a-madame-matisse-green-line",
+          "questionRef": "2021 OL Q14(a) · ‘Portrait of Madame Matisse. The Green Line, 1905’ by Henri Matisse (1869-1954)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2021-ol-q14-b-madame-matisse-green-line",
+          "questionRef": "2021 OL Q14(b) · ‘Portrait of Madame Matisse. The Green Line, 1905’ by Henri Matisse (1869-1954)",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 25,
@@ -848,7 +1109,7 @@
       "year": 2022,
       "level": "higher",
       "paperFileid": "LC014ALP000EV",
-      "expectedCards": 41,
+      "expectedCards": 62,
       "cards": [
         {
           "number": 1,
@@ -1078,7 +1339,7 @@
         {
           "number": 14,
           "cardId": "art-2022-hl-q14-a-paolo-uccello",
-          "questionRef": "2022 HL Q14(a)",
+          "questionRef": "2022 HL Q14(a) · Paolo Uccello (c.1397-1475)",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 5,
@@ -1087,7 +1348,7 @@
         {
           "number": 14,
           "cardId": "art-2022-hl-q14-b-paolo-uccello",
-          "questionRef": "2022 HL Q14(b)",
+          "questionRef": "2022 HL Q14(b) · Paolo Uccello (c.1397-1475)",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 20,
@@ -1096,7 +1357,115 @@
         {
           "number": 14,
           "cardId": "art-2022-hl-q14-c-paolo-uccello",
-          "questionRef": "2022 HL Q14(c)",
+          "questionRef": "2022 HL Q14(c) · Paolo Uccello (c.1397-1475)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-a-diego-velazquez",
+          "questionRef": "2022 HL Q14(a) · Diego Velázquez (1599-1660)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-b-diego-velazquez",
+          "questionRef": "2022 HL Q14(b) · Diego Velázquez (1599-1660)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-c-diego-velazquez",
+          "questionRef": "2022 HL Q14(c) · Diego Velázquez (1599-1660)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-a-jmw-turner",
+          "questionRef": "2022 HL Q14(a) · J.M.W. Turner (1775-1851)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-b-jmw-turner",
+          "questionRef": "2022 HL Q14(b) · J.M.W. Turner (1775-1851)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-c-jmw-turner",
+          "questionRef": "2022 HL Q14(c) · J.M.W. Turner (1775-1851)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-a-edvard-munch",
+          "questionRef": "2022 HL Q14(a) · Edvard Munch (1863-1944)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-b-edvard-munch",
+          "questionRef": "2022 HL Q14(b) · Edvard Munch (1863-1944)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-c-edvard-munch",
+          "questionRef": "2022 HL Q14(c) · Edvard Munch (1863-1944)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-a-pablo-picasso",
+          "questionRef": "2022 HL Q14(a) · Pablo Picasso (1881-1973)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-b-pablo-picasso",
+          "questionRef": "2022 HL Q14(b) · Pablo Picasso (1881-1973)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-hl-q14-c-pablo-picasso",
+          "questionRef": "2022 HL Q14(c) · Pablo Picasso (1881-1973)",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 25,
@@ -1105,7 +1474,7 @@
         {
           "number": 15,
           "cardId": "art-2022-hl-q15-a-international-gothic",
-          "questionRef": "2022 HL Q15(a)",
+          "questionRef": "2022 HL Q15(a) · International Gothic",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 10,
@@ -1114,7 +1483,7 @@
         {
           "number": 15,
           "cardId": "art-2022-hl-q15-b-international-gothic",
-          "questionRef": "2022 HL Q15(b)",
+          "questionRef": "2022 HL Q15(b) · International Gothic",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 10,
@@ -1123,7 +1492,88 @@
         {
           "number": 15,
           "cardId": "art-2022-hl-q15-c-international-gothic",
-          "questionRef": "2022 HL Q15(c)",
+          "questionRef": "2022 HL Q15(c) · International Gothic",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2022-hl-q15-a-impressionism",
+          "questionRef": "2022 HL Q15(a) · Impressionism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2022-hl-q15-b-impressionism",
+          "questionRef": "2022 HL Q15(b) · Impressionism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2022-hl-q15-c-impressionism",
+          "questionRef": "2022 HL Q15(c) · Impressionism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2022-hl-q15-a-die-brucke",
+          "questionRef": "2022 HL Q15(a) · Die Brücke",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2022-hl-q15-b-die-brucke",
+          "questionRef": "2022 HL Q15(b) · Die Brücke",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2022-hl-q15-c-die-brucke",
+          "questionRef": "2022 HL Q15(c) · Die Brücke",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2022-hl-q15-a-surrealism",
+          "questionRef": "2022 HL Q15(a) · Surrealism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2022-hl-q15-b-surrealism",
+          "questionRef": "2022 HL Q15(b) · Surrealism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2022-hl-q15-c-surrealism",
+          "questionRef": "2022 HL Q15(c) · Surrealism",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 30,
@@ -1225,7 +1675,7 @@
       "year": 2022,
       "level": "ordinary",
       "paperFileid": "LC014GLP000EV",
-      "expectedCards": 49,
+      "expectedCards": 57,
       "cards": [
         {
           "number": 1,
@@ -1527,7 +1977,7 @@
         {
           "number": 14,
           "cardId": "art-2022-ol-q14-a-mary-magdalene",
-          "questionRef": "2022 OL Q14(a)",
+          "questionRef": "2022 OL Q14(a) · ‘Mary Magdalene’ by Donatello (c.1386-1466)",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 30,
@@ -1536,7 +1986,79 @@
         {
           "number": 14,
           "cardId": "art-2022-ol-q14-b-mary-magdalene",
-          "questionRef": "2022 OL Q14(b)",
+          "questionRef": "2022 OL Q14(b) · ‘Mary Magdalene’ by Donatello (c.1386-1466)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-ol-q14-a-girl-with-a-pearl-earring",
+          "questionRef": "2022 OL Q14(a) · ‘Girl with a Pearl Earring’ by Johannes Vermeer (1632-1675)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-ol-q14-b-girl-with-a-pearl-earring",
+          "questionRef": "2022 OL Q14(b) · ‘Girl with a Pearl Earring’ by Johannes Vermeer (1632-1675)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-ol-q14-a-death-of-marat",
+          "questionRef": "2022 OL Q14(a) · ‘The Death of Marat’ by Jacques-Louis David (1748-1825)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-ol-q14-b-death-of-marat",
+          "questionRef": "2022 OL Q14(b) · ‘The Death of Marat’ by Jacques-Louis David (1748-1825)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-ol-q14-a-bar-at-the-folies-bergere",
+          "questionRef": "2022 OL Q14(a) · ‘A Bar at the Folies-Bergère’ by Edouard Manet (1832-1883)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-ol-q14-b-bar-at-the-folies-bergere",
+          "questionRef": "2022 OL Q14(b) · ‘A Bar at the Folies-Bergère’ by Edouard Manet (1832-1883)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-ol-q14-a-the-scream",
+          "questionRef": "2022 OL Q14(a) · ‘The Scream’ by Edvard Munch (1863-1944)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2022-ol-q14-b-the-scream",
+          "questionRef": "2022 OL Q14(b) · ‘The Scream’ by Edvard Munch (1863-1944)",
           "section": "2",
           "paperPage": 5,
           "totalMarks": 20,
