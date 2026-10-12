@@ -751,6 +751,16 @@
     "english-6-0",
     "english-12-24"
    ]
+  },
+  {
+   "id": "english-higher-poetry-kennelly-reviewed-archive",
+   "level": "higher",
+   "slug": "poetry-kennelly",
+   "label": "Poetry - Kennelly",
+   "curriculumNodeIds": [
+    "english-8-0",
+    "english-11-12"
+   ]
   }
  ]
 }

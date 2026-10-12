@@ -4165,6 +4165,39 @@
       "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
       "questionSha256": "68f78e9e1d7fc92f6aeabccac447d470c806df50727c5f259586b8153a8d0d4a",
       "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2022-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Voice You Hear When You Read Silently",
+      "pages": [
+        6
+      ],
+      "attribution": "The Voice You Hear When You Read Silently — Thomas Lux, as reproduced in the SEC 2022 paper.",
+      "questionSha256": "e8785f5cf669a8b6445e96d4ba28667fdd4123c4e8d0f7a03b7e6b13bda77926",
+      "reason": "Paper PDF6 prints the introduction (Thomas Lux considers the process of silent reading), the instruction to answer either Question 1 or Question 2, the title, the whole poem in two columns with its printed line numbers (10, 20, 30, 40), the byline and the gloss “*Chirr – a shrill, trilling sound”; visually verified."
+    },
+    "english-2022-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Voice You Hear When You Read Silently",
+      "pages": [
+        6
+      ],
+      "attribution": "The Voice You Hear When You Read Silently — Thomas Lux, as reproduced in the SEC 2022 paper.",
+      "questionSha256": "c2d5edb9e47afef059b19d6d5334c0dcf23acb4af47bdeae29d8b7bf38e73939",
+      "reason": "Paper PDF6 prints the introduction (Thomas Lux considers the process of silent reading), the instruction to answer either Question 1 or Question 2, the title, the whole poem in two columns with its printed line numbers (10, 20, 30, 40), the byline and the gloss “*Chirr – a shrill, trilling sound”; visually verified."
+    },
+    "english-2022-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Voice You Hear When You Read Silently",
+      "pages": [
+        6
+      ],
+      "attribution": "The Voice You Hear When You Read Silently — Thomas Lux, as reproduced in the SEC 2022 paper.",
+      "questionSha256": "5792ccb4aba8674c35d4047bcbe82def9f04919fd95af0757eb3b2153f97f517",
+      "reason": "Paper PDF6 prints the introduction (Thomas Lux considers the process of silent reading), the instruction to answer either Question 1 or Question 2, the title, the whole poem in two columns with its printed line numbers (10, 20, 30, 40), the byline and the gloss “*Chirr – a shrill, trilling sound”; visually verified."
     }
   }
 }

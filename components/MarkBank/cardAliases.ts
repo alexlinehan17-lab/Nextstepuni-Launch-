@@ -13,6 +13,10 @@
 export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "chem-2023-ol-q10-a-iii-iv-fig": "chem-2023-ol-q10-a-iii-iv",
   "chem-2023-ol-q6-b-i-iv": "chem-2023-ol-q6-b",
+  "english-2022-hl-p2-comparative-a-q1": "english-2022-hl-p2-comparative-a-q1-a",
+  "english-2022-hl-p2-comparative-b-q1": "english-2022-hl-p2-comparative-b-q1-a",
+  "english-2022-hl-p2-comparative-c-q1": "english-2022-hl-p2-comparative-c-q1-a",
+  "english-2022-hl-p2-unseen-q1": "english-2022-hl-p2-unseen-q1-a",
   "english-2022-ol-p1-t2-a-iii-a": "english-2022-ol-p1-t1-a-iii-a",
   "english-2022-ol-p1-t2-a-iii-b": "english-2022-ol-p1-t1-a-iii-b",
   "english-2022-ol-p1-t3-a-iii-a": "english-2022-ol-p1-t1-a-iii-a",

@@ -272,8 +272,12 @@ class EnglishLegacyBridgeTest(unittest.TestCase):
         self.assertEqual({modes[f'english-2024-hl-p2-comparative-{m}-q1-{p}'] for m in 'abc' for p in 'ab'}, {'combined'})
         rows_2023 = self.bridge['papers']['english-2023-hl-p2']['legacyCards']['english-2023-hl-p2-comparative-c-q1']['correction']['rows']
         self.assertEqual([(row['schemePage'], row['schemeRow'][24:31]) for row in rows_2023], [(39, '30 - 27'), (40, '40 - 36')])
-        modes_2023 = {c['id']: c['assessment']['mode'] for c in manifest['cards'] if c['id'].startswith('english-2023-hl-p2-comparative-')}
-        self.assertEqual({modes_2023[f'english-2023-hl-p2-comparative-{m}-q1-{p}'] for m in 'abc' for p in 'ab'}, {'combined'})
+        for year in (2022, 2023):
+            modes_year = {c['id']: c['assessment']['mode'] for c in manifest['cards']
+                          if c['id'].startswith(f'english-{year}-hl-p2-comparative-')}
+            self.assertEqual({modes_year[f'english-{year}-hl-p2-comparative-{m}-q1-{p}'] for m in 'abc' for p in 'ab'}, {'combined'})
+            entries_year = self.bridge['papers'][f'english-{year}-hl-p2']['legacyCards']
+            self.assertEqual({len(entries_year[f'english-{year}-hl-p2-comparative-{m}-q1']['correction']['rows']) for m in 'abc'}, {2})
         bridge = copy.deepcopy(self.bridge['papers']['english-2024-hl-p2'])
         bridge['legacyCards']['english-2024-hl-p2-comparative-a-q1']['correction']['rows'][0]['schemeRow'] = 'H1 30 – 26'
         with self.assertRaisesRegex(ValueError, 'corrected scheme row not printed'):
