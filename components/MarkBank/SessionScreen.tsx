@@ -890,7 +890,9 @@ const PclmRubricPanel: React.FC<{
           {assessment.mode !== 'composite' && assessment.printedGrid && (
             <> The grid and cap rule are the ones the {assessment.printedGrid.sitting.split('-')[0]} scheme
             printed (marking scheme {assessment.printedGrid.schemePages.length > 1 ? 'pp.' : 'p.'}
-            {assessment.printedGrid.schemePages.join('–')}).</>
+            {assessment.printedGrid.schemePages
+              .map((page, index, pages) => (index === 0 ? '' : page === pages[index - 1] + 1 ? '–' : ', ') + page)
+              .join('')}).</>
           )}
         </p>
 
