@@ -61,11 +61,13 @@ def assert_prior_cards_preserved(prior_hashes, by_id):
     for cid, digest in prior_hashes.items():
         if cid not in by_id:
             w = gone.get(cid)
-            assert w and w['priorSha256'] == digest, ('missing without a recorded withdrawal', cid)
+            # A card corrected in place before its withdrawal is matched by either recorded hash.
+            assert w and digest in (w['priorSha256'], w.get('preCorrectionSha256')), ('missing without a recorded withdrawal', cid)
             if w.get('aliasOf'):
                 assert w['aliasOf'] in by_id and aliases.get(cid) == w['aliasOf'], ('alias not live', cid)
             continue
         actual = card_hash(by_id[cid])
         if actual != digest:
             fix = fixes.get(cid)
-            assert fix and fix['priorSha256'] == digest and fix['correctedSha256'] == actual, cid
+            # A card corrected in place more than once also matches the hashes its earlier corrections produced.
+            assert fix and digest in (fix['priorSha256'], *fix.get('supersededSha256', [])) and fix['correctedSha256'] == actual, cid

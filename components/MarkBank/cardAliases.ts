@@ -114,5 +114,11 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "econ-2025-ol-q16-b-i-ind": "econ-2025-ol-q16-b-i-ag",
   "econ-2024-ol-sa-q1-ii": "econ-2024-ol-sa-q1-i",
   "econ-2024-ol-sa-q8-ii": "econ-2024-ol-sa-q8-i",
-  "econ-2024-ol-q16-b-ii-dis": "econ-2024-ol-q16-b-ii-adv"
+  "econ-2024-ol-q16-b-ii-dis": "econ-2024-ol-q16-b-ii-adv",
+  /* 2026-10-12. Construction Studies: a printed choose-N-of-M is one card, not a card per item
+   * (coordinator rule "choice is not a route"). These pre-audit per-item cards are consolidated
+   * into the surviving card for the same printed part; progress goes to it. */
+  "cons-2025-hl-q2-a-health-and-safety-officer": "cons-2025-hl-q2-a-safety-training",
+  "cons-2025-hl-q2-a-risk-assessment-audit": "cons-2025-hl-q2-a-safety-training",
+  "cons-2025-hl-q10-a-foundation-design": "cons-2025-hl-q10-a-building-form",
 };

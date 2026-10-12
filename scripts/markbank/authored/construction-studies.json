@@ -23069,123 +23069,29 @@
     "section": "B",
     "topicId": "cons-1-8",
     "conceptId": "maintaining-a-health-and-safety-culture-safety-training",
-    "questionRef": "2025 HL Q2(a) — safety training",
+    "questionRef": "2025 HL Q2(a)",
     "stem": "",
-    "questionText": "Discuss in detail the importance of the following in maintaining a positive health and safety culture among workers on a construction site: safety training.",
+    "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site: safety training; health and safety officer; risk assessment audit.",
     "tariffModel": {
       "kind": "fixed"
     },
-    "totalMarks": 6,
+    "totalMarks": 12,
     "rows": [
       {
         "id": "importance",
-        "kind": "criterion",
-        "verbatim": "Safety training",
-        "marks": 6,
-        "contextNote": "Discuss the importance of safety training. Such as: Safe Pass is mandatory and kept current through refresher courses; training builds awareness of site risks and the skills to identify them and follow best practice; specialist tickets for machinery and vehicles; monitoring and enforcing safe work practices; it may be a condition of the insurance provider.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q2-original",
-    "questionFigureIncludesPrompt": true,
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 2",
-      "title": "Health and safety on a construction site",
-      "pages": [
-        1,
-        2
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original question retained. Part (a) chooses any two of three printed items; parts (b) and (c) require all three activities, each separately priced. The scheme lists typical points, not an exhaustive list."
-    }
-  },
-  {
-    "id": "cons-2025-hl-q2-a-health-and-safety-officer",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-1-8",
-    "conceptId": "maintaining-a-health-and-safety-culture-health-and-safety-officer",
-    "questionRef": "2025 HL Q2(a) — health and safety officer",
-    "stem": "",
-    "questionText": "Discuss in detail the importance of the following in maintaining a positive health and safety culture among workers on a construction site: health and safety officer.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 6,
-    "rows": [
-      {
-        "id": "importance",
-        "kind": "criterion",
-        "verbatim": "Health and safety officer",
-        "marks": 6,
-        "contextNote": "Discuss the importance of health and safety officer. Such as: provides induction and ongoing training (working at heights, machinery use); develops emergency response plans; keeps first aid and emergency equipment available; ensures the correct PPE is worn; carries out safety inspections and risk assessments; reviews the safety statement; investigates, records and reports accidents.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q2-original",
-    "questionFigureIncludesPrompt": true,
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 2",
-      "title": "Health and safety on a construction site",
-      "pages": [
-        1,
-        2
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original question retained. Part (a) chooses any two of three printed items; parts (b) and (c) require all three activities, each separately priced. The scheme lists typical points, not an exhaustive list."
-    }
-  },
-  {
-    "id": "cons-2025-hl-q2-a-risk-assessment-audit",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-1-8",
-    "conceptId": "maintaining-a-health-and-safety-culture-risk-assessment-audit",
-    "questionRef": "2025 HL Q2(a) — risk assessment audit",
-    "stem": "",
-    "questionText": "Discuss in detail the importance of the following in maintaining a positive health and safety culture among workers on a construction site: risk assessment audit.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 6,
-    "rows": [
-      {
-        "id": "importance",
-        "kind": "criterion",
-        "verbatim": "Risk assessment audit",
-        "marks": 6,
-        "contextNote": "Discuss the importance of risk assessment audit. Such as: provides a safe working environment; evaluates compliance with safety regulations and policies; identifies hazards and puts control measures in place where a risk cannot be eliminated (for fire: alarms, evacuation signage, drills, extinguishers); recommends improvements; identifies training needs; reduces accidents and liability.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
+        "kind": "anyN",
+        "verbatim": "The importance of any two in maintaining a positive health and safety culture",
+        "marks": 12,
+        "contextNote": "Any two of the three, 6 each, discussing why each matters to a positive health and safety culture. Safety training: Safe Pass is mandatory and kept current through refresher courses; training builds awareness of site risks and the skills to identify them and follow best practice; specialist tickets for machinery and vehicles; monitoring and enforcing safe work practices; it may be a condition of the insurance provider. Health and safety officer: provides induction and ongoing training (working at heights, machinery use); develops emergency response plans; keeps first aid and emergency equipment available; ensures the correct PPE is worn; carries out safety inspections and risk assessments; reviews the safety statement; investigates, records and reports accidents. Risk assessment audit: provides a safe working environment; evaluates compliance with safety regulations and policies; identifies hazards and puts control measures in place where a risk cannot be eliminated (for fire: alarms, evacuation signage, drills, extinguishers); recommends improvements; identifies training needs; reduces accidents and liability.",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Safety training",
+            "Health and safety officer",
+            "Risk assessment audit"
+          ]
+        }
       }
     ],
     "questionFigureKey": "construction-studies-2025-HL-q2-original",
@@ -24090,110 +23996,33 @@
     "section": "B",
     "topicId": "cons-6-4",
     "conceptId": "passive-house-design-building-form",
-    "questionRef": "2025 HL Q10(a) — building form",
+    "questionRef": "2025 HL Q10(a)",
     "stem": "The sketch shows the proposed design of a Passive House which is to be constructed in a rural setting.",
-    "questionText": "Using notes and freehand sketches, discuss the importance of the following in Passive House design: building form.",
+    "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: building form; foundation design; space heating energy demand.",
     "tariffModel": {
       "kind": "fixed"
     },
-    "totalMarks": 10,
+    "totalMarks": 20,
     "rows": [
       {
-        "id": "notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of building form in Passive House design. Such as: a compact, simple rectangular form with the smallest surface area (A/V ratio 0.7 or less) to cut heat loss, materials and cost; a narrow plan, one room deep, to maximise solar gain; clean lines in walls and roof that make airtightness easy.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating building form.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
+        "id": "items",
+        "kind": "anyN",
+        "verbatim": "Discuss the importance of any two in Passive House design",
+        "marks": 20,
+        "contextNote": "Any two of the three, each notes 5 and sketches 5 = 10. Building form: a compact, simple rectangular form with the smallest surface area (A/V ratio 0.7 or less) to cut heat loss, materials and cost; a narrow plan, one room deep, to maximise solar gain; clean lines in walls and roof that make airtightness easy. Foundation design: insulated ring-beam or passive raft foundations wrapped in insulation to eliminate thermal bridging; thermal blocks in the inner-leaf rising wall; 50–100 mm edge insulation at the floor/wall junction; thermally broken wall ties; a U-value of 0.10–0.15 W/m²K. Space heating energy demand: passive house space-heating demand of no more than 15 kWh/m² per year; quality workmanship in airtightness and insulation; eliminating thermal bridges; solar gain through well-designed fenestration; solar shading, thermal mass and controlled ventilation to keep about 20 °C all year.",
+        "group": {
+          "claimMax": 2,
+          "perOption": 10,
+          "options": [
+            "Building form",
+            "Foundation design",
+            "Space heating energy demand"
+          ]
+        }
       }
     ],
     "questionFigureKey": "construction-studies-2025-HL-q10-original",
     "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q10-building-form",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 10",
-      "title": "Passive House in a rural setting",
-      "pages": [
-        1,
-        7
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
-    }
-  },
-  {
-    "id": "cons-2025-hl-q10-a-foundation-design",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-2",
-    "conceptId": "passive-house-design-foundation-design",
-    "questionRef": "2025 HL Q10(a) — foundation design",
-    "stem": "The sketch shows the proposed design of a Passive House which is to be constructed in a rural setting.",
-    "questionText": "Using notes and freehand sketches, discuss the importance of the following in Passive House design: foundation design.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of foundation design in Passive House design. Such as: insulated ring-beam or passive raft foundations wrapped in insulation to eliminate thermal bridging; thermal blocks in the inner-leaf rising wall; 50–100 mm edge insulation at the floor/wall junction; thermally broken wall ties; a U-value of 0.10–0.15 W/m²K.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating foundation design.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q10-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q10-foundation-design",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 10",
@@ -44623,249 +44452,6 @@
     ]
   },
   {
-    "id": "cons-2025-hl-q2-a-safety-training-and-health-and-safety-officer",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-1-8",
-    "conceptId": "site-safety-culture-a-safety-training-and-health-and-safety-officer",
-    "questionRef": "2025 HL Q2(a) — safety training and health and safety officer",
-    "stem": "",
-    "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site: safety training; health and safety officer.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 12,
-    "rows": [
-      {
-        "id": "a-safety-training-importance",
-        "kind": "criterion",
-        "verbatim": "Safety training",
-        "marks": 6,
-        "contextNote": "Discuss the importance of safety training. Such as: Safe Pass is mandatory and kept current through refresher courses; training builds awareness of site risks and the skills to identify them and follow best practice; specialist tickets for machinery and vehicles; monitoring and enforcing safe work practices; it may be a condition of the insurance provider.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "a-health-and-safety-officer-importance",
-        "kind": "criterion",
-        "verbatim": "Health and safety officer",
-        "marks": 6,
-        "contextNote": "Discuss the importance of health and safety officer. Such as: provides induction and ongoing training (working at heights, machinery use); develops emergency response plans; keeps first aid and emergency equipment available; ensures the correct PPE is worn; carries out safety inspections and risk assessments; reviews the safety statement; investigates, records and reports accidents.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q2-original",
-    "questionFigureIncludesPrompt": true,
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 2",
-      "title": "Health and safety on a construction site",
-      "pages": [
-        1,
-        2
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original question retained. Part (a) chooses any two of three printed items; parts (b) and (c) require all three activities, each separately priced. The scheme lists typical points, not an exhaustive list."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q2-a-safety-training",
-        "label": "safety training",
-        "marks": 6,
-        "rowIds": [
-          "a-safety-training-importance"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-a-health-and-safety-officer",
-        "label": "health and safety officer",
-        "marks": 6,
-        "rowIds": [
-          "a-health-and-safety-officer-importance"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q2-a-safety-training-and-risk-assessment-audit",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-1-8",
-    "conceptId": "site-safety-culture-a-safety-training-and-risk-assessment-audit",
-    "questionRef": "2025 HL Q2(a) — safety training and risk assessment audit",
-    "stem": "",
-    "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site: safety training; risk assessment audit.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 12,
-    "rows": [
-      {
-        "id": "a-safety-training-importance",
-        "kind": "criterion",
-        "verbatim": "Safety training",
-        "marks": 6,
-        "contextNote": "Discuss the importance of safety training. Such as: Safe Pass is mandatory and kept current through refresher courses; training builds awareness of site risks and the skills to identify them and follow best practice; specialist tickets for machinery and vehicles; monitoring and enforcing safe work practices; it may be a condition of the insurance provider.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "a-risk-assessment-audit-importance",
-        "kind": "criterion",
-        "verbatim": "Risk assessment audit",
-        "marks": 6,
-        "contextNote": "Discuss the importance of risk assessment audit. Such as: provides a safe working environment; evaluates compliance with safety regulations and policies; identifies hazards and puts control measures in place where a risk cannot be eliminated (for fire: alarms, evacuation signage, drills, extinguishers); recommends improvements; identifies training needs; reduces accidents and liability.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q2-original",
-    "questionFigureIncludesPrompt": true,
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 2",
-      "title": "Health and safety on a construction site",
-      "pages": [
-        1,
-        2
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original question retained. Part (a) chooses any two of three printed items; parts (b) and (c) require all three activities, each separately priced. The scheme lists typical points, not an exhaustive list."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q2-a-safety-training",
-        "label": "safety training",
-        "marks": 6,
-        "rowIds": [
-          "a-safety-training-importance"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-a-risk-assessment-audit",
-        "label": "risk assessment audit",
-        "marks": 6,
-        "rowIds": [
-          "a-risk-assessment-audit-importance"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q2-a-health-and-safety-officer-and-risk-assessment-audit",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-1-8",
-    "conceptId": "site-safety-culture-a-health-and-safety-officer-and-risk-assessment-audit",
-    "questionRef": "2025 HL Q2(a) — health and safety officer and risk assessment audit",
-    "stem": "",
-    "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site: health and safety officer; risk assessment audit.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 12,
-    "rows": [
-      {
-        "id": "a-health-and-safety-officer-importance",
-        "kind": "criterion",
-        "verbatim": "Health and safety officer",
-        "marks": 6,
-        "contextNote": "Discuss the importance of health and safety officer. Such as: provides induction and ongoing training (working at heights, machinery use); develops emergency response plans; keeps first aid and emergency equipment available; ensures the correct PPE is worn; carries out safety inspections and risk assessments; reviews the safety statement; investigates, records and reports accidents.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "a-risk-assessment-audit-importance",
-        "kind": "criterion",
-        "verbatim": "Risk assessment audit",
-        "marks": 6,
-        "contextNote": "Discuss the importance of risk assessment audit. Such as: provides a safe working environment; evaluates compliance with safety regulations and policies; identifies hazards and puts control measures in place where a risk cannot be eliminated (for fire: alarms, evacuation signage, drills, extinguishers); recommends improvements; identifies training needs; reduces accidents and liability.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q2-original",
-    "questionFigureIncludesPrompt": true,
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 2",
-      "title": "Health and safety on a construction site",
-      "pages": [
-        1,
-        2
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original question retained. Part (a) chooses any two of three printed items; parts (b) and (c) require all three activities, each separately priced. The scheme lists typical points, not an exhaustive list."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q2-a-health-and-safety-officer",
-        "label": "health and safety officer",
-        "marks": 6,
-        "rowIds": [
-          "a-health-and-safety-officer-importance"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-a-risk-assessment-audit",
-        "label": "risk assessment audit",
-        "marks": 6,
-        "rowIds": [
-          "a-risk-assessment-audit-importance"
-        ]
-      }
-    ]
-  },
-  {
     "id": "cons-2025-hl-q2-b-deep-trench",
     "subjectId": "construction-studies",
     "year": 2025,
@@ -45287,756 +44873,6 @@
         "marks": 4,
         "rowIds": [
           "b-chimney-capping-risk"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q2-complete-safety-training-and-health-and-safety-officer",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-1-8",
-    "conceptId": "site-safety-culture-complete-safety-training-and-health-and-safety-officer",
-    "questionRef": "2025 HL Q2 — complete: safety training and health and safety officer",
-    "stem": "",
-    "questionText": "(a) Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site: safety training; health and safety officer.\n\n(b) Outline one possible risk to personal safety associated with each of the following: working in a deep trench; installing insulation in an attic space; repairing a chimney capping.\n\n(c) For each risk discussed at 2(b) above, show, using notes and freehand sketches, two best practice guidelines that should be observed to reduce the possibility of injury to a worker undertaking each task.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 60,
-    "rows": [
-      {
-        "id": "a-safety-training-and-health-and-safety-officer-a-safety-training-importance",
-        "kind": "criterion",
-        "verbatim": "Safety training",
-        "marks": 6,
-        "contextNote": "Discuss the importance of safety training. Such as: Safe Pass is mandatory and kept current through refresher courses; training builds awareness of site risks and the skills to identify them and follow best practice; specialist tickets for machinery and vehicles; monitoring and enforcing safe work practices; it may be a condition of the insurance provider.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "a-safety-training-and-health-and-safety-officer-a-health-and-safety-officer-importance",
-        "kind": "criterion",
-        "verbatim": "Health and safety officer",
-        "marks": 6,
-        "contextNote": "Discuss the importance of health and safety officer. Such as: provides induction and ongoing training (working at heights, machinery use); develops emergency response plans; keeps first aid and emergency equipment available; ensures the correct PPE is worn; carries out safety inspections and risk assessments; reviews the safety statement; investigates, records and reports accidents.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "b-b-deep-trench-risk",
-        "kind": "criterion",
-        "verbatim": "Working in a deep trench",
-        "marks": 4,
-        "contextNote": "One risk outlined. Such as: workers seriously injured or buried if the trench sides collapse; machinery or vehicles falling in; materials stored too close to the edge causing a collapse; falling into an unguarded trench; materials falling in; nearby structures undermined.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-b-attic-insulation-risk",
-        "kind": "criterion",
-        "verbatim": "Installing insulation in an attic space",
-        "marks": 4,
-        "contextNote": "One risk outlined. Such as: falling through the plasterboard ceiling; injury when cutting the insulation; skin or eye irritation without a coverall, gloves and goggles; electrocution from exposed wires; fire if insulation covers recessed lights; lung damage from inhaled machine-made mineral fibres (MMMFs).",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-b-chimney-capping-risk",
-        "kind": "criterion",
-        "verbatim": "Repairing a chimney capping",
-        "marks": 4,
-        "contextNote": "One risk outlined. Such as: falling or slipping from the roof or from a ladder; equipment or materials dropped on people below; scaffolding collapsing; falling from lifting machinery such as a cherry picker.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "c-deep-trench-guideline-1",
-        "kind": "criterion",
-        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "Note 3 and sketch 3. Such as: a trench box or shuttering to support the sides; battering back (sloping) the sides; a barrier with a toe board, or a temporary cover over a vacant trench.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-deep-trench-guideline-2",
-        "kind": "criterion",
-        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: no materials, machinery or vehicles near the edge; a clearly marked exclusion zone and signage; PPE (hard hat, eye protection, footwear); digging in suitable, not wet, conditions; an engineer’s survey of nearby structures.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-attic-insulation-guideline-1",
-        "kind": "criterion",
-        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "Note 3 and sketch 3. Such as: crawl boards to spread the load across the joists, or walking only on the joists and never on the plasterboard ceiling; a hooded coverall and gloves; an appropriate dust mask.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-attic-insulation-guideline-2",
-        "kind": "criterion",
-        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: safety goggles; non-combustible protection covers over downlighters; cutting insulation in a well-ventilated area; kneepads.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-chimney-capping-guideline-1",
-        "kind": "criterion",
-        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "Note 3 and sketch 3. Such as: a safety harness or other fall protection; scaffolding around the stack erected by certified personnel, tied to the house or chimney, with safety rails and toe boards.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-chimney-capping-guideline-2",
-        "kind": "criterion",
-        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: toe boards and netting against falling objects; ladders secured and extending 1 metre past the scaffolding platform; a cherry picker operated by certified personnel on a level surface, with workers securely attached.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q2-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q2-trench",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 2",
-      "title": "Health and safety on a construction site",
-      "pages": [
-        1,
-        2
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original question retained. Part (a) chooses any two of three printed items; parts (b) and (c) require all three activities, each separately priced. The scheme lists typical points, not an exhaustive list."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q2-a-safety-training-and-health-and-safety-officer",
-        "label": "(a) safety training and health and safety officer",
-        "marks": 12,
-        "rowIds": [
-          "a-safety-training-and-health-and-safety-officer-a-safety-training-importance",
-          "a-safety-training-and-health-and-safety-officer-a-health-and-safety-officer-importance"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-b",
-        "label": "(b)",
-        "marks": 12,
-        "rowIds": [
-          "b-b-deep-trench-risk",
-          "b-b-attic-insulation-risk",
-          "b-b-chimney-capping-risk"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-c-deep-trench",
-        "label": "(c) working in a deep trench",
-        "marks": 12,
-        "rowIds": [
-          "c-deep-trench-guideline-1",
-          "c-deep-trench-guideline-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-c-attic-insulation",
-        "label": "(c) installing insulation in an attic space",
-        "marks": 12,
-        "rowIds": [
-          "c-attic-insulation-guideline-1",
-          "c-attic-insulation-guideline-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-c-chimney-capping",
-        "label": "(c) repairing a chimney capping",
-        "marks": 12,
-        "rowIds": [
-          "c-chimney-capping-guideline-1",
-          "c-chimney-capping-guideline-2"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q2-complete-safety-training-and-risk-assessment-audit",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-1-8",
-    "conceptId": "site-safety-culture-complete-safety-training-and-risk-assessment-audit",
-    "questionRef": "2025 HL Q2 — complete: safety training and risk assessment audit",
-    "stem": "",
-    "questionText": "(a) Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site: safety training; risk assessment audit.\n\n(b) Outline one possible risk to personal safety associated with each of the following: working in a deep trench; installing insulation in an attic space; repairing a chimney capping.\n\n(c) For each risk discussed at 2(b) above, show, using notes and freehand sketches, two best practice guidelines that should be observed to reduce the possibility of injury to a worker undertaking each task.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 60,
-    "rows": [
-      {
-        "id": "a-safety-training-and-risk-assessment-audit-a-safety-training-importance",
-        "kind": "criterion",
-        "verbatim": "Safety training",
-        "marks": 6,
-        "contextNote": "Discuss the importance of safety training. Such as: Safe Pass is mandatory and kept current through refresher courses; training builds awareness of site risks and the skills to identify them and follow best practice; specialist tickets for machinery and vehicles; monitoring and enforcing safe work practices; it may be a condition of the insurance provider.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "a-safety-training-and-risk-assessment-audit-a-risk-assessment-audit-importance",
-        "kind": "criterion",
-        "verbatim": "Risk assessment audit",
-        "marks": 6,
-        "contextNote": "Discuss the importance of risk assessment audit. Such as: provides a safe working environment; evaluates compliance with safety regulations and policies; identifies hazards and puts control measures in place where a risk cannot be eliminated (for fire: alarms, evacuation signage, drills, extinguishers); recommends improvements; identifies training needs; reduces accidents and liability.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "b-b-deep-trench-risk",
-        "kind": "criterion",
-        "verbatim": "Working in a deep trench",
-        "marks": 4,
-        "contextNote": "One risk outlined. Such as: workers seriously injured or buried if the trench sides collapse; machinery or vehicles falling in; materials stored too close to the edge causing a collapse; falling into an unguarded trench; materials falling in; nearby structures undermined.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-b-attic-insulation-risk",
-        "kind": "criterion",
-        "verbatim": "Installing insulation in an attic space",
-        "marks": 4,
-        "contextNote": "One risk outlined. Such as: falling through the plasterboard ceiling; injury when cutting the insulation; skin or eye irritation without a coverall, gloves and goggles; electrocution from exposed wires; fire if insulation covers recessed lights; lung damage from inhaled machine-made mineral fibres (MMMFs).",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-b-chimney-capping-risk",
-        "kind": "criterion",
-        "verbatim": "Repairing a chimney capping",
-        "marks": 4,
-        "contextNote": "One risk outlined. Such as: falling or slipping from the roof or from a ladder; equipment or materials dropped on people below; scaffolding collapsing; falling from lifting machinery such as a cherry picker.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "c-deep-trench-guideline-1",
-        "kind": "criterion",
-        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "Note 3 and sketch 3. Such as: a trench box or shuttering to support the sides; battering back (sloping) the sides; a barrier with a toe board, or a temporary cover over a vacant trench.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-deep-trench-guideline-2",
-        "kind": "criterion",
-        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: no materials, machinery or vehicles near the edge; a clearly marked exclusion zone and signage; PPE (hard hat, eye protection, footwear); digging in suitable, not wet, conditions; an engineer’s survey of nearby structures.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-attic-insulation-guideline-1",
-        "kind": "criterion",
-        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "Note 3 and sketch 3. Such as: crawl boards to spread the load across the joists, or walking only on the joists and never on the plasterboard ceiling; a hooded coverall and gloves; an appropriate dust mask.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-attic-insulation-guideline-2",
-        "kind": "criterion",
-        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: safety goggles; non-combustible protection covers over downlighters; cutting insulation in a well-ventilated area; kneepads.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-chimney-capping-guideline-1",
-        "kind": "criterion",
-        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "Note 3 and sketch 3. Such as: a safety harness or other fall protection; scaffolding around the stack erected by certified personnel, tied to the house or chimney, with safety rails and toe boards.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-chimney-capping-guideline-2",
-        "kind": "criterion",
-        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: toe boards and netting against falling objects; ladders secured and extending 1 metre past the scaffolding platform; a cherry picker operated by certified personnel on a level surface, with workers securely attached.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q2-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q2-trench",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 2",
-      "title": "Health and safety on a construction site",
-      "pages": [
-        1,
-        2
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original question retained. Part (a) chooses any two of three printed items; parts (b) and (c) require all three activities, each separately priced. The scheme lists typical points, not an exhaustive list."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q2-a-safety-training-and-risk-assessment-audit",
-        "label": "(a) safety training and risk assessment audit",
-        "marks": 12,
-        "rowIds": [
-          "a-safety-training-and-risk-assessment-audit-a-safety-training-importance",
-          "a-safety-training-and-risk-assessment-audit-a-risk-assessment-audit-importance"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-b",
-        "label": "(b)",
-        "marks": 12,
-        "rowIds": [
-          "b-b-deep-trench-risk",
-          "b-b-attic-insulation-risk",
-          "b-b-chimney-capping-risk"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-c-deep-trench",
-        "label": "(c) working in a deep trench",
-        "marks": 12,
-        "rowIds": [
-          "c-deep-trench-guideline-1",
-          "c-deep-trench-guideline-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-c-attic-insulation",
-        "label": "(c) installing insulation in an attic space",
-        "marks": 12,
-        "rowIds": [
-          "c-attic-insulation-guideline-1",
-          "c-attic-insulation-guideline-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-c-chimney-capping",
-        "label": "(c) repairing a chimney capping",
-        "marks": 12,
-        "rowIds": [
-          "c-chimney-capping-guideline-1",
-          "c-chimney-capping-guideline-2"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q2-complete-health-and-safety-officer-and-risk-assessment-audit",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-1-8",
-    "conceptId": "site-safety-culture-complete-health-and-safety-officer-and-risk-assessment-audit",
-    "questionRef": "2025 HL Q2 — complete: health and safety officer and risk assessment audit",
-    "stem": "",
-    "questionText": "(a) Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site: health and safety officer; risk assessment audit.\n\n(b) Outline one possible risk to personal safety associated with each of the following: working in a deep trench; installing insulation in an attic space; repairing a chimney capping.\n\n(c) For each risk discussed at 2(b) above, show, using notes and freehand sketches, two best practice guidelines that should be observed to reduce the possibility of injury to a worker undertaking each task.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 60,
-    "rows": [
-      {
-        "id": "a-health-and-safety-officer-and-risk-assessment-audit-a-health-and-safety-officer-importance",
-        "kind": "criterion",
-        "verbatim": "Health and safety officer",
-        "marks": 6,
-        "contextNote": "Discuss the importance of health and safety officer. Such as: provides induction and ongoing training (working at heights, machinery use); develops emergency response plans; keeps first aid and emergency equipment available; ensures the correct PPE is worn; carries out safety inspections and risk assessments; reviews the safety statement; investigates, records and reports accidents.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "a-health-and-safety-officer-and-risk-assessment-audit-a-risk-assessment-audit-importance",
-        "kind": "criterion",
-        "verbatim": "Risk assessment audit",
-        "marks": 6,
-        "contextNote": "Discuss the importance of risk assessment audit. Such as: provides a safe working environment; evaluates compliance with safety regulations and policies; identifies hazards and puts control measures in place where a risk cannot be eliminated (for fire: alarms, evacuation signage, drills, extinguishers); recommends improvements; identifies training needs; reduces accidents and liability.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "b-b-deep-trench-risk",
-        "kind": "criterion",
-        "verbatim": "Working in a deep trench",
-        "marks": 4,
-        "contextNote": "One risk outlined. Such as: workers seriously injured or buried if the trench sides collapse; machinery or vehicles falling in; materials stored too close to the edge causing a collapse; falling into an unguarded trench; materials falling in; nearby structures undermined.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-b-attic-insulation-risk",
-        "kind": "criterion",
-        "verbatim": "Installing insulation in an attic space",
-        "marks": 4,
-        "contextNote": "One risk outlined. Such as: falling through the plasterboard ceiling; injury when cutting the insulation; skin or eye irritation without a coverall, gloves and goggles; electrocution from exposed wires; fire if insulation covers recessed lights; lung damage from inhaled machine-made mineral fibres (MMMFs).",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-b-chimney-capping-risk",
-        "kind": "criterion",
-        "verbatim": "Repairing a chimney capping",
-        "marks": 4,
-        "contextNote": "One risk outlined. Such as: falling or slipping from the roof or from a ladder; equipment or materials dropped on people below; scaffolding collapsing; falling from lifting machinery such as a cherry picker.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "c-deep-trench-guideline-1",
-        "kind": "criterion",
-        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "Note 3 and sketch 3. Such as: a trench box or shuttering to support the sides; battering back (sloping) the sides; a barrier with a toe board, or a temporary cover over a vacant trench.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-deep-trench-guideline-2",
-        "kind": "criterion",
-        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: no materials, machinery or vehicles near the edge; a clearly marked exclusion zone and signage; PPE (hard hat, eye protection, footwear); digging in suitable, not wet, conditions; an engineer’s survey of nearby structures.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-attic-insulation-guideline-1",
-        "kind": "criterion",
-        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "Note 3 and sketch 3. Such as: crawl boards to spread the load across the joists, or walking only on the joists and never on the plasterboard ceiling; a hooded coverall and gloves; an appropriate dust mask.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-attic-insulation-guideline-2",
-        "kind": "criterion",
-        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: safety goggles; non-combustible protection covers over downlighters; cutting insulation in a well-ventilated area; kneepads.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-chimney-capping-guideline-1",
-        "kind": "criterion",
-        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "Note 3 and sketch 3. Such as: a safety harness or other fall protection; scaffolding around the stack erected by certified personnel, tied to the house or chimney, with safety rails and toe boards.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-chimney-capping-guideline-2",
-        "kind": "criterion",
-        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
-        "marks": 6,
-        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: toe boards and netting against falling objects; ladders secured and extending 1 metre past the scaffolding platform; a cherry picker operated by certified personnel on a level surface, with workers securely attached.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q2-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q2-trench",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 2",
-      "title": "Health and safety on a construction site",
-      "pages": [
-        1,
-        2
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original question retained. Part (a) chooses any two of three printed items; parts (b) and (c) require all three activities, each separately priced. The scheme lists typical points, not an exhaustive list."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q2-a-health-and-safety-officer-and-risk-assessment-audit",
-        "label": "(a) health and safety officer and risk assessment audit",
-        "marks": 12,
-        "rowIds": [
-          "a-health-and-safety-officer-and-risk-assessment-audit-a-health-and-safety-officer-importance",
-          "a-health-and-safety-officer-and-risk-assessment-audit-a-risk-assessment-audit-importance"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-b",
-        "label": "(b)",
-        "marks": 12,
-        "rowIds": [
-          "b-b-deep-trench-risk",
-          "b-b-attic-insulation-risk",
-          "b-b-chimney-capping-risk"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-c-deep-trench",
-        "label": "(c) working in a deep trench",
-        "marks": 12,
-        "rowIds": [
-          "c-deep-trench-guideline-1",
-          "c-deep-trench-guideline-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-c-attic-insulation",
-        "label": "(c) installing insulation in an attic space",
-        "marks": 12,
-        "rowIds": [
-          "c-attic-insulation-guideline-1",
-          "c-attic-insulation-guideline-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q2-c-chimney-capping",
-        "label": "(c) repairing a chimney capping",
-        "marks": 12,
-        "rowIds": [
-          "c-chimney-capping-guideline-1",
-          "c-chimney-capping-guideline-2"
         ]
       }
     ]
@@ -47826,1794 +46662,6 @@
     ]
   },
   {
-    "id": "cons-2025-hl-q8-b-door-head",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-b-door-head",
-    "questionRef": "2025 HL Q8(b) — head of external door",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at the locations circled on the drawing — head of external door",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 16,
-    "rows": [
-      {
-        "id": "notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled head of external door. Such as: seal the thermally broken door frame to the reveal of the inner block wall with plasterable airtightness tape, then plaster over the tape; or airtightness paint on the reveal before plastering, or slabbing and skimming.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the head of external door detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-door-head",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    }
-  },
-  {
-    "id": "cons-2025-hl-q8-b-first-floor",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-b-first-floor",
-    "questionRef": "2025 HL Q8(b) — first floor junction with external wall",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at the locations circled on the drawing — first floor junction with external wall",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 16,
-    "rows": [
-      {
-        "id": "notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled first floor junction with external wall. Such as: make the wall airtight where the joists bear — an airtightness membrane sealed with airtight silicone or plasterable tape, or sand cement render or airtightness paint; tape each joist where it breaks the airtightness barrier; seal the floor/wall and roof/wall junctions with tape or paint.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the first floor junction with external wall detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-first-floor",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    }
-  },
-  {
-    "id": "cons-2025-hl-q8-b-wallplate",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-b-wallplate",
-    "questionRef": "2025 HL Q8(b) — wallplate level",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at the locations circled on the drawing — wallplate level",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 16,
-    "rows": [
-      {
-        "id": "notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled wallplate level. Such as: an airtightness membrane under the ceiling joists, wrapped onto the wallplate and down onto the first block below it, fixed to the wall with plasterable airtightness tape or a bead of airtight silicone, then scrim or mesh and sand cement plaster.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the wallplate level detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-wallplate",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    }
-  },
-  {
-    "id": "cons-2025-hl-q8-b-mvhr-duct",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-b-mvhr-duct",
-    "questionRef": "2025 HL Q8(b) — MVHR duct protruding through the ceiling",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at the locations circled on the drawing — MVHR duct protruding through the ceiling",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 16,
-    "rows": [
-      {
-        "id": "notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled MVHR duct protruding through the ceiling. Such as: an airtightness membrane under the joists, sealed to the duct with a self-adhesive grommet fixed to the membrane, or by carefully taping the duct to the membrane with airtightness tape.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the MVHR duct protruding through the ceiling detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-mvhr-duct",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    }
-  },
-  {
-    "id": "cons-2025-hl-q8-b-door-head-first-floor-wallplate",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-b-door-head-first-floor-wallplate",
-    "questionRef": "2025 HL Q8(b) — head of external door, first floor junction with external wall, wallplate level",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing — head of external door; first floor junction with external wall; wallplate level",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 48,
-    "rows": [
-      {
-        "id": "b-door-head-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled head of external door. Such as: seal the thermally broken door frame to the reveal of the inner block wall with plasterable airtightness tape, then plaster over the tape; or airtightness paint on the reveal before plastering, or slabbing and skimming.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-door-head-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the head of external door detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-first-floor-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled first floor junction with external wall. Such as: make the wall airtight where the joists bear — an airtightness membrane sealed with airtight silicone or plasterable tape, or sand cement render or airtightness paint; tape each joist where it breaks the airtightness barrier; seal the floor/wall and roof/wall junctions with tape or paint.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-first-floor-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the first floor junction with external wall detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled wallplate level. Such as: an airtightness membrane under the ceiling joists, wrapped onto the wallplate and down onto the first block below it, fixed to the wall with plasterable airtightness tape or a bead of airtight silicone, then scrim or mesh and sand cement plaster.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the wallplate level detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-door-head",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-door-head",
-        "label": "head of external door",
-        "marks": 16,
-        "rowIds": [
-          "b-door-head-notes",
-          "b-door-head-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-first-floor",
-        "label": "first floor junction with external wall",
-        "marks": 16,
-        "rowIds": [
-          "b-first-floor-notes",
-          "b-first-floor-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-wallplate",
-        "label": "wallplate level",
-        "marks": 16,
-        "rowIds": [
-          "b-wallplate-notes",
-          "b-wallplate-sketches"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q8-complete-door-head-first-floor-wallplate",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-complete-door-head-first-floor-wallplate",
-    "questionRef": "2025 HL Q8 — complete: head of external door, first floor junction with external wall, wallplate level",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "(a) Discuss in detail two benefits of preventing air leakage from a dwelling house.\n\n(b) The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing — head of external door; first floor junction with external wall; wallplate level",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 60,
-    "rows": [
-      {
-        "id": "a-benefit-1",
-        "kind": "criterion",
-        "verbatim": "Benefit 1 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "Point 3 and discussion 3. Such as: lower energy bills because less heat escapes through gaps in the building fabric; lower carbon emissions from heating.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "a-benefit-2",
-        "kind": "criterion",
-        "verbatim": "Benefit 2 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "A second, different benefit: point 3 and discussion 3. Such as: mechanical ventilation works efficiently with better indoor air quality; no draughts; less moisture entering the fabric (preventing rot); less noise; the insulation performs better.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "b-door-head-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled head of external door. Such as: seal the thermally broken door frame to the reveal of the inner block wall with plasterable airtightness tape, then plaster over the tape; or airtightness paint on the reveal before plastering, or slabbing and skimming.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-door-head-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the head of external door detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-first-floor-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled first floor junction with external wall. Such as: make the wall airtight where the joists bear — an airtightness membrane sealed with airtight silicone or plasterable tape, or sand cement render or airtightness paint; tape each joist where it breaks the airtightness barrier; seal the floor/wall and roof/wall junctions with tape or paint.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-first-floor-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the first floor junction with external wall detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled wallplate level. Such as: an airtightness membrane under the ceiling joists, wrapped onto the wallplate and down onto the first block below it, fixed to the wall with plasterable airtightness tape or a bead of airtight silicone, then scrim or mesh and sand cement plaster.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the wallplate level detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-door-head",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q8-a",
-        "label": "(a)",
-        "marks": 12,
-        "rowIds": [
-          "a-benefit-1",
-          "a-benefit-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-door-head",
-        "label": "(b) head of external door",
-        "marks": 16,
-        "rowIds": [
-          "b-door-head-notes",
-          "b-door-head-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-first-floor",
-        "label": "(b) first floor junction with external wall",
-        "marks": 16,
-        "rowIds": [
-          "b-first-floor-notes",
-          "b-first-floor-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-wallplate",
-        "label": "(b) wallplate level",
-        "marks": 16,
-        "rowIds": [
-          "b-wallplate-notes",
-          "b-wallplate-sketches"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q8-b-door-head-first-floor-mvhr-duct",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-b-door-head-first-floor-mvhr-duct",
-    "questionRef": "2025 HL Q8(b) — head of external door, first floor junction with external wall, MVHR duct protruding through the ceiling",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing — head of external door; first floor junction with external wall; MVHR duct protruding through the ceiling",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 48,
-    "rows": [
-      {
-        "id": "b-door-head-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled head of external door. Such as: seal the thermally broken door frame to the reveal of the inner block wall with plasterable airtightness tape, then plaster over the tape; or airtightness paint on the reveal before plastering, or slabbing and skimming.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-door-head-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the head of external door detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-first-floor-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled first floor junction with external wall. Such as: make the wall airtight where the joists bear — an airtightness membrane sealed with airtight silicone or plasterable tape, or sand cement render or airtightness paint; tape each joist where it breaks the airtightness barrier; seal the floor/wall and roof/wall junctions with tape or paint.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-first-floor-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the first floor junction with external wall detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled MVHR duct protruding through the ceiling. Such as: an airtightness membrane under the joists, sealed to the duct with a self-adhesive grommet fixed to the membrane, or by carefully taping the duct to the membrane with airtightness tape.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the MVHR duct protruding through the ceiling detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-door-head",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-door-head",
-        "label": "head of external door",
-        "marks": 16,
-        "rowIds": [
-          "b-door-head-notes",
-          "b-door-head-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-first-floor",
-        "label": "first floor junction with external wall",
-        "marks": 16,
-        "rowIds": [
-          "b-first-floor-notes",
-          "b-first-floor-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-mvhr-duct",
-        "label": "MVHR duct protruding through the ceiling",
-        "marks": 16,
-        "rowIds": [
-          "b-mvhr-duct-notes",
-          "b-mvhr-duct-sketches"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q8-complete-door-head-first-floor-mvhr-duct",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-complete-door-head-first-floor-mvhr-duct",
-    "questionRef": "2025 HL Q8 — complete: head of external door, first floor junction with external wall, MVHR duct protruding through the ceiling",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "(a) Discuss in detail two benefits of preventing air leakage from a dwelling house.\n\n(b) The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing — head of external door; first floor junction with external wall; MVHR duct protruding through the ceiling",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 60,
-    "rows": [
-      {
-        "id": "a-benefit-1",
-        "kind": "criterion",
-        "verbatim": "Benefit 1 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "Point 3 and discussion 3. Such as: lower energy bills because less heat escapes through gaps in the building fabric; lower carbon emissions from heating.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "a-benefit-2",
-        "kind": "criterion",
-        "verbatim": "Benefit 2 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "A second, different benefit: point 3 and discussion 3. Such as: mechanical ventilation works efficiently with better indoor air quality; no draughts; less moisture entering the fabric (preventing rot); less noise; the insulation performs better.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "b-door-head-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled head of external door. Such as: seal the thermally broken door frame to the reveal of the inner block wall with plasterable airtightness tape, then plaster over the tape; or airtightness paint on the reveal before plastering, or slabbing and skimming.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-door-head-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the head of external door detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-first-floor-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled first floor junction with external wall. Such as: make the wall airtight where the joists bear — an airtightness membrane sealed with airtight silicone or plasterable tape, or sand cement render or airtightness paint; tape each joist where it breaks the airtightness barrier; seal the floor/wall and roof/wall junctions with tape or paint.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-first-floor-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the first floor junction with external wall detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled MVHR duct protruding through the ceiling. Such as: an airtightness membrane under the joists, sealed to the duct with a self-adhesive grommet fixed to the membrane, or by carefully taping the duct to the membrane with airtightness tape.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the MVHR duct protruding through the ceiling detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-door-head",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q8-a",
-        "label": "(a)",
-        "marks": 12,
-        "rowIds": [
-          "a-benefit-1",
-          "a-benefit-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-door-head",
-        "label": "(b) head of external door",
-        "marks": 16,
-        "rowIds": [
-          "b-door-head-notes",
-          "b-door-head-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-first-floor",
-        "label": "(b) first floor junction with external wall",
-        "marks": 16,
-        "rowIds": [
-          "b-first-floor-notes",
-          "b-first-floor-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-mvhr-duct",
-        "label": "(b) MVHR duct protruding through the ceiling",
-        "marks": 16,
-        "rowIds": [
-          "b-mvhr-duct-notes",
-          "b-mvhr-duct-sketches"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q8-b-door-head-wallplate-mvhr-duct",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-b-door-head-wallplate-mvhr-duct",
-    "questionRef": "2025 HL Q8(b) — head of external door, wallplate level, MVHR duct protruding through the ceiling",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing — head of external door; wallplate level; MVHR duct protruding through the ceiling",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 48,
-    "rows": [
-      {
-        "id": "b-door-head-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled head of external door. Such as: seal the thermally broken door frame to the reveal of the inner block wall with plasterable airtightness tape, then plaster over the tape; or airtightness paint on the reveal before plastering, or slabbing and skimming.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-door-head-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the head of external door detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled wallplate level. Such as: an airtightness membrane under the ceiling joists, wrapped onto the wallplate and down onto the first block below it, fixed to the wall with plasterable airtightness tape or a bead of airtight silicone, then scrim or mesh and sand cement plaster.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the wallplate level detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled MVHR duct protruding through the ceiling. Such as: an airtightness membrane under the joists, sealed to the duct with a self-adhesive grommet fixed to the membrane, or by carefully taping the duct to the membrane with airtightness tape.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the MVHR duct protruding through the ceiling detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-door-head",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-door-head",
-        "label": "head of external door",
-        "marks": 16,
-        "rowIds": [
-          "b-door-head-notes",
-          "b-door-head-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-wallplate",
-        "label": "wallplate level",
-        "marks": 16,
-        "rowIds": [
-          "b-wallplate-notes",
-          "b-wallplate-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-mvhr-duct",
-        "label": "MVHR duct protruding through the ceiling",
-        "marks": 16,
-        "rowIds": [
-          "b-mvhr-duct-notes",
-          "b-mvhr-duct-sketches"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q8-complete-door-head-wallplate-mvhr-duct",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-complete-door-head-wallplate-mvhr-duct",
-    "questionRef": "2025 HL Q8 — complete: head of external door, wallplate level, MVHR duct protruding through the ceiling",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "(a) Discuss in detail two benefits of preventing air leakage from a dwelling house.\n\n(b) The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing — head of external door; wallplate level; MVHR duct protruding through the ceiling",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 60,
-    "rows": [
-      {
-        "id": "a-benefit-1",
-        "kind": "criterion",
-        "verbatim": "Benefit 1 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "Point 3 and discussion 3. Such as: lower energy bills because less heat escapes through gaps in the building fabric; lower carbon emissions from heating.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "a-benefit-2",
-        "kind": "criterion",
-        "verbatim": "Benefit 2 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "A second, different benefit: point 3 and discussion 3. Such as: mechanical ventilation works efficiently with better indoor air quality; no draughts; less moisture entering the fabric (preventing rot); less noise; the insulation performs better.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "b-door-head-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled head of external door. Such as: seal the thermally broken door frame to the reveal of the inner block wall with plasterable airtightness tape, then plaster over the tape; or airtightness paint on the reveal before plastering, or slabbing and skimming.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-door-head-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the head of external door detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled wallplate level. Such as: an airtightness membrane under the ceiling joists, wrapped onto the wallplate and down onto the first block below it, fixed to the wall with plasterable airtightness tape or a bead of airtight silicone, then scrim or mesh and sand cement plaster.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the wallplate level detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled MVHR duct protruding through the ceiling. Such as: an airtightness membrane under the joists, sealed to the duct with a self-adhesive grommet fixed to the membrane, or by carefully taping the duct to the membrane with airtightness tape.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the MVHR duct protruding through the ceiling detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-door-head",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q8-a",
-        "label": "(a)",
-        "marks": 12,
-        "rowIds": [
-          "a-benefit-1",
-          "a-benefit-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-door-head",
-        "label": "(b) head of external door",
-        "marks": 16,
-        "rowIds": [
-          "b-door-head-notes",
-          "b-door-head-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-wallplate",
-        "label": "(b) wallplate level",
-        "marks": 16,
-        "rowIds": [
-          "b-wallplate-notes",
-          "b-wallplate-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-mvhr-duct",
-        "label": "(b) MVHR duct protruding through the ceiling",
-        "marks": 16,
-        "rowIds": [
-          "b-mvhr-duct-notes",
-          "b-mvhr-duct-sketches"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q8-b-first-floor-wallplate-mvhr-duct",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-b-first-floor-wallplate-mvhr-duct",
-    "questionRef": "2025 HL Q8(b) — first floor junction with external wall, wallplate level, MVHR duct protruding through the ceiling",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing — first floor junction with external wall; wallplate level; MVHR duct protruding through the ceiling",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 48,
-    "rows": [
-      {
-        "id": "b-first-floor-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled first floor junction with external wall. Such as: make the wall airtight where the joists bear — an airtightness membrane sealed with airtight silicone or plasterable tape, or sand cement render or airtightness paint; tape each joist where it breaks the airtightness barrier; seal the floor/wall and roof/wall junctions with tape or paint.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-first-floor-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the first floor junction with external wall detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled wallplate level. Such as: an airtightness membrane under the ceiling joists, wrapped onto the wallplate and down onto the first block below it, fixed to the wall with plasterable airtightness tape or a bead of airtight silicone, then scrim or mesh and sand cement plaster.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the wallplate level detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled MVHR duct protruding through the ceiling. Such as: an airtightness membrane under the joists, sealed to the duct with a self-adhesive grommet fixed to the membrane, or by carefully taping the duct to the membrane with airtightness tape.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the MVHR duct protruding through the ceiling detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-first-floor",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-first-floor",
-        "label": "first floor junction with external wall",
-        "marks": 16,
-        "rowIds": [
-          "b-first-floor-notes",
-          "b-first-floor-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-wallplate",
-        "label": "wallplate level",
-        "marks": 16,
-        "rowIds": [
-          "b-wallplate-notes",
-          "b-wallplate-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-mvhr-duct",
-        "label": "MVHR duct protruding through the ceiling",
-        "marks": 16,
-        "rowIds": [
-          "b-mvhr-duct-notes",
-          "b-mvhr-duct-sketches"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q8-complete-first-floor-wallplate-mvhr-duct",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-5",
-    "conceptId": "airtight-envelope-complete-first-floor-wallplate-mvhr-duct",
-    "questionRef": "2025 HL Q8 — complete: first floor junction with external wall, wallplate level, MVHR duct protruding through the ceiling",
-    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
-    "questionText": "(a) Discuss in detail two benefits of preventing air leakage from a dwelling house.\n\n(b) The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing — first floor junction with external wall; wallplate level; MVHR duct protruding through the ceiling",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 60,
-    "rows": [
-      {
-        "id": "a-benefit-1",
-        "kind": "criterion",
-        "verbatim": "Benefit 1 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "Point 3 and discussion 3. Such as: lower energy bills because less heat escapes through gaps in the building fabric; lower carbon emissions from heating.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "a-benefit-2",
-        "kind": "criterion",
-        "verbatim": "Benefit 2 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "A second, different benefit: point 3 and discussion 3. Such as: mechanical ventilation works efficiently with better indoor air quality; no draughts; less moisture entering the fabric (preventing rot); less noise; the insulation performs better.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "b-first-floor-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled first floor junction with external wall. Such as: make the wall airtight where the joists bear — an airtightness membrane sealed with airtight silicone or plasterable tape, or sand cement render or airtightness paint; tape each joist where it breaks the airtightness barrier; seal the floor/wall and roof/wall junctions with tape or paint.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-first-floor-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the first floor junction with external wall detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled wallplate level. Such as: an airtightness membrane under the ceiling joists, wrapped onto the wallplate and down onto the first block below it, fixed to the wall with plasterable airtightness tape or a bead of airtight silicone, then scrim or mesh and sand cement plaster.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-wallplate-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the wallplate level detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 8,
-        "contextNote": "Notes on best-practice detailing at the circled MVHR duct protruding through the ceiling. Such as: an airtightness membrane under the joists, sealed to the duct with a self-adhesive grommet fixed to the membrane, or by carefully taping the duct to the membrane with airtightness tape.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-mvhr-duct-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 8,
-        "contextNote": "Sketches of the MVHR duct protruding through the ceiling detail showing the continuous airtight layer.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q8-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q8-first-floor",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 8",
-      "title": "Airtight building envelope",
-      "pages": [
-        1,
-        6
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q8-a",
-        "label": "(a)",
-        "marks": 12,
-        "rowIds": [
-          "a-benefit-1",
-          "a-benefit-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-first-floor",
-        "label": "(b) first floor junction with external wall",
-        "marks": 16,
-        "rowIds": [
-          "b-first-floor-notes",
-          "b-first-floor-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-wallplate",
-        "label": "(b) wallplate level",
-        "marks": 16,
-        "rowIds": [
-          "b-wallplate-notes",
-          "b-wallplate-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q8-b-mvhr-duct",
-        "label": "(b) MVHR duct protruding through the ceiling",
-        "marks": 16,
-        "rowIds": [
-          "b-mvhr-duct-notes",
-          "b-mvhr-duct-sketches"
-        ]
-      }
-    ]
-  },
-  {
     "id": "cons-2025-hl-q9-b",
     "subjectId": "construction-studies",
     "year": 2025,
@@ -49896,68 +46944,6 @@
     ]
   },
   {
-    "id": "cons-2025-hl-q10-a-space-heating-energy-demand",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-3",
-    "conceptId": "rural-passive-house-a-space-heating-energy-demand",
-    "questionRef": "2025 HL Q10(a) — space heating energy demand",
-    "stem": "The sketch shows the proposed design of a Passive House which is to be constructed in a rural setting.",
-    "questionText": "Using notes and freehand sketches, discuss the importance of the following in Passive House design: space heating energy demand.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of space heating energy demand in Passive House design. Such as: passive house space-heating demand of no more than 15 kWh/m² per year; quality workmanship in airtightness and insulation; eliminating thermal bridges; solar gain through well-designed fenestration; solar shading, thermal mass and controlled ventilation to keep about 20 °C all year.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating space heating energy demand.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q10-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q10-space-heating-energy-demand",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 10",
-      "title": "Passive House in a rural setting",
-      "pages": [
-        1,
-        7
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
-    }
-  },
-  {
     "id": "cons-2025-hl-q10-c",
     "subjectId": "construction-studies",
     "year": 2025,
@@ -50020,1050 +47006,6 @@
       "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
       "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
     }
-  },
-  {
-    "id": "cons-2025-hl-q10-a-building-form-and-foundation-design",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-4",
-    "conceptId": "rural-passive-house-a-building-form-and-foundation-design",
-    "questionRef": "2025 HL Q10(a) — building form and foundation design",
-    "stem": "The sketch shows the proposed design of a Passive House which is to be constructed in a rural setting.",
-    "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: building form; foundation design.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 20,
-    "rows": [
-      {
-        "id": "a-building-form-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of building form in Passive House design. Such as: a compact, simple rectangular form with the smallest surface area (A/V ratio 0.7 or less) to cut heat loss, materials and cost; a narrow plan, one room deep, to maximise solar gain; clean lines in walls and roof that make airtightness easy.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-building-form-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating building form.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-foundation-design-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of foundation design in Passive House design. Such as: insulated ring-beam or passive raft foundations wrapped in insulation to eliminate thermal bridging; thermal blocks in the inner-leaf rising wall; 50–100 mm edge insulation at the floor/wall junction; thermally broken wall ties; a U-value of 0.10–0.15 W/m²K.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-foundation-design-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating foundation design.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q10-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q10-building-form",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 10",
-      "title": "Passive House in a rural setting",
-      "pages": [
-        1,
-        7
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q10-a-building-form",
-        "label": "building form",
-        "marks": 10,
-        "rowIds": [
-          "a-building-form-notes",
-          "a-building-form-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q10-a-foundation-design",
-        "label": "foundation design",
-        "marks": 10,
-        "rowIds": [
-          "a-foundation-design-notes",
-          "a-foundation-design-sketches"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q10-complete-building-form-and-foundation-design",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-4",
-    "conceptId": "rural-passive-house-complete-building-form-and-foundation-design",
-    "questionRef": "2025 HL Q10 — complete: building form and foundation design",
-    "stem": "The sketch shows the proposed design of a Passive House which is to be constructed in a rural setting.",
-    "questionText": "(a) Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: building form; foundation design.\n\n(b) Using notes and freehand sketches, suggest a preferred orientation for the house shown. Show the sun path on your sketch. Discuss two benefits to the homeowner of your preferred orientation.\n\n(c) Solar overheating may occur during the summer months in the house shown. Using notes and freehand sketches, suggest two ways to reduce the possibility of solar overheating while respecting the character of this house design.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 60,
-    "rows": [
-      {
-        "id": "a-building-form-and-foundation-design-a-building-form-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of building form in Passive House design. Such as: a compact, simple rectangular form with the smallest surface area (A/V ratio 0.7 or less) to cut heat loss, materials and cost; a narrow plan, one room deep, to maximise solar gain; clean lines in walls and roof that make airtightness easy.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-building-form-and-foundation-design-a-building-form-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating building form.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-building-form-and-foundation-design-a-foundation-design-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of foundation design in Passive House design. Such as: insulated ring-beam or passive raft foundations wrapped in insulation to eliminate thermal bridging; thermal blocks in the inner-leaf rising wall; 50–100 mm edge insulation at the floor/wall junction; thermally broken wall ties; a U-value of 0.10–0.15 W/m²K.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-building-form-and-foundation-design-a-foundation-design-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating foundation design.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "b-sketch",
-        "kind": "criterion",
-        "verbatim": "Sketch",
-        "marks": 8,
-        "contextNote": "Freehand sketch of the house showing the preferred orientation and the sun path.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-orientation",
-        "kind": "criterion",
-        "verbatim": "Orientation",
-        "marks": 4,
-        "contextNote": "Such as: the long axis with the largest amount of glazing facing south to maximise solar gain, with minimal glazing on the north.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-sunpath",
-        "kind": "criterion",
-        "verbatim": "Sunpath",
-        "marks": 4,
-        "contextNote": "The sun path shown on the sketch relative to north and the house.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-benefit-1",
-        "kind": "criterion",
-        "verbatim": "Benefit 1 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "Point 3 and discussion 3. Such as: lower energy bills, as solar gains reduce the need for artificial lighting and heating.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "b-benefit-2",
-        "kind": "criterion",
-        "verbatim": "Benefit 2 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "A second, different benefit: point 3 and discussion 3. Such as: lower carbon dioxide emissions from less artificial heating; a bright, airy home that enhances wellbeing.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-method-1",
-        "kind": "criterion",
-        "verbatim": "Method 1 to reduce solar overheating",
-        "marks": 6,
-        "contextNote": "Notes 3 and sketches 3. Such as: dynamic (electrochromic) glass that tints in response to light, heat or an electrical signal; or mature deciduous trees that block the summer sun and let winter sun through.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-method-2",
-        "kind": "criterion",
-        "verbatim": "Method 2 to reduce solar overheating",
-        "marks": 6,
-        "contextNote": "A second, different method: notes 3 and sketches 3. Such as: a brise soleil on the south side; internal or external shutters closed against the midday summer sun; high thermal mass (polished concrete floor, exposed stone walls) to even out temperatures.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q10-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q10-building-form",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 10",
-      "title": "Passive House in a rural setting",
-      "pages": [
-        1,
-        7
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q10-a-building-form-and-foundation-design",
-        "label": "(a) building form and foundation design",
-        "marks": 20,
-        "rowIds": [
-          "a-building-form-and-foundation-design-a-building-form-notes",
-          "a-building-form-and-foundation-design-a-building-form-sketches",
-          "a-building-form-and-foundation-design-a-foundation-design-notes",
-          "a-building-form-and-foundation-design-a-foundation-design-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q10-b",
-        "label": "(b)",
-        "marks": 28,
-        "rowIds": [
-          "b-sketch",
-          "b-orientation",
-          "b-sunpath",
-          "b-benefit-1",
-          "b-benefit-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q10-c",
-        "label": "(c)",
-        "marks": 12,
-        "rowIds": [
-          "c-method-1",
-          "c-method-2"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q10-a-building-form-and-space-heating-energy-demand",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-4",
-    "conceptId": "rural-passive-house-a-building-form-and-space-heating-energy-demand",
-    "questionRef": "2025 HL Q10(a) — building form and space heating energy demand",
-    "stem": "The sketch shows the proposed design of a Passive House which is to be constructed in a rural setting.",
-    "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: building form; space heating energy demand.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 20,
-    "rows": [
-      {
-        "id": "a-building-form-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of building form in Passive House design. Such as: a compact, simple rectangular form with the smallest surface area (A/V ratio 0.7 or less) to cut heat loss, materials and cost; a narrow plan, one room deep, to maximise solar gain; clean lines in walls and roof that make airtightness easy.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-building-form-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating building form.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-space-heating-energy-demand-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of space heating energy demand in Passive House design. Such as: passive house space-heating demand of no more than 15 kWh/m² per year; quality workmanship in airtightness and insulation; eliminating thermal bridges; solar gain through well-designed fenestration; solar shading, thermal mass and controlled ventilation to keep about 20 °C all year.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-space-heating-energy-demand-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating space heating energy demand.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q10-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q10-building-form",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 10",
-      "title": "Passive House in a rural setting",
-      "pages": [
-        1,
-        7
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q10-a-building-form",
-        "label": "building form",
-        "marks": 10,
-        "rowIds": [
-          "a-building-form-notes",
-          "a-building-form-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q10-a-space-heating-energy-demand",
-        "label": "space heating energy demand",
-        "marks": 10,
-        "rowIds": [
-          "a-space-heating-energy-demand-notes",
-          "a-space-heating-energy-demand-sketches"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q10-complete-building-form-and-space-heating-energy-demand",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-4",
-    "conceptId": "rural-passive-house-complete-building-form-and-space-heating-energy-demand",
-    "questionRef": "2025 HL Q10 — complete: building form and space heating energy demand",
-    "stem": "The sketch shows the proposed design of a Passive House which is to be constructed in a rural setting.",
-    "questionText": "(a) Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: building form; space heating energy demand.\n\n(b) Using notes and freehand sketches, suggest a preferred orientation for the house shown. Show the sun path on your sketch. Discuss two benefits to the homeowner of your preferred orientation.\n\n(c) Solar overheating may occur during the summer months in the house shown. Using notes and freehand sketches, suggest two ways to reduce the possibility of solar overheating while respecting the character of this house design.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 60,
-    "rows": [
-      {
-        "id": "a-building-form-and-space-heating-energy-demand-a-building-form-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of building form in Passive House design. Such as: a compact, simple rectangular form with the smallest surface area (A/V ratio 0.7 or less) to cut heat loss, materials and cost; a narrow plan, one room deep, to maximise solar gain; clean lines in walls and roof that make airtightness easy.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-building-form-and-space-heating-energy-demand-a-building-form-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating building form.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-building-form-and-space-heating-energy-demand-a-space-heating-energy-demand-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of space heating energy demand in Passive House design. Such as: passive house space-heating demand of no more than 15 kWh/m² per year; quality workmanship in airtightness and insulation; eliminating thermal bridges; solar gain through well-designed fenestration; solar shading, thermal mass and controlled ventilation to keep about 20 °C all year.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-building-form-and-space-heating-energy-demand-a-space-heating-energy-demand-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating space heating energy demand.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "b-sketch",
-        "kind": "criterion",
-        "verbatim": "Sketch",
-        "marks": 8,
-        "contextNote": "Freehand sketch of the house showing the preferred orientation and the sun path.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-orientation",
-        "kind": "criterion",
-        "verbatim": "Orientation",
-        "marks": 4,
-        "contextNote": "Such as: the long axis with the largest amount of glazing facing south to maximise solar gain, with minimal glazing on the north.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-sunpath",
-        "kind": "criterion",
-        "verbatim": "Sunpath",
-        "marks": 4,
-        "contextNote": "The sun path shown on the sketch relative to north and the house.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-benefit-1",
-        "kind": "criterion",
-        "verbatim": "Benefit 1 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "Point 3 and discussion 3. Such as: lower energy bills, as solar gains reduce the need for artificial lighting and heating.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "b-benefit-2",
-        "kind": "criterion",
-        "verbatim": "Benefit 2 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "A second, different benefit: point 3 and discussion 3. Such as: lower carbon dioxide emissions from less artificial heating; a bright, airy home that enhances wellbeing.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-method-1",
-        "kind": "criterion",
-        "verbatim": "Method 1 to reduce solar overheating",
-        "marks": 6,
-        "contextNote": "Notes 3 and sketches 3. Such as: dynamic (electrochromic) glass that tints in response to light, heat or an electrical signal; or mature deciduous trees that block the summer sun and let winter sun through.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-method-2",
-        "kind": "criterion",
-        "verbatim": "Method 2 to reduce solar overheating",
-        "marks": 6,
-        "contextNote": "A second, different method: notes 3 and sketches 3. Such as: a brise soleil on the south side; internal or external shutters closed against the midday summer sun; high thermal mass (polished concrete floor, exposed stone walls) to even out temperatures.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q10-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q10-building-form",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 10",
-      "title": "Passive House in a rural setting",
-      "pages": [
-        1,
-        7
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q10-a-building-form-and-space-heating-energy-demand",
-        "label": "(a) building form and space heating energy demand",
-        "marks": 20,
-        "rowIds": [
-          "a-building-form-and-space-heating-energy-demand-a-building-form-notes",
-          "a-building-form-and-space-heating-energy-demand-a-building-form-sketches",
-          "a-building-form-and-space-heating-energy-demand-a-space-heating-energy-demand-notes",
-          "a-building-form-and-space-heating-energy-demand-a-space-heating-energy-demand-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q10-b",
-        "label": "(b)",
-        "marks": 28,
-        "rowIds": [
-          "b-sketch",
-          "b-orientation",
-          "b-sunpath",
-          "b-benefit-1",
-          "b-benefit-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q10-c",
-        "label": "(c)",
-        "marks": 12,
-        "rowIds": [
-          "c-method-1",
-          "c-method-2"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q10-a-foundation-design-and-space-heating-energy-demand",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-2",
-    "conceptId": "rural-passive-house-a-foundation-design-and-space-heating-energy-demand",
-    "questionRef": "2025 HL Q10(a) — foundation design and space heating energy demand",
-    "stem": "The sketch shows the proposed design of a Passive House which is to be constructed in a rural setting.",
-    "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: foundation design; space heating energy demand.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 20,
-    "rows": [
-      {
-        "id": "a-foundation-design-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of foundation design in Passive House design. Such as: insulated ring-beam or passive raft foundations wrapped in insulation to eliminate thermal bridging; thermal blocks in the inner-leaf rising wall; 50–100 mm edge insulation at the floor/wall junction; thermally broken wall ties; a U-value of 0.10–0.15 W/m²K.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-foundation-design-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating foundation design.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-space-heating-energy-demand-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of space heating energy demand in Passive House design. Such as: passive house space-heating demand of no more than 15 kWh/m² per year; quality workmanship in airtightness and insulation; eliminating thermal bridges; solar gain through well-designed fenestration; solar shading, thermal mass and controlled ventilation to keep about 20 °C all year.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-space-heating-energy-demand-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating space heating energy demand.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q10-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q10-foundation-design",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 10",
-      "title": "Passive House in a rural setting",
-      "pages": [
-        1,
-        7
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q10-a-foundation-design",
-        "label": "foundation design",
-        "marks": 10,
-        "rowIds": [
-          "a-foundation-design-notes",
-          "a-foundation-design-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q10-a-space-heating-energy-demand",
-        "label": "space heating energy demand",
-        "marks": 10,
-        "rowIds": [
-          "a-space-heating-energy-demand-notes",
-          "a-space-heating-energy-demand-sketches"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cons-2025-hl-q10-complete-foundation-design-and-space-heating-energy-demand",
-    "subjectId": "construction-studies",
-    "year": 2025,
-    "level": "higher",
-    "section": "B",
-    "topicId": "cons-6-2",
-    "conceptId": "rural-passive-house-complete-foundation-design-and-space-heating-energy-demand",
-    "questionRef": "2025 HL Q10 — complete: foundation design and space heating energy demand",
-    "stem": "The sketch shows the proposed design of a Passive House which is to be constructed in a rural setting.",
-    "questionText": "(a) Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: foundation design; space heating energy demand.\n\n(b) Using notes and freehand sketches, suggest a preferred orientation for the house shown. Show the sun path on your sketch. Discuss two benefits to the homeowner of your preferred orientation.\n\n(c) Solar overheating may occur during the summer months in the house shown. Using notes and freehand sketches, suggest two ways to reduce the possibility of solar overheating while respecting the character of this house design.",
-    "tariffModel": {
-      "kind": "fixed"
-    },
-    "totalMarks": 60,
-    "rows": [
-      {
-        "id": "a-foundation-design-and-space-heating-energy-demand-a-foundation-design-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of foundation design in Passive House design. Such as: insulated ring-beam or passive raft foundations wrapped in insulation to eliminate thermal bridging; thermal blocks in the inner-leaf rising wall; 50–100 mm edge insulation at the floor/wall junction; thermally broken wall ties; a U-value of 0.10–0.15 W/m²K.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-foundation-design-and-space-heating-energy-demand-a-foundation-design-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating foundation design.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-foundation-design-and-space-heating-energy-demand-a-space-heating-energy-demand-notes",
-        "kind": "criterion",
-        "verbatim": "Notes",
-        "marks": 5,
-        "contextNote": "Notes on the importance of space heating energy demand in Passive House design. Such as: passive house space-heating demand of no more than 15 kWh/m² per year; quality workmanship in airtightness and insulation; eliminating thermal bridges; solar gain through well-designed fenestration; solar shading, thermal mass and controlled ventilation to keep about 20 °C all year.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "a-foundation-design-and-space-heating-energy-demand-a-space-heating-energy-demand-sketches",
-        "kind": "criterion",
-        "verbatim": "Sketches",
-        "marks": 5,
-        "contextNote": "Sketches illustrating space heating energy demand.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      {
-        "id": "b-sketch",
-        "kind": "criterion",
-        "verbatim": "Sketch",
-        "marks": 8,
-        "contextNote": "Freehand sketch of the house showing the preferred orientation and the sun path.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      {
-        "id": "b-orientation",
-        "kind": "criterion",
-        "verbatim": "Orientation",
-        "marks": 4,
-        "contextNote": "Such as: the long axis with the largest amount of glazing facing south to maximise solar gain, with minimal glazing on the north.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-sunpath",
-        "kind": "criterion",
-        "verbatim": "Sunpath",
-        "marks": 4,
-        "contextNote": "The sun path shown on the sketch relative to north and the house.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
-        "id": "b-benefit-1",
-        "kind": "criterion",
-        "verbatim": "Benefit 1 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "Point 3 and discussion 3. Such as: lower energy bills, as solar gains reduce the need for artificial lighting and heating.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "b-benefit-2",
-        "kind": "criterion",
-        "verbatim": "Benefit 2 (3 for point, 3 for discussion)",
-        "marks": 6,
-        "contextNote": "A second, different benefit: point 3 and discussion 3. Such as: lower carbon dioxide emissions from less artificial heating; a bright, airy home that enhances wellbeing.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-method-1",
-        "kind": "criterion",
-        "verbatim": "Method 1 to reduce solar overheating",
-        "marks": 6,
-        "contextNote": "Notes 3 and sketches 3. Such as: dynamic (electrochromic) glass that tints in response to light, heat or an electrical signal; or mature deciduous trees that block the summer sun and let winter sun through.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      {
-        "id": "c-method-2",
-        "kind": "criterion",
-        "verbatim": "Method 2 to reduce solar overheating",
-        "marks": 6,
-        "contextNote": "A second, different method: notes 3 and sketches 3. Such as: a brise soleil on the south side; internal or external shutters closed against the midday summer sun; high thermal mass (polished concrete floor, exposed stone walls) to even out temperatures.",
-        "permittedMarks": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      }
-    ],
-    "questionFigureKey": "construction-studies-2025-HL-q10-original",
-    "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q10-foundation-design",
-    "sourceMaterial": {
-      "kind": "source-illustration",
-      "label": "ORIGINAL QUESTION 10",
-      "title": "Passive House in a rural setting",
-      "pages": [
-        1,
-        7
-      ],
-      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-      "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
-    },
-    "taskGroups": [
-      {
-        "sourceCardId": "cons-2025-hl-q10-a-foundation-design-and-space-heating-energy-demand",
-        "label": "(a) foundation design and space heating energy demand",
-        "marks": 20,
-        "rowIds": [
-          "a-foundation-design-and-space-heating-energy-demand-a-foundation-design-notes",
-          "a-foundation-design-and-space-heating-energy-demand-a-foundation-design-sketches",
-          "a-foundation-design-and-space-heating-energy-demand-a-space-heating-energy-demand-notes",
-          "a-foundation-design-and-space-heating-energy-demand-a-space-heating-energy-demand-sketches"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q10-b",
-        "label": "(b)",
-        "marks": 28,
-        "rowIds": [
-          "b-sketch",
-          "b-orientation",
-          "b-sunpath",
-          "b-benefit-1",
-          "b-benefit-2"
-        ]
-      },
-      {
-        "sourceCardId": "cons-2025-hl-q10-c",
-        "label": "(c)",
-        "marks": 12,
-        "rowIds": [
-          "c-method-1",
-          "c-method-2"
-        ]
-      }
-    ]
   },
   {
     "id": "cons-2025-hl-q10-alt-a",
@@ -53440,6 +49382,575 @@
         "rowIds": [
           "b-benefit-1",
           "b-benefit-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-hl-q2-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "site-safety-culture-complete",
+    "questionRef": "2025 HL Q2 — complete",
+    "stem": "",
+    "questionText": "(a) Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site: safety training; health and safety officer; risk assessment audit.\n\n(b) Outline one possible risk to personal safety associated with each of the following: working in a deep trench; installing insulation in an attic space; repairing a chimney capping.\n\n(c) For each risk discussed at 2(b) above, show, using notes and freehand sketches, two best practice guidelines that should be observed to reduce the possibility of injury to a worker undertaking each task.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-safety-training-importance",
+        "kind": "anyN",
+        "verbatim": "The importance of any two in maintaining a positive health and safety culture",
+        "marks": 12,
+        "contextNote": "Any two of the three, 6 each, discussing why each matters to a positive health and safety culture. Safety training: Safe Pass is mandatory and kept current through refresher courses; training builds awareness of site risks and the skills to identify them and follow best practice; specialist tickets for machinery and vehicles; monitoring and enforcing safe work practices; it may be a condition of the insurance provider. Health and safety officer: provides induction and ongoing training (working at heights, machinery use); develops emergency response plans; keeps first aid and emergency equipment available; ensures the correct PPE is worn; carries out safety inspections and risk assessments; reviews the safety statement; investigates, records and reports accidents. Risk assessment audit: provides a safe working environment; evaluates compliance with safety regulations and policies; identifies hazards and puts control measures in place where a risk cannot be eliminated (for fire: alarms, evacuation signage, drills, extinguishers); recommends improvements; identifies training needs; reduces accidents and liability.",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Safety training",
+            "Health and safety officer",
+            "Risk assessment audit"
+          ]
+        }
+      },
+      {
+        "id": "b-b-deep-trench-risk",
+        "kind": "criterion",
+        "verbatim": "Working in a deep trench",
+        "marks": 4,
+        "contextNote": "One risk outlined. Such as: workers seriously injured or buried if the trench sides collapse; machinery or vehicles falling in; materials stored too close to the edge causing a collapse; falling into an unguarded trench; materials falling in; nearby structures undermined.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-b-attic-insulation-risk",
+        "kind": "criterion",
+        "verbatim": "Installing insulation in an attic space",
+        "marks": 4,
+        "contextNote": "One risk outlined. Such as: falling through the plasterboard ceiling; injury when cutting the insulation; skin or eye irritation without a coverall, gloves and goggles; electrocution from exposed wires; fire if insulation covers recessed lights; lung damage from inhaled machine-made mineral fibres (MMMFs).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-b-chimney-capping-risk",
+        "kind": "criterion",
+        "verbatim": "Repairing a chimney capping",
+        "marks": 4,
+        "contextNote": "One risk outlined. Such as: falling or slipping from the roof or from a ladder; equipment or materials dropped on people below; scaffolding collapsing; falling from lifting machinery such as a cherry picker.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-deep-trench-guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
+        "marks": 6,
+        "contextNote": "Note 3 and sketch 3. Such as: a trench box or shuttering to support the sides; battering back (sloping) the sides; a barrier with a toe board, or a temporary cover over a vacant trench.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-deep-trench-guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
+        "marks": 6,
+        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: no materials, machinery or vehicles near the edge; a clearly marked exclusion zone and signage; PPE (hard hat, eye protection, footwear); digging in suitable, not wet, conditions; an engineer’s survey of nearby structures.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-attic-insulation-guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
+        "marks": 6,
+        "contextNote": "Note 3 and sketch 3. Such as: crawl boards to spread the load across the joists, or walking only on the joists and never on the plasterboard ceiling; a hooded coverall and gloves; an appropriate dust mask.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-attic-insulation-guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
+        "marks": 6,
+        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: safety goggles; non-combustible protection covers over downlighters; cutting insulation in a well-ventilated area; kneepads.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-chimney-capping-guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1 (3 for note, 3 for sketch)",
+        "marks": 6,
+        "contextNote": "Note 3 and sketch 3. Such as: a safety harness or other fall protection; scaffolding around the stack erected by certified personnel, tied to the house or chimney, with safety rails and toe boards.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-chimney-capping-guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2 (3 for note, 3 for sketch)",
+        "marks": 6,
+        "contextNote": "A second, different guideline: note 3 and sketch 3. Such as: toe boards and netting against falling objects; ladders secured and extending 1 metre past the scaffolding platform; a cherry picker operated by certified personnel on a level surface, with workers securely attached.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-HL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-HL-q2-trench",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Health and safety on a construction site",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. Part (a) chooses any two of three printed items; parts (b) and (c) require all three activities, each separately priced. The scheme lists typical points, not an exhaustive list."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-hl-q2-a-safety-training",
+        "label": "(a)",
+        "marks": 12,
+        "rowIds": [
+          "a-safety-training-importance"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-hl-q2-b",
+        "label": "(b)",
+        "marks": 12,
+        "rowIds": [
+          "b-b-deep-trench-risk",
+          "b-b-attic-insulation-risk",
+          "b-b-chimney-capping-risk"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-hl-q2-c-deep-trench",
+        "label": "(c) working in a deep trench",
+        "marks": 12,
+        "rowIds": [
+          "c-deep-trench-guideline-1",
+          "c-deep-trench-guideline-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-hl-q2-c-attic-insulation",
+        "label": "(c) installing insulation in an attic space",
+        "marks": 12,
+        "rowIds": [
+          "c-attic-insulation-guideline-1",
+          "c-attic-insulation-guideline-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-hl-q2-c-chimney-capping",
+        "label": "(c) repairing a chimney capping",
+        "marks": 12,
+        "rowIds": [
+          "c-chimney-capping-guideline-1",
+          "c-chimney-capping-guideline-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-hl-q8-b",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-5",
+    "conceptId": "airtight-envelope-b",
+    "questionRef": "2025 HL Q8(b)",
+    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
+    "questionText": "The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 48,
+    "rows": [
+      {
+        "id": "locations",
+        "kind": "anyN",
+        "verbatim": "Best practice design detailing to prevent air leakage at any three of the locations circled",
+        "marks": 48,
+        "contextNote": "Any three of the four circled locations, each notes 8 and sketches 8 = 16, showing the continuous airtight layer. Head of external door: seal the thermally broken door frame to the reveal of the inner block wall with plasterable airtightness tape, then plaster over the tape; or airtightness paint on the reveal before plastering, or slabbing and skimming. First floor junction with external wall: make the wall airtight where the joists bear — an airtightness membrane sealed with airtight silicone or plasterable tape, or sand cement render or airtightness paint; tape each joist where it breaks the airtightness barrier; seal the floor/wall and roof/wall junctions with tape or paint. Wallplate level: an airtightness membrane under the ceiling joists, wrapped onto the wallplate and down onto the first block below it, fixed to the wall with plasterable airtightness tape or a bead of airtight silicone, then scrim or mesh and sand cement plaster. MVHR duct protruding through the ceiling: an airtightness membrane under the joists, sealed to the duct with a self-adhesive grommet fixed to the membrane, or by carefully taping the duct to the membrane with airtightness tape.",
+        "group": {
+          "claimMax": 3,
+          "perOption": 16,
+          "options": [
+            "Head of external door",
+            "First floor junction with external wall",
+            "Wallplate level",
+            "MVHR duct protruding through the ceiling"
+          ]
+        }
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-HL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Airtight building envelope",
+      "pages": [
+        1,
+        6
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    }
+  },
+  {
+    "id": "cons-2025-hl-q8-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-5",
+    "conceptId": "airtight-envelope-complete",
+    "questionRef": "2025 HL Q8 — complete",
+    "stem": "An airtight external building envelope is important in the design of a dwelling house.",
+    "questionText": "(a) Discuss in detail two benefits of preventing air leakage from a dwelling house.\n\n(b) The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-benefit-1",
+        "kind": "criterion",
+        "verbatim": "Benefit 1 (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Point 3 and discussion 3. Such as: lower energy bills because less heat escapes through gaps in the building fabric; lower carbon emissions from heating.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-benefit-2",
+        "kind": "criterion",
+        "verbatim": "Benefit 2 (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different benefit: point 3 and discussion 3. Such as: mechanical ventilation works efficiently with better indoor air quality; no draughts; less moisture entering the fabric (preventing rot); less noise; the insulation performs better.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-locations",
+        "kind": "anyN",
+        "verbatim": "Best practice design detailing to prevent air leakage at any three of the locations circled",
+        "marks": 48,
+        "contextNote": "Any three of the four circled locations, each notes 8 and sketches 8 = 16, showing the continuous airtight layer. Head of external door: seal the thermally broken door frame to the reveal of the inner block wall with plasterable airtightness tape, then plaster over the tape; or airtightness paint on the reveal before plastering, or slabbing and skimming. First floor junction with external wall: make the wall airtight where the joists bear — an airtightness membrane sealed with airtight silicone or plasterable tape, or sand cement render or airtightness paint; tape each joist where it breaks the airtightness barrier; seal the floor/wall and roof/wall junctions with tape or paint. Wallplate level: an airtightness membrane under the ceiling joists, wrapped onto the wallplate and down onto the first block below it, fixed to the wall with plasterable airtightness tape or a bead of airtight silicone, then scrim or mesh and sand cement plaster. MVHR duct protruding through the ceiling: an airtightness membrane under the joists, sealed to the duct with a self-adhesive grommet fixed to the membrane, or by carefully taping the duct to the membrane with airtightness tape.",
+        "group": {
+          "claimMax": 3,
+          "perOption": 16,
+          "options": [
+            "Head of external door",
+            "First floor junction with external wall",
+            "Wallplate level",
+            "MVHR duct protruding through the ceiling"
+          ]
+        }
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-HL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Airtight building envelope",
+      "pages": [
+        1,
+        6
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-hl-q8-a",
+        "label": "a",
+        "marks": 12,
+        "rowIds": [
+          "a-benefit-1",
+          "a-benefit-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-hl-q8-b",
+        "label": "b",
+        "marks": 48,
+        "rowIds": [
+          "b-locations"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-hl-q10-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-4",
+    "conceptId": "rural-passive-house-complete",
+    "questionRef": "2025 HL Q10 — complete",
+    "stem": "The sketch shows the proposed design of a Passive House which is to be constructed in a rural setting.",
+    "questionText": "(a) Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: building form; foundation design; space heating energy demand.\n\n(b) Using notes and freehand sketches, suggest a preferred orientation for the house shown. Show the sun path on your sketch. Discuss two benefits to the homeowner of your preferred orientation.\n\n(c) Solar overheating may occur during the summer months in the house shown. Using notes and freehand sketches, suggest two ways to reduce the possibility of solar overheating while respecting the character of this house design.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-building-form-items",
+        "kind": "anyN",
+        "verbatim": "Discuss the importance of any two in Passive House design",
+        "marks": 20,
+        "contextNote": "Any two of the three, each notes 5 and sketches 5 = 10. Building form: a compact, simple rectangular form with the smallest surface area (A/V ratio 0.7 or less) to cut heat loss, materials and cost; a narrow plan, one room deep, to maximise solar gain; clean lines in walls and roof that make airtightness easy. Foundation design: insulated ring-beam or passive raft foundations wrapped in insulation to eliminate thermal bridging; thermal blocks in the inner-leaf rising wall; 50–100 mm edge insulation at the floor/wall junction; thermally broken wall ties; a U-value of 0.10–0.15 W/m²K. Space heating energy demand: passive house space-heating demand of no more than 15 kWh/m² per year; quality workmanship in airtightness and insulation; eliminating thermal bridges; solar gain through well-designed fenestration; solar shading, thermal mass and controlled ventilation to keep about 20 °C all year.",
+        "group": {
+          "claimMax": 2,
+          "perOption": 10,
+          "options": [
+            "Building form",
+            "Foundation design",
+            "Space heating energy demand"
+          ]
+        }
+      },
+      {
+        "id": "b-sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 8,
+        "contextNote": "Freehand sketch of the house showing the preferred orientation and the sun path.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-orientation",
+        "kind": "criterion",
+        "verbatim": "Orientation",
+        "marks": 4,
+        "contextNote": "Such as: the long axis with the largest amount of glazing facing south to maximise solar gain, with minimal glazing on the north.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-sunpath",
+        "kind": "criterion",
+        "verbatim": "Sunpath",
+        "marks": 4,
+        "contextNote": "The sun path shown on the sketch relative to north and the house.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-benefit-1",
+        "kind": "criterion",
+        "verbatim": "Benefit 1 (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Point 3 and discussion 3. Such as: lower energy bills, as solar gains reduce the need for artificial lighting and heating.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-benefit-2",
+        "kind": "criterion",
+        "verbatim": "Benefit 2 (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different benefit: point 3 and discussion 3. Such as: lower carbon dioxide emissions from less artificial heating; a bright, airy home that enhances wellbeing.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-method-1",
+        "kind": "criterion",
+        "verbatim": "Method 1 to reduce solar overheating",
+        "marks": 6,
+        "contextNote": "Notes 3 and sketches 3. Such as: dynamic (electrochromic) glass that tints in response to light, heat or an electrical signal; or mature deciduous trees that block the summer sun and let winter sun through.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-method-2",
+        "kind": "criterion",
+        "verbatim": "Method 2 to reduce solar overheating",
+        "marks": 6,
+        "contextNote": "A second, different method: notes 3 and sketches 3. Such as: a brise soleil on the south side; internal or external shutters closed against the midday summer sun; high thermal mass (polished concrete floor, exposed stone walls) to even out temperatures.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-HL-q10-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-HL-q10-orientation",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10",
+      "title": "Passive House in a rural setting",
+      "pages": [
+        1,
+        7
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-hl-q10-a-building-form",
+        "label": "a-building-form",
+        "marks": 20,
+        "rowIds": [
+          "a-building-form-items"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-hl-q10-b",
+        "label": "b",
+        "marks": 28,
+        "rowIds": [
+          "b-sketch",
+          "b-orientation",
+          "b-sunpath",
+          "b-benefit-1",
+          "b-benefit-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-hl-q10-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-method-1",
+          "c-method-2"
         ]
       }
     ]

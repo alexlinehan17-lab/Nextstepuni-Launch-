@@ -6,6 +6,7 @@ import { libraryTopicIds } from '../components/MarkBank/libraryGroups';
 import { resolveCurriculumSpecification, findCanonicalTopic } from '../curriculumRegistry';
 import { topicsForPaper, browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 import type { SecCard, SecQuestionCard } from '../types/markBank';
+import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { CONSTRUCTION_2025_HIGHER_ADDED_IDS, CONSTRUCTION_2025_HIGHER_CORRECTED_IDS } from './fixtures/construction2025Reviewed';
 
 const review = JSON.parse(fs.readFileSync('scripts/markbank/authored/construction-studies-2025-higher-reviewed.json', 'utf8')) as {
@@ -17,22 +18,27 @@ const review = JSON.parse(fs.readFileSync('scripts/markbank/authored/constructio
 describe('Construction Studies 2025 Higher source-reviewed Q1–Q10 and alternative Q10', () => {
   it('reconciles original wording, tariffs, every finite route, figures, selection directives and corrections', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2025_higher.py'], { encoding: 'utf8' }));
-    expect(result).toEqual({tasks: 73, addedTasks: 52, correctedTasks: 21, leafTasks: 42, wholeQuestionRoutes: 18,
-      q2Routes: 3, q8Routes: 4, q10Routes: 3, sourceFigures: 37, paperComplete: true});
+    expect(result).toEqual({tasks: 49, addedTasks: 31, correctedTasks: 18, consolidatedLegacy: 3, leafTasks: 35, wholeQuestions: 11,
+      anyNChoiceCards: 3, sourceFigures: 30, paperComplete: true});
   });
 
-  it('pins every reviewed card identity: the added tasks and routes, and the pre-audit IDs corrected in place', () => {
+  it('pins every reviewed card identity: the added tasks, the pre-audit IDs corrected in place, and one card per printed choice', () => {
     expect(review.tasks.filter(t => !t.correction).map(t => t.card.id)).toEqual(CONSTRUCTION_2025_HIGHER_ADDED_IDS);
     expect(review.tasks.filter(t => t.correction).map(t => t.card.id)).toEqual(CONSTRUCTION_2025_HIGHER_CORRECTED_IDS);
     expect(review.corrections.map(c => c.cardId)).toEqual(CONSTRUCTION_2025_HIGHER_CORRECTED_IDS);
-    expect(new Set([...CONSTRUCTION_2025_HIGHER_ADDED_IDS, ...CONSTRUCTION_2025_HIGHER_CORRECTED_IDS]).size).toBe(73);
-    expect(CONSTRUCTION_2025_HIGHER_ADDED_IDS).toHaveLength(52);
-    expect(CONSTRUCTION_2025_HIGHER_CORRECTED_IDS).toHaveLength(21);
+    expect(new Set([...CONSTRUCTION_2025_HIGHER_ADDED_IDS, ...CONSTRUCTION_2025_HIGHER_CORRECTED_IDS]).size).toBe(49);
+    expect(CONSTRUCTION_2025_HIGHER_ADDED_IDS).toHaveLength(31);
+    expect(CONSTRUCTION_2025_HIGHER_CORRECTED_IDS).toHaveLength(18);
     const ids = review.tasks.map(t => t.card.id);
-    expect(ids.filter(id => id.startsWith('cons-2025-hl-q2-complete-'))).toHaveLength(3);
-    expect(ids.filter(id => id.startsWith('cons-2025-hl-q8-complete-'))).toHaveLength(4);
-    expect(ids.filter(id => id.startsWith('cons-2025-hl-q10-complete-'))).toHaveLength(3);
+    // Choice is not a route: one card per printed choice; the other pre-audit per-item IDs are progress aliases.
+    expect(ids.filter(id => id.startsWith('cons-2025-hl-q2-a'))).toEqual(['cons-2025-hl-q2-a-safety-training']);
+    expect(ids.filter(id => id.startsWith('cons-2025-hl-q8-b'))).toEqual(['cons-2025-hl-q8-b']);
+    expect(ids.filter(id => id.startsWith('cons-2025-hl-q10-a-'))).toEqual(['cons-2025-hl-q10-a-building-form']);
+    expect(ids.filter(id => id.includes('-complete'))).toHaveLength(11);
     expect(ids.filter(id => id.startsWith('cons-2025-hl-q10-alt-'))).toHaveLength(3);
+    for (const [oldId, kept] of [['cons-2025-hl-q2-a-health-and-safety-officer', 'cons-2025-hl-q2-a-safety-training'],
+      ['cons-2025-hl-q2-a-risk-assessment-audit', 'cons-2025-hl-q2-a-safety-training'],
+      ['cons-2025-hl-q10-a-foundation-design', 'cons-2025-hl-q10-a-building-form']]) expect(CARD_ID_ALIASES[oldId]).toBe(kept);
   });
 
   it('keeps all 1,018 previous card IDs in place, corrects 21 under their own IDs and appends only the added tasks', () => {
