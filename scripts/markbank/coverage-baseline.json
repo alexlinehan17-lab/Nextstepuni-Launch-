@@ -648,19 +648,19 @@
     "refsHash": "727a4af11e33aa55"
   },
   "politics-and-society": {
-    "cards": 622,
-    "contentHash": "d6aad1dafcedb932",
+    "cards": 623,
+    "contentHash": "edbcf4e587b0b74f",
     "coveragePct": 100.0,
-    "covered": 622,
+    "covered": 623,
     "excluded": 0,
-    "leaves": 622,
+    "leaves": 623,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 17,
       "hash": "6c53167dc5584a52"
     },
-    "refsHash": "f16088d9937710dd"
+    "refsHash": "38694d71adeb29ca"
   },
   "portuguese": {
     "cards": 173,

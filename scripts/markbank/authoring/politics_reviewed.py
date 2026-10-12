@@ -176,13 +176,13 @@ def split_task(identity, label, prompt, *criteria):
     return {'id': identity, 'label': label, 'prompt': prompt, 'criteria': list(criteria)}
 
 
-# These are bounded transcriptions of the selected task, not new questions.
-# The original complete question remains available in the source reader.
+# Prompt overrides and split prompts must be the paper's own words:
+# politics_author.py checks every question word by word against the paper and
+# fails otherwise. A split part without a printed sentence of its own shows the
+# printed question with that part as its practice focus.
 REVIEWED[2018, 'higher'].update({
     'promptOverrides': {
         '1(a)': 'Name a thinker you have studied who argues that the taking of people’s wealth through taxes is a form of theft.\nName the political philosophy that promotes individual freedom and favours minimising the role of government.',
-        '1(i)(i)': 'Give one positive effect of economic globalisation.',
-        '1(i)(ii)': 'Give one negative effect of economic globalisation.',
         '3': 'During his campaign for leadership of Fine Gael, May 2017, Leo Varadkar sent this tweet.\n\nIn the context of the serious social issues facing Irish society today, evaluate whether a new social contract is needed in this country.\n\n[Your answer should be supported by examples and evidence and make reference to at least two named theorists you have studied.]',
     },
     'stemOverrides': {'1(i)': ''},
@@ -502,7 +502,7 @@ REVIEWED[2021, 'higher'] = {
     'topicOverrides': {'2(a)': '1-9', '2(b)': '1-9', '2(c)': '1-9'},
     'essayTopics': {'3': '0-12', '4(a)': '3-8', '4(b)': '2-7', '5': '3-3', '6': '2-3', '7': '0-6'},
     'criterionAllocations': {'2(c)': [('Positive aspect', 10), ('Negative aspect', 10)], '2(g)': [('Evaluation', 30), ('Use of documents', 20)]},
-    'promptOverrides': {'2(g)': 'Drawing on both documents, evaluate the necessity for a campaign such as this about misinformation.\n\nExamine the Ireland at UN campaign in the original question.'},
+    'promptOverrides': {},
     'splits': {'2(c)': [split_task('positive', 'Positive aspect', 'Critique one positive aspect of the use of multiple sources for statistics as used in Document B.', 0), split_task('negative', 'Negative aspect', 'Critique one negative aspect of the use of multiple sources for statistics as used in Document B.', 1)]},
     'boundaryNotes': {
         '1(a),1(d),1(g),1(h),1(l),1(n),1(o)': 'Each paired response has a shared 5-mark cap with conditional transfer from the first 3-mark point to the second. Keep the whole response and its transfer guidance.',
@@ -595,10 +595,7 @@ REVIEWED[2021, 'ordinary']['alignmentReviews'] = {
 }
 REVIEWED[2021, 'ordinary']['promptOverrides'] = {
     '1(b)': 'Describe two strategies to increase the participation of women in political life.',
-    '7': 'Pollution and greenhouse gas levels have fallen across the world due to the halt of economic activity as a result of the global pandemic.\n\nWhat strategies can be used to ensure the world does not return to previous levels?\n\nIn your answer you may focus on one or more of the following: individuals; communities; industries; governments.\n\nYou may be able to draw on the images in the original question in your essay.',
-    '8': 'Has globalisation made the world a better place?\n\nYou may be able to draw on the images in the original question in your essay.\n\nYou may refer to a key thinker to support your answer.',
     '9': 'Discuss the strengths and weaknesses of a coalition government.\nYou may use the following words in your essay.\n• Minority government\n• Shared mandate\n• Representation\n• Alliances\n• Compromise/making decisions\n• Power sharing\n• Opposition\n• Leadership\n• Gender',
-    '10': 'A child or young person’s circumstances, such as their wealth, gender, ethnicity and where they live, play an important role in shaping their opportunities for education and life.\n\nDo you agree or disagree with this statement. Explain your answer.\n\nYou may also use the following phrases and the images in the original question in your essay.\n• Technology in education\n• Poverty\n• Government policy\n• Developing/developed countries\n• Key thinker e.g. Kathleen Lynch.',
 }
 
 REVIEWED[2022, 'higher'] = {
@@ -624,7 +621,6 @@ REVIEWED[2022, 'higher'] = {
         '1(i)': 'Explain the significance of this headline in The Guardian in relation to the climate crisis.',
         '1(m)': 'Critically evaluate this image in the context of the growing power and influence of social media.',
         '1(o)': 'Name one non-democratic country and briefly explain how it is governed.',
-        '2(g)': 'Based on the evidence presented in both documents and the Census questions in the original question, what conclusions can be made about the evolving nature of Irish identity?',
         '6': 'In the context of the findings of the CSO survey and the theories of Sylvia Walby, evaluate whether contemporary Irish society is a patriarchy.\n\n[Your answer should include contemporary examples and evidence from a national context to support your argument.]',
     },
     'boundaryNotes': {
@@ -668,13 +664,8 @@ REVIEWED[2022, 'ordinary'] = {
     'stemOverrides': {'1(d)': 'Study the Climate and Nature Summit opinion-poll chart on young people’s views on climate change in the original question.'},
     'promptOverrides': {
         '1(n)': 'Describe one strategy used by one of the people below or any one individual of your choice who made a positive impact on their society.\n• Nelson Mandela\n• Mahatma Gandhi',
-        '1(o)': 'Using the image in the original question, what conclusion could you draw about inequality in the world today?',
         '1(p)': 'Explain what is meant by ‘bias’ in the media.',
-        '5': 'Discuss the dangers of online misinformation/fake news and what can be done to address this issue in a democratic society.\n\nYou may use the infographic and headings in the original question to support your answer. You may also refer to a relevant key thinker you have studied.',
-        '7': 'Using the infographic in the original question, discuss issues of inequality in the world today and suggest what can be done to address these issues.\n\nYou may also refer to a key thinker you have studied.',
         '8': 'What are the advantages and disadvantages of a democratic government?\n\nYou may use the following words in your essay:\n• Elections/voting\n• Representatives/representation\n• Power\n• Majority/minority\n• Laws/decision-making\n• Referendum\n• Political parties\n• Human rights/civil liberties\n• Hobbes and Locke\n• Coalition.',
-        '9': 'What does the data from St Vincent de Paul in the original question tell us about the social contract in Ireland?',
-        '10': 'The Universal Declaration of Human Rights states that ‘All human beings are born free and equal in dignity and rights’.\n\nDiscuss the issue of racism in society today.\n\nYou may use the infographic in the original question to support your answer.',
     },
     'choices': {},
     'boundaryNotes': {
@@ -727,9 +718,6 @@ REVIEWED[2023, 'higher'] = {
     'criterionAllocations': {'1(h)': [('Explanation of theory', 3), ('Associated theorist', 2)], '2(g)': [('Conclusions', 30), ('Use of documents', 20)]},
     'permittedMarks': {'1(h)': {'Associated theorist': [0, 2]}},
     'promptOverrides': {
-        '1(l)': 'In your opinion, is the cartoon strip in the original question successful in challenging gender stereotypes? Give a reason for your answer.',
-        '1(n)': 'Draw two conclusions about the data from the 2021 Northern Ireland Census in the original question.',
-        '2(g)': 'Drawing on both documents and the images in the original question, what conclusions can you draw about global migration and displacement?',
         '5': 'A report published by the Mercy Corps found that, “Social media has emerged as a powerful tool for communication, connection, community and, unfortunately, conflict.”\n\nCritically evaluate the changing nature of contemporary media.\n\n[Your answer should include contemporary examples and evidence from a local and/or global context to support your argument. You should also refer to the ideas of one named theorist you have studied.]',
     },
     'choices': {
@@ -807,8 +795,6 @@ for _key, _cue in [
     REVIEWED[2023, 'ordinary']['choices'][_key] = {'cue': _cue, 'choose': 1, 'pool': YES_NO}
 
 REVIEWED[2023, 'ordinary']['promptOverrides'] = {
-    '5': 'Discuss the impact of climate change on human rights.\n\nYou may use the infographic in the original question to support your answer. You may also refer to a relevant key thinker you have studied.',
-    '9': 'Are human rights providing a basis for ensuring equality in society today? Discuss.\n\nYou may refer to the image in the original question and use the words below in your essay.\n• Declarations, Conventions, agreements, treaties\n• Children’s Rights\n• Abuses/violations\n• Gender inequality\n• Racism\n• Hate speech\n• Sport\n• Prejudice/discrimination\n• Key thinker',
 }
 
 REVIEWED[2024, 'higher'] = {
@@ -823,8 +809,6 @@ REVIEWED[2024, 'higher'] = {
     'promptOverrides': {
         '1(c)': 'Key thinker Andre Gunder-Frank proposed Dependency Theory to try and explain why some countries remain underdeveloped. Briefly explain this theory.',
         '1(h)': 'Comment on the presentation of the message in this image in the context of the climate crisis.',
-        '1(l)': 'What conclusions can you draw from the statistics in the original question in relation to the media?',
-        '2(g)': 'Drawing on the information in both documents and the statement from Document B in the original question, critique the use of quotas to address gender imbalance in the Irish political system.',
         '3(b)': 'This image is a representation of the poem ‘Home’ by Warsan Shire.\nThe poem explains how some refugees would not leave their home if they were not forced to do so.\n\nDiscuss the refugee crisis in the world today in the context of human rights.\n\n[Your answer should include contemporary examples and evidence from a national and/or global context to support your argument. You should also refer to the ideas of two theorists, one of whom must be named on your course.]',
     },
     'boundaryNotes': {
@@ -941,7 +925,6 @@ REVIEWED[2025, 'ordinary'] = {
     },
     'markNotes': {'2(e)': 'The printed task refers to Document B. The scheme’s top descriptor mentions both documents; both originals are available for reference.'},
     'promptOverrides': {
-        '7': 'The image in the original question highlights the environmental issue of fast fashion facing the world today.\n\nWhat do you think the Irish government and/or international bodies can do to help tackle environmental issues, for example, fast fashion?\n\nYou may refer to the following in your answer:\n• The role of individual efforts\n• What business and corporations can do\n• International agreements (United Nations and the European Union)\n• Underdevelopment and unfair trade\n• Sustainable Development Goals\n• Key thinkers e.g. Sean McDonagh.',
         '8': 'Evaluate the changing nature of contemporary media in society.\n\nYou may refer to the following in your answer:\n• Types of media\n• Control of information\n• Misinformation / Disinformation\n• Regulations\n• Ownership / control of the media\n• The role of advertising\n• Key thinker e.g. Noam Chomsky or Karl Marx.',
     },
     'boundaryNotes': {
@@ -968,3 +951,45 @@ REVIEWED[2025, 'ordinary'] = {
 # https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/politics-and-society/strands-of-study/
 REVIEWED[2021, 'higher']['boundaryNotes']['1(b)-topic'] = 'Capitalism is Topic 2.3 Social Class and Gender in NCCA; the cartoon stays with that canonical node.'
 REVIEWED[2021, 'ordinary']['boundaryNotes']['1(c)-topic'] = 'Capitalism, social class and patriarchy are Topic 2.3 concepts; the card resolves to its canonical node.'
+
+# Lift never write (2026-10-12). These questions had been retyped, mostly to
+# say "in the original question" where the paper says "below". The printed
+# lines are lifted instead: `keep` names the line ranges that are the question
+# (the rest are labels inside the graphic beside it), `bulletO` normalises the
+# paper's "o" bullet glyph. politics_author.py proves every word is printed.
+for (_year, _level), _lifted in {
+    (2021, 'higher'): {'2(g)': {'keep': [(0, 2)]}},
+    (2021, 'ordinary'): {'7': {'keep': [(0, 6)]}, '8': {'keep': [(0, 3)]}, '10': {'keep': [(0, 9)], 'bulletO': True}},
+    (2022, 'higher'): {'2(g)': {'keep': [(0, 2)]}},
+    (2022, 'ordinary'): {'1(o)': {'keep': [(0, 1)]}, '5': {'keep': [(0, 4)]}, '7': {'keep': [(0, 3)]},
+                         '9': {'keep': [(0, 1)]}, '10': {'keep': [(0, 4)]}},
+    (2023, 'higher'): {'1(l)': {'keep': [(0, 2)]}, '1(n)': {'keep': [(0, 1)]}, '2(g)': {'keep': [(0, 2)]}},
+    (2023, 'ordinary'): {'5': {'keep': [(0, 3)]}, '9': {'keep': [(0, 1), (15, 25)]}},
+    (2024, 'higher'): {'1(l)': {'keep': [(0, 1)]}, '2(g)': {}},
+    (2025, 'ordinary'): {'7': {'dropLines': ['FAST FASHION', 'high-cost-of-cheap-trends-bb0433b3d108']}},
+    # Split family whose printed question is interrupted by the pie chart's labels.
+    (2019, 'ordinary'): {'1(r)': {'keep': [(0, 2), (38, 41)]}},
+    # The printed (i)/(ii) are answer labels under one question: show the
+    # question and name the label as the practice focus.
+    (2018, 'higher'): {'1(i)(i)': {'fromStem': True, 'focus': 'Positive effect'},
+                       '1(i)(ii)': {'fromStem': True, 'focus': 'Negative effect'}},
+}.items():
+    REVIEWED[_year, _level].setdefault('liftedPrompts', {}).update(_lifted)
+
+# The Petro statement is printed inside the photograph on paper p14; its words
+# were read from the rendered page because no text layer carries them.
+REVIEWED[2025, 'higher']['visualTranscriptions'] = {
+    '4': ['“A developed country is not a place where the poor have cars. It’s where the rich use public transportation.” — Gustavo Petro.'],
+}
+
+# A choose-one pool that spans syllabus topics keeps one card per topic so each
+# files under its own Atlas heading (AGENTS.md): the civil service is 2.1 Making
+# National Policy; NGOs and statutory bodies are 5.5 State Bodies for Rights.
+REVIEWED[2021, 'ordinary']['choices']['1(f)']['topicGroups'] = [
+    {'id': 'civil-service', 'options': ['Civil service'], 'topic': '0-4'},
+    {'id': 'ngo-statutory', 'options': ['Non-governmental organisations', 'Statutory bodies'], 'topic': '2-4'},
+]
+REVIEWED[2021, 'ordinary']['boundaryNotes']['1(f)'] = ('Role and function are each worth 5 and both describe the one body the candidate chose; the scheme gives no '
+    'organisation-specific content. The civil service (2.1) and NGOs/statutory bodies (5.5) sit under different syllabus topics, so one '
+    'linked 10-mark card per topic, each with the printed question.')
+REVIEWED[2021, 'ordinary']['reviewedTaskCounts'] = {'A': 25, 'B': 15, 'C': 6}

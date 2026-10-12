@@ -12,10 +12,10 @@
     "note": "Every indexed English-language Politics paper. The index contains 2020 Higher only; historical sample/deferred reference headings remain available but are outside this indexed paper corpus."
   },
   "coverage": {
-    "covered": 622,
-    "denominator": 622,
+    "covered": 623,
+    "denominator": 623,
     "higher": 263,
-    "ordinary": 359,
+    "ordinary": 360,
     "open": 0,
     "orphan": 0,
     "unparsed": 0,
@@ -36,7 +36,8 @@
     "sourceHashes": "scripts/markbank/authored/politics-reconciliation.json",
     "independentCensus": "scripts/markbank/authored/politics-census.json",
     "rawSelectionLedger": "scripts/markbank/authored/politics-selection-review.json",
-    "choicePolicy": "2026-10-12: choice is not a route. 34 choose-one and choose-N tasks are one card each with the printed question; 498 branch-only per-option and per-combination cards were withdrawn (none was ever on main)."
+    "choicePolicy": "2026-10-12: a printed choice is not a route. Choose-one and choose-N tasks are one card each with the printed question (2021 OL Q1(f) is one card per syllabus topic of its options); 498 branch-only per-option and per-combination cards were withdrawn (none was ever on main).",
+    "verbatimQuestions": "2026-10-12: every question is printed wording, checked word by word against the paper by politics_author.py. 71 retyped questions now carry the printed text (split parts without their own printed sentence show the printed question with a practice focus); the 2025 HL Q4 quotation is a declared transcription of the photograph it is printed in."
   },
   "validation": {
     "fullSuite": {

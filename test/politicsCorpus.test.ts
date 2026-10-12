@@ -19,7 +19,7 @@ const criteria = (id: string) => {
 describe('Politics complete paper corpus', () => {
   it('ships every independently reviewed task across all 17 indexed papers with no extras', async () => {
     expect(census.papers).toHaveLength(17);
-    expect(cards).toHaveLength(622);
+    expect(cards).toHaveLength(623);
     expect(new Set(cards.map(card => card.id)).size).toBe(cards.length);
     for (const paper of census.papers) {
       const live = cards.filter(card => card.year === paper.year && card.level === paper.level);
@@ -76,10 +76,23 @@ describe('Politics complete paper corpus', () => {
     const reasons = byId.get('politics-2019-ol-q2-d')!;
     expect(reasons.questionText).toBe('Document B gives the reasons why the family have had to move twice in three months. Give two of these reasons.');
     expect(criteria('politics-2019-ol-q2-d')).toEqual([['First reason you gave', 5], ['Second reason you gave', 5]]);
-    // Choose-one tasks keep the printed wording too: no option is written into the question.
-    expect(byId.get('politics-2021-ol-q1-f')!.questionText).toBe(
-      'Explain the role and function of one of the following:\n• Civil service\n• Non-governmental organisations\n• Statutory bodies');
-    expect(criteria('politics-2021-ol-q1-f')).toEqual([['Role', 5], ['Function', 5]]);
+    // Choose-one tasks keep the printed wording too: no option is written into
+    // the question. 2021 OL Q1(f)'s options span two syllabus topics, so it is
+    // one card per topic, each with the printed question and its 5 + 5 grid.
+    for (const [id, topic] of [['politics-2021-ol-q1-f-civil-service', '0-4'], ['politics-2021-ol-q1-f-ngo-statutory', '2-4']]) {
+      expect(byId.get(id)!.questionText).toBe(
+        'Explain the role and function of one of the following:\n• Civil service\n• Non-governmental organisations\n• Statutory bodies');
+      expect(byId.get(id)!.topicId).toBe(`politics-and-society-${topic}`);
+      expect(criteria(id)).toEqual([['Role', 5], ['Function', 5]]);
+    }
+    expect(byId.get('politics-2021-ol-q1-f-ngo-statutory')!.questionRef).toBe('2021 OL Q1(f) — Non-governmental organisations or Statutory bodies');
+    // A split part with no printed sentence of its own shows the printed
+    // question and names the separately priced part as its practice focus.
+    expect(byId.get('politics-2018-hl-q1-g-disadvantage')!.questionText).toBe(
+      'Give one advantage and one disadvantage of Proportional Representation (PR) by single transferable vote (STV).');
+    expect(byId.get('politics-2018-hl-q1-g-disadvantage')!.practiceFocus).toBe('Disadvantage');
+    expect(byId.get('politics-2022-ol-q1-o')!.questionText).toBe('Using the image below what conclusion could you draw about inequality in the world today?');
+    expect(cards.filter(card => /in the original question/.test(card.questionText)).map(card => card.id)).toEqual([]);
     expect(byId.get('politics-2022-ol-q1-b')!.questionText).toBe(
       'Is it important to vote in an election? Give a reason for your answer.\nYes ☐ No ☐');
     expect(criteria('politics-2025-ol-q2-d')).toEqual([['Country', 2], ['Cause of hunger', 8]]);
@@ -96,7 +109,7 @@ describe('Politics complete paper corpus', () => {
     // option or per combination put the same printed question in front of a
     // student up to 286 times, each rewritten to name its options.
     const choices = audit.tasks.filter(task => 'choice' in task && task.choice);
-    expect(choices).toHaveLength(34);
+    expect(choices).toHaveLength(35);
     expect(audit.tasks.some(task => 'route' in task)).toBe(false);
     const families = new Map<string, string[]>();
     for (const task of choices) {
@@ -116,7 +129,14 @@ describe('Politics complete paper corpus', () => {
       // No card names a chosen option in place of the printed question.
       expect(card.questionText, task.id).not.toMatch(/Selected (?:response|answer)|\{selection\}|counting from the top/);
     }
-    for (const [family, ids] of families) expect(ids, family).toHaveLength(1);
+    // One card per family, or per syllabus topic when its printed options span
+    // topics (AGENTS.md); never two cards of one family under one topic.
+    for (const [family, ids] of families) {
+      const topics = ids.map(id => byId.get(id)!.topicId);
+      expect(new Set(topics).size, family).toBe(ids.length);
+    }
+    expect([...families.values()].filter(ids => ids.length > 1).flat()).toEqual(
+      ['politics-2021-ol-q1-f-civil-service', 'politics-2021-ol-q1-f-ngo-statutory']);
   });
 
   it('has no two cards of one printed question marked by identical criteria', () => {
@@ -128,7 +148,8 @@ describe('Politics complete paper corpus', () => {
     for (const card of cards) {
       if (card.rubric.system !== 'politics') throw new Error(card.id);
       const question = `${card.year}|${card.level}|${card.questionRef.split(' — ')[0]}`;
-      const signature = `${question}|${JSON.stringify(card.rubric.criteria.map(criterion => [criterion.label, criterion.maxMarks]))}`;
+      // Per-topic cards of one choice are allowed: they file under different Atlas headings.
+      const signature = `${question}|${card.topicId}|${JSON.stringify(card.rubric.criteria.map(criterion => [criterion.label, criterion.maxMarks]))}`;
       expect(signatures.get(signature), `${card.id} repeats ${signatures.get(signature)}`).toBeUndefined();
       signatures.set(signature, card.id);
     }

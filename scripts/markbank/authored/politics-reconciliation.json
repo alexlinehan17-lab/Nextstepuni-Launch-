@@ -3229,7 +3229,8 @@
         "politics-2021-ol-q1-d-theory",
         "politics-2021-ol-q1-d-thinker",
         "politics-2021-ol-q1-e",
-        "politics-2021-ol-q1-f",
+        "politics-2021-ol-q1-f-civil-service",
+        "politics-2021-ol-q1-f-ngo-statutory",
         "politics-2021-ol-q1-g",
         "politics-2021-ol-q1-h",
         "politics-2021-ol-q1-i",
@@ -3273,7 +3274,7 @@
         "1(a)": "The minister must head one of the candidate’s named departments: keep the dependent 3+3+4 response. Preserve the historical 2021 scheme.",
         "1(c)": "One of three printed terms, marked by one 10-mark grid (“Valid explanation of one term”): one card.",
         "1(d)": "The image fixes the theory and thinker; independently priced 8+2 tasks, split with the image retained.",
-        "1(f)": "Role and function are each worth 5, but both describe the one organisation the candidate chose, and the scheme gives no organisation-specific content. Keep one linked 10-mark card with Role and Function criteria.",
+        "1(f)": "Role and function are each worth 5 and both describe the one body the candidate chose; the scheme gives no organisation-specific content. The civil service (2.1) and NGOs/statutory bodies (5.5) sit under different syllabus topics, so one linked 10-mark card per topic, each with the printed question.",
         "1(h)": "The reason must justify the candidate’s own conclusion: retain the linked 5+5 response.",
         "1(l)": "Write out any five of nine printed acronyms. One card with the printed list and five 2-mark slots; the scheme expands all nine, labelled by acronym.",
         "1(q)": "Printed roman parts independently priced 2,4,4. Further split ii into its 2-mark advantage and 2-mark disadvantage.",
@@ -10172,14 +10173,14 @@
       "choice": null
     },
     {
-      "id": "politics-2021-ol-q1-f",
+      "id": "politics-2021-ol-q1-f-civil-service",
       "paperKey": "1(f)",
       "parentKey": "1(f)",
       "paperPages": [
         4
       ],
       "paperTextSha256": "062dc662b9a8d5b63539dcc8183f36e847907ae1df361c9656627473f4ab251c",
-      "split": null,
+      "split": "civil-service",
       "choice": {
         "key": "1(f)",
         "choose": 1,
@@ -10189,7 +10190,35 @@
           "Non-governmental organisations",
           "Statutory bodies"
         ],
-        "instruction": null
+        "instruction": null,
+        "topicGroup": [
+          "Civil service"
+        ]
+      }
+    },
+    {
+      "id": "politics-2021-ol-q1-f-ngo-statutory",
+      "paperKey": "1(f)",
+      "parentKey": "1(f)",
+      "paperPages": [
+        4
+      ],
+      "paperTextSha256": "062dc662b9a8d5b63539dcc8183f36e847907ae1df361c9656627473f4ab251c",
+      "split": "ngo-statutory",
+      "choice": {
+        "key": "1(f)",
+        "choose": 1,
+        "poolSize": 3,
+        "pool": [
+          "Civil service",
+          "Non-governmental organisations",
+          "Statutory bodies"
+        ],
+        "instruction": null,
+        "topicGroup": [
+          "Non-governmental organisations",
+          "Statutory bodies"
+        ]
       }
     },
     {

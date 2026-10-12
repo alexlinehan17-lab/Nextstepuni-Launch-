@@ -1,8 +1,8 @@
 {
   "v": 1,
-  "method": "Pinned after the visual 17-paper/17-scheme census in politics_reviewed.py and independently handwritten printed boundary inventory in politics_audit.py. Do not regenerate to make coverage pass. 2026-10-12: choose-N and choose-one tasks are one card each (choice is not a route); the 498 per-option and per-combination entries were folded into their 34 printed tasks in place.",
+  "method": "Pinned after the visual 17-paper/17-scheme census in politics_reviewed.py and independently handwritten printed boundary inventory in politics_audit.py. Do not regenerate to make coverage pass. 2026-10-12: choose-N and choose-one tasks are one card each (choice is not a route); the 498 per-option and per-combination entries were folded into their 34 printed tasks in place. 2026-10-12 (later): 2021 OL Q1(f) is one card per syllabus topic of its printed options (civil service; NGOs or statutory bodies).",
   "expectedCards": {
-    "total": 622
+    "total": 623
   },
   "papers": [
     {
@@ -918,7 +918,7 @@
     {
       "year": 2021,
       "level": "ordinary",
-      "expectedCards": 45,
+      "expectedCards": 46,
       "cards": [
         {
           "cardId": "politics-2021-ol-q1-a",
@@ -945,8 +945,12 @@
           "questionRef": "2021 OL Q1(e)"
         },
         {
-          "cardId": "politics-2021-ol-q1-f",
-          "questionRef": "2021 OL Q1(f)"
+          "cardId": "politics-2021-ol-q1-f-civil-service",
+          "questionRef": "2021 OL Q1(f) — Civil service"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-f-ngo-statutory",
+          "questionRef": "2021 OL Q1(f) — Non-governmental organisations or Statutory bodies"
         },
         {
           "cardId": "politics-2021-ol-q1-g",

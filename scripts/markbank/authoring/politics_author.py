@@ -41,29 +41,46 @@ def readable(text, question=False):
 
 
 def lifted_question(task, rule):
-    """The printed question, line for line, for a task the candidate chooses within.
+    """The printed question, line for line.
 
-    Only two things may happen to the extracted paper lines: lines that belong
-    to a graphic beside the question (named in the reviewed rule) are dropped,
-    and the PDF's line wraps are re-flowed so the question reads as the paper
-    prints it on a phone. No word is added, removed or reordered; the final
+    Only three things may happen to the extracted paper lines: lines that
+    belong to a graphic beside the question (named in the reviewed rule, or
+    outside its kept line ranges) are dropped, a printed bullet glyph is
+    normalised, and the PDF's line wraps are re-flowed so the question reads as
+    the paper prints it on a phone. No word is added or reordered; the final
     assertion proves it against the extracted text.
     """
-    lines = readable(task['text'], True).splitlines()
+    lines = readable(task['stem'] if rule.get('fromStem') else task['text'], True).splitlines()
+    if rule.get('keep'):
+        lines = [line for start, end in rule['keep'] for line in lines[start:end]]
     for line in rule.get('dropLines', []):
         assert line in lines, ('Stale dropped graphic line', task['key'], line)
     lines = [line for line in lines if line not in rule.get('dropLines', [])]
+    lines = [re.sub(r'^o (?=[A-Z])', '• ', line) if rule.get('bulletO') else line for line in lines]
     flowed = []
     for line in lines:
         if flowed and flowed[-1] in ('•', '∗'):
             flowed[-1] += ' ' + line            # a bullet glyph extracted onto its own line
-        elif flowed and len(flowed[-1]) >= 40 and not re.search(r'[.?!:]$', flowed[-1]) and line not in ('•', '∗'):
-            flowed[-1] += ' ' + line            # a wrapped sentence, not a printed list item
+        elif flowed and len(flowed[-1]) >= 40 and not re.search(r'[.?!:]$', flowed[-1]) and not line.startswith(('•', '∗')):
+            # A wrapped sentence, not a printed list item; a word hyphenated
+            # across the line break ("socio-" / "economic") rejoins unspaced.
+            flowed[-1] += ('' if flowed[-1].endswith(('-', '‐')) else ' ') + line
         else:
             flowed.append(line)
     text = '\n'.join(flowed)
-    assert text.split() == ' '.join(lines).split(), ('Question wording changed', task['key'])
+    assert re.sub(r'\s+', '', text) == re.sub(r'\s+', '', ''.join(lines)), ('Question wording changed', task['key'])
     return text
+
+
+def tokens(text):
+    return re.findall(r'[a-z0-9]+', clean(text).casefold().replace('’', "'"))
+
+
+def unprinted(text, page_text):
+    """Lines, list items or clauses of a question whose words are not printed, in order."""
+    hay = ' ' + ' '.join(tokens(page_text)) + ' '
+    segments = [segment for segment in re.split(r'\n|;|:\s|•', text) if tokens(segment)]
+    return [segment.strip() for segment in segments if ' ' + ' '.join(tokens(segment)) + ' ' not in hay]
 
 
 def scheme_labels(text):
@@ -167,6 +184,15 @@ def build_tasks(draft, review, matches):
             task['pages'] = paper_groups[parent_key]['pages']
         task['parentKey'] = parent_key
         task['prompt'] = review.get('promptOverrides', {}).get(unit['key'], readable(task['text'], True))
+        lift = review.get('liftedPrompts', {}).get(unit['key'])
+        if lift is not None:
+            assert unit['key'] not in review.get('promptOverrides', {}), ('Lifted and overridden', unit['key'])
+        if lift is not None:
+            task['stem'] = unit.get('stem', '')
+            task['prompt'] = lifted_question(task, lift)
+            if lift.get('focus'):
+                assert lift['focus'] in task['text'], ('Unprinted focus label', unit['key'])
+                task['practiceFocus'] = lift['focus']
         task['stem'] = review.get('stemOverrides', {}).get(unit['key'], review.get('stemOverrides', {}).get(parent_key, readable(unit.get('stem', ''), True)))
         if task['section'] == 'C':
             task['marks'] = sum(c['maxMarks'] for c in draft['essay']['criteria'])
@@ -191,6 +217,7 @@ def build_tasks(draft, review, matches):
                 child['suffix'] = split['id']
                 child['focus'] = split['label']
                 child['prompt'] = split['prompt']
+                child['splitFamily'] = unit['key']
                 child['allocation'] = [task['allocation'][i] for i in split['criteria']]
                 child['marks'] = sum(m for _, m in child['allocation'])
                 tasks.append(child)
@@ -232,11 +259,45 @@ def build_tasks(draft, review, matches):
             task['choice'] = {'key': key, 'choose': rule['choose'], 'poolSize': len(rule['pool']),
                               'pool': [label for _, label in rule['pool']], 'instruction': rule.get('instruction')}
             used_rules.add(key)
+            if rule.get('topicGroups'):
+                # Options under different syllabus topics file under their own
+                # Atlas headings (AGENTS.md): one card per topic, never per option
+                # within one topic. The question text stays the printed one.
+                assert rule['choose'] == 1 and not task.get('suffix'), key
+                labels = [label for _, label in rule['pool']]
+                assert sorted(o for g in rule['topicGroups'] for o in g['options']) == sorted(labels), key
+                assert len({g['topic'] for g in rule['topicGroups']}) == len(rule['topicGroups']) > 1, key
+                for group in rule['topicGroups']:
+                    card = deepcopy(task)
+                    card['suffix'], card['focus'], card['topic'] = group['id'], ' or '.join(group['options']), group['topic']
+                    card['choice'] = {**task['choice'], 'topicGroup': group['options']}
+                    expanded.append(card)
+                continue
         expanded.append(task)
     assert used_rules == set(review.get('choices', {})), ('Stale choice rule', set(review.get('choices', {})) - used_rules)
     for task in expanded:
         key = task['key'] + ('#' + task['suffix'] if task.get('suffix') else '')
         task['topic'] = review.get('topicOverrides', {}).get(key, task['topic'])
+    # Lift never write: every question is the paper's own wording. A split
+    # whose printed boundary has no sentence of its own shows the printed
+    # question with the separately priced part named as its practice focus.
+    with fitz.open(ROOT / draft['source']['papers']['path']) as doc:
+        page_text = {task['key']: ' '.join(doc[p - 1].get_text() for p in task['pages']) for task in expanded}
+    families = {}
+    for task in expanded:
+        if task.get('splitFamily'):
+            families.setdefault(task['splitFamily'], []).append(task)
+    for family, children in families.items():
+        if any(unprinted(child['prompt'], page_text[child['key']]) for child in children):
+            for child in children:
+                child['prompt'] = lifted_question(child, review.get('liftedPrompts', {}).get(family, {}))
+                child['practiceFocus'] = child['focus']
+    for task in expanded:
+        allowed = review.get('visualTranscriptions', {}).get(task['key'], [])
+        for line in allowed:
+            assert line in task['prompt'], ('Stale visual transcription', task['key'])
+        missing = [segment for segment in unprinted(task['prompt'], page_text[task['key']]) if segment not in allowed]
+        assert not missing, ('Question not as printed', draft['source']['year'], draft['source']['level'], task['key'], missing)
     return expanded
 
 
@@ -277,6 +338,7 @@ def card_for(task, draft, review, matches):
         'topicId': 'politics-and-society-' + task['topic'],
         'conceptId': 'politics-and-society-' + task['topic'],
         'paperFileid': src['paperFileid'], 'questionText': task['prompt'], 'stem': task['stem'],
+        **({'practiceFocus': task['practiceFocus']} if task.get('practiceFocus') else {}),
         'totalMarks': task['marks'], 'specVersion': 'politics-and-society:current',
         'schemeCitation': f'SEC Politics and Society {year}, {level.title()} Level marking scheme, pp. {", ".join(map(str, scheme_pages))}. © State Examinations Commission.',
         'sourceMaterial': {

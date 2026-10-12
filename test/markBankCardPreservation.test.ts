@@ -117,7 +117,10 @@ const decks = [
   // ever on main (checked against origin/main 6652f80cc), so they are removed
   // rather than aliased; every one of the other 588 Politics cards is unchanged.
   ['politics-and-society:higher', POLITICS_HIGHER, 263, '6a1acd6ec5281c832c38795ba97751babef5c5a93aa7653a0d0d4b44f79a6bfe'],
-  ['politics-and-society:ordinary', POLITICS_ORDINARY, 359, '9ae8b67318c107f351bca65a8050dfeb595e89171f846462137974e287f48878'],
+  // Then 359 -> 360: 2021 OL Q1(f)'s printed options sit under two syllabus
+  // topics (2.1 civil service; 5.5 NGOs and statutory bodies), so it is one
+  // card per topic (AGENTS.md); the single branch-only q1-f ID is replaced.
+  ['politics-and-society:ordinary', POLITICS_ORDINARY, 360, '0e1168ab9e3d9fcc06012554ce7ed77336e61b6d00d5f197ce331a3b15cf317b'],
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
@@ -838,8 +841,9 @@ describe('Mark Bank card preservation', () => {
     // tasks, 1,086 -> 622 (2026-10-12): 23,539 - 464.
     // Physical Education folds its 101 branch-only route cards into their
     // printed tasks (2026-10-12): 23,075 - 101; Accounting folds 2022 HL
-    // Q6(c)'s six pair cards into one: - 5.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_969);
+    // Q6(c)'s six pair cards into one: - 5; Politics 2021 OL Q1(f) becomes one
+    // card per syllabus topic: + 1.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_970);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
