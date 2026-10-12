@@ -211,7 +211,7 @@ print('source guard passed')
     expect(row.markBankCardIds.slice().sort()).toEqual(CARDS.map(c=>c.id).sort());
     expect(row).toMatchObject({fullVisualReview:'complete',bankAtlasTaskParity:'complete',partAndSelectionReconciliation:'complete'});
     expect(inventory.summary.indexedCards).toBe(1739);
-    expect(inventory.summary.papersPendingFullReview).toBe(64);
+    expect(inventory.summary.papersPendingFullReview).toBe(63);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

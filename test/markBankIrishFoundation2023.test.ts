@@ -143,7 +143,7 @@ print('source guard passed')
     const row=inventory.papers.find(p=>p.key==='2023|foundation|LC001BLP000IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(cards.map(c=>c.id).sort());
     expect(row).toMatchObject({fullVisualReview:'complete',bankAtlasTaskParity:'complete',partAndSelectionReconciliation:'complete'});
-    expect(inventory.summary.papersPendingFullReview).toBe(64);
+    expect(inventory.summary.papersPendingFullReview).toBe(63);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });
