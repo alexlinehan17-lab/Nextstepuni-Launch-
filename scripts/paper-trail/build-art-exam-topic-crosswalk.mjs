@@ -202,6 +202,65 @@ const blockedReason = parsed => {
   return null;
 };
 
+// Reviewed reference anomalies. The reference files these questions under a
+// heading that the SEC paper's own printed dates or works contradict; each was
+// decided 2026-10-12 from the paper (StudyClix is a cross-check, never the
+// authority). The association is kept as an audited anomaly and the question
+// is filed under the heading the paper supports, which is also the heading of
+// its Mark Bank card.
+const REVIEWED_REFERENCE_ANOMALIES = [
+  {
+    level: 'higher', year: 2021, n: '3',
+    referenceTopicId: 'art-higher-pre-christian-ireland-c-4000bc-ad500',
+    topicId: 'art-higher-insular-art-c-500-1100s',
+    evidence: 'Q3 is "The Tara Brooch displays the artistry and technical brilliance of 8th century Irish metalwork": 8th-century Early Christian metalwork is Insular Art (c. 500-1100s), not Pre-Christian Ireland (c. 4000BC-AD500).',
+  },
+  {
+    level: 'higher', year: 2021, n: '6',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-post-1960s-art-in-ireland',
+    evidence: "Q6 is 'Portrait of Henry Shefflin (b.1979), Hurler', illustrated on the accompanying sheet: a portrait of a sitter born in 1979 is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2021, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is 'The Hare Queen' by Fidelma Massey (b.1956), illustrated on the accompanying sheet: the work of an artist born in 1956 is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'higher', year: 2022, n: '6',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-post-1960s-art-in-ireland',
+    evidence: "Q6 is \"Public sculpture should be created in response to the place in which it is situated\", with reference to 'Harmony' by Sandra Bell, illustrated on the accompanying sheet: a contemporary public sculpture is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2022, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is 'The Family', a sculpture by Maurice Harron (b.1946), illustrated on the accompanying sheet: the work of an artist born in 1946 is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'higher', year: 2022, n: '13',
+    referenceTopicId: 'art-higher-modernism-c-1900-1960s',
+    topicId: 'art-higher-realism-impressionism-and-post-impressionism',
+    evidence: 'Q13 is "Vincent van Gogh (1853-1890) attempted to convey intense emotion using strong colour and bold brushwork": a painter who died in 1890 is Post-Impressionism (c. 1850-1900s), not Modernism (c. 1900-1960s).',
+  },
+  {
+    level: 'ordinary', year: 2022, n: '8',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-europe-romanesque-and-gothic',
+    evidence: "Q8 is the 'Last Judgement' by Gislebertus (12th century), illustrated on the accompanying sheet: a 12th-century tympanum is Romanesque and Gothic, not The Renaissance (c. 1300-1600s).",
+  },
+];
+const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
+  item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
+));
+for (const item of REVIEWED_REFERENCE_ANOMALIES) {
+  for (const id of [item.referenceTopicId, item.topicId]) {
+    if (topicLevel.get(id) !== item.level) throw new Error(`Art anomaly ${item.year} Q${item.n}: ${id} is not ${item.level}`);
+  }
+}
+
 const associations = [];
 for (const level of LEVELS) {
   for (const topic of reference.variants[level].topics) {
@@ -219,6 +278,30 @@ for (const level of LEVELS) {
           resolution: 'source-blocked',
           reason: explicitBlock
             ?? 'No matching entitled local SEC Art written-paper card is present. The factual heading is retained pending independent verification; no StudyClix-hosted question image or PDF is copied.',
+        });
+        continue;
+      }
+      const anomaly = parsed.sitting === 'main'
+        ? anomalyFor(level, parsed.year, parsed.questionNumber, topic.id)
+        : undefined;
+      if (anomaly) {
+        anomaly.seen = (anomaly.seen ?? 0) + 1;
+        associations.push({
+          topicId: topic.id,
+          level,
+          heading,
+          ...parsed,
+          resolution: 'reference-anomaly',
+          target: {
+            level,
+            lang: 'ev',
+            year: parsed.year,
+            paperKey: 'single',
+            fileid: paper.fileid,
+            questionNumber: parsed.questionNumber,
+          },
+          filedUnder: anomaly.topicId,
+          reason: `StudyClix files this ${parsed.year} ${level} heading under ${topic.id}. Decided 2026-10-12 from the SEC paper: ${anomaly.evidence} NextStepUni files the question under ${anomaly.topicId}, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly.`,
         });
         continue;
       }
@@ -268,6 +351,15 @@ if (
 if (associations.length !== referenceOfficialAssociations) {
   throw new Error(`Expected ${referenceOfficialAssociations} reconciliations, found ${associations.length}`);
 }
+const unusedAnomalies = REVIEWED_REFERENCE_ANOMALIES.filter(item => item.seen !== 1);
+if (unusedAnomalies.length) {
+  throw new Error(`Art reviewed anomalies must each match one association: ${unusedAnomalies.map(item => `${item.year} ${item.level} Q${item.n}`).join(', ')}`);
+}
+const reviewedTopicsByCard = new Map(REVIEWED_REFERENCE_ANOMALIES.map(item => {
+  const paper = EnglishWrittenPaper(item.level, item.year);
+  return [[item.level, item.year, paper.fileid, item.n].join('|'), [topicIndex.get(item.topicId)]];
+}));
+
 
 const exactTopicsByCard = new Map();
 for (const association of associations.filter(item => item.resolution === 'matched')) {
@@ -384,6 +476,61 @@ for (const paper of supplementedPapers) {
   }
 }
 
+// A choose-one list whose printed options are different syllabus periods or
+// movements is carded one card per option (Mark Bank OPTION_TOPICS). The
+// question-level reference heading is generic, so each option's own heading
+// is added to the question's browse topics, with a reviewed part reference
+// naming the printed option, so the card appears under its own heading.
+const optionTopicsByCard = new Map();
+const reviewedOptionTopics = [];
+for (const card of authored.cards) {
+  const [base, option] = card.questionRef.split(' · ');
+  if (!option || /^task \d$/.test(option)) continue;
+  const n = base.match(/\bQ(\d+)/)?.[1];
+  const paper = EnglishWrittenPaper(card.level, card.year);
+  if (!n || !paper) throw new Error(`Cannot place Art option card ${card.id}`);
+  const index = fallbackTopicForNode(card.level, card.topicId);
+  const key = [card.level, card.year, paper.fileid, n].join('|');
+  const indexes = optionTopicsByCard.get(key) ?? [];
+  if (!indexes.includes(index)) indexes.push(index);
+  optionTopicsByCard.set(key, indexes);
+  if (!reviewedOptionTopics.some(item => item.key === `${key}|${option}`)) {
+    reviewedOptionTopics.push({
+      key: `${key}|${option}`,
+      level: card.level,
+      year: card.year,
+      fileid: paper.fileid,
+      questionNumber: n,
+      option,
+      canonicalNodeId: card.topicId,
+      topicId: allTopics[index].id,
+      heading: `${card.year} - Question ${n} - ${option}`,
+    });
+  }
+}
+
+// Where the reference gives a question only a generic bucket ("Section A:
+// Generic Questions", "Section B: Generic Questions"), its reviewed Mark Bank
+// card names the specific heading; the question is added under that heading
+// too, so the card and the Atlas agree.
+const GENERIC_TOPIC_INDEXES = new Set([
+  'art-higher-section-a-generic-questions',
+  'art-higher-section-b-generic-questions',
+  'art-ordinary-section-b-generic-questions',
+].map(id => topicIndex.get(id)));
+const cardTopicsByQuestion = new Map();
+for (const card of authored.cards) {
+  const n = card.questionRef.split(' · ')[0].match(/\bQ(\d+)/)?.[1];
+  const paper = EnglishWrittenPaper(card.level, card.year);
+  if (!n || !paper) continue;
+  const key = [card.level, card.year, paper.fileid, n].join('|');
+  const indexes = cardTopicsByQuestion.get(key) ?? [];
+  const index = fallbackTopicForNode(card.level, card.topicId);
+  if (!indexes.includes(index)) indexes.push(index);
+  cardTopicsByQuestion.set(key, indexes);
+}
+const reviewedSpecificTopics = [];
+
 const questionMappings = [];
 const retainedLocalCards = [];
 const retainedLogical = new Set();
@@ -395,7 +542,7 @@ for (const paper of localPapers) {
       englishTwin(paper.fileid),
       question.n,
     ].join('|');
-    let indexes = exactTopicsByCard.get(exactKey);
+    let indexes = reviewedTopicsByCard.get(exactKey) ?? exactTopicsByCard.get(exactKey);
     if (!indexes) {
       indexes = [...new Set(
         [question.primary, question.secondary]
@@ -423,6 +570,26 @@ for (const paper of localPapers) {
       }
     }
     if (!indexes.length) throw new Error(`${paperIdentity(paper)} Q${question.n}: empty topic mapping`);
+    const optionIndexes = WRITTEN_COMPONENTS.has(componentCode(paper.fileid))
+      ? optionTopicsByCard.get(exactKey) ?? []
+      : [];
+    indexes = [...new Set([...indexes, ...optionIndexes])];
+    const cardIndexes = WRITTEN_COMPONENTS.has(componentCode(paper.fileid))
+      ? cardTopicsByQuestion.get(exactKey) ?? []
+      : [];
+    if (cardIndexes.length && indexes.every(index => GENERIC_TOPIC_INDEXES.has(index))) {
+      const added = cardIndexes.filter(index => !indexes.includes(index));
+      indexes = [...indexes, ...added];
+      if (paper.lang === 'ev' && added.length) {
+        reviewedSpecificTopics.push({
+          level: paper.level,
+          year: paper.year,
+          fileid: paper.fileid,
+          questionNumber: question.n,
+          topicIds: added.map(index => allTopics[index].id),
+        });
+      }
+    }
     questionMappings.push([
       paper.level === 'higher' ? 'h' : 'o',
       paper.lang === 'ev' ? 'e' : 'i',
@@ -453,6 +620,7 @@ for (const paper of localPapers) {
 
 const matchedAssociations = associations.filter(item => item.resolution === 'matched');
 const sourceBlockedAssociations = associations.filter(item => item.resolution === 'source-blocked');
+const referenceAnomalyAssociations = associations.filter(item => item.resolution === 'reference-anomaly');
 const matchedQuestionTopicLinks = new Set(matchedAssociations.map(item => [
   item.topicId,
   item.level,
@@ -475,14 +643,24 @@ if (physicalMappings !== 2154 || questionMappings.length !== 2154) {
 if (distinctStudentFacingQuestions !== 1077) {
   throw new Error(`Expected 1,077 Art logical questions, found ${distinctStudentFacingQuestions}`);
 }
-if (exactTopicsByCard.size + retainedLocalCards.length !== distinctStudentFacingQuestions) {
-  throw new Error('Every logical Art card must be exactly matched or explicitly retained');
+if (
+  exactTopicsByCard.size + reviewedTopicsByCard.size + retainedLocalCards.length
+  !== distinctStudentFacingQuestions
+) {
+  throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
+}
+if ([...reviewedTopicsByCard.keys()].some(key => exactTopicsByCard.has(key))) {
+  throw new Error('A reviewed Art anomaly question must have no other reference association');
 }
 if (
-  matchedAssociations.length !== 592
+  matchedAssociations.length !== 585
   || sourceBlockedAssociations.length !== 98
-  || exactTopicsByCard.size !== 541
-  || matchedQuestionTopicLinks !== 584
+  || referenceAnomalyAssociations.length !== 7
+  || exactTopicsByCard.size !== 534
+  || reviewedTopicsByCard.size !== 7
+  || matchedQuestionTopicLinks !== 577
+  || reviewedOptionTopics.length !== 28
+  || reviewedSpecificTopics.length !== 10
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392
@@ -526,7 +704,7 @@ const partReferences = associations.map(association => [
   topicIndex.get(association.topicId),
   association.year - 2000,
   sittingCode[association.sitting],
-  association.resolution === 'matched' ? componentCode(association.target.fileid) : '',
+  association.target ? componentCode(association.target.fileid) : '',
   association.questionNumber,
   association.heading,
 ]);
@@ -541,7 +719,11 @@ const summary = {
   referenceProviderSampleAssociations,
   matchedAssociations: matchedAssociations.length,
   sourceBlockedAssociations: sourceBlockedAssociations.length,
+  referenceAnomalyAssociations: referenceAnomalyAssociations.length,
   matchedLogicalCards: exactTopicsByCard.size,
+  reviewedLogicalCards: reviewedTopicsByCard.size,
+  reviewedOptionTopics: reviewedOptionTopics.length,
+  reviewedSpecificTopics: reviewedSpecificTopics.length,
   matchedQuestionTopicLinks,
   retainedLocalLogicalCards: retainedLocalCards.length,
   retainedWrittenLogicalCards,
@@ -575,11 +757,16 @@ const evidence = {
   reviewedLocalEvidence: {
     ordinary2023: 'Official SEC LC014GLP000EV paper inspected directly; Q1–Q7 are Section A and Q8–Q19 align one-to-one with the printed Section B/C period headings.',
     canonical2023To2025: 'Existing authored Mark Bank cards provide the directly reviewed canonical syllabus node for each written question.',
+    referenceAnomalies: 'Seven 2021-2022 questions the reference files under a heading their printed dates or works contradict are filed under the heading the SEC paper supports (resolution reference-anomaly, with the evidence).',
+    specificTopics: 'A question the reference files only under a generic bucket is also filed under the specific heading of its reviewed Mark Bank card (reviewedSpecificTopics).',
+    optionTopics: 'Each printed option of a 2021-2022 choose-one question whose options are different periods or movements is added under its own heading (reviewedOptionTopics), matching its Mark Bank card.',
   },
   summary,
   curriculumCrosswalk,
   associations,
   retainedLocalCards,
+  reviewedOptionTopics: reviewedOptionTopics.map(({ key, ...item }) => item),
+  reviewedSpecificTopics,
 };
 const runtime = {
   v: 1,

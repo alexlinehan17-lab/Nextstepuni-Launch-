@@ -17,7 +17,10 @@
   },
   "reviewedLocalEvidence": {
     "ordinary2023": "Official SEC LC014GLP000EV paper inspected directly; Q1–Q7 are Section A and Q8–Q19 align one-to-one with the printed Section B/C period headings.",
-    "canonical2023To2025": "Existing authored Mark Bank cards provide the directly reviewed canonical syllabus node for each written question."
+    "canonical2023To2025": "Existing authored Mark Bank cards provide the directly reviewed canonical syllabus node for each written question.",
+    "referenceAnomalies": "Seven 2021-2022 questions the reference files under a heading their printed dates or works contradict are filed under the heading the SEC paper supports (resolution reference-anomaly, with the evidence).",
+    "specificTopics": "A question the reference files only under a generic bucket is also filed under the specific heading of its reviewed Mark Bank card (reviewedSpecificTopics).",
+    "optionTopics": "Each printed option of a 2021-2022 choose-one question whose options are different periods or movements is added under its own heading (reviewedOptionTopics), matching its Mark Bank card."
   },
   "summary": {
     "referenceTopics": 32,
@@ -27,10 +30,14 @@
     "referenceOfficialAssociations": 690,
     "referenceMockAssociations": 609,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 592,
+    "matchedAssociations": 585,
     "sourceBlockedAssociations": 98,
-    "matchedLogicalCards": 541,
-    "matchedQuestionTopicLinks": 584,
+    "referenceAnomalyAssociations": 7,
+    "matchedLogicalCards": 534,
+    "reviewedLogicalCards": 7,
+    "reviewedOptionTopics": 28,
+    "reviewedSpecificTopics": 10,
+    "matchedQuestionTopicLinks": 577,
     "retainedLocalLogicalCards": 536,
     "retainedWrittenLogicalCards": 144,
     "retainedPracticalLogicalCards": 392,
@@ -2398,7 +2405,7 @@
       "sitting": "main",
       "section": "2",
       "questionNumber": "13",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -2406,7 +2413,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP000EV.pdf",
         "questionNumber": "13"
-      }
+      },
+      "filedUnder": "art-higher-realism-impressionism-and-post-impressionism",
+      "reason": "StudyClix files this 2022 higher heading under art-higher-modernism-c-1900-1960s. Decided 2026-10-12 from the SEC paper: Q13 is \"Vincent van Gogh (1853-1890) attempted to convey intense emotion using strong colour and bold brushwork\": a painter who died in 1890 is Post-Impressionism (c. 1850-1900s), not Modernism (c. 1900-1960s). NextStepUni files the question under art-higher-realism-impressionism-and-post-impressionism, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-modernism-c-1900-1960s",
@@ -4927,7 +4936,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "6",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -4935,7 +4944,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP000EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "filedUnder": "art-higher-post-1960s-art-in-ireland",
+      "reason": "StudyClix files this 2022 higher heading under art-higher-irish-art-and-modernism. Decided 2026-10-12 from the SEC paper: Q6 is \"Public sculpture should be created in response to the place in which it is situated\", with reference to 'Harmony' by Sandra Bell, illustrated on the accompanying sheet: a contemporary public sculpture is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s). NextStepUni files the question under art-higher-post-1960s-art-in-ireland, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-irish-art-and-modernism",
@@ -4981,7 +4992,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "6",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -4989,7 +5000,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP000EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "filedUnder": "art-higher-post-1960s-art-in-ireland",
+      "reason": "StudyClix files this 2021 higher heading under art-higher-irish-art-and-modernism. Decided 2026-10-12 from the SEC paper: Q6 is 'Portrait of Henry Shefflin (b.1979), Hurler', illustrated on the accompanying sheet: a portrait of a sitter born in 1979 is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s). NextStepUni files the question under art-higher-post-1960s-art-in-ireland, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-irish-art-and-modernism",
@@ -5825,7 +5838,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "3",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -5833,7 +5846,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP000EV.pdf",
         "questionNumber": "3"
-      }
+      },
+      "filedUnder": "art-higher-insular-art-c-500-1100s",
+      "reason": "StudyClix files this 2021 higher heading under art-higher-pre-christian-ireland-c-4000bc-ad500. Decided 2026-10-12 from the SEC paper: Q3 is \"The Tara Brooch displays the artistry and technical brilliance of 8th century Irish metalwork\": 8th-century Early Christian metalwork is Insular Art (c. 500-1100s), not Pre-Christian Ireland (c. 4000BC-AD500). NextStepUni files the question under art-higher-insular-art-c-500-1100s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-pre-christian-ireland-c-4000bc-ad500",
@@ -9527,7 +9542,7 @@
       "sitting": "main",
       "section": "2",
       "questionNumber": "8",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9535,7 +9550,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP000EV.pdf",
         "questionNumber": "8"
-      }
+      },
+      "filedUnder": "art-ordinary-europe-romanesque-and-gothic",
+      "reason": "StudyClix files this 2022 ordinary heading under art-ordinary-europe-the-renaissance-c-1300-1600s. Decided 2026-10-12 from the SEC paper: Q8 is the 'Last Judgement' by Gislebertus (12th century), illustrated on the accompanying sheet: a 12th-century tympanum is Romanesque and Gothic, not The Renaissance (c. 1300-1600s). NextStepUni files the question under art-ordinary-europe-romanesque-and-gothic, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
@@ -10881,7 +10898,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "6",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -10889,7 +10906,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP000EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "filedUnder": "art-ordinary-post-1960s-art-in-ireland",
+      "reason": "StudyClix files this 2022 ordinary heading under art-ordinary-irish-art-and-modernism. Decided 2026-10-12 from the SEC paper: Q6 is 'The Family', a sculpture by Maurice Harron (b.1946), illustrated on the accompanying sheet: the work of an artist born in 1946 is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s). NextStepUni files the question under art-ordinary-post-1960s-art-in-ireland, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-irish-art-and-modernism",
@@ -10917,7 +10936,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "6",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -10925,7 +10944,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP000EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "filedUnder": "art-ordinary-post-1960s-art-in-ireland",
+      "reason": "StudyClix files this 2021 ordinary heading under art-ordinary-irish-art-and-modernism. Decided 2026-10-12 from the SEC paper: Q6 is 'The Hare Queen' by Fidelma Massey (b.1956), illustrated on the accompanying sheet: the work of an artist born in 1956 is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s). NextStepUni files the question under art-ordinary-post-1960s-art-in-ireland, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-irish-art-and-modernism",
@@ -20361,6 +20382,380 @@
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
+    }
+  ],
+  "reviewedOptionTopics": [
+    {
+      "level": "higher",
+      "year": 2021,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "14",
+      "option": "Jan van Eyck (c.1390-1441)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2021 - Question 14 - Jan van Eyck (c.1390-1441)"
+    },
+    {
+      "level": "higher",
+      "year": 2021,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "14",
+      "option": "El Greco (1541-1614)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2021 - Question 14 - El Greco (1541-1614)"
+    },
+    {
+      "level": "higher",
+      "year": 2021,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "14",
+      "option": "Jean-Auguste-Dominique Ingres (1780-1867)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2021 - Question 14 - Jean-Auguste-Dominique Ingres (1780-1867)"
+    },
+    {
+      "level": "higher",
+      "year": 2021,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "14",
+      "option": "Paul Gauguin (1848-1903)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2021 - Question 14 - Paul Gauguin (1848-1903)"
+    },
+    {
+      "level": "higher",
+      "year": 2021,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "14",
+      "option": "Henry Moore (1898-1986)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2021 - Question 14 - Henry Moore (1898-1986)"
+    },
+    {
+      "level": "higher",
+      "year": 2021,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "15",
+      "option": "Baroque",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2021 - Question 15 - Baroque"
+    },
+    {
+      "level": "higher",
+      "year": 2021,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "15",
+      "option": "Rococo",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2021 - Question 15 - Rococo"
+    },
+    {
+      "level": "higher",
+      "year": 2021,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "15",
+      "option": "Cubism",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2021 - Question 15 - Cubism"
+    },
+    {
+      "level": "higher",
+      "year": 2021,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "15",
+      "option": "Futurism",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2021 - Question 15 - Futurism"
+    },
+    {
+      "level": "ordinary",
+      "year": 2021,
+      "fileid": "LC014GLP000EV.pdf",
+      "questionNumber": "14",
+      "option": "‘The Arnolfini Portrait’ by Jan van Eyck (c.1390-1441)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2021 - Question 14 - ‘The Arnolfini Portrait’ by Jan van Eyck (c.1390-1441)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2021,
+      "fileid": "LC014GLP000EV.pdf",
+      "questionNumber": "14",
+      "option": "‘The Taking of Christ’ by Caravaggio (1571-1610)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-ordinary-the-baroque-c-1600-1700s",
+      "heading": "2021 - Question 14 - ‘The Taking of Christ’ by Caravaggio (1571-1610)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2021,
+      "fileid": "LC014GLP000EV.pdf",
+      "questionNumber": "14",
+      "option": "‘Night Watch’ by Rembrandt van Rijn (1606-1669)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-ordinary-the-baroque-c-1600-1700s",
+      "heading": "2021 - Question 14 - ‘Night Watch’ by Rembrandt van Rijn (1606-1669)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2021,
+      "fileid": "LC014GLP000EV.pdf",
+      "questionNumber": "14",
+      "option": "‘Van Gogh’s Bedroom in Arles’ by Vincent van Gogh (1853-1890)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+      "heading": "2021 - Question 14 - ‘Van Gogh’s Bedroom in Arles’ by Vincent van Gogh (1853-1890)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2021,
+      "fileid": "LC014GLP000EV.pdf",
+      "questionNumber": "14",
+      "option": "‘Portrait of Madame Matisse. The Green Line, 1905’ by Henri Matisse (1869-1954)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-ordinary-europe-modernism-c-1900-1960s",
+      "heading": "2021 - Question 14 - ‘Portrait of Madame Matisse. The Green Line, 1905’ by Henri Matisse (1869-1954)"
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "14",
+      "option": "Paolo Uccello (c.1397-1475)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2022 - Question 14 - Paolo Uccello (c.1397-1475)"
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "14",
+      "option": "Diego Velázquez (1599-1660)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2022 - Question 14 - Diego Velázquez (1599-1660)"
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "14",
+      "option": "J.M.W. Turner (1775-1851)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2022 - Question 14 - J.M.W. Turner (1775-1851)"
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "14",
+      "option": "Edvard Munch (1863-1944)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2022 - Question 14 - Edvard Munch (1863-1944)"
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "14",
+      "option": "Pablo Picasso (1881-1973)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2022 - Question 14 - Pablo Picasso (1881-1973)"
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "15",
+      "option": "International Gothic",
+      "canonicalNodeId": "art-4-0",
+      "topicId": "art-higher-romanesque-and-gothic",
+      "heading": "2022 - Question 15 - International Gothic"
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "15",
+      "option": "Impressionism",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2022 - Question 15 - Impressionism"
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "15",
+      "option": "Die Brücke",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2022 - Question 15 - Die Brücke"
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "15",
+      "option": "Surrealism",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2022 - Question 15 - Surrealism"
+    },
+    {
+      "level": "ordinary",
+      "year": 2022,
+      "fileid": "LC014GLP000EV.pdf",
+      "questionNumber": "14",
+      "option": "‘Mary Magdalene’ by Donatello (c.1386-1466)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2022 - Question 14 - ‘Mary Magdalene’ by Donatello (c.1386-1466)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2022,
+      "fileid": "LC014GLP000EV.pdf",
+      "questionNumber": "14",
+      "option": "‘Girl with a Pearl Earring’ by Johannes Vermeer (1632-1675)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-ordinary-the-baroque-c-1600-1700s",
+      "heading": "2022 - Question 14 - ‘Girl with a Pearl Earring’ by Johannes Vermeer (1632-1675)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2022,
+      "fileid": "LC014GLP000EV.pdf",
+      "questionNumber": "14",
+      "option": "‘The Death of Marat’ by Jacques-Louis David (1748-1825)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-ordinary-section-b-generic-questions",
+      "heading": "2022 - Question 14 - ‘The Death of Marat’ by Jacques-Louis David (1748-1825)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2022,
+      "fileid": "LC014GLP000EV.pdf",
+      "questionNumber": "14",
+      "option": "‘A Bar at the Folies-Bergère’ by Edouard Manet (1832-1883)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+      "heading": "2022 - Question 14 - ‘A Bar at the Folies-Bergère’ by Edouard Manet (1832-1883)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2022,
+      "fileid": "LC014GLP000EV.pdf",
+      "questionNumber": "14",
+      "option": "‘The Scream’ by Edvard Munch (1863-1944)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-ordinary-europe-modernism-c-1900-1960s",
+      "heading": "2022 - Question 14 - ‘The Scream’ by Edvard Munch (1863-1944)"
+    }
+  ],
+  "reviewedSpecificTopics": [
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "1",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "2",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "3",
+      "topicIds": [
+        "art-higher-art-as-social-commentary-or-commentator"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "4",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "5",
+      "topicIds": [
+        "art-higher-artists-theory-and-thinking"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "6",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "7",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "17",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "19",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC014ALP000EV.pdf",
+      "questionNumber": "20",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
     }
   ]
 }

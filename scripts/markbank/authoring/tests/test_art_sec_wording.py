@@ -164,19 +164,6 @@ class ArtSecWordingTest(unittest.TestCase):
                     text = ' '.join([card.get('stem') or '', card['questionText'], *card['taskRequirements']])
                     self.assertNotIn(label, text, card['id'])
 
-    # Questions where the card keeps a different heading from the Atlas's,
-    # because the Atlas's own mapping contradicts the printed dates or works.
-    # Each is reported for an Atlas correction; none may be added silently.
-    ATLAS_DISAGREEMENTS = {
-        (2021, 'higher', 3): ('art-5-1', 'the Tara Brooch, 8th-century metalwork: Insular Art (Atlas: Pre-Christian)'),
-        (2021, 'higher', 6): ('art-5-5', "'Portrait of Henry Shefflin (b.1979)': Post 1960s (Atlas: Irish Modernism)"),
-        (2021, 'ordinary', 6): ('art-5-5', "'The Hare Queen' by Fidelma Massey (b.1956): Post 1960s (Atlas: Irish Modernism)"),
-        (2022, 'higher', 6): ('art-5-5', "'Harmony' by Sandra Bell, public sculpture: Post 1960s (Atlas: Irish Modernism)"),
-        (2022, 'ordinary', 6): ('art-5-5', "'The Family' by Maurice Harron (b.1946): Post 1960s (Atlas: Irish Modernism)"),
-        (2022, 'higher', 13): ('art-4-3', 'Vincent van Gogh (1853-1890): Post-Impressionism (Atlas: Modernism)'),
-        (2022, 'ordinary', 8): ('art-4-0', "Gislebertus' 'Last Judgement' (12th century): Romanesque (Atlas: Renaissance)"),
-    }
-
     def test_audited_topics_are_ones_the_atlas_gives_the_question(self):
         runtime = json.loads((ROOT / 'data/examTopics/art-runtime.json').read_text())
         topics = runtime['topics']
@@ -190,19 +177,9 @@ class ArtSecWordingTest(unittest.TestCase):
             if card['year'] not in AUDITED:
                 continue
             number = int(re.search(r'Q(\d+)', card['questionRef']).group(1))
+            # No exceptions: reviewed anomalies, per-option headings and the
+            # specific headings of generic-only questions are in the Atlas.
             allowed = set(atlas.get((card['year'], card['level'][0], number)) or ())
-            if allowed == {'art-6-4'}:
-                # The Atlas files the question only under the catch-all
-                # (2023 HL Section A, some 2021-22 Section III questions); the
-                # card needs a specific Today's World topic.
-                allowed = {'art-6-0', 'art-6-1', 'art-6-2', 'art-6-3'}
-            key = (card['year'], card['level'], number)
-            if key in art_cards.OPTION_TOPICS:
-                # A per-option card files under its option's heading
-                # (art_cards.OPTION_TOPICS: the options span headings).
-                allowed |= set(art_cards.OPTION_TOPICS[key].values())
-            if key in self.ATLAS_DISAGREEMENTS:
-                allowed = {self.ATLAS_DISAGREEMENTS[key][0]}
             if not allowed or card['topicId'] not in allowed:
                 failures.append((card['id'], card['topicId'], sorted(allowed or [])))
         self.assertEqual(failures, [])
