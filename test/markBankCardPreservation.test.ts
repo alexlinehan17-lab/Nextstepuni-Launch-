@@ -177,6 +177,14 @@ const addedIrishOrdinaryRoutes = new Set([
     .concat(['a','b','c'].flatMap(poem => ['i','ii','iii'].map(part => `poetry-3a-${poem}-${part}`)))
     .concat(['a','b','c'].map(slot => `poetry-3a-a-i-${slot}`))
     .map(key => `irish-2025-ol-p2-${key}`),
+  // 2024 Ordinary Paper 2 (reviewed 2026-10-12): reading parts, the printed 2A(a)/(b) and 3A
+  // sub-questions, the four 3A(b)(i) questions and the An Lasair Choille option of 2A(c).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .concat(['a','b'].flatMap(text => ['i','ii','iii','iv','v'].map(part => `prose-2a-${text}-${part}`)))
+    .concat(['prose-2a-c-an-lasair-choille'])
+    .concat(['a','b','c'].flatMap(poem => ['i','ii','iii'].map(part => `poetry-3a-${poem}-${part}`)))
+    .concat(['a','b','c','d'].map(slot => `poetry-3a-b-i-${slot}`))
+    .map(key => `irish-2024-ol-p2-${key}`),
 ]);
 
 const decks = [
