@@ -6,9 +6,9 @@
  *
  * A mistyped domain can never receive the verification or password-reset
  * email, so the student is locked out the first time they forget their
- * password. Real signups include `marinocollge.ie` (no mail server at all) and
- * `gmail.comdeedw`. This only ever SUGGESTS a correction; the address the
- * student typed is always allowed.
+ * password. Real signups include `marinocollge.ie` (no mail server at all),
+ * `gmail.comdeedw` and `marino.ie` (another organisation's domain). This only
+ * ever SUGGESTS a correction; the address the student typed is always allowed.
  */
 import { SCHOOL_IDENTITY } from '../data/schoolIdentity';
 
@@ -40,6 +40,14 @@ const OTHER_REAL_DOMAINS = ['mail.com', 'ymail.com', 'gmx.com', 'msn.com', 'aol.
 const SCHOOL_DOMAINS = Object.values(SCHOOL_IDENTITY)
   .map(({ website }) => new URL(website).hostname.replace(/^www\./, ''));
 
+// Real domains that belong to someone else but that a partner school's
+// students type as shorthand for their own. `marino.ie` is another
+// organisation's mail domain; Marino College students used it on real
+// signups, so their emails went elsewhere.
+const SCHOOL_SHORTHANDS: Record<string, string> = {
+  'marino.ie': 'marinocollege.ie',
+};
+
 const SUGGESTED_DOMAINS = [...CONSUMER_DOMAINS, ...SCHOOL_DOMAINS];
 const VALID_DOMAINS = new Set([...SUGGESTED_DOMAINS, ...OTHER_REAL_DOMAINS]);
 
@@ -69,6 +77,7 @@ export function suggestEmailCorrection(input: string): string | null {
   if (at < 1) return null;
   const local = email.slice(0, at);
   const domain = email.slice(at + 1).toLowerCase();
+  if (SCHOOL_SHORTHANDS[domain]) return `${local}@${SCHOOL_SHORTHANDS[domain]}`;
   if (domain.length < 4 || VALID_DOMAINS.has(domain)) return null;
 
   // Letters after a complete domain: "gmail.comdeedw", "gmail.com.".

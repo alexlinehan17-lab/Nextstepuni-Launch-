@@ -6,6 +6,8 @@ describe('suggestEmailCorrection', () => {
     // Typos seen on real NextStepUni signups.
     ['aoife@marinocollge.ie', 'aoife@marinocollege.ie'],
     ['aoife@gmail.comdeedw', 'aoife@gmail.com'],
+    ['aoife@marino.ie', 'aoife@marinocollege.ie'],
+    ['aoife@marincollege.ie', 'aoife@marinocollege.ie'],
     // Common slips.
     ['aoife@gmial.com', 'aoife@gmail.com'],
     ['aoife@gmail.co', 'aoife@gmail.com'],
@@ -29,7 +31,6 @@ describe('suggestEmailCorrection', () => {
     'aoife@ymail.com',
     'aoife@me.com',
     'aoife@marino.cdetb.ie',
-    'aoife@marino.ie',
     'aoife@ucc.ie',
     'aoife@example.com',
     'aoife',
