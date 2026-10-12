@@ -29,7 +29,7 @@ GLYPHS = {
     '': '*',   # Symbol asterisk, the older partial-credit mark
     '': '➢',   # Wingdings arrowhead marker
 }
-MARKER = r'[•●▪■\-–−*∗➢]'
+MARKER = r'[•●▪■\-‐–−*∗➢]'
 # "5 Mar": the 2025 Ordinary scheme (p.19) prints its Fish tariff cut short.
 MARKS = r'\d+(?:\s*\+\s*\d+)?\s*[Mm]ar(?:ks?)?\b'
 # The only printed aside between an answer and its marks: which option it is.

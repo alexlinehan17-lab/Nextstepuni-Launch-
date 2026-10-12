@@ -7,6 +7,7 @@ The inventory remains explicitly partial until every archive paper is reviewed.
 """
 from pathlib import Path
 from itertools import combinations
+from fr_printed import lift as lift_printed, doc_texts
 import json
 import re
 import hashlib
@@ -72,8 +73,8 @@ ORDINALS = ['first', 'second', 'third']
 
 # NextStepUni's own guidance. Shown only under the app-labelled practice notes,
 # never in a field the panel attributes to the SEC.
-PRACTICE_GRID = ('Use the published descriptors to place the response you wrote. The marks apply to this '
-                 'selected task; alternative routes are not added together.')
+PRACTICE_GRID = ('Use the published descriptors to place the response you wrote. You are marked on this task '
+                 'alone, and where it asks you to choose points or questions, on the ones you chose.')
 
 
 def tiled_text(page):
@@ -467,6 +468,13 @@ def build_year(config):
         if len(points) == 5:
             choose = diary_instruction if parent == 'B3A' else printed_line(doc, page, CHOOSE_THREE[parent], left=290)
             assert 'three of the following' in choose, (YEAR, parent, choose)
+        # Each point as the paper prints it, with the paper's own list marker
+        # ("-", "‐", "−" or "–"); the marked locator prefers the list line
+        # over a stem that repeats the same words (2013 Q2(b)).
+        printed_points = [lift_printed(doc_texts(DATA / f'papers/{YEAR}-ol-000-paper.pdf', [page]), f'- {point}', marks='', what=f'{YEAR} {parent}')
+                          for point in points]
+        for point, line in zip(points, printed_points):
+            assert line.endswith(point) and re.match(r'^[-‐–−] ', line), (YEAR, parent, line)
         for chosen in [tuple(range(len(points)))] if choose else combinations(range(len(points)), 3):
             suffix = ''.join(str(i+1) for i in chosen)
             maximum = 4 if parent == 'B3B' else 5
@@ -502,7 +510,7 @@ def build_year(config):
                 context = head + choose
             elif choose and parent != 'B3A':
                 context += ' ' + choose
-            context += '\n\n' + '\n'.join(f'• {points[i]}' for i in chosen)
+            context += '\n\n' + '\n'.join(printed_points[i] for i in chosen)
             if parent == 'B3B':
                 context += '\n\n' + config['letterIdentity']
                 assert norm(config['letterIdentity']) in norm(clip_text)

@@ -51,8 +51,8 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     const pool = sources.find(source => source.year === year)!.pools.find(pool => pool[0] === parent)!;
     const points = pool[4] as string[];
     const answers = pool[5] as string[];
-    expect(card.questionText.match(/• /g)).toHaveLength(5);
-    for (const point of points) expect(card.questionText).toContain(`• ${point}`);
+    const listed = card.questionText.split('\n').filter(line => /^[-‐–−] /.test(line));
+    expect(listed.map(line => line.slice(2))).toEqual(points);
     const instruction = card.rubric.taskRequirements.find(line => line.includes('three of the following'))!;
     expect(instruction, card.id).toBeDefined();
     expect(card.questionText.split('\n\n')[0]).toContain(instruction);
@@ -88,7 +88,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
       const criteria = (card.rubric as { criteria?: { maxMarks: number; permittedMarks: number[] }[] } | undefined)?.criteria ?? [];
       return JSON.stringify([card.totalMarks, criteria.map(c => [c.maxMarks, c.permittedMarks])]);
     };
-    const isPoint = (line: string) => /^(?:• |[6-9]\. )/.test(line);
+    const isPoint = (line: string) => /^(?:[•\-‐–−] |[6-9]\. )/.test(line);
     const siblings = (pool: typeof deck) => {
       const groups = new Map<string, typeof deck>();
       for (const card of pool) {
@@ -178,7 +178,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
       const scheme = [...card.rubric.taskRequirements, ...card.rubric.criteria.flatMap(c => [...c.guidance, ...(c.bands ?? []).flatMap(b => b.guidance)])];
       for (const text of scheme) expect(text, card.id).not.toMatch(written);
       expect(card.rubric.markingGuideNote, card.id).toBe('');
-      expect(card.rubric.practiceNotes?.at(-1), card.id).toBe('Use the published descriptors to place the response you wrote. The marks apply to this selected task; alternative routes are not added together.');
+      expect(card.rubric.practiceNotes?.at(-1), card.id).toBe('Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose.');
     }
     const byId = (id: string) => cards.find(card => card.id === id)!;
     const message = byId('fr-2014-ol-writing-b2a-route-123');
@@ -264,7 +264,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
       .toEqual(['Age – accept any appropriate age (“ans” needed for full marks)']);
     const diary = group.find(card => card.id === 'fr-2011-ol-writing-b3a-route-123')!;
     expect(diary.rubric.criteria.find(c => c.id === 'communication-3')?.guidance[0]).toBe('You hope to go the beach / with your cousin Martin on Sunday.');
-    expect(diary.questionText).toContain('• You hope to go to the beach with your cousin Martin on Sunday.');
+    expect(diary.questionText).toContain('- You hope to go to the beach with your cousin Martin on Sunday.');
   });
 
   it('keeps the 2012 form-sentence condition, boxed quotation and earlier scheme layout', () => {
@@ -285,7 +285,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     expect(quote.sourceMaterial?.kind).toBe('source-text');
     expect(group.find(card => card.id === 'fr-2012-hl-writing-b4a')!.sourceMaterial?.kind).toBe('source-illustration');
     const message = group.find(card => card.id === 'fr-2012-ol-writing-b2a-route-123')!;
-    expect(message.questionText).toContain('• He will arrive tomorrow at half-past ten.');
+    expect(message.questionText).toContain('- He will arrive tomorrow at half-past ten.');
     expect(message.schemeCitation).toContain('p.11');
     expect(message.rubric.criteria.at(-1)?.bands?.[1].guidance).not.toContain('some sense of register');
     expect(group.find(card => card.id === 'fr-2012-ol-writing-b3b-route-123')!.schemeCitation).toContain('pp.14, 17, 18');
@@ -451,7 +451,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
       const routes = group.filter(card => card.id.includes(`ol-writing-${parent}-route-`));
       expect(routes).toHaveLength(1);
       expect(routes[0].totalMarks).toBe(30);
-      expect(routes[0].questionText.match(/• /g)).toHaveLength(3);
+      expect(routes[0].questionText.match(/^[-‐–−] /gm)).toHaveLength(3);
     }
     const letter = group.find(card => card.id === 'fr-2019-ol-writing-b3b-route-123')!;
     expect(letter.schemeCitation).toContain('pp.15, 18, 19');
@@ -480,7 +480,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
       expect(fixed).toHaveLength(1);
       expect(fixed[0].id).toBe(`fr-2020-ol-writing-${parent}-route-123`);
       expect(fixed[0].totalMarks).toBe(30);
-      expect(fixed[0].questionText.match(/• /g)).toHaveLength(3);
+      expect(fixed[0].questionText.match(/^[-‐–−] /gm)).toHaveLength(3);
     }
     const review = group.find(card => card.id === 'fr-2020-hl-writing-b2b')!;
     expect(review.questionText.match(/• /g)).toHaveLength(4);
