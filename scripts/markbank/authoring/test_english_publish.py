@@ -249,6 +249,20 @@ class EnglishLegacyBridgeTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'not the same printed task'):
             self.apply('english-2025-ol-p2', bridge)
 
+    def test_a_repaired_bundle_alias_is_compared_within_its_part(self):
+        # The legacy Prescribed Q1 bundle printed (a) and (b) and dropped both “or”s of (a)'s options.
+        old = 'english-2024-ol-p2-prescribed-a-q1'
+        entries = self.bridge['papers']['english-2024-ol-p2']['legacyCards']
+        self.assertEqual(entries[old]['to'], 'english-2024-ol-p2-prescribed-a-q1-a')
+        self.assertEqual(entries[old]['textRepair'], [{'legacy': '', 'reviewed': 'or'}] * 2)
+        bridge = copy.deepcopy(self.bridge['papers']['english-2024-ol-p2'])
+        del bridge['legacyCards'][old]['textRepair']
+        with self.assertRaisesRegex(ValueError, 'not the same printed task'):
+            self.apply('english-2024-ol-p2', bridge)
+        # A same-id prompt is compared whole; an alias sets aside only the leading and trailing bundled words.
+        self.assertEqual(publish.repair_basis('same-id', 'a b c', 'b'), 'a b c')
+        self.assertEqual(publish.repair_basis('alias', 'a x b c d', 'x b or c'), 'x b c')
+
     def test_legacy_comparative_grid_is_corrected_with_quoted_rows(self):
         entries = self.bridge['papers']['english-2024-hl-p2']['legacyCards']
         rows = entries['english-2024-hl-p2-comparative-a-q1']['correction']['rows']

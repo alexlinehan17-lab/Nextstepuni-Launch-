@@ -3190,7 +3190,10 @@
       "observedHeading": "Poetry A · Night Drive",
       "paperPage": 15,
       "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
-      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        15
+      ]
     },
     "english-2024-ol-p2-prescribed-b": {
       "topicId": "english-11-8",
@@ -3199,7 +3202,10 @@
       "observedHeading": "Poetry B · A Call",
       "paperPage": 16,
       "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
-      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        16
+      ]
     },
     "english-2024-ol-p2-prescribed-c": {
       "topicId": "english-11-52",
@@ -3208,7 +3214,10 @@
       "observedHeading": "Poetry C · (Extract From) In Praise Of My Sister",
       "paperPage": 17,
       "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
-      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        17
+      ]
     },
     "english-2024-ol-p2-prescribed-d": {
       "topicId": "english-11-26",
@@ -3217,7 +3226,10 @@
       "observedHeading": "Poetry D · How Do I Love Thee?",
       "paperPage": 18,
       "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
-      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        18
+      ]
     },
     "english-2024-ol-p2-prescribed-e": {
       "topicId": "english-11-16",
@@ -3226,7 +3238,10 @@
       "observedHeading": "Poetry E · Hearth Lesson",
       "paperPage": 19,
       "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
-      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        19
+      ]
     },
     "english-2024-ol-p2-prescribed-f": {
       "topicId": "english-11-19",
@@ -3235,7 +3250,10 @@
       "observedHeading": "Poetry F · Child",
       "paperPage": 20,
       "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
-      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        20
+      ]
     },
     "english-2025-hl-p2-single-a": {
       "topicId": "english-12-28",

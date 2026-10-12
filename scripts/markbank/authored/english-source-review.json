@@ -3724,6 +3724,28 @@
       "paperSha256": "fc626a7ffe7ca903ae6deaf143ec14b378c11dc79bd16f244a9b9cc1cf0c65f5",
       "questionSha256": "7a5104c977428c89bb63f066eb24c45b3b7c5a8459eda5d606a2bc246ac8f989",
       "reason": "Self-contained: the greatest challenge ahead in the candidate’s own life and how they will deal with it. Scheme PDF9 assesses the candidate’s own account and never refers to TEXT 3. The same task is printed under all three texts."
+    },
+    "english-2024-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Hundred Names of Love",
+      "pages": [
+        14
+      ],
+      "attribution": "The Hundred Names of Love — Annie Lighthart, as reproduced in the SEC 2024 paper.",
+      "questionSha256": "f8765ffc821ef51048e5e804b9cda4e88165d96b577ffbc46c6db34a66044d11",
+      "reason": "Paper PDF14 prints the instruction (“Read the following poem by Annie Lighthart”, with the introduction on parents of very young children at bedtime), the title, all three stanzas (6 + 5 + 5 lines) and the byline above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
+    },
+    "english-2024-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Hundred Names of Love",
+      "pages": [
+        14
+      ],
+      "attribution": "The Hundred Names of Love — Annie Lighthart, as reproduced in the SEC 2024 paper.",
+      "questionSha256": "f8d7ece3572cf11057d914658bcc55a75cd555150d50b630bfacd21ffd185313",
+      "reason": "Paper PDF14 prints the instruction (“Read the following poem by Annie Lighthart”, with the introduction on parents of very young children at bedtime), the title, all three stanzas (6 + 5 + 5 lines) and the byline above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
     }
   }
 }

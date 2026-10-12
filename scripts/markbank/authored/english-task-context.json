@@ -132,6 +132,61 @@
         "N.B. You may refer to other parts of the entire poem in your responses to the following questions."
       ],
       "reason": "Visually checked on PDF17: the N.B. follows Q1(a) and applies to “the following questions”, i.e. Q1(b) and Q2 (i)–(iii)."
+    },
+    "english-2024-ol-p2-prescribed-c-q1-a": {
+      "questionSha256": "a62c734da810162e0a8837516e2c8049b2db7c56b4726109a8ef1d2f4ab62cee",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "paperPages": [
+        17
+      ],
+      "notes": [
+        "N.B: You may refer to other parts of the entire poem in your responses to the following questions."
+      ],
+      "reason": "Visually checked on PDF17: the N.B. is printed under the extract and above Q1, and applies to “the following questions”, i.e. Q1 (a)(b) and Q2 (i)–(iii)."
+    },
+    "english-2024-ol-p2-prescribed-c-q1-b": {
+      "questionSha256": "4b587f23dbda30b46dc412582ba79da3a36c335abdd62e18817e8227183363d3",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "paperPages": [
+        17
+      ],
+      "notes": [
+        "N.B: You may refer to other parts of the entire poem in your responses to the following questions."
+      ],
+      "reason": "Visually checked on PDF17: the N.B. is printed under the extract and above Q1, and applies to “the following questions”, i.e. Q1 (a)(b) and Q2 (i)–(iii)."
+    },
+    "english-2024-ol-p2-prescribed-c-q2-i": {
+      "questionSha256": "d9aace1032cbe91beb65dd4af471c4355519830ec270cab62d23773ae978ea68",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "paperPages": [
+        17
+      ],
+      "notes": [
+        "N.B: You may refer to other parts of the entire poem in your responses to the following questions."
+      ],
+      "reason": "Visually checked on PDF17: the N.B. is printed under the extract and above Q1, and applies to “the following questions”, i.e. Q1 (a)(b) and Q2 (i)–(iii)."
+    },
+    "english-2024-ol-p2-prescribed-c-q2-ii": {
+      "questionSha256": "3f83dd87aa21d03d9a71c79df59974adc7ef255bebac0589c58c09883319a28f",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "paperPages": [
+        17
+      ],
+      "notes": [
+        "N.B: You may refer to other parts of the entire poem in your responses to the following questions."
+      ],
+      "reason": "Visually checked on PDF17: the N.B. is printed under the extract and above Q1, and applies to “the following questions”, i.e. Q1 (a)(b) and Q2 (i)–(iii)."
+    },
+    "english-2024-ol-p2-prescribed-c-q2-iii": {
+      "questionSha256": "dcdd98cca1840ca5b04544ce9739150af8daef1cb9ea2458a3169ec01e0eb0c5",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "paperPages": [
+        17
+      ],
+      "notes": [
+        "N.B: You may refer to other parts of the entire poem in your responses to the following questions."
+      ],
+      "reason": "Visually checked on PDF17: the N.B. is printed under the extract and above Q1, and applies to “the following questions”, i.e. Q1 (a)(b) and Q2 (i)–(iii)."
     }
   }
 }

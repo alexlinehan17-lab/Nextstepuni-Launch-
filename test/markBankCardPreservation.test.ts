@@ -403,7 +403,7 @@ const decks = [
    * existed only on the English branch, never on main. These two counts and
    * hashes are refreshed by tmp/english-audit/refresh-pins.py per paper. */
   ['english:higher', ENGLISH_HIGHER, 577, 'a7bc4dbb643b6fa994e368767659eb2c873fa12fe27a74e2bb8da2424843ef5b'],
-  ['english:ordinary', ENGLISH_ORDINARY, 1395, '0fa9a74a377e7808994ab666119d9832293d80c6d30a840a3be19e06fc30fb9e'],
+  ['english:ordinary', ENGLISH_ORDINARY, 1428, 'a363f5bf61a76ddf8ca95e64716a15c752acea44aeb8bd5fac953cd4ab699a42'],
   /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
    * responses across 2021–2025 Higher and Ordinary are present, including
    * listening audio and the real PDF pages for passages and printed poems. */
@@ -447,12 +447,12 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_817);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_850);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(63);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(84);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -461,13 +461,13 @@ describe('Mark Bank card preservation', () => {
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_078);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_132);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(1_514);
+    expect(published.size).toBe(1_615);
     // No route card is published: a printed choice marked identically is one card.
     expect([...published].some(id => id.includes('-route-'))).toBe(false);
     // Legacy ids of bridged papers (2025 HL) are no longer served as legacy
@@ -475,7 +475,7 @@ describe('Mark Bank card preservation', () => {
     const bridged = [...publishedEnglishHigher.bridgedLegacyIds, ...publishedEnglishOrdinary.bridgedLegacyIds];
     const bridgeAliases: Record<string, string> = {
       ...publishedEnglishHigher.bridgeAliases, ...publishedEnglishOrdinary.bridgeAliases };
-    expect(bridged).toHaveLength(192);  // refreshed by tmp/english-audit/refresh-pins.py
+    expect(bridged).toHaveLength(260);  // refreshed by tmp/english-audit/refresh-pins.py
     for (const id of bridged) {
       const kept = published.has(id) && !(id in bridgeAliases);
       const aliased = CARD_ID_ALIASES[id] === bridgeAliases[id] && published.has(bridgeAliases[id]);

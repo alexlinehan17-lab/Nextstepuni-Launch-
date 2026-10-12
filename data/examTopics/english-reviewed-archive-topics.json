@@ -711,6 +711,36 @@
     "english-6-0",
     "english-12-25"
    ]
+  },
+  {
+   "id": "english-ordinary-poetry-szymborska-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-szymborska",
+   "label": "Poetry - Szymborska",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-52"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-philadelphia-here-i-come-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-philadelphia-here-i-come",
+   "label": "Text - Philadelphia, Here I Come!",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-16"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-picture-of-dorian-gray-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-picture-of-dorian-gray",
+   "label": "Text - The Picture of Dorian Gray",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-25"
+   ]
   }
  ]
 }

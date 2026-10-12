@@ -35835,6 +35835,2797 @@
         "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
       },
       "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages. QA(i)/(ii) “Combined Criteria ex 15, P+C = 9, L+M = 6”; QA(iii) “Combined Criteria ex 10, P+C = 6, L+M = 4” (boxes sometimes at the top of the next page); B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF63–64. No invented splits or submarks."
+    },
+    "english-2024-ol-p2-single-a-q1-a": {
+      "taskSha256": "bf803becbbec9cceb84ef252475ddf507a1558fae3d2968bd3e84f6606bd4e09",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-a-q1-b": {
+      "taskSha256": "8eb8016c4b5d9c81c3af1a604477664588e677d78aa585078c76388514797ab7",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-a-q1-c": {
+      "taskSha256": "390ffd564e3e3846a19872fff1e22f650ba4168457baa105b6f69f9a68d11798",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        20,
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-a-q2": {
+      "taskSha256": "7f9bd7520bc430455f2d448d367290859618f96c1532f8e4ef7f624700f17453",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-a-q3": {
+      "taskSha256": "0ceb1871982f2d45867ae74b3c23c777d74fd606132d3d16dc82432580fd021e",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-a-q4": {
+      "taskSha256": "a8b89ea94145fb9b9ea5180c6eda7f9b07f7cf6bc0e7e7245722e694887d1493",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-b-q1-a": {
+      "taskSha256": "9193d8eb90cadfae94bacca7635001d27cc8d3aab6ef740b861fe6b53ebd6a9a",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-b-q1-b": {
+      "taskSha256": "2bf148e5945570ff297fd159ff9179ec3ced5b2a813431ffdcfaabffc1ec5d82",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        22,
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-b-q1-c": {
+      "taskSha256": "aeb61c7b0556d8eab46cd33ff923d6b6f81e58431133ae3581cdd3fe2541f198",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-b-q2": {
+      "taskSha256": "07cffe8e11fe4771ee2ba4f0cb4c33eea6e5516f6cf93122163b2c27ef34859a",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-b-q3": {
+      "taskSha256": "a7b0f25ee61234c92319ee3eb8905f6cae4f6f2584e1e6705fde6e65d2e9b48b",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-b-q4": {
+      "taskSha256": "7922e48c3afe2993593c778221e185a186dd5baac4d413c9cf10b0938089614b",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-c-q1-a": {
+      "taskSha256": "9c63ed7ca2fc4eac1cbc641b6bf34ace69e673737a7af1a7d059135f9430abc3",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-c-q1-b": {
+      "taskSha256": "48e125bf83a0d8755e346744921dfdc904ac272e35700925d2c09ba83ca51a14",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-c-q1-c": {
+      "taskSha256": "2ce231c61e920de70cc8b5b3d46d8c5e529eeb4d49ee0bb08295a895855449b3",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        25,
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently. The paper (PDF4) prints “Philadelphia, Here I come!”; the scheme PDF25 reprints “Come”. Paper wording retained."
+    },
+    "english-2024-ol-p2-single-c-q2": {
+      "taskSha256": "20e0a47576808b51a0a7181062021cf75c459cfeaf7cb7c1e0ffc919d2116a61",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-c-q3": {
+      "taskSha256": "9fb5eebcb5cdc96413a144f4bcf2b4684da86c6e2b336f6b44fd7d87976807bb",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-c-q4": {
+      "taskSha256": "f8232311aa286cad04c2e0b21765d78624f17b38039078e2a9fe22b1c69f21d4",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-d-q1-a": {
+      "taskSha256": "e6d9d4a96a2d2a15ff713f28a93b0dd13de296523f85a8f49a50caec508e4748",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-d-q1-b": {
+      "taskSha256": "9ac9a3c21546a50c7f31ae5649a585140c5f76b08e72a89820177c9613f10f79",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        27,
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-d-q1-c": {
+      "taskSha256": "ef069036ea82fdc2518a71f42e7b92e9bfc1686bb199b3c5dfb9967c1ca75e25",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-d-q2": {
+      "taskSha256": "668966be496a609b913971e585433fab1943e105eae46abe172a43cc247b02e0",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-d-q3": {
+      "taskSha256": "5205d7a639963f3abfae6a6b75f2980c78029514897cc4842f9fcd6c99b0f718",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-d-q4": {
+      "taskSha256": "7cd092bcd4266977705ac296c120283e37a3f142319244f62c80eeb80acae4e3",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-e-q1-a": {
+      "taskSha256": "8ea5d9270f4b300e07f56303de6cfb5ddb546ccaa69102a0c587bbd18dfffb3f",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        29,
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-e-q1-b": {
+      "taskSha256": "0e84baa61e8fbdd821011753e92b88665196202c24d7297a84f9d63881c94398",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-e-q1-c": {
+      "taskSha256": "46601279f7e779956f28a17d98ead04908e3375e7aee42d093b371d3d7401f5d",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-e-q2": {
+      "taskSha256": "2af8174d33e15e5f1740bbc193db14c2b877b4ae4571cd8ad2c347fbd8f9991b",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-e-q3": {
+      "taskSha256": "45a863afa9467eb4d74b0a51e5b4ab09fcccfda4acb7b01e1d07f333a7d3d082",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-e-q4": {
+      "taskSha256": "7f2d1fcd112083e6bfcadff3422c72375f24dfdc1d3ccf78721d920f669b0dfa",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        31,
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-f-q1-a": {
+      "taskSha256": "c5a9cdb120d61f200487d42b89cee4da2d7a94529036b9146bc0179bc9792c31",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-f-q1-b": {
+      "taskSha256": "707aec0e3e466513126b2efc7dfae6104352bca1e4543604a2a416c25b22e771",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-f-q1-c": {
+      "taskSha256": "eddf04bf50c3316ebb111ea04831cdf6be040e59c6f8f54aef3515c714569d7b",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-f-q2": {
+      "taskSha256": "2c25e56f1ae4c6a4286014329d8e3d3ddca61c88a1d5203588745339536db094",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-f-q3": {
+      "taskSha256": "0948ea682f12a9cfeef71aa9fd576654435075e57172dd7942ebb53e7c17d133",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        33,
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-f-q4": {
+      "taskSha256": "6872915fb349ab4801137d255af65e06d6085c4858f1f323e590617da75ff3d6",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-g-q1-a": {
+      "taskSha256": "81f375c7407c3c4d0be16d7a456f6566a11df674ee3b228b36cb5035fb6f1f0f",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-g-q1-b": {
+      "taskSha256": "45a0d2283b24d94b81e59a5ab4d5e37c35590821a4c6539ab34c862d2c191f9d",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        34,
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-g-q1-c": {
+      "taskSha256": "880f17e44026e2d00b305ca4c9486ff2c8941ea630aae232ebe2eaae3c939c47",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-g-q2": {
+      "taskSha256": "de03fb76f33e1f7d8c53319123c951c665e8190da8bf5a8b97f247f2c7354e5d",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-g-q3": {
+      "taskSha256": "1693a595a392b0a8fbbbbdc61055f9b5c6f9980969384b1ff1c631be5ff00e5a",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-g-q4": {
+      "taskSha256": "007d1faeab6cd72644d0423f9ffbafbfcfaf269c6881c741774aeb177e3296e9",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-h-q1-a": {
+      "taskSha256": "10d906213f6bcf288f8c891779da3c6703354b0e6e3041a6f31b6f949e9aabc6",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-h-q1-b": {
+      "taskSha256": "ce8552d07cf54905f768adeaa09636ac670b28c96faf2aafffcae06e507345ca",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-h-q1-c": {
+      "taskSha256": "d9f051076cdb52b9e4bc1c0f8f37f04b4583e64baf688adfc62667c19dbf5d41",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        37,
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-h-q2": {
+      "taskSha256": "ec68ab6a44041fdf6bafd8ab2c8be4481b00f9f6d3b5273f1d13c23f2334b271",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-h-q3": {
+      "taskSha256": "f3bd12a11fbc82789cbccdd5c5a036c40e0452422303e89964c9a3fa0a41e942",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-h-q4": {
+      "taskSha256": "8c30c6f70e19f03d4933dfefe20ce63606ca99dbf5eda0f51f10ac6597c73a76",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-i-q1-a": {
+      "taskSha256": "da42b172db574a1e9f7ec0ca01c0b865258ea4a54ca4828cde9bea5854ac27f9",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-i-q1-b": {
+      "taskSha256": "9278ddf674622943e20f8282afd3516b9d715000f4df7a0abaf32a4f87f6a334",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        39,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-i-q1-c": {
+      "taskSha256": "fd057f2b3e20a5f4cdeb854635981cb1d71305d94c612b242d7668ec6200a6a7",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-i-q2": {
+      "taskSha256": "860cf662e5702d88c4dc447c897b1335c5236b3dadef6c44ed70c94e53cec89d",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-i-q3": {
+      "taskSha256": "d5d5d547e7fdb3a21c255f301b6dc805d55d942a9c573cbf7e70a0cc8252fb26",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        40,
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-single-i-q4": {
+      "taskSha256": "e22f05b52a4eed20205ef127a6d17653757cc3fb2ae779ea84671ad118485c7b",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 30,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-a-q1-a-i": {
+      "taskSha256": "3ba4367a8eda3987ecd5e70df6cafdb8d3fea9d9ae1e78625969ce1b0b628677",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-a-q1-a-ii": {
+      "taskSha256": "cd8f406710c542191585ee6bf0871f3930e6ac4d1bf54d86a7883a5fae0e77d2",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-a-q1-b": {
+      "taskSha256": "73385353110feab47e75a2afbfc10c405e6fb085a62bf76a799524f3d73a4fcd",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 40,
+      "schemePages": [
+        43,
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-a-q2-a-i": {
+      "taskSha256": "2cb0d843fe5ec572ab3527261f262b0d94cfaa39b2d9274642d01753498c5729",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-a-q2-a-ii": {
+      "taskSha256": "d45bb90e9841d4a0d2bf5e97965210bea51bba31a1c780bb4efb1ee97c9dd8a7",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-a-q2-b": {
+      "taskSha256": "e6bcc79d03a457a65cea6e96440ec7b56cf4c072364a361c527e93c334f365d0",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 40,
+      "schemePages": [
+        44,
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-b-q1-a-i": {
+      "taskSha256": "ccd41653d2dd491061a1d415e504042c1151d1cbcd1ff426f4b4056f2f3c4f28",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-b-q1-a-ii": {
+      "taskSha256": "34f4153b9f64df834cd0c284c6e61d8628c4ed7f1a9605f66adaca9d64977f2f",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-b-q1-b": {
+      "taskSha256": "a3a76220be48ba6144b20fee266593f273adb816818fa32394592f4067c20c95",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 40,
+      "schemePages": [
+        45,
+        46
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-b-q2-a-i": {
+      "taskSha256": "74b38f16859a39f46d70b77dc8c725f301f41caa564df4673fd668689447ae44",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        46
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-b-q2-a-ii": {
+      "taskSha256": "63ac0ca90b3a1a2d4c2bbd702b5df63320d854829ae4d6fb1c83304d2723c111",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        46
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-b-q2-b": {
+      "taskSha256": "286684bae1019a680535c98b4b1d3e3b814578038e9fecdae118efa2e8b12c64",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 40,
+      "schemePages": [
+        46,
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-c-q1-a-i": {
+      "taskSha256": "020add86330278aa82db47b69a17105e368d960c8da958cbb825094eacf74b9f",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-c-q1-a-ii": {
+      "taskSha256": "87bbf57c9fab9cd286d0b08ce89d46e19fbaf44f394e8b0f6bb1bd4f5c263d68",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-c-q1-b": {
+      "taskSha256": "4762f26dada8efd0ce5b4d27f4f41f2798baa5aa27e88917fa2556226ded982f",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 40,
+      "schemePages": [
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-c-q2-a-i": {
+      "taskSha256": "f3824362b3428b6898ee0ffb22db19cd2d5da3c90a7660ab39b6b932c553ac63",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-c-q2-a-ii": {
+      "taskSha256": "79b33fc68994fe0a7a91dc24f4b0f67a11b79036ffdb50c4cace9be41edf01bb",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-comparative-c-q2-b": {
+      "taskSha256": "93c80d2d31d4d2561f8cc7c436410215a4f8c755794ae6f4e1e5c8d379193146",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 40,
+      "schemePages": [
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2024 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF63–64 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently. Scheme PDF48 reprints “Support your answer with reference to your chosen texts”; the paper (PDF13) prints “Support your response”, identical to Q1(b). Paper wording retained."
+    },
+    "english-2024-ol-p2-unseen-q1": {
+      "taskSha256": "423e74b65da1f6938612f987a3c7450868ef788657444ebc4a805f83ac2f8ca0",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        49
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-unseen-q2": {
+      "taskSha256": "85bd3e19a86ec889fdf24a263567bac5d0869ab6779dd11b49494ceea1731033",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 10,
+      "schemePages": [
+        49,
+        50
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-a-q1-a": {
+      "taskSha256": "1852ff53c0d769339f546251e331df22bdee11b9676d8bb62630058da37e83b0",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        50
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-a-q1-b": {
+      "taskSha256": "76aaa25aadf265247782fe21fb638b65a0961b84c56d2fb3f8f2fb9deb4286fc",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        50
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-a-q2-i": {
+      "taskSha256": "cac26c97fa1e4d683383da5ea4198cc4f9c70ad448d8fbfb81dcd6682e55b062",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        50,
+        51
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-a-q2-ii": {
+      "taskSha256": "6ef5b7e31944a66b1956a2fcc754727dcd58751848aad3d6e114fc69d440549e",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        51
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-a-q2-iii": {
+      "taskSha256": "e6071aa5e0e1ce06a3254788359b7478e2e9b0fb44a07629be3b4869c12bbe97",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        51
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-b-q1-a": {
+      "taskSha256": "ecb3231b74a728c888c341b7068c517fe1fb3f96bffd94eb48798399b0c21c1c",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        52
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-b-q1-b": {
+      "taskSha256": "7eccddaaf638b1499d923d83d70e87aa90c67386b82d7e637b799f09bf6b4eb1",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        52
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently. Scheme PDF52 reprints the question without its tariff; the paper (PDF16) prints (15), matching the “Combined Criteria ex 15” box."
+    },
+    "english-2024-ol-p2-prescribed-b-q2-i": {
+      "taskSha256": "dbb64fdef7f383b78ddfc57ef6c1a5296ded9f894bd98a2228c674f3b2e4bc1b",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        52
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-b-q2-ii": {
+      "taskSha256": "a30fd85cab36ebd79ab07b8d3710a73b2e06000d7ef55338b430184da063bfe5",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        53
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-b-q2-iii": {
+      "taskSha256": "4764e46527bbf4c6ac851ef210048e11f8810a8cc0cffa82b72d30a0aa074b00",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        53
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-c-q1-a": {
+      "taskSha256": "36112aa9a15e7656f9ed6cafb61cb59410603deeb6b5c6cdb577d52bb475272e",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        54
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-c-q1-b": {
+      "taskSha256": "f2f35b9bafe2764456e75af1b531ea3175b77e5862c661ab30b7e7c85e32b68a",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        54
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-c-q2-i": {
+      "taskSha256": "2a4cfbeb8a3b416e6e461baa87867febe3ead0b33392c2a00cdb177e3e7b8b26",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        54,
+        55
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-c-q2-ii": {
+      "taskSha256": "d50ec4e47c856c41aab952fcddc8b8132ff2bbc5aa329dd5e7ce0a118966954f",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        55
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-c-q2-iii": {
+      "taskSha256": "1c28d9662c6c0439949811dba8fb4d6eb8f8df94042a064509ae656781b941c1",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        55
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-d-q1-a": {
+      "taskSha256": "c55771d1066e2b25d2e8094631e4eb4ca34c58202e9c6b0a562bbb099721bef1",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        56
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-d-q1-b": {
+      "taskSha256": "57b90bd4f5f8d4579455965539f8148685ce8ed479750e893b6a94044b2abaf0",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        56
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-d-q2-i": {
+      "taskSha256": "7d19ce26f884e899ab812f4dcaa76100c8ebde1ef3320d048f86e2f8d0e1c6ab",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        56,
+        57
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently. The text layer of scheme PDF56 carries a “Combined Criteria ex 15” box that is not visible on the rendered page; the printed box is “Combined Criteria ex 20, P + C = 12, L + M = 8” at the top of PDF57, matching “[Each part carries 20 marks]”."
+    },
+    "english-2024-ol-p2-prescribed-d-q2-ii": {
+      "taskSha256": "81b6d90f87aab1ff5c8d28e6a55f3249a507610f8a03da83b103485e42dc5311",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        57
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-d-q2-iii": {
+      "taskSha256": "b8120cb76b71659fba98d2cf75cd9f3b0301186d9a8679e1b387b478a42dcf53",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        57
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-e-q1-a": {
+      "taskSha256": "23f02b8ef315e04eaaa8e4a42257fb6a37dbb76a4b7bb6d408cd733341d9055e",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        58
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-e-q1-b": {
+      "taskSha256": "4e3376f34a179de7d9420ff49f705ff2eb1cc2cbec560151c64e97a6bd77c8cd",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        58
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-e-q2-i": {
+      "taskSha256": "600a0b82e1b128e4728071d8223501548a5cddaee9a13529ea6a07842122396a",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        58,
+        59
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-e-q2-ii": {
+      "taskSha256": "44b570e41817041ec141186b7e54f3c55194a09cebe9fa9e28ebaf16081179f1",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        59
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-e-q2-iii": {
+      "taskSha256": "59fecc57a85d6f0553c736bcf8cbcd9b1fcd4a79a1e09fea0392876140be9118",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        59
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-f-q1-a": {
+      "taskSha256": "b81058bc36008d2cb6d4fbe47605c49dc6c3283465fa5d2350dbe4862fddb084",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        60
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-f-q1-b": {
+      "taskSha256": "127403a60bed0942374b4cacfbb24bcf3d57f537cb96279afefa415f28a25270",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 15,
+      "schemePages": [
+        60
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-f-q2-i": {
+      "taskSha256": "96301e23327c1456dd3b2ade7ebcf00dd4cc524ca9449210e93b799da7cb9dc4",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        60,
+        61
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-f-q2-ii": {
+      "taskSha256": "463877a10cb2406a313b2f07270859f7cb8f50cb81b0b382ad8acc9f44def33e",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        61
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
+    },
+    "english-2024-ol-p2-prescribed-f-q2-iii": {
+      "taskSha256": "81c76c48a356b501d948eef520a8ce0ba4494fac5df9dbf6462e32c0ee51acb4",
+      "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "totalMarks": 20,
+      "schemePages": [
+        61
+      ],
+      "generalCriteriaPages": [
+        3,
+        19,
+        42,
+        49,
+        63,
+        64
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2024 OL combined grid (PDF63–64, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b)(c) “Combined Criteria ex 10, P + C = 6, L + M = 4”; Q2–Q4 “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF63–64. Paper wording retained where the scheme reprints it differently."
     }
   }
 }

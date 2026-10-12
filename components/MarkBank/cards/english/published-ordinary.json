@@ -59,6 +59,17 @@
    "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce"
   },
   {
+   "paperId": "english-2024-ol-p2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "tasks": 104,
+   "cards": 101,
+   "printedDuplicates": 3,
+   "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+   "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -1145,6 +1156,7 @@
  "legacyAdditionalSources": {},
  "bridgedPapers": [
   "english-2024-ol-p1",
+  "english-2024-ol-p2",
   "english-2025-ol-p1",
   "english-2025-ol-p2"
  ],
@@ -1169,6 +1181,74 @@
   "english-2024-ol-p1-t3-a-ii",
   "english-2024-ol-p1-t3-a-iii-b",
   "english-2024-ol-p1-t3-b",
+  "english-2024-ol-p2-comparative-a-q1",
+  "english-2024-ol-p2-comparative-a-q2",
+  "english-2024-ol-p2-comparative-b-q1",
+  "english-2024-ol-p2-comparative-b-q2",
+  "english-2024-ol-p2-comparative-c-q1",
+  "english-2024-ol-p2-comparative-c-q2",
+  "english-2024-ol-p2-prescribed-a-q1",
+  "english-2024-ol-p2-prescribed-a-q2-i",
+  "english-2024-ol-p2-prescribed-a-q2-ii",
+  "english-2024-ol-p2-prescribed-a-q2-iii",
+  "english-2024-ol-p2-prescribed-b-q1",
+  "english-2024-ol-p2-prescribed-b-q2-i",
+  "english-2024-ol-p2-prescribed-b-q2-ii",
+  "english-2024-ol-p2-prescribed-b-q2-iii",
+  "english-2024-ol-p2-prescribed-c-q1",
+  "english-2024-ol-p2-prescribed-c-q2-i",
+  "english-2024-ol-p2-prescribed-c-q2-ii",
+  "english-2024-ol-p2-prescribed-c-q2-iii",
+  "english-2024-ol-p2-prescribed-d-q1",
+  "english-2024-ol-p2-prescribed-d-q2-i",
+  "english-2024-ol-p2-prescribed-d-q2-ii",
+  "english-2024-ol-p2-prescribed-d-q2-iii",
+  "english-2024-ol-p2-prescribed-e-q1",
+  "english-2024-ol-p2-prescribed-e-q2-i",
+  "english-2024-ol-p2-prescribed-e-q2-ii",
+  "english-2024-ol-p2-prescribed-e-q2-iii",
+  "english-2024-ol-p2-prescribed-f-q1",
+  "english-2024-ol-p2-prescribed-f-q2-i",
+  "english-2024-ol-p2-prescribed-f-q2-ii",
+  "english-2024-ol-p2-prescribed-f-q2-iii",
+  "english-2024-ol-p2-single-a-q1",
+  "english-2024-ol-p2-single-a-q2",
+  "english-2024-ol-p2-single-a-q3",
+  "english-2024-ol-p2-single-a-q4",
+  "english-2024-ol-p2-single-b-q1",
+  "english-2024-ol-p2-single-b-q2",
+  "english-2024-ol-p2-single-b-q3",
+  "english-2024-ol-p2-single-b-q4",
+  "english-2024-ol-p2-single-c-q1",
+  "english-2024-ol-p2-single-c-q2",
+  "english-2024-ol-p2-single-c-q3",
+  "english-2024-ol-p2-single-c-q4",
+  "english-2024-ol-p2-single-d-q1",
+  "english-2024-ol-p2-single-d-q2",
+  "english-2024-ol-p2-single-d-q3",
+  "english-2024-ol-p2-single-d-q4",
+  "english-2024-ol-p2-single-e-q1",
+  "english-2024-ol-p2-single-e-q2",
+  "english-2024-ol-p2-single-e-q3",
+  "english-2024-ol-p2-single-e-q4",
+  "english-2024-ol-p2-single-f-q1",
+  "english-2024-ol-p2-single-f-q2",
+  "english-2024-ol-p2-single-f-q3",
+  "english-2024-ol-p2-single-f-q4",
+  "english-2024-ol-p2-single-g-q1",
+  "english-2024-ol-p2-single-g-q2",
+  "english-2024-ol-p2-single-g-q3",
+  "english-2024-ol-p2-single-g-q4",
+  "english-2024-ol-p2-single-h-q1",
+  "english-2024-ol-p2-single-h-q2",
+  "english-2024-ol-p2-single-h-q3",
+  "english-2024-ol-p2-single-h-q4",
+  "english-2024-ol-p2-single-i-q1",
+  "english-2024-ol-p2-single-i-q2",
+  "english-2024-ol-p2-single-i-q3",
+  "english-2024-ol-p2-single-i-q4",
+  "english-2024-ol-p2-unseen-q1",
+  "english-2024-ol-p2-unseen-q2",
   "english-2025-ol-p1-composing-1",
   "english-2025-ol-p1-composing-2",
   "english-2025-ol-p1-composing-3",
@@ -1261,6 +1341,27 @@
  "bridgeAliases": {
   "english-2024-ol-p1-t2-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
   "english-2024-ol-p1-t3-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
+  "english-2024-ol-p2-comparative-a-q1": "english-2024-ol-p2-comparative-a-q1-a-i",
+  "english-2024-ol-p2-comparative-a-q2": "english-2024-ol-p2-comparative-a-q2-a-i",
+  "english-2024-ol-p2-comparative-b-q1": "english-2024-ol-p2-comparative-b-q1-a-i",
+  "english-2024-ol-p2-comparative-b-q2": "english-2024-ol-p2-comparative-b-q2-a-i",
+  "english-2024-ol-p2-comparative-c-q1": "english-2024-ol-p2-comparative-c-q1-a-i",
+  "english-2024-ol-p2-comparative-c-q2": "english-2024-ol-p2-comparative-c-q2-a-i",
+  "english-2024-ol-p2-prescribed-a-q1": "english-2024-ol-p2-prescribed-a-q1-a",
+  "english-2024-ol-p2-prescribed-b-q1": "english-2024-ol-p2-prescribed-b-q1-a",
+  "english-2024-ol-p2-prescribed-c-q1": "english-2024-ol-p2-prescribed-c-q1-a",
+  "english-2024-ol-p2-prescribed-d-q1": "english-2024-ol-p2-prescribed-d-q1-a",
+  "english-2024-ol-p2-prescribed-e-q1": "english-2024-ol-p2-prescribed-e-q1-a",
+  "english-2024-ol-p2-prescribed-f-q1": "english-2024-ol-p2-prescribed-f-q1-a",
+  "english-2024-ol-p2-single-a-q1": "english-2024-ol-p2-single-a-q1-a",
+  "english-2024-ol-p2-single-b-q1": "english-2024-ol-p2-single-b-q1-a",
+  "english-2024-ol-p2-single-c-q1": "english-2024-ol-p2-single-c-q1-a",
+  "english-2024-ol-p2-single-d-q1": "english-2024-ol-p2-single-d-q1-a",
+  "english-2024-ol-p2-single-e-q1": "english-2024-ol-p2-single-e-q1-a",
+  "english-2024-ol-p2-single-f-q1": "english-2024-ol-p2-single-f-q1-a",
+  "english-2024-ol-p2-single-g-q1": "english-2024-ol-p2-single-g-q1-a",
+  "english-2024-ol-p2-single-h-q1": "english-2024-ol-p2-single-h-q1-a",
+  "english-2024-ol-p2-single-i-q1": "english-2024-ol-p2-single-i-q1-a",
   "english-2025-ol-p1-t2-a-iii-b": "english-2025-ol-p1-t1-a-iii-b",
   "english-2025-ol-p1-t3-a-iii-b": "english-2025-ol-p1-t1-a-iii-b",
   "english-2025-ol-p2-comparative-a-q1": "english-2025-ol-p2-comparative-a-q1-a-i",
@@ -1285,7 +1386,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1063,
+ "cardCount": 1164,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -11169,6 +11270,3740 @@
    "atlas": {
     "fileid": "LC002GLP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-a-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q1(a)",
+   "questionText": "What do you think is the most important lesson that can be learned from Doerr’s novel, All the Light We Cannot See? Explain your answer, supporting it with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-a-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q1(b)",
+   "questionText": "We may or may not agree with the actions taken by characters in novels. Describe one action taken by a character in Doerr’s novel, All the Light We Cannot See, and explain why you did or did not agree with it.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-a-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q1(c)",
+   "questionText": "Do you think that All the Light We Cannot See is a good title for Doerr’s novel? Make two points in your response, supporting them with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    20,
+    21
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-a-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q2",
+   "questionText": "Identify three objects, featured or referred to, in Doerr’s novel, All the Light We Cannot See, that you believe helped you to understand a key aspect of the novel. In the case of each object, explain how it helped you to understand a key aspect of the novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-a-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q3",
+   "questionText": "You are giving a talk to your class about the powerful mood created by Doerr in his novel, All the Light We Cannot See. In your talk you should: - Describe two moments in the novel when the mood was particularly powerful - Explain why the mood was so powerful in your chosen moments - Explain what your overall feelings were when you finished studying the novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-a-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text A Q4",
+   "questionText": "Imagine you are a character from Doerr’s novel, All the Light We Cannot See, and you are keeping a diary at the time that the novel takes place. Write three entries for your diary in which you describe three significant moments you experienced and outline why you consider these moments to be significant to you. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-b-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q1(a)",
+   "questionText": "What do you think is the most important lesson that can be learned from Eliot’s novel, Silas Marner? Explain your answer, supporting it with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-b-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q1(b)",
+   "questionText": "We may or may not agree with the actions taken by characters in novels. Describe one action taken by a character in Eliot’s novel, Silas Marner, and explain why you did or did not agree with it.",
+   "totalMarks": 10,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    22,
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-b-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q1(c)",
+   "questionText": "Do you think that Silas Marner is a good title for Eliot’s novel? Make two points in your response, supporting them with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-b-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q2",
+   "questionText": "Identify three objects, featured or referred to, in Eliot’s novel, Silas Marner, that you believe helped you to understand a key aspect of the novel. In the case of each object, explain how it helped you to understand a key aspect of the novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-b-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q3",
+   "questionText": "You are giving a talk to your class about the powerful mood created by Eliot in her novel, Silas Marner. In your talk you should: - Describe two moments in the novel when the mood was particularly powerful - Explain why the mood was so powerful in your chosen moments - Explain what your overall feelings were when you finished studying the novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-b-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text B Q4",
+   "questionText": "Imagine you are a character from Eliot’s novel, Silas Marner, and you are keeping a diary at the time that the novel takes place. Write three entries for your diary in which you describe three significant moments you experienced and outline why you consider these moments to be significant to you. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-31",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Silas Marner (George Eliot)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-c-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q1(a)",
+   "questionText": "What do you think is the most important lesson that can be learned from Friel’s play, Philadelphia, Here I Come!? Explain your answer, supporting it with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-c-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q1(b)",
+   "questionText": "We may or may not agree with the actions taken by characters in plays. Describe one action taken by a character in Friel’s play, Philadelphia, Here I Come!, and explain why you did or did not agree with it.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-c-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q1(c)",
+   "questionText": "Do you think that Philadelphia, Here I come! is a good title for Friel’s play? Make two points in your response, supporting them with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    25,
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-c-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q2",
+   "questionText": "Identify three objects, featured or referred to, in Friel’s play, Philadelphia, Here I Come!, that you believe helped you to understand a key aspect of the play. In the case of each object, explain how it helped you to understand a key aspect of the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-c-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q3",
+   "questionText": "You are giving a talk to your class about the powerful mood created by Friel in his play, Philadelphia, Here I Come!. In your talk you should: - Describe two moments in the play when the mood was particularly powerful - Explain why the mood was so powerful in your chosen moments - Explain what your overall feelings were when you finished studying the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-c-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text C Q4",
+   "questionText": "Imagine you are a character from Friel’s play, Philadelphia, Here I Come!, and you are keeping a diary at the time that the play takes place. Write three entries for your diary in which you describe three significant moments you experienced and outline why you consider these moments to be significant to you. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-d-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q1(a)",
+   "questionText": "What do you think is the most important lesson that can be learned from Hansberry’s play, A Raisin in the Sun? Explain your answer, supporting it with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-d-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q1(b)",
+   "questionText": "We may or may not agree with the actions taken by characters in plays. Describe one action taken by a character in Hansberry’s play, A Raisin in the Sun, and explain why you did or did not agree with it.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    27,
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-d-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q1(c)",
+   "questionText": "Do you think that A Raisin in the Sun is a good title for Hansberry’s play? Make two points in your response, supporting them with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-d-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q2",
+   "questionText": "Identify three objects, featured or referred to, in Hansberry’s play, A Raisin in the Sun, that you believe helped you to understand a key aspect of the play. In the case of each object, explain how it helped you to understand a key aspect of the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-d-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q3",
+   "questionText": "You are giving a talk to your class about the powerful mood created by Hansberry in her play, A Raisin in the Sun. In your talk you should: - Describe two moments in the play when the mood was particularly powerful - Explain why the mood was so powerful in your chosen moments - Explain what your overall feelings were when you finished studying the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-d-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text D Q4",
+   "questionText": "Imagine you are a character from Hansberry’s play, A Raisin in the Sun, and you are keeping a diary at the time that the play takes place. Write three entries for your diary in which you describe three significant moments you experienced and outline why you consider these moments to be significant to you. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-e-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q1(a)",
+   "questionText": "What do you think is the most important lesson that can be learned from Miller’s play, The Crucible? Explain your answer, supporting it with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    29,
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-e-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q1(b)",
+   "questionText": "We may or may not agree with the actions taken by characters in plays. Describe one action taken by a character in Miller’s play, The Crucible, and explain why you did or did not agree with it.",
+   "totalMarks": 10,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-e-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q1(c)",
+   "questionText": "Do you think that The Crucible is a good title for Miller’s play? Make two points in your response, supporting them with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-e-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q2",
+   "questionText": "Identify three objects, featured or referred to, in Miller’s play, The Crucible, that you believe helped you to understand a key aspect of the play. In the case of each object, explain how it helped you to understand a key aspect of the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-e-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q3",
+   "questionText": "You are giving a talk to your class about the powerful mood created by Miller in his play, The Crucible. In your talk you should: - Describe two moments in the play when the mood was particularly powerful - Explain why the mood was so powerful in your chosen moments - Explain what your overall feelings were when you finished studying the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-e-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text E Q4",
+   "questionText": "Imagine you are a character from Miller’s play, The Crucible, and you are keeping a diary at the time that the play takes place. Write three entries for your diary in which you describe three significant moments you experienced and outline why you consider these moments to be significant to you. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    31,
+    32
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-f-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q1(a)",
+   "questionText": "What do you think is the most important lesson that can be learned from Rash’s novel, The Cove? Explain your answer, supporting it with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-f-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q1(b)",
+   "questionText": "We may or may not agree with the actions taken by characters in novels. Describe one action taken by a character in Rash’s novel, The Cove, and explain why you did or did not agree with it.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-f-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q1(c)",
+   "questionText": "Do you think that The Cove is a good title for Rash’s novel? Make two points in your response, supporting them with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-f-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q2",
+   "questionText": "Identify three objects, featured or referred to, in Rash’s novel, The Cove, that you believe helped you to understand a key aspect of the novel. In the case of each object, explain how it helped you to understand a key aspect of the novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-f-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q3",
+   "questionText": "You are giving a talk to your class about the powerful mood created by Rash in his novel, The Cove. In your talk you should: - Describe two moments in the novel when the mood was particularly powerful - Explain why the mood was so powerful in your chosen moments - Explain what your overall feelings were when you finished studying the novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    33,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-f-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text F Q4",
+   "questionText": "Imagine you are a character from Rash’s novel, The Cove, and you are keeping a diary at the time that the novel takes place. Write three entries for your diary in which you describe three significant moments you experienced and outline why you consider these moments to be significant to you. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-g-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q1(a)",
+   "questionText": "What do you think is the most important lesson that can be learned from Shakespeare’s play, Hamlet? Explain your answer, supporting it with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-g-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q1(b)",
+   "questionText": "We may or may not agree with the actions taken by characters in plays. Describe one action taken by a character in Shakespeare’s play, Hamlet, and explain why you did or did not agree with it.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    34,
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-g-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q1(c)",
+   "questionText": "Do you think that Hamlet is a good title for Shakespeare’s play? Make two points in your response, supporting them with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-g-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q2",
+   "questionText": "Identify three objects, featured or referred to, in Shakespeare’s play, Hamlet, that you believe helped you to understand a key aspect of the play. In the case of each object, explain how it helped you to understand a key aspect of the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-g-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q3",
+   "questionText": "You are giving a talk to your class about the powerful mood created by Shakespeare in his play, Hamlet. In your talk you should: - Describe two moments in the play when the mood was particularly powerful - Explain why the mood was so powerful in your chosen moments - Explain what your overall feelings were when you finished studying the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-g-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text G Q4",
+   "questionText": "Imagine you are a character from Shakespeare’s play, Hamlet, and you are keeping a diary at the time that the play takes place. Write three entries for your diary in which you describe three significant moments you experienced and outline why you consider these moments to be significant to you. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-h-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q1(a)",
+   "questionText": "What do you think is the most important lesson that can be learned from Shelley’s novel, Frankenstein? Explain your answer, supporting it with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-h-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q1(b)",
+   "questionText": "We may or may not agree with the actions taken by characters in novels. Describe one action taken by a character in Shelley’s novel, Frankenstein, and explain why you did or did not agree with it.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-h-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q1(c)",
+   "questionText": "Do you think that Frankenstein is a good title for Shelley’s novel? Make two points in your response, supporting them with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    37,
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-h-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q2",
+   "questionText": "Identify three objects, featured or referred to, in Shelley’s novel, Frankenstein, that you believe helped you to understand a key aspect of the novel. In the case of each object, explain how it helped you to understand a key aspect of the novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-h-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q3",
+   "questionText": "You are giving a talk to your class about the powerful mood created by Shelley in her novel, Frankenstein. In your talk you should: - Describe two moments in the novel when the mood was particularly powerful - Explain why the mood was so powerful in your chosen moments - Explain what your overall feelings were when you finished studying the novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-h-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text H Q4",
+   "questionText": "Imagine you are a character from Shelley’s novel, Frankenstein, and you are keeping a diary at the time that the novel takes place. Write three entries for your diary in which you describe three significant moments you experienced and outline why you consider these moments to be significant to you. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-i-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q1(a)",
+   "questionText": "What do you think is the most important lesson that can be learned from Wilde’s novel, The Picture of Dorian Gray? Explain your answer, supporting it with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-i-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q1(b)",
+   "questionText": "We may or may not agree with the actions taken by characters in novels. Describe one action taken by a character in Wilde’s novel, The Picture of Dorian Gray, and explain why you did or did not agree with it.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    39,
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-i-q1-c",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q1(c)",
+   "questionText": "Do you think that The Picture of Dorian Gray is a good title for Wilde’s novel? Make two points in your response, supporting them with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-i-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q2",
+   "questionText": "Identify three objects, featured or referred to, in Wilde’s novel, The Picture of Dorian Gray, that you believe helped you to understand a key aspect of the novel. In the case of each object, explain how it helped you to understand a key aspect of the novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-i-q3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q3",
+   "questionText": "You are giving a talk to your class about the powerful mood created by Wilde in his novel, The Picture of Dorian Gray. In your talk you should: - Describe two moments in the novel when the mood was particularly powerful - Explain why the mood was so powerful in your chosen moments - Explain what your overall feelings were when you finished studying the novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    40,
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-single-i-q4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Single Text I Q4",
+   "questionText": "Imagine you are a character from Wilde’s novel, The Picture of Dorian Gray, and you are keeping a diary at the time that the novel takes place. Write three entries for your diary in which you describe three significant moments you experienced and outline why you consider these moments to be significant to you. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-a-q1-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative A Q1(a)(i)",
+   "questionText": "Name one of the texts on your comparative course. Identify a hero, heroine or villain from the text. Describe a key moment from the text that revealed either a negative side to your chosen hero or heroine’s character or a positive side to your chosen villain’s character and explain whether or not your overall view of the character changed as a result. Support your response with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-a-q1-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative A Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course. Identify a hero, heroine or villain from the text. Describe a key moment from the text that revealed either a negative side to your chosen hero or heroine’s character or a positive side to your chosen villain’s character and explain whether or not your overall view of the character changed as a result. Support your response with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-a-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative A Q1(b)",
+   "questionText": "Identify a hero, heroine or villain from at least two texts on your comparative course. Compare the ways in which aspects of your chosen characters’ thoughts and actions fascinated you. Support your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    43,
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-a-q2-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative A Q2(a)(i)",
+   "questionText": "Name one of the texts on your comparative course. Identify a hero, heroine or villain from the text. Describe the moment when you believe you saw the most heroic or most villainous aspect of your chosen character. Explain why you believe that this moment revealed the most heroic or most villainous aspect of his or her character. Support your response with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-a-q2-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative A Q2(a)(ii)",
+   "questionText": "Name another text on your comparative course. Identify a hero, heroine or villain from the text. Describe the moment when you believe the most heroic or most villainous aspect of your chosen character was revealed. Explain why you believe that this moment revealed the most heroic or most villainous aspect of his or her character. Support your response with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-b-q1-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative B Q1(a)(i)",
+   "questionText": "Name one of the texts on your comparative course. Identify a theme you explored while studying this text. Explain how the actions of a character in one or more key moment(s) in that text helped to make the author’s exploration of that theme more interesting for you. Support your response with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-b-q1-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative B Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course. Explain how the actions of a character in one or more key moment(s) in that text helped to make the author’s exploration of the same theme discussed in part (i) more interesting for you. Support your response with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-b-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative B Q1(b)",
+   "questionText": "We can be affected emotionally by the way authors explore themes in their texts. In relation to the theme you discussed in part (a) above, compare how the treatment of that theme, in at least two texts on your comparative course, affected you emotionally. Support your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    45,
+    46
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-b-q2-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative B Q2(a)(i)",
+   "questionText": "Name one of the texts on your comparative course. Identify a theme you explored while studying this text. Using one or more key moment(s) from that text, explain whether or not the author succeeded in holding your attention by exploring your chosen theme. Support your response with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-b-q2-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative B Q2(a)(ii)",
+   "questionText": "Name another text on your comparative course. Using one or more key moment(s) from that text, explain whether or not the author succeeded in holding your attention by exploring the same theme discussed in part (i). Support your response with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-c-q1-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative C Q1(a)(i)",
+   "questionText": "Name one of the texts on your comparative course. In your view, did the social setting encourage the characters in the text to be considerate of others? Use one or more key moment(s) to support your response.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Social Setting",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-c-q1-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative C Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course. In your view, did the social setting encourage characters in this text to be considerate of others? Use one or more key moment(s) to support your response.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Social Setting",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-c-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative C Q1(b)",
+   "questionText": "The social setting in any text can give a reader reasons to feel hopeful or reasons to feel hopeless. In relation to at least two texts on your comparative course, compare the ways the social settings in these texts gave you reasons to feel hopeful or to feel hopeless. Your response can be based on a combination of the two feelings. Support your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Social Setting",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-c-q2-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative C Q2(a)(i)",
+   "questionText": "Name one of the texts on your comparative course. With reference to one or more key moment(s) explain how aspects of the social setting contributed to the creation of conflict in that text. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Social Setting",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-comparative-c-q2-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Comparative C Q2(a)(ii)",
+   "questionText": "Name another text on your comparative course. With reference to one or more key moment(s) explain how aspects of the social setting contributed to the creation of conflict in that text. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Social Setting",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-unseen-q1",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Unseen Poetry Q1",
+   "questionText": "Would you recommend that parents of newly-born babies should read this poem? Explain your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "The Hundred Names of Love",
+    "pages": [
+     14
+    ],
+    "attribution": "The Hundred Names of Love — Annie Lighthart, as reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-unseen-q2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Unseen Poetry Q2",
+   "questionText": "Select two examples from the above poem where the poet uses language in a way that appeals to you. Explain why you think your choices are appealing.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "The Hundred Names of Love",
+    "pages": [
+     14
+    ],
+    "attribution": "The Hundred Names of Love — Annie Lighthart, as reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    49,
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-a-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry A Q1(a)",
+   "questionText": "Which of the following do you think describes the tone or mood of this poem best? Reflective or Hopeful or A combination of both Reflective and Hopeful Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-51",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Night Drive — Tom French",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Night Drive",
+    "pages": [
+     15
+    ],
+    "attribution": "Night Drive — Tom French.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-a-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry A Q1(b)",
+   "questionText": "Based on your reading of the poem, what do you think French is saying to readers in the line, ‘You would’ve led me to the next world, Mother, like a child.’?",
+   "totalMarks": 15,
+   "topicId": "english-11-51",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Night Drive — Tom French",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Night Drive",
+    "pages": [
+     15
+    ],
+    "attribution": "Night Drive — Tom French.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-a-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry A Q2(i)",
+   "questionText": "You have been asked to nominate a poem for inclusion in a new poetry collection entitled, Legendary Lines – Poems we will still be reading a hundred years from now. Explain why you think ‘Night Drive’ would be a good poem to include. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-51",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Night Drive — Tom French",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Night Drive",
+    "pages": [
+     15
+    ],
+    "attribution": "Night Drive — Tom French.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    50,
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-a-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry A Q2(ii)",
+   "questionText": "You are taking part in a poetry slam. A poetry slam is a performance event where poems are recited in front of a live audience because they have interesting things to say and because they use language that can have a dramatic impact on the audience. Explain why, in your view, ‘Night Drive’ would or would not be a suitable poem to recite at this event. Support your response with reference to ‘Night Drive’.",
+   "totalMarks": 20,
+   "topicId": "english-11-51",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Night Drive — Tom French",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Night Drive",
+    "pages": [
+     15
+    ],
+    "attribution": "Night Drive — Tom French.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-a-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry A Q2(iii)",
+   "questionText": "French has been praised for the skilful way he uses language in his poetry. Identify three occasions when, you think, French uses language skilfully in his poem, ‘Night Drive’, and explain why you think they are worthy of praise. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-51",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Night Drive — Tom French",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Night Drive",
+    "pages": [
+     15
+    ],
+    "attribution": "Night Drive — Tom French.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-b-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry B Q1(a)",
+   "questionText": "Which of the following do you think describes the tone or mood of this poem best? Reflective or Hopeful or A combination of both Reflective and Hopeful Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Call — Seamus Heaney",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "A Call",
+    "pages": [
+     16
+    ],
+    "attribution": "A Call — Seamus Heaney.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-b-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry B Q1(b)",
+   "questionText": "Based on your reading of the poem, what do you think Heaney is saying to readers in the line, ‘Next thing he spoke and I nearly said I loved him.’?",
+   "totalMarks": 15,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Call — Seamus Heaney",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "A Call",
+    "pages": [
+     16
+    ],
+    "attribution": "A Call — Seamus Heaney.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-b-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry B Q2(i)",
+   "questionText": "You have been asked to nominate a poem for inclusion in a new poetry collection entitled, Legendary Lines – Poems we will still be reading a hundred years from now. Explain why you think ‘A Call’ would be a good poem to include. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Call — Seamus Heaney",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "A Call",
+    "pages": [
+     16
+    ],
+    "attribution": "A Call — Seamus Heaney.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-b-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry B Q2(ii)",
+   "questionText": "You are taking part in a poetry slam. A poetry slam is a performance event where poems are recited in front of a live audience because they have interesting things to say and because they use language that can have a dramatic impact on the audience. Explain why, in your view, ‘A Call’ would or would not be a suitable poem to recite at this event. Support your response with reference to ‘A Call’.",
+   "totalMarks": 20,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Call — Seamus Heaney",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "A Call",
+    "pages": [
+     16
+    ],
+    "attribution": "A Call — Seamus Heaney.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-b-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry B Q2(iii)",
+   "questionText": "Heaney has been praised for the skilful way he uses language in his poetry. Identify three occasions when, you think, Heaney uses language skilfully in his poem, ‘A Call’, and explain why you think they are worthy of praise. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Call — Seamus Heaney",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "A Call",
+    "pages": [
+     16
+    ],
+    "attribution": "A Call — Seamus Heaney.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-c-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry C Q1(a)",
+   "questionText": "Which of the following do you think describes the tone or mood of this poem best? Reflective or Hopeful or A combination of both Reflective and Hopeful Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-52",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "In Praise of My Sister (extract) — Wisława Szymborska — N.B: You may refer to other parts of the entire poem in your responses to the following questions.",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "In Praise of My Sister (extract)",
+    "pages": [
+     17
+    ],
+    "attribution": "In Praise of My Sister (extract) — Wisława Szymborska.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-c-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry C Q1(b)",
+   "questionText": "Based on your reading of the poem, what do you think Szymborska is saying to readers in the line, ‘Her soups are delicious without ulterior motives.’?",
+   "totalMarks": 15,
+   "topicId": "english-11-52",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "In Praise of My Sister (extract) — Wisława Szymborska — N.B: You may refer to other parts of the entire poem in your responses to the following questions.",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "In Praise of My Sister (extract)",
+    "pages": [
+     17
+    ],
+    "attribution": "In Praise of My Sister (extract) — Wisława Szymborska.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-c-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry C Q2(i)",
+   "questionText": "You have been asked to nominate a poem for inclusion in a new poetry collection entitled, Legendary Lines – Poems we will still be reading a hundred years from now. Explain why you think ‘In Praise of My Sister’ would be a good poem to include. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-52",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "In Praise of My Sister (extract) — Wisława Szymborska — N.B: You may refer to other parts of the entire poem in your responses to the following questions.",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "In Praise of My Sister (extract)",
+    "pages": [
+     17
+    ],
+    "attribution": "In Praise of My Sister (extract) — Wisława Szymborska.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54,
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-c-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry C Q2(ii)",
+   "questionText": "You are taking part in a poetry slam. A poetry slam is a performance event where poems are recited in front of a live audience because they have interesting things to say and because they use language that can have a dramatic impact on the audience. Explain why, in your view, ‘In Praise of My Sister’ would or would not be a suitable poem to recite at this event. Support your response with reference to ‘In Praise of My Sister’.",
+   "totalMarks": 20,
+   "topicId": "english-11-52",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "In Praise of My Sister (extract) — Wisława Szymborska — N.B: You may refer to other parts of the entire poem in your responses to the following questions.",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "In Praise of My Sister (extract)",
+    "pages": [
+     17
+    ],
+    "attribution": "In Praise of My Sister (extract) — Wisława Szymborska.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-c-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry C Q2(iii)",
+   "questionText": "Szymborska has been praised for the skilful way she uses language in her poetry. Identify three occasions when, you think, Szymborska uses language skilfully in her poem, ‘In Praise of My Sister’, and explain why you think they are worthy of praise. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-52",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "In Praise of My Sister (extract) — Wisława Szymborska — N.B: You may refer to other parts of the entire poem in your responses to the following questions.",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "In Praise of My Sister (extract)",
+    "pages": [
+     17
+    ],
+    "attribution": "In Praise of My Sister (extract) — Wisława Szymborska.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-d-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry D Q1(a)",
+   "questionText": "Which of the following do you think describes the tone or mood of this poem best? Reflective or Hopeful or A combination of both Reflective and Hopeful Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-26",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "How Do I Love Thee? — Elizabeth Barrett Browning",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "How Do I Love Thee?",
+    "pages": [
+     18
+    ],
+    "attribution": "How Do I Love Thee? — Elizabeth Barrett Browning.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-d-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry D Q1(b)",
+   "questionText": "Based on your reading of the poem, what do you think Barrett Browning is saying to readers in the line, ‘I love thee with the passion put to use In my old griefs, and with my childhood faith.’?",
+   "totalMarks": 15,
+   "topicId": "english-11-26",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "How Do I Love Thee? — Elizabeth Barrett Browning",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "How Do I Love Thee?",
+    "pages": [
+     18
+    ],
+    "attribution": "How Do I Love Thee? — Elizabeth Barrett Browning.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-d-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry D Q2(i)",
+   "questionText": "You have been asked to nominate a poem for inclusion in a new poetry collection entitled, Legendary Lines – Poems we will still be reading a hundred years from now. Explain why you think ‘How Do I Love Thee?’ would be a good poem to include. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-26",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "How Do I Love Thee? — Elizabeth Barrett Browning",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "How Do I Love Thee?",
+    "pages": [
+     18
+    ],
+    "attribution": "How Do I Love Thee? — Elizabeth Barrett Browning.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56,
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-d-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry D Q2(ii)",
+   "questionText": "You are taking part in a poetry slam. A poetry slam is a performance event where poems are recited in front of a live audience because they have interesting things to say and because they use language that can have a dramatic impact on the audience. Explain why, in your view, ‘How Do I Love Thee?’ would or would not be a suitable poem to recite at this event. Support your response with reference to ‘How Do I Love Thee?’.",
+   "totalMarks": 20,
+   "topicId": "english-11-26",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "How Do I Love Thee? — Elizabeth Barrett Browning",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "How Do I Love Thee?",
+    "pages": [
+     18
+    ],
+    "attribution": "How Do I Love Thee? — Elizabeth Barrett Browning.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-d-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry D Q2(iii)",
+   "questionText": "Barrett Browning has been praised for the skilful way she uses language in her poetry. Identify three occasions when, you think, Barrett Browning uses language skilfully in her poem, ‘How Do I Love Thee?’, and explain why you think they are worthy of praise. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-26",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "How Do I Love Thee? — Elizabeth Barrett Browning",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "How Do I Love Thee?",
+    "pages": [
+     18
+    ],
+    "attribution": "How Do I Love Thee? — Elizabeth Barrett Browning.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-e-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry E Q1(a)",
+   "questionText": "Which of the following do you think describes the tone or mood of this poem best? Reflective or Hopeful or A combination of both Reflective and Hopeful Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hearth Lesson — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Hearth Lesson",
+    "pages": [
+     19
+    ],
+    "attribution": "Hearth Lesson — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-e-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry E Q1(b)",
+   "questionText": "Based on your reading of the poem, what do you think Meehan is saying to readers in the line, ‘I’m net, umpire, and court, most balls are lobbed over my head.’?",
+   "totalMarks": 15,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hearth Lesson — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Hearth Lesson",
+    "pages": [
+     19
+    ],
+    "attribution": "Hearth Lesson — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-e-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry E Q2(i)",
+   "questionText": "You have been asked to nominate a poem for inclusion in a new poetry collection entitled, Legendary Lines – Poems we will still be reading a hundred years from now. Explain why you think ‘Hearth Lesson’ would be a good poem to include. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hearth Lesson — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Hearth Lesson",
+    "pages": [
+     19
+    ],
+    "attribution": "Hearth Lesson — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58,
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-e-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry E Q2(ii)",
+   "questionText": "You are taking part in a poetry slam. A poetry slam is a performance event where poems are recited in front of a live audience because they have interesting things to say and because they use language that can have a dramatic impact on the audience. Explain why, in your view, ‘Hearth Lesson’ would or would not be a suitable poem to recite at this event. Support your response with reference to ‘Hearth Lesson’.",
+   "totalMarks": 20,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hearth Lesson — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Hearth Lesson",
+    "pages": [
+     19
+    ],
+    "attribution": "Hearth Lesson — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-e-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry E Q2(iii)",
+   "questionText": "Meehan has been praised for the skilful way she uses language in her poetry. Identify three occasions when you think Meehan uses language skilfully in her poem, ‘Hearth Lesson’, and explain why you think they are worthy of praise. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hearth Lesson — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Hearth Lesson",
+    "pages": [
+     19
+    ],
+    "attribution": "Hearth Lesson — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-f-q1-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry F Q1(a)",
+   "questionText": "Which of the following do you think describes the tone or mood of this poem best? Reflective or Hopeful or A combination of both Reflective and Hopeful Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Child — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Child",
+    "pages": [
+     20
+    ],
+    "attribution": "Child — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-f-q1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry F Q1(b)",
+   "questionText": "Based on your reading of the poem, what do you think Plath is saying to readers in the line, ‘Your clear eye is the one absolutely beautiful thing.’?",
+   "totalMarks": 15,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Child — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Child",
+    "pages": [
+     20
+    ],
+    "attribution": "Child — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-f-q2-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry F Q2(i)",
+   "questionText": "You have been asked to nominate a poem for inclusion in a new poetry collection entitled, Legendary Lines – Poems we will still be reading a hundred years from now. Explain why you think ‘Child’ would be a good poem to include. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Child — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Child",
+    "pages": [
+     20
+    ],
+    "attribution": "Child — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60,
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-f-q2-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry F Q2(ii)",
+   "questionText": "You are taking part in a poetry slam. A poetry slam is a performance event where poems are recited in front of a live audience because they have interesting things to say and because they use language that can have a dramatic impact on the audience. Explain why, in your view, ‘Child’ would or would not be a suitable poem to recite at this event. Support your response with reference to ‘Child’.",
+   "totalMarks": 20,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Child — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Child",
+    "pages": [
+     20
+    ],
+    "attribution": "Child — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-ol-p2-prescribed-f-q2-iii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2024 OL Paper 2 Prescribed Poetry F Q2(iii)",
+   "questionText": "Plath has been praised for the skilful way she uses language in her poetry. Identify three occasions when you think Plath uses language skilfully in her poem, ‘Child’, and explain why you think they are worthy of praise. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Child — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Child",
+    "pages": [
+     20
+    ],
+    "attribution": "Child — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
    }
   },
   {

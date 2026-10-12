@@ -301,6 +301,27 @@ def word_difference(old_text, new_text):
     return changes
 
 
+def repair_basis(kind, old_text, new_text):
+    """The legacy words a reviewed prompt is compared with (comparable form).
+
+    A bundle alias names only one of the parts its legacy card printed, so the
+    other parts (and the part label) are set aside: the legacy words aligned
+    with the reviewed prompt, from its first matched word to its last. Any
+    other legacy prompt is compared whole.
+    """
+    if kind != 'alias':
+        return old_text
+    old, new = old_text.split(), new_text.split()
+    ops = difflib.SequenceMatcher(None, old, new, autojunk=False).get_opcodes()
+    while ops and ops[0][0] == 'delete':
+        ops.pop(0)
+    while ops and ops[-1][0] == 'delete':
+        ops.pop()
+    if not ops or ops[0][3] != 0 or ops[-1][4] != len(new):
+        return old_text
+    return ' '.join(old[ops[0][1]:ops[-1][2]])
+
+
 def card_aliases():
     return dict(re.findall(r'^\s*"([^"]+)": "([^"]+)",?$', CARD_ALIASES.read_text(), re.M))
 
@@ -349,9 +370,11 @@ def apply_bridge(key, bridge, record, emitted, legacy_manifest):
                 raise ValueError(f'{old}: unknown bridge kind {entry["kind"]}')
             legacy_text, target_text = comparable(legacy[old]['questionText']), comparable(target['questionText'])
             if legacy_text not in target_text and target_text not in legacy_text:
-                # A repaired legacy prompt: allowed only when the ledger records the exact word difference.
-                if entry.get('textRepair') != word_difference(legacy_text, target_text) or \
-                        difflib.SequenceMatcher(None, legacy_text, target_text).ratio() < 0.9:
+                # A repaired legacy prompt: allowed only when the ledger records the exact word difference
+                # (for a bundle alias, within the legacy words aligned with its part).
+                basis = repair_basis(entry['kind'], legacy_text, target_text)
+                if entry.get('textRepair') != word_difference(basis, target_text) or \
+                        difflib.SequenceMatcher(None, basis, target_text).ratio() < 0.9:
                     raise ValueError(f'{old}: legacy prompt and bridged card are not the same printed task')
             if target['totalMarks'] > legacy[old]['totalMarks']:
                 raise ValueError(f'{old}: bridged card exceeds the legacy tariff')
