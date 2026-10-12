@@ -39,6 +39,7 @@ import ordinary2022p2 from '../scripts/markbank/mathematics/reviews/2022-ordinar
 import higher2021p1 from '../scripts/markbank/mathematics/reviews/2021-higher-p1.json';
 import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2.json';
 import ordinary2021p1 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p1.json';
+import ordinary2021p2 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p2.json';
 import glyphMap from '../scripts/markbank/authoring/glyphmap.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
@@ -855,6 +856,9 @@ describe('2023 Ordinary Mathematics Paper 2 marking-point repairs', () => {
   });
 });
 
+// A legacy card that duplicates a reviewed unit; it stays live until a progress-alias decision.
+const OUTSIDE_CENSUS = new Set(['maths-2021-ol-p2-q3']);
+
 // 2022 and 2021 Higher/Ordinary papers, reviewed from 2026-10-12. The 2022 papers were adjusted for
 // COVID-19 (220 marks to count) but every question is offered and retained.
 describe.each([
@@ -865,9 +869,11 @@ describe.each([
   { year: 2021, level: 'higher' as const, number: 1, count: 44, review: higher2021p1 },
   { year: 2021, level: 'higher' as const, number: 2, count: 42, review: higher2021p2 },
   { year: 2021, level: 'ordinary' as const, number: 1, count: 42, review: ordinary2021p1 },
+  { year: 2021, level: 'ordinary' as const, number: 2, count: 48, review: ordinary2021p2 },
 ])('$year $level Mathematics Paper $number independent source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
-  const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
+  const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`)
+    && !OUTSIDE_CENSUS.has(card.id));
 
   it('retains every published scale unit and all 380 offered marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
@@ -933,5 +939,28 @@ describe('2021 Ordinary Mathematics Paper 1 glyph repair', () => {
     const card = ORDINARY.find(candidate => candidate.id === 'maths-2021-ol-p1-q2-b')!;
     expect(card.questionText).toBe('z₃ = z₁/z₂. Find z₃ in the form a + bi, where a, b ∈ ℤ.');
     expect(JSON.stringify(card)).not.toMatch(/[\u0B00-\u0DFF]/);
+  });
+});
+
+describe('2021 Ordinary Mathematics Paper 2 repairs', () => {
+  const card = (suffix: string) => ORDINARY.find(candidate => candidate.id === `maths-2021-ol-p2-q${suffix}`)!;
+
+  it('ships Q5(b)(ii) with its prompt restored from the paper, and keeps U+F061 out of the glyph map', () => {
+    expect(card('5-b-ii').questionText).toContain('Tick (✓)');
+    expect((glyphMap as Record<string, string>)['\uf061']).toBeUndefined();
+  });
+
+  it('re-cites the Q6 cards to the single parts their scales cover', () => {
+    expect(card('6').questionRef).toBe('2021 OL Paper 2 Q6(b)(ii)');
+    expect(card('6-a-i').questionRef).toBe('2021 OL Paper 2 Q6(a)(i)');
+    expect(card('6-b-i').questionRef).toBe('2021 OL Paper 2 Q6(b)(i)');
+  });
+
+  it('keeps the Q3(a) duplicate live with its printed prompt, outside the reviewed census', () => {
+    const duplicate = card('3');
+    expect(duplicate.questionRef).toBe('2021 OL Paper 2 Q3');
+    expect(duplicate.questionText).toBe(card('3-a').questionText);
+    expect('mathematicsScale' in duplicate && duplicate.mathematicsScale).toBeFalsy();
+    expect(ordinary2021p2.cards.some(task => task.id === duplicate.id)).toBe(false);
   });
 });

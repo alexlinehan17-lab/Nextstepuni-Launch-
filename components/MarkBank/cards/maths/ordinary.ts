@@ -1926,21 +1926,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q1-a", topicId: "maths-1-3", conceptId: "how-many-different-possible-outcomes-there",
+    id: "maths-2021-ol-p2-q1-a", topicId: "maths-1-1", conceptId: "how-many-different-possible-outcomes-there",
     section: "B", questionRef: "2021 OL Paper 2 Q1(a)",
+    stem: "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot.",
     questionText: "How many different possible outcomes are there in the game?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p2-q1-a-r1", kind: "anyN", verbatim: "Work of merit\nAny outcome listed\n4 + 4", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nAny outcome listed\n4 + 4","Significant work\n10 outcomes listed\n4 × 4","Correct answer without supporting work Zero Credit:\nAnswer as a probability"],"perOptionSteps":[3,4,3]} },
+    { id: "maths-2021-ol-p2-q1-a-r1", kind: "anyN", verbatim: "Work of merit\nAny outcome listed\n4 + 4", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit. Zero Credit (not a band): Answer as a probability.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nAny outcome listed\n4 + 4","Significant work\n10 outcomes listed\n4 × 4","Correct answer without supporting work"],"perOptionSteps":[3,4,3]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[32],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q1-a.png",
           "srcHash": "82d90b5aa0371729a46f5c5ebc684c91",
-          "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place… Full card prompt: How many different possible outcomes are there in the game?",
+          "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place… Full card prompt: The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot. How many different possible outcomes are there in the game?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1956,21 +1970,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q1-b-ii", topicId: "maths-1-2", conceptId: "red-yellow-coloured-spot",
     section: "B", questionRef: "2021 OL Paper 2 Q1(b)(ii)",
-    questionText: "a red or yellow coloured spot?",
+    stem: "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot.",
+    questionText: "Kate spins each spinner once. What is the probability that she must use a red or yellow coloured spot?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p2-q1-b-ii-r1", kind: "anyN", verbatim: "Work of merit\nOne outcome with red or yellow spot listed\nA valid #E or #S in fraction format with no work shown", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\nOne outcome with red or yellow spot listed\nA valid #E or #S in fraction format with no work shown","Significant work\nAll 8 outcomes listed\n1/4 + 1/4","Correct answer without supporting work Zero Credit:\nProbability > 1, without work"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2021-ol-p2-q1-b-ii-r1", kind: "anyN", verbatim: "Work of merit\nOne outcome with red or yellow spot listed\nA valid #E or #S in fraction format with no work shown", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit. Zero Credit (not a band): Probability > 1, without work.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\nOne outcome with red or yellow spot listed\nA valid #E or #S in fraction format with no work shown","Significant work\nAll 8 outcomes listed\n1/4 + 1/4","Correct answer without supporting work"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q1-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q1-b-ii.png",
           "srcHash": "8ba85d82a789029024956a605849af02",
-          "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place… Full card prompt: a red or yellow coloured spot?",
+          "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place… Full card prompt: The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot. Kate spins each spinner once. What is the probability that she must use a red or yellow coloured spot?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1986,21 +2014,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q1-c-i", topicId: "maths-1-2", conceptId: "his-right-hand-blue-spot",
     section: "B", questionRef: "2021 OL Paper 2 Q1(c)(i)",
-    questionText: "his right hand and a blue spot?",
+    stem: "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot.",
+    questionText: "Jack spins each spinner once. What is the probability that the outcome is his right hand and a blue spot?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p2-q1-c-i-r1", kind: "anyN", verbatim: "Work of merit\n1/4\nA valid #E or #S in fraction format with no work shown", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\n1/4\nA valid #E or #S in fraction format with no work shown","Significant work\n1/4 × 1/4","Correct answer without supporting work Zero Credit:\nProbability > 1, without work"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2021-ol-p2-q1-c-i-r1", kind: "anyN", verbatim: "Work of merit\n1/4\nA valid #E or #S in fraction format with no work shown", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit. Zero Credit (not a band): Probability > 1, without work.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\n1/4\nA valid #E or #S in fraction format with no work shown","Significant work\n1/4 × 1/4","Correct answer without supporting work"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[34],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q1-c-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q1-c-i.png",
           "srcHash": "4847f720d22b640850f339c3944e4e27",
-          "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place… Full card prompt: his right hand and a blue spot?",
+          "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place… Full card prompt: The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot. Jack spins each spinner once. What is the probability that the outcome is his right hand and a blue spot?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2016,21 +2058,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q1-c-ii", topicId: "maths-1-2", conceptId: "his-right-hand-blue-spot",
     section: "B", questionRef: "2021 OL Paper 2 Q1(c)(ii)",
-    questionText: "his right hand or a blue spot?",
+    stem: "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot.",
+    questionText: "Jack spins each spinner once. What is the probability that the outcome is his right hand or a blue spot?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p2-q1-c-ii-r1", kind: "anyN", verbatim: "Work of merit\nOne outcome with a right hand or a blue spot listed\n1/4\nA valid #E or #S in fraction format with no work shown", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\nOne outcome with a right hand or a blue spot listed\n1/4\nA valid #E or #S in fraction format with no work shown","Significant work\nAll seven outcomes listed\n4/16 + 4/16 = 8/16","Correct answer without supporting work Zero Credit:\nProbability > 1, without work"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2021-ol-p2-q1-c-ii-r1", kind: "anyN", verbatim: "Work of merit\nOne outcome with a right hand or a blue spot listed\n1/4\nA valid #E or #S in fraction format with no work shown", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit. Zero Credit (not a band): Probability > 1, without work.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\nOne outcome with a right hand or a blue spot listed\n1/4\nA valid #E or #S in fraction format with no work shown","Significant work\nAll seven outcomes listed\n4/16 + 4/16 = 8/16","Correct answer without supporting work"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[34],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q1-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q1-c-ii.png",
           "srcHash": "fa9945ea6e73a878c32175c77899c2f2",
-          "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place… Full card prompt: his right hand or a blue spot?",
+          "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place… Full card prompt: The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot. Jack spins each spinner once. What is the probability that the outcome is his right hand or a blue spot?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2046,16 +2102,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q2-a-i", topicId: "maths-1-2", conceptId: "what-probability-not-knocking-coconut-off",
     section: "B", questionRef: "2021 OL Paper 2 Q2(a)(i)",
+    stem: "At a stall in a fun fair, the probability of knocking a coconut off its support is 0·34.",
     questionText: "What is the probability of not knocking a coconut off its support?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q2-a-i-r1", kind: "anyN", verbatim: "Work of merit\nMention of 1", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nMention of 1","Significant work\nWrites 1 −0·34","Correct answer without supporting work"],"perOptionSteps":[3,4,3]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q2-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q2-a-i.png",
@@ -2076,21 +2146,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q2-a-ii", topicId: "maths-1-2", conceptId: "david-given-three-attempts-knock-coconut",
     section: "B", questionRef: "2021 OL Paper 2 Q2(a)(ii)",
-    questionText: "David is given three attempts to knock the coconut off its support. What is the probability that he knocks the coconut for the first time, on his third attempt? Give your answer correct to three decimal places",
+    stem: "At a stall in a fun fair, the probability of knocking a coconut off its support is 0·34.",
+    questionText: "David is given three attempts to knock the coconut off its support. What is the probability that he knocks the coconut for the first time, on his third attempt? Give your answer correct to three decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q2-a-ii-r1", kind: "anyN", verbatim: "Work of merit\nFail, Fail, Success", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nFail, Fail, Success","Significant work\nCorrect answer indicated but not calculated (0·66) × (0·66) × (0·34)","Correct answer without supporting work"],"perOptionSteps":[3,4,3]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q2-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q2-a-ii.png",
           "srcHash": "f8cd0651af44242f5c89057dc643557a",
-          "alt": "The question as printed on the paper — At a stall in a fun fair, the probability of knocking a coconut off its support is 0∙34. What is the probability of not knocking a coconut off its support? David is given three attempts to knock the coconut off its… Full card prompt: David is given three attempts to knock the coconut off its support. What is the probability that he knocks the coconut for the first time, on his third attempt? Give your answer correct to three decimal places",
+          "alt": "The question as printed on the paper — At a stall in a fun fair, the probability of knocking a coconut off its support is 0∙34. What is the probability of not knocking a coconut off its support? David is given three attempts to knock the coconut off its… Full card prompt: At a stall in a fun fair, the probability of knocking a coconut off its support is 0·34. David is given three attempts to knock the coconut off its support. What is the probability that he knocks the coconut for the first time, on his third attempt? Give your answer correct to three decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2106,21 +2190,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q2-b", topicId: "maths-3-4", conceptId: "figure-abcde-shown-diagram-consists-large",
     section: "B", questionRef: "2021 OL Paper 2 Q2(b)",
-    questionText: "The figure ABCDE shown in the diagram consists of a large square ACDE standing on the diagonal [AC ] of a smaller square ABCF. The smaller square has a side length of 2 cm. Find the area and perimeter of the figure ABCDE. Give your answer for the perimeter correct to two decimal places",
+    questionText: "The figure ABCDE shown in the diagram consists of a large square ACDE standing on the diagonal [AC] of a smaller square ABCF. The smaller square has a side length of 2 cm. Find the area and perimeter of the figure ABCDE. Give your answer for the perimeter correct to two decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q2-b-r1", kind: "anyN", verbatim: "Work of merit\nCorrect reference to/use of Pythagoras to calculate |AC|", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial credit; High Partial credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nCorrect reference to/use of Pythagoras to calculate |AC|","Finds |AC|","Significant work\nArea or Perimeter correct\nExpression for Area and Perimeter fully substituted but not calculated"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q2-b.png",
           "srcHash": "79072a00a401f92c964001897d5cd68f",
-          "alt": "The question as printed on the paper — The figure ABCDE shown in the diagram consists of a large square ACDE standing on the diagonal [AC ] of a smaller square ABCF. The smaller square has a side length of 2 cm. Find the area and perimeter of the figure… Full card prompt: The figure ABCDE shown in the diagram consists of a large square ACDE standing on the diagonal [AC ] of a smaller square ABCF. The smaller square has a side length of 2 cm. Find the area and perimeter of the figure ABCDE. Give your answer for the perimeter correct to two decimal places",
+          "alt": "The question as printed on the paper — The figure ABCDE shown in the diagram consists of a large square ACDE standing on the diagonal [AC ] of a smaller square ABCF. The smaller square has a side length of 2 cm. Find the area and perimeter of the figure… Full card prompt: The figure ABCDE shown in the diagram consists of a large square ACDE standing on the diagonal [AC] of a smaller square ABCF. The smaller square has a side length of 2 cm. Find the area and perimeter of the figure ABCDE. Give your answer for the perimeter correct to two decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2141,7 +2238,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q3", topicId: "maths-2-2", conceptId: "line-passes-through-points-write-equation",
     section: "B", questionRef: "2021 OL Paper 2 Q3",
-    questionText: "A line n passes through the points A(–1, 2) and B(0, –2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ. The diagram below shows the line l: 3x−4y = 5 and the point P(6, −3). Find the equation of the line k through the point P that is perpendicular to the line l. Write your answer in the form ax + by + c = 0, where a, b, c ∈ℤ. Find the point of intersection of the lines l: 3x−4y = 5 and h: 2x−y = 10",
+    questionText: "A line n passes through the points A(−1, 2) and B(0, −2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q3-r1", kind: "anyN", verbatim: "Work of merit\nSome correct substitution into equation y = mx + c", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nSome correct substitution into equation y = mx + c","Full substitution into both A & B\nm or c found","Significant Work\nm and c found\nOne error and finishes correctly\nAnswer not in required format"],"perOptionSteps":[3,2,5]} },
@@ -2166,16 +2263,38 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q3-a", topicId: "maths-3-1", conceptId: "line-passes-through-points-write-equation",
+    id: "maths-2021-ol-p2-q3-a", topicId: "maths-2-2", conceptId: "line-passes-through-points-write-equation",
     section: "B", questionRef: "2021 OL Paper 2 Q3(a)",
-    questionText: "A line n passes through the points A(–1, 2) and B(0, –2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "A line n passes through the points A(−1, 2) and B(0, −2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p2-q3-a-r1", kind: "anyN", verbatim: "Work of merit\nSlope formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit\nSlope formula with some substitution","Significant Work\nEq. of line formula fully substituted\nOne error and finishes correctly\nAnswer not in required format or"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-ol-p2-q3-a-solution-1", kind: "point", verbatim: "Model solution — y = −4x − 2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-a-solution-2", kind: "point", verbatim: "Method 1, Low Partial Credit — Slope formula with some substitution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-a-solution-3", kind: "point", verbatim: "Method 1, Mid Partial Credit — m found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-a-solution-4", kind: "point", verbatim: "Method 1, High Partial Credit — Eq. of line formula fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-a-solution-5", kind: "point", verbatim: "Method 1, High Partial Credit — One error and finishes correctly", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-a-solution-6", kind: "point", verbatim: "Method 1, High Partial Credit — Answer not in required format", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-a-solution-7", kind: "point", verbatim: "Method 2, Low Partial Credit — Some correct substitution into equation", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-a-solution-8", kind: "point", verbatim: "Method 2, Mid Partial Credit — Full substitution into both A & B", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-a-solution-9", kind: "point", verbatim: "Method 2, Mid Partial Credit — m or c found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-a-solution-10", kind: "point", verbatim: "Method 2, High Partial Credit — m and c found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q3-a.png",
@@ -2196,21 +2315,44 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q3-b-i", topicId: "maths-2-2", conceptId: "equation-line-through-point-perpendicular-line",
     section: "B", questionRef: "2021 OL Paper 2 Q3(b)(i)",
-    questionText: "Find the equation of the line k through the point P that is perpendicular to the line l. Write your answer in the form ax + by + c = 0, where a, b, c ∈ℤ",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The diagram below shows the line l: 3x − 4y = 5 and the point P(6, −3).",
+    questionText: "Find the equation of the line k through the point P that is perpendicular to the line l. Write your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p2-q3-b-i-r1", kind: "anyN", verbatim: "(i) slope of l = 3/4", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["(i) slope of l = 3/4","perpendicular slope = (−4)/3","y − (−3) = (−4)/3 (x − 6)","y + 3 = (−4)/3 (x − 6)","k: 4x + 3y−15 = 0"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2021-ol-p2-q3-b-i-solution-1", kind: "point", verbatim: "Model solution — slope of l = 3/4", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-i-solution-2", kind: "point", verbatim: "Model solution — slope of k = −4/3", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-i-solution-3", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-i-solution-4", kind: "point", verbatim: "Low Partial Credit — slope of l = 3/4", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-i-solution-5", kind: "point", verbatim: "Low Partial Credit — Eq. of line formula with some substitution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-i-solution-6", kind: "point", verbatim: "Mid Partial Credit — slope of k = −4/3", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-i-solution-7", kind: "point", verbatim: "High Partial Credit — Significant Work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-i-solution-8", kind: "point", verbatim: "High Partial Credit — Eq. of line formula fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-i-solution-9", kind: "point", verbatim: "High Partial Credit — One error and finishes correctly", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-i-solution-10", kind: "point", verbatim: "High Partial Credit — Answer not in required format", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[37],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q3-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q3-b-i.png",
           "srcHash": "89c88dc69f07ed715d253c643fee6713",
-          "alt": "The question as printed on the paper — The diagram below shows the line l: 3x−4y = 5 and the point P(6, −3). 5 y l 4 3 2 1 x -2 -1 1 2 3 4 5 6 7 8 -1 -2 P -3 Find the equation of the line k through the point P that is perpendicular to the line l. Write your… Full card prompt: Find the equation of the line k through the point P that is perpendicular to the line l. Write your answer in the form ax + by + c = 0, where a, b, c ∈ℤ",
+          "alt": "The question as printed on the paper — The diagram below shows the line l: 3x−4y = 5 and the point P(6, −3). 5 y l 4 3 2 1 x -2 -1 1 2 3 4 5 6 7 8 -1 -2 P -3 Find the equation of the line k through the point P that is perpendicular to the line l. Write your… Full card prompt: The diagram below shows the line l: 3x − 4y = 5 and the point P(6, −3). Find the equation of the line k through the point P that is perpendicular to the line l. Write your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2226,16 +2368,38 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q3-b-ii", topicId: "maths-2-2", conceptId: "point-intersection-lines",
     section: "B", questionRef: "2021 OL Paper 2 Q3(b)(ii)",
-    questionText: "Find the point of intersection of the lines l: 3x−4y = 5 and h: 2x−y = 10",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The diagram below shows the line l: 3x − 4y = 5 and the point P(6, −3).",
+    questionText: "Find the point of intersection of the lines l: 3x − 4y = 5 and h: 2x − y = 10.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p2-q3-b-ii-r1", kind: "anyN", verbatim: "Work of merit\nEffort to equate coefficients of x or y\nEffort at isolating one variable\nEffort at drawing line h\nCorrect answer without work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit\nEffort to equate coefficients of x or y\nEffort at isolating one variable\nEffort at drawing line h\nCorrect answer without work","Significant Work\nOne variable found\nOne error and finishes correctly or"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-ol-p2-q3-b-ii-solution-1", kind: "point", verbatim: "Model solution — l ∩ k = (7, 4)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-ii-solution-2", kind: "point", verbatim: "Low Partial Credit — Effort to equate coefficients of x or y", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-ii-solution-3", kind: "point", verbatim: "Low Partial Credit — Effort at isolating one variable", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-ii-solution-4", kind: "point", verbatim: "Low Partial Credit — Effort at drawing line h", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-ii-solution-5", kind: "point", verbatim: "Low Partial Credit — Correct answer without work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-ii-solution-6", kind: "point", verbatim: "High Partial Credit — One variable found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-ii-solution-7", kind: "point", verbatim: "High Partial Credit — One error and finishes correctly", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-ii-solution-8", kind: "point", verbatim: "Graphical method, Low Partial Credit — Finds one point on h", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q3-b-ii-solution-9", kind: "point", verbatim: "Graphical method, High Partial Credit — Draws h", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[37],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q3-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q3-b-ii.png",
@@ -2256,16 +2420,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q4-a-i", topicId: "maths-2-2", conceptId: "write-down-ordinates",
     section: "B", questionRef: "2021 OL Paper 2 Q4(a)(i)",
-    questionText: "Write down the co-ordinates of A and of B",
+    stem: "The co-ordinate diagram below shows two points A and B.",
+    questionText: "Write down the co-ordinates of A and of B.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q4-a-i-r1", kind: "anyN", verbatim: "Work of merit\nOne correct co-ordinate\nOrdinates reversed", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\nOne correct co-ordinate\nOrdinates reversed","Significant Work\nOne point correct","Correct answer"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q4-a-i.png",
@@ -2286,16 +2464,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q4-a-ii", topicId: "maths-2-2", conceptId: "ordinates-midpoint",
     section: "B", questionRef: "2021 OL Paper 2 Q4(a)(ii)",
-    questionText: "Find the co-ordinates of the midpoint of [AB]",
+    stem: "The co-ordinate diagram below shows two points A and B.",
+    questionText: "Find the co-ordinates of the midpoint of [AB].",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q4-a-ii-r1", kind: "anyN", verbatim: "Work of merit\nSome correct substitution into midpoint formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\nSome correct substitution into midpoint formula","Significant Work\nFull substitution into midpoint formula\nOne error and finishes correctly","Correct answer without supporting work"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q4-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q4-a-ii.png",
@@ -2316,21 +2508,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q4-a-iii", topicId: "maths-2-2", conceptId: "iii-compass-construct-circle-which-has",
     section: "B", questionRef: "2021 OL Paper 2 Q4(a)(iii)",
-    questionText: "(iii) Use a compass to construct the circle c, which has AB as its diameter on the diagram above",
+    stem: "The co-ordinate diagram below shows two points A and B.",
+    questionText: "Use a compass to construct the circle c, which has AB as its diameter on the diagram above.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q4-a-iii-r1", kind: "anyN", verbatim: "Work of merit\nCentre indicated\nCircle drawn with centre not at (2, −1) and not passing through either of the given points", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit\nCentre indicated\nCircle drawn with centre not at (2, −1) and not passing through either of the given points","Significant Work\nCircle with centre (2, −1) but not passing through the given points"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q4-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q4-a-iii.png",
           "srcHash": "f7c808631c8cf8ceda03f2fc1f8e2800",
-          "alt": "The question as printed on the paper — The co-ordinate diagram below shows two points A and B. y 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 6 7 8 -1 -2 -3 -4 -5 -6 Write down the co-ordinates of A and of B. A ^= ( , ) B ^= ( , ) Find the co-ordinates of the midpoint of… Full card prompt: (iii) Use a compass to construct the circle c, which has AB as its diameter on the diagram above",
+          "alt": "The question as printed on the paper — The co-ordinate diagram below shows two points A and B. y 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 6 7 8 -1 -2 -3 -4 -5 -6 Write down the co-ordinates of A and of B. A ^= ( , ) B ^= ( , ) Find the co-ordinates of the midpoint of… Full card prompt: The co-ordinate diagram below shows two points A and B. Use a compass to construct the circle c, which has AB as its diameter on the diagram above.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2346,21 +2552,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q4-a-iv", topicId: "maths-2-2", conceptId: "length-radius-circle-write-down-equation",
     section: "B", questionRef: "2021 OL Paper 2 Q4(a)(iv)",
-    questionText: "(iv) Find the length of the radius of the circle c, and hence write down the equation of c",
+    stem: "The co-ordinate diagram below shows two points A and B. The circle c has [AB] as its diameter.",
+    questionText: "Find the length of the radius of the circle c, and hence write down the equation of c.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q4-a-iv-r1", kind: "anyN", verbatim: "Work of merit\nSome correct substitution into either correct relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nSome correct substitution into either correct relevant formula","Finds |Diameter| or |Radius|\nSome correct substitution into both correct relevant formula","Significant Work\nEquation of circle fully substituted\nError in substitution into formula and finished correctly"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q4-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q4-a-iv.png",
           "srcHash": "4fd98c9dc6309b3fdcbb05285e75d74a",
-          "alt": "The question as printed on the paper — The co-ordinate diagram below shows two points A and B. y 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 6 7 8 -1 -2 -3 -4 -5 -6 Write down the co-ordinates of A and of B. A ^= ( , ) B ^= ( , ) Find the co-ordinates of the midpoint of… Full card prompt: (iv) Find the length of the radius of the circle c, and hence write down the equation of c",
+          "alt": "The question as printed on the paper — The co-ordinate diagram below shows two points A and B. y 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 6 7 8 -1 -2 -3 -4 -5 -6 Write down the co-ordinates of A and of B. A ^= ( , ) B ^= ( , ) Find the co-ordinates of the midpoint of… Full card prompt: The co-ordinate diagram below shows two points A and B. The circle c has [AB] as its diameter. Find the length of the radius of the circle c, and hence write down the equation of c.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2376,16 +2596,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q4-b", topicId: "maths-2-2", conceptId: "point-first-quadrant-algebra-value-plot",
     section: "B", questionRef: "2021 OL Paper 2 Q4(b)",
-    questionText: "The point P(2, k) is in the first quadrant and is on c. Use algebra to find the value of k and plot the point P on the diagram on the previous page",
+    stem: "The co-ordinate diagram below shows two points A and B. The circle c has [AB] as its diameter.",
+    questionText: "The point P(2, k) is in the first quadrant and is on c. Use algebra to find the value of k and plot the point P on the diagram on the previous page.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q4-b-r1", kind: "anyN", verbatim: "Work of merit\nP(2, 4) or k = 4 but no algebra used to find k\nEq. of circle formula with some relevant substitution\nLength of radius formula with some relevant substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial credit; High Partial credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\nP(2, 4) or k = 4 but no algebra used to find k\nEq. of circle formula with some relevant substitution\nLength of radius formula with some relevant substitution","Equation fully substituted","Significant Work\nEquation solved but P(2, 4) not plotted"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[40],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q4-b.png",
@@ -2406,21 +2640,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q5-a", topicId: "maths-1-6", conceptId: "heights-given-population-normally-distributed-population",
+    id: "maths-2021-ol-p2-q5-a", topicId: "maths-1-3", conceptId: "heights-given-population-normally-distributed-population",
     section: "B", questionRef: "2021 OL Paper 2 Q5(a)",
-    questionText: "The heights of a given population are normally distributed. 95% of the population fall within the height range [147∙9 cm ↔ 178∙7 cm]. Using the empirical rule, find the mean and the standard deviation of the distribution of heights in the population",
+    questionText: "The heights of a given population are normally distributed. 95% of the population fall within the height range [147·9 cm ↔ 178·7 cm]. Using the empirical rule, find the mean and the standard deviation of the distribution of heights in the population.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q5-a-r1", kind: "anyN", verbatim: "Work of merit\nSome explanation of the relevance of the empirical rule 𝜇−2𝜎, 𝜇+ 2𝜎\nWrites 178∙7 + 147∙9\nWrites 178·7 −147·9", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit\nSome explanation of the relevance of the empirical rule 𝜇−2𝜎, 𝜇+ 2𝜎\nWrites 178∙7 + 147∙9\nWrites 178·7 −147·9","Significant Work\nMean or Std. Dev. Correct"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q5-a.png",
           "srcHash": "d277736dea7a3d38919844e9bdb1ad81",
-          "alt": "The question as printed on the paper — The heights of a given population are normally distributed. 95% of the population fall within the height range [147∙9 cm ↔ 178∙7 cm]. Using the empirical rule, find the mean and the standard deviation of the… Full card prompt: The heights of a given population are normally distributed. 95% of the population fall within the height range [147∙9 cm ↔ 178∙7 cm]. Using the empirical rule, find the mean and the standard deviation of the distribution of heights in the population",
+          "alt": "The question as printed on the paper — The heights of a given population are normally distributed. 95% of the population fall within the height range [147∙9 cm ↔ 178∙7 cm]. Using the empirical rule, find the mean and the standard deviation of the… Full card prompt: The heights of a given population are normally distributed. 95% of the population fall within the height range [147·9 cm ↔ 178·7 cm]. Using the empirical rule, find the mean and the standard deviation of the distribution of heights in the population.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2436,16 +2683,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q5-b-i", topicId: "maths-1-6", conceptId: "complete-scatter-plot-adding-data-males",
     section: "B", questionRef: "2021 OL Paper 2 Q5(b)(i)",
-    questionText: "Complete the scatter plot below by adding in the data for the males (the data in the shaded section of the table)",
+    stem: "The following table shows data on the height and arm span of twenty teenagers. Females 1–12, height (cm) and arm span (cm): 162, 155; 169, 174; 164, 144; 157, 160; 160, 160; 170, 170; 174, 170; 159, 154; 153, 148; 167, 167; 150, 152; 139, 129. Males 13–20 (the shaded section): 168, 169; 147, 150; 134, 121; 177, 176; 172, 170; 160, 163; 152, 151; 153, 151.",
+    questionText: "Complete the scatter plot below by adding in the data for the males (the data in the shaded section of the table).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q5-b-i-r1", kind: "anyN", verbatim: "Work of merit\nOne correct plot", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial credit; High Partial credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nOne correct plot","Four correct plots","Significant Work\nSix correct plots\nAll points plotted as (y, x)"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q5-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q5-b-i.png",
@@ -2466,16 +2727,74 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q5-b-iii", topicId: "maths-1-7", conceptId: "iii-explain-what-correlation-coefficient-tells",
+    id: "maths-2021-ol-p2-q5-b-ii", topicId: "maths-1-6", conceptId: "table-right-shows-three-numbers-one",
+    section: "B", questionRef: "2021 OL Paper 2 Q5(b)(ii)",
+    stem: "The following table shows data on the height and arm span of twenty teenagers. Females 1–12, height (cm) and arm span (cm): 162, 155; 169, 174; 164, 144; 157, 160; 160, 160; 170, 170; 174, 170; 159, 154; 153, 148; 167, 167; 150, 152; 139, 129. Males 13–20 (the shaded section): 168, 169; 147, 150; 134, 121; 177, 176; 172, 170; 160, 163; 152, 151; 153, 151.",
+    questionText: "The table on the right shows three numbers: 0·2, 0·9 and −0·6. One of the numbers is the correlation coefficient of the data shown in the table above. Tick (✓) the one which you think best represents the correlation coefficient between height and arm span for this data set.",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2021-ol-p2-q5-b-ii-r1", kind: "anyN", verbatim: "Work of merit\n0∙2 ticked", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit\n0∙2 ticked"]} },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2021-OL-ask-p2-q5-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q5-b-ii.png",
+          "srcHash": "9b689c65fd3ab6e7b6ede17039e1cddf",
+          "alt": "The question as printed on the paper — The following table shows data on the height and arm span of twenty teenagers. Height Arm Span Gender (cm) (cm) 1 162 155 2 169 174 3 164 144 4 157 160 5 160 160 6 170 170 7 174 170 8 159 154 9 153 148 10 167 167 11 150",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2021-OL-paper-p040-i2",
+          "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p040-i2.png",
+          "srcHash": "0ed61ace5c05b9aaf30d5d9746388073",
+          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q5(b)(ii), typeset as the State Examinations Commission set it. It reads: 0∙2 ✓ 0∙9 −0∙6",
+          "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2021, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2021-ol-p2-q5-b-iii", topicId: "maths-1-6", conceptId: "iii-explain-what-correlation-coefficient-tells",
     section: "B", questionRef: "2021 OL Paper 2 Q5(b)(iii)",
-    questionText: "(iii) Explain what this correlation coefficient tells us about the relationship between height and arm span for this data set",
+    stem: "The following table shows data on the height and arm span of twenty teenagers. Females 1–12, height (cm) and arm span (cm): 162, 155; 169, 174; 164, 144; 157, 160; 160, 160; 170, 170; 174, 170; 159, 154; 153, 148; 167, 167; 150, 152; 139, 129. Males 13–20 (the shaded section): 168, 169; 147, 150; 134, 121; 177, 176; 172, 170; 160, 163; 152, 151; 153, 151.",
+    questionText: "Explain what this correlation coefficient tells us about the relationship between height and arm span for this data set.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q5-b-iii-r1", kind: "anyN", verbatim: "Work of merit\nHigh correlation\nPositive correlation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit\nHigh correlation\nPositive correlation"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q5-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q5-b-iii.png",
@@ -2496,21 +2815,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q6", topicId: "maths-2-3", conceptId: "diagram-showing-triangle-abc-construct-perpendicular",
-    section: "B", questionRef: "2021 OL Paper 2 Q6",
-    questionText: "On the diagram below showing the triangle ABC , construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly. Construct the circumcircle of the given triangle ABC. Show all your construction lines and arcs clearly. 14 Leaving Certificate, 2021",
+    id: "maths-2021-ol-p2-q6", topicId: "maths-2-4", conceptId: "diagram-showing-triangle-abc-construct-perpendicular",
+    section: "B", questionRef: "2021 OL Paper 2 Q6(b)(ii)",
+    stem: "The triangle PQR is the image of the triangle DEF under an enlargement. (The diagram is not drawn to scale.) The scale factor of the enlargement, k, is 2·5. |EF| = 3 cm.",
+    questionText: "The area of the triangle PQR is 18·75 cm². Find the area of triangle DEF.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q6-r1", kind: "anyN", verbatim: "Work of merit\nRelevant work with 2∙5 and 18∙75 e. g. 18∙75/2·5 = 7∙5", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit\nRelevant work with 2∙5 and 18∙75 e. g. 18∙75/2·5 = 7∙5","Significant Work\nRelevant work with 2∙5² and 18∙75"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[43],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q6",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q6.png",
           "srcHash": "999cd7dc9f9200635258ebdd99e2c686",
-          "alt": "The question as printed on the paper — On the diagram below showing the triangle ABC , construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly. Construct the circumcircle of the given triangle ABC. Show all… Full card prompt: On the diagram below showing the triangle ABC , construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly. Construct the circumcircle of the given triangle ABC. Show all your construction lines and arcs clearly. 14 Leaving Certificate, 2021",
+          "alt": "The question as printed on the paper — On the diagram below showing the triangle ABC , construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly. Construct the circumcircle of the given triangle ABC. Show all… Full card prompt: The triangle PQR is the image of the triangle DEF under an enlargement. (The diagram is not drawn to scale.) The scale factor of the enlargement, k, is 2·5. |EF| = 3 cm. The area of the triangle PQR is 18·75 cm². Find the area of triangle DEF.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2526,16 +2859,37 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q6-a-i", topicId: "maths-2-3", conceptId: "diagram-showing-triangle-abc-construct-perpendicular",
-    section: "B", questionRef: "2021 OL Paper 2 Q6(a)(i), (ii)",
-    questionText: "On the diagram below showing the triangle ABC , construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    id: "maths-2021-ol-p2-q6-a-i", topicId: "maths-2-1", conceptId: "diagram-showing-triangle-abc-construct-perpendicular",
+    section: "B", questionRef: "2021 OL Paper 2 Q6(a)(i)",
+    questionText: "On the diagram below showing the triangle ABC, construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p2-q6-a-i-r1", kind: "anyN", verbatim: "(a)(i)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Misreading (-1). Note: Tolerance ± 0·2 cm. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["(a)(i)","(a)(ii)"],"perOptionSteps":[2,3]} },
+    { id: "maths-2021-ol-p2-q6-a-i-solution-1", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q6-a-i-solution-2", kind: "point", verbatim: "Low Partial Credit — Pilot diagram drawn for [AC] bisector", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q6-a-i-solution-3", kind: "point", verbatim: "Low Partial Credit — One correct arc drawn", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q6-a-i-solution-4", kind: "point", verbatim: "High Partial Credit — Significant Work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q6-a-i-solution-5", kind: "point", verbatim: "High Partial Credit — Mid-point of [AC] shown but without visible construction or perpendicular line", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q6-a-i-solution-6", kind: "point", verbatim: "High Partial Credit — Line perpendicular to [AC] drawn but not through mid-point", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q6-a-i-solution-7", kind: "point", verbatim: "Misreading (−1) — Draws perpendicular bisector of the side [AB] or [BC]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q6-a-i-solution-8", kind: "point", verbatim: "Note — Tolerance ± 0·2 cm", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "measurementRequired": true,
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q6-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q6-a-i.png",
@@ -2556,16 +2910,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q6-a-ii", topicId: "maths-2-3", conceptId: "construct-circumcircle-given-triangle-abc-all",
+    id: "maths-2021-ol-p2-q6-a-ii", topicId: "maths-2-1", conceptId: "construct-circumcircle-given-triangle-abc-all",
     section: "B", questionRef: "2021 OL Paper 2 Q6(a)(ii)",
-    questionText: "Construct the circumcircle of the given triangle ABC. Show all your construction lines and arcs clearly",
+    stem: "The diagram shows the triangle ABC.",
+    questionText: "Construct the circumcircle of the given triangle ABC. Show all your construction lines and arcs clearly.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q6-a-ii-r1", kind: "anyN", verbatim: "Work of merit\nPilot diagram drawn", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Tolerance ± 0·2 cm. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nPilot diagram drawn","Additional correct bisector drawn other than [AC]\nCentroid or orthocentre drawn correctly","Significant Work\nCorrect construction of circumcentre but circle not drawn\nIncircle constructed and drawn correctly"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "measurementRequired": true,
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q6-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q6-a-ii.png",
@@ -2586,16 +2955,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q6-b-i", topicId: "maths-2-4", conceptId: "scale-factor",
-    section: "B", questionRef: "2021 OL Paper 2 Q6(b)(i), (ii)",
-    questionText: "Use the scale factor to find |QR|",
+    section: "B", questionRef: "2021 OL Paper 2 Q6(b)(i)",
+    stem: "The triangle PQR is the image of the triangle DEF under an enlargement. (The diagram is not drawn to scale.) The scale factor of the enlargement, k, is 2·5. |EF| = 3 cm.",
+    questionText: "Use the scale factor to find |QR|.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q6-b-i-r1", kind: "anyN", verbatim: "Work of merit\nRelevant work with 2∙5 and 3", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit\nRelevant work with 2∙5 and 3","Correct answer without supporting work"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[43],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q6-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q6-b-i.png",
@@ -2616,16 +2999,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q7-a-i", topicId: "maths-1-6", conceptId: "draw-histogram-represent-data",
     section: "B", questionRef: "2021 OL Paper 2 Q7(a)(i)",
-    questionText: "Draw a Histogram to represent the data",
+    stem: "The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. Age group 15 − 25: 24%; 25 − 35: 27%; 35 − 45: 25%; 45 − 55: 16%; 55 − 65: 8% of subscribers. Note: 25 − 35 means 25 years and over but less than 35 years.",
+    questionText: "Draw a Histogram to represent the data.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2021-ol-p2-q7-a-i-r1", kind: "anyN", verbatim: "Work of merit\nOne correct column height indicated", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. The full scale runs to 15. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Work of merit\nOne correct column height indicated","Significant Work\nThree correct columns drawn\nAll correct height columns drawn but gaps between them"],"perOptionSteps":[5,10]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[44],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q7-a-i.png",
@@ -2646,16 +3043,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q7-a-ii", topicId: "maths-1-5", conceptId: "survey-1000-subscribers-aged-between-how",
+    id: "maths-2021-ol-p2-q7-a-ii", topicId: "maths-1-6", conceptId: "survey-1000-subscribers-aged-between-how",
     section: "B", questionRef: "2021 OL Paper 2 Q7(a)(ii)",
+    stem: "The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. Age group 15 − 25: 24%; 25 − 35: 27%; 35 − 45: 25%; 45 − 55: 16%; 55 − 65: 8% of subscribers. Note: 25 − 35 means 25 years and over but less than 35 years.",
     questionText: "In a survey of 1000 subscribers, aged between 15 and 65, how many people would you expect to be between 25 years and 55 years?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q7-a-ii-r1", kind: "anyN", verbatim: "Work of merit\nWork with any Two of 27, 25, 16", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\nWork with any Two of 27, 25, 16","Significant Work\nWorks to 27 + 25 + 16 = 68","Correct answer without supporting work"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[44],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q7-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q7-a-ii.png",
@@ -2676,16 +3087,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q7-a-iii", topicId: "maths-1-6", conceptId: "iii-table-histogram-write-down-age",
     section: "B", questionRef: "2021 OL Paper 2 Q7(a)(iii)",
-    questionText: "(iii) Use the table or the histogram to write down the age group which contains the median age",
+    stem: "The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. Age group 15 − 25: 24%; 25 − 35: 27%; 35 − 45: 25%; 45 − 55: 16%; 55 − 65: 8% of subscribers. Note: 25 − 35 means 25 years and over but less than 35 years.",
+    questionText: "Use the table or the histogram to write down the age group which contains the median age.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q7-a-iii-r1", kind: "anyN", verbatim: "Work of merit\nMedian interpreted as 50%, Middle or Half", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit\nMedian interpreted as 50%, Middle or Half","Correct answer without supporting work"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[44],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q7-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q7-a-iii.png",
@@ -2706,16 +3131,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q7-a-iv", topicId: "maths-1-6", conceptId: "mid-interval-values-groups-table-estimate",
     section: "B", questionRef: "2021 OL Paper 2 Q7(a)(iv)",
-    questionText: "(iv) Use the mid-interval values of the groups in the table to estimate the mean age of the subscribers. Give your answer correct to one decimal place",
+    stem: "The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. Age group 15 − 25: 24%; 25 − 35: 27%; 35 − 45: 25%; 45 − 55: 16%; 55 − 65: 8% of subscribers. Note: 25 − 35 means 25 years and over but less than 35 years.",
+    questionText: "Use the mid-interval values of the groups in the table to estimate the mean age of the subscribers. Give your answer correct to one decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q7-a-iv-r1", kind: "anyN", verbatim: "Work of merit\nCalculates a mid-interval value\nEffort at adding data\n24 × 20 or equivalent\nDivision by 100", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nCalculates a mid-interval value\nEffort at adding data\n24 × 20 or equivalent\nDivision by 100","Significant Work\nFormula substituted correctly but not evaluated\nConsistent incorrect mid interval values, finished correctly\nOne error and finishes correctly","Correct answer without supporting work"],"perOptionSteps":[3,4,3]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[45],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q7-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q7-a-iv.png",
@@ -2736,16 +3175,37 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q7-b-i", topicId: "maths-1-7", conceptId: "540-people-responded-his-survey-calculate",
     section: "B", questionRef: "2021 OL Paper 2 Q7(b)(i)",
-    questionText: "If 540 people responded to his survey, calculate the margin of error of his survey. Give your answer as a percentage, correct to one decimal place",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "Prior to the COVID-19 pandemic, Netflix held the largest share of the online streaming market with 65% of all streaming subscribers in the 15 to 65 age group. Aiden thought that this percentage might have changed during the pandemic and surveyed a sample of subscribers in this age group to get data. He then carried out a Hypothesis Test to test his theory.",
+    questionText: "If 540 people responded to his survey, calculate the margin of error of his survey. Give your answer as a percentage, correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p2-q7-b-i-r1", kind: "anyN", verbatim: "(i) 1/√540 1/√540 = 0∙043 = 4∙3%", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["(i) 1/√540 1/√540 = 0∙043 = 4∙3%"]} },
+    { id: "maths-2021-ol-p2-q7-b-i-solution-1", kind: "point", verbatim: "Model solution — 1/√540 = 0∙043 = 4∙3%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-i-solution-2", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-i-solution-3", kind: "point", verbatim: "Low Partial Credit — Writes 1/√n", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-i-solution-4", kind: "point", verbatim: "Low Partial Credit — Reference to multiplication by 100", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-i-solution-5", kind: "point", verbatim: "High Partial Credit — Significant Work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-i-solution-6", kind: "point", verbatim: "High Partial Credit — Correct formula fully substituted 1/√540", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-i-solution-7", kind: "point", verbatim: "High Partial Credit — Answer as 0·043", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-i-solution-8", kind: "point", verbatim: "Full Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[46],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q7-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q7-b-i.png",
@@ -2766,16 +3226,39 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q7-b-ii", topicId: "maths-1-7", conceptId: "his-survey-revealed-372-responders-said",
     section: "B", questionRef: "2021 OL Paper 2 Q7(b)(ii)",
-    questionText: "His survey revealed that 372 of the responders said they now have a Netflix account. Use your answer to Part (b)(i) above to create a 95% confidence interval for the percentage of the population that have a Netflix account",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "Prior to the COVID-19 pandemic, Netflix held the largest share of the online streaming market with 65% of all streaming subscribers in the 15 to 65 age group. Aiden thought that this percentage might have changed during the pandemic and surveyed a sample of subscribers in this age group to get data. He then carried out a Hypothesis Test to test his theory. 540 people responded to his survey.",
+    questionText: "His survey revealed that 372 of the responders said they now have a Netflix account. Use your answer to Part (b)(i) above to create a 95% confidence interval for the percentage of the population that have a Netflix account.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p2-q7-b-ii-r1", kind: "anyN", verbatim: "Work of merit\nWrites answer from (b)(i) in this part\np̂ = 372/540\np̂ ± 1/√n\np̂ ± 1·96√^(p(1−p)) n", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit\nWrites answer from (b)(i) in this part\np̂ = 372/540\np̂ ± 1/√n\np̂ ± 1·96√^(p(1−p)) n","Significant Work\nOne boundary formed (68∙9 −4·3 or 68∙9 + 4·3)\nCorrect answer without supporting work"],"perOptionSteps":[2,3]} },
+    { id: "maths-2021-ol-p2-q7-b-ii-solution-1", kind: "point", verbatim: "Model solution — p̂ = 372/540 = 0·6888 = 68·9%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-ii-solution-2", kind: "point", verbatim: "Model solution — [(68∙9 −4∙3), (68∙9 + 4∙3)]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-ii-solution-3", kind: "point", verbatim: "Model solution — [64∙6% , 73∙2%]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-ii-solution-4", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-ii-solution-5", kind: "point", verbatim: "Low Partial Credit — Writes answer from (b)(i) in this part", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-ii-solution-6", kind: "point", verbatim: "Low Partial Credit — p̂ ± 1/√n", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-ii-solution-7", kind: "point", verbatim: "High Partial Credit — Significant Work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-ii-solution-8", kind: "point", verbatim: "High Partial Credit — One boundary formed", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-ii-solution-9", kind: "point", verbatim: "High Partial Credit — (68∙9 −4·3 or 68∙9 + 4·3)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q7-b-ii-solution-10", kind: "point", verbatim: "High Partial Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[46],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q7-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q7-b-ii.png",
@@ -2796,16 +3279,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q7-b-iii", topicId: "maths-1-7", conceptId: "iii-part-conduct-hypothesis-test-level",
     section: "B", questionRef: "2021 OL Paper 2 Q7(b)(iii)",
-    questionText: "(iii) Use your answer to Part (b)(ii) above to conduct the Hypothesis Test, at the 5% level of significance to test Aiden’s claim that the percentage of subscribers to Netflix had changed. State clearly your null hypothesis, your alternative hypothesis and give your conclusion in the context of the question",
+    stem: "Prior to the COVID-19 pandemic, Netflix held the largest share of the online streaming market with 65% of all streaming subscribers in the 15 to 65 age group. Aiden thought that this percentage might have changed during the pandemic and surveyed a sample of subscribers in this age group to get data. He then carried out a Hypothesis Test to test his theory. 540 people responded to his survey and 372 said they now have a Netflix account.",
+    questionText: "Use your answer to Part (b)(ii) above to conduct the Hypothesis Test, at the 5% level of significance to test Aiden’s claim that the percentage of subscribers to Netflix had changed. State clearly your null hypothesis, your alternative hypothesis and give your conclusion in the context of the question.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q7-b-iii-r1", kind: "anyN", verbatim: "Work of merit\nAny one of H₀ , H₁, or Confidence interval written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit\nAny one of H₀ , H₁, or Confidence interval written","Significant Work\nH₀ , H₁, and reference to C.I.\nConclusion (from correct work) not in context"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[47],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q7-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q7-b-iii.png",
@@ -2826,21 +3323,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q8-a-i", topicId: "maths-3-4", conceptId: "trapezoidal-rule-estimate-surface-area-lake",
     section: "B", questionRef: "2021 OL Paper 2 Q8(a)(i)",
-    questionText: "Use the Trapezoidal Rule to estimate the surface area of the lake",
+    stem: "The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. At equal intervals of 10 m along this line, perpendicular measures are made to the sides of the lake as shown.",
+    questionText: "Use the Trapezoidal Rule to estimate the surface area of the lake.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 11, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2021-ol-p2-q8-a-i-r1", kind: "anyN", verbatim: "Work of merit\nTrapezoidal Rule formula with some substitution", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 11. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial credit; High Partial credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit\nTrapezoidal Rule formula with some substitution","Area of one section found","Significant Work\nTrapezoidal Rule formula with full substitution (for both sections)"],"perOptionSteps":[4,3,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[48],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q8-a-i.png",
           "srcHash": "1027ff1a2bccc022c5edb273c21bc96e",
-          "alt": "The question as printed on the paper — The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. 30 m 30 m At equal intervals of 10 m along this line, 20 m perpendicular… Full card prompt: Use the Trapezoidal Rule to estimate the surface area of the lake",
+          "alt": "The question as printed on the paper — The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. 30 m 30 m At equal intervals of 10 m along this line, 20 m perpendicular… Full card prompt: The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. At equal intervals of 10 m along this line, perpendicular measures are made to the sides of the lake as shown. Use the Trapezoidal Rule to estimate the surface area of the lake.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2856,21 +3367,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q8-a-ii", topicId: "maths-3-4", conceptId: "lake-average-deep-estimate-volume-water",
     section: "B", questionRef: "2021 OL Paper 2 Q8(a)(ii)",
-    questionText: "If the lake is on average 8 m deep, estimate the volume of water in the lake",
+    stem: "The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. At equal intervals of 10 m along this line, perpendicular measures are made to the sides of the lake as shown.",
+    questionText: "If the lake is on average 8 m deep, estimate the volume of water in the lake.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q8-a-ii-r1", kind: "anyN", verbatim: "Work of merit\nSome correct substitution into Volume formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit\nSome correct substitution into Volume formula","Correct answer without supporting work"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[48],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q8-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q8-a-ii.png",
           "srcHash": "e7baa93bff8985ea38ca77b0c5130cd4",
-          "alt": "The question as printed on the paper — The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. 30 m 30 m At equal intervals of 10 m along this line, 20 m perpendicular… Full card prompt: If the lake is on average 8 m deep, estimate the volume of water in the lake",
+          "alt": "The question as printed on the paper — The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. 30 m 30 m At equal intervals of 10 m along this line, 20 m perpendicular… Full card prompt: The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. At equal intervals of 10 m along this line, perpendicular measures are made to the sides of the lake as shown. If the lake is on average 8 m deep, estimate the volume of water in the lake.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2886,16 +3411,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q8-b-i", topicId: "maths-3-4", conceptId: "calculate-volume-hemisphere-radius-terms",
     section: "B", questionRef: "2021 OL Paper 2 Q8(b)(i)",
-    questionText: "Calculate the volume , in cm³, of a hemisphere of radius 21 cm. Give your answer terms of 𝜋",
+    questionText: "Calculate the volume, in cm³, of a hemisphere of radius 21 cm. Give your answer terms of π.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit\nWrites volume of hemisphere formula\nVolume of sphere formula with some\ncorrect substitution\nVolume of sphere(12348𝜋 cm³) and stops", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Note: Note: F* applies to: Answer (19396 cm³) Answer (19386 cm³) for (3·14) Answer (19404 cm³) for (22/7 ). Marked in order: Low Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit\nWrites volume of hemisphere formula\nVolume of sphere formula with some\ncorrect substitution\nVolume of sphere(12348𝜋 cm³) and stops","Correct answer without supporting work"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[49],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q8-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q8-b-i.png",
@@ -2916,21 +3454,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q8-b-ii", topicId: "maths-3-4", conceptId: "buoy-lake-shape-hemisphere-radius-surmounted",
     section: "B", questionRef: "2021 OL Paper 2 Q8(b)(ii)",
-    questionText: "A buoy on the lake is in the shape of a hemisphere of radius 21 cm surmounted by a cone. The volume of the cone is equal to the volume of the hemisphere. Find h, the total height of the buoy",
+    questionText: "A buoy on the lake is in the shape of a hemisphere of radius 21 cm surmounted by a cone. The volume of the cone is equal to the volume of the hemisphere. Find h, the total height of the buoy.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q8-b-ii-r1", kind: "anyN", verbatim: "Work of merit\nSome correct substitution for volume of cone.\nVolume of cone = Ans b(i)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nSome correct substitution for volume of cone.\nVolume of cone = Ans b(i)","Forms equation in h isolated","Significant Work\nHeight of cone found\nOne error and finishes correctly"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[50],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q8-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q8-b-ii.png",
           "srcHash": "6de719cc7a8e98f5099dd035b807a637",
-          "alt": "The question as printed on the paper — The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. 30 m 30 m At equal intervals of 10 m along this line, 20 m perpendicular… Full card prompt: A buoy on the lake is in the shape of a hemisphere of radius 21 cm surmounted by a cone. The volume of the cone is equal to the volume of the hemisphere. Find h, the total height of the buoy",
+          "alt": "The question as printed on the paper — The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. 30 m 30 m At equal intervals of 10 m along this line, 20 m perpendicular… Full card prompt: A buoy on the lake is in the shape of a hemisphere of radius 21 cm surmounted by a cone. The volume of the cone is equal to the volume of the hemisphere. Find h, the total height of the buoy.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2946,21 +3497,44 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q8-c", topicId: "maths-3-4", conceptId: "buoy-situated-pier-point-shown-diagram",
+    id: "maths-2021-ol-p2-q8-c", topicId: "maths-2-3", conceptId: "buoy-situated-pier-point-shown-diagram",
     section: "B", questionRef: "2021 OL Paper 2 Q8(c)",
-    questionText: "The buoy is situated at B, 43 m from the pier P and 26 m from the point Q, as shown in the diagram above. Find |∠QBP|, the angle at the buoy shown on the diagram. Give your answer correct to two decimal places",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 11, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    stem: "The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. At equal intervals of 10 m along this line, perpendicular measures are made to the sides of the lake as shown.",
+    questionText: "The buoy is situated at B, 43 m from the pier P and 26 m from the point Q, as shown in the diagram above (|PQ| = 60 m). Find |∠QBP|, the angle at the buoy shown on the diagram. Give your answer correct to two decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
     rows: [
-    { id: "maths-2021-ol-p2-q8-c-r1", kind: "anyN", verbatim: "Work of merit\nAny correct substitution into the Cosine Rule", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 11. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit\nAny correct substitution into the Cosine Rule","Two variables correctly substituted into correct relevant formula","Significant Work\nFully correct substitution\nOne incorrect substitution followed by correct calculation\nCorrect answer without supporting work\nIncorrect calculator mode (once only) Radian = 2∙07 Gradian = 131·93 Zero Credit:\nTreats triangle as right-angled /Sine Rule"],"perOptionSteps":[4,3,8]} },
+    { id: "maths-2021-ol-p2-q8-c-solution-1", kind: "point", verbatim: "Model solution — ⟹A = 118∙74°", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q8-c-solution-2", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q8-c-solution-3", kind: "point", verbatim: "Low Partial Credit — Any correct substitution into the Cosine Rule", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q8-c-solution-4", kind: "point", verbatim: "Mid Partial Credit — Two variables correctly substituted into correct relevant formula", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q8-c-solution-5", kind: "point", verbatim: "High Partial Credit — Significant Work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q8-c-solution-6", kind: "point", verbatim: "High Partial Credit — Fully correct substitution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q8-c-solution-7", kind: "point", verbatim: "High Partial Credit — One incorrect substitution followed by correct calculation", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q8-c-solution-8", kind: "point", verbatim: "High Partial Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q8-c-solution-9", kind: "point", verbatim: "High Partial Credit — Incorrect calculator mode (once only)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q8-c-solution-10", kind: "point", verbatim: "Zero Credit — Treats triangle as right-angled /Sine Rule", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[50],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q8-c",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q8-c.png",
           "srcHash": "524a1b61cb48c251790739d2eede6b22",
-          "alt": "The question as printed on the paper — The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. 30 m 30 m At equal intervals of 10 m along this line, 20 m perpendicular… Full card prompt: The buoy is situated at B, 43 m from the pier P and 26 m from the point Q, as shown in the diagram above. Find |∠QBP|, the angle at the buoy shown on the diagram. Give your answer correct to two decimal places",
+          "alt": "The question as printed on the paper — The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. 30 m 30 m At equal intervals of 10 m along this line, 20 m perpendicular… Full card prompt: The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. At equal intervals of 10 m along this line, perpendicular measures are made to the sides of the lake as shown. The buoy is situated at B, 43 m from the pier P and 26 m from the point Q, as shown in the diagram above (|PQ| = 60 m). Find |∠QBP|, the angle at the buoy shown on the diagram. Give your answer correct to two decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2976,21 +3550,43 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q9-a-i", topicId: "maths-2-3", conceptId: "length-runway",
+    id: "maths-2021-ol-p2-q9-a-i", topicId: "maths-3-3", conceptId: "length-runway",
     section: "B", questionRef: "2021 OL Paper 2 Q9(a)(i)",
-    questionText: "Find the length of the runway. Give your answer in km",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The line segment [SE], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres.",
+    questionText: "Find the length of the runway. Give your answer in km.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p2-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit\nNumbering units Incorrect work with 250 or 10", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nNumbering units Incorrect work with 250 or 10","Significant work 250 × 10 = 2500\nError in converting to km","Correct answer without supporting work"],"perOptionSteps":[3,4,3]} },
+    { id: "maths-2021-ol-p2-q9-a-i-solution-1", kind: "point", verbatim: "Model solution — 250 × 10 = 2500", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-i-solution-2", kind: "point", verbatim: "Model solution — = 2·5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-i-solution-3", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-i-solution-4", kind: "point", verbatim: "Low Partial Credit — Numbering units", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-i-solution-5", kind: "point", verbatim: "Low Partial Credit — Incorrect work with 250 or 10", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-i-solution-6", kind: "point", verbatim: "High Partial Credit — Significant work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-i-solution-7", kind: "point", verbatim: "High Partial Credit — 250 × 10 = 2500", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-i-solution-8", kind: "point", verbatim: "High Partial Credit — Error in converting to km", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-i-solution-9", kind: "point", verbatim: "Full Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[51],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q9-a-i.png",
           "srcHash": "bbfc532078a89c54adfeca0af440e788",
-          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1… Full card prompt: Find the length of the runway. Give your answer in km",
+          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1… Full card prompt: The line segment [SE], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. Find the length of the runway. Give your answer in km.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -3006,21 +3602,39 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q9-a-ii", topicId: "maths-2-3", conceptId: "aircraft-starts-point-travels-250-point",
     section: "B", questionRef: "2021 OL Paper 2 Q9(a)(ii)",
-    questionText: "An aircraft starts at the point S and travels 1 250 m to a point L where it lifts off. From the point L, the aircraft makes an angle of 14° with the ground, [LE]. The aeroplane travels along this path until it is directly above E. Plot and label the lift-off point L, and draw the aircraft’s flight path for this part of its journey, on the diagram above",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "The line segment [SE], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres.",
+    questionText: "An aircraft starts at the point S and travels 1 250 m to a point L where it lifts off. From the point L, the aircraft makes an angle of 14° with the ground, [LE]. The aeroplane travels along this path until it is directly above E. Plot and label the lift-off point L, and draw the aircraft’s flight path for this part of its journey, on the diagram above.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p2-q9-a-ii-r1", kind: "anyN", verbatim: "Work of merit L marked but in incorrect position\nL marked correctly but angle incorrect\nNotes:\nCorrect work but L not indicated merits (F*)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Tolerance ±1°. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit L marked but in incorrect position\nL marked correctly but angle incorrect\nNotes:\nCorrect work but L not indicated merits (F*)"]} },
+    { id: "maths-2021-ol-p2-q9-a-ii-solution-1", kind: "point", verbatim: "Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-ii-solution-2", kind: "point", verbatim: "Partial Credit — L marked but in incorrect position", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-ii-solution-3", kind: "point", verbatim: "Partial Credit — L marked correctly but angle incorrect", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-ii-solution-4", kind: "point", verbatim: "Note — Correct work but L not indicated merits (F*)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-ii-solution-5", kind: "point", verbatim: "Note — Tolerance ±1°", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[51],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q9-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q9-ii.png",
           "srcHash": "ae887b3436d1a8eced35d31555b44dea",
-          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1… Full card prompt: An aircraft starts at the point S and travels 1 250 m to a point L where it lifts off. From the point L, the aircraft makes an angle of 14° with the ground, [LE]. The aeroplane travels along this path until it is directly above E. Plot and label the lift-off point L, and draw the aircraft’s flight path for this part of its journey, on the diagram above",
+          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1… Full card prompt: The line segment [SE], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. An aircraft starts at the point S and travels 1 250 m to a point L where it lifts off. From the point L, the aircraft makes an angle of 14° with the ground, [LE]. The aeroplane travels along this path until it is directly above E. Plot and label the lift-off point L, and draw the aircraft’s flight path for this part of its journey, on the diagram above.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -3036,21 +3650,46 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q9-a-iii", topicId: "maths-2-3", conceptId: "iii-total-distance-aeroplane-has-travelled",
     section: "B", questionRef: "2021 OL Paper 2 Q9(a)(iii)",
-    questionText: "(iii) Find the total distance the aeroplane has travelled when it is directly above E. Give your answer, in metres, correct to the nearest metre",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The line segment [SE], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. An aircraft starts at the point S and travels 1 250 m to a point L where it lifts off. From the point L, the aircraft makes an angle of 14° with the ground, [LE], and travels along this path until it is directly above E.",
+    questionText: "Find the total distance the aeroplane has travelled when it is directly above E. Give your answer, in metres, correct to the nearest metre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p2-q9-a-iii-r1", kind: "anyN", verbatim: "Work of merit\nCorrect trigonometric ratio or relevant formula with some substitution\nIndicates addition of 1250", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Radian: h = 9142 ; Distance = 10392 Gradian: h = 1281 ; Distance = 2531. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nCorrect trigonometric ratio or relevant formula with some substitution\nIndicates addition of 1250","Formula fully substituted (cos 14° = )/k","Significant Work\nEvaluates h to 1288·267\nOne incorrect substitution and finished correctly\nCorrect answer without supporting work\nIncorrect calculator mode but otherwise correct (once only)"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-1", kind: "point", verbatim: "Model solution — ⇒h = 1288∙267", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-2", kind: "point", verbatim: "Model solution — Total Distance = 1288 + 1250", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-3", kind: "point", verbatim: "Model solution — = 2538", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-4", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-5", kind: "point", verbatim: "Low Partial Credit — Correct trigonometric ratio or relevant formula with some substitution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-6", kind: "point", verbatim: "Low Partial Credit — Indicates addition of 1250", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-7", kind: "point", verbatim: "Mid Partial Credit — Formula fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-8", kind: "point", verbatim: "High Partial Credit — Significant Work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-9", kind: "point", verbatim: "High Partial Credit — Evaluates h to 1288·267", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-10", kind: "point", verbatim: "High Partial Credit — One incorrect substitution and finished correctly", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-11", kind: "point", verbatim: "High Partial Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-a-iii-solution-12", kind: "point", verbatim: "High Partial Credit — Incorrect calculator mode but otherwise correct (once only)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[52],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q9-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q9-a-iii.png",
           "srcHash": "fbcd94087444bdf64e76dcf2212dc4d9",
-          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1… Full card prompt: (iii) Find the total distance the aeroplane has travelled when it is directly above E. Give your answer, in metres, correct to the nearest metre",
+          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1… Full card prompt: The line segment [SE], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. An aircraft starts at the point S and travels 1 250 m to a point L where it lifts off. From the point L, the aircraft makes an angle of 14° with the ground, [LE], and travels along this path until it is directly above E. Find the total distance the aeroplane has travelled when it is directly above E. Give your answer, in metres, correct to the nearest metre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -3066,21 +3705,44 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q9-b-i", topicId: "maths-2-3", conceptId: "distance-airport-airport-correct-nearest",
     section: "B", questionRef: "2021 OL Paper 2 Q9(b)(i)",
-    questionText: "Find the distance from airport B to airport C. Give your answer correct to the nearest km",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 11, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    stem: "The aircraft flies from airport A to airport B, and then on to airport C, at the same altitude. The pilot records the flight summary on the given diagram: |AB| = 260 km, the angle at A is 47° and the angle at B is 97°.",
+    questionText: "Find the distance from airport B to airport C. Give your answer correct to the nearest km.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
     rows: [
-    { id: "maths-2021-ol-p2-q9-b-i-r1", kind: "anyN", verbatim: "Work of merit\nAny work of merit to identify the remaining angle required", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 11. The full scale runs to 15. Note: Radian: x = —32 Gradian: x = 327. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit\nAny work of merit to identify the remaining angle required","Sine Rule with some substitution","Significant Work\nSine Rule fully substituted\nOne incorrect substitution followed by correct calculation\nCorrect answer without supporting work\nIncorrect calculator mode but otherwise correct (once only) Zero Credit:\nTreats triangle as right angled"],"perOptionSteps":[4,3,8]} },
+    { id: "maths-2021-ol-p2-q9-b-i-solution-1", kind: "point", verbatim: "Model solution — x = 324", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-b-i-solution-2", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-b-i-solution-3", kind: "point", verbatim: "Low Partial Credit — Any work of merit to identify the remaining angle required", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-b-i-solution-4", kind: "point", verbatim: "Mid Partial Credit — Sine Rule with some substitution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-b-i-solution-5", kind: "point", verbatim: "High Partial Credit — Significant Work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-b-i-solution-6", kind: "point", verbatim: "High Partial Credit — Sine Rule fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-b-i-solution-7", kind: "point", verbatim: "High Partial Credit — One incorrect substitution followed by correct calculation", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-b-i-solution-8", kind: "point", verbatim: "High Partial Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-b-i-solution-9", kind: "point", verbatim: "High Partial Credit — Incorrect calculator mode but otherwise correct (once only)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q9-b-i-solution-10", kind: "point", verbatim: "Zero Credit — Treats triangle as right angled", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[53],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q9-b-i.png",
           "srcHash": "6618a2d344343a99643f221fa887cba0",
-          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1… Full card prompt: Find the distance from airport B to airport C. Give your answer correct to the nearest km",
+          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1… Full card prompt: The aircraft flies from airport A to airport B, and then on to airport C, at the same altitude. The pilot records the flight summary on the given diagram: |AB| = 260 km, the angle at A is 47° and the angle at B is 97°. Find the distance from airport B to airport C. Give your answer correct to the nearest km.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -3096,21 +3758,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q9-b-ii", topicId: "maths-2-2", conceptId: "when-plane-was-directly-over-airport",
+    id: "maths-2021-ol-p2-q9-b-ii", topicId: "maths-3-4", conceptId: "when-plane-was-directly-over-airport",
     section: "B", questionRef: "2021 OL Paper 2 Q9(b)(ii)",
-    questionText: "When the plane was directly over airport C, the pilot was instructed to “circle” until a runway was available. She therefore flew 10 km away from C before turning and flying along a circular arc of 70° and then returning to the airport. This path was all flown at the same altitude. Find the total distance travelled. Give your answer, in km, correct to two decimal places",
+    questionText: "When the plane was directly over airport C, the pilot was instructed to “circle” until a runway was available. She therefore flew 10 km away from C before turning and flying along a circular arc of 70° and then returning to the airport. This path was all flown at the same altitude. Find the total distance travelled. Give your answer, in km, correct to two decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Work of merit\nReference to 70/360\nArc Length formula with some correct substitution.\nIgnores C answer as 10 + 10 = 20", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nReference to 70/360\nArc Length formula with some correct substitution.\nIgnores C answer as 10 + 10 = 20","C = 2𝜋(10) × 70/360","Significant Work\nEvaluates arc length to 12·217\nOne incorrect substitution and finished correctly\nCorrect answer without work"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[53],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q9-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q9-b-ii.png",
           "srcHash": "4b5c07f57afd803b7af66f3d992e330f",
-          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1… Full card prompt: When the plane was directly over airport C, the pilot was instructed to “circle” until a runway was available. She therefore flew 10 km away from C before turning and flying along a circular arc of 70° and then returning to the airport. This path was all flown at the same altitude. Find the total distance travelled. Give your answer, in km, correct to two decimal places",
+          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1… Full card prompt: When the plane was directly over airport C, the pilot was instructed to “circle” until a runway was available. She therefore flew 10 km away from C before turning and flying along a circular arc of 70° and then returning to the airport. This path was all flown at the same altitude. Find the total distance travelled. Give your answer, in km, correct to two decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -3126,16 +3801,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q10-a-i", topicId: "maths-2-2", conceptId: "treasure-hidden-location-mark-map-treasure",
     section: "B", questionRef: "2021 OL Paper 2 Q10(a)(i)",
-    questionText: "Treasure is hidden at location T(−2, −5). Mark T on the map where this treasure can be found",
+    stem: "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l.",
+    questionText: "Treasure is hidden at location T(−2, −5). Mark T on the map where this treasure can be found.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q10-a-i-r1", kind: "anyN", verbatim: "Point plotted as (−5, −2)\nOne or both coordinates plotted as a + value", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5. The full scale runs to 10. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Point plotted as (−5, −2)\nOne or both coordinates plotted as a + value"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[54],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q10-a-i.png",
@@ -3156,16 +3845,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q10-a-ii", topicId: "maths-2-2", conceptId: "food-located-point-map-point-line",
     section: "B", questionRef: "2021 OL Paper 2 Q10(a)(ii)",
-    questionText: "Food is located at a point F on the map. The point F is on a line which contains the point A(3, −5) and has a slope of −1. The point F is also on a line which contains B(6, 4) and has a slope of 0. By drawing appropriate lines on the map above, or otherwise, find the co-ordinates of F",
+    stem: "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l.",
+    questionText: "Food is located at a point F on the map. The point F is on a line which contains the point A(3, −5) and has a slope of −1. The point F is also on a line which contains B(6, 4) and has a slope of 0. By drawing appropriate lines on the map above, or otherwise, find the co-ordinates of F.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q10-a-ii-r1", kind: "anyN", verbatim: "Work of merit\nSlope = rise/run\nA or B labelled correctly\nEquation of line with some correct substitution\nOne line correctly drawn through A or B", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit\nSlope = rise/run\nA or B labelled correctly\nEquation of line with some correct substitution\nOne line correctly drawn through A or B","Significant Work\nBoth lines correctly drawn, F not identified\nBoth equations found but not solved"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[54],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q10-a-ii.png",
@@ -3186,16 +3889,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q10-b-i", topicId: "maths-3-1", conceptId: "clue-another-treasure-hidden-locked-box",
+    id: "maths-2021-ol-p2-q10-b-i", topicId: "maths-2-2", conceptId: "clue-another-treasure-hidden-locked-box",
     section: "B", questionRef: "2021 OL Paper 2 Q10(b)(i)",
-    questionText: "A clue to another treasure is hidden in a locked box at point B(6, 4). The 4-digit code to open the box is d⁴, where d is the distance from B to C(−3, 2), and d∈ℕ. Find the 4-digit code (d⁴)",
+    stem: "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l.",
+    questionText: "A clue to another treasure is hidden in a locked box at point B(6, 4). The 4-digit code to open the box is d⁴, where d is the distance from B to C(−3, 2), and d ∈ ℕ. Find the 4-digit code (d⁴).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q10-b-i-r1", kind: "anyN", verbatim: "Work of merit\nSome correct substitution into formula to find d", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit\nSome correct substitution into formula to find d","Significant Work\nFormula fully substituted\nCorrect answer without work"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[55],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q10-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q10-b-i.png",
@@ -3216,16 +3933,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q10-b-ii", topicId: "maths-2-2", conceptId: "meeting-point-axis-distance-point-value",
     section: "B", questionRef: "2021 OL Paper 2 Q10(b)(ii)",
-    questionText: "A meeting point P(2, m) is below the x-axis. P is a distance of √41 from point B(6, 4). Find the value of m and plot P on the map above",
+    stem: "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l.",
+    questionText: "A meeting point P(2, m) is below the x-axis. P is a distance of √41 from point B(6, 4). Find the value of m and plot P on the map above.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q10-b-ii-r1", kind: "anyN", verbatim: "Work of merit\nSome substitution into Pythagoras or distance formula to find |PB|", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: If 2 values of m given but only 1 point plotted award Full Credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit\nSome substitution into Pythagoras or distance formula to find |PB|","Formula fully substituted\nIncorrect substitution into formula followed by consistent value of m","Significant Work\nWorks to the quadratic equation\nOne relevant value of m identified but P not plotted"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[55],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q10-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q10-b-ii.png",
@@ -3246,16 +3977,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q10-c-i", topicId: "maths-2-2", conceptId: "line-has-equation-verify-using-substitution",
     section: "B", questionRef: "2021 OL Paper 2 Q10(c)(i)",
-    questionText: "The line k has equation x−y−3 = 0. Verify, using substitution, that the point T(−2, −5) is on k",
+    stem: "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l.",
+    questionText: "The line k has equation x − y − 3 = 0. Verify, using substitution, that the point T(−2, −5) is on k.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q10-c-i-r1", kind: "anyN", verbatim: "Work of merit\nSome correct substitution into equation of line k", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit\nSome correct substitution into equation of line k","Significant Work\nFull correct substitution into equation of line k"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[56],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q10-c-i.png",
@@ -3276,16 +4021,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q10-c-ii", topicId: "maths-2-2", conceptId: "another-treasure-also-needs-somewhere-line",
     section: "B", questionRef: "2021 OL Paper 2 Q10(c)(ii)",
-    questionText: "Another treasure also needs be somewhere on the line k. You must pick a spot along k to contain this treasure. Use algebra to find another point on k, other than T",
+    stem: "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l. The line k has equation x − y − 3 = 0 and T(−2, −5) is on k.",
+    questionText: "Another treasure also needs be somewhere on the line k. You must pick a spot along k to contain this treasure. Use algebra to find another point on k, other than T.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q10-c-ii-r1", kind: "anyN", verbatim: "Work of merit\nRandom selection of a domain value to find a point (x , y) ∈k\nGraphical solution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Correct substitution of any point that is shown to satisfy the equation of line k merits Full Credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit\nRandom selection of a domain value to find a point (x , y) ∈k\nGraphical solution","Significant Work\nCorrect calculation of the corresponding range value"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[56],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q10-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q10-c-ii.png",
@@ -3306,16 +4065,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q10-c-iii", topicId: "maths-2-2", conceptId: "iii-spade-digging-hidden-line-which",
     section: "B", questionRef: "2021 OL Paper 2 Q10(c)(iii)",
-    questionText: "(iii) A spade for digging is hidden on line l which is parallel to k. The line l contains the point C(−3, 2). Find the equation of line l",
+    stem: "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l. The line k has equation x − y − 3 = 0.",
+    questionText: "A spade for digging is hidden on line l which is parallel to k. The line l contains the point C(−3, 2). Find the equation of line l.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p2-q10-c-iii-r1", kind: "anyN", verbatim: "Work of merit Effort at finding slope of k or l\nRelevant work on diagram\nSlope = rise/run", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Accept y−2 = 1(x + 3) for Full Credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit Effort at finding slope of k or l\nRelevant work on diagram\nSlope = rise/run","Significant Work\nEquation of line formula with full substitution"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[57],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q10-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q10-c-iii.png",
@@ -21651,6 +22424,40 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "measurementRequired": true,
           "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2021, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2021-ol-p2-q1-b-i", topicId: "maths-1-2", conceptId: "p2-q1-b-i",
+    section: "A", questionRef: "2021 OL Paper 2 Q1(b)(i)",
+    stem: "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot.",
+    questionText: "Kate spins each spinner once. What is the probability that she must use her left foot?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2021-ol-p2-q1-b-i-solution-1", kind: "point", verbatim: "Model solution — 4/16 or 1/4", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q1-b-i-solution-2", kind: "point", verbatim: "Low Partial Credit — Work of merit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q1-b-i-solution-3", kind: "point", verbatim: "Low Partial Credit — One outcome with left foot listed", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q1-b-i-solution-4", kind: "point", verbatim: "Low Partial Credit — A valid #E or #S in fraction format with no work shown", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q1-b-i-solution-5", kind: "point", verbatim: "High Partial Credit — Significant work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q1-b-i-solution-6", kind: "point", verbatim: "High Partial Credit — All 4 relevant outcomes listed", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q1-b-i-solution-7", kind: "point", verbatim: "Full Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p2-q1-b-i-solution-8", kind: "point", verbatim: "Zero Credit — Probability > 1, without work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,

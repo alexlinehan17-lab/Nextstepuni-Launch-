@@ -1,0 +1,1414 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2021,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "db2e8cb1b7c5c4121f01256705397f290972254aebb0ded154e3050fdef77924",
+  "schemeSha256": "47f1e8757908dfd55fa946d1fca4b7c3e338cebc3f2d8ed4e0ba9f68dc467eee",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 28 question-paper pages and PDF pages 29–60 of the combined Ordinary Level scheme (the Paper 2 title page, the scale table on page 30, the summary of allocations on page 31, every Paper 2 model solution and marking note, and the closing pages). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "schemePagesInspected": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    30,
+    31
+  ],
+  "sourceNotes": [
+    "The 2021 paper was adjusted for COVID-19 (220 marks): candidates answer any four of Q1–6 (30 marks each) and any two of Q7–10 (50 marks each), so 380 marks are offered and 220 count. Every question is retained.",
+    "48 independently marked units. The printed summary on scheme page 31 lists Q9(b)(ii) as 15D, which would make Question 9 total 55; the scale printed beside the model solution (page 53) is 10D, giving the printed 50 marks, and is authoritative.",
+    "Paper 2 bands from scheme page 30: 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,5,10; 10C 0,3,7,10; 10D 0,3,5,8,10; 15C 0,5,10,15; 15D 0,4,7,11,15.",
+    "Before this review the deck held 47 of the 48 units and shipped 46. Q1(b)(i) (left foot, 5C) had no card and is added. Q5(b)(ii) was refused by the build over one unreadable glyph, U+F061, in “Tick ( )”: in this paper it is Webdings glyph id 68, which renders as a tick, but the same code point is SymbolMT’s alpha in 2011 Higher Paper 2 (cropped and read: “α + β = 90°”). A map keyed by character cannot hold both, so U+F061 stays out of glyphmap.json and the gate still refuses it everywhere; this card ships because its prompt is restored from the paper. The card maths-2021-ol-p2-q6 (ID kept) carried Q6(b)(ii)’s scale and marking notes under a prompt merged from Q6(a); it is re-cited as Q6(b)(ii) with its own prompt, and maths-2021-ol-p2-q6-a-i and maths-2021-ol-p2-q6-b-i are re-cited to the single parts their scales cover. Twelve cards had marking points garbled by the text layer (merged method ladders, notes inside bands, calculator-mode values, stacked fractions) and are re-quoted from the printed scheme, labelled by band and method.",
+    "Outside the census: maths-2021-ol-p2-q3 duplicates Q3(a). The scheme prints two method ladders for that one 10D unit, and the deck had carded the second as its own card under a prompt merged from Q3(a) and Q3(b)(i). Both ladders are now quoted on maths-2021-ol-p2-q3-a. The duplicate’s prompt is restored to the printed Q3(a) wording, but withdrawing it needs a progress alias and a change to the frozen ordinary preservation count, which is left for a separate decision.",
+    "Q6(a)(i) and Q6(a)(ii) are constructions on the printed triangle with a ±0·2 cm tolerance, so the page measuring tool is attached.",
+    "The question booklet is LC003GLP200EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 1. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2021-ol-p2-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting",
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot.",
+      "questionText": "How many different possible outcomes are there in the game?"
+    },
+    {
+      "id": "maths-2021-ol-p2-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot.",
+      "questionText": "Kate spins each spinner once. What is the probability that she must use her left foot?"
+    },
+    {
+      "id": "maths-2021-ol-p2-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot.",
+      "questionText": "Kate spins each spinner once. What is the probability that she must use a red or yellow coloured spot?"
+    },
+    {
+      "id": "maths-2021-ol-p2-q1-c-i",
+      "printedParts": [
+        "Q1(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot.",
+      "questionText": "Jack spins each spinner once. What is the probability that the outcome is his right hand and a blue spot?"
+    },
+    {
+      "id": "maths-2021-ol-p2-q1-c-ii",
+      "printedParts": [
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot.",
+      "questionText": "Jack spins each spinner once. What is the probability that the outcome is his right hand or a blue spot?"
+    },
+    {
+      "id": "maths-2021-ol-p2-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "At a stall in a fun fair, the probability of knocking a coconut off its support is 0·34.",
+      "questionText": "What is the probability of not knocking a coconut off its support?"
+    },
+    {
+      "id": "maths-2021-ol-p2-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "At a stall in a fun fair, the probability of knocking a coconut off its support is 0·34.",
+      "questionText": "David is given three attempts to knock the coconut off its support. What is the probability that he knocks the coconut for the first time, on his third attempt? Give your answer correct to three decimal places."
+    },
+    {
+      "id": "maths-2021-ol-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "The figure ABCDE shown in the diagram consists of a large square ACDE standing on the diagonal [AC] of a smaller square ABCF. The smaller square has a side length of 2 cm. Find the area and perimeter of the figure ABCDE. Give your answer for the perimeter correct to two decimal places."
+    },
+    {
+      "id": "maths-2021-ol-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "A line n passes through the points A(−1, 2) and B(0, −2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ."
+    },
+    {
+      "id": "maths-2021-ol-p2-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows the line l: 3x − 4y = 5 and the point P(6, −3).",
+      "questionText": "Find the equation of the line k through the point P that is perpendicular to the line l. Write your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ."
+    },
+    {
+      "id": "maths-2021-ol-p2-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The diagram below shows the line l: 3x − 4y = 5 and the point P(6, −3).",
+      "questionText": "Find the point of intersection of the lines l: 3x − 4y = 5 and h: 2x − y = 10."
+    },
+    {
+      "id": "maths-2021-ol-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The co-ordinate diagram below shows two points A and B.",
+      "questionText": "Write down the co-ordinates of A and of B."
+    },
+    {
+      "id": "maths-2021-ol-p2-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The co-ordinate diagram below shows two points A and B.",
+      "questionText": "Find the co-ordinates of the midpoint of [AB]."
+    },
+    {
+      "id": "maths-2021-ol-p2-q4-a-iii",
+      "printedParts": [
+        "Q4(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The co-ordinate diagram below shows two points A and B.",
+      "questionText": "Use a compass to construct the circle c, which has AB as its diameter on the diagram above."
+    },
+    {
+      "id": "maths-2021-ol-p2-q4-a-iv",
+      "printedParts": [
+        "Q4(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The co-ordinate diagram below shows two points A and B. The circle c has [AB] as its diameter.",
+      "questionText": "Find the length of the radius of the circle c, and hence write down the equation of c."
+    },
+    {
+      "id": "maths-2021-ol-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The co-ordinate diagram below shows two points A and B. The circle c has [AB] as its diameter.",
+      "questionText": "The point P(2, k) is in the first quadrant and is on c. Use algebra to find the value of k and plot the point P on the diagram on the previous page."
+    },
+    {
+      "id": "maths-2021-ol-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "The heights of a given population are normally distributed. 95% of the population fall within the height range [147·9 cm ↔ 178·7 cm]. Using the empirical rule, find the mean and the standard deviation of the distribution of heights in the population."
+    },
+    {
+      "id": "maths-2021-ol-p2-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The following table shows data on the height and arm span of twenty teenagers. Females 1–12, height (cm) and arm span (cm): 162, 155; 169, 174; 164, 144; 157, 160; 160, 160; 170, 170; 174, 170; 159, 154; 153, 148; 167, 167; 150, 152; 139, 129. Males 13–20 (the shaded section): 168, 169; 147, 150; 134, 121; 177, 176; 172, 170; 160, 163; 152, 151; 153, 151.",
+      "questionText": "Complete the scatter plot below by adding in the data for the males (the data in the shaded section of the table)."
+    },
+    {
+      "id": "maths-2021-ol-p2-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The following table shows data on the height and arm span of twenty teenagers. Females 1–12, height (cm) and arm span (cm): 162, 155; 169, 174; 164, 144; 157, 160; 160, 160; 170, 170; 174, 170; 159, 154; 153, 148; 167, 167; 150, 152; 139, 129. Males 13–20 (the shaded section): 168, 169; 147, 150; 134, 121; 177, 176; 172, 170; 160, 163; 152, 151; 153, 151.",
+      "questionText": "The table on the right shows three numbers: 0·2, 0·9 and −0·6. One of the numbers is the correlation coefficient of the data shown in the table above. Tick (✓) the one which you think best represents the correlation coefficient between height and arm span for this data set."
+    },
+    {
+      "id": "maths-2021-ol-p2-q5-b-iii",
+      "printedParts": [
+        "Q5(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The following table shows data on the height and arm span of twenty teenagers. Females 1–12, height (cm) and arm span (cm): 162, 155; 169, 174; 164, 144; 157, 160; 160, 160; 170, 170; 174, 170; 159, 154; 153, 148; 167, 167; 150, 152; 139, 129. Males 13–20 (the shaded section): 168, 169; 147, 150; 134, 121; 177, 176; 172, 170; 160, 163; 152, 151; 153, 151.",
+      "questionText": "Explain what this correlation coefficient tells us about the relationship between height and arm span for this data set."
+    },
+    {
+      "id": "maths-2021-ol-p2-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "On the diagram below showing the triangle ABC, construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2021-ol-p2-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "The diagram shows the triangle ABC.",
+      "questionText": "Construct the circumcircle of the given triangle ABC. Show all your construction lines and arcs clearly.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2021-ol-p2-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The triangle PQR is the image of the triangle DEF under an enlargement. (The diagram is not drawn to scale.) The scale factor of the enlargement, k, is 2·5. |EF| = 3 cm.",
+      "questionText": "Use the scale factor to find |QR|."
+    },
+    {
+      "id": "maths-2021-ol-p2-q6",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The triangle PQR is the image of the triangle DEF under an enlargement. (The diagram is not drawn to scale.) The scale factor of the enlargement, k, is 2·5. |EF| = 3 cm.",
+      "questionText": "The area of the triangle PQR is 18·75 cm². Find the area of triangle DEF."
+    },
+    {
+      "id": "maths-2021-ol-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. Age group 15 − 25: 24%; 25 − 35: 27%; 35 − 45: 25%; 45 − 55: 16%; 55 − 65: 8% of subscribers. Note: 25 − 35 means 25 years and over but less than 35 years.",
+      "questionText": "Draw a Histogram to represent the data."
+    },
+    {
+      "id": "maths-2021-ol-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. Age group 15 − 25: 24%; 25 − 35: 27%; 35 − 45: 25%; 45 − 55: 16%; 55 − 65: 8% of subscribers. Note: 25 − 35 means 25 years and over but less than 35 years.",
+      "questionText": "In a survey of 1000 subscribers, aged between 15 and 65, how many people would you expect to be between 25 years and 55 years?"
+    },
+    {
+      "id": "maths-2021-ol-p2-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. Age group 15 − 25: 24%; 25 − 35: 27%; 35 − 45: 25%; 45 − 55: 16%; 55 − 65: 8% of subscribers. Note: 25 − 35 means 25 years and over but less than 35 years.",
+      "questionText": "Use the table or the histogram to write down the age group which contains the median age."
+    },
+    {
+      "id": "maths-2021-ol-p2-q7-a-iv",
+      "printedParts": [
+        "Q7(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. Age group 15 − 25: 24%; 25 − 35: 27%; 35 − 45: 25%; 45 − 55: 16%; 55 − 65: 8% of subscribers. Note: 25 − 35 means 25 years and over but less than 35 years.",
+      "questionText": "Use the mid-interval values of the groups in the table to estimate the mean age of the subscribers. Give your answer correct to one decimal place."
+    },
+    {
+      "id": "maths-2021-ol-p2-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Prior to the COVID-19 pandemic, Netflix held the largest share of the online streaming market with 65% of all streaming subscribers in the 15 to 65 age group. Aiden thought that this percentage might have changed during the pandemic and surveyed a sample of subscribers in this age group to get data. He then carried out a Hypothesis Test to test his theory.",
+      "questionText": "If 540 people responded to his survey, calculate the margin of error of his survey. Give your answer as a percentage, correct to one decimal place."
+    },
+    {
+      "id": "maths-2021-ol-p2-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Prior to the COVID-19 pandemic, Netflix held the largest share of the online streaming market with 65% of all streaming subscribers in the 15 to 65 age group. Aiden thought that this percentage might have changed during the pandemic and surveyed a sample of subscribers in this age group to get data. He then carried out a Hypothesis Test to test his theory. 540 people responded to his survey.",
+      "questionText": "His survey revealed that 372 of the responders said they now have a Netflix account. Use your answer to Part (b)(i) above to create a 95% confidence interval for the percentage of the population that have a Netflix account."
+    },
+    {
+      "id": "maths-2021-ol-p2-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Prior to the COVID-19 pandemic, Netflix held the largest share of the online streaming market with 65% of all streaming subscribers in the 15 to 65 age group. Aiden thought that this percentage might have changed during the pandemic and surveyed a sample of subscribers in this age group to get data. He then carried out a Hypothesis Test to test his theory. 540 people responded to his survey and 372 said they now have a Netflix account.",
+      "questionText": "Use your answer to Part (b)(ii) above to conduct the Hypothesis Test, at the 5% level of significance to test Aiden’s claim that the percentage of subscribers to Netflix had changed. State clearly your null hypothesis, your alternative hypothesis and give your conclusion in the context of the question."
+    },
+    {
+      "id": "maths-2021-ol-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. At equal intervals of 10 m along this line, perpendicular measures are made to the sides of the lake as shown.",
+      "questionText": "Use the Trapezoidal Rule to estimate the surface area of the lake."
+    },
+    {
+      "id": "maths-2021-ol-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. At equal intervals of 10 m along this line, perpendicular measures are made to the sides of the lake as shown.",
+      "questionText": "If the lake is on average 8 m deep, estimate the volume of water in the lake."
+    },
+    {
+      "id": "maths-2021-ol-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Calculate the volume, in cm³, of a hemisphere of radius 21 cm. Give your answer terms of π."
+    },
+    {
+      "id": "maths-2021-ol-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "A buoy on the lake is in the shape of a hemisphere of radius 21 cm surmounted by a cone. The volume of the cone is equal to the volume of the hemisphere. Find h, the total height of the buoy."
+    },
+    {
+      "id": "maths-2021-ol-p2-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram on the right shows the plan of a lake. The line segment [PQ] represents the distance from the pier, P, to the far side of the lake. At equal intervals of 10 m along this line, perpendicular measures are made to the sides of the lake as shown.",
+      "questionText": "The buoy is situated at B, 43 m from the pier P and 26 m from the point Q, as shown in the diagram above (|PQ| = 60 m). Find |∠QBP|, the angle at the buoy shown on the diagram. Give your answer correct to two decimal places."
+    },
+    {
+      "id": "maths-2021-ol-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "The line segment [SE], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres.",
+      "questionText": "Find the length of the runway. Give your answer in km."
+    },
+    {
+      "id": "maths-2021-ol-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The line segment [SE], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres.",
+      "questionText": "An aircraft starts at the point S and travels 1 250 m to a point L where it lifts off. From the point L, the aircraft makes an angle of 14° with the ground, [LE]. The aeroplane travels along this path until it is directly above E. Plot and label the lift-off point L, and draw the aircraft’s flight path for this part of its journey, on the diagram above."
+    },
+    {
+      "id": "maths-2021-ol-p2-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The line segment [SE], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. An aircraft starts at the point S and travels 1 250 m to a point L where it lifts off. From the point L, the aircraft makes an angle of 14° with the ground, [LE], and travels along this path until it is directly above E.",
+      "questionText": "Find the total distance the aeroplane has travelled when it is directly above E. Give your answer, in metres, correct to the nearest metre."
+    },
+    {
+      "id": "maths-2021-ol-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The aircraft flies from airport A to airport B, and then on to airport C, at the same altitude. The pilot records the flight summary on the given diagram: |AB| = 260 km, the angle at A is 47° and the angle at B is 97°.",
+      "questionText": "Find the distance from airport B to airport C. Give your answer correct to the nearest km."
+    },
+    {
+      "id": "maths-2021-ol-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "When the plane was directly over airport C, the pilot was instructed to “circle” until a runway was available. She therefore flew 10 km away from C before turning and flying along a circular arc of 70° and then returning to the airport. This path was all flown at the same altitude. Find the total distance travelled. Give your answer, in km, correct to two decimal places."
+    },
+    {
+      "id": "maths-2021-ol-p2-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l.",
+      "questionText": "Treasure is hidden at location T(−2, −5). Mark T on the map where this treasure can be found."
+    },
+    {
+      "id": "maths-2021-ol-p2-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l.",
+      "questionText": "Food is located at a point F on the map. The point F is on a line which contains the point A(3, −5) and has a slope of −1. The point F is also on a line which contains B(6, 4) and has a slope of 0. By drawing appropriate lines on the map above, or otherwise, find the co-ordinates of F."
+    },
+    {
+      "id": "maths-2021-ol-p2-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l.",
+      "questionText": "A clue to another treasure is hidden in a locked box at point B(6, 4). The 4-digit code to open the box is d⁴, where d is the distance from B to C(−3, 2), and d ∈ ℕ. Find the 4-digit code (d⁴)."
+    },
+    {
+      "id": "maths-2021-ol-p2-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l.",
+      "questionText": "A meeting point P(2, m) is below the x-axis. P is a distance of √41 from point B(6, 4). Find the value of m and plot P on the map above."
+    },
+    {
+      "id": "maths-2021-ol-p2-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l.",
+      "questionText": "The line k has equation x − y − 3 = 0. Verify, using substitution, that the point T(−2, −5) is on k."
+    },
+    {
+      "id": "maths-2021-ol-p2-q10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l. The line k has equation x − y − 3 = 0 and T(−2, −5) is on k.",
+      "questionText": "Another treasure also needs be somewhere on the line k. You must pick a spot along k to contain this treasure. Use algebra to find another point on k, other than T."
+    },
+    {
+      "id": "maths-2021-ol-p2-q10-c-iii",
+      "printedParts": [
+        "Q10(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map, which shows the points B(6, 4), C(−3, 2) and A(3, −5) and a line l. The line k has equation x − y − 3 = 0.",
+      "questionText": "A spade for digging is hidden on line l which is parallel to k. The line l contains the point C(−3, 2). Find the equation of line l."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any four / any two questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "Tick (✓) the one which you think best represents",
+      "classification": "answer-selection",
+      "reason": "0·2, 0·9 or −0·6 is the answer to Q5(b)(ii), not a choice of prompts."
+    },
+    {
+      "pages": [
+        24
+      ],
+      "wording": "or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task; no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:6add43db1364664a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:61d2edd9d8426d56": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:c0bc32594b5c073a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "13:b174850d2c633451": {
+      "classification": "answer-selection",
+      "reason": "Ticking 0·2, 0·9 or −0·6 is the answer to the single required task, not a choice of prompts."
+    },
+    "16:8c56dde69354d677": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "24:3859d0d4a8713a92": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    }
+  }
+}

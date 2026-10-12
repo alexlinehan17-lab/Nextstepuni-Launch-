@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1581,
-  "reviewedTasks": 1534,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1583,
+  "reviewedTasks": 1582,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 317,
+  "targetedRegressionTests": 322,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -931,5 +931,61 @@
     "schemePagesInspected": 29,
     "coverageBaseline": "1157/3474 asks covered, 0 orphans, 0 excluded, 2317 open",
     "validation": "Deck generation (1,581 built, 1 historical reject), Atlas generation and --check (376 placements), audit --check-reviewed, scheme quote check of the 8 re-quoted cards, ten regression files (317/317), typecheck and diff whitespace check passed."
+  },
+  "ordinary2021p2": {
+    "paper": "2021 Ordinary Level Paper 2",
+    "paperFileid": "LC003GLP200EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "independentlyReviewedTasks": 48,
+    "existingRuntimeCardsReviewed": 46,
+    "addedRuntimeCards": [
+      "maths-2021-ol-p2-q1-b-i"
+    ],
+    "restoredHeldBackCards": [
+      "maths-2021-ol-p2-q5-b-ii"
+    ],
+    "glyphDecision": {
+      "codePoint": "U+F061",
+      "inThisPaper": "Webdings glyph id 68, renders as a tick",
+      "elsewhere": "SymbolMT alpha in 2011 Higher Paper 2 (cropped: alpha + beta = 90 degrees)",
+      "decision": "not added to the character-keyed glyph map; the gate still refuses U+F061; the card's prompt is restored from the paper"
+    },
+    "reCitations": {
+      "maths-2021-ol-p2-q6": "Q6(b)(ii)",
+      "maths-2021-ol-p2-q6-a-i": "Q6(a)(i)",
+      "maths-2021-ol-p2-q6-b-i": "Q6(b)(i)"
+    },
+    "outsideCensus": {
+      "maths-2021-ol-p2-q3": "duplicate of Q3(a) (the scheme's second method ladder); ID kept and prompt restored; withdrawal needs a progress alias and a frozen preservation-count change, left for a coordinator decision"
+    },
+    "rowRepairs": [
+      "maths-2021-ol-p2-q1-b-i",
+      "maths-2021-ol-p2-q3-a",
+      "maths-2021-ol-p2-q3-b-i",
+      "maths-2021-ol-p2-q3-b-ii",
+      "maths-2021-ol-p2-q6-a-i",
+      "maths-2021-ol-p2-q7-b-i",
+      "maths-2021-ol-p2-q7-b-ii",
+      "maths-2021-ol-p2-q8-c",
+      "maths-2021-ol-p2-q9-a-i",
+      "maths-2021-ol-p2-q9-a-ii",
+      "maths-2021-ol-p2-q9-a-iii",
+      "maths-2021-ol-p2-q9-b-i"
+    ],
+    "weldedNotesMovedToRowNote": 4,
+    "measurementToolAttached": [
+      "maths-2021-ol-p2-q6-a-i",
+      "maths-2021-ol-p2-q6-a-ii"
+    ],
+    "historicalRejectsRemaining": 0,
+    "targetedRegressionTests": 322,
+    "previousRuntimeIdsRetained": 1581,
+    "offeredMarks": 380,
+    "candidateMarks": 220,
+    "paperPagesInspected": 28,
+    "schemePagesInspected": 32,
+    "coverageBaseline": "1159/3474 asks covered, 0 orphans, 0 excluded, 2315 open",
+    "validation": "Deck generation (1,583 built, 0 historical rejects), Atlas generation and --check (386 placements), audit --check-reviewed, scheme quote check of the 12 re-quoted or added cards, ten regression files (322/322), typecheck and diff whitespace check passed."
   }
 }

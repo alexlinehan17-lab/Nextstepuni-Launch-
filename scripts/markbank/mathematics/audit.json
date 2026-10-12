@@ -30,15 +30,13 @@
       "higher",
       "ordinary"
     ],
-    "runtimeCards": 1581,
-    "authoredCards": 1582,
-    "authoredNotInRuntime": 1,
-    "reviewedPaperEditions": 37,
-    "reviewedMarkedTasks": 1534
+    "runtimeCards": 1583,
+    "authoredCards": 1583,
+    "authoredNotInRuntime": 0,
+    "reviewedPaperEditions": 38,
+    "reviewedMarkedTasks": 1582
   },
-  "authoredNotInRuntime": [
-    "maths-2021-ol-p2-q5-b-ii"
-  ],
+  "authoredNotInRuntime": [],
   "reviewErrors": [
     "2020/LC003BLP000IV.pdf: missing primary source",
     "2014/LC003ALP130IV.pdf: missing primary source",
@@ -1942,8 +1940,8 @@
       "schemeAvailable": true,
       "paperPages": 28,
       "answerSidecarAvailable": true,
-      "reviewed": false,
-      "reviewedTaskCount": 0,
+      "reviewed": true,
+      "reviewedTaskCount": 48,
       "selectionCandidates": [
         {
           "id": "3:6add43db1364664a",
