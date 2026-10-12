@@ -442,7 +442,8 @@ def build(ledger, year, level):
             key = []
             for lab in t['labels']:
                 meaning, _ = lifter.lift(lab['sel'], doc)
-                meaning = strip_stars(meaning)
+                # A scheme row label ("Nucleus:") names the part without its colon.
+                meaning = strip_stars(meaning).rstrip(':').strip()
                 key.append({'letter': lab['letter'], 'meaning': meaning,
                             'askedInThisQuestion': lab['asked']})
             card['labelKey'] = key

@@ -136,7 +136,11 @@ const decks = [
    * bio-2025-ol-q16-ciii-fig, duplicated two cards already carding Q16(c)(iii)
    * and (iv); it is withdrawn with a progress alias to bio-2025-ol-q16-c-iii.
    * The frozen 2021-2025 identity hash is pinned below with it restored. */
-  ['biology:ordinary', BIO_ORDINARY, 915, '446c526b5433c81b503cd75e639e67f9af665dcdf3cca72cbe6d02dc42bde24d'],
+  /* 2026-10-12: biology ordinary 915 -> 959. The 2024 Ordinary sitting is
+   * re-reviewed the same way (bio_review_2024_ol.py): all 124 shipped ids are
+   * kept (122 corrected, 2 verified) and 44 tasks the old cards bundled or
+   * missed ship as new ids. */
+  ['biology:ordinary', BIO_ORDINARY, 959, 'a9a51284ae9c6df8a2e25a04c2442662651f0ac3453a312c0bc454fe063c1ae7'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
    *
@@ -817,7 +821,8 @@ describe('Mark Bank card preservation', () => {
     // aliased duplicate it withdraws: 19,770 + 43 - 1.
     // ...and the 2024 Higher review's 29 new ids, less its one aliased
     // withdrawal: 19,812 + 29 - 1.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_840);
+    // ...and the 2024 Ordinary review's 44 new ids: 19,840 + 44.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_884);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.

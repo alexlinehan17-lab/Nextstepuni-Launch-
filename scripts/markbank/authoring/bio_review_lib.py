@@ -59,6 +59,10 @@ _TARIFF_TAIL = re.compile(r'^\s*(?:Any\s+\w+\s*)?(?:\d+\(\d\)|\d\+\d|\d{1,2})?\s
 def _closes(text_after, end):
     if text_after.strip() == '':
         return True
+    # A scheme note glued to the end of its row ("... other correct Must
+    # match named organ 3") starts a new printed statement.
+    if re.match(r'\s+Must match\b', text_after):
+        return True
     if end[-1:] in '.?:' and text_after[:1].isspace():
         return True
     return bool(_TARIFF_TAIL.match(text_after))

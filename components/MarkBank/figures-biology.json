@@ -343,6 +343,553 @@
    320
   ]
  },
+ "biology-2024-ol-q10b-ii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q10b-ii-question.png",
+  "md5": "22d9ae0d78c02c738fe98467fba12c54",
+  "alt": "The printed question: (ii) The student’s average results are shown in the table below. A table of PR and BR: Resting 60 and 20; Moderate exercise 100 and 30; Intense exercise 150 and 60. Beside it: Choosing either pulse or breathing rate, complete the name of the y-axis and on the grid provided, draw (using pencil) a suitable graph to represent the data of either pulse rate (PR) or breathing rate (BR). To the right, an empty grey box before the word rate marks the y-axis name, and a blank grid has Resting, Moderate exercise and Intense exercise along its horizontal axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q10(b)(ii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   108,
+   248,
+   542,
+   522
+  ]
+ },
+ "biology-2024-ol-q11-food-web": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q11-food-web.png",
+  "md5": "22fa4109666456a1538d5944232af42f",
+  "alt": "A food web of drawings joined by arrows. Grasses feed the Snail, Mouse, Grasshopper and Mosquito; the Snail feeds the Thrush; the Grasshopper feeds the Robin and the Badger; the Mosquito feeds the Bat; the Thrush, Mouse and Robin feed the Fox and the Barn owl; the Bat feeds the Badger.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q11(b)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   125,
+   210,
+   470,
+   430
+  ]
+ },
+ "biology-2024-ol-q12-chloroplast": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q12-chloroplast.png",
+  "md5": "659d4788ab91b0a805a9ed48ebb5e2f0",
+  "alt": "Drawing of an oval organelle with a double outer membrane; inside, stacks of flat discs joined by long membranes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q12(c)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   364,
+   535,
+   541,
+   615
+  ]
+ },
+ "biology-2024-ol-q12-mitochondrion": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q12-mitochondrion.png",
+  "md5": "8441c27995e71e4cf484bff4e465b1ec",
+  "alt": "Drawing of a sausage-shaped organelle cut open: a smooth outer membrane and an inner membrane folded into many finger-like folds.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q12(b)(iv)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   398,
+   320,
+   541,
+   396
+  ]
+ },
+ "biology-2024-ol-q12b-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q12b-i-question.png",
+  "md5": "e8f543f4bbfd3ac0a3078f8f3047db20",
+  "alt": "The printed question: (i) In your answerbook, write out and complete the following balanced equation for aerobic respiration: C6H12O6 + 6O2, an arrow, then 6 followed by a blank, plus 6 followed by a blank, plus energy, with the numbers after each element set as subscripts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q12(b)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   108,
+   222,
+   525,
+   278
+  ]
+ },
+ "biology-2024-ol-q13-cross": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q13-cross.png",
+  "md5": "0964a3d390e31b2090149d028223ba29",
+  "alt": "A boxed diagram of a cross. Parents: a Purple-flowered pea plant crossed (x) with a White-flowered one. Gametes: P from the purple parent and p from the white parent. F1 offspring: the two gametes join to give a Purple-flowered (Pp) plant.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q13(b)(ii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   310,
+   200,
+   541,
+   326
+  ]
+ },
+ "biology-2024-ol-q13-punnett": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q13-punnett.png",
+  "md5": "0823a39d8e1b48912bf3e356aef41dc3",
+  "alt": "An empty two-by-two Punnett square: a Purple-flowered (Pp) plant gives gametes P and p along the top, and another Purple-flowered (Pp) plant gives P and p down the side.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q13(b)(iv)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   380,
+   350,
+   542,
+   468
+  ]
+ },
+ "biology-2024-ol-q13b-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q13b-i-question.png",
+  "md5": "3fdfc3f41469ba7ccea21cc7f9c54fc1",
+  "alt": "The printed question: (b) Study the diagram of a cross between two pea plants and answer the following questions. (i) Both parents were homozygous and the F1 (first generation) offspring were heterozygous. Explain the underlined terms. The words homozygous and heterozygous are underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q13(b)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   200,
+   306,
+   314
+  ]
+ },
+ "biology-2024-ol-q13b-iii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q13b-iii-question.png",
+  "md5": "4ad02b391b352b5b0ecd9931a79755f5",
+  "alt": "The printed question: Two of the F1 offspring were then self-fertilised. The F2 (second generation) offspring were not all purple-flowered. (iii) Copy the Punnett square into your answerbook and complete it to show the genotypes of the F2 offspring. Beside it, an empty two-by-two Punnett square: one Purple-flowered (Pp) parent gives gametes P and p along the top, the other gives P and p down the side.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q13(b)(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   108,
+   348,
+   542,
+   467
+  ]
+ },
+ "biology-2024-ol-q13b-iii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q13b-iii-scheme.png",
+  "md5": "306a2f7e6c419ee7026fedd93eaaf6c4",
+  "alt": "The marking scheme's completed Punnett square: P and p along the top, P and p down the side; the four boxes read PP and Pp in the top row, Pp and pp in the bottom row.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q13(b)(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 19,
+  "sourceRect": [
+   215,
+   445,
+   378,
+   572
+  ],
+  "solution": true
+ },
+ "biology-2024-ol-q14-amoeba": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q14-amoeba.png",
+  "md5": "76987b46db00b676b1ffaafe166aed05",
+  "alt": "Drawing of Amoeba: a grey, irregular cell with many finger-like extensions. Arrow A points to a dark round body near the middle; arrow B to the tip of one of the extensions; arrow C to a large pale round space.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(c)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   355,
+   425,
+   541,
+   575
+  ]
+ },
+ "biology-2024-ol-q14b-iii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q14b-iii-question.png",
+  "md5": "20f33e71bdf196c29f59d8e9f481a192",
+  "alt": "The printed question: (iii) Some bacteria are pathogenic. Explain the underlined term. The word pathogenic is underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(b)(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   108,
+   258,
+   302,
+   291
+  ]
+ },
+ "biology-2024-ol-q15-female": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q15-female.png",
+  "md5": "56b238c590a62762bcdd5286d5d629fd",
+  "alt": "Front-view diagram of the female reproductive system. Arrow A points to the tube curving out from the top of the uterus on the right; arrow B to the small oval organ below it; arrow C to the wall of the uterus. Labels Endometrium, Cervix and Vagina point to the uterus lining, the neck of the uterus and the passage below it.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q15(b)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   140,
+   140,
+   450,
+   322
+  ]
+ },
+ "biology-2024-ol-q16-digestive": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q16-digestive.png",
+  "md5": "c8aa304966c65675c409d218d1db0209",
+  "alt": "Diagram of the human digestive system in an outline of the head and body. Arrow A points to the tube running down the neck; B to the bag-shaped organ beneath the organ labelled Liver; C to the coiled tube in the middle of the abdomen; D to the wider tube looping around it.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(b)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   388,
+   497,
+   541,
+   736
+  ]
+ },
+ "biology-2024-ol-q16-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q16-flower.png",
+  "md5": "debb5177a533cc43bab73d07f34ac2ed",
+  "alt": "Diagram of a flower cut in half. Arrow A points to the top of the central stalk; arrow B to a rounded head on one of the stalks around it; arrow C to one of the large outer leaves of the flower.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(c)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   375,
+   56,
+   541,
+   226
+  ]
+ },
+ "biology-2024-ol-q16-leaf": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q16-leaf.png",
+  "md5": "273047b7db4423c13e7ac2ec4d2cd46c",
+  "alt": "Diagram of a transverse section through a leaf. A labels the thin outer layer of cells along the top; a bracket B spans the tissue between the upper and lower surfaces. Labels Xylem and Phloem point to a vein in the middle; Air space points to a gap between the rounded lower cells; Stoma points to an opening in the lower surface.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(a)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   325,
+   95,
+   541,
+   243
+  ]
+ },
+ "biology-2024-ol-q16-skin": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q16-skin.png",
+  "md5": "12c492d8e9537486c695e9e56a4a4e23",
+  "alt": "Diagram of a section through human skin. Arrow X points to a hair growing out of the surface; arrow Y to a small gland beside the hair below the surface; arrow Z to a vessel running through the deeper layer.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(d)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   300,
+   350,
+   541,
+   576
+  ]
+ },
+ "biology-2024-ol-q16-venation": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q16-venation.png",
+  "md5": "ca2eec4a8b73e815cb697b03501a77e5",
+  "alt": "Two leaves: X is broad with veins branching from the midrib into a network; Y is long and narrow with veins running side by side from base to tip.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(a)(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   405,
+   328,
+   541,
+   438
+  ]
+ },
+ "biology-2024-ol-q17-ear": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q17-ear.png",
+  "md5": "6984872b5fb943f6a26baeab6a1bc6e6",
+  "alt": "Diagram of the human ear. Arrow A points to the membrane at the end of the ear canal; arrow B to the tiny bones beyond it; arrow C to the coiled structure further in. Labels Middle ear, Eustachian tube, Throat (pharynx) and Auditory nerve point to their parts.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q17(b)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   286,
+   383,
+   541,
+   580
+  ]
+ },
+ "biology-2024-ol-q17-endocrine": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q17-endocrine.png",
+  "md5": "84a7c148302fd0612a808b600ccc10f4",
+  "alt": "Outline of a male body with some glands drawn in. Arrow A points to a gland lying across the abdomen; arrow B to a gland in the front of the neck; arrow C to the organs at the base of the body.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q17(d)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   390,
+   268,
+   541,
+   508
+  ]
+ },
+ "biology-2024-ol-q17-seed": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q17-seed.png",
+  "md5": "24a354206ad63702dde686201162cd74",
+  "alt": "Diagram of the inside of a seed split in two halves: labels Cotyledon and Embryo point to the small curved structure at the top centre, and Endosperm to the large tissue filling the seed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q17(a)(i)1",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   345,
+   88,
+   541,
+   258
+  ]
+ },
+ "biology-2024-ol-q2-yeast": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q2-yeast.png",
+  "md5": "d20a4e16d27a87e718b14fdf730ca08e",
+  "alt": "Diagram of a budding yeast cell: a large oval cell with a small rounded bud on top, joined by a narrow neck, both with a thick grey wall. A bracket labelled X spans the bud and a bracket labelled Y the larger cell; an arrow from Z points to the large dark round body in the larger cell. An empty box labelled Cell wall sits to the left.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q2(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   325,
+   55,
+   541,
+   268
+  ]
+ },
+ "biology-2024-ol-q3-mitosis": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q3-mitosis.png",
+  "md5": "1debe232026116f8beb91a4a026388ac",
+  "alt": "Diagram of a cell going through DNA replication and then mitosis, left to right: a round cell with two chromosomes, an arrow labelled A pointing to one of them; an arrow marked DNA replication to Stage 1, the chromosomes now doubled; Stage 2, an oval cell with the doubled chromosomes lined up across its middle and fibres running from end to end; Stage 3, the cell pinching in with chromosomes moving to opposite ends, arrows labelled B pointing to the fibres in Stages 2 and 3; Stage 4, two round cells, each with two chromosomes.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q3(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   104,
+   78,
+   541,
+   252
+  ]
+ },
+ "biology-2024-ol-q4-virus": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q4-virus.png",
+  "md5": "b0cce6ad5cd6c2afb9b58f8308e50e2f",
+  "alt": "Diagram of a virus: a thick circular outline with a twisted double strand inside it. Arrow A points to the outline; arrow B points to the twisted strand.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   255,
+   92,
+   415,
+   205
+  ]
+ },
+ "biology-2024-ol-q5-skeleton": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q5-skeleton.png",
+  "md5": "b95a934e3f5b86d49388cfdd926a9357",
+  "alt": "Front-view drawing of the human skeleton. Arrow A points to the head; arrow B to the curved bones of the chest; arrow C to the wide bone at the hips.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q5(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   355,
+   58,
+   541,
+   458
+  ]
+ },
+ "biology-2024-ol-q9-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-q9-graph.png",
+  "md5": "3c2cedcb7a503bb0cd4b35f224b6af70",
+  "alt": "A graph whose vertical axis is labelled by an empty box A and whose horizontal axis, marked 0°C, 30°C, 60°C and 90°C, is labelled by an empty box B. The curve rises from the axis at 0°C to a peak near 30°C, then falls back towards the axis by about 70°C.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q9(b)(vii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   125,
+   592,
+   490,
+   740
+  ]
+ },
  "biology-2025-hl-q11-embryo-sac": {
   "src": "/exam-figures/biology/markbank/biology-2025-hl-q11-embryo-sac.png",
   "md5": "6c2cf51839e72874aec3bc7f4800dde9",

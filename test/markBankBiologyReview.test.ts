@@ -562,3 +562,102 @@ describe('Biology 2024 Higher — reviewed sitting, corrected in place', () => {
     expect(hl24ById.get('bio-2024-hl-q13-b-ii')!.figure?.solution).toBe(true);
   });
 });
+
+const ol24 = sittings['2024-ol'];
+const ordinary2024 = BIO_ORDINARY.filter(card => card.year === 2024) as unknown as ReviewedCard[];
+const ol24ById = new Map(ordinary2024.map(card => [card.id, card]));
+const ol24Verbatims = (id: string) => (ol24ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+
+describe('Biology 2024 Ordinary — reviewed sitting, corrected in place', () => {
+  const review = ol24.review!;
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(ol24.baseTaskCount).toBe(168);
+    expect(ol24.cardCount).toBe(168);
+    expect(ordinary2024).toHaveLength(168);
+    expect(new Set(ol24.tasks.map(task => task.id))).toEqual(new Set(ol24ById.keys()));
+  });
+
+  it('keeps every shipped id', () => {
+    expect(review.baselineCommit).toBe('89843f7fc');
+    expect([review.verified.length, review.corrected.length, review.added.length,
+      review.retained.length]).toEqual([2, 122, 44, 0]);
+    for (const id of [...review.verified, ...review.corrected.map(c => c.id), ...review.added]) {
+      expect(ol24ById.has(id), id).toBe(true);
+    }
+    // The old Q7 bundle keeps its id for (e), the one part no other card carried.
+    expect(ol24ById.get('bio-2024-ol-q7')!.questionRef).toBe('2024 OL Q7(e)');
+  });
+
+  it('records what each corrected card showed before', () => {
+    for (const correction of review.corrected) {
+      expect(correction.changed.length, correction.id).toBeGreaterThan(0);
+      for (const field of correction.changed) {
+        expect(field in correction.fieldsBefore, `${correction.id}.${field}`).toBe(true);
+      }
+    }
+  });
+
+  it('leaves the cards the review verified exactly as they shipped', () => {
+    const verified = review.verified.map(id => ol24ById.get(id)!)
+      .sort((a, b) => a.id.localeCompare(b.id));
+    expect(contentHash(verified)).toBe('46ffb8f2d7f4510041e66bc271717b060581feafc70de6fb58e397a253350309');
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(ol24.sources['038'].sha256)
+      .toBe('e43ae547650731087183ecf4db9973b152ab9748d0138311434d57e305b683a3');
+    expect(ol24.sources['040'].sha256)
+      .toBe('0650c443e91a40dd9834992584569e2ae98bdd076465136a7f2f4302b073ea56');
+    expect(ol24.sources.scheme.sha256)
+      .toBe('65393273ec12042cf99d3b8f2876bfd798fc7b03af5d8d1e0f57579d12171c19');
+    expect([ol24.sources['038'].pages, ol24.sources['040'].pages, ol24.sources.scheme.pages])
+      .toEqual([36, 12, 36]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of ol24.tasks) {
+      const card = ol24ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('adds up to the printed question totals', () => {
+    const totals = new Map<number, number>();
+    for (const task of ol24.tasks) {
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    for (const q of [1, 3, 4, 7]) expect(totals.get(q), `Q${q}`).toBe(20);
+    // "6(3) + 2": seven responses each carded at 3; the ladder makes 20.
+    for (const q of [2, 5, 6]) expect(totals.get(q), `Q${q}`).toBe(21);
+    for (const q of [8, 9, 10]) expect(totals.get(q), `Q${q}`).toBe(30);
+    for (const q of [11, 12, 13, 14, 15]) expect(totals.get(q), `Q${q}`).toBe(60);
+    for (const q of [16, 17]) expect(totals.get(q), `Q${q}`).toBe(120);   // any two of four 30s
+  });
+
+  it('cards each choice the scheme marks on one set of rows as one card, not routes', () => {
+    expect(Object.keys(ol24.routes)).toEqual([]);
+    expect(ordinary2024.filter(card => card.questionRef.includes(' — '))).toHaveLength(0);
+  });
+
+  it('reads the true/false ticks from the scheme', () => {
+    expect(['a', 'b', 'c', 'd', 'e', 'f', 'g'].map(x => ol24Verbatims(`bio-2024-ol-q6-${x}`)[0]))
+      .toEqual(['True', 'True', 'False', 'False', 'True', 'True', 'False']);
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table|food web)s?\b|\bthe one shown\b/i;
+    for (const card of ordinary2024) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // Q13(b)(iii): the blank square is set as printed; the scheme's completed square waits for the reveal.
+    expect(ol24ById.get('bio-2024-ol-q13-b-iii')!.questionFigure).toBeTruthy();
+    expect(ol24ById.get('bio-2024-ol-q13-b-iii')!.figure?.solution).toBe(true);
+  });
+});
