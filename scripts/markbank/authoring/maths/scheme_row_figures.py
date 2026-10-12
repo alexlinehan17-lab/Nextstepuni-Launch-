@@ -96,6 +96,14 @@ AFFECTED = {
         'maths-2017-hl-p1-q1-c-ii', 'maths-2017-hl-p1-q3-b', 'maths-2017-hl-p1-q4-b', 'maths-2017-hl-p1-q5-a',
         'maths-2017-hl-p1-q6-a', 'maths-2017-hl-p1-q6-b', 'maths-2017-hl-p1-q7-f', 'maths-2017-hl-p1-q8-a',
         'maths-2017-hl-p1-q8-b-v', 'maths-2017-hl-p1-q9-a', 'maths-2017-hl-p1-q9-b-ii',
+        # Paper 2 sets most of its working as stacked fractions, binomial
+        # coefficients and diagrams: every part that lost a line or a band.
+        'maths-2017-hl-p2-q1-a', 'maths-2017-hl-p2-q1-b', 'maths-2017-hl-p2-q1-c', 'maths-2017-hl-p2-q1-d', 'maths-2017-hl-p2-q2-b',
+        'maths-2017-hl-p2-q2-d-i', 'maths-2017-hl-p2-q2-d-ii', 'maths-2017-hl-p2-q3-a', 'maths-2017-hl-p2-q3-b', 'maths-2017-hl-p2-q3-c',
+        'maths-2017-hl-p2-q4-a', 'maths-2017-hl-p2-q4-b', 'maths-2017-hl-p2-q5-b', 'maths-2017-hl-p2-q5-c', 'maths-2017-hl-p2-q5-d',
+        'maths-2017-hl-p2-q6-b', 'maths-2017-hl-p2-q7-a', 'maths-2017-hl-p2-q7-b-ii', 'maths-2017-hl-p2-q7-c', 'maths-2017-hl-p2-q8-a-i',
+        'maths-2017-hl-p2-q8-a-ii', 'maths-2017-hl-p2-q8-a-iii', 'maths-2017-hl-p2-q8-b-i', 'maths-2017-hl-p2-q8-b-ii', 'maths-2017-hl-p2-q8-b-iii',
+        'maths-2017-hl-p2-q9-a', 'maths-2017-hl-p2-q9-b', 'maths-2017-hl-p2-q9-c', 'maths-2017-hl-p2-q9-e', 'maths-2017-hl-p2-q9-f',
     ],
 }
 # Labels the scheme prints differently from the paper's part label.

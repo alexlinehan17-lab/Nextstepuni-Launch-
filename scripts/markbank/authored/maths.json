@@ -97352,5 +97352,2109 @@
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "stem": "The depth of water, in metres, at a certain point in a harbour varies with the tide and can be modelled by a function of the form f(t) = a + b cos ct where t is the time in hours from the first high tide on a particular Saturday and a, b, and c are constants. (Note: ct is expressed in radians.) On that Saturday, the following were noted: The depth of the water in the harbour at high tide was 5·5 m; The depth of the water in the harbour at low tide was 1·7 m; High tide occurred at 02:00 and again at 14:34. Part (b)(i): Find the value of a and the value of b. Part (b)(ii): Show that c = 0·5, correct to 1 decimal place."
+ },
+ {
+  "id": "maths-2017-hl-p2-q1-a",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q1-a",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q1(a)",
+  "questionText": "Conor rings Ciara’s house once every day for 7 consecutive days. Find the probability that she will answer the phone on the 2nd, 4th, and 6th days but not on the other days.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·0032768",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "When Conor rings Ciara’s house, the probability that Ciara answers the phone is 1/5.",
+  "figureKey": "maths-2017-HL-scheme-p028-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q1-b",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q1-b",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q1(b)",
+  "questionText": "Find the probability that she will answer the phone for the 4th time on the 7th day.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — or 0·016384",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "When Conor rings Ciara’s house, the probability that Ciara answers the phone is 1/5. Part (a): Conor rings Ciara’s house once every day for 7 consecutive days.",
+  "figureKey": "maths-2017-HL-scheme-p028-i1"
+ },
+ {
+  "id": "maths-2017-hl-p2-q1-c",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q1-c",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q1(c)",
+  "questionText": "Conor rings her house once every day for n days. Write, in terms of n, the probability that Ciara will answer the phone at least once.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1 − (4/5)^n",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — any correct term from the expansion",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "When Conor rings Ciara’s house, the probability that Ciara answers the phone is 1/5.",
+  "figureKey": "maths-2017-HL-scheme-p029-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q1-d",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q1-d",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q1(d)",
+  "questionText": "Find the minimum value of n for which the probability that Ciara will answer the phone at least once is greater than 99%.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q1-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1 − (4/5)^n > 0·99",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q1-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (4/5)^n < 0·01",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q1-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ≈ 0·01000000517",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q1-d-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — n = 21",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q1-d-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Ans (c) > 0·99",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q1-d-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — viable solution to inequality",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q1-d-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — n = 20·6377 and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "When Conor rings Ciara’s house, the probability that Ciara answers the phone is 1/5. Part (c): Conor rings her house once every day for n days. Write, in terms of n, the probability that Ciara will answer the phone at least once.",
+  "figureKey": "maths-2017-HL-scheme-p029-i1"
+ },
+ {
+  "id": "maths-2017-hl-p2-q2-a",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q2-a",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q2(a)",
+  "questionText": "Find the correlation coefficient of the data in Table 1, correct to 3 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Correlation coefficient = −0·957",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "An experiment measures the fuel consumption at various speeds for a particular model of car. The data collected are shown in Table 1 below. Table 1: Speed (km/hour): 40, 48, 56, 64, 88, 96, 112. Fuel consumption (km/litre): 21, 16, 18, 16, 13, 11, 9."
+ },
+ {
+  "id": "maths-2017-hl-p2-q2-b",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q2-b",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q2(b)",
+  "questionText": "Plot the points from the table on the grid below and draw the line of best fit (by eye).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Plots",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Line of Best Fit on Graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q2-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 3 correct plots",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q2-b-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — All plots correct with an incorrect line of best fit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q2-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — All plots correct and no line of best fit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "An experiment measures the fuel consumption at various speeds for a particular model of car. The data collected are shown in Table 1 below. Table 1: Speed (km/hour): 40, 48, 56, 64, 88, 96, 112. Fuel consumption (km/litre): 21, 16, 18, 16, 13, 11, 9.",
+  "figureKey": "maths-2017-HL-scheme-p030-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q2-c",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q2-c",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q2(c)",
+  "questionText": "The slope of the line of best fit is found to be −0·15. What does this value represent in the context of the data?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — As speed increases by 1 km/h the average distance travelled on 1 litre of fuel decreases by 0·15km",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — The rate at which fuel consumption in km/l is decreasing as the speed in km/h increases",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q2-c-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — Some reference to speed and fuel consumption",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q2-c-solution-4",
+    "kind": "point",
+    "verbatim": "Partial Credit — Reference to rate of change",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "An experiment measures the fuel consumption at various speeds for a particular model of car. The data collected are shown in Table 1 below. Table 1: Speed (km/hour): 40, 48, 56, 64, 88, 96, 112. Fuel consumption (km/litre): 21, 16, 18, 16, 13, 11, 9."
+ },
+ {
+  "id": "maths-2017-hl-p2-q2-d-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p2-q2-d-i",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q2(d)(i)",
+  "questionText": "Find how much longer it took Mary to complete the journey. Give your answer correct to the nearest minute.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q2-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 23·21",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q2-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 23 to nearest minute",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q2-d-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Answer in hours",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "An experiment measures the fuel consumption at various speeds for a particular model of car. The data collected are shown in Table 1 below. Table 1: Speed (km/hour): 40, 48, 56, 64, 88, 96, 112. Fuel consumption (km/litre): 21, 16, 18, 16, 13, 11, 9. Part (d): Mary drove from Cork to Dublin at an average speed of 96 km/h. Jane drove the same journey at an average speed of 112 km/h. Each travelled 260 km and paid 132·9 cents per litre for the fuel. Both used the model of car used to generate the data in Table 1.",
+  "figureKey": "maths-2017-HL-scheme-p030-i1"
+ },
+ {
+  "id": "maths-2017-hl-p2-q2-d-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q2-d-ii",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q2(d)(ii)",
+  "questionText": "Based on the data in Table 1 and their average speeds, find how much more Jane spent on fuel during the course of this journey.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q2-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = €6·98",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q2-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Amount of Mary’s fuel or amount of Jane’s fuel",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "An experiment measures the fuel consumption at various speeds for a particular model of car. The data collected are shown in Table 1 below. Table 1: Speed (km/hour): 40, 48, 56, 64, 88, 96, 112. Fuel consumption (km/litre): 21, 16, 18, 16, 13, 11, 9. Part (d): Mary drove from Cork to Dublin at an average speed of 96 km/h. Jane drove the same journey at an average speed of 112 km/h. Each travelled 260 km and paid 132·9 cents per litre for the fuel. Both used the model of car used to generate the data in Table 1.",
+  "figureKey": "maths-2017-HL-scheme-p030-i2"
+ },
+ {
+  "id": "maths-2017-hl-p2-q3-a",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q3-a",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q3(a)",
+  "questionText": "Find the co-ordinates of P.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — P = (1 , −1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — P = (x, y)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — x = 1, y = −1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — = (1, −1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Ratio formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-a-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — one relevant co-ordinate of P found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "ABC is a triangle where the co-ordinates of A and C are (0, 6) and (4, 2) respectively. G(2/3, 4/3) is the centroid of the triangle ABC. AG intersects BC at the point P. |AG| : |GP| = 2 : 1.",
+  "figureKey": "maths-2017-HL-scheme-p031-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q3-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q3-b",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q3(b)",
+  "questionText": "Find the co-ordinates of B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — C(4, 2) → P(1, −1 ) → B(1 − 3, −1 − 3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = (−2, −4 )",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x = −2, y = −4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — B = (−2 , −4)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — P as mid-point of BC",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-b-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — one relevant co-ordinate of B found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-b-solution-7",
+    "kind": "point",
+    "verbatim": "Note — Accept (‒2, ‒4) without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-b-solution-8",
+    "kind": "point",
+    "verbatim": "Note — Accept correct graphical solution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "ABC is a triangle where the co-ordinates of A and C are (0, 6) and (4, 2) respectively. G(2/3, 4/3) is the centroid of the triangle ABC. AG intersects BC at the point P. |AG| : |GP| = 2 : 1. Part (a): Find the co-ordinates of P.",
+  "figureKey": "maths-2017-HL-scheme-p031-i1"
+ },
+ {
+  "id": "maths-2017-hl-p2-q3-c",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q3-c",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q3(c)",
+  "questionText": "Prove that C is the orthocentre of the triangle ABC.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — AC ⊥ BC",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — −1 × 1 = −1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — lines are perpendicular",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — Slope AB = 5.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — → x + 5y = 14 …. (i).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — Slope AC = −1.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — Altitude from B : y + 4 = 1(x + 2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — → x − y = 2 …… (ii)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-9",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — → Solving (i)and (ii) x = 4 y = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-10",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Identifies significance of right-angled triangle",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-11",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — one equation of perpendicular from vertex to opposite side found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-12",
+    "kind": "point",
+    "verbatim": "High Partial Credit — slope of AC and slope of BC found but no conclusion",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q3-c-solution-13",
+    "kind": "point",
+    "verbatim": "High Partial Credit — two equations of perpendiculars from vertex to opposite side found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "ABC is a triangle where the co-ordinates of A and C are (0, 6) and (4, 2) respectively. G(2/3, 4/3) is the centroid of the triangle ABC. AG intersects BC at the point P. |AG| : |GP| = 2 : 1. Part (b): Find the co-ordinates of B.",
+  "figureKey": "maths-2017-HL-scheme-p032-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q4-a",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q4-a",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q4(a)",
+  "questionText": "Find the equation of the circle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x² + y² + 2gx + 2fy + c = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (0, 0) ⇒ 0+0+0+0+c = 0 ⇒ c = 0\n(6·5, 0) ⇒ 42·25+0+13g+0+0=0 ⇒ g = −3·25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 14f = −84\nf = −6\nx² + y² − 6·5x − 12y = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-4",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — c = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-5",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — One relevant equation in g and/or f",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-6",
+    "kind": "point",
+    "verbatim": "Method 1, Mid Partial Credit — 2 of g, f, c found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-7",
+    "kind": "point",
+    "verbatim": "Method 1, High Partial Credit — g , f, and c found or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-8",
+    "kind": "point",
+    "verbatim": "Method 2, Low Partial Credit — Effort at formulating equation of 1 ⊥ bisector",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-9",
+    "kind": "point",
+    "verbatim": "Method 2, Mid Partial Credit — Point t of intersection of 2 ⊥ bisectors found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-10",
+    "kind": "point",
+    "verbatim": "Method 2, High Partial Credit — Point of intersection of 2 ⊥ bisectors and radius",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-11",
+    "kind": "point",
+    "verbatim": "Method 3, Low Partial Credit — c = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-12",
+    "kind": "point",
+    "verbatim": "Method 3, Low Partial Credit — One point substituted into equation of circle",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-13",
+    "kind": "point",
+    "verbatim": "Method 3, Low Partial Credit — Midpoint (0,0) and (6·5, 0) formulated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-14",
+    "kind": "point",
+    "verbatim": "Method 3, Mid Partial Credit — 2 of g, f, c found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-a-solution-15",
+    "kind": "point",
+    "verbatim": "Method 3, High Partial Credit — g , f, and c found or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A(0, 0), B(6·5, 0) and C(10, 7) are three points on a circle.",
+  "figureKey": "maths-2017-HL-scheme-p033-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q4-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q4-b",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q4(b)",
+  "questionText": "Find |∠BCA|. Give your answer in degrees, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — θ = 28·44",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — Cosine rule |AB|² = 42·25,",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — |AC|² = 149",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — |BC|² =61·25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — ⇒ θ = 28·44",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — one relevant slope",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-b-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — tan θ fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-b-solution-8",
+    "kind": "point",
+    "verbatim": "Method 2, Low Partial Credit — one relevant length",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q4-b-solution-9",
+    "kind": "point",
+    "verbatim": "Method 2, High Partial Credit — cos θ fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A(0, 0), B(6·5, 0) and C(10, 7) are three points on a circle.",
+  "figureKey": "maths-2017-HL-scheme-p034-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q5-a",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q5-a",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q5(a)",
+  "questionText": "Prove that ∆AFE and ∆DAE are similar (equiangular).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Proof:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — |< AEF| = |< AED| … rigℎt angles",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — |< FAE| + |< EAD| = 90o",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — |< EAD| + |< ADE| = 90o remaining angles in ∆AED",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — ∴ |< FAE| = |< ADE|",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-a-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — ∴ |< AFE| = |< DAE|",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-a-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — ∴ ∆AFE and ∆DAE equiangular ∴ similar",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-a-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Identifies one angle of same size in each triangle",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-a-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Identifies second angle of same size in each triangle",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-a-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Implies triangles are similar without justifying |< FAE| = |< ADE|",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "ABCD is a rectangle. F ∈ [AB], G ∈ [BC], [FD] ∩ [AG] = {E}, and FD ⊥ AG. |AE| = 12 cm, |EG| = 27 cm, and |FE| = 5 cm."
+ },
+ {
+  "id": "maths-2017-hl-p2-q5-b",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q5-b",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q5(b)",
+  "questionText": "Find |AD|.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |AD| = 31·2 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — |AF| = 13",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One set of corresponding sides identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "ABCD is a rectangle. F ∈ [AB], G ∈ [BC], [FD] ∩ [AG] = {E}, and FD ⊥ AG. |AE| = 12 cm, |EG| = 27 cm, and |FE| = 5 cm. Part (a): Prove that ∆AFE and ∆DAE are similar (equiangular).",
+  "figureKey": "maths-2017-HL-scheme-p035-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q5-c",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q5-c",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q5(c)",
+  "questionText": "∆AFE and ∆AGB are similar. Show that |AB| = 36 cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q5-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |AB| = 3 × 12 = 36 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-c-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — |AG| = 39",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-c-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One set of corresponding sides identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "ABCD is a rectangle. F ∈ [AB], G ∈ [BC], [FD] ∩ [AG] = {E}, and FD ⊥ AG. |AE| = 12 cm, |EG| = 27 cm, and |FE| = 5 cm.",
+  "figureKey": "maths-2017-HL-scheme-p035-i1"
+ },
+ {
+  "id": "maths-2017-hl-p2-q5-d",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q5-d",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q5(d)",
+  "questionText": "Find the area of the quadrilateral GCDE.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q5-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Area = AreaABCD ‒ Area∆AFD −∆AreaABG + Area∆AFE",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 680·4 cm²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — or (method 2) Area = AreaABCD ‒ Area∆ABG ‒ Area∆AED",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-d-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — = 1123·2 − 270 − 172·8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-d-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — or (method 3) Area = Area∆DCG + Area∆GED",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-d-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — = 291·6 + 388·8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-d-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One relevant area formulated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-d-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant equation for area GCDE",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-d-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Relevant individual areas found but fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q5-d-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Area calculated but with one relevant area omitted (except method 3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "ABCD is a rectangle. F ∈ [AB], G ∈ [BC], [FD] ∩ [AG] = {E}, and FD ⊥ AG. |AE| = 12 cm, |EG| = 27 cm, and |FE| = 5 cm. Part (b): Find |AD|. Part (c): ∆AFE and ∆AGB are similar. Show that |AB| = 36 cm.",
+  "figureKey": "maths-2017-HL-scheme-p036-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q6-a",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q6-a",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q6(a)",
+  "questionText": "Take the earth as a sphere with radius 6371 km. Jack is standing on the Cliffs of Moher at the point J which is 214 metres above sea level. He is looking out to sea at a point H on the horizon. Taking A as the centre of the earth, find |JH|, the distance from Jack to the horizon. Give your answer correct to the nearest km.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |AJ| = 6371 + 0·214",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — |JH|² = |AJ|² − |AH|²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q6-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — |JH| = √((6371 + 0·214)² − 6371²)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q6-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 52·21 = 52",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q6-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — |AJ| formulated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q6-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — indication of Pythagoras",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q6-a-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Pythagoras fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2017-hl-p2-q6-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q6-b",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 HL Paper 2 Q6(b)",
+  "questionText": "The Cliffs of Moher, at point C, are at latitude 53° north of the equator. On the diagram, s₁ represents the circle that is at latitude 53°. s₂ represents the equator (which is at latitude 0°). A is the centre of the earth. s₁ and s₂ are on parallel planes. Find the length of the circle s₁. Give your answer correct to the nearest km.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — rS1 = 6371 × cos 53 = 3834·1635",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — lS1 = 2πrS1 = 2π(3834·1635) = 24091",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — cos 53° or sin 47°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q6-b-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — radius of s₁ calculated and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q6-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — length of circle formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Take the earth as a sphere with radius 6371 km.",
+  "figureKey": "maths-2017-HL-scheme-p037-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q7-a",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-a",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q7(a)",
+  "questionText": "Show that the capacity (volume) of the empty space in the cylinder is equal to the capacity of an empty sphere of radius R cm (Figure 2).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Vol of space = Cylinder ‒ 2×Cone",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-a-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — A relevant volume formulated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-a-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Vol of space formulated in terms of π and R",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Two solid cones, each of radius R cm and height R cm are welded together at their vertices and placed in the smallest possible hollow cylinder, as shown in Figure 1 below.",
+  "figureKey": "maths-2017-HL-scheme-p038-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q7-b-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-b-i",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q7(b)(i)",
+  "questionText": "Find |AB|, the radius of the circular surface of the water in the sphere (Figure 4). Give your answer in the form a√b cm, where a, b ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q7-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 12² = 6² + |AB|²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — |AB| = √(12² − 6²) = √108 = 6√3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — indication of Pythagoras",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Two solid cones, each of radius R cm and height R cm are welded together at their vertices and placed in the smallest possible hollow cylinder, as shown in Figure 1 below. Part (b): In the remainder of this question, R = 12 cm. Water is poured into both the cylinder and the sphere to a depth of 6 cm as shown below (Figure 3 and Figure 4 respectively)."
+ },
+ {
+  "id": "maths-2017-hl-p2-q7-b-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-b-ii",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q7(b)(ii)",
+  "questionText": "Find |CD|, the radius of the cone at water level, as shown in Figure 3.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q7-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — r = 6 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — indication of similar triangles",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — indication of a relevant ratio",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — corresponding ratios identified but fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Note — Accept correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Two solid cones, each of radius R cm and height R cm are welded together at their vertices and placed in the smallest possible hollow cylinder, as shown in Figure 1 below. Part (b): In the remainder of this question, R = 12 cm. Water is poured into both the cylinder and the sphere to a depth of 6 cm as shown below (Figure 3 and Figure 4 respectively).",
+  "figureKey": "maths-2017-HL-scheme-p038-i1"
+ },
+ {
+  "id": "maths-2017-hl-p2-q7-b-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-b-iii",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q7(b)(iii)",
+  "questionText": "Verify that the area of the surface of the water in the sphere is equal to the area of the surface of the water in the cylinder.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q7-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Cylinder = π12² − π6² = 108π",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Sphere = π(6√3)² = 108π",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-b-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Surface Area in Fig. 3 substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-b-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Surface Area in Fig 4 substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-b-iii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One Surface Area found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Two solid cones, each of radius R cm and height R cm are welded together at their vertices and placed in the smallest possible hollow cylinder, as shown in Figure 1 below. Part (b): In the remainder of this question, R = 12 cm. Water is poured into both the cylinder and the sphere to a depth of 6 cm as shown below (Figure 3 and Figure 4 respectively). Part (b)(i): Find |AB|, the radius of the circular surface of the water in the sphere (Figure 4). Give your answer in the form a√b cm, where a, b ∈ ℕ. Part (b)(ii): Find |CD|, the radius of the cone at water level, as shown in Figure 3."
+ },
+ {
+  "id": "maths-2017-hl-p2-q7-c",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-c",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q7(c)",
+  "questionText": "The mathematician Cavalieri discovered that, at the same depth, the volume of water in the available space in the cylinder is equal to the volume of water in the sphere. Use this discovery to find the volume of water in the sphere when the depth is 6 cm. Give your answer in terms of π.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q7-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Vol = π(12²)(6)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Vol = 360π cm³",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-c-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Vol of cylinder found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-c-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Vol of truncated cone substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-c-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Vol of one cone found (12 or 6)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-c-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Volume fully substituted but fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q7-c-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Volume of truncated cone found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Two solid cones, each of radius R cm and height R cm are welded together at their vertices and placed in the smallest possible hollow cylinder, as shown in Figure 1 below. Part (b): In the remainder of this question, R = 12 cm. Water is poured into both the cylinder and the sphere to a depth of 6 cm as shown below (Figure 3 and Figure 4 respectively).",
+  "figureKey": "maths-2017-HL-scheme-p038-i2"
+ },
+ {
+  "id": "maths-2017-hl-p2-q8-a-i",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q8-a-i",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q8(a)(i)",
+  "questionText": "In 2015, Mariska was a 15 year old in that country. Her weight was 50 kg. Find the percentage of 15 year olds in that country who weighed more than Mariska.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — μ = 63·5 σ = 10",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — P(z > −1·35) = P(z < 1·35)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·9115",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 91·15%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — μ or σ identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — z found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — P(z < 1·35)and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In 2015, in a particular country, the weights of 15 year olds were normally distributed with a mean of 63·5 kg and a standard deviation of 10 kg.",
+  "figureKey": "maths-2017-HL-scheme-p039-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q8-a-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q8-a-ii",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q8(a)(ii)",
+  "questionText": "In 2015, Kamal was a 15 year old in that country. 1·5% of 15 year olds in that country were heavier than Kamal. Find Kamal’s weight.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — P(x > Z) = 0·015",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — P(x < Z) = 0·985",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Z = 2·17",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x = 85·2 kg",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — identifies 0·985",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — identifies 2·17",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — formula for x fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In 2015, in a particular country, the weights of 15 year olds were normally distributed with a mean of 63·5 kg and a standard deviation of 10 kg.",
+  "figureKey": "maths-2017-HL-scheme-p039-i1"
+ },
+ {
+  "id": "maths-2017-hl-p2-q8-a-iii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q8-a-iii",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q8(a)(iii)",
+  "questionText": "In 2016, 150 of the 15 year olds in that country were randomly selected and their weights recorded. It was found that their weights were normally distributed with a mean weight of 62 kg and a standard deviation of 10 kg. Test the hypothesis, at the 5% level of significance, that the mean weight of 15 year olds, in that country, had not changed from 2015 to 2016. State the null hypothesis and your alternative hypothesis. Give your conclusion in the context of the question.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — n = 150, x̅ = 62, s = 10 kg",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Ho → mean weight has not changed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — H1 → mean weight has changed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = −1·8371 > −1·96",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — Mean weight has not changed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 62 ± 1·96(0·8165)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 62 ± 1·6003",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — [60·3997, 63·6003]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-9",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 63·5 falls within this interval ∴ insufficient evidence to reject the null hypothesis The mean weight has not changed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-10",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — z formulated with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-11",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — states null/alternative hypothesis only",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-12",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — reference to ±1·96",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-13",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — z fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-14",
+    "kind": "point",
+    "verbatim": "High Partial Credit — z = −1·8371 > −1·96",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-a-iii-solution-15",
+    "kind": "point",
+    "verbatim": "High Partial Credit — fails to contextualise the answer",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In 2015, in a particular country, the weights of 15 year olds were normally distributed with a mean of 63·5 kg and a standard deviation of 10 kg.",
+  "figureKey": "maths-2017-HL-scheme-p039-i2"
+ },
+ {
+  "id": "maths-2017-hl-p2-q8-b-i",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q8-b-i",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q8(b)(i)",
+  "questionText": "Write the probability associated with each branch of the tree diagram and the probability of each outcome into the blank boxes provided. Give each answer in the form a/b, where a, b ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q8-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 3 boxes filled correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 10 boxes filled correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In Galway, rain falls in the morning on 1/3 of the school days in the year. When it is raining the probability of heavy traffic is 1/2. When it is not raining the probability of heavy traffic is 1/4. When it is raining and there is heavy traffic, the probability of being late for school is 1/2. When it is not raining and there is no heavy traffic, the probability of being late for school is 1/8. In any other situation the probability of being late for school is 1/5. Some of this information is shown in the tree diagram below.",
+  "figureKey": "maths-2017-HL-scheme-p040-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q8-b-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q8-b-ii",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q8(b)(ii)",
+  "questionText": "On a random school day in Galway, find the probability of being late for school.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q8-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — or 0·2125",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 2 relevant fractions transferred",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 4 relevant fractions identified but fails to complete",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In Galway, rain falls in the morning on 1/3 of the school days in the year. When it is raining the probability of heavy traffic is 1/2. When it is not raining the probability of heavy traffic is 1/4. When it is raining and there is heavy traffic, the probability of being late for school is 1/2. When it is not raining and there is no heavy traffic, the probability of being late for school is 1/8. In any other situation the probability of being late for school is 1/5. Some of this information is shown in the tree diagram below. Part (b)(i): Write the probability associated with each branch of the tree diagram and the probability of each outcome into the blank boxes provided. Give each answer in the form a/b, where a, b ∈ ℕ.",
+  "figureKey": "maths-2017-HL-scheme-p041-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q8-b-iii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q8-b-iii",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q8(b)(iii)",
+  "questionText": "On a random school day in Galway, find the probability that it rained in the morning, given that you were late for school.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q8-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — or 0·5490",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — P(L)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-b-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — P(R ∩ L)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q8-b-iii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In Galway, rain falls in the morning on 1/3 of the school days in the year. When it is raining the probability of heavy traffic is 1/2. When it is not raining the probability of heavy traffic is 1/4. When it is raining and there is heavy traffic, the probability of being late for school is 1/2. When it is not raining and there is no heavy traffic, the probability of being late for school is 1/8. In any other situation the probability of being late for school is 1/5. Some of this information is shown in the tree diagram below. Part (b)(ii): On a random school day in Galway, find the probability of being late for school.",
+  "figureKey": "maths-2017-HL-scheme-p041-i1"
+ },
+ {
+  "id": "maths-2017-hl-p2-q9-a",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q9-a",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q9(a)",
+  "questionText": "Use triangle ECT, to express |TE| in the form √a|CT| metres, where a ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q9-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — √3|CT| = |TE|",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-a-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — tan 60°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-a-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — effort to express |TE| in terms of another side of the triangle",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level.",
+  "figureKey": "maths-2017-HL-scheme-p042-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q9-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q9-b",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q9(b)",
+  "questionText": "Show that |TE| may also be expressed as √((225 + |CT|²)/3) metres.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — tan 30°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-b-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Use of Pythagoras for |DT|",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Effort at expressing |DT | in terms of another side of ∆DET",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level.",
+  "figureKey": "maths-2017-HL-scheme-p042-i1"
+ },
+ {
+  "id": "maths-2017-hl-p2-q9-c",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q9-c",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q9(c)",
+  "questionText": "Hence find |CT|, the distance from the base of the tree to the bank of the river at Conor’s side. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 5·3033 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 5·3 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-c-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — equates both expressions",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-c-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Isolate |CT| in equation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level. Part (a): Use triangle ECT, to express |TE| in the form √a|CT| metres, where a ∈ ℕ. Part (b): Show that |TE| may also be expressed as √((225 + |CT|²)/3) metres.",
+  "figureKey": "maths-2017-HL-scheme-p042-i2"
+ },
+ {
+  "id": "maths-2017-hl-p2-q9-d",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q9-d",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q9(d)",
+  "questionText": "Find |TE|, the height of the tree. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |TE| = √3|CT| = 9·17986 m = 9·2 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-d-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Substitution into formula for |TE|",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level. Part (a): Use triangle ECT, to express |TE| in the form √a|CT| metres, where a ∈ ℕ. Part (c): Hence find |CT|, the distance from the base of the tree to the bank of the river at Conor’s side. Give your answer correct to 1 decimal place."
+ },
+ {
+  "id": "maths-2017-hl-p2-q9-e",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q9-e",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q9(e)",
+  "questionText": "The tree falls across the river and hits the bank at Conor’s side at the point F. Find the maximum size of the angle FTC. Give your answer in degrees, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q9-e-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — θ = 54·7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-e-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution for cos θ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-e-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula for cos θ substituted in terms of |CT|",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level.",
+  "figureKey": "maths-2017-HL-scheme-p043-i0"
+ },
+ {
+  "id": "maths-2017-hl-p2-q9-f",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q9-f",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 HL Paper 2 Q9(f)",
+  "questionText": "If the tree was equally likely to fall in any direction, find the probability that it would hit the bank at Conor’s side, when it falls. Give your answer as a percentage, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-hl-p2-q9-f-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·3038",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-f-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 30·4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-f-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (Answer to part (e))×2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-f-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 360°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-hl-p2-q9-f-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — P fully formulated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level. Part (e): The tree falls across the river and hits the bank at Conor’s side at the point F. Find the maximum size of the angle FTC. Give your answer in degrees, correct to 1 decimal place.",
+  "figureKey": "maths-2017-HL-scheme-p043-i1"
  }
 ]
