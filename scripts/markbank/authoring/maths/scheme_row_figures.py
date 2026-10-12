@@ -77,6 +77,12 @@ AFFECTED = {
         'maths-2018-hl-p2-q4-b', 'maths-2018-hl-p2-q6-a', 'maths-2018-hl-p2-q7-d', 'maths-2018-hl-p2-q8-b-i',
         'maths-2018-hl-p2-q8-c', 'maths-2018-hl-p2-q9-b-iii',
     ],
+    # 2018 Ordinary: model solutions printed as images (the P1 Q2(a) Argand
+    # diagram, Q4(a) tile diagram, Q8(c) graph) and the P1 Q3(a) roots formula,
+    # whose denominator is filtered as a mark cell.
+    (2018, 'ol'): [
+        'maths-2018-ol-p1-q2-a', 'maths-2018-ol-p1-q3-a', 'maths-2018-ol-p1-q4-a', 'maths-2018-ol-p1-q8-c',
+    ],
 }
 BANDS = ['Low Partial Credit', 'Mid Partial Credit', 'High Partial Credit', 'Partial Credit', 'Full Credit',
          'Zero Credit', 'No Credit', 'Note', 'Special Case', 'Misreading']
@@ -126,7 +132,13 @@ def rules(page):
     top = min(y for y, _, _ in segs)
     bounds = sorted({round(x, 0) for y, a, b in segs if y <= top + 25 for x in (a, b)})
     on = lambda x: any(abs(x - b) < 3 for b in bounds)
-    return sorted({y for y, a, b in segs if on(a) and on(b) and b - a > 150})
+    # The table can narrow below the header (2018 Ordinary P1 Q8 ends its lower
+    # rows at a border left of the header's), so a rule may also END on any of the
+    # table's vertical lines; it must still START on a header column boundary,
+    # which is what keeps a table drawn inside a model solution out.
+    edges = vertical_xs(page)
+    ends = lambda x: on(x) or any(abs(x - e) < 3 for e in edges)
+    return sorted({y for y, a, b in segs if on(a) and ends(b) and b - a > 150})
 
 
 def table_x(page):
@@ -176,7 +188,7 @@ def find_row(page, label):
     if not hits:
         raise SystemExit(f'label {label!r}: no ruled row reads that label on page {page.number + 1}')
     i = j = hits[0]
-    while j + 1 < len(rows) and rows[j + 1][2] in ('', want) and rows[j + 1][0] == rows[j][1]:
+    while j + 1 < len(rows) and rows[j + 1][2] in ('', want) and abs(rows[j + 1][0] - rows[j][1]) <= 2:
         j += 1
     if any(h > j for h in hits):
         raise SystemExit(f'label {label!r}: {len(hits)} separate ruled rows read that label on page {page.number + 1}')

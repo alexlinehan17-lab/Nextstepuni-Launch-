@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, 2018 Higher Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1935,
-  "reviewedTasks": 1935,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, 2018 Higher Level Paper 2, 2018 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1972,
+  "reviewedTasks": 1972,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 359,
+  "targetedRegressionTests": 364,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -1298,5 +1298,27 @@
     "schemeRowFigures": "6 parts carry the scheme-row crop (Q4(b), Q6(a), Q7(d), Q8(b)(i), Q8(c), Q9(b)(iii)). scheme_row_figures.py now joins a rule drawn as two abutting segments (needed for Q8(b)(i) and Q9(b)(iii)); 2019 OL and 2018 HL Paper 1 row ranges verified unchanged.",
     "coverageBaseline": "1517/3474 asks covered, 0 orphans, 0 excluded, 1957 open",
     "validation": "Deck generation (1,935 built, 0 dropped), Atlas generation and --check (476 placements), audit --check-reviewed, scheme quote check of all 32 cards, generator re-run rebuilds all 32 cards identically, ten regression files (359/359), typecheck and diff whitespace check passed; all 6 crops opened and checked."
+  },
+  "ordinary2018p1": {
+    "paper": "2018 Ordinary Level Paper 1",
+    "paperFileid": "LC003GLP100EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "newPaper": true,
+    "independentlyReviewedTasks": 37,
+    "existingRuntimeCardsReviewed": 0,
+    "addedRuntimeCards": 37,
+    "historicalRejectsRemaining": 0,
+    "targetedRegressionTests": 364,
+    "previousRuntimeIdsRetained": 1935,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 16,
+    "schemePagesInspected": 21,
+    "scaleNote": "2018 Ordinary Paper 1 ladders: 5B 0,3,5; 5C 0,3,4,5; 5D 0,2,3,4,5; 10C 0,3,8,10; 10D 0,2,6,8,10; 15C 0,4,12,15; 15D 0,3,7,13,15.",
+    "schemeMarkdownAdded": "examiner-reports/maths/schemes/2018-ol.md (pure extraction by the same page-text + block-order method)",
+    "schemeRowFigures": "4 parts carry the scheme-row crop (Q2(a), Q3(a), Q4(a), Q8(c)). scheme_row_figures.py now lets a table rule end on any of the table's vertical borders (the lower rows of the Q8 table end left of the header) and tolerates a thin skipped row between continuation rows; 2019 OL and 2018 HL row ranges verified unchanged.",
+    "coverageBaseline": "1554/3474 asks covered, 0 orphans, 0 excluded, 1920 open",
+    "validation": "Deck generation (1,972 built, 0 dropped), Atlas generation and --check (485 placements), audit --check-reviewed, scheme quote check of all 37 cards, generator re-run rebuilds all 37 cards identically, ten regression files (364/364), typecheck and diff whitespace check passed; all 4 crops opened and checked."
   }
 }

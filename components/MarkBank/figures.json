@@ -36789,5 +36789,53 @@
   "year": 2018,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+ },
+ "maths-2018-OL-scheme-p009-i0": {
+  "src": "/exam-figures/maths/markbank/maths-2018-OL-scheme-p009-i0.png",
+  "md5": "fc8c67610a7bf1722f42f7a69c16ad7a",
+  "alt": "The marking scheme's printed row for 2018 Ordinary Level Paper 1 Q2(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15D (0, 3, 7, 13, 15), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Paper 1 Q2(a)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2018-OL-scheme-p010-i0": {
+  "src": "/exam-figures/maths/markbank/maths-2018-OL-scheme-p010-i0.png",
+  "md5": "e9c79ca6687eef4b50bb1c6218b9d2d4",
+  "alt": "The marking scheme's printed row for 2018 Ordinary Level Paper 1 Q3(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10D (0, 2, 6, 8, 10), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Paper 1 Q3(a)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2018-OL-scheme-p011-i0": {
+  "src": "/exam-figures/maths/markbank/maths-2018-OL-scheme-p011-i0.png",
+  "md5": "a77696edfa322f5f9666ee9c3bafb822",
+  "alt": "The marking scheme's printed row for 2018 Ordinary Level Paper 1 Q4(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5B (0, 3 ,5), listing Partial Credit.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Paper 1 Q4(a)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2018-OL-scheme-p017-i0": {
+  "src": "/exam-figures/maths/markbank/maths-2018-OL-scheme-p017-i0.png",
+  "md5": "dfa8bd5bab41d3329f8810807fded9e2",
+  "alt": "The marking scheme's printed row for 2018 Ordinary Level Paper 1 Q8(c), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 3, 4, 5), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Paper 1 Q8(c)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
  }
 }
