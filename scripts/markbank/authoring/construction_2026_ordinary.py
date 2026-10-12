@@ -18,6 +18,7 @@ import fitz
 from PIL import Image, ImageChops
 
 import construction_corrections
+import construction_figures
 
 R = Path(__file__).resolve().parents[3]
 REVIEW = R / 'scripts/markbank/authored/construction-studies-2026-ordinary-reviewed.json'
@@ -96,13 +97,14 @@ FIGURES = {
     'q7-garden-plan': (S, 12, [145, 347, 486, 790], True),
     'q9-extension': (S, 17, [213, 288, 577, 532], True), 'q9-cladding': (S, 17, [433, 557, 546, 780], True),
 }
+FIGURES['q8-terms'] = construction_figures.composite([(S, 14, [51, 58, 545, 708]), (S, 15, [51, 58, 564, 794]), (S, 16, [51, 58, 561, 781])])
 SOLUTION = {'q1-a': 'q1-scheme', 'q1-b': 'q1-section', 'q1-complete': 'q1-scheme', 'q2-b': 'q2-scheme', 'q2-c': 'q2-upgrade',
             'q2-complete': 'q2-scheme', 'q3-a': 'q3-system', 'q3-b': 'q3-water-butt', 'q3-complete': 'q3-system',
             'q4-b': 'q4-site-plan', 'q4-c': 'q4-site-notice', 'q4-complete': 'q4-site-plan', 'q5-a': 'q5-section',
             'q5-b': 'q5-wall-tie', 'q5-complete': 'q5-section', 'q6-a-scroll-saw': 'q6-precautions',
             'q6-a-spray-finish': 'q6-precautions', 'q6-a': 'q6-precautions', 'q6-b': 'q6-pillar-drill',
             'q6-complete': 'q6-precautions', 'q7-b': 'q7-garden-plan', 'q7-complete': 'q7-garden-plan',
-            'q9-b': 'q9-extension', 'q9-c': 'q9-cladding', 'q9-complete': 'q9-extension'}
+            'q9-b': 'q9-extension', 'q9-c': 'q9-cladding', 'q9-complete': 'q9-extension', 'q8': 'q8-terms'}
 TOPICS = {
     'q1-a': (['cons-1-5', 'cons-2-4', 'cons-3-3', 'cons-4-2', 'cons-3-4', 'cons-6-2'], ['question-one-drawing-questions', 'foundations-floors-walls', 'heat-loss-insulation']),
     'q1-b': (['cons-3-4', 'cons-4-2'], ['foundations-floors-walls']),
@@ -173,7 +175,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     registry = set(re.findall(r"id: '(cons-\d+-\d+)'", (R / 'curriculumRegistry.ts').read_text()))
     library_nodes = {n for nodes in crosswalk.values() for n in nodes}
     figures = {f['key'].removeprefix(FP): f for f in d['questionFigures']}
-    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 24
+    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 25
 
     for key, c in cards.items():
         q = key[1]
@@ -248,17 +250,9 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         whole = ['q8'] if q == '8' else [k for k in cards if k.startswith(f'q{q}-complete')]
         assert whole and {w['id'] for w in d['questionRouteLedgers'][q]['wholeRoutes']} == {PREFIX + k for k in whole}
 
-    for key, f in figures.items():
-        assert (f['source'], f['page'], f['rect'], f['solution']) == FIGURES[key] and f['visuallyInspected'] and f['renderScale'] == 2
-        path = Path(figure_dir) / f"{f['key']}.png"
-        assert hashlib.sha256(path.read_bytes()).hexdigest() == f['sha256'], key
-        if images:
-            with fitz.open(R / f['source']) as pdf:
-                px = pdf[f['page'] - 1].get_pixmap(matrix=fitz.Matrix(2, 2), clip=fitz.Rect(f['rect']), alpha=False)
-            a = Image.frombytes('RGB', (px.width, px.height), px.samples)
-            saved = Image.open(path).convert('RGB')
-            assert a.size == saved.size and ImageChops.difference(a, saved).getbbox() is None, key
-    assert len({f['sha256'] for f in d['questionFigures']}) == 24
+    for key, f in figures.items():  # pixel-exact: a single crop, or a composite of every choice item's scheme panel
+        construction_figures.check(f, FIGURES[key], figure_dir, images)
+    assert len({f['sha256'] for f in d['questionFigures']}) == 25
 
     if integrated:
         prior = json.loads((R / 'docs/markbank-audit/2026-09-28/drafts/construction-2026-ordinary/prior-authored-card-hashes.json').read_text())
@@ -272,7 +266,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     assert gaps == GAPS
     assert d['questionsReviewed'] == list('123456789') and d['unreviewedQuestions'] == []
     return dict(tasks=32, leafTasks=len(LEAF), wholeQuestions=sum(1 for k in cards if '-complete' in k or k == 'q8'),
-                q8AnyFiveOfNine=True, sourceFigures=24, paperComplete=True)
+                q8AnyFiveOfNine=True, sourceFigures=25, paperComplete=True)
 
 
 if __name__ == '__main__':

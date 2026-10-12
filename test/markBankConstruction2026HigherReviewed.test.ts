@@ -16,7 +16,7 @@ const review = JSON.parse(fs.readFileSync('scripts/markbank/authored/constructio
 describe('Construction Studies 2026 Higher source-reviewed Q1–Q10 and alternative Q10', () => {
   it('reconciles original wording, tariffs, every finite route, figures and selection directives', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2026_higher.py'], { encoding: 'utf8' }));
-    expect(result).toEqual({tasks: 41, leafTasks: 29, wholeQuestions: 11, anyNChoiceCards: 3, sourceFigures: 29, paperComplete: true});
+    expect(result).toEqual({tasks: 41, leafTasks: 29, wholeQuestions: 11, anyNChoiceCards: 3, sourceFigures: 30, paperComplete: true});
   });
 
   it('pins every reviewed card identity; each printed choice is one anyN card, and the alternative Q10 is separate', () => {

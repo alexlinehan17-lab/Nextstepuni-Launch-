@@ -12,6 +12,7 @@ allowance (applied once, on the complete question only).
 import copy
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 import fitz
@@ -61,8 +62,16 @@ FIGURES = {
     'q9-table-features': (S, 16, [375, 89, 538, 214], True),
     'q9-finish': (S, 16, [408, 400, 546, 745], True),
 }
+sys.path.insert(0, str(R / 'scripts/markbank/authoring'))
+import construction_figures  # noqa: E402
+FIGURES['q8-terms'] = construction_figures.composite([(S, 12, [51, 351, 544, 705]), (S, 13, [51, 44, 558, 701]), (S, 14, [51, 49, 572, 748]), (S, 15, [51, 49, 543, 350])])
+NEW_FIGURE_ALTS = {FP + k: v for k, v in {'q8-terms': 'SEC marking-scheme notes and sketches for all nine Question 8 terms, in scheme order: box dovetail joint, triple glazing, solar panel, cordless drill, skirting board, compression fitting, natural seasoning, concrete lintel and radon barrier.'}.items()}
 question_figures = []
-for key, (f, page, rect, solution) in FIGURES.items():
+for key, spec in FIGURES.items():
+    if construction_figures.is_composite(spec):  # every choice item's scheme panel, one solution figure
+        question_figures.append(construction_figures.entry(FP + key, spec, HERE / f'{FP}{key}.png'))
+        continue
+    f, page, rect, solution = spec
     with fitz.open(R / f) as pdf:
         px = pdf[page - 1].get_pixmap(matrix=fitz.Matrix(2, 2), clip=fitz.Rect(rect), alpha=False)
     path = HERE / f'{FP}{key}.png'
@@ -450,7 +459,7 @@ Q8 = add('8', '', '', 'Explain, with the aid of notes and freehand sketches, any
                contextNote='Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). '
                + ' '.join(f'{h}: ' + t[5].removeprefix('Such as: ') for h, t in zip(TERM_HEADINGS, TERMS)),
                group=dict(claimMax=5, perOption=10, options=TERM_HEADINGS))],
-         list(dict.fromkeys(n for t in TERMS for n in t[3])), list(dict.fromkeys(a for t in TERMS for a in t[4])), None,
+         list(dict.fromkeys(n for t in TERMS for n in t[3])), list(dict.fromkeys(a for t in TERMS for a in t[4])), 'q8-terms',
          'The union of the nine printed terms: ' + ' '.join(t[6] for t in TERMS), B8, S8, scheme_pages=[12, 13, 14, 15, 24])
 
 # ---------------------------------------------------------------- Q9
@@ -531,7 +540,7 @@ taxonomy_gaps = [
 out = dict(schemaVersion=1, subjectId='construction-studies', year=2015, level='ordinary', lang='ev', sitting='main',
            paperKey='single', fileid='LC029GLP000EV.pdf', component='theory',
            status='Q1–Q9 source-reviewed draft; integration pending.', sourceHashes=HASHES,
-           tasks=tasks, bindings=bindings, questionFigures=question_figures,
+           tasks=tasks, bindings=bindings, questionFigures=question_figures, newFigureAlts=NEW_FIGURE_ALTS,
            addedIds=[t['card']['id'] for t in tasks], selectionLedger=ledger, questionRouteLedgers=route_ledgers,
            taxonomyGaps=taxonomy_gaps, questionsReviewed=list(QUESTIONS), unreviewedQuestions=[],
            sourceIntake='docs/markbank-audit/2026-09-28/drafts/construction-2015-ordinary-intake/source-intake.json',

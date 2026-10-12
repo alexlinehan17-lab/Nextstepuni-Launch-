@@ -7723,6 +7723,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
           "includesPrompt": true
     },
+    figure: {
+          "candId": "construction-studies-2025-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q8-terms.png",
+          "srcHash": "0192d1315259a91abd3b06834c6abd4f",
+          "alt": "SEC marking-scheme notes and sketches for all nine Question 8 terms, in scheme order: raft foundation, stud wall, door threshold, housing joint, laser level, baluster, rainwater butt, damp proof course and room thermostat.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7840,6 +7849,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
           "includesPrompt": true
     },
+    figure: {
+          "candId": "construction-studies-2026-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-OL-q8-terms.png",
+          "srcHash": "20de6edb82ed06228ddc11afdf3bad96",
+          "alt": "SEC marking-scheme notes and sketches for all nine Question 8 terms, in scheme order: triple glazing, wind turbine, butt hinge, mortise and tenon joint, cordless circular saw, carbon monoxide alarm, fascia board, ball valve and smart meter.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7872,6 +7890,15 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
           "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-terms.png",
+          "srcHash": "503ed2fca4e4c50aee79f3ddf7caf4ad",
+          "alt": "SEC marking-scheme notes and sketches for all nine Question 8 terms, in scheme order: box dovetail joint, triple glazing, solar panel, cordless drill, skirting board, compression fitting, natural seasoning, concrete lintel and radon barrier.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
 ];

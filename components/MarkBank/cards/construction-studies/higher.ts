@@ -4397,6 +4397,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
           "includesPrompt": true
     },
+    figure: {
+          "candId": "construction-studies-2025-HL-q10-items",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-items.png",
+          "srcHash": "034a8dcbdcb01073397db890c387c4b1",
+          "alt": "SEC marking-scheme notes and sketches for all three Question 10(a) items: building form, foundation design and space heating energy demand.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8852,6 +8861,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
           "includesPrompt": true
     },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-areas",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-areas.png",
+          "srcHash": "e5d87332f03e06e07c75c0411f8b28ba",
+          "alt": "SEC marking-scheme steps and sketches for all three Question 4(a) areas: the solid stone external wall (two pages), the traditional cut roof and the original sliding sash windows.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8921,6 +8939,15 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
           "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2026-HL-q4-areas",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-areas.png",
+          "srcHash": "e5d87332f03e06e07c75c0411f8b28ba",
+          "alt": "SEC marking-scheme steps and sketches for all three Question 4(a) areas: the solid stone external wall (two pages), the traditional cut roof and the original sliding sash windows.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -9097,6 +9124,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
           "includesPrompt": true
     },
+    figure: {
+          "candId": "construction-studies-2025-HL-q8-locations",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-locations.png",
+          "srcHash": "8c432174e539c5069a7e94b545adab8f",
+          "alt": "SEC marking-scheme details and sketches for all four circled Question 8(b) locations: head of external door, first floor junction with external wall, wallplate level and the MVHR duct protruding through the ceiling.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9133,6 +9169,15 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
           "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2025-HL-q8-locations",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-locations.png",
+          "srcHash": "8c432174e539c5069a7e94b545adab8f",
+          "alt": "SEC marking-scheme details and sketches for all four circled Question 8(b) locations: head of external door, first floor junction with external wall, wallplate level and the MVHR duct protruding through the ceiling.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -9177,10 +9222,10 @@ export const CARDS: SecCard[] = [
           "includesPrompt": true
     },
     figure: {
-          "candId": "construction-studies-2025-HL-q10-orientation",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-orientation.png",
-          "srcHash": "50b4856e3f3296041ff667e9f31643af",
-          "alt": "SEC model orientation and sun-path sketches with the long glazed elevation facing south, and the benefits to the homeowner.",
+          "candId": "construction-studies-2025-HL-q10-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-scheme.png",
+          "srcHash": "ce4d3d9da7d8d029567a888f437997a2",
+          "alt": "SEC marking-scheme notes and sketches for the whole of Question 10: building form, foundation design and space heating energy demand; the preferred orientation and sun path; and two ways to reduce solar overheating.",
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
           "solution": true,
           "lettersVisible": []
@@ -9323,6 +9368,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
           "includesPrompt": true
     },
+    figure: {
+          "candId": "construction-studies-2015-HL-q4-discussion",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-discussion.png",
+          "srcHash": "8c3b7971121c88693d9df4d8aa54ed63",
+          "alt": "SEC marking-scheme notes and sketches for all three Question 4(a) items: respect for local character, reuse of materials and breathable structure.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9360,7 +9414,7 @@ export const CARDS: SecCard[] = [
           "candId": "construction-studies-2015-HL-q4-roof-windows",
           "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-windows.png",
           "srcHash": "01f00367358eb31fb586863aa2feeb82",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof windows. These are sample accepted designs, not extra required choices.",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 4(b): marking-scheme notes and sketches for all three areas: the roof, the sliding sash windows and the suspended timber floor. These are sample accepted designs, not extra required choices.",
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
           "solution": true,
           "lettersVisible": []
@@ -9401,10 +9455,10 @@ export const CARDS: SecCard[] = [
           "includesPrompt": true
     },
     figure: {
-          "candId": "construction-studies-2015-HL-q4-roof-windows",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-windows.png",
-          "srcHash": "01f00367358eb31fb586863aa2feeb82",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof windows. These are sample accepted designs, not extra required choices.",
+          "candId": "construction-studies-2015-HL-q4-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-scheme.png",
+          "srcHash": "5869a5b156e38cbc209ee46738b0cad7",
+          "alt": "SEC marking-scheme notes and sketches for the whole of Question 4: the three eco-refurbishment principles and the upgrading of the roof, sliding sash windows and suspended timber floor.",
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
           "solution": true,
           "lettersVisible": []

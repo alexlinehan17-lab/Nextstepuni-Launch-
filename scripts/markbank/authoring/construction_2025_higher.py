@@ -20,6 +20,7 @@ import fitz
 from PIL import Image, ImageChops
 
 import construction_corrections
+import construction_figures
 
 R = Path(__file__).resolve().parents[3]
 REVIEW = R / 'scripts/markbank/authored/construction-studies-2025-higher-reviewed.json'
@@ -145,6 +146,9 @@ FIGURES = {
     'q10-orientation': (S, 32, [48, 314, 568, 790], True),
     'q10-overheating': (S, 33, PAGE, True), 'q10-alt-original': (P, 7, [45, 490, 580, 725], False),
 }
+FIGURES['q8-locations'] = construction_figures.composite([(S, 27, [51, 290, 553, 793]), (S, 28, [51, 45, 569, 591])])
+FIGURES['q10-items'] = construction_figures.composite([(S, 31, [51, 51, 561, 792]), (S, 32, [51, 50, 571, 316])])
+FIGURES['q10-scheme'] = construction_figures.composite([(S, 31, [51, 51, 561, 792]), (S, 32, [51, 50, 571, 790]), (S, 33, [51, 50, 584, 759])])
 SOLUTION = {'q1-a': 'q1-section', 'q1-b': 'q1-radon', 'q1-complete': 'q1-section',
             'q2-c-deep-trench': 'q2-trench', 'q2-c-attic-insulation': 'q2-attic', 'q2-c-chimney-capping': 'q2-chimney', 'q2-c': 'q2-trench',
             'q2-complete': 'q2-trench',
@@ -153,7 +157,8 @@ SOLUTION = {'q1-a': 'q1-section', 'q1-b': 'q1-radon', 'q1-complete': 'q1-section
             'q5-a': 'q5-calculation', 'q5-b': 'q5-calculation', 'q5-c': 'q5-thickness', 'q5-complete': 'q5-calculation',
             'q6-a': 'q6-low-impact', 'q6-complete': 'q6-low-impact', 'q7-a': 'q7-section', 'q7-b': 'q7-flashing', 'q7-complete': 'q7-section',
             'q9-a': 'q9-wiring', 'q9-b': 'q9-safety', 'q9-complete': 'q9-wiring',
-            'q10-b': 'q10-orientation', 'q10-c': 'q10-overheating', 'q10-complete': 'q10-orientation'}
+            'q10-b': 'q10-orientation', 'q10-c': 'q10-overheating', 'q10-complete': 'q10-scheme',
+            'q8-b': 'q8-locations', 'q8-complete': 'q8-locations', 'q10-a-building-form': 'q10-items'}
 # A Q2(c) activity, named only by reference to 2(b), carries the scheme's own heading after ' — '.
 LABELLED = {f'q2-c-{a}' for a in ACTIVITIES}
 SCHEME_PAGES = {'1': [4, 5, 37], '2': [6, 7, 8, 9, 38], '3': [10, 11, 12, 13, 39], '4': [14, 15, 16, 17, 18, 19, 40],
@@ -219,7 +224,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     crosswalk = json.loads((R / 'data/examTopics/construction-studies-curriculum-crosswalk.json').read_text())
     library_nodes = {n for nodes in crosswalk.values() for n in nodes}
     figures = {f['key'].removeprefix(FP): f for f in d['questionFigures']}
-    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 30
+    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 33
 
     for key, c in cards.items():
         qk = qkey_of(key)
@@ -318,17 +323,9 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
             observed.extend((i + 1, m.start(), m.group()) for m in re.finditer(sel['pattern'], ' '.join(p.get_text().split()), re.I))
     assert observed == [(x['page'], x['start'], x['match']) for x in sel['rows']] and len(observed) == 5
 
-    for key, f in figures.items():
-        assert (f['source'], f['page'], f['rect'], f['solution']) == FIGURES[key] and f['visuallyInspected'] and f['renderScale'] == 2
-        path = Path(figure_dir) / f"{f['key']}.png"
-        assert hashlib.sha256(path.read_bytes()).hexdigest() == f['sha256'], key
-        if images:
-            with fitz.open(R / f['source']) as pdf:
-                px = pdf[f['page'] - 1].get_pixmap(matrix=fitz.Matrix(2, 2), clip=fitz.Rect(f['rect']), alpha=False)
-            a = Image.frombytes('RGB', (px.width, px.height), px.samples)
-            saved = Image.open(path).convert('RGB')
-            assert a.size == saved.size and ImageChops.difference(a, saved).getbbox() is None, key
-    assert len({f['sha256'] for f in d['questionFigures']}) == 30
+    for key, f in figures.items():  # pixel-exact: a single crop, or a composite of every choice item's scheme panel
+        construction_figures.check(f, FIGURES[key], figure_dir, images)
+    assert len({f['sha256'] for f in d['questionFigures']}) == 33
 
     # In-place corrections: same ID and concept ID, hash-linked to the pre-audit card they replace.
     legacy = {c['id']: c for c in json.loads((DRAFTS / 'prior-2025-higher-cards.json').read_text())}
@@ -373,7 +370,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         assert all(construction_corrections.card_hash(by_id[cid]) == fixes[cid]['priorSha256'] for cid in fixes)
     assert d['questionsReviewed'] == [str(n) for n in range(1, 11)] and d['unreviewedQuestions'] == [] and d['alternativeQuestions'] == ['10']
     return dict(tasks=49, addedTasks=31, correctedTasks=18, consolidatedLegacy=3, leafTasks=len(LEAF),
-                wholeQuestions=sum(1 for k in cards if '-complete' in k), anyNChoiceCards=len(CHOICES), sourceFigures=30, paperComplete=True)
+                wholeQuestions=sum(1 for k in cards if '-complete' in k), anyNChoiceCards=len(CHOICES), sourceFigures=33, paperComplete=True)
 
 
 if __name__ == '__main__':

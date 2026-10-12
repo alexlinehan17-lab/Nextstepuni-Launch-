@@ -3811,6 +3811,7 @@
         ],
         "questionFigureKey": "construction-studies-2026-OL-q8-original",
         "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2026-OL-q8-terms",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 8",
@@ -3870,7 +3871,9 @@
       "requiredQuestionFigures": [
         "construction-studies-2026-OL-q8-original"
       ],
-      "requiredSolutionFigures": []
+      "requiredSolutionFigures": [
+        "construction-studies-2026-OL-q8-terms"
+      ]
     },
     {
       "questionNumber": "9",
@@ -5254,6 +5257,46 @@
       "solution": true,
       "sha256": "a865473636c135f29bb6118d897189664a3a339b44d765c384665bb0549b009f",
       "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2026-OL-q8-terms",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2026/LC029GLP000EV.pdf",
+          "page": 14,
+          "rect": [
+            51,
+            58,
+            545,
+            708
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2026/LC029GLP000EV.pdf",
+          "page": 15,
+          "rect": [
+            51,
+            58,
+            564,
+            794
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2026/LC029GLP000EV.pdf",
+          "page": 16,
+          "rect": [
+            51,
+            58,
+            561,
+            781
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "740955aca9e8a9900857fba8155da2c8a6cea5bd0bbcbb7829a30ddb998829f2",
+      "visuallyInspected": true
     }
   ],
   "addedIds": [
@@ -6183,5 +6226,13 @@
       "construction-studies-2026-OL-q8-triple-glazing",
       "construction-studies-2026-OL-q8-wind-turbine"
     ]
-  }
+  },
+  "revisions": [
+    {
+      "cardId": "cons-2026-ol-q8",
+      "priorSha256": "f646e6ceb6b981ede72ee78d98a5e8ad7ae72522eb545b13b39a4be1130fa1d9",
+      "correctedSha256": "2f2bf27b8563a54e1f503ecd55f3ade66ebb1d27b01bc6d285a65b3c5414ad91",
+      "reason": "Solution figure restored: a printed choice is one card, so its solution figure is now one composite of every item's scheme notes and sketches, shown only after reveal (the per-item crops left with the withdrawn per-item cards). Rows, tariff and topics unchanged."
+    }
+  ]
 }

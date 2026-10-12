@@ -50,6 +50,11 @@ PAPERS = {
                         aliases={'cons-2025-hl-q2-a-health-and-safety-officer': 'cons-2025-hl-q2-a-safety-training',
                                  'cons-2025-hl-q2-a-risk-assessment-audit': 'cons-2025-hl-q2-a-safety-training',
                                  'cons-2025-hl-q10-a-foundation-design': 'cons-2025-hl-q10-a-building-form'}),
+    '2025-ordinary': dict(validator='construction_2025_ordinary', draft=DRAFTS / 'construction-2025-ordinary/ordinary-2025-draft.json',
+                          review='construction-studies-2025-ordinary-reviewed.json', bridge='construction-studies-2025-ordinary.json',
+                          fixture='test/fixtures/construction2025Reviewed.ts',
+                          consts={'CONSTRUCTION_2025_ORDINARY_ADDED_IDS': 'added', 'CONSTRUCTION_2025_ORDINARY_CORRECTED_IDS': 'corrected'},
+                          aliases={}),
     # The 2015 Higher redraft also lifts every stem and question text (its earlier review carried authored
     # paraphrase), so its status and bridge reason come from the draft, and its figures are the earlier crops.
     '2015-higher': dict(validator='construction_2015_higher', draft=DRAFTS / 'construction-2015-higher/higher-2015-draft.json',

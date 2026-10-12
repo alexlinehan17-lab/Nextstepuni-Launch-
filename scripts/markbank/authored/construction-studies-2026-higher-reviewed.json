@@ -2278,6 +2278,7 @@
         ],
         "questionFigureKey": "construction-studies-2026-HL-q4-original",
         "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2026-HL-q4-areas",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 4",
@@ -2347,7 +2348,9 @@
       "requiredQuestionFigures": [
         "construction-studies-2026-HL-q4-original"
       ],
-      "requiredSolutionFigures": []
+      "requiredSolutionFigures": [
+        "construction-studies-2026-HL-q4-areas"
+      ]
     },
     {
       "questionNumber": "4",
@@ -2512,6 +2515,7 @@
         ],
         "questionFigureKey": "construction-studies-2026-HL-q4-original",
         "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2026-HL-q4-areas",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 4",
@@ -2599,7 +2603,9 @@
       "requiredQuestionFigures": [
         "construction-studies-2026-HL-q4-original"
       ],
-      "requiredSolutionFigures": []
+      "requiredSolutionFigures": [
+        "construction-studies-2026-HL-q4-areas"
+      ]
     },
     {
       "questionNumber": "5",
@@ -7687,6 +7693,56 @@
       "solution": false,
       "sha256": "c007e1617e9430224dd983d870ec00ff1645b76ca5a489433e077f040fea388c",
       "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2026-HL-q4-areas",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2026/LC029ALP000EV.pdf",
+          "page": 16,
+          "rect": [
+            51,
+            48,
+            584,
+            822
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2026/LC029ALP000EV.pdf",
+          "page": 17,
+          "rect": [
+            51,
+            48,
+            571,
+            693
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2026/LC029ALP000EV.pdf",
+          "page": 18,
+          "rect": [
+            51,
+            48,
+            576,
+            822
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2026/LC029ALP000EV.pdf",
+          "page": 19,
+          "rect": [
+            51,
+            48,
+            570,
+            822
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "d83211d5a73e95440e9d74c3fdc6946cc203c756d3017a2d238dee15f6fc51e3",
+      "visuallyInspected": true
     }
   ],
   "addedIds": [
@@ -8200,8 +8256,11 @@
     {
       "cardId": "cons-2026-hl-q4-a",
       "priorSha256": "737eefd39081f84e4028598f09a0b53f7ce038c1601f39bff062e621742f8a52",
-      "correctedSha256": "ed8f93dc23081a172b5deebcff71913591b28cf414c918a8858c1cc0e2d569ff",
-      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or finite route is kept. Wording only; rows, tariff and topics unchanged."
+      "correctedSha256": "80967ff82fd5b092462cdc0e98705f0fda5746692ea6913229ef67099219c112",
+      "reason": "Solution figure restored: a printed choice is one card, so its solution figure is now one composite of every item's scheme notes and sketches, shown only after reveal (the per-item crops left with the withdrawn per-item cards). Rows, tariff and topics unchanged.",
+      "supersededSha256": [
+        "ed8f93dc23081a172b5deebcff71913591b28cf414c918a8858c1cc0e2d569ff"
+      ]
     },
     {
       "cardId": "cons-2026-hl-q4-b",
@@ -8212,8 +8271,11 @@
     {
       "cardId": "cons-2026-hl-q4-complete",
       "priorSha256": "b6baad2ac5ac396788b39d602a06485e8075986f993f6f392f247c6ea4b0876f",
-      "correctedSha256": "ca61b8cefeaa62bd4c0f2d6d955ba7cecb4d3ca1558163338dfbe8062319859a",
-      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or finite route is kept. Wording only; rows, tariff and topics unchanged."
+      "correctedSha256": "e642013dfcf9359cc4b9c940734c72c82c5b358d19680be4391f26d978e6230f",
+      "reason": "Solution figure restored: a printed choice is one card, so its solution figure is now one composite of every item's scheme notes and sketches, shown only after reveal (the per-item crops left with the withdrawn per-item cards). Rows, tariff and topics unchanged.",
+      "supersededSha256": [
+        "ca61b8cefeaa62bd4c0f2d6d955ba7cecb4d3ca1558163338dfbe8062319859a"
+      ]
     },
     {
       "cardId": "cons-2026-hl-q9-a",

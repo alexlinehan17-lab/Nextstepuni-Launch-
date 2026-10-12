@@ -145,9 +145,12 @@ PANELS = {'q4-original': ([(P, 3, [57, 54, 568, 302])], False),
           'q8-scheme': ([(S, 22, [40, 54, 568, 779]), (S, 23, [57, 54, 567, 327]), (S, 23, [55, 333, 568, 779])], True),
           'q9-original': ([(P, 5, [58, 49, 566, 288])], False), 'q9-scheme': ([(S, 24, [54, 54, 581, 765]), (S, 25, [54, 54, 568, 262])], True),
           'q10-original': ([(P, 5, [58, 302, 572, 486])], False), 'q10-alternative': ([(P, 5, [58, 560, 572, 771])], False),
-          'q10-scheme': ([(S, 25, [54, 264, 570, 776]), (S, 26, [54, 54, 574, 785]), (S, 27, [54, 54, 571, 778]), (S, 28, [43, 54, 575, 786])], True)}
+          'q10-scheme': ([(S, 25, [54, 264, 570, 776]), (S, 26, [54, 54, 574, 785]), (S, 27, [54, 54, 571, 778]), (S, 28, [43, 54, 575, 786])], True),
+          # A printed choice is one card: its solution figure carries every item's scheme drawings.
+          'q4-discussion': ([(S, 11, [51, 49, 563, 761]), (S, 12, [51, 50, 559, 278])], True),
+          'q4-scheme': ([(S, 11, [51, 49, 563, 761]), (S, 12, [51, 50, 559, 770]), (S, 13, [51, 50, 570, 778]), (S, 14, [51, 50, 574, 791])], True)}
 SOLUTION = {'q1-a': 'q1-scheme', 'q1-b': 'q1-access-scheme', 'q1-complete': 'q1-scheme', 'q3-b': 'q3-scheme', 'q3-complete': 'q3-scheme',
-            'q4-b': 'q4-roof-windows', 'q4-complete': 'q4-roof-windows', 'q5-c': 'q5-window-head', 'q5-complete': 'q5-window-head',
+            'q4-a': 'q4-discussion', 'q4-b': 'q4-roof-windows', 'q4-complete': 'q4-scheme', 'q5-c': 'q5-window-head', 'q5-complete': 'q5-window-head',
             'q6-a': 'q6-compact', 'q6-b': 'q6-scheme', 'q6-complete': 'q6-scheme',
             **{k: 'q7-roof-section' for k in ['q7-a', 'q7-b-eaves', 'q7-b-ridge', 'q7-b', 'q7-complete']},
             'q8-a': 'q8-system', 'q8-b': 'q8-collector', 'q8-c-chimney': 'q8-locations', 'q8-c-hotpress': 'q8-locations', 'q8-c': 'q8-locations',
@@ -234,7 +237,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     crosswalk = json.loads((R / 'data/examTopics/construction-studies-curriculum-crosswalk.json').read_text())
     library_nodes = {n for nodes in crosswalk.values() for n in nodes}
     figures = {f['key'].removeprefix(FP): f for f in d['questionFigures']}
-    assert set(figures) == set(SINGLE) | set(PANELS) and len(d['questionFigures']) == 25
+    assert set(figures) == set(SINGLE) | set(PANELS) and len(d['questionFigures']) == 27
 
     for key, c in cards.items():
         qk = qkey_of(key)
@@ -347,7 +350,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         if images:
             a, saved = render(panels), Image.open(path).convert('RGB')
             assert a.size == saved.size and ImageChops.difference(a, saved).getbbox() is None, key
-    assert len({f['sha256'] for f in d['questionFigures']}) == 25
+    assert len({f['sha256'] for f in d['questionFigures']}) == 27
 
     # In-place corrections: same ID, concept ID and tariff, hash-linked to the earlier card they replace.
     legacy = {c['id']: c for c in json.loads((DRAFTS / 'prior-2015-higher-cards.json').read_text())}
@@ -384,7 +387,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         assert all(construction_corrections.card_hash(by_id[cid]) == fixes[cid]['priorSha256'] for cid in fixes)
     assert d['questionsReviewed'] == [str(n) for n in range(1, 11)] and d['unreviewedQuestions'] == [] and d['alternativeQuestions'] == ['10']
     return dict(tasks=48, addedTasks=11, correctedTasks=37, withdrawnTasks=65, leafTasks=len(LEAF),
-                wholeQuestions=sum(1 for k in cards if '-complete' in k), anyNChoiceCards=len(CHOICES), sourceFigures=25, paperComplete=True)
+                wholeQuestions=sum(1 for k in cards if '-complete' in k), anyNChoiceCards=len(CHOICES), sourceFigures=27, paperComplete=True)
 
 
 if __name__ == '__main__':

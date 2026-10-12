@@ -49,6 +49,8 @@ class SourceGuard(unittest.TestCase):
             'missing Atlas association': lambda d: binding(d, 'q8')['atlasTopicIds'].pop(),
             'undeclared taxonomy gap': lambda d: d['taxonomyGaps'].pop(),
             'broken composite topic union': lambda d: binding(d, 'q6-complete')['atlasTopicIds'].pop(),
+            'choice card q8 loses its composite solution figure': lambda d: card(d, 'q8').pop('figureKey'),
+            'composite q8-terms loses an item panel': lambda d: next(f for f in d['questionFigures'] if f['key'] == m.FP + 'q8-terms')['panels'].pop(),
             'unreviewed source crop': lambda d: d['questionFigures'][10].update(visuallyInspected=False),
             'cut off drawing': lambda d: d['questionFigures'][10].update(rect=[80, 108, 480, 300]),
             'solution shown before reveal': lambda d: card(d, 'q3-a').update(questionFigureKey=m.FP + 'q3-system'),

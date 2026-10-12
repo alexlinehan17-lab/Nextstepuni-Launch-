@@ -5687,6 +5687,7 @@
         ],
         "questionFigureKey": "construction-studies-2025-HL-q8-original",
         "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2025-HL-q8-locations",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 8",
@@ -5741,7 +5742,9 @@
       "requiredQuestionFigures": [
         "construction-studies-2025-HL-q8-original"
       ],
-      "requiredSolutionFigures": []
+      "requiredSolutionFigures": [
+        "construction-studies-2025-HL-q8-locations"
+      ]
     },
     {
       "questionNumber": "8",
@@ -5815,6 +5818,7 @@
         ],
         "questionFigureKey": "construction-studies-2025-HL-q8-original",
         "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2025-HL-q8-locations",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 8",
@@ -5888,7 +5892,9 @@
       "requiredQuestionFigures": [
         "construction-studies-2025-HL-q8-original"
       ],
-      "requiredSolutionFigures": []
+      "requiredSolutionFigures": [
+        "construction-studies-2025-HL-q8-locations"
+      ]
     },
     {
       "questionNumber": "9",
@@ -6586,6 +6592,7 @@
         ],
         "questionFigureKey": "construction-studies-2025-HL-q10-original",
         "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2025-HL-q10-items",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 10",
@@ -6645,7 +6652,9 @@
       "requiredQuestionFigures": [
         "construction-studies-2025-HL-q10-original"
       ],
-      "requiredSolutionFigures": []
+      "requiredSolutionFigures": [
+        "construction-studies-2025-HL-q10-items"
+      ]
     },
     {
       "questionNumber": "10",
@@ -7080,7 +7089,7 @@
         ],
         "questionFigureKey": "construction-studies-2025-HL-q10-original",
         "questionFigureIncludesPrompt": true,
-        "figureKey": "construction-studies-2025-HL-q10-orientation",
+        "figureKey": "construction-studies-2025-HL-q10-scheme",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 10",
@@ -7172,7 +7181,7 @@
         "construction-studies-2025-HL-q10-original"
       ],
       "requiredSolutionFigures": [
-        "construction-studies-2025-HL-q10-orientation"
+        "construction-studies-2025-HL-q10-scheme"
       ]
     },
     {
@@ -8815,6 +8824,106 @@
       "solution": false,
       "sha256": "f7cffe013aa9eb347c90ebd3a20bfa30c1abbadaa250b32eed98acfdc73b8e04",
       "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2025-HL-q8-locations",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2025/LC029ALP000EV.pdf",
+          "page": 27,
+          "rect": [
+            51,
+            290,
+            553,
+            793
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2025/LC029ALP000EV.pdf",
+          "page": 28,
+          "rect": [
+            51,
+            45,
+            569,
+            591
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "cf2a74de21bef18f19c76cbd1cedf9f510db7d46cd48486b2914a3b23d09edd6",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2025-HL-q10-items",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2025/LC029ALP000EV.pdf",
+          "page": 31,
+          "rect": [
+            51,
+            51,
+            561,
+            792
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2025/LC029ALP000EV.pdf",
+          "page": 32,
+          "rect": [
+            51,
+            50,
+            571,
+            316
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "26e347eac3c8fe909b60c5b7f93b5f92f903ef87c7835f44d1765dd98eb0d5c7",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2025-HL-q10-scheme",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2025/LC029ALP000EV.pdf",
+          "page": 31,
+          "rect": [
+            51,
+            51,
+            561,
+            792
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2025/LC029ALP000EV.pdf",
+          "page": 32,
+          "rect": [
+            51,
+            50,
+            571,
+            790
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2025/LC029ALP000EV.pdf",
+          "page": 33,
+          "rect": [
+            51,
+            50,
+            584,
+            759
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "1edc43080f5c1a58a90eb9b7336fb598d808c3d81741ae53a557c4855c287b46",
+      "visuallyInspected": true
     }
   ],
   "addedIds": [
@@ -9020,7 +9129,7 @@
     {
       "cardId": "cons-2025-hl-q10-a-building-form",
       "priorSha256": "92dbdbd9e0f565921f75dca8f97350490f313b28070697bb3c21698cba41604d",
-      "correctedSha256": "e1f305198ef94b4c461bede71f574ef02bfd6babb80613d04edc28195142b6f0",
+      "correctedSha256": "331b873823593e7decc035bee05f249b203f55b6f9c3ccccf6fd2f45eef0df9d",
       "priorTotalMarks": 10,
       "correctedTotalMarks": 20,
       "priorTopicId": "cons-6-3",
@@ -9028,7 +9137,8 @@
       "reason": "Now the whole of part (a): one card printing all three items with an any-two group (notes 5 + sketches 5 each, 20), kept under this ID; the foundation-design ID aliases to it (choice is not a route).",
       "supersededSha256": [
         "9df76c233b2444303e4d60d5330d2a27b0ddd5662976bdeeb321ebfe2364816a",
-        "c49a1728ce6ebc3d8491a1575e6bc3898d627de34fac28b035fb3e77b2d71757"
+        "c49a1728ce6ebc3d8491a1575e6bc3898d627de34fac28b035fb3e77b2d71757",
+        "e1f305198ef94b4c461bede71f574ef02bfd6babb80613d04edc28195142b6f0"
       ]
     },
     {
@@ -9497,14 +9607,20 @@
     {
       "cardId": "cons-2025-hl-q8-b",
       "priorSha256": "deab8e63f22688398dbe74c5153058c18d50e7edba046a0cf337a2de1a6d09ef",
-      "correctedSha256": "88e74be7b7c182673d861acee1d79a02dcd7f268c51a00465f0187b0ad6e83a7",
-      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or pair is kept. Wording only; rows, tariff and topics unchanged."
+      "correctedSha256": "4bfa6c15d21c420d889b5a24006f6a7f9a9c0350588013b7372b5d1f277c450d",
+      "reason": "Solution figure restored: a printed choice is one card, so its solution figure is now one composite of every item's scheme notes and sketches, shown only after reveal (the per-item crops left with the withdrawn per-item cards). Rows, tariff and topics unchanged.",
+      "supersededSha256": [
+        "88e74be7b7c182673d861acee1d79a02dcd7f268c51a00465f0187b0ad6e83a7"
+      ]
     },
     {
       "cardId": "cons-2025-hl-q8-complete",
       "priorSha256": "4cc341a4c58ccf2ba89ce35e2ddb5705131ca9850c84e0b2601a969dc4c87186",
-      "correctedSha256": "e05d2807aa43265bf9ac263076aa21004f779050af4003ef8fde09816f5dbad6",
-      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or pair is kept. Wording only; rows, tariff and topics unchanged."
+      "correctedSha256": "f49a4d29d105001b7283b76b66c8a956a7843d48947cc2ba388a314be0a7f835",
+      "reason": "Solution figure restored: a printed choice is one card, so its solution figure is now one composite of every item's scheme notes and sketches, shown only after reveal (the per-item crops left with the withdrawn per-item cards). Rows, tariff and topics unchanged.",
+      "supersededSha256": [
+        "e05d2807aa43265bf9ac263076aa21004f779050af4003ef8fde09816f5dbad6"
+      ]
     },
     {
       "cardId": "cons-2025-hl-q10-c",
@@ -9515,8 +9631,11 @@
     {
       "cardId": "cons-2025-hl-q10-complete",
       "priorSha256": "ea4d1ed0879e83355e42801823fb94849116e6b721d9b93fa840fa36f8783d43",
-      "correctedSha256": "5f7e731058cdd1c122a3c64abbfcd9263fd3a21517e4867f94112ba6b9f6d08d",
-      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or pair is kept. Wording only; rows, tariff and topics unchanged."
+      "correctedSha256": "af0cd29b76d9bf905afcc967780c06d1898f3d5048848b2775b5a171b6b1cdac",
+      "reason": "Solution figure restored: a printed choice is one card, so its solution figure is now one composite of every item's scheme notes and sketches, shown only after reveal (the per-item crops left with the withdrawn per-item cards). Rows, tariff and topics unchanged.",
+      "supersededSha256": [
+        "5f7e731058cdd1c122a3c64abbfcd9263fd3a21517e4867f94112ba6b9f6d08d"
+      ]
     }
   ]
 }

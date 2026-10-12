@@ -4021,6 +4021,7 @@
         ],
         "questionFigureKey": "construction-studies-2025-OL-q8-original",
         "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2025-OL-q8-terms",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 8",
@@ -4080,7 +4081,9 @@
       "requiredQuestionFigures": [
         "construction-studies-2025-OL-q8-original"
       ],
-      "requiredSolutionFigures": []
+      "requiredSolutionFigures": [
+        "construction-studies-2025-OL-q8-terms"
+      ]
     },
     {
       "questionNumber": "9",
@@ -5492,6 +5495,46 @@
       "solution": true,
       "sha256": "5b244c0c291fdf4cf9e4d20c5e4d2f58a350ac37f852ca60343429a80f9b32c3",
       "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2025-OL-q8-terms",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2025/LC029GLP000EV.pdf",
+          "page": 13,
+          "rect": [
+            51,
+            58,
+            580,
+            754
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2025/LC029GLP000EV.pdf",
+          "page": 14,
+          "rect": [
+            51,
+            56,
+            566,
+            791
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2025/LC029GLP000EV.pdf",
+          "page": 15,
+          "rect": [
+            51,
+            57,
+            577,
+            780
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "0079a51dd3ae58ce74c4a75a2a00d0d315cccc2a3c69abe273588855d4423187",
+      "visuallyInspected": true
     }
   ],
   "addedIds": [
@@ -5953,6 +5996,14 @@
       "cardId": "cons-2025-ol-q7-c-advantage",
       "reason": "The pre-audit override replaced the generic \"Advantage\" heading with an unprinted label and an any-one menu. The reviewed card carries the printed \"Advantage\" row (6) with the scheme’s examples, so the build-time override is retired rather than allowed to replace reviewed content.",
       "retiredOverrideSha256": "b63cb53bc5ea6acf8ae1ffdc0d872bdce727256ed4c9738dca42ac53627dfc9c"
+    }
+  ],
+  "revisions": [
+    {
+      "cardId": "cons-2025-ol-q8",
+      "priorSha256": "82238e3d4701a81783bf7ed27d6d0eeb791a2fbc1a1820cbd330d02f6976f5f8",
+      "correctedSha256": "38cb4aeb2386ee3c352ba8fc09ff8f50a0cdd2ee101a97c94ee32a6999b39d7e",
+      "reason": "Solution figure restored: a printed choice is one card, so its solution figure is now one composite of every item's scheme notes and sketches, shown only after reveal (the per-item crops left with the withdrawn per-item cards). Rows, tariff and topics unchanged."
     }
   ]
 }

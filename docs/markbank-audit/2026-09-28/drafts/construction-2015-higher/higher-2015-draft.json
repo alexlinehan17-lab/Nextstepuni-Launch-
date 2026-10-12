@@ -1993,6 +1993,7 @@
         ],
         "questionFigureKey": "construction-studies-2015-HL-q4-original",
         "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q4-discussion",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 4",
@@ -2052,7 +2053,9 @@
       "requiredQuestionFigures": [
         "construction-studies-2015-HL-q4-original"
       ],
-      "requiredSolutionFigures": []
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q4-discussion"
+      ]
     },
     {
       "questionNumber": "4",
@@ -2212,7 +2215,7 @@
         ],
         "questionFigureKey": "construction-studies-2015-HL-q4-original",
         "questionFigureIncludesPrompt": true,
-        "figureKey": "construction-studies-2015-HL-q4-roof-windows",
+        "figureKey": "construction-studies-2015-HL-q4-scheme",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 4",
@@ -2291,7 +2294,7 @@
         "construction-studies-2015-HL-q4-original"
       ],
       "requiredSolutionFigures": [
-        "construction-studies-2015-HL-q4-roof-windows"
+        "construction-studies-2015-HL-q4-scheme"
       ]
     },
     {
@@ -7851,8 +7854,92 @@
       "solution": true,
       "sha256": "facbca1bb83752d56e32a2cf77a05f33f82fbfd6f41e3c7e136b7f3549434224",
       "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q4-discussion",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 11,
+          "rect": [
+            51,
+            49,
+            563,
+            761
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 12,
+          "rect": [
+            51,
+            50,
+            559,
+            278
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "e6ddd5b9f0f1ecb73c11628f892bc58795eab1681bef8ed60a42f94474fe96fb",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q4-scheme",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 11,
+          "rect": [
+            51,
+            49,
+            563,
+            761
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 12,
+          "rect": [
+            51,
+            50,
+            559,
+            770
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 13,
+          "rect": [
+            51,
+            50,
+            570,
+            778
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 14,
+          "rect": [
+            51,
+            50,
+            574,
+            791
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "f3667b3aedc81eb553ccfdaddf3ba201322fd7398977ee81cd5f9dc332a9bffc",
+      "visuallyInspected": true
     }
   ],
+  "newFigureAlts": {
+    "construction-studies-2015-HL-q4-discussion": "SEC marking-scheme notes and sketches for all three Question 4(a) items: respect for local character, reuse of materials and breathable structure.",
+    "construction-studies-2015-HL-q4-scheme": "SEC marking-scheme notes and sketches for the whole of Question 4: the three eco-refurbishment principles and the upgrading of the roof, sliding sash windows and suspended timber floor."
+  },
   "addedIds": [
     "cons-2015-hl-q3-b",
     "cons-2015-hl-q3-complete",

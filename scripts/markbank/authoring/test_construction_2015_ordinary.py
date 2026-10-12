@@ -51,6 +51,8 @@ class SourceGuard(unittest.TestCase):
             'missing constituent topic': lambda d: binding(d, 'q6-a-ear')['canonicalTopicIds'].pop(),
             'undeclared taxonomy gap': lambda d: binding(d, 'q9-c')['canonicalTopicIds'].append('cons-10-4'),
             'broken composite topic union': lambda d: binding(d, 'q9-complete')['atlasTopicIds'].pop(),
+            'choice card q8 loses its composite solution figure': lambda d: card(d, 'q8').pop('figureKey'),
+            'composite q8-terms loses an item panel': lambda d: next(f for f in d['questionFigures'] if f['key'] == m.FP + 'q8-terms')['panels'].pop(),
             'unreviewed source crop': lambda d: d['questionFigures'][3].update(visuallyInspected=False),
             'cut off drawing': lambda d: d['questionFigures'][1].update(rect=[54, 54, 568, 400]),
             'solution shown before reveal': lambda d: card(d, 'q7-a').update(questionFigureKey=m.FP + 'q7-water-butt'),

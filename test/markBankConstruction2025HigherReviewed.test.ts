@@ -19,7 +19,7 @@ describe('Construction Studies 2025 Higher source-reviewed Q1–Q10 and alternat
   it('reconciles original wording, tariffs, every finite route, figures, selection directives and corrections', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2025_higher.py'], { encoding: 'utf8' }));
     expect(result).toEqual({tasks: 49, addedTasks: 31, correctedTasks: 18, consolidatedLegacy: 3, leafTasks: 35, wholeQuestions: 11,
-      anyNChoiceCards: 3, sourceFigures: 30, paperComplete: true});
+      anyNChoiceCards: 3, sourceFigures: 33, paperComplete: true});
   });
 
   it('pins every reviewed card identity: the added tasks, the pre-audit IDs corrected in place, and one card per printed choice', () => {

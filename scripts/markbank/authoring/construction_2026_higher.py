@@ -18,6 +18,7 @@ import fitz
 from PIL import Image, ImageChops
 
 import construction_corrections
+import construction_figures
 
 R = Path(__file__).resolve().parents[3]
 REVIEW = R / 'scripts/markbank/authored/construction-studies-2026-higher-reviewed.json'
@@ -132,6 +133,7 @@ FIGURES = {
     'q10-areas': (S, 35, [48, 52, 568, 803], True), 'q10-retrofit': (S, 36, [48, 52, 568, 803], True),
     'q10-blower-door': (S, 38, [240, 480, 552, 690], True), 'q10-alt-original': (P, 7, [45, 440, 575, 705], False),
 }
+FIGURES['q4-areas'] = construction_figures.composite([(S, 16, [51, 48, 584, 822]), (S, 17, [51, 48, 571, 693]), (S, 18, [51, 48, 576, 822]), (S, 19, [51, 48, 570, 822])])
 SOLUTION = {'q1-a': 'q1-roof-section', 'q1-b': 'q1-airtightness', 'q1-complete': 'q1-roof-section', 'q9-a': 'q9-details', 'q9-complete': 'q9-details',
             'q2-a-entrance-access': 'q2-entrance-access', 'q2-a-bathroom': 'q2-bathroom', 'q2-a': 'q2-entrance-access',
             'q2-b': 'q2-kitchen-plan', 'q2-complete': 'q2-kitchen-plan', 'q3-a': 'q3-option-1', 'q3-b': 'q3-option-2',
@@ -139,7 +141,8 @@ SOLUTION = {'q1-a': 'q1-roof-section', 'q1-b': 'q1-airtightness', 'q1-complete':
             'q5-complete': 'q5-calculation', 'q6-a': 'q6-low-impact', 'q6-b': 'q6-nature', 'q6-complete': 'q6-low-impact',
             'q7-a': 'q7-stairs', 'q7-b': 'q7-stairs', 'q7-complete': 'q7-stairs', 'q8-b': 'q8-stack', 'q8-c': 'q8-traps',
             'q8-complete': 'q8-stack',
-            'q10-a': 'q10-areas', 'q10-b': 'q10-retrofit', 'q10-c': 'q10-blower-door', 'q10-complete': 'q10-retrofit'}
+            'q10-a': 'q10-areas', 'q10-b': 'q10-retrofit', 'q10-c': 'q10-blower-door', 'q10-complete': 'q10-retrofit',
+            'q4-a': 'q4-areas', 'q4-complete': 'q4-areas'}
 SCHEME_PAGES = {'1': [4, 5, 43], '2': [6, 7, 8, 9, 10, 44], '3': [11, 12, 13, 14, 15, 45], '4': [16, 17, 18, 19, 20, 46],
                 '5': [21, 22, 47], '6': [23, 24, 25, 26, 27, 48], '7': [28, 49], '8': [29, 30, 31, 32, 50],
                 '9': [33, 34, 51], '10': [35, 36, 37, 38, 39, 52], '10-alt': [40, 41, 53]}
@@ -197,7 +200,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     crosswalk = json.loads((R / 'data/examTopics/construction-studies-curriculum-crosswalk.json').read_text())
     library_nodes = {n for nodes in crosswalk.values() for n in nodes}
     figures = {f['key'].removeprefix(FP): f for f in d['questionFigures']}
-    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 29
+    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 30
 
     for key, c in cards.items():
         qk = qkey_of(key)
@@ -288,17 +291,9 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
             observed.extend((i + 1, m.start(), m.group()) for m in re.finditer(sel['pattern'], ' '.join(p.get_text().split()), re.I))
     assert observed == [(x['page'], x['start'], x['match']) for x in sel['rows']] and len(observed) == 9
 
-    for key, f in figures.items():
-        assert (f['source'], f['page'], f['rect'], f['solution']) == FIGURES[key] and f['visuallyInspected'] and f['renderScale'] == 2
-        path = Path(figure_dir) / f"{f['key']}.png"
-        assert hashlib.sha256(path.read_bytes()).hexdigest() == f['sha256'], key
-        if images:
-            with fitz.open(R / f['source']) as pdf:
-                px = pdf[f['page'] - 1].get_pixmap(matrix=fitz.Matrix(2, 2), clip=fitz.Rect(f['rect']), alpha=False)
-            a = Image.frombytes('RGB', (px.width, px.height), px.samples)
-            saved = Image.open(path).convert('RGB')
-            assert a.size == saved.size and ImageChops.difference(a, saved).getbbox() is None, key
-    assert len({f['sha256'] for f in d['questionFigures']}) == 29
+    for key, f in figures.items():  # pixel-exact: a single crop, or a composite of every choice item's scheme panel
+        construction_figures.check(f, FIGURES[key], figure_dir, images)
+    assert len({f['sha256'] for f in d['questionFigures']}) == 30
 
     if integrated:
         prior = json.loads((R / 'docs/markbank-audit/2026-09-28/drafts/construction-2026-higher/prior-authored-card-hashes.json').read_text())
@@ -310,7 +305,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         assert all(by_id[t['card']['id']] == t['card'] for t in d['tasks'])
     assert d['questionsReviewed'] == [str(n) for n in range(1, 11)] and d['unreviewedQuestions'] == [] and d['alternativeQuestions'] == ['10']
     return dict(tasks=41, leafTasks=len(LEAF), wholeQuestions=sum(1 for k in cards if '-complete' in k),
-                anyNChoiceCards=len(CHOICES), sourceFigures=29, paperComplete=True)
+                anyNChoiceCards=len(CHOICES), sourceFigures=30, paperComplete=True)
 
 
 if __name__ == '__main__':

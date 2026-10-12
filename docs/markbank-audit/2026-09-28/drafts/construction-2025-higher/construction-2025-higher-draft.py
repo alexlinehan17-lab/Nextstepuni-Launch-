@@ -17,6 +17,7 @@ consolidated into it through a progress alias. Every other prior card stays byte
 import copy
 import hashlib
 import json
+import sys
 import re
 from pathlib import Path
 
@@ -83,8 +84,18 @@ FIGURES = {
     'q10-overheating': (S, 33, PAGE, True),
     'q10-alt-original': (P, 7, [45, 490, 580, 725], False),
 }
+sys.path.insert(0, str(R / 'scripts/markbank/authoring'))
+import construction_figures  # noqa: E402
+FIGURES['q8-locations'] = construction_figures.composite([(S, 27, [51, 290, 553, 793]), (S, 28, [51, 45, 569, 591])])
+FIGURES['q10-items'] = construction_figures.composite([(S, 31, [51, 51, 561, 792]), (S, 32, [51, 50, 571, 316])])
+FIGURES['q10-scheme'] = construction_figures.composite([(S, 31, [51, 51, 561, 792]), (S, 32, [51, 50, 571, 790]), (S, 33, [51, 50, 584, 759])])
+NEW_FIGURE_ALTS = {FP + k: v for k, v in {'q8-locations': 'SEC marking-scheme details and sketches for all four circled Question 8(b) locations: head of external door, first floor junction with external wall, wallplate level and the MVHR duct protruding through the ceiling.', 'q10-items': 'SEC marking-scheme notes and sketches for all three Question 10(a) items: building form, foundation design and space heating energy demand.', 'q10-scheme': 'SEC marking-scheme notes and sketches for the whole of Question 10: building form, foundation design and space heating energy demand; the preferred orientation and sun path; and two ways to reduce solar overheating.'}.items()}
 question_figures = []
-for key, (f, page, rect, solution) in FIGURES.items():
+for key, spec in FIGURES.items():
+    if construction_figures.is_composite(spec):  # every choice item's scheme panel, one solution figure
+        question_figures.append(construction_figures.entry(FP + key, spec, HERE / f'{FP}{key}.png'))
+        continue
+    f, page, rect, solution = spec
     with fitz.open(R / f) as pdf:
         px = pdf[page - 1].get_pixmap(matrix=fitz.Matrix(2, 2), clip=fitz.Rect(rect), alpha=False)
     path = HERE / f'{FP}{key}.png'
@@ -415,9 +426,9 @@ B8b = add('8', 'b', '(b)', STEM8B,
           [dict(id='locations', kind='anyN', verbatim='Best practice design detailing to prevent air leakage at any three of the locations circled', marks=48,
                 contextNote='Any three of the four circled locations, each notes 8 and sketches 8 = 16, showing the continuous airtight layer. ' + ' '.join(f'{loc[1]}: ' + loc[5].removeprefix('Such as: ') for loc in LOCATIONS),
                 group=dict(claimMax=3, perOption=16, options=[loc[1] for loc in LOCATIONS]))],
-          list(dict.fromkeys(n for loc in LOCATIONS for n in loc[3])), list(dict.fromkeys(t for loc in LOCATIONS for t in loc[4])), None,
+          list(dict.fromkeys(n for loc in LOCATIONS for n in loc[3])), list(dict.fromkeys(t for loc in LOCATIONS for t in loc[4])), 'q8-locations',
           'The union of the four circled locations: ' + ' '.join(loc[6] for loc in LOCATIONS), B8, S8)
-compose('8', 'complete', ' — complete', [A8, B8b], None, B8, S8, parts(A8, B8b))
+compose('8', 'complete', ' — complete', [A8, B8b], 'q8-locations', B8, S8, parts(A8, B8b))
 
 # ---------------------------------------------------------------- Q9
 B9 = 'Scheme p45 (printed 9): (a) six items × 5 (4 for drawing, 1 for annotation) + cable size (1) and colour (3) 4 = 34; (b) two safety features × (notes 4 + sketches 4) = 16; (c) two approaches × (2 for point + 3 for discussion) = 10. Complete 60.'
@@ -460,7 +471,7 @@ A10 = add('10', 'a-building-form', '(a)', STEM10A.format(any='any two of ', item
           [dict(id='items', kind='anyN', verbatim='Discuss the importance of any two in Passive House design', marks=20,
                 contextNote='Any two of the three, each notes 5 and sketches 5 = 10. ' + ' '.join(f'{h}: ' + i[2].removeprefix('Such as: ') for h, i in zip(ITEM10_HEADINGS, ITEMS10)),
                 group=dict(claimMax=2, perOption=10, options=ITEM10_HEADINGS))],
-          list(dict.fromkeys(n for i in ITEMS10 for n in i[3])), list(dict.fromkeys(t for i in ITEMS10 for t in i[4])), None,
+          list(dict.fromkeys(n for i in ITEMS10 for n in i[3])), list(dict.fromkeys(t for i in ITEMS10 for t in i[4])), 'q10-items',
           'The union of the three printed items: ' + ' '.join(i[5] for i in ITEMS10), B10, S10)
 B10b = add('10', 'b', '(b)', 'Using notes and freehand sketches, suggest a preferred orientation for the house shown. Show the sun path on your sketch. Discuss two benefits to the homeowner of your preferred orientation.',
            [row('sketch', 'Sketch', 8, 'Freehand sketch of the house showing the preferred orientation and the sun path.'),
@@ -473,7 +484,7 @@ C10 = add('10', 'c', '(c)', 'Solar overheating may occur during the summer month
           [row('method-1', 'Method 1 to reduce solar overheating', 6, 'Notes 3 and sketches 3. Such as: dynamic (electrochromic) glass that tints in response to light, heat or an electrical signal; or mature deciduous trees that block the summer sun and let winter sun through.'),
            row('method-2', 'Method 2 to reduce solar overheating', 6, 'A second, different method: notes 3 and sketches 3. Such as: a brise soleil on the south side; internal or external shutters closed against the midday summer sun; high thermal mass (polished concrete floor, exposed stone walls) to even out temperatures.')],
           ['cons-6-4'], ['passive-design'], 'q10-overheating', 'Controlling solar heat gain (6.4).', B10, S10)
-compose('10', 'complete', ' — complete', [A10, B10b, C10], 'q10-orientation', B10, S10, parts(A10, B10b, C10))
+compose('10', 'complete', ' — complete', [A10, B10b, C10], 'q10-scheme', B10, S10, parts(A10, B10b, C10))
 
 BALT = 'Scheme p47 (printed 11): (a) three discussion points × (5 for point + 5 for discussion) = 30; (b) three guidelines × (5 + 5) = 30. Complete alternative 60.'
 SALT = 'The OR question is an alternative whole Question 10 with its own 60-mark route; it never combines with the Passive House question. Its parts are open responses.'
@@ -557,7 +568,7 @@ consolidated = [dict(cardId=PREFIX + k, aliasOf=PREFIX + v, preCorrectionSha256=
 
 out = dict(schemaVersion=1, subjectId='construction-studies', year=2025, level='higher', lang='ev', sitting='main', paperKey='single',
            fileid='LC029ALP000EV.pdf', component='theory', status='Q1–Q10 and alternative Q10 source-reviewed draft; integration pending.',
-           sourceHashes=HASHES, tasks=tasks, bindings=bindings, questionFigures=question_figures,
+           sourceHashes=HASHES, tasks=tasks, bindings=bindings, questionFigures=question_figures, newFigureAlts=NEW_FIGURE_ALTS,
            addedIds=[t['card']['id'] for t in tasks if not t['correction']], corrections=corrections, consolidatedLegacy=consolidated,
            selectionLedger=selection_ledger, questionRouteLedgers={q: dict(wholeRoutes=w) for q, w in whole.items()}, taxonomyGaps=[],
            questionsReviewed=[str(n) for n in range(1, 11)], unreviewedQuestions=[], alternativeQuestions=['10'])
