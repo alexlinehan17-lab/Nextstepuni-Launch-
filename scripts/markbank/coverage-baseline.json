@@ -345,19 +345,19 @@
     "refsHash": "eb02f6789c4f99c4"
   },
   "geography": {
-    "cards": 1236,
-    "contentHash": "d052d9dc8170443a",
+    "cards": 1303,
+    "contentHash": "34c63d7355f1f55e",
     "coveragePct": 100.0,
-    "covered": 1136,
-    "excluded": 35,
-    "leaves": 1171,
+    "covered": 1202,
+    "excluded": 27,
+    "leaves": 1229,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 24,
       "hash": "7d40addba29edb98"
     },
-    "refsHash": "d2f379e7f4568fdb"
+    "refsHash": "b8d8de47d0f5f054"
   },
   "german": {
     "cards": 264,

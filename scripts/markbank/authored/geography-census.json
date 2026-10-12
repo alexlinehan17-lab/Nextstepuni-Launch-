@@ -12,10 +12,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 1171,
-  "includedBaseTasks": 1136,
-  "excludedBaseTasks": 35,
-  "authoredCards": 1236,
+  "paperBaseTasks": 1229,
+  "includedBaseTasks": 1202,
+  "excludedBaseTasks": 27,
+  "authoredCards": 1303,
   "baseTasks": [
     {
       "id": "geography-2021-hl-p1-q1",
@@ -994,7 +994,16 @@
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q1",
+      "questionRef": "2022 HL Part 1 Q1(i)",
+      "title": "Structure of the Earth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q1-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q1(ii)",
       "title": "Structure of the Earth",
       "status": "authored"
     },
@@ -1003,7 +1012,25 @@
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q2",
+      "questionRef": "2022 HL Part 1 Q2(i)",
+      "title": "Faulting",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q2-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q2(ii)",
+      "title": "Faulting",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q2-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q2(iii)",
       "title": "Faulting",
       "status": "authored"
     },
@@ -1012,7 +1039,34 @@
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q3",
+      "questionRef": "2022 HL Part 1 Q3(i)",
+      "title": "Glaciation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q3-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q3(ii)",
+      "title": "Glaciation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q3-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q3(iii)",
+      "title": "Glaciation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q3-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q3(iv)",
       "title": "Glaciation",
       "status": "authored"
     },
@@ -1021,7 +1075,16 @@
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q4",
+      "questionRef": "2022 HL Part 1 Q4(i)",
+      "title": "Physical Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q4-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q4(ii)",
       "title": "Physical Processes",
       "status": "authored"
     },
@@ -1030,7 +1093,16 @@
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q5",
+      "questionRef": "2022 HL Part 1 Q5(i)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q5-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q5(ii)",
       "title": "Karst Landscapes",
       "status": "authored"
     },
@@ -1039,18 +1111,72 @@
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q6",
+      "questionRef": "2022 HL Part 1 Q6(i)",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q6-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q6(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q6-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q6(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q6-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q6(iv)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
     },
     {
       "id": "geography-2022-hl-p1-q7",
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q7",
+      "questionRef": "2022 HL Part 1 Q7(i)",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q7-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q7(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q7-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q7(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q7-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q7(iv)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
     },
     {
       "id": "geography-2022-hl-p1-q8",
@@ -1059,14 +1185,23 @@
       "part": 1,
       "questionRef": "2022 HL Part 1 Q8",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2022-hl-p1-q9",
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q9",
+      "questionRef": "2022 HL Part 1 Q9(i)",
+      "title": "Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q9-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q9(ii)",
       "title": "Regions",
       "status": "authored"
     },
@@ -1075,7 +1210,34 @@
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q10",
+      "questionRef": "2022 HL Part 1 Q10(i)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q10-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q10(ii)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q10-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q10(iii)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q10-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q10(iv)",
       "title": "Weather",
       "status": "authored"
     },
@@ -1084,7 +1246,34 @@
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q11",
+      "questionRef": "2022 HL Part 1 Q11(i)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q11-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q11(ii)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q11-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q11(iii)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q11-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q11(iv)",
       "title": "Statistical Interpretation",
       "status": "authored"
     },
@@ -1093,7 +1282,34 @@
       "year": 2022,
       "level": "higher",
       "part": 1,
-      "questionRef": "2022 HL Part 1 Q12",
+      "questionRef": "2022 HL Part 1 Q12(i)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q12-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q12(ii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q12-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q12(iii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p1-q12-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2022 HL Part 1 Q12(iv)",
       "title": "Graphical Interpretation",
       "status": "authored"
     },
@@ -1104,7 +1320,7 @@
       "part": 2,
       "questionRef": "2022 HL Part 2 Q1A",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2022-hl-p2-q1b",
@@ -1116,7 +1332,7 @@
       "status": "authored"
     },
     {
-      "id": "geography-2022-hl-p2-q1c",
+      "id": "geography-2022-hl-p2-q1c-mining",
       "year": 2022,
       "level": "higher",
       "part": 2,
@@ -1129,12 +1345,48 @@
       "year": 2022,
       "level": "higher",
       "part": 2,
-      "questionRef": "2022 HL Part 2 Q2A",
+      "questionRef": "2022 HL Part 2 Q2A(i)",
       "title": "Adjustment to Base Level",
       "status": "authored"
     },
     {
-      "id": "geography-2022-hl-p2-q2b",
+      "id": "geography-2022-hl-p2-q2a-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q2A(ii)",
+      "title": "Adjustment to Base Level",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q2a-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q2A(iii)",
+      "title": "Adjustment to Base Level",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q2a-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q2A(iv)",
+      "title": "Adjustment to Base Level",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q2a-v",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q2A(v)",
+      "title": "Adjustment to Base Level",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q2b-route-i-fluvial-landform",
       "year": 2022,
       "level": "higher",
       "part": 2,
@@ -1156,7 +1408,52 @@
       "year": 2022,
       "level": "higher",
       "part": 2,
-      "questionRef": "2022 HL Part 2 Q3A",
+      "questionRef": "2022 HL Part 2 Q3A(i)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q3a-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q3A(ii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q3a-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q3A(iii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q3a-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q3A(iv)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q3a-v",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q3A(v)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q3a-vi",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q3A(vi)",
       "title": "Plate Tectonics",
       "status": "authored"
     },
@@ -1170,7 +1467,7 @@
       "status": "authored"
     },
     {
-      "id": "geography-2022-hl-p2-q3c",
+      "id": "geography-2022-hl-p2-q3c-the-impact-of-dams-on-river-proces",
       "year": 2022,
       "level": "higher",
       "part": 2,
@@ -1210,7 +1507,61 @@
       "year": 2022,
       "level": "higher",
       "part": 2,
-      "questionRef": "2022 HL Part 2 Q5A",
+      "questionRef": "2022 HL Part 2 Q5A(i)",
+      "title": "Agriculture in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q5a-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q5A(ii)",
+      "title": "Agriculture in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q5a-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q5A(iii)",
+      "title": "Agriculture in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q5a-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q5A(iv)",
+      "title": "Agriculture in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q5a-v",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q5A(v)",
+      "title": "Agriculture in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q5a-vi",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q5A(vi)",
+      "title": "Agriculture in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q5a-vii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q5A(vii)",
       "title": "Agriculture in the European Union",
       "status": "authored"
     },
@@ -1237,12 +1588,66 @@
       "year": 2022,
       "level": "higher",
       "part": 2,
-      "questionRef": "2022 HL Part 2 Q6A",
+      "questionRef": "2022 HL Part 2 Q6A(i)",
       "title": "Education in European Countries",
       "status": "authored"
     },
     {
-      "id": "geography-2022-hl-p2-q6b",
+      "id": "geography-2022-hl-p2-q6a-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q6A(ii)",
+      "title": "Education in European Countries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q6a-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q6A(iii)",
+      "title": "Education in European Countries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q6a-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q6A(iv)",
+      "title": "Education in European Countries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q6a-v",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q6A(v)",
+      "title": "Education in European Countries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q6a-vi",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q6A(vi)",
+      "title": "Education in European Countries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q6a-vii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q6A(vii)",
+      "title": "Education in European Countries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q6b-relief-climate",
       "year": 2022,
       "level": "higher",
       "part": 2,
@@ -1266,10 +1671,10 @@
       "part": 2,
       "questionRef": "2022 HL Part 2 Q7A",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
     },
     {
-      "id": "geography-2022-hl-p2-q7b",
+      "id": "geography-2022-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-processing-units",
       "year": 2022,
       "level": "higher",
       "part": 2,
@@ -1291,7 +1696,16 @@
       "year": 2022,
       "level": "higher",
       "part": 2,
-      "questionRef": "2022 HL Part 2 Q8A",
+      "questionRef": "2022 HL Part 2 Q8A(i)",
+      "title": "Irish Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q8a-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q8A(ii)",
       "title": "Irish Trade",
       "status": "authored"
     },
@@ -1311,19 +1725,73 @@
       "part": 2,
       "questionRef": "2022 HL Part 2 Q8C",
       "title": "Tertiary Economic Activities",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2022-hl-p2-q9a",
       "year": 2022,
       "level": "higher",
       "part": 2,
-      "questionRef": "2022 HL Part 2 Q9A",
+      "questionRef": "2022 HL Part 2 Q9A(i)",
       "title": "Measuring Development",
       "status": "authored"
     },
     {
-      "id": "geography-2022-hl-p2-q9b",
+      "id": "geography-2022-hl-p2-q9a-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q9A(ii)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q9a-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q9A(iii)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q9a-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q9A(iv)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q9a-v",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q9A(v)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q9a-vi",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q9A(vi)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q9a-vii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q9A(vii)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q9b-footloose-industries-physical-factors-human-factors",
       "year": 2022,
       "level": "higher",
       "part": 2,
@@ -1347,10 +1815,10 @@
       "part": 2,
       "questionRef": "2022 HL Part 2 Q10A",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
     },
     {
-      "id": "geography-2022-hl-p2-q10b",
+      "id": "geography-2022-hl-p2-q10b-migration-policy-in-the-european-u",
       "year": 2022,
       "level": "higher",
       "part": 2,
@@ -1372,7 +1840,52 @@
       "year": 2022,
       "level": "higher",
       "part": 2,
-      "questionRef": "2022 HL Part 2 Q11A",
+      "questionRef": "2022 HL Part 2 Q11A(i)",
+      "title": "Population Density",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q11a-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q11A(ii)",
+      "title": "Population Density",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q11a-iii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q11A(iii)",
+      "title": "Population Density",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q11a-iv",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q11A(iv)",
+      "title": "Population Density",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q11a-v",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q11A(v)",
+      "title": "Population Density",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q11a-vi",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q11A(vi)",
       "title": "Population Density",
       "status": "authored"
     },
@@ -1399,7 +1912,16 @@
       "year": 2022,
       "level": "higher",
       "part": 2,
-      "questionRef": "2022 HL Part 2 Q12A",
+      "questionRef": "2022 HL Part 2 Q12A(i)",
+      "title": "Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2022-hl-p2-q12a-ii",
+      "year": 2022,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2022 HL Part 2 Q12A(ii)",
       "title": "Population",
       "status": "authored"
     },
@@ -1419,7 +1941,7 @@
       "part": 2,
       "questionRef": "2022 HL Part 2 Q12C",
       "title": "Settlement Distribution",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2022-hl-p2-q13",
@@ -1508,7 +2030,7 @@
       "level": "higher",
       "part": 2,
       "questionRef": "2022 HL Part 2 Q22",
-      "title": "The Atmosphere–Ocean Environment",
+      "title": "The Atmosphere – Ocean Environment",
       "status": "authored"
     },
     {
@@ -1517,7 +2039,7 @@
       "level": "higher",
       "part": 2,
       "questionRef": "2022 HL Part 2 Q23",
-      "title": "The Atmosphere–Ocean Environment",
+      "title": "The Atmosphere – Ocean Environment",
       "status": "authored"
     },
     {
@@ -1526,7 +2048,7 @@
       "level": "higher",
       "part": 2,
       "questionRef": "2022 HL Part 2 Q24",
-      "title": "The Atmosphere–Ocean Environment",
+      "title": "The Atmosphere – Ocean Environment",
       "status": "authored"
     },
     {
@@ -10577,10 +11099,11 @@
     {
       "year": 2022,
       "level": "higher",
-      "paperBaseTasks": 60,
-      "includedBaseTasks": 52,
-      "excludedBaseTasks": 8,
-      "authoredCardsAfterFiniteExpansion": 63
+      "paperBaseTasks": 118,
+      "includedBaseTasks": 118,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 130,
+      "reviewed": true
     },
     {
       "year": 2022,
@@ -10772,7 +11295,7 @@
       "classification": "finite-expanded",
       "variants": 4,
       "kinds": [
-        "none+choose-1-of-4"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -10780,8 +11303,7 @@
       "classification": "finite-expanded",
       "variants": 4,
       "kinds": [
-        "answer-i-or-ii",
-        "answer-i-or-ii+inline-choice"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -10789,7 +11311,15 @@
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
-        "none+choose-1-of-3"
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2022 HL Part 2 Q4C",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
       ]
     },
     {
@@ -10797,7 +11327,7 @@
       "classification": "single-card-choice",
       "variants": 1,
       "kinds": [
-        "none+choose-2-of-3-one-card"
+        "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 2
     },
@@ -10806,7 +11336,7 @@
       "classification": "single-card-choice",
       "variants": 1,
       "kinds": [
-        "none+choose-2-of-3-one-card"
+        "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 2
     },
@@ -10815,7 +11345,7 @@
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
-        "none+inline-choice+choose-2-of-3-one-card"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -10823,7 +11353,7 @@
       "classification": "single-card-choice",
       "variants": 3,
       "kinds": [
-        "none+inline-choice+choose-2-of-3-one-card"
+        "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 6
     },
@@ -10832,7 +11362,7 @@
       "classification": "finite-expanded",
       "variants": 2,
       "kinds": [
-        "none+choose-1-of-2"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -11490,70 +12020,6 @@
       "part": 2,
       "questionRef": "12C",
       "title": "Rural Settlement Patterns",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2022,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "6",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2022,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "7",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2022,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "8",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2022,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "1A",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2022,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "7A",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2022,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "8C",
-      "title": "Tertiary Economic Activities",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2022,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "10A",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2022,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "12C",
-      "title": "Settlement Distribution",
       "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
     },
     {

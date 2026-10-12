@@ -50,6 +50,7 @@ import geography_review_2024_hl as REVIEW_2024_HL
 import geography_review_2024_ol as REVIEW_2024_OL
 import geography_review_2023_hl as REVIEW_2023_HL
 import geography_review_2023_ol as REVIEW_2023_OL
+import geography_review_2022_hl as REVIEW_2022_HL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -84,6 +85,7 @@ REVIEWED = {
     (2024, 'ordinary'): REVIEW_2024_OL,
     (2023, 'higher'): REVIEW_2023_HL,
     (2023, 'ordinary'): REVIEW_2023_OL,
+    (2022, 'higher'): REVIEW_2022_HL,
 }
 
 YEARS = tuple(range(2021, 2027))
@@ -925,6 +927,9 @@ COMPANIONS: dict[int, dict[str, str]] = {
     2024: {'place': 'Bantry', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
            'aerial': 'LC005CLP004EV.jpg'},
     2023: {'place': 'Cavan', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    # 2022's legend and aerial photograph are both published only as JPEGs.
+    2022: {'place': 'Clonmel', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV.jpg',
            'aerial': 'LC005CLP004EV.jpg'},
 }
 

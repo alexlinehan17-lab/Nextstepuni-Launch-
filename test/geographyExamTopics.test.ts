@@ -104,8 +104,10 @@ describe('Geography exam-topic registry', () => {
     // 2024 Higher Part One Q5 and 2023 Higher Part One Q2 (Volcanic Activity),
     // which the reference tagged only with a new-course topic (not examinable
     // before 2028) and the independent 2024 and 2023 reviews file under
-    // earthquakes and volcanoes.
-    expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1320);
+    // earthquakes and volcanoes; and from the 2022 Higher review, Part One Q1
+    // (plate tectonics, again new-course only in the reference) and options
+    // 14, 15, 17, 18, 20, 21, 23 and 24, which the reference omitted.
+    expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1329);
     const taxonomyById = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     for (const paper of papers) {
       for (const question of paper.q) {

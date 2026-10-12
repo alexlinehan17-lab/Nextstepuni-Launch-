@@ -39,6 +39,8 @@ LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
 # to their printed meaning, never deleted, so "ticking (✓)" survives.
 GLYPHS = {
     '\u27a2': '•',  # the arrowhead bullet some schemes print
+    '\uf050': '✓',  # the Wingdings 2 tick the 2022 papers print in "ticking (✓)"
+    '\uf020': ' ',  # the Symbol-font space set after a bullet
     '': '✓', '': '•', '': '•', '': '•', '': '•',
     '­': '', 'ﬀ': 'ff', 'ﬁ': 'fi', 'ﬂ': 'fl',
     'ﬃ': 'ffi', 'ﬄ': 'ffl', '\xa0': ' ', ' ': ' ',
