@@ -25,12 +25,27 @@ describe('Construction Studies 2015 Higher source-reviewed Q1–Q10', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2015_higher_q7_q10.py'], { encoding: 'utf8' }));
     expect(result).toEqual({tasks: 39, sourceFigures: 12, wholeQuestionRoutes: 10, paperComplete: false});
   });
-  it('preserves all previous authored cards unchanged', () => {
+  it('preserves all previous authored cards unchanged, or corrected in place through a recorded later review', () => {
     const prior: SecCard[] = JSON.parse(fs.readFileSync('docs/markbank-audit/2026-09-28/drafts/construction-2015-higher-q1-q2/prior-authored-cards.json', 'utf8'));
     const authored: SecCard[] = JSON.parse(fs.readFileSync('scripts/markbank/authored/construction-studies.json', 'utf8'));
     const now = new Map(authored.map(c => [c.id, c]));
+    // A later source review may correct a pre-audit card under its own ID; it records the
+    // card it replaced (priorCorrectedCards) and the card that replaced it (its task).
+    const corrected = new Map<string, {before: SecCard; after: SecCard}>();
+    for (const name of fs.readdirSync('scripts/markbank/authored').filter(n => /^construction-studies-.*-reviewed\.json$/.test(n))) {
+      const later = JSON.parse(fs.readFileSync(`scripts/markbank/authored/${name}`, 'utf8')) as {priorCorrectedCards?: string; tasks: Array<{correction?: boolean; card: SecCard}>};
+      if (!later.priorCorrectedCards) continue;
+      const before = new Map((JSON.parse(fs.readFileSync(later.priorCorrectedCards, 'utf8')) as SecCard[]).map(c => [c.id, c]));
+      for (const t of later.tasks.filter(task => task.correction)) corrected.set(t.card.id, {before: before.get(t.card.id)!, after: t.card});
+    }
     expect(prior).toHaveLength(505);
-    for (const card of prior) expect(now.get(card.id)).toEqual(card);
+    for (const card of prior) {
+      const fix = corrected.get(card.id);
+      if (fix) {
+        expect(fix.before).toEqual(card);
+        expect(now.get(card.id)).toEqual(fix.after);
+      } else expect(now.get(card.id)).toEqual(card);
+    }
     expect(new Set(authored.map(c => c.id)).size).toBe(authored.length);
   });
   it('ships all reviewed tasks, their source figures and exact topic bindings', async () => {

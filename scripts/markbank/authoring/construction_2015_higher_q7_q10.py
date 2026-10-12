@@ -1,6 +1,7 @@
 """Cross-check the four source-validated draft packages against integrated data."""
 from pathlib import Path
 import json,hashlib,importlib
+import construction_corrections
 R=Path(__file__).resolve().parents[3]
 def read(p):return json.loads(p.read_text())
 def validate():
@@ -12,7 +13,7 @@ def validate():
   for b in d['bindings']:assert bindings[b['cardId']]==b==bridges[b['cardId']]
   for f in d['questionFigures']:
    assert figures[f['key']]==f;entry=manifest[f['key']];image=R/'public'/entry['src'].lstrip('/');assert hashlib.sha256(image.read_bytes()).hexdigest()==f['sha256']and hashlib.md5(image.read_bytes()).hexdigest()==entry['md5']and entry['solution']==f['solution']
- prior=read(R/'docs/markbank-audit/2026-09-28/drafts/construction-2015-higher-q7-q10-integration/prior-authored-cards.json');assert len(prior)==568 and all(by[c['id']]==c for c in prior)
+ prior=read(R/'docs/markbank-audit/2026-09-28/drafts/construction-2015-higher-q7-q10-integration/prior-authored-cards.json');assert len(prior)==568;construction_corrections.assert_prior_cards_preserved({c['id']:construction_corrections.card_hash(c) for c in prior},by)  # byte-identical, or a later review's recorded, hash-linked in-place correction
  assert len(by)==len(auth)and set(bridge['cards'][i]['cardId']for i in range(len(bridge['cards'])))==set(reviewed)and bridge['expectedRuntimeCards']==len(reviewed)
  assert set(map(str,range(1,11)))<=set(main['questionsReviewed'])and set(main['unreviewedQuestions'])==set(map(str,range(1,11)))-set(main['questionsReviewed'])
  return dict(tasks=sum(x['tasks']for x in counts),sourceFigures=sum(x['figures']for x in counts),wholeQuestionRoutes=sum(x['wholeQuestionRoutes']for x in counts),paperComplete=False)
