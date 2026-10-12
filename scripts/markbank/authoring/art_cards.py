@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build the complete 2021–2026 Art Mark Bank corpus.
+"""Build the complete Art Mark Bank corpus, 2020–2026.
 
 The question papers supply the exact prompts.  The marking schemes supply the
-published component allocations (2021–2022) and descriptor bands (2023–2026).
+published component allocations (to 2022) and descriptor bands (2023–2026).
 The separate SEC illustration sheets remain page images from Paper Trail; the
 script records only their official file identity and page number.
 
@@ -19,10 +19,10 @@ files under its own heading.  A choose-N (N >= 2) list is always one card.  The
 four-criterion Section B/C essay remains intact because the SEC applies that
 rubric holistically.
 
-The complete corpus is therefore 446 cards across twelve papers:
+The complete corpus is therefore 565 cards across fourteen papers:
 
-  * Higher Level:   62 + 62 + 26 + 26 + 26 + 26 = 228 cards
-  * Ordinary Level: 57 + 57 + 26 + 26 + 26 + 26 = 218 cards
+  * Higher Level:   62 (2020) + 62 + 62 + 26 + 26 + 26 + 26 = 290 cards
+  * Ordinary Level: 57 (2020) + 57 + 57 + 26 + 26 + 26 + 26 = 275 cards
 
 An audited year (AUDITED_YEARS) shows only the SEC's printed wording under the
 SEC's name: the descriptor bullets, criterion labels, scheme rows and marking
@@ -62,7 +62,7 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'art', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'art', 'authored.json')
 CENSUS_OUT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
 
-YEARS = tuple(range(2021, 2027))
+YEARS = tuple(range(2020, 2027))
 
 # A label printed inside an answer box ("Name of artwork:", "Heading 1:")
 # marks where an answer goes for an ask the question already makes, so it is
@@ -98,12 +98,14 @@ ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
 # Years whose SEC-attributed strings are all lifted from the printed page and
 # gated by tests/test_art_sec_wording.py: every year. The factory has no
 # written fallback, so a new year must join this tuple to build at all.
-AUDITED_YEARS = (2021, 2022, 2023, 2024, 2025, 2026)
+AUDITED_YEARS = (2020, 2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
 
 EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
+    (2020, 'higher'): 20,
+    (2020, 'ordinary'): 21,
     (2021, 'higher'): 20,
     (2021, 'ordinary'): 21,
     (2022, 'higher'): 20,
@@ -119,6 +121,8 @@ EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
 }
 
 EXPECTED_CARDS_BY_YEAR_LEVEL = {
+    (2020, 'higher'): 62,
+    (2020, 'ordinary'): 57,
     (2021, 'higher'): 62,
     (2021, 'ordinary'): 57,
     (2022, 'higher'): 62,
@@ -140,6 +144,44 @@ EXPECTED_CARDS_BY_YEAR_LEVEL = {
 # label is printed in the question, and the first option's key keeps the
 # card's stable id (the withdrawn per-option ids are aliased in cardAliases.ts).
 PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
+    (2020, 'higher', 7): (
+        ('nathaniel-hone-the-elder', 'Nathaniel Hone the Elder (1718-1784)'),
+        ('sir-john-lavery', 'Sir John Lavery (1856-1941)'),
+        ('roderic-oconor', 'Roderic O’Conor (1860-1940)'),
+        ('eileen-gray', 'Eileen Gray (1878-1976)'),
+        ('louis-le-brocquy', 'Louis le Brocquy (1916-2012)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+        ('colin-davidson', 'Colin Davidson (b.1968)'),
+    ),
+    (2020, 'higher', 14): (
+        ('gian-lorenzo-bernini', 'Gian Lorenzo Bernini (1598-1680)'),
+        ('canaletto', 'Canaletto (1697-1768)'),
+        ('gustave-courbet', 'Gustave Courbet (1819-1877)'),
+        ('claude-monet', 'Claude Monet (1840-1926)'),
+        ('lucian-freud', 'Lucian Freud (1922-2011)'),
+    ),
+    (2020, 'higher', 15): (
+        ('neoclassicism', 'Neoclassicism'),
+        ('romanticism', 'Romanticism'),
+        ('symbolism', 'Symbolism'),
+        ('the-bauhaus', 'The Bauhaus'),
+    ),
+    (2020, 'ordinary', 7): (
+        ('james-barry', 'James Barry (1741-1806)'),
+        ('frederic-william-burton', 'Frederic William Burton (1816-1900)'),
+        ('sarah-purser', 'Sarah Purser (1848-1943)'),
+        ('harry-clarke', 'Harry Clarke (1889-1931)'),
+        ('norah-mcguinness', 'Norah McGuinness (1901-1980)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+        ('geraldine-oneill', 'Geraldine O’Neill (b.1971)'),
+    ),
+    (2020, 'ordinary', 14): (
+        ('lamentation-of-christ', '‘Lamentation of Christ’ by Giotto (c.1267-1337)'),
+        ('david', '‘David’ by Donatello (c.1386-1466)'),
+        ('raft-of-the-medusa', '‘The Raft of the Medusa’ by Théodore Géricault (1791-1824)'),
+        ('olympia', '‘Olympia’ by Édouard Manet (1832-1883)'),
+        ('persistence-of-memory', '‘The Persistence of Memory’ by Salvador Dalí (1904-1989)'),
+    ),
     (2021, 'higher', 4): (
         ('castletown-house', 'Castletown House'),
         ('casino-at-marino', 'Casino at Marino'),
@@ -253,6 +295,21 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
 # Irish Q7 artists, the Georgian buildings. A list in this table must span at
 # least two headings; the build fails on one that does not.
 OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
+    # 2020: Canaletto's Venice (18th century) under the Baroque heading
+    # (c. 1600-1700s); Lucian Freud's work largely after 1960; Neoclassicism,
+    # Romanticism and Gericault (Romanticism) have no heading of their own.
+    (2020, 'higher', 14): {
+        'gian-lorenzo-bernini': 'art-4-2', 'canaletto': 'art-4-2', 'gustave-courbet': 'art-4-3',
+        'claude-monet': 'art-4-3', 'lucian-freud': 'art-4-5',
+    },
+    (2020, 'higher', 15): {
+        'neoclassicism': 'art-4-6', 'romanticism': 'art-4-6', 'symbolism': 'art-4-3',
+        'the-bauhaus': 'art-4-4',
+    },
+    (2020, 'ordinary', 14): {
+        'lamentation-of-christ': 'art-4-1', 'david': 'art-4-1', 'raft-of-the-medusa': 'art-4-6',
+        'olympia': 'art-4-3', 'persistence-of-memory': 'art-4-4',
+    },
     (2021, 'higher', 14): {
         'jan-van-eyck': 'art-4-1', 'el-greco': 'art-4-1', 'ingres': 'art-4-6',
         'paul-gauguin': 'art-4-3', 'henry-moore': 'art-4-4',
@@ -324,6 +381,14 @@ REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
 # Page numbers are one-based within the separate official illustration PDF.
 # Every binding below was checked visually against the rendered sheet.
 ILLUSTRATION_PAGES: dict[tuple[int, str], dict[int, int]] = {
+    (2020, 'higher'): {
+        2: 1, 3: 1, 5: 1, 6: 1, 17: 1, 18: 1, 19: 1,
+        9: 2, 10: 2, 11: 2, 12: 2,
+    },
+    (2020, 'ordinary'): {
+        1: 1, 2: 1, 5: 1, 6: 1, 17: 1, 18: 1, 20: 1, 21: 1,
+        9: 2, 10: 2, 11: 2, 13: 2,
+    },
     (2021, 'higher'): {
         2: 1, 5: 1, 6: 1, 17: 1, 20: 1,
         10: 2, 11: 2, 12: 2, 13: 2,
@@ -383,6 +448,31 @@ for _year, _level, _topics in (
 ):
     for _number, _topic in enumerate(_topics, start=1):
         CURRENT_SHORT_TOPICS[(_year, _level, _number)] = _topic
+
+# 2010-2020: one reviewed heading per question, checked against the printed
+# dates and works and against the Topic Atlas (the gate requires the Atlas
+# to give the question this heading; where the reference contradicts the
+# paper, the Atlas builder records a reviewed anomaly).
+LEGACY_QUESTION_TOPICS: dict[tuple[int, str], tuple[str, ...]] = {
+    (2020, 'higher'): (
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4',
+        # Q6 'Fionn Mac Cumhaill and his Hounds' by Lynn Kirkham, a
+        # contemporary public sculpture; Q7 the Irish-artist list (one card).
+        'art-5-5', 'art-5-4',
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-1', 'art-4-3', 'art-4-4',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        'art-6-0', 'art-6-1', 'art-6-3', 'art-6-3', 'art-6-1',
+    ),
+    (2020, 'ordinary'): (
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4',
+        # Q6 'W. B. Yeats' by Rowan Gillespie (b.1953); Q7 the Irish-artist list.
+        'art-5-5', 'art-5-4',
+        # Q11 David's 'Oath of the Horatii', Neoclassical: no heading of its own.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-6', 'art-4-3', 'art-4-4',
+        'art-4-6',  # Q14: per option (OPTION_TOPICS)
+        'art-6-3', 'art-6-0', 'art-6-3', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-1',
+    ),
+}
 
 LEGACY_TOPIC_OVERRIDES = {
     (2021, 'higher', 2): 'art-5-0',
@@ -521,12 +611,27 @@ def expected_numbers(year: int, level: str) -> list[int]:
     return list(range(1, EXPECTED_QUESTIONS_BY_YEAR_LEVEL[(year, level)] + 1))
 
 
-def paper_fileid(level: str) -> str:
-    return f"LC014{'A' if level == 'higher' else 'G'}LP000EV"
+# The written History and Appreciation paper and its illustration sheet carry
+# different SEC component codes over the years (the practical components took
+# the others until 2018): checked against the corpus and the Paper Trail index.
+def written_component(year: int) -> str:
+    return '000' if year == 2010 or year == 2019 or year >= 2021 else '013'
 
 
-def illustration_fileid(level: str) -> str:
-    return f"LC014{'A' if level == 'higher' else 'G'}LP004BV"
+def illustration_component(year: int) -> str:
+    if year == 2010:
+        return '013'
+    return 'C00' if year <= 2018 else '004'
+
+
+def paper_fileid(year: int, level: str) -> str:
+    return f"LC014{'A' if level == 'higher' else 'G'}LP{written_component(year)}EV"
+
+
+def illustration_fileid(year: int, level: str) -> str:
+    # The 2021+ sheets are bilingual (BV); earlier ones are English editions.
+    suffix = 'BV' if year >= 2021 else 'EV'
+    return f"LC014{'A' if level == 'higher' else 'G'}LP{illustration_component(year)}{suffix}"
 
 
 def is_furniture(line: str, year: int) -> bool:
@@ -690,10 +795,15 @@ def legacy_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
             if not rows:
                 continue
             heading = ' '.join(nonempty_cells(rows[0]))
-            match = re.search(r'Q\.(\d{1,2})\b', heading)
+            # "Q.1", "Q. 10" (2020), "Q1" and "Q 16" (2010-2013), heading the
+            # Marks (and Notes) columns; a practical-component table such as
+            # "Q1 – LETTERING AND CALLIGRAPHY" is not a written-paper question.
+            match = re.fullmatch(r'Q\.?\s*(\d{1,2})(?:\s+Marks(?:\s+Notes)?)?', heading)
             if not match:
                 continue
             number = int(match.group(1))
+            if number in found:
+                raise AssertionError(f'{year} {level}: two scheme tables for Q{number}')
             criteria: list[dict[str, Any]] = []
             current: dict[str, Any] | None = None
             for row_index, row in enumerate(rows[1:], start=1):
@@ -847,6 +957,11 @@ def topic_for(year: int, level: str, number: int, prompt: str) -> str:
         return LONG_TOPIC[number]
     if year >= 2023:
         return CURRENT_SHORT_TOPICS[(year, level, number)]
+    if (year, level) in LEGACY_QUESTION_TOPICS:
+        topics = LEGACY_QUESTION_TOPICS[(year, level)]
+        if len(topics) != EXPECTED_QUESTIONS_BY_YEAR_LEVEL[(year, level)]:
+            raise AssertionError(f'{year} {level}: {len(topics)} reviewed topics')
+        return topics[number - 1]
     override = LEGACY_TOPIC_OVERRIDES.get((year, level, number))
     if override:
         return override
@@ -1083,26 +1198,70 @@ def split_printed_tasks(prompt: str) -> list[dict[str, Any]]:
     }]
 
 
+GROUPING_STOP = set('''description discussion describe discuss with reference your answer using
+following headings this that these those from have their there which what when where about refer referring
+given illustrated illustration accompanying sheet part parts'''.split())
+
+
+def grouping_words(text: str) -> set[str]:
+    out = set()
+    for word in re.findall(r'[^\W\d_]{4,}', text.lower()):
+        word = {'briefly': 'brief', 'names': 'name', 'named': 'name', 'works': 'work'}.get(word, word)
+        if word not in GROUPING_STOP:
+            out.add(word)
+    return out
+
+
+def is_sketch_component(criterion: dict[str, Any]) -> bool:
+    return bool(re.match(r'(?:Sketches|Illustrations?)\b', ' '.join(criterion['guidance']).strip(), re.I))
+
+
 def legacy_criterion_groups(criteria: list[dict[str, Any]],
-                            unit_count: int) -> list[list[dict[str, Any]]]:
+                            units: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
     """Map the outgoing scheme's named components to printed task boundaries.
 
-    The final component is the sketches allocation and travels with the final
-    printed task, where ``Illustrate your answer`` appears.  Multi-component
-    first tasks (for example statement + two monuments) remain one card because
-    those components mark one continuous printed directive.
+    The components are printed in task order, so each printed task takes a
+    consecutive run of them and every task takes at least one. The run
+    boundaries are chosen to maximise the words each component shares with
+    its own task's printed text ("Brief description and discussion of one
+    other ..." with "Briefly describe and discuss one other ..."); the
+    sketches (or illustrations) allocation travels with the final task, where
+    "Illustrate your answer" is printed. A first task marked by several
+    components (statement + two monuments) remains one card.
     """
-    shape = (unit_count, len(criteria))
-    boundaries = {
-        (1, 4): ((0, 4),),
-        (2, 3): ((0, 1), (1, 3)),
-        (2, 4): ((0, 2), (2, 4)),
-        (2, 5): ((0, 3), (3, 5)),
-        (3, 4): ((0, 1), (1, 2), (2, 4)),
-    }.get(shape)
-    if boundaries is None:
-        raise AssertionError(f'unmapped legacy Art task/criterion shape {shape}')
-    return [criteria[start:end] for start, end in boundaries]
+    n, m = len(units), len(criteria)
+    if m < n:
+        raise AssertionError(f'{m} Art scheme components for {n} printed tasks')
+    texts = [grouping_words(unit['questionText']) for unit in units]
+
+    def score(ci: int, ui: int) -> int:
+        criterion = criteria[ci]
+        if is_sketch_component(criterion):
+            return 100 if ui == n - 1 else -100
+        return len(grouping_words(' '.join(criterion['guidance'])) & texts[ui])
+
+    negative = -10 ** 9
+    best = [[negative] * n for _ in range(m)]
+    back: list[list[int | None]] = [[None] * n for _ in range(m)]
+    best[0][0] = score(0, 0)
+    for ci in range(1, m):
+        for ui in range(n):
+            candidates = [(best[ci - 1][ui], ui)]
+            if ui > 0:
+                candidates.append((best[ci - 1][ui - 1], ui - 1))
+            value, previous = max(candidates)
+            if value > negative:
+                best[ci][ui] = value + score(ci, ui)
+                back[ci][ui] = previous
+    if best[m - 1][n - 1] <= negative:
+        raise AssertionError('Art scheme components cannot cover every printed task')
+    assign = [0] * m
+    ui = n - 1
+    for ci in range(m - 1, -1, -1):
+        assign[ci] = ui
+        if ci:
+            ui = back[ci][ui]
+    return [[criteria[ci] for ci in range(m) if assign[ci] == k] for k in range(n)]
 
 
 def compact_requirement(question_text: str) -> str:
@@ -1124,6 +1283,9 @@ def printed_requirements(question_text: str, assessment: str, stem: str | None =
             for stem_line in (stem or '').split('\n') if not stem_line.startswith('• ')
             for sentence in re.split(r'(?<=[.?!])\s+', stem_line)
             if re.match(r'^(?:Name|Identify|Choose|Select)\b', sentence)]
+    # The option a per-option card practises, where the stem prints the list.
+    asks += [stem_line[2:] for stem_line in (stem or '').split('\n')
+             if chosen and stem_line.startswith('• ') and stem_line[2:].startswith(chosen)]
     # A tick-box options line is where the answer goes, not an ask; a printed
     # option of a choice ("• Paolo Uccello (c.1397-1475)") is not an ask
     # either, except the option a per-option card practises.
@@ -1162,7 +1324,7 @@ def source_material(year: int, level: str, number: int) -> dict[str, Any] | None
         'label': f'ILLUSTRATION SHEET · Q{number}',
         'title': f'Official illustrations for Question {number}',
         'pages': [page],
-        'sourceFileid': illustration_fileid(level),
+        'sourceFileid': illustration_fileid(year, level),
         'attribution': (
             'Official State Examinations Commission illustration sheet; '
             'individual artwork credits are printed on the sheet.'),
@@ -1207,7 +1369,7 @@ def make_outer_card(year: int, level: str, number: int, prompt: dict[str, Any],
         'questionRef': ref,
         'questionText': prompt['questionText'],
         'paperPage': prompt['paperPage'],
-        'paperFileid': paper_fileid(level),
+        'paperFileid': paper_fileid(year, level),
         'totalMarks': total_marks,
         'schemePage': scheme_page,
         'topicId': topic_for(year, level, number, prompt['questionText']),
@@ -1248,7 +1410,7 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
         # The first option's key keeps the established id of a card that was
         # once built per option (2021–2025); a choice first built as one card
         # has the plain question id.
-        keep_slug = choices and year <= 2025
+        keep_slug = choices and 2021 <= year <= 2025
         variants = ((choices[0][0], None),) if keep_slug else ((None, None),)
     expanded: list[dict[str, Any]] = []
 
@@ -1264,7 +1426,7 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
                 raise AssertionError(f"{outer['id']}: Section A must split into (a) and (b)")
             criterion_groups = [[criterion] for criterion in outer['criteria']]
         else:
-            criterion_groups = legacy_criterion_groups(outer['criteria'], len(units))
+            criterion_groups = legacy_criterion_groups(outer['criteria'], units)
 
         if len(units) != len(criterion_groups):
             raise AssertionError(
@@ -1298,11 +1460,10 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
                 question_text = unit['questionText']
                 suffix_parts: list[str] = []
                 # Preserve the established id grammar: an unsplit fixed-choice
-                # card uses the choice slug directly, while an unsplit current
-                # long response keeps the numbered question's base id.
-                if (suffix != 'response'
-                        or (not choice_slug
-                            and outer['assessment'] != 'current-long-descriptors')):
+                # card uses the choice slug directly, and an unsplit response
+                # (a current long question, or a 2010-2020 question printed as
+                # one task) keeps the numbered question's base id.
+                if suffix != 'response':
                     suffix_parts.append(suffix)
                 if choice_slug:
                     suffix_parts.append(choice_slug)
@@ -1394,7 +1555,7 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
             papers.append({
                 'year': year,
                 'level': level,
-                'paperFileid': paper_fileid(level),
+                'paperFileid': paper_fileid(year, level),
                 'expectedCards': expected,
                 'cards': paper_cards,
             })
@@ -1408,7 +1569,7 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
 
     runtime = {
         'subjectId': 'art',
-        'corpus': 'All separately marked written-examination tasks, 2021–2026; a printed choice is one card',
+        'corpus': 'All separately marked written-examination tasks, 2020–2026; a printed choice is one card',
         'cardCount': len(cards),
         'auditedYears': list(AUDITED_YEARS),
         # Lifted from each audited year's scheme by art_printed.py; the cards

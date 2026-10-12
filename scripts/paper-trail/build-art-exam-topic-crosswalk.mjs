@@ -251,6 +251,36 @@ const REVIEWED_REFERENCE_ANOMALIES = [
     topicId: 'art-ordinary-europe-romanesque-and-gothic',
     evidence: "Q8 is the 'Last Judgement' by Gislebertus (12th century), illustrated on the accompanying sheet: a 12th-century tympanum is Romanesque and Gothic, not The Renaissance (c. 1300-1600s).",
   },
+  {
+    level: 'higher', year: 2020, n: '6',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-post-1960s-art-in-ireland',
+    evidence: "Q6 is 'Fionn Mac Cumhaill and his Hounds' by Lynn Kirkham, illustrated on the accompanying sheet: a contemporary public sculpture is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2020, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is the sculpture 'W. B. Yeats' by Rowan Gillespie (b.1953), illustrated on the accompanying sheet: the work of an artist born in 1953 is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2020, n: '11',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-section-b-generic-questions',
+    evidence: "Q11 is the 'Oath of the Horatii' by Jacques-Louis David (1748-1825), \"an example of Neoclassical painting\": Neoclassicism is neither The Renaissance (c. 1300-1600s) nor The Baroque (c. 1600-1700s) and has no heading of its own, so it files under Section B: Generic Questions.",
+  },
+  {
+    level: 'ordinary', year: 2020, n: '11',
+    referenceTopicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    topicId: 'art-ordinary-section-b-generic-questions',
+    evidence: "Q11 is the 'Oath of the Horatii' by Jacques-Louis David (1748-1825), \"an example of Neoclassical painting\": Neoclassicism is neither The Renaissance (c. 1300-1600s) nor The Baroque (c. 1600-1700s) and has no heading of its own, so it files under Section B: Generic Questions.",
+  },
+  {
+    level: 'ordinary', year: 2020, n: '12',
+    referenceTopicId: 'art-ordinary-europe-modernism-c-1900-1960s',
+    topicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    evidence: "Q12 is \"'The Starry Night' by Vincent van Gogh (1853-1890) is an example of Post-Impressionist painting\": the paper itself names it Post-Impressionism (c. 1850-1900s), not Modernism (c. 1900-1960s).",
+  },
 ];
 const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
   item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
@@ -355,10 +385,15 @@ const unusedAnomalies = REVIEWED_REFERENCE_ANOMALIES.filter(item => item.seen !=
 if (unusedAnomalies.length) {
   throw new Error(`Art reviewed anomalies must each match one association: ${unusedAnomalies.map(item => `${item.year} ${item.level} Q${item.n}`).join(', ')}`);
 }
-const reviewedTopicsByCard = new Map(REVIEWED_REFERENCE_ANOMALIES.map(item => {
+const reviewedTopicsByCard = new Map();
+for (const item of REVIEWED_REFERENCE_ANOMALIES) {
   const paper = EnglishWrittenPaper(item.level, item.year);
-  return [[item.level, item.year, paper.fileid, item.n].join('|'), [topicIndex.get(item.topicId)]];
-}));
+  const key = [item.level, item.year, paper.fileid, item.n].join('|');
+  const indexes = reviewedTopicsByCard.get(key) ?? [];
+  const index = topicIndex.get(item.topicId);
+  if (!indexes.includes(index)) indexes.push(index);
+  reviewedTopicsByCard.set(key, indexes);
+}
 
 
 const exactTopicsByCard = new Map();
@@ -542,7 +577,11 @@ for (const paper of localPapers) {
       englishTwin(paper.fileid),
       question.n,
     ].join('|');
-    let indexes = reviewedTopicsByCard.get(exactKey) ?? exactTopicsByCard.get(exactKey);
+    const reviewedIndexes = reviewedTopicsByCard.get(exactKey);
+    const exactIndexes = exactTopicsByCard.get(exactKey);
+    let indexes = reviewedIndexes || exactIndexes
+      ? [...new Set([...(exactIndexes ?? []), ...(reviewedIndexes ?? [])])]
+      : undefined;
     if (!indexes) {
       indexes = [...new Set(
         [question.primary, question.secondary]
@@ -643,29 +682,39 @@ if (physicalMappings !== 2154 || questionMappings.length !== 2154) {
 if (distinctStudentFacingQuestions !== 1077) {
   throw new Error(`Expected 1,077 Art logical questions, found ${distinctStudentFacingQuestions}`);
 }
+const reviewedOnlyCards = [...reviewedTopicsByCard.keys()].filter(key => !exactTopicsByCard.has(key));
 if (
-  exactTopicsByCard.size + reviewedTopicsByCard.size + retainedLocalCards.length
+  exactTopicsByCard.size + reviewedOnlyCards.length + retainedLocalCards.length
   !== distinctStudentFacingQuestions
 ) {
   throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
-if ([...reviewedTopicsByCard.keys()].some(key => exactTopicsByCard.has(key))) {
-  throw new Error('A reviewed Art anomaly question must have no other reference association');
-}
 if (
-  matchedAssociations.length !== 585
+  matchedAssociations.length !== 580
   || sourceBlockedAssociations.length !== 98
-  || referenceAnomalyAssociations.length !== 7
-  || exactTopicsByCard.size !== 534
-  || reviewedTopicsByCard.size !== 7
-  || matchedQuestionTopicLinks !== 577
-  || reviewedOptionTopics.length !== 28
-  || reviewedSpecificTopics.length !== 10
+  || referenceAnomalyAssociations.length !== 12
+  || exactTopicsByCard.size !== 531
+  || reviewedTopicsByCard.size !== 11
+  || reviewedOnlyCards.length !== 10
+  || matchedQuestionTopicLinks !== 572
+  || reviewedOptionTopics.length !== 42
+  || reviewedSpecificTopics.length !== 13
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392
 ) {
-  throw new Error('Art reference/local reconciliation counts changed unexpectedly');
+  throw new Error(`Art reference/local reconciliation counts changed unexpectedly: ${JSON.stringify({
+    matched: matchedAssociations.length,
+    blocked: sourceBlockedAssociations.length,
+    anomalies: referenceAnomalyAssociations.length,
+    exactCards: exactTopicsByCard.size,
+    reviewedCards: reviewedTopicsByCard.size,
+    links: matchedQuestionTopicLinks,
+    options: reviewedOptionTopics.length,
+    specific: reviewedSpecificTopics.length,
+    retained: retainedLocalCards.length,
+    retainedWritten: retainedWrittenLogicalCards,
+  })}`);
 }
 if (verifiedSchemeMaps !== 65 || verifiedPaperOnlyMaps !== 87) {
   throw new Error('Art paper/scheme map boundary changed unexpectedly');
@@ -721,7 +770,7 @@ const summary = {
   sourceBlockedAssociations: sourceBlockedAssociations.length,
   referenceAnomalyAssociations: referenceAnomalyAssociations.length,
   matchedLogicalCards: exactTopicsByCard.size,
-  reviewedLogicalCards: reviewedTopicsByCard.size,
+  reviewedLogicalCards: reviewedOnlyCards.length,
   reviewedOptionTopics: reviewedOptionTopics.length,
   reviewedSpecificTopics: reviewedSpecificTopics.length,
   matchedQuestionTopicLinks,

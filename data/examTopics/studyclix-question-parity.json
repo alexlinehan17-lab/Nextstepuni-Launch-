@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T15:17:12.868Z",
+  "generatedAt": "2026-10-12T15:40:05.063Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,12 +11,12 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 27240,
+    "matched": 27235,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 9,
+    "referenceAnomaly": 14,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
-    "topicsWithGaps": 1340
+    "topicsWithGaps": 1341
   },
   "subjects": [
     {
@@ -3154,12 +3154,12 @@
       "totals": {
         "referenceTopics": 32,
         "referenceOfficialAssociations": 690,
-        "matched": 585,
+        "matched": 580,
         "sourceBlocked": 98,
-        "referenceAnomaly": 7,
+        "referenceAnomaly": 12,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
-        "topicsWithGaps": 26
+        "topicsWithGaps": 27
       },
       "topics": [
         {
@@ -3555,9 +3555,9 @@
           "label": "Irish Art and Modernism",
           "sourcePath": "/leaving-certificate/art/higher/section-c-ireland-and-its-place-in-the-wider-world/irish-art-and-modernism",
           "referenceOfficialAssociations": 38,
-          "matched": 32,
+          "matched": 31,
           "sourceBlocked": 4,
-          "referenceAnomaly": 2,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3575,6 +3575,10 @@
             {
               "heading": "2023 - Sample Paper - Section C - Question 17",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2021 - Section 1 - Question 6",
@@ -3755,14 +3759,18 @@
           "label": "Europe - Modernism (c. 1900-1960s)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-modernism-c-1900-1960s",
           "referenceOfficialAssociations": 16,
-          "matched": 15,
+          "matched": 14,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2007 - Section 2 - Question 13",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2020 - Section 2 - Question 12",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3811,14 +3819,18 @@
           "label": "Europe - The Renaissance (c. 1300-1600s)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-the-renaissance-c-1300-1600s",
           "referenceOfficialAssociations": 28,
-          "matched": 26,
+          "matched": 25,
           "sourceBlocked": 1,
-          "referenceAnomaly": 1,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2008 - Paper - Section 2 - Question 10",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2020 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2022 - Section 2 - Question 8",
@@ -3853,11 +3865,16 @@
           "label": "The Baroque (c. 1600-1700s)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/the-baroque-c-1600-1700s",
           "referenceOfficialAssociations": 7,
-          "matched": 7,
+          "matched": 6,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2020 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "art-ordinary-insular-art-c-500-1100s",
@@ -3891,9 +3908,9 @@
           "label": "Irish Art and Modernism",
           "sourcePath": "/leaving-certificate/art/ordinary/section-c-ireland-and-its-place-in-the-wider-world/irish-art-and-modernism",
           "referenceOfficialAssociations": 33,
-          "matched": 27,
+          "matched": 26,
           "sourceBlocked": 4,
-          "referenceAnomaly": 2,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3911,6 +3928,10 @@
             {
               "heading": "2009 - Paper - Section 1 - Question 7",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2021 - Section 1 - Question 6",

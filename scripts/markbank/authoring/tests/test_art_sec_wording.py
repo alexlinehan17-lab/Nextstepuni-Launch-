@@ -168,9 +168,9 @@ class ArtSecWordingTest(unittest.TestCase):
         runtime = json.loads((ROOT / 'data/examTopics/art-runtime.json').read_text())
         topics = runtime['topics']
         atlas = {}
-        for level, lang, year, fileid, number, topic_indexes in runtime['questionMappings']:
-            if lang == 'e' and fileid == '000' and str(number).isdigit():
-                atlas[(2000 + year, level, int(number))] = {
+        for level, lang, year, component, number, topic_indexes in runtime['questionMappings']:
+            if lang == 'e' and str(number).isdigit():
+                atlas[(2000 + year, level, component, int(number))] = {
                     t for index in topic_indexes for t in topics[index][5]}
         failures = []
         for card in AUTHORED['cards']:
@@ -179,7 +179,8 @@ class ArtSecWordingTest(unittest.TestCase):
             number = int(re.search(r'Q(\d+)', card['questionRef']).group(1))
             # No exceptions: reviewed anomalies, per-option headings and the
             # specific headings of generic-only questions are in the Atlas.
-            allowed = set(atlas.get((card['year'], card['level'][0], number)) or ())
+            component = re.search(r'LP(\w{3})', card['paperFileid']).group(1)
+            allowed = set(atlas.get((card['year'], card['level'][0], component, number)) or ())
             if not allowed or card['topicId'] not in allowed:
                 failures.append((card['id'], card['topicId'], sorted(allowed or [])))
         self.assertEqual(failures, [])
