@@ -106,7 +106,7 @@
   },
   "business": {
     "cards": 606,
-    "contentHash": "9e450e8c7727014e",
+    "contentHash": "e15595b67bd64ee1",
     "coveragePct": 94.6,
     "covered": 677,
     "excluded": 0,
@@ -121,7 +121,7 @@
   },
   "chemistry": {
     "cards": 876,
-    "contentHash": "c25588239df13956",
+    "contentHash": "723a9a059950fb5f",
     "coveragePct": 92.5,
     "covered": 1120,
     "excluded": 0,
@@ -466,7 +466,7 @@
   },
   "latin": {
     "cards": 227,
-    "contentHash": "5224015f8bdd2f13",
+    "contentHash": "33bb32809e144f2d",
     "coveragePct": 100.0,
     "covered": 237,
     "excluded": 91,
@@ -601,7 +601,7 @@
   },
   "physics": {
     "cards": 1133,
-    "contentHash": "b8febbbaaa07244b",
+    "contentHash": "5991102c908f5746",
     "coveragePct": 95.2,
     "covered": 1119,
     "excluded": 46,
@@ -631,7 +631,7 @@
   },
   "portuguese": {
     "cards": 173,
-    "contentHash": "6cf7010f4bce4d9b",
+    "contentHash": "1ad70be44482d80a",
     "coveragePct": 100.0,
     "covered": 173,
     "excluded": 329,
@@ -646,7 +646,7 @@
   },
   "religious-education": {
     "cards": 288,
-    "contentHash": "bfd99a50f3bc5853",
+    "contentHash": "674bdf82cd359c98",
     "coveragePct": 100.0,
     "covered": 288,
     "excluded": 0,
@@ -751,7 +751,7 @@
   },
   "technology": {
     "cards": 716,
-    "contentHash": "4d55bc81fece955d",
+    "contentHash": "d40c6ffeeb1717dd",
     "coveragePct": 92.1,
     "covered": 721,
     "excluded": 46,
