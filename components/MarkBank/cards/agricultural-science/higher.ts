@@ -1956,6 +1956,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Superb quality beef / distinctive flavour", marks: 3, accepts: ["Superb quality beef","distinctive flavour"], contextNote: "One 3-mark point. The solidus separates two accepted wordings of the same characteristic — either alone scores the full 3." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1994,6 +2004,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Short (1-2 days)", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-hl-paper-p006-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p006-i0.png",
@@ -2016,6 +2036,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Reduced root growth during grazing", marks: 1, accepts: ["as grass is continuously grazed, roots do not get a chance to grow","does not allow for root reserves to develop"], contextNote: "One 1-mark point; the solidi are three accepted wordings of the same reason." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2031,6 +2061,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Short — Rotational or zero", marks: 4, accepts: ["Rotational","zero"], contextNote: "Either \"rotational\" or \"zero\" scores the full 4 — the scheme prints them as alternatives for the one slot." },
     { id: "r-2", kind: "point", verbatim: "Continuous — Set stocking", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-hl-paper-p006-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p006-i0.png",
@@ -2055,6 +2095,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "improves water quality for reduced sediment or nutrient run off", marks: null, accepts: ["Easily digestible or high-quality forage for lower emissions or finishing early","fence animals away from river","herd is healthier as reduced endoparasites or less animal disease","improves pasture productivity","protects soil from erosion – (deeper plant roots)","increased biodiversity with multi species sward or addition of clover","reduced herbicides required for","increased soil carbon","rotational grazing allow the soil or plants to recover","reduced housing which means less slurry storage needed"], contextNote: "Second correct factor — 2 marks." },
     { id: "r-3", kind: "alt", verbatim: "herd is healthier as reduced endoparasites or less animal disease", marks: null, accepts: ["fence animals away from river","improves pasture productivity","protects soil from erosion – (deeper plant roots)","increased biodiversity with multi species sward or addition of clover","reduced herbicides required for","increased soil carbon","rotational grazing allow the soil or plants to recover","reduced housing which means less slurry storage needed"], contextNote: "Third correct factor — 2 marks. The scheme requires \"Any 3 factors from climate and / or environment\"." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2072,6 +2122,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "Organic matter loss, effect on productivity — Decreased nutrient store", marks: null, accepts: ["reduced nutrient supply","reduced soil biodiversity"], contextNote: "Any one of the scheme's options for this cell. Also accepted: less food for soil organisms; decreased earthworm population; more susceptible to drought; decreased aeration in heavy soils; decreased drainage in heavy soils." },
     { id: "r-4", kind: "alt", verbatim: "Organic matter loss, ways of reducing the effect — Spreading farmyard manure", marks: null, accepts: ["spreading slurry","crop rotation"], contextNote: "Any one of the scheme's options for this cell. Also accepted: digestate from biodigester; green manures or cover crop; ploughing straw back into land; reduced or no tillage." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2086,6 +2146,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Not certified seed", marks: 3, accepts: ["no guarantee of germination","wild oats","not 98% pure","not treated with fungicide or pesticide"], contextNote: "One 3-mark point; the solidi are five accepted wordings of the same advice. The third option reads in full \"could contain wild oats\" (the mark column splits it in the extraction)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-hl-paper-p009-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p009-i0.png",
@@ -2100,23 +2170,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q6a", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
-    section: "A", questionRef: "2024 HL Q6(a)(i)–(ii)",
-    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. For any two of the above listed target features / activities, the paper prints a table with an Action row and a Benefit row for each feature chosen.",
-    questionText: "(i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
-    tariffModel: {"kind":"orderedSplit","notation":"2(3) + 2(2)"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Meal feeding lambs post weaning, action — creep feeder / trough", marks: null, accepts: ["regular checking","footbath or antibiotic spray","paring hooves","vaccination or closed flock","breed selection","injection / feed additive","drench","ultrasound scanner"], contextNote: "Action for the FIRST feature the student names. Scheme actions by feature — lameness control: regular checking or footbath or antibiotic spray or paring hooves or vaccination or closed flock or breed selection; mineral supplementation of ewe's post mating: (bucket) lick / bolus / injection / feed additive / drench; meal feeding lambs post weaning: creep feeder / trough; scanning in-lamb ewes: ultrasound scanner or scanner placed on abdomen." },
-    { id: "r-2", kind: "alt", verbatim: "Meal feeding lambs post weaning, benefit — increase liveweight gain", marks: null, accepts: ["reach slaughter weight quicker","reduces stress of weaning","increased LWG","maintain pregnancy","grass tetany","determine the number of lambs","cull barren ewes"], contextNote: "Benefit for the first feature named — must match that feature. Scheme benefits — lameness control: increased LWG or increased conception rates or increased milk production; mineral supplementation: improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease; meal feeding: increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning; scanning: determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes." },
-    { id: "r-3", kind: "alt", verbatim: "Mineral supplementation of ewes post mating, action — (bucket) lick / bolus", marks: null, accepts: ["injection / feed additive","drench","creep feeder / trough","regular checking","footbath or antibiotic spray","vaccination or closed flock","ultrasound scanner"], contextNote: "Action for the SECOND feature named, from the same four feature pools." },
-    { id: "r-4", kind: "alt", verbatim: "Mineral supplementation of ewes post mating, benefit — improve (P) conception rate", marks: null, accepts: ["maintain pregnancy","grass tetany","increase liveweight gain","reach slaughter weight quicker","reduces stress of weaning","increased LWG","determine the number of lambs","cull barren ewes"], contextNote: "Benefit for the second feature named — must match that feature." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q6bi", topicId: "agsci-4-3-1", conceptId: "scheme-payment-calculation",
     section: "A", questionRef: "2024 HL Q6(b)(i)",
     stem: "Answer either (a) or (b). The Sheep Improvement Scheme provides financial support to farmers for taking extra steps to improve the welfare of their flock. Farmers get €12 per breeding ewe for completing flock welfare measures. Ryan and Fiona have the following sheep on their farm.",
@@ -2125,6 +2178,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "132 x 12 = €1584", marks: 6, contextNote: "The scheme adds: \"(If candidate shows the correct formula award +3m)\" — a correct formula without the answer scores 3 of the 6. Only the 132 breeding ewes attract the €12 payment; rams, hoggets and lambs do not." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p11-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p11-i1.png",
@@ -2139,21 +2202,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q6bii", topicId: "agsci-4-3-3", conceptId: "sheep-scheme-health-welfare",
-    section: "A", questionRef: "2024 HL Q6(b)(ii)",
-    stem: "Answer either (a) or (b). The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: mineral supplementation of lambs pre-weaning; flystrike control; genotyping of ram. The paper prints a table with a Named target feature column and an Explanation column, for two features.",
-    questionText: "Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
-    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Mineral supplementation lambs pre-weaning — improved LWG or reduced nutritional disease", marks: null, accepts: ["prevent maggots feeding off them","provides easier lambing or better disease resistance or less mutations or improved dag score or increased survival (rate)"], contextNote: "First correct explanation — 3 marks. Any one of the three features may be taken first." },
-    { id: "r-2", kind: "alt", verbatim: "Flystrike control — prevent maggots feeding off them", marks: null, accepts: ["increases liveweight of animal) or less pain","provides easier lambing or better disease resistance or less mutations or improved dag score or increased survival (rate)"], contextNote: "Second correct explanation — 1 mark. The flystrike answer reads in full \"prevent maggots feeding off them (which increases liveweight of animal) or less pain\" (the mark column splits it in the extraction)." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q7a", topicId: "agsci-3-3-2", conceptId: "agroforestry-definition",
     section: "A", questionRef: "2024 HL Q7(a)",
     stem: "Read the article and answer the questions that follow.\n\nAgroforestry is the integration of trees with either crops or livestock on the same land. It aims to achieve additional benefits in comparison to keeping agriculture and trees separate. Across the world, agroforestry encompasses a wide variety of practices ranging from simple shelterbelts of trees around fields to a close integration of food crops and trees.\n(Adapted from Teagasc, 2020)",
@@ -2162,6 +2210,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Integration of trees with either crops or livestock on the same land", marks: 4, accepts: ["farmers plant crops or allow livestock to graze around trees"], contextNote: "One 4-mark explanation; the scheme's \"or\" offers a second equally acceptable wording." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2177,6 +2235,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Providing additional sources of (sustainable) on-farm revenue", marks: 3, accepts: ["timber or fruit production alongside livestock or crop production","provide shelter or allows animals to scratch","improved biodiversity","improving water quality or reducing soil erosion","health or nutrient capture","enhancing the capacity for on-farm carbon sequestration","availing of grants or annual premiums"], contextNote: "First benefit — 3 marks. Any one from the scheme's list. \"improved soil health or nutrient capture\" is split by the mark column in the extraction, hence the shortened fragment." },
     { id: "r-2", kind: "alt", verbatim: "provide shelter or allows animals to scratch", marks: 3, accepts: ["Providing additional sources of (sustainable) on-farm revenue","timber or fruit production alongside livestock or crop production","improved biodiversity","improving water quality or reducing soil erosion","health or nutrient capture","enhancing the capacity for on-farm carbon sequestration","availing of grants or annual premiums"], contextNote: "Second benefit — 3 marks. NOTE: \"provide shelter / allows animals to scratch\" is ONE marking point with two accepted wordings, not two points — claiming both does not earn 6." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2214,6 +2282,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Controls the dock leaf without the use of (selective) herbicides", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2229,6 +2307,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Biological control — Ladybird or parasitic wasp", marks: 3, accepts: ["Ducks / geese","Cats / dogs"], contextNote: "3 marks for naming a biological control. The scheme's examples are ducks / geese, ladybird or parasitic wasp, and cats / dogs.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "Target — Aphids (greenfly)", marks: 3, accepts: ["Mud snail / slugs","Rodents"], contextNote: "3 marks for the target, which must match the control named: ducks / geese → mud snail / slugs; ladybird or parasitic wasp → aphids (greenfly); cats / dogs → rodents.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2247,6 +2335,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "alt", verbatim: "Ion exchange, gravel and sand particles — No ions present", marks: null, contextNote: "Scheme cell: \"No ions present / no ion exchange\" — either wording. (\"no ion exchange\" is broken across the mark column in the extraction, so only the first wording is traceable.)" },
     { id: "r-5", kind: "alt", verbatim: "Ion exchange, silt and clay particles — surface area for ion exchange", marks: null, accepts: ["Good (source of cations"], contextNote: "Scheme cell: \"Good (source of cations K, P, Ca, Mg for) ion exchange / large surface area for ion exchange\" — either wording. The mark column is typeset inside this cell, so only unbroken runs are traceable." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2262,6 +2360,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "PRG", marks: 2, accepts: ["red clover","white clover","plantain","chicory","timothy"], contextNote: "First plant named — 2 marks. Any one from the scheme's list (PRG = perennial ryegrass)." },
     { id: "r-2", kind: "alt", verbatim: "red clover", marks: 2, accepts: ["PRG","white clover","plantain","chicory","timothy"], contextNote: "Second plant named — 2 marks. Any other one from the same list." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p15-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p15-i0.png",
@@ -2284,6 +2392,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Increase in availability of food to all organisms", marks: 2, accepts: ["increase in diversity of food source","increased carbon sequestration at different levels","increased microbial communities","earthworm activity","increased air for (plant or animal) respiration (due to root activity at different levels)"], contextNote: "One 2-mark point; the solidi are six accepted wordings. The fifth reads in full \"increased earthworm activity\" (the mark column splits it in the extraction)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p15-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p15-i0.png",
@@ -2306,6 +2424,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "375.25 or 375 days", marks: 4, contextNote: "The scheme prints the working as (397 + 345 + 397 + 362) ÷ 4 = 375.25 or 375 days — four intervals, not five, because lactation 1 has none. It adds: \"If a candidate gives 375.25 or 375 without showing calculation, award 4m. If the candidate gives the correct formula without correct answer, award 2m.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2320,6 +2448,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "More accurate heat detection", marks: 2, accepts: ["mineral supplementation","served her on her first cycle after"], contextNote: "One 2-mark point; the solidi are three accepted wordings. The second reads in full \"served her on her first cycle after calving\" (the mark column splits it in the extraction)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2335,6 +2473,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Cow: 2", marks: 2 },
     { id: "r-2", kind: "alt", verbatim: "Increased number of serves to get cow in calf", marks: 2, accepts: ["increasing calving interval"], contextNote: "One 2-mark reason; also accepted as \"poor fertility\" (the mark column splits that phrase in the extraction)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2350,6 +2498,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Build bank (or wall or bridge) or plant hedgerow (beside watercourse)", marks: null, accepts: ["include buffer zones","animals cannot access close","slope roadway towards the field","runoff diverted (into field) prior to watercourse","barrier on bridge","do not graze during heavy rainfall or spread slurry or spread fertiliser"], contextNote: "First correct action — 4 marks. Any one from the scheme's list; the 4 is not tied to this action. \"animals cannot access close\" reads in full \"animals cannot access close to watercourse\"." },
     { id: "r-2", kind: "alt", verbatim: "include buffer zones", marks: null, accepts: ["Build bank (or wall or bridge) or plant hedgerow (beside watercourse)","animals cannot access close","slope roadway towards the field","runoff diverted (into field) prior to watercourse","barrier on bridge","do not graze during heavy rainfall or spread slurry or spread fertiliser"], contextNote: "Second correct action — 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2365,6 +2523,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Direct spreading of fertiliser or slurry or chemical sprays too close (nitrates or phosphate)", marks: 2, accepts: ["animals’ access to water sources","sediment from erosion of banks","farm plastics","nitrogen leaching"], contextNote: "First source — 2 marks. Any one from the scheme's list; \"animals' access to water sources\" continues \"or pathogens or disease-causing organisms\"." },
     { id: "r-2", kind: "alt", verbatim: "sediment from erosion of banks", marks: 2, accepts: ["Direct spreading of fertiliser or slurry or chemical sprays too close (nitrates or phosphate)","animals’ access to water sources","farm plastics","nitrogen leaching"], contextNote: "Second source — 2 marks. Any other one from the same list." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5263,6 +5431,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "identify plants using key or acres guide book", marks: 4, accepts: ["identify plants using key","identify plants using acres guide book"] },
     { id: "r-5", kind: "point", verbatim: "record results", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5281,6 +5459,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "reduced use of herbicides", marks: null },
     { id: "r-5", kind: "point", verbatim: "sow multi species (clover)", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5303,6 +5491,16 @@ export const CARDS: SecCard[] = [
     { id: "r-8", kind: "point", verbatim: "acidic conditions", marks: null },
     { id: "r-9", kind: "point", verbatim: "anaerobic conditions", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5318,6 +5516,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "West of Ireland", marks: 3, openList: true },
     { id: "r-2", kind: "point", verbatim: "midlands", marks: 3, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5338,6 +5546,16 @@ export const CARDS: SecCard[] = [
     { id: "r-6", kind: "point", verbatim: "reduce flooding", marks: null },
     { id: "r-7", kind: "point", verbatim: "habitats", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5358,6 +5576,16 @@ export const CARDS: SecCard[] = [
     { id: "r-6", kind: "point", verbatim: "adhere to European directive e.g. nitrates directive", marks: null },
     { id: "r-7", kind: "point", verbatim: "sow multi-species swards or cover or bird cover", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5395,6 +5623,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "(Cut early afternoon when) grass sugars are highest // low nitrogen levels to allow for preservation (6 weeks after fertiliser application) // wilt (for 24 hours) to remove excess water // tip on clean concrete to avoid contamination // anaerobic conditions or anaerobic respiration // lactobacillus bacteria feed off sugar // produce lactic acid // pH 4 // fermentation occurs", marks: null, group: {"claimMax":3,"perOption":4,"options":["(Cut early afternoon when) grass sugars are highest","low nitrogen levels to allow for preservation (6 weeks after fertiliser application)","wilt (for 24 hours) to remove excess water","tip on clean concrete to avoid contamination","anaerobic conditions or anaerobic respiration","lactobacillus bacteria feed off sugar","produce lactic acid","pH 4","fermentation occurs"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5432,6 +5670,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Cut a number of silage samples from the different treatment areas // Record mass of beaker // add silage to the beaker and record the mass // determine mass of silage sample // place the silage in an oven at 100 C (for 15 mins or longer at lower temp e.g. 60o C for 48 hours) // constant mass // calculate the mass of the silage by subtracting the mass of the beaker from overall mass // calculate the DM% of the silage by putting mass of dry silage over mass of fresh silage multiply by 100/1 // calculate the average DM% for each treatment.", marks: null, group: {"claimMax":3,"perOption":4,"options":["Cut a number of silage samples from the different treatment areas","Record mass of beaker","add silage to the beaker and record the mass","determine mass of silage sample","place the silage in an oven at 100 C (for 15 mins or longer at lower temp e.g. 60o C for 48 hours)","constant mass","calculate the mass of the silage by subtracting the mass of the beaker from overall mass","calculate the DM% of the silage by putting mass of dry silage over mass of fresh silage multiply by 100/1","calculate the average DM% for each treatment."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5453,6 +5701,17 @@ export const CARDS: SecCard[] = [
     { id: "r-7", kind: "point", verbatim: "additive", marks: null },
     { id: "r-8", kind: "point", verbatim: "anaerobic conditions", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25,
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5470,6 +5729,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "productivity", marks: null },
     { id: "r-4", kind: "point", verbatim: "persistence", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5509,28 +5778,15 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Vit A for bone development or good vision or good fertility", marks: null, accepts: ["Vit D for absorption of Ca","Vit C prevent infection or repair tissue","Vitamin B for metabolic reactions","control chemical reactions (metabolic processes) in the body"], contextNote: "Vitamins" },
     { id: "r-3", kind: "point", verbatim: "Essential for digestion or reproduction or excretion or transport of nutrients around the body", marks: null, accepts: ["milk production (milk is 87.5% water)","temperature regulation","prevent dehydration or osmoregulation"], contextNote: "Water" },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q15aiii", topicId: "agsci-4-1", conceptId: "factors-influencing-cattle-nutrient-requirements",
-    section: "B", questionRef: "2024 HL Q15(a)(iii)",
-    questionText: "State two animal-related factors or two environmental conditions.",
-    tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":14,"perPart":2}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Weight // age // sex // extent of production // composition // genetics // of physical activity // health // Temperature // humidity // chill or draught free // radiation or UV light // precipitation // soil nutrient deficiencies", marks: null, group: {"claimMax":2,"perOption":2,"options":["Weight","age","sex","extent of production","composition","genetics","of physical activity","health","Temperature","humidity","chill or draught free","radiation or UV light","precipitation","soil nutrient deficiencies"]} },
-    ],
     sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL SOURCE",
-          "title": "Source and question",
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
           "pages": [
                 28
           ],
           "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
   } as SecCard,
   {
@@ -5548,6 +5804,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "(low plane of nutrition or) low energy requirement", marks: 1, accepts: ["as feed requirement at this stage is just to keep cow in good health and condition"], contextNote: "Dry period" },
     { id: "r-3", kind: "point", verbatim: "high energy requirement or increased concentrates or high digestible silage (75%+ DMD)", marks: 1, accepts: ["good quality (spring) grass to reduce the negative energy balance","reach peak yield","improved BCS"], contextNote: "Early lactation" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5567,6 +5833,16 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "muscle twitching", marks: 2, accepts: ["exaggerated awareness","aggressive","staggering","collapse / coma"], contextNote: "Symptom", route: "magnesium" },
     { id: "r-6", kind: "point", verbatim: "dusting pasture with Mg", marks: 2, accepts: ["mineral licks","magnesium boluses","hay or straw"], contextNote: "Prevention", route: "magnesium" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5585,6 +5861,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "forecast time of sale of animals", marks: null },
     { id: "r-5", kind: "point", verbatim: "support decision making through better quality data", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5604,6 +5890,16 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "use crush (to control animals)", marks: null },
     { id: "r-6", kind: "point", verbatim: "situational awareness", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5618,6 +5914,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "€20 X 50 = €1000", marks: 4, contextNote: "Paul has 52 calves but the scheme caps payment at 50, so the multiplier is 50, not 52. The scheme awards 2 marks for the correct method alone." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5632,6 +5938,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Feeding pooled good quality colostrum to calves has no negative affect on the health or performance of calves", marks: 2, contextNote: "The scheme adds: Hypothesis must include effect on health or performance of calves." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p31-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p31-i1.png",
@@ -5655,6 +5971,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "It is a fair test (Yes)", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "Reason: equal sample size", marks: 3, accepts: ["similar birth weight or weighed weekly","all colostrum samples reach minimum concentration (> 50mg IgG)","same refractometer"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p31-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p31-i1.png",
@@ -5679,6 +6005,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Dependent: Weight gain", marks: 4 },
     { id: "r-3", kind: "point", verbatim: "Control: Same number of calves / same refractometer / same weighing interval", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p31-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p31-i1.png",
@@ -5705,6 +6041,17 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "colostrum contamination", marks: null },
     { id: "r-5", kind: "point", verbatim: "measurement of volume of colostrum", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31,
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p31-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p31-i1.png",
@@ -5730,6 +6077,17 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "increases size of rumen", marks: null },
     { id: "r-4", kind: "point", verbatim: "allows for rumination or chewing the cud", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31,
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5746,23 +6104,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Amount of colostrum — 10% bodyweight / 4 litres", marks: null },
     { id: "r-3", kind: "point", verbatim: "Hygiene — Contaminated colostrum can cause sickness or diarrhoea or reduced antibody intake.", marks: null },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q17a", topicId: "agsci-3-1", conceptId: "abiotic-factors-affecting-agriculture",
-    section: "B", questionRef: "2024 HL Q17(a)",
-    stem: "Plant biostimulants and biotic factors in soil help improve plant growth by increasing nutrient uptake, nutrient use efficiency (NUE) and tolerance to stress from abiotic factors.",
-    questionText: "Briefly describe how any named abiotic factor will affect Irish agriculture.",
-    tariffModel: {"kind":"bestNofParts","answer":1,"ofParts":4,"perPart":6}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Temperature — Too hot or cold will cause crop failure or animal disease", marks: 6, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Humidity — Cause crop failure or animal disease", marks: 6, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Soil chemistry / Salinity / Oxygen levels — If not correct for plant type will cause reduced crop yields", marks: 6, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Moisture levels or drought or flooding — May cause reduced yield", marks: 6, openList: true },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5778,6 +6129,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "criterion", verbatim: "Diagram: diagram must show root with rhizosphere zone drawn around it.", marks: 3, contextNote: "Scheme prints 'D= 3,0' — the diagram is all-or-nothing: 3 marks or none." },
     { id: "r-2", kind: "point", verbatim: "Labels: rhizosphere soil / microorganism / bulk soil / rhizoplane / metal(loids) / ectorhizosphere / endorhizosphere", marks: 2, contextNote: "Scheme prints 'L = 2(1)' — two labels at 1 mark each, taken from this list." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5792,6 +6153,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Symbiotic relationship", marks: 3, accepts: ["microorganism's get nutrients from root","root benefits from fungi drawing nutrients and water from soil (which then are made available to the root)"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5833,6 +6204,17 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "protection from plant pests (soil borne nematodes)", marks: null },
     { id: "r-5", kind: "point", verbatim: "increased plant establishment or survival at germination / increased (surface) area for absorption (of nutrients or water)", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34,
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5851,6 +6233,17 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "avoiding (toxic) fungicides or herbicides or pesticides", marks: null },
     { id: "r-5", kind: "point", verbatim: "add fungal culture", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34,
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5866,6 +6259,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Peat soil", marks: 5 },
     { id: "r-2", kind: "point", verbatim: "Reason: as it is formed from partially decomposed plant material", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5880,6 +6283,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Offspring produced from purebred parents of different breeds", marks: 4, accepts: ["mating of animals from two different breeds"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5894,6 +6307,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Genetic make-up (code) of an organism", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5912,6 +6335,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "predict genetic merit / identify carriers (of lethal gene or defects)", marks: null },
     { id: "r-5", kind: "point", verbatim: "targeted selective breeding / to determine carbon footprint (of herd)", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8075,6 +8508,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "B", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p15-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p15-i0.png",
@@ -8089,77 +8532,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q17cii", topicId: "agsci-3-1", conceptId: "calculating-percent-soil-organic-matter",
-    section: "B", questionRef: "2024 HL Q17(c)(ii)",
-    stem: "Results from the investigation are shown in the table below. Soil sample Loss in mass (g) % Soil organic % Soil organic matter carbon Peat 55.2 A B Loam 3.8 4.2 2.4",
-    questionText: "Calculate A the % soil organic matter in the peat sample.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "55.2/90 X 100 = 61.3(%)", marks: 6, contextNote: "The results table gives the peat sample a loss in mass of 55.2 g with its two percentage cells blanked and lettered A and B; the loam row below is filled in at 3.8, 4.2 and 2.4." },
-    ],
-    figure: {
-          "candId": "agricultural-science-2024-HL-paper-p36-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p36-art.png",
-          "srcHash": "e2adf0f6cbdc572de192c0a1af1dd0c8",
-          "alt": "The Question 17(c) results table, with its header row complete. Four columns: Soil sample, Loss in mass (g), % Soil organic matter, % Soil organic carbon. The Peat row reads 55.2 for loss in mass, then two cells highlighted in yellow carrying the letters A and B in place of values. The Loam row beneath it is filled in throughout: 3.8, 4.2 and 2.4. Above the table sit the ruled Predication and Reason boxes from part (c)(i) and the line 'Results from the investigation are shown in the table below.'; below it are parts (ii) and (iii) with their Calculation boxes.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q17ciii", topicId: "agsci-3-1", conceptId: "calculating-percent-soil-organic-carbon",
-    section: "B", questionRef: "2024 HL Q17(c)(iii)",
-    stem: "Results from the investigation are shown in the table below. Soil sample Loss in mass (g) % Soil organic % Soil organic matter carbon Peat 55.2 A B Loam 3.8 4.2 2.4",
-    questionText: "Calculate B the % soil organic carbon in the peat sample.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "61.3 x 0.58 = 35.55 or 36%", marks: 6, contextNote: "The results table gives the peat sample a loss in mass of 55.2 g with its two percentage cells blanked and lettered A and B; the loam row below is filled in at 3.8, 4.2 and 2.4." },
-    ],
-    figure: {
-          "candId": "agricultural-science-2024-HL-paper-p36-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p36-art.png",
-          "srcHash": "e2adf0f6cbdc572de192c0a1af1dd0c8",
-          "alt": "The Question 17(c) results table, with its header row complete. Four columns: Soil sample, Loss in mass (g), % Soil organic matter, % Soil organic carbon. The Peat row reads 55.2 for loss in mass, then two cells highlighted in yellow carrying the letters A and B in place of values. The Loam row beneath it is filled in throughout: 3.8, 4.2 and 2.4. Above the table sit the ruled Predication and Reason boxes from part (c)(i) and the line 'Results from the investigation are shown in the table below.'; below it are parts (ii) and (iii) with their Calculation boxes.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q2ai", topicId: "agsci-4-1", conceptId: "identifying-pig-sheep-and-cattle-breeds",
-    section: "A", questionRef: "2024 HL Q2(a)(i)",
-    stem: "Or",
-    questionText: "Identify any two of the following breeds.",
-    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Landrace", marks: 2, accepts: ["C: Simmental"], contextNote: "Three photographs: A a long pale pink pig with forward-drooping ears, B the head of a sheep with a bare blue-grey face and long upright ears over a dense cream fleece, C a heavy red-brown bull with broad white patches and a white head." },
-    { id: "r-2", kind: "point", verbatim: "B: Blue Leicester", marks: 2, accepts: ["C: Simmental"] },
-    ],
-    figure: {
-          "candId": "agricultural-science-2024-HL-paper-p04-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
-          "srcHash": "3e02254d50de3b69951392d41a4cd272",
-          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Landrace","askedInThisQuestion":true},{"letter":"B","meaning":"Blue Leicester","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q2aii", topicId: "agsci-4-1", conceptId: "what-prolificacy-means",
     section: "A", questionRef: "2024 HL Q2(a)(ii)",
     stem: "Or",
@@ -8168,29 +8540,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Produce many offspring", marks: 2 },
     ],
-    figure: {
-          "candId": "agricultural-science-2024-HL-paper-p04-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
-          "srcHash": "3e02254d50de3b69951392d41a4cd272",
-          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q2aiii", topicId: "agsci-4-1", conceptId: "characteristics-of-a-terminal-sire",
-    section: "A", questionRef: "2024 HL Q2(a)(iii)",
-    stem: "Or",
-    questionText: "Briefly explain characteristics of bull C in part (i) above that make it suitable as a terminal sire.",
-    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Good conformation", marks: 2, accepts: ["Briefly explain characteristics of bull C in part (i) that make it suitable as a terminal sire.","good KO%","good carcase weight"] },
-    { id: "r-2", kind: "point", verbatim: "high muscle", marks: 2, accepts: ["Briefly explain characteristics of bull C in part (i) that make it suitable as a terminal sire.","good KO%","good carcase weight"] },
-    ],
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p04-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
@@ -8214,6 +8573,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B: Stomach tube", marks: 2 },
     { id: "r-3", kind: "alt", verbatim: "C: Head gate", marks: 2, accepts: ["fostering crate"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p03-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p03-art.png",
@@ -8240,69 +8609,21 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Filled with colostrum", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p03-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p03-art.png",
           "srcHash": "bdee045ca3dfd4a285528ebf8d9a0dd6",
           "alt": "The top of Section A with Question 1(a). Three photographs stacked down the left, lettered A, B and C, each against an empty answer cell. A: a green trailed machine in a field with two horizontal rollers, a hooped arm carrying reels of film, and a drawbar. B: a person kneeling in straw with a lamb across their lap, holding a large syringe with a long flexible tube running from it into the lamb's mouth; a white arrow points at the syringe. C: a ewe and a young lamb in a straw-bedded metal hurdle pen, with a yellow arrow pointing at a hinged frame set into the hurdle that closes around an animal's neck. Below, part (b) asks how B is used on a sheep farm.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q16bii", topicId: "agsci-4-2", conceptId: "advice-from-the-colostrum-trial",
-    section: "B", questionRef: "2024 HL Q16(b)(ii)",
-    stem: "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)",
-    questionText: "Outline advice Ella and Sadie would give to farmers based on the results of their investigation.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Pooling colostrum or using colostrum from another dam has little effect on calf performance or own dam colostrum is best followed by pooled colostrum", marks: 4 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q16bi", topicId: "agsci-4-2", conceptId: "whether-pooling-colostrum-costs-quality",
-    section: "B", questionRef: "2024 HL Q16(b)(i)",
-    stem: "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)",
-    questionText: "Based on the results shown, state if there is any difference in colostrum quality when pooled.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Pooled colostrum is best or valid comparison with Sample 2 or", marks: 4 },
-    ],
-    figure: {
-          "candId": "agricultural-science-2024-hl-paper-p032-i0",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p032-i0.png",
-          "srcHash": "a5b58a6fbbd9ed6db2e088d01edea445",
-          "alt": "The colostrum investigation results table, four columns by four rows. A pink header row reads 'Sample number Treatment group', 'Colostrum IgG (mg/ml)', 'Average birthweight (kg)' and 'Average weaning weight (kg)'. Three lavender-shaded row headers read Sample 1 Pooled colostrum, Sample 2 Own dam colostrum and Sample 3 Colostrum from another dam, with values 100.7 / 34.0 / 94.0, 99.4 / 33.3 / 93.7 and 95.2 / 34.3 / 91.7. The italic attribution '(Adapted from Teagasc, 2019)' sits under the table at the right.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q18aiii", topicId: "agsci-4-1", conceptId: "dominant-features-in-a-cross",
-    section: "B", questionRef: "2024 HL Q18(a)(iii)",
-    questionText: "Isobel crossed breeds A and B in part (ii) above. The resulting offspring is shown in C below. C List two dominant features from parents in A and B in part (ii) above that are passed to the offspring C.",
-    tariffModel: {"kind":"fixed","notation":"6 + 2"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Black coat colour", marks: 6 },
-    { id: "r-2", kind: "point", verbatim: "coat pattern", marks: 2 },
-    ],
-    figure: {
-          "candId": "agricultural-science-2024-hl-paper-p037-i0",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p037-i0.png",
-          "srcHash": "57a643ecb8aab17a7e096fa40da1debd",
-          "alt": "The crossbreeding plate for Question 18(a). At the top the line '(ii) Identify the breeds shown in A and B.' over two photographs: A is a deep red-brown bull in profile on grass with a white face, white belly and white legs, wearing a halter; B is a black-and-white cow standing side-on in long grass, with black patches over the shoulder and hindquarters, a white belly and legs, yellow ear tags and a large freeze brand on the flank. An empty two-cell answer row sits under them. Below, the line '(iii) Isobel crossed breeds A and B in part (ii) above. The resulting offspring is shown in C below.' heads a photograph of calf C in a straw-bedded pen: a black-bodied calf with a completely white face, white lower legs and yellow ear tags.",
           "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -19356,6 +19677,959 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q2ai", topicId: "agsci-4-1", conceptId: "identifying-pig-sheep-and-cattle-breeds",
+    section: "A", questionRef: "2024 HL Q2(a)(i) — A, B",
+    stem: "Answer either (a) or (b). Practice choice: photographs A and B.",
+    questionText: "Identify any two of the following breeds.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Landrace", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "B: Blue Leicester", marks: 2, contextNote: "Photograph B." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q2(a)(i) — A, B",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p04-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
+          "srcHash": "3e02254d50de3b69951392d41a4cd272",
+          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Landrace","askedInThisQuestion":true},{"letter":"B","meaning":"Blue Leicester","askedInThisQuestion":true},{"letter":"C","meaning":"Simmental","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q2ai-route-ac", topicId: "agsci-4-1", conceptId: "identifying-pig-sheep-and-cattle-breeds",
+    section: "A", questionRef: "2024 HL Q2(a)(i) — A, C",
+    stem: "Answer either (a) or (b). Practice choice: photographs A and C.",
+    questionText: "Identify any two of the following breeds.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Landrace", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "C: Simmental", marks: 2, contextNote: "Photograph C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q2(a)(i) — A, C",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p04-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
+          "srcHash": "3e02254d50de3b69951392d41a4cd272",
+          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Landrace","askedInThisQuestion":true},{"letter":"B","meaning":"Blue Leicester","askedInThisQuestion":false},{"letter":"C","meaning":"Simmental","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q2ai-route-bc", topicId: "agsci-4-1", conceptId: "identifying-pig-sheep-and-cattle-breeds",
+    section: "A", questionRef: "2024 HL Q2(a)(i) — B, C",
+    stem: "Answer either (a) or (b). Practice choice: photographs B and C.",
+    questionText: "Identify any two of the following breeds.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B: Blue Leicester", marks: 2, contextNote: "Photograph B." },
+    { id: "r-2", kind: "point", verbatim: "C: Simmental", marks: 2, contextNote: "Photograph C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q2(a)(i) — B, C",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p04-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
+          "srcHash": "3e02254d50de3b69951392d41a4cd272",
+          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Landrace","askedInThisQuestion":false},{"letter":"B","meaning":"Blue Leicester","askedInThisQuestion":true},{"letter":"C","meaning":"Simmental","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q2aiii", topicId: "agsci-4-1", conceptId: "characteristics-of-a-terminal-sire",
+    section: "A", questionRef: "2024 HL Q2(a)(iii)",
+    stem: "Answer either (a) or (b). Part (i) shows three photographs lettered A, B and C; C is a bull.",
+    questionText: "Briefly explain characteristics of bull C in part (i) above that make it suitable as a terminal sire.",
+    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good conformation / high muscle / good KO% / good carcase weight", marks: 4, contextNote: "Two characteristics at 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Good conformation","high muscle","good KO%","good carcase weight"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q2(a)(iii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p04-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
+          "srcHash": "3e02254d50de3b69951392d41a4cd272",
+          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-3-1","agsci-3-2"]), kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q5a", topicId: "agsci-3-3-1", additionalTopicIds: ["agsci-3-2"], conceptId: "identifying-barley-wheat-and-oats",
+    section: "A", questionRef: "2024 HL Q5(a)",
+    stem: "Cereal crops form the basis of many animal and human diets with an estimated 2.1 million tonnes being produced in 2023. You have been asked to show a group of farmers barley, wheat and oats crops. At the time of visiting the farm, each crop was at the stage shown in row 1. Each crop at its ripening stage is shown for reference in row 2.",
+    questionText: "Assist farmers by identifying A, B and C as barley, wheat or oats.",
+    tariffModel: {"kind":"orderedSplit","notation":"5+2(1)"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Oats", marks: null, contextNote: "The scheme prints 5+2(1): the first correct identification earns 5 marks and the next two 1 each." },
+    { id: "r-2", kind: "point", verbatim: "B — Wheat", marks: null },
+    { id: "r-3", kind: "point", verbatim: "C — Barley", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q5(a)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-hl-paper-p009-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p009-i0.png",
+          "srcHash": "af669e8cc81a63e5c25983d334e7f483",
+          "alt": "The cereal identification plate. Bold capitals A, B and C head three columns, and a red 1 and a red 2 label the two rows. Row 1 is three colour close-ups of a leaf collar on a green cereal stem; a white callout box labelled 'Auricles' has white arrows pointing into photographs B and C. Under row 1 are the navy captions 'No auricles and leaf margins are hairless', 'Well-developed hairy auricles' and 'Large, hairless auricles'. Row 2 is three ripening-crop photographs: a field of drooping oat panicles, golden bearded-looking wheat ears against blue sky, and a long-awned barley ear against green foliage.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Oats","askedInThisQuestion":true},{"letter":"B","meaning":"Wheat","askedInThisQuestion":true},{"letter":"C","meaning":"Barley","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q6a", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
+    section: "A", questionRef: "2024 HL Q6(a) — Lameness control, Mineral supplementation of ewe's post mating",
+    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: lameness control and mineral supplementation of ewe's post mating.",
+    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "regular checking / footbath / antibiotic spray / paring hooves / vaccination / closed flock / breed selection", marks: 3, contextNote: "Lameness control: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["regular checking","footbath","antibiotic spray","paring hooves","vaccination","closed flock","breed selection"]} },
+    { id: "r-2", kind: "anyN", verbatim: "increased LWG / increased conception rates / increased milk production", marks: 2, contextNote: "Lameness control: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increased LWG","increased conception rates","increased milk production"]} },
+    { id: "r-3", kind: "anyN", verbatim: "(bucket) lick / bolus / injection / feed additive / drench", marks: 3, contextNote: "Mineral supplementation of ewe's post mating: action (i), 3 marks.", group: {"claimMax":1,"perOption":3,"options":["(bucket) lick","bolus","injection","feed additive","drench"]} },
+    { id: "r-4", kind: "anyN", verbatim: "improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease", marks: 2, contextNote: "Mineral supplementation of ewe's post mating: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["improve (P) conception rate or maintain pregnancy","improved development of embryo (health) or foetus or lamb","(Mg) prevent grass tetany or reduced (nutritional) disease"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q6(a) — Lameness control, Mineral supplementation of ewe's post mating",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q6a-route-lameness-meal", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
+    section: "A", questionRef: "2024 HL Q6(a) — Lameness control, Meal feeding of lamb's post weaning",
+    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: lameness control and meal feeding of lamb's post weaning.",
+    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "regular checking / footbath / antibiotic spray / paring hooves / vaccination / closed flock / breed selection", marks: 3, contextNote: "Lameness control: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["regular checking","footbath","antibiotic spray","paring hooves","vaccination","closed flock","breed selection"]} },
+    { id: "r-2", kind: "anyN", verbatim: "increased LWG / increased conception rates / increased milk production", marks: 2, contextNote: "Lameness control: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increased LWG","increased conception rates","increased milk production"]} },
+    { id: "r-3", kind: "anyN", verbatim: "creep feeder / trough", marks: 3, contextNote: "Meal feeding of lamb's post weaning: action (i), 3 marks.", group: {"claimMax":1,"perOption":3,"options":["creep feeder","trough"]} },
+    { id: "r-4", kind: "anyN", verbatim: "increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning", marks: 2, contextNote: "Meal feeding of lamb's post weaning: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increase liveweight gain","reach slaughter weight quicker","reduces stress of weaning"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q6(a) — Lameness control, Meal feeding of lamb's post weaning",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q6a-route-lameness-scanning", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
+    section: "A", questionRef: "2024 HL Q6(a) — Lameness control, Scanning of in-lamb ewes",
+    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: lameness control and scanning of in-lamb ewes.",
+    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "regular checking / footbath / antibiotic spray / paring hooves / vaccination / closed flock / breed selection", marks: 3, contextNote: "Lameness control: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["regular checking","footbath","antibiotic spray","paring hooves","vaccination","closed flock","breed selection"]} },
+    { id: "r-2", kind: "anyN", verbatim: "increased LWG / increased conception rates / increased milk production", marks: 2, contextNote: "Lameness control: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increased LWG","increased conception rates","increased milk production"]} },
+    { id: "r-3", kind: "point", verbatim: "ultrasound scanner or scanner placed on abdomen", marks: 3, contextNote: "Scanning of in-lamb ewes: action (i), 3 marks." },
+    { id: "r-4", kind: "anyN", verbatim: "determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes", marks: 2, contextNote: "Scanning of in-lamb ewes: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["determine the number of lambs the ewe is carrying","can feed ewes accordingly or housing management","cull barren ewes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q6(a) — Lameness control, Scanning of in-lamb ewes",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q6a-route-minerals-meal", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
+    section: "A", questionRef: "2024 HL Q6(a) — Mineral supplementation of ewe's post mating, Meal feeding of lamb's post weaning",
+    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: mineral supplementation of ewe's post mating and meal feeding of lamb's post weaning.",
+    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(bucket) lick / bolus / injection / feed additive / drench", marks: 3, contextNote: "Mineral supplementation of ewe's post mating: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["(bucket) lick","bolus","injection","feed additive","drench"]} },
+    { id: "r-2", kind: "anyN", verbatim: "improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease", marks: 2, contextNote: "Mineral supplementation of ewe's post mating: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["improve (P) conception rate or maintain pregnancy","improved development of embryo (health) or foetus or lamb","(Mg) prevent grass tetany or reduced (nutritional) disease"]} },
+    { id: "r-3", kind: "anyN", verbatim: "creep feeder / trough", marks: 3, contextNote: "Meal feeding of lamb's post weaning: action (i), 3 marks.", group: {"claimMax":1,"perOption":3,"options":["creep feeder","trough"]} },
+    { id: "r-4", kind: "anyN", verbatim: "increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning", marks: 2, contextNote: "Meal feeding of lamb's post weaning: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increase liveweight gain","reach slaughter weight quicker","reduces stress of weaning"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q6(a) — Mineral supplementation of ewe's post mating, Meal feeding of lamb's post weaning",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q6a-route-minerals-scanning", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
+    section: "A", questionRef: "2024 HL Q6(a) — Mineral supplementation of ewe's post mating, Scanning of in-lamb ewes",
+    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: mineral supplementation of ewe's post mating and scanning of in-lamb ewes.",
+    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(bucket) lick / bolus / injection / feed additive / drench", marks: 3, contextNote: "Mineral supplementation of ewe's post mating: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["(bucket) lick","bolus","injection","feed additive","drench"]} },
+    { id: "r-2", kind: "anyN", verbatim: "improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease", marks: 2, contextNote: "Mineral supplementation of ewe's post mating: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["improve (P) conception rate or maintain pregnancy","improved development of embryo (health) or foetus or lamb","(Mg) prevent grass tetany or reduced (nutritional) disease"]} },
+    { id: "r-3", kind: "point", verbatim: "ultrasound scanner or scanner placed on abdomen", marks: 3, contextNote: "Scanning of in-lamb ewes: action (i), 3 marks." },
+    { id: "r-4", kind: "anyN", verbatim: "determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes", marks: 2, contextNote: "Scanning of in-lamb ewes: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["determine the number of lambs the ewe is carrying","can feed ewes accordingly or housing management","cull barren ewes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q6(a) — Mineral supplementation of ewe's post mating, Scanning of in-lamb ewes",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q6a-route-meal-scanning", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
+    section: "A", questionRef: "2024 HL Q6(a) — Meal feeding of lamb's post weaning, Scanning of in-lamb ewes",
+    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: meal feeding of lamb's post weaning and scanning of in-lamb ewes.",
+    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "creep feeder / trough", marks: 3, contextNote: "Meal feeding of lamb's post weaning: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["creep feeder","trough"]} },
+    { id: "r-2", kind: "anyN", verbatim: "increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning", marks: 2, contextNote: "Meal feeding of lamb's post weaning: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increase liveweight gain","reach slaughter weight quicker","reduces stress of weaning"]} },
+    { id: "r-3", kind: "point", verbatim: "ultrasound scanner or scanner placed on abdomen", marks: 3, contextNote: "Scanning of in-lamb ewes: action (i), 3 marks." },
+    { id: "r-4", kind: "anyN", verbatim: "determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes", marks: 2, contextNote: "Scanning of in-lamb ewes: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["determine the number of lambs the ewe is carrying","can feed ewes accordingly or housing management","cull barren ewes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q6(a) — Meal feeding of lamb's post weaning, Scanning of in-lamb ewes",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-3"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q6bii", topicId: "agsci-4-3-3", conceptId: "sheep-scheme-health-welfare",
+    section: "A", questionRef: "2024 HL Q6(b)(ii) — Mineral supplementation of lambs pre-weaning, Flystrike control",
+    stem: "Answer either (a) or (b). The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: mineral supplementation of lambs pre-weaning; flystrike control; genotyping of ram. Practice choice: mineral supplementation of lambs pre-weaning and flystrike control.",
+    questionText: "Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
+    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mineral supplementation lambs pre-weaning: improved LWG or reduced nutritional disease", marks: null, contextNote: "Mineral supplementation of lambs pre-weaning. The scheme prints 3+1: the first correct explanation earns 3 marks and the second 1, whichever feature is answered first." },
+    { id: "r-2", kind: "point", verbatim: "Flystrike control: prevent maggots feeding off them (which increases liveweight of animal) or less pain", marks: null, contextNote: "Flystrike control." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q6(b)(ii) — Mineral supplementation of lambs pre-weaning, Flystrike control",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-3"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q6bii-route-minerals-genotyping", topicId: "agsci-4-3-3", conceptId: "sheep-scheme-health-welfare",
+    section: "A", questionRef: "2024 HL Q6(b)(ii) — Mineral supplementation of lambs pre-weaning, Genotyping of ram",
+    stem: "Answer either (a) or (b). The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: mineral supplementation of lambs pre-weaning; flystrike control; genotyping of ram. Practice choice: mineral supplementation of lambs pre-weaning and genotyping of ram.",
+    questionText: "Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
+    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mineral supplementation lambs pre-weaning: improved LWG or reduced nutritional disease", marks: null, contextNote: "Mineral supplementation of lambs pre-weaning. The scheme prints 3+1: the first correct explanation earns 3 marks and the second 1, whichever feature is answered first." },
+    { id: "r-2", kind: "point", verbatim: "Genotyping of ram: provides easier lambing or better disease resistance or less mutations or improved dag score or increased survival (rate)", marks: null, contextNote: "Genotyping of ram." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q6(b)(ii) — Mineral supplementation of lambs pre-weaning, Genotyping of ram",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-3"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q6bii-route-flystrike-genotyping", topicId: "agsci-4-3-3", conceptId: "sheep-scheme-health-welfare",
+    section: "A", questionRef: "2024 HL Q6(b)(ii) — Flystrike control, Genotyping of ram",
+    stem: "Answer either (a) or (b). The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: mineral supplementation of lambs pre-weaning; flystrike control; genotyping of ram. Practice choice: flystrike control and genotyping of ram.",
+    questionText: "Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
+    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Flystrike control: prevent maggots feeding off them (which increases liveweight of animal) or less pain", marks: null, contextNote: "Flystrike control. The scheme prints 3+1: the first correct explanation earns 3 marks and the second 1, whichever feature is answered first." },
+    { id: "r-2", kind: "point", verbatim: "Genotyping of ram: provides easier lambing or better disease resistance or less mutations or improved dag score or increased survival (rate)", marks: null, contextNote: "Genotyping of ram." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q6(b)(ii) — Flystrike control, Genotyping of ram",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-2-2-2"]), kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q9bi", topicId: "agsci-2-2-2", conceptId: "judging-soil-structure-quality",
+    section: "A", questionRef: "2024 HL Q9(b)(i)",
+    stem: "Answer either (a) or (b). Soil structure describes the arrangement of soil particles within a soil. These particles form clusters known as aggregates or peds in the soil.",
+    questionText: "Based on your knowledge of soil structure, identify the soil quality of each of the different soils in A, B and C using the list below: Moderate quality, Poor quality, Good quality.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Good", marks: 2, contextNote: "Soil A." },
+    { id: "r-2", kind: "point", verbatim: "B: Moderate", marks: 2, contextNote: "Soil B." },
+    { id: "r-3", kind: "point", verbatim: "C: Poor", marks: 2, contextNote: "Soil C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q9(b)(i)",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2024-hl-paper-soil-structure",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-soil-structure.png",
+          "srcHash": "d25aaa525a101d32e0170b50feff11f3",
+          "alt": "Original Question 9(b) plate: the list Moderate quality, Poor quality, Good quality above three circular photographs of soil lettered A, B and C, each with a ruler for scale: A a fine, dark, crumbly soil with roots, B smaller angular clods, C large pale blocky clods.",
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 14 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Good quality","askedInThisQuestion":true},{"letter":"B","meaning":"Moderate quality","askedInThisQuestion":true},{"letter":"C","meaning":"Poor quality","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-2-2-2"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q9bii", topicId: "agsci-2-2-2", conceptId: "reason-for-good-soil-structure",
+    section: "A", questionRef: "2024 HL Q9(b)(ii)",
+    stem: "Answer either (a) or (b). Soil structure describes the arrangement of soil particles within a soil. These particles form clusters known as aggregates or peds in the soil. In part (i), soil A is the good quality soil structure.",
+    questionText: "Briefly describe one reason for your choice of good quality soil structure in part (i) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Soil particles are predominantly small / soil particles are predominantly round / good crumb structure / presence of organic matter", marks: 4, contextNote: "One reason, 4 marks.", group: {"claimMax":1,"perOption":4,"options":["Soil particles are predominantly small","soil particles are predominantly round","good crumb structure","presence of organic matter"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q9(b)(ii)",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2024-hl-paper-soil-structure",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-soil-structure.png",
+          "srcHash": "d25aaa525a101d32e0170b50feff11f3",
+          "alt": "Original Question 9(b) plate: the list Moderate quality, Poor quality, Good quality above three circular photographs of soil lettered A, B and C, each with a ruler for scale: A a fine, dark, crumbly soil with roots, B smaller angular clods, C large pale blocky clods.",
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 14 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-2","agsci-1-2"]), kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q13aii", topicId: "agsci-3-2", additionalTopicIds: ["agsci-1-2"], conceptId: "identifying-grassland-indicator-plants",
+    section: "B", questionRef: "2024 HL Q13(a)(ii)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer's land.",
+    questionText: "Gill identified the following plants on the land when carrying out the investigation. Identify the plants A, B, C and D using the list below: Ragwort, Meadow Thistle, Nettle, Primrose.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Primrose", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "B — Nettle", marks: 2, contextNote: "Photograph B." },
+    { id: "r-3", kind: "point", verbatim: "C — Ragwort", marks: 2, contextNote: "Photograph C." },
+    { id: "r-4", kind: "point", verbatim: "D — Meadow Thistle", marks: 2, contextNote: "Photograph D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q13(a)(ii)",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2024-hl-paper-indicator-plants",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-indicator-plants.png",
+          "srcHash": "7188791890775f4eea07e77e416ac1a6",
+          "alt": "Original Question 13(a)(ii) plate: the word list Ragwort, Meadow Thistle, Nettle and Primrose above four colour photographs lettered A to D: pale yellow flowers among crinkled leaves, a dense clump of serrated green leaves, tall stems of bright yellow daisy-like flowers, and a single purple thistle head.",
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 22 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Primrose","askedInThisQuestion":true},{"letter":"B","meaning":"Nettle","askedInThisQuestion":true},{"letter":"C","meaning":"Ragwort","askedInThisQuestion":true},{"letter":"D","meaning":"Meadow Thistle","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-2","agsci-3-3-3"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q14c", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-3-3"], conceptId: "drawing-grass-at-harvest-stage",
+    section: "B", questionRef: "2024 HL Q14(c)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions. Parts (c) and (d) are alternatives — answer one of them. The paper gives a Stage line and a box for your labelled diagram.",
+    questionText: "Draw a labelled diagram of a grass plant at the ideal named growth stage for harvesting.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Name: Vegetative", marks: null, contextNote: "Named stage: 2 marks." },
+    { id: "r-2", kind: "criterion", verbatim: "Elements of diagram: To show at least 3 leaves or tillers, and no seed head for 2m;", marks: null, contextNote: "Diagram, D = 2, 1, 0: seed head present or less than 3 leaves for 1m; no elements listed present 0m." },
+    { id: "r-3", kind: "point", verbatim: "Leaf / tiller / node / stem/ sheath / collar / root", marks: null, contextNote: "Labelled diagram, L = 2." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q14(c)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q15aiii", topicId: "agsci-4-1", conceptId: "factors-influencing-cattle-nutrient-requirements",
+    section: "B", questionRef: "2024 HL Q15(a)(iii) — Animal-related factors",
+    stem: "Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. (Adapted from mcdvetmanual.com) The amounts of nutrients that cattle require is influenced by various animal-related factors and environmental conditions. Practice choice: animal-related factors.",
+    questionText: "State two animal-related factors or two environmental conditions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Weight / age / sex / stage and extent of production / body composition / genetics / amount of physical activity / health", marks: 4, contextNote: "Animal-related factors: two at 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Weight","age","sex","stage and extent of production","body composition","genetics","amount of physical activity","health"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q15(a)(iii) — Animal-related factors",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q15aiii-route-environmental-conditions", topicId: "agsci-4-1", conceptId: "factors-influencing-cattle-nutrient-requirements",
+    section: "B", questionRef: "2024 HL Q15(a)(iii) — Environmental conditions",
+    stem: "Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. (Adapted from mcdvetmanual.com) The amounts of nutrients that cattle require is influenced by various animal-related factors and environmental conditions. Practice choice: environmental conditions.",
+    questionText: "State two animal-related factors or two environmental conditions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Temperature / humidity / wind chill or draught free / ultraviolet radiation or UV light / precipitation / soil nutrient deficiencies", marks: 4, contextNote: "Environmental conditions: two at 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Temperature","humidity","wind chill or draught free","ultraviolet radiation or UV light","precipitation","soil nutrient deficiencies"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q15(a)(iii) — Environmental conditions",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-1","agsci-1-3"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q15ci", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-1-3"], conceptId: "calculating-daily-liveweight-gain",
+    section: "B", questionRef: "2024 HL Q15(c)(i)",
+    stem: "Paul started weighing his beef calves to increase efficiency and comply with the Dairy Beef Weighing Scheme. Paul recorded the weight of his 52 beef calves. The average weight from birth to 15 weeks is shown in the graph below. Analyse the graph and answer the questions that follow.",
+    questionText: "Calculate the average (mean) daily liveweight gain of the calves from birth to 15 weeks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "85/105 = 0.81(kg/day)", marks: 6, contextNote: "125 – 40 = 85; 15 X 7 = 105; 85/105 = 0.81 (kg/day). The scheme adds: if a candidate gives 0.81 without showing calculation, award 6m; if the candidate completes two correct calculations, award 5m; if the candidate gives the correct calculation, award 4m." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q15(c)(i)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2024-hl-paper-liveweight-graph",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-liveweight-graph.png",
+          "srcHash": "d73f0bc16610489b11b6a64e67396812",
+          "alt": "Original line graph, Average Liveweight Gain of Dairy Beef Calves: liveweight (kg) against age (weeks) from 0 to 15, each point labelled 40, 45, 51, 57, 62, 68, 74, 80, 86, 92, 98, 103, 108, 113, 119 and 125 kg.",
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 30 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-2"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q16bi", topicId: "agsci-4-2", conceptId: "whether-pooling-colostrum-costs-quality",
+    section: "B", questionRef: "2024 HL Q16(b)(i)",
+    stem: "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves. Results of the investigation are shown in the table below. Analyse the table and answer the questions that follow.",
+    questionText: "Based on the results shown, state if there is any difference in colostrum quality when pooled.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pooled colostrum is best", marks: 4, accepts: ["valid comparison with Sample 2 or Sample 3"], contextNote: "One 4-mark statement." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q16(b)(i)",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-hl-paper-p032-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p032-i0.png",
+          "srcHash": "a5b58a6fbbd9ed6db2e088d01edea445",
+          "alt": "The colostrum investigation results table, four columns by four rows. A pink header row reads 'Sample number Treatment group', 'Colostrum IgG (mg/ml)', 'Average birthweight (kg)' and 'Average weaning weight (kg)'. Three lavender-shaded row headers read Sample 1 Pooled colostrum, Sample 2 Own dam colostrum and Sample 3 Colostrum from another dam, with values 100.7 / 34.0 / 94.0, 99.4 / 33.3 / 93.7 and 95.2 / 34.3 / 91.7. The italic attribution '(Adapted from Teagasc, 2019)' sits under the table at the right.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-2"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q16bii", topicId: "agsci-4-2", conceptId: "advice-from-the-colostrum-trial",
+    section: "B", questionRef: "2024 HL Q16(b)(ii)",
+    stem: "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves. Results of the investigation are shown in the table below. Analyse the table and answer the questions that follow.",
+    questionText: "Outline advice Ella and Sadie would give to farmers based on the results of their investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pooling colostrum or using colostrum from another dam has little effect on calf performance or own dam colostrum is best followed by pooled colostrum", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q16(b)(ii)",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-hl-paper-p032-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p032-i0.png",
+          "srcHash": "a5b58a6fbbd9ed6db2e088d01edea445",
+          "alt": "The colostrum investigation results table, four columns by four rows. A pink header row reads 'Sample number Treatment group', 'Colostrum IgG (mg/ml)', 'Average birthweight (kg)' and 'Average weaning weight (kg)'. Three lavender-shaded row headers read Sample 1 Pooled colostrum, Sample 2 Own dam colostrum and Sample 3 Colostrum from another dam, with values 100.7 / 34.0 / 94.0, 99.4 / 33.3 / 93.7 and 95.2 / 34.3 / 91.7. The italic attribution '(Adapted from Teagasc, 2019)' sits under the table at the right.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-1"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q17a", topicId: "agsci-3-1", conceptId: "abiotic-factors-affecting-agriculture",
+    section: "B", questionRef: "2024 HL Q17(a)",
+    stem: "Plant biostimulants and biotic factors in soil help improve plant growth by increasing nutrient uptake, nutrient use efficiency (NUE) and tolerance to stress from abiotic factors.",
+    questionText: "Briefly describe how any named abiotic factor will affect Irish agriculture.",
+    tariffModel: {"kind":"fixed","notation":"5 (factor) + 1 (description)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Temperature / Humidity / Soil chemistry / Salinity / Oxygen levels / Moisture levels or drought or flooding", marks: 5, contextNote: "Named abiotic factor: 5 marks. The scheme closes its table with \"Any named correct effect on plant or animal production + matching description\".", openList: true, group: {"claimMax":1,"perOption":5,"options":["Temperature","Humidity","Soil chemistry","Salinity","Oxygen levels","Moisture levels or drought or flooding"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Too hot or cold will cause crop failure or animal disease / Cause crop failure or animal disease / If not correct for plant type will cause reduced crop yields / May cause reduced yield", marks: 1, contextNote: "Description matching the factor named: 1 mark. Scheme pairs: temperature, too hot or cold; humidity, crop failure or animal disease; soil chemistry, salinity and oxygen levels, reduced crop yields if not correct for the plant type; moisture levels, reduced yield.", group: {"claimMax":1,"perOption":1,"options":["Too hot or cold will cause crop failure or animal disease","Cause crop failure or animal disease","If not correct for plant type will cause reduced crop yields","May cause reduced yield"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q17(a)",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-1"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q17cii", topicId: "agsci-3-1", conceptId: "calculating-percent-soil-organic-matter",
+    section: "B", questionRef: "2024 HL Q17(c)(ii)",
+    stem: "A student carried out an investigation to determine the percentage organic matter of two different 90g soil samples, one a loam soil and the other a peat soil. Results from the investigation are shown in the table below.",
+    questionText: "Calculate A the % soil organic matter in the peat sample.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "55.2/90 X 100 = 61.3(%)", marks: 6, contextNote: "The results table gives the peat sample a loss in mass of 55.2 g with its two percentage cells blanked and lettered A and B; the loam row below is filled in at 3.8, 4.2 and 2.4." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q17(c)(ii)",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p36-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p36-art.png",
+          "srcHash": "e2adf0f6cbdc572de192c0a1af1dd0c8",
+          "alt": "The Question 17(c) results table, with its header row complete. Four columns: Soil sample, Loss in mass (g), % Soil organic matter, % Soil organic carbon. The Peat row reads 55.2 for loss in mass, then two cells highlighted in yellow carrying the letters A and B in place of values. The Loam row beneath it is filled in throughout: 3.8, 4.2 and 2.4. Above the table sit the ruled Predication and Reason boxes from part (c)(i) and the line 'Results from the investigation are shown in the table below.'; below it are parts (ii) and (iii) with their Calculation boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-1"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q17ciii", topicId: "agsci-3-1", conceptId: "calculating-percent-soil-organic-carbon",
+    section: "B", questionRef: "2024 HL Q17(c)(iii)",
+    stem: "A student carried out an investigation to determine the percentage organic matter of two different 90g soil samples, one a loam soil and the other a peat soil. Results from the investigation are shown in the table below.",
+    questionText: "Calculate B the % soil organic carbon in the peat sample.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "61.3 x 0.58 = 35.55 or 36%", marks: 6, contextNote: "The results table gives the peat sample a loss in mass of 55.2 g with its two percentage cells blanked and lettered A and B; the loam row below is filled in at 3.8, 4.2 and 2.4." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q17(c)(iii)",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p36-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p36-art.png",
+          "srcHash": "e2adf0f6cbdc572de192c0a1af1dd0c8",
+          "alt": "The Question 17(c) results table, with its header row complete. Four columns: Soil sample, Loss in mass (g), % Soil organic matter, % Soil organic carbon. The Peat row reads 55.2 for loss in mass, then two cells highlighted in yellow carrying the letters A and B in place of values. The Loam row beneath it is filled in throughout: 3.8, 4.2 and 2.4. Above the table sit the ruled Predication and Reason boxes from part (c)(i) and the line 'Results from the investigation are shown in the table below.'; below it are parts (ii) and (iii) with their Calculation boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1","agsci-4-3-3"]), kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q18aii", topicId: "agsci-4-1", additionalTopicIds: ["agsci-4-3-3"], conceptId: "identifying-hereford-and-friesian",
+    section: "B", questionRef: "2024 HL Q18(a)(ii)",
+    stem: "Isobel was crossbreeding some of the cattle on her dairy farm.",
+    questionText: "Identify the breeds shown in A and B.",
+    tariffModel: {"kind":"orderedSplit","notation":"6+2"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Hereford", marks: null, contextNote: "The scheme prints 6+2: the first correct breed earns 6 marks and the second 2." },
+    { id: "r-2", kind: "point", verbatim: "B: (Holstein) Friesian", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q18(a)(ii)",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2024-hl-paper-breeds-ab",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-breeds-ab.png",
+          "srcHash": "f803f80805f38c540dce1fb28b987beb",
+          "alt": "Original Question 18(a)(ii) photographs: A a deep red-brown bull with a white face, belly and legs wearing a halter; B a black-and-white cow standing side-on in grass.",
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 37 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Hereford","askedInThisQuestion":true},{"letter":"B","meaning":"(Holstein) Friesian","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q18aiii", topicId: "agsci-4-1", conceptId: "dominant-features-in-a-cross",
+    section: "B", questionRef: "2024 HL Q18(a)(iii)",
+    stem: "Isobel was crossbreeding some of the cattle on her dairy farm. Part (ii) shows breeds A and B; Isobel crossed them and the resulting offspring is shown in C.",
+    questionText: "Isobel crossed breeds A and B in part (ii) above. The resulting offspring is shown in C below. List two dominant features from parents in A and B in part (ii) above that are passed to the offspring C.",
+    tariffModel: {"kind":"fixed","notation":"6+2"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Black coat colour / coat pattern / white face / white legs and belly / pink nose / tail switch", marks: 8, contextNote: "Any two dominant features: the first correct earns 6 marks and the second 2 (6+2).", group: {"claimMax":2,"perOption":6,"options":["Black coat colour","coat pattern","white face","white legs and belly","pink nose","tail switch"],"perOptionSteps":[6,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q18(a)(iii)",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-hl-paper-p037-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p037-i0.png",
+          "srcHash": "57a643ecb8aab17a7e096fa40da1debd",
+          "alt": "The crossbreeding plate for Question 18(a). At the top the line '(ii) Identify the breeds shown in A and B.' over two photographs: A is a deep red-brown bull in profile on grass with a white face, white belly and white legs, wearing a halter; B is a black-and-white cow standing side-on in long grass, with black patches over the shoulder and hindquarters, a white belly and legs, yellow ear tags and a large freeze brand on the flank. An empty two-cell answer row sits under them. Below, the line '(iii) Isobel crossed breeds A and B in part (ii) above. The resulting offspring is shown in C below.' heads a photograph of calf C in a straw-bedded pen: a black-bodied calf with a completely white face, white lower legs and yellow ear tags.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-3"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q18biii", topicId: "agsci-4-3-3", conceptId: "genetic-engineering-in-animal-breeding",
+    section: "B", questionRef: "2024 HL Q18(b)(iii)",
+    stem: "In June 2023, The National Genotyping Programme was introduced to genotype the national herd.",
+    questionText: "Briefly describe one named method of genetic engineering you have studied and explain its importance in animal breeding.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Cloning / Genetic modification (GM) / Gene editing", marks: 2, contextNote: "Named method: 2 marks. The scheme adds \"Or other valid example and explained importance\".", openList: true, group: {"claimMax":1,"perOption":2,"options":["Cloning","Genetic modification (GM)","Gene editing"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Exact genotypic copies of living things / Organism whose genetic make up has been modified in a lab / Scientist can change or alter the DNA of an organism", marks: 2, contextNote: "Description of the method named: 2 marks.", group: {"claimMax":1,"perOption":2,"options":["Exact genotypic copies of living things","Organism whose genetic make up has been modified in a lab","Scientist can change or alter the DNA of an organism"]} },
+    { id: "r-3", kind: "anyN", verbatim: "To produce more meat or milk / research animal diseases / maintain superior animal characteristics / Increased disease resistance / polled animals / sterile male animals / reduced genetic disorders passed on / increased productivity / adjust rumen function", marks: 2, contextNote: "Importance in animal breeding, matching the method: 2 marks (3(2) in all). Cloning: more meat or milk, research animal diseases, maintain superior characteristics. Genetic modification and gene editing: disease resistance, polled or sterile male animals, fewer genetic disorders, productivity, research, rumen function.", group: {"claimMax":1,"perOption":2,"options":["To produce more meat or milk","research animal diseases","maintain superior animal characteristics","Increased disease resistance","polled animals","sterile male animals","reduced genetic disorders passed on","increased productivity","adjust rumen function"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q18(b)(iii)",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-3-2","agsci-2-3"]), kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q18c", topicId: "agsci-3-3-2", additionalTopicIds: ["agsci-2-3"], conceptId: "integrated-pest-management-advice",
+    section: "B", questionRef: "2024 HL Q18(c)",
+    stem: "With the EU's 'Farm to Fork Strategy' proposed to reduce by 50% the use of chemical pesticides, Integrated Pest Management (IPM) systems are becoming increasingly important. The IPM diagram is a pyramid: Prevention at the base, then Cultural / Sanitation, Physical / Mechanical, Biological, and Chemical (Pesticide) at the top.",
+    questionText: "Using the information shown in the diagram on IPM, advise farmers on ways they can reduce chemical inputs on their farm.",
+    tariffModel: {"kind":"orderedSplit","notation":"6+6+4"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Biological – ladybirds control aphids / ducks or geese control mud snail / dock beetle and dock leaf / cat or dog and rodent", marks: null, contextNote: "IPM – Preventative methods are the most important part of IPM and the use of chemicals should be a last resort. The scheme prints 6+6+4: three points, the first two at 6 marks and the third at 4." },
+    { id: "r-2", kind: "point", verbatim: "Physical / mechanical – fans / pulling by hand or rogueing / scorching / grazing / fleece / netting / eggshells / sticky pads / named relevant physical barrier / topping", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Cultural / sanitation – machine hygiene / biosecurity or closed herd / correct crop storage methods", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Prevention – crop rotation / sterile seed bed /correct sowing date / certified seed / timely harvest / resistant varieties / any minimum cultivation method / companion crop (cover crop)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Higher — Q18(c)",
+          "pages": [
+                39
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2024-hl-paper-ipm-pyramid",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-ipm-pyramid.png",
+          "srcHash": "caba8e4bbec3e897ce173144c514fdfc",
+          "alt": "Original Integrated Pest Management pyramid: Prevention at the base, then Cultural / Sanitation, Physical / Mechanical, Biological, and Chemical (Pesticide) at the narrow top.",
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 39 — © State Examinations Commission.",
+          "lettersVisible": []
     },
   } as SecCard,
 ];

@@ -877,9 +877,105 @@ POOLS_2025_ORDINARY = {
     'Q14(c)(iii)': (2, ['J', 'K', 'L']),
 }
 
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY}
+# 2024 Higher: Section A Q1-Q12 at 10 marks, Section B Q13-Q18 at 50 (Q18's
+# published allocations total 54; see MODERN_LAYOUTS).
+HIGHER_2024 = '''
+Q1(a)|6|3|12|C: Head gate / fostering crate
+Q1(b)|4|3|12|Filled with colostrum / tube is put down oesophagus
+Q2(a)(i)|4|4|12|B: Blue Leicester
+Q2(a)(ii)|2|4|12|Produce many offspring
+Q2(a)(iii)|4|4|12|Good conformation / high muscle
+Q2(b)(i)|3|5|12|Occurs when a cow cannot get sufficient energy
+Q2(b)(ii)|3|5|12|Superb quality beef / distinctive flavour
+Q2(b)(iii)|4|5|12|Early maturing – steers finish between 20-24 months
+Q3(a)(i)|1|6|13|Short (1-2 days)
+Q3(a)(ii)|1|6|13|Reduced root growth during grazing
+Q3(a)(iii)|8|6|13|Set stocking
+Q3(b)|10|7|13|Any 3 factors
+Q4|10|8|14|Decreased nutrient store
+Q5(a)|7|9|14|Oats Wheat Barley 5+2(1)
+Q5(b)|3|9|14|Not certified seed
+Q6(a)|10|10|15|Scanning in-lamb ewes
+Q6(b)(i)|6|11|15|132 x 12 = €1584
+Q6(b)(ii)|4|11|15|Flystrike control
+Q7(a)|4|12|16|Integration of trees with either crops or livestock
+Q7(b)|6|12|16|enhancing the capacity for on-farm
+Q8(a)|2|13|16|A living organism that kills and eats another organism
+Q8(b)|2|13|16|Controls the dock leaf without the use of (selective) herbicides
+Q8(c)|6|13|16|Aphids (greenfly)
+Q9(a)|10|14|16|No ions present / no ion
+Q9(b)(i)|6|14|16|A: Good B: Moderate C: Poor
+Q9(b)(ii)|4|14|16|Soil particles are predominantly small
+Q10(a)|4|15|17|Identify which picture A or B is more likely to be a multi-species sward.
+Q10(b)|4|15|17|PRG / red clover / white clover / plantain / chicory / timothy
+Q10(c)|2|15|17|increased microbial communities
+Q11(a)|4|16|17|= 375.25 or 375 days
+Q11(b)|2|16|17|More accurate heat detection
+Q11(c)|4|16|17|Cow: 2
+Q12(a)|6|17|17|include buffer zones
+Q12(b)|4|17|17|farm plastics / nitrogen leaching
+Q13(a)(i)|12|21|18|Throw pen at random / place quadrat
+Q13(a)(ii)|8|22|18|Primrose Nettle Ragwort Meadow Thistle
+Q13(a)(iii)|8|22|18|Reduce the amounts of fertiliser added
+Q13(b)(i)|8|23|18|iron pan formation
+Q13(b)(ii)|6|23|18|West of Ireland / midlands / any named correct location
+Q13(c)|8|24|18|Healthy peat bogs act as
+Q13(d)|8|24|18|install bird or bat or owl boxes
+Q14(a)(i)|6|25|19|Lactobacillus
+Q14(a)(ii)|12|25|19|lactobacillus bacteria feed off sugar
+Q14(a)(iii)|6|25|19|Identify the ideal DM % of good quality silage
+Q14(b)(i)|12|26|19|repeat weighing until you get a
+Q14(b)(ii)|8|27|19|stage of growth at cutting / chop length
+Q14(c)|6|27|19|Name: Vegetative
+Q14(d)|6|27|20|Palatability / digestibility or leafy / productivity / persistence
+Q15(a)(i)|3|28|20|All observable or physical characteristics of the animal
+Q15(a)(ii)|9|28|20|Repair / build muscle / milk production
+Q15(a)(iii)|4|28|20|State two animal-related factors or two environmental conditions.
+Q15(a)(iv)|3|29|20|low energy requirement
+Q15(a)(v)|6|29|21|Briefly describe the symptoms and prevention of a named mineral deficiency in
+Q15(b)(i)|6|29|21|forecast time of sale of animals
+Q15(b)(ii)|9|29|21|Have an escape route
+Q15(c)(i)|6|30|21|85/105 = 0.81(kg/day)
+Q15(c)(ii)|4|30|22|€20 X 50 = €1000
+Q16(a)(i)|2|31|22|Hypothesis must include effect on health or performance
+Q16(a)(ii)|7|31|22|It is a fair test (Yes)
+Q16(a)(iii)|11|31|22|Independent: Colostrum sample
+Q16(a)(iv)|4|32|22|Scales not calibrated
+Q16(b)(i)|4|32|22|Pooled colostrum is best
+Q16(b)(ii)|4|32|22|has little effect on calf performance
+Q16(c)|6|32|22|*Introduce hay or concentrates
+Q16(d)|12|33|23|10% bodyweight / 4 litres
+Q17(a)|6|34|23|5 (factor) + 1
+Q17(b)(i)|5|34|23|diagram must show root with rhizosphere zone
+Q17(b)(ii)|3|34|23|Symbiotic relationship
+Q17(b)(iii)|6|34|24|Mycorrhizal
+Q17(b)(iv)|6|35|24|Enhance water holding capacity
+Q17(b)(v)|6|35|24|Reducing tillage operations
+Q17(c)(i)|6|36|24|as it is formed from partially decomposed plant
+Q17(c)(ii)|6|36|24|55.2/90 X 100 = 61.3(%)
+Q17(c)(iii)|6|36|24|61.3 x 0.58 = 35.55 or 36%
+Q18(a)(i)|4|37|25|Offspring produced from purebred parents of different breeds
+Q18(a)(ii)|8|37|25|A: Hereford
+Q18(a)(iii)|8|37|25|Black coat colour / coat pattern / white face
+Q18(b)(i)|4|38|25|Genetic make-up (code) of an organism
+Q18(b)(ii)|8|38|25|Parent verification
+Q18(b)(iii)|6|38|25|Or other valid example and explained importance
+Q18(c)|16|39|26|6+6+4
+'''
+
+POOLS_2024_HIGHER = {
+    'Q2(a)(i)': (2, ['A', 'B', 'C']),
+    'Q6(a)': (2, ['Lameness control', "Mineral supplementation of ewe's post mating", "Meal feeding of lamb's post weaning", 'Scanning of in-lamb ewes']),
+    'Q6(b)(ii)': (2, ['Mineral supplementation of lambs pre-weaning', 'Flystrike control', 'Genotyping of ram']),
+    'Q15(a)(iii)': (1, ['Animal-related factors', 'Environmental conditions']),
+}
+
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER}
 
 SOURCES = [
+    (2024, 'higher', 'A', HIGHER_2024,
+     '6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84',
+     'a3ae68c8d965d958bc13054ef527ddf64d8f8991053859aae5b4823d69b3f225'),
     (2025, 'ordinary', 'G', ORDINARY_2025,
      '481fbf4a01b2ed81472ad70745f47b2c413131939a6cc1b42cc1a16e40f458a7',
      'c2170cf98ba10073a7fa35497bc54ba039f807b1985bf616f5556cd57918e624'),
@@ -950,7 +1046,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -1001,6 +1097,9 @@ MODERN_LAYOUTS = {
                       'marks':lambda n: 10 if n<=12 else 50},
     (2025,'ordinary'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q15','Q17'},
                         'marks':lambda n: 10 if n<=12 else 50},
+    (2024,'higher'): {'either':{'Q2','Q3','Q6','Q9'}, 'bothWithEither':{'Q13','Q14'},
+                      'marks':lambda n: 10 if n<=12 else 50,
+                      'exceptions':{'Q18':(54,'The published allocations for Q18 total 54, not the printed 50: (a) 4 + (6+2) + (6+2) = 20, (b) 4 + (6+2) + 3(2) = 18, (c) 6+6+4 = 16. Preserve the scheme and disclose the difference.')}},
 }
 
 
@@ -1019,9 +1118,10 @@ def modern_question_check(paper,question,tasks,layout):
     else:
         totals, rule = [sum(units.values())], 'all parts'
     expected = layout['marks'](int(question[1:]))
-    assert totals==[expected], (paper['year'],paper['level'],question,units,totals)
+    published, exception = layout.get('exceptions',{}).get(question,(expected,None))
+    assert totals==[published], (paper['year'],paper['level'],question,units,totals)
     return {'year':paper['year'],'level':paper['level'],'lang':paper['lang'],'question':question,'units':units,
-            'rule':rule,'candidateTotalsFromScheme':totals,'printedQuestionMarks':expected,'sourceException':None}
+            'rule':rule,'candidateTotalsFromScheme':totals,'printedQuestionMarks':expected,'sourceException':exception}
 
 
 def question_mark_checks(papers):
@@ -1073,7 +1173,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62; 2026 Higher 91 / 112; 2026 Ordinary 85 / 114; 2025 Higher 89 / 112; 2025 Ordinary 91 / 99. Remaining editions stay open.')
+    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62; 2026 Higher 91 / 112; 2026 Ordinary 85 / 114; 2025 Higher 89 / 112; 2025 Ordinary 91 / 99; 2024 Higher 81 / 91. Remaining editions stay open.')
 
 
 if __name__=='__main__':

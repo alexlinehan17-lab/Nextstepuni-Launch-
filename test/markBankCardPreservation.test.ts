@@ -436,7 +436,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(644);
+    expect(additions.size).toBe(663);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length).toBe(10_495);
@@ -460,6 +460,17 @@ describe('Mark Bank card preservation', () => {
       'agsci-2025-ol-q1ai': 'Any three of four printed cattle breeds: first printed route (A, B, C).',
       'agsci-2025-ol-q9bi-ii': 'Keeps part (i) only (3 marks); part (ii) already ships as agsci-2025-ol-q9bii.',
       'agsci-2025-ol-q9biii-iv': 'Keeps part (iii) only (3 marks); part (iv) already ships as agsci-2025-ol-q9biv.',
+      'agsci-2024-hl-q2ai': 'Any two of three printed breed photographs: first printed route (A, B).',
+      'agsci-2024-hl-q2aiii': 'Drops the question wording that had been listed as an accepted answer; any two of four printed characteristics, 2(2).',
+      'agsci-2024-hl-q6a': 'Any two of four printed scheme features, action 3 + benefit 2 each: first printed route (lameness control, ewe minerals).',
+      'agsci-2024-hl-q6bii': 'Any two of three printed welfare features at 3+1: first printed route (lamb minerals, flystrike).',
+      'agsci-2024-hl-q15aiii': 'Two animal-related factors OR two environmental conditions: first printed route (animal-related factors).',
+      'agsci-2024-hl-q16bi': 'Restores the truncated answer ("... with Sample 2 or Sample 3") and the paper\'s results-table lead-in and crop.',
+      'agsci-2024-hl-q16bii': 'Replaces a flattened results table in the stem with the paper\'s lead-in and the table crop.',
+      'agsci-2024-hl-q17a': 'Restores the published 5 (factor) + 1 (description) split instead of all-or-nothing 6.',
+      'agsci-2024-hl-q17cii': 'Replaces a flattened results table in the stem with the paper\'s own lead-in.',
+      'agsci-2024-hl-q17ciii': 'Replaces a flattened results table in the stem with the paper\'s own lead-in.',
+      'agsci-2024-hl-q18aiii': 'Any two of six printed dominant features at 6+2, not black coat and coat pattern only.',
     };
     expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
     const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
@@ -475,6 +486,9 @@ describe('Mark Bank card preservation', () => {
     }
     expect(live.get('agsci-2025-hl-q14bi')?.totalMarks).toBe(17);
     for (const key of ['a', 'b', 'c', 'd', 'e']) expect(live.get(`agsci-2025-hl-q12${key}`)?.totalMarks).toBe(10);
+    // 2024 Higher corrections keep each original's ID and total.
+    for (const [id, marks] of [['agsci-2024-hl-q2ai', 4], ['agsci-2024-hl-q6a', 10], ['agsci-2024-hl-q6bii', 4], ['agsci-2024-hl-q15aiii', 4],
+      ['agsci-2024-hl-q17a', 6], ['agsci-2024-hl-q18aiii', 8]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {

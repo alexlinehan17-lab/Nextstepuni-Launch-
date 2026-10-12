@@ -586,5 +586,505 @@
   },
   "originalSha256": "e6d0ad7066be9f2300fa2302fdb11bcb15b8a15972c2f95226ba069dff0e3e52",
   "snapshotFrom": "codex/agricultural-science-completion-20261007 at d6f8cb6b (unchanged since the original 869-card bank)"
+ },
+ "agsci-2024-hl-q15aiii": {
+  "original": {
+   "id": "agsci-2024-hl-q15aiii",
+   "topicId": "agsci-4-1",
+   "conceptId": "factors-influencing-cattle-nutrient-requirements",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2024 HL Q15(a)(iii)",
+   "stem": "Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. (Adapted from mcdvetmanual.com) The amounts of nutrients that cattle require is influenced by various animal-related factors and environmental conditions.",
+   "questionText": "State two animal-related factors or two environmental conditions.",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "answer": 2,
+    "ofParts": 14,
+    "perPart": 2
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "anyN",
+     "verbatim": "Weight // age // sex // extent of production // composition // genetics // of physical activity // health // Temperature // humidity // chill or draught free // radiation or UV light // precipitation // soil nutrient deficiencies",
+     "marks": null,
+     "group": {
+      "claimMax": 2,
+      "perOption": 2,
+      "options": [
+       "Weight",
+       "age",
+       "sex",
+       "extent of production",
+       "composition",
+       "genetics",
+       "of physical activity",
+       "health",
+       "Temperature",
+       "humidity",
+       "chill or draught free",
+       "radiation or UV light",
+       "precipitation",
+       "soil nutrient deficiencies"
+      ]
+     }
+    }
+   ],
+   "notes": "Tariff 2(2) = two answers at two marks each = 4, from a fourteen-item printed pool, so bestNofParts 2 of 14 @ 2. questionText is the paper's exact wording; the sentence that gives it its subject sits in the stem, so the card still stands alone. contextNote tags each row with the column it came from. The scheme prints this as a two-column table and the extraction interleaves the columns line by line, so five rows quote only the contiguous tail of their pool item and give the scheme's full wording in contextNote (r-4, r-5, r-7, r-11, r-12) — the same de-interleaving used elsewhere in this wave. No row is openList: the pool is now transcribed complete, and this scheme signals an open list explicitly when it means one (Q13(b)(ii) closes 'any named correct location'), which it does not do here."
+  },
+  "originalSha256": "a09ec88c4d2b5cd79cf83462b82e912b49a305f7a93e00f8577d47c8972eb378",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-hl-q16bi": {
+  "original": {
+   "id": "agsci-2024-hl-q16bi",
+   "topicId": "agsci-4-2",
+   "conceptId": "whether-pooling-colostrum-costs-quality",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2024 HL Q16(b)(i)",
+   "questionText": "Based on the results shown, state if there is any difference in colostrum quality when pooled.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Pooled colostrum is best or valid comparison with Sample 2 or",
+     "marks": 4
+    }
+   ],
+   "stem": "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)",
+   "figureKey": "agricultural-science-2024-hl-paper-p032-i0"
+  },
+  "originalSha256": "d28e2889e63a85edfb47b4598fd20a7a1346101194d8dae7c47807fc73ac3699",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-hl-q16bii": {
+  "original": {
+   "id": "agsci-2024-hl-q16bii",
+   "topicId": "agsci-4-2",
+   "conceptId": "advice-from-the-colostrum-trial",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2024 HL Q16(b)(ii)",
+   "questionText": "Outline advice Ella and Sadie would give to farmers based on the results of their investigation.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Pooling colostrum or using colostrum from another dam has little effect on calf performance or own dam colostrum is best followed by pooled colostrum",
+     "marks": 4
+    }
+   ],
+   "stem": "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)"
+  },
+  "originalSha256": "23bd15008ed68e93214703b4b4079dcd20ad61b4c1c63a6f39a0bc2b4b35781f",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-hl-q17a": {
+  "original": {
+   "id": "agsci-2024-hl-q17a",
+   "topicId": "agsci-3-1",
+   "conceptId": "abiotic-factors-affecting-agriculture",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2024 HL Q17(a)",
+   "stem": "Plant biostimulants and biotic factors in soil help improve plant growth by increasing nutrient uptake, nutrient use efficiency (NUE) and tolerance to stress from abiotic factors.",
+   "questionText": "Briefly describe how any named abiotic factor will affect Irish agriculture.",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "answer": 1,
+    "ofParts": 4,
+    "perPart": 6
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Temperature — Too hot or cold will cause crop failure or animal disease",
+     "marks": 6,
+     "openList": true
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Humidity — Cause crop failure or animal disease",
+     "marks": 6,
+     "openList": true
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Soil chemistry / Salinity / Oxygen levels — If not correct for plant type will cause reduced crop yields",
+     "marks": 6,
+     "openList": true
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "Moisture levels or drought or flooding — May cause reduced yield",
+     "marks": 6,
+     "openList": true
+    }
+   ],
+   "notes": "The question wants ONE named factor plus its description, and the scheme prints '5 (factor) + 1 (description)' against a table of example factors — so the card shows the pool and marks it bestNofParts, answer 1 of 4 at 6 each. Soil chemistry, Salinity and Oxygen levels are folded into one row because the scheme gives all three the identical description, and MAX_ROWS is 5; no factor is lost. openList is set on every row because the scheme closes the table with 'Any named correct effect on plant or animal production + matching description'. Within a claimed row the split is 5 for naming the factor and 1 for the description, which is why no per-row chip is shown."
+  },
+  "originalSha256": "327e9920ad2cb4eba57055773732ec889f459d797034411bc7c7d6c2b142d910",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-hl-q17cii": {
+  "original": {
+   "id": "agsci-2024-hl-q17cii",
+   "topicId": "agsci-3-1",
+   "conceptId": "calculating-percent-soil-organic-matter",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2024 HL Q17(c)(ii)",
+   "questionText": "Calculate A the % soil organic matter in the peat sample.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "55.2/90 X 100 = 61.3(%)",
+     "marks": 6,
+     "contextNote": "The results table gives the peat sample a loss in mass of 55.2 g with its two percentage cells blanked and lettered A and B; the loam row below is filled in at 3.8, 4.2 and 2.4."
+    }
+   ],
+   "stem": "Results from the investigation are shown in the table below. Soil sample Loss in mass (g) % Soil organic % Soil organic matter carbon Peat 55.2 A B Loam 3.8 4.2 2.4",
+   "notes": "The scheme adds that a candidate giving 61.3 or 61 without showing the calculation still takes the 6 marks.",
+   "figureKey": "agricultural-science-2024-HL-paper-p36-art"
+  },
+  "originalSha256": "42b020589a7ac878b5a041385db833aaf45d810ba121fbfdd29b1b63de4e6c99",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-hl-q17ciii": {
+  "original": {
+   "id": "agsci-2024-hl-q17ciii",
+   "topicId": "agsci-3-1",
+   "conceptId": "calculating-percent-soil-organic-carbon",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2024 HL Q17(c)(iii)",
+   "questionText": "Calculate B the % soil organic carbon in the peat sample.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "61.3 x 0.58 = 35.55 or 36%",
+     "marks": 6,
+     "contextNote": "The results table gives the peat sample a loss in mass of 55.2 g with its two percentage cells blanked and lettered A and B; the loam row below is filled in at 3.8, 4.2 and 2.4."
+    }
+   ],
+   "stem": "Results from the investigation are shown in the table below. Soil sample Loss in mass (g) % Soil organic % Soil organic matter carbon Peat 55.2 A B Loam 3.8 4.2 2.4",
+   "notes": "Carries the answer to part (ii) forward; 0.58 is the conversion from organic matter to organic carbon.",
+   "figureKey": "agricultural-science-2024-HL-paper-p36-art"
+  },
+  "originalSha256": "795129a0939d581ce42bed361862fe947d6460a33fc1b24be78eda2e736a9ff7",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-hl-q18aiii": {
+  "original": {
+   "id": "agsci-2024-hl-q18aiii",
+   "topicId": "agsci-4-1",
+   "conceptId": "dominant-features-in-a-cross",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2024 HL Q18(a)(iii)",
+   "questionText": "Isobel crossed breeds A and B in part (ii) above. The resulting offspring is shown in C below. C List two dominant features from parents in A and B in part (ii) above that are passed to the offspring C.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "6 + 2"
+   },
+   "totalMarks": 8,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Black coat colour",
+     "marks": 6
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "coat pattern",
+     "marks": 2
+    }
+   ],
+   "notes": "The scheme also allows a white face, white legs and belly, a pink nose or the tail switch.",
+   "figureKey": "agricultural-science-2024-hl-paper-p037-i0"
+  },
+  "originalSha256": "d15d5e8df2e4041075f2ea6ee91c2f91048c531a5332efa86d512b73405b51bc",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-hl-q2ai": {
+  "original": {
+   "id": "agsci-2024-hl-q2ai",
+   "topicId": "agsci-4-1",
+   "conceptId": "identifying-pig-sheep-and-cattle-breeds",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2024 HL Q2(a)(i)",
+   "questionText": "Identify any two of the following breeds.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "A: Landrace",
+     "marks": 2,
+     "accepts": [
+      "C: Simmental"
+     ],
+     "contextNote": "Three photographs: A a long pale pink pig with forward-drooping ears, B the head of a sheep with a bare blue-grey face and long upright ears over a dense cream fleece, C a heavy red-brown bull with broad white patches and a white head."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B: Blue Leicester",
+     "marks": 2,
+     "accepts": [
+      "C: Simmental"
+     ]
+    }
+   ],
+   "stem": "Or",
+   "notes": "Any two of the three score at 2 marks each; the third is carried as an accepted alternative.",
+   "figureKey": "agricultural-science-2024-HL-paper-p04-art",
+   "labelKey": [
+    {
+     "letter": "A",
+     "meaning": "Landrace",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "B",
+     "meaning": "Blue Leicester",
+     "askedInThisQuestion": true
+    }
+   ]
+  },
+  "originalSha256": "97429c95cc2eb6c1c1727e1cbbec02d68ef91daa96aed5781fd121f923570f8f",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-hl-q2aiii": {
+  "original": {
+   "id": "agsci-2024-hl-q2aiii",
+   "topicId": "agsci-4-1",
+   "conceptId": "characteristics-of-a-terminal-sire",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2024 HL Q2(a)(iii)",
+   "questionText": "Briefly explain characteristics of bull C in part (i) above that make it suitable as a terminal sire.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Good conformation",
+     "marks": 2,
+     "accepts": [
+      "Briefly explain characteristics of bull C in part (i) that make it suitable as a terminal sire.",
+      "good KO%",
+      "good carcase weight"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "high muscle",
+     "marks": 2,
+     "accepts": [
+      "Briefly explain characteristics of bull C in part (i) that make it suitable as a terminal sire.",
+      "good KO%",
+      "good carcase weight"
+     ]
+    }
+   ],
+   "stem": "Or",
+   "notes": "Bull C is the red-and-white bull in the right-hand photograph.",
+   "figureKey": "agricultural-science-2024-HL-paper-p04-art"
+  },
+  "originalSha256": "4880bc2af320bdb04702abeaced97e301278dfe7bbb0d610c2fa382ef9bfde79",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-hl-q6a": {
+  "original": {
+   "id": "agsci-2024-hl-q6a",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "sheep-improvement-scheme-measures",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2024 HL Q6(a)(i)–(ii)",
+   "stem": "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. For any two of the above listed target features / activities, the paper prints a table with an Action row and a Benefit row for each feature chosen.",
+   "questionText": "(i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "2(3) + 2(2)"
+   },
+   "totalMarks": 10,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Meal feeding lambs post weaning, action — creep feeder / trough",
+     "marks": null,
+     "accepts": [
+      "regular checking",
+      "footbath or antibiotic spray",
+      "paring hooves",
+      "vaccination or closed flock",
+      "breed selection",
+      "injection / feed additive",
+      "drench",
+      "ultrasound scanner"
+     ],
+     "contextNote": "Action for the FIRST feature the student names. Scheme actions by feature — lameness control: regular checking or footbath or antibiotic spray or paring hooves or vaccination or closed flock or breed selection; mineral supplementation of ewe's post mating: (bucket) lick / bolus / injection / feed additive / drench; meal feeding lambs post weaning: creep feeder / trough; scanning in-lamb ewes: ultrasound scanner or scanner placed on abdomen."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Meal feeding lambs post weaning, benefit — increase liveweight gain",
+     "marks": null,
+     "accepts": [
+      "reach slaughter weight quicker",
+      "reduces stress of weaning",
+      "increased LWG",
+      "maintain pregnancy",
+      "grass tetany",
+      "determine the number of lambs",
+      "cull barren ewes"
+     ],
+     "contextNote": "Benefit for the first feature named — must match that feature. Scheme benefits — lameness control: increased LWG or increased conception rates or increased milk production; mineral supplementation: improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease; meal feeding: increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning; scanning: determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes."
+    },
+    {
+     "id": "r-3",
+     "kind": "alt",
+     "verbatim": "Mineral supplementation of ewes post mating, action — (bucket) lick / bolus",
+     "marks": null,
+     "accepts": [
+      "injection / feed additive",
+      "drench",
+      "creep feeder / trough",
+      "regular checking",
+      "footbath or antibiotic spray",
+      "vaccination or closed flock",
+      "ultrasound scanner"
+     ],
+     "contextNote": "Action for the SECOND feature named, from the same four feature pools."
+    },
+    {
+     "id": "r-4",
+     "kind": "alt",
+     "verbatim": "Mineral supplementation of ewes post mating, benefit — improve (P) conception rate",
+     "marks": null,
+     "accepts": [
+      "maintain pregnancy",
+      "grass tetany",
+      "increase liveweight gain",
+      "reach slaughter weight quicker",
+      "reduces stress of weaning",
+      "increased LWG",
+      "determine the number of lambs",
+      "cull barren ewes"
+     ],
+     "contextNote": "Benefit for the second feature named — must match that feature."
+    }
+   ],
+   "notes": "The paper asks for an Action and a Benefit for ANY TWO of four listed features = four answers, tariff \"2(3) + 2(2)\" = 6 + 4 = 10. ORDERED split: the first two correct answers score 3 each and the next two score 2 each; if the builder enforces `orderedSplit ⇒ marks null`, null the row marks (the integers here record the split and sum to 10). Because the student chooses the two features, each row's verbatim is one concrete scheme phrase and the full four-feature pool is carried in `accepts`/contextNote — the rows are the four mark slots, not four fixed answers. The scheme's table is two columns side by side, so several phrases interleave in the extraction; only unbroken runs are used as verbatim/accepts."
+  },
+  "originalSha256": "447df64d56dcc99e0363f6c2eb86a0c805f7eff863c9c54e8b4c0af25159ca10",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-hl-q6bii": {
+  "original": {
+   "id": "agsci-2024-hl-q6bii",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "sheep-scheme-health-welfare",
+   "level": "higher",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2024 HL Q6(b)(ii)",
+   "stem": "Answer either (a) or (b). The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: mineral supplementation of lambs pre-weaning; flystrike control; genotyping of ram. The paper prints a table with a Named target feature column and an Explanation column, for two features.",
+   "questionText": "Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "3+1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Mineral supplementation lambs pre-weaning — improved LWG or reduced nutritional disease",
+     "marks": null,
+     "accepts": [
+      "prevent maggots feeding off them",
+      "provides easier lambing or better disease resistance or less mutations or improved dag score or increased survival (rate)"
+     ],
+     "contextNote": "First correct explanation — 3 marks. Any one of the three features may be taken first."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Flystrike control — prevent maggots feeding off them",
+     "marks": null,
+     "accepts": [
+      "increases liveweight of animal) or less pain",
+      "provides easier lambing or better disease resistance or less mutations or improved dag score or increased survival (rate)"
+     ],
+     "contextNote": "Second correct explanation — 1 mark. The flystrike answer reads in full \"prevent maggots feeding off them (which increases liveweight of animal) or less pain\" (the mark column splits it in the extraction)."
+    }
+   ],
+   "notes": "\"3+1\" = the first correct explanation scores 3 and the second scores 1 = 4, the balance of Q6(b)'s 10 marks after the 6-mark calculation. ORDERED split: if the builder enforces `orderedSplit ⇒ marks null`, null the row marks. The student picks any two of the three features, so each row is a mark slot carrying one feature's explanation as verbatim with the other features in `accepts`."
+  },
+  "originalSha256": "21a9d94a330be42a74d77136db380ce422ea6b7d72c0329da31dbb538d205eb5",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
  }
 }

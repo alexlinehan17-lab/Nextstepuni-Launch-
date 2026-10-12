@@ -4746,121 +4746,137 @@
         "sha256": "a3ae68c8d965d958bc13054ef527ddf64d8f8991053859aae5b4823d69b3f225",
         "pages": 28
       },
-      "authoredEnglishCardsForSitting": 72,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 91,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "843cec95ff3043cb",
           "page": 2,
           "cue": "Answer ten",
           "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer ten questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 m",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section A, ten of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "ea3b3226438791d2",
           "page": 2,
           "cue": "any four",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day, Month and Year of Birth in the boxes on the front cover. Write your answers in bl",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section B, four of six independent questions. Every question is retained."
         },
         {
           "id": "71038ca6471079fa",
           "page": 3,
           "cue": "any ten",
           "context": "ificate Examination 2024 3 Agricultural Science – Higher Level Section A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 (a) Identify the items of farm machinery or equipment shown in A, B and C. A B C (b) Briefly describe how the piece of equipment B in part (a) above is used on a sheep farm.",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: ten independent 10-mark questions, all retained."
         },
         {
           "id": "9e20b1d011162ade",
           "page": 4,
           "cue": "either",
           "context": "ving Certificate Examination 2024 4 Agricultural Science – Higher Level Question 2 Answer either (a) or (b). (a) (i) Identify any two of the following breeds. A B C (ii) The sheep in B in part (i) above is known for its prolificacy. Explain the underlined term. (iii) Briefly explain characteristics of bull C in part (i) abov",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q2 either (a) or (b): both independently marked alternatives are retained."
         },
         {
           "id": "223b9af9c9f623b0",
           "page": 4,
           "cue": "any two",
           "context": "Agricultural Science – Higher Level Question 2 Answer either (a) or (b). (a) (i) Identify any two of the following breeds. A B C (ii) The sheep in B in part (i) above is known for its prolificacy. Explain the underlined term. (iii) Briefly explain characteristics of bull C in part (i) above that make it suitable as a terminal",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(a)(i): identify any two of the three printed breed photographs A, B and C; three routes at 4 marks each."
         },
         {
           "id": "6caaad42c1aa08a4",
           "page": 5,
           "cue": "one of",
           "context": "r Level Or (b) Read the article and answer the questions that follow. The Irish Moiled is one of the rarest Irish cattle breeds. It is a hornless medium sized breed with a mature cow weighing up to 650kg. Traditionally a dairy cow with yields of up to 5000 litres, it has earned the reputation as a truly dual purpose breed. I",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q2(b) article (\"one of the rarest Irish cattle breeds\"); no response choice."
         },
         {
           "id": "33e6c4291021cdb1",
           "page": 6,
           "cue": "either",
           "context": "ving Certificate Examination 2024 6 Agricultural Science – Higher Level Question 3 Answer either (a) or (b). (a) Good grassland management is essential on farms. The diagram shows how grassland management can affect pasture recovery post grazing. Analyse the diagram and answer the questions that follow. Grazing period Short ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q3 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "1219196bfd47c12c",
           "page": 10,
           "cue": "either",
           "context": "ing Certificate Examination 2024 10 Agricultural Science – Higher Level Question 6 Answer either (a) or (b). (a) Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are:  lameness control  mineral supplementation of ewe’s post mating  meal feeding",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q6 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "4d4469089bd00069",
           "page": 10,
           "cue": "any two",
           "context": "of ewe’s post mating  meal feeding of lamb’s post weaning  scanning of in-lamb ewes For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock. Named",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q6(a): any two of four printed target features / activities, each with its action and benefit; six 10-mark routes."
         },
         {
           "id": "f1e2ff4300775d5c",
           "page": 11,
           "cue": "any two",
           "context": "genotyping of ram Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above. Named target feature Explanation 1. 2. Calculation:",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q6(b)(ii): any two of three printed target features; three 4-mark routes."
         },
         {
           "id": "db3e9151df2a298b",
           "page": 12,
           "cue": "either",
           "context": "ticle and answer the questions that follow. Agroforestry is the integration of trees with either crops or livestock on the same land. It aims to achieve additional benefits in comparison to keeping agriculture and trees separate. Across the world, agroforestry encompasses a wide variety of practices ranging from simple shelt",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q7 article (\"trees with either crops or livestock\"); no response choice."
         },
         {
           "id": "e9ba4a6006d2032d",
           "page": 14,
           "cue": "either",
           "context": "ing Certificate Examination 2024 14 Agricultural Science – Higher Level Question 9 Answer either (a) or (b). (a) Compare the different soil mineral particles and their properties under the headings that follow. The first one has been done as an example. Gravel and sand particles Silt and clay particles Particle size Large pa",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "33be39e92663abfa",
           "page": 21,
           "cue": "any four",
           "context": "ficate Examination 2024 21 Agricultural Science – Higher Level Section B 200 marks Answer any four questions. Each question carries 50 marks. Question 13 Answer both (a) and (b) with either (c) or (d). (a) (i) Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer’s land.",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: four of six independent 50-mark questions, all retained."
         },
         {
           "id": "f3d547c8be945360",
           "page": 21,
           "cue": "either",
           "context": " four questions. Each question carries 50 marks. Question 13 Answer both (a) and (b) with either (c) or (d). (a) (i) Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer’s land. Describe with the aid of a labelled diagram how she carried out this investigation. Labell",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "65f7e71bb67d2c28",
           "page": 22,
           "cue": "one of",
           "context": "ies which would enhance biodiversity. The range and cover of positive plant indicators is one of the best ways of quantifying the biodiversity value of the habitat (field). Biodiversity indicators Description Grassland which is not managed intensively and contains plants such as Primrose and Meadow Thistle. Grassland is mana",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q13(a) stem (\"one of the best ways\"); no response choice."
         },
         {
           "id": "18b0f122a37a410d",
           "page": 25,
           "cue": "either",
           "context": "tion 2024 25 Agricultural Science – Higher Level Question 14 Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions. (a) (i) Identify the bacteria that is required for good quality silage by placing a tick () in the correct bo",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q14: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         }
       ]
     },
@@ -4879,7 +4895,7 @@
         "sha256": "8372c9494f55cf8ed835af59e4004f195097b9ca89cf9710d1da503d02e02764",
         "pages": 31
       },
-      "authoredEnglishCardsForSitting": 72,
+      "authoredEnglishCardsForSitting": 91,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

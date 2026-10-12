@@ -372,5 +372,90 @@
       0.552
     ],
     "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-hl-paper-indicator-plants": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-indicator-plants.png",
+    "md5": "7188791890775f4eea07e77e416ac1a6",
+    "alt": "Original Question 13(a)(ii) plate: the word list Ragwort, Meadow Thistle, Nettle and Primrose above four colour photographs lettered A to D: pale yellow flowers among crinkled leaves, a dense clump of serrated green leaves, tall stems of bright yellow daisy-like flowers, and a single purple thistle head.",
+    "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 22 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024ALP000EV.pdf",
+    "sourceSha256": "6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84",
+    "pdfPage": 22,
+    "cropRect": [
+      0.13,
+      0.112,
+      0.9,
+      0.294
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-hl-paper-liveweight-graph": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-liveweight-graph.png",
+    "md5": "d73f0bc16610489b11b6a64e67396812",
+    "alt": "Original line graph, Average Liveweight Gain of Dairy Beef Calves: liveweight (kg) against age (weeks) from 0 to 15, each point labelled 40, 45, 51, 57, 62, 68, 74, 80, 86, 92, 98, 103, 108, 113, 119 and 125 kg.",
+    "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 30 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024ALP000EV.pdf",
+    "sourceSha256": "6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84",
+    "pdfPage": 30,
+    "cropRect": [
+      0.12,
+      0.135,
+      0.91,
+      0.392
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-hl-paper-ipm-pyramid": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-ipm-pyramid.png",
+    "md5": "caba8e4bbec3e897ce173144c514fdfc",
+    "alt": "Original Integrated Pest Management pyramid: Prevention at the base, then Cultural / Sanitation, Physical / Mechanical, Biological, and Chemical (Pesticide) at the narrow top.",
+    "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 39 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024ALP000EV.pdf",
+    "sourceSha256": "6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84",
+    "pdfPage": 39,
+    "cropRect": [
+      0.4,
+      0.065,
+      0.915,
+      0.258
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-hl-paper-soil-structure": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-soil-structure.png",
+    "md5": "d25aaa525a101d32e0170b50feff11f3",
+    "alt": "Original Question 9(b) plate: the list Moderate quality, Poor quality, Good quality above three circular photographs of soil lettered A, B and C, each with a ruler for scale: A a fine, dark, crumbly soil with roots, B smaller angular clods, C large pale blocky clods.",
+    "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 14 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024ALP000EV.pdf",
+    "sourceSha256": "6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84",
+    "pdfPage": 14,
+    "cropRect": [
+      0.14,
+      0.47,
+      0.87,
+      0.666
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-hl-paper-breeds-ab": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-breeds-ab.png",
+    "md5": "f803f80805f38c540dce1fb28b987beb",
+    "alt": "Original Question 18(a)(ii) photographs: A a deep red-brown bull with a white face, belly and legs wearing a halter; B a black-and-white cow standing side-on in grass.",
+    "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 37 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024ALP000EV.pdf",
+    "sourceSha256": "6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84",
+    "pdfPage": 37,
+    "cropRect": [
+      0.15,
+      0.262,
+      0.85,
+      0.456
+    ],
+    "reviewedAt": "2026-10-11"
   }
 }

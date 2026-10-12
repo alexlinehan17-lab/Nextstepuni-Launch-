@@ -38,8 +38,8 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(58);
-    expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(1);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(57);
+    expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
   it('expands every three-of-four udder-labelling route at the published three-mark tariff', () => {
@@ -390,7 +390,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(13);
+    expect(review.paperReviews).toHaveLength(14);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -619,6 +619,48 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const check of units) expect(check.candidateTotalsFromScheme).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
   });
 
+  it('reconciles all 72 original 2024 Higher cards, expands every printed pool and discloses the Q18 total', () => {
+    const year = higher.filter(card => card.year === 2024);
+    expect(year).toHaveLength(91);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2024 HL'));
+    expect(tasks).toHaveLength(91);
+    const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
+    expect(states.filter(state => state === 'unchanged')).toHaveLength(61);
+    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(11);
+    expect(states.filter(state => state === 'added')).toHaveLength(19);
+    for (const [prefix, count, marks] of [['Q2(a)(i) — ', 3, 4], ['Q6(a) — ', 6, 10], ['Q6(b)(ii) — ', 3, 4], ['Q15(a)(iii) — ', 2, 4]] as const) {
+      const routes = year.filter(card => card.questionRef.startsWith(`2024 HL ${prefix}`));
+      expect(routes, prefix).toHaveLength(count);
+      for (const candidate of routes) {
+        const card = get(candidate.id);
+        expect(card.totalMarks, card.id).toBe(marks);
+        expect(tariffReconciles(card), card.id).toBe(true);
+        expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection.kind).toBe('closed');
+      }
+    }
+    // Legacy IDs become the first printed route.
+    expect(get('agsci-2024-hl-q2ai').questionRef).toBe('2024 HL Q2(a)(i) — A, B');
+    expect(get('agsci-2024-hl-q6a').questionRef).toBe("2024 HL Q6(a) — Lameness control, Mineral supplementation of ewe's post mating");
+    expect(get('agsci-2024-hl-q15aiii').questionRef).toBe('2024 HL Q15(a)(iii) — Animal-related factors');
+    // A named factor alone earns its 5; any two printed dominant features earn 6+2.
+    expect(marksClaimed(get('agsci-2024-hl-q17a'), {}, { 'r-1': [2] })).toBe(5);
+    expect(marksClaimed(get('agsci-2024-hl-q18aiii'), {}, { 'r-1': [2] })).toBe(6);
+    expect(marksClaimed(get('agsci-2024-hl-q18aiii'), {}, { 'r-1': [2, 5] })).toBe(8);
+    for (const id of ['agsci-2024-hl-q5a', 'agsci-2024-hl-q9bi', 'agsci-2024-hl-q13aii', 'agsci-2024-hl-q18aii']) {
+      expect(higher.find(card => card.id === id)!.kind, id).toBe('diagram');
+    }
+    expect(get('agsci-2024-hl-q16bi').rows[0].accepts).toContain('valid comparison with Sample 2 or Sample 3');
+    const units = census.questionMarkChecks.filter(check => check.year === 2024 && check.level === 'higher');
+    expect(units).toHaveLength(18);
+    for (const check of units) {
+      const expected = check.question === 'Q18' ? 54 : Number(check.question.slice(1)) <= 12 ? 10 : 50;
+      expect(check.candidateTotalsFromScheme, check.question).toEqual([expected]);
+    }
+    expect(units.find(check => check.question === 'Q18')!.sourceException).toContain('54');
+    const map: PaperAnswerMap = JSON.parse(readFileSync(resolve(__dirname, '../public/paper-answers/2024/LC024ALP000EV.pdf.json'), 'utf8'));
+    expect(map.q.find(q => q.n === '18')?.schemeNote).toContain('54');
+  });
+
   it('awards 2010 first-correct marks independently of the named instrument', () => {
     const card = get('agsci-2010-hl-q1e');
     for (const first of [0, 1, 2]) expect(marksClaimed(card, {}, { 'r-1': [first] })).toBe(6);
@@ -670,7 +712,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(804);
+    expect(atlas.markBankCards).toHaveLength(895);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;
