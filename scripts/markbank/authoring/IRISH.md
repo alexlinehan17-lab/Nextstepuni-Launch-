@@ -156,3 +156,21 @@ additions even on already-reviewed pages. The tests pin route IDs, wording, tari
 pages, topics and scheme anchors. These guards support, and never replace, the
 required full visual paper/scheme sweep. Do not update preservation baselines to
 hide unfinished coverage.
+
+## Regeneration and audit tools
+
+Everything needed to rebuild or audit the committed Irish cards lives in the repo:
+
+- `irish_tools/regenerate.sh` rebuilds ledgers, legacy cards, reviewed components and the Atlas
+  chain in order; `--check` proves every ledger maker and generator reproduces its committed file
+  byte-for-byte and that the Atlas chain changes nothing (stage intended changes first).
+- `irish_ledgers/` holds one maker per reviewed-paper source-review ledger (2010 and 2026
+  Foundation; 2024–2026 Higher and Ordinary). Each rescans the paper's raw directive lines and
+  applies the review-time decision rules; later dated edits are explicit `AMENDMENTS` and
+  observed records (browser and audio checks) are `RECORDED`.
+- The Foundation 2011–2025 ledgers were written by one-off code-mods in earlier sessions that no
+  longer exist. They are review records: each Foundation generator re-reads its paper and fails
+  on any unclassified or stale raw directive line, so they cannot drift silently.
+- `irish_tools/preservation.py` is the per-paper preservation audit, `test_all.sh` runs the full
+  Irish test set, and `qa.sh SPEC OUT` runs the mobile Mark Bank / Atlas browser check
+  (`browser_qa.mjs`) against the preview in `irish_tools/preview/` on port 5703.
