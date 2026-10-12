@@ -183,8 +183,8 @@
     "refsHash": "ba197c3dcfdb616b"
   },
   "construction-studies": {
-    "cards": 950,
-    "contentHash": "008d713b9851908a",
+    "cards": 816,
+    "contentHash": "cde222d64f715687",
     "coveragePct": 63.1,
     "covered": 532,
     "excluded": 0,
@@ -195,7 +195,7 @@
       "count": 63,
       "hash": "7a382fe186c759ea"
     },
-    "refsHash": "ecb105523464b29a"
+    "refsHash": "2d10a6ef2438d73a"
   },
   "croatian": {
     "cards": 100,

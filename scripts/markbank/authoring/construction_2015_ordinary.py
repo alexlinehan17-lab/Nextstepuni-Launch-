@@ -4,11 +4,10 @@ Checks the reviewed authoring file against the original SEC paper and marking sc
 pinned hashes and page text, lifted question wording (a narrowed task may only delete
 printed words), scheme-traceable marking rows, published tariffs and mark steps, the
 single shared drawing allowance on Q1 and Q5, every finite route (all C(9,5) = 126 for
-Q8), pixel-exact figure crops, the selection ledger, and exact topic/Atlas bindings.
+Q8 as ONE any-five card over all nine printed terms: choice is not a route), pixel-exact figure crops, the selection ledger, and exact topic/Atlas bindings.
 """
 import copy
 import hashlib
-import itertools
 import json
 import re
 from pathlib import Path
@@ -32,7 +31,8 @@ BAND8 = [0, 4, 6, 8]
 TERMS = ['box-dovetail-joint', 'triple-glazing', 'solar-panel', 'cordless-drill', 'skirting-board',
          'compression-fitting', 'natural-seasoning', 'concrete-lintel', 'radon-barrier']
 TERM_NAMES = [t.replace('-', ' ') for t in TERMS]
-TERM_PAGES = dict(zip(TERMS, [12, 12, 13, 13, 13, 14, 14, 14, 15]))
+TERM_HEADINGS = ['Box dovetail joint', 'Triple glazing', 'Solar panel', 'Cordless drill', 'Skirting board', 'Compression fitting',
+                 'Natural seasoning', 'Concrete lintel', 'Radon barrier']
 
 # Leaf tasks: id -> [(row id, marks, permitted steps)] exactly as the scheme mark tables print them.
 LEAF = {
@@ -57,12 +57,11 @@ LEAF = {
     'q7-b-advantages': [('advantages', 10, [0, 5, 10])],
     'q7-b-disadvantages': [('disadvantages', 10, [0, 5, 10])],
     'q7-c': [('reasons', 10, [0, 5, 10])],
-    **{f'q8-{t}': [('primary', 6, list(range(7))), ('other', 4, list(range(5)))] for t in TERMS},
+    'q8': [('terms', 50, None)],
     'q9-a': [('joint', 4, [0, 4]), ('reason', 4, [0, 4]), ('sketch', 8, BAND8)],
     'q9-b': [('features', 8, [0, 4, 8]), ('sketch', 8, BAND8)],
     'q9-c': [('finish', 4, [0, 4]), ('steps', 10, [0, 5, 10]), ('sketch', 4, [0, 2, 3, 4])],
 }
-ROUTES = list(itertools.combinations(TERMS, 5))
 # Composite cards: id -> ordered children. Complete routes total 50; parts total their printed part marks.
 COMPOSITE = {
     'q1-complete': ['q1-a', 'q1-b'],
@@ -73,7 +72,6 @@ COMPOSITE = {
     'q6-a': ['q6-a-hand', 'q6-a-ear', 'q6-a-eye'], 'q6-b': ['q6-b-hand', 'q6-b-ear', 'q6-b-eye'],
     'q6-complete': ['q6-a', 'q6-b', 'q6-c'],
     'q7-b': ['q7-b-advantages', 'q7-b-disadvantages'], 'q7-complete': ['q7-a', 'q7-b', 'q7-c'],
-    **{'q8-complete-' + '--'.join(r): [f'q8-{t}' for t in r] for r in ROUTES},
     'q9-complete': ['q9-a', 'q9-b', 'q9-c'],
 }
 TOTALS = {'q1-a': 40, 'q1-b': 2, 'q2-a': 40, 'q2-a-cavity-fill': 20, 'q2-a-external-insulation': 20, 'q2-b': 10,
@@ -98,11 +96,6 @@ FIGURES = {
     'q6-signs': (S, 10, [52, 76, 523, 212], True),
     'q7-original': (P, 3, [38, 381, 580, 528], False), 'q7-water-butt': (S, 11, [397, 457, 548, 654], True),
     'q8-original': (P, 3, [38, 528, 580, 622], False),
-    'q8-box-dovetail-joint': (S, 12, [384, 381, 542, 543], True), 'q8-triple-glazing': (S, 12, [426, 555, 544, 705], True),
-    'q8-solar-panel': (S, 13, [402, 44, 556, 304], True), 'q8-cordless-drill': (S, 13, [410, 325, 532, 448], True),
-    'q8-skirting-board': (S, 13, [422, 542, 558, 701], True), 'q8-compression-fitting': (S, 14, [413, 67, 561, 186], True),
-    'q8-natural-seasoning': (S, 14, [50, 226, 572, 541], True), 'q8-concrete-lintel': (S, 14, [358, 568, 532, 725], True),
-    'q8-radon-barrier': (S, 15, [309, 71, 543, 243], True),
     'q9-original': (P, 3, [38, 622, 580, 790], False), 'q9-joint': (S, 15, [50, 388, 560, 779], True),
     'q9-table-features': (S, 16, [375, 89, 538, 214], True), 'q9-finish': (S, 16, [408, 400, 546, 745], True),
 }
@@ -115,7 +108,6 @@ SOLUTION_FIGURE = {
     'q5-a': 'q5-section', 'q5-b': 'q5-section', 'q5-complete': 'q5-section',
     'q6-a-hand': 'q6-hand-sign', 'q6-a-ear': 'q6-ear-sign', 'q6-a-eye': 'q6-eye-sign', 'q6-a': 'q6-signs', 'q6-complete': 'q6-signs',
     'q7-a': 'q7-water-butt', 'q7-complete': 'q7-water-butt',
-    **{f'q8-{t}': f'q8-{t}' for t in TERMS},
     'q9-a': 'q9-joint', 'q9-b': 'q9-table-features', 'q9-c': 'q9-finish', 'q9-complete': 'q9-joint',
 }
 # Pinned leaf topic decisions (composites inherit the ordered union).
@@ -140,21 +132,13 @@ TOPICS = {
     'q6-c': (['cons-9-4'], ['site-safety']),
     'q7-a': (['cons-5-4'], ['drainage']), 'q7-b-advantages': (['cons-5-4'], ['drainage']),
     'q7-b-disadvantages': (['cons-5-4'], ['drainage']), 'q7-c': (['cons-5-4'], ['drainage']),
-    'q8-box-dovetail-joint': (['cons-10-2', 'cons-10-4'], ['wood-rot-ventilation']),
-    'q8-triple-glazing': (['cons-3-6', 'cons-6-2', 'cons-6-6'], ['windows-doors', 'heat-loss-insulation', 'air-tightness-condensation']),
-    'q8-solar-panel': (['cons-6-4', 'cons-5-3'], ['planning-sustainability-environment', 'hot-water-space-heating']),
-    'q8-cordless-drill': (['cons-9-2', 'cons-9-4'], ['site-safety']),
-    'q8-skirting-board': (['cons-4-5'], ['windows-doors']),
-    'q8-compression-fitting': (['cons-5-2', 'cons-5-1'], ['services-water-gas-electrical']),
-    'q8-natural-seasoning': (['cons-10-3'], ['wood-rot-ventilation']),
-    'q8-concrete-lintel': (['cons-3-4'], ['foundations-floors-walls']),
-    'q8-radon-barrier': (['cons-3-4', 'cons-4-2'], ['foundations-floors-walls']),
+    'q8': (['cons-10-2', 'cons-10-4', 'cons-3-6', 'cons-6-2', 'cons-6-6', 'cons-6-4', 'cons-5-3', 'cons-9-2', 'cons-9-4', 'cons-4-5', 'cons-5-2', 'cons-5-1', 'cons-10-3', 'cons-3-4', 'cons-4-2'],
+           ['wood-rot-ventilation', 'windows-doors', 'heat-loss-insulation', 'air-tightness-condensation', 'planning-sustainability-environment', 'hot-water-space-heating', 'site-safety', 'services-water-gas-electrical', 'foundations-floors-walls']),
     'q9-a': (['cons-10-4', 'cons-10-6'], ['wood-rot-ventilation']),
     'q9-b': (['cons-10-3'], ['wood-rot-ventilation']),
     'q9-c': (['cons-10-7'], ['wood-rot-ventilation']),
 }
-GAPS = {'q8-box-dovetail-joint': {'cons-10-2', 'cons-10-4'}, 'q8-cordless-drill': {'cons-9-2'},
-        'q9-a': {'cons-10-4', 'cons-10-6'}}
+GAPS = {'q8': {'cons-10-2', 'cons-10-4', 'cons-9-2'}, 'q9-a': {'cons-10-4', 'cons-10-6'}}
 
 
 def tokens(text):
@@ -200,18 +184,18 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     cards = {t['card']['id'].removeprefix(PREFIX): t['card'] for t in d['tasks']}
     tasks = {t['card']['id'].removeprefix(PREFIX): t for t in d['tasks']}
     expected = set(LEAF) | set(COMPOSITE)
-    assert len(d['tasks']) == len(cards) == len(expected) == 176 and set(cards) == expected
+    assert len(d['tasks']) == len(cards) == len(expected) == 42 and set(cards) == expected
     assert d['addedIds'] == [t['card']['id'] for t in d['tasks']]
-    assert len({c['questionRef'] for c in cards.values()}) == 176, 'questionRef must be unique per card'
+    assert len({c['questionRef'] for c in cards.values()}) == 42, 'questionRef must be unique per card'
     bindings = {b['cardId'].removeprefix(PREFIX): b for b in d['bindings']}
-    assert len(d['bindings']) == 176 and set(bindings) == expected
+    assert len(d['bindings']) == 42 and set(bindings) == expected
 
     scheme = normalise(' '.join(page_text(S, p) for p in range(1, 26)))
     crosswalk = json.loads((R / 'data/examTopics/construction-studies-curriculum-crosswalk.json').read_text())
     registry = set(re.findall(r"id: '(cons-\d+-\d+)'", (R / 'curriculumRegistry.ts').read_text()))
     library_nodes = {n for nodes in crosswalk.values() for n in nodes}
     figures = {f['key'].removeprefix(FP): f for f in d['questionFigures']}
-    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 35
+    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 26
 
     for key, c in cards.items():
         q = key[1]
@@ -235,14 +219,19 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         # Every marking row is printed in the scheme and has published steps.
         rows = c['rows'] + ([c['questionBonus']] if c.get('questionBonus') else [])
         for r in rows:
-            assert r['kind'] == 'criterion' and r['contextNote'].strip()
+            assert r['contextNote'].strip()
+            if r['kind'] == 'anyN':  # a closed choice: every printed option, in the scheme's own headings
+                assert 'permittedMarks' not in r and r['marks'] == r['group']['claimMax'] * r['group']['perOption'], (key, r['id'])
+                assert all(normalise(o) in scheme for o in r['group']['options']), (key, 'option not printed in the scheme')
+                continue
+            assert r['kind'] == 'criterion'
             assert normalise(r['verbatim']) in scheme, (key, r['verbatim'])
             steps = r['permittedMarks']
             assert steps[0] == 0 and steps[-1] == r['marks'] and steps == sorted(set(steps)), (key, r['id'])
         bonus = c['questionBonus']['marks'] if c.get('questionBonus') else 0
         assert c['totalMarks'] == sum(r['marks'] for r in c['rows']) + bonus
         if key in LEAF:
-            assert [(r['id'], r['marks'], r['permittedMarks']) for r in c['rows']] == LEAF[key], key
+            assert [(r['id'], r['marks'], r.get('permittedMarks')) for r in c['rows']] == LEAF[key], key
             assert 'taskGroups' not in c and 'questionBonus' not in c
             nodes, topics = TOPICS[key]
             assert b['canonicalTopicIds'] == nodes and b['atlasTopicIds'] == [CROSS + x for x in topics], key
@@ -273,10 +262,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         assert all(x.startswith(CROSS) and x in crosswalk for x in b['atlasTopicIds']) and b['atlasTopicIds']
         assert len(b['canonicalTopicIds']) == 1 or b['canonicalTopicReview'].strip()
         # Original pages behind every task, pinned by text hash.
-        if q == '8':
-            pages = sorted({TERM_PAGES[leaf.removeprefix('q8-')] for leaf in leaves_of(key)}) + [24]
-        else:
-            pages = SCHEME_PAGES[q]
+        pages = [12, 13, 14, 15, 24] if q == '8' else SCHEME_PAGES[q]
         assert [(x['file'], x['page']) for x in t['sourceChecks']] == [(P, 1), (P, PAPER_PAGE[q])] + [(S, p) for p in [2, *pages]], key
         for x in t['sourceChecks']:
             assert hashlib.sha256(page_text(x['file'], x['page']).encode()).hexdigest() == x['textSha256'], (key, x)
@@ -295,16 +281,15 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         assert cards[key]['rows'] == q1[key]['rows'] and cards[key]['totalMarks'] == q1[key]['totalMarks']
     assert cards['q1-complete']['questionBonus'] == q1['q1-complete']['questionBonus']
 
-    # Q8: every closed choose-five route exactly once, in printed order, worth 50.
+    # Q8: choice is not a route. ONE card prints all nine terms and carries one any-five group over them.
     ledger = d['questionRouteLedgers']['8']
-    assert ledger['choose'] == 5 and ledger['options'] == TERM_NAMES and len(ledger['wholeRoutes']) == 126
-    for combo in ROUTES:
-        c = cards['q8-complete-' + '--'.join(combo)]
-        names = [t.replace('-', ' ') for t in combo]
-        assert [g['label'] for g in c['taskGroups']] == names and c['totalMarks'] == 50
-        assert c['questionText'].endswith('any five of the following: ' + '; '.join(names) + '.')
+    assert ledger['choose'] == 5 and ledger['options'] == TERM_NAMES and [w['id'] for w in ledger['wholeRoutes']] == [PREFIX + 'q8']
+    q8 = cards['q8']
+    assert [k for k in cards if k.startswith('q8')] == ['q8'] and 'taskGroups' not in q8 and q8['totalMarks'] == 50
+    assert q8['questionText'].endswith('any five of the following: ' + '; '.join(TERM_NAMES) + '.')
+    assert q8['rows'][0]['kind'] == 'anyN' and q8['rows'][0]['group'] == dict(claimMax=5, perOption=10, options=TERM_HEADINGS)
     sel = d['selectionLedger']
-    assert sel['finiteQuestionChoices']['8']['routes'] == [list(r) for r in ROUTES]
+    assert sel['finiteQuestionChoices']['8']['cardId'] == PREFIX + 'q8' and 'routes' not in sel['finiteQuestionChoices']['8']
     assert sel['unclassified'] == 0 and all(r['classification'] for r in sel['rows'])
     observed = []
     with fitz.open(R / P) as pdf:
@@ -314,7 +299,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
 
     # Whole-paper reconciliation: every question has complete routes at 50 marks; 200 = Q1 + three others.
     for q in '123456789':
-        whole = [k for k in cards if k.startswith(f'q{q}-complete')]
+        whole = ['q8'] if q == '8' else [k for k in cards if k.startswith(f'q{q}-complete')]
         assert whole and all(cards[k]['totalMarks'] == 50 for k in whole)
         assert {r['id'] for r in d['questionRouteLedgers'][q]['wholeRoutes']} == {PREFIX + k for k in whole}
 
@@ -328,7 +313,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
             a = Image.frombytes('RGB', (px.width, px.height), px.samples)
             saved = Image.open(path).convert('RGB')
             assert a.size == saved.size and ImageChops.difference(a, saved).getbbox() is None, key
-    assert len({f['sha256'] for f in d['questionFigures']}) == 35
+    assert len({f['sha256'] for f in d['questionFigures']}) == 26
 
     if integrated:
         # Runtime input carries exactly these cards after the 607 prior cards, which are byte-for-byte unchanged.
@@ -342,8 +327,8 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     gaps = {g['cardId'].removeprefix(PREFIX): set(g['canonicalTopicIds']) for g in d['taxonomyGaps']}
     assert gaps == GAPS
     assert d['questionsReviewed'] == list('123456789') and d['unreviewedQuestions'] == []
-    return dict(tasks=176, leafTasks=len(LEAF), wholeQuestionRoutes=sum(1 for k in cards if '-complete' in k),
-                q8Routes=126, sourceFigures=35, sharedDrawingAllowances=2, paperComplete=True)
+    return dict(tasks=42, leafTasks=len(LEAF), wholeQuestions=sum(1 for k in cards if '-complete' in k or k == 'q8'),
+                q8AnyFiveOfNine=True, sourceFigures=26, sharedDrawingAllowances=2, paperComplete=True)
 
 
 if __name__ == '__main__':
