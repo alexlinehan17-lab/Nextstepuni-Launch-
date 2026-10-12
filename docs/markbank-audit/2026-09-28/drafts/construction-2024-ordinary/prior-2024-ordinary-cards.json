@@ -1,0 +1,1156 @@
+[
+  {
+    "id": "cons-2024-ol-q1-b",
+    "topicId": "cons-3-8",
+    "conceptId": "securing-a-wallplate-to-an-external-wall",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q1(b)",
+    "questionText": "On your drawing, show how the wallplate is secured to the external wall.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Wallplate strap clearly identified",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q2-a",
+    "topicId": "cons-6-3",
+    "conceptId": "advantages-of-improving-a-ber",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q2(a)",
+    "questionText": "Discuss two advantages of improving the Building Energy Rating (BER) of a home.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of improving the Building Energy Rating (BER) of a home.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Reduced energy bills",
+            "Reduces heat loss",
+            "Increased comfort levels",
+            "The value of the home will increase",
+            "Better for the environment"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q2-c",
+    "topicId": "cons-6-2",
+    "conceptId": "upgrading-walls-and-windows-together",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q2(c)",
+    "questionText": "Discuss two reasons why external wall and window upgrades should be carried out at the same time.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 7",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 7
+    },
+    "totalMarks": 14,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why external wall and window upgrades should be carried out at the same time.",
+        "marks": 14,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 7,
+          "options": [
+            "To ensure a more complete finish with better airtightness achieved",
+            "More cost effective to carry out multiple energy upgrades at the same time",
+            "To increase comfort levels in the house",
+            "To reduce further the energy usage of the home and in turn reduce carbon emissions",
+            "Reduced disruption to the homeowner by having both done at the same time",
+            "Additional grants available for multiple energy upgrades"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q3-a",
+    "topicId": "cons-5-2",
+    "conceptId": "hot-and-cold-water-pipework",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q3(a)",
+    "questionText": "Using a single-line labelled sketch, show the pipework required to provide hot and cold water to a mixer-shower and wash basin, and to provide cold water to a toilet cistern.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "8 x 5",
+      "answer": 8,
+      "ofParts": 12,
+      "perPart": 5
+    },
+    "totalMarks": 40,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Typical details",
+        "marks": 40,
+        "openList": true,
+        "contextNote": "Typical details",
+        "group": {
+          "claimMax": 8,
+          "perOption": 5,
+          "options": [
+            "15 mm rising main",
+            "Insulated storage tank",
+            "250 l cylinder",
+            "Ø22 mm cold feed to cylinder",
+            "Ø28 mm expansion pipe",
+            "Toilet cistern",
+            "Ø15 mm cold feed to toilet cistern",
+            "Wash basin",
+            "Ø15 mm hot and cold feed to wash basin",
+            "Mixer-shower",
+            "Ø15 mm hot and cold feed to mixer shower",
+            "Valves"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q3-b",
+    "topicId": "cons-5-6",
+    "conceptId": "an-accessible-shower-area",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q3(b)",
+    "questionText": "Discuss two features that should be included to ensure a shower area is suitable for a person with limited mobility.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two features that should be included to ensure a shower area is suitable for a person with limited mobility.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Safe and comfortable access is essential",
+            "Large shower area for mobility",
+            "Shower curtain or screen instead of shower doors",
+            "A non-slip shower area without a step",
+            "The addition of a wall mounted foldable seat may be included",
+            "Shower controls within easy reach. Lever taps preferable",
+            "Contemporary grab rails"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q4-a",
+    "topicId": "cons-3-3",
+    "conceptId": "a-natural-stone-finish-for-an-entrance-wall",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q4(a)",
+    "questionText": "Discuss two advantages of choosing a natural stone finish for an entrance wall.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of choosing a natural stone finish for an entrance wall.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "It is an attractive finish",
+            "Helps the wall blend in with the natural landscape",
+            "Durable hardwearing material",
+            "Natural stone is very low maintenance",
+            "Can be sourced locally giving it a low embodied energy",
+            "Stone masonry is an important heritage craft skill that we must retain Any other valid reason will be accepted"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q4-b",
+    "topicId": "cons-2-4",
+    "conceptId": "strip-foundation-detailing",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q4(b)",
+    "questionText": "Using notes and freehand sketches, show the typical design detailing of the strip foundation for this wall.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 6",
+      "answer": 4,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show the typical design detailing of the strip foundation for this wall.",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 6,
+          "options": [
+            "Strip foundation is the most common and suitable foundation for a boundary wall",
+            "Strip foundation is usually 3 times wider than the width of the wall",
+            "The weight of the wall is distributed to the foundation at 45°",
+            "Steel reinforcement is placed at the bottom of the foundation to add tensile strength. Minimum 50 mm concrete cover",
+            "The wall is built on the centre of the foundation",
+            "A 1350 mm x 450 mm foundation is suitable for a 450 mm wall"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q6-a",
+    "topicId": "cons-1-8",
+    "conceptId": "operating-a-site-dumper-safely",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q6(a)",
+    "questionText": "Describe two safety precautions that the driver must observe when operating a site dumper.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Describe two safety precautions that the driver must observe when operating a site dumper.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Ensure operators wear suitable personal protective equipment (PPE) such as hard hat, steel toe boots and hi-visibility clothing",
+            "Inspect vehicle before use to ensure it is in proper working order",
+            "Always wear your seatbelt",
+            "Check work area for obstacles, holes or overhead powerlines",
+            "Cordon off area where moving vehicle is being operated",
+            "Ensure operator has carried out the proper training in the use of a site dumper",
+            "Never jump on or off the dumper – three points of contact rule",
+            "Be vigilant at all times of your surroundings and others around you Any other suitable specific precaution will be accepted"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q6-c",
+    "topicId": "cons-1-8",
+    "conceptId": "why-vehicle-operators-are-trained",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q6(c)",
+    "questionText": "Give two reasons why vehicle operators must undertake a specific training course prior to operating a vehicle on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 7",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 7
+    },
+    "totalMarks": 14,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Give two reasons why vehicle operators must undertake a specific training course prior to operating a vehicle on a const",
+        "marks": 14,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 7,
+          "options": [
+            "Regulations require construction operators hold specific certifications or licenses",
+            "Proper training ensures operators understand safety protocols, reducing accidents",
+            "To provide the necessary knowledge to effectively operate the equipment",
+            "Operators can identify risks and take appropriate measures to mitigate them, preventing accidents",
+            "Well-trained operators are more efficient and productive",
+            "Training courses teach proper maintenance, extending the lifespan of construction vehicles"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q7-a",
+    "topicId": "cons-1-1",
+    "conceptId": "converting-an-attic-to-a-bedroom",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q7(a)",
+    "questionText": "Discuss two advantages of converting an attic space into a bedroom.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of converting an attic space into a bedroom.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "It’s a cost-effective way of adding additional living space to the home",
+            "Creates an extra bedroom for the homeowner",
+            "Increases the value of the home",
+            "Adds versatility to the home as the bedroom could have additional uses",
+            "Saves the need for extending the home to create an extra bedroom",
+            "May provide better sound proofing as away from living space",
+            "Conversion provides the opportunity to insulate the roof to a higher standard"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q7-b",
+    "topicId": "cons-1-1",
+    "conceptId": "laying-out-a-converted-attic",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q7(b)",
+    "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the attic bedroom: • access to en suite • double bed • clothes storage unit • study space.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 5",
+      "answer": 4,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the attic",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "access to en-suite",
+            "double bed",
+            "clothes storage unit",
+            "study space",
+            "Located by shower to allow user more room inside the en suite",
+            "Located by shower providing more wall space in the bedroom for storage etc",
+            "Located opposite the sink providing more privacy away from the bed double bed",
+            "Located against wall with room for bedside tables",
+            "Access to electrical sockets and light switch",
+            "Located away from eaves for head height clothes storage unit",
+            "Located by wall to allow adequate space for the bed and to circulate",
+            "Located by wall so the units can be supported and attached for strength and stability",
+            "Located in alcove to make use of underutilised space study area",
+            "Located away from the bed to create a different zone within the bedroom"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 28 marks for this part. The 20 on this card are the marks it states answers for; the other 8 go to Sketch (8) — the drawing itself and anything the scheme prices without saying what earns it. The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2024-ol-q9-b",
+    "topicId": "cons-1-1",
+    "conceptId": "modifying-a-family-room",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q9(b)",
+    "questionText": "Using notes and freehand sketches, show two modifications to the family room that would allow for the following: • additional natural light • access to the rear garden.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 13",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 13
+    },
+    "totalMarks": 26,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show two modifications to the family room that would allow for the following: • addit",
+        "marks": 26,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 13,
+          "options": [
+            "Install roof lights",
+            "Install larger windows at the rear",
+            "Additional windows to side or rear",
+            "Replace windows with a large glazed door",
+            "Install a large bi-fold or sliding door"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q9-c",
+    "topicId": "cons-1-1",
+    "conceptId": "access-from-a-family-room-to-the-garden",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q9(c)",
+    "questionText": "Discuss two advantages of providing access to the rear garden from the family room for the occupants of the house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of providing access to the rear garden from the family room for the occupants of the house.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Increase the occupant’s usable space",
+            "Connection with nature that can improve mood and well-being",
+            "Creates outdoor living space",
+            "Encourages the use of the outdoors",
+            "Increases the resale value of the property"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q1-a",
+    "topicId": "cons-3-2",
+    "conceptId": "vertical-section-external-wall",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q1(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall of the house and through the eaves of the trussed roof. On your drawing, show the typical construction details from a level 400 mm below the wallplate, through the wall and eaves of the roof. Include the first three courses of slate at eaves. Include three typical dimensions on your drawing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 13,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "To a scale of 1:5, draw a vertical section through the external wall of the house and through the eaves of the trussed r",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "Concrete block outer leaf with external render",
+            "Full fill cavity with wall tie",
+            "Concrete block inner leaf with internal plaster",
+            "Cavity closer",
+            "Wallplate 100 mm x 75 mm",
+            "Prefabricated roof truss",
+            "Insulation and airtight membrane",
+            "Plasterboard with skim coat",
+            "Fascia, soffit & gutter",
+            "Ventilation",
+            "Breather membrane",
+            "Slates and battens",
+            "Any 3 typical dimensions"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q5-b",
+    "topicId": "cons-3-6",
+    "conceptId": "preventing-moisture-at-the-window-cill",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q5(b)",
+    "questionText": "On your drawing show how to prevent moisture penetration at the window cill.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q5-b-r1",
+        "kind": "point",
+        "verbatim": "DPC and drip",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q6-b",
+    "topicId": "cons-1-8",
+    "conceptId": "personal-protective-equipment",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q6(b)",
+    "questionText": "Using notes and freehand sketches, show three items of personal protective equipment (PPE) which should be worn by workers when working with construction vehicles. Give one specific reason why each item of personal protective equipment must be worn.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 8",
+      "answer": 3,
+      "ofParts": 3,
+      "perPart": 8
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show three items of personal protective equipment (PPE) which should be worn by worke",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 8,
+          "options": [
+            "Item of PPE 1 and specific reason",
+            "Item of PPE 2 and specific reason",
+            "Item of PPE 3 and specific reason"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q8-None-gulley-trap",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-gulley-trap",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q8 — Gulley trap",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • gulley trap.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q8-None-gulley-trap-r1",
+        "kind": "anyN",
+        "verbatim": "Gulley trap",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Gulley trap",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A gulley trap is a plumbing fixture used in sewage and rain water systems to prevent foul odours from entering a building",
+            "Typically, a U-shaped pipe installed underground",
+            "The trap works by trapping water in the U-bend, which forms a barrier between the sewer gases and the building",
+            "This water barrier prevents foul odours and harmful gases such as methane from entering the building through the sewerage system",
+            "Gully traps require regular maintenance to ensure they remain effective in preventing odours and gases from entering buildings"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q8-None-smart-lighting",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-smart-lighting",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q8 — Smart lighting",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • smart lighting.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q8-None-smart-lighting-r1",
+        "kind": "anyN",
+        "verbatim": "Smart lighting",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Smart lighting",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Smart lighting systems allow users to control various aspects of their lighting remotely and often automatically",
+            "Smart lighting typically uses internet connectivity to be controlled through smartphones, tablets, or voice commands",
+            "Smart lighting systems often include scheduling and automation features. Users can set timers or schedules for their lights to turn on, off, or adjust brightness levels automatically",
+            "By allowing users to easily control and automate their lighting, smart lighting systems can contribute to energy savings",
+            "Users can often customise the colour, brightness, and ambiance of their smart lights to suit their preferences"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q8-None-site-planning-notice",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-site-planning-notice",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q8 — Site planning notice",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • site planning notice.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q8-None-site-planning-notice-r1",
+        "kind": "anyN",
+        "verbatim": "Site planning notice",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Site planning notice",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A site planning notice is a public notice an applicant must erect at the site of development, when applying for planning permission",
+            "It must be clearly visible and legible to the public from the road",
+            "The notice must contain certain details including the name of the applicant, site address, details on the type of application and nature of the development",
+            "This notice is required under planning regulations and serves to inform the public about the development plans and provide an opportunity for interested parties to submit observations or objections",
+            "The site notice is required to be in place for the first five weeks after the lodgement of the planning application",
+            "Failure to comply with the regulations of the site notice may make the application invalid"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q8-None-halving-joint",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-halving-joint",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q8 — Halving joint",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • halving joint.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q8-None-halving-joint-r1",
+        "kind": "anyN",
+        "verbatim": "Halving joint",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Halving joint",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A halving joint is common strong woodworking joint with a medium gluing area",
+            "The joint can be a cross halving, corner halving, T-halving or dovetail halving joint",
+            "Halving joints involve half of the material removed from each piece at the joint area",
+            "Halving joints are commonly used for framing construction and in furniture making",
+            "The corner halving joint can be used in frame construction",
+            "The dovetail halving joint is a strong and attractive way of using a halving joint"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q8-None-cordless-drill",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-cordless-drill",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q8 — Cordless drill",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • cordless drill.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q8-None-cordless-drill-r1",
+        "kind": "anyN",
+        "verbatim": "Cordless drill",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Cordless drill",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A cordless drill is a portable power tool used for drilling holes and driving screws",
+            "Cordless drills are powered by rechargeable batteries",
+            "Cordless drills are more convenient and versatile than corded electric drills",
+            "They are typically powered with lithium-ion batteries",
+            "As they are battery powered, they allow users to work in areas which have no access to a power source",
+            "Modern cordless drills contain additional features such as an LED light and a battery power indicator"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q8-None-cavity-closer",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-cavity-closer",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q8 — Cavity closer",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • cavity closer.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q8-None-cavity-closer-r1",
+        "kind": "anyN",
+        "verbatim": "Cavity closer",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Cavity closer",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A cavity closer is used at wallplate level and around window and door openings to fill the gap between the inner and outer leaves of a cavity wall",
+            "The cavity closer helps to prevent thermal bridging between the inner and outer leaf",
+            "They also help prevent damp penetration, air infiltration and condensation",
+            "Cavity closers help to improve the thermal performance of the building envelope and contribute to energy efficiency",
+            "Cavity closers are typically made from materials such as insulation foam or rigid insulation boards",
+            "They typically come in widths of 100-150 mm to suit the cavity width"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q8-None-faceplate-turning",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-faceplate-turning",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q8 — Faceplate turning",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • faceplate turning.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q8-None-faceplate-turning-r1",
+        "kind": "anyN",
+        "verbatim": "Faceplate turning",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Faceplate turning",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Faceplate turning is a woodturning method often used to create large flat circular items",
+            "It involves mounting a work piece onto a faceplate and attaching to the headstock of a woodturning lathe",
+            "Faceplate turning allows you create items such as wooden bowls, plates and other shallow items",
+            "As the work piece turns, the tool rest is used to support the lathe chisel which removes material from the wood",
+            "When faceplate turning the speed of the lathe should start slow until the piece is balanced and the speed is then increased",
+            "Faceplate turning is a skilled process and can product beautiful decorative items"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q8-None-plywood",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-plywood",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q8 — Plywood",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • plywood.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q8-None-plywood-r1",
+        "kind": "anyN",
+        "verbatim": "Plywood",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Plywood",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Plywood is a type of engineered wood panel made by gluing together thin layers of wood veneers",
+            "These veneers are usually arranged with their grain direction perpendicular to each other, to enhance its strength",
+            "Plywood is widely used in construction, furniture making and cabinet-making",
+            "Plywood provides a strong and relatively low-cost alternative to solid wood",
+            "Plywood comes in various thicknesses and sizes to suit different applications",
+            "Marine plywood is a type of plywood designed for use in high-moisture environments such as boat building and exterior construction"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-ol-q8-None-heat-pump",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-heat-pump",
+    "level": "ordinary",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 OL Q8 — Heat pump",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • heat pump.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-ol-q8-None-heat-pump-r1",
+        "kind": "anyN",
+        "verbatim": "Heat pump",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Heat pump",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A heat pump is a device that can transfer heat from one location to another using mechanical means",
+            "It is commonly used for heating or cooling indoor spaces and can be more energy-efficient compared to traditional heating and cooling systems",
+            "Heat pumps work by extracting heat from a heat source such as the air, water, or ground and transferring it into a home",
+            "A heat pump system uses underfloor heating or radiators to transfer heat around the home",
+            "A heat pump uses electricity as its main power source, but they generally have a coefficient of performance ratio (COP) of 3-4",
+            "Grants are available to homeowners to encourage them to change from a fossil fuel heating system to a heat pump"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

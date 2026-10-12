@@ -85,4 +85,14 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "cons-2025-hl-q2-a-health-and-safety-officer": "cons-2025-hl-q2-a-safety-training",
   "cons-2025-hl-q2-a-risk-assessment-audit": "cons-2025-hl-q2-a-safety-training",
   "cons-2025-hl-q10-a-foundation-design": "cons-2025-hl-q10-a-building-form",
+  /* 2026-10-12. Construction Studies 2024 Ordinary Q8 is one any-five card (choice is not a route); the other eight
+   * pre-audit per-term cards are consolidated into it and their progress goes to it. */
+  "cons-2024-ol-q8-None-gulley-trap": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-smart-lighting": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-halving-joint": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-cordless-drill": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-cavity-closer": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-faceplate-turning": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-plywood": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-heat-pump": "cons-2024-ol-q8-None-site-planning-notice",
 };

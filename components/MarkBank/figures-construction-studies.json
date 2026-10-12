@@ -1398,5 +1398,187 @@
     "alt": "Original SEC 2024 Higher Construction Studies alternative Question 10: the printed Irish Green Building Council quotation on buildings across their lifecycle and its two parts.",
     "attribution": "SEC Leaving Certificate Construction Studies 2024 Higher Level — © State Examinations Commission.",
     "solution": false
+  },
+  "construction-studies-2024-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q1-original.png",
+    "md5": "dd26507e1ef21e0d0da01ff9730cc28f",
+    "alt": "Original SEC 2024 Ordinary Construction Studies Question 1: the printed question with a sketch of the slated eaves of a trussed roof on a cavity wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2024-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q2-original.png",
+    "md5": "22c814cceff77b3a91d7676b0c0a20fc",
+    "alt": "Original SEC 2024 Ordinary Construction Studies Question 2: the printed question with a sketch of a worker fixing insulated plasterboard to a wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2024-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q3-original.png",
+    "md5": "2305c45743aa36ca987524eb18ef1f50",
+    "alt": "Original SEC 2024 Ordinary Construction Studies Question 3: the printed question with a sketch of an accessible bathroom with a level shower area.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2024-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q4-original.png",
+    "md5": "d4d2983a9f4c65b6f0087dc41ca1e0cf",
+    "alt": "Original SEC 2024 Ordinary Construction Studies Question 4: the printed question with a sketch of a stone-faced entrance wall and driveway under construction.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2024-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q5-original.png",
+    "md5": "d52d9bd254b304cd31002afd83654565",
+    "alt": "Original SEC 2024 Ordinary Construction Studies Question 5: the printed question with a sketch of a triple-glazed window and concrete cill in a rendered wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2024-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q6-original.png",
+    "md5": "16e16d29a193028d5bda0bd8a26b3911",
+    "alt": "Original SEC 2024 Ordinary Construction Studies Question 6: the printed question with a sketch of a site dumper in operation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2024-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q7-original.png",
+    "md5": "efbbc7eb4db929186032f74c5807c1ca",
+    "alt": "Original SEC 2024 Ordinary Construction Studies Question 7: the printed question with the draft plan of an attic bedroom with stairs and an en suite.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2024-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q8-original.png",
+    "md5": "10a256c72e85d618b1a555dba3d7fd95",
+    "alt": "Original SEC 2024 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2024-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q9-original.png",
+    "md5": "8e4ee2f7542359410370a495f626964a",
+    "alt": "Original SEC 2024 Ordinary Construction Studies Question 9: the printed question with a sketch of a zinc-clad family room at the rear of a semi-detached house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2024-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q1-scheme.png",
+    "md5": "0be9a02228b0819d1a9d8a545b3bc857",
+    "alt": "SEC model section through the trussed-roof eaves and cavity wall, with the wallplate strap marked (b) and the specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q2-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q2-advantages.png",
+    "md5": "142221838217d0bac7e8da059ae80e2f",
+    "alt": "SEC 2024 Ordinary marking scheme notes on the advantages of improving a BER, with a BER scale graphic.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q2-method": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q2-method.png",
+    "md5": "cfdb61568405a4837311b92b16c38d80",
+    "alt": "SEC 2024 Ordinary marking scheme notes on insulating the inside of an external wall, with sketches of insulated plasterboard and battens, and the insulation types and thickness.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q2-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q2-reasons.png",
+    "md5": "4a8a566b8dafa8a286731410cae919a0",
+    "alt": "SEC 2024 Ordinary marking scheme notes on upgrading walls and windows together, with a sketch of a window in an insulated wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q3-system.png",
+    "md5": "6e220ab15162523303a41458d7894a2b",
+    "alt": "SEC model single-line diagram of the bathroom hot and cold supply: rising main, insulated tank, cylinder, shower, basin and cistern, with typical sizes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q3-features": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q3-features.png",
+    "md5": "b0fb06dab95dd7871636a3342b151d99",
+    "alt": "SEC 2024 Ordinary marking scheme notes on an accessible shower area, with sketches of a level shower and lever controls.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q4-stone": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q4-stone.png",
+    "md5": "17e440884660bfdd78fe0200ba9d8677",
+    "alt": "SEC 2024 Ordinary marking scheme notes on a natural stone finish, with a sketch of a mason laying stone.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q4-foundation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q4-foundation.png",
+    "md5": "c9a176e5eb5fe8dbd62f1bbe32ace496",
+    "alt": "SEC model sketch of a reinforced strip foundation under a wall, with the design notes and dimensions.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q5-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q5-section.png",
+    "md5": "42b0e11b5496b183b55e4f5d15b0d531",
+    "alt": "SEC model section through the cavity wall and the bottom of the window with the concrete cill, with the specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q5-drip": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q5-drip.png",
+    "md5": "a00991afa960e4999a1639725c4c6c94",
+    "alt": "SEC model detail of the window cill marked (b), showing the DPC and drip.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q6-precautions": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q6-precautions.png",
+    "md5": "8df593eb41fdeea0dd14698dce6357f7",
+    "alt": "SEC 2024 Ordinary marking scheme notes on site dumper safety, with a sketch of a site dumper.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q6-ppe": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q6-ppe.png",
+    "md5": "3b14e5706be4aabf420c93c034a9b6fa",
+    "alt": "SEC model PPE signs for a hard hat, high-visibility vest, ear defenders, safety glasses and safety boots, each with a reason.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q6-training": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q6-training.png",
+    "md5": "e24ebe78bc865fe6b5a4072865a5685d",
+    "alt": "SEC 2024 Ordinary marking scheme notes on operator training, with a sketch of a certification card.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q7-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q7-layout.png",
+    "md5": "b2884f18d675e4c5a7a91f2893d47dd6",
+    "alt": "SEC model plan of the attic bedroom showing the en suite access, double bed, clothes storage and study space.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q8-terms.png",
+    "md5": "394690191efdb8e59d03143fe43ba4d6",
+    "alt": "SEC marking-scheme notes and sketches for all nine Question 8 terms, in scheme order: gulley trap, smart lighting, site planning notice, halving joint, cordless drill, cavity closer, faceplate turning, plywood and heat pump.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q9-zinc": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q9-zinc.png",
+    "md5": "9be9a30ffba017aaa302471d93c6703b",
+    "alt": "SEC 2024 Ordinary marking scheme notes on zinc cladding, with a sketch of a zinc-clad wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2024-OL-q9-modifications": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-OL-q9-modifications.png",
+    "md5": "e7d0c98d14554f9b026540dcf1f07d34",
+    "alt": "SEC model sketches of the family room with roof lights and large glazed doors to the garden, and the list of modifications.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2024 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }
