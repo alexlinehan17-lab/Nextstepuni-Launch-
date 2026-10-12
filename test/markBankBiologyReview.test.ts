@@ -17,11 +17,11 @@ import audit from '../scripts/markbank/authored/biology-review-audit.json';
 import { tariffReconciles } from '../types/markBank';
 
 type Task = { id: string; questionRef: string; total: number; route: string | null;
-  status: 'carded' | 'held' };
+  status: 'carded' | 'excluded' };
 type Sitting = { tasks: Task[]; cardCount: number; baseTaskCount: number;
   routes: Record<string, string[]>;
   sources: Record<string, { sha256: string; pages: number }>;
-  checks: { held: Array<{ id: string; reason: string; schemeRows: string[] }> } };
+  checks: { excluded: Array<{ id: string; reason: string; evidence: string; schemeRows: string[] }> } };
 const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sittings;
 const sitting = sittings['2026-hl'];
 
@@ -120,18 +120,22 @@ const verbatims = (id: string) => (olById.get(id)!.rows as unknown as Array<{ ve
   .map(row => row.verbatim);
 
 describe('Biology 2026 Ordinary — reviewed sitting', () => {
-  it('ships every carded task, holds the one it cannot card, and nothing else', () => {
+  it('ships every carded task, excludes the one it cannot card, and nothing else', () => {
     expect(ol.baseTaskCount).toBe(183);
     expect(ol.cardCount).toBe(187);
     expect(ordinary2026).toHaveLength(187);
     const carded = ol.tasks.filter(task => task.status === 'carded').map(task => task.id);
     expect(new Set(carded)).toEqual(new Set(olById.keys()));
     // Q12(b)(ii)2: the scheme prints "Rr" in both offspring boxes, against its
-    // own White phenotype for the r row. Reviewed and priced, not carded.
-    expect(ol.tasks.filter(task => task.status === 'held').map(task => task.id))
+    // own "White" phenotype for the r row. Reviewed, priced and excluded with
+    // its evidence; neither the misprint nor a correction is carded.
+    expect(ol.tasks.filter(task => task.status === 'excluded').map(task => task.id))
       .toEqual(['bio-2026-ol-q12-b-ii-2']);
     expect(olById.has('bio-2026-ol-q12-b-ii-2')).toBe(false);
-    expect(ol.checks.held[0].schemeRows).toEqual(['Rr', 'Rr']);
+    const [exclusion] = ol.checks.excluded;
+    expect(exclusion.schemeRows).toEqual(['Rr', 'Rr']);
+    expect(exclusion.evidence).toMatch(/both offspring boxes .* print "Rr"/);
+    expect(exclusion.evidence).toMatch(/"White"/);
   });
 
   it('pins the reviewed source PDFs', () => {

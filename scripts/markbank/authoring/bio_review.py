@@ -317,7 +317,7 @@ def build(ledger, year, level):
     fail(problems)
 
     # --- tasks ------------------------------------------------------------
-    cards, audit_tasks, held = [], [], []
+    cards, audit_tasks, excluded = [], [], []
     units_by = defaultdict(Counter)
     totals_q, totals_part = defaultdict(int), defaultdict(int)
     seen_ids = set()
@@ -427,14 +427,17 @@ def build(ledger, year, level):
                 'presentationNote': 'Open the exact examination page to use its published chart, '
                                     'table, photograph or diagram.',
             }
-        if t.get('held'):
-            held.append({'key': t['key'], 'id': cid, 'questionRef': card['questionRef'],
-                         'total': t['total'], 'reason': t['held'],
-                         'schemeRows': [r['verbatim'] for r in rows]})
+        if t.get('excluded'):
+            if not t.get('evidence'):
+                problems.append(f'{t["key"]}: an exclusion needs the SEC evidence for its reason')
+            excluded.append({'key': t['key'], 'id': cid, 'questionRef': card['questionRef'],
+                             'total': t['total'], 'reason': t['excluded'],
+                             'evidence': t.get('evidence'),
+                             'schemeRows': [r['verbatim'] for r in rows]})
         else:
             cards.append(card)
         audit_tasks.append({
-            'status': 'held' if t.get('held') else 'carded',
+            'status': 'excluded' if t.get('excluded') else 'carded',
             'key': t['key'], 'id': cid, 'questionRef': card['questionRef'], 'section': t['sec'],
             'paper': {'doc': doc, 'pages': sorted({m['page'] for m in qmetas})},
             'scheme': {'pages': sorted({sq['page']})},
@@ -481,7 +484,7 @@ def build(ledger, year, level):
     leaves = set(PC.leaves_of(parts))
     claimed = set()
     for t in ledger.TASKS:
-        if t.get('held'):
+        if t.get('excluded'):
             continue
         qn, letter, roman, _ = B.parse_ref(t['ref'])
         key = (qn, letter, roman)
@@ -543,7 +546,7 @@ def build(ledger, year, level):
                      'biology-curriculum-crosswalk.json)',
         'tickChecksumsMatched': len(ledger.CHECKSUMS),
         **({'layoutChecks': layout} if layout else {}),
-        'held': held,
+        'excluded': excluded,
     }
     return lifter, cards, audit_tasks, checks
 
@@ -697,10 +700,10 @@ def main():
         os._exit(1)
     base = len({t['key'] for t in ledger.TASKS})
     print(f'biology {args.year} {args.level}: {base} reviewed tasks -> {len(cards)} cards, '
-          f'{len(checks["held"])} held, {len(figs)} figures'
+          f'{len(checks["excluded"])} excluded, {len(figs)} figures'
           + (' (written)' if args.write else ' (check only)'))
-    for h in checks['held']:
-        print(f'  HELD {h["questionRef"]}: {h["reason"]}')
+    for h in checks['excluded']:
+        print(f'  EXCLUDED {h["questionRef"]}: {h["reason"]}')
     # Leave without interpreter teardown: PyMuPDF 1.26 on this machine
     # intermittently segfaults freeing its documents at exit, which would turn
     # a finished run's status into 139 after all its work is done.

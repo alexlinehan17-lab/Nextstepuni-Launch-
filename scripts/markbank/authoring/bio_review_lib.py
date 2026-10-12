@@ -304,9 +304,11 @@ def G(kind, page=None, clip=None, expect=None, **kw):
 
 def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
       qfig=None, labels=None, source_pages=None, route=None, notes='', decision='',
-      paper_pages=None, scheme_pages=None, leaf=None, held=None, item=None):
-    """One reviewed task -> one card (or, with `held`, a reviewed task kept
-    out of the bank for the stated reason and reported as open).
+      paper_pages=None, scheme_pages=None, leaf=None, excluded=None, evidence=None,
+      item=None):
+    """One reviewed task -> one card, or, with `excluded` (the reason) and
+    `evidence` (what the SEC documents print), a reviewed and priced task kept
+    out of the bank on purpose and recorded as excluded.
 
     `route` names one option of a closed choose-one pool: the pool's cards are
     alternatives and its tariff counts once. `item` = (slug, label) names one
@@ -315,7 +317,8 @@ def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
     return dict(key=key, ref=ref, sec=sec, q=q, rows=rows, topic=topic, concept=concept,
                 sq=sq, total=total, stem=stem or [], fig=fig, qfig=qfig, labels=labels or [],
                 source_pages=source_pages, route=route, notes=notes, decision=decision,
-                paper_pages=paper_pages, scheme_pages=scheme_pages, leaf=leaf, held=held,
+                paper_pages=paper_pages, scheme_pages=scheme_pages, leaf=leaf,
+                excluded=excluded, evidence=evidence,
                 item=item)
 
 

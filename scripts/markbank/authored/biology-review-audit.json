@@ -7056,7 +7056,7 @@
     },
     "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (biology-<year>-exam-topic-map.json via biology-curriculum-crosswalk.json)",
     "tickChecksumsMatched": 36,
-    "held": []
+    "excluded": []
    }
   },
   "2026-ol": {
@@ -10767,7 +10767,7 @@
      "notes": null
     },
     {
-     "status": "held",
+     "status": "excluded",
      "key": "12bii2",
      "id": "bio-2026-ol-q12-b-ii-2",
      "questionRef": "2026 OL Q12(b)(ii)2",
@@ -14399,13 +14399,14 @@
       "column": "Non-cloudy"
      }
     ],
-    "held": [
+    "excluded": [
      {
       "key": "12bii2",
       "id": "bio-2026-ol-q12-b-ii-2",
       "questionRef": "2026 OL Q12(b)(ii)2",
       "total": 6,
-      "reason": "The scheme prints \"Rr\" in both offspring boxes. The r-gamete row of a pink (Rr) x white (rr) cross is rr, as the scheme's own matching phenotype for that row (White) shows. Carding the printed answer would teach the misprint; correcting it would be the reviewer writing an answer. Held for a decision.",
+      "reason": "The scheme prints \"Rr\" in both offspring boxes, but the r-gamete row of a pink (Rr) x white (rr) cross is rr, as the scheme's own matching phenotype for that row (\"White\") shows. Carding the printed answer would teach the misprint, and correcting it would be the reviewer writing an answer, so the task is excluded pending a decision. Its siblings (ii)1 and (ii)3 are carded.",
+      "evidence": "Scheme p.17, Q12(b)(ii) \"2. Genotypes of the possible offspring.\": both offspring boxes of the completed Punnett square print \"Rr\" (read from the glyphs at (165,535)-(192,553) and (165,556)-(192,575)); \"3. Matching phenotypes of the possible offspring.\" prints \"Pink\" and \"White\" beside the same two rows; the gametes it prints are R and r for the pink rose and r for the white rose. Paper 040 p.3: a rose with pink flowers crossed with a rose with white flowers, captioned White (rr).",
       "schemeRows": [
        "Rr",
        "Rr"
