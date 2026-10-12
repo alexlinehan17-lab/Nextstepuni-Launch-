@@ -4272,7 +4272,7 @@ export const CARDS: SecCard[] = [
                 6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
     },
     questionFigure: {
           "candId": "construction-studies-2025-HL-q8-original",
@@ -4386,7 +4386,7 @@ export const CARDS: SecCard[] = [
                 7
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, and each item keeps its own 10 marks."
     },
     questionFigure: {
           "candId": "construction-studies-2025-HL-q10-original",
@@ -4424,7 +4424,7 @@ export const CARDS: SecCard[] = [
                 7
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, and each item keeps its own 10 marks."
     },
     questionFigure: {
           "candId": "construction-studies-2025-HL-q10-original",
@@ -7348,7 +7348,7 @@ export const CARDS: SecCard[] = [
                 6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
     },
     questionFigure: {
           "candId": "construction-studies-2026-HL-q9-original",
@@ -8686,7 +8686,7 @@ export const CARDS: SecCard[] = [
                 7
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, and each item keeps its own 10 marks."
     },
     questionFigure: {
           "candId": "construction-studies-2025-HL-q10-original",
@@ -8841,7 +8841,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles; an unchosen item never adds marks."
     },
     questionFigure: {
           "candId": "construction-studies-2026-HL-q4-original",
@@ -8875,7 +8875,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles; an unchosen item never adds marks."
     },
     questionFigure: {
           "candId": "construction-studies-2026-HL-q4-original",
@@ -8911,7 +8911,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles; an unchosen item never adds marks."
     },
     questionFigure: {
           "candId": "construction-studies-2026-HL-q4-original",
@@ -8945,7 +8945,7 @@ export const CARDS: SecCard[] = [
                 6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
     },
     questionFigure: {
           "candId": "construction-studies-2026-HL-q9-original",
@@ -8991,7 +8991,7 @@ export const CARDS: SecCard[] = [
                 6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
     },
     questionFigure: {
           "candId": "construction-studies-2026-HL-q9-original",
@@ -9086,7 +9086,7 @@ export const CARDS: SecCard[] = [
                 6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
     },
     questionFigure: {
           "candId": "construction-studies-2025-HL-q8-original",
@@ -9123,7 +9123,7 @@ export const CARDS: SecCard[] = [
                 6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
     },
     questionFigure: {
           "candId": "construction-studies-2025-HL-q8-original",
@@ -9165,7 +9165,7 @@ export const CARDS: SecCard[] = [
                 7
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, and each item keeps its own 10 marks."
     },
     questionFigure: {
           "candId": "construction-studies-2025-HL-q10-original",

@@ -5600,7 +5600,7 @@
             6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
         }
       },
       "sourceChecks": [
@@ -5696,7 +5696,7 @@
             6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
         }
       },
       "sourceChecks": [
@@ -5824,7 +5824,7 @@
             6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (b) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
         },
         "taskGroups": [
           {
@@ -6595,7 +6595,7 @@
             7
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, and each item keeps its own 10 marks."
         }
       },
       "sourceChecks": [
@@ -6758,7 +6758,7 @@
             7
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, and each item keeps its own 10 marks."
         }
       },
       "sourceChecks": [
@@ -6877,7 +6877,7 @@
             7
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, and each item keeps its own 10 marks."
         }
       },
       "sourceChecks": [
@@ -7090,7 +7090,7 @@
             7
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items: every pair is kept, and each item keeps its own 10 marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, and each item keeps its own 10 marks."
         },
         "taskGroups": [
           {
@@ -8987,12 +8987,15 @@
     {
       "cardId": "cons-2025-hl-q8-a",
       "priorSha256": "da0947a2d2d843b6e30c495add16b982fdcc3f05caead54e3dc7925fb174e4d1",
-      "correctedSha256": "db51f4c55ac81f3888ba1aff60a8f62837fa119c640c355d3a524b3623fe8c02",
+      "correctedSha256": "d264961a6b32340888015abbace9d80d811d423089d527a8c8ab6ccd558bc8fa",
       "priorTotalMarks": 12,
       "correctedTotalMarks": 12,
       "priorTopicId": "cons-6-2",
       "correctedTopicId": "cons-6-5",
-      "reason": "Split into the two printed benefits (3 point + 3 discussion); total unchanged (12)."
+      "reason": "Split into the two printed benefits (3 point + 3 discussion); total unchanged (12).",
+      "supersededSha256": [
+        "db51f4c55ac81f3888ba1aff60a8f62837fa119c640c355d3a524b3623fe8c02"
+      ]
     },
     {
       "cardId": "cons-2025-hl-q9-a",
@@ -9017,25 +9020,29 @@
     {
       "cardId": "cons-2025-hl-q10-a-building-form",
       "priorSha256": "92dbdbd9e0f565921f75dca8f97350490f313b28070697bb3c21698cba41604d",
-      "correctedSha256": "c49a1728ce6ebc3d8491a1575e6bc3898d627de34fac28b035fb3e77b2d71757",
+      "correctedSha256": "e1f305198ef94b4c461bede71f574ef02bfd6babb80613d04edc28195142b6f0",
       "priorTotalMarks": 10,
       "correctedTotalMarks": 20,
       "priorTopicId": "cons-6-3",
       "correctedTopicId": "cons-6-4",
       "reason": "Now the whole of part (a): one card printing all three items with an any-two group (notes 5 + sketches 5 each, 20), kept under this ID; the foundation-design ID aliases to it (choice is not a route).",
       "supersededSha256": [
-        "9df76c233b2444303e4d60d5330d2a27b0ddd5662976bdeeb321ebfe2364816a"
+        "9df76c233b2444303e4d60d5330d2a27b0ddd5662976bdeeb321ebfe2364816a",
+        "c49a1728ce6ebc3d8491a1575e6bc3898d627de34fac28b035fb3e77b2d71757"
       ]
     },
     {
       "cardId": "cons-2025-hl-q10-b",
       "priorSha256": "b4abcf35535865b5c449f9832d0da48c3a9599d9228a4538b6977bc1e6bcaaba",
-      "correctedSha256": "bc1b898085b4c67cc1f9b4b892d5f0303e412552f53a7b0b490432c33377f614",
+      "correctedSha256": "643b03ba3cc4d04438b5afce3a327280cd8e298104e68a934431a1cfff5d9c86",
       "priorTotalMarks": 28,
       "correctedTotalMarks": 28,
       "priorTopicId": "cons-6-4",
       "correctedTopicId": "cons-6-4",
-      "reason": "Replaces an unprinted \"best 2 of 4 × 14\" tariff with the printed rows: sketch 8, orientation 4, sun path 4, two benefits 6 + 6 = 28."
+      "reason": "Replaces an unprinted \"best 2 of 4 × 14\" tariff with the printed rows: sketch 8, orientation 4, sun path 4, two benefits 6 + 6 = 28.",
+      "supersededSha256": [
+        "bc1b898085b4c67cc1f9b4b892d5f0303e412552f53a7b0b490432c33377f614"
+      ]
     }
   ],
   "consolidatedLegacy": [
@@ -9485,5 +9492,31 @@
       "construction-studies-2025-HL-q8-mvhr-duct",
       "construction-studies-2025-HL-q8-wallplate"
     ]
-  }
+  },
+  "revisions": [
+    {
+      "cardId": "cons-2025-hl-q8-b",
+      "priorSha256": "deab8e63f22688398dbe74c5153058c18d50e7edba046a0cf337a2de1a6d09ef",
+      "correctedSha256": "88e74be7b7c182673d861acee1d79a02dcd7f268c51a00465f0187b0ad6e83a7",
+      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or pair is kept. Wording only; rows, tariff and topics unchanged."
+    },
+    {
+      "cardId": "cons-2025-hl-q8-complete",
+      "priorSha256": "4cc341a4c58ccf2ba89ce35e2ddb5705131ca9850c84e0b2601a969dc4c87186",
+      "correctedSha256": "e05d2807aa43265bf9ac263076aa21004f779050af4003ef8fde09816f5dbad6",
+      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or pair is kept. Wording only; rows, tariff and topics unchanged."
+    },
+    {
+      "cardId": "cons-2025-hl-q10-c",
+      "priorSha256": "cba72b97d20ce560e526fa65492e48cbf66c7473213e2f7720aa0b8d9a35252c",
+      "correctedSha256": "c1009750e1e4362e99dd7414ec4304090d0ab620e16af7be8301062730bd5a29",
+      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or pair is kept. Wording only; rows, tariff and topics unchanged."
+    },
+    {
+      "cardId": "cons-2025-hl-q10-complete",
+      "priorSha256": "ea4d1ed0879e83355e42801823fb94849116e6b721d9b93fa840fa36f8783d43",
+      "correctedSha256": "5f7e731058cdd1c122a3c64abbfcd9263fd3a21517e4867f94112ba6b9f6d08d",
+      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or pair is kept. Wording only; rows, tariff and topics unchanged."
+    }
+  ]
 }

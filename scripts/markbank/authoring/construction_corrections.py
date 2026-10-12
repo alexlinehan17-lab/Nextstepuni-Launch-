@@ -32,9 +32,10 @@ def _reviews():
 
 
 def recorded_corrections():
+    """In-place corrections, plus later wording revisions of a reviewed card (same hash-linked shape)."""
     out = {}
     for review in _reviews():
-        for fix in review.get('corrections', []):
+        for fix in review.get('corrections', []) + review.get('revisions', []):
             assert fix['cardId'] not in out, ('corrected twice', fix['cardId'])
             out[fix['cardId']] = fix
     return out
