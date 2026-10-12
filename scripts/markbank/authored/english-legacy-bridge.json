@@ -1,0 +1,308 @@
+{
+  "rule": "Every legacy runtime card of a bridged paper maps to the reviewed task that replaces it: same-id keeps the id (and saved progress) on the published card; alias keeps it as an explicit progress alias in components/MarkBank/cardAliases.ts. english_publish.py refuses a bridged paper unless the ledger covers exactly its legacy ids, every target is published, and every lifted indicative item is printed on its scheme page.",
+  "papers": {
+    "english-2025-hl-p1": {
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "legacyRuntime": "Served before the bridge by the 19 hand-reviewed REVIEWED_2025_PAPER_1 cards in components/MarkBank/cards/english/higher.ts (same ids as authored.json).",
+      "legacyCards": {
+        "english-2025-hl-p1-t1-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 1 QA(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "indicativeMaterial": {
+            "schemePage": 4,
+            "items": [
+              "‘underdog effect’ heightens our empathy/has an emotional effect/a bias - we romanticise the underdog",
+              "shapes our opinions about people and issues; we often side with the underdog as we cannot resist the idea of the weak/vulnerable triumphing over the strong/powerful",
+              "‘underdog effect’ can be used to gain advantage/as a strategy – sways voting intentions",
+              "support in sport can be determined by the ‘underdog effect’",
+              "fuels our sense of injustice – we want it rectified/inspires us to work harder – we believe anything is possible",
+              "makes us defy logic – go against what is rational – where clearly one side is stronger than the other"
+            ]
+          }
+        },
+        "english-2025-hl-p1-t1-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 1 QA(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-t1-a-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 1 QA(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "indicativeMaterial": {
+            "schemePage": 5,
+            "items": [
+              "writer effectively uses factual information/statistics/real life examples to inform",
+              "experimental research/studies/reports/quotations are informative and thought-provoking",
+              "provocative cultural illustrations/allusions drawn from the media inform and engage",
+              "instructive/knowledgeable/personal tone provides an informative and interesting perspective",
+              "effective use of inclusive language/questions/summative sentences/emotive language prompt us to consider/reflect",
+              "use of too many examples, quotations, studies, etc. confuse/blur the argument"
+            ]
+          }
+        },
+        "english-2025-hl-p1-t1-b": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 1 QB",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-t2-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 2 QA(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "indicativeMaterial": {
+            "schemePage": 7,
+            "items": [
+              "Atwood’s perspective comes with the benefit of past knowledge – she measures current problems against the past; hopeful perspective/things have been worse",
+              "her viewpoint is that hard work is necessary to tackle world problems/we cannot sit back/must get involved",
+              "an optimistic, positive approach/solutions are possible/sees new approaches/innovation",
+              "believes beneficial actions must be local and grounded; ideas ineffective if not part of people’s lives",
+              "recognises the association between local and international – international cooperation is key",
+              "she realises no one person/group can solve world problems"
+            ]
+          }
+        },
+        "english-2025-hl-p1-t2-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 2 QA(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-t2-a-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 2 QA(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "indicativeMaterial": {
+            "schemePage": 8,
+            "items": [
+              "Atwood effectively uses humour/self-reference/asides to engage and challenge the audience",
+              "personal/self-deprecating tone/voice/use of colloquialisms/engage and exhort",
+              "factual information/lists/historical references – convince and motivate",
+              "imagery/emotive examples/illustrations/allusions engage and inspire",
+              "effective inclusive style – direct address/questions/repetition/rhythm/cadence, involve/inspire",
+              "flippancy – undercuts/underestimates the seriousness and effectiveness of the content of the speech"
+            ]
+          }
+        },
+        "english-2025-hl-p1-t2-b": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 2 QB",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-t3-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 3 QA(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "indicativeMaterial": {
+            "schemePage": 10,
+            "items": [
+              "from the perspective of space, Earth’s resplendent beauty appears majestic/regal/a palace",
+              "from the distance of space, it seems to have a protective quality like a mother, yet paradoxically, it also needs to be protected",
+              "from this distance, a harmonious place of serenity and peace/where divisions disappear",
+              "its rich variety and colours of landscapes are obvious from space",
+              "part of a bigger universe beyond this phase of exploration",
+              "puts the role/importance of humans into perspective"
+            ]
+          }
+        },
+        "english-2025-hl-p1-t3-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 3 QA(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-t3-a-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 3 QA(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "indicativeMaterial": {
+            "schemePage": 11,
+            "items": [
+              "Harvey’s use of figurative language - imagery/simile/metaphor/personification - creates an elegant and thought-provoking passage",
+              "descriptive language - colour/adjectives/listing – adds graceful beauty",
+              "thought-provoking range of places and contrasts/questions develops a philosophical/reflective/meditative tone",
+              "tropes of language/alliteration/repetition give a poetic/lyrical quality to the passage",
+              "use of characterisation - Nell/Roman/human beings - as a thought-provoking device",
+              "excessive use of figurative/descriptive elements weaken the impact of the passage."
+            ]
+          }
+        },
+        "english-2025-hl-p1-t3-b": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Text 3 QB",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-composing-1": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Composing 1",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-composing-2": {
+          "kind": "alias",
+          "to": "english-2025-hl-p1-composing-2-route-selection-1",
+          "legacyQuestionRef": "2025 HL Paper 1 Composing 2",
+          "publishedQuestionRef": "2025 HL Paper 1 Composing 2 · Selected task: For the motion: Truth has become a valueless currency in today’s world",
+          "reason": "The legacy card was the whole speech “for or against the motion”. The reviewed paper publishes the two printed sides as routes (scheme PDF15: “argue on one side of the motion only”); the legacy id becomes a progress alias to the first route."
+        },
+        "english-2025-hl-p1-composing-3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Composing 3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-composing-4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Composing 4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-composing-5": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Composing 5",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-composing-6": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Composing 6",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p1-composing-7": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 1 Composing 7",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        }
+      }
+    },
+    "english-2025-hl-p2": {
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "legacyRuntime": "Served before the bridge by the 23 authored.json cards through generatedCardsForLevel.",
+      "legacyCards": {
+        "english-2025-hl-p2-single-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Single Text A(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-single-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Single Text A(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-single-b-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Single Text B(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-single-b-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Single Text B(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-single-c-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Single Text C(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-single-c-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Single Text C(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-single-d-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Single Text D(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-single-d-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Single Text D(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-single-e-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Single Text E(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-single-e-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Single Text E(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-comparative-a-q1": {
+          "kind": "alias",
+          "to": "english-2025-hl-p2-comparative-a-q1-a",
+          "legacyQuestionRef": "2025 HL Paper 2 Comparative A Q1",
+          "publishedQuestionRef": "2025 HL Paper 2 Comparative A Q1(a)",
+          "reason": "The legacy card bundled Q1(a) 30 and Q1(b) 40, which the scheme marks separately (PDF33, PDF34). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to part (a)."
+        },
+        "english-2025-hl-p2-comparative-a-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Comparative A Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-comparative-b-q1": {
+          "kind": "alias",
+          "to": "english-2025-hl-p2-comparative-b-q1-a",
+          "legacyQuestionRef": "2025 HL Paper 2 Comparative B Q1",
+          "publishedQuestionRef": "2025 HL Paper 2 Comparative B Q1(a)",
+          "reason": "The legacy card bundled Q1(a) 30 and Q1(b) 40, which the scheme marks separately (PDF36, PDF37). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to part (a)."
+        },
+        "english-2025-hl-p2-comparative-b-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Comparative B Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-comparative-c-q1": {
+          "kind": "alias",
+          "to": "english-2025-hl-p2-comparative-c-q1-a",
+          "legacyQuestionRef": "2025 HL Paper 2 Comparative C Q1",
+          "publishedQuestionRef": "2025 HL Paper 2 Comparative C Q1(a)",
+          "reason": "The legacy card bundled Q1(a) 30 and Q1(b) 40, which the scheme marks separately (PDF39, PDF40). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to part (a)."
+        },
+        "english-2025-hl-p2-comparative-c-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Comparative C Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-unseen-q1": {
+          "kind": "alias",
+          "to": "english-2025-hl-p2-unseen-q1-a",
+          "legacyQuestionRef": "2025 HL Paper 2 Unseen Poetry Q1",
+          "publishedQuestionRef": "2025 HL Paper 2 Unseen Poetry Q1(a)",
+          "reason": "The legacy card bundled Unseen Q1(a) 10 and Q1(b) 10, each marked “ex 10” on its own band (scheme PDF42). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to part (a)."
+        },
+        "english-2025-hl-p2-unseen-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Unseen Poetry Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2025-hl-p2-prescribed-1": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Prescribed Poetry 1",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "publishedQuestionRef": "2025 HL Paper 2 Prescribed Poetry Q1"
+        },
+        "english-2025-hl-p2-prescribed-2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Prescribed Poetry 2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "publishedQuestionRef": "2025 HL Paper 2 Prescribed Poetry Q2"
+        },
+        "english-2025-hl-p2-prescribed-3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Prescribed Poetry 3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "publishedQuestionRef": "2025 HL Paper 2 Prescribed Poetry Q3"
+        },
+        "english-2025-hl-p2-prescribed-4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Prescribed Poetry 4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "publishedQuestionRef": "2025 HL Paper 2 Prescribed Poetry Q4"
+        },
+        "english-2025-hl-p2-prescribed-5": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2025 HL Paper 2 Prescribed Poetry 5",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "publishedQuestionRef": "2025 HL Paper 2 Prescribed Poetry Q5"
+        }
+      }
+    }
+  }
+}

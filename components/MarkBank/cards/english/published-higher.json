@@ -24,6 +24,26 @@
    "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31"
   },
   {
+   "paperId": "english-2025-hl-p1",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "tasks": 19,
+   "cards": 20,
+   "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+   "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9"
+  },
+  {
+   "paperId": "english-2025-hl-p2",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "tasks": 27,
+   "cards": 27,
+   "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+   "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9"
+  },
+  {
    "paperId": "english-2018-hl-p1",
    "year": 2018,
    "level": "higher",
@@ -633,6 +653,17 @@
     },
     "capRulePage": 3
    },
+   "2025-higher": {
+    "family": "hl-h1-h8",
+    "gridPages": [
+     51,
+     52
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2026-higher": {
     "family": "hl-h1-h8",
     "gridPages": [
@@ -646,7 +677,62 @@
   }
  },
  "legacyAdditionalSources": {},
- "cardCount": 395,
+ "bridgedPapers": [
+  "english-2025-hl-p1",
+  "english-2025-hl-p2"
+ ],
+ "bridgedLegacyIds": [
+  "english-2025-hl-p1-composing-1",
+  "english-2025-hl-p1-composing-2",
+  "english-2025-hl-p1-composing-3",
+  "english-2025-hl-p1-composing-4",
+  "english-2025-hl-p1-composing-5",
+  "english-2025-hl-p1-composing-6",
+  "english-2025-hl-p1-composing-7",
+  "english-2025-hl-p1-t1-a-i",
+  "english-2025-hl-p1-t1-a-ii",
+  "english-2025-hl-p1-t1-a-iii",
+  "english-2025-hl-p1-t1-b",
+  "english-2025-hl-p1-t2-a-i",
+  "english-2025-hl-p1-t2-a-ii",
+  "english-2025-hl-p1-t2-a-iii",
+  "english-2025-hl-p1-t2-b",
+  "english-2025-hl-p1-t3-a-i",
+  "english-2025-hl-p1-t3-a-ii",
+  "english-2025-hl-p1-t3-a-iii",
+  "english-2025-hl-p1-t3-b",
+  "english-2025-hl-p2-comparative-a-q1",
+  "english-2025-hl-p2-comparative-a-q2",
+  "english-2025-hl-p2-comparative-b-q1",
+  "english-2025-hl-p2-comparative-b-q2",
+  "english-2025-hl-p2-comparative-c-q1",
+  "english-2025-hl-p2-comparative-c-q2",
+  "english-2025-hl-p2-prescribed-1",
+  "english-2025-hl-p2-prescribed-2",
+  "english-2025-hl-p2-prescribed-3",
+  "english-2025-hl-p2-prescribed-4",
+  "english-2025-hl-p2-prescribed-5",
+  "english-2025-hl-p2-single-a-i",
+  "english-2025-hl-p2-single-a-ii",
+  "english-2025-hl-p2-single-b-i",
+  "english-2025-hl-p2-single-b-ii",
+  "english-2025-hl-p2-single-c-i",
+  "english-2025-hl-p2-single-c-ii",
+  "english-2025-hl-p2-single-d-i",
+  "english-2025-hl-p2-single-d-ii",
+  "english-2025-hl-p2-single-e-i",
+  "english-2025-hl-p2-single-e-ii",
+  "english-2025-hl-p2-unseen-q1",
+  "english-2025-hl-p2-unseen-q2"
+ ],
+ "bridgeAliases": {
+  "english-2025-hl-p1-composing-2": "english-2025-hl-p1-composing-2-route-selection-1",
+  "english-2025-hl-p2-comparative-a-q1": "english-2025-hl-p2-comparative-a-q1-a",
+  "english-2025-hl-p2-comparative-b-q1": "english-2025-hl-p2-comparative-b-q1-a",
+  "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
+  "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
+ },
+ "cardCount": 442,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -2336,6 +2422,1714 @@
    "assessment": {
     "mode": "discrete",
     "grid": "2026-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-t1-a-i",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of TEXT 1, what insights do you gain about how the ‘underdog effect’ can influence our perspectives? Make three points, supporting your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "The Underdog Effect – Changing Perspectives",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "David Robson — edited article ‘The Underdog’s Surprising Appeal’, published on 4th August 2024 in the BBC Essential newsletter, with two images (PDF2–3). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    4
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   },
+   "indicativeMaterial": [
+    "‘underdog effect’ heightens our empathy/has an emotional effect/a bias - we romanticise the underdog",
+    "shapes our opinions about people and issues; we often side with the underdog as we cannot resist the idea of the weak/vulnerable triumphing over the strong/powerful",
+    "‘underdog effect’ can be used to gain advantage/as a strategy – sways voting intentions",
+    "support in sport can be determined by the ‘underdog effect’",
+    "fuels our sense of injustice – we want it rectified/inspires us to work harder – we believe anything is possible",
+    "makes us defy logic – go against what is rational – where clearly one side is stronger than the other"
+   ]
+  },
+  {
+   "id": "english-2025-hl-p1-t1-a-ii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 1 QA(ii)",
+   "questionText": "To what extent do you agree with the writer’s claim, in TEXT 1, that humankind has a “fixation on status and prestige”? Develop at least two points in your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "The Underdog Effect – Changing Perspectives",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "David Robson — edited article ‘The Underdog’s Surprising Appeal’, published on 4th August 2024 in the BBC Essential newsletter, with two images (PDF2–3). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-t1-a-iii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 1 QA(iii)",
+   "questionText": "“In TEXT 1, David Robson uses elements of language that are effective in making this article both informative and thought-provoking.” To what extent do you agree with this statement? Support your answer with reference to four elements of Robson’s style from the text.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "The Underdog Effect – Changing Perspectives",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "David Robson — edited article ‘The Underdog’s Surprising Appeal’, published on 4th August 2024 in the BBC Essential newsletter, with two images (PDF2–3). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   },
+   "indicativeMaterial": [
+    "writer effectively uses factual information/statistics/real life examples to inform",
+    "experimental research/studies/reports/quotations are informative and thought-provoking",
+    "provocative cultural illustrations/allusions drawn from the media inform and engage",
+    "instructive/knowledgeable/personal tone provides an informative and interesting perspective",
+    "effective use of inclusive language/questions/summative sentences/emotive language prompt us to consider/reflect",
+    "use of too many examples, quotations, studies, etc. confuse/blur the argument"
+   ]
+  },
+  {
+   "id": "english-2025-hl-p1-t1-b",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 1 QB",
+   "questionText": "You are the captain of a school’s sports team, about to compete, as the underdogs, in the final of a national competition and you are required to give the pre-match team-talk. Write the text of the talk that you would deliver. In your talk you should: outline to your team mates aspects of the game plan you have decided to employ on the field, remind them of the strengths and weaknesses of your opponents, and motivate them to overcome the odds and to achieve victory.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-t2-a-i",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of TEXT 2 what insights do you gain about Margaret Atwood’s perspective on current world problems? Make three points, supporting your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Perspective of a ‘Wise Old Counsellor’",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Margaret Atwood — speech at the One Young World Congress in Montreal in September 2024, with one image (PDF4–5). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   },
+   "indicativeMaterial": [
+    "Atwood’s perspective comes with the benefit of past knowledge – she measures current problems against the past; hopeful perspective/things have been worse",
+    "her viewpoint is that hard work is necessary to tackle world problems/we cannot sit back/must get involved",
+    "an optimistic, positive approach/solutions are possible/sees new approaches/innovation",
+    "believes beneficial actions must be local and grounded; ideas ineffective if not part of people’s lives",
+    "recognises the association between local and international – international cooperation is key",
+    "she realises no one person/group can solve world problems"
+   ]
+  },
+  {
+   "id": "english-2025-hl-p1-t2-a-ii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 2 QA(ii)",
+   "questionText": "To what extent do you agree with the observation, in TEXT 2, that in order to address world problems, “all beneficial actions must be local and grounded”? Develop at least two points in your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Perspective of a ‘Wise Old Counsellor’",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Margaret Atwood — speech at the One Young World Congress in Montreal in September 2024, with one image (PDF4–5). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7,
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-t2-a-iii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 2 QA(iii)",
+   "questionText": "“In TEXT 2, Margaret Atwood uses elements of language that are effective in making this speech both engaging and inspiring.” To what extent do you agree with this statement? Support your answer with reference to four elements of Atwood’s style from the text.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Perspective of a ‘Wise Old Counsellor’",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Margaret Atwood — speech at the One Young World Congress in Montreal in September 2024, with one image (PDF4–5). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   },
+   "indicativeMaterial": [
+    "Atwood effectively uses humour/self-reference/asides to engage and challenge the audience",
+    "personal/self-deprecating tone/voice/use of colloquialisms/engage and exhort",
+    "factual information/lists/historical references – convince and motivate",
+    "imagery/emotive examples/illustrations/allusions engage and inspire",
+    "effective inclusive style – direct address/questions/repetition/rhythm/cadence, involve/inspire",
+    "flippancy – undercuts/underestimates the seriousness and effectiveness of the content of the speech"
+   ]
+  },
+  {
+   "id": "english-2025-hl-p1-t2-b",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 2 QB",
+   "questionText": "You are a hotel manager. A recent, disgruntled guest has left a highly critical review of your hotel and its facilities on a travel-review website. You decide to challenge this person’s views with an online response on the same website. In your response you should: outline the proud tradition and history of your establishment, challenge the specific criticisms of the guest reviewer, and encourage the reviewer to return by highlighting some of the exciting upcoming events in your hotel and its locality.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-t3-a-i",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of TEXT 3 what insights do you gain about planet Earth by viewing it from the perspective of space? Make three points, supporting your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Planet Earth from the Perspective of Space",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Samantha Harvey — edited extracts from her novel Orbital, with one image (PDF6–7). The introduction on PDF6 prints “published in 2024”; the acknowledgements (PDF12) print 2023. As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   },
+   "indicativeMaterial": [
+    "from the perspective of space, Earth’s resplendent beauty appears majestic/regal/a palace",
+    "from the distance of space, it seems to have a protective quality like a mother, yet paradoxically, it also needs to be protected",
+    "from this distance, a harmonious place of serenity and peace/where divisions disappear",
+    "its rich variety and colours of landscapes are obvious from space",
+    "part of a bigger universe beyond this phase of exploration",
+    "puts the role/importance of humans into perspective"
+   ]
+  },
+  {
+   "id": "english-2025-hl-p1-t3-a-ii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 3 QA(ii)",
+   "questionText": "To what extent do you agree with the view in, TEXT 3, that, “striking out, further and deeper” into space is worthwhile? Develop at least two points in your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Planet Earth from the Perspective of Space",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Samantha Harvey — edited extracts from her novel Orbital, with one image (PDF6–7). The introduction on PDF6 prints “published in 2024”; the acknowledgements (PDF12) print 2023. As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-t3-a-iii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 3 QA(iii)",
+   "questionText": "“In TEXT 3, Samantha Harvey uses elements of language that are effective in making the writing in this passage both elegant and thought-provoking.” To what extent do you agree with this statement? Support your answer with reference to four elements of Harvey’s style from the text.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Planet Earth from the Perspective of Space",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Samantha Harvey — edited extracts from her novel Orbital, with one image (PDF6–7). The introduction on PDF6 prints “published in 2024”; the acknowledgements (PDF12) print 2023. As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   },
+   "indicativeMaterial": [
+    "Harvey’s use of figurative language - imagery/simile/metaphor/personification - creates an elegant and thought-provoking passage",
+    "descriptive language - colour/adjectives/listing – adds graceful beauty",
+    "thought-provoking range of places and contrasts/questions develops a philosophical/reflective/meditative tone",
+    "tropes of language/alliteration/repetition give a poetic/lyrical quality to the passage",
+    "use of characterisation - Nell/Roman/human beings - as a thought-provoking device",
+    "excessive use of figurative/descriptive elements weaken the impact of the passage."
+   ]
+  },
+  {
+   "id": "english-2025-hl-p1-t3-b",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Text 3 QB",
+   "questionText": "You are a contributor to a podcast entitled, Eyes Wide Open, where you reflect on how your perspective on a significant issue changed as a result of an experience or an encounter. Write your reflection for the podcast in which you: identify the issue and explain your previous attitude towards it, describe the experience or encounter that changed your perspective, and consider some of the life lessons that you and others can learn from this reflection.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-composing-1",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Composing 1",
+   "questionText": "In TEXT 3, Nell and her husband exchange photographs as a means of staying close while they are far apart. Write a discursive essay in which you consider the power and value of both printed and digital photographic images today.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-discursive",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested discursive essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-composing-2-route-selection-1",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Composing 2 · Selected task: For the motion: Truth has become a valueless currency in today’s world",
+   "questionText": "The theme of this examination, ‘Perspectives’, explores how we see things in different ways. Write a speech for or against the motion that: “Truth has become a valueless currency in today’s world.”\n\nFor this practice response — Selected task: For the motion: Truth has become a valueless currency in today’s world.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "choiceParentId": "english-2025-hl-p1-composing-2",
+   "choiceLabel": "Selected task: For the motion: Truth has become a valueless currency in today’s world",
+   "schemePages": [
+    13,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-composing-2-route-selection-2",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Composing 2 · Selected task: Against the motion: Truth has become a valueless currency in today’s world",
+   "questionText": "The theme of this examination, ‘Perspectives’, explores how we see things in different ways. Write a speech for or against the motion that: “Truth has become a valueless currency in today’s world.”\n\nFor this practice response — Selected task: Against the motion: Truth has become a valueless currency in today’s world.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "choiceParentId": "english-2025-hl-p1-composing-2",
+   "choiceLabel": "Selected task: Against the motion: Truth has become a valueless currency in today’s world",
+   "schemePages": [
+    13,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-composing-3",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Composing 3",
+   "questionText": "TEXT 1 analyses how the ‘Underdog Effect’ influences people’s attitudes and behaviour. Write a short story in which a “plucky chancer” challenges a more privileged or established opponent.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-composing-4",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Composing 4",
+   "questionText": "In TEXT 1 the writer asks why we would, “willingly put ourselves through disappointment”. Write a personal essay in which you reflect on some of the disappointments you have experienced and the impact they have had on you.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-composing-5",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Composing 5",
+   "questionText": "In TEXT 2 Margaret Atwood tells young people, “you’ve got the energy and optimism to take on the challenge.” Write a feature article entitled, ‘A love letter to Ireland’ in which you explore some of the reasons why we should view contemporary Irish society through an optimistic lens.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested feature article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-composing-6",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Composing 6",
+   "questionText": "In TEXT 2 Margaret Atwood refers to cherishing, “democratic elections”. Write a personal essay in which you reflect on some of the factors that would influence your voting intentions in future elections.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2025-hl-p1-composing-7",
+   "year": 2025,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2025 HL Paper 1 Composing 7",
+   "questionText": "In TEXT 3, the character Roman thinks that – “A human being was not made to stand still.” Write a short story featuring an ambitious character whose reckless actions lead to disaster.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-single-a-i",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Single Text A(i)",
+   "questionText": "“The world Brontë creates in The Tenant of Wildfell Hall offers readers an opportunity to gain many fascinating insights into how power, in different forms, operates in this society.” Discuss this statement, developing your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-28",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tenant of Wildfell Hall (Anne Brontë)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-single-a-ii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Single Text A(ii)",
+   "questionText": "“Writers often employ a range of literary techniques in an attempt to heighten the credibility of characters in texts.” Choose two characters from Brontë’s novel, The Tenant of Wildfell Hall, and discuss the effectiveness of the writer’s use of a range of literary techniques to heighten the credibility of these characters. Support your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-28",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tenant of Wildfell Hall (Anne Brontë)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-single-b-i",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Single Text B(i)",
+   "questionText": "“The world Doerr creates in All the Light We Cannot See offers readers an opportunity to gain many fascinating insights into how power, in different forms, operates in this society.” Discuss this statement, developing your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-single-b-ii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Single Text B(ii)",
+   "questionText": "“Writers often employ a range of literary techniques in an attempt to heighten the credibility of characters in texts.” Choose two characters from Doerr’s novel, All the Light We Cannot See, and discuss the effectiveness of the writer’s use of a range of literary techniques to heighten the credibility of these characters. Support your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-single-c-i",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Single Text C(i)",
+   "questionText": "“The world Miller creates in The Crucible offers readers an opportunity to gain many fascinating insights into how justice and injustice, in different forms, can operate in society.” Discuss this statement, developing your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-single-c-ii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Single Text C(ii)",
+   "questionText": "“Miller’s exploration of the conflict between obeying one’s conscience or betraying one’s conscience reveals a variety of compelling insights into human nature.” Discuss this statement, developing your response with reference to Miller’s play, The Crucible.",
+   "totalMarks": 60,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-single-d-i",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Single Text D(i)",
+   "questionText": "The duality of some of the characters in King Lear, allowing them to be interpreted as both victims and persecutors, creates fascinating insights into human nature and society. Discuss this statement, developing your response with reference to at least two characters in Shakespeare’s play, King Lear.",
+   "totalMarks": 60,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-single-d-ii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Single Text D(ii)",
+   "questionText": "“Shakespeare’s exploration of the conflict between a world of justice and order and a world of chaos and cruelty, reveals a variety of compelling insights to the audience.” Discuss this statement, developing your response with reference to Shakespeare’s play, King Lear.",
+   "totalMarks": 60,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-single-e-i",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Single Text E(i)",
+   "questionText": "“The world Shelley creates in Frankenstein offers readers an opportunity to gain many fascinating insights into how power, in different forms, operates in this society.” Discuss this statement, developing your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-single-e-ii",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Single Text E(ii)",
+   "questionText": "“Writers often employ a range of literary techniques in an attempt to heighten the credibility of characters in texts.” Choose two characters from Shelley’s novel, Frankenstein, and discuss the effectiveness of the writer’s use of a range of literary techniques to heighten the credibility of these characters. Support your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-comparative-a-q1-a",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Comparative A Q1(a)",
+   "questionText": "In the case of one text on your comparative course, explain how the particular frame of mind or mindset of a central character aided the author’s exploration of the complexity of a theme or issue. Develop your response with reference to your chosen text.",
+   "totalMarks": 30,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme or Issue · Q1",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-comparative-a-q1-b",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Comparative A Q1(b)",
+   "questionText": "Compare how the particular frame of mind or mindset of a central character, in each of two other texts you studied on your comparative course, aided the authors’ explorations of the complexity of the same theme or issue you discussed in part 1 (a) above. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme or Issue · Q1",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-comparative-a-q2",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Comparative A Q2",
+   "questionText": "Compare the extent to which inclusive or exclusive behaviour, in at least two texts on your comparative course, reveals interesting lessons about a theme or issue in these texts. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme or Issue · Q2",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-comparative-b-q1-a",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Comparative B Q1(a)",
+   "questionText": "In the case of one text on your comparative course, discuss the extent to which understanding the consequences of not conforming to societal norms influences the behaviour of a central character in the cultural context of this text. Develop your response with reference to your chosen text.",
+   "totalMarks": 30,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Cultural Context · Q1",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-comparative-b-q1-b",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Comparative B Q1(b)",
+   "questionText": "In the case of two other texts on your comparative course, compare the extent to which understanding the consequences of not conforming to societal norms influences the behaviour of a central character in the cultural contexts in each of these texts. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Cultural Context · Q1",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-comparative-b-q2",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Comparative B Q2",
+   "questionText": "In the case of at least two texts on your comparative course, compare the extent to which divisions are encouraged in subtle rather than obvious ways, in order to maintain control and power successfully. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Cultural Context · Q2",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-comparative-c-q1-a",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Comparative C Q1(a)",
+   "questionText": "Do you think that the climax of a text is over-influential in shaping a reader’s perception of the general vision and viewpoint of that whole text? Develop your response in relation to one text on your comparative course.",
+   "totalMarks": 30,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · General Vision and Viewpoint · Q1",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-comparative-c-q1-b",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Comparative C Q1(b)",
+   "questionText": "In the case of two other texts on your comparative course, compare the extent to which the climax, in each of these texts, is over-influential in shaping a reader’s perception of the general vision and viewpoint of these whole texts. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · General Vision and Viewpoint · Q1",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-comparative-c-q2",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Comparative C Q2",
+   "questionText": "Compare the extent to which your perception of the general vision and viewpoint, in at least two texts on your comparative course, is influenced by the varying degrees to which these texts present human nature as contradictory and paradoxical. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · General Vision and Viewpoint · Q2",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-unseen-q1-a",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Unseen Poetry Q1(a)",
+   "questionText": "How would you describe the mood of this poem? Support your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "As Far as Turn Back",
+    "pages": [
+     6
+    ],
+    "attribution": "As Far as Turn Back — Pat Boran, as reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-unseen-q1-b",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Unseen Poetry Q1(b)",
+   "questionText": "Do you think, As Far as Turn Back, is an appropriate title for this poem? Give two reasons for your answer, supporting your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "As Far as Turn Back",
+    "pages": [
+     6
+    ],
+    "attribution": "As Far as Turn Back — Pat Boran, as reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-unseen-q2",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Unseen Poetry Q2",
+   "questionText": "“The poet’s use of language in As Far as Turn Back is both clever and skilful.” To what extent do you agree with this observation? Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q2",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "As Far as Turn Back",
+    "pages": [
+     6
+    ],
+    "attribution": "As Far as Turn Back — Pat Boran, as reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "21"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-prescribed-1",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Prescribed Poetry Q1",
+   "questionText": "“Boland’s skilful use of evocative imagery in her poetry allows her to explore the complex nature of powerlessness.” Discuss this statement, developing your response with reference to the poetry of Eavan Boland on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Eavan Boland",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "22"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-prescribed-2",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Prescribed Poetry Q2",
+   "questionText": "“Kavanagh’s discerning use of simple language allows him to produce powerful insights into the world of nature and human nature, both drawn from a parochial perspective.” Discuss this statement, developing your response with reference to the poetry of Patrick Kavanagh on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-10",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Patrick Kavanagh",
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "23"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-prescribed-3",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Prescribed Poetry Q3",
+   "questionText": "“Eliot’s clever use of imagery is essential to his vivid portrayal of a morally bankrupt and futile world.” Discuss this statement, developing your response with reference to the poetry of T.S. Eliot on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-5",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "T.S. Eliot",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-prescribed-4",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Prescribed Poetry Q4",
+   "questionText": "To what extent do you think an audience’s appreciation of both Mahon’s language and thematic concerns would be enhanced if his poetry was read aloud? Develop your response with reference to the poetry of Derek Mahon on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-15",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Derek Mahon",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2025-hl-p2-prescribed-5",
+   "year": 2025,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2025 HL Paper 2 Prescribed Poetry Q5",
+   "questionText": "“In her poetry Smith makes effective use of tone, to heighten a variety of thought-provoking questions about the nature of our lives.” Discuss this statement, developing your response with reference to the poetry of Tracy K. Smith on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-21",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Tracy K. Smith",
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-higher",
     "allocation": {
      "P": 15,
      "C": 15,

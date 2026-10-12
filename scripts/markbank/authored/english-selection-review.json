@@ -2433,17 +2433,17 @@
     "english-2025-hl-p1-t1-b": {
       "questionSha256": "9c88b5281923bc5ab68dc7ce0020894f4893d15bf84a44981dd32a7c474c092d",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF6: all aspects of the question are required, although not necessarily equally. The game plan, the opponents and the sport are the candidate’s own (“a broad interpretation of ‘sports’”). One 50-mark response."
     },
     "english-2025-hl-p1-t2-b": {
       "questionSha256": "fd1acd145b75dd44230b60f7847d0744201c0b9cd095078f08b6b58858b2f080",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF9: all aspects of the question are required, although not necessarily equally. The hotel, criticisms and events are the candidate’s own; the scheme allows a serious or humorous approach, which the paper does not print as a choice. One 50-mark response."
     },
     "english-2025-hl-p1-t3-b": {
       "questionSha256": "b39e028bbbebb9e648c2673cc0fba2e0d7f76488d2944daad7d263903cdb557f",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF12: all aspects of the question are required, although not necessarily equally. The issue and the “experience or an encounter” are the candidate’s own: “or” describes what changed the perspective, not two printed routes. Serious or humorous approach allowed. One 50-mark response."
     },
     "english-2025-ol-p1-t1-b": {
       "questionSha256": "aad0e43725a48bc080b53187f52060ade969dba8fb9b0d7ac8a41721eb14fa76",
@@ -3067,7 +3067,8 @@
     "english-2025-hl-p1-composing-2": {
       "questionSha256": "a2aadeee61d1d2aa8dffa666f4207c0323fc7890bf00bcce16a740232a03d164",
       "kind": "finite",
-      "reason": "The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "expectedRoutes": 2,
+      "reason": "Paper PDF8 and scheme PDF15: a speech for or against the motion “Truth has become a valueless currency in today’s world”; “Candidates are expected to argue on one side of the motion only.” Two 100-mark routes; arguments, register and audience remain open.",
       "pools": [
         {
           "id": "selection",
@@ -3076,16 +3077,15 @@
           "options": [
             {
               "id": "1",
-              "text": "For the motion"
+              "text": "For the motion: Truth has become a valueless currency in today’s world"
             },
             {
               "id": "2",
-              "text": "Against the motion"
+              "text": "Against the motion: Truth has become a valueless currency in today’s world"
             }
           ]
         }
-      ],
-      "expectedRoutes": 2
+      ]
     },
     "english-2025-ol-p1-composing-7": {
       "questionSha256": "ae820da8a8867cd664f35bab277d32af3767ee98dd0fb85eaeb76853b6367b47",
@@ -4109,32 +4109,32 @@
     "english-2025-hl-p1-composing-1": {
       "questionSha256": "aea38f84205fc9bdba63ee2d5495a2362b93b49e6e4e83349ae7e88f09fd2374",
       "kind": "required",
-      "reason": "The stated subjects or perspectives are required together. They do not form optional alternative tasks."
+      "reason": "Scheme PDF14: a discursive essay on the power and value of photographic images today; candidates “should deal with both printed and digital photographic images, although not necessarily equally”. Both are required together, not alternatives. One 100-mark composition."
     },
     "english-2025-hl-p1-composing-3": {
       "questionSha256": "38acd008796a5a8bcd98b01bdfdd9a0f1840fb7c91bfbc579598059d06905b7c",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF16: a short story in which a “plucky chancer” challenges a more privileged or established opponent; “Allow for a variety of approaches to the task.” “Privileged or established” describes the opponent, not two printed routes. One 100-mark composition."
     },
     "english-2025-hl-p1-composing-4": {
       "questionSha256": "d37239cf10b6ed0bf2cb6c92e967362f5e14bf7698478260ae82c70c0ffac5af",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF17: a personal essay reflecting on the candidate’s own disappointments and their impact; “more than one disappointment” is a flexible minimum, not a pool. One 100-mark composition."
     },
     "english-2025-hl-p1-composing-5": {
       "questionSha256": "d69920f62fac9252bae4b78cf293807265deed90b1a210a8256d830cfc3ad083",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF18: a feature article entitled ‘A love letter to Ireland’ exploring reasons for optimism about contemporary Irish society; “more than one reason”; a variety of approaches allowed. One 100-mark composition."
     },
     "english-2025-hl-p1-composing-6": {
       "questionSha256": "0f8f51aefd6f331293049f28135561e97ec9c237b446c38b32da8ec41a1b4731",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF19: a personal essay reflecting on factors that would influence the candidate’s voting intentions in future elections; “more than one ‘factor’”. One 100-mark composition."
     },
     "english-2025-hl-p1-composing-7": {
       "questionSha256": "6bcfbf7a144052398f78008eac3b380dbf3735f373d227f0b5adb3f1a9d3d051",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF20: a short story featuring an ambitious character whose reckless actions lead to disaster; a variety of approaches and “a broad interpretation of ‘ambitious’”. One 100-mark composition."
     },
     "english-2025-ol-p1-composing-1": {
       "questionSha256": "7a71e26dabefae6bbd806ec6b57b09c5e2e32148fed2f0a5de54f737ab31ed1e",
@@ -9197,48 +9197,48 @@
     },
     "english-2025-hl-p2-single-a-i": {
       "questionSha256": "5d45653e88362fc9ab05d6f18a360b821546048330861d3043113aee80b8c544",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF22: “more than one fascinating insight into the operation of more than one form of power”, a liberal interpretation of ‘fascinating’. Insights and forms are the candidate’s own. One 60-mark response."
     },
     "english-2025-hl-p2-single-a-ii": {
       "questionSha256": "0c2f6b15020d7b453b75c2fb6bd20213c3bb7c4373ca357bfec4bd10a3e011a5",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "flexible",
+      "reason": "Paper PDF2 and scheme PDF23: “Choose two characters” from the whole novel (no printed list) and “at least two techniques”, freely chosen. A flexible minimum, not a pool. One 60-mark response."
     },
     "english-2025-hl-p2-single-b-i": {
       "questionSha256": "9d075238b60358e246fd45ce0e9d7c89e6d1fe52889f83e2394f567e6f8b6433",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF24: “more than one fascinating insight into the operation of more than one form of power”, a liberal interpretation of ‘fascinating’. Insights and forms are the candidate’s own. One 60-mark response."
     },
     "english-2025-hl-p2-single-b-ii": {
       "questionSha256": "6068c537a8668e529c53d1793870683ea1d19e4f7cd5f1fe941233ac7299c5de",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "flexible",
+      "reason": "Paper PDF2 and scheme PDF25: “Choose two characters” from the whole novel (no printed list) and “at least two techniques”, freely chosen. A flexible minimum, not a pool. One 60-mark response."
     },
     "english-2025-hl-p2-single-c-i": {
       "questionSha256": "aeef5abfe54f46ac248cda744bb3a2db7ff33af1f0a661e2daed94ba5653a8da",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF26: “more than one fascinating insight into the operation of more than one form of justice/injustice”, a liberal interpretation of ‘fascinating’. Insights and forms are the candidate’s own. One 60-mark response."
     },
     "english-2025-hl-p2-single-c-ii": {
       "questionSha256": "9430baf428ba31439426160e163bd558198bef360305295016a0490edb40c1b5",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF27: “more than one compelling insight into human nature”. “Obeying one’s conscience or betraying one’s conscience” names the two sides of the conflict being explored, not two answer routes. One 60-mark response."
     },
     "english-2025-hl-p2-single-d-i": {
       "questionSha256": "9da6e484a16afc7b5033fd98348a8407d7071db9431e4d48ea774b2ff7a61661",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "flexible",
+      "reason": "Paper PDF3 and scheme PDF28: “at least two characters” freely chosen; insights into human nature and society, “though not necessarily equally”. A flexible minimum; one 60-mark response."
     },
     "english-2025-hl-p2-single-e-i": {
       "questionSha256": "a42db2919fd2cd33566fc4fc9e965c009654684f5a903a888ce149a14345e5fb",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF30: “more than one fascinating insight into the operation of more than one form of power”, a liberal interpretation of ‘fascinating’. Insights and forms are the candidate’s own. One 60-mark response."
     },
     "english-2025-hl-p2-single-e-ii": {
       "questionSha256": "6cb6bf01f46001474cd2ae7741a1a53f4a59b71283fac763e87be46ca3157964",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "flexible",
+      "reason": "Paper PDF3 and scheme PDF31: “Choose two characters” from the whole novel (no printed list) and “at least two techniques”, freely chosen. A flexible minimum, not a pool. One 60-mark response."
     },
     "english-2025-ol-p2-single-a-q1-b": {
       "questionSha256": "bba8e31292d238f915ad58997647488e204ed4a5e0375da713d303efcd039ea0",
@@ -13921,43 +13921,43 @@
     },
     "english-2025-hl-p2-comparative-a-q1-a": {
       "questionSha256": "1891bf8ddb9ba7fbe56e3678cd5925fb08dc01a80512c26c2a2c3b57e3f318e9",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "open",
+      "reason": "Scheme PDF33: one freely chosen text and one central character (“a broad interpretation of a ‘central character’”); “frame of mind or mindset” are synonyms for one focus. One 30-mark response."
     },
     "english-2025-hl-p2-comparative-a-q1-b": {
       "questionSha256": "22128f4b5dba122435a701ac1df70488a27d405ae10d1a2dec0ec993b2b97f6b",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "open",
+      "reason": "Scheme PDF34: two other freely chosen texts, one central character in each, the same theme as part (a); comparative links with part (a) not required. One 40-mark response."
     },
     "english-2025-hl-p2-comparative-a-q2": {
       "questionSha256": "9e481f63e72a34df49c331c1812077775d424b84990fb3146bbe24268e963b49",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "flexible",
+      "reason": "Scheme PDF35: at least two texts; “Candidates may deal with exclusive, inclusive or both behaviours”, so the behaviour is not a printed route; more than one interesting lesson. One 70-mark response."
     },
     "english-2025-hl-p2-comparative-b-q1-a": {
       "questionSha256": "c6f27c30b1042bd2727ecf7da44929976a1b07d03be137a96aae268a68a3a26d",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF36: one freely chosen text and one central character; the extent to which understanding the consequences of not conforming influences behaviour is a graded judgement. One 30-mark response."
     },
     "english-2025-hl-p2-comparative-b-q1-b": {
       "questionSha256": "99ba2c8637e23b6ac490c536737ff728c787820efcff134671020e7703a3cc00",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF37: two other freely chosen texts, one central character in each; comparative links with part (a) not required. One 40-mark response."
     },
     "english-2025-hl-p2-comparative-b-q2": {
       "questionSha256": "a06fd3b37915d347d6720573881b9c6653b83f256c17503b4a2964b2fc05b0fa",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF38: at least two texts; “the extent to which divisions are encouraged in subtle rather than obvious ways” is a graded comparison, not a choice. One 70-mark response."
     },
     "english-2025-hl-p2-comparative-c-q1-b": {
       "questionSha256": "15f12d20ad9db37d010ace049a7af6d1b4247b8875abc30643dd2e0af040fdd4",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF40: identify a climax in each of two other freely chosen texts and compare the level of influence; links with part (a) not required. One 40-mark response."
     },
     "english-2025-hl-p2-comparative-c-q2": {
       "questionSha256": "768623dd259c0d0b178de2369b21c507499f60589cc31a46fcca7b127847db0d",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF41: at least two texts; “‘Contradictory’ and ‘paradoxical’ may be treated synonymously”, so they are one focus, not two routes. One 70-mark response."
     },
     "english-2025-ol-p2-comparative-a-q1-a-i": {
       "questionSha256": "588dbcd5c6ba3a24d25b7a2c5c15b1c218494bc69466796a3c180992aafeffff",
@@ -16088,6 +16088,101 @@
       "questionSha256": "abe0bffab2a020d663f4b3cac79b2aee0ac2302bdda79ec308aa4d7c40a98336",
       "kind": "open",
       "reason": "Scheme PDF12: two new pictures of the candidate’s own; “allow for a broad range of responses”. Not a printed pool; one 10-mark response."
+    },
+    "english-2025-hl-p1-t1-a-i": {
+      "questionSha256": "7d4aef541ec2f9ad96761d533758cd0fde6edcba6ebf115175d491695f0cef28",
+      "kind": "open",
+      "reason": "Make three points: three insights of the candidate’s own, supported by reference to the text (scheme PDF4). The indicative material is not a pool. One 15-mark response."
+    },
+    "english-2025-hl-p1-t1-a-ii": {
+      "questionSha256": "f9fb50aea76dd5c03f1aeaeb3b9363f5d258d1109103154847b055015298e048",
+      "kind": "open",
+      "reason": "Scheme PDF5: “the extent to which they agree or disagree”; develop at least two points. Agreement is a graded judgement, not two exclusive routes. One 15-mark response. A broad interpretation of ‘status’ and ‘prestige’ is allowed."
+    },
+    "english-2025-hl-p1-t1-a-iii": {
+      "questionSha256": "34c46f782a49fd29d691678b57b9025db7a2ad56aa37a895cbdf19d0e992af35",
+      "kind": "open",
+      "reason": "Scheme PDF5: four elements of Robson’s style chosen freely from the text; candidates must engage with both “informative” and “thought-provoking”, although not necessarily equally. One 20-mark response."
+    },
+    "english-2025-hl-p1-t2-a-i": {
+      "questionSha256": "5ab3ba418403a2db7e75370a42b9cab06a6e6c9cc08cf075e2c719b32ee13f65",
+      "kind": "open",
+      "reason": "Make three points: three insights of the candidate’s own, supported by reference to the text (scheme PDF7). The indicative material is not a pool. One 15-mark response."
+    },
+    "english-2025-hl-p1-t2-a-ii": {
+      "questionSha256": "eb4aa2a3b14e24c7f103ba37977022b941f7e1b2953558c9b9c5dbcfab0bea3b",
+      "kind": "open",
+      "reason": "Scheme PDF7: “the extent to which they agree or disagree”; develop at least two points. Agreement is a graded judgement, not two exclusive routes. One 15-mark response."
+    },
+    "english-2025-hl-p1-t2-a-iii": {
+      "questionSha256": "24f5c3302f834530ab23fd81396dc8c90c36581562e6e6577fb34b1c38e549f7",
+      "kind": "open",
+      "reason": "Scheme PDF8: four elements of Atwood’s style chosen freely from the text; candidates must engage with both “engaging” and “inspiring”, although not necessarily equally. One 20-mark response."
+    },
+    "english-2025-hl-p1-t3-a-i": {
+      "questionSha256": "7b1a62995571e0522dc03bf1c23866bdf5fa5007accd0c6ebdea59cd6cf1845f",
+      "kind": "open",
+      "reason": "Make three points: three insights of the candidate’s own, supported by reference to the text (scheme PDF10). The indicative material is not a pool. One 15-mark response."
+    },
+    "english-2025-hl-p1-t3-a-ii": {
+      "questionSha256": "175ddaebf7de644b736ccb2eedb32daa096ca21925534bc3ec4c9ef9b9988d58",
+      "kind": "open",
+      "reason": "Scheme PDF10: “the extent to which they agree or disagree”; develop at least two points. Agreement is a graded judgement, not two exclusive routes. One 15-mark response."
+    },
+    "english-2025-hl-p1-t3-a-iii": {
+      "questionSha256": "843e6c972385d4342c95c50f6b7bec5d1331eb1f4c7a011646083e4b8b33885a",
+      "kind": "open",
+      "reason": "Scheme PDF11: four elements of Harvey’s style chosen freely from the text; candidates must engage with both “elegant” and “thought-provoking”, although not necessarily equally. One 20-mark response."
+    },
+    "english-2025-hl-p2-single-d-ii": {
+      "questionSha256": "7c725433385de0fe2bf9a0bd55dd82d1c11f1820b2b58e794377f3cf73d63072",
+      "kind": "open",
+      "reason": "Scheme PDF29: “more than one compelling insight” from the conflict between a world of justice and order and a world of chaos and cruelty; both worlds are part of the one statement. One 60-mark response."
+    },
+    "english-2025-hl-p2-comparative-c-q1-a": {
+      "questionSha256": "dea0050f8178520679af30c10dbbe9ccd66046973317771ca403aa2b4b43493a",
+      "kind": "open",
+      "reason": "Paper PDF5 asks “Do you think that the climax of a text is over-influential …?”; scheme PDF39: “identify a climax and discuss the level of influence”, with indicative material running from over-influential to anti-climactic. A graded judgement on one freely chosen text, not two routes. One 30-mark response."
+    },
+    "english-2025-hl-p2-unseen-q1-a": {
+      "questionSha256": "1eedff312cf84c268dcd9a1475adebb81d47a415541609d7d5c84f39a92027a5",
+      "kind": "open",
+      "reason": "Scheme PDF42: the candidate describes the mood in their own terms with reference to the poem; no printed word pool. One 10-mark response."
+    },
+    "english-2025-hl-p2-unseen-q1-b": {
+      "questionSha256": "5fd74c285734359e14b6cc6e258029f10e9d848dd9250b4708c8a5fe9b2c0251",
+      "kind": "open",
+      "reason": "Scheme PDF42: “two reasons why they think the title of the poem is/is not appropriate” — the view and the reasons are the candidate’s own. One 10-mark response."
+    },
+    "english-2025-hl-p2-unseen-q2": {
+      "questionSha256": "36a59fb137e20106f7e6a250bb98570c17d1c17f34d605ca4c27fef193c55579",
+      "kind": "open",
+      "reason": "Scheme PDF43: the extent to which the candidate agrees that the language is both clever and skilful; a graded judgement. One 20-mark response."
+    },
+    "english-2025-hl-p2-prescribed-1": {
+      "questionSha256": "381fe116b7402e19432733253db7c245d0f9fa2d951ace07b8229cdfeec14639",
+      "kind": "open",
+      "reason": "Scheme PDF44–45: freedom of choice of poems studied; discuss the statement. One 50-mark response."
+    },
+    "english-2025-hl-p2-prescribed-2": {
+      "questionSha256": "1ec3c88528faa26ecd8e481fd2ee3bdaa342b44619ea9c11ac8abce1be3f0b5c",
+      "kind": "open",
+      "reason": "Scheme PDF44, 46: freedom of choice of poems studied; ‘parochial’ and ‘powerful’ may be treated implicitly or explicitly. One 50-mark response."
+    },
+    "english-2025-hl-p2-prescribed-3": {
+      "questionSha256": "4d3fc4469ea49445f66591fab609e292ac993cba812f084070ae33a48704bd5e",
+      "kind": "open",
+      "reason": "Scheme PDF44, 47: freedom of choice of poems studied; ‘essential’ may be dealt with implicitly or explicitly. One 50-mark response."
+    },
+    "english-2025-hl-p2-prescribed-4": {
+      "questionSha256": "b5480ad57fd5d1b313d9f7160a61e3faf89384847eec3f3d95705540d6bdd6e8",
+      "kind": "open",
+      "reason": "Scheme PDF44, 48: the extent to which reading aloud would enhance appreciation; both Mahon’s language and thematic concerns are required, “although not necessarily equally”. Poems freely chosen. One 50-mark response."
+    },
+    "english-2025-hl-p2-prescribed-5": {
+      "questionSha256": "6fb93994e171126c438f083f682b6527bccda9ee578bd905575f498ccb4cc7d9",
+      "kind": "open",
+      "reason": "Scheme PDF44, 49: freedom of choice of poems studied; discuss the statement. One 50-mark response."
     }
   }
 }

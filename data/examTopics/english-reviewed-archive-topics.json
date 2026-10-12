@@ -651,6 +651,26 @@
    "curriculumNodeIds": [
     "english-7-10"
    ]
+  },
+  {
+   "id": "english-higher-text-frankenstein-reviewed-archive",
+   "level": "higher",
+   "slug": "text-frankenstein",
+   "label": "Text - Frankenstein",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-12"
+   ]
+  },
+  {
+   "id": "english-higher-text-all-the-light-we-cannot-see-reviewed-archive",
+   "level": "higher",
+   "slug": "text-all-the-light-we-cannot-see",
+   "label": "Text - All the Light We Cannot See",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-8"
+   ]
   }
  ]
 }

@@ -392,7 +392,13 @@ const decks = [
    * tasks and finite printed routes, each on its own year's printed grid and
    * cap rule. Every one of the 650 legacy 2021-2025 ids is unchanged; the
    * legacy-only hashes below are the previous frozen baselines verbatim. */
-  ['english:higher', ENGLISH_HIGHER, 605, '093bfdb823117bbec6e0559b3adc967ea7f4335b13a80bc630789dbf03326c4c'],
+  /* 2026-10-11 (bridge): 2025 HL Paper 1 and Paper 2 are published from
+   * their independent review through english-legacy-bridge.json. 47 reviewed
+   * cards replace 42 legacy cards: 37 legacy ids are kept by the reviewed card
+   * and 5 (bundled parts or both sides of a motion) are explicit progress
+   * aliases in cardAliases.ts. Nothing is lost: the legacy proof below still
+   * reproduces the frozen 210-id hash from live and bridged ids. 605 -> 610. */
+  ['english:higher', ENGLISH_HIGHER, 610, 'd8181e84ca6c3b47615bc632dcbbd789e574f69021222de65d488053aa7c72c0'],
   /* 2026-10-11 (later): + 2026 OL Paper 1, 390 cards added (360 of them the
    * printed choose-two-plus-one advice routes), none removed. */
   ['english:ordinary', ENGLISH_ORDINARY, 1961, 'e64f9b049d55ff649f4248b26915face4c9a531e2a38aa10a60e8f3a3fcf7fe5'],
@@ -439,12 +445,12 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_411);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_416);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(34);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(39);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -453,23 +459,39 @@ describe('Mark Bank card preservation', () => {
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_643);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_653);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(1_916);
-    // The legacy 2021-2025 decks keep exactly their previous frozen identities.
-    expect(identityHash(ENGLISH_HIGHER.filter(card => !published.has(card.id))))
+    expect(published.size).toBe(1_963);
+    // Legacy ids of bridged papers (2025 HL) are no longer served as legacy
+    // cards: each is kept by its reviewed published card or is a progress alias.
+    const bridged = [...publishedEnglishHigher.bridgedLegacyIds, ...publishedEnglishOrdinary.bridgedLegacyIds];
+    const bridgeAliases: Record<string, string> = {
+      ...publishedEnglishHigher.bridgeAliases, ...publishedEnglishOrdinary.bridgeAliases };
+    expect(bridged).toHaveLength(42);
+    for (const id of bridged) {
+      const kept = published.has(id) && !(id in bridgeAliases);
+      const aliased = CARD_ID_ALIASES[id] === bridgeAliases[id] && published.has(bridgeAliases[id]);
+      expect(kept || aliased, `${id} must be kept or aliased`).toBe(true);
+    }
+    // The legacy 2021-2025 decks keep exactly their previous frozen identities:
+    // the still-legacy cards plus the bridged ids reproduce the frozen hashes.
+    const legacyIds = (cards: readonly { id: string }[], level: 'hl' | 'ol') => [
+      ...cards.filter(card => !published.has(card.id)),
+      ...bridged.filter(id => id.startsWith(`english-2025-${level}-`)).map(id => ({ id })),
+    ];
+    expect(identityHash(legacyIds(ENGLISH_HIGHER, 'hl')))
       .toBe('231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0');
-    expect(identityHash(ENGLISH_ORDINARY.filter(card => !published.has(card.id))))
+    expect(identityHash(legacyIds(ENGLISH_ORDINARY, 'ol')))
       .toBe('9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f');
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(published.has(oldId), `${oldId} is a withdrawn alias`).toBe(false);
-      if (oldId.startsWith('english-')) expect(published.has(canonicalId)).toBe(false);
+      if (oldId.startsWith('english-')) expect(published.has(canonicalId)).toBe(bridgeAliases[oldId] === canonicalId);
     }
-    expect([...published].every(id => /^english-(?:201[0-6]|2018|2026)-(?:hl|ol)-p[12]-/.test(id))).toBe(true);
+    expect([...published].every(id => /^english-(?:(?:201[0-6]|2018|2026)-(?:hl|ol)|2025-hl)-p[12]-/.test(id))).toBe(true);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

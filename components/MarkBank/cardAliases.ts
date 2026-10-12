@@ -5,6 +5,10 @@
  * Stable progress aliases for cards consolidated after the paper-level audit.
  * Generated from scripts/markbank/card-corrections.json; old review memory is
  * read by the surviving canonical card and is never silently discarded.
+ * English legacy-bridge aliases come from
+ * scripts/markbank/authored/english-legacy-bridge.json (a bundled or
+ * two-sided legacy card now published as separate reviewed tasks or routes);
+ * english_publish.py refuses to publish a bridged paper until each is here.
  */
 export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "chem-2023-ol-q10-a-iii-iv-fig": "chem-2023-ol-q10-a-iii-iv",
@@ -17,6 +21,11 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "english-2023-ol-p1-t3-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
   "english-2024-ol-p1-t2-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
   "english-2024-ol-p1-t3-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
+  "english-2025-hl-p1-composing-2": "english-2025-hl-p1-composing-2-route-selection-1",
+  "english-2025-hl-p2-comparative-a-q1": "english-2025-hl-p2-comparative-a-q1-a",
+  "english-2025-hl-p2-comparative-b-q1": "english-2025-hl-p2-comparative-b-q1-a",
+  "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
+  "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a",
   "english-2025-ol-p1-t2-a-iii-b": "english-2025-ol-p1-t1-a-iii-b",
   "english-2025-ol-p1-t3-a-iii-b": "english-2025-ol-p1-t1-a-iii-b",
   "he-2023-hl-sc-q2b-cotton-polyester": "he-2023-hl-sc-q2b-wool-nylon",

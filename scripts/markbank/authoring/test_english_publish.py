@@ -47,14 +47,19 @@ class EnglishPublisherTest(unittest.TestCase):
         for path, value in self.outputs.items():
             self.assertEqual(path.read_text(), publish.dump(value), str(path.relative_to(ROOT)))
 
-    def test_only_reviewed_non_legacy_papers_publish(self):
-        self.assertEqual(len(self.published), 34)
-        self.assertEqual(sum(paper['cards'] for paper in self.published), 1916)
+    def test_only_reviewed_papers_publish_and_legacy_papers_need_a_bridge(self):
+        self.assertEqual(len(self.published), 36)
+        self.assertEqual(sum(paper['cards'] for paper in self.published), 1963)
         reasons = {row['paperId']: row['reason'] for row in self.refused}
+        bridged = {'english-2025-hl-p1', 'english-2025-hl-p2'}
         for year in range(2021, 2026):
             for level in ('hl', 'ol'):
                 for paper in (1, 2):
-                    self.assertIn('legacy', reasons[f'english-{year}-{level}-p{paper}'])
+                    paper_id = f'english-{year}-{level}-p{paper}'
+                    if paper_id in bridged:
+                        self.assertIn(paper_id, {row['paperId'] for row in self.published})
+                    else:
+                        self.assertIn('legacy', reasons[paper_id])
         for paper_id in ('english-2016-hl-p2', 'english-2017-ol-p1', 'english-2019-hl-p2'):
             self.assertNotIn(paper_id, {paper['paperId'] for paper in self.published})
             self.assertIn(paper_id, reasons)
@@ -86,7 +91,7 @@ class EnglishPublisherTest(unittest.TestCase):
         for year in range(2010, 2016):
             self.assertEqual(kinds[f'{year}-higher'], 'none')
             self.assertEqual(kinds[f'{year}-ordinary'], 'language-at-d-band')
-        for key in ('2016-higher', '2016-ordinary', '2018-higher', '2026-higher', '2026-ordinary'):
+        for key in ('2016-higher', '2016-ordinary', '2018-higher', '2025-higher', '2026-higher', '2026-ordinary'):
             self.assertEqual(kinds[key], 'purpose-primacy')
         self.assertEqual(kinds['2018-ordinary'], 'none')
 
@@ -108,6 +113,76 @@ class EnglishPublisherTest(unittest.TestCase):
         self.assertEqual(list(aggregated), ['english-2024-ol-p2-single-a-q1'])
         self.assertEqual(aggregated['english-2024-ol-p2-single-a-q1'][0]['sourceYear'], 2021)
         self.assertEqual(publish.legacy_additional_sources(), {})
+
+
+class EnglishLegacyBridgeTest(unittest.TestCase):
+    """A bridged legacy paper keeps every legacy id: on the published card or as an alias."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.outputs, cls.published, _ = publish.publish()
+        cls.bridge = json.loads(publish.LEGACY_BRIDGE.read_text())
+        cls.legacy = json.loads((publish.CARDS_DIR / 'authored.json').read_text())
+        cls.records = {record['id']: record for record in inventory()['papers']}
+
+    def emitted(self, paper_id):
+        manifest = self.outputs[publish.CARDS_DIR / 'published-higher.json']
+        return [copy.deepcopy(card) for card in manifest['cards'] if card['id'].startswith(paper_id + '-')]
+
+    def apply(self, paper_id, bridge=None):
+        bridge = bridge or self.bridge['papers'][paper_id]
+        publish.apply_bridge(paper_id, bridge, self.records[paper_id], self.emitted(paper_id), self.legacy)
+
+    def test_every_legacy_id_survives(self):
+        manifest = self.outputs[publish.CARDS_DIR / 'published-higher.json']
+        published = {card['id'] for card in manifest['cards']}
+        aliases = publish.card_aliases()
+        self.assertEqual(manifest['bridgedPapers'], ['english-2025-hl-p1', 'english-2025-hl-p2'])
+        legacy_ids = sorted(card['id'] for card in self.legacy['cards'] if card['id'].startswith('english-2025-hl-'))
+        self.assertEqual(manifest['bridgedLegacyIds'], legacy_ids)
+        self.assertEqual(len(legacy_ids), 42)
+        kept = [cid for cid in legacy_ids if cid in published]
+        aliased = {cid: aliases[cid] for cid in legacy_ids if cid not in published}
+        self.assertEqual((len(kept), len(aliased)), (37, 5))
+        self.assertEqual(aliased, manifest['bridgeAliases'])
+        self.assertTrue(all(target in published for target in aliased.values()))
+
+    def test_lifted_indicative_material_reaches_only_its_cards(self):
+        manifest = self.outputs[publish.CARDS_DIR / 'published-higher.json']
+        carrying = sorted(card['id'] for card in manifest['cards'] if card.get('indicativeMaterial'))
+        self.assertEqual(carrying, sorted(f'english-2025-hl-p1-t{n}-a-{part}' for n in (1, 2, 3) for part in ('i', 'iii')))
+
+    def test_bridge_refuses_a_missing_legacy_card(self):
+        bridge = copy.deepcopy(self.bridge['papers']['english-2025-hl-p2'])
+        del bridge['legacyCards']['english-2025-hl-p2-unseen-q2']
+        with self.assertRaisesRegex(ValueError, 'exactly its legacy cards'):
+            self.apply('english-2025-hl-p2', bridge)
+
+    def test_bridge_refuses_an_unregistered_alias(self):
+        with mock.patch.object(publish, 'card_aliases', return_value={}):
+            with self.assertRaisesRegex(ValueError, 'register the progress alias'):
+                self.apply('english-2025-hl-p2')
+
+    def test_bridge_refuses_a_same_id_without_its_card(self):
+        bridge = copy.deepcopy(self.bridge['papers']['english-2025-hl-p1'])
+        bridge['legacyCards']['english-2025-hl-p1-composing-2'] = {'kind': 'same-id', 'reason': 'test'}
+        with self.assertRaisesRegex(ValueError, 'publishes no such card'):
+            self.apply('english-2025-hl-p1', bridge)
+
+    def test_bridge_refuses_a_different_printed_task(self):
+        bridge = copy.deepcopy(self.bridge['papers']['english-2025-hl-p2'])
+        bridge['legacyCards']['english-2025-hl-p2-unseen-q1']['to'] = 'english-2025-hl-p2-prescribed-1'
+        with mock.patch.object(publish, 'card_aliases', return_value={
+                **publish.card_aliases(), 'english-2025-hl-p2-unseen-q1': 'english-2025-hl-p2-prescribed-1'}):
+            with self.assertRaisesRegex(ValueError, 'not the same printed task'):
+                self.apply('english-2025-hl-p2', bridge)
+
+    def test_bridge_refuses_written_indicative_material(self):
+        bridge = copy.deepcopy(self.bridge['papers']['english-2025-hl-p1'])
+        bridge['legacyCards']['english-2025-hl-p1-t1-a-i']['indicativeMaterial']['items'][0] = (
+            'It can heighten empathy or create an emotional bias towards the underdog.')
+        with self.assertRaisesRegex(ValueError, 'not printed on scheme'):
+            self.apply('english-2025-hl-p1', bridge)
 
 
 if __name__ == '__main__':

@@ -12,6 +12,6 @@ const PUBLISHED = publishedJson as unknown as PublishedEnglishManifest;
  * historical cards use the grid and cap rule their own year prints.
  */
 export const CARDS: SecRubricCard[] = [
-  ...generatedCardsForLevel('ordinary', PUBLISHED.legacyAdditionalSources),
+  ...generatedCardsForLevel('ordinary', PUBLISHED.legacyAdditionalSources, PUBLISHED.bridgedLegacyIds),
   ...publishedCards(PUBLISHED),
 ];

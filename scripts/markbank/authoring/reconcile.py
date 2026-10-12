@@ -85,11 +85,15 @@ def shipped_cards(subject):
         shipped = [(card['id'], card['questionRef']) for card in cards]
         if subject == 'english':
             # Reviewed papers published paper by paper by english_publish.py.
-            for level in ('higher', 'ordinary'):
-                published = json.load(open(os.path.join(DECKS, subject, f'published-{level}.json'),
-                                           encoding='utf-8'))
+            # A bridged legacy paper is served by its published cards only:
+            # its legacy ids are kept by those cards or registered aliases.
+            manifests = [json.load(open(os.path.join(DECKS, subject, f'published-{level}.json'),
+                                        encoding='utf-8')) for level in ('higher', 'ordinary')]
+            bridged = {cid for published in manifests for cid in published.get('bridgedLegacyIds', [])}
+            shipped = [(cid, ref) for cid, ref in shipped if cid not in bridged]
+            for published in manifests:
                 if published['cardCount'] != len(published['cards']):
-                    raise AssertionError(f'english published {level} manifest count is stale')
+                    raise AssertionError(f"english published {published['level']} manifest count is stale")
                 shipped += [(card['id'], card['questionRef']) for card in published['cards']]
         return shipped
 

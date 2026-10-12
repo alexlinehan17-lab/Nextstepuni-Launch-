@@ -555,10 +555,17 @@ def census_subject(subject):
         # Import lazily so the ordinary census remains independent of PyMuPDF
         # until English is actually requested.
         from english_census import build as build_english  # noqa: E402
+        from english_publish import bridged_published_papers  # noqa: E402
         payload = build_english()
+        # A bridged legacy paper is now counted by its published reviewed
+        # tasks (coverage_census_papers below), not by its legacy asks.
+        bridged = bridged_published_papers()
         papers = []
         for source in payload['papers']:
             paper_number = int(source['component']) // 100
+            level_code = {'higher': 'hl', 'ordinary': 'ol'}.get(source['level'], source['level'])
+            if f"english-{source['year']}-{level_code}-p{paper_number}" in bridged:
+                continue
             asks = [ask for ask in payload['asks']
                     if ask['year'] == source['year']
                     and ask['level'] == source['level']

@@ -29894,6 +29894,1148 @@
         "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid printed with the task and on PDF71 (O1–O8)."
       },
       "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. OL QA 15/15/10/10 combined (P+C 9/6, L+M 6/4), B 50 discrete 15/15/15/5, composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t1-a-i": {
+      "taskSha256": "458ac38145c048ef36db5891240be65b93fe53ad32597ef01c2409a486a88827",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 15,
+      "schemePages": [
+        4
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t1-a-ii": {
+      "taskSha256": "0cb27d555bc636eea357be305238525c14b48a0cfc91fb5a605121e3514f4568",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 15,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t1-a-iii": {
+      "taskSha256": "11d2dde3b2143a5566688d4e8bb5f5dda5d542cea9806b2ace42f34dcc04ce1f",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 20,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t1-b": {
+      "taskSha256": "8962bb3b9c1f8a71d40968b5aa3962f9b0f77eb823e296de2c22745cbea64710",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 50,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t2-a-i": {
+      "taskSha256": "86c4d5eb8cc93e9973747ff419f1ceacfbde832147c1478f0eb52ccf0df991ce",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 15,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t2-a-ii": {
+      "taskSha256": "39dee572b1409b4a1a5ef05b50b4278ed9855bf621db650a44b8f59835026b66",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 15,
+      "schemePages": [
+        7,
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t2-a-iii": {
+      "taskSha256": "6435493c895a74eacaf23cb46edadae06132a9b645783e223cade26a0f49e530",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 20,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t2-b": {
+      "taskSha256": "df35cb451426dc01ff2c971af5d1c531665a9c5266b048be991c25e2dcade3b9",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 50,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t3-a-i": {
+      "taskSha256": "1a58511ba06b6c6eb869a6b5a08560f8c1cdcd8b75ff7c7a4140409c329538e6",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 15,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t3-a-ii": {
+      "taskSha256": "54384d7768674cada83aad9a51ad3d11dfa726d65154af5074af52b3372c12be",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 15,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t3-a-iii": {
+      "taskSha256": "dd8843ec9f752ec08d065e22b100608e3bcb4a428f314441d256486b6a601fe1",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 20,
+      "schemePages": [
+        11
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-t3-b": {
+      "taskSha256": "07b7d4d1e5aa79983f886f3889e8e9c6321bef80ac2de318dc75b39ba4711fb5",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 50,
+      "schemePages": [
+        12
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-composing-1": {
+      "taskSha256": "aae5d5ef7d8ac80ad641c3ed18de25586e7e0c904ebe2d0038c8e3961a660d9a",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 100,
+      "schemePages": [
+        13,
+        14
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-composing-2": {
+      "taskSha256": "6d3998aa0226c9aa89ac4008b6cc1de28abffd3fa868bcdc60622fd6187d0cbb",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 100,
+      "schemePages": [
+        13,
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-composing-3": {
+      "taskSha256": "7cd7b0fe660a58da9021aebce322d9c7a0c728c019f871efb67f55c557539f45",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 100,
+      "schemePages": [
+        13,
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-composing-4": {
+      "taskSha256": "8150c2b372be8d30a7226dcd0df8f1b4a9aee13c5af6436a82d034725bdbf135",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 100,
+      "schemePages": [
+        13,
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-composing-5": {
+      "taskSha256": "4ae48e690acad288f179f8f5aab4dea5d17097c845485dc78dbc3e3fbb3a6fb5",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 100,
+      "schemePages": [
+        13,
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-composing-6": {
+      "taskSha256": "2e0cc9e63d76cc19dd4e0fe307de9bfeb231910c50287b4040127fd6357a1ffd",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 100,
+      "schemePages": [
+        13,
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p1-composing-7": {
+      "taskSha256": "3fed832e9f44b11be8ff611314e261ea69d559dc70818c5ec8daf2583dc02230",
+      "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 100,
+      "schemePages": [
+        13,
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: “Mark ex 15/20 by reference to the criteria for assessment” from the H1–H8 band printed with the task (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (PDF51). The T2 A(ii) band is printed at the top of PDF8. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-single-a-i": {
+      "taskSha256": "d31665660e5638fba6a9cdb8f75704f69f68701b835781586ede032f9ac79410",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 60,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-single-a-ii": {
+      "taskSha256": "a253ff3eba79282ddc5393c4b2f0500e0f2d46b53b1741be3c1fd4f233fa3a51",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 60,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-single-b-i": {
+      "taskSha256": "ce206bdf8bc2ced7908a3140dde3d5e0f7ee05c0695045ca6884718738de0f4b",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 60,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-single-b-ii": {
+      "taskSha256": "d5390f1f56c2482b70c50e6a045f488e0de25d55732ba18a9e08a2496ad4671d",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 60,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-single-c-i": {
+      "taskSha256": "435507e2c4f1424d96542b89c745ee83e5f5367aa95fa465214e8b595fd8342b",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 60,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-single-c-ii": {
+      "taskSha256": "e4a22c8b044180d8214a9f2100b3103533106a4e71f67e7c9b215807d85cc579",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 60,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-single-d-i": {
+      "taskSha256": "39531c390104d140364e0b14f679f63f3a2edcaaa756a7e8740d36f37db40116",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 60,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-single-d-ii": {
+      "taskSha256": "652ef47aae2d7855643053d3e97b5b406e975d2a20f1c031c422a081eb2f251e",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 60,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-single-e-i": {
+      "taskSha256": "d6602679a79fa93153b906b3479759313112890c133b6767b7b3975ae561ea7b",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 60,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-single-e-ii": {
+      "taskSha256": "7336f63b9b4a583f32f0de4fd0023eeaf1128e4d73ad3945c3415289464db804",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 60,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        21,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-comparative-a-q1-a": {
+      "taskSha256": "248b347bccb19baeb40c1b93764e85824fffd9b2056e1182a90551acf0c3fe61",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 30,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        32,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-comparative-a-q1-b": {
+      "taskSha256": "734946f9029fca6a70bc690a9547afd2d057a3c9d26e1237a96d4377086f5cbb",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 40,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        32,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-comparative-a-q2": {
+      "taskSha256": "5bd6f0f2219ce13dd0e4f3efa7bfc067311feae51edce768d2aac3d6dd76c6af",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 70,
+      "schemePages": [
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        32,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-comparative-b-q1-a": {
+      "taskSha256": "1c603b2a5134a9f6e2c7b3964c922c81903cf3654b852347c05fe9d9eb238a73",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 30,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        32,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-comparative-b-q1-b": {
+      "taskSha256": "7e172b239062b990d4d42b0539db3592193e8e96dd23709df388495bbc9b2519",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 40,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        32,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-comparative-b-q2": {
+      "taskSha256": "56915b1cf448e2755e51b507929a10f2eccda129f5479423fa2c4bb8b345eee4",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 70,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        32,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-comparative-c-q1-a": {
+      "taskSha256": "a9d7aa96b5d2d825ddc4adea0d41b7b2cdc0e55706bcfe5206dedc90a7602393",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 30,
+      "schemePages": [
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        32,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-comparative-c-q1-b": {
+      "taskSha256": "35037ed74235dd29d2b3dbbf7d03ac5c18ebc416b9f7590c4ca488aa4829daf0",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 40,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        32,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-comparative-c-q2": {
+      "taskSha256": "30587a8577848b23974a66ff1e9624efada1be011bcf540ce312ba41afd8b2bd",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 70,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        32,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-unseen-q1-a": {
+      "taskSha256": "fff216677bdf28629f6ed1ee7581dd30a3a85d6347d36fa5773a2a7f984c391d",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 10,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        42,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-unseen-q1-b": {
+      "taskSha256": "0e5bea66b9e6444ff5825427a8e3bbaf79bce6cd5100e4eaeab49486a883959b",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 10,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        42,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-unseen-q2": {
+      "taskSha256": "8261287448b0afff65d8f035c8448d5f7eff3513137eef98c6328472ad66ed1d",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 20,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        42,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-prescribed-1": {
+      "taskSha256": "1801732124c9e08d0edbfd904d7e6085ca811c38d39638112a98959959e724e1",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 50,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        44,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-prescribed-2": {
+      "taskSha256": "d6771a197041661b721a7bf0029bc077d2f3f35d34f94fd9fed67c95c1b92254",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 50,
+      "schemePages": [
+        46
+      ],
+      "generalCriteriaPages": [
+        3,
+        44,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-prescribed-3": {
+      "taskSha256": "13748e45052f3d0c7ee3fc534cfa30f56d29dfc40400dbfed403bf2c9930cbaa",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 50,
+      "schemePages": [
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        44,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-prescribed-4": {
+      "taskSha256": "945d20f8a346b12a36e1edf0fd39b225c3990e76d6b0244726332e18b35429d5",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 50,
+      "schemePages": [
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        44,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2025-hl-p2-prescribed-5": {
+      "taskSha256": "61c89d5816e81fddeb698895a498bd05aa1f1195c2292378072488be1ab430b8",
+      "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "totalMarks": 50,
+      "schemePages": [
+        49
+      ],
+      "generalCriteriaPages": [
+        3,
+        44,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Use the H1–H8 discrete grid printed with the task and on PDF51–52."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF52), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. The task pages print H-band anchors in the 100% row of the 60 and 70 grids; Appendix 2 (PDF51) prints the continuous totals and the identical 30%/10% rows. All fixed internal routes reviewed; no invented splits or submarks."
     }
   }
 }

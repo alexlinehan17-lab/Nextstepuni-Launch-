@@ -5,8 +5,10 @@
  * A paper ships only when its own independent review gate passes
  * (scripts/markbank/authoring/english_publish.py). These tests pin what that
  * means at runtime: exactly those papers and nothing else, every legacy id and
- * alias intact, each year's own printed grid and cap rule, finite routes with
- * their tariff and reader, and Topic Atlas parity for every published card.
+ * alias intact (a bridged legacy paper keeps each legacy id on its published
+ * card or as a progress alias), each year's own printed grid and cap rule,
+ * finite routes with their tariff and reader, and Topic Atlas parity for every
+ * published card.
  */
 import { describe, expect, it } from 'vitest';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/english/higher';
@@ -45,6 +47,9 @@ interface PublishedManifest {
   papers: Array<{ paperId: string; tasks: number; cards: number }>;
   cards: PublishedRecord[];
   legacyAdditionalSources: Record<string, unknown[]>;
+  bridgedPapers: string[];
+  bridgedLegacyIds: string[];
+  bridgeAliases: Record<string, string>;
 }
 
 const publishedHigher = publishedHigherJson as unknown as PublishedManifest;
@@ -65,15 +70,22 @@ const bandsOf = (assessment: PclmAssessment) => (assessment.mode === 'composite'
   : assessment.bands).map(band => [band.grade, band.marks] as const);
 
 const legacyPapers = new Set(censusJson.asks.map(ask => `english-${ask.year}-${ask.level}-p${ask.paper}`));
+const BRIDGED_PAPERS = new Set([...publishedHigher.bridgedPapers, ...publishedOrdinary.bridgedPapers]);
+const BRIDGED_IDS = new Set([...publishedHigher.bridgedLegacyIds, ...publishedOrdinary.bridgedLegacyIds]);
+const BRIDGE_ALIASES = { ...publishedHigher.bridgeAliases, ...publishedOrdinary.bridgeAliases };
+const paperOf = (record: PublishedRecord) =>
+  `english-${record.year}-${record.level === 'higher' ? 'hl' : 'ol'}-p${record.paper}`;
 
 describe('English paper-by-paper publication', () => {
   it('publishes exactly the papers whose own independent review is complete', () => {
     const reviewed = visualJson.papers.filter(entry => entry.visualSweepComplete
       && 'independentPaperTally' in entry && entry.allTaskBoundariesSchemeChecked
-      && entry.allFiniteRoutesReconciled && !legacyPapers.has(entry.paperId));
+      && entry.allFiniteRoutesReconciled
+      && (!legacyPapers.has(entry.paperId) || BRIDGED_PAPERS.has(entry.paperId)));
     const published = [...publishedHigher.papers, ...publishedOrdinary.papers];
     expect(published.map(paper => paper.paperId).sort()).toEqual(reviewed.map(entry => entry.paperId).sort());
-    expect(published).toHaveLength(34);
+    expect(published).toHaveLength(36);
+    expect([...BRIDGED_PAPERS].sort()).toEqual(['english-2025-hl-p1', 'english-2025-hl-p2']);
     for (const paper of published) {
       const entry = reviewed.find(row => row.paperId === paper.paperId)!;
       const tally = (entry as unknown as { independentPaperTally: { baseTasks: number; finiteRoutes: number } })
@@ -82,7 +94,7 @@ describe('English paper-by-paper publication', () => {
       expect(RECORDS.filter(record => record.id.startsWith(`${paper.paperId}-`)), paper.paperId)
         .toHaveLength(paper.cards);
     }
-    expect(PUBLISHED).toHaveLength(1_916);
+    expect(PUBLISHED).toHaveLength(1_963);
   });
 
   it('never publishes an unreviewed or legacy-served paper', () => {
@@ -91,15 +103,19 @@ describe('English paper-by-paper publication', () => {
     for (const paper of unreviewed) {
       expect(ALL.some(entry => entry.id.startsWith(`${paper}-`)), paper).toBe(false);
     }
-    // 2021-2025 stay served only by their legacy cards until a legacy bridge exists.
-    expect(RECORDS.some(record => record.year >= 2021 && record.year <= 2025)).toBe(false);
+    // 2021-2025 stay served only by their legacy cards unless a legacy bridge exists.
+    expect(RECORDS.filter(record => record.year >= 2021 && record.year <= 2025)
+      .every(record => BRIDGED_PAPERS.has(paperOf(record)))).toBe(true);
   });
 
-  it('keeps all 650 legacy cards, their ids and their aliases', () => {
+  it('keeps every one of the 650 legacy ids: live, or a progress alias to a live card', () => {
     const legacyIds = authoredJson.cards.map(entry => entry.id);
     expect(legacyIds).toHaveLength(650);
-    expect(legacyIds.every(id => byId.has(id))).toBe(true);
-    expect(ALL.filter(entry => !PUBLISHED_IDS.has(entry.id))).toHaveLength(650);
+    const lost = legacyIds.filter(id => !byId.has(id) && !byId.has(CARD_ID_ALIASES[id] ?? ''));
+    expect(lost).toEqual([]);
+    // Unbridged legacy cards are served exactly as before.
+    expect(ALL.filter(entry => !PUBLISHED_IDS.has(entry.id))).toHaveLength(650 - BRIDGED_IDS.size);
+    expect(legacyIds.filter(id => !BRIDGED_IDS.has(id)).every(id => byId.has(id) && !PUBLISHED_IDS.has(id))).toBe(true);
     const withdrawn = Object.entries(authoredJson.withdrawnAliases);
     expect(withdrawn).toHaveLength(10);
     for (const [oldId, canonical] of withdrawn) {
@@ -110,9 +126,61 @@ describe('English paper-by-paper publication', () => {
     for (const ask of censusJson.asks) {
       expect(byId.has(CARD_ID_ALIASES[ask.id] ?? ask.id), ask.id).toBe(true);
     }
-    expect(RECORDS.some(record => legacyIds.includes(record.id) || record.id in CARD_ID_ALIASES)).toBe(false);
+    // Only a same-id bridge lets a published card carry a legacy id; no
+    // published id is ever an alias.
+    const reused = RECORDS.filter(record => legacyIds.includes(record.id)).map(record => record.id).sort();
+    expect(reused).toEqual([...BRIDGED_IDS].filter(id => !(id in BRIDGE_ALIASES)).sort());
+    expect(RECORDS.some(record => record.id in CARD_ID_ALIASES)).toBe(false);
     expect(publishedHigher.legacyAdditionalSources).toEqual({});
     expect(publishedOrdinary.legacyAdditionalSources).toEqual({});
+  });
+
+  it('bridges 2025 Higher Level: 37 ids kept by their reviewed card, 5 explicit progress aliases', () => {
+    const bridged = [...BRIDGED_IDS].sort();
+    expect(bridged).toEqual(authoredJson.cards.map(entry => entry.id)
+      .filter(id => /^english-2025-hl-p[12]-/.test(id)).sort());
+    expect(bridged).toHaveLength(42);
+    expect(BRIDGE_ALIASES).toEqual({
+      'english-2025-hl-p1-composing-2': 'english-2025-hl-p1-composing-2-route-selection-1',
+      'english-2025-hl-p2-comparative-a-q1': 'english-2025-hl-p2-comparative-a-q1-a',
+      'english-2025-hl-p2-comparative-b-q1': 'english-2025-hl-p2-comparative-b-q1-a',
+      'english-2025-hl-p2-comparative-c-q1': 'english-2025-hl-p2-comparative-c-q1-a',
+      'english-2025-hl-p2-unseen-q1': 'english-2025-hl-p2-unseen-q1-a',
+    });
+    for (const id of bridged) {
+      const alias = BRIDGE_ALIASES[id];
+      if (alias) {
+        expect(byId.has(id), id).toBe(false);
+        expect(CARD_ID_ALIASES[id], id).toBe(alias);
+        expect(PUBLISHED_IDS.has(alias), alias).toBe(true);
+      } else {
+        // The id is now served by the independently reviewed card, not the legacy one.
+        expect(card(id).qa.humanReviewedBy, id).toBe('independent-paper-review');
+      }
+    }
+    // Every 2025 HL card is now a reviewed card; no legacy version is served twice.
+    expect(ALL.filter(entry => entry.year === 2025 && entry.level === 'higher')
+      .every(entry => PUBLISHED_IDS.has(entry.id))).toBe(true);
+    expect(PUBLISHED.filter(entry => entry.year === 2025)).toHaveLength(47);
+  });
+
+  it('keeps the six 2025 Paper 1 indicative lists, lifted verbatim from the scheme', () => {
+    const squash = (value: string) => value.replace(/[‐‑‒–—−]/g, '-').replace(/\s+/g, '');
+    const scheme = readFileSync(resolve(__dirname, '../examiner-reports/english/schemes/2025-hl.md'), 'utf8');
+    const carrying = PUBLISHED.filter(entry => entry.rubric.indicativeMaterial?.length);
+    expect(carrying.map(entry => entry.id).sort()).toEqual([
+      'english-2025-hl-p1-t1-a-i', 'english-2025-hl-p1-t1-a-iii', 'english-2025-hl-p1-t2-a-i',
+      'english-2025-hl-p1-t2-a-iii', 'english-2025-hl-p1-t3-a-i', 'english-2025-hl-p1-t3-a-iii',
+    ]);
+    for (const entry of carrying) {
+      expect(entry.rubric.indicativeMaterial, entry.id).toHaveLength(6);
+      for (const item of entry.rubric.indicativeMaterial ?? []) {
+        expect(squash(scheme).includes(squash(item)), `${entry.id}: ${item}`).toBe(true);
+      }
+      expect(entry.rubric.indicativeMaterialNote).toContain('none is a required answer');
+    }
+    expect(card('english-2025-hl-p1-t1-a-i').rubric.indicativeMaterial?.[0])
+      .toBe('‘underdog effect’ heightens our empathy/has an emotional effect/a bias - we romanticise the underdog');
   });
 });
 
@@ -182,8 +250,9 @@ describe('English published cards use their own year’s printed grid and cap', 
       .toEqual([9, 9, 9, 3]);
   });
 
-  it('applies C/L <= P where the scheme prints it (2016, 2018 HL, 2026)', () => {
-    for (const id of ['english-2016-ol-p1-composing-1', 'english-2018-hl-p1-composing-1', 'english-2026-hl-p1-t1-b']) {
+  it('applies C/L <= P where the scheme prints it (2016, 2018 HL, 2025 HL, 2026)', () => {
+    for (const id of ['english-2016-ol-p1-composing-1', 'english-2018-hl-p1-composing-1', 'english-2025-hl-p2-prescribed-1',
+      'english-2026-hl-p1-t1-b']) {
       const entry = card(id);
       if (entry.rubric.assessment.mode !== 'discrete') throw new Error(id);
       expect(entry.rubric.assessment.capRule, id).toEqual({ kind: 'purpose-primacy' });
@@ -270,7 +339,7 @@ describe('English Topic Atlas parity for published papers', () => {
       .filter(item => item.answers === 1)
       .map(item => `${entry.year}|${entry.level}|${item.doc.f}`)));
     const papers = [...new Set(RECORDS.map(record => `${record.year}|${record.level}|${record.atlas.fileid}`))];
-    expect(papers).toHaveLength(34);
+    expect(papers).toHaveLength(36);
     for (const paper of papers) {
       const [year, , fileid] = paper.split('|');
       expect(live.has(paper), `${paper} answers flag`).toBe(true);

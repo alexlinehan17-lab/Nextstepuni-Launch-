@@ -46,11 +46,13 @@ describe('English exam-topic registry', () => {
     });
     expect(taxonomy.topics.slice(0, 86).map(topic => [topic.id, topic.label, topic.sourcePath]))
       .toEqual(referenceTopics.map(topic => [topic.id, topic.label, topic.sourcePath]));
-    // 11 original Higher archive topics, then (2026-10-11) 65 additive archive
+    // 11 original Higher archive topics, then (2026-10-11) 67 additive archive
     // topics for canonical nodes that published reviewed cards need and the
-    // reference menu lacks (17 Higher appended to the Higher archive group, 48
-    // in a new Ordinary archive group). No earlier topic index moves.
-    expect(taxonomy.topics.slice(86)).toHaveLength(76);
+    // reference menu lacks (19 Higher appended to the Higher archive group,
+    // including Frankenstein and All the Light We Cannot See for the bridged
+    // 2025 HL Paper 2; 48 in a new Ordinary archive group). The 86 reference
+    // and 11 original archive topics keep their index.
+    expect(taxonomy.topics.slice(86)).toHaveLength(78);
     expect(taxonomy.topics.slice(86, 97).every(topic => topic.id.endsWith('-archive')
       && !topic.id.endsWith('-reviewed-archive'))).toBe(true);
     expect(taxonomy.topics.slice(97).every(topic => topic.id.endsWith('-reviewed-archive'))).toBe(true);
@@ -62,7 +64,7 @@ describe('English exam-topic registry', () => {
       label: 'Ordinary Level · Historical local archive',
       level: 'ordinary',
     });
-    expect(topicsForSubject('english')).toHaveLength(162);
+    expect(topicsForSubject('english')).toHaveLength(164);
   });
 
   it('reconciles all 1,064 displayed associations without importing provider content', () => {
@@ -91,7 +93,7 @@ describe('English exam-topic registry', () => {
       CURRICULUM.find(subject => subject.id === 'english')!
         .strands.flatMap(strand => strand.subtopics.map(topic => topic.id)),
     );
-    expect(Object.keys(crosswalk)).toHaveLength(162);
+    expect(Object.keys(crosswalk)).toHaveLength(164);
     for (const topic of taxonomy.topics) {
       const ids = curriculumNodeIdsForExamTopic(topic.id);
       expect(ids, topic.id).toEqual(crosswalk[topic.id as keyof typeof crosswalk]);
@@ -104,9 +106,11 @@ describe('English exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'english');
     expect(papers).toHaveLength(24);
     expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(125);
-    // 771 original mappings, plus 183 exact booklet links (2026-10-11) for
-    // published reviewed papers' sidecar blocks that had no exact mapping.
-    expect(examQuestionTopicMappingsForSubject('english')).toHaveLength(954);
+    // 771 original mappings, plus 194 exact booklet links (2026-10-11) for
+    // published reviewed papers' sidecar blocks that had no exact mapping
+    // (11 of them the 2025 HL Paper 2 blocks for Single Text B–E and Eavan Boland,
+    // T.S. Eliot and Tracy K. Smith, published through the legacy bridge).
+    expect(examQuestionTopicMappingsForSubject('english')).toHaveLength(965);
     const taxonomyIds = new Set(taxonomy.topics.map(topic => topic.id));
     for (const paper of papers) {
       for (const question of paper.q) {

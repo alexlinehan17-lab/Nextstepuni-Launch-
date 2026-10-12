@@ -3284,7 +3284,8 @@
       "observedHeading": "Prescribed Poetry · “Boland’S Skilful Use Of Evocative Imagery In Her Poetry Allows Her To Explore The Complex · Q1",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
-      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf"
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "promptHeading": "Eavan Boland"
     },
     "english-2025-hl-p2-prescribed-2": {
       "topicId": "english-11-10",
@@ -3293,7 +3294,8 @@
       "observedHeading": "Prescribed Poetry · “Kavanagh’S Discerning Use Of Simple Language Allows Him To Produce Powerful Insights · Q2",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
-      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf"
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "promptHeading": "Patrick Kavanagh"
     },
     "english-2025-hl-p2-prescribed-3": {
       "topicId": "english-11-5",
@@ -3302,7 +3304,8 @@
       "observedHeading": "Prescribed Poetry · “Eliot’S Clever Use Of Imagery Is Essential To His Vivid Portrayal Of A Morally Bankrupt · Q3",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
-      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf"
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "promptHeading": "T.S. Eliot"
     },
     "english-2025-hl-p2-prescribed-4": {
       "topicId": "english-11-15",
@@ -3311,7 +3314,8 @@
       "observedHeading": "Prescribed Poetry · To What Extent Do You Think An Audience’S Appreciation Of Both Mahon’S Language And · Q4",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
-      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf"
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "promptHeading": "Derek Mahon"
     },
     "english-2025-hl-p2-prescribed-5": {
       "topicId": "english-11-21",
@@ -3320,7 +3324,8 @@
       "observedHeading": "Prescribed Poetry · “In Her Poetry Smith Makes Effective Use Of Tone, To Heighten A Variety Of · Q5",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
-      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf"
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "promptHeading": "Tracy K. Smith"
     },
     "english-2025-ol-p2-single-a": {
       "topicId": "english-12-28",

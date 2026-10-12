@@ -3126,6 +3126,147 @@
       "paperSha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
       "questionSha256": "d0a7931e012d065181a64503b8539edb7745563ec1078038c62d691250333331",
       "reason": "Self-contained: a moment from the candidate’s own childhood (meeting an interesting person or a new event). Scheme PDF12 assesses the candidate’s own reflective account and never refers to TEXT 3. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The Underdog Effect – Changing Perspectives",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "David Robson — edited article ‘The Underdog’s Surprising Appeal’, published on 4th August 2024 in the BBC Essential newsletter, with two images (PDF2–3). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "7d4aef541ec2f9ad96761d533758cd0fde6edcba6ebf115175d491695f0cef28",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2025-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The Underdog Effect – Changing Perspectives",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "David Robson — edited article ‘The Underdog’s Surprising Appeal’, published on 4th August 2024 in the BBC Essential newsletter, with two images (PDF2–3). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "f9fb50aea76dd5c03f1aeaeb3b9363f5d258d1109103154847b055015298e048",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2025-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The Underdog Effect – Changing Perspectives",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "David Robson — edited article ‘The Underdog’s Surprising Appeal’, published on 4th August 2024 in the BBC Essential newsletter, with two images (PDF2–3). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "34c46f782a49fd29d691678b57b9025db7a2ad56aa37a895cbdf19d0e992af35",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2025-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Perspective of a ‘Wise Old Counsellor’",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Margaret Atwood — speech at the One Young World Congress in Montreal in September 2024, with one image (PDF4–5). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "5ab3ba418403a2db7e75370a42b9cab06a6e6c9cc08cf075e2c719b32ee13f65",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2025-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Perspective of a ‘Wise Old Counsellor’",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Margaret Atwood — speech at the One Young World Congress in Montreal in September 2024, with one image (PDF4–5). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "eb4aa2a3b14e24c7f103ba37977022b941f7e1b2953558c9b9c5dbcfab0bea3b",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2025-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Perspective of a ‘Wise Old Counsellor’",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Margaret Atwood — speech at the One Young World Congress in Montreal in September 2024, with one image (PDF4–5). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "24f5c3302f834530ab23fd81396dc8c90c36581562e6e6577fb34b1c38e549f7",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2025-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Planet Earth from the Perspective of Space",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Samantha Harvey — edited extracts from her novel Orbital, with one image (PDF6–7). The introduction on PDF6 prints “published in 2024”; the acknowledgements (PDF12) print 2023. As reproduced in the SEC 2025 paper.",
+      "questionSha256": "7b1a62995571e0522dc03bf1c23866bdf5fa5007accd0c6ebdea59cd6cf1845f",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2025-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Planet Earth from the Perspective of Space",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Samantha Harvey — edited extracts from her novel Orbital, with one image (PDF6–7). The introduction on PDF6 prints “published in 2024”; the acknowledgements (PDF12) print 2023. As reproduced in the SEC 2025 paper.",
+      "questionSha256": "175ddaebf7de644b736ccb2eedb32daa096ca21925534bc3ec4c9ef9b9988d58",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2025-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Planet Earth from the Perspective of Space",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Samantha Harvey — edited extracts from her novel Orbital, with one image (PDF6–7). The introduction on PDF6 prints “published in 2024”; the acknowledgements (PDF12) print 2023. As reproduced in the SEC 2025 paper.",
+      "questionSha256": "843e6c972385d4342c95c50f6b7bec5d1331eb1f4c7a011646083e4b8b33885a",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2025-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "As Far as Turn Back",
+      "pages": [
+        6
+      ],
+      "attribution": "As Far as Turn Back — Pat Boran, as reproduced in the SEC 2025 paper.",
+      "questionSha256": "1eedff312cf84c268dcd9a1475adebb81d47a415541609d7d5c84f39a92027a5",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Pat Boran carefully”), the title, all four stanzas (4 + 4 + 9 + 4 lines) and the byline above the questions; visually verified. The whole poem is on PDF6, replacing the generic “Unseen poem” title."
+    },
+    "english-2025-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "As Far as Turn Back",
+      "pages": [
+        6
+      ],
+      "attribution": "As Far as Turn Back — Pat Boran, as reproduced in the SEC 2025 paper.",
+      "questionSha256": "5fd74c285734359e14b6cc6e258029f10e9d848dd9250b4708c8a5fe9b2c0251",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Pat Boran carefully”), the title, all four stanzas (4 + 4 + 9 + 4 lines) and the byline above the questions; visually verified. The whole poem is on PDF6, replacing the generic “Unseen poem” title."
+    },
+    "english-2025-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "As Far as Turn Back",
+      "pages": [
+        6
+      ],
+      "attribution": "As Far as Turn Back — Pat Boran, as reproduced in the SEC 2025 paper.",
+      "questionSha256": "36a59fb137e20106f7e6a250bb98570c17d1c17f34d605ca4c27fef193c55579",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Pat Boran carefully”), the title, all four stanzas (4 + 4 + 9 + 4 lines) and the byline above the questions; visually verified. The whole poem is on PDF6, replacing the generic “Unseen poem” title."
     }
   }
 }

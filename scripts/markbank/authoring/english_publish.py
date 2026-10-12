@@ -6,9 +6,12 @@ Only a paper whose OWN strict gate passes is published
 because of other years; that never blocks a reviewed paper and never lets an
 unreviewed one through.
 
-Papers served by the 650 legacy runtime cards (2021-2025) are refused unless a
-legacy bridge maps every legacy card of that paper. None exist yet, so the
-legacy manifest (`authored.json`), its ids, aliases and `n` are untouched.
+Papers served by the 650 legacy runtime cards (2021-2025) are refused unless
+`english-legacy-bridge.json` maps every legacy card of that paper to the
+reviewed task that replaces it: "same-id" (the published card keeps the legacy
+id and saved progress) or "alias" (an explicit progress alias in
+components/MarkBank/cardAliases.ts). The legacy manifest (`authored.json`) is
+never rewritten; the runtime only stops serving the bridged legacy cards.
 
 Outputs (all generated; `--check` fails when any is stale):
 - components/MarkBank/cards/english/published-{higher,ordinary}.json
@@ -29,6 +32,7 @@ import sys
 
 import fitz
 
+from english_cards import comparable
 from english_complete import ROOT, inventory
 import english_full_cards as parser
 from english_review_gate import check_paper
@@ -38,6 +42,7 @@ CARDS_DIR = ROOT / 'components/MarkBank/cards/english'
 EXAM_TOPICS = ROOT / 'data/examTopics'
 GRIDS = AUTHORED / 'english-marking-grids.json'
 LEGACY_BRIDGE = AUTHORED / 'english-legacy-bridge.json'
+CARD_ALIASES = ROOT / 'components/MarkBank/cardAliases.ts'
 CENSUS = AUTHORED / 'english-census.json'
 
 
@@ -178,12 +183,13 @@ def legacy_papers():
     return {f"english-{ask['year']}-{ask['level']}-p{ask['paper']}" for ask in census['asks']}
 
 
-def legacy_additional_sources():
+def legacy_additional_sources(bridged=frozenset()):
     """Aggregate reviewed companion readers of leaf tasks onto legacy bundled parents.
 
     A legacy runtime card (2021-2025) bundles separately marked leaf tasks. A
     reviewed `additionalSources` entry on one of those leaves must reach the
     bundled card, or the legacy parent would silently lose a required reader.
+    A bridged paper's legacy cards are no longer served, so it is skipped.
     """
     census = read(CENSUS)
     manifest = read(CARDS_DIR / 'authored.json')
@@ -195,7 +201,7 @@ def legacy_additional_sources():
     for task_id, attachment in sorted(attachments.items()):
         extra = attachment.get('additionalSources') or []
         paper_id = re.match(r'^(english-\d{4}-(?:hl|ol)-p[12])-', task_id).group(1)
-        if not extra or paper_id not in papers:
+        if not extra or paper_id not in papers or paper_id in bridged:
             continue
         parent = next((cid for cid in legacy_ids if task_id == cid or task_id.startswith(cid + '-')), None)
         if not parent:
@@ -206,6 +212,65 @@ def legacy_additional_sources():
             if source not in sources:
                 sources.append(source)
     return aggregated
+
+
+def squashed(text):
+    """Whitespace-free, dash-unified text: a lifted item must match its print exactly otherwise."""
+    return re.sub(r'\s', '', re.sub(r'[‐‑‒–—−]', '-', text.replace('\xa0', ' ')))
+
+
+def card_aliases():
+    return dict(re.findall(r'^\s*"([^"]+)": "([^"]+)",?$', CARD_ALIASES.read_text(), re.M))
+
+
+def apply_bridge(key, bridge, record, emitted, legacy_manifest):
+    """Prove a bridged paper keeps every legacy card id, and carry lifted extras.
+
+    Every legacy card of the paper is mapped exactly once; a same-id card is
+    published under its legacy id; an alias names a published card, is not
+    itself published and is registered in cardAliases.ts; the legacy prompt and
+    its target are the same printed task (one contains the other); and every
+    lifted indicative item is printed on the bound scheme page.
+    """
+    if bridge['paperSha256'] != record['questionPaper']['sha256']:
+        raise ValueError(f'{key}: legacy bridge bound to a different paper')
+    if any(old.startswith(key + '-') for old in legacy_manifest.get('withdrawnAliases', {})):
+        raise ValueError(f'{key}: legacy withdrawn aliases need their own bridge entries')
+    legacy = {card['id']: card for card in legacy_manifest['cards'] if card['id'].startswith(key + '-')}
+    entries = bridge['legacyCards']
+    if set(entries) != set(legacy):
+        raise ValueError(f'{key}: legacy bridge must map exactly its legacy cards; '
+                         f'missing={sorted(set(legacy) - set(entries))}, extra={sorted(set(entries) - set(legacy))}')
+    by_id = {card['id']: card for card in emitted}
+    registered = card_aliases()
+    with fitz.open(ROOT / record['markingScheme']['path']) as doc:
+        for old, entry in sorted(entries.items()):
+            if entry['kind'] == 'same-id':
+                target = by_id.get(old)
+                if not target:
+                    raise ValueError(f'{old}: same-id bridge but the reviewed paper publishes no such card')
+            elif entry['kind'] == 'alias':
+                target = by_id.get(entry['to'])
+                if old in by_id or not target:
+                    raise ValueError(f'{old}: alias bridge must leave the legacy id unpublished and name a published card')
+                if registered.get(old) != entry['to']:
+                    raise ValueError(f'{old}: register the progress alias -> {entry["to"]} in cardAliases.ts')
+            else:
+                raise ValueError(f'{old}: unknown bridge kind {entry["kind"]}')
+            legacy_text, target_text = comparable(legacy[old]['questionText']), comparable(target['questionText'])
+            if legacy_text not in target_text and target_text not in legacy_text:
+                raise ValueError(f'{old}: legacy prompt and bridged card are not the same printed task')
+            if target['totalMarks'] > legacy[old]['totalMarks']:
+                raise ValueError(f'{old}: bridged card exceeds the legacy tariff')
+            lifted = entry.get('indicativeMaterial')
+            if lifted:
+                if entry['kind'] != 'same-id' or lifted['schemePage'] not in target['schemePages']:
+                    raise ValueError(f'{old}: lifted indicative material must come from the card\'s own scheme page')
+                page = squashed(doc[lifted['schemePage'] - 1].get_text())
+                missing = [item for item in lifted['items'] if squashed(item) not in page]
+                if missing or not lifted['items']:
+                    raise ValueError(f'{old}: indicative items not printed on scheme PDF{lifted["schemePage"]}: {missing}')
+                target['indicativeMaterial'] = lifted['items']
 
 
 def publish():
@@ -240,6 +305,8 @@ def publish():
             if task_id not in by_task:
                 raise ValueError('Route without a reviewed task: ' + route['id'])
             emitted.append(card_record(route, record, reviews[task_id], grids))
+        if key in bridges:
+            apply_bridge(key, bridges[key], record, emitted, read(CARDS_DIR / 'authored.json'))
         cards[record['level']].extend(emitted)
         published.append({'paperId': key, 'year': record['year'], 'level': record['level'],
                           'paper': record['paper'], 'tasks': report['baseTasks'], 'cards': len(emitted),
@@ -253,10 +320,15 @@ def publish():
         raise ValueError('Published English card id is not a valid Mark Bank id')
     legacy_manifest = read(CARDS_DIR / 'authored.json')
     legacy_ids = {card['id'] for card in legacy_manifest['cards']} | set(legacy_manifest.get('withdrawnAliases', {}))
-    if legacy_ids & set(ids):
-        raise ValueError('Published card would reuse a legacy runtime id')
+    bridged_papers = {paper['paperId'] for paper in published if paper['paperId'] in bridges}
+    same_ids = {old for key in bridged_papers for old, entry in bridges[key]['legacyCards'].items()
+                if entry['kind'] == 'same-id'}
+    if (legacy_ids & set(ids)) - same_ids:
+        raise ValueError('Published card would reuse a legacy runtime id outside a same-id bridge')
 
     outputs = {}
+    level_papers = {level: {paper['paperId'] for paper in published if paper['level'] == level}
+                    for level in ('higher', 'ordinary')}
     for level in ('higher', 'ordinary'):
         sittings = sorted({card['assessment']['grid'] for card in cards[level]})
         families = sorted({grids['sittings'][s]['family'] for s in sittings})
@@ -270,8 +342,13 @@ def publish():
                 'sittings': {name: {k: grids['sittings'][name][k] for k in
                                     ('family', 'gridPages', 'capRule', 'capRulePage')} for name in sittings},
             },
-            'legacyAdditionalSources': {cid: sources for cid, sources in legacy_additional_sources().items()
+            'legacyAdditionalSources': {cid: sources for cid, sources in legacy_additional_sources(bridged_papers).items()
                                         if any(c['id'] == cid and c['level'] == level for c in legacy_manifest['cards'])},
+            'bridgedPapers': sorted(key for key in bridged_papers if key in level_papers[level]),
+            'bridgedLegacyIds': sorted(old for key in bridged_papers if key in level_papers[level]
+                                       for old in bridges[key]['legacyCards']),
+            'bridgeAliases': {old: entry['to'] for key in sorted(bridged_papers) if key in level_papers[level]
+                              for old, entry in sorted(bridges[key]['legacyCards'].items()) if entry['kind'] == 'alias'},
             'cardCount': len(cards[level]),
             'cards': cards[level],
         }
@@ -282,6 +359,18 @@ def publish():
 
 
 # ----------------------------------------------------------------- coverage
+
+def bridged_published_papers():
+    """Legacy (2021-2025) papers now served by their published reviewed cards."""
+    return {paper for level in ('higher', 'ordinary')
+            for paper in read(CARDS_DIR / f'published-{level}.json').get('bridgedPapers', [])}
+
+
+def bridged_legacy_ids():
+    """Legacy authored.json ids the runtime no longer serves (published same-id or aliased)."""
+    return {cid for level in ('higher', 'ordinary')
+            for cid in read(CARDS_DIR / f'published-{level}.json').get('bridgedLegacyIds', [])}
+
 
 def coverage_census_papers():
     """Coverage rows beyond the legacy 2021-2025 census.
@@ -305,7 +394,7 @@ def coverage_census_papers():
                          'leaves': [(card['id'], card['questionRef']) for card in cards]})
     for record in inventory()['papers']:
         if record['id'] in legacy or record['id'] in published_ids:
-            continue
+            continue  # a bridged legacy paper is published, so its row comes from the manifest
         _, tasks = parser.extract_record(record)
         rows.append({'year': record['year'], 'level': 'hl' if record['level'] == 'higher' else 'ol',
                      'paper': record['paper'], 'status': 'unreviewed',
@@ -358,12 +447,16 @@ def atlas_outputs(cards):
     archive = []
     needed = sorted({(card['level'], card['topicId']) for level in cards.values() for card in level
                      if (level_code[card['level']], card['topicId']) not in topics_by_node})
+    rows = {}
     for level, node in needed:
         slug = re.sub(r'[^a-z0-9]+', '-', archive_label(node, names).lower()).strip('-')
         topic_id = f'english-{level}-{slug}-reviewed-archive'
-        archive.append({'id': topic_id, 'level': level, 'slug': slug, 'label': archive_label(node, names),
-                        'curriculumNodeIds': archive_nodes(level, node)})
+        rows[topic_id] = {'id': topic_id, 'level': level, 'slug': slug, 'label': archive_label(node, names),
+                          'curriculumNodeIds': archive_nodes(level, node)}
         topics_by_node.setdefault((level_code[level], node), []).append(topic_id)
+    # Append-only: archive topics already generated keep their order (and so
+    # their runtime row index); a newly needed one is added after them.
+    archive = [rows.pop(row['id']) for row in existing_archive if row['id'] in rows] + list(rows.values())
     if len({row['id'] for row in archive}) != len(archive):
         raise ValueError('Repeated reviewed archive topic id')
 

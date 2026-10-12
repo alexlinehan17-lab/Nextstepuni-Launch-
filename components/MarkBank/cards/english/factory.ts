@@ -220,12 +220,18 @@ const makeCard = (card: AuthoredEnglishCard): SecRubricCard => ({
  * Legacy runtime cards bundle separately marked leaf tasks. A reviewed
  * companion reader on one of those leaves (aggregated by english_publish.py)
  * must reach the bundled card, so it is merged here without changing its id.
+ *
+ * A bridged paper (scripts/markbank/authored/english-legacy-bridge.json) is
+ * served by its published reviewed cards instead: each of its legacy ids is
+ * either kept by the published card or registered as a progress alias, so the
+ * legacy card itself is no longer generated.
  */
 export const generatedCardsForLevel = (
   level: EnglishLevel,
   legacyAdditionalSources: Record<string, CardSourceMaterial[]> = {},
+  bridgedLegacyIds: readonly string[] = [],
 ): SecRubricCard[] =>
-  DATA.filter(card => card.level === level).map(card => {
+  DATA.filter(card => card.level === level && !bridgedLegacyIds.includes(card.id)).map(card => {
     const extra = legacyAdditionalSources[card.id] ?? [];
     if (!extra.length) return makeCard(card);
     const own = card.additionalSourceMaterials ?? [];
@@ -279,6 +285,8 @@ interface PublishedEnglishCard {
   assessment: { mode: 'combined' | 'discrete'; grid: string; allocation?: Record<string, number> };
   paperFileid: string;
   atlas: { fileid: string; n: string };
+  /** Indicative bullets lifted verbatim from the card's scheme page (bridge ledger). */
+  indicativeMaterial?: string[];
 }
 
 export interface PublishedEnglishManifest {
@@ -286,6 +294,12 @@ export interface PublishedEnglishManifest {
   papers: Array<{ paperId: string; year: number; paper: 1 | 2; tasks: number; cards: number }>;
   grids: { families: Record<string, PrintedGridFamily>; sittings: Record<string, PrintedGridSitting> };
   legacyAdditionalSources: Record<string, CardSourceMaterial[]>;
+  /** Legacy-served papers now published from their review (english-legacy-bridge.json). */
+  bridgedPapers: string[];
+  /** Every legacy id of those papers: kept by a published card or aliased. */
+  bridgedLegacyIds: string[];
+  /** Legacy id -> published card, mirrored in cardAliases.ts. */
+  bridgeAliases: Record<string, string>;
   cardCount: number;
   cards: PublishedEnglishCard[];
 }
@@ -426,6 +440,7 @@ const makePublishedCard = (
     system: 'pclm',
     taskRequirements: card.taskRequirements,
     assessment: publishedAssessment(card, grids),
+    ...(card.indicativeMaterial?.length ? { indicativeMaterial: card.indicativeMaterial } : {}),
     indicativeMaterialNote: INDICATIVE_NOTE,
   },
 });
