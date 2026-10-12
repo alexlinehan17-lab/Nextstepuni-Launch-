@@ -31,8 +31,14 @@ describe('Construction Studies 2026 Higher source-reviewed Q1–Q10 and alternat
     const prior = JSON.parse(fs.readFileSync('docs/markbank-audit/2026-09-28/drafts/construction-2026-higher/prior-authored-card-hashes.json', 'utf8')) as {count: number; cards: Record<string, string>};
     const authored: SecCard[] = JSON.parse(fs.readFileSync('scripts/markbank/authored/construction-studies.json', 'utf8'));
     expect(prior.count).toBe(783);
-    expect(authored.slice(0, 783).map(c => c.id)).toEqual(Object.keys(prior.cards));
-    expect(authored.slice(783, 783 + CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.length).map(c => c.id)).toEqual(CONSTRUCTION_2026_HIGHER_REVIEWED_IDS);
+    // Later consolidations withdraw cards only through a recorded withdrawal; every surviving prior ID keeps its order.
+    const withdrawn = new Set(fs.readdirSync('scripts/markbank/authored').filter(n => /^construction-studies-.*-reviewed\.json$/.test(n))
+      .flatMap(n => (JSON.parse(fs.readFileSync(`scripts/markbank/authored/${n}`, 'utf8')).withdrawn ?? []).map((w: {cardId: string}) => w.cardId)));
+    const live = new Set(authored.map(c => c.id));
+    const priorIds = Object.keys(prior.cards).filter(id => live.has(id));
+    expect(Object.keys(prior.cards).filter(id => !live.has(id)).every(id => withdrawn.has(id))).toBe(true);
+    expect(authored.slice(0, priorIds.length).map(c => c.id)).toEqual(priorIds);
+    expect(authored.filter(c => CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.includes(c.id)).map(c => c.id).sort()).toEqual([...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS].sort());
     expect(new Set(authored.map(c => c.id)).size).toBe(authored.length);
   });
 

@@ -296,7 +296,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
             overrides = json.loads((R / 'scripts/markbank' / name).read_text()).get('construction-studies', {})
             assert not [k for k in overrides if k.startswith(PREFIX)], name
         assert [x['cardId'] for x in d.get('retiredBuildOverrides', [])] == [PREFIX + 'q7-c-advantage']
-    else:
+    elif integrated is False:  # before integration (None skips authored checks, for a consolidation)
         assert all(construction_corrections.card_hash(by_id[cid]) == fixes[cid]['priorSha256'] for cid in legacy)
     gaps = {g['cardId'].removeprefix(PREFIX): set(g['canonicalTopicIds']) for g in d['taxonomyGaps']}
     assert gaps == GAPS
