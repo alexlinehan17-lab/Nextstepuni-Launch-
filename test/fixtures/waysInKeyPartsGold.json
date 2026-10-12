@@ -2553,12 +2553,14 @@
 ]
 },
 {
-"id":"geography-2021-ol-p2-q6b-the-reasons-why-tourists-are-attra-the-development-of-transport-in-th",
+"id":"geography-2021-ol-p2-q6b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
 "units":[
 {
 "action":"Explain",
-"focus":"The reasons why tourists are attracted to the region",
+"count":"any two of the following",
+"focus":"the development",
 "conditions":[
+"The reasons why tourists are attracted to the region",
 "with reference to a European region",
 "not in Ireland",
 "that you have studied"
@@ -2566,8 +2568,21 @@
 },
 {
 "action":"Explain",
-"focus":"The development of transport in the region",
+"count":"any two of the following",
+"focus":"the development",
 "conditions":[
+"The importance of manufacturing to the region",
+"with reference to a European region",
+"not in Ireland",
+"that you have studied"
+]
+},
+{
+"action":"Explain",
+"count":"any two of the following",
+"focus":"the development",
+"conditions":[
+"The development of transport in the region",
 "with reference to a European region",
 "not in Ireland",
 "that you have studied"
