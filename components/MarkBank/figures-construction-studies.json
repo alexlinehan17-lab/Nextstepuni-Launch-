@@ -398,69 +398,6 @@
     "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
     "solution": false
   },
-  "construction-studies-2015-OL-q8-box-dovetail-joint": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-box-dovetail-joint.png",
-    "md5": "a221c74890157e559525005a53f13163",
-    "alt": "SEC model sketch of a box dovetail joint at the corner of a box.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-OL-q8-triple-glazing": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-triple-glazing.png",
-    "md5": "e37fd2318d1a22a6cf2a061281e21da9",
-    "alt": "SEC model sketch of a triple-glazed unit: three panes separated by two cavities and spacers.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-OL-q8-solar-panel": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-solar-panel.png",
-    "md5": "a108ecfe0767ad732a51341e3eb4bc8b",
-    "alt": "SEC model sketches of a flat-plate solar collector on a roof and an evacuated-tube collector.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-OL-q8-cordless-drill": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-cordless-drill.png",
-    "md5": "280598921d3fd403128954239513b46f",
-    "alt": "SEC model sketch of a cordless drill with its battery.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-OL-q8-skirting-board": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-skirting-board.png",
-    "md5": "f61f99ff549ce8654ac7760c4868df37",
-    "alt": "SEC model sketch of a profiled skirting board fixed at the base of a wall.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-OL-q8-compression-fitting": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-compression-fitting.png",
-    "md5": "d1b927a5ac44747e86d9751f5d95948d",
-    "alt": "SEC model sketch of a compression fitting joining two pipes, with its nuts.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-OL-q8-natural-seasoning": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-natural-seasoning.png",
-    "md5": "81d0f7081abbc2264cee8739ba2d503b",
-    "alt": "SEC 2015 Ordinary marking scheme notes on natural seasoning, with sketches of timber stacked on piers in an open-sided shed and a covered stack separated by stickers.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-OL-q8-concrete-lintel": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-concrete-lintel.png",
-    "md5": "6063025e200eed64dc00f7b5ce73bbfe",
-    "alt": "SEC model sketch of a concrete lintel bearing on blockwork.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-OL-q8-radon-barrier": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q8-radon-barrier.png",
-    "md5": "0ee966a36098f837b49d4db97375436d",
-    "alt": "SEC model cut-away of a floor and external wall showing the radon barrier A laid under the floor and continued through the wall.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
-    "solution": true
-  },
   "construction-studies-2015-OL-q9-original": {
     "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-OL-q9-original.png",
     "md5": "b018dc4fa8cf9ba5f87e58331346e72e",

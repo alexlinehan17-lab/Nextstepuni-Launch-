@@ -16,13 +16,13 @@ const review = JSON.parse(fs.readFileSync('scripts/markbank/authored/constructio
 describe('Construction Studies 2015 Ordinary source-reviewed Q1–Q9', () => {
   it('reconciles original wording, tariffs, every finite route, figures and selection directives', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2015_ordinary.py'], { encoding: 'utf8' }));
-    expect(result).toEqual({tasks: 176, leafTasks: 37, wholeQuestionRoutes: 134, q8Routes: 126, sourceFigures: 35, sharedDrawingAllowances: 2, paperComplete: true});
+    expect(result).toEqual({tasks: 42, leafTasks: 29, wholeQuestions: 9, q8AnyFiveOfNine: true, sourceFigures: 26, sharedDrawingAllowances: 2, paperComplete: true});
   });
 
-  it('pins every reviewed card identity, including all 126 choose-five Q8 routes', () => {
+  it('pins every reviewed card identity; the Q8 choice is one any-five card, not a route per combination', () => {
     expect(review.tasks.map(t => t.card.id)).toEqual(CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS);
-    expect(new Set(CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS).size).toBe(176);
-    expect(CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.filter(id => id.startsWith('cons-2015-ol-q8-complete-'))).toHaveLength(126);
+    expect(new Set(CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS).size).toBe(42);
+    expect(CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.filter(id => id.startsWith('cons-2015-ol-q8'))).toEqual(['cons-2015-ol-q8']);
   });
 
   it('keeps all 607 previous authored cards and adds only the reviewed tasks', () => {
