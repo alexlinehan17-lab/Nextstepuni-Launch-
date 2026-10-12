@@ -443,7 +443,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(574);
+    expect(additions.size).toBe(580);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length + withdrawnFor(live).length).toBe(10_495);
@@ -526,6 +526,25 @@ describe('Mark Bank card preservation', () => {
       'agsci-2022-hl-q16ci': 'Restores the published 11 marks: named system 2, drawing 6/3/0, labels 3(1).',
       'agsci-2022-hl-q17ai': 'The earthworm drawing is banded D 6, 3, 0 plus labels 3(1), not one 6-mark row.',
       'agsci-2022-hl-q17bii': 'Restores the end of the hybrid vigour definition ("to those of both parents").',
+      'agsci-2022-ol-q1a': 'Machine A, its function, machine B and its function at 2 each, as the scheme prints them.',
+      'agsci-2022-ol-q2ai': 'Any three of four printed breeds on one card, every photograph decoded (3(2)).',
+      'agsci-2022-ol-q2aii': 'Replaces the run-together word list in the stem with the paper\'s part (ii) wording.',
+      'agsci-2022-ol-q3a': 'The indicator and pH-meter methods as answer routes, not one mixed step list.',
+      'agsci-2022-ol-q3b': 'Every published implication listed; implication 3 and the lime answer 1, as printed.',
+      'agsci-2022-ol-q4b': 'Statements (i)-(v) on the table card at 5(2); the five per-statement cards are withdrawn as its aliases.',
+      'agsci-2022-ol-q5a': 'Restores the whole published production-diet answer.',
+      'agsci-2022-ol-q7aiii': 'Each of the six nutrients as an answer route with its symptom and treatment.',
+      'agsci-2022-ol-q7bii': 'Every published leaf adaptation listed at the first-correct 3+1; drops diagram labels from the stem.',
+      'agsci-2022-ol-q9c': 'Restores the paper\'s tick-box wording and options.',
+      'agsci-2022-ol-q10c': 'Every published sampling precaution listed at the first-correct 2+1.',
+      'agsci-2022-ol-q11aiii': 'Restores the whole published answer and the paper\'s wording.',
+      'agsci-2022-ol-q14civ': 'Nine ways and nine reasons as published menus, 2(2+2) 1(2+1).',
+      'agsci-2022-ol-q16bii': 'Nine hay-making steps listed one each at 3(4)+3.',
+      'agsci-2022-ol-q17ai': 'Ten advantages listed one each at 4+2, other valid answers open.',
+      'agsci-2022-ol-q17aii': 'Five reasons listed one each, as printed, at 4+2.',
+      'agsci-2022-ol-q17aiii': 'Six disadvantages listed one each at 4+2.',
+      'agsci-2022-ol-q18ai': 'Six traits listed one each at 3(4).',
+      'agsci-2022-ol-q18bi': 'Seven seedbed steps listed one each at 3(2).',
     };
     expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
     const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
@@ -555,11 +574,15 @@ describe('Mark Bank card preservation', () => {
     for (const [id, marks] of [['agsci-2022-hl-q16ci', 11], ['agsci-2022-hl-q2b', 6], ['agsci-2022-hl-q15ai', 6], ['agsci-2022-hl-q17ai', 9]] as const) {
       expect(live.get(id)?.totalMarks, id).toBe(marks);
     }
+    // 2022 Ordinary corrections keep each original's ID and total; Q4(b) absorbs its five statement cards.
+    for (const [id, marks] of [['agsci-2022-ol-q4b', 10], ['agsci-2022-ol-q14civ', 11], ['agsci-2022-ol-q16bii', 15], ['agsci-2022-ol-q18ai', 12],
+      ['agsci-2022-ol-q2ai', 6], ['agsci-2022-ol-q7aiii', 4]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+    for (const key of ['i', 'ii', 'iii', 'iv', 'v']) expect(live.has(`agsci-2022-ol-q4b${key}`)).toBe(false);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(38);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(43);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);

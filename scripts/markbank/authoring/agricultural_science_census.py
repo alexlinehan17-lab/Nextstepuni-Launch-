@@ -1369,9 +1369,122 @@ POOLS_2022_HIGHER = {
     'Q18(a)(ii)': (1, ['Animal enterprise', 'Tillage enterprise']),
 }
 
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER}
+# 2022 Ordinary: Section A Q1-Q12 at 10 marks (any seven), Section B Q13-Q18 at 50 (any three).
+ORDINARY_2022 = '''
+Q1(a)|8|3|12|Slurry spreader or slurry tanker or trailing shoe or injector
+Q1(b)|2|3|12|Don’t wear loose clothing around the PTO
+Q2(a)(i)|6|4|12|Blackface mountain or Swaledale
+Q2(a)(ii)|4|4|12|Good conformation or well‐muscled
+Q2(b)(i)|4|5|12|Texel or Beltex
+Q2(b)(ii)|4|5|12|good milk production / prolific
+Q2(b)(iii)|2|5|12|Hybrid vigour
+Q3(a)|6|6|13|turn on pH meter and calibrate using buffer solutions
+Q3(b)|4|6|13|adding lime to the land
+Q4(a)(i)|4|7|13|Variety of plant and animal life in a habitat
+Q4(a)(ii)|4|7|13|No chemical fertiliser used
+Q4(a)(iii)|2|7|13|Minimises the external cost of farming
+Q4(b)|10|7|14|Indicate if the following statements are true or false
+Q5(a)|2|8|14|Maintenance diet
+Q5(b)|8|8|14|Protein: growth or repair
+Q6(a)|2|9|14|controls specific (target) weeds
+Q6(b)|4|9|14|Health hazard / carcinogenic
+Q6(c)|4|9|14|Wear protective gloves (PPE)
+Q7(a)(i)|3|10|15|Root hairs / thin outer wall / long length
+Q7(a)(ii)|3|10|15|Nitrogen (N) / phosphorus (P)
+Q7(a)(iii)|4|10|15|Symptom ‐ 2
+Q7(b)(i)|6|10|16|Carbon dioxide
+Q7(b)(ii)|4|10|16|waxy cuticle (prevent water loss)
+Q8(a)|4|11|16|Inoculating loop
+Q8(b)|1|11|16|bacteria will grow on the agar plate
+Q8(c)|2|11|16|To kill any micro‐organisms on the outside of the roots
+Q8(d)|3|11|16|Rhizobium
+Q9(a)|4|12|16|Year = 2021*
+Q9(b)|2|12|16|2013*
+Q9(c)|3|12|16|42*(kg)
+Q9(d)|1|12|16|3 or 3L
+Q10(a)|3|13|17|squeeze silage juice into a jar
+Q10(b)|4|13|17|20÷85 X 100÷1
+Q10(c)|3|13|17|Samples taken at random
+Q11(a)(i)|1|14|18|Roundworm or lungworm or nematode
+Q11(a)(ii)|3|14|18|Dose or inject cattle (with anthelmintics)
+Q11(a)(iii)|2|14|18|Rotational grazing or leader follower grazing
+Q11(a)(iv)|3|14|18|less immunity
+Q11(a)(v)|1|14|18|Disease that impacts livestock production
+Q11(b)(i)|3|15|18|Continental breed
+Q11(b)(ii)|2|15|18|Shape or muscle (distribution) of animal
+Q11(b)(iii)|4|15|18|788 – 533 = 255kg
+Q11(b)(iv)|1|15|18|Increased LWG (ADG)
+Q12(a)|4|16|19|Soil is formed by weathering of rock
+Q12(b)|6|16|19|Compare the named soil types
+Q13(a)(i)|3|19|20|refers to the proportion of sand, silt and clay
+Q13(a)(ii)|8|19|20|100 – 87 = 13%
+Q13(a)(iii)|4|19|20|Only collecting one sample
+Q13(a)(iv)|6|20|20|pour soil and water into a graduated cylinder
+Q13(a)(v)|6|21|20|Eileen or sedimentation
+Q13(a)(vi)|12|21|20|Padraig’s (loam)
+Q13(b)(i)|4|22|21|W shape on photograph
+Q13(b)(ii)|4|22|21|Soil sampler or corer / soil auger
+Q13(b)(iii)|3|22|21|20 ‐ 25 samples
+Q13(c)(i)|4|22|21|Optimise plant health
+Q13(c)(ii)|7|22|21|Gateways / pathways / water troughs
+Q14(a)|7|23|21|Reduce chance of an animal getting pneumonia
+Q14(b)(i)|7|23|21|Allow pasture to recover
+Q14(b)(ii)|7|23|21|Easier to handle animals
+Q14(c)(i)|8|24|22|House ewes carrying same number of lambs together
+Q14(c)(ii)|4|24|22|Steaming up: ewes are fed good quality silage
+Q14(c)(iii)|6|24|22|Increased ovulation
+Q14(c)(iv)|11|25|22|2(2+2)
+Q15(a)(i)|7|26|23|Healthier animals / better animal welfare
+Q15(a)(ii)|19|26|23|Zero grazing is not accepted
+Q15(b)(i)|6|27|23|26* (litres / day)
+Q15(b)(ii)|8|27|23|= 5720 (litres)
+Q15(b)(iii)|2|27|23|This cow’s yield was lower (5720 litre)
+Q15(b)(iv)|3|28|23|Give cow chance to recover body condition
+Q15(b)(v)|2|28|23|60 (2 months)
+Q15(b)(vi)|3|28|23|Good quality silage (75+% DMD) or kale
+Q16(a)(i)|8|29|24|Month: May or June
+Q16(a)(ii)|2|29|24|Shaded area between continous blue line and orange dash line
+Q16(a)(iii)|2|29|24|Line graphs are used to track changes
+Q16(a)(iv)|2|29|24|Grass that has been dried or fermented
+Q16(b)(i)|9|30|24|Sunny / warm / windy / dry
+Q16(b)(ii)|15|30|24|3(4)+3
+Q16(b)(iii)|4|30|24|18 (%)
+Q16(c)(i)|6|31|24|A = Ragwort
+Q16(c)(ii)|2|31|24|Noxious plant (harmful to animals)
+Q16(d)(i)|6|31|24|C = Thistle
+Q16(d)(ii)|2|31|24|Animal feed / human consumption
+Q17(a)(i)|6|32|25|Better use of chemicals
+Q17(a)(ii)|6|32|25|Reduced labour or easier to use
+Q17(a)(iii)|6|32|25|Lack of practical knowledge
+Q17(b)(i)|8|33|25|40 X 57
+Q17(b)(ii)|6|33|25|2990 + 1056 + 2280 + 57 + 65
+Q17(b)(iii)|6|33|25|6992 x 5% = 349.6 (kg)
+Q17(b)(iv)|6|34|25|Less chance of N leaching into rivers
+Q17(c)|6|34|25|Install windmills
+Q18(a)(i)|12|35|26|Heading date / total yield
+Q18(a)(ii)|5|35|26|Moyola (105 ton DM/ha)
+Q18(a)(iii)|5|35|26|Moyola (107 ton DM/ha)
+Q18(b)(i)|6|35|26|Spray with total herbicide
+Q18(b)(ii)|2|36|26|Min 85% germination rate
+Q18(c)(i)|12|36|26|C ‐ already given
+Q18(c)(ii)|4|36|26|Contain more nutrients
+Q18(c)(iii)|4|36|26|May cause allergic reactions
+'''
+
+POOLS_2022_ORDINARY = {
+    'Q2(a)(i)': (3, ['A', 'B', 'C', 'D']),
+    'Q2(b)(ii)': (1, ['E', 'F']),
+    'Q3(a)': (1, ['pH paper or universal indicator', 'pH meter']),
+    'Q7(a)(iii)': (1, ['Nitrogen', 'Phosphorus', 'Potassium', 'Sulphur', 'Calcium', 'Magnesium']),
+    'Q12(a)': (3, ['Parent material', 'Topography', 'Time', 'Climate', 'Organisms']),
+}
+
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY}
 
 SOURCES = [
+    (2022, 'ordinary', 'G', ORDINARY_2022,
+     '93a3be61e0ec5891f6ac6a2660fc1a98732fc9ff21a4b3c1e50681db1fe14194',
+     'cb6dac4e3b45f824dfd75bf82443d62dc807fdbbf1e5406713be32e51c22e916'),
     (2022, 'higher', 'A', HIGHER_2022,
      '690cca40b2798863c397126cac71dc076d4fd3d6cb38395fee63c57625dc8f7f',
      '9e868b6c11ecf6bf71da03b8ced52b3be4aa80bbacb205b5fd418b555abd1a40'),
@@ -1455,7 +1568,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -1505,6 +1618,8 @@ MODERN_LAYOUTS = {
     (2025,'higher'): {'either':{'Q2','Q3','Q4','Q9'}, 'bothWithEither':{'Q13','Q14'},
                       'marks':lambda n: 10 if n<=12 else 50},
     (2025,'ordinary'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q15','Q17'},
+                        'marks':lambda n: 10 if n<=12 else 50},
+    (2022,'ordinary'): {'either':{'Q2','Q4','Q7','Q11'}, 'bothWithEither':{'Q16'}, 'oneWithEither':{'Q13'},
                         'marks':lambda n: 10 if n<=12 else 50},
     (2022,'higher'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q14','Q17'},
                       'marks':lambda n: 10 if n<=12 else 50},
@@ -1594,7 +1709,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98. Remaining editions stay open.')
 
 
 if __name__=='__main__':

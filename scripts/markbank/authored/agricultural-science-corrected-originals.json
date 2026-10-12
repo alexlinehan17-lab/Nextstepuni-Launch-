@@ -3567,5 +3567,1053 @@
   },
   "originalSha256": "ed064eefcfc4c869df7b4dc7d5fd8a091c3c778424c45b6162f14fc545310c34",
   "snapshotFrom": "codex/agricultural-science-completion-20261007 at 937bb7f0 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q1a": {
+  "original": {
+   "id": "agsci-2022-ol-q1a",
+   "topicId": "agsci-1-5",
+   "conceptId": "identifying-farm-machinery-and-function",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q1(a)",
+   "questionText": "Identify and state the function of machine A and B.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2,2,2,2"
+   },
+   "totalMarks": 8,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "A = (fertiliser) spreader Function = spread (shake or broadcast) fertiliser",
+     "marks": 4,
+     "accepts": [
+      "spreading grass seed"
+     ],
+     "contextNote": "A red arrow points at each implement. A is mounted behind the tractor and works grass; B is a tanker towed on a hard yard with a boom of trailing pipes."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B = Slurry spreader or slurry tanker or trailing shoe or injector",
+     "marks": 2
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Function = spreading slurry or effluent",
+     "marks": 2
+    }
+   ],
+   "stem": "Two examples of farm machinery are shown in the photographs.",
+   "notes": "The scheme prints A's identity and A's function on a single line, so the card keeps them together and gives that row both 2-mark units. B's identity and function are printed separately and get a row each.",
+   "figureKey": "agricultural-science-2022-OL-paper-p03-i0"
+  },
+  "originalSha256": "2c0231bfa5d6f3b76e51fc8adde587f710e1c59da361e151a3e7be5934dd2805",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q2ai": {
+  "original": {
+   "id": "agsci-2022-ol-q2ai",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "identifying-farm-animal-breeds",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q2(a)(i)",
+   "questionText": "The photographs below show breeds of animals found on Irish farms. Identify any three of the following breeds using the list below.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3(2)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "A = Simmental",
+     "marks": 2,
+     "accepts": [
+      "D = Jersey"
+     ],
+     "contextNote": "Four photographs above a word bank of Jersey, Blackface mountain, Landrace and Simmental. A is a heavy red-brown bull with a white face and white socks, B a long pale pink pig with drooping ears, C a white-fleeced horned ewe with a black-and-white face, D a small fawn cow with a large udder."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B = Landrace",
+     "marks": 2,
+     "accepts": [
+      "D = Jersey"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "C = Blackface mountain or Swaledale",
+     "marks": 2,
+     "accepts": [
+      "D = Jersey"
+     ]
+    }
+   ],
+   "stem": "Jersey Blackface mountain Landrace Simmental Or",
+   "notes": "Any three of the four score at 2 marks each; the fourth is carried as an accepted alternative.",
+   "figureKey": "agricultural-science-2022-OL-paper-p04-art",
+   "labelKey": [
+    {
+     "letter": "A",
+     "meaning": "Simmental",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "B",
+     "meaning": "Landrace",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "C",
+     "meaning": "Blackface mountain or Swaledale",
+     "askedInThisQuestion": true
+    }
+   ]
+  },
+  "originalSha256": "e6ba05eb399314ccae855de666df55b206727c5a679438d587047514be376324",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q2aii": {
+  "original": {
+   "id": "agsci-2022-ol-q2aii",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "traits-of-a-sire",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q2(a)(ii)",
+   "questionText": "Describe two traits which make animal A shown in part (i) above suitable for selection as a sire.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3+1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Good conformation or well‐muscled",
+     "marks": 3,
+     "accepts": [
+      "good liveweight gain (LWG) or food conversion ratio (FCR)",
+      "good temperament",
+      "heavy carcase or high % kill out",
+      "lean carcase",
+      "early maturing",
+      "short calving interval"
+     ],
+     "contextNote": "Four photographs above a word bank of Jersey, Blackface mountain, Landrace and Simmental. A is a heavy red-brown bull with a white face and white socks, B a long pale pink pig with drooping ears, C a white-fleeced horned ewe with a black-and-white face, D a small fawn cow with a large udder."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "dual purpose breed (good beef and milk qualities)",
+     "marks": 1,
+     "accepts": [
+      "good liveweight gain (LWG) or food conversion ratio (FCR)",
+      "good temperament",
+      "heavy carcase or high % kill out",
+      "lean carcase",
+      "early maturing",
+      "short calving interval"
+     ]
+    }
+   ],
+   "stem": "Jersey Blackface mountain Landrace Simmental Or",
+   "notes": "Animal A is the bull in the top-left photograph. The first trait scores 3 and the second 1, so the order they are given in decides the total.",
+   "figureKey": "agricultural-science-2022-OL-paper-p04-art"
+  },
+  "originalSha256": "0b73a67037f23d8738fede5062b002859cd9bd15134c66ea2fad829af32cc8c6",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q3a": {
+  "original": {
+   "id": "agsci-2022-ol-q3a",
+   "topicId": "agsci-1-2",
+   "conceptId": "soil-ph-investigation",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q3(a)",
+   "stem": "A student carried out an investigation in the school laboratory to determine the pH of a soil sample.",
+   "questionText": "Briefly describe how the student carried out this investigation.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3(2)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Add soil sample to beaker and add distilled or deionised water",
+     "marks": 2,
+     "accepts": [
+      "stir or mix well",
+      "add filter paper to funnel (in retort stand)",
+      "pour the mixture into the funnel",
+      "collect the filtrate (filtered soil solution)",
+      "add pH paper or universal",
+      "note colour change",
+      "compare colour to colour chart (to determine the pH)",
+      "turn on pH meter and calibrate using buffer solutions",
+      "clean probe by inserting into distilled water (pH 7)",
+      "ensure pH reading correctly – pH 7",
+      "place probe into (stirred) solution",
+      "record reading",
+      "clean probe into distilled or deionised water after reading"
+     ],
+     "contextNote": "Any one creditable step – 2 marks. The steps must all come from ONE method: either the pH paper / universal indicator route or the pH meter route. The scheme separates them with 'Or', so steps mixed across the two methods do not make a creditable answer."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "stir or mix well",
+     "marks": 2,
+     "accepts": [
+      "Add soil sample to beaker and add distilled or deionised water",
+      "add filter paper to funnel (in retort stand)",
+      "pour the mixture into the funnel",
+      "collect the filtrate (filtered soil solution)",
+      "add pH paper or universal",
+      "note colour change",
+      "compare colour to colour chart (to determine the pH)",
+      "turn on pH meter and calibrate using buffer solutions",
+      "clean probe by inserting into distilled water (pH 7)",
+      "ensure pH reading correctly – pH 7",
+      "place probe into (stirred) solution",
+      "record reading",
+      "clean probe into distilled or deionised water after reading"
+     ],
+     "contextNote": "Any second creditable step from the SAME method – 2 marks."
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "add pH paper or universal",
+     "marks": 2,
+     "accepts": [
+      "Add soil sample to beaker and add distilled or deionised water",
+      "stir or mix well",
+      "add filter paper to funnel (in retort stand)",
+      "pour the mixture into the funnel",
+      "collect the filtrate (filtered soil solution)",
+      "note colour change",
+      "compare colour to colour chart (to determine the pH)",
+      "turn on pH meter and calibrate using buffer solutions",
+      "clean probe by inserting into distilled water (pH 7)",
+      "ensure pH reading correctly – pH 7",
+      "place probe into (stirred) solution",
+      "record reading",
+      "clean probe into distilled or deionised water after reading"
+     ],
+     "contextNote": "Any third creditable step from the SAME method – 2 marks."
+    }
+   ],
+   "notes": "Tariff 3(2) = three points at 2 marks each = 6. The scheme prints TWO alternative methods separated by 'Or' — pH paper / universal indicator (lines 295-299) and pH meter (lines 301-305) — each with more steps than the three required. Each row is therefore a 2-mark slot and the full pool of steps from both methods sits in accepts, but a creditable answer must stay within one method; that constraint is stated on every row because the model cannot express it (route-splitting would need six rows and MAX_ROWS is five). Rows show three steps of the pH-paper method as the worked example."
+  },
+  "originalSha256": "ffbc4a8ed80f933bab20617a9cf5a4c506975c94dff4cf647395995bf0322396",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q3b": {
+  "original": {
+   "id": "agsci-2022-ol-q3b",
+   "topicId": "agsci-3-1",
+   "conceptId": "what-a-low-soil-ph-means-for-a-crop",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q3(b)",
+   "questionText": "The result of the investigation is shown in the table below. Suggest one implication this has for growing crops on the land and one way the student could alter the pH of the soil.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3 + 1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "low nutrient availability or nutrient deficiencies in the crop",
+     "marks": 3
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "adding lime to the land",
+     "marks": 1
+    }
+   ],
+   "stem": "pH Soil sample 5.2",
+   "notes": "The scheme also allows reduced yield, slower growth or an effect on earthworm activity as the implication."
+  },
+  "originalSha256": "f4485890c9e2c4965370c220737bbddf651d397758d9a3652d602ee5792ecf17",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q4b": {
+  "original": {
+   "id": "agsci-2022-ol-q4b",
+   "topicId": "agsci-4-1",
+   "conceptId": "true-false-animal-physiology-facts",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q4(b)",
+   "stem": "",
+   "questionText": "Indicate if the following statements are true or false by place a tick in the correct box. The first one has been done as an example.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "5(2)"
+   },
+   "totalMarks": 10,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "False",
+     "marks": 2,
+     "contextNote": "(i) The length of the oestrus cycle in cows is 17 days"
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "True",
+     "marks": 2,
+     "contextNote": "(ii) Gestation length in cattle is 283 days"
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "True",
+     "marks": 2,
+     "contextNote": "(iii) pH of the rumen is 7"
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "False",
+     "marks": 2,
+     "contextNote": "(iv) Ideal Body Condition Score (BCS) for a cow at calving is 4.5"
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "False",
+     "marks": 2,
+     "contextNote": "(v) The number of compartments in the ruminant stomach is 3"
+    }
+   ],
+   "notes": "Tariff 5(2) = five statements at 2 marks each = 10. The scheme prints only True/False against each roman numeral, so each row's verbatim is the single word and the statement it belongs to is carried in contextNote. The worked example on the paper (duration of heat in cattle is 48 hours) is not marked."
+  },
+  "originalSha256": "e2bc4fb4826d64f012c81f9f945e6239c18fe29a958a4fbee6483edd7be595f5",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q5a": {
+  "original": {
+   "id": "agsci-2022-ol-q5a",
+   "topicId": "agsci-4-1",
+   "conceptId": "maintenance-and-production-diets",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q5(a)",
+   "stem": "",
+   "questionText": "Farm animals are fed diets for maintenance and production. Explain the underlined terms.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "1 + 1"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Maintenance diet – amount of feed given to an animal to maintain good health or condition or with no loss or gain in weight",
+     "marks": 1,
+     "contextNote": "Maintenance diet – 1 mark."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Production diet – extra amount of feed required and used for",
+     "marks": 1,
+     "contextNote": "Production diet – 1 mark. The scheme's line continues '…production of some kind (1kg of LWG or 1 litre of milk or 1 kg of wool or produce calf or lamb)'; the mark digit '1' is typeset between 'for' and 'production', so only the span shown is contiguous. The mark turns on 'extra amount of feed' — feed above maintenance — with the named product as the illustration."
+    }
+   ],
+   "notes": "1 mark for each of the two underlined terms. The scheme typesets the mark digit '1' inside the production-diet sentence, so the row quotes the head of the sentence (which carries the marking content, 'extra amount of feed') and the contextNote carries the tail. Both underlined terms appear in questionText, so no stem gloss is needed."
+  },
+  "originalSha256": "01fd48c2d0a213ac7dbc634437a4fe1901374a76bc02a2d738e1b696ae46901c",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q7aiii": {
+  "original": {
+   "id": "agsci-2022-ol-q7aiii",
+   "topicId": "agsci-3-3-2",
+   "conceptId": "nitrogen-deficiency-symptom-treatment",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q7(a)(iii)",
+   "stem": "In part (ii) the student named nitrogen (N) as the nutrient absorbed through the root.",
+   "questionText": "A farmer discovers his crop is deficient in the nutrient named in (ii) above. Describe (1) a symptom and (2) the treatment for this deficiency.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "Symptom 2 + Treatment 2"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Spindly yellow plants or yellow leaves",
+     "marks": 2,
+     "accepts": [
+      "leaves may have pink tints",
+      "stunted growth",
+      "necrosis (death) of older leaves"
+     ],
+     "contextNote": "Symptom – 2 marks (nitrogen route). One symptom only; the scheme's list is alternatives for the same 2-mark point."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Spread chemical nitrogen",
+     "marks": 2,
+     "accepts": [
+      "urea or CAN or named chemical compound",
+      "spread slurry",
+      "spread FYM"
+     ],
+     "contextNote": "Treatment – 2 marks (nitrogen route). One treatment only."
+    }
+   ],
+   "notes": "Symptom 2 + treatment 2 = 4, matching the two mark digits the scheme prints separately. The scheme gives a symptom/treatment table for six nutrients; this card is written for the NITROGEN route, matching the first-listed answer to (ii), and the stem says so because questionText alone points at a part the student cannot see. A parallel card is needed for each of the other five nutrients."
+  },
+  "originalSha256": "4f40e9975da160c506640a0a057adc01f7d1cfd67d2dada1f2b8df1b459d2f0e",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q7bii": {
+  "original": {
+   "id": "agsci-2022-ol-q7bii",
+   "topicId": "agsci-2-1",
+   "conceptId": "leaf-adaptations-for-photosynthesis",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q7(b)(ii)",
+   "questionText": "Describe two ways a leaf is adapted to carry out photosynthesis.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3+1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "anyN",
+     "verbatim": "Flat (large surface area for max absorption of light)",
+     "marks": 3,
+     "accepts": [
+      "waxy cuticle (prevent water loss)",
+      "palisade layer (tightly packed together with large number of chloroplasts for max light absorption)",
+      "spongy mesophyll (many air spaces for rapid diffusion of gases)",
+      "vascular tissue (xylem or phloem) ‐ (transport of water or removal of sugars for storage)",
+      "stomata (gas exchange)",
+      "guard cells (open and close stomata)"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "anyN",
+     "verbatim": "thin (for diffusion of gases)",
+     "marks": 1,
+     "accepts": [
+      "waxy cuticle (prevent water loss)",
+      "palisade layer (tightly packed together with large number of chloroplasts for max light absorption)",
+      "spongy mesophyll (many air spaces for rapid diffusion of gases)",
+      "vascular tissue (xylem or phloem) ‐ (transport of water or removal of sugars for storage)",
+      "stomata (gas exchange)",
+      "guard cells (open and close stomata)"
+     ]
+    }
+   ],
+   "stem": "Gas B Gas A Water"
+  },
+  "originalSha256": "5715d8ebd9dc0034c2064288d4127e05c1195cd6d0c43c837f9395186c62b3ee",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q9c": {
+  "original": {
+   "id": "agsci-2022-ol-q9c",
+   "topicId": "agsci-4-3-1",
+   "conceptId": "lamb-slaughter-weight",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q9(c)",
+   "stem": "",
+   "questionText": "Identify the average slaughter weight of lambs by choosing the correct value from the following three options: 30 kg, 50 kg or 42 kg.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "gate",
+     "verbatim": "42*(kg)",
+     "marks": 3,
+     "contextNote": "Tick-box choice on the paper: 30 / 50 / 42. Asterisked — only the exact figure scores and a surplus wrong figure cancels this row. Exact term required."
+    }
+   ],
+   "notes": "Single 3-mark tick-box answer, and it is knowledge rather than graph reading. Asterisked, so the row is a gate row and also requires exactTermRequired: true, which this review's output schema cannot express."
+  },
+  "originalSha256": "b2dbc082ebe259053afc306adf677d2f43d3f9aac05709c207f7a7d4850a01b0",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q10c": {
+  "original": {
+   "id": "agsci-2022-ol-q10c",
+   "topicId": "agsci-3-3-3",
+   "conceptId": "taking-a-representative-silage-sample",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q10(c)",
+   "questionText": "State two precautions the student should take when obtaining samples of silage from the pit face to ensure they take a representative sample.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2+1"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "anyN",
+     "verbatim": "samples not taken near the edges of the pit or from the open face of the pit",
+     "marks": 2,
+     "accepts": [
+      "use corer to take the sample or dig through about 20cm from pit face",
+      "mix all samples in bucket",
+      "put in zip lock bag and remove as much air as possible",
+      "sampling bales from same batch (min 5)",
+      "safety ‐ be aware of silage falling from overhead at the pit face or any one valid safety point"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "anyN",
+     "verbatim": "samples should not be taken if spoiled",
+     "marks": 1,
+     "accepts": [
+      "use corer to take the sample or dig through about 20cm from pit face",
+      "mix all samples in bucket",
+      "put in zip lock bag and remove as much air as possible",
+      "sampling bales from same batch (min 5)",
+      "safety ‐ be aware of silage falling from overhead at the pit face or any one valid safety point"
+     ]
+    }
+   ],
+   "stem": "Beef, sheep and dairy farmers require high quality silage for winter feed."
+  },
+  "originalSha256": "ea33378470c85b63111f2f8e16db15c3f7b4f3b4f23cc59a8dee0f566c113bd8",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q11aiii": {
+  "original": {
+   "id": "agsci-2022-ol-q11aiii",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "hoose-prevention",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 OL Q11(a)(iii)",
+   "stem": "Seán noticed a number of his calves had a husky cough and after examination by his local vet they were diagnosed with hoose.",
+   "questionText": "Briefly explain one way Seán could prevent this disease on his farm.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Rotational grazing or leader follower grazing or good grazing",
+     "marks": 2,
+     "accepts": [
+      "vaccinate young calves"
+     ],
+     "contextNote": "The scheme line reads '...or good grazing management'; the mark digit is typeset inside the phrase, so only the contiguous span is quoted. One way only – the solidus separates two alternatives for the same 2-mark point."
+    }
+   ],
+   "notes": "One prevention method asked; the full 2 marks sit on the single row."
+  },
+  "originalSha256": "04b3bc32ef9259bfb8d86ce8caf40534fbb67c189c9ed3bb94bc38cc9327b299",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q14civ": {
+  "original": {
+   "id": "agsci-2022-ol-q14civ",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "reducing-lamb-mortality-at-lambing",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 OL Q14(c)(iv)",
+   "stem": "Liam and Hannah were housing their 136 ewes two months prior to lambing. Hannah and Liam want to minimise mortality at lambing.",
+   "questionText": "Complete the table below to outline three ways to minimise mortality and give a reason for each action. The first one has been done as an example: \"Correct feeding in late pregnancy\" — \"Prevent oversized lambs\".",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "2(2+2) + 1(2+1)"
+   },
+   "totalMarks": 11,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Spread lime on pen — Reduce risk of infection",
+     "marks": null,
+     "contextNote": "Each row is one action paired with its reason. Four more pairs are printed in the scheme: \"Fostering multiple births higher than 2 lambs — Ewes only have 2 teats and can only rear 2 lambs\"; \"Equipment in one place — Have all equipment ready in case of difficult birth\"; \"Contact the vet or experienced person — Have number ready to call in an emergency\"; \"Infra‐red lamp or heat box or glucose injection or lambing indoors — Prevent hypothermia or chill or predation\"."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Add iodine to navel or adequate hygiene in sheds — Prevent navel or joint ill",
+     "marks": null,
+     "contextNote": "The scheme's reason column reads \"Prevent navel or joint ill or infection\"; the two columns interleave in the extracted scheme, so only the contiguous span is quoted."
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Ensure the lambs get colostrum — Provide immunity",
+     "marks": null,
+     "contextNote": "The scheme's reason column reads \"Provide immunity or antibodies\"."
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "Ewes in good condition — Less risk of difficult lambing",
+     "marks": null
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "Adequate supervision — Assist ewes in trouble lambing",
+     "marks": null
+    }
+   ],
+   "notes": "Tariff 2(2+2) + 1(2+1) = 11: the first two action-and-reason pairs score 2 + 2 each and the third scores 2 + 1, so the award is positional and every row is null. The scheme's table holds nine pairs; five are shown (MAX_ROWS = 5) and the other four are quoted in the contextNote on r-1. Each row's verbatim is \"action — reason\", which is how the build reads a two-column scheme row (it verifies the text after the dash). \"Spread lime on pen\" is styled grey-italic in the scheme PDF but is NOT the paper's worked example — the paper's example is \"Correct feeding in late pregnancy\" — so it is kept as a creditable pair."
+  },
+  "originalSha256": "94833f2d540280201836ce8be66f64e0ecc621e810f672d07dc4b8c7d75f4547",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q16bii": {
+  "original": {
+   "id": "agsci-2022-ol-q16bii",
+   "topicId": "agsci-3-3-3",
+   "conceptId": "hay-production-steps",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 OL Q16(b)(ii)",
+   "stem": "Hay production in Ireland is a common practice of preserving grass for farm animals for winter feed. The summer of 2021 saw ideal conditions for the production of hay.",
+   "questionText": "Describe four steps involved in the production of hay.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "3(4)+3"
+   },
+   "totalMarks": 15,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Fertilise grass (min 6 weeks prior)",
+     "marks": null
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "cut at correct stage (vegetative or inflorescence stage)",
+     "marks": null,
+     "accepts": [
+      "cut using a mower",
+      "cut in June or July"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "row the grass using a rower",
+     "marks": null,
+     "accepts": [
+      "tedder grass"
+     ]
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "until completely dehydrated",
+     "marks": null
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "bale",
+     "marks": null,
+     "accepts": [
+      "move to storage shed"
+     ]
+    }
+   ],
+   "notes": "REVIEWER CHECK. The scheme tariff is printed '3(4)+3' against a 15-mark part (confirmed by reconciling Q16: 14 + 13 + X + 8 = 50, so X = 15). 3(4) accounts for 12 and the trailing +3 is not attributable to any named row, so no row can carry a defined value — orderedSplit with every row null and the notation transcribed exactly. The scheme's pool holds nine solidus-separated steps but MAX_ROWS is 5, so steps of the same stage are grouped into one row with the siblings in accepts (cut stage / mower / June-July; ted / row; bale / move to shed). 'tedder grass' is in accepts rather than verbatim because the scheme's marks cell sits inline between 'tedder' and 'grass' across a line break."
+  },
+  "originalSha256": "95c70407955fbc18b2735cde94cbe40fd30f69c30638690d1896be59e8b291e6",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q17ai": {
+  "original": {
+   "id": "agsci-2022-ol-q17ai",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "technology-in-agriculture-advantages",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 OL Q17(a)(i)",
+   "stem": "Read the article and answer the questions which follow. Robotics and Automation in Agriculture — The future of farming will likely be in automation, using robotic and self-driving machinery to sow, fertilise and harvest crops or manage animals. Already, automated or robotic milking machines are in use in Ireland and over 50% of all new milking machines installed in the European Union (EU) are automated. Robotic milking has a number of advantages. There is more consistency, reduced labour costs, the possibility of increased milking frequency (three times a day) and better overall herd management.",
+   "questionText": "Outline two advantages of technology in agriculture.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "4+2"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Better use of chemicals",
+     "marks": null,
+     "accepts": [
+      "sowing fertiliser (accurately) or saving fuel or saving fertiliser",
+      "less leaching"
+     ],
+     "openList": true
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "reducing labour or time",
+     "marks": null,
+     "openList": true
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "more accurate data",
+     "marks": null,
+     "accepts": [
+      "tracking or monitoring animals or identification of disease or illness"
+     ],
+     "openList": true
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "increased animal yields",
+     "marks": null,
+     "accepts": [
+      "increased crop yield",
+      "harvesting crops"
+     ],
+     "openList": true
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "better animal welfare",
+     "marks": null,
+     "openList": true
+    }
+   ],
+   "notes": "Two advantages awarded positionally 4 then 2, so orderedSplit with every row null. The scheme's pool runs to eleven solidus-separated advantages and ends 'other valid answer'; with MAX_ROWS 5 the five headline answers are shown as rows and the remaining six ride in accepts, with openList set (LAW 5) so a student with any other creditable advantage can still claim. Tagged 4-3-2 because the whole of Q17(a) sits under the robotic-milking / herd-management article; (a)(i) is the broadest of the three and could arguably sit under crop production instead — flagged for the taxonomy reviewer."
+  },
+  "originalSha256": "bc6953a24f8a01b9bdebb4898bc792f9cc4160f3b6a4237bb664a2f3066b2664",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q17aii": {
+  "original": {
+   "id": "agsci-2022-ol-q17aii",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "robotic-milking-uptake",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 OL Q17(a)(ii)",
+   "stem": "Read the article and answer the questions which follow. Robotics and Automation in Agriculture — The future of farming will likely be in automation, using robotic and self-driving machinery to sow, fertilise and harvest crops or manage animals. Already, automated or robotic milking machines are in use in Ireland and over 50% of all new milking machines installed in the European Union (EU) are automated. Robotic milking has a number of advantages. There is more consistency, reduced labour costs, the possibility of increased milking frequency (three times a day) and better overall herd management.",
+   "questionText": "Briefly describe two reasons for the increased installation of robotic milking machines.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "4+2"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Reduced labour or easier to use",
+     "marks": null,
+     "accepts": [
+      "Reduced labour",
+      "easier to use"
+     ],
+     "openList": true
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Milked more often — increased milk yield",
+     "marks": null,
+     "accepts": [
+      "increased milk yield as cows milked more often"
+     ],
+     "openList": true
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "quicker detection of mastitis or of milk quality",
+     "marks": null,
+     "openList": true
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "more consistency",
+     "marks": null,
+     "openList": true
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "better overall herd management",
+     "marks": null,
+     "openList": true
+    }
+   ],
+   "notes": "Two reasons awarded positionally 4 then 2 — orderedSplit, all rows null. Five scheme points, one row each, plus 'other valid answer' so openList is on. Row 2 uses the deck's 'Label — answer' form because the scheme's marks cell ('4+2') is typeset inline between 'cows milked more' and 'often', so the full phrase cannot match the extracted scheme text; the full wording is preserved in accepts."
+  },
+  "originalSha256": "dbd6d9369cebfdf1a8fb18c07f3e0a38abefb4cb65f58293c049211e436e0019",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q17aiii": {
+  "original": {
+   "id": "agsci-2022-ol-q17aiii",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "technology-in-agriculture-disadvantages",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 OL Q17(a)(iii)",
+   "stem": "Read the article and answer the questions which follow. Robotics and Automation in Agriculture — The future of farming will likely be in automation, using robotic and self-driving machinery to sow, fertilise and harvest crops or manage animals. Already, automated or robotic milking machines are in use in Ireland and over 50% of all new milking machines installed in the European Union (EU) are automated. Robotic milking has a number of advantages. There is more consistency, reduced labour costs, the possibility of increased milking frequency (three times a day) and better overall herd management.",
+   "questionText": "Outline two potential disadvantages of using technology on Irish farms.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "4+2"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Lack of practical knowledge",
+     "marks": null,
+     "accepts": [
+      "technical difficulties"
+     ],
+     "openList": true
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "increased maintenance cost",
+     "marks": null,
+     "openList": true
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "overuse of machinery can cause environmental damage",
+     "marks": null,
+     "openList": true
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "expensive to install",
+     "marks": null,
+     "openList": true
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "reduced employment",
+     "marks": null,
+     "openList": true
+    }
+   ],
+   "notes": "Two disadvantages awarded positionally 4 then 2 — orderedSplit, all rows null. Six scheme points against MAX_ROWS 5, so 'technical difficulties' rides in accepts on the closest row; it is also the one phrase the scheme breaks across a line with the marks cell inline, so it could not have been a verbatim row anyway. Pool ends 'other valid answer', so openList is on."
+  },
+  "originalSha256": "a2fed47ebf10e42e9d78c1d64144e663a8dc131909557035f2a7587a2a48b40e",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q18ai": {
+  "original": {
+   "id": "agsci-2022-ol-q18ai",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "grass-variety-selection-traits",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 OL Q18(a)(i)",
+   "stem": "The Department of Agriculture Food and the Marine (DAFM) produce a recommended list of perennial ryegrass seed varieties annually.",
+   "questionText": "List three physical traits assessed by the DAFM when recommending grass seed varieties.",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "answer": 3,
+    "ofParts": 5,
+    "perPart": 4,
+    "notation": "3(4)"
+   },
+   "totalMarks": 12,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Heading date",
+     "marks": 4
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "total yield",
+     "marks": 4
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "ground cover",
+     "marks": 4
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "spring growth",
+     "marks": 4,
+     "accepts": [
+      "autumn growth"
+     ]
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "dry matter digestibility (DMD)",
+     "marks": 4
+    }
+   ],
+   "notes": "REVIEWER CHECK. Scheme tariff '3(4)' = three traits at 4 marks each = 12, and the question asks for three, so bestNofParts with 3 x 4 = 12. The scheme prints SIX distinct traits but MAX_ROWS is 5, so 'autumn growth' is folded into the 'spring growth' row as an accept (same trait, different season). The one cost is a student who listed spring growth AND autumn growth as two separate traits, who can only tick one row — worth a second opinion. Answerable without the paper's variety table: these are the standard DAFM recommended-list traits and the question does not reference the table, so the stem is the first sentence only."
+  },
+  "originalSha256": "d0036ca76fa34cec2bd7f026a2379e84d1f821c3b6717d7d5ac0c9b777022353",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-ol-q18bi": {
+  "original": {
+   "id": "agsci-2022-ol-q18bi",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "reseeding-seedbed-preparation",
+   "level": "ordinary",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 OL Q18(b)(i)",
+   "stem": "Harry wanted to reseed 20% of his grassland this year with certified seed.",
+   "questionText": "Describe how Harry should prepare his seedbed.",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "answer": 3,
+    "ofParts": 5,
+    "perPart": 2,
+    "notation": "3(2)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Spray with total herbicide",
+     "marks": 2
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "plough (10 days after spraying)",
+     "marks": 2
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "spread lime and fertiliser or apply slurry after seeding",
+     "marks": 2
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "Harrow — produce fine firm seedbed",
+     "marks": 2,
+     "accepts": [
+      "(power) harrowed",
+      "roll prior to sowing"
+     ]
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "broadcast seed or sow seed close to surface or seed sown into old grassland or seed barrow",
+     "marks": 2,
+     "accepts": [
+      "rolled again to achieve good soil to seed contact"
+     ]
+    }
+   ],
+   "notes": "Scheme tariff '3(2)' = three steps at 2 marks each = 6. The scheme pool holds seven steps; with MAX_ROWS 5 the two rolling steps are folded into the neighbouring cultivation and sowing rows as accepts, so bestNofParts is 3 claimable of 5 displayed at 2 each = 6. Row 4 uses the 'Label — answer' form because the scheme's marks cell ('3(2)') is typeset inline between '(power) harrowed (to' and 'produce fine firm seedbed)'. No 'etc.' in the scheme, so openList is off."
+  },
+  "originalSha256": "bddec46d46f6629bd6cb3b23d152f658a590cff11f5b637f0d99fb5cd6ca73f5",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
  }
 }

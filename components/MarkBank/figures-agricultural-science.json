@@ -661,5 +661,22 @@
       0.672
     ],
     "reviewedAt": "2026-10-12"
+  },
+  "agsci-2022-ol-paper-grass-growth-curve": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2022-ol-paper-grass-growth-curve.png",
+    "md5": "e7f42f04dfadff11667c8b9e9bdc524e",
+    "alt": "Original Question 16(a) line graph, Grass Growth Curve and Feed Demand: yield of DM (kg/ha) from 0 to 90 against the months February to November. The solid blue grass-growth line rises from 10 in February to a peak of 78 in May, falls to 50 in July, rises to 60 in August and falls to 5 in November; the dashed red feed-demand line runs from about 58 in April to 60 in June, 42 in July, 46 in August, 30 in September and 33 in November.",
+    "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper, PDF page 29 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2022/LC024GLP000EV.pdf",
+    "sourceSha256": "93a3be61e0ec5891f6ac6a2660fc1a98732fc9ff21a4b3c1e50681db1fe14194",
+    "pdfPage": 29,
+    "cropRect": [
+      0.06,
+      0.112,
+      0.94,
+      0.38
+    ],
+    "reviewedAt": "2026-10-12"
   }
 }

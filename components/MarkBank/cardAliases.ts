@@ -7,6 +7,11 @@
  * read by the surviving canonical card and is never silently discarded.
  */
 export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
+  "agsci-2022-ol-q4bi": "agsci-2022-ol-q4b",
+  "agsci-2022-ol-q4bii": "agsci-2022-ol-q4b",
+  "agsci-2022-ol-q4biii": "agsci-2022-ol-q4b",
+  "agsci-2022-ol-q4biv": "agsci-2022-ol-q4b",
+  "agsci-2022-ol-q4bv": "agsci-2022-ol-q4b",
   "agsci-2025-hl-q12b": "agsci-2025-hl-q12a",
   "agsci-2025-hl-q12c": "agsci-2025-hl-q12a",
   "agsci-2025-hl-q12d": "agsci-2025-hl-q12a",

@@ -15,6 +15,7 @@ import type { PaperAnswerMap } from '../types/paperTrail';
 import { findCanonicalTopic, resolveCurriculumSpecification } from '../curriculumRegistry';
 import { cardsForTopic } from '../components/MarkBank/deck';
 import census from '../scripts/markbank/authored/agricultural-science-census.json';
+import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
 const cards = [...higher, ...ordinary];
 const get = (id: string) => {
@@ -38,7 +39,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(53);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(52);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -390,7 +391,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(18);
+    expect(review.paperReviews).toHaveLength(19);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -560,7 +561,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(q12.rows[0].group?.options[2]).toContain('Close to surface to maximise photosynthesis');
     expect(marksClaimed(q12, {}, { 'r-1': [0, 1, 2, 4] })).toBe(10);
     expect(marksClaimed(q12, {}, { 'r-1': [3] })).toBe(4);
-    expect((review as { withdrawnCardIds: Record<string, string> }).withdrawnCardIds).toEqual({
+    expect((review as { withdrawnCardIds: Record<string, string> }).withdrawnCardIds).toMatchObject({
       'agsci-2025-hl-q12b': 'agsci-2025-hl-q12a', 'agsci-2025-hl-q12c': 'agsci-2025-hl-q12a',
       'agsci-2025-hl-q12d': 'agsci-2025-hl-q12a', 'agsci-2025-hl-q12e': 'agsci-2025-hl-q12a',
     });
@@ -821,6 +822,49 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
   });
 
+  it('reconciles all 95 original 2022 Ordinary cards, folds Q4(b) into one card and adds the six missing parts', () => {
+    const year = ordinary.filter(card => card.year === 2022);
+    expect(year).toHaveLength(98);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2022 OL'));
+    expect(tasks).toHaveLength(98);
+    const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
+    expect(states.filter(state => state === 'unchanged')).toHaveLength(71);
+    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(19);
+    expect(states.filter(state => state === 'added')).toHaveLength(6);
+    for (const key of ['q2ai', 'q3a', 'q7aiii', 'q12a']) {
+      expect(review.tasks.find(task => task.cardIds.includes(`agsci-2022-ol-${key}`))!.selection).toMatchObject({ kind: 'closed', pooled: true });
+    }
+    // The five per-statement Q4(b) cards are withdrawn into the table card and read through aliases.
+    for (const key of ['i', 'ii', 'iii', 'iv', 'v']) {
+      expect(year.some(card => card.id === `agsci-2022-ol-q4b${key}`)).toBe(false);
+      expect(CARD_ID_ALIASES[`agsci-2022-ol-q4b${key}`]).toBe('agsci-2022-ol-q4b');
+      expect((review as { withdrawnCardIds: Record<string, string> }).withdrawnCardIds[`agsci-2022-ol-q4b${key}`]).toBe('agsci-2022-ol-q4b');
+    }
+    expect(get('agsci-2022-ol-q4b').rows).toHaveLength(5);
+    expect(get('agsci-2022-ol-q4b').totalMarks).toBe(10);
+    // The indicator and meter methods, and each named nutrient, are answer routes.
+    const variantsOf = (id: string) => (get(id) as { answerVariants?: Array<{ id: string; rows: ReturnType<typeof get>['rows'] }> }).answerVariants ?? [];
+    expect(variantsOf('agsci-2022-ol-q3a').map(variant => variant.id)).toEqual(['indicator', 'meter']);
+    expect(variantsOf('agsci-2022-ol-q7aiii').map(variant => variant.id)).toEqual(['nitrogen', 'phosphorus', 'potassium', 'sulphur', 'calcium', 'magnesium']);
+    for (const id of ['agsci-2022-ol-q3a', 'agsci-2022-ol-q7aiii']) {
+      for (const variant of variantsOf(id)) expect(tariffReconciles({ ...get(id), rows: variant.rows }), `${id} ${variant.id}`).toBe(true);
+    }
+    expect(get('agsci-2022-ol-q14civ').totalMarks).toBe(11);
+    expect(get('agsci-2022-ol-q5a').rows[1].verbatim).toContain('produce calf or lamb');
+    // Added: silage tests, soil-forming factors, the grazing diagram, the shaded graph and the two nitrogen calculations.
+    expect(get('agsci-2022-ol-q15aii').tariffModel.kind).toBe('questionTotal');
+    expect(get('agsci-2022-ol-q15aii').totalMarks).toBe(19);
+    expect(get('agsci-2022-ol-q16aii').figure?.src).toContain('agsci-2022-ol-paper-grass-growth-curve');
+    for (const id of ['agsci-2022-ol-q10a', 'agsci-2022-ol-q12a', 'agsci-2022-ol-q17bi', 'agsci-2022-ol-q17biii']) {
+      expect(tariffReconciles(get(id)), id).toBe(true);
+    }
+    const units = census.questionMarkChecks.filter(check => check.year === 2022 && check.level === 'ordinary');
+    expect(units).toHaveLength(18);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+    expect(units.find(check => check.question === 'Q13')!.rule).toBe('(a) with either (b) or (c)');
+    expect(units.find(check => check.question === 'Q16')!.rule).toBe('both (a) and (b) with either (c) or (d)');
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -906,7 +950,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(1132);
+    expect(atlas.markBankCards).toHaveLength(1228);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

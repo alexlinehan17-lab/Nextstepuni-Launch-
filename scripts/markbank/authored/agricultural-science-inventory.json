@@ -3810,128 +3810,145 @@
         "sha256": "cb6dac4e3b45f824dfd75bf82443d62dc807fdbbf1e5406713be32e51c22e916",
         "pages": 28
       },
-      "authoredEnglishCardsForSitting": 97,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 103,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "1643a3a7f339597c",
           "page": 2,
           "cue": "Answer seven",
           "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer seven questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any three questions from this section. There is internal choice in two questions. Each question carries 50 ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section A, seven of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "529e66c12bf6d0b5",
           "page": 2,
           "cue": "any three",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any three questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day and Month of Birth in the boxes on the front cover. Write your answers in blue or ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section B, three of six independent questions. Every question is retained."
         },
         {
           "id": "b72f88947965ee17",
           "page": 3,
           "cue": "any seven",
           "context": "ficate Examination 2022 3 Agricultural Science – Ordinary Level Section A 70 marks Answer any seven questions. Each question carries 10 marks. Question 1 Two examples of farm machinery are shown in the photographs. A B (a) Identify and state the function of machine A and B. (b) State one safety precaution when working with mach",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: seven independent 10-mark questions, all retained."
         },
         {
           "id": "b0a438903888f617",
           "page": 4,
           "cue": "either",
           "context": "ng Certificate Examination 2022 4 Agricultural Science – Ordinary Level Question 2 Answer either (a) or (b). (a) (i) The photographs below show breeds of animals found on Irish farms. Identify any three of the following breeds using the list below. Jersey Blackface mountain Landrace Simmental A B C D (ii) Describe two traits",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q2 either (a) or (b): both independently marked alternatives are retained."
         },
         {
           "id": "eb88a1f66c501918",
           "page": 4,
           "cue": "any three",
           "context": " (b). (a) (i) The photographs below show breeds of animals found on Irish farms. Identify any three of the following breeds using the list below. Jersey Blackface mountain Landrace Simmental A B C D (ii) Describe two traits which make animal A shown in part (i) above suitable for selection as a sire. A: B: C: D: 1. 2.",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(a)(i): identify any three of four photographed breeds A–D, 3(2). One card: a single anyN row lists all four, claim limit three."
         },
         {
           "id": "16084acebeb0d8b8",
           "page": 5,
           "cue": "choose",
           "context": "and answer the questions which follow. E F (i) Identify breed E and F. (ii) Jessica could choose either breed E or F to cross with her Suffolk cross ewes for replacements in her flock. Advise Jessica with reasons which breed to choose. (iii) Outline one reason why Jessica choose to have Suffolk cross ewes rather than purebre",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(b)(ii): breed E or F with reasons. One card listing both breeds' reasons, 3+1 (reviewed in an earlier batch)."
         },
         {
           "id": "20929faf270032a3",
           "page": 5,
           "cue": "either",
           "context": "wer the questions which follow. E F (i) Identify breed E and F. (ii) Jessica could choose either breed E or F to cross with her Suffolk cross ewes for replacements in her flock. Advise Jessica with reasons which breed to choose. (iii) Outline one reason why Jessica choose to have Suffolk cross ewes rather than purebred ewes ",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "The same Q2(b)(ii) breed choice (\"either breed E or F\"); no further route."
         },
         {
           "id": "1adc59f55f6c6627",
           "page": 5,
           "cue": "choose",
           "context": "folk cross ewes for replacements in her flock. Advise Jessica with reasons which breed to choose. (iii) Outline one reason why Jessica choose to have Suffolk cross ewes rather than purebred ewes on her farm. Breed: E: F:",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"which breed to choose\" restates the Q2(b)(ii) choice already classified."
         },
         {
           "id": "84767f7c44326e67",
           "page": 5,
           "cue": "choose",
           "context": ". Advise Jessica with reasons which breed to choose. (iii) Outline one reason why Jessica choose to have Suffolk cross ewes rather than purebred ewes on her farm. Breed: E: F:",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in Q2(b)(iii) (\"Jessica choose to have Suffolk cross ewes\"); no response choice."
         },
         {
           "id": "6affab5ae0701f14",
           "page": 7,
           "cue": "either",
           "context": "ng Certificate Examination 2022 7 Agricultural Science – Ordinary Level Question 4 Answer either (a) or (b). (a) “Under the European Union biodiversity strategy, at least 25% of the European Union’s agricultural land must be organically farmed by 2030”. (Adapted from Irish Farmers Journal, 2020) (i) Explain the underlined wo",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "bcb6c41c4243d787",
           "page": 10,
           "cue": "either",
           "context": "g Certificate Examination 2022 10 Agricultural Science – Ordinary Level Question 7 Answer either (a) or (b). (a) A student plants some seeds to investigate germination. During the investigation they also discover that a plant root structure is an important feature for the absorption of nutrients. (i) Identify one feature of ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q7 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "e5148990f01416b6",
           "page": 14,
           "cue": "either",
           "context": " Certificate Examination 2022 14 Agricultural Science – Ordinary Level Question 11 Answer either (a) or (b). (a) Seán noticed a number of his calves had a husky cough and after examination by his local vet they were diagnosed with hoose. (i) State the organism which causes this disease. (ii) State one way this disease can be",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q11 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "061023251f2a5302",
           "page": 16,
           "cue": "any three",
           "context": "process that takes thousands of years and is influenced by many factors. (a) Describe how any three of the following factors are involved in soil formation. Factors Parent material Topography Time Climate Organisms (b) Compare the named soil types under the headings which follow by placing the word higher in the correct box. Th",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q12(a): describe any three of five printed soil-forming factors, 2+1+1. One card: a single anyN row lists all five, claim limit three."
         },
         {
           "id": "ff0abf761cb97823",
           "page": 19,
           "cue": "any three",
           "context": "cate Examination 2022 19 Agricultural Science – Ordinary Level Section B 150 marks Answer any three questions. Each question carries 50 marks. Question 13 Answer (a) with either (b) or (c). Two agricultural science students, Padraig and Eileen collected one soil sample each from their own farms to determine the soil type. They ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: three of six independent 50-mark questions, all retained."
         },
         {
           "id": "ba31c532a1141c6c",
           "page": 19,
           "cue": "either",
           "context": "s Answer any three questions. Each question carries 50 marks. Question 13 Answer (a) with either (b) or (c). Two agricultural science students, Padraig and Eileen collected one soil sample each from their own farms to determine the soil type. They each carried out an investigation to determine the texture of this soil sample",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: (a) with either (b) or (c). Every part, including both (b) and (c), is retained."
         },
         {
           "id": "0d2805546cf3a368",
           "page": 29,
           "cue": "either",
           "context": "ination 2022 29 Agricultural Science – Ordinary Level Question 16 Answer (a) and (b) with either (c) or (d). (a) The graph shows the growth of grass in kg/ha for the months February to November 2021. (Adapted from gouldings, 2021) (i) Identify the month most suitable to make first cut silage and give a reason for your answer",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q16: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "cb5e470cd8abdabb",
           "page": 36,
           "cue": "any two",
           "context": "enetically modified. State two advantages associated with GM crops. (iii) Briefly explain any two concerns that farmers may have about GM crops. C 1. 2. 1. 2.",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q18(c)(iii): any two concerns from the scheme's pool; a marking menu, not a printed item choice."
         }
       ]
     },
@@ -3950,7 +3967,7 @@
         "sha256": "1402fbbe1ac3dfe44c0b67b729a276755ea7fea7950e23ef71ac0e005cd2276c",
         "pages": 30
       },
-      "authoredEnglishCardsForSitting": 97,
+      "authoredEnglishCardsForSitting": 103,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [
