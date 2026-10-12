@@ -1,7 +1,7 @@
 {
   "subjectId": "art",
   "corpus": "All separately marked written-examination tasks, 2021–2025; a printed choice is one card",
-  "cardCount": 394,
+  "cardCount": 398,
   "cards": [
     {
       "id": "art-2021-hl-q1-task1",
@@ -20889,7 +20889,7 @@
       "year": 2025,
       "level": "higher",
       "section": "B",
-      "questionRef": "2025 HL Q12",
+      "questionRef": "2025 HL Q12 · Fauvism",
       "questionText": "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
@@ -20902,6 +20902,98 @@
       ],
       "topicId": "art-4-4",
       "conceptId": "art-2025-q12-hl-response-fauvism",
+      "taskRequirements": [
+        "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.; Refer in your answer to named artists and their artworks.; Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2025-hl-q12-expressionism",
+      "year": 2025,
+      "level": "higher",
+      "section": "B",
+      "questionRef": "2025 HL Q12 · Expressionism",
+      "questionText": "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-4",
+      "conceptId": "art-2025-q12-hl-response-expressionism",
+      "taskRequirements": [
+        "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.; Refer in your answer to named artists and their artworks.; Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2025-hl-q12-cubism",
+      "year": 2025,
+      "level": "higher",
+      "section": "B",
+      "questionRef": "2025 HL Q12 · Cubism",
+      "questionText": "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-4",
+      "conceptId": "art-2025-q12-hl-response-cubism",
+      "taskRequirements": [
+        "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.; Refer in your answer to named artists and their artworks.; Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2025-hl-q12-bauhaus",
+      "year": 2025,
+      "level": "higher",
+      "section": "B",
+      "questionRef": "2025 HL Q12 · Bauhaus",
+      "questionText": "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-4",
+      "conceptId": "art-2025-q12-hl-response-bauhaus",
+      "taskRequirements": [
+        "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.; Refer in your answer to named artists and their artworks.; Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2025-hl-q12-surrealism",
+      "year": 2025,
+      "level": "higher",
+      "section": "B",
+      "questionRef": "2025 HL Q12 · Surrealism",
+      "questionText": "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-4",
+      "conceptId": "art-2025-q12-hl-response-surrealism",
       "taskRequirements": [
         "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.; Refer in your answer to named artists and their artworks.; Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
       ],

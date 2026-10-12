@@ -13,9 +13,9 @@
   ],
   "selectionUnit": "One card per separately marked printed task. Where the student chooses among printed items, the task is one card showing every option; holistic Section B/C essays remain intact.",
   "expectedCards": {
-    "higher": 202,
+    "higher": 206,
     "ordinary": 192,
-    "total": 394
+    "total": 398
   },
   "papers": [
     {
@@ -3164,7 +3164,7 @@
       "year": 2025,
       "level": "higher",
       "paperFileid": "LC014ALP000EV",
-      "expectedCards": 26,
+      "expectedCards": 30,
       "cards": [
         {
           "number": 1,
@@ -3331,7 +3331,43 @@
         {
           "number": 12,
           "cardId": "art-2025-hl-q12-fauvism",
-          "questionRef": "2025 HL Q12",
+          "questionRef": "2025 HL Q12 · Fauvism",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 12,
+          "cardId": "art-2025-hl-q12-expressionism",
+          "questionRef": "2025 HL Q12 · Expressionism",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 12,
+          "cardId": "art-2025-hl-q12-cubism",
+          "questionRef": "2025 HL Q12 · Cubism",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 12,
+          "cardId": "art-2025-hl-q12-bauhaus",
+          "questionRef": "2025 HL Q12 · Bauhaus",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 12,
+          "cardId": "art-2025-hl-q12-surrealism",
+          "questionRef": "2025 HL Q12 · Surrealism",
           "section": "B",
           "paperPage": 11,
           "totalMarks": 50,

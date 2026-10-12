@@ -19,9 +19,9 @@ files under its own heading.  A choose-N (N >= 2) list is always one card.  The
 four-criterion Section B/C essay remains intact because the SEC applies that
 rubric holistically.
 
-The complete corpus is therefore 394 cards across ten papers:
+The complete corpus is therefore 398 cards across ten papers:
 
-  * Higher Level:   62 + 62 + 26 + 26 + 26 = 202 cards
+  * Higher Level:   62 + 62 + 26 + 26 + 30 = 206 cards
   * Ordinary Level: 57 + 57 + 26 + 26 + 26 = 192 cards
 
 Run:
@@ -81,7 +81,7 @@ EXPECTED_CARDS_BY_YEAR_LEVEL = {
     (2023, 'ordinary'): 26,
     (2024, 'higher'): 26,
     (2024, 'ordinary'): 26,
-    (2025, 'higher'): 26,
+    (2025, 'higher'): 30,
     (2025, 'ordinary'): 26,
 }
 
@@ -191,9 +191,12 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
 # the legacy Section II questions the Atlas can only file as "Section B:
 # Generic Questions" because their options span periods. Each option's heading
 # is editorial, from the dates and movements the paper prints; an option no
-# current heading covers (Neoclassicism, Romanticism) stays generic. Lists
-# whose options share one heading (2025 HL Q12, all Modernism; the Irish Q7
-# artists; the Georgian buildings) remain one card.
+# current heading covers (Neoclassicism, Romanticism) stays generic. 2025 HL
+# Q12's movements are restored the same way as the Q15 movements, so a student
+# filtering by a movement finds every printed option of it; each takes the
+# heading the Q15 restorations give that movement, else Modernism. Lists whose
+# options share one heading (the Irish Q7 artists; the Georgian buildings)
+# remain one card.
 OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
     (2021, 'higher', 14): {
         'jan-van-eyck': 'art-4-1', 'el-greco': 'art-4-1', 'ingres': 'art-4-6',
@@ -217,6 +220,10 @@ OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
     (2022, 'ordinary', 14): {
         'mary-magdalene': 'art-4-1', 'girl-with-a-pearl-earring': 'art-4-2',
         'death-of-marat': 'art-4-6', 'bar-at-the-folies-bergere': 'art-4-3', 'the-scream': 'art-4-4',
+    },
+    (2025, 'higher', 12): {
+        'fauvism': 'art-4-4', 'expressionism': 'art-4-4', 'cubism': 'art-4-4',
+        'bauhaus': 'art-4-4', 'surrealism': 'art-4-4',
     },
 }
 
