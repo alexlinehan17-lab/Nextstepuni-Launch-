@@ -42,6 +42,7 @@ describe('service worker precache stays lean', () => {
       '**/DiagramVault*.js',                        // Diagram Vault
       '**/higher-*.js', '**/ordinary-*.js',         // per-subject exam corpora
       '**/foundation-*.js',                         // Foundation-level corpora (Irish passed 3 MiB)
+      '**/factory-*.js',                            // Mark Bank card factories (Irish passed 3 MiB)
       '**/catchUpLaneData*.js',                     // Catch-Up Lane
       '**/commandWordData*.js',                     // Command Word Reflex
       '**/vendor-three*.js',                        // 3D module scenes

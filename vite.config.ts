@@ -205,6 +205,9 @@ export default defineConfig(() => {
           // Foundation decks are the same lazy subject corpora; the Irish
           // Foundation deck passed the 3 MiB precache ceiling with the 2010 paper.
           '**/higher-*.js', '**/ordinary-*.js', '**/foundation-*.js',
+          // Mark Bank card factories hold the same lazy corpora (reached only through
+          // the per-level decks above); the Irish factory passed 3 MiB with 2025 OL Paper 1.
+          '**/factory-*.js',
           '**/catchUpLaneData*.js', '**/commandWordData*.js',
           '**/vendor-three*.js',
           // PDF export libraries — only pulled in when a student or GC actually

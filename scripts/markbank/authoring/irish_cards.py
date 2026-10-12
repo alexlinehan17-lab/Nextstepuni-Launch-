@@ -41,6 +41,7 @@ from irish_reading import apply_reading_review
 from irish_literature_2024 import apply_literature_review
 from irish_higher_2025_p1 import apply_legacy_review as apply_higher_2025_p1_review
 from irish_higher_2025_p2 import apply_legacy_review as apply_higher_2025_p2_review
+from irish_ordinary_2025_p1 import apply_legacy_review as apply_ordinary_2025_p1_review
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -1301,6 +1302,7 @@ def main() -> int:
     # Paper-reviewed 2025 components keep their legacy IDs here; additions ship beside this file.
     cards, _ = apply_higher_2025_p1_review(cards)
     cards, _ = apply_higher_2025_p2_review(cards)
+    cards, _ = apply_ordinary_2025_p1_review(cards)
     manifest = serialise(cards)
     ledger = json.dumps(census(cards), ensure_ascii=False, indent=2) + '\n'
     schemes = scheme_text_exports()

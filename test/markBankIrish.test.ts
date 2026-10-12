@@ -11,6 +11,7 @@ import { CARDS as ORDINARY_DECK } from '../components/MarkBank/cards/irish/ordin
 import authoredJson from '../components/MarkBank/cards/irish/authored.json';
 import reviewedHigher2025P1 from '../scripts/markbank/authored/irish-higher-2025-p1-component-review.json';
 import reviewedHigher2025P2 from '../components/MarkBank/cards/irish/higher-2025-p2-authored.json';
+import reviewedOrdinary2025P1 from '../components/MarkBank/cards/irish/ordinary-2025-p1-authored.json';
 import {
   irishMarks,
   irishScoreId,
@@ -82,13 +83,16 @@ const census = JSON.parse(readFileSync(resolve(
 const manifest = authoredJson as unknown as IrishManifest;
 // These pins cover the legacy census output. Paper-reviewed components ship
 // beside it and carry their own regression files (2026 Higher and Ordinary Papers 1 and 2).
-const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards].map(card => card.id));
+const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards, ...reviewedOrdinary2025P1.cards].map(card => card.id));
 const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 // Reviewed legacy components keep their cards here, corrected in place (IDs unchanged).
-// 2025 HL Paper 1 also attached each retained card's printed page.
-const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds]);
+// 2025 HL and OL Paper 1 also attached each retained card's printed page.
+const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds, ...reviewedOrdinary2025P1.review.legacyCardIds]);
 // Retained listening segments and whole reading questions now mark each printed part separately.
-const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds, ...reviewedHigher2025P2.review.readingWholeCardIds]);
+const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds, ...reviewedHigher2025P2.review.readingWholeCardIds,
+  ...reviewedOrdinary2025P1.review.listeningSegmentCardIds]);
+// Reviewed Ordinary compositions use the full 0–40 scale: the printed short-attempt columns include odd values.
+const FULL_SCALE_COMPOSITION = new Set<string>(reviewedOrdinary2025P1.review.compositionRouteCardIds);
 const ORDINARY = ORDINARY_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 const ALL: SecRubricCard[] = [...HIGHER, ...ORDINARY];
 const byId = new Map(ALL.map(card => [card.id, card]));
@@ -387,10 +391,9 @@ describe('Irish marking grammar', () => {
       expect(criteria.map(criterion => [criterion.id, criterion.maxMarks])).toEqual([
         ['tasc', 2], ['abhar', 8], ['gaeilge', 40],
       ]);
-      expect(criteria[2].permittedMarks).toEqual([
-        0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20,
-        22, 24, 26, 28, 30, 32, 34, 36, 38, 40,
-      ]);
+      expect(criteria[2].permittedMarks).toEqual(FULL_SCALE_COMPOSITION.has(card.id)
+        ? Array.from({ length: 41 }, (_, mark) => mark)
+        : [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40]);
     }
   });
 

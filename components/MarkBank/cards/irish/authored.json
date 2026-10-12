@@ -28176,8 +28176,7 @@
         5
       ],
       "schemePages": [
-        9,
-        10
+        9
       ],
       "sourceMaterial": {
         "kind": "source-text",
@@ -32670,32 +32669,68 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1a",
+          "label": "Ceist 1(a)",
           "kind": "award",
-          "maxMarks": 12,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "FÓGRA A hAON (12 mharc) 1. (a) Cén stáisiún raidió a chuir amach an fógra seo? 3 mharc (RTÉ Raidió) na Gaeltachta = 3 mharc RnaG = 3 mharc RTÉ = 1 mharc (b) Cén t-ainm a bheidh ar an gclár nua? 3 mharc Pé Scéal É = 3 mharc 2. (a) Cén t-am a chraolfar an clár nua gach Aoine? 3 mharc A trí a chlog = 3 mharc 3 a chlog = 3 mharc (b) Cén sórt ceoil a bheidh sa stiúideo? 3 mharc (Ceol) beo = 3 mharc"
+            "1. (a) Cén stáisiún raidió a chuir amach an fógra seo? 3 mharc (RTÉ Raidió) na Gaeltachta = 3 mharc RnaG = 3 mharc RTÉ = 1 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "q1b",
+          "label": "Ceist 1(b)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén t-ainm a bheidh ar an gclár nua? 3 mharc Pé Scéal É = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "q2a",
+          "label": "Ceist 2(a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Cén t-am a chraolfar an clár nua gach Aoine? 3 mharc A trí a chlog = 3 mharc 3 a chlog = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "q2b",
+          "label": "Ceist 2(b)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén sórt ceoil a bheidh sa stiúideo? 3 mharc (Ceol) beo = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2025 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published 3-mark tariff. Scheme PDF 3 and 9: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid A · Fógra a hAon",
@@ -32706,7 +32741,25 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001GLP100IV"
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "L-A-F1",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid A · Fógra a hAon",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Cluastuiscint Cuid A · Fógra a hAon",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-listening-a-f2",
@@ -32729,33 +32782,67 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1a",
+          "label": "Ceist 1(a)",
           "kind": "award",
-          "maxMarks": 12,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "FÓGRA A DÓ (12 mharc) 1. (a) Cén grúpa múinteoirí a chuir amach an fógra seo? 3 mharc Eolaíocht(a) = 3 mharc (b) Cé mhéad scoláire atá á lorg chun páirt a ghlacadh i dtionscadal suimiúil? 3 mharc Fiche = 3 mharc 20 = 3 mharc 2. (a) Cad a scríobhfaidh na scoláirí ar thorthaí a gcuid oibre? 3 mharc Cuntas = 3 mharc Réitigh = 3 mharc (b) Cén lá a bheidh an cruinniú ar siúl?",
-            "3 mharc Déardaoin seo chugainn = 3 mharc Déardaoin = 3 mharc"
+            "1. (a) Cén grúpa múinteoirí a chuir amach an fógra seo? 3 mharc Eolaíocht(a) = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "q1b",
+          "label": "Ceist 1(b)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cé mhéad scoláire atá á lorg chun páirt a ghlacadh i dtionscadal suimiúil? 3 mharc Fiche = 3 mharc 20 = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "q2a",
+          "label": "Ceist 2(a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Cad a scríobhfaidh na scoláirí ar thorthaí a gcuid oibre? 3 mharc Cuntas = 3 mharc Réitigh = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "q2b",
+          "label": "Ceist 2(b)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén lá a bheidh an cruinniú ar siúl? 3 mharc Déardaoin seo chugainn = 3 mharc Déardaoin = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2025 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published 3-mark tariff. Scheme PDF 3 and 9: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid A · Fógra a Dó",
@@ -32766,7 +32853,25 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001GLP100IV"
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "L-A-F2",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        3
+      ],
+      "schemePages": [
+        8
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid A · Fógra a Dó",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Cluastuiscint Cuid A · Fógra a Dó",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-listening-c-p1",
@@ -32789,26 +32894,37 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1",
+          "label": "Ceist 1",
           "kind": "award",
-          "maxMarks": 6,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "PÍOSA A hAON (6 mharc) 1. Cé a sheol ‘an Scéim Éarlaise agus Aisíoca’ i mí Feabhra na bliana seo caite? 3 mharc (An) rialtas = 3 mharc 2. Scríobh síos áit amháin ina bhfuil na meaisíní speisialta ar fáil chun buidéil phlaisteacha fholmha agus cannaí alúmanaim folmha a chur isteach iontu. 3 mharc I siopaí (áirithe) = 3 mharc In ollmhargaí (áirithe) = 3 mharc"
+            "1. Cé a sheol ‘an Scéim Éarlaise agus Aisíoca’ i mí Feabhra na bliana seo caite? 3 mharc (An) rialtas = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Scríobh síos áit amháin ina bhfuil na meaisíní speisialta ar fáil chun buidéil phlaisteacha fholmha agus cannaí alúmanaim folmha a chur isteach iontu. 3 mharc I siopaí (áirithe) = 3 mharc In ollmhargaí (áirithe) = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2025 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published 3-mark tariff. Scheme PDF 3 and 9: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid C · Píosa a hAon",
@@ -32819,7 +32935,25 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001GLP100IV"
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "L-C-P1",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid C · Píosa a hAon",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Cluastuiscint Cuid C · Píosa a hAon",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-listening-c-p2",
@@ -32842,28 +32976,38 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1",
+          "label": "Ceist 1",
           "kind": "award",
-          "maxMarks": 6,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
-            2,
-            3,
-            4,
-            5,
-            6
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "PÍOSA A DÓ (6 mharc) 1. Cad atá sa chartlann nua atá curtha ar fáil ag Gael Linn? 3 mharc Grianghraif = 3 mharc Léargas ar an obair atá déanta ag an eagraíocht/acu = 1 mharc 2. Cén bhliain a bunaíodh Gael Linn? 3 mharc Míle naoi gcéad caoga a trí = 3 mharc 1953 = 3 mharc Bainfear ó 0 go 6 ar chaighdeán na Gaeilge. Freagair do rogha dhá cheann de A, B, C, D anseo.",
-            "I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. An tÁbhar (8 marc) Tá 8 marc ag dul don ábhar.",
-            "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal."
+            "1. Cad atá sa chartlann nua atá curtha ar fáil ag Gael Linn? 3 mharc Grianghraif = 3 mharc Léargas ar an obair atá déanta ag an eagraíocht/acu = 1 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Cén bhliain a bunaíodh Gael Linn? 3 mharc Míle naoi gcéad caoga a trí = 3 mharc 1953 = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2025 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published 3-mark tariff. Scheme PDF 3 and 9: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid C · Píosa a Dó",
@@ -32874,7 +33018,25 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001GLP100IV"
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "L-C-P2",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid C · Píosa a Dó",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Cluastuiscint Cuid C · Píosa a Dó",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-listening-b-c1",
@@ -32897,33 +33059,69 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "m1-q1",
+          "label": "An Chéad Mhír · Ceist 1",
           "kind": "award",
-          "maxMarks": 12,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "COMHRÁ A hAON (12 mharc) An Chéad Mhír 1. Cén áit sa bhaile mór a bhfuil Seán ag obair go lánaimseartha mar theagascóir? 3 mharc San ionad aclaíochta = 3 mharc San ionad = 1 mharc 2. Cén t-am a thosaíonn Seán ag obair dhá mhaidin sa tseachtain? 3 mharc Leathuair tar éis a sé = 3 mharc 6.30 = 3 mharc An Dara Mír 1. Cén cluiche a imríonn Aoife leis an gclub áitiúil? 3 mharc Camógaíocht = 3 mharc 2.",
-            "Cén táille speisialta atá ar fáil do mhic léinn do bhallraíocht trí mhí? 3 mharc €90 = 3 mharc Nócha euro = 3 mharc Nócha = 2 mharc"
+            "1. Cén áit sa bhaile mór a bhfuil Seán ag obair go lánaimseartha mar theagascóir? 3 mharc San ionad aclaíochta = 3 mharc San ionad = 1 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "m1-q2",
+          "label": "An Chéad Mhír · Ceist 2",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Cén t-am a thosaíonn Seán ag obair dhá mhaidin sa tseachtain? 3 mharc Leathuair tar éis a sé = 3 mharc 6.30 = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "m2-q1",
+          "label": "An Dara Mír · Ceist 1",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. Cén cluiche a imríonn Aoife leis an gclub áitiúil? 3 mharc Camógaíocht = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "m2-q2",
+          "label": "An Dara Mír · Ceist 2",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Cén táille speisialta atá ar fáil do mhic léinn do bhallraíocht trí mhí? 3 mharc €90 = 3 mharc Nócha euro = 3 mharc Nócha = 2 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2025 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published 3-mark tariff. Scheme PDF 3 and 9: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid B · Comhrá a hAon",
@@ -32934,7 +33132,25 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001GLP100IV"
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "L-B-C1",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid B · Comhrá a hAon",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Cluastuiscint Cuid B · Comhrá a hAon",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-listening-b-c2",
@@ -32957,10 +33173,159 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "m1-q1",
+          "label": "An Chéad Mhír · Ceist 1",
           "kind": "award",
-          "maxMarks": 12,
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. Cá fhad a chaith Liam agus a thuismitheoirí in Sydney? 3 mharc Cúig seachtaine = 3 mharc 5 seachtaine = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "m1-q2",
+          "label": "An Chéad Mhír · Ceist 2",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Cén áit a mbuaileann deirfiúr Liam le hÉireannaigh eile in Sydney? 3 mharc Sa chlub Gaelach = 3 mharc Sa chlub = 1 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "m2-q1",
+          "label": "An Dara Mír · Ceist 1",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. Cén áit in Éirinn a bhfuil Maria ina cónaí anois? 3 mharc Luimneach = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        },
+        {
+          "id": "m2-q2",
+          "label": "An Dara Mír · Ceist 2",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Cén uirlis cheoil a sheinneann Maria? 3 mharc An fheadóg mhór = 3 mharc",
+            "Nóta (scheme PDF 7): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith."
+          ]
+        }
+      ],
+      "markingGuideNote": "The listed responses and tariffs come from the 2025 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published 3-mark tariff. Scheme PDF 3 and 9: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cuid B · Comhrá a Dó",
+        "title": "Triail Chluastuisceana 2025",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC001ZLP017IV.mp3",
+        "secFileid": "LC001ZLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC001ZLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
+      },
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "L-B-C2",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        4
+      ],
+      "schemePages": [
+        9
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid B · Comhrá a Dó",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Cluastuiscint Cuid B · Comhrá a Dó",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2025-ol-p1-composition-a-i",
+      "year": 2025,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "questionRef": "2025 OL Paper 1 Ceapadóireacht A(i)",
+      "questionText": "Treoracha: Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar a scríobhtar.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nA · Giota Leanúnach/Blag (50 marc)\nScríobh giota leanúnach nó blag (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo.\n(i) Siopadóireacht.\n\nAn rogha don chárta seo: A(i).",
+      "totalMarks": 50,
+      "topicId": "irish-2-6",
+      "conceptId": "irish-composition-a",
+      "paperPage": 7,
+      "paperTraceScore": 12110,
+      "schemePage": 10,
+      "schemeTraceScore": 1010,
+      "taskRequirements": [
+        "Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.",
+        "Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.",
+        "Leathleathanach nó mar sin."
+      ],
+      "criteria": [
+        {
+          "id": "tasc",
+          "label": "An Tasc",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. "
+          ]
+        },
+        {
+          "id": "abhar",
+          "label": "An tÁbhar",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            " Tá 8 marc ag dul don ábhar. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal. "
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "An Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 40,
           "permittedMarks": [
             0,
             1,
@@ -32974,120 +33339,69 @@
             9,
             10,
             11,
-            12
-          ],
-          "guidanceKind": "exact",
-          "guidance": [
-            "COMHRÁ A DÓ (12 mharc) An Chéad Mhír 1. Cá fhad a chaith Liam agus a thuismitheoirí in Sydney? 3 mharc Cúig seachtaine = 3 mharc 5 seachtaine = 3 mharc 2. Cén áit a mbuaileann deirfiúr Liam le hÉireannaigh eile in Sydney? 3 mharc Sa chlub Gaelach = 3 mharc Sa chlub = 1 mharc An Dara Mír 1. Cén áit in Éirinn a bhfuil Maria ina cónaí anois? 3 mharc Luimneach = 3 mharc 2. Cén uirlis cheoil a sheinneann Maria?",
-            "3 mharc An fheadóg mhór = 3 mharc"
-          ]
-        }
-      ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
-      "audioMaterial": {
-        "kind": "source-audio",
-        "label": "Cuid B · Comhrá a Dó",
-        "title": "Triail Chluastuisceana 2025",
-        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC001ZLP017IV.mp3",
-        "secFileid": "LC001ZLP017IV.mp3",
-        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC001ZLP017IV.mp3",
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
-      },
-      "paperFileid": "LC001GLP100IV"
-    },
-    {
-      "id": "irish-2025-ol-p1-composition-a-i",
-      "year": 2025,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "1",
-      "questionRef": "2025 OL Paper 1 Ceapadóireacht A(i)",
-      "questionText": "Scríobh giota leanúnach nó blag (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo. (i) Siopadóireacht.",
-      "totalMarks": 50,
-      "topicId": "irish-2-6",
-      "conceptId": "irish-composition-a",
-      "paperPage": 7,
-      "paperTraceScore": 12110,
-      "schemePage": 10,
-      "schemeTraceScore": 1010,
-      "taskRequirements": [
-        "Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.",
-        "Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.",
-        "Bain úsáid as Gaeilge chruinn, shaibhir atá oiriúnach don tasc."
-      ],
-      "criteria": [
-        {
-          "id": "tasc",
-          "label": "Tasc",
-          "kind": "award",
-          "maxMarks": 2,
-          "permittedMarks": [
-            0,
-            2
-          ],
-          "guidanceKind": "exact",
-          "guidance": [
-            "2 marks when the printed task is fulfilled."
-          ]
-        },
-        {
-          "id": "abhar",
-          "label": "Ábhar",
-          "kind": "award",
-          "maxMarks": 8,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8
-          ],
-          "guidanceKind": "indicative",
-          "guidance": [
-            "Relevant content which stays connected to the selected task."
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cumas agus Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 40,
-          "permittedMarks": [
-            0,
-            2,
-            4,
-            6,
-            8,
-            10,
             12,
+            13,
             14,
+            15,
             16,
+            17,
             18,
+            19,
             20,
+            21,
             22,
+            23,
             24,
+            25,
             26,
+            27,
             28,
+            29,
             30,
+            31,
             32,
+            33,
             34,
+            35,
             36,
+            37,
             38,
+            39,
             40
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Use the published 40-mark quality grid for command of Irish and accuracy."
+            " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála. Cuid II An Cheapadóireacht 100 marc",
+            "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
+            "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
+            "Scéim Mharcála Mhodhnaithe (scheme PDF 30–31): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001GLP100IV"
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13, so the Cumas Gaeilge award can take any value from 0 to 40. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-A-i",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        7
+      ],
+      "schemePages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(i)",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Ceapadóireacht A(i)",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-composition-a-ii",
@@ -33096,7 +33410,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2025 OL Paper 1 Ceapadóireacht A(ii)",
-      "questionText": "Scríobh giota leanúnach nó blag (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo. (ii) Áit shuimiúil.",
+      "questionText": "Treoracha: Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar a scríobhtar.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nA · Giota Leanúnach/Blag (50 marc)\nScríobh giota leanúnach nó blag (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo.\n(ii) Áit shuimiúil.\n\nAn rogha don chárta seo: A(ii).",
       "totalMarks": 50,
       "topicId": "irish-2-6",
       "conceptId": "irish-composition-a",
@@ -33107,26 +33421,26 @@
       "taskRequirements": [
         "Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.",
         "Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.",
-        "Bain úsáid as Gaeilge chruinn, shaibhir atá oiriúnach don tasc."
+        "Leathleathanach nó mar sin."
       ],
       "criteria": [
         {
           "id": "tasc",
-          "label": "Tasc",
+          "label": "An Tasc",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
             0,
             2
           ],
-          "guidanceKind": "exact",
+          "guidanceKind": "quality",
           "guidance": [
-            "2 marks when the printed task is fulfilled."
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. "
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "An tÁbhar",
           "kind": "award",
           "maxMarks": 8,
           "permittedMarks": [
@@ -33142,45 +33456,90 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Relevant content which stays connected to the selected task."
+            " Tá 8 marc ag dul don ábhar. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal. "
           ]
         },
         {
           "id": "gaeilge",
-          "label": "Cumas agus Cruinneas Gaeilge",
+          "label": "An Cumas Gaeilge",
           "kind": "award",
           "maxMarks": 40,
           "permittedMarks": [
             0,
+            1,
             2,
+            3,
             4,
+            5,
             6,
+            7,
             8,
+            9,
             10,
+            11,
             12,
+            13,
             14,
+            15,
             16,
+            17,
             18,
+            19,
             20,
+            21,
             22,
+            23,
             24,
+            25,
             26,
+            27,
             28,
+            29,
             30,
+            31,
             32,
+            33,
             34,
+            35,
             36,
+            37,
             38,
+            39,
             40
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Use the published 40-mark quality grid for command of Irish and accuracy."
+            " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála. Cuid II An Cheapadóireacht 100 marc",
+            "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
+            "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
+            "Scéim Mharcála Mhodhnaithe (scheme PDF 30–31): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001GLP100IV"
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13, so the Cumas Gaeilge award can take any value from 0 to 40. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-A-ii",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        7
+      ],
+      "schemePages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(ii)",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Ceapadóireacht A(ii)",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-composition-a-iii",
@@ -33189,7 +33548,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2025 OL Paper 1 Ceapadóireacht A(iii)",
-      "questionText": "Scríobh giota leanúnach nó blag (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo. (iii) Pearsa spóirt a thaitníonn go mór liom.",
+      "questionText": "Treoracha: Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar a scríobhtar.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nA · Giota Leanúnach/Blag (50 marc)\nScríobh giota leanúnach nó blag (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo.\n(iii) Pearsa spóirt a thaitníonn go mór liom.\n\nAn rogha don chárta seo: A(iii).",
       "totalMarks": 50,
       "topicId": "irish-2-6",
       "conceptId": "irish-composition-a",
@@ -33200,26 +33559,26 @@
       "taskRequirements": [
         "Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.",
         "Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.",
-        "Bain úsáid as Gaeilge chruinn, shaibhir atá oiriúnach don tasc."
+        "Leathleathanach nó mar sin."
       ],
       "criteria": [
         {
           "id": "tasc",
-          "label": "Tasc",
+          "label": "An Tasc",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
             0,
             2
           ],
-          "guidanceKind": "exact",
+          "guidanceKind": "quality",
           "guidance": [
-            "2 marks when the printed task is fulfilled."
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. "
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "An tÁbhar",
           "kind": "award",
           "maxMarks": 8,
           "permittedMarks": [
@@ -33235,45 +33594,90 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Relevant content which stays connected to the selected task."
+            " Tá 8 marc ag dul don ábhar. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal. "
           ]
         },
         {
           "id": "gaeilge",
-          "label": "Cumas agus Cruinneas Gaeilge",
+          "label": "An Cumas Gaeilge",
           "kind": "award",
           "maxMarks": 40,
           "permittedMarks": [
             0,
+            1,
             2,
+            3,
             4,
+            5,
             6,
+            7,
             8,
+            9,
             10,
+            11,
             12,
+            13,
             14,
+            15,
             16,
+            17,
             18,
+            19,
             20,
+            21,
             22,
+            23,
             24,
+            25,
             26,
+            27,
             28,
+            29,
             30,
+            31,
             32,
+            33,
             34,
+            35,
             36,
+            37,
             38,
+            39,
             40
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Use the published 40-mark quality grid for command of Irish and accuracy."
+            " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála. Cuid II An Cheapadóireacht 100 marc",
+            "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
+            "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
+            "Scéim Mharcála Mhodhnaithe (scheme PDF 30–31): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001GLP100IV"
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13, so the Cumas Gaeilge award can take any value from 0 to 40. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-A-iii",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        7
+      ],
+      "schemePages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(iii)",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Ceapadóireacht A(iii)",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-composition-b-i",
@@ -33282,7 +33686,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2025 OL Paper 1 Ceapadóireacht B(i)",
-      "questionText": "Ceap scéal (leathleathanach nó mar sin) a mbeadh ceann amháin de na sleachta seo a leanas oiriúnach mar thús leis. (i) Bhí sceitimíní áthais orm. D’éirigh liom dhá thicéad a fháil don cheolchoirm …",
+      "questionText": "Treoracha: Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar a scríobhtar.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nB · Scéal (50 marc)\nCeap scéal (leathleathanach nó mar sin) a mbeadh ceann amháin de na sleachta seo a leanas oiriúnach mar thús leis.\n(i) Bhí sceitimíní áthais orm. D’éirigh liom dhá thicéad a fháil don cheolchoirm …\n\nAn rogha don chárta seo: B(i).",
       "totalMarks": 50,
       "topicId": "irish-2-3",
       "conceptId": "irish-composition-b",
@@ -33293,26 +33697,26 @@
       "taskRequirements": [
         "Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.",
         "Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.",
-        "Bain úsáid as Gaeilge chruinn, shaibhir atá oiriúnach don tasc."
+        "Leathleathanach nó mar sin."
       ],
       "criteria": [
         {
           "id": "tasc",
-          "label": "Tasc",
+          "label": "An Tasc",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
             0,
             2
           ],
-          "guidanceKind": "exact",
+          "guidanceKind": "quality",
           "guidance": [
-            "2 marks when the printed task is fulfilled."
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. "
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "An tÁbhar",
           "kind": "award",
           "maxMarks": 8,
           "permittedMarks": [
@@ -33328,45 +33732,90 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Relevant content which stays connected to the selected task."
+            " Tá 8 marc ag dul don ábhar. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal. "
           ]
         },
         {
           "id": "gaeilge",
-          "label": "Cumas agus Cruinneas Gaeilge",
+          "label": "An Cumas Gaeilge",
           "kind": "award",
           "maxMarks": 40,
           "permittedMarks": [
             0,
+            1,
             2,
+            3,
             4,
+            5,
             6,
+            7,
             8,
+            9,
             10,
+            11,
             12,
+            13,
             14,
+            15,
             16,
+            17,
             18,
+            19,
             20,
+            21,
             22,
+            23,
             24,
+            25,
             26,
+            27,
             28,
+            29,
             30,
+            31,
             32,
+            33,
             34,
+            35,
             36,
+            37,
             38,
+            39,
             40
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Use the published 40-mark quality grid for command of Irish and accuracy."
+            " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála. Cuid II An Cheapadóireacht 100 marc",
+            "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
+            "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
+            "Scéim Mharcála Mhodhnaithe (scheme PDF 30–31): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001GLP100IV"
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13, so the Cumas Gaeilge award can take any value from 0 to 40. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-B-i",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        7
+      ],
+      "schemePages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht B(i)",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Ceapadóireacht B(i)",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-composition-b-ii",
@@ -33375,7 +33824,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2025 OL Paper 1 Ceapadóireacht B(ii)",
-      "questionText": "Ceap scéal (leathleathanach nó mar sin) a mbeadh ceann amháin de na sleachta seo a leanas oiriúnach mar thús leis. (ii) Is cuimhin liom go maith an lá sin. Tháinig athrú mór ar mo shaol an lá sin …",
+      "questionText": "Treoracha: Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar a scríobhtar.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nB · Scéal (50 marc)\nCeap scéal (leathleathanach nó mar sin) a mbeadh ceann amháin de na sleachta seo a leanas oiriúnach mar thús leis.\n(ii) Is cuimhin liom go maith an lá sin. Tháinig athrú mór ar mo shaol an lá sin …\n\nAn rogha don chárta seo: B(ii).",
       "totalMarks": 50,
       "topicId": "irish-2-3",
       "conceptId": "irish-composition-b",
@@ -33386,26 +33835,26 @@
       "taskRequirements": [
         "Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.",
         "Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.",
-        "Bain úsáid as Gaeilge chruinn, shaibhir atá oiriúnach don tasc."
+        "Leathleathanach nó mar sin."
       ],
       "criteria": [
         {
           "id": "tasc",
-          "label": "Tasc",
+          "label": "An Tasc",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
             0,
             2
           ],
-          "guidanceKind": "exact",
+          "guidanceKind": "quality",
           "guidance": [
-            "2 marks when the printed task is fulfilled."
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. "
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "An tÁbhar",
           "kind": "award",
           "maxMarks": 8,
           "permittedMarks": [
@@ -33421,45 +33870,90 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Relevant content which stays connected to the selected task."
+            " Tá 8 marc ag dul don ábhar. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal. "
           ]
         },
         {
           "id": "gaeilge",
-          "label": "Cumas agus Cruinneas Gaeilge",
+          "label": "An Cumas Gaeilge",
           "kind": "award",
           "maxMarks": 40,
           "permittedMarks": [
             0,
+            1,
             2,
+            3,
             4,
+            5,
             6,
+            7,
             8,
+            9,
             10,
+            11,
             12,
+            13,
             14,
+            15,
             16,
+            17,
             18,
+            19,
             20,
+            21,
             22,
+            23,
             24,
+            25,
             26,
+            27,
             28,
+            29,
             30,
+            31,
             32,
+            33,
             34,
+            35,
             36,
+            37,
             38,
+            39,
             40
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Use the published 40-mark quality grid for command of Irish and accuracy."
+            " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála. Cuid II An Cheapadóireacht 100 marc",
+            "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
+            "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
+            "Scéim Mharcála Mhodhnaithe (scheme PDF 30–31): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001GLP100IV"
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13, so the Cumas Gaeilge award can take any value from 0 to 40. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-B-ii",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        7
+      ],
+      "schemePages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht B(ii)",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Ceapadóireacht B(ii)",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-composition-c-i",
@@ -33468,7 +33962,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2025 OL Paper 1 Ceapadóireacht C(i)",
-      "questionText": "(i) D’eagraigh Comhairle na nDaltaí a lán imeachtaí i do scoil i rith na bliana. Bhí tú féin páirteach i gcuid de na himeachtaí sin. Scríobh an litir/an ríomhphost (leathleathanach nó mar sin) a chuirfeá chuig cara leat ag insint dó/di faoi na himeachtaí a d’eagraigh Comhairle na nDaltaí agus faoin bpáirt a ghlac tú féin i gcuid de na himeachtaí sin.",
+      "questionText": "Treoracha: Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar a scríobhtar.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nC · Litir/Ríomhphost (50 marc)\n(i) D’eagraigh Comhairle na nDaltaí a lán imeachtaí i do scoil i rith na bliana. Bhí tú féin páirteach i gcuid de na himeachtaí sin.\nScríobh an litir/an ríomhphost (leathleathanach nó mar sin) a chuirfeá chuig cara leat ag insint dó/di faoi na himeachtaí a d’eagraigh Comhairle na nDaltaí agus faoin bpáirt a ghlac tú féin i gcuid de na himeachtaí sin.\n\nAn rogha don chárta seo: C(i).",
       "totalMarks": 50,
       "topicId": "irish-2-8",
       "conceptId": "irish-composition-c",
@@ -33479,26 +33973,26 @@
       "taskRequirements": [
         "Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.",
         "Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.",
-        "Bain úsáid as Gaeilge chruinn, shaibhir atá oiriúnach don tasc."
+        "Leathleathanach nó mar sin."
       ],
       "criteria": [
         {
           "id": "tasc",
-          "label": "Tasc",
+          "label": "An Tasc",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
             0,
             2
           ],
-          "guidanceKind": "exact",
+          "guidanceKind": "quality",
           "guidance": [
-            "2 marks when the printed task is fulfilled."
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. "
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "An tÁbhar",
           "kind": "award",
           "maxMarks": 8,
           "permittedMarks": [
@@ -33514,45 +34008,90 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Relevant content which stays connected to the selected task."
+            " Tá 8 marc ag dul don ábhar. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal. "
           ]
         },
         {
           "id": "gaeilge",
-          "label": "Cumas agus Cruinneas Gaeilge",
+          "label": "An Cumas Gaeilge",
           "kind": "award",
           "maxMarks": 40,
           "permittedMarks": [
             0,
+            1,
             2,
+            3,
             4,
+            5,
             6,
+            7,
             8,
+            9,
             10,
+            11,
             12,
+            13,
             14,
+            15,
             16,
+            17,
             18,
+            19,
             20,
+            21,
             22,
+            23,
             24,
+            25,
             26,
+            27,
             28,
+            29,
             30,
+            31,
             32,
+            33,
             34,
+            35,
             36,
+            37,
             38,
+            39,
             40
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Use the published 40-mark quality grid for command of Irish and accuracy."
+            " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála. Cuid II An Cheapadóireacht 100 marc",
+            "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
+            "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
+            "Scéim Mharcála Mhodhnaithe (scheme PDF 30–31): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001GLP100IV"
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13, so the Cumas Gaeilge award can take any value from 0 to 40. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-C-i",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        7
+      ],
+      "schemePages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht C(i)",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Ceapadóireacht C(i)",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-composition-c-ii",
@@ -33561,7 +34100,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2025 OL Paper 1 Ceapadóireacht C(ii)",
-      "questionText": "(ii) Thit sneachta trom i do cheantar le déanaí. Ní raibh tú féin ná do mhuintir ábalta bogadh amach as bhur gceantar féin ar feadh cúpla lá. Scríobh an litir/an ríomhphost (leathleathanach nó mar sin) a chuirfeá chuig cara leat ag insint dó/di faoin titim shneachta sin agus faoi mar a chaith tú féin agus do mhuintir na laethanta nuair a bhí sneachta trom ann.",
+      "questionText": "Treoracha: Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar a scríobhtar.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nC · Litir/Ríomhphost (50 marc)\n(ii) Thit sneachta trom i do cheantar le déanaí. Ní raibh tú féin ná do mhuintir ábalta bogadh amach as bhur gceantar féin ar feadh cúpla lá.\nScríobh an litir/an ríomhphost (leathleathanach nó mar sin) a chuirfeá chuig cara leat ag insint dó/di faoin titim shneachta sin agus faoi mar a chaith tú féin agus do mhuintir na laethanta nuair a bhí sneachta trom ann.\n\nAn rogha don chárta seo: C(ii).",
       "totalMarks": 50,
       "topicId": "irish-2-8",
       "conceptId": "irish-composition-c",
@@ -33572,26 +34111,26 @@
       "taskRequirements": [
         "Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.",
         "Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.",
-        "Bain úsáid as Gaeilge chruinn, shaibhir atá oiriúnach don tasc."
+        "Leathleathanach nó mar sin."
       ],
       "criteria": [
         {
           "id": "tasc",
-          "label": "Tasc",
+          "label": "An Tasc",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
             0,
             2
           ],
-          "guidanceKind": "exact",
+          "guidanceKind": "quality",
           "guidance": [
-            "2 marks when the printed task is fulfilled."
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. "
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "An tÁbhar",
           "kind": "award",
           "maxMarks": 8,
           "permittedMarks": [
@@ -33607,45 +34146,90 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Relevant content which stays connected to the selected task."
+            " Tá 8 marc ag dul don ábhar. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal. "
           ]
         },
         {
           "id": "gaeilge",
-          "label": "Cumas agus Cruinneas Gaeilge",
+          "label": "An Cumas Gaeilge",
           "kind": "award",
           "maxMarks": 40,
           "permittedMarks": [
             0,
+            1,
             2,
+            3,
             4,
+            5,
             6,
+            7,
             8,
+            9,
             10,
+            11,
             12,
+            13,
             14,
+            15,
             16,
+            17,
             18,
+            19,
             20,
+            21,
             22,
+            23,
             24,
+            25,
             26,
+            27,
             28,
+            29,
             30,
+            31,
             32,
+            33,
             34,
+            35,
             36,
+            37,
             38,
+            39,
             40
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Use the published 40-mark quality grid for command of Irish and accuracy."
+            " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála. Cuid II An Cheapadóireacht 100 marc",
+            "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
+            "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
+            "Scéim Mharcála Mhodhnaithe (scheme PDF 30–31): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001GLP100IV"
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13, so the Cumas Gaeilge award can take any value from 0 to 40. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-C-ii",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        7
+      ],
+      "schemePages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht C(ii)",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Ceapadóireacht C(ii)",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-composition-d-i",
@@ -33654,7 +34238,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2025 OL Paper 1 Ceapadóireacht D(i)",
-      "questionText": "(i) Léigh tú féin agus do chara blag ar líne. Cheap tú go raibh an blag suimiúil ach níor aontaigh do chara leat. Scríobh an comhrá (leathleathanach nó mar sin) a bheadh agat le do chara faoin ábhar sin.",
+      "questionText": "Treoracha: Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar a scríobhtar.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nD · Comhrá (50 marc)\n(i) Léigh tú féin agus do chara blag ar líne. Cheap tú go raibh an blag suimiúil ach níor aontaigh do chara leat. Scríobh an comhrá (leathleathanach nó mar sin) a bheadh agat le do chara faoin ábhar sin.\n\nAn rogha don chárta seo: D(i).",
       "totalMarks": 50,
       "topicId": "irish-2-9",
       "conceptId": "irish-composition-d",
@@ -33665,26 +34249,26 @@
       "taskRequirements": [
         "Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.",
         "Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.",
-        "Bain úsáid as Gaeilge chruinn, shaibhir atá oiriúnach don tasc."
+        "Leathleathanach nó mar sin."
       ],
       "criteria": [
         {
           "id": "tasc",
-          "label": "Tasc",
+          "label": "An Tasc",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
             0,
             2
           ],
-          "guidanceKind": "exact",
+          "guidanceKind": "quality",
           "guidance": [
-            "2 marks when the printed task is fulfilled."
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. "
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "An tÁbhar",
           "kind": "award",
           "maxMarks": 8,
           "permittedMarks": [
@@ -33700,45 +34284,90 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Relevant content which stays connected to the selected task."
+            " Tá 8 marc ag dul don ábhar. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal. "
           ]
         },
         {
           "id": "gaeilge",
-          "label": "Cumas agus Cruinneas Gaeilge",
+          "label": "An Cumas Gaeilge",
           "kind": "award",
           "maxMarks": 40,
           "permittedMarks": [
             0,
+            1,
             2,
+            3,
             4,
+            5,
             6,
+            7,
             8,
+            9,
             10,
+            11,
             12,
+            13,
             14,
+            15,
             16,
+            17,
             18,
+            19,
             20,
+            21,
             22,
+            23,
             24,
+            25,
             26,
+            27,
             28,
+            29,
             30,
+            31,
             32,
+            33,
             34,
+            35,
             36,
+            37,
             38,
+            39,
             40
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Use the published 40-mark quality grid for command of Irish and accuracy."
+            " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála. Cuid II An Cheapadóireacht 100 marc",
+            "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
+            "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
+            "Scéim Mharcála Mhodhnaithe (scheme PDF 30–31): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001GLP100IV"
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13, so the Cumas Gaeilge award can take any value from 0 to 40. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-D-i",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        7
+      ],
+      "schemePages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht D(i)",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Ceapadóireacht D(i)",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p1-composition-d-ii",
@@ -33747,7 +34376,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2025 OL Paper 1 Ceapadóireacht D(ii)",
-      "questionText": "(ii) Tá post páirtaimseartha agat agus tú i mbliain na hArdteistiméireachta. Níl do thuismitheoirí sásta faoin méid ama a chaitheann tú ag obair i do phost. Scríobh an comhrá (leathleathanach nó mar sin) a bheadh agat le do thuismitheoirí faoin ábhar sin.",
+      "questionText": "Treoracha: Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar a scríobhtar.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nD · Comhrá (50 marc)\n(ii) Tá post páirtaimseartha agat agus tú i mbliain na hArdteistiméireachta. Níl do thuismitheoirí sásta faoin méid ama a chaitheann tú ag obair i do phost. Scríobh an comhrá (leathleathanach nó mar sin) a bheadh agat le do thuismitheoirí faoin ábhar sin.\n\nAn rogha don chárta seo: D(ii).",
       "totalMarks": 50,
       "topicId": "irish-2-9",
       "conceptId": "irish-composition-d",
@@ -33758,26 +34387,26 @@
       "taskRequirements": [
         "Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.",
         "Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.",
-        "Bain úsáid as Gaeilge chruinn, shaibhir atá oiriúnach don tasc."
+        "Leathleathanach nó mar sin."
       ],
       "criteria": [
         {
           "id": "tasc",
-          "label": "Tasc",
+          "label": "An Tasc",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
             0,
             2
           ],
-          "guidanceKind": "exact",
+          "guidanceKind": "quality",
           "guidance": [
-            "2 marks when the printed task is fulfilled."
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. "
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "An tÁbhar",
           "kind": "award",
           "maxMarks": 8,
           "permittedMarks": [
@@ -33793,45 +34422,90 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Relevant content which stays connected to the selected task."
+            " Tá 8 marc ag dul don ábhar. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal. "
           ]
         },
         {
           "id": "gaeilge",
-          "label": "Cumas agus Cruinneas Gaeilge",
+          "label": "An Cumas Gaeilge",
           "kind": "award",
           "maxMarks": 40,
           "permittedMarks": [
             0,
+            1,
             2,
+            3,
             4,
+            5,
             6,
+            7,
             8,
+            9,
             10,
+            11,
             12,
+            13,
             14,
+            15,
             16,
+            17,
             18,
+            19,
             20,
+            21,
             22,
+            23,
             24,
+            25,
             26,
+            27,
             28,
+            29,
             30,
+            31,
             32,
+            33,
             34,
+            35,
             36,
+            37,
             38,
+            39,
             40
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Use the published 40-mark quality grid for command of Irish and accuracy."
+            " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála. Cuid II An Cheapadóireacht 100 marc",
+            "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
+            "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
+            "Scéim Mharcála Mhodhnaithe (scheme PDF 30–31): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001GLP100IV"
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13, so the Cumas Gaeilge award can take any value from 0 to 40. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-D-ii",
+      "reviewedAt": "2026-10-11",
+      "reviewedPaperPages": [
+        7
+      ],
+      "schemePages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht D(ii)",
+        "title": "Gaeilge Gnáthleibhéal 2025 · Páipéar 1 · Ceapadóireacht D(ii)",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2025-ol-p2-reading-a-q1",
