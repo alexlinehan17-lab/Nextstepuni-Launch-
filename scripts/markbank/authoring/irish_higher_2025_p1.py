@@ -71,12 +71,13 @@ class Marked:
             body = re.sub(r'^\d+\s', '', clean(doc[p - 1].get_text()))
             self.text += f' ⟦{p}⟧ ' + body
 
-    def split(self, starts, stop):
+    def split(self, starts, stop, strip=None):
+        """Slice at each start; `strip` removes trailing headings BEFORE pages are counted."""
         out, cursor = [], 0
         for i, start in enumerate(starts):
             a = self.text.index(start, cursor)
             b = self.text.index(starts[i + 1], a + len(start)) if i + 1 < len(starts) else self.text.index(stop, a)
-            raw = self.text[a:b]
+            raw = strip(self.text[a:b]) if strip else self.text[a:b]
             pages = {int(re.findall(r'⟦(\d+)⟧', self.text[:a])[-1])}
             pages |= {int(m.group(1)) for m in re.finditer(r'⟦(\d+)⟧([^⟦]*)', raw) if clean(m.group(2))}
             out.append((clean(re.sub(r'⟦\d+⟧', ' ', raw)), sorted(pages)))
@@ -137,14 +138,22 @@ def material():
             ('3', '3. Scríobh síos dhá imeacht ag ar tógadh na grianghraif atá sa chartlann.', 4, '3. Scríobh síos dhá imeacht')]),
     ]
     anchors = [q[3] for seg in segments for q in seg[8]]
-    chunks = iter(listening.split(anchors, 'Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.'))
+    heading = re.compile(r'\s*(FÓGRA A DÓ \(8 marc\)|CUID B \(28 marc\) COMHRÁ A hAON \(14 mharc\) An Chéad Mhír|An Dara Mír|COMHRÁ A DÓ \(14 mharc\) An Chéad Mhír|CUID C \(14 mharc\) PÍOSA A hAON \(6 mharc\)|PÍOSA A DÓ \(8 marc\))\s*$')
+
+    def furniture(raw):
+        # The next segment's printed heading precedes the following question; it must not add a page.
+        while True:
+            trimmed = heading.sub('', re.sub(r'(\s*⟦\d+⟧\s*)+$', '', raw))
+            if trimmed == raw:
+                return raw
+            raw = trimmed
+    chunks = iter(listening.split(anchors, 'Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.', furniture))
     for seg in segments:
         assert sum(q[2] for q in seg[8]) == seg[7], seg[0]
         for i, (n, prompt, marks, anchor) in enumerate(seg[8]):
             chunk, pages = next(chunks)
             # Drop the next segment's printed heading that precedes the following question.
             chunk = re.sub(r'^FÓGRA A DÓ \(8 marc\) ', '', chunk)
-            chunk = re.sub(r'\s*(FÓGRA A DÓ \(8 marc\)|CUID B \(28 marc\) COMHRÁ A hAON \(14 mharc\) An Chéad Mhír|An Dara Mír|COMHRÁ A DÓ \(14 mharc\) An Chéad Mhír|CUID C \(14 mharc\) PÍOSA A hAON \(6 mharc\)|PÍOSA A DÓ \(8 marc\))\s*$', '', chunk)
             assert comparable(prompt) in comparable(texts[seg[4] - 1]), (seg[0], n)
             assert (f'{marks // 2} mharc + {marks // 2} mharc' if marks == 4 else '2 mharc') in chunk, (seg[0], n, chunk[:80])
             seg[8][i] = (n, prompt, marks, chunk, pages)

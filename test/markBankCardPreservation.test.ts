@@ -182,6 +182,12 @@ const addedIrishOrdinaryRoutes = new Set([
     ];
     return [...routes, ...selections].map(key => `irish-2026-ol-p2-${key}`);
   })(),
+  // 2025 Ordinary Paper 1: the 30 printed two-section selections beside the retained titles.
+  ...(() => {
+    const titles: Record<string, string[]> = { a: ['i','ii','iii'], b: ['i','ii'], c: ['i','ii'], d: ['i','ii'] };
+    return ['a','b','c','d'].flatMap((g1, i) => ['a','b','c','d'].slice(i + 1).flatMap(g2 =>
+      titles[g1].flatMap(t1 => titles[g2].map(t2 => `irish-2025-ol-p1-composition-${g1}-${t1}-${g2}-${t2}`))));
+  })(),
 ]);
 
 const decks = [
