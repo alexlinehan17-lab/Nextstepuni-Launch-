@@ -281,6 +281,36 @@ const REVIEWED_REFERENCE_ANOMALIES = [
     topicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
     evidence: "Q12 is \"'The Starry Night' by Vincent van Gogh (1853-1890) is an example of Post-Impressionist painting\": the paper itself names it Post-Impressionism (c. 1850-1900s), not Modernism (c. 1900-1960s).",
   },
+  {
+    level: 'higher', year: 2019, n: '11',
+    referenceTopicId: 'art-higher-realism-impressionism-and-post-impressionism',
+    topicId: 'art-higher-section-b-generic-questions',
+    evidence: "Q11 is \"J.M.W. Turner (1775-1851) painted expressive and dramatic scenes\", with 'Rain, Steam and Speed - The Great Western Railway': Turner's Romanticism precedes Realism, Impressionism and Post-Impressionism (c. 1850-1900s) and has no heading of its own, as for Turner's option in 2022 HL Q14.",
+  },
+  {
+    level: 'higher', year: 2019, n: '13',
+    referenceTopicId: 'art-higher-realism-impressionism-and-post-impressionism',
+    topicId: 'art-higher-modernism-c-1900-1960s',
+    evidence: "Q13 is \"Henri Matisse (1869-1954) used stylised shapes, strong colours and patterns in his paintings\", with 'Odalisque Wearing Red Trousers': Matisse's work is Modernism (c. 1900-1960s), not Post-Impressionism.",
+  },
+  {
+    level: 'ordinary', year: 2019, n: '5',
+    referenceTopicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    topicId: 'art-ordinary-irish-art-and-modernism',
+    evidence: "Q5 is in Section 1 (Art in Ireland): 'A Convent Garden, Brittany' by William Leech (1881-1968), an Irish painter, is Irish Art and Modernism, not the European heading.",
+  },
+  {
+    level: 'ordinary', year: 2019, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is the sculpture 'Misneach' by John Byrne (b.1959), illustrated on the accompanying sheet: the work of an artist born in 1959 is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2019, n: '11',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    evidence: "Q11 is 'The Supper at Emmaus' by Caravaggio (1571-1610), with \"(b) Briefly describe and discuss the Baroque style\": the paper itself places it in the Baroque (c. 1600-1700s), not The Renaissance.",
+  },
 ];
 const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
   item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
@@ -690,15 +720,15 @@ if (
   throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
 if (
-  matchedAssociations.length !== 580
+  matchedAssociations.length !== 575
   || sourceBlockedAssociations.length !== 98
-  || referenceAnomalyAssociations.length !== 12
-  || exactTopicsByCard.size !== 531
-  || reviewedTopicsByCard.size !== 11
-  || reviewedOnlyCards.length !== 10
-  || matchedQuestionTopicLinks !== 572
-  || reviewedOptionTopics.length !== 42
-  || reviewedSpecificTopics.length !== 13
+  || referenceAnomalyAssociations.length !== 17
+  || exactTopicsByCard.size !== 527
+  || reviewedTopicsByCard.size !== 16
+  || reviewedOnlyCards.length !== 14
+  || matchedQuestionTopicLinks !== 567
+  || reviewedOptionTopics.length !== 56
+  || reviewedSpecificTopics.length !== 14
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392
