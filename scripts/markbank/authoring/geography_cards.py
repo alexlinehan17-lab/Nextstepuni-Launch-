@@ -100,6 +100,7 @@ REVIEWED = {
 # its own review ledger is in REVIEWED; the generic reader never reads it.
 CORE_YEARS = tuple(range(2021, 2027))
 YEARS = tuple(sorted({*CORE_YEARS, *(year for year, _level in REVIEWED)}))
+ID_PREFIX = 'geography-{year}-{short}-'
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
@@ -1206,6 +1207,22 @@ def reviewed_sitting(year: int, level: str, review: Any,
             'cards': [card['id'] for card in task_cards],
             'routes': [route.label for route in task.routes],
         })
+    # A printed part the ledger cannot card honestly (its published allocation
+    # does not add up to its printed tariff) is held, never guessed at: it
+    # stays in the census as excluded, with the ledger's reason.
+    held = list(getattr(review, 'HELD', ()))
+    excluded_rows = []
+    for row in held:
+        totals[(row['part'], row['question'])] = (
+            totals.get((row['part'], row['question']), 0) + row['marks'])
+        ref = f"{year} {LEVEL_REF[level]} Part {row['part']} Q{row['question']}"
+        base_tasks.append({'id': ID_PREFIX.format(year=year, short=LEVEL_SHORT[level])
+                           + f"p{row['part']}-q{row['question'].lower()}",
+                           'year': year, 'level': level, 'part': row['part'], 'questionRef': ref,
+                           'title': row['title'], 'status': 'excluded'})
+        excluded_rows.append({'year': year, 'level': level, 'part': row['part'],
+                              'questionRef': row['question'], 'title': row['title'],
+                              'reason': row['reason']})
     expected_totals = {(part, q): marks for part, row in review.QUESTION_TARIFFS.items()
                        for q, marks in row.items()}
     if totals != expected_totals:
@@ -1251,14 +1268,15 @@ def reviewed_sitting(year: int, level: str, review: Any,
         'idCorrections': corrections,
         'aliases': [{'id': old, 'canonicalId': new} for old, new in sorted(aliases.items())],
         'tasks': tasks_out,
+        **({'held': excluded_rows} if excluded_rows else {}),
         'rule': (review.__doc__ or '').strip(),
     }
-    sitting_row = {'year': year, 'level': level, 'paperBaseTasks': len(review.TASKS),
-                   'includedBaseTasks': len(review.TASKS), 'excludedBaseTasks': 0,
+    sitting_row = {'year': year, 'level': level, 'paperBaseTasks': len(review.TASKS) + len(held),
+                   'includedBaseTasks': len(review.TASKS), 'excludedBaseTasks': len(held),
                    'authoredCardsAfterFiniteExpansion': len(cards), 'reviewed': True}
     return {'cards': cards, 'baseTasks': base_tasks, 'sitting': sitting_row,
             'selection': selection_rows, 'audit': audit, 'atlas': atlas_rows,
-            'aliases': aliases}
+            'aliases': aliases, 'excluded': excluded_rows}
 
 
 def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -1287,6 +1305,7 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                 aliases.update(built['aliases'])
                 reviewed_audits.append(built['audit'])
                 atlas_rows.extend(built['atlas'])
+                excluded.extend(built['excluded'])
                 continue
             if year not in CORE_YEARS:
                 continue
