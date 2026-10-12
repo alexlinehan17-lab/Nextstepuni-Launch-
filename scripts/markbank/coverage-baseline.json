@@ -165,19 +165,19 @@
     "refsHash": "ba197c3dcfdb616b"
   },
   "construction-studies": {
-    "cards": 710,
-    "contentHash": "fb05df0218a8f831",
-    "coveragePct": 63.1,
-    "covered": 532,
+    "cards": 733,
+    "contentHash": "5ba93c04846dc08c",
+    "coveragePct": 64.3,
+    "covered": 542,
     "excluded": 0,
     "leaves": 843,
-    "open": 311,
+    "open": 301,
     "orphans": 0,
     "papers": {
       "count": 63,
       "hash": "7a382fe186c759ea"
     },
-    "refsHash": "e2bd65f8f4254b4d"
+    "refsHash": "d415aac98836a0df"
   },
   "croatian": {
     "cards": 100,
