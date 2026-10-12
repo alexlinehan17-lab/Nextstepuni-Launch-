@@ -28,6 +28,7 @@ from agricultural_science_2025_hl import reviewed_tasks as reviewed_2025_hl, pap
 from agricultural_science_2025_ol import reviewed_tasks as reviewed_2025_ol, paper_review as ordinary_2025_review
 from agricultural_science_2024_hl import reviewed_tasks as reviewed_2024_hl, paper_review as higher_2024_review, RESTORED as RESTORED_2024_HL
 from agricultural_science_2024_ol import reviewed_tasks as reviewed_2024_ol, paper_review as ordinary_2024_review
+from agricultural_science_2023_hl import reviewed_tasks as reviewed_2023_hl, paper_review as higher_2023_review, RESTORED as RESTORED_2023_HL
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -84,24 +85,6 @@ def reviewed_tasks():
         'cardIds': [cid], 'marksPerRoute': 4,
         'examTopicIds': ['agricultural-science-ordinary-animal-production'],
         'evidence': 'Paper and scheme visually inspected. The scheme separates E and F reason pools, each with 3+1. All eight E entries and all five F entries are retained on one card. These are accepted answers, not a printed finite pool of reason choices.',
-    })
-
-    ref = '2023 HL Q18(a)(i)'
-    answers = {'A': 'Teat', 'B': 'Median suspensory ligament',
-               'C': 'Connective tissue / fine membrane', 'D': 'Epidermis / hind quarter / outer wall'}
-    cid = 'agsci-2023-hl-q18ai'
-    cards.append(card(cid, 2023, 'higher', ref, 'agsci-4-1',
-        'udder-structure', 'Label any three parts of the structure of the udder.', 3,
-        [{'id': 'labels', 'kind': 'anyN', 'verbatim': ' / '.join(answers.values()), 'marks': 3,
-          'contextNote': 'Any three of the four labels, 1 mark each. Options in letter order: A, B, C, D.',
-          'group': {'claimMax': 3, 'perOption': 1, 'options': list(answers.values())}}],
-        37, 'Udder structure', 'Label the parts on the official udder diagram.'))
-    reviews.append({
-        'questionRef': ref, 'paperPage': 37, 'schemePage': 27,
-        'selection': {'kind': 'closed', 'choose': 3, 'options': list(answers), 'pooled': True},
-        'cardIds': [cid], 'marksPerRoute': 3,
-        'examTopicIds': ['agricultural-science-higher-dairy-cattle'],
-        'evidence': 'Paper and scheme visually inspected. Four labelled structures, any three at 1 mark each, on one card. B is the complete phrase Median suspensory ligament, present in the scheme’s block-order extraction.',
     })
 
     cid, ref = 'agsci-2022-ol-q13bi', '2022 OL Q13(b)(i)'
@@ -185,18 +168,22 @@ def reviewed_tasks():
     cards.extend(ordinary_2024_cards)
     reviews.extend(ordinary_2024_tasks)
     paper_reviews.append(ordinary_2024_review())
-    corrections_2025 = {**corrections_2025, **corrections_2025_ol, **corrections_2024, **corrections_2024_ol}
+    higher_2023_cards, higher_2023_tasks, corrections_2023 = reviewed_2023_hl(existing)
+    cards.extend(higher_2023_cards)
+    reviews.extend(higher_2023_tasks)
+    paper_reviews.append(higher_2023_review())
+    corrections_2025 = {**corrections_2025, **corrections_2025_ol, **corrections_2024, **corrections_2024_ol, **corrections_2023}
     # Batches reviewed after 7 October carry their own review date; earlier
     # reviewed card objects must stay byte-identical.
     batch_dates = {id(card): '2026-10-11' for card in higher_2026_cards + ordinary_2026_cards + higher_2025_cards + ordinary_2025_cards}
-    batch_dates.update({id(card): '2026-10-12' for card in higher_2024_cards + ordinary_2024_cards})
+    batch_dates.update({id(card): '2026-10-12' for card in higher_2024_cards + ordinary_2024_cards + higher_2023_cards})
     for reviewed in cards:
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
                           'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':batch_dates.get(id(reviewed),'2026-10-07')}
     corrected = ['agsci-2025-ol-q8b', *sorted(corrections_2025)]
     # Originals an earlier review rewrote and this one restores byte-identical:
     # kept as they were on main, or withdrawn as progress aliases of a pooled card.
-    restored = [*RESTORED_2025_HL, *RESTORED_2024_HL]
+    restored = [*RESTORED_2025_HL, *RESTORED_2024_HL, *RESTORED_2023_HL]
     assert not {c['id'] for c in restored} & {c['id'] for c in cards}
     return cards, restored, {'status': 'in-progress', 'reviewedAt': '2026-10-07',
                    'addedCardIds': [c['id'] for c in cards if c['id'] not in corrected],

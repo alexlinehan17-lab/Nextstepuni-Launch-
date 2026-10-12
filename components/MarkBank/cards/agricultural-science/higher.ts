@@ -1377,12 +1377,13 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q1aii", topicId: "agsci-4-2", conceptId: "dual-purpose-breed",
-    section: "A", questionRef: "2023 HL Q1(a)(ii)",
-    questionText: "Breed C is a dual-purpose breed. Explain the underlined term.",
+    id: "agsci-2023-hl-q1aiii", topicId: "agsci-4-3-3", conceptId: "purebred-sire-benefits",
+    section: "A", questionRef: "2023 HL Q1(a)(iii)",
+    stem: "Answer either (a) or (b).",
+    questionText: "Todd wanted to purchase a purebred bull. Explain the importance of using a purebred sire in a beef herd.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dual-purpose breed is an animal breed that provides at least 2", marks: 2, contextNote: "The scheme's sentence runs on: '…at least 2 kinds of resources (e.g. meat, eggs, milk)'. The 2-mark award is printed between the two lines in the extracted scheme, which is why the row text stops where it does." },
+    { id: "r-1", kind: "alt", verbatim: "Better quality offspring", marks: 2, accepts: ["better traits passed onto offspring","higher heterosis or hybrid vigour","more uniform offspring or less variability in offspring"], contextNote: "The scheme separates these with a solidus, so they are equally acceptable wordings of ONE 2-mark point — not four separate marking points. Any one of them earns the full 2 marks." },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1394,20 +1395,6 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q1aiii", topicId: "agsci-4-3-3", conceptId: "purebred-sire-benefits",
-    section: "A", questionRef: "2023 HL Q1(a)(iii)",
-    stem: "Answer either (a) or (b).",
-    questionText: "Todd wanted to purchase a purebred bull. Explain the importance of using a purebred sire in a beef herd.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Better quality offspring", marks: 2, accepts: ["better traits passed onto offspring","higher heterosis or hybrid vigour","more uniform offspring or less variability in offspring"], contextNote: "The scheme separates these with a solidus, so they are equally acceptable wordings of ONE 2-mark point — not four separate marking points. Any one of them earns the full 2 marks." },
-    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1438,29 +1425,6 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q2a", topicId: "agsci-3-1", conceptId: "cereal-growth-stages",
-    section: "A", questionRef: "2023 HL Q2(a)",
-    stem: "The diagram below shows an example of the growth cycle of the food crop barley.",
-    questionText: "Explain what happens at any two of the following stages in any named plant you have studied: Germination, Stem Elongation, Flowering.",
-    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Germination — Embryo's cells start to enlarge", marks: 3, accepts: ["seed coat breaks open","root or radicle emerges (first)","(followed by) the shoot or plumule emerges"], contextNote: "Within a stage the scheme's solidus list is alternatives: one correct statement about the stage earns its 3 marks." },
-    { id: "r-2", kind: "alt", verbatim: "Stem Elongation — Rapid growth of stems", marks: 3, accepts: ["stem lengthens (between the upper nodes)"], contextNote: "Any TWO of the three stages score 3 marks each. If you answered Flowering instead, the scheme's answer is: 'Seed head develops or heading out / stem is fibrous and strong enough to support seed head / plants stop growing / produce flowers (buds) for reproduction'." },
-    ],
-    figure: {
-          "candId": "agricultural-science-2023-HL-paper-p05-i0",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p05-i0.png",
-          "srcHash": "334717cb9121b98aa27ee40df6d819dd",
-          "alt": "A five-panel cartoon strip showing the growth cycle of barley, drawn inside a single heavy black frame divided into five equal boxes. Above the frame, the numbers 1, 2, 3, 4 and 5 sit over the panels left to right. Each panel has a cream sky and a brown soil band along the bottom, with the stage name printed in white bold on the soil. Panel 1 'Germination' shows a tiny seedling with two small leaves just breaking the soil surface with a root below. Panel 2 'Tillering' shows a short dark-green plant with several narrow leaves fanning out from the base. Panel 3 'Stem Elongation' shows a taller light-green plant with a distinct upright stem and long leaves. Panel 4 'Flowering' shows a tall plant with an olive/orange stem carrying a slim green flowering head (ear) at the top. Panel 5 'Ripening' shows the same plant turned orange-brown with the drooping ripe ear and detaching grains. Above the strip is the heading 'Question 2 — The diagram shows an example of the growth cycle of the food crop barley.' Below it the instruction '(a) Explain what happens at any two of the following stages in any named plant you have studied.' and the start of a blank answer table with a grey 'Named plant:' bar and green-tinted row headers 'Germination' and 'Stem Elongation'.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q3a", topicId: "agsci-2-2-1", conceptId: "calcium-sources",
     section: "A", questionRef: "2023 HL Q3(a)",
     stem: "Calcium is an important element required by both plants and animals.",
@@ -1469,6 +1433,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Grass / plant: lime", marks: 2, accepts: ["CAN","eggshells or seaweed or bone meal","Cattle / animal: grass","clover or legume crops","soybean","milk or milk substitute","mineral additive"], contextNote: "The question asks for ONE source, for either plants or animals, and the scheme prints a pool for each. 'or other valid answer' means the pool is not exhaustive.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1483,6 +1457,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Weathering of limestone", marks: 2, accepts: ["absorbed as solution","cation exchange"], contextNote: "Three solidus-separated alternatives for one 2-mark point; only one process is asked for." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1498,22 +1482,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Name: Milk Fever or hypocalcaemia", marks: 3 },
     { id: "r-2", kind: "alt", verbatim: "Symptom: loss of appetite", marks: 3, accepts: ["excitability","nervousness","hypersensitivity","weakness","weight shifting or shuffling of the hind feet or staggers"], contextNote: "The scheme's list ends 'or valid answer', so another genuine symptom of milk fever also scores.", openList: true },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q4a", topicId: "agsci-4-3-3", conceptId: "pre-isolation-treatments",
-    section: "A", questionRef: "2023 HL Q4(a)",
-    stem: "Performance testing is carried out on bulls by the Irish Cattle Breeding Federation (ICBF) in Tully, Co. Kildare.",
-    questionText: "When bulls arrive at the test centre, they enter a pre-isolation area where they are clipped, dosed, treated for lice, and sorted into pens based on breed and weight. Suggest one reason for any three treatments listed below: Clipped; Worm dosed; Treated for lice; Sorted into pens based on breed and weight.",
-    tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Clipped — Improves heat dissipation", marks: 2, accepts: ["prevention of pneumonia","control of lice"], contextNote: "The scheme prints: 'Improves heat dissipation (from the body when sweating) or prevention of pneumonia / control of lice'. The row text stops at the line break because the row label is interleaved into the answer in the extracted scheme." },
-    { id: "r-2", kind: "point", verbatim: "Worm dosed — To kill any worms (endoparasites) present in animals", marks: 2 },
-    { id: "r-3", kind: "alt", verbatim: "Treated for lice — To prevent lice being spread between cattle", marks: 2, accepts: ["prevent irritation"], contextNote: "The paper lists a fourth treatment, 'Sorted into pens based on breed and weight', and only three are required. Its scheme answer is: 'Animals can be kept under the exact same conditions and comparisons can be made based on breed / reduced amount of competition between animals (as all similar weight)' — equally creditable in place of any row here." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1528,21 +1506,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Establishing the genetic potential of particular bulls (namely genetically superior bulls)", marks: 4, accepts: ["allows a cost of production (to be placed on the output traits)","improve the productivity of their herd","information stored on the ICBF database which allow a genetic profile of all animals with records and related animals to be computed in the form of a €uro-star index","when bulls commence the performance test their new information can help to improve or dis-improve their indexes in an equal measure","reduced carbon footprint or increased sustainability"], contextNote: "The whole 4 marks go to one developed point; the scheme's solidus list is alternatives, not six separate points." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q5a", topicId: "agsci-2-3", conceptId: "soil-sampling-method",
-    section: "A", questionRef: "2023 HL Q5(a)",
-    stem: "Soil testing is essential to determine the nutrient requirement of the soil.",
-    questionText: "Briefly describe how to collect soil samples for soil testing.",
-    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Soil sampler or soil corer or soil auger", marks: 3, contextNote: "The scheme prints these three as alternatives, so any one scores. 2(3) funds ANY two points from the scheme's pool, not these two specifically — if both of your valid points appear in the list on the next row, this slot is filled too." },
-    { id: "r-2", kind: "alt", verbatim: "take a minimum of 20 soil cores", marks: 3, accepts: ["W shape","take sample every 2 - 4ha","taken at random","avoid gateways or troughs or dung or urine patches","taken at uniform depth","take separate samples from areas that are different in soil type, previous cropping history, slope, drainage or persistent poor yields","do not sample a field until 3 to 6 months after the last application of P and K and 2 years where lime was applied","sample fields at the same time of the year to aid comparisons of soil sample results","avoid sampling under extremes of soil conditions e.g. waterlogged or very dry soils","place the soil sample in a soil box to avoid contamination and write the field number on the soil box"], contextNote: "Any point from the scheme's pool fills this slot. The scheme also notes that 'marks maybe awarded for points on a diagram'." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1557,20 +1530,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Samples should be taken between October and February as no fertiliser is applied", marks: 2, accepts: ["allows for at least 3 months after the last application of P or K to give an accurate reading","soil nutrient levels change slowly over time so for an accurate reading soil test min every 3 years"], contextNote: "One reason earns the 2 marks; the scheme's solidus separates the timing-of-year reason from the frequency reason as alternatives." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q5c", topicId: "agsci-2-3", conceptId: "soil-testing-economic-sustainability",
-    section: "A", questionRef: "2023 HL Q5(c)",
-    stem: "Soil testing is essential to determine the nutrient requirement of the soil.",
-    questionText: "With record high fertiliser prices, outline how soil testing can improve the economic sustainability of the farm.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Soil tests allow you to identify the key nutrients your soil", marks: 2, contextNote: "The scheme's sentence continues: '…needs more of, so you can make an informed decision on the correct fertiliser in the right quantity for soil's needs.' The 2-mark award is printed mid-sentence in the extracted scheme, which is why the row text stops where it does." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1585,6 +1554,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Scald", marks: 4, accepts: ["foot rot","shelly hoof","CODD (Contagious Ovine Digital Dermatitis)"], contextNote: "Naming any ONE of the four diseases earns the full 4 marks. Whichever you name here is the disease that parts (b) and (c) must then be answered about." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1602,6 +1581,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "Shelly hoof — Overgrown feet through lack of wear", marks: 2, accepts: ["the wall and toe horn can become long and loose"], route: "shelly-hoof" },
     { id: "r-4", kind: "alt", verbatim: "CODD — Bacterial infection", marks: 2, accepts: ["first signs are ulcers at top of coronary band","progress under hoof horn capsule towards the toe","whole capsule may fall off"], route: "codd" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1619,6 +1608,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "Shelly hoof — Treatment is only necessary if lame", marks: 2, accepts: ["careful paring may be required to release debris and soil"], route: "shelly-hoof" },
     { id: "r-4", kind: "alt", verbatim: "CODD — Treatment with specific antibiotics", marks: 2, accepts: ["footbath solution"], route: "codd" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1633,6 +1632,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "It has a direct effect on production (20% reduction in body condition score)", marks: 2, accepts: ["reduced liveweight gain","reduced milk production","financial losses through increased prevention or treatment cost or culling"], contextNote: "One implication earns the 2 marks; the scheme's solidus list is alternatives." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1648,6 +1657,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Independent – Fertiliser type", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Dependent – Amount of nitrate in leachate (water)", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1662,6 +1681,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Repeating an experiment more than once helps determine if the data was consistent or represents the normal case", marks: 3, accepts: ["It helps guard against jumping to conclusions without enough evidence","improves reliability","improving accuracy","to find an average"], contextNote: "A single 3-mark award; the solidus list is alternative ways of making the same point." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1691,21 +1720,6 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q9aii", topicId: "agsci-3-3-2", conceptId: "precision-farming-benefits",
-    section: "A", questionRef: "2023 HL Q9(a)(ii)",
-    stem: "Answer either (a) or (b). The Farmdroid is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding, guided by precision GPS to within 8mm. (Adapted from Agriland, 2022)",
-    questionText: "Explain how the Farmdroid can benefit the environment and the farmer.",
-    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Less chemical herbicide required", marks: 3, contextNote: "2(3) funds ANY two benefits from the scheme's pool, not these two specifically — if both of your benefits appear in the list on the next row, this slot is filled too." },
-    { id: "r-2", kind: "alt", verbatim: "fewer fossil fuels burned as solar powered", marks: 3, accepts: ["no need to recharge batteries","less soil compaction","increased yields as less weeds","precision sowing to maximise land usage","less labour"], contextNote: "Any point from the scheme's pool fills this slot; the question wants a benefit to the environment AND one to the farmer." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q9aiii", topicId: "agsci-3-3-2", conceptId: "agri-technology-benefits",
     section: "A", questionRef: "2023 HL Q9(a)(iii)",
     stem: "Answer either (a) or (b). The Farmdroid relies on GPS location data to go about its daily tasks. (Adapted from Agriland, 2022)",
@@ -1714,21 +1728,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Soil moisture sensors", marks: 2, accepts: ["windmills or solar panels providing renewable energy"], contextNote: "The scheme prints the benefit alongside the technology: 'Soil moisture sensors – send message to farmers when crop needs water and prevents crop failure'. The list ends 'other valid example', so any other technology outlined with a genuine benefit to both farmer and environment scores.", openList: true },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q9bi", topicId: "agsci-4-3-3", conceptId: "pregnancy-scanning-benefits",
-    section: "A", questionRef: "2023 HL Q9(b)(i)",
-    stem: "Answer either (a) or (b). Scanning female animals to determine if they are pregnant is an important job that is carried out on farms.",
-    questionText: "Briefly describe the benefits of pregnancy scanning in animals.",
-    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Know if the animal is barren or not (or pregnant)", marks: 3, contextNote: "2(3) funds ANY two benefits from the scheme's pool, not these two specifically — if both of your benefits appear in the list on the next row, this slot is filled too." },
-    { id: "r-2", kind: "alt", verbatim: "know due date for accurate feeding", marks: 3, accepts: ["house animals at correct time","pen animals according to number of young they are carrying","a lot of barren animals will indicate a problem with fertility of sire","management practices at birth, especially for multiple births (identify due date)"], contextNote: "Any benefit from the scheme's pool fills this slot." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1744,6 +1753,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Feeding (in late gestation) — Feed heifer well (in last trimester (3 months))", marks: 2, accepts: ["ensure the heifer has enough milk for both calves","achieve correct BCS","to produce good quality milk (colostrum)","good quality silage (75+% DMD) or poorer quality silage and concentrates","mineral supplementation"] },
     { id: "r-2", kind: "alt", verbatim: "Calving — Be there to assist with calving (as many twins may have malpresentation)", marks: 2, accepts: ["keep in small pen after calving to allow for bonding","feed both calves colostrum or colostrum replacer","clean, dry straw bed","move to pen on her own","clean calving jack","gloves and lubricant","iodine on naval"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1758,6 +1777,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Assist in the digestion of feedstuffs", marks: 4, accepts: ["help protect the animal from infections","(some microbes synthesize and) provide essential nutrients"], contextNote: "A single 4-mark award; the three solidus-separated roles are alternatives." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1773,6 +1802,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Soya bean: Source of energy or protein or for growth and repair", marks: 3, accepts: ["provides high quantity of amino acids","source of calcium for bone development"], contextNote: "The scheme adds an instruction to examiners: 'Accept source of nutrient or function of nutrient'.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "Rice bran: (rich) source of protein for growth and repair", marks: 3, accepts: ["carbohydrate or fat for energy","dietary fibres for gut development (or gut function)","vitamins or minerals for metabolism"], contextNote: "'Accept source of nutrient or function of nutrient' applies to this ingredient too.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p15-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p15-i0.png",
@@ -1795,6 +1834,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "As animals get older they don't grow as fast as when they were younger so they don't need the higher protein levels", marks: 2, accepts: ["excess protein can reduce energetic efficiency","cause greater organ weights","can lead to decreased carcass yield"], contextNote: "One reason earns the 2 marks; the scheme's solidus separates the growth-rate reason from the excess-protein reason." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1809,44 +1858,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Cannot breakdown the cellulose in the grass", marks: 2, contextNote: "The scheme completes the point in brackets: '(as they are not ruminants or hind gut fermenters)'. A word in brackets contextualises the answer rather than being required." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q11a", topicId: "agsci-4-3-2", conceptId: "calves-per-cow-per-year",
-    section: "A", questionRef: "2023 HL Q11(a)",
-    stem: "Tim wants to improve the reproductive performance of his suckler cows on a grass-based system. He carried out research and found the key performance indicators (KPI) for a spring calving herd, shown in the table below. (Adapted from Teagasc, 2022)",
-    questionText: "Achieving a target of 0.95 will require excellent cow and calf management. Outline ways Tim can achieve this target.",
-    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Good heat detection", marks: 3, contextNote: "2(3) funds ANY two ways from the scheme's pool, not these two specifically — if both of your ways appear in the list on the next row, this slot is filled too." },
-    { id: "r-2", kind: "alt", verbatim: "good cow or sire fertility", marks: 3, accepts: ["grading up or cull poor performing cows","good hygiene at calving","enough good quality colostrum at birth","highly digestible feed (or concentrate supplementation) (to ensure good milk production or increased liveweight gain)","scanning of cows to accurately know calving date","proper supervision at calving or assist or vet if calving difficulties","iodine on navel at birth","vaccination programme"], contextNote: "Any way from the scheme's pool fills this slot." },
-    ],
-    figure: {
-          "candId": "agricultural-science-2023-HL-paper-p16-i1",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p16-i1.png",
-          "srcHash": "f81dbcb9f5975f1de1b56da6d2508c0f",
-          "alt": "A table from the exam paper. Columns: Key Performance Indicators (KPI), National Average, National Target. Rows: Calves / cow / year, Calving interval (days), 6-week calving rate (%). 4 rows by 3 columns, as printed in the paper.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q11b", topicId: "agsci-4-3-3", conceptId: "six-week-calving-rate",
-    section: "A", questionRef: "2023 HL Q11(b)",
-    stem: "Tim wants to improve the reproductive performance of his suckler cows on a grass-based system. The national average 6-week calving rate is 55% and the national target is 80%. (Adapted from Teagasc, 2022)",
-    questionText: "Briefly explain ways Tim can achieve the 6-week calving rate target of 80%.",
-    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Monitor liveweight (of young heifers) to ensure they are on course to achieve target weights (aim for 60% of mature weight at mating)", marks: 2, contextNote: "2(2) funds ANY two ways from the scheme's pool, not these two specifically — if both of your ways appear in the list on the next row, this slot is filled too." },
-    { id: "r-2", kind: "alt", verbatim: "correct BCS of 3.0 at mating", marks: 2, accepts: ["correct nutrition - good quality leafy grass","good heat detection (to increase submission rate)","use AI on cows in first 3 weeks of breeding for replacements or increase EBI of herd or keep early calves for replacements for high EBI","identify non-cycling cows (and get them checked by the vet)","ensure healthy cows (received vaccinations)","synchronised breeding"], contextNote: "Any way from the scheme's pool fills this slot." },
-    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1861,6 +1882,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "gate", verbatim: "1.1(kg/m3)", marks: 3, contextNote: "Asterisked in the scheme — printed as '1.1(kg/m3)*'. The asterisk means only this exact value scores, and a wrong value written alongside it cancels this row. It does not zero the rest of the question." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p17-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p17-i0.png",
@@ -1883,6 +1914,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Slurry lagoon is not covered", marks: 3, accepts: ["rainwater or dairy washings entering slurry tank"], contextNote: "One reason earns the full 3 marks; the two are solidus-separated alternatives." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p17-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p17-i0.png",
@@ -1905,6 +1946,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "As slurry is less dilute there are more nutrients available", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1919,6 +1970,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Use a weighted container into tank or never enter the pit due to the presence of lethal gases", marks: 2, accepts: ["in over ground tank, using the safe operator platform to add a weighted container","ventilation or mask to prevent inhaling lethal gases","take sample from agitation point"], contextNote: "One precaution earns the 2 marks; the solidus list is alternatives." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4817,76 +4878,6 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q13ai", topicId: "agsci-2-1", conceptId: "factors-of-soil-formation",
-    section: "B", questionRef: "2023 HL Q13(a)(i)",
-    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
-    questionText: "Describe two factors that are involved in the formation of soil. (Name each Factor and give a Description for each.)",
-    tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":5,"perPart":7,"notation":"5+5+2+2"}, totalMarks: 14,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Parent material — Parent rock is weathered into smaller particles", marks: 7, accepts: ["granite contains quartz which is weathered into sand particles and acidic in nature","limestone rock is alkaline in nature and increases the pH of soil formed from it","determines physical or chemical characteristics of soil"], contextNote: "Each factor you use is worth 7: 2 for naming the factor and 5 for its description. Only two factors are claimable." },
-    { id: "r-2", kind: "point", verbatim: "Climate — Temperature – heating and cooling of rock", marks: 7, accepts: ["Water – physical or chemical weathering","freeze-thaw or hydrolysis or solution or hydration","determines biological reactions"] },
-    { id: "r-3", kind: "point", verbatim: "Topography — Slope of landscape", marks: 7, accepts: ["steep slopes the soil is eroded down to valley","thin layer of soil on slopes","deep fertile soil in valley"] },
-    { id: "r-4", kind: "point", verbatim: "Organisms — Contribute humus when die", marks: 7, accepts: ["help to decompose organic matter","organic matter increases soil fertility","increase soil fertility or improve soil structure (burrowing, binding, eroding)","organisms break up rock"] },
-    { id: "r-5", kind: "point", verbatim: "Time — young soils not as deep", marks: 7, accepts: ["Young soils (Ireland) have high levels of rock available for weathering"] },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q13aii", topicId: "agsci-2-1", conceptId: "podzol-soil-profile",
-    section: "B", questionRef: "2023 HL Q13(a)(ii)",
-    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
-    questionText: "Draw a labelled diagram of a podzol soil profile.",
-    tariffModel: {"kind":"orderedSplit","notation":"D = 0,3,6 + L = 3 x 2"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "O or organic matter", marks: null, contextNote: "The drawing scores 0, 3 or 6: all five elements = 6, one element missing = 3, two or more missing = 0. Labels are marked separately, any three labels at 2 each." },
-    { id: "r-2", kind: "point", verbatim: "A or topsoil", marks: null },
-    { id: "r-3", kind: "point", verbatim: "B or subsoil", marks: null },
-    { id: "r-4", kind: "point", verbatim: "C or bedrock or parent material", marks: null },
-    { id: "r-5", kind: "point", verbatim: "iron pan (or zone of accumulation) present in B", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q13bii", topicId: "agsci-2-2-2", conceptId: "soil-water-levels-farm-implications",
-    section: "B", questionRef: "2023 HL Q13(b)(ii)",
-    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (b) is about the level of water held in a soil sample.",
-    questionText: "Briefly describe the implications for a farmer of any two of the following: Field capacity; Saturation; Permanent wilting point.",
-    tariffModel: {"kind":"orderedSplit","notation":"2+1"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Field capacity — Plants can remove water from the soil easily or water available to plant or land is usable", marks: null, accepts: ["or land is easily cultivated or conditions are suitable for growth"], contextNote: "Only two of the three carry marks, and they are scored by position: 2 for the first, 1 for the second." },
-    { id: "r-2", kind: "point", verbatim: "Saturation — Excess water (lack of air spaces) can reduce crop growth or waterlogged", marks: null, accepts: ["poached or roots cannot respire, or no earthworms or drainage required to reduce waterlogging"] },
-    { id: "r-3", kind: "point", verbatim: "Permanent wilting point — reduced yield or delayed growing season or wind erosion of soil", marks: null, accepts: ["Lack of water so plants can no longer extract","water from the soil or irrigation necessary"] },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q13c", topicId: "agsci-1-2", conceptId: "comparing-soil-infiltration-rate",
-    section: "B", questionRef: "2023 HL Q13(c)",
-    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
-    questionText: "Describe with the aid of a labelled diagram how a farmer would carry out an investigation to compare the drainage (infiltration) rate of a podzol and a brown earth soil sample and outline the expected result in this investigation.",
-    tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":5,"perPart":4,"notation":"3(4)"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "same mass of both soils", marks: 4, contextNote: "Any three of these points score 4 each. The scheme also credits a complete FIELD METHOD for the same 12 marks (two open-ended tubes set into the two soils, equal volume of water poured into each, record the time taken to drain down through the tube, result: the soil where water drains fastest has the best infiltration rate) — if you took that route, count your equivalent three steps here. A sixth lab step, 'Dried soil sample', is also creditable but is not shown." },
-    { id: "r-2", kind: "point", verbatim: "add to filter paper in funnel", marks: 4 },
-    { id: "r-3", kind: "point", verbatim: "add set volume of water to soil", marks: 4 },
-    { id: "r-4", kind: "point", verbatim: "record time taken for water to flow into beakers or record volume for filtrate (for set time)", marks: 4, contextNote: "Starred in the scheme as the compulsory point: an answer without it cannot reach full marks." },
-    { id: "r-5", kind: "point", verbatim: "water would pass through the brown earth sample quicker (as no iron pan)", marks: 4 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q13di", topicId: "agsci-2-3", conceptId: "soil-moisture-data-for-management-decisions",
     section: "B", questionRef: "2023 HL Q13(d)(i)",
     questionText: "Explain how the data gathered could help management decisions on the farm in relation to the drainage or wetting of land.",
@@ -4910,24 +4901,6 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q13dii", topicId: "agsci-2-2-2", conceptId: "functions-of-soil-water",
-    section: "B", questionRef: "2023 HL Q13(d)(ii)",
-    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (d) follows an article on VistaMilk using European Space Agency Sentinel satellite imagery to collect real-time data on soil moisture on Irish farms. (Adapted from Farmers Journal, 2022)",
-    questionText: "State the functions of soil moisture (water).",
-    tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Provide water to plants (plant cells contain large amounts of water)", marks: null, contextNote: "Two functions are credited, scored by position: 4 for the first, 2 for the second." },
-    { id: "r-2", kind: "point", verbatim: "seed germination", marks: null },
-    { id: "r-3", kind: "point", verbatim: "photosynthesis", marks: null },
-    { id: "r-4", kind: "point", verbatim: "nutrients available", marks: null },
-    { id: "r-5", kind: "point", verbatim: "keeps turgor", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14a", topicId: "agsci-3-3-1", conceptId: "direct-drilling",
     section: "B", questionRef: "2023 HL Q14(a)",
     stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He sows a variety of crops and plants his winter cereals using direct drilling. (The underlined term in part (a) is 'direct drilling'.)",
@@ -4937,6 +4910,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Direct drilling - the seed is placed without any prior soil cultivation (in the stubble of the previous crop)", marks: null, contextNote: "Only 3 marks for the whole part, awarded 2 then 1 across the explanation and the advantage." },
     { id: "r-2", kind: "point", verbatim: "Advantage - Maintains or improves the soil structure", marks: null, accepts: ["less soil loss from wind","less carbon lost from the soil","min soil disturbance","reduced soil compaction","increased organic matter","reduces weed germination","suitable on shallow soils"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4951,6 +4934,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Harvest at different times or not all ready to harvest at the same time or spread workload", marks: 5, accepts: ["response of different varieties to weather conditions","response to different soil conditions or aspect","different yields","seed trials","different varieties for different markets","staggered or extended pollination"], contextNote: "One reason, worth the whole 5. Everything after the first solidus is an alternative reason, not an extra point." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4965,38 +4958,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "To sow two crops together where the second crop continues to grow — after the first crop is harvested", marks: 3 },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q14biii", topicId: "agsci-3-3-1", conceptId: "clover-as-a-companion-crop",
-    section: "B", questionRef: "2023 HL Q14(b)(iii)",
-    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop.",
-    questionText: "Outline the advantages of sowing clover with the oilseed rape.",
-    tariffModel: {"kind":"orderedSplit","notation":"5+1"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Increase nitrogen supply to the crop", marks: null, contextNote: "Two advantages are credited, scored by position: 5 for the first, 1 for the second." },
-    { id: "r-2", kind: "point", verbatim: "encourage mycorrhizal fungi", marks: null },
-    { id: "r-3", kind: "point", verbatim: "their own root systems can help drainage", marks: null },
-    { id: "r-4", kind: "point", verbatim: "improve soil structure", marks: null },
-    { id: "r-5", kind: "point", verbatim: "prevents weeds", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q14biv", topicId: "agsci-3-2", conceptId: "annual-plant-defined",
-    section: "B", questionRef: "2023 HL Q14(b)(iv)",
-    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop. (The underlined term here is 'annual'.)",
-    questionText: "Berseem clover is an annual plant. Explain the underlined term.",
-    tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Completes its lifecycle in one year.", marks: 3 },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5011,41 +4982,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Barley / wheat / oats / other valid example", marks: 3, accepts: ["Barley","wheat","oats"], contextNote: "One named example, worth the whole 3. The scheme accepts any other valid annual.", openList: true },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q14ci", topicId: "agsci-1-2", conceptId: "plant-count-method",
-    section: "B", questionRef: "2023 HL Q14(c)(i)",
-    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) follows an extract: 'An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can be done next season in order to improve plant count numbers (e.g. higher seeding rate).' (Adapted from Farmers Journal, 2022)",
-    questionText: "Describe how to carry out a plant count in a 2 hectare field.",
-    tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":5,"perPart":4,"notation":"3(4)"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Place quadrat (0.25m2) on the ground", marks: 4, contextNote: "Any three of these steps score 4 each." },
-    { id: "r-2", kind: "point", verbatim: "at random", marks: 4 },
-    { id: "r-3", kind: "point", verbatim: "count the number of plants (established) in quadrat", marks: 4 },
-    { id: "r-4", kind: "point", verbatim: "get average plant count", marks: 4 },
-    { id: "r-5", kind: "point", verbatim: "multiply by 80,000 to determine the number of plants in 2 hectares", marks: 4 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q14cii", topicId: "agsci-3-3-2", conceptId: "value-of-a-plant-count",
-    section: "B", questionRef: "2023 HL Q14(c)(ii)",
-    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) follows an extract: 'An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can be done next season in order to improve plant count numbers (e.g. higher seeding rate).' (Adapted from Farmers Journal, 2022)",
-    questionText: "Briefly explain advantages of carrying out a plant count in a newly sown or reseeded field.",
-    tariffModel: {"kind":"orderedSplit","notation":"5+1"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Determine if sowing conditions were optimal or impact of weather conditions", marks: null, contextNote: "Two advantages are credited, scored by position: 5 for the first, 1 for the second." },
-    { id: "r-2", kind: "point", verbatim: "if correct seeding rate was used", marks: null },
-    { id: "r-3", kind: "point", verbatim: "determining germination or establishment rate", marks: null },
-    { id: "r-4", kind: "point", verbatim: "weed control", marks: null },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24,
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5060,6 +5007,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "At the tillering stage — the crop becomes thick, it is hard to see individual plants.", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25,
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5074,24 +5032,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "To allow for seeds that do not germinate", marks: 5, accepts: ["certified seed has min 85% germination"], contextNote: "One reason, worth the whole 5. The germination-percentage version is the same point stated the other way round." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q15a", topicId: "agsci-1-2", conceptId: "determining-soil-texture",
-    section: "B", questionRef: "2023 HL Q15(a)",
-    stem: "A secondary school recently designed and installed a new school garden and polytunnel. The school principal received a donation of top soil for the raised beds. The agricultural science class were tasked with finding out the best crops to sow. The students carried out a number of investigations to determine soil type and its suitability to grow specific crops.",
-    questionText: "The first investigation the students carried out was to determine the soil texture. Describe how they carried out this investigation to determine the soil texture.",
-    tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":5,"perPart":4,"notation":"3(4)"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Hand – dry soil sample", marks: 4, contextNote: "Any three steps of ONE method score 4 each. This card shows the hand-texturing route, but the scheme gives the SEDIMENT method (stir the soil into water, shake it in a graduated cylinder, leave it to settle, read the sand/silt/clay layers off the graduations, calculate percentages, use the soil triangle) and the SIEVE method (dry and crush the sample, weigh it, shake it through a nest of sieves largest on top, weigh each sieve, calculate percentages, classify on the texture triangle) the same 12 marks — if you used either of those, count your equivalent three steps here." },
-    { id: "r-2", kind: "point", verbatim: "rub between fingers and thumb", marks: 4 },
-    { id: "r-3", kind: "point", verbatim: "note grittiness and smoothness", marks: 4 },
-    { id: "r-4", kind: "point", verbatim: "wet sample (and rub between fingers and thumb and note grittiness, smoothness)", marks: 4 },
-    { id: "r-5", kind: "point", verbatim: "check if it is possible to roll sample into threads or ring or cast", marks: 4 },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25,
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5106,6 +5057,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Optimum pH — 5.5 – 7.5", marks: 6, contextNote: "The scheme prints the range only; a single value is not what is asked for." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27,
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5120,23 +5082,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "pH probe or meter", marks: 3 },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q15biii", topicId: "agsci-2-3", conceptId: "benefits-of-liming",
-    section: "B", questionRef: "2023 HL Q15(b)(iii)",
-    stem: "A secondary school recently designed and installed a new school garden and polytunnel. The students carried out a soil pH investigation on the donated top soil to work out which crops it would suit.",
-    questionText: "Farmers can improve the soil quality by liming to adjust the soil pH level. Briefly describe other benefits of liming the soil.",
-    tariffModel: {"kind":"orderedSplit","notation":"5+2"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Increase in earthworm activity", marks: null, contextNote: "Two benefits are credited, scored by position: 5 for the first, 2 for the second. 'Other' means benefits beyond raising the pH itself." },
-    { id: "r-2", kind: "point", verbatim: "improvement in soil structure (drainage or aeration or flocculation)", marks: null },
-    { id: "r-3", kind: "point", verbatim: "increased cation exchange capacity", marks: null },
-    { id: "r-4", kind: "point", verbatim: "improve nutrient availability", marks: null },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5152,6 +5107,17 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Seedbed preparation — Plough and harrow or mintill or rotovate", marks: 4, accepts: ["allow weeds to germination and harrow again or valid method of weed control","stone removal","ridges for potatoes or fine seedbed for barley","spring cereals rolled after sowing (for good soil: seed contact)"], contextNote: "One point under each heading, 4 marks each. The scheme notes its points apply to potatoes, barley or other cereal, or kale unless qualified." },
     { id: "r-2", kind: "point", verbatim: "Disease prevention — Sowing certified seed", marks: 4, accepts: ["crop rotation or remove groundkeepers","biological or chemical control"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27,
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5169,6 +5135,17 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "Fertiliser use — Use protected urea / apply lime", marks: null, accepts: ["soil test – P & K requirements","use clover in swards","buffer zone","compliance with the Nitrates Directive","correct spreading conditions"] },
     { id: "r-4", kind: "alt", verbatim: "Forage / feed — Improve grass utilisation and grazing season", marks: null, accepts: ["reduce concentrate feeding"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30,
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p30-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p30-i0.png",
@@ -5219,6 +5196,17 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "respiration", marks: 3 },
     { id: "r-5", kind: "point", verbatim: "combustion or decomposition", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30,
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5235,6 +5223,17 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "crop yields reduced due to lack of water", marks: 3, accepts: ["Increased pests and diseases introduced with warmer temperatures","increased flooding causing damage to agricultural land","plant and animal stress factors","drought effects","the ability to provide sufficient resources for animals during extreme events","reduced animal performance","suitable climate for new crops","change in growing season","more wildfires"], contextNote: "A second, different impact from the same pool." },
     { id: "r-3", kind: "alt", verbatim: "increased flooding causing damage to agricultural land", marks: 3, accepts: ["Increased pests and diseases introduced with warmer temperatures","crop yields reduced due to lack of water","plant and animal stress factors","drought effects","the ability to provide sufficient resources for animals during extreme events","reduced animal performance","suitable climate for new crops","change in growing season","more wildfires"], contextNote: "A third, different impact from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30,
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5250,6 +5249,17 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Reduce chemical N usage by sowing clover or using protected urea", marks: 3, accepts: ["replace CAN with protected urea to reduce ammonia losses","spread slurry using LESS to reduce ammonia emissions","increase the level of milk recording on dairy farms","increase weighing of beef animals on farms to ensure target liveweights are met","reduce slaughter age to closer to 24 months","increase organic farming","increase in biomethane (biodigesters)","carbon farming","other valid answer"], contextNote: "Any TWO ways from the scheme's pool score, 3 marks each; the scheme closes the pool with 'other valid answer', so a creditable way you wrote that is not printed still counts.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "spread slurry using LESS to reduce ammonia emissions", marks: 3, accepts: ["Reduce chemical N usage by sowing clover or using protected urea","replace CAN with protected urea to reduce ammonia losses","increase the level of milk recording on dairy farms","increase weighing of beef animals on farms to ensure target liveweights are met","reduce slaughter age to closer to 24 months","increase organic farming","increase in biomethane (biodigesters)","carbon farming","other valid answer"], contextNote: "A second, different way from the same pool.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30,
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5267,6 +5277,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "Autumn — Keep grazing at 6 – 8cm (1200 – 1600kg DM/ha)", marks: 4, accepts: ["graze well before 1st winter (>4cm)","light slurry application or avoid excess slurry","don’t overgraze or poach","Test P and K levels (apply if necessary)"] },
     { id: "r-4", kind: "alt", verbatim: "Second year — Adequate N / monitor P & K levels / don’t overgraze or poach", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5282,6 +5302,17 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Adding nitrogen", marks: null, accepts: ["rolling","sheep or calf grazing or grazing to 4cm","topping"], contextNote: "Any one way from the scheme's list scores here. The scheme awards 6 for the first correct way and 2 for the second, so the value depends on order, not on which way is given." },
     { id: "r-2", kind: "alt", verbatim: "rolling", marks: null, accepts: ["Adding nitrogen","sheep or calf grazing or grazing to 4cm","topping"], contextNote: "A second, different way from the same list." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34,
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5297,6 +5328,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Get the best traits from each seed in his sward", marks: 6, accepts: ["develop at different stages","greater uniformity","can be used for silage and grazing","disease resistance","extend grazing season","better productivity (yield), palatability, or digestibility","better persistence","aggressive (or weed control)"], contextNote: "Any TWO reasons from the scheme's pool of nine score, 6 marks each." },
     { id: "r-2", kind: "alt", verbatim: "develop at different stages", marks: 6, accepts: ["Get the best traits from each seed in his sward","greater uniformity","can be used for silage and grazing","disease resistance","extend grazing season","better productivity (yield), palatability, or digestibility","better persistence","aggressive (or weed control)"], contextNote: "A second, different reason from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p35-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p35-i0.png",
@@ -5320,6 +5361,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Ensures good digestible grass throughout the grazing season", marks: 2, accepts: ["allows for good quality silage early in year","won’t be all ready for cutting at the same time","greater opportunity for grazing digestible grass"], contextNote: "Any TWO reasons from the scheme's pool score, 2 marks each." },
     { id: "r-2", kind: "alt", verbatim: "allows for good quality silage early in year", marks: 2, accepts: ["Ensures good digestible grass throughout the grazing season","won’t be all ready for cutting at the same time","greater opportunity for grazing digestible grass"], contextNote: "A second, different reason from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5337,6 +5388,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "Pollen grains are light or plentiful", marks: null, accepts: ["wind pollination or long hanging anther or anther or stamen","caught in (feathery) stigma or carpel","male gamete (pollen) fuses with female gamete (egg) or fertilisation or zygote or seed formed"], contextNote: "Sexual route. Any one point from the scheme's sexual list scores here; the scheme awards 5 for the first correct point and 1 for the second.", route: "sexually" },
     { id: "r-4", kind: "alt", verbatim: "caught in (feathery) stigma or carpel", marks: null, accepts: ["Pollen grains are light or plentiful","wind pollination or long hanging anther or anther or stamen","male gamete (pollen) fuses with female gamete (egg) or fertilisation or zygote or seed formed"], contextNote: "A second, different point from the sexual list.", route: "sexually" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5352,6 +5413,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Hard swollen (udder) quarter or inflammation", marks: null, accepts: ["reduced milk yield","(white) clumps (of cells) in milk or clots in milk","cow agitated","high SCC"], contextNote: "Any one symptom from the scheme's list scores here. The scheme awards 4 for the first correct symptom and 3 for the second, so the value depends on order, not on which symptom is given." },
     { id: "r-2", kind: "alt", verbatim: "(white) clumps (of cells) in milk or clots in milk", marks: null, accepts: ["Hard swollen (udder) quarter or inflammation","reduced milk yield","cow agitated","high SCC"], contextNote: "A second, different symptom from the same list." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5366,6 +5437,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Milk out the quarter (fully before infusing(injecting) the antibiotic)", marks: 4, accepts: ["disinfect the teat end","avoid contamination of the nozzle of the antibiotic tube","partially insert the antibiotic tube nozzle into the teat canal","infuse the contents of the antibiotic tube into the infected quarter and gently massage the antibiotic into the teat","teat spray treated quarters immediately after infusion","clearly mark the treated cow and treated quarter","record treatment details on a chart at the parlour so that other milkers may check treatment details"], contextNote: "The scheme separates its treatment steps with a solidus against a single marks cell of 4, so this is ONE 4-mark point with many accepted wordings — any of the listed steps scores it." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5381,6 +5462,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Disinfect teats pre and post milking", marks: 3, accepts: ["wash and dry udders","lime on cubicles","clean bedding","clip hair on tail","milk infected cows at the end or disinfect clusters between milking","cull high SCC cows","service machine regularly (to avoid any stray electricity)","change liners (twice per year)","good milking routine","hot wash machine"], contextNote: "Any TWO ways from the scheme's pool of eleven score, 3 marks each." },
     { id: "r-2", kind: "alt", verbatim: "wash and dry udders", marks: 3, accepts: ["Disinfect teats pre and post milking","lime on cubicles","clean bedding","clip hair on tail","milk infected cows at the end or disinfect clusters between milking","cull high SCC cows","service machine regularly (to avoid any stray electricity)","change liners (twice per year)","good milking routine","hot wash machine"], contextNote: "A second, different way from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5397,22 +5488,17 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "as there is a shorter milking interval between morning and evening or less produced", marks: null, contextNote: "The reason that goes with it.", route: "evening-solids" },
     { id: "r-3", kind: "point", verbatim: "The milk in the morning is more dilute due to the higher volume produced between evening and morning", marks: null, contextNote: "The scheme's OR route — the same physiology stated from the morning milk's side. It answers the whole part on its own; do not mix it with the other route.", route: "morning-dilute" },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q18bii", topicId: "agsci-4-3-2", conceptId: "factors-affecting-milk-quality",
-    section: "B", questionRef: "2023 HL Q18(b)(ii)",
-    stem: "Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report. You have been invited to visit the farm to advise Jenny and John on how to improve their milk quality.",
-    questionText: "As part of the inspection you look at the factors affecting milk quality. Describe the factors you would be looking for in your inspection.",
-    tariffModel: {"kind":"fixed","notation":"F:3(3) + D:3(3)"}, totalMarks: 18,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Cow health — susceptible to irritation or inflammation of the udder if hygiene conditions are poor", marks: 6, accepts: ["sick cows have reduced milk yield and poorer quality milk","Somatic cell counts– high somatic cell counts in milk indicate an increased presence of white blood cells—a signal that the cow is fighting an illness / other types of somatic cells can degrade the fat and protein content in milk which adversely affect milk quality","Diet– affects the composition of milk / require good digestible feed / ~14% crude protein diet","lack of sufficient nutrients reduces milk quality","Milk handling or storage– machine hygiene is very important, or machine is hot washed after milking / install plate cooler to reduce milk temperature as quickly as possible / bulk tank kept below 4oC / no milk washings entering the tank","Milk hygiene: any relevant point on hygiene or TBC","Breed or genetics: high EBI cow used or named breed with high milk solids"], contextNote: "Three factors at 3 marks plus three matching descriptions at 3 marks — so each factor + description pair is worth 6, and any THREE pairs from the scheme's six categories score. Maximum two matching points from any one category; the third factor must come from another category. The 'Milk hygiene' category is open — any relevant hygiene point or TBC scores.", openList: true },
-    { id: "r-2", kind: "alt", verbatim: "Somatic cell counts — high somatic cell counts in milk indicate an increased presence of white blood cells—a signal that the cow is fighting an illness", marks: 6, accepts: ["other types of somatic cells can degrade the fat and protein content in milk which adversely affect milk quality","Cow health– susceptible to irritation or inflammation of the udder if hygiene conditions are poor / sick cows have reduced milk yield and poorer quality milk","Diet– affects the composition of milk / require good digestible feed / ~14% crude protein diet","lack of sufficient nutrients reduces milk quality","Milk handling or storage– machine hygiene is very important, or machine is hot washed after milking / install plate cooler to reduce milk temperature as quickly as possible / bulk tank kept below 4oC / no milk washings entering the tank","Milk hygiene: any relevant point on hygiene or TBC","Breed or genetics: high EBI cow used or named breed with high milk solids"], contextNote: "A second, different factor + description pair from another of the scheme's categories.", openList: true },
-    { id: "r-3", kind: "alt", verbatim: "Milk handling or storage — machine hygiene is very important, or machine is hot washed after milking", marks: 6, accepts: ["install plate cooler to reduce milk temperature as quickly as possible / bulk tank kept below 4oC / no milk washings entering the tank","Cow health– susceptible to irritation or inflammation of the udder if hygiene conditions are poor / sick cows have reduced milk yield and poorer quality milk","Somatic cell counts– high somatic cell counts in milk indicate an increased presence of white blood cells—a signal that the cow is fighting an illness / other types of somatic cells can degrade the fat and protein content in milk which adversely affect milk quality","Diet– affects the composition of milk / require good digestible feed / ~14% crude protein diet","lack of sufficient nutrients reduces milk quality","Milk hygiene: any relevant point on hygiene or TBC","Breed or genetics: high EBI cow used or named breed with high milk solids"], contextNote: "A third, different factor + description pair from another of the scheme's categories.", openList: true },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                37,
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7836,6 +7922,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B — Belgian Blue", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "C — Simmental", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p03-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p03-i0.png",
@@ -7865,6 +7961,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "E — Suffolk", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "F — Texel", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p04-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p04-i0.png",
@@ -7894,6 +8000,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Centre photograph — Chickweed", marks: 2, contextNote: "The low, sprawling plant with broad oval pointed leaves and small white star-shaped flowers whose petals are deeply split." },
     { id: "r-3", kind: "point", verbatim: "Right photograph — Charlock", marks: 2, contextNote: "The bright yellow four-petalled flowers on a branched stem with coarse, toothed green leaves." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p05-i2",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p05-i2.png",
@@ -7918,6 +8034,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B — Stomach", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "C — Small intestine", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p14-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p14-i0.png",
@@ -7947,6 +8073,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B — Permanent wilting point", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "C — Field Capacity", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p21-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p21-i0.png",
@@ -7974,6 +8110,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "gate", verbatim: "6.9", marks: 6, contextNote: "Asterisked in the scheme — printed as '*6.9'. Only that value scores, and a second value written beside it cancels this row. It is the shortest bar: emissions fall steadily as pH rises, from about 6500 g/ha/year at pH 5.1 to about 4000 at pH 6.9. The question asks for the pH, not the emissions figure." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p28-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p28-i0.png",
@@ -7996,6 +8142,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "gate", verbatim: "Animal digestion", marks: 5, contextNote: "Asterisked in the scheme — printed as '*Animal digestion'; only that term scores. It is the tallest group on the chart, at roughly 38% of the farm's emissions in both the 2021 and the 2019 assessment, against about 20% for manure and 16-17% for the other two." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p30-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p30-i0.png",
@@ -8019,6 +8175,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Comment — Since Anna and Lucy joined the scheme, their carbon emissions have remained fairly constant", marks: 3, contextNote: "The 2021 bar sits level with the 2019 bar in all four groups, so the honest comment is 'no real change' — not 'improved'. A comment with no justification earns half the marks here." },
     { id: "r-2", kind: "alt", verbatim: "Justify — No increase in emissions from any source", marks: 3, accepts: ["farm remains below national average in animal digestion and manure usage","farm emissions is still slightly higher than national average in fertiliser usage and forage or feed","correct use of percentages from graph"], contextNote: "Any ONE of these justifications earns the 3 marks, and the scheme credits quoting the percentages off the graph as a justification in its own right." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p30-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p30-i0.png",
@@ -8043,6 +8209,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B = (Ribwort) plantain", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "C = Chicory", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2023-HL-paper-p36-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p36-i0.png",
@@ -8436,67 +8612,6 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q15cii", topicId: "agsci-3-1", conceptId: "soil-ph-and-nitrous-oxide-emissions",
-    section: "B", questionRef: "2023 HL Q15(c)(ii)",
-    questionText: "Discuss the relationship between pH and N20 emissions on the graph and its implications for ongoing farming practice.",
-    tariffModel: {"kind":"fixed","notation":"5 + 3"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "its implications for ongoing farming practice. The higher the soil pH the lower the N20 emissions", marks: 5 },
-    { id: "r-2", kind: "point", verbatim: "(Farmers should test their soil pH and) add lime to increase the pH levels to as close to neutral as possible to reduce the N20 emissions", marks: 3 },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                28
-          ],
-          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q8c", topicId: "agsci-3-1", conceptId: "what-the-urea-leaching-test-shows",
-    section: "A", questionRef: "2023 HL Q8(c)",
-    stem: "Nitrate Levels in Soil Water Amount of Nitrate (mg/l) 300 250 200 150 100 50 0 Control Protected urea Unprotected urea Analyse the graph and briefly describe the conclusion the student made from his investigation.",
-    questionText: "The student tested the leachate using nitrate strips and recorded the results shown below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "There is a large amount of nitrate present in the water from the unprotected urea (250mg/l) compared to protected urea (50mg/l)", marks: 3 },
-    ],
-    figure: {
-          "candId": "agricultural-science-2023-HL-paper-p11-i1",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p11-i1.png",
-          "srcHash": "f7045abcca48c91ab4483d08bdc724a3",
-          "alt": "A vertical bar chart titled 'Nitrate Levels in Soil Water', drawn over a faded photograph of the bottle-leaching apparatus as background. The vertical axis is labelled 'Amount of Nitrate (mg/l)' and is scaled 0, 50, 100, 150, 200, 250, 300 with horizontal gridlines. The horizontal axis has three unlabelled-unit categories: 'Control', 'Protected urea' and 'Unprotected urea'. The bars are filled with a blue rippled-water texture. There is no visible bar above zero for Control; the Protected urea bar reaches approximately 50 mg/l; the Unprotected urea bar is much the tallest, reaching approximately 250 mg/l. Above the chart is the printed instruction '(c) The student tested the leachate using nitrate strips and recorded the results shown below.' and beneath it 'Analyse the graph and briefly describe the conclusion the student made from his investigation.' followed by a four-row empty answer table.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q16aii", topicId: "agsci-4-3-1", conceptId: "reading-an-emissions-figure-against-average",
-    section: "B", questionRef: "2023 HL Q16(a)(ii)",
-    stem: "Percentage Share of Farm Carbon Emissions 50 Current farm assessment (2021) Previous farm assessment (2019) National average Percentage Share (%) 40 30 20 10 0 Animal digestion Manure usage Fertiliser used Forage / Feed Sources of Carbon Emissions (Adapted from Teagasc, 2022)",
-    questionText: "State with reason if the main source of emissions is above or below the national average for the enterprise.",
-    tariffModel: {"kind":"fixed","notation":"5 + 1"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Below", marks: 5 },
-    { id: "r-2", kind: "point", verbatim: "As the average for the enterprise is over 40%", marks: 1 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
@@ -8741,30 +8856,6 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"}, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q18ai", topicId: "agsci-4-1", conceptId: "udder-structure",
-    section: "B", questionRef: "2023 HL Q18(a)(i)",
-    stem: "Label the parts on the official udder diagram.",
-    questionText: "Label any three parts of the structure of the udder.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "labels", kind: "anyN", verbatim: "Teat / Median suspensory ligament / Connective tissue / fine membrane / Epidermis / hind quarter / outer wall", marks: 3, contextNote: "Any three of the four labels, 1 mark each. Options in letter order: A, B, C, D.", group: {"claimMax":3,"perOption":1,"options":["Teat","Median suspensory ligament","Connective tissue / fine membrane","Epidermis / hind quarter / outer wall"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Udder structure",
-          "pages": [
-                37
-          ],
-          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
     },
   } as SecCard,
   {
@@ -18488,6 +18579,932 @@ export const CARDS: SecCard[] = [
           "alt": "Original Integrated Pest Management pyramid: Prevention at the base, then Cultural / Sanitation, Physical / Mechanical, Biological, and Chemical (Pesticide) at the narrow top.",
           "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 39 — © State Examinations Commission.",
           "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q1aii", topicId: "agsci-4-2", conceptId: "dual-purpose-breed",
+    section: "A", questionRef: "2023 HL Q1(a)(ii)",
+    questionText: "Breed C is a dual-purpose breed. Explain the underlined term.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dual-purpose breed is an animal breed that provides at least 2 kinds of resources (e.g. meat, eggs, milk)", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q2a", topicId: "agsci-3-1", conceptId: "cereal-growth-stages",
+    section: "A", questionRef: "2023 HL Q2(a)",
+    stem: "The diagram below shows an example of the growth cycle of the food crop barley.",
+    questionText: "Explain what happens at any two of the following stages in any named plant you have studied: Germination, Stem Elongation, Flowering.",
+    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Embryo's cells start to enlarge / seed coat breaks open / root or radicle emerges (first) / (followed by) the shoot or plumule emerges / Rapid growth of stems / stem lengthens (between the upper nodes) / Seed head develops or heading out / stem is fibrous and strong enough to support seed head / plants stop growing / produce flowers (buds) for reproduction", marks: 6, contextNote: "Any two of the three printed stages, 3 marks each (2(3)). In order the options describe Germination, Stem Elongation and Flowering.", group: {"claimMax":2,"perOption":3,"options":["Embryo's cells start to enlarge / seed coat breaks open / root or radicle emerges (first) / (followed by) the shoot or plumule emerges","Rapid growth of stems / stem lengthens (between the upper nodes)","Seed head develops or heading out / stem is fibrous and strong enough to support seed head / plants stop growing / produce flowers (buds) for reproduction"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q2(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p05-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p05-i0.png",
+          "srcHash": "334717cb9121b98aa27ee40df6d819dd",
+          "alt": "A five-panel cartoon strip showing the growth cycle of barley, drawn inside a single heavy black frame divided into five equal boxes. Above the frame, the numbers 1, 2, 3, 4 and 5 sit over the panels left to right. Each panel has a cream sky and a brown soil band along the bottom, with the stage name printed in white bold on the soil. Panel 1 'Germination' shows a tiny seedling with two small leaves just breaking the soil surface with a root below. Panel 2 'Tillering' shows a short dark-green plant with several narrow leaves fanning out from the base. Panel 3 'Stem Elongation' shows a taller light-green plant with a distinct upright stem and long leaves. Panel 4 'Flowering' shows a tall plant with an olive/orange stem carrying a slim green flowering head (ear) at the top. Panel 5 'Ripening' shows the same plant turned orange-brown with the drooping ripe ear and detaching grains. Above the strip is the heading 'Question 2 — The diagram shows an example of the growth cycle of the food crop barley.' Below it the instruction '(a) Explain what happens at any two of the following stages in any named plant you have studied.' and the start of a blank answer table with a grey 'Named plant:' bar and green-tinted row headers 'Germination' and 'Stem Elongation'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q4a", topicId: "agsci-4-3-3", conceptId: "pre-isolation-treatments",
+    section: "A", questionRef: "2023 HL Q4(a)",
+    stem: "Performance testing is carried out on bulls by the Irish Cattle Breeding Federation (ICBF) in Tully, Co. Kildare.",
+    questionText: "When bulls arrive at the test centre, they enter a pre-isolation area where they are clipped, dosed, treated for lice, and sorted into pens based on breed and weight. Suggest one reason for any three treatments listed below: Clipped; Worm dosed; Treated for lice; Sorted into pens based on breed and weight.",
+    tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Clipped Improves heat dissipation (from the body when sweating) or prevention of pneumonia/ control of lice / Worm dosed To kill any worms (endoparasites) present in animals / Treated for lice To prevent lice being spread between cattle / prevent irritation / Sorted into pens based on breed and weight Animals can be kept under the exact same conditions and comparisons can be made based on breed / reduced amount of competition between animals (as all similar weight)", marks: 6, contextNote: "A reason for any three of the four printed treatments, 2 marks each (3(2)).", group: {"claimMax":3,"perOption":2,"options":["Clipped Improves heat dissipation (from the body when sweating) or prevention of pneumonia/ control of lice","Worm dosed To kill any worms (endoparasites) present in animals","Treated for lice To prevent lice being spread between cattle / prevent irritation","Sorted into pens based on breed and weight Animals can be kept under the exact same conditions and comparisons can be made based on breed / reduced amount of competition between animals (as all similar weight)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q4(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q5a", topicId: "agsci-2-3", conceptId: "soil-sampling-method",
+    section: "A", questionRef: "2023 HL Q5(a)",
+    stem: "Soil testing is essential to determine the nutrient requirement of the soil.",
+    questionText: "Briefly describe how to collect soil samples for soil testing.",
+    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Soil sampler or soil corer or soil auger / W shape / take sample every 2 - 4ha / taken at random / avoid gateways or troughs or dung or urine patches / taken at uniform depth / take separate samples from areas that are different in soil type, previous cropping history, slope, drainage or persistent poor yields / do not sample a field until 3 to 6 months after the last application of P and K and 2 years where lime was applied / take a minimum of 20 soil cores / sample fields at the same time of the year to aid comparisons of soil sample results or avoid sampling under extremes of soil conditions e.g. waterlogged or very dry soils / place the soil sample in a soil box to avoid contamination and write the field number on the soil box", marks: 6, contextNote: "Any two points from the published pool, 3 marks each. The scheme adds \"(marks maybe awarded for points on a diagram)\".", group: {"claimMax":2,"perOption":3,"options":["Soil sampler or soil corer or soil auger","W shape","take sample every 2 - 4ha","taken at random","avoid gateways or troughs or dung or urine patches","taken at uniform depth","take separate samples from areas that are different in soil type, previous cropping history, slope, drainage or persistent poor yields","do not sample a field until 3 to 6 months after the last application of P and K and 2 years where lime was applied","take a minimum of 20 soil cores","sample fields at the same time of the year to aid comparisons of soil sample results or avoid sampling under extremes of soil conditions e.g. waterlogged or very dry soils","place the soil sample in a soil box to avoid contamination and write the field number on the soil box"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q5(a)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q5c", topicId: "agsci-2-3", conceptId: "soil-testing-economic-sustainability",
+    section: "A", questionRef: "2023 HL Q5(c)",
+    stem: "Soil testing is essential to determine the nutrient requirement of the soil.",
+    questionText: "With record high fertiliser prices, outline how soil testing can improve the economic sustainability of the farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Soil tests allow you to identify the key nutrients your soil needs more of, so you can make an informed decision on the correct fertiliser in the right quantity for soil's needs.", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q5(c)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q7a", topicId: "agsci-4-3-2", conceptId: "goat-and-cow-dairy-comparison",
+    section: "A", questionRef: "2023 HL Q7(a)",
+    stem: "Answer either (a) or (b). Liam and Joan are goat dairy farmers in County Sligo.",
+    questionText: "Complete the table to show how goat dairy farming compares to cow dairy farming. The first one has been done as an example.",
+    tariffModel: {"kind":"orderedSplit","notation":"3+3+2+2"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lactation length (days) — 305", marks: null, contextNote: "The scheme prints 3+3+2+2 for the four cow cells. The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next." },
+    { id: "r-2", kind: "point", verbatim: "Gestation length (days) — 280 - 283", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Oestrus length (hours) — 18 - 24", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Breeding programme — (High yielding cows with high milk solids) bred every year (or 365 days)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q7(a)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2023-hl-paper-goat-cow-table",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-paper-goat-cow-table.png",
+          "srcHash": "f29bd1cf2f54e2ae0fc6a16569459ca6",
+          "alt": "Original Question 7(a) table comparing goat and cow dairy farming. Main breeds, the worked example: goat Saanen and Alpine, cow Holstein Friesian and Jersey. Goat column: lactation length 300 days, gestation length 150 days, oestrus length 12 – 48 hours, breeding programme: high yielding goats don’t have to be bred each year. The cow column is blank for lactation length, gestation length, oestrus length and breeding programme.",
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper, PDF page 10 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q7b", topicId: "agsci-4-3-1", conceptId: "dairy-sustainability-bonus-actions",
+    section: "A", questionRef: "2023 HL Q7(b)",
+    stem: "Answer either (a) or (b). Liam and Joan are goat dairy farmers in County Sligo.",
+    questionText: "Some dairy farmers can receive a sustainability bonus if they are taking actions to improve sustainability on their farm. Describe actions these dairy farmers could do to improve their sustainability and receive the bonus. The first one has been done as an example: Use protected urea — Reduces nitrogen loss and greenhouse gases emissions while maintaining the yield when compared with unprotected urea.",
+    tariffModel: {"kind":"fixed","notation":"3+3+2+2"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Milk recording at least four times a year / ASSAP (water) / Increasing EBI / Improving soil / Land management / Farmer training / Record keeping or Traceability / Animal welfare / Identify high yielding cows with good milk solids for breeding or identifying and breeding more profitable and efficient cows which are better for the environment / identify and cull poorer producing cows or cows with high SCC / Undertake a water quality assessment to measure and improve the quality of water on the farm / EBI will help farmers breed a more profitable dairy cow and lower GHG emissions. / Use of LESS / sow multispecies swards / Increase grazing season / sow multispecies swards / grassland management to reduce risk of parasites / incorporate clover for N fixation and reduced fertiliser user / soil testing for pH, N, P or K every five years / Experience in milk production / qualification from Ag College or Teagasc course / Keep records of animal remedies / records of animal movements or births and deaths / use of AIM system / tagging / animal passports / compliance with disposal of animals / Sufficient access to clean water and forage / livestock in individual pens to be in sight of other livestock / calving pens hygienic and safe / castration with burdizzo to be before 6 months / manage AI to minimise calving difficulty / appropriate animal handling facilities to minimise stress or injury / lactating cows to be milked daily / quarantine bought in stock to monitor disease", marks: 10, contextNote: "Two actions, each with its description: four answers in all. The scheme prints 3+3+2+2. The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next. The first eight options are the scheme's actions and the last eight their descriptions, in the same order; a description counts only for an action you gave. The scheme prints three of the actions in full as ASSAP (water) assessment, Increasing EBI of the herd and Improving soil health. The worked example (protected urea) does not score.", group: {"claimMax":4,"perOption":3,"options":["Milk recording at least four times a year","ASSAP (water)","Increasing EBI","Improving soil","Land management","Farmer training","Record keeping or Traceability","Animal welfare","Identify high yielding cows with good milk solids for breeding or identifying and breeding more profitable and efficient cows which are better for the environment / identify and cull poorer producing cows or cows with high SCC","Undertake a water quality assessment to measure and improve the quality of water on the farm","EBI will help farmers breed a more profitable dairy cow and lower GHG emissions.","Use of LESS / sow multispecies swards","Increase grazing season / sow multispecies swards / grassland management to reduce risk of parasites / incorporate clover for N fixation and reduced fertiliser user / soil testing for pH, N, P or K every five years","Experience in milk production / qualification from Ag College or Teagasc course","Keep records of animal remedies / records of animal movements or births and deaths / use of AIM system / tagging / animal passports / compliance with disposal of animals","Sufficient access to clean water and forage / livestock in individual pens to be in sight of other livestock / calving pens hygienic and safe / castration with burdizzo to be before 6 months / manage AI to minimise calving difficulty / appropriate animal handling facilities to minimise stress or injury / lactating cows to be milked daily / quarantine bought in stock to monitor disease"],"perOptionSteps":[3,3,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q7(b)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q8c", topicId: "agsci-3-1", conceptId: "what-the-urea-leaching-test-shows",
+    section: "A", questionRef: "2023 HL Q8(c)",
+    stem: "An agricultural science student wanted to see if the amount of nitrates being leached into water from spreading protected urea is less than unprotected urea.",
+    questionText: "The student tested the leachate using nitrate strips and recorded the results shown below. Analyse the graph and briefly describe the conclusion the student made from his investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "There is a large amount of nitrate present in the water from the unprotected urea (250mg/l) compared to protected urea (50mg/l)", marks: 3, accepts: ["farmers should use protected urea as less nitrate is leached when compared to unprotected urea"], contextNote: "One conclusion, 3 marks; the scheme prints the two as alternatives." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q8(c)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p11-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p11-i1.png",
+          "srcHash": "f7045abcca48c91ab4483d08bdc724a3",
+          "alt": "A vertical bar chart titled 'Nitrate Levels in Soil Water', drawn over a faded photograph of the bottle-leaching apparatus as background. The vertical axis is labelled 'Amount of Nitrate (mg/l)' and is scaled 0, 50, 100, 150, 200, 250, 300 with horizontal gridlines. The horizontal axis has three unlabelled-unit categories: 'Control', 'Protected urea' and 'Unprotected urea'. The bars are filled with a blue rippled-water texture. There is no visible bar above zero for Control; the Protected urea bar reaches approximately 50 mg/l; the Unprotected urea bar is much the tallest, reaching approximately 250 mg/l. Above the chart is the printed instruction '(c) The student tested the leachate using nitrate strips and recorded the results shown below.' and beneath it 'Analyse the graph and briefly describe the conclusion the student made from his investigation.' followed by a four-row empty answer table.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q9aii", topicId: "agsci-3-3-2", conceptId: "precision-farming-benefits",
+    section: "A", questionRef: "2023 HL Q9(a)(ii)",
+    stem: "Answer either (a) or (b). The Farmdroid is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding, guided by precision GPS to within 8mm. (Adapted from Agriland, 2022)",
+    questionText: "Explain how the Farmdroid can benefit the environment and the farmer.",
+    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Less chemical herbicide required / fewer fossil fuels burned as solar powered / no need to recharge batteries / less soil compaction / increased yields as less weeds / precision sowing to maximise land usage / less labour", marks: 6, contextNote: "Any two benefits from the published pool, 3 marks each.", group: {"claimMax":2,"perOption":3,"options":["Less chemical herbicide required","fewer fossil fuels burned as solar powered","no need to recharge batteries","less soil compaction","increased yields as less weeds","precision sowing to maximise land usage","less labour"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q9(a)(ii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q9bi", topicId: "agsci-4-3-3", conceptId: "pregnancy-scanning-benefits",
+    section: "A", questionRef: "2023 HL Q9(b)(i)",
+    stem: "Answer either (a) or (b). Scanning female animals to determine if they are pregnant is an important job that is carried out on farms.",
+    questionText: "Briefly describe the benefits of pregnancy scanning in animals.",
+    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Know if the animal is barren or not (or pregnant) / know due date for accurate feeding / house animals at correct time / pen animals according to number of young they are carrying / a lot of barren animals will indicate a problem with fertility of sire / management practices at birth, especially for multiple births (identify due date)", marks: 6, contextNote: "Any two benefits from the published pool, 3 marks each.", group: {"claimMax":2,"perOption":3,"options":["Know if the animal is barren or not (or pregnant)","know due date for accurate feeding","house animals at correct time","pen animals according to number of young they are carrying","a lot of barren animals will indicate a problem with fertility of sire","management practices at birth, especially for multiple births (identify due date)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q9(b)(i)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q11a", topicId: "agsci-4-3-2", conceptId: "calves-per-cow-per-year",
+    section: "A", questionRef: "2023 HL Q11(a)",
+    stem: "Tim wants to improve the reproductive performance of his suckler cows on a grass-based system. He carried out research and found the key performance indicators (KPI) for a spring calving herd, shown in the table below. (Adapted from Teagasc, 2022)",
+    questionText: "Achieving a target of 0.95 will require excellent cow and calf management. Outline ways Tim can achieve this target.",
+    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good heat detection / good cow or sire fertility / grading up or cull poor performing cows / good hygiene at calving / enough good quality colostrum at birth / highly digestible feed (or concentrate supplementation) (to ensure good milk production or increased liveweight gain) / scanning of cows to accurately know calving date or proper supervision at calving or assist or vet if calving difficulties / iodine on navel at birth / vaccination programme", marks: 6, contextNote: "Any two ways from the published pool, 3 marks each.", group: {"claimMax":2,"perOption":3,"options":["Good heat detection","good cow or sire fertility","grading up or cull poor performing cows","good hygiene at calving","enough good quality colostrum at birth","highly digestible feed (or concentrate supplementation) (to ensure good milk production or increased liveweight gain)","scanning of cows to accurately know calving date or proper supervision at calving or assist or vet if calving difficulties","iodine on navel at birth","vaccination programme"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q11(a)",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p16-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p16-i1.png",
+          "srcHash": "f81dbcb9f5975f1de1b56da6d2508c0f",
+          "alt": "A table from the exam paper. Columns: Key Performance Indicators (KPI), National Average, National Target. Rows: Calves / cow / year, Calving interval (days), 6-week calving rate (%). 4 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q11b", topicId: "agsci-4-3-3", conceptId: "six-week-calving-rate",
+    section: "A", questionRef: "2023 HL Q11(b)",
+    stem: "Tim wants to improve the reproductive performance of his suckler cows on a grass-based system. The national average 6-week calving rate is 55% and the national target is 80%. (Adapted from Teagasc, 2022)",
+    questionText: "Briefly explain ways Tim can achieve the 6-week calving rate target of 80%.",
+    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Monitor liveweight (of young heifers) to ensure they are on course to achieve target weights (aim for 60% of mature weight at mating) / correct BCS of 3.0 at mating / correct nutrition - good quality leafy grass / good heat detection (to increase submission rate) / use AI on cows in first 3 weeks of breeding for replacements or increase EBI of herd or keep early calves for replacements for high EBI / identify non-cycling cows (and get them checked by the vet) / ensure healthy cows (received vaccinations) / synchronised breeding", marks: 4, contextNote: "Any two ways from the published pool, 2 marks each.", group: {"claimMax":2,"perOption":2,"options":["Monitor liveweight (of young heifers) to ensure they are on course to achieve target weights (aim for 60% of mature weight at mating)","correct BCS of 3.0 at mating","correct nutrition - good quality leafy grass","good heat detection (to increase submission rate)","use AI on cows in first 3 weeks of breeding for replacements or increase EBI of herd or keep early calves for replacements for high EBI","identify non-cycling cows (and get them checked by the vet)","ensure healthy cows (received vaccinations)","synchronised breeding"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q11(b)",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q13ai", topicId: "agsci-2-1", conceptId: "factors-of-soil-formation",
+    section: "B", questionRef: "2023 HL Q13(a)(i)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
+    questionText: "Describe two factors that are involved in the formation of soil. (Name each Factor and give a Description for each.)",
+    tariffModel: {"kind":"fixed","notation":"5+5+2+2"}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Parent material / Climate / Topography / Organisms / Time / Parent rock is weathered into smaller particles / granite contains quartz which is weathered into sand particles and acidic in nature / limestone rock is alkaline in nature and increases the pH of soil formed from it / determines physical or chemical characteristics of soil / Temperature – heating and cooling of rock Water – physical or chemical weathering (or any named form) – freeze-thaw or hydrolysis or solution or hydration or determines biological reactions / Slope of landscape / steep slopes the soil is eroded down to valley or thin layer of soil on slopes or deep fertile soil in valley / Contribute humus when die / (microorganisms) help to decompose organic matter / organic matter increases soil fertility / soils that develop / increase soil fertility or improve soil structure (burrowing, binding, eroding)/ organisms break up rock / Young soils (Ireland) have high levels of rock available for weathering / young soils not as deep", marks: 14, contextNote: "Two factors, each named with its description: four answers in all. The scheme prints 5+5+2+2. The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next. The first five options are the scheme's factors and the last five their descriptions, in the same order; a description counts only for a factor you named.", group: {"claimMax":4,"perOption":5,"options":["Parent material","Climate","Topography","Organisms","Time","Parent rock is weathered into smaller particles / granite contains quartz which is weathered into sand particles and acidic in nature / limestone rock is alkaline in nature and increases the pH of soil formed from it / determines physical or chemical characteristics of soil","Temperature – heating and cooling of rock Water – physical or chemical weathering (or any named form) – freeze-thaw or hydrolysis or solution or hydration or determines biological reactions","Slope of landscape / steep slopes the soil is eroded down to valley or thin layer of soil on slopes or deep fertile soil in valley","Contribute humus when die / (microorganisms) help to decompose organic matter / organic matter increases soil fertility / soils that develop / increase soil fertility or improve soil structure (burrowing, binding, eroding)/ organisms break up rock","Young soils (Ireland) have high levels of rock available for weathering / young soils not as deep"],"perOptionSteps":[5,5,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q13(a)(i)",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q13aii", topicId: "agsci-2-1", conceptId: "podzol-soil-profile",
+    section: "B", questionRef: "2023 HL Q13(a)(ii)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
+    questionText: "Draw a labelled diagram of a podzol soil profile.",
+    tariffModel: {"kind":"questionTotal","notation":"D = 0,3,6 + L = 3 x 2"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Elements of diagram: O or organic matter / A or topsoil / B or subsoil / C or bedrock or parent material / iron pan (or zone of accumulation) present in B = 6 marks", marks: null, contextNote: "Drawing, D = 0, 3 or 6: one element missing = 3 marks; two or more elements missing = 0 marks." },
+    { id: "r-2", kind: "point", verbatim: "Any three labels = 3(2) marks", marks: null, contextNote: "Labels, L = 3 x 2." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q13(a)(ii)",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q13bii", topicId: "agsci-2-2-2", conceptId: "soil-water-levels-farm-implications",
+    section: "B", questionRef: "2023 HL Q13(b)(ii)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (b) is about the level of water held in a soil sample.",
+    questionText: "Briefly describe the implications for a farmer of any two of the following: Field capacity; Saturation; Permanent wilting point.",
+    tariffModel: {"kind":"orderedSplit","notation":"2+1"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Field capacity — Plants can remove water from the soil easily or water available to plant or land is usable or land is easily cultivated or conditions are suitable for growth", marks: null, contextNote: "Any two of the three: the first correct implication earns 2 marks and the second 1 (2+1)." },
+    { id: "r-2", kind: "point", verbatim: "Saturation — Excess water (lack of air spaces) can reduce crop growth or waterlogged or easily poached or roots cannot respire, or no earthworms or drainage required to reduce waterlogging", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Permanent wilting point — Lack of water so plants can no longer extract water from the soil or irrigation necessary or reduced yield or delayed growing season or wind erosion of soil", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q13(b)(ii)",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q13c", topicId: "agsci-1-2", conceptId: "comparing-soil-infiltration-rate",
+    section: "B", questionRef: "2023 HL Q13(c)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
+    questionText: "Describe with the aid of a labelled diagram how a farmer would carry out an investigation to compare the drainage (infiltration) rate of a podzol and a brown earth soil sample and outline the expected result in this investigation.",
+    tariffModel: {"kind":"fixed","notation":"3(4)"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Dried soil sample / same mass of both soils / add to filter paper in funnel / add set volume of water to soil / record time taken for water to flow into beakers or record volume for filtrate (for set time) / water would pass through the brown earth sample quicker (as no iron pan)", marks: 12, contextNote: "Laboratory method: any three points, 4 marks each (3(4)). The scheme stars the timing step: \"record time taken for water to flow into beakers or record volume for filtrate (for set time)\" is compulsory.", group: {"claimMax":3,"perOption":4,"options":["Dried soil sample","same mass of both soils","add to filter paper in funnel","add set volume of water to soil","record time taken for water to flow into beakers or record volume for filtrate (for set time)","water would pass through the brown earth sample quicker (as no iron pan)"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "laboratory",
+                "label": "Laboratory method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Dried soil sample / same mass of both soils / add to filter paper in funnel / add set volume of water to soil / record time taken for water to flow into beakers or record volume for filtrate (for set time) / water would pass through the brown earth sample quicker (as no iron pan)",
+                            "marks": 12,
+                            "contextNote": "Laboratory method: any three points, 4 marks each (3(4)). The scheme stars the timing step: \"record time taken for water to flow into beakers or record volume for filtrate (for set time)\" is compulsory.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Dried soil sample",
+                                        "same mass of both soils",
+                                        "add to filter paper in funnel",
+                                        "add set volume of water to soil",
+                                        "record time taken for water to flow into beakers or record volume for filtrate (for set time)",
+                                        "water would pass through the brown earth sample quicker (as no iron pan)"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "field",
+                "label": "Field method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Two open ended tubes / set tubes into soil (one in each type) / pour equal volume of water into each tube / record time taken for water to drain down through tube / result: soil where water drains fastest has best infiltration rate",
+                            "marks": 12,
+                            "contextNote": "OR FIELD METHOD: any three points, 4 marks each (3(4)). The scheme stars \"record time taken for water to drain down through tube\" as compulsory.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Two open ended tubes",
+                                        "set tubes into soil (one in each type)",
+                                        "pour equal volume of water into each tube",
+                                        "record time taken for water to drain down through tube",
+                                        "result: soil where water drains fastest has best infiltration rate"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q13(c)",
+          "pages": [
+                20,
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q13dii", topicId: "agsci-2-2-2", conceptId: "functions-of-soil-water",
+    section: "B", questionRef: "2023 HL Q13(d)(ii)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (d) follows an article on VistaMilk using European Space Agency Sentinel satellite imagery to collect real-time data on soil moisture on Irish farms. (Adapted from Farmers Journal, 2022)",
+    questionText: "State the functions of soil moisture (water).",
+    tariffModel: {"kind":"fixed","notation":"4+2"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Provide water to plants (plant cells contain large amounts of water) / seed germination / photosynthesis / nutrients available / chemical reactions / keeps turgor / transpiration / microbial activity or soil organisms / to maintain soil structure or prevent erosion", marks: 6, contextNote: "Two functions: the first correct earns 4 marks and the second 2 (4+2).", group: {"claimMax":2,"perOption":4,"options":["Provide water to plants (plant cells contain large amounts of water)","seed germination","photosynthesis","nutrients available","chemical reactions","keeps turgor","transpiration","microbial activity or soil organisms","to maintain soil structure or prevent erosion"],"perOptionSteps":[4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q13(d)(ii)",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q14biii", topicId: "agsci-3-3-1", conceptId: "clover-as-a-companion-crop",
+    section: "B", questionRef: "2023 HL Q14(b)(iii)",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop.",
+    questionText: "Outline the advantages of sowing clover with the oilseed rape.",
+    tariffModel: {"kind":"fixed","notation":"5+1"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Increase nitrogen supply to the crop / encourage mycorrhizal fungi / improve soil function / their own root systems can help drainage / improve soil structure / prevents weeds", marks: 6, contextNote: "Two advantages: the first correct earns 5 marks and the second 1 (5+1).", group: {"claimMax":2,"perOption":5,"options":["Increase nitrogen supply to the crop","encourage mycorrhizal fungi","improve soil function","their own root systems can help drainage","improve soil structure","prevents weeds"],"perOptionSteps":[5,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q14(b)(iii)",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q14biv", topicId: "agsci-3-2", conceptId: "annual-plant-defined",
+    section: "B", questionRef: "2023 HL Q14(b)(iv)",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop. (The underlined term here is 'annual plant'.)",
+    questionText: "Berseem clover is an annual plant. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Completes its lifecycle in one year.", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q14(b)(iv)",
+          "pages": [
+                24,
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q14ci", topicId: "agsci-1-2", conceptId: "plant-count-method",
+    section: "B", questionRef: "2023 HL Q14(c)(i)",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) follows an extract: 'An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can be done next season in order to improve plant count numbers (e.g. higher seeding rate).' (Adapted from Farmers Journal, 2022)",
+    questionText: "Describe how to carry out a plant count in a 2 hectare field.",
+    tariffModel: {"kind":"fixed","notation":"3(4)"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Place quadrat (0.25m2) on the ground / at random / count the number of plants (established) in quadrat / repeat (at least 10 times) / get average plant count / multiply by 80,000 to determine the number of plants in 2 hectares", marks: 12, contextNote: "Any three steps, 4 marks each (3(4)).", group: {"claimMax":3,"perOption":4,"options":["Place quadrat (0.25m2) on the ground","at random","count the number of plants (established) in quadrat","repeat (at least 10 times)","get average plant count","multiply by 80,000 to determine the number of plants in 2 hectares"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q14(c)(i)",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q14cii", topicId: "agsci-3-3-2", conceptId: "value-of-a-plant-count",
+    section: "B", questionRef: "2023 HL Q14(c)(ii)",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) follows an extract: 'An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can be done next season in order to improve plant count numbers (e.g. higher seeding rate).' (Adapted from Farmers Journal, 2022)",
+    questionText: "Briefly explain advantages of carrying out a plant count in a newly sown or reseeded field.",
+    tariffModel: {"kind":"fixed","notation":"5+1"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Determine if sowing conditions were optimal or impact of weather conditions / if correct seeding rate was used / correct fertiliser amount used / determining germination or establishment rate / weed control", marks: 6, contextNote: "Two advantages: the first correct earns 5 marks and the second 1 (5+1).", group: {"claimMax":2,"perOption":5,"options":["Determine if sowing conditions were optimal or impact of weather conditions","if correct seeding rate was used","correct fertiliser amount used","determining germination or establishment rate","weed control"],"perOptionSteps":[5,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q14(c)(ii)",
+          "pages": [
+                25,
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q15a", topicId: "agsci-1-2", conceptId: "determining-soil-texture",
+    section: "B", questionRef: "2023 HL Q15(a)",
+    stem: "A secondary school recently designed and installed a new school garden and polytunnel. The school principal received a donation of top soil for the raised beds. The agricultural science class were tasked with finding out the best crops to sow. The students carried out a number of investigations to determine soil type and its suitability to grow specific crops.",
+    questionText: "The first investigation the students carried out was to determine the soil texture. Describe how they carried out this investigation to determine the soil texture.",
+    tariffModel: {"kind":"fixed","notation":"3(4)"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "dry soil sample / rub between fingers and thumb / note grittiness and smoothness / wet sample (and rub between fingers and thumb and note grittiness, smoothness) / note plasticity or if sample is sticky / check if it is possible to roll sample into threads or ring or cast / valid result", marks: 12, contextNote: "Hand method: any three points, 4 marks each (3(4)).", group: {"claimMax":3,"perOption":4,"options":["dry soil sample","rub between fingers and thumb","note grittiness and smoothness","wet sample (and rub between fingers and thumb and note grittiness, smoothness)","note plasticity or if sample is sticky","check if it is possible to roll sample into threads or ring or cast","valid result"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "hand",
+                "label": "Hand method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "dry soil sample / rub between fingers and thumb / note grittiness and smoothness / wet sample (and rub between fingers and thumb and note grittiness, smoothness) / note plasticity or if sample is sticky / check if it is possible to roll sample into threads or ring or cast / valid result",
+                            "marks": 12,
+                            "contextNote": "Hand method: any three points, 4 marks each (3(4)).",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "dry soil sample",
+                                        "rub between fingers and thumb",
+                                        "note grittiness and smoothness",
+                                        "wet sample (and rub between fingers and thumb and note grittiness, smoothness)",
+                                        "note plasticity or if sample is sticky",
+                                        "check if it is possible to roll sample into threads or ring or cast",
+                                        "valid result"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "sediment",
+                "label": "Sediment method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "add soil sample to water in a beaker and stir / pour mixture into graduated cylinder and rinse / completely cover the soil with water / stopper or cover the cylinder and shake to mix the soil / leave to settle for a few hours or overnight / observe layers that have settled / using the graduations on the cylinder record the amount of sand, silt and clay in the soil sample / calculate percentage / use soil triangle to find soil texture",
+                            "marks": 12,
+                            "contextNote": "Or Sediment method: any three points, 4 marks each (3(4)).",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "add soil sample to water in a beaker and stir",
+                                        "pour mixture into graduated cylinder and rinse",
+                                        "completely cover the soil with water",
+                                        "stopper or cover the cylinder and shake to mix the soil",
+                                        "leave to settle for a few hours or overnight",
+                                        "observe layers that have settled",
+                                        "using the graduations on the cylinder record the amount of sand, silt and clay in the soil sample",
+                                        "calculate percentage",
+                                        "use soil triangle to find soil texture"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "sieve",
+                "label": "Sieve method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "dry soil samples / crush sample (with pestle and mortar) / get mass of soil sample / place sample in sieves with largest sieve on top and smallest on bottom and shake / weigh contents of each sieve / calculate percentage of each particle type / using soil (texture) triangle classify soil sample",
+                            "marks": 12,
+                            "contextNote": "Or Sieve method: any three points, 4 marks each (3(4)).",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "dry soil samples",
+                                        "crush sample (with pestle and mortar)",
+                                        "get mass of soil sample",
+                                        "place sample in sieves with largest sieve on top and smallest on bottom and shake",
+                                        "weigh contents of each sieve",
+                                        "calculate percentage of each particle type",
+                                        "using soil (texture) triangle classify soil sample"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q15(a)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q15biii", topicId: "agsci-2-3", conceptId: "benefits-of-liming",
+    section: "B", questionRef: "2023 HL Q15(b)(iii)",
+    stem: "A secondary school recently designed and installed a new school garden and polytunnel. The students carried out a soil pH investigation on the donated top soil to work out which crops it would suit.",
+    questionText: "Farmers can improve the soil quality by liming to adjust the soil pH level. Briefly describe other benefits of liming the soil.",
+    tariffModel: {"kind":"fixed","notation":"5+2"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Increase in earthworm activity / improvement in soil structure (drainage or aeration or flocculation) / grass is more palatable to livestock / increased cation exchange capacity / improve nutrient availability", marks: 7, contextNote: "Two benefits: the first correct earns 5 marks and the second 2 (5+2).", group: {"claimMax":2,"perOption":5,"options":["Increase in earthworm activity","improvement in soil structure (drainage or aeration or flocculation)","grass is more palatable to livestock","increased cation exchange capacity","improve nutrient availability"],"perOptionSteps":[5,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q15(b)(iii)",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q15cii", topicId: "agsci-3-1", conceptId: "soil-ph-and-nitrous-oxide-emissions",
+    section: "B", questionRef: "2023 HL Q15(c)(ii)",
+    stem: "A secondary school recently designed and installed a new school garden and polytunnel. Analyse the graph showing the effect soil pH has on nitrous oxide (N20) emissions and answer the questions which follow.",
+    questionText: "Discuss the relationship between pH and N20 emissions on the graph and its implications for ongoing farming practice.",
+    tariffModel: {"kind":"fixed","notation":"5 + 3"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The higher the soil pH the lower the N20 emissions", marks: 5, contextNote: "The relationship, 5 marks." },
+    { id: "r-2", kind: "point", verbatim: "(Farmers should test their soil pH and) add lime to increase the pH levels to as close to neutral as possible to reduce the N20 emissions which is better for the environment and more sustainable", marks: 3, contextNote: "The implication for farming practice, 3 marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q15(c)(ii)",
+          "pages": [
+                28,
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p28-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p28-i0.png",
+          "srcHash": "76078bda4eb6c0e5809db08d83e49a45",
+          "alt": "A vertical bar chart on a light grey plot background, titled in dark blue 'Effect of soil pH on nitrous oxide (N2O) emissions'. The vertical axis is labelled in red 'Cumulaitve N2O Emissions (g N2O/ha/year)' (spelt 'Cumulaitve' in the original) and is scaled 0 to 7000 in steps of 1000 with horizontal gridlines. The horizontal axis is labelled in red 'Soil pH' with four categories: 5.1, 5.4, 6.2 and 6.9. Four bars of equal width, each a different colour, step downwards from left to right: red at 5.1 reaching about 6500, yellow at 5.4 reaching about 6000, green at 6.2 reaching about 5000, and blue at 6.9 reaching about 4000. Above the chart is the sliced line 'answer the questions which follow.'; below it the printed question '(i) State the soil pH that produces the least amount of N2O emissions.' with an empty answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q16aii", topicId: "agsci-4-3-1", conceptId: "reading-an-emissions-figure-against-average",
+    section: "B", questionRef: "2023 HL Q16(a)(ii)",
+    stem: "Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise which they received through their Bord Bia farmer feedback report. The graph highlights where the emissions are coming from on their farm. Analyse the graph and answer the questions which follow.",
+    questionText: "State with reason if the main source of emissions is above or below the national average for the enterprise.",
+    tariffModel: {"kind":"fixed","notation":"5 + 1"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Below", marks: 5, contextNote: "State: 5 marks." },
+    { id: "r-2", kind: "alt", verbatim: "As the average for the enterprise is over 40%", marks: 1, accepts: ["is less for the current and previous assessments"], contextNote: "Reason: 1 mark (5+1)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q16(a)(ii)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p30-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p30-i0.png",
+          "srcHash": "2cc93543764df4485ecbd232f5e2bca4",
+          "alt": "A grouped vertical bar chart drawn over a cartoon illustration of a green field and blue cloudy sky, inside a rounded blue-bordered frame, titled 'Percentage Share of Farm Carbon Emissions'. The vertical axis is labelled in purple 'Percentage Share (%)' and scaled 0 to 50 in steps of 10 with faint gridlines. The horizontal axis is labelled in purple 'Sources of Carbon Emissions' with four category groups: 'Animal digestion', 'Manure usage', 'Fertiliser used' and 'Forage / Feed'. A legend at the top right gives three series: blue = 'Current farm assessment (2021)', orange = 'Previous farm assessment (2019)', dark grey/black = 'National average'. Reading the bars: Animal digestion — blue about 38, orange about 38, black about 40.5; Manure usage — blue about 19.5, orange about 19.5, black about 21.5; Fertiliser used — blue about 17, orange about 17, black about 16; Forage / Feed — blue about 16, orange about 16, black about 12. In each group the blue and orange bars are essentially the same height. Below the chart is '(Adapted from Teagasc, 2022)' then '(i) Identify the main source of carbon emissions on the farm.' with an empty box, and '(ii) State with reason if the main source of emissions is above or below the national average for the enterprise.' with an answer table whose rows read 'State:' and 'Reason:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-1"]), kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q18ai", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2023 HL Q18(a)(i)",
+    stem: "Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report.",
+    questionText: "Label any three parts of the structure of the udder.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "labels", kind: "anyN", verbatim: "Teat / Median suspensory ligament / Connective tissue / fine membrane / Epidermis / hind quarter / outer wall", marks: 3, contextNote: "Any three of the four labels, 1 mark each (3(1)). Options in letter order: A, B, C, D.", group: {"claimMax":3,"perOption":1,"options":["Teat","Median suspensory ligament","Connective tissue / fine membrane","Epidermis / hind quarter / outer wall"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q18(a)(i)",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2023-hl-paper-udder",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-paper-udder.png",
+          "srcHash": "2af19f9a9c7e32bc670f1e607feb3228",
+          "alt": "Original Question 18(a)(i) cross-section of a cow’s udder with four arrows lettered A to D: A points at a teat at the lower left, B at the green band inside the top of the udder, C at the thin pale membrane dividing the inside at the top right, and D at the orange body of the udder near the hind teats.",
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper, PDF page 37 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Arrow from the lower left to the first teat (Teat)","askedInThisQuestion":true},{"letter":"B","meaning":"Arrow from the upper left to the green band inside the top of the udder (Median suspensory ligament)","askedInThisQuestion":true},{"letter":"C","meaning":"Arrow from the upper right to the thin pale membrane dividing the inside of the udder (Connective tissue / fine membrane)","askedInThisQuestion":true},{"letter":"D","meaning":"Arrow from the lower right to the orange body of the udder (Epidermis / hind quarter / outer wall)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q18av", topicId: "agsci-4-3-3", conceptId: "california-mastitis-test-order",
+    section: "B", questionRef: "2023 HL Q18(a)(v)",
+    stem: "Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report.",
+    questionText: "Jenny tested the milk quality from various samples of milk to see which cow had high SCC using the cow side California Mastitis Test (CMT). The steps involved in carrying out the test are shown in the table. Assist Jenny in placing each step in the correct order by matching the correct letter to the number in the box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1 A", marks: 2, contextNote: "Step 1: A, \"Take a sample of milk from each quarter onto each well of the paddle\". 2 marks for each step in its correct box (4(2))." },
+    { id: "r-2", kind: "point", verbatim: "2 D", marks: 2, contextNote: "Step 2: D, \"Pour off excess milk\"." },
+    { id: "r-3", kind: "point", verbatim: "3 B", marks: 2, contextNote: "Step 3: B, \"Add equal amounts of CMT solution and rotate in circular motion\"." },
+    { id: "r-4", kind: "point", verbatim: "4 C", marks: 2, contextNote: "Step 4: C, \"High cell count mixture will thicken to a gel\"." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q18(a)(v)",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2023-hl-paper-cmt-steps",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-paper-cmt-steps.png",
+          "srcHash": "690e399c4d210e941c1d1703522a5a09",
+          "alt": "Original Question 18(a)(v) California Mastitis Test steps, four captioned photographs lettered A to D above an answer row numbered 1 to 4. A: Take a sample of milk from each quarter onto each well of the paddle. B: Add equal amounts of CMT solution and rotate in circular motion. C: High cell count mixture will thicken to a gel. D: Pour off excess milk.",
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper, PDF page 38 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Take a sample of milk from each quarter onto each well of the paddle","askedInThisQuestion":true},{"letter":"B","meaning":"Add equal amounts of CMT solution and rotate in circular motion","askedInThisQuestion":true},{"letter":"C","meaning":"High cell count mixture will thicken to a gel","askedInThisQuestion":true},{"letter":"D","meaning":"Pour off excess milk","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q18bii", topicId: "agsci-4-3-2", conceptId: "factors-affecting-milk-quality",
+    section: "B", questionRef: "2023 HL Q18(b)(ii)",
+    stem: "Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report. You have been invited to visit the farm to advise Jenny and John on how to improve their milk quality.",
+    questionText: "As part of the inspection you look at the factors affecting milk quality. Describe the factors you would be looking for in your inspection.",
+    tariffModel: {"kind":"fixed","notation":"F:3(3) + D:3(3)"}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Cow health / Somatic cell counts / Diet / Milk handling or storage / Milk hygiene / Breed or genetics", marks: 9, contextNote: "Three factors, 3 marks each (F:3(3)). The scheme adds: \"Maximum two matching points (factor + describe) from any one category and third factor from another category\".", group: {"claimMax":3,"perOption":3,"options":["Cow health","Somatic cell counts","Diet","Milk handling or storage","Milk hygiene","Breed or genetics"]} },
+    { id: "r-2", kind: "anyN", verbatim: "susceptible to irritation or inflammation of the udder if hygiene conditions are poor / sick cows have reduced milk yield and poorer quality milk / high somatic cell counts in milk indicate an increased presence of white blood cells—a signal that the cow is fighting an illness / other types of somatic cells can degrade the fat and protein content in milk which adversely affect milk quality / affects the composition of milk / require good digestible feed / ~14% crude protein diet / lack of sufficient nutrients reduces milk quality / machine hygiene is very important, or machine is hot washed after milking / install plate cooler to reduce milk temperature as quickly as possible / bulk tank kept below 4oC / no milk washings entering the tank / any relevant point on hygiene or TBC / high EBI cow used or named breed with high milk solids", marks: 9, contextNote: "A description of each of the same three factors, 3 marks each (D:3(3)). In order the options describe cow health, somatic cell counts, diet, milk handling or storage, milk hygiene and breed or genetics.", openList: true, group: {"claimMax":3,"perOption":3,"options":["susceptible to irritation or inflammation of the udder if hygiene conditions are poor / sick cows have reduced milk yield and poorer quality milk","high somatic cell counts in milk indicate an increased presence of white blood cells—a signal that the cow is fighting an illness / other types of somatic cells can degrade the fat and protein content in milk which adversely affect milk quality","affects the composition of milk / require good digestible feed / ~14% crude protein diet / lack of sufficient nutrients reduces milk quality","machine hygiene is very important, or machine is hot washed after milking / install plate cooler to reduce milk temperature as quickly as possible / bulk tank kept below 4oC / no milk washings entering the tank","any relevant point on hygiene or TBC","high EBI cow used or named breed with high milk solids"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher — Q18(b)(ii)",
+          "pages": [
+                37,
+                38,
+                39
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
     },
   } as SecCard,
   {

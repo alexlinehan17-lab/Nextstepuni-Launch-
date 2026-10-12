@@ -1064,9 +1064,111 @@ POOLS_2024_ORDINARY = {
     'Q13(a)(ii)': (3, ['A', 'B', 'C', 'D']),
 }
 
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY}
+# 2023 Higher: Section A Q1-Q12 at 10 marks, Section B Q13-Q18 at 50.
+HIGHER_2023 = '''
+Q1(a)(i)|6|3|12|A – Short horn
+Q1(a)(ii)|2|3|12|provides at least 2 kinds of resources
+Q1(a)(iii)|2|3|12|Better quality offspring
+Q1(b)(i)|6|4|12|D – Jersey
+Q1(b)(ii)|4|4|12|Industry: Dairy
+Q2(a)|6|5|12|Rapid growth of stems
+Q2(b)|4|5|12|Shepherd’s purse
+Q3(a)|2|6|13|Grass / plant: lime
+Q3(b)|2|6|13|Weathering of limestone
+Q3(c)|6|6|13|Milk Fever or hypocalcaemia
+Q4(a)|6|7|13|To kill any worms (endoparasites)
+Q4(b)|4|7|13|Establishing the genetic potential of particular bulls
+Q5(a)|6|8|14|take a minimum of 20 soil cores
+Q5(b)|2|8|14|soil nutrient levels change slowly over time
+Q5(c)|2|8|14|Soil tests allow you to identify the key nutrients
+Q6(a)|4|9|14|Scald / foot rot / shelly hoof
+Q6(b)|2|9|14|red moist skin between digits
+Q6(c)|2|9|15|Antibiotic sprays or footbaths are usually sufficient
+Q6(d)|2|9|15|It has a direct effect on production
+Q7(a)|10|10|15|280 - 283
+Q7(b)|10|10|16|ASSAP (water)
+Q8(a)|4|11|17|Independent – Fertiliser type
+Q8(b)|3|11|17|Repeating an experiment more than once
+Q8(c)|3|11|17|farmers should use protected urea
+Q9(a)(i)|2|12|17|Controlling of weeds prior to the germination of the crop
+Q9(a)(ii)|6|12|17|Less chemical herbicide required
+Q9(a)(iii)|2|12|17|Soil moisture sensors
+Q9(b)(i)|6|13|17|Know if the animal is barren or not
+Q9(b)(ii)|4|13|18|Be there to assist with calving
+Q10(a)(i)|6|14|18|A: Liver
+Q10(a)(ii)|4|14|18|Assist in the digestion of feedstuffs
+Q10(b)(i)|6|15|18|Accept source of nutrient or function of nutrient
+Q10(b)(ii)|2|15|18|As animals get older they don’t grow as fast
+Q10(b)(iii)|2|15|18|Cannot breakdown the cellulose in the grass
+Q11(a)|6|16|19|Good heat detection
+Q11(b)|4|16|19|correct BCS of 3.0 at mating
+Q12(a)|3|17|19|1.1(kg/m
+Q12(b)|3|17|19|Slurry lagoon is not covered
+Q12(c)|2|17|19|As slurry is less dilute there are more nutrients available
+Q12(d)|2|17|19|Use a weighted container into tank
+Q13(a)(i)|14|20|20|5+5+2+2
+Q13(a)(ii)|12|20|20|Any three labels = 3(2) marks
+Q13(b)(i)|9|21|20|A: Saturation
+Q13(b)(ii)|3|21|21|Plants can remove water from the soil easily
+Q13(c)|12|22|21|OR FIELD METHOD
+Q13(d)(i)|6|23|21|Assists farmers in deciding when to drain the land
+Q13(d)(ii)|6|23|21|Provide water to plants
+Q14(a)|3|24|22|the seed is placed without any prior soil cultivation
+Q14(b)(i)|5|24|22|Harvest at different times
+Q14(b)(ii)|3|24|22|To sow two crops together
+Q14(b)(iii)|6|24|22|encourage mycorrhizal fungi
+Q14(b)(iv)|3|25|22|Completes its lifecycle in one year.
+Q14(b)(v)|3|25|22|Barley / wheat / oats / other valid example
+Q14(c)(i)|12|25|22|multiply by 80,000
+Q14(c)(ii)|6|26|22|if correct seeding rate was used
+Q14(c)(iii)|4|26|22|it is hard to see individual plants
+Q14(c)(iv)|5|26|22|certified seed has min
+Q15(a)|12|27|23|use soil triangle to find soil texture
+Q15(b)(i)|6|28|23|5.5 – 7.5
+Q15(b)(ii)|3|28|23|pH probe or meter
+Q15(b)(iii)|7|28|23|Increase in earthworm activity
+Q15(c)(i)|6|28|23|*6.9
+Q15(c)(ii)|8|29|23|The higher the soil pH the lower the
+Q15(d)|8|29|24|Sowing certified seed
+Q16(a)(i)|5|30|24|*Animal digestion
+Q16(a)(ii)|6|30|24|As the average for the enterprise is over 40%
+Q16(a)(iii)|6|30|24|their carbon emissions have remained fairly constant
+Q16(b)(i)|12|31|24|4+4+2+2
+Q16(b)(ii)|6|31|25|Soil cultivation or land reclamation
+Q16(c)|15|32|25|Max 12 marks awarded if not shown on diagram
+Q16(d)(i)|9|33|25|Increased pests and diseases introduced with warmer temperatures
+Q16(d)(ii)|6|33|25|Reduce chemical N usage by sowing clover
+Q17(a)(i)|16|34|26|Graze at 2 – 3 leaf stage
+Q17(a)(ii)|8|35|26|Adding nitrogen / rolling
+Q17(b)(i)|12|35|26|Get the best traits from each seed in his sward
+Q17(b)(ii)|4|35|26|Ensures good digestible grass throughout the grazing season
+Q17(b)(iii)|4|36|26|C = Chicory
+Q17(c)|6|36|27|Pollen grains are light or plentiful
+Q18(a)(i)|3|37|27|Median suspensory
+Q18(a)(ii)|7|37|27|Hard swollen (udder) quarter
+Q18(a)(iii)|4|37|27|Milk out the quarter
+Q18(a)(iv)|6|37|28|Disinfect teats pre and post milking
+Q18(a)(v)|8|38|28|4(2)
+Q18(b)(i)|4|38|28|There is a higher total solid content in the evening
+Q18(b)(ii)|18|39|28|F:3(3) +
+'''
+
+POOLS_2023_HIGHER = {
+    'Q2(a)': (2, ['Germination', 'Stem Elongation', 'Flowering']),
+    'Q2(b)': (2, ['Chickweed', 'Charlock', "Shepard's Purse"]),
+    'Q4(a)': (3, ['Clipped', 'Worm dosed', 'Treated for lice', 'Sorted into pens based on breed and weight']),
+    'Q13(b)(ii)': (2, ['Field capacity', 'Saturation', 'Permanent wilting point']),
+    'Q17(b)(iii)': (2, ['A', 'B', 'C']),
+    'Q17(c)': (1, ['sexually', 'asexually']),
+    'Q18(a)(i)': (3, ['A', 'B', 'C', 'D']),
+}
+
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER}
 
 SOURCES = [
+    (2023, 'higher', 'A', HIGHER_2023,
+     '059f553f84ee5e11732cc00a8dedb3163785170a8c1b292ec234326ddeb6c118',
+     '713384aadabd9a6e520dc5288f9047a929a4e43890e928ee7c957113c9d0581a'),
     (2024, 'ordinary', 'G', ORDINARY_2024,
      'dfdcb939847873c973368e2d59e01a1b9420a160d187398e4fed01131c273275',
      'b728e72363e7d7b7123f38884f637fcfad73adf2e32c6aaf57dce95eae52690e'),
@@ -1141,7 +1243,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -1192,6 +1294,8 @@ MODERN_LAYOUTS = {
                       'marks':lambda n: 10 if n<=12 else 50},
     (2025,'ordinary'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q15','Q17'},
                         'marks':lambda n: 10 if n<=12 else 50},
+    (2023,'higher'): {'either':{'Q1','Q7','Q9','Q10'}, 'bothWithEither':{'Q13','Q16'},
+                      'marks':lambda n: 10 if n<=12 else 50},
     (2024,'ordinary'): {'either':{'Q2','Q6','Q9','Q11'}, 'bothWithEither':{'Q15','Q18'},
                         'marks':lambda n: 10 if n<=12 else 50},
     (2024,'higher'): {'either':{'Q2','Q3','Q6','Q9'}, 'bothWithEither':{'Q13','Q14'},
@@ -1270,7 +1374,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85. Remaining editions stay open.')
 
 
 if __name__=='__main__':

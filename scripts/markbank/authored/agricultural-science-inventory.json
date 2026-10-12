@@ -4088,135 +4088,153 @@
         "sha256": "713384aadabd9a6e520dc5288f9047a929a4e43890e928ee7c957113c9d0581a",
         "pages": 32
       },
-      "authoredEnglishCardsForSitting": 82,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 85,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "009db7e34cafe66f",
           "page": 2,
           "cue": "Answer ten",
           "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer ten questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 m",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section A, ten of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "74aedfcd3041d2ba",
           "page": 2,
           "cue": "any four",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day and Month of Birth in the boxes on the front cover. Write your answers in blue or ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section B, four of six independent questions. Every question is retained."
         },
         {
           "id": "fcc876794c00fc0d",
           "page": 3,
           "cue": "any ten",
           "context": "ificate Examination 2023 3 Agricultural Science – Higher Level Section A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 Answer either (a) or (b). (a) (i) Identify each of the following breeds of animals. A B C (ii) Breed C is a dual-purpose breed. Explain the underlined term. (iii) Todd wanted ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: ten independent 10-mark questions, all retained."
         },
         {
           "id": "d488accd90df746b",
           "page": 3,
           "cue": "either",
           "context": "n A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 Answer either (a) or (b). (a) (i) Identify each of the following breeds of animals. A B C (ii) Breed C is a dual-purpose breed. Explain the underlined term. (iii) Todd wanted to purchase a purebred bull. Explain the importance of using a pureb",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1 either (a) or (b): both independently marked alternatives are retained."
         },
         {
           "id": "5980173421c15769",
           "page": 5,
           "cue": "any two",
           "context": "xample of the growth cycle of the food crop barley. 1 2 3 4 5 (a) Explain what happens at any two of the following stages in any named plant you have studied. Germination Stem Elongation Flowering (b) Identify any two of the weeds that can be found in Irish fields using the list below. Chickweed Charlock Shepard’s Purse Named",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(a): explain any two of three printed growth stages, 2(3). One card: a single anyN row lists all three stages, claim limit two."
         },
         {
           "id": "8f8a1a227248ac71",
           "page": 5,
           "cue": "any two",
           "context": "s in any named plant you have studied. Germination Stem Elongation Flowering (b) Identify any two of the weeds that can be found in Irish fields using the list below. Chickweed Charlock Shepard’s Purse Named plant: Germination Tillering Stem Elongation Flowering Ripening",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(b): identify any two of three weed photographs, 2(2). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
         },
         {
           "id": "31a0b95b8b64622b",
           "page": 6,
           "cue": "either",
           "context": "mportant element required by both plants and animals. (a) State one source of calcium for either plants or animals. (b) Outline one process by which calcium becomes available to plants. (c) Explain one symptom of a named calcium deficiency in cows. Plant or animal: Name: Symptom:",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q3(a): one source of calcium for either plants or animals; the scheme prints one open pool for each and one 2-mark award."
         },
         {
           "id": "ebaf4d19714ab459",
           "page": 7,
           "cue": "any three",
           "context": " treated for lice, and sorted into pens based on breed and weight. Suggest one reason for any three treatments listed below. Clipped Worm dosed Treated for lice Sorted into pens based on breed and weight (b) Outline the importance of performance testing to the beef or dairy industry in Ireland. Beef or dairy industry:",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q4(a): a reason for any three of four printed treatments, 3(2). One card: a single anyN row lists all four treatments, claim limit three."
         },
         {
           "id": "ec450d9b7f7a6f17",
           "page": 10,
           "cue": "either",
           "context": "ing Certificate Examination 2023 10 Agricultural Science – Higher Level Question 7 Answer either (a) or (b). Liam and Joan are goat dairy farmers in County Sligo. (a) Complete the table to show how goat dairy farming compares to cow dairy farming. The first one has been done as an example. Goat Cow Main breeds Saanen and Alp",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q7 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "6df18fa968ac3e26",
           "page": 12,
           "cue": "either",
           "context": "ing Certificate Examination 2023 12 Agricultural Science – Higher Level Question 9 Answer either (a) or (b). (a) Read the article and answer the questions which follow. The Farmdroid has landed in Ireland The Farmdroid, which won the National Ploughing Championship 2022 machine of the year is a fully functioning solar powere",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "03d94ff3adba0f87",
           "page": 14,
           "cue": "either",
           "context": "ng Certificate Examination 2023 14 Agricultural Science – Higher Level Question 10 Answer either (a) or (b). (a) (i) Label the diagram below of the monogastric digestive system. (ii) Outline the role of microorganisms in the monogastric digestive system. A: B: C: A B C",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q10 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "e8badd31ecb8c904",
           "page": 20,
           "cue": "any four",
           "context": "ficate Examination 2023 20 Agricultural Science – Higher Level Section B 200 marks Answer any four questions. Each question carries 50 marks. Question 13 Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. (a) (i) Describe two factors that ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: four of six independent 50-mark questions, all retained."
         },
         {
           "id": "cf154a4d33353a8e",
           "page": 20,
           "cue": "either",
           "context": " four questions. Each question carries 50 marks. Question 13 Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. (a) (i) Describe two factors that are involved in the formation of soil. Factor Description 1. 2. (ii) Draw a labelled diagra",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "e1364468514ac507",
           "page": 21,
           "cue": "any two",
           "context": "nt Field capacity Saturation A B C (ii) Briefly describe the implications for a farmer of any two of the following. Field capacity: Saturation: Permanent wilting point:",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q13(b)(ii): implications of any two of three printed soil water states, 2+1. One card whose three rows are the published answers, the first correct at 2 and the second at 1."
         },
         {
           "id": "9bb0357d5e6415ff",
           "page": 30,
           "cue": "either",
           "context": "tion 2023 30 Agricultural Science – Higher Level Question 16 Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. (a) Anna and Lucy examined the percentage share of the carbon emissions from their beef e",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q16: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "3ae0bc3aadd760ee",
           "page": 36,
           "cue": "any two",
           "context": "eaving Certificate Examination 2023 36 Agricultural Science – Higher Level (iii) Identify any two of the plant species commonly found in Irish multi species seed mixtures. A B C (c) Grass has the ability to reproduce sexually and asexually. Explain, with the aid of a labelled diagram, how a grass plant reproduces either sexua",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q17(b)(iii): identify any two of three plant photographs, 2(2). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
         },
         {
           "id": "7a167b7d5c18ef90",
           "page": 36,
           "cue": "either",
           "context": " and asexually. Explain, with the aid of a labelled diagram, how a grass plant reproduces either sexually or asexually. Type of reproduction: Labelled diagram:",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q17(c): grass reproduction either sexually or asexually. The scheme marks the two with different points, so they are mutually exclusive row routes on one card."
         },
         {
           "id": "e52b396928582129",
           "page": 37,
           "cue": "any three",
           "context": "ticular the somatic cell count (SCC) figures from their recent milk report. (a) (i) Label any three parts of the structure of the udder. (ii) Briefly describe the symptoms of mastitis in cows. (iii) Explain the treatment of mastitis in cows. (iv) Briefly describe ways farmers can reduce mastitis in cows. A B C D A B",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q18(a)(i): label any three of four lettered udder structures, 3(1). One card: a single anyN row lists all four labels, claim limit three."
         }
       ]
     },
@@ -4235,7 +4253,7 @@
         "sha256": "36d742784c18cd8525a3901e91a4334d7c7b61755588363b7d4a940b5904d1c4",
         "pages": 32
       },
-      "authoredEnglishCardsForSitting": 82,
+      "authoredEnglishCardsForSitting": 85,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

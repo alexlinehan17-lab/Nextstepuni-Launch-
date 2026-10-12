@@ -443,7 +443,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(561);
+    expect(additions.size).toBe(564);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length + withdrawnFor(live).length).toBe(10_495);
@@ -476,6 +476,30 @@ describe('Mark Bank card preservation', () => {
       'agsci-2024-ol-q2biii': 'Replaces a stem of run-together diagram labels with the paper\'s lead-in and the picture crop.',
       'agsci-2024-ol-q14cii': 'Restores the published 2 + 2 for name or description: two names and two descriptions at 2 each.',
       'agsci-2024-ol-q14d': 'Restores the published 6(2): six hay/silage cells at 2 marks each, not three paired rows.',
+      'agsci-2023-hl-q1aii': 'Restores the whole published answer ("... at least 2 kinds of resources (e.g. meat, eggs, milk)").',
+      'agsci-2023-hl-q2a': 'Any two of three printed growth stages on one card, Flowering included (2(3)).',
+      'agsci-2023-hl-q4a': 'Any three of four printed treatments on one card, sorting into pens included (3(2)).',
+      'agsci-2023-hl-q5a': 'One row lists the whole sampling pool, any two at 3 (2(3)).',
+      'agsci-2023-hl-q5c': 'Restores the whole published answer sentence.',
+      'agsci-2023-hl-q8c': 'Replaces chart-label soup with the paper\'s wording and accepts both published conclusions.',
+      'agsci-2023-hl-q9aii': 'One row lists the whole Farmdroid benefit pool, any two at 3 (2(3)).',
+      'agsci-2023-hl-q9bi': 'One row lists the whole pregnancy-scanning pool, any two at 3 (2(3)).',
+      'agsci-2023-hl-q11a': 'One row lists the whole calves-per-cow pool, any two at 3 (2(3)).',
+      'agsci-2023-hl-q11b': 'One row lists the whole calving-rate pool, any two at 2 (2(2)).',
+      'agsci-2023-hl-q13ai': 'Factors and descriptions earn 5+5+2+2 in the order correct, not 7 per pair.',
+      'agsci-2023-hl-q13aii': 'The podzol drawing is banded D = 0,3,6 plus L = 3 x 2, not five ranked rows.',
+      'agsci-2023-hl-q13bii': 'Restores each soil water state\'s whole published implication.',
+      'agsci-2023-hl-q13c': 'Laboratory and field methods are mutually exclusive routes, every point listed (3(4)).',
+      'agsci-2023-hl-q13dii': 'Lists all nine soil moisture functions at 4+2.',
+      'agsci-2023-hl-q14biii': 'Lists all six clover advantages at 5+1.',
+      'agsci-2023-hl-q14biv': 'Names the underlined term the paper prints ("annual plant").',
+      'agsci-2023-hl-q14ci': 'Lists all six plant-count steps, any three at 4 (3(4)).',
+      'agsci-2023-hl-q14cii': 'Lists all five plant-count advantages at 5+1.',
+      'agsci-2023-hl-q15a': 'Hand, sediment and sieve methods are mutually exclusive routes, every point listed (3(4)).',
+      'agsci-2023-hl-q15biii': 'Lists all five liming benefits at 5+2.',
+      'agsci-2023-hl-q15cii': 'Replaces chart-label soup with the paper\'s lead-in and chart; restores both whole answers.',
+      'agsci-2023-hl-q16aii': 'Replaces chart-label soup with the paper\'s lead-in and chart; accepts both published reasons.',
+      'agsci-2023-hl-q18bii': 'Three factors and three descriptions at 3 each (F:3(3) + D:3(3)), not 6 per pair.',
     };
     expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
     const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
@@ -495,6 +519,9 @@ describe('Mark Bank card preservation', () => {
     // 2024 Higher corrections keep each original's ID and total.
     for (const [id, marks] of [['agsci-2024-hl-q2ai', 4], ['agsci-2024-hl-q6a', 10], ['agsci-2024-hl-q6bii', 4], ['agsci-2024-hl-q15aiii', 4],
       ['agsci-2024-hl-q17a', 6], ['agsci-2024-hl-q18aiii', 8]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+    // 2023 Higher corrections keep each original's ID and total.
+    for (const [id, marks] of [['agsci-2023-hl-q2a', 6], ['agsci-2023-hl-q4a', 6], ['agsci-2023-hl-q13ai', 14], ['agsci-2023-hl-q13aii', 12],
+      ['agsci-2023-hl-q13c', 12], ['agsci-2023-hl-q15a', 12], ['agsci-2023-hl-q18bii', 18]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {

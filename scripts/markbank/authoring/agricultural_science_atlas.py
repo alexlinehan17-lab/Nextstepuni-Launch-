@@ -18,7 +18,6 @@ RUNTIME = ROOT / 'data/examTopics/agricultural-science-question-runtime.json'
 # each question crop and stop before the next independently marked part.
 REGIONS = {
     'agsci-2022-ol-q2bii': ([0, .089, 1, .596], [0, .618, 1, .732]),
-    'agsci-2023-hl-q18ai': ([0, .066, 1, .386], [0, .317, 1, .559]),
     'agsci-2022-ol-q13bi': ([0, .066, 1, .383], [0, .085, 1, .149]),
     'agsci-2025-ol-q8b': ([0, .529, 1, .808], [0, .370, 1, .419]),
 }
@@ -26,7 +25,6 @@ REGIONS = {
 NUMBERS = {
     'agsci-2022-ol-q2bii': '1001',
     'agsci-2022-ol-q13bi': '1003',
-    'agsci-2023-hl-q18ai': '1001',
     'agsci-2025-ol-q8b': '1001',
 }
 

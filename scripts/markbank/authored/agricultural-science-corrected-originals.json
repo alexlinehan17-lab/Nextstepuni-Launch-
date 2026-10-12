@@ -1218,5 +1218,1175 @@
   },
   "originalSha256": "c77bc6df12fe479fab1b0f5a868d0daf364f50af1da94b62b0a59c0e3ce2f046",
   "snapshotFrom": "codex/agricultural-science-completion-20261007 at 42285673 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q1aii": {
+  "original": {
+   "id": "agsci-2023-hl-q1aii",
+   "topicId": "agsci-4-2",
+   "conceptId": "dual-purpose-breed",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 HL Q1(a)(ii)",
+   "stem": "Answer either (a) or (b). Part (i) shows photographs of three cattle breeds labelled A, B and C; breed C is the Simmental, named in part (i). The term underlined in the paper is 'dual-purpose breed'.",
+   "questionText": "Breed C is a dual-purpose breed. Explain the underlined term.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Dual-purpose breed is an animal breed that provides at least 2",
+     "marks": 2,
+     "contextNote": "The scheme's sentence runs on: '…at least 2 kinds of resources (e.g. meat, eggs, milk)'. The 2-mark award is printed between the two lines in the extracted scheme, which is why the row text stops where it does."
+    }
+   ],
+   "notes": "Q1 offers a choice of (a) or (b); this part is worth 2 of the question's 10 marks (the scheme splits (a) as 3(2) + 2 + 2). Part (a)(i) — identifying breeds A, B and C from photographs — is skipped for want of a figure. VERIFIER FIX: the stem now identifies breed C and names the underlined term, because the original card rendered 'Breed C' and 'the underlined term' with no photograph and no underline, and the author's explanation of both lived in `notes`, which build-deck.mjs does not emit onto the shipped card."
+  },
+  "originalSha256": "4630d58de1e4bdc2e2062dfff739d32c199c669a8bc7a2171cae1066a113b9ab",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q2a": {
+  "original": {
+   "id": "agsci-2023-hl-q2a",
+   "topicId": "agsci-3-1",
+   "conceptId": "cereal-growth-stages",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 HL Q2(a)",
+   "stem": "The diagram below shows an example of the growth cycle of the food crop barley.",
+   "questionText": "Explain what happens at any two of the following stages in any named plant you have studied: Germination, Stem Elongation, Flowering.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(3)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Germination — Embryo's cells start to enlarge",
+     "marks": 3,
+     "accepts": [
+      "seed coat breaks open",
+      "root or radicle emerges (first)",
+      "(followed by) the shoot or plumule emerges"
+     ],
+     "contextNote": "Within a stage the scheme's solidus list is alternatives: one correct statement about the stage earns its 3 marks."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Stem Elongation — Rapid growth of stems",
+     "marks": 3,
+     "accepts": [
+      "stem lengthens (between the upper nodes)"
+     ],
+     "contextNote": "Any TWO of the three stages score 3 marks each. If you answered Flowering instead, the scheme's answer is: 'Seed head develops or heading out / stem is fibrous and strong enough to support seed head / plants stop growing / produce flowers (buds) for reproduction'."
+    }
+   ],
+   "notes": "2(3) = two stages at 3 marks each, 6 marks in all. The paper offers three stages and asks for any two, so only two rows are funded by the tariff; the third option (Flowering) is quoted in full on row 2's note so a student who chose it can still mark it. The card carries no figure because the question lists its own three stages and asks about 'any named plant you have studied' — the barley growth-cycle diagram is scene-setting only.",
+   "figureKey": "agricultural-science-2023-HL-paper-p05-i0"
+  },
+  "originalSha256": "c8bea5bc0b37e0815c0138928a2e3c61ced3b6e4643862abcb8b3148c2d80dcf",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q4a": {
+  "original": {
+   "id": "agsci-2023-hl-q4a",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "pre-isolation-treatments",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 HL Q4(a)",
+   "stem": "Performance testing is carried out on bulls by the Irish Cattle Breeding Federation (ICBF) in Tully, Co. Kildare.",
+   "questionText": "When bulls arrive at the test centre, they enter a pre-isolation area where they are clipped, dosed, treated for lice, and sorted into pens based on breed and weight. Suggest one reason for any three treatments listed below: Clipped; Worm dosed; Treated for lice; Sorted into pens based on breed and weight.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3(2)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Clipped — Improves heat dissipation",
+     "marks": 2,
+     "accepts": [
+      "prevention of pneumonia",
+      "control of lice"
+     ],
+     "contextNote": "The scheme prints: 'Improves heat dissipation (from the body when sweating) or prevention of pneumonia / control of lice'. The row text stops at the line break because the row label is interleaved into the answer in the extracted scheme."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Worm dosed — To kill any worms (endoparasites) present in animals",
+     "marks": 2
+    },
+    {
+     "id": "r-3",
+     "kind": "alt",
+     "verbatim": "Treated for lice — To prevent lice being spread between cattle",
+     "marks": 2,
+     "accepts": [
+      "prevent irritation"
+     ],
+     "contextNote": "The paper lists a fourth treatment, 'Sorted into pens based on breed and weight', and only three are required. Its scheme answer is: 'Animals can be kept under the exact same conditions and comparisons can be made based on breed / reduced amount of competition between animals (as all similar weight)' — equally creditable in place of any row here."
+    }
+   ],
+   "notes": "3(2) = any three treatments at 2 marks each, 6 marks in all. The paper lists FOUR treatments and asks for three, so only three rows are funded by the tariff; the fourth is quoted in full on row 3's note rather than added as a row, which would have printed 8 marks on a 6-mark part."
+  },
+  "originalSha256": "321f5fe814c261a5bce0e7b9446651d21f8a959fd194e83fc68010b6c755ca35",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q5a": {
+  "original": {
+   "id": "agsci-2023-hl-q5a",
+   "topicId": "agsci-2-3",
+   "conceptId": "soil-sampling-method",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 HL Q5(a)",
+   "stem": "Soil testing is essential to determine the nutrient requirement of the soil.",
+   "questionText": "Briefly describe how to collect soil samples for soil testing.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(3)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Soil sampler or soil corer or soil auger",
+     "marks": 3,
+     "contextNote": "The scheme prints these three as alternatives, so any one scores. 2(3) funds ANY two points from the scheme's pool, not these two specifically — if both of your valid points appear in the list on the next row, this slot is filled too."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "take a minimum of 20 soil cores",
+     "marks": 3,
+     "accepts": [
+      "W shape",
+      "take sample every 2 - 4ha",
+      "taken at random",
+      "avoid gateways or troughs or dung or urine patches",
+      "taken at uniform depth",
+      "take separate samples from areas that are different in soil type, previous cropping history, slope, drainage or persistent poor yields",
+      "do not sample a field until 3 to 6 months after the last application of P and K and 2 years where lime was applied",
+      "sample fields at the same time of the year to aid comparisons of soil sample results",
+      "avoid sampling under extremes of soil conditions e.g. waterlogged or very dry soils",
+      "place the soil sample in a soil box to avoid contamination and write the field number on the soil box"
+     ],
+     "contextNote": "Any point from the scheme's pool fills this slot. The scheme also notes that 'marks maybe awarded for points on a diagram'."
+    }
+   ],
+   "notes": "2(3) = any two points at 3 marks each. The scheme prints one long solidus pool of roughly a dozen sampling points against that tariff, so only two rows are funded; the rest of the pool sits in row 2's accepts. VERIFIER FIX: r-1 retyped point → alt (the scheme prints three alternatives), and given a contextNote so a student whose two points both came from r-2's pool does not read r-1 as a 3-mark loss."
+  },
+  "originalSha256": "0e98de98e8294fd2bf1f5908bb362905d8787754f44060601f19fbe80deecdf6",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q5c": {
+  "original": {
+   "id": "agsci-2023-hl-q5c",
+   "topicId": "agsci-2-3",
+   "conceptId": "soil-testing-economic-sustainability",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 HL Q5(c)",
+   "stem": "Soil testing is essential to determine the nutrient requirement of the soil.",
+   "questionText": "With record high fertiliser prices, outline how soil testing can improve the economic sustainability of the farm.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Soil tests allow you to identify the key nutrients your soil",
+     "marks": 2,
+     "contextNote": "The scheme's sentence continues: '…needs more of, so you can make an informed decision on the correct fertiliser in the right quantity for soil's needs.' The 2-mark award is printed mid-sentence in the extracted scheme, which is why the row text stops where it does."
+    }
+   ],
+   "notes": "2 marks for the single developed point the scheme prints. The row is truncated at the point where the mark digit is interleaved into the sentence; the full wording is given in the row note rather than paraphrased."
+  },
+  "originalSha256": "76b5f26ab38ef71560f280b0b662b62d44fb951d76d61168bdfc52921f34cfcf",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q8c": {
+  "original": {
+   "id": "agsci-2023-hl-q8c",
+   "topicId": "agsci-3-1",
+   "conceptId": "what-the-urea-leaching-test-shows",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 HL Q8(c)",
+   "questionText": "The student tested the leachate using nitrate strips and recorded the results shown below.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "There is a large amount of nitrate present in the water from the unprotected urea (250mg/l) compared to protected urea (50mg/l)",
+     "marks": 3
+    }
+   ],
+   "stem": "Nitrate Levels in Soil Water Amount of Nitrate (mg/l) 300 250 200 150 100 50 0 Control Protected urea Unprotected urea Analyse the graph and briefly describe the conclusion the student made from his investigation.",
+   "notes": "The scheme goes on to say what a farmer should do about it: use protected urea, because less nitrate leaches from it.",
+   "figureKey": "agricultural-science-2023-HL-paper-p11-i1"
+  },
+  "originalSha256": "0ceaa6316568411d2b45c0c7f6eaff25e51de20d6409f60801ef0e5595a58598",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q9aii": {
+  "original": {
+   "id": "agsci-2023-hl-q9aii",
+   "topicId": "agsci-3-3-2",
+   "conceptId": "precision-farming-benefits",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 HL Q9(a)(ii)",
+   "stem": "Answer either (a) or (b). The Farmdroid is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding, guided by precision GPS to within 8mm. (Adapted from Agriland, 2022)",
+   "questionText": "Explain how the Farmdroid can benefit the environment and the farmer.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(3)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Less chemical herbicide required",
+     "marks": 3,
+     "contextNote": "2(3) funds ANY two benefits from the scheme's pool, not these two specifically — if both of your benefits appear in the list on the next row, this slot is filled too."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "fewer fossil fuels burned as solar powered",
+     "marks": 3,
+     "accepts": [
+      "no need to recharge batteries",
+      "less soil compaction",
+      "increased yields as less weeds",
+      "precision sowing to maximise land usage",
+      "less labour"
+     ],
+     "contextNote": "Any point from the scheme's pool fills this slot; the question wants a benefit to the environment AND one to the farmer."
+    }
+   ],
+   "notes": "2(3) = any two benefits at 3 marks each, 6 marks in all — not seven points of 3. Only two rows are funded; the rest of the printed pool sits in row 2's accepts. VERIFIER FIX: contextNote added to r-1 so a student whose two benefits both came from r-2's pool is not shown a phantom 3-mark loss."
+  },
+  "originalSha256": "f75e86f45afdcccc701a157b174a0861d0296c5d2a318494b09d9c6feb334c68",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q9bi": {
+  "original": {
+   "id": "agsci-2023-hl-q9bi",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "pregnancy-scanning-benefits",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 HL Q9(b)(i)",
+   "stem": "Answer either (a) or (b). Scanning female animals to determine if they are pregnant is an important job that is carried out on farms.",
+   "questionText": "Briefly describe the benefits of pregnancy scanning in animals.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(3)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Know if the animal is barren or not (or pregnant)",
+     "marks": 3,
+     "contextNote": "2(3) funds ANY two benefits from the scheme's pool, not these two specifically — if both of your benefits appear in the list on the next row, this slot is filled too."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "know due date for accurate feeding",
+     "marks": 3,
+     "accepts": [
+      "house animals at correct time",
+      "pen animals according to number of young they are carrying",
+      "a lot of barren animals will indicate a problem with fertility of sire",
+      "management practices at birth, especially for multiple births (identify due date)"
+     ],
+     "contextNote": "Any benefit from the scheme's pool fills this slot."
+    }
+   ],
+   "notes": "2(3) = any two benefits at 3 marks each. Six benefits are printed against that tariff, so only two rows are funded and the remainder sit in row 2's accepts. VERIFIER FIX: contextNote added to r-1 so a student whose two benefits both came from r-2's pool is not shown a phantom 3-mark loss."
+  },
+  "originalSha256": "b0bfe0f5e319b84794631b31bf1c14ce68da4b03c40eba4bb3df0f41f9b4d9d2",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q11a": {
+  "original": {
+   "id": "agsci-2023-hl-q11a",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "calves-per-cow-per-year",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 HL Q11(a)",
+   "stem": "Tim wants to improve the reproductive performance of his suckler cows on a grass-based system. He carried out research and found the key performance indicators (KPI) for a spring calving herd, shown in the table below. (Adapted from Teagasc, 2022)",
+   "questionText": "Achieving a target of 0.95 will require excellent cow and calf management. Outline ways Tim can achieve this target.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(3)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Good heat detection",
+     "marks": 3,
+     "contextNote": "2(3) funds ANY two ways from the scheme's pool, not these two specifically — if both of your ways appear in the list on the next row, this slot is filled too."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "good cow or sire fertility",
+     "marks": 3,
+     "accepts": [
+      "grading up or cull poor performing cows",
+      "good hygiene at calving",
+      "enough good quality colostrum at birth",
+      "highly digestible feed (or concentrate supplementation) (to ensure good milk production or increased liveweight gain)",
+      "scanning of cows to accurately know calving date",
+      "proper supervision at calving or assist or vet if calving difficulties",
+      "iodine on navel at birth",
+      "vaccination programme"
+     ],
+     "contextNote": "Any way from the scheme's pool fills this slot."
+    }
+   ],
+   "notes": "2(3) = any two ways at 3 marks each. Ten ways are printed against that tariff, so only two rows are funded; the remainder are in row 2's accepts. VERIFIER FIX: contextNote added to r-1 so a student whose two ways both came from r-2's pool is not shown a phantom 3-mark loss.",
+   "figureKey": "agricultural-science-2023-HL-paper-p16-i1"
+  },
+  "originalSha256": "bf94fd89191e434202123b386f6f2e29afc88c5ca5ee02311eeb3c9ebaa3419d",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q11b": {
+  "original": {
+   "id": "agsci-2023-hl-q11b",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "six-week-calving-rate",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 HL Q11(b)",
+   "stem": "Tim wants to improve the reproductive performance of his suckler cows on a grass-based system. The national average 6-week calving rate is 55% and the national target is 80%. (Adapted from Teagasc, 2022)",
+   "questionText": "Briefly explain ways Tim can achieve the 6-week calving rate target of 80%.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Monitor liveweight (of young heifers) to ensure they are on course to achieve target weights (aim for 60% of mature weight at mating)",
+     "marks": 2,
+     "contextNote": "2(2) funds ANY two ways from the scheme's pool, not these two specifically — if both of your ways appear in the list on the next row, this slot is filled too."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "correct BCS of 3.0 at mating",
+     "marks": 2,
+     "accepts": [
+      "correct nutrition - good quality leafy grass",
+      "good heat detection (to increase submission rate)",
+      "use AI on cows in first 3 weeks of breeding for replacements or increase EBI of herd or keep early calves for replacements for high EBI",
+      "identify non-cycling cows (and get them checked by the vet)",
+      "ensure healthy cows (received vaccinations)",
+      "synchronised breeding"
+     ],
+     "contextNote": "Any way from the scheme's pool fills this slot."
+    }
+   ],
+   "notes": "2(2) = any two ways at 2 marks each. Q11 reconciles as 6 + 4 = 10. VERIFIER FIX: contextNote added to r-1 so a student whose two ways both came from r-2's pool is not shown a phantom 2-mark loss."
+  },
+  "originalSha256": "027a5555123d223b597ddba1a418b45959cf42c802988d6eeb8787dc9b226ef7",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q13ai": {
+  "original": {
+   "id": "agsci-2023-hl-q13ai",
+   "topicId": "agsci-2-1",
+   "conceptId": "factors-of-soil-formation",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q13(a)(i)",
+   "questionText": "Describe two factors that are involved in the formation of soil. (Name each Factor and give a Description for each.)",
+   "stem": "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "answer": 2,
+    "ofParts": 5,
+    "perPart": 7,
+    "notation": "5+5+2+2"
+   },
+   "totalMarks": 14,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Parent material — Parent rock is weathered into smaller particles",
+     "marks": 7,
+     "accepts": [
+      "granite contains quartz which is weathered into sand particles and acidic in nature",
+      "limestone rock is alkaline in nature and increases the pH of soil formed from it",
+      "determines physical or chemical characteristics of soil"
+     ],
+     "contextNote": "Each factor you use is worth 7: 2 for naming the factor and 5 for its description. Only two factors are claimable."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Climate — Temperature – heating and cooling of rock",
+     "marks": 7,
+     "accepts": [
+      "Water – physical or chemical weathering",
+      "freeze-thaw or hydrolysis or solution or hydration",
+      "determines biological reactions"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Topography — Slope of landscape",
+     "marks": 7,
+     "accepts": [
+      "steep slopes the soil is eroded down to valley",
+      "thin layer of soil on slopes",
+      "deep fertile soil in valley"
+     ]
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "Organisms — Contribute humus when die",
+     "marks": 7,
+     "accepts": [
+      "help to decompose organic matter",
+      "organic matter increases soil fertility",
+      "increase soil fertility or improve soil structure (burrowing, binding, eroding)",
+      "organisms break up rock"
+     ]
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "Time — young soils not as deep",
+     "marks": 7,
+     "accepts": [
+      "Young soils (Ireland) have high levels of rock available for weathering"
+     ]
+    }
+   ],
+   "notes": "Tariff read as 5+5+2+2 = 14: two descriptions at 5 and two factor names at 2, i.e. 7 per factor used. The scheme prints FIVE candidate factors but the question asks for two, so bestNofParts 2 x 7, not fixed. Within a Description cell the solidus separates ALTERNATIVE descriptions of the SAME factor, so each factor is one row with its alternatives in accepts. Verified against p.20 of the marking-scheme PDF as well as the markdown: the PDF sets Factor and Description in two columns, so the extracted markdown interleaves the factor name into the middle of its own description. Every verbatim here is the exact wording of one COMPLETE scheme alternative and is contiguous after the ' — ' label the gate strips; the alternatives that straddle an interleaved column label are carried in accepts (accepts is not gated, and each is word-for-word the printed PDF)."
+  },
+  "originalSha256": "eff78b28092c0bdff23cf58dfa7a2b3e14b57587c870ef46cc9900ddb9cda432",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q13aii": {
+  "original": {
+   "id": "agsci-2023-hl-q13aii",
+   "topicId": "agsci-2-1",
+   "conceptId": "podzol-soil-profile",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q13(a)(ii)",
+   "questionText": "Draw a labelled diagram of a podzol soil profile.",
+   "stem": "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "D = 0,3,6 + L = 3 x 2"
+   },
+   "totalMarks": 12,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "O or organic matter",
+     "marks": null,
+     "contextNote": "The drawing scores 0, 3 or 6: all five elements = 6, one element missing = 3, two or more missing = 0. Labels are marked separately, any three labels at 2 each."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "A or topsoil",
+     "marks": null
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "B or subsoil",
+     "marks": null
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "C or bedrock or parent material",
+     "marks": null
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "iron pan (or zone of accumulation) present in B",
+     "marks": null
+    }
+   ],
+   "notes": "12 marks: D = 0,3,6 for the drawing plus L = 3 x 2 for any three labels (the only split that makes Q13(a) add to 26 and Q13 to 50). No individual element carries a defined mark value, because the drawing is scored as a whole against how many of the five elements are present, so the model is orderedSplit with every row null rather than a fabricated per-row value. The five rows are the five ELEMENTS the scheme requires; the 'or' inside each row is the alternative wording for that one element (O or organic matter), which is where the solidus rule bites. No figure is needed: the candidate draws the profile."
+  },
+  "originalSha256": "b501d31f96a63228770ae62ef5546450ce6013bbcfdba55c7017763f7bc68a21",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q13bii": {
+  "original": {
+   "id": "agsci-2023-hl-q13bii",
+   "topicId": "agsci-2-2-2",
+   "conceptId": "soil-water-levels-farm-implications",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q13(b)(ii)",
+   "questionText": "Briefly describe the implications for a farmer of any two of the following: Field capacity; Saturation; Permanent wilting point.",
+   "stem": "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (b) is about the level of water held in a soil sample.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "2+1"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Field capacity — Plants can remove water from the soil easily or water available to plant or land is usable",
+     "marks": null,
+     "accepts": [
+      "or land is easily cultivated or conditions are suitable for growth"
+     ],
+     "contextNote": "Only two of the three carry marks, and they are scored by position: 2 for the first, 1 for the second."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Saturation — Excess water (lack of air spaces) can reduce crop growth or waterlogged",
+     "marks": null,
+     "accepts": [
+      "poached or roots cannot respire, or no earthworms or drainage required to reduce waterlogging"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Permanent wilting point — reduced yield or delayed growing season or wind erosion of soil",
+     "marks": null,
+     "accepts": [
+      "Lack of water so plants can no longer extract",
+      "water from the soil or irrigation necessary"
+     ]
+    }
+   ],
+   "notes": "Only 3 marks for this part, printed as '2+1'. Q13(a) = 26, (b)(i) = 3(3) = 9 and (c)/(d) = 12 each, so (b)(ii) must be 3. 'Any two of the following' scored 2 then 1 is positional, so orderedSplit with null rows. Part (b)(i) is skipped: it asks the candidate to name diagrams A, B and C printed in the paper. Reviewer note: the tariff cell '2+1' lands inside the Saturation row in the extracted markdown, breaking 'easily poached', so that clause is quoted in two contiguous pieces (verbatim + accepts)."
+  },
+  "originalSha256": "bba03a258b000b9c0c62e82f6e58835f65e78ea11680cd201f23cb8ec523874e",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q13c": {
+  "original": {
+   "id": "agsci-2023-hl-q13c",
+   "topicId": "agsci-1-2",
+   "conceptId": "comparing-soil-infiltration-rate",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q13(c)",
+   "questionText": "Describe with the aid of a labelled diagram how a farmer would carry out an investigation to compare the drainage (infiltration) rate of a podzol and a brown earth soil sample and outline the expected result in this investigation.",
+   "stem": "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "answer": 3,
+    "ofParts": 5,
+    "perPart": 4,
+    "notation": "3(4)"
+   },
+   "totalMarks": 12,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "same mass of both soils",
+     "marks": 4,
+     "contextNote": "Any three of these points score 4 each. The scheme also credits a complete FIELD METHOD for the same 12 marks (two open-ended tubes set into the two soils, equal volume of water poured into each, record the time taken to drain down through the tube, result: the soil where water drains fastest has the best infiltration rate) — if you took that route, count your equivalent three steps here. A sixth lab step, 'Dried soil sample', is also creditable but is not shown."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "add to filter paper in funnel",
+     "marks": 4
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "add set volume of water to soil",
+     "marks": 4
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "record time taken for water to flow into beakers or record volume for filtrate (for set time)",
+     "marks": 4,
+     "contextNote": "Starred in the scheme as the compulsory point: an answer without it cannot reach full marks."
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "water would pass through the brown earth sample quicker (as no iron pan)",
+     "marks": 4
+    }
+   ],
+   "notes": "3(4) = any three points at 4 marks each = 12. These slash-separated items are sequential procedural STEPS, not alternative wordings of one point: the tariff itself demands three distinct points, so they are separate rows. The five-row cap (MAX_ROWS = 5) means only the lab route can be listed, so the alternative field method and the sixth lab step are named in the r-1 contextNote rather than dropped silently. No figure needed — the candidate draws the labelled diagram."
+  },
+  "originalSha256": "a81d04c6bee0cbb9bf5ec5a7fd43e91c920f380821567de774202fbcdfd5f3c8",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q13dii": {
+  "original": {
+   "id": "agsci-2023-hl-q13dii",
+   "topicId": "agsci-2-2-2",
+   "conceptId": "functions-of-soil-water",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q13(d)(ii)",
+   "questionText": "State the functions of soil moisture (water).",
+   "stem": "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (d) follows an article on VistaMilk using European Space Agency Sentinel satellite imagery to collect real-time data on soil moisture on Irish farms. (Adapted from Farmers Journal, 2022)",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "4+2"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Provide water to plants (plant cells contain large amounts of water)",
+     "marks": null,
+     "contextNote": "Two functions are credited, scored by position: 4 for the first, 2 for the second."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "seed germination",
+     "marks": null
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "photosynthesis",
+     "marks": null
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "nutrients available",
+     "marks": null
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "keeps turgor",
+     "marks": null
+    }
+   ],
+   "notes": "'4+2' = 6 for two functions, scored by position, so orderedSplit with null rows. questionText is the paper's exact wording; the scheme's heading adds 'in soil' but the paper does not. The scheme's pool is longer than the five-row cap: 'chemical reactions', 'transpiration', 'microbial activity or soil organisms' and 'to maintain soil structure or prevent erosion' are also creditable and are not shown ('chemical reactions' additionally straddles the inline tariff cell in the extracted markdown). The pool does not end in 'etc.' so openList is not set."
+  },
+  "originalSha256": "32590deb588605b5fb4b5a44cbf7a06deb9d860d91ab4bf8c33ac173594aefe2",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q14biii": {
+  "original": {
+   "id": "agsci-2023-hl-q14biii",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "clover-as-a-companion-crop",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q14(b)(iii)",
+   "questionText": "Outline the advantages of sowing clover with the oilseed rape.",
+   "stem": "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "5+1"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Increase nitrogen supply to the crop",
+     "marks": null,
+     "contextNote": "Two advantages are credited, scored by position: 5 for the first, 1 for the second."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "encourage mycorrhizal fungi",
+     "marks": null
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "their own root systems can help drainage",
+     "marks": null
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "improve soil structure",
+     "marks": null
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "prevents weeds",
+     "marks": null
+    }
+   ],
+   "notes": "'5+1' = 6 for two advantages, scored by position, so orderedSplit with null rows. 'Advantages' is plural and the tariff is split, so these ARE separate points rather than alternative wordings of one. A sixth creditable point, 'improve soil function', is not shown because of the five-row cap."
+  },
+  "originalSha256": "961a301129d710f6e586da9b9cd89dc873a0b0a4fc93d04ec27c0361fb8aff8d",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q14biv": {
+  "original": {
+   "id": "agsci-2023-hl-q14biv",
+   "topicId": "agsci-3-2",
+   "conceptId": "annual-plant-defined",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q14(b)(iv)",
+   "questionText": "Berseem clover is an annual plant. Explain the underlined term.",
+   "stem": "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop. (The underlined term here is 'annual'.)",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Completes its lifecycle in one year.",
+     "marks": 3
+    }
+   ],
+   "notes": "Single definition worth 3; the scheme prints one sentence with no alternatives."
+  },
+  "originalSha256": "cd64b012d691da586adf46128093afccf28b33f4a319234ae303f617b855ae93",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q14ci": {
+  "original": {
+   "id": "agsci-2023-hl-q14ci",
+   "topicId": "agsci-1-2",
+   "conceptId": "plant-count-method",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q14(c)(i)",
+   "questionText": "Describe how to carry out a plant count in a 2 hectare field.",
+   "stem": "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) follows an extract: 'An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can be done next season in order to improve plant count numbers (e.g. higher seeding rate).' (Adapted from Farmers Journal, 2022)",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "answer": 3,
+    "ofParts": 5,
+    "perPart": 4,
+    "notation": "3(4)"
+   },
+   "totalMarks": 12,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Place quadrat (0.25m2) on the ground",
+     "marks": 4,
+     "contextNote": "Any three of these steps score 4 each."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "at random",
+     "marks": 4
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "count the number of plants (established) in quadrat",
+     "marks": 4
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "get average plant count",
+     "marks": 4
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "multiply by 80,000 to determine the number of plants in 2 hectares",
+     "marks": 4
+    }
+   ],
+   "notes": "3(4) = any three points at 4 marks each = 12, so the slash-separated items are separate procedural steps rather than alternative wordings. A sixth step, 'repeat (at least 10 times)', is also creditable but is not quoted: the extracted markdown drops the inline tariff cell '3(4)' into the middle of it, so no contiguous verbatim exists for it. The card therefore shows five of the scheme's six steps."
+  },
+  "originalSha256": "5f90cdea7e7241fb97bb0b7ef23b38985377e7dab6080483a0aa6b348f7fd971",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q14cii": {
+  "original": {
+   "id": "agsci-2023-hl-q14cii",
+   "topicId": "agsci-3-3-2",
+   "conceptId": "value-of-a-plant-count",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q14(c)(ii)",
+   "questionText": "Briefly explain advantages of carrying out a plant count in a newly sown or reseeded field.",
+   "stem": "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) follows an extract: 'An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can be done next season in order to improve plant count numbers (e.g. higher seeding rate).' (Adapted from Farmers Journal, 2022)",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "5+1"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Determine if sowing conditions were optimal or impact of weather conditions",
+     "marks": null,
+     "contextNote": "Two advantages are credited, scored by position: 5 for the first, 1 for the second."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "if correct seeding rate was used",
+     "marks": null
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "determining germination or establishment rate",
+     "marks": null
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "weed control",
+     "marks": null
+    }
+   ],
+   "notes": "'5+1' = 6 for two advantages, scored by position, so orderedSplit with null rows. A fifth creditable point, 'correct fertiliser amount used', is not quoted because the extracted markdown drops the inline '5+1' tariff cell into the middle of it, leaving no contiguous verbatim."
+  },
+  "originalSha256": "d297e1dbe9ff88c387665493ad76eb46b3549525ebf50a11f3a97a70ddfc3644",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q15a": {
+  "original": {
+   "id": "agsci-2023-hl-q15a",
+   "topicId": "agsci-1-2",
+   "conceptId": "determining-soil-texture",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q15(a)",
+   "questionText": "The first investigation the students carried out was to determine the soil texture. Describe how they carried out this investigation to determine the soil texture.",
+   "stem": "A secondary school recently designed and installed a new school garden and polytunnel. The school principal received a donation of top soil for the raised beds. The agricultural science class were tasked with finding out the best crops to sow. The students carried out a number of investigations to determine soil type and its suitability to grow specific crops.",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "answer": 3,
+    "ofParts": 5,
+    "perPart": 4,
+    "notation": "3(4)"
+   },
+   "totalMarks": 12,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Hand – dry soil sample",
+     "marks": 4,
+     "contextNote": "Any three steps of ONE method score 4 each. This card shows the hand-texturing route, but the scheme gives the SEDIMENT method (stir the soil into water, shake it in a graduated cylinder, leave it to settle, read the sand/silt/clay layers off the graduations, calculate percentages, use the soil triangle) and the SIEVE method (dry and crush the sample, weigh it, shake it through a nest of sieves largest on top, weigh each sieve, calculate percentages, classify on the texture triangle) the same 12 marks — if you used either of those, count your equivalent three steps here."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "rub between fingers and thumb",
+     "marks": 4
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "note grittiness and smoothness",
+     "marks": 4
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "wet sample (and rub between fingers and thumb and note grittiness, smoothness)",
+     "marks": 4
+    },
+    {
+     "id": "r-5",
+     "kind": "point",
+     "verbatim": "check if it is possible to roll sample into threads or ring or cast",
+     "marks": 4
+    }
+   ],
+   "notes": "3(4) = any three points at 4 marks each = 12, so the slash-separated items are separate steps of the method, not alternative wordings. The scheme prints three complete alternative methods each earning the same 12; MAX_ROWS = 5 means only the hand method can be listed, so the other two routes are named in the r-1 contextNote rather than dropped silently. Two further hand-method entries, 'note plasticity or if sample is sticky' and 'valid result', are not shown ('valid result' states a tariff rather than an answer in any case)."
+  },
+  "originalSha256": "703951f4ce08ed5641c0ce6d7161fbb9c683c765bc42360c209ca329a8521f03",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q15biii": {
+  "original": {
+   "id": "agsci-2023-hl-q15biii",
+   "topicId": "agsci-2-3",
+   "conceptId": "benefits-of-liming",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q15(b)(iii)",
+   "questionText": "Farmers can improve the soil quality by liming to adjust the soil pH level. Briefly describe other benefits of liming the soil.",
+   "stem": "A secondary school recently designed and installed a new school garden and polytunnel. The students carried out a soil pH investigation on the donated top soil to work out which crops it would suit.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "5+2"
+   },
+   "totalMarks": 7,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Increase in earthworm activity",
+     "marks": null,
+     "contextNote": "Two benefits are credited, scored by position: 5 for the first, 2 for the second. 'Other' means benefits beyond raising the pH itself."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "improvement in soil structure (drainage or aeration or flocculation)",
+     "marks": null
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "increased cation exchange capacity",
+     "marks": null
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "improve nutrient availability",
+     "marks": null
+    }
+   ],
+   "notes": "'5+2' = 7 for two benefits, scored by position, so orderedSplit with null rows. A fifth creditable point, 'grass is more palatable to livestock', is not quoted because the extracted markdown drops the inline '5+2' tariff cell into the middle of it, leaving no contiguous verbatim."
+  },
+  "originalSha256": "8b5e5b166928b6db5d7c791c9a6178d3befc06d8f58690b2264e39f739c26227",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q15cii": {
+  "original": {
+   "id": "agsci-2023-hl-q15cii",
+   "topicId": "agsci-3-1",
+   "conceptId": "soil-ph-and-nitrous-oxide-emissions",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q15(c)(ii)",
+   "questionText": "Discuss the relationship between pH and N20 emissions on the graph and its implications for ongoing farming practice.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "5 + 3"
+   },
+   "totalMarks": 8,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "its implications for ongoing farming practice. The higher the soil pH the lower the N20 emissions",
+     "marks": 5
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "(Farmers should test their soil pH and) add lime to increase the pH levels to as close to neutral as possible to reduce the N20 emissions",
+     "marks": 3
+    }
+   ],
+   "stem": "Effect of soil pH on nitrous oxide (N20) emissions 7000 Cumulaitve N20 Emissions (g N20/ha/year) 6000 5000 4000 3000 2000 1000 0 5.1 5.4 6.2 6.9 Soil pH"
+  },
+  "originalSha256": "038c682f6dca858d3171a20d7ff4eeac3814fe98b4f7ad43ed78d1d5e223256a",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q16aii": {
+  "original": {
+   "id": "agsci-2023-hl-q16aii",
+   "topicId": "agsci-4-3-1",
+   "conceptId": "reading-an-emissions-figure-against-average",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q16(a)(ii)",
+   "questionText": "State with reason if the main source of emissions is above or below the national average for the enterprise.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "5 + 1"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Below",
+     "marks": 5
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "As the average for the enterprise is over 40%",
+     "marks": 1
+    }
+   ],
+   "stem": "Percentage Share of Farm Carbon Emissions 50 Current farm assessment (2021) Previous farm assessment (2019) National average Percentage Share (%) 40 30 20 10 0 Animal digestion Manure usage Fertiliser used Forage / Feed Sources of Carbon Emissions (Adapted from Teagasc, 2022)"
+  },
+  "originalSha256": "b950cd45c7a6799bb63732dd272eefd60efbb5b5c290fdc589aafb3b98849177",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-hl-q18bii": {
+  "original": {
+   "id": "agsci-2023-hl-q18bii",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "factors-affecting-milk-quality",
+   "level": "higher",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 HL Q18(b)(ii)",
+   "stem": "Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report. You have been invited to visit the farm to advise Jenny and John on how to improve their milk quality.",
+   "questionText": "As part of the inspection you look at the factors affecting milk quality. Describe the factors you would be looking for in your inspection.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "F:3(3) + D:3(3)"
+   },
+   "totalMarks": 18,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Cow health — susceptible to irritation or inflammation of the udder if hygiene conditions are poor",
+     "marks": 6,
+     "openList": true,
+     "accepts": [
+      "sick cows have reduced milk yield and poorer quality milk",
+      "Somatic cell counts– high somatic cell counts in milk indicate an increased presence of white blood cells—a signal that the cow is fighting an illness / other types of somatic cells can degrade the fat and protein content in milk which adversely affect milk quality",
+      "Diet– affects the composition of milk / require good digestible feed / ~14% crude protein diet",
+      "lack of sufficient nutrients reduces milk quality",
+      "Milk handling or storage– machine hygiene is very important, or machine is hot washed after milking / install plate cooler to reduce milk temperature as quickly as possible / bulk tank kept below 4oC / no milk washings entering the tank",
+      "Milk hygiene: any relevant point on hygiene or TBC",
+      "Breed or genetics: high EBI cow used or named breed with high milk solids"
+     ],
+     "contextNote": "Three factors at 3 marks plus three matching descriptions at 3 marks — so each factor + description pair is worth 6, and any THREE pairs from the scheme's six categories score. Maximum two matching points from any one category; the third factor must come from another category. The 'Milk hygiene' category is open — any relevant hygiene point or TBC scores."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Somatic cell counts — high somatic cell counts in milk indicate an increased presence of white blood cells—a signal that the cow is fighting an illness",
+     "marks": 6,
+     "openList": true,
+     "accepts": [
+      "other types of somatic cells can degrade the fat and protein content in milk which adversely affect milk quality",
+      "Cow health– susceptible to irritation or inflammation of the udder if hygiene conditions are poor / sick cows have reduced milk yield and poorer quality milk",
+      "Diet– affects the composition of milk / require good digestible feed / ~14% crude protein diet",
+      "lack of sufficient nutrients reduces milk quality",
+      "Milk handling or storage– machine hygiene is very important, or machine is hot washed after milking / install plate cooler to reduce milk temperature as quickly as possible / bulk tank kept below 4oC / no milk washings entering the tank",
+      "Milk hygiene: any relevant point on hygiene or TBC",
+      "Breed or genetics: high EBI cow used or named breed with high milk solids"
+     ],
+     "contextNote": "A second, different factor + description pair from another of the scheme's categories."
+    },
+    {
+     "id": "r-3",
+     "kind": "alt",
+     "verbatim": "Milk handling or storage — machine hygiene is very important, or machine is hot washed after milking",
+     "marks": 6,
+     "openList": true,
+     "accepts": [
+      "install plate cooler to reduce milk temperature as quickly as possible / bulk tank kept below 4oC / no milk washings entering the tank",
+      "Cow health– susceptible to irritation or inflammation of the udder if hygiene conditions are poor / sick cows have reduced milk yield and poorer quality milk",
+      "Somatic cell counts– high somatic cell counts in milk indicate an increased presence of white blood cells—a signal that the cow is fighting an illness / other types of somatic cells can degrade the fat and protein content in milk which adversely affect milk quality",
+      "Diet– affects the composition of milk / require good digestible feed / ~14% crude protein diet",
+      "lack of sufficient nutrients reduces milk quality",
+      "Milk hygiene: any relevant point on hygiene or TBC",
+      "Breed or genetics: high EBI cow used or named breed with high milk solids"
+     ],
+     "contextNote": "A third, different factor + description pair from another of the scheme's categories."
+    }
+   ],
+   "notes": "Scheme prints 'F:3(3) + D:3(3)' — three factors at 3 marks plus three matching descriptions at 3 marks = 18, i.e. each factor+description PAIR is worth 6 and three pairs are claimed. The scheme offers six categories (cow health, somatic cell counts, diet, milk handling or storage, milk hygiene, breed or genetics), so three rows carry the three claimable pairs and the whole pool sits in accepts on every row — six rows at 6 marks would state a 36-mark total nobody can reach. The scheme's cap ('Maximum two matching points (factor + describe) from any one category and third factor from another category') is carried in row 1's contextNote. openList is set because the scheme's own 'Milk hygiene' category is written as 'any relevant point on hygiene or TBC'. Row verbatims stop where the 'F:3(3) + D:3(3)' marks cell is typeset into the middle of the answer text in the extraction; every accepts wording is the scheme's own."
+  },
+  "originalSha256": "436b89dc69d09aae5b6f6f8aaa6e9141aa9636b4add1f89ff0535dd8fb1d9ebf",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
  }
 }

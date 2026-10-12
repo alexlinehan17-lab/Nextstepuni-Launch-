@@ -542,5 +542,56 @@
       0.33
     ],
     "reviewedAt": "2026-10-11"
+  },
+  "agsci-2023-hl-paper-goat-cow-table": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-paper-goat-cow-table.png",
+    "md5": "f29bd1cf2f54e2ae0fc6a16569459ca6",
+    "alt": "Original Question 7(a) table comparing goat and cow dairy farming. Main breeds, the worked example: goat Saanen and Alpine, cow Holstein Friesian and Jersey. Goat column: lactation length 300 days, gestation length 150 days, oestrus length 12 – 48 hours, breeding programme: high yielding goats don’t have to be bred each year. The cow column is blank for lactation length, gestation length, oestrus length and breeding programme.",
+    "attribution": "SEC Agricultural Science 2023 Higher Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2023/LC024ALP000EV.pdf",
+    "sourceSha256": "059f553f84ee5e11732cc00a8dedb3163785170a8c1b292ec234326ddeb6c118",
+    "pdfPage": 10,
+    "cropRect": [
+      0.13,
+      0.212,
+      0.91,
+      0.428
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2023-hl-paper-udder": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-paper-udder.png",
+    "md5": "2af19f9a9c7e32bc670f1e607feb3228",
+    "alt": "Original Question 18(a)(i) cross-section of a cow’s udder with four arrows lettered A to D: A points at a teat at the lower left, B at the green band inside the top of the udder, C at the thin pale membrane dividing the inside at the top right, and D at the orange body of the udder near the hind teats.",
+    "attribution": "SEC Agricultural Science 2023 Higher Level examination paper, PDF page 37 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2023/LC024ALP000EV.pdf",
+    "sourceSha256": "059f553f84ee5e11732cc00a8dedb3163785170a8c1b292ec234326ddeb6c118",
+    "pdfPage": 37,
+    "cropRect": [
+      0.14,
+      0.205,
+      0.545,
+      0.386
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2023-hl-paper-cmt-steps": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-paper-cmt-steps.png",
+    "md5": "690e399c4d210e941c1d1703522a5a09",
+    "alt": "Original Question 18(a)(v) California Mastitis Test steps, four captioned photographs lettered A to D above an answer row numbered 1 to 4. A: Take a sample of milk from each quarter onto each well of the paddle. B: Add equal amounts of CMT solution and rotate in circular motion. C: High cell count mixture will thicken to a gel. D: Pour off excess milk.",
+    "attribution": "SEC Agricultural Science 2023 Higher Level examination paper, PDF page 38 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2023/LC024ALP000EV.pdf",
+    "sourceSha256": "059f553f84ee5e11732cc00a8dedb3163785170a8c1b292ec234326ddeb6c118",
+    "pdfPage": 38,
+    "cropRect": [
+      0.17,
+      0.143,
+      0.83,
+      0.552
+    ],
+    "reviewedAt": "2026-10-12"
   }
 }
