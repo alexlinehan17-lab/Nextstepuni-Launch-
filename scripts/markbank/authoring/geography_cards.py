@@ -49,6 +49,7 @@ import geography_review_2025_ol as REVIEW_2025_OL
 import geography_review_2024_hl as REVIEW_2024_HL
 import geography_review_2024_ol as REVIEW_2024_OL
 import geography_review_2023_hl as REVIEW_2023_HL
+import geography_review_2023_ol as REVIEW_2023_OL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -82,6 +83,7 @@ REVIEWED = {
     (2024, 'higher'): REVIEW_2024_HL,
     (2024, 'ordinary'): REVIEW_2024_OL,
     (2023, 'higher'): REVIEW_2023_HL,
+    (2023, 'ordinary'): REVIEW_2023_OL,
 }
 
 YEARS = tuple(range(2021, 2027))
