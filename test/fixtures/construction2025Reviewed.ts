@@ -79,3 +79,46 @@ export const CONSTRUCTION_2025_HIGHER_CORRECTED_IDS = [
   'cons-2025-hl-q10-a-foundation-design',
   'cons-2025-hl-q10-b'
 ];
+
+// Original 2025 Ordinary Q1–Q9: ADDED tasks (Q8 is one any-five card, never a route per combination) and the pre-audit
+// 2025 Ordinary cards CORRECTED in place under their original IDs.
+export const CONSTRUCTION_2025_ORDINARY_ADDED_IDS = [
+  'cons-2025-ol-q1-complete',
+  'cons-2025-ol-q2-complete',
+  'cons-2025-ol-q3-complete',
+  'cons-2025-ol-q4-complete',
+  'cons-2025-ol-q5-complete',
+  'cons-2025-ol-q6-a-high-visibility-vest',
+  'cons-2025-ol-q6-a-safety-boots',
+  'cons-2025-ol-q6-a-ear-defenders',
+  'cons-2025-ol-q6-complete',
+  'cons-2025-ol-q7-c',
+  'cons-2025-ol-q7-complete',
+  'cons-2025-ol-q8',
+  'cons-2025-ol-q9-a',
+  'cons-2025-ol-q9-complete'
+];
+
+export const CONSTRUCTION_2025_ORDINARY_CORRECTED_IDS = [
+  'cons-2025-ol-q1-a',
+  'cons-2025-ol-q1-b',
+  'cons-2025-ol-q2-a',
+  'cons-2025-ol-q2-b',
+  'cons-2025-ol-q2-c',
+  'cons-2025-ol-q3-a',
+  'cons-2025-ol-q3-b',
+  'cons-2025-ol-q4-a',
+  'cons-2025-ol-q4-b',
+  'cons-2025-ol-q4-c',
+  'cons-2025-ol-q5-a',
+  'cons-2025-ol-q5-b',
+  'cons-2025-ol-q6-a',
+  'cons-2025-ol-q6-b',
+  'cons-2025-ol-q6-c',
+  'cons-2025-ol-q7-a',
+  'cons-2025-ol-q7-b',
+  'cons-2025-ol-q7-c-advantage',
+  'cons-2025-ol-q7-c-disadvantage',
+  'cons-2025-ol-q9-b',
+  'cons-2025-ol-q9-c'
+];

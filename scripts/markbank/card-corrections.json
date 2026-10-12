@@ -1216,32 +1216,6 @@
      }
     ]
    }
-  },
-  "cons-2025-ol-q7-c-advantage": {
-   "reason": "Replace the generic 'Advantage' heading with the specific examinable idea while retaining the scheme's accepted answers.",
-   "set": {
-    "rows": [
-     {
-      "id": "cons-2025-ol-q7-c-advantage-r1",
-      "kind": "anyN",
-      "verbatim": "Advantages of a separate garden office",
-      "marks": 6,
-      "openList": true,
-      "contextNote": "Discuss one supported advantage.",
-      "group": {
-       "claimMax": 1,
-       "perOption": 6,
-       "options": [
-        "Creates a clear boundary between work and home life",
-        "Easier to concentrate when away from household noise and interruptions.",
-        "A garden office can increase the value of your home",
-        "Lessens the impact on the household",
-        "The office does not take up space within the house"
-       ]
-      }
-     }
-    ]
-   }
   }
  },
  "home-economics": {
