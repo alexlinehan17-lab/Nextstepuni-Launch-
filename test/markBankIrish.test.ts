@@ -10,6 +10,7 @@ import reviewedOrdinary2026P2 from '../components/MarkBank/cards/irish/ordinary-
 import { CARDS as ORDINARY_DECK } from '../components/MarkBank/cards/irish/ordinary';
 import authoredJson from '../components/MarkBank/cards/irish/authored.json';
 import reviewedHigher2025P1 from '../scripts/markbank/authored/irish-higher-2025-p1-component-review.json';
+import reviewedHigher2025P2 from '../components/MarkBank/cards/irish/higher-2025-p2-authored.json';
 import {
   irishMarks,
   irishScoreId,
@@ -81,11 +82,13 @@ const census = JSON.parse(readFileSync(resolve(
 const manifest = authoredJson as unknown as IrishManifest;
 // These pins cover the legacy census output. Paper-reviewed components ship
 // beside it and carry their own regression files (2026 Higher and Ordinary Papers 1 and 2).
-const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards].map(card => card.id));
+const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards].map(card => card.id));
 const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 // Reviewed legacy components keep their cards here, corrected in place (IDs unchanged).
-const REVIEWED_LEGACY = new Set<string>([...reviewedHigher2025P1.cardIds]);
-const REVIEWED_SEGMENTS = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds]);
+// 2025 HL Paper 1 also attached each retained card's printed page.
+const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds]);
+// Retained listening segments and whole reading questions now mark each printed part separately.
+const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds, ...reviewedHigher2025P2.review.readingWholeCardIds]);
 const ORDINARY = ORDINARY_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 const ALL: SecRubricCard[] = [...HIGHER, ...ORDINARY];
 const byId = new Map(ALL.map(card => [card.id, card]));
@@ -177,7 +180,7 @@ describe('Irish prompt, paper and source integrity', () => {
 
   it('attaches every required reading passage and printed poem as real PDF pages', () => {
     const sourced = ALL.filter(card => card.sourceMaterial);
-    expect(sourced).toHaveLength(184 + REVIEWED_LEGACY.size);
+    expect(sourced).toHaveLength(184 + SOURCED_BY_REVIEW.size);
     expect(sourced.filter(card => family(card) === 'reading')).toHaveLength(154);
     expect(sourced.filter(card => card.id.includes('-poetry-3a-'))).toHaveLength(25);
     expect(sourced.filter(card => card.id.includes('-literature-4-'))).toHaveLength(5);
@@ -334,13 +337,13 @@ describe('Irish marking grammar', () => {
     // parts/parents are checked separately at their actual scheme boundaries.
     const exact = ALL.filter(card => ['listening', 'reading'].includes(family(card))
       && !(card.year === 2024 && card.level === 'higher' && family(card) === 'reading')
-      && !REVIEWED_SEGMENTS.has(card.id));
+      && !REVIEWED_MULTI.has(card.id));
     const reviewedReading = ALL.filter(card => card.year === 2024 && card.level === 'higher' && family(card) === 'reading');
     expect(reviewedReading).toHaveLength(56);
     expect(reviewedReading.every(card => irishRubric(card).criteria.every(c => c.guidance.length > 0))).toBe(true);
-    expect(exact).toHaveLength(168 - REVIEWED_SEGMENTS.size);
-    // Reviewed listening segments mark each printed question as its own exact criterion.
-    for (const card of ALL.filter(entry => REVIEWED_SEGMENTS.has(entry.id))) {
+    expect(exact).toHaveLength(168 - REVIEWED_MULTI.size);
+    // Reviewed listening segments and whole reading questions mark each printed part as its own exact criterion.
+    for (const card of ALL.filter(entry => REVIEWED_MULTI.has(entry.id))) {
       const criteria = irishRubric(card).criteria;
       expect(criteria.length, card.id).toBeGreaterThan(1);
       expect(criteria.reduce((sum, c) => sum + c.maxMarks, 0), card.id).toBe(card.totalMarks);

@@ -75,6 +75,12 @@ const addedIrishRoutes = new Set([
   ...['prose-2a-a-caca-milis','prose-2a-a-an-lasair-choille','prose-2a-b','prose-2b-a-scannan','prose-2b-a-drama','prose-2b-b',
     'poetry-3a-a','poetry-3a-b','poetry-3b-a','poetry-3b-b',
     'literature-4-a','literature-4-b','literature-4-c','literature-4-d','literature-4-e','literature-4-f'].map(key => `irish-2026-hl-p2-${key}`),
+  // 2025 Higher Paper 2 (reviewed 2026-10-11): every published reading part beside the
+  // retained whole questions, the 1 + 1 answer slots and the 6 + 6 point slots.
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => ['a','bi','bii'].map(part => `reading-${p}-q${q}-${part}`))
+    .concat([`reading-${p}-q6-a`, `reading-${p}-q6-b`, `reading-${p}-q6-b-1`, `reading-${p}-q6-b-2`]))
+    .concat(['reading-a-q5-bi','reading-b-q2-bi','reading-b-q4-bi','reading-b-q5-bi','reading-b-q5-bii'].flatMap(key => [`${key}-1`, `${key}-2`]))
+    .map(key => `irish-2025-hl-p2-${key}`),
 ]);
 
 // Paper-reviewed Ordinary additions are tracked the same way beside the frozen
