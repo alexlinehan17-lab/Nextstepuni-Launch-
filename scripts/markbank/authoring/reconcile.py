@@ -39,7 +39,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from paper_census import SUBJECTS, census_subject, key_label  # noqa: E402
+from paper_census import SUBJECTS, census_subject, irish_manifest_files, key_label  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -141,6 +141,12 @@ def shipped_cards(subject):
         declared_count = payload.get('cardCount', payload.get('meta', {}).get('cardCount'))
         if declared_count != len(cards):
             raise AssertionError(f'{subject} authored manifest count is stale')
+        if subject == 'irish':
+            # The reviewed paper components ship beside authored.json; the
+            # deck is all of them, so the ledger reads all of them.
+            for name in irish_manifest_files()[1:]:
+                more = json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8'))
+                cards = cards + more['cards']
         return [(card['id'], card['questionRef']) for card in cards]
 
     out = []
@@ -677,7 +683,12 @@ def content_hash(subject):
     if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'accounting'):
         # These corpora are data-driven, so the manifest and factory can
         # materially change a runtime card even when the tiny exports do not.
-        for name in ('factory.ts', 'authored.json'):
+        names = ('factory.ts', 'authored.json')
+        if subject == 'irish':
+            # Every manifest factory.ts imports, so a card gutted inside a
+            # reviewed component file trips the pin too.
+            names = ('factory.ts', *irish_manifest_files())
+        for name in names:
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject in ('physical-education', 'applied-maths'):
         for name in (('factory.ts', 'reviewed.json') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):

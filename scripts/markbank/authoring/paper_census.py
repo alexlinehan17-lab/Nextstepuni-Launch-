@@ -2811,6 +2811,24 @@ def census_lcvp(subject, year, level):
     return set(parts), texts, files, marks, stems
 
 
+IRISH_DECK = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'irish')
+
+
+def irish_manifest_files():
+    """Every card manifest the Irish Higher/Ordinary decks ship, in import order.
+
+    authored.json carries the generated 2021-2025 corpus; each reviewed paper
+    component lives in its own *-authored.json that factory.ts imports beside
+    it. Reading the imports (not a hand list) keeps the ledger on exactly what
+    ships. Foundation is a separate deck with no coverage ledger.
+    """
+    text = open(os.path.join(IRISH_DECK, 'factory.ts'), encoding='utf-8').read()
+    names = re.findall(r"^import \w+ from '\./([\w-]+\.json)';", text, re.M)
+    if not names or names[0] != 'authored.json':
+        raise AssertionError('Irish factory.ts no longer imports authored.json first')
+    return names
+
+
 def census_subject(subject):
     if subject == 'accounting':
         import importlib.util
@@ -2892,6 +2910,22 @@ def census_subject(subject):
             })
         if payload.get('cardUnitCount') != sum(p['leafCount'] for p in papers):
             raise AssertionError('Irish authored census count is stale')
+        # Reviewed components ship from their own manifests. Each card there is
+        # one reviewed, independently practicable unit of that paper, so it
+        # joins the same paper's leaves (2025 HL Paper 2 spans both files).
+        short = {'higher': 'hl', 'ordinary': 'ol'}
+        by_key = {(p['year'], p['level'], p['paper']): p for p in papers}
+        for name in irish_manifest_files()[1:]:
+            for card in json.load(open(os.path.join(IRISH_DECK, name), encoding='utf-8'))['cards']:
+                key = (card['year'], short[card['level']], f"Paper {card['paper']}")
+                if key not in by_key:
+                    by_key[key] = {'year': key[0], 'level': key[1], 'paper': key[2],
+                                   'leafCount': 0, 'leaves': [], 'marksSum': None,
+                                   'marksQuestions': 0, 'flags': []}
+                    papers.append(by_key[key])
+                by_key[key]['leaves'].append({'key': [card['id']], 'label': card['questionRef'],
+                                              'text': '', 'status': 'reviewed'})
+                by_key[key]['leafCount'] += 1
         return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
     if cfg['mode'] == 'english':
         # Import lazily so the ordinary census remains independent of PyMuPDF
