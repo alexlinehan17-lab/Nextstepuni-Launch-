@@ -232,6 +232,21 @@
       "correctedInPlace": 3,
       "added": 5,
       "corrections": "Q2(b)(iii) loses a stem of run-together diagram labels; Q14(c)(ii) regains 2 + 2 for name or description; Q14(d) regains 6(2) per cell. Added Q1(a), Q11(a)(ii), Q13(b)(iii), Q14(a)(ii) and Q14(b)(i). The item choices Q5(a), Q6(a)(i), Q6(a)(ii), Q7(a) and Q13(a)(ii) were already one card each."
+    },
+    "coverageBaseline": {
+      "measuredAt": "2026-10-12",
+      "command": "python3 scripts/markbank/authoring/reconcile.py agricultural-science --baseline write --accept-regression",
+      "cards": 1426,
+      "leaves": 2456,
+      "covered": 1364,
+      "open": 1092,
+      "excluded": 0,
+      "orphans": 89,
+      "coveragePct": 55.5,
+      "papersOnDisk": 34,
+      "openAsksDeclared": "1092 open asks: 1056 in the uncarded 2012 Ordinary and 2013-2020 papers, 13 in 2012 Higher, and 23 in 2021-2023 (2021 HL 3, 2021 OL 2, 2022 HL 5, 2022 OL 6, 2023 HL 3, 2023 OL 4). 2010-2011 and 2024-2026 have 0 open.",
+      "orphansDeclared": "89 = the 2 pre-existing 2021 OL Q17(b)(ii)/(iii) orphans plus 87 legacy 2010-2012 cards whose addresses the generic paper_census reader cannot read in the old layout (it finds no Q1/Q3 leaves in 2010 HL, and no Q1-Q5 leaves in 2011 OL). Every one of the 87 reconciles exactly in the independent census (agricultural_science_reconcile.py: 0 issues), so they are reader faults, not mis-citations. --accept-regression recorded the orphan count; it was not used to hide coverage, which rose from 888 to 1364.",
+      "environmentNote": "24 of the 34 papers are local symlinks into paper-trail-corpus (gitignored); a checkout with only the 10 tracked 2021-2025 papers would measure a smaller denominator."
     }
   },
   "verification": {
