@@ -2579,16 +2579,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q1-a", topicId: "maths-4-2", conceptId: "two-values-which-equation-has-exactly",
     section: "B", questionRef: "2022 HL Paper 1 Q1(a)",
-    questionText: "(a) Find the two values of m∈ℤ for which the following equation in x has exactly one solution: 3x²−mx + 3 = 0",
+    questionText: "Find the two values of m ∈ ℤ for which the following equation in x has exactly one solution: 3x² − mx + 3 = 0",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q1-a-r1", kind: "anyN", verbatim: "Work of merit, for example, identifies a or b or c\nSome correct differentiation\nMentions perfect square\nDivides the given equation by 3", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: 3 steps: 1. b²−4ac = 0 2. Substitutes in for a, b, c 3. Solves for m. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, identifies a or b or c\nSome correct differentiation\nMentions perfect square\nDivides the given equation by 3","Two steps correct\nOne correct value of m found\nFinds x = m/6 and substitutes into function\nFinds correct factors or roots"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q1-a.png",
@@ -2609,6 +2622,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
@@ -2619,6 +2633,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2022-hl-p1-q1-b-r1", kind: "anyN", verbatim: "Work of merit, for example, mentions that a squared number is non-negative, or b²−4ac < 0\nCorrect transposition of 7\nSome correct work in the expansion of (2x + 3)²", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, mentions that a squared number is non-negative, or b²−4ac < 0\nCorrect transposition of 7\nSome correct work in the expansion of (2x + 3)²"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q1-b.png",
@@ -2639,21 +2665,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q1-c-i", topicId: "maths-4-2", conceptId: "not-solution",
+    id: "maths-2022-hl-p1-q1-c-i", topicId: "maths-4-1", conceptId: "not-solution",
     section: "B", questionRef: "2022 HL Paper 1 Q1(c)(i), (ii)",
-    questionText: "Show that x = −1 is not a solution of 3x² + 2x + 5 = 0",
+    questionText: "(i) Show that x = −1 is not a solution of 3x² + 2x + 5 = 0. (ii) Find the remainder when 3x² + 2x + 5 is divided by x + 1. That is, find the value of c when 3x² + 2x + 5 is written in the form 3x² + 2x + 5 = (x + 1)(ax + b) + c, where a, b, c ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-hl-p1-q1-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, in (i): substitutes in x = −1, or mentions x + 1; Substitutes into quadratic formula in (ii): some expansion of given product, or some correct division, or sets up long division correctly", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit -1: (i) correct and correct long division in (ii), but answer (remainder) not identified. Note: (i) may be done by long division, so “substantial work of merit” for (ii) may appear in (i). In (ii) accept remainder = candidate’s f(−1) in (i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, in (i): substitutes in x = −1, or mentions x + 1; Substitutes into quadratic formula in (ii): some expansion of given product, or some correct division, or sets up long division correctly","(i) correct and work of merit in (ii)\nSubstantial work of merit in (ii), for example, finds −x + 5 in long division method, or finds two of a, b, and c correctly","(i) correct and substantial work of merit in (ii)\n(ii) correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q1-c-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q1-c-i.png",
           "srcHash": "00bf4577a11965cc283344e9d008373d",
-          "alt": "The question as printed on the paper — Show that x = −1 is not a solution of 3x² + 2x + 5 = 0. Find the remainder when 3x² + 2x + 5 is divided by x + 1. That is, find the value of c when 3x² + 2x + 5 is written in the form 3x² + 2x + 5 = (x + 1)(ax + b) + c… Full card prompt: Show that x = −1 is not a solution of 3x² + 2x + 5 = 0",
+          "alt": "The question as printed on the paper — Show that x = −1 is not a solution of 3x² + 2x + 5 = 0. Find the remainder when 3x² + 2x + 5 is divided by x + 1. That is, find the value of c when 3x² + 2x + 5 is written in the form 3x² + 2x + 5 = (x + 1)(ax + b) + c… Full card prompt: (i) Show that x = −1 is not a solution of 3x² + 2x + 5 = 0. (ii) Find the remainder when 3x² + 2x + 5 is divided by x + 1. That is, find the value of c when 3x² + 2x + 5 is written in the form 3x² + 2x + 5 = (x + 1)(ax + b) + c, where a, b, c ∈ ℤ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -2669,16 +2708,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q2-a", topicId: "maths-5-2", conceptId: "part",
     section: "B", questionRef: "2022 HL Paper 1 Q2(a)",
-    questionText: "g(x) = 2x² + 5x + 6, where x∈ℝ. Find ∫ g(x) dx",
+    questionText: "g(x) = 2x² + 5x + 6, where x ∈ ℝ. Find ∫ g(x) dx.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q2-a-r1", kind: "anyN", verbatim: "Some correct integration", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit -1: +c term missing. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some correct integration","3 of the 4 terms correct (including + c as a term)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q2-a.png",
@@ -2699,21 +2751,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q2-b-i", topicId: "maths-5-2", conceptId: "area-region-538-square-units-integration",
     section: "B", questionRef: "2022 HL Paper 1 Q2(b)(i)",
+    stem: "The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two vertical lines.",
     questionText: "The area of region K is 538 square units. Use integration of f(x) to show that: 4a + 3b + 3c = 807",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q2-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, integration indicated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: integration is required in order to be awarded any credit 4 steps: 1. ∫(ax² + bx + c)dx 2. Integrates all 3 terms 3. Subs in limits (accept without 0 subbed in) and sets expression equal to 4. Simplifies to given expression. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, integration indicated","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q2-b-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q2-b-i.png",
           "srcHash": "585005c8bbb161fc42a37c1192e138d0",
-          "alt": "The question as printed on the paper — (b) The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two… Full card prompt: The area of region K is 538 square units. Use integration of f(x) to show that: 4a + 3b + 3c = 807",
+          "alt": "The question as printed on the paper — (b) The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two… Full card prompt: The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two vertical lines. The area of region K is 538 square units. Use integration of f(x) to show that: 4a + 3b + 3c = 807",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -2729,21 +2795,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q2-b-ii", topicId: "maths-4-2", conceptId: "areas-three-regions-three-equations-including",
     section: "B", questionRef: "2022 HL Paper 1 Q2(b)(ii)",
-    questionText: "The areas of the three regions K, L, and N give the following three equations (including the equation from part (b)(i)): 4a + 3b + 3c = 807 28a + 9b + 3c = 879 76a + 15b + 3c = 663 Solve these equations to find the values of a, b, and c",
+    stem: "The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two vertical lines.",
+    questionText: "The areas of the three regions K, L, and N give the following three equations (including the equation from part (b)(i)): 4a + 3b + 3c = 807; 28a + 9b + 3c = 879; 76a + 15b + 3c = 663. Solve these equations to find the values of a, b, and c.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-hl-p1-q2-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 4a = 807 −3b−3c", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: Method 1: 3 steps: 1. Two equations in the same 2 variables 2. One equation in 1 variable 3. Finds 3 variables Method 2: 1. Writes one variable in terms of the other two 2. Writes a second variable in terms of ONE of the other variables 3. Finds 3 variables. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, 4a = 807 −3b−3c","1 step correct","2 steps correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q2-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q2-b-ii.png",
           "srcHash": "8da0dbe46b5fba4886ac608bf1c0ab20",
-          "alt": "The question as printed on the paper — (b) The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two… Full card prompt: The areas of the three regions K, L, and N give the following three equations (including the equation from part (b)(i)): 4a + 3b + 3c = 807 28a + 9b + 3c = 879 76a + 15b + 3c = 663 Solve these equations to find the values of a, b, and c",
+          "alt": "The question as printed on the paper — (b) The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two… Full card prompt: The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two vertical lines. The areas of the three regions K, L, and N give the following three equations (including the equation from part (b)(i)): 4a + 3b + 3c = 807; 28a + 9b + 3c = 879; 76a + 15b + 3c = 663. Solve these equations to find the values of a, b, and c.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -2759,16 +2839,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q3-a-i", topicId: "maths-4-4", conceptId: "part",
     section: "B", questionRef: "2022 HL Paper 1 Q3(a)(i)",
-    questionText: "Show that z−iz = 8 −4i",
+    stem: "z = 6 + 2i, where i² = −1.",
+    questionText: "Show that z − iz = 8 − 4i.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q3-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution, or z(1 −i)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct substitution, or z(1 −i)","Mishandles −2i², otherwise correct\nMultiplies numerator and denominator by conjugate"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q3-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q3-a-i.png",
@@ -2789,16 +2883,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q3-a-ii", topicId: "maths-4-4", conceptId: "part",
     section: "B", questionRef: "2022 HL Paper 1 Q3(a)(ii)",
-    questionText: "Show that |z|² + |iz|² = |z−iz|²",
+    stem: "z = 6 + 2i, where i² = −1.",
+    questionText: "Show that |z|² + |iz|² = |z − iz|²",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q3-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, correct formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Finds |z|², |iz|², and |z−iz|², but no conclusion of equality. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, correct formula with some substitution","Two correct values found, from |z|, |iz| and |z−iz|","Two correct values found, from |z|², |iz|², and |z−iz|²"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q3-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q3-a-ii.png",
@@ -2819,16 +2927,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q3-a-iii", topicId: "maths-2-2", conceptId: "iii-circle-passes-through-points-shown",
+    id: "maths-2022-hl-p1-q3-a-iii", topicId: "maths-4-4", conceptId: "iii-circle-passes-through-points-shown",
     section: "B", questionRef: "2022 HL Paper 1 Q3(a)(iii)",
-    questionText: "(iii) The circle c passes through the points z, iz, and 0, as shown in the diagram below (not to scale). z and iz are endpoints of a diameter of the circle",
+    stem: "z = 6 + 2i, where i² = −1.",
+    questionText: "The circle c passes through the points z, iz, and 0, as shown in the diagram below (not to scale). z and iz are endpoints of a diameter of the circle. Find the area of the circle c in terms of π.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q3-a-iii-r1", kind: "anyN", verbatim: "Some work of merit, for example, some substitution into a relevant formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Allow solution treating problem as being in the real 2D co-ordinate plane rather than the complex plane. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some work of merit, for example, some substitution into a relevant formula","Finds radius\nSome work of merit in finding radius, and finds area based on incorrect radius"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q3-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q3-a-iii.png",
@@ -2849,16 +2972,42 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q3-b", topicId: "maths-3-1", conceptId: "can-written-form",
+    id: "maths-2022-hl-p1-q3-b", topicId: "maths-4-4", conceptId: "can-written-form",
     section: "B", questionRef: "2022 HL Paper 1 Q3(b)",
-    questionText: "(√3 −i) 9 can be written in the form a + ib, where a, b∈ℤ and i² = −1",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "(√3 − i)⁹ can be written in the form a + ib, where a, b ∈ ℤ and i² = −1. Use de Moivre’s Theorem to find the value of a and the value of b.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-hl-p1-q3-b-r1", kind: "anyN", verbatim: "Work plots of/√3 merit, − i, or for some example, correct substitution into de Moivre’s Theorem", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: a and b not explicitly stated and solution given as 512i. Note: polar form must be used to achieve any credit. Note: Accept 0 + 512i for Full Credit Note that argument may also be given as 𝜃 = −30°, etc., or 𝜃 = 11𝜋/6 , etc. 4 steps: 1. Finds r 2. Finds 𝜃 3. Subs into de Moivre’s Theorem 4. Evaluates. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work plots of/√3 merit, − i, or for some example, correct substitution into de Moivre’s Theorem","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2022-hl-p1-q3-b-solution-1", kind: "point", verbatim: "Model solution — so A = 30°, so θ = 330°", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-2", kind: "point", verbatim: "Model solution — = 512(cos 2970 + i sin 2970)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-3", kind: "point", verbatim: "Model solution — = 0 + 512i", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-4", kind: "point", verbatim: "Model solution — a = 0, b = 512", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-5", kind: "point", verbatim: "Note — polar form must be used to achieve any credit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-6", kind: "point", verbatim: "Note — Accept 0 + 512i for Full Credit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-7", kind: "point", verbatim: "Step — Finds r", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-8", kind: "point", verbatim: "Step — Finds θ", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-9", kind: "point", verbatim: "Step — Subs into de Moivre’s Theorem", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-10", kind: "point", verbatim: "Step — Evaluates", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-11", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, plots √3 − i, or some correct substitution into de Moivre’s Theorem", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-12", kind: "point", verbatim: "Mid Partial Credit — 2 steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-13", kind: "point", verbatim: "High Partial Credit — 3 steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q3-b-solution-14", kind: "point", verbatim: "Full Credit −1 (deduction) — a and b not explicitly stated and solution given as 512i", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q3-b.png",
@@ -2879,16 +3028,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q4-a", topicId: "maths-3-1", conceptId: "sequence-defined-follows-write-form",
+    id: "maths-2022-hl-p1-q4-a", topicId: "maths-4-1", conceptId: "sequence-defined-follows-write-form",
     section: "B", questionRef: "2022 HL Paper 1 Q4(a)",
-    questionText: "A sequence u1 , u2 , u3 , ... is defined as follows, for n∈ℕ: u1= 2, u2= 64, un+1= √ un un−1 Write u3 in the form 2p , where p∈ℝ",
+    questionText: "A sequence u₁, u₂, u₃, ... is defined as follows, for n ∈ ℕ: u₁ = 2, u₂ = 64, uₙ₊₁ = √(uₙ/uₙ₋₁). Write u₃ in the form 2^p, where p ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q4-a-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into u₃", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: 3 steps: 1. Substitutes u₁ and u₂ into u₃ 2. Writes 64 or 32 as a power of 2 3. Finishes (deals with square root). Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, some correct substitution into u₃","2 steps correct"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q4-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q4-a.png",
@@ -2909,16 +3071,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q4-b-i", topicId: "maths-4-1", conceptId: "letting-arithmetic-sequence-26y",
     section: "B", questionRef: "2022 HL Paper 1 Q4(b)(i)",
-    questionText: "By letting y = e^k in this arithmetic sequence, show that: 5y²−26y + 5 = 0",
+    stem: "The first three terms in an arithmetic sequence are as follows, where k ∈ ℝ: 5e^(−k), 13, 5e^k",
+    questionText: "By letting y = e^k in this arithmetic sequence, show that: 5y² − 26y + 5 = 0",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q4-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, finds one common difference, or replaces e^k with y or y with e^k, or states T₃−T₂ = T₂−T₁", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Each method shown has 3 steps. Method 1: 1. Equates common differences 2. Replaces e^k with y and e^−^k with 1/y or y^(−1) 3. Writes in required form Method 2: 1. Shows T₁ + T₃ = 2T₂ for any arithmetic sequence 2. Replaces y with e^k and simplifies 3. Divides by e^k to show T₁ + T₃ = 2T₂ Method 3: 1. Finds the common difference in terms of y 2. Finds equation in y 3. Writes in required form. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, finds one common difference, or replaces e^k with y or y with e^k, or states T₃−T₂ = T₂−T₁","2 steps correct"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q4-b-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q4-b-i.png",
@@ -2939,21 +3115,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q4-b-ii", topicId: "maths-3-2", conceptId: "equation-part-two-possible-values-each",
     section: "B", questionRef: "2022 HL Paper 1 Q4(b)(ii)",
-    questionText: "Use the equation in y in part (b)(i) to find the two possible values of k. Give each value in the form ln p or −ln p, where p∈ℕ",
+    stem: "The first three terms in an arithmetic sequence are as follows, where k ∈ ℝ: 5e^(−k), 13, 5e^k",
+    questionText: "Use the equation in y in part (b)(i) to find the two possible values of k. Give each value in the form ln p or −ln p, where p ∈ ℕ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q4-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, effort at factorisation, or identifies a, b, or c", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: 2 values of e^k correctly found, only 1 value of k correctly found. Note: 3 steps: 1. Fully substituted quadratic formula OR factors found 2. Solves for y 3. Solves for k, in correct form. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, effort at factorisation, or identifies a, b, or c","1 step correct","2 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q4-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q4-b-ii.png",
           "srcHash": "3e14b9b1da6db8dfda8420cd1f781154",
-          "alt": "The question as printed on the paper — The first three terms in an arithmetic sequence are as follows, where k∈ℝ: 5e^(−k), 13, 5e^k By letting y = e^k in this arithmetic sequence, show that: 5y²−26y + 5 = 0 Use the equation in y in part (b)(i) to find the… Full card prompt: Use the equation in y in part (b)(i) to find the two possible values of k. Give each value in the form ln p or −ln p, where p∈ℕ",
+          "alt": "The question as printed on the paper — The first three terms in an arithmetic sequence are as follows, where k∈ℝ: 5e^(−k), 13, 5e^k By letting y = e^k in this arithmetic sequence, show that: 5y²−26y + 5 = 0 Use the equation in y in part (b)(i) to find the… Full card prompt: The first three terms in an arithmetic sequence are as follows, where k ∈ ℝ: 5e^(−k), 13, 5e^k Use the equation in y in part (b)(i) to find the two possible values of k. Give each value in the form ln p or −ln p, where p ∈ ℕ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -2969,16 +3159,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q5-a", topicId: "maths-5-2", conceptId: "derivative",
     section: "B", questionRef: "2022 HL Paper 1 Q5(a)",
-    questionText: "g(x) = x2− 1 x where x∈ℝ. Find g′(x), the derivative of g(x)",
+    questionText: "g(x) = x² − 1/x where x ∈ ℝ. Find g′(x), the derivative of g(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q5-a-r1", kind: "anyN", verbatim: "Some correct differentiation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: No credit if differentiation is not used. Note: Accept the answer in an unsimplified form, for example, 2x−(−1x^(−2)). Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some correct differentiation"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q5-a.png",
@@ -2999,16 +3202,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q5-b-i", topicId: "maths-5-1", conceptId: "factor-three-values-which",
+    id: "maths-2022-hl-p1-q5-b-i", topicId: "maths-4-2", conceptId: "factor-three-values-which",
     section: "B", questionRef: "2022 HL Paper 1 Q5(b)(i)",
-    questionText: "x + 1 is a factor of f(x). Find the three values of x for which f(x) = 0",
+    stem: "f(x) = 2x³ − 21x² + 40x + 63, where x ∈ ℝ.",
+    questionText: "x + 1 is a factor of f(x). Find the three values of x for which f(x) = 0.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-hl-p1-q5-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct division, or sets up long division correctly, or sets x + 1 = 0\nCorrect answers with no work", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: Accept correct answers, with 4∙5 and 7 verified, for Full Credit. 4 steps: 1. Finds 1 term in 2x²−23x + 63 2. Finds remaining 2 terms 3. Factorises 2x²−23x + 63 OR fully substituted formula 4. Finds 3 solutions. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, some correct division, or sets up long division correctly, or sets x + 1 = 0\nCorrect answers with no work","2 steps correct\nTwo roots correct with sufficient work (note: supporting work is not needed for x = −1)","3 steps correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q5-b-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q5-b-i.png",
@@ -3029,16 +3246,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q5-b-ii", topicId: "maths-5-2", conceptId: "range-values-which-negative-correct-decimal",
     section: "B", questionRef: "2022 HL Paper 1 Q5(b)(ii)",
-    questionText: "Find the range of values of x for which f′(x) is negative, correct to 2 decimal places",
+    stem: "f(x) = 2x³ − 21x² + 40x + 63, where x ∈ ℝ.",
+    questionText: "Find the range of values of x for which f′(x) is negative, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q5-b-ii-r1", kind: "anyN", verbatim: "Some correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: in general, solution must be based on differentiation in order for any credit to be awarded. Note: Accept 1∙14 ≤ x ≤ 5∙86 4 steps: 1. Finds f′(x) 2. Fully substituted formula 3. Finds roots 4. Finds correct range of values. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some correct differentiation","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q5-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q5-b-ii.png",
@@ -3059,16 +3290,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q6-a", topicId: "maths-5-2", conceptId: "differentiate-respect-first-principles",
     section: "B", questionRef: "2022 HL Paper 1 Q6(a)",
-    questionText: "Differentiate f(x) = 2x² + 4x with respect to x, from first principles",
+    questionText: "Differentiate f(x) = 2x² + 4x with respect to x, from first principles.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-hl-p1-q6-a-r1", kind: "anyN", verbatim: "Work of merit, for example, some substitution into f(x + h)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: no credit unless differentiation from first principles is being used. 4 steps: 1. Finds f(x + h) 2. Finds f(x + h) −f(x) 3. Finds (f(x + ℎ)−f(x))/ℎ 4. Finds lim ℎ→0 (f(x + ℎ)−f(x))/ℎ. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, some substitution into f(x + h)","2 steps correct","3 steps correct\nLeft hand side missing, otherwise correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q6-a.png",
@@ -3089,21 +3333,46 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q6-b", topicId: "maths-3-1", conceptId: "rectangle-expanding-area-its-width-its",
+    id: "maths-2022-hl-p1-q6-b", topicId: "maths-5-2", conceptId: "rectangle-expanding-area-its-width-its",
     section: "B", questionRef: "2022 HL Paper 1 Q6(b)",
-    questionText: "A rectangle is expanding in area. Its width is x cm, where x∈ℝ and x > 0. Its length is always four times its width",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "A rectangle is expanding in area. Its width is x cm, where x ∈ ℝ and x > 0. Its length is always four times its width. Find the rate of change of the area of the rectangle with respect to its width, x, when the area of the rectangle is 225 cm².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-hl-p1-q6-b-r1", kind: "anyN", verbatim: "A = l × w = 4x × x = 4x²", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: Method 1: 1. Write A in terms of x 2. Find x = 3. Find dA/dx 4. Evaluate dA/dx at x = 15/2. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["A = l × w = 4x × x = 4x²","When A = 225, 4x² = 225,","so x² = 225/4 , i.e. x = 15/2","dA/dx = 8x = 8 ( )/2 15 = 60 cm²/cm","Accept without unit","l = 4x so x = l/4","A = l × l/4 = 1/4 l²","dl/dx = 4 and dA/dl = 1/2 l","dA/dx = dA/dl × dl/dx","dA/dx = 1/2 l × 4","When A = 225, 1/4 l² = 225, so l = 30","dA/dx = 1/2 (30)(4) = 60 cm²/cm","Accept without unit"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2022-hl-p1-q6-b-solution-1", kind: "point", verbatim: "Model solution — A = l × w = 4x × x = 4x²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-2", kind: "point", verbatim: "Model solution — When A = 225, 4x² = 225,", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-3", kind: "point", verbatim: "Model solution — so x² = 225/4, i.e. x = 15/2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-4", kind: "point", verbatim: "Model solution — dA/dx = 8x", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-5", kind: "point", verbatim: "Model solution — dA/dx = 1/2 (30)(4) = 60 cm²/cm", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-6", kind: "point", verbatim: "Note — Accept without unit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-7", kind: "point", verbatim: "Method 1, Low Partial Credit — Work of merit, for example, l = 4x ; mentions dA/dx", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-8", kind: "point", verbatim: "Method 1, Mid Partial Credit — 2 steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-9", kind: "point", verbatim: "Method 1, High Partial Credit — 3 steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-10", kind: "point", verbatim: "Method 2, Low Partial Credit — States relevant derivative, for example, dA/dx", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-11", kind: "point", verbatim: "Method 2, Mid Partial Credit — Any two of the following:", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q6-b-solution-12", kind: "point", verbatim: "Method 2, High Partial Credit — and any two others from the MPC list above", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q6-b.png",
           "srcHash": "c1e4848b4a765d19104bda1f045ecce3",
-          "alt": "The question as printed on the paper — A rectangle is expanding in area. Its width is x cm, where x∈ℝ and x > 0. Its length is always four times its width. Find the rate of change of the area of the rectangle with respect to its width, x, when the area of… Full card prompt: A rectangle is expanding in area. Its width is x cm, where x∈ℝ and x > 0. Its length is always four times its width",
+          "alt": "The question as printed on the paper — A rectangle is expanding in area. Its width is x cm, where x∈ℝ and x > 0. Its length is always four times its width. Find the rate of change of the area of the rectangle with respect to its width, x, when the area of… Full card prompt: A rectangle is expanding in area. Its width is x cm, where x ∈ ℝ and x > 0. Its length is always four times its width. Find the rate of change of the area of the rectangle with respect to its width, x, when the area of the rectangle is 225 cm².",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3119,21 +3388,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q6-c", topicId: "maths-5-2", conceptId: "graph-cubic-function-shown-first-diagram",
     section: "B", questionRef: "2022 HL Paper 1 Q6(c)",
-    questionText: "The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x∈ℝ. The maximum value of p′(x) in this domain is 1, and p′(0) = −3, where p′(x) is the derivative of p(x)",
+    questionText: "The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x ∈ ℝ. The maximum value of p′(x) in this domain is 1, and p′(0) = −3, where p′(x) is the derivative of p(x). Use this information to draw the graph of p′(x) on the second set of axes below, for 0 ≤ x ≤ 4, x ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q6-c-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct point with integer co-ordinates plotted, or correct shape", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Point at x = 4 plotted incorrectly, otherwise correct. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, one correct point with integer co-ordinates plotted, or correct shape","Three correct points with integer co-ordinates plotted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q6-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q6-c.png",
           "srcHash": "cfed64023e33f024f0d1d9020661f1d5",
-          "alt": "The question as printed on the paper — The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x∈ℝ. The maximum value of p′(x) in this domain is 1, and p′(0) = −3, where p′(x) is the derivative of p(x). Use this information to… Full card prompt: The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x∈ℝ. The maximum value of p′(x) in this domain is 1, and p′(0) = −3, where p′(x) is the derivative of p(x)",
+          "alt": "The question as printed on the paper — The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x∈ℝ. The maximum value of p′(x) in this domain is 1, and p′(0) = −3, where p′(x) is the derivative of p(x). Use this information to… Full card prompt: The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x ∈ ℝ. The maximum value of p′(x) in this domain is 1, and p′(0) = −3, where p′(x) is the derivative of p(x). Use this information to draw the graph of p′(x) on the second set of axes below, for 0 ≤ x ≤ 4, x ∈ ℝ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3149,21 +3431,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q7-a", topicId: "maths-5-2", conceptId: "work-out-hannah-heart-rate-minutes",
     section: "B", questionRef: "2022 HL Paper 1 Q7(a), (b)",
-    questionText: "Work out Hannah’s heart-rate 4 minutes after the start of the session",
+    stem: "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70",
+    questionText: "(a) Work out Hannah’s heart-rate 4 minutes after the start of the session. (b) Find h′(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q7-a-r1", kind: "anyN", verbatim: "Work of merit in either part, for example, in (a), some correct substitution; in (b): some correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: All correct, except that unit is missing or incorrect in (a). Note: Accept unsimplified version of h′(x). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in either part, for example, in (a), some correct substitution; in (b): some correct differentiation","(a) or (b) correct\nWork of merit in both (a) and (b)","One part correct and work of merit in the other"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q7-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q7-a.png",
           "srcHash": "be79e0973229e4132b672f87555395da",
-          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Work out Hannah’s heart-rate 4 minutes after the start of the session",
+          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 (a) Work out Hannah’s heart-rate 4 minutes after the start of the session. (b) Find h′(x).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3179,21 +3475,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q7-c", topicId: "maths-5-2", conceptId: "explain-what-value-means-context-hannah",
     section: "B", questionRef: "2022 HL Paper 1 Q7(c)",
-    questionText: "Find h′(2), and explain what this value means in the context of Hannah’s heart-rate",
+    stem: "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70",
+    questionText: "Find h′(2), and explain what this value means in the context of Hannah’s heart-rate.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q7-c-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into h′(x), or explanation shows some understanding of derivative as rate of change", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct substitution into h′(x), or explanation shows some understanding of derivative as rate of change","One part correct (h′(2) or explanation)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q7-c.png",
           "srcHash": "45d4839e20e3831bd67ee3b172915aa3",
-          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Find h′(2), and explain what this value means in the context of Hannah’s heart-rate",
+          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 Find h′(2), and explain what this value means in the context of Hannah’s heart-rate.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3209,21 +3519,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q7-d", topicId: "maths-4-2", conceptId: "least-value-greatest-value-calculus-solution",
+    id: "maths-2022-hl-p1-q7-d", topicId: "maths-5-2", conceptId: "least-value-greatest-value-calculus-solution",
     section: "B", questionRef: "2022 HL Paper 1 Q7(d)",
-    questionText: "Find the least value and the greatest value of h(x), for 0 ≤ x ≤ 8, x∈ℝ. Use calculus in your solution. You may also use information from the graph above, which is to scale",
+    stem: "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 The graph below shows y = h(x), where 0 ≤ x ≤ 8, x ∈ ℝ.",
+    questionText: "Find the least value and the greatest value of h(x), for 0 ≤ x ≤ 8, x ∈ ℝ. Use calculus in your solution. You may also use information from the graph above, which is to scale.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-hl-p1-q7-d-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates least value at h(0)\nAny correct differentiation\nBrings down h′(x) from (b)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: 4 steps: 1. Finds least value of h(x) 2. Sets h′(x) = 0 3. Finds x-value for max 4. Finds greatest value of h(x). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, indicates least value at h(0)\nAny correct differentiation\nBrings down h′(x) from (b)","2 steps correct","3 steps correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q7-d",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q7-d.png",
           "srcHash": "9dfdbb6fd45511177ebd8c9f119c71ee",
-          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Find the least value and the greatest value of h(x), for 0 ≤ x ≤ 8, x∈ℝ. Use calculus in your solution. You may also use information from the graph above, which is to scale",
+          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 The graph below shows y = h(x), where 0 ≤ x ≤ 8, x ∈ ℝ. Find the least value and the greatest value of h(x), for 0 ≤ x ≤ 8, x ∈ ℝ. Use calculus in your solution. You may also use information from the graph above, which is to scale.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3239,21 +3563,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q7-e", topicId: "maths-5-2", conceptId: "how-long-after-start-session-hannah",
     section: "B", questionRef: "2022 HL Paper 1 Q7(e)",
-    questionText: "How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds",
+    stem: "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70",
+    questionText: "How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds. Remember that h(x) = 2x³ − 28·5x² + 105x + 70.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q7-e-r1", kind: "anyN", verbatim: "Work of merit, for example, marks relevant point on graph, indicates h′′(x)\nBrings down h′(x) from (b)\nFirst differences found and some indication of the greatest first difference", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: 3 steps (note that step 1 must be done or implied, in order for steps 2 or 3 to be considered correct): 1. Indicates h′′(x) = 0OR midpoint of local max and min values 2. Finds value of x in decimal / fraction form 3. Finds x in required from. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, marks relevant point on graph, indicates h′′(x)\nBrings down h′(x) from (b)\nFirst differences found and some indication of the greatest first difference","2 steps correct, including Step 1"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q7-e",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q7-e.png",
           "srcHash": "024e315539e861b3c23ab47b682e18d1",
-          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds",
+          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds. Remember that h(x) = 2x³ − 28·5x² + 105x + 70.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3269,21 +3607,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q7-f", topicId: "maths-5-2", conceptId: "information-write-terms-first-minutes-session",
-    section: "B", questionRef: "2022 HL Paper 1 Q7(f)",
-    questionText: "Use this information to write b′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x∈ℝ. For the first 8 minutes of the session, Karen’s heart-rate, k(x), is always 10% less than",
+    section: "B", questionRef: "2022 HL Paper 1 Q7(f)(i), (ii)",
+    stem: "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM.",
+    questionText: "(i) For the first 8 minutes of the session, Bruno’s heart-rate, b(x), is always 15 BPM more than Hannah’s heart-rate. Use this information to write b′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x ∈ ℝ. (ii) For the first 8 minutes of the session, Karen’s heart-rate, k(x), is always 10% less than Hannah’s heart-rate. Use this information to write k′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q7-f-r1", kind: "anyN", verbatim: "Work of merit in 1 part, for example, b(x) = h(x) + 15, or k(x) = 0∙9 h(x)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit in 1 part, for example, b(x) = h(x) + 15, or k(x) = 0∙9 h(x)","1 part correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q7-f",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q7-f.png",
           "srcHash": "40de00bb3ed0f0c61ac2446066dcd5a3",
-          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Use this information to write b′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x∈ℝ. For the first 8 minutes of the session, Karen’s heart-rate, k(x), is always 10% less than",
+          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM. (i) For the first 8 minutes of the session, Bruno’s heart-rate, b(x), is always 15 BPM more than Hannah’s heart-rate. Use this information to write b′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x ∈ ℝ. (ii) For the first 8 minutes of the session, Karen’s heart-rate, k(x), is always 10% less than Hannah’s heart-rate. Use this information to write k′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x ∈ ℝ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3299,21 +3651,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q7-g", topicId: "maths-3-1", conceptId: "martha-does-each-exercise-longer-time",
+    id: "maths-2022-hl-p1-q7-g", topicId: "maths-5-1", conceptId: "martha-does-each-exercise-longer-time",
     section: "B", questionRef: "2022 HL Paper 1 Q7(g)",
-    questionText: "Martha does each exercise for a longer time than Hannah. For 0 ≤ x ≤ 10, Martha’s heart-rate, m(x), is: m(x) = h(0∙8 x) Use h(x) = 2x³−28∙5x² + 105x + 70 to write m(x) in the form: m(x) = ax³ + bx² + cx + d where a, b, c, d∈ℝ, for 0 ≤ x ≤ 10",
+    stem: "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM.",
+    questionText: "Martha does each exercise for a longer time than Hannah. For 0 ≤ x ≤ 10, Martha’s heart-rate, m(x), is: m(x) = h(0·8x). Use h(x) = 2x³ − 28·5x² + 105x + 70 to write m(x) in the form: m(x) = ax³ + bx² + cx + d, where a, b, c, d ∈ ℝ, for 0 ≤ x ≤ 10.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q7-g-r1", kind: "anyN", verbatim: "Work of merit, for example, expands (0 ∙8x)² or (0 ∙8x)³, or some substitution of 0 ∙8x into h(x)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, expands (0 ∙8x)² or (0 ∙8x)³, or some substitution of 0 ∙8x into h(x)"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q7-g",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q7-g.png",
           "srcHash": "6b75f8fa049e81e0c10645840e74d082",
-          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Martha does each exercise for a longer time than Hannah. For 0 ≤ x ≤ 10, Martha’s heart-rate, m(x), is: m(x) = h(0∙8 x) Use h(x) = 2x³−28∙5x² + 105x + 70 to write m(x) in the form: m(x) = ax³ + bx² + cx + d where a, b, c, d∈ℝ, for 0 ≤ x ≤ 10",
+          "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x∈ℝ. For the first 8 minutes of the… Full card prompt: Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM. Martha does each exercise for a longer time than Hannah. For 0 ≤ x ≤ 10, Martha’s heart-rate, m(x), is: m(x) = h(0·8x). Use h(x) = 2x³ − 28·5x² + 105x + 70 to write m(x) in the form: m(x) = ax³ + bx² + cx + d, where a, b, c, d ∈ ℝ, for 0 ≤ x ≤ 10.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3329,16 +3695,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q8-a", topicId: "maths-2-3", conceptId: "complete-table-value-given",
     section: "B", questionRef: "2022 HL Paper 1 Q8(a), (b)",
-    questionText: "Complete the table below. The value of h(1) is given",
+    stem: "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians.",
+    questionText: "(a) Complete the table below for t = 0, 1, 2, …, 8. The value of h(1) is given: h(1) = 42. (b) Draw the graph of y = h(t) for 0 ≤ t ≤ 8, t ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-hl-p1-q8-a-r1", kind: "anyN", verbatim: "Any 1 item correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit –1: All items correct but points not joined or joined inappropriately; All items but 1 correct, and points appropriately joined. Note: 17 items are required: 8 table entries and 9 plots (which need to be joined appropriately for Full Credit). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Any 1 item correct","Any 8 items correct","Any 12 items correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q8-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q8-a.png",
@@ -3359,16 +3740,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q8-c", topicId: "maths-2-3", conceptId: "period-range-period-range",
     section: "B", questionRef: "2022 HL Paper 1 Q8(c)",
-    questionText: "Find the period and range of h(t). Period = Range = [ , ]",
+    stem: "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians.",
+    questionText: "Find the period and range of h(t).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q8-c-r1", kind: "anyN", verbatim: "Work of merit, for example, mentions 12, 132, or 120; or period or range clearly marked on graph", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Period and range correct, but swapped; Period = 6 and Range = 120; Range = [12, 132] and Period given as 0 – 6 or 1 – 7, etc. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, mentions 12, 132, or 120; or period or range clearly marked on graph","Period or range correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q8-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q8-c.png",
@@ -3389,16 +3784,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q8-d", topicId: "maths-2-3", conceptId: "during-minute-period-what-greatest-number",
     section: "B", questionRef: "2022 HL Paper 1 Q8(d)",
+    stem: "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians.",
     questionText: "During a 50-minute period, what is the greatest number of minutes for which the point A could be higher than 42 m?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q8-d-r1", kind: "anyN", verbatim: "Work of merit, for example, 50 ÷ 6, or 6 + 6 + ⋯, or indicates 4\nThe line h(t) = 42 shown on the graph", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, 50 ÷ 6, or 6 + 6 + ⋯, or indicates 4\nThe line h(t) = 42 shown on the graph","Finds 32 mins\nAdds 2 to a relevant number of mins"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q8-d",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q8-d.png",
@@ -3419,16 +3828,42 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q8-e", topicId: "maths-2-3", conceptId: "solving-equation-second-time-value-point",
     section: "B", questionRef: "2022 HL Paper 1 Q8(e)",
-    questionText: "By solving the following equation, find the second time (value of t) that the point A is at a height of 110 m, after it starts turning: 𝜋/3 t) = 110 72 −60 cos ( Give your answer in minutes, correct to 2 decimal places",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians.",
+    questionText: "By solving the following equation, find the second time (value of t) that the point A is at a height of 110 m, after it starts turning: 72 − 60 cos(π/3 t) = 110. Give your answer in minutes, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-hl-p1-q8-e-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct work towards isolating cos (/3 𝜋 t)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Calculator in degree mode, otherwise correct. Note: 1. Isolates cos (/3 𝜋 t) 𝜋 3t1 2. Finds reference angle or 3. Finds 𝜋/3 t₂ or t₁ 4. Finds t. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct work towards isolating cos (/3 𝜋 t)","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2022-hl-p1-q8-e-solution-1", kind: "point", verbatim: "Model solution — 60 cos(π/3 t) = 72 − 110 = −38", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-2", kind: "point", verbatim: "Model solution — (π/3)t₂ = π + 0·8849 … radians", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-3", kind: "point", verbatim: "Model solution — 1st time: Quadrant 2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-4", kind: "point", verbatim: "Model solution — 2nd time: Quadrant 3", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-5", kind: "point", verbatim: "Model solution — t = 3(π + 0·8849…)/π = 3·845 … = 3·85 mins", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-6", kind: "point", verbatim: "Step — Isolates cos(π/3 t)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-7", kind: "point", verbatim: "Step — Finds reference angle or (π/3)t₁", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-8", kind: "point", verbatim: "Step — Finds (π/3)t₂ or t₁", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-9", kind: "point", verbatim: "Step — Finds t", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-10", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, some correct work towards isolating cos(π/3 t)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-11", kind: "point", verbatim: "Mid Partial Credit — 2 steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-12", kind: "point", verbatim: "High Partial Credit — 3 steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p1-q8-e-solution-13", kind: "point", verbatim: "Full Credit −1 (deduction) — Calculator in degree mode, otherwise correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q8-e",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q8-e.png",
@@ -3449,16 +3884,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q8-f", topicId: "maths-5-2", conceptId: "integration-average-height-point-over-first",
     section: "B", questionRef: "2022 HL Paper 1 Q8(f)",
-    questionText: "Use integration to find the average height of the point A over the first 8 minutes that the wheel is turning. Give your answer correct to 1 decimal place",
+    stem: "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians.",
+    questionText: "Use integration to find the average height of the point A over the first 8 minutes that the wheel is turning. Give your answer correct to 1 decimal place. Remember that h(t) = 72 − 60 cos(π/3 t).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q8-f-r1", kind: "anyN", verbatim: "Work of merit, for example, integration indicated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Calculator in degree mode, otherwise correct. Note: integration is required in order to be awarded any credit 4 steps (if 1/8 is omitted, treat step 1 as not fully correct, but all other steps can be accepted as correct): 1. 1/8 ∫ 0 8 h(t) dt 2. Integrates correctly 3. Subs in limits 4. Evaluates correctly. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, integration indicated","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q8-f",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q8-f.png",
@@ -3479,21 +3928,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q9-a", topicId: "maths-4-1", conceptId: "amount-drug-left-alex-body-days",
+    id: "maths-2022-hl-p1-q9-a", topicId: "maths-3-2", conceptId: "amount-drug-left-alex-body-days",
     section: "B", questionRef: "2022 HL Paper 1 Q9(a)",
-    questionText: "Find the amount of the drug left in Alex’s body 2∙5 days after a single 15 mg injection. Give your answer in mg, correct to 2 decimal places",
+    stem: "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ.",
+    questionText: "Find the amount of the drug left in Alex’s body 2·5 days after a single 15 mg injection. Give your answer in mg, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q9-a-r1", kind: "anyN", verbatim: "Work of merit, for example, correct substitution into given expression", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept correct answer without work. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, correct substitution into given expression"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q9-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q9-a.png",
           "srcHash": "60ed0f372e2578ad6e79fbeb28b54d08",
-          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Find the amount of the drug left in Alex’s body 2∙5 days after a single 15 mg injection. Give your answer in mg, correct to 2 decimal places",
+          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Find the amount of the drug left in Alex’s body 2·5 days after a single 15 mg injection. Give your answer in mg, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3509,21 +3972,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q9-b", topicId: "maths-4-1", conceptId: "how-long-after-single-injection-will",
+    id: "maths-2022-hl-p1-q9-b", topicId: "maths-3-2", conceptId: "how-long-after-single-injection-will",
     section: "B", questionRef: "2022 HL Paper 1 Q9(b)",
-    questionText: "How long after a single 15 mg injection will there be exactly 1 mg of the drug left in Alex’s body? Give your answer in days, correct to 1 decimal place",
+    stem: "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ.",
+    questionText: "How long after a single 15 mg injection will there be exactly 1 mg of the drug left in Alex’s body? Give your answer in days, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q9-b-r1", kind: "anyN", verbatim: "Work of merit, for example, 15(0 ∙6^t) = 1\n5.3 days by trial and improvement", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: 1. Isolates 0∙6^t 2. Converts to log equation (not necessarily to base e) 3. Solves for t. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, 15(0 ∙6^t) = 1\n5.3 days by trial and improvement","2 steps correct"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q9-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q9-b.png",
           "srcHash": "9867dd10e09d0397a1e3d3e9e575992e",
-          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: How long after a single 15 mg injection will there be exactly 1 mg of the drug left in Alex’s body? Give your answer in days, correct to 1 decimal place",
+          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. How long after a single 15 mg injection will there be exactly 1 mg of the drug left in Alex’s body? Give your answer in days, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3539,21 +4016,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q9-c", topicId: "maths-4-1", conceptId: "explain-why-total-amount-drug-alex",
     section: "B", questionRef: "2022 HL Paper 1 Q9(c)",
-    questionText: "Explain why the total amount of the drug, in mg, in Alex’s body immediately after the 4 th injection is given by: 15 + 15(0∙6) + 15(0∙6)² + 15(0∙6)³",
+    stem: "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time.",
+    questionText: "Explain why the total amount of the drug, in mg, in Alex’s body immediately after the 4th injection is given by: 15 + 15(0·6) + 15(0·6)² + 15(0·6)³",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q9-c-r1", kind: "anyN", verbatim: "15: amount from injection just given", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["15: amount from injection just given","15(0 ∙6): amount from injection 1 day ago","15(0 ∙6²): amount from injection 2 days ago","15(0 ∙6³): amount from injection 3 days ago","There is 15 mg from the injection just given,","and the amount from each previous injection","has reduced by 40% each day"]} },
     ],
+    mathematicsScale: {"code":"5A","marks":[0,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q9-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q9-c.png",
           "srcHash": "417a41a5f1e89c682a4949540a127e83",
-          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Explain why the total amount of the drug, in mg, in Alex’s body immediately after the 4 th injection is given by: 15 + 15(0∙6) + 15(0∙6)² + 15(0∙6)³",
+          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time. Explain why the total amount of the drug, in mg, in Alex’s body immediately after the 4th injection is given by: 15 + 15(0·6) + 15(0·6)² + 15(0·6)³",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3569,21 +4060,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q9-d", topicId: "maths-4-1", conceptId: "total-amount-drug-alex-body-immediately",
     section: "B", questionRef: "2022 HL Paper 1 Q9(d)",
-    questionText: "Find the total amount of the drug in Alex’s body immediately after the 10 th injection. Give your answer in mg, correct to 2 decimal places",
+    stem: "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time.",
+    questionText: "Find the total amount of the drug in Alex’s body immediately after the 10th injection. Give your answer in mg, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q9-d-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates sum of two or more relevant terms, identifies a or r, or Sₙ formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, indicates sum of two or more relevant terms, identifies a or r, or Sₙ formula with some substitution","Sₙ formula fully substituted"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q9-d",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q9-d.png",
           "srcHash": "42099d5d94c90666f5858f4dbda8e535",
-          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Find the total amount of the drug in Alex’s body immediately after the 10 th injection. Give your answer in mg, correct to 2 decimal places",
+          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time. Find the total amount of the drug in Alex’s body immediately after the 10th injection. Give your answer in mg, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3599,21 +4104,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q9-e", topicId: "maths-2-3", conceptId: "formula-sum-infinity-geometric-series-estimate",
+    id: "maths-2022-hl-p1-q9-e", topicId: "maths-4-1", conceptId: "formula-sum-infinity-geometric-series-estimate",
     section: "B", questionRef: "2022 HL Paper 1 Q9(e)",
-    questionText: "Use the formula for the sum to infinity of a geometric series to estimate the amount of the drug (in mg) in Alex’s body, after a long period of time during which he gets daily injections",
+    stem: "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time.",
+    questionText: "Use the formula for the sum to infinity of a geometric series to estimate the amount of the drug (in mg) in Alex’s body, after a long period of time during which he gets daily injections.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q9-e-r1", kind: "anyN", verbatim: "S_∞ formula with some substitution\nIdentifies a or r", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["S_∞ formula with some substitution\nIdentifies a or r"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q9-e",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q9-e.png",
           "srcHash": "5610ff2e84140ebfc334caad1df06284",
-          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Use the formula for the sum to infinity of a geometric series to estimate the amount of the drug (in mg) in Alex’s body, after a long period of time during which he gets daily injections",
+          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time. Use the formula for the sum to infinity of a geometric series to estimate the amount of the drug (in mg) in Alex’s body, after a long period of time during which he gets daily injections.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3629,21 +4148,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q9-f-i", topicId: "maths-3-1", conceptId: "sum-geometric-series-total-amount-drug",
+    id: "maths-2022-hl-p1-q9-f-i", topicId: "maths-4-1", conceptId: "sum-geometric-series-total-amount-drug",
     section: "B", questionRef: "2022 HL Paper 1 Q9(f)(i)",
-    questionText: "Use the sum of a geometric series to show that the total amount of the drug (in mg) in Jessica’s body immediately after the n th injection, where n∈ℕ, is: 20d(1 −0∙85ⁿ) 3",
+    stem: "Jessica also gets daily injections of a medicinal drug at the same time every day. She gets d mg of the drug in each injection, where d ∈ ℝ. Each day, the amount of the drug left in Jessica’s body from an injection decreases by 15%.",
+    questionText: "Use the sum of a geometric series to show that the total amount of the drug (in mg) in Jessica’s body immediately after the nth injection, where n ∈ ℕ, is: 20d(1 − 0·85ⁿ)/3",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q9-f-i-r1", kind: "anyN", verbatim: "Work of merit, for example, identifies a or r, or one term in series (other than d)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, identifies a or r, or one term in series (other than d)","Fully correct substitution into formula\nOne error in substitution and finishes correctly"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q9-f-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q9-f-i.png",
           "srcHash": "786bf9aff6f20a2de839c91b334796a2",
-          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Use the sum of a geometric series to show that the total amount of the drug (in mg) in Jessica’s body immediately after the n th injection, where n∈ℕ, is: 20d(1 −0∙85ⁿ) 3",
+          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Jessica also gets daily injections of a medicinal drug at the same time every day. She gets d mg of the drug in each injection, where d ∈ ℝ. Each day, the amount of the drug left in Jessica’s body from an injection decreases by 15%. Use the sum of a geometric series to show that the total amount of the drug (in mg) in Jessica’s body immediately after the nth injection, where n ∈ ℕ, is: 20d(1 − 0·85ⁿ)/3",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3659,21 +4192,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q9-f-ii", topicId: "maths-4-1", conceptId: "immediately-after-7th-injection-there-drug",
     section: "B", questionRef: "2022 HL Paper 1 Q9(f)(ii)",
-    questionText: "Immediately after the 7th injection, there are 50 mg of the drug in Jessica’s body",
+    stem: "Jessica also gets daily injections of a medicinal drug at the same time every day. She gets d mg of the drug in each injection, where d ∈ ℝ. Each day, the amount of the drug left in Jessica’s body from an injection decreases by 15%. Part (f)(i) shows that the total amount of the drug (in mg) in Jessica’s body immediately after the nth injection is 20d(1 − 0·85ⁿ)/3.",
+    questionText: "Immediately after the 7th injection, there are 50 mg of the drug in Jessica’s body. Find the amount of the drug in one of Jessica’s daily injections. Give your answer correct to the nearest mg.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q9-f-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into formula for amount of drug, or identifies a or r", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: 2 steps: 1. Sets up equation in d 2. Finds value of d. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct substitution into formula for amount of drug, or identifies a or r","1 step correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q9-f-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q9-f-ii.png",
           "srcHash": "4888563efd4401d03fa6e07de6261922",
-          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Immediately after the 7th injection, there are 50 mg of the drug in Jessica’s body",
+          "alt": "The question as printed on the paper — Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s… Full card prompt: Jessica also gets daily injections of a medicinal drug at the same time every day. She gets d mg of the drug in each injection, where d ∈ ℝ. Each day, the amount of the drug left in Jessica’s body from an injection decreases by 15%. Part (f)(i) shows that the total amount of the drug (in mg) in Jessica’s body immediately after the nth injection is 20d(1 − 0·85ⁿ)/3. Immediately after the 7th injection, there are 50 mg of the drug in Jessica’s body. Find the amount of the drug in one of Jessica’s daily injections. Give your answer correct to the nearest mg.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3689,21 +4237,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q10-a", topicId: "maths-3-2", conceptId: "proportion-digits-recalled-correctly-after-hours",
     section: "B", questionRef: "2022 HL Paper 1 Q10(a)",
-    questionText: "Find the proportion of the digits recalled correctly after 3 hours, according to this model. Give your answer correct to 2 decimal places",
+    stem: "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ.",
+    questionText: "Find the proportion of the digits recalled correctly after 3 hours, according to this model. Give your answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q10-a-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates P(3)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept correct answer without work. Note: Accept 65∙36% or 65%. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, indicates P(3)"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[29],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q10-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q10-a.png",
           "srcHash": "eaf3c37704b643644a6d17562eb7bc2a",
-          "alt": "The question as printed on the paper — A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0∙82 −0∙12… Full card prompt: Find the proportion of the digits recalled correctly after 3 hours, according to this model. Give your answer correct to 2 decimal places",
+          "alt": "The question as printed on the paper — A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0∙82 −0∙12… Full card prompt: A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ. Find the proportion of the digits recalled correctly after 3 hours, according to this model. Give your answer correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3719,21 +4281,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q10-b", topicId: "maths-3-2", conceptId: "after-how-many-hours-would-exactly",
     section: "B", questionRef: "2022 HL Paper 1 Q10(b)",
-    questionText: "After how many hours would exactly 55% of the digits be recalled correctly, according to this model?Give your answer correct to 2 decimal places",
+    stem: "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ.",
+    questionText: "After how many hours would exactly 55% of the digits be recalled correctly, according to this model? Give your answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, sets up equation correctly, or incorrect equation set up but some subsequent correct work\nCorrect answer using trial and improvement", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: if logs are mishandled, award at most Mid Partial Credit 1. Sets up equation 2. Isolates ln(t + 1) 3. Finds t + 1 4. Finishes. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, sets up equation correctly, or incorrect equation set up but some subsequent correct work\nCorrect answer using trial and improvement","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[29],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q10-b.png",
           "srcHash": "db0fc92220a9fba51e72b3f453e6b496",
-          "alt": "The question as printed on the paper — A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0∙82 −0∙12… Full card prompt: After how many hours would exactly 55% of the digits be recalled correctly, according to this model?Give your answer correct to 2 decimal places",
+          "alt": "The question as printed on the paper — A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0∙82 −0∙12… Full card prompt: A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ. After how many hours would exactly 55% of the digits be recalled correctly, according to this model? Give your answer correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3749,16 +4325,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q10-c-i", topicId: "maths-5-2", conceptId: "value",
     section: "B", questionRef: "2022 HL Paper 1 Q10(c)(i), (ii)",
-    questionText: "Find the value of P′(1)",
+    stem: "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ.",
+    questionText: "(i) Find the value of P′(1). (ii) P′(t) is always negative for 0 ≤ t ≤ 12, t ∈ ℝ. What does this tell you about the proportion of digits recalled correctly after t hours, according to this model?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q10-c-i-r1", kind: "anyN", verbatim: "Some correct differentiation in (i)\n(ii) correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some correct differentiation in (i)\n(ii) correct","(i) correct\n(ii) correct and some correct differentiation in (i)"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[29],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q10-c-i.png",
@@ -3779,21 +4369,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q10-d", topicId: "maths-5-1", conceptId: "calculus-graph-has-points-inflection",
+    id: "maths-2022-hl-p1-q10-d", topicId: "maths-5-2", conceptId: "calculus-graph-has-points-inflection",
     section: "B", questionRef: "2022 HL Paper 1 Q10(d)",
-    questionText: "Use calculus to show that the graph of y = P(t) has no points of inflection, for 0 ≤ t ≤ 12",
+    stem: "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ.",
+    questionText: "Use calculus to show that the graph of y = P(t) has no points of inflection, for 0 ≤ t ≤ 12, t ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q10-d-r1", kind: "anyN", verbatim: "Indicates second derivative", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Indicates second derivative","Finds P′′(t)\nError in finding P′′(t), but shows that their P′′(t) can’t be 0 in the given domain"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[30],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q10-d",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q10-d.png",
           "srcHash": "6f7e86b3d1c132c14a634310fc6702dd",
-          "alt": "The question as printed on the paper — A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0∙82 −0∙12… Full card prompt: Use calculus to show that the graph of y = P(t) has no points of inflection, for 0 ≤ t ≤ 12",
+          "alt": "The question as printed on the paper — A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0∙82 −0∙12… Full card prompt: A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ. Use calculus to show that the graph of y = P(t) has no points of inflection, for 0 ≤ t ≤ 12, t ∈ ℝ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3809,16 +4413,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q10-e-i", topicId: "maths-4-1", conceptId: "write-terms-log-log-log",
+    id: "maths-2022-hl-p1-q10-e-i", topicId: "maths-3-2", conceptId: "write-terms-log-log-log",
     section: "B", questionRef: "2022 HL Paper 1 Q10(e)(i)",
-    questionText: "Write c in terms of log₁₀A, log₁₀B, and log₁₀(t + 1)",
+    stem: "If we learn a skill, and then don’t practise it, how well we can do it usually decreases over time. For example, if you learn to play the guitar, and then don’t play the guitar for a number of months, you will probably not be as good at playing the guitar the first time you try it again. This effect can be modelled by the following equation: A = B(t + 1)^c, where A is a measure of how well the skill can be done at a certain time (t = 0); B is a measure of how well the skill can be done t months later, without practising; c is a constant; and A, B, c, t ∈ ℝ.",
+    questionText: "Write c in terms of log₁₀ A, log₁₀ B, and log₁₀(t + 1).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p1-q10-e-i-r1", kind: "anyN", verbatim: "Work of merit, for example, correct relevant equation involving logs\n(t + 1)^c = A/B", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, correct relevant equation involving logs\n(t + 1)^c = A/B","Correct equation involving log₁₀A, log₁₀B, and log₁₀(t + 1)\nCorrect equation involving logₜ₊₁A and logₜ₊₁B"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[30],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q10-e-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q10-e-i.png",
@@ -3839,21 +4457,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q10-e-ii", topicId: "maths-3-2", conceptId: "student-got-guitar-exam-after-two",
     section: "B", questionRef: "2022 HL Paper 1 Q10(e)(ii)",
-    questionText: "A student got 80% on a guitar exam. After two years of not playing the guitar, the student got 47% on the same exam",
+    stem: "If we learn a skill, and then don’t practise it, how well we can do it usually decreases over time. For example, if you learn to play the guitar, and then don’t play the guitar for a number of months, you will probably not be as good at playing the guitar the first time you try it again. This effect can be modelled by the following equation: A = B(t + 1)^c, where A is a measure of how well the skill can be done at a certain time (t = 0); B is a measure of how well the skill can be done t months later, without practising; c is a constant; and A, B, c, t ∈ ℝ.",
+    questionText: "A student got 80% on a guitar exam. After two years of not playing the guitar, the student got 47% on the same exam. Use this to find the value of c in the model above, correct to 3 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q10-e-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, correctly substitutes in some value from (ii) to expression/equation in (i) [the one given or the one the candidate produces]\nA and B swapped, and one/both substituted into equation / expression from (i)\n2 years = 24 months", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, correctly substitutes in some value from (ii) to expression/equation in (i) [the one given or the one the candidate produces]\nA and B swapped, and one/both substituted into equation / expression from (i)\n2 years = 24 months","Fully substituted expression for c with logs/ equation in c with logs\nMixes up A and B, or mishandles years, and finishes correctly"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[30],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q10-e-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q10-e-ii.png",
           "srcHash": "e142eddd451ad10be479eb181c5ee13e",
-          "alt": "The question as printed on the paper — A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0∙82 −0∙12… Full card prompt: A student got 80% on a guitar exam. After two years of not playing the guitar, the student got 47% on the same exam",
+          "alt": "The question as printed on the paper — A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0∙82 −0∙12… Full card prompt: If we learn a skill, and then don’t practise it, how well we can do it usually decreases over time. For example, if you learn to play the guitar, and then don’t play the guitar for a number of months, you will probably not be as good at playing the guitar the first time you try it again. This effect can be modelled by the following equation: A = B(t + 1)^c, where A is a measure of how well the skill can be done at a certain time (t = 0); B is a measure of how well the skill can be done t months later, without practising; c is a constant; and A, B, c, t ∈ ℝ. A student got 80% on a guitar exam. After two years of not playing the guitar, the student got 47% on the same exam. Use this to find the value of c in the model above, correct to 3 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },

@@ -7987,7 +7987,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q1(a)",
-  "questionText": "(a) Find the two values of m∈ℤ for which the following equation in x has exactly one solution: 3x²−mx + 3 = 0",
+  "questionText": "Find the two values of m ∈ ℤ for which the following equation in x has exactly one solution: 3x² − mx + 3 = 0",
   "figureKey": "maths-2022-HL-paper-p006-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8020,7 +8020,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p1-q1-a"
  },
  {
@@ -8060,7 +8060,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p1-q1-b"
  },
  {
@@ -8072,7 +8072,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q1(c)(i), (ii)",
-  "questionText": "Show that x = −1 is not a solution of 3x² + 2x + 5 = 0",
+  "questionText": "(i) Show that x = −1 is not a solution of 3x² + 2x + 5 = 0. (ii) Find the remainder when 3x² + 2x + 5 is divided by x + 1. That is, find the value of c when 3x² + 2x + 5 is written in the form 3x² + 2x + 5 = (x + 1)(ax + b) + c, where a, b, c ∈ ℤ.",
   "figureKey": "maths-2022-HL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8107,7 +8107,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p1-q1-c-i"
  },
  {
@@ -8119,7 +8119,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q2(a)",
-  "questionText": "g(x) = 2x² + 5x + 6, where x∈ℝ. Find ∫ g(x) dx",
+  "questionText": "g(x) = 2x² + 5x + 6, where x ∈ ℝ. Find ∫ g(x) dx.",
   "figureKey": "maths-2022-HL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8152,7 +8152,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p1-q2-a"
  },
  {
@@ -8199,8 +8199,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q2-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q2-b-i",
+  "stem": "The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two vertical lines."
  },
  {
   "id": "maths-2022-hl-p1-q2-b-ii",
@@ -8211,7 +8212,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q2(b)(ii)",
-  "questionText": "The areas of the three regions K, L, and N give the following three equations (including the equation from part (b)(i)): 4a + 3b + 3c = 807 28a + 9b + 3c = 879 76a + 15b + 3c = 663 Solve these equations to find the values of a, b, and c",
+  "questionText": "The areas of the three regions K, L, and N give the following three equations (including the equation from part (b)(i)): 4a + 3b + 3c = 807; 28a + 9b + 3c = 879; 76a + 15b + 3c = 663. Solve these equations to find the values of a, b, and c.",
   "figureKey": "maths-2022-HL-paper-p010-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8246,8 +8247,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q2-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q2-b-ii",
+  "stem": "The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two vertical lines."
  },
  {
   "id": "maths-2022-hl-p1-q3-a-i",
@@ -8258,7 +8260,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q3(a)(i)",
-  "questionText": "Show that z−iz = 8 −4i",
+  "questionText": "Show that z − iz = 8 − 4i.",
   "figureKey": "maths-2022-HL-paper-p011-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8291,8 +8293,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q3-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q3-a-i",
+  "stem": "z = 6 + 2i, where i² = −1."
  },
  {
   "id": "maths-2022-hl-p1-q3-a-ii",
@@ -8303,7 +8306,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q3(a)(ii)",
-  "questionText": "Show that |z|² + |iz|² = |z−iz|²",
+  "questionText": "Show that |z|² + |iz|² = |z − iz|²",
   "figureKey": "maths-2022-HL-paper-p011-i1",
   "labelKey": [],
   "tariffModel": {
@@ -8338,8 +8341,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q3-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q3-a-ii",
+  "stem": "z = 6 + 2i, where i² = −1."
  },
  {
   "id": "maths-2022-hl-p1-q3-a-iii",
@@ -8350,7 +8354,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q3(a)(iii)",
-  "questionText": "(iii) The circle c passes through the points z, iz, and 0, as shown in the diagram below (not to scale). z and iz are endpoints of a diameter of the circle",
+  "questionText": "The circle c passes through the points z, iz, and 0, as shown in the diagram below (not to scale). z and iz are endpoints of a diameter of the circle. Find the area of the circle c in terms of π.",
   "figureKey": "maths-2022-HL-paper-p011-i2",
   "labelKey": [],
   "tariffModel": {
@@ -8383,8 +8387,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q3-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q3-a-iii",
+  "stem": "z = 6 + 2i, where i² = −1."
  },
  {
   "id": "maths-2022-hl-p1-q3-b",
@@ -8395,42 +8400,114 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q3(b)",
-  "questionText": "(√3 −i) 9 can be written in the form a + ib, where a, b∈ℤ and i² = −1",
+  "questionText": "(√3 − i)⁹ can be written in the form a + ib, where a, b ∈ ℤ and i² = −1. Use de Moivre’s Theorem to find the value of a and the value of b.",
   "figureKey": "maths-2022-HL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-hl-p1-q3-b-r1",
-    "kind": "anyN",
-    "verbatim": "Work plots of/√3 merit, − i, or for some example, correct substitution into de Moivre’s Theorem",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: a and b not explicitly stated and solution given as 512i. Note: polar form must be used to achieve any credit. Note: Accept 0 + 512i for Full Credit Note that argument may also be given as 𝜃 = −30°, etc., or 𝜃 = 11𝜋/6 , etc. 4 steps: 1. Finds r 2. Finds 𝜃 3. Subs into de Moivre’s Theorem 4. Evaluates. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Work plots of/√3 merit, − i, or for some example, correct substitution into de Moivre’s Theorem",
-      "2 steps correct",
-      "3 steps correct"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2022-hl-p1-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — so A = 30°, so θ = 330°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 512(cos 2970 + i sin 2970)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 0 + 512i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — a = 0, b = 512",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-5",
+    "kind": "point",
+    "verbatim": "Note — polar form must be used to achieve any credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-6",
+    "kind": "point",
+    "verbatim": "Note — Accept 0 + 512i for Full Credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-7",
+    "kind": "point",
+    "verbatim": "Step — Finds r",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-8",
+    "kind": "point",
+    "verbatim": "Step — Finds θ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-9",
+    "kind": "point",
+    "verbatim": "Step — Subs into de Moivre’s Theorem",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-10",
+    "kind": "point",
+    "verbatim": "Step — Evaluates",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-11",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, plots √3 − i, or some correct substitution into de Moivre’s Theorem",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-12",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 2 steps correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-13",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3 steps correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q3-b-solution-14",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — a and b not explicitly stated and solution given as 512i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p1-q3-b"
  },
  {
@@ -8442,7 +8519,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q4(a)",
-  "questionText": "A sequence u1 , u2 , u3 , ... is defined as follows, for n∈ℕ: u1= 2, u2= 64, un+1= √ un un−1 Write u3 in the form 2p , where p∈ℝ",
+  "questionText": "A sequence u₁, u₂, u₃, ... is defined as follows, for n ∈ ℕ: u₁ = 2, u₂ = 64, uₙ₊₁ = √(uₙ/uₙ₋₁). Write u₃ in the form 2^p, where p ∈ ℝ.",
   "figureKey": "maths-2022-HL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8475,7 +8552,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p1-q4-a"
  },
  {
@@ -8487,7 +8564,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q4(b)(i)",
-  "questionText": "By letting y = e^k in this arithmetic sequence, show that: 5y²−26y + 5 = 0",
+  "questionText": "By letting y = e^k in this arithmetic sequence, show that: 5y² − 26y + 5 = 0",
   "figureKey": "maths-2022-HL-paper-p013-i1",
   "labelKey": [],
   "tariffModel": {
@@ -8520,8 +8597,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q4-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q4-b-i",
+  "stem": "The first three terms in an arithmetic sequence are as follows, where k ∈ ℝ: 5e^(−k), 13, 5e^k"
  },
  {
   "id": "maths-2022-hl-p1-q4-b-ii",
@@ -8532,7 +8610,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q4(b)(ii)",
-  "questionText": "Use the equation in y in part (b)(i) to find the two possible values of k. Give each value in the form ln p or −ln p, where p∈ℕ",
+  "questionText": "Use the equation in y in part (b)(i) to find the two possible values of k. Give each value in the form ln p or −ln p, where p ∈ ℕ.",
   "figureKey": "maths-2022-HL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8567,8 +8645,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q4-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q4-b-ii",
+  "stem": "The first three terms in an arithmetic sequence are as follows, where k ∈ ℝ: 5e^(−k), 13, 5e^k"
  },
  {
   "id": "maths-2022-hl-p1-q5-a",
@@ -8579,7 +8658,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q5(a)",
-  "questionText": "g(x) = x2− 1 x where x∈ℝ. Find g′(x), the derivative of g(x)",
+  "questionText": "g(x) = x² − 1/x where x ∈ ℝ. Find g′(x), the derivative of g(x).",
   "figureKey": "maths-2022-HL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8607,7 +8686,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p1-q5-a"
  },
  {
@@ -8619,7 +8698,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q5(b)(i)",
-  "questionText": "x + 1 is a factor of f(x). Find the three values of x for which f(x) = 0",
+  "questionText": "x + 1 is a factor of f(x). Find the three values of x for which f(x) = 0.",
   "figureKey": "maths-2022-HL-paper-p015-i1",
   "labelKey": [],
   "tariffModel": {
@@ -8654,8 +8733,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q5-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q5-b-i",
+  "stem": "f(x) = 2x³ − 21x² + 40x + 63, where x ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p1-q5-b-ii",
@@ -8666,7 +8746,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q5(b)(ii)",
-  "questionText": "Find the range of values of x for which f′(x) is negative, correct to 2 decimal places",
+  "questionText": "Find the range of values of x for which f′(x) is negative, correct to 2 decimal places.",
   "figureKey": "maths-2022-HL-paper-p016-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8701,8 +8781,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q5-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q5-b-ii",
+  "stem": "f(x) = 2x³ − 21x² + 40x + 63, where x ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p1-q6-a",
@@ -8713,7 +8794,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q6(a)",
-  "questionText": "Differentiate f(x) = 2x² + 4x with respect to x, from first principles",
+  "questionText": "Differentiate f(x) = 2x² + 4x with respect to x, from first principles.",
   "figureKey": "maths-2022-HL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8748,7 +8829,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p1-q6-a"
  },
  {
@@ -8760,53 +8841,100 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q6(b)",
-  "questionText": "A rectangle is expanding in area. Its width is x cm, where x∈ℝ and x > 0. Its length is always four times its width",
+  "questionText": "A rectangle is expanding in area. Its width is x cm, where x ∈ ℝ and x > 0. Its length is always four times its width. Find the rate of change of the area of the rectangle with respect to its width, x, when the area of the rectangle is 225 cm².",
   "figureKey": "maths-2022-HL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-hl-p1-q6-b-r1",
-    "kind": "anyN",
-    "verbatim": "A = l × w = 4x × x = 4x²",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: Method 1: 1. Write A in terms of x 2. Find x = 3. Find dA/dx 4. Evaluate dA/dx at x = 15/2. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 3,
-     "options": [
-      "A = l × w = 4x × x = 4x²",
-      "When A = 225, 4x² = 225,",
-      "so x² = 225/4 , i.e. x = 15/2",
-      "dA/dx = 8x = 8 ( )/2 15 = 60 cm²/cm",
-      "Accept without unit",
-      "l = 4x so x = l/4",
-      "A = l × l/4 = 1/4 l²",
-      "dl/dx = 4 and dA/dl = 1/2 l",
-      "dA/dx = dA/dl × dl/dx",
-      "dA/dx = 1/2 l × 4",
-      "When A = 225, 1/4 l² = 225, so l = 30",
-      "dA/dx = 1/2 (30)(4) = 60 cm²/cm",
-      "Accept without unit"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      3,
-      2
-     ]
-    }
+    "id": "maths-2022-hl-p1-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A = l × w = 4x × x = 4x²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — When A = 225, 4x² = 225,",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — so x² = 225/4, i.e. x = 15/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — dA/dx = 8x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — dA/dx = 1/2 (30)(4) = 60 cm²/cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-6",
+    "kind": "point",
+    "verbatim": "Note — Accept without unit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-7",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — Work of merit, for example, l = 4x ; mentions dA/dx",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-8",
+    "kind": "point",
+    "verbatim": "Method 1, Mid Partial Credit — 2 steps correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-9",
+    "kind": "point",
+    "verbatim": "Method 1, High Partial Credit — 3 steps correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-10",
+    "kind": "point",
+    "verbatim": "Method 2, Low Partial Credit — States relevant derivative, for example, dA/dx",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-11",
+    "kind": "point",
+    "verbatim": "Method 2, Mid Partial Credit — Any two of the following:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q6-b-solution-12",
+    "kind": "point",
+    "verbatim": "Method 2, High Partial Credit — and any two others from the MPC list above",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p1-q6-b"
  },
  {
@@ -8818,7 +8946,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q6(c)",
-  "questionText": "The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x∈ℝ. The maximum value of p′(x) in this domain is 1, and p′(0) = −3, where p′(x) is the derivative of p(x)",
+  "questionText": "The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x ∈ ℝ. The maximum value of p′(x) in this domain is 1, and p′(0) = −3, where p′(x) is the derivative of p(x). Use this information to draw the graph of p′(x) on the second set of axes below, for 0 ≤ x ≤ 4, x ∈ ℝ.",
   "figureKey": "maths-2022-HL-paper-p019-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8851,7 +8979,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p1-q6-c"
  },
  {
@@ -8863,7 +8991,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q7(a), (b)",
-  "questionText": "Work out Hannah’s heart-rate 4 minutes after the start of the session",
+  "questionText": "(a) Work out Hannah’s heart-rate 4 minutes after the start of the session. (b) Find h′(x).",
   "figureKey": "maths-2022-HL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8898,8 +9026,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q7-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q7-a",
+  "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70"
  },
  {
   "id": "maths-2022-hl-p1-q7-c",
@@ -8910,7 +9039,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q7(c)",
-  "questionText": "Find h′(2), and explain what this value means in the context of Hannah’s heart-rate",
+  "questionText": "Find h′(2), and explain what this value means in the context of Hannah’s heart-rate.",
   "figureKey": "maths-2022-HL-paper-p020-i1",
   "labelKey": [],
   "tariffModel": {
@@ -8943,8 +9072,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q7-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q7-c",
+  "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70"
  },
  {
   "id": "maths-2022-hl-p1-q7-d",
@@ -8955,7 +9085,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q7(d)",
-  "questionText": "Find the least value and the greatest value of h(x), for 0 ≤ x ≤ 8, x∈ℝ. Use calculus in your solution. You may also use information from the graph above, which is to scale",
+  "questionText": "Find the least value and the greatest value of h(x), for 0 ≤ x ≤ 8, x ∈ ℝ. Use calculus in your solution. You may also use information from the graph above, which is to scale.",
   "figureKey": "maths-2022-HL-paper-p021-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8990,8 +9120,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q7-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q7-d",
+  "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 The graph below shows y = h(x), where 0 ≤ x ≤ 8, x ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p1-q7-e",
@@ -9002,7 +9133,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q7(e)",
-  "questionText": "How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds",
+  "questionText": "How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds. Remember that h(x) = 2x³ − 28·5x² + 105x + 70.",
   "figureKey": "maths-2022-HL-paper-p021-i1",
   "labelKey": [],
   "tariffModel": {
@@ -9035,8 +9166,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q7-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q7-e",
+  "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70"
  },
  {
   "id": "maths-2022-hl-p1-q7-f",
@@ -9046,8 +9178,8 @@
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2022 HL Paper 1 Q7(f)",
-  "questionText": "Use this information to write b′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x∈ℝ. For the first 8 minutes of the session, Karen’s heart-rate, k(x), is always 10% less than",
+  "questionRef": "2022 HL Paper 1 Q7(f)(i), (ii)",
+  "questionText": "(i) For the first 8 minutes of the session, Bruno’s heart-rate, b(x), is always 15 BPM more than Hannah’s heart-rate. Use this information to write b′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x ∈ ℝ. (ii) For the first 8 minutes of the session, Karen’s heart-rate, k(x), is always 10% less than Hannah’s heart-rate. Use this information to write k′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x ∈ ℝ.",
   "figureKey": "maths-2022-HL-paper-p022-i0",
   "labelKey": [],
   "tariffModel": {
@@ -9080,8 +9212,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q7-f"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q7-f",
+  "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM."
  },
  {
   "id": "maths-2022-hl-p1-q7-g",
@@ -9092,7 +9225,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q7(g)",
-  "questionText": "Martha does each exercise for a longer time than Hannah. For 0 ≤ x ≤ 10, Martha’s heart-rate, m(x), is: m(x) = h(0∙8 x) Use h(x) = 2x³−28∙5x² + 105x + 70 to write m(x) in the form: m(x) = ax³ + bx² + cx + d where a, b, c, d∈ℝ, for 0 ≤ x ≤ 10",
+  "questionText": "Martha does each exercise for a longer time than Hannah. For 0 ≤ x ≤ 10, Martha’s heart-rate, m(x), is: m(x) = h(0·8x). Use h(x) = 2x³ − 28·5x² + 105x + 70 to write m(x) in the form: m(x) = ax³ + bx² + cx + d, where a, b, c, d ∈ ℝ, for 0 ≤ x ≤ 10.",
   "figureKey": "maths-2022-HL-paper-p022-i1",
   "labelKey": [],
   "tariffModel": {
@@ -9120,8 +9253,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q7-g"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q7-g",
+  "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM."
  },
  {
   "id": "maths-2022-hl-p1-q8-a",
@@ -9132,7 +9266,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q8(a), (b)",
-  "questionText": "Complete the table below. The value of h(1) is given",
+  "questionText": "(a) Complete the table below for t = 0, 1, 2, …, 8. The value of h(1) is given: h(1) = 42. (b) Draw the graph of y = h(t) for 0 ≤ t ≤ 8, t ∈ ℝ.",
   "figureKey": "maths-2022-HL-paper-p023-i0",
   "labelKey": [],
   "tariffModel": {
@@ -9167,8 +9301,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q8-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q8-a",
+  "stem": "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians."
  },
  {
   "id": "maths-2022-hl-p1-q8-c",
@@ -9179,7 +9314,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q8(c)",
-  "questionText": "Find the period and range of h(t). Period = ________________ Range = [ , ]",
+  "questionText": "Find the period and range of h(t).",
   "figureKey": "maths-2022-HL-paper-p023-i1",
   "labelKey": [],
   "tariffModel": {
@@ -9212,8 +9347,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q8-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q8-c",
+  "stem": "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians."
  },
  {
   "id": "maths-2022-hl-p1-q8-d",
@@ -9257,8 +9393,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q8-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q8-d",
+  "stem": "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians."
  },
  {
   "id": "maths-2022-hl-p1-q8-e",
@@ -9269,43 +9406,109 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q8(e)",
-  "questionText": "By solving the following equation, find the second time (value of t) that the point A is at a height of 110 m, after it starts turning: 𝜋/3 t) = 110 72 −60 cos ( Give your answer in minutes, correct to 2 decimal places",
+  "questionText": "By solving the following equation, find the second time (value of t) that the point A is at a height of 110 m, after it starts turning: 72 − 60 cos(π/3 t) = 110. Give your answer in minutes, correct to 2 decimal places.",
   "figureKey": "maths-2022-HL-paper-p024-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-hl-p1-q8-e-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, some correct work towards isolating cos (/3 𝜋 t)",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Calculator in degree mode, otherwise correct. Note: 1. Isolates cos (/3 𝜋 t) 𝜋 3t1 2. Finds reference angle or 3. Finds 𝜋/3 t₂ or t₁ 4. Finds t. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Work of merit, for example, some correct work towards isolating cos (/3 𝜋 t)",
-      "2 steps correct",
-      "3 steps correct"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2022-hl-p1-q8-e-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 60 cos(π/3 t) = 72 − 110 = −38",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (π/3)t₂ = π + 0·8849 … radians",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 1st time: Quadrant 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 2nd time: Quadrant 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — t = 3(π + 0·8849…)/π = 3·845 … = 3·85 mins",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-6",
+    "kind": "point",
+    "verbatim": "Step — Isolates cos(π/3 t)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-7",
+    "kind": "point",
+    "verbatim": "Step — Finds reference angle or (π/3)t₁",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-8",
+    "kind": "point",
+    "verbatim": "Step — Finds (π/3)t₂ or t₁",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-9",
+    "kind": "point",
+    "verbatim": "Step — Finds t",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-10",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, some correct work towards isolating cos(π/3 t)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-11",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 2 steps correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-12",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3 steps correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p1-q8-e-solution-13",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Calculator in degree mode, otherwise correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q8-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q8-e",
+  "stem": "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians."
  },
  {
   "id": "maths-2022-hl-p1-q8-f",
@@ -9316,7 +9519,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q8(f)",
-  "questionText": "Use integration to find the average height of the point A over the first 8 minutes that the wheel is turning. Give your answer correct to 1 decimal place",
+  "questionText": "Use integration to find the average height of the point A over the first 8 minutes that the wheel is turning. Give your answer correct to 1 decimal place. Remember that h(t) = 72 − 60 cos(π/3 t).",
   "figureKey": "maths-2022-HL-paper-p025-i0",
   "labelKey": [],
   "tariffModel": {
@@ -9351,8 +9554,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q8-f"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q8-f",
+  "stem": "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians."
  },
  {
   "id": "maths-2022-hl-p1-q9-a",
@@ -9363,7 +9567,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q9(a)",
-  "questionText": "Find the amount of the drug left in Alex’s body 2∙5 days after a single 15 mg injection. Give your answer in mg, correct to 2 decimal places",
+  "questionText": "Find the amount of the drug left in Alex’s body 2·5 days after a single 15 mg injection. Give your answer in mg, correct to 2 decimal places.",
   "figureKey": "maths-2022-HL-paper-p026-i0",
   "labelKey": [],
   "tariffModel": {
@@ -9391,8 +9595,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q9-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q9-a",
+  "stem": "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p1-q9-b",
@@ -9403,7 +9608,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q9(b)",
-  "questionText": "How long after a single 15 mg injection will there be exactly 1 mg of the drug left in Alex’s body? Give your answer in days, correct to 1 decimal place",
+  "questionText": "How long after a single 15 mg injection will there be exactly 1 mg of the drug left in Alex’s body? Give your answer in days, correct to 1 decimal place.",
   "figureKey": "maths-2022-HL-paper-p026-i1",
   "labelKey": [],
   "tariffModel": {
@@ -9436,8 +9641,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q9-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q9-b",
+  "stem": "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p1-q9-c",
@@ -9448,7 +9654,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q9(c)",
-  "questionText": "Explain why the total amount of the drug, in mg, in Alex’s body immediately after the 4 th injection is given by: 15 + 15(0∙6) + 15(0∙6)² + 15(0∙6)³",
+  "questionText": "Explain why the total amount of the drug, in mg, in Alex’s body immediately after the 4th injection is given by: 15 + 15(0·6) + 15(0·6)² + 15(0·6)³",
   "figureKey": "maths-2022-HL-paper-p026-i2",
   "labelKey": [],
   "tariffModel": {
@@ -9482,8 +9688,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q9-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q9-c",
+  "stem": "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time."
  },
  {
   "id": "maths-2022-hl-p1-q9-d",
@@ -9494,7 +9701,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q9(d)",
-  "questionText": "Find the total amount of the drug in Alex’s body immediately after the 10 th injection. Give your answer in mg, correct to 2 decimal places",
+  "questionText": "Find the total amount of the drug in Alex’s body immediately after the 10th injection. Give your answer in mg, correct to 2 decimal places.",
   "figureKey": "maths-2022-HL-paper-p026-i3",
   "labelKey": [],
   "tariffModel": {
@@ -9527,8 +9734,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q9-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q9-d",
+  "stem": "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time."
  },
  {
   "id": "maths-2022-hl-p1-q9-e",
@@ -9539,7 +9747,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q9(e)",
-  "questionText": "Use the formula for the sum to infinity of a geometric series to estimate the amount of the drug (in mg) in Alex’s body, after a long period of time during which he gets daily injections",
+  "questionText": "Use the formula for the sum to infinity of a geometric series to estimate the amount of the drug (in mg) in Alex’s body, after a long period of time during which he gets daily injections.",
   "figureKey": "maths-2022-HL-paper-p027-i0",
   "labelKey": [],
   "tariffModel": {
@@ -9567,8 +9775,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q9-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q9-e",
+  "stem": "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time."
  },
  {
   "id": "maths-2022-hl-p1-q9-f-i",
@@ -9579,7 +9788,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q9(f)(i)",
-  "questionText": "Use the sum of a geometric series to show that the total amount of the drug (in mg) in Jessica’s body immediately after the n th injection, where n∈ℕ, is: 20d(1 −0∙85ⁿ) 3",
+  "questionText": "Use the sum of a geometric series to show that the total amount of the drug (in mg) in Jessica’s body immediately after the nth injection, where n ∈ ℕ, is: 20d(1 − 0·85ⁿ)/3",
   "figureKey": "maths-2022-HL-paper-p027-i1",
   "labelKey": [],
   "tariffModel": {
@@ -9612,8 +9821,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q9-f-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q9-f-i",
+  "stem": "Jessica also gets daily injections of a medicinal drug at the same time every day. She gets d mg of the drug in each injection, where d ∈ ℝ. Each day, the amount of the drug left in Jessica’s body from an injection decreases by 15%."
  },
  {
   "id": "maths-2022-hl-p1-q9-f-ii",
@@ -9624,7 +9834,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q9(f)(ii)",
-  "questionText": "Immediately after the 7th injection, there are 50 mg of the drug in Jessica’s body",
+  "questionText": "Immediately after the 7th injection, there are 50 mg of the drug in Jessica’s body. Find the amount of the drug in one of Jessica’s daily injections. Give your answer correct to the nearest mg.",
   "figureKey": "maths-2022-HL-paper-p027-i2",
   "labelKey": [],
   "tariffModel": {
@@ -9657,8 +9867,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q9-f-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q9-f-ii",
+  "stem": "Jessica also gets daily injections of a medicinal drug at the same time every day. She gets d mg of the drug in each injection, where d ∈ ℝ. Each day, the amount of the drug left in Jessica’s body from an injection decreases by 15%. Part (f)(i) shows that the total amount of the drug (in mg) in Jessica’s body immediately after the nth injection is 20d(1 − 0·85ⁿ)/3."
  },
  {
   "id": "maths-2022-hl-p1-q10-a",
@@ -9669,7 +9880,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q10(a)",
-  "questionText": "Find the proportion of the digits recalled correctly after 3 hours, according to this model. Give your answer correct to 2 decimal places",
+  "questionText": "Find the proportion of the digits recalled correctly after 3 hours, according to this model. Give your answer correct to 2 decimal places.",
   "figureKey": "maths-2022-HL-paper-p028-i0",
   "labelKey": [],
   "tariffModel": {
@@ -9697,8 +9908,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q10-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q10-a",
+  "stem": "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p1-q10-b",
@@ -9709,7 +9921,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q10(b)",
-  "questionText": "After how many hours would exactly 55% of the digits be recalled correctly, according to this model?Give your answer correct to 2 decimal places",
+  "questionText": "After how many hours would exactly 55% of the digits be recalled correctly, according to this model? Give your answer correct to 2 decimal places.",
   "figureKey": "maths-2022-HL-paper-p028-i1",
   "labelKey": [],
   "tariffModel": {
@@ -9744,8 +9956,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q10-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q10-b",
+  "stem": "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p1-q10-c-i",
@@ -9756,7 +9969,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q10(c)(i), (ii)",
-  "questionText": "Find the value of P′(1)",
+  "questionText": "(i) Find the value of P′(1). (ii) P′(t) is always negative for 0 ≤ t ≤ 12, t ∈ ℝ. What does this tell you about the proportion of digits recalled correctly after t hours, according to this model?",
   "figureKey": "maths-2022-HL-paper-p028-i2",
   "labelKey": [],
   "tariffModel": {
@@ -9789,8 +10002,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q10-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q10-c-i",
+  "stem": "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p1-q10-d",
@@ -9801,7 +10015,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q10(d)",
-  "questionText": "Use calculus to show that the graph of y = P(t) has no points of inflection, for 0 ≤ t ≤ 12",
+  "questionText": "Use calculus to show that the graph of y = P(t) has no points of inflection, for 0 ≤ t ≤ 12, t ∈ ℝ.",
   "figureKey": "maths-2022-HL-paper-p029-i0",
   "labelKey": [],
   "tariffModel": {
@@ -9834,8 +10048,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q10-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q10-d",
+  "stem": "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p1-q10-e-i",
@@ -9846,7 +10061,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q10(e)(i)",
-  "questionText": "Write c in terms of log₁₀A, log₁₀B, and log₁₀(t + 1)",
+  "questionText": "Write c in terms of log₁₀ A, log₁₀ B, and log₁₀(t + 1).",
   "figureKey": "maths-2022-HL-paper-p029-i1",
   "labelKey": [],
   "tariffModel": {
@@ -9879,8 +10094,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q10-e-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q10-e-i",
+  "stem": "If we learn a skill, and then don’t practise it, how well we can do it usually decreases over time. For example, if you learn to play the guitar, and then don’t play the guitar for a number of months, you will probably not be as good at playing the guitar the first time you try it again. This effect can be modelled by the following equation: A = B(t + 1)^c, where A is a measure of how well the skill can be done at a certain time (t = 0); B is a measure of how well the skill can be done t months later, without practising; c is a constant; and A, B, c, t ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p1-q10-e-ii",
@@ -9891,7 +10107,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q10(e)(ii)",
-  "questionText": "A student got 80% on a guitar exam. After two years of not playing the guitar, the student got 47% on the same exam",
+  "questionText": "A student got 80% on a guitar exam. After two years of not playing the guitar, the student got 47% on the same exam. Use this to find the value of c in the model above, correct to 3 decimal places.",
   "figureKey": "maths-2022-HL-paper-p029-i2",
   "labelKey": [],
   "tariffModel": {
@@ -9924,8 +10140,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p1-q10-e-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p1-q10-e-ii",
+  "stem": "If we learn a skill, and then don’t practise it, how well we can do it usually decreases over time. For example, if you learn to play the guitar, and then don’t play the guitar for a number of months, you will probably not be as good at playing the guitar the first time you try it again. This effect can be modelled by the following equation: A = B(t + 1)^c, where A is a measure of how well the skill can be done at a certain time (t = 0); B is a measure of how well the skill can be done t months later, without practising; c is a constant; and A, B, c, t ∈ ℝ."
  },
  {
   "id": "maths-2022-hl-p2-q1-a-i",

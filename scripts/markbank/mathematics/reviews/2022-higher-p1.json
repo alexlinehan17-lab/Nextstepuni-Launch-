@@ -1,0 +1,1286 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2022,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "8f5a3cd78f91b3b133886c00c8b7edf5d2e75580abe2aa047f672c2636dfee33",
+  "schemeSha256": "e29a0c5bbc7174e05070790de76ff1438f52441bfc3b2325ed28aad4f51d1ce0",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 1–31 of the combined Higher Level scheme (cover, notes, the Paper 1 scale table on page 4, the summary of allocations on page 5, annotation palette, every Paper 1 model solution and marking note, and the Paper 2 title page). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5
+  ],
+  "sourceNotes": [
+    "The 2022 paper was adjusted for COVID-19 (220 marks): candidates answer any four of Q1–6 (30 marks each) and any two of Q7–10 (50 marks each), so 380 marks are offered and 220 count. Every question is retained.",
+    "43 independently marked units, matching the printed summary of allocations on scheme page 5. Shared scales keep their parts together: Q1(c)(i)–(ii) 15D, Q7(a)–(b) 10D, Q7(f)(i)–(ii) 5C, Q8(a)–(b) 15D and Q10(c)(i)–(ii) 10C.",
+    "Paper 1 bands from scheme page 4: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 10C 0,3,7,10; 10D 0,3,5,8,10; 15D 0,4,8,12,15.",
+    "All 43 units were already authored and shipping. Prompts are restored from the paper (several had lost superscripts, fractions and their preamble). Q3(b), Q6(b) and Q8(e) carried marking points garbled by the scheme text layer (interleaved columns, a stacked 15/2 read as “( )/2 15”); they are re-quoted line by line and labelled with their scheme band. Topics are corrected as metadata; all IDs are kept.",
+    "The question booklet is LC003ALP100EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 2. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2022-hl-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "Find the two values of m ∈ ℤ for which the following equation in x has exactly one solution: 3x² − mx + 3 = 0"
+    },
+    {
+      "id": "maths-2022-hl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "Explain why the following equation in x has no real solutions: (2x + 3)² + 7 = 0"
+    },
+    {
+      "id": "maths-2022-hl-p1-q1-c-i",
+      "printedParts": [
+        "Q1(c)(i)",
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "(i) Show that x = −1 is not a solution of 3x² + 2x + 5 = 0. (ii) Find the remainder when 3x² + 2x + 5 is divided by x + 1. That is, find the value of c when 3x² + 2x + 5 is written in the form 3x² + 2x + 5 = (x + 1)(ax + b) + c, where a, b, c ∈ ℤ."
+    },
+    {
+      "id": "maths-2022-hl-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "questionText": "g(x) = 2x² + 5x + 6, where x ∈ ℝ. Find ∫ g(x) dx."
+    },
+    {
+      "id": "maths-2022-hl-p1-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two vertical lines.",
+      "questionText": "The area of region K is 538 square units. Use integration of f(x) to show that: 4a + 3b + 3c = 807"
+    },
+    {
+      "id": "maths-2022-hl-p1-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "stem": "The diagram shows the graph of a function f(x) = ax² + bx + c, where a, b, c ∈ ℤ. Three regions on the diagram are marked K, L, and N. Each of these regions is bounded by the x-axis, the graph of f(x), and two vertical lines.",
+      "questionText": "The areas of the three regions K, L, and N give the following three equations (including the equation from part (b)(i)): 4a + 3b + 3c = 807; 28a + 9b + 3c = 879; 76a + 15b + 3c = 663. Solve these equations to find the values of a, b, and c."
+    },
+    {
+      "id": "maths-2022-hl-p1-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "z = 6 + 2i, where i² = −1.",
+      "questionText": "Show that z − iz = 8 − 4i."
+    },
+    {
+      "id": "maths-2022-hl-p1-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "z = 6 + 2i, where i² = −1.",
+      "questionText": "Show that |z|² + |iz|² = |z − iz|²"
+    },
+    {
+      "id": "maths-2022-hl-p1-q3-a-iii",
+      "printedParts": [
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers",
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "z = 6 + 2i, where i² = −1.",
+      "questionText": "The circle c passes through the points z, iz, and 0, as shown in the diagram below (not to scale). z and iz are endpoints of a diameter of the circle. Find the area of the circle c in terms of π."
+    },
+    {
+      "id": "maths-2022-hl-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "questionText": "(√3 − i)⁹ can be written in the form a + ib, where a, b ∈ ℤ and i² = −1. Use de Moivre’s Theorem to find the value of a and the value of b."
+    },
+    {
+      "id": "maths-2022-hl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "questionText": "A sequence u₁, u₂, u₃, ... is defined as follows, for n ∈ ℕ: u₁ = 2, u₂ = 64, uₙ₊₁ = √(uₙ/uₙ₋₁). Write u₃ in the form 2^p, where p ∈ ℝ."
+    },
+    {
+      "id": "maths-2022-hl-p1-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The first three terms in an arithmetic sequence are as follows, where k ∈ ℝ: 5e^(−k), 13, 5e^k",
+      "questionText": "By letting y = e^k in this arithmetic sequence, show that: 5y² − 26y + 5 = 0"
+    },
+    {
+      "id": "maths-2022-hl-p1-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "The first three terms in an arithmetic sequence are as follows, where k ∈ ℝ: 5e^(−k), 13, 5e^k",
+      "questionText": "Use the equation in y in part (b)(i) to find the two possible values of k. Give each value in the form ln p or −ln p, where p ∈ ℕ."
+    },
+    {
+      "id": "maths-2022-hl-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "questionText": "g(x) = x² − 1/x where x ∈ ℝ. Find g′(x), the derivative of g(x)."
+    },
+    {
+      "id": "maths-2022-hl-p1-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-cubics"
+      ],
+      "stem": "f(x) = 2x³ − 21x² + 40x + 63, where x ∈ ℝ.",
+      "questionText": "x + 1 is a factor of f(x). Find the three values of x for which f(x) = 0."
+    },
+    {
+      "id": "maths-2022-hl-p1-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-algebra-inequalities"
+      ],
+      "stem": "f(x) = 2x³ − 21x² + 40x + 63, where x ∈ ℝ.",
+      "questionText": "Find the range of values of x for which f′(x) is negative, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2022-hl-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "questionText": "Differentiate f(x) = 2x² + 4x with respect to x, from first principles."
+    },
+    {
+      "id": "maths-2022-hl-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "A rectangle is expanding in area. Its width is x cm, where x ∈ ℝ and x > 0. Its length is always four times its width. Find the rate of change of the area of the rectangle with respect to its width, x, when the area of the rectangle is 225 cm²."
+    },
+    {
+      "id": "maths-2022-hl-p1-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-functions"
+      ],
+      "questionText": "The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x ∈ ℝ. The maximum value of p′(x) in this domain is 1, and p′(0) = −3, where p′(x) is the derivative of p(x). Use this information to draw the graph of p′(x) on the second set of axes below, for 0 ≤ x ≤ 4, x ∈ ℝ."
+    },
+    {
+      "id": "maths-2022-hl-p1-q7-a",
+      "printedParts": [
+        "Q7(a)",
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-functions"
+      ],
+      "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70",
+      "questionText": "(a) Work out Hannah’s heart-rate 4 minutes after the start of the session. (b) Find h′(x)."
+    },
+    {
+      "id": "maths-2022-hl-p1-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70",
+      "questionText": "Find h′(2), and explain what this value means in the context of Hannah’s heart-rate."
+    },
+    {
+      "id": "maths-2022-hl-p1-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 The graph below shows y = h(x), where 0 ≤ x ≤ 8, x ∈ ℝ.",
+      "questionText": "Find the least value and the greatest value of h(x), for 0 ≤ x ≤ 8, x ∈ ℝ. Use calculus in your solution. You may also use information from the graph above, which is to scale."
+    },
+    {
+      "id": "maths-2022-hl-p1-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70",
+      "questionText": "How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds. Remember that h(x) = 2x³ − 28·5x² + 105x + 70."
+    },
+    {
+      "id": "maths-2022-hl-p1-q7-f",
+      "printedParts": [
+        "Q7(f)(i)",
+        "Q7(f)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM.",
+      "questionText": "(i) For the first 8 minutes of the session, Bruno’s heart-rate, b(x), is always 15 BPM more than Hannah’s heart-rate. Use this information to write b′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x ∈ ℝ. (ii) For the first 8 minutes of the session, Karen’s heart-rate, k(x), is always 10% less than Hannah’s heart-rate. Use this information to write k′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x ∈ ℝ."
+    },
+    {
+      "id": "maths-2022-hl-p1-q7-g",
+      "printedParts": [
+        "Q7(g)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "Hannah is doing a training session. During this session, her heart-rate, h(x), is measured in beats per minute (BPM), where x is the time in minutes from the start of the session, x ∈ ℝ. For the first 8 minutes of the session, Hannah does a number of exercises. As she does these exercises, her heart-rate changes. In this time, h(x) is given by: h(x) = 2x³ − 28·5x² + 105x + 70 Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM.",
+      "questionText": "Martha does each exercise for a longer time than Hannah. For 0 ≤ x ≤ 10, Martha’s heart-rate, m(x), is: m(x) = h(0·8x). Use h(x) = 2x³ − 28·5x² + 105x + 70 to write m(x) in the form: m(x) = ax³ + bx² + cx + d, where a, b, c, d ∈ ℝ, for 0 ≤ x ≤ 10."
+    },
+    {
+      "id": "maths-2022-hl-p1-q8-a",
+      "printedParts": [
+        "Q8(a)",
+        "Q8(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians.",
+      "questionText": "(a) Complete the table below for t = 0, 1, 2, …, 8. The value of h(1) is given: h(1) = 42. (b) Draw the graph of y = h(t) for 0 ≤ t ≤ 8, t ∈ ℝ."
+    },
+    {
+      "id": "maths-2022-hl-p1-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians.",
+      "questionText": "Find the period and range of h(t)."
+    },
+    {
+      "id": "maths-2022-hl-p1-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians.",
+      "questionText": "During a 50-minute period, what is the greatest number of minutes for which the point A could be higher than 42 m?"
+    },
+    {
+      "id": "maths-2022-hl-p1-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians.",
+      "questionText": "By solving the following equation, find the second time (value of t) that the point A is at a height of 110 m, after it starts turning: 72 − 60 cos(π/3 t) = 110. Give your answer in minutes, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2022-hl-p1-q8-f",
+      "printedParts": [
+        "Q8(f)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is the lowest point on the circumference of the wheel, and it is at a height of 12 m above ground level. The height, h, of the point A after the wheel has been turning for t minutes is given by: h(t) = 72 − 60 cos(π/3 t), where h is in metres, t ∈ ℝ, and (π/3)t is in radians.",
+      "questionText": "Use integration to find the average height of the point A over the first 8 minutes that the wheel is turning. Give your answer correct to 1 decimal place. Remember that h(t) = 72 − 60 cos(π/3 t)."
+    },
+    {
+      "id": "maths-2022-hl-p1-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ.",
+      "questionText": "Find the amount of the drug left in Alex’s body 2·5 days after a single 15 mg injection. Give your answer in mg, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2022-hl-p1-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ.",
+      "questionText": "How long after a single 15 mg injection will there be exactly 1 mg of the drug left in Alex’s body? Give your answer in days, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2022-hl-p1-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time.",
+      "questionText": "Explain why the total amount of the drug, in mg, in Alex’s body immediately after the 4th injection is given by: 15 + 15(0·6) + 15(0·6)² + 15(0·6)³"
+    },
+    {
+      "id": "maths-2022-hl-p1-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time.",
+      "questionText": "Find the total amount of the drug in Alex’s body immediately after the 10th injection. Give your answer in mg, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2022-hl-p1-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex’s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex’s body t days after a single injection is given by: 15(0·6)^t, where t ∈ ℝ. Alex is given a 15 mg injection of the drug at the same time every day for a long period of time.",
+      "questionText": "Use the formula for the sum to infinity of a geometric series to estimate the amount of the drug (in mg) in Alex’s body, after a long period of time during which he gets daily injections."
+    },
+    {
+      "id": "maths-2022-hl-p1-q9-f-i",
+      "printedParts": [
+        "Q9(f)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Jessica also gets daily injections of a medicinal drug at the same time every day. She gets d mg of the drug in each injection, where d ∈ ℝ. Each day, the amount of the drug left in Jessica’s body from an injection decreases by 15%.",
+      "questionText": "Use the sum of a geometric series to show that the total amount of the drug (in mg) in Jessica’s body immediately after the nth injection, where n ∈ ℕ, is: 20d(1 − 0·85ⁿ)/3"
+    },
+    {
+      "id": "maths-2022-hl-p1-q9-f-ii",
+      "printedParts": [
+        "Q9(f)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "stem": "Jessica also gets daily injections of a medicinal drug at the same time every day. She gets d mg of the drug in each injection, where d ∈ ℝ. Each day, the amount of the drug left in Jessica’s body from an injection decreases by 15%. Part (f)(i) shows that the total amount of the drug (in mg) in Jessica’s body immediately after the nth injection is 20d(1 − 0·85ⁿ)/3.",
+      "questionText": "Immediately after the 7th injection, there are 50 mg of the drug in Jessica’s body. Find the amount of the drug in one of Jessica’s daily injections. Give your answer correct to the nearest mg."
+    },
+    {
+      "id": "maths-2022-hl-p1-q10-a",
+      "printedParts": [
+        "Q10(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ.",
+      "questionText": "Find the proportion of the digits recalled correctly after 3 hours, according to this model. Give your answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2022-hl-p1-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ.",
+      "questionText": "After how many hours would exactly 55% of the digits be recalled correctly, according to this model? Give your answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2022-hl-p1-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)",
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ.",
+      "questionText": "(i) Find the value of P′(1). (ii) P′(t) is always negative for 0 ≤ t ≤ 12, t ∈ ℝ. What does this tell you about the proportion of digits recalled correctly after t hours, according to this model?"
+    },
+    {
+      "id": "maths-2022-hl-p1-q10-d",
+      "printedParts": [
+        "Q10(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0·82 − 0·12 ln(t + 1), for 0 ≤ t ≤ 12 and t ∈ ℝ.",
+      "questionText": "Use calculus to show that the graph of y = P(t) has no points of inflection, for 0 ≤ t ≤ 12, t ∈ ℝ."
+    },
+    {
+      "id": "maths-2022-hl-p1-q10-e-i",
+      "printedParts": [
+        "Q10(e)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "If we learn a skill, and then don’t practise it, how well we can do it usually decreases over time. For example, if you learn to play the guitar, and then don’t play the guitar for a number of months, you will probably not be as good at playing the guitar the first time you try it again. This effect can be modelled by the following equation: A = B(t + 1)^c, where A is a measure of how well the skill can be done at a certain time (t = 0); B is a measure of how well the skill can be done t months later, without practising; c is a constant; and A, B, c, t ∈ ℝ.",
+      "questionText": "Write c in terms of log₁₀ A, log₁₀ B, and log₁₀(t + 1)."
+    },
+    {
+      "id": "maths-2022-hl-p1-q10-e-ii",
+      "printedParts": [
+        "Q10(e)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "If we learn a skill, and then don’t practise it, how well we can do it usually decreases over time. For example, if you learn to play the guitar, and then don’t play the guitar for a number of months, you will probably not be as good at playing the guitar the first time you try it again. This effect can be modelled by the following equation: A = B(t + 1)^c, where A is a measure of how well the skill can be done at a certain time (t = 0); B is a measure of how well the skill can be done t months later, without practising; c is a constant; and A, B, c, t ∈ ℝ.",
+      "questionText": "A student got 80% on a guitar exam. After two years of not playing the guitar, the student got 47% on the same exam. Use this to find the value of c in the model above, correct to 3 decimal places."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any four / any two questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        27
+      ],
+      "wording": "the amount of the drug in one of Jessica’s daily injections",
+      "classification": "given-context",
+      "reason": "Every injection has the same size d; one value is required, not a choice of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:6add43db1364664a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:61d2edd9d8426d56": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:22279a7c3a067248": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "16:7987764a6bd4256d": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "27:6aed67e89d76695b": {
+      "classification": "given-context",
+      "reason": "Every daily injection is the same d mg, so “one of” the injections names the single value required; there is no choice of prompts."
+    }
+  }
+}

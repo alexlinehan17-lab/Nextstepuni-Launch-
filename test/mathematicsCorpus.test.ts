@@ -32,6 +32,7 @@ import ordinary2024p1 from '../scripts/markbank/mathematics/reviews/2024-ordinar
 import ordinary2024p2 from '../scripts/markbank/mathematics/reviews/2024-ordinary-p2.json';
 import ordinary2023p1 from '../scripts/markbank/mathematics/reviews/2023-ordinary-p1.json';
 import ordinary2023p2 from '../scripts/markbank/mathematics/reviews/2023-ordinary-p2.json';
+import higher2022p1 from '../scripts/markbank/mathematics/reviews/2022-higher-p1.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
@@ -844,5 +845,47 @@ describe('2023 Ordinary Mathematics Paper 2 marking-point repairs', () => {
   it('attaches the measuring tool only to the scaled construction', () => {
     const measured = ORDINARY.filter(candidate => candidate.id.startsWith('maths-2023-ol-p2-') && candidate.sourceMaterial?.measurementRequired);
     expect(measured.map(candidate => candidate.id)).toEqual(['maths-2023-ol-p2-q6-a']);
+  });
+});
+
+// 2022 and 2021 Higher/Ordinary papers, reviewed from 2026-10-12. The 2022 papers were adjusted for
+// COVID-19 (220 marks to count) but every question is offered and retained.
+describe.each([
+  { year: 2022, level: 'higher' as const, number: 1, count: 43, review: higher2022p1 },
+])('$year $level Mathematics Paper $number independent source review', ({ year, level, number, count, review: census }) => {
+  const deck = level === 'higher' ? HIGHER : ORDINARY;
+  const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
+
+  it('retains every published scale unit and all 380 offered marks', () => {
+    expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
+    expect(cards).toHaveLength(count);
+    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(380);
+    for (const [question, marks] of Object.entries(census.printedQuestionMarks)) {
+      expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
+        .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
+    }
+  });
+
+  it('restores prompts and files every task in both taxonomies without page furniture', () => {
+    const specification = resolveCurriculumSpecification('mathematics', year)!;
+    for (const task of census.cards) {
+      const card = cards.find(candidate => candidate.id === task.id)!;
+      expect(card.stem ?? '', card.id).toBe((task as { stem?: string }).stem ?? '');
+      expect(card.questionText, card.id).toBe(task.questionText);
+      expect(card.questionRef, card.id).toContain(task.printedParts[0].match(/^Q\d+\([a-z]\)/)![0]);
+      expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
+      expect(card.sourceMaterial?.sourceFileid, card.id).toBe(census.paperFileid);
+      expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
+      expect(card.topicId, card.id).toBe(task.topicId);
+      expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
+      const question = task.printedParts[0].match(/^Q(\d+)/)![1];
+      expect(examTopicIdsForQuestion('mathematics', level, year, 'main', question, `p${number}`, 'ev', census.paperFileid), card.id)
+        .toEqual(expect.arrayContaining(task.examTopicIds));
+      for (const row of card.rows) {
+        const text = (row.group?.options ?? [row.verbatim]).join(' ');
+        expect(text, card.id).not.toMatch(/Higher Level|Ordinary Level|Marking Scheme|Rad:|Grad:/);
+        expect((row.group?.options ?? []).join(' '), card.id).not.toMatch(/Full Credit ?[(]?[-−–]1|Zero Credit/);
+      }
+    }
   });
 });
