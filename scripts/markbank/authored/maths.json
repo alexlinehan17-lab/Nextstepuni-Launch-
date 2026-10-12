@@ -2287,7 +2287,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q1(a)",
-  "questionText": "Find the probability that there is exactly one left footed player on the team. Give you answer correct to three decimal places",
+  "questionText": "Find the probability that there is exactly one left footed player on the team. Give you answer correct to three decimal places.",
   "figureKey": "maths-2021-HL-paper-p034-i0",
   "labelKey": [],
   "tariffModel": {
@@ -2322,8 +2322,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q1-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q1-a",
+  "stem": "In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population."
  },
  {
   "id": "maths-2021-hl-p2-q1-b",
@@ -2334,41 +2335,60 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q1(b)",
-  "questionText": "(b) Find the probability that less than three players on the team are left footed. Give you answer correct to two decimal places",
+  "questionText": "Find the probability that less than three players on the team are left footed. Give you answer correct to two decimal places.",
   "figureKey": "maths-2021-HL-paper-p034-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p2-q1-b-r1",
-    "kind": "anyN",
-    "verbatim": "First line of solution\n0·15 or 0·85 or 3/20 or 17/20 or (11 1 )",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "First line of solution\n0·15 or 0·85 or 3/20 or 17/20 or (11 1 )",
-      "Two out of P(0), P(1), P(2) fully substituted"
-     ],
-     "perOptionSteps": [
-      3,
-      7
-     ]
-    }
+    "id": "maths-2021-hl-p2-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 0∙1673 … + 0∙3248 … + 0∙2866 …",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 0∙7787 …",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 0∙78 [2 D.P.]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — First line of solution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 0·15 or 0·85 or 3/20 or 17/20 or (11 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-b-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Two out of P(0), P(1), P(2) fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q1-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q1-b",
+  "stem": "In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population."
  },
  {
   "id": "maths-2021-hl-p2-q1-c",
@@ -2379,41 +2399,67 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q1(c)",
-  "questionText": "The goalkeeper is left footed. Find the probability that at least eight of the remainder of the team are right footed. Give you answer correct to two decimal places",
+  "questionText": "The goalkeeper is left footed. Find the probability that at least eight of the remainder of the team are right footed. Give you answer correct to two decimal places.",
   "figureKey": "maths-2021-HL-paper-p035-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2021-hl-p2-q1-c-r1",
-    "kind": "anyN",
-    "verbatim": "First line of solution\n0·15 or 0·85 or 3/20 or 17/20 or (10 1 )",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept 82·02%. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "First line of solution\n0·15 or 0·85 or 3/20 or 17/20 or (10 1 )",
-      "Two out of P(0), P(1), P(2) fully substituted"
-     ],
-     "perOptionSteps": [
-      2,
-      3
-     ]
-    }
+    "id": "maths-2021-hl-p2-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·1968 … + 0·3474 … + 0·2758 …",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·82019 …",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·82 [2 D.P.]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-c-solution-4",
+    "kind": "point",
+    "verbatim": "Note — Accept 82·02%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-c-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — First line of solution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 0·15 or 0·85 or 3/20 or 17/20 or (10 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q1-c-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Two out of P(0), P(1), P(2) fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q1-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q1-c",
+  "stem": "In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population."
  },
  {
   "id": "maths-2021-hl-p2-q2-i",
@@ -2424,7 +2470,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q2(c)(i)",
-  "questionText": "The line 3x−6y + 2 = 0 contains the point (k, 2k + 2 3), where k∈ℝ. The point P(s, t) is on the line x−2y−8 = 0. The point P is also a distance of 1 unit from the line 4x + 3y + 6 = 0. Find a value of s and the corresponding value of t. The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| ∶|DC| is 2 ∶1. Find |AD|. [AB]and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E",
+  "questionText": "Find |AD|.",
   "figureKey": "maths-2021-HL-paper-p037-i0",
   "labelKey": [],
   "tariffModel": {
@@ -2457,8 +2503,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q2-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q2-c-i",
+  "stem": "The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| : |DC| is 2 : 1."
  },
  {
   "id": "maths-2021-hl-p2-q2-a",
@@ -2469,7 +2516,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q2(a)",
-  "questionText": "The line 3x−6y+ 2 = 0 contains the point (k, 2k+2 3), where k∈ℝ",
+  "questionText": "The line 3x − 6y + 2 = 0 contains the point (k, (2k + 2)/3), where k ∈ ℝ. Find the value of k.",
   "figureKey": "maths-2021-HL-paper-p036-i0",
   "labelKey": [],
   "tariffModel": {
@@ -2502,7 +2549,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q2-a"
  },
  {
@@ -2514,7 +2561,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q2(b)",
-  "questionText": "The point P(s, t) is on the line x−2y−8 = 0. The point P is also a distance of 1 unit from the line 4x + 3y + 6 = 0. Find a value of s and the corresponding value of t",
+  "questionText": "The point P(s, t) is on the line x − 2y − 8 = 0. The point P is also a distance of 1 unit from the line 4x + 3y + 6 = 0. Find a value of s and the corresponding value of t.",
   "figureKey": "maths-2021-HL-paper-p036-i1",
   "labelKey": [],
   "tariffModel": {
@@ -2549,7 +2596,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q2-b"
  },
  {
@@ -2561,7 +2608,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q2(c)(ii)",
-  "questionText": "[AB]and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E",
+  "questionText": "[AB] and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E.",
   "figureKey": "maths-2021-HL-paper-p037-i1",
   "labelKey": [],
   "tariffModel": {
@@ -2594,8 +2641,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q2-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q2-c-ii",
+  "stem": "The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| : |DC| is 2 : 1."
  },
  {
   "id": "maths-2021-hl-p2-q3-a",
@@ -2606,7 +2654,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q3(a)",
-  "questionText": "The circle k has centre C(1, −2) and chord [AB] where |AB| = 4√3. The point D(3, 2) is the midpoint of the chord [AB], as shown below. Find the radius of k. Give your answer in the form a√b, where a, b∈ℕ",
+  "questionText": "The circle k has centre C(1, −2) and chord [AB] where |AB| = 4√3. The point D(3, 2) is the midpoint of the chord [AB], as shown below. Find the radius of k. Give your answer in the form a√b, where a, b ∈ ℕ.",
   "figureKey": "maths-2021-HL-paper-p038-i0",
   "labelKey": [],
   "tariffModel": {
@@ -2641,7 +2689,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q3-a"
  },
  {
@@ -2653,7 +2701,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q3(b)(i)",
-  "questionText": "Show that the circles c: x2+ y2+ 4x−2y−95 = 0 and s: (x−7)2+ (y−13)2= 25 touch externally",
+  "questionText": "Show that the circles c: x² + y² + 4x − 2y − 95 = 0 and s: (x − 7)² + (y − 13)² = 25 touch externally.",
   "figureKey": "maths-2021-HL-paper-p038-i1",
   "labelKey": [],
   "tariffModel": {
@@ -2688,7 +2736,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q3-b-i"
  },
  {
@@ -2700,7 +2748,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q3(b)(ii)",
-  "questionText": "There are an infinite number of circles which touch circle c externally at the same point that s touches c. Find the coordinates of the centre of one of these circles, apart from circle s",
+  "questionText": "There are an infinite number of circles which touch circle c externally at the same point that s touches c. Find the coordinates of the centre of one of these circles, apart from circle s.",
   "figureKey": "maths-2021-HL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
@@ -2728,8 +2776,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q3-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q3-b-ii",
+  "stem": "The circles are c: x² + y² + 4x − 2y − 95 = 0 and s: (x − 7)² + (y − 13)² = 25."
  },
  {
   "id": "maths-2021-hl-p2-q4-a-i",
@@ -2740,7 +2789,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q4(a)(i)",
-  "questionText": "Prove that cos 2A = cos²A−sin²A",
+  "questionText": "Prove that cos 2A = cos² A − sin² A.",
   "figureKey": "maths-2021-HL-paper-p040-i0",
   "labelKey": [],
   "tariffModel": {
@@ -2773,7 +2822,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q4-a-i"
  },
  {
@@ -2785,49 +2834,86 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q4(a)(ii)",
-  "questionText": "sin 𝜃 2= 1 √5 , where 0 ≤𝜃≤𝜋",
+  "questionText": "sin(θ/2) = 1/√5, where 0 ≤ θ ≤ π. Use the formula cos 2A = cos² A − sin² A to find the value of cos θ.",
   "figureKey": "maths-2021-HL-paper-p040-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p2-q4-a-ii-r1",
-    "kind": "anyN",
-    "verbatim": "cos2A = cos²A−sin²A",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 3,
-     "options": [
-      "cos2A = cos²A−sin²A",
-      "⇒ cos𝜃 = cos² ^𝜃/2 − sin² ^𝜃/2",
-      "using a right-angled triangle cos 𝜃/2 = 2/√5 2/√5",
-      "cos𝜃 = (/√5) 2 2 − (/√5) 1 2 = 3/5",
-      "2−sin^(2𝜃)",
-      "cos𝜃= cos^(2𝜃)",
-      "= (1 − sin² ^𝜃/2) − sin² ^𝜃/2",
-      "= 1 − 2sin² ^𝜃/2",
-      "= 1 − 2 (/√5) 1 2 = 3/5"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      3,
-      2
-     ]
-    }
+    "id": "maths-2021-hl-p2-q4-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — cos2A = cos²A − sin²A",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q4-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 1 − 2sin²(θ/2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q4-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — using a right-angled triangle cos θ/2 = 2/√5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q4-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — cosθ = cos²(θ/2) − sin²(θ/2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q4-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Valid work to find cos(θ/2) from sin(θ/2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q4-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q4-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Finds cos θ/2 = 2/√5.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q4-a-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Also accept cos θ/2 = cos (sin⁻¹ 1/√5) = 0·8944 …",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q4-a-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — cosθ = (1 − sin²(θ/2)) − sin²(θ/2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q4-a-ii-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — cos θ formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q4-a-ii"
  },
  {
@@ -2839,7 +2925,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q4(b)",
-  "questionText": "Solve the equation: tan(B + 150°) = −√3, for 0° ≤B ≤ 360°",
+  "questionText": "Solve the equation: tan(B + 150°) = −√3, for 0° ≤ B ≤ 360°.",
   "figureKey": "maths-2021-HL-paper-p041-i0",
   "labelKey": [],
   "tariffModel": {
@@ -2874,7 +2960,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q4-b"
  },
  {
@@ -2886,7 +2972,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q5(a)(i)",
-  "questionText": "Prove that the volume of the remaining space inside the sphere is exactly half the total volume of the sphere",
+  "questionText": "Prove that the volume of the remaining space inside the sphere is exactly half the total volume of the sphere.",
   "figureKey": "maths-2021-HL-paper-p042-i0",
   "labelKey": [],
   "tariffModel": {
@@ -2921,8 +3007,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q5-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q5-a-i",
+  "stem": "Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram."
  },
  {
   "id": "maths-2021-hl-p2-q5-a-ii",
@@ -2933,7 +3020,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q5(a)(ii)",
-  "questionText": "The combined volume of the two cones is 686 3𝜋 cm3. Find the radius of one of the cones",
+  "questionText": "The combined volume of the two cones is (686/3)π cm³. Find the radius of one of the cones.",
   "figureKey": "maths-2021-HL-paper-p042-i1",
   "labelKey": [],
   "tariffModel": {
@@ -2961,8 +3048,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q5-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q5-a-ii",
+  "stem": "Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram."
  },
  {
   "id": "maths-2021-hl-p2-q5-b",
@@ -2973,7 +3061,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q5(b)",
-  "questionText": "At 9.00 a.m. a delivery van leaves a factory. It travels towards its destination at an average speed of 60 km/h. One hour and 45 minutes later a second van leaves the factory on the same route. It travels at an average speed of 95 km/h. Both vans arrive at their destination at the same time. Find at what time they arrive",
+  "questionText": "At 9.00 a.m. a delivery van leaves a factory. It travels towards its destination at an average speed of 60 km/h. One hour and 45 minutes later a second van leaves the factory on the same route. It travels at an average speed of 95 km/h. Both vans arrive at their destination at the same time. Find at what time they arrive.",
   "figureKey": "maths-2021-HL-paper-p043-i0",
   "labelKey": [],
   "tariffModel": {
@@ -3006,7 +3094,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q5-b"
  },
  {
@@ -3018,7 +3106,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q6(a)",
-  "questionText": "Prove that if two triangles ∆ABC and ∆A′B′C′ are similar, then the lengths of their sides are proportional in order: |AB|/|A′B′| = |BC|/|B′C′| |CA| |C′A′|",
+  "questionText": "Prove that if two triangles ΔABC and ΔA′B′C′ are similar, then the lengths of their sides are proportional in order: |AB|/|A′B′| = |BC|/|B′C′| = |CA|/|C′A′|. (Diagram, Given, To Prove, Construction, Proof.)",
   "figureKey": "maths-2021-HL-paper-p044-i0",
   "labelKey": [],
   "tariffModel": {
@@ -3053,7 +3141,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q6-a"
  },
  {
@@ -3065,7 +3153,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q6(b)",
-  "questionText": "In the diagram below, the lines PA, HK, and BR are parallel. Prove that |AH| × |QB| = |AP| × |HB|. Give a reason for each geometrical statement you use",
+  "questionText": "In the diagram below, the lines PA, HK, and BR are parallel. Prove that |AH| × |QB| = |AP| × |HB|. Give a reason for each geometrical statement you use.",
   "figureKey": "maths-2021-HL-paper-p045-i0",
   "labelKey": [],
   "tariffModel": {
@@ -3100,7 +3188,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q6-b"
  },
  {
@@ -3112,7 +3200,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q7(a)",
-  "questionText": "(a) Show that the total length of the course is 62 km",
+  "questionText": "Show that the total length of the course is 62 km.",
   "figureKey": "maths-2021-HL-paper-p046-i0",
   "labelKey": [],
   "tariffModel": {
@@ -3145,8 +3233,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q7-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q7-a",
+  "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A."
  },
  {
   "id": "maths-2021-hl-p2-q7-b",
@@ -3157,7 +3246,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q7(b)",
-  "questionText": "(b) On average, Mary can run 5·6 times as fast as she can swim. It takes her 4·8 hours to complete the course. Find her average swimming speed in km/h",
+  "questionText": "On average, Mary can run 5·6 times as fast as she can swim. It takes her 4·8 hours to complete the course. Find her average swimming speed in km/h.",
   "figureKey": "maths-2021-HL-paper-p046-i1",
   "labelKey": [],
   "tariffModel": {
@@ -3192,8 +3281,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q7-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q7-b",
+  "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km."
  },
  {
   "id": "maths-2021-hl-p2-q7-c",
@@ -3204,7 +3294,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q7(c)",
-  "questionText": "Show that |∠ ACB| = 116·5°, correct to 1 decimal place",
+  "questionText": "Show that |∠ACB| = 116·5°, correct to 1 decimal place.",
   "figureKey": "maths-2021-HL-paper-p046-i2",
   "labelKey": [],
   "tariffModel": {
@@ -3239,8 +3329,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q7-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q7-c",
+  "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km."
  },
  {
   "id": "maths-2021-hl-p2-q7-d",
@@ -3251,7 +3342,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q7(d)",
-  "questionText": "To comply with safety regulations, the region inside the triangular course must be kept clear of people. Find the area of this region. Give your answer, in km², correct to 1 decimal place",
+  "questionText": "To comply with safety regulations, the region inside the triangular course must be kept clear of people. Find the area of this region. Give your answer, in km², correct to 1 decimal place.",
   "figureKey": "maths-2021-HL-paper-p047-i0",
   "labelKey": [],
   "tariffModel": {
@@ -3284,8 +3375,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q7-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q7-d",
+  "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. |∠ACB| = 116·5°."
  },
  {
   "id": "maths-2021-hl-p2-q7-e",
@@ -3296,7 +3388,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q7(e)",
-  "questionText": "(e) Find the shortest distance from the point C to the side AB. Give your answer in km, correct to 1 decimal place",
+  "questionText": "Find the shortest distance from the point C to the side AB. Give your answer in km, correct to 1 decimal place.",
   "figureKey": "maths-2021-HL-paper-p047-i1",
   "labelKey": [],
   "tariffModel": {
@@ -3329,8 +3421,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q7-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q7-e",
+  "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. |∠ACB| = 116·5°."
  },
  {
   "id": "maths-2021-hl-p2-q7-f",
@@ -3341,7 +3434,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q7(f)",
-  "questionText": "The course is viewed from a camera tower which rises vertically from point A. The top of the tower is point T. The angle of elevation of T from B is 0·05^o. Find |AT |, the vertical height of the tower. Give your answer correct to the nearest metre",
+  "questionText": "The course is viewed from a camera tower which rises vertically from point A. The top of the tower is point T. The angle of elevation of T from B is 0·05°. Find |AT|, the vertical height of the tower. Give your answer correct to the nearest metre.",
   "figureKey": "maths-2021-HL-paper-p047-i2",
   "labelKey": [],
   "tariffModel": {
@@ -3374,8 +3467,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q7-f"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q7-f",
+  "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km."
  },
  {
   "id": "maths-2021-hl-p2-q8-a-i",
@@ -3386,43 +3480,95 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q8(a)(i)",
-  "questionText": "Find the minimum mark needed on the exam to progress to the county stage",
+  "questionText": "Find the minimum mark needed on the exam to progress to the county stage.",
   "figureKey": "maths-2021-HL-paper-p048-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p2-q8-a-i-r1",
-    "kind": "anyN",
-    "verbatim": "Mean or standard deviation indicated\nz-formula with some substitution",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Accept use of P(z < 1·29), to give x = 222·44. Note: Accept answer rounded to 222 instead of 223. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Mean or standard deviation indicated\nz-formula with some substitution",
-      "z-score found (1∙28 or 1·29)\nz-formula fully substituted (^x^−¹⁷⁶ )/36",
-      "(x−176)/36 = 1·28"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2021-hl-p2-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Top 10% means 90% below.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — P(z < 1·28) = 0·8997.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒x = 222∙08",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — Minimum mark of 223",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Note — Accept use of P(z < 1·29), to give x = 222·44",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Note — Accept answer rounded to 222 instead of 223",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Mean or standard deviation indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-a-i-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — z-formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-a-i-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — z-score found (1∙28 or 1·29)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-a-i-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — z-formula fully substituted ((x − 176)/36)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-a-i-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (x − 176)/36 = 1·28",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q8-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q8-a-i",
+  "stem": "In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a county maths competition."
  },
  {
   "id": "maths-2021-hl-p2-q8-a-ii",
@@ -3433,7 +3579,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q8(a)(ii)",
-  "questionText": "The school awarded a Certificate of Merit to any student who achieved between 165 marks and 210 marks. Find the percentage of First Years who received the Certificate of Merit",
+  "questionText": "The school awarded a Certificate of Merit to any student who achieved between 165 marks and 210 marks. Find the percentage of First Years who received the Certificate of Merit.",
   "figureKey": "maths-2021-HL-paper-p048-i1",
   "labelKey": [],
   "tariffModel": {
@@ -3468,8 +3614,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q8-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q8-a-ii",
+  "stem": "In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a county maths competition."
  },
  {
   "id": "maths-2021-hl-p2-q8-b-i",
@@ -3480,7 +3627,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q8(b)(i)",
-  "questionText": "Find the test statistic (the z-score) of this sample mean",
+  "questionText": "Find the test statistic (the z-score) of this sample mean.",
   "figureKey": "maths-2021-HL-paper-p049-i0",
   "labelKey": [],
   "tariffModel": {
@@ -3513,8 +3660,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q8-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q8-b-i",
+  "stem": "A news report claimed that 6th year students in Ireland studied an average of 21 hours per week, outside of class time. A Leaving Cert class surveyed 60 students in 6th year, chosen at random, from different schools. It found that the average study time was 19·8 hours and the standard deviation was 5·2 hours."
  },
  {
   "id": "maths-2021-hl-p2-q8-b-ii",
@@ -3525,7 +3673,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q8(b)(ii)",
-  "questionText": "Find the p-value of this test statistic. Comment on what can be concluded from its value, in a two-tailed hypothesis test at the 5% level of significance, in relation to the news report claim",
+  "questionText": "Find the p-value of this test statistic. Comment on what can be concluded from its value, in a two-tailed hypothesis test at the 5% level of significance, in relation to the news report claim.",
   "figureKey": "maths-2021-HL-paper-p049-i1",
   "labelKey": [],
   "tariffModel": {
@@ -3560,8 +3708,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q8-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q8-b-ii",
+  "stem": "A news report claimed that 6th year students in Ireland studied an average of 21 hours per week, outside of class time. A Leaving Cert class surveyed 60 students in 6th year, chosen at random, from different schools. It found that the average study time was 19·8 hours and the standard deviation was 5·2 hours."
  },
  {
   "id": "maths-2021-hl-p2-q8-c-i",
@@ -3572,43 +3721,81 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q8(c)(i)",
-  "questionText": "Four keys are drawn at random from the box. What is the probability that the 4th key drawn is the first office key drawn? Give your answer correct to 4 decimal places",
+  "questionText": "Four keys are drawn at random from the box. What is the probability that the 4th key drawn is the first office key drawn? Give your answer correct to 4 decimal places.",
   "figureKey": "maths-2021-HL-paper-p050-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p2-q8-c-i-r1",
-    "kind": "anyN",
-    "verbatim": "One relevant fraction",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: multiplication between relevant terms is necessary to be awarded above. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "One relevant fraction",
-      "Product of four fractions, two of them correct",
-      "18/23 × 17/22 × 16/21 × 5/20\n(/23) 18 3 × 5/23"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2021-hl-p2-q8-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Assuming no replacement:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 18/23 × 17/22 × 16/21 × 5/20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·11518 … = 0·1152 [4 D.P.]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — Assuming replacement:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-c-i-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — = 0∙10420 … = 0∙1042 [4 D.P.]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-c-i-solution-6",
+    "kind": "point",
+    "verbatim": "Note — multiplication between relevant terms is necessary to be awarded above Low Partial Credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-c-i-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One relevant fraction",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-c-i-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Product of four fractions, two of them correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q8-c-i-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 18/23 × 17/22 × 16/21 × 5/20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q8-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q8-c-i",
+  "stem": "The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices."
  },
  {
   "id": "maths-2021-hl-p2-q8-c-ii",
@@ -3619,7 +3806,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q8(c)(ii)",
-  "questionText": "All the keys are returned to the box. Then 3 keys are drawn at random from the box one after the other, without replacement. What is the probability that one of them is for a general classroom, one is for a science lab and one is for an office? Give your answer correct to 4 decimal places",
+  "questionText": "All the keys are returned to the box. Then 3 keys are drawn at random from the box one after the other, without replacement. What is the probability that one of them is for a general classroom, one is for a science lab and one is for an office? Give your answer correct to 4 decimal places.",
   "figureKey": "maths-2021-HL-paper-p050-i1",
   "labelKey": [],
   "tariffModel": {
@@ -3652,8 +3839,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q8-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q8-c-ii",
+  "stem": "The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices."
  },
  {
   "id": "maths-2021-hl-p2-q9-a-i",
@@ -3664,7 +3852,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q9(a)(i)",
-  "questionText": "Find how long it took to fly from B to C. Give your answer correct to the nearest minute",
+  "questionText": "Find how long it took to fly from B to C. Give your answer correct to the nearest minute.",
   "figureKey": "maths-2021-HL-paper-p051-i0",
   "labelKey": [],
   "tariffModel": {
@@ -3699,8 +3887,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q9-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q9-a-i",
+  "stem": "An aeroplane flies east from point A for 2 hours at a constant speed of 420 km per hour until it reaches point B. It then changes direction by heading 20° towards the south at the same speed until it reaches point C, as shown in the diagram below. The direct distance from A to C is 1450 km and |∠BAC| = 8·57°."
  },
  {
   "id": "maths-2021-hl-p2-q9-a-ii",
@@ -3711,7 +3900,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q9(a)(ii)",
-  "questionText": "The average fuel consumption of the plane is 3·8 litres per second and the fuel capacity of the plane is 100 000 litres. Show that the plane will be able to complete the journey from A to B to C and directly back to A at a speed of 420 km/h without refuelling",
+  "questionText": "The average fuel consumption of the plane is 3·8 litres per second and the fuel capacity of the plane is 100 000 litres. Show that the plane will be able to complete the journey from A to B to C and directly back to A at a speed of 420 km/h without refuelling.",
   "figureKey": "maths-2021-HL-paper-p051-i1",
   "labelKey": [],
   "tariffModel": {
@@ -3746,8 +3935,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q9-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q9-a-ii",
+  "stem": "An aeroplane flies east from point A for 2 hours at a constant speed of 420 km per hour until it reaches point B. It then changes direction by heading 20° towards the south at the same speed until it reaches point C, as shown in the diagram below. The direct distance from A to C is 1450 km and |∠BAC| = 8·57°."
  },
  {
   "id": "maths-2021-hl-p2-q9-b-i",
@@ -3758,7 +3948,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q9(b)(i)",
-  "questionText": "Find the period and range of the function V(t)",
+  "questionText": "Find the period and range of the function V(t).",
   "figureKey": "maths-2021-HL-paper-p052-i0",
   "labelKey": [],
   "tariffModel": {
@@ -3791,8 +3981,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q9-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q9-b-i",
+  "stem": "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds."
  },
  {
   "id": "maths-2021-hl-p2-q9-b-ii",
@@ -3803,7 +3994,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q9(b)(ii)",
-  "questionText": "(ii) Sketch the function for 0 ≤ t ≤ p, where p is the period of V(t). Indicate the period and range of the function on your graph",
+  "questionText": "Sketch the function for 0 ≤ t ≤ p, where p is the period of V(t). Indicate the period and range of the function on your graph.",
   "figureKey": "maths-2021-HL-paper-p052-i1",
   "labelKey": [],
   "tariffModel": {
@@ -3836,8 +4027,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q9-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q9-b-ii",
+  "stem": "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds."
  },
  {
   "id": "maths-2021-hl-p2-q9-b-iii",
@@ -3848,7 +4040,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q9(b)(iii)",
-  "questionText": "(iii) Use V(t) to find the voltage when t = 6∙67 seconds. Give your answer correct to two decimal places",
+  "questionText": "Use V(t) to find the voltage when t = 6·67 seconds. Give your answer correct to two decimal places.",
   "figureKey": "maths-2021-HL-paper-p052-i2",
   "labelKey": [],
   "tariffModel": {
@@ -3881,8 +4073,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q9-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q9-b-iii",
+  "stem": "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds."
  },
  {
   "id": "maths-2021-hl-p2-q9-b-iv",
@@ -3893,7 +4086,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q9(b)(iv)",
-  "questionText": "(iv) Find one value for t where the voltage is 110 Volts. Give your answer in the form a/b where a, b ∈ℕ",
+  "questionText": "Find one value for t where the voltage is 110 Volts. Give your answer in the form a/b where a, b ∈ ℕ.",
   "figureKey": "maths-2021-HL-paper-p053-i0",
   "labelKey": [],
   "tariffModel": {
@@ -3926,8 +4119,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q9-b-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q9-b-iv",
+  "stem": "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds."
  },
  {
   "id": "maths-2021-hl-p2-q9-b-v",
@@ -3938,7 +4132,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q9(b)(v)",
-  "questionText": "Find the rate of change of the voltage when t = 2 seconds. Give your answer correct to the nearest unit",
+  "questionText": "Find the rate of change of the voltage when t = 2 seconds. Give your answer correct to the nearest unit.",
   "figureKey": "maths-2021-HL-paper-p053-i1",
   "labelKey": [],
   "tariffModel": {
@@ -3971,8 +4165,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q9-b-v"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q9-b-v",
+  "stem": "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds."
  },
  {
   "id": "maths-2021-hl-p2-q10-a-i",
@@ -3983,43 +4178,46 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q10(a)(i)",
-  "questionText": "At a blood donation clinic, ten donors give blood, one after the other. Find the probability that the tenth person is the third O-negative donor. Give your answer correct to four decimal places",
+  "questionText": "At a blood donation clinic, ten donors give blood, one after the other. Find the probability that the tenth person is the third O-negative donor. Give your answer correct to four decimal places.",
   "figureKey": "maths-2021-HL-paper-p054-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p2-q10-a-i-r1",
-    "kind": "anyN",
-    "verbatim": "P(2 from the 1st 9 are O⁻) × P(10th is O⁻)",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "P(2 from the 1st 9 are O⁻) × P(10th is O⁻)",
-      "= (⁹ 2) (/100) 8 2 (/100) 92 7 × 8/100",
-      "= 0∙01028 … = 0∙0103 [4 D.P.]"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2021-hl-p2-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — P(2 from the 1st 9 are O-) × P(10th is O-)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q10-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 0∙01028 … = 0∙0103 [4 D.P.]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q10-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 8/100 or 92/100 or (9 2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q10-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — First line of solution indicated (accept with “and” instead of ×)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q10-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q10-a-i",
+  "stem": "People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service)."
  },
  {
   "id": "maths-2021-hl-p2-q10-a-ii",
@@ -4030,41 +4228,53 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q10(a)(ii)",
-  "questionText": "At a blood donation clinic, five donors give blood. What is the probability that at least one of the five donates O-negative blood? Give your answer correct to four decimal places",
+  "questionText": "At a blood donation clinic, five donors give blood. What is the probability that at least one of the five donates O-negative blood? Give your answer correct to four decimal places.",
   "figureKey": "maths-2021-HL-paper-p054-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p2-q10-a-ii-r1",
-    "kind": "anyN",
-    "verbatim": "a\n(/100) 92 where 0 < a < 5\nFirst line of either solution",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "a\n(/100) 92 where 0 < a < 5\nFirst line of either solution",
-      "(/100) 92\nThree terms in second solution"
-     ],
-     "perOptionSteps": [
-      3,
-      7
-     ]
-    }
+    "id": "maths-2021-hl-p2-q10-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1 − P(none are O-)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q10-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·34091 … = 0·3409 [4 D.P.]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q10-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — P(1 or 2 or 3 or 4 or 5 are O-)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q10-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — First line of either solution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p2-q10-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Three terms in second solution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q10-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q10-a-ii",
+  "stem": "People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service)."
  },
  {
   "id": "maths-2021-hl-p2-q10-a-iii",
@@ -4075,7 +4285,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q10(a)(iii)",
-  "questionText": "(iii) Find the minimum number of blood donors required, so that the probability that at least one of them is type O-negative is greater than 0∙97",
+  "questionText": "Find the minimum number of blood donors required, so that the probability that at least one of them is type O-negative is greater than 0·97.",
   "figureKey": "maths-2021-HL-paper-p054-i2",
   "labelKey": [],
   "tariffModel": {
@@ -4110,8 +4320,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q10-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q10-a-iii",
+  "stem": "People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service)."
  },
  {
   "id": "maths-2021-hl-p2-q10-b",
@@ -4122,7 +4333,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q10(b)",
-  "questionText": "A homeowner has a problem with the heating system in her house. A plumber has identified the problem as a faulty part. The homeowner knows that in 80% of cases a repair of the part will fix the problem and this repair will cost €70. If the repair does not work then a new part will have to be bought costing €150 and there will be an additional labour cost of €80 to replace the old part with the new. Find the expected value of the cost of fixing this faulty system",
+  "questionText": "A homeowner has a problem with the heating system in her house. A plumber has identified the problem as a faulty part. The homeowner knows that in 80% of cases a repair of the part will fix the problem and this repair will cost €70. If the repair does not work then a new part will have to be bought costing €150 and there will be an additional labour cost of €80 to replace the old part with the new. Find the expected value of the cost of fixing this faulty system.",
   "figureKey": "maths-2021-HL-paper-p055-i0",
   "labelKey": [],
   "tariffModel": {
@@ -4155,7 +4366,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q10-b"
  },
  {
@@ -4167,7 +4378,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q10(c)",
-  "questionText": "A life insurance policy pays out €120 000 if the policy holder dies and €40 000 if the policy holder becomes disabled. The insurance company has calculated that in general, in any given year, the probability of death is 0∙0001 and the probability of disability is 0∙002. The company has 18 000 policy holders on its books at present who are all charged the same premium. The company’s goal is to make €900 000 profit in a particular year. Find the annual premium it should charge its customers which in an average year would generate this level of profit",
+  "questionText": "A life insurance policy pays out €120 000 if the policy holder dies and €40 000 if the policy holder becomes disabled. The insurance company has calculated that in general, in any given year, the probability of death is 0·0001 and the probability of disability is 0·002. The company has 18 000 policy holders on its books at present who are all charged the same premium. The company’s goal is to make €900 000 profit in a particular year. Find the annual premium it should charge its customers which in an average year would generate this level of profit.",
   "figureKey": "maths-2021-HL-paper-p055-i1",
   "labelKey": [],
   "tariffModel": {
@@ -4202,7 +4413,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p2-q10-c"
  },
  {

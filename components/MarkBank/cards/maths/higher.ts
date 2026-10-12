@@ -1972,21 +1972,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q1-a", topicId: "maths-1-2", conceptId: "probability-there-exactly-one-left-footed",
     section: "B", questionRef: "2021 HL Paper 2 Q1(a)",
-    questionText: "Find the probability that there is exactly one left footed player on the team. Give you answer correct to three decimal places",
+    stem: "In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population.",
+    questionText: "Find the probability that there is exactly one left footed player on the team. Give you answer correct to three decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2021-hl-p2-q1-a-r1", kind: "anyN", verbatim: "0·15 or 0·85 or 3/20 or 17/20 or 11\nx¹⁰ where 0 < x < 1", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: multiplication between relevant terms is necessary to be awarded above. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["0·15 or 0·85 or 3/20 or 17/20 or 11\nx¹⁰ where 0 < x < 1","Three terms multiplied, two correct, from 11, (0·15¹), and (0·85¹⁰)\n(0·15¹) × (0·85¹⁰)","11 × 0·15¹ × 0·85¹⁰ or equivalent\n(0·15¹) × (0·85¹⁰) evaluated [0 ∙0295 …]"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[35],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q1-a.png",
           "srcHash": "a162726eb0d8a15d33ebd6b80d7d5407",
-          "alt": "The question as printed on the paper — In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population. Find the probability that there is exactly one left footed… Full card prompt: Find the probability that there is exactly one left footed player on the team. Give you answer correct to three decimal places",
+          "alt": "The question as printed on the paper — In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population. Find the probability that there is exactly one left footed… Full card prompt: In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population. Find the probability that there is exactly one left footed player on the team. Give you answer correct to three decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2002,21 +2016,40 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q1-b", topicId: "maths-1-2", conceptId: "probability-less-than-three-players-team",
     section: "B", questionRef: "2021 HL Paper 2 Q1(b)",
-    questionText: "(b) Find the probability that less than three players on the team are left footed. Give you answer correct to two decimal places",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population.",
+    questionText: "Find the probability that less than three players on the team are left footed. Give you answer correct to two decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p2-q1-b-r1", kind: "anyN", verbatim: "First line of solution\n0·15 or 0·85 or 3/20 or 17/20 or (11 1 )", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["First line of solution\n0·15 or 0·85 or 3/20 or 17/20 or (11 1 )","Two out of P(0), P(1), P(2) fully substituted"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-hl-p2-q1-b-solution-1", kind: "point", verbatim: "Model solution — = 0∙1673 … + 0∙3248 … + 0∙2866 …", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-b-solution-2", kind: "point", verbatim: "Model solution — = 0∙7787 …", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-b-solution-3", kind: "point", verbatim: "Model solution — = 0∙78 [2 D.P.]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-b-solution-4", kind: "point", verbatim: "Low Partial Credit — First line of solution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-b-solution-5", kind: "point", verbatim: "Low Partial Credit — 0·15 or 0·85 or 3/20 or 17/20 or (11 1)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-b-solution-6", kind: "point", verbatim: "High Partial Credit — Two out of P(0), P(1), P(2) fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[35],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q1-b.png",
           "srcHash": "9e7f65e028978680d8db5f8ec3cc208e",
-          "alt": "The question as printed on the paper — In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population. Find the probability that there is exactly one left footed… Full card prompt: (b) Find the probability that less than three players on the team are left footed. Give you answer correct to two decimal places",
+          "alt": "The question as printed on the paper — In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population. Find the probability that there is exactly one left footed… Full card prompt: In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population. Find the probability that less than three players on the team are left footed. Give you answer correct to two decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2032,21 +2065,41 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q1-c", topicId: "maths-1-2", conceptId: "goalkeeper-left-footed-probability-least-eight",
     section: "B", questionRef: "2021 HL Paper 2 Q1(c)",
-    questionText: "The goalkeeper is left footed. Find the probability that at least eight of the remainder of the team are right footed. Give you answer correct to two decimal places",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population.",
+    questionText: "The goalkeeper is left footed. Find the probability that at least eight of the remainder of the team are right footed. Give you answer correct to two decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-hl-p2-q1-c-r1", kind: "anyN", verbatim: "First line of solution\n0·15 or 0·85 or 3/20 or 17/20 or (10 1 )", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept 82·02%. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["First line of solution\n0·15 or 0·85 or 3/20 or 17/20 or (10 1 )","Two out of P(0), P(1), P(2) fully substituted"],"perOptionSteps":[2,3]} },
+    { id: "maths-2021-hl-p2-q1-c-solution-1", kind: "point", verbatim: "Model solution — = 0·1968 … + 0·3474 … + 0·2758 …", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-c-solution-2", kind: "point", verbatim: "Model solution — = 0·82019 …", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-c-solution-3", kind: "point", verbatim: "Model solution — = 0·82 [2 D.P.]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-c-solution-4", kind: "point", verbatim: "Note — Accept 82·02%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-c-solution-5", kind: "point", verbatim: "Low Partial Credit — First line of solution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-c-solution-6", kind: "point", verbatim: "Low Partial Credit — 0·15 or 0·85 or 3/20 or 17/20 or (10 1)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q1-c-solution-7", kind: "point", verbatim: "High Partial Credit — Two out of P(0), P(1), P(2) fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[36],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q1-c.png",
           "srcHash": "bc6bc78c9f9d6b00a334bd8100882b8a",
-          "alt": "The question as printed on the paper — In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population. Find the probability that there is exactly one left footed… Full card prompt: The goalkeeper is left footed. Find the probability that at least eight of the remainder of the team are right footed. Give you answer correct to two decimal places",
+          "alt": "The question as printed on the paper — In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population. Find the probability that there is exactly one left footed… Full card prompt: In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population. The goalkeeper is left footed. Find the probability that at least eight of the remainder of the team are right footed. Give you answer correct to two decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2062,16 +2115,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q2-i", topicId: "maths-2-3", conceptId: "line-contains-point-point-line-point",
+    id: "maths-2021-hl-p2-q2-i", topicId: "maths-2-2", conceptId: "line-contains-point-point-line-point",
     section: "B", questionRef: "2021 HL Paper 2 Q2(c)(i)",
-    questionText: "The line 3x−6y + 2 = 0 contains the point (k, 2k + 2 3), where k∈ℝ. The point P(s, t) is on the line x−2y−8 = 0. The point P is also a distance of 1 unit from the line 4x + 3y + 6 = 0. Find a value of s and the corresponding value of t. The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| ∶|DC| is 2 ∶1. Find |AD|. [AB]and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E",
+    stem: "The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| : |DC| is 2 : 1.",
+    questionText: "Find |AD|.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q2-i-r1", kind: "anyN", verbatim: "Some substitution into formula for |AC|\nSome substitution into formula for D\nIdentifies relevant translation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some substitution into formula for |AC|\nSome substitution into formula for D\nIdentifies relevant translation","|AC| = 15 found\nD found and |AD| fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[38],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q2-c-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q2-c-i.png",
@@ -2092,16 +2159,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q2-a", topicId: "maths-3-1", conceptId: "line-contains-point",
+    id: "maths-2021-hl-p2-q2-a", topicId: "maths-2-2", conceptId: "line-contains-point",
     section: "B", questionRef: "2021 HL Paper 2 Q2(a)",
-    questionText: "The line 3x−6y+ 2 = 0 contains the point (k, 2k+2 3), where k∈ℝ",
+    questionText: "The line 3x − 6y + 2 = 0 contains the point (k, (2k + 2)/3), where k ∈ ℝ. Find the value of k.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q2-a-r1", kind: "anyN", verbatim: "Some substitution into equation of line", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some substitution into equation of line","Equation of line fully substituted"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[37],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q2-a.png",
@@ -2122,16 +2202,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q2-b", topicId: "maths-2-2", conceptId: "point-line-point-also-distance-unit",
     section: "B", questionRef: "2021 HL Paper 2 Q2(b)",
-    questionText: "The point P(s, t) is on the line x−2y−8 = 0. The point P is also a distance of 1 unit from the line 4x + 3y + 6 = 0. Find a value of s and the corresponding value of t",
+    questionText: "The point P(s, t) is on the line x − 2y − 8 = 0. The point P is also a distance of 1 unit from the line 4x + 3y + 6 = 0. Find a value of s and the corresponding value of t.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q2-b-r1", kind: "anyN", verbatim: "Some substitution of (s, t) into equation of line\nSome substitution into distance of point to line formula\nFinds one co-ordinate of point of intersection of two given lines\nCorrect answer without work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Only one pair of s and t required. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some substitution of (s, t) into equation of line\nSome substitution into distance of point to line formula\nFinds one co-ordinate of point of intersection of two given lines\nCorrect answer without work","Full substitution of s and t into both (1) the equation of the line and (2) the equation of the distance of a point to a line formula\n4s + 3t = −1or4s + 3t = −11","(|8t + 32 + 3t + 6|)/5 = 1 , or similar\n(4s + 3t = −1or4s + 3t = −11) and s−2t = 8"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[37],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q2-b.png",
@@ -2152,21 +2245,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q2-c-ii", topicId: "maths-2-2", conceptId: "horizontal-line-segments-units-coordinates",
     section: "B", questionRef: "2021 HL Paper 2 Q2(c)(ii)",
-    questionText: "[AB]and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E",
+    stem: "The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| : |DC| is 2 : 1.",
+    questionText: "[AB] and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q2-c-ii-r1", kind: "anyN", verbatim: "One co-ordinate of B or E found\n|DE| = 11", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: finding slant distances alone is not given credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["One co-ordinate of B or E found\n|DE| = 11","B found and some work towards finding E\nE found"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[38],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q2-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q2-c-ii.png",
           "srcHash": "d39b21f49ab9450992b2c60a2d0f38cb",
-          "alt": "The question as printed on the paper — The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| ∶|DC| is 2 ∶1. C (16, 11) Find |AD|. A (4, 2) [AB]and [DE] are horizontal… Full card prompt: [AB]and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E",
+          "alt": "The question as printed on the paper — The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| ∶|DC| is 2 ∶1. C (16, 11) Find |AD|. A (4, 2) [AB]and [DE] are horizontal… Full card prompt: The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| : |DC| is 2 : 1. [AB] and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2182,16 +2289,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q3-a", topicId: "maths-2-2", conceptId: "circle-has-centre-chord-point-midpoint",
     section: "B", questionRef: "2021 HL Paper 2 Q3(a)",
-    questionText: "The circle k has centre C(1, −2) and chord [AB] where |AB| = 4√3. The point D(3, 2) is the midpoint of the chord [AB], as shown below. Find the radius of k. Give your answer in the form a√b, where a, b∈ℕ",
+    questionText: "The circle k has centre C(1, −2) and chord [AB] where |AB| = 4√3. The point D(3, 2) is the midpoint of the chord [AB], as shown below. Find the radius of k. Give your answer in the form a√b, where a, b ∈ ℕ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2021-hl-p2-q3-a-r1", kind: "anyN", verbatim: "|DB| (or |DA|) found\nPythagoras’ Theorem with some relevant substitution\nRight angle indicated at D; [AC] or [BC] drawn, and length r indicated", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["|DB| (or |DA|) found\nPythagoras’ Theorem with some relevant substitution\nRight angle indicated at D; [AC] or [BC] drawn, and length r indicated","|CD| found\n|DB| found and Pythagoras’ Theorem with some relevant substitution","|DB| and |CD| found"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[39],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q3-a.png",
@@ -2212,16 +2332,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q3-b-i", topicId: "maths-2-2", conceptId: "circles-touch-externally",
     section: "B", questionRef: "2021 HL Paper 2 Q3(b)(i)",
-    questionText: "Show that the circles c: x2+ y2+ 4x−2y−95 = 0 and s: (x−7)2+ (y−13)2= 25 touch externally",
+    questionText: "Show that the circles c: x² + y² + 4x − 2y − 95 = 0 and s: (x − 7)² + (y − 13)² = 25 touch externally.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q3-b-i-r1", kind: "anyN", verbatim: "Either centre or either radius found", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Both centres and both radii and distance between the centres found but no or incorrect conclusion. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Either centre or either radius found","Finds two from the following four: two centres and two radii","Both centres and both radii found"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[39],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q3-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q3-b-i.png",
@@ -2242,16 +2375,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q3-b-ii", topicId: "maths-2-2", conceptId: "there-infinite-number-circles-which-touch",
     section: "B", questionRef: "2021 HL Paper 2 Q3(b)(ii)",
-    questionText: "There are an infinite number of circles which touch circle c externally at the same point that s touches c. Find the coordinates of the centre of one of these circles, apart from circle s",
+    stem: "The circles are c: x² + y² + 4x − 2y − 95 = 0 and s: (x − 7)² + (y − 13)² = 25.",
+    questionText: "There are an infinite number of circles which touch circle c externally at the same point that s touches c. Find the coordinates of the centre of one of these circles, apart from circle s.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q3-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example: identifies that the point must be on the line containing the two centres; clearly recognises that x > 4 or y > 9; finds the point (4, 9), or either ordinate; finds slope of line containing two centres", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit –1: Answer as another point on the line joining the centres, but with x < 4 (i.e. touches internally). Note: no credit is awarded for just identifying either/both centres. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example: identifies that the point must be on the line containing the two centres; clearly recognises that x > 4 or y > 9; finds the point (4, 9), or either ordinate; finds slope of line containing two centres"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[40],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q3-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q3-b-ii.png",
@@ -2272,16 +2419,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q4-a-i", topicId: "maths-2-3", conceptId: "prove-cos-cos-sin",
     section: "B", questionRef: "2021 HL Paper 2 Q4(a)(i)",
-    questionText: "Prove that cos 2A = cos²A−sin²A",
+    questionText: "Prove that cos 2A = cos² A − sin² A.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q4-a-i-r1", kind: "anyN", verbatim: "cos(A + B) formula with some substitution\nTested with one or more values of A", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["cos(A + B) formula with some substitution\nTested with one or more values of A","cos (A + A) = cos A. cos A−sin A. sin A"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[41],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q4-a-i.png",
@@ -2302,16 +2462,38 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q4-a-ii", topicId: "maths-2-3", conceptId: "sin",
     section: "B", questionRef: "2021 HL Paper 2 Q4(a)(ii)",
-    questionText: "sin 𝜃 2= 1 √5 , where 0 ≤𝜃≤𝜋",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "sin(θ/2) = 1/√5, where 0 ≤ θ ≤ π. Use the formula cos 2A = cos² A − sin² A to find the value of cos θ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p2-q4-a-ii-r1", kind: "anyN", verbatim: "cos2A = cos²A−sin²A", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["cos2A = cos²A−sin²A","⇒ cos𝜃 = cos² ^𝜃/2 − sin² ^𝜃/2","using a right-angled triangle cos 𝜃/2 = 2/√5 2/√5","cos𝜃 = (/√5) 2 2 − (/√5) 1 2 = 3/5","2−sin^(2𝜃)","cos𝜃= cos^(2𝜃)","= (1 − sin² ^𝜃/2) − sin² ^𝜃/2","= 1 − 2sin² ^𝜃/2","= 1 − 2 (/√5) 1 2 = 3/5"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2021-hl-p2-q4-a-ii-solution-1", kind: "point", verbatim: "Model solution — cos2A = cos²A − sin²A", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q4-a-ii-solution-2", kind: "point", verbatim: "Model solution — = 1 − 2sin²(θ/2)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q4-a-ii-solution-3", kind: "point", verbatim: "Model solution — using a right-angled triangle cos θ/2 = 2/√5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q4-a-ii-solution-4", kind: "point", verbatim: "Low Partial Credit — cosθ = cos²(θ/2) − sin²(θ/2)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q4-a-ii-solution-5", kind: "point", verbatim: "Low Partial Credit — Valid work to find cos(θ/2) from sin(θ/2)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q4-a-ii-solution-6", kind: "point", verbatim: "Low Partial Credit — Some relevant substitution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q4-a-ii-solution-7", kind: "point", verbatim: "Mid Partial Credit — Finds cos θ/2 = 2/√5.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q4-a-ii-solution-8", kind: "point", verbatim: "Mid Partial Credit — Also accept cos θ/2 = cos (sin⁻¹ 1/√5) = 0·8944 …", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q4-a-ii-solution-9", kind: "point", verbatim: "Mid Partial Credit — cosθ = (1 − sin²(θ/2)) − sin²(θ/2)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q4-a-ii-solution-10", kind: "point", verbatim: "High Partial Credit — cos θ formula fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[41],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q4-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q4-a-ii.png",
@@ -2332,16 +2514,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q4-b", topicId: "maths-2-3", conceptId: "solve-equation-tan-150-360",
     section: "B", questionRef: "2021 HL Paper 2 Q4(b)",
-    questionText: "Solve the equation: tan(B + 150°) = −√3, for 0° ≤B ≤ 360°",
+    questionText: "Solve the equation: tan(B + 150°) = −√3, for 0° ≤ B ≤ 360°.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q4-b-r1", kind: "anyN", verbatim: "Reference angle = 60°\nCorrect range for B + 150°\nQuadrants 2 and 4 identified\ntan(A + B) formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Reference angle = 60°\nCorrect range for B + 150°\nQuadrants 2 and 4 identified\ntan(A + B) formula with some substitution","300° or 480°\nSolution to equation outside of required range (for e.g., B = −30° or −210°)\n(tan B + tan 150)/(1−tan B tan 150) = − √3","B = 150° or B = 330°\n300° and 480°"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[42],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q4-b.png",
@@ -2362,21 +2557,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q5-a-i", topicId: "maths-3-4", conceptId: "prove-volume-remaining-space-inside-sphere",
     section: "B", questionRef: "2021 HL Paper 2 Q5(a)(i)",
-    questionText: "Prove that the volume of the remaining space inside the sphere is exactly half the total volume of the sphere",
+    stem: "Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram.",
+    questionText: "Prove that the volume of the remaining space inside the sphere is exactly half the total volume of the sphere.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2021-hl-p2-q5-a-i-r1", kind: "anyN", verbatim: "2 volume formulas given (sphere and cone)\nVolume formula given with some relevant manipulation / substitution", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit -1: Incorrect or no conclusion, otherwise correct. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["2 volume formulas given (sphere and cone)\nVolume formula given with some relevant manipulation / substitution","Volume of space in terms of r and h","Volume of space in terms of 1 variable"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[43],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q5-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q5-a-i.png",
           "srcHash": "d97d3810253ead7da44d6c60035fd745",
-          "alt": "The question as printed on the paper — Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram. Prove that the volume of the remaining space inside the sphere is exactly half the total volume… Full card prompt: Prove that the volume of the remaining space inside the sphere is exactly half the total volume of the sphere",
+          "alt": "The question as printed on the paper — Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram. Prove that the volume of the remaining space inside the sphere is exactly half the total volume… Full card prompt: Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram. Prove that the volume of the remaining space inside the sphere is exactly half the total volume of the sphere.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2392,21 +2601,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q5-a-ii", topicId: "maths-3-4", conceptId: "combined-volume-two-cones-686-cm3",
     section: "B", questionRef: "2021 HL Paper 2 Q5(a)(ii)",
-    questionText: "The combined volume of the two cones is 686 3𝜋 cm3. Find the radius of one of the cones",
+    stem: "Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram.",
+    questionText: "The combined volume of the two cones is (686/3)π cm³. Find the radius of one of the cones.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q5-a-ii-r1", kind: "anyN", verbatim: "2. 1/3 𝜋r²h = 686/3 𝜋 or equivalent, for example, 1/3 𝜋r³ = 686/6 𝜋", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit –1: Answer correct but incorrect or no units. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["2. 1/3 𝜋r²h = 686/3 𝜋 or equivalent, for example, 1/3 𝜋r³ = 686/6 𝜋"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[43],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q5-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q5-a-ii.png",
           "srcHash": "418fd279e27e3ed56429853644bf9a06",
-          "alt": "The question as printed on the paper — Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram. Prove that the volume of the remaining space inside the sphere is exactly half the total volume… Full card prompt: The combined volume of the two cones is 686 3𝜋 cm3. Find the radius of one of the cones",
+          "alt": "The question as printed on the paper — Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram. Prove that the volume of the remaining space inside the sphere is exactly half the total volume… Full card prompt: Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram. The combined volume of the two cones is (686/3)π cm³. Find the radius of one of the cones.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2422,21 +2645,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q5-b", topicId: "maths-3-3", conceptId: "delivery-van-leaves-factory-travels-towards",
     section: "B", questionRef: "2021 HL Paper 2 Q5(b)",
-    questionText: "At 9.00 a.m. a delivery van leaves a factory. It travels towards its destination at an average speed of 60 km/h. One hour and 45 minutes later a second van leaves the factory on the same route. It travels at an average speed of 95 km/h. Both vans arrive at their destination at the same time. Find at what time they arrive",
+    questionText: "At 9.00 a.m. a delivery van leaves a factory. It travels towards its destination at an average speed of 60 km/h. One hour and 45 minutes later a second van leaves the factory on the same route. It travels at an average speed of 95 km/h. Both vans arrive at their destination at the same time. Find at what time they arrive.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example: 1·75 or 7/4 or 105 km; or (t−1·75) or (t + 1·75); or x/60 or x/95", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example: 1·75 or 7/4 or 105 km; or (t−1·75) or (t + 1·75); or x/60 or x/95","equation in t or in x, from which correct time / distance can be directly found\ncorrect table / diagram showing destination with all required distances / times indicated, but no conclusion\n1∙75 × 60/(95−60)"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[44],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q5-b.png",
           "srcHash": "9d5c272dde4c0e028826d738bfaa3856",
-          "alt": "The question as printed on the paper — At 9.00 a.m. a delivery van leaves a factory. It travels towards its destination at an average speed of 60 km/h. One hour and 45 minutes later a second van leaves the factory on the same route. It travels at an average… Full card prompt: At 9.00 a.m. a delivery van leaves a factory. It travels towards its destination at an average speed of 60 km/h. One hour and 45 minutes later a second van leaves the factory on the same route. It travels at an average speed of 95 km/h. Both vans arrive at their destination at the same time. Find at what time they arrive",
+          "alt": "The question as printed on the paper — At 9.00 a.m. a delivery van leaves a factory. It travels towards its destination at an average speed of 60 km/h. One hour and 45 minutes later a second van leaves the factory on the same route. It travels at an average… Full card prompt: At 9.00 a.m. a delivery van leaves a factory. It travels towards its destination at an average speed of 60 km/h. One hour and 45 minutes later a second van leaves the factory on the same route. It travels at an average speed of 95 km/h. Both vans arrive at their destination at the same time. Find at what time they arrive.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2452,16 +2688,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q6-a", topicId: "maths-2-1", conceptId: "prove-two-triangles-abc-similar-then",
     section: "B", questionRef: "2021 HL Paper 2 Q6(a)",
-    questionText: "Prove that if two triangles ∆ABC and ∆A′B′C′ are similar, then the lengths of their sides are proportional in order: |AB|/|A′B′| = |BC|/|B′C′| |CA| |C′A′|",
+    questionText: "Prove that if two triangles ΔABC and ΔA′B′C′ are similar, then the lengths of their sides are proportional in order: |AB|/|A′B′| = |BC|/|B′C′| = |CA|/|C′A′|. (Diagram, Given, To Prove, Construction, Proof.)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "maths-2021-hl-p2-q6-a-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant diagram(s) drawn, or effort at ‘Given’", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15. The full scale runs to 20. Note: Consider the proof as requiring five steps, equivalent to those outlined in the. Note: Accept steps without reasons for up to High Partial Credit, but not for Full Credit. Note: Accept without last line if To Prove is filled in correctly. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Work of merit, for example, relevant diagram(s) drawn, or effort at ‘Given’","Any 2 steps","4 steps presented"],"perOptionSteps":[5,5,10]} },
     ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[45],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q6-a.png",
@@ -2482,16 +2731,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q6-b", topicId: "maths-2-1", conceptId: "diagram-lines-parallel-prove-reason-each",
     section: "B", questionRef: "2021 HL Paper 2 Q6(b)",
-    questionText: "In the diagram below, the lines PA, HK, and BR are parallel. Prove that |AH| × |QB| = |AP| × |HB|. Give a reason for each geometrical statement you use",
+    questionText: "In the diagram below, the lines PA, HK, and BR are parallel. Prove that |AH| × |QB| = |AP| × |HB|. Give a reason for each geometrical statement you use.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q6-b-r1", kind: "anyN", verbatim: "1 relevant step listed or shown on diagram (no justification)\nMentions the relevant justifications", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Step 5 is not considered done unless steps 1 to 4 are all present. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["1 relevant step listed or shown on diagram (no justification)\nMentions the relevant justifications","3 relevant steps listed or shown on diagram (no justification)","All valid steps included but with no justification\n4 steps correct with at least one justification"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[46],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q6-b.png",
@@ -2512,21 +2774,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q7-a", topicId: "maths-2-3", conceptId: "total-length-course",
+    id: "maths-2021-hl-p2-q7-a", topicId: "maths-3-3", conceptId: "total-length-course",
     section: "B", questionRef: "2021 HL Paper 2 Q7(a)",
-    questionText: "(a) Show that the total length of the course is 62 km",
+    stem: "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A.",
+    questionText: "Show that the total length of the course is 62 km.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q7-a-r1", kind: "anyN", verbatim: "1∙2 or 72/60", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["1∙2 or 72/60","30 km coming from 25 × 1·2"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[47],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q7-a",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q7-a.png",
           "srcHash": "6c388ccbaaca97ac8db7e6a466ed48b4",
-          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: (a) Show that the total length of the course is 62 km",
+          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Show that the total length of the course is 62 km.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2542,21 +2818,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q7-b", topicId: "maths-3-3", conceptId: "average-mary-can-run-times-fast",
     section: "B", questionRef: "2021 HL Paper 2 Q7(b)",
-    questionText: "(b) On average, Mary can run 5·6 times as fast as she can swim. It takes her 4·8 hours to complete the course. Find her average swimming speed in km/h",
+    stem: "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km.",
+    questionText: "On average, Mary can run 5·6 times as fast as she can swim. It takes her 4·8 hours to complete the course. Find her average swimming speed in km/h.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2021-hl-p2-q7-b-r1", kind: "anyN", verbatim: "Work of merit, for example: 4·8 − 1·2 or 5·6x or 28/4 or Tswim/5∙6", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example: 4·8 − 1·2 or 5·6x or 28/4 or Tswim/5∙6","4/x or 28/5·6x or 5/x\n28/4 × Tswim/5∙6","An equation in one variable that can be solved to give a relevant time or speed"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[47],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q7-b.png",
           "srcHash": "5f3ab4f7e60dd19bbf8150cecce300e0",
-          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: (b) On average, Mary can run 5·6 times as fast as she can swim. It takes her 4·8 hours to complete the course. Find her average swimming speed in km/h",
+          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. On average, Mary can run 5·6 times as fast as she can swim. It takes her 4·8 hours to complete the course. Find her average swimming speed in km/h.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2572,21 +2862,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q7-c", topicId: "maths-2-3", conceptId: "acb-116-correct-decimal-place",
     section: "B", questionRef: "2021 HL Paper 2 Q7(c)",
-    questionText: "Show that |∠ ACB| = 116·5°, correct to 1 decimal place",
+    stem: "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km.",
+    questionText: "Show that |∠ACB| = 116·5°, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q7-c-r1", kind: "anyN", verbatim: "cosine rule formulated with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["cosine rule formulated with some substitution","cosine rule formulated with full substitution","cosC = (28² + 4²−30²)/2(28)(4) or equivalent\n28² + 4²−2(28)(4) cos 116·5° fully evaluated"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[47],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q7-c.png",
           "srcHash": "6371a1a029eef66c08a1fca969e79b57",
-          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: Show that |∠ ACB| = 116·5°, correct to 1 decimal place",
+          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. Show that |∠ACB| = 116·5°, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2602,21 +2906,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q7-d", topicId: "maths-3-4", conceptId: "comply-safety-regulations-region-inside-triangular",
+    id: "maths-2021-hl-p2-q7-d", topicId: "maths-2-3", conceptId: "comply-safety-regulations-region-inside-triangular",
     section: "B", questionRef: "2021 HL Paper 2 Q7(d)",
-    questionText: "To comply with safety regulations, the region inside the triangular course must be kept clear of people. Find the area of this region. Give your answer, in km², correct to 1 decimal place",
+    stem: "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. |∠ACB| = 116·5°.",
+    questionText: "To comply with safety regulations, the region inside the triangular course must be kept clear of people. Find the area of this region. Give your answer, in km², correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q7-d-r1", kind: "anyN", verbatim: "Area formula with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Area formula with some substitution","Area formula with full substitution"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[48],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q7-d",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q7-d.png",
           "srcHash": "ae0015bff5fc14da0e863b8728b42d53",
-          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: To comply with safety regulations, the region inside the triangular course must be kept clear of people. Find the area of this region. Give your answer, in km², correct to 1 decimal place",
+          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. |∠ACB| = 116·5°. To comply with safety regulations, the region inside the triangular course must be kept clear of people. Find the area of this region. Give your answer, in km², correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2632,21 +2950,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q7-e", topicId: "maths-2-3", conceptId: "shortest-distance-point-side-correct-decimal",
     section: "B", questionRef: "2021 HL Paper 2 Q7(e)",
-    questionText: "(e) Find the shortest distance from the point C to the side AB. Give your answer in km, correct to 1 decimal place",
+    stem: "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. |∠ACB| = 116·5°.",
+    questionText: "Find the shortest distance from the point C to the side AB. Give your answer in km, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q7-e-r1", kind: "anyN", verbatim: "Indicates shortest distance with right angle (no credit awarded for this in (d))\nEquation with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: divides 116·5° by 2 and continues: award Low Partial Credit at most. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Indicates shortest distance with right angle (no credit awarded for this in (d))\nEquation with some substitution","Equation with full substitution"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[48],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q7-e",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q7-e.png",
           "srcHash": "593ba5c587a2e6a035c3823e113d40c9",
-          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: (e) Find the shortest distance from the point C to the side AB. Give your answer in km, correct to 1 decimal place",
+          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. |∠ACB| = 116·5°. Find the shortest distance from the point C to the side AB. Give your answer in km, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2662,21 +2994,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q7-f", topicId: "maths-2-3", conceptId: "course-viewed-camera-tower-which-rises",
     section: "B", questionRef: "2021 HL Paper 2 Q7(f)",
-    questionText: "The course is viewed from a camera tower which rises vertically from point A. The top of the tower is point T. The angle of elevation of T from B is 0·05^o. Find |AT |, the vertical height of the tower. Give your answer correct to the nearest metre",
+    stem: "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km.",
+    questionText: "The course is viewed from a camera tower which rises vertically from point A. The top of the tower is point T. The angle of elevation of T from B is 0·05°. Find |AT|, the vertical height of the tower. Give your answer correct to the nearest metre.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q7-f-r1", kind: "anyN", verbatim: "Relevant work on the diagram, for example, joins T to B and indicates angle of 0 ∙05°\nTan formula with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Relevant work on the diagram, for example, joins T to B and indicates angle of 0 ∙05°\nTan formula with some substitution","Tan formula with full substitution"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[48],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q7-f",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q7-f.png",
           "srcHash": "af7143df9e8249259a9c9e82baaccbf0",
-          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: The course is viewed from a camera tower which rises vertically from point A. The top of the tower is point T. The angle of elevation of T from B is 0·05^o. Find |AT |, the vertical height of the tower. Give your answer correct to the nearest metre",
+          "alt": "The question as printed on the paper — The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can… Full card prompt: The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. The course is viewed from a camera tower which rises vertically from point A. The top of the tower is point T. The angle of elevation of T from B is 0·05°. Find |AT|, the vertical height of the tower. Give your answer correct to the nearest metre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2692,21 +3038,45 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q8-a-i", topicId: "maths-5-2", conceptId: "minimum-mark-needed-exam-progress-county",
+    id: "maths-2021-hl-p2-q8-a-i", topicId: "maths-1-7", conceptId: "minimum-mark-needed-exam-progress-county",
     section: "B", questionRef: "2021 HL Paper 2 Q8(a)(i)",
-    questionText: "Find the minimum mark needed on the exam to progress to the county stage",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a county maths competition.",
+    questionText: "Find the minimum mark needed on the exam to progress to the county stage.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p2-q8-a-i-r1", kind: "anyN", verbatim: "Mean or standard deviation indicated\nz-formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Accept use of P(z < 1·29), to give x = 222·44. Note: Accept answer rounded to 222 instead of 223. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Mean or standard deviation indicated\nz-formula with some substitution","z-score found (1∙28 or 1·29)\nz-formula fully substituted (^x^−¹⁷⁶ )/36","(x−176)/36 = 1·28"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-1", kind: "point", verbatim: "Model solution — Top 10% means 90% below.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-2", kind: "point", verbatim: "Model solution — P(z < 1·28) = 0·8997.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-3", kind: "point", verbatim: "Model solution — ⇒x = 222∙08", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-4", kind: "point", verbatim: "Model solution — Minimum mark of 223", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-5", kind: "point", verbatim: "Note — Accept use of P(z < 1·29), to give x = 222·44", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-6", kind: "point", verbatim: "Note — Accept answer rounded to 222 instead of 223", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-7", kind: "point", verbatim: "Low Partial Credit — Mean or standard deviation indicated", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-8", kind: "point", verbatim: "Low Partial Credit — z-formula with some substitution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-9", kind: "point", verbatim: "Mid Partial Credit — z-score found (1∙28 or 1·29)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-10", kind: "point", verbatim: "Mid Partial Credit — z-formula fully substituted ((x − 176)/36)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-a-i-solution-11", kind: "point", verbatim: "High Partial Credit — (x − 176)/36 = 1·28", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[49],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q8-a-i.png",
           "srcHash": "d048a9d1e36570dae4bd27ac5aa5aa61",
-          "alt": "The question as printed on the paper — In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a… Full card prompt: Find the minimum mark needed on the exam to progress to the county stage",
+          "alt": "The question as printed on the paper — In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a… Full card prompt: In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a county maths competition. Find the minimum mark needed on the exam to progress to the county stage.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2722,21 +3092,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q8-a-ii", topicId: "maths-3-3", conceptId: "school-awarded-certificate-merit-any-student",
+    id: "maths-2021-hl-p2-q8-a-ii", topicId: "maths-1-7", conceptId: "school-awarded-certificate-merit-any-student",
     section: "B", questionRef: "2021 HL Paper 2 Q8(a)(ii)",
-    questionText: "The school awarded a Certificate of Merit to any student who achieved between 165 marks and 210 marks. Find the percentage of First Years who received the Certificate of Merit",
+    stem: "In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a county maths competition.",
+    questionText: "The school awarded a Certificate of Merit to any student who achieved between 165 marks and 210 marks. Find the percentage of First Years who received the Certificate of Merit.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q8-a-ii-r1", kind: "anyN", verbatim: "Mean or standard deviation indicated\nz formula with some substitution\n−0·305 … or 0·94 …", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Uses P(z > −0·35) and finishes correctly. Note: Also accept use of −0·30 instead of −0·31, and/or use of 0·95 instead of 0·94. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Mean or standard deviation indicated\nz formula with some substitution\n−0·305 … or 0·94 …","One relevant probability found directly from tables (0·6217 or 0∙8264)","0∙3783 found\n0∙8264 and 0·6217 found"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[49],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q8-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q8-a-ii.png",
           "srcHash": "50251ef8d2ffa14e4e733244ba471c7c",
-          "alt": "The question as printed on the paper — In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a… Full card prompt: The school awarded a Certificate of Merit to any student who achieved between 165 marks and 210 marks. Find the percentage of First Years who received the Certificate of Merit",
+          "alt": "The question as printed on the paper — In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a… Full card prompt: In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a county maths competition. The school awarded a Certificate of Merit to any student who achieved between 165 marks and 210 marks. Find the percentage of First Years who received the Certificate of Merit.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2752,16 +3136,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q8-b-i", topicId: "maths-1-6", conceptId: "test-statistic-score-sample-mean",
+    id: "maths-2021-hl-p2-q8-b-i", topicId: "maths-1-7", conceptId: "test-statistic-score-sample-mean",
     section: "B", questionRef: "2021 HL Paper 2 Q8(b)(i)",
-    questionText: "Find the test statistic (the z-score) of this sample mean",
+    stem: "A news report claimed that 6th year students in Ireland studied an average of 21 hours per week, outside of class time. A Leaving Cert class surveyed 60 students in 6th year, chosen at random, from different schools. It found that the average study time was 19·8 hours and the standard deviation was 5·2 hours.",
+    questionText: "Find the test statistic (the z-score) of this sample mean.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q8-b-i-r1", kind: "anyN", verbatim: "Mean or standard deviation indicated\nRelevant formula with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept 1∙787 …. Note: s/√n s/√n must be used in order to be awarded above Low Partial Credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Mean or standard deviation indicated\nRelevant formula with some substitution","Formula fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[50],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q8-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q8-b-i.png",
@@ -2782,16 +3180,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q8-b-ii", topicId: "maths-1-7", conceptId: "value-test-statistic-comment-what-can",
     section: "B", questionRef: "2021 HL Paper 2 Q8(b)(ii)",
-    questionText: "Find the p-value of this test statistic. Comment on what can be concluded from its value, in a two-tailed hypothesis test at the 5% level of significance, in relation to the news report claim",
+    stem: "A news report claimed that 6th year students in Ireland studied an average of 21 hours per week, outside of class time. A Leaving Cert class surveyed 60 students in 6th year, chosen at random, from different schools. It found that the average study time was 19·8 hours and the standard deviation was 5·2 hours.",
+    questionText: "Find the p-value of this test statistic. Comment on what can be concluded from its value, in a two-tailed hypothesis test at the 5% level of significance, in relation to the news report claim.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q8-b-ii-r1", kind: "anyN", verbatim: "P(z < 1·79)\n0·9633", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Accept P(z < 1∙78), so p-value of 2(1 −0∙9625) = 0·075. Note: Accept conclusion based on z- score rather than p-value. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["P(z < 1·79)\n0·9633","2[1 −P(z < 1·79)]\nWork of merit in finding p-value and correct conclusion based on this","p-value found but no or incorrect conclusion"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[50],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q8-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q8-b-ii.png",
@@ -2812,21 +3224,43 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q8-c-i", topicId: "maths-1-2", conceptId: "four-keys-drawn-random-box-what",
     section: "B", questionRef: "2021 HL Paper 2 Q8(c)(i)",
-    questionText: "Four keys are drawn at random from the box. What is the probability that the 4th key drawn is the first office key drawn? Give your answer correct to 4 decimal places",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices.",
+    questionText: "Four keys are drawn at random from the box. What is the probability that the 4th key drawn is the first office key drawn? Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p2-q8-c-i-r1", kind: "anyN", verbatim: "One relevant fraction", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: multiplication between relevant terms is necessary to be awarded above. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["One relevant fraction","Product of four fractions, two of them correct","18/23 × 17/22 × 16/21 × 5/20\n(/23) 18 3 × 5/23"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-hl-p2-q8-c-i-solution-1", kind: "point", verbatim: "Model solution — Assuming no replacement:", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-c-i-solution-2", kind: "point", verbatim: "Model solution — 18/23 × 17/22 × 16/21 × 5/20", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-c-i-solution-3", kind: "point", verbatim: "Model solution — = 0·11518 … = 0·1152 [4 D.P.]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-c-i-solution-4", kind: "point", verbatim: "Model solution — Assuming replacement:", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-c-i-solution-5", kind: "point", verbatim: "Model solution — = 0∙10420 … = 0∙1042 [4 D.P.]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-c-i-solution-6", kind: "point", verbatim: "Note — multiplication between relevant terms is necessary to be awarded above Low Partial Credit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-c-i-solution-7", kind: "point", verbatim: "Low Partial Credit — One relevant fraction", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-c-i-solution-8", kind: "point", verbatim: "Mid Partial Credit — Product of four fractions, two of them correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q8-c-i-solution-9", kind: "point", verbatim: "High Partial Credit — 18/23 × 17/22 × 16/21 × 5/20", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[51],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q8-c-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q8-c-i.png",
           "srcHash": "0aefe90f89004fb9e4a08abc386b1188",
-          "alt": "The question as printed on the paper — The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices. Four keys are drawn at random from the box. What is the probability that the 4th… Full card prompt: Four keys are drawn at random from the box. What is the probability that the 4th key drawn is the first office key drawn? Give your answer correct to 4 decimal places",
+          "alt": "The question as printed on the paper — The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices. Four keys are drawn at random from the box. What is the probability that the 4th… Full card prompt: The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices. Four keys are drawn at random from the box. What is the probability that the 4th key drawn is the first office key drawn? Give your answer correct to 4 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2842,21 +3276,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q8-c-ii", topicId: "maths-1-2", conceptId: "all-keys-returned-box-then-keys",
     section: "B", questionRef: "2021 HL Paper 2 Q8(c)(ii)",
-    questionText: "All the keys are returned to the box. Then 3 keys are drawn at random from the box one after the other, without replacement. What is the probability that one of them is for a general classroom, one is for a science lab and one is for an office? Give your answer correct to 4 decimal places",
+    stem: "The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices.",
+    questionText: "All the keys are returned to the box. Then 3 keys are drawn at random from the box one after the other, without replacement. What is the probability that one of them is for a general classroom, one is for a science lab and one is for an office? Give your answer correct to 4 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q8-c-ii-r1", kind: "anyN", verbatim: "One relevant fraction, for example, 12/23 or 6/22 or 5/23\nCounts / lists different possible arrangements, for example, 3! or 6", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["One relevant fraction, for example, 12/23 or 6/22 or 5/23\nCounts / lists different possible arrangements, for example, 3! or 6","12/23 × 6/22 × 5/21 or any other relevant triple\nAssumes keys are replaced and finishes"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[51],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q8-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q8-c-ii.png",
           "srcHash": "b2790cca1a69f48ca01b4576b26c3646",
-          "alt": "The question as printed on the paper — The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices. Four keys are drawn at random from the box. What is the probability that the 4th… Full card prompt: All the keys are returned to the box. Then 3 keys are drawn at random from the box one after the other, without replacement. What is the probability that one of them is for a general classroom, one is for a science lab and one is for an office? Give your answer correct to 4 decimal places",
+          "alt": "The question as printed on the paper — The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices. Four keys are drawn at random from the box. What is the probability that the 4th… Full card prompt: The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices. All the keys are returned to the box. Then 3 keys are drawn at random from the box one after the other, without replacement. What is the probability that one of them is for a general classroom, one is for a science lab and one is for an office? Give your answer correct to 4 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -2872,16 +3320,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-a-i", topicId: "maths-2-3", conceptId: "how-long-took-fly-correct-nearest",
     section: "B", questionRef: "2021 HL Paper 2 Q9(a)(i)",
-    questionText: "Find how long it took to fly from B to C. Give your answer correct to the nearest minute",
+    stem: "An aeroplane flies east from point A for 2 hours at a constant speed of 420 km per hour until it reaches point B. It then changes direction by heading 20° towards the south at the same speed until it reaches point C, as shown in the diagram below. The direct distance from A to C is 1450 km and |∠BAC| = 8·57°.",
+    questionText: "Find how long it took to fly from B to C. Give your answer correct to the nearest minute.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q9-a-i-r1", kind: "anyN", verbatim: "sine rule or cosine rule stated with some substitution\nfinds |AB| or |∠ABC|", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["sine rule or cosine rule stated with some substitution\nfinds |AB| or |∠ABC|","sine rule or cosine rule with full substitution","|BC| (that is, x) found"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[52],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q9-a-i.png",
@@ -2902,16 +3364,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-a-ii", topicId: "maths-3-3", conceptId: "average-fuel-consumption-plane-litres-per",
     section: "B", questionRef: "2021 HL Paper 2 Q9(a)(ii)",
-    questionText: "The average fuel consumption of the plane is 3·8 litres per second and the fuel capacity of the plane is 100 000 litres. Show that the plane will be able to complete the journey from A to B to C and directly back to A at a speed of 420 km/h without refuelling",
+    stem: "An aeroplane flies east from point A for 2 hours at a constant speed of 420 km per hour until it reaches point B. It then changes direction by heading 20° towards the south at the same speed until it reaches point C, as shown in the diagram below. The direct distance from A to C is 1450 km and |∠BAC| = 8·57°.",
+    questionText: "The average fuel consumption of the plane is 3·8 litres per second and the fuel capacity of the plane is 100 000 litres. Show that the plane will be able to complete the journey from A to B to C and directly back to A at a speed of 420 km/h without refuelling.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q9-a-ii-r1", kind: "anyN", verbatim: "One relevant calculation, for example, 1450/420 or 2 + 1·5 or (100 000)/3·8", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Consider solution as requiring four steps, equivalent to: 1. Finds time in hours to travel [AC] 2. Finds total time in hours (3 sides) 3. Converts total time to seconds 4. Converts time (sec) to litres required. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["One relevant calculation, for example, 1450/420 or 2 + 1·5 or (100 000)/3·8","Two steps","Three steps"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[52],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q9-a-ii.png",
@@ -2932,16 +3408,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-b-i", topicId: "maths-2-3", conceptId: "period-range-function",
     section: "B", questionRef: "2021 HL Paper 2 Q9(b)(i)",
-    questionText: "Find the period and range of the function V(t)",
+    stem: "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds.",
+    questionText: "Find the period and range of the function V(t).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q9-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some indication of the period of a sine function; some mention of 110√2", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Apply a * for period and range swapped. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some indication of the period of a sine function; some mention of 110√2","Period or range correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[53],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q9-b-i.png",
@@ -2962,16 +3452,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-b-ii", topicId: "maths-2-3", conceptId: "sketch-function-period-indicate-period-range",
     section: "B", questionRef: "2021 HL Paper 2 Q9(b)(ii)",
-    questionText: "(ii) Sketch the function for 0 ≤ t ≤ p, where p is the period of V(t). Indicate the period and range of the function on your graph",
+    stem: "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds.",
+    questionText: "Sketch the function for 0 ≤ t ≤ p, where p is the period of V(t). Indicate the period and range of the function on your graph.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Period or range from (b)(i) indicated on axes, but no or incorrect graph\nGraph a recognisable portion of a sine curve, or similar", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Consider solution as requiring 3 aspects: 1. sine curve of at least one period, including (0, 0) 2. range indicated 3. period indicated. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Period or range from (b)(i) indicated on axes, but no or incorrect graph\nGraph a recognisable portion of a sine curve, or similar","Two of the aspects above present on the graph"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[53],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q9-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q9-b-ii.png",
@@ -2992,16 +3496,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-b-iii", topicId: "maths-2-3", conceptId: "iii-voltage-when-seconds-correct-two",
     section: "B", questionRef: "2021 HL Paper 2 Q9(b)(iii)",
-    questionText: "(iii) Use V(t) to find the voltage when t = 6∙67 seconds. Give your answer correct to two decimal places",
+    stem: "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds.",
+    questionText: "Use V(t) to find the voltage when t = 6·67 seconds. Give your answer correct to two decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q9-b-iii-r1", kind: "anyN", verbatim: "Formula with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Calculator in incorrect mode. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Formula with some substitution","Formula with full substitution"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[53],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q9-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q9-b-iii.png",
@@ -3022,16 +3540,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q9-b-iv", topicId: "maths-3-1", conceptId: "one-value-voltage-110-volts-form",
+    id: "maths-2021-hl-p2-q9-b-iv", topicId: "maths-2-3", conceptId: "one-value-voltage-110-volts-form",
     section: "B", questionRef: "2021 HL Paper 2 Q9(b)(iv)",
-    questionText: "(iv) Find one value for t where the voltage is 110 Volts. Give your answer in the form a/b where a, b ∈ℕ",
+    stem: "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds.",
+    questionText: "Find one value for t where the voltage is 110 Volts. Give your answer in the form a/b where a, b ∈ ℕ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q9-b-iv-r1", kind: "anyN", verbatim: "Equation with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Calculator in incorrect mode. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Equation with some substitution","Equation with full substitution"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[54],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q9-b-iv",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q9-b-iv.png",
@@ -3052,16 +3584,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-b-v", topicId: "maths-5-2", conceptId: "rate-change-voltage-when-seconds-correct",
     section: "B", questionRef: "2021 HL Paper 2 Q9(b)(v)",
-    questionText: "Find the rate of change of the voltage when t = 2 seconds. Give your answer correct to the nearest unit",
+    stem: "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds.",
+    questionText: "Find the rate of change of the voltage when t = 2 seconds. Give your answer correct to the nearest unit.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p2-q9-b-v-r1", kind: "anyN", verbatim: "any correct differentiation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Calculator in incorrect mode; Correct answer with no or incorrect units. Note: V′(t) must be correct in order to be awarded more than Low Partial Credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["any correct differentiation","Expression for V′(t)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[54],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q9-b-v",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q9-b-v.png",
@@ -3082,21 +3628,38 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q10-a-i", topicId: "maths-1-2", conceptId: "blood-donation-clinic-ten-donors-blood",
     section: "B", questionRef: "2021 HL Paper 2 Q10(a)(i)",
-    questionText: "At a blood donation clinic, ten donors give blood, one after the other. Find the probability that the tenth person is the third O-negative donor. Give your answer correct to four decimal places",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service).",
+    questionText: "At a blood donation clinic, ten donors give blood, one after the other. Find the probability that the tenth person is the third O-negative donor. Give your answer correct to four decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p2-q10-a-i-r1", kind: "anyN", verbatim: "P(2 from the 1st 9 are O⁻) × P(10th is O⁻)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["P(2 from the 1st 9 are O⁻) × P(10th is O⁻)","= (⁹ 2) (/100) 8 2 (/100) 92 7 × 8/100","= 0∙01028 … = 0∙0103 [4 D.P.]"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-hl-p2-q10-a-i-solution-1", kind: "point", verbatim: "Model solution — P(2 from the 1st 9 are O-) × P(10th is O-)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q10-a-i-solution-2", kind: "point", verbatim: "Model solution — = 0∙01028 … = 0∙0103 [4 D.P.]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q10-a-i-solution-3", kind: "point", verbatim: "Low Partial Credit — 8/100 or 92/100 or (9 2)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q10-a-i-solution-4", kind: "point", verbatim: "Low Partial Credit — First line of solution indicated (accept with “and” instead of ×)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[55],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q10-a-i.png",
           "srcHash": "12ea10174e32d5df011ee83ccab3ae0b",
-          "alt": "The question as printed on the paper — People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion… Full card prompt: At a blood donation clinic, ten donors give blood, one after the other. Find the probability that the tenth person is the third O-negative donor. Give your answer correct to four decimal places",
+          "alt": "The question as printed on the paper — People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion… Full card prompt: People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service). At a blood donation clinic, ten donors give blood, one after the other. Find the probability that the tenth person is the third O-negative donor. Give your answer correct to four decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -3112,21 +3675,39 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q10-a-ii", topicId: "maths-1-2", conceptId: "blood-donation-clinic-five-donors-blood",
     section: "B", questionRef: "2021 HL Paper 2 Q10(a)(ii)",
-    questionText: "At a blood donation clinic, five donors give blood. What is the probability that at least one of the five donates O-negative blood? Give your answer correct to four decimal places",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service).",
+    questionText: "At a blood donation clinic, five donors give blood. What is the probability that at least one of the five donates O-negative blood? Give your answer correct to four decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p2-q10-a-ii-r1", kind: "anyN", verbatim: "a\n(/100) 92 where 0 < a < 5\nFirst line of either solution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["a\n(/100) 92 where 0 < a < 5\nFirst line of either solution","(/100) 92\nThree terms in second solution"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-hl-p2-q10-a-ii-solution-1", kind: "point", verbatim: "Model solution — 1 − P(none are O-)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q10-a-ii-solution-2", kind: "point", verbatim: "Model solution — = 0·34091 … = 0·3409 [4 D.P.]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q10-a-ii-solution-3", kind: "point", verbatim: "Model solution — P(1 or 2 or 3 or 4 or 5 are O-)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q10-a-ii-solution-4", kind: "point", verbatim: "Low Partial Credit — First line of either solution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p2-q10-a-ii-solution-5", kind: "point", verbatim: "High Partial Credit — Three terms in second solution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[55],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q10-a-ii.png",
           "srcHash": "7693961bf188386b57efcc0ab640f8d8",
-          "alt": "The question as printed on the paper — People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion… Full card prompt: At a blood donation clinic, five donors give blood. What is the probability that at least one of the five donates O-negative blood? Give your answer correct to four decimal places",
+          "alt": "The question as printed on the paper — People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion… Full card prompt: People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service). At a blood donation clinic, five donors give blood. What is the probability that at least one of the five donates O-negative blood? Give your answer correct to four decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -3142,21 +3723,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q10-a-iii", topicId: "maths-5-2", conceptId: "iii-minimum-number-blood-donors-required",
+    id: "maths-2021-hl-p2-q10-a-iii", topicId: "maths-3-2", conceptId: "iii-minimum-number-blood-donors-required",
     section: "B", questionRef: "2021 HL Paper 2 Q10(a)(iii)",
-    questionText: "(iii) Find the minimum number of blood donors required, so that the probability that at least one of them is type O-negative is greater than 0∙97",
+    stem: "People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service).",
+    questionText: "Find the minimum number of blood donors required, so that the probability that at least one of them is type O-negative is greater than 0·97.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q10-a-iii-r1", kind: "anyN", verbatim: "0·92^k\n0·03", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["0·92^k\n0·03","1 −0·92^k > 0·97 or = 0·97\nk(ln (0·92))","Equation in k without indices (logs handled correctly)"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[55],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q10-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q10-a-iii.png",
           "srcHash": "d2a86af70cf532c118807d2f52821417",
-          "alt": "The question as printed on the paper — People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion… Full card prompt: (iii) Find the minimum number of blood donors required, so that the probability that at least one of them is type O-negative is greater than 0∙97",
+          "alt": "The question as printed on the paper — People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion… Full card prompt: People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service). Find the minimum number of blood donors required, so that the probability that at least one of them is type O-negative is greater than 0·97.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -3172,21 +3767,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q10-b", topicId: "maths-1-2", conceptId: "homeowner-has-problem-heating-system-her",
+    id: "maths-2021-hl-p2-q10-b", topicId: "maths-1-3", conceptId: "homeowner-has-problem-heating-system-her",
     section: "B", questionRef: "2021 HL Paper 2 Q10(b)",
-    questionText: "A homeowner has a problem with the heating system in her house. A plumber has identified the problem as a faulty part. The homeowner knows that in 80% of cases a repair of the part will fix the problem and this repair will cost €70. If the repair does not work then a new part will have to be bought costing €150 and there will be an additional labour cost of €80 to replace the old part with the new. Find the expected value of the cost of fixing this faulty system",
+    questionText: "A homeowner has a problem with the heating system in her house. A plumber has identified the problem as a faulty part. The homeowner knows that in 80% of cases a repair of the part will fix the problem and this repair will cost €70. If the repair does not work then a new part will have to be bought costing €150 and there will be an additional labour cost of €80 to replace the old part with the new. Find the expected value of the cost of fixing this faulty system.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q10-b-r1", kind: "anyN", verbatim: "A correct calculation, for example, 0·8(70) or 300 or 230", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["A correct calculation, for example, 0·8(70) or 300 or 230","0·8(70) and 0·2(300) or 0·8(70) and 0·2(230)"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[56],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q10-b.png",
           "srcHash": "88339b8fd155f5cdf37b935f4174b9aa",
-          "alt": "The question as printed on the paper — A homeowner has a problem with the heating system in her house. A plumber has identified the problem as a faulty part. The homeowner knows that in 80% of cases a repair of the part will fix the problem and this repair… Full card prompt: A homeowner has a problem with the heating system in her house. A plumber has identified the problem as a faulty part. The homeowner knows that in 80% of cases a repair of the part will fix the problem and this repair will cost €70. If the repair does not work then a new part will have to be bought costing €150 and there will be an additional labour cost of €80 to replace the old part with the new. Find the expected value of the cost of fixing this faulty system",
+          "alt": "The question as printed on the paper — A homeowner has a problem with the heating system in her house. A plumber has identified the problem as a faulty part. The homeowner knows that in 80% of cases a repair of the part will fix the problem and this repair… Full card prompt: A homeowner has a problem with the heating system in her house. A plumber has identified the problem as a faulty part. The homeowner knows that in 80% of cases a repair of the part will fix the problem and this repair will cost €70. If the repair does not work then a new part will have to be bought costing €150 and there will be an additional labour cost of €80 to replace the old part with the new. Find the expected value of the cost of fixing this faulty system.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -3202,21 +3810,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q10-c", topicId: "maths-1-2", conceptId: "life-insurance-policy-pays-out-120",
+    id: "maths-2021-hl-p2-q10-c", topicId: "maths-1-3", conceptId: "life-insurance-policy-pays-out-120",
     section: "B", questionRef: "2021 HL Paper 2 Q10(c)",
-    questionText: "A life insurance policy pays out €120 000 if the policy holder dies and €40 000 if the policy holder becomes disabled. The insurance company has calculated that in general, in any given year, the probability of death is 0∙0001 and the probability of disability is 0∙002. The company has 18 000 policy holders on its books at present who are all charged the same premium. The company’s goal is to make €900 000 profit in a particular year. Find the annual premium it should charge its customers which in an average year would generate this level of profit",
+    questionText: "A life insurance policy pays out €120 000 if the policy holder dies and €40 000 if the policy holder becomes disabled. The insurance company has calculated that in general, in any given year, the probability of death is 0·0001 and the probability of disability is 0·002. The company has 18 000 policy holders on its books at present who are all charged the same premium. The company’s goal is to make €900 000 profit in a particular year. Find the annual premium it should charge its customers which in an average year would generate this level of profit.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p2-q10-c-r1", kind: "anyN", verbatim: "One relevant calculation, for example, 120 000(0·0001) or (900 000)/(18 000)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["One relevant calculation, for example, 120 000(0·0001) or (900 000)/(18 000)","Finds €92 (average payout per person)","Finds €2 556 000 (total revenue)\nFinds €92 and €50"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[56],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p2-q10-c",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p2-q10-c.png",
           "srcHash": "208c1316e98e28c3aca919256ff92b6a",
-          "alt": "The question as printed on the paper — People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion… Full card prompt: A life insurance policy pays out €120 000 if the policy holder dies and €40 000 if the policy holder becomes disabled. The insurance company has calculated that in general, in any given year, the probability of death is 0∙0001 and the probability of disability is 0∙002. The company has 18 000 policy holders on its books at present who are all charged the same premium. The company’s goal is to make €900 000 profit in a particular year. Find the annual premium it should charge its customers which in an average year would generate this level of profit",
+          "alt": "The question as printed on the paper — People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion… Full card prompt: A life insurance policy pays out €120 000 if the policy holder dies and €40 000 if the policy holder becomes disabled. The insurance company has calculated that in general, in any given year, the probability of death is 0·0001 and the probability of disability is 0·002. The company has 18 000 policy holders on its books at present who are all charged the same premium. The company’s goal is to make €900 000 profit in a particular year. Find the annual premium it should charge its customers which in an average year would generate this level of profit.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },

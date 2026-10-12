@@ -37,6 +37,7 @@ import higher2022p2 from '../scripts/markbank/mathematics/reviews/2022-higher-p2
 import ordinary2022p1 from '../scripts/markbank/mathematics/reviews/2022-ordinary-p1.json';
 import ordinary2022p2 from '../scripts/markbank/mathematics/reviews/2022-ordinary-p2.json';
 import higher2021p1 from '../scripts/markbank/mathematics/reviews/2021-higher-p1.json';
+import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
@@ -860,6 +861,7 @@ describe.each([
   { year: 2022, level: 'ordinary' as const, number: 1, count: 47, review: ordinary2022p1 },
   { year: 2022, level: 'ordinary' as const, number: 2, count: 50, review: ordinary2022p2 },
   { year: 2021, level: 'higher' as const, number: 1, count: 44, review: higher2021p1 },
+  { year: 2021, level: 'higher' as const, number: 2, count: 42, review: higher2021p2 },
 ])('$year $level Mathematics Paper $number independent source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
   const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
