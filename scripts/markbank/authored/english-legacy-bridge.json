@@ -1363,6 +1363,179 @@
         }
       }
     },
+    "english-2023-hl-p2": {
+      "paperSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "legacyRuntime": "Served before the bridge by 23 authored.json cards; Comparative A/B/C Q1 and Unseen Q1 bundled separately marked parts, and the Comparative bundles were scored as discrete PCLM (corrected).",
+      "legacyCards": {
+        "english-2023-hl-p2-single-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Single Text A(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-single-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Single Text A(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-single-b-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Single Text B(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-single-b-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Single Text B(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-single-c-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Single Text C(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-single-c-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Single Text C(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-single-d-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Single Text D(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-single-d-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Single Text D(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-single-e-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Single Text E(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-single-e-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Single Text E(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-comparative-a-q1": {
+          "kind": "alias",
+          "to": "english-2023-hl-p2-comparative-a-q1-a",
+          "legacyQuestionRef": "2023 HL Paper 2 Comparative A Q1",
+          "publishedQuestionRef": "2023 HL Paper 2 Comparative A Q1(a)",
+          "reason": "The legacy card bundled (a) 30 marks, (b) 40 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part.",
+          "correction": {
+            "reason": "The legacy card bundled Comparative Q1(a) 30 and Q1(b) 40 and scored both as discrete P/C/L/M. The 2023 scheme prints ONE combined H1–H8 row for each part (quoted), so each reviewed card takes one global mark from that row.",
+            "rows": [
+              {
+                "schemePage": 33,
+                "schemeRow": "H1 H2 H3 H4 H5 H6 H7 H8 30 – 27 24 21 18 15 12 9 8 – 0"
+              },
+              {
+                "schemePage": 34,
+                "schemeRow": "H1 H2 H3 H4 H5 H6 H7 H8 40 - 36 32 28 24 20 16 12 11 - 0"
+              }
+            ]
+          }
+        },
+        "english-2023-hl-p2-comparative-a-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Comparative A Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-comparative-b-q1": {
+          "kind": "alias",
+          "to": "english-2023-hl-p2-comparative-b-q1-a",
+          "legacyQuestionRef": "2023 HL Paper 2 Comparative B Q1",
+          "publishedQuestionRef": "2023 HL Paper 2 Comparative B Q1(a)",
+          "reason": "The legacy card bundled (a) 30 marks, (b) 40 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part.",
+          "correction": {
+            "reason": "The legacy card bundled Comparative Q1(a) 30 and Q1(b) 40 and scored both as discrete P/C/L/M. The 2023 scheme prints ONE combined H1–H8 row for each part (quoted), so each reviewed card takes one global mark from that row.",
+            "rows": [
+              {
+                "schemePage": 36,
+                "schemeRow": "H1 H2 H3 H4 H5 H6 H7 H8 30 – 27 24 21 18 15 12 9 8 – 0"
+              },
+              {
+                "schemePage": 37,
+                "schemeRow": "H1 H2 H3 H4 H5 H6 H7 H8 40 - 36 32 28 24 20 16 12 11 - 0"
+              }
+            ]
+          }
+        },
+        "english-2023-hl-p2-comparative-b-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Comparative B Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-comparative-c-q1": {
+          "kind": "alias",
+          "to": "english-2023-hl-p2-comparative-c-q1-a",
+          "legacyQuestionRef": "2023 HL Paper 2 Comparative C Q1",
+          "publishedQuestionRef": "2023 HL Paper 2 Comparative C Q1(a)",
+          "reason": "The legacy card bundled (a) 30 marks, (b) 40 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part.",
+          "correction": {
+            "reason": "The legacy card bundled Comparative Q1(a) 30 and Q1(b) 40 and scored both as discrete P/C/L/M. The 2023 scheme prints ONE combined H1–H8 row for each part (quoted), so each reviewed card takes one global mark from that row.",
+            "rows": [
+              {
+                "schemePage": 39,
+                "schemeRow": "H1 H2 H3 H4 H5 H6 H7 H8 30 - 27 24 21 18 15 12 9 8 – 0"
+              },
+              {
+                "schemePage": 40,
+                "schemeRow": "H1 H2 H3 H4 H5 H6 H7 H8 40 - 36 32 28 24 20 16 12 11 - 0"
+              }
+            ]
+          }
+        },
+        "english-2023-hl-p2-comparative-c-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Comparative C Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-unseen-q1": {
+          "kind": "alias",
+          "to": "english-2023-hl-p2-unseen-q1-a",
+          "legacyQuestionRef": "2023 HL Paper 2 Unseen Poetry Q1",
+          "publishedQuestionRef": "2023 HL Paper 2 Unseen Poetry Q1(a)",
+          "reason": "The legacy card bundled (a) 10 marks, (b) 10 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2023-hl-p2-unseen-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Unseen Poetry Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2023-hl-p2-prescribed-1": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Prescribed Poetry 1",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "publishedQuestionRef": "2023 HL Paper 2 Prescribed Poetry Q1"
+        },
+        "english-2023-hl-p2-prescribed-2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Prescribed Poetry 2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "publishedQuestionRef": "2023 HL Paper 2 Prescribed Poetry Q2"
+        },
+        "english-2023-hl-p2-prescribed-3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Prescribed Poetry 3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "publishedQuestionRef": "2023 HL Paper 2 Prescribed Poetry Q3"
+        },
+        "english-2023-hl-p2-prescribed-4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Prescribed Poetry 4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "publishedQuestionRef": "2023 HL Paper 2 Prescribed Poetry Q4"
+        },
+        "english-2023-hl-p2-prescribed-5": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2023 HL Paper 2 Prescribed Poetry 5",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress.",
+          "publishedQuestionRef": "2023 HL Paper 2 Prescribed Poetry Q5"
+        }
+      }
+    },
     "english-2024-ol-p2": {
       "paperSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
       "legacyRuntime": "Served before the bridge by 68 authored.json cards; 21 bundled separately marked parts (Single Text Q1, Comparative Q1/Q2, Prescribed Q1).",

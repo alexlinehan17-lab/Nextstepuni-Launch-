@@ -3852,6 +3852,39 @@
       "attribution": "Patricia Scanlon (The Irish Times) and Ben Spencer (The Sunday Times magazine, “I’m better than the Bard.”) — two edited articles on Artificial Intelligence published in July 2022, with two images (PDF6–7). As reproduced in the SEC 2023 paper.",
       "questionSha256": "9ad1e545cebf70f0bbf2ce120aecde618b41816c321078f39dc459d37a67899e",
       "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Guest Room",
+      "pages": [
+        6
+      ],
+      "attribution": "Guest Room — Victoria Kennefick, as reproduced in the SEC 2023 paper.",
+      "questionSha256": "d9369e5b63475f5f7379e25977101ca695ce984e0d3c26beb5189ae432b7dd0e",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Victoria Kennefick and answer either Question 1 or Question 2”), the title, the whole poem (two stanzas of 10 lines) and the byline above the questions; visually verified."
+    },
+    "english-2023-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Guest Room",
+      "pages": [
+        6
+      ],
+      "attribution": "Guest Room — Victoria Kennefick, as reproduced in the SEC 2023 paper.",
+      "questionSha256": "5443ebcbc7c743825642c087691122a454fe4a86144e8ecf3534fb9af8aa766b",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Victoria Kennefick and answer either Question 1 or Question 2”), the title, the whole poem (two stanzas of 10 lines) and the byline above the questions; visually verified."
+    },
+    "english-2023-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Guest Room",
+      "pages": [
+        6
+      ],
+      "attribution": "Guest Room — Victoria Kennefick, as reproduced in the SEC 2023 paper.",
+      "questionSha256": "3ec266893974bae45a9ebc0920b5367425b84c60f83d3977b730118080922f15",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Victoria Kennefick and answer either Question 1 or Question 2”), the title, the whole poem (two stanzas of 10 lines) and the byline above the questions; visually verified."
     }
   }
 }

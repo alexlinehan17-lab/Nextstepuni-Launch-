@@ -81,6 +81,17 @@
    "schemeSha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2"
   },
   {
+   "paperId": "english-2023-hl-p2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "tasks": 27,
+   "cards": 27,
+   "printedDuplicates": 0,
+   "paperSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+   "schemeSha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2"
+  },
+  {
    "paperId": "english-2018-hl-p1",
    "year": 2018,
    "level": "higher",
@@ -751,6 +762,7 @@
  "legacyAdditionalSources": {},
  "bridgedPapers": [
   "english-2023-hl-p1",
+  "english-2023-hl-p2",
   "english-2024-hl-p1",
   "english-2024-hl-p2",
   "english-2025-hl-p1",
@@ -776,6 +788,29 @@
   "english-2023-hl-p1-t3-a-ii",
   "english-2023-hl-p1-t3-a-iii",
   "english-2023-hl-p1-t3-b",
+  "english-2023-hl-p2-comparative-a-q1",
+  "english-2023-hl-p2-comparative-a-q2",
+  "english-2023-hl-p2-comparative-b-q1",
+  "english-2023-hl-p2-comparative-b-q2",
+  "english-2023-hl-p2-comparative-c-q1",
+  "english-2023-hl-p2-comparative-c-q2",
+  "english-2023-hl-p2-prescribed-1",
+  "english-2023-hl-p2-prescribed-2",
+  "english-2023-hl-p2-prescribed-3",
+  "english-2023-hl-p2-prescribed-4",
+  "english-2023-hl-p2-prescribed-5",
+  "english-2023-hl-p2-single-a-i",
+  "english-2023-hl-p2-single-a-ii",
+  "english-2023-hl-p2-single-b-i",
+  "english-2023-hl-p2-single-b-ii",
+  "english-2023-hl-p2-single-c-i",
+  "english-2023-hl-p2-single-c-ii",
+  "english-2023-hl-p2-single-d-i",
+  "english-2023-hl-p2-single-d-ii",
+  "english-2023-hl-p2-single-e-i",
+  "english-2023-hl-p2-single-e-ii",
+  "english-2023-hl-p2-unseen-q1",
+  "english-2023-hl-p2-unseen-q2",
   "english-2024-hl-p1-composing-1",
   "english-2024-hl-p1-composing-2",
   "english-2024-hl-p1-composing-3",
@@ -862,6 +897,10 @@
   "english-2025-hl-p2-unseen-q2"
  ],
  "bridgeAliases": {
+  "english-2023-hl-p2-comparative-a-q1": "english-2023-hl-p2-comparative-a-q1-a",
+  "english-2023-hl-p2-comparative-b-q1": "english-2023-hl-p2-comparative-b-q1-a",
+  "english-2023-hl-p2-comparative-c-q1": "english-2023-hl-p2-comparative-c-q1-a",
+  "english-2023-hl-p2-unseen-q1": "english-2023-hl-p2-unseen-q1-a",
   "english-2024-hl-p2-comparative-a-q1": "english-2024-hl-p2-comparative-a-q1-a",
   "english-2024-hl-p2-comparative-b-q1": "english-2024-hl-p2-comparative-b-q1-a",
   "english-2024-hl-p2-comparative-c-q1": "english-2024-hl-p2-comparative-c-q1-a",
@@ -871,7 +910,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 470,
+ "cardCount": 497,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -6510,6 +6549,910 @@
    "atlas": {
     "fileid": "LC002ALP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-single-a-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text A(i)",
+   "questionText": "In your opinion, to what extent do innate personal qualities or environmental factors, or both, shape the behaviour of at least two characters in All the Light We Cannot See? Develop your discussion with reference to Doerr’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-single-a-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text A(ii)",
+   "questionText": "“We learn many interesting lessons from Doerr’s exploration of resilience and resistance in All the Light We Cannot See.” Discuss this statement, developing your response with reference to Doerr’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-single-b-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text B(i)",
+   "questionText": "“Torvald Helmer is a complex and tragic character who evokes both disdain and sympathy in the audience.” To what extent do you agree or disagree with this statement? Develop your discussion with reference to Ibsen’s play, A Doll’s House.",
+   "totalMarks": 60,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-single-b-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text B(ii)",
+   "questionText": "To what extent does Ibsen’s use of dialogue and symbolism in A Doll’s House increase or diminish the impact of this play on you? Develop your discussion with reference to Ibsen’s play.",
+   "totalMarks": 60,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-single-c-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text C(i)",
+   "questionText": "“Macbeth’s unstable and tragic identity is shaped by a variety of ambiguities and complexities in his character.” Discuss this statement, developing your response with reference to Shakespeare’s play, Macbeth.",
+   "totalMarks": 60,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-single-c-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text C(ii)",
+   "questionText": "“Shakespeare makes effective use of Lady Macbeth and the Witches to heighten the dramatic impact of his play Macbeth in a variety of ways.” Discuss this statement, developing your response with reference to Shakespeare’s play, Macbeth.",
+   "totalMarks": 60,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-single-d-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text D(i)",
+   "questionText": "In your opinion, to what extent do innate personal qualities or environmental factors, or both, shape the behaviour of at least two characters in Frankenstein? Develop your discussion with reference to Shelley’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-single-d-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text D(ii)",
+   "questionText": "“We learn many interesting lessons from Shelley’s exploration of companionship and friendship in Frankenstein.” Discuss this statement, developing your response with reference to Shelley’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-single-e-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text E(i)",
+   "questionText": "In your opinion, to what extent do innate personal qualities or environmental factors, or both, shape the behaviour of at least two characters in The Picture of Dorian Gray? Develop your discussion with reference to Wilde’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-single-e-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Single Text E(ii)",
+   "questionText": "To what extent does Wilde’s use of social satire and gothic darkness in The Picture of Dorian Gray increase or diminish the impact of this novel on you? Develop your discussion with reference to Wilde’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-comparative-a-q1-a",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative A Q1(a)",
+   "questionText": "To what extent does the level of compassion and kindness, evident in one text on your comparative course, influence your sense of the general vision and viewpoint in that text? Develop your response with reference to your chosen text.",
+   "totalMarks": 30,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · General Vision and Viewpoint · Q1",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-comparative-a-q1-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative A Q1(b)",
+   "questionText": "Compare the extent to which the levels of compassion and kindness, evident in two other texts on your comparative course, influence your sense of the general vision and viewpoint in these texts. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · General Vision and Viewpoint · Q1",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-comparative-a-q2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative A Q2",
+   "questionText": "Compare how the response of characters to personal or societal crises, in at least two texts on your comparative course, influence your sense of the general vision and viewpoint. Develop your response with reference to your chosen texts. In your response you may discuss personal or societal crises, or both.",
+   "totalMarks": 70,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · General Vision and Viewpoint · Q2",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-comparative-b-q1-a",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative B Q1(a)",
+   "questionText": "In the case of one text on your comparative course, discuss how the author employs a variety of techniques to heighten or lessen your empathy with a central character in that text. Develop your response with reference to your chosen text.",
+   "totalMarks": 30,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q1",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-comparative-b-q1-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative B Q1(b)",
+   "questionText": "In the case of two other texts you studied on your comparative course, compare how each of the authors employ a variety of techniques to heighten or lessen your empathy with a central character in these texts. Develop your response with reference to your chosen texts. You may refer to the same or different techniques in relation to each of your chosen texts. You may refer to the same or different techniques to those you referred to in 1. (a) above.",
+   "totalMarks": 40,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q1",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-comparative-b-q2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative B Q2",
+   "questionText": "Compare how the authors, in at least two texts on your comparative course, use a a variety of techniques skilfully to produce a riveting climax in each of these texts. You may refer to the same or different techniques in relation to each text. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q2",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-comparative-c-q1-a",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative C Q1(a)",
+   "questionText": "In the case of one text on your comparative course, discuss how contradictory aspects of human nature emerge from a study of a particular theme or issue. Develop your response with reference to your chosen text.",
+   "totalMarks": 30,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme or Issue · Q1",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-comparative-c-q1-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative C Q1(b)",
+   "questionText": "Compare the extent to which contradictory aspects of human nature emerge from a study of the same theme or issue discussed in 1. (a) above, in two other texts on your comparative course. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme or Issue · Q1",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-comparative-c-q2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Comparative C Q2",
+   "questionText": "Compare how comprehensively similar or different ethical (moral) questions are explored in the treatment of the same theme or issue, in at least two texts on your comparative course. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme or Issue · Q2",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-unseen-q1-a",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Unseen Poetry Q1(a)",
+   "questionText": "What impression do you form of the daughter in this poem?",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Guest Room",
+    "pages": [
+     6
+    ],
+    "attribution": "Guest Room — Victoria Kennefick, as reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-unseen-q1-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Unseen Poetry Q1(b)",
+   "questionText": "Did the poet’s use of language in the above poem add to its impact on you? Develop two points with reference to the poem in your response.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Guest Room",
+    "pages": [
+     6
+    ],
+    "attribution": "Guest Room — Victoria Kennefick, as reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-unseen-q2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Unseen Poetry Q2",
+   "questionText": "“Guest Room is a fascinating exploration of the complex relationship between mother and daughter.” Do you agree or disagree with this statement? Develop your response with reference to both the subject matter and style of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q2",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Guest Room",
+    "pages": [
+     6
+    ],
+    "attribution": "Guest Room — Victoria Kennefick, as reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "21"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-prescribed-1",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Prescribed Poetry Q1",
+   "questionText": "“Mahon’s evocative imagery conveys thematic concerns that are haunted by suggestions of darkness and anxiety.” Discuss the extent to which you agree or disagree with the above statement, developing your response with reference to the poems by Derek Mahon on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-15",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Derek Mahon",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "22"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-prescribed-2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Prescribed Poetry Q2",
+   "questionText": "How successfully, in your opinion, does Kavanagh employ both a lyrical style and a celebratory tone to elevate the mundane realism of life in his work? Develop your response with reference to the poetry by Patrick Kavanagh on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-10",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Patrick Kavanagh",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "23"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-prescribed-3",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Prescribed Poetry Q3",
+   "questionText": "“Meehan employs vibrant and forceful language skilfully to challenge the often-oppressive forces identified in her poetry.” Discuss the extent to which you agree or disagree with the above statement, developing your response with reference to the poems by Paula Meehan on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Paula Meehan",
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-prescribed-4",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Prescribed Poetry Q4",
+   "questionText": "“Donne makes effective use of inventive and paradoxical language to explore the human condition in his poetry.” Discuss this statement with reference to the poetry by John Donne on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-3",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "John Donne",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-hl-p2-prescribed-5",
+   "year": 2023,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2023 HL Paper 2 Prescribed Poetry Q5",
+   "questionText": "“A powerful sense of sadness is conveyed in Rich’s poetry through her exposure of the flawed nature of our existence.” To what extent do you agree or disagree with the above statement? You should refer to both the language and the themes in the poetry by Adrienne Rich on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Adrienne Rich",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "5"
    }
   },
   {

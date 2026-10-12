@@ -2832,7 +2832,8 @@
       "observedHeading": "Prescribed Poetry · “Mahon’S Evocative Imagery Conveys Thematic Concerns That Are Haunted By · Q1",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
-      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae"
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "promptHeading": "Derek Mahon"
     },
     "english-2023-hl-p2-prescribed-2": {
       "topicId": "english-11-10",
@@ -2841,7 +2842,8 @@
       "observedHeading": "Prescribed Poetry · How Successfully, In Your Opinion, Does Kavanagh Employ Both A Lyrical Style And A · Q2",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
-      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae"
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "promptHeading": "Patrick Kavanagh"
     },
     "english-2023-hl-p2-prescribed-3": {
       "topicId": "english-11-16",
@@ -2850,7 +2852,8 @@
       "observedHeading": "Prescribed Poetry · “Meehan Employs Vibrant And Forceful Language Skilfully To Challenge The Often-Oppressive · Q3",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
-      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae"
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "promptHeading": "Paula Meehan"
     },
     "english-2023-hl-p2-prescribed-4": {
       "topicId": "english-11-3",
@@ -2859,7 +2862,8 @@
       "observedHeading": "Prescribed Poetry · “Donne Makes Effective Use Of Inventive And Paradoxical Language To Explore The Human · Q4",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
-      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae"
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "promptHeading": "John Donne"
     },
     "english-2023-hl-p2-prescribed-5": {
       "topicId": "english-11-20",
@@ -2868,7 +2872,8 @@
       "observedHeading": "Prescribed Poetry · “A Powerful Sense Of Sadness Is Conveyed In Rich’S Poetry Through Her Exposure Of The · Q5",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
-      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae"
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "promptHeading": "Adrienne Rich"
     },
     "english-2023-ol-p2-single-a": {
       "topicId": "english-12-8",
