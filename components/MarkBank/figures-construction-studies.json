@@ -958,34 +958,6 @@
     "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
     "solution": false
   },
-  "construction-studies-2025-HL-q8-door-head": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-door-head.png",
-    "md5": "937705698921e03d216b8e392ab66b9e",
-    "alt": "SEC model section at the head of an external door with an arrow to the airtight seal between the door frame and the wall.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2025-HL-q8-first-floor": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-first-floor.png",
-    "md5": "d0816a39a51cff525156d6c8654882ee",
-    "alt": "SEC model sketches of the first-floor junction with the external wall: airtightness membrane and tape around the joist ends.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2025-HL-q8-wallplate": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-wallplate.png",
-    "md5": "a9108fe10eb49b4d0037e0e9bb891b43",
-    "alt": "SEC model eaves section at wallplate level with an arrow to the airtightness membrane wrapped onto the wallplate and wall.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2025-HL-q8-mvhr-duct": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-mvhr-duct.png",
-    "md5": "01c7c17786a5ef5ec7ccc4065230e4ff",
-    "alt": "SEC model sketches of an MVHR duct through the ceiling sealed to the airtightness membrane with a grommet or with tape.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
   "construction-studies-2025-HL-q9-original": {
     "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q9-original.png",
     "md5": "22dcddf2c4f7b3b1457b5cdd82b4ea18",
@@ -1013,27 +985,6 @@
     "alt": "Original SEC 2025 Higher Construction Studies Question 10: the printed question with a sketch of a two-storey Passive House in a rural setting.",
     "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
     "solution": false
-  },
-  "construction-studies-2025-HL-q10-building-form": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-building-form.png",
-    "md5": "ffe6e866b0a346d13d75f1c7199e60a5",
-    "alt": "SEC 2025 Higher marking scheme notes on Passive House building form, with sketches contrasting a complex plan (crossed) and a simple rectangle (ticked).",
-    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2025-HL-q10-foundation-design": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-foundation-design.png",
-    "md5": "a290814d9f2450952cad114cfde250cf",
-    "alt": "SEC 2025 Higher marking scheme notes on Passive House foundation design, with sections of insulated foundations at the wall and floor junction.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2025-HL-q10-space-heating-energy-demand": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-space-heating-energy-demand.png",
-    "md5": "e4fddbef00a187ce9a2472358ddf65b2",
-    "alt": "SEC 2025 Higher marking scheme notes on space heating energy demand, with a sketch of solar gain warming an insulated house section.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
-    "solution": true
   },
   "construction-studies-2025-HL-q10-orientation": {
     "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-orientation.png",

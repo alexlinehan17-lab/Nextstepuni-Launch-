@@ -759,8 +759,15 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
 // have their own paper/tariff/route audit (scripts/markbank/authoring/
 // construction_*.py); never rebaseline missing IDs.
 const constructionAdditionIds = new Set([...CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2025_HIGHER_ADDED_IDS, ...CONSTRUCTION_2025_ORDINARY_ADDED_IDS]);
+// Pre-audit Construction cards consolidated into a surviving card ("choice is not a route",
+// 2026-10-12) keep their identity through an explicit progress alias, so the frozen set still
+// counts them; never rebaseline the frozen count or hash.
+const constructionAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('cons-'));
+const constructionAliasCards = (name: string) => name.startsWith('construction-studies:')
+  ? constructionAliasIds.filter(id => id.includes(name.endsWith(':higher') ? '-hl-' : '-ol-')).map(id => ({ id }))
+  : [];
 const frozenCards = (name: string, cards: readonly { id: string }[]) =>
-  name.startsWith('construction-studies:') ? cards.filter(card => !constructionAdditionIds.has(card.id)) : cards;
+  name.startsWith('construction-studies:') ? [...cards.filter(card => !constructionAdditionIds.has(card.id)), ...constructionAliasCards(name)] : cards;
 
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
@@ -776,8 +783,9 @@ describe('Mark Bank card preservation', () => {
     const live = [...CONS_HIGHER, ...CONS_ORDINARY];
     const liveIds = new Set(live.map(card => card.id));
     for (const id of constructionAdditionIds) expect(liveIds.has(id), `missing reviewed addition ${id}`).toBe(true);
-    expect(live.filter(card => !constructionAdditionIds.has(card.id))).toHaveLength(255 + 250);
-    expect(live).toHaveLength(255 + 250 + constructionAdditionIds.size);
+    expect(live.filter(card => !constructionAdditionIds.has(card.id))).toHaveLength(255 + 250 - constructionAliasIds.length);
+    expect(live).toHaveLength(255 + 250 - constructionAliasIds.length + constructionAdditionIds.size);
+    for (const id of constructionAliasIds) expect(liveIds.has(id), `${id} should be withdrawn behind its alias`).toBe(false);
   });
 
   it('protects the complete current bank', () => {
@@ -788,7 +796,7 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328 + constructionAdditionIds.size);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328 + constructionAdditionIds.size - constructionAliasIds.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -802,7 +810,7 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(54);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(54 + constructionAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);

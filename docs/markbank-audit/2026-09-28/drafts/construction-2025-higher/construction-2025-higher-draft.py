@@ -8,13 +8,14 @@ checked against rendered pages. Unbanded components accept any whole mark up to 
 maximum; printed excellent/good/fair bands are kept as printed. Figures are exact 2x crops of
 the original PDFs.
 
-The 21 pre-audit 2025 Higher cards keep their IDs (and concept IDs) and are corrected in place
-to the reviewed boundaries and tariffs; each correction records the SHA-256 of the card it
-replaces. Every other prior card stays byte-identical.
+The pre-audit 2025 Higher cards keep their IDs (and concept IDs) and are corrected in place to the
+reviewed boundaries and tariffs; each correction records the SHA-256 of the card it replaces. A
+printed choice is ONE card with an anyN group over all its items (choice is not a route): Q2(a)
+and Q10(a) each keep one pre-audit per-item ID for the whole part, and the other per-item IDs are
+consolidated into it through a progress alias. Every other prior card stays byte-identical.
 """
 import copy
 import hashlib
-import itertools
 import json
 import re
 from pathlib import Path
@@ -74,17 +75,10 @@ FIGURES = {
     'q7-section': (S, 25, PAGE, True),
     'q7-flashing': (S, 26, [48, 45, 568, 622], True),
     'q8-original': (P, 6, [45, 50, 575, 395], False),
-    'q8-door-head': (S, 27, [48, 326, 568, 497], True),
-    'q8-first-floor': (S, 27, [48, 498, 568, 790], True),
-    'q8-wallplate': (S, 28, [48, 46, 568, 255], True),
-    'q8-mvhr-duct': (S, 28, [48, 296, 568, 588], True),
     'q9-original': (P, 6, [45, 455, 575, 740], False),
     'q9-wiring': (S, 29, PAGE, True),
     'q9-safety': (S, 30, [48, 46, 568, 446], True),
     'q10-original': (P, 7, [45, 50, 580, 410], False),
-    'q10-building-form': (S, 31, [48, 132, 568, 382], True),
-    'q10-foundation-design': (S, 31, [48, 382, 568, 790], True),
-    'q10-space-heating-energy-demand': (S, 32, [48, 46, 568, 308], True),
     'q10-orientation': (S, 32, [48, 314, 568, 790], True),
     'q10-overheating': (S, 33, PAGE, True),
     'q10-alt-original': (P, 7, [45, 490, 580, 725], False),
@@ -224,7 +218,7 @@ compose('1', 'complete', ' — complete', [A1, B1b], 'q1-section', B1, S1, parts
 
 # ---------------------------------------------------------------- Q2
 B2 = 'Scheme p38 (printed 2): (a) any two of three printed items × 6 = 12; (b) one risk for each of three printed activities × 4 = 12; (c) for each activity Guideline 1 and Guideline 2, each 3 for note + 3 for sketch = 12 per activity, 36. Complete 60.'
-S2 = 'Part (a) selects any two of three printed items: C(3,2) = 3 pairs plus each single item. Parts (b) and (c) require all three activities, each separately priced, so they are split per activity, not offered as choices. Complete question: 3 routes.'
+S2 = 'Choice is not a route: part (a) (any two of three printed items) is ONE card with an any-two group, kept under the pre-audit safety-training ID; the other two per-item IDs alias to it. Parts (b) and (c) require all three activities, each separately priced, so they are split per activity, not offered as choices.'
 ITEMS2 = [
     ('safety-training', 'safety training', 'Safety training',
      'Such as: Safe Pass is mandatory and kept current through refresher courses; training builds awareness of site risks and the skills to identify them and follow best practice; specialist tickets for machinery and vehicles; monitoring and enforcing safe work practices; it may be a condition of the insurance provider.'),
@@ -234,15 +228,11 @@ ITEMS2 = [
      'Such as: provides a safe working environment; evaluates compliance with safety regulations and policies; identifies hazards and puts control measures in place where a risk cannot be eliminated (for fire: alarms, evacuation signage, drills, extinguishers); recommends improvements; identifies training needs; reduces accidents and liability.'),
 ]
 STEM2A = 'Discuss in detail the importance of {any}the following in maintaining a positive health and safety culture among workers on a construction site: {items}.'
-a2 = {}
-for slug, item, verbatim, content in ITEMS2:
-    a2[slug] = add('2', f'a-{slug}', f'(a) — {item}', STEM2A.format(any='', items=item),
-                   [row('importance', verbatim, 6, f'Discuss the importance of {item}. ' + content)],
-                   ['cons-1-8'], ['site-safety'], None, 'Safety precautions on site (1.8).', B2, S2)
-a2_pairs = {}
-for (s1, i1, *_), (s2, i2, *_) in itertools.combinations(ITEMS2, 2):
-    a2_pairs[(s1, s2)] = compose('2', f'a-{s1}-and-{s2}', f'(a) — {i1} and {i2}', [a2[s1], a2[s2]], None, B2, S2,
-                                 STEM2A.format(any='any two of ', items=f'{i1}; {i2}'), labels=[i1, i2])
+A2 = add('2', 'a-safety-training', '(a)', STEM2A.format(any='any two of ', items='; '.join(i[1] for i in ITEMS2)),
+         [dict(id='importance', kind='anyN', verbatim='The importance of any two in maintaining a positive health and safety culture', marks=12,
+               contextNote='Any two of the three, 6 each, discussing why each matters to a positive health and safety culture. ' + ' '.join(f'{i[2]}: ' + i[3].removeprefix('Such as: ') for i in ITEMS2),
+               group=dict(claimMax=2, perOption=6, options=[i[2] for i in ITEMS2]))],
+         ['cons-1-8'], ['site-safety'], None, 'Safety precautions on site (1.8).', B2, S2)
 ACTIVITIES = [
     ('deep-trench', 'working in a deep trench', 'Working in a deep trench', 'q2-trench',
      'One risk outlined. Such as: workers seriously injured or buried if the trench sides collapse; machinery or vehicles falling in; materials stored too close to the edge causing a collapse; falling into an unguarded trench; materials falling in; nearby structures undermined.',
@@ -271,10 +261,8 @@ for slug, item, verbatim, figure, risk, g1, g2 in ACTIVITIES:
 B2b = compose('2', 'b', '(b)', list(b2.values()), None, B2, S2,
               STEM2B.format(items='; '.join(a[1] for a in ACTIVITIES)), labels=[a[1] for a in ACTIVITIES])
 C2 = compose('2', 'c', '(c)', list(c2.values()), 'q2-trench', B2, S2, STEM2C, labels=[a[1] for a in ACTIVITIES])
-for (s1, s2), pair in a2_pairs.items():
-    compose('2', f'complete-{s1}-and-{s2}', f" — complete: {pair['questionRef'].split(' — ')[1]}",
-            [pair, B2b, *c2.values()], 'q2-trench', B2, S2, parts(pair, B2b, C2),
-            labels=[f"(a) {pair['questionRef'].split(' — ')[1]}", '(b)'] + [f'(c) {a[1]}' for a in ACTIVITIES])
+compose('2', 'complete', ' — complete', [A2, B2b, *c2.values()], 'q2-trench', B2, S2, parts(A2, B2b, C2),
+        labels=['(a)', '(b)'] + [f'(c) {a[1]}' for a in ACTIVITIES])
 
 # ---------------------------------------------------------------- Q3
 B3 = 'Scheme p39 (printed 3): (a) revised layout 16 + downstairs bathroom 2 + open-plan 2 + daylight 2 = 22; (b) three reasons × 6 = 18; (c) notes 10 + sketch 10 = 20. Complete 60.'
@@ -401,7 +389,7 @@ compose('7', 'complete', ' — complete', [A7, B7b], 'q7-section', B7, S7, parts
 
 # ---------------------------------------------------------------- Q8
 B8 = 'Scheme p44 (printed 8): (a) two benefits × (3 for point + 3 for discussion) = 12; (b) three selected locations, each notes 8 + sketches 8 = 16; (b) 48. Complete 60.'
-S8 = 'Part (b) selects any three of the FOUR circled locations: C(4,3) = 4 routes, plus each location as a separate 16-mark task. Locations are named by the scheme headings. Complete question: 4 routes.'
+S8 = 'Choice is not a route: part (b) (any three of the FOUR circled locations) is ONE card with an any-three group over the four locations, named by the scheme headings; the complete question composes (a) and (b).'
 A8 = add('8', 'a', '(a)', 'Discuss in detail two benefits of preventing air leakage from a dwelling house.',
          [row(f'benefit-{i}', f'Benefit {i} (3 for point, 3 for discussion)', 6, note) for i, note in [
              (1, 'Point 3 and discussion 3. Such as: lower energy bills because less heat escapes through gaps in the building fabric; lower carbon emissions from heating.'),
@@ -422,21 +410,14 @@ LOCATIONS = [
      'Such as: an airtightness membrane under the joists, sealed to the duct with a self-adhesive grommet fixed to the membrane, or by carefully taping the duct to the membrane with airtightness tape.',
      'Sealing a ventilation (6.5) duct through the airtight vapour-control layer (6.6).'),
 ]
-STEM8B = 'The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at {any}the locations circled on the drawing — {items}'
-a8 = {}
-for slug, verbatim, label, nodes, topics, content, review in LOCATIONS:
-    a8[slug] = add('8', f'b-{slug}', f'(b) — {label}', STEM8B.format(any='', items=label),
-                   [row('notes', 'Notes', 8, f'Notes on best-practice detailing at the circled {label}. ' + content),
-                    row('sketches', 'Sketches', 8, f'Sketches of the {label} detail showing the continuous airtight layer.')],
-                   nodes, topics, f'q8-{slug}', review, B8, S8)
-for combo in itertools.combinations(LOCATIONS, 3):
-    names = [c[2] for c in combo]
-    triple = compose('8', 'b-' + '-'.join(c[0] for c in combo), '(b) — ' + ', '.join(names), [a8[c[0]] for c in combo], f'q8-{combo[0][0]}', B8, S8,
-                     STEM8B.format(any='any three of ', items='; '.join(names)), labels=names)
-    # Each selected location stays its own task group: a three-location group would exceed the five-row limit.
-    compose('8', 'complete-' + '-'.join(c[0] for c in combo), ' — complete: ' + ', '.join(names),
-            [A8] + [a8[c[0]] for c in combo], f'q8-{combo[0][0]}', B8, S8, parts(A8, triple),
-            labels=['(a)'] + [f'(b) {n}' for n in names])
+STEM8B = 'The drawing shows an outline section of a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a truss roof and a first floor of timber construction. The external door has a thermally broken frame. A Mechanical Ventilation with Heat Recovery system supplies ventilation through ceiling ducts. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any three of the locations circled on the drawing.'
+B8b = add('8', 'b', '(b)', STEM8B,
+          [dict(id='locations', kind='anyN', verbatim='Best practice design detailing to prevent air leakage at any three of the locations circled', marks=48,
+                contextNote='Any three of the four circled locations, each notes 8 and sketches 8 = 16, showing the continuous airtight layer. ' + ' '.join(f'{loc[1]}: ' + loc[5].removeprefix('Such as: ') for loc in LOCATIONS),
+                group=dict(claimMax=3, perOption=16, options=[loc[1] for loc in LOCATIONS]))],
+          list(dict.fromkeys(n for loc in LOCATIONS for n in loc[3])), list(dict.fromkeys(t for loc in LOCATIONS for t in loc[4])), None,
+          'The union of the four circled locations: ' + ' '.join(loc[6] for loc in LOCATIONS), B8, S8)
+compose('8', 'complete', ' — complete', [A8, B8b], None, B8, S8, parts(A8, B8b))
 
 # ---------------------------------------------------------------- Q9
 B9 = 'Scheme p45 (printed 9): (a) six items × 5 (4 for drawing, 1 for annotation) + cable size (1) and colour (3) 4 = 34; (b) two safety features × (notes 4 + sketches 4) = 16; (c) two approaches × (2 for point + 3 for discussion) = 10. Complete 60.'
@@ -461,7 +442,7 @@ compose('9', 'complete', ' — complete', [A9, B9b, C9], 'q9-wiring', B9, S9, pa
 
 # ---------------------------------------------------------------- Q10
 B10 = 'Scheme p46 (printed 10): (a) any two of three printed items, each notes 5 + sketches 5 = 10; (a) 20. (b) sketch 8, orientation 4, sun path 4, two benefits × (3 for point + 3 for discussion) = 28; (c) two methods × (notes 3 + sketches 3) = 12. Complete 60.'
-S10 = 'Part (a) selects any two of three printed items: C(3,2) = 3 pairs plus each single item. The OR alternative is a separate Question 10 route. Complete question: 3 routes.'
+S10 = 'Choice is not a route: part (a) (any two of three printed items) is ONE card with an any-two group, kept under the pre-audit building-form ID; the foundation-design ID aliases to it. The OR alternative is a separate Question 10 route.'
 ITEMS10 = [
     ('building-form', 'building form',
      'Such as: a compact, simple rectangular form with the smallest surface area (A/V ratio 0.7 or less) to cut heat loss, materials and cost; a narrow plan, one room deep, to maximise solar gain; clean lines in walls and roof that make airtightness easy.',
@@ -474,12 +455,13 @@ ITEMS10 = [
      ['cons-6-3', 'cons-6-2', 'cons-6-4'], ['passive-design', 'heat-loss-insulation'], 'Heating demand and heat loss (6.3) minimised by insulation (6.2) and solar gain (6.4).'),
 ]
 STEM10A = 'Using notes and freehand sketches, discuss the importance of {any}the following in Passive House design: {items}.'
-a10 = {}
-for slug, item, content, nodes, topics, review in ITEMS10:
-    a10[slug] = add('10', f'a-{slug}', f'(a) — {item}', STEM10A.format(any='', items=item),
-                    [row('notes', 'Notes', 5, f'Notes on the importance of {item} in Passive House design. ' + content),
-                     row('sketches', 'Sketches', 5, f'Sketches illustrating {item}.')],
-                    nodes, topics, f'q10-{slug}', review, B10, S10)
+ITEM10_HEADINGS = ['Building form', 'Foundation design', 'Space heating energy demand']
+A10 = add('10', 'a-building-form', '(a)', STEM10A.format(any='any two of ', items='; '.join(i[1] for i in ITEMS10)),
+          [dict(id='items', kind='anyN', verbatim='Discuss the importance of any two in Passive House design', marks=20,
+                contextNote='Any two of the three, each notes 5 and sketches 5 = 10. ' + ' '.join(f'{h}: ' + i[2].removeprefix('Such as: ') for h, i in zip(ITEM10_HEADINGS, ITEMS10)),
+                group=dict(claimMax=2, perOption=10, options=ITEM10_HEADINGS))],
+          list(dict.fromkeys(n for i in ITEMS10 for n in i[3])), list(dict.fromkeys(t for i in ITEMS10 for t in i[4])), None,
+          'The union of the three printed items: ' + ' '.join(i[5] for i in ITEMS10), B10, S10)
 B10b = add('10', 'b', '(b)', 'Using notes and freehand sketches, suggest a preferred orientation for the house shown. Show the sun path on your sketch. Discuss two benefits to the homeowner of your preferred orientation.',
            [row('sketch', 'Sketch', 8, 'Freehand sketch of the house showing the preferred orientation and the sun path.'),
             row('orientation', 'Orientation', 4, 'Such as: the long axis with the largest amount of glazing facing south to maximise solar gain, with minimal glazing on the north.'),
@@ -491,11 +473,7 @@ C10 = add('10', 'c', '(c)', 'Solar overheating may occur during the summer month
           [row('method-1', 'Method 1 to reduce solar overheating', 6, 'Notes 3 and sketches 3. Such as: dynamic (electrochromic) glass that tints in response to light, heat or an electrical signal; or mature deciduous trees that block the summer sun and let winter sun through.'),
            row('method-2', 'Method 2 to reduce solar overheating', 6, 'A second, different method: notes 3 and sketches 3. Such as: a brise soleil on the south side; internal or external shutters closed against the midday summer sun; high thermal mass (polished concrete floor, exposed stone walls) to even out temperatures.')],
           ['cons-6-4'], ['passive-design'], 'q10-overheating', 'Controlling solar heat gain (6.4).', B10, S10)
-for (s1, i1, *_), (s2, i2, *_) in itertools.combinations(ITEMS10, 2):
-    pair = compose('10', f'a-{s1}-and-{s2}', f'(a) — {i1} and {i2}', [a10[s1], a10[s2]], f'q10-{s1}', B10, S10,
-                   STEM10A.format(any='any two of ', items=f'{i1}; {i2}'), labels=[i1, i2])
-    compose('10', f'complete-{s1}-and-{s2}', f' — complete: {i1} and {i2}', [pair, B10b, C10], f'q10-{s1}', B10, S10,
-            parts(pair, B10b, C10), labels=[f'(a) {i1} and {i2}', '(b)', '(c)'])
+compose('10', 'complete', ' — complete', [A10, B10b, C10], 'q10-orientation', B10, S10, parts(A10, B10b, C10))
 
 BALT = 'Scheme p47 (printed 11): (a) three discussion points × (5 for point + 5 for discussion) = 30; (b) three guidelines × (5 + 5) = 30. Complete alternative 60.'
 SALT = 'The OR question is an alternative whole Question 10 with its own 60-mark route; it never combines with the Passive House question. Its parts are open responses.'
@@ -518,9 +496,9 @@ compose('10', 'complete', ' — complete', [AA, AB], None, BALT, SALT, parts(AA,
 # ---------------------------------------------------------------- ledgers
 ledger_rows = [
     (1, 'Answer any', 'Whole-exam selection: any five of the ten questions; all question banks retained, no full-exam Cartesian cards.'),
-    (2, 'any two', 'Q2(a) closed choose-two of three printed items — 3 pairs and 3 single-item tasks.'),
-    (6, 'any three', 'Q8(b) closed choose-three of the four circled locations — 4 triples and 4 single-location tasks.'),
-    (7, 'any two', 'Q10(a) closed choose-two of three printed items — 3 pairs and 3 single-item tasks.'),
+    (2, 'any two', 'Q2(a) closed choose-two of three printed items: one card with an any-two group (choice is not a route).'),
+    (6, 'any three', 'Q8(b) closed choose-three of the four circled locations: one card with an any-three group (choice is not a route).'),
+    (7, 'any two', 'Q10(a) closed choose-two of three printed items: one card with an any-two group (choice is not a route).'),
     (7, 'OR', 'Alternative Question 10: a separate whole 60-mark route under the same printed Question 10 anchor.'),
 ]
 pattern = r'\b(?:choose|select|one\s+of|any\s+\w+|either|or|answer\s+\w+)\b'
@@ -533,9 +511,9 @@ assert [(o[0], o[2]) for o in observed] == [(r[0], r[1]) for r in ledger_rows], 
 selection_ledger = dict(pattern=pattern, unclassified=0, sourceHashes=HASHES,
                         rows=[dict(page=o[0], start=o[1], match=o[2], context=o[3], classification=r[2]) for o, r in zip(observed, ledger_rows)],
                         finiteQuestionChoices={
-                            '2a': dict(choose=2, options=[i[0] for i in ITEMS2], routes=[list(c) for c in itertools.combinations([i[0] for i in ITEMS2], 2)]),
-                            '8b': dict(choose=3, options=[loc[0] for loc in LOCATIONS], routes=[list(c) for c in itertools.combinations([loc[0] for loc in LOCATIONS], 3)]),
-                            '10a': dict(choose=2, options=[i[0] for i in ITEMS10], routes=[list(c) for c in itertools.combinations([i[0] for i in ITEMS10], 2)])})
+                            '2a': dict(choose=2, options=[i[0] for i in ITEMS2], cardId=A2['id'], groupRowId='importance'),
+                            '8b': dict(choose=3, options=[loc[0] for loc in LOCATIONS], cardId=B8b['id'], groupRowId='locations'),
+                            '10a': dict(choose=2, options=[i[0] for i in ITEMS10], cardId=A10['id'], groupRowId='items')})
 whole = {}
 for t in tasks:
     c = t['card']
@@ -545,9 +523,7 @@ for t in tasks:
 REASONS = {
     'q1-a': 'Adds the scale and drafting allowance (8, banded 8/6/4) printed in the Question 1 table: 48 → 56. Rows keep the printed menus and best-N counts.',
     'q1-b': 'Reshaped to the reviewed criterion row; tariff unchanged (4).',
-    'q2-a-safety-training': 'Reshaped to the reviewed criterion row; tariff unchanged (6).',
-    'q2-a-health-and-safety-officer': 'Reshaped to the reviewed criterion row; tariff unchanged (6).',
-    'q2-a-risk-assessment-audit': 'Reshaped to the reviewed criterion row; tariff unchanged (6).',
+    'q2-a-safety-training': 'Now the whole of part (a): one card printing all three items with an any-two group (6 each, 12), kept under this ID; the health-and-safety-officer and risk-assessment-audit IDs alias to it (choice is not a route).',
     'q2-c': 'Now the whole of part (c), built from its three separately marked activities (Guideline 1 and 2, 3 for note + 3 for sketch, each); tariff unchanged (36).',
     'q3-b': 'Split into the three printed reasons (6 each); total unchanged (18).',
     'q3-c': 'Split into the printed notes 10 and sketch 10; total unchanged (20).',
@@ -561,11 +537,12 @@ REASONS = {
     'q8-a': 'Split into the two printed benefits (3 point + 3 discussion); total unchanged (12).',
     'q9-a': 'Adds the cable size (1) and colour (3) row printed in the table: 30 → 34; the six drawn items keep 5 each.',
     'q9-c': 'Split into the two printed approaches (2 point + 3 discussion); total unchanged (10).',
-    'q10-a-building-form': 'Split into the printed notes 5 + sketches 5; total unchanged (10); filed under passive design.',
-    'q10-a-foundation-design': 'Split into the printed notes 5 + sketches 5; total unchanged (10); filed under passive design and foundations.',
+    'q10-a-building-form': 'Now the whole of part (a): one card printing all three items with an any-two group (notes 5 + sketches 5 each, 20), kept under this ID; the foundation-design ID aliases to it (choice is not a route).',
     'q10-b': 'Replaces an unprinted "best 2 of 4 × 14" tariff with the printed rows: sketch 8, orientation 4, sun path 4, two benefits 6 + 6 = 28.',
 }
-assert set(REASONS) == {k.removeprefix(PREFIX) for k in LEGACY}
+CONSOLIDATED = {'q2-a-health-and-safety-officer': 'q2-a-safety-training', 'q2-a-risk-assessment-audit': 'q2-a-safety-training',
+                'q10-a-foundation-design': 'q10-a-building-form'}
+assert set(REASONS) | set(CONSOLIDATED) == {k.removeprefix(PREFIX) for k in LEGACY} and set(REASONS) == {k.removeprefix(PREFIX) for k in LEGACY if k in cards}
 corrections = []
 for t in tasks:
     c = t['card']
@@ -575,12 +552,13 @@ for t in tasks:
                                 priorTotalMarks=old['totalMarks'], correctedTotalMarks=c['totalMarks'],
                                 priorTopicId=old['topicId'], correctedTopicId=c['topicId'],
                                 reason=REASONS[c['id'].removeprefix(PREFIX)]))
-assert len(corrections) == 21
+assert len(corrections) == 18
+consolidated = [dict(cardId=PREFIX + k, aliasOf=PREFIX + v, preCorrectionSha256=card_hash(LEGACY[PREFIX + k])) for k, v in CONSOLIDATED.items()]
 
 out = dict(schemaVersion=1, subjectId='construction-studies', year=2025, level='higher', lang='ev', sitting='main', paperKey='single',
            fileid='LC029ALP000EV.pdf', component='theory', status='Q1–Q10 and alternative Q10 source-reviewed draft; integration pending.',
            sourceHashes=HASHES, tasks=tasks, bindings=bindings, questionFigures=question_figures,
-           addedIds=[t['card']['id'] for t in tasks if not t['correction']], corrections=corrections,
+           addedIds=[t['card']['id'] for t in tasks if not t['correction']], corrections=corrections, consolidatedLegacy=consolidated,
            selectionLedger=selection_ledger, questionRouteLedgers={q: dict(wholeRoutes=w) for q, w in whole.items()}, taxonomyGaps=[],
            questionsReviewed=[str(n) for n in range(1, 11)], unreviewedQuestions=[], alternativeQuestions=['10'])
 (HERE / 'higher-2025-draft.json').write_text(json.dumps(out, ensure_ascii=False, indent=2) + '\n')

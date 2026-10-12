@@ -63,6 +63,16 @@ def save(p, d):
     Path(p).write_text(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
 
 
+def supersede(review, old):
+    """A card corrected in place again keeps the hash of its earlier correction, so older prior sets still match it."""
+    before = {f['cardId']: f for f in old.get('corrections', [])}
+    for fix in review.get('corrections', []):
+        prev = before.get(fix['cardId'])
+        if prev and prev['correctedSha256'] != fix['correctedSha256']:
+            assert prev['priorSha256'] == fix['priorSha256'], fix['cardId']
+            fix['supersededSha256'] = sorted(set(prev.get('supersededSha256', [])) | {prev['correctedSha256']})
+
+
 def main(key):
     cfg = PAPERS[key]
     validator = importlib.import_module(cfg['validator'])
@@ -86,8 +96,10 @@ def main(key):
     assert set(cfg['aliases']) <= set(withdrawn_ids) and set(cfg['aliases'].values()) <= set(new_cards)
     previously = {w['cardId'] for w in old.get('withdrawn', [])}
     assert not previously & set(withdrawn_ids)
+    earlier = {f['cardId']: f['priorSha256'] for f in old.get('corrections', [])}
     withdrawn = [dict(cardId=i, priorSha256=construction_corrections.card_hash(by_id[i]), reason=RULE,
-                      **({'aliasOf': cfg['aliases'][i]} if i in cfg['aliases'] else {})) for i in withdrawn_ids]
+                      **({'aliasOf': cfg['aliases'][i]} if i in cfg['aliases'] else {}),
+                      **({'preCorrectionSha256': earlier[i]} if i in earlier else {})) for i in withdrawn_ids]
 
     gone = set(withdrawn_ids)
     merged = [new_cards.get(c['id'], c) for c in authored if c['id'] not in gone]
@@ -118,9 +130,10 @@ def main(key):
     save(manifest_path, manifest)
 
     now = datetime.now(timezone.utc).isoformat()
-    keep = {k: v for k, v in old.items() if k not in draft and k not in ('tasks', 'bindings', 'questionFigures', 'addedIds')}
+    keep = {k: v for k, v in old.items() if k not in draft and k not in ('tasks', 'bindings', 'questionFigures', 'addedIds', 'corrections', 'consolidatedLegacy')}
     review = dict(draft, **keep)
     review['withdrawn'] = old.get('withdrawn', []) + withdrawn
+    supersede(review, old)
     review['consolidation'] = dict(at=now, rule=RULE, withdrawnCards=len(withdrawn), aliasedCards=len(cfg['aliases']),
                                    tasksBefore=len(old_ids), tasksAfter=len(new_cards),
                                    removedFigures=sorted(old_figs - set(new_figs)))
