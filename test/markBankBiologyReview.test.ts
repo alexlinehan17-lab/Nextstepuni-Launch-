@@ -908,3 +908,111 @@ describe('Biology 2023 Ordinary — reviewed sitting, corrected in place', () =>
     expect(ol23ById.get('bio-2023-ol-q17-b-ii')!.figure?.solution).toBe(true);
   });
 });
+
+const hl22 = sittings['2022-hl'];
+const higher2022 = BIO_HIGHER.filter(card => card.year === 2022) as unknown as ReviewedCard[];
+const hl22ById = new Map(higher2022.map(card => [card.id, card]));
+const hl22Verbatims = (id: string) => (hl22ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+
+describe('Biology 2022 Higher — reviewed sitting, corrected in place', () => {
+  const review = hl22.review!;
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(hl22.baseTaskCount).toBe(185);
+    expect(hl22.cardCount).toBe(190);
+    expect(higher2022).toHaveLength(190);
+    expect(new Set(hl22.tasks.map(task => task.id))).toEqual(new Set(hl22ById.keys()));
+  });
+
+  it('keeps every shipped id', () => {
+    expect(review.baselineCommit).toBe('a9e7a9861');
+    // Every shipped card differed from the papers in some field: none is left as it was.
+    expect([review.verified.length, review.corrected.length, review.added.length,
+      review.retained.length]).toEqual([0, 142, 48, 2]);
+    for (const id of [...review.corrected.map(c => c.id), ...review.added]) {
+      expect(hl22ById.has(id), id).toBe(true);
+    }
+    // Two authored cards the build never shipped, withdrawn with no progress to carry.
+    expect(review.retained.map(r => r.id).sort())
+      .toEqual(['bio-2022-hl-q16-b-iii-fig', 'bio-2022-hl-q17-d-ii']);
+    expect(review.withdrawn['bio-2022-hl-q17-d-ii'].replacementId).toBe('bio-2022-hl-q17-d-ii-fig');
+    expect(review.withdrawn['bio-2022-hl-q16-b-iii-fig'].replacementId).toBe('bio-2022-hl-q16-b-iii');
+  });
+
+  it('records what each corrected card showed before', () => {
+    for (const correction of review.corrected) {
+      expect(correction.changed.length, correction.id).toBeGreaterThan(0);
+      for (const field of correction.changed) {
+        expect(field in correction.fieldsBefore, `${correction.id}.${field}`).toBe(true);
+      }
+    }
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(hl22.sources['038'].sha256)
+      .toBe('a8b64511a0818f10d514a481394d096c18b1b0a03f1fbd66d186e40f2cc3dc34');
+    expect(hl22.sources['040'].sha256)
+      .toBe('12994344215696d8a262bb959948d90994a562ba3f425f8535d8df49fe0a490a');
+    expect(hl22.sources.scheme.sha256)
+      .toBe('df45e49a3932ddda99320b313cfdf714ada48f250c0e7804006c0753af8c3a38');
+    expect([hl22.sources['038'].pages, hl22.sources['040'].pages, hl22.sources.scheme.pages])
+      .toEqual([40, 12, 32]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of hl22.tasks) {
+      const card = hl22ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('adds up to the printed question totals', () => {
+    const firstRoute = new Set(Object.values(hl22.routes).map(routes => routes[0]));
+    const totals = new Map<number, number>();
+    for (const task of hl22.tasks) {
+      if (task.route && !firstRoute.has(task.route)) continue;   // one route per pool
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    expect(totals.get(1)).toBe(24);   // best five of six parts at 4
+    // "6(3) + 2": seven responses each carded at 3, so 21 against the ladder's 20.
+    for (const q of [2, 3, 4, 5, 6, 7]) expect(totals.get(q), `Q${q}`).toBe(21);
+    for (const q of [8, 9, 10]) expect(totals.get(q), `Q${q}`).toBe(30);
+    for (const q of [11, 12, 13, 14, 15]) expect(totals.get(q), `Q${q}`).toBe(60);
+    for (const q of [16, 17]) expect(totals.get(q), `Q${q}`).toBe(120);   // any two of four 30s
+  });
+
+  it('splits only the choices the scheme marks differently per option', () => {
+    const routesOf = (ref: string) => higher2022
+      .filter(card => card.questionRef.startsWith(`2022 HL ${ref} — `))
+      .map(card => card.questionRef.split(' — ')[1]).sort();
+    expect(routesOf('Q16(a)(vi)')).toEqual(['paralysis', 'parkinsons-disease']);
+    expect(routesOf('Q16(b)(v)')).toEqual(['hearing-defect', 'long-sightedness', 'short-sightedness']);
+    expect(routesOf('Q16(c)(vii)')).toEqual(['arthritis', 'osteoporosis']);
+    expect(routesOf('Q17(d)(vii)')).toEqual(['exercise', 'smoking']);
+    // "Either of the factors you named": one matching-explanation row, one card.
+    expect(higher2022.filter(card => card.questionRef.startsWith('2022 HL Q11(c)(ii)'))).toHaveLength(1);
+  });
+
+  it('reads the true/false ticks from the scheme', () => {
+    expect(['a', 'b', 'c', 'd', 'e', 'f', 'g'].map(x => hl22Verbatims(`bio-2022-hl-q5-${x}`)[0]))
+      .toEqual(['False', 'True', 'False', 'False', 'True', 'True', 'True']);
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph)s?\b/i;
+    for (const card of higher2022) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // Underlined terms and the drawn line symbol are set as printed.
+    for (const id of ['bio-2022-hl-q12-c-iii', 'bio-2022-hl-q13-c-i', 'bio-2022-hl-q15-a', 'bio-2022-hl-q17-a-ii',
+      'bio-2022-hl-q9-b-vi']) {
+      expect(hl22ById.get(id)!.questionFigure, id).toBeTruthy();
+    }
+  });
+});

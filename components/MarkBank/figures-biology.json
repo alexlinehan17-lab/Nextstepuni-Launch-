@@ -1,4 +1,404 @@
 {
+ "biology-2022-hl-q12c-iii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q12c-iii-question.png",
+  "md5": "06bcc0cff0ef56d693cce5a343cfd032",
+  "alt": "The printed passage and question: Global warming is occurring at an unprecented rate. This is as a result of pollution of the atmosphere with greenhouse gases. (iii) Explain the underlined term. The word pollution is underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q12(c)(iii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   108,
+   582,
+   541,
+   637
+  ]
+ },
+ "biology-2022-hl-q13-protein-synthesis": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q13-protein-synthesis.png",
+  "md5": "7272e4946d2b9a1acad95b6acf191a0a",
+  "alt": "Diagram of a cell: inside Organelle J, a Chromosome and its Gene, an arrow for Process K making Molecule L; Molecule L leaves through the organelle boundary into the Cytosol and arrives at a body M, from which a chain labelled Protein grows. The Cell membrane is labelled.",
+  "lettersVisible": [
+   "J",
+   "K",
+   "L",
+   "M"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q13(b)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   110,
+   108,
+   541,
+   358
+  ]
+ },
+ "biology-2022-hl-q13c-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q13c-i-question.png",
+  "md5": "20a2a5789daba89d74bffde5c77d750b",
+  "alt": "The printed passage and question: (c) In squash plants, the allele for white fruit (F) is dominant to the allele for yellow fruit (f). The allele for disc-shaped fruit (D) is dominant to the allele for spherical-shaped fruit (d). The genes that control fruit colour and fruit shape are located on different chromosomes. A squash plant, homozygous dominant for both fruit colour and shape, was crossed with a squash plant homozygous recessive for both. (i) Explain the underlined terms. The words allele and homozygous are underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q13(c)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   555,
+   541,
+   668
+  ]
+ },
+ "biology-2022-hl-q14-photosynthesis": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q14-photosynthesis.png",
+  "md5": "5aad07ed88393d293a672b59b34c9a37",
+  "alt": "Diagram of the two stages of photosynthesis. Light energy and H2O enter Stage 1, which gives off Molecule X. NADP+ and ADP + P pass from Stage 2 to Stage 1, and Molecule Y and ATP pass back to Stage 2. A Gas enters Stage 2, which produces Molecule Z.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(b)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   114,
+   189,
+   532,
+   388
+  ]
+ },
+ "biology-2022-hl-q15-kidney": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q15-kidney.png",
+  "md5": "e7426b4cc43f97ad7e9be1d00468d917",
+  "alt": "Two diagrams. Left: a kidney cut in half, arrow A to the outer layer, arrow B to the cone-shaped regions inside, arrow C to the central space where the tube leaves. Right: an enlarged nephron with the Glomerulus, PCT, Loop of Henle, DCT and a Capillary labelled.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q15(b)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   112,
+   147,
+   533,
+   400
+  ]
+ },
+ "biology-2022-hl-q15a-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q15a-i-question.png",
+  "md5": "116221c0f3e731739b3edfb76a6bdf5c",
+  "alt": "The printed question: (a) Excretion is an important process in homeostasis in living organisms. (i) Explain the underlined terms. The words Excretion and homeostasis are underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q15(a)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   80,
+   55,
+   541,
+   88
+  ]
+ },
+ "biology-2022-hl-q16-eye": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q16-eye.png",
+  "md5": "abcc3853aec1f2706fac51c32faf42a3",
+  "alt": "Diagram of the human eye in section: P labels the oval body behind the pupil, Q the clear curved front layer, R the nerve leaving the back of the eye; the Retina, Blind spot, Iris and Pupil are labelled.",
+  "lettersVisible": [
+   "P",
+   "Q",
+   "R"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q16(b)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   164,
+   278,
+   472,
+   486
+  ]
+ },
+ "biology-2022-hl-q16-joint": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q16-joint.png",
+  "md5": "2d0b3512f12b9fdee57a3acff30b8700",
+  "alt": "Diagram of a synovial joint between two bones: A labels the band joining the bones on the outside, B the smooth layers capping the bone ends; Compact bone and Spongy bone are labelled.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q16(c)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   226,
+   123,
+   432,
+   312
+  ]
+ },
+ "biology-2022-hl-q17-heart-cycle": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q17-heart-cycle.png",
+  "md5": "351d6efcd68a4642a98d7b7f29a8faff",
+  "alt": "Three diagrams of the heart in section, X, Y and Z. In X, arrows show blood entering the atria from above; in Y, arrows show blood passing down into the ventricles; in Z, arrows show blood leaving the ventricles upwards into the arteries.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q17(d)(i)1",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   109,
+   355,
+   536,
+   503
+  ]
+ },
+ "biology-2022-hl-q17-scientists": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q17-scientists.png",
+  "md5": "db54ed5cb9970e855bd26b47bc2761b6",
+  "alt": "Two black-and-white photographs of elderly bearded men: on the left a man with a long white beard, on the right a man with a white beard seated at a desk.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q17(a)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   348,
+   85,
+   541,
+   215
+  ]
+ },
+ "biology-2022-hl-q17a-ii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q17a-ii-question.png",
+  "md5": "78edaa7972f14b0ddd1e36fdb88210ad",
+  "alt": "The printed passage and question: (a) The photographs are of the two scientists credited with the co-development of the theory of evolution by natural selection. One of the points put forward by the theory of natural selecton is: There is variation among members of a species and these variations are inherited. Variations are differences among members of the same species. Mutations and meiosis contribute to these variations. (ii) Explain the three underlined terms. The words evolution, species and inherited are underlined. Beside the passage, photographs of two bearded elderly men.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q17(a)(ii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   85,
+   541,
+   342
+  ],
+  "maskedFurniture": [
+   [
+    108,
+    290,
+    541,
+    324
+   ]
+  ]
+ },
+ "biology-2022-hl-q3-karyotype": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q3-karyotype.png",
+  "md5": "fe4623bb2d66c962fa77162675238836",
+  "alt": "Photograph of a human karyotype: chromosomes in numbered pairs 1 to 22, then X and Y. Pair 21 has three chromosomes; there are two X chromosomes and none above Y.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q3(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   105,
+   122,
+   490,
+   352
+  ]
+ },
+ "biology-2022-hl-q4-mitochondrion": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q4-mitochondrion.png",
+  "md5": "6b4c9b87148fadd6b3f964f6953869ee",
+  "alt": "Transmission electron micrograph of a mitochondrion in section: an oval body with a double outer membrane and many folded inner membranes across it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   138,
+   92,
+   457,
+   251
+  ]
+ },
+ "biology-2022-hl-q6-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q6-graph.png",
+  "md5": "c13f57a23c485a48cb963b7ae36ddb4f",
+  "alt": "Graph of Mass of lipid digested against Time: a solid line for Lipase and bile salts rises steeply and levels off high; a dashed line for Lipase rises more slowly and stays below it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q6(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   120,
+   104,
+   480,
+   298
+  ]
+ },
+ "biology-2022-hl-q7-virus": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q7-virus.png",
+  "md5": "1541f9959e1d9009e80e12b4384880ef",
+  "alt": "Diagram of a spherical virus with club-shaped projections all round its surface; an arrow labelled A points to the coiled strand inside it. A boxed letter X stands to the right.",
+  "lettersVisible": [
+   "A",
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q7(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   195,
+   96,
+   480,
+   262
+  ]
+ },
+ "biology-2022-hl-q8-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q8-cells.png",
+  "md5": "29b773fdfb0b7478eff0aed46255fd68",
+  "alt": "Two micrographs of stained cells. A (x400): a single irregular cell with a dark body inside, labelled Z, and an arrow marking its width as 2 cm. B (x100): many long, regular, joined cells.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(b)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   412,
+   290,
+   538,
+   527
+  ]
+ },
+ "biology-2022-hl-q9b-vi-1-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q9b-vi-1-question.png",
+  "md5": "ef17401d2c1926a69dd68b05e200f646",
+  "alt": "The printed question: (vi) On the axes below, sketch two graphs as described below: 1. Using a solid line (a short solid line is printed), sketch the expected result at 25 °C. Below, empty axes: Rate of photosynthesis against Light intensity or CO2 concentration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q9(b)(vi)1",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   108,
+   486,
+   541,
+   745
+  ],
+  "maskedFurniture": [
+   [
+    138,
+    522,
+    541,
+    553
+   ]
+  ]
+ },
+ "biology-2022-hl-q9b-vi-2-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-hl-q9b-vi-2-question.png",
+  "md5": "432c9302791788ad5209088204fca991",
+  "alt": "The printed question: (vi) On the axes below, sketch two graphs as described below: 2. Using a dashed line (- - - - - -), sketch the expected result if the activity had been carried out at 60 °C. Below, empty axes: Rate of photosynthesis against Light intensity or CO2 concentration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q9(b)(vi)2",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   108,
+   486,
+   541,
+   745
+  ],
+  "maskedFurniture": [
+   [
+    138,
+    504,
+    541,
+    521
+   ]
+  ]
+ },
  "biology-2023-hl-q10b-iv-2-scheme": {
   "src": "/exam-figures/biology/markbank/biology-2023-hl-q10b-iv-2-scheme.png",
   "md5": "af8d2601e44c444b789cda4804318834",

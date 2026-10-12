@@ -126,7 +126,12 @@ const decks = [
    * kept (105 corrected, 8 verified) and 63 tasks the old cards bundled or
    * missed ship as new ids. bio-2023-hl-q14-b-ii-fig, an authored figure twin
    * the build never shipped, is withdrawn without an alias. */
-  ['biology:higher', BIO_HIGHER, 1019, '7e088b156215978eb124551f5754d5f611d698fbfe83d2d508665f7ca78f4a59'],
+  /* 2026-10-12: biology higher 1019 -> 1067. The 2022 Higher sitting is
+   * re-reviewed the same way (bio_review_2022_hl.py): all 142 shipped ids are
+   * kept (all corrected) and 48 tasks the old cards bundled or missed ship as
+   * new ids. Two authored cards the build never shipped are withdrawn without
+   * an alias. */
+  ['biology:higher', BIO_HIGHER, 1067, 'eb759d7214831d90b50c9861c89458db9082daf74ba699a906a1bcb0aa7cceed'],
   /* 2026-10-11: biology ordinary 686 -> 873. The 2026 Ordinary sitting is
    * added from the same review (bio_review_2026_ol.py): 183 tasks, 187 cards
    * once the four closed choose-one pools (Q7(c), Q13(b)(vi), Q16(c)(vi),
@@ -834,7 +839,8 @@ describe('Mark Bank card preservation', () => {
     // ...and the 2024 Ordinary review's 44 new ids: 19,840 + 44.
     // ...and the 2023 Higher review's 63 new ids: 19,884 + 63.
     // ...and the 2023 Ordinary review's 83 new ids: 19,947 + 83.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(20_030);
+    // ...and the 2022 Higher review's 48 new ids: 20,030 + 48.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(20_078);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
