@@ -26,6 +26,11 @@ const decks = readdirSync(CARDS, { withFileTypes: true })
     .filter(existsSync)
     .map(path => ({ subject: entry.name, path, text: readFileSync(path, 'utf8') })));
 
+// Identifier fields are keys, never shown; a concept id coined from a misread
+// stem stays as it is so nothing that refers to it is orphaned.
+const IDENTIFIER = /\b(?:id|conceptId|topicId|figureKey|questionFigureKey|labelKey): "(?:[^"\\]|\\.)*"/g;
+const printed = (text: string) => text.replace(IDENTIFIER, '');
+
 const label = (ch: string) => `U+${ch.codePointAt(0)!.toString(16).toUpperCase().padStart(4, '0')}`;
 const escape = (word: string) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
@@ -41,11 +46,29 @@ describe('Mark Bank ligature glyphs', () => {
 
   it('no repaired subject ships a word its text layer misread', () => {
     const words = ligatureWords as Record<string, Record<string, string>>;
-    expect(Object.keys(words).length).toBeGreaterThan(0);
+    // Every subject whose deck shipped a misread word before the repair. Applied
+    // Maths cannot be rebuilt locally, so its deck was repaired in place
+    // (patch_deck_ligatures.py) and its authored card through card-corrections.json.
+    for (const subject of ['applied-maths', 'business', 'chemistry', 'latin', 'physics', 'portuguese',
+      'religious-education', 'technology']) {
+      expect(Object.keys(words[subject] ?? {}).length, subject).toBeGreaterThan(0);
+    }
     const found = decks.flatMap(({ subject, path, text }) => Object.keys(words[subject] ?? {})
-      .filter(word => new RegExp(`(?<![\\p{L}\\p{N}_])${escape(word)}(?![\\p{L}\\p{N}_])`, 'u').test(text))
+      .filter(word => new RegExp(`(?<![\\p{L}\\p{N}_])${escape(word)}(?![\\p{L}\\p{N}_])`, 'u').test(printed(text)))
       .map(word => `${path.split('/cards/')[1]}: "${word}" (printed "${words[subject][word]}")`));
     expect(found).toEqual([]);
+  });
+
+  it('ships Applied Maths 2024 Higher with the printed words and a correction its build will keep', () => {
+    const deck = readFileSync(resolve(CARDS, 'applied-maths/higher.ts'), 'utf8');
+    for (const word of ['labelled with the letters A to L', 'The letters used to label the edges', 'is attached to one end',
+      'is attached to the other end', 'The algebraic formula below is written in terms of']) {
+      expect(deck, word).toContain(word);
+    }
+    const corrections = JSON.parse(readFileSync(resolve(__dirname, '../scripts/markbank/card-corrections.json'), 'utf8'));
+    const text = corrections['applied-maths']['am-2024-hl-8-b'].set.questionText as string;
+    expect(text).toContain('is written in terms of');
+    expect(deck).toContain(`questionText: ${JSON.stringify(text)}`);
   });
 
   it('reads the tt and tti ligatures by glyph id, and the character map agrees', () => {

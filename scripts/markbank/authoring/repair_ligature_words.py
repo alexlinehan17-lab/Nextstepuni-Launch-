@@ -12,8 +12,8 @@ prints correctly, or one that would repair two ways, is refused, never guessed.
   * examiner-reports/<subject>/schemes/<year>-<hl|ol>.md take their scheme PDF's
     repairs. Only the misread words change, so quotes do not shift.
   * scripts/markbank/authored/<subject>.json cards take the repairs of their
-    year and level's scheme and papers. IDs and every other field are kept;
-    author notes, which never ship, are left as written.
+    year and level's scheme and papers. IDs, concept and figure keys and every
+    other field are kept; author notes, which never ship, are left as written.
 
 Every misread form found in the subject's papers and schemes is written to
 authoring/ligature_words.json; the build refuses a card carrying one and the
@@ -97,7 +97,12 @@ def fix_text(text, chars, words):
     return text, counts
 
 
-def walk(node, fn, skip=('notes',)):
+# Author notes never ship; identifiers are keys, not printed text, and changing
+# one would orphan whatever refers to it.
+SKIP = ('notes', 'id', 'conceptId', 'topicId', 'figureKey', 'questionFigureKey', 'labelKey')
+
+
+def walk(node, fn, skip=SKIP):
     if isinstance(node, dict):
         for k in list(node):
             if k in skip:

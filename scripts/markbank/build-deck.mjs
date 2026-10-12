@@ -764,11 +764,26 @@ const LIGATURE_WORDS = (() => {
   return JSON.parse(readFileSync(path, 'utf8'));
 })();
 
+/* Identifiers are keys, never shown: a concept id coined from a misread
+ * stem ("...-writen-force-...") is left alone, because renaming it would orphan
+ * whatever refers to it. Every printed string is still checked. */
+const LIGATURE_IDENTIFIER_KEYS = new Set(['id', 'conceptId', 'topicId', 'figureKey', 'questionFigureKey', 'labelKey', 'replacementId']);
+
+function printedStrings(node, out = []) {
+  if (Array.isArray(node)) node.forEach(v => (typeof v === 'string' ? out.push(v) : printedStrings(v, out)));
+  else if (node && typeof node === 'object') {
+    for (const [k, v] of Object.entries(node)) {
+      if (LIGATURE_IDENTIFIER_KEYS.has(k)) continue;
+      if (typeof v === 'string') out.push(v);
+      else printedStrings(v, out);
+    }
+  }
+  return out;
+}
+
 function misreadLigatures(card) {
-  const seen = [];
   const { notes, ...shipped } = card;
-  walkStrings(shipped, (v) => { seen.push(v); return v; });
-  const text = seen.join(' ');
+  const text = printedStrings(shipped).join(' ');
   const code = text.match(LIGATURE_CODEPOINTS);
   if (code) return `ligature glyph U+${code[0].codePointAt(0).toString(16).toUpperCase().padStart(4, '0')} still on the card`;
   const words = Object.keys(LIGATURE_WORDS[SUBJECT_ID] ?? {});
