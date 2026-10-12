@@ -47,7 +47,7 @@ Wording: the paper wins where the scheme reprints it differently (1B
 """
 
 from geography_review import (
-    Criterion, Lift, Route, SchemeSlice, Task, fixed, srp, steps, sums,
+    Criterion, Lift, Route, SchemeSlice, Task, pool, fixed, srp, steps, sums,
 )
 
 YEAR = 2026
@@ -102,8 +102,8 @@ SELECTION_REVIEW = [
      'reason': '2C: one of four printed bullets -> four routes.'},
     {'scan': [[2, 6, 'one of the following']], 'kind': 'closed-choose-one',
      'reason': '3C: one of three printed surface processes -> three routes.'},
-    {'scan': [[2, 8, 'any two']], 'kind': 'closed-choose-two',
-     'reason': '5B: any two of three printed activities -> C(3,2) = 3 routes.'},
+    {'scan': [[2, 8, 'any two']], 'kind': 'choose-n-one-card',
+     'reason': '5B: any two of three printed activities -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
     {'scan': [[2, 12, 'one of the following']], 'kind': 'closed-choose-one',
      'reason': '7B: one of three printed activities -> three routes.'},
     {'scan': [[1, 4, 'any two'], [2, 3, 'any two'], [2, 3, 'any two'], [2, 7, 'any one'],
@@ -131,9 +131,10 @@ def srp3(label, count, line):
 
 
 def T(key, part, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas, card_id,
-      legacy, sources=(), stem=(), routes=(), row_labels=()):
+      legacy, sources=(), stem=(), routes=(), row_labels=(), absorbs=()):
     return Task(key, part, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas,
-                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels)
+                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels,
+                absorbs=absorbs)
 
 
 def rows(lines, marks=2):
@@ -541,9 +542,7 @@ PART_TWO.append(T(
      srp3('Activity 1 explained', 6, 'Activity 1 explained 6 SRPs @ 3m each · 18m'),
      srp3('Activity 2 explained', 6, 'Activity 2 explained 6 SRPs @ 3m each · 18m')),
     '1-6', CONT, ID + 'p2-q5b-' + ACTIVITY_IDS[0], True,
-    routes=tuple(Route(slug, ' + '.join(ACTIVITIES[i].rstrip('.') for i in pair), ID + 'p2-q5b-' + slug, True,
-                       keep_bullets=tuple(ACTIVITIES[i] for i in pair))
-                 for pair, slug in zip(ACTIVITY_PAIRS, ACTIVITY_IDS))))
+    absorbs=tuple(ID + 'p2-q5b-' + slug for slug in ACTIVITY_IDS[1:])))
 PART_TWO += romans('5C', 8, L(8, 'Characteristics of Regions'), (), ID + 'p2-q5c', (), [
     ('(i)', 15, L(8, '(i) Name one example of a core region', 'is a core region.'),
      S(17, 'Valid core region named', '(ii) · Name one example of a peripheral'),

@@ -94,7 +94,8 @@ PART_TWO_MARKS = {
 # companion tasks.
 COMPANION_SOURCE_YEARS = frozenset({2026})
 
-SPACE_CHARS = ('\xa0', '\u2007', '\u202f')
+# U+F020 is the Symbol-font space some schemes and papers set after a bullet.
+SPACE_CHARS = ('\xa0', '\u2007', '\u202f', '\uf020')
 LIGATURES = {
     '\u00ad': '', '\ufb00': 'ff', '\ufb01': 'fi', '\ufb02': 'fl',
     '\ufb03': 'ffi', '\ufb04': 'ffl',
@@ -158,6 +159,13 @@ INLINE_CHOICES: tuple[tuple[re.Pattern[str], tuple[tuple[str, str], ...]], ...] 
         ),
     ),
 )
+
+
+CHOICE_IS_NOT_A_ROUTE = (
+    'Choice is not a route: the student chooses which N of the M printed items '
+    'to answer and the scheme marks each chosen item with the same allocation, '
+    'so the printed question, with every item, is one card. Saved progress '
+    'moves to the card kept on the first printed combination.')
 
 
 def clean_unicode(value: str) -> str:
@@ -653,6 +661,8 @@ class Variant:
     question_text: str
     requirements: list[str]
     selection_kind: str
+    # Slugs of the combination cards this one card absorbs (choose-N pools).
+    absorbs: tuple[str, ...] = ()
 
 
 def split_i_ii(question_text: str) -> list[Variant] | None:
@@ -689,7 +699,9 @@ def apply_inline_choices(variant: Variant) -> list[Variant]:
                 next_variants.append(Variant(
                     slug='-'.join(filter(None, (current.slug, choice_slug))),
                     label=' · '.join(filter(None, (current.label, label))),
-                    question_text=pattern.sub(label, current.question_text, count=1),
+                    # The printed question stays verbatim; the option rides in
+                    # questionRef and the task requirement.
+                    question_text=current.question_text,
                     requirements=[*current.requirements, f'Use the printed route: {label}.'],
                     selection_kind=(current.selection_kind + '+inline-choice').strip('+'),
                 ))
@@ -704,10 +716,23 @@ def apply_bullet_choices(variant: Variant) -> list[Variant]:
     choose, items, (first, last) = pool
     lines = variant.question_text.splitlines()
     out: list[Variant] = []
+    if choose >= 2:
+        # Choice is not a route: one card, the printed question verbatim with
+        # every item. It keeps the first printed combination's id.
+        combos = ['-'.join(slug(item, 34) for item in selected)
+                  for selected in itertools.combinations(items, choose)]
+        return [Variant(
+            slug='-'.join(filter(None, (variant.slug, combos[0]))),
+            label=variant.label,
+            question_text=variant.question_text,
+            requirements=list(variant.requirements),
+            selection_kind=(variant.selection_kind
+                            + f'+choose-{choose}-of-{len(items)}-one-card').strip('+'),
+            absorbs=tuple('-'.join(filter(None, (variant.slug, combo))) for combo in combos[1:]),
+        )]
     for selected in itertools.combinations(items, choose):
         labels = ' + '.join(selected)
-        selected_lines = [f'• {item}' for item in selected]
-        question_text = '\n'.join([*lines[:first], *selected_lines, *lines[last + 1:]])
+        question_text = variant.question_text
         out.append(Variant(
             slug='-'.join(filter(None, (variant.slug, *[slug(item, 34) for item in selected]))),
             label=' · '.join(filter(None, (variant.label, labels))),
@@ -732,23 +757,21 @@ def apply_table_choices(variant: Variant) -> list[Variant]:
         'Population dynamics', 'Language', 'Religion',
         'Urban development', 'Rural development',
     )
-    tail = phrase.sub(
-        'Examine the impact of the following two factors',
-        variant.question_text, count=1)
-    out: list[Variant] = []
-    for selected in itertools.combinations(items, 2):
-        labels = ' + '.join(selected)
-        question_text = f'{tail}\n• {selected[0]}\n• {selected[1]}'
-        out.append(Variant(
-            slug='-'.join(filter(None, (
-                variant.slug, *[slug(item, 34) for item in selected]))),
-            label=' · '.join(filter(None, (variant.label, labels))),
-            question_text=question_text,
-            requirements=[*variant.requirements,
-                          f'Use the selected printed route: {labels}.'],
-            selection_kind=(variant.selection_kind + '+choose-2-of-5-table').strip('+'),
-        ))
-    return out
+    # Choice is not a route: one card with the printed question verbatim,
+    # the table's five printed cells on their own line above the ask.
+    combos = ['-'.join(slug(item, 34) for item in selected)
+              for selected in itertools.combinations(items, 2)]
+    table = ' '.join(items)
+    if not variant.question_text.startswith(table + ' '):
+        raise AssertionError(f'table pool not printed as {table!r}')
+    return [Variant(
+        slug='-'.join(filter(None, (variant.slug, combos[0]))),
+        label=variant.label,
+        question_text=' · '.join(items) + '\n' + variant.question_text[len(table) + 1:],
+        requirements=list(variant.requirements),
+        selection_kind=(variant.selection_kind + '+choose-2-of-5-table-one-card').strip('+'),
+        absorbs=tuple('-'.join(filter(None, (variant.slug, combo))) for combo in combos[1:]),
+    )]
 
 
 def variants_for(question_text: str) -> list[Variant]:
@@ -1091,6 +1114,7 @@ def reviewed_sitting(year: int, level: str, review: Any,
     companions = {kind: companion_material(kind, year) for kind in ('map', 'legend', 'aerial')}
     cards: list[dict[str, Any]] = []
     tasks_out, base_tasks, selection_rows = [], [], []
+    absorbed_pairs: list[tuple[str, str]] = []
     totals: dict[tuple[int, str], int] = {}
     atlas: dict[tuple[int, str], set[str]] = {}
     for task in review.TASKS:
@@ -1117,6 +1141,14 @@ def reviewed_sitting(year: int, level: str, review: Any,
             selection_rows.append({'questionRef': ref, 'classification': 'finite-expanded',
                                    'variants': len(task_cards),
                                    'kinds': ['reviewed-printed-route']})
+        absorbed = [(old, task.card_id) for old in task.absorbs] + [
+            (old, route.card_id) for route in task.routes for old in route.absorbs]
+        if absorbed:
+            selection_rows.append({'questionRef': ref, 'classification': 'single-card-choice',
+                                   'variants': len(task_cards),
+                                   'kinds': ['reviewed-choose-n-of-m'],
+                                   'combinationsAbsorbed': len(absorbed)})
+        absorbed_pairs.extend(absorbed)
         tasks_out.append({
             'key': task.key, 'questionRef': ref, 'marks': task.marks,
             'paperPage': task.page,
@@ -1142,10 +1174,17 @@ def reviewed_sitting(year: int, level: str, review: Any,
     if len(ids) != len(set(ids)):
         raise AssertionError(f'{year} {level}: duplicate reviewed card id')
     legacy = set(review.LEGACY_IDS)
-    if not legacy <= set(ids):
-        raise AssertionError(f'{year} {level}: lost legacy ids {sorted(legacy - set(ids))}')
+    # A shipped combination card that its choose-N question now absorbs keeps
+    # its identity through a progress alias; a branch-only one simply goes.
+    for old, _canonical in absorbed_pairs:
+        if old in ids:
+            raise AssertionError(f'{old}: absorbed by its choose-N card yet still emitted')
+    aliases = {old: canonical for old, canonical in absorbed_pairs if old in legacy}
+    if not legacy <= set(ids) | set(aliases):
+        raise AssertionError(
+            f'{year} {level}: lost legacy ids {sorted(legacy - set(ids) - set(aliases))}')
     flagged = {t.card_id for t in review.TASKS if t.legacy and not t.routes} | {
-        r.card_id for t in review.TASKS for r in t.routes if r.legacy}
+        r.card_id for t in review.TASKS for r in t.routes if r.legacy} | set(aliases)
     if flagged != legacy:
         raise AssertionError(f'{year} {level}: legacy flags disagree with LEGACY_IDS: '
                              f'{sorted(flagged ^ legacy)}')
@@ -1168,14 +1207,17 @@ def reviewed_sitting(year: int, level: str, review: Any,
         'questionTotals': {f'Part {p} Q{q}': m for (p, q), m in sorted(totals.items())},
         'taskCount': len(review.TASKS), 'cardCount': len(cards),
         'legacyIds': sorted(legacy), 'addedIds': sorted(set(ids) - legacy),
-        'idCorrections': corrections, 'tasks': tasks_out,
+        'idCorrections': corrections,
+        'aliases': [{'id': old, 'canonicalId': new} for old, new in sorted(aliases.items())],
+        'tasks': tasks_out,
         'rule': (review.__doc__ or '').strip(),
     }
     sitting_row = {'year': year, 'level': level, 'paperBaseTasks': len(review.TASKS),
                    'includedBaseTasks': len(review.TASKS), 'excludedBaseTasks': 0,
                    'authoredCardsAfterFiniteExpansion': len(cards), 'reviewed': True}
     return {'cards': cards, 'baseTasks': base_tasks, 'sitting': sitting_row,
-            'selection': selection_rows, 'audit': audit, 'atlas': atlas_rows}
+            'selection': selection_rows, 'audit': audit, 'atlas': atlas_rows,
+            'aliases': aliases}
 
 
 def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -1188,6 +1230,7 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
 
     reviewed_audits: list[dict[str, Any]] = []
     atlas_rows: list[dict[str, Any]] = []
+    aliases: dict[str, str] = {}
     topic_ids = canonical_topic_ids()
     with open(CROSSWALK, encoding='utf-8') as handle:
         crosswalk = json.load(handle)
@@ -1200,6 +1243,7 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                 base_tasks.extend(built['baseTasks'])
                 sittings.append(built['sitting'])
                 selection_audit.extend(built['selection'])
+                aliases.update(built['aliases'])
                 reviewed_audits.append(built['audit'])
                 atlas_rows.extend(built['atlas'])
                 continue
@@ -1256,7 +1300,7 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                 variants = (variants_for(question.question_text) if selectable_task
                             else [Variant('', '', question.question_text, [], 'none')])
                 if (selectable_task and selection_directive(question.question_text)
-                        and len(variants) == 1):
+                        and len(variants) == 1 and not variants[0].absorbs):
                     raise AssertionError(
                         f'{ref_label}: finite selection directive was not expanded')
                 if len(variants) > 1:
@@ -1265,6 +1309,15 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                         'classification': 'finite-expanded',
                         'variants': len(variants),
                         'kinds': sorted({variant.selection_kind for variant in variants}),
+                    })
+                absorbed = sum(len(variant.absorbs) for variant in variants)
+                if absorbed:
+                    selection_audit.append({
+                        'questionRef': ref_label,
+                        'classification': 'single-card-choice',
+                        'variants': len(variants),
+                        'kinds': sorted({variant.selection_kind for variant in variants}),
+                        'combinationsAbsorbed': absorbed,
                     })
                 for variant_index, variant in enumerate(variants, start=1):
                     # Q6C originally shipped as one unsplit card. Keep that
@@ -1281,6 +1334,9 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                     card_id = (
                         f'geography-{year}-{LEVEL_SHORT[level]}-p{question.part}-'
                         f'q{question.ref.lower()}{route_suffix}')
+                    for absorbed_slug in variant.absorbs:
+                        aliases[(f'geography-{year}-{LEVEL_SHORT[level]}-p{question.part}-'
+                                 f'q{question.ref.lower()}-{absorbed_slug}')] = card_id
                     topic_id = topic_for(question)
                     kind = ('exact' if question.part == 1 or question.ref.endswith('A')
                             else 'srp')
@@ -1295,8 +1351,9 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                     if external_source and not sources:
                         raise AssertionError(
                             f'{ref_label}: published companion source set is incomplete')
+                    # A choose-N card keeps every printed item in its text.
                     display_question = (question_only_text(variant.question_text)
-                                        if sources
+                                        if sources and not variant.absorbs
                                         else variant.question_text)
                     card: dict[str, Any] = {
                         'id': card_id,
@@ -1355,10 +1412,13 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
         'sittings': sittings,
         'selectionAudit': selection_audit,
         'exclusions': excluded,
+        'aliases': [{'id': old, 'canonicalId': new, 'reason': CHOICE_IS_NOT_A_ROUTE}
+                    for old, new in sorted(aliases.items())],
         'rule': (
             'One Part One short question, one separately selectable Part Two '
             'A/B/C task, or one Higher-Level option is a base task. Every finite '
-            'printed route and choose-N combination is expanded. Tasks needing '
+            'printed route is expanded; a choose-N-of-M pool (N >= 2) is one card '
+            'with the printed question verbatim (choice is not a route). Tasks needing '
             'a missing separate OS map/aerial source are census-held, never '
             'presented as answerable. Independently reviewed sittings '
             '(geography-reviewed-audit.json) instead take one base task per '

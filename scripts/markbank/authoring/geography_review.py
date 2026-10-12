@@ -279,6 +279,9 @@ class Route:
     # A route whose printed choice is the evidence itself ("the aerial
     # photograph OR the Ordnance Survey map") carries only that evidence.
     sources: tuple[str, ...] | None = None
+    # Card ids this route's card absorbs: shipped combination cards of a
+    # choose-N-of-M pool that is now one card (choice is not a route).
+    absorbs: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -302,6 +305,8 @@ class Task:
     routes: tuple[Route, ...] = ()
     row_labels: tuple[Lift | None, ...] = ()
     note: str = ''
+    # Card ids absorbed by this task's single card (see Route.absorbs).
+    absorbs: tuple[str, ...] = ()
 
 
 def sums(*options: Sequence[int]) -> tuple[int, ...]:
@@ -333,6 +338,18 @@ def fixed(label: str, marks: int, line: str | Sequence[str],
           permitted: Sequence[int] | None = None, kind: str = 'exact') -> Criterion:
     lines = (line,) if isinstance(line, str) else tuple(line)
     return Criterion(label, marks, tuple(permitted) if permitted else (0, marks), kind, lines)
+
+
+def pool(id_prefix: str, items: Sequence[str], k: int) -> tuple[str, tuple[str, ...]]:
+    """Choice is not a route: a printed choose-k-of-M pool (k >= 2) is ONE card.
+
+    Returns the id of the first printed combination (kept so saved progress
+    survives) and the ids of every other combination, which that card absorbs."""
+    if k < 2:
+        raise AssertionError('a choose-one pool is a route per printed option')
+    combos = ['-'.join(slug(item, 34) for item in combo)
+              for combo in itertools.combinations(items, k)]
+    return id_prefix + combos[0], tuple(id_prefix + combo for combo in combos[1:])
 
 
 def ref_label(year: int, level: str, task: Task) -> str:
@@ -412,19 +429,23 @@ def build_task_cards(sitting: Sitting, task: Task, fileid: str,
         raise AssertionError(f'{task.key}: the first route must keep the task id')
     cards = []
     for route in routes:
+        # The card shows the printed question verbatim. A choose-ONE route
+        # names its printed option in questionRef; it never trims or rewrites
+        # the printed text. Both anchors are still checked against the paper.
         text = prompt_for(route.prompt or task.prompt)
-        for old, new in route.replace:
+        for old, _option in route.replace:
             if text.count(old) != 1:
                 raise AssertionError(f'{task.key} {route.slug}: route text {old!r} '
                                      f'found {text.count(old)} times')
-            text = text.replace(old, new)
         if route.keep_bullets is not None:
+            if len(route.keep_bullets) != 1:
+                raise AssertionError(
+                    f'{task.key} {route.slug}: a choose-N-of-M pool (N >= 2) is one '
+                    'card, not a route per combination')
             bullets = [line for line in text.splitlines() if line.startswith('• ')]
             keep = [f'• {item}' for item in route.keep_bullets]
             if not set(keep) <= set(bullets):
                 raise AssertionError(f'{task.key} {route.slug}: {keep} not in {bullets}')
-            text = '\n'.join(line for line in text.splitlines()
-                             if not line.startswith('• ') or line in keep)
         scheme_slices = route.scheme or task.scheme
         lines: list[str] = []
         for piece in scheme_slices:

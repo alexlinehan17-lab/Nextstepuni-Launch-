@@ -42,7 +42,7 @@ Q4 table's blank rows are labelled by position, never by the answer.
 import itertools
 
 from geography_review import (
-    Criterion, Lift, Route, SchemeSlice, Task, evens, fixed, slug, srp, sums, upto,
+    Criterion, Lift, Route, SchemeSlice, Task, pool, evens, fixed, slug, srp, sums, upto,
 )
 
 YEAR = 2025
@@ -100,16 +100,16 @@ SELECTION_REVIEW = [
      'reason': '2B: (i) or (ii); (i) offers one fluvial OR one coastal OR one glacial landform -> 4 routes.'},
     {'scan': [[2, 5, 'one of the following'], [2, 5, 'one of the following']], 'kind': 'closed-choose-one',
      'reason': '3B one of four printed bullets -> 4 routes; 3C one of two (folding, faulting) -> 2 routes.'},
-    {'scan': [[2, 10, 'any two']], 'kind': 'closed-choose-two',
-     'reason': '7B any two of three printed headings -> 3 routes.'},
-    {'scan': [[2, 12, 'two of the following']], 'kind': 'closed-choose-two-of-three-x-activity',
-     'reason': '9B two of three printed factors for footloose industries OR financial services OR mass tourism -> 3 x 3 = 9 routes.'},
-    {'scan': [[2, 13, 'two of the following']], 'kind': 'closed-choose-two',
-     'reason': '10B two of three printed urban problems -> 3 routes.'},
+    {'scan': [[2, 10, 'any two']], 'kind': 'choose-n-one-card',
+     'reason': '7B any two of three printed headings -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
+    {'scan': [[2, 12, 'two of the following']], 'kind': 'closed-choose-one-x-choose-n-one-card',
+     'reason': '9B footloose industries OR financial services OR mass tourism -> 3 routes; within each, two of three printed factors -> one card with every printed factor (choice is not a route).'},
+    {'scan': [[2, 13, 'two of the following']], 'kind': 'choose-n-one-card',
+     'reason': '10B two of three printed urban problems -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
     {'scan': [[2, 15, 'any one']], 'kind': 'closed-choose-one',
      'reason': '11C any one of three printed factors -> 3 routes.'},
-    {'scan': [[2, 18, 'any three'], [2, 18, 'any three']], 'kind': 'closed-choose-three',
-     'reason': '14 any three of four themes -> 4 routes; 16 any three of four processes -> 4 routes.'},
+    {'scan': [[2, 18, 'any three'], [2, 18, 'any three']], 'kind': 'choose-n-one-card',
+     'reason': '14 any three of four themes and 16 any three of four processes -> one card each with every printed item (choice is not a route; the scheme marks each chosen aspect alike).'},
     {'scan': [], 'kind': 'inline-closed-route',
      'reason': '5C "climate or geomorphology" -> 2 routes (no directive word the scan reads; the route text is anchored on the paper).'},
     {'scan': [[1, 7, 'any two']], 'kind': 'open-response',
@@ -133,9 +133,10 @@ def S(page, start, end=None, clip=None, after=None, table=False):
 
 
 def T(key, part, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas, card_id,
-      legacy, sources=(), stem=(), routes=(), row_labels=()):
+      legacy, sources=(), stem=(), routes=(), row_labels=(), absorbs=()):
     return Task(key, part, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas,
-                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels)
+                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels,
+                absorbs=absorbs)
 
 
 def rows(lines, marks=1):
@@ -419,6 +420,8 @@ PART_TWO += romans('2A', 4, L(4, 'The Tectonic Cycle'), Q2AS, ID + 'p2-q2a', ('p
      (pair('(vi) · Valid explanation · 2 + 2 marks', 'First way'), pair('=2 + 2 marks', 'Second way')), '0-7', EV),
 ])
 
+MNC_HEADINGS = ('Sourcing of raw materials and components', 'Location of processing units', 'Location of markets.')
+URBAN_PROBLEMS = ('Pollution', 'Transport', 'Housing.')
 PART_TWO += [
     T('p2-2b', P2, '2B', '', 30, 4, L(4, 'Surface Processes'),
       (L(4, '(i) Examine the role of the process of deposition', 'that you have studied.'),),
@@ -575,9 +578,7 @@ PART_TWO += [
        srp('Description and explanation 1', 7, 'Description and explanation 1 · 7 x SRPs'),
        srp('Description and explanation 2', 7, 'Description and explanation 2 · 7 x SRPs')),
       '3-2', (H + 'economic-multinationals-globalisation',),
-      ID + 'p2-q7b-sourcing-of-raw-materials-and-comp-location-of-processing-units', True,
-      routes=bullet_routes('p2-q7b-', ('Sourcing of raw materials and components', 'Location of processing units',
-                                        'Location of markets.'), 2)),
+      *pool(ID + 'p2-q7b-', MNC_HEADINGS, 2)[:1], True, absorbs=pool(ID + 'p2-q7b-', MNC_HEADINGS, 2)[1]),
     T('p2-7c', P2, '7C', '', 30, 10, L(10, 'Colonialism'),
       (L(10, 'Examine the challenges resulting from colonialism', 'have studied.'),),
       (S(27, 'Challenges identified · 2 + 2 marks', 'Annotation'),),
@@ -644,11 +645,12 @@ PART_TWO += [
        srp('Examination of factor 1', 7, 'Examination of factor 1 · 7 x SRPs'),
        srp('Examination of factor 2', 7, 'Examination of factor 2 · 7 x SRPs')),
       '3-0', (H + 'elective-economic',), ID + 'p2-q9b-footloose-industries-physical-factors-political-factors', True,
-      routes=tuple(Route(f'{slug(activity)}-{pair_slug}', f'{activity} · {label}',
-                         ID + f'p2-q9b-{slug(activity)}-{pair_slug}', True, ((ACTIVITY, activity),),
-                         keep_bullets=combo)
-                   for activity in ('footloose industries', 'financial services', 'mass tourism')
-                   for combo, label, pair_slug in chosen(FACTORS, 2))),
+      # Choose ONE printed activity (a route each); the choose-two factor pool
+      # within it is one card.
+      routes=tuple(Route(f'{slug(activity)}-{pool("", FACTORS, 2)[0]}', activity,
+                         ID + f'p2-q9b-{slug(activity)}-{pool("", FACTORS, 2)[0]}', True, ((ACTIVITY, activity),),
+                         absorbs=pool(ID + f'p2-q9b-{slug(activity)}-', FACTORS, 2)[1])
+                   for activity in ('footloose industries', 'financial services', 'mass tourism'))),
     T('p2-9c', P2, '9C', '', 30, 12, L(12, 'Renewable Energy', nth=0),
       (L(12, 'With reference to one specific renewable energy source', 'Environmental advantages.'),),
       (S(34, 'Renewable energy source named · 2 marks', 'Annotation'),),
@@ -668,8 +670,8 @@ PART_TWO += [
       (fixed('Example', 2, 'Example · 2 marks'),
        srp('Examination of problem 1', 7, 'Examination of problem 1 · 7 x SRPs'),
        srp('Examination of problem 2', 7, 'Examination of problem 2 · 7 x SRPs')),
-      '4-5', (H + 'human-urban-geography',), ID + 'p2-q10b-pollution-transport', True,
-      routes=bullet_routes('p2-q10b-', ('Pollution', 'Transport', 'Housing.'), 2)),
+      '4-5', (H + 'human-urban-geography',), *pool(ID + 'p2-q10b-', URBAN_PROBLEMS, 2)[:1], True,
+      absorbs=pool(ID + 'p2-q10b-', URBAN_PROBLEMS, 2)[1]),
     T('p2-10c', P2, '10C', '', 30, 13, L(13, 'Migration', nth=0),
       (L(13, 'Population movements have an impact on donor and receiver regions.', 'that you have studied.'),),
       (S(37, 'Impact on donor region identified · 2 marks', 'Annotation'),),
@@ -746,7 +748,8 @@ OC = (S(47, '*Overall Coherence (20 marks)', None, table=True),)
 NOTE_P17 = L(17, 'Note: It is better to discuss', 'large number of points.')
 
 
-def option(q, page, theme, note, prompt, scheme_page, topic, atlas, routes=()):
+def option(q, page, theme, note, prompt, scheme_page, topic, atlas, choice=None):
+    card_id, absorbs = choice or (ID + f'p2-q{q}', ())
     return T(f'p2-{q}', P2, q, '', 80, page, theme, (prompt,),
              (S(scheme_page, 'Number of aspects', None), *OC),
              (Criterion('Aspects (3 @ 20 marks or 4 @ 15 marks)', 60, upto(60), 'srp',
@@ -754,8 +757,7 @@ def option(q, page, theme, note, prompt, scheme_page, topic, atlas, routes=()):
               Criterion('Overall coherence', 20, (0, 6, 10, 14, 17, 20), 'exact',
                         ('Overall Coherence · 20 marks graded*', '*Overall Coherence (20 marks)', 'Excellent · 20',
                          'Very Good · 17', 'Good · 14', 'Fair · 10', 'Weak · 6', 'Poor · 0'))),
-             topic, (atlas,), routes[0].card_id if routes else ID + f'p2-q{q}', True,
-             stem=(note,), routes=routes)
+             topic, (atlas,), card_id, True, stem=(note,), absorbs=absorbs)
 
 
 GI, GE = H + 'option-global-interdependence', H + 'option-geoecology'
@@ -765,14 +767,14 @@ OPTIONS = [
            L(18, 'We live in an interdependent global economy.', 'Human rights issues.'), 49, '5-1', GI),
     option('14', 18, L(18, 'Global Interdependence'), NOTE_P17,
            L(18, 'Empowering people is a way of linking', 'Differing gender roles in society.'), 50, '5-2', GI,
-           routes=bullet_routes('p2-q14-', ('National debt', 'Aid programmes',
-                                            'Levels of exploitation at local and global scales',
-                                            'Differing gender roles in society.'), 3)),
+           choice=pool(ID + 'p2-q14-', ('National debt', 'Aid programmes',
+                                        'Levels of exploitation at local and global scales',
+                                        'Differing gender roles in society.'), 3)),
     option('15', 18, L(18, 'Global Interdependence'), NOTE_P17,
            L(18, 'Examine sustainable development as a model for future development.'), 51, '5-3', GI),
     option('16', 18, L(18, 'Geoecology'), L(18, 'Note: It is better to discuss', 'large number of points.'),
            L(18, 'Examine how any three of the following processes', 'Soil erosion.'), 52, '6-1', GE,
-           routes=bullet_routes('p2-q16-', ('Weathering', 'Podzolisation', 'Calcification', 'Soil erosion.'), 3)),
+           choice=pool(ID + 'p2-q16-', ('Weathering', 'Podzolisation', 'Calcification', 'Soil erosion.'), 3)),
     option('17', 18, L(18, 'Geoecology'), L(18, 'Note: It is better to discuss', 'large number of points.'),
            L(18, 'Examine the influence of mineral matter', 'soil development.'), 53, '6-0', GE),
     option('18', 18, L(18, 'Geoecology'), L(18, 'Note: It is better to discuss', 'large number of points.'),

@@ -49,7 +49,7 @@ printed above them and are not carried into guidance.
 """
 
 from geography_review import (
-    Criterion, Lift, Route, SchemeSlice, Task, evens, fixed, srp, upto,
+    Criterion, Lift, Route, SchemeSlice, Task, pool, evens, fixed, srp, upto,
 )
 
 YEAR = 2026
@@ -101,10 +101,10 @@ SELECTION_REVIEW = [
      'reason': '2B: (i) or (ii); route (i) itself offers one fluvial OR one coastal OR one glacial landform. Four routes: (i) x 3 landform families + (ii).'},
     {'scan': [[2, 5, 'one of the following']], 'kind': 'closed-choose-one',
      'reason': '3B: one of three printed bullets -> three routes.'},
-    {'scan': [[2, 8, 'any two']], 'kind': 'closed-choose-two',
-     'reason': '5C: any two of four printed factors -> C(4,2) = 6 routes.'},
-    {'scan': [[2, 18, 'three of the following']], 'kind': 'closed-choose-three',
-     'reason': '14: three of four printed themes -> C(4,3) = 4 routes.'},
+    {'scan': [[2, 8, 'any two']], 'kind': 'choose-n-one-card',
+     'reason': '5C: any two of four printed factors -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
+    {'scan': [[2, 18, 'three of the following']], 'kind': 'choose-n-one-card',
+     'reason': '14: three of four printed themes -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
     {'scan': [[2, 6, 'any two']], 'kind': 'open-response',
      'reason': '4B "any two factors" names no printed factor list, so it is an open choice. Open choices are not fanned out: "two features" (2A ii), "two pyroclastic materials", "one example", "two factors" (4B), "example(s)", "any city" (10B), "one multinational company", "one biome", "one global climate type", "a European region", "one developing world city", "one tertiary economic activity", "one source of renewable energy", "two countries". Required lists are compulsory: 1C sedimentary AND metamorphic, the sketch-map feature bullets, 21 nationality, language and religion.'},
 ]
@@ -355,9 +355,10 @@ PART_ONE += [
 
 # ---------------------------------------------------------------- Part Two --
 def T(key, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas, card_id,
-      legacy, sources=(), stem=(), routes=(), row_labels=()):
+      legacy, sources=(), stem=(), routes=(), row_labels=(), absorbs=()):
     return Task(key, P2, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas,
-                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels)
+                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels,
+                absorbs=absorbs)
 
 
 def roman_parts(q, page, title, stem, first_id, sources, parts):
@@ -587,9 +588,8 @@ PART_TWO += [
       (S(20, 'Examination of Factor 1', 'Annotation'),),
       (srp('Examination of the two factors (8/7 and 7/8 SRPs)', 15,
            ('Examination of Factor 1 · 8/7 x SRPs', 'Examination of Factor 2 · 7/8 x SRPs')),),
-      '1-5', (H + 'regions-european',), ID + 'p2-q5c-labour-transport', True,
-      routes=tuple(Route(route_slug, label, ID + 'p2-q5c-' + route_slug, True, keep_bullets=combo)
-                   for combo, label, route_slug in chosen(FACTORS, 2))),
+      '1-5', (H + 'regions-european',), *pool(ID + 'p2-q5c-', FACTORS, 2)[:1], True,
+      absorbs=pool(ID + 'p2-q5c-', FACTORS, 2)[1]),
 ]
 
 Q6A_STEM = (L(9, 'Examine the charts above showing the value of Irish industrial production', 'following questions.'),)
@@ -794,7 +794,8 @@ PART_TWO += [
 OC = (S(44, '*Overall Coherence (20 marks)', None, table=True),)
 
 
-def option(q, page, theme, note_nth, prompt, scheme_page, discussion, topic, atlas, routes=()):
+def option(q, page, theme, note_nth, prompt, scheme_page, discussion, topic, atlas, choice=None):
+    card_id, absorbs = choice or (ID + f'p2-q{q}', ())
     return T(f'p2-{q}', q, '', 80, page, theme, (prompt,),
              (S(scheme_page, 'Number of aspects', None), *OC),
              (Criterion('Aspects (3 @ 20 marks or 4 @ 15 marks)', 60, upto(60), 'srp',
@@ -802,9 +803,9 @@ def option(q, page, theme, note_nth, prompt, scheme_page, discussion, topic, atl
               Criterion('Overall coherence', 20, (0, 6, 10, 14, 17, 20), 'exact',
                         ('Overall Coherence · 20 marks graded*', '*Overall Coherence (20 marks)', 'Excellent · 20', 'Very Good · 17',
                          'Good · 14', 'Fair · 10', 'Weak · 6', 'Poor · 0'))),
-             topic, (atlas,), (routes[0].card_id if routes else ID + f'p2-q{q}'), True,
+             topic, (atlas,), card_id, True,
              stem=(L(page, 'Note: It is better to discuss three or four aspects', 'large number of points.', nth=note_nth),),
-             routes=routes)
+             absorbs=absorbs)
 
 
 GI, GE = H + 'option-global-interdependence', H + 'option-geoecology'
@@ -815,8 +816,7 @@ OPTIONS = [
            46, 'Discussion · 8 x SRPs', '5-0', GI),
     option('14', 18, L(18, 'Global Interdependence'), 0, L(18, 'Sustainability is a model', 'Self-reliance.'),
            47, 'Discussion · 8 x SRPs', '5-3', GI,
-           routes=tuple(Route(route_slug, label, ID + 'p2-q14-' + route_slug, True, keep_bullets=combo)
-                        for combo, label, route_slug in chosen(THEMES, 3))),
+           choice=pool(ID + 'p2-q14-', THEMES, 3)),
     option('15', 18, L(18, 'Global Interdependence'), 0, L(18, 'Discuss the impact of global trading patterns', 'that you have studied.'),
            48, 'Discussion · 8 x SRPs', '5-1', GI),
     option('16', 18, L(18, 'Geoecology'), 1, L(18, 'Explain how soil characteristics impact on soil development.'),

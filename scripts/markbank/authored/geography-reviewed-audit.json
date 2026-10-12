@@ -321,8 +321,8 @@
               "two of the following"
             ]
           ],
-          "kind": "closed-choose-two",
-          "reason": "4C two of four printed factors -> C(4,2) = 6 routes."
+          "kind": "choose-n-one-card",
+          "reason": "4C two of four printed factors -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -343,8 +343,8 @@
               "any three"
             ]
           ],
-          "kind": "closed-choose-three",
-          "reason": "17 any three of four printed characteristics -> C(4,3) = 4 routes."
+          "kind": "choose-n-one-card",
+          "reason": "17 any three of four printed characteristics -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -436,7 +436,7 @@
         "Part 2 Q9C": 30
       },
       "taskCount": 111,
-      "cardCount": 127,
+      "cardCount": 119,
       "legacyIds": [
         "geography-2024-hl-p1-q10",
         "geography-2024-hl-p1-q11",
@@ -643,6 +643,40 @@
           "id": "geography-2024-hl-p2-q11a",
           "nowQuestionRef": "2024 HL Part 2 Q11A(i)",
           "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        }
+      ],
+      "aliases": [
+        {
+          "id": "geography-2024-hl-p2-q17-climate-flora-fauna",
+          "canonicalId": "geography-2024-hl-p2-q17-climate-soils-flora"
+        },
+        {
+          "id": "geography-2024-hl-p2-q17-climate-soils-fauna",
+          "canonicalId": "geography-2024-hl-p2-q17-climate-soils-flora"
+        },
+        {
+          "id": "geography-2024-hl-p2-q17-soils-flora-fauna",
+          "canonicalId": "geography-2024-hl-p2-q17-climate-soils-flora"
+        },
+        {
+          "id": "geography-2024-hl-p2-q4c-government-policy-infrastructure",
+          "canonicalId": "geography-2024-hl-p2-q4c-government-policy-labour"
+        },
+        {
+          "id": "geography-2024-hl-p2-q4c-government-policy-markets",
+          "canonicalId": "geography-2024-hl-p2-q4c-government-policy-labour"
+        },
+        {
+          "id": "geography-2024-hl-p2-q4c-labour-infrastructure",
+          "canonicalId": "geography-2024-hl-p2-q4c-government-policy-labour"
+        },
+        {
+          "id": "geography-2024-hl-p2-q4c-labour-markets",
+          "canonicalId": "geography-2024-hl-p2-q4c-government-policy-labour"
+        },
+        {
+          "id": "geography-2024-hl-p2-q4c-markets-infrastructure",
+          "canonicalId": "geography-2024-hl-p2-q4c-government-policy-labour"
         }
       ],
       "tasks": [
@@ -2362,21 +2396,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2024-hl-p2-q4c-government-policy-labour",
-            "geography-2024-hl-p2-q4c-government-policy-markets",
-            "geography-2024-hl-p2-q4c-government-policy-infrastructure",
-            "geography-2024-hl-p2-q4c-labour-markets",
-            "geography-2024-hl-p2-q4c-labour-infrastructure",
-            "geography-2024-hl-p2-q4c-markets-infrastructure"
+            "geography-2024-hl-p2-q4c-government-policy-labour"
           ],
-          "routes": [
-            "Government policy + Labour",
-            "Government policy + Markets",
-            "Government policy + Infrastructure",
-            "Labour + Markets",
-            "Labour + Infrastructure",
-            "Markets + Infrastructure"
-          ]
+          "routes": []
         },
         {
           "key": "p2-5a-i",
@@ -3972,17 +3994,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2024-hl-p2-q17-climate-soils-flora",
-            "geography-2024-hl-p2-q17-climate-soils-fauna",
-            "geography-2024-hl-p2-q17-climate-flora-fauna",
-            "geography-2024-hl-p2-q17-soils-flora-fauna"
+            "geography-2024-hl-p2-q17-climate-soils-flora"
           ],
-          "routes": [
-            "Climate + Soils + Flora",
-            "Climate + Soils + Fauna",
-            "Climate + Flora + Fauna",
-            "Soils + Flora + Fauna"
-          ]
+          "routes": []
         },
         {
           "key": "p2-18",
@@ -4511,8 +4525,8 @@
               "any two"
             ]
           ],
-          "kind": "closed-choose-two",
-          "reason": "4B: any two of three printed headings -> C(3,2) = 3 routes."
+          "kind": "choose-n-one-card",
+          "reason": "4B: any two of three printed headings -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -4522,8 +4536,8 @@
               "any two"
             ]
           ],
-          "kind": "closed-choose-two",
-          "reason": "6C: any two of four printed region types -> C(4,2) = 6 routes."
+          "kind": "choose-n-one-card",
+          "reason": "6C: any two of four printed region types -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -4635,7 +4649,7 @@
         "Part 2 Q9C": 30
       },
       "taskCount": 132,
-      "cardCount": 147,
+      "cardCount": 140,
       "legacyIds": [
         "geography-2024-ol-p1-q1",
         "geography-2024-ol-p1-q10",
@@ -4763,11 +4777,6 @@
         "geography-2024-ol-p2-q6a-vi",
         "geography-2024-ol-p2-q6b-ii",
         "geography-2024-ol-p2-q6b-iii",
-        "geography-2024-ol-p2-q6c-climatic-regions-cultural-regions-defined-by-langua",
-        "geography-2024-ol-p2-q6c-climatic-regions-cultural-regions-defined-by-religi",
-        "geography-2024-ol-p2-q6c-cultural-regions-defined-by-langua-cultural-regions-defined-by-religi",
-        "geography-2024-ol-p2-q6c-geomorphological-regions-cultural-regions-defined-by-langua",
-        "geography-2024-ol-p2-q6c-geomorphological-regions-cultural-regions-defined-by-religi",
         "geography-2024-ol-p2-q7a",
         "geography-2024-ol-p2-q7b-ii",
         "geography-2024-ol-p2-q7b-iii",
@@ -4927,6 +4936,16 @@
           "id": "geography-2024-ol-p2-q12b",
           "nowQuestionRef": "2024 OL Part 2 Q12B(i)",
           "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part (or the first printed route); the other parts are new cards with their own published allocation."
+        }
+      ],
+      "aliases": [
+        {
+          "id": "geography-2024-ol-p2-q4b-the-importance-of-manufacturing-to-the-development-of-transport-in-th",
+          "canonicalId": "geography-2024-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to"
+        },
+        {
+          "id": "geography-2024-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-development-of-transport-in-th",
+          "canonicalId": "geography-2024-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to"
         }
       ],
       "tasks": [
@@ -6776,15 +6795,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2024-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
-            "geography-2024-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-development-of-transport-in-th",
-            "geography-2024-ol-p2-q4b-the-importance-of-manufacturing-to-the-development-of-transport-in-th"
+            "geography-2024-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to"
           ],
-          "routes": [
-            "The reasons why tourists are attracted to the region + The importance of manufacturing to the region",
-            "The reasons why tourists are attracted to the region + The development of transport in the region",
-            "The importance of manufacturing to the region + The development of transport in the region"
-          ]
+          "routes": []
         },
         {
           "key": "p2-4c-i",
@@ -7414,21 +7427,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2024-ol-p2-q6c",
-            "geography-2024-ol-p2-q6c-climatic-regions-cultural-regions-defined-by-langua",
-            "geography-2024-ol-p2-q6c-climatic-regions-cultural-regions-defined-by-religi",
-            "geography-2024-ol-p2-q6c-geomorphological-regions-cultural-regions-defined-by-langua",
-            "geography-2024-ol-p2-q6c-geomorphological-regions-cultural-regions-defined-by-religi",
-            "geography-2024-ol-p2-q6c-cultural-regions-defined-by-langua-cultural-regions-defined-by-religi"
+            "geography-2024-ol-p2-q6c"
           ],
-          "routes": [
-            "Climatic regions + Geomorphological regions",
-            "Climatic regions + Cultural regions defined by language",
-            "Climatic regions + Cultural regions defined by religion",
-            "Geomorphological regions + Cultural regions defined by language",
-            "Geomorphological regions + Cultural regions defined by religion",
-            "Cultural regions defined by language + Cultural regions defined by religion"
-          ]
+          "routes": []
         },
         {
           "key": "p2-7a",
@@ -9264,8 +9265,8 @@
               "any two"
             ]
           ],
-          "kind": "closed-choose-two",
-          "reason": "7B any two of three printed headings -> 3 routes."
+          "kind": "choose-n-one-card",
+          "reason": "7B any two of three printed headings -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -9275,8 +9276,8 @@
               "two of the following"
             ]
           ],
-          "kind": "closed-choose-two-of-three-x-activity",
-          "reason": "9B two of three printed factors for footloose industries OR financial services OR mass tourism -> 3 x 3 = 9 routes."
+          "kind": "closed-choose-one-x-choose-n-one-card",
+          "reason": "9B footloose industries OR financial services OR mass tourism -> 3 routes; within each, two of three printed factors -> one card with every printed factor (choice is not a route)."
         },
         {
           "scan": [
@@ -9286,8 +9287,8 @@
               "two of the following"
             ]
           ],
-          "kind": "closed-choose-two",
-          "reason": "10B two of three printed urban problems -> 3 routes."
+          "kind": "choose-n-one-card",
+          "reason": "10B two of three printed urban problems -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -9313,8 +9314,8 @@
               "any three"
             ]
           ],
-          "kind": "closed-choose-three",
-          "reason": "14 any three of four themes -> 4 routes; 16 any three of four processes -> 4 routes."
+          "kind": "choose-n-one-card",
+          "reason": "14 any three of four themes and 16 any three of four processes -> one card each with every printed item (choice is not a route; the scheme marks each chosen aspect alike)."
         },
         {
           "scan": [],
@@ -9396,7 +9397,7 @@
         "Part 2 Q9C": 30
       },
       "taskCount": 115,
-      "cardCount": 143,
+      "cardCount": 127,
       "legacyIds": [
         "geography-2025-hl-p1-q1",
         "geography-2025-hl-p1-q10",
@@ -9624,6 +9625,72 @@
           "id": "geography-2025-hl-p2-q12a",
           "nowQuestionRef": "2025 HL Part 2 Q12A(i)",
           "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        }
+      ],
+      "aliases": [
+        {
+          "id": "geography-2025-hl-p2-q10b-pollution-housing",
+          "canonicalId": "geography-2025-hl-p2-q10b-pollution-transport"
+        },
+        {
+          "id": "geography-2025-hl-p2-q10b-transport-housing",
+          "canonicalId": "geography-2025-hl-p2-q10b-pollution-transport"
+        },
+        {
+          "id": "geography-2025-hl-p2-q14-aid-programmes-levels-of-exploitation-at-local-an-differing-gender-roles-in-society",
+          "canonicalId": "geography-2025-hl-p2-q14-national-debt-aid-programmes-levels-of-exploitation-at-local-an"
+        },
+        {
+          "id": "geography-2025-hl-p2-q14-national-debt-aid-programmes-differing-gender-roles-in-society",
+          "canonicalId": "geography-2025-hl-p2-q14-national-debt-aid-programmes-levels-of-exploitation-at-local-an"
+        },
+        {
+          "id": "geography-2025-hl-p2-q14-national-debt-levels-of-exploitation-at-local-an-differing-gender-roles-in-society",
+          "canonicalId": "geography-2025-hl-p2-q14-national-debt-aid-programmes-levels-of-exploitation-at-local-an"
+        },
+        {
+          "id": "geography-2025-hl-p2-q16-podzolisation-calcification-soil-erosion",
+          "canonicalId": "geography-2025-hl-p2-q16-weathering-podzolisation-calcification"
+        },
+        {
+          "id": "geography-2025-hl-p2-q16-weathering-calcification-soil-erosion",
+          "canonicalId": "geography-2025-hl-p2-q16-weathering-podzolisation-calcification"
+        },
+        {
+          "id": "geography-2025-hl-p2-q16-weathering-podzolisation-soil-erosion",
+          "canonicalId": "geography-2025-hl-p2-q16-weathering-podzolisation-calcification"
+        },
+        {
+          "id": "geography-2025-hl-p2-q7b-location-of-processing-units-location-of-markets",
+          "canonicalId": "geography-2025-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-processing-units"
+        },
+        {
+          "id": "geography-2025-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-markets",
+          "canonicalId": "geography-2025-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-processing-units"
+        },
+        {
+          "id": "geography-2025-hl-p2-q9b-financial-services-physical-factors-human-factors",
+          "canonicalId": "geography-2025-hl-p2-q9b-financial-services-physical-factors-political-factors"
+        },
+        {
+          "id": "geography-2025-hl-p2-q9b-financial-services-political-factors-human-factors",
+          "canonicalId": "geography-2025-hl-p2-q9b-financial-services-physical-factors-political-factors"
+        },
+        {
+          "id": "geography-2025-hl-p2-q9b-footloose-industries-physical-factors-human-factors",
+          "canonicalId": "geography-2025-hl-p2-q9b-footloose-industries-physical-factors-political-factors"
+        },
+        {
+          "id": "geography-2025-hl-p2-q9b-footloose-industries-political-factors-human-factors",
+          "canonicalId": "geography-2025-hl-p2-q9b-footloose-industries-physical-factors-political-factors"
+        },
+        {
+          "id": "geography-2025-hl-p2-q9b-mass-tourism-physical-factors-human-factors",
+          "canonicalId": "geography-2025-hl-p2-q9b-mass-tourism-physical-factors-political-factors"
+        },
+        {
+          "id": "geography-2025-hl-p2-q9b-mass-tourism-political-factors-human-factors",
+          "canonicalId": "geography-2025-hl-p2-q9b-mass-tourism-physical-factors-political-factors"
         }
       ],
       "tasks": [
@@ -11927,15 +11994,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2025-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-processing-units",
-            "geography-2025-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-markets",
-            "geography-2025-hl-p2-q7b-location-of-processing-units-location-of-markets"
+            "geography-2025-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-processing-units"
           ],
-          "routes": [
-            "Sourcing of raw materials and components + Location of processing units",
-            "Sourcing of raw materials and components + Location of markets",
-            "Location of processing units + Location of markets"
-          ]
+          "routes": []
         },
         {
           "key": "p2-7c",
@@ -12334,25 +12395,13 @@
           "sources": [],
           "cards": [
             "geography-2025-hl-p2-q9b-footloose-industries-physical-factors-political-factors",
-            "geography-2025-hl-p2-q9b-footloose-industries-physical-factors-human-factors",
-            "geography-2025-hl-p2-q9b-footloose-industries-political-factors-human-factors",
             "geography-2025-hl-p2-q9b-financial-services-physical-factors-political-factors",
-            "geography-2025-hl-p2-q9b-financial-services-physical-factors-human-factors",
-            "geography-2025-hl-p2-q9b-financial-services-political-factors-human-factors",
-            "geography-2025-hl-p2-q9b-mass-tourism-physical-factors-political-factors",
-            "geography-2025-hl-p2-q9b-mass-tourism-physical-factors-human-factors",
-            "geography-2025-hl-p2-q9b-mass-tourism-political-factors-human-factors"
+            "geography-2025-hl-p2-q9b-mass-tourism-physical-factors-political-factors"
           ],
           "routes": [
-            "footloose industries · Physical factors + Political factors",
-            "footloose industries · Physical factors + Human factors",
-            "footloose industries · Political factors + Human factors",
-            "financial services · Physical factors + Political factors",
-            "financial services · Physical factors + Human factors",
-            "financial services · Political factors + Human factors",
-            "mass tourism · Physical factors + Political factors",
-            "mass tourism · Physical factors + Human factors",
-            "mass tourism · Political factors + Human factors"
+            "footloose industries",
+            "financial services",
+            "mass tourism"
           ]
         },
         {
@@ -12463,15 +12512,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2025-hl-p2-q10b-pollution-transport",
-            "geography-2025-hl-p2-q10b-pollution-housing",
-            "geography-2025-hl-p2-q10b-transport-housing"
+            "geography-2025-hl-p2-q10b-pollution-transport"
           ],
-          "routes": [
-            "Pollution + Transport",
-            "Pollution + Housing",
-            "Transport + Housing"
-          ]
+          "routes": []
         },
         {
           "key": "p2-10c",
@@ -12948,17 +12991,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2025-hl-p2-q14-national-debt-aid-programmes-levels-of-exploitation-at-local-an",
-            "geography-2025-hl-p2-q14-national-debt-aid-programmes-differing-gender-roles-in-society",
-            "geography-2025-hl-p2-q14-national-debt-levels-of-exploitation-at-local-an-differing-gender-roles-in-society",
-            "geography-2025-hl-p2-q14-aid-programmes-levels-of-exploitation-at-local-an-differing-gender-roles-in-society"
+            "geography-2025-hl-p2-q14-national-debt-aid-programmes-levels-of-exploitation-at-local-an"
           ],
-          "routes": [
-            "National debt + Aid programmes + Levels of exploitation at local and global scales",
-            "National debt + Aid programmes + Differing gender roles in society",
-            "National debt + Levels of exploitation at local and global scales + Differing gender roles in society",
-            "Aid programmes + Levels of exploitation at local and global scales + Differing gender roles in society"
-          ]
+          "routes": []
         },
         {
           "key": "p2-15",
@@ -13018,17 +13053,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2025-hl-p2-q16-weathering-podzolisation-calcification",
-            "geography-2025-hl-p2-q16-weathering-podzolisation-soil-erosion",
-            "geography-2025-hl-p2-q16-weathering-calcification-soil-erosion",
-            "geography-2025-hl-p2-q16-podzolisation-calcification-soil-erosion"
+            "geography-2025-hl-p2-q16-weathering-podzolisation-calcification"
           ],
-          "routes": [
-            "Weathering + Podzolisation + Calcification",
-            "Weathering + Podzolisation + Soil erosion",
-            "Weathering + Calcification + Soil erosion",
-            "Podzolisation + Calcification + Soil erosion"
-          ]
+          "routes": []
         },
         {
           "key": "p2-17",
@@ -13575,8 +13602,8 @@
               "any two"
             ]
           ],
-          "kind": "closed-choose-two",
-          "reason": "3B(ii): any two of three printed types of weathering -> C(3,2) = 3 routes."
+          "kind": "choose-n-one-card",
+          "reason": "3B(ii): any two of three printed types of weathering -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -13586,8 +13613,8 @@
               "any two"
             ]
           ],
-          "kind": "closed-choose-two",
-          "reason": "5B: any two of three printed headings -> C(3,2) = 3 routes."
+          "kind": "choose-n-one-card",
+          "reason": "5B: any two of three printed headings -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -13688,7 +13715,7 @@
         "Part 2 Q9C": 30
       },
       "taskCount": 119,
-      "cardCount": 131,
+      "cardCount": 127,
       "legacyIds": [
         "geography-2025-ol-p1-q1",
         "geography-2025-ol-p1-q10",
@@ -13828,147 +13855,155 @@
         {
           "id": "geography-2025-ol-p1-q2",
           "nowQuestionRef": "2025 OL Part 1 Q2(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p1-q3",
           "nowQuestionRef": "2025 OL Part 1 Q3(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p1-q4",
           "nowQuestionRef": "2025 OL Part 1 Q4(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p1-q9",
           "nowQuestionRef": "2025 OL Part 1 Q9(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p1-q10",
           "nowQuestionRef": "2025 OL Part 1 Q10(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p1-q11",
           "nowQuestionRef": "2025 OL Part 1 Q11(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p1-q12",
           "nowQuestionRef": "2025 OL Part 1 Q12(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q2a",
           "nowQuestionRef": "2025 OL Part 2 Q2A(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q2b",
           "nowQuestionRef": "2025 OL Part 2 Q2B(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q3a",
           "nowQuestionRef": "2025 OL Part 2 Q3A(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q3b-freeze-thaw-action-carbonation",
           "nowQuestionRef": "2025 OL Part 2 Q3B(ii)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
-        },
-        {
-          "id": "geography-2025-ol-p2-q3b-freeze-thaw-action-onion-weathering",
-          "nowQuestionRef": "2025 OL Part 2 Q3B(ii)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
-        },
-        {
-          "id": "geography-2025-ol-p2-q3b-carbonation-onion-weathering",
-          "nowQuestionRef": "2025 OL Part 2 Q3B(ii)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q3c",
           "nowQuestionRef": "2025 OL Part 2 Q3C(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q4b",
           "nowQuestionRef": "2025 OL Part 2 Q4B(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q5a",
           "nowQuestionRef": "2025 OL Part 2 Q5A(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q6a",
           "nowQuestionRef": "2025 OL Part 2 Q6A(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q6b",
           "nowQuestionRef": "2025 OL Part 2 Q6B(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q7b",
           "nowQuestionRef": "2025 OL Part 2 Q7B(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q8a",
           "nowQuestionRef": "2025 OL Part 2 Q8A(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q8c",
           "nowQuestionRef": "2025 OL Part 2 Q8C(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q9a",
           "nowQuestionRef": "2025 OL Part 2 Q9A(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q9b",
           "nowQuestionRef": "2025 OL Part 2 Q9B(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q10b",
           "nowQuestionRef": "2025 OL Part 2 Q10B(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q10c",
           "nowQuestionRef": "2025 OL Part 2 Q10C(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q11a",
           "nowQuestionRef": "2025 OL Part 2 Q11A(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q11b",
           "nowQuestionRef": "2025 OL Part 2 Q11B(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q12a",
           "nowQuestionRef": "2025 OL Part 2 Q12A(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
         },
         {
           "id": "geography-2025-ol-p2-q12c",
           "nowQuestionRef": "2025 OL Part 2 Q12C(i)",
-          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part; they are kept on the choose-two weathering routes of 3B(ii), and the separately priced 3B(i) is a new card."
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation. The three shipped 3B cards held the whole 40m part, one per pair of weathering types; the first pair's id now holds 3B(ii) as one card showing all three printed types (choice is not a route), the other two alias to it, and the separately priced 3B(i) is a new card."
+        }
+      ],
+      "aliases": [
+        {
+          "id": "geography-2025-ol-p2-q3b-carbonation-onion-weathering",
+          "canonicalId": "geography-2025-ol-p2-q3b-freeze-thaw-action-carbonation"
+        },
+        {
+          "id": "geography-2025-ol-p2-q3b-freeze-thaw-action-onion-weathering",
+          "canonicalId": "geography-2025-ol-p2-q3b-freeze-thaw-action-carbonation"
+        },
+        {
+          "id": "geography-2025-ol-p2-q5b-the-importance-of-manufacturing-to-the-development-of-transport-in-th",
+          "canonicalId": "geography-2025-ol-p2-q5b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to"
+        },
+        {
+          "id": "geography-2025-ol-p2-q5b-the-reasons-why-tourists-are-attra-the-development-of-transport-in-th",
+          "canonicalId": "geography-2025-ol-p2-q5b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to"
         }
       ],
       "tasks": [
@@ -15573,15 +15608,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2025-ol-p2-q3b-freeze-thaw-action-carbonation",
-            "geography-2025-ol-p2-q3b-freeze-thaw-action-onion-weathering",
-            "geography-2025-ol-p2-q3b-carbonation-onion-weathering"
+            "geography-2025-ol-p2-q3b-freeze-thaw-action-carbonation"
           ],
-          "routes": [
-            "Freeze-thaw action + Carbonation",
-            "Freeze-thaw action + Onion weathering",
-            "Carbonation + Onion weathering"
-          ]
+          "routes": []
         },
         {
           "key": "p2-3c-i",
@@ -15979,15 +16008,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2025-ol-p2-q5b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
-            "geography-2025-ol-p2-q5b-the-reasons-why-tourists-are-attra-the-development-of-transport-in-th",
-            "geography-2025-ol-p2-q5b-the-importance-of-manufacturing-to-the-development-of-transport-in-th"
+            "geography-2025-ol-p2-q5b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to"
           ],
-          "routes": [
-            "The reasons why tourists are attracted to the region + The importance of manufacturing to the region",
-            "The reasons why tourists are attracted to the region + The development of transport in the region",
-            "The importance of manufacturing to the region + The development of transport in the region"
-          ]
+          "routes": []
         },
         {
           "key": "p2-5c",
@@ -17933,8 +17956,8 @@
               "any two"
             ]
           ],
-          "kind": "closed-choose-two",
-          "reason": "5C: any two of four printed factors -> C(4,2) = 6 routes."
+          "kind": "choose-n-one-card",
+          "reason": "5C: any two of four printed factors -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -17944,8 +17967,8 @@
               "three of the following"
             ]
           ],
-          "kind": "closed-choose-three",
-          "reason": "14: three of four printed themes -> C(4,3) = 4 routes."
+          "kind": "choose-n-one-card",
+          "reason": "14: three of four printed themes -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -18022,7 +18045,7 @@
         "Part 2 Q9C": 30
       },
       "taskCount": 113,
-      "cardCount": 126,
+      "cardCount": 118,
       "legacyIds": [
         "geography-2026-hl-p1-q1",
         "geography-2026-hl-p1-q10",
@@ -18243,6 +18266,40 @@
           "id": "geography-2026-hl-p2-q11a",
           "nowQuestionRef": "2026 HL Part 2 Q11A(i)",
           "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        }
+      ],
+      "aliases": [
+        {
+          "id": "geography-2026-hl-p2-q14-fair-trade-justice-issues-self-reliance",
+          "canonicalId": "geography-2026-hl-p2-q14-resource-use-fair-trade-justice-issues"
+        },
+        {
+          "id": "geography-2026-hl-p2-q14-resource-use-fair-trade-self-reliance",
+          "canonicalId": "geography-2026-hl-p2-q14-resource-use-fair-trade-justice-issues"
+        },
+        {
+          "id": "geography-2026-hl-p2-q14-resource-use-justice-issues-self-reliance",
+          "canonicalId": "geography-2026-hl-p2-q14-resource-use-fair-trade-justice-issues"
+        },
+        {
+          "id": "geography-2026-hl-p2-q5c-labour-markets",
+          "canonicalId": "geography-2026-hl-p2-q5c-labour-transport"
+        },
+        {
+          "id": "geography-2026-hl-p2-q5c-labour-raw-materials",
+          "canonicalId": "geography-2026-hl-p2-q5c-labour-transport"
+        },
+        {
+          "id": "geography-2026-hl-p2-q5c-raw-materials-markets",
+          "canonicalId": "geography-2026-hl-p2-q5c-labour-transport"
+        },
+        {
+          "id": "geography-2026-hl-p2-q5c-transport-markets",
+          "canonicalId": "geography-2026-hl-p2-q5c-labour-transport"
+        },
+        {
+          "id": "geography-2026-hl-p2-q5c-transport-raw-materials",
+          "canonicalId": "geography-2026-hl-p2-q5c-labour-transport"
         }
       ],
       "tasks": [
@@ -20226,21 +20283,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2026-hl-p2-q5c-labour-transport",
-            "geography-2026-hl-p2-q5c-labour-raw-materials",
-            "geography-2026-hl-p2-q5c-labour-markets",
-            "geography-2026-hl-p2-q5c-transport-raw-materials",
-            "geography-2026-hl-p2-q5c-transport-markets",
-            "geography-2026-hl-p2-q5c-raw-materials-markets"
+            "geography-2026-hl-p2-q5c-labour-transport"
           ],
-          "routes": [
-            "Labour + Transport",
-            "Labour + Raw materials",
-            "Labour + Markets",
-            "Transport + Raw materials",
-            "Transport + Markets",
-            "Raw materials + Markets"
-          ]
+          "routes": []
         },
         {
           "key": "p2-6a-i",
@@ -21506,17 +21551,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2026-hl-p2-q14-resource-use-fair-trade-justice-issues",
-            "geography-2026-hl-p2-q14-resource-use-fair-trade-self-reliance",
-            "geography-2026-hl-p2-q14-resource-use-justice-issues-self-reliance",
-            "geography-2026-hl-p2-q14-fair-trade-justice-issues-self-reliance"
+            "geography-2026-hl-p2-q14-resource-use-fair-trade-justice-issues"
           ],
-          "routes": [
-            "Resource use + Fair trade + Justice issues",
-            "Resource use + Fair trade + Self-reliance",
-            "Resource use + Justice issues + Self-reliance",
-            "Fair trade + Justice issues + Self-reliance"
-          ]
+          "routes": []
         },
         {
           "key": "p2-15",
@@ -22122,8 +22159,8 @@
               "any two"
             ]
           ],
-          "kind": "closed-choose-two",
-          "reason": "5B: any two of three printed activities -> C(3,2) = 3 routes."
+          "kind": "choose-n-one-card",
+          "reason": "5B: any two of three printed activities -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike)."
         },
         {
           "scan": [
@@ -22224,7 +22261,7 @@
         "Part 2 Q9C": 30
       },
       "taskCount": 126,
-      "cardCount": 136,
+      "cardCount": 134,
       "legacyIds": [
         "geography-2026-ol-p1-q1",
         "geography-2026-ol-p1-q10",
@@ -22540,6 +22577,16 @@
           "id": "geography-2026-ol-p2-q12c",
           "nowQuestionRef": "2026 OL Part 2 Q12C(i)",
           "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        }
+      ],
+      "aliases": [
+        {
+          "id": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-reasons-why-tourists-are-attra",
+          "canonicalId": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to"
+        },
+        {
+          "id": "geography-2026-ol-p2-q5b-the-importance-of-manufacturing-to-the-reasons-why-tourists-are-attra",
+          "canonicalId": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to"
         }
       ],
       "tasks": [
@@ -24629,15 +24676,9 @@
           ],
           "sources": [],
           "cards": [
-            "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
-            "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-reasons-why-tourists-are-attra",
-            "geography-2026-ol-p2-q5b-the-importance-of-manufacturing-to-the-reasons-why-tourists-are-attra"
+            "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to"
           ],
-          "routes": [
-            "The factors influencing agriculture in the region + The importance of manufacturing to the region",
-            "The factors influencing agriculture in the region + The reasons why tourists are attracted to the region",
-            "The importance of manufacturing to the region + The reasons why tourists are attracted to the region"
-          ]
+          "routes": []
         },
         {
           "key": "p2-5c-i",

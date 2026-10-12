@@ -15,7 +15,7 @@
   "paperBaseTasks": 1040,
   "includedBaseTasks": 988,
   "excludedBaseTasks": 52,
-  "authoredCards": 1186,
+  "authoredCards": 1088,
   "baseTasks": [
     {
       "id": "geography-2021-hl-p1-q1",
@@ -9385,7 +9385,7 @@
       "paperBaseTasks": 60,
       "includedBaseTasks": 51,
       "excludedBaseTasks": 9,
-      "authoredCardsAfterFiniteExpansion": 75
+      "authoredCardsAfterFiniteExpansion": 56
     },
     {
       "year": 2021,
@@ -9393,7 +9393,7 @@
       "paperBaseTasks": 48,
       "includedBaseTasks": 39,
       "excludedBaseTasks": 9,
-      "authoredCardsAfterFiniteExpansion": 49
+      "authoredCardsAfterFiniteExpansion": 47
     },
     {
       "year": 2022,
@@ -9401,7 +9401,7 @@
       "paperBaseTasks": 60,
       "includedBaseTasks": 52,
       "excludedBaseTasks": 8,
-      "authoredCardsAfterFiniteExpansion": 73
+      "authoredCardsAfterFiniteExpansion": 63
     },
     {
       "year": 2022,
@@ -9409,7 +9409,7 @@
       "paperBaseTasks": 48,
       "includedBaseTasks": 39,
       "excludedBaseTasks": 9,
-      "authoredCardsAfterFiniteExpansion": 49
+      "authoredCardsAfterFiniteExpansion": 45
     },
     {
       "year": 2023,
@@ -9417,7 +9417,7 @@
       "paperBaseTasks": 60,
       "includedBaseTasks": 51,
       "excludedBaseTasks": 9,
-      "authoredCardsAfterFiniteExpansion": 78
+      "authoredCardsAfterFiniteExpansion": 64
     },
     {
       "year": 2023,
@@ -9425,7 +9425,7 @@
       "paperBaseTasks": 48,
       "includedBaseTasks": 40,
       "excludedBaseTasks": 8,
-      "authoredCardsAfterFiniteExpansion": 52
+      "authoredCardsAfterFiniteExpansion": 48
     },
     {
       "year": 2024,
@@ -9433,7 +9433,7 @@
       "paperBaseTasks": 111,
       "includedBaseTasks": 111,
       "excludedBaseTasks": 0,
-      "authoredCardsAfterFiniteExpansion": 127,
+      "authoredCardsAfterFiniteExpansion": 119,
       "reviewed": true
     },
     {
@@ -9442,7 +9442,7 @@
       "paperBaseTasks": 132,
       "includedBaseTasks": 132,
       "excludedBaseTasks": 0,
-      "authoredCardsAfterFiniteExpansion": 147,
+      "authoredCardsAfterFiniteExpansion": 140,
       "reviewed": true
     },
     {
@@ -9451,7 +9451,7 @@
       "paperBaseTasks": 115,
       "includedBaseTasks": 115,
       "excludedBaseTasks": 0,
-      "authoredCardsAfterFiniteExpansion": 143,
+      "authoredCardsAfterFiniteExpansion": 127,
       "reviewed": true
     },
     {
@@ -9460,7 +9460,7 @@
       "paperBaseTasks": 119,
       "includedBaseTasks": 119,
       "excludedBaseTasks": 0,
-      "authoredCardsAfterFiniteExpansion": 131,
+      "authoredCardsAfterFiniteExpansion": 127,
       "reviewed": true
     },
     {
@@ -9469,7 +9469,7 @@
       "paperBaseTasks": 113,
       "includedBaseTasks": 113,
       "excludedBaseTasks": 0,
-      "authoredCardsAfterFiniteExpansion": 126,
+      "authoredCardsAfterFiniteExpansion": 118,
       "reviewed": true
     },
     {
@@ -9478,7 +9478,7 @@
       "paperBaseTasks": 126,
       "includedBaseTasks": 126,
       "excludedBaseTasks": 0,
-      "authoredCardsAfterFiniteExpansion": 136,
+      "authoredCardsAfterFiniteExpansion": 134,
       "reviewed": true
     }
   ],
@@ -9502,43 +9502,48 @@
     },
     {
       "questionRef": "2021 HL Part 2 Q6B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2021 HL Part 2 Q6C",
-      "classification": "finite-expanded",
-      "variants": 10,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-5-table"
-      ]
+        "none+choose-2-of-5-table-one-card"
+      ],
+      "combinationsAbsorbed": 9
     },
     {
       "questionRef": "2021 HL Part 2 Q7B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2021 HL Part 2 Q14",
-      "classification": "finite-expanded",
-      "variants": 4,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-3-of-4"
-      ]
+        "none+choose-3-of-4-one-card"
+      ],
+      "combinationsAbsorbed": 3
     },
     {
       "questionRef": "2021 HL Part 2 Q17",
-      "classification": "finite-expanded",
-      "variants": 4,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-3-of-4"
-      ]
+        "none+choose-3-of-4-one-card"
+      ],
+      "combinationsAbsorbed": 3
     },
     {
       "questionRef": "2021 OL Part 2 Q2B",
@@ -9566,11 +9571,12 @@
     },
     {
       "questionRef": "2021 OL Part 2 Q6B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2021 OL Part 2 Q8C",
@@ -9607,27 +9613,38 @@
     },
     {
       "questionRef": "2022 HL Part 2 Q6B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2022 HL Part 2 Q7B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2022 HL Part 2 Q9B",
       "classification": "finite-expanded",
-      "variants": 9,
+      "variants": 3,
       "kinds": [
-        "none+inline-choice+choose-2-of-3"
+        "none+inline-choice+choose-2-of-3-one-card"
       ]
+    },
+    {
+      "questionRef": "2022 HL Part 2 Q9B",
+      "classification": "single-card-choice",
+      "variants": 3,
+      "kinds": [
+        "none+inline-choice+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 6
     },
     {
       "questionRef": "2022 HL Part 2 Q10B",
@@ -9655,11 +9672,12 @@
     },
     {
       "questionRef": "2022 OL Part 2 Q3B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2022 OL Part 2 Q3C",
@@ -9671,11 +9689,12 @@
     },
     {
       "questionRef": "2022 OL Part 2 Q5B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2023 HL Part 2 Q2B",
@@ -9712,19 +9731,21 @@
     },
     {
       "questionRef": "2023 HL Part 2 Q4C",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2023 HL Part 2 Q6B",
-      "classification": "finite-expanded",
-      "variants": 6,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-4"
-      ]
+        "none+choose-2-of-4-one-card"
+      ],
+      "combinationsAbsorbed": 5
     },
     {
       "questionRef": "2023 HL Part 2 Q8B",
@@ -9736,11 +9757,12 @@
     },
     {
       "questionRef": "2023 HL Part 2 Q10B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2023 HL Part 2 Q11B",
@@ -9752,27 +9774,30 @@
     },
     {
       "questionRef": "2023 HL Part 2 Q13",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2023 HL Part 2 Q16",
-      "classification": "finite-expanded",
-      "variants": 4,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-3-of-4"
-      ]
+        "none+choose-3-of-4-one-card"
+      ],
+      "combinationsAbsorbed": 3
     },
     {
       "questionRef": "2023 OL Part 2 Q2B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2023 OL Part 2 Q2C",
@@ -9800,11 +9825,12 @@
     },
     {
       "questionRef": "2023 OL Part 2 Q4B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "none+choose-2-of-3"
-      ]
+        "none+choose-2-of-3-one-card"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2023 OL Part 2 Q9C",
@@ -9840,11 +9866,12 @@
     },
     {
       "questionRef": "2024 HL Part 2 Q4C",
-      "classification": "finite-expanded",
-      "variants": 6,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 5
     },
     {
       "questionRef": "2024 HL Part 2 Q5B",
@@ -9864,11 +9891,12 @@
     },
     {
       "questionRef": "2024 HL Part 2 Q17",
-      "classification": "finite-expanded",
-      "variants": 4,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 3
     },
     {
       "questionRef": "2024 OL Part 2 Q1C",
@@ -9896,19 +9924,21 @@
     },
     {
       "questionRef": "2024 OL Part 2 Q4B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2024 OL Part 2 Q6C",
-      "classification": "finite-expanded",
-      "variants": 6,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 5
     },
     {
       "questionRef": "2024 OL Part 2 Q8C",
@@ -9952,6 +9982,15 @@
     },
     {
       "questionRef": "2025 HL Part 2 Q7B",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
+    },
+    {
+      "questionRef": "2025 HL Part 2 Q9B",
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
@@ -9960,19 +9999,21 @@
     },
     {
       "questionRef": "2025 HL Part 2 Q9B",
-      "classification": "finite-expanded",
-      "variants": 9,
+      "classification": "single-card-choice",
+      "variants": 3,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 6
     },
     {
       "questionRef": "2025 HL Part 2 Q10B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2025 HL Part 2 Q11C",
@@ -9984,19 +10025,21 @@
     },
     {
       "questionRef": "2025 HL Part 2 Q14",
-      "classification": "finite-expanded",
-      "variants": 4,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 3
     },
     {
       "questionRef": "2025 HL Part 2 Q16",
-      "classification": "finite-expanded",
-      "variants": 4,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 3
     },
     {
       "questionRef": "2025 OL Part 2 Q1B",
@@ -10024,19 +10067,21 @@
     },
     {
       "questionRef": "2025 OL Part 2 Q3B(ii)",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2025 OL Part 2 Q5B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2025 OL Part 2 Q7C",
@@ -10064,19 +10109,21 @@
     },
     {
       "questionRef": "2026 HL Part 2 Q5C",
-      "classification": "finite-expanded",
-      "variants": 6,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 5
     },
     {
       "questionRef": "2026 HL Part 2 Q14",
-      "classification": "finite-expanded",
-      "variants": 4,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 3
     },
     {
       "questionRef": "2026 OL Part 2 Q1B",
@@ -10104,11 +10151,12 @@
     },
     {
       "questionRef": "2026 OL Part 2 Q5B",
-      "classification": "finite-expanded",
-      "variants": 3,
+      "classification": "single-card-choice",
+      "variants": 1,
       "kinds": [
-        "reviewed-printed-route"
-      ]
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
     },
     {
       "questionRef": "2026 OL Part 2 Q7B",
@@ -10537,5 +10585,472 @@
       "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
     }
   ],
-  "rule": "One Part One short question, one separately selectable Part Two A/B/C task, or one Higher-Level option is a base task. Every finite printed route and choose-N combination is expanded. Tasks needing a missing separate OS map/aerial source are census-held, never presented as answerable. Independently reviewed sittings (geography-reviewed-audit.json) instead take one base task per separately priced printed part, from their review ledgers."
+  "aliases": [
+    {
+      "id": "geography-2021-hl-p2-q14-fair-trade-justice-issues-self-reliance",
+      "canonicalId": "geography-2021-hl-p2-q14-resource-use-fair-trade-justice-issues",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q14-resource-use-fair-trade-self-reliance",
+      "canonicalId": "geography-2021-hl-p2-q14-resource-use-fair-trade-justice-issues",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q14-resource-use-justice-issues-self-reliance",
+      "canonicalId": "geography-2021-hl-p2-q14-resource-use-fair-trade-justice-issues",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q17-air-water-organic-matter",
+      "canonicalId": "geography-2021-hl-p2-q17-mineral-matter-air-water",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q17-mineral-matter-air-organic-matter",
+      "canonicalId": "geography-2021-hl-p2-q17-mineral-matter-air-water",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q17-mineral-matter-water-organic-matter",
+      "canonicalId": "geography-2021-hl-p2-q17-mineral-matter-air-water",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6b-climate-markets",
+      "canonicalId": "geography-2021-hl-p2-q6b-relief-climate",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6b-relief-markets",
+      "canonicalId": "geography-2021-hl-p2-q6b-relief-climate",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6c-language-religion",
+      "canonicalId": "geography-2021-hl-p2-q6c",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6c-language-rural-development",
+      "canonicalId": "geography-2021-hl-p2-q6c",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6c-language-urban-development",
+      "canonicalId": "geography-2021-hl-p2-q6c",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6c-population-dynamics-religion",
+      "canonicalId": "geography-2021-hl-p2-q6c",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6c-population-dynamics-rural-development",
+      "canonicalId": "geography-2021-hl-p2-q6c",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6c-population-dynamics-urban-development",
+      "canonicalId": "geography-2021-hl-p2-q6c",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6c-religion-rural-development",
+      "canonicalId": "geography-2021-hl-p2-q6c",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6c-religion-urban-development",
+      "canonicalId": "geography-2021-hl-p2-q6c",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q6c-urban-development-rural-development",
+      "canonicalId": "geography-2021-hl-p2-q6c",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q7b-corporate-strategies-influencing-t-developments-in-information-techno",
+      "canonicalId": "geography-2021-hl-p2-q7b-the-product-life-cycle-corporate-strategies-influencing-t",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-hl-p2-q7b-the-product-life-cycle-developments-in-information-techno",
+      "canonicalId": "geography-2021-hl-p2-q7b-the-product-life-cycle-corporate-strategies-influencing-t",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-ol-p2-q6b-the-importance-of-manufacturing-to-the-development-of-transport-in-th",
+      "canonicalId": "geography-2021-ol-p2-q6b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2021-ol-p2-q6b-the-reasons-why-tourists-are-attra-the-development-of-transport-in-th",
+      "canonicalId": "geography-2021-ol-p2-q6b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-hl-p2-q6b-climate-markets",
+      "canonicalId": "geography-2022-hl-p2-q6b-relief-climate",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-hl-p2-q6b-relief-markets",
+      "canonicalId": "geography-2022-hl-p2-q6b-relief-climate",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-hl-p2-q7b-location-of-processing-units-location-of-markets",
+      "canonicalId": "geography-2022-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-processing-units",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-markets",
+      "canonicalId": "geography-2022-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-processing-units",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-hl-p2-q9b-financial-services-human-factors-political-factors",
+      "canonicalId": "geography-2022-hl-p2-q9b-financial-services-physical-factors-human-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-hl-p2-q9b-financial-services-physical-factors-political-factors",
+      "canonicalId": "geography-2022-hl-p2-q9b-financial-services-physical-factors-human-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-hl-p2-q9b-footloose-industries-human-factors-political-factors",
+      "canonicalId": "geography-2022-hl-p2-q9b-footloose-industries-physical-factors-human-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-hl-p2-q9b-footloose-industries-physical-factors-political-factors",
+      "canonicalId": "geography-2022-hl-p2-q9b-footloose-industries-physical-factors-human-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-hl-p2-q9b-mass-tourism-human-factors-political-factors",
+      "canonicalId": "geography-2022-hl-p2-q9b-mass-tourism-physical-factors-human-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-hl-p2-q9b-mass-tourism-physical-factors-political-factors",
+      "canonicalId": "geography-2022-hl-p2-q9b-mass-tourism-physical-factors-human-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-ol-p2-q3b-carbonation-freeze-thaw-action",
+      "canonicalId": "geography-2022-ol-p2-q3b-onion-weathering-carbonation",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-ol-p2-q3b-onion-weathering-freeze-thaw-action",
+      "canonicalId": "geography-2022-ol-p2-q3b-onion-weathering-carbonation",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-ol-p2-q5b-the-factors-influencing-agricultur-the-reasons-why-tourists-are-attra",
+      "canonicalId": "geography-2022-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2022-ol-p2-q5b-the-importance-of-manufacturing-to-the-reasons-why-tourists-are-attra",
+      "canonicalId": "geography-2022-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q10b-urban-decay-and-absence-of-communi-environmental-issues",
+      "canonicalId": "geography-2023-hl-p2-q10b-urban-decay-and-absence-of-communi-urban-sprawl",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q10b-urban-sprawl-environmental-issues",
+      "canonicalId": "geography-2023-hl-p2-q10b-urban-decay-and-absence-of-communi-urban-sprawl",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q13-aid-programmes-differing-gender-roles-in-society",
+      "canonicalId": "geography-2023-hl-p2-q13-aid-programmes-land-ownership-patterns",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q13-land-ownership-patterns-differing-gender-roles-in-society",
+      "canonicalId": "geography-2023-hl-p2-q13-aid-programmes-land-ownership-patterns",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q16-soil-erosion-leaching-podzolisation",
+      "canonicalId": "geography-2023-hl-p2-q16-weathering-soil-erosion-leaching",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q16-weathering-leaching-podzolisation",
+      "canonicalId": "geography-2023-hl-p2-q16-weathering-soil-erosion-leaching",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q16-weathering-soil-erosion-podzolisation",
+      "canonicalId": "geography-2023-hl-p2-q16-weathering-soil-erosion-leaching",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q4c-location-primary-economic-activity",
+      "canonicalId": "geography-2023-hl-p2-q4c-transport-location",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q4c-transport-primary-economic-activity",
+      "canonicalId": "geography-2023-hl-p2-q4c-transport-location",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q6b-labour-markets",
+      "canonicalId": "geography-2023-hl-p2-q6b-labour-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q6b-labour-raw-materials",
+      "canonicalId": "geography-2023-hl-p2-q6b-labour-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q6b-raw-materials-markets",
+      "canonicalId": "geography-2023-hl-p2-q6b-labour-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q6b-transport-markets",
+      "canonicalId": "geography-2023-hl-p2-q6b-labour-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-hl-p2-q6b-transport-raw-materials",
+      "canonicalId": "geography-2023-hl-p2-q6b-labour-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-ol-p2-q2b-carbonation-freeze-thaw-action",
+      "canonicalId": "geography-2023-ol-p2-q2b-onion-weathering-carbonation",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-ol-p2-q2b-onion-weathering-freeze-thaw-action",
+      "canonicalId": "geography-2023-ol-p2-q2b-onion-weathering-carbonation",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-ol-p2-q4b-the-importance-of-manufacturing-to-the-development-of-transport-in-th",
+      "canonicalId": "geography-2023-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2023-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-development-of-transport-in-th",
+      "canonicalId": "geography-2023-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2024-hl-p2-q17-climate-flora-fauna",
+      "canonicalId": "geography-2024-hl-p2-q17-climate-soils-flora",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2024-hl-p2-q17-climate-soils-fauna",
+      "canonicalId": "geography-2024-hl-p2-q17-climate-soils-flora",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2024-hl-p2-q17-soils-flora-fauna",
+      "canonicalId": "geography-2024-hl-p2-q17-climate-soils-flora",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2024-hl-p2-q4c-government-policy-infrastructure",
+      "canonicalId": "geography-2024-hl-p2-q4c-government-policy-labour",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2024-hl-p2-q4c-government-policy-markets",
+      "canonicalId": "geography-2024-hl-p2-q4c-government-policy-labour",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2024-hl-p2-q4c-labour-infrastructure",
+      "canonicalId": "geography-2024-hl-p2-q4c-government-policy-labour",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2024-hl-p2-q4c-labour-markets",
+      "canonicalId": "geography-2024-hl-p2-q4c-government-policy-labour",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2024-hl-p2-q4c-markets-infrastructure",
+      "canonicalId": "geography-2024-hl-p2-q4c-government-policy-labour",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2024-ol-p2-q4b-the-importance-of-manufacturing-to-the-development-of-transport-in-th",
+      "canonicalId": "geography-2024-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2024-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-development-of-transport-in-th",
+      "canonicalId": "geography-2024-ol-p2-q4b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q10b-pollution-housing",
+      "canonicalId": "geography-2025-hl-p2-q10b-pollution-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q10b-transport-housing",
+      "canonicalId": "geography-2025-hl-p2-q10b-pollution-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q14-aid-programmes-levels-of-exploitation-at-local-an-differing-gender-roles-in-society",
+      "canonicalId": "geography-2025-hl-p2-q14-national-debt-aid-programmes-levels-of-exploitation-at-local-an",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q14-national-debt-aid-programmes-differing-gender-roles-in-society",
+      "canonicalId": "geography-2025-hl-p2-q14-national-debt-aid-programmes-levels-of-exploitation-at-local-an",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q14-national-debt-levels-of-exploitation-at-local-an-differing-gender-roles-in-society",
+      "canonicalId": "geography-2025-hl-p2-q14-national-debt-aid-programmes-levels-of-exploitation-at-local-an",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q16-podzolisation-calcification-soil-erosion",
+      "canonicalId": "geography-2025-hl-p2-q16-weathering-podzolisation-calcification",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q16-weathering-calcification-soil-erosion",
+      "canonicalId": "geography-2025-hl-p2-q16-weathering-podzolisation-calcification",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q16-weathering-podzolisation-soil-erosion",
+      "canonicalId": "geography-2025-hl-p2-q16-weathering-podzolisation-calcification",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q7b-location-of-processing-units-location-of-markets",
+      "canonicalId": "geography-2025-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-processing-units",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-markets",
+      "canonicalId": "geography-2025-hl-p2-q7b-sourcing-of-raw-materials-and-comp-location-of-processing-units",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q9b-financial-services-physical-factors-human-factors",
+      "canonicalId": "geography-2025-hl-p2-q9b-financial-services-physical-factors-political-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q9b-financial-services-political-factors-human-factors",
+      "canonicalId": "geography-2025-hl-p2-q9b-financial-services-physical-factors-political-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q9b-footloose-industries-physical-factors-human-factors",
+      "canonicalId": "geography-2025-hl-p2-q9b-footloose-industries-physical-factors-political-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q9b-footloose-industries-political-factors-human-factors",
+      "canonicalId": "geography-2025-hl-p2-q9b-footloose-industries-physical-factors-political-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q9b-mass-tourism-physical-factors-human-factors",
+      "canonicalId": "geography-2025-hl-p2-q9b-mass-tourism-physical-factors-political-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-hl-p2-q9b-mass-tourism-political-factors-human-factors",
+      "canonicalId": "geography-2025-hl-p2-q9b-mass-tourism-physical-factors-political-factors",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-ol-p2-q3b-carbonation-onion-weathering",
+      "canonicalId": "geography-2025-ol-p2-q3b-freeze-thaw-action-carbonation",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-ol-p2-q3b-freeze-thaw-action-onion-weathering",
+      "canonicalId": "geography-2025-ol-p2-q3b-freeze-thaw-action-carbonation",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-ol-p2-q5b-the-importance-of-manufacturing-to-the-development-of-transport-in-th",
+      "canonicalId": "geography-2025-ol-p2-q5b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2025-ol-p2-q5b-the-reasons-why-tourists-are-attra-the-development-of-transport-in-th",
+      "canonicalId": "geography-2025-ol-p2-q5b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2026-hl-p2-q14-fair-trade-justice-issues-self-reliance",
+      "canonicalId": "geography-2026-hl-p2-q14-resource-use-fair-trade-justice-issues",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2026-hl-p2-q14-resource-use-fair-trade-self-reliance",
+      "canonicalId": "geography-2026-hl-p2-q14-resource-use-fair-trade-justice-issues",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2026-hl-p2-q14-resource-use-justice-issues-self-reliance",
+      "canonicalId": "geography-2026-hl-p2-q14-resource-use-fair-trade-justice-issues",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2026-hl-p2-q5c-labour-markets",
+      "canonicalId": "geography-2026-hl-p2-q5c-labour-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2026-hl-p2-q5c-labour-raw-materials",
+      "canonicalId": "geography-2026-hl-p2-q5c-labour-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2026-hl-p2-q5c-raw-materials-markets",
+      "canonicalId": "geography-2026-hl-p2-q5c-labour-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2026-hl-p2-q5c-transport-markets",
+      "canonicalId": "geography-2026-hl-p2-q5c-labour-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2026-hl-p2-q5c-transport-raw-materials",
+      "canonicalId": "geography-2026-hl-p2-q5c-labour-transport",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-reasons-why-tourists-are-attra",
+      "canonicalId": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    },
+    {
+      "id": "geography-2026-ol-p2-q5b-the-importance-of-manufacturing-to-the-reasons-why-tourists-are-attra",
+      "canonicalId": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
+      "reason": "Choice is not a route: the student chooses which N of the M printed items to answer and the scheme marks each chosen item with the same allocation, so the printed question, with every item, is one card. Saved progress moves to the card kept on the first printed combination."
+    }
+  ],
+  "rule": "One Part One short question, one separately selectable Part Two A/B/C task, or one Higher-Level option is a base task. Every finite printed route is expanded; a choose-N-of-M pool (N >= 2) is one card with the printed question verbatim (choice is not a route). Tasks needing a missing separate OS map/aerial source are census-held, never presented as answerable. Independently reviewed sittings (geography-reviewed-audit.json) instead take one base task per separately priced printed part, from their review ledgers."
 }

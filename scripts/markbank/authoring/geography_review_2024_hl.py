@@ -51,7 +51,7 @@ own task.
 import itertools
 
 from geography_review import (
-    Criterion, Lift, Route, SchemeSlice, Task, evens, fixed, slug, srp, sums, upto,
+    Criterion, Lift, Route, SchemeSlice, Task, pool, evens, fixed, slug, srp, sums, upto,
 )
 
 YEAR = 2024
@@ -110,12 +110,12 @@ SELECTION_REVIEW = [
      'reason': '1B one of three printed impacts -> 3 routes.'},
     {'scan': [[2, 4, 'answer (i) or (ii)'], [2, 4, 'or one'], [2, 4, 'or one']], 'kind': 'closed-route',
      'reason': '2B: (i) or (ii); (i) offers one fluvial OR one coastal OR one glacial landform -> 4 routes.'},
-    {'scan': [[2, 6, 'two of the following']], 'kind': 'closed-choose-two',
-     'reason': '4C two of four printed factors -> C(4,2) = 6 routes.'},
+    {'scan': [[2, 6, 'two of the following']], 'kind': 'choose-n-one-card',
+     'reason': '4C two of four printed factors -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
     {'scan': [[2, 7, 'one of the following']], 'kind': 'closed-choose-one',
      'reason': '5B one of two printed factors (climate, relief) -> 2 routes.'},
-    {'scan': [[2, 17, 'any three']], 'kind': 'closed-choose-three',
-     'reason': '17 any three of four printed characteristics -> C(4,3) = 4 routes.'},
+    {'scan': [[2, 17, 'any three']], 'kind': 'choose-n-one-card',
+     'reason': '17 any three of four printed characteristics -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
     {'scan': [[2, 11, 'choose'], [2, 11, 'choose']], 'kind': 'not-a-selection',
      'reason': '8B "might choose to locate" / "might choose not to locate" describe the fish processing plant, not a candidate choice.'},
     {'scan': [], 'kind': 'inline-closed-route',
@@ -144,9 +144,10 @@ def S(page, start, end=None, clip=None, after=None, table=False):
 
 
 def T(key, part, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas, card_id,
-      legacy, sources=(), stem=(), routes=(), row_labels=()):
+      legacy, sources=(), stem=(), routes=(), row_labels=(), absorbs=()):
     return Task(key, part, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas,
-                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels)
+                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels,
+                absorbs=absorbs)
 
 
 def rows(lines, marks=1):
@@ -534,8 +535,8 @@ PART_TWO += [
       (S(18, 'Examination of Factor 1', 'Annotation'),),
       (split('Examination of the two factors (8/7 and 7/8 SRPs)', 15,
              f'Examination of Factor 1 · 8/7 x {SRPS}', f'Examination of Factor 2 · 7/8 x {SRPS}'),),
-      '1-4', IRL, ID + 'p2-q4c-government-policy-labour', True,
-      routes=bullet_routes('p2-q4c-', ('Government policy', 'Labour', 'Markets', 'Infrastructure.'), 2)),
+      '1-4', IRL, *pool(ID + 'p2-q4c-', ('Government policy', 'Labour', 'Markets', 'Infrastructure.'), 2)[:1], True,
+      absorbs=pool(ID + 'p2-q4c-', ('Government policy', 'Labour', 'Markets', 'Infrastructure.'), 2)[1]),
 ]
 
 Q5AS = (L(7, 'Examine the map and text above that outline the development', 'following questions.'),)
@@ -793,7 +794,8 @@ PART_TWO += [
 OC = (S(45, '*Overall Coherence (20 marks)', None, table=True),)
 
 
-def option(q, page, theme, note_nth, prompt, scheme_page, topic, atlas, routes=(), after=None, end=None):
+def option(q, page, theme, note_nth, prompt, scheme_page, topic, atlas, choice=None, after=None, end=None):
+    card_id, absorbs = choice or (ID + f'p2-q{q}', ())
     return T(f'p2-{q}', P2, q, '', 80, page, theme, (prompt,),
              (S(scheme_page, 'Number of aspects', end, None, after), *OC),
              (Criterion('Aspects (3 @ 20 marks or 4 @ 15 marks)', 60, upto(60), 'srp',
@@ -801,10 +803,10 @@ def option(q, page, theme, note_nth, prompt, scheme_page, topic, atlas, routes=(
               Criterion('Overall coherence', 20, (0, 6, 10, 14, 17, 20), 'exact',
                         ('Overall Coherence · 20 marks graded*', '*Overall Coherence (20 marks)', 'Excellent · 20',
                          'Very Good · 17', 'Good · 14', 'Fair · 10', 'Weak · 6', 'Poor · 0'))),
-             topic, (atlas,), routes[0].card_id if routes else ID + f'p2-q{q}', True,
+             topic, (atlas,), card_id, True,
              stem=(L(page, 'Note: It is better to discuss three or four aspects', 'large number of points.',
                      nth=note_nth),),
-             routes=routes)
+             absorbs=absorbs)
 
 
 GI, GE = H + 'option-global-interdependence', H + 'option-geoecology'
@@ -821,7 +823,7 @@ OPTIONS = [
            L(17, 'Explain how soil characteristics impact on soil development.'), 49, '6-0', GE),
     option('17', 17, L(17, 'Geoecology'), 1,
            L(17, 'Examine the characteristics of one biome', 'Fauna.'), 50, '6-2', GE,
-           routes=bullet_routes('p2-q17-', ('Climate', 'Soils', 'Flora', 'Fauna.'), 3), after='17.', end='18.'),
+           choice=pool(ID + 'p2-q17-', ('Climate', 'Soils', 'Flora', 'Fauna.'), 3), after='17.', end='18.'),
     option('18', 17, L(17, 'Geoecology'), 1,
            L(17, 'Examine how each of the following impact on soil characteristics:', 'Conservation methods.'),
            50, '6-1', GE, after='18.'),

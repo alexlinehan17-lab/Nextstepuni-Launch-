@@ -764,10 +764,21 @@ const geographyAdditionIds = new Set<string>(geographyReview.reviewedSittings
   .flatMap(sitting => sitting.addedIds));
 const frozenCards = (name: string, cards: readonly { id: string }[]) =>
   name.startsWith('geography:') ? cards.filter(card => !geographyAdditionIds.has(card.id)) : cards;
+// Choice is not a route (2026-10-12): a choose-N-of-M pool is one card, and the
+// shipped combination cards it absorbs are withdrawn with a progress alias.
+// The frozen identity is the live set plus those aliased ids, so the frozen
+// count and hash still prove no shipped identity was lost.
+const geographyAliasedIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('geography-'));
+const frozenIdentity = (name: string, cards: readonly { id: string }[]) => {
+  const preserved = frozenCards(name, cards);
+  if (!name.startsWith('geography:')) return preserved;
+  const level = name === 'geography:higher' ? '-hl-' : '-ol-';
+  return [...preserved, ...geographyAliasedIds.filter(id => id.includes(level)).map(id => ({ id }))];
+};
 
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    const preserved = frozenCards(name, cards);
+    const preserved = frozenIdentity(name, cards);
     expect(preserved.length, `${name}: frozen card count changed`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
     expect(identityHash(preserved), `${name}: a card ID was removed or replaced`).toBe(hash);
@@ -782,8 +793,11 @@ describe('Mark Bank card preservation', () => {
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
     // Geography keeps its original card set frozen; reviewed additions are counted on top.
-    expect(decks.reduce((total, [name, cards]) => total + frozenCards(name, cards).length, 0)).toBe(19_328);
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328 + geographyAdditionIds.size);
+    // Geography's withdrawn choose-N combination cards (93) live on as aliases.
+    expect(geographyAliasedIds).toHaveLength(93);
+    expect(decks.reduce((total, [name, cards]) => total + frozenIdentity(name, cards).length, 0)).toBe(19_328);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
+      .toBe(19_328 - geographyAliasedIds.length + geographyAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -797,7 +811,8 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(54);
+    // 54 before, plus Geography's 93 withdrawn choose-N combination cards.
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(147);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -846,26 +861,29 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
-    const addedHigherRoutes = new Set(GEOGRAPHY_HIGHER
-      .filter(card => card.id.startsWith('geography-2021-hl-p2-q6c-'))
-      .map(card => card.id));
+    // The nine Q6C combination routes, added on top of the first frozen set,
+    // are now withdrawn into the one Q6C card (choice is not a route).
+    const addedHigherRoutes = new Set(geographyAliasedIds
+      .filter(id => id.startsWith('geography-2021-hl-p2-q6c-')));
     expect(addedHigherRoutes.size).toBe(9);
-    expect(identityHash(GEOGRAPHY_HIGHER.filter(card =>
-      card.year <= 2025 && !addedHigherRoutes.has(card.id) && !geographyAdditionIds.has(card.id))))
+    const yearOf = (id: string) => Number(id.split('-')[1]);
+    expect(identityHash(frozenIdentity('geography:higher', GEOGRAPHY_HIGHER).filter(card =>
+      yearOf(card.id) <= 2025 && !addedHigherRoutes.has(card.id))))
       .toBe('db478deb519637edeacce1fd96db3cf50e893e7cf1e8a72cc28c40694b0281ea');
-    expect(identityHash(GEOGRAPHY_ORDINARY.filter(card =>
-      card.year <= 2025 && !geographyAdditionIds.has(card.id))))
+    expect(identityHash(frozenIdentity('geography:ordinary', GEOGRAPHY_ORDINARY).filter(card =>
+      yearOf(card.id) <= 2025)))
       .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
   });
 
   it('adds the reviewed Geography parts on top of the frozen 754 without replacing any', () => {
     /* 2026-10-11/12: 2026 Higher (+53), 2026 Ordinary (+78), 2025 Higher
-     * (+63), 2025 Ordinary (+79), 2024 Higher (+61) and 2024 Ordinary (+98),
+     * (+63), 2025 Ordinary (+79), 2024 Higher (+61) and 2024 Ordinary (+93),
      * the 2025 and 2024 sittings including the tasks whose map/legend/aerial
      * companions are now wired, each reviewed page by page against its
      * scheme. Every addition is a new, unique ID that never reuses an
-     * original ID; every reviewed sitting's shipped IDs are still present. */
-    expect(geographyAdditionIds.size).toBe(432);
+     * original ID; every reviewed sitting's shipped IDs are still present,
+     * live or (a choose-N combination card) through a progress alias. */
+    expect(geographyAdditionIds.size).toBe(427);
     const all = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY];
     const ids = all.map(card => card.id);
     expect(new Set(ids).size).toBe(ids.length);
@@ -875,10 +893,13 @@ describe('Mark Bank card preservation', () => {
       expect(ids, id).toContain(id);
       expect(geographyLegacyIds.has(id), id).toBe(false);
     }
-    for (const id of geographyLegacyIds) expect(ids, id).toContain(id);
-    expect(GEOGRAPHY_HIGHER).toHaveLength(445 + GEOGRAPHY_HIGHER
+    for (const id of geographyLegacyIds) {
+      expect(ids.includes(id) || ids.includes(CARD_ID_ALIASES[id] ?? ''), id).toBe(true);
+    }
+    const aliasedAt = (level: string) => geographyAliasedIds.filter(id => id.includes(level)).length;
+    expect(GEOGRAPHY_HIGHER).toHaveLength(445 - aliasedAt('-hl-') + GEOGRAPHY_HIGHER
       .filter(card => geographyAdditionIds.has(card.id)).length);
-    expect(GEOGRAPHY_ORDINARY).toHaveLength(309 + GEOGRAPHY_ORDINARY
+    expect(GEOGRAPHY_ORDINARY).toHaveLength(309 - aliasedAt('-ol-') + GEOGRAPHY_ORDINARY
       .filter(card => geographyAdditionIds.has(card.id)).length);
   });
 

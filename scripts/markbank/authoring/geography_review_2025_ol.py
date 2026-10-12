@@ -59,7 +59,7 @@ with reference to"; 11A(v) "high birth rates." without "in Ireland").
 import itertools
 
 from geography_review import (
-    Criterion, Lift, Route, SchemeSlice, Task, fixed, slug, srp, steps, sums,
+    Criterion, Lift, Route, SchemeSlice, Task, pool, fixed, slug, srp, steps, sums,
 )
 
 YEAR = 2025
@@ -116,10 +116,10 @@ SELECTION_REVIEW = [
      'reason': '1C: one of four printed bullets -> four routes.'},
     {'scan': [[2, 4, 'one of the following']], 'kind': 'closed-choose-one',
      'reason': '2C: one of three printed surface processes -> three routes.'},
-    {'scan': [[2, 5, 'any two']], 'kind': 'closed-choose-two',
-     'reason': '3B(ii): any two of three printed types of weathering -> C(3,2) = 3 routes.'},
-    {'scan': [[2, 7, 'any two']], 'kind': 'closed-choose-two',
-     'reason': '5B: any two of three printed headings -> C(3,2) = 3 routes.'},
+    {'scan': [[2, 5, 'any two']], 'kind': 'choose-n-one-card',
+     'reason': '3B(ii): any two of three printed types of weathering -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
+    {'scan': [[2, 7, 'any two']], 'kind': 'choose-n-one-card',
+     'reason': '5B: any two of three printed headings -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
     {'scan': [[2, 10, 'one of the following']], 'kind': 'closed-choose-one',
      'reason': '7C: one of three printed economic activities -> three routes.'},
     {'scan': [[2, 3, 'any two'], [2, 3, 'any two'], [2, 5, 'any two'], [2, 6, 'any one'],
@@ -147,9 +147,10 @@ def srp3(label, count, line):
 
 
 def T(key, part, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas, card_id,
-      legacy, sources=(), stem=(), routes=(), row_labels=()):
+      legacy, sources=(), stem=(), routes=(), row_labels=(), absorbs=()):
     return Task(key, part, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas,
-                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels)
+                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels,
+                absorbs=absorbs)
 
 
 def rows(lines, marks=2):
@@ -500,8 +501,7 @@ PART_TWO += [
       (S(15, 'Weathering type 1 explained', 'Total 40m'),),
       (srp3('Weathering type 1 explained', 6, 'Weathering type 1 explained 6 SRP’s @ 3m each · 18m'),
        srp3('Weathering type 2 explained', 6, 'Weathering type 2 explained 6 SRP’s @ 3m each · 18m')),
-      '0-8', RW, ID + 'p2-q3b-freeze-thaw-action-carbonation', True,
-      routes=bullet_routes('p2-q3b-', WEATHERING, 2)),
+      '0-8', RW, *pool(ID + 'p2-q3b-', WEATHERING, 2)[:1], True, absorbs=pool(ID + 'p2-q3b-', WEATHERING, 2)[1]),
 ]
 PART_TWO += romans('3C', 5, L(5, 'Plate Tectonics'), (), ID + 'p2-q3c', (), [
     ('(i)', 6, L(5, '(i) Name two examples of tectonic plates.'),
@@ -580,8 +580,7 @@ PART_TWO.append(T(
     (srp3('Activity 1 explained', 7, 'Activity 1 explained 7 SRP’s @ 3m each · 21m'),
      srp3('Activity 2 explained', 6, 'Activity 2 explained 6 SRP’s @ 3m each · 18m'),
      fixed('Region named', 1, 'Region named · 1m')),
-    '1-5', EURO, ID + 'p2-q5b-' + chosen(ACTIVITIES, 2)[0][2], True,
-    routes=bullet_routes('p2-q5b-', ACTIVITIES, 2)))
+    '1-5', EURO, *pool(ID + 'p2-q5b-', ACTIVITIES, 2)[:1], True, absorbs=pool(ID + 'p2-q5b-', ACTIVITIES, 2)[1]))
 PART_TWO.append(T(
     'p2-5c', P2, '5C', '', 30, 7, L(7, 'Regional Problems'),
     (L(7, 'Describe and explain two problems faced by any region that you have studied.'),),
@@ -908,5 +907,7 @@ ID_CORRECTION_REASON = (
     'The shipped card held every part of a question the scheme prices part by '
     'part. Its id is kept on the first separately priced part; the other parts '
     'are new cards with their own published allocation. The three shipped 3B '
-    'cards held the whole 40m part; they are kept on the choose-two weathering '
-    'routes of 3B(ii), and the separately priced 3B(i) is a new card.')
+    'cards held the whole 40m part, one per pair of weathering types; the first '
+    'pair\'s id now holds 3B(ii) as one card showing all three printed types '
+    '(choice is not a route), the other two alias to it, and the separately '
+    'priced 3B(i) is a new card.')

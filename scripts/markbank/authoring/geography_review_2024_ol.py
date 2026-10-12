@@ -57,7 +57,7 @@ question totals 10 (Part One) or 100 (Part Two). In 2024 Question 12 prints
 import itertools
 
 from geography_review import (
-    Criterion, Lift, Route, SchemeSlice, Task, fixed, slug, srp, steps, sums,
+    Criterion, Lift, Route, SchemeSlice, Task, pool, fixed, slug, srp, steps, sums,
 )
 
 YEAR = 2024
@@ -121,10 +121,10 @@ SELECTION_REVIEW = [
      'reason': '2B: (i) or (ii) -> two routes, each with its own scheme allocation.'},
     {'scan': [[2, 5, 'one of the following']], 'kind': 'closed-choose-one',
      'reason': '2C: one of four printed bullets -> four routes.'},
-    {'scan': [[2, 7, 'any two']], 'kind': 'closed-choose-two',
-     'reason': '4B: any two of three printed headings -> C(3,2) = 3 routes.'},
-    {'scan': [[2, 10, 'any two']], 'kind': 'closed-choose-two',
-     'reason': '6C: any two of four printed region types -> C(4,2) = 6 routes.'},
+    {'scan': [[2, 7, 'any two']], 'kind': 'choose-n-one-card',
+     'reason': '4B: any two of three printed headings -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
+    {'scan': [[2, 10, 'any two']], 'kind': 'choose-n-one-card',
+     'reason': '6C: any two of four printed region types -> one card with every printed item (choice is not a route; the scheme marks each chosen item alike).'},
     {'scan': [[2, 13, 'one of the following']], 'kind': 'closed-choose-one',
      'reason': '8C: one of three printed economic activities -> three routes.'},
     {'scan': [[2, 4, 'either']], 'kind': 'not-a-selection',
@@ -155,9 +155,10 @@ def srp3(label, count, line):
 
 
 def T(key, part, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas, card_id,
-      legacy, sources=(), stem=(), routes=(), row_labels=()):
+      legacy, sources=(), stem=(), routes=(), row_labels=(), absorbs=()):
     return Task(key, part, q, sub, marks, page, title, prompt, scheme, criteria, topic, atlas,
-                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels)
+                sources, card_id, legacy, stem=stem, routes=routes, row_labels=row_labels,
+                absorbs=absorbs)
 
 
 def rows(lines, marks=2):
@@ -569,8 +570,7 @@ PART_TWO.append(T(
     (fixed('Region named', 1, 'Region named · 1m'),
      srp3('Activity 1 explained', 7, f'Activity 1 explained 7 {SRPS} @ 3m each · 21m'),
      srp3('Activity 2 explained', 6, f'Activity 2 explained 6 {SRPS} @ 3m each · 18m')),
-    '1-6', CONT, ID + 'p2-q4b-' + chosen(ACTIVITIES, 2)[0][2], True,
-    routes=bullet_routes('p2-q4b-', ACTIVITIES, 2)))
+    '1-6', CONT, *pool(ID + 'p2-q4b-', ACTIVITIES, 2)[:1], True, absorbs=pool(ID + 'p2-q4b-', ACTIVITIES, 2)[1]))
 PART_TWO += romans('4C', 7, L(7, 'European Union Expansion'), (), ID + 'p2-q4c', (), [
     ('(i)', 6, L(7, '(i) Name two countries that have joined the European Union since Ireland joined in 1973.'),
      S(18, 'Two countries named @ 3m', '(ii) Explain the advantages'),
@@ -661,8 +661,9 @@ PART_TWO.append(T(
     (S(22, 'Region type 1', 'Total 30m'),),
     (srp3('Region type 1', 5, ('Region type 1', f'=Description/Explanation 5 {SRPS} @ 3m each · 15m@0')),
      srp3('Region type 2', 5, ('Region type 2', f'=Description/Explanation 5 {SRPS} @ 3m each · 15m@1'))),
-    '1-0', IRL + EURO + CONT, ID + 'p2-q6c', True,
-    routes=bullet_routes('p2-q6c-', REGION_TYPES, 2, first_id=ID + 'p2-q6c')))
+    # The shipped id names the whole question; the other combinations it
+    # absorbs were never shipped (this review had briefly split them).
+    '1-0', IRL + EURO + CONT, ID + 'p2-q6c', True, absorbs=pool(ID + 'p2-q6c-', REGION_TYPES, 2)[1]))
 
 PART_TWO.append(sketch(
     12, L(12, 'Aerial Photograph'),
