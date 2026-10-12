@@ -8,7 +8,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q1(a)",
-  "questionText": "(a) (4−2i)/(2 + 4i) = 0 + ki, where k ∈ ℤ, and i² = −1. Find the value of k",
+  "questionText": "(4 − 2i)/(2 + 4i) = 0 + ki, where k ∈ ℤ, and i² = −1. Find the value of k.",
   "figureKey": "maths-2021-HL-paper-p006-i0",
   "labelKey": [],
   "tariffModel": {
@@ -41,7 +41,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p1-q1-a"
  },
  {
@@ -53,42 +53,93 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q1(b)",
-  "questionText": "Find √−5 + 12i. Give both of your answers in the form a + bi, where a, b∈ℝ",
+  "questionText": "Find √(−5 + 12i). Give both of your answers in the form a + bi, where a, b ∈ ℝ.",
   "figureKey": "maths-2021-HL-paper-p007-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p1-q1-b-r1",
-    "kind": "anyN",
-    "verbatim": "(a + bi)² = −5 + 12i\na + bi = (−5 + 12i) 1/2\nr or 𝜃 found\n−5 + 12i plotted on Argand diagram.\nShows some knowledge of De Moivre’s theorem",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Accept 2 + 3i for Full Credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "(a + bi)² = −5 + 12i\na + bi = (−5 + 12i) 1/2\nr or 𝜃 found\n−5 + 12i plotted on Argand diagram.\nShows some knowledge of De Moivre’s theorem",
-      "Relevant equation in a single variable\nWrites −5 + 12i in polar form",
-      "Finds a = 2 or b = 3\n−2 −3i found\nCorrect solution in polar form (accept with mishandling of 2n𝜋) 1/2"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2021-hl-p1-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Answer: 2 + 3i, −2 − 3i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Note — Accept 2 + 3i for Full Credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (a + bi)² = −5 + 12i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — r or θ found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — −5 + 12i plotted on Argand diagram.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Shows some knowledge of De Moivre’s theorem",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-b-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Relevant equation in a single variable",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-b-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Writes −5 + 12i in polar form",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-b-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds a = 2 or b = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-b-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — −2 − 3i found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-b-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct solution in polar form (accept with mishandling of 2nπ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p1-q1-b"
  },
  {
@@ -100,42 +151,79 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q1(c)",
-  "questionText": "Use De Moivre’s theorem to find the three roots of z³ = −8. Give each of your answers in the form a + bi, where a, b∈ℝ, and i² = −1",
+  "questionText": "Use De Moivre’s theorem to find the three roots of z³ = −8. Give each of your answers in the form a + bi, where a, b ∈ ℝ, and i² = −1.",
   "figureKey": "maths-2021-HL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p1-q1-c-r1",
-    "kind": "anyN",
-    "verbatim": "z = (r(cos𝜃 + isin𝜃)) 1/3\nr found\n𝜃 found\n−8 + 0i plotted on an Argand diagram\nShows some knowledge of De Moivre’s theorem",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: if ((r(cos 𝜃+ isin 𝜃))³ is used, award Low Partial Credit at most. Note: polar form must be used to achieve any credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "z = (r(cos𝜃 + isin𝜃)) 1/3\nr found\n𝜃 found\n−8 + 0i plotted on an Argand diagram\nShows some knowledge of De Moivre’s theorem",
-      "z = 8 1/3 (cos 𝜋/3 + i sin 𝜋/3)\n8 1/3 (cos (𝜋+2n𝜋)/3 + isin )/3 𝜋+2n𝜋",
-      "One root evaluated in the form a + bi from De Moivre’s expression\nThree solutions in polar form"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2021-hl-p1-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — n = 0: z = 2(cos π/3 + i sin π/3) = 1 + √3i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — n = 2: z = 2(cos 5π/3 + i sin 5π/3) = 1 − √3i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-c-solution-3",
+    "kind": "point",
+    "verbatim": "Note — polar form must be used to achieve any credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-c-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — r found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-c-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — θ found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — −8 + 0i plotted on an Argand diagram",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-c-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Shows some knowledge of De Moivre’s theorem",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-c-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One root evaluated in the form a + bi from De Moivre’s expression",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q1-c-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Three solutions in polar form",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p1-q1-c"
  },
  {
@@ -147,46 +235,86 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q2(a)",
-  "questionText": "Given that x = −3 is a solution to |x + p| = 5, find the two values of p, where p∈ℤ",
+  "questionText": "Given that x = −3 is a solution to |x + p| = 5, find the two values of p, where p ∈ ℤ.",
   "figureKey": "maths-2021-HL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p1-q2-a-r1",
-    "kind": "anyN",
-    "verbatim": "x = −3 substituted into equation",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: If solving as a quadratic equation: Note: If solving as two linear equations: Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 3,
-     "options": [
-      "x = −3 substituted into equation",
-      "relevant quadratic in p found",
-      "quadratic factorised\none missing or incorrect term in quadratic, but finishes correctly.",
-      "1 linear equation\nx = −3 substituted into equation",
-      "1 value of p found",
-      "Both linear equations in p given"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      3,
-      2
-     ]
-    }
+    "id": "maths-2021-hl-p1-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |−3 + p| = 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — p = −2 or p = 8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "If solving as a quadratic equation: Low Partial Credit — x = −3 substituted into equation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q2-a-solution-4",
+    "kind": "point",
+    "verbatim": "If solving as a quadratic equation: Mid Partial Credit — relevant quadratic in p found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q2-a-solution-5",
+    "kind": "point",
+    "verbatim": "If solving as a quadratic equation: High Partial Credit — quadratic factorised",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q2-a-solution-6",
+    "kind": "point",
+    "verbatim": "If solving as a quadratic equation: High Partial Credit — one missing or incorrect term in quadratic, but finishes correctly.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q2-a-solution-7",
+    "kind": "point",
+    "verbatim": "If solving as two linear equations: Low Partial Credit — 1 linear equation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q2-a-solution-8",
+    "kind": "point",
+    "verbatim": "If solving as two linear equations: Low Partial Credit — x = −3 substituted into equation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q2-a-solution-9",
+    "kind": "point",
+    "verbatim": "If solving as two linear equations: Mid Partial Credit — 1 value of p found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q2-a-solution-10",
+    "kind": "point",
+    "verbatim": "If solving as two linear equations: High Partial Credit — Both linear equations in p given",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p1-q2-a"
  },
  {
@@ -198,7 +326,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q2(b)",
-  "questionText": "(x + 4) is a factor of f(x) = x³ + qx²−22x + 56, where x∈ℝ and q∈ℤ. Show that q = −5, and find the three roots of f(x)",
+  "questionText": "(x + 4) is a factor of f(x) = x³ + qx² − 22x + 56, where x ∈ ℝ and q ∈ ℤ. Show that q = −5, and find the three roots of f(x).",
   "figureKey": "maths-2021-HL-paper-p010-i0",
   "labelKey": [],
   "tariffModel": {
@@ -233,7 +361,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p1-q2-b"
  },
  {
@@ -245,54 +373,102 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q3(a)",
-  "questionText": "Find the volume of the cuboid in the form a√b cm³, where a, b∈ℕ",
+  "questionText": "Find the volume of the cuboid in the form a√b cm³, where a, b ∈ ℕ.",
   "figureKey": "maths-2021-HL-paper-p011-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p1-q3-a-r1",
-    "kind": "anyN",
-    "verbatim": "xz = 2√2",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: (2√2)(8√6)( 4√3) on its own is not awarded any credit. Note: If solving without isolating variables: Low • Partial xz = Credit:/2√2, or similar • xy, xz, and yz stated • • Volume V = = xyz/x(8√6) or similar Mid • Partial xz = Credit:/2√2 and yz = 8√6 and • xz xy = = 2√2/4√3 and yz = 8√6 and. Note: If solving by isolating variables: Low • Partial xz = Credit:/2√2, or similar Mid Partial Credit:/4√3 2√2. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 3,
-     "options": [
-      "xz = 2√2",
-      "yz = 8√6",
-      "xy = 4√3",
-      "⇒x²y²z² = (2√2)(8√6)( 4√3)",
-      "⇒x²y²z² = 384",
-      "⇒xyz = √384 = 8√6 [cm³]",
-      "y = 4√3/x and z = 2√2/x",
-      "⇒ x/(4√3 ) (2√2 and ) = 8√6 x",
-      "⇒ (4√3/x ) (2√2/x ) = 8√6",
-      "⇒x = 1 cm",
-      "⇒y = 4√3 cm",
-      "⇒z = 2√2 cm",
-      "∴xyz = 8√6 [cm³]"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      3,
-      2
-     ]
-    }
+    "id": "maths-2021-hl-p1-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — xz = 2√2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — yz = 8√6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — xy = 4√3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒x²y²z² = 384",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒xyz = √384 = 8√6 [cm³]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-6",
+    "kind": "point",
+    "verbatim": "Note — (2√2)(8√6)(4√3) on its own is not awarded any credit.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-7",
+    "kind": "point",
+    "verbatim": "If solving without isolating variables: Low Partial Credit — xy, xz, and yz stated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-8",
+    "kind": "point",
+    "verbatim": "If solving without isolating variables: Low Partial Credit — Volume = xyz",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-9",
+    "kind": "point",
+    "verbatim": "If solving without isolating variables: Mid Partial Credit — xz = 2√2 and yz = 8√6 and xy = 4√3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-10",
+    "kind": "point",
+    "verbatim": "If solving without isolating variables: High Partial Credit — x²y²z² = (2√2)(8√6)(4√3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-11",
+    "kind": "point",
+    "verbatim": "If solving by isolating variables: Low Partial Credit — xz = 2√2, or similar",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-a-solution-12",
+    "kind": "point",
+    "verbatim": "If solving by isolating variables: High Partial Credit — 1 dimension found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q3-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q3-a",
+  "stem": "The diagram shows a cuboid with dimensions x, y and z cm. The areas, in cm², of three of its faces are also shown: 2√2, 8√6 and 4√3."
  },
  {
   "id": "maths-2021-hl-p1-q3-b-i",
@@ -303,7 +479,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q3(b)(i)",
-  "questionText": "Given that f(x) = 3x² + 8x−35, where x∈ℝ, find the two roots of f(x) = 0",
+  "questionText": "Given that f(x) = 3x² + 8x − 35, where x ∈ ℝ, find the two roots of f(x) = 0.",
   "figureKey": "maths-2021-HL-paper-p011-i1",
   "labelKey": [],
   "tariffModel": {
@@ -336,7 +512,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p1-q3-b-i"
  },
  {
@@ -348,41 +524,88 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q3(b)(ii)",
-  "questionText": "(ii) Hence or otherwise, solve the equation 3^(2m + 1) = 35 −8(3^m), where m∈ℝ. Give your answer in the form m = log₃p−q, where p, q∈ℕ",
+  "questionText": "Hence or otherwise, solve the equation 3^(2m + 1) = 35 − 8(3^m), where m ∈ ℝ. Give your answer in the form m = log₃ p − q, where p, q ∈ ℕ.",
   "figureKey": "maths-2021-HL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p1-q3-b-ii-r1",
-    "kind": "anyN",
-    "verbatim": "Some work in writing given equation in the form of that in (b)(i)\n–5 explicitly excluded\nx = 3^m",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. The full scale runs to 10. Full Credit –1: 3^m = −5 written down, and not explicitly excluded. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Some work in writing given equation in the form of that in (b)(i)\n–5 explicitly excluded\nx = 3^m",
-      "m isolated correctly, for example, m = log₃ (/3) 7"
-     ],
-     "perOptionSteps": [
-      3,
-      7
-     ]
-    }
+    "id": "maths-2021-hl-p1-q3-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — [as 3^m > 0, then 3^m ≠ −5, so:]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = log₃7 − log₃3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = log₃7 − 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some work in writing given equation in the form of that in (b)(i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — –5 explicitly excluded",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — x = 3^m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 3^m = 7/3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-b-ii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — m isolated correctly, for example,",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-b-ii-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — m = log₃(7/3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q3-b-ii-solution-10",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — 3^m = −5 written down, and not explicitly excluded",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q3-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q3-b-ii",
+  "stem": "Part (b)(i): f(x) = 3x² + 8x − 35, where x ∈ ℝ."
  },
  {
   "id": "maths-2021-hl-p1-q4-a",
@@ -393,7 +616,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q4(a)",
-  "questionText": "Prove using induction that 2^(3n−1) + 3 is divisible by 7 for all n∈ℕ",
+  "questionText": "Prove using induction that 2^(3n − 1) + 3 is divisible by 7 for all n ∈ ℕ.",
   "figureKey": "maths-2021-HL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -428,7 +651,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p1-q4-a"
  },
  {
@@ -440,7 +663,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q4(b)(i)",
-  "questionText": "Find the nth term, Tₙ, in terms of n and p, where n∈ℕ",
+  "questionText": "Find the nth term, Tₙ, in terms of n and p, where n ∈ ℕ.",
   "figureKey": "maths-2021-HL-paper-p013-i1",
   "labelKey": [],
   "tariffModel": {
@@ -468,8 +691,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q4-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q4-b-i",
+  "stem": "p, p + 7, p + 14, p + 21, … is an arithmetic sequence, where p ∈ ℕ."
  },
  {
   "id": "maths-2021-hl-p1-q4-b-ii",
@@ -480,7 +704,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q4(b)(ii)",
-  "questionText": "(ii) Find the smallest value of p for which 2021 is a term in the sequence",
+  "questionText": "Find the smallest value of p for which 2021 is a term in the sequence.",
   "figureKey": "maths-2021-HL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
@@ -513,8 +737,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q4-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q4-b-ii",
+  "stem": "p, p + 7, p + 14, p + 21, … is an arithmetic sequence, where p ∈ ℕ."
  },
  {
   "id": "maths-2021-hl-p1-q5-a-i",
@@ -525,7 +750,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q5(a)(i)",
-  "questionText": "Find the value of a, the value of b, and the value of c",
+  "questionText": "Find the value of a, the value of b, and the value of c.",
   "figureKey": "maths-2021-HL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -560,8 +785,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q5-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q5-a-i",
+  "stem": "The derivative of f(x) = 2x³ + 6x² − 12x + 3 can be expressed in the form f′(x) = a(x + b)² + c, where a, b, c ∈ ℤ and x ∈ ℝ."
  },
  {
   "id": "maths-2021-hl-p1-q5-a-ii",
@@ -572,7 +798,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q5(a)(ii)",
-  "questionText": "(ii) If g(x) = 36x + 5, find the range of values of x for which f′(x) > g′(x)",
+  "questionText": "If g(x) = 36x + 5, find the range of values of x for which f′(x) > g′(x).",
   "figureKey": "maths-2021-HL-paper-p015-i1",
   "labelKey": [],
   "tariffModel": {
@@ -607,8 +833,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q5-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q5-a-ii",
+  "stem": "The derivative of f(x) = 2x³ + 6x² − 12x + 3 can be expressed in the form f′(x) = a(x + b)² + c, where a, b, c ∈ ℤ and x ∈ ℝ."
  },
  {
   "id": "maths-2021-hl-p1-q5-b",
@@ -619,7 +846,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q5(b)",
-  "questionText": "(b) The diagram below shows t, the tangent line to h(x) = 2 sin(2x) , where 0 ≤ x ≤ 𝜋, at the point where x = 𝜋/6. A(0, k), where k∈ℝ, is the point where t cuts the y-axis. Find the value of k correct to two decimal places",
+  "questionText": "The diagram below shows t, the tangent line to h(x) = 2 sin(2x), where 0 ≤ x ≤ π, at the point where x = π/6. A(0, k), where k ∈ ℝ, is the point where t cuts the y-axis. Find the value of k correct to two decimal places.",
   "figureKey": "maths-2021-HL-paper-p016-i0",
   "labelKey": [],
   "tariffModel": {
@@ -654,7 +881,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p1-q5-b"
  },
  {
@@ -666,7 +893,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q6(a)",
-  "questionText": "Show that h′(x) = −2x² + 4x + 6. y 6 h′(x) x -1 1 2 3",
+  "questionText": "Show that h′(x) = −2x² + 4x + 6.",
   "figureKey": "maths-2021-HL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -701,8 +928,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q6-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q6-a",
+  "stem": "The diagram below shows the graph of h′(x) the derivative of a cubic function h(x). The graph cuts the x-axis at −1 and 3 and the y-axis at 6."
  },
  {
   "id": "maths-2021-hl-p1-q6-b",
@@ -713,7 +941,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q6(b)",
-  "questionText": "Use h′(x) to find the maximum positive value of the slope of a tangent to h(x)",
+  "questionText": "Use h′(x) to find the maximum positive value of the slope of a tangent to h(x).",
   "figureKey": "maths-2021-HL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
@@ -746,8 +974,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q6-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q6-b",
+  "stem": "The diagram below shows the graph of h′(x) the derivative of a cubic function h(x). The graph cuts the x-axis at −1 and 3 and the y-axis at 6."
  },
  {
   "id": "maths-2021-hl-p1-q6-c",
@@ -758,7 +987,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q6(c)",
-  "questionText": "The graph of h(x) passes through the point (0, −2). Find the equation of h(x)",
+  "questionText": "The graph of h(x) passes through the point (0, −2). Find the equation of h(x).",
   "figureKey": "maths-2021-HL-paper-p018-i1",
   "labelKey": [],
   "tariffModel": {
@@ -793,8 +1022,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q6-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q6-c",
+  "stem": "The diagram below shows the graph of h′(x) the derivative of a cubic function h(x). The graph cuts the x-axis at −1 and 3 and the y-axis at 6."
  },
  {
   "id": "maths-2021-hl-p1-q7-a-i",
@@ -805,7 +1035,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q7(a)(i)",
-  "questionText": "Complete the table below by filling in the missing lengths",
+  "questionText": "Complete the table below by filling in the missing lengths. Swing 1: 45 cm; swing 3: 729/20 cm; swings 2, 4 and 5 are blank.",
   "figureKey": "maths-2021-HL-paper-p019-i0",
   "labelKey": [],
   "tariffModel": {
@@ -838,8 +1068,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q7-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q7-a-i",
+  "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length."
  },
  {
   "id": "maths-2021-hl-p1-q7-a-ii",
@@ -850,7 +1081,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q7(a)(ii)",
-  "questionText": "(ii) Tₙ = 45(0·9)^(n−1) is the arc length of swing n. Find the arc length of swing 25, correct to 1 decimal place",
+  "questionText": "Tₙ = 45(0·9)^(n − 1) is the arc length of swing n. Find the arc length of swing 25, correct to 1 decimal place.",
   "figureKey": "maths-2021-HL-paper-p019-i1",
   "labelKey": [],
   "tariffModel": {
@@ -883,8 +1114,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q7-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q7-a-ii",
+  "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length."
  },
  {
   "id": "maths-2021-hl-p1-q7-a-iii",
@@ -895,7 +1127,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q7(a)(iii)",
-  "questionText": "(iii) Find the total distance travelled by the tip of the pendulum when it has completed swing 40. Give your answer, in cm, correct to the nearest whole number",
+  "questionText": "Find the total distance travelled by the tip of the pendulum when it has completed swing 40. Give your answer, in cm, correct to the nearest whole number.",
   "figureKey": "maths-2021-HL-paper-p019-i2",
   "labelKey": [],
   "tariffModel": {
@@ -928,8 +1160,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q7-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q7-a-iii",
+  "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length."
  },
  {
   "id": "maths-2021-hl-p1-q7-a-iv",
@@ -940,7 +1173,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q7(a)(iv)",
-  "questionText": "(iv) Swing p is the first swing which has an arc length of less than 2 cm. Find the value of p",
+  "questionText": "Swing p is the first swing which has an arc length of less than 2 cm. Find the value of p.",
   "figureKey": "maths-2021-HL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -973,8 +1206,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q7-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q7-a-iv",
+  "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. Tₙ = 45(0·9)^(n − 1) is the arc length of swing n."
  },
  {
   "id": "maths-2021-hl-p1-q7-b-i",
@@ -985,7 +1219,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q7(b)(i)",
-  "questionText": "If the length of the pendulum is 1 m, show that the angle, 𝜃, of swing 1 of the pendulum is 26°, correct to the nearest degree",
+  "questionText": "If the length of the pendulum is 1 m, show that the angle, θ, of swing 1 of the pendulum is 26°, correct to the nearest degree.",
   "figureKey": "maths-2021-HL-paper-p020-i1",
   "labelKey": [],
   "tariffModel": {
@@ -1018,8 +1252,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q7-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q7-b-i",
+  "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length."
  },
  {
   "id": "maths-2021-hl-p1-q7-b-ii",
@@ -1030,7 +1265,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q7(b)(ii)",
-  "questionText": "(ii) Hence, find the total accumulated angle that the pendulum swings through (i.e. the sum of all the angles it swings through until it stops swinging). Give your answer correct to the nearest degree",
+  "questionText": "Hence, find the total accumulated angle that the pendulum swings through (i.e. the sum of all the angles it swings through until it stops swinging). Give your answer correct to the nearest degree.",
   "figureKey": "maths-2021-HL-paper-p021-i0",
   "labelKey": [],
   "tariffModel": {
@@ -1063,8 +1298,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q7-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q7-b-ii",
+  "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. The length of the pendulum is 1 m and the angle of swing 1 is 26°."
  },
  {
   "id": "maths-2021-hl-p1-q7-b-iii",
@@ -1075,7 +1311,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q7(b)(iii)",
-  "questionText": "(iii) Hence, or otherwise, find the total distance travelled by the tip of the pendulum when it has moved through half of the total accumulated angle. Give your answer, in cm, correct to the nearest integer",
+  "questionText": "Hence, or otherwise, find the total distance travelled by the tip of the pendulum when it has moved through half of the total accumulated angle. Give your answer, in cm, correct to the nearest integer.",
   "figureKey": "maths-2021-HL-paper-p021-i1",
   "labelKey": [],
   "tariffModel": {
@@ -1108,8 +1344,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q7-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q7-b-iii",
+  "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. The length of the pendulum is 1 m and the angle of swing 1 is 26°."
  },
  {
   "id": "maths-2021-hl-p1-q8-a-i",
@@ -1120,7 +1357,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q8(a)(i)",
-  "questionText": "Use h(10) = 30 to show that p = 3·6",
+  "questionText": "Use h(10) = 30 to show that p = 3·6.",
   "figureKey": "maths-2021-HL-paper-p022-i0",
   "labelKey": [],
   "tariffModel": {
@@ -1153,8 +1390,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q8-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q8-a-i",
+  "stem": "The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³ − 0·12x² + px + 5, x ∈ ℝ, in the domain 0 ≤ x ≤ 75."
  },
  {
   "id": "maths-2021-hl-p1-q8-a-ii",
@@ -1165,7 +1403,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q8(a)(ii)",
-  "questionText": "Complete the table below and hence draw the graph of h(x) in the domain 0 ≤ x ≤ 75 on the grid below",
+  "questionText": "Complete the table below and hence draw the graph of h(x) in the domain 0 ≤ x ≤ 75 on the grid below. The table gives h(10) = 30, h(40) = 21, h(60) = 5 and h(75) = 21·875, and leaves x = 0, 20, 30, 50 and 70 to complete.",
   "figureKey": "maths-2021-HL-paper-p022-i1",
   "labelKey": [],
   "tariffModel": {
@@ -1200,8 +1438,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q8-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q8-a-ii",
+  "stem": "The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³ − 0·12x² + px + 5, x ∈ ℝ, in the domain 0 ≤ x ≤ 75."
  },
  {
   "id": "maths-2021-hl-p1-q8-b-i",
@@ -1212,7 +1451,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q8(b)(i)",
-  "questionText": "Find h′(x), the derivative of h(x)",
+  "questionText": "Find h′(x), the derivative of h(x).",
   "figureKey": "maths-2021-HL-paper-p022-i2",
   "labelKey": [],
   "tariffModel": {
@@ -1245,8 +1484,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q8-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q8-b-i",
+  "stem": "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point."
  },
  {
   "id": "maths-2021-hl-p1-q8-b-ii",
@@ -1257,7 +1497,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q8(b)(ii)",
-  "questionText": "(ii) Show that this section of the track reaches its maximum height above level ground when x = 20",
+  "questionText": "Show that this section of the track reaches its maximum height above level ground when x = 20.",
   "figureKey": "maths-2021-HL-paper-p023-i0",
   "labelKey": [],
   "tariffModel": {
@@ -1290,8 +1530,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q8-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q8-b-ii",
+  "stem": "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point."
  },
  {
   "id": "maths-2021-hl-p1-q8-b-iii",
@@ -1302,7 +1543,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q8(b)(iii)",
-  "questionText": "(iii) Find, using calculus, the height above ground, in metres, at the instant the track passes through an inflection point. The function h(x) = 0·001x³−0·12x² + 3·6x + 5",
+  "questionText": "Find, using calculus, the height above ground, in metres, at the instant the track passes through an inflection point. The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5.",
   "figureKey": "maths-2021-HL-paper-p023-i1",
   "labelKey": [],
   "tariffModel": {
@@ -1330,8 +1571,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q8-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q8-b-iii",
+  "stem": "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point."
  },
  {
   "id": "maths-2021-hl-p1-q8-c",
@@ -1342,7 +1584,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q8(c)",
-  "questionText": "Use the function h(x) = 0·001x³−0·12x² + 3·6x + 5, x∈ℝ, to find the average height of this section of the track above level ground, from x = 0 to x = 75. Give your answer in metres correct to 2 decimal places",
+  "questionText": "Use the function h(x) = 0·001x³ − 0·12x² + 3·6x + 5, x ∈ ℝ, to find the average height of this section of the track above level ground, from x = 0 to x = 75. Give your answer in metres correct to 2 decimal places.",
   "figureKey": "maths-2021-HL-paper-p024-i0",
   "labelKey": [],
   "tariffModel": {
@@ -1377,8 +1619,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q8-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q8-c",
+  "stem": "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point."
  },
  {
   "id": "maths-2021-hl-p1-q9-a-ii",
@@ -1389,7 +1632,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q9(a)(ii)",
-  "questionText": "Explain what the value 20 in the formula represents in the context of the coffee cooling",
+  "questionText": "Explain what the value 20 in the formula represents in the context of the coffee cooling.",
   "figureKey": "maths-2021-HL-paper-p025-i1",
   "labelKey": [],
   "tariffModel": {
@@ -1417,8 +1660,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q9-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q9-a-ii",
+  "stem": "A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed."
  },
  {
   "id": "maths-2021-hl-p1-q9-a-iii",
@@ -1429,7 +1673,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q9(a)(iii)",
-  "questionText": "(iii) Find the decrease in the temperature of the coffee 10 minutes after brewing. Give your answer correct to the nearest whole number",
+  "questionText": "Find the decrease in the temperature of the coffee 10 minutes after brewing. Give your answer correct to the nearest whole number.",
   "figureKey": "maths-2021-HL-paper-p025-i2",
   "labelKey": [],
   "tariffModel": {
@@ -1462,8 +1706,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q9-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q9-a-iii",
+  "stem": "A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed."
  },
  {
   "id": "maths-2021-hl-p1-q9-b",
@@ -1474,7 +1719,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q9(b)",
-  "questionText": "T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t. If the ideal temperature to drink coffee is 82°C, find the time, to the nearest second, that it takes for the coffee to reach this temperature",
+  "questionText": "T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t. If the ideal temperature to drink coffee is 82°C, find the time, to the nearest second, that it takes for the coffee to reach this temperature.",
   "figureKey": "maths-2021-HL-paper-p026-i0",
   "labelKey": [],
   "tariffModel": {
@@ -1509,8 +1754,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q9-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q9-b",
+  "stem": "A cup of coffee is freshly brewed to 95° C."
  },
  {
   "id": "maths-2021-hl-p1-q9-c",
@@ -1521,7 +1767,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q9(c)",
-  "questionText": "Find, to the nearest °C, the temperature the coffee has reached when T′(t) = −4·05, where T′(t) is the rate at which the coffee is cooling, in °C per minute",
+  "questionText": "Find, to the nearest °C, the temperature the coffee has reached when T′(t) = −4·05, where T′(t) is the rate at which the coffee is cooling, in °C per minute.",
   "figureKey": "maths-2021-HL-paper-p026-i1",
   "labelKey": [],
   "tariffModel": {
@@ -1556,8 +1802,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q9-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q9-c",
+  "stem": "A cup of coffee is freshly brewed to 95° C. T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t."
  },
  {
   "id": "maths-2021-hl-p1-q9-d",
@@ -1568,42 +1815,114 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q9(d)",
-  "questionText": "A sugar cube is put into the coffee. The sugar keeps its cube shape as it dissolves. at the constant rate of 1/20 cm³/sec. As the sugar cube dissolves, its volume decreases at the constant rate of Let x(t) be the sidelength of the cube at time t. of the cube reaches 1/64 cm³. Find the rate of change of x(t) when the volume of the cube reaches",
+  "questionText": "A sugar cube is put into the coffee. The sugar keeps its cube shape as it dissolves. As the sugar cube dissolves, its volume decreases at the constant rate of 1/20 cm³/sec. Let x(t) be the sidelength of the cube at time t. Find the rate of change of x(t) when the volume of the cube reaches 1/64 cm³.",
   "figureKey": "maths-2021-HL-paper-p027-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-hl-p1-q9-d-r1",
-    "kind": "anyN",
-    "verbatim": "States a relevant derivative, for example, dV/dt\nx³ = 1/64",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Unit incorrect or omitted. Note: Accept if the rates of change are treated as positive. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "States a relevant derivative, for example, dV/dt\nx³ = 1/64",
-      "Any two of the following: o dV/dt = − 1/20 o dV/dx = 3x² o x = 1/4 o dx/dt = dV/dt ÷ dV/dx , or similar",
-      "dx/dt = dV/dt ÷ dV/dx , and any two others from the MPC list above"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2021-hl-p1-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — dV/dt = −1/20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — and dV/dx = 3x²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — dx/dt = dV/dt ÷ dV/dx",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = −4/15 cm/sec",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-5",
+    "kind": "point",
+    "verbatim": "Note — Accept if the rates of change are treated as positive.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — States a relevant derivative, for example, dV/dt",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — x³ = 1/64",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Any two of the following:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — dV/dt = −1/20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — dV/dx = 3x²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-11",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — x = 1/4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-12",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — dx/dt = dV/dt ÷ dV/dx , or similar",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-13",
+    "kind": "point",
+    "verbatim": "High Partial Credit — and any two others from the MPC list above",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-d-solution-14",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Unit incorrect or omitted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-HL-ask-p1-q9-d"
  },
  {
@@ -1615,7 +1934,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q10(a)(i)",
-  "questionText": "Find the value of t when the tank empties",
+  "questionText": "Find the value of t when the tank empties.",
   "figureKey": "maths-2021-HL-paper-p028-i0",
   "labelKey": [],
   "tariffModel": {
@@ -1648,8 +1967,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q10-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q10-a-i",
+  "stem": "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions."
  },
  {
   "id": "maths-2021-hl-p1-q10-a-ii",
@@ -1660,7 +1980,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q10(a)(ii)",
-  "questionText": "Find the rate at which the volume of water in the tank is changing when t = 5",
+  "questionText": "Find the rate at which the volume of water in the tank is changing when t = 5.",
   "figureKey": "maths-2021-HL-paper-p028-i1",
   "labelKey": [],
   "tariffModel": {
@@ -1693,8 +2013,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q10-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q10-a-ii",
+  "stem": "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions."
  },
  {
   "id": "maths-2021-hl-p1-q10-a-iii",
@@ -1705,7 +2026,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q10(a)(iii)",
-  "questionText": "Find the value of t when the volume of water in the tank is a maximum",
+  "questionText": "Find the value of t when the volume of water in the tank is a maximum.",
   "figureKey": "maths-2021-HL-paper-p028-i2",
   "labelKey": [],
   "tariffModel": {
@@ -1733,8 +2054,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q10-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q10-a-iii",
+  "stem": "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions."
  },
  {
   "id": "maths-2021-hl-p1-q10-a-iv",
@@ -1745,7 +2067,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q10(a)(iv)",
-  "questionText": "Find the maximum volume of the water in the tank, correct to the nearest litre",
+  "questionText": "Find the maximum volume of the water in the tank, correct to the nearest litre.",
   "figureKey": "maths-2021-HL-paper-p028-i3",
   "labelKey": [],
   "tariffModel": {
@@ -1773,8 +2095,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q10-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q10-a-iv",
+  "stem": "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions."
  },
  {
   "id": "maths-2021-hl-p1-q10-b-i",
@@ -1785,7 +2108,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q10(b)(i)",
-  "questionText": "In order for the model to be reasonable it must satisfy a number of conditions. One condition is written below: • The radius of the trees is increasing year on year. Show that r(t) satisfies this condition",
+  "questionText": "In order for the model to be reasonable it must satisfy a number of conditions. One condition is written below: “The radius of the trees is increasing year on year.” Show that r(t) satisfies this condition.",
   "figureKey": "maths-2021-HL-paper-p029-i0",
   "labelKey": [],
   "tariffModel": {
@@ -1813,8 +2136,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q10-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q10-b-i",
+  "stem": "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1."
  },
  {
   "id": "maths-2021-hl-p1-q10-b-ii",
@@ -1825,7 +2149,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q10(b)(ii)",
-  "questionText": "Show that I(6) < I(5) and explain what this means in the context of the growth of a tree",
+  "questionText": "Show that I(6) < I(5) and explain what this means in the context of the growth of a tree.",
   "figureKey": "maths-2021-HL-paper-p029-i1",
   "labelKey": [],
   "tariffModel": {
@@ -1858,8 +2182,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q10-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q10-b-ii",
+  "stem": "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1."
  },
  {
   "id": "maths-2021-hl-p1-q10-b-iii",
@@ -1870,7 +2195,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q10(b)(iii)",
-  "questionText": "(iii) Two identical trees are growing in the forest. At the beginning of year 1, a tree was cut down and a section of its trunk, in the shape of a cylinder of radius 10 cm, standard length h cm, and volume V₁ cm³ was sent to a sawmill. Given that r(0) = 10, the formula r(t + 1) = r(t) + I(t + 1), where t∈ℕ, can be used to find the radius of the second tree for subsequent values of t. Find r(2), the radius of the second tree at t = 2. c𝜋 Give your answer in the form a + sin b𝜋/5 sin 5, where a, b, and c∈ℕ",
+  "questionText": "Two identical trees are growing in the forest. At the beginning of year 1, a tree was cut down and a section of its trunk, in the shape of a cylinder of radius 10 cm, standard length h cm, and volume V₁ cm³ was sent to a sawmill. Given that r(0) = 10, the formula r(t + 1) = r(t) + I(t + 1), where t ∈ ℕ, can be used to find the radius of the second tree for subsequent values of t. Find r(2), the radius of the second tree at t = 2. Give your answer in the form a + sin(bπ/5) + sin(cπ/5), where a, b, and c ∈ ℕ.",
   "figureKey": "maths-2021-HL-paper-p029-i2",
   "labelKey": [],
   "tariffModel": {
@@ -1903,8 +2228,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q10-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q10-b-iii",
+  "stem": "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1."
  },
  {
   "id": "maths-2021-hl-p1-q10-b-iv",
@@ -1915,7 +2241,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q10(b)(iv)",
-  "questionText": "(iv) At t = 10 the second tree was also cut down. A section of its trunk, in the shape of a cylinder, of radius r(10) cm, standard length h cm, and volume V₂ cm³ was also sent to a sawmill. If V₂ = kV₁, where k∈ℝ, find the value of k",
+  "questionText": "At t = 10 the second tree was also cut down. A section of its trunk, in the shape of a cylinder, of radius r(10) cm, standard length h cm, and volume V₂ cm³ was also sent to a sawmill. If V₂ = kV₁, where k ∈ ℝ, find the value of k.",
   "figureKey": "maths-2021-HL-paper-p030-i0",
   "labelKey": [],
   "tariffModel": {
@@ -1948,8 +2274,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p1-q10-b-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q10-b-iv",
+  "stem": "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1. A section of the first tree’s trunk, a cylinder of radius 10 cm, standard length h cm and volume V₁ cm³, was sent to a sawmill."
  },
  {
   "id": "maths-2021-hl-p2-q1-a",
@@ -63866,5 +64193,59 @@
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "stem": "Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above the centre of its base. The front face is 12 m wide, its walls are 7 m high and its highest point is 8·5 m high; the shed is 18 m long."
+ },
+ {
+  "id": "maths-2021-hl-p1-q9-a-i",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q9-a-i",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 HL Paper 1 Q9(a)(i)",
+  "questionText": "Show that A = 75.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-hl-p1-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 95 = Ae^((−0·081)(0)) + 20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 75 = A",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some substitution into function, including A = 75",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Equation in A",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-hl-p1-q9-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Substitutes A = 75 and t = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed."
  }
 ]

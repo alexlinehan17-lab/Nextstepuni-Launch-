@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1579,
-  "reviewedTasks": 1406,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1580,
+  "reviewedTasks": 1450,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 310,
+  "targetedRegressionTests": 312,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -828,5 +828,34 @@
     "schemePagesInspected": 32,
     "coverageBaseline": "1154/3474 asks covered, 0 orphans, 0 excluded, 2320 open",
     "validation": "Deck generation (1,579 built, 2 historical rejects), Atlas generation and --check (346 placements), audit --check-reviewed, scheme quote check of the 10 re-quoted or added cards, ten regression files (310/310), typecheck and diff whitespace check passed."
+  },
+  "higher2021p1": {
+    "paper": "2021 Higher Level Paper 1",
+    "paperFileid": "LC003ALP100EV.pdf",
+    "schemeFileid": "LC003ALP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "independentlyReviewedTasks": 44,
+    "existingRuntimeCardsReviewed": 43,
+    "addedRuntimeCards": [
+      "maths-2021-hl-p1-q9-a-i"
+    ],
+    "restoredHeldBackCards": [],
+    "rowRepairs": [
+      "maths-2021-hl-p1-q1-b",
+      "maths-2021-hl-p1-q1-c",
+      "maths-2021-hl-p1-q2-a",
+      "maths-2021-hl-p1-q3-a",
+      "maths-2021-hl-p1-q3-b-ii",
+      "maths-2021-hl-p1-q9-d"
+    ],
+    "historicalRejectsRemaining": 2,
+    "targetedRegressionTests": 312,
+    "previousRuntimeIdsRetained": 1579,
+    "offeredMarks": 380,
+    "candidateMarks": 220,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 32,
+    "coverageBaseline": "1155/3474 asks covered, 0 orphans, 0 excluded, 2319 open",
+    "validation": "Deck generation (1,580 built, 2 historical rejects), Atlas generation and --check (356 placements), audit --check-reviewed, scheme quote check of the 7 re-quoted or added cards, ten regression files (312/312), typecheck and diff whitespace check passed."
   }
 }

@@ -29,16 +29,29 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q1-a", topicId: "maths-3-1", conceptId: "value",
+    id: "maths-2021-hl-p1-q1-a", topicId: "maths-4-4", conceptId: "value",
     section: "B", questionRef: "2021 HL Paper 1 Q1(a)",
-    questionText: "(a) (4−2i)/(2 + 4i) = 0 + ki, where k ∈ ℤ, and i² = −1. Find the value of k",
+    questionText: "(4 − 2i)/(2 + 4i) = 0 + ki, where k ∈ ℤ, and i² = −1. Find the value of k.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q1-a-r1", kind: "anyN", verbatim: "2 −4i\n4 −2i = ki(2 + 4i)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Full Credit –1: 0 −i or −1i as solution, with k not identified. Note: Accept 0 −1i. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["2 −4i\n4 −2i = ki(2 + 4i)","(4−2i)/(2 + 4i) × (2−4i)/(2−4i)\n4 −2i = −4k + 2ki\nSets Re = Re or Im = Im"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q1-a.png",
@@ -59,16 +72,39 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q1-b", topicId: "maths-3-1", conceptId: "12i-both-answers-form",
+    id: "maths-2021-hl-p1-q1-b", topicId: "maths-4-4", conceptId: "12i-both-answers-form",
     section: "B", questionRef: "2021 HL Paper 1 Q1(b)",
-    questionText: "Find √−5 + 12i. Give both of your answers in the form a + bi, where a, b∈ℝ",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "Find √(−5 + 12i). Give both of your answers in the form a + bi, where a, b ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q1-b-r1", kind: "anyN", verbatim: "(a + bi)² = −5 + 12i\na + bi = (−5 + 12i) 1/2\nr or 𝜃 found\n−5 + 12i plotted on Argand diagram.\nShows some knowledge of De Moivre’s theorem", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Accept 2 + 3i for Full Credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["(a + bi)² = −5 + 12i\na + bi = (−5 + 12i) 1/2\nr or 𝜃 found\n−5 + 12i plotted on Argand diagram.\nShows some knowledge of De Moivre’s theorem","Relevant equation in a single variable\nWrites −5 + 12i in polar form","Finds a = 2 or b = 3\n−2 −3i found\nCorrect solution in polar form (accept with mishandling of 2n𝜋) 1/2"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-hl-p1-q1-b-solution-1", kind: "point", verbatim: "Model solution — Answer: 2 + 3i, −2 − 3i", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-b-solution-2", kind: "point", verbatim: "Note — Accept 2 + 3i for Full Credit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-b-solution-3", kind: "point", verbatim: "Low Partial Credit — (a + bi)² = −5 + 12i", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-b-solution-4", kind: "point", verbatim: "Low Partial Credit — r or θ found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-b-solution-5", kind: "point", verbatim: "Low Partial Credit — −5 + 12i plotted on Argand diagram.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-b-solution-6", kind: "point", verbatim: "Low Partial Credit — Shows some knowledge of De Moivre’s theorem", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-b-solution-7", kind: "point", verbatim: "Mid Partial Credit — Relevant equation in a single variable", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-b-solution-8", kind: "point", verbatim: "Mid Partial Credit — Writes −5 + 12i in polar form", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-b-solution-9", kind: "point", verbatim: "High Partial Credit — Finds a = 2 or b = 3", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-b-solution-10", kind: "point", verbatim: "High Partial Credit — −2 − 3i found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-b-solution-11", kind: "point", verbatim: "High Partial Credit — Correct solution in polar form (accept with mishandling of 2nπ)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q1-b.png",
@@ -89,16 +125,37 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q1-c", topicId: "maths-4-4", conceptId: "moivre-theorem-three-roots-each-answers",
     section: "B", questionRef: "2021 HL Paper 1 Q1(c)",
-    questionText: "Use De Moivre’s theorem to find the three roots of z³ = −8. Give each of your answers in the form a + bi, where a, b∈ℝ, and i² = −1",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "Use De Moivre’s theorem to find the three roots of z³ = −8. Give each of your answers in the form a + bi, where a, b ∈ ℝ, and i² = −1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q1-c-r1", kind: "anyN", verbatim: "z = (r(cos𝜃 + isin𝜃)) 1/3\nr found\n𝜃 found\n−8 + 0i plotted on an Argand diagram\nShows some knowledge of De Moivre’s theorem", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: if ((r(cos 𝜃+ isin 𝜃))³ is used, award Low Partial Credit at most. Note: polar form must be used to achieve any credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["z = (r(cos𝜃 + isin𝜃)) 1/3\nr found\n𝜃 found\n−8 + 0i plotted on an Argand diagram\nShows some knowledge of De Moivre’s theorem","z = 8 1/3 (cos 𝜋/3 + i sin 𝜋/3)\n8 1/3 (cos (𝜋+2n𝜋)/3 + isin )/3 𝜋+2n𝜋","One root evaluated in the form a + bi from De Moivre’s expression\nThree solutions in polar form"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-hl-p1-q1-c-solution-1", kind: "point", verbatim: "Model solution — n = 0: z = 2(cos π/3 + i sin π/3) = 1 + √3i", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-c-solution-2", kind: "point", verbatim: "Model solution — n = 2: z = 2(cos 5π/3 + i sin 5π/3) = 1 − √3i", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-c-solution-3", kind: "point", verbatim: "Note — polar form must be used to achieve any credit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-c-solution-4", kind: "point", verbatim: "Low Partial Credit — r found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-c-solution-5", kind: "point", verbatim: "Low Partial Credit — θ found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-c-solution-6", kind: "point", verbatim: "Low Partial Credit — −8 + 0i plotted on an Argand diagram", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-c-solution-7", kind: "point", verbatim: "Low Partial Credit — Shows some knowledge of De Moivre’s theorem", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-c-solution-8", kind: "point", verbatim: "High Partial Credit — One root evaluated in the form a + bi from De Moivre’s expression", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q1-c-solution-9", kind: "point", verbatim: "High Partial Credit — Three solutions in polar form", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q1-c.png",
@@ -119,16 +176,38 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q2-a", topicId: "maths-4-2", conceptId: "given-solution-two-values",
     section: "B", questionRef: "2021 HL Paper 1 Q2(a)",
-    questionText: "Given that x = −3 is a solution to |x + p| = 5, find the two values of p, where p∈ℤ",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "Given that x = −3 is a solution to |x + p| = 5, find the two values of p, where p ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q2-a-r1", kind: "anyN", verbatim: "x = −3 substituted into equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: If solving as a quadratic equation: Note: If solving as two linear equations: Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":3,"options":["x = −3 substituted into equation","relevant quadratic in p found","quadratic factorised\none missing or incorrect term in quadratic, but finishes correctly.","1 linear equation\nx = −3 substituted into equation","1 value of p found","Both linear equations in p given"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2021-hl-p1-q2-a-solution-1", kind: "point", verbatim: "Model solution — |−3 + p| = 5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q2-a-solution-2", kind: "point", verbatim: "Model solution — p = −2 or p = 8", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q2-a-solution-3", kind: "point", verbatim: "If solving as a quadratic equation: Low Partial Credit — x = −3 substituted into equation", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q2-a-solution-4", kind: "point", verbatim: "If solving as a quadratic equation: Mid Partial Credit — relevant quadratic in p found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q2-a-solution-5", kind: "point", verbatim: "If solving as a quadratic equation: High Partial Credit — quadratic factorised", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q2-a-solution-6", kind: "point", verbatim: "If solving as a quadratic equation: High Partial Credit — one missing or incorrect term in quadratic, but finishes correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q2-a-solution-7", kind: "point", verbatim: "If solving as two linear equations: Low Partial Credit — 1 linear equation", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q2-a-solution-8", kind: "point", verbatim: "If solving as two linear equations: Low Partial Credit — x = −3 substituted into equation", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q2-a-solution-9", kind: "point", verbatim: "If solving as two linear equations: Mid Partial Credit — 1 value of p found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q2-a-solution-10", kind: "point", verbatim: "If solving as two linear equations: High Partial Credit — Both linear equations in p given", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q2-a.png",
@@ -149,16 +228,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q2-b", topicId: "maths-4-2", conceptId: "factor-22x-three-roots",
     section: "B", questionRef: "2021 HL Paper 1 Q2(b)",
-    questionText: "(x + 4) is a factor of f(x) = x³ + qx²−22x + 56, where x∈ℝ and q∈ℤ. Show that q = −5, and find the three roots of f(x)",
+    questionText: "(x + 4) is a factor of f(x) = x³ + qx² − 22x + 56, where x ∈ ℝ and q ∈ ℤ. Show that q = −5, and find the three roots of f(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "maths-2021-hl-p1-q2-b-r1", kind: "anyN", verbatim: "States f(−4) = 0\nAny correct division\nSets up long division correctly", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15. The full scale runs to 20. Full Credit –1: Apply a * for −4 not listed as a root. Note: If q set equal to 5 and x + 4 divided into f(x), needs conclusion in order to be accepted as showing that q = −5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["States f(−4) = 0\nAny correct division\nSets up long division correctly","Shows that q = −5\nCorrect quotient in quadratic form found (accept in terms of q)","Find x = 2 and x = 7\nCorrect quotient in quadratic form found and shows that q = −5"],"perOptionSteps":[5,5,10]} },
     ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q2-b.png",
@@ -179,16 +271,41 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q3-a", topicId: "maths-3-4", conceptId: "volume-cuboid-form",
     section: "B", questionRef: "2021 HL Paper 1 Q3(a)",
-    questionText: "Find the volume of the cuboid in the form a√b cm³, where a, b∈ℕ",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The diagram shows a cuboid with dimensions x, y and z cm. The areas, in cm², of three of its faces are also shown: 2√2, 8√6 and 4√3.",
+    questionText: "Find the volume of the cuboid in the form a√b cm³, where a, b ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q3-a-r1", kind: "anyN", verbatim: "xz = 2√2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: (2√2)(8√6)( 4√3) on its own is not awarded any credit. Note: If solving without isolating variables: Low • Partial xz = Credit:/2√2, or similar • xy, xz, and yz stated • • Volume V = = xyz/x(8√6) or similar Mid • Partial xz = Credit:/2√2 and yz = 8√6 and • xz xy = = 2√2/4√3 and yz = 8√6 and. Note: If solving by isolating variables: Low • Partial xz = Credit:/2√2, or similar Mid Partial Credit:/4√3 2√2. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["xz = 2√2","yz = 8√6","xy = 4√3","⇒x²y²z² = (2√2)(8√6)( 4√3)","⇒x²y²z² = 384","⇒xyz = √384 = 8√6 [cm³]","y = 4√3/x and z = 2√2/x","⇒ x/(4√3 ) (2√2 and ) = 8√6 x","⇒ (4√3/x ) (2√2/x ) = 8√6","⇒x = 1 cm","⇒y = 4√3 cm","⇒z = 2√2 cm","∴xyz = 8√6 [cm³]"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2021-hl-p1-q3-a-solution-1", kind: "point", verbatim: "Model solution — xz = 2√2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-2", kind: "point", verbatim: "Model solution — yz = 8√6", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-3", kind: "point", verbatim: "Model solution — xy = 4√3", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-4", kind: "point", verbatim: "Model solution — ⇒x²y²z² = 384", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-5", kind: "point", verbatim: "Model solution — ⇒xyz = √384 = 8√6 [cm³]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-6", kind: "point", verbatim: "Note — (2√2)(8√6)(4√3) on its own is not awarded any credit.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-7", kind: "point", verbatim: "If solving without isolating variables: Low Partial Credit — xy, xz, and yz stated", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-8", kind: "point", verbatim: "If solving without isolating variables: Low Partial Credit — Volume = xyz", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-9", kind: "point", verbatim: "If solving without isolating variables: Mid Partial Credit — xz = 2√2 and yz = 8√6 and xy = 4√3", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-10", kind: "point", verbatim: "If solving without isolating variables: High Partial Credit — x²y²z² = (2√2)(8√6)(4√3)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-11", kind: "point", verbatim: "If solving by isolating variables: Low Partial Credit — xz = 2√2, or similar", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-a-solution-12", kind: "point", verbatim: "If solving by isolating variables: High Partial Credit — 1 dimension found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q3-a.png",
@@ -209,16 +326,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q3-b-i", topicId: "maths-4-2", conceptId: "given-two-roots",
     section: "B", questionRef: "2021 HL Paper 1 Q3(b)(i)",
-    questionText: "Given that f(x) = 3x² + 8x−35, where x∈ℝ, find the two roots of f(x) = 0",
+    questionText: "Given that f(x) = 3x² + 8x − 35, where x ∈ ℝ, find the two roots of f(x) = 0.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q3-b-i-r1", kind: "anyN", verbatim: "Effort at factorisation\nQuadratic formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Effort at factorisation\nQuadratic formula with some substitution","Factors found\nFormula fully substituted"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q3-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q3-b-i.png",
@@ -239,16 +369,39 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q3-b-ii", topicId: "maths-4-2", conceptId: "otherwise-solve-equation-form-log",
+    id: "maths-2021-hl-p1-q3-b-ii", topicId: "maths-3-2", conceptId: "otherwise-solve-equation-form-log",
     section: "B", questionRef: "2021 HL Paper 1 Q3(b)(ii)",
-    questionText: "(ii) Hence or otherwise, solve the equation 3^(2m + 1) = 35 −8(3^m), where m∈ℝ. Give your answer in the form m = log₃p−q, where p, q∈ℕ",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "Part (b)(i): f(x) = 3x² + 8x − 35, where x ∈ ℝ.",
+    questionText: "Hence or otherwise, solve the equation 3^(2m + 1) = 35 − 8(3^m), where m ∈ ℝ. Give your answer in the form m = log₃ p − q, where p, q ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q3-b-ii-r1", kind: "anyN", verbatim: "Some work in writing given equation in the form of that in (b)(i)\n–5 explicitly excluded\nx = 3^m", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. The full scale runs to 10. Full Credit –1: 3^m = −5 written down, and not explicitly excluded. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some work in writing given equation in the form of that in (b)(i)\n–5 explicitly excluded\nx = 3^m","m isolated correctly, for example, m = log₃ (/3) 7"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-hl-p1-q3-b-ii-solution-1", kind: "point", verbatim: "Model solution — [as 3^m > 0, then 3^m ≠ −5, so:]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-b-ii-solution-2", kind: "point", verbatim: "Model solution — = log₃7 − log₃3", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-b-ii-solution-3", kind: "point", verbatim: "Model solution — = log₃7 − 1", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-b-ii-solution-4", kind: "point", verbatim: "Low Partial Credit — Some work in writing given equation in the form of that in (b)(i)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-b-ii-solution-5", kind: "point", verbatim: "Low Partial Credit — –5 explicitly excluded", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-b-ii-solution-6", kind: "point", verbatim: "Low Partial Credit — x = 3^m", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-b-ii-solution-7", kind: "point", verbatim: "Mid Partial Credit — 3^m = 7/3", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-b-ii-solution-8", kind: "point", verbatim: "High Partial Credit — m isolated correctly, for example,", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-b-ii-solution-9", kind: "point", verbatim: "High Partial Credit — m = log₃(7/3)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q3-b-ii-solution-10", kind: "point", verbatim: "Full Credit −1 (deduction) — 3^m = −5 written down, and not explicitly excluded", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q3-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q3-b-ii.png",
@@ -269,16 +422,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q4-a", topicId: "maths-3-1", conceptId: "prove-using-induction-divisible-all",
     section: "B", questionRef: "2021 HL Paper 1 Q4(a)",
-    questionText: "Prove using induction that 2^(3n−1) + 3 is divisible by 7 for all n∈ℕ",
+    questionText: "Prove using induction that 2^(3n − 1) + 3 is divisible by 7 for all n ∈ ℕ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2021-hl-p1-q4-a-r1", kind: "anyN", verbatim: "Any one of Step P(1), Step P(k), or Step P(k + 1)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit –1: Omits conclusion but otherwise correct. Note: Accept Step P(1), Step P(k), Step P(k + 1) in any order. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Any one of Step P(1), Step P(k), or Step P(k + 1)","Any two of Step P(1), Step P(k), or Step P(k + 1)","Some valid work in using Step P(k) to prove Step P(k + 1)"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q4-a",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q4-a.png",
@@ -299,16 +465,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q4-b-i", topicId: "maths-3-1", conceptId: "nth-term-terms",
+    id: "maths-2021-hl-p1-q4-b-i", topicId: "maths-4-1", conceptId: "nth-term-terms",
     section: "B", questionRef: "2021 HL Paper 1 Q4(b)(i)",
-    questionText: "Find the nth term, Tₙ, in terms of n and p, where n∈ℕ",
+    stem: "p, p + 7, p + 14, p + 21, … is an arithmetic sequence, where p ∈ ℕ.",
+    questionText: "Find the nth term, Tₙ, in terms of n and p, where n ∈ ℕ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q4-b-i-r1", kind: "anyN", verbatim: "a = p or d = 7\nTₙ formula with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept p + (n−1)(7). Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["a = p or d = 7\nTₙ formula with some substitution"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q4-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q4-b-i.png",
@@ -329,16 +509,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q4-b-ii", topicId: "maths-4-1", conceptId: "smallest-value-which-2021-term-sequence",
     section: "B", questionRef: "2021 HL Paper 1 Q4(b)(ii)",
-    questionText: "(ii) Find the smallest value of p for which 2021 is a term in the sequence",
+    stem: "p, p + 7, p + 14, p + 21, … is an arithmetic sequence, where p ∈ ℕ.",
+    questionText: "Find the smallest value of p for which 2021 is a term in the sequence.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q4-b-ii-r1", kind: "anyN", verbatim: "p + 7n−7 = 2021", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["p + 7n−7 = 2021","2023\n289"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q4-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q4-b-ii.png",
@@ -359,16 +553,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q5-a-i", topicId: "maths-5-2", conceptId: "value-value-value",
     section: "B", questionRef: "2021 HL Paper 1 Q5(a)(i)",
-    questionText: "Find the value of a, the value of b, and the value of c",
+    stem: "The derivative of f(x) = 2x³ + 6x² − 12x + 3 can be expressed in the form f′(x) = a(x + b)² + c, where a, b, c ∈ ℤ and x ∈ ℝ.",
+    questionText: "Find the value of a, the value of b, and the value of c.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q5-a-i-r1", kind: "anyN", verbatim: "Any correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: 6(x + 1)²−18. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Any correct differentiation","Differentiation fully correct","any 2 of a or b or c correctly identified\n6[(x + 1)²−3]"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q5-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q5-a-i.png",
@@ -389,21 +597,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q5-a-ii", topicId: "maths-5-2", conceptId: "36x-range-values-which",
     section: "B", questionRef: "2021 HL Paper 1 Q5(a)(ii)",
-    questionText: "(ii) If g(x) = 36x + 5, find the range of values of x for which f′(x) > g′(x)",
+    stem: "The derivative of f(x) = 2x³ + 6x² − 12x + 3 can be expressed in the form f′(x) = a(x + b)² + c, where a, b, c ∈ ℤ and x ∈ ℝ.",
+    questionText: "If g(x) = 36x + 5, find the range of values of x for which f′(x) > g′(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q5-a-ii-r1", kind: "anyN", verbatim: "Any correct differentiation for g(x)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: −4 > x > 2. Note: Accept inclusion of −4 and 2. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Any correct differentiation for g(x)","Inequality correctly formulated","roots of quadratic found"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q5-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q5-a-ii.png",
           "srcHash": "be1073bbd17a93cc4b98f5bb81acd4a9",
-          "alt": "The question as printed on the paper — The derivative of f(x) = 2x³ + 6x²−12x + 3 can be expressed in the form f′(x) = a(x + b)² + c, where a, b, c∈ℤ and x∈ℝ. Find the value of a, the value of b, and the value of c. a = b = c = (ii) If g(x) = 36x + 5, find… Full card prompt: (ii) If g(x) = 36x + 5, find the range of values of x for which f′(x) > g′(x)",
+          "alt": "The question as printed on the paper — The derivative of f(x) = 2x³ + 6x²−12x + 3 can be expressed in the form f′(x) = a(x + b)² + c, where a, b, c∈ℤ and x∈ℝ. Find the value of a, the value of b, and the value of c. a = b = c = (ii) If g(x) = 36x + 5, find… Full card prompt: The derivative of f(x) = 2x³ + 6x² − 12x + 3 can be expressed in the form f′(x) = a(x + b)² + c, where a, b, c ∈ ℤ and x ∈ ℝ. If g(x) = 36x + 5, find the range of values of x for which f′(x) > g′(x).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -419,16 +641,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q5-b", topicId: "maths-2-3", conceptId: "diagram-shows-tangent-line-sin-point",
+    id: "maths-2021-hl-p1-q5-b", topicId: "maths-5-2", conceptId: "diagram-shows-tangent-line-sin-point",
     section: "B", questionRef: "2021 HL Paper 1 Q5(b)",
-    questionText: "(b) The diagram below shows t, the tangent line to h(x) = 2 sin(2x) , where 0 ≤ x ≤ 𝜋, at the point where x = 𝜋/6. A(0, k), where k∈ℝ, is the point where t cuts the y-axis. Find the value of k correct to two decimal places",
+    questionText: "The diagram below shows t, the tangent line to h(x) = 2 sin(2x), where 0 ≤ x ≤ π, at the point where x = π/6. A(0, k), where k ∈ ℝ, is the point where t cuts the y-axis. Find the value of k correct to two decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct differentiation; substitutes 𝜋/6 in to h(x); formula for slope or equation of a line with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Consider solution as involving 4 steps: Step 1: differentiate 2 sin 2x Step 2: find slope at x = 𝜋/6 is 2 Step 3: find y-value at x = 𝜋/6 Step 4: find k (for example, using slope or equation of line). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct differentiation; substitutes 𝜋/6 in to h(x); formula for slope or equation of a line with some substitution","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q5-b.png",
@@ -449,16 +684,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q6-a", topicId: "maths-5-2", conceptId: "part",
+    id: "maths-2021-hl-p1-q6-a", topicId: "maths-5-1", conceptId: "part",
     section: "B", questionRef: "2021 HL Paper 1 Q6(a)",
-    questionText: "Show that h′(x) = −2x² + 4x + 6. y 6 h′(x) x -1 1 2 3",
+    stem: "The diagram below shows the graph of h′(x) the derivative of a cubic function h(x). The graph cuts the x-axis at −1 and 3 and the y-axis at 6.",
+    questionText: "Show that h′(x) = −2x² + 4x + 6.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q6-a-r1", kind: "anyN", verbatim: "Identifies or uses a relevant value from the graph, for example, (x + 1) or 3\nA factorisation of given h′(x), for example 2(−x² + 2x + 3)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Accept 3 points from graph verified as belonging to given equation of h′(x). Note: three points identified from graph is Low Partial Credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Identifies or uses a relevant value from the graph, for example, (x + 1) or 3\nA factorisation of given h′(x), for example 2(−x² + 2x + 3)","Generates (x + 1)(x−3) from graph\nCorrectly verifies one point from the graph into the given h′(x)\nFull factorisation of given h′(x)\nUsing simultaneous equations, finds one value (a, b, or c)","Generates x²−2x−3 from graph\nFrom given h′(x), finds two roots\nCorrectly verifies two points from the graph into the given h′(x)\nFrom given h′(x), shows that y- intercept is 6 and fully factorises\nUsing simultaneous equations, finds two values (from a, b, and c)"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q6-a.png",
@@ -479,16 +728,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q6-b", topicId: "maths-5-2", conceptId: "maximum-positive-value-slope-tangent",
     section: "B", questionRef: "2021 HL Paper 1 Q6(b)",
-    questionText: "Use h′(x) to find the maximum positive value of the slope of a tangent to h(x)",
+    stem: "The diagram below shows the graph of h′(x) the derivative of a cubic function h(x). The graph cuts the x-axis at −1 and 3 and the y-axis at 6.",
+    questionText: "Use h′(x) to find the maximum positive value of the slope of a tangent to h(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q6-b-r1", kind: "anyN", verbatim: "Some correct differentiation of h′(x)\nFinds h′′(x)\nh′(x) = −2(x²−2x−3)\nIndicates axis of symmetry on graph", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: It is possible to accept for Full Credit without h′′′(x) < 0. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some correct differentiation of h′(x)\nFinds h′′(x)\nh′(x) = −2(x²−2x−3)\nIndicates axis of symmetry on graph","x = 1\nh′(x) = −2((x−1)²−4)"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q6-b.png",
@@ -509,16 +772,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q6-c", topicId: "maths-5-1", conceptId: "graph-passes-through-point-equation",
+    id: "maths-2021-hl-p1-q6-c", topicId: "maths-5-2", conceptId: "graph-passes-through-point-equation",
     section: "B", questionRef: "2021 HL Paper 1 Q6(c)",
-    questionText: "The graph of h(x) passes through the point (0, −2). Find the equation of h(x)",
+    stem: "The diagram below shows the graph of h′(x) the derivative of a cubic function h(x). The graph cuts the x-axis at −1 and 3 and the y-axis at 6.",
+    questionText: "The graph of h(x) passes through the point (0, −2). Find the equation of h(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q6-c-r1", kind: "anyN", verbatim: "Any indication of integration", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Any indication of integration","Integration of 3 terms fully correct","Relevant equation in C (with substitution)"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q6-c",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q6-c.png",
@@ -539,16 +816,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q7-a-i", topicId: "maths-3-1", conceptId: "complete-table-filling-missing-lengths",
+    id: "maths-2021-hl-p1-q7-a-i", topicId: "maths-4-1", conceptId: "complete-table-filling-missing-lengths",
     section: "B", questionRef: "2021 HL Paper 1 Q7(a)(i)",
-    questionText: "Complete the table below by filling in the missing lengths",
+    stem: "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length.",
+    questionText: "Complete the table below by filling in the missing lengths. Swing 1: 45 cm; swing 3: 729/20 cm; swings 2, 4 and 5 are blank.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q7-a-i-r1", kind: "anyN", verbatim: "1 correct table entry", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept decimals rounded to one decimal place. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["1 correct table entry","2 correct table entries"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q7-a-i.png",
@@ -569,16 +860,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q7-a-ii", topicId: "maths-3-1", conceptId: "arc-length-swing-arc-length-swing",
+    id: "maths-2021-hl-p1-q7-a-ii", topicId: "maths-4-1", conceptId: "arc-length-swing-arc-length-swing",
     section: "B", questionRef: "2021 HL Paper 1 Q7(a)(ii)",
-    questionText: "(ii) Tₙ = 45(0·9)^(n−1) is the arc length of swing n. Find the arc length of swing 25, correct to 1 decimal place",
+    stem: "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length.",
+    questionText: "Tₙ = 45(0·9)^(n − 1) is the arc length of swing n. Find the arc length of swing 25, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q7-a-ii-r1", kind: "anyN", verbatim: "Tₙ formula with some substitution\nIdentifies a or r", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Correct answer, no or incorrect unit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Tₙ formula with some substitution\nIdentifies a or r","Formula fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q7-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q7-a-ii.png",
@@ -599,16 +904,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q7-a-iii", topicId: "maths-3-1", conceptId: "iii-total-distance-travelled-tip-pendulum",
+    id: "maths-2021-hl-p1-q7-a-iii", topicId: "maths-4-1", conceptId: "iii-total-distance-travelled-tip-pendulum",
     section: "B", questionRef: "2021 HL Paper 1 Q7(a)(iii)",
-    questionText: "(iii) Find the total distance travelled by the tip of the pendulum when it has completed swing 40. Give your answer, in cm, correct to the nearest whole number",
+    stem: "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length.",
+    questionText: "Find the total distance travelled by the tip of the pendulum when it has completed swing 40. Give your answer, in cm, correct to the nearest whole number.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q7-a-iii-r1", kind: "anyN", verbatim: "Sum of two or more relevant arc- lengths\nS₄₀ formula with some substitution\nIdentifies a or r", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Sum of two or more relevant arc- lengths\nS₄₀ formula with some substitution\nIdentifies a or r","Formula fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q7-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q7-a-iii.png",
@@ -629,16 +948,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q7-a-iv", topicId: "maths-3-1", conceptId: "swing-first-swing-which-has-arc",
+    id: "maths-2021-hl-p1-q7-a-iv", topicId: "maths-3-2", conceptId: "swing-first-swing-which-has-arc",
     section: "B", questionRef: "2021 HL Paper 1 Q7(a)(iv)",
-    questionText: "(iv) Swing p is the first swing which has an arc length of less than 2 cm. Find the value of p",
+    stem: "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. Tₙ = 45(0·9)^(n − 1) is the arc length of swing n.",
+    questionText: "Swing p is the first swing which has an arc length of less than 2 cm. Find the value of p.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q7-a-iv-r1", kind: "anyN", verbatim: "Two or more different values substituted and evaluated for n, other than 30 and 31\n45(0∙9)^(n−1) = 2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: If solving by trial and improvement, T₃₀ and T₃₁ must both be evaluated for Full Credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Two or more different values substituted and evaluated for n, other than 30 and 31\n45(0∙9)^(n−1) = 2","log equation without indices\nEvaluates T₃₀ and T₃₁ but no conclusion\np = 31 with T₃₁ evaluated"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q7-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q7-a-iv.png",
@@ -659,16 +992,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q7-b-i", topicId: "maths-3-1", conceptId: "length-pendulum-angle-swing-pendulum-correct",
+    id: "maths-2021-hl-p1-q7-b-i", topicId: "maths-3-4", conceptId: "length-pendulum-angle-swing-pendulum-correct",
     section: "B", questionRef: "2021 HL Paper 1 Q7(b)(i)",
-    questionText: "If the length of the pendulum is 1 m, show that the angle, 𝜃, of swing 1 of the pendulum is 26°, correct to the nearest degree",
+    stem: "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length.",
+    questionText: "If the length of the pendulum is 1 m, show that the angle, θ, of swing 1 of the pendulum is 26°, correct to the nearest degree.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q7-b-i-r1", kind: "anyN", verbatim: "Formula for length of arc with some substitution\nCircumference found", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Formula for length of arc with some substitution\nCircumference found","𝜃 found in radians\nArc-length formula for 𝜃 in degrees, fully substituted\nVerifies that 𝜃= 26 gives arc-length of 45 cm, to the nearest cm"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q7-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q7-b-i.png",
@@ -689,16 +1036,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q7-b-ii", topicId: "maths-3-1", conceptId: "total-accumulated-angle-pendulum-swings-through",
+    id: "maths-2021-hl-p1-q7-b-ii", topicId: "maths-4-1", conceptId: "total-accumulated-angle-pendulum-swings-through",
     section: "B", questionRef: "2021 HL Paper 1 Q7(b)(ii)",
-    questionText: "(ii) Hence, find the total accumulated angle that the pendulum swings through (i.e. the sum of all the angles it swings through until it stops swinging). Give your answer correct to the nearest degree",
+    stem: "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. The length of the pendulum is 1 m and the angle of swing 1 is 26°.",
+    questionText: "Hence, find the total accumulated angle that the pendulum swings through (i.e. the sum of all the angles it swings through until it stops swinging). Give your answer correct to the nearest degree.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q7-b-ii-r1", kind: "anyN", verbatim: "a or r identified\nFirst line in model solution, or similar\nS_∞ formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Accept solution based on more accurate value for 𝜃. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["a or r identified\nFirst line in model solution, or similar\nS_∞ formula with some substitution","S_∞ formula fully substituted\nSₙ evaluated for a large enough value of n that gives the correct answer, when rounded to the nearest degree."],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q7-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q7-b-ii.png",
@@ -719,16 +1080,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q7-b-iii", topicId: "maths-3-1", conceptId: "iii-otherwise-total-distance-travelled-tip",
+    id: "maths-2021-hl-p1-q7-b-iii", topicId: "maths-4-1", conceptId: "iii-otherwise-total-distance-travelled-tip",
     section: "B", questionRef: "2021 HL Paper 1 Q7(b)(iii)",
-    questionText: "(iii) Hence, or otherwise, find the total distance travelled by the tip of the pendulum when it has moved through half of the total accumulated angle. Give your answer, in cm, correct to the nearest integer",
+    stem: "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. The length of the pendulum is 1 m and the angle of swing 1 is 26°.",
+    questionText: "Hence, or otherwise, find the total distance travelled by the tip of the pendulum when it has moved through half of the total accumulated angle. Give your answer, in cm, correct to the nearest integer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q7-b-iii-r1", kind: "anyN", verbatim: "Finds half accumulated angle\nSₙ formula with some substitution\nS_∞ distance formula with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept n = 6·5788 … rounded to n = 7 and finished (234∙766 … = 235 [cm] [∈ℕ]). Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Finds half accumulated angle\nSₙ formula with some substitution\nS_∞ distance formula with some substitution","n found\nS_∞ found for distance"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q7-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q7-b-iii.png",
@@ -749,16 +1124,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q8-a-i", topicId: "maths-5-2", conceptId: "part",
+    id: "maths-2021-hl-p1-q8-a-i", topicId: "maths-5-1", conceptId: "part",
     section: "B", questionRef: "2021 HL Paper 1 Q8(a)(i)",
-    questionText: "Use h(10) = 30 to show that p = 3·6",
+    stem: "The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³ − 0·12x² + px + 5, x ∈ ℝ, in the domain 0 ≤ x ≤ 75.",
+    questionText: "Use h(10) = 30 to show that p = 3·6.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q8-a-i-r1", kind: "anyN", verbatim: "h(10) with some relevant substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["h(10) with some relevant substitution","Equation in p"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q8-a-i.png",
@@ -779,21 +1168,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q8-a-ii", topicId: "maths-5-1", conceptId: "complete-table-draw-graph-domain-grid",
     section: "B", questionRef: "2021 HL Paper 1 Q8(a)(ii)",
-    questionText: "Complete the table below and hence draw the graph of h(x) in the domain 0 ≤ x ≤ 75 on the grid below",
+    stem: "The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³ − 0·12x² + px + 5, x ∈ ℝ, in the domain 0 ≤ x ≤ 75.",
+    questionText: "Complete the table below and hence draw the graph of h(x) in the domain 0 ≤ x ≤ 75 on the grid below. The table gives h(10) = 30, h(40) = 21, h(60) = 5 and h(75) = 21·875, and leaves x = 0, 20, 30, 50 and 70 to complete.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2021-hl-p1-q8-a-ii-r1", kind: "anyN", verbatim: "Any one item correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit –1: All items correct but points not joined or joined incorrectly; All items but one correct, and points appropriately joined. Note: 14 items are required: 5 table entries and 9 plots (which also need to be joined appropriately for Full Credit). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Any one item correct","any 7 items correct","any 11 items correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q8-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q8-a-ii.png",
           "srcHash": "dbc3b9e26bc2c5ce8b1e84a697dfb3f1",
-          "alt": "The question as printed on the paper — The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³−0·12x² + px + 5, x∈ℝ, in the domain 0 ≤ x ≤ 75. Use h(10) = 30 to show that p = 3·6 Complete the table below and hence draw the… Full card prompt: Complete the table below and hence draw the graph of h(x) in the domain 0 ≤ x ≤ 75 on the grid below",
+          "alt": "The question as printed on the paper — The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³−0·12x² + px + 5, x∈ℝ, in the domain 0 ≤ x ≤ 75. Use h(10) = 30 to show that p = 3·6 Complete the table below and hence draw the… Full card prompt: The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³ − 0·12x² + px + 5, x ∈ ℝ, in the domain 0 ≤ x ≤ 75. Complete the table below and hence draw the graph of h(x) in the domain 0 ≤ x ≤ 75 on the grid below. The table gives h(10) = 30, h(40) = 21, h(60) = 5 and h(75) = 21·875, and leaves x = 0, 20, 30, 50 and 70 to complete.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -809,21 +1212,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q8-b-i", topicId: "maths-5-2", conceptId: "derivative",
     section: "B", questionRef: "2021 HL Paper 1 Q8(b)(i)",
-    questionText: "Find h′(x), the derivative of h(x)",
+    stem: "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point.",
+    questionText: "Find h′(x), the derivative of h(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q8-b-i-r1", kind: "anyN", verbatim: "correct differentiation of 1 term", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["correct differentiation of 1 term","correct differentiation of 2 terms"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q8-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q8-b-i.png",
           "srcHash": "6cf849cd586f908ae1a2cccb19823e97",
-          "alt": "The question as printed on the paper — The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³−0·12x² + px + 5, x∈ℝ, in the domain 0 ≤ x ≤ 75. Use h(10) = 30 to show that p = 3·6 Complete the table below and hence draw the… Full card prompt: Find h′(x), the derivative of h(x)",
+          "alt": "The question as printed on the paper — The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³−0·12x² + px + 5, x∈ℝ, in the domain 0 ≤ x ≤ 75. Use h(10) = 30 to show that p = 3·6 Complete the table below and hence draw the… Full card prompt: The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point. Find h′(x), the derivative of h(x).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -839,21 +1256,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q8-b-ii", topicId: "maths-5-2", conceptId: "section-track-reaches-its-maximum-height",
     section: "B", questionRef: "2021 HL Paper 1 Q8(b)(ii)",
-    questionText: "(ii) Show that this section of the track reaches its maximum height above level ground when x = 20",
+    stem: "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point.",
+    questionText: "Show that this section of the track reaches its maximum height above level ground when x = 20.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q8-b-ii-r1", kind: "anyN", verbatim: "0·003x²−0·24x + 3·6\nStates h′(x) = 0, or similar", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["0·003x²−0·24x + 3·6\nStates h′(x) = 0, or similar","Shows that h′(20) = 0, but no further justification that it is the max in the range [0, 75]."],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q8-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q8-b-ii.png",
           "srcHash": "0e179d6b68110e7fbd738719d4f7dfb4",
-          "alt": "The question as printed on the paper — The function h(x) can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point. Find h′(x), the… Full card prompt: (ii) Show that this section of the track reaches its maximum height above level ground when x = 20",
+          "alt": "The question as printed on the paper — The function h(x) can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point. Find h′(x), the… Full card prompt: The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point. Show that this section of the track reaches its maximum height above level ground when x = 20.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -869,21 +1300,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q8-b-iii", topicId: "maths-5-1", conceptId: "iii-using-calculus-height-ground-metres",
+    id: "maths-2021-hl-p1-q8-b-iii", topicId: "maths-5-2", conceptId: "iii-using-calculus-height-ground-metres",
     section: "B", questionRef: "2021 HL Paper 1 Q8(b)(iii)",
-    questionText: "(iii) Find, using calculus, the height above ground, in metres, at the instant the track passes through an inflection point. The function h(x) = 0·001x³−0·12x² + 3·6x + 5",
+    stem: "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point.",
+    questionText: "Find, using calculus, the height above ground, in metres, at the instant the track passes through an inflection point. The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q8-b-iii-r1", kind: "anyN", verbatim: "Some correct differentiation of h′(x)\nh′′(x) indicated", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: work presented in (b)(iii) must involve calculus, or be based on calculus from (b)(ii), to be awarded any credit. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some correct differentiation of h′(x)\nh′′(x) indicated"]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q8-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q8-b-iii.png",
           "srcHash": "0865ee95ae55831013116553e476074b",
-          "alt": "The question as printed on the paper — The function h(x) can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point. Find h′(x), the… Full card prompt: (iii) Find, using calculus, the height above ground, in metres, at the instant the track passes through an inflection point. The function h(x) = 0·001x³−0·12x² + 3·6x + 5",
+          "alt": "The question as printed on the paper — The function h(x) can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point. Find h′(x), the… Full card prompt: The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point. Find, using calculus, the height above ground, in metres, at the instant the track passes through an inflection point. The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -899,16 +1344,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q8-c", topicId: "maths-3-1", conceptId: "function-001x-12x-average-height-section",
+    id: "maths-2021-hl-p1-q8-c", topicId: "maths-5-2", conceptId: "function-001x-12x-average-height-section",
     section: "B", questionRef: "2021 HL Paper 1 Q8(c)",
-    questionText: "Use the function h(x) = 0·001x³−0·12x² + 3·6x + 5, x∈ℝ, to find the average height of this section of the track above level ground, from x = 0 to x = 75. Give your answer in metres correct to 2 decimal places",
+    stem: "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point.",
+    questionText: "Use the function h(x) = 0·001x³ − 0·12x² + 3·6x + 5, x ∈ ℝ, to find the average height of this section of the track above level ground, from x = 0 to x = 75. Give your answer in metres correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q8-c-r1", kind: "anyN", verbatim: "Integration indicated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: + 5x + C] 3·6(75)² + 5(75) + C−(0 + C)] +. Note: Integration is required in order to be awarded any credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Integration indicated","Integration of terms fully correct (accept without C)","limits substituted correctly (and 1/75 present)"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q8-c",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q8-c.png",
@@ -929,21 +1388,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q9-a-ii", topicId: "maths-5-2", conceptId: "explain-what-value-formula-represents-context",
+    id: "maths-2021-hl-p1-q9-a-ii", topicId: "maths-5-1", conceptId: "explain-what-value-formula-represents-context",
     section: "B", questionRef: "2021 HL Paper 1 Q9(a)(ii)",
-    questionText: "Explain what the value 20 in the formula represents in the context of the coffee cooling",
+    stem: "A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed.",
+    questionText: "Explain what the value 20 in the formula represents in the context of the coffee cooling.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q9-a-ii-r1", kind: "anyN", verbatim: "reference to temperature or limit", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["reference to temperature or limit"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q9-a-ii.png",
           "srcHash": "6946556c1ddd1b3fe788fb20ed802615",
-          "alt": "The question as printed on the paper — A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20 where A is constant and t is time measured in minutes… Full card prompt: Explain what the value 20 in the formula represents in the context of the coffee cooling",
+          "alt": "The question as printed on the paper — A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20 where A is constant and t is time measured in minutes… Full card prompt: A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed. Explain what the value 20 in the formula represents in the context of the coffee cooling.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -959,21 +1432,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q9-a-iii", topicId: "maths-5-2", conceptId: "iii-decrease-temperature-coffee-minutes-after",
+    id: "maths-2021-hl-p1-q9-a-iii", topicId: "maths-3-2", conceptId: "iii-decrease-temperature-coffee-minutes-after",
     section: "B", questionRef: "2021 HL Paper 1 Q9(a)(iii)",
-    questionText: "(iii) Find the decrease in the temperature of the coffee 10 minutes after brewing. Give your answer correct to the nearest whole number",
+    stem: "A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed.",
+    questionText: "Find the decrease in the temperature of the coffee 10 minutes after brewing. Give your answer correct to the nearest whole number.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q9-a-iii-r1", kind: "anyN", verbatim: "Some substitution into function\nFinds T′(t)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Full Credit –1: Correct answer with no or incorrect unit. Note: Award High Partial Credit for finding T′(10), i.e. the rate of decrease at t = 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some substitution into function\nFinds T′(t)","T(10) evaluated\nT′(10) evaluated (−2∙7025 …)"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q9-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q9-a-iii.png",
           "srcHash": "4dbc8cb6d25f5afdbf3c0e606636a166",
-          "alt": "The question as printed on the paper — A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20 where A is constant and t is time measured in minutes… Full card prompt: (iii) Find the decrease in the temperature of the coffee 10 minutes after brewing. Give your answer correct to the nearest whole number",
+          "alt": "The question as printed on the paper — A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20 where A is constant and t is time measured in minutes… Full card prompt: A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed. Find the decrease in the temperature of the coffee 10 minutes after brewing. Give your answer correct to the nearest whole number.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -989,16 +1476,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q9-b", topicId: "maths-5-2", conceptId: "75e-081t-gives-temperature-coffee-time",
+    id: "maths-2021-hl-p1-q9-b", topicId: "maths-3-2", conceptId: "75e-081t-gives-temperature-coffee-time",
     section: "B", questionRef: "2021 HL Paper 1 Q9(b)",
-    questionText: "T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t. If the ideal temperature to drink coffee is 82°C, find the time, to the nearest second, that it takes for the coffee to reach this temperature",
+    stem: "A cup of coffee is freshly brewed to 95° C.",
+    questionText: "T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t. If the ideal temperature to drink coffee is 82°C, find the time, to the nearest second, that it takes for the coffee to reach this temperature.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q9-b-r1", kind: "anyN", verbatim: "Some substitution into equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Accept 2∙35 mins or 141 seconds. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some substitution into equation","Fully substituted equation","Equation in t with no indices (logs handled correctly)"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q9-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q9-b.png",
@@ -1019,21 +1520,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q9-c", topicId: "maths-5-2", conceptId: "nearest-temperature-coffee-has-reached-when",
     section: "B", questionRef: "2021 HL Paper 1 Q9(c)",
-    questionText: "Find, to the nearest °C, the temperature the coffee has reached when T′(t) = −4·05, where T′(t) is the rate at which the coffee is cooling, in °C per minute",
+    stem: "A cup of coffee is freshly brewed to 95° C. T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t.",
+    questionText: "Find, to the nearest °C, the temperature the coffee has reached when T′(t) = −4·05, where T′(t) is the rate at which the coffee is cooling, in °C per minute.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q9-c-r1", kind: "anyN", verbatim: "Some correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: differentiation must be used in order to be awarded any credit. Note: Chain rule must be applied in order to be awarded more than Low Partial Credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some correct differentiation","Equation in t","t = 5·0057 … or t = 5\nOne error in finding t and finishes correctly"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q9-c",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q9-c.png",
           "srcHash": "4074df35a21dc02af198f6cabd4b45be",
-          "alt": "The question as printed on the paper — A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20 where A is constant and t is time measured in minutes… Full card prompt: Find, to the nearest °C, the temperature the coffee has reached when T′(t) = −4·05, where T′(t) is the rate at which the coffee is cooling, in °C per minute",
+          "alt": "The question as printed on the paper — A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20 where A is constant and t is time measured in minutes… Full card prompt: A cup of coffee is freshly brewed to 95° C. T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t. Find, to the nearest °C, the temperature the coffee has reached when T′(t) = −4·05, where T′(t) is the rate at which the coffee is cooling, in °C per minute.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -1049,21 +1564,47 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q9-d", topicId: "maths-5-2", conceptId: "sugar-cube-put-into-coffee-sugar",
     section: "B", questionRef: "2021 HL Paper 1 Q9(d)",
-    questionText: "A sugar cube is put into the coffee. The sugar keeps its cube shape as it dissolves. at the constant rate of 1/20 cm³/sec. As the sugar cube dissolves, its volume decreases at the constant rate of Let x(t) be the sidelength of the cube at time t. of the cube reaches 1/64 cm³. Find the rate of change of x(t) when the volume of the cube reaches",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "A sugar cube is put into the coffee. The sugar keeps its cube shape as it dissolves. As the sugar cube dissolves, its volume decreases at the constant rate of 1/20 cm³/sec. Let x(t) be the sidelength of the cube at time t. Find the rate of change of x(t) when the volume of the cube reaches 1/64 cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q9-d-r1", kind: "anyN", verbatim: "States a relevant derivative, for example, dV/dt\nx³ = 1/64", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Unit incorrect or omitted. Note: Accept if the rates of change are treated as positive. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["States a relevant derivative, for example, dV/dt\nx³ = 1/64","Any two of the following: o dV/dt = − 1/20 o dV/dx = 3x² o x = 1/4 o dx/dt = dV/dt ÷ dV/dx , or similar","dx/dt = dV/dt ÷ dV/dx , and any two others from the MPC list above"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-hl-p1-q9-d-solution-1", kind: "point", verbatim: "Model solution — dV/dt = −1/20", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-2", kind: "point", verbatim: "Model solution — and dV/dx = 3x²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-3", kind: "point", verbatim: "Model solution — dx/dt = dV/dt ÷ dV/dx", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-4", kind: "point", verbatim: "Model solution — = −4/15 cm/sec", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-5", kind: "point", verbatim: "Note — Accept if the rates of change are treated as positive.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-6", kind: "point", verbatim: "Low Partial Credit — States a relevant derivative, for example, dV/dt", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-7", kind: "point", verbatim: "Low Partial Credit — x³ = 1/64", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-8", kind: "point", verbatim: "Mid Partial Credit — Any two of the following:", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-9", kind: "point", verbatim: "Mid Partial Credit — dV/dt = −1/20", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-10", kind: "point", verbatim: "Mid Partial Credit — dV/dx = 3x²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-11", kind: "point", verbatim: "Mid Partial Credit — x = 1/4", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-12", kind: "point", verbatim: "Mid Partial Credit — dx/dt = dV/dt ÷ dV/dx , or similar", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-13", kind: "point", verbatim: "High Partial Credit — and any two others from the MPC list above", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-d-solution-14", kind: "point", verbatim: "Full Credit −1 (deduction) — Unit incorrect or omitted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q9-d",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q9-d.png",
           "srcHash": "5fb3c3d06123879e1698848c9a261c6d",
-          "alt": "The question as printed on the paper — A sugar cube is put into the coffee. The sugar keeps its cube shape as it dissolves. at the constant rate of 1/20 cm³/sec. As the sugar cube dissolves, its volume decreases at the constant rate of Let x(t) be the… Full card prompt: A sugar cube is put into the coffee. The sugar keeps its cube shape as it dissolves. at the constant rate of 1/20 cm³/sec. As the sugar cube dissolves, its volume decreases at the constant rate of Let x(t) be the sidelength of the cube at time t. of the cube reaches 1/64 cm³. Find the rate of change of x(t) when the volume of the cube reaches",
+          "alt": "The question as printed on the paper — A sugar cube is put into the coffee. The sugar keeps its cube shape as it dissolves. at the constant rate of 1/20 cm³/sec. As the sugar cube dissolves, its volume decreases at the constant rate of Let x(t) be the… Full card prompt: A sugar cube is put into the coffee. The sugar keeps its cube shape as it dissolves. As the sugar cube dissolves, its volume decreases at the constant rate of 1/20 cm³/sec. Let x(t) be the sidelength of the cube at time t. Find the rate of change of x(t) when the volume of the cube reaches 1/64 cm³.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -1079,21 +1620,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q10-a-i", topicId: "maths-2-3", conceptId: "value-when-tank-empties",
+    id: "maths-2021-hl-p1-q10-a-i", topicId: "maths-4-2", conceptId: "value-when-tank-empties",
     section: "B", questionRef: "2021 HL Paper 1 Q10(a)(i)",
-    questionText: "Find the value of t when the tank empties",
+    stem: "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions.",
+    questionText: "Find the value of t when the tank empties.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q10-a-i-r1", kind: "anyN", verbatim: "V(t) = 0\nQuadratic formula with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Gives 15 and − 4/3. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["V(t) = 0\nQuadratic formula with some substitution","V(t) fully factorised\nFormula fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[29],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-a-i.png",
           "srcHash": "94c8ff57b64f1878924397ea69a418e2",
-          "alt": "The question as printed on the paper — Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60… Full card prompt: Find the value of t when the tank empties",
+          "alt": "The question as printed on the paper — Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60… Full card prompt: Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions. Find the value of t when the tank empties.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -1109,21 +1664,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q10-a-ii", topicId: "maths-3-4", conceptId: "rate-which-volume-water-tank-changing",
+    id: "maths-2021-hl-p1-q10-a-ii", topicId: "maths-5-2", conceptId: "rate-which-volume-water-tank-changing",
     section: "B", questionRef: "2021 HL Paper 1 Q10(a)(ii)",
-    questionText: "Find the rate at which the volume of water in the tank is changing when t = 5",
+    stem: "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions.",
+    questionText: "Find the rate at which the volume of water in the tank is changing when t = 5.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q10-a-ii-r1", kind: "anyN", verbatim: "Any relevant differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Full Credit –1: Correct answer but no or incorrect unit. Note: differentiation must be used in order to be awarded any credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Any relevant differentiation","V′(5) substituted"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[29],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-a-ii.png",
           "srcHash": "029e6bbf3cbeb989f7fe09d10d27553a",
-          "alt": "The question as printed on the paper — Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60… Full card prompt: Find the rate at which the volume of water in the tank is changing when t = 5",
+          "alt": "The question as printed on the paper — Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60… Full card prompt: Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions. Find the rate at which the volume of water in the tank is changing when t = 5.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -1139,21 +1708,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-a-iii", topicId: "maths-5-2", conceptId: "value-when-volume-water-tank-maximum",
     section: "B", questionRef: "2021 HL Paper 1 Q10(a)(iii)",
-    questionText: "Find the value of t when the volume of water in the tank is a maximum",
+    stem: "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions.",
+    questionText: "Find the value of t when the volume of water in the tank is a maximum.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q10-a-iii-r1", kind: "anyN", verbatim: "V′(t) = 0\n41 −6t\nV′′(t) = −6", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["V′(t) = 0\n41 −6t\nV′′(t) = −6"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[29],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q10-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-a-iii.png",
           "srcHash": "4e0be005aff587be56f9836d71c86e71",
-          "alt": "The question as printed on the paper — Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60… Full card prompt: Find the value of t when the volume of water in the tank is a maximum",
+          "alt": "The question as printed on the paper — Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60… Full card prompt: Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions. Find the value of t when the volume of water in the tank is a maximum.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -1169,21 +1752,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-a-iv", topicId: "maths-5-2", conceptId: "maximum-volume-water-tank-correct-nearest",
     section: "B", questionRef: "2021 HL Paper 1 Q10(a)(iv)",
-    questionText: "Find the maximum volume of the water in the tank, correct to the nearest litre",
+    stem: "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions.",
+    questionText: "Find the maximum volume of the water in the tank, correct to the nearest litre.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q10-a-iv-r1", kind: "anyN", verbatim: "V′(t) = 0\n41 −6t\nV′′(t) = −6\nSome relevant substitution into V(t)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["V′(t) = 0\n41 −6t\nV′′(t) = −6\nSome relevant substitution into V(t)"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[29],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q10-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-a-iv.png",
           "srcHash": "ad3b9b6f4755b31d320a3efef5e95ec6",
-          "alt": "The question as printed on the paper — Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60… Full card prompt: Find the maximum volume of the water in the tank, correct to the nearest litre",
+          "alt": "The question as printed on the paper — Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60… Full card prompt: Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions. Find the maximum volume of the water in the tank, correct to the nearest litre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -1199,21 +1796,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-b-i", topicId: "maths-2-3", conceptId: "order-model-reasonable-must-satisfy-number",
     section: "B", questionRef: "2021 HL Paper 1 Q10(b)(i)",
-    questionText: "In order for the model to be reasonable it must satisfy a number of conditions. One condition is written below: • The radius of the trees is increasing year on year. Show that r(t) satisfies this condition",
+    stem: "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1.",
+    questionText: "In order for the model to be reasonable it must satisfy a number of conditions. One condition is written below: “The radius of the trees is increasing year on year.” Show that r(t) satisfies this condition.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q10-b-i-r1", kind: "anyN", verbatim: "Some relevant work, for example, substitutes value of t > 0 into I(t); states I(t) > 0; states sin 𝜋t/5 > −1", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some relevant work, for example, substitutes value of t > 0 into I(t); states I(t) > 0; states sin 𝜋t/5 > −1"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[30],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q10-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-b-i.png",
           "srcHash": "f6559a791e424eed9a1b406d52d0a521",
-          "alt": "The question as printed on the paper — Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of… Full card prompt: In order for the model to be reasonable it must satisfy a number of conditions. One condition is written below: • The radius of the trees is increasing year on year. Show that r(t) satisfies this condition",
+          "alt": "The question as printed on the paper — Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of… Full card prompt: Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1. In order for the model to be reasonable it must satisfy a number of conditions. One condition is written below: “The radius of the trees is increasing year on year.” Show that r(t) satisfies this condition.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -1229,21 +1840,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-b-ii", topicId: "maths-2-3", conceptId: "explain-what-means-context-growth-tree",
     section: "B", questionRef: "2021 HL Paper 1 Q10(b)(ii)",
-    questionText: "Show that I(6) < I(5) and explain what this means in the context of the growth of a tree",
+    stem: "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1.",
+    questionText: "Show that I(6) < I(5) and explain what this means in the context of the growth of a tree.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-hl-p1-q10-b-ii-r1", kind: "anyN", verbatim: "I(5) or I(6) with some substitution\nValid explanation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Accept without the conclusion (i.e. that I(6) < I(5)), as long as I(5) and I(6) evaluated, and valid explanation given. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["I(5) or I(6) with some substitution\nValid explanation","I(5) and I(6) with full substitution\nValid explanation and some substitution into I(5) or I(6)"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[30],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q10-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-b-ii.png",
           "srcHash": "37cb883fac7de7cc641c22c04777ef63",
-          "alt": "The question as printed on the paper — Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of… Full card prompt: Show that I(6) < I(5) and explain what this means in the context of the growth of a tree",
+          "alt": "The question as printed on the paper — Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of… Full card prompt: Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1. Show that I(6) < I(5) and explain what this means in the context of the growth of a tree.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -1259,21 +1884,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q10-b-iii", topicId: "maths-2-3", conceptId: "iii-two-identical-trees-growing-forest",
+    id: "maths-2021-hl-p1-q10-b-iii", topicId: "maths-4-1", conceptId: "iii-two-identical-trees-growing-forest",
     section: "B", questionRef: "2021 HL Paper 1 Q10(b)(iii)",
-    questionText: "(iii) Two identical trees are growing in the forest. At the beginning of year 1, a tree was cut down and a section of its trunk, in the shape of a cylinder of radius 10 cm, standard length h cm, and volume V₁ cm³ was sent to a sawmill. Given that r(0) = 10, the formula r(t + 1) = r(t) + I(t + 1), where t∈ℕ, can be used to find the radius of the second tree for subsequent values of t. Find r(2), the radius of the second tree at t = 2. c𝜋 Give your answer in the form a + sin b𝜋/5 sin 5, where a, b, and c∈ℕ",
+    stem: "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1.",
+    questionText: "Two identical trees are growing in the forest. At the beginning of year 1, a tree was cut down and a section of its trunk, in the shape of a cylinder of radius 10 cm, standard length h cm, and volume V₁ cm³ was sent to a sawmill. Given that r(0) = 10, the formula r(t + 1) = r(t) + I(t + 1), where t ∈ ℕ, can be used to find the radius of the second tree for subsequent values of t. Find r(2), the radius of the second tree at t = 2. Give your answer in the form a + sin(bπ/5) + sin(cπ/5), where a, b, and c ∈ ℕ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q10-b-iii-r1", kind: "anyN", verbatim: "r(2) = r(1) + I(2)\nr(3) = r(2) + I(3)\nSome relevant substitution into r(1)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: r(2) = 10 + 1∙5 + sin 𝜋/5 + 1∙5 + sin 2𝜋/5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["r(2) = r(1) + I(2)\nr(3) = r(2) + I(3)\nSome relevant substitution into r(1)","r(2) = r(0) + I(1) + I(2)\nr(1) = 10 + 1 ∙ 5 + sin 𝜋/5"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[30],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q10-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-b-iii.png",
           "srcHash": "335ed41c41b8f73b8dd25c08a783c8f7",
-          "alt": "The question as printed on the paper — Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of… Full card prompt: (iii) Two identical trees are growing in the forest. At the beginning of year 1, a tree was cut down and a section of its trunk, in the shape of a cylinder of radius 10 cm, standard length h cm, and volume V₁ cm³ was sent to a sawmill. Given that r(0) = 10, the formula r(t + 1) = r(t) + I(t + 1), where t∈ℕ, can be used to find the radius of the second tree for subsequent values of t. Find r(2), the radius of the second tree at t = 2. c𝜋 Give your answer in the form a + sin b𝜋/5 sin 5, where a, b, and c∈ℕ",
+          "alt": "The question as printed on the paper — Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of… Full card prompt: Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1. Two identical trees are growing in the forest. At the beginning of year 1, a tree was cut down and a section of its trunk, in the shape of a cylinder of radius 10 cm, standard length h cm, and volume V₁ cm³ was sent to a sawmill. Given that r(0) = 10, the formula r(t + 1) = r(t) + I(t + 1), where t ∈ ℕ, can be used to find the radius of the second tree for subsequent values of t. Find r(2), the radius of the second tree at t = 2. Give your answer in the form a + sin(bπ/5) + sin(cπ/5), where a, b, and c ∈ ℕ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -1289,21 +1928,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-b-iv", topicId: "maths-3-4", conceptId: "second-tree-was-also-cut-down",
     section: "B", questionRef: "2021 HL Paper 1 Q10(b)(iv)",
-    questionText: "(iv) At t = 10 the second tree was also cut down. A section of its trunk, in the shape of a cylinder, of radius r(10) cm, standard length h cm, and volume V₂ cm³ was also sent to a sawmill. If V₂ = kV₁, where k∈ℝ, find the value of k",
+    stem: "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1. A section of the first tree’s trunk, a cylinder of radius 10 cm, standard length h cm and volume V₁ cm³, was sent to a sawmill.",
+    questionText: "At t = 10 the second tree was also cut down. A section of its trunk, in the shape of a cylinder, of radius r(10) cm, standard length h cm, and volume V₂ cm³ was also sent to a sawmill. If V₂ = kV₁, where k ∈ ℝ, find the value of k.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-hl-p1-q10-b-iv-r1", kind: "anyN", verbatim: "r(10) with some substitution\nFormula for volume of a cylinder with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["r(10) with some substitution\nFormula for volume of a cylinder with some substitution","r(10) fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[31],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q10-b-iv",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-b-iv.png",
           "srcHash": "d65189184f536c67027979c8d076c44e",
-          "alt": "The question as printed on the paper — Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of… Full card prompt: (iv) At t = 10 the second tree was also cut down. A section of its trunk, in the shape of a cylinder, of radius r(10) cm, standard length h cm, and volume V₂ cm³ was also sent to a sawmill. If V₂ = kV₁, where k∈ℝ, find the value of k",
+          "alt": "The question as printed on the paper — Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of… Full card prompt: Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1. A section of the first tree’s trunk, a cylinder of radius 10 cm, standard length h cm and volume V₁ cm³, was sent to a sawmill. At t = 10 the second tree was also cut down. A section of its trunk, in the shape of a cylinder, of radius r(10) cm, standard length h cm, and volume V₂ cm³ was also sent to a sawmill. If V₂ = kV₁, where k ∈ ℝ, find the value of k.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -19547,6 +20200,37 @@ export const CARDS: SecCard[] = [
           ],
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2021, level: "higher",
+    paperFileid: "LC003ALP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
+    id: "maths-2021-hl-p1-q9-a-i", topicId: "maths-3-2", conceptId: "p1-q9-a-i",
+    section: "B", questionRef: "2021 HL Paper 1 Q9(a)(i)",
+    stem: "A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed.",
+    questionText: "Show that A = 75.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2021-hl-p1-q9-a-i-solution-1", kind: "point", verbatim: "Model solution — 95 = Ae^((−0·081)(0)) + 20", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-a-i-solution-2", kind: "point", verbatim: "Model solution — 75 = A", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-a-i-solution-3", kind: "point", verbatim: "Low Partial Credit — Some substitution into function, including A = 75", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-a-i-solution-4", kind: "point", verbatim: "High Partial Credit — Equation in A", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-hl-p1-q9-a-i-solution-5", kind: "point", verbatim: "High Partial Credit — Substitutes A = 75 and t = 0", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,
