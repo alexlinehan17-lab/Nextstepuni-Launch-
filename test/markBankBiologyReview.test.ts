@@ -14,12 +14,17 @@ import { describe, expect, it } from 'vitest';
 import { CARDS as BIO_HIGHER } from '../components/MarkBank/cards/biology/higher';
 import { CARDS as BIO_ORDINARY } from '../components/MarkBank/cards/biology/ordinary';
 import audit from '../scripts/markbank/authored/biology-review-audit.json';
+import { createHash } from 'node:crypto';
 import { tariffReconciles } from '../types/markBank';
 
 type Task = { id: string; questionRef: string; total: number; route: string | null;
-  status: 'carded' | 'excluded' };
+  status: 'carded' | 'excluded' | 'verified' | 'corrected' | 'added' };
+type Correction = { id: string; changed: string[]; fieldsBefore: Record<string, unknown> };
 type Sitting = { tasks: Task[]; cardCount: number; baseTaskCount: number;
   routes: Record<string, string[]>;
+  review?: { baselineCommit: string; verified: string[]; corrected: Correction[]; added: string[];
+    retained: Array<{ id: string; reason: string }>;
+    withdrawn: Record<string, { replacementId: string; reason: string }> };
   sources: Record<string, { sha256: string; pages: number }>;
   checks: { excluded: Array<{ id: string; reason: string; evidence: string; schemeRows: string[] }> } };
 const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sittings;
@@ -221,5 +226,109 @@ describe('Biology 2026 Ordinary — reviewed sitting', () => {
       expect(olById.get(id)!.figure?.solution, id).toBe(true);
       expect(olById.get(id)!.sourceMaterial?.pages, id).toEqual([page]);
     }
+  });
+});
+
+const hl25 = sittings['2025-hl'];
+const higher2025 = BIO_HIGHER.filter(card => card.year === 2025) as unknown as ReviewedCard[];
+const hl25ById = new Map(higher2025.map(card => [card.id, card]));
+const contentHash = (cards: readonly unknown[]) => createHash('sha256')
+  .update(JSON.stringify(cards)).digest('hex');
+
+describe('Biology 2025 Higher — reviewed sitting, corrected in place', () => {
+  const review = hl25.review!;
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(hl25.baseTaskCount).toBe(167);
+    expect(hl25.cardCount).toBe(173);
+    expect(higher2025).toHaveLength(173);
+    expect(new Set(hl25.tasks.map(task => task.id))).toEqual(new Set(hl25ById.keys()));
+  });
+
+  it('keeps every pre-existing id: verified, corrected, or a withdrawn never-shipped twin', () => {
+    expect(review.baselineCommit).toBe('6bb860204');
+    expect([review.verified.length, review.corrected.length, review.added.length,
+      review.retained.length]).toEqual([8, 99, 66, 12]);
+    for (const id of [...review.verified, ...review.corrected.map(c => c.id), ...review.added]) {
+      expect(hl25ById.has(id), id).toBe(true);
+    }
+    for (const { id } of review.retained) {
+      expect(hl25ById.has(id), id).toBe(false);
+      expect(review.withdrawn[id]?.replacementId, id).toBeTruthy();
+      expect(hl25ById.has(review.withdrawn[id].replacementId), id).toBe(true);
+    }
+  });
+
+  it('records what each corrected card showed before', () => {
+    for (const correction of review.corrected) {
+      expect(correction.changed.length, correction.id).toBeGreaterThan(0);
+      for (const field of correction.changed) {
+        expect(field in correction.fieldsBefore, `${correction.id}.${field}`).toBe(true);
+      }
+    }
+  });
+
+  it('leaves the cards the review verified exactly as they shipped', () => {
+    const verified = review.verified.map(id => hl25ById.get(id)!)
+      .sort((a, b) => a.id.localeCompare(b.id));
+    // The eight cards' shipped text is byte-identical to the deck before the review.
+    expect(contentHash(verified)).toBe('01ce2cf8d3c67b32e642be6ebe8f30d32cba3a5618ca55690bc1fab7df3c81cc');
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(hl25.sources['038'].sha256)
+      .toBe('23983f696580948ae097280069cd4bc7977fcefaadd3f17dc8c50c016960ee9c');
+    expect(hl25.sources['040'].sha256)
+      .toBe('d56e7550c86a92f8d9285d7265fd6b0c316f266d1a5d74e75cae425684d9044b');
+    expect(hl25.sources.scheme.sha256)
+      .toBe('f3417b27f2446080891b3f05444eaeccc06a7b820992a2d371662f2e6ec93843');
+    expect([hl25.sources['038'].pages, hl25.sources['040'].pages, hl25.sources.scheme.pages])
+      .toEqual([40, 12, 36]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of hl25.tasks) {
+      const card = hl25ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('adds up to the printed question totals', () => {
+    const firstRoute = new Set(Object.values(hl25.routes).map(routes => routes[0]));
+    const totals = new Map<number, number>();
+    for (const task of hl25.tasks) {
+      if (task.route && !firstRoute.has(task.route)) continue;
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    expect(totals.get(1)).toBe(24);   // best five of six parts at 4
+    for (const q of [2, 3, 4, 5, 6, 7]) expect(totals.get(q), `Q${q}`).toBe(20);
+    for (const q of [8, 9, 10]) expect(totals.get(q), `Q${q}`).toBe(30);
+    for (const q of [11, 12, 13, 14, 15]) expect(totals.get(q), `Q${q}`).toBe(60);
+    for (const q of [16, 17]) expect(totals.get(q), `Q${q}`).toBe(120);
+  });
+
+  it('expands the four closed choose-one pools into one card per printed option', () => {
+    const routesOf = (ref: string) => higher2025
+      .filter(card => card.questionRef.startsWith(`2025 HL ${ref} — `))
+      .map(card => card.questionRef.split(' — ')[1]).sort();
+    expect(routesOf('Q14(b)(iv)')).toEqual(['hearing-defect', 'long-sightedness', 'short-sightedness']);
+    expect(routesOf('Q14(c)(iv)')).toEqual(['paralysis', 'parkinsons-disease']);
+    expect(routesOf('Q15(c)(iii)')).toEqual(['agriculture', 'domestic', 'industry']);
+    expect(routesOf('Q16(b)(vi)')).toEqual(['asthma', 'bronchitis']);
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph)s?\b|\bthe graphs\b/i;
+    for (const card of higher2025) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // Q13(a)(ii): the scheme's equation, with the subscripts and arrow the
+    // text layer drops, waits for the reveal.
+    expect(hl25ById.get('bio-2025-hl-q13-a-ii')!.figure?.solution).toBe(true);
   });
 });

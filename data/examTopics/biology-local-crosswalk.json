@@ -58266,10 +58266,12 @@
         "biology-0-0"
       ],
       "topicIds": [
+        "biology-higher-new-course-u2-investigating-in-science",
+        "biology-higher-old-course-the-scientific-method",
         "biology-higher-old-course-experiment-questions"
       ],
-      "resolution": "retained-local-canonical-fallback",
-      "reason": "Entitled SEC task preserved although the factual reference snapshot has no association for this independently selectable question."
+      "resolution": "retained-local-reviewed",
+      "reason": "Official SEC 2025 task retained from direct paper review; the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "ordinary",

@@ -109,6 +109,66 @@
    "set": {
     "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
    }
+  },
+  "bio-2025-hl-q3-a-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q3-a, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q3-a"
+  },
+  "bio-2025-hl-q4-ab-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q4-ab, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q4-ab"
+  },
+  "bio-2025-hl-q5-a-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q5-a, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q5-a"
+  },
+  "bio-2025-hl-q5-b-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q5-b, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q5-b"
+  },
+  "bio-2025-hl-q6-a-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q6-a, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q6-a"
+  },
+  "bio-2025-hl-q6-b-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q6-b, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q6-b"
+  },
+  "bio-2025-hl-q6-c-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q6-c, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q6-c"
+  },
+  "bio-2025-hl-q11-b-iv-vi-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q11-b-iv-vi, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q11-b-iv-vi"
+  },
+  "bio-2025-hl-q14-c-i-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q14-c-neuron-id, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q14-c-neuron-id"
+  },
+  "bio-2025-hl-q16-a-iv-1-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q16-a-iv-1, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q16-a-iv-1"
+  },
+  "bio-2025-hl-q16-c-iii-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q16-c-iii, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q16-c-iii"
+  },
+  "bio-2025-hl-q17-a-i-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q17-a-i, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q17-a-i"
   }
  },
  "physics": {

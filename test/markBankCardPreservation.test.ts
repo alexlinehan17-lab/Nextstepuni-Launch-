@@ -15,6 +15,7 @@ import { createHash } from 'node:crypto';
 import { describe, expect, it } from 'vitest';
 import { CARDS as BIO_HIGHER } from '../components/MarkBank/cards/biology/higher';
 import { CARDS as BIO_ORDINARY } from '../components/MarkBank/cards/biology/ordinary';
+import biologyReview from '../scripts/markbank/authored/biology-review-audit.json';
 import { CARDS as CHEM_HIGHER } from '../components/MarkBank/cards/chemistry/higher';
 import { CARDS as CHEM_ORDINARY } from '../components/MarkBank/cards/chemistry/ordinary';
 import { CARDS as PHYS_HIGHER } from '../components/MarkBank/cards/physics/higher';
@@ -107,7 +108,14 @@ const decks = [
    * scheme's own mark boundaries, 188 cards once Q12(c)(ii) and (iii) are
    * expanded into their three printed areas each. Nothing removed: the 673
    * cards from 2021-2025 keep their identity hash, pinned below. */
-  ['biology:higher', BIO_HIGHER, 861, 'c05852c5659b8d0d88e873a68d0d907f4a35328a24259b2328db0f82e6434748'],
+  /* 2026-10-12: biology higher 861 -> 928. The 2025 Higher sitting is
+   * re-reviewed paper by paper (bio_review_2025_hl.py) and corrected in
+   * place: all 106 shipped 2025 ids are kept (each mapped to the task it
+   * was carding, its old fields recorded in biology-review-audit.json), and
+   * the 67 tasks the old cards bundled or missed ship as new ids, one of
+   * them (bio-2025-hl-q9-b-ii) an authored card the build had never shipped.
+   * The frozen 2021-2025 identity hash is pinned below without them. */
+  ['biology:higher', BIO_HIGHER, 928, '5ebe7f73c7390bd0012ca4a2688d90d669a19b020076f1a701c3c410388978a2'],
   /* 2026-10-11: biology ordinary 686 -> 873. The 2026 Ordinary sitting is
    * added from the same review (bio_review_2026_ol.py): 183 tasks, 187 cards
    * once the four closed choose-one pools (Q7(c), Q13(b)(vi), Q16(c)(vi),
@@ -759,6 +767,16 @@ const decks = [
   ['physical-education:ordinary', PE_ORDINARY, 96, '9f4fab469becb01ab3ce73e4b6301a270e68ea5310bd0225322b0cb65a1ca23f'],
 ] as const;
 
+/* Ids first shipped by a paper-by-paper review of an already-carded Biology
+ * sitting: the tasks its old cards bundled or missed, and authored cards the
+ * build had never shipped. Every id the sitting shipped before is kept. */
+type BiologyReviewSitting = { review?: { added: string[] } };
+const BIOLOGY_REVIEW_ADDED = new Set([
+  ...Object.values((biologyReview as unknown as { sittings: Record<string, BiologyReviewSitting> })
+    .sittings).flatMap(sitting => sitting.review?.added ?? []),
+  'bio-2025-hl-q9-b-ii',
+]);
+
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
   .update(cards.map((card) => card.id).sort().join('\n'))
   .digest('hex');
@@ -780,7 +798,8 @@ describe('Mark Bank card preservation', () => {
     // and 238 Ordinary). Nothing removed.
     // ...and the 2026 Higher Biology review: 19,328 + 188.
     // ...and the 2026 Ordinary Biology review: 19,516 + 187.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_703);
+    // ...and the 2025 Higher Biology review's 67 new ids: 19,703 + 67.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_770);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -840,7 +859,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('physical-education:'))
       // Biology's reviewed 2026 sittings are additions, counted by their own test.
       .reduce((total, [name, cards]) => total + (name.startsWith('biology:')
-        ? cards.filter(card => card.year <= 2025).length
+        ? cards.filter(card => card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id)).length
         : cards.length), 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
@@ -858,10 +877,13 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('adds the reviewed 2026 Biology sittings without replacing a prior card id', () => {
-    // Every 2021-2025 card keeps its identity; the 2026 cards are new ids.
-    expect(identityHash(BIO_HIGHER.filter(card => card.year <= 2025)))
+    // Every 2021-2025 card keeps its identity; the 2026 cards, and the ids a
+    // reviewed 2025 sitting adds, are new ids.
+    expect(identityHash(BIO_HIGHER.filter(card =>
+      card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id))))
       .toBe('45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836');
-    expect(identityHash(BIO_ORDINARY.filter(card => card.year <= 2025)))
+    expect(identityHash(BIO_ORDINARY.filter(card =>
+      card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id))))
       .toBe('5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e');
     const added = BIO_HIGHER.filter(card => card.year === 2026);
     expect(added).toHaveLength(188);

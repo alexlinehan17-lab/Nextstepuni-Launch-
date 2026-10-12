@@ -279,11 +279,12 @@ def S(start, end=None, page=None, after=None, before=None, nth=1):
 
 
 def pt(sel, marks, label=None, kind=None, note=None, units=None, first_alt=False,
-       note_sel=None, note_lead=None):
-    """One marking row lifted whole from the scheme."""
+       note_sel=None, note_lead=None, whole=False):
+    """One marking row lifted whole from the scheme. `whole` keeps a printed
+    "Word: ..." line as one answer instead of reading "Word" as its label."""
     return {'type': 'pt', 'sel': sel, 'marks': marks, 'label': label, 'kind': kind,
             'note': note, 'units': units or [marks], 'first_alt': first_alt,
-            'note_sel': note_sel, 'note_lead': note_lead}
+            'note_sel': note_sel, 'note_lead': note_lead, 'whole': whole}
 
 
 def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None):
@@ -305,7 +306,7 @@ def G(kind, page=None, clip=None, expect=None, **kw):
 def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
       qfig=None, labels=None, source_pages=None, route=None, notes='', decision='',
       paper_pages=None, scheme_pages=None, leaf=None, excluded=None, evidence=None,
-      item=None):
+      item=None, id=None):
     """One reviewed task -> one card, or, with `excluded` (the reason) and
     `evidence` (what the SEC documents print), a reviewed and priced task kept
     out of the bank on purpose and recorded as excluded.
@@ -313,12 +314,12 @@ def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
     `route` names one option of a closed choose-one pool: the pool's cards are
     alternatives and its tariff counts once. `item` = (slug, label) names one
     separately priced entry of a printed list carded on its own: every item
-    counts."""
+    counts. `id` keeps a pre-existing card's id for the task it is corrected to."""
     return dict(key=key, ref=ref, sec=sec, q=q, rows=rows, topic=topic, concept=concept,
                 sq=sq, total=total, stem=stem or [], fig=fig, qfig=qfig, labels=labels or [],
                 source_pages=source_pages, route=route, notes=notes, decision=decision,
                 paper_pages=paper_pages, scheme_pages=scheme_pages, leaf=leaf,
-                excluded=excluded, evidence=evidence,
+                excluded=excluded, evidence=evidence, id=id,
                 item=item)
 
 

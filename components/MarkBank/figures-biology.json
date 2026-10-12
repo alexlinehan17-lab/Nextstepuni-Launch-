@@ -1,4 +1,459 @@
 {
+ "biology-2025-hl-q11-embryo-sac": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q11-embryo-sac.png",
+  "md5": "6c2cf51839e72874aec3bc7f4800dde9",
+  "alt": "Diagram of a flower's ovary (left) with an arrow to an enlarged ovule (right). Inside the ovule, the embryo sac holds three cells at the top, two small nuclei in the centre and three cells at the bottom. An arrow labelled P points to the two small central nuclei; an arrow labelled Q points to the middle cell of the bottom group.",
+  "lettersVisible": [
+   "P",
+   "Q"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q11(b)(i)1",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   220,
+   262,
+   452,
+   430
+  ]
+ },
+ "biology-2025-hl-q12-bases": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q12-bases.png",
+  "md5": "df642bb739ea6d0355dc344843ab4588",
+  "alt": "Structural formulae, rings of carbon and nitrogen atoms, of the four DNA bases side by side, captioned Adenine (A), Thymine (T), Cytosine (C) and Guanine (G).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q12(c)(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: alamy.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   145,
+   486,
+   500,
+   600
+  ]
+ },
+ "biology-2025-hl-q12-flies": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q12-flies.png",
+  "md5": "deafd6934b53f3e848708266acac9554",
+  "alt": "Two black-and-white photographs of fruit flies, captioned Fruit fly with ebony body and normal wing, and Fruit fly with black body and curly wing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q12(b)(ii)1",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: alamy.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   300,
+   113,
+   541,
+   280
+  ]
+ },
+ "biology-2025-hl-q13-beads": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q13-beads.png",
+  "md5": "7e1a98cd2ed5c801b9266b88708acf63",
+  "alt": "Photograph of a glass beaker filled with small, pale, round beads.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(c)(iv)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Tess Watson, flickr.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   450,
+   432,
+   542,
+   543
+  ]
+ },
+ "biology-2025-hl-q13-chloroplast": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q13-chloroplast.png",
+  "md5": "09aec3bf932d67994354ef7ec77ab738",
+  "alt": "Drawing of an oval organelle with a double outer membrane; inside, stacks of flat discs are joined by long membranes, with small dots between them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(b)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   340,
+   128,
+   541,
+   235
+  ]
+ },
+ "biology-2025-hl-q13a-ii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q13a-ii-scheme.png",
+  "md5": "667d467a4ea091820e3846eb9471129d",
+  "alt": "The marking scheme's balanced equation: 6CO2 + 6H2O, an arrow, then C6H12O6 + 6O2, with the number after each element printed as a subscript.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(a)(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 22,
+  "sourceRect": [
+   106,
+   154,
+   276,
+   174
+  ],
+  "solution": true
+ },
+ "biology-2025-hl-q14-eyes": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q14-eyes.png",
+  "md5": "bc5231dbc0cfb117b1f5105c5fe55126",
+  "alt": "Two drawings of an eye side by side, labelled A and B. In eye A the black pupil is a small dot in the middle of the grey iris; in eye B the black pupil is much larger, leaving only a thin ring of iris.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q14(b)(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Adapted from nei.nih.gov",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   318,
+   215,
+   541,
+   297
+  ]
+ },
+ "biology-2025-hl-q14-neurons": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q14-neurons.png",
+  "md5": "0d623fc2c1f42529a638ee5e3d2ff0f6",
+  "alt": "Diagrams of two neurons. Neuron X has a large cell body covered in branching extensions and a long fibre running down to end among muscle cells, labelled Muscle cells. Neuron Y has its cell body set to one side of its fibre, branched endings at the top marked Z by a bracket, and its other end in a patch of skin, labelled Skin. Arrows from the words Schwann cells point to the segments wrapping each fibre.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q14(c)(i)1",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: alamy.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   330,
+   445,
+   545,
+   680
+  ]
+ },
+ "biology-2025-hl-q15-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q15-graph.png",
+  "md5": "f31295f50b8b00366b6c6be3be7f1c32",
+  "alt": "Graph of Number of organisms against Time: a wavy line rising and falling in regular peaks and troughs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q15(b)(iv)1",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   408,
+   388,
+   540,
+   505
+  ]
+ },
+ "biology-2025-hl-q16-alveolus": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q16-alveolus.png",
+  "md5": "64093021551e255baf8714f79c62c957",
+  "alt": "Diagram of a rounded air sac, labelled B, open at the top to an airway and wrapped by a narrow blood vessel. Arrow A points to the vessel; arrow C points to one of the disc-shaped cells inside it. Curved arrows show two gases crossing between the vessel and the sac: X moves out of the vessel into the sac, and Y moves out of the sac into the vessel.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q16(b)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: alamy.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   362,
+   378,
+   545,
+   615
+  ]
+ },
+ "biology-2025-hl-q16-lymphocyte": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q16-lymphocyte.png",
+  "md5": "de882a3e9de415327604cc05b6e1c096",
+  "alt": "Drawing of a round cell with a large nucleus and Y-shaped molecules projecting from its surface, labelled Lymphocyte; more Y-shaped molecules are released from it towards the lower left.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q16(d)(i)1",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   395,
+   360,
+   545,
+   558
+  ]
+ },
+ "biology-2025-hl-q16-mitosis": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q16-mitosis.png",
+  "md5": "32b0ec549c96837a384dd41b929765a2",
+  "alt": "Drawing of a cell pinching into two, with a rounded nucleus forming in each half; each new nucleus holds four chromosomes, and short fibres radiate from a small structure at each end of the cell.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q16(c)(iii)1",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: britannica.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   362,
+   117,
+   542,
+   239
+  ]
+ },
+ "biology-2025-hl-q16-rhizopus": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q16-rhizopus.png",
+  "md5": "f463120ee62af620f6bd197a05332b63",
+  "alt": "Diagram of the bread mould Rhizopus growing on a surface: upright stalks topped by round heads, root-like threads below, and a horizontal thread joining the groups. Arrow A points to one of the round heads; arrow B to small round bodies scattering from a burst head; arrow C to the horizontal thread.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q16(a)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   370,
+   88,
+   542,
+   290
+  ]
+ },
+ "biology-2025-hl-q17-circulation": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q17-circulation.png",
+  "md5": "48a471f57a39487c317cac977678f1a0",
+  "alt": "Diagram of the human circulatory system: the heart in the centre, with vessels looping up through the lungs and down through networks in the liver, the gut, the kidneys and the lower body, and back to the heart.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q17(a)(i)1",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   372,
+   86,
+   542,
+   372
+  ]
+ },
+ "biology-2025-hl-q17-graphs": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q17-graphs.png",
+  "md5": "9f2619e7b6637c6badaf4579cbb3fe78",
+  "alt": "Two graphs over the same time. Graph X, Blood volume against Time, is a dashed line falling steadily. Graph Y, ADH levels against Time, is a solid line that starts low and flat, then rises more and more steeply.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q17(c)(v)1",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   140,
+   205,
+   480,
+   330
+  ]
+ },
+ "biology-2025-hl-q17-joints": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q17-joints.png",
+  "md5": "c5e19fd62ab306a3bbdcf2b2509ffc3f",
+  "alt": "Four images of parts of the human skeleton side by side: a knee, a shoulder (the upper arm bone meeting the shoulder blade and collar bone), a skull, and a spine.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q17(b)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com; alamy.com",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   115,
+   418,
+   530,
+   597
+  ]
+ },
+ "biology-2025-hl-q17-sperm": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q17-sperm.png",
+  "md5": "8bcf89ac011654de6b450c0dd2f177d1",
+  "alt": "Electron micrograph of a sperm cell with a 2 µm scale bar. Arrow A points to its oval end; arrow B points to the long, thin part trailing from it.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q17(d)(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Zhu, WJ. (2020). Atlas of Human Sperm Ultrastructural Morphology. Springer, Singapore. https://doi.org/10.1007/978-981-15-5325-7_2",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   390,
+   590,
+   542,
+   696
+  ]
+ },
+ "biology-2025-hl-q2-root": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q2-root.png",
+  "md5": "8470133b511ea5c3862f674b15c30ad2",
+  "alt": "Diagram of a longitudinal section through a plant root, its tip at the bottom. A bracket labelled Y spans the central core of long, narrow cells running the length of the root; an arrow labelled X points to one of the fine outgrowths on the outside of the root; a line labelled Z points to a small circled patch of tightly packed cells just behind the tip. A thick dashed line crosses the root near the top.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q2(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Adapted from Taiz L, Zeiger E (1998), Plant physiology, 2nd Ed., Sinauer Associates, Sunderland, MA.",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   378,
+   56,
+   545,
+   365
+  ]
+ },
+ "biology-2025-hl-q3-mitochondrion": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q3-mitochondrion.png",
+  "md5": "045e8c421a732c4e145e802a64dbb3f0",
+  "alt": "Drawing of a rounded, elongated organelle with a smooth outer membrane and an inner membrane folded into many finger-like inward folds, with small dots scattered in the interior.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q3(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   340,
+   88,
+   542,
+   197
+  ]
+ },
+ "biology-2025-hl-q4-membrane": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q4-membrane.png",
+  "md5": "fb78e4cc0d9ca11a327b2ce4d4fdc835",
+  "alt": "Diagram of part of a cell membrane: a curved double row of round heads, each with two wavy tails, with larger blocks embedded in or across it and small branched chains on its outer surface. A bracket labelled X spans the double row; an arrow labelled Y points to a large block that crosses the whole membrane.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q4(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: alamy.com",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   128,
+   80,
+   472,
+   216
+  ]
+ },
+ "biology-2025-hl-q5-bioreactor": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q5-bioreactor.png",
+  "md5": "b567037c7170983358b045ac2bfc45ae",
+  "alt": "Left: photograph of a large stainless-steel vessel with pipes, valves and gauges on a wheeled frame. Right: a graph of Population against Time: the curve starts flat, rises steeply through a section labelled X, then levels off into a flat plateau labelled Y.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q5(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dciinc.com; State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   95,
+   122,
+   502,
+   326
+  ]
+ },
+ "biology-2025-hl-q6-digestive": {
+  "src": "/exam-figures/biology/markbank/biology-2025-hl-q6-digestive.png",
+  "md5": "77c3b2d0acbb3e0b65c0fa38175e60d3",
+  "alt": "Diagram of the human digestive system inside an outline of the head and upper body. An arrow labelled A points to the tube running down the neck; B labels the bag-shaped organ below the liver; a label Pancreas points to the gland beneath it; the coiled tube in the middle of the abdomen is labelled Small intestine.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q6(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2025 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   380,
+   54,
+   545,
+   337
+  ]
+ },
  "biology-2026-hl-q12-population-graph": {
   "src": "/exam-figures/biology/markbank/biology-2026-hl-q12-population-graph.png",
   "md5": "f9c7e4a4d3901c78cd7815a6badb138d",

@@ -45,6 +45,7 @@ import paper_census as PC  # noqa: E402
 ROOT = B.ROOT
 AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'biology.json')
 AUDIT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'biology-review-audit.json')
+CORRECTIONS = os.path.join(ROOT, 'scripts', 'markbank', 'card-corrections.json')
 FIG_DIR = os.path.join(ROOT, 'public', 'exam-figures', 'biology', 'markbank')
 FIG_MANIFEST = os.path.join(ROOT, 'components', 'MarkBank', 'figures-biology.json')
 ATLAS_MAP = os.path.join(ROOT, 'data', 'examTopics', 'biology-{year}-exam-topic-map.json')
@@ -236,7 +237,7 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
         if spec.get('label'):
             label, _ = lifter.lift(spec['label'], task_doc, sp, lo)
             label = label.rstrip(':').strip()
-        else:
+        elif not spec.get('whole'):
             m = LABEL_SPLIT.match(text)
             if m:
                 label, text = m.group(1), m.group(2)
@@ -274,6 +275,17 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
             options = [strip_stars(B.clean_option(x)) for x in t.split('/')]
         open_list = any(o.lower() == 'other correct' for o in options)
         options = [o for o in options if o and o.lower() != 'other correct']
+        # The scheme's trailing ellipsis ("oxygen……….") and a closing "or
+        # examples" both mean the menu is open; neither is itself an option.
+        tail = [o for o in options if o.lower().startswith('or ')]
+        if tail:
+            notes.append(' '.join(tail))
+            options = [o for o in options if o not in tail]
+            open_list = True
+        trimmed = [re.sub(r'\s*[.…]{3,}$', '', o) for o in options]
+        if trimmed != options:
+            open_list = True
+            options = trimmed
         if any('other correct' in o.lower() for o in options):
             open_list = True
         group = {'claimMax': spec['claim'], 'perOption': spec['per'], 'options': options}
@@ -326,10 +338,15 @@ def build(ledger, year, level):
         # The paper's own ask.
         qsels = t['q'] if isinstance(t['q'], list) else [t['q']]
         qparts, qmetas = [], []
-        for s in qsels:
-            txt, meta = lifter.lift(s, doc)
-            qparts.append(txt)
-            qmetas.append(meta)
+        try:
+            for s in qsels:
+                txt, meta = lifter.lift(s, doc)
+                qparts.append(txt)
+                qmetas.append(meta)
+            stem_parts = [lifter.lift(s, doc)[0] for s in t['stem']]
+        except LookupError as e:
+            problems.append(f'{t["key"]} question/stem: {e}')
+            continue
         qtext = ''
         for s_, txt in zip(qsels, qparts):
             if not qtext:
@@ -338,11 +355,15 @@ def build(ledger, year, level):
                 qtext = f'{qtext}\n{txt}'
             else:
                 qtext = join([qtext, txt])
-        stem = join(lifter.lift(s, doc)[0] for s in t['stem'])
+        stem = join(stem_parts)
         # The scheme's reprint: the pairing anchor and the scope of the rows.
         sq = t['sq']
-        sq_text, sq_meta = lifter.srcs['scheme'].select(sq['page'], sq['start'], sq.get('end'),
-                                                         after=sq.get('after'), nth=sq.get('nth', 1))
+        try:
+            sq_text, sq_meta = lifter.srcs['scheme'].select(
+                sq['page'], sq['start'], sq.get('end'), after=sq.get('after'), nth=sq.get('nth', 1))
+        except LookupError as e:
+            problems.append(f'{t["key"]} scheme reprint: {e}')
+            continue
         lifter.used['scheme'].add(sq['page'])
         lo = sq_meta['lines'][1] + 1
         # Wording check: most of the scheme reprint's content words are in the ask
@@ -378,7 +399,8 @@ def build(ledger, year, level):
         qn, letter, roman, item = B.parse_ref(t['ref'])
         key_part = (qn, letter)
         item = t.get('item')
-        cid = B.card_id(year, level, t['ref'], t['route'] or (item[0] if item else None))
+        cid = t.get('id') or B.card_id(year, level, t['ref'],
+                                       t['route'] or (item[0] if item else None))
         if cid in seen_ids:
             problems.append(f'{cid}: duplicate card id')
         seen_ids.add(cid)
@@ -404,7 +426,7 @@ def build(ledger, year, level):
             card['answerVariants'] = variants
         notes = ' '.join(x for x in (t['decision'], t['notes']) if x)
         card['notes'] = (notes + ' ' if notes else '') + \
-            f'Reviewed {year}-10-11 against the paper and scheme; ledger bio_review_{year}_{level}.py.'
+            f'Reviewed {getattr(ledger, "REVIEWED_AT", "2026-10-11")} against the paper and scheme; ledger bio_review_{year}_{level}.py.'
         card.update({'year': year, 'level': level_word(level)})
         if t['fig']:
             card['figureKey'] = f'biology-{year}-{level}-{t["fig"]}'
@@ -448,6 +470,11 @@ def build(ledger, year, level):
             'sourcePages': t['source_pages'], 'pairingScore': round(score, 2),
             'decision': t['decision'] or None, 'notes': t['notes'] or None,
         })
+
+    # The build ships one card per questionRef, so two must never share one.
+    dup_refs = [r for r, n in Counter(c['questionRef'] for c in cards).items() if n > 1]
+    if dup_refs:
+        problems.append(f'questionRefs shared by more than one card: {dup_refs}')
 
     # --- totals and checksums --------------------------------------------
     ladders = getattr(ledger, 'LADDERS', {})
@@ -506,7 +533,8 @@ def build(ledger, year, level):
         view = atlas_view[qn]
         view['atlasTopics'] = topics
         view['taskTopics'].add(t['topic'])
-        if t['topic'] not in nodes:
+        filed = getattr(ledger, 'ATLAS_UNIT_EQUIV', {}).get(t['topic'], t['topic'])
+        if filed not in nodes:
             problems.append(f'{t["key"]}: topic {t["topic"]} is not among the Atlas topics for '
                             f'Q{qn} ({sorted(nodes)})')
 
@@ -608,23 +636,145 @@ def figures(ledger, lifter, year, level, write):
 
 # -------------------------------------------------------------------- write --
 
+# Fields a student sees, compared to decide whether a pre-existing card already
+# says what the review says. Row ids and the card's own notes are bookkeeping.
+COMPARED = ('section', 'questionRef', 'stem', 'questionText', 'tariffModel', 'totalMarks',
+            'rows', 'answerVariants', 'topicId', 'figureKey', 'questionFigureKey', 'labelKey',
+            'sourceMaterial')
+
+
+def _seen(card, field):
+    v = card.get(field)
+    if field == 'rows' and v is not None:
+        return [{k: x for k, x in r.items() if k != 'id'} for r in v]
+    if field == 'answerVariants' and v is not None:
+        return [{**a, 'rows': [{k: x for k, x in r.items() if k != 'id'} for r in a['rows']]}
+                for a in v]
+    return v
+
+
+def legacy_cards(ledger, prefix):
+    """The sitting's cards as they stood before its review (pinned commit), so
+    every re-run measures its corrections against the same original."""
+    import subprocess
+    raw = subprocess.check_output(['git', 'show', f'{ledger.BASELINE_COMMIT}:'
+                                   'scripts/markbank/authored/biology.json'], cwd=ROOT)
+    return [c for c in json.loads(raw) if c['id'].startswith(prefix)]
+
+
+def reconcile_existing(ledger, prefix, cards):
+    """Correct a previously carded sitting in place.
+
+    Every pre-existing id survives: a reviewed task that maps to it either
+    leaves it exactly as it was (verified) or replaces what a student sees
+    (corrected, with the fields it had before recorded); an id no task maps to
+    must be declared in RETAINED with its reason. A new task is placed after
+    the nearest pre-existing card before it in paper order, so every existing
+    card keeps its place in the bank. Returns (replacements, additions,
+    record): the card to stand at each existing id, and the new cards to
+    insert after each anchor id (None: before the sitting's first card)."""
+    legacy = legacy_cards(ledger, prefix)
+    by_id = {c['id']: c for c in legacy}
+    produced = {c['id']: c for c in cards}
+    retained = getattr(ledger, 'RETAINED', {})
+    unaccounted = [i for i in by_id if i not in produced and i not in retained]
+    if unaccounted:
+        raise Refusal(f'pre-existing ids no task maps to and none retained: {unaccounted}')
+    clash = [i for i in retained if i in produced]
+    if clash:
+        raise Refusal(f'ids both retained and produced: {clash}')
+    replacements, additions = {}, defaultdict(list)
+    record = {'verified': [], 'corrected': [], 'added': [], 'retained': []}
+    for old in legacy:
+        if old['id'] in retained:
+            replacements[old['id']] = old
+            record['retained'].append({'id': old['id'], 'questionRef': old['questionRef'],
+                                       'reason': retained[old['id']]})
+            continue
+        new = dict(produced[old['id']])
+        changed = [f for f in COMPARED if _seen(old, f) != _seen(new, f)]
+        if not changed:
+            replacements[old['id']] = old
+            record['verified'].append(old['id'])
+            continue
+        if old.get('conceptId'):
+            new['conceptId'] = old['conceptId']
+        replacements[old['id']] = new
+        dropped = sorted(k for k in old if k not in new and k not in COMPARED and k != 'notes')
+        record['corrected'].append({
+            'id': old['id'], 'before': {'questionRef': old['questionRef']},
+            'after': {'questionRef': new['questionRef']}, 'changed': changed,
+            'fieldsBefore': {f: old.get(f) for f in changed + dropped},
+            'notesBefore': old.get('notes'),
+        })
+    anchor = None
+    for c in cards:
+        if c['id'] in by_id:
+            anchor = c['id']
+            continue
+        additions[anchor].append(c)
+        record['added'].append(c['id'])
+    return replacements, additions, record
+
+
 def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
     prefix = f'bio-{year}-{level}-'
     raw = open(AUTHORED, encoding='utf-8').read()
     bank = json.loads(raw)
-    before = [c['id'] for c in bank if c['id'].startswith(prefix)]
-    new_ids = {c['id'] for c in cards}
-    lost = [i for i in before if i not in new_ids]
-    if lost:
-        raise Refusal(f'refusing to drop existing card ids: {lost}')
-    # The sitting's cards go back where they were (appended when new), so a
-    # re-run leaves every other card, and the bank's order, untouched.
-    at = next((i for i, c in enumerate(bank) if c['id'].startswith(prefix)), len(bank))
-    kept = [c for c in bank if not c['id'].startswith(prefix)]
-    at -= sum(1 for c in bank[:at] if c['id'].startswith(prefix))
-    bank = kept[:at] + cards + kept[at:]
+    record = None
+    if getattr(ledger, 'BASELINE_COMMIT', None):
+        replacements, additions, record = reconcile_existing(ledger, prefix, cards)
+        status = {i: 'verified' for i in record['verified']}
+        status.update({r['id']: 'corrected' for r in record['corrected']})
+        status.update({i: 'added' for i in record['added']})
+        for t in audit_tasks:
+            if t['status'] == 'carded':
+                t['status'] = status[t['id']]
+    else:
+        before = [c['id'] for c in bank if c['id'].startswith(prefix)]
+        new_ids = {c['id'] for c in cards}
+        lost = [i for i in before if i not in new_ids]
+        if lost:
+            raise Refusal(f'refusing to drop existing card ids: {lost}')
+        block = cards
+    if record is not None:
+        # Every pre-existing card stays where it stood; new cards follow their
+        # anchor. Cards this pipeline added on an earlier run are dropped first.
+        out, first = [], True
+        for c in bank:
+            if c['id'].startswith(prefix) and c['id'] not in replacements:
+                continue
+            if c['id'] in replacements:
+                if first:
+                    out.extend(additions.get(None, []))
+                    first = False
+                out.append(replacements[c['id']])
+                out.extend(additions.get(c['id'], []))
+            else:
+                out.append(c)
+        bank = out
+    else:
+        # The sitting's cards go back where they were (appended when new), so
+        # a re-run leaves every other card, and the bank's order, untouched.
+        at = next((i for i, c in enumerate(bank) if c['id'].startswith(prefix)), len(bank))
+        kept = [c for c in bank if not c['id'].startswith(prefix)]
+        at -= sum(1 for c in bank[:at] if c['id'].startswith(prefix))
+        bank = kept[:at] + block + kept[at:]
     with open(AUTHORED, 'w', encoding='utf-8') as fh:
         fh.write(json.dumps(bank, indent=1, ensure_ascii=False))
+
+    # Pre-existing cards the build never shipped (figure twins superseded by
+    # their base card) are withdrawn explicitly, so a corrected base whose
+    # questionRef changed cannot expose them.
+    withdraw = getattr(ledger, 'WITHDRAW', {})
+    if withdraw:
+        corr = json.load(open(CORRECTIONS, encoding='utf-8'))
+        bio = corr.setdefault('biology', {})
+        for wid, (replacement, reason) in withdraw.items():
+            bio[wid] = {'reason': reason, 'drop': True, 'replacementId': replacement}
+        with open(CORRECTIONS, 'w', encoding='utf-8') as fh:
+            json.dump(corr, fh, indent=1, ensure_ascii=False)
+            fh.write('\n')
 
     manifest = {}
     if os.path.exists(FIG_MANIFEST):
@@ -659,7 +809,7 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
             for k, v in ledger.SOURCES.items()}
     audit['sittings'][f'{year}-{level}'] = {
         'status': 'reviewed',
-        'reviewedAt': f'{year}-10-11',
+        'reviewedAt': getattr(ledger, 'REVIEWED_AT', '2026-10-11'),
         'ledger': f'scripts/markbank/authoring/bio_review_{year}_{level}.py',
         'method': ledger.__doc__.strip().split('\n\n')[0],
         'sources': srcs,
@@ -672,6 +822,10 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
                           for d, p, w, r in ledger.SELECTION_SCAN],
         'routes': ledger.ROUTES,
         'tasks': audit_tasks,
+        **({'review': {'baselineCommit': ledger.BASELINE_COMMIT, **record,
+                       'withdrawn': {k: {'replacementId': v[0], 'reason': v[1]}
+                                     for k, v in getattr(ledger, 'WITHDRAW', {}).items()}}}
+           if record else {}),
         'cardCount': len(cards),
         'baseTaskCount': len({t['key'] for t in ledger.TASKS}),
         'figures': sorted(figs),

@@ -22,6 +22,14 @@ const CURRICULUM_CROSSWALK_PATH = path.join(
 const REVIEWED_2026_PATH = path.join(
   ROOT, 'data/examTopics/biology-2026-exam-topic-map.json',
 );
+// Earlier sittings re-reviewed task by task (scripts/markbank/authoring/
+// bio_review_<year>_<level>.py). Their maps only ADD topics: a question keeps
+// every topic the factual reference snapshot gave it and gains the topics its
+// reviewed tasks need.
+const REVIEWED_EARLIER_YEARS = [2025];
+const reviewedMapPath = year => path.join(
+  ROOT, `data/examTopics/biology-${year}-exam-topic-map.json`,
+);
 const OUTPUT_PATH = path.join(
   ROOT, 'data/examTopics/biology-local-crosswalk.json',
 );
@@ -36,6 +44,9 @@ const curriculumCrosswalk = JSON.parse(
   fs.readFileSync(CURRICULUM_CROSSWALK_PATH, 'utf8'),
 );
 const reviewed2026 = JSON.parse(fs.readFileSync(REVIEWED_2026_PATH, 'utf8'));
+const reviewedEarlier = new Map(REVIEWED_EARLIER_YEARS
+  .filter(year => fs.existsSync(reviewedMapPath(year)))
+  .map(year => [year, JSON.parse(fs.readFileSync(reviewedMapPath(year), 'utf8'))]));
 const localPapers = JSON.parse(fs.readFileSync(TAGS_PATH, 'utf8'));
 const preservationBaseline = JSON.parse(fs.readFileSync(BASELINE_PATH, 'utf8'));
 
@@ -84,6 +95,20 @@ for (const [key, topicIds] of Object.entries(reviewed2026.questions)) {
 }
 if (Object.keys(reviewed2026.questions).length !== 34) {
   throw new Error('The reviewed 2026 Biology map must contain 34 questions');
+}
+for (const [year, map] of reviewedEarlier) {
+  if (map.year !== year) throw new Error(`Reviewed ${year} Biology map names year ${map.year}`);
+  for (const [key, topicIds] of Object.entries(map.questions)) {
+    if (!/^(higher|ordinary)\|(?:[1-9]|1[0-7])$/.test(key)) {
+      throw new Error(`Invalid reviewed ${year} identity: ${key}`);
+    }
+    for (const id of topicIds) {
+      if (!topicIndex.has(id)) throw new Error(`Unknown reviewed ${year} topic: ${id}`);
+      if (!id.startsWith(`biology-${key.split('|')[0]}-`)) {
+        throw new Error(`Reviewed ${year} ${key} topic ${id} is for the other level`);
+      }
+    }
+  }
 }
 
 const paperIdentity = paper => [
@@ -329,6 +354,13 @@ for (const paper of logicalEnglishPapers) {
       indexes = ids.map(id => topicIndex.get(id));
       resolution = 'retained-local-reviewed';
     }
+    const reviewedIds = reviewedEarlier.get(paper.year)
+      ?.questions[`${paper.level}|${question.n}`];
+    if (reviewedIds) {
+      // Union: nothing the reference snapshot linked is lost.
+      if (!indexes) resolution = 'retained-local-reviewed';
+      indexes = [...new Set([...(indexes ?? []), ...reviewedIds.map(id => topicIndex.get(id))])];
+    }
     if (!indexes) {
       indexes = [...new Set(
         [question.primary, question.secondary]
@@ -358,7 +390,9 @@ for (const paper of logicalEnglishPapers) {
         resolution,
         reason: paper.year === 2026
           ? 'Official SEC 2026 task retained from direct paper review; it post-dates the factual reference snapshot.'
-          : 'Entitled SEC task preserved although the factual reference snapshot has no association for this independently selectable question.',
+          : resolution === 'retained-local-reviewed'
+            ? `Official SEC ${paper.year} task retained from direct paper review; the factual reference snapshot has no association for this independently selectable question.`
+            : 'Entitled SEC task preserved although the factual reference snapshot has no association for this independently selectable question.',
       });
     }
   }
