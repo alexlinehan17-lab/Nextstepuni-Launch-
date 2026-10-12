@@ -4035,6 +4035,28 @@
       "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
       "questionSha256": "0ba5987b7340517bd4f91fb62c58b58bbbe784fb4780a5e5a218e7a0976925df",
       "reason": "Self-contained: the most valuable lesson the candidate has learned in their own life and why. Scheme PDF9 — “Candidates are free to offer any lesson they consider valuable” — never refers to TEXT 3. The same task is printed under all three texts."
+    },
+    "english-2023-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Late Love",
+      "pages": [
+        14
+      ],
+      "attribution": "Late Love — Jackie Kay, as reproduced in the SEC 2023 paper.",
+      "questionSha256": "0c846c6e6444de1a26082ba398aa43a42f785f1e9a42ccdcd94090f6c547bf10",
+      "reason": "Paper PDF14 prints the instruction (“Read the following poem, by Jackie Kay”), the title, all five stanzas (4 + 4 + 4 + 4 + 1 lines) and the byline above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
+    },
+    "english-2023-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Late Love",
+      "pages": [
+        14
+      ],
+      "attribution": "Late Love — Jackie Kay, as reproduced in the SEC 2023 paper.",
+      "questionSha256": "d3bfb3ae514ff4ef8c2c1348cb552eb2cb9de1eeed2d6c6df5084906f5f0d5af",
+      "reason": "Paper PDF14 prints the instruction (“Read the following poem, by Jackie Kay”), the title, all five stanzas (4 + 4 + 4 + 4 + 1 lines) and the byline above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
     }
   }
 }

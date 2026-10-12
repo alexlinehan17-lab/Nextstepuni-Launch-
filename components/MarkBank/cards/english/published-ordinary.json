@@ -81,6 +81,17 @@
    "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf"
   },
   {
+   "paperId": "english-2023-ol-p2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "tasks": 104,
+   "cards": 101,
+   "printedDuplicates": 3,
+   "paperSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+   "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -1178,6 +1189,7 @@
  "legacyAdditionalSources": {},
  "bridgedPapers": [
   "english-2023-ol-p1",
+  "english-2023-ol-p2",
   "english-2024-ol-p1",
   "english-2024-ol-p2",
   "english-2025-ol-p1",
@@ -1204,6 +1216,74 @@
   "english-2023-ol-p1-t3-a-ii",
   "english-2023-ol-p1-t3-a-iii-b",
   "english-2023-ol-p1-t3-b",
+  "english-2023-ol-p2-comparative-a-q1",
+  "english-2023-ol-p2-comparative-a-q2",
+  "english-2023-ol-p2-comparative-b-q1",
+  "english-2023-ol-p2-comparative-b-q2",
+  "english-2023-ol-p2-comparative-c-q1",
+  "english-2023-ol-p2-comparative-c-q2",
+  "english-2023-ol-p2-prescribed-a-q1",
+  "english-2023-ol-p2-prescribed-a-q2-i",
+  "english-2023-ol-p2-prescribed-a-q2-ii",
+  "english-2023-ol-p2-prescribed-a-q2-iii",
+  "english-2023-ol-p2-prescribed-b-q1",
+  "english-2023-ol-p2-prescribed-b-q2-i",
+  "english-2023-ol-p2-prescribed-b-q2-ii",
+  "english-2023-ol-p2-prescribed-b-q2-iii",
+  "english-2023-ol-p2-prescribed-c-q1",
+  "english-2023-ol-p2-prescribed-c-q2-i",
+  "english-2023-ol-p2-prescribed-c-q2-ii",
+  "english-2023-ol-p2-prescribed-c-q2-iii",
+  "english-2023-ol-p2-prescribed-d-q1",
+  "english-2023-ol-p2-prescribed-d-q2-i",
+  "english-2023-ol-p2-prescribed-d-q2-ii",
+  "english-2023-ol-p2-prescribed-d-q2-iii",
+  "english-2023-ol-p2-prescribed-e-q1",
+  "english-2023-ol-p2-prescribed-e-q2-i",
+  "english-2023-ol-p2-prescribed-e-q2-ii",
+  "english-2023-ol-p2-prescribed-e-q2-iii",
+  "english-2023-ol-p2-prescribed-f-q1",
+  "english-2023-ol-p2-prescribed-f-q2-i",
+  "english-2023-ol-p2-prescribed-f-q2-ii",
+  "english-2023-ol-p2-prescribed-f-q2-iii",
+  "english-2023-ol-p2-single-a-q1",
+  "english-2023-ol-p2-single-a-q2",
+  "english-2023-ol-p2-single-a-q3",
+  "english-2023-ol-p2-single-a-q4",
+  "english-2023-ol-p2-single-b-q1",
+  "english-2023-ol-p2-single-b-q2",
+  "english-2023-ol-p2-single-b-q3",
+  "english-2023-ol-p2-single-b-q4",
+  "english-2023-ol-p2-single-c-q1",
+  "english-2023-ol-p2-single-c-q2",
+  "english-2023-ol-p2-single-c-q3",
+  "english-2023-ol-p2-single-c-q4",
+  "english-2023-ol-p2-single-d-q1",
+  "english-2023-ol-p2-single-d-q2",
+  "english-2023-ol-p2-single-d-q3",
+  "english-2023-ol-p2-single-d-q4",
+  "english-2023-ol-p2-single-e-q1",
+  "english-2023-ol-p2-single-e-q2",
+  "english-2023-ol-p2-single-e-q3",
+  "english-2023-ol-p2-single-e-q4",
+  "english-2023-ol-p2-single-f-q1",
+  "english-2023-ol-p2-single-f-q2",
+  "english-2023-ol-p2-single-f-q3",
+  "english-2023-ol-p2-single-f-q4",
+  "english-2023-ol-p2-single-g-q1",
+  "english-2023-ol-p2-single-g-q2",
+  "english-2023-ol-p2-single-g-q3",
+  "english-2023-ol-p2-single-g-q4",
+  "english-2023-ol-p2-single-h-q1",
+  "english-2023-ol-p2-single-h-q2",
+  "english-2023-ol-p2-single-h-q3",
+  "english-2023-ol-p2-single-h-q4",
+  "english-2023-ol-p2-single-i-q1",
+  "english-2023-ol-p2-single-i-q2",
+  "english-2023-ol-p2-single-i-q3",
+  "english-2023-ol-p2-single-i-q4",
+  "english-2023-ol-p2-unseen-q1",
+  "english-2023-ol-p2-unseen-q2",
   "english-2024-ol-p1-composing-1",
   "english-2024-ol-p1-composing-2",
   "english-2024-ol-p1-composing-3",
@@ -1384,6 +1464,27 @@
  "bridgeAliases": {
   "english-2023-ol-p1-t2-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
   "english-2023-ol-p1-t3-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
+  "english-2023-ol-p2-comparative-a-q1": "english-2023-ol-p2-comparative-a-q1-a-i",
+  "english-2023-ol-p2-comparative-a-q2": "english-2023-ol-p2-comparative-a-q2-a-i",
+  "english-2023-ol-p2-comparative-b-q1": "english-2023-ol-p2-comparative-b-q1-a-i",
+  "english-2023-ol-p2-comparative-b-q2": "english-2023-ol-p2-comparative-b-q2-a-i",
+  "english-2023-ol-p2-comparative-c-q1": "english-2023-ol-p2-comparative-c-q1-a-i",
+  "english-2023-ol-p2-comparative-c-q2": "english-2023-ol-p2-comparative-c-q2-a-i",
+  "english-2023-ol-p2-prescribed-a-q1": "english-2023-ol-p2-prescribed-a-q1-a",
+  "english-2023-ol-p2-prescribed-b-q1": "english-2023-ol-p2-prescribed-b-q1-a",
+  "english-2023-ol-p2-prescribed-c-q1": "english-2023-ol-p2-prescribed-c-q1-a",
+  "english-2023-ol-p2-prescribed-d-q1": "english-2023-ol-p2-prescribed-d-q1-a",
+  "english-2023-ol-p2-prescribed-e-q1": "english-2023-ol-p2-prescribed-e-q1-a",
+  "english-2023-ol-p2-prescribed-f-q1": "english-2023-ol-p2-prescribed-f-q1-a",
+  "english-2023-ol-p2-single-a-q1": "english-2023-ol-p2-single-a-q1-a",
+  "english-2023-ol-p2-single-b-q1": "english-2023-ol-p2-single-b-q1-a",
+  "english-2023-ol-p2-single-c-q1": "english-2023-ol-p2-single-c-q1-a",
+  "english-2023-ol-p2-single-d-q1": "english-2023-ol-p2-single-d-q1-a",
+  "english-2023-ol-p2-single-e-q1": "english-2023-ol-p2-single-e-q1-a",
+  "english-2023-ol-p2-single-f-q1": "english-2023-ol-p2-single-f-q1-a",
+  "english-2023-ol-p2-single-g-q1": "english-2023-ol-p2-single-g-q1-a",
+  "english-2023-ol-p2-single-h-q1": "english-2023-ol-p2-single-h-q1-a",
+  "english-2023-ol-p2-single-i-q1": "english-2023-ol-p2-single-i-q1-a",
   "english-2024-ol-p1-t2-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
   "english-2024-ol-p1-t3-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
   "english-2024-ol-p2-comparative-a-q1": "english-2024-ol-p2-comparative-a-q1-a-i",
@@ -1431,7 +1532,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1184,
+ "cardCount": 1285,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -15831,6 +15932,3760 @@
    "atlas": {
     "fileid": "LC002GLP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-a-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text A Q1(a)",
+   "questionText": "In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Werner Pfennig? Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-a-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text A Q1(b)",
+   "questionText": "Identify a moment in the novel when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-a-q1-c",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text A Q1(c)",
+   "questionText": "Would you describe All the Light We Cannot See as a hopeful novel? Give two reasons for your answer supporting your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-a-q2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text A Q2",
+   "questionText": "In his novel, All the Light We Cannot See, Doerr wants us to think about courage. Identify the three most important occasions when, in your opinion, this is revealed to the reader and explain what you learned about courage on each occasion.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-a-q3",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text A Q3",
+   "questionText": "You have just read Doerr’s novel, All the Light We Cannot See. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: - whether or not the characters in the novel were believable - what was interesting about the setting of the novel - the reasons why you would or would not recommend the novel to others. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested review.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-a-q4",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text A Q4",
+   "questionText": "There are many dramatic and tense incidents in Doerr’s novel, All the Light We Cannot See. Identify three incidents which you found to be dramatic or tense or both and explain why you found these incidents dramatic or tense or both.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    21,
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-b-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text B Q1(a)",
+   "questionText": "In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Gar’s father, S.B. O’Donnell? Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-b-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text B Q1(b)",
+   "questionText": "Identify a moment in the play when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-b-q1-c",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text B Q1(c)",
+   "questionText": "Would you describe Philadelphia, Here I Come! as a hopeful play? Give two reasons for your answer supporting your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-b-q2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text B Q2",
+   "questionText": "In his play, Philadelphia, Here I Come!, Friel wants us to think about poor communication. Identify the three most important occasions when, in your opinion, this is revealed to the audience and explain what you learned about poor communication on each occasion.",
+   "totalMarks": 30,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-b-q3",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text B Q3",
+   "questionText": "You have just watched a production of Friel’s play, Philadelphia, Here I Come!. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: - which of the characters in the play you found most fascinating - what was interesting about the setting of the play - the reasons why you would or would not recommend the play to others. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested review.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    23,
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-b-q4",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text B Q4",
+   "questionText": "There are many dramatic and tense scenes in Friel’s play, Philadelphia, Here I Come!. Identify three scenes which you found to be dramatic or tense or both and explain why you found these scenes dramatic or tense or both.",
+   "totalMarks": 30,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-c-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text C Q1(a)",
+   "questionText": "In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Walter Lee Younger? Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-c-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text C Q1(b)",
+   "questionText": "Identify a moment in the play when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-c-q1-c",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text C Q1(c)",
+   "questionText": "Would you describe A Raisin in the Sun as a hopeful play? Give two reasons for your answer supporting your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-c-q2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text C Q2",
+   "questionText": "In her play, A Raisin in the Sun, Lorraine Hansberry wants us to think about family relationships. Identify the three most important occasions when, in your opinion, this is revealed to the audience and explain what you learned about family relationships on each occasion.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    25,
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-c-q3",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text C Q3",
+   "questionText": "You have just watched a production of Hansberry’s play, A Raisin in the Sun. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: - which of the characters in the play you found most fascinating - what was interesting about the setting of the play - the reasons why you would or would not recommend the play to others. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested review.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-c-q4",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text C Q4",
+   "questionText": "There are many dramatic and tense scenes in Hansberry’s play, A Raisin in the Sun. Identify three scenes which you found to be dramatic or tense or both and explain why you found these scenes dramatic or tense or both.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-d-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text D Q1(a)",
+   "questionText": "In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Torvald Helmer? Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-d-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text D Q1(b)",
+   "questionText": "Identify a moment in the play when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character.",
+   "totalMarks": 10,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-d-q1-c",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text D Q1(c)",
+   "questionText": "Would you describe A Doll’s House as a hopeful play? Give two reasons for your answer supporting your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    27,
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-d-q2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text D Q2",
+   "questionText": "In his play, A Doll’s House, Ibsen wants us to think about relationships between men and women. Identify the three most important occasions when, in your opinion, this is revealed to the audience and explain what you learned about relationships between men and women on each occasion.",
+   "totalMarks": 30,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-d-q3",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text D Q3",
+   "questionText": "You have just watched a production of Ibsen’s play, A Doll’s House. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: - which of the characters in the play you found most fascinating - what was interesting about the setting of the play - the reasons why you would or would not recommend the play to others. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested review.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-d-q4",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text D Q4",
+   "questionText": "There are many dramatic and tense scenes in Ibsen’s play, A Doll’s House. Identify three scenes which you found to be dramatic or tense or both and explain why you found these scenes dramatic or tense or both.",
+   "totalMarks": 30,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-e-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text E Q1(a)",
+   "questionText": "In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Hank Shelton? Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-e-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text E Q1(b)",
+   "questionText": "Identify a moment in the novel when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    29,
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-e-q1-c",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text E Q1(c)",
+   "questionText": "Would you describe The Cove as a hopeful novel? Give two reasons for your answer supporting your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-e-q2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text E Q2",
+   "questionText": "In his novel, The Cove, Ron Rash wants us to think about prejudice. Identify the three most important occasions when, in your opinion, this is revealed to the reader and explain what you learned about prejudice on each occasion.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-e-q3",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text E Q3",
+   "questionText": "You have just read Rash’s novel, The Cove. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: - whether or not the characters in the novel were believable - what was interesting about the setting of the novel - the reasons why you would or would not recommend the novel to others. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested review.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-e-q4",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text E Q4",
+   "questionText": "There are many dramatic and tense incidents in Rash’s novel, The Cove. Identify three incidents which you found to be dramatic or tense or both and explain why you found these incidents dramatic or tense or both.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-f-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text F Q1(a)",
+   "questionText": "In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Lady Macbeth? Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-f-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text F Q1(b)",
+   "questionText": "Identify a moment in the play when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character.",
+   "totalMarks": 10,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-f-q1-c",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text F Q1(c)",
+   "questionText": "Would you describe Macbeth as a hopeful play? Give two reasons for your answer supporting your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    32,
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-f-q2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text F Q2",
+   "questionText": "In his play, Macbeth, Shakespeare wants us to think about ambition. Identify the three most important occasions when, in your opinion, this is revealed to the audience and explain what you learned about ambition on each occasion.",
+   "totalMarks": 30,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-f-q3",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text F Q3",
+   "questionText": "You have just watched a production of Shakespeare’s play, Macbeth. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: - which of the characters in the play you found most fascinating - what was interesting about the setting of the play - the reasons why you would or would not recommend the play to others. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested review.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-f-q4",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text F Q4",
+   "questionText": "There are many dramatic and tense scenes in Shakespeare’s play, Macbeth. Identify three scenes which you found to be dramatic or tense or both and explain why you found these scenes dramatic or tense or both.",
+   "totalMarks": 30,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-g-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text G Q1(a)",
+   "questionText": "In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Frankenstein’s monster? Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-g-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text G Q1(b)",
+   "questionText": "Identify a moment in the novel when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-g-q1-c",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text G Q1(c)",
+   "questionText": "Would you describe Frankenstein as a hopeful novel? Give two reasons for your answer supporting your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-g-q2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text G Q2",
+   "questionText": "In her novel, Frankenstein, Shelley wants us to think about cruelty. Identify the three most important occasions when, in your opinion, this is revealed to the reader and explain what you learned about cruelty on each occasion.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-g-q3",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text G Q3",
+   "questionText": "You have just read Shelley’s novel, Frankenstein. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: - whether or not the characters in the novel were believable - what was interesting about the setting of the novel - the reasons why you would or would not recommend the novel to others. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested review.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-g-q4",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text G Q4",
+   "questionText": "There are many dramatic and tense incidents in Shelley’s novel, Frankenstein. Identify three incidents which you found to be dramatic or tense or both and explain why you found these incidents dramatic or tense or both.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-h-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text H Q1(a)",
+   "questionText": "In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Alex’s mother? Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-h-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text H Q1(b)",
+   "questionText": "Identify a moment in the novel when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character.",
+   "totalMarks": 10,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-h-q1-c",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text H Q1(c)",
+   "questionText": "Would you describe The Lauras as a hopeful novel? Give two reasons for your answer supporting your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    37,
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-h-q2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text H Q2",
+   "questionText": "In her novel, The Lauras, Taylor wants us to think about family relationships. Identify the three most important occasions when, in your opinion, this is revealed to the reader and explain what you learned about family relationships on each occasion.",
+   "totalMarks": 30,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-h-q3",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text H Q3",
+   "questionText": "You have just read Taylor’s novel, The Lauras. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: - whether or not the characters in the novel were believable - what was interesting about the setting of the novel - the reasons why you would or would not recommend the novel to others. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested review.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-h-q4",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text H Q4",
+   "questionText": "There are many dramatic and tense incidents in Taylor’s novel, The Lauras. Identify three incidents which you found to be dramatic or tense or both and explain why you found these incidents dramatic or tense or both.",
+   "totalMarks": 30,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    38,
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-i-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text I Q1(a)",
+   "questionText": "In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Dorian Gray? Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-i-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text I Q1(b)",
+   "questionText": "Identify a moment in the novel when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    39,
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-i-q1-c",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text I Q1(c)",
+   "questionText": "Would you describe The Picture of Dorian Gray as a hopeful novel? Give two reasons for your answer supporting your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-i-q2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text I Q2",
+   "questionText": "In his novel, The Picture of Dorian Gray, Wilde wants us to think about appearance. Identify the three most important occasions when, in your opinion, this is revealed to the reader and explain what you learned about appearance on each occasion.",
+   "totalMarks": 30,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-i-q3",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text I Q3",
+   "questionText": "You have just read Wilde’s novel, The Picture of Dorian Gray. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: - whether or not the characters in the novel were believable - what was interesting about the setting of the novel - the reasons why you would or would not recommend the novel to others. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested review.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    40,
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-single-i-q4",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Single Text I Q4",
+   "questionText": "There are many dramatic and tense incidents in Wilde’s novel, The Picture of Dorian Gray. Identify three moments which you found to be dramatic or tense or both and explain why you found these incidents dramatic or tense or both.",
+   "totalMarks": 30,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-a-q1-a-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative A Q1(a)(i)",
+   "questionText": "In a relationship, characters can feel lonely or fulfilled. Name one of the texts on your comparative course and choose a relationship from it. Describe a key moment when a character in this relationship felt either lonely or fulfilled. Explain how this loneliness or fulfilment affected this character’s behaviour towards the other character(s) in the relationship. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-a-q1-a-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative A Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course and choose a relationship from it. Describe a key moment when a character in this relationship felt either lonely or fulfilled. Explain how this loneliness or fulfilment affected this character’s behaviour towards the other character(s) in the relationship. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-a-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative A Q1(b)",
+   "questionText": "Identify one relationship in each of at least two texts on your comparative course. Compare the aspect or aspects evident in each of your chosen relationships which helped these relationships to either flourish or fail. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    43,
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-a-q2-a-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative A Q2(a)(i)",
+   "questionText": "Name one of the texts on your comparative course and choose a relationship from it. Describe a key moment which shows one character being kind or unkind to a second character in the relationship. Explain how the kindness or lack of kindness shown, affects the second character’s behaviour in the relationship. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-a-q2-a-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative A Q2(a)(ii)",
+   "questionText": "Name another text on your comparative course and choose a relationship from it. Describe a key moment which shows one character being kind or unkind to a second character in the relationship. Explain how the kindness or lack of kindness shown, affects the second character’s behaviour in the relationship. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-b-q1-a-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative B Q1(a)(i)",
+   "questionText": "Name one of the texts on your comparative course. Choose a hero, heroine or villain from the text who made an important decision. Describe the important decision made and explain why this character either regretted or was satisfied this this decision. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Hero, Heroine, Villain",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-b-q1-a-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative B Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course. Choose a hero, heroine or villain from the text who made an important decision. Describe the important decision made and explain why this character either regretted or was satisfied this decision. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Hero, Heroine, Villain",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-b-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative B Q1(b)",
+   "questionText": "Identify a hero, heroine or villain from each of at least two texts on your comparative course. Compare the life lessons you learned from some of the actions of these characters. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Hero, Heroine, Villain",
+   "schemePages": [
+    45,
+    46
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-b-q2-a-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative B Q2(a)(i)",
+   "questionText": "Authors create heroes, heroines and villains that can be complex or straightforward or a combination of both. Name one of the texts on your comparative course. Choose a hero, heroine or villain from that text. Using one or more key moment(s), show whether, in your opinion, your chosen hero, heroine or villain was complex or straightforward or a combination of both. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Hero, Heroine, Villain",
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-b-q2-a-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative B Q2(a)(ii)",
+   "questionText": "Name another of the texts on your comparative course. Choose a hero, heroine or villain from that text. Using one or more key moment(s), show whether, in your opinion, your chosen hero, heroine or villain was complex or straightforward or a combination of both. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Hero, Heroine, Villain",
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-c-q1-a-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative C Q1(a)(i)",
+   "questionText": "Name one of the texts on your comparative course and identify a theme you have studied in that text. Describe a key moment from the text when, in your opinion, the author wanted to highlight this theme. Explain why the key moment made something important about your chosen theme clearer to you. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-c-q1-a-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative C Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course that deals with the same theme you discussed in part (a) (i). Describe a key moment from the text when, in your opinion, the author wanted to highlight this theme. Explain why the key moment made something important about your chosen theme clearer to you. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-c-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative C Q1(b)",
+   "questionText": "Some texts can explore the same theme in greater depth than others. In relation to at least two of the texts on your comparative course, compare how deeply the same theme was explored in each text. You must discuss the same theme you discussed in part (a). Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme",
+   "schemePages": [
+    47,
+    48
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-c-q2-a-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative C Q2(a)(i)",
+   "questionText": "We can learn a lot about a theme from the behaviour of characters in a text. Name one of the texts on your comparative course and identify a theme you have studied. Using at least one character from your chosen text, discuss how you learned a lot about your theme from the behaviour of your chosen character(s).",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-comparative-c-q2-a-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Comparative C Q2(a)(ii)",
+   "questionText": "Name another text on your comparative course that deals with the same theme you discussed in part (a) (i). Using at least one character from your chosen text, discuss how you learned a lot about your theme from the behaviour of your chosen character(s).",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-unseen-q1",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Unseen Poetry Q1",
+   "questionText": "In the poem above, what does the speaker have to say about those who are in love and those who are not in love?",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Late Love",
+    "pages": [
+     14
+    ],
+    "attribution": "Late Love — Jackie Kay, as reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-unseen-q2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Unseen Poetry Q2",
+   "questionText": "Do you like the way the poet uses language to describe people in this poem? Explain your answer with reference to two ways the poet uses language in the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Late Love",
+    "pages": [
+     14
+    ],
+    "attribution": "Late Love — Jackie Kay, as reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-a-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry A Q1(a)",
+   "questionText": "What do you think is the most important message in this poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-25",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "kitchenette building — Gwendolyn Brooks",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "kitchenette building",
+    "pages": [
+     15
+    ],
+    "attribution": "kitchenette building — Gwendolyn Brooks.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-a-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry A Q1(b)",
+   "questionText": "What impression do you get of the place in which this poem is set? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-25",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "kitchenette building — Gwendolyn Brooks",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "kitchenette building",
+    "pages": [
+     15
+    ],
+    "attribution": "kitchenette building — Gwendolyn Brooks.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-a-q2-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry A Q2(i)",
+   "questionText": "Your local library is trying to encourage people to read poetry. They are running a competition inviting people to write a letter about how their favourite poem makes them feel. You decide to enter the competition. Write your letter in which you outline what the poem, ‘kitchenette building’ makes you feel when you read it. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-25",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "kitchenette building — Gwendolyn Brooks",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "kitchenette building",
+    "pages": [
+     15
+    ],
+    "attribution": "kitchenette building — Gwendolyn Brooks.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-a-q2-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry A Q2(ii)",
+   "questionText": "Do you think Brooks makes effective use of imagery in this poem? Support your answer with reference to the poet’s use of imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-25",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "kitchenette building — Gwendolyn Brooks",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "kitchenette building",
+    "pages": [
+     15
+    ],
+    "attribution": "kitchenette building — Gwendolyn Brooks.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    51,
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-a-q2-iii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry A Q2(iii)",
+   "questionText": "You have been asked to suggest a poem that would be a good poem to make into a short film. The poem you have chosen is ‘kitchenette building’. Explain three reasons why you think ‘kitchenette building’ would be a good choice. If you wish, you may refer to some of the following areas: character, mood, sounds, images, setting.",
+   "totalMarks": 20,
+   "topicId": "english-11-25",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "kitchenette building — Gwendolyn Brooks",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "kitchenette building",
+    "pages": [
+     15
+    ],
+    "attribution": "kitchenette building — Gwendolyn Brooks.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-b-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry B Q1(a)",
+   "questionText": "What do you think is the most important message in this poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-32",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "My Father’s Kites — Allison Joseph",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "My Father’s Kites",
+    "pages": [
+     16
+    ],
+    "attribution": "My Father’s Kites — Allison Joseph.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-b-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry B Q1(b)",
+   "questionText": "What impression do you get of the place in which this poem is set? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-32",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "My Father’s Kites — Allison Joseph",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "My Father’s Kites",
+    "pages": [
+     16
+    ],
+    "attribution": "My Father’s Kites — Allison Joseph.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-b-q2-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry B Q2(i)",
+   "questionText": "Your local library is trying to encourage people to read poetry. They are running a competition inviting people to write a letter about how their favourite poem makes them feel. You decide to enter the competition. Write your letter in which you outline what the poem, ‘My Father’s Kites’ makes you feel when you read it. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-32",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "My Father’s Kites — Allison Joseph",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "My Father’s Kites",
+    "pages": [
+     16
+    ],
+    "attribution": "My Father’s Kites — Allison Joseph.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-b-q2-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry B Q2(ii)",
+   "questionText": "Do you think Joseph makes effective use of imagery in this poem? Support your answer with reference to the poet’s use of imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-32",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "My Father’s Kites — Allison Joseph",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "My Father’s Kites",
+    "pages": [
+     16
+    ],
+    "attribution": "My Father’s Kites — Allison Joseph.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    53,
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-b-q2-iii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry B Q2(iii)",
+   "questionText": "You have been asked to suggest a poem that would be a good poem to make into a short film. The poem you have chosen is ‘My Father’s Kites’. Explain three reasons why you think ‘My Father’s Kites’ would be a good choice. If you wish, you may refer to some of the following areas: character, mood, sounds, images, setting.",
+   "totalMarks": 20,
+   "topicId": "english-11-32",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "My Father’s Kites — Allison Joseph",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "My Father’s Kites",
+    "pages": [
+     16
+    ],
+    "attribution": "My Father’s Kites — Allison Joseph.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-c-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry C Q1(a)",
+   "questionText": "What do you think is the most important message in this poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-41",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sonnet XVIII - Shall I Compare Thee — William Shakespeare (Sonnets)",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Sonnet XVIII - Shall I Compare Thee",
+    "pages": [
+     17
+    ],
+    "attribution": "Sonnet XVIII - Shall I Compare Thee — William Shakespeare (Sonnets).",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54,
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-c-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry C Q1(b)",
+   "questionText": "What impression do you get of summer from this poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-41",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sonnet XVIII - Shall I Compare Thee — William Shakespeare (Sonnets)",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Sonnet XVIII - Shall I Compare Thee",
+    "pages": [
+     17
+    ],
+    "attribution": "Sonnet XVIII - Shall I Compare Thee — William Shakespeare (Sonnets).",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-c-q2-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry C Q2(i)",
+   "questionText": "Your local library is trying to encourage people to read poetry. They are running a competition inviting people to write a letter about how their favourite poem makes them feel. You decide to enter the competition. Write your letter in which you outline what the poem, ‘Shall I Compare Thee’ makes you feel when you read it. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-41",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sonnet XVIII - Shall I Compare Thee — William Shakespeare (Sonnets)",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Sonnet XVIII - Shall I Compare Thee",
+    "pages": [
+     17
+    ],
+    "attribution": "Sonnet XVIII - Shall I Compare Thee — William Shakespeare (Sonnets).",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-c-q2-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry C Q2(ii)",
+   "questionText": "Do you think Shakespeare makes effective use of imagery in this poem? Support your answer with reference to the poet’s use of imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-41",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sonnet XVIII - Shall I Compare Thee — William Shakespeare (Sonnets)",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Sonnet XVIII - Shall I Compare Thee",
+    "pages": [
+     17
+    ],
+    "attribution": "Sonnet XVIII - Shall I Compare Thee — William Shakespeare (Sonnets).",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-c-q2-iii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry C Q2(iii)",
+   "questionText": "You have been asked to suggest a poem that would be a good poem to make into a short film. The poem you have chosen is ‘Shall I Compare Thee’. Explain three reasons why you think ‘Shall I Compare Thee’ would be a good choice. If you wish, you may refer to some of the following areas: character, mood, sounds, images, setting.",
+   "totalMarks": 20,
+   "topicId": "english-11-41",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sonnet XVIII - Shall I Compare Thee — William Shakespeare (Sonnets)",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Sonnet XVIII - Shall I Compare Thee",
+    "pages": [
+     17
+    ],
+    "attribution": "Sonnet XVIII - Shall I Compare Thee — William Shakespeare (Sonnets).",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-d-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry D Q1(a)",
+   "questionText": "What do you think is the most important message in this poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Prodigal — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Prodigal",
+    "pages": [
+     18
+    ],
+    "attribution": "The Prodigal — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-d-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry D Q1(b)",
+   "questionText": "What impression do you get of the place in which this poem is set? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Prodigal — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Prodigal",
+    "pages": [
+     18
+    ],
+    "attribution": "The Prodigal — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-d-q2-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry D Q2(i)",
+   "questionText": "Your local library is trying to encourage people to read poetry. They are running a competition inviting people to write a letter about how their favourite poem makes them feel. You decide to enter the competition. Write your letter in which you outline what the poem, ‘The Prodigal’ makes you feel when you read it. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Prodigal — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Prodigal",
+    "pages": [
+     18
+    ],
+    "attribution": "The Prodigal — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-d-q2-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry D Q2(ii)",
+   "questionText": "Do you think Bishop makes effective use of imagery in the poem? Support your answer with reference to the poet’s use of imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Prodigal — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Prodigal",
+    "pages": [
+     18
+    ],
+    "attribution": "The Prodigal — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-d-q2-iii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry D Q2(iii)",
+   "questionText": "You have been asked to suggest a poem that would be a good poem to make into a short film. The poem you have chosen is ‘The Prodigal’. Explain three reasons why you think ‘The Prodigal’ would be a good choice. If you wish, you may refer to some of the following areas: character, mood, sounds, images, setting.",
+   "totalMarks": 20,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Prodigal — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Prodigal",
+    "pages": [
+     18
+    ],
+    "attribution": "The Prodigal — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-e-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry E Q1(a)",
+   "questionText": "What do you think is the most important message in this poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-15",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Antarctica — Derek Mahon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Antarctica",
+    "pages": [
+     19
+    ],
+    "attribution": "Antarctica — Derek Mahon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-e-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry E Q1(b)",
+   "questionText": "What impression do you get of the place in which this poem is set? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-15",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Antarctica — Derek Mahon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Antarctica",
+    "pages": [
+     19
+    ],
+    "attribution": "Antarctica — Derek Mahon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-e-q2-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry E Q2(i)",
+   "questionText": "Your local library is trying to encourage people to read poetry. They are running a competition inviting people to submit a letter about how their favourite poem makes them feel. You decide to enter the competition. Write your letter in which you outline what the poem, ‘Antarctica’ makes you feel when you read it. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-15",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Antarctica — Derek Mahon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Antarctica",
+    "pages": [
+     19
+    ],
+    "attribution": "Antarctica — Derek Mahon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59,
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-e-q2-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry E Q2(ii)",
+   "questionText": "Do you think Mahon makes effective use of imagery in this poem? Support your answer with reference to the poet’s use of imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-15",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Antarctica — Derek Mahon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Antarctica",
+    "pages": [
+     19
+    ],
+    "attribution": "Antarctica — Derek Mahon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-e-q2-iii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry E Q2(iii)",
+   "questionText": "You have been asked to suggest a poem that would be a good poem to make into a short film. The poem you have chosen is ‘Antarctica’. Explain three reasons why you think ‘Antarctica’ would be a good choice. If you wish, you may refer to some of the following areas: character, mood, sounds, images, setting.",
+   "totalMarks": 20,
+   "topicId": "english-11-15",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Antarctica — Derek Mahon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Antarctica",
+    "pages": [
+     19
+    ],
+    "attribution": "Antarctica — Derek Mahon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-f-q1-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry F Q1(a)",
+   "questionText": "What do you think is the most important message in this poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-10",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Shancoduff — Patrick Kavanagh",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Shancoduff",
+    "pages": [
+     20
+    ],
+    "attribution": "Shancoduff — Patrick Kavanagh.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-f-q1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry F Q1(b)",
+   "questionText": "What impression do you get of the place in which this poem is set? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-10",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Shancoduff — Patrick Kavanagh",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Shancoduff",
+    "pages": [
+     20
+    ],
+    "attribution": "Shancoduff — Patrick Kavanagh.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-f-q2-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry F Q2(i)",
+   "questionText": "Your local library is trying to encourage people to read poetry. They are running a competition inviting people to submit a letter about how their favourite poem makes them feel. You decide to enter the competition. Write your letter in which you outline what the poem, ‘Shancoduff’ makes you feel when you read it. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-10",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Shancoduff — Patrick Kavanagh",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Shancoduff",
+    "pages": [
+     20
+    ],
+    "attribution": "Shancoduff — Patrick Kavanagh.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61,
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-f-q2-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry F Q2(ii)",
+   "questionText": "Do you think Kavanagh makes effective use of imagery in this poem? Support your answer with reference to the poet’s use of imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-10",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Shancoduff — Patrick Kavanagh",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Shancoduff",
+    "pages": [
+     20
+    ],
+    "attribution": "Shancoduff — Patrick Kavanagh.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2023-ol-p2-prescribed-f-q2-iii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2023 OL Paper 2 Prescribed Poetry F Q2(iii)",
+   "questionText": "You have been asked to suggest a poem that would be a good poem to make into a short film. The poem you have chosen is ‘Shancoduff’. Explain three reasons why you think ‘Shancoduff’ would be a good choice. If you wish, you may refer to some of the following areas: character, mood, sounds, images, setting.",
+   "totalMarks": 20,
+   "topicId": "english-11-10",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Shancoduff — Patrick Kavanagh",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Shancoduff",
+    "pages": [
+     20
+    ],
+    "attribution": "Shancoduff — Patrick Kavanagh.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
    }
   },
   {

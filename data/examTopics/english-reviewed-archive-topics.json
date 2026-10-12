@@ -741,6 +741,16 @@
     "english-6-0",
     "english-12-25"
    ]
+  },
+  {
+   "id": "english-ordinary-text-the-lauras-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-lauras",
+   "label": "Text - The Lauras",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-24"
+   ]
   }
  ]
 }

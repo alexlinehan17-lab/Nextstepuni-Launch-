@@ -2958,12 +2958,17 @@
     },
     "english-2023-ol-p2-prescribed-a": {
       "topicId": "english-11-25",
-      "title": "Kitchenette Building",
+      "title": "kitchenette building",
       "canonicalLabel": "Gwendolyn Brooks",
       "observedHeading": "Poetry A · Kitchenette Building",
       "paperPage": 15,
       "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
-      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "sourcePages": [
+        15
+      ],
+      "titlePrintedPage": 15,
+      "titleEvidence": "Printed in lower case on PDF15 (Gwendolyn Brooks’s own title) and so in the questions; kept as printed."
     },
     "english-2023-ol-p2-prescribed-b": {
       "topicId": "english-11-32",
@@ -2974,16 +2979,24 @@
       "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
       "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
       "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF16.",
-      "titlePrintedPage": 16
+      "titlePrintedPage": 16,
+      "sourcePages": [
+        16
+      ]
     },
     "english-2023-ol-p2-prescribed-c": {
       "topicId": "english-11-41",
-      "title": "Sonnet Xviii",
+      "title": "Sonnet XVIII - Shall I Compare Thee",
       "canonicalLabel": "William Shakespeare (Sonnets)",
       "observedHeading": "Poetry C · Sonnet Xviii",
       "paperPage": 17,
       "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
-      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "sourcePages": [
+        17
+      ],
+      "titlePrintedPage": 17,
+      "titleEvidence": "Printed exactly so as the heading on PDF17; the extractor had title-cased the numeral (“Sonnet Xviii”)."
     },
     "english-2023-ol-p2-prescribed-d": {
       "topicId": "english-11-0",
@@ -2992,7 +3005,10 @@
       "observedHeading": "Poetry D · The Prodigal",
       "paperPage": 18,
       "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
-      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "sourcePages": [
+        18
+      ]
     },
     "english-2023-ol-p2-prescribed-e": {
       "topicId": "english-11-15",
@@ -3001,7 +3017,10 @@
       "observedHeading": "Poetry E · Antarctica",
       "paperPage": 19,
       "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
-      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "sourcePages": [
+        19
+      ]
     },
     "english-2023-ol-p2-prescribed-f": {
       "topicId": "english-11-10",
@@ -3010,7 +3029,10 @@
       "observedHeading": "Poetry F · Shancoduff",
       "paperPage": 20,
       "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
-      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "sourcePages": [
+        20
+      ]
     },
     "english-2024-hl-p2-single-a": {
       "topicId": "english-12-8",

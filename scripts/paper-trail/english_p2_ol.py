@@ -276,7 +276,12 @@ def locate_scheme_cards(cards, paper, scheme, year):
         # at y 0.2239 on PDF47; matching began C at its Q1(b), so Theme's
         # crop swallowed Social Setting's Q1(a)(i)/(ii) (viewed 2026-10-12).
         2024: {"Comparative B": (44, 0.3262), "Comparative C": (46, 0.2239)},
+        # 2023: "B HERO, HEROINE, VILLAIN" sits at y 0.2293 on PDF45 and
+        # "C THEME" at y 0.2922 on PDF47; matching began each at the previous
+        # mode's Q2(b) "Discrete Criteria ex 40" box (viewed 2026-10-12).
         2023: {
+            "Comparative B": (44, 0.2293),
+            "Comparative C": (46, 0.2922),
             "Poetry A": (49, 0.5204),
             "Poetry B": (51, 0.5771),
             "Poetry C": (53, 0.6839),
