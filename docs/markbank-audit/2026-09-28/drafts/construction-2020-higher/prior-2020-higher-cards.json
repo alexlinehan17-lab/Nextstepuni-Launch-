@@ -1,0 +1,1291 @@
+[
+  {
+    "id": "cons-2020-hl-q1-b",
+    "topicId": "cons-3-8",
+    "conceptId": "typical-design-detailing-ensure-ventilation-roof",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q1(b)",
+    "questionText": "On your drawing, show the typical design detailing to ensure ventilation of the roof structure.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 2",
+      "answer": 2,
+      "ofParts": 3,
+      "perPart": 2
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q1-b-r1",
+        "kind": "anyN",
+        "verbatim": "On your drawing, show the typical design detailing to ensure ventilation of the roof structure.",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "External Wall – typical detailing",
+            "Roof structure – typical detailing",
+            "Eaves detail – typical detailing"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q2-a",
+    "topicId": "cons-1-1",
+    "conceptId": "specific-best-practice-guidelines-observed-when",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q2(a)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, two specific best practice guidelines to be observed for each of the following when using scaffolding on a construction site: • erecting scaffolding • accessing scaffolding • use of working platforms.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 7",
+      "answer": 6,
+      "ofParts": 8,
+      "perPart": 7
+    },
+    "totalMarks": 42,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, using notes and freehand sketches, two specific best practice guidelines to be observed for each of t",
+        "marks": 42,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 7,
+          "options": [
+            "Protection of construction workers and the public",
+            "Scaffolders working at height",
+            "Scaffolding assembly",
+            "Accessing Scaffolding",
+            "Platforms",
+            "Toe-Boards",
+            "Guard-Rails",
+            "Falling Object Protection"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q2-b",
+    "topicId": "cons-1-8",
+    "conceptId": "site-health-safety-officer-performs-key",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q2(b)",
+    "questionText": "The on-site Health and Safety Officer performs a key role in maintaining a safe working environment on a construction site. Discuss in detail three responsibilities of a Health and Safety Officer on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q2-b-r1",
+        "kind": "anyN",
+        "verbatim": "The Health and Safety Officer is responsible for",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "The Health and Safety Officer is responsible for",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "carrying out safety inspections and risk assessments on site",
+            "reviewing site procedures e.g. safety statement",
+            "completing induction training of all new workers on the site",
+            "investigating, recording and reporting all accidents that may occur on a site",
+            "providing accident information when required",
+            "identifying new and ongoing safety training requirements of workers",
+            "ensuring that all correct PPE is availed of at all times by workers",
+            "the enforcement of Health and Safety polices on site"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q3-a",
+    "topicId": "cons-1-1",
+    "conceptId": "design-considerations-necessary-when-modifying-internal",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q3(a)",
+    "questionText": "Discuss in detail, three design considerations necessary when modifying the internal layout of the house shown to meet the needs of a person with limited mobility.",
+    "stem": "",
+    "figureKey": "construction-studies-2020-hl-paper-p003-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, three design considerations necessary when modifying the internal layout of the house shown to meet t",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "External / Internal doors",
+            "Corridors",
+            "Living Room Design",
+            "Kitchens",
+            "Bedroom Design",
+            "Bathroom"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q3-c-advantages",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-disadvantages-open-plan-living-domestic-advantages",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q3(c) — Advantages",
+    "questionText": "Discuss two advantages of open-plan living in a domestic house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 3",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 3
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q3-c-advantages-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "Flexibility in layout for lifetime use",
+            "Open-plan layouts allow daylight and sunlight to penetrate into the house which supports mental wellbeing",
+            "Sociable aspect – increased interaction between occupants",
+            "Ease of movement between spaces",
+            "Supports the flow of air within the home",
+            "Can add value to a property"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q3-c-disadvantages",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-disadvantages-open-plan-living-domestic-disadvantages",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q3(c) — Disadvantages",
+    "questionText": "Discuss two disadvantages of open-plan living in a domestic house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 3",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 3
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q3-c-disadvantages-r1",
+        "kind": "anyN",
+        "verbatim": "Disadvantages",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Disadvantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "Larger space increases the volume of air to be heated and can be more costly",
+            "Reduced privacy for occupants",
+            "Greater noise levels",
+            "Unwelcome odours can spread through the entire space"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q4-a-materials-and-finishes",
+    "topicId": "cons-1-1",
+    "conceptId": "importance-considering-characteristics-when-designing-house-materials-and-finishes",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q4(a) — Materials and finishes",
+    "questionText": "Using notes and freehand sketches, discuss the importance of considering each of the following characteristics when designing a house for this site: A A • materials and finishes.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 8,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q4-a-materials-and-finishes-r1",
+        "kind": "anyN",
+        "verbatim": "Materials and finishes",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Materials and finishes",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "When considering what external materials to choose for a new build in a built up area such as this site, consider what materials are already in use on neighbouring building e.g. brick, render, etc",
+            "However, more natural materials e.g. timber cladding may also blend into a leafy neighbourhood",
+            "If a materials e.g. stone, is readily available in the locality, this would suggest it could be sourced locally and therefore maintain jobs in the area while reducing the carbon footprint or the embodied energy of the build",
+            "It is equally important to look at the environmental impact each material choice has in its production process and what carbon emissions are created - is the material natural or manmade?",
+            "Are the materials sourced locally or transported from another country?",
+            "Will it release toxins during its lifetime or benefit the environment e.g. green roof",
+            "Adhering to local planning authorities’ guidelines",
+            "Examine the materials palette of the existing street – doors, windows, walls, roof, etc"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q4-a-shape-and-form",
+    "topicId": "cons-1-1",
+    "conceptId": "importance-considering-characteristics-when-designing-house-shape-and-form",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q4(a) — Shape and form",
+    "questionText": "Using notes and freehand sketches, discuss the importance of considering each of the following characteristics when designing a house for this site: A A • shape and form.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q4-a-shape-and-form-r1",
+        "kind": "anyN",
+        "verbatim": "Shape and form",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Shape and form",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "What shapes currently exist in the surrounding location? Can inspiration be taken from these shapes? - e.g. pitch roof, barrel vault, mono pitch, hipped roof, etc",
+            "Is the shape functional and vernacular to your locality or imported from a different country purely for aesthetic reasons",
+            "The shape and form of the building is a complex mixture of meeting the needs of the owners internally, orientating the building to best avail of natural sunlight all while integrating into the surrounding location",
+            "Would the shape of your proposal obstruct your neighbours natural light or overshadow their garden",
+            "The height and distance from the road of existing building must be taken into account and can often set limitations on your design",
+            "The shape and form must adhering to local planning authorities’ guidelines"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q4-a-streetscape",
+    "topicId": "cons-1-1",
+    "conceptId": "importance-considering-characteristics-when-designing-house-streetscape",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q4(a) — Streetscape",
+    "questionText": "Using notes and freehand sketches, discuss the importance of considering each of the following characteristics when designing a house for this site: A A • streetscape.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q4-a-streetscape-r1",
+        "kind": "anyN",
+        "verbatim": "Streetscape",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Streetscape",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "It is important to be respectful and mindful of the materials used, the shape and the location of existing buildings along the streetscape",
+            "Create a sympathetic building design and additions to fit in with the existing streetscape",
+            "Good house design allows individuality without detracting from the character of the street or amenity of neighbours",
+            "Creating good streetscape has less to do with individual building design than how the different buildings relate to each other",
+            "Consideration should be given to: o House / street boundaries construction and how they relate to the existing o Established building line o Landscaping to enhance the quality of the streetscape – planting, shelter, visual identity o Existing fenestration of the street o Footpath and or cycling lane o Street set-back and house construction line",
+            "One approach could be to mimic these characteristics of existing building and therefore aesthetically look similar but also have similar faults e.g. overshadow neighbouring south facing gardens or remove existing nature such as trees",
+            "A different approach could be to respond to the individual site while getting inspiration from the existing built environment"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q4-c",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-developing-vacant-sites-urban-areas",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q4(c)",
+    "questionText": "Discuss in detail two advantages of developing vacant sites in urban areas.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q4-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail two advantages of developing vacant sites in urban areas.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Help with the current housing needs",
+            "Reduce visual pollution if the site had not been maintained",
+            "Reduce areas for antisocial behaviour",
+            "Bring families and people into local communities",
+            "Increase curb appeal on the streetscape",
+            "Increase overall property value in the area",
+            "The site is already in close proximity to existing utility services",
+            "Increases urban density making public transport affordable and possible"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q5-a",
+    "topicId": "cons-6-1",
+    "conceptId": "calculate-value-floor-given-construction-has",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q5(a)",
+    "questionText": "Calculate the U-value of the floor, given the construction has the following sequence and data: Hardwood flooring thickness 20 mm Sand/cement fine screed thickness 65 mm Floor insulation thickness 200mm Concrete floor slab thickness 150 mm Radon Barrier thickness 0.25 mm Sand blinding thickness 40 mm Hardcore thickness 200 mm Subsoil thickness 300 mm",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "10 x 3",
+      "answer": 10,
+      "ofParts": 10,
+      "perPart": 3
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q5-a-r1",
+        "kind": "anyN",
+        "verbatim": "Calculate the U-value of the floor, given the construction has the following sequence and data: Hardwood flooring thickn",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 10,
+          "perOption": 3,
+          "options": [
+            "Surface resistance",
+            "Oak flooring",
+            "Sand/cement fine screed",
+            "Floor insulation",
+            "Concrete floor slab",
+            "Radon barrier",
+            "Sand blinding",
+            "Hardcore",
+            "Subsoil",
+            "Calculation of U- value"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q5-b",
+    "topicId": "cons-6-1",
+    "conceptId": "value-floor-obtained-above-data-calculate",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q5(b)",
+    "questionText": "Using the U-value of the floor obtained at 5(a) above and the following data, calculate the cost of heat lost annually through this floor: • dimensions of floor slab 6.5 metres × 9.0 metres • average internal temperature 20 ⁰C • average temperature of subsoil 6 ⁰C • heating period 9 hours daily for 39 weeks per annum • cost of oil 96 cent per litre • calorific value of oil 37350 kJ per litre • 1000 Watts 1 kJ per second.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 3",
+      "answer": 5,
+      "ofParts": 5,
+      "perPart": 3
+    },
+    "totalMarks": 15,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q5-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using the U-value of the floor obtained at 5(a) above and the following data, calculate the cost of heat lost annually t",
+        "marks": 15,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 5,
+          "perOption": 3,
+          "options": [
+            "Heat loss formula and calculations",
+            "Heating duration for one year",
+            "k/Joules calculation for one year",
+            "Litres of oil for one year",
+            "Annual cost of heat loss"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q6-a-advantages",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-disadvantages-retrofitting-vernacular-cottage-shown-advantages",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q6(a) — Advantages",
+    "questionText": "Discuss two advantages of retrofitting the vernacular cottage shown.",
+    "stem": "",
+    "figureKey": "construction-studies-2020-hl-paper-p005-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 3",
+      "answer": 2,
+      "ofParts": 9,
+      "perPart": 3
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q6-a-advantages-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "Ethical responsibility to retain our natural heritage and vernacular architecture by making old buildings habitable",
+            "The embodied energy and carbon required to construct a new house are avoided",
+            "Not adding visual pollution to the landscape as the structure already exists",
+            "The home would have character features and proportions unique to Ireland and its location rather than the generic interior of a new build",
+            "Reduced carbon footprint as the structure already exists",
+            "Less money required to make it habitable as the main structure is already built",
+            "Many old buildings have good thermal mass",
+            "Planning permission is not required when carrying out a retrofit only",
+            "Maintaining / keeping / retaining Ireland’s historic buildings"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q6-a-disadvantages",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-disadvantages-retrofitting-vernacular-cottage-shown-disadvantages",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q6(a) — Disadvantages",
+    "questionText": "Discuss two disadvantages of retrofitting the vernacular cottage shown.",
+    "stem": "",
+    "figureKey": "construction-studies-2020-hl-paper-p005-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 3",
+      "answer": 2,
+      "ofParts": 8,
+      "perPart": 3
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q6-a-disadvantages-r1",
+        "kind": "anyN",
+        "verbatim": "Disadvantages",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Disadvantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "The extent of renovations required is often not realised until the old building has been investigated",
+            "The cost associated with the upgrade may be more than initially envisaged",
+            "Smaller rooms and layouts may not be suitable for current lifestyles or the needs of the occupants",
+            "Bringing the house up to current energy standards can further reduce the size of the rooms",
+            "Difficult to fully assess the costs associated with retrofitting an old house",
+            "Very difficult to achieve similar thermal insulation levels, airtightness and eliminate thermal bridges compared to a new build",
+            "Materials must be carefully chosen when upgrading elements of the house e.g. breathable insulation in the walls",
+            "Dampness especially rising damp may be problematic"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q6-b",
+    "topicId": "cons-6-3",
+    "conceptId": "reference-design-shown-features-design-contribute",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q6(b)",
+    "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+    "stem": "",
+    "figureKey": "construction-studies-2020-hl-paper-p005-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 5",
+      "answer": 6,
+      "ofParts": 11,
+      "perPart": 5
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Impact",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "Impact",
+        "group": {
+          "claimMax": 6,
+          "perOption": 5,
+          "options": [
+            "Larger windows facing south capturing the suns heat and light therefore reducing heating and lighting costs",
+            "Retaining the existing cottage instead of replacing it with a new one, means that the embodied energy and carbon required to construct a new house are avoided",
+            "More sustainable to enhance the energy efficiency of the existing cottage through retrofitting",
+            "Reduced heat loss by maintaining smaller windows to the north face of the building",
+            "Low embodied energy construction materials used for the extension – timber frame",
+            "Simple building form – one room deep",
+            "Building envelope area minimised to reduce energy loss through external walls",
+            "High levels of insulation added to the existing cottage and used in the wall construction of the extension",
+            "Attic space is utilised as additional living spaces without having to use carbon negative building materials and increased the building form",
+            "Wood burning stove set into the fireplace to reduce draughts and heat loss through the chimney",
+            "Utilise thermal mass of existing chimney stack"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q6-c",
+    "topicId": "cons-6-3",
+    "conceptId": "modifications-house-shown-would-further-reduce",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q6(c)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, two modifications to the house shown that would further reduce the environmental impact of the house.",
+    "stem": "",
+    "figureKey": "construction-studies-2020-hl-paper-p005-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 3",
+      "answer": 6,
+      "ofParts": 8,
+      "perPart": 3
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, using notes and freehand sketches, two modifications to the house shown that would further reduce the",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 3,
+          "options": [
+            "Provide a draught lobby",
+            "Planting trees",
+            "Construct solar shading",
+            "Install evacuated tube / solar panel",
+            "Install photovoltaic (PV) panels",
+            "Install a wind turbine",
+            "Install rainwater harvesting system",
+            "Change chimney location"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q7-b",
+    "topicId": "cons-5-3",
+    "conceptId": "typical-detailing-provide-independent-air-supply",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q7(b)",
+    "questionText": "On your drawing, show the typical detailing to provide an independent air supply to the stove.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q7-b-r1",
+        "kind": "point",
+        "verbatim": "Independent air supply design detail",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q8-a",
+    "topicId": "cons-4-3",
+    "conceptId": "considerations-should-taken-into-account-when",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q8(a)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, two considerations that should be taken into account when locating a bathroom on the first floor of a house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 5",
+      "answer": 4,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q8-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, using notes and freehand sketches, two considerations that should be taken into account when locating",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "Position",
+            "Accessibility",
+            "Privacy",
+            "Visual",
+            "Air Quality"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q8-c",
+    "topicId": "cons-5-5",
+    "conceptId": "considerations-minimise-blockages-occurring-drainage-system",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q8(c)",
+    "questionText": "Outline two considerations to minimise blockages occurring in a drainage system.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q8-c-r1",
+        "kind": "anyN",
+        "verbatim": "Outline two considerations to minimise blockages occurring in a drainage system.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Ensure that all internal surfaces of pipes and fittings are smooth",
+            "Pipes from all fittings are correctly sized (correct diameter)",
+            "Pipes must be installed at the correct gradient",
+            "The diameter of the soil vent pipe must be correctly sized (Ø110 mm usually) to transport the volume of waste from all fittings attached",
+            "Large radius bends should be installed at turns in the soil vent pipe",
+            "All joints in the piping system are correctly installed",
+            "Soil vent pipe open at top to vent gases / prevents back siphonage"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q9-a-completeness",
+    "topicId": "cons-8-3",
+    "conceptId": "how-contribute-reducing-transmission-sound-dwelling-completeness",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q9(a) — Completeness",
+    "questionText": "Discuss in detail, using notes and freehand sketches, how each of the following contribute to reducing the transmission of sound in a dwelling house: • completeness.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 3,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q9-a-completeness-r1",
+        "kind": "anyN",
+        "verbatim": "Completeness",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Completeness",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Completeness is the elimination of all small gaps in the house structure, which increases its airtightness and uniformity",
+            "Completeness of the structure depends on airtightness and uniformity: o Blockwork joints to be filled and wall plastered on both sides o Airtight membrane correctly installed throughout the house o Window systems, doors and pipework carefully sealed at external junctions o All window systems and external door designed with double seals installed",
+            "High quality craftsmanship required to achieve a more complete (sealed and uniform) structure which will contribute to the overall acoustic properties of the house"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q9-a-flexibility",
+    "topicId": "cons-8-3",
+    "conceptId": "how-contribute-reducing-transmission-sound-dwelling-flexibility",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q9(a) — Flexibility",
+    "questionText": "Discuss in detail, using notes and freehand sketches, how each of the following contribute to reducing the transmission of sound in a dwelling house: • flexibility.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 2,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q9-a-flexibility-r1",
+        "kind": "anyN",
+        "verbatim": "Flexibility",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Flexibility",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Flexible materials are good at absorbing sound transmissions in a structure",
+            "The installation of an absorbent material (quilt, acoustic matting, resilient layer) in a structure will greatly reduce the transmission of sound through that structure: o Quilt insulation between studs in a double stud partition o Quilt insulation between joist in an upper timber floor o Acoustic matting in an upper timber floor"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q9-a-isolation",
+    "topicId": "cons-8-3",
+    "conceptId": "how-contribute-reducing-transmission-sound-dwelling-isolation",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q9(a) — Isolation",
+    "questionText": "Discuss in detail, using notes and freehand sketches, how each of the following contribute to reducing the transmission of sound in a dwelling house: • isolation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q9-a-isolation-r1",
+        "kind": "anyN",
+        "verbatim": "Isolation",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Isolation",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "As sound energy transmits through the different materials in a structure it decreases – sound level drops",
+            "Separating elements of a structure greatly reduces the transmission sound through it",
+            "Discontinuing a structural element is effective in reducing sound transmission: o Double / triple glazing when sound travels from glass to gas / vacuum o Separation in walls e.g. double stud partition",
+            "Advantage can be taken of isolation to improve sound insulation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q9-c",
+    "topicId": "cons-6-5",
+    "conceptId": "benefits-sound-insulation-upgrades-will-have",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q9(c)",
+    "questionText": "Discuss two benefits that the sound insulation upgrades will have on the health and wellbeing of the occupants.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two benefits that the sound insulation upgrades will have on the health and wellbeing of the occupants.",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Enhance the quality of life by reducing the noise levels in the house, reducing stress and anger in the household",
+            "Members of the family can participate in noise activities without disturbing other family members daily activities",
+            "Enhances the sleep quality of the family members",
+            "Creates more harmonious environment in the household, where members can individually participate in activities",
+            "Avoid hearing loss problem, where noisy activities can be confined to one area in the house"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q10-a",
+    "topicId": "cons-1-1",
+    "conceptId": "considerations-should-taken-into-account-when",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q10(a)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, three considerations that should be taken into account when designing a MVHR system for a domestic house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 4",
+      "answer": 6,
+      "ofParts": 7,
+      "perPart": 4
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q10-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, using notes and freehand sketches, three considerations that should be taken into account when design",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 4,
+          "options": [
+            "System design and layout",
+            "Fit for purpose",
+            "Year - round operation",
+            "Accommodation and Access",
+            "System Filters",
+            "Noise",
+            "Commissioning and maintenance"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q10-c",
+    "topicId": "cons-1-2",
+    "conceptId": "advantages-installing-mvhr-system-into-domestic",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q10(c)",
+    "questionText": "Discuss two advantages of installing a MVHR system into a domestic house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q10-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of installing a MVHR system into a domestic house.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Improves indoor air quality for occupants",
+            "Minimise heat loss – up to 95% of heat that is usually wasted is recovered",
+            "Consistent comfort conditions are provided for the occupants",
+            "Constant supply of fresh, clean, health air into the home",
+            "Occupants in MVHR ventilated home will experience respiratory-related health improvements",
+            "Occupants have more control of their internal living environment"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q7-a",
+    "topicId": "cons-5-3",
+    "conceptId": "vertical-section-through-ground-floor-hearth",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q7(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the ground floor, hearth and chimney. Show the typical construction details from 350 mm below the finished floor to a level 300 mm above the top of the cast iron flue from the stove and include the connection to the flue liner in the chimney. Include three typical dimensions on your drawing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "9 x 5 + 3 x 1",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 48,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Ground Floor",
+        "marks": 45,
+        "openList": true,
+        "contextNote": "Ground Floor",
+        "group": {
+          "claimMax": 9,
+          "perOption": 5,
+          "options": [
+            "200 mm Internal wall",
+            "Floor insulation",
+            "Concrete screed",
+            "Radon /DPM",
+            "Hearth",
+            "150 mm Cast iron flue",
+            "Lintel / flue gatherer",
+            "Metal flue gatherer",
+            "Flue liners"
+          ]
+        }
+      },
+      {
+        "id": "cons-2020-hl-q7-a-r2",
+        "kind": "anyN",
+        "verbatim": "Hearth / Stove / Chimney",
+        "marks": 3,
+        "openList": true,
+        "contextNote": "Hearth / Stove / Chimney",
+        "group": {
+          "claimMax": 3,
+          "perOption": 1,
+          "options": [
+            "Hearth",
+            "Stove",
+            "150 mm Cast iron flue",
+            "Lintel / flue gatherer",
+            "Chimney blockwork",
+            "Metal flue gatherer",
+            "Flue liners",
+            "Lime sand fill / vermiculite",
+            "Internal plaster"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-hl-q4-b",
+    "topicId": "cons-1-1",
+    "conceptId": "proposed-external-design-house-located-this",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q4(b)",
+    "questionText": "Using notes and freehand sketches, show a proposed external design for a house to be located on this site, which incorporates each of the characteristics discussed at 4(a) above.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 4",
+      "answer": 1,
+      "ofParts": 3,
+      "perPart": 4
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show a proposed external design for a house to be located on this site, which incorpo",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Materials and finishes",
+            "Shape and form",
+            "Streetscape"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 24 marks for this part. The 4 on this card are the marks it states answers for; the other 20 go to Notes (6); Sketches (14) — the drawing itself and anything the scheme prices without saying what earns it."
+  },
+  {
+    "id": "cons-2020-hl-q9-b",
+    "topicId": "cons-8-3",
+    "conceptId": "partitions-are-standard-timber-stud-construction",
+    "level": "higher",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 HL Q9(b)",
+    "questionText": "The partitions are of standard timber stud construction and the first floor is a softwood floor on timber joists, with a plasterboard ceiling beneath. The partitions and the floor are to be upgraded to reduce the transmission of sound from the entertainment room.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 4",
+      "answer": 4,
+      "ofParts": 14,
+      "perPart": 4
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2020-hl-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "The partitions are of standard timber stud construction and the first floor is a softwood floor on timber joists, with a",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "The scheme groups its answer under: Stud Partition; First Floor; – flexibility",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Construct a staggered double stud partition wall with the studs staggered each side",
+            "An absorbent quilt is woven between the studs to absorb airborne sound - flexibility",
+            "Two layers of plasterboard with staggered joints is fixed on each side to reduce the transmittance of sound – this increase the mass of the wall",
+            "All electrical fittings in the wall are sealed and made airtight",
+            "The stud wall is sealed to adjoining walls, floor and ceiling – completeness",
+            "Construct two separate stud walls in which there is no material in contact – isolation",
+            "An absorbent quilt is placed between the stud wall in the cavity – flexibility",
+            "Acoustic isolation strips are placed over the flooring joists",
+            "The flooring is fixed to battens floated over the acoustic strips",
+            "The flooring above and plasterboard below are sealed and made airtight",
+            "Acoustic matting is placed under the finished floating floor above to reduce the transmission of impact sound",
+            "Absorbent quilt is placed between the flooring joists to absorb airborne sound transmission",
+            "Two layers of plasterboard with staggered joints is fixed on each side for the ceiling – this increase the mass of the wall",
+            "Acoustic matting is placed: o between the upper decking and floating floor o between the two plasterboard slabs in the ceiling beneath"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 28 marks for this part. The 16 on this card are the marks it states answers for; the other 12 go to Sketch (6); Sketch (6) — the drawing itself and anything the scheme prices without saying what earns it. The scheme lists 15 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  }
+]

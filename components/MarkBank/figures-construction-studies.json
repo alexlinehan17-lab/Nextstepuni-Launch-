@@ -2882,5 +2882,236 @@
     "alt": "SEC 2021 Ordinary marking scheme notes on the advantages of an outdoor living space, with a sketch of an outdoor fireplace.",
     "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2020-HL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q1-original.png",
+    "md5": "ddcdc9dfaa9f8b35f67c6d8584ecf8b8",
+    "alt": "Original SEC 2020 Higher Construction Studies Question 1: the printed question with a sketch of a house with a slated cut roof and flush eaves.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q2-original.png",
+    "md5": "dcd4a1b22af30108453de2e8e0765a55",
+    "alt": "Original SEC 2020 Higher Construction Studies Question 2: the printed question with a sketch of scaffolding against a house under construction.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q3-original.png",
+    "md5": "ae004f91bd61734725fa6759a6ca0e07",
+    "alt": "Original SEC 2020 Higher Construction Studies Question 3: the printed question with the floor plan and front elevation of a semi-detached bungalow, wall A-A marked.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q4-original.png",
+    "md5": "1ebe039e901323fc508faa747debb12e",
+    "alt": "Original SEC 2020 Higher Construction Studies Question 4: the printed question with a sketch of a vacant site between two houses.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q5-original.png",
+    "md5": "0ed94008857ad7b473226b52fafc7aa1",
+    "alt": "Original SEC 2020 Higher Construction Studies Question 5: the printed question with a sketch of the insulated ground floor and all the construction and thermal data.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q6-original.png",
+    "md5": "ca18eb0c3d548e504a97629c55622010",
+    "alt": "Original SEC 2020 Higher Construction Studies Question 6: the printed question with the elevation and plan of a retrofitted and extended vernacular cottage.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q7-original.png",
+    "md5": "19178602128d52a8061a9bf20df6e010",
+    "alt": "Original SEC 2020 Higher Construction Studies Question 7: the printed question with a sketch of a wood-burning stove in a chimney breast.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q8-original.png",
+    "md5": "fd0fa9708db9610008336a36e8735d72",
+    "alt": "Original SEC 2020 Higher Construction Studies Question 8: the printed question with a sketch of a first-floor bathroom.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q9-original.png",
+    "md5": "25206138093c21137696ddf5b4cea907",
+    "alt": "Original SEC 2020 Higher Construction Studies Question 9: the printed question with a cutaway sketch of a two-storey house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q10-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q10-original.png",
+    "md5": "eeec48bb36763be85034cd154cfdc898",
+    "alt": "Original SEC 2020 Higher Construction Studies Question 10: the printed question with the draft ground-floor plan of a new house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q10-alt-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q10-alt-original.png",
+    "md5": "e89daa779948ae798f481536b44f4788",
+    "alt": "Original SEC 2020 Higher Construction Studies alternative Question 10: the printed quotation from Moncef Krarti on energy-efficient buildings and its two parts.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-HL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q1-section.png",
+    "md5": "d00cedf5fc375ec01c2c4136af1f13ca",
+    "alt": "SEC model vertical section through half of the cut roof and externally insulated wall, with the detail lists for the wall, roof and eaves (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q1-ventilation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q1-ventilation.png",
+    "md5": "966490024a4ab15fc96c9822be40b945",
+    "alt": "SEC model eaves detail with arrows showing the ventilation path, labelled “(b) Ventilation”.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q2-scaffolding": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q2-scaffolding.png",
+    "md5": "92f3c3dedcfe79626a2dc57ab46efba0",
+    "alt": "SEC 2020 Higher marking scheme notes on erecting, accessing and working on scaffolding, with sketches of scaffolds, ladders and guard-rails (three pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q3-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q3-layout.png",
+    "md5": "97c30c3ec045b86c948024555973cf08",
+    "alt": "SEC model revised bungalow layouts for a person with limited mobility with an open-plan kitchen/living space, and the notes (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q4-materials": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q4-materials.png",
+    "md5": "479fa099b465190049648dea555adabe",
+    "alt": "SEC 2020 Higher marking scheme notes on materials and finishes, with sketches of neighbouring houses.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q4-shape": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q4-shape.png",
+    "md5": "913995d72dc7a8b2bbeb4be0d626900f",
+    "alt": "SEC 2020 Higher marking scheme notes on shape and form, with sketches of roof forms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q4-streetscape": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q4-streetscape.png",
+    "md5": "350aa5095066215d0a3a4fc0d235a3c8",
+    "alt": "SEC 2020 Higher marking scheme notes on streetscape, with sketches of building lines and roof heights.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q4-characteristics": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q4-characteristics.png",
+    "md5": "e3a8444088bd71772629dc6574047b62",
+    "alt": "SEC 2020 Higher marking scheme notes and sketches for all three characteristics: materials and finishes, shape and form, and streetscape (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q4-design": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q4-design.png",
+    "md5": "3f0e5d617f89472f550c20680d8982f1",
+    "alt": "SEC model external designs for the infill house, one pitched and one flat-roofed, with the notes (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q5-calculation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q5-calculation.png",
+    "md5": "0c6aa2eed6d0f07a78402b8d7b30c7a4",
+    "alt": "SEC worked solution: the U-value table giving a total resistance of 9.993 and U = 0.10 W/m²°C, and the annual heat-loss cost of €18.62 by two methods (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q5-thermal-bridge": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q5-thermal-bridge.png",
+    "md5": "4ed413e810078ee43bf9fcb6ad1188f8",
+    "alt": "SEC model detail of the insulated ground floor meeting the cavity wall without a thermal bridge.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q6-low-impact": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q6-low-impact.png",
+    "md5": "adef25afe7fd81b1db818cd07b12008c",
+    "alt": "SEC 2020 Higher marking scheme notes on low-environmental-impact features, with sketches of solar gain, the cottage and the plan.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q6-modifications": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q6-modifications.png",
+    "md5": "440d87f23ca5d672b104f9de7ce1db2b",
+    "alt": "SEC 2020 Higher marking scheme notes on further modifications — draught lobby, trees, solar shading, solar panels, PV, wind turbine, rainwater harvesting and chimney location — with sketches (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q7-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q7-section.png",
+    "md5": "a593633fa3fb129d00df980f770e933e",
+    "alt": "SEC model section through the floor, hearth, stove and chimney with the independent air supply marked B, and the detail lists.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q8-location": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q8-location.png",
+    "md5": "5da39d6fb808059132574f4bc2a356cc",
+    "alt": "SEC 2020 Higher marking scheme notes on locating a first-floor bathroom, with sketches of the bathroom layout.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q8-pipework": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q8-pipework.png",
+    "md5": "165bd5c38f79747df0b6f547abd2064a",
+    "alt": "SEC model above-ground drainage from the shower, wash basin, W.C. and kitchen sink to a 110 mm stack, with the pipe sizes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q9-completeness": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q9-completeness.png",
+    "md5": "95d5a235f174a974a6d465876676dbda",
+    "alt": "SEC 2020 Higher marking scheme notes on completeness, with a sketch of a sealed junction.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q9-flexibility": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q9-flexibility.png",
+    "md5": "126cd4cda9f1de8ef55fc7b77f9fa1e5",
+    "alt": "SEC 2020 Higher marking scheme notes on flexibility, with sketches of quilt in a partition and floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q9-isolation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q9-isolation.png",
+    "md5": "041dfd6c085f32c375fef927c94f05a6",
+    "alt": "SEC 2020 Higher marking scheme notes on isolation, with a sketch of double glazing.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q9-principles": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q9-principles.png",
+    "md5": "daee54c04345fab66ee48e3bbc0dce53",
+    "alt": "SEC 2020 Higher marking scheme notes and sketches for completeness, flexibility and isolation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q9-upgrades": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q9-upgrades.png",
+    "md5": "db1775ca0870b2ea46ef0aac688f885b",
+    "alt": "SEC model sound-insulated stud partition and floating first floor, with the notes and alternatives (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-HL-q10-mvhr": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-HL-q10-mvhr.png",
+    "md5": "37e59ea6ce1de6c1d08b963ef36afbff",
+    "alt": "SEC model MVHR layout on the given plan with the unit, ducts and airflow, and notes on how the system works.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    "solution": true
   }
 }
