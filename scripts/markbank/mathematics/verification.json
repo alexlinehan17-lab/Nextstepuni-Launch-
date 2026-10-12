@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed on 2026-10-11 after 2023 OL Paper 2 (all reviewed papers to date)",
+  "productionBuild": "passed on 2026-10-12 after 2021 OL Paper 2 (all reviewed papers to date)",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -987,5 +987,49 @@
     "schemePagesInspected": 32,
     "coverageBaseline": "1159/3474 asks covered, 0 orphans, 0 excluded, 2315 open",
     "validation": "Deck generation (1,583 built, 0 historical rejects), Atlas generation and --check (386 placements), audit --check-reviewed, scheme quote check of the 12 re-quoted or added cards, ten regression files (322/322), typecheck and diff whitespace check passed."
+  },
+  "browserBatch5": {
+    "engine": "Chrome via Playwright, local Vite on port 5701 with the worktree's PDF mirror",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "cards": [
+      "maths-2022-hl-p2-q10-e",
+      "maths-2022-hl-p2-q2-a",
+      "maths-2021-ol-p1-q2-b",
+      "maths-2021-ol-p2-q5-b-ii",
+      "maths-2022-ol-p2-q9-d"
+    ],
+    "questionPagesRender": true,
+    "schemeHiddenBeforeReveal": true,
+    "exclusiveScaleAwards": {
+      "hl15E": 9,
+      "hl10C": 7,
+      "ol10C": 7,
+      "ol5B": 2,
+      "ol10C_measured": 7
+    },
+    "sixCategoryScalePanel": "15E shows No / Low / Low mid / High mid / High partial / Full credit −1 / Full credit (0, 3, 6, 9, 12, 14, 15)",
+    "rulerKnownPrintedLengthCm": 3.998,
+    "rulerReadings": {
+      "desktop": [
+        4.01,
+        4.0
+      ],
+      "mobile": [
+        3.98,
+        3.99
+      ]
+    },
+    "schemeReaderRenders": true,
+    "escapeAndFocusReturn": true,
+    "pageErrors": []
   }
 }
