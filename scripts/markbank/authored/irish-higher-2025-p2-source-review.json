@@ -1,0 +1,417 @@
+{
+  "year": 2025,
+  "level": "higher",
+  "paperFileid": "LC001ALP200IV.pdf",
+  "schemeFileid": "LC001ALP000IV.pdf",
+  "paperSha256": "156b8550e26eeb1d870fe84538c6fac9d0eb15f65776a54673b4ce05756bfb15",
+  "schemeSha256": "2b4f503260b2bcb3704a3f428bee88bbcccd8746b2a2b58208142cf7e6ff1550",
+  "reviewDate": "2026-10-11",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "reviewedSchemePages": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "schemeScope": "Combined Paper 1 and Paper 2 scheme. PDF 18 reading notes and annotation key; 19–21 Léamhthuiscint A; 22–25 Léamhthuiscint B; 26 literature annotation key; 27 literature notes, Gaeilge 5 and prose 25/18 tables; 28–30 prose; 31–38 poetry; 39 Ceist 4 notes and 35/25 table; 40–47 additional literature; 48 modified marking (SMM). PDF 1–17 belong to Paper 1; 49–52 blank.",
+  "reviewMethod": "Visual inspection of every paper page (pages 1–3 cover/instructions, 15 blank, 16 acknowledgements) and every applicable scheme page; cross-checked extracted text.",
+  "selectionDecisions": [
+    {
+      "page": 3,
+      "raw": "Freagair gach ceist (Ceist 1, Ceist 2, Ceist 3 agus Ceist 4).",
+      "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair Léamhthuiscint A (50 marc) agus Léamhthuiscint B (50 marc).",
+      "decision": "Both reading passages and every question in each are required; each printed part is also a practice card."
+    },
+    {
+      "page": 3,
+      "raw": "Tá Ceist 1 ‐ 5 ar aon mharc. Glacfar le freagraí i d’fhocail féin nó",
+      "decision": "Equal 7-mark questions 1–5; answer-language rule, not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair Ceist 2A (30 marc) nó Ceist 2B (30 marc).",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Hurlamaboc, Oisín i dTír na nÓg, optional novel extract, optional folktale)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair ceist amháin as do rogha de 2A (a) nó 2A (b).",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Hurlamaboc, Oisín i dTír na nÓg, optional novel extract, optional folktale)."
+    },
+    {
+      "page": 3,
+      "raw": "nó",
+      "decision": "Separates printed alternatives (2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b)); each is a whole route, never combined."
+    },
+    {
+      "page": 3,
+      "raw": "2B. Prós Roghnach",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Hurlamaboc, Oisín i dTír na nÓg, optional novel extract, optional folktale)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair ceist amháin as do rogha de 2B (a) nó 2B (b).",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Hurlamaboc, Oisín i dTír na nÓg, optional novel extract, optional folktale)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair Ceist 3A (30 marc) nó Ceist 3B (30 marc).",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair ceist amháin as do rogha de 3A (a) nó 3A (b).",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 3,
+      "raw": "3B. Filíocht Roghnach",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair ceist amháin as do rogha de 3B (a) nó 3B (b).",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F).",
+      "decision": "Closed choose-one of 4A–4F: six whole 40-mark routes."
+    },
+    {
+      "page": 4,
+      "raw": "Freagair Léamhthuiscint A agus Léamhthuiscint B anseo.",
+      "decision": "Both reading passages and every question in each are required; each printed part is also a practice card."
+    },
+    {
+      "page": 4,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Both reading passages and every question in each are required; each printed part is also a practice card."
+    },
+    {
+      "page": 4,
+      "raw": "ag éisteacht le ceol ar an rogha leathan stáisiúin",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 5,
+      "raw": "1. (a) Tabhair dhá chúis ar mhúscail díolachán uirlisí ceoil Rory Gallagher spéis mhór i measc lucht",
+      "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
+    },
+    {
+      "page": 5,
+      "raw": "2. (a) Scríobh síos dhá rud a léiríonn go raibh féith an cheoil i dtuismitheoirí Rory. (Alt 2)",
+      "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
+    },
+    {
+      "page": 5,
+      "raw": "4. (a) Luaigh dhá bhealach a dtéadh Rory Gallagher i gcion go mór ar a lucht féachana ag a chuid",
+      "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
+    },
+    {
+      "page": 5,
+      "raw": "5. (a) Scríobh síos dhá dhúshlán a chruthaigh tionscal an cheoil do Rory Gallagher mar ealaíontóir.",
+      "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
+    },
+    {
+      "page": 5,
+      "raw": "(b) (i) Scríobh síos dhá chomhartha ómóis do Rory Gallagher atá in Éirinn. (Alt 5)",
+      "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
+    },
+    {
+      "page": 5,
+      "raw": "(b) ‘Ceoltóir as an ngnáth ba ea Rory Gallagher.’ Tabhair dhá phointe eolais, i d’fhocail féin,",
+      "decision": "Two independent six-mark points (P1, P2): practice slots plus the whole part."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Both reading passages and every question in each are required; each printed part is also a practice card."
+    },
+    {
+      "page": 6,
+      "raw": "rannpháirteach ar bhonn ócáideach nó eagraithe.",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "choirp go rialta. Tá rogha leathan deiseanna",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "d’ionad aclaíochta nó glacann siad páirt i ranganna",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "beag beann ar aois, ar inscne, ar chumas nó",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 7,
+      "raw": "2. (a) Luaigh dhá bhuntáiste a bhaineann leis an spórt. (Alt 2)",
+      "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
+    },
+    {
+      "page": 7,
+      "raw": "(b) (i) Luaigh dhá rud a sholáthraítear ar an gCampas Náisiúnta Spórt do na lúthchleasaithe",
+      "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
+    },
+    {
+      "page": 7,
+      "raw": "(ii) Scríobh síos dhá rud atá ag teastáil chun córas spóirt éifeachtach a fhorbairt ar mhaithe",
+      "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
+    },
+    {
+      "page": 7,
+      "raw": "(b) ‘Tá dul chun cinn maith á dhéanamh i gcúrsaí spóirt in Éirinn.’ Tabhair dhá phointe eolais,",
+      "decision": "Two independent six-mark points (P1, P2): practice slots plus the whole part."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair Ceist 2A (Prós Ainmnithe) nó Ceist 2B (Prós Roghnach).",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Hurlamaboc, Oisín i dTír na nÓg, optional novel extract, optional folktale)."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Hurlamaboc, Oisín i dTír na nÓg, optional novel extract, optional folktale). Printed for 2A, 2B and 3B (pages 8 and 11)."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair an cheist thíos ar an ngiota as an úrscéal Hurlamaboc.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Hurlamaboc, Oisín i dTír na nÓg, optional novel extract, optional folktale)."
+    },
+    {
+      "page": 8,
+      "raw": "nó",
+      "decision": "Separates printed alternatives (2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b)); each is a whole route, never combined."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair an cheist thíos ar an scéal béaloidis Oisín i dTír na nÓg.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Hurlamaboc, Oisín i dTír na nÓg, optional novel extract, optional folktale)."
+    },
+    {
+      "page": 8,
+      "raw": "Prós Roghnach",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Hurlamaboc, Oisín i dTír na nÓg, optional novel extract, optional folktale)."
+    },
+    {
+      "page": 8,
+      "raw": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
+      "decision": "Restriction on content, not a route."
+    },
+    {
+      "page": 8,
+      "raw": "Maidir leis an ngiota as an úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa,",
+      "decision": "Optional novel extract chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 8,
+      "raw": "Maidir le scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas",
+      "decision": "Optional folktale chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 8,
+      "raw": "PRÓS AINMNITHE nó PRÓS ROGHNACH 30 marc",
+      "decision": "Section heading / structure statement, not a separate route."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair Ceist 3A (Filíocht Ainmnithe) nó Ceist 3B (Filíocht Roghnach).",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair do rogha ceann amháin de (a) nó (b).",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 9,
+      "raw": "fhileata sin sa dán, dar leat? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+      "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+    },
+    {
+      "page": 9,
+      "raw": "(iii) Cén mheadaracht atá sa dán seo? Scríobh pointe amháin eolais faoin meadaracht seo",
+      "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+    },
+    {
+      "page": 9,
+      "raw": "FILÍOCHT AINMNITHE nó FILÍOCHT ROGHNACH 30 marc",
+      "decision": "Section heading / structure statement, not a separate route."
+    },
+    {
+      "page": 10,
+      "raw": "nó",
+      "decision": "Separates printed alternatives (2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b)); each is a whole route, never combined."
+    },
+    {
+      "page": 10,
+      "raw": "fhileata sin sa dán, dar leat? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+      "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+    },
+    {
+      "page": 11,
+      "raw": "3B. Filíocht Roghnach",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 11,
+      "raw": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Hurlamaboc, Oisín i dTír na nÓg, optional novel extract, optional folktale). Printed for 2A, 2B and 3B (pages 8 and 11)."
+    },
+    {
+      "page": 11,
+      "raw": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.",
+      "decision": "Restriction on content, not a route."
+    },
+    {
+      "page": 11,
+      "raw": "(i) Maidir le dán seanaimseartha roghnach (dán a cumadh sa tréimhse roimh 1850) a ndearna tú",
+      "decision": "Optional poem chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 11,
+      "raw": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+      "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+    },
+    {
+      "page": 11,
+      "raw": "Tabhair dhá phointe eolais as an dán faoin teicníc sin.",
+      "decision": "Required content within the selected poem route (two points, 3 + 3); not a selection."
+    },
+    {
+      "page": 11,
+      "raw": "nó",
+      "decision": "Separates printed alternatives (2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b)); each is a whole route, never combined."
+    },
+    {
+      "page": 11,
+      "raw": "(i) Maidir le dán nua‐aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos",
+      "decision": "Optional poem chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 12,
+      "raw": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F) thíos.",
+      "decision": "Closed choose-one of 4A–4F: six whole 40-mark routes."
+    },
+    {
+      "page": 12,
+      "raw": "Freagair (i), (ii) agus (iii) thíos.",
+      "decision": "4F: all three parts required in one route."
+    },
+    {
+      "page": 12,
+      "raw": "Nóta: Bain úsáid as Leagan 1 nó Leagan 2 (lgh 13‐14 thall) den dán i do fhreagraí.",
+      "decision": "4F prints two versions of the same poem; the candidate may use either inside one route. Not a separate task."
+    },
+    {
+      "page": 12,
+      "raw": "Is leor dhá phointe eolais as an dán faoin sampla sin.",
+      "decision": "4F(ii): one example plus two points inside one 9-mark part (1 + 4 + 4)."
+    },
+    {
+      "page": 12,
+      "raw": "(iii) Scríobh síos tréith amháin de chuid Airt. Tabhair dhá phointe eolais as an dán faoin tréith sin.",
+      "decision": "4F(iii): one trait plus two points inside one 9-mark part (1 + 4 + 4)."
+    },
+    {
+      "page": 13,
+      "raw": "Nó thairis dá dtaitneadh liom.",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 14,
+      "raw": "Is ní bheidh sé acu le freagairt.",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 16,
+      "raw": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe",
+      "decision": "Copyright statement, not a task."
+    },
+    {
+      "page": 16,
+      "raw": "a eascraíonn as dáileadh nó úsáid neamhúdaraithe an scrúdpháipéir seo.",
+      "decision": "Copyright statement, not a task."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Reading: all twelve questions are required; each printed part is a practice card at its published tariff. “1 mharc + 1 mharc” answers expose one-mark slots (A5(b)(i), B2(b)(i), B4(b)(i), B5(b)(i), B5(b)(ii)); “2 mharc + 1 mharc” items (A1(a), A2(a), A4(a), A5(a), B2(a) and both 6(a)) stay whole as 0/2/3.",
+    "Both 6(b) parts have two independent six-mark points (P1, P2) with practice slots; the answer must be in the candidate’s own words.",
+    "Single-answer parts allow only the mark values the scheme prints for them (0, the printed partials and the full tariff).",
+    "Prose, poetry and Q4 choices are closed printed routes (4 + 4 + 6) and were already carded (IDs retained); the optional novel, folktale or poem itself is open content chosen by the candidate.",
+    "Scheme lists of accepted points and supporting notes are indicative answer keys, not route pools.",
+    "The modified marking scheme changes assessment for eligible candidates, not the printed tasks."
+  ],
+  "sourceFindings": [
+    "Paper 2 = 200: Léamhthuiscint A 50 + B 50 (Q1–5 at 7 = (a) 3 + (b)(i) 2 + (b)(ii) 2; Q6 at 15 = (a) 3 + (b) 12), Prós 30, Filíocht 30, Litríocht Bhreise 40.",
+    "Reading A “Rory Gallagher – Laoch ceoil” (paper 4–5, scheme PDF 19–21); B “Cúrsaí spóirt in Éirinn” (paper 6–7, scheme PDF 22–25).",
+    "Literature language: 5 marks for Gaeilge in every literature answer (scheme PDF 27); prose 25 Eolas (18 when only one required aspect is discussed); poetry (i) 13, (ii) 5, (iii) 7; Q4 Eolas 35 (25 for one aspect); 4F (i) 17, (ii) 9, (iii) 9.",
+    "Legacy corrections (IDs, totals and topics unchanged): the twelve whole reading questions each had one undivided criterion and Léamhthuiscint A Ceist 3 had lost its (a) key while carrying the Ceist 4–5 keys; the poetry routes had one 25-mark Eolas criterion with the (i) scheme missing; every literature route carried a paraphrased Gaeilge band (“sásúil”) instead of the printed table. All now carry the lifted 2025 scheme text and part tariffs."
+  ],
+  "remainingWork": [],
+  "runtimeVerification": {
+    "date": "2026-10-12",
+    "viewport": [
+      390,
+      844
+    ],
+    "markBankRoutes": 5,
+    "atlasRoutes": 5,
+    "sourceReader": "A retained whole reading question, a 6(b) point slot, a one-mark answer slot, a prescribed poem and 4F rendered their paper pages (passage pages 4–5/6–7, poem pages 13–14); navigation, close/focus return and overflow checks passed.",
+    "atlas": "Each route rendered its paper pages plus reviewed scheme pages (frozen reading Ceist 3 2+2, slot 2+1, 3A(a) 1+3, 4F 3+3, 2B(a) 1+2).",
+    "browserErrors": []
+  }
+}
