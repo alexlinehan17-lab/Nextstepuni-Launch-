@@ -971,5 +971,264 @@
     "alt": "Photograph from the SEC scheme of dark charred timber cladding around a glazed door.",
     "attribution": "SEC Leaving Certificate Construction Studies 2026 Ordinary Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2025-HL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q1-original.png",
+    "md5": "71f0d7adb39ddef2b21cd2ec87d79a07",
+    "alt": "Original SEC 2025 Higher Construction Studies Question 1: the printed question with a sketch of a triple-glazed window in a rendered external wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-HL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q1-section.png",
+    "md5": "e68edbbfff4581149b5b196eaff2f7d3",
+    "alt": "SEC model vertical section from the reinforced strip foundation through the insulated solid ground floor and timber-frame wall with block outer leaf to the triple-glazed window cill.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q1-radon": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q1-radon.png",
+    "md5": "314b929c972637fa2fac6d47e025627a",
+    "alt": "SEC model detail at the floor and wall junction with an arrow to the radon barrier, labelled “Radon Barrier prevents the penetration of radon gas”.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q2-original.png",
+    "md5": "7cf785d720aec658600bae5a1d67e548",
+    "alt": "Original SEC 2025 Higher Construction Studies Question 2: the printed question with a sketch of insulation rolls in an attic.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-HL-q2-trench": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q2-trench.png",
+    "md5": "2d640351a2cb7ab679e760bd9c5578e0",
+    "alt": "SEC 2025 Higher marking scheme page on deep-trench safety, with sketches of a trench box, battered and unbattered trench sides, sheet piling and shoring.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q2-attic": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q2-attic.png",
+    "md5": "44b1552a7a87bb3cdbc7a5928da4396a",
+    "alt": "SEC 2025 Higher marking scheme guidelines for installing attic insulation, with dust-mask and goggle safety signs and a worker in protective clothing kneeling on boards.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q2-chimney": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q2-chimney.png",
+    "md5": "f11f43238bebfadbf2cc0e0fe3f93d4c",
+    "alt": "SEC 2025 Higher marking scheme guidelines for repairing a chimney capping, with sketches of a worker in a safety harness and a cherry picker at a chimney.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q3-original.png",
+    "md5": "f8b05b0327c64a69b0d5dcb6e8bbc3bf",
+    "alt": "Original SEC 2025 Higher Construction Studies Question 3: the printed question with the front elevation and ground-floor plan of a semi-detached house and garage, wall A-A marked.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-HL-q3-layout-1": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q3-layout-1.png",
+    "md5": "bb1b46f1cc92127a1f7587b9b144ddf3",
+    "alt": "SEC model revised ground-floor plan 1: open-plan kitchen and dining in the former garage, a new downstairs bathroom and the layout notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q3-layout-2": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q3-layout-2.png",
+    "md5": "d6d9377601752a455c4b2e6f4b3e9a5f",
+    "alt": "SEC model revised ground-floor plan 2: an open-plan kitchen/dining room across the garage and utility with a family bathroom, and the layout notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q3-garage": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q3-garage.png",
+    "md5": "1230114c0ae03148284ee575cd60335d",
+    "alt": "SEC model sketches of the converted garage exterior with large glazing and roof lights in the flat roof, and the external design notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q4-original.png",
+    "md5": "9c1e4369f9233f739a07b4b5e06417dc",
+    "alt": "Original SEC 2025 Higher Construction Studies Question 4: the printed question with a sketch of a proposed new house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-HL-q4-requirements": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q4-requirements.png",
+    "md5": "5b41aa91c1fbb4184ee4813583e9e890",
+    "alt": "SEC 2025 Higher marking scheme page on the functional requirements of an external wall, with sketches of load paths, an insulated wall, fire resistance and an insulated envelope.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q4-walls": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q4-walls.png",
+    "md5": "0ec5015366b2f761cf651891e5d8aa2a",
+    "alt": "SEC 2025 Higher marking scheme page on high-performance wall types: block cavity, insulated concrete forms and solid block with external insulation, each with a section sketch.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q5-original.png",
+    "md5": "42fc1e86c08a51190797f7de24bfd770",
+    "alt": "Original SEC 2025 Higher Construction Studies Question 5: the printed question with a cut-away sketch of the externally insulated hollow-block wall and all the construction and thermal data.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-HL-q5-calculation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q5-calculation.png",
+    "md5": "95bf4981c7a140c2f4cae2fc5f8db73d",
+    "alt": "SEC worked solution: the U-value table giving a total resistance of 4.531 and U = 0.221 W/m²°C, and the annual heat-loss cost of €76.34 by two methods.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q5-thickness": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q5-thickness.png",
+    "md5": "20f4dded9b0c93baada8d9d2a66dd61e",
+    "alt": "SEC worked solution for the additional insulation: required resistance 9.091, difference 4.566, thickness 0.137 m (137 mm).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q6-original.png",
+    "md5": "9098a218a4d1527ee4bc98bd2c00ae36",
+    "alt": "Original SEC 2025 Higher Construction Studies Question 6: the printed question with the elevation and L-shaped ground-floor plan of a single-storey house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-HL-q6-low-impact": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q6-low-impact.png",
+    "md5": "c342c1865bb12b0ce3fa2b2b42eea6c0",
+    "alt": "SEC 2025 Higher marking scheme page on low-environmental-impact features, with sketches of solar gain on the plan, an insulated timber-frame wall with larch cladding and a compact form.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q7-original.png",
+    "md5": "fc7a0be0e284e79f867654115eb1d3c4",
+    "alt": "Original SEC 2025 Higher Construction Studies Question 7: the printed question with a sketch of a rendered chimney stack on a slated roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-HL-q7-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q7-section.png",
+    "md5": "894095cd382dea06ca86d9292a1b6b07",
+    "alt": "SEC model vertical section through a chimney stack and pitched roof: flue liners, blockwork, capping, DPC trays, lead flashings, back gutter, rafters and slates, with the list of details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q7-flashing": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q7-flashing.png",
+    "md5": "5a61cf28b8bf1987763a1dc42e535a10",
+    "alt": "SEC model detail of the chimney stack and roof junction with arrows to the lead flashings and DPC trays, and notes for the back and front of the chimney.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-original.png",
+    "md5": "e4b47d96edcf03c5bed574d19310c03e",
+    "alt": "Original SEC 2025 Higher Construction Studies Question 8: the printed question with an outline section of a two-storey house and four circled locations.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-HL-q8-door-head": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-door-head.png",
+    "md5": "937705698921e03d216b8e392ab66b9e",
+    "alt": "SEC model section at the head of an external door with an arrow to the airtight seal between the door frame and the wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q8-first-floor": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-first-floor.png",
+    "md5": "d0816a39a51cff525156d6c8654882ee",
+    "alt": "SEC model sketches of the first-floor junction with the external wall: airtightness membrane and tape around the joist ends.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q8-wallplate": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-wallplate.png",
+    "md5": "a9108fe10eb49b4d0037e0e9bb891b43",
+    "alt": "SEC model eaves section at wallplate level with an arrow to the airtightness membrane wrapped onto the wallplate and wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q8-mvhr-duct": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q8-mvhr-duct.png",
+    "md5": "01c7c17786a5ef5ec7ccc4065230e4ff",
+    "alt": "SEC model sketches of an MVHR duct through the ceiling sealed to the airtightness membrane with a grommet or with tape.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q9-original.png",
+    "md5": "22dcddf2c4f7b3b1457b5cdd82b4ea18",
+    "alt": "Original SEC 2025 Higher Construction Studies Question 9: the printed question with a sketch of a room with a light switch and two pendant lights.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-HL-q9-wiring": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q9-wiring.png",
+    "md5": "be2ff2c64d09eb82b4cc9ef0ae314280",
+    "alt": "SEC model wiring diagram of a lighting circuit from the distribution board to a single switch and two pendant light points, with the cable size and colours.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q9-safety": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q9-safety.png",
+    "md5": "a8072ad39a7d62d50932cda5a5a8328b",
+    "alt": "SEC 2025 Higher marking scheme page on lighting-circuit safety features, with sketches of a labelled distribution board and an RCBO.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q10-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-original.png",
+    "md5": "26da681e04c9b2456db875d5af2d5645",
+    "alt": "Original SEC 2025 Higher Construction Studies Question 10: the printed question with a sketch of a two-storey Passive House in a rural setting.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-HL-q10-building-form": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-building-form.png",
+    "md5": "ffe6e866b0a346d13d75f1c7199e60a5",
+    "alt": "SEC 2025 Higher marking scheme notes on Passive House building form, with sketches contrasting a complex plan (crossed) and a simple rectangle (ticked).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q10-foundation-design": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-foundation-design.png",
+    "md5": "a290814d9f2450952cad114cfde250cf",
+    "alt": "SEC 2025 Higher marking scheme notes on Passive House foundation design, with sections of insulated foundations at the wall and floor junction.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q10-space-heating-energy-demand": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-space-heating-energy-demand.png",
+    "md5": "e4fddbef00a187ce9a2472358ddf65b2",
+    "alt": "SEC 2025 Higher marking scheme notes on space heating energy demand, with a sketch of solar gain warming an insulated house section.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q10-orientation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-orientation.png",
+    "md5": "50b4856e3f3296041ff667e9f31643af",
+    "alt": "SEC model orientation and sun-path sketches with the long glazed elevation facing south, and the benefits to the homeowner.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q10-overheating": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-overheating.png",
+    "md5": "54aa4587330d6153c863b0e88a0c30fe",
+    "alt": "SEC 2025 Higher marking scheme page on reducing solar overheating, with sketches of dynamic glass, deciduous trees, a brise soleil and shutters.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-HL-q10-alt-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-HL-q10-alt-original.png",
+    "md5": "38d5847ed1cfde7772c3e7f2ce6217a7",
+    "alt": "Original SEC 2025 Higher Construction Studies alternative Question 10: the printed Heritage Ireland 2030 quotation on reusing historic buildings and its two parts.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    "solution": false
   }
 }
