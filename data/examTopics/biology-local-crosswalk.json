@@ -58283,10 +58283,14 @@
         "biology-1-4"
       ],
       "topicIds": [
+        "biology-ordinary-new-course-14-information-of-life-genetic-inheritance",
+        "biology-ordinary-new-course-23-dna-replication-protein-synthesis-mutations",
+        "biology-ordinary-new-course-12-dna-rna-and-the-genetic-code",
+        "biology-ordinary-new-course-33-genetic-engineering",
         "biology-ordinary-old-course-genetics-dna-evolution"
       ],
-      "resolution": "retained-local-canonical-fallback",
-      "reason": "Entitled SEC task preserved although the factual reference snapshot has no association for this independently selectable question."
+      "resolution": "retained-local-reviewed",
+      "reason": "Official SEC 2025 task retained from direct paper review; the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "ordinary",

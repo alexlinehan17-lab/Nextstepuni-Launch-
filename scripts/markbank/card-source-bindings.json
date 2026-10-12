@@ -641,40 +641,6 @@
         12
       ],
       "stripStem": true
-    },
-    "bio-2025-ol-q11-b-v": {
-      "pages": [
-        2
-      ],
-      "stripStem": true
-    },
-    "bio-2025-ol-q11-c-i": {
-      "pages": [
-        2
-      ],
-      "sourceFileid": "LC025GLP040EV",
-      "stripStem": true
-    },
-    "bio-2025-ol-q11-c-ii": {
-      "pages": [
-        2
-      ],
-      "sourceFileid": "LC025GLP040EV",
-      "stripStem": true
-    },
-    "bio-2025-ol-q11-c-iii": {
-      "pages": [
-        2
-      ],
-      "sourceFileid": "LC025GLP040EV",
-      "stripStem": true
-    },
-    "bio-2025-ol-q11-c-iv": {
-      "pages": [
-        2
-      ],
-      "sourceFileid": "LC025GLP040EV",
-      "stripStem": true
     }
   },
   "business": {

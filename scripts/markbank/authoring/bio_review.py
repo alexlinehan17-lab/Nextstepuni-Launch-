@@ -176,7 +176,9 @@ def read_geo(lifter, spec, sp):
         value = f'{spec["part"]} — {chr(0x2460 + row[0] - 1)}'
     elif kind == 'tokens':
         words = sorted(src.words(page, clip), key=lambda w: (round(w[0].y0 / 8), w[0].x0))
-        value = ' '.join(t for _, t in words)
+        # `strip` drops the printed answer line a filled-in blank sits on
+        # ("____hormones______" reads "hormones"); the word itself is untouched.
+        value = ' '.join(t.strip(spec['strip']) if spec.get('strip') else t for _, t in words)
     elif kind == 'lines':
         # Printed rows, top to bottom, each read left to right: a formula the
         # scheme sets as its letters over their numbers ("C H O" / "6 12 6").
@@ -521,6 +523,14 @@ def build(ledger, year, level):
         claimed.update(hit)
     for leaf in sorted(leaves - claimed, key=str):
         problems.append(f'census leaf {leaf} has no task')
+
+    # --- figure keys -----------------------------------------------------
+    # Every figure a task names is cropped, and every crop is shown by a task.
+    named = {k for t in ledger.TASKS for k in (t['fig'], t['qfig']) if k}
+    for k in sorted(named - set(ledger.FIGURES)):
+        problems.append(f'figure {k!r} is named by a task but has no crop in FIGURES')
+    for k in sorted(set(ledger.FIGURES) - named):
+        problems.append(f'figure {k!r} is cropped but no task shows it')
 
     # --- Atlas topics -----------------------------------------------------
     atlas = json.load(open(ATLAS_MAP.format(year=year), encoding='utf-8'))

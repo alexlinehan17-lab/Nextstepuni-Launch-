@@ -332,3 +332,123 @@ describe('Biology 2025 Higher — reviewed sitting, corrected in place', () => {
     expect(hl25ById.get('bio-2025-hl-q13-a-ii')!.figure?.solution).toBe(true);
   });
 });
+
+const ol25 = sittings['2025-ol'];
+const ordinary2025 = BIO_ORDINARY.filter(card => card.year === 2025) as unknown as ReviewedCard[];
+const ol25ById = new Map(ordinary2025.map(card => [card.id, card]));
+const ol25Verbatims = (id: string) => (ol25ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+
+describe('Biology 2025 Ordinary — reviewed sitting, corrected in place', () => {
+  const review = ol25.review!;
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(ol25.baseTaskCount).toBe(171);
+    expect(ol25.cardCount).toBe(175);
+    expect(ordinary2025).toHaveLength(175);
+    expect(new Set(ol25.tasks.map(task => task.id))).toEqual(new Set(ol25ById.keys()));
+  });
+
+  it('keeps every shipped id but one aliased duplicate', () => {
+    expect(review.baselineCommit).toBe('98d985b9d');
+    expect([review.verified.length, review.corrected.length, review.added.length,
+      review.retained.length]).toEqual([5, 127, 43, 1]);
+    for (const id of [...review.verified, ...review.corrected.map(c => c.id), ...review.added]) {
+      expect(ol25ById.has(id), id).toBe(true);
+    }
+    // "Q16(c)(iii)-(iv)" duplicated the cards for (iii) and (iv): withdrawn,
+    // its progress carried to the (iii) card.
+    expect(review.retained.map(r => r.id)).toEqual(['bio-2025-ol-q16-ciii-fig']);
+    expect(ol25ById.has('bio-2025-ol-q16-ciii-fig')).toBe(false);
+    expect(review.withdrawn['bio-2025-ol-q16-ciii-fig'].replacementId).toBe('bio-2025-ol-q16-c-iii');
+    expect(ol25ById.has('bio-2025-ol-q16-c-iii')).toBe(true);
+  });
+
+  it('records what each corrected card showed before', () => {
+    for (const correction of review.corrected) {
+      expect(correction.changed.length, correction.id).toBeGreaterThan(0);
+      for (const field of correction.changed) {
+        expect(field in correction.fieldsBefore, `${correction.id}.${field}`).toBe(true);
+      }
+    }
+  });
+
+  it('leaves the cards the review verified exactly as they shipped', () => {
+    const verified = review.verified.map(id => ol25ById.get(id)!)
+      .sort((a, b) => a.id.localeCompare(b.id));
+    // The five cards' shipped text is byte-identical to the deck before the review.
+    expect(contentHash(verified)).toBe('9f7d90b2f5ac46b76bdc6f13ae6cd9cfa9023fa7b042c921048b3c60943bbbf4');
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(ol25.sources['038'].sha256)
+      .toBe('18d7bbfd7c80dd3a4d794f0b93f5b7b3878ad98235ae5ca4a3d364f4e9b37ae1');
+    expect(ol25.sources['040'].sha256)
+      .toBe('cb5f36e52e4ed56d66d6903ac53afe72759eea3881def5ef8bd627bfaefe1b35');
+    expect(ol25.sources.scheme.sha256)
+      .toBe('abe98d1dd4ba6b6b10fec7064156fde4dd13ed4679e663aaafb4440d897cad8e');
+    expect([ol25.sources['038'].pages, ol25.sources['040'].pages, ol25.sources.scheme.pages])
+      .toEqual([36, 12, 36]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of ol25.tasks) {
+      const card = ol25ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('adds up to the printed question totals', () => {
+    const firstRoute = new Set(Object.values(ol25.routes).map(routes => routes[0]));
+    const totals = new Map<number, number>();
+    for (const task of ol25.tasks) {
+      if (task.route && !firstRoute.has(task.route)) continue;   // one route per pool
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    for (const q of [1, 2]) expect(totals.get(q), `Q${q}`).toBe(20);   // 5(4)
+    // "6(3) + 2": seven responses each carded at 3; the ladder pays the
+    // seventh 2, so the question's 20 is the ladder's, not the cards' sum.
+    for (const q of [3, 4, 5, 6, 7]) expect(totals.get(q), `Q${q}`).toBe(21);
+    for (const q of [8, 9, 10]) expect(totals.get(q), `Q${q}`).toBe(30);
+    for (const q of [11, 12, 13, 14, 15]) expect(totals.get(q), `Q${q}`).toBe(60);
+    for (const q of [16, 17]) expect(totals.get(q), `Q${q}`).toBe(120);   // any two of four 30s
+  });
+
+  it('expands the three closed choose-one pools into one card per printed option', () => {
+    const routesOf = (ref: string) => ordinary2025
+      .filter(card => card.questionRef.startsWith(`2025 OL ${ref} — `))
+      .map(card => card.questionRef.split(' — ')[1]).sort();
+    expect(routesOf('Q14(b)(v)')).toEqual(['phloem', 'xylem']);
+    expect(routesOf('Q17(b)(v)')).toEqual(['cartilage', 'ligament', 'synovial-fluid']);
+    expect(routesOf('Q17(b)(vi)')).toEqual(['arthritis', 'osteoporosis']);
+  });
+
+  it('reads the answers the scheme prints as marks, boxes and drawings', () => {
+    expect(ol25Verbatims('bio-2025-ol-q1-b')).toEqual(['C x ( H 2 O )y']);
+    expect(ol25Verbatims('bio-2025-ol-q1-c')).toEqual(['Fatty acid — Glycerol Fatty acid — Fatty acid']);
+    expect(['a-e', 'b', 'c', 'd', 'e'].map(x => ol25Verbatims(`bio-2025-ol-q2-${x}`)[0]))
+      .toEqual(['Biosphere', 'Ecosystem', 'Conservation', 'Habitat', 'Pollution']);
+    expect(['a', 'b', 'c', 'd', 'e', 'f', 'g'].map(x => ol25Verbatims(`bio-2025-ol-q3-${x}`)[0]))
+      .toEqual(['True', 'False', 'True', 'True', 'False', 'False', 'True']);
+    expect(ol25Verbatims('bio-2025-ol-q6-a')).toEqual(['hormones', 'bloodstream', 'impulses', 'neurons']);
+    expect(ol25Verbatims('bio-2025-ol-q14-b-i-ii-fig')[0]).toBe('2');
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b|\bthe one shown\b|\bdiagram, 1 or 2\b/i;
+    for (const card of ordinary2025) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // Q1(b) and Q1(c) are set as the paper prints them and answered by the
+    // scheme's own filled formula and drawn structure, held back until reveal.
+    for (const id of ['bio-2025-ol-q1-b', 'bio-2025-ol-q1-c']) {
+      expect(ol25ById.get(id)!.questionFigure, id).toBeTruthy();
+      expect(ol25ById.get(id)!.figure?.solution, id).toBe(true);
+    }
+  });
+});

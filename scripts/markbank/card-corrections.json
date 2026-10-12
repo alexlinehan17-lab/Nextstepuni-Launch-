@@ -169,6 +169,11 @@
    "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q17-a-i, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
    "drop": true,
    "replacementId": "bio-2025-hl-q17-a-i"
+  },
+  "bio-2025-ol-q16-ciii-fig": {
+   "reason": "A shipped duplicate: \"Q16(c)(iii)-(iv)\" carded the two parts bio-2025-ol-q16-c-iii and bio-2025-ol-q16-c-iv already card separately. Withdrawn with a progress alias to bio-2025-ol-q16-c-iii, which carries its first part.",
+   "drop": true,
+   "replacementId": "bio-2025-ol-q16-c-iii"
   }
  },
  "physics": {

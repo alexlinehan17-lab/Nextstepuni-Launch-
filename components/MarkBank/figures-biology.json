@@ -454,6 +454,573 @@
    337
   ]
  },
+ "biology-2025-ol-q10-dishes": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q10-dishes.png",
+  "md5": "37ef4772a76c054f409184385a30f06a",
+  "alt": "Four Petri dishes side by side, each holding one seed. Dish A: stored at room temperature, on wet cotton wool. Dish B: stored in the refrigerator, on wet cotton wool. Dish C: stored in an anaerobic jar, on wet cotton wool. Dish D: stored at room temperature, on dry cotton wool.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q10(b)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   115,
+   218,
+   536,
+   312
+  ]
+ },
+ "biology-2025-ol-q11-cycles": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q11-cycles.png",
+  "md5": "2de9d08581346841c41aa306b2348c3d",
+  "alt": "Two word diagrams. Diagram X: arrow A runs down from Nitrogen gas in the atmosphere to Nitrates in the soil, and another arrow runs back up; Nitrates in the soil lead to Plant protein, arrow B runs from Plant protein to Animal protein, both proteins lead to Ammonia, and arrow C runs from Ammonia up to Nitrates in the soil. Diagram Y: arrow D runs down from Carbon dioxide gas in the atmosphere to Plant carbohydrate, and an arrow F runs back up; Plant carbohydrate leads to Animal carbohydrate, from which another arrow F runs to the atmosphere; arrow E runs from Fossil fuels to the atmosphere; both carbohydrates lead to Dead organic matter, which leads round to Fossil fuels.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q11(c)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   112,
+   488,
+   538,
+   645
+  ]
+ },
+ "biology-2025-ol-q12-processes": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q12-processes.png",
+  "md5": "734bdd68ac26fe5936fcb77eda10e5a7",
+  "alt": "A table of three diagrams. A: a twisted ladder labelled DNA (two identical strands). B: a large rounded body labelled Ribosome sitting on a strand labelled Messenger RNA, with a chain of beads labelled Protein growing from it. C: a rounded body labelled Enzyme on a twisted ladder labelled DNA code, with a single strand labelled Messenger RNA (single stranded) peeling away from it.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q12(c)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com; alamy.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   84,
+   376,
+   540,
+   538
+  ]
+ },
+ "biology-2025-ol-q13-muscle": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q13-muscle.png",
+  "md5": "4be1dad2c95563cad25aa0a7aa51242a",
+  "alt": "Drawing of four long, cylindrical, cross-striped cells lying side by side, with small oval bodies along them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q13(c)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   368,
+   460,
+   540,
+   524
+  ]
+ },
+ "biology-2025-ol-q13-photosynthesis": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q13-photosynthesis.png",
+  "md5": "78d283ba5400de558eb7e7f33011f83e",
+  "alt": "Diagram of a leaf under the sun. Arrows labelled Sunlight point down at the leaf; an arrow from a box labelled X curves into the leaf, and an arrow labelled Water H2O enters it from below; arrows leave the leaf to Oxygen O2 and to Glucose C6H12O6.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q13(b)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   395,
+   180,
+   540,
+   382
+  ]
+ },
+ "biology-2025-ol-q14-dispersal": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q14-dispersal.png",
+  "md5": "ad812646c2118d785ceb7e4ad00636d9",
+  "alt": "Three photographs. A: a large seed lying half in water at the edge of a shore. B: a dandelion clock with its seeds drifting away. C: a small bird perched on a branch.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(c)(i)3",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: seedparade.co.uk; istockphoto.com; ©Jacqui Geux – predatorfreenz.org",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   168,
+   600,
+   520,
+   678
+  ]
+ },
+ "biology-2025-ol-q14-plant": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q14-plant.png",
+  "md5": "60199867d6e86e58ad98d8dfd0fc6b15",
+  "alt": "Drawing of a flowering plant. A bracket labelled X spans everything above the ground; a bracket labelled Root system spans the roots below.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(a)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Created on biorender.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   395,
+   52,
+   540,
+   166
+  ]
+ },
+ "biology-2025-ol-q14-sections": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q14-sections.png",
+  "md5": "0742ffefb98f6176472ae5fba80ef79b",
+  "alt": "Two circular transverse sections, numbered 1 and 2. Section 1 has a ring of separate dark bundles near its edge; section 2 has fine hairs on its outer edge and a dark central core. Arrows labelled A point to the outer layer of each section, arrows labelled B to the tissue filling each, and arrows labelled C to a dark bundle of section 1 and to the central core of section 2.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(b)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com; dreamstime.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   160,
+   208,
+   446,
+   322
+  ]
+ },
+ "biology-2025-ol-q15-foetus": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q15-foetus.png",
+  "md5": "2f89c2d15bbbb35dbe807ddb614105ef",
+  "alt": "Diagram of a developing baby curled inside the womb. An arrow labelled X points to the thick disc of tissue on the womb wall; an arrow labelled Y points to the curled-up body.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q15(b)(vi)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   410,
+   362,
+   540,
+   519
+  ]
+ },
+ "biology-2025-ol-q15-male": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q15-male.png",
+  "md5": "424a0ae479e929dd18420e006c9f4046",
+  "alt": "Front-view diagram of the male reproductive system. An arrow labelled A points to a tube that loops up and over from each side; B labels the gland below the bladder that the tubes pass through; C labels one of the two oval organs hanging at the bottom.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q15(c)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   395,
+   558,
+   540,
+   720
+  ]
+ },
+ "biology-2025-ol-q16-bacteria": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q16-bacteria.png",
+  "md5": "04f003a0dcacb6bca418aac49bf73d4f",
+  "alt": "Three drawings of bacteria labelled X, Y and Z: X is a long capsule shape, Y is a ball, and Z is a wavy corkscrew.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16(d)(v)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Created in biorender.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   175,
+   512,
+   455,
+   626
+  ]
+ },
+ "biology-2025-ol-q16-rhizopus": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q16-rhizopus.png",
+  "md5": "cad4cc24f9106ff4600f3c6737928f2f",
+  "alt": "Diagram of the bread mould Rhizopus: upright stalks, each topped by a round head full of dots, rise from a horizontal thread, with branched root-like threads below. Arrow A points to a round head; arrow B to an upright stalk; arrow C to the branched threads at the bottom; arrow D to the horizontal thread.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16(c)(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   405,
+   72,
+   540,
+   278
+  ]
+ },
+ "biology-2025-ol-q16-table": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q16-table.png",
+  "md5": "47395118e297a95856c41a4358a898a1",
+  "alt": "A table with columns Substrate, Enzyme and Product. Row 1: blank, Amylase, blank. Row 2: Lipids, blank, Triglycerides. Row 3: Protein, blank, Amino acid.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16(a)(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   140,
+   184,
+   540,
+   292
+  ]
+ },
+ "biology-2025-ol-q17-breathing": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q17-breathing.png",
+  "md5": "62e817b95168fec2fe4c672eed68dc94",
+  "alt": "Diagram of the human breathing system: a ringed tube runs down from the throat and splits into the two lungs, which sit inside the ribs above a curved sheet labelled Diaphragm. An inset, labelled Capillary and Alveolus, enlarges an air sac at the end of an airway. Arrow C points to the ringed tube, arrow B to one of the two tubes it splits into, and arrow A to the tissue between two ribs; a label Rib points to a rib.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q17(c)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   320,
+   98,
+   540,
+   350
+  ]
+ },
+ "biology-2025-ol-q17-heart": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q17-heart.png",
+  "md5": "fdf1f38b64ead275d7813e131bcfbbcf",
+  "alt": "Diagram of a section through the heart, two of its chambers labelled Left atrium and Right ventricle. Arrow A points to a large vessel entering the chamber at the upper left of the diagram; arrow B points to a vessel leaving the top of the heart; C labels the thick wall dividing the two sides.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q17(a)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   380,
+   80,
+   540,
+   272
+  ]
+ },
+ "biology-2025-ol-q17-joint": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q17-joint.png",
+  "md5": "d5cbcf08e9c6c3443e5ae95459f9b3ea",
+  "alt": "Diagram of a joint between the rounded ends of two long bones, enclosed in a capsule. Arrow P points to the dark layer capping the end of the upper bone; arrow Q points into the space between the two bone ends; arrow R points to the band around the outside of the joint.",
+  "lettersVisible": [
+   "P",
+   "Q",
+   "R"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q17(b)(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Adapted from \"The Development of Synovial Joints\", I.M. Khan et al., 2007, Current Topics in Development Biology.",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   410,
+   515,
+   540,
+   716
+  ]
+ },
+ "biology-2025-ol-q17-vessels": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q17-vessels.png",
+  "md5": "6aa69c54757e4ac5328baa1b5888a1b5",
+  "alt": "Micrograph of a transverse section through two blood vessels: X is small and round with a thick wall; Y is larger and flattened with a thin wall.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q17(a)(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: University of Birmingham, UK",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   365,
+   288,
+   540,
+   386
+  ]
+ },
+ "biology-2025-ol-q1b-question": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q1b-question.png",
+  "md5": "5a641d89184a524a1687a12c48742a5c",
+  "alt": "The printed question: (b) Using the chemical symbols for hydrogen (H), carbon (C) and oxygen (O), complete the general formula for carbohydrates. Below it, the answer frame: an empty box with a small x after it, then an opening bracket, an empty box, a small 2, another empty box, and a closing bracket with a small y after it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q1(b)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   232,
+   545,
+   316
+  ]
+ },
+ "biology-2025-ol-q1b-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q1b-scheme.png",
+  "md5": "9fd4d34eb1a268c43d6b826e5288985a",
+  "alt": "The marking scheme's filled frame: C in the first box with a subscript x, then a bracket holding H in a box, a subscript 2 and O in a box, closed with a subscript y.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q1(b)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   88,
+   212,
+   250,
+   257
+  ],
+  "solution": true
+ },
+ "biology-2025-ol-q1c-question": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q1c-question.png",
+  "md5": "e1a7fa7149fbdaa284650c02f58dfe14",
+  "alt": "The printed question: (c) Which one of the following structures represents a triglyceride? Tick the correct box. Below it, a table headed Structure and Tick, with two rows and an empty Tick column. Row one: an upright bar labelled Glycerol joined to a circle labelled P and to two bars labelled Fatty acid, with the note P = phosphate. Row two: an upright bar labelled Glycerol joined to three bars labelled Fatty acid.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q1(c)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   327,
+   440,
+   582
+  ]
+ },
+ "biology-2025-ol-q1c-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q1c-scheme.png",
+  "md5": "c6309eac1f1b700a6e647c396d2c525f",
+  "alt": "The marking scheme's structure: an upright bar labelled Glycerol joined to three bars, each labelled Fatty acid.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q1(c)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   98,
+   292,
+   218,
+   366
+  ],
+  "solution": true
+ },
+ "biology-2025-ol-q4-cell": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q4-cell.png",
+  "md5": "6281d2073fbd2d0ccb5fdc3eb7b97d2e",
+  "alt": "Diagram of a six-sided cell with a thick, dark outer layer. A line labelled A points to the thin boundary just inside that layer. B labels a large, pale, rounded sac filling the upper part of the cell. Small oval bodies, some striped inside, small dots and a rounded body near the bottom fill the rest of the cell.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q4(a)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Created on biorender.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   358,
+   55,
+   540,
+   292
+  ]
+ },
+ "biology-2025-ol-q5-tropisms": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q5-tropisms.png",
+  "md5": "0a29bfa4c5a2a20498ae1474f1f2902a",
+  "alt": "Four diagrams of seedlings, two above two, with empty answer boxes under each row. Top left: a pot tipped on its side, its shoot curving up and its roots growing down, beside a downward arrow labelled Gravity. Top right: a seedling in soil, its roots growing towards a small pot labelled Water in a porous pot. Bottom left: a seedling in a tray, its roots growing towards dots labelled Minerals in the soil. Bottom right: a seedling inside a clear cylinder, bending towards a beam labelled Light.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q5(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   112,
+   132,
+   540,
+   442
+  ]
+ },
+ "biology-2025-ol-q6-eye": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q6-eye.png",
+  "md5": "a69a8b058efd0054024e980553671014",
+  "alt": "Diagram of a section through the human eye with six labels: Retina, on the inner lining at the back; Iris, on the ring in front of the lens; Lens; Cornea, on the clear front surface; Vitreous humour, in the jelly filling the eye; and Optic nerve, leaving the back of the eye.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q6(c)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   318,
+   480,
+   540,
+   652
+  ]
+ },
+ "biology-2025-ol-q7-mitosis": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q7-mitosis.png",
+  "md5": "f85a184c8f8e5da3380e89df3b8345a8",
+  "alt": "Four micrographs of a dividing cell, labelled A to D, each with a caption. A: The cell is beginning to divide in two; it holds two dark rounded bodies, and an arrow labelled X points to the lower one. B: Chromosomes line up on the equator of the cell. C: Chromosomes become visible in the cell. D: Chromosomes are being pulled to the poles of the cell.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q7(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Adapted from sciencephoto.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   90,
+   92,
+   522,
+   262
+  ]
+ },
+ "biology-2025-ol-q9-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-q9-graph.png",
+  "md5": "a66b1c17c71c2124607543f7158ebaa6",
+  "alt": "A graph whose vertical axis is labelled by an empty box A and whose horizontal axis, numbered 2, 4, 6, 8, 10 and 12, is labelled by an empty box B. A narrow peak rises from the axis at about 6, tops out at about 7 and falls back to the axis by about 8.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q9(b)(vii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   130,
+   556,
+   480,
+   706
+  ]
+ },
  "biology-2026-hl-q12-population-graph": {
   "src": "/exam-figures/biology/markbank/biology-2026-hl-q12-population-graph.png",
   "md5": "f9c7e4a4d3901c78cd7815a6badb138d",

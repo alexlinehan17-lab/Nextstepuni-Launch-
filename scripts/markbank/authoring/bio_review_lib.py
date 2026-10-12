@@ -155,11 +155,14 @@ class Src:
                             yield r, ch['c'], sp['font']
 
     def answer_ticks(self, page, clip):
-        """The examiner's answer ticks: the Wingdings check mark (U+F0FC) drawn
-        at answer size. The same glyph printed small inside a question's own
-        "(tick)" instruction is ignored by its height."""
-        return [r for r, c, _ in self._chars(page, clip)
-                if c in ('\uf0fc', '\u2713') and r.height > 18]
+        """The examiner's answer ticks: the Wingdings check mark (U+F0FC), or
+        the Wingdings 2 one (U+F050, its "P"), drawn at answer size. The same
+        glyph printed small inside a question's own "(tick)" instruction is
+        ignored by its height."""
+        return [r for r, c, font in self._chars(page, clip)
+                if (c in ('\uf0fc', '\u2713')
+                    or (c == '\uf050' and 'Wingdings2' in font.replace(' ', '')))
+                and r.height > 18]
 
     def wingdings_digits(self, page, clip):
         """Circled numbers set in Wingdings (U+F081 = 1 ... U+F08A = 10), with

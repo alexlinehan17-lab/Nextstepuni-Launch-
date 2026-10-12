@@ -122,7 +122,15 @@ const decks = [
    * Q17(a)(iv)) are expanded, and one task (Q12(b)(ii)2) held over a scheme
    * misprint. Nothing removed: the 686 cards from 2021-2025 keep their
    * identity hash, pinned below. */
-  ['biology:ordinary', BIO_ORDINARY, 873, 'aa51f373eca47284591b389b60a534ef663c9fddee03c42c87b4378a72816f9e'],
+  /* 2026-10-12: biology ordinary 873 -> 915. The 2025 Ordinary sitting is
+   * re-reviewed paper by paper (bio_review_2025_ol.py) and corrected in
+   * place: 132 of its 133 shipped ids are kept, each mapped to the task it
+   * was carding (old fields recorded in biology-review-audit.json), and 43
+   * tasks the old cards bundled or missed ship as new ids. One shipped id,
+   * bio-2025-ol-q16-ciii-fig, duplicated two cards already carding Q16(c)(iii)
+   * and (iv); it is withdrawn with a progress alias to bio-2025-ol-q16-c-iii.
+   * The frozen 2021-2025 identity hash is pinned below with it restored. */
+  ['biology:ordinary', BIO_ORDINARY, 915, '446c526b5433c81b503cd75e639e67f9af665dcdf3cca72cbe6d02dc42bde24d'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
    *
@@ -799,7 +807,9 @@ describe('Mark Bank card preservation', () => {
     // ...and the 2026 Higher Biology review: 19,328 + 188.
     // ...and the 2026 Ordinary Biology review: 19,516 + 187.
     // ...and the 2025 Higher Biology review's 67 new ids: 19,703 + 67.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_770);
+    // ...and the 2025 Ordinary Biology review's 43 new ids, less the one
+    // aliased duplicate it withdraws: 19,770 + 43 - 1.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_812);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -813,7 +823,7 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(54);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(55);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -882,8 +892,14 @@ describe('Mark Bank card preservation', () => {
     expect(identityHash(BIO_HIGHER.filter(card =>
       card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id))))
       .toBe('45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836');
-    expect(identityHash(BIO_ORDINARY.filter(card =>
-      card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id))))
+    // A shipped id a review withdraws survives as a progress alias: restored
+    // here, the 2021-2025 set is exactly the one pinned before the reviews.
+    const withdrawnOrdinary = Object.keys(CARD_ID_ALIASES)
+      .filter(id => id.startsWith('bio-') && id.includes('-ol-'))
+      .map(id => ({ id }));
+    expect(withdrawnOrdinary.map(card => card.id)).toEqual(['bio-2025-ol-q16-ciii-fig']);
+    expect(identityHash([...BIO_ORDINARY.filter(card =>
+      card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id)), ...withdrawnOrdinary]))
       .toBe('5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e');
     const added = BIO_HIGHER.filter(card => card.year === 2026);
     expect(added).toHaveLength(188);
