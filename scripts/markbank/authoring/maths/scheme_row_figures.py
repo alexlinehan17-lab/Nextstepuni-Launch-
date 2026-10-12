@@ -92,6 +92,14 @@ AFFECTED = {
     # high partial credit whose f and g extract as unassigned code points, and
     # model solutions printed as images (the Q5(a) long division, the Q6 and Q9(a)
     # graphs).
+    # 2017 Ordinary Paper 1: stacked fractions filtered as mark cells, the Q7(a)
+    # tile pattern and the Q8(c)(ii) graph.
+    (2017, 'ol'): [
+        'maths-2017-ol-p1-q1-b', 'maths-2017-ol-p1-q1-c', 'maths-2017-ol-p1-q2-a-iii', 'maths-2017-ol-p1-q3-a', 'maths-2017-ol-p1-q3-b',
+        'maths-2017-ol-p1-q5-a', 'maths-2017-ol-p1-q5-b', 'maths-2017-ol-p1-q6-b', 'maths-2017-ol-p1-q7-a', 'maths-2017-ol-p1-q7-d-i',
+        'maths-2017-ol-p1-q7-d-ii', 'maths-2017-ol-p1-q8-c-ii', 'maths-2017-ol-p1-q8-d', 'maths-2017-ol-p1-q9-c', 'maths-2017-ol-p1-q9-e-i',
+        'maths-2017-ol-p1-q9-e-ii', 'maths-2017-ol-p1-q9-e-iii',
+    ],
     (2017, 'hl'): [
         'maths-2017-hl-p1-q1-c-ii', 'maths-2017-hl-p1-q3-b', 'maths-2017-hl-p1-q4-b', 'maths-2017-hl-p1-q5-a',
         'maths-2017-hl-p1-q6-a', 'maths-2017-hl-p1-q6-b', 'maths-2017-hl-p1-q7-f', 'maths-2017-hl-p1-q8-a',

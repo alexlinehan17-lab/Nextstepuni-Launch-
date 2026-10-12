@@ -942,5 +942,141 @@
   "description": "The marking scheme's printed row for 2017 Higher Level Paper 2 Q9(f), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 5, 10), listing Low Partial Credit, High Partial Credit.",
   "solution": true,
   "questionRef": "2017 HL Paper 2 Q9(f)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p008-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q1(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q1(b)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p008-i1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q1(c), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q1(c)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p009-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q2(a)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10D (0, 4, 6, 8, 10), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q2(a)(iii)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p010-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q3(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10D (0, 4, 6, 8, 10), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q3(a)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p010-i1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q3(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15D (0, 5, 7, 10, 15), listing Low Partial Credit, Mid Partial Credit, High Partial Credit, Note.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q3(b)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p012-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q5(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q5(a)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p012-i1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q5(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15D (0, 5, 7, 10, 15), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q5(b)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p013-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q6(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15D (0, 5, 7, 10, 15), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q6(b)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p014-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q7(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5A (0, 5).",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q7(a)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p015-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q7(d)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15C (0, 6, 10, 15), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q7(d)(i)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p015-i1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q7(d)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q7(d)(ii)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p017-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q8(c)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q8(c)(ii)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p017-i1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q8(d), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q8(d)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p018-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q9(c), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10D (0, 4, 6, 8, 10), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q9(c)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p019-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q9(e)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q9(e)(i)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p019-i1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q9(e)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10B (0, 5, 10), listing Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q9(e)(ii)"
+ },
+ {
+  "file": "maths-2017-OL-scheme-p019-i2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2017 Ordinary Level Paper 1 Q9(e)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2017 OL Paper 1 Q9(e)(iii)"
  }
 ]

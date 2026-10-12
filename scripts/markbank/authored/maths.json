@@ -99456,5 +99456,2028 @@
   "notes": "Prompt, grouped parts and context visually checked against the original 2017 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "stem": "Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level. Part (e): The tree falls across the river and hits the bank at Conor’s side at the point F. Find the maximum size of the angle FTC. Give your answer in degrees, correct to 1 decimal place.",
   "figureKey": "maths-2017-HL-scheme-p043-i1"
+ },
+ {
+  "id": "maths-2017-ol-p1-q1-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q1(a)",
+  "questionText": "A new machine is bought for €30 000. Its value depreciates by 15% each year for five years. Find the value of the machine at the end of the five years.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A = 30 000(1 − 0·15)⁵",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — A = €13 311·16",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — List Method\n30000\n25500\n21675\n18423·75\n15660·19\n13311·16",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 30 000 × 15% or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 0·85",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — at least one correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct formula written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (0·85)⁵",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3 or 4 years correct by list method",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — fully correct substitution into formula but fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-a-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — correct answer without work (13311)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2017-ol-p1-q1-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q1(b)",
+  "questionText": "A sum of money was invested for two years at 3% compound interest per year. At the end of the two years it amounted to €30 000. Find the sum invested.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — P(1 + 0·03)² = 30 000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — P = €28 277·88",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — List Method\n30000\n29126·21\n28277·88 or 28277·87",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1·03",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — at least 1 correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct formula written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-b-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 2 unsuccessful efforts at trial and improvement",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — correct answer without work, 28277 or 28278",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2017-OL-scheme-p008-i0"
+ },
+ {
+  "id": "maths-2017-ol-p1-q1-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-c",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q1(c)",
+  "questionText": "A company invested €25 000 for three years at a fixed rate of compound interest. At the end of the three years it amounted to €26 530·20. Find the rate of interest.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 26 530·2 = 25 000(1 + i)³",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 1 + i = 1·02",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — i = 2%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-c-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1530·20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-c-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — at least 1 correct substitution or correct formula written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q1-c-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1·02",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2017-OL-scheme-p008-i1"
+ },
+ {
+  "id": "maths-2017-ol-p1-q2-a-i",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-a-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q2(a)(i)",
+  "questionText": "Write down the value of a and the value of b.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q2-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (a = 3, b = −1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — a = −1, b = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — one correct value only",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The complex number z₁ = a + bi, where i² = −1, is shown on the Argand Diagram below."
+ },
+ {
+  "id": "maths-2017-ol-p1-q2-a-ii",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-a-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q2(a)(ii)",
+  "questionText": "z₂ = −1 + 2i. Plot z₂ on the Argand Diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q2-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Correct plot of −1 + 2i on diagram",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The complex number z₁ = a + bi, where i² = −1, is shown on the Argand Diagram below."
+ },
+ {
+  "id": "maths-2017-ol-p1-q2-a-iii",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-a-iii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q2(a)(iii)",
+  "questionText": "z₃ = z₁/z₂. Write z₃ in the form x + yi, where x, y ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q2-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — z₃ = −1 − i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — at least 1 correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — conjugate identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-a-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — some multiplication above and below by the same number, even if incorrect conjugate",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-a-iii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — correct multiplication using correct conjugate",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-a-iii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — answer not in correct form",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The complex number z₁ = a + bi, where i² = −1, is shown on the Argand Diagram below. Part (a)(ii): z₂ = −1 + 2i.",
+  "figureKey": "maths-2017-OL-scheme-p009-i0"
+ },
+ {
+  "id": "maths-2017-ol-p1-q2-b",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q2(b)",
+  "questionText": "Solve for z: 2z − 6(4 − 6i) = (−1 + i)(4 − 2i).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 2z − 6(4 − 6i) = (−1 + i)(4 − 2i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 2z = 22 − 30i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — z = 11 − 15i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — any correct multiplication",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q2-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — multiplication fully correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2017-ol-p1-q3-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q3-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q3(a)",
+  "questionText": "Find the two values of x for which 3x² − 6x − 8 = 0. Give each answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x = 2·91485 or − 0·9485",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 2·9 or − 0·9",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct roots formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — a, b, and c explicitly identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — attempt at factorising",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-a-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-a-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — one correct root",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2017-OL-scheme-p010-i0"
+ },
+ {
+  "id": "maths-2017-ol-p1-q3-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q3-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q3(b)",
+  "questionText": "Find the co-ordinates of the minimum point of the function f(x) = 3x² − 6x − 8, where x ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x = 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — y = −11",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — any correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — some work towards a graphical solution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-b-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 6x − 6 or 6x − 6 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-b-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — finds x value correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q3-b-solution-8",
+    "kind": "point",
+    "verbatim": "Note — Accept correct turning point found graphically for full marks",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2017-OL-scheme-p010-i1"
+ },
+ {
+  "id": "maths-2017-ol-p1-q4-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q4-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q4(a)",
+  "questionText": "Solve for x: 11x − 5(2x − 1) = 3(6 − x) + 3.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 11x − 5(2x − 1) = 3(6 − x) + 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — any correct multiplication",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — multiplication fully correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-a-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — error in expanding brackets but finishes correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2017-ol-p1-q4-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q4-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q4(b)",
+  "questionText": "Solve the simultaneous equations: y + 5 = 2x; x² + y² = 25.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — y = 2x − 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x² + (2x − 5)² = 25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 5x(x − 4) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x = 0 or x = 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — y = −5 or y = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — isolates one variable",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-b-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — substitution into quadratic",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — solve (2 values) for 1 variable",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-b-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — finds one correct couple from a quadratic",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q4-b-solution-10",
+    "kind": "point",
+    "verbatim": "Note — (2x − 5)² = 4x² + 25 and continues correctly merits MPC",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2017-ol-p1-q5-a",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q5-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q5(a)",
+  "questionText": "A field is divided into eight sections as shown below. The width of each section is 3 metres. The height, in metres, of each section is given in the diagram. Use the Trapezoidal rule to estimate the area of the field.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A = 145·8 m²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct relevant area formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q5-a-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q5-a-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — uses Simpsons Rule and finishes correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2017-OL-scheme-p012-i0"
+ },
+ {
+  "id": "maths-2017-ol-p1-q5-b",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q5-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q5(b)",
+  "questionText": "The area of the same field was re-estimated by applying the Trapezoidal rule again. This time, a different section width (4 m) and a different set of section heights were used, as shown below. The area was found to be 145·6 m². Use this information to find the value of the height marked x on the diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 4x = 19·6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 4·9",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct relevant area formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q5-b-solution-4",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q5-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — x isolated from formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q5-b-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — uses Simpsons Rule and finishes correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2017-OL-scheme-p012-i1"
+ },
+ {
+  "id": "maths-2017-ol-p1-q6-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q6-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q6(a)",
+  "questionText": "Find his total income for a week when his total sales amount to €3000.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 150 + 0·2(1000) + 0·3(2000)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — €950 per week",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1000 × 20% or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 2000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — both commissions found, 200 and 600",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A salesman earns a basic salary of €150 per week. In addition, he gets commission of 20% on sales up to the value of €1000 in the week and 30% commission on any sales above this."
+ },
+ {
+  "id": "maths-2017-ol-p1-q6-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q6-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 1 Q6(b)",
+  "questionText": "On a different week his total income is €1160. Find his total sales for this week.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1160 − (150 + 200) = €810 at 30%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = €2700 higher sales",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 2700 + 1000 = €3700 total sales",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 1160 – 950 = 210\n210 = 30%\n700 = 100%\nTotal Sales = 3000 + 700 = €3700",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1160 – 150",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1160 – 200",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-b-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 810",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q6-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 2700",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A salesman earns a basic salary of €150 per week. In addition, he gets commission of 20% on sales up to the value of €1000 in the week and 30% commission on any sales above this.",
+  "figureKey": "maths-2017-OL-scheme-p013-i0"
+ },
+ {
+  "id": "maths-2017-ol-p1-q7-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q7(a)",
+  "questionText": "Draw the next pattern of tiles onto the diagram above.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Pattern 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below.",
+  "figureKey": "maths-2017-OL-scheme-p014-i0"
+ },
+ {
+  "id": "maths-2017-ol-p1-q7-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q7(b)",
+  "questionText": "Based on the patterns shown, complete the table below. Pattern number (n): 1, 2, 3, 4, 5. Number of Tiles: 5, _, _, _, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1, 5\n2, 8\n3, 11\n4, 14\n5, 17",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-b-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 or 2 correct new entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-b-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3 correct or consistent new entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below."
+ },
+ {
+  "id": "maths-2017-ol-p1-q7-c-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-c-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q7(c)(i)",
+  "questionText": "Assuming the pattern continues, the number of tiles in the nth pattern of the sequence is given by the formula Tₙ = pn + q, where p and q ∈ ℕ. Find the value of p and the value of q.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Tn = a + (n − 1)d",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Tn = 5 + (n − 1)3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Tn = 3n + 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — p + q = 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 2p + q = 8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — p = 3 q = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Tn formula written with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 or 2 relevant equations in p & q",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — d = 3 or a = 5 written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Tn formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — value of p or value of q found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-i-solution-12",
+    "kind": "point",
+    "verbatim": "Note — Accept 3n + 2 without work for full marks",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below."
+ },
+ {
+  "id": "maths-2017-ol-p1-q7-c-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-c-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q7(c)(ii)",
+  "questionText": "How many tiles are in the 20th pattern?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q7-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — T20 = 62",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — listing of terms (>10) but T20 not identified or incorrectly identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Note — Accept correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Part (c)(i): Assuming the pattern continues, the number of tiles in the nth pattern of the sequence is given by the formula Tₙ = pn + q, where p and q ∈ ℕ. Find the value of p and the value of q."
+ },
+ {
+  "id": "maths-2017-ol-p1-q7-c-iii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-c-iii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q7(c)(iii)",
+  "questionText": "Find which pattern has exactly 290 tiles.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q7-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 3n + 2 = 290",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — n = 96",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Partial Credit — equation (with formula) written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Partial Credit — 3n + 2 on its own",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-c-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Partial Credit — finds T290 = 872, but 872 without work is zero marks",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Part (c)(i): Assuming the pattern continues, the number of tiles in the nth pattern of the sequence is given by the formula Tₙ = pn + q, where p and q ∈ ℕ. Find the value of p and the value of q."
+ },
+ {
+  "id": "maths-2017-ol-p1-q7-d-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-d-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q7(d)(i)",
+  "questionText": "Show that Sₙ = (3n² + 7n)/2 is a formula for the total number of tiles needed to build the first n patterns.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q7-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct formula with some correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — a = 5 and/or d = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-d-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below.",
+  "figureKey": "maths-2017-OL-scheme-p015-i0"
+ },
+ {
+  "id": "maths-2017-ol-p1-q7-d-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-d-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q7(d)(ii)",
+  "questionText": "Find the total number of tiles needed to build the first 30 patterns.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q7-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — formula = 1455",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — finds Sn = 30",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-d-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — a = 5 and/or d = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-d-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — evidence of addition of terms in trial and improvement method",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-d-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — quadratic equation formed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q7-d-ii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — substitutes correctly into either Sn formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Part (d)(i): Show that Sₙ = (3n² + 7n)/2 is a formula for the total number of tiles needed to build the first n patterns.",
+  "figureKey": "maths-2017-OL-scheme-p015-i1"
+ },
+ {
+  "id": "maths-2017-ol-p1-q8-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q8(a)",
+  "questionText": "Use the profit function, P(x), to find how much money the company loses if it does not sell any cable.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q8-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — €2000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-a-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — x = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro."
+ },
+ {
+  "id": "maths-2017-ol-p1-q8-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q8-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q8(b)",
+  "questionText": "In a particular week the company made a profit of €8350. Find the number of kilometres of cable it sold that week.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 275x − x² − 2000 = 8350",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — −x² + 275x − 10350 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x = 45, x = 230",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x = 230 is not possible as production limit is 200",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — x = 45 km",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — quadratic equation written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-b-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 45 without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — roots of quadratic",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-b-solution-9",
+    "kind": "point",
+    "verbatim": "Note — 45 subbed in to get 8350 is full Marks",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro."
+ },
+ {
+  "id": "maths-2017-ol-p1-q8-c-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-c-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q8(c)(i)",
+  "questionText": "The table below shows some of the data representing the profit on sales. Use the profit function, P(x), to complete the table. Number of km of cable sold (x): 50, 60, 70, 80, 90, 100. Profit (€): _, _, 12 350, _, _, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q8-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 50 60 70 80 90 100",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 9250 10 900 12 350 13 600 14 650 15 500",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 or 2 correct new entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3 or 4 correct new entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro."
+ },
+ {
+  "id": "maths-2017-ol-p1-q8-c-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-c-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q8(c)(ii)",
+  "questionText": "Use the data in the table to draw the graph of the profit function on the axes below for 50 ≤ x ≤ 100, x ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q8-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Graph above",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1, 2 or 3 correct plots",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — bar chart",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 4 or 5 correct plots",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 6 correct plots but not joined",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro. Part (c)(i): The table below shows some of the data representing the profit on sales. Use the profit function, P(x), to complete the table. Number of km of cable sold (x): 50, 60, 70, 80, 90, 100. Profit (€): _, _, 12 350, _, _, _.",
+  "figureKey": "maths-2017-OL-scheme-p017-i0"
+ },
+ {
+  "id": "maths-2017-ol-p1-q8-c-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-c-iii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q8(c)(iii)",
+  "questionText": "Use your graph to estimate the lower and upper range of sales (in km of cable) in order to make a profit of between €10 000 and €14 000 in a particular week. Show your work on the graph above.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q8-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Lower 55 Upper 83",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (Lines to be shown on diagram)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — evidence of use of graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Partial Credit — one correct range found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-c-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Partial Credit — correct answers without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro. Part (c)(ii): Use the data in the table to draw the graph of the profit function on the axes below for 50 ≤ x ≤ 100, x ∈ ℝ."
+ },
+ {
+  "id": "maths-2017-ol-p1-q8-d",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-d",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q8(d)",
+  "questionText": "Use calculus to find the number of kilometres of cable sold when the profit is increasing at a rate of €105 per km.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q8-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 2x = 170",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 85",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-d-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — effort at calculus",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q8-d-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro.",
+  "figureKey": "maths-2017-OL-scheme-p017-i1"
+ },
+ {
+  "id": "maths-2017-ol-p1-q9-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q9(a)",
+  "questionText": "Use the functions above to estimate the height of a male and the height of a female each of whose femur is 47·54 cm in length. Give both answers correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q9-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — male = 174·87 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — female = 172·98 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — substitution into either formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-a-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — one relevant height found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-a-solution-5",
+    "kind": "point",
+    "verbatim": "Note — Correct answer without work, award full marks",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm."
+ },
+ {
+  "id": "maths-2017-ol-p1-q9-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q9-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q9(b)",
+  "questionText": "Use m(x) to estimate the femur length of a male whose height is 184 cm. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 2·3x + 65·53 = 184",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 51·51 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-b-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — equation formed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm."
+ },
+ {
+  "id": "maths-2017-ol-p1-q9-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-c",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q9(c)",
+  "questionText": "Conor’s femur length is 44·2 cm. His height is 171 cm. Find the percentage error in using m(x) to estimate his height. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 2·3(44·2) + 65·53 = 167·19",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 171 − 167·19 = 3·81",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 2·23%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-c-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — formula = 167·19",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-c-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct answer no work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-c-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — error found, 3·81",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-c-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — % error formulated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-c-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 97·77% found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm.",
+  "figureKey": "maths-2017-OL-scheme-p018-i0"
+ },
+ {
+  "id": "maths-2017-ol-p1-q9-d",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q9-d",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q9(d)",
+  "questionText": "Find the length of a femur for which the estimated height of a male and the estimated height of a female are the same and find this estimated height.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 2·3x + 65·53 = 2·5x + 54·13",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 0·2x = 11·4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x = 57 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-d-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — m(57) or f(57) = 196·63 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-d-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Formulas equated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-d-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — transpose completed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-d-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — length of femur found ( x ) and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm."
+ },
+ {
+  "id": "maths-2017-ol-p1-q9-e-i",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q9-e-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q9(e)(i)",
+  "questionText": "Find the Ponderal Index for a person who is 1·60 m tall and weighs 72·5 kg. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q9-e-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — P = 17·7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-e-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-e-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The Ponderal Index is a number which relates a person’s height to their weight. The formula for the Ponderal Index, P, is P = M/h³ where M is weight in kg and h is height in metres.",
+  "figureKey": "maths-2017-OL-scheme-p019-i0"
+ },
+ {
+  "id": "maths-2017-ol-p1-q9-e-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-e-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q9(e)(ii)",
+  "questionText": "Rearrange the formula P = M/h³ to give a formula which will give the height of a person in terms of their weight and Ponderal index.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q9-e-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Pℎ³ = M",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-e-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — some relevant transpose",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The Ponderal Index is a number which relates a person’s height to their weight. The formula for the Ponderal Index, P, is P = M/h³ where M is weight in kg and h is height in metres.",
+  "figureKey": "maths-2017-OL-scheme-p019-i1"
+ },
+ {
+  "id": "maths-2017-ol-p1-q9-e-iii",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q9-e-iii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 1 Q9(e)(iii)",
+  "questionText": "Mary has a Ponderal Index of 13 and a weight of 67·5 kg. Find her height. Give your answer in metres, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p1-q9-e-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ = 1·7316",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-e-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ = 1·73",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-e-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-e-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p1-q9-e-iii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The Ponderal Index is a number which relates a person’s height to their weight. The formula for the Ponderal Index, P, is P = M/h³ where M is weight in kg and h is height in metres. Part (e)(ii): Rearrange the formula P = M/h³ to give a formula which will give the height of a person in terms of their weight and Ponderal index.",
+  "figureKey": "maths-2017-OL-scheme-p019-i2"
  }
 ]

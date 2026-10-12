@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, 2018 Higher Level Paper 2, 2018 Ordinary Level Paper 1, 2018 Ordinary Level Paper 2, 2017 Higher Level Paper 1, 2017 Higher Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 2081,
-  "reviewedTasks": 2081,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, 2018 Higher Level Paper 2, 2018 Ordinary Level Paper 1, 2018 Ordinary Level Paper 2, 2017 Higher Level Paper 1, 2017 Higher Level Paper 2, 2017 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 2116,
+  "reviewedTasks": 2116,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 377,
+  "targetedRegressionTests": 382,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -1387,5 +1387,28 @@
     "coverageOrphan": "maths-2017-hl-p2-q3-a is an orphan: the shared paper reader takes the block '1. (a) Find the co-ordinates of P.' (the '1' of '2 : 1.' wrapped onto a new line) as a Question 1 head, so the census has no Q3(a) (it already flagged 'letter-gap Q3'). Recorded with --accept-regression alongside the 2017 HL P1 Q3(b) orphan; both belong to the shared reader.",
     "coverageBaseline": "1667/3474 asks covered, 2 orphans (shared-reader faults), 0 excluded, 1807 open",
     "validation": "Deck generation (2,081 built, 0 dropped), Atlas generation and --check (512 placements), audit --check-reviewed, scheme quote check of all 37 cards, generator re-run rebuilds all 37 cards identically, ten regression files (377/377), typecheck and diff whitespace check passed."
+  },
+  "ordinary2017p1": {
+    "paper": "2017 Ordinary Level Paper 1",
+    "paperFileid": "LC003GLP100EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "newPaper": true,
+    "independentlyReviewedTasks": 35,
+    "existingRuntimeCardsReviewed": 0,
+    "addedRuntimeCards": 35,
+    "historicalRejectsRemaining": 0,
+    "targetedRegressionTests": 382,
+    "previousRuntimeIdsRetained": 2081,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 20,
+    "schemePagesInspected": 20,
+    "scaleNote": "2017 Ordinary Paper 1 ladders: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 10B 0,5,10; 10C 0,4,6,10; 10D 0,4,6,8,10; 15C 0,6,10,15; 15D 0,5,7,10,15.",
+    "summaryConflict": "The printed summary (scheme p7) labels Q2's units (a)(i), (a)(ii), (b), (c); the paper and the solution page (p9) print (a)(i), (a)(ii), (a)(iii), (b) with the same four scales. Cards follow the paper and the solution page.",
+    "schemeMarkdownAdded": "examiner-reports/maths/schemes/2017-ol.md (pure extraction by the same page-text + block-order method)",
+    "schemeRowFigures": "17 parts carry the scheme-row crop (stacked fractions filtered as mark cells; the Q7(a) tile pattern and Q8(c)(ii) graph). All 17 crops opened and checked.",
+    "coverageBaseline": "1702/3474 asks covered, 2 orphans (shared-reader faults from 2017 HL, unchanged), 0 excluded, 1772 open",
+    "validation": "Deck generation (2,116 built, 0 dropped), Atlas generation and --check (521 placements), audit --check-reviewed, scheme quote check of all 35 cards, generator re-run rebuilds all 35 cards identically, ten regression files (382/382), typecheck and diff whitespace check passed."
   }
 }

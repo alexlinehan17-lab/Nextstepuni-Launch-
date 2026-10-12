@@ -42,6 +42,7 @@ import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2
 import ordinary2021p1 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p1.json';
 import ordinary2021p2 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p2.json';
 import higher2020p1 from '../scripts/markbank/mathematics/reviews/2020-higher-p1.json';
+import ordinary2017p1 from '../scripts/markbank/mathematics/reviews/2017-ordinary-p1.json';
 import higher2017p2 from '../scripts/markbank/mathematics/reviews/2017-higher-p2.json';
 import higher2017p1 from '../scripts/markbank/mathematics/reviews/2017-higher-p1.json';
 import ordinary2018p2 from '../scripts/markbank/mathematics/reviews/2018-ordinary-p2.json';
@@ -995,6 +996,7 @@ describe.each([
   { year: 2018, level: 'ordinary' as const, number: 2, count: 39, review: ordinary2018p2 },
   { year: 2017, level: 'higher' as const, number: 1, count: 33, review: higher2017p1 },
   { year: 2017, level: 'higher' as const, number: 2, count: 37, review: higher2017p2 },
+  { year: 2017, level: 'ordinary' as const, number: 1, count: 35, review: ordinary2017p1 },
 ])('$year $level Mathematics Paper $number new-paper source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
   const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
@@ -1073,6 +1075,32 @@ describe('2017 Higher scheme rows that cannot be lifted as text', () => {
     expect(ids).toEqual(expect.arrayContaining(['maths-2017-hl-p2-q1-a', 'maths-2017-hl-p2-q2-b', 'maths-2017-hl-p2-q4-a',
       'maths-2017-hl-p2-q8-b-i', 'maths-2017-hl-p2-q9-f']));
     expect(ids).not.toContain('maths-2017-hl-p2-q5-a');
+  });
+});
+
+describe('2017 Ordinary scheme rows that cannot be lifted as text', () => {
+  // Stacked fractions filtered as mark cells, and model solutions printed as images: these
+  // parts carry the SEC's own print of their scheme row after the reveal.
+  const cards = ORDINARY.filter(card => card.year === 2017 && card.id.startsWith('maths-2017-ol-'));
+  const withRow = cards.filter(card => 'figure' in card && card.figure?.candId.startsWith('maths-2017-OL-scheme-'));
+  const crops = schemeRowFigures.filter(entry => entry.file.startsWith('maths-2017-OL-scheme-'));
+
+  it('binds each printed scheme-row crop to exactly one card, held back until the reveal', () => {
+    expect(crops.length).toBeGreaterThanOrEqual(17);
+    expect(withRow).toHaveLength(crops.length);
+    expect(new Set(withRow.map(card => 'figure' in card && card.figure?.candId)))
+      .toEqual(new Set(crops.map(entry => entry.file.replace(/\.png$/, ''))));
+    for (const card of withRow) {
+      expect('figure' in card && card.figure?.solution, card.id).toBe(true);
+      expect('figure' in card && card.figure?.src, card.id).toMatch(/^\/exam-figures\/maths\/markbank\/maths-2017-OL-scheme-p\d{3}-i\d\.png$/);
+    }
+  });
+
+  it('covers the Paper 1 parts set in stacked fractions, the tile pattern and the profit graph', () => {
+    const ids = withRow.map(card => card.id);
+    expect(ids.filter(id => id.startsWith('maths-2017-ol-p1-'))).toHaveLength(17);
+    expect(ids).toEqual(expect.arrayContaining(['maths-2017-ol-p1-q3-a', 'maths-2017-ol-p1-q7-a', 'maths-2017-ol-p1-q8-c-ii',
+      'maths-2017-ol-p1-q9-e-iii']));
   });
 });
 
