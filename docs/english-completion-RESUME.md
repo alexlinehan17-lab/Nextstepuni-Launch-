@@ -1,3 +1,30 @@
+## Current checkpoint — printed choices collapsed, 2026-10-12
+
+Supersedes the card counts below (c1d45e931).
+
+- RULE (coordinator): route cards only when the scheme prints different
+  marking content per route. All 221 former `finite` decisions are now
+  `printed-choice` (pools kept and validated, `printedChoices` = combination
+  count); each is ONE card with a task-check line stating the printed choice.
+  `english_choices.enumerate_choices` still lists every combination for tests.
+  The publisher refuses label-only route groups.
+- Repeated printed tasks: `scripts/markbank/authored/english-printed-duplicates.json`
+  (6 entries); the canonical card keeps the others as `atlasPlacements`.
+- Published 36 papers / 1,329 cards; decks higher 573, ordinary 1,364;
+  aliases 38. Coverage 1,947/2,522 (575 open, declared).
+- DO NOT re-run the old `tmp/english-audit/record-*.py` scripts: they write
+  `finite` decisions back. If one must be re-run, re-run
+  `tmp/english-audit/collapse-printed-choices.py` after it.
+- Open: 2018 OL P1 A(iii)(b) is printed identically under all three texts
+  but each copy carries its own TEXT reader, so it is not merged (needs a
+  reader decision). Indicative bullets render without markers (existing
+  SessionScreen display; candidate UI fix).
+- NEXT: bridge extension for legacy withdrawn aliases, then 2025 OL P1/P2,
+  2024-2021 (fix legacy HL Comparative Q1(a)/(b) grid in place with a
+  correction record), 2016 P2, 2017, 2019-2020. One commit per paper.
+
+---
+
 ## Current checkpoint — batch 3: 2026 complete, 2025 HL bridged, 2026-10-12
 
 Supersedes the counts below.
