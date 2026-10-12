@@ -180,6 +180,26 @@ class Document:
             last_bottom = bottom
         return merged
 
+    def table_rows(self, page: int, start: str, end: str | None = None) -> str:
+        """The printed rows from the one holding ``start`` through the one
+        holding ``end``, every cell divided by " · " and nothing retyped."""
+        lines = self.lines(page)
+        start = compact(start)
+        hits = [i for i, line in enumerate(lines) if start in line]
+        if len(hits) != 1:
+            raise AssertionError(
+                f'{os.path.basename(self.path)} p{page}: row {start!r} in {len(hits)} lines')
+        last = hits[0]
+        if end is not None:
+            end = compact(end)
+            later = [i for i in range(hits[0], len(lines)) if end in lines[i]]
+            if not later:
+                raise AssertionError(
+                    f'{os.path.basename(self.path)} p{page}: row end {end!r} '
+                    f'not found after {start!r}')
+            last = later[0]
+        return ' · '.join(lines[hits[0]:last + 1])
+
     def table_lines(self, page: int, start: str) -> list[str]:
         """Rows of the ruled table whose first row holds ``start``."""
         start = compact(start)
@@ -238,12 +258,17 @@ class Document:
 
 @dataclass(frozen=True)
 class Lift:
-    """A verbatim span of the question paper."""
+    """A verbatim span of the question paper.
+
+    ``row`` lifts the printed table rows from the one holding ``start``
+    through the one holding ``end`` as one line, each printed cell kept and
+    divided by " · " (a table pool the paper prints as cells, not bullets)."""
     page: int
     start: str
     end: str | None = None
     booklet: int | None = None
     nth: int | None = None
+    row: bool = False
 
 
 @dataclass(frozen=True)
@@ -376,6 +401,9 @@ class Sitting:
         )
 
     def lift(self, part: int, item: Lift) -> str:
+        if item.row:
+            return self.papers[item.booklet or part].table_rows(
+                item.page, item.start, item.end)
         return self.papers[item.booklet or part].lift(
             item.page, item.start, item.end, item.nth)
 
