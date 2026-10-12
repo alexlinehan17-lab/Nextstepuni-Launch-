@@ -96,6 +96,28 @@ class FrenchSecWordingTest(unittest.TestCase):
         self.assertFalse(lifts(paper, 'Write the name of the person who talks about:'))   # no printed colon
         self.assertTrue(lifts(paper, 'Write the name of the person who talks about'))
 
+    def test_ordinary_writing_points_carry_the_papers_own_markers(self):
+        # Every line of an Ordinary message, postcard, diary or letter task,
+        # each point with the list marker its paper prints, is the page's own.
+        failures = []
+        cards = [c for c in json.loads((DECKS / 'writing.json').read_text())
+                 if re.search(r'-ol-writing-b[23][ab](?:-route-|$)', c['id'])]
+        self.assertEqual(len(cards), 68)
+        for card in cards:
+            paper = DATA / f'papers/{card["year"]}-ol-000-paper.pdf'
+            groups = doc_texts(paper, card['sourceMaterial']['pages'])
+            lines = [line for line in card['questionText'].split('\n') if line.strip()]
+            points = [line for line in lines if re.match(r'^[-‐–−] ', line)]
+            self.assertIn(len(points), (3, 5), card['id'])
+            for line in lines:
+                try:
+                    exact = lift(groups, line, marks='') == line
+                except AssertionError:
+                    exact = False
+                if not exact:
+                    failures.append((card['id'], line))
+        self.assertEqual(failures, [])
+
     def test_reading_shows_only_printed_wording(self):
         self.check('reading')
 
