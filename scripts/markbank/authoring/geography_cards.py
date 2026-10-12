@@ -48,6 +48,7 @@ import geography_review_2025_hl as REVIEW_2025_HL
 import geography_review_2025_ol as REVIEW_2025_OL
 import geography_review_2024_hl as REVIEW_2024_HL
 import geography_review_2024_ol as REVIEW_2024_OL
+import geography_review_2023_hl as REVIEW_2023_HL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -80,6 +81,7 @@ REVIEWED = {
     (2025, 'ordinary'): REVIEW_2025_OL,
     (2024, 'higher'): REVIEW_2024_HL,
     (2024, 'ordinary'): REVIEW_2024_OL,
+    (2023, 'higher'): REVIEW_2023_HL,
 }
 
 YEARS = tuple(range(2021, 2027))
@@ -919,6 +921,8 @@ COMPANIONS: dict[int, dict[str, str]] = {
     2025: {'place': 'Oughterard', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
            'aerial': 'LC005CLP004EV.jpg'},
     2024: {'place': 'Bantry', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    2023: {'place': 'Cavan', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
            'aerial': 'LC005CLP004EV.jpg'},
 }
 

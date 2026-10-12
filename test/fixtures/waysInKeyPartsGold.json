@@ -2925,39 +2925,6 @@
 "(%)",
 "for March 2021"
 ]
-},
-{
-"action":"In which month",
-"focus":"the male and female unemployment rates the same"
-},
-{
-"action":"For how many months",
-"focus":"the female unemployment rate higher than the male unemployment rate"
-},
-{
-"action":"Was",
-"focus":"the unemployment rate for males",
-"conditions":[
-"increasing or decreasing",
-"from May to September"
-]
-},
-{
-"action":"Calculate",
-"focus":"the average unemployment rate",
-"conditions":[
-"(%)",
-"for females",
-"for the months shown on the chart above"
-],
-"use":[
-"the chart above"
-]
-},
-{
-"action":"Explain briefly",
-"count":"two benefits",
-"focus":"having a low unemployment rate"
 }
 ]
 },
@@ -3132,38 +3099,6 @@
 "focus":"the types of fault",
 "conditions":[
 "labelled A and B"
-]
-},
-{
-"action":"Name",
-"count":"each of",
-"focus":"the landforms created by faulting",
-"conditions":[
-"labelled C and D"
-]
-},
-{
-"action":"What type of fault",
-"focus":"where the process of shearing occurs"
-},
-{
-"action":"Explain briefly",
-"focus":"what causes faulting"
-},
-{
-"action":"Name",
-"count":"two periods",
-"focus":"fold mountain building",
-"conditions":[
-"that shaped the Irish landscape",
-"over the last 400 million years"
-]
-},
-{
-"action":"state whether",
-"focus":"A syncline is the part of a fold where the layers of rock have been pushed upwards",
-"conditions":[
-"true or false"
 ]
 }
 ]
