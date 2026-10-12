@@ -15,7 +15,7 @@ place, and a card this paper ADDED is rebuilt and compared with the committed
 card instead of being appended a second time.
 """
 from pathlib import Path
-import hashlib, json, re, sys
+import hashlib, json, os, re, sys
 sys.path.insert(0, 'scripts/markbank/mathematics')
 from audit import selection_candidates  # noqa: E402
 import fitz  # noqa: E402
@@ -102,7 +102,11 @@ class Paper:
                 else:
                     if a != built:
                         diff = sorted(k for k in set(a) | set(built) if a.get(k) != built.get(k))
-                        raise SystemExit(f'{c["id"]}: committed card differs from the rebuilt one in {diff}')
+                        # A deliberate change to a paper's declaration is applied with
+                        # MATHS_REVIEW_UPDATE=1; without it, any drift is an error.
+                        if not os.environ.get('MATHS_REVIEW_UPDATE'):
+                            raise SystemExit(f'{c["id"]}: committed card differs from the rebuilt one in {diff}')
+                        authored[authored.index(a)] = built
                     rebuilt.append(c['id'])
                 continue
             assert a is not None, f'{c["id"]} is not in the deck and is not declared as added'

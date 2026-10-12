@@ -25103,6 +25103,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p010-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p010-i0.png",
+          "srcHash": "d5900cc81a9f93675d58ebca0075f419",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q2(a)(i), Q2(a)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale10D (0, 3, 5, 8, 10), listing Low Partial Credit, Mid Partial Credit, High Partial Credit, Note.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25130,6 +25139,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p010-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p010-i1.png",
+          "srcHash": "23e97d7f431717a962ba3cb16e863cec",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q2(a)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5D (0, 2, 3, 4, 5), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -25163,6 +25181,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p011-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p011-i0.png",
+          "srcHash": "8ef7cc111544337d3e275c3b6178e287",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q2(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 3, 7, 10), listing Low Partial Credit, High Partial Credit, Note.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -25255,6 +25282,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p013-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p013-i0.png",
+          "srcHash": "ff35f49c2a7d03715f81138bc056a49c",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q3(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25320,6 +25356,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p014-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p014-i0.png",
+          "srcHash": "4af5cf0d3e0f2c11963bffe3cd5b36e6",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q4(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15D (0, 4, 7, 11, 15), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25350,6 +25395,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p015-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p015-i0.png",
+          "srcHash": "4283e1ab2c66c1254d8f14c72c0667fb",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q5(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15D (0, 4, 7, 11, 15), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -25444,6 +25498,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p016-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p016-i0.png",
+          "srcHash": "325c12974699f52d523e101a35619fee",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q6(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15C (0, 5, 10, 15), listing Low Partial Credit, High Partial Credit, Zero Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25534,6 +25597,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p018-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p018-i0.png",
+          "srcHash": "9087ce6df942ca9fead5ddcb66998c87",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q7(c)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25593,6 +25665,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p019-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p019-i0.png",
+          "srcHash": "a7e8dd3f3fbcbe584290bb54340b6347",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q7(d)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5B (0, 2, 5), listing Mid Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25621,6 +25702,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p019-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p019-i1.png",
+          "srcHash": "7bc936b475f275d61f526ebf4f95c15b",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q7(d)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 3, 7, 10), listing Low Partial Credit, High Partial Credit, Note.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -25652,6 +25742,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p019-i2",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p019-i2.png",
+          "srcHash": "432b62b5fe06f30df410a69f81f36931",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q7(d)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25681,6 +25780,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p020-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p020-i0.png",
+          "srcHash": "294188d49f45fbb702a13b852828a6e6",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q8(a)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -25770,6 +25878,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p020-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p020-i1.png",
+          "srcHash": "cb215fcde3728c281e47499aaebd01c6",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q8(b)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 3, 7, 10), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25800,6 +25917,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p021-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p021-i0.png",
+          "srcHash": "91bd1164c678d6e15c7f88b0283f8f3a",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q8(b)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -25833,6 +25959,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p021-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p021-i1.png",
+          "srcHash": "fe1e18cade6ef457c6b99d2febe658b2",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q8(b)(iv), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25864,6 +25999,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p021-i2",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p021-i2.png",
+          "srcHash": "53c193457615c3d9cc793f09f7473733",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q8(b)(v), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 3, 7, 10), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25893,6 +26037,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p021-i3",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p021-i3.png",
+          "srcHash": "aee5459bc4155d814a4001e70401b300",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q8(b)(vi), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25921,6 +26074,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p022-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p022-i0.png",
+          "srcHash": "c7254dda6e6724520bb21420c76dc87d",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q9(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5B (0, 2, 5), listing Mid Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -25952,6 +26114,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p022-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p022-i1.png",
+          "srcHash": "b86700f7f10ad4b3434ce627b3160f05",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q9(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -25999,6 +26170,7 @@ export const CARDS: SecCard[] = [
     { id: "maths-2019-ol-p1-q9-c-ii-solution-2", kind: "point", verbatim: "Model solution — = 1071142 or 1071141", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     { id: "maths-2019-ol-p1-q9-c-ii-solution-3", kind: "point", verbatim: "Low Partial Credit — 1285·3 × 0·0012", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     { id: "maths-2019-ol-p1-q9-c-ii-solution-4", kind: "point", verbatim: "High Partial Credit — 1285·37 ÷ 0·0012", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2019-ol-p1-q9-c-ii-solution-5", kind: "point", verbatim: "High Partial Credit — 1285·37 × 0·0012 or equivalent = 1·5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
     mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[5,6]},
     sourceMaterial: {
@@ -26048,6 +26220,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p023-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p023-i0.png",
+          "srcHash": "05d64d5aee191cbef3584dc7a6b8d44c",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q9(c)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10D (0, 3, 5, 8, 10), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26075,6 +26256,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p023-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p023-i1.png",
+          "srcHash": "13f663f58496cf168d79da044e1ca400",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 1 Q9(d), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -26107,6 +26297,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p028-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p028-i0.png",
+          "srcHash": "ab1c383bf3745dd19478f64bd1a3ca57",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q1(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit, Full Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26138,6 +26337,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p028-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p028-i1.png",
+          "srcHash": "2194d9458561f3398117292a927d6099",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q1(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit, Full Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26167,6 +26375,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p029-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p029-i0.png",
+          "srcHash": "a3159a8441d1550bd95ad2c4654c2a2f",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q1(c)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit, Full Credit, Zero Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -26198,6 +26415,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p029-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p029-i1.png",
+          "srcHash": "8cb07727acd5186ecce31a7d1d31c0a8",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q1(c)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit, Full Credit, Zero Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -26232,6 +26458,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p030-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p030-i0.png",
+          "srcHash": "824f699f4154033a46db76b13d60727a",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q2(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C(0, 4, 6, 10), listing Low Partial Credit, High Partial Credit, Full Credit, Misreading.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26264,6 +26499,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p030-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p030-i1.png",
+          "srcHash": "4e829686b9b326ee6791be289c9c9204",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q2(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit, Note.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -26330,6 +26574,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p031-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p031-i0.png",
+          "srcHash": "f448212ec76d430af769bbf8c5a9901c",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q2(d), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5D (0, 2, 3, 4, 5), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -26457,6 +26710,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p033-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p033-i0.png",
+          "srcHash": "16c0300e40da74580164761a344e1f31",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q3(d), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit, Full Credit, Zero Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26523,6 +26785,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p034-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p034-i0.png",
+          "srcHash": "0538808ebf05a05562bbad5120badab5",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q4(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit, Full Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26555,6 +26826,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p034-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p034-i1.png",
+          "srcHash": "7cd9e0d0a4175f76077fec8629fea106",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q4(c), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26586,6 +26866,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p035-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p035-i0.png",
+          "srcHash": "73fa2130dd677db5d6669898a18a81e2",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q4(d), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit, Full Credit, Note.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -26624,6 +26913,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p036-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p036-i0.png",
+          "srcHash": "e801babcda30cd95f99bf6798b20a084",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q5(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10D (0, 3, 5, 8, 10), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26658,6 +26956,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p036-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p036-i1.png",
+          "srcHash": "e27c1cf0d7d751eca52b6af878e7287f",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q5(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15D (0, 4, 7, 11, 15), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -26855,6 +27162,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p039-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p039-i0.png",
+          "srcHash": "e2cc86c5302089bf1136e40cce1116c4",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q7(c)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15C (0, 5, 9, 15), listing Low Partial Credit, High Partial Credit, Full Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26977,6 +27293,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p041-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p041-i0.png",
+          "srcHash": "e8450eaec87c22857e9038cd8e71747c",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q8(a)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit, Full Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27008,6 +27333,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p041-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p041-i1.png",
+          "srcHash": "2f67ef91eadbb2e0bdbc3b25ba72aa8d",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q8(a)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -27044,6 +27378,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p041-i2",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p041-i2.png",
+          "srcHash": "b42d7f25c98ad3ce93743dcac44e26dd",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q8(a)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27076,6 +27419,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p042-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p042-i0.png",
+          "srcHash": "51d42f8e4500f8309a63a8f5512bf854",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q8(b)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit, Full Credit, Special Case.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -27112,6 +27464,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p042-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p042-i1.png",
+          "srcHash": "ffcf5a640966542005653030b39d8add",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q8(b)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27146,6 +27507,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p042-i2",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p042-i2.png",
+          "srcHash": "3016d3592e6d74f395c35c8141d785e0",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q8(b)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 3, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27179,6 +27549,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p043-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p043-i0.png",
+          "srcHash": "b0c840f6ef3611d75696ecf902b2acc8",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q9(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15C (0, 5, 9, 15), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27211,6 +27590,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p043-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p043-i1.png",
+          "srcHash": "72ee71252c729cc82a499dbc02b2b469",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q9(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -27246,6 +27634,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p043-i2",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p043-i2.png",
+          "srcHash": "d47f8a2fa68867bd76bdf25ae3839385",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q9(c), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -27285,6 +27682,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p044-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p044-i0.png",
+          "srcHash": "99fc89bde63c55733e0aa64c80e1a71c",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q9(d)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5D (0, 2, 3, 4, 5), listing Low Partial Credit, Mid Partial Credit, High Partial Credit, No Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27316,6 +27722,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p044-i1",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p044-i1.png",
+          "srcHash": "fa60b5a1ceaf7402791f73e3925b4cd3",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q9(d)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 4, 6, 10), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -27349,6 +27764,15 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    figure: {
+          "candId": "maths-2019-OL-scheme-p045-i0",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p045-i0.png",
+          "srcHash": "b595719a8bfdd130cbe3af858f3fb57f",
+          "alt": "The marking scheme's printed row for 2019 Ordinary Level Paper 2 Q9(d)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5D (0, 2, 3, 4, 5), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
 ];

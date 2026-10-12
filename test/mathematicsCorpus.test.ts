@@ -42,6 +42,7 @@ import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2
 import ordinary2021p1 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p1.json';
 import ordinary2021p2 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p2.json';
 import higher2020p1 from '../scripts/markbank/mathematics/reviews/2020-higher-p1.json';
+import schemeRowFigures from '../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json';
 import ordinary2019p2 from '../scripts/markbank/mathematics/reviews/2019-ordinary-p2.json';
 import ordinary2019p1 from '../scripts/markbank/mathematics/reviews/2019-ordinary-p1.json';
 import higher2019p2 from '../scripts/markbank/mathematics/reviews/2019-higher-p2.json';
@@ -1026,5 +1027,30 @@ describe('2019–2020 Mathematics scheme glyph repair', () => {
     expect(map['\u0754']).toBe('\u{1D465}');
     expect(map['\u074c']).toBe('\u{1D45D}');
     expect(map['\u07e0']).toBe('\u{1D703}');
+  });
+});
+
+describe('2019 Ordinary scheme rows that cannot be lifted as text', () => {
+  // The 2019 OL scheme's text layer flattens sub/superscripts to ASCII and the provenance
+  // reader filters a stacked fraction's denominator, so these parts carry the SEC's own
+  // print of their scheme row (model solution and every credit band) after the reveal.
+  const cards = ORDINARY.filter(card => card.year === 2019 && card.id.startsWith('maths-2019-ol-'));
+  const withRow = cards.filter(card => 'figure' in card && card.figure?.candId.startsWith('maths-2019-OL-scheme-'));
+
+  it('binds each of the 47 printed scheme-row crops to exactly one card, held back until the reveal', () => {
+    expect(schemeRowFigures).toHaveLength(47);
+    expect(withRow).toHaveLength(47);
+    expect(new Set(withRow.map(card => 'figure' in card && card.figure?.candId)))
+      .toEqual(new Set(schemeRowFigures.map(entry => entry.file.replace(/\.png$/, ''))));
+    for (const card of withRow) {
+      expect('figure' in card && card.figure?.solution, card.id).toBe(true);
+      expect('figure' in card && card.figure?.src, card.id).toMatch(/^\/exam-figures\/maths\/markbank\/maths-2019-OL-scheme-p\d{3}-i\d\.png$/);
+    }
+  });
+
+  it('covers the parts whose bands could not be quoted, including Q2(a)(iii) and Q9(d) on Paper 1', () => {
+    const ids = withRow.map(card => card.id);
+    expect(ids).toEqual(expect.arrayContaining(['maths-2019-ol-p1-q2-a-iii', 'maths-2019-ol-p1-q3-b', 'maths-2019-ol-p1-q7-d-ii',
+      'maths-2019-ol-p1-q9-d', 'maths-2019-ol-p2-q8-b-i', 'maths-2019-ol-p2-q9-d-i']));
   });
 });

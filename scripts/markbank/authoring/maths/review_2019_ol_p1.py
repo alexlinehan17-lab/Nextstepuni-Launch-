@@ -67,12 +67,39 @@ ROWS = {
  'maths-2019-ol-p1-q9-b': [L(SOL, '31493 × 1·8 = 56687·4'), L(SOL, '= 56687'), L(LPC, 'Some relevant substitution into formula'),
      L(LPC, 'Incomplete trial and improvement to find m'), L(HPC, 'm = 4 found by trial and improvement but multiplied by 1·8 incorrectly')],
  'maths-2019-ol-p1-q9-c-i': [L(SOL, '600000 × 0·0012 = €720'), L(MPC, 'Use of 600000 and/or 0·0012'), L(MPC, 'Decimal error')],
- 'maths-2019-ol-p1-q9-c-ii': [L(SOL, '1285·37/0·0012 = 1071141·667'), L(SOL, '= 1071142 or 1071141'), L(LPC, '1285·3 × 0·0012'), L(HPC, '1285·37 ÷ 0·0012')],
+ 'maths-2019-ol-p1-q9-c-ii': [L(SOL, '1285·37/0·0012 = 1071141·667'), L(SOL, '= 1071142 or 1071141'), L(LPC, '1285·3 × 0·0012'), L(HPC, '1285·37 ÷ 0·0012'), L(HPC, '1285·37 × 0·0012 or equivalent = 1·5')],
  'maths-2019-ol-p1-q9-c-iii': [L(SOL, '31492·8 × 0·0012 = €37·79'), L(SOL, '37·79 − 80 = €42·21 Loss'), L(SOL, '3470494·144 × 0·0012 = €4164·59'),
      L(SOL, '4164·59 − 80 = €4084·59 Gain'), L(LPC, 'Either month formulated correctly'), L(LPC, 'Finds number of users for either month'),
      L(MPC, 'Income for either month evaluated correctly'), L(MPC, 'Finds number of users for both months'),
      L(HPC, 'Incomes for both months evaluated correctly'), L(HPC, 'Profit/Loss for one month evaluated correctly')],
  'maths-2019-ol-p1-q9-d': [L(SOL, 'Exchange Rate = 55/62·70'), L(SOL, 'Exchange Rate = 0·8772')],
+}
+# Parts whose printed scheme content cannot be lifted as text (ASCII-flattened
+# sub/superscripts, filtered stacked-fraction denominators) carry the SEC's own
+# print of their scheme row -- model solution and every credit band -- shown
+# only after the reveal. Crops: scheme_row_figures.py; ids are its output.
+SCHEME_ROW_FIGURES = {
+    'maths-2019-ol-p1-q2-a-i': 'maths-2019-OL-scheme-p010-i0',
+    'maths-2019-ol-p1-q2-a-iii': 'maths-2019-OL-scheme-p010-i1',
+    'maths-2019-ol-p1-q2-b': 'maths-2019-OL-scheme-p011-i0',
+    'maths-2019-ol-p1-q3-b': 'maths-2019-OL-scheme-p013-i0',
+    'maths-2019-ol-p1-q4-b': 'maths-2019-OL-scheme-p014-i0',
+    'maths-2019-ol-p1-q5-a': 'maths-2019-OL-scheme-p015-i0',
+    'maths-2019-ol-p1-q6-b': 'maths-2019-OL-scheme-p016-i0',
+    'maths-2019-ol-p1-q7-c-i': 'maths-2019-OL-scheme-p018-i0',
+    'maths-2019-ol-p1-q7-d-i': 'maths-2019-OL-scheme-p019-i0',
+    'maths-2019-ol-p1-q7-d-ii': 'maths-2019-OL-scheme-p019-i1',
+    'maths-2019-ol-p1-q7-d-iii': 'maths-2019-OL-scheme-p019-i2',
+    'maths-2019-ol-p1-q8-a-i': 'maths-2019-OL-scheme-p020-i0',
+    'maths-2019-ol-p1-q8-b-ii': 'maths-2019-OL-scheme-p020-i1',
+    'maths-2019-ol-p1-q8-b-iii': 'maths-2019-OL-scheme-p021-i0',
+    'maths-2019-ol-p1-q8-b-iv': 'maths-2019-OL-scheme-p021-i1',
+    'maths-2019-ol-p1-q8-b-v': 'maths-2019-OL-scheme-p021-i2',
+    'maths-2019-ol-p1-q8-b-vi': 'maths-2019-OL-scheme-p021-i3',
+    'maths-2019-ol-p1-q9-a': 'maths-2019-OL-scheme-p022-i0',
+    'maths-2019-ol-p1-q9-b': 'maths-2019-OL-scheme-p022-i1',
+    'maths-2019-ol-p1-q9-c-iii': 'maths-2019-OL-scheme-p023-i0',
+    'maths-2019-ol-p1-q9-d': 'maths-2019-OL-scheme-p023-i1',
 }
 assert all(len(v) <= 16 for v in ROWS.values()), [k for k, v in ROWS.items() if len(v) > 16]
 if len(sys.argv) > 1: quotes(ROWS, sys.argv[1]); raise SystemExit
@@ -140,7 +167,7 @@ p.review(marks,
     ['The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 55 marks, Q8 55 marks, Q9 40 marks). Every question is retained.',
      '36 independently marked units, matching the printed summary on scheme page 6. Shared scales are one task each: Q2(a)(i)+(ii) 10D and Q7(b)(i)+(ii) 20D.',
      'Paper 1 bands from the 2019 Ordinary Level scale table on scheme page 5: 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10C 0,3,7,10; 10D 0,3,5,8,10; 15C 0,5,10,15; 15D 0,4,7,11,15; 20D 0,5,10,15,20.',
-     'This paper had no authored cards before this review; all 36 units are new. Marking points are lifted line by line from the scheme and labelled with the part of the scheme they come from. This scheme’s text layer encodes subscripts and superscripts as unrelated ASCII characters (z₂ extracts as “z8”, f′ as “fL”, 2^(2x−1) as “28TE;”), which no glyph map can repair because the characters are ordinary ASCII. Marking points containing them are not quoted; the scheme reader carries them. For the same reason Q2(a)(iii), Q3(b), Q7(d)(ii) and Q9(d) quote fewer credit bands than the scheme prints. Q8(b)(i) prints its first bullet (“One additional correct entry”) under no band heading, so it is quoted as a note.',
+     'This paper had no authored cards before this review; all 36 units are new. Marking points are lifted line by line from the scheme and labelled with the part of the scheme they come from. This scheme’s text layer encodes subscripts and superscripts as unrelated ASCII characters (z₂ extracts as “z8”, f′ as “fL”, 2^(2x−1) as “28TE;”), which no glyph map can repair because the characters are ordinary ASCII. Marking points containing them, and stacked fractions whose denominator the provenance reader filters as a mark cell, are not retyped as text. Instead the 21 parts affected (Q2(a)(i)–(ii), Q2(a)(iii), Q2(b), Q3(b), Q4(b), Q5(a), Q6(b), Q7(c)(i), Q7(d)(i)–(iii), Q8(a)(i), Q8(b)(ii)–(vi), Q9(a), Q9(b), Q9(c)(iii), Q9(d)) carry a crop of their printed scheme row — model solution and every credit band the scheme prints — shown only after the reveal. Q8(b)(i) prints its first bullet (“One additional correct entry”) under no band heading, so it is quoted as a note.',
      'Graph and table tasks (Q3(a)(i), Q7(b), Q7(c)) carry their printed credit criteria; the drawn graphs are in the scheme reader.',
      'The question booklet is LC003GLP100EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 2. All page references are PDF positions, which match the printed scheme page numbers.'],
     [{'pages': [3, 4, 16], 'wording': 'Answer all nine / all six / all three questions', 'classification': 'all-questions-required',
@@ -149,4 +176,5 @@ p.review(marks,
       'reason': 'Alternative methods for the same marked task, with no printed pool of prompts.'}],
     lambda t: ('all-questions-required', 'All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained.') if 'Answer all' in t
         else ('method-choice', 'Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts.') if 'or otherwise' in t else None)
-p.apply(ROWS, '2019 Ordinary Level Paper 1', expect_added=[c['id'] for c in p.cards])
+p.apply(ROWS, '2019 Ordinary Level Paper 1', expect_added=[c['id'] for c in p.cards],
+        card_overrides={k: {'figureKey': v} for k, v in SCHEME_ROW_FIGURES.items()})

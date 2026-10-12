@@ -92,6 +92,38 @@ ROWS = {
  'maths-2019-ol-p2-q9-d-iii': [L(SOL, '= 9250·245'), L(SOL, '= 370'), WOM, L(LPC, 'Formula with some substitution'),
      L(MPC, 'Formula substituted correctly'), L(HPC, 'Area of sector evaluated correctly'), L(HPC, 'One error in substitution and finishes correctly or consistently')],
 }
+# Parts whose printed scheme content cannot be lifted as text (ASCII-flattened
+# sub/superscripts, filtered stacked-fraction denominators) carry the SEC's own
+# print of their scheme row -- model solution and every credit band -- shown
+# only after the reveal. Crops: scheme_row_figures.py; ids are its output.
+SCHEME_ROW_FIGURES = {
+    'maths-2019-ol-p2-q1-a': 'maths-2019-OL-scheme-p028-i0',
+    'maths-2019-ol-p2-q1-b': 'maths-2019-OL-scheme-p028-i1',
+    'maths-2019-ol-p2-q1-c-i': 'maths-2019-OL-scheme-p029-i0',
+    'maths-2019-ol-p2-q1-c-ii': 'maths-2019-OL-scheme-p029-i1',
+    'maths-2019-ol-p2-q2-a': 'maths-2019-OL-scheme-p030-i0',
+    'maths-2019-ol-p2-q2-b': 'maths-2019-OL-scheme-p030-i1',
+    'maths-2019-ol-p2-q2-d': 'maths-2019-OL-scheme-p031-i0',
+    'maths-2019-ol-p2-q3-d': 'maths-2019-OL-scheme-p033-i0',
+    'maths-2019-ol-p2-q4-b': 'maths-2019-OL-scheme-p034-i0',
+    'maths-2019-ol-p2-q4-c': 'maths-2019-OL-scheme-p034-i1',
+    'maths-2019-ol-p2-q4-d': 'maths-2019-OL-scheme-p035-i0',
+    'maths-2019-ol-p2-q5-a': 'maths-2019-OL-scheme-p036-i0',
+    'maths-2019-ol-p2-q5-b': 'maths-2019-OL-scheme-p036-i1',
+    'maths-2019-ol-p2-q7-c-i': 'maths-2019-OL-scheme-p039-i0',
+    'maths-2019-ol-p2-q8-a-i': 'maths-2019-OL-scheme-p041-i0',
+    'maths-2019-ol-p2-q8-a-ii': 'maths-2019-OL-scheme-p041-i1',
+    'maths-2019-ol-p2-q8-a-iii': 'maths-2019-OL-scheme-p041-i2',
+    'maths-2019-ol-p2-q8-b-i': 'maths-2019-OL-scheme-p042-i0',
+    'maths-2019-ol-p2-q8-b-ii': 'maths-2019-OL-scheme-p042-i1',
+    'maths-2019-ol-p2-q8-b-iii': 'maths-2019-OL-scheme-p042-i2',
+    'maths-2019-ol-p2-q9-a': 'maths-2019-OL-scheme-p043-i0',
+    'maths-2019-ol-p2-q9-b': 'maths-2019-OL-scheme-p043-i1',
+    'maths-2019-ol-p2-q9-c': 'maths-2019-OL-scheme-p043-i2',
+    'maths-2019-ol-p2-q9-d-i': 'maths-2019-OL-scheme-p044-i0',
+    'maths-2019-ol-p2-q9-d-ii': 'maths-2019-OL-scheme-p044-i1',
+    'maths-2019-ol-p2-q9-d-iii': 'maths-2019-OL-scheme-p045-i0',
+}
 assert all(len(v) <= 16 for v in ROWS.values()), [k for k, v in ROWS.items() if len(v) > 16]
 if len(sys.argv) > 1: quotes(ROWS, sys.argv[1]); raise SystemExit
 
@@ -165,10 +197,11 @@ p.review(marks,
     ['The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 50 marks, Q8 45 marks, Q9 55 marks). Every question is retained.',
      '39 independently marked units, matching the printed summary on scheme page 27.',
      'Paper 2 bands from the scale table on scheme page 26, which differ from Paper 1’s: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,5,10; 10C 0,4,6,10; 10D 0,3,5,8,10; 15C 0,5,9,15; 15D 0,4,7,11,15. Each part prints the same ladder beside its scale.',
-     'This paper had no authored cards before this review; all 39 units are new. Marking points are lifted line by line from the scheme and labelled with the part of the scheme they come from. As on Paper 1, the scheme’s text layer encodes subscripts and superscripts as ASCII (squares extract as “8”), and the provenance reader cannot rejoin a stacked fraction’s denominator, so marking points that depend on either are left to the scheme reader rather than retyped. Q6(a)(i) is a construction whose model solution is a drawing; its card carries the printed credit criteria.',
+     'This paper had no authored cards before this review; all 39 units are new. Marking points are lifted line by line from the scheme and labelled with the part of the scheme they come from. As on Paper 1, the scheme’s text layer encodes subscripts and superscripts as ASCII (squares extract as “8”), and the provenance reader cannot rejoin a stacked fraction’s denominator, so marking points that depend on either are not retyped as text. Instead the 26 parts affected (Q1(a), Q1(b), Q1(c)(i), Q1(c)(ii), Q2(a), Q2(b), Q2(d), Q3(d), Q4(b), Q4(c), Q4(d), Q5(a), Q5(b), Q7(c)(i), Q8(a)(i)–(iii), Q8(b)(i)–(iii), Q9(a), Q9(b), Q9(c), Q9(d)(i)–(iii)) carry a crop of their printed scheme row — model solution and every credit band the scheme prints — shown only after the reveal. Q6(a)(i) is a construction whose model solution is a drawing; its card carries the printed credit criteria.',
      'Data tables in prompts carry the printed values, with blanks for the cells the candidate fills.',
      'The question booklet is LC003GLP200EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 1. All page references are PDF positions, which match the printed scheme page numbers.'],
     [{'pages': [3, 4, 16], 'wording': 'Answer all nine / all six / all three questions', 'classification': 'all-questions-required',
       'reason': 'Every question on the paper is required; every published scale unit is retained.'}],
     lambda t: ('all-questions-required', 'All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained.') if 'Answer all' in t else None)
-p.apply(ROWS, '2019 Ordinary Level Paper 2', expect_added=[c['id'] for c in p.cards])
+p.apply(ROWS, '2019 Ordinary Level Paper 2', expect_added=[c['id'] for c in p.cards],
+        card_overrides={k: {'figureKey': v} for k, v in SCHEME_ROW_FIGURES.items()})

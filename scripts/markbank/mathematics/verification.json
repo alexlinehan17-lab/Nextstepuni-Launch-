@@ -1243,5 +1243,16 @@
     "schemeReaderRenders": true,
     "escapeAndFocusReturn": true,
     "pageErrors": []
+  },
+  "schemeRowFigures2019ol": {
+    "reason": "The 2019 Ordinary scheme's text layer flattens sub/superscripts to ASCII and the provenance reader filters stacked-fraction denominators, so some printed credit bands could not be quoted as text.",
+    "cards": 47,
+    "paper1": 21,
+    "paper2": 26,
+    "figure": "A crop of the part's whole printed scheme row (part label, model solution, marking notes with every credit band), CardFigure.solution = true, shown only after the reveal.",
+    "tool": "scripts/markbank/authoring/maths/scheme_row_figures.py (rows found from the scheme table's own rules and label column; every crop opened and checked)",
+    "alsoLifted": "2019 OL P1 Q9(c)(ii) high partial credit bullet '1285·37 × 0·0012 or equivalent = 1·5'",
+    "browser": "Chrome desktop and mobile: crop absent before reveal, loaded after reveal, no page errors (Q2(a)(iii) P1, Q8(b)(i) P2)",
+    "validation": "Deck 1,870 built, 0 dropped; ten regression files 350/350; typecheck; markBankStore + markBankAuthoringToolkit 46/46; Atlas --check; audit --check-reviewed; diff check."
   }
 }

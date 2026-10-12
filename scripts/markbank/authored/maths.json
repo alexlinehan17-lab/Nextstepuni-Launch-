@@ -80284,7 +80284,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below."
+  "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below.",
+  "figureKey": "maths-2019-OL-scheme-p010-i0"
  },
  {
   "id": "maths-2019-ol-p1-q2-a-iii",
@@ -80317,7 +80318,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below. z₂ = 2z₁, and z̅₁ is the complex conjugate of z₁."
+  "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below. z₂ = 2z₁, and z̅₁ is the complex conjugate of z₁.",
+  "figureKey": "maths-2019-OL-scheme-p010-i1"
  },
  {
   "id": "maths-2019-ol-p1-q2-b",
@@ -80385,7 +80387,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below."
+  "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below.",
+  "figureKey": "maths-2019-OL-scheme-p011-i0"
  },
  {
   "id": "maths-2019-ol-p1-q3-a-i",
@@ -80533,7 +80536,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The function f is defined as f(x) = −x³ + 4x² + x − 2, where x ∈ ℝ."
+  "stem": "The function f is defined as f(x) = −x³ + 4x² + x − 2, where x ∈ ℝ.",
+  "figureKey": "maths-2019-OL-scheme-p013-i0"
  },
  {
   "id": "maths-2019-ol-p1-q4-a",
@@ -80674,7 +80678,8 @@
     "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2019-OL-scheme-p014-i0"
  },
  {
   "id": "maths-2019-ol-p1-q5-a",
@@ -80734,7 +80739,8 @@
     "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2019-OL-scheme-p015-i0"
  },
  {
   "id": "maths-2019-ol-p1-q5-b",
@@ -80914,7 +80920,8 @@
     "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2019-OL-scheme-p016-i0"
  },
  {
   "id": "maths-2019-ol-p1-q7-a",
@@ -81048,7 +81055,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (b) completes a table of heights and draws the graph of the height of the ball while it was in the air."
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (b) completes a table of heights and draws the graph of the height of the ball while it was in the air.",
+  "figureKey": "maths-2019-OL-scheme-p018-i0"
  },
  {
   "id": "maths-2019-ol-p1-q7-c-ii",
@@ -81135,7 +81143,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again."
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again.",
+  "figureKey": "maths-2019-OL-scheme-p019-i0"
  },
  {
   "id": "maths-2019-ol-p1-q7-d-ii",
@@ -81175,7 +81184,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (d)(i): Find f′(t), the derivative of f(t) = −4t² + 16t + 1."
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (d)(i): Find f′(t), the derivative of f(t) = −4t² + 16t + 1.",
+  "figureKey": "maths-2019-OL-scheme-p019-i1"
  },
  {
   "id": "maths-2019-ol-p1-q7-d-iii",
@@ -81222,7 +81232,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (d)(i): Find f′(t), the derivative of f(t) = −4t² + 16t + 1."
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (d)(i): Find f′(t), the derivative of f(t) = −4t² + 16t + 1.",
+  "figureKey": "maths-2019-OL-scheme-p019-i2"
  },
  {
   "id": "maths-2019-ol-p1-q8-a-i",
@@ -81269,7 +81280,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The power (P) of an engine is measured in horsepower using the formula: P = (R × T)/5252, where R is the engine speed measured in revolutions per minute (RPM) and T is the torque measured in appropriate units."
+  "stem": "The power (P) of an engine is measured in horsepower using the formula: P = (R × T)/5252, where R is the engine speed measured in revolutions per minute (RPM) and T is the torque measured in appropriate units.",
+  "figureKey": "maths-2019-OL-scheme-p020-i0"
  },
  {
   "id": "maths-2019-ol-p1-q8-a-ii",
@@ -81396,7 +81408,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded."
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded.",
+  "figureKey": "maths-2019-OL-scheme-p020-i1"
  },
  {
   "id": "maths-2019-ol-p1-q8-b-iii",
@@ -81450,7 +81463,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250."
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250.",
+  "figureKey": "maths-2019-OL-scheme-p021-i0"
  },
  {
   "id": "maths-2019-ol-p1-q8-b-iv",
@@ -81511,7 +81525,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250."
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250.",
+  "figureKey": "maths-2019-OL-scheme-p021-i1"
  },
  {
   "id": "maths-2019-ol-p1-q8-b-v",
@@ -81565,7 +81580,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250."
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250.",
+  "figureKey": "maths-2019-OL-scheme-p021-i2"
  },
  {
   "id": "maths-2019-ol-p1-q8-b-vi",
@@ -81605,7 +81621,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250. Part (b)(v): Find Sₙ, the general term for the total profit of the company after n months."
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250. Part (b)(v): Find Sₙ, the general term for the total profit of the company after n months.",
+  "figureKey": "maths-2019-OL-scheme-p021-i3"
  },
  {
   "id": "maths-2019-ol-p1-q9-a",
@@ -81645,7 +81662,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched."
+  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched.",
+  "figureKey": "maths-2019-OL-scheme-p022-i0"
  },
  {
   "id": "maths-2019-ol-p1-q9-b",
@@ -81699,7 +81717,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched."
+  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched.",
+  "figureKey": "maths-2019-OL-scheme-p022-i1"
  },
  {
   "id": "maths-2019-ol-p1-q9-c-i",
@@ -81781,6 +81800,13 @@
     "id": "maths-2019-ol-p1-q9-c-ii-solution-4",
     "kind": "point",
     "verbatim": "High Partial Credit — 1285·37 ÷ 0·0012",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1285·37 × 0·0012 or equivalent = 1·5",
     "marks": null,
     "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
@@ -81875,7 +81901,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0·0012 each month, for every user who is registered."
+  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0·0012 each month, for every user who is registered.",
+  "figureKey": "maths-2019-OL-scheme-p023-i0"
  },
  {
   "id": "maths-2019-ol-p1-q9-d",
@@ -81908,7 +81935,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "Avril has a website."
+  "stem": "Avril has a website.",
+  "figureKey": "maths-2019-OL-scheme-p023-i1"
  },
  {
   "id": "maths-2019-ol-p2-q1-a",
@@ -81962,7 +81990,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A business has 28 employees. Their ages, in years, are given below: 32, 41, 57, 64, 19, 21, 35, 18, 43, 54, 63, 65, 33, 22, 39, 58, 18, 42, 20, 34, 21, 49, 33, 55, 34, 57, 43, 63."
+  "stem": "A business has 28 employees. Their ages, in years, are given below: 32, 41, 57, 64, 19, 21, 35, 18, 43, 54, 63, 65, 33, 22, 39, 58, 18, 42, 20, 34, 21, 49, 33, 55, 34, 57, 43, 63.",
+  "figureKey": "maths-2019-OL-scheme-p028-i0"
  },
  {
   "id": "maths-2019-ol-p2-q1-b",
@@ -82016,7 +82045,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A business has 28 employees. Their ages, in years, are given below: 32, 41, 57, 64, 19, 21, 35, 18, 43, 54, 63, 65, 33, 22, 39, 58, 18, 42, 20, 34, 21, 49, 33, 55, 34, 57, 43, 63."
+  "stem": "A business has 28 employees. Their ages, in years, are given below: 32, 41, 57, 64, 19, 21, 35, 18, 43, 54, 63, 65, 33, 22, 39, 58, 18, 42, 20, 34, 21, 49, 33, 55, 34, 57, 43, 63.",
+  "figureKey": "maths-2019-OL-scheme-p028-i1"
  },
  {
   "id": "maths-2019-ol-p2-q1-c-i",
@@ -82063,7 +82093,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A business has 28 employees. Their ages, in years, are given below: 32, 41, 57, 64, 19, 21, 35, 18, 43, 54, 63, 65, 33, 22, 39, 58, 18, 42, 20, 34, 21, 49, 33, 55, 34, 57, 43, 63. One employee is chosen at random on a day when all employees are present at work."
+  "stem": "A business has 28 employees. Their ages, in years, are given below: 32, 41, 57, 64, 19, 21, 35, 18, 43, 54, 63, 65, 33, 22, 39, 58, 18, 42, 20, 34, 21, 49, 33, 55, 34, 57, 43, 63. One employee is chosen at random on a day when all employees are present at work.",
+  "figureKey": "maths-2019-OL-scheme-p029-i0"
  },
  {
   "id": "maths-2019-ol-p2-q1-c-ii",
@@ -82117,7 +82148,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A business has 28 employees. Their ages, in years, are given below: 32, 41, 57, 64, 19, 21, 35, 18, 43, 54, 63, 65, 33, 22, 39, 58, 18, 42, 20, 34, 21, 49, 33, 55, 34, 57, 43, 63. One employee is chosen at random on a day when all employees are present at work."
+  "stem": "A business has 28 employees. Their ages, in years, are given below: 32, 41, 57, 64, 19, 21, 35, 18, 43, 54, 63, 65, 33, 22, 39, 58, 18, 42, 20, 34, 21, 49, 33, 55, 34, 57, 43, 63. One employee is chosen at random on a day when all employees are present at work.",
+  "figureKey": "maths-2019-OL-scheme-p029-i1"
  },
  {
   "id": "maths-2019-ol-p2-q2-a",
@@ -82185,7 +82217,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The diagram shows the line PQ and the line QR. The co-ordinates of the points are P(4, 2), Q(8, 5) and R(2, 11)."
+  "stem": "The diagram shows the line PQ and the line QR. The co-ordinates of the points are P(4, 2), Q(8, 5) and R(2, 11).",
+  "figureKey": "maths-2019-OL-scheme-p030-i0"
  },
  {
   "id": "maths-2019-ol-p2-q2-b",
@@ -82253,7 +82286,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The diagram shows the line PQ and the line QR. The co-ordinates of the points are P(4, 2), Q(8, 5) and R(2, 11)."
+  "stem": "The diagram shows the line PQ and the line QR. The co-ordinates of the points are P(4, 2), Q(8, 5) and R(2, 11).",
+  "figureKey": "maths-2019-OL-scheme-p030-i1"
  },
  {
   "id": "maths-2019-ol-p2-q2-c",
@@ -82389,7 +82423,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The diagram shows the line PQ and the line QR. The co-ordinates of the points are P(4, 2), Q(8, 5) and R(2, 11)."
+  "stem": "The diagram shows the line PQ and the line QR. The co-ordinates of the points are P(4, 2), Q(8, 5) and R(2, 11).",
+  "figureKey": "maths-2019-OL-scheme-p031-i0"
  },
  {
   "id": "maths-2019-ol-p2-q3-a",
@@ -82619,7 +82654,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "In a population, the probability that a person has blue eyes is 0·7."
+  "stem": "In a population, the probability that a person has blue eyes is 0·7.",
+  "figureKey": "maths-2019-OL-scheme-p033-i0"
  },
  {
   "id": "maths-2019-ol-p2-q4-a",
@@ -82755,7 +82791,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The circle c is enclosed in the square PQRS and touches all four sides, as shown in the diagram. The co-ordinates of three of the vertices are P(2, 3), R(4, 17), and S(−4, 11)."
+  "stem": "The circle c is enclosed in the square PQRS and touches all four sides, as shown in the diagram. The co-ordinates of three of the vertices are P(2, 3), R(4, 17), and S(−4, 11).",
+  "figureKey": "maths-2019-OL-scheme-p034-i0"
  },
  {
   "id": "maths-2019-ol-p2-q4-c",
@@ -82816,7 +82853,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The circle c is enclosed in the square PQRS and touches all four sides, as shown in the diagram. The co-ordinates of three of the vertices are P(2, 3), R(4, 17), and S(−4, 11)."
+  "stem": "The circle c is enclosed in the square PQRS and touches all four sides, as shown in the diagram. The co-ordinates of three of the vertices are P(2, 3), R(4, 17), and S(−4, 11).",
+  "figureKey": "maths-2019-OL-scheme-p034-i1"
  },
  {
   "id": "maths-2019-ol-p2-q4-d",
@@ -82877,7 +82915,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "The circle c is enclosed in the square PQRS and touches all four sides, as shown in the diagram. The co-ordinates of three of the vertices are P(2, 3), R(4, 17), and S(−4, 11)."
+  "stem": "The circle c is enclosed in the square PQRS and touches all four sides, as shown in the diagram. The co-ordinates of three of the vertices are P(2, 3), R(4, 17), and S(−4, 11).",
+  "figureKey": "maths-2019-OL-scheme-p035-i0"
  },
  {
   "id": "maths-2019-ol-p2-q5-a",
@@ -82979,7 +83018,8 @@
     "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2019-OL-scheme-p036-i0"
  },
  {
   "id": "maths-2019-ol-p2-q5-b",
@@ -83067,7 +83107,8 @@
     "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2019-OL-scheme-p036-i1"
  },
  {
   "id": "maths-2019-ol-p2-q6-a-i",
@@ -83473,7 +83514,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "Table A shows the price index for thirteen countries in four food categories for the year 2015. (Source: Central Statistics Office.) It shows, for example, that if you paid €132 for meat in Austria, then the same quantity of similar meat would cost you €117 in Germany, €106 in Ireland, €63 in Lithuania and so on. The description is the same for the other food categories. Table A (€) — Country: Meat, Fish, Milk Cheese and Eggs, Fruits Vegetables and Potatoes. Austria: 132, 125, 105, 125. Germany: 117, 109, 91, 111. Ireland: 106, 108, 128, 136. Lithuania: 63, 73, 85, 77. Macedonia: 56, 59, 71, 48. Netherlands: 111, 99, 93, 104. Norway: 157, 117, 175, 150. Poland: 54, 64, 65, 62. Spain: 85, 89, 96, 95. Sweden: 131, 115, 116, 137. Switzerland: 254, 177, 148, 172. Turkey: 78, 105, 122, 86. United Kingdom: 112, 105, 118, 116."
+  "stem": "Table A shows the price index for thirteen countries in four food categories for the year 2015. (Source: Central Statistics Office.) It shows, for example, that if you paid €132 for meat in Austria, then the same quantity of similar meat would cost you €117 in Germany, €106 in Ireland, €63 in Lithuania and so on. The description is the same for the other food categories. Table A (€) — Country: Meat, Fish, Milk Cheese and Eggs, Fruits Vegetables and Potatoes. Austria: 132, 125, 105, 125. Germany: 117, 109, 91, 111. Ireland: 106, 108, 128, 136. Lithuania: 63, 73, 85, 77. Macedonia: 56, 59, 71, 48. Netherlands: 111, 99, 93, 104. Norway: 157, 117, 175, 150. Poland: 54, 64, 65, 62. Spain: 85, 89, 96, 95. Sweden: 131, 115, 116, 137. Switzerland: 254, 177, 148, 172. Turkey: 78, 105, 122, 86. United Kingdom: 112, 105, 118, 116.",
+  "figureKey": "maths-2019-OL-scheme-p039-i0"
  },
  {
   "id": "maths-2019-ol-p2-q7-c-ii",
@@ -83675,7 +83717,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A solid sphere of radius 3 cm is placed inside a cylinder and then water is poured into the cylinder until it is full, as shown in the diagram."
+  "stem": "A solid sphere of radius 3 cm is placed inside a cylinder and then water is poured into the cylinder until it is full, as shown in the diagram.",
+  "figureKey": "maths-2019-OL-scheme-p041-i0"
  },
  {
   "id": "maths-2019-ol-p2-q8-a-ii",
@@ -83736,7 +83779,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A solid sphere of radius 3 cm is placed inside a cylinder and then water is poured into the cylinder until it is full, as shown in the diagram."
+  "stem": "A solid sphere of radius 3 cm is placed inside a cylinder and then water is poured into the cylinder until it is full, as shown in the diagram.",
+  "figureKey": "maths-2019-OL-scheme-p041-i1"
  },
  {
   "id": "maths-2019-ol-p2-q8-a-iii",
@@ -83818,7 +83862,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "A solid sphere of radius 3 cm is placed inside a cylinder and then water is poured into the cylinder until it is full, as shown in the diagram. The internal radius of the cylinder is 5 cm."
+  "stem": "A solid sphere of radius 3 cm is placed inside a cylinder and then water is poured into the cylinder until it is full, as shown in the diagram. The internal radius of the cylinder is 5 cm.",
+  "figureKey": "maths-2019-OL-scheme-p041-i2"
  },
  {
   "id": "maths-2019-ol-p2-q8-b-i",
@@ -83886,7 +83931,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "In September 2018 a European Commission report stated that it is considering a proposal to abolish daylight saving time. This would mean that the clocks would not go forward one hour in March and then not go back one hour the following October. A Transition Year class carried out a survey to find out local people’s views on the proposal."
+  "stem": "In September 2018 a European Commission report stated that it is considering a proposal to abolish daylight saving time. This would mean that the clocks would not go forward one hour in March and then not go back one hour the following October. A Transition Year class carried out a survey to find out local people’s views on the proposal.",
+  "figureKey": "maths-2019-OL-scheme-p042-i0"
  },
  {
   "id": "maths-2019-ol-p2-q8-b-ii",
@@ -83968,7 +84014,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "In September 2018 a European Commission report stated that it is considering a proposal to abolish daylight saving time. This would mean that the clocks would not go forward one hour in March and then not go back one hour the following October. A Transition Year class carried out a survey to find out local people’s views on the proposal. The class surveyed a random sample of 800 people in the local area."
+  "stem": "In September 2018 a European Commission report stated that it is considering a proposal to abolish daylight saving time. This would mean that the clocks would not go forward one hour in March and then not go back one hour the following October. A Transition Year class carried out a survey to find out local people’s views on the proposal. The class surveyed a random sample of 800 people in the local area.",
+  "figureKey": "maths-2019-OL-scheme-p042-i1"
  },
  {
   "id": "maths-2019-ol-p2-q8-b-iii",
@@ -84043,7 +84090,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "In September 2018 a European Commission report stated that it is considering a proposal to abolish daylight saving time. This would mean that the clocks would not go forward one hour in March and then not go back one hour the following October. A Transition Year class carried out a survey to find out local people’s views on the proposal. The class surveyed a random sample of 800 people in the local area. In the survey 350 people said they supported the EU proposal to abolish daylight saving time."
+  "stem": "In September 2018 a European Commission report stated that it is considering a proposal to abolish daylight saving time. This would mean that the clocks would not go forward one hour in March and then not go back one hour the following October. A Transition Year class carried out a survey to find out local people’s views on the proposal. The class surveyed a random sample of 800 people in the local area. In the survey 350 people said they supported the EU proposal to abolish daylight saving time.",
+  "figureKey": "maths-2019-OL-scheme-p042-i2"
  },
  {
   "id": "maths-2019-ol-p2-q9-a",
@@ -84111,7 +84159,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°."
+  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°.",
+  "figureKey": "maths-2019-OL-scheme-p043-i0"
  },
  {
   "id": "maths-2019-ol-p2-q9-b",
@@ -84179,7 +84228,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°."
+  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°.",
+  "figureKey": "maths-2019-OL-scheme-p043-i1"
  },
  {
   "id": "maths-2019-ol-p2-q9-c",
@@ -84261,7 +84311,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°."
+  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°.",
+  "figureKey": "maths-2019-OL-scheme-p043-i2"
  },
  {
   "id": "maths-2019-ol-p2-q9-d-i",
@@ -84364,7 +84415,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°."
+  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°.",
+  "figureKey": "maths-2019-OL-scheme-p044-i0"
  },
  {
   "id": "maths-2019-ol-p2-q9-d-ii",
@@ -84425,7 +84477,8 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. In the triangle RST, θ = |∠TRS| = 106°."
+  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. In the triangle RST, θ = |∠TRS| = 106°.",
+  "figureKey": "maths-2019-OL-scheme-p044-i1"
  },
  {
   "id": "maths-2019-ol-p2-q9-d-iii",
@@ -84493,6 +84546,7 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
-  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. In the triangle RST, θ = |∠TRS| = 106°."
+  "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. In the triangle RST, θ = |∠TRS| = 106°.",
+  "figureKey": "maths-2019-OL-scheme-p045-i0"
  }
 ]
