@@ -643,6 +643,488 @@
    ]
   ]
  },
+ "biology-2023-ol-q10-table": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q10-table.png",
+  "md5": "ff99b631edf093761697e72016df5182",
+  "alt": "Data table of Number of colonies: May 5, September 14.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q10(b)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   143,
+   214,
+   470,
+   256
+  ]
+ },
+ "biology-2023-ol-q11-pyramids": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q11-pyramids.png",
+  "md5": "a01a556ab8d3d1e954e57c1599b44c81",
+  "alt": "Two pyramids of numbers. A: Grass on the bottom, a narrower Mouse box above, Hawk on top. B: Bladderwrack on the bottom, a narrower Sea slug box above, Seagull on top.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q11(b)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   120,
+   200,
+   522,
+   276
+  ]
+ },
+ "biology-2023-ol-q12b-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q12b-i-question.png",
+  "md5": "b8fc5f1b6c65eaf6b924c272a0f94e23",
+  "alt": "The printed question: (b) In humans, the allele for brown eyes (B) is dominant to the allele for blue eyes (b). The words allele and dominant are underlined. Below, drawings of a Blue eye and a Brown eye, then (i) Explain the underlined terms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q12(b)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   122,
+   530,
+   292
+  ]
+ },
+ "biology-2023-ol-q13-immobilised": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q13-immobilised.png",
+  "md5": "4460ed9d5335f0f1d41b652da3430ef1",
+  "alt": "Drawing of a beaker of liquid with small beads settled at the bottom, labelled Immobilised enzymes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(c)(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   374,
+   556,
+   541,
+   675
+  ]
+ },
+ "biology-2023-ol-q13-leaf": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q13-leaf.png",
+  "md5": "b84ec70d192a65322784cb7c9379c08a",
+  "alt": "Drawing of a cross section of a leaf: a row of tall, closely packed cells below the upper surface, rounded cells with air spaces beneath, and a label Gas X in one of the air spaces near the lower surface.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(b)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   376,
+   192,
+   541,
+   372
+  ]
+ },
+ "biology-2023-ol-q13c-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q13c-i-question.png",
+  "md5": "7d2fa1a8e52cf7d6161addfbc49bd036",
+  "alt": "The printed question: (c) (i) Chemicals called enzymes are involved in metabolism within cells. Explain the underlined terms. The words enzymes and metabolism are underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(c)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   518,
+   470,
+   555
+  ]
+ },
+ "biology-2023-ol-q14-female": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q14-female.png",
+  "md5": "9ddeb682dda7072703a3bee3d709a129",
+  "alt": "Drawing of the female reproductive system, front view: arrow A points to the oval body at the end of one tube, arrow B to one of the tubes leading from it, and arrow C to the central chamber.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q14(b)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   322,
+   178,
+   541,
+   352
+  ]
+ },
+ "biology-2023-ol-q15-heart": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q15-heart.png",
+  "md5": "defd916d723e4078abb418d04da944fa",
+  "alt": "Drawing of a section through the heart: A labels the large vessel arching from the top; B labels the chamber with the thick wall on the lower right and C the chamber beside it; labels point to the Semilunar valve, Bicuspid valve, Tricuspid valve, Vena cava and Septum.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q15(c)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   318,
+   405,
+   541,
+   614
+  ]
+ },
+ "biology-2023-ol-q16-eye": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q16-eye.png",
+  "md5": "e711c31f6916389d07f24da2c6e017de",
+  "alt": "Drawing of a section through the eye: arrow X points to the coloured ring at the front, arrow Y to the clear curved layer covering the front, arrow Z to the oval body behind the opening, and a double-headed arrow d spans the opening; labels point to the Retina and the Optic nerve at the back.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z",
+   "d"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q16(b)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   312,
+   430,
+   541,
+   596
+  ]
+ },
+ "biology-2023-ol-q16-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q16-flower.png",
+  "md5": "7f8e9fc346996b4b6ab4440c58228c13",
+  "alt": "Drawing of an animal-pollinated flower cut in half: arrow X points to the top of the central stalk, arrow Y to a small body inside the swollen base, arrow Z to a small leaf-like part below the petals, and a label Anther points to the head of one of the stalks around the centre.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q16(d)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   312,
+   360,
+   541,
+   578
+  ]
+ },
+ "biology-2023-ol-q16-kidney": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q16-kidney.png",
+  "md5": "c50334c4485819c9e11f8d3825694c98",
+  "alt": "Drawing of a section through a kidney: arrow D points to the outer layer, arrow E to one of the cone-shaped regions inside it, arrow F to the central space, and a label Ureter points to the tube leaving it.",
+  "lettersVisible": [
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q16(a)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   372,
+   86,
+   541,
+   238
+  ]
+ },
+ "biology-2023-ol-q16-root": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q16-root.png",
+  "md5": "393d49cf4a29f1dc3c4c80ef71014857",
+  "alt": "Drawing of a transverse section of a root: a bracket A spans the cross-shaped core, arrow B points to the tissue filling the circle, arrow C to the thin outer layer, and a label Root hair points to a fine hair growing from the edge.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q16(c)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   338,
+   55,
+   545,
+   182
+  ]
+ },
+ "biology-2023-ol-q17-bacterium": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q17-bacterium.png",
+  "md5": "f6fc6de8e70292be85b1b630f5dd5cf5",
+  "alt": "Micrograph of a long, thin, wavy bacterium.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q17(d)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   354,
+   341,
+   541,
+   465
+  ]
+ },
+ "biology-2023-ol-q17-joint": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q17-joint.png",
+  "md5": "bbd0daca418ee245c8cc0207db511187",
+  "alt": "Drawing of a synovial joint between two bones: arrow D points to the band on the outside joining the bones, arrow E to the smooth layer capping the end of a bone, and arrow F to the space between the bone ends.",
+  "lettersVisible": [
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q17(a)(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   366,
+   88,
+   541,
+   268
+  ]
+ },
+ "biology-2023-ol-q17-yeast": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q17-yeast.png",
+  "md5": "33dd959d0b43e73395b1e1e938653c31",
+  "alt": "Electron micrograph of a round yeast cell with a smaller round bud growing from its top.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q17(c)(vi)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   434,
+   154,
+   541,
+   287
+  ]
+ },
+ "biology-2023-ol-q17b-ii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q17b-ii-question.png",
+  "md5": "951fdea408e7dd92f5752757db12c6cd",
+  "alt": "The printed question: (ii) Copy the table below into your answerbook and complete it. Some boxes have been filled in as examples. A table with columns Name of gland, Hormone and Function of hormone: row 1 gives the hormone Thyroxine; row 2 gives the hormone Adrenaline and its function, To prepare the body for \"fight or flight\"; row 3 gives the gland Testes. The other cells are empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q17(b)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   108,
+   430,
+   541,
+   622
+  ]
+ },
+ "biology-2023-ol-q17b-ii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q17b-ii-scheme.png",
+  "md5": "7250d9188493cdf4b160024f3e2e170d",
+  "alt": "The marking scheme's completed table: Thyroid, Thyroxine, (Regulate) metabolism; Adrenal, Adrenaline, To prepare the body for \"fight or flight\"; Testes, Testosterone, Sperm production. The cells the paper filled in are shaded.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q17(b)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 30,
+  "sourceRect": [
+   134,
+   175,
+   458,
+   304
+  ],
+  "solution": true
+ },
+ "biology-2023-ol-q17d-iv-question": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q17d-iv-question.png",
+  "md5": "ca51c455975d3d01746e10ef9cdbd338",
+  "alt": "The printed question: (iv) In terms of nutrition, bacteria can be either autotrophic or heterotrophic. Explain the underlined terms. The words autotrophic and heterotrophic are underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q17(d)(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   108,
+   427,
+   330,
+   479
+  ]
+ },
+ "biology-2023-ol-q4-equation": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q4-equation.png",
+  "md5": "4c415ec73ba16f6e4f21aa93df2bb1a5",
+  "alt": "The printed word equation: Glucose + X, an arrow, then Y + Water.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q4(a)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   138,
+   110,
+   365,
+   136
+  ]
+ },
+ "biology-2023-ol-q5-microscope": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q5-microscope.png",
+  "md5": "08653bdcfa85e2c5c8df0832f2536517",
+  "alt": "Drawing of a light microscope: arrow A points to the tube at the top where the eye looks in, arrow B to one of the lenses on the turret above the stage, and a label Stage points to the flat platform; a round light source sits on the base below the stage.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q5(a)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   160,
+   75,
+   420,
+   365
+  ]
+ },
+ "biology-2023-ol-q6-dna": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q6-dna.png",
+  "md5": "e0da8ab4ebcaf9728e39f602f1f50d22",
+  "alt": "Drawing of a DNA double helix: two twisted strands joined by rungs, with arrows from the label Nitrogenous base pairs pointing to two of the rungs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q6(a)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   384,
+   54,
+   541,
+   280
+  ]
+ },
+ "biology-2023-ol-q7-neuron": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q7-neuron.png",
+  "md5": "9f0e660db359431a9b96fc5610af151c",
+  "alt": "Drawing of a neuron: a cell body with branching extensions on the left, arrow A pointing to one of them, a long fibre running right, arrow B pointing to the fibre between two of the beads along it and arrow C to one of the beads, and branching endings on the right. An empty box sits below the fibre.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q7(a)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   88,
+   88,
+   508,
+   284
+  ]
+ },
+ "biology-2023-ol-q8-table": {
+  "src": "/exam-figures/biology/markbank/biology-2023-ol-q8-table.png",
+  "md5": "038ea14c3f07b4f1d838b582fedecd5c",
+  "alt": "Table of Presence (tick) / absence (cross) in five samples: Dandelion tick, cross, tick, cross, tick; Grass tick, tick, tick, tick, tick.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q8(b)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   370,
+   213,
+   539,
+   297
+  ]
+ },
  "biology-2024-hl-q11-flower": {
   "src": "/exam-figures/biology/markbank/biology-2024-hl-q11-flower.png",
   "md5": "b1a96b4f6999d32b5aa47589065e8156",

@@ -779,3 +779,130 @@ describe('Biology 2023 Higher — reviewed sitting, corrected in place', () => {
     }
   });
 });
+
+const ol23 = sittings['2023-ol'];
+const ordinary2023 = BIO_ORDINARY.filter(card => card.year === 2023) as unknown as ReviewedCard[];
+const ol23ById = new Map(ordinary2023.map(card => [card.id, card]));
+const ol23Verbatims = (id: string) => (ol23ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+
+describe('Biology 2023 Ordinary — reviewed sitting, corrected in place', () => {
+  const review = ol23.review!;
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(ol23.baseTaskCount).toBe(182);
+    expect(ol23.cardCount).toBe(182);
+    expect(ordinary2023).toHaveLength(182);
+    expect(new Set(ol23.tasks.map(task => task.id))).toEqual(new Set(ol23ById.keys()));
+  });
+
+  it('keeps every shipped id', () => {
+    expect(review.baselineCommit).toBe('985abf905');
+    expect([review.verified.length, review.corrected.length, review.added.length,
+      review.retained.length]).toEqual([1, 98, 83, 1]);
+    for (const id of [...review.verified, ...review.corrected.map(c => c.id), ...review.added]) {
+      expect(ol23ById.has(id), id).toBe(true);
+    }
+    // An authored figure twin of Q16(b)(ii)-(v) that the build never shipped:
+    // withdrawn, with no progress to carry.
+    expect(review.retained.map(r => r.id)).toEqual(['bio-2023-ol-q16b-ii-v-fig']);
+    expect(ol23ById.has('bio-2023-ol-q16b-ii-v-fig')).toBe(false);
+    expect(review.withdrawn['bio-2023-ol-q16b-ii-v-fig'].replacementId).toBe('bio-2023-ol-q16b-ii-v');
+    // The old Q3 bundle keeps its id for Q3(a).
+    expect(ol23ById.get('bio-2023-ol-q3')!.questionRef).toBe('2023 OL Q3(a)');
+  });
+
+  it('records what each corrected card showed before', () => {
+    for (const correction of review.corrected) {
+      expect(correction.changed.length, correction.id).toBeGreaterThan(0);
+      for (const field of correction.changed) {
+        expect(field in correction.fieldsBefore, `${correction.id}.${field}`).toBe(true);
+      }
+    }
+  });
+
+  it('leaves the card the review verified exactly as it shipped', () => {
+    const verified = review.verified.map(id => ol23ById.get(id)!)
+      .sort((a, b) => a.id.localeCompare(b.id));
+    expect(contentHash(verified)).toBe('50ef6097f54aa139701902af956c98fcea41a08afa4242ed8425b7cfa75832e2');
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(ol23.sources['038'].sha256)
+      .toBe('94e4584df499b78bf8034587f98e4fd6175d98e327eccc775b9b94d907ae79ed');
+    expect(ol23.sources['040'].sha256)
+      .toBe('b7b1e3356bc87a0968d42babeb22788672b5e69892eaa4f3203b5a2d1aae0a75');
+    expect(ol23.sources.scheme.sha256)
+      .toBe('992f9b1ea2a29628f7bf8b547ab7a5f1a8b234a7823d5ac5c9ecb891e357e8ff');
+    expect([ol23.sources['038'].pages, ol23.sources['040'].pages, ol23.sources.scheme.pages])
+      .toEqual([40, 12, 36]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of ol23.tasks) {
+      const card = ol23ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('prices every part on the ordered split its scheme prints', () => {
+    const notation = (id: string) =>
+      (ol23ById.get(id) as unknown as { tariffModel: { kind: string; notation?: string } }).tariffModel;
+    expect(ordinary2023.every(card =>
+      (card as unknown as { tariffModel: { kind: string } }).tariffModel.kind === 'orderedSplit')).toBe(true);
+    expect(notation('bio-2023-ol-q1-a')).toEqual({ kind: 'orderedSplit', notation: '2(7) + 3(2)' });
+    expect(notation('bio-2023-ol-q2-a')).toEqual({ kind: 'orderedSplit', notation: '8 + 7 + 5(1)' });
+    expect(notation('bio-2023-ol-q8-a')).toEqual({ kind: 'orderedSplit', notation: '5 + 1' });
+    expect(notation('bio-2023-ol-q8-b-i')).toEqual({ kind: 'orderedSplit', notation: '2(9) + 6(1)' });
+    expect(notation('bio-2023-ol-q11-a-i')).toEqual({ kind: 'orderedSplit', notation: '5 + 2(2)' });
+    expect(notation('bio-2023-ol-q11-b-iv')).toEqual({ kind: 'orderedSplit', notation: '3(5) + 6(2)' });
+    expect(notation('bio-2023-ol-q11-c-iv')).toEqual({ kind: 'orderedSplit', notation: '2(6) + 6(2)' });
+    expect(notation('bio-2023-ol-q17-c-iii')).toEqual({ kind: 'orderedSplit', notation: '2(7) + 8(2)' });
+  });
+
+  it('adds up to the printed question totals at each ladder\'s first rate', () => {
+    const totals = new Map<number, number>();
+    for (const task of ol23.tasks) {
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    // Each response is carded at its ladder's first rate: five at 7 for Q1
+    // and Q3, seven at 8 for the "8 + 7 + 5(1)" questions; Section B 2 at 5
+    // plus 8 at 9; Section C 3 at 5, 9 at 5 and 8 at 6; Q16 and Q17 ten at 7
+    // in each of four parts. The ladders make 20, 30, 60 and 30 per part.
+    for (const q of [1, 3]) expect(totals.get(q), `Q${q}`).toBe(35);
+    for (const q of [2, 4, 5, 6, 7]) expect(totals.get(q), `Q${q}`).toBe(56);
+    for (const q of [8, 9, 10]) expect(totals.get(q), `Q${q}`).toBe(82);
+    for (const q of [11, 12, 13, 14, 15]) expect(totals.get(q), `Q${q}`).toBe(108);
+    for (const q of [16, 17]) expect(totals.get(q), `Q${q}`).toBe(280);
+  });
+
+  it('cards the eye-or-ear choice the scheme marks on one set of rows as one card, not routes', () => {
+    expect(Object.keys(ol23.routes)).toEqual([]);
+    expect(ordinary2023.filter(card => card.questionRef.includes(' — '))).toHaveLength(0);
+    expect(ordinary2023.filter(card => card.questionRef.startsWith('2023 OL Q16(b)(vii)'))).toHaveLength(1);
+  });
+
+  it('reads the true/false ticks from the scheme', () => {
+    expect(['a', 'b', 'c', 'd', 'e', 'f', 'g'].map(x => ol23Verbatims(`bio-2023-ol-q2-${x}`)[0]))
+      .toEqual(['True', 'False', 'False', 'True', 'True', 'True', 'False']);
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b|\bdata table\b|\bword equation\b/i;
+    for (const card of ordinary2023) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // The underlined terms and the table to complete are set as printed; the
+    // scheme's completed table waits for the reveal.
+    for (const id of ['bio-2023-ol-q12-b-i', 'bio-2023-ol-q13-c-i-iii', 'bio-2023-ol-q17-d-iv',
+      'bio-2023-ol-q17-b-ii']) {
+      expect(ol23ById.get(id)!.questionFigure, id).toBeTruthy();
+    }
+    expect(ol23ById.get('bio-2023-ol-q17-b-ii')!.figure?.solution).toBe(true);
+  });
+});

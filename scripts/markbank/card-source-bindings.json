@@ -599,24 +599,6 @@
         10
       ],
       "stripStem": true
-    },
-    "bio-2023-ol-q14-b-ii-iv": {
-      "pages": [
-        5
-      ],
-      "stripStem": true
-    },
-    "bio-2023-ol-q14-b-v-vi": {
-      "pages": [
-        5
-      ],
-      "stripStem": true
-    },
-    "bio-2023-ol-q16d-vi-viii": {
-      "pages": [
-        8
-      ],
-      "stripStem": true
     }
   },
   "business": {

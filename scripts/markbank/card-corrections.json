@@ -166,6 +166,11 @@
    "reason": "Never shipped: a figure twin of bio-2023-hl-q14-b-ii, which carries the reviewed task and its figure.",
    "drop": true,
    "replacementId": "bio-2023-hl-q14-b-ii"
+  },
+  "bio-2023-ol-q16b-ii-v-fig": {
+   "reason": "Never shipped: a figure twin of bio-2023-ol-q16b-ii-v, which carries Q16(b)(ii) with its figure.",
+   "drop": true,
+   "replacementId": "bio-2023-ol-q16b-ii-v"
   }
  },
  "physics": {
