@@ -593,5 +593,39 @@
       0.552
     ],
     "reviewedAt": "2026-10-12"
+  },
+  "agsci-2023-ol-paper-ewe-mothering": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-ol-paper-ewe-mothering.png",
+    "md5": "382c8dbeee442c0bb589f7b97e83b415",
+    "alt": "Original Question 7 diagram and table. Ewe Mothering Ability, scored on the attentive behaviour of the ewe toward her lambs, on a line from 1 to 5: 1 Very poor, no interest in lambs; 2 Poor; 3 Average, moderately attentive but not protective; 4 Good; 5 Very Good, very attentive and protective. Below, the table: ewe 106, score 5, the worked example \"Very good, attentive mother and will protect lambs from predators and the weather\"; ewe 107, score 3, implication blank; ewe 108, score 1, implication blank.",
+    "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2023/LC024GLP000EV.pdf",
+    "sourceSha256": "98bdf03549315bcde81f97140f8d530f1081839c7aa7014c1ac8d00fda548510",
+    "pdfPage": 10,
+    "cropRect": [
+      0.06,
+      0.136,
+      0.94,
+      0.742
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2023-ol-paper-compacted-soil": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-ol-paper-compacted-soil.png",
+    "md5": "d04e62fec1f33c6da0589ca335c867f8",
+    "alt": "Original Question 15(a)(ii) diagrams with a key: soil particle (orange), water (blue outline) and air (empty). Sample A is a loose layer of rounded particles each ringed with water and with air spaces between them; sample B is a thinner layer of the same particles packed tightly together with little air space.",
+    "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper, PDF page 26 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2023/LC024GLP000EV.pdf",
+    "sourceSha256": "98bdf03549315bcde81f97140f8d530f1081839c7aa7014c1ac8d00fda548510",
+    "pdfPage": 26,
+    "cropRect": [
+      0.22,
+      0.341,
+      0.82,
+      0.502
+    ],
+    "reviewedAt": "2026-10-12"
   }
 }

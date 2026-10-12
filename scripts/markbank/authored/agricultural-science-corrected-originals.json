@@ -2388,5 +2388,793 @@
   },
   "originalSha256": "436b89dc69d09aae5b6f6f8aaa6e9141aa9636b4add1f89ff0535dd8fb1d9ebf",
   "snapshotFrom": "codex/agricultural-science-completion-20261007 at 02d3be86 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q1b": {
+  "original": {
+   "id": "agsci-2023-ol-q1b",
+   "topicId": "agsci-2-2-1",
+   "conceptId": "reading-a-soil-ph-probe",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 OL Q1(b)",
+   "questionText": "State the pH of the soil filtrate.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "6.5*",
+     "marks": 3
+    }
+   ],
+   "stem": "An agricultural science student wanted to test the pH of a sample of soil before deciding what crops to sow. pH probe Universal Indicator",
+   "notes": "The value is read off the probe in the figure, whose display shows 6.5.",
+   "figureKey": "agricultural-science-2023-OL-paper-p03-i0"
+  },
+  "originalSha256": "7060f4e5f7ee74c76bd3979e7765e35b8e64d5cf1ad22e8889a9f279a674270b",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q2a": {
+  "original": {
+   "id": "agsci-2023-ol-q2a",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "identifying-continental-beef-breeds",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 OL Q2(a)",
+   "questionText": "Assist Jimmy in identifying any three of the following continental beef cattle using the list below.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3+2+1"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "A: Charolais",
+     "marks": 3,
+     "accepts": [
+      "D: Simmental",
+      "E: Belgian Blue"
+     ],
+     "contextNote": "A is cream-white, B dark with a tan saddle, C solid red-brown, D red-and-white with a white face, E black-and-white and heavily muscled. Any three of the five score, at 3, 2 and 1 marks."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B: Aubrac",
+     "marks": 2,
+     "accepts": [
+      "D: Simmental",
+      "E: Belgian Blue"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "C: Limousine",
+     "marks": 1,
+     "accepts": [
+      "D: Simmental",
+      "E: Belgian Blue"
+     ]
+    }
+   ],
+   "stem": "Belgian Blue Aubrac Limousin Charolais Simmental",
+   "figureKey": "agricultural-science-2023-OL-paper-p04-i1",
+   "labelKey": [
+    {
+     "letter": "A",
+     "meaning": "Charolais",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "B",
+     "meaning": "Aubrac",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "C",
+     "meaning": "Limousine",
+     "askedInThisQuestion": true
+    }
+   ]
+  },
+  "originalSha256": "43974374bb02417dc147079f06dce4f4978b245441b2bdc8744ccc3d752b9a1b",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q4": {
+  "original": {
+   "id": "agsci-2023-ol-q4",
+   "topicId": "agsci-2-3",
+   "conceptId": "regenerative-farming-practices",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 OL Q4",
+   "stem": "The diagram shows some regenerative farming practices. Analyse the diagram and answer the question which follows.",
+   "questionText": "Outline one reason why each of the following farming practices is carried out: (1) Controlled grazing (management of forage with grazing animals); (2) Crop rotation; (3) Using organic fertilisers.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "6+2+2"
+   },
+   "totalMarks": 10,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Controlled grazing — increased yield of crop",
+     "marks": 6,
+     "accepts": [
+      "effective harvesting of crop or increased forage intake",
+      "increased biodiversity",
+      "decrease fossil fuel usage or reduced labour and feed costs",
+      "increased digestibility of the sward",
+      "fewer weeds",
+      "environmentally responsible grazing areas"
+     ],
+     "contextNote": "One reason only is asked for; every solidus-separated item in the scheme's controlled-grazing list is an accepted answer for the same marks, not an extra point."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Crop rotation — helps return nutrients to the soil or better nutrient management",
+     "marks": 2,
+     "accepts": [
+      "reduced need for artificial fertilisers",
+      "interrupt pest or disease cycles or weed cycles",
+      "improve soil health or improves soil structure or decreases compaction",
+      "increasing biomass from different crops root structures",
+      "increase biodiversity on the farm"
+     ],
+     "contextNote": "One reason only is asked for; the solidus list is alternatives, not extra points."
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Using organic fertilisers — reduced need for artificial fertilisers or cheaper or more sustainable",
+     "marks": 2,
+     "accepts": [
+      "improve water movement into the soil",
+      "add structure to the soil",
+      "feed beneficial microbes",
+      "increase soil fertility",
+      "meet organic certification or customer preference"
+     ],
+     "contextNote": "One reason only is asked for; the solidus list is alternatives, not extra points."
+    }
+   ],
+   "notes": "Tariff 6+2+2 = 10, one reason per named practice. By the scheme's front matter the first correct reason the examiner meets scores 6 and each later one 2, so the rows carry 6, 2, 2 in the paper's printed order of practices. questionText is the paper's printed sentence only; the three practice labels sit on the answer lines below it and are carried in the stem. The paper's diagram illustrates six regenerative practices, but the three asked about are text labels, so the card stands without a figure. Filed under soil management because the scheme's reasons for crop rotation and organic fertilisers are dominated by soil nutrients, structure and fertility.",
+   "figureKey": "agricultural-science-2023-OL-paper-p06-i0"
+  },
+  "originalSha256": "9707c1ca4b1b88fa2098397cd0292c6fb4d785e8f374e1dca1df4948e8512e74",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q6aiii": {
+  "original": {
+   "id": "agsci-2023-ol-q6aiii",
+   "topicId": "agsci-3-3-3",
+   "conceptId": "silage-dmd-for-dry-suckler-cows",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 OL Q6(a)(iii)",
+   "questionText": "State which silage DMD % is suitable for dry suckler cows that have a good BCS.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 1,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "<67(%) or D",
+     "marks": 1
+    }
+   ],
+   "stem": "Silage % Dry Matter Digestibility (DMD) 76+ 74 – 76 72 69 – 70 <67 Dry cows requiring BCS gain Dry dairy cows requiring little or no BCS gain Dry dairy cows - meal feeding required to gain BCS Freshly calved dairy cows in winter milk Dry suckler cows requiring BCS gain Suckler cows requiring no BCS gain Or",
+   "notes": "D is the lowest band on the paper's own list of silage qualities."
+  },
+  "originalSha256": "d7a8eea980b3cc3f8b8851638435976237dae0808eefdce34414b57aeff51b90",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q8a": {
+  "original": {
+   "id": "agsci-2023-ol-q8a",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "intramammary-antibiotic-procedure",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 OL Q8(a)",
+   "stem": "Pauline noticed a cow with mastitis and treated her with antibiotics. Treating a cow with antibiotics involves a number of steps which are listed below. A: Antibiotic tube inserted into teat. B: Teat wiped with antiseptic wipe. C: Teat dipped in iodine. D: Cow milked out. E: Teat massaged to move antibiotic from teat into udder. The first one is done for you: D.",
+   "questionText": "Place the steps in correct order.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "6+2+1+1"
+   },
+   "totalMarks": 10,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "allOf",
+     "verbatim": "D B A E C",
+     "marks": 10,
+     "contextNote": "D is already given on the paper; the four letters to place are B, A, E, C. B = teat wiped with antiseptic wipe, A = antibiotic tube inserted into teat, E = teat massaged to move antibiotic from teat into udder, C = teat dipped in iodine. The scheme prints 6+2+1+1 against this one answer line, which by its front matter is an ordered split: the first correct placement scores 6, the second 2, the third and fourth 1 each. So two right out of four is 8 marks whichever two they are — the value follows how many were placed correctly, never which letter."
+    }
+   ],
+   "notes": "Route (a) of Q8, worth 10 — the alternative to (b). The scheme prints ONE answer, 'D B A E C', not four separately valued placements, so this is one row rather than four. Splitting it into per-letter rows at 6/2/1/1 would attach a mark value to a specific letter, which the 6+2+1+1 ordered split explicitly does not do, and would tell a student who mis-ordered one step that they lost 6 marks. The wording of each step sits in the stem and contextNote because that text is the paper's, not the scheme's."
+  },
+  "originalSha256": "e427935876870bf53ae3f938c15be9ba82a6ef873e2e0cdbb228258ee754c6a5",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q9ai": {
+  "original": {
+   "id": "agsci-2023-ol-q9ai",
+   "topicId": "agsci-4-1",
+   "conceptId": "the-fourth-stomach-chamber",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 OL Q9(a)(i)",
+   "questionText": "Identify the stomach chamber A.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Abomasum*",
+     "marks": 3
+    }
+   ],
+   "notes": "Three diagrams show the stomach at first week, 3 to 4 months and maturity. Rumen, omasum and reticulum are labelled on each; A is the chamber left unlabelled.",
+   "figureKey": "agricultural-science-2023-OL-paper-p12-i0"
+  },
+  "originalSha256": "a64210cf50071413ed2cef68156241d07e8b28e54b7128de95dbfad56f70046b",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q9b-iii": {
+  "original": {
+   "id": "agsci-2023-ol-q9b-iii",
+   "topicId": "agsci-4-1",
+   "conceptId": "ruminant-vs-monogastric-stomach",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 OL Q9(b)(iii)",
+   "stem": "",
+   "questionText": "State one difference between a ruminant stomach and a monogastric stomach.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3+1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Ruminant — 4 stomachs or chambers",
+     "marks": 3,
+     "accepts": [
+      "fermentation",
+      "pH rumen = 7 or pH abomasum = 2",
+      "regurgitation of food or chewing the cud"
+     ],
+     "contextNote": "The scheme's ruminant column lists four alternative differences; any one of them earns this row."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Monogastric — one stomach",
+     "marks": 1,
+     "accepts": [
+      "no fermentation",
+      "pH stomach = 2",
+      "no regurgitation of food"
+     ],
+     "contextNote": "The matching monogastric side of whichever difference was chosen."
+    }
+   ],
+   "notes": "Tariff 3+1 = 4. The scheme sets the ruminant and monogastric columns side by side, so a stated difference has two halves and the first correct half the examiner meets scores 3, the second 1. The pH pairing was read off the scheme PDF (p.15) rather than the markdown, because the extraction interleaves the two columns — the ruminant cell reads \"pH rumen = 7 or pH abomasum = 2\" against the monogastric \"pH stomach = 2\"."
+  },
+  "originalSha256": "92d0d1f7ba263d69c18c08ff6141fe874ed1fe005068854b4f2868ed08cae297",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q10b-i-iii": {
+  "original": {
+   "id": "agsci-2023-ol-q10b-i-iii",
+   "topicId": "agsci-4-1",
+   "conceptId": "semen-analysis-interpretation",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 OL Q10(b)(i)-(iii)",
+   "stem": "The vet was called to a farm to carry out a fertility test on four stock bulls. The vet collected a sample of semen from the four bulls for analysis. The results are shown in the table below.",
+   "questionText": "(i) Identify which bull has the most abnormal sperm cells. (ii) Identify which bull has the best sperm motility. (iii) State which bull is the most fertile and best to use with the maiden heifers on the farm.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 8,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Most abnormal sperm cells — Bull 4",
+     "marks": 3
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Best sperm motility — Bull 1",
+     "marks": 3
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Most fertile, best for the maiden heifers — Bull 1",
+     "marks": 2
+    }
+   ],
+   "notes": "Route (b) of Q10 is 3 + 3 + 2 + 2 = 10. Parts (i)-(iii) are carded together, against the usual one-card-per-part preference, because all three are read from the same results table and each answer is a single bull number — separated they would be three near-empty cards. The table is printed as text on the paper (not as a picture) and is reproduced in the stem, so no figure is needed. Each row carries exactly the marks the scheme prints against that sub-part.",
+   "figureKey": "agricultural-science-2023-OL-paper-p15-i1"
+  },
+  "originalSha256": "f7b91d9bbae3eee95b66524e70ab7fbd01e8182d56c15e63824dde92103e8171",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q10bii": {
+  "original": {
+   "id": "agsci-2023-ol-q10bii",
+   "topicId": "agsci-4-3-1",
+   "conceptId": "comparing-bull-sperm-motility",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2023 OL Q10(b)(ii)",
+   "questionText": "Identify which bull has the best sperm motility.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Bull 1",
+     "marks": 3
+    }
+   ],
+   "stem": "Bull 1 Bull 2 Bull 3 Bull 4 Sperm motility (%) 100 95 90 95 Abnormal structure (%) 5 8 8 10",
+   "notes": "Read from the table: Bull 1 is the only one at 100% motility.",
+   "figureKey": "agricultural-science-2023-OL-paper-p15-i0"
+  },
+  "originalSha256": "2905b66853bd99e037f1b6928c84d27250848acb6b97af62cc17ee145c9ac2ff",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q13aii": {
+  "original": {
+   "id": "agsci-2023-ol-q13aii",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "plants-for-a-reseeded-pasture",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 OL Q13(a)(ii)",
+   "questionText": "Identify the plants below that may be sown in a newly reseeded pasture.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "6+3+3"
+   },
+   "totalMarks": 12,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "A: Red clover",
+     "marks": 6,
+     "contextNote": "A is a head of pink-purple clover flowers, B a grass seedhead, C a white clover flower over trifoliate leaves."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B: Perennial ryegrass",
+     "marks": 3
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "C: White clover (clover accepted once only)",
+     "marks": 3
+    }
+   ],
+   "notes": "The scheme's rubric that clover is accepted once only is printed on the same line as answer C, so it travels with it.",
+   "figureKey": "agricultural-science-2023-OL-paper-p20-i0",
+   "labelKey": [
+    {
+     "letter": "A",
+     "meaning": "Red clover",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "B",
+     "meaning": "Perennial ryegrass",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "C",
+     "meaning": "White clover (clover accepted once only)",
+     "askedInThisQuestion": true
+    }
+   ]
+  },
+  "originalSha256": "415868dbed6d28f9d3e4537ca5a1b3524732ed0ccc43c915e2425f687de51955",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q13bii": {
+  "original": {
+   "id": "agsci-2023-ol-q13bii",
+   "topicId": "agsci-3-2",
+   "conceptId": "what-the-reseeding-trial-shows",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 OL Q13(b)(ii)",
+   "questionText": "Outline what conclusion the researchers can make in relation to the sustainable reseeding methods.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "There is very little difference in the grass growth (between all the reseeding methods) or sustainable methods as good as plough or it would be better for the environment to use the sustainable methods",
+     "marks": 2
+    }
+   ],
+   "stem": "Comparison of reseeding methods in terms of grass production potential Grass production relative to plough method Plough Disc One pass Direct drill 1.2 1 1 0.95 0.87 1 0.8 0.6 0.4 0.2 0 Reseeding method (Adapted from Teagasc, 2022)",
+   "notes": "The scheme numbers this answer under its own Question 12 while the paper prints Question 13, and only the PDF reading has it — the markdown one files it under 13 with the question cue spliced onto the front."
+  },
+  "originalSha256": "bc4a25fb2c4b8e7f60c8c6569aa703d0e233e28d92bdbb4a39ce30c0aa8aa538",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q14a-i": {
+  "original": {
+   "id": "agsci-2023-ol-q14a-i",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "seed-selection-disease-resistance-and-harvest-time",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 OL Q14(a)(i)",
+   "stem": "Lisa wanted to sow a food crop in a two hectare field in an environmentally friendly way. Using a food crop (other than grass) you have studied, answer the questions which follow. Question 14 is 50 marks, made up of parts (a) and (b) with no choice.",
+   "questionText": "When selecting the seed for sowing, Lisa checked the disease resistance and time of harvest. Explain the underlined terms.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2 + 2"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Disease resistance: Ability to prevent or reduce the presence of",
+     "marks": 2,
+     "contextNote": "The scheme's wording runs on: \"Ability to prevent or reduce the presence of diseases in a crop\". A correct example scores instead of a definition."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Time of harvest: The time of the year during which the crop is",
+     "marks": 2,
+     "contextNote": "The scheme's wording runs on: \"The time of the year during which the crop is harvested\". A correct example scores instead of a definition."
+    }
+   ],
+   "notes": "Q14 = 50 marks: (a) 4 + 4 + 6 + 8 = 22 and (b) 8 + 4 + 4 + 12 = 28. Two separate 2s are printed, one against each underlined term, so this is a fixed tariff and the rows sum to 4. Both verbatims stop where the marks column is typeset inside the scheme's own line (scheme lines 534-537): the full sentences are not contiguous in the extraction, so quoting them whole would fail the traceability gate. The completion is stated in contextNote rather than accepts because the UI joins accepts with ' or ', which would misread a continuation as an alternative. Same handling as the shipped card agsci-2023-ol-q2b, which trimmed at 'legal requirement' for the same reason."
+  },
+  "originalSha256": "6f41182c20616bac78944c99ffb5ba66408914932a8e72c86d5b3be305720ec5",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q14bi": {
+  "original": {
+   "id": "agsci-2023-ol-q14bi",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "comparing-riverbank-biodiversity",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 OL Q14(b)(i)",
+   "questionText": "State which diagram A, B or C has a higher biodiversity level and give a reason for your answer.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 8,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Diagram: C",
+     "marks": 4,
+     "contextNote": "Three block diagrams of one stretch of river. A: cows grazing behind a wide strip of tall crop, arrowed X. B: cows standing in the water on bare eroded banks, a tractor above and a person spraying, arrowed W. C: mature trees along both banks, flowering plants, a kingfisher and an otter, with the cattle fenced back."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Reason: Different crops sown",
+     "marks": 4,
+     "accepts": [
+      "lots of trees",
+      "animals are not allowed into river to drink",
+      "flowers or trees present or boundary created to allow for natural growth",
+      "no spraying"
+     ]
+    }
+   ],
+   "stem": "W X",
+   "figureKey": "agricultural-science-2023-OL-paper-p24-art"
+  },
+  "originalSha256": "88be5250f3fc63fc0e9d58cffbc68104463c10443ea6df3c0c19bdcc5a1777dd",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q14bii": {
+  "original": {
+   "id": "agsci-2023-ol-q14bii",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "why-a-riparian-buffer-strip",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 OL Q14(b)(ii)",
+   "questionText": "Outline the reason for the crop X being sown between the cows and the river in diagram A.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Wildlife corridor",
+     "marks": 4,
+     "accepts": [
+      "prevent soil erosion into river",
+      "prevents the cattle from drinking in or entering the river",
+      "reduce nutrients leaching into the river",
+      "increase biodiversity"
+     ]
+    }
+   ],
+   "stem": "W X",
+   "notes": "Crop X is the strip between the cows and the river in diagram A. Any one reason scores the 4 marks; the scheme prints five.",
+   "figureKey": "agricultural-science-2023-OL-paper-p24-art"
+  },
+  "originalSha256": "197192a4558e9a86719b59fa50e861daad7b8c6bad419da4a7bc99203f40d474",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q14b-iii": {
+  "original": {
+   "id": "agsci-2023-ol-q14b-iii",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "advantages-of-spot-spraying",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 OL Q14(b)(iii)",
+   "questionText": "The farmer W is spot spraying the weeds in the field in diagram B. Outline the advantage of spot spraying compared to spraying the whole field.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Less chemicals required or reduce pollution or more environmentally friendly",
+     "marks": 4,
+     "accepts": [
+      "only treat the target plant",
+      "reduced resistance to herbicide",
+      "reduced cost of expensive chemicals"
+     ]
+    }
+   ],
+   "stem": "W X",
+   "notes": "Farmer W is the figure spot-spraying in diagram B.",
+   "figureKey": "agricultural-science-2023-OL-paper-p24-art"
+  },
+  "originalSha256": "84e5997fa024810da049f365b49478ad12cc8fad80194cfb0dc1417cc172b469",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q15aii": {
+  "original": {
+   "id": "agsci-2023-ol-q15aii",
+   "topicId": "agsci-3-1",
+   "conceptId": "which-soil-sample-is-compacted",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 OL Q15(a)(ii)",
+   "questionText": "Two soil samples A and B were collected are represented in the diagrams. Identify which soil is compacted and give a reason for your answer.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "5 + 5"
+   },
+   "totalMarks": 10,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Soil sample – B",
+     "marks": 5
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Reason – less (air) spaces or soil particles closer together",
+     "marks": 5
+    }
+   ],
+   "stem": "Soil particle Water Air"
+  },
+  "originalSha256": "8c2877df0a3d34c61aca59b1f43af648d118b93821ad40426e729b3a121d9b2e",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q15b": {
+  "original": {
+   "id": "agsci-2023-ol-q15b",
+   "topicId": "agsci-3-1",
+   "conceptId": "layers-of-a-brown-earth-soil",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 OL Q15(b)",
+   "questionText": "Brian discovered the soil type to be a brown earth soil as shown in the diagram below. Assist Brian in labelling the diagram.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "6 + 4"
+   },
+   "totalMarks": 10,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "A: Top Soil",
+     "marks": 6
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B: Sub soil",
+     "marks": 4
+    }
+   ],
+   "stem": "Organic matter Parent Material Or",
+   "figureKey": "agricultural-science-2023-OL-paper-p28-i0",
+   "labelKey": [
+    {
+     "letter": "A",
+     "meaning": "Top soil",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "B",
+     "meaning": "Sub soil",
+     "askedInThisQuestion": true
+    }
+   ]
+  },
+  "originalSha256": "12d35d1c2dbc3ef7d376be0503160c3095512c52eb14f43552fd6c12d4cd9e0a",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q16ai": {
+  "original": {
+   "id": "agsci-2023-ol-q16ai",
+   "topicId": "agsci-1-2",
+   "conceptId": "milk-quality-investigation-method",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 OL Q16(a)(i)",
+   "stem": "Pat is doing a screening on his dairy herd. He wanted to check the quality of a milk sample. The paper leaves a ruled answer box followed by a box headed \"Labelled diagram:\" — the diagram is one you draw yourself, so nothing is printed for you to read.",
+   "questionText": "Describe with the aid of a labelled diagram, how he would carry out this investigation.",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "notation": "3(4)",
+    "answer": 3,
+    "ofParts": 6,
+    "perPart": 4
+   },
+   "totalMarks": 12,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "anyN",
+     "verbatim": "Place milk sample into test tubes // add few drops (1 cm3) of Resazurin to three tubes (average) // place in water bath // Get a sample of milk and carry out a serial dilution of the milk sample by adding 1ml of milk into 9ml of distilled water & shake to mix // take 1ml from this test tube and add to 9ml of distilled water & shake // place in incubator for 72 hours at 25oC",
+     "marks": null,
+     "group": {
+      "claimMax": 3,
+      "perOption": 4,
+      "options": [
+       "Place milk sample into test tubes",
+       "add few drops (1 cm3) of Resazurin to three tubes (average)",
+       "place in water bath",
+       "Get a sample of milk and carry out a serial dilution of the milk sample by adding 1ml of milk into 9ml of distilled water & shake to mix",
+       "take 1ml from this test tube and add to 9ml of distilled water & shake",
+       "place in incubator for 72 hours at 25oC"
+      ]
+     }
+    }
+   ],
+   "notes": "Q16 is 12 + 6 + 4 + 12 + 6 + 2 + 8 = 50, so this part is 12 and the scheme's 3(4) reads as three marking points at 4 marks each. The scheme sets out two full investigations separated by \"Or\" (resazurin dye reduction; total bacterial count by serial dilution and plate count), so the rows are split into two mutually exclusive routes, each summing to 12 on its own — a student takes one route, never a mixture. Each route prints more steps than the three that can be claimed, so every row quotes ONE contiguous scheme step and the remaining steps of that route ride in accepts, which is what lets any three of the pool be claimed. Corrected from an earlier draft in which row 3 quoted four steps joined by solidi as a single 4-mark point — at a 3(4) tariff each of those steps stands alone, and the joined row overstated what the mark required. openList is set because the scheme also allows entirely different milk tests: \"% protein / % butterfat (gerber method) / Presence of Thermoduric bacteria (serial dilution) / presence of antibiotics (Devlo test) / SCC – California Mastitis Test (CMT) / % Solids in a milk sample (excess water)\". No figure is printed for this part — page 29 carries only blank ruled boxes and an empty \"Labelled diagram:\" box, verified in the PDF."
+  },
+  "originalSha256": "29aefae2a9f7dd702eda3de1f4930499bb2139c2048b81f08a2abae4765eb46b",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2023-ol-q18ci": {
+  "original": {
+   "id": "agsci-2023-ol-q18ci",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "selective-breeding-defined",
+   "level": "ordinary",
+   "year": 2023,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2023 OL Q18(c)(i)",
+   "stem": "Farmers and scientists have been improving crops and animals through selective breeding. The underlined term is \"selective breeding\".",
+   "questionText": "Explain the underlined term, selective breeding.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2+2"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Selective breeding involves choosing parents with particular",
+     "marks": 2,
+     "accepts": [
+      "Selective breeding involves choosing parents with particular characteristics to breed together"
+     ],
+     "contextNote": "The scheme's typeset 2+2 marks cell falls inside this sentence in the extraction, so the row quotes only the contiguous span. The point in full reads \"Selective breeding involves choosing parents with particular characteristics to breed together\", which is carried as the accept."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "produce offspring with more desirable characteristics.",
+     "marks": 2,
+     "contextNote": "The second half of the definition — what the choosing is for. Both halves are needed for the full 4."
+    }
+   ],
+   "notes": "2+2, two equal halves of one definition, so a fixed tariff with real per-row values rather than an ordered split. The solidus here does not offer alternatives: choosing the parents, and getting the improved offspring, are the two things the scheme wants said. Row 1 is truncated at the point the extraction inserts the marks cell — the full wording is on the accept and spelled out in the contextNote, so nothing is hidden from the student."
+  },
+  "originalSha256": "3c9c2aece6afd63810cc5604f02908628fea93f79c73cb693e20fe30ccd5e88d",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
  }
 }

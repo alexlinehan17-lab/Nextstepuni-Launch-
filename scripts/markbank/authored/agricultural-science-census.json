@@ -5,6 +5,1425 @@
   "papers": [
     {
       "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "sourceHashes": {
+        "exampapers": "98bdf03549315bcde81f97140f8d530f1081839c7aa7014c1ac8d00fda548510",
+        "markingschemes": "64da1086feec80a142d752edffcb6104de0a1cd162367ecca6ebdf5d7695b0b1"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2023 OL Q1(a)",
+          "marksPerResponse": 6,
+          "paperPage": 3,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "B: Graduated cylinder"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 2,
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2023 OL Q1(a)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q1(b)",
+          "marksPerResponse": 3,
+          "paperPage": 3,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "6.5*"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q1(b)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q1(c)",
+          "marksPerResponse": 1,
+          "paperPage": 3,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Soil pH is suitable or important for growing"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q1(c)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q2(a)",
+          "marksPerResponse": 6,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "A: Charolais"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 3,
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2023 OL Q2(a)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q2(b)",
+          "marksPerResponse": 4,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Safety / control bull / easier to handle"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q2(b)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q3(a)",
+          "marksPerResponse": 8,
+          "paperPage": 5,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Isolate calves from others for a few days"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q3(a)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q3(b)",
+          "marksPerResponse": 2,
+          "paperPage": 5,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Identify the weaning weight of a dairy beef calf at weaning."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q3(b)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q4",
+          "marksPerResponse": 10,
+          "paperPage": 6,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Controlled grazing: increased yield of crop"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q4"
+          ]
+        },
+        {
+          "ref": "2023 OL Q5",
+          "marksPerResponse": 10,
+          "paperPage": 7,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Can carry disease"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q5"
+          ]
+        },
+        {
+          "ref": "2023 OL Q6(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 8,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Body condition score"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q6(a)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q6(a)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 8,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Best quality silage = 76%+ DMD or A"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q6(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q6(a)(iii)",
+          "marksPerResponse": 1,
+          "paperPage": 8,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "<67(%) or D"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q6(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q6(b)",
+          "marksPerResponse": 10,
+          "paperPage": 9,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Spread fertiliser or slurry 6 weeks before cutting"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q6(b)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q7(a)",
+          "marksPerResponse": 6,
+          "paperPage": 10,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "(Average mother), not protective and"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q7(a)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q7(b)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "So, a predator (e.g. fox / dog) won’t take them"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q7(b)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q8(a)",
+          "marksPerResponse": 10,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "6+2+1+1"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q8(a)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q8(b)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Identify the bacteria that does not cause mastitis in dairy cows."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q8(b)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q8(b)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Wiping the teat with antiseptic wipe"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q8(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q9(a)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 12,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Abomasum*"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q9(a)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q9(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 12,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "As the animal gets older the rumen develops"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q9(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q9(a)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 12,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Identify the pH of the rumen by placing a tick"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q9(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q9(b)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 13,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Omasum – absorption of water"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q9(b)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q9(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 13,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Sheep / cow"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q9(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q9(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 13,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "4 stomachs or chambers"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q9(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q10(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 14,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Cows calve in a short or defined period of time"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q10(a)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q10(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 14,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Fertility check or check for abnormalities"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q10(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q10(b)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 15,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Bull 4"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q10(b)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q10(b)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 15,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Identify which bull has the best motility."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q10(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q10(b)(iii)",
+          "marksPerResponse": 2,
+          "paperPage": 15,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "State which bull is the most fertile and best to use with the maiden"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q10(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q10(b)(iv)",
+          "marksPerResponse": 2,
+          "paperPage": 15,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Crush / headgate"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q10(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q11",
+          "marksPerResponse": 10,
+          "paperPage": 16,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Labels=3(2)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q11"
+          ]
+        },
+        {
+          "ref": "2023 OL Q12(a)",
+          "marksPerResponse": 5,
+          "paperPage": 17,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Spread (disease) from one organism (plant) to another"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q12(a)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q12(b)",
+          "marksPerResponse": 3,
+          "paperPage": 17,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Soil Temperature / air temperature"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q12(b)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q12(c)",
+          "marksPerResponse": 2,
+          "paperPage": 17,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Fast results so can treat the disease or pest quickly"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q12(c)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q13(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 20,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "Increased productivity or excess silage"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q13(a)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q13(a)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 20,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "Perennial ryegrass"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q13(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q13(a)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 20,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "Increased grass quality or production"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q13(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q13(b)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 21,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "Disc"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q13(b)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q13(b)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 21,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "There is very little difference in the grass growth"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q13(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q13(b)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 21,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "Cheaper than the conventional ploughing method"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q13(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q13(c)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 22,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "Intended use of grass"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q13(c)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q13(c)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 22,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "Department of Agriculture / recommended varieties list"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q13(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q13(d)",
+          "marksPerResponse": 12,
+          "paperPage": 22,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "Good weed control (selective herbicide)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q13(d)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q14(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 23,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "Ability to prevent or reduce the presence of"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q14(a)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q14(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 23,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "Element: N, P K, S etc."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q14(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q14(a)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 23,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "Factors-"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q14(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q14(a)(iv)",
+          "marksPerResponse": 8,
+          "paperPage": 23,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "Be careful of moving machinery"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q14(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q14(b)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 24,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "Different crops sown"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q14(b)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q14(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 24,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "Wildlife corridor"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q14(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q14(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 25,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "Less chemicals required or reduce pollution"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q14(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q14(b)(iv)",
+          "marksPerResponse": 12,
+          "paperPage": 25,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "cattle drinking in river"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q14(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q15(a)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 26,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "Random / min 20 samples"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q15(a)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q15(a)(ii)",
+          "marksPerResponse": 10,
+          "paperPage": 26,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "less (air) spaces or soil particles closer together"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q15(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q15(a)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 26,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "Reduced crop yield or delayed germination"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q15(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q15(a)(iv)",
+          "marksPerResponse": 6,
+          "paperPage": 26,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "(Mole) plough or subsoil"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q15(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q15(a)(v)",
+          "marksPerResponse": 6,
+          "paperPage": 27,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "Two open ended tubes"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q15(a)(v)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q15(a)(vi)",
+          "marksPerResponse": 2,
+          "paperPage": 27,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "failure to tap the glass"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q15(a)(vi)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q15(b)",
+          "marksPerResponse": 10,
+          "paperPage": 28,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "A: Top Soil"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q15(b)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q15(c)",
+          "marksPerResponse": 10,
+          "paperPage": 28,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "Organic matter – 5%"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q15(c)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q16(a)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 29,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "Total Bacterial Count on the Sample"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Resazurin test",
+              "Total bacterial count"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2023 OL Q16(a)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q16(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 29,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "Independent"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q16(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q16(a)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 30,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "Resazurin test – qualitative"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q16(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q16(b)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 30,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "Teat dipping pre and post milking"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q16(b)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q16(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 30,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "= €452.17"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q16(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q16(c)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 31,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "balanced carbon footprint"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q16(c)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q16(c)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 31,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "Barley: source of carbohydrate or energy"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q16(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q17(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 32,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "identify barren"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q17(a)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q17(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 32,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Explain the importance of having a good marking system"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q17(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q17(a)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 32,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Cull the ewes that are not in lamb"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q17(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q17(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 33,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "4 – 8 weeks prior to lambing"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q17(b)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q17(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 33,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Allow for early grass"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q17(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q17(b)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 33,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Adequate feeding space"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q17(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q17(c)",
+          "marksPerResponse": 18,
+          "paperPage": 33,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "colostrum for antibodies"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q17(c)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q18(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 34,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Genetic information"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q18(a)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q18(a)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 34,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Blood samples were taken from cow"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q18(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q18(a)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 34,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Sexed semen"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q18(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q18(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 35,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Gene responsible for a specific trait is identified"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q18(b)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q18(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 35,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "disease resistant plants or animals"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q18(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q18(b)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 36,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Impact on environment"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 2,
+            "options": [
+              "Impact on the environment",
+              "Effect on food chain",
+              "Increase in production"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2023 OL Q18(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q18(c)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 36,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Explain selective breeding."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q18(c)(i)"
+          ]
+        },
+        {
+          "ref": "2023 OL Q18(c)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 36,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "(High) crop yields"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 OL Q18(c)(ii)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2023,
       "level": "higher",
       "lang": "ev",
       "paperFileid": "LC024ALP000EV.pdf",
@@ -18408,7 +19827,7 @@
       "level": "ordinary",
       "lang": "ev",
       "paperFileid": "LC024GLP000EV.pdf",
-      "independentCensus": "open"
+      "independentCensus": "boundary-reviewed"
     },
     {
       "year": 2023,
@@ -18503,6 +19922,299 @@
     }
   ],
   "questionMarkChecks": [
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "(a)": 6,
+        "(b)": 3,
+        "(c)": 1
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "(a)": 6,
+        "(b)": 4
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q3",
+      "units": {
+        "(a)": 8,
+        "(b)": 2
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "all": 10
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "all": 10
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "(a)": 6,
+        "(b)": 4
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q10",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q11",
+      "units": {
+        "all": 10
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q12",
+      "units": {
+        "(a)": 5,
+        "(b)": 3,
+        "(c)": 2
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q13",
+      "units": {
+        "(a)": 24,
+        "(b)": 14,
+        "(c)": 12,
+        "(d)": 12
+      },
+      "rule": "both (a) and (b) with either (c) or (d)",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q14",
+      "units": {
+        "(a)": 22,
+        "(b)": 28
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q15",
+      "units": {
+        "(a)": 40,
+        "(b)": 10,
+        "(c)": 10
+      },
+      "rule": "(a) with either (b) or (c)",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q16",
+      "units": {
+        "(a)": 22,
+        "(b)": 18,
+        "(c)": 10
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q17",
+      "units": {
+        "(a)": 16,
+        "(b)": 16,
+        "(c)": 18
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q18",
+      "units": {
+        "(a)": 24,
+        "(b)": 14,
+        "(c)": 12
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
     {
       "year": 2023,
       "level": "higher",

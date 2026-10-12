@@ -4442,121 +4442,137 @@
         "sha256": "64da1086feec80a142d752edffcb6104de0a1cd162367ecca6ebdf5d7695b0b1",
         "pages": 28
       },
-      "authoredEnglishCardsForSitting": 76,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 81,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "3e445c61dc61b226",
           "page": 2,
           "cue": "Answer ten",
           "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer ten questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 m",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section A, ten of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "aff3032d941e5f07",
           "page": 2,
           "cue": "any four",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day and Month of Birth in the boxes on the front cover. Write your answers in blue or ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section B, four of six independent questions. Every question is retained."
         },
         {
           "id": "1539e8c786747e62",
           "page": 3,
           "cue": "any ten",
           "context": "icate Examination 2023 3 Agricultural Science – Ordinary Level Section A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 An agricultural science student wanted to test the pH of a sample of soil before deciding what crops to sow. (a) Identify any two pieces of equipment labelled A, B or C requir",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: ten independent 10-mark questions, all retained."
         },
         {
           "id": "ff5a2cb01ab011a8",
           "page": 3,
           "cue": "any two",
           "context": "wanted to test the pH of a sample of soil before deciding what crops to sow. (a) Identify any two pieces of equipment labelled A, B or C required for this investigation. (b) State the pH of the soil filtrate. (c) State a conclusion the student can make in relation to growing crops. A: B: C: C A B pH probe Universal Indicator",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q1(a): identify any two of the three lettered pieces of equipment A, B and C, 2(3). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
         },
         {
           "id": "9dd672b5f0bfda82",
           "page": 4,
           "cue": "any three",
           "context": "my went to his local mart to buy continental beef cattle. (a) Assist Jimmy in identifying any three of the following continental beef cattle using the list below. Belgian Blue Aubrac Limousin Charolais Simmental A B C (b) The bulls in pictures B, D and E have a ring in their nose. Outline a reason why farmers put a ring in a bu",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(a): identify any three of the five photographed breeds A–E, 3+2+1. One card: a single anyN row lists all five, claim limit three."
         },
         {
           "id": "56768492225d0c88",
           "page": 8,
           "cue": "either",
           "context": "ng Certificate Examination 2023 8 Agricultural Science – Ordinary Level Question 6 Answer either (a) or (b). (a) The diagram shows the grass growth cycle and how each growth stage affects silage quality. Analyse the picture and answer the questions which follow. (i) In the diagram above, the letters BCS are used. State your ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q6 either (a) or (b): both independently marked alternatives are retained."
         },
         {
           "id": "a66b3a1ca8a4bfd9",
           "page": 11,
           "cue": "either",
           "context": "g Certificate Examination 2023 11 Agricultural Science – Ordinary Level Question 8 Answer either (a) or (b). (a) Pauline noticed a cow with mastitis and treated her with antibiotics. Treating a cow with antibiotics involves a number of steps which are listed below. Place the steps in correct order. The first one is done for ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "3345c10f2c4c226c",
           "page": 12,
           "cue": "either",
           "context": "g Certificate Examination 2023 12 Agricultural Science – Ordinary Level Question 9 Answer either (a) or (b). (a) The diagrams show the development of a ruminant stomach from birth to maturity. Analyse the diagrams and answer the questions which follow. First week 3 to 4 months Maturity (i) Identify the stomach chamber A. (ii",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "4ea3b9670e82f2e7",
           "page": 14,
           "cue": "either",
           "context": " Certificate Examination 2023 14 Agricultural Science – Ordinary Level Question 10 Answer either (a) or (b). (a) Four out of every five calves born on beef farms are sired by a stock bull. The stock bull fertility is key to maintaining a compact calving period, increasing the genetic merit and value of the calves, and overal",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q10 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "0cd4bab120debd3c",
           "page": 20,
           "cue": "any four",
           "context": "cate Examination 2023 20 Agricultural Science – Ordinary Level Section B 200 marks Answer any four questions. Each question carries 50 marks. Question 13 Answer (a) and (b) with either (c) or (d). (a) (i) Reseeding grassland is an important aspect of ensuring farm sustainability. Outline reasons why reseeding is recommended. (",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: four of six independent 50-mark questions, all retained."
         },
         {
           "id": "42e2493eb4807845",
           "page": 20,
           "cue": "either",
           "context": "r any four questions. Each question carries 50 marks. Question 13 Answer (a) and (b) with either (c) or (d). (a) (i) Reseeding grassland is an important aspect of ensuring farm sustainability. Outline reasons why reseeding is recommended. (ii) Identify the plants below that may be sown in a newly reseeded pasture. A B C (iii",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "e45e6e40c9a3b7bf",
           "page": 26,
           "cue": "either",
           "context": "ate Examination 2023 26 Agricultural Science – Ordinary Level Question 15 Answer (a) with either (b) or (c). Brian bought 120 hectares of land for a mixed tillage and beef enterprise. He carried out a number of tests on the soil. (a) (i) Describe how he took soil samples for analysis. (ii) Two soil samples A and B were colle",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q15: (a) with either (b) or (c). Every part, including both (b) and (c), is retained."
         },
         {
           "id": "5ff8077d65242b92",
           "page": 31,
           "cue": "One of",
           "context": "mate-neutral dairy farm, with a wide range of measures being used to achieve this target. One of the measures used on the farm is the feeding of a concentrate ration made from Irish sources. The ration fed to cows on the Shinagh demonstration farm is made from Irish oats (33%), Irish beans (33%) and Irish barley (34%). (Adap",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q16(c) article (\"One of the measures used on the farm\"); no response choice."
         },
         {
           "id": "665d4bf69df14674",
           "page": 34,
           "cue": "one of",
           "context": "dence from a stolen cow in a resulting criminal court case. The cow's real owner reported one of his 300 cows had been stolen in December 2017 after spotting it in his neighbour’s field, despite the farmer denying he had seen it. The farmer provided police with a cow passport, listing ear tag numbers for the cow and the anim",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q18(a) article (\"one of his 300 cows\"); no response choice."
         },
         {
           "id": "312f13b6b1706f1d",
           "page": 36,
           "cue": "any two",
           "context": "rning to genetically modified (GM) crop production due to food security concerns. Explain any two of the following ethical or economic issues of producing GM crops in Ireland. Impact on the environment Effect on food chain Increase in production (c) (i) Farmers and scientists have been improving crops and animals through sele",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q18(b)(iii): explain any two of three printed GM-crop issues, 4+2. The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
         },
         {
           "id": "5ddb5479aae42dd4",
           "page": 36,
           "cue": "select",
           "context": "the underlined term. (ii) Briefly explain two characteristics farmers or scientists could select for in their plant or animal breeding programme. 1. 2.",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"could select for\" in Q18(c)(ii) is breeding vocabulary, not a response choice; two student-chosen characteristics from an open pool."
         }
       ]
     },
@@ -4575,7 +4591,7 @@
         "sha256": "ceb6f5b9aa1ca9bd7a0a3de1ea4275fa4f0eec3f754ef354edd3126323cefac6",
         "pages": 28
       },
-      "authoredEnglishCardsForSitting": 76,
+      "authoredEnglishCardsForSitting": 81,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

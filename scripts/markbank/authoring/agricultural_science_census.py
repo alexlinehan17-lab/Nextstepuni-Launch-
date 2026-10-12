@@ -1163,9 +1163,104 @@ POOLS_2023_HIGHER = {
     'Q18(a)(i)': (3, ['A', 'B', 'C', 'D']),
 }
 
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER}
+# 2023 Ordinary: Section A Q1-Q12 at 10 marks, Section B Q13-Q18 at 50.
+ORDINARY_2023 = '''
+Q1(a)|6|3|12|B: Graduated cylinder
+Q1(b)|3|3|12|6.5*
+Q1(c)|1|3|12|Soil pH is suitable or important for growing
+Q2(a)|6|4|12|A: Charolais
+Q2(b)|4|4|12|Safety / control bull / easier to handle
+Q3(a)|8|5|12|Isolate calves from others for a few days
+Q3(b)|2|5|12|Identify the weaning weight of a dairy beef calf at weaning.
+Q4|10|6|13|Controlled grazing: increased yield of crop
+Q5|10|7|13|Can carry disease
+Q6(a)(i)|6|8|13|Body condition score
+Q6(a)(ii)|3|8|13|Best quality silage = 76%+ DMD or A
+Q6(a)(iii)|1|8|13|<67(%) or D
+Q6(b)|10|9|14|Spread fertiliser or slurry 6 weeks before cutting
+Q7(a)|6|10|14|(Average mother), not protective and
+Q7(b)|4|10|14|So, a predator (e.g. fox / dog) won’t take them
+Q8(a)|10|11|14|6+2+1+1
+Q8(b)(i)|2|11|14|Identify the bacteria that does not cause mastitis in dairy cows.
+Q8(b)(ii)|8|11|14|Wiping the teat with antiseptic wipe
+Q9(a)(i)|3|12|15|Abomasum*
+Q9(a)(ii)|4|12|15|As the animal gets older the rumen develops
+Q9(a)(iii)|3|12|15|Identify the pH of the rumen by placing a tick
+Q9(b)(i)|2|13|15|Omasum – absorption of water
+Q9(b)(ii)|4|13|15|Sheep / cow
+Q9(b)(iii)|4|13|15|4 stomachs or chambers
+Q10(a)(i)|4|14|15|Cows calve in a short or defined period of time
+Q10(a)(ii)|6|14|15|Fertility check or check for abnormalities
+Q10(b)(i)|3|15|16|Bull 4
+Q10(b)(ii)|3|15|16|Identify which bull has the best motility.
+Q10(b)(iii)|2|15|16|State which bull is the most fertile and best to use with the maiden
+Q10(b)(iv)|2|15|16|Crush / headgate
+Q11|10|16|16|Labels=3(2)
+Q12(a)|5|17|16|Spread (disease) from one organism (plant) to another
+Q12(b)|3|17|16|Soil Temperature / air temperature
+Q12(c)|2|17|16|Fast results so can treat the disease or pest quickly
+Q13(a)(i)|6|20|17|Increased productivity or excess silage
+Q13(a)(ii)|12|20|17|Perennial ryegrass
+Q13(a)(iii)|6|20|17|Increased grass quality or production
+Q13(b)(i)|6|21|17|Disc
+Q13(b)(ii)|2|21|17|There is very little difference in the grass growth
+Q13(b)(iii)|6|21|17|Cheaper than the conventional ploughing method
+Q13(c)(i)|6|22|18|Intended use of grass
+Q13(c)(ii)|6|22|18|Department of Agriculture / recommended varieties list
+Q13(d)|12|22|18|Good weed control (selective herbicide)
+Q14(a)(i)|4|23|18|Ability to prevent or reduce the presence of
+Q14(a)(ii)|4|23|18|Element: N, P K, S etc.
+Q14(a)(iii)|6|23|18|Factors-
+Q14(a)(iv)|8|23|19|Be careful of moving machinery
+Q14(b)(i)|8|24|19|Different crops sown
+Q14(b)(ii)|4|24|19|Wildlife corridor
+Q14(b)(iii)|4|25|19|Less chemicals required or reduce pollution
+Q14(b)(iv)|12|25|19|cattle drinking in river
+Q15(a)(i)|10|26|20|Random / min 20 samples
+Q15(a)(ii)|10|26|20|less (air) spaces or soil particles closer together
+Q15(a)(iii)|6|26|20|Reduced crop yield or delayed germination
+Q15(a)(iv)|6|26|20|(Mole) plough or subsoil
+Q15(a)(v)|6|27|20|Two open ended tubes
+Q15(a)(vi)|2|27|20|failure to tap the glass
+Q15(b)|10|28|20|A: Top Soil
+Q15(c)|10|28|21|Organic matter – 5%
+Q16(a)(i)|12|29|21|Total Bacterial Count on the Sample
+Q16(a)(ii)|6|29|21|Independent
+Q16(a)(iii)|4|30|22|Resazurin test – qualitative
+Q16(b)(i)|12|30|22|Teat dipping pre and post milking
+Q16(b)(ii)|6|30|22|= €452.17
+Q16(c)(i)|2|31|22|balanced carbon footprint
+Q16(c)(ii)|8|31|22|Barley: source of carbohydrate or energy
+Q17(a)(i)|6|32|23|identify barren
+Q17(a)(ii)|4|32|23|Explain the importance of having a good marking system
+Q17(a)(iii)|6|32|23|Cull the ewes that are not in lamb
+Q17(b)(i)|4|33|23|4 – 8 weeks prior to lambing
+Q17(b)(ii)|6|33|23|Allow for early grass
+Q17(b)(iii)|6|33|23|Adequate feeding space
+Q17(c)|18|33|23|colostrum for antibodies
+Q18(a)(i)|6|34|24|Genetic information
+Q18(a)(ii)|12|34|24|Blood samples were taken from cow
+Q18(a)(iii)|6|34|24|Sexed semen
+Q18(b)(i)|4|35|24|Gene responsible for a specific trait is identified
+Q18(b)(ii)|4|35|24|disease resistant plants or animals
+Q18(b)(iii)|6|36|24|Impact on environment
+Q18(c)(i)|4|36|24|Explain selective breeding.
+Q18(c)(ii)|8|36|24|(High) crop yields
+'''
+
+POOLS_2023_ORDINARY = {
+    'Q1(a)': (2, ['A', 'B', 'C']),
+    'Q2(a)': (3, ['A', 'B', 'C', 'D', 'E']),
+    'Q16(a)(i)': (1, ['Resazurin test', 'Total bacterial count']),
+    'Q18(b)(iii)': (2, ['Impact on the environment', 'Effect on food chain', 'Increase in production']),
+}
+
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY}
 
 SOURCES = [
+    (2023, 'ordinary', 'G', ORDINARY_2023,
+     '98bdf03549315bcde81f97140f8d530f1081839c7aa7014c1ac8d00fda548510',
+     '64da1086feec80a142d752edffcb6104de0a1cd162367ecca6ebdf5d7695b0b1'),
     (2023, 'higher', 'A', HIGHER_2023,
      '059f553f84ee5e11732cc00a8dedb3163785170a8c1b292ec234326ddeb6c118',
      '713384aadabd9a6e520dc5288f9047a929a4e43890e928ee7c957113c9d0581a'),
@@ -1243,7 +1338,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -1294,6 +1389,8 @@ MODERN_LAYOUTS = {
                       'marks':lambda n: 10 if n<=12 else 50},
     (2025,'ordinary'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q15','Q17'},
                         'marks':lambda n: 10 if n<=12 else 50},
+    (2023,'ordinary'): {'either':{'Q6','Q8','Q9','Q10'}, 'bothWithEither':{'Q13'}, 'oneWithEither':{'Q15'},
+                        'marks':lambda n: 10 if n<=12 else 50},
     (2023,'higher'): {'either':{'Q1','Q7','Q9','Q10'}, 'bothWithEither':{'Q13','Q16'},
                       'marks':lambda n: 10 if n<=12 else 50},
     (2024,'ordinary'): {'either':{'Q2','Q6','Q9','Q11'}, 'bothWithEither':{'Q15','Q18'},
@@ -1316,6 +1413,10 @@ def modern_question_check(paper,question,tasks,layout):
         assert sorted(units)==['(a)','(b)','(c)','(d)'], (question,units)
         totals = sorted({units['(a)']+units['(b)']+units[x] for x in ['(c)','(d)']})
         rule = 'both (a) and (b) with either (c) or (d)'
+    elif question in layout.get('oneWithEither',()):
+        assert sorted(units)==['(a)','(b)','(c)'], (question,units)
+        totals = sorted({units['(a)']+units[x] for x in ['(b)','(c)']})
+        rule = '(a) with either (b) or (c)'
     else:
         totals, rule = [sum(units.values())], 'all parts'
     expected = layout['marks'](int(question[1:]))
@@ -1374,7 +1475,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81. Remaining editions stay open.')
 
 
 if __name__=='__main__':

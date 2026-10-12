@@ -6483,70 +6483,6 @@
   "notes": "Q3 is 10 marks: (a) 3+3+2 = 8, (b) 2. The three options are printed as text on the paper, not as a picture, so they are reproduced in the stem and no figure is needed. The answer was verified from glyph positions in the scheme PDF rather than from the markdown extraction, which loses the tick."
  },
  {
-  "id": "agsci-2023-ol-q4",
-  "topicId": "agsci-2-3",
-  "conceptId": "regenerative-farming-practices",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2023 OL Q4",
-  "stem": "The diagram shows some regenerative farming practices. Analyse the diagram and answer the question which follows.",
-  "questionText": "Outline one reason why each of the following farming practices is carried out: (1) Controlled grazing (management of forage with grazing animals); (2) Crop rotation; (3) Using organic fertilisers.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "6+2+2"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Controlled grazing — increased yield of crop",
-    "marks": 6,
-    "accepts": [
-     "effective harvesting of crop or increased forage intake",
-     "increased biodiversity",
-     "decrease fossil fuel usage or reduced labour and feed costs",
-     "increased digestibility of the sward",
-     "fewer weeds",
-     "environmentally responsible grazing areas"
-    ],
-    "contextNote": "One reason only is asked for; every solidus-separated item in the scheme's controlled-grazing list is an accepted answer for the same marks, not an extra point."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Crop rotation — helps return nutrients to the soil or better nutrient management",
-    "marks": 2,
-    "accepts": [
-     "reduced need for artificial fertilisers",
-     "interrupt pest or disease cycles or weed cycles",
-     "improve soil health or improves soil structure or decreases compaction",
-     "increasing biomass from different crops root structures",
-     "increase biodiversity on the farm"
-    ],
-    "contextNote": "One reason only is asked for; the solidus list is alternatives, not extra points."
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Using organic fertilisers — reduced need for artificial fertilisers or cheaper or more sustainable",
-    "marks": 2,
-    "accepts": [
-     "improve water movement into the soil",
-     "add structure to the soil",
-     "feed beneficial microbes",
-     "increase soil fertility",
-     "meet organic certification or customer preference"
-    ],
-    "contextNote": "One reason only is asked for; the solidus list is alternatives, not extra points."
-   }
-  ],
-  "notes": "Tariff 6+2+2 = 10, one reason per named practice. By the scheme's front matter the first correct reason the examiner meets scores 6 and each later one 2, so the rows carry 6, 2, 2 in the paper's printed order of practices. questionText is the paper's printed sentence only; the three practice labels sit on the answer lines below it and are carried in the stem. The paper's diagram illustrates six regenerative practices, but the three asked about are text labels, so the card stands without a figure. Filed under soil management because the scheme's reasons for crop rotation and organic fertilisers are dominated by soil nutrients, structure and fertility.",
-  "figureKey": "agricultural-science-2023-OL-paper-p06-i0"
- },
- {
   "id": "agsci-2023-ol-q6a-i",
   "topicId": "agsci-4-3-2",
   "conceptId": "body-condition-score",
@@ -6688,33 +6624,6 @@
    }
   ],
   "notes": "Q7 is 10 marks: (a) 2(3) = 6, (b) 4. Part (a) is a three-column table (ewe number / mothering ability score / implications) and the text extraction interleaves its columns, so no faithful multi-word verbatim survives for it — only (b) is carded. The scale descriptors quoted in the stem are printed as text on the paper."
- },
- {
-  "id": "agsci-2023-ol-q8a",
-  "topicId": "agsci-4-3-3",
-  "conceptId": "intramammary-antibiotic-procedure",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2023 OL Q8(a)",
-  "stem": "Pauline noticed a cow with mastitis and treated her with antibiotics. Treating a cow with antibiotics involves a number of steps which are listed below. A: Antibiotic tube inserted into teat. B: Teat wiped with antiseptic wipe. C: Teat dipped in iodine. D: Cow milked out. E: Teat massaged to move antibiotic from teat into udder. The first one is done for you: D.",
-  "questionText": "Place the steps in correct order.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "6+2+1+1"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "allOf",
-    "verbatim": "D B A E C",
-    "marks": 10,
-    "contextNote": "D is already given on the paper; the four letters to place are B, A, E, C. B = teat wiped with antiseptic wipe, A = antibiotic tube inserted into teat, E = teat massaged to move antibiotic from teat into udder, C = teat dipped in iodine. The scheme prints 6+2+1+1 against this one answer line, which by its front matter is an ordered split: the first correct placement scores 6, the second 2, the third and fourth 1 each. So two right out of four is 8 marks whichever two they are — the value follows how many were placed correctly, never which letter."
-   }
-  ],
-  "notes": "Route (a) of Q8, worth 10 — the alternative to (b). The scheme prints ONE answer, 'D B A E C', not four separately valued placements, so this is one row rather than four. Splitting it into per-letter rows at 6/2/1/1 would attach a mark value to a specific letter, which the 6+2+1+1 ordered split explicitly does not do, and would tell a student who mis-ordered one step that they lost 6 marks. The wording of each step sits in the stem and contextNote because that text is the paper's, not the scheme's."
  },
  {
   "id": "agsci-2023-ol-q8b-i",
@@ -6929,50 +6838,6 @@
   "notes": "The scheme prints no \"etc.\" here, so openList is not set, even though the front matter's general rule still lets an examiner credit another valid ruminant after consulting an advising examiner. questionText is the paper's \"State one example\"; the scheme restates it as \"List one example\"."
  },
  {
-  "id": "agsci-2023-ol-q9b-iii",
-  "topicId": "agsci-4-1",
-  "conceptId": "ruminant-vs-monogastric-stomach",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2023 OL Q9(b)(iii)",
-  "stem": "",
-  "questionText": "State one difference between a ruminant stomach and a monogastric stomach.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "3+1"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Ruminant — 4 stomachs or chambers",
-    "marks": 3,
-    "accepts": [
-     "fermentation",
-     "pH rumen = 7 or pH abomasum = 2",
-     "regurgitation of food or chewing the cud"
-    ],
-    "contextNote": "The scheme's ruminant column lists four alternative differences; any one of them earns this row."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Monogastric — one stomach",
-    "marks": 1,
-    "accepts": [
-     "no fermentation",
-     "pH stomach = 2",
-     "no regurgitation of food"
-    ],
-    "contextNote": "The matching monogastric side of whichever difference was chosen."
-   }
-  ],
-  "notes": "Tariff 3+1 = 4. The scheme sets the ruminant and monogastric columns side by side, so a stated difference has two halves and the first correct half the examiner meets scores 3, the second 1. The pH pairing was read off the scheme PDF (p.15) rather than the markdown, because the extraction interleaves the two columns — the ruminant cell reads \"pH rumen = 7 or pH abomasum = 2\" against the monogastric \"pH stomach = 2\"."
- },
- {
   "id": "agsci-2023-ol-q10a-i",
   "topicId": "agsci-4-3-1",
   "conceptId": "compact-calving-and-genetic-merit",
@@ -7060,44 +6925,6 @@
    }
   ],
   "notes": "Tariff 4+2 = 6, an ordered split: the first correct way scores 4 and the second 2, whichever ways were named. No \"etc.\" is printed, so openList is not set."
- },
- {
-  "id": "agsci-2023-ol-q10b-i-iii",
-  "topicId": "agsci-4-1",
-  "conceptId": "semen-analysis-interpretation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2023 OL Q10(b)(i)-(iii)",
-  "stem": "The vet was called to a farm to carry out a fertility test on four stock bulls. The vet collected a sample of semen from the four bulls for analysis. The results are shown in the table below.",
-  "questionText": "(i) Identify which bull has the most abnormal sperm cells. (ii) Identify which bull has the best sperm motility. (iii) State which bull is the most fertile and best to use with the maiden heifers on the farm.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Most abnormal sperm cells — Bull 4",
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Best sperm motility — Bull 1",
-    "marks": 3
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Most fertile, best for the maiden heifers — Bull 1",
-    "marks": 2
-   }
-  ],
-  "notes": "Route (b) of Q10 is 3 + 3 + 2 + 2 = 10. Parts (i)-(iii) are carded together, against the usual one-card-per-part preference, because all three are read from the same results table and each answer is a single bull number — separated they would be three near-empty cards. The table is printed as text on the paper (not as a picture) and is reproduced in the stem, so no figure is needed. Each row carries exactly the marks the scheme prints against that sub-part.",
-  "figureKey": "agricultural-science-2023-OL-paper-p15-i1"
  },
  {
   "id": "agsci-2023-ol-q10b-iv",
@@ -20671,40 +20498,6 @@
   "notes": "2(6) means two parts to the answer at 6 marks each (scheme front matter p.3), which is the 12 that part (d) must carry to bring Q13 to 50 against (c)'s 4+2 plus 6. Six practices are printed in one pool and two are claimable, so two rows with the rest in accepts. 'light stock to prevent poaching' is in accepts rather than a verbatim because the '2(6)' mark cell is typeset inside that phrase in the text extraction (scheme lines 529-530). The apostrophe in 'don’t' is the scheme's typographic one."
  },
  {
-  "id": "agsci-2023-ol-q14a-i",
-  "topicId": "agsci-3-3-1",
-  "conceptId": "seed-selection-disease-resistance-and-harvest-time",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q14(a)(i)",
-  "stem": "Lisa wanted to sow a food crop in a two hectare field in an environmentally friendly way. Using a food crop (other than grass) you have studied, answer the questions which follow. Question 14 is 50 marks, made up of parts (a) and (b) with no choice.",
-  "questionText": "When selecting the seed for sowing, Lisa checked the disease resistance and time of harvest. Explain the underlined terms.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 + 2"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Disease resistance: Ability to prevent or reduce the presence of",
-    "marks": 2,
-    "contextNote": "The scheme's wording runs on: \"Ability to prevent or reduce the presence of diseases in a crop\". A correct example scores instead of a definition."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Time of harvest: The time of the year during which the crop is",
-    "marks": 2,
-    "contextNote": "The scheme's wording runs on: \"The time of the year during which the crop is harvested\". A correct example scores instead of a definition."
-   }
-  ],
-  "notes": "Q14 = 50 marks: (a) 4 + 4 + 6 + 8 = 22 and (b) 8 + 4 + 4 + 12 = 28. Two separate 2s are printed, one against each underlined term, so this is a fixed tariff and the rows sum to 4. Both verbatims stop where the marks column is typeset inside the scheme's own line (scheme lines 534-537): the full sentences are not contiguous in the extraction, so quoting them whole would fail the traceability gate. The completion is stated in contextNote rather than accepts because the UI joins accepts with ' or ', which would misread a continuation as an alternative. Same handling as the shipped card agsci-2023-ol-q2b, which trimmed at 'legal requirement' for the same reason."
- },
- {
   "id": "agsci-2023-ol-q14a-ii",
   "topicId": "agsci-3-1",
   "conceptId": "essential-element-and-its-role",
@@ -21155,47 +20948,6 @@
    }
   ],
   "notes": "Part (c) is the alternative to part (b), and both carry 10 marks — (b) labels the horizons of a brown earth profile (A: Top Soil, B: Sub soil) and is skipped because it needs the paper's diagram. This part is carded because the two answers are figures a student either knows or does not: the chart is the medium the answer is written in, not information that has to be read off the page, so the card stands without it once the stem states which bars are already drawn (verified by rendering paper p.28: mineral matter 45%, air 25%, the other two blank). Tariff 6+4 is an ordered split by the scheme's front matter (p.4) — the first correct answer encountered scores 6 — so neither row carries a mark value. Topic follows the shipped agsci-2024-ol-q7b, which files ideal soil composition under the soil's physical properties."
- },
- {
-  "id": "agsci-2023-ol-q16ai",
-  "topicId": "agsci-1-2",
-  "conceptId": "milk-quality-investigation-method",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q16(a)(i)",
-  "stem": "Pat is doing a screening on his dairy herd. He wanted to check the quality of a milk sample. The paper leaves a ruled answer box followed by a box headed \"Labelled diagram:\" — the diagram is one you draw yourself, so nothing is printed for you to read.",
-  "questionText": "Describe with the aid of a labelled diagram, how he would carry out this investigation.",
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3(4)",
-   "answer": 3,
-   "ofParts": 6,
-   "perPart": 4
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Place milk sample into test tubes // add few drops (1 cm3) of Resazurin to three tubes (average) // place in water bath // Get a sample of milk and carry out a serial dilution of the milk sample by adding 1ml of milk into 9ml of distilled water & shake to mix // take 1ml from this test tube and add to 9ml of distilled water & shake // place in incubator for 72 hours at 25oC",
-    "marks": null,
-    "group": {
-     "claimMax": 3,
-     "perOption": 4,
-     "options": [
-      "Place milk sample into test tubes",
-      "add few drops (1 cm3) of Resazurin to three tubes (average)",
-      "place in water bath",
-      "Get a sample of milk and carry out a serial dilution of the milk sample by adding 1ml of milk into 9ml of distilled water & shake to mix",
-      "take 1ml from this test tube and add to 9ml of distilled water & shake",
-      "place in incubator for 72 hours at 25oC"
-     ]
-    }
-   }
-  ],
-  "notes": "Q16 is 12 + 6 + 4 + 12 + 6 + 2 + 8 = 50, so this part is 12 and the scheme's 3(4) reads as three marking points at 4 marks each. The scheme sets out two full investigations separated by \"Or\" (resazurin dye reduction; total bacterial count by serial dilution and plate count), so the rows are split into two mutually exclusive routes, each summing to 12 on its own — a student takes one route, never a mixture. Each route prints more steps than the three that can be claimed, so every row quotes ONE contiguous scheme step and the remaining steps of that route ride in accepts, which is what lets any three of the pool be claimed. Corrected from an earlier draft in which row 3 quoted four steps joined by solidi as a single 4-mark point — at a 3(4) tariff each of those steps stands alone, and the joined row overstated what the mark required. openList is set because the scheme also allows entirely different milk tests: \"% protein / % butterfat (gerber method) / Presence of Thermoduric bacteria (serial dilution) / presence of antibiotics (Devlo test) / SCC – California Mastitis Test (CMT) / % Solids in a milk sample (excess water)\". No figure is printed for this part — page 29 carries only blank ruled boxes and an empty \"Labelled diagram:\" box, verified in the PDF."
  },
  {
   "id": "agsci-2023-ol-q16bi",
@@ -21984,43 +21736,6 @@
    }
   ],
   "notes": "The scheme tariffs the whole part 4+2 — the first issue explained scores 4 and the second 2 — so it is an ordered split and every row's marks are null. All three headings are shown even though only two may be claimed, because the candidate chooses which two; the pool under each heading is a set of alternative explanations for that heading, so they sit in accepts. Each heading's list includes a \"negative\" option and the scheme credits those equally — a downside is a valid explanation of the issue."
- },
- {
-  "id": "agsci-2023-ol-q18ci",
-  "topicId": "agsci-4-3-2",
-  "conceptId": "selective-breeding-defined",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q18(c)(i)",
-  "stem": "Farmers and scientists have been improving crops and animals through selective breeding. The underlined term is \"selective breeding\".",
-  "questionText": "Explain the underlined term, selective breeding.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2+2"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Selective breeding involves choosing parents with particular",
-    "marks": 2,
-    "accepts": [
-     "Selective breeding involves choosing parents with particular characteristics to breed together"
-    ],
-    "contextNote": "The scheme's typeset 2+2 marks cell falls inside this sentence in the extraction, so the row quotes only the contiguous span. The point in full reads \"Selective breeding involves choosing parents with particular characteristics to breed together\", which is carried as the accept."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "produce offspring with more desirable characteristics.",
-    "marks": 2,
-    "contextNote": "The second half of the definition — what the choosing is for. Both halves are needed for the full 4."
-   }
-  ],
-  "notes": "2+2, two equal halves of one definition, so a fixed tariff with real per-row values rather than an ordered split. The solidus here does not offer alternatives: choosing the parents, and getting the improved offspring, are the two things the scheme wants said. Row 1 is truncated at the point the extraction inserts the marks cell — the full wording is on the accept and spelled out in the contextNote, so nothing is hidden from the student."
  },
  {
   "id": "agsci-2023-ol-q18cii",
@@ -32498,207 +32213,6 @@
   "notes": "The scheme prints the five answers as one run against Q4(b) rather than against each statement, so this answer is the run's word for this statement. Tariff 5(2): five statements at 2 marks each."
  },
  {
-  "id": "agsci-2023-ol-q1b",
-  "topicId": "agsci-2-2-1",
-  "conceptId": "reading-a-soil-ph-probe",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2023 OL Q1(b)",
-  "questionText": "State the pH of the soil filtrate.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "6.5*",
-    "marks": 3
-   }
-  ],
-  "stem": "An agricultural science student wanted to test the pH of a sample of soil before deciding what crops to sow. pH probe Universal Indicator",
-  "notes": "The value is read off the probe in the figure, whose display shows 6.5.",
-  "figureKey": "agricultural-science-2023-OL-paper-p03-i0"
- },
- {
-  "id": "agsci-2023-ol-q2a",
-  "topicId": "agsci-4-3-3",
-  "conceptId": "identifying-continental-beef-breeds",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2023 OL Q2(a)",
-  "questionText": "Assist Jimmy in identifying any three of the following continental beef cattle using the list below.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "3+2+1"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A: Charolais",
-    "marks": 3,
-    "accepts": [
-     "D: Simmental",
-     "E: Belgian Blue"
-    ],
-    "contextNote": "A is cream-white, B dark with a tan saddle, C solid red-brown, D red-and-white with a white face, E black-and-white and heavily muscled. Any three of the five score, at 3, 2 and 1 marks."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "B: Aubrac",
-    "marks": 2,
-    "accepts": [
-     "D: Simmental",
-     "E: Belgian Blue"
-    ]
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "C: Limousine",
-    "marks": 1,
-    "accepts": [
-     "D: Simmental",
-     "E: Belgian Blue"
-    ]
-   }
-  ],
-  "stem": "Belgian Blue Aubrac Limousin Charolais Simmental",
-  "figureKey": "agricultural-science-2023-OL-paper-p04-i1",
-  "labelKey": [
-   {
-    "letter": "A",
-    "meaning": "Charolais",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "B",
-    "meaning": "Aubrac",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "C",
-    "meaning": "Limousine",
-    "askedInThisQuestion": true
-   }
-  ]
- },
- {
-  "id": "agsci-2023-ol-q9ai",
-  "topicId": "agsci-4-1",
-  "conceptId": "the-fourth-stomach-chamber",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2023 OL Q9(a)(i)",
-  "questionText": "Identify the stomach chamber A.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Abomasum*",
-    "marks": 3
-   }
-  ],
-  "notes": "Three diagrams show the stomach at first week, 3 to 4 months and maturity. Rumen, omasum and reticulum are labelled on each; A is the chamber left unlabelled.",
-  "figureKey": "agricultural-science-2023-OL-paper-p12-i0"
- },
- {
-  "id": "agsci-2023-ol-q10bii",
-  "topicId": "agsci-4-3-1",
-  "conceptId": "comparing-bull-sperm-motility",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2023 OL Q10(b)(ii)",
-  "questionText": "Identify which bull has the best sperm motility.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Bull 1",
-    "marks": 3
-   }
-  ],
-  "stem": "Bull 1 Bull 2 Bull 3 Bull 4 Sperm motility (%) 100 95 90 95 Abnormal structure (%) 5 8 8 10",
-  "notes": "Read from the table: Bull 1 is the only one at 100% motility.",
-  "figureKey": "agricultural-science-2023-OL-paper-p15-i0"
- },
- {
-  "id": "agsci-2023-ol-q13aii",
-  "topicId": "agsci-3-3-1",
-  "conceptId": "plants-for-a-reseeded-pasture",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q13(a)(ii)",
-  "questionText": "Identify the plants below that may be sown in a newly reseeded pasture.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "6+3+3"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A: Red clover",
-    "marks": 6,
-    "contextNote": "A is a head of pink-purple clover flowers, B a grass seedhead, C a white clover flower over trifoliate leaves."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "B: Perennial ryegrass",
-    "marks": 3
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "C: White clover (clover accepted once only)",
-    "marks": 3
-   }
-  ],
-  "notes": "The scheme's rubric that clover is accepted once only is printed on the same line as answer C, so it travels with it.",
-  "figureKey": "agricultural-science-2023-OL-paper-p20-i0",
-  "labelKey": [
-   {
-    "letter": "A",
-    "meaning": "Red clover",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "B",
-    "meaning": "Perennial ryegrass",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "C",
-    "meaning": "White clover (clover accepted once only)",
-    "askedInThisQuestion": true
-   }
-  ]
- },
- {
   "id": "agsci-2023-ol-q18bi",
   "topicId": "agsci-4-3-2",
   "conceptId": "how-crispr-gene-editing-works",
@@ -32737,232 +32251,6 @@
   ],
   "notes": "The diagram runs top to bottom: the target gene is marked on the strand, cut at the lightning bolt, and the strand then either repairs itself or takes an inserted gene.",
   "figureKey": "agricultural-science-2023-OL-paper-p35-i0"
- },
- {
-  "id": "agsci-2023-ol-q14bi",
-  "topicId": "agsci-3-3-1",
-  "conceptId": "comparing-riverbank-biodiversity",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q14(b)(i)",
-  "questionText": "State which diagram A, B or C has a higher biodiversity level and give a reason for your answer.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Diagram: C",
-    "marks": 4,
-    "contextNote": "Three block diagrams of one stretch of river. A: cows grazing behind a wide strip of tall crop, arrowed X. B: cows standing in the water on bare eroded banks, a tractor above and a person spraying, arrowed W. C: mature trees along both banks, flowering plants, a kingfisher and an otter, with the cattle fenced back."
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "Reason: Different crops sown",
-    "marks": 4,
-    "accepts": [
-     "lots of trees",
-     "animals are not allowed into river to drink",
-     "flowers or trees present or boundary created to allow for natural growth",
-     "no spraying"
-    ]
-   }
-  ],
-  "stem": "W X",
-  "figureKey": "agricultural-science-2023-OL-paper-p24-art"
- },
- {
-  "id": "agsci-2023-ol-q14bii",
-  "topicId": "agsci-3-3-1",
-  "conceptId": "why-a-riparian-buffer-strip",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q14(b)(ii)",
-  "questionText": "Outline the reason for the crop X being sown between the cows and the river in diagram A.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Wildlife corridor",
-    "marks": 4,
-    "accepts": [
-     "prevent soil erosion into river",
-     "prevents the cattle from drinking in or entering the river",
-     "reduce nutrients leaching into the river",
-     "increase biodiversity"
-    ]
-   }
-  ],
-  "stem": "W X",
-  "notes": "Crop X is the strip between the cows and the river in diagram A. Any one reason scores the 4 marks; the scheme prints five.",
-  "figureKey": "agricultural-science-2023-OL-paper-p24-art"
- },
- {
-  "id": "agsci-2023-ol-q14b-iii",
-  "topicId": "agsci-3-3-1",
-  "conceptId": "advantages-of-spot-spraying",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q14(b)(iii)",
-  "questionText": "The farmer W is spot spraying the weeds in the field in diagram B. Outline the advantage of spot spraying compared to spraying the whole field.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Less chemicals required or reduce pollution or more environmentally friendly",
-    "marks": 4,
-    "accepts": [
-     "only treat the target plant",
-     "reduced resistance to herbicide",
-     "reduced cost of expensive chemicals"
-    ]
-   }
-  ],
-  "stem": "W X",
-  "notes": "Farmer W is the figure spot-spraying in diagram B.",
-  "figureKey": "agricultural-science-2023-OL-paper-p24-art"
- },
- {
-  "id": "agsci-2023-ol-q6aiii",
-  "topicId": "agsci-3-3-3",
-  "conceptId": "silage-dmd-for-dry-suckler-cows",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2023 OL Q6(a)(iii)",
-  "questionText": "State which silage DMD % is suitable for dry suckler cows that have a good BCS.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 1,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "<67(%) or D",
-    "marks": 1
-   }
-  ],
-  "stem": "Silage % Dry Matter Digestibility (DMD) 76+ 74 – 76 72 69 – 70 <67 Dry cows requiring BCS gain Dry dairy cows requiring little or no BCS gain Dry dairy cows - meal feeding required to gain BCS Freshly calved dairy cows in winter milk Dry suckler cows requiring BCS gain Suckler cows requiring no BCS gain Or",
-  "notes": "D is the lowest band on the paper's own list of silage qualities."
- },
- {
-  "id": "agsci-2023-ol-q13bii",
-  "topicId": "agsci-3-2",
-  "conceptId": "what-the-reseeding-trial-shows",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q13(b)(ii)",
-  "questionText": "Outline what conclusion the researchers can make in relation to the sustainable reseeding methods.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "There is very little difference in the grass growth (between all the reseeding methods) or sustainable methods as good as plough or it would be better for the environment to use the sustainable methods",
-    "marks": 2
-   }
-  ],
-  "stem": "Comparison of reseeding methods in terms of grass production potential Grass production relative to plough method Plough Disc One pass Direct drill 1.2 1 1 0.95 0.87 1 0.8 0.6 0.4 0.2 0 Reseeding method (Adapted from Teagasc, 2022)",
-  "notes": "The scheme numbers this answer under its own Question 12 while the paper prints Question 13, and only the PDF reading has it — the markdown one files it under 13 with the question cue spliced onto the front."
- },
- {
-  "id": "agsci-2023-ol-q15aii",
-  "topicId": "agsci-3-1",
-  "conceptId": "which-soil-sample-is-compacted",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q15(a)(ii)",
-  "questionText": "Two soil samples A and B were collected are represented in the diagrams. Identify which soil is compacted and give a reason for your answer.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "5 + 5"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Soil sample – B",
-    "marks": 5
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Reason – less (air) spaces or soil particles closer together",
-    "marks": 5
-   }
-  ],
-  "stem": "Soil particle Water Air"
- },
- {
-  "id": "agsci-2023-ol-q15b",
-  "topicId": "agsci-3-1",
-  "conceptId": "layers-of-a-brown-earth-soil",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q15(b)",
-  "questionText": "Brian discovered the soil type to be a brown earth soil as shown in the diagram below. Assist Brian in labelling the diagram.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "6 + 4"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A: Top Soil",
-    "marks": 6
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "B: Sub soil",
-    "marks": 4
-   }
-  ],
-  "stem": "Organic matter Parent Material Or",
-  "figureKey": "agricultural-science-2023-OL-paper-p28-i0",
-  "labelKey": [
-   {
-    "letter": "A",
-    "meaning": "Top soil",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "B",
-    "meaning": "Sub soil",
-    "askedInThisQuestion": true
-   }
-  ]
  },
  {
   "id": "agsci-2024-hl-q10a",
@@ -73806,6 +73094,1528 @@
     39
    ],
    "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q1b",
+  "topicId": "agsci-2-2-1",
+  "conceptId": "reading-a-soil-ph-probe",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q1(b)",
+  "questionText": "State the pH of the soil filtrate.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "kind": "gate",
+    "verbatim": "6.5",
+    "marks": 3,
+    "contextNote": "Asterisked in the scheme (\"6.5*\"): only this value scores. It is the reading on the pH probe in the drawing.",
+    "id": "r-1"
+   }
+  ],
+  "stem": "An agricultural science student wanted to test the pH of a sample of soil before deciding what crops to sow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p03-i0",
+  "curriculumNodeIds": [
+   "agsci-2-2-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q1(b)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q2a",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "identifying-continental-beef-breeds",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q2(a)",
+  "questionText": "Assist Jimmy in identifying any three of the following continental beef cattle using the list below: Belgian Blue, Aubrac, Limousin, Charolais, Simmental.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+2+1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "A: Charolais / B: Aubrac / C: Limousine / D: Simmental / E: Belgian Blue",
+    "marks": 6,
+    "contextNote": "Any three of the five photographs. The scheme prints 3+2+1: the first correct identification earns 3, the second 2 and the third 1. The scheme spells C \"Limousine\".",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "A: Charolais",
+      "B: Aubrac",
+      "C: Limousine",
+      "D: Simmental",
+      "E: Belgian Blue"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "stem": "Jimmy went to his local mart to buy continental beef cattle.",
+  "figureKey": "agricultural-science-2023-OL-paper-p04-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "cream-white bull standing in grass (Charolais)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "dark grey-brown bull with a paler saddle and a ring in its nose (Aubrac)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "solid red-brown bull beside a fence (Limousine)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "red-and-white bull with a white face and a ring in its nose (Simmental)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "heavily muscled black-and-white bull with a ring in its nose (Belgian Blue)",
+    "askedInThisQuestion": true
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-4-3-3"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q2(a)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q4",
+  "topicId": "agsci-2-3",
+  "conceptId": "regenerative-farming-practices",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q4",
+  "stem": "The diagram shows some regenerative farming practices. Analyse the diagram and answer the question which follows.",
+  "questionText": "Outline one reason why each of the following farming practices is carried out: (1) Controlled grazing (management of forage with grazing animals); (2) Crop rotation; (3) Using organic fertilisers.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6+2+2"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Controlled grazing — increased yield of crop",
+    "marks": null,
+    "accepts": [
+     "effective harvesting of crop or increased forage intake",
+     "increased biodiversity",
+     "decrease fossil fuel usage or reduced labour and feed costs",
+     "increased digestibility of the sward",
+     "fewer weeds",
+     "environmentally responsible grazing areas"
+    ],
+    "contextNote": "One reason for each of the three practices. The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next. So the first correct reason earns 6 and each later one 2, whichever practice it is for."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Crop rotation — helps return nutrients to the soil or better nutrient management",
+    "marks": null,
+    "accepts": [
+     "reduced need for artificial fertilisers",
+     "interrupt pest or disease cycles or weed cycles",
+     "improve soil health or improves soil structure or decreases compaction",
+     "increasing biomass from different crops root structures",
+     "increase biodiversity on the farm"
+    ],
+    "contextNote": "One reason only is asked for; the solidus list is alternatives, not extra points."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Using organic fertilisers — reduced need for artificial fertilisers or cheaper or more sustainable",
+    "marks": null,
+    "accepts": [
+     "improve water movement into the soil",
+     "add structure to the soil",
+     "feed beneficial microbes",
+     "increase soil fertility",
+     "meet organic certification or customer preference"
+    ],
+    "contextNote": "One reason only is asked for; the solidus list is alternatives, not extra points."
+   }
+  ],
+  "figureKey": "agricultural-science-2023-OL-paper-p06-i0",
+  "curriculumNodeIds": [
+   "agsci-2-3"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q4",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q5",
+  "subjectId": "agricultural-science",
+  "year": 2023,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2023 OL Q5",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agsci-4-3-3"
+  ],
+  "conceptId": "biosecurity-threats-and-risk-reduction",
+  "questionText": "Using your knowledge of biosecurity, explain how each of the following can threaten the biosecurity on a farm and outline what the farmer can do to reduce the risk: Sick animals; Contaminated vehicles and equipment.",
+  "rows": [
+   {
+    "kind": "alt",
+    "verbatim": "Sick animals — Can pass the disease (infect) onto other animals or humans",
+    "marks": null,
+    "contextNote": "Four answers: how each threatens biosecurity and how to reduce the risk. The scheme prints 4+4+1+1. The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.",
+    "accepts": [
+     "cause a disease outbreak on the farm"
+    ],
+    "id": "r-1"
+   },
+   {
+    "kind": "alt",
+    "verbatim": "Sick animals, reduce risk — Isolate new animals when entering the farm",
+    "marks": null,
+    "accepts": [
+     "isolate sick animals",
+     "vaccination",
+     "cull sick animals"
+    ],
+    "id": "r-2"
+   },
+   {
+    "kind": "alt",
+    "verbatim": "Contaminated vehicles and equipment — Can carry disease between farms (on tyres)",
+    "marks": null,
+    "accepts": [
+     "in slurry tankers"
+    ],
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Contaminated vehicles and equipment, reduce risk — Wash or disinfect vehicles and equipment between farms",
+    "marks": null,
+    "id": "r-4"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4+4+1+1"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q5",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Biosecurity is crucial in maintaining healthy animals. Analyse the picture and answer the questions which follow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p07-i0",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q6aiii",
+  "topicId": "agsci-3-3-3",
+  "conceptId": "silage-dmd-for-dry-suckler-cows",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q6(a)(iii)",
+  "questionText": "State which silage DMD % is suitable for dry suckler cows that have a good BCS.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "<67(%) or D",
+    "marks": 1
+   }
+  ],
+  "stem": "Answer either (a) or (b). The diagram shows the grass growth cycle and how each growth stage affects silage quality. Analyse the picture and answer the questions which follow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p08-i0",
+  "curriculumNodeIds": [
+   "agsci-3-3-3"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q6(a)(iii)",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q7a",
+  "subjectId": "agricultural-science",
+  "year": 2023,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2023 OL Q7(a)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2"
+  ],
+  "conceptId": "ewe-mothering-ability-implications",
+  "questionText": "Dónal was scoring his ewes mothering ability after lambing and recorded the results in the table below. Complete the table below for Dónal describing the implications of his results. The first one has been done as an example: ewe 106, score 5, \"Very good, attentive mother and will protect lambs from predators and the weather\".",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Ewe 107, score 3 — (Average mother), not protective and moderately attentive",
+    "marks": 3,
+    "contextNote": "The scheme adds \"or valid implication described\" (2(3)).",
+    "openList": true,
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Ewe 108, score 1 — (Very poor mother) with no interest in lambs",
+    "marks": 3,
+    "contextNote": "Or a valid implication described.",
+    "openList": true,
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q7(a)",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "The diagram below is used to rate how good a ewe is at looking after her lambs. Analyse the diagram and answer the questions which follow.",
+  "figureKey": "agsci-2023-ol-paper-ewe-mothering",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q8a",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "intramammary-antibiotic-procedure",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q8(a)",
+  "stem": "Pauline noticed a cow with mastitis and treated her with antibiotics. Treating a cow with antibiotics involves a number of steps which are listed below. A: Antibiotic tube inserted into teat. B: Teat wiped with antiseptic wipe. C: Teat dipped in iodine. D: Cow milked out. E: Teat massaged to move antibiotic from teat into udder. The first one is done for you: D.",
+  "questionText": "Place the steps in correct order.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6+2+1+1"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "2nd — B",
+    "marks": null,
+    "contextNote": "Teat wiped with antiseptic wipe. The scheme prints D B A E C at 6+2+1+1, D being given. The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "3rd — A",
+    "marks": null,
+    "contextNote": "Antibiotic tube inserted into teat.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "4th — E",
+    "marks": null,
+    "contextNote": "Teat massaged to move antibiotic from teat into udder.",
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "5th — C",
+    "marks": null,
+    "contextNote": "Teat dipped in iodine.",
+    "id": "r-4"
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-4-3-3"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q8(a)",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q9ai",
+  "topicId": "agsci-4-1",
+  "conceptId": "the-fourth-stomach-chamber",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q9(a)(i)",
+  "questionText": "Identify the stomach chamber A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "kind": "gate",
+    "verbatim": "Abomasum",
+    "marks": 3,
+    "contextNote": "Asterisked in the scheme (\"Abomasum*\"): only this term scores.",
+    "id": "r-1"
+   }
+  ],
+  "figureKey": "agricultural-science-2023-OL-paper-p12-i0",
+  "stem": "Answer either (a) or (b). The diagrams show the development of a ruminant stomach from birth to maturity. Analyse the diagrams and answer the questions which follow.",
+  "curriculumNodeIds": [
+   "agsci-4-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q9(a)(i)",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q9b-iii",
+  "topicId": "agsci-4-1",
+  "conceptId": "ruminant-vs-monogastric-stomach",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q9(b)(iii)",
+  "stem": "",
+  "questionText": "State one difference between a ruminant stomach and a monogastric stomach.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3+1"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ruminant — 4 stomachs or chambers",
+    "marks": null,
+    "accepts": [
+     "fermentation",
+     "pH rumen = 7 or pH abomasum = 2",
+     "regurgitation of food or chewing the cud"
+    ],
+    "contextNote": "One difference, given for both stomachs. The scheme prints 3+1. The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Monogastric — one stomach",
+    "marks": null,
+    "accepts": [
+     "no fermentation",
+     "pH stomach = 2",
+     "no regurgitation of food"
+    ],
+    "contextNote": "The matching monogastric side of whichever difference was chosen."
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-4-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q9(b)(iii)",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q10b-i-iii",
+  "subjectId": "agricultural-science",
+  "year": 2023,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2023 OL Q10(b)(i)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agsci-4-1"
+  ],
+  "conceptId": "semen-analysis-interpretation",
+  "questionText": "Identify which bull has the most abnormal sperm cells.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Bull 4",
+    "marks": 3,
+    "contextNote": "Bull 4 has the highest abnormal structure, 10%.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q10(b)(i)",
+   "pages": [
+    15
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer either (a) or (b). The vet was called to a farm to carry out a fertility test on four stock bulls. The vet collected a sample of semen from the four bulls for analysis. The results are shown in the table below. Analyse the table and answer the questions which follow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p15-i1",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q10bii",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "comparing-bull-sperm-motility",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q10(b)(ii)",
+  "questionText": "Identify which bull has the best sperm motility.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bull 1",
+    "marks": 3
+   }
+  ],
+  "stem": "Answer either (a) or (b). The vet was called to a farm to carry out a fertility test on four stock bulls. The vet collected a sample of semen from the four bulls for analysis. The results are shown in the table below. Analyse the table and answer the questions which follow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p15-i1",
+  "curriculumNodeIds": [
+   "agsci-4-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q10(b)(ii)",
+   "pages": [
+    15
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q10biii",
+  "subjectId": "agricultural-science",
+  "year": 2023,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2023 OL Q10(b)(iii)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2"
+  ],
+  "conceptId": "choosing-the-most-fertile-bull",
+  "questionText": "State which bull is the most fertile and best to use with the maiden heifers on the farm.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Bull 1",
+    "marks": 2,
+    "contextNote": "Bull 1 has the best motility (100%) and the fewest abnormal sperm (5%).",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q10(b)(iii)",
+   "pages": [
+    15
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer either (a) or (b). The vet was called to a farm to carry out a fertility test on four stock bulls. The vet collected a sample of semen from the four bulls for analysis. The results are shown in the table below. Analyse the table and answer the questions which follow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p15-i1",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q11",
+  "subjectId": "agricultural-science",
+  "year": 2023,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2023 OL Q11",
+  "topicId": "agsci-2-2-3",
+  "curriculumNodeIds": [
+   "agsci-2-2-3"
+  ],
+  "conceptId": "earthworm-activity-investigation",
+  "questionText": "A student was carrying out an investigation to show the activity of earthworms. Draw a labelled diagram showing this activity.",
+  "rows": [
+   {
+    "kind": "criterion",
+    "verbatim": "Diagram – showing - suitable container, 2 layers, earthworms, mixing or tunnels",
+    "marks": null,
+    "contextNote": "Drawing, D = 0, 2, 4: any 3 correct for 4 marks / any 2 correct for 2 marks.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Layer of organic matter (leaf litter) or grass on top / earthworms on top / layer of chalk or layer of compost / layer of sand or layer of gravel / layer of clay or layer of soil / earthworms create channels or channels shown / earthworms mixing layers or mixed layers shown / decompose organic matter",
+    "marks": null,
+    "contextNote": "Labels: any 3 correct labels, 2 marks each (Labels = 3(2)).",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "D = 0,2,4 + Labels = 3(2)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q11",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q13aii",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "plants-for-a-reseeded-pasture",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13(a)(ii)",
+  "questionText": "Identify the plants below that may be sown in a newly reseeded pasture.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6+3+3"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Red clover",
+    "marks": null,
+    "contextNote": "Three plants. The scheme prints 6+3+3 and adds \"(clover accepted once only)\". The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Perennial ryegrass",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: White clover (clover accepted once only)",
+    "marks": null
+   }
+  ],
+  "figureKey": "agricultural-science-2023-OL-paper-p20-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Red clover",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Perennial ryegrass",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "White clover (clover accepted once only)",
+    "askedInThisQuestion": true
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-3-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q13(a)(ii)",
+   "pages": [
+    20
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q13bii",
+  "topicId": "agsci-3-2",
+  "conceptId": "what-the-reseeding-trial-shows",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13(b)(ii)",
+  "questionText": "Outline what conclusion the researchers can make in relation to the sustainable reseeding methods.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "kind": "alt",
+    "verbatim": "There is very little difference in the grass growth (between all the reseeding methods) or sustainable methods as good as plough or it would be better for the environment to use the sustainable methods",
+    "marks": 2,
+    "contextNote": "One conclusion, 2 marks.",
+    "accepts": [
+     "correct ranking in relation to sustainability (using data from graph)"
+    ],
+    "id": "r-1"
+   }
+  ],
+  "stem": "Traditional reseeding methods involve mainly ploughing the land. Research into more sustainable practices (disc, one pass and direct drill) are shown in the graph below. Sustainable practices are being compared to ploughing which has a grass growth potential of 1. Analyse the graph and answer the questions which follow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p21-i0",
+  "curriculumNodeIds": [
+   "agsci-3-2"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q13(b)(ii)",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q14a-i",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "seed-selection-disease-resistance-and-harvest-time",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q14(a)(i)",
+  "stem": "Lisa wanted to sow a food crop in a two hectare field in an environmentally friendly way. Using a food crop (other than grass) you have studied, answer the questions which follow. Question 14 is 50 marks, made up of parts (a) and (b) with no choice.",
+  "questionText": "When selecting the seed for sowing, Lisa checked the disease resistance and time of harvest. Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Disease resistance: Ability to prevent or reduce the presence of diseases in a crop",
+    "marks": 2,
+    "contextNote": "The scheme adds \"/ or correct example\".",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Time of harvest: The time of the year during which the crop is harvested",
+    "marks": 2,
+    "contextNote": "The scheme adds \"/ or correct example\".",
+    "id": "r-2"
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-3-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q14(a)(i)",
+   "pages": [
+    23
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q14bi",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "comparing-riverbank-biodiversity",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(i)",
+  "questionText": "State which diagram A, B or C has a higher biodiversity level and give a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: C",
+    "marks": 4,
+    "contextNote": "Three block diagrams of one stretch of river. A: cows grazing behind a wide strip of tall crop, arrowed X. B: cows standing in the water on bare eroded banks, a tractor above and a person spraying, arrowed W. C: mature trees along both banks, flowering plants, a kingfisher and an otter, with the cattle fenced back."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Reason: Different crops sown",
+    "marks": 4,
+    "accepts": [
+     "lots of trees",
+     "animals are not allowed into river to drink",
+     "flowers or trees present or boundary created to allow for natural growth",
+     "no spraying"
+    ]
+   }
+  ],
+  "stem": "Analyse the diagrams and answer the questions which follow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p24-art",
+  "curriculumNodeIds": [
+   "agsci-3-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q14(b)(i)",
+   "pages": [
+    24
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q14bii",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "why-a-riparian-buffer-strip",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(ii)",
+  "questionText": "Outline the reason for the crop X being sown between the cows and the river in diagram A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Wildlife corridor",
+    "marks": 4,
+    "accepts": [
+     "prevent soil erosion into river",
+     "prevents the cattle from drinking in or entering the river",
+     "reduce nutrients leaching into the river",
+     "increase biodiversity"
+    ]
+   }
+  ],
+  "stem": "Analyse the diagrams and answer the questions which follow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p24-art",
+  "curriculumNodeIds": [
+   "agsci-3-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q14(b)(ii)",
+   "pages": [
+    24
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q14b-iii",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "advantages-of-spot-spraying",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(iii)",
+  "questionText": "The farmer W is spot spraying the weeds in the field in diagram B. Outline the advantage of spot spraying compared to spraying the whole field.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Less chemicals required or reduce pollution or more environmentally friendly",
+    "marks": 4,
+    "accepts": [
+     "only treat the target plant",
+     "reduced resistance to herbicide",
+     "reduced cost of expensive chemicals"
+    ]
+   }
+  ],
+  "stem": "Analyse the diagrams and answer the questions which follow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p24-art",
+  "curriculumNodeIds": [
+   "agsci-3-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q14(b)(iii)",
+   "pages": [
+    24,
+    25
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q14biv",
+  "subjectId": "agricultural-science",
+  "year": 2023,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(iv)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agsci-2-3"
+  ],
+  "conceptId": "least-environmentally-friendly-farm",
+  "questionText": "State which diagram represents farming in the least environmentally friendly way and give two reasons for your answer.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Diagram: B",
+    "marks": 4,
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "cattle drinking in river / splash plate slurry spreading or slurry being spread near the river / no trees or plants / monoculture / no wildlife corridors / river banks are being eroded into the river / water quality (eutrophication) / spraying weed killer (near river)",
+    "marks": 8,
+    "contextNote": "Two reasons, 4 marks each (2(4)).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "cattle drinking in river",
+      "splash plate slurry spreading or slurry being spread near the river",
+      "no trees or plants",
+      "monoculture",
+      "no wildlife corridors",
+      "river banks are being eroded into the river",
+      "water quality (eutrophication)",
+      "spraying weed killer (near river)"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q14(b)(iv)",
+   "pages": [
+    24,
+    25
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Analyse the diagrams and answer the questions which follow.",
+  "figureKey": "agricultural-science-2023-OL-paper-p24-art",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q15aii",
+  "topicId": "agsci-3-1",
+  "conceptId": "which-soil-sample-is-compacted",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q15(a)(ii)",
+  "questionText": "Two soil samples A and B were collected are represented in the diagrams. Identify which soil is compacted and give a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Soil sample – B",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reason – less (air) spaces or soil particles closer together",
+    "marks": 5
+   }
+  ],
+  "stem": "Answer (a) with either (b) or (c). Brian bought 120 hectares of land for a mixed tillage and beef enterprise. He carried out a number of tests on the soil.",
+  "figureKey": "agsci-2023-ol-paper-compacted-soil",
+  "curriculumNodeIds": [
+   "agsci-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q15(a)(ii)",
+   "pages": [
+    26
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q15b",
+  "topicId": "agsci-3-1",
+  "conceptId": "layers-of-a-brown-earth-soil",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q15(b)",
+  "questionText": "Brian discovered the soil type to be a brown earth soil as shown in the diagram below. Assist Brian in labelling the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6+4"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Top Soil",
+    "marks": null,
+    "contextNote": "Two labels. The scheme prints 6+4. The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Sub soil",
+    "marks": null
+   }
+  ],
+  "stem": "Answer (a) with either (b) or (c). Brian bought 120 hectares of land for a mixed tillage and beef enterprise. He carried out a number of tests on the soil.",
+  "figureKey": "agricultural-science-2023-OL-paper-p28-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Top soil",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Sub soil",
+    "askedInThisQuestion": true
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q15(b)",
+   "pages": [
+    26,
+    28
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q16ai",
+  "topicId": "agsci-1-2",
+  "conceptId": "milk-quality-investigation-method",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q16(a)(i)",
+  "stem": "Pat is doing a screening on his dairy herd. He wanted to check the quality of a milk sample.",
+  "questionText": "Describe with the aid of a labelled diagram, how he would carry out this investigation.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(4)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Place milk sample into test tubes / add few drops (1 cm³) of Resazurin to three tubes (average) / place in water bath / at 37°C / for 15 minutes / record colour change / Result: (allow one only) Fresh – blue – good quality (low TBC) Blue – deep mauve = good (Deep) pink = fair (Light) pink = poor White = poor",
+    "marks": 12,
+    "contextNote": "Resazurin test: any three points, 4 marks each (3(4)). The scheme adds: \"There are other valid tests a student could do - % protein / % butterfat (gerber method) / Presence of Thermoduric bacteria (serial dilution) / presence of antibiotics (Devlo test) / SCC – California Mastitis Test (CMT) / % Solids in a milk sample (excess water) (Points can be found on the diagram)\".",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Place milk sample into test tubes",
+      "add few drops (1 cm³) of Resazurin to three tubes (average)",
+      "place in water bath",
+      "at 37°C",
+      "for 15 minutes",
+      "record colour change",
+      "Result: (allow one only) Fresh – blue – good quality (low TBC) Blue – deep mauve = good (Deep) pink = fair (Light) pink = poor White = poor"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "answerVariants": [
+   {
+    "id": "resazurin",
+    "label": "Resazurin test",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Place milk sample into test tubes / add few drops (1 cm³) of Resazurin to three tubes (average) / place in water bath / at 37°C / for 15 minutes / record colour change / Result: (allow one only) Fresh – blue – good quality (low TBC) Blue – deep mauve = good (Deep) pink = fair (Light) pink = poor White = poor",
+      "marks": 12,
+      "contextNote": "Resazurin test: any three points, 4 marks each (3(4)). The scheme adds: \"There are other valid tests a student could do - % protein / % butterfat (gerber method) / Presence of Thermoduric bacteria (serial dilution) / presence of antibiotics (Devlo test) / SCC – California Mastitis Test (CMT) / % Solids in a milk sample (excess water) (Points can be found on the diagram)\".",
+      "group": {
+       "claimMax": 3,
+       "perOption": 4,
+       "options": [
+        "Place milk sample into test tubes",
+        "add few drops (1 cm³) of Resazurin to three tubes (average)",
+        "place in water bath",
+        "at 37°C",
+        "for 15 minutes",
+        "record colour change",
+        "Result: (allow one only) Fresh – blue – good quality (low TBC) Blue – deep mauve = good (Deep) pink = fair (Light) pink = poor White = poor"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   },
+   {
+    "id": "tbc",
+    "label": "Total bacterial count",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Get a sample of milk and carry out a serial dilution of the milk sample by adding 1ml of milk into 9ml of distilled water & shake to mix / take 1ml from this test tube and add to 9ml of distilled water & shake / repeat this for 4 more test tubes / take 1ml of milk from the last test tube & place on a prepared nutrient agar plate under aseptic conditions. Repeat 3 times for accurate results / spread the milk around the plate using a plate spreader / leave one agar plate unopened as a control / place in incubator for 72 hours at 25°C / remove plate & record number of bacteria colonies on the plate & multiply by 10⁶ to get the number of CFU’s / Result: There will be CFU’s in the plate over - time as the number of bacteria in the sample multiply causing a decrease in quality of the milk.",
+      "marks": 12,
+      "contextNote": "Total bacterial count: any three points, 4 marks each (3(4)). The scheme adds: \"There are other valid tests a student could do - % protein / % butterfat (gerber method) / Presence of Thermoduric bacteria (serial dilution) / presence of antibiotics (Devlo test) / SCC – California Mastitis Test (CMT) / % Solids in a milk sample (excess water) (Points can be found on the diagram)\".",
+      "group": {
+       "claimMax": 3,
+       "perOption": 4,
+       "options": [
+        "Get a sample of milk and carry out a serial dilution of the milk sample by adding 1ml of milk into 9ml of distilled water & shake to mix",
+        "take 1ml from this test tube and add to 9ml of distilled water & shake",
+        "repeat this for 4 more test tubes",
+        "take 1ml of milk from the last test tube & place on a prepared nutrient agar plate under aseptic conditions. Repeat 3 times for accurate results",
+        "spread the milk around the plate using a plate spreader",
+        "leave one agar plate unopened as a control",
+        "place in incubator for 72 hours at 25°C",
+        "remove plate & record number of bacteria colonies on the plate & multiply by 10⁶ to get the number of CFU’s",
+        "Result: There will be CFU’s in the plate over - time as the number of bacteria in the sample multiply causing a decrease in quality of the milk."
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-1-2"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q16(a)(i)",
+   "pages": [
+    29
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2023-ol-q18ci",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "selective-breeding-defined",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q18(c)(i)",
+  "stem": "Farmers and scientists have been improving crops and animals through selective breeding. The underlined term is \"selective breeding\".",
+  "questionText": "Explain the underlined term, selective breeding.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2+2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Selective breeding involves choosing parents with particular characteristics to breed together",
+    "marks": 2,
+    "contextNote": "Choosing the parents, 2 marks (2+2).",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "produce offspring with more desirable characteristics.",
+    "marks": 2,
+    "contextNote": "What the choosing is for, 2 marks.",
+    "id": "r-2"
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-4-3-2"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2023 Ordinary — Q18(c)(i)",
+   "pages": [
+    36
+   ],
+   "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
   },
   "qa": {

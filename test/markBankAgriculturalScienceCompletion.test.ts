@@ -38,7 +38,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(55);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(54);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -390,7 +390,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(16);
+    expect(review.paperReviews).toHaveLength(17);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -743,6 +743,48 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
   });
 
+  it('reconciles all 76 original 2023 Ordinary cards and adds the five missing parts', () => {
+    const year = ordinary.filter(card => card.year === 2023);
+    expect(year).toHaveLength(81);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2023 OL'));
+    expect(tasks).toHaveLength(81);
+    const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
+    expect(states.filter(state => state === 'unchanged')).toHaveLength(57);
+    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(19);
+    expect(states.filter(state => state === 'added')).toHaveLength(5);
+    for (const key of ['q1a', 'q2a', 'q16ai', 'q18biii']) {
+      expect(review.tasks.find(task => task.cardIds.includes(`agsci-2023-ol-${key}`))!.selection).toMatchObject({ kind: 'closed', pooled: true });
+    }
+    const breeds = get('agsci-2023-ol-q2a');
+    expect(breeds.rows[0].group?.options).toHaveLength(5);
+    expect(marksClaimed(breeds, {}, { 'r-1': [3, 4] })).toBe(5);
+    expect((breeds as { labelKey?: Array<{ letter: string }> }).labelKey?.map(label => label.letter)).toEqual(['A', 'B', 'C', 'D', 'E']);
+    // First-correct awards are no longer pinned to one printed position.
+    for (const id of ['agsci-2023-ol-q4', 'agsci-2023-ol-q8a', 'agsci-2023-ol-q9b-iii', 'agsci-2023-ol-q13aii', 'agsci-2023-ol-q15b']) {
+      expect(get(id).tariffModel.kind, id).toBe('orderedSplit');
+      expect(get(id).rows.every(row => row.marks === null), id).toBe(true);
+    }
+    // The fused Q10(b) card keeps (i); (ii) and (iii) are their own cards.
+    expect(get('agsci-2023-ol-q10b-i-iii').questionRef).toBe('2023 OL Q10(b)(i)');
+    expect(cards.filter(card => card.questionRef.startsWith('2023 OL Q10(b)(ii)'))).toHaveLength(1);
+    expect(get('agsci-2023-ol-q10biii').rows[0].verbatim).toBe('Bull 1');
+    const milk = get('agsci-2023-ol-q16ai');
+    const variants = (milk as { answerVariants?: Array<{ id: string; rows: typeof milk.rows }> }).answerVariants ?? [];
+    expect(variants.map(variant => variant.id)).toEqual(['resazurin', 'tbc']);
+    for (const variant of variants) expect(tariffReconciles({ ...milk, rows: variant.rows }), variant.id).toBe(true);
+    expect(get('agsci-2023-ol-q11').tariffModel.kind).toBe('questionTotal');
+    expect(get('agsci-2023-ol-q14biv').totalMarks).toBe(12);
+    expect(get('agsci-2023-ol-q7a').figure?.src).toContain('agsci-2023-ol-paper-ewe-mothering');
+    expect(get('agsci-2023-ol-q15aii').figure?.src).toContain('agsci-2023-ol-paper-compacted-soil');
+    for (const id of ['agsci-2023-ol-q1b', 'agsci-2023-ol-q6aiii', 'agsci-2023-ol-q10bii', 'agsci-2023-ol-q13bii', 'agsci-2023-ol-q14bi', 'agsci-2023-ol-q15aii', 'agsci-2023-ol-q15b']) {
+      expect(get(id).stem, id).not.toMatch(/pH probe Universal|Silage % Dry Matter|Bull 1 Bull 2|Grass production relative|^W X$|Soil particle Water|Parent Material Or/);
+    }
+    const units = census.questionMarkChecks.filter(check => check.year === 2023 && check.level === 'ordinary');
+    expect(units).toHaveLength(18);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+    expect(units.find(check => check.question === 'Q15')!.rule).toBe('(a) with either (b) or (c)');
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -828,7 +870,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(950);
+    expect(atlas.markBankCards).toHaveLength(1031);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

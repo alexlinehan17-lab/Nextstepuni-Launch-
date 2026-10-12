@@ -60,6 +60,7 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'agricultural-science|2026|LC024GLP000EV.pdf',
   'agricultural-science|2022|LC024GLP000EV.pdf',
   'agricultural-science|2023|LC024ALP000EV.pdf',
+  'agricultural-science|2023|LC024GLP000EV.pdf',
   'agricultural-science|2025|LC024ALP000EV.pdf',
   'agricultural-science|2025|LC024GLP000EV.pdf',
   'agricultural-science|2024|LC024ALP000EV.pdf',

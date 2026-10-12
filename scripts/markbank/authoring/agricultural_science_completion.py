@@ -29,6 +29,7 @@ from agricultural_science_2025_ol import reviewed_tasks as reviewed_2025_ol, pap
 from agricultural_science_2024_hl import reviewed_tasks as reviewed_2024_hl, paper_review as higher_2024_review, RESTORED as RESTORED_2024_HL
 from agricultural_science_2024_ol import reviewed_tasks as reviewed_2024_ol, paper_review as ordinary_2024_review
 from agricultural_science_2023_hl import reviewed_tasks as reviewed_2023_hl, paper_review as higher_2023_review, RESTORED as RESTORED_2023_HL
+from agricultural_science_2023_ol import reviewed_tasks as reviewed_2023_ol, paper_review as ordinary_2023_review, RESTORED as RESTORED_2023_OL
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -172,18 +173,22 @@ def reviewed_tasks():
     cards.extend(higher_2023_cards)
     reviews.extend(higher_2023_tasks)
     paper_reviews.append(higher_2023_review())
-    corrections_2025 = {**corrections_2025, **corrections_2025_ol, **corrections_2024, **corrections_2024_ol, **corrections_2023}
+    ordinary_2023_cards, ordinary_2023_tasks, corrections_2023_ol = reviewed_2023_ol(existing)
+    cards.extend(ordinary_2023_cards)
+    reviews.extend(ordinary_2023_tasks)
+    paper_reviews.append(ordinary_2023_review())
+    corrections_2025 = {**corrections_2025, **corrections_2025_ol, **corrections_2024, **corrections_2024_ol, **corrections_2023, **corrections_2023_ol}
     # Batches reviewed after 7 October carry their own review date; earlier
     # reviewed card objects must stay byte-identical.
     batch_dates = {id(card): '2026-10-11' for card in higher_2026_cards + ordinary_2026_cards + higher_2025_cards + ordinary_2025_cards}
-    batch_dates.update({id(card): '2026-10-12' for card in higher_2024_cards + ordinary_2024_cards + higher_2023_cards})
+    batch_dates.update({id(card): '2026-10-12' for card in higher_2024_cards + ordinary_2024_cards + higher_2023_cards + ordinary_2023_cards})
     for reviewed in cards:
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
                           'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':batch_dates.get(id(reviewed),'2026-10-07')}
     corrected = ['agsci-2025-ol-q8b', *sorted(corrections_2025)]
     # Originals an earlier review rewrote and this one restores byte-identical:
     # kept as they were on main, or withdrawn as progress aliases of a pooled card.
-    restored = [*RESTORED_2025_HL, *RESTORED_2024_HL, *RESTORED_2023_HL]
+    restored = [*RESTORED_2025_HL, *RESTORED_2024_HL, *RESTORED_2023_HL, *RESTORED_2023_OL]
     assert not {c['id'] for c in restored} & {c['id'] for c in cards}
     return cards, restored, {'status': 'in-progress', 'reviewedAt': '2026-10-07',
                    'addedCardIds': [c['id'] for c in cards if c['id'] not in corrected],

@@ -443,7 +443,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(564);
+    expect(additions.size).toBe(569);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length + withdrawnFor(live).length).toBe(10_495);
@@ -500,6 +500,25 @@ describe('Mark Bank card preservation', () => {
       'agsci-2023-hl-q15cii': 'Replaces chart-label soup with the paper\'s lead-in and chart; restores both whole answers.',
       'agsci-2023-hl-q16aii': 'Replaces chart-label soup with the paper\'s lead-in and chart; accepts both published reasons.',
       'agsci-2023-hl-q18bii': 'Three factors and three descriptions at 3 each (F:3(3) + D:3(3)), not 6 per pair.',
+      'agsci-2023-ol-q1b': 'Replaces drawing-label debris in the stem and the scheme asterisk in the answer (6.5, exact term).',
+      'agsci-2023-ol-q2a': 'Any three of five printed breeds on one card at the published 3+2+1, every photograph decoded.',
+      'agsci-2023-ol-q4': 'Restores the first-correct 6+2+2 instead of 6 pinned to controlled grazing.',
+      'agsci-2023-ol-q6aiii': 'Replaces diagram-label soup with the paper\'s lead-in and the diagram.',
+      'agsci-2023-ol-q8a': 'Four placements at the first-correct 6+2+1+1, not one all-or-nothing 10-mark row.',
+      'agsci-2023-ol-q9ai': 'Adds the paper\'s lead-in and drops the scheme asterisk from the answer (Abomasum, exact term).',
+      'agsci-2023-ol-q9b-iii': 'Restores the first-correct 3+1 instead of 3 pinned to the ruminant column.',
+      'agsci-2023-ol-q10b-i-iii': 'Keeps part (i) only (3 marks); (ii) already ships as agsci-2023-ol-q10bii and (iii) is its own card.',
+      'agsci-2023-ol-q10bii': 'Replaces a run-together results table in the stem with the paper\'s lead-in and the table crop.',
+      'agsci-2023-ol-q13aii': 'Restores the first-correct 6+3+3 instead of 6 pinned to photograph A.',
+      'agsci-2023-ol-q13bii': 'Replaces chart-label soup with the paper\'s lead-in and chart; accepts both published conclusions.',
+      'agsci-2023-ol-q14a-i': 'Restores both whole published definitions.',
+      'agsci-2023-ol-q14bi': 'Replaces the stem "W X" with the paper\'s lead-in.',
+      'agsci-2023-ol-q14bii': 'Replaces the stem "W X" with the paper\'s lead-in.',
+      'agsci-2023-ol-q14b-iii': 'Replaces the stem "W X" with the paper\'s lead-in.',
+      'agsci-2023-ol-q15aii': 'Replaces the diagram key in the stem with the paper\'s lead-in and the soil diagrams.',
+      'agsci-2023-ol-q15b': 'Restores the first-correct 6+4 instead of 6 pinned to label A.',
+      'agsci-2023-ol-q16ai': 'Resazurin and bacterial-count methods as answer routes, every published point listed (3(4)).',
+      'agsci-2023-ol-q18ci': 'Restores the whole first published point.',
     };
     expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
     const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
@@ -522,6 +541,9 @@ describe('Mark Bank card preservation', () => {
     // 2023 Higher corrections keep each original's ID and total.
     for (const [id, marks] of [['agsci-2023-hl-q2a', 6], ['agsci-2023-hl-q4a', 6], ['agsci-2023-hl-q13ai', 14], ['agsci-2023-hl-q13aii', 12],
       ['agsci-2023-hl-q13c', 12], ['agsci-2023-hl-q15a', 12], ['agsci-2023-hl-q18bii', 18]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+    // 2023 Ordinary corrections keep each original's ID; the fused Q10(b)(i)-(iii) keeps part (i) at 3.
+    for (const [id, marks] of [['agsci-2023-ol-q2a', 6], ['agsci-2023-ol-q4', 10], ['agsci-2023-ol-q8a', 10], ['agsci-2023-ol-q10b-i-iii', 3],
+      ['agsci-2023-ol-q13aii', 12], ['agsci-2023-ol-q16ai', 12]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
