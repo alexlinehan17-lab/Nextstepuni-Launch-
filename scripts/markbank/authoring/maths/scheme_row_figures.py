@@ -99,6 +99,12 @@ AFFECTED = {
         'maths-2017-ol-p1-q5-a', 'maths-2017-ol-p1-q5-b', 'maths-2017-ol-p1-q6-b', 'maths-2017-ol-p1-q7-a', 'maths-2017-ol-p1-q7-d-i',
         'maths-2017-ol-p1-q7-d-ii', 'maths-2017-ol-p1-q8-c-ii', 'maths-2017-ol-p1-q8-d', 'maths-2017-ol-p1-q9-c', 'maths-2017-ol-p1-q9-e-i',
         'maths-2017-ol-p1-q9-e-ii', 'maths-2017-ol-p1-q9-e-iii',
+        # Paper 2: stacked fractions, mangled bold maths and image-only solutions.
+        'maths-2017-ol-p2-q1-a-ii', 'maths-2017-ol-p2-q1-b-i', 'maths-2017-ol-p2-q1-c-i', 'maths-2017-ol-p2-q2-b-ii', 'maths-2017-ol-p2-q2-c',
+        'maths-2017-ol-p2-q3-a-ii', 'maths-2017-ol-p2-q3-b', 'maths-2017-ol-p2-q3-c', 'maths-2017-ol-p2-q4-a', 'maths-2017-ol-p2-q4-b-ii',
+        'maths-2017-ol-p2-q5-a-ii', 'maths-2017-ol-p2-q5-b', 'maths-2017-ol-p2-q6-a', 'maths-2017-ol-p2-q7-b-ii', 'maths-2017-ol-p2-q7-b-iii',
+        'maths-2017-ol-p2-q7-c-i', 'maths-2017-ol-p2-q8-b', 'maths-2017-ol-p2-q8-c-i', 'maths-2017-ol-p2-q8-c-iii', 'maths-2017-ol-p2-q9-a-ii',
+        'maths-2017-ol-p2-q9-b-i', 'maths-2017-ol-p2-q9-b-ii', 'maths-2017-ol-p2-q9-c-i', 'maths-2017-ol-p2-q9-c-ii',
     ],
     (2017, 'hl'): [
         'maths-2017-hl-p1-q1-c-ii', 'maths-2017-hl-p1-q3-b', 'maths-2017-hl-p1-q4-b', 'maths-2017-hl-p1-q5-a',

@@ -1,0 +1,1209 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2017,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "b083dcd43dcc7cdcda77697d3a9f82f839a6f2c01902046d5ba3654e19c06319",
+  "schemeSha256": "690a3906d4a062d85e6d70258c22aeaced2e5c710da01a35d5930f0aa3a7e7c8",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and PDF pages 21–44 of the combined Ordinary Level scheme (the Paper 2 title page 21, the scale table on page 22, the summary of mark allocations on page 23, every Paper 2 model solution and marking note on pages 24–41, the Irish-language bonus-marks page 42 and the back pages). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 55,
+    "8": 40,
+    "9": 55
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    22,
+    23
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 55 marks, Q8 40 marks, Q9 55 marks). Every question is retained.",
+    "41 independently marked units, matching the printed summary of allocations on scheme page 23. Q1(b)(i)+(ii), Q5(a)(ii)+(iii) and Q7(c)(i)+(ii) each share one printed scale and are one task.",
+    "Paper 2 bands from the 2017 Ordinary scale table on scheme page 22, which differ from Paper 1’s: 5A 0,5; 5B 0,3,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,5,10; 10C 0,3,7,10; 10D 0,4,5,7,10; 15C 0,7,10,15; 15D 0,5,7,9,15. Every part prints the same ladder beside its scale.",
+    "This paper had no authored cards before this review; all 41 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; the scheme’s bullets are not reproduced, and a line or band that depends on a stacked fraction or mangled bold maths is not quoted as a fragment. The Q2(b), Q6(a) and Q6(b) prompts list the printed diagram labels; the diagrams themselves are in the question paper.",
+    "Twenty-four parts carry the SEC’s own print of their scheme row (model solution and every credit band), cropped from the scheme PDF and shown only after the reveal: every part that lost a model-solution line or a credit band to the text layer, and the image-only model solutions (the Q3(a)(ii) diagram, the Q4(a) construction, the Q5(a) Empirical Rule figure and the Q9(b)(i) chart).",
+    "The question booklet is LC003GLP200EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 1. Scheme page references are PDF positions (printed page number + 3); question-paper PDF positions match the printed page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2017-ol-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls.",
+      "questionText": "How many boys were born in Ireland in 2015?"
+    },
+    {
+      "id": "maths-2017-ol-p2-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls.",
+      "questionText": "Find the probability that a baby picked at random from those born in Ireland in 2015 is a boy. Give your answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2017-ol-p2-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls. Part (a)(ii): Find the probability that a baby picked at random from those born in Ireland in 2015 is a boy. Give your answer correct to 2 decimal places.",
+      "questionText": "Eight babies were born in Limerick’s Maternity Hospital on 1 May 2015. (i) Use your answer to part (a)(ii) to find the probability that the first three babies born were boys. Give your answer correct to 4 decimal places. (ii) Find the probability that the third birth was the first girl born in the hospital that day. Give your answer correct to 4 decimal places."
+    },
+    {
+      "id": "maths-2017-ol-p2-q1-c-i",
+      "printedParts": [
+        "Q1(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "The table below shows the probability of being born on a particular day of the week.",
+      "questionText": "Complete the table. Day: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Probability: 0·14, _, 0·15, 0·18, 0·15, 0·12, 0·1."
+    },
+    {
+      "id": "maths-2017-ol-p2-q1-c-ii",
+      "printedParts": [
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "The table below shows the probability of being born on a particular day of the week. Day: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Probability: 0·14, _, 0·15, 0·18, 0·15, 0·12, 0·1. Part (c)(i): Complete the table.",
+      "questionText": "In a particular week 1300 babies were born. Find the number of babies expected to be born on the Tuesday of that week."
+    },
+    {
+      "id": "maths-2017-ol-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "The circle c has centre (0, 0) and radius 5 units. Write down the equation of c."
+    },
+    {
+      "id": "maths-2017-ol-p2-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has centre (0, 0) and radius 5 units. Part (b): The diagram shows a semi-circle which is part of c. Diagram labels: A(−5, 0), B(5, 0), P(−4, k).",
+      "questionText": "The point P(−4, k), k > 0, is on the semi-circle. Find the value of k."
+    },
+    {
+      "id": "maths-2017-ol-p2-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The circle c has centre (0, 0) and radius 5 units. Part (b): The diagram shows a semi-circle which is part of c. Diagram labels: A(−5, 0), B(5, 0), P(−4, k). Part (b)(i): The point P(−4, k), k > 0, is on the semi-circle. Find the value of k.",
+      "questionText": "Show that the triangle ABP is right-angled at P."
+    },
+    {
+      "id": "maths-2017-ol-p2-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The circle c has centre (0, 0) and radius 5 units. Part (b): The diagram shows a semi-circle which is part of c. Diagram labels: A(−5, 0), B(5, 0), P(−4, k). Part (b)(i): The point P(−4, k), k > 0, is on the semi-circle. Find the value of k.",
+      "questionText": "Find the area of the region which is inside the semi-circle but outside the triangle ABP. Give your answer, in square units, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2017-ol-p2-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown.",
+      "questionText": "Show that |AD| = √5 units."
+    },
+    {
+      "id": "maths-2017-ol-p2-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown. Part (a)(i): Show that |AD| = √5 units.",
+      "questionText": "Find, in square units, the area of the rectangle ABCD."
+    },
+    {
+      "id": "maths-2017-ol-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown.",
+      "questionText": "Find the equation of the line BC. Give your answer in the form ax + by + c = 0, where a, b, and c ∈ ℤ."
+    },
+    {
+      "id": "maths-2017-ol-p2-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown.",
+      "questionText": "Use trigonometry to find the measure of the angle ABD. Give your answer correct to the nearest degree."
+    },
+    {
+      "id": "maths-2017-ol-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "Construct the triangle ABC, where |AB| = 8 cm, |AC| = 5 cm, and |BC| = 7 cm."
+    },
+    {
+      "id": "maths-2017-ol-p2-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "The diagram shows a square of side length 2k cm.",
+      "questionText": "Write down, in terms of k, an expression for the area of the square."
+    },
+    {
+      "id": "maths-2017-ol-p2-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram shows a square of side length 2k cm. Part (b)(i): Write down, in terms of k, an expression for the area of the square.",
+      "questionText": "An isosceles triangle with side lengths of 20 cm and hypotenuse of length 2k cm is removed from the square, as shown. Find the value of k (correct to 2 decimal places) and the area of the remaining (shaded) section."
+    },
+    {
+      "id": "maths-2017-ol-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In a survey, the IQ scores of 1200 people were recorded. The mean score was 100 points and the standard deviation was 15 points. Assuming that IQ scores are normally distributed, the data are shown on the diagram below.",
+      "questionText": "Fill in the missing numbers on the horizontal axis. Boxes: _, _, 85, _, _, _, _."
+    },
+    {
+      "id": "maths-2017-ol-p2-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)",
+        "Q5(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics",
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "In a survey, the IQ scores of 1200 people were recorded. The mean score was 100 points and the standard deviation was 15 points. Assuming that IQ scores are normally distributed, the data are shown on the diagram below.",
+      "questionText": "(ii) A person is chosen at random from those surveyed. Use the Empirical Rule to find the probability that this person has an IQ score between 70 and 130 points. (iii) Use the Empirical Rule to find the approximate number of people surveyed with an IQ score of between 85 and 115 points."
+    },
+    {
+      "id": "maths-2017-ol-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "A class of 24 pupils is made up of 10 boys and 14 girls. Chemistry is studied by 6 of the boys and 9 of the girls. A pupil is chosen at random from the class. Find the probability that the pupil chosen is a boy or is a pupil who does not study chemistry."
+    },
+    {
+      "id": "maths-2017-ol-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "Find the distance x in the diagram below (not to scale). Give your answer correct to 2 decimal places. Diagram labels: 65°, x, 10 cm, 63°."
+    },
+    {
+      "id": "maths-2017-ol-p2-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "Find the distance y in the diagram below (not to scale). Give your answer correct to 2 decimal places. Diagram labels: 8·5 cm, y, 53·8°, 10·2 cm."
+    },
+    {
+      "id": "maths-2017-ol-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown.",
+      "questionText": "The height of each cone is equal to the diameter of its base. If the radius of the base is 2·25 m, write the height of a cone."
+    },
+    {
+      "id": "maths-2017-ol-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. Part (a)(i): The height of each cone is equal to the diameter of its base. If the radius of the base is 2·25 m, write the height of a cone.",
+      "questionText": "Show that, correct to 2 decimal places, the slant height, l, of a cone is 5·03 m."
+    },
+    {
+      "id": "maths-2017-ol-p2-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. Part (b): In order to maintain the steel’s reflective shine, the surface is polished regularly. Part (a)(i): The height of each cone is equal to the diameter of its base. If the radius of the base is 2·25 m, write the height of a cone. Part (a)(ii): Show that, correct to 2 decimal places, the slant height, l, of a cone is 5·03 m.",
+      "questionText": "Find the curved surface area of the entire sculpture (14 cones). Give your answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2017-ol-p2-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. Part (b): In order to maintain the steel’s reflective shine, the surface is polished regularly. Part (b)(i): Find the curved surface area of the entire sculpture (14 cones). Give your answer correct to 2 decimal places.",
+      "questionText": "One litre of polish will cover 12·25 m². Find how many litres are needed to polish the entire sculpture. Give your answer correct to the nearest litre."
+    },
+    {
+      "id": "maths-2017-ol-p2-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. Part (b): In order to maintain the steel’s reflective shine, the surface is polished regularly. Part (b)(ii): One litre of polish will cover 12·25 m². Find how many litres are needed to polish the entire sculpture. Give your answer correct to the nearest litre.",
+      "questionText": "A container of polish contains 5 litres and costs A$110. Find the number of containers of polish that must be purchased in order to polish the entire sculpture and hence find the cost of the polish in euro ( A$1 = €0·68 ). Give your answer correct to the nearest euro."
+    },
+    {
+      "id": "maths-2017-ol-p2-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)",
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. Part (a)(i): The height of each cone is equal to the diameter of its base. If the radius of the base is 2·25 m, write the height of a cone. Part (a)(ii): Show that, correct to 2 decimal places, the slant height, l, of a cone is 5·03 m.",
+      "questionText": "The diagram (not to scale) shows the net of the outer surface of one of the cones of the sculpture. It is a sector of a circle of radius length 5·03 m with arc length p m and angle θ at the centre, as shown below. (i) Find p, the length of the arc of the sector. Give your answer correct to 2 decimal places. (ii) Find θ, the angle at the centre of the sector. Show all your working out. Give your answer correct to the nearest degree."
+    },
+    {
+      "id": "maths-2017-ol-p2-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0).",
+      "questionText": "From the diagram, write down the coordinates of the points A, B, D, and E."
+    },
+    {
+      "id": "maths-2017-ol-p2-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0). Part (a): From the diagram, write down the coordinates of the points A, B, D, and E.",
+      "questionText": "Show, using slopes, that the line segments [AB] and [DE] are parallel."
+    },
+    {
+      "id": "maths-2017-ol-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0). Part (a): From the diagram, write down the coordinates of the points A, B, D, and E.",
+      "questionText": "Show that the area of the triangle CBA is 4 square units."
+    },
+    {
+      "id": "maths-2017-ol-p2-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0). Part (a): From the diagram, write down the coordinates of the points A, B, D, and E.",
+      "questionText": "Find |AB|, the distance from A to B."
+    },
+    {
+      "id": "maths-2017-ol-p2-q8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0). Part (c)(ii): Find |AB|, the distance from A to B.",
+      "questionText": "The triangle CDE is an enlargement of the triangle CBA. Given that |DE| = 15 units, find the scale factor of the enlargement."
+    },
+    {
+      "id": "maths-2017-ol-p2-q8-c-iv",
+      "printedParts": [
+        "Q8(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0). Part (c)(i): Show that the area of the triangle CBA is 4 square units. Part (c)(iii): The triangle CDE is an enlargement of the triangle CBA. Given that |DE| = 15 units, find the scale factor of the enlargement.",
+      "questionText": "Use this scale factor to find the area of the triangle CDE."
+    },
+    {
+      "id": "maths-2017-ol-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1, United Kingdom EU Membership Referendum 2016, Votes: Leave the EU 17 410 742; Remain a member of the EU 16 141 241; Valid votes 33 551 983; Invalid or blank votes _; Total votes 33 577 342. Source: The UK Electoral Commission.",
+      "questionText": "Write the number of Invalid or blank votes into the table."
+    },
+    {
+      "id": "maths-2017-ol-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1, United Kingdom EU Membership Referendum 2016, Votes: Leave the EU 17 410 742; Remain a member of the EU 16 141 241; Valid votes 33 551 983; Invalid or blank votes _; Total votes 33 577 342. Source: The UK Electoral Commission.",
+      "questionText": "Write the number who voted to leave the EU as a percentage of the valid votes. Give your answer correct to the nearest percent."
+    },
+    {
+      "id": "maths-2017-ol-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1, United Kingdom EU Membership Referendum 2016, Votes: Leave the EU 17 410 742; Remain a member of the EU 16 141 241; Valid votes 33 551 983; Invalid or blank votes _; Total votes 33 577 342. Source: The UK Electoral Commission. Part (b): Table 2 shows the percentages of “Remain” and “Leave” voters in various age groups of those who voted in the referendum. Table 2, Age Group, Remain (%), Leave (%): 18 ‒ 24, 73, 27; 25 ‒ 34, 62, 38; 35 ‒ 44, 52, 48; 45 ‒ 54, 44, 56; 55 ‒ 64, 43, 57; 65+, 40, 60.",
+      "questionText": "Draw a suitable chart or charts to represent the data in Table 2."
+    },
+    {
+      "id": "maths-2017-ol-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1, United Kingdom EU Membership Referendum 2016, Votes: Leave the EU 17 410 742; Remain a member of the EU 16 141 241; Valid votes 33 551 983; Invalid or blank votes _; Total votes 33 577 342. Source: The UK Electoral Commission. Part (b): Table 2 shows the percentages of “Remain” and “Leave” voters in various age groups of those who voted in the referendum. Table 2, Age Group, Remain (%), Leave (%): 18 ‒ 24, 73, 27; 25 ‒ 34, 62, 38; 35 ‒ 44, 52, 48; 45 ‒ 54, 44, 56; 55 ‒ 64, 43, 57; 65+, 40, 60.",
+      "questionText": "Find the mean of the “Remain” values given in Table 2 and find the mean of the “Leave” values given in Table 2. Give your answers as percentages, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2017-ol-p2-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1, United Kingdom EU Membership Referendum 2016, Votes: Leave the EU 17 410 742; Remain a member of the EU 16 141 241; Valid votes 33 551 983; Invalid or blank votes _; Total votes 33 577 342. Source: The UK Electoral Commission. Part (b): Table 2 shows the percentages of “Remain” and “Leave” voters in various age groups of those who voted in the referendum. Table 2, Age Group, Remain (%), Leave (%): 18 ‒ 24, 73, 27; 25 ‒ 34, 62, 38; 35 ‒ 44, 52, 48; 45 ‒ 54, 44, 56; 55 ‒ 64, 43, 57; 65+, 40, 60. Part (b)(ii): Find the mean of the “Remain” values given in Table 2 and find the mean of the “Leave” values given in Table 2. Give your answers as percentages, correct to 2 decimal places.",
+      "questionText": "Explain why the answers to part b(ii) do not accurately reflect the actual outcome of the referendum."
+    },
+    {
+      "id": "maths-2017-ol-p2-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In the days following the UK referendum, a survey was conducted in Ireland on attitudes towards a British exit from the European Union.",
+      "questionText": "1200 people were surveyed. Find the margin of error of this survey. Write your answer as a percentage. Give your answer correct to the nearest percent."
+    },
+    {
+      "id": "maths-2017-ol-p2-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In the days following the UK referendum, a survey was conducted in Ireland on attitudes towards a British exit from the European Union. Part (c)(i): 1200 people were surveyed. Find the margin of error of this survey. Write your answer as a percentage. Give your answer correct to the nearest percent.",
+      "questionText": "In the Irish survey 578 of the 1200 surveyed agreed that a UK exit would have a negative effect on the Irish economy. Use your answer to part c(i) above to create a 95% confidence interval for the proportion of the Irish population who agreed that a UK exit would have a negative effect on the Irish economy."
+    },
+    {
+      "id": "maths-2017-ol-p2-q9-c-iii",
+      "printedParts": [
+        "Q9(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In the days following the UK referendum, a survey was conducted in Ireland on attitudes towards a British exit from the European Union. Part (c)(ii): In the Irish survey 578 of the 1200 surveyed agreed that a UK exit would have a negative effect on the Irish economy. Use your answer to part c(i) above to create a 95% confidence interval for the proportion of the Irish population who agreed that a UK exit would have a negative effect on the Irish economy.",
+      "questionText": "After the survey, a political party claimed that 53% of the Irish population believed that the decision of the UK to leave the EU would have a negative effect on the Irish economy. Use your answer to part c(ii) above to conduct a hypothesis test, at the 5% level of significance, to test the party’s claim. Give your conclusion in the context of the question."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        12
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "the net of the outer surface of one of the cones",
+      "classification": "mathematical-context",
+      "reason": "All fourteen cones are identical; “one of the cones” names the object measured in one required task, not a choice between printed prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:7ea8a04fa61034d9": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "12:3e6d1782df6cd9db": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "13:c61c20fa5256242e": {
+      "classification": "mathematical-context",
+      "reason": "All fourteen cones are identical; “one of the cones” names the object measured in one required task, not a choice between printed prompts."
+    }
+  }
+}

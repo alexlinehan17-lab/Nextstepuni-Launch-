@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, 2018 Higher Level Paper 2, 2018 Ordinary Level Paper 1, 2018 Ordinary Level Paper 2, 2017 Higher Level Paper 1, 2017 Higher Level Paper 2, 2017 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 2116,
-  "reviewedTasks": 2116,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, 2018 Higher Level Paper 2, 2018 Ordinary Level Paper 1, 2018 Ordinary Level Paper 2, 2017 Higher Level Paper 1, 2017 Higher Level Paper 2, 2017 Ordinary Level Paper 1, 2017 Ordinary Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 2157,
+  "reviewedTasks": 2157,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 382,
+  "targetedRegressionTests": 386,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -1410,5 +1410,26 @@
     "schemeRowFigures": "17 parts carry the scheme-row crop (stacked fractions filtered as mark cells; the Q7(a) tile pattern and Q8(c)(ii) graph). All 17 crops opened and checked.",
     "coverageBaseline": "1702/3474 asks covered, 2 orphans (shared-reader faults from 2017 HL, unchanged), 0 excluded, 1772 open",
     "validation": "Deck generation (2,116 built, 0 dropped), Atlas generation and --check (521 placements), audit --check-reviewed, scheme quote check of all 35 cards, generator re-run rebuilds all 35 cards identically, ten regression files (382/382), typecheck and diff whitespace check passed."
+  },
+  "ordinary2017p2": {
+    "paper": "2017 Ordinary Level Paper 2",
+    "paperFileid": "LC003GLP200EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "newPaper": true,
+    "independentlyReviewedTasks": 41,
+    "existingRuntimeCardsReviewed": 0,
+    "addedRuntimeCards": 41,
+    "historicalRejectsRemaining": 0,
+    "targetedRegressionTests": 386,
+    "previousRuntimeIdsRetained": 2116,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 20,
+    "schemePagesInspected": 24,
+    "scaleNote": "2017 Ordinary Paper 2 ladders differ from Paper 1: 5B 0,3,5; 5C 0,2,3,5; 10C 0,3,7,10; 10D 0,4,5,7,10; 15C 0,7,10,15; 15D 0,5,7,9,15. Q1(b)(i)+(ii), Q5(a)(ii)+(iii) and Q7(c)(i)+(ii) are one task each.",
+    "schemeRowFigures": "24 of 41 parts carry the scheme-row crop (stacked fractions, mangled bold maths, and the image-only Q3(a)(ii) diagram, Q4(a) construction, Q5(a) Empirical Rule figure and Q9(b)(i) chart). All 24 crops opened and checked.",
+    "coverageBaseline": "1746/3474 asks covered, 2 orphans (shared-reader faults from 2017 HL, unchanged), 0 excluded, 1728 open",
+    "validation": "Deck generation (2,157 built, 0 dropped), Atlas generation and --check (530 placements), audit --check-reviewed, scheme quote check of all 41 cards, generator re-run rebuilds all 41 cards identically, ten regression files (386/386), typecheck and diff whitespace check passed."
   }
 }

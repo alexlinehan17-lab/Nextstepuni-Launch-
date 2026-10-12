@@ -101479,5 +101479,2623 @@
   "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "stem": "The Ponderal Index is a number which relates a person’s height to their weight. The formula for the Ponderal Index, P, is P = M/h³ where M is weight in kg and h is height in metres. Part (e)(ii): Rearrange the formula P = M/h³ to give a formula which will give the height of a person in terms of their weight and Ponderal index.",
   "figureKey": "maths-2017-OL-scheme-p019-i2"
+ },
+ {
+  "id": "maths-2017-ol-p2-q1-a-i",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q1-a-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q1(a)(i)",
+  "questionText": "How many boys were born in Ireland in 2015?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q1-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 65909 − 32290 = 33619",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Indicates relevant subtraction.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls."
+ },
+ {
+  "id": "maths-2017-ol-p2-q1-a-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q1-a-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q1(a)(ii)",
+  "questionText": "Find the probability that a baby picked at random from those born in Ireland in 2015 is a boy. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q1-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — =0·51(51·01%)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Either #(E) or #(S) correct. (Answer must be shown in fraction format).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls.",
+  "figureKey": "maths-2017-OL-scheme-p024-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q1-b-i",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q1-b-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q1(b)(i), (b)(ii)",
+  "questionText": "Eight babies were born in Limerick’s Maternity Hospital on 1 May 2015. (i) Use your answer to part (a)(ii) to find the probability that the first three babies born were boys. Give your answer correct to 4 decimal places. (ii) Find the probability that the third birth was the first girl born in the hospital that day. Give your answer correct to 4 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q1-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (0·51)³ = 0·132651 = 0·1327",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (0·51)²(0·49) = 0 ·127449 = 0·1274",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 0·49",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One correct answer.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Substantial work in both parts.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answers without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls. Part (a)(ii): Find the probability that a baby picked at random from those born in Ireland in 2015 is a boy. Give your answer correct to 2 decimal places.",
+  "figureKey": "maths-2017-OL-scheme-p025-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q1-c-i",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q1-c-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q1(c)(i)",
+  "questionText": "Complete the table. Day: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Probability: 0·14, _, 0·15, 0·18, 0·15, 0·12, 0·1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q1-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1 – (0·14+0·15+0·18+0·15+0·12+0·1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 1 – 0·84",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·16",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Partial Credit — Formulates addition of some probabilities.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-c-i-solution-5",
+    "kind": "point",
+    "verbatim": "Partial Credit — 1 ‒ (incorrect) Sum",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-c-i-solution-6",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The table below shows the probability of being born on a particular day of the week.",
+  "figureKey": "maths-2017-OL-scheme-p025-i1"
+ },
+ {
+  "id": "maths-2017-ol-p2-q1-c-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q1-c-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q1(c)(ii)",
+  "questionText": "In a particular week 1300 babies were born. Find the number of babies expected to be born on the Tuesday of that week.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q1-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Tuesday Babies = 1300 × 0·16 = 208",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Probability of (Tuesday) used.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — Work of merit with 1300.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q1-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The table below shows the probability of being born on a particular day of the week. Day: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Probability: 0·14, _, 0·15, 0·18, 0·15, 0·12, 0·1. Part (c)(i): Complete the table."
+ },
+ {
+  "id": "maths-2017-ol-p2-q2-a",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q2-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q2(a)",
+  "questionText": "The circle c has centre (0, 0) and radius 5 units. Write down the equation of c.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x² + y² = 25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Equation of circle formula with some substitution. e.g. x² + y² =.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 25 or 5².",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-a-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Equation of circle formula fully substituted. i.e. x² + y² = 5²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2017-ol-p2-q2-b-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q2-b-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q2(b)(i)",
+  "questionText": "The point P(−4, k), k > 0, is on the semi-circle. Find the value of k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q2-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 16 + k² = 25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — k = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (‒4) or k substituted into equation of circle.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (−4)² + k² = 25.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Leaves as k² = 9.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The circle c has centre (0, 0) and radius 5 units. Part (b): The diagram shows a semi-circle which is part of c. Diagram labels: A(−5, 0), B(5, 0), P(−4, k)."
+ },
+ {
+  "id": "maths-2017-ol-p2-q2-b-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q2-b-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q2(b)(ii)",
+  "questionText": "Show that the triangle ABP is right-angled at P.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q2-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — AB is the diameter of the circle so the triangle is right-angled at P",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — mPA = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — mPA × mPB = –1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct relevant formula with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — AB is the diameter (but fails to draw conclusion).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Demonstrates understanding of a requirement to use slopes. e.g. [m₁ × m₂ = –1]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct slope, or length.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-ii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Both slopes correct but no conclusion.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-ii-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Triangle ABP is right angled.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-b-ii-solution-10",
+    "kind": "point",
+    "verbatim": "Zero Credit — Triangle drawn with P identified as right angled.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The circle c has centre (0, 0) and radius 5 units. Part (b): The diagram shows a semi-circle which is part of c. Diagram labels: A(−5, 0), B(5, 0), P(−4, k). Part (b)(i): The point P(−4, k), k > 0, is on the semi-circle. Find the value of k.",
+  "figureKey": "maths-2017-OL-scheme-p026-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q2-c",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q2-c",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q2(c)",
+  "questionText": "Find the area of the region which is inside the semi-circle but outside the triangle ABP. Give your answer, in square units, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Aregion = Asemi-circle − Atriangle",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Aregion = 39·2699 − 15",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Aregion = 24·2699",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — Aregion = 24·27",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-c-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Area of circle or semi‐circle formula with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Area of triangle formula with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-c-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Area = Area of semicircle ‒ Area of triangle (or equivalent).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q2-c-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Both areas found.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The circle c has centre (0, 0) and radius 5 units. Part (b): The diagram shows a semi-circle which is part of c. Diagram labels: A(−5, 0), B(5, 0), P(−4, k). Part (b)(i): The point P(−4, k), k > 0, is on the semi-circle. Find the value of k.",
+  "figureKey": "maths-2017-OL-scheme-p027-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q3-a-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q3-a-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q3(a)(i)",
+  "questionText": "Show that |AD| = √5 units.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q3-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |AD| = √(1 + 4) = √5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct relevant formula with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work with Pythagoras (check candidates diagram)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Distance formula fully substituted.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Pythagoras’s fully substituted.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Zero Credit — Measurement from diagram (2·2).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown."
+ },
+ {
+  "id": "maths-2017-ol-p2-q3-a-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q3-a-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q3(a)(ii)",
+  "questionText": "Find, in square units, the area of the rectangle ABCD.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q3-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |CD| = √(16 + 4) = √20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Area = √20 × √5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Area = 10",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Area = |AD| × |CD|.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct relevant formula with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Area of triangles calculated.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Area = √20 × √5.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-ii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Area = 20 – (4+4+1+1).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Zero Credit — Measurement from diagram (2·2, 4·5).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-a-ii-solution-10",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown. Part (a)(i): Show that |AD| = √5 units.",
+  "figureKey": "maths-2017-OL-scheme-p028-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q3-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q3-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q3(b)",
+  "questionText": "Find the equation of the line BC. Give your answer in the form ax + by + c = 0, where a, b, and c ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — mBC = −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — y − 3 = −2(x − 6)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 2x + y − 15 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct relevant formula with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Eq. of line formula fully substituted.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-b-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One incorrect substitution followed by correct solution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown.",
+  "figureKey": "maths-2017-OL-scheme-p028-i1"
+ },
+ {
+  "id": "maths-2017-ol-p2-q3-c",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q3-c",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q3(c)",
+  "questionText": "Use trigonometry to find the measure of the angle ABD. Give your answer correct to the nearest degree.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Showing ∠ABD = 26·565 = 27°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-c-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any work of merit e.g. identifies ∠ABD.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-c-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit with correct trigonometric ratio.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-c-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct relevant formula with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-c-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Sets up a correct trigonometric ratio.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-c-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct relevant formula fully substituted.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-c-solution-7",
+    "kind": "point",
+    "verbatim": "Misreading (−1) — Finds |∠ADB| correctly.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q3-c-solution-8",
+    "kind": "point",
+    "verbatim": "Note — Rad = 0·4636 Grad = 29·5167",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown.",
+  "figureKey": "maths-2017-OL-scheme-p029-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q4-a",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q4-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q4(a)",
+  "questionText": "Construct the triangle ABC, where |AB| = 8 cm, |AC| = 5 cm, and |BC| = 7 cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Pilot diagram drawn.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct length drawn.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-a-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — TWO correct lengths drawn.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-a-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Construction correct without arcs (having checked length of sides).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Construction correct but vertices incorrectly named or omitted.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-a-solution-6",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct construction with sides or vertices labelled correctly.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2017-OL-scheme-p030-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q4-b-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q4-b-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q4(b)(i)",
+  "questionText": "Write down, in terms of k, an expression for the area of the square.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q4-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Area = 2k × 2k",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 4k² cm²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Area of square written as L × W (or similar).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct relevant formula fully substituted.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram shows a square of side length 2k cm."
+ },
+ {
+  "id": "maths-2017-ol-p2-q4-b-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q4-b-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q4(b)(ii)",
+  "questionText": "An isosceles triangle with side lengths of 20 cm and hypotenuse of length 2k cm is removed from the square, as shown. Find the value of k (correct to 2 decimal places) and the area of the remaining (shaded) section.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 4k² = 20² + 20²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — k² = 200",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — k = 10√2 = 14·14",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — Area = 4k² − Area ∆",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — Area = 600(599·7584) cm²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any use of Pythagoras’s Theorem.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Area of Triangle Formula with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Formulates for area using subtraction.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Value of k found.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Area of Triangle = 200.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Area of square and area of triangle found.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q4-b-ii-solution-12",
+    "kind": "point",
+    "verbatim": "Note — Accept correct rounding of answers.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram shows a square of side length 2k cm. Part (b)(i): Write down, in terms of k, an expression for the area of the square.",
+  "figureKey": "maths-2017-OL-scheme-p031-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q5-a-i",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q5-a-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q5(a)(i)",
+  "questionText": "Fill in the missing numbers on the horizontal axis. Boxes: _, _, 85, _, _, _, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 55 70 Given 100 115 130 145",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct new entry.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Writes x̅ = 100 or σ = 15.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Writes x̅ , σ, 2σ or 3σ on axis correctly.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Four correct new entries.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In a survey, the IQ scores of 1200 people were recorded. The mean score was 100 points and the standard deviation was 15 points. Assuming that IQ scores are normally distributed, the data are shown on the diagram below."
+ },
+ {
+  "id": "maths-2017-ol-p2-q5-a-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q5-a-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q5(a)(ii), (a)(iii)",
+  "questionText": "(ii) A person is chosen at random from those surveyed. Use the Empirical Rule to find the probability that this person has an IQ score between 70 and 130 points. (iii) Use the Empirical Rule to find the approximate number of people surveyed with an IQ score of between 85 and 115 points.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q5-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 0·68 × 1200 = 816",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Shows some understanding of the Empirical Rule.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit with 1200.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One correct answer. [e.g. p = 0·95(95%)]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Error in the use of the Empirical Rule. [e.g. (a)(ii) 68% and (a)(iii) 95% of 1200 = 1140]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Substantial work in both parts.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In a survey, the IQ scores of 1200 people were recorded. The mean score was 100 points and the standard deviation was 15 points. Assuming that IQ scores are normally distributed, the data are shown on the diagram below.",
+  "figureKey": "maths-2017-OL-scheme-p032-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q5-b",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q5-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q5(b)",
+  "questionText": "A class of 24 pupils is made up of 10 boys and 14 girls. Chemistry is studied by 6 of the boys and 9 of the girls. A pupil is chosen at random from the class. Find the probability that the pupil chosen is a boy or is a pupil who does not study chemistry.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Partial Credit — Any relevant work towards creating at least one correct probability.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Answer as 10 + 5.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Zero Credit — Answer as 15.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q5-b-solution-4",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2017-OL-scheme-p032-i1"
+ },
+ {
+  "id": "maths-2017-ol-p2-q6-a",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q6-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q6(a)",
+  "questionText": "Find the distance x in the diagram below (not to scale). Give your answer correct to 2 decimal places. Diagram labels: 65°, x, 10 cm, 63°.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x = 8·84 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any work of merit. [e.g. Third Angle = 52°]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Sine rule with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-a-solution-4",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Finds the length of the base side. (10·17)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Full correct substitution without calculation.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-a-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Incorrect calculator mode but otherwise correct. (once only)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-a-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-a-solution-8",
+    "kind": "point",
+    "verbatim": "Note — Rad = 58·95392809 Grad = 8·721730163",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "figureKey": "maths-2017-OL-scheme-p033-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q6-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q6-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 OL Paper 2 Q6(b)",
+  "questionText": "Find the distance y in the diagram below (not to scale). Give your answer correct to 2 decimal places. Diagram labels: 8·5 cm, y, 53·8°, 10·2 cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — y² = 8·5² + 10·2² − 2(8·5)(10·2) cos 53·8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — y² = 73·87897723",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — y = 8·595288083",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — y = 8·60 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Writes Cosine Rule correctly with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Two variables correctly substituted into correct relevant formula.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — y² = 73·878977 without work and stops.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Fully correct substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One incorrect substitution followed by correct calculation.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Incorrect calculator mode but otherwise correct. (once only)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-12",
+    "kind": "point",
+    "verbatim": "Zero Credit — Treating triangle as right‐angled.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q6-b-solution-13",
+    "kind": "point",
+    "verbatim": "Note — Rad = 18·34 Grad = 7·82",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2017-ol-p2-q7-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-a-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q7(a)(i)",
+  "questionText": "The height of each cone is equal to the diameter of its base. If the radius of the base is 2·25 m, write the height of a cone.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ = 2r",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 2(2·25)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 4·5 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Partial Credit — Correct relationship identified.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Partial Credit — 2·25 ÷ 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Partial Credit — ℎ = d drawn on a diagram.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown."
+ },
+ {
+  "id": "maths-2017-ol-p2-q7-a-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-a-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q7(a)(ii)",
+  "questionText": "Show that, correct to 2 decimal places, the slant height, l, of a cone is 5·03 m.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — l² = h² + r²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — l² = (4·5)² + (2·25)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — l² = 25·3125",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — l = √25·3125 = 5·03",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some use of Pythagoras.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit. [e.g. Work with 2·25 / 4·5].",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Uses (5·03) to give: (5·03)² = (4·5)² + (2·25)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-ii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Pythagoras fully substituted.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-ii-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finishes with only one error.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-a-ii-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Stops at √25·3125",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. Part (a)(i): The height of each cone is equal to the diameter of its base. If the radius of the base is 2·25 m, write the height of a cone."
+ },
+ {
+  "id": "maths-2017-ol-p2-q7-b-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-b-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q7(b)(i)",
+  "questionText": "Find the curved surface area of the entire sculpture (14 cones). Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q7-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — CSA = 14 × πrl",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 14 × π (2·25)(5·03)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 497·77 m²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — CSA formula written with some correct substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit. [ e.g. Use of 2·25/5·03].",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Indicates multiplication by 14.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Fully correct substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-i-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finishes with only one error.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-i-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — CSA of one cone calculated (35·55).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. Part (b): In order to maintain the steel’s reflective shine, the surface is polished regularly. Part (a)(i): The height of each cone is equal to the diameter of its base. If the radius of the base is 2·25 m, write the height of a cone. Part (a)(ii): Show that, correct to 2 decimal places, the slant height, l, of a cone is 5·03 m."
+ },
+ {
+  "id": "maths-2017-ol-p2-q7-b-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-b-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q7(b)(ii)",
+  "questionText": "One litre of polish will cover 12·25 m². Find how many litres are needed to polish the entire sculpture. Give your answer correct to the nearest litre.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q7-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 41",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Works with answer to (b) (i).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — Works with 12·25.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. Part (b): In order to maintain the steel’s reflective shine, the surface is polished regularly. Part (b)(i): Find the curved surface area of the entire sculpture (14 cones). Give your answer correct to 2 decimal places.",
+  "figureKey": "maths-2017-OL-scheme-p035-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q7-b-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "p2-q7-b-iii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q7(b)(iii)",
+  "questionText": "A container of polish contains 5 litres and costs A$110. Find the number of containers of polish that must be purchased in order to polish the entire sculpture and hence find the cost of the polish in euro ( A$1 = €0·68 ). Give your answer correct to the nearest euro.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q7-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Cost = 9 × 110",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = A$ 990",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 990 × €0·68",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = €673·20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — = €673",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Finds correct number of containers. (without work)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-iii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds A$990 or consistent equivalent.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-b-iii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finishes with only one error.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. Part (b): In order to maintain the steel’s reflective shine, the surface is polished regularly. Part (b)(ii): One litre of polish will cover 12·25 m². Find how many litres are needed to polish the entire sculpture. Give your answer correct to the nearest litre.",
+  "figureKey": "maths-2017-OL-scheme-p035-i1"
+ },
+ {
+  "id": "maths-2017-ol-p2-q7-c-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-c-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q7(c)(i), (c)(ii)",
+  "questionText": "The diagram (not to scale) shows the net of the outer surface of one of the cones of the sculpture. It is a sector of a circle of radius length 5·03 m with arc length p m and angle θ at the centre, as shown below. (i) Find p, the length of the arc of the sector. Give your answer correct to 2 decimal places. (ii) Find θ, the angle at the centre of the sector. Show all your working out. Give your answer correct to the nearest degree.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q7-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 2π (2·25)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 14·14 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — θ = 161°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct relevant formula written with some correct substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-c-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Identifies r = 2·25 or CSA = (35·55).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-c-i-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct use of 360°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-c-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One correct.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q7-c-i-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Substantial work in both parts.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. Part (a)(i): The height of each cone is equal to the diameter of its base. If the radius of the base is 2·25 m, write the height of a cone. Part (a)(ii): Show that, correct to 2 decimal places, the slant height, l, of a cone is 5·03 m.",
+  "figureKey": "maths-2017-OL-scheme-p035-i2"
+ },
+ {
+  "id": "maths-2017-ol-p2-q8-a",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q8-a",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q8(a)",
+  "questionText": "From the diagram, write down the coordinates of the points A, B, D, and E.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q8-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A = (1, −2) B = (4, 2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — D = (6, −6) E = (15, 6)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — ONE correct point.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-a-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — THREE correct points.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — All answers written consistently as (y, x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0)."
+ },
+ {
+  "id": "maths-2017-ol-p2-q8-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q8-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q8(b)",
+  "questionText": "Show, using slopes, that the line segments [AB] and [DE] are parallel.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Conclusion: Parallel, or slopes are the same.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-b-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any mention of same slopes or similar.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Slope formula written with some relevant substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Rise over Run (Written or indicated).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-b-solution-5",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Slope formula fully substituted for one slope.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-b-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — One correct slope.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-b-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Both slopes but no conclusion.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One error in substitution followed by correct calculation and consistent conclusion.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-b-solution-9",
+    "kind": "point",
+    "verbatim": "Full Credit — Equal slopes and conclusion.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0). Part (a): From the diagram, write down the coordinates of the points A, B, D, and E.",
+  "figureKey": "maths-2017-OL-scheme-p036-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q8-c-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q8-c-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q8(c)(i)",
+  "questionText": "Show that the area of the triangle CBA is 4 square units.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q8-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A = (1, −2) B = (4, 2) C = (4·5, 0)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — A = (0, 0) B = (3, 4) C = (3·5, 2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct relevant formula with some correct/consistent substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One point translated to (0, 0).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Error in translation and area calculated correctly.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — No translation but uses TWO of the points A, B, C and area calculated correctly.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One error in substitution followed by correct calculation.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0). Part (a): From the diagram, write down the coordinates of the points A, B, D, and E.",
+  "figureKey": "maths-2017-OL-scheme-p036-i1"
+ },
+ {
+  "id": "maths-2017-ol-p2-q8-c-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q8-c-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q8(c)(ii)",
+  "questionText": "Find |AB|, the distance from A to B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q8-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |AB| = √(3² + 4²) = 5 units",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct relevant formula with some substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any work of merit indicated in this part.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct substitution without calculation.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One error in substitution followed by correct calculation.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-ii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0). Part (a): From the diagram, write down the coordinates of the points A, B, D, and E."
+ },
+ {
+  "id": "maths-2017-ol-p2-q8-c-iii",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q8-c-iii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q8(c)(iii)",
+  "questionText": "The triangle CDE is an enlargement of the triangle CBA. Given that |DE| = 15 units, find the scale factor of the enlargement.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q8-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Partial Credit — Use of answer to part (c)(ii).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Scale factor formula written or indicated.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — Attempts to calculate |AB| in this part.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0). Part (c)(ii): Find |AB|, the distance from A to B.",
+  "figureKey": "maths-2017-OL-scheme-p037-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q8-c-iv",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q8-c-iv",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q8(c)(iv)",
+  "questionText": "Use this scale factor to find the area of the triangle CDE.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q8-c-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Area = 4 × 3² = 36 units²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit with answer from (c)(iii).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-iv-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit with answer from (c)(i).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-iv-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Area as 3 × 4 = 12 or equivalent.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q8-c-iv-solution-5",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the triangles CBA and CDE. The coordinates of C are (4·5, 0). Part (c)(i): Show that the area of the triangle CBA is 4 square units. Part (c)(iii): The triangle CDE is an enlargement of the triangle CBA. Given that |DE| = 15 units, find the scale factor of the enlargement."
+ },
+ {
+  "id": "maths-2017-ol-p2-q9-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p2-q9-a-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q9(a)(i)",
+  "questionText": "Write the number of Invalid or blank votes into the table.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 33 577 342 − 33 551 983 = 25 359 invalid votes",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — Total ‒ (leave + remain) = 25 359",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — Relevant addition or subtraction indicated.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Note — If Correct answer not written in Table 1 Award F.*",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1, United Kingdom EU Membership Referendum 2016, Votes: Leave the EU 17 410 742; Remain a member of the EU 16 141 241; Valid votes 33 551 983; Invalid or blank votes _; Total votes 33 577 342. Source: The UK Electoral Commission."
+ },
+ {
+  "id": "maths-2017-ol-p2-q9-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p2-q9-a-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q9(a)(ii)",
+  "questionText": "Write the number who voted to leave the EU as a percentage of the valid votes. Give your answer correct to the nearest percent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q9-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 52(%)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct element in relevant fraction.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Ignores or mishandles % calculation. [e.g. = 0·52% or 0·5189%].",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1, United Kingdom EU Membership Referendum 2016, Votes: Leave the EU 17 410 742; Remain a member of the EU 16 141 241; Valid votes 33 551 983; Invalid or blank votes _; Total votes 33 577 342. Source: The UK Electoral Commission.",
+  "figureKey": "maths-2017-OL-scheme-p038-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q9-b-i",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q9-b-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q9(b)(i)",
+  "questionText": "Draw a suitable chart or charts to represent the data in Table 2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Charts above:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Effort to draw a chart. [e.g. One data point displayed correctly]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One fully correct chart.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Two substantial charts shown. [e.g. Three or more data elements illustrated with scales and axes]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1, United Kingdom EU Membership Referendum 2016, Votes: Leave the EU 17 410 742; Remain a member of the EU 16 141 241; Valid votes 33 551 983; Invalid or blank votes _; Total votes 33 577 342. Source: The UK Electoral Commission. Part (b): Table 2 shows the percentages of “Remain” and “Leave” voters in various age groups of those who voted in the referendum. Table 2, Age Group, Remain (%), Leave (%): 18 ‒ 24, 73, 27; 25 ‒ 34, 62, 38; 35 ‒ 44, 52, 48; 45 ‒ 54, 44, 56; 55 ‒ 64, 43, 57; 65+, 40, 60.",
+  "figureKey": "maths-2017-OL-scheme-p039-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q9-b-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q9-b-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q9(b)(ii)",
+  "questionText": "Find the mean of the “Remain” values given in Table 2 and find the mean of the “Leave” values given in Table 2. Give your answers as percentages, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Remain mean = 52·33%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Leave mean = 47·67%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Indicates some relevant addition.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant formula with some correct substitution.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One mean correct.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1, United Kingdom EU Membership Referendum 2016, Votes: Leave the EU 17 410 742; Remain a member of the EU 16 141 241; Valid votes 33 551 983; Invalid or blank votes _; Total votes 33 577 342. Source: The UK Electoral Commission. Part (b): Table 2 shows the percentages of “Remain” and “Leave” voters in various age groups of those who voted in the referendum. Table 2, Age Group, Remain (%), Leave (%): 18 ‒ 24, 73, 27; 25 ‒ 34, 62, 38; 35 ‒ 44, 52, 48; 45 ‒ 54, 44, 56; 55 ‒ 64, 43, 57; 65+, 40, 60.",
+  "figureKey": "maths-2017-OL-scheme-p040-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q9-b-iii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q9-b-iii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q9(b)(iii)",
+  "questionText": "Explain why the answers to part b(ii) do not accurately reflect the actual outcome of the referendum.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q9-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — The number of voters in each age group is not used in the calculation of the mean in (b)(ii). The mean is based on percentage data of voters in each age group and is therefore unreliable.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — The number of voters in each age group is not used.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-b-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — The mean values calculated in (b)(ii) are based on percentage data.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1, United Kingdom EU Membership Referendum 2016, Votes: Leave the EU 17 410 742; Remain a member of the EU 16 141 241; Valid votes 33 551 983; Invalid or blank votes _; Total votes 33 577 342. Source: The UK Electoral Commission. Part (b): Table 2 shows the percentages of “Remain” and “Leave” voters in various age groups of those who voted in the referendum. Table 2, Age Group, Remain (%), Leave (%): 18 ‒ 24, 73, 27; 25 ‒ 34, 62, 38; 35 ‒ 44, 52, 48; 45 ‒ 54, 44, 56; 55 ‒ 64, 43, 57; 65+, 40, 60. Part (b)(ii): Find the mean of the “Remain” values given in Table 2 and find the mean of the “Leave” values given in Table 2. Give your answers as percentages, correct to 2 decimal places."
+ },
+ {
+  "id": "maths-2017-ol-p2-q9-c-i",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q9-c-i",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q9(c)(i)",
+  "questionText": "1200 people were surveyed. Find the margin of error of this survey. Write your answer as a percentage. Give your answer correct to the nearest percent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q9-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 2·88675%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 3%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Sets up work as √1200",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In the days following the UK referendum, a survey was conducted in Ireland on attitudes towards a British exit from the European Union.",
+  "figureKey": "maths-2017-OL-scheme-p041-i0"
+ },
+ {
+  "id": "maths-2017-ol-p2-q9-c-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q9-c-ii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q9(c)(ii)",
+  "questionText": "In the Irish survey 578 of the 1200 surveyed agreed that a UK exit would have a negative effect on the Irish economy. Use your answer to part c(i) above to create a 95% confidence interval for the proportion of the Irish population who agreed that a UK exit would have a negative effect on the Irish economy.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q9-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 48 − 3 < p < 48 + 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 45 < p < 51",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit with margin of error from (c)(i).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One boundary formed (48+3 or 48–3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct answer without work.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-ii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Use of version of formula from HL.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In the days following the UK referendum, a survey was conducted in Ireland on attitudes towards a British exit from the European Union. Part (c)(i): 1200 people were surveyed. Find the margin of error of this survey. Write your answer as a percentage. Give your answer correct to the nearest percent.",
+  "figureKey": "maths-2017-OL-scheme-p041-i1"
+ },
+ {
+  "id": "maths-2017-ol-p2-q9-c-iii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q9-c-iii",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 OL Paper 2 Q9(c)(iii)",
+  "questionText": "After the survey, a political party claimed that 53% of the Irish population believed that the decision of the UK to leave the EU would have a negative effect on the Irish economy. Use your answer to part c(ii) above to conduct a hypothesis test, at the 5% level of significance, to test the party’s claim. Give your conclusion in the context of the question.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-ol-p2-q9-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — H0 = p = 53%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — H1 = p ≠ 53%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 53% is not within the C. I. at (c)(ii)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 45·17 < p < 51·17",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — Reject H0, Party claim is false",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Null hypothesis stated.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-iii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — C. I. written.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2017-ol-p2-q9-c-iii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Conclusion OK but not given in the context of the question. (Reject null hypothesis but no mention of party claim).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2017 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In the days following the UK referendum, a survey was conducted in Ireland on attitudes towards a British exit from the European Union. Part (c)(ii): In the Irish survey 578 of the 1200 surveyed agreed that a UK exit would have a negative effect on the Irish economy. Use your answer to part c(i) above to create a 95% confidence interval for the proportion of the Irish population who agreed that a UK exit would have a negative effect on the Irish economy."
  }
 ]
