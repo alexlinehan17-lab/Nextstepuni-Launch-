@@ -55,6 +55,7 @@ import geography_review_2022_ol as REVIEW_2022_OL
 import geography_review_2021_hl as REVIEW_2021_HL
 import geography_review_2021_ol as REVIEW_2021_OL
 import geography_review_2020_hl as REVIEW_2020_HL
+import geography_review_2020_ol as REVIEW_2020_OL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -94,6 +95,7 @@ REVIEWED = {
     (2021, 'higher'): REVIEW_2021_HL,
     (2021, 'ordinary'): REVIEW_2021_OL,
     (2020, 'higher'): REVIEW_2020_HL,
+    (2020, 'ordinary'): REVIEW_2020_OL,
 }
 
 # 2021-2026 are carded in full. An earlier sitting joins the corpus only once
@@ -1584,7 +1586,7 @@ def main() -> int:
     print(
         f"Wrote {len(payload['cards'])} Geography cards from "
         f"{summary['includedBaseTasks']} answerable base tasks; "
-        f"held {summary['excludedBaseTasks']} missing-companion-source tasks; "
+        f"held {summary['excludedBaseTasks']} tasks (see census exclusions); "
         f"{len(reviewed)} independently reviewed sitting(s): "
         + ', '.join(f"{r['year']} {r['level']} {r['taskCount']} tasks/{r['cardCount']} cards"
                     for r in reviewed) + '.')
