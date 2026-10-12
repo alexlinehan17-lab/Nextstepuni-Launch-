@@ -1,0 +1,1081 @@
+[
+  {
+    "id": "cons-2025-hl-q1-a",
+    "topicId": "cons-3-2",
+    "conceptId": "vertical-section-external-wall-ground-floor-window",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q1(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall, ground floor, and window. Show the typical construction details from the bottom of the strip foundation to a level 200 mm above the bottom frame of the window. Show a 1.0 metre width of ground floor.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "5 x 4 + 4 x 4 + 3 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 48,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "Foundation and solid concrete ground floor – typical detailing",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "Foundation and solid concrete ground floor – typical detailing",
+        "group": {
+          "claimMax": 5,
+          "perOption": 4,
+          "options": [
+            "R.C. strip foundation",
+            "Dead blockwork and cavity wall above foundation",
+            "Cavity infill",
+            "Thermal blocks on inner leaf",
+            "DPC",
+            "Hardcore/Sand blinding/Radon barrier",
+            "Subfloor",
+            "Insulation",
+            "Screed",
+            "Airtightness barrier at floor and wall junction",
+            "20 mm quarry tile finish/Skirting board"
+          ]
+        }
+      },
+      {
+        "id": "cons-2025-hl-q1-a-r2",
+        "kind": "anyN",
+        "verbatim": "External wall – typical detailing",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "External wall – typical detailing",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "External render",
+            "Concrete block outer leaf",
+            "Air space / residual cavity",
+            "Anchor strap",
+            "Breather membrane",
+            "Racking board",
+            "250 × 50 mm stud detail and insulation",
+            "OSB sheeting",
+            "Airtightness membrane",
+            "50 mm insulated service cavity",
+            "Plasterboard and skim"
+          ]
+        }
+      },
+      {
+        "id": "cons-2025-hl-q1-a-r3",
+        "kind": "anyN",
+        "verbatim": "Window detail – typical detailing",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Window detail – typical detailing",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Cavity closer",
+            "Concrete window Cill",
+            "Cill wrapped in DPC",
+            "Thermally broken window frame",
+            "Window board",
+            "Triple glazing",
+            "Airtight barrier at junction"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q2-a-safety-training",
+    "topicId": "cons-1-8",
+    "conceptId": "maintaining-a-health-and-safety-culture-safety-training",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q2(a) — Safety training",
+    "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site:  safety training.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q2-a-safety-training-r1",
+        "kind": "anyN",
+        "verbatim": "Safety training",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Safety training",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "A safe pass is mandatory for all workers on a construction site",
+            "Safe pass certification must be maintained through refresher courses",
+            "Training is essential in order to develop awareness amongst workers of possible risks on site",
+            "Specialist training (tickets) is required for specific equipment used on construction sites such as machinery or vehicles",
+            "Safety training is essential to help provide workers with a skillset to be able to identify potential risks on a building site and understand best practice approaches to minimise the risk of accidents",
+            "Work practices should be regularly monitored to ensure all safety protocols are being followed",
+            "Enforcement of all good safe work practices",
+            "Safety training could be a condition of the insurance provider"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q2-a-health-and-safety-officer",
+    "topicId": "cons-1-8",
+    "conceptId": "maintaining-a-health-and-safety-culture-health-and-safety-officer",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q2(a) — Health and safety officer",
+    "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site:  health and safety officer.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q2-a-health-and-safety-officer-r1",
+        "kind": "anyN",
+        "verbatim": "Health and safety officer",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Health and safety officer",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Provides induction training for all new workers on a site",
+            "Provides ongoing training in specific risks e.g. working at heights, machinery use",
+            "Develop and implement emergency response plans e.g. fire, medical emergencies",
+            "Ensure that first aid and other emergency equipment is available and in good condition",
+            "Foster a culture where safety is prioritised at all times",
+            "Ensures all workers are provided with and are wearing the correct PPE",
+            "Carries out safety inspections and risk assessments to try to prevent workplace accidents",
+            "Identifies new and ongoing safety training requirements",
+            "Reviews the safety statement for the site",
+            "Investigates, records and reports all accidents that may occur on a site"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q2-a-risk-assessment-audit",
+    "topicId": "cons-1-8",
+    "conceptId": "maintaining-a-health-and-safety-culture-risk-assessment-audit",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q2(a) — Risk assessment audit",
+    "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site:  risk assessment audit.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q2-a-risk-assessment-audit-r1",
+        "kind": "anyN",
+        "verbatim": "Risk assessment audit",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Risk assessment audit",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Provide a safe working environment for all individuals entering the building site",
+            "Evaluate compliance with safety regulations and policies",
+            "Recommend improvements that enhance engagement and safety attitudes",
+            "To prevent and minimise accidents and injuries",
+            "Identify any hazards and put in place control measures where the risk cannot be fully eliminated",
+            "To reduce liability in the event of an accident",
+            "To identify and select training requirements",
+            "To help identify potential high risk / emergency situations and ensure that appropriate measures are in place e.g. the risk of fire may not be able to be eliminated so appropriate measures would need to be put in place such as fire alarms, signage showing evacuation plans, regular fire drills and fire extinguishers at key locations"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q2-c",
+    "topicId": "cons-1-8",
+    "conceptId": "guidelines-that-reduce-the-risk-of-injury",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q2(c)",
+    "questionText": "For each risk discussed at 2(b) above, show, using notes and freehand sketches, two best practice guidelines that should be observed to reduce the possibility of injury to a worker undertaking each task.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "2 x 6 + 2 x 6 + 2 x 6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 36,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "Working in a deep trench",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Working in a deep trench",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Use of a trench box or shuttering to strengthen and stabilise the sides of the trench to prevent a collapse happening",
+            "Install a temporary cover over a vacant trench",
+            "Appropriate signage should be displayed around the trench to make everyone aware",
+            "Use personal protection equipment (hard hat and eye protection, insulated footwear)",
+            "Arrange a clearly marked exclusion zone – barrier and tape - around an open trench",
+            "A barrier with a toe board should be installed around the open trench",
+            "Do not pile any materials on the edge of the trench due to the risk of collapse or objects falling into the trench and injuring workers",
+            "Batter back / slope back method when digging the trench",
+            "Trench dug in suitable conditions. It should not be dug in wet conditions due to the risk of compromising the side walls",
+            "Do not park any machinery or vehicles close to the edge of the trench",
+            "An engineer would need to carry out surveys to determine if the proposed trench could compromise any nearby structures"
+          ]
+        }
+      },
+      {
+        "id": "cons-2025-hl-q2-c-r2",
+        "kind": "anyN",
+        "verbatim": "Installing insulation in an attic space",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Installing insulation in an attic space",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A coverall with a hood as well as gloves should be worn to prevent any irritation to skin",
+            "An appropriate dust mask should be worn to protect the workers lungs",
+            "Heat producing fixtures such as downlighters should have non-combustible protection covers to prevent any risk of fire",
+            "Safety goggles should be worn to ensure no foreign objects enter the workers eyes, potentially causing permanent damage to vision",
+            "Crawl boards used to spread the load across joists, to safely move across the attic",
+            "If crawl boards are not used the worker should always walk or crawl along the joists and never place any weight on the plasterboard ceiling",
+            "Cut insulation in a well-ventilated area",
+            "Kneepads should be worn to lessen the impact on the workers knees"
+          ]
+        }
+      },
+      {
+        "id": "cons-2025-hl-q2-c-r3",
+        "kind": "anyN",
+        "verbatim": "Repairing a chimney capping",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Repairing a chimney capping",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A safety harness or other fall protection should be used",
+            "A scaffolding should be erected around the chimney stack by certified personnel",
+            "Scaffolding should be tied to the house / chimney",
+            "Scaffolding should have the required safety rails and toe boards fitted",
+            "Toe boards and netting all around the scaffolding should be used to protect against falling objects",
+            "Ladders should extend 1 metre past the scaffolding platform",
+            "Ladders should be properly secured on the scaffolding",
+            "Use of lifting machinery e.g. cherry picker to allow workers safe access to the chimney stack",
+            "Workers should be securely attached to any lifting machinery",
+            "Only certified personnel to operate lifting machinery",
+            "All lifting machinery should be operated off a level surface"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q3-b",
+    "topicId": "cons-1-1",
+    "conceptId": "reasons-for-a-proposed-layout",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q3(b)",
+    "questionText": "Outline three reasons for your proposed layout.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 10,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Three reasons for your proposed layout",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "Three reasons for your proposed layout",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "By combining the garage and utility it gives the owners a large south facing space where they can create a spacious open plan kitchen/dining and living space",
+            "Replacing the garage door with high performance glazing will improve the solar gains and thermal performance of this space",
+            "Installing high performance glazing on the south side of the house will maximise the light into this new space. This will ensure the open plan space is bright and warm",
+            "By putting glazed doors into the sitting room, light from the west can shine into this room in the evening",
+            "By creating a large family bathroom which is wheelchair accessible, the occupants will have a bathroom suitable for lifetime use",
+            "Optimising light into the ground floor will lessen the need for artificial lights this will reduce the energy bills being paid by the occupants",
+            "Changing the roof from a flat roof to a sloped roof will lessen any potential issues with moisture penetration and lower home insurance costs",
+            "Using the same brick which is used on the existing house will help to retain the character of the converted garage space",
+            "Adding glazed areas to the rear of the dwelling will help to optimise daylight into the ground floor Since this façade is at the rear of the house it will gain warm evening sun while offering privacy to the occupants",
+            "Addition of roof lights on the garage roof will allow light to flood into this new space, this will help to improve the wellbeing of the occupants"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q3-c",
+    "topicId": "cons-1-1",
+    "conceptId": "improving-the-external-appearance-of-a-garage",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q3(c)",
+    "questionText": "Using notes and freehand sketches, show a revised external design for the garage that will enhance the overall visual appearance of the house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 10",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 10
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q3-c-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show a revised external design for the garage that will enhance the overall visual ap",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 10,
+          "options": [
+            "No changes will be made to the front façade of the house however the garage door will need to be replaced with high performance glazing. This could be full height or installed above worktop level",
+            "The exterior could utilise the same plaster finish of the house or it may add brick to strengthen its connection with the existing house",
+            "Adding high performance glazing to the south and west side of the house will help optimise daylight into the building",
+            "Adding roof lights on the roof of the garage will help to ensure the interior is flooded with natural daylight. This will enhance the wellbeing of the occupants",
+            "Use of solar shading to prevent over-heating",
+            "The roof of the garage could be kept as a bitumen flat roof, or it could be replaced with a metal such as zinc for aesthetics",
+            "Alternatively, the angle of the roof could be increased, and it could be slated to strengthen the connection with the existing house"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q4-a",
+    "topicId": "cons-3-3",
+    "conceptId": "functional-requirements-of-an-external-wall",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q4(a)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, three functional requirements of an external wall suitable for a new dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 7,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, using notes and freehand sketches, three functional requirements of an external wall suitable for a n",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "Structural Stability",
+            "Thermal Comfort",
+            "Weather Resistance",
+            "Acoustic Resistance",
+            "Fire Resistance",
+            "Sustainability",
+            "Airtightness"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q6-b-indoor-air-quality",
+    "topicId": "cons-6-5",
+    "conceptId": "creating-a-healthy-indoor-environment-indoor-air-quality",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q6(b) — Indoor air quality",
+    "questionText": "Discuss in detail, how each of the following contribute to the creation of a healthy indoor environment:  indoor air quality.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q6-b-indoor-air-quality-r1",
+        "kind": "anyN",
+        "verbatim": "Indoor air quality",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Indoor air quality",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Airtight buildings will suffer with poor air quality if there is not a ventilation system in place",
+            "To prevent mould growth in an airtight house it is important to maintain optimal humidity levels of between 30-50% to prevent any issues with indoor air quality. This can be an issue in kitchens and bathrooms due to stale moist air",
+            "An NZEB house benefits from utilising a mechanical ventilation with heat recovery system (MVHR)",
+            "An MVHR uses filters to prevent allergens entering the dwelling, however regular maintenance and filter changes are needed to ensure fresh air circulation",
+            "Regular maintenance and monitoring of indoor air quality through sensors ensure issues with ventilation systems are recognised and resolved quickly",
+            "Install glazed manual openings in all rooms, rather than fixed windows so that air can naturally circulate bringing in fresh air from the outside and removing stale moist air from the inside"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q6-b-natural-light",
+    "topicId": "cons-6-5",
+    "conceptId": "creating-a-healthy-indoor-environment-natural-light",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q6(b) — Natural light",
+    "questionText": "Discuss in detail, how each of the following contribute to the creation of a healthy indoor environment:  natural light.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q6-b-natural-light-r1",
+        "kind": "anyN",
+        "verbatim": "Natural light",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Natural light",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Natural light will benefit the wellbeing of the occupant by enhancing their mood and increasing energy",
+            "Our circadian rhythms are regulated by exposure to natural light",
+            "Large glazing to optimise natural light will also create a connection to nature",
+            "Sunlight provides heat and warmth which will assist with the thermal comfort of the dwelling",
+            "Sunlight will naturally provide light and heat to the dwelling, this reduces the need for artificial heating and lighting methods. This will in turn reduce the size of the bills faced by the occupants",
+            "Natural light helps with vitamin D synthesis and for overall health"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q6-b-materials-and-finishes",
+    "topicId": "cons-6-5",
+    "conceptId": "creating-a-healthy-indoor-environment-materials-and-finishes",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q6(b) — Materials and finishes",
+    "questionText": "Discuss in detail, how each of the following contribute to the creation of a healthy indoor environment:  materials and finishes.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 10,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q6-b-materials-and-finishes-r1",
+        "kind": "anyN",
+        "verbatim": "Materials and finishes",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Materials and finishes",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Selecting building materials and finishes that have low levels of volatile organic compounds (VOCs) and other pollutants can significantly contribute to a healthy indoor environment. This includes flooring materials, paints, adhesives, and sealants which are designed to emit minimal toxins",
+            "Utilising natural materials where possible such as solid timber instead of manufactured boards with formaldehyde-based adhesives will reduce the amount of harmful VOC’s released",
+            "Timber is a tactile material which can provide warmth and texture",
+            "Cedar timber has antibacterial and antifungal properties",
+            "Hardwood can last for decades with proper maintenance",
+            "Using natural finishes such as bees wax, linseed oil, tung oil, etc. on timber products means minimal toxins will be released",
+            "Laying tile flooring with VOC-free grout. Tile has a high thermal mass so will also help with thermal performance",
+            "If choosing carpet opt for natural options such as wool carpets and ensure that there is not a synthetic backing with a chemical adhesive",
+            "Using zero-VOC paints or low-VOC paints to minimise the release of harmful fumes that would negatively affect the indoor air quality",
+            "Using sealants such as silicone with low odours"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q6-c",
+    "topicId": "cons-6-3",
+    "conceptId": "benefits-of-locally-sourced-materials",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q6(c)",
+    "questionText": "Discuss in detail two benefits of using locally sourced materials in the construction of a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 10,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail two benefits of using locally sourced materials in the construction of a dwelling house.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Buying locally sourced materials will support the local economy, including small businesses, quarries, and craft industries. This helps to create jobs and supports local supply chains",
+            "Should ensure that there are low product miles, this will reduce the carbon emissions and transportation energy on the delivering of these materials",
+            "Using locally sourced materials such as stone or timber cladding may help the dwelling to fit in aesthetically with the other houses in the area",
+            "Materials that are sourced locally are often better suited to the local climate and environmental conditions. For example, building materials that are traditionally used in the area (e.g., limestone, clay, or timber) may have qualities that make them more suitable for local weather patterns, such as moisture resistance, insulation properties, or thermal mass",
+            "Using locally sourced materials often encourages the use of sustainable practices, such as reclaimed wood, recycled stone, or natural, renewable resources. Local sourcing can also promote the use of materials that are harvested responsibly and are more abundant in the area",
+            "Locally sourced materials are often better suited to the specific geological, geographical, and climatic conditions of the region. For instance, certain types of stone, clay, or timber may perform better in the local environment, providing greater resilience and comfort over the long term",
+            "The cost of delivery should be reduced due to the distance to be travelled",
+            "Local materials are generally more readily available, reducing lead times and the risk of delays caused by shipping or supply chain issues. Building projects can often proceed without the wait for long-distance deliveries of materials",
+            "Local suppliers, craftsmen, and builders often have extensive knowledge and experience working with locally sourced materials. This can lead to better quality control, construction techniques, and advice on the best materials for the project. This also provides a local economic benefit",
+            "Preservation of local craft practices"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q7-b",
+    "topicId": "cons-3-10",
+    "conceptId": "rainwater-at-the-chimney-roof-junction",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q7(b)",
+    "questionText": "On your drawing, show the typical design detailing to prevent the penetration of rainwater between the chimney stack and the adjoining roof.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 2,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "On your drawing, show the typical design detailing to prevent the penetration of rainwater between the chimney stack and",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Back of chimney",
+            "Front of chimney"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q8-a",
+    "topicId": "cons-6-2",
+    "conceptId": "benefits-of-preventing-air-leakage",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q8(a)",
+    "questionText": "Discuss in detail two benefits of preventing air leakage from a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q8-a-r1",
+        "kind": "anyN",
+        "verbatim": "Reduces energy bills",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Reduces energy bills",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Reduces energy bills as heat loss through air leakage is minimised",
+            "Mechanical Ventilation systems will work more efficiently and there will be better indoor air quality (less allergens from outside)",
+            "Reduces carbon emissions as fewer fossil fuels are used in heating the house",
+            "Thermal comfort is reduced as there are no draughts coming into the house",
+            "Reduce heat loss through gaps in the building fabric",
+            "Reduction in moisture entering the building fabric – preventing rot etc",
+            "Reduces noise pollution",
+            "Improves the performance of the thermal insulation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q9-a",
+    "topicId": "cons-5-8",
+    "conceptId": "wiring-layout-for-two-light-points",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q9(a)",
+    "questionText": "Using notes and freehand sketches, show the design of a typical wiring layout for two electrical light points which are controlled by a single switch. Show the lighting circuit from the distribution board to the switch and to the light points. Indicate the typical sizing and colour coding of the cables.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "3 x 5 + 3 x 5",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "Typical wiring layout for two electrical points which are controlled by a single switch",
+        "marks": 15,
+        "openList": true,
+        "contextNote": "Typical wiring layout for two electrical points which are controlled by a single switch",
+        "group": {
+          "claimMax": 3,
+          "perOption": 5,
+          "options": [
+            "A 1.5mm2 twin and earth LSF (low-smoke and fume) cable is fed from the distribution board to the single switch",
+            "This will provide power to the switch",
+            "The 1.5mm cable is then fed from the switch to the first light where it is looped and then onto the remaining lighting point"
+          ]
+        }
+      },
+      {
+        "id": "cons-2025-hl-q9-a-r2",
+        "kind": "anyN",
+        "verbatim": "Typical circuit detailing",
+        "marks": 15,
+        "openList": true,
+        "contextNote": "Typical circuit detailing",
+        "group": {
+          "claimMax": 3,
+          "perOption": 5,
+          "options": [
+            "1.5 mm2 twin and earth LSF cable",
+            "Live – Brown",
+            "Neutral – Blue",
+            "Earth – Green & Yellow"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 34 marks for this part. The 30 on this card are the marks it states answers for; the other 4 go to Cable size (1) and colour (3) (4) — the drawing itself and anything the scheme prices without saying what earns it."
+  },
+  {
+    "id": "cons-2025-hl-q9-c",
+    "topicId": "cons-5-8",
+    "conceptId": "reducing-household-electricity-consumption",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q9(c)",
+    "questionText": "Discuss two approaches that homeowners could take to reduce the consumption of electricity in the home.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Two approaches to reduce electrical consumption in a domestic dwelling",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Two approaches to reduce electrical consumption in a domestic dwelling",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Low wattage LED bulbs to minimise electricity used",
+            "Using sensor lights outside the dwelling so lights only turn on when they are being used",
+            "Motion sensor lights in unoccupied rooms",
+            "Smart lightbulbs which can be controlled from an app on a smartphone or other device",
+            "Using A rated appliances or higher",
+            "Timer switches on outside lights to prevent lights being left on all night",
+            "Separate lighting circuits in open plan rooms",
+            "Only turning on lights as required",
+            "Use smart metering to provide the occupants with insights on their electricity usage",
+            "Under counter sockets on isolator switches e.g. washing machine socket is on an isolator switch so that it can be easily turned off when not in use",
+            "Using bright paint and light-coloured surfaces to reflect natural light around the room to minimise the need for artificial lights",
+            "Awareness of ‘Vampire load’ or ‘phantom load’ where appliances or electronic devices draw power when switched off but may be in standby mode such as TV’s, appliances that incorporate a digital clock",
+            "Where using electricity to heat the home, consider dropping thermostat to reduce power consumption",
+            "Increased levels of insulation to reduce heat loss"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 15 acceptable points under \"Two approaches to reduce electrical consumption in a domestic dwelling\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2025-hl-q10-a-building-form",
+    "topicId": "cons-6-3",
+    "conceptId": "passive-house-design-building-form",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q10(a) — Building form",
+    "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design:  building form.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "5 + 5",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q10-a-building-form-r1",
+        "kind": "anyN",
+        "verbatim": "Building form",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Building form",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Building form should have a narrow plan, one room deep to maximise solar gain",
+            "A compact dwelling which fits in with its landscape and surrounding buildings",
+            "Complicated designs with lots of corners or abutments need more materials to construct and are at a greater risk of heat loss when compared with rectangular form buildings",
+            "The compactness ratio of surface area to the volume contained (A/V) should be 0.7 or less",
+            "Simple rectangular shape to minimise corners and hence the perimeter of the wall to minimise opportunities for heat loss",
+            "To minimise heat loss and cost of construction, it should have the smallest surface area possible",
+            "A compact form will reduce the amount of materials needed in construction which reduces its effect on the environment",
+            "If a deeper plan is utilised it will reduce the benefits of solar gains as it increases the volume of air to be heated",
+            "Clean lines in walls and roof to facilitate easy achievement of airtightness"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q10-a-foundation-design",
+    "topicId": "cons-6-3",
+    "conceptId": "passive-house-design-foundation-design",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q10(a) — Foundation design",
+    "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design:  foundation design.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "5 + 5",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q10-a-foundation-design-r1",
+        "kind": "anyN",
+        "verbatim": "Foundation design",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Foundation design",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Ring beam and passive raft foundations are wrapped in insulation to eliminate opportunities for thermal bridging",
+            "In typical strip, pile and raft foundations it is critical to eliminate opportunities for thermal bridging to occur",
+            "The internal leaf should use thermal blocks in their rising walls to prevent heat loss down the inner leaf",
+            "The floor wall junction needs to have an insulation upstand / edge insulation of 50 mm – 100 mm to prevent a thermal bridge occurring",
+            "If block cavity construction is chosen, thermally broken wall ties should be used instead of stainless-steel wall ties where a point thermal bridge would occur",
+            "The wall, attic and floor should have high levels of insulation to maintain all heat gains",
+            "Foundation should be highly insulated to achieve a U- value of between 0.1 - 0.15 W/m2 K"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q10-b",
+    "topicId": "cons-6-4",
+    "conceptId": "choosing-an-orientation",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q10(b)",
+    "questionText": "Using notes and freehand sketches, suggest a preferred orientation for the house shown. Show the sun path on your sketch. Discuss two benefits to the homeowner of your preferred orientation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 14",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 14
+    },
+    "totalMarks": 28,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q10-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, suggest a preferred orientation for the house shown. Show the sun path on your sketch",
+        "marks": 28,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 14,
+          "options": [
+            "Orientation",
+            "Lowers energy bills",
+            "Reduces carbon dioxide emission",
+            "Enhances wellbeing"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q1-b",
+    "topicId": "cons-3-4",
+    "conceptId": "preventing-rainwater-penetration",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q1(b)",
+    "questionText": "On your drawing, show the typical design detailing that will prevent the penetration of radon gas into the house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Design detailing identified to prevent the penetration of radon gas",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-hl-q5-c",
+    "topicId": "cons-6-1",
+    "conceptId": "upgrading-a-wall-to-passive-house-standard",
+    "level": "higher",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 HL Q5(c)",
+    "questionText": "It has been decided that the wall at 5(a) above should meet the Passive House standard, by further increasing the thickness of the external insulation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 3",
+      "answer": 4,
+      "ofParts": 4,
+      "perPart": 3
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2025-hl-q5-c-r1",
+        "kind": "anyN",
+        "verbatim": "It has been decided that the wall at 5(a) above should meet the Passive House standard, by further increasing the thickn",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 3,
+          "options": [
+            "Resistance for U-value for 0.11 W/m2 °C (using R=1/U)",
+            "Difference in resistances (required resistance)",
+            "Application of formula R = T/k",
+            "Required thickness of insulation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

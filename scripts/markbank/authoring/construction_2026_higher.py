@@ -16,6 +16,8 @@ from pathlib import Path
 import fitz
 from PIL import Image, ImageChops
 
+import construction_corrections
+
 R = Path(__file__).resolve().parents[3]
 REVIEW = R / 'scripts/markbank/authored/construction-studies-2026-higher-reviewed.json'
 FIGURE_DIR = R / 'public/exam-figures/construction-studies/markbank'
@@ -315,8 +317,8 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         authored = json.loads((R / 'scripts/markbank/authored/construction-studies.json').read_text())
         by_id = {c['id']: c for c in authored}
         assert prior['count'] == len(prior['cards']) == 783 and len(by_id) == len(authored)
-        for cid, digest in prior['cards'].items():
-            assert hashlib.sha256(json.dumps(by_id[cid], ensure_ascii=False, sort_keys=True).encode()).hexdigest() == digest, cid
+        # Byte-identical, or replaced in place through a later review's recorded, hash-linked correction.
+        construction_corrections.assert_prior_cards_preserved(prior['cards'], by_id)
         assert all(by_id[t['card']['id']] == t['card'] for t in d['tasks'])
     assert d['questionsReviewed'] == [str(n) for n in range(1, 11)] and d['unreviewedQuestions'] == [] and d['alternativeQuestions'] == ['10']
     return dict(tasks=69, leafTasks=len(LEAF), wholeQuestionRoutes=sum(1 for k in cards if '-complete' in k),
