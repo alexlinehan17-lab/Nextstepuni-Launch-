@@ -553,10 +553,7 @@ export interface ArtBand {
   marks: number[];
   /** The scheme's printed lead-in to the band's bullets, where audited. */
   lead?: string;
-  /**
-   * SEC descriptor guidance: the printed bullets for an audited year,
-   * otherwise condensed only to remove repeated boilerplate.
-   */
+  /** SEC descriptor guidance: the bullets exactly as the scheme prints them. */
   guidance: string[];
 }
 
@@ -576,6 +573,13 @@ export interface ArtCriterion {
   permittedMarks: number[];
   /** Question-specific allocation or focus printed by the marking scheme. */
   guidance: string[];
+  /**
+   * 2021–2022 schemes: the Marks column printed beside each guidance row
+   * (parallel to `guidance`), and the Notes column where the scheme prints
+   * any note for this component ('' for a row without one).
+   */
+  rowMarks?: number[];
+  rowNotes?: string[];
   /** Absent where the SEC printed an allocation but no descriptor bands. */
   bands?: ArtBand[];
 }

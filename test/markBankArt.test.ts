@@ -197,12 +197,12 @@ describe('complete 2021–2026 Art corpus', () => {
     };
     const printed = authored.descriptors as Record<string, Printed>;
     const audited = new Set<number>(authored.auditedYears);
-    expect([...audited]).toEqual([2023, 2024, 2025, 2026]);
+    expect([...audited]).toEqual([2021, 2022, 2023, 2024, 2025, 2026]);
     // The condensed wording these cards used to show is gone from them.
     const condensed = 'Limited coherence, focus, visual-art terminology and/or relevant sketches.';
     const written = 'Understand the demands of the chosen question and build the response around it.';
 
-    const auditedCards = CARDS.filter(card => audited.has(card.year));
+    const auditedCards = CARDS.filter(card => audited.has(card.year) && card.year >= 2023);
     expect(auditedCards).toHaveLength(208);
     for (const card of auditedCards) {
       if (card.rubric.system !== 'art') throw new Error(`${card.id}: wrong rubric`);
@@ -232,12 +232,27 @@ describe('complete 2021–2026 Art corpus', () => {
       }
     }
 
-    // Our guidance is on every card, apart from the SEC's; an unaudited card
-    // shows no note under the SEC's name.
+    // The 2021-2022 component cards show the scheme's own rows: no written
+    // "SEC note:" prefix, the printed Marks column summing to the part.
+    for (const card of CARDS.filter(entry => entry.year <= 2022)) {
+      if (card.rubric.system !== 'art') throw new Error(`${card.id}: wrong rubric`);
+      expect(card.rubric.markingGuideNote, card.id).toBe('');
+      for (const criterion of card.rubric.criteria) {
+        expect(criterion.guidance.some(text => text.startsWith('SEC note')), card.id).toBe(false);
+        expect(criterion.rowMarks?.reduce((sum, mark) => sum + mark, 0), card.id).toBe(criterion.maxMarks);
+        if (criterion.rowNotes) expect(criterion.rowNotes).toHaveLength(criterion.guidance.length);
+      }
+    }
+
+    // Our guidance is on every card, apart from the SEC's, and no card shows
+    // the condensed or written wording under the SEC's name.
     for (const card of CARDS) {
       if (card.rubric.system !== 'art') throw new Error(`${card.id}: wrong rubric`);
       expect(card.rubric.practiceNotes?.length, card.id).toBeGreaterThan(0);
-      if (!audited.has(card.year)) expect(card.rubric.markingGuideNote, card.id).toBe('');
+      expect(audited.has(card.year), card.id).toBe(true);
+      const sec = JSON.stringify(card.rubric.criteria) + card.rubric.markingGuideNote;
+      expect(sec, card.id).not.toContain(condensed);
+      expect(sec, card.id).not.toContain(written);
     }
   });
 });

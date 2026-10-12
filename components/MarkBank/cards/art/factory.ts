@@ -8,11 +8,13 @@
  * Sections B and C use four published criteria totalling 50. None is PCLM and
  * none is converted into a fabricated model-answer checklist.
  *
- * An audited year (authored.auditedYears) shows only the scheme's printed
- * wording under the SEC's name: descriptor bullets, criterion labels and
- * marking notes come from authored.descriptors, lifted page by page by
- * scripts/markbank/authoring/art_printed.py. Our own guidance is kept apart
- * as practice notes on every card.
+ * Every card shows only the scheme's printed wording under the SEC's name:
+ * the 2023+ descriptor bullets, criterion labels and marking notes come from
+ * authored.descriptors, and the 2021-2022 component rows, marks and notes
+ * from each card's criteria, all lifted page by page by
+ * scripts/markbank/authoring/art_printed.py and art_cards.py. There is no
+ * written fallback: a card without its printed descriptors fails to build.
+ * Our own guidance is kept apart as practice notes on every card.
  */
 
 import type {
@@ -35,6 +37,8 @@ interface AuthoredCriterion {
   maxMarks: number;
   permittedMarks: number[];
   guidance: string[];
+  rowMarks?: number[];
+  rowNotes?: string[];
   bandMarks?: Record<'low' | 'moderate' | 'high', number[]>;
 }
 
@@ -78,29 +82,12 @@ const DATA = authored.cards as AuthoredArtCard[];
 const PRINTED = authored.descriptors as Record<string, PrintedScheme>;
 const AUDITED_YEARS = new Set<number>(authored.auditedYears);
 
+/** The printed descriptors a 2023+ card shows; legacy cards have none. */
 const printedFor = (card: AuthoredArtCard): PrintedScheme | undefined => {
-  if (!AUDITED_YEARS.has(card.year) || card.assessment === 'legacy-components') return undefined;
-  const printed = PRINTED[`${card.year}-${card.level}`];
-  if (!printed) throw new Error(`${card.id}: audited year without printed descriptors`);
+  if (card.assessment === 'legacy-components') return undefined;
+  const printed = AUDITED_YEARS.has(card.year) ? PRINTED[`${card.year}-${card.level}`] : undefined;
+  if (!printed) throw new Error(`${card.id}: no printed descriptors lifted for ${card.year} ${card.level}`);
   return printed;
-};
-
-const SHORT_BAND_GUIDANCE: Record<ArtBand['level'], string[]> = {
-  low: [
-    'Limited understanding of the task and limited application of relevant knowledge.',
-    'Limited analysis or interpretation of stimulus material and little supporting evidence.',
-    'Limited coherence, focus, visual-art terminology and/or relevant sketches.',
-  ],
-  moderate: [
-    'Good understanding of the task and good application of relevant knowledge.',
-    'Good analysis or interpretation of stimulus material with evidence-based ideas.',
-    'A coherent, focused answer using accurate visual-art terminology and/or relevant sketches.',
-  ],
-  high: [
-    'Thorough understanding of the task and thorough application of well-informed knowledge.',
-    'Consistent analysis or interpretation of stimulus material with well-supported ideas.',
-    'A thoroughly coherent answer using accurate visual-art terminology and/or relevant sketches.',
-  ],
 };
 
 const bandsFrom = (
@@ -110,9 +97,8 @@ const bandsFrom = (
   return (['low', 'moderate', 'high'] as const).map(level => ({
     level,
     marks: criterion.bandMarks![level],
-    ...(printed
-      ? { lead: printed.short.lead, guidance: [...printed.short.bands[level]] }
-      : { guidance: SHORT_BAND_GUIDANCE[level] }),
+    lead: printed!.short.lead,
+    guidance: [...printed!.short.bands[level]],
   }));
 };
 
@@ -125,6 +111,8 @@ const authoredCriteria = (card: AuthoredArtCard): ArtCriterion[] => {
     maxMarks: criterion.maxMarks,
     permittedMarks: criterion.permittedMarks,
     guidance: criterion.guidance,
+    ...(criterion.rowMarks ? { rowMarks: [...criterion.rowMarks] } : {}),
+    ...(criterion.rowNotes ? { rowNotes: [...criterion.rowNotes] } : {}),
     bands: bandsFrom(criterion, printed),
   }));
 };
@@ -148,112 +136,10 @@ const printedLongCriteria = (printed: PrintedScheme): ArtCriterion[] =>
 const range = (from: number, to: number) =>
   Array.from({ length: to - from + 1 }, (_, index) => from + index);
 
-const band = (
-  level: ArtBand['level'], from: number, to: number, guidance: string[],
-): ArtBand => ({ level, marks: range(from, to), guidance });
-
-/** The four descriptor tables printed for every current Section B/C answer. */
-const LONG_CRITERIA: ArtCriterion[] = [
-  {
-    id: 'coherence-focus',
-    label: 'Coherence and Focus',
-    maxMarks: 10,
-    permittedMarks: range(0, 10),
-    guidance: ['Understand the demands of the chosen question and build the response around it.'],
-    bands: [
-      band('low', 0, 3, [
-        'Limited understanding of the question and limited ability to create an answer from it.',
-        'Arguments or ideas have limited sequence, logic or evidence; personal understanding is limited.',
-      ]),
-      band('moderate', 4, 6, [
-        'Good understanding of the question and an appropriate answer based on it.',
-        'Mostly evidenced, reasonable and sequential ideas with a good personal understanding.',
-      ]),
-      band('high', 7, 10, [
-        'Thorough understanding of the question and a high-level answer based on it.',
-        'Clearly evidenced, logical ideas with a thorough personal understanding.',
-      ]),
-    ],
-  },
-  {
-    id: 'subject-knowledge',
-    label: 'Subject Knowledge',
-    maxMarks: 20,
-    permittedMarks: range(0, 20),
-    guidance: ['Recall, analyse and apply knowledge of the content area to the chosen question.'],
-    bands: [
-      band('low', 0, 7, [
-        'Limited recall, knowledge and understanding of the area of focus.',
-        'Limited analysis, evaluation and use of knowledge to support the response.',
-      ]),
-      band('moderate', 8, 13, [
-        'Good recall, knowledge and understanding of the area of focus.',
-        'Good analysis, evaluation and perceptive use of knowledge to support the response.',
-      ]),
-      band('high', 14, 20, [
-        'Thorough recall, knowledge and understanding of the area of focus.',
-        'Thorough analysis, evaluation and perceptive use of knowledge to support the response.',
-      ]),
-    ],
-  },
-  {
-    id: 'relevant-examples',
-    label: 'Relevant Examples',
-    maxMarks: 10,
-    permittedMarks: range(0, 10),
-    guidance: ['Choose recognised, relevant artists and artworks or artefacts that support the response.'],
-    bands: [
-      band('low', 0, 3, [
-        'Examples have limited relevance or recognition and support only a limited response.',
-        'Limited understanding of the selected artists and examples.',
-      ]),
-      band('moderate', 4, 6, [
-        'Mostly relevant, recognised examples support a mostly accurate response.',
-        'Good understanding of the selected artists and examples.',
-      ]),
-      band('high', 7, 10, [
-        'Highly relevant, recognised examples support a highly accurate response.',
-        'Thorough understanding of the selected artists and examples.',
-      ]),
-    ],
-  },
-  {
-    id: 'visual-language',
-    label: 'Visual Language',
-    maxMarks: 10,
-    permittedMarks: range(0, 10),
-    guidance: ['Use visual-art terminology and, where used, sketches to communicate and support ideas.'],
-    bands: [
-      band('low', 0, 3, [
-        'Limited use and understanding of terminology.',
-        'Any sketches show limited ability to support or communicate ideas.',
-      ]),
-      band('moderate', 4, 6, [
-        'Good, accurate and relevant terminology adds to the communication of ideas.',
-        'Any sketches are mostly accurate, relevant and supportive.',
-      ]),
-      band('high', 7, 10, [
-        'Thorough, accurate and relevant terminology supports the communication of ideas.',
-        'Any sketches are thorough, accurate, relevant and strongly supportive.',
-      ]),
-    ],
-  },
-];
-
-const criteriaFor = (card: AuthoredArtCard): ArtCriterion[] => {
-  const printed = printedFor(card);
-  if (card.assessment === 'current-long-descriptors' && printed) return printedLongCriteria(printed);
-  return card.assessment === 'current-long-descriptors'
-    ? LONG_CRITERIA.map(criterion => ({
-        ...criterion,
-        permittedMarks: [...criterion.permittedMarks],
-        guidance: [...criterion.guidance],
-        bands: criterion.bands?.map(entry => ({
-          ...entry, marks: [...entry.marks], guidance: [...entry.guidance],
-        })),
-      }))
+const criteriaFor = (card: AuthoredArtCard): ArtCriterion[] =>
+  card.assessment === 'current-long-descriptors'
+    ? printedLongCriteria(printedFor(card)!)
     : authoredCriteria(card);
-};
 
 /** NextStepUni's own guidance for using the card; never shown as the SEC's. */
 const practiceNotes = (assessment: AssessmentKind): string[] => {

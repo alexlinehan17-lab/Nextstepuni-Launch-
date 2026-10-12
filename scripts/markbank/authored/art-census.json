@@ -982,7 +982,7 @@
           "number": 15,
           "cardId": "art-2021-ol-q15-a",
           "questionRef": "2021 OL Q15(a)",
-          "section": "2",
+          "section": "3",
           "paperPage": 6,
           "totalMarks": 25,
           "hasIllustration": false
@@ -991,7 +991,7 @@
           "number": 15,
           "cardId": "art-2021-ol-q15-b",
           "questionRef": "2021 OL Q15(b)",
-          "section": "2",
+          "section": "3",
           "paperPage": 6,
           "totalMarks": 25,
           "hasIllustration": false
@@ -2069,7 +2069,7 @@
           "number": 15,
           "cardId": "art-2022-ol-q15-a",
           "questionRef": "2022 OL Q15(a)",
-          "section": "2",
+          "section": "3",
           "paperPage": 6,
           "totalMarks": 35,
           "hasIllustration": false
@@ -2078,7 +2078,7 @@
           "number": 15,
           "cardId": "art-2022-ol-q15-b",
           "questionRef": "2022 OL Q15(b)",
-          "section": "2",
+          "section": "3",
           "paperPage": 6,
           "totalMarks": 15,
           "hasIllustration": false

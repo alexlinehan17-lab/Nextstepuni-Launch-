@@ -96,9 +96,9 @@ ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
 }
 
 # Years whose SEC-attributed strings are all lifted from the printed page and
-# gated by tests/test_art_sec_wording.py. The other years keep the earlier
-# condensed descriptors (factory.ts) until their own audit.
-AUDITED_YEARS = (2023, 2024, 2025, 2026)
+# gated by tests/test_art_sec_wording.py: every year. The factory has no
+# written fallback, so a new year must join this tuple to build at all.
+AUDITED_YEARS = (2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
@@ -401,6 +401,22 @@ LEGACY_TOPIC_OVERRIDES = {
     (2022, 'ordinary', 19): 'art-6-1',
     (2022, 'ordinary', 20): 'art-6-3',
     (2022, 'ordinary', 21): 'art-6-1',
+    # Section III opens at Q15 at Ordinary Level: an online/television
+    # advertisement (2021) and an animated character's costume and features
+    # (2022), filed like the current papers' advertising and costume tasks.
+    (2021, 'ordinary', 15): 'art-6-1',
+    (2022, 'ordinary', 15): 'art-6-1',
+    # By the Atlas's own mapping. The Q7 lists of Irish artists are one card
+    # (the Atlas gives each question the one heading Irish Art and Modernism);
+    # the 2022 gallery media-and-technology question and the poster and comic
+    # book adaptation questions take the topic the Atlas gives them.
+    (2021, 'higher', 7): 'art-5-4',
+    (2021, 'ordinary', 7): 'art-5-4',
+    (2022, 'higher', 7): 'art-5-4',
+    (2022, 'ordinary', 7): 'art-5-4',
+    (2022, 'higher', 16): 'art-6-1',
+    (2022, 'higher', 18): 'art-6-1',
+    (2021, 'higher', 18): 'art-6-1',
 }
 
 LEGACY_IRISH_TOPIC_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
@@ -570,7 +586,7 @@ def paper_text(path: str, year: int) -> PagedPaper:
     return PagedPaper('\n\n'.join(chunks), starts)
 
 
-def clean_prompt(value: str) -> str:
+def clean_prompt(value: str, sentence_lines: bool = False) -> str:
     value = clean_unicode(value)
     # The final question has no following question marker to stop its slice.
     # Cut at the first back-matter heading rather than absorbing credits,
@@ -593,12 +609,18 @@ def clean_prompt(value: str) -> str:
     # Tick-box options printed on their own line ("Yes [ ]  No [ ]") keep it,
     # so they do not run into the sentences either side (2023 OL Q5(b)).
     value = re.sub(r'(?m)^[ \t]*Yes[ \t]+No[ \t]*$', '\n@@BOXES@@\n', value)
+    if sentence_lines:
+        # The 2021-2022 papers begin each sentence of a task on its own line
+        # ("Discuss this statement ...", "Illustrate your answer."): a line
+        # that ends a sentence keeps its break; a wrapped line is joined.
+        value = re.sub(r'([.?!])[ \t]*\n(?=[ \t]*[A-Z‘“\'(])', r'\1\n@@LINE@@', value)
     value = re.sub(r'[ \t]+', ' ', value)
     value = re.sub(r'\s*\n\s*', ' ', value)
     value = value.replace('@@BULLET@@ ', '\n• ')
     value = value.replace('@@PART@@', '\n')
     value = value.replace('@@AND@@', '\nand')
     value = re.sub(r'\s*@@BOXES@@\s*', '\nYes No\n', value)
+    value = re.sub(r'\s*@@LINE@@\s*', '\n', value)
     value = re.sub(r'\s+([?.!,;:])', r'\1', value)
     value = re.sub(r'[ \t]+\n', '\n', value)
     value = re.sub(r'\n[ \t]+', '\n', value)
@@ -643,7 +665,7 @@ def extract_questions(year: int, level: str) -> dict[int, dict[str, Any]]:
                 raise AssertionError(f'{year} {level} Q{number}: no printed period heading')
             prompt = f'{heading}\n{clean_prompt(body)}'
         else:
-            prompt = clean_prompt(raw)
+            prompt = clean_prompt(raw, sentence_lines=year <= 2022)
         if len(prompt) < 20:
             raise AssertionError(f'{year} {level} Q{number}: implausibly short prompt {prompt!r}')
         out[number] = {
@@ -674,12 +696,17 @@ def legacy_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
             number = int(match.group(1))
             criteria: list[dict[str, Any]] = []
             current: dict[str, Any] | None = None
-            for row in rows[1:]:
+            for row_index, row in enumerate(rows[1:], start=1):
                 cells = list(row) + [None] * (4 - len(row))
+                boxes = list(table.rows[row_index].cells) + [None] * (4 - len(row))
                 label = compact(str(cells[0] or ''))
-                guidance = compact(str(cells[1] or ''))
                 marks_text = compact(str(cells[2] or ''))
-                note = compact(str(cells[3] or ''))
+                # Each row's component and its note, read from the visible text
+                # of their own cells; the note stays the scheme's Notes column.
+                guidance = (art_printed.cell_text(page, boxes[1])
+                            if boxes[1] is not None and compact(str(cells[1] or '')) else '')
+                note = (art_printed.cell_text(page, boxes[3])
+                        if boxes[3] is not None and compact(str(cells[3] or '')) else '')
                 if guidance.lower().startswith('total'):
                     continue
                 if label:
@@ -691,6 +718,8 @@ def legacy_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
                         'maxMarks': 0,
                         'permittedMarks': [],
                         'guidance': [],
+                        'rowMarks': [],
+                        'rowNotes': [],
                     }
                     criteria.append(current)
                 if current is None or not guidance or not re.fullmatch(r'\d+', marks_text):
@@ -698,14 +727,17 @@ def legacy_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
                 marks = int(marks_text)
                 current['maxMarks'] += marks
                 current['guidance'].append(guidance)
-                if note:
-                    current['guidance'].append(f'SEC note: {note}')
+                current['rowMarks'].append(marks)
+                current['rowNotes'].append(note)
             for criterion in criteria:
                 criterion['permittedMarks'] = list(range(criterion['maxMarks'] + 1))
             total = sum(criterion['maxMarks'] for criterion in criteria)
             if total != 50:
                 raise AssertionError(
                     f'{year} {level} Q{number}: legacy scheme totals {total}, not 50')
+            for criterion in criteria:
+                if not any(criterion['rowNotes']):
+                    criterion.pop('rowNotes')
             found[number] = {'schemePage': page_number, 'criteria': criteria}
 
     expected = expected_numbers(year, level)
@@ -791,11 +823,16 @@ def current_short_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
     return found
 
 
-def section_for(year: int, number: int) -> str:
+# The legacy papers print Section III (Appreciation of Art) from Q16 at Higher
+# Level but from Q15 at Ordinary Level, whose Section II has seven questions.
+LEGACY_SECTION_III_FROM = {'higher': 16, 'ordinary': 15}
+
+
+def section_for(year: int, level: str, number: int) -> str:
     if year <= 2022:
         if number <= 7:
             return '1'
-        if number <= 15:
+        if number < LEGACY_SECTION_III_FROM[level]:
             return '2'
         return '3'
     if number <= 7:
@@ -819,7 +856,7 @@ def topic_for(year: int, level: str, number: int, prompt: str) -> str:
             if any(comparable(keyword) in text for keyword in keywords):
                 return topic
         return 'art-5-4'
-    if year <= 2022 and number <= 15:
+    if year <= 2022 and number < LEGACY_SECTION_III_FROM[level]:
         matches = [topic for topic, keywords in EUROPE_TOPIC_KEYWORDS
                    if any(comparable(keyword) in text for keyword in keywords)]
         return matches[0] if len(set(matches)) == 1 else 'art-4-6'
@@ -1072,7 +1109,8 @@ def compact_requirement(question_text: str) -> str:
     return compact(question_text.replace('\n• ', '; '))
 
 
-def printed_requirements(question_text: str, assessment: str, stem: str | None = None) -> list[str]:
+def printed_requirements(question_text: str, assessment: str, stem: str | None = None,
+                         options: tuple[str, ...] = (), chosen: str | None = None) -> list[str]:
     """The task check of an audited card: the paper's own lines, one each.
 
     A Section B/C question's first line is its period heading, a title rather
@@ -1082,10 +1120,18 @@ def printed_requirements(question_text: str, assessment: str, stem: str | None =
     lines = [line for line in question_text.split('\n') if line.strip()]
     if assessment == 'current-long-descriptors':
         lines = lines[1:]
-    asks = [sentence for sentence in re.split(r'(?<=[.?!])\s+', stem or '')
+    asks = [sentence
+            for stem_line in (stem or '').split('\n') if not stem_line.startswith('• ')
+            for sentence in re.split(r'(?<=[.?!])\s+', stem_line)
             if re.match(r'^(?:Name|Identify|Choose|Select)\b', sentence)]
-    # A tick-box options line is where the answer goes, not an ask.
-    lines = [line for line in lines if line.strip() != 'Yes No']
+    # A tick-box options line is where the answer goes, not an ask; a printed
+    # option of a choice ("• Paolo Uccello (c.1397-1475)") is not an ask
+    # either, except the option a per-option card practises.
+    def is_other_option(line: str) -> bool:
+        body = line[2:] if line.startswith('• ') else None
+        return (body is not None and any(body.startswith(label) for label in options)
+                and not (chosen and body.startswith(chosen)))
+    lines = [line for line in lines if line.strip() != 'Yes No' and not is_other_option(line)]
     out = asks + [re.sub(r'^•\s*', '', line).strip() for line in lines]
     if not out or any(not line for line in out):
         raise AssertionError(f'no printed requirement lines in {question_text!r}')
@@ -1129,7 +1175,7 @@ def make_outer_card(year: int, level: str, number: int, prompt: dict[str, Any],
                     scheme: dict[str, Any] | None) -> dict[str, Any]:
     current_long = year >= 2023 and number >= 8
     total_marks = 10 if year >= 2023 and number <= 7 else 50
-    section = section_for(year, number)
+    section = section_for(year, level, number)
     ref = f'{year} {LEVEL_REF[level]} Q{number}'
     card_id = f'art-{year}-{LEVEL_SHORT[level]}-q{number}'
 
@@ -1292,7 +1338,10 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
                     'questionText': question_text,
                     'conceptId': f"{outer['conceptId']}-{'-'.join(concept_suffixes)}",
                     'taskRequirements': (
-                        printed_requirements(question_text, outer['assessment'], unit.get('stem'))
+                        printed_requirements(
+                            question_text, outer['assessment'],
+                            unit.get('stem') if suffix in ('a', 'b', 'c') else None,
+                            tuple(label for _, label in choices), choice_label)
                         if year in AUDITED_YEARS
                         else [compact_requirement(question_text)]),
                 }
@@ -1313,6 +1362,9 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def build() -> tuple[dict[str, Any], dict[str, Any]]:
+    if set(YEARS) - set(AUDITED_YEARS):
+        raise AssertionError(f'unaudited Art years {sorted(set(YEARS) - set(AUDITED_YEARS))}: '
+                             'lift their wording before carding them')
     cards: list[dict[str, Any]] = []
     papers: list[dict[str, Any]] = []
     for year in YEARS:

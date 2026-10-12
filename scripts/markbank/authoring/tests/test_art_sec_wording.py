@@ -40,8 +40,11 @@ def on_cited_page(path: str, pages, text: str) -> bool:
 class ArtSecWordingTest(unittest.TestCase):
     def test_audits_at_least_one_year(self):
         self.assertTrue(AUDITED)
+        # Descriptors exist from 2023; the 2021-2022 schemes allocate marks
+        # to components without descriptor bands.
         self.assertEqual(sorted(AUTHORED['descriptors']),
-                         sorted(f'{year}-{level}' for year in AUDITED for level in ('higher', 'ordinary')))
+                         sorted(f'{year}-{level}' for year in AUDITED if year >= 2023
+                                for level in ('higher', 'ordinary')))
 
     def test_every_card_string_is_printed(self):
         failures = []
@@ -63,9 +66,13 @@ class ArtSecWordingTest(unittest.TestCase):
             if not page_has(paper, card['paperPage'], lines[0]):
                 failures.append((card['id'], 'paperPage', card['paperPage']))
             for criterion in card.get('criteria', []):
-                for text in criterion['guidance']:
+                for text in criterion['guidance'] + [n for n in criterion.get('rowNotes', []) if n]:
                     if not on_cited_page(scheme, card['schemePage'], text):
                         failures.append((card['id'], 'scheme row', text))
+                if 'rowMarks' in criterion and sum(criterion['rowMarks']) != criterion['maxMarks']:
+                    failures.append((card['id'], 'row marks', criterion['rowMarks']))
+                if any(text.startswith('SEC note') for text in criterion['guidance']):
+                    failures.append((card['id'], 'written prefix', criterion['guidance']))
         self.assertEqual(failures, [])
 
     def test_every_descriptor_and_note_is_printed_on_its_page(self):
@@ -92,6 +99,10 @@ class ArtSecWordingTest(unittest.TestCase):
     def test_cards_cite_the_pages_they_quote(self):
         for card in AUTHORED['cards']:
             if card['year'] not in AUDITED:
+                continue
+            if card['assessment'] == 'legacy-components':
+                # One scheme table per question, on its one page.
+                self.assertIsInstance(card['schemePage'], int, card['id'])
                 continue
             lifted = AUTHORED['descriptors'][f"{card['year']}-{card['level']}"]
             if card['assessment'] == 'current-long-descriptors':
@@ -153,6 +164,19 @@ class ArtSecWordingTest(unittest.TestCase):
                     text = ' '.join([card.get('stem') or '', card['questionText'], *card['taskRequirements']])
                     self.assertNotIn(label, text, card['id'])
 
+    # Questions where the card keeps a different heading from the Atlas's,
+    # because the Atlas's own mapping contradicts the printed dates or works.
+    # Each is reported for an Atlas correction; none may be added silently.
+    ATLAS_DISAGREEMENTS = {
+        (2021, 'higher', 3): ('art-5-1', 'the Tara Brooch, 8th-century metalwork: Insular Art (Atlas: Pre-Christian)'),
+        (2021, 'higher', 6): ('art-5-5', "'Portrait of Henry Shefflin (b.1979)': Post 1960s (Atlas: Irish Modernism)"),
+        (2021, 'ordinary', 6): ('art-5-5', "'The Hare Queen' by Fidelma Massey (b.1956): Post 1960s (Atlas: Irish Modernism)"),
+        (2022, 'higher', 6): ('art-5-5', "'Harmony' by Sandra Bell, public sculpture: Post 1960s (Atlas: Irish Modernism)"),
+        (2022, 'ordinary', 6): ('art-5-5', "'The Family' by Maurice Harron (b.1946): Post 1960s (Atlas: Irish Modernism)"),
+        (2022, 'higher', 13): ('art-4-3', 'Vincent van Gogh (1853-1890): Post-Impressionism (Atlas: Modernism)'),
+        (2022, 'ordinary', 8): ('art-4-0', "Gislebertus' 'Last Judgement' (12th century): Romanesque (Atlas: Renaissance)"),
+    }
+
     def test_audited_topics_are_ones_the_atlas_gives_the_question(self):
         runtime = json.loads((ROOT / 'data/examTopics/art-runtime.json').read_text())
         topics = runtime['topics']
@@ -166,11 +190,19 @@ class ArtSecWordingTest(unittest.TestCase):
             if card['year'] not in AUDITED:
                 continue
             number = int(re.search(r'Q(\d+)', card['questionRef']).group(1))
-            allowed = atlas.get((card['year'], card['level'][0], number))
+            allowed = set(atlas.get((card['year'], card['level'][0], number)) or ())
             if allowed == {'art-6-4'}:
                 # The Atlas files the question only under the catch-all
-                # (2023 HL Section A); the card needs a specific Section A topic.
+                # (2023 HL Section A, some 2021-22 Section III questions); the
+                # card needs a specific Today's World topic.
                 allowed = {'art-6-0', 'art-6-1', 'art-6-2', 'art-6-3'}
+            key = (card['year'], card['level'], number)
+            if key in art_cards.OPTION_TOPICS:
+                # A per-option card files under its option's heading
+                # (art_cards.OPTION_TOPICS: the options span headings).
+                allowed |= set(art_cards.OPTION_TOPICS[key].values())
+            if key in self.ATLAS_DISAGREEMENTS:
+                allowed = {self.ATLAS_DISAGREEMENTS[key][0]}
             if not allowed or card['topicId'] not in allowed:
                 failures.append((card['id'], card['topicId'], sorted(allowed or [])))
         self.assertEqual(failures, [])

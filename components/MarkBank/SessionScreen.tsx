@@ -1408,7 +1408,32 @@ const ArtRubricPanel: React.FC<{
                 <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>{criterion.label}</strong>
                 <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>/ {criterion.maxMarks}</span>
               </div>
-              {criterion.guidance.length > 0 && (
+              {criterion.rowMarks && (criterion.rowMarks.length > 1 || criterion.rowNotes) ? (
+                /* The 2021–2022 schemes' own table: each component row with
+                   the Marks and Notes columns printed beside it. */
+                <table style={{ width: '100%', borderCollapse: 'collapse', margin: '7px 0 10px', color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                  <thead>
+                    <tr>
+                      <th scope="col" style={{ padding: '0 6px 4px 0' }}><span style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0 0 0 0)' }}>Component</span></th>
+                      <th scope="col" style={{ padding: '0 6px 4px', width: 42, textAlign: 'right', font: `700 9.5px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: LABEL }}>Marks</th>
+                      {criterion.rowNotes && (
+                        <th scope="col" style={{ padding: '0 0 4px 6px', width: '30%', textAlign: 'left', font: `700 9.5px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: LABEL }}>Notes</th>
+                      )}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {criterion.guidance.map((row, index) => (
+                      <tr key={`${criterion.id}-${index}`} style={{ borderTop: `1px solid ${HAIRLINE_2}` }}>
+                        <td style={{ padding: '5px 6px 5px 0', verticalAlign: 'top' }}>{row}</td>
+                        <td style={{ padding: '5px 6px', verticalAlign: 'top', textAlign: 'right', font: `700 11px/1.48 ${MONO}`, color: INK_2, fontVariantNumeric: 'tabular-nums' }}>{criterion.rowMarks![index]}</td>
+                        {criterion.rowNotes && (
+                          <td style={{ padding: '5px 0 5px 6px', verticalAlign: 'top' }}>{criterion.rowNotes[index]}</td>
+                        )}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : criterion.guidance.length > 0 && (
                 <ul style={{ listStyle: 'disc', margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
                   {criterion.guidance.map((note, index) => <li key={`${criterion.id}-${index}`}>{note}</li>)}
                 </ul>

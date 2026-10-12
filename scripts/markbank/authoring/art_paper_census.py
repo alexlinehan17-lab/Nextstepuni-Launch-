@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Independent census of every printed Art task, read from the paper itself.
 
-This shares no code with art_cards.py. It reads a current-format (2023 on)
-question paper's own text, finds every printed "Question N" and its lettered
-parts, and records any selection directive the paper prints. The deck is then
-checked against it (tests/test_art_sec_wording.py): a printed task with no
-card, or a card for no printed task, fails.
+This shares no code with art_cards.py. It reads each question paper's own
+text, finds every printed question ("Question N" from 2023, "N." on the
+2021-2022 papers), its lettered parts and, on the 2021-2022 papers, a second
+task printed after a standalone "and", and records any selection directive
+the paper prints. The deck is then checked against it
+(tests/test_art_sec_wording.py): a printed task with no card, or a card for
+no printed task, fails.
 
     python3 scripts/markbank/authoring/art_paper_census.py 2026 higher
 """
@@ -44,7 +46,8 @@ def paper_text(year: int, level: str) -> list[tuple[int, str]]:
 def census(year: int, level: str) -> dict:
     pages = paper_text(year, level)
     text = '\n'.join(f'\n@@PAGE {number}\n{FURNITURE.sub(" ", body)}' for number, body in pages)
-    heads = list(re.finditer(r'(?m)^\s*Question\s+(\d{1,2})\b', text))
+    head = r'(?m)^\s*Question\s+(\d{1,2})\b' if year >= 2023 else r'(?m)^\s*(\d{1,2})\.\s'
+    heads = list(re.finditer(head, text))
     questions = {}
     for index, head in enumerate(heads):
         number = int(head.group(1))
