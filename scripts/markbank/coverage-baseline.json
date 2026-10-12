@@ -180,19 +180,19 @@
   "refsHash": "d68011c4e1a644b2"
  },
  "irish": {
-  "cards": 400,
-  "contentHash": "0f7f4953e350117f",
+  "cards": 704,
+  "contentHash": "29f121f77e21e1e4",
   "coveragePct": 100.0,
-  "covered": 400,
+  "covered": 704,
   "excluded": 0,
-  "leaves": 400,
+  "leaves": 704,
   "open": 0,
   "orphans": 0,
   "papers": {
    "count": 30,
    "hash": "9d84f99397f0fb11"
   },
-  "refsHash": "02b0f7ad91f8e59d"
+  "refsHash": "b59677cf6f9888b6"
  },
  "maths": {
   "cards": 833,

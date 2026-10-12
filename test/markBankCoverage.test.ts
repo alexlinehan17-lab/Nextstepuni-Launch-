@@ -35,6 +35,12 @@ import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geogra
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
+// Irish ships authored.json plus one reviewed manifest per paper component;
+// mirror reconcile.py by reading exactly the manifests factory.ts imports.
+const irishManifests = (): string[] => [...readFileSync(resolve(
+  __dirname, '..', 'components', 'MarkBank', 'cards', 'irish', 'factory.ts'), 'utf8')
+  .matchAll(/^import \w+ from '\.\/([\w-]+\.json)';/gm)].map((m) => m[1]);
+
 const deckCards = (subject: string): { id: string; ref: string }[] => {
   if (subject === 'english') {
     return [...ENGLISH_HIGHER, ...ENGLISH_ORDINARY]
@@ -119,7 +125,11 @@ describe('Mark Bank paper-coverage ratchet', () => {
           return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] QA\((?:i|ii|iii)(?:\)\((?:a|b))?\)|Text [1-3] QB|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4])|Comparative [A-C] Q[12]|Unseen Poetry Q[12]|Prescribed Poetry (?:[1-5]|[A-F] Q(?:1|2\((?:i|ii|iii)\))))$/.test(ref);
         }
         if (subject === 'irish') {
-          return !/^\d{4} (?:HL|OL) Paper [12] (?:Cluastuiscint Cuid [ABC] · .+|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6]|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\))$/.test(ref);
+          // Generated 2021–2025 corpus plus the reviewed components: listening
+          // segments and their printed questions (the 2026 papers drop the
+          // "Cluastuiscint" prefix), reading parts down to an answer slot,
+          // and Irish-headed literature routes named after their text.
+          return !/^\d{4} (?:HL|OL) Paper [12] (?:(?:Cluastuiscint )?Cuid [ABC] · (?:Fógra|Comhrá|Píosa) a (?:hAon|Dó)(?: · An (?:Chéad Mhír|Dara Mír))?(?: · Ceist [1-9](?:\([a-e]\))?)?|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6](?:\([ab]\)(?:\((?:i|ii)\))?)?(?: · (?:Pointe|Freagra|Léargas|Dúshlán|Sampla|Ceist|Cúis) [1-9])?|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\)|(?:Prós 2|Filíocht 3)[AB]\([a-c]\) · .+|Litríocht 4[A-F](?: ·|\.) .+)$/.test(ref);
         }
         if (subject === 'geography') {
           return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?: · .+)?$/.test(ref);
@@ -154,7 +164,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     }
     if (subject === 'english' || subject === 'irish' || subject === 'art'
       || subject === 'geography') {
-      for (const name of ['factory.ts', 'authored.json']) {
+      for (const name of subject === 'irish' ? ['factory.ts', ...irishManifests()] : ['factory.ts', 'authored.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
