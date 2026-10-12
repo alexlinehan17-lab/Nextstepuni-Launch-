@@ -1,0 +1,1081 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2019,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "6db649d8584db4fe7421bcfaefe595f22b4981ac3e28ae3eeee6cefdf004a02c",
+  "schemeSha256": "c2a41dfed8a8c56058f8d36ffd2e0facb8ea06ce8c4a65345634c709caf89b7e",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 28 question-paper pages and PDF pages 1–25 of the combined Ordinary Level scheme (cover, notes, contents, the Paper 1 title page, the Paper 1 scale table on page 5, the summary of mark allocations on page 6, the annotation palette on pages 7–8, every Paper 1 model solution and marking note on pages 9–23, the blank page 24 and the Paper 2 title page 25). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 55,
+    "8": 55,
+    "9": 40
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    5,
+    6
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 55 marks, Q8 55 marks, Q9 40 marks). Every question is retained.",
+    "36 independently marked units, matching the printed summary on scheme page 6. Shared scales are one task each: Q2(a)(i)+(ii) 10D and Q7(b)(i)+(ii) 20D.",
+    "Paper 1 bands from the 2019 Ordinary Level scale table on scheme page 5: 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10C 0,3,7,10; 10D 0,3,5,8,10; 15C 0,5,10,15; 15D 0,4,7,11,15; 20D 0,5,10,15,20.",
+    "This paper had no authored cards before this review; all 36 units are new. Marking points are lifted line by line from the scheme and labelled with the part of the scheme they come from. This scheme’s text layer encodes subscripts and superscripts as unrelated ASCII characters (z₂ extracts as “z8”, f′ as “fL”, 2^(2x−1) as “28TE;”), which no glyph map can repair because the characters are ordinary ASCII. Marking points containing them are not quoted; the scheme reader carries them. For the same reason Q2(a)(iii), Q3(b), Q7(d)(ii) and Q9(d) quote fewer credit bands than the scheme prints. Q8(b)(i) prints its first bullet (“One additional correct entry”) under no band heading, so it is quoted as a note.",
+    "Graph and table tasks (Q3(a)(i), Q7(b), Q7(c)) carry their printed credit criteria; the drawn graphs are in the scheme reader.",
+    "The question booklet is LC003GLP100EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 2. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2019-ol-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Eimear earns a gross wage of €40 000 per annum with Company A.",
+      "questionText": "Eimear pays income tax at a rate of 20% on income up to the standard rate cut-off point of €35 300. She pays tax at a rate of 40% on the remainder. She has annual tax credits of €1650. Find how much income tax she pays per annum."
+    },
+    {
+      "id": "maths-2019-ol-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Eimear earns a gross wage of €40 000 per annum with Company A. Eimear pays income tax at a rate of 20% on income up to the standard rate cut-off point of €35 300. She pays tax at a rate of 40% on the remainder. She has annual tax credits of €1650.",
+      "questionText": "Eimear pays her health insurance which costs her €1500 net. Find her annual income after paying income tax and health insurance (i.e. her net annual income)."
+    },
+    {
+      "id": "maths-2019-ol-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Eimear earns a gross wage of €40 000 per annum with Company A. Eimear pays income tax at a rate of 20% on income up to the standard rate cut-off point of €35 300. She pays tax at a rate of 40% on the remainder. She has annual tax credits of €1650. Eimear pays her health insurance which costs her €1500 net.",
+      "questionText": "Eimear is planning to change jobs. She is offered a job by Company B with a gross wage of €38 000 and a bonus of €1500 (tax free to Eimear) to be paid by the company, which she would use to pay her health insurance. Her tax rates and credits would remain the same. Find by how much Eimear’s net annual income (after paying income tax and health insurance) will increase if she accepts the job with Company B."
+    },
+    {
+      "id": "maths-2019-ol-p1-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below.",
+      "questionText": "(i) z₂ = 2z₁. Find the value of z₂, and plot and label it on the Argand Diagram. (ii) z̅₁ is the complex conjugate of z₁. Write down the value of z̅₁, and plot and label it on the Argand Diagram."
+    },
+    {
+      "id": "maths-2019-ol-p1-q2-a-iii",
+      "printedParts": [
+        "Q2(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below. z₂ = 2z₁, and z̅₁ is the complex conjugate of z₁.",
+      "questionText": "Investigate if |z₂| = |z₁ + z̅₁|."
+    },
+    {
+      "id": "maths-2019-ol-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below.",
+      "questionText": "Show that z₁ = 2 + i is a solution of the equation z² − 4z + 5 = 0."
+    },
+    {
+      "id": "maths-2019-ol-p1-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The function f is defined as f(x) = −x³ + 4x² + x − 2, where x ∈ ℝ.",
+      "questionText": "Complete the table below for the values of f in the domain −1 ≤ x ≤ 4 and hence draw the graph of the function f(x) in the domain −1 ≤ x ≤ 4, x ∈ ℝ. x: −1, 0, 1, 2, 3, 4. f(x): _, _, _, _, 10, _."
+    },
+    {
+      "id": "maths-2019-ol-p1-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The function f is defined as f(x) = −x³ + 4x² + x − 2, where x ∈ ℝ.",
+      "questionText": "Use your graph to estimate the two roots of f(x) which are in the domain −1 ≤ x ≤ 4."
+    },
+    {
+      "id": "maths-2019-ol-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The function f is defined as f(x) = −x³ + 4x² + x − 2, where x ∈ ℝ.",
+      "questionText": "Find the value of x for which f″(x) = 0, where f″(x) is the second derivative of f(x)."
+    },
+    {
+      "id": "maths-2019-ol-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve for x: (3x + 1)/5 + (x − 2)/2 = 47/10"
+    },
+    {
+      "id": "maths-2019-ol-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the simultaneous equations: x − 5y = −13; x² + y² = 13."
+    },
+    {
+      "id": "maths-2019-ol-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Harry draws a scale diagram of the portion of his garden that is covered in lawn. His diagram is shown below. Each box on the grid is 1 cm × 0·5 cm. Each cm on Harry’s diagram represents 3 m. In order to estimate the area of the lawn Harry divides the diagram into eight sections. Use the trapezoidal rule to estimate the area of the lawn using the scale: 1 cm = 3 m."
+    },
+    {
+      "id": "maths-2019-ol-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "Nuala can walk at a speed of 1·6 metres per second. Write this speed in kilometres per hour."
+    },
+    {
+      "id": "maths-2019-ol-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "questionText": "Solve the following inequality for x ∈ ℝ and show your solution on the numberline below: 2(3 − x) < 8."
+    },
+    {
+      "id": "maths-2019-ol-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices"
+      ],
+      "questionText": "Solve for x: 2^(2x−1) = 64."
+    },
+    {
+      "id": "maths-2019-ol-p1-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again.",
+      "questionText": "At what height was the ball when it was hit by the goalkeeper?"
+    },
+    {
+      "id": "maths-2019-ol-p1-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)",
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        17,
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again.",
+      "questionText": "(i) Complete the table below to show the height of the ball at various intervals during the first 4 seconds of its flight. Time (t): 0, 0·5, 1, 1·5, 2, 2·5, 3, 3·5, 4. Height (m): _, _, _, _, _, 16, _, _, _. (ii) On the grid below draw a graph to show the height of the ball while it was in the air."
+    },
+    {
+      "id": "maths-2019-ol-p1-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (b) completes a table of heights and draws the graph of the height of the ball while it was in the air.",
+      "questionText": "Use your graph to estimate (show your work on the graph): the length of time the ball was in the air from the time it was hit until it landed on the ground."
+    },
+    {
+      "id": "maths-2019-ol-p1-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (b) completes a table of heights and draws the graph of the height of the ball while it was in the air.",
+      "questionText": "Use your graph to estimate (show your work on the graph): the length of time the ball was 10 m, or more, above the ground."
+    },
+    {
+      "id": "maths-2019-ol-p1-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again.",
+      "questionText": "Find f′(t), the derivative of f(t) = −4t² + 16t + 1."
+    },
+    {
+      "id": "maths-2019-ol-p1-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (d)(i): Find f′(t), the derivative of f(t) = −4t² + 16t + 1.",
+      "questionText": "Use your answer from part (d)(i) to find the speed of the ball when it had been in the air for 4 seconds. Give your answer in metres per second."
+    },
+    {
+      "id": "maths-2019-ol-p1-q7-d-iii",
+      "printedParts": [
+        "Q7(d)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (d)(i): Find f′(t), the derivative of f(t) = −4t² + 16t + 1.",
+      "questionText": "Use your answer from part (d)(i) to find the value of t for which the ball was descending and travelling at a speed of 8 metres per second."
+    },
+    {
+      "id": "maths-2019-ol-p1-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "The power (P) of an engine is measured in horsepower using the formula: P = (R × T)/5252, where R is the engine speed measured in revolutions per minute (RPM) and T is the torque measured in appropriate units.",
+      "questionText": "Find the power of an engine that generates 480 units of torque at 2500 RPM. Give your answer correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2019-ol-p1-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "The power (P) of an engine is measured in horsepower using the formula: P = (R × T)/5252, where R is the engine speed measured in revolutions per minute (RPM) and T is the torque measured in appropriate units.",
+      "questionText": "Rearrange the formula to write R in terms of P and T."
+    },
+    {
+      "id": "maths-2019-ol-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded.",
+      "questionText": "Complete the table below to show the company’s loss/profit for each of the first six months of trading. Month: 1, 2, 3, 4, 5, 6. Profit (€): −4000, −3750, _, −3250, _, _."
+    },
+    {
+      "id": "maths-2019-ol-p1-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded.",
+      "questionText": "Show that the profit the company makes in month n is given by the formula Tₙ = 250n − 4250."
+    },
+    {
+      "id": "maths-2019-ol-p1-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250.",
+      "questionText": "What profit does the company make in January 2018 (i.e. month 25)?"
+    },
+    {
+      "id": "maths-2019-ol-p1-q8-b-iv",
+      "printedParts": [
+        "Q8(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250.",
+      "questionText": "Find the month in which the company breaks even (i.e. €0 profit)."
+    },
+    {
+      "id": "maths-2019-ol-p1-q8-b-v",
+      "printedParts": [
+        "Q8(b)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250.",
+      "questionText": "Find Sₙ, the general term for the total profit of the company after n months."
+    },
+    {
+      "id": "maths-2019-ol-p1-q8-b-vi",
+      "printedParts": [
+        "Q8(b)(vi)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250. Part (b)(v): Find Sₙ, the general term for the total profit of the company after n months.",
+      "questionText": "Hence, or otherwise, find the total profit of the company at the end of January 2019 (i.e. month 37)."
+    },
+    {
+      "id": "maths-2019-ol-p1-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched.",
+      "questionText": "Use the formula to estimate the number of registered users 8 months after the website was launched."
+    },
+    {
+      "id": "maths-2019-ol-p1-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices",
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched.",
+      "questionText": "There are 31 493 registered users at the end of a particular month. Estimate how many users there will be one month later."
+    },
+    {
+      "id": "maths-2019-ol-p1-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0·0012 each month, for every user who is registered.",
+      "questionText": "How much would she earn in a month when there were 600 000 registered users?"
+    },
+    {
+      "id": "maths-2019-ol-p1-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0·0012 each month, for every user who is registered.",
+      "questionText": "Avril earns €1285·37 for a particular month. How many registered users did the website have in that month."
+    },
+    {
+      "id": "maths-2019-ol-p1-q9-c-iii",
+      "printedParts": [
+        "Q9(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths",
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0·0012 each month, for every user who is registered.",
+      "questionText": "A web design company charges Avril €80 per month to maintain and host the site. How much will Avril make or lose in month 4 and in month 12 from the website."
+    },
+    {
+      "id": "maths-2019-ol-p1-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Avril has a website.",
+      "questionText": "Another web design company in the UK offers to host and maintain her website for £55 sterling per month. Avril uses the exchange rate on a particular day to find how much this would cost in euro. She finds that it would cost €62·70. Find the exchange rate for 1 euro on that day. Give your answer correct to 4 decimal places."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        21
+      ],
+      "wording": "Hence, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:4bcb6b2e6058aa0d": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "4:b309164c6180e58b": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "16:1f1d2db35fba3119": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "21:553ec832c5e4b77f": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    }
+  }
+}

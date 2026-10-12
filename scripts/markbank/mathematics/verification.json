@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1795,
-  "reviewedTasks": 1795,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1831,
+  "reviewedTasks": 1831,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 342,
+  "targetedRegressionTests": 345,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -1165,5 +1165,26 @@
     "schemePagesInspected": 22,
     "coverageBaseline": "1374/3474 asks covered, 0 orphans, 0 excluded, 2100 open",
     "validation": "Deck generation (1,795 built, 0 dropped), Atlas generation and --check (440 placements), audit --check-reviewed, scheme quote check of all 32 cards, ten regression files (342/342), typecheck and diff whitespace check passed."
+  },
+  "ordinary2019p1": {
+    "paper": "2019 Ordinary Level Paper 1",
+    "paperFileid": "LC003GLP100EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "independentlyReviewedTasks": 36,
+    "existingRuntimeCardsReviewed": 0,
+    "newPaper": true,
+    "addedRuntimeCards": 36,
+    "schemeMarkdownAdded": "examiner-reports/maths/schemes/2019-ol.md (pure extraction by the same page-text + block-order method)",
+    "textLayerLimit": "The scheme's subscripts and superscripts extract as unrelated ASCII (z2 as 'z8', f' as 'fL'); marking points containing them are not quoted, so Q2(a)(iii), Q3(b), Q7(d)(ii) and Q9(d) quote fewer bands than printed.",
+    "historicalRejectsRemaining": 0,
+    "targetedRegressionTests": 345,
+    "previousRuntimeIdsRetained": 1795,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 28,
+    "schemePagesInspected": 25,
+    "coverageBaseline": "1412/3474 asks covered, 0 orphans, 0 excluded, 2062 open",
+    "validation": "Deck generation (1,831 built, 0 dropped), Atlas generation and --check (449 placements), audit --check-reviewed, scheme quote check of all 36 cards, ten regression files (345/345), typecheck and diff whitespace check passed."
   }
 }

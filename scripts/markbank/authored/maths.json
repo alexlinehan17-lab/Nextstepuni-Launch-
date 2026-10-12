@@ -80013,5 +80013,1901 @@
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P."
+ },
+ {
+  "id": "maths-2019-ol-p1-q1-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-a",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q1(a)",
+  "questionText": "Eimear pays income tax at a rate of 20% on income up to the standard rate cut-off point of €35 300. She pays tax at a rate of 40% on the remainder. She has annual tax credits of €1650. Find how much income tax she pays per annum.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 35300 × 0·2 = €7060",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 4700 × 0·4 = €1880",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — €7060 + 1880 = €8940",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — €8940 − 1650 = €7290 net tax",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Use of 20%, 40% or similar",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Finds 4700",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-a-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Both taxes formulated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-a-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — One tax found correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-a-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Both taxes found and added",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Eimear earns a gross wage of €40 000 per annum with Company A."
+ },
+ {
+  "id": "maths-2019-ol-p1-q1-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-b",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q1(b)",
+  "questionText": "Eimear pays her health insurance which costs her €1500 net. Find her annual income after paying income tax and health insurance (i.e. her net annual income).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 40000 − (7290 + 1500) = €31210",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Brings down answer from (a)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Finds 8790",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-b-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Income formulated correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Eimear earns a gross wage of €40 000 per annum with Company A. Eimear pays income tax at a rate of 20% on income up to the standard rate cut-off point of €35 300. She pays tax at a rate of 40% on the remainder. She has annual tax credits of €1650."
+ },
+ {
+  "id": "maths-2019-ol-p1-q1-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-c",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q1(c)",
+  "questionText": "Eimear is planning to change jobs. She is offered a job by Company B with a gross wage of €38 000 and a bonus of €1500 (tax free to Eimear) to be paid by the company, which she would use to pay her health insurance. Her tax rates and credits would remain the same. Find by how much Eimear’s net annual income (after paying income tax and health insurance) will increase if she accepts the job with Company B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 35300 × 0·2 + 2700 × 0·4 = 8140",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 8140 − 1650 = 6490",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 38000 − 6490 = 31510",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 31510 − 31210 = €300",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-c-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — ⟹ €300 increase",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Use of 7060",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-c-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Finds 2700",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-c-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Finds 8140 or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q1-c-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds 6490 and 31510 or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Eimear earns a gross wage of €40 000 per annum with Company A. Eimear pays income tax at a rate of 20% on income up to the standard rate cut-off point of €35 300. She pays tax at a rate of 40% on the remainder. She has annual tax credits of €1650. Eimear pays her health insurance which costs her €1500 net."
+ },
+ {
+  "id": "maths-2019-ol-p1-q2-a-i",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-a-i",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q2(a)(i), (a)(ii)",
+  "questionText": "(i) z₂ = 2z₁. Find the value of z₂, and plot and label it on the Argand Diagram. (ii) z̅₁ is the complex conjugate of z₁. Write down the value of z̅₁, and plot and label it on the Argand Diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q2-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 2(2 + i) = 4 + 2i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 2 − i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Finds 4 + 2i and 2 − i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Mixes up axes but finds, plots and labels correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Note — Ignore extra incorrect plotting",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below."
+ },
+ {
+  "id": "maths-2019-ol-p1-q2-a-iii",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-a-iii",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q2(a)(iii)",
+  "questionText": "Investigate if |z₂| = |z₁ + z̅₁|.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q2-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below. z₂ = 2z₁, and z̅₁ is the complex conjugate of z₁."
+ },
+ {
+  "id": "maths-2019-ol-p1-q2-b",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-b",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q2(b)",
+  "questionText": "Show that z₁ = 2 + i is a solution of the equation z² − 4z + 5 = 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 9 − 9 + 4i − 4i = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — = 2 ± i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-b-solution-4",
+    "kind": "point",
+    "verbatim": "Note — failure to draw a relevant conclusion from incorrect work to be treated as an error",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-b-solution-5",
+    "kind": "point",
+    "verbatim": "Method 2, Low Partial Credit — Some relevant substitution into quadratic roots formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-b-solution-6",
+    "kind": "point",
+    "verbatim": "Method 2, Low Partial Credit — Quadratic roots formula written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q2-b-solution-7",
+    "kind": "point",
+    "verbatim": "Method 2, High Partial Credit — Full substitution with some errors but with complex roots and relevant conclusion given",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below."
+ },
+ {
+  "id": "maths-2019-ol-p1-q3-a-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q3-a-i",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q3(a)(i)",
+  "questionText": "Complete the table below for the values of f in the domain −1 ≤ x ≤ 4 and hence draw the graph of the function f(x) in the domain −1 ≤ x ≤ 4, x ∈ ℝ. x: −1, 0, 1, 2, 3, 4. f(x): _, _, _, _, 10, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q3-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f(x) 2 -2 2 8 10 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q3-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant work towards finding a value for f(x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q3-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One point found correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q3-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One point from candidates table plotted correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q3-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Table fully correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q3-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — All points from candidates incorrect table plotted and/or joined correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q3-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — All correct points found and plotted correctly, but not joined or joined incorrectly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q3-a-i-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 4 or 5 correct points on table plotted correctly with joining",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The function f is defined as f(x) = −x³ + 4x² + x − 2, where x ∈ ℝ."
+ },
+ {
+  "id": "maths-2019-ol-p1-q3-a-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q3-a-ii",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q3(a)(ii)",
+  "questionText": "Use your graph to estimate the two roots of f(x) which are in the domain −1 ≤ x ≤ 4.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q3-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Roots ≈ −0·7, 0·7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q3-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — One correct/relevant root given or indicated on graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The function f is defined as f(x) = −x³ + 4x² + x − 2, where x ∈ ℝ."
+ },
+ {
+  "id": "maths-2019-ol-p1-q3-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q3-b",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q3(b)",
+  "questionText": "Find the value of x for which f″(x) = 0, where f″(x) is the second derivative of f(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = −6x + 8 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 4/3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The function f is defined as f(x) = −x³ + 4x² + x − 2, where x ∈ ℝ."
+ },
+ {
+  "id": "maths-2019-ol-p1-q4-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q4-a",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q4(a)",
+  "questionText": "Solve for x: (3x + 1)/5 + (x − 2)/2 = 47/10",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 6x + 2 + 5x − 10 = 47",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 10 identified as common denominator",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant multiplication",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 2(3x + 1) + 5(x − 2) without CD",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Tests a value/s for x not equal to 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-a-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 6x + 2 + 5x − 10 = 47 or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-a-solution-8",
+    "kind": "point",
+    "verbatim": "Note — Accept Trial and Improvement method for x = 5 verified for full marks",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-ol-p1-q4-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q4-b",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q4(b)",
+  "questionText": "Solve the simultaneous equations: x − 5y = −13; x² + y² = 13.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x = 5y − 13",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (y − 2)(y − 3) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — y = 2 and y = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — ⟹ x = −3 and x = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — (−3, 2) and (2, 3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Isolates one variable or transposes correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q4-b-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One relevant value (root) found from quadratic",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-ol-p1-q5-a",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q5-a",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q5(a)",
+  "questionText": "Harry draws a scale diagram of the portion of his garden that is covered in lawn. His diagram is shown below. Each box on the grid is 1 cm × 0·5 cm. Each cm on Harry’s diagram represents 3 m. In order to estimate the area of the lawn Harry divides the diagram into eight sections. Use the trapezoidal rule to estimate the area of the lawn using the scale: 1 cm = 3 m.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — [0+0+2(15+18+15+12+15+18+15]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — A = 324 m²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q5-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct dimension identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q5-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q5-a-solution-5",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Correct formula with some correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q5-a-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct formula fully substituted correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-ol-p1-q5-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q5-b",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q5(b)",
+  "questionText": "Nuala can walk at a speed of 1·6 metres per second. Write this speed in kilometres per hour.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1·6 × 60 × 60 ÷ 1000 = 5·76",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1·6 × 60 or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any work of merit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q5-b-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1·6 × 60 × 60 = 5760",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q5-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1·6 × 60 × 60 ÷ 1000 not finished",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-ol-p1-q6-a",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-q6-a",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q6(a)",
+  "questionText": "Solve the following inequality for x ∈ ℝ and show your solution on the numberline below: 2(3 − x) < 8.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 6 − 2x < 8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 2x > −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x > −1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct multiplication",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-a-solution-5",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Correct transposing from correct work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-a-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — x > −1 but no plot or incorrectly plotted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-a-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — x < −1 and correctly plotted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-ol-p1-q6-b",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q6-b",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 OL Paper 1 Q6(b)",
+  "questionText": "Solve for x: 2^(2x−1) = 64.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ 2x − 1 = 6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 2x = 7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — List of powers of 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer no work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Equation in x, 2x − 1 = 6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q6-b-solution-6",
+    "kind": "point",
+    "verbatim": "Zero Credit — 4x − 2 = 64",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-ol-p1-q7-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q7-a",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q7(a)",
+  "questionText": "At what height was the ball when it was hit by the goalkeeper?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f(0) = 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-a-solution-2",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — f(0)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-a-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — t = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again."
+ },
+ {
+  "id": "maths-2019-ol-p1-q7-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q7-b-i",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q7(b)(i), (b)(ii)",
+  "questionText": "(i) Complete the table below to show the height of the ball at various intervals during the first 4 seconds of its flight. Time (t): 0, 0·5, 1, 1·5, 2, 2·5, 3, 3·5, 4. Height (m): _, _, _, _, _, 16, _, _, _. (ii) On the grid below draw a graph to show the height of the ball while it was in the air.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q7-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Height (m) 1 8 13 16 17 16 13 8 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Up to 6 correct entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Between 7 and 12 correct entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 13 to 17 correct entries, no joining or incorrect joined with a straight line",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "Note — An entry is a calculation or a plot",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again."
+ },
+ {
+  "id": "maths-2019-ol-p1-q7-c-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q7-c-i",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q7(c)(i)",
+  "questionText": "Use your graph to estimate (show your work on the graph): the length of time the ball was in the air from the time it was hit until it landed on the ground.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q7-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 4·1 or similar, but no extension shown on graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Extension to graph only",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Clear indication on graph, but no value given",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (b) completes a table of heights and draws the graph of the height of the ball while it was in the air."
+ },
+ {
+  "id": "maths-2019-ol-p1-q7-c-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q7-c-ii",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q7(c)(ii)",
+  "questionText": "Use your graph to estimate (show your work on the graph): the length of time the ball was 10 m, or more, above the ground.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q7-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Work to be shown on graph.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 3·4 − 0·6 = 2·8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — f(3·4)found or indicated on graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — f(0·6)found or indicated on graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-c-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3·4 − 0·6 or equivalent and fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (b) completes a table of heights and draws the graph of the height of the ball while it was in the air."
+ },
+ {
+  "id": "maths-2019-ol-p1-q7-d-i",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q7-d-i",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q7(d)(i)",
+  "questionText": "Find f′(t), the derivative of f(t) = −4t² + 16t + 1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q7-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = −8t + 16",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Any correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again."
+ },
+ {
+  "id": "maths-2019-ol-p1-q7-d-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q7-d-ii",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q7(d)(ii)",
+  "questionText": "Use your answer from part (d)(i) to find the speed of the ball when it had been in the air for 4 seconds. Give your answer in metres per second.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q7-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — −8(4·0) + 16 = −16",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Speed =16",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-d-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Note — Accept -16",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (d)(i): Find f′(t), the derivative of f(t) = −4t² + 16t + 1."
+ },
+ {
+  "id": "maths-2019-ol-p1-q7-d-iii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q7-d-iii",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q7(d)(iii)",
+  "questionText": "Use your answer from part (d)(i) to find the value of t for which the ball was descending and travelling at a speed of 8 metres per second.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q7-d-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — −8t + 16 = −8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-d-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 8t = 24",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-d-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — t = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q7-d-iii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — −8t + 16 = −8 and fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t ∈ ℝ, where t is the time, in seconds, from when the ball is hit and f(t) was the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Part (d)(i): Find f′(t), the derivative of f(t) = −4t² + 16t + 1."
+ },
+ {
+  "id": "maths-2019-ol-p1-q8-a-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-a-i",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q8(a)(i)",
+  "questionText": "Find the power of an engine that generates 480 units of torque at 2500 RPM. Give your answer correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 228·48",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 228",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The power (P) of an engine is measured in horsepower using the formula: P = (R × T)/5252, where R is the engine speed measured in revolutions per minute (RPM) and T is the torque measured in appropriate units."
+ },
+ {
+  "id": "maths-2019-ol-p1-q8-a-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-a-ii",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q8(a)(ii)",
+  "questionText": "Rearrange the formula to write R in terms of P and T.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — R = 5252 P/T",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any relevant transposing",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Transposing complete but with one error",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The power (P) of an engine is measured in horsepower using the formula: P = (R × T)/5252, where R is the engine speed measured in revolutions per minute (RPM) and T is the torque measured in appropriate units."
+ },
+ {
+  "id": "maths-2019-ol-p1-q8-b-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-b-i",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q8(b)(i)",
+  "questionText": "Complete the table below to show the company’s loss/profit for each of the first six months of trading. Month: 1, 2, 3, 4, 5, 6. Profit (€): −4000, −3750, _, −3250, _, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q8-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Profit (€) −4000 −3750 −3500 −3250 −3000 −2750",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Note — One additional correct entry",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Two correct entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded."
+ },
+ {
+  "id": "maths-2019-ol-p1-q8-b-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-b-ii",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q8(b)(ii)",
+  "questionText": "Show that the profit the company makes in month n is given by the formula Tₙ = 250n − 4250.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q8-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = −4000 + (n − 1)250",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 250n − 4250",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Identifies correct a and/or d",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded."
+ },
+ {
+  "id": "maths-2019-ol-p1-q8-b-iii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-b-iii",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q8(b)(iii)",
+  "questionText": "What profit does the company make in January 2018 (i.e. month 25)?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q8-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 250(25) − 4250",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = €2000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Month by month method incomplete",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-iii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted but fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250."
+ },
+ {
+  "id": "maths-2019-ol-p1-q8-b-iv",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-b-iv",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q8(b)(iv)",
+  "questionText": "Find the month in which the company breaks even (i.e. €0 profit).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q8-b-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 250n − 4250 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — n = 17",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-iv-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-iv-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Month by month method incomplete",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-iv-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — n = 17 without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-iv-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 250n − 4250 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250."
+ },
+ {
+  "id": "maths-2019-ol-p1-q8-b-v",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-b-v",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q8(b)(v)",
+  "questionText": "Find Sₙ, the general term for the total profit of the company after n months.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q8-b-v-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = n/2 [2(−4000) + (n − 1)250]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-v-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = n/2 [−8000 + 250n − 250]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-v-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = n/2 [−8250 + 250n]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-v-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Identifies a and/or d",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-v-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250."
+ },
+ {
+  "id": "maths-2019-ol-p1-q8-b-vi",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-b-vi",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q8(b)(vi)",
+  "questionText": "Hence, or otherwise, find the total profit of the company at the end of January 2019 (i.e. month 37).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q8-b-vi-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 37/2 [−8250 + 250(37)]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-vi-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 18500",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q8-b-vi-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct formula fully substituted but work not complete",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. The profit the company makes in month n is given by the formula Tₙ = 250n − 4250. Part (b)(v): Find Sₙ, the general term for the total profit of the company after n months."
+ },
+ {
+  "id": "maths-2019-ol-p1-q9-a",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q9-a",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q9(a)",
+  "questionText": "Use the formula to estimate the number of registered users 8 months after the website was launched.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q9-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 330598·817",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ 330598 or 330599",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-a-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched."
+ },
+ {
+  "id": "maths-2019-ol-p1-q9-b",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q9-b",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q9(b)",
+  "questionText": "There are 31 493 registered users at the end of a particular month. Estimate how many users there will be one month later.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 31493 × 1·8 = 56687·4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 56687",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Incomplete trial and improvement to find m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — m = 4 found by trial and improvement but multiplied by 1·8 incorrectly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched."
+ },
+ {
+  "id": "maths-2019-ol-p1-q9-c-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-c-i",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q9(c)(i)",
+  "questionText": "How much would she earn in a month when there were 600 000 registered users?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q9-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 600000 × 0·0012 = €720",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Use of 600000 and/or 0·0012",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Decimal error",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0·0012 each month, for every user who is registered."
+ },
+ {
+  "id": "maths-2019-ol-p1-q9-c-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-c-ii",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q9(c)(ii)",
+  "questionText": "Avril earns €1285·37 for a particular month. How many registered users did the website have in that month.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q9-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1285·37/0·0012 = 1071141·667",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 1071142 or 1071141",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1285·3 × 0·0012",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1285·37 ÷ 0·0012",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0·0012 each month, for every user who is registered."
+ },
+ {
+  "id": "maths-2019-ol-p1-q9-c-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-c-iii",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q9(c)(iii)",
+  "questionText": "A web design company charges Avril €80 per month to maintain and host the site. How much will Avril make or lose in month 4 and in month 12 from the website.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q9-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 31492·8 × 0·0012 = €37·79",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 37·79 − 80 = €42·21 Loss",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 3470494·144 × 0·0012 = €4164·59",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 4164·59 − 80 = €4084·59 Gain",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Either month formulated correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Finds number of users for either month",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-iii-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Income for either month evaluated correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-iii-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Finds number of users for both months",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-iii-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Incomes for both months evaluated correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-c-iii-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Profit/Loss for one month evaluated correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Avril has a website. For a certain period of time, the total number of registered users of the website, U(m), can be estimated by using the formula: U(m) = 3000(1·8)^m, where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0·0012 each month, for every user who is registered."
+ },
+ {
+  "id": "maths-2019-ol-p1-q9-d",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-d",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 OL Paper 1 Q9(d)",
+  "questionText": "Another web design company in the UK offers to host and maintain her website for £55 sterling per month. Avril uses the exchange rate on a particular day to find how much this would cost in euro. She finds that it would cost €62·70. Find the exchange rate for 1 euro on that day. Give your answer correct to 4 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-ol-p1-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Exchange Rate = 55/62·70",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-ol-p1-q9-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Exchange Rate = 0·8772",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Avril has a website."
  }
 ]
