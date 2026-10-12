@@ -751,12 +751,49 @@ const decks = [
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
   .update(cards.map((card) => card.id).sort().join('\n'))
   .digest('hex');
+const idHash = (ids: readonly string[]) => createHash('sha256')
+  .update([...ids].sort().join('\n'))
+  .digest('hex');
+
+/* Art keeps its 462 pre-collapse IDs frozen (222 Higher + 240 Ordinary, the
+ * original identity hashes above). The one-card-per-printed-task rule withdraws
+ * the per-option cards of each printed choice (one named artist, work, building
+ * or movement; any two of five headings); each withdrawn ID is an explicit
+ * cardAliases.ts key resolving in one step to the card for its own part, so the
+ * frozen identity = live Art IDs + Art alias keys. No Art card is added. */
+const artAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('art-'));
+const frozenIds = (name: string, cards: readonly { id: string }[]) => {
+  const ids = cards.map(card => card.id);
+  if (!name.startsWith('art:')) return ids;
+  const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+  return [...ids, ...artAliasIds.filter(id => id.includes(level))];
+};
 
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    expect(cards.length, `${name}: card count changed`).toBe(count);
-    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(count);
-    expect(identityHash(cards), `${name}: a card ID was removed or replaced`).toBe(hash);
+    const frozen = frozenIds(name, cards);
+    expect(frozen.length, `${name}: card count changed`).toBe(count);
+    expect(new Set(frozen).size, `${name}: duplicate frozen card IDs`).toBe(count);
+    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
+    expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it('collapses each Art printed choice to one card and resolves every withdrawn ID', () => {
+    const higher = new Map(ART_HIGHER.map(card => [card.id, card]));
+    const ordinary = new Map(ART_ORDINARY.map(card => [card.id, card]));
+    expect(artAliasIds).toHaveLength(126);
+    for (const oldId of artAliasIds) {
+      const canonical = CARD_ID_ALIASES[oldId];
+      const deck = oldId.includes('-hl-') ? higher : ordinary;
+      expect(higher.has(oldId) || ordinary.has(oldId), `${oldId} should be withdrawn`).toBe(false);
+      expect(deck.has(canonical), `${oldId} -> ${canonical} must be live at the same level`).toBe(true);
+      expect(canonical in CARD_ID_ALIASES, `${oldId} must resolve in one step`).toBe(false);
+      expect(canonical.slice(0, 12), `${oldId} must stay in its year and level`).toBe(oldId.slice(0, 12));
+    }
+    const aliased = (level: string) => artAliasIds.filter(id => id.includes(level)).length;
+    expect([aliased('-hl-'), aliased('-ol-')]).toEqual([62, 64]);
+    expect(ART_HIGHER).toHaveLength(222 - aliased('-hl-'));
+    expect(ART_ORDINARY).toHaveLength(240 - aliased('-ol-'));
   });
 
   it('protects the complete current bank', () => {
@@ -767,7 +804,10 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328);
+    // Frozen form: every frozen ID, live or aliased. Live form: the frozen bank
+    // less the Art per-option cards withdrawn onto one card per printed task.
+    expect(decks.reduce((total, [name, cards]) => total + frozenIds(name, cards).length, 0)).toBe(19_328);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328 - artAliasIds.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -781,7 +821,8 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(54);
+    // 54 earlier consolidations + 126 Art per-option cards (2026-10-12).
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(180);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -841,13 +882,15 @@ describe('Mark Bank card preservation', () => {
       .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
   });
 
-  it('adds the Art choose-two routes without replacing any existing card id', () => {
-    const correctionIds = new Set(ART_ORDINARY
-      .filter(card => card.questionRef.startsWith('2025 OL Q4(a)')
-        && card.id !== 'art-2025-ol-q4-a')
-      .map(card => card.id));
-    expect(correctionIds.size).toBe(9);
-    expect(identityHash(ART_ORDINARY.filter(card => !correctionIds.has(card.id))))
+  it('added the Art choose-two routes without replacing an id, and withdrew them onto Q4(a)', () => {
+    // The nine heading-pair routes were added on top of the original Ordinary
+    // identity; one card per printed task now withdraws them onto
+    // art-2025-ol-q4-a, so they live on as alias keys of the frozen set.
+    const frozen = frozenIds('art:ordinary', ART_ORDINARY);
+    const routes = new Set(frozen.filter(id => id.startsWith('art-2025-ol-q4-a-')));
+    expect(routes.size).toBe(9);
+    for (const id of routes) expect(CARD_ID_ALIASES[id]).toBe('art-2025-ol-q4-a');
+    expect(idHash(frozen.filter(id => !routes.has(id))))
       .toBe('e5403f6e685e0133ad94ef321f97a77f96127c2ee3570395e00662d7719ddbd5');
   });
 });

@@ -8,16 +8,17 @@ script records only their official file identity and page number.
 
 One outer question number is not one Mark Bank card.  A card is one separately
 marked printed task that a student can practise on its own.  Lettered parts and
-the two tasks separated by the legacy paper's standalone "and" are split.  A
-fixed list of named works, artists, buildings or movements is expanded so each
-printed choice becomes a real revision card.  A finite "choose N" list is
-expanded into every valid combination.  The four-criterion Section B/C essay
-remains intact because the SEC applies that rubric holistically.
+the two tasks separated by the legacy paper's standalone "and" are split.  When
+the student chooses among printed items (one named artist, work, building or
+movement; any two of five headings), the task is ONE card: its question is the
+printed question with every option, and the scheme marks every option the same
+way.  The four-criterion Section B/C essay remains intact because the SEC
+applies that rubric holistically.
 
-The complete corpus is therefore 462 cards across ten papers:
+The complete corpus is therefore 336 cards across ten papers:
 
-  * Higher Level:   72 + 68 + 26 + 26 + 30 = 222 cards
-  * Ordinary Level: 78 + 75 + 26 + 26 + 35 = 240 cards
+  * Higher Level:   41 + 41 + 26 + 26 + 26 = 160 cards
+  * Ordinary Level: 49 + 49 + 26 + 26 + 26 = 176 cards
 
 Run:
 
@@ -31,7 +32,6 @@ are deliberately gitignored.
 from __future__ import annotations
 
 import argparse
-import itertools
 import json
 import os
 import re
@@ -69,22 +69,24 @@ EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
 }
 
 EXPECTED_CARDS_BY_YEAR_LEVEL = {
-    (2021, 'higher'): 72,
-    (2021, 'ordinary'): 78,
-    (2022, 'higher'): 68,
-    (2022, 'ordinary'): 75,
+    (2021, 'higher'): 41,
+    (2021, 'ordinary'): 49,
+    (2022, 'higher'): 41,
+    (2022, 'ordinary'): 49,
     (2023, 'higher'): 26,
     (2023, 'ordinary'): 26,
     (2024, 'higher'): 26,
     (2024, 'ordinary'): 26,
-    (2025, 'higher'): 30,
-    (2025, 'ordinary'): 35,
+    (2025, 'higher'): 26,
+    (2025, 'ordinary'): 26,
 }
 
-# A fixed choice printed by the SEC materially changes the knowledge a student
-# must retrieve, so it gets its own practice card. Open choices such as "one
-# named work" cannot be exhaustively enumerated and remain one card. Labels are
-# kept exactly as printed; the short key exists only to make a stable card id.
+# A fixed choice printed by the SEC (one of these artists, works, buildings or
+# movements). The student chooses which option to answer and the scheme marks
+# every option the same way, so the task is ONE card showing the printed
+# question with every option. The reviewed pool stays: the build checks each
+# label is printed in the question, and the first option's key keeps the
+# card's stable id (the withdrawn per-option ids are aliased in cardAliases.ts).
 PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
     (2021, 'higher', 4): (
         ('castletown-house', 'Castletown House'),
@@ -180,11 +182,10 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
     ),
 }
 
-# A closed "choose N" instruction is a different kind of selectable route.
-# The first corpus sweep handled only choose-one lists and therefore collapsed
-# the ten pairs printed for 2025 OL Q4(a) into one card. Keep the pool and N
-# explicit so the expansion is mechanically complete (n choose k), rather than
-# relying on another hand-authored list of combinations.
+# A closed "choose N" instruction inside one marked task (any two of five
+# headings in 2025 OL Q4(a)). The student chooses which N to use, so the task
+# is ONE card with the printed instruction and all five headings; the pool is
+# kept so the build checks the paper still prints it.
 TASK_COMBINATION_CHOICES: dict[
     tuple[int, str, int, str], tuple[int, tuple[tuple[str, str], ...]]
 ] = {
@@ -728,70 +729,34 @@ def task_requirements(prompt: str) -> list[str]:
     return [re.sub(r'^and\s+', '', chunk, flags=re.I) for chunk in chunks]
 
 
-def select_printed_choice(prompt: str, choices: tuple[tuple[str, str], ...],
-                          selected: str) -> str:
-    """Keep one fixed SEC bullet choice while preserving its printed task.
-
-    The final bullet often continues straight into the instruction (for example
-    ``Alice Maher ... Describe and discuss``).  Its suffix therefore belongs to
-    every selected variant, not only to the final option in the source list.
-    """
+def verify_printed_choices(prompt: str, choices: tuple[tuple[str, str], ...]) -> None:
+    """Every option of a reviewed choice pool is printed in the question, in
+    order, as a bullet or in the inline 2025 Higher list."""
     labels = [label for _, label in choices]
-    lines = prompt.splitlines()
-    matched: list[tuple[int, str]] = []
-    for index, line in enumerate(lines):
-        if not line.startswith('• '):
-            continue
-        body = line[2:]
-        label = next((candidate for candidate in labels if body.startswith(candidate)), None)
-        if label is not None:
-            matched.append((index, label))
-    # The 2025 HL Modernism alternatives are printed inline rather than as a
-    # bullet list. Turn that one printed choice into an explicit standalone
-    # practice prompt while retaining every following instruction verbatim.
-    if not matched:
-        inline = ', '.join(labels[:-1]) + f', {labels[-1]}'
-        marker = f'one of the following: {inline}'
-        if marker in prompt:
-            return prompt.replace(marker, selected, 1)
-        return prompt
-    if [label for _, label in matched] != labels:
+    bullets = [line[2:] for line in prompt.splitlines() if line.startswith('• ')]
+    printed = [label for label in labels if any(body.startswith(label) for body in bullets)]
+    inline = 'one of the following: ' + ', '.join(labels)
+    if printed != labels and inline not in prompt:
         raise AssertionError(f'printed Art choices do not match paper text: {labels!r}')
-    first, last = matched[0][0], matched[-1][0]
-    last_body = lines[last][2:]
-    tail = last_body[len(labels[-1]):]
-    selected_line = f'• {selected}{tail}'
-    return '\n'.join([*lines[:first], selected_line, *lines[last + 1:]]).strip()
 
 
-def task_combination_variants(year: int, level: str, number: int,
-                              suffix: str) -> tuple[tuple[str, str], ...]:
-    """Return every printed choose-N combination for one marked task."""
+def verify_task_combination(year: int, level: str, number: int, suffix: str,
+                            prompt: str) -> bool:
+    """A reviewed choose-N pool is printed in this task's own instruction."""
     spec = TASK_COMBINATION_CHOICES.get((year, level, number, suffix))
     if spec is None:
-        return ()
+        return False
     choose, items = spec
     if choose <= 0 or choose > len(items):
         raise AssertionError(
             f'{year} {level} Q{number}({suffix}): invalid choose-{choose} pool')
-    return tuple(
-        ('-'.join(slug for slug, _ in selected),
-         ' and '.join(label for _, label in selected))
-        for selected in itertools.combinations(items, choose)
-    )
-
-
-def select_task_combination(prompt: str, selected: str) -> str:
-    """Make one finite heading combination explicit in the printed task."""
     marker = re.compile(
         r'using any two of the following headings:\s*'
         r'colour,\s*texture,\s*line,\s*pattern,\s*shape', re.I)
-    replacement = f'using the following two printed headings: {selected}'
-    revised, count = marker.subn(replacement, prompt, count=1)
-    if count != 1:
+    if not marker.search(prompt):
         raise AssertionError(
             f'closed Art task combination did not match paper text: {prompt!r}')
-    return revised
+    return True
 
 
 def audit_closed_choice_directives(year: int, level: str,
@@ -1036,15 +1001,16 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
     level = outer['level']
     number = int(re.search(r'q(\d+)$', outer['id']).group(1))
     choices = PRINTED_CHOICES.get((year, level, number), ())
+    if choices:
+        verify_printed_choices(outer['questionText'], choices)
+    # One card per printed task, whatever the student chooses inside it. The
+    # first option's key keeps the established id.
     variants: tuple[tuple[str | None, str | None], ...] = (
-        tuple((slug, label) for slug, label in choices)
-        if choices else ((None, None),)
-    )
+        ((choices[0][0], None),) if choices else ((None, None),))
     expanded: list[dict[str, Any]] = []
 
     for choice_slug, choice_label in variants:
-        prompt = (select_printed_choice(outer['questionText'], choices, choice_label)
-                  if choice_label else outer['questionText'])
+        prompt = outer['questionText']
         units = split_printed_tasks(prompt)
         if outer['assessment'] == 'current-long-descriptors':
             if len(units) != 1:
@@ -1079,20 +1045,14 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
 
         for unit, criteria in zip(units, criterion_groups):
             suffix = unit['suffix']
-            task_choices = task_combination_variants(year, level, number, suffix)
+            combination = verify_task_combination(year, level, number, suffix, unit['questionText'])
+            # The first combination's slug only names the stable concept id.
             task_variants: tuple[tuple[str | None, str | None], ...] = (
-                task_choices if task_choices else ((None, None),)
-            )
+                (('-'.join(slug for slug, _ in TASK_COMBINATION_CHOICES[(year, level, number, suffix)][1][:2]), None),)
+                if combination else ((None, None),))
             for task_slug, task_label in task_variants:
-                task_variant_index = (
-                    next(index for index, (slug, _) in enumerate(task_choices, start=1)
-                         if slug == task_slug)
-                    if task_slug else None
-                )
-                question_text = (
-                    select_task_combination(unit['questionText'], task_label)
-                    if task_label else unit['questionText']
-                )
+                task_variant_index = 1 if task_slug else None
+                question_text = unit['questionText']
                 suffix_parts: list[str] = []
                 # Preserve the established id grammar: an unsplit fixed-choice
                 # card uses the choice slug directly, while an unsplit current
@@ -1115,22 +1075,10 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
 
                 stem_parts: list[str] = []
                 stem = unit.get('stem')
-                if choice_label and choice_label not in question_text:
-                    # A fixed choice is the only context later parts need. Avoid
-                    # repeating the whole choice list and its obsolete "answer
-                    # (a), (b)…" direction above every standalone card.
-                    stem_parts.append(f'Printed choice: {choice_label}')
-                elif stem:
+                if stem:
                     stem_parts.append(stem)
 
                 reference = f"{outer['questionRef']}{unit['reference']}"
-                if choice_slug:
-                    choice_index = next(
-                        index for index, (slug, _) in enumerate(choices, start=1)
-                        if slug == choice_slug)
-                    reference += f' · option {choice_index}'
-                if task_slug:
-                    reference += f' · heading pair {task_variant_index}'
 
                 concept_suffixes = [suffix]
                 if choice_slug:
@@ -1196,17 +1144,17 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
                 'cards': paper_cards,
             })
 
-    if len(cards) != 462 or len({card['id'] for card in cards}) != 462:
-        raise AssertionError('Art corpus must contain exactly 462 unique cards')
-    if sum(card['level'] == 'higher' for card in cards) != 222:
-        raise AssertionError('Art Higher Level corpus must contain 222 cards')
-    if sum(card['level'] == 'ordinary' for card in cards) != 240:
-        raise AssertionError('Art Ordinary Level corpus must contain 240 cards')
+    total = sum(EXPECTED_CARDS_BY_YEAR_LEVEL.values())
+    higher = sum(n for (_, level), n in EXPECTED_CARDS_BY_YEAR_LEVEL.items() if level == 'higher')
+    if len(cards) != total or len({card['id'] for card in cards}) != total:
+        raise AssertionError(f'Art corpus must contain exactly {total} unique cards')
+    if sum(card['level'] == 'higher' for card in cards) != higher:
+        raise AssertionError(f'Art Higher Level corpus must contain {higher} cards')
 
     runtime = {
         'subjectId': 'art',
-        'corpus': 'All separately marked written-examination tasks and finite printed routes, 2021–2025',
-        'cardCount': 462,
+        'corpus': 'All separately marked written-examination tasks, 2021–2025; a printed choice is one card',
+        'cardCount': len(cards),
         'cards': cards,
     }
     census = {
@@ -1214,9 +1162,9 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
         'years': [2021, 2022, 2023, 2024, 2025],
         'levels': ['higher', 'ordinary'],
         'selectionUnit': (
-            'One card per separately marked printed task; every fixed named choice and finite '
-            'choose-N combination is expanded, while holistic Section B/C essays remain intact.'),
-        'expectedCards': {'higher': 222, 'ordinary': 240, 'total': 462},
+            'One card per separately marked printed task. Where the student chooses among printed '
+            'items, the task is one card showing every option; holistic Section B/C essays remain intact.'),
+        'expectedCards': {'higher': higher, 'ordinary': total - higher, 'total': total},
         'papers': papers,
     }
     return runtime, census
@@ -1240,14 +1188,15 @@ def main() -> int:
         if stale:
             print('Art generated files are stale: ' + ', '.join(stale), file=sys.stderr)
             return 1
-        print('Art authoring check: 462/462 cards match the ten-paper task census.')
+        print(f"Art authoring check: {runtime['cardCount']}/{runtime['cardCount']} cards match the ten-paper task census.")
         return 0
 
     for path, value in outputs:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, 'w', encoding='utf-8') as handle:
             handle.write(encoded(value))
-    print('Art: authored 462 cards (222 Higher, 240 Ordinary); census 462/462.')
+    higher = sum(card['level'] == 'higher' for card in runtime['cards'])
+    print(f"Art: authored {runtime['cardCount']} cards ({higher} Higher, {runtime['cardCount'] - higher} Ordinary).")
     return 0
 
 

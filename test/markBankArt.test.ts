@@ -10,30 +10,30 @@ import { artMarks, suggestRubricGrade } from '../components/MarkBank/SessionScre
 const CARDS = [...HIGHER, ...ORDINARY];
 
 describe('complete 2021–2025 Art corpus', () => {
-  it('cards every separately marked task and finite printed route on all ten papers', () => {
-    expect(HIGHER).toHaveLength(222);
-    expect(ORDINARY).toHaveLength(240);
-    expect(CARDS).toHaveLength(462);
-    expect(new Set(CARDS.map(card => card.id)).size).toBe(462);
+  it('cards every separately marked task on all ten papers, one card per printed choice', () => {
+    expect(HIGHER).toHaveLength(160);
+    expect(ORDINARY).toHaveLength(176);
+    expect(CARDS).toHaveLength(336);
+    expect(new Set(CARDS.map(card => card.id)).size).toBe(336);
 
     const censusIds = census.papers.flatMap(paper => paper.cards.map(card => card.cardId));
     expect([...CARDS.map(card => card.id)].sort()).toEqual([...censusIds].sort());
     expect(census.papers).toHaveLength(10);
-    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(462);
+    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(336);
   });
 
   it('keeps the audited task census for each paper', () => {
     const expected = {
-      '2021-higher': 72,
-      '2021-ordinary': 78,
-      '2022-higher': 68,
-      '2022-ordinary': 75,
+      '2021-higher': 41,
+      '2021-ordinary': 49,
+      '2022-higher': 41,
+      '2022-ordinary': 49,
       '2023-higher': 26,
       '2023-ordinary': 26,
       '2024-higher': 26,
       '2024-ordinary': 26,
-      '2025-higher': 30,
-      '2025-ordinary': 35,
+      '2025-higher': 26,
+      '2025-ordinary': 26,
     } as const;
     for (const [paper, count] of Object.entries(expected)) {
       const [year, level] = paper.split('-');
@@ -42,7 +42,7 @@ describe('complete 2021–2025 Art corpus', () => {
     }
   });
 
-  it('does not collapse separately practicable parts or printed alternatives', () => {
+  it('splits separately marked parts but keeps each printed choice as one card', () => {
     const legacy = HIGHER.filter(card => card.id.startsWith('art-2021-hl-q1-task'));
     expect(legacy.map(card => card.totalMarks)).toEqual([30, 20]);
     expect(legacy.reduce((sum, card) => sum + card.totalMarks, 0)).toBe(50);
@@ -51,25 +51,34 @@ describe('complete 2021–2025 Art corpus', () => {
     expect(sectionA.map(card => card.id)).toEqual(['art-2023-hl-q1-a', 'art-2023-hl-q1-b']);
     expect(sectionA.map(card => card.totalMarks)).toEqual([5, 5]);
 
-    const movements = HIGHER.filter(card => card.id.startsWith('art-2025-hl-q12-'));
-    expect(movements).toHaveLength(5);
-    expect(new Set(movements.map(card => card.questionText)).size).toBe(5);
-    expect(movements.map(card => card.questionText)).toEqual(expect.arrayContaining([
-      expect.stringContaining('development of Fauvism'),
-      expect.stringContaining('development of Surrealism'),
-    ]));
+    // The student chooses one movement: one card with the printed question.
+    const movements = HIGHER.filter(card => card.questionRef === '2025 HL Q12');
+    expect(movements.map(card => card.id)).toEqual(['art-2025-hl-q12-fauvism']);
+    expect(movements[0].questionText).toContain(
+      'Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.');
 
-    const embroideryHeadings = ORDINARY.filter(card =>
-      card.questionRef.startsWith('2025 OL Q4(a)'));
-    expect(embroideryHeadings).toHaveLength(10);
-    expect(embroideryHeadings.map(card => card.id)).toContain('art-2025-ol-q4-a');
-    expect(new Set(embroideryHeadings.map(card => card.questionText)).size).toBe(10);
-    expect(embroideryHeadings.every(card => card.totalMarks === 6)).toBe(true);
-    expect(embroideryHeadings.map(card => card.questionText)).toEqual(expect.arrayContaining([
-      expect.stringContaining('headings: colour and texture'),
-      expect.stringContaining('headings: pattern and shape'),
-    ]));
+    // Any two of five headings: one card with the printed instruction.
+    const embroidery = ORDINARY.filter(card => card.questionRef.startsWith('2025 OL Q4(a)'));
+    expect(embroidery.map(card => card.id)).toEqual(['art-2025-ol-q4-a']);
+    expect(embroidery[0].questionText).toBe(
+      '(a) Describe this embroidery using any two of the following headings: colour, texture, line, pattern, shape.');
+    expect(embroidery[0].totalMarks).toBe(6);
     expect(ORDINARY.filter(card => card.id === 'art-2025-ol-q4-b')).toHaveLength(1);
+
+    // A named-artist choice keeps every printed artist on its one card.
+    const artists = HIGHER.find(card => card.questionRef === '2022 HL Q7')!;
+    for (const artist of ['James Barry (1741-1806)', 'Colin Davidson (b.1968)']) {
+      expect(artists.questionText).toContain(artist);
+    }
+
+    // Guard: no two cards for one printed task (same paper and question).
+    const seen = new Map<string, string>();
+    for (const card of CARDS) {
+      const key = `${card.year} ${card.level} ${card.questionRef}`;
+      expect(seen.get(key), `${card.id} repeats ${seen.get(key)}`).toBeUndefined();
+      seen.set(key, card.id);
+      expect(card.stem ?? '', card.id).not.toMatch(/^Printed choice:/);
+    }
   });
 
   it('uses real paper prompts without page furniture or fabricated screens', () => {
@@ -125,8 +134,8 @@ describe('complete 2021–2025 Art corpus', () => {
     const requiringIllustration = CARDS.filter(card =>
       /accompanying sheet/i.test(`${card.stem ?? ''} ${card.questionText}`));
     const withIllustration = CARDS.filter(card => card.sourceMaterial);
-    expect(requiringIllustration).toHaveLength(149);
-    expect(withIllustration).toHaveLength(156);
+    expect(requiringIllustration).toHaveLength(140);
+    expect(withIllustration).toHaveLength(147);
     expect(requiringIllustration.filter(card => !card.sourceMaterial).map(card => card.id)).toEqual([]);
 
     for (const card of withIllustration) {

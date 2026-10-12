@@ -260,16 +260,18 @@ describe('Art exam-topic registry', () => {
     expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 65, paperOnlyMaps: 87 });
   });
 
-  it('surfaces all 1,077 entitled questions while preserving all 462 authored Mark Bank cards', () => {
+  it('surfaces all 1,077 entitled questions and every authored Mark Bank card', () => {
     expect(subjectAtlasStats('art')).toMatchObject({
       questions: 1077,
       topics: 32,
       yearMin: 2010,
       yearMax: 2026,
     });
-    expect(authoredArt.cardCount).toBe(462);
-    expect(ART_HIGHER).toHaveLength(222);
-    expect(ART_ORDINARY).toHaveLength(240);
-    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(462);
+    // 462 before each printed choice became one card; the 126 withdrawn
+    // per-option ids are cardAliases.ts keys (markBankCardPreservation).
+    expect(authoredArt.cardCount).toBe(336);
+    expect(ART_HIGHER).toHaveLength(160);
+    expect(ART_ORDINARY).toHaveLength(176);
+    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(336);
   });
 });
