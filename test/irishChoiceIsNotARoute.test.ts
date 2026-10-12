@@ -41,11 +41,14 @@ describe('Irish: choice is not a route', () => {
         /^Freagair do rogha dhá cheann de A, B, C, D anseo\.$/],
       ['2026 OL Paper 2 routes', raw.filter(c => /^irish-2026-ol-p2-(prose-2[ab]-[a-c](-caca-milis|-an-lasair-choille|-scannan|-drama)?|poetry-3[ab]-[a-c])$/.test(c.id)),
         /^Freagair do rogha dhá cheann as \(a\), \(b\) nó \(c\)\.$/],
+      ['2025 OL Paper 2 options and sub-questions', raw.filter(c => /^irish-2025-ol-p2-(prose-2[ab]-[a-c]|poetry-3[ab]-[a-c](-i{1,3}(-[a-c])?)?)$/.test(c.id)),
+        /^Freagair do rogha dhá cheann as \(a\), \(b\) nó \(c\)( thíos)?\.$/],
       ['Foundation reading parts', raw.filter(c => /^irish-20\d\d-fl-r-[23][a-c]-\d$/.test(c.id)),
         /^Ceist [23] Freagair do rogha dhá cheann de \(a\), \(b\), \(c\) anseo thíos\.$/],
     ];
     expect(governed.map(([name, cards]) => [name, cards.length])).toEqual([
-      ['OL Paper 1 titles', 18], ['2026 OL Paper 2 routes', 14], ['Foundation reading parts', 510],
+      ['OL Paper 1 titles', 18], ['2026 OL Paper 2 routes', 14], ['2025 OL Paper 2 options and sub-questions', 24],
+      ['Foundation reading parts', 510],
     ]);
     for (const [, cards, instruction] of governed) {
       for (const card of cards) expect(card.taskRequirements?.[0], card.id).toMatch(instruction);

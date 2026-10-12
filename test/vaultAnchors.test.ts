@@ -70,7 +70,7 @@ describe('audited hosted answer maps', () => {
   it('keeps the original Art and Physics overrides and the reviewed Irish overrides byte-identical to their source maps', () => {
     const sourceMirrored = [...HOSTED_ANSWER_OVERRIDES].filter(key => /^(art|physics|irish)\|/.test(key));
     expect(sourceMirrored.filter(key => !key.startsWith('irish|'))).toHaveLength(23);
-    expect(sourceMirrored.filter(key => key.startsWith('irish|'))).toHaveLength(27);
+    expect(sourceMirrored.filter(key => key.startsWith('irish|'))).toHaveLength(28);
     for (const key of sourceMirrored) {
       const [subjectId, year, fileid] = key.split('|');
       expect(['art', 'physics', 'irish']).toContain(subjectId);

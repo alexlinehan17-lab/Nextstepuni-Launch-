@@ -12,6 +12,7 @@ import authoredJson from '../components/MarkBank/cards/irish/authored.json';
 import reviewedHigher2025P1 from '../scripts/markbank/authored/irish-higher-2025-p1-component-review.json';
 import reviewedHigher2025P2 from '../components/MarkBank/cards/irish/higher-2025-p2-authored.json';
 import reviewedOrdinary2025P1 from '../scripts/markbank/authored/irish-ordinary-2025-p1-component-review.json';
+import reviewedOrdinary2025P2 from '../components/MarkBank/cards/irish/ordinary-2025-p2-authored.json';
 import {
   irishMarks,
   irishScoreId,
@@ -83,14 +84,16 @@ const census = JSON.parse(readFileSync(resolve(
 const manifest = authoredJson as unknown as IrishManifest;
 // These pins cover the legacy census output. Paper-reviewed components ship
 // beside it and carry their own regression files (2026 Higher and Ordinary Papers 1 and 2).
-const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards].map(card => card.id));
+const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards, ...reviewedOrdinary2025P2.cards].map(card => card.id));
 const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 // Reviewed legacy components keep their cards here, corrected in place (IDs unchanged).
-// 2025 HL and OL Paper 1 also attached each retained card's printed page.
-const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds, ...reviewedOrdinary2025P1.cardIds]);
+// 2025 HL and OL Paper 1 also attached each retained card's printed page; 2025 OL Paper 2
+// attached the printed question page to its six prose options and three optional poems.
+const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds, ...reviewedOrdinary2025P1.cardIds,
+  ...reviewedOrdinary2025P2.review.legacyCardIds.filter(id => /-(prose-2[ab]|poetry-3b)-/.test(id))]);
 // Retained listening segments and whole reading questions now mark each printed part separately.
 const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds, ...reviewedHigher2025P2.review.readingWholeCardIds,
-  ...reviewedOrdinary2025P1.listeningSegmentCardIds]);
+  ...reviewedOrdinary2025P1.listeningSegmentCardIds, ...reviewedOrdinary2025P2.review.readingWholeCardIds]);
 // Reviewed Ordinary compositions use the full 0–40 scale: the printed short-attempt columns include odd values.
 const FULL_SCALE_COMPOSITION = new Set<string>(reviewedOrdinary2025P1.compositionRouteCardIds);
 const ORDINARY = ORDINARY_DECK.filter(card => !REVIEWED_IDS.has(card.id));
@@ -213,7 +216,8 @@ describe('Irish prompt, paper and source integrity', () => {
     const ordinaryPoetry = ORDINARY.filter(card => card.id.includes('-poetry-3a-'));
     expect(ordinaryPoetry).toHaveLength(15);
     for (const card of ordinaryPoetry) {
-      expect(card.questionText, card.id).toMatch(/\(i\).*\(ii\).*\(iii\)/);
+      // Reviewed choices print each sub-question on its own line.
+      expect(card.questionText, card.id).toMatch(/\(i\)[\s\S]*\(ii\)[\s\S]*\(iii\)/);
       expect(card.sourceMaterial?.title, card.id).not.toBe('Dán Ainmnithe');
       expect(card.sourceMaterial?.pages, card.id).toHaveLength(1);
     }
@@ -225,7 +229,8 @@ describe('Irish prompt, paper and source integrity', () => {
       ['irish-2024-ol-p2-poetry-3a-a', 'Colscaradh', 10],
       ['irish-2024-ol-p2-poetry-3a-b', 'An Spailpín Fánach', 11],
       ['irish-2024-ol-p2-poetry-3a-c', 'Géibheann', 12],
-      ['irish-2025-ol-p2-poetry-3a-a', 'Mo Ghrá-Sa', 10],
+      // Reviewed 2026-10-12: the title as printed on paper page 10.
+      ['irish-2025-ol-p2-poetry-3a-a', 'Mo ghrá-sa (idir lúibíní)', 10],
       ['irish-2025-ol-p2-poetry-3a-b', 'An tEarrach Thiar', 11],
       ['irish-2025-ol-p2-poetry-3a-c', 'Colscaradh', 12],
     ] as const;

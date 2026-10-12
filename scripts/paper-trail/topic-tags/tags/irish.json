@@ -2317,6 +2317,182 @@
         "n": "F-B",
         "primary": "irish-5-6",
         "secondary": "irish-7-0"
+      },
+      {
+        "n": "P-2A-a",
+        "primary": "irish-4-4"
+      },
+      {
+        "n": "P-2A-b",
+        "primary": "irish-4-1"
+      },
+      {
+        "n": "P-2A-c",
+        "primary": "irish-4-5"
+      },
+      {
+        "n": "P-2B-a",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-2B-b",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-2B-c",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "F-3A-a",
+        "primary": "irish-5-4"
+      },
+      {
+        "n": "F-3A-b",
+        "primary": "irish-5-3"
+      },
+      {
+        "n": "F-3A-c",
+        "primary": "irish-5-5"
+      },
+      {
+        "n": "F-3B-a",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-3B-b",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-3B-c",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "R-A-1-a",
+        "primary": "irish-3-0"
+      },
+      {
+        "n": "R-A-1-b",
+        "primary": "irish-3-0"
+      },
+      {
+        "n": "R-A-2-a",
+        "primary": "irish-3-0"
+      },
+      {
+        "n": "R-A-2-b",
+        "primary": "irish-3-0"
+      },
+      {
+        "n": "R-A-3-a",
+        "primary": "irish-3-0"
+      },
+      {
+        "n": "R-A-3-b",
+        "primary": "irish-3-0"
+      },
+      {
+        "n": "R-A-4-a",
+        "primary": "irish-3-0"
+      },
+      {
+        "n": "R-A-4-b",
+        "primary": "irish-3-0"
+      },
+      {
+        "n": "R-A-5-a",
+        "primary": "irish-3-0"
+      },
+      {
+        "n": "R-A-5-b",
+        "primary": "irish-3-0"
+      },
+      {
+        "n": "R-B-1-a",
+        "primary": "irish-3-1"
+      },
+      {
+        "n": "R-B-1-b",
+        "primary": "irish-3-1"
+      },
+      {
+        "n": "R-B-2-a",
+        "primary": "irish-3-1"
+      },
+      {
+        "n": "R-B-2-b",
+        "primary": "irish-3-1"
+      },
+      {
+        "n": "R-B-3-a",
+        "primary": "irish-3-1"
+      },
+      {
+        "n": "R-B-3-b",
+        "primary": "irish-3-1"
+      },
+      {
+        "n": "R-B-4-a",
+        "primary": "irish-3-1"
+      },
+      {
+        "n": "R-B-4-b",
+        "primary": "irish-3-1"
+      },
+      {
+        "n": "R-B-5-a",
+        "primary": "irish-3-1"
+      },
+      {
+        "n": "R-B-5-b",
+        "primary": "irish-3-1"
+      },
+      {
+        "n": "F-3A-a-i",
+        "primary": "irish-5-4"
+      },
+      {
+        "n": "F-3A-a-i-a",
+        "primary": "irish-5-4"
+      },
+      {
+        "n": "F-3A-a-i-b",
+        "primary": "irish-5-4"
+      },
+      {
+        "n": "F-3A-a-i-c",
+        "primary": "irish-5-4"
+      },
+      {
+        "n": "F-3A-a-ii",
+        "primary": "irish-5-4"
+      },
+      {
+        "n": "F-3A-a-iii",
+        "primary": "irish-5-4"
+      },
+      {
+        "n": "F-3A-b-i",
+        "primary": "irish-5-3"
+      },
+      {
+        "n": "F-3A-b-ii",
+        "primary": "irish-5-3"
+      },
+      {
+        "n": "F-3A-b-iii",
+        "primary": "irish-5-3"
+      },
+      {
+        "n": "F-3A-c-i",
+        "primary": "irish-5-5"
+      },
+      {
+        "n": "F-3A-c-ii",
+        "primary": "irish-5-5"
+      },
+      {
+        "n": "F-3A-c-iii",
+        "primary": "irish-5-5"
       }
     ]
   },
