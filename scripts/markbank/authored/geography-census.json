@@ -12,10 +12,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 905,
-  "includedBaseTasks": 836,
-  "excludedBaseTasks": 69,
-  "authoredCards": 1027,
+  "paperBaseTasks": 956,
+  "includedBaseTasks": 895,
+  "excludedBaseTasks": 61,
+  "authoredCards": 1088,
   "baseTasks": [
     {
       "id": "geography-2021-hl-p1-q1",
@@ -2940,14 +2940,23 @@
       "part": 1,
       "questionRef": "2024 HL Part 1 Q1",
       "title": "Landscape Identification",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2024-hl-p1-q2",
       "year": 2024,
       "level": "higher",
       "part": 1,
-      "questionRef": "2024 HL Part 1 Q2",
+      "questionRef": "2024 HL Part 1 Q2(i)",
+      "title": "Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q2-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q2(ii)",
       "title": "Weathering",
       "status": "authored"
     },
@@ -2956,7 +2965,25 @@
       "year": 2024,
       "level": "higher",
       "part": 1,
-      "questionRef": "2024 HL Part 1 Q3",
+      "questionRef": "2024 HL Part 1 Q3(i)",
+      "title": "Fluvial Adjustment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q3-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q3(ii)",
+      "title": "Fluvial Adjustment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q3-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q3(iii)",
       "title": "Fluvial Adjustment",
       "status": "authored"
     },
@@ -2965,7 +2992,25 @@
       "year": 2024,
       "level": "higher",
       "part": 1,
-      "questionRef": "2024 HL Part 1 Q4",
+      "questionRef": "2024 HL Part 1 Q4(i)",
+      "title": "Coastal Features and Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q4-ii-a",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q4(ii)(a)",
+      "title": "Coastal Features and Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q4-ii-b",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q4(ii)(b)",
       "title": "Coastal Features and Processes",
       "status": "authored"
     },
@@ -2974,7 +3019,16 @@
       "year": 2024,
       "level": "higher",
       "part": 1,
-      "questionRef": "2024 HL Part 1 Q5",
+      "questionRef": "2024 HL Part 1 Q5(i)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q5-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q5(ii)",
       "title": "Earthquakes",
       "status": "authored"
     },
@@ -2983,7 +3037,16 @@
       "year": 2024,
       "level": "higher",
       "part": 1,
-      "questionRef": "2024 HL Part 1 Q6",
+      "questionRef": "2024 HL Part 1 Q6(i)",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q6-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q6(ii)",
       "title": "Concept of a Region",
       "status": "authored"
     },
@@ -2992,9 +3055,36 @@
       "year": 2024,
       "level": "higher",
       "part": 1,
-      "questionRef": "2024 HL Part 1 Q7",
+      "questionRef": "2024 HL Part 1 Q7(i)",
       "title": "Map Skills",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q7-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q7(ii)",
+      "title": "Map Skills",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q7-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q7(iii)",
+      "title": "Map Skills",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q7-iv",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q7(iv)",
+      "title": "Map Skills",
+      "status": "authored"
     },
     {
       "id": "geography-2024-hl-p1-q8",
@@ -3003,23 +3093,77 @@
       "part": 1,
       "questionRef": "2024 HL Part 1 Q8",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2024-hl-p1-q9",
       "year": 2024,
       "level": "higher",
       "part": 1,
-      "questionRef": "2024 HL Part 1 Q9",
+      "questionRef": "2024 HL Part 1 Q9(i)",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q9-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q9(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q9-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q9(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q9-iv",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q9(iv)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
     },
     {
       "id": "geography-2024-hl-p1-q10",
       "year": 2024,
       "level": "higher",
       "part": 1,
-      "questionRef": "2024 HL Part 1 Q10",
+      "questionRef": "2024 HL Part 1 Q10(i)",
+      "title": "Sunshine in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q10-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q10(ii)",
+      "title": "Sunshine in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q10-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q10(iii)",
+      "title": "Sunshine in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q10-iv",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q10(iv)",
       "title": "Sunshine in Ireland",
       "status": "authored"
     },
@@ -3028,7 +3172,34 @@
       "year": 2024,
       "level": "higher",
       "part": 1,
-      "questionRef": "2024 HL Part 1 Q11",
+      "questionRef": "2024 HL Part 1 Q11(i)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q11-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q11(ii)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q11-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q11(iii)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p1-q11-iv",
+      "year": 2024,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2024 HL Part 1 Q11(iv)",
       "title": "Statistical Interpretation",
       "status": "authored"
     },
@@ -3048,10 +3219,10 @@
       "part": 2,
       "questionRef": "2024 HL Part 2 Q1A",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
     },
     {
-      "id": "geography-2024-hl-p2-q1b",
+      "id": "geography-2024-hl-p2-q1b-the-impact-of-flood-control-measur",
       "year": 2024,
       "level": "higher",
       "part": 2,
@@ -3073,12 +3244,57 @@
       "year": 2024,
       "level": "higher",
       "part": 2,
-      "questionRef": "2024 HL Part 2 Q2A",
+      "questionRef": "2024 HL Part 2 Q2A(i)",
       "title": "Landscape Deformation",
       "status": "authored"
     },
     {
-      "id": "geography-2024-hl-p2-q2b",
+      "id": "geography-2024-hl-p2-q2a-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q2A(ii)",
+      "title": "Landscape Deformation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q2a-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q2A(iii)",
+      "title": "Landscape Deformation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q2a-iv",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q2A(iv)",
+      "title": "Landscape Deformation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q2a-v",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q2A(v)",
+      "title": "Landscape Deformation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q2a-vi",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q2A(vi)",
+      "title": "Landscape Deformation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q2b-route-i-fluvial-landform",
       "year": 2024,
       "level": "higher",
       "part": 2,
@@ -3100,7 +3316,52 @@
       "year": 2024,
       "level": "higher",
       "part": 2,
-      "questionRef": "2024 HL Part 2 Q3A",
+      "questionRef": "2024 HL Part 2 Q3A(i)",
+      "title": "Dynamic Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q3a-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q3A(ii)",
+      "title": "Dynamic Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q3a-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q3A(iii)",
+      "title": "Dynamic Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q3a-iv",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q3A(iv)",
+      "title": "Dynamic Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q3a-v",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q3A(v)",
+      "title": "Dynamic Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q3a-vi",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q3A(vi)",
       "title": "Dynamic Boundaries",
       "status": "authored"
     },
@@ -3141,7 +3402,7 @@
       "status": "authored"
     },
     {
-      "id": "geography-2024-hl-p2-q4c",
+      "id": "geography-2024-hl-p2-q4c-government-policy-labour",
       "year": 2024,
       "level": "higher",
       "part": 2,
@@ -3154,12 +3415,39 @@
       "year": 2024,
       "level": "higher",
       "part": 2,
-      "questionRef": "2024 HL Part 2 Q5A",
+      "questionRef": "2024 HL Part 2 Q5A(i)",
       "title": "Regional Disparity in the European Union",
       "status": "authored"
     },
     {
-      "id": "geography-2024-hl-p2-q5b",
+      "id": "geography-2024-hl-p2-q5a-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q5A(ii)",
+      "title": "Regional Disparity in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q5a-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q5A(iii)",
+      "title": "Regional Disparity in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q5a-iv",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q5A(iv)",
+      "title": "Regional Disparity in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q5b-climate",
       "year": 2024,
       "level": "higher",
       "part": 2,
@@ -3181,7 +3469,52 @@
       "year": 2024,
       "level": "higher",
       "part": 2,
-      "questionRef": "2024 HL Part 2 Q6A",
+      "questionRef": "2024 HL Part 2 Q6A(i)",
+      "title": "Tourism in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q6a-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q6A(ii)",
+      "title": "Tourism in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q6a-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q6A(iii)",
+      "title": "Tourism in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q6a-iv",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q6A(iv)",
+      "title": "Tourism in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q6a-v",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q6A(v)",
+      "title": "Tourism in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q6a-vi",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q6A(vi)",
       "title": "Tourism in Ireland",
       "status": "authored"
     },
@@ -3210,7 +3543,7 @@
       "part": 2,
       "questionRef": "2024 HL Part 2 Q7A",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2024-hl-p2-q7b",
@@ -3235,7 +3568,52 @@
       "year": 2024,
       "level": "higher",
       "part": 2,
-      "questionRef": "2024 HL Part 2 Q8A",
+      "questionRef": "2024 HL Part 2 Q8A(i)",
+      "title": "Colonialism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q8a-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q8A(ii)",
+      "title": "Colonialism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q8a-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q8A(iii)",
+      "title": "Colonialism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q8a-iv",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q8A(iv)",
+      "title": "Colonialism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q8a-v",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q8A(v)",
+      "title": "Colonialism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q8a-vi",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q8A(vi)",
       "title": "Colonialism",
       "status": "authored"
     },
@@ -3244,9 +3622,18 @@
       "year": 2024,
       "level": "higher",
       "part": 2,
-      "questionRef": "2024 HL Part 2 Q8B",
+      "questionRef": "2024 HL Part 2 Q8B(i)",
       "title": "Development of Economic Activity",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q8b-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q8B(ii)",
+      "title": "Development of Economic Activity",
+      "status": "authored"
     },
     {
       "id": "geography-2024-hl-p2-q8c",
@@ -3262,7 +3649,16 @@
       "year": 2024,
       "level": "higher",
       "part": 2,
-      "questionRef": "2024 HL Part 2 Q9A",
+      "questionRef": "2024 HL Part 2 Q9A(i)",
+      "title": "Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q9a-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q9A(ii)",
       "title": "Economic Activity",
       "status": "authored"
     },
@@ -3289,18 +3685,27 @@
       "year": 2024,
       "level": "higher",
       "part": 2,
-      "questionRef": "2024 HL Part 2 Q10A",
+      "questionRef": "2024 HL Part 2 Q10A(i)",
       "title": "Urban Density",
       "status": "authored"
     },
     {
-      "id": "geography-2024-hl-p2-q10b",
+      "id": "geography-2024-hl-p2-q10a-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q10A(ii)",
+      "title": "Urban Density",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q10b-aerial-photograph",
       "year": 2024,
       "level": "higher",
       "part": 2,
       "questionRef": "2024 HL Part 2 Q10B",
       "title": "Urban Settlement",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2024-hl-p2-q10c",
@@ -3316,7 +3721,61 @@
       "year": 2024,
       "level": "higher",
       "part": 2,
-      "questionRef": "2024 HL Part 2 Q11A",
+      "questionRef": "2024 HL Part 2 Q11A(i)",
+      "title": "Population Characteristics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q11a-ii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q11A(ii)",
+      "title": "Population Characteristics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q11a-iii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q11A(iii)",
+      "title": "Population Characteristics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q11a-iv",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q11A(iv)",
+      "title": "Population Characteristics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q11a-v",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q11A(v)",
+      "title": "Population Characteristics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q11a-vi",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q11A(vi)",
+      "title": "Population Characteristics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2024-hl-p2-q11a-vii",
+      "year": 2024,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2024 HL Part 2 Q11A(vii)",
       "title": "Population Characteristics",
       "status": "authored"
     },
@@ -3402,7 +3861,7 @@
       "status": "authored"
     },
     {
-      "id": "geography-2024-hl-p2-q17",
+      "id": "geography-2024-hl-p2-q17-climate-soils-flora",
       "year": 2024,
       "level": "higher",
       "part": 2,
@@ -3452,7 +3911,7 @@
       "level": "higher",
       "part": 2,
       "questionRef": "2024 HL Part 2 Q22",
-      "title": "The Atmosphere–Ocean Environment",
+      "title": "The Atmosphere – Ocean Environment",
       "status": "authored"
     },
     {
@@ -3461,7 +3920,7 @@
       "level": "higher",
       "part": 2,
       "questionRef": "2024 HL Part 2 Q23",
-      "title": "The Atmosphere–Ocean Environment",
+      "title": "The Atmosphere – Ocean Environment",
       "status": "authored"
     },
     {
@@ -3470,7 +3929,7 @@
       "level": "higher",
       "part": 2,
       "questionRef": "2024 HL Part 2 Q24",
-      "title": "The Atmosphere–Ocean Environment",
+      "title": "The Atmosphere – Ocean Environment",
       "status": "authored"
     },
     {
@@ -8215,10 +8674,11 @@
     {
       "year": 2024,
       "level": "higher",
-      "paperBaseTasks": 60,
-      "includedBaseTasks": 52,
-      "excludedBaseTasks": 8,
-      "authoredCardsAfterFiniteExpansion": 66
+      "paperBaseTasks": 111,
+      "includedBaseTasks": 111,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 127,
+      "reviewed": true
     },
     {
       "year": 2024,
@@ -8602,7 +9062,7 @@
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
-        "none+choose-1-of-3"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -8610,8 +9070,15 @@
       "classification": "finite-expanded",
       "variants": 4,
       "kinds": [
-        "answer-i-or-ii",
-        "answer-i-or-ii+inline-choice"
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2024 HL Part 2 Q4B",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
       ]
     },
     {
@@ -8619,7 +9086,7 @@
       "classification": "finite-expanded",
       "variants": 6,
       "kinds": [
-        "none+choose-2-of-4"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -8627,7 +9094,15 @@
       "classification": "finite-expanded",
       "variants": 2,
       "kinds": [
-        "none+choose-1-of-2"
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2024 HL Part 2 Q10B",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
       ]
     },
     {
@@ -8635,7 +9110,7 @@
       "classification": "finite-expanded",
       "variants": 4,
       "kinds": [
-        "none+choose-3-of-4"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -9294,70 +9769,6 @@
       "part": 2,
       "questionRef": "11B",
       "title": "Rural Settlement Patterns",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2024,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "1",
-      "title": "Landscape Identification",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2024,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "7",
-      "title": "Map Skills",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2024,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "8",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2024,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "9",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2024,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "1A",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2024,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "7A",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2024,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "8B",
-      "title": "Development of Economic Activity",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2024,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "10B",
-      "title": "Urban Settlement",
       "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
     },
     {

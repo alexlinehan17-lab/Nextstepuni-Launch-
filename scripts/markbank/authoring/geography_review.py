@@ -230,7 +230,7 @@ class Document:
         # ("Leaving Certificate Examination 2025" / "Geography – Higher level,
         # Part Two · 31") is never guidance.
         return [line for line in out if not re.fullmatch(
-            r'\d{1,2}|Leaving Certificate Examination \d{4}|'
+            r'\d{1,2}|Leaving Certificate Examination \d{4}|Page \d+ of \d+|'
             r'Geography\s*[–-]\s*(?:Higher|Ordinary) level,.*', line)]
 
 
@@ -276,6 +276,9 @@ class Route:
     criteria: tuple[Criterion, ...] | None = None
     topic: str | None = None
     atlas: tuple[str, ...] | None = None
+    # A route whose printed choice is the evidence itself ("the aerial
+    # photograph OR the Ordnance Survey map") carries only that evidence.
+    sources: tuple[str, ...] | None = None
 
 
 @dataclass(frozen=True)
@@ -388,6 +391,8 @@ def display(text: str) -> str:
     """Restore the paper's line structure for bullets and lettered items."""
     text = re.sub(r'\s*•\s*', '\n• ', text)
     text = re.sub(r'\s+(?=\((?:a|b|c|d)\)\s)', '\n', text)
+    # A superscript unit loses its raise in the text layer ("km2").
+    text = re.sub(r'\bkm2\b', 'km²', text)
     return text.strip()
 
 
@@ -486,7 +491,7 @@ def build_task_cards(sitting: Sitting, task: Task, fileid: str,
         if not atlas:
             raise AssertionError(f'{task.key}: no Topic Atlas topic')
         sources = []
-        for source in task.sources:
+        for source in (route.sources if route.sources is not None else task.sources):
             if source == 'page':
                 sources.append({
                     'kind': 'source-illustration',

@@ -100,8 +100,11 @@ describe('Geography exam-topic registry', () => {
     expect(papers).toHaveLength(60);
     expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(720);
     // 1,317 reference-derived mappings plus 2026 Higher Part One Q5, which the
-    // reference snapshot omitted and the independent 2026 review restores.
-    expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1318);
+    // reference snapshot omitted and the independent 2026 review restores, and
+    // 2024 Higher Part One Q5, which the reference tagged only with a new-course
+    // topic (not examinable in 2024) and the independent 2024 review files
+    // under earthquakes and volcanoes.
+    expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1319);
     const taxonomyById = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     for (const paper of papers) {
       for (const question of paper.q) {

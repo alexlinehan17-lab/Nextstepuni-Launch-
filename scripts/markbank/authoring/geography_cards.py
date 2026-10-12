@@ -46,6 +46,7 @@ import geography_review_2026_hl as REVIEW_2026_HL
 import geography_review_2026_ol as REVIEW_2026_OL
 import geography_review_2025_hl as REVIEW_2025_HL
 import geography_review_2025_ol as REVIEW_2025_OL
+import geography_review_2024_hl as REVIEW_2024_HL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -70,6 +71,7 @@ REVIEWED = {
     (2026, 'ordinary'): REVIEW_2026_OL,
     (2025, 'higher'): REVIEW_2025_HL,
     (2025, 'ordinary'): REVIEW_2025_OL,
+    (2024, 'higher'): REVIEW_2024_HL,
 }
 
 YEARS = tuple(range(2021, 2027))
@@ -885,6 +887,8 @@ COMPANIONS: dict[int, dict[str, str]] = {
     # 2025's aerial photograph is published only as a JPEG image.
     2025: {'place': 'Oughterard', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
            'aerial': 'LC005CLP004EV.jpg'},
+    2024: {'place': 'Bantry', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
 }
 
 
@@ -1122,6 +1126,9 @@ def reviewed_sitting(year: int, level: str, review: Any,
             'topicIds': sorted({card['topicId'] for card in task_cards}),
             'atlasTopicIds': sorted({a for card in task_cards for a in card['atlasTopicIds']}),
             'sources': list(task.sources),
+            **({'routeSources': {route.card_id: list(route.sources) for route in task.routes
+                                 if route.sources is not None}}
+               if any(route.sources is not None for route in task.routes) else {}),
             'cards': [card['id'] for card in task_cards],
             'routes': [route.label for route in task.routes],
         })

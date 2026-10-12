@@ -859,13 +859,13 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('adds the reviewed Geography parts on top of the frozen 754 without replacing any', () => {
-    /* 2026-10-11: 2026 Higher (+53), 2026 Ordinary (+78), 2025 Higher (+63)
-     * and 2025 Ordinary (+79), each 2025 level including the eight tasks
-     * whose map/legend/aerial companions are now wired, each reviewed page by
-     * page against its scheme. Every addition is a new, unique ID that never
-     * reuses an original ID; every reviewed sitting's shipped IDs are still
-     * present. */
-    expect(geographyAdditionIds.size).toBe(273);
+    /* 2026-10-11/12: 2026 Higher (+53), 2026 Ordinary (+78), 2025 Higher
+     * (+63), 2025 Ordinary (+79) and 2024 Higher (+61), the 2025 and 2024
+     * sittings including the tasks whose map/legend/aerial companions are
+     * now wired, each reviewed page by page against its scheme. Every
+     * addition is a new, unique ID that never reuses an original ID; every
+     * reviewed sitting's shipped IDs are still present. */
+    expect(geographyAdditionIds.size).toBe(334);
     const all = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY];
     const ids = all.map(card => card.id);
     expect(new Set(ids).size).toBe(ids.length);
