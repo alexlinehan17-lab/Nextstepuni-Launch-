@@ -4,6 +4,11 @@
 Keep every scheme line, including all partial-credit rungs and examiner notes.
 Printed matching subparts are distinct tasks; required details and open textual
 evidence remain one response. MCQ distractors are never alternative tasks.
+
+Every string a card shows as the SEC's is lifted from the paper or scheme page
+(fr_printed, fr_printed_rules): the parsed scheme lines only locate the printed
+ones, so markers, punctuation and wording are the page's own. NextStepUni's own
+guidance goes to practiceNotes, never to an SEC-attributed field.
 """
 from pathlib import Path
 import hashlib
@@ -15,6 +20,8 @@ from fr_paper import FrPaper
 from fr_all import ORDINAL_ANSWER
 from fr_selection import verify_paper
 from fr_reviewed_tasks import write_tasks
+from fr_printed import lift, try_lift, doc_texts, skeleton, MARKER
+import fr_printed_rules as printed_rules
 
 ROOT = Path(__file__).resolve().parents[3]
 DATA = ROOT / 'examiner-reports/french'
@@ -57,17 +64,58 @@ def guide_lines(scheme, ask, headings=()):
     return paragraphs, pages
 
 
-HL_RULES = [
-    'Answer French questions in French. Answer the final comprehension question in English or Irish.',
-    'Use the separate answer spaces where provided. Two or more answers on one line count as one answer. An extra subdivision is rewarded only if an earlier answer is cancelled.',
-    'Excess material: deduct 1 or 2 marks. All other errors together: deduct at most 1 mark per question or segment (inappropriate quotation, unnecessary manipulation, grammar in manipulation, required manipulation not attempted, or wrong answer language). The excess-material penalty may also apply.',
-]
-OL_RULES = [
-    'Equivalent meaning earns full marks in Comprehensions 1 and 2 and in Q8 of Comprehensions 3 and 4; exact scheme wording is not required.',
-]
-OL_FRENCH_RULES = [
-    'Penalise extraneous material by at most 2 marks. In questions 1–7, answers in English or Irish earn half marks only. Where manipulation is required, do not penalise grammar mistakes; if a quotation is given instead of required manipulation, deduct 1 mark.',
-]
+def synthesized(record):
+    """Lines the reviewed block rewrites add so the parser can price older
+    Ordinary tasks ("Question 2:", "Corinne:"). The scheme never prints them."""
+    out = set()
+    for block in record.get('schemeBlocks', []):
+        source = {' '.join(line.split()) for line in block['sourceLines']}
+        for line in block['replacementLines']:
+            line = ' '.join(line.split())
+            if line not in source:
+                out.add(re.sub(r'^\d+\.\s*(?:-\s*)?', '', line))
+    return out
+
+
+def corrected(record):
+    """Reviewed line corrections that add what the scheme does not print (a
+    marker, an item number, a tariff): the printed line each one replaces."""
+    bare = lambda line: re.sub(r'^\d+\.\s*(?:-\s*)?', '', ' '.join(line.split()))
+    return {bare(c['to']): bare(c['from']) for c in record.get('schemeLineCorrections', [])}
+
+
+def printed_guide(guide, path, pages, aliases, added, what, corrections=None):
+    """Each guide paragraph as the scheme prints it, and any page it was found
+    on beyond the cited ones. A paragraph the parser's rewrites added is left
+    out; every other paragraph must lift."""
+    groups = doc_texts(path, pages, aliases)
+    count = len(fitz.open(path))
+    near = [p for p in (pages[0] - 1, pages[-1] + 1) if 1 <= p <= count]
+    shown, extra = [], []
+    for para in guide:
+        if not skeleton(para)[0]:
+            continue  # a stray marker with no wording
+        bare = ' '.join(re.sub(rf'^{MARKER}\s*', '', para).split())
+        if corrections and bare in corrections and corrections[bare] != bare:
+            marker = re.match(rf'^({MARKER})\s*', para)
+            para = (marker[1] + ' ' if marker else '') + corrections[bare]
+            bare = corrections[bare]
+        if bare in added:
+            got = try_lift(groups, para)
+            if got is None or (bare.endswith(':') and re.sub(rf'^{MARKER}\s*', '', got) != bare):
+                continue
+            shown.append(got)
+            continue
+        got = try_lift(groups, para)
+        if got is None:
+            for page in near:
+                got = try_lift(doc_texts(path, [page], aliases), para)
+                if got is not None:
+                    extra.append(page)
+                    break
+        assert got is not None, (what, para, 'not printed on or beside the cited pages')
+        shown.append(got)
+    return shown, sorted(set(extra))
 
 
 def build():
@@ -105,13 +153,14 @@ def build():
             hit = paper.find(ask.rc, ask.item, None if ask.letter_to else ask.letter, ask.cue, whole=mcq)
             assert hit, scheme.ref(ask)
             question, question_page, _ = hit
+            paper_groups = doc_texts(paper.path, paper.rc_pages[ask.rc])
             context = record.get('paperContextLines', {}).get(address)
             if context:
                 assert context['reason'] and context['page'] == question_page, address
                 with fitz.open(paper.path) as source_pdf:
                     lines = [' '.join(line.split()) for line in source_pdf[question_page - 1].get_text(sort=True).splitlines()]
                 assert context['sourceLine'] in lines, address
-                question += '\n\n' + re.sub(r'_+', '', context['sourceLine']).strip()
+                question += '\n\n' + ' '.join(re.sub(r'_+', '', context['sourceLine']).split())
             shared_tariff = record.get('sevenPlusOne', {}).get(address)
             question_group = record.get('paperQuestionGroups', {}).get(address)
             if question_group:
@@ -120,7 +169,8 @@ def build():
                 for item in question_group['questions']:
                     found = paper.find(ask.rc, item, None, record['paperCues'][f'A{ask.rc}-Q{item}'])
                     assert found, (address, item)
-                    prompts.append(f'Question {item}: {found[0]}')
+                    # The paper's own numbering, not a "Question N:" label.
+                    prompts.append(lift(paper_groups, f'{item}. {found[0]}', marks='', what=address))
                 question = '\n\n'.join(prompts)
             choice_review = record.get('multipleChoice', {}).get(address, {})
             if choice_review.get('letteredOptions'):
@@ -139,17 +189,9 @@ def build():
                     assert stem[0].startswith(split['stemPrefix']), address
                     label = next(part['paperLabel'] for part in split['parts'] if part['letter'] == ask.letter)
                     assert label in question, address
-                    if split.get('labelSuffix'):
-                        # A category label can be printed separately from the
-                        # shared noun and passage reference. Verify that source
-                        # continuation before carrying it into each split card.
-                        assert any(b.text == split['paperContextCue'] for b in paper.candidates(ask.rc, ask.item, split.get('paperContextPart', 'i'))), address
-                        assert split['labelSuffix'] in split['paperContextCue'], address
-                        label += split['labelSuffix']
-                    if split.get('subjectName'):
-                        assert split['subjectName'] in stem[0] and label.startswith('His '), address
-                        label = split['subjectName'] + '’s ' + label.removeprefix('His ')
-                    question = split['stemPrefix'] + '\n\n' + label
+                    # The whole printed question, then this part's printed label.
+                    question = (lift(paper_groups, split['printedQuestion'], marks='', what=address) + '\n\n'
+                                + lift(paper_groups, split['printedLabels'][ask.letter], marks='', what=address))
                 else:
                     question = stem[0] + '\n\n' + question
             if year <= 2019:
@@ -179,7 +221,7 @@ def build():
                 prompt, guide, maximum = question, guidance, ask.total
                 if ask.letter_to:
                     part = max(paper.candidates(ask.rc, ask.item, letter), key=lambda block: (block.side == 'R', len(block.text)))
-                    prompt = question.rstrip(':.') + ':\n\n' + part.text
+                    prompt = question + '\n\n' + part.text
                     answer = ask.answers[index]
                     assert answer['marks'] == ask.per
                     guide = [f'{answer["text"]} — {answer["marks"]} marks.']
@@ -201,25 +243,41 @@ def build():
                 if correction:
                     assert prompt == correction['from'] and correction['to'] in prompt and correction['reason'], n
                     prompt = correction['to']
+                # Each line as the paper prints it (hyphens, apostrophes, spacing).
+                prompt = '\n'.join(lift(paper_groups, line, marks='', what=n) if line.strip() else line
+                                    for line in prompt.split('\n'))
                 opinion_question = record.get('ordinaryOpinionQuestions', {}).get(str(ask.rc), 8)
                 english = (level == 'hl' and ask.item == 6) or (level == 'ol' and (ask.rc < 3 or ask.item == opinion_question))
-                language = 'English or Irish' if english else 'French'
-                ordinary_rules = record.get('ordinaryRules')
-                if ordinary_rules:
-                    assert ordinary_rules['reason'] and ordinary_rules['rules'], address
-                requirements = [f'Answer in {language}.'] + (HL_RULES[1:] if level == 'hl' else ordinary_rules['rules'] if ordinary_rules else OL_RULES)
-                if level == 'ol' and ask.rc >= 3:
-                    rules = record.get('ordinaryFrenchRules', {}).get(str(ask.rc))
-                    if rules:
-                        assert rules['reason'] and rules['rules'], address
-                    requirements += rules['rules'] if rules else OL_FRENCH_RULES
-                if mcq:
-                    requirements += ['Select one answer. The other printed options are distractors.']
+                # The SEC's own rules: the paper's instruction, then the scheme's.
+                practice = []
+                requirements = []
+                if level == 'hl':
+                    kind = 'mcq' if mcq else 'english' if english else 'french'
+                    requirements.append(printed_rules.reading_language(year, level, kind)[0])
+                    requirements += printed_rules.reading_general_points(year, record.get('generalRulesPage', 4))
+                    note = record.get('sourceNotes', {}).get(address, '')
+                    if ask.item == 6 and note.startswith('Special'):
+                        requirements.append(printed_rules.special_segment_rule(year))
+                else:
+                    if english:
+                        requirements.append(printed_rules.reading_language(year, level, 'english')[0])
+                    mcq_instruction = printed_rules.reading_mcq_instruction(year, level, paper.rc_pages[ask.rc]) if mcq else None
+                    if mcq_instruction:
+                        requirements.append(mcq_instruction[0])
+                    elif mcq:
+                        practice.append('Select one answer. The other printed options are distractors.')
+                    if english:
+                        requirements += printed_rules.ordinary_equivalence(year)
+                    else:
+                        practice.append('Answer in French.')
+                    if ask.rc >= 3:
+                        requirements += printed_rules.ordinary_question_rules(year, ask.rc)[0]
                 if shared_tariff:
                     assert maximum == 8 and shared_tariff['reason'], address
-                    requirements += ['Give both required answers. Award 7 marks for one correct answer and 1 additional mark for the second correct answer (8 marks total).']
+                    requirements.append(lift(doc_texts(DATA / f'schemes/{year}-{level}.pdf', scheme_pages), shared_tariff['printedRule'], marks='', what=address))
+                    practice.append('Give both required answers. Award 7 marks for one correct answer and 1 additional mark for the second correct answer (8 marks total).')
                 elif ask.count > 1 and not ask.letter_to:
-                    requirements += [f'Give {ask.count} distinct points. Each earns at most {ask.per} marks; do not score the same point twice.']
+                    practice.append(f'Give {ask.count} distinct points. Each earns at most {ask.per} marks; do not score the same point twice.')
                 if shared_tariff:
                     allowed = [0, 7, 8] if ask.rc < 3 else list(range(9))
                 elif mcq:
@@ -241,40 +299,47 @@ def build():
                     assert explicit_marks['marks'][-1] == maximum
                     allowed = explicit_marks['marks']
                 pages = paper.rc_pages[ask.rc]
-                source = dict(kind='source-text', label=f'Reading Comprehension {ask.rc}', title=f'Reading Comprehension {ask.rc} — answer in {language}',
+                source = dict(kind='source-text', label=f'Reading Comprehension {ask.rc}', title=f'Reading Comprehension {ask.rc}',
                               pages=pages, attribution=f'SEC French {year} {level_name.title()} Level examination paper — © State Examinations Commission.',
-                              presentationNote=f'Read the original passage and return to this task. Answer in {language}.')
+                              presentationNote='Read the original passage and return to this task.')
+                aliases = tuple(alias['glyph'] for alias in record.get('schemeBulletAliases', []))
+                scheme_path = DATA / f'schemes/{year}-{level}.pdf'
+                if choice_review.get('letteredOptions'):
+                    # The scheme prints the letter; the option it names is quoted
+                    # as our note, never joined to the scheme's line.
+                    choices = prompt.split('\n')[1:]
+                    practice.append(f'The scheme’s answer ({chr(97 + choice_review["correctOption"])}) is this option on the paper: “{choices[choice_review["correctOption"]]}”')
+                guide, extra_pages = printed_guide(guide, scheme_path, scheme_pages, aliases, synthesized(record), cid, corrected(record))
+                cited = sorted(set(scheme_pages) | set(extra_pages))
                 card = dict(id=cid, subjectId='french', level=level_name, source='sec', kind='rubric', year=year,
                             paperFileid=doc['doc']['f'].removesuffix('.pdf'), section='A',
                             questionRef=f'{year} {level.upper()} Section A{ask.rc} Q{suffix}', questionText=prompt,
                             totalMarks=maximum, topicId=topic_id, conceptId=f'french-reading-{topic_id}',
                             sourceMaterial=source, specVersion='lc-french-syllabus',
-                            schemeCitation=f'SEC French {year} {level_name.title()} Level marking scheme, pp.{", ".join(map(str, scheme_pages))}; general rules p.{record.get("generalRulesPage", 4 if level == "hl" else 3)} — © State Examinations Commission.',
-                            schemeRegion=dict(schemeFileid=doc['scheme']['f'], p=scheme_pages[0], r=[0, 0, 1, 1]),
+                            schemeCitation=f'SEC French {year} {level_name.title()} Level marking scheme, pp.{", ".join(map(str, cited))}; general rules p.{record.get("generalRulesPage", 4 if level == "hl" else 3)} — © State Examinations Commission.',
+                            schemeRegion=dict(schemeFileid=doc['scheme']['f'], p=cited[0], r=[0, 0, 1, 1]),
                             rubric=dict(system='french', taskRequirements=requirements, answerGuide=guide,
-                                        criteria=[dict(id='response', label='Response', maxMarks=maximum, permittedMarks=allowed,
-                                                       guidance=['Use the accepted answers and partial-credit rules above, then apply any stated deductions.'])],
-                                        markingGuideNote='Round brackets in the scheme identify extraneous material that is not penalised. The published examples are not necessarily exhaustive; other valid responses may be accepted.'),
+                                        criteria=[dict(id='response', label='Response', maxMarks=maximum, permittedMarks=allowed, guidance=[])],
+                                        markingGuideNote='\n'.join(printed_rules.scheme_notes(year, level)), practiceNotes=practice),
                             qa=dict(gates=['visual-paper-scheme-review', 'published-tariff-boundary', 'complete-partial-credit', 'selection-review'], humanReviewedBy='agent-verified', humanReviewedAt=review['reviewedAt']))
                 cards.append(card)
                 if preserved_id:
                     card['conceptId'] = previous['conceptId']
                 if scoring:
-                    card['rubric']['taskRequirements'].insert(1, scoring['sourceNote'])
+                    practice.append(scoring['sourceNote'])
                 if split and split.get('taskInstruction'):
-                    card['rubric']['taskRequirements'].append(split['taskInstruction'])
+                    practice.append(split['taskInstruction'])
                 if address in record.get('sourceNotes', {}):
-                    card['rubric']['taskRequirements'].insert(1, record['sourceNotes'][address])
+                    practice.append(record['sourceNotes'][address])
+                practice.append('Use the accepted answers and partial-credit rules above, then apply any stated deductions.')
                 if mcq:
                     choices = prompt.split('\n')[1:]
                     assert len(choices) == 4 and all(choices), cid
                     card['questionChoices'] = choices
                     if choice_review.get('letteredOptions'):
-                        correct = choice_review['correctOption']
-                        key = f'({chr(97 + correct)})'
+                        key = f'({chr(97 + choice_review["correctOption"])})'
                         assert len(ask.answers) == 1 and ask.answers[0]['text'] == key, cid
-                        assert guide[0].startswith(f'• {key}'), cid
-                        card['rubric']['answerGuide'] = [f'• {key} {choices[correct]} — {maximum} marks.', *guide[1:]]
+                        assert re.match(rf'(?:{MARKER}\s*)?{re.escape(key)}', card['rubric']['answerGuide'][0]), cid
                 tasks.append(dict(cardId=cid, category='reading', subjectId='french', level=level_name, year=year, sitting='main', paperKey='single', lang='ev',
                                   fileid=doc['doc']['f'], n=n, parent=parent, topicIds=topic_ids,
                                   topicId=topic_id, pages=pages, label=f'Reading Comprehension {ask.rc} · Q{suffix}'))

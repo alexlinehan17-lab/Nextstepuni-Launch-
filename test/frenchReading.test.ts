@@ -27,6 +27,14 @@ const card2021 = (suffix: string) => cards.find(card => card.id === `fr-2021-${s
 const card2022 = (suffix: string) => cards.find(card => card.id === `fr-2022-${suffix}`)!;
 const card2023 = (suffix: string) => cards.find(card => card.id === `fr-2023-${suffix}`)!;
 const card2024 = (suffix: string) => cards.find(card => card.id === `fr-2024-${suffix}`)!;
+type ReadingCard = (typeof cards)[number];
+// Which printed marker gives full credit is the scheme's own convention, as its
+// lifted note states: a stroke (-) in the older Ordinary schemes, a bullet
+// point (•) elsewhere; partial credit is an asterisk (*) or a dash.
+const strokeConvention = (card: ReadingCard) => (card.rubric.markingGuideNote ?? '').startsWith('Please note that');
+const fullCredit = (card: ReadingCard) => card.rubric.answerGuide!.filter(line => line.startsWith(strokeConvention(card) ? '- ' : '•'));
+const partCredit = (card: ReadingCard) => card.rubric.answerGuide!.filter(line => line.startsWith(strokeConvention(card) ? '* ' : '–'));
+const practice = (card: ReadingCard) => (card.rubric.practiceNotes ?? []).join(' ');
 
 describe('visually reviewed French reading tasks', () => {
   it('retains every reviewed tariff boundary and all original cards', () => {
@@ -54,7 +62,7 @@ describe('visually reviewed French reading tasks', () => {
     for (const [rc, count] of [[1, 16], [2, 17]]) {
       const card = card2010(`hl-reading-a${rc}-q6`);
       expect(card.totalMarks).toBe(12);
-      expect(card.rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(count);
+      expect(fullCredit(card)).toHaveLength(count);
     }
     expect(card2010('hl-reading-a1-q6').rubric.taskRequirements.join(' ')).not.toContain('higher segment score');
     expect(card2010('hl-reading-a2-q6').rubric.criteria[0].permittedMarks).toEqual([0, 2, 4, 6, 8, 10, 12]);
@@ -62,24 +70,26 @@ describe('visually reviewed French reading tasks', () => {
     for (const [rc, groups] of [[1, [[1, 2], [4, 5], [6, 7], [8, 9]]], [2, [[1, 2], [3, 4], [5, 6], [8, 9]]]] as const) {
       for (const group of groups) {
         const card = card2010(`ol-reading-a${rc}-q${group[0]}`);
-        for (const q of group) expect(card.questionText).toContain(`Question ${q}:`);
+        for (const q of group) expect(card.questionText).toMatch(new RegExp(`(^|\n)${q}\\. `));
         expect(card.rubric.criteria[0].permittedMarks).toEqual([0, 7, 8]);
-        expect(card.rubric.taskRequirements.join(' ')).toContain('1 additional mark');
+        expect(card.rubric.taskRequirements).toContain('Two correct answers required for 8 marks (7 + 1).');
+        expect(practice(card)).toContain('1 additional mark');
       }
     }
     const parents = card2010('ol-reading-a3-q3');
     expect(parents.questionText).toContain('(a) son père');
     expect(parents.questionText).toContain('(b) sa mère');
     expect(parents.totalMarks).toBe(8);
-    expect(parents.rubric.taskRequirements.join(' ')).toContain('1 additional mark');
+    expect(parents.rubric.taskRequirements).toContain('3.(a) & (b) 7 + 1 marks');
+    expect(practice(parents)).toContain('1 additional mark');
     const opinion = card2010('ol-reading-a3-q7');
-    expect(opinion.rubric.taskRequirements[0]).toBe('Answer in English or Irish.');
-    expect(opinion.sourceMaterial!.title).toContain('English or Irish');
-    expect(opinion.rubric.taskRequirements.join(' ')).toContain('quotation in French earns half marks');
-    expect(opinion.rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(7);
-    expect(card2010('ol-reading-a4-q8').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(9);
-    expect(card2010('ol-reading-a4-q1').rubric.taskRequirements.join(' ')).toContain('at most 1 mark');
-    expect(card2010('ol-reading-a3-q5').rubric.answerGuide!.filter(line => line.startsWith('–'))).toHaveLength(4);
+    expect(opinion.rubric.taskRequirements[0]).toBe('Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.');
+    expect(opinion.sourceMaterial!.title).toBe('Reading Comprehension 3');
+    expect(opinion.rubric.taskRequirements).toContain('In Q.7, where no attempt is made at answering in English or Irish, a correct quote in French is to be awarded half marks.');
+    expect(fullCredit(opinion)).toHaveLength(7);
+    expect(fullCredit(card2010('ol-reading-a4-q8'))).toHaveLength(9);
+    expect(card2010('ol-reading-a4-q1').rubric.taskRequirements).toContain('N.B. Penalise extraneous material to a maximum of 1 mark.');
+    expect(partCredit(card2010('ol-reading-a3-q5'))).toHaveLength(4);
     expect(card2010('ol-reading-a3-q4').rubric.answerGuide!.join(' ')).toContain('One correct verb and one incorrect verb = 0');
     expect(cards.filter(card => card.year === 2010 && card.questionChoices)).toHaveLength(4);
   });
@@ -90,22 +100,21 @@ describe('visually reviewed French reading tasks', () => {
     for (const [part, label, examples] of [['a', 'Positif', 6], ['b', 'Négatif', 4]] as const) {
       const card = card2011(`hl-reading-a1-q3-${part}`);
       expect(card.totalMarks).toBe(5);
-      expect(card.questionText).toContain(`${label} : (Section 3)`);
-      expect(card.questionText).not.toContain('dans chaque cas');
-      expect(card.rubric.taskRequirements.join(' ')).toContain('wrong category');
-      expect(card.rubric.taskRequirements.join(' ')).toContain('scheme heading');
-      expect(card.rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(examples);
+      expect(card.questionText).toBe(`Pour Christine, son hébergement chez Gabrielle a des aspects à la fois positifs et négatifs. Donnez-en un exemple, dans chaque cas. (Section 3)\n\n(${part}) ${label} :`);
+      expect(practice(card)).toContain('wrong category');
+      expect(practice(card)).toContain('scheme heading');
+      expect(fullCredit(card)).toHaveLength(examples);
       expect(card.rubric.answerGuide!.join(' ')).toContain('award 0 marks for that line');
       expect(tasks.find(task => task.cardId === card.id)?.parent).toBe('5');
     }
     for (const [rc, q] of [[2, 4], [3, 2], [4, 5]]) expect(card2011(`ol-reading-a${rc}-q${q}`).totalMarks).toBe(8);
-    expect(card2011('ol-reading-a4-q5').rubric.answerGuide!.filter(line => line.startsWith('–'))).toHaveLength(2);
+    expect(partCredit(card2011('ol-reading-a4-q5'))).toHaveLength(2);
     for (const [rc, q] of [[3, 6], [4, 1], [4, 7]]) expect(card2011(`ol-reading-a${rc}-q${q}`).rubric.answerGuide!.join(' ')).toContain('Penalise attempt at manipulation by deducting 1 mark');
-    expect(card2011('ol-reading-a4-q7').rubric.taskRequirements.join(' ')).not.toContain('if a quotation is given instead');
+    expect(card2011('ol-reading-a4-q7').rubric.taskRequirements.join(' ')).not.toContain('a quotation is given');
     expect(card2011('hl-reading-a1-q5-i').rubric.criteria[0].permittedMarks).toEqual([0, 5]);
-    expect(card2011('hl-reading-a1-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(10);
-    expect(card2011('hl-reading-a2-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(10);
-    for (const rc of [3, 4]) expect(card2011(`ol-reading-a${rc}-q8`).rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(6);
+    expect(fullCredit(card2011('hl-reading-a1-q6'))).toHaveLength(10);
+    expect(fullCredit(card2011('hl-reading-a2-q6'))).toHaveLength(10);
+    for (const rc of [3, 4]) expect(fullCredit(card2011(`ol-reading-a${rc}-q8`))).toHaveLength(6);
     expect(cards.filter(card => card.year === 2011 && card.questionChoices)).toHaveLength(4);
   });
 
@@ -123,24 +132,25 @@ describe('visually reviewed French reading tasks', () => {
     for (const rc of [1, 2]) {
       const card = card2012(`hl-reading-a${rc}-q6`);
       expect(card.totalMarks).toBe(10);
-      expect(card.rubric.taskRequirements.join(' ')).toContain('twice the higher segment score');
+      expect(card.rubric.taskRequirements).toContain('In Q.6, where less than full marks is achieved in either segment, the higher mark is to be awarded to each segment.');
+      expect(practice(card)).toContain('twice the higher segment score');
       expect(card.rubric.criteria[0].permittedMarks).toEqual([0, 2, 4, 6, 8, 10]);
     }
     const paired = card2012('hl-reading-a2-q6');
     expect(paired.questionText).toContain('countryside and (ii) the restaurant');
     expect(paired.rubric.answerGuide).toContain('(i) Countryside');
     expect(paired.rubric.answerGuide).toContain('(ii) Restaurant');
-    expect(card2012('hl-reading-a1-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(10);
+    expect(fullCredit(card2012('hl-reading-a1-q6'))).toHaveLength(10);
     expect(card2012('hl-reading-a1-q2-ii').questionText).toContain('réseau RER');
     expect(card2012('ol-reading-a4-q2').questionText).toBe('Comment sont les résultats scolaires de Jenny ? (Section 1)');
-    expect(card2012('ol-reading-a2-q7').rubric.taskRequirements.join(' ')).toContain('same applause point');
+    expect(practice(card2012('ol-reading-a2-q7'))).toContain('same applause point');
     const missing = card2012('ol-reading-a4-q7');
     expect(missing.totalMarks).toBe(4);
-    expect(missing.rubric.taskRequirements.join(' ')).toContain('without a mark figure');
-    expect(missing.rubric.taskRequirements.join(' ')).toContain('total 36');
+    expect(practice(missing)).toContain('without a mark figure');
+    expect(practice(missing)).toContain('total 36');
     expect(cards.filter(card => card.year === 2012 && card.questionChoices)).toHaveLength(4);
-    expect(card2012('ol-reading-a3-q8').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(4);
-    expect(card2012('ol-reading-a4-q8').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(6);
+    expect(fullCredit(card2012('ol-reading-a3-q8'))).toHaveLength(4);
+    expect(fullCredit(card2012('ol-reading-a4-q8'))).toHaveLength(6);
   });
 
   it('preserves 2013 two-mark answers, required pairs and the two named opinion parts', () => {
@@ -151,22 +161,22 @@ describe('visually reviewed French reading tasks', () => {
     }
     const pair = card2013('ol-reading-a3-q1');
     expect(pair.totalMarks).toBe(8);
-    expect(pair.rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(2);
+    expect(fullCredit(pair)).toHaveLength(2);
     expect(card2013('ol-reading-a4-q4').rubric.answerGuide!.at(-1)).toContain('3 marks');
     for (const [part, label] of [['i', 'Diane:'], ['ii', 'Mother:']]) {
       const card = card2013(`ol-reading-a4-q8-${part}`);
       expect(card.totalMarks).toBe(4);
       expect(card.questionText).toContain('Both Diane and her mother');
       expect(card.questionText).toContain(label);
-      expect(card.questionText).not.toContain('TWO points');
-      expect(card.rubric.taskRequirements.join(' ')).toContain('Give one supported point');
-      expect(card.rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(5);
+      expect(card.questionText).toContain('Answer in English, giving TWO points and referring to the text.');
+      expect(practice(card)).toContain('Give one supported point');
+      expect(fullCredit(card)).toHaveLength(5);
       expect(card.rubric.answerGuide!.at(-1)).toBe('Award 2 marks if answer is partially correct.');
       expect(card.schemeRegion?.p).toBe(9);
     }
-    expect(card2013('ol-reading-a3-q8').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(9);
-    expect(card2013('hl-reading-a1-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(11);
-    expect(card2013('hl-reading-a2-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(6);
+    expect(fullCredit(card2013('ol-reading-a3-q8'))).toHaveLength(9);
+    expect(fullCredit(card2013('hl-reading-a1-q6'))).toHaveLength(11);
+    expect(fullCredit(card2013('hl-reading-a2-q6'))).toHaveLength(6);
     expect(card2013('hl-reading-a2-q4-ii').questionText).toMatch(/^Selon la troisième section,/);
     expect(card2013('hl-reading-a2-q5-i').rubric.criteria[0].permittedMarks).toEqual([0, 5]);
     expect(card2013('hl-reading-a1-q2-i').rubric.answerGuide!.join(' ')).toContain('maximum penalty minus 2');
@@ -186,20 +196,21 @@ describe('visually reviewed French reading tasks', () => {
     for (const [part, label, examples] of [['i', 'parents', 8], ['ii', 'sisters', 2]] as const) {
       const card = card2014(`ol-reading-a4-q8-${part}`);
       expect(card.totalMarks).toBe(4);
-      expect(card.questionText).toContain(`Laurent’s ${label}:`);
-      expect(card.questionText).not.toContain('TWO points');
-      expect(card.rubric.taskRequirements.join(' ')).toContain('Give one supported point');
-      expect(card.rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(examples);
+      expect(card.questionText).toContain('(i) Laurent’s parents, and (ii) his sisters, Céline and Marie?');
+      expect(card.questionText.split('\n').at(-1)).toBe(`His ${label}:`);
+      expect(card.questionText).toContain('Answer in English, giving TWO points and referring to the text.');
+      expect(practice(card)).toContain('Give one supported point');
+      expect(fullCredit(card)).toHaveLength(examples);
       expect(card.rubric.answerGuide!.at(-1)).toBe('Award 2 marks if answer is partially correct.');
       expect(card.schemeRegion?.p).toBe(9);
     }
     expect(card2014('ol-reading-a3-q2').totalMarks).toBe(8);
     expect(card2014('ol-reading-a3-q2').rubric.answerGuide!.join(' ')).toContain('indépendante');
     expect(card2014('ol-reading-a3-q2').rubric.answerGuide!.join(' ')).toContain('ambitieuse');
-    expect(card2014('hl-reading-a1-q1-i').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(2);
-    expect(card2014('hl-reading-a1-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(16);
-    expect(card2014('hl-reading-a2-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(11);
-    expect(card2014('ol-reading-a3-q8').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(12);
+    expect(fullCredit(card2014('hl-reading-a1-q1-i'))).toHaveLength(2);
+    expect(fullCredit(card2014('hl-reading-a1-q6'))).toHaveLength(16);
+    expect(fullCredit(card2014('hl-reading-a2-q6'))).toHaveLength(11);
+    expect(fullCredit(card2014('ol-reading-a3-q8'))).toHaveLength(12);
     expect(card2014('hl-reading-a2-q2-i').questionText).toMatch(/^Dans la deuxième section,/);
     expect(card2014('hl-reading-a2-q2-i').questionText).not.toContain('(Section 1)');
     expect(card2014('hl-reading-a2-q5-ii').rubric.criteria[0].permittedMarks).toEqual([0, 5]);
@@ -219,12 +230,13 @@ describe('visually reviewed French reading tasks', () => {
         const card = card2015(`ol-reading-a${rc}-q${group[0]}`);
         expect(card.totalMarks).toBe(8);
         expect(card.rubric.criteria[0].permittedMarks).toEqual([0, 7, 8]);
-        expect(card.rubric.taskRequirements.join(' ')).toContain('7 marks for one correct answer and 1 additional mark');
-        expect(card.rubric.taskRequirements.join(' ')).not.toContain('Each earns at most 4');
+        expect(card.rubric.taskRequirements).toContain(rc === 1 ? 'Two correct answers needed for 8 marks (7+1).' : 'Two correct answers in each section needed for 8 marks (7+1).');
+        expect(practice(card)).toContain('7 marks for one correct answer and 1 additional mark');
+        expect(practice(card)).not.toContain('Each earns at most 4');
         if (group.length > 1) {
           for (const q of group) {
-            expect(card.questionText).toContain(`Question ${q}:`);
-            expect(card.rubric.answerGuide).toContain(`Question ${q}:`);
+            expect(card.questionText).toMatch(new RegExp(`(^|\n)${q}\\. `));
+            expect(card.rubric.answerGuide).not.toContain(`Question ${q}:`);
           }
           expect(tasks.find(task => task.cardId === card.id)?.label).toContain(`Q${group[0]} and Q${group[1]}`);
         }
@@ -232,20 +244,21 @@ describe('visually reviewed French reading tasks', () => {
     }
     for (const id of ['ol-reading-a3-q4', 'ol-reading-a4-q5']) {
       expect(card2015(id).totalMarks).toBe(8);
-      expect(card2015(id).rubric.taskRequirements.join(' ')).toContain('7 marks for one correct answer');
+      expect(card2015(id).rubric.taskRequirements.join(' ')).toContain('Any two of the following for 7+1 marks:');
+      expect(practice(card2015(id))).toContain('7 marks for one correct answer');
     }
     for (const rc of [1, 2]) {
       const card = card2015(`hl-reading-a${rc}-q6`);
-      expect(card.rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(13);
+      expect(fullCredit(card)).toHaveLength(13);
       expect(card.rubric.taskRequirements.join(' ')).toContain('higher mark is to be awarded to each segment');
       expect(card.rubric.criteria[0].permittedMarks).toEqual([0, 2, 4, 6, 8, 10]);
     }
     expect(card2015('hl-reading-a2-q4-i').totalMarks).toBe(10);
-    expect(card2015('hl-reading-a2-q4-i').rubric.taskRequirements.join(' ')).toContain('not an official correction');
+    expect(practice(card2015('hl-reading-a2-q4-i'))).toContain('not an official correction');
     expect(card2015('hl-reading-a2-q2-ii').rubric.criteria[0].permittedMarks).toEqual([0, 5]);
     for (const [rc, count] of [[3, 9], [4, 10]]) {
-      expect(card2015(`ol-reading-a${rc}-q8`).rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(count);
-      expect(card2015(`ol-reading-a${rc}-q8`).rubric.taskRequirements.join(' ')).toContain('scheme says “Accept any one”');
+      expect(fullCredit(card2015(`ol-reading-a${rc}-q8`))).toHaveLength(count);
+      expect(practice(card2015(`ol-reading-a${rc}-q8`))).toContain('scheme says “Accept any one”');
     }
     expect(cards.filter(card => card.year === 2015 && card.questionChoices)).toHaveLength(4);
   });
@@ -264,7 +277,7 @@ describe('visually reviewed French reading tasks', () => {
     expect(card2016('ol-reading-a4-q2').schemeRegion?.p).toBe(8);
     expect(card2016('hl-reading-a1-q2-ii').rubric.criteria[0].permittedMarks).toEqual([0, 5]);
     for (const [id, count] of [['hl-reading-a1-q6', 20], ['hl-reading-a2-q6', 13], ['ol-reading-a3-q8', 9], ['ol-reading-a4-q8', 9]] as const) {
-      expect(card2016(id).rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(count);
+      expect(fullCredit(card2016(id))).toHaveLength(count);
     }
     expect(cards.filter(card => card.year === 2016 && card.questionChoices)).toHaveLength(4);
     for (const card of cards.filter(card => card.year === 2016)) expect(card.questionText).not.toMatch(/_{3,}|[\uF000-\uF8FF]/);
@@ -284,13 +297,14 @@ describe('visually reviewed French reading tasks', () => {
       const card = card2017(id);
       expect(card.questionChoices).toHaveLength(4);
       expect(card.questionChoices![option]).toBe(answer);
-      expect(card.rubric.answerGuide![0]).toBe(`• (${letter}) ${answer} — ${card.totalMarks} marks.`);
+      expect(card.rubric.answerGuide![0]).toMatch(new RegExp(`^(• |- )?\\(${letter}\\)( —)? ${card.totalMarks} [Mm]arks$`));
+      expect(card.rubric.practiceNotes).toContain(`The scheme’s answer (${letter}) is this option on the paper: “${answer}”`);
     }
     for (const id of ['hl-reading-a1-q5-i', 'hl-reading-a2-q5-ii']) {
       expect(card2017(id).rubric.criteria[0].permittedMarks).toEqual([0, 5]);
     }
     for (const [id, count] of [['hl-reading-a1-q6', 14], ['hl-reading-a2-q6', 23], ['ol-reading-a3-q8', 5], ['ol-reading-a4-q8', 7]] as const) {
-      expect(card2017(id).rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(count);
+      expect(fullCredit(card2017(id))).toHaveLength(count);
     }
     const guide = card2017('hl-reading-a2-q6').rubric.answerGuide!;
     for (const heading of ['Other students not interested:', 'Other students interested:', 'Tibor not interested:', 'Tibor interested:']) expect(guide).toContain(heading);
@@ -323,9 +337,9 @@ describe('visually reviewed French reading tasks', () => {
     expect(card2018('hl-reading-a1-q3-ii').rubric.answerGuide!.join(' ')).toContain('Award 5 Marks or 0 Marks');
     expect(card2018('ol-reading-a2-q3').rubric.criteria[0].permittedMarks).toEqual([0, 1, 4, 5, 8]);
     expect(card2018('ol-reading-a2-q6').rubric.criteria[0].permittedMarks).toEqual([0, 2, 3, 4]);
-    expect(card2018('ol-reading-a4-q2').rubric.taskRequirements.join(' ')).toContain('at both 4 and 2 marks');
+    expect(practice(card2018('ol-reading-a4-q2'))).toContain('at both 4 and 2 marks');
     for (const [id, count] of [['hl-reading-a1-q6', 18], ['hl-reading-a2-q6', 19], ['ol-reading-a3-q8', 7], ['ol-reading-a4-q8', 6]] as const) {
-      expect(card2018(id).rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(count);
+      expect(fullCredit(card2018(id))).toHaveLength(count);
     }
     for (const rc of [3, 4]) {
       expect(card2018(`ol-reading-a${rc}-q8`).rubric.answerGuide!.join(' ')).toContain('Penalise incorrect gender');
@@ -337,14 +351,14 @@ describe('visually reviewed French reading tasks', () => {
     const pair = card2019('hl-reading-a2-q3-ii');
     expect(pair.totalMarks).toBe(10);
     expect(pair.questionText).toContain('Donnez deux raisons');
-    expect(pair.rubric.taskRequirements.join(' ')).toContain('heading prints 5 marks');
-    expect(pair.rubric.taskRequirements.join(' ')).toContain('not an official correction');
+    expect(practice(pair)).toContain('heading prints 5 marks');
+    expect(practice(pair)).toContain('not an official correction');
     expect(card2019('hl-reading-a2-q4').totalMarks).toBe(5);
     expect(card2019('hl-reading-a2-q4').rubric.answerGuide).toContain('Correct manipulation required.');
     expect(card2019('hl-reading-a2-q2-ii').rubric.answerGuide!.join(' ')).toContain('full sentence must be given');
     expect(card2019('hl-reading-a2-q5-i').rubric.answerGuide!.join(' ')).toContain('Any extraneous element = 0 Marks');
-    expect(card2019('hl-reading-a1-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(19);
-    expect(card2019('hl-reading-a2-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(30);
+    expect(fullCredit(card2019('hl-reading-a1-q6'))).toHaveLength(19);
+    expect(fullCredit(card2019('hl-reading-a2-q6'))).toHaveLength(30);
     for (const [id, parent] of [['hl-reading-a1-q6', '11'], ['hl-reading-a2-q1-i', '12'], ['hl-reading-a2-q6', '21']]) {
       expect(tasks.find(task => task.cardId === `fr-2019-${id}`)?.parent).toBe(parent);
     }
@@ -358,14 +372,14 @@ describe('visually reviewed French reading tasks', () => {
     for (const id of ['ol-reading-a1-q6', 'ol-reading-a2-q1', 'ol-reading-a2-q6', 'ol-reading-a3-q2', 'ol-reading-a4-q4']) {
       const card = card2019(id);
       expect(card.totalMarks).toBe(8);
-      expect(card.rubric.taskRequirements.join(' ')).toContain('2 distinct points. Each earns at most 4 marks');
+      expect(practice(card)).toContain('2 distinct points. Each earns at most 4 marks');
     }
     expect(card2019('ol-reading-a2-q1').rubric.criteria[0].permittedMarks).toEqual([0, 2, 4, 6, 8]);
     expect(card2019('ol-reading-a2-q3').rubric.criteria[0].permittedMarks).toEqual([0, 1, 4]);
     expect(card2019('ol-reading-a2-q4').rubric.criteria[0].permittedMarks).toEqual([0, 1, 2, 3, 4]);
     expect(card2019('ol-reading-a2-q4').rubric.answerGuide).toHaveLength(7);
-    expect(card2019('ol-reading-a3-q8').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(5);
-    expect(card2019('ol-reading-a4-q8').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(15);
+    expect(fullCredit(card2019('ol-reading-a3-q8'))).toHaveLength(5);
+    expect(fullCredit(card2019('ol-reading-a4-q8'))).toHaveLength(15);
     for (const [letter, answer] of [['a', 'De joie coulent mes larmes'], ['b', 'Adam'], ['c', 'La Maison Abandonnée'], ['d', 'Le Grand Voyage de Figgy']]) {
       const card = card2019(`ol-reading-a1-q1-${letter}`);
       expect(card.totalMarks).toBe(4);
@@ -391,15 +405,15 @@ describe('visually reviewed French reading tasks', () => {
     const twelve = card2020('ol-reading-a2-q8');
     expect(twelve.totalMarks).toBe(12);
     expect(twelve.rubric.criteria[0].permittedMarks).toEqual([0, 3, 6, 9, 12]);
-    expect(twelve.rubric.taskRequirements.join(' ')).toContain('2 distinct points. Each earns at most 6 marks');
+    expect(practice(twelve)).toContain('2 distinct points. Each earns at most 6 marks');
     expect(twelve.rubric.answerGuide!.join(' ')).toContain('clothes — 3 Marks');
     expect(card2020('ol-reading-a1-q2').rubric.criteria[0].permittedMarks).toEqual([0, 1, 2, 3, 4]);
     expect(card2020('ol-reading-a3-q6').totalMarks).toBe(4);
     expect(card2020('ol-reading-a3-q6').rubric.answerGuide!.join(' ')).toContain('ONE theme — 2 Marks');
     expect(card2020('hl-reading-a2-q5-b').rubric.answerGuide).toContain('Direct quotation required.');
     expect(card2020('hl-reading-a1-q5-a').rubric.answerGuide!.join(' ')).toContain('Any extraneous element = 0 Marks');
-    expect(card2020('hl-reading-a1-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(19);
-    expect(card2020('hl-reading-a2-q6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(22);
+    expect(fullCredit(card2020('hl-reading-a1-q6'))).toHaveLength(19);
+    expect(fullCredit(card2020('hl-reading-a2-q6'))).toHaveLength(22);
     expect(cards.filter(card => card.year === 2020 && card.questionChoices)).toHaveLength(4);
     for (const [letter, answer] of [['a', 'Antoine'], ['b', 'Maxime'], ['c', 'Shadi'], ['d', 'Richalda']]) {
       const card = card2020(`ol-reading-a1-q1-${letter}`);
@@ -414,8 +428,8 @@ describe('visually reviewed French reading tasks', () => {
       const card = card2020(id);
       expect(card.totalMarks).toBe(8);
       expect(card.schemeRegion?.p).toBe(page);
-      expect(card.rubric.taskRequirements.join(' ')).toContain('Source discrepancy: the heading prints 4 marks');
-      expect(card.rubric.taskRequirements.join(' ')).toContain('not an official correction');
+      expect(practice(card)).toContain('Source discrepancy: the heading prints 4 marks');
+      expect(practice(card)).toContain('not an official correction');
     }
     for (const card of cards.filter(card => card.year === 2020 && card.level === 'ordinary' && /Section A[12] /.test(card.questionRef))) {
       const task = tasks.find(task => task.cardId === card.id)!;
@@ -440,8 +454,8 @@ describe('visually reviewed French reading tasks', () => {
     expect(card2022('ol-a3-4').totalMarks).toBe(4);
     expect(card2022('ol-a3-4').rubric.answerGuide!.join(' ')).toContain('gratin');
     expect(card2022('hl-a1-5-b').rubric.answerGuide!.join(' ')).toContain('(Whole sentence) = minus 2 Marks');
-    expect(card2022('hl-a1-6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(15);
-    expect(card2022('hl-a2-6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(16);
+    expect(fullCredit(card2022('hl-a1-6'))).toHaveLength(15);
+    expect(fullCredit(card2022('hl-a2-6'))).toHaveLength(16);
     for (const [id, answer] of [
       ['ol-a1-1-a', 'Benazir'], ['ol-reading-a1-q1-b', 'Samia'],
       ['ol-reading-a1-q1-c', 'Adil'], ['ol-reading-a1-q1-d', 'Joana'],
@@ -458,14 +472,14 @@ describe('visually reviewed French reading tasks', () => {
     expect(old).toHaveLength(50);
     for (const card of old) expect(cards.some(current => current.id === card.id)).toBe(true);
     expect(card2021('hl-a1-1-a').rubric.answerGuide!.join(' ')).toContain('la fermeture des écoles');
-    expect(card2021('hl-a1-1-a').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(1);
+    expect(fullCredit(card2021('hl-a1-1-a'))).toHaveLength(1);
     expect(card2021('hl-a1-2-a').rubric.answerGuide!.join(' ')).toContain('Full sentence is acceptable');
     expect(card2021('hl-a1-2-b').rubric.answerGuide!.join(' ')).toContain('Accept Present Tense');
     expect(card2021('hl-a2-2-a').rubric.answerGuide!.join(' ')).toContain('If on peut omitted, Minus 2 Marks');
     expect(card2021('hl-a2-4-a').rubric.answerGuide!.join(' ')).toContain('Any extraneous element = 0 Marks');
     expect(card2021('hl-a2-6').questionText).toMatch(/^The portrayal of two people/);
-    expect(card2021('hl-a1-6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(18);
-    expect(card2021('hl-a2-6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(27);
+    expect(fullCredit(card2021('hl-a1-6'))).toHaveLength(18);
+    expect(fullCredit(card2021('hl-a2-6'))).toHaveLength(27);
     expect(card2021('ol-a4-5').rubric.answerGuide!.join(' ')).toContain('Full sentence 2 Marks');
     for (const [id, answer] of [
       ['ol-a2-1-a', 'Djamila'], ['ol-reading-a2-q1-b', 'Loïc'],
@@ -484,11 +498,11 @@ describe('visually reviewed French reading tasks', () => {
       const card = card2021(id);
       expect(card.totalMarks).toBe(8);
       expect(card.schemeRegion?.p).toBe(page);
-      expect(card.rubric.taskRequirements.join(' ')).toContain('Source discrepancy: the heading prints 4 marks');
-      expect(card.rubric.taskRequirements.join(' ')).toContain('not an official correction');
-      expect(card.rubric.taskRequirements.join(' ')).toContain('2 distinct points. Each earns at most 4 marks');
+      expect(practice(card)).toContain('Source discrepancy: the heading prints 4 marks');
+      expect(practice(card)).toContain('not an official correction');
+      expect(practice(card)).toContain('2 distinct points. Each earns at most 4 marks');
       expect(card.rubric.criteria[0].permittedMarks).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8]);
-      expect(card.rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(examples);
+      expect(fullCredit(card)).toHaveLength(examples);
     }
     expect(JSON.parse(fs.readFileSync('scripts/markbank/authoring/exclusions/french.json', 'utf8'))).toEqual([]);
   });
@@ -505,8 +519,8 @@ describe('visually reviewed French reading tasks', () => {
     expect(old).toHaveLength(52);
     for (const card of old) expect(cards.some(current => current.id === card.id)).toBe(true);
     expect(card2023('hl-a1-6').questionText).toMatch(/^In the text, a strong case/);
-    expect(card2023('hl-a1-6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(18);
-    expect(card2023('hl-a2-6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(12);
+    expect(fullCredit(card2023('hl-a1-6'))).toHaveLength(18);
+    expect(fullCredit(card2023('hl-a2-6'))).toHaveLength(12);
     expect(card2023('hl-a1-4-a').totalMarks).toBe(5);
     expect(card2023('hl-a1-4-a').rubric.answerGuide!.join(' ')).toContain('One correct point = 4 Marks');
     expect(card2023('hl-a2-3-a').rubric.answerGuide!.join(' ')).toContain('Omission of ordinaires = minus 1 Mark');
@@ -567,14 +581,14 @@ describe('visually reviewed French reading tasks', () => {
       const card = card2024(id);
       expect(card.totalMarks).toBe(8);
       expect(card.schemeRegion?.p).toBe(page);
-      expect(card.rubric.taskRequirements.join(' ')).toContain('Source discrepancy: the heading prints 4 marks');
-      expect(card.rubric.taskRequirements.join(' ')).toContain('not an official correction');
-      expect(card.rubric.taskRequirements.join(' ')).toContain('2 distinct points. Each earns at most 4 marks');
+      expect(practice(card)).toContain('Source discrepancy: the heading prints 4 marks');
+      expect(practice(card)).toContain('not an official correction');
+      expect(practice(card)).toContain('2 distinct points. Each earns at most 4 marks');
       expect(card.rubric.answerGuide!.join(' ')).toContain(answer);
     }
     expect(card2024('ol-reading-a2-q2').rubric.criteria[0].permittedMarks).toEqual([0, 2, 4, 6, 8]);
     expect(card2024('ol-a1-7').totalMarks).toBe(4);
-    expect(card2024('ol-a1-7').rubric.taskRequirements.join(' ')).toContain('2 distinct points. Each earns at most 2 marks');
+    expect(practice(card2024('ol-a1-7'))).toContain('2 distinct points. Each earns at most 2 marks');
     expect(card2024('ol-a1-7').rubric.criteria[0].permittedMarks).toEqual([0, 1, 2, 3, 4]);
     const excluded = JSON.parse(fs.readFileSync('scripts/markbank/authoring/exclusions/french.json', 'utf8'));
     expect(excluded.some((entry: { ref: string }) => entry.ref.startsWith('2024 '))).toBe(false);
@@ -596,8 +610,8 @@ describe('visually reviewed French reading tasks', () => {
     }
     expect(tasks.find(task => task.cardId === 'fr-2024-ol-reading-a2-q2')?.parent).toBe('10');
     expect(card2024('ol-a3-1').topicId).toBe('french-5-3');
-    expect(card2024('hl-a1-6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(19);
-    expect(card2024('hl-a2-6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(18);
+    expect(fullCredit(card2024('hl-a1-6'))).toHaveLength(19);
+    expect(fullCredit(card2024('hl-a2-6'))).toHaveLength(18);
     expect(card2024('hl-a2-1-b').rubric.answerGuide!.join(' ')).toContain('Inclusion of Alors = minus 1 Mark');
     expect(cards.filter(card => card.year === 2024 && card.questionChoices)).toHaveLength(4);
   });
@@ -620,9 +634,9 @@ describe('visually reviewed French reading tasks', () => {
       ['ol-reading-a1-q1-d', 'thinks we should buy fewer clothes', 'Julien'],
     ]) {
       const card = legacy(id);
-      expect(card.questionText).toBe(`Write the name of the person who:\n\n${prompt}`);
+      expect(card.questionText).toBe(`Write the name of the person who\n\n${prompt}`);
       expect(card.totalMarks).toBe(4);
-      expect(card.rubric.answerGuide).toEqual([`${prompt} – ${answer} — 4 marks.`]);
+      expect(card.rubric.answerGuide).toEqual([`• ${prompt} – ${answer} — 4 Marks`]);
       expect(card.rubric.criteria[0].permittedMarks).toEqual([0, 4]);
     }
   });
@@ -630,8 +644,8 @@ describe('visually reviewed French reading tasks', () => {
   it('restores the full 2025 ladders, opinion evidence and unbulleted answer list', () => {
     const scout = legacy('hl-a1-6');
     expect(scout.questionText).toMatch(/^Scouting has become attractive/);
-    expect(scout.rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(22);
-    expect(legacy('hl-a2-6').rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(16);
+    expect(fullCredit(scout)).toHaveLength(22);
+    expect(fullCredit(legacy('hl-a2-6'))).toHaveLength(16);
     expect(legacy('hl-a1-5-b').rubric.answerGuide!.filter(line => line.startsWith('-'))).toHaveLength(10);
     expect(legacy('ol-a4-5').rubric.answerGuide).toEqual([
       'Voir / (S’)amuser / Descendre / (Se) laisser / Porter / Ramer/ Être',
@@ -661,7 +675,7 @@ describe('visually reviewed French reading tasks', () => {
 
   it('allows published excess-material deductions on Ordinary opinion responses', () => {
     for (const card of [legacy('ol-a3-8'), legacy('ol-a4-8'), byId('ol-reading-a3-q8'), byId('ol-reading-a4-q8')]) {
-      expect(card.rubric.taskRequirements.join(' ')).toContain('extraneous material by at most 2 marks');
+      expect(card.rubric.taskRequirements).toContain('Penalise extraneous material to a maximum of 2 marks.');
       expect(card.rubric.answerGuide![0]).toMatch(/Award 2 marks if answer is partially correct/i);
       expect(card.rubric.criteria[0].permittedMarks).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8]);
       expect(frenchMarks(card, { 'french:response': 7 })).toBe(7);
@@ -687,9 +701,9 @@ describe('visually reviewed French reading tasks', () => {
       ['c', 'doing an apprenticeship', 'Fatima'], ['d', 'buying a car', 'Yoann'],
     ]) {
       const card = byId(`ol-reading-a1-q1-${letter}`);
-      expect(card.questionText).toBe(`Write the name of the person who talks about:\n\n${prompt}`);
+      expect(card.questionText).toBe(`Write the name of the person who talks about\n\n${prompt}`);
       expect(card.totalMarks).toBe(4);
-      expect(card.rubric.answerGuide).toEqual([`${prompt} – ${answer} — 4 marks.`]);
+      expect(card.rubric.answerGuide).toEqual([`• ${prompt} – ${answer} — 4 Marks`]);
       expect(card.rubric.criteria[0].permittedMarks).toEqual([0, 4]);
     }
   });
@@ -717,10 +731,10 @@ describe('visually reviewed French reading tasks', () => {
     expect(ladder.filter(line => line.startsWith('-'))).toHaveLength(16);
     expect(ladder.at(-1)).toContain('elle y est souvent allée en vacances');
     const opinion = byId('hl-reading-a1-q6');
-    expect(opinion.rubric.answerGuide!.filter(line => line.startsWith('•'))).toHaveLength(20);
+    expect(fullCredit(opinion)).toHaveLength(20);
     expect(opinion.rubric.answerGuide).toContain('Agree:');
     expect(opinion.rubric.answerGuide).toContain('Disagree:');
-    expect(opinion.rubric.taskRequirements.join(' ')).toContain('2 distinct points');
+    expect(practice(opinion)).toContain('2 distinct points');
     expect(byId('hl-reading-a2-q3-a').totalMarks).toBe(5);
     expect(byId('hl-reading-a2-q3-a').rubric.answerGuide).toContain('Correct manipulation required.');
     expect(byId('ol-reading-a1-q5').totalMarks).toBe(4);

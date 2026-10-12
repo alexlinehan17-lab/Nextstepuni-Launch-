@@ -22,7 +22,7 @@
 .mb-french-score select:focus-visible, .mb-french-attempt:focus-visible { outline: 3px solid #f26b1f; outline-offset: 3px; }
 .mb-french-total { border-top: 2px solid var(--mb-ink); padding-top: 15px; }
 .mb-french-total strong { font-size: 19px; font-variant-numeric: tabular-nums; }
-.mb-french-note { color: var(--mb-muted); margin: 16px 0 0; font-size: 12px; }
+.mb-french-note { color: var(--mb-muted); margin: 16px 0 0; font-size: 12px; white-space: pre-line; }
 .mb-french-practice { border-top: 1px solid var(--mb-border); margin-top: 18px; padding-top: 14px; }
 .mb-french-practice-source { color: var(--mb-muted); font-size: 12px; margin: 4px 0 8px; }
 .mb-french-practice ul { margin: 0; padding-left: 19px; }

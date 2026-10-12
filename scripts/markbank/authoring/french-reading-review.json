@@ -2972,40 +2972,52 @@
       },
       "sevenPlusOne": {
         "A1-Q1": {
-          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs."
+          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs.",
+          "printedRule": "Two correct answers needed for 8 marks (7+1)."
         },
         "A1-Q2": {
-          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs."
+          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs.",
+          "printedRule": "Two correct answers needed for 8 marks (7+1)."
         },
         "A1-Q4": {
-          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs."
+          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs.",
+          "printedRule": "Two correct answers needed for 8 marks (7+1)."
         },
         "A1-Q5": {
-          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs."
+          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs.",
+          "printedRule": "Two correct answers needed for 8 marks (7+1)."
         },
         "A1-Q7": {
-          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs."
+          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs.",
+          "printedRule": "Two correct answers needed for 8 marks (7+1)."
         },
         "A2-Q1": {
-          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs."
+          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs.",
+          "printedRule": "Two correct answers in each section needed for 8 marks (7+1)."
         },
         "A2-Q2": {
-          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs."
+          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs.",
+          "printedRule": "Two correct answers in each section needed for 8 marks (7+1)."
         },
         "A2-Q4": {
-          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs."
+          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs.",
+          "printedRule": "Two correct answers in each section needed for 8 marks (7+1)."
         },
         "A2-Q6": {
-          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs."
+          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs.",
+          "printedRule": "Two correct answers in each section needed for 8 marks (7+1)."
         },
         "A2-Q8": {
-          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs."
+          "reason": "The visually reviewed scheme gives this whole printed section8 marks as7+1; both answers share one boundary and cannot be assigned equal independent tariffs.",
+          "printedRule": "Two correct answers in each section needed for 8 marks (7+1)."
         },
         "A3-Q4": {
-          "reason": "Scheme explicitly says7+1 marks for two distinct details; do not turn it into4+4."
+          "reason": "Scheme explicitly says7+1 marks for two distinct details; do not turn it into4+4.",
+          "printedRule": "4. (i) & (ii) Any two of the following for 7+1 marks:"
         },
         "A4-Q5": {
-          "reason": "Scheme explicitly says7+1 marks for two distinct details; do not turn it into4+4."
+          "reason": "Scheme explicitly says7+1 marks for two distinct details; do not turn it into4+4.",
+          "printedRule": "5. (i) & (ii) Any two of the following for 7+1 marks:"
         }
       },
       "paperQuestionGroups": {
@@ -3722,7 +3734,11 @@
           "stemPrefix": "What information do we learn from this text about",
           "taskInstruction": "Answer only the named part. Give one supported point about the parents or the sisters, as asked; this part is worth 4 marks.",
           "reason": "The paper explicitly assigns part(i) to His parents and part(ii) to His sisters; the scheme prices the response4+4 with distinct evidence sets and2-mark partial credit. These are separately practicable named categories.",
-          "subjectName": "Laurent"
+          "printedQuestion": "What information do we learn from this text about (i) Laurent’s parents, and (ii) his sisters, Céline and Marie? Answer in English, giving TWO points and referring to the text.",
+          "printedLabels": {
+            "i": "His parents:",
+            "ii": "His sisters:"
+          }
         }
       },
       "guideHeadings": [
@@ -4116,7 +4132,12 @@
           ],
           "stemPrefix": "“Both Diane and her mother are behaving unreasonably.” Do you agree?",
           "taskInstruction": "Answer only the named part. Give one supported point about Diane or her mother, as asked; this part is worth 4 marks.",
-          "reason": "The paper explicitly assigns(i)to Diane and(ii)to Mother. The scheme gives4+4 with five examples per person and a shared2-mark partial rule; retain each named category separately."
+          "reason": "The paper explicitly assigns(i)to Diane and(ii)to Mother. The scheme gives4+4 with five examples per person and a shared2-mark partial rule; retain each named category separately.",
+          "printedQuestion": "“Both Diane and her mother are behaving unreasonably.” Do you agree? Answer in English, giving TWO points and referring to the text.",
+          "printedLabels": {
+            "i": "(i) Diane:",
+            "ii": "(ii) Máthair / Mother:"
+          }
         }
       },
       "guideHeadings": [
@@ -4501,8 +4522,11 @@
           "stemPrefix": "Give one piece of advice offered to",
           "taskInstruction": "Answer only the named part; this part is worth 4 marks.",
           "reason": "The paper assigns separate Male and Female answer categories with4+4marks and separately grouped answers.",
-          "paperContextCue": "male and (ii) female candidates. (Section 1)",
-          "labelSuffix": " candidates. (Section 1)"
+          "printedQuestion": "Give one piece of advice offered to (i) male and (ii) female candidates. (Section 1)",
+          "printedLabels": {
+            "i": "(i) Fireann/Male",
+            "ii": "(ii) Baineann/Female"
+          }
         },
         "A3-Q1": {
           "sourceLines": [
@@ -4536,7 +4560,12 @@
           "contextLines": [],
           "stemPrefix": "Que font les parents de Clémence dans la vie ? (Section 1)",
           "taskInstruction": "Answer only the named part; this part is worth 4 marks.",
-          "reason": "The paper assigns separate Mother and Father occupations, each explicitly priced4marks with its own2-mark partial."
+          "reason": "The paper assigns separate Mother and Father occupations, each explicitly priced4marks with its own2-mark partial.",
+          "printedQuestion": "Que font les parents de Clémence dans la vie ? (Section 1)",
+          "printedLabels": {
+            "i": "(i) Mère :",
+            "ii": "(ii) Père :"
+          }
         }
       },
       "schemeCombinedParts": {
@@ -4837,9 +4866,11 @@
           "reason": "Separate named positive/negative categories, each5marks.",
           "taskInstruction": "Answer only the named positive or negative part. Give one example from the passage. An answer in the wrong category, or a positive and a negative example together on the same line, earns 0 for that part.",
           "stemPrefix": "Pour Christine, son hébergement chez Gabrielle a des aspects à la fois positifs et négatifs. Donnez-en un exemple",
-          "paperContextCue": "Pour Christine, son hébergement chez Gabrielle a des aspects à la fois positifs et négatifs. Donnez-en un exemple, dans chaque cas. (Section 3)",
-          "paperContextPart": null,
-          "labelSuffix": " (Section 3)"
+          "printedQuestion": "Pour Christine, son hébergement chez Gabrielle a des aspects à la fois positifs et négatifs. Donnez-en un exemple, dans chaque cas. (Section 3)",
+          "printedLabels": {
+            "a": "(a) Positif :",
+            "b": "(b) Négatif :"
+          }
         }
       },
       "guideHeadings": [
@@ -5284,14 +5315,6 @@
           "reason": "The paper has two unnamed answer slots and the scheme gives each required point4marks. Keep one8-mark response with both answers and all partials; Roman/alphabetic answer slots are not separately named categories."
         }
       ],
-      "ordinaryFrenchRules": {
-        "4": {
-          "reason": "The general Q4 instruction on scheme PDF page7 does not include the generic quotation deduction. Q1 andQ7 instead explicitly penalise attempted manipulation; their complete notes remain in their guides.",
-          "rules": [
-            "Penalise extraneous material by at most 2 marks. In questions 1–7, answers in English or Irish earn half marks only. Where manipulation is required and attempted, do not penalise grammar mistakes. Apply the question-specific rules in the marking guide."
-          ]
-        }
-      },
       "topicCorrections": {
         "1": {
           "topicId": "french-5-3",
@@ -5584,43 +5607,56 @@
       },
       "sevenPlusOne": {
         "A1-Q1": {
-          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff."
+          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff.",
+          "printedRule": "Two correct answers required for 8 marks (7 + 1)."
         },
         "A1-Q3": {
-          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff."
+          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff.",
+          "printedRule": "Two correct answers required for 8 marks (7 + 1)."
         },
         "A1-Q4": {
-          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff."
+          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff.",
+          "printedRule": "Two correct answers required for 8 marks (7 + 1)."
         },
         "A1-Q6": {
-          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff."
+          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff.",
+          "printedRule": "Two correct answers required for 8 marks (7 + 1)."
         },
         "A1-Q8": {
-          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff."
+          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff.",
+          "printedRule": "Two correct answers required for 8 marks (7 + 1)."
         },
         "A2-Q1": {
-          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff."
+          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff.",
+          "printedRule": "Two correct answers required for 8 marks (7 + 1)."
         },
         "A2-Q3": {
-          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff."
+          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff.",
+          "printedRule": "Two correct answers required for 8 marks (7 + 1)."
         },
         "A2-Q5": {
-          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff."
+          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff.",
+          "printedRule": "Two correct answers required for 8 marks (7 + 1)."
         },
         "A2-Q7": {
-          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff."
+          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff.",
+          "printedRule": "Two correct answers required for 8 marks (7 + 1)."
         },
         "A2-Q8": {
-          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff."
+          "reason": "Scheme explicitly prices both required answers together8marks,7for one correct and1for the other. No independently fixed category tariff.",
+          "printedRule": "Two correct answers required for 8 marks (7 + 1)."
         },
         "A3-Q2": {
-          "reason": "Printed7+1 award shared by the two required answers, not4+4."
+          "reason": "Printed7+1 award shared by the two required answers, not4+4.",
+          "printedRule": "2.(i) & (ii) 7 + 1 marks"
         },
         "A3-Q3": {
-          "reason": "Printed7+1 award shared by the two required answers, not4+4."
+          "reason": "Printed7+1 award shared by the two required answers, not4+4.",
+          "printedRule": "3.(a) & (b) 7 + 1 marks"
         },
         "A4-Q3": {
-          "reason": "Printed7+1 award shared by the two required answers, not4+4."
+          "reason": "Printed7+1 award shared by the two required answers, not4+4.",
+          "printedRule": "3.(i) & (ii) Any two of the following: 7 + 1 marks"
         }
       },
       "paperQuestionGroups": {
@@ -5914,26 +5950,6 @@
           "correctOption": 2,
           "schemePage": 8,
           "letteredOptions": true
-        }
-      },
-      "ordinaryRules": {
-        "reason": "Scheme p.3 explicitly namesQ3(7) andQ4(8), notQ8in both passages.",
-        "rules": [
-          "Equivalent meaning earns full marks in Comprehensions 1 and 2, Q7 of Comprehension 3 and Q8 of Comprehension 4; exact scheme wording is not required."
-        ]
-      },
-      "ordinaryFrenchRules": {
-        "3": {
-          "reason": "Scheme p.6 gives these general rules, with no generic extraneous-material penalty or quotation deduction.",
-          "rules": [
-            "In questions 1–5, answers in English or Irish earn half marks only. Where manipulation is required, do not penalise grammar mistakes. In Q7, if no attempt is made to answer in English or Irish, a correct quotation in French earns half marks. Apply the question-specific rules in the guide."
-          ]
-        },
-        "4": {
-          "reason": "Scheme p.7 specifies a maximum1-mark excess penalty and half marks for French quotations inQ8.",
-          "rules": [
-            "Penalise extraneous material by at most 1 mark. In questions 1–6, answers in English or Irish earn half marks only. Where manipulation is required, do not penalise grammar mistakes. In Q8, if no attempt is made to answer in English or Irish, a correct quotation in French earns half marks."
-          ]
         }
       },
       "topicCorrections": {
