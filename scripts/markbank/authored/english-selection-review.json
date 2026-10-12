@@ -1640,27 +1640,27 @@
     "english-2022-ol-p1-t1-a-ii": {
       "questionSha256": "26fc8a260467947e19e1c52d347415717aa6d7d0d97001f3934e114891ed538a",
       "kind": "flexible",
-      "reason": "The paper explicitly permits a flexible mixture or number of aspects. These are not mutually exclusive fixed-size answer routes."
+      "reason": "Paper PDF3 and scheme PDF5: why the possibility of friendship with AI robots is “exciting or frightening or both” — one explained view, combination allowed. One 10-mark response."
     },
     "english-2022-ol-p1-t1-a-iii-b": {
       "questionSha256": "71f7b47293d0ccfd1aac7618e8aadbc0492bfef0c130a15394895976b929c21e",
-      "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "kind": "flexible",
+      "reason": "Scheme PDF6: “at least one way” the day could be celebrated in the candidate’s school or workplace — a flexible minimum. One 10-mark response."
     },
     "english-2022-ol-p1-t2-a-ii": {
       "questionSha256": "a430f7c3a2b8f89bdf9b318251128b3bba2d82114a4124fd9d9a8da9d1f03871",
       "kind": "flexible",
-      "reason": "The paper explicitly permits a flexible mixture or number of aspects. These are not mutually exclusive fixed-size answer routes."
+      "reason": "Paper PDF5 and scheme PDF7: why the possibility of friendship with extra-terrestrials is “exciting or frightening or both” — one explained view. One 10-mark response."
     },
     "english-2022-ol-p1-t2-a-iii-b": {
       "questionSha256": "71f7b47293d0ccfd1aac7618e8aadbc0492bfef0c130a15394895976b929c21e",
-      "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "kind": "flexible",
+      "reason": "Scheme PDF8: “at least one way” the day could be celebrated in the candidate’s school or workplace — a flexible minimum. One 10-mark response."
     },
     "english-2022-ol-p1-t3-a-iii-b": {
       "questionSha256": "71f7b47293d0ccfd1aac7618e8aadbc0492bfef0c130a15394895976b929c21e",
-      "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "kind": "flexible",
+      "reason": "Scheme PDF10: “at least one way” the day could be celebrated in the candidate’s school or workplace — a flexible minimum. One 10-mark response."
     },
     "english-2023-hl-p1-t1-a-iii": {
       "questionSha256": "eb7e0997264e82c0c9fff0a4f92c9b2676bc4560e03aedaf199e109585897710",
@@ -2363,17 +2363,17 @@
     "english-2022-ol-p1-t1-b": {
       "questionSha256": "829ae410cf493fcbbe7112d52f7ba5308ca6de4135f6e5950bdaa553afc46941",
       "kind": "required",
-      "reason": "All printed report headings/interview questions are required within a single holistic writing task; they are not a choose-n pool."
+      "reason": "Scheme PDF6: a report on Compu-Cat under the three printed headings; “Candidates should deal with all aspects of the task, although not necessarily equally.” One 40-mark response."
     },
     "english-2022-ol-p1-t2-b": {
       "questionSha256": "855974eb4c33a8ee37aac33e3bbef4c14afbfbac74a458bad19b516c37ca665e",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF8: a radio advertisement for holidays on Earth — attractions, holiday options, special offers; all aspects, not necessarily equally. One 40-mark response."
     },
     "english-2022-ol-p1-t3-b": {
       "questionSha256": "6ef11c27562f16d6ccbb13fcb6fd01b788c934db2412e8b86938471788f27531",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF10: a letter inviting Greta Thunberg to receive an award — background on the group, the reasons, and details of the event. One 40-mark response."
     },
     "english-2023-hl-p1-t1-b": {
       "questionSha256": "6f341b922bbd820ef499c843b5eeb397bf43e49dd00ab82505d644140755a5f0",
@@ -2929,7 +2929,7 @@
     "english-2022-ol-p1-composing-6": {
       "questionSha256": "a1c7d5e38f3529f6d5629167a3e575643bc4a9f5dd98f4aff9a4c8716071e19f",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF17 — a speech arguing “for or against the participation” of the school in the next global school strike; both sides are marked on one grid. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -2952,7 +2952,7 @@
     "english-2022-ol-p1-composing-7": {
       "questionSha256": "b8e1b6099a77f5fd6a7d26c19198c566c45d9f10992033197ec5ea91e26324b3",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF18 — a front-page article for a national newspaper “(either broadsheet or tabloid)”, the register suited to either; both are marked on one grid. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -3964,27 +3964,27 @@
     "english-2022-ol-p1-composing-1": {
       "questionSha256": "fd3a59c0c28dbebb4c5815629d3bcaa5e28924e52c6328912b0965d24113fd01",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF12: a personal essay on the friend the candidate would like to be, supporting friends, and the benefits of being a good friend. One 100-mark composition."
     },
     "english-2022-ol-p1-composing-2": {
       "questionSha256": "536b22654697bf33f70dbe3c5d941d8d0db08f94367e9b5cf8912b9876470b31",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF13: a short story set in an imaginary country where teenagers make all the laws; “serious or humorous or both” is a free register. One 100-mark composition."
     },
     "english-2022-ol-p1-composing-3": {
       "questionSha256": "07605a45b8a34d50e603f5875028bbdf369a2cfac407abf86bdf7520c22f6d21",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF14: a talk to friendly extra-terrestrials on some positive and negative aspects of being human. One 100-mark composition."
     },
     "english-2022-ol-p1-composing-4": {
       "questionSha256": "b25570781e6ca587ea4af4cbffbb1e169ee600232f05113c4e022d258ccfbdd1",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a short story in which a human teams up with an AI robot to solve a mystery. One 100-mark composition."
     },
     "english-2022-ol-p1-composing-5": {
       "questionSha256": "1db74695cc43dfdfb02cea6ee8d7203f3af02924f0ab4ec2e395f5c01708fec5",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF16: a personal essay on major issues and minor irritations that make the candidate furious. One 100-mark composition."
     },
     "english-2023-hl-p1-composing-1": {
       "questionSha256": "661545e23fcc7665732b8e012400beebf03d35d0a4049b72638fdf2ddf9a6c57",
@@ -17023,6 +17023,41 @@
       "questionSha256": "c2d5edb9e47afef059b19d6d5334c0dcf23acb4af47bdeae29d8b7bf38e73939",
       "kind": "open",
       "reason": "Scheme PDF42: whether, in the candidate’s opinion, the poet makes effective use of the word ‘barn’ — one judgement. One 10-mark response."
+    },
+    "english-2022-ol-p1-t1-a-i": {
+      "questionSha256": "b043e841df3d6dcfc247138bde712ed57ede719a73bf4939ed41dcc9eaab7962",
+      "kind": "open",
+      "reason": "Scheme PDF5: three points of the candidate’s own about the changing relationship between humans and AI robots, supported from the text; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2022-ol-p1-t1-a-iii-a": {
+      "questionSha256": "81b5b0772d71eb3b5d9f6fb07e3b86385ea2945ee58e141344954bb260fa374b",
+      "kind": "open",
+      "reason": "Scheme PDF6: the most important quality the candidate looks for in a friend, and why. One 10-mark response."
+    },
+    "english-2022-ol-p1-t2-a-iii-a": {
+      "questionSha256": "81b5b0772d71eb3b5d9f6fb07e3b86385ea2945ee58e141344954bb260fa374b",
+      "kind": "open",
+      "reason": "Scheme PDF7: the most important quality the candidate looks for in a friend, and why. One 10-mark response."
+    },
+    "english-2022-ol-p1-t3-a-iii-a": {
+      "questionSha256": "81b5b0772d71eb3b5d9f6fb07e3b86385ea2945ee58e141344954bb260fa374b",
+      "kind": "open",
+      "reason": "Scheme PDF10: the most important quality the candidate looks for in a friend, and why. One 10-mark response."
+    },
+    "english-2022-ol-p1-t2-a-i": {
+      "questionSha256": "06e6b6f3d6f06912b325e11e7c3895d9083014044cafad3f75d7ae6159188b0d",
+      "kind": "open",
+      "reason": "Scheme PDF7: three points of the candidate’s own about the possible consequences of contact between humans and aliens, supported from the text; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2022-ol-p1-t3-a-i": {
+      "questionSha256": "87f7d8ce7e7bdad5b3df8a3e34fa5b8922313e6368f0001892abc2b916c86dc6",
+      "kind": "open",
+      "reason": "Scheme PDF9: three points of the candidate’s own about how Greta Thunberg has benefitted from her work as a climate activist, supported from the text; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2022-ol-p1-t3-a-ii": {
+      "questionSha256": "5965aaeeb7f9f33f8fa01b34a5c06c6237d50191e6227cb7503481fc0d3a461e",
+      "kind": "open",
+      "reason": "Scheme PDF9: the personal qualities shown by Greta Thunberg in the text and images that would make her a good friend. One 10-mark response."
     }
   }
 }

@@ -92,6 +92,17 @@
    "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf"
   },
   {
+   "paperId": "english-2022-ol-p1",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "tasks": 22,
+   "cards": 18,
+   "printedDuplicates": 4,
+   "paperSha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
+   "schemeSha256": "d3eb474c27b644da5779765503e9634eff5d9ac414e56199e6a00c76073bbd85"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -806,6 +817,290 @@
     },
     "note": "Grade labels print as O1-O8 (some cells print the digit 0 for the letter O). The combined total row is the selectable global mark; the P&C and L&M rows are recorded as printed."
    },
+   "ol-o1-o8-2022": {
+    "level": "ordinary",
+    "labels": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7",
+     "O8"
+    ],
+    "discrete": {
+     "100": {
+      "total": [
+       "100-90",
+       "89-80",
+       "79-70",
+       "69-60",
+       "59-50",
+       "49-40",
+       "39-30",
+       "29-0"
+      ],
+      "thirty": [
+       "30-27",
+       "24",
+       "21",
+       "18",
+       "15",
+       "12",
+       "9",
+       "8-0"
+      ],
+      "ten": [
+       "10-9",
+       "8",
+       "7",
+       "6",
+       "5",
+       "4",
+       "3",
+       "2-0"
+      ]
+     },
+     "50": {
+      "total": [
+       "50-45",
+       "44-40",
+       "39-35",
+       "34-30",
+       "29-25",
+       "24-20",
+       "19-15",
+       "14-0"
+      ],
+      "thirty": [
+       "15-14",
+       "12",
+       "11",
+       "9",
+       "8",
+       "6",
+       "5",
+       "4-0"
+      ],
+      "ten": [
+       "5",
+       "4",
+       "3",
+       "3",
+       "2",
+       "2",
+       "1",
+       "1-0"
+      ]
+     },
+     "40": {
+      "total": [
+       "40-36",
+       "35-32",
+       "31-28",
+       "27-24",
+       "23-20",
+       "19-16",
+       "15-12",
+       "11-0"
+      ],
+      "thirty": [
+       "12-11",
+       "10",
+       "9",
+       "8",
+       "6",
+       "5",
+       "4",
+       "3-0"
+      ],
+      "ten": [
+       "4",
+       "3",
+       "3",
+       "2",
+       "2",
+       "1",
+       "1",
+       "1-0"
+      ]
+     },
+     "30": {
+      "total": [
+       "30-27",
+       "26-24",
+       "23-21",
+       "20-18",
+       "17-15",
+       "14-12",
+       "11-9",
+       "8-0"
+      ],
+      "thirty": [
+       "9",
+       "8",
+       "7",
+       "6",
+       "5",
+       "4",
+       "3",
+       "2-0"
+      ],
+      "ten": [
+       "3",
+       "2",
+       "2",
+       "2",
+       "1",
+       "1",
+       "1",
+       "0"
+      ]
+     },
+     "35": {
+      "total": [
+       "35-32",
+       "32-28",
+       "27-25",
+       "24-21",
+       "20-18",
+       "17-14",
+       "13-11",
+       "10-0"
+      ],
+      "thirty": [
+       "11-10",
+       "9-9",
+       "8-8",
+       "7-7",
+       "6-6",
+       "5-5",
+       "4-4",
+       "3-0"
+      ],
+      "ten": [
+       "2-2",
+       "2-1",
+       "2-1",
+       "2-1",
+       "1-1",
+       "1-0",
+       "1-0",
+       "1-0"
+      ]
+     }
+    },
+    "combinedLabels": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7",
+     "O8"
+    ],
+    "combined": {
+     "20": {
+      "total": [
+       "20-18",
+       "16",
+       "14",
+       "12",
+       "10",
+       "8",
+       "6",
+       "5-0"
+      ],
+      "pc": [
+       "12-11",
+       "10",
+       "9",
+       "8",
+       "6",
+       "5",
+       "4",
+       "3-0"
+      ],
+      "lm": [
+       "8",
+       "7",
+       "6",
+       "5",
+       "4",
+       "3",
+       "3",
+       "2-0"
+      ]
+     },
+     "15": {
+      "total": [
+       "15-14",
+       "12",
+       "11",
+       "9",
+       "8",
+       "6",
+       "5",
+       "4-0"
+      ],
+      "pc": [
+       "9",
+       "8",
+       "7",
+       "6",
+       "5",
+       "4",
+       "3",
+       "2-0"
+      ],
+      "lm": [
+       "6",
+       "5",
+       "4",
+       "4",
+       "3",
+       "2",
+       "2",
+       "1-0"
+      ]
+     },
+     "10": {
+      "total": [
+       "10-9",
+       "8",
+       "7",
+       "6",
+       "5",
+       "4",
+       "3",
+       "2-0"
+      ],
+      "pc": [
+       "6",
+       "5",
+       "4",
+       "4",
+       "3",
+       "2",
+       "2",
+       "1-0"
+      ],
+      "lm": [
+       "4",
+       "3",
+       "3",
+       "2",
+       "2",
+       "1",
+       "1",
+       "1-0"
+      ]
+     }
+    },
+    "note": "Grade labels print as O1-O8 (some cells print the digit 0 for the letter O). The combined total row is the selectable global mark; the P&C and L&M rows are recorded as printed. 2022 adds the 35-mark discrete grid (modified weightings P/C/L 11, M 2); its total row prints the overlapping cells 35-32 / 32-28 as printed."
+   },
    "ol-o1-o8-2026": {
     "level": "ordinary",
     "labels": [
@@ -1140,6 +1435,17 @@
     },
     "capRulePage": 3
    },
+   "2022-ordinary": {
+    "family": "ol-o1-o8-2022",
+    "gridPages": [
+     69,
+     70
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2023-ordinary": {
     "family": "ol-o1-o8-2018",
     "gridPages": [
@@ -1188,6 +1494,7 @@
  },
  "legacyAdditionalSources": {},
  "bridgedPapers": [
+  "english-2022-ol-p1",
   "english-2023-ol-p1",
   "english-2023-ol-p2",
   "english-2024-ol-p1",
@@ -1196,6 +1503,24 @@
   "english-2025-ol-p2"
  ],
  "bridgedLegacyIds": [
+  "english-2022-ol-p1-composing-1",
+  "english-2022-ol-p1-composing-2",
+  "english-2022-ol-p1-composing-3",
+  "english-2022-ol-p1-composing-4",
+  "english-2022-ol-p1-composing-5",
+  "english-2022-ol-p1-composing-6",
+  "english-2022-ol-p1-composing-7",
+  "english-2022-ol-p1-t1-a-i",
+  "english-2022-ol-p1-t1-a-ii",
+  "english-2022-ol-p1-t1-a-iii-a",
+  "english-2022-ol-p1-t1-a-iii-b",
+  "english-2022-ol-p1-t1-b",
+  "english-2022-ol-p1-t2-a-i",
+  "english-2022-ol-p1-t2-a-ii",
+  "english-2022-ol-p1-t2-b",
+  "english-2022-ol-p1-t3-a-i",
+  "english-2022-ol-p1-t3-a-ii",
+  "english-2022-ol-p1-t3-b",
   "english-2023-ol-p1-composing-1",
   "english-2023-ol-p1-composing-2",
   "english-2023-ol-p1-composing-3",
@@ -1462,6 +1787,10 @@
   "english-2025-ol-p2-unseen-q2"
  ],
  "bridgeAliases": {
+  "english-2022-ol-p1-t2-a-iii-a": "english-2022-ol-p1-t1-a-iii-a",
+  "english-2022-ol-p1-t2-a-iii-b": "english-2022-ol-p1-t1-a-iii-b",
+  "english-2022-ol-p1-t3-a-iii-a": "english-2022-ol-p1-t1-a-iii-a",
+  "english-2022-ol-p1-t3-a-iii-b": "english-2022-ol-p1-t1-a-iii-b",
   "english-2023-ol-p1-t2-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
   "english-2023-ol-p1-t3-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
   "english-2023-ol-p2-comparative-a-q1": "english-2023-ol-p2-comparative-a-q1-a-i",
@@ -1532,7 +1861,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1285,
+ "cardCount": 1303,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -19686,6 +20015,696 @@
    "atlas": {
     "fileid": "LC002GLP200EV.pdf",
     "n": "19"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-t1-a-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of TEXT 1, explain what you learned about the changing relationship between humans and artificially intelligent (AI) robots. Make three points in your response. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Humans and AI Robots: Friends or Foes?",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Based on information from a variety of sources, raising whether humans and AI robots will be friends or foes, with Image 1 (an AI robotic vacuum cleaner) and Image 2 (AI robot, Sophia) (PDF2–3). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-t1-a-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 1 QA(ii)",
+   "questionText": "With reference to the text and images in TEXT 1 above, explain the reasons why you find the possibility of friendship with artificially intelligent robots exciting or frightening or both.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Humans and AI Robots: Friends or Foes?",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Based on information from a variety of sources, raising whether humans and AI robots will be friends or foes, with Image 1 (an AI robotic vacuum cleaner) and Image 2 (AI robot, Sophia) (PDF2–3). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-t1-a-iii-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 1 QA(iii)(a)",
+   "questionText": "What is the most important quality you look for in a friend? Explain why you think this particular quality is important.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "10"
+    },
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "12"
+    }
+   ]
+  },
+  {
+   "id": "english-2022-ol-p1-t1-a-iii-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 1 QA(iii)(b)",
+   "questionText": "International Friendship Day is celebrated annually in many countries. Explain at least one way in which you think this day could be celebrated in your school or workplace.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "10"
+    },
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "12"
+    }
+   ]
+  },
+  {
+   "id": "english-2022-ol-p1-t1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 1 QB",
+   "questionText": "You work for a robotics company and you have been asked to test a new robotic pet called Compu-Cat. Having lived with this artificially intelligent robotic cat for a week, you must submit a report on Compu-Cat, using the following headings: What I liked and disliked about Compu-Cat; How I think Compu-Cat could be improved; Who I think might buy this product. Write the report you would submit.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-t2-a-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of TEXT 2, explain what you learned about the possible consequences of contact between humans and aliens. Make three points in your response. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Should We Try to Befriend Extra-Terrestrials?",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Ilima Loomis — based on an article exploring differing views on human contact with alien beings, with two images (PDF4–5). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-t2-a-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 2 QA(ii)",
+   "questionText": "With reference to the text and images in TEXT 2 above, explain the reasons why you find the possibility of friendship with extra-terrestrial beings exciting or frightening or both.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Should We Try to Befriend Extra-Terrestrials?",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Ilima Loomis — based on an article exploring differing views on human contact with alien beings, with two images (PDF4–5). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-t2-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 2 QB",
+   "questionText": "It is 3022 and many humans now live on the Moon. You work for an interstellar travel agency, based on the Moon, called GO GALAXY. You have been asked to write the text for a radio advertisement promoting holidays to planet Earth. Write the text for the radio advertisement in which you: outline the many and varied attractions for holiday-makers on planet Earth, explain the different holiday options available through your company and encourage early booking through a range of special offers.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-t3-a-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of Text 3, explain how Greta Thunberg has benefitted from her work as a climate activist. Make three points in your response. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "A True Friend of the Earth",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Simon Hattenstone — edited extracts from an interview with Greta Thunberg on friendship and the impact of her activism, with two images (PDF6–7). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-t3-a-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 3 QA(ii)",
+   "questionText": "With reference to the text and images in TEXT 3 above, explain the personal qualities displayed by Greta Thunberg that you think would contribute to making her a good friend.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "A True Friend of the Earth",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Simon Hattenstone — edited extracts from an interview with Greta Thunberg on friendship and the impact of her activism, with two images (PDF6–7). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-t3-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Text 3 QB",
+   "questionText": "Your local climate action group has decided to honour Greta Thunberg with a special award and to invite her to speak at an event at which the award would be presented to her. You have been nominated to write a letter to Greta inviting her to attend this event. In your letter you should: provide some background information about your climate action group, explain the reasons why the group has decided to honour her with a special award and provide her with information and details about the event.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-composing-1",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Composing 1",
+   "questionText": "TEXTS 1, 2 and 3 all deal with the theme of Exploring Friendship. Write a personal essay in which you consider the sort of friend you would like to be, how you think you can best support your friends during difficult times and reflect on how you benefit from being a good friend to others.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-composing-2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Composing 2",
+   "questionText": "In TEXT 3 we learn that, as a teenager, Greta Thunberg challenged those in power. Write a short story, set in an imaginary country, where all of the laws are made by teenagers. Your story may be serious or humorous or both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    13
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-composing-3",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Composing 3",
+   "questionText": "In TEXT 2, we learn about how alien beings might interact with humans. Friendly aliens have contacted the European Space Agency and you have been asked to give a talk to a group of our new extra-terrestrial friends in which you explain some of the positive and negative aspects of being human. Write the text of the talk you would give.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-composing-4",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Composing 4",
+   "questionText": "TEXT 1 considers the developing relationship between humans and AI robots. Write a short story in which a human character teams up with an Artificially Intelligent (AI) robot to solve a mystery.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-composing-5",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Composing 5",
+   "questionText": "In TEXT 3, we learn that Greta Thunberg was furious about inaction on climate change. Write a personal essay about some of the major issues and the minor irritations in life that make you furious.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-composing-6",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Composing 6",
+   "questionText": "In TEXT 3, we learn that in 2019, 4 million people across 161 countries participated in a school strike protesting against climate change. Your school’s Student Council has organised a debate amongst students to decide whether or not to participate in the next global school strike against climate change. Write the speech you would give in which you argue either for or against participating in this action.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2022-ol-p1-composing-7",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2022 OL Paper 1 Composing 7",
+   "questionText": "In TEXT 2, we read that scientists worldwide search for evidence of extra-terrestrial life. Irish scientists have discovered that many alien spaceships are heading towards Earth at a phenomenal speed. The aliens’ intentions are unknown. Write a front-page article for a national newspaper (either broadsheet or tabloid) in which you break this incredible news to the world.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "7"
    }
   },
   {

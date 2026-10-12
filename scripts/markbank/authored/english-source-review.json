@@ -4198,6 +4198,162 @@
       "attribution": "The Voice You Hear When You Read Silently — Thomas Lux, as reproduced in the SEC 2022 paper.",
       "questionSha256": "5792ccb4aba8674c35d4047bcbe82def9f04919fd95af0757eb3b2153f97f517",
       "reason": "Paper PDF6 prints the introduction (Thomas Lux considers the process of silent reading), the instruction to answer either Question 1 or Question 2, the title, the whole poem in two columns with its printed line numbers (10, 20, 30, 40), the byline and the gloss “*Chirr – a shrill, trilling sound”; visually verified."
+    },
+    "english-2022-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Humans and AI Robots: Friends or Foes?",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Based on information from a variety of sources, raising whether humans and AI robots will be friends or foes, with Image 1 (an AI robotic vacuum cleaner) and Image 2 (AI robot, Sophia) (PDF2–3). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "b043e841df3d6dcfc247138bde712ed57ede719a73bf4939ed41dcc9eaab7962",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2022-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Humans and AI Robots: Friends or Foes?",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Based on information from a variety of sources, raising whether humans and AI robots will be friends or foes, with Image 1 (an AI robotic vacuum cleaner) and Image 2 (AI robot, Sophia) (PDF2–3). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "26fc8a260467947e19e1c52d347415717aa6d7d0d97001f3934e114891ed538a",
+      "reason": "The task reads “With reference to the text and images in TEXT 1”: the whole text with both images (PDF2–3) is retained."
+    },
+    "english-2022-ol-p1-t1-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "HUMANS AND AI ROBOTS: FRIENDS OR FOES?",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
+      "questionSha256": "81b5b0772d71eb3b5d9f6fb07e3b86385ea2945ee58e141344954bb260fa374b",
+      "reason": "Self-contained: the most important quality the candidate looks for in a friend and why. Scheme PDF6 never refers to TEXT 1. The same task is printed under all three texts."
+    },
+    "english-2022-ol-p1-t1-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "HUMANS AND AI ROBOTS: FRIENDS OR FOES?",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
+      "questionSha256": "71f7b47293d0ccfd1aac7618e8aadbc0492bfef0c130a15394895976b929c21e",
+      "reason": "Self-contained: one way International Friendship Day could be celebrated in the candidate’s school or workplace. Scheme PDF6 never refers to TEXT 1. The same task is printed under all three texts."
+    },
+    "english-2022-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Should We Try to Befriend Extra-Terrestrials?",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Ilima Loomis — based on an article exploring differing views on human contact with alien beings, with two images (PDF4–5). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "06e6b6f3d6f06912b325e11e7c3895d9083014044cafad3f75d7ae6159188b0d",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2022-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Should We Try to Befriend Extra-Terrestrials?",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Ilima Loomis — based on an article exploring differing views on human contact with alien beings, with two images (PDF4–5). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "a430f7c3a2b8f89bdf9b318251128b3bba2d82114a4124fd9d9a8da9d1f03871",
+      "reason": "The task reads “With reference to the text and images in TEXT 2”: the whole text with both images (PDF4–5) is retained."
+    },
+    "english-2022-ol-p1-t2-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "is based on an article by science writer and journalist, Ilima Loomis. It explores",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
+      "questionSha256": "81b5b0772d71eb3b5d9f6fb07e3b86385ea2945ee58e141344954bb260fa374b",
+      "reason": "Self-contained: the most important quality the candidate looks for in a friend and why. Scheme PDF7 never refers to TEXT 2. The same task is printed under all three texts."
+    },
+    "english-2022-ol-p1-t2-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "is based on an article by science writer and journalist, Ilima Loomis. It explores",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
+      "questionSha256": "71f7b47293d0ccfd1aac7618e8aadbc0492bfef0c130a15394895976b929c21e",
+      "reason": "Self-contained: one way International Friendship Day could be celebrated in the candidate’s school or workplace. Scheme PDF8 never refers to TEXT 2. The same task is printed under all three texts."
+    },
+    "english-2022-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A True Friend of the Earth",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Simon Hattenstone — edited extracts from an interview with Greta Thunberg on friendship and the impact of her activism, with two images (PDF6–7). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "87f7d8ce7e7bdad5b3df8a3e34fa5b8922313e6368f0001892abc2b916c86dc6",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2022-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A True Friend of the Earth",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Simon Hattenstone — edited extracts from an interview with Greta Thunberg on friendship and the impact of her activism, with two images (PDF6–7). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "5965aaeeb7f9f33f8fa01b34a5c06c6237d50191e6227cb7503481fc0d3a461e",
+      "reason": "The task reads “With reference to the text and images in TEXT 3”: the whole text with both images (PDF6–7) is retained."
+    },
+    "english-2022-ol-p1-t3-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "A TRUE FRIEND OF THE EARTH",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
+      "questionSha256": "81b5b0772d71eb3b5d9f6fb07e3b86385ea2945ee58e141344954bb260fa374b",
+      "reason": "Self-contained: the most important quality the candidate looks for in a friend and why. Scheme PDF10 never refers to TEXT 3. The same task is printed under all three texts."
+    },
+    "english-2022-ol-p1-t3-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "A TRUE FRIEND OF THE EARTH",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
+      "questionSha256": "71f7b47293d0ccfd1aac7618e8aadbc0492bfef0c130a15394895976b929c21e",
+      "reason": "Self-contained: one way International Friendship Day could be celebrated in the candidate’s school or workplace. Scheme PDF10 never refers to TEXT 3. The same task is printed under all three texts."
     }
   }
 }

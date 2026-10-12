@@ -1810,6 +1810,134 @@
         }
       }
     },
+    "english-2022-ol-p1": {
+      "paperSha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
+      "legacyRuntime": "Served before the bridge by 18 authored.json cards; Text 2 and Text 3 A(iii)(a) and A(iii)(b) were already withdrawn aliases of Text 1’s, the same tasks printed three times.",
+      "legacyCards": {
+        "english-2022-ol-p1-t1-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 1 QA(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t1-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 1 QA(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t1-a-iii-a": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 1 QA(iii)(a)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t1-a-iii-b": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 1 QA(iii)(b)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t1-b": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 1 QB",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t2-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 2 QA(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t2-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 2 QA(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t2-b": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 2 QB",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t3-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 3 QA(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t3-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 3 QA(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t3-b": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 3 QB",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-composing-1": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Composing 1",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-composing-2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Composing 2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-composing-3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Composing 3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-composing-4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Composing 4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-composing-5": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Composing 5",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-composing-6": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Composing 6",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-composing-7": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 1 Composing 7",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p1-t2-a-iii-a": {
+          "kind": "alias",
+          "withdrawn": true,
+          "to": "english-2022-ol-p1-t1-a-iii-a",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 2 QA(iii)(a)",
+          "publishedQuestionRef": "2022 OL Paper 1 Text 1 QA(iii)(a)",
+          "reason": "A legacy withdrawn alias: the same task printed again on this paper, folded into english-2022-ol-p1-t1-a-iii-a before the bridge. The reviewed paper publishes that task once too (english-printed-duplicates.json), so the alias keeps pointing at the card that serves it."
+        },
+        "english-2022-ol-p1-t2-a-iii-b": {
+          "kind": "alias",
+          "withdrawn": true,
+          "to": "english-2022-ol-p1-t1-a-iii-b",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 2 QA(iii)(b)",
+          "publishedQuestionRef": "2022 OL Paper 1 Text 1 QA(iii)(b)",
+          "reason": "A legacy withdrawn alias: the same task printed again on this paper, folded into english-2022-ol-p1-t1-a-iii-b before the bridge. The reviewed paper publishes that task once too (english-printed-duplicates.json), so the alias keeps pointing at the card that serves it."
+        },
+        "english-2022-ol-p1-t3-a-iii-a": {
+          "kind": "alias",
+          "withdrawn": true,
+          "to": "english-2022-ol-p1-t1-a-iii-a",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 3 QA(iii)(a)",
+          "publishedQuestionRef": "2022 OL Paper 1 Text 1 QA(iii)(a)",
+          "reason": "A legacy withdrawn alias: the same task printed again on this paper, folded into english-2022-ol-p1-t1-a-iii-a before the bridge. The reviewed paper publishes that task once too (english-printed-duplicates.json), so the alias keeps pointing at the card that serves it."
+        },
+        "english-2022-ol-p1-t3-a-iii-b": {
+          "kind": "alias",
+          "withdrawn": true,
+          "to": "english-2022-ol-p1-t1-a-iii-b",
+          "legacyQuestionRef": "2022 OL Paper 1 Text 3 QA(iii)(b)",
+          "publishedQuestionRef": "2022 OL Paper 1 Text 1 QA(iii)(b)",
+          "reason": "A legacy withdrawn alias: the same task printed again on this paper, folded into english-2022-ol-p1-t1-a-iii-b before the bridge. The reviewed paper publishes that task once too (english-printed-duplicates.json), so the alias keeps pointing at the card that serves it."
+        }
+      }
+    },
     "english-2023-ol-p1": {
       "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
       "legacyRuntime": "Served before the bridge by 20 authored.json cards; Text 2 and Text 3 A(iii)(a) were already withdrawn aliases of Text 1 A(iii)(a), the same task printed three times.",

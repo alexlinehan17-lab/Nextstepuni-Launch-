@@ -1390,6 +1390,290 @@
         }
       },
       "note": "Grade labels print as O1-O8 (some cells print the digit 0 for the letter O). The combined total row is the selectable global mark; the P&C and L&M rows are recorded as printed."
+    },
+    "ol-o1-o8-2022": {
+      "level": "ordinary",
+      "labels": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "O6",
+        "O7",
+        "O8"
+      ],
+      "discrete": {
+        "100": {
+          "total": [
+            "100-90",
+            "89-80",
+            "79-70",
+            "69-60",
+            "59-50",
+            "49-40",
+            "39-30",
+            "29-0"
+          ],
+          "thirty": [
+            "30-27",
+            "24",
+            "21",
+            "18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ],
+          "ten": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        },
+        "50": {
+          "total": [
+            "50-45",
+            "44-40",
+            "39-35",
+            "34-30",
+            "29-25",
+            "24-20",
+            "19-15",
+            "14-0"
+          ],
+          "thirty": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "ten": [
+            "5",
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1-0"
+          ]
+        },
+        "40": {
+          "total": [
+            "40-36",
+            "35-32",
+            "31-28",
+            "27-24",
+            "23-20",
+            "19-16",
+            "15-12",
+            "11-0"
+          ],
+          "thirty": [
+            "12-11",
+            "10",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4",
+            "3-0"
+          ],
+          "ten": [
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1-0"
+          ]
+        },
+        "30": {
+          "total": [
+            "30-27",
+            "26-24",
+            "23-21",
+            "20-18",
+            "17-15",
+            "14-12",
+            "11-9",
+            "8-0"
+          ],
+          "thirty": [
+            "9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "ten": [
+            "3",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "0"
+          ]
+        },
+        "35": {
+          "total": [
+            "35-32",
+            "32-28",
+            "27-25",
+            "24-21",
+            "20-18",
+            "17-14",
+            "13-11",
+            "10-0"
+          ],
+          "thirty": [
+            "11-10",
+            "9-9",
+            "8-8",
+            "7-7",
+            "6-6",
+            "5-5",
+            "4-4",
+            "3-0"
+          ],
+          "ten": [
+            "2-2",
+            "2-1",
+            "2-1",
+            "2-1",
+            "1-1",
+            "1-0",
+            "1-0",
+            "1-0"
+          ]
+        }
+      },
+      "combinedLabels": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "O6",
+        "O7",
+        "O8"
+      ],
+      "combined": {
+        "20": {
+          "total": [
+            "20-18",
+            "16",
+            "14",
+            "12",
+            "10",
+            "8",
+            "6",
+            "5-0"
+          ],
+          "pc": [
+            "12-11",
+            "10",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4",
+            "3-0"
+          ],
+          "lm": [
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "3",
+            "2-0"
+          ]
+        },
+        "15": {
+          "total": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "pc": [
+            "9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "lm": [
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "1-0"
+          ]
+        },
+        "10": {
+          "total": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "pc": [
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "1-0"
+          ],
+          "lm": [
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1-0"
+          ]
+        }
+      },
+      "note": "Grade labels print as O1-O8 (some cells print the digit 0 for the letter O). The combined total row is the selectable global mark; the P&C and L&M rows are recorded as printed. 2022 adds the 35-mark discrete grid (modified weightings P/C/L 11, M 2); its total row prints the overlapping cells 35-32 / 32-28 as printed."
     }
   },
   "sittings": {
@@ -1575,6 +1859,32 @@
       "capRulePage": 3,
       "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
     },
+    "2017-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2017/LC002ALP000EV.pdf",
+      "schemeSha256": "b2bcd5afd1e1952d5bcd5ddfe261c0a8e5e6b44ae90b1e0392fee7833f9dfe51",
+      "gridPages": [
+        46
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2017-ordinary": {
+      "family": "ol-o1-o8-2018",
+      "scheme": "paper-trail-corpus/markingschemes/2017/LC002GLP000EV.pdf",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "gridPages": [
+        46
+      ],
+      "capRule": {
+        "kind": "none"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "2017 OL PDF3 (viewed) prints the weights, the mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap and no Language rule."
+    },
     "2018-higher": {
       "family": "hl-h1-h8",
       "scheme": "paper-trail-corpus/markingschemes/2018/LC002ALP000EV.pdf",
@@ -1601,6 +1911,60 @@
       "capRulePage": 3,
       "capRuleEvidence": "2018 OL PDF3 (viewed) prints the weights, the mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap and no Language rule."
     },
+    "2019-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2019/LC002ALP000EV.pdf",
+      "schemeSha256": "b609f26657d2ccc5fa70fbb6a27de78391dac871bfbe9c8396ec5b806395eceb",
+      "gridPages": [
+        46
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2019-ordinary": {
+      "family": "ol-o1-o8-2018",
+      "scheme": "paper-trail-corpus/markingschemes/2019/LC002GLP000EV.pdf",
+      "schemeSha256": "5fb482bf9bb51ef699d4b98d6aac2936b00f418340faa891c7cc3e303fea3dff",
+      "gridPages": [
+        61
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2021-higher": {
+      "family": "hl-h1-h8-2022",
+      "scheme": "paper-trail-corpus/markingschemes/2021/LC002ALP000EV.pdf",
+      "schemeSha256": "3703979a0ddd5f8ebee9955c4022f6478d5781502461c362547d38fca685fdfa",
+      "gridPages": [
+        6,
+        50
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2021-ordinary": {
+      "family": "ol-o1-o8-2022",
+      "scheme": "paper-trail-corpus/markingschemes/2021/LC002GLP000EV.pdf",
+      "schemeSha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b",
+      "gridPages": [
+        68,
+        69
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
     "2022-higher": {
       "family": "hl-h1-h8-2022",
       "scheme": "paper-trail-corpus/markingschemes/2022/LC002ALP000EV.pdf",
@@ -1608,6 +1972,20 @@
       "gridPages": [
         6,
         50
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2022-ordinary": {
+      "family": "ol-o1-o8-2022",
+      "scheme": "paper-trail-corpus/markingschemes/2022/LC002GLP000EV.pdf",
+      "schemeSha256": "d3eb474c27b644da5779765503e9634eff5d9ac414e56199e6a00c76073bbd85",
+      "gridPages": [
+        69,
+        70
       ],
       "capRule": {
         "kind": "purpose-primacy"
