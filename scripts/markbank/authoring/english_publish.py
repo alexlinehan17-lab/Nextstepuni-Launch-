@@ -297,21 +297,29 @@ def card_aliases():
 def apply_bridge(key, bridge, record, emitted, legacy_manifest):
     """Prove a bridged paper keeps every legacy card id, and carry lifted extras.
 
-    Every legacy card of the paper is mapped exactly once; a same-id card is
-    published under its legacy id; an alias names a published card, is not
-    itself published and is registered in cardAliases.ts; the legacy prompt and
-    its target are the same printed task (one contains the other); and every
-    lifted indicative item is printed on the bound scheme page.
+    Every legacy card of the paper, and every legacy withdrawn alias (a
+    duplicate the legacy deck already folded into another card), is mapped
+    exactly once; a same-id card is published under its legacy id; an alias
+    names a published card, is not itself published and is registered in
+    cardAliases.ts (a withdrawn alias is re-pointed there if its target moves);
+    the legacy prompt and its target are the same printed task (one contains
+    the other); every lifted indicative item and every quoted scheme row of a
+    correction record is printed on the bound scheme page.
     """
     if bridge['paperSha256'] != record['questionPaper']['sha256']:
         raise ValueError(f'{key}: legacy bridge bound to a different paper')
-    if any(old.startswith(key + '-') for old in legacy_manifest.get('withdrawnAliases', {})):
-        raise ValueError(f'{key}: legacy withdrawn aliases need their own bridge entries')
     legacy = {card['id']: card for card in legacy_manifest['cards'] if card['id'].startswith(key + '-')}
+    withdrawn = {old: legacy[canonical] for old, canonical in legacy_manifest.get('withdrawnAliases', {}).items()
+                 if old.startswith(key + '-')}
     entries = bridge['legacyCards']
-    if set(entries) != set(legacy):
-        raise ValueError(f'{key}: legacy bridge must map exactly its legacy cards; '
-                         f'missing={sorted(set(legacy) - set(entries))}, extra={sorted(set(entries) - set(legacy))}')
+    if set(entries) != set(legacy) | set(withdrawn):
+        expected = set(legacy) | set(withdrawn)
+        raise ValueError(f'{key}: legacy bridge must map exactly its legacy cards and withdrawn aliases; '
+                         f'missing={sorted(expected - set(entries))}, extra={sorted(set(entries) - expected)}')
+    for old, entry in entries.items():
+        if bool(entry.get('withdrawn')) != (old in withdrawn) or (old in withdrawn and entry['kind'] != 'alias'):
+            raise ValueError(f'{old}: a legacy withdrawn alias must be bridged as a withdrawn alias')
+    legacy = {**legacy, **withdrawn}
     by_id = {card['id']: card for card in emitted}
     registered = card_aliases()
     with fitz.open(ROOT / record['markingScheme']['path']) as doc:
@@ -342,6 +350,13 @@ def apply_bridge(key, bridge, record, emitted, legacy_manifest):
                 if missing or not lifted['items']:
                     raise ValueError(f'{old}: indicative items not printed on scheme PDF{lifted["schemePage"]}: {missing}')
                 target['indicativeMaterial'] = lifted['items']
+            correction = entry.get('correction')
+            if correction:
+                # A legacy marking defect corrected by the reviewed card: quote the printed row.
+                if not correction.get('reason', '').strip() or correction['schemePage'] not in target['schemePages']:
+                    raise ValueError(f'{old}: a correction record needs a reason and the card\'s own scheme page')
+                if squashed(correction['schemeRow']) not in squashed(doc[correction['schemePage'] - 1].get_text()):
+                    raise ValueError(f'{old}: corrected scheme row not printed on scheme PDF{correction["schemePage"]}')
 
 
 def publish():
@@ -426,7 +441,8 @@ def publish():
                                         if any(c['id'] == cid and c['level'] == level for c in legacy_manifest['cards'])},
             'bridgedPapers': sorted(key for key in bridged_papers if key in level_papers[level]),
             'bridgedLegacyIds': sorted(old for key in bridged_papers if key in level_papers[level]
-                                       for old in bridges[key]['legacyCards']),
+                                       for old, entry in bridges[key]['legacyCards'].items()
+                                       if not entry.get('withdrawn')),
             'bridgeAliases': {old: entry['to'] for key in sorted(bridged_papers) if key in level_papers[level]
                               for old, entry in sorted(bridges[key]['legacyCards'].items()) if entry['kind'] == 'alias'},
             'cardCount': len(cards[level]),

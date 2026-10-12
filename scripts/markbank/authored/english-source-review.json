@@ -3264,6 +3264,154 @@
       "attribution": "As Far as Turn Back — Pat Boran, as reproduced in the SEC 2025 paper.",
       "questionSha256": "36a59fb137e20106f7e6a250bb98570c17d1c17f34d605ca4c27fef193c55579",
       "reason": "Paper PDF6 prints the instruction (“Read the following poem by Pat Boran carefully”), the title, all four stanzas (4 + 4 + 9 + 4 lines) and the byline above the questions; visually verified. The whole poem is on PDF6, replacing the generic “Unseen poem” title."
+    },
+    "english-2025-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Humphrey – A Loving Companion",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Paul Howard — based on edited extracts from an article in The Irish Times, with two photographs (PDF2–3). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "17e5423ca246e6af9a6771132066d1429a919b3500ba4fd78597c1fbc4a87749",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2025-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Humphrey – A Loving Companion",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Paul Howard — based on edited extracts from an article in The Irish Times, with two photographs (PDF2–3). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "476466fe9430003b875852de9c47f72a9cd627d79c78be70e1e3ba2ad8173858",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2025-ol-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Humphrey – A Loving Companion",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Paul Howard — based on edited extracts from an article in The Irish Times, with two photographs (PDF2–3). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "2a80f8aee36b11319e2308970f4ee1429c2d43010a7e244a8d361e19f78dbd21",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2025-ol-p1-t1-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "Humphrey – A Loving Companion",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "3ff6b77cf7fb30f3c61cb07c74a16c95ad4e32b4bf8e664d31fb5bf47f0cff91",
+      "questionSha256": "dfd0409301d62e3686b0d4a4db787c2df1d0173881013cfd020e999b3c1b29d2",
+      "reason": "Self-contained: a moment when love was shown to the candidate or shown by them. Scheme PDF6 assesses the candidate’s own description and never refers to TEXT 1. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Unsettled – Familial Love",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Rosaleen McDonagh — based on edited extracts from her memoir Unsettled, with two photographs (PDF4–5). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "f22af9e4bdaa6ed00fbd90801a8dd7addf16d7ffce8ccd75772e412db571ab0e",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2025-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Unsettled – Familial Love",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Rosaleen McDonagh — based on edited extracts from her memoir Unsettled, with two photographs (PDF4–5). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "70ea7c1b277624c0bb2ab94870070b0e27f78e1ef0efe9abe65d3f8b1f124030",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2025-ol-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Unsettled – Familial Love",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Rosaleen McDonagh — based on edited extracts from her memoir Unsettled, with two photographs (PDF4–5). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "d0053278b4e9538c694e7d66509c60ea70889504be6df47547e7b038338217c0",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2025-ol-p1-t2-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "features three generations of women from one family. Imagine you are a grandmother",
+        "pages": [
+          5
+        ]
+      },
+      "paperSha256": "3ff6b77cf7fb30f3c61cb07c74a16c95ad4e32b4bf8e664d31fb5bf47f0cff91",
+      "questionSha256": "dfd0409301d62e3686b0d4a4db787c2df1d0173881013cfd020e999b3c1b29d2",
+      "reason": "Self-contained: a moment when love was shown to the candidate or shown by them. Scheme PDF9 assesses the candidate’s own description and never refers to TEXT 2. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Love in Many Guises",
+      "pages": [
+        6
+      ],
+      "attribution": "A series of twelve numbered quotations and song lyrics (PDF6) and four visual images, Images A–D (PDF6–7). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "2c2a7f4d9a6e272bd38368970705a2543923a710770ad7ec64de257df4f82caf",
+      "reason": "The task chooses from the written quotations, all twelve printed on PDF6 with the TEXT 3 heading and introduction."
+    },
+    "english-2025-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Love in Many Guises",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "A series of twelve numbered quotations and song lyrics (PDF6) and four visual images, Images A–D (PDF6–7). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "22d2309503da933e8b945c1fad32722c444c2935a331cfc0f1301b888fcca778",
+      "reason": "The four visual images, A and B on PDF6 and C and D on PDF7, are all needed to choose two."
+    },
+    "english-2025-ol-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Love in Many Guises",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "A series of twelve numbered quotations and song lyrics (PDF6) and four visual images, Images A–D (PDF6–7). As reproduced in the SEC 2025 paper.",
+      "questionSha256": "ebc93a6ab3b0013938aa46ab5586e0142220a77bd1d7e39fcc51d465e033130d",
+      "reason": "The task adds an image “to the collection of images in TEXT 3 on pages six and seven”."
+    },
+    "english-2025-ol-p1-t3-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "Love in Many Guises",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "3ff6b77cf7fb30f3c61cb07c74a16c95ad4e32b4bf8e664d31fb5bf47f0cff91",
+      "questionSha256": "dfd0409301d62e3686b0d4a4db787c2df1d0173881013cfd020e999b3c1b29d2",
+      "reason": "Self-contained: a moment when love was shown to the candidate or shown by them. Scheme PDF11 assesses the candidate’s own description and never refers to TEXT 3. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
     }
   }
 }

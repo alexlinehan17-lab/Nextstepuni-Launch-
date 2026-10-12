@@ -815,7 +815,7 @@
     "english-2025-ol-p1-t3-a-i": {
       "questionSha256": "2c2a7f4d9a6e272bd38368970705a2543923a710770ad7ec64de257df4f82caf",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 220 printed choices are one response, not 220 cards. Printed choice as reviewed: The source page visibly prints TWELVE numbered quotations although the question says ten. The scheme PDF p.10 permits any three written quotations. Include C(12,3)=220 routes, preserving the original wording and all twelve actual source options.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF10 — “Candidates must choose three of the written quotations. They are free to choose any three.” Every choice is marked identically. The question says “out of the ten” but PDF6 prints twelve numbered quotations; all twelve stay choosable and the printed wording is kept. One 15-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -879,7 +879,7 @@
     "english-2025-ol-p1-t3-a-ii": {
       "questionSha256": "22d2309503da933e8b945c1fad32722c444c2935a331cfc0f1301b888fcca778",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 6 printed choices are one response, not 6 cards. Printed choice as reviewed: The task requires a fixed selection from the specifically printed options. Every unordered selection is a separate practice route, retaining the complete published tariff.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF11 — “Candidates must choose two of the visual images. They are free to choose any two”; every pair is marked identically. One 15-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -910,7 +910,7 @@
     "english-2025-ol-p1-t1-a-iii-b": {
       "questionSha256": "dfd0409301d62e3686b0d4a4db787c2df1d0173881013cfd020e999b3c1b29d2",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The prompt gives two directions for the personal account. Either direction is separately practicable; events and people remain freely chosen within it.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF6 — “describe a moment when either love was shown to them or they showed love to another”, a broad range of approaches allowed; both directions are marked identically. One 10-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -956,7 +956,7 @@
     "english-2025-ol-p1-t2-a-iii-b": {
       "questionSha256": "dfd0409301d62e3686b0d4a4db787c2df1d0173881013cfd020e999b3c1b29d2",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The prompt gives two directions for the personal account. Either direction is separately practicable; events and people remain freely chosen within it.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF9 — “describe a moment when either love was shown to them or they showed love to another”, a broad range of approaches allowed; both directions are marked identically. One 10-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -1002,7 +1002,7 @@
     "english-2025-ol-p1-t3-a-iii-b": {
       "questionSha256": "dfd0409301d62e3686b0d4a4db787c2df1d0173881013cfd020e999b3c1b29d2",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The prompt gives two directions for the personal account. Either direction is separately practicable; events and people remain freely chosen within it.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF11 — “describe a moment when either love was shown to them or they showed love to another”, a broad range of approaches allowed; both directions are marked identically. One 10-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -1695,12 +1695,12 @@
     "english-2025-ol-p1-t1-a-ii": {
       "questionSha256": "476466fe9430003b875852de9c47f72a9cd627d79c78be70e1e3ba2ad8173858",
       "kind": "flexible",
-      "reason": "The paper says “word or words”; it intentionally leaves the number selected flexible. Do not invent a fixed choose-one or choose-two requirement."
+      "reason": "Paper PDF3: “Which of the following word or words”; scheme PDF5–6: candidates choose any of the printed words and give reasons. The number of words is flexible, marked as one response. One 15-mark response."
     },
     "english-2025-ol-p1-t2-a-ii": {
       "questionSha256": "70ea7c1b277624c0bb2ab94870070b0e27f78e1ef0efe9abe65d3f8b1f124030",
       "kind": "flexible",
-      "reason": "The paper says “word or words”; it intentionally leaves the number selected flexible. Do not invent a fixed choose-one or choose-two requirement."
+      "reason": "Paper PDF5: “Which of the following word or words”; scheme PDF8–9: candidates choose any of the printed words and give reasons. The number of words is flexible, marked as one response. One 15-mark response."
     },
     "english-2026-hl-p1-t3-a-iii": {
       "questionSha256": "2f1df173131810b745d03ba3d200d88f4613f9275cc447dc52193980e220b5e9",
@@ -2448,17 +2448,17 @@
     "english-2025-ol-p1-t1-b": {
       "questionSha256": "aad0e43725a48bc080b53187f52060ade969dba8fb9b0d7ac8a41721eb14fa76",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF7: a pamphlet for a charity rehoming dogs and cats; encourage adoption, outline the steps, describe the challenges. “Candidates must address all parts of the task, though not necessarily equally.” One 50-mark response."
     },
     "english-2025-ol-p1-t2-b": {
       "questionSha256": "0d7449c02ca03621402f4762de9f48ed60cd8ccc13028f41604865996be88f03",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF10: a grandmother’s letter: hardships, how life differed for women and girls, childhood entertainment. “Candidates must address all parts of the task, though not necessarily equally.” One 50-mark response."
     },
     "english-2025-ol-p1-t3-b": {
       "questionSha256": "8c279b5ce6a70f8ac38b9edc47e2e62337a03b09f9bf7a04e162b95121076def",
       "kind": "required",
-      "reason": "All printed report headings/interview questions are required within a single holistic writing task; they are not a choose-n pool."
+      "reason": "Scheme PDF12: the interview answers must respond to all three printed questions (foundations, developing and maintaining, dealing with conflict), though not necessarily equally. One 50-mark response."
     },
     "english-2026-hl-p1-t1-b": {
       "questionSha256": "887e5cd1ef5c870ab868d2f5bb3e25b9b7fef540946cbc40236ee52095830f21",
@@ -3090,7 +3090,7 @@
     "english-2025-ol-p1-composing-7": {
       "questionSha256": "ae820da8a8867cd664f35bab277d32af3767ee98dd0fb85eaeb76853b6367b47",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF20 — a speech arguing for or against the motion “All you need is love”; both sides are marked identically. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -4139,32 +4139,32 @@
     "english-2025-ol-p1-composing-1": {
       "questionSha256": "7a71e26dabefae6bbd806ec6b57b09c5e2e32148fed2f0a5de54f737ab31ed1e",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF14: a short story by a family pet; “serious or humorous or both” is a free register, not routes. One 100-mark composition."
     },
     "english-2025-ol-p1-composing-2": {
       "questionSha256": "bc4825781852a00523a19c25cb4f3524f43213bbbd106b77872bcceaae9ac524",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a personal essay reflecting on at least two things about standing up for views and beliefs. One 100-mark composition."
     },
     "english-2025-ol-p1-composing-3": {
       "questionSha256": "2114d1fdcc7cb6921aecdcfd9ee41cbb78991b5a85c7818050f89ad4dfe8dc6f",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF16: a magazine article; “serious, humorous or a combination of both” is a free register. One 100-mark composition."
     },
     "english-2025-ol-p1-composing-4": {
       "questionSha256": "b5aa1215d7df2bef966e19ee2589abe49a99eab87c431a62e7886b0db51a5ea4",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF17: a parent’s talk to the Parents’ Council, “Freedom and Young People Today – The Challenges!”. One 100-mark composition."
     },
     "english-2025-ol-p1-composing-5": {
       "questionSha256": "4f08c8f5e74c7526761e8994ac4405661d043f333aaee73ee8c950229e213014",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF18: a short story about two characters in love, driven apart by difficulties and reconciled. One 100-mark composition."
     },
     "english-2025-ol-p1-composing-6": {
       "questionSha256": "6f2f7d141b64b2fbf31befd8a68a3eba0b788f93bc194c9c76a0e631e3c6665b",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF19: a personal essay reflecting on at least two heart-breaking things. One 100-mark composition."
     },
     "english-2026-hl-p1-composing-1": {
       "questionSha256": "1a0563646ca67b30a02ab0aa07b7af96c806e15e86f661e34a027226bea6a5b3",
@@ -16183,6 +16183,31 @@
       "questionSha256": "6fb93994e171126c438f083f682b6527bccda9ee578bd905575f498ccb4cc7d9",
       "kind": "open",
       "reason": "Scheme PDF44, 49: freedom of choice of poems studied; discuss the statement. One 50-mark response."
+    },
+    "english-2025-ol-p1-t1-a-i": {
+      "questionSha256": "17e5423ca246e6af9a6771132066d1429a919b3500ba4fd78597c1fbc4a87749",
+      "kind": "open",
+      "reason": "Scheme PDF5: “Allow for any reasonable, clear explanation”; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2025-ol-p1-t1-a-iii-a": {
+      "questionSha256": "2a80f8aee36b11319e2308970f4ee1429c2d43010a7e244a8d361e19f78dbd21",
+      "kind": "open",
+      "reason": "Scheme PDF6: “Allow for any reasonable, clear explanation” of what Paul Howard is saying; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2025-ol-p1-t2-a-i": {
+      "questionSha256": "f22af9e4bdaa6ed00fbd90801a8dd7addf16d7ffce8ccd75772e412db571ab0e",
+      "kind": "open",
+      "reason": "Scheme PDF8: “Allow for any reasonable, clear explanation”; both relationships, though not necessarily equally; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2025-ol-p1-t2-a-iii-a": {
+      "questionSha256": "d0053278b4e9538c694e7d66509c60ea70889504be6df47547e7b038338217c0",
+      "kind": "open",
+      "reason": "Scheme PDF9: “Allow for any reasonable, clear explanation” of what Rosaleen McDonagh is saying; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2025-ol-p1-t3-a-iii-a": {
+      "questionSha256": "ebc93a6ab3b0013938aa46ab5586e0142220a77bd1d7e39fcc51d465e033130d",
+      "kind": "open",
+      "reason": "Scheme PDF11: a broad range of suggested images; candidates must both describe the image and explain the choice. One 10-mark response."
     }
   }
 }

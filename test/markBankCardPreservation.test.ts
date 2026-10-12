@@ -467,7 +467,7 @@ describe('Mark Bank card preservation', () => {
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(1_327);
+    expect(published.size).toBe(1_347);
     // No route card is published: a printed choice marked identically is one card.
     expect([...published].some(id => id.includes('-route-'))).toBe(false);
     // Legacy ids of bridged papers (2025 HL) are no longer served as legacy
@@ -475,7 +475,7 @@ describe('Mark Bank card preservation', () => {
     const bridged = [...publishedEnglishHigher.bridgedLegacyIds, ...publishedEnglishOrdinary.bridgedLegacyIds];
     const bridgeAliases: Record<string, string> = {
       ...publishedEnglishHigher.bridgeAliases, ...publishedEnglishOrdinary.bridgeAliases };
-    expect(bridged).toHaveLength(42);  // refreshed by tmp/english-audit/refresh-pins.py
+    expect(bridged).toHaveLength(62);  // refreshed by tmp/english-audit/refresh-pins.py
     for (const id of bridged) {
       const kept = published.has(id) && !(id in bridgeAliases);
       const aliased = CARD_ID_ALIASES[id] === bridgeAliases[id] && published.has(bridgeAliases[id]);
@@ -495,7 +495,8 @@ describe('Mark Bank card preservation', () => {
       expect(published.has(oldId), `${oldId} is a withdrawn alias`).toBe(false);
       if (oldId.startsWith('english-')) expect(published.has(canonicalId)).toBe(bridgeAliases[oldId] === canonicalId);
     }
-    expect([...published].every(id => /^english-(?:(?:201[0-6]|2018|2026)-(?:hl|ol)|2025-hl)-p[12]-/.test(id))).toBe(true);
+    const papers = [...publishedEnglishHigher.papers, ...publishedEnglishOrdinary.papers].map(paper => paper.paperId);
+    expect([...published].every(id => papers.some(paper => id.startsWith(`${paper}-`)))).toBe(true);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

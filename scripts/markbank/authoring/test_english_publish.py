@@ -197,7 +197,8 @@ class EnglishLegacyBridgeTest(unittest.TestCase):
         cls.records = {record['id']: record for record in inventory()['papers']}
 
     def emitted(self, paper_id):
-        manifest = self.outputs[publish.CARDS_DIR / 'published-higher.json']
+        level = 'higher' if '-hl-' in paper_id else 'ordinary'
+        manifest = self.outputs[publish.CARDS_DIR / f'published-{level}.json']
         return [copy.deepcopy(card) for card in manifest['cards'] if card['id'].startswith(paper_id + '-')]
 
     def apply(self, paper_id, bridge=None):
@@ -219,6 +220,26 @@ class EnglishLegacyBridgeTest(unittest.TestCase):
                           len([c for c in aliased if c.startswith('english-2025-hl-')])), (38, 4))
         self.assertEqual(aliased, manifest['bridgeAliases'])
         self.assertTrue(all(target in published for target in aliased.values()))
+
+    def test_withdrawn_legacy_aliases_are_bridged_to_the_card_that_serves_them(self):
+        entries = self.bridge['papers']['english-2025-ol-p1']['legacyCards']
+        withdrawn = {old: e['to'] for old, e in entries.items() if e.get('withdrawn')}
+        self.assertEqual(withdrawn, {'english-2025-ol-p1-t2-a-iii-b': 'english-2025-ol-p1-t1-a-iii-b',
+                                     'english-2025-ol-p1-t3-a-iii-b': 'english-2025-ol-p1-t1-a-iii-b'})
+        self.assertEqual({old: publish.card_aliases()[old] for old in withdrawn}, withdrawn)
+        manifest = self.outputs[publish.CARDS_DIR / 'published-ordinary.json']
+        self.assertTrue(set(withdrawn) <= set(manifest['bridgeAliases']))
+        self.assertFalse(set(withdrawn) & set(manifest['bridgedLegacyIds']))
+
+    def test_bridge_refuses_a_missing_or_retyped_withdrawn_alias(self):
+        bridge = copy.deepcopy(self.bridge['papers']['english-2025-ol-p1'])
+        del bridge['legacyCards']['english-2025-ol-p1-t3-a-iii-b']
+        with self.assertRaisesRegex(ValueError, 'legacy cards and withdrawn aliases'):
+            self.apply('english-2025-ol-p1', bridge)
+        bridge = copy.deepcopy(self.bridge['papers']['english-2025-ol-p1'])
+        bridge['legacyCards']['english-2025-ol-p1-t3-a-iii-b'].pop('withdrawn')
+        with self.assertRaisesRegex(ValueError, 'bridged as a withdrawn alias'):
+            self.apply('english-2025-ol-p1', bridge)
 
     def test_lifted_indicative_material_reaches_only_its_cards(self):
         manifest = self.outputs[publish.CARDS_DIR / 'published-higher.json']

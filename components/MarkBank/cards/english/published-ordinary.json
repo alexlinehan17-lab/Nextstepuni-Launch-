@@ -26,6 +26,17 @@
    "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c"
   },
   {
+   "paperId": "english-2025-ol-p1",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "tasks": 22,
+   "cards": 20,
+   "printedDuplicates": 2,
+   "paperSha256": "3ff6b77cf7fb30f3c61cb07c74a16c95ad4e32b4bf8e664d31fb5bf47f0cff91",
+   "schemeSha256": "1ffaf4e11d7e4cf6576ac088ed540feb6d19fae29c13aaf4f35ea59b9e1a033b"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -1074,6 +1085,17 @@
     },
     "capRulePage": 3
    },
+   "2025-ordinary": {
+    "family": "ol-o1-o8-2018",
+    "gridPages": [
+     73,
+     74
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2026-ordinary": {
     "family": "ol-o1-o8-2026",
     "gridPages": [
@@ -1088,10 +1110,36 @@
   }
  },
  "legacyAdditionalSources": {},
- "bridgedPapers": [],
- "bridgedLegacyIds": [],
- "bridgeAliases": {},
- "cardCount": 922,
+ "bridgedPapers": [
+  "english-2025-ol-p1"
+ ],
+ "bridgedLegacyIds": [
+  "english-2025-ol-p1-composing-1",
+  "english-2025-ol-p1-composing-2",
+  "english-2025-ol-p1-composing-3",
+  "english-2025-ol-p1-composing-4",
+  "english-2025-ol-p1-composing-5",
+  "english-2025-ol-p1-composing-6",
+  "english-2025-ol-p1-composing-7",
+  "english-2025-ol-p1-t1-a-i",
+  "english-2025-ol-p1-t1-a-ii",
+  "english-2025-ol-p1-t1-a-iii-a",
+  "english-2025-ol-p1-t1-a-iii-b",
+  "english-2025-ol-p1-t1-b",
+  "english-2025-ol-p1-t2-a-i",
+  "english-2025-ol-p1-t2-a-ii",
+  "english-2025-ol-p1-t2-a-iii-a",
+  "english-2025-ol-p1-t2-b",
+  "english-2025-ol-p1-t3-a-i",
+  "english-2025-ol-p1-t3-a-ii",
+  "english-2025-ol-p1-t3-a-iii-a",
+  "english-2025-ol-p1-t3-b"
+ ],
+ "bridgeAliases": {
+  "english-2025-ol-p1-t2-a-iii-b": "english-2025-ol-p1-t1-a-iii-b",
+  "english-2025-ol-p1-t3-a-iii-b": "english-2025-ol-p1-t1-a-iii-b"
+ },
+ "cardCount": 942,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -5637,6 +5685,783 @@
    "atlas": {
     "fileid": "LC002GLP200EV.pdf",
     "n": "19"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t1-a-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of the above article, how would you describe the relationship Paul Howard had with his dog, Humphrey? Explain your answer, with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Humphrey – A Loving Companion",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Paul Howard — based on edited extracts from an article in The Irish Times, with two photographs (PDF2–3). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t1-a-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 1 QA(ii)",
+   "questionText": "Which of the following word or words would you use to describe the language used in this article? • Humorous • Descriptive • Moving Give reasons for your answer, referring to the article.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Humphrey – A Loving Companion",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Paul Howard — based on edited extracts from an article in The Irish Times, with two photographs (PDF2–3). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5,
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t1-a-iii-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 1 QA(iii)(a)",
+   "questionText": "In your view, what does Paul Howard mean when he says that, ‘perhaps the best day’s work we ever did on this planet was to domesticate the dog…’?",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Humphrey – A Loving Companion",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Paul Howard — based on edited extracts from an article in The Irish Times, with two photographs (PDF2–3). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t1-a-iii-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 1 QA(iii)(b)",
+   "questionText": "Love can be shown in many different ways. Describe a moment when love was shown to you or when you showed love to another.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6,
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "10"
+    },
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "12"
+    }
+   ]
+  },
+  {
+   "id": "english-2025-ol-p1-t1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 1 QB",
+   "questionText": "You have been asked to write a pamphlet for a charity that rescues and rehomes dogs and cats. In your pamphlet you should: encourage people to adopt an unwanted animal by explaining some of the ways a pet would benefit their lives, outline the key steps involved in the adoption process, and describe some of the challenges they may encounter by bringing a pet into their homes.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested pamphlet.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t2-a-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of the above memoir, how would you describe the relationships Rosaleen McDonagh had with her mother and grandmother? Explain your answer, with reference to the memoir.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Unsettled – Familial Love",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Rosaleen McDonagh — based on edited extracts from her memoir Unsettled, with two photographs (PDF4–5). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t2-a-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 2 QA(ii)",
+   "questionText": "Which of the following word or words would you use to describe the language used in the memoir? • Honest • Descriptive • Moving Give reasons for your answer, referring to the memoir.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Unsettled – Familial Love",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Rosaleen McDonagh — based on edited extracts from her memoir Unsettled, with two photographs (PDF4–5). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8,
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t2-a-iii-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 2 QA(iii)(a)",
+   "questionText": "In your view, what does Rosaleen McDonagh mean when she says, about her mother, that ‘The negotiator was a role she relished.’?",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Unsettled – Familial Love",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Rosaleen McDonagh — based on edited extracts from her memoir Unsettled, with two photographs (PDF4–5). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t2-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 2 QB",
+   "questionText": "TEXT 2 features three generations of women from one family. Imagine you are a grandmother writing a letter to your granddaughter about what life was like for you growing up. In your letter you should: describe some of the hardships you experienced when you were young, outline how life was different for women and girls in your time, and describe some of the things you and your friends used to do to entertain yourselves as children.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t3-a-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of TEXT 3, which three quotations, out of the ten, do you think have the most important things to say about love? In each case, explain your answer with reference to your chosen quotations.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 3 of 12). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Love in Many Guises",
+    "pages": [
+     6
+    ],
+    "attribution": "A series of twelve numbered quotations and song lyrics (PDF6) and four visual images, Images A–D (PDF6–7). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t3-a-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 3 QA(ii)",
+   "questionText": "Which two of the four visual images in TEXT 3 convey your view of love most? Explain your answer with reference to the images.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 2 of 4). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Love in Many Guises",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "A series of twelve numbered quotations and song lyrics (PDF6) and four visual images, Images A–D (PDF6–7). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t3-a-iii-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 3 QA(iii)(a)",
+   "questionText": "Suggest another image, about love, that you would add to the collection of images in TEXT 3 on pages six and seven. Describe the image, and explain why you would suggest it.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Love in Many Guises",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "A series of twelve numbered quotations and song lyrics (PDF6) and four visual images, Images A–D (PDF6–7). As reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-t3-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Text 3 QB",
+   "questionText": "As a specialist in Well-being, you have been invited to do an interview about loving relationships for a popular health magazine called, Spring to Life. The interviewer asks you the following questions: 1. What factors, do you think, are important at the start of a loving relationship? 2. How can you develop and maintain a strong, loving relationship? 3. How can you deal with conflict if it arises in a relationship? Write the text of the answers you would give to these questions.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-composing-1",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Composing 1",
+   "questionText": "In TEXT 1, Paul Howard celebrates the relationship he had with his pet dog, Humphrey. Imagine that you are a family pet. Write a short story as this pet, entitled, What I get up to when you’re not around! Your story may be serious, humorous or a combination of both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-composing-2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Composing 2",
+   "questionText": "In TEXT 2, Rosaleen McDonagh’s mother and grandmother stand up for her and support her wish to have long hair in school. Write a personal essay where you reflect on the importance of people standing up for their views and beliefs.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-composing-3",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Composing 3",
+   "questionText": "In TEXT 1, Paul Howard tells us he believed that: Humphrey was of the opinion that he took life too seriously and could do with lightening up. Write a magazine article in which you explore the importance of not taking life too seriously and lightening up. Your article may be serious, humorous or a combination of both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-composing-4",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Composing 4",
+   "questionText": "In TEXT 2, Rosaleen McDonagh tells readers that her wheelchair is her freedom. You are a parent delivering a talk to the Parents’ Council in your school entitled, ‘Freedom and Young People Today – The Challenges!’ Write the text of the talk you would give.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-composing-5",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Composing 5",
+   "questionText": "In TEXT 3, Helen Keller says the following about love: ‘What we have once enjoyed, we can never lose.’ Write a short story featuring two characters in love, who are driven apart by difficulties, but who restore their love in the end.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-composing-6",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Composing 6",
+   "questionText": "In TEXT 1, Paul Howard tells us, it always broke his heart when Humphrey, trying to distract him from his work, brought him the toys Humphrey thought that Howard had a bias towards. Write a personal essay in which you reflect on some of the things in life that can be heart-breaking.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2025-ol-p1-composing-7",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2025 OL Paper 1 Composing 7",
+   "questionText": "TEXT 3 reminds us of a famous Beatles’ song. Write a speech for or against the motion that: ‘All you need is love.’",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "7"
    }
   },
   {

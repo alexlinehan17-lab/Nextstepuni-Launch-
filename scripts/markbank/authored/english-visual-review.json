@@ -2223,15 +2223,77 @@
       "paperSha256": "3ff6b77cf7fb30f3c61cb07c74a16c95ad4e32b4bf8e664d31fb5bf47f0cff91",
       "schemeSha256": "1ffaf4e11d7e4cf6576ac088ed540feb6d19fae29c13aaf4f35ea59b9e1a033b",
       "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
         6,
-        7
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
-      "visualSweepComplete": false,
+      "visualSweepComplete": true,
       "notes": [
-        "Source visibly has TWELVE quotations; question inaccurately says ten. Scheme PDF p.10 permits any three. Four images A–D, choose two."
+        "Source visibly has TWELVE quotations; question inaccurately says ten. Scheme PDF p.10 permits any three. Four images A–D, choose two.",
+        "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks, one card each: the printed choices (A(iii)(b) shown/showed, three of twelve quotations, two of four images, for/against the motion) are marked identically, so they are one card each (coordinator rule 2026-10-12). A(iii)(b) is printed identically under all three texts and published once (two printed repeats).",
+        "Readers under printed headings: TEXT 1 Humphrey – A Loving Companion PDF2–3, TEXT 2 Unsettled – Familial Love PDF4–5 (the extractor had taken the Question B prompt as the title and PDF5 only), TEXT 3 Love in Many Guises PDF6–7 (A(i) the quotations, PDF6 only). A(iii)(b) needs no reader (reviewed exclusions). T3 A(i) prints “out of the ten” against twelve printed quotations; wording kept. C/L ≤ P (PDF3); grids PDF73–74 (same print as 2018 OL)."
       ],
-      "allTaskBoundariesSchemeChecked": false,
-      "allFiniteRoutesReconciled": false
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        72,
+        73,
+        74
+      ],
+      "schemePagesVisuallyChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        73,
+        74
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks, one card each: the printed choices (A(iii)(b) shown/showed, three of twelve quotations, two of four images, for/against the motion) are marked identically, so they are one card each (coordinator rule 2026-10-12). A(iii)(b) is printed identically under all three texts and published once (two printed repeats)."
+      }
     },
     {
       "paperId": "english-2025-ol-p2",

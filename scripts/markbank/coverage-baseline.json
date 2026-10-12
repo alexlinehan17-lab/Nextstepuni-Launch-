@@ -136,11 +136,11 @@
  },
  "english": {
   "cards": 1935,
-  "contentHash": "5c6653ed326d3c63",
+  "contentHash": "d53d94b89a75b3c1",
   "coveragePct": 77.2,
-  "covered": 1945,
+  "covered": 1943,
   "excluded": 0,
-  "leaves": 2520,
+  "leaves": 2518,
   "open": 575,
   "orphans": 0,
   "papers": {
