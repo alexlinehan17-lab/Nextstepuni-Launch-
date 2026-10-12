@@ -12,10 +12,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 834,
-  "includedBaseTasks": 757,
-  "excludedBaseTasks": 77,
-  "authoredCards": 948,
+  "paperBaseTasks": 905,
+  "includedBaseTasks": 836,
+  "excludedBaseTasks": 69,
+  "authoredCards": 1027,
   "baseTasks": [
     {
       "id": "geography-2021-hl-p1-q1",
@@ -4954,7 +4954,25 @@
       "year": 2025,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2025 OL Part 1 Q2",
+      "questionRef": "2025 OL Part 1 Q2(i)",
+      "title": "Karst Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q2-ii-a",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q2(ii)(a)",
+      "title": "Karst Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q2-ii-b",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q2(ii)(b)",
       "title": "Karst Landscape",
       "status": "authored"
     },
@@ -4963,7 +4981,16 @@
       "year": 2025,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2025 OL Part 1 Q3",
+      "questionRef": "2025 OL Part 1 Q3(i)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q3-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q3(ii)",
       "title": "Surface Processes",
       "status": "authored"
     },
@@ -4972,7 +4999,16 @@
       "year": 2025,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2025 OL Part 1 Q4",
+      "questionRef": "2025 OL Part 1 Q4(i)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q4-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q4(ii)",
       "title": "Rocks",
       "status": "authored"
     },
@@ -4981,27 +5017,90 @@
       "year": 2025,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2025 OL Part 1 Q5",
+      "questionRef": "2025 OL Part 1 Q5(i)",
       "title": "Map Skills",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q5-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q5(ii)",
+      "title": "Map Skills",
+      "status": "authored"
     },
     {
       "id": "geography-2025-ol-p1-q6",
       "year": 2025,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2025 OL Part 1 Q6",
+      "questionRef": "2025 OL Part 1 Q6(i)",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q6-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q6(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q6-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q6(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
     },
     {
       "id": "geography-2025-ol-p1-q7",
       "year": 2025,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2025 OL Part 1 Q7",
+      "questionRef": "2025 OL Part 1 Q7(i)",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q7-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q7(ii)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q7-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q7(iii)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q7-iv",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q7(iv)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q7-v",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q7(v)",
+      "title": "Aerial Photograph",
+      "status": "authored"
     },
     {
       "id": "geography-2025-ol-p1-q8",
@@ -5017,7 +5116,43 @@
       "year": 2025,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2025 OL Part 1 Q9",
+      "questionRef": "2025 OL Part 1 Q9(i)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q9-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q9(ii)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q9-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q9(iii)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q9-iv",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q9(iv)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q9-v",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q9(v)",
       "title": "European Union",
       "status": "authored"
     },
@@ -5026,7 +5161,16 @@
       "year": 2025,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2025 OL Part 1 Q10",
+      "questionRef": "2025 OL Part 1 Q10(i)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q10-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q10(ii)",
       "title": "Weather Charts",
       "status": "authored"
     },
@@ -5035,7 +5179,43 @@
       "year": 2025,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2025 OL Part 1 Q11",
+      "questionRef": "2025 OL Part 1 Q11(i)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q11-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q11(ii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q11-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q11(iii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q11-iv",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q11(iv)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q11-v",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q11(v)",
       "title": "Graphical Interpretation",
       "status": "authored"
     },
@@ -5044,7 +5224,16 @@
       "year": 2025,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2025 OL Part 1 Q12",
+      "questionRef": "2025 OL Part 1 Q12(i)",
+      "title": "Satellite Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p1-q12-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2025 OL Part 1 Q12(ii)",
       "title": "Satellite Interpretation",
       "status": "authored"
     },
@@ -5055,10 +5244,10 @@
       "part": 2,
       "questionRef": "2025 OL Part 2 Q1A",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
     },
     {
-      "id": "geography-2025-ol-p2-q1b",
+      "id": "geography-2025-ol-p2-q1b-route-i",
       "year": 2025,
       "level": "ordinary",
       "part": 2,
@@ -5067,7 +5256,7 @@
       "status": "authored"
     },
     {
-      "id": "geography-2025-ol-p2-q1c",
+      "id": "geography-2025-ol-p2-q1c-quarrying",
       "year": 2025,
       "level": "ordinary",
       "part": 2,
@@ -5080,7 +5269,43 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q2A",
+      "questionRef": "2025 OL Part 2 Q2A(i)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q2a-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q2A(ii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q2a-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q2A(iii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q2a-iv",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q2A(iv)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q2a-v",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q2A(v)",
       "title": "Volcanoes",
       "status": "authored"
     },
@@ -5089,12 +5314,30 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q2B",
+      "questionRef": "2025 OL Part 2 Q2B(i)",
       "title": "Rocks",
       "status": "authored"
     },
     {
-      "id": "geography-2025-ol-p2-q2c",
+      "id": "geography-2025-ol-p2-q2b-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q2B(ii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q2b-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q2B(iii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q2c-river-processes",
       "year": 2025,
       "level": "ordinary",
       "part": 2,
@@ -5107,16 +5350,52 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q3A",
+      "questionRef": "2025 OL Part 2 Q3A(i)",
       "title": "Surface Processes",
       "status": "authored"
     },
     {
-      "id": "geography-2025-ol-p2-q3b",
+      "id": "geography-2025-ol-p2-q3a-ii",
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q3B",
+      "questionRef": "2025 OL Part 2 Q3A(ii)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q3a-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q3A(iii)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q3a-iv",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q3A(iv)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q3b-i",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q3B(i)",
+      "title": "Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q3b-freeze-thaw-action-carbonation",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q3B(ii)",
       "title": "Weathering",
       "status": "authored"
     },
@@ -5125,7 +5404,25 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q3C",
+      "questionRef": "2025 OL Part 2 Q3C(i)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q3c-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q3C(ii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q3c-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q3C(iii)",
       "title": "Plate Tectonics",
       "status": "authored"
     },
@@ -5143,7 +5440,25 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q4B",
+      "questionRef": "2025 OL Part 2 Q4B(i)",
+      "title": "Secondary Economic Activity in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q4b-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q4B(ii)",
+      "title": "Secondary Economic Activity in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q4b-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q4B(iii)",
       "title": "Secondary Economic Activity in an Irish Region",
       "status": "authored"
     },
@@ -5161,12 +5476,48 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q5A",
+      "questionRef": "2025 OL Part 2 Q5A(i)",
       "title": "Agriculture in Ireland",
       "status": "authored"
     },
     {
-      "id": "geography-2025-ol-p2-q5b",
+      "id": "geography-2025-ol-p2-q5a-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q5A(ii)",
+      "title": "Agriculture in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q5a-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q5A(iii)",
+      "title": "Agriculture in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q5a-iv",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q5A(iv)",
+      "title": "Agriculture in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q5a-v",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q5A(v)",
+      "title": "Agriculture in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q5b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
       "year": 2025,
       "level": "ordinary",
       "part": 2,
@@ -5188,7 +5539,43 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q6A",
+      "questionRef": "2025 OL Part 2 Q6A(i)",
+      "title": "Employment in Europe",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q6a-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q6A(ii)",
+      "title": "Employment in Europe",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q6a-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q6A(iii)",
+      "title": "Employment in Europe",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q6a-iv",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q6A(iv)",
+      "title": "Employment in Europe",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q6a-v",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q6A(v)",
       "title": "Employment in Europe",
       "status": "authored"
     },
@@ -5197,7 +5584,25 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q6B",
+      "questionRef": "2025 OL Part 2 Q6B(i)",
+      "title": "Primary Economic Activity in a Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q6b-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q6B(ii)",
+      "title": "Primary Economic Activity in a Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q6b-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q6B(iii)",
       "title": "Primary Economic Activity in a Continental / Sub-Continental Region",
       "status": "authored"
     },
@@ -5217,19 +5622,37 @@
       "part": 2,
       "questionRef": "2025 OL Part 2 Q7A",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2025-ol-p2-q7b",
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q7B",
+      "questionRef": "2025 OL Part 2 Q7B(i)",
       "title": "Economic Activity - Environmental Pollution",
       "status": "authored"
     },
     {
-      "id": "geography-2025-ol-p2-q7c",
+      "id": "geography-2025-ol-p2-q7b-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q7B(ii)",
+      "title": "Economic Activity - Environmental Pollution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q7b-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q7B(iii)",
+      "title": "Economic Activity - Environmental Pollution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q7c-tourism",
       "year": 2025,
       "level": "ordinary",
       "part": 2,
@@ -5242,7 +5665,43 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q8A",
+      "questionRef": "2025 OL Part 2 Q8A(i)",
+      "title": "Employment in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q8a-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q8A(ii)",
+      "title": "Employment in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q8a-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q8A(iii)",
+      "title": "Employment in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q8a-iv",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q8A(iv)",
+      "title": "Employment in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q8a-v",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q8A(v)",
       "title": "Employment in Ireland",
       "status": "authored"
     },
@@ -5251,16 +5710,43 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q8B",
+      "questionRef": "2025 OL Part 2 Q8B(i)",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q8b-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q8B(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q8b-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q8B(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
     },
     {
       "id": "geography-2025-ol-p2-q8c",
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q8C",
+      "questionRef": "2025 OL Part 2 Q8C(i)",
+      "title": "Colonialism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q8c-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q8C(ii)",
       "title": "Colonialism",
       "status": "authored"
     },
@@ -5269,7 +5755,16 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q9A",
+      "questionRef": "2025 OL Part 2 Q9A(i)",
+      "title": "Ireland’s Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q9a-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q9A(ii)",
       "title": "Ireland’s Economy",
       "status": "authored"
     },
@@ -5278,7 +5773,34 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q9B",
+      "questionRef": "2025 OL Part 2 Q9B(i)",
+      "title": "Multinational Company",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q9b-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q9B(ii)",
+      "title": "Multinational Company",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q9b-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q9B(iii)",
+      "title": "Multinational Company",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q9b-iv",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q9B(iv)",
       "title": "Multinational Company",
       "status": "authored"
     },
@@ -5298,14 +5820,32 @@
       "part": 2,
       "questionRef": "2025 OL Part 2 Q10A",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2025-ol-p2-q10b",
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q10B",
+      "questionRef": "2025 OL Part 2 Q10B(i)",
+      "title": "Migration – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q10b-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q10B(ii)",
+      "title": "Migration – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q10b-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q10B(iii)",
       "title": "Migration – Ireland",
       "status": "authored"
     },
@@ -5314,7 +5854,16 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q10C",
+      "questionRef": "2025 OL Part 2 Q10C(i)",
+      "title": "Traffic Congestion",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q10c-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q10C(ii)",
       "title": "Traffic Congestion",
       "status": "authored"
     },
@@ -5323,7 +5872,43 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q11A",
+      "questionRef": "2025 OL Part 2 Q11A(i)",
+      "title": "Population Characteristics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q11a-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q11A(ii)",
+      "title": "Population Characteristics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q11a-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q11A(iii)",
+      "title": "Population Characteristics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q11a-iv",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q11A(iv)",
+      "title": "Population Characteristics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q11a-v",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q11A(v)",
       "title": "Population Characteristics",
       "status": "authored"
     },
@@ -5332,7 +5917,25 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q11B",
+      "questionRef": "2025 OL Part 2 Q11B(i)",
+      "title": "Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q11b-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q11B(ii)",
+      "title": "Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q11b-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q11B(iii)",
       "title": "Developing World City",
       "status": "authored"
     },
@@ -5350,7 +5953,16 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q12A",
+      "questionRef": "2025 OL Part 2 Q12A(i)",
+      "title": "Urban Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q12a-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q12A(ii)",
       "title": "Urban Population",
       "status": "authored"
     },
@@ -5359,16 +5971,43 @@
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q12B",
+      "questionRef": "2025 OL Part 2 Q12B(i)",
       "title": "Rural Settlement Patterns",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q12b-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q12B(ii)",
+      "title": "Rural Settlement Patterns",
+      "status": "authored"
     },
     {
       "id": "geography-2025-ol-p2-q12c",
       "year": 2025,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2025 OL Part 2 Q12C",
+      "questionRef": "2025 OL Part 2 Q12C(i)",
+      "title": "Urban Land-Use",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q12c-ii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q12C(ii)",
+      "title": "Urban Land-Use",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2025-ol-p2-q12c-iii",
+      "year": 2025,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2025 OL Part 2 Q12C(iii)",
       "title": "Urban Land-Use",
       "status": "authored"
     },
@@ -7601,10 +8240,11 @@
     {
       "year": 2025,
       "level": "ordinary",
-      "paperBaseTasks": 48,
-      "includedBaseTasks": 40,
-      "excludedBaseTasks": 8,
-      "authoredCardsAfterFiniteExpansion": 52
+      "paperBaseTasks": 119,
+      "includedBaseTasks": 119,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 131,
+      "reviewed": true
     },
     {
       "year": 2026,
@@ -8123,7 +8763,7 @@
       "classification": "finite-expanded",
       "variants": 2,
       "kinds": [
-        "answer-i-or-ii"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -8131,7 +8771,7 @@
       "classification": "finite-expanded",
       "variants": 4,
       "kinds": [
-        "none+choose-1-of-4"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -8139,15 +8779,15 @@
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
-        "none+choose-1-of-3"
+        "reviewed-printed-route"
       ]
     },
     {
-      "questionRef": "2025 OL Part 2 Q3B",
+      "questionRef": "2025 OL Part 2 Q3B(ii)",
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
-        "none+choose-2-of-3"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -8155,7 +8795,7 @@
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
-        "none+choose-2-of-3"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -8163,7 +8803,7 @@
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
-        "none+choose-1-of-3"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -8790,70 +9430,6 @@
       "part": 2,
       "questionRef": "12C",
       "title": "Settlement Distribution",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2025,
-      "level": "ordinary",
-      "part": 1,
-      "questionRef": "5",
-      "title": "Map Skills",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2025,
-      "level": "ordinary",
-      "part": 1,
-      "questionRef": "6",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2025,
-      "level": "ordinary",
-      "part": 1,
-      "questionRef": "7",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2025,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "1A",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2025,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "7A",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2025,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "8B",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2025,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "10A",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2025,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "12B",
-      "title": "Rural Settlement Patterns",
       "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
     }
   ],

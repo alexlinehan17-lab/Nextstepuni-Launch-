@@ -31,22 +31,23 @@ const authoredById = new Map(authored.cards.map(card => [card.id, card]));
 
 describe('complete answerable 2021–2026 Geography corpus', () => {
   it('accounts for every paper task before finite route expansion', () => {
-    // 2026-10-11: 2026 Higher/Ordinary and 2025 Higher were independently
-    // reviewed. Their printed base tasks became separately priced tasks
-    // (2026 HL 60 -> 113, 2026 OL 48 -> 126, 2025 HL 60 -> 115), and 2025
-    // Higher's 8 companion-held tasks are now carded with the official
-    // Oughterard map, legend and aerial photograph:
-    // 648 - 60 + 113 - 48 + 126 - 60 + 115 = 834 base tasks, 77 still held.
-    expect(census.paperBaseTasks).toBe(834);
-    expect(census.includedBaseTasks).toBe(757);
-    expect(census.excludedBaseTasks).toBe(77);
+    // 2026-10-11: 2026 Higher/Ordinary and 2025 Higher/Ordinary were
+    // independently reviewed. Their printed base tasks became separately
+    // priced tasks (2026 HL 60 -> 113, 2026 OL 48 -> 126, 2025 HL 60 -> 115,
+    // 2025 OL 48 -> 119), and 2025's 16 companion-held tasks (8 per level)
+    // are now carded with the official Oughterard map, legend and aerial:
+    // 648 - 60 + 113 - 48 + 126 - 60 + 115 - 48 + 119 = 905 base tasks,
+    // 69 still held.
+    expect(census.paperBaseTasks).toBe(905);
+    expect(census.includedBaseTasks).toBe(836);
+    expect(census.excludedBaseTasks).toBe(69);
     expect(census.includedBaseTasks + census.excludedBaseTasks)
       .toBe(census.paperBaseTasks);
-    expect(census.authoredCards).toBe(948);
-    expect(census.baseTasks).toHaveLength(834);
-    expect(census.baseTasks.filter(task => task.status === 'authored')).toHaveLength(757);
-    expect(census.baseTasks.filter(task => task.status === 'excluded')).toHaveLength(77);
-    expect(census.exclusions).toHaveLength(77);
+    expect(census.authoredCards).toBe(1027);
+    expect(census.baseTasks).toHaveLength(905);
+    expect(census.baseTasks.filter(task => task.status === 'authored')).toHaveLength(836);
+    expect(census.baseTasks.filter(task => task.status === 'excluded')).toHaveLength(69);
+    expect(census.exclusions).toHaveLength(69);
     expect(census.sittings).toHaveLength(12);
 
     const expected = {
@@ -54,7 +55,7 @@ describe('complete answerable 2021–2026 Geography corpus', () => {
       '2022-higher': 73, '2022-ordinary': 49,
       '2023-higher': 78, '2023-ordinary': 52,
       '2024-higher': 66, '2024-ordinary': 49,
-      '2025-higher': 143, '2025-ordinary': 52,
+      '2025-higher': 143, '2025-ordinary': 131,
       '2026-higher': 126, '2026-ordinary': 136,
     } as const;
     for (const [sitting, cards] of Object.entries(expected)) {
@@ -66,10 +67,10 @@ describe('complete answerable 2021–2026 Geography corpus', () => {
 
   it('maps the generated manifest one-to-one to the live decks', () => {
     expect(HIGHER).toHaveLength(561);
-    expect(ORDINARY).toHaveLength(387);
-    expect(ALL).toHaveLength(948);
-    expect(authored.meta.cardCount).toBe(948);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(948);
+    expect(ORDINARY).toHaveLength(466);
+    expect(ALL).toHaveLength(1027);
+    expect(authored.meta.cardCount).toBe(1027);
+    expect(new Set(ALL.map(card => card.id)).size).toBe(1027);
     expect(ALL.map(card => card.id).sort())
       .toEqual(authored.cards.map(card => card.id).sort());
 
@@ -163,7 +164,7 @@ describe('Geography prompt, source and marking integrity', () => {
   it('shows the official page for every embedded map, chart, image or source task', () => {
     const expectedSourced = LEGACY.filter(card => card.section === '1'
       || / Part 2 Q(?:[1-9]|1[0-2])A(?: ·|$)/.test(card.questionRef));
-    expect(expectedSourced).toHaveLength(160);
+    expect(expectedSourced).toHaveLength(142);
     expect(expectedSourced.filter(card => !card.sourceMaterial).map(card => card.id)).toEqual([]);
 
     const nonStandardSourced = LEGACY.filter(card => card.sourceMaterial
@@ -182,7 +183,7 @@ describe('Geography prompt, source and marking integrity', () => {
       'geography-2022-ol-p2-q2c',
       'geography-2022-ol-p2-q12c',
     ]);
-    expect(LEGACY.filter(card => card.sourceMaterial)).toHaveLength(172);
+    expect(LEGACY.filter(card => card.sourceMaterial)).toHaveLength(154);
 
     for (const card of ALL.filter(entry => entry.sourceMaterial)) {
       const generated = authored.cards.find(entry => entry.id === card.id)!;
@@ -237,9 +238,9 @@ describe('Geography prompt, source and marking integrity', () => {
       }
     }
     expect(LEGACY.filter(card => card.rubric.system === 'geography'
-      && card.rubric.criteria[0].guidanceKind === 'exact')).toHaveLength(160);
+      && card.rubric.criteria[0].guidanceKind === 'exact')).toHaveLength(142);
     expect(LEGACY.filter(card => card.rubric.system === 'geography'
-      && card.rubric.criteria[0].guidanceKind === 'srp')).toHaveLength(383);
+      && card.rubric.criteria[0].guidanceKind === 'srp')).toHaveLength(349);
   });
 
   it('turns a single published allocation into the scheduler grade', () => {
@@ -311,6 +312,7 @@ describe('independently reviewed Geography sittings', () => {
     [2026, 'higher', 73, 53, 'geography-2026-hl-p1-q2'],
     [2026, 'ordinary', 58, 78, 'geography-2026-ol-p2-q1c'],
     [2025, 'higher', 80, 63, 'geography-2025-hl-p1-q1'],
+    [2025, 'ordinary', 52, 79, 'geography-2025-ol-p2-q3b-carbonation-onion-weathering'],
   ] as const)('keeps every shipped %s %s id and adds only newly separated parts',
     (year, level, legacy, added, corrected) => {
       const review = sitting(year, level);
@@ -358,7 +360,7 @@ describe('independently reviewed Geography sittings', () => {
   });
 
   it('carries the published allocation line by line on every reviewed card', () => {
-    expect(REVIEWED).toHaveLength(405);
+    expect(REVIEWED).toHaveLength(536);
     for (const card of REVIEWED) {
       if (card.rubric.system !== 'geography') throw new Error(`${card.id}: wrong rubric`);
       const { criteria } = card.rubric;
@@ -420,6 +422,43 @@ describe('independently reviewed Geography sittings', () => {
     expect(census.exclusions.filter(row => row.year === 2025 && row.level === 'higher')).toEqual([]);
   });
 
+  it('pins the 2025 Ordinary review: every priced roman and its Oughterard companions', () => {
+    const review = sitting(2025, 'ordinary');
+    expect(review.taskCount).toBe(119);
+    expect(review.cardCount).toBe(131);
+    expect(Object.keys(review.pageReview.paper1)).toHaveLength(40);
+    expect(Object.keys(review.pageReview.paper2)).toHaveLength(16);
+    expect(Object.keys(review.pageReview.scheme)).toHaveLength(36);
+    expect(review.sources.paper1).toMatchObject({ fileid: 'LC005GLP042EV.pdf', pages: 40 });
+    expect(review.sources.paper2).toMatchObject({ fileid: 'LC005GLP043EV.pdf', pages: 16 });
+    expect(review.sources.scheme).toMatchObject({ fileid: 'LC005GLP000EV.pdf', pages: 36 });
+    expect(review.sources.aerial).toMatchObject({ fileid: 'LC005CLP004EV.jpg', bytes: 5572138 });
+    for (const [question, marks] of Object.entries(review.questionTotals)) {
+      expect(marks, question).toBe(question.startsWith('Part 1')
+        ? 10 : /Q\d+B$/.test(question) ? 40 : 30);
+    }
+    expect(Object.keys(review.questionTotals)).toHaveLength(12 + 36);
+    const routed = review.tasks.filter((task: ReviewedTask) => task.routes.length);
+    expect(Object.fromEntries(routed.map((task: ReviewedTask) =>
+      [task.questionRef, task.cards.length]))).toEqual({
+      '2025 OL Part 2 Q1B': 2, '2025 OL Part 2 Q1C': 4, '2025 OL Part 2 Q2C': 3,
+      '2025 OL Part 2 Q3B(ii)': 3, '2025 OL Part 2 Q5B': 3, '2025 OL Part 2 Q7C': 3,
+    });
+    // 3B(i) is priced on its own (4m); the shipped weathering pairs keep
+    // their ids on the choose-two routes of 3B(ii) (36m).
+    expect(byId.get('geography-2025-ol-p2-q3b-i')?.totalMarks).toBe(4);
+    expect(byId.get('geography-2025-ol-p2-q3b-freeze-thaw-action-carbonation')?.totalMarks).toBe(36);
+    // Previously held: these tasks name the separate map, legend or aerial.
+    for (const id of ['geography-2025-ol-p1-q5', 'geography-2025-ol-p1-q6', 'geography-2025-ol-p1-q7',
+      'geography-2025-ol-p2-q1a', 'geography-2025-ol-p2-q7a', 'geography-2025-ol-p2-q8b',
+      'geography-2025-ol-p2-q10a', 'geography-2025-ol-p2-q12b']) {
+      const card = byId.get(id)!;
+      expect([card.sourceMaterial, ...(card.additionalSourceMaterials ?? [])]
+        .some(source => source?.sourceFileid), id).toBe(true);
+    }
+    expect(census.exclusions.filter(row => row.year === 2025 && row.level === 'ordinary')).toEqual([]);
+  });
+
   it('attaches the right official document for every map, legend and aerial task', () => {
     const q1a = byId.get('geography-2026-hl-p2-q1a')!;
     expect([q1a.sourceMaterial, ...(q1a.additionalSourceMaterials ?? [])]
@@ -450,6 +489,7 @@ describe('independently reviewed Geography sittings', () => {
     [2026, 'higher', 36, 'LC005ALP042EV.pdf', 'LC005ALP043EV.pdf'],
     [2026, 'ordinary', 24, 'LC005GLP042EV.pdf', 'LC005GLP043EV.pdf'],
     [2025, 'higher', 36, 'LC005ALP042EV.pdf', 'LC005ALP043EV.pdf'],
+    [2025, 'ordinary', 24, 'LC005GLP042EV.pdf', 'LC005GLP043EV.pdf'],
   ] as const)('files every reviewed %s %s task in the Topic Atlas under its printed question',
     (year, level, questions, part1, part2) => {
     const review = sitting(year, level);

@@ -45,6 +45,7 @@ import geography_review as GR
 import geography_review_2026_hl as REVIEW_2026_HL
 import geography_review_2026_ol as REVIEW_2026_OL
 import geography_review_2025_hl as REVIEW_2025_HL
+import geography_review_2025_ol as REVIEW_2025_OL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -68,6 +69,7 @@ REVIEWED = {
     (2026, 'higher'): REVIEW_2026_HL,
     (2026, 'ordinary'): REVIEW_2026_OL,
     (2025, 'higher'): REVIEW_2025_HL,
+    (2025, 'ordinary'): REVIEW_2025_OL,
 }
 
 YEARS = tuple(range(2021, 2027))
@@ -1138,9 +1140,13 @@ def reviewed_sitting(year: int, level: str, review: Any,
     if flagged != legacy:
         raise AssertionError(f'{year} {level}: legacy flags disagree with LEGACY_IDS: '
                              f'{sorted(flagged ^ legacy)}')
-    corrections = [{'id': t.card_id, 'nowQuestionRef': GR.ref_label(year, level, t),
+    # A shipped id now held by one printed sub-part: the task's own id, and
+    # every shipped route id of a routed sub-part (each is re-scoped alike).
+    corrections = [{'id': card_id, 'nowQuestionRef': GR.ref_label(year, level, t),
                     'reason': review.ID_CORRECTION_REASON}
-                   for t in review.TASKS if t.legacy and t.sub]
+                   for t in review.TASKS if t.legacy and t.sub
+                   for card_id in dict.fromkeys(
+                       [t.card_id, *(r.card_id for r in t.routes if r.legacy)])]
     atlas_rows = [
         {'level': level, 'year': year, 'paperKey': f'p{part}',
          'fileid': fileids[(year, level, part)] + '.pdf', 'n': n, 'topicIds': sorted(ids_)}

@@ -84,7 +84,11 @@ class Document:
 
     def page_text(self, page: int) -> str:
         if page not in self._text:
-            self._text[page] = compact(self.doc[page - 1].get_text('text', sort=True))
+            raw = self.doc[page - 1].get_text('text', sort=True)
+            # A compound word broken at its own hyphen ("six-" / "figure") is
+            # one printed word: keep the hyphen, drop the line break.
+            raw = re.sub(r'(?<=[A-Za-z])-[ \t]*\n[ \t]*(?=[a-z])', '-', raw)
+            self._text[page] = compact(raw)
         return self._text[page]
 
     def lift(self, page: int, start: str, end: str | None = None,
