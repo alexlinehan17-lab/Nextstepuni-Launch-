@@ -16,21 +16,27 @@ const review = JSON.parse(fs.readFileSync('scripts/markbank/authored/constructio
 describe('Construction Studies 2026 Ordinary source-reviewed Q1–Q9', () => {
   it('reconciles original wording, tariffs, every finite route, figures and selection directives', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2026_ordinary.py'], { encoding: 'utf8' }));
-    expect(result).toEqual({tasks: 166, leafTasks: 31, wholeQuestionRoutes: 134, q8Routes: 126, sourceFigures: 33, paperComplete: true});
+    expect(result).toEqual({tasks: 32, leafTasks: 23, wholeQuestions: 9, q8AnyFiveOfNine: true, sourceFigures: 24, paperComplete: true});
   });
 
-  it('pins every reviewed card identity, including all 126 choose-five Q8 routes', () => {
+  it('pins every reviewed card identity; the Q8 choice is one any-five card, not a route per combination', () => {
     expect(review.tasks.map(t => t.card.id)).toEqual(CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS);
-    expect(new Set(CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS).size).toBe(166);
-    expect(CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS.filter(id => id.startsWith('cons-2026-ol-q8-complete-'))).toHaveLength(126);
+    expect(new Set(CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS).size).toBe(32);
+    expect(CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS.filter(id => id.startsWith('cons-2026-ol-q8'))).toEqual(['cons-2026-ol-q8']);
   });
 
-  it('keeps all 852 previous authored cards and adds only the reviewed tasks', () => {
+  it('keeps all 852 previous authored card positions and adds only the reviewed tasks', () => {
     const prior = JSON.parse(fs.readFileSync('docs/markbank-audit/2026-09-28/drafts/construction-2026-ordinary/prior-authored-card-hashes.json', 'utf8')) as {count: number; cards: Record<string, string>};
     const authored: SecCard[] = JSON.parse(fs.readFileSync('scripts/markbank/authored/construction-studies.json', 'utf8'));
     expect(prior.count).toBe(852);
-    expect(authored.slice(0, 852).map(c => c.id)).toEqual(Object.keys(prior.cards));
-    expect(authored.slice(852, 852 + CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS.length).map(c => c.id)).toEqual(CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS);
+    // Later consolidations withdraw cards only through a recorded withdrawal; every surviving prior ID keeps its order.
+    const withdrawn = new Set(fs.readdirSync('scripts/markbank/authored').filter(n => /^construction-studies-.*-reviewed\.json$/.test(n))
+      .flatMap(n => (JSON.parse(fs.readFileSync(`scripts/markbank/authored/${n}`, 'utf8')).withdrawn ?? []).map((w: {cardId: string}) => w.cardId)));
+    const live = new Set(authored.map(c => c.id));
+    const priorIds = Object.keys(prior.cards).filter(id => live.has(id));
+    expect(Object.keys(prior.cards).filter(id => !live.has(id)).every(id => withdrawn.has(id))).toBe(true);
+    expect(authored.slice(0, priorIds.length).map(c => c.id)).toEqual(priorIds);
+    expect(authored.filter(c => CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS.includes(c.id)).map(c => c.id).sort()).toEqual([...CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS].sort());
     expect(new Set(authored.map(c => c.id)).size).toBe(authored.length);
   });
 

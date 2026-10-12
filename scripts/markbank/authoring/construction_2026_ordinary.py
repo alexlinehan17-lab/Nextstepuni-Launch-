@@ -3,13 +3,13 @@
 Checks the reviewed authoring file against the original SEC paper and marking scheme
 (byte-identical paper-trail-corpus copies, pinned by SHA-256): page text, lifted
 question wording (narrowing only deletes printed words), scheme-traceable rows,
-the published tariffs and mark steps, every finite route (all C(9,5) = 126 for Q8),
+the published tariffs and mark steps, the Q8 choice as ONE any-five card over all nine printed
+terms (choice is not a route: no per-term or per-combination cards),
 the required pair in Q6(a), pixel-exact figure crops, the selection ledger and exact
 topic/Atlas bindings.
 """
 import copy
 import hashlib
-import itertools
 import json
 import re
 from pathlib import Path
@@ -30,10 +30,10 @@ PREFIX = 'cons-2026-ol-'
 FP = 'construction-studies-2026-OL-'
 CROSS = 'construction-studies-ordinary-'
 BAND8 = [0, 4, 6, 8]
-TERMS = ['triple-glazing', 'wind-turbine', 'carbon-monoxide-alarm', 'mortise-and-tenon-joint', 'butt-hinge',
-         'ball-valve', 'cordless-circular-saw', 'fascia-board', 'smart-meter']
-TERM_PAGES = dict(zip(TERMS, [14, 14, 15, 15, 14, 16, 15, 16, 16]))
-ROUTES = list(itertools.combinations(TERMS, 5))
+TERM_ITEMS = ['triple glazing', 'wind turbine', 'carbon monoxide alarm', 'mortise and tenon joint', 'butt hinge',
+              'ball valve', 'cordless circular saw', 'fascia board', 'smart meter']
+TERM_HEADINGS = ['Triple glazing', 'Wind turbine', 'Carbon monoxide alarm', 'Mortise and tenon joint', 'Butt hinge', 'Ball valve',
+                 'Cordless circular saw', 'Fascia board', 'Smart meter']
 PRIOR_COUNT = 852
 
 
@@ -61,7 +61,7 @@ LEAF = {
     'q7-a': [('way-1', 5, r(5)), ('way-2', 5, r(5))],
     'q7-b': [('sketch', 8, r(8))] + [(k, 5, r(5)) for k in ['outdoor-living', 'cooking', 'play', 'planting']],
     'q7-c': [('benefit-1', 6, r(6)), ('benefit-2', 6, r(6))],
-    **{f'q8-{t}': [('primary', 6, r(6)), ('other', 4, r(4))] for t in TERMS},
+    'q8': [('terms', 50, None)],
     'q9-a': [('reason-1', 6, r(6)), ('reason-2', 6, r(6))],
     'q9-b': [('modification-1', 13, r(13)), ('modification-2', 13, r(13))],
     'q9-c': [('timber', 4, r(4)), ('reason-1', 4, r(4)), ('reason-2', 4, r(4))],
@@ -71,13 +71,12 @@ COMPOSITE = {
     'q4-complete': ['q4-a', 'q4-b', 'q4-c'], 'q5-complete': ['q5-a', 'q5-b'],
     'q6-a': ['q6-a-scroll-saw', 'q6-a-spray-finish'], 'q6-complete': ['q6-a', 'q6-b', 'q6-c'],
     'q7-complete': ['q7-a', 'q7-b', 'q7-c'],
-    **{'q8-complete-' + '--'.join(c): [f'q8-{t}' for t in c] for c in ROUTES},
     'q9-complete': ['q9-a', 'q9-b', 'q9-c'],
 }
 TOTALS = {'q1-a': 46, 'q1-b': 4, 'q2-a': 12, 'q2-b': 24, 'q2-c': 14, 'q3-a': 40, 'q3-b': 10, 'q4-a': 10, 'q4-b': 30,
           'q4-c': 10, 'q5-a': 46, 'q5-b': 4, 'q6-a': 16, 'q6-a-scroll-saw': 8, 'q6-a-spray-finish': 8, 'q6-b': 24,
           'q6-c': 10, 'q7-a': 10, 'q7-b': 28, 'q7-c': 12, 'q9-a': 12, 'q9-b': 26, 'q9-c': 12,
-          **{f'q8-{t}': 10 for t in TERMS}, **{k: 50 for k in COMPOSITE if '-complete' in k}}
+          'q8': 50, **{k: 50 for k in COMPOSITE if '-complete' in k}}
 SCHEME_PAGES = {'1': [4, 18], '2': [5, 19], '3': [6, 20], '4': [7, 8, 21], '5': [9, 22], '6': [10, 11, 23],
                 '7': [12, 13, 24], '9': [17, 26]}
 PAPER_PAGE = {'1': 2, '2': 2, '3': 2, '4': 3, '5': 3, '6': 3, '7': 4, '8': 4, '9': 4}
@@ -95,11 +94,6 @@ FIGURES = {
     'q5-section': (S, 9, [50, 102, 572, 578], True), 'q5-wall-tie': (S, 9, [96, 660, 470, 748], True),
     'q6-precautions': (S, 10, [86, 128, 545, 414], True), 'q6-pillar-drill': (S, 10, [345, 530, 545, 752], True),
     'q7-garden-plan': (S, 12, [145, 347, 486, 790], True),
-    'q8-triple-glazing': (S, 14, [383, 98, 538, 267], True), 'q8-wind-turbine': (S, 14, [419, 285, 543, 490], True),
-    'q8-carbon-monoxide-alarm': (S, 15, [314, 564, 543, 724], True),
-    'q8-mortise-and-tenon-joint': (S, 15, [371, 85, 562, 291], True), 'q8-butt-hinge': (S, 14, [336, 523, 537, 689], True),
-    'q8-ball-valve': (S, 16, [346, 322, 559, 518], True), 'q8-cordless-circular-saw': (S, 15, [334, 350, 556, 528], True),
-    'q8-fascia-board': (S, 16, [414, 87, 542, 290], True), 'q8-smart-meter': (S, 16, [392, 549, 543, 779], True),
     'q9-extension': (S, 17, [213, 288, 577, 532], True), 'q9-cladding': (S, 17, [433, 557, 546, 780], True),
 }
 SOLUTION = {'q1-a': 'q1-scheme', 'q1-b': 'q1-section', 'q1-complete': 'q1-scheme', 'q2-b': 'q2-scheme', 'q2-c': 'q2-upgrade',
@@ -108,7 +102,7 @@ SOLUTION = {'q1-a': 'q1-scheme', 'q1-b': 'q1-section', 'q1-complete': 'q1-scheme
             'q5-b': 'q5-wall-tie', 'q5-complete': 'q5-section', 'q6-a-scroll-saw': 'q6-precautions',
             'q6-a-spray-finish': 'q6-precautions', 'q6-a': 'q6-precautions', 'q6-b': 'q6-pillar-drill',
             'q6-complete': 'q6-precautions', 'q7-b': 'q7-garden-plan', 'q7-complete': 'q7-garden-plan',
-            **{f'q8-{t}': f'q8-{t}' for t in TERMS}, 'q9-b': 'q9-extension', 'q9-c': 'q9-cladding', 'q9-complete': 'q9-extension'}
+            'q9-b': 'q9-extension', 'q9-c': 'q9-cladding', 'q9-complete': 'q9-extension'}
 TOPICS = {
     'q1-a': (['cons-1-5', 'cons-2-4', 'cons-3-3', 'cons-4-2', 'cons-3-4', 'cons-6-2'], ['question-one-drawing-questions', 'foundations-floors-walls', 'heat-loss-insulation']),
     'q1-b': (['cons-3-4', 'cons-4-2'], ['foundations-floors-walls']),
@@ -124,19 +118,12 @@ TOPICS = {
     'q6-b': (['cons-9-4'], ['site-safety']), 'q6-c': (['cons-9-4'], ['site-safety']),
     'q7-a': (['cons-1-2'], ['planning-sustainability-environment']), 'q7-b': (['cons-1-2'], ['planning-sustainability-environment']),
     'q7-c': (['cons-6-4', 'cons-1-2'], ['planning-sustainability-environment']),
-    'q8-triple-glazing': (['cons-3-6', 'cons-6-2'], ['windows-doors', 'heat-loss-insulation']),
-    'q8-wind-turbine': (['cons-1-2'], ['planning-sustainability-environment']),
-    'q8-carbon-monoxide-alarm': (['cons-1-9', 'cons-5-7'], ['fire-places-fire-prevention']),
-    'q8-mortise-and-tenon-joint': (['cons-10-1', 'cons-10-4'], ['wood-rot-ventilation']),
-    'q8-butt-hinge': (['cons-4-5', 'cons-3-7'], ['windows-doors']),
-    'q8-ball-valve': (['cons-5-2'], ['services-water-gas-electrical']),
-    'q8-cordless-circular-saw': (['cons-9-2', 'cons-9-4'], ['site-safety']),
-    'q8-fascia-board': (['cons-3-10'], ['roofs']),
-    'q8-smart-meter': (['cons-5-8'], ['services-water-gas-electrical']),
+    'q8': (['cons-3-6', 'cons-6-2', 'cons-1-2', 'cons-1-9', 'cons-5-7', 'cons-10-1', 'cons-10-4', 'cons-4-5', 'cons-3-7', 'cons-5-2', 'cons-9-2', 'cons-9-4', 'cons-3-10', 'cons-5-8'],
+           ['windows-doors', 'heat-loss-insulation', 'planning-sustainability-environment', 'fire-places-fire-prevention', 'wood-rot-ventilation', 'services-water-gas-electrical', 'site-safety', 'roofs']),
     'q9-a': (['cons-1-2'], ['planning-sustainability-environment']), 'q9-b': (['cons-3-5', 'cons-3-7'], ['windows-doors']),
     'q9-c': (['cons-3-2', 'cons-10-3'], ['foundations-floors-walls', 'wood-rot-ventilation']),
 }
-GAPS = {'q8-mortise-and-tenon-joint': {'cons-10-1', 'cons-10-4'}, 'q8-cordless-circular-saw': {'cons-9-2'}}
+GAPS = {'q8': {'cons-10-1', 'cons-10-4', 'cons-9-2'}}
 
 
 def tokens(text):
@@ -167,10 +154,6 @@ def region(q):
     return body
 
 
-def leaves_of(key):
-    return [leaf for child in COMPOSITE[key] for leaf in leaves_of(child)] if key in COMPOSITE else [key]
-
-
 def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     assert d['sourceHashes'] == HASHES
     for f, h in HASHES.items():
@@ -180,17 +163,17 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     cards = {t['card']['id'].removeprefix(PREFIX): t['card'] for t in d['tasks']}
     tasks = {t['card']['id'].removeprefix(PREFIX): t for t in d['tasks']}
     expected = set(LEAF) | set(COMPOSITE)
-    assert set(cards) == expected and len(d['tasks']) == len(expected) == 166
+    assert set(cards) == expected and len(d['tasks']) == len(expected) == 32
     assert d['addedIds'] == [t['card']['id'] for t in d['tasks']]
-    assert len({c['questionRef'] for c in cards.values()}) == 166
+    assert len({c['questionRef'] for c in cards.values()}) == 32
     bindings = {b['cardId'].removeprefix(PREFIX): b for b in d['bindings']}
-    assert set(bindings) == expected and len(d['bindings']) == 166
+    assert set(bindings) == expected and len(d['bindings']) == 32
     scheme = normalise(' '.join(page_text(S, p) for p in range(1, 27)))
     crosswalk = json.loads((R / 'data/examTopics/construction-studies-curriculum-crosswalk.json').read_text())
     registry = set(re.findall(r"id: '(cons-\d+-\d+)'", (R / 'curriculumRegistry.ts').read_text()))
     library_nodes = {n for nodes in crosswalk.values() for n in nodes}
     figures = {f['key'].removeprefix(FP): f for f in d['questionFigures']}
-    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 33
+    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 24
 
     for key, c in cards.items():
         q = key[1]
@@ -209,13 +192,18 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         assert is_subsequence(tokens(c['questionText']), words), (key, 'questionText not lifted')
         assert is_subsequence(tokens(c['stem']), words), (key, 'stem not lifted')
         for row in c['rows']:
-            assert row['kind'] == 'criterion' and row['contextNote'].strip()
+            assert row['contextNote'].strip()
+            if row['kind'] == 'anyN':  # a closed choice: every printed option, in the scheme's own headings
+                assert 'permittedMarks' not in row and row['marks'] == row['group']['claimMax'] * row['group']['perOption'], (key, row['id'])
+                assert all(normalise(o) in scheme for o in row['group']['options']), (key, 'option not printed in the scheme')
+                continue
+            assert row['kind'] == 'criterion'
             assert normalise(row['verbatim']) in scheme, (key, row['verbatim'])
             steps = row['permittedMarks']
             assert steps[0] == 0 and steps[-1] == row['marks'] and steps == sorted(set(steps)), (key, row['id'])
         assert 'questionBonus' not in c and c['totalMarks'] == sum(row['marks'] for row in c['rows']) == TOTALS[key], key
         if key in LEAF:
-            assert [(row['id'], row['marks'], row['permittedMarks']) for row in c['rows']] == LEAF[key], key
+            assert [(row['id'], row['marks'], row.get('permittedMarks')) for row in c['rows']] == LEAF[key], key
             assert 'taskGroups' not in c
             nodes, topics = TOPICS[key]
             assert b['canonicalTopicIds'] == nodes and b['atlasTopicIds'] == [CROSS + x for x in topics], key
@@ -238,19 +226,18 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         assert set(b['canonicalTopicIds']) <= registry & library_nodes and len(set(b['canonicalTopicIds'])) == len(b['canonicalTopicIds'])
         assert all(x.startswith(CROSS) and x in crosswalk for x in b['atlasTopicIds']) and b['atlasTopicIds']
         assert len(b['canonicalTopicIds']) == 1 or b['canonicalTopicReview'].strip()
-        pages = (sorted({TERM_PAGES[leaf.removeprefix('q8-')] for leaf in leaves_of(key)}) + [25]) if q == '8' else SCHEME_PAGES[q]
+        pages = [14, 15, 16, 25] if q == '8' else SCHEME_PAGES[q]
         assert [(x['file'], x['page']) for x in t['sourceChecks']] == [(P, 1), (P, PAPER_PAGE[q])] + [(S, p) for p in [2, 3, *pages]], key
         for x in t['sourceChecks']:
             assert hashlib.sha256(page_text(x['file'], x['page']).encode()).hexdigest() == x['textSha256'], (key, x)
 
-    # Every closed choose-five route exactly once, worth 50; every question has a complete route.
-    for combo in ROUTES:
-        c = cards['q8-complete-' + '--'.join(combo)]
-        names = [t.replace('-', ' ') for t in combo]
-        assert [g['label'] for g in c['taskGroups']] == names and c['totalMarks'] == 50
-        assert c['questionText'].endswith('any five of the following: ' + '; '.join(names) + '.')
+    # Choice is not a route: Q8 is ONE card printing all nine terms, with one any-five group over them.
+    q8 = cards['q8']
+    assert [k for k in cards if k.startswith('q8')] == ['q8'] and 'taskGroups' not in q8
+    assert q8['questionText'].endswith('any five of the following: ' + '; '.join(TERM_ITEMS) + '.')
+    assert q8['rows'][0]['kind'] == 'anyN' and q8['rows'][0]['group'] == dict(claimMax=5, perOption=10, options=TERM_HEADINGS)
     sel = d['selectionLedger']
-    assert sel['finiteQuestionChoices']['8']['routes'] == [list(c) for c in ROUTES] and sel['finiteQuestionChoices']['8']['options'] == TERMS
+    assert sel['finiteQuestionChoices']['8']['cardId'] == PREFIX + 'q8' and 'routes' not in sel['finiteQuestionChoices']['8']
     assert sel['unclassified'] == 0 and all(x['classification'] for x in sel['rows'])
     observed = []
     with fitz.open(R / P) as pdf:
@@ -258,7 +245,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
             observed.extend((i + 1, m.start(), m.group()) for m in re.finditer(sel['pattern'], ' '.join(p.get_text().split()), re.I))
     assert observed == [(x['page'], x['start'], x['match']) for x in sel['rows']] and len(observed) == 2
     for q in '123456789':
-        whole = [k for k in cards if k.startswith(f'q{q}-complete')]
+        whole = ['q8'] if q == '8' else [k for k in cards if k.startswith(f'q{q}-complete')]
         assert whole and {w['id'] for w in d['questionRouteLedgers'][q]['wholeRoutes']} == {PREFIX + k for k in whole}
 
     for key, f in figures.items():
@@ -271,7 +258,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
             a = Image.frombytes('RGB', (px.width, px.height), px.samples)
             saved = Image.open(path).convert('RGB')
             assert a.size == saved.size and ImageChops.difference(a, saved).getbbox() is None, key
-    assert len({f['sha256'] for f in d['questionFigures']}) == 33
+    assert len({f['sha256'] for f in d['questionFigures']}) == 24
 
     if integrated:
         prior = json.loads((R / 'docs/markbank-audit/2026-09-28/drafts/construction-2026-ordinary/prior-authored-card-hashes.json').read_text())
@@ -284,8 +271,8 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     gaps = {g['cardId'].removeprefix(PREFIX): set(g['canonicalTopicIds']) for g in d['taxonomyGaps']}
     assert gaps == GAPS
     assert d['questionsReviewed'] == list('123456789') and d['unreviewedQuestions'] == []
-    return dict(tasks=166, leafTasks=len(LEAF), wholeQuestionRoutes=sum(1 for k in cards if '-complete' in k),
-                q8Routes=126, sourceFigures=33, paperComplete=True)
+    return dict(tasks=32, leafTasks=len(LEAF), wholeQuestions=sum(1 for k in cards if '-complete' in k or k == 'q8'),
+                q8AnyFiveOfNine=True, sourceFigures=24, paperComplete=True)
 
 
 if __name__ == '__main__':

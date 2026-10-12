@@ -38,10 +38,16 @@ describe('Construction Studies 2015 Higher source-reviewed Q1–Q10', () => {
       const before = new Map((JSON.parse(fs.readFileSync(later.priorCorrectedCards, 'utf8')) as SecCard[]).map(c => [c.id, c]));
       for (const t of later.tasks.filter(task => task.correction)) corrected.set(t.card.id, {before: before.get(t.card.id)!, after: t.card});
     }
+    const withdrawn = new Map<string, {aliasOf?: string}>(fs.readdirSync('scripts/markbank/authored').filter(n => /^construction-studies-.*-reviewed\.json$/.test(n))
+      .flatMap(n => (JSON.parse(fs.readFileSync(`scripts/markbank/authored/${n}`, 'utf8')).withdrawn ?? []).map((w: {cardId: string; aliasOf?: string}) => [w.cardId, w] as const)));
     expect(prior).toHaveLength(505);
     for (const card of prior) {
       const fix = corrected.get(card.id);
-      if (fix) {
+      const gone = withdrawn.get(card.id);
+      if (gone) {
+        expect(now.has(card.id)).toBe(false);
+        if (gone.aliasOf) expect(now.has(gone.aliasOf)).toBe(true);
+      } else if (fix) {
         expect(fix.before).toEqual(card);
         expect(now.get(card.id)).toEqual(fix.after);
       } else expect(now.get(card.id)).toEqual(card);

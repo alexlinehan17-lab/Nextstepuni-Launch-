@@ -9,7 +9,6 @@ are exact 2x crops. Writes ordinary-2026-draft.json and the PNGs beside this fil
 """
 import copy
 import hashlib
-import itertools
 import json
 import re
 from pathlib import Path
@@ -45,11 +44,6 @@ FIGURES = {
     'q5-section': (S, 9, [50, 102, 572, 578], True), 'q5-wall-tie': (S, 9, [96, 660, 470, 748], True),
     'q6-precautions': (S, 10, [86, 128, 545, 414], True), 'q6-pillar-drill': (S, 10, [345, 530, 545, 752], True),
     'q7-garden-plan': (S, 12, [145, 347, 486, 790], True),
-    'q8-triple-glazing': (S, 14, [383, 98, 538, 267], True), 'q8-wind-turbine': (S, 14, [419, 285, 543, 490], True),
-    'q8-carbon-monoxide-alarm': (S, 15, [314, 564, 543, 724], True),
-    'q8-mortise-and-tenon-joint': (S, 15, [371, 85, 562, 291], True), 'q8-butt-hinge': (S, 14, [336, 523, 537, 689], True),
-    'q8-ball-valve': (S, 16, [346, 322, 559, 518], True), 'q8-cordless-circular-saw': (S, 15, [334, 350, 556, 528], True),
-    'q8-fascia-board': (S, 16, [414, 87, 542, 290], True), 'q8-smart-meter': (S, 16, [392, 549, 543, 779], True),
     'q9-extension': (S, 17, [213, 288, 577, 532], True), 'q9-cladding': (S, 17, [433, 557, 546, 780], True),
 }
 question_figures = []
@@ -112,8 +106,8 @@ tasks, bindings, cards = [], [], {}
 
 def add(q, key, ref, text, rows, nodes, topics, figure, review, boundary, selection, scheme_pages=None, groups=None):
     meta = QUESTIONS[q]
-    card = dict(id=f'{PREFIX}q{q}-{key}', subjectId='construction-studies', year=2026, level='ordinary', section='B',
-                topicId=nodes[0], conceptId=f"{meta['concept']}-{key}", questionRef=f'2026 OL Q{q}{ref}',
+    card = dict(id=f'{PREFIX}q{q}' + (f'-{key}' if key else ''), subjectId='construction-studies', year=2026, level='ordinary', section='B',
+                topicId=nodes[0], conceptId=meta['concept'] + (f'-{key}' if key else ''), questionRef=f'2026 OL Q{q}{ref}',
                 stem=meta['stem'], questionText=text, tariffModel={'kind': 'fixed'},
                 totalMarks=sum(r['marks'] for r in rows), rows=rows,
                 questionFigureKey=f'{FP}q{q}-original', questionFigureIncludesPrompt=True)
@@ -288,7 +282,7 @@ compose('7', 'complete', ' — complete', [A7, B7b, C7], 'q7-garden-plan', B7, S
 
 # ---------------------------------------------------------------- Q8
 B8 = 'Scheme p25: five items, each primary communication of relevant information 6 plus other communication 4 = 10; complete 50.'
-S8 = 'Closed choose-five pool of nine printed terms: nine separately practicable 10-mark term tasks plus all C(9,5) = 126 complete 50-mark routes.'
+S8 = 'Closed choose-five of nine printed terms. Choice is not a route: one card prints all nine terms and carries one any-five group over them (10 marks each), never a card per term or per combination.'
 TERMS = [
     ('triple-glazing', 'triple glazing', 14, ['cons-3-6', 'cons-6-2'], ['windows-doors', 'heat-loss-insulation'],
      'Such as: three panes of glass separated by insulating gaps, often argon-filled; more energy efficient than single or double glazing; high thermal and sound insulation; typically dearer than double glazing.',
@@ -318,20 +312,15 @@ TERMS = [
      'Such as: an electricity meter that records use automatically and sends readings to the supplier, ending manual and estimated readings; splits use into day, night and peak times; shows usage patterns to help choose a tariff and save energy.',
      'Domestic electrical installation (5.8).'),
 ]
-term_cards = []
-for slug, item, page, nodes, topics, content, review in TERMS:
-    term_cards.append(add('8', slug, f' — {item}', f'Explain, with the aid of notes and freehand sketches: {item}.',
-                          [row('primary', 'Primary communication of relevant information', 6, f'Explain the {item} with notes and freehand sketches; the main relevant explanation earns up to 6. ' + content),
-                           row('other', 'Other communication of relevant information', 4, f'Further relevant information about the {item}, in notes or sketches, earns up to 4. The scheme does not reserve fixed marks for notes versus sketches.')],
-                          nodes, topics, f'q8-{slug}', review, B8, S8, scheme_pages=[page, 25]))
-routes = []
-for combo in itertools.combinations(range(9), 5):
-    names = [TERMS[i][1] for i in combo]
-    routes.append(compose('8', 'complete-' + '--'.join(TERMS[i][0] for i in combo), ' — complete: ' + ', '.join(names),
-                          [term_cards[i] for i in combo], None, B8, S8,
-                          'Explain, with the aid of notes and freehand sketches, any five of the following: ' + '; '.join(names) + '.',
-                          labels=names, scheme_pages=sorted({TERMS[i][2] for i in combo}) + [25]))
-assert len(routes) == 126
+TERM_HEADINGS = ['Triple glazing', 'Wind turbine', 'Carbon monoxide alarm', 'Mortise and tenon joint', 'Butt hinge', 'Ball valve',
+                 'Cordless circular saw', 'Fascia board', 'Smart meter']
+Q8 = add('8', '', '', 'Explain, with the aid of notes and freehand sketches, any five of the following: ' + '; '.join(t[1] for t in TERMS) + '.',
+         [dict(id='terms', kind='anyN', verbatim='Construction Terms', marks=50,
+               contextNote='Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). '
+               + ' '.join(f'{h}: ' + t[5].removeprefix('Such as: ') for h, t in zip(TERM_HEADINGS, TERMS)),
+               group=dict(claimMax=5, perOption=10, options=TERM_HEADINGS))],
+         list(dict.fromkeys(n for t in TERMS for n in t[3])), list(dict.fromkeys(a for t in TERMS for a in t[4])), None,
+         'The union of the nine printed terms: ' + ' '.join(t[6] for t in TERMS), B8, S8, scheme_pages=[14, 15, 16, 25])
 
 # ---------------------------------------------------------------- Q9
 B9 = 'Scheme p26: (a) two reasons × 6 = 12; (b) two modifications, each sketch 8 + note 5 = 26; (c) suitable timber 4 and two reasons × 4 = 12. Complete 50.'
@@ -360,23 +349,20 @@ with fitz.open(R / P) as pdf:
         text = ' '.join(p.get_text().split())
         observed.extend((i + 1, m.start(), m.group(), text[max(0, m.start() - 80):m.end() + 80]) for m in re.finditer(pattern, text, re.I))
 classes = ['Whole-exam selection: any four of the nine questions; all question banks retained, no full-exam Cartesian cards.',
-           'Q8 closed choose-five pool of nine printed terms: all C(9,5) = 126 whole-question routes plus nine 10-mark term tasks.']
+           'Q8 closed choose-five of nine printed terms: one card with an any-five group over all nine terms (choice is not a route).']
 assert [(o[0], o[2]) for o in observed] == [(1, 'Answer any'), (4, 'any five')], observed
 selection_ledger = dict(pattern=pattern, unclassified=0, sourceHashes=HASHES,
                         rows=[dict(page=o[0], start=o[1], match=o[2], context=o[3], classification=c) for o, c in zip(observed, classes)],
-                        finiteQuestionChoices={'8': dict(choose=5, options=[t[0] for t in TERMS],
-                                                         routes=[[TERMS[i][0] for i in c] for c in itertools.combinations(range(9), 5)],
-                                                         wholeRouteMarks=50, termMarks=10)})
+                        finiteQuestionChoices={'8': dict(choose=5, options=[t[0] for t in TERMS], cardId=Q8['id'], groupRowId='terms',
+                                                         wholeQuestionMarks=50, termMarks=10)})
 whole = {}
 for t in tasks:
     c = t['card']
-    if '-complete' in c['id']:
-        whole.setdefault(t['questionNumber'], []).append(dict(id=c['id'], parts=[g['label'] for g in c['taskGroups']], marks=c['totalMarks']))
+    if '-complete' in c['id'] or c['id'] == PREFIX + 'q8':
+        whole.setdefault(t['questionNumber'], []).append(dict(id=c['id'], parts=[g['label'] for g in c.get('taskGroups', [])] or ['any five of nine terms'], marks=c['totalMarks']))
 taxonomy_gaps = [
-    dict(cardId=PREFIX + 'q8-mortise-and-tenon-joint', canonicalTopicIds=['cons-10-1', 'cons-10-4'], atlasTopicId=CROSS + 'wood-rot-ventilation',
-         reason='No Ordinary outgoing reference heading covers joinery (10.1, 10.4).'),
-    dict(cardId=PREFIX + 'q8-cordless-circular-saw', canonicalTopicIds=['cons-9-2'], atlasTopicId=CROSS + 'site-safety',
-         reason='No Ordinary outgoing reference heading covers tools (9.2).'),
+    dict(cardId=PREFIX + 'q8', canonicalTopicIds=['cons-10-1', 'cons-10-4', 'cons-9-2'], atlasTopicId=CROSS + 'wood-rot-ventilation',
+         reason='No Ordinary outgoing reference heading covers joinery (10.1, 10.4, mortise and tenon joint) or tools (9.2, cordless circular saw).'),
 ]
 out = dict(schemaVersion=1, subjectId='construction-studies', year=2026, level='ordinary', lang='ev', sitting='main', paperKey='single',
            fileid='LC029GLP000EV.pdf', component='theory', status='Q1–Q9 source-reviewed draft; integration pending.',
