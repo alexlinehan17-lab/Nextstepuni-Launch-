@@ -42,6 +42,7 @@ import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2
 import ordinary2021p1 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p1.json';
 import ordinary2021p2 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p2.json';
 import higher2020p1 from '../scripts/markbank/mathematics/reviews/2020-higher-p1.json';
+import ordinary2020p1 from '../scripts/markbank/mathematics/reviews/2020-ordinary-p1.json';
 import higher2020p2 from '../scripts/markbank/mathematics/reviews/2020-higher-p2.json';
 import glyphMap from '../scripts/markbank/authoring/glyphmap.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
@@ -970,6 +971,7 @@ describe('2021 Ordinary Mathematics Paper 2 repairs', () => {
 describe.each([
   { year: 2020, level: 'higher' as const, number: 1, count: 36, review: higher2020p1 },
   { year: 2020, level: 'higher' as const, number: 2, count: 30, review: higher2020p2 },
+  { year: 2020, level: 'ordinary' as const, number: 1, count: 40, review: ordinary2020p1 },
 ])('$year $level Mathematics Paper $number new-paper source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
   const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));

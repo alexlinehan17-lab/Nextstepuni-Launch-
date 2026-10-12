@@ -70414,5 +70414,2261 @@
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "stem": "Two ships set sail at the same time, Ship A from Port A and Ship B from Port B. Port A is 90 km due west of Port B, as shown below. Ship A is traveling due east at a speed of 15 km/h. Ship B is travelling due south at a speed of 30 km/h. t is the time in hours after the ships set sail. The distance between the ships at time t can be given by the function s(t) = (1125t² − 2700t + 8100)^(1/2), where 0 ≤ t ≤ 6."
+ },
+ {
+  "id": "maths-2020-ol-p1-q1-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-a-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q1(a)(i)",
+  "questionText": "During a particular week, John worked 45 hours at the basic rate and made sales amounting to €350. Find John’s gross pay for this week.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q1-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 45 × 12·60 + (350 − 200) × 0·22",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = €600",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 45 × 12·60",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (350) × 0·22",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (200) × 0·22",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 45 × 12·60 + (350 − 200) × 0·22",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Either pay found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-i-solution-8",
+    "kind": "point",
+    "verbatim": "Note — Accept correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-i-solution-9",
+    "kind": "point",
+    "verbatim": "Note — 45 × 12·60 + (350) × 0·22 finished correctly merits HPC",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "John works as part of a sales team. He earns a basic rate of €12·60 per hour. In addition to his hourly pay, he earns a commission of 22% on any sales he makes above €200 each week."
+ },
+ {
+  "id": "maths-2020-ol-p1-q1-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-a-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q1(a)(ii)",
+  "questionText": "During the following week John worked 51 hours. This included 3 hours on Sunday. If John works on a Sunday he receives 1·5 times the basic rate for those hours. His gross pay for that week was €713·20. Find the amount of sales John made in that week.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q1-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 48 × 12·60 + 3(12·6 × 1·5) = 661·50",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (713·20 − 661·50) ÷ 0·22 = €235·00",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — €235·00 + 200 = €435·00",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 48 × 12·60",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 3(12·6)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Commission found or €661·50",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (713·20 − 661·50) ÷ 0·22",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "John works as part of a sales team. He earns a basic rate of €12·60 per hour. In addition to his hourly pay, he earns a commission of 22% on any sales he makes above €200 each week."
+ },
+ {
+  "id": "maths-2020-ol-p1-q1-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-b",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q1(b)",
+  "questionText": "John pays tax at the Standard Rate of 20% and at the Higher Rate of 40%. He has a weekly Tax Credit of €26. The weekly Standard Rate Cut-off Point is €678. Find John’s net income for the week where his salary was €713·20.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 678 × 0·20 + (713·20 − 678) × 0·40",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = €149·68",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — €149·68 − 26 = 123·68",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — €713·20 − 123·68",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — = €589·52 Net Income",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 678 × 0·20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-b-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 713·20 − 678",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-b-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Gross tax found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q1-b-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Net tax found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "John works as part of a sales team. He earns a basic rate of €12·60 per hour. In addition to his hourly pay, he earns a commission of 22% on any sales he makes above €200 each week."
+ },
+ {
+  "id": "maths-2020-ol-p1-q2-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q2-a",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q2(a)",
+  "questionText": "Solve the equation: (9x − 6)/2 = (3x − 14)/3 + 9x/4.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 12((9x − 6)/2) = 12((3x − 14)/3) + 12(9x/4)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 6(9x − 6) = 4(3x − 14) + 3(9x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 54x − 36 = 12x − 56 + 27x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x = −20/15 or −4/3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 12 identified as common denominator",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant multiplication",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 4(3x − 14) = 3(9x) without CD",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 54x − 36 = 12x − 56 + 27x or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-ol-p1-q2-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q2-b",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q2(b)",
+  "questionText": "Solve the simultaneous equations: 3x − y = 4; 4x² − 3xy = 4.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — y = 3x − 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 4x² − 3x(3x − 4) = 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 5x² − 12x + 4 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — (5x − 2)(x − 2) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — x = 2/5 and x = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — y = 3(2/5) − 4 = −14/5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — y = 3(2) − 4 = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution — (2/5, −14/5) and (2, 2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — x or y isolated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 4x² − 3x(3x − 4) = 4 or equivalent equation in one variable",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q2-b-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1 relevant value (root) found from quadratic",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-ol-p1-q3-a-i",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q3-a-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q3(a)(i), (a)(ii)",
+  "questionText": "(i) Write z₃ in the form a + bi, where a, b ∈ ℤ. (ii) Plot z₁, z₂ and z₃ on the given Argand Diagram. Label each point clearly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q3-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — z₃ = 2i(−2 + i) = −4i + 2i²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — −2 − 4i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Note — 4 items (find z₃ and 3 plots)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct item",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (correct plot for incorrect z₃) or (z₁ plotted correctly) or (z₂ plotted correctly) or (z₃ correct but with incorrect plot)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 2 correct items",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3 correct items",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "z₁ = 3 − 4i, z₂ = −2 + i and z₃ = 2iz₂, where i² = −1."
+ },
+ {
+  "id": "maths-2020-ol-p1-q3-a-iii",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q3-a-iii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q3(a)(iii)",
+  "questionText": "Find |z₁|.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q3-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |z₁| = √(9 + 16) = 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — |z₁| formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "z₁ = 3 − 4i, z₂ = −2 + i and z₃ = 2iz₂, where i² = −1."
+ },
+ {
+  "id": "maths-2020-ol-p1-q3-b",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q3-b",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q3(b)",
+  "questionText": "If z₁ × z₄ = 29 + 3i, write z₄ in the form a + bi, where a, b ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — z₄ = (29 + 3i)(3 + 4i)/((3 − 4i)(3 + 4i))",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = (87 + 116i + 9i + 12i²)/(9 − 16i²)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = (75 + 125i)/25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 3 + 5i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Conjugate identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-b-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some multiplication above and below by same number, even if incorrect conjugate",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q3-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (29 + 3i)(3 + 4i)/((3 − 4i)(3 + 4i))",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "z₁ = 3 − 4i, z₂ = −2 + i and z₃ = 2iz₂, where i² = −1."
+ },
+ {
+  "id": "maths-2020-ol-p1-q4-a-i",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q4-a-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q4(a)(i)",
+  "questionText": "Given that 1 metre is equal to 3·28 feet, convert the surface area of the bridge into square metres, giving your answer in the form a × 10ⁿ, where 1 ≤ a < 10 and n ∈ ℕ. Give the value of a correct to two significant figures.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q4-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 10 000 000/3·28² = 929506·2463",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 930 000 m²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 9·3 × 10⁵",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 10 000 000 ÷ 3·28 or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 10 000 000 × 3·28²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 10 000 000 ÷ 3·28²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The Golden Gate Bridge in San Francisco is constantly being repainted. It is estimated that the surface area of exposed steel that needs to be painted is approximately 10 million square feet."
+ },
+ {
+  "id": "maths-2020-ol-p1-q4-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q4-a-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q4(a)(ii)",
+  "questionText": "A litre of the paint used on the Golden Gate Bridge will cover approximately 5 square metres. This paint comes in 25 litre tins. Find the minimum number of tins of paint that will be needed to paint the entire bridge.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q4-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 186 000 litres",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 186 000 ÷ 25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 7440 tins",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant use of answer (a)(i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Incorrect litres ÷ 25 correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The Golden Gate Bridge in San Francisco is constantly being repainted. It is estimated that the surface area of exposed steel that needs to be painted is approximately 10 million square feet."
+ },
+ {
+  "id": "maths-2020-ol-p1-q4-b",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q4-b",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q4(b)",
+  "questionText": "Solve the equation 2^(9x−1) = 8^(2x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 2^(9x−1) = (2³)^(2x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 2^(9x−1) = 2^(6x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ 9x − 1 = 6x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ x = 1/3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 2³ or 2^(6x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — List of powers of 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q4-b-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Equation in x (Indices handled correctly)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-ol-p1-q5-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q5-a",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q5(a)",
+  "questionText": "Solve the equation x² − 3x − 4 = 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (x + 1)(x − 4) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = −1 or x = 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — x = (3 ± √25)/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct roots formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — a or b or c explicitly identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Effort at factorising",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct factors",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-a-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1 correct root",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-a-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — x = (3 ± √25)/2 and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-ol-p1-q5-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q5-b-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q5(b)(i)",
+  "questionText": "Complete the table below to show the value of the function f(x) = −x² − x + 6 for each of the given values of x. x: −4, −3, −2, −1, 0, 1, 2. f(x): _, _, 4, _, _, _, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q5-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f(x) –6 0 4 6 6 4 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct table entry",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Three correct table entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-ol-p1-q5-b-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q5-b-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q5(b)(ii)",
+  "questionText": "Hence draw the graph of f in the domain −4 ≤ x ≤ 2, where x ∈ ℝ, on the diagram below.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q5-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct plot from table entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Three correct plots from table entries with some join",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Part (b)(i): Complete the table below to show the value of the function f(x) = −x² − x + 6 for each of the given values of x."
+ },
+ {
+  "id": "maths-2020-ol-p1-q5-b-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q5-b-iii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q5(b)(iii)",
+  "questionText": "On the same diagram as the function f, draw the graph of the function g(x) = f(x − 2), in the domain −2 ≤ x ≤ 4, where x ∈ ℝ. Label the graphs of f(x) and g(x) clearly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q5-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct point or table entry or plot for g(x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q5-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Three correct points or table entries or plots for g(x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Part (b)(i): Complete the table below to show the value of the function f(x) = −x² − x + 6 for each of the given values of x."
+ },
+ {
+  "id": "maths-2020-ol-p1-q6-a-i",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q6-a-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q6(a)(i)",
+  "questionText": "Differentiate the function f(x) = 4x³ − 3x² + x − 7, where x ∈ ℝ, with respect to x.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q6-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f′(x) = 12x² − 6x + 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 term [other than –7 (see note)] correctly differentiated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 2 terms correctly differentiated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Note — differentiation of independent term must be explicit for marks to be awarded i.e. f′(−7) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-ol-p1-q6-a-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q6-a-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q6(a)(ii)",
+  "questionText": "Find the slope of the tangent to the graph of f(x) = 4x³ − 3x² + x − 7 at the point (1, −5).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q6-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 12(1)² − 6(1) + 1 = 7 (Slope)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any substitution into candidates f′(x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — f′(1) or equivalent written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — f′(−1) fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-ol-p1-q6-a-iii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q6-a-iii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q6(a)(iii)",
+  "questionText": "Hence find the equation of the tangent to the graph at this point.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q6-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — y + 5 = 7(x − 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 7x − y − 12 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Eq. of line formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-a-iii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Eq. of line formula fully substituted with (1, 5) but not candidates answer from (a)(ii)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Part (a)(ii): Find the slope of the tangent to the graph of f(x) = 4x³ − 3x² + x − 7 at the point (1, −5)."
+ },
+ {
+  "id": "maths-2020-ol-p1-q6-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q6-b",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 OL Paper 1 Q6(b)",
+  "questionText": "The function g(x) = 2x² + px + q, where p, q ∈ ℤ, and x ∈ ℝ. Given that g(2) = 6 and g′(3) = 9, find the value of p and the value of q. Note: g′(3) is the value of the derivative of g(x) at x = 3.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — g(2) = 2(2)² + p(2) + q",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 8 + 2p + q = 6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 2p + q = −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — g′(3) = 4(3) + p = 9",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ p = −3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — q = 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — g′(x) found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — g(2) found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — g′(x) and g(2) found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 2p + q = −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q6-b-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — p found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-ol-p1-q7-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-a-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q7(a)(i)",
+  "questionText": "How much money does Pat pay in total to the credit union for the loan?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 443·66 × 12 × 3 = €15 971·76",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Pat buys a new car for €32 000. He trades in his old car and is given an allowance of €20 000 by the garage. He borrows the balance of the money from the credit union. His fixed monthly repayment over three years is €443·66 per month."
+ },
+ {
+  "id": "maths-2020-ol-p1-q7-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-a-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q7(a)(ii)",
+  "questionText": "Show the amount that Pat repays as a percentage of the amount that he borrows from the credit union is 133·1%, correct to one decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 15971·76/12 000 × 100 = 133·09 = 133·1%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Pat buys a new car for €32 000. He trades in his old car and is given an allowance of €20 000 by the garage. He borrows the balance of the money from the credit union. His fixed monthly repayment over three years is €443·66 per month."
+ },
+ {
+  "id": "maths-2020-ol-p1-q7-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-b",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q7(b)",
+  "questionText": "A sum of money is invested at r% per annum compound interest for 3 years. At the end of the 3 years the value of the investment has increased by 33·1%. Find the value of r.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (1 + r)³ = 1·331",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 1 + r = 1·1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — r = 0·1 = 10%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-ol-p1-q7-c-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-c-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q7(c)(i)",
+  "questionText": "It is estimated that the value of cars depreciates at a compound rate of 20% per year. Use this percentage to find the value of Pat's car after three years (original price €32 000).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q7-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 32 000(0·8)³ = €16 384",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Pat buys a new car for €32 000. He trades in his old car and is given an allowance of €20 000 by the garage. He borrows the balance of the money from the credit union. His fixed monthly repayment over three years is €443·66 per month."
+ },
+ {
+  "id": "maths-2020-ol-p1-q7-c-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-c-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q7(c)(ii)",
+  "questionText": "Pat's friend Caitlín bought a new car three years ago. Its value also depreciated by 20% per year. It is now worth €17 920. Find the original value of the car.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q7-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x(0·8)³ = 17920",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 17920/0·8³ = €35 000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q7-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted (x isolated)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "It is estimated that the value of cars depreciates at a compound rate of 20% per year."
+ },
+ {
+  "id": "maths-2020-ol-p1-q8-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-a",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q8(a)",
+  "questionText": "Find the height of the block above the water.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q8-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ(0) = 3/5 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-a-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — ℎ(0) indicated and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres."
+ },
+ {
+  "id": "maths-2020-ol-p1-q8-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-b-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q8(b)(i)",
+  "questionText": "Show that the swimmer is on the surface of the water (i.e. h(x) = 0) when she is 12 metres from the starting block.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q8-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (1/60)(12)² − (1/4)(12) + 3/5 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 0 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres."
+ },
+ {
+  "id": "maths-2020-ol-p1-q8-b-ii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q8-b-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q8(b)(ii)",
+  "questionText": "Find the horizontal distance, in metres, from the starting block to the point where the swimmer enters the water.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q8-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x² − 15x + 36 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (x − 3)(x − 12) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x = 3 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — ℎ(x) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Function factorised correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Division of function by (x − 3) indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres."
+ },
+ {
+  "id": "maths-2020-ol-p1-q8-c-i",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-c-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q8(c)(i)",
+  "questionText": "Find h′(x), the derivative of h(x) = (1/60)x² − (1/4)x + 3/5.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q8-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ′(x) = (1/30)x − 1/4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 term [other than 3/5 (see note)] correctly differentiated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 2 terms correctly differentiated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Note — differentiation of independent term must be explicit for marks to be awarded i.e. f′(3/5) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres."
+ },
+ {
+  "id": "maths-2020-ol-p1-q8-c-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-c-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q8(c)(ii)",
+  "questionText": "Use your answer to Part (c)(i) to find the horizontal distance (x), in metres, from the starting block to the point at which the swimmer reaches her greatest depth.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q8-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (1/30)x − 1/4 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 30/4 = 15/2 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — f′(x) = 0 explicit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (1/30)x − 1/4 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres."
+ },
+ {
+  "id": "maths-2020-ol-p1-q8-c-iii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-c-iii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q8(c)(iii)",
+  "questionText": "Hence find this greatest depth.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q8-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ(7·5) = (1/60)(7·5)² − (1/4)(7·5) + 3/5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-c-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 27/80 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-c-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some substitution into ℎ(x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-c-iii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — ℎ(x) fully substituted with candidates value from (c)(ii)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres. Part (c)(ii): Use your answer to Part (c)(i) to find the horizontal distance (x), in metres, from the starting block to the point at which the swimmer reaches her greatest depth."
+ },
+ {
+  "id": "maths-2020-ol-p1-q8-d-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q8-d-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q8(d)(i)",
+  "questionText": "Complete the table by finding the percentage increase in split time by comparing each split time with the previous one. Give your answers correct to one decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q8-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (29·33 − 28·5)/28·5 × 100 = 2·9%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (30·68 − 29·33)/29·33 × 100 = 4·6%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant use of question data to formulate a percentage",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One correct percentage found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In the 2016 Summer Olympics, Michael Phelps, won the 200 m Butterfly final in a time of 1 minute and 53·36 seconds (1: 53·36). The time it took to swim each of the four 50 m sections of the race (split time) is given in the table below. The percentage increase in the time taken to swim one section is also given. Thus, it took the swimmer 14·7% longer to swim the second 50 metres compared to the first 50 metres. Race Section, Split Time (secs), Percentage Increase: 0 – 50 m, 24·85; 50 – 100 m, 28·5, 14·7%; 100 – 150 m, 29·33; 150 – 200 m, 30·68; Total, 1:53·36."
+ },
+ {
+  "id": "maths-2020-ol-p1-q8-d-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q8-d-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q8(d)(ii)",
+  "questionText": "Another swimmer in the race completed the first 50 m in a time of 25·01 seconds. His subsequent 50 m split times increased at the same rates as each of Michael Phelps’ times. Using the table below, or otherwise, find the difference between his finishing time and that of Michael Phelps. Give your answers in seconds correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (x − 25·01)/25·01 × 100 = 14·7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 28·686",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — y = 29·518",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — z = 30·876",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — Total = 25·01 + 28·686 + 29·518 + 30·876",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — =1:54·09",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — Difference = 1:54·09 – 1:53·36",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution — =0·73 Seconds",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 50 – 100 m split time formulated using 25·01 and 14·7%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — One correct split time found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q8-d-ii-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Three correct split times found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "In the 2016 Summer Olympics, Michael Phelps, won the 200 m Butterfly final in a time of 1 minute and 53·36 seconds (1: 53·36). The time it took to swim each of the four 50 m sections of the race (split time) is given in the table below. The percentage increase in the time taken to swim one section is also given. Thus, it took the swimmer 14·7% longer to swim the second 50 metres compared to the first 50 metres. Race Section, Split Time (secs), Percentage Increase: 0 – 50 m, 24·85; 50 – 100 m, 28·5, 14·7%; 100 – 150 m, 29·33; 150 – 200 m, 30·68; Total, 1:53·36."
+ },
+ {
+  "id": "maths-2020-ol-p1-q9-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-a",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q9(a)",
+  "questionText": "Complete the table below to show the number of matchsticks required to make each of the first six patterns of the above sequence. Pattern Number: 1, 2, 3, 4, 5, 6. Number of Matchsticks: 3, 7, _, _, _, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q9-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 3, 7, 11, 15, 19, 23",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-a-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct or consistent table entry",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-a-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Three correct or consistent table entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles."
+ },
+ {
+  "id": "maths-2020-ol-p1-q9-b-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-b-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q9(b)(i)",
+  "questionText": "How many matchsticks are required to make pattern 10 of the sequence?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 39",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Evidence of counting beyond T₆",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Note — Accept correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles."
+ },
+ {
+  "id": "maths-2020-ol-p1-q9-b-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-b-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q9(b)(ii)",
+  "questionText": "Find a formula for Tₙ, the number of matchsticks required to make pattern n of the sequence.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Tn = 3 + (n − 1)4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Tn = 4n − 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Tn formula written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles."
+ },
+ {
+  "id": "maths-2020-ol-p1-q9-b-iii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-b-iii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q9(b)(iii)",
+  "questionText": "Pattern k has 147 matchsticks, where k ∈ ℕ. Find the value of k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q9-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 4n − 1 = 147",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — n = 37",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-b-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Tn formula written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-b-iii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles."
+ },
+ {
+  "id": "maths-2020-ol-p1-q9-c-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-c-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q9(c)(i)",
+  "questionText": "Find a formula for Sₙ, the total number of matchsticks required to make the first n patterns.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q9-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Sn = n/2 [6 + (n − 1)4]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = n/2 [4n + 2]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Sn = 2n² + n",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Sn formula written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles."
+ },
+ {
+  "id": "maths-2020-ol-p1-q9-c-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-c-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q9(c)(ii)",
+  "questionText": "Find the total number of complete patterns in the sequence that can be made using 820 matchsticks.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q9-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 2n² + n = 820",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 2n² + n − 820 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — (2n + 41)(n − 20) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — n = 20 patterns",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Sn formula written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Sn = 820",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Evidence of counting of sums",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-ii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Quadratic equation factorised",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-c-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Note — Accept correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles."
+ },
+ {
+  "id": "maths-2020-ol-p1-q9-d-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-d-i",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q9(d)(i)",
+  "questionText": "The table below shows the number of triangles formed by each pattern for the first two patterns. Complete the table to show the number of triangles formed for patterns three to six. Pattern Number: 1, 2, 3, 4, 5, 6. Number of Triangles: 1, 3, _, _, _, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q9-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1, 3, 5, 7, 9, 11",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct or consistent table entry",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-d-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Three correct or consistent table entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles."
+ },
+ {
+  "id": "maths-2020-ol-p1-q9-d-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-d-ii",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 OL Paper 1 Q9(d)(ii)",
+  "questionText": "The area of each triangle is 4√3 cm². Find, correct to the nearest cm², the combined total area covered by the first 15 patterns in the sequence.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-ol-p1-q9-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 4√3(1 + 3 + 5 + 7 + ⋯)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 4√3(S₁₅) where a = 1 and d = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-d-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 4√3[7·5 × 30]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-d-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 1558·845727 = 1559 cm²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-d-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — At least 3 terms of AP identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-d-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Sn formula written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-ol-p1-q9-d-ii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles."
  }
 ]
