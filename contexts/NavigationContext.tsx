@@ -6,6 +6,7 @@
 import React, { createContext, useContext, useReducer, useCallback, useEffect, useRef } from 'react';
 import { type CategoryType } from '../components/KnowledgeTree';
 import { useAuth } from './AuthContext';
+import { isAuthActionRequest } from '../utils/authActionLink';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -99,13 +100,6 @@ const isDashboardSection = (value: unknown): value is DashboardSection => (
   typeof value === 'string' && VALID_DASHBOARD_SECTIONS.has(value as DashboardSection)
 );
 
-const isFirebaseAuthActionRoute = () => {
-  const path = window.location.pathname;
-  const search = window.location.search;
-  return path === '/reset-password'
-    || path.startsWith('/reset-password/')
-    || search.includes('mode=resetPassword');
-};
 
 function serializeToURL(state: NavigationState): string {
   const params = new URLSearchParams();
@@ -244,11 +238,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       isPopstateRef.current = false;
       return;
     }
-    // Skip URL sync entirely when we're on a Firebase auth action route — the
-    // query params (mode=resetPassword, oobCode, apiKey) carry the reset code
-    // and must survive long enough for ResetPasswordPage to read them.
-    // Re-rewriting the URL from navigation state strips those params.
-    if (typeof window !== 'undefined' && isFirebaseAuthActionRoute()) {
+    // Skip URL sync entirely on a Firebase email action link — the query
+    // params (mode, oobCode, apiKey) carry the one-use code and must survive
+    // long enough for AuthActionPage to read them. Re-rewriting the URL from
+    // navigation state strips those params.
+    if (isAuthActionRequest()) {
       return;
     }
     const url = serializeToURL(state);
@@ -312,7 +306,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
       // Seed or normalize the entry in place. This keeps browser Back from
       // resurfacing the retired Training Hub URL or creating a duplicate entry.
-      if (!isFirebaseAuthActionRoute()) {
+      if (!isAuthActionRequest()) {
         window.history.replaceState(
           { ...restoredState, __navSynced: true },
           '',

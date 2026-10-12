@@ -27,9 +27,9 @@ Copy an existing case end-to-end (e.g. `NAVIGATE_TO_INSIGHTS`). Navigation is **
 sync**, not `useState`. Components never call `setViewState`; they call `const nav = useNavigation(); nav.navigateToX()`.
 Each `navigateX` runs `window.scrollTo(0,0)` then dispatches; `goBack()` is `window.history.back()`. The URL is the
 source of truth for deep-links (`?view=&cat=&mod=&tool=&from=journey`); state is the runtime truth. A
-`/reset-password` + `mode=resetPassword` guard skips URL-sync so the Firebase `oobCode` survives.
+Firebase email-action guard (`isAuthActionRequest` in `utils/authActionLink.ts`: the `/reset-password` path, or a known `mode` + `oobCode`) skips URL-sync so the one-use `oobCode` survives.
 
-**`AppRouter` is the single switch**, in strict precedence: reset-password params → `!userResolved` spinner → `!user`
+**`AppRouter` is the single switch**, in strict precedence: Firebase email-action link (`AuthActionPage`, which dispatches on `mode`: reset password, confirm email, recover email) → `!userResolved` spinner → `!user`
 LoginPage → `needsPasswordChange` → `isAdmin` AdminDashboard → `role==='gc'` GCDashboard → `needsOnboarding` Onboarding →
 the per-`viewState` `if`-chain → `FallbackRedirect` to `tree`. Add new student views as another `if (viewState === 'x')`
 before the fallback. Every non-eager view is `lazy(() => import('./X'))` wrapped in

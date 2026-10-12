@@ -134,7 +134,8 @@ describe('screens opt into a dark treatment', () => {
   const needsCompat = [
     // LoginPage's themed root is owned by its shared account card.
     'components/AccountCard.tsx',
-    'components/ResetPasswordPage.tsx',
+    // Password reset and every other email-action screen share AuthActionCard.
+    'components/AuthActionCard.tsx',
     'components/AccreditationPage.tsx',
     'components/CutContentPage.tsx',
     'components/WipTools.tsx',
