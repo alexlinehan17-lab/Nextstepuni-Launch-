@@ -167,11 +167,11 @@ def apply_review(cards):
         optional_criteria = ([award('theme','Príomhthéama',2,'An príomhthéama = 2 mharc.'),
                               award('development','Forbairt an phríomhthéama',23,optional_guide)]
                              if year == 2024 else [prose_guide(optional_guide)])
-        for suffix, atlas, prompt, label in [('', 'P-2B-a-scannan', optional_film, 'Scannán roghnach'),
-                                            ('-drama', 'P-2B-a-drama', optional_drama, 'Dráma roghnach')]:
-            put('prose-2b-a'+suffix,atlas,prompt,'irish-4-7',[9 if year == 2022 else 8],[27,31],
-                copy.deepcopy(optional_criteria), 'Prós 2B(a) · '+label, restrictions,
-                template=base+'prose-2b-a')
+        # The optional film and the optional play share one grid and one Atlas heading (irish-4-7),
+        # so one card carries both printed alternatives (choose-one refinement, 2026-10-12).
+        optional_head = re.search(r'\(a\) Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach\. ', pb).group(0)
+        put('prose-2b-a','P-2B-a',optional_head+optional_film+' nó '+optional_drama,'irish-4-7',[9 if year == 2022 else 8],[27,31],
+            copy.deepcopy(optional_criteria), 'Prós 2B(a) · Scannán nó dráma roghnach', restrictions)
         other_criteria = ([award('theme','Príomhthéama',2,'An príomhthéama = 2 mharc.'),
                            award('development','Forbairt an phríomhthéama',23,section(s[32],r'Treoir:'))]
                           if year == 2022 else [prose_guide(s[32])])
@@ -216,5 +216,5 @@ def apply_review(cards):
                             reviewedSchemePages=list(range(27,33))+list(range(37 if year==2022 else 38,41)),
                             cardIds=reviewed_ids,selectionDecisions=decisions))
     assert original_ids <= {c['id'] for c in cards}
-    assert len(cards) == 407 and len({c['id'] for c in cards}) == 407
+    assert len(cards) == 405 and len({c['id'] for c in cards}) == 405
     return cards, reviews

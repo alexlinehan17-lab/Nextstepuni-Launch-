@@ -16,7 +16,7 @@ const routeIds = new Set(reviews.flatMap(review => review.cardIds));
 const reviewed = authored.cards.filter(card => routeIds.has(card.id));
 
 describe('visually reviewed Higher Irish prose and optional poetry routes', () => {
-  it('retains both prescribed works and both optional genres with their own full prompts and tariffs', () => {
+  it('keeps both prescribed works apart and one optional film-or-play card with both printed alternatives', () => {
     for (const year of [2022,2024]) {
       const base = `irish-${year}-hl-p2-`;
       const film = byId.get(base+'prose-2a-a')!;
@@ -27,19 +27,19 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       expect(film.questionText).not.toContain('An Lasair Choille');
       expect(drama.questionText).toContain(year === 2022 ? 'chuairt Mhíoda' : 'Is siombail é Binncheol');
       expect(drama.questionText).not.toContain('Cáca Milis');
-      for (const [suffix, genre, ending] of [
-        ['', 'scannán roghnach', 'an scannáin'], ['-drama', 'dráma roghnach', 'an dráma'],
-      ]) {
-        const card = byId.get(base+'prose-2b-a'+suffix)!;
-        expect(card.questionText).toContain(genre);
-        expect(card.questionText).toContain(ending);
-        expect(card.questionText).toContain('hainm an scríbhneora');
-        expect(card.totalMarks).toBe(30);
-        expect(card.rubric.system).toBe('irish');
-        if (card.rubric.system !== 'irish') throw new Error('Wrong rubric');
-        expect(card.rubric.taskRequirements.join(' ')).toContain('Níl cead');
-        expect(card.rubric.criteria.map(c => c.maxMarks)).toEqual(year === 2022 ? [25,5] : [2,23,5]);
+      // The optional film and the optional play share one grid and one Atlas heading (irish-4-7),
+      // so the live 2B(a) card carries both printed alternatives (choose-one refinement).
+      expect(byId.has(base+'prose-2b-a-drama')).toBe(false);
+      const optionalA = byId.get(base+'prose-2b-a')!;
+      for (const text of ['scannán roghnach', 'an scannáin', 'dráma roghnach', 'an dráma', 'hainm an scríbhneora']) {
+        expect(optionalA.questionText).toContain(text);
       }
+      expect(optionalA.questionRef).toBe(`${year} HL Paper 2 Prós 2B(a) · Scannán nó dráma roghnach`);
+      expect(optionalA.totalMarks).toBe(30);
+      expect(optionalA.rubric.system).toBe('irish');
+      if (optionalA.rubric.system !== 'irish') throw new Error('Wrong rubric');
+      expect(optionalA.rubric.taskRequirements.join(' ')).toContain('Níl cead');
+      expect(optionalA.rubric.criteria.map(c => c.maxMarks)).toEqual(year === 2022 ? [25,5] : [2,23,5]);
       expect([film,drama].every(c => c.totalMarks === 30 && tariffReconciles(c))).toBe(true);
       const prescribedB = byId.get(base+'prose-2a-b')!;
       expect(prescribedB.questionText.startsWith(year === 2022 ? 'Hurlamaboc' : 'Dís')).toBe(true);
@@ -74,8 +74,8 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
     expect(byId.has('irish-2022-hl-p2-poetry-3b-a')).toBe(true);
   });
 
-  it('joins all nineteen reviewed responses to exact Atlas task, topic and paper/scheme regions', () => {
-    expect(reviewed).toHaveLength(19);
+  it('joins all seventeen reviewed responses to exact Atlas task, topic and paper/scheme regions', () => {
+    expect(reviewed).toHaveLength(17);
     for (const raw of reviewed) {
       if (!('atlasQuestionId' in raw) || !('reviewedPaperPages' in raw) || !('schemePages' in raw)) throw new Error('Missing reviewed identity');
       const card = byId.get(raw.id)!;
@@ -115,7 +115,7 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       expect(createHash('sha256').update(JSON.stringify(legacy)).digest('hex')).toBe(year === 2022
         ? '1e563fe88d83be836a4a4d3d02b9fa50d8db754d0f2e59218720173f5c47fdef'
         : '59c189047fa108b5f2e66888a2557ae388efc65e48fda35fd7cd44070ccf589e');
-      expect(map.q.filter((q: { n: string }) => /^[PF]-/.test(q.n))).toHaveLength(year === 2022 ? 11 : 10);
+      expect(map.q.filter((q: { n: string }) => /^[PF]-/.test(q.n))).toHaveLength(year === 2022 ? 10 : 9);
       expect(map.q.some((q: { n: string }) => q.n === 'R-A')).toBe(false);
       const anchors = JSON.parse(readFileSync(`public/paper-anchors/${year}/LC001ALP200IV.pdf.json`,'utf8'));
       expect(anchors.paperOnly).toBe(1);

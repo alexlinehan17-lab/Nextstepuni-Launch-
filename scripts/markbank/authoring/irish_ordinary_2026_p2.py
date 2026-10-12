@@ -9,8 +9,10 @@ assertions, not corpus-completeness proof.
 - Prescribed prose and poetry: each printed text is a whole 25-mark route; its
   printed sub-questions are practice cards at their own tariffs (3A(b)(i)(a)–(d)
   at 2 each). Optional prose/poetry routes stay whole (open text + title marks).
-- “Freagair do rogha dhá cheann as (a), (b) nó (c)” is expanded mechanically into
-  every two-route 50-mark selection (2A 5, 2B 5, 3A 3, 3B 3).
+- “Freagair do rogha dhá cheann as (a), (b) nó (c)” is a choice, not a route: the
+  mechanical two-route selections are built and then withdrawn (irish_choice), so each
+  option carries the instruction instead. 2B(a)'s optional film or play share one grid
+  and one Atlas heading, so one card carries both printed alternatives.
 """
 from __future__ import annotations
 import argparse
@@ -228,12 +230,6 @@ def build():
     head2b = ('Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2B Prós Roghnach — Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach. '
               'Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.')
     optional_prose = [
-        ('P-2B-a-scannan', 'prose-2b-a-scannan', 'Prós 2B(a) · Scannán roghnach',
-         '(a) Freagair an cheist thíos faoin scannán roghnach nó faoin dráma roghnach.\nMaidir le scannán roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas ar na príomhimeachtaí (príomhrudaí) a tharlaíonn sa scannán sin. (23 marc)\nNí mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (2 mharc)',
-         'Maidir le scannán roghnach', 'nó Maidir le dráma roghnach'),
-        ('P-2B-a-drama', 'prose-2b-a-drama', 'Prós 2B(a) · Dráma roghnach',
-         '(a) Freagair an cheist thíos faoin scannán roghnach nó faoin dráma roghnach.\nMaidir le dráma roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas ar na príomhimeachtaí (príomhrudaí) a tharlaíonn sa dráma sin. (23 marc)\nNí mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (2 mharc)',
-         'Maidir le dráma roghnach', '(b) Maidir le gearrscéal roghnach'),
         ('P-2B-b', 'prose-2b-b', 'Prós 2B(b) · Gearrscéal roghnach',
          '(b) Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an ghearrscéil sin, dar leat. Tabhair cuntas ar na heachtraí is mó a léiríonn an príomhthéama sin sa ghearrscéal. (23 marc)\nNí mór teideal an ghearrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn. (2 mharc)',
          '(b) Maidir le gearrscéal roghnach', '(c) Maidir le giota as úrscéal roghnach'),
@@ -241,6 +237,27 @@ def build():
          '(c) Maidir le giota as úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh an phríomhphearsa (an príomhcharachtar) sa ghiota sin. Tabhair cuntas ar na heachtraí is mó a tharlaíonn don duine sin ó thús go deireadh an ghiota. (23 marc)\nNí mór teideal an úrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn. (2 mharc)',
          '(c) Maidir le giota as úrscéal roghnach', 'CEIST 3'),
     ]
+    # The optional film and the optional play share one grid and one Atlas heading (irish-4-7), so one card
+    # carries both printed alternatives (choose-one refinement, 2026-10-12).
+    film_play = ('(a) Freagair an cheist thíos faoin scannán roghnach nó faoin dráma roghnach.\n'
+                 'Maidir le scannán roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas ar na príomhimeachtaí (príomhrudaí) a tharlaíonn sa scannán sin. (23 marc)\n'
+                 'Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (2 mharc)\nnó\n'
+                 'Maidir le dráma roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas ar na príomhimeachtaí (príomhrudaí) a tharlaíonn sa dráma sin. (23 marc)\n'
+                 'Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (2 mharc)')
+    for line in film_play.split('\n'):
+        assert comparable(re.sub(r'^\([abc]\) | \((23|2) m?h?arc\)$', '', line)) in comparable(texts[8]), line[:40]
+    halves = []
+    for start, end in [('Maidir le scannán roghnach', 'nó Maidir le dráma roghnach'), ('Maidir le dráma roghnach', '(b) Maidir le gearrscéal roghnach')]:
+        chunk, spages = lit.chunk(start, end)
+        chunk = before_language_note(chunk)
+        t = chunk.index('Teideal an')
+        assert chunk[t:].endswith('= 1 mharc (2 mharc)'), (start, chunk[t:])
+        halves.append((chunk[:t].strip(), chunk[t:], spages))
+    routes.setdefault('2B', []).append(add('P-2B-a', 'prose-2b-a', 'Prós 2B(a) · Scannán nó dráma roghnach', head2b + '\n' + film_play, 'irish-4-7', [9],
+        sorted({p for h in halves for p in h[2]}),
+        [criterion('eolas', 'Eolas', 23, [h[0] for h in halves], 'indicative'), criterion('teideal', 'Teideal + ainm an scríbhneora', 2, [h[1] for h in halves], 'exact'), deduction()],
+        lit_requirements, 'One complete SEC response about an optional film or an optional play (the same scheme for both): 23 for five points (scheme weights 5/4) and 2 for the exact title and writer, then the 0–4 Gaeilge deduction once. The optional text is open content chosen by the candidate.',
+        None, ('Prós Roghnach', '2B(a) · Scannán nó dráma roghnach', [9])))
     for key, slug, ref, prompt, start, end in optional_prose:
         for line in prompt.split('\n'):
             assert comparable(re.sub(r'^\([abc]\) | \((23|2) m?h?arc\)$', '', line)) in comparable(texts[8]), (key, line[:40])
@@ -354,7 +371,7 @@ def build():
 
     decisions = selection_decisions(paper)
     pairs = [c for c in cards if 'memberCardIds' in c]
-    assert len(pairs) == 16 and {c['totalMarks'] for c in pairs} == {50}, (len(pairs))
+    assert len(pairs) == 14 and {c['totalMarks'] for c in pairs} == {50}, (len(pairs))
     assert len(cards) == len({c['id'] for c in cards}) == len({c['atlasQuestionId'] for c in cards})
     assert sum(c['totalMarks'] for c in cards if re.fullmatch(r'R-[AB]-\d', c['atlasQuestionId'])) == 100
     for card in cards:

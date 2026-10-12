@@ -35,11 +35,26 @@ describe('Irish: choice is not a route', () => {
     expect(deck.length).toBe(raw.length);
   });
 
+  it('gives an optional film or play one card when both file under one Atlas heading', () => {
+    // Choose-one refinement (2026-10-12), decided by the Atlas mapping: the optional film and the
+    // optional play share one grid and one heading (irish-4-7), so one card carries both printed
+    // alternatives. Prescribed Cáca Milis / An Lasair Choille file under different headings and stay apart.
+    expect(raw.filter(c => /-prose-2b-[a-c]-(scannan|drama)$/.test(c.id)).map(c => c.id)).toEqual([]);
+    const filmOrPlay = raw.filter(c => /^irish-20\d\d-(hl|ol)-p2-prose-2b-[a-c]$/.test(c.id) && /scannán roghnach/.test(c.questionText));
+    expect(filmOrPlay.map(c => c.id).sort()).toEqual(['irish-2021-ol-p2-prose-2b-b', 'irish-2022-hl-p2-prose-2b-a', 'irish-2023-ol-p2-prose-2b-c',
+      'irish-2024-hl-p2-prose-2b-a', 'irish-2024-ol-p2-prose-2b-c', 'irish-2026-hl-p2-prose-2b-a', 'irish-2026-ol-p2-prose-2b-a']);
+    for (const card of filmOrPlay) expect(card.questionText, card.id).toMatch(/dráma roghnach/);
+    // Prescribed Cáca Milis and An Lasair Choille keep a card each (different headings).
+    for (const card of raw.filter(c => /-prose-2a-[ac](-caca-milis)?$/.test(c.id) && /^Cáca Milis$/m.test(c.questionText))) {
+      expect(card.questionText, card.id).not.toMatch(/^An Lasair Choille$/m);
+    }
+  });
+
   it('carries each printed choose-N instruction on every option it governs', () => {
     const governed: [string, Raw[], RegExp][] = [
       ['OL Paper 1 titles', raw.filter(c => /^irish-20(24|25|26)-ol-p1-composition-[a-d]-i{1,3}$/.test(c.id)),
         /^Freagair do rogha dhá cheann de A, B, C, D anseo\.$/],
-      ['2026 OL Paper 2 routes', raw.filter(c => /^irish-2026-ol-p2-(prose-2[ab]-[a-c](-caca-milis|-an-lasair-choille|-scannan|-drama)?|poetry-3[ab]-[a-c])$/.test(c.id)),
+      ['2026 OL Paper 2 routes', raw.filter(c => /^irish-2026-ol-p2-(prose-2[ab]-[a-c](-caca-milis|-an-lasair-choille)?|poetry-3[ab]-[a-c])$/.test(c.id)),
         /^Freagair do rogha dhá cheann as \(a\), \(b\) nó \(c\)\.$/],
       ['2025 OL Paper 2 options and sub-questions', raw.filter(c => /^irish-2025-ol-p2-(prose-2[ab]-[a-c]|poetry-3[ab]-[a-c](-i{1,3}(-[a-c])?)?)$/.test(c.id)),
         /^Freagair do rogha dhá cheann as \(a\), \(b\) nó \(c\)( thíos)?\.$/],
@@ -49,7 +64,7 @@ describe('Irish: choice is not a route', () => {
         /^Ceist [23] Freagair do rogha dhá cheann de \(a\), \(b\), \(c\) anseo thíos\.$/],
     ];
     expect(governed.map(([name, cards]) => [name, cards.length])).toEqual([
-      ['OL Paper 1 titles', 27], ['2026 OL Paper 2 routes', 14], ['2025 OL Paper 2 options and sub-questions', 24], ['2024 OL Paper 2 options and sub-questions', 36],
+      ['OL Paper 1 titles', 27], ['2026 OL Paper 2 routes', 13], ['2025 OL Paper 2 options and sub-questions', 24], ['2024 OL Paper 2 options and sub-questions', 36],
       ['Foundation reading parts', 510],
     ]);
     for (const [, cards, instruction] of governed) {

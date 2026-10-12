@@ -137,7 +137,6 @@
       "irish-2024-hl-p2-prose-2a-a-an-lasair-choille",
       "irish-2024-hl-p2-prose-2a-b",
       "irish-2024-hl-p2-prose-2b-a",
-      "irish-2024-hl-p2-prose-2b-a-drama",
       "irish-2024-hl-p2-prose-2b-b",
       "irish-2024-hl-p2-poetry-3a-a",
       "irish-2024-hl-p2-poetry-3a-b",
@@ -194,7 +193,6 @@
       "irish-2024-hl-p2-prose-2a-a-an-lasair-choille",
       "irish-2024-hl-p2-prose-2a-b",
       "irish-2024-hl-p2-prose-2b-a",
-      "irish-2024-hl-p2-prose-2b-a-drama",
       "irish-2024-hl-p2-prose-2b-b",
       "irish-2024-hl-p2-poetry-3a-a",
       "irish-2024-hl-p2-poetry-3a-b",
@@ -207,7 +205,7 @@
       "irish-2024-hl-p2-literature-4-e",
       "irish-2024-hl-p2-literature-4-f"
     ],
-    "markBankAtlasTaskParity": "72 exact year/level/file/part joins; original whole questions and Atlas entries preserved.",
+    "markBankAtlasTaskParity": "71 exact year/level/file/part joins; original whole questions and Atlas entries preserved. 2B(a) optional film or play is one card since 2026-10-12 (one grid, one Atlas heading).",
     "examStructure": {
       "reading": {
         "requiredPassages": 2,
@@ -220,7 +218,6 @@
           "irish-2024-hl-p2-prose-2a-a-an-lasair-choille",
           "irish-2024-hl-p2-prose-2a-b",
           "irish-2024-hl-p2-prose-2b-a",
-          "irish-2024-hl-p2-prose-2b-a-drama",
           "irish-2024-hl-p2-prose-2b-b"
         ],
         "marksPerRoute": 30

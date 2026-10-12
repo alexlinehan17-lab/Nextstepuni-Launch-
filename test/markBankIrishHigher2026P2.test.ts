@@ -15,8 +15,8 @@ const guide=(key:string)=>get(key).criteria.map(c=>c.guidance.join(' ')).join(' 
 
 describe('2026 Higher Paper 2 source reconciliation',()=>{
   it('keeps every reading question, published part and independent slot at its tariff',()=>{
-    expect(cards).toHaveLength(72);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(72);
+    expect(cards).toHaveLength(71);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(71);
     for(const card of cards) expect(tariffReconciles(card),card.id).toBe(true);
     const wholes=authored.cards.filter(c=>/^R-[AB]-\d$/.test(c.atlasQuestionId));
     expect(wholes.map(c=>[c.atlasQuestionId,c.totalMarks])).toEqual([
@@ -59,7 +59,8 @@ describe('2026 Higher Paper 2 source reconciliation',()=>{
     const routes=authored.cards.filter(c=>!c.id.includes('-reading-'));
     expect(routes.map(c=>[c.atlasQuestionId,c.totalMarks,c.topicId])).toEqual([
       ['P-2A-a-caca-milis',30,'irish-4-6'],['P-2A-a-an-lasair-choille',30,'irish-4-8'],['P-2A-b',30,'irish-4-4'],
-      ['P-2B-a-scannan',30,'irish-4-7'],['P-2B-a-drama',30,'irish-4-7'],['P-2B-b',30,'irish-4-7'],
+      // The optional film or play shares one grid and one Atlas heading: one card with both alternatives.
+      ['P-2B-a',30,'irish-4-7'],['P-2B-b',30,'irish-4-7'],
       ['F-3A-a',30,'irish-5-3'],['F-3A-b',30,'irish-5-4'],['F-3B-a',30,'irish-5-6'],['F-3B-b',30,'irish-5-6'],
       ['X-4A',40,'irish-6-0'],['X-4B',40,'irish-6-1'],['X-4C',40,'irish-6-2'],['X-4D',40,'irish-6-3'],['X-4E',40,'irish-6-4'],['X-4F',40,'irish-6-9'],
     ]);
@@ -67,6 +68,8 @@ describe('2026 Higher Paper 2 source reconciliation',()=>{
     for(const key of ['F-3A-a','F-3A-b','F-3B-a','F-3B-b']) expect(get(key).criteria.map(c=>c.maxMarks)).toEqual([13,5,7,5]);
     expect(get('X-4F').criteria.map(c=>c.maxMarks)).toEqual([19,7,9,5]);
     expect(guide('P-2A-a-caca-milis')).toContain('as 18 marc');
+    expect(get('P-2B-a').questionText).toContain('Maidir leis an scannán roghnach');
+    expect(get('P-2B-a').questionText).toContain('Maidir leis an dráma roghnach');
     expect(guide('F-3A-a')).toContain('Gan ach íomhá amháin luaite agus pléite, marcáiltear an t-eolas as 10 marc');
     expect(guide('F-3A-a')).toContain('Máirtín Ó Direáin');
     expect(guide('F-3A-b')).toContain('Nuala Ní Dhomhnaill');

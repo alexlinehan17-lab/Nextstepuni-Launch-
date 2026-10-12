@@ -1,7 +1,7 @@
 {
   "subject": "irish",
   "scope": "2021–2025 Higher and Ordinary Level",
-  "cardCount": 451,
+  "cardCount": 449,
   "cards": [
     {
       "id": "irish-2021-hl-p1-listening-a-f1",
@@ -9490,8 +9490,8 @@
       "level": "higher",
       "paper": 2,
       "section": "2",
-      "questionRef": "2022 HL Paper 2 Prós 2B(a) · Scannán roghnach",
-      "questionText": "Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh an príomhcharachtar (an phríomhphearsa) sa scannán sin. Déan plé ar an léargas a thugtar dúinn ar iompar an duine sin agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an scannáin. Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
+      "questionRef": "2022 HL Paper 2 Prós 2B(a) · Scannán nó dráma roghnach",
+      "questionText": "(a) Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach. Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh an príomhcharachtar (an phríomhphearsa) sa scannán sin. Déan plé ar an léargas a thugtar dúinn ar iompar an duine sin agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an scannáin. Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) nó Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh an príomhcharachtar (an phríomhphearsa) sa dráma sin. Déan plé ar an léargas a thugtar dúinn ar iompar an duine sin agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an dráma. Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
       "totalMarks": 30,
       "topicId": "irish-4-7",
       "conceptId": "irish-prose-2b-a-irish-4-7",
@@ -9567,7 +9567,7 @@
         27,
         31
       ],
-      "atlasQuestionId": "P-2B-a-scannan",
+      "atlasQuestionId": "P-2B-a",
       "reviewedPaperPages": [
         9
       ],
@@ -23965,8 +23965,8 @@
       "level": "higher",
       "paper": 2,
       "section": "2",
-      "questionRef": "2024 HL Paper 2 Prós 2B(a) · Scannán roghnach",
-      "questionText": "Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an scannáin sin. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an scannáin. Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
+      "questionRef": "2024 HL Paper 2 Prós 2B(a) · Scannán nó dráma roghnach",
+      "questionText": "(a) Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach. Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an scannáin sin. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an scannáin. Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) nó Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dráma sin. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dráma. Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
       "totalMarks": 30,
       "topicId": "irish-4-7",
       "conceptId": "irish-prose-2b-a-irish-4-7",
@@ -24055,7 +24055,7 @@
         27,
         31
       ],
-      "atlasQuestionId": "P-2B-a-scannan",
+      "atlasQuestionId": "P-2B-a",
       "reviewedPaperPages": [
         8
       ],
@@ -38850,95 +38850,6 @@
       "reviewedAt": "2026-10-07"
     },
     {
-      "id": "irish-2022-hl-p2-prose-2b-a-drama",
-      "year": 2022,
-      "level": "higher",
-      "paper": 2,
-      "section": "2",
-      "questionRef": "2022 HL Paper 2 Prós 2B(a) · Dráma roghnach",
-      "questionText": "Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh an príomhcharachtar (an phríomhphearsa) sa dráma sin. Déan plé ar an léargas a thugtar dúinn ar iompar an duine sin agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an dráma. Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
-      "totalMarks": 30,
-      "topicId": "irish-4-7",
-      "conceptId": "irish-prose-2b-a-drama-irish-4-7",
-      "paperPage": 9,
-      "paperTraceScore": 1,
-      "schemePage": 27,
-      "schemeTraceScore": 1,
-      "taskRequirements": [
-        "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
-        "Ní mór teideal an tsaothair agus ainm an scríbhneora a scríobh síos go cruinn."
-      ],
-      "criteria": [
-        {
-          "id": "eolas",
-          "label": "Eolas",
-          "kind": "award",
-          "maxMarks": 25,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25
-          ],
-          "guidanceKind": "indicative",
-          "guidance": [
-            "Nóta: I gcás na gceisteanna 2 (Prós), 3 (Filíocht), agus 4 (Litríocht Bhreise) beidh 5 mharc le bronnadh i ngach cás ar chaighdeán na Gaeilge. Sa Phrós mar sin 25 ar Eolas agus 5 ar Ghaeilge; san Fhilíocht 25 ar Eolas agus 5 ar Ghaeilge; sa Litríocht Bhreise 35 ar Eolas agus 5 ar Ghaeilge. Nóta: Níl na nótaí tacaíochta seo uileghabhálach ná críochnúil agus bronnfar marcanna ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais. Ní freagraí eiseamláireacha iad ach, ina ionad sin, sampla de fhreagraí féideartha atá iontu. – PRÓS AINMNITHE nó PRÓS ROGHNACH – (30 marc) Catagóir Eolas (25 marc) Gaeilge (5 mharc) Sármhaith Plé an-chuimsitheach ar an ráiteas Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don téacs Smaointe forbartha go sármhaith 22-25 Sárchumas maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) An-mhaith Plé cuimsitheach ar an ráiteas Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don téacs Smaointe forbartha go han-mhaith 18-21 Cumas an-mhaith maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Maith Achoimre ar imeachtaí an téacs Insint lom ar phríomhghnéithe an téacs sna pointí eolais 14-17 Cumas maith maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Measartha Iarracht ar achoimre Eolas bearnach nó míchruinn nó lochtach 10-13 Cumas measartha maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Lag/ An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-9 Cumas lag/an-lag maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Ceist 2 PRÓS (30 marc) An príomhcharachtar (an phríomhphearsa) a ainmniú agus plé a dhéanamh ar iompar an duine sin mar aon le tionchar an iompair sin ar imeachtaí an scannáin/an dráma. Catagóir Eolas (25 marc) Gaeilge (5 mharc) Sármhaith Plé an-chuimsitheach ar an ráiteas Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don téacs Smaointe forbartha go sármhaith 22-25 Sárchumas maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) An-mhaith Plé cuimsitheach ar an ráiteas Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don téacs Smaointe forbartha go han-mhaith 18-21 Cumas an-mhaith maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Maith Achoimre ar imeachtaí an téacs Insint lom ar phríomhghnéithe an téacs sna pointí eolais 14-17 Cumas maith maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Measartha Iarracht ar achoimre Eolas bearnach nó míchruinn nó lochtach 10-13 Cumas measartha maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht). Lag/ An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-9 Cumas lag/an-lag maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht)"
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Gaeilge",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "5 sárchumas; 4 cumas an-mhaith; 3 cumas maith; 2 cumas measartha; 1 cumas lag/an-lag; 0 gan fiúntas. Gramadach, comhréir, struchtúr agus deilbhíocht."
-          ]
-        }
-      ],
-      "markingGuideNote": "One complete SEC response: 25 Eolas and a single shared 5-mark Gaeilge award. Supporting examples are indicative; other valid points are credited on their merits. Do not add alternative route tariffs together.",
-      "paperFileid": "LC001ALP200IV",
-      "schemePages": [
-        27,
-        31
-      ],
-      "atlasQuestionId": "P-2B-a-drama",
-      "reviewedPaperPages": [
-        9
-      ],
-      "reviewedAt": "2026-10-07"
-    },
-    {
       "id": "irish-2022-hl-p2-poetry-3b-a-iomhanna",
       "year": 2022,
       "level": "higher",
@@ -39374,108 +39285,6 @@
         30
       ],
       "atlasQuestionId": "P-2A-a-an-lasair-choille",
-      "reviewedPaperPages": [
-        8
-      ],
-      "reviewedAt": "2026-10-07"
-    },
-    {
-      "id": "irish-2024-hl-p2-prose-2b-a-drama",
-      "year": 2024,
-      "level": "higher",
-      "paper": 2,
-      "section": "2",
-      "questionRef": "2024 HL Paper 2 Prós 2B(a) · Dráma roghnach",
-      "questionText": "Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dráma sin. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dráma. Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
-      "totalMarks": 30,
-      "topicId": "irish-4-7",
-      "conceptId": "irish-prose-2b-a-drama-irish-4-7",
-      "paperPage": 8,
-      "paperTraceScore": 1,
-      "schemePage": 27,
-      "schemeTraceScore": 1,
-      "taskRequirements": [
-        "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
-        "Ní mór teideal an tsaothair agus ainm an scríbhneora a scríobh síos go cruinn."
-      ],
-      "criteria": [
-        {
-          "id": "theme",
-          "label": "Príomhthéama",
-          "kind": "award",
-          "maxMarks": 2,
-          "permittedMarks": [
-            0,
-            1,
-            2
-          ],
-          "guidanceKind": "indicative",
-          "guidance": [
-            "An príomhthéama = 2 mharc."
-          ]
-        },
-        {
-          "id": "development",
-          "label": "Forbairt an phríomhthéama",
-          "kind": "award",
-          "maxMarks": 23,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            22,
-            23
-          ],
-          "guidanceKind": "indicative",
-          "guidance": [
-            "An príomhthéama a ainmniú agus plé a dhéanamh ar fhorbairt an phríomhthéama sin ag baint úsáide as tagairtí cruinne don scannán nó don dráma. An príomhthéama = 2 mharc An plé ar fhorbairt an phríomhthéama sin = 23 marc Catagóir Eolas (23 marc) Sármhaith Plé an-chuimsitheach ar fhorbairt an phríomhthéama Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don scannán nó don dráma Smaointe forbartha go sármhaith 21-23 An-mhaith Plé cuimsitheach ar fhorbairt an phríomhthéama Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don scannán nó don dráma Smaointe forbartha go han-mhaith 18-20 Maith Plé maith ar fhorbairt an phríomhthéama Smaointe agus pointí eolais forbartha go maith 14-17 Measartha Plé measartha ar fhorbairt an phríomhthéama Eolas bearnach, míchruinn agus lochtach 10-13 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-9"
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Gaeilge",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "5 sárchumas; 4 cumas an-mhaith; 3 cumas maith; 2 cumas measartha; 1 cumas lag/an-lag; 0 gan fiúntas. Gramadach, comhréir, struchtúr agus deilbhíocht."
-          ]
-        }
-      ],
-      "markingGuideNote": "One complete SEC response: 25 Eolas and a single shared 5-mark Gaeilge award. Supporting examples are indicative; other valid points are credited on their merits. Do not add alternative route tariffs together.",
-      "paperFileid": "LC001ALP200IV",
-      "schemePages": [
-        27,
-        31
-      ],
-      "atlasQuestionId": "P-2B-a-drama",
       "reviewedPaperPages": [
         8
       ],

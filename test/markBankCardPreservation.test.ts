@@ -47,14 +47,14 @@ import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
 // Additive partial-review routes are checked separately while the original
 // Irish 215-ID hash stays frozen. Do not refresh it during the archive audit.
+// The 2022/2024 optional-drama routes were withdrawn on 2026-10-12 (branch-only, never
+// live): the live 2B(a) card now carries the optional film or play.
 const addedIrishRoutes = new Set([
   'irish-2022-hl-p2-prose-2a-a-an-lasair-choille',
-  'irish-2022-hl-p2-prose-2b-a-drama',
   'irish-2022-hl-p2-poetry-3b-a-iomhanna',
   'irish-2022-hl-p2-poetry-3b-a-codarsnacht',
   'irish-2022-hl-p2-poetry-3b-a-mothuchain',
   'irish-2024-hl-p2-prose-2a-a-an-lasair-choille',
-  'irish-2024-hl-p2-prose-2b-a-drama',
   ...['a','b'].flatMap(passage => [1,2,3,4,5].flatMap(number =>
     ['a','bi','bii'].map(part => `irish-2024-hl-p2-reading-${passage}-q${number}-${part}`))),
   ...['a','b'].flatMap(passage => ['a','b'].map(part => `irish-2024-hl-p2-reading-${passage}-q6-${part}`)),
@@ -72,7 +72,7 @@ const addedIrishRoutes = new Set([
     ...(number === 6 ? ['a','b'] : ['a','bi','bii']).map(part => `irish-2026-hl-p2-reading-${passage}-q${number}-${part}`),
   ])),
   ...['a-q6-b','b-q1-bii','b-q2-bi','b-q2-bii','b-q4-bii'].flatMap(key => [1,2].map(slot => `irish-2026-hl-p2-reading-${key}-${slot}`)),
-  ...['prose-2a-a-caca-milis','prose-2a-a-an-lasair-choille','prose-2a-b','prose-2b-a-scannan','prose-2b-a-drama','prose-2b-b',
+  ...['prose-2a-a-caca-milis','prose-2a-a-an-lasair-choille','prose-2a-b','prose-2b-a','prose-2b-b',
     'poetry-3a-a','poetry-3a-b','poetry-3b-a','poetry-3b-b',
     'literature-4-a','literature-4-b','literature-4-c','literature-4-d','literature-4-e','literature-4-f'].map(key => `irish-2026-hl-p2-${key}`),
   // 2025 Higher Paper 2 (reviewed 2026-10-11): every published reading part beside the
@@ -100,7 +100,8 @@ const addedIrishOrdinaryRoutes = new Set([
     const five = ['i','ii','iii','iv','v'], three = ['i','ii','iii'];
     const routes = [
       ...parts('prose-2a-a-caca-milis', five), ...parts('prose-2a-a-an-lasair-choille', five), 'prose-2a-b', ...parts('prose-2a-c', five),
-      'prose-2b-a-scannan', 'prose-2b-a-drama', 'prose-2b-b', 'prose-2b-c',
+      // The optional film or play is one card (one grid, one Atlas heading).
+      'prose-2b-a', 'prose-2b-b', 'prose-2b-c',
       ...parts('poetry-3a-a', three), ...parts('poetry-3a-b', [...three, 'i-a', 'i-b', 'i-c', 'i-d']), ...parts('poetry-3a-c', three),
       'poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c',
     ];
