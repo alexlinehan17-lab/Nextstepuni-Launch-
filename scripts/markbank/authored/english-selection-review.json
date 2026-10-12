@@ -1685,7 +1685,7 @@
     "english-2024-hl-p1-t3-a-ii": {
       "questionSha256": "84b33025b8a665a68c0bbed879425019bfb52aa8a90193052ec326752c197a1c",
       "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "reason": "Scheme PDF10: three views on ways young people can protest or demonstrate their views; “a broad definition of ‘protest’”; “free to take a stance from any point of view – in favour/against/ambiguous”. “Protest, or demonstrate” is one open topic, not routes. One 15-mark response."
     },
     "english-2024-ol-p1-t3-a-ii": {
       "questionSha256": "26c2d282dca1e9c7f33fc1e3c7b3b54bc73e375001e9344270920f547170b02e",
@@ -2030,7 +2030,7 @@
     "english-2024-hl-p1-t1-b": {
       "questionSha256": "38652ea83c11866b27fa66b0e1dc4bdbe3777874b368ceeb9f5a5eb8e938f841",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: Both speakers and both arguments are compulsory; the explicitly required ending allows either side to concede. Retain both endings while leaving the issue and degree of concession open.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF6 — a dialogue developing both arguments and concluding “with one side conceding to the other in some way”; either side may concede and both are marked on one grid. The issue is the candidate’s own (“a liberal interpretation of ‘contentious’”). One 50-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -2408,12 +2408,12 @@
     "english-2024-hl-p1-t2-b": {
       "questionSha256": "8bb6856532ad79842555d98eeb987f9cec6dc54a5cb8c40b6737aa4516b7a987",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF9: a proposal to the Tidy Towns Committee covering concerns, a project and community involvement — all aspects required, not necessarily equally; the area and project are the candidate’s own. One 50-mark response."
     },
     "english-2024-hl-p1-t3-b": {
       "questionSha256": "c1f4103aabc883f6df6e48cf251519318fb5b4bc32339136b2fc342dcfa00c33",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF12: a series of reflective diary entries (broad interpretation of ‘a series’) covering feelings on returning, significant moments, and the effect on the writer’s worldview — all required, not necessarily equally. One 50-mark response."
     },
     "english-2024-ol-p1-t1-b": {
       "questionSha256": "6b52f6b2089d899ab80f7e2f01358b4297eff383ccef9ca38f6e245452c05810",
@@ -3021,7 +3021,7 @@
     "english-2024-hl-p1-composing-1": {
       "questionSha256": "a9acdb675005ca51f15f20da18be7ffe46073b3497bb58d27ba6f7c94f607573",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF14 — a short story about tensions “either in a family or in a group of friends” where past and present connect; both settings are marked on one grid. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -3044,7 +3044,7 @@
     "english-2024-hl-p1-composing-3": {
       "questionSha256": "6ec321eff50d1a360ba090a7d828d573243baa58a7e70201d3398f9e4c785f12",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF16 — a speech for or against the motion; “Candidates are expected to argue on one side of the motion only”, both sides marked on one grid. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -4049,27 +4049,27 @@
     "english-2024-hl-p1-composing-2": {
       "questionSha256": "cfadfe880a736992fb0f7ca8d33b6e942b4d093414fd9e0ba20463824e41a648",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a magazine article on connections that enrich teenagers’ lives; a variety of approaches and registers; broad interpretation of ‘enrich’. One 100-mark composition."
     },
     "english-2024-hl-p1-composing-4": {
       "questionSha256": "6ea9b4c6e33a790cb7b49dd581e6739973c433f499f5d7e08d8c09863d90525e",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF17: a personal essay reflecting on aspects of life the candidate finds puzzling; a variety of approaches. One 100-mark composition."
     },
     "english-2024-hl-p1-composing-5": {
       "questionSha256": "3c658d5c6c5bbbc1dedeea7ac8b8b08fd66679f46c86472fe658e8a103565b77",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF18: a discursive essay on whether it is possible, or even desirable, to maintain privacy today; “whether or not” frames the discussion, not two routes. One 100-mark composition."
     },
     "english-2024-hl-p1-composing-6": {
       "questionSha256": "1b4bc263452aef5e4da9659b264dc875a26697d9bff8fdb38cdcea011bea240d",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF19: a short story set among strangers on an eventful train journey; a variety of approaches. One 100-mark composition."
     },
     "english-2024-hl-p1-composing-7": {
       "questionSha256": "6b83bd54e7c71f1845b05ca3206594cbdbfbff7bce4f088f4be2650d32994bdd",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF20: a personal essay reflecting on the candidate’s relationship with the natural world. One 100-mark composition."
     },
     "english-2024-ol-p1-composing-1": {
       "questionSha256": "a38721ed5ef18823c9897c650e6fd35afb2345744f21128b6aea6eff270e1ccc",
@@ -16313,6 +16313,46 @@
       "questionSha256": "9d652545c45d57938d81fb1744a2d75eecd509a20bf54ff5b01fef8a7f05be7b",
       "kind": "open",
       "reason": "Scheme: two emotions of the candidate’s own, “a broad range of suggestions within reason”. One 15-mark response."
+    },
+    "english-2024-hl-p1-t1-a-i": {
+      "questionSha256": "de76089c7d041a8d80c84a8a740318cac23b874d7129181ea1cd283fc9dd2c81",
+      "kind": "open",
+      "reason": "Scheme PDF4: three points of the candidate’s own about family relationships, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2024-hl-p1-t1-a-ii": {
+      "questionSha256": "8ece6bb6f096eb4638ea4be8cec41bf080ff365838792374fa92cec1e9f22dfa",
+      "kind": "open",
+      "reason": "Scheme PDF5: three developed points; “Candidates may draw deductions from the text and/or from their own views and experience”. One 15-mark response."
+    },
+    "english-2024-hl-p1-t1-a-iii": {
+      "questionSha256": "a462bf2fc65663aa62c574ae02a9e61c03ef3a737778242aeca1bbc7926f813c",
+      "kind": "open",
+      "reason": "Scheme PDF5: four elements of style chosen freely from the text, discussing how they make it an informative and engaging newspaper article. One 20-mark response."
+    },
+    "english-2024-hl-p1-t2-a-i": {
+      "questionSha256": "7af9df93cdb665732cde0f1c5ba0e8a8d6476fd143d42b340eb6d5e4b2936dcb",
+      "kind": "open",
+      "reason": "Scheme PDF7: three points of the candidate’s own about the nature of friendship, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2024-hl-p1-t2-a-ii": {
+      "questionSha256": "030cb885dae2bf6e2fd4d337e9278bf6ca4d79418d1533193a67c8a56e1184d2",
+      "kind": "open",
+      "reason": "Scheme PDF7: three developed points; “Candidates may draw deductions from the text and/or from their own views and experience”. One 15-mark response."
+    },
+    "english-2024-hl-p1-t2-a-iii": {
+      "questionSha256": "390f19f4e0afb8bf7f7ddb9b4578218969b8005b529c5a6ee35cda7ef43c69ff",
+      "kind": "open",
+      "reason": "Scheme PDF8: four elements of style chosen freely from the text, discussing how they make it an entertaining and intriguing opening to a novel. One 20-mark response."
+    },
+    "english-2024-hl-p1-t3-a-i": {
+      "questionSha256": "3e2d134eda85f4b2c2c124252de9c9380e64e76c2e131caa4cf610f8a609b138",
+      "kind": "open",
+      "reason": "Scheme PDF10: three points of the candidate’s own about the unique experience of “slow travel”, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2024-hl-p1-t3-a-iii": {
+      "questionSha256": "3c8938131ec78eb3d50550dcc2e156cf42d0f3f1d372b74de6c0a77ca02f9c46",
+      "kind": "open",
+      "reason": "Scheme PDF11: four elements of style chosen freely from the text, discussing how they make it an informative and appealing piece of travel writing. One 20-mark response."
     }
   }
 }

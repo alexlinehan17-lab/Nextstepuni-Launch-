@@ -1385,6 +1385,19 @@
       "capRulePage": 3,
       "capRuleEvidence": "2018 OL PDF3 (viewed) prints the weights, the mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap and no Language rule."
     },
+    "2024-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2024/LC002ALP000EV.pdf",
+      "schemeSha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b",
+      "gridPages": [
+        50
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
     "2025-higher": {
       "family": "hl-h1-h8",
       "scheme": "paper-trail-corpus/markingschemes/2025/LC002ALP000EV.pdf",

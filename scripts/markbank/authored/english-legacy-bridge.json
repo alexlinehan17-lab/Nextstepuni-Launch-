@@ -865,6 +865,107 @@
           "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
         }
       }
+    },
+    "english-2024-hl-p1": {
+      "paperSha256": "c8899fa9a8009351e60f2d6c28b3a62d9cfa33329fc4e07a06fdd495cf893bf5",
+      "legacyRuntime": "Served before the bridge by 19 authored.json cards with the reviewed ids.",
+      "legacyCards": {
+        "english-2024-hl-p1-t1-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 1 QA(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t1-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 1 QA(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t1-a-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 1 QA(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t1-b": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 1 QB",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t2-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 2 QA(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t2-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 2 QA(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t2-a-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 2 QA(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t2-b": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 2 QB",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t3-a-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 3 QA(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t3-a-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 3 QA(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t3-a-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 3 QA(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-t3-b": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Text 3 QB",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-composing-1": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Composing 1",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-composing-2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Composing 2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-composing-3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Composing 3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-composing-4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Composing 4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-composing-5": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Composing 5",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-composing-6": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Composing 6",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2024-hl-p1-composing-7": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2024 HL Paper 1 Composing 7",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        }
+      }
     }
   }
 }

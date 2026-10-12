@@ -48,6 +48,17 @@
    "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9"
   },
   {
+   "paperId": "english-2024-hl-p1",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "tasks": 19,
+   "cards": 19,
+   "printedDuplicates": 0,
+   "paperSha256": "c8899fa9a8009351e60f2d6c28b3a62d9cfa33329fc4e07a06fdd495cf893bf5",
+   "schemeSha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b"
+  },
+  {
    "paperId": "english-2018-hl-p1",
    "year": 2018,
    "level": "higher",
@@ -672,6 +683,16 @@
     },
     "capRulePage": 3
    },
+   "2024-higher": {
+    "family": "hl-h1-h8",
+    "gridPages": [
+     50
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2025-higher": {
     "family": "hl-h1-h8",
     "gridPages": [
@@ -697,10 +718,30 @@
  },
  "legacyAdditionalSources": {},
  "bridgedPapers": [
+  "english-2024-hl-p1",
   "english-2025-hl-p1",
   "english-2025-hl-p2"
  ],
  "bridgedLegacyIds": [
+  "english-2024-hl-p1-composing-1",
+  "english-2024-hl-p1-composing-2",
+  "english-2024-hl-p1-composing-3",
+  "english-2024-hl-p1-composing-4",
+  "english-2024-hl-p1-composing-5",
+  "english-2024-hl-p1-composing-6",
+  "english-2024-hl-p1-composing-7",
+  "english-2024-hl-p1-t1-a-i",
+  "english-2024-hl-p1-t1-a-ii",
+  "english-2024-hl-p1-t1-a-iii",
+  "english-2024-hl-p1-t1-b",
+  "english-2024-hl-p1-t2-a-i",
+  "english-2024-hl-p1-t2-a-ii",
+  "english-2024-hl-p1-t2-a-iii",
+  "english-2024-hl-p1-t2-b",
+  "english-2024-hl-p1-t3-a-i",
+  "english-2024-hl-p1-t3-a-ii",
+  "english-2024-hl-p1-t3-a-iii",
+  "english-2024-hl-p1-t3-b",
   "english-2025-hl-p1-composing-1",
   "english-2025-hl-p1-composing-2",
   "english-2025-hl-p1-composing-3",
@@ -750,7 +791,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 405,
+ "cardCount": 424,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -4052,6 +4093,719 @@
    "atlas": {
     "fileid": "LC002ALP200EV.pdf",
     "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t1-a-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 1 QA(i)",
+   "questionText": "What, in your opinion, does the writer reveal about the nature of family relationships in TEXT 1? Make three points, supporting your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Family Connections and the Natural World",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Fintan O’Toole — edited article from The Irish Times, ‘We have taken flight from our deep link with birds’, January 2023, with two images (PDF2–3). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    4
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t1-a-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 1 QA(ii)",
+   "questionText": "The writer in TEXT 1 tells us that some parents don’t like the idea of their children getting tattoos. Why do you think that some parents don’t like the idea of their children getting tattoos? Develop three points in your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Family Connections and the Natural World",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Fintan O’Toole — edited article from The Irish Times, ‘We have taken flight from our deep link with birds’, January 2023, with two images (PDF2–3). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t1-a-iii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 1 QA(iii)",
+   "questionText": "Identify four elements of the writer’s style, evident in TEXT 1, and discuss how they contribute to making this an informative and engaging newspaper article. Support your response with reference to TEXT 1.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Family Connections and the Natural World",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Fintan O’Toole — edited article from The Irish Times, ‘We have taken flight from our deep link with birds’, January 2023, with two images (PDF2–3). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t1-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 1 QB",
+   "questionText": "In TEXT 1 Fintan O’Toole refers to how different generations can have differing views on issues. Write the text of a dialogue between an adult and a young person who have opposing viewpoints about a contentious issue of your choice. In the dialogue you should: develop the arguments of both sides, and conclude the dialogue in a convincing manner, with one side conceding to the other in some way.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t2-a-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 2 QA(i)",
+   "questionText": "What, in your opinion, does the writer reveal about the nature of friendship in TEXT 2? Make three points, supporting your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Friendship, the Human Connection",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Paul Murray — edited extract from the opening of his novel The Bee Sting (shortlisted for the 2023 Booker Prize), with two images (PDF4–5). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t2-a-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 2 QA(ii)",
+   "questionText": "Cass and Elaine both intend to leave their home town and never come back. Why do you think some young people have a dismissive attitude towards their homeplace? Develop three points in your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Friendship, the Human Connection",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Paul Murray — edited extract from the opening of his novel The Bee Sting (shortlisted for the 2023 Booker Prize), with two images (PDF4–5). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t2-a-iii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 2 QA(iii)",
+   "questionText": "Identify four elements of the writer’s style, evident in TEXT 2, and discuss how they contribute to making this an entertaining and intriguing opening to a novel. Support your response with reference to TEXT 2.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Friendship, the Human Connection",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Paul Murray — edited extract from the opening of his novel The Bee Sting (shortlisted for the 2023 Booker Prize), with two images (PDF4–5). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t2-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 2 QB",
+   "questionText": "Certain aspects of the area where you live have become run down and neglected. Write a proposal to your local Tidy Towns Committee in which you: outline your key concerns in relation to the problems you have identified, propose a project that you believe would improve the situation, and suggest how the committee could encourage more members of the local community to become active in improving the local area.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t3-a-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 3 QA(i)",
+   "questionText": "What, in your opinion, does the writer reveal about the unique experience of “slow travel” in TEXT 3? Make three points, supporting your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Connecting Through Travel",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Monisha Rajesh — edited article from the travel section of the Financial Times, ‘To Istanbul by Train’, March 2023, with two images (PDF6–7). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t3-a-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 3 QA(ii)",
+   "questionText": "One of Monisha Rajesh’s fellow travellers, Charles, was wearing a T-shirt saying Green against the Machine. What are your views on the different ways open to young people to protest, or demonstrate their views, on important issues? Develop three points in your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Connecting Through Travel",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Monisha Rajesh — edited article from the travel section of the Financial Times, ‘To Istanbul by Train’, March 2023, with two images (PDF6–7). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t3-a-iii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 3 QA(iii)",
+   "questionText": "Identify four elements of the writer’s style, evident in TEXT 3, and discuss how they contribute to making this an informative and appealing piece of travel writing. Support your response with reference to TEXT 3.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Connecting Through Travel",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Monisha Rajesh — edited article from the travel section of the Financial Times, ‘To Istanbul by Train’, March 2023, with two images (PDF6–7). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-t3-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Text 3 QB",
+   "questionText": "Write a series of reflective diary entries of a person returning to their homeplace after travelling for a whole year in different countries. In your diary you should: consider your feelings on returning home, recall and analyse some significant moments and events that stand out for you from your travels, and reflect on how the experience of travel has influenced your overall worldview now.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-composing-1",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 1",
+   "questionText": "In TEXT 2, we see a complicated relationship between friends and family. Write a short story focusing on tensions either in a family or in a group of friends in which a connection between the past and the present is important.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-composing-2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 2",
+   "questionText": "The theme of this examination is “Connections”. Write an article for a popular magazine in which you explore some of the connections that you believe enrich teenagers’ lives.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-composing-3",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 3",
+   "questionText": "In TEXT 1, the writer is appreciative of the “gift of time and love”. Write a speech for or against the motion that: “The accelerated pace of modern life detracts from our enjoyment of it.”",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-composing-4",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 4",
+   "questionText": "In TEXT 2 Cass describes people who, “would stare at her a moment as if trying to solve a puzzle.” Write a personal essay in which you reflect on some of the aspects of life you find puzzling.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-composing-5",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 5",
+   "questionText": "The writer in TEXT 3 regrets losing her anonymity by engaging with social media. Write a discursive essay in which you consider whether or not it is possible, or even desirable, to maintain privacy in today’s world.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-discursive",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested discursive essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-composing-6",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 6",
+   "questionText": "TEXT 3, describes the writer’s experience of a train journey to Istanbul. Write a short story set among strangers on an eventful train journey.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-hl-p1-composing-7",
+   "year": 2024,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2024 HL Paper 1 Composing 7",
+   "questionText": "In TEXT 1 the writer reveals his interest in nature to us. Write a personal essay in which you reflect on your relationship with the natural world.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "7"
    }
   },
   {

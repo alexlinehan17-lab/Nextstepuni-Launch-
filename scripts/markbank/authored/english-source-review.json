@@ -3434,6 +3434,114 @@
       "attribution": "First Day — Theo Dorgan, as reproduced in the SEC 2025 paper.",
       "questionSha256": "6a98ad9756b6fc1cef63d92e30a60de45f167ce86368178d71f4b6e34533ea10",
       "reason": "Paper PDF14 prints the instruction (“Read the poem ‘First Day’ by Theo Dorgan”), the title, all seven stanzas (3 + 3 + 3 + 3 + 3 + 3 + 3 lines) and the byline above the two questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
+    },
+    "english-2024-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Family Connections and the Natural World",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Fintan O’Toole — edited article from The Irish Times, ‘We have taken flight from our deep link with birds’, January 2023, with two images (PDF2–3). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "de76089c7d041a8d80c84a8a740318cac23b874d7129181ea1cd283fc9dd2c81",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2024-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Family Connections and the Natural World",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Fintan O’Toole — edited article from The Irish Times, ‘We have taken flight from our deep link with birds’, January 2023, with two images (PDF2–3). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "8ece6bb6f096eb4638ea4be8cec41bf080ff365838792374fa92cec1e9f22dfa",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2024-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Family Connections and the Natural World",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Fintan O’Toole — edited article from The Irish Times, ‘We have taken flight from our deep link with birds’, January 2023, with two images (PDF2–3). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "a462bf2fc65663aa62c574ae02a9e61c03ef3a737778242aeca1bbc7926f813c",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2024-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Friendship, the Human Connection",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Paul Murray — edited extract from the opening of his novel The Bee Sting (shortlisted for the 2023 Booker Prize), with two images (PDF4–5). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "7af9df93cdb665732cde0f1c5ba0e8a8d6476fd143d42b340eb6d5e4b2936dcb",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2024-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Friendship, the Human Connection",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Paul Murray — edited extract from the opening of his novel The Bee Sting (shortlisted for the 2023 Booker Prize), with two images (PDF4–5). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "030cb885dae2bf6e2fd4d337e9278bf6ca4d79418d1533193a67c8a56e1184d2",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2024-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Friendship, the Human Connection",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Paul Murray — edited extract from the opening of his novel The Bee Sting (shortlisted for the 2023 Booker Prize), with two images (PDF4–5). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "390f19f4e0afb8bf7f7ddb9b4578218969b8005b529c5a6ee35cda7ef43c69ff",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2024-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Connecting Through Travel",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Monisha Rajesh — edited article from the travel section of the Financial Times, ‘To Istanbul by Train’, March 2023, with two images (PDF6–7). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "3e2d134eda85f4b2c2c124252de9c9380e64e76c2e131caa4cf610f8a609b138",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2024-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Connecting Through Travel",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Monisha Rajesh — edited article from the travel section of the Financial Times, ‘To Istanbul by Train’, March 2023, with two images (PDF6–7). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "84b33025b8a665a68c0bbed879425019bfb52aa8a90193052ec326752c197a1c",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2024-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Connecting Through Travel",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Monisha Rajesh — edited article from the travel section of the Financial Times, ‘To Istanbul by Train’, March 2023, with two images (PDF6–7). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "3c8938131ec78eb3d50550dcc2e156cf42d0f3f1d372b74de6c0a77ca02f9c46",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
     }
   }
 }
