@@ -3,9 +3,498 @@
   "corpus": "All separately marked written-examination tasks, 2021–2026; a printed choice is one card",
   "cardCount": 446,
   "auditedYears": [
+    2025,
     2026
   ],
   "descriptors": {
+    "2025-higher": {
+      "short": {
+        "page": 17,
+        "lead": "The response shows evidence of the following where appropriate:",
+        "bands": {
+          "low": [
+            "Limited understanding of the requirements of the question.",
+            "Limited application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A limited level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Limited analysis, interpretation and evaluation of any given stimulus material.",
+            "Limited presentation of accurate and/or relevant arguments, explanations and ideas which are based on little or no evidence.",
+            "Presentation of an answer with limited and/or no coherence and focus.",
+            "Use of visual art terminology and/or sketches with limited accuracy and relevance."
+          ],
+          "moderate": [
+            "Good understanding of the requirements of the question.",
+            "Good application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A good level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Good analysis, interpretation and evaluation of any given stimulus material.",
+            "Good presentation of accurate and relevant arguments, explanations and ideas which are in the main based on evidence.",
+            "Presentation of a good coherent and focused answer.",
+            "Good, accurate and relevant use of visual art terminology and/or sketches."
+          ],
+          "high": [
+            "Thorough understanding of the requirements of the question.",
+            "Thorough application of accurate and well-informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A thorough level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Consistent and well-informed analysis, interpretation and evaluation of any given stimulus material.",
+            "Thorough presentation of accurate and relevant arguments, explanations and ideas based on evidence.",
+            "Thorough presentation of a coherent and focused answer.",
+            "Thorough, accurate and relevant use of visual art terminology and/or sketches."
+          ]
+        }
+      },
+      "long": [
+        {
+          "id": "coherence-focus",
+          "label": "Coherence and Focus",
+          "maxMarks": 10,
+          "page": 22,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited ability to understand the demands of the question and to create an answer based on the question posed.",
+                "A limited ability to form and present reasonable, sequential and logical arguments and ideas. Work is based on very limited or no evidence.",
+                "A limited ability to articulate a personal understanding in the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good ability to understand the demands of the question and to create an appropriate answer based on the question posed.",
+                "A good ability to form and present reasonable, sequential and logical arguments and ideas which are for the most part based on evidence.",
+                "A good ability to articulate a personal understanding in the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough ability to understand the demands of the question and to create a high-level answer based on the question posed.",
+                "A thorough ability to form and present reasonable, sequential and logical arguments and ideas which are clearly based on evidence.",
+                "A thorough ability to articulate a personal understanding in the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "subject-knowledge",
+          "label": "Subject Knowledge",
+          "maxMarks": 20,
+          "page": 23,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "A limited level of recall, knowledge and understanding of the section of focus.",
+                "A limited level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A limited critical or perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "guidance": [
+                "A good level of recall, knowledge and understanding of the section of focus.",
+                "A good level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A good critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "high": {
+              "marks": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "A thorough level of recall, knowledge and understanding of the section of focus.",
+                "A thorough level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A thorough critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            }
+          }
+        },
+        {
+          "id": "relevant-examples",
+          "label": "Relevant Examples",
+          "maxMarks": 10,
+          "page": 24,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited choice of artists, and examples of artworks/artefacts with limited relevance/not recognised and support a very limited response.",
+                "A limited understanding of the selected artists used and a limited understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good choice of artists, and examples of artworks/artefacts that are mostly relevant/recognised and support a mostly accurate response.",
+                "A good understanding of the selected artists used and a good understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough choice of artists, and examples of artworks/artefacts that are most relevant/recognised and support a highly accurate response.",
+                "A thorough understanding of the selected artists used and a thorough understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "visual-language",
+          "label": "Visual Language (terminology and/or sketches)",
+          "maxMarks": 10,
+          "page": 25,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited use and understanding of terminology to communicate ideas.",
+                "If sketches are used: the sketches demonstrate a limited ability to support the answer and communicate ideas."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good use and understanding of terminology which is accurate and relevant and adds to the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a good ability to support the answer and communicate ideas. The sketches are mostly accurate and relevant."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough use and understanding of terminology which is accurate, relevant and supports the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a thorough ability to support the answer and communicate ideas. The sketches are thorough, accurate and relevant."
+              ]
+            }
+          }
+        }
+      ],
+      "notes": {
+        "current-short-descriptors": {
+          "page": 16,
+          "text": [
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        },
+        "current-long-descriptors": {
+          "page": 21,
+          "text": [
+            "Candidates may choose from a wide range of relevant examples and content to answer a question. Relevant content must be credited.",
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        }
+      }
+    },
+    "2025-ordinary": {
+      "short": {
+        "page": 17,
+        "lead": "The response shows evidence of the following where appropriate:",
+        "bands": {
+          "low": [
+            "Limited understanding of the requirements of the question.",
+            "Limited application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A limited level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Limited analysis, interpretation and evaluation of any given stimulus material.",
+            "Limited presentation of accurate and/or relevant arguments, explanations and ideas which are based on little or no evidence.",
+            "Presentation of an answer with limited and/or no coherence and focus.",
+            "Use of visual art terminology and/or sketches with limited accuracy and relevance."
+          ],
+          "moderate": [
+            "Good understanding of the requirements of the question.",
+            "Good application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A good level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Good analysis, interpretation and evaluation of any given stimulus material.",
+            "Good presentation of accurate and relevant arguments, explanations and ideas which are in the main based on evidence.",
+            "Presentation of a coherent and focused answer.",
+            "Good accurate and relevant use of visual art terminology and/ or sketches."
+          ],
+          "high": [
+            "Thorough understanding of the requirements of the question.",
+            "Thorough application of accurate and well-informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A thorough level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Consistent and well-informed analysis, interpretation and evaluation of any given stimulus material.",
+            "Thorough presentation of accurate and relevant arguments, explanations and ideas based on evidence.",
+            "Thorough presentation of a coherent and focused answer.",
+            "Thorough, accurate and relevant use of visual art terminology and/ or sketches."
+          ]
+        }
+      },
+      "long": [
+        {
+          "id": "coherence-focus",
+          "label": "Coherence and focus",
+          "maxMarks": 10,
+          "page": 22,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited ability to understand the demands of the question and to create an answer based on the question posed.",
+                "A limited ability to form and present reasonable, sequential and logical arguments and ideas. Work is based on very limited or no evidence.",
+                "A limited ability to articulate a personal understanding in the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good ability to understand the demands of the question and to create an appropriate answer based on the question posed.",
+                "A good ability to form and present reasonable, sequential and logical arguments and ideas which are for the most part based on evidence.",
+                "A good ability to articulate a personal understanding in the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough ability to understand the demands of the question and to create a high-level answer based on the question posed.",
+                "A thorough ability to form and present reasonable, sequential and logical arguments and ideas which are clearly based on evidence.",
+                "A thorough ability to articulate a personal understanding in the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "subject-knowledge",
+          "label": "Subject Knowledge",
+          "maxMarks": 20,
+          "page": 23,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "A limited level of recall, knowledge and understanding of the section of focus.",
+                "A limited level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A limited critical or perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "guidance": [
+                "A good level of recall, knowledge and understanding of the section of focus.",
+                "A good level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A good critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "high": {
+              "marks": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "A thorough level of recall, knowledge and understanding of the section of focus.",
+                "A thorough level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A thorough critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            }
+          }
+        },
+        {
+          "id": "relevant-examples",
+          "label": "Relevant Examples",
+          "maxMarks": 10,
+          "page": 24,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited choice of artists, and examples of artworks/artefacts with limited relevance/not recognised and support a very limited response.",
+                "A limited understanding of the selected artists used and a limited understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good choice of artists, and examples of artworks/artefacts that are mostly relevant/recognised and support a mostly accurate response.",
+                "A good understanding of the selected artists used and a good understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough choice of artists and examples of artworks/artefacts that are most relevant/recognised and support a highly accurate response.",
+                "A thorough understanding of the selected artists used and a thorough understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "visual-language",
+          "label": "Visual Language (terminology and/or sketches)",
+          "maxMarks": 10,
+          "page": 25,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited use and understanding of terminology to communicate ideas.",
+                "If sketches are used: the sketches demonstrate a limited ability to support the answer and communicate ideas."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good use and understanding of terminology which is accurate and relevant and adds to the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a good ability to support the answer and communicate ideas. The sketches are mostly accurate and relevant."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough use and understanding of terminology which is accurate, relevant and supports the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a thorough ability to support the answer and communicate ideas. The sketches are thorough, accurate and relevant."
+              ]
+            }
+          }
+        }
+      ],
+      "notes": {
+        "current-short-descriptors": {
+          "page": 16,
+          "text": [
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        },
+        "current-long-descriptors": {
+          "page": 21,
+          "text": [
+            "Candidates may choose from a wide range of relevant examples and content to answer a question. Relevant content must be credited.",
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        }
+      }
+    },
     "2026-higher": {
       "short": {
         "page": 17,
@@ -20471,7 +20960,11 @@
       "paperPage": 3,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 6,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-3",
       "conceptId": "art-2025-q1-hl-a",
       "taskRequirements": [
@@ -20535,7 +21028,11 @@
       "paperPage": 3,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 4,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-3",
       "conceptId": "art-2025-q1-hl-b",
       "taskRequirements": [
@@ -20595,7 +21092,11 @@
       "paperPage": 4,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 6,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q2-hl-a",
       "taskRequirements": [
@@ -20659,7 +21160,11 @@
       "paperPage": 4,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 4,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q2-hl-b",
       "taskRequirements": [
@@ -20719,7 +21224,11 @@
       "paperPage": 5,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 5,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2025-q3-hl-a",
       "taskRequirements": [
@@ -20770,7 +21279,11 @@
       "paperPage": 5,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 5,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2025-q3-hl-b",
       "taskRequirements": [
@@ -20821,7 +21334,11 @@
       "paperPage": 6,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 6,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q4-hl-a",
       "taskRequirements": [
@@ -20885,7 +21402,11 @@
       "paperPage": 6,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 4,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q4-hl-b",
       "taskRequirements": [
@@ -20945,7 +21466,11 @@
       "paperPage": 7,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 5,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2025-q5-hl-a",
       "taskRequirements": [
@@ -20996,7 +21521,11 @@
       "paperPage": 7,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 5,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2025-q5-hl-b",
       "taskRequirements": [
@@ -21047,7 +21576,11 @@
       "paperPage": 8,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 6,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q6-hl-a",
       "taskRequirements": [
@@ -21111,7 +21644,11 @@
       "paperPage": 8,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 4,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q6-hl-b",
       "taskRequirements": [
@@ -21171,7 +21708,11 @@
       "paperPage": 9,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 6,
-      "schemePage": 20,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q7-hl-a",
       "taskRequirements": [
@@ -21235,7 +21776,11 @@
       "paperPage": 9,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 4,
-      "schemePage": 20,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q7-hl-b",
       "taskRequirements": [
@@ -21296,6 +21841,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21304,7 +21850,9 @@
       "topicId": "art-4-0",
       "conceptId": "art-2025-q8-hl-response",
       "taskRequirements": [
-        "Romanesque and Gothic (c.1000 – 1500s) Discuss the significance and functions of sculpture on Romanesque and Gothic portals (entrances).; Refer in your answer to specific examples.; Include discussion of context, style, subject matter, art elements and design principles."
+        "Discuss the significance and functions of sculpture on Romanesque and Gothic portals (entrances).",
+        "Refer in your answer to specific examples.",
+        "Include discussion of context, style, subject matter, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21319,6 +21867,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21327,7 +21876,9 @@
       "topicId": "art-4-1",
       "conceptId": "art-2025-q9-hl-response",
       "taskRequirements": [
-        "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s) How did artists’ representation of religious and/or mythological figures evolve during this period?; Refer in your answer to named artists and their artworks.; Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+        "How did artists’ representation of religious and/or mythological figures evolve during this period?",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21342,6 +21893,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21350,7 +21902,9 @@
       "topicId": "art-4-2",
       "conceptId": "art-2025-q10-hl-response",
       "taskRequirements": [
-        "Baroque (c.1600 – 1700s) Compare and contrast Baroque Art in Italy with Baroque Art in Northern Europe.; Refer in your answer to named artists and their artworks.; Include discussion of context, subject matter, areas of practice, art elements and design principles."
+        "Compare and contrast Baroque Art in Italy with Baroque Art in Northern Europe.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, subject matter, areas of practice, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21365,6 +21919,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21373,7 +21928,9 @@
       "topicId": "art-4-3",
       "conceptId": "art-2025-q11-hl-response",
       "taskRequirements": [
-        "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s) How did artists challenge traditional approaches to composition, space and perspective in their work during this period?; Refer in your answer to named artists and their artworks.; Include discussion of context, art elements and design principles, innovation and invention, media and techniques."
+        "How did artists challenge traditional approaches to composition, space and perspective in their work during this period?",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, art elements and design principles, innovation and invention, media and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21388,6 +21945,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21396,7 +21954,9 @@
       "topicId": "art-4-4",
       "conceptId": "art-2025-q12-hl-response-fauvism",
       "taskRequirements": [
-        "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.; Refer in your answer to named artists and their artworks.; Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
+        "Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21411,6 +21971,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21419,7 +21980,9 @@
       "topicId": "art-4-5",
       "conceptId": "art-2025-q13-hl-response",
       "taskRequirements": [
-        "Post 1960 Discuss how the Conceptual Art and/or the Performance Art of this period has engaged viewers in new and innovative ways.; Refer in your answer to named artists and their artworks.; Include discussion of context, areas of practice, art elements and design principles, media and techniques."
+        "Discuss how the Conceptual Art and/or the Performance Art of this period has engaged viewers in new and innovative ways.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, areas of practice, art elements and design principles, media and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21434,6 +21997,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21442,7 +22006,9 @@
       "topicId": "art-5-0",
       "conceptId": "art-2025-q14-hl-response",
       "taskRequirements": [
-        "Pre-Christian (c.4000 BCE – 500 CE) Discuss how Irish artefacts show evidence of trade and interaction with other cultures during this period.; Refer in your answer to specific artefacts.; Include discussion of context, innovation and invention, materials and techniques, art elements and design principles."
+        "Discuss how Irish artefacts show evidence of trade and interaction with other cultures during this period.",
+        "Refer in your answer to specific artefacts.",
+        "Include discussion of context, innovation and invention, materials and techniques, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21457,6 +22023,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21465,7 +22032,9 @@
       "topicId": "art-5-1",
       "conceptId": "art-2025-q15-hl-response",
       "taskRequirements": [
-        "Insular Art (c.500 – 1100s) Trace the origin and evolution of Irish High Crosses during this period.; Refer in your answer to named examples.; Include discussion of context, imagery, art elements and design principles, innovation and invention."
+        "Trace the origin and evolution of Irish High Crosses during this period.",
+        "Refer in your answer to named examples.",
+        "Include discussion of context, imagery, art elements and design principles, innovation and invention."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21480,6 +22049,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21488,7 +22058,9 @@
       "topicId": "art-5-2",
       "conceptId": "art-2025-q16-hl-response",
       "taskRequirements": [
-        "Late Medieval Architecture and Art (c.1100 – 1550s) How did the design of shrines and/or reliquaries of this period reflect both religious devotion and artistic innovation?; Refer in your answer to specific artefacts.; Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+        "How did the design of shrines and/or reliquaries of this period reflect both religious devotion and artistic innovation?",
+        "Refer in your answer to specific artefacts.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21503,6 +22075,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21511,7 +22084,9 @@
       "topicId": "art-5-3",
       "conceptId": "art-2025-q17-hl-response",
       "taskRequirements": [
-        "Georgian period (c.1720 – 1800s) Analyse the influence of planning on urban development in Georgian Ireland.; Refer in your answer to architectural examples.; Include discussion of context, materials and techniques, art elements and design principles, innovation and invention."
+        "Analyse the influence of planning on urban development in Georgian Ireland.",
+        "Refer in your answer to architectural examples.",
+        "Include discussion of context, materials and techniques, art elements and design principles, innovation and invention."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21526,6 +22101,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21534,7 +22110,9 @@
       "topicId": "art-5-4",
       "conceptId": "art-2025-q18-hl-response",
       "taskRequirements": [
-        "Irish Art and Modernism (c.1880 – 1960s) Discuss how the significant cultural and political changes of the time influenced the art of this period.; Refer in your answer to named artists and their artworks.; Include discussion of context, art elements and design principles, innovation and invention, media and techniques."
+        "Discuss how the significant cultural and political changes of the time influenced the art of this period.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, art elements and design principles, innovation and invention, media and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21549,6 +22127,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -21557,7 +22136,9 @@
       "topicId": "art-5-5",
       "conceptId": "art-2025-q19-hl-response",
       "taskRequirements": [
-        "Post 1960 Compare and contrast the work of two artists who have used any of the following: photography, film, video or other lens-based media, during this period.; Refer in your answer to named artists and their artworks.; Include discussion of context, innovation and invention, subject matter, art elements and design principles."
+        "Compare and contrast the work of two artists who have used any of the following: photography, film, video or other lens-based media, during this period.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, innovation and invention, subject matter, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -21571,7 +22152,11 @@
       "paperPage": 3,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-2",
       "conceptId": "art-2025-q1-ol-a",
       "taskRequirements": [
@@ -21635,7 +22220,11 @@
       "paperPage": 3,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-2",
       "conceptId": "art-2025-q1-ol-b",
       "taskRequirements": [
@@ -21695,7 +22284,11 @@
       "paperPage": 4,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-2",
       "conceptId": "art-2025-q2-ol-a",
       "taskRequirements": [
@@ -21759,7 +22352,11 @@
       "paperPage": 4,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-2",
       "conceptId": "art-2025-q2-ol-b",
       "taskRequirements": [
@@ -21819,10 +22416,15 @@
       "paperPage": 5,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2025-q3-ol-a",
       "taskRequirements": [
+        "Name one artwork that you have seen in a gallery, arts centre or museum.",
         "(a) Describe this artwork using relevant art elements and design principles."
       ],
       "assessment": "current-short-descriptors",
@@ -21860,7 +22462,7 @@
           }
         }
       ],
-      "stem": "Name one artwork that you have seen in a gallery, arts centre or museum. Name of gallery, arts centre or museum: Name of artwork:"
+      "stem": "Name one artwork that you have seen in a gallery, arts centre or museum."
     },
     {
       "id": "art-2025-ol-q3-b",
@@ -21872,10 +22474,15 @@
       "paperPage": 5,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2025-q3-ol-b",
       "taskRequirements": [
+        "Name one artwork that you have seen in a gallery, arts centre or museum.",
         "(b) How could the manager of the gallery, arts centre or museum named above encourage more people to visit it? Give reasons for your answer."
       ],
       "assessment": "current-short-descriptors",
@@ -21909,7 +22516,7 @@
           }
         }
       ],
-      "stem": "Name one artwork that you have seen in a gallery, arts centre or museum. Name of gallery, arts centre or museum: Name of artwork:"
+      "stem": "Name one artwork that you have seen in a gallery, arts centre or museum."
     },
     {
       "id": "art-2025-ol-q4-a",
@@ -21921,7 +22528,11 @@
       "paperPage": 6,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q4-ol-a-colour-texture",
       "taskRequirements": [
@@ -21985,7 +22596,11 @@
       "paperPage": 6,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q4-ol-b",
       "taskRequirements": [
@@ -22045,7 +22660,11 @@
       "paperPage": 7,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q5-ol-a",
       "taskRequirements": [
@@ -22109,7 +22728,11 @@
       "paperPage": 7,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q5-ol-b",
       "taskRequirements": [
@@ -22169,7 +22792,11 @@
       "paperPage": 8,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2025-q6-ol-a",
       "taskRequirements": [
@@ -22221,7 +22848,11 @@
       "paperPage": 8,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2025-q6-ol-b",
       "taskRequirements": [
@@ -22269,7 +22900,11 @@
       "paperPage": 9,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 20,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q7-ol-a",
       "taskRequirements": [
@@ -22333,7 +22968,11 @@
       "paperPage": 9,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 20,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2025-q7-ol-b",
       "taskRequirements": [
@@ -22394,6 +23033,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22402,7 +23042,9 @@
       "topicId": "art-4-0",
       "conceptId": "art-2025-q8-ol-response",
       "taskRequirements": [
-        "Romanesque and Gothic (c.1000 – 1500s) Compare and contrast one Romanesque church or cathedral with one Gothic church or cathedral.; Refer to one named church or cathedral from each period.; Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+        "Compare and contrast one Romanesque church or cathedral with one Gothic church or cathedral.",
+        "Refer to one named church or cathedral from each period.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22417,6 +23059,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22425,7 +23068,9 @@
       "topicId": "art-4-1",
       "conceptId": "art-2025-q9-ol-response",
       "taskRequirements": [
-        "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s) Describe two artworks that demonstrate innovation and invention during this period.; Refer to named artists and two named artworks.; Include discussion of context, subject matter, art elements and design principles, materials and techniques."
+        "Describe two artworks that demonstrate innovation and invention during this period.",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of context, subject matter, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22440,6 +23085,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22448,7 +23094,9 @@
       "topicId": "art-4-2",
       "conceptId": "art-2025-q10-ol-response",
       "taskRequirements": [
-        "Baroque (c.1600 – 1700s) How did Caravaggio create a sense of drama in his paintings?; Refer to two named artworks.; Include discussion of context, subject matter, innovation and invention, art elements and design principles."
+        "How did Caravaggio create a sense of drama in his paintings?",
+        "Refer to two named artworks.",
+        "Include discussion of context, subject matter, innovation and invention, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22463,6 +23111,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22471,7 +23120,9 @@
       "topicId": "art-4-3",
       "conceptId": "art-2025-q11-ol-response",
       "taskRequirements": [
-        "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s) Describe how the study of light and colour influenced the art of this period.; Refer to named artists and two named artworks.; Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
+        "Describe how the study of light and colour influenced the art of this period.",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22486,6 +23137,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22494,7 +23146,9 @@
       "topicId": "art-4-4",
       "conceptId": "art-2025-q12-ol-response",
       "taskRequirements": [
-        "Modernism (c.1900 – 1960s) Discuss the development of Cubism.; Refer to named artists and two named artworks.; Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+        "Discuss the development of Cubism.",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22509,6 +23163,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22517,7 +23172,9 @@
       "topicId": "art-4-5",
       "conceptId": "art-2025-q13-ol-response",
       "taskRequirements": [
-        "Post 1960 Discuss how visual artists explored new materials and/or techniques during this period.; Refer to named artists and two named artworks.; Include discussion of context, subject matter, art elements and design principles, media and techniques."
+        "Discuss how visual artists explored new materials and/or techniques during this period.",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of context, subject matter, art elements and design principles, media and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22532,6 +23189,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22540,7 +23198,9 @@
       "topicId": "art-5-0",
       "conceptId": "art-2025-q14-ol-response",
       "taskRequirements": [
-        "Pre-Christian (c.4000 BCE – 500 CE) Discuss the development of stone carving throughout this period.; Refer to two specific examples of stone carving.; Include discussion of context, innovation and invention, art elements and design principles, style and techniques."
+        "Discuss the development of stone carving throughout this period.",
+        "Refer to two specific examples of stone carving.",
+        "Include discussion of context, innovation and invention, art elements and design principles, style and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22555,6 +23215,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22563,7 +23224,9 @@
       "topicId": "art-5-1",
       "conceptId": "art-2025-q15-ol-response",
       "taskRequirements": [
-        "Insular Art (c.500 – 1100s) Describe the use of colour and decoration in one named manuscript from this period.; Refer to two specific pages from this manuscript.; Include discussion of context, imagery, art elements and design principles, materials and techniques."
+        "Describe the use of colour and decoration in one named manuscript from this period.",
+        "Refer to two specific pages from this manuscript.",
+        "Include discussion of context, imagery, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22578,6 +23241,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22586,7 +23250,9 @@
       "topicId": "art-5-2",
       "conceptId": "art-2025-q16-ol-response",
       "taskRequirements": [
-        "Late Medieval Architecture and Art (c.1100 – 1550s) Discuss the influence of the Normans on Irish architecture during this period.; Refer to two specific structures from this period.; Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+        "Discuss the influence of the Normans on Irish architecture during this period.",
+        "Refer to two specific structures from this period.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22601,6 +23267,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22609,7 +23276,9 @@
       "topicId": "art-5-3",
       "conceptId": "art-2025-q17-ol-response",
       "taskRequirements": [
-        "Georgian period (c.1720 – 1800s) Describe the characteristics of Georgian architecture.; Refer to two named Georgian buildings.; Include discussion of context, art elements and design principles, structure, materials and techniques."
+        "Describe the characteristics of Georgian architecture.",
+        "Refer to two named Georgian buildings.",
+        "Include discussion of context, art elements and design principles, structure, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22624,6 +23293,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22632,7 +23302,9 @@
       "topicId": "art-5-4",
       "conceptId": "art-2025-q18-ol-response",
       "taskRequirements": [
-        "Irish Art and Modernism (c.1880 – 1960s) Discuss the influence of Impressionism on Irish painting.; Refer to named artists and two named artworks.; Include discussion of context, art elements and design principles, style and techniques."
+        "Discuss the influence of Impressionism on Irish painting.",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of context, art elements and design principles, style and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -22647,6 +23319,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -22655,7 +23328,9 @@
       "topicId": "art-5-5",
       "conceptId": "art-2025-q19-ol-response",
       "taskRequirements": [
-        "Post 1960 Describe how visual artists communicate ideas about social issues through their artwork during this period.; Refer to named artists and two named artworks.; Include discussion of context, subject matter, art elements and design principles, media and areas of practice."
+        "Describe how visual artists communicate ideas about social issues through their artwork during this period.",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of context, subject matter, art elements and design principles, media and areas of practice."
       ],
       "assessment": "current-long-descriptors"
     },

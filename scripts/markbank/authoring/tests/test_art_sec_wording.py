@@ -114,6 +114,49 @@ class ArtSecWordingTest(unittest.TestCase):
                 ):
                     self.assertFalse(P.printed(scheme, text), (year, level, text))
 
+    # Every answer-box label the generator drops, pinned here as well as in
+    # art_cards.ANSWER_BOX_LABELS, so no question wording can be dropped by
+    # the same rule without this list changing.
+    PINNED_LABELS = {
+        (2025, 'ordinary', 3): ('Name of gallery, arts centre or museum:', 'Name of artwork:'),
+        (2025, 'ordinary', 4): ('Heading 1:', 'Heading 2:'),
+    }
+
+    def test_only_pinned_answer_box_labels_are_dropped(self):
+        self.assertEqual(art_cards.ANSWER_BOX_LABELS, self.PINNED_LABELS)
+        for (year, level, number), labels in self.PINNED_LABELS.items():
+            paper = P.paper_path(year, level)
+            cards = [c for c in AUTHORED['cards'] if c['year'] == year and c['level'] == level
+                     and re.match(rf"{year} {REF_LEVEL[level]} Q{number}\b(?!\d)", c['questionRef'])]
+            self.assertTrue(cards, (year, level, number))
+            pages = sorted({c['paperPage'] for c in cards} | {c['paperPage'] + 1 for c in cards})
+            for label in labels:
+                # A label: one short phrase ending in a colon, no sentence.
+                self.assertRegex(label, r'^[^.?!]{1,60}:$')
+                self.assertTrue(any(P.in_answer_box(paper, page, label) for page in pages
+                                    if page <= len(P._open(paper))), (year, level, number, label))
+                for card in cards:
+                    text = ' '.join([card.get('stem') or '', card['questionText'], *card['taskRequirements']])
+                    self.assertNotIn(label, text, card['id'])
+
+    def test_audited_topics_are_ones_the_atlas_gives_the_question(self):
+        runtime = json.loads((ROOT / 'data/examTopics/art-runtime.json').read_text())
+        topics = runtime['topics']
+        atlas = {}
+        for level, lang, year, fileid, number, topic_indexes in runtime['questionMappings']:
+            if lang == 'e' and fileid == '000' and str(number).isdigit():
+                atlas[(2000 + year, level, int(number))] = {
+                    t for index in topic_indexes for t in topics[index][5]}
+        failures = []
+        for card in AUTHORED['cards']:
+            if card['year'] not in AUDITED:
+                continue
+            number = int(re.search(r'Q(\d+)', card['questionRef']).group(1))
+            allowed = atlas.get((card['year'], card['level'][0], number))
+            if not allowed or card['topicId'] not in allowed:
+                failures.append((card['id'], card['topicId'], sorted(allowed or [])))
+        self.assertEqual(failures, [])
+
     def test_independent_paper_census_matches_the_deck(self):
         for year in AUDITED:
             for level in ('higher', 'ordinary'):

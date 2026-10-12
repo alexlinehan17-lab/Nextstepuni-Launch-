@@ -197,13 +197,13 @@ describe('complete 2021–2026 Art corpus', () => {
     };
     const printed = authored.descriptors as Record<string, Printed>;
     const audited = new Set<number>(authored.auditedYears);
-    expect([...audited]).toEqual([2026]);
+    expect([...audited]).toEqual([2025, 2026]);
     // The condensed wording these cards used to show is gone from them.
     const condensed = 'Limited coherence, focus, visual-art terminology and/or relevant sketches.';
     const written = 'Understand the demands of the chosen question and build the response around it.';
 
     const auditedCards = CARDS.filter(card => audited.has(card.year));
-    expect(auditedCards).toHaveLength(52);
+    expect(auditedCards).toHaveLength(104);
     for (const card of auditedCards) {
       if (card.rubric.system !== 'art') throw new Error(`${card.id}: wrong rubric`);
       const scheme = printed[`${card.year}-${card.level}`];

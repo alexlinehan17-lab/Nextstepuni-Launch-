@@ -26,7 +26,8 @@ FURNITURE = re.compile(
     r'Leaving Certificate Examination \d{4}|Art\s*[–-]\s*(?:Visual Studies|History and Appreciation of Art)\s*[–-]\s*'
     r'(?:Higher|Ordinary) Level|Optional (?:Planning|Answer) Space.*|Additional Answer Space.*|'
     r'Answer for Question|Label all work clearly with the question number and part\.?')
-DIRECTIVE = re.compile(r'\b(?:choose|select|either|one of the following|any (?:one|two|three|four|five))\b', re.I)
+DIRECTIVE = re.compile(
+    r'\b(?:choose|select|either|(?:one|any) of the following|any (?:one|two|three|four|five))\b', re.I)
 
 
 def paper_text(year: int, level: str) -> list[tuple[int, str]]:

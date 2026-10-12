@@ -64,10 +64,24 @@ CENSUS_OUT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.j
 
 YEARS = tuple(range(2021, 2027))
 
+# A label printed inside an answer box ("Name of artwork:", "Heading 1:")
+# marks where an answer goes for an ask the question already makes, so it is
+# not part of the task and is dropped. Only these exact labels are dropped,
+# each pinned to its question: the build fails if one is not printed there as
+# a whole line, and tests/test_art_sec_wording.py pins the same list and
+# checks each sits inside a drawn answer box, so no question wording can be
+# dropped by this rule.
+ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
+    # "Name one artwork that you have seen in a gallery, arts centre or museum."
+    (2025, 'ordinary', 3): ('Name of gallery, arts centre or museum:', 'Name of artwork:'),
+    # "(a) Describe this embroidery using any two of the following headings: ..."
+    (2025, 'ordinary', 4): ('Heading 1:', 'Heading 2:'),
+}
+
 # Years whose SEC-attributed strings are all lifted from the printed page and
 # gated by tests/test_art_sec_wording.py. The other years keep the earlier
 # condensed descriptors (factory.ts) until their own audit.
-AUDITED_YEARS = (2026,)
+AUDITED_YEARS = (2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
@@ -525,9 +539,6 @@ def paper_text(path: str, year: int) -> PagedPaper:
             line = raw.strip()
             if is_furniture(line, year):
                 continue
-            # Empty answer-space labels add no part of the ask.
-            if re.fullmatch(r'Heading\s+[12]:', compact(line), re.I):
-                continue
             kept.append(line)
         chunk = '\n'.join(kept)
         starts.append((cursor, page_number))
@@ -586,6 +597,16 @@ def extract_questions(year: int, level: str) -> dict[int, dict[str, Any]]:
         number = int(match.group(1))
         end = matches[index + 1].start() if index + 1 < len(matches) else len(paged.text)
         raw = paged.text[match.end():end]
+        labels = ANSWER_BOX_LABELS.get((year, level, number), ())
+        if labels:
+            lines = raw.split('\n')
+            for label in labels:
+                hits = [i for i, line in enumerate(lines) if compact(line) == label]
+                if len(hits) != 1:
+                    raise AssertionError(
+                        f'{year} {level} Q{number}: answer-box label {label!r} printed {len(hits)} times')
+                del lines[hits[0]]
+            raw = '\n'.join(lines)
         if year >= 2023 and number >= 8:
             # The period heading is printed on the "Question N" line and the
             # question begins on the next; keep that break.
@@ -1024,15 +1045,19 @@ def compact_requirement(question_text: str) -> str:
     return compact(question_text.replace('\n• ', '; '))
 
 
-def printed_requirements(question_text: str, assessment: str) -> list[str]:
+def printed_requirements(question_text: str, assessment: str, stem: str | None = None) -> list[str]:
     """The task check of an audited card: the paper's own lines, one each.
 
     A Section B/C question's first line is its period heading, a title rather
-    than an ask, so it is left out; a printed bullet loses only its marker."""
+    than an ask, so it is left out; a printed bullet loses only its marker. A
+    stem sentence that is itself an instruction to every part ("Name one
+    artwork that you have seen ...") comes first."""
     lines = [line for line in question_text.split('\n') if line.strip()]
     if assessment == 'current-long-descriptors':
         lines = lines[1:]
-    out = [re.sub(r'^•\s*', '', line).strip() for line in lines]
+    asks = [sentence for sentence in re.split(r'(?<=[.?!])\s+', stem or '')
+            if re.match(r'^(?:Name|Identify|Choose|Select)\b', sentence)]
+    out = asks + [re.sub(r'^•\s*', '', line).strip() for line in lines]
     if not out or any(not line for line in out):
         raise AssertionError(f'no printed requirement lines in {question_text!r}')
     return out
@@ -1238,7 +1263,7 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
                     'questionText': question_text,
                     'conceptId': f"{outer['conceptId']}-{'-'.join(concept_suffixes)}",
                     'taskRequirements': (
-                        printed_requirements(question_text, outer['assessment'])
+                        printed_requirements(question_text, outer['assessment'], unit.get('stem'))
                         if year in AUDITED_YEARS
                         else [compact_requirement(question_text)]),
                 }

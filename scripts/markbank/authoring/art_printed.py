@@ -136,6 +136,16 @@ def printed(path: str, text: str) -> bool:
     return bool(text.strip()) and normal(text) in document_text(path)
 
 
+def in_answer_box(path: str, page: int, label: str) -> bool:
+    """The label is printed on the page inside a drawn answer box (a ruled
+    rectangle at least 100pt wide), never in the question's own text."""
+    pg = _open(path)[page - 1]
+    boxes = [fitz.Rect(d['rect']) for d in pg.get_drawings()
+             if d['rect'].width > 100 and d['rect'].height > 8]
+    hits = pg.search_for(label)
+    return bool(hits) and all(any(box.contains(hit) for box in boxes) for hit in hits)
+
+
 TABLE_WORDS = re.compile(r'^(?:Marks?|Low|High|Mod-?|erate|\d+(?:\s*[-–]\s*\d+)?)$')
 
 
