@@ -50,25 +50,31 @@ def lifted_question(task, rule):
     the paper prints it on a phone. No word is added or reordered; the final
     assertion proves it against the extracted text.
     """
-    lines = readable(task['stem'] if rule.get('fromStem') else task['text'], True).splitlines()
+    return lift_lines(task['stem'] if rule.get('fromStem') else task['text'], rule, task['key'])
+
+
+def lift_lines(source, rule, key):
+    """Printed lines, with graphic labels dropped and line wraps re-flowed."""
+    lines = readable(source, True).splitlines()
     if rule.get('keep'):
         lines = [line for start, end in rule['keep'] for line in lines[start:end]]
     for line in rule.get('dropLines', []):
-        assert line in lines, ('Stale dropped graphic line', task['key'], line)
+        assert line in lines, ('Stale dropped graphic line', key, line)
     lines = [line for line in lines if line not in rule.get('dropLines', [])]
     lines = [re.sub(r'^o (?=[A-Z])', '• ', line) if rule.get('bulletO') else line for line in lines]
     flowed = []
     for line in lines:
         if flowed and flowed[-1] in ('•', '∗'):
             flowed[-1] += ' ' + line            # a bullet glyph extracted onto its own line
-        elif flowed and len(flowed[-1]) >= 40 and not re.search(r'[.?!:]$', flowed[-1]) and not line.startswith(('•', '∗')):
+        elif (flowed and (len(flowed[-1]) >= 40 or line[:1].islower()) and not re.search(r'[.?!:]$', flowed[-1])
+              and not line.startswith(('•', '∗'))):
             # A wrapped sentence, not a printed list item; a word hyphenated
             # across the line break ("socio-" / "economic") rejoins unspaced.
             flowed[-1] += ('' if flowed[-1].endswith(('-', '‐')) else ' ') + line
         else:
             flowed.append(line)
     text = '\n'.join(flowed)
-    assert re.sub(r'\s+', '', text) == re.sub(r'\s+', '', ''.join(lines)), ('Question wording changed', task['key'])
+    assert re.sub(r'\s+', '', text) == re.sub(r'\s+', '', ''.join(lines)), ('Question wording changed', key)
     return text
 
 
@@ -194,6 +200,11 @@ def build_tasks(draft, review, matches):
                 assert lift['focus'] in task['text'], ('Unprinted focus label', unit['key'])
                 task['practiceFocus'] = lift['focus']
         task['stem'] = review.get('stemOverrides', {}).get(unit['key'], review.get('stemOverrides', {}).get(parent_key, readable(unit.get('stem', ''), True)))
+        stem_rule = review.get('liftedStems', {}).get(unit['key'], review.get('liftedStems', {}).get(parent_key))
+        if stem_rule is not None:
+            assert unit['key'] not in review.get('stemOverrides', {}) and parent_key not in review.get('stemOverrides', {}), unit['key']
+            source = next(u['text'] for u in units if u['key'] == stem_rule['from']) if stem_rule.get('from') else unit.get('stem', '')
+            task['stem'] = lift_lines(source, stem_rule, unit['key'])
         if task['section'] == 'C':
             task['marks'] = sum(c['maxMarks'] for c in draft['essay']['criteria'])
             task['topic'] = review['essayTopics'][unit['key']]
@@ -298,6 +309,9 @@ def build_tasks(draft, review, matches):
             assert line in task['prompt'], ('Stale visual transcription', task['key'])
         missing = [segment for segment in unprinted(task['prompt'], page_text[task['key']]) if segment not in allowed]
         assert not missing, ('Question not as printed', draft['source']['year'], draft['source']['level'], task['key'], missing)
+        # The lead-in shown above the question is printed wording as well.
+        missing = unprinted(task['stem'], page_text[task['key']])
+        assert not missing, ('Stem not as printed', draft['source']['year'], draft['source']['level'], task['key'], missing)
     return expanded
 
 

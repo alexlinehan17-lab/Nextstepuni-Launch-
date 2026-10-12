@@ -92,7 +92,11 @@ describe('Politics complete paper corpus', () => {
       'Give one advantage and one disadvantage of Proportional Representation (PR) by single transferable vote (STV).');
     expect(byId.get('politics-2018-hl-q1-g-disadvantage')!.practiceFocus).toBe('Disadvantage');
     expect(byId.get('politics-2022-ol-q1-o')!.questionText).toBe('Using the image below what conclusion could you draw about inequality in the world today?');
-    expect(cards.filter(card => /in the original question/.test(card.questionText)).map(card => card.id)).toEqual([]);
+    expect(cards.filter(card => /in the original question/.test(`${card.stem} ${card.questionText}`)).map(card => card.id)).toEqual([]);
+    // Lead-ins are printed wording too: 2018 OL Q1(b)(ii) shows the printed cloze of
+    // (i), not its answer, and an infographic lead-in keeps the paper's "below".
+    expect(byId.get('politics-2018-ol-q1-b-ii')!.stem).toBe('The _____ Court of _____ _____ is responsible for ensuring the implementation of the European Convention on Human Rights (ECHR).');
+    expect(byId.get('politics-2023-ol-q1-h-i')!.stem).toBe('Answer the questions below on this infographic from the Central Statistics Office.');
     expect(byId.get('politics-2022-ol-q1-b')!.questionText).toBe(
       'Is it important to vote in an election? Give a reason for your answer.\nYes ☐ No ☐');
     expect(criteria('politics-2025-ol-q2-d')).toEqual([['Country', 2], ['Cause of hunger', 8]]);

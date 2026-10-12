@@ -211,9 +211,7 @@ REVIEWED[2018, 'higher'].update({
 
 REVIEWED[2018, 'ordinary'].update({
     'stemOverrides': {
-        '1(b)(ii)': 'The European Court of Human Rights is responsible for ensuring the implementation of the European Convention on Human Rights (ECHR).',
         '1(e)': 'Examine the 2016 Census data on migration and diversity in Ireland.',
-        '1(o)': 'In 2017 UNESCO published a report on freedom of expression and media development, showing world trends in the safety of journalists. Examine the chart in the original question.',
     },
     'promptOverrides': {
         '1(m)': 'The tweet below is a comment on the absence of media coverage of the ongoing crisis in the Democratic Republic of the Congo, where over 5 million conflict-related deaths have been recorded since 1998.\n\nDo the media have a social responsibility to report on a major crisis such as this one? Give two reasons for your answer.',
@@ -251,7 +249,7 @@ REVIEWED[2026, 'higher']['splits'] = {
              split_task('example', 'Example', 'Give an example of an inalienable right.', 1)],
 }
 REVIEWED[2026, 'ordinary'].update({
-    'stemOverrides': {'1(d)': 'Answer the question on the infographic from the Central Statistics Office: Equality and Discrimination 2024.'},
+    'stemOverrides': {},
     'topicOverrides': {'4(c)': '1-1'},
     'splits': {
         '1(q)': [split_task('definition', 'Definition', 'Describe what a rights holder is.', 0), split_task('example', 'Example', 'Give an example of a rights holder.', 1)],
@@ -552,7 +550,7 @@ REVIEWED[2021, 'ordinary'] = {
         '1(q)(i)': {'Complete response': [0, 2]},
         '2(a)': {'Complete response': [0, 5]}, '2(b)': {'Complete response': [0, 5]}, '2(d)': {'Complete response': [0, 5]},
     },
-    'stemOverrides': {'1(q)': 'Examine the Central Statistics Office graphic on respondents’ views of the current Level 5 response to managing COVID-19 in the original question.'},
+    'stemOverrides': {},
     'splits': {
         '1(d)': [split_task('theory', 'Theory of government', 'Explain the theory of government in this image.', 0), split_task('thinker', 'Thinker', 'Name the thinker associated with the theory of government in this image.', 1)],
         '1(q)(ii)': [split_task('advantage', 'Advantage', 'Give one advantage of surveying people’s opinions.', 0), split_task('disadvantage', 'Disadvantage', 'Give one disadvantage of surveying people’s opinions.', 1)],
@@ -661,7 +659,7 @@ REVIEWED[2022, 'ordinary'] = {
         '2(a)': {'Complete response': [0, 5]}, '2(b)': {'First sector': [0, 5], 'Second sector': [0, 5]},
         '2(d)': {'First way': [0, 5], 'Second way': [0, 5], 'Third way': [0, 5]},
     },
-    'stemOverrides': {'1(d)': 'Study the Climate and Nature Summit opinion-poll chart on young people’s views on climate change in the original question.'},
+    'stemOverrides': {},
     'promptOverrides': {
         '1(n)': 'Describe one strategy used by one of the people below or any one individual of your choice who made a positive impact on their society.\n• Nelson Mandela\n• Mahatma Gandhi',
         '1(p)': 'Explain what is meant by ‘bias’ in the media.',
@@ -758,7 +756,7 @@ REVIEWED[2023, 'ordinary'] = {
     'criterionAllocations': {'1(b)': [('Left wing', 5), ('Right wing', 5)], '1(e)': [('First step', 5), ('Second step', 5)], '1(l)': [('First piece', 5), ('Second piece', 5)], '2(d)': [('First cause you named', 5), ('Second cause you named', 5), ('Third cause you named', 5)], '3(b)': [('Strength', 5), ('Limitation', 5)]},
     'permittedMarks': {'1(n)': {'Complete response': [0, 1, 2, 3, 4, 5, 6, 8, 9, 10]}, '2(a)': {'Complete response': [0, 5]}, '2(b)': {'Complete response': [0, 10]}, '2(d)': {'First cause you named': [0, 5], 'Second cause you named': [0, 5], 'Third cause you named': [0, 5]}},
     'markNotes': {'1(n)': 'The published grid gives 0–3, 4–6 and 8–10, omitting 7. This practice score preserves those published values; consult the original scheme.', '3(d)': 'The paper asks about Document A. The scheme includes representative-sample and optional-answer guidance associated with Document B as well as webpage/authorship guidance. Keep the paper’s Document A wording and consult both documents and the original scheme.'},
-    'stemOverrides': {'1(h)': 'Examine the Central Statistics Office infographic “Our Lives Outdoors: Protection of the Environment”, April–May 2022, in the original question.'},
+    'stemOverrides': {},
     'splits': {
         '1(b)': [split_task('left-wing', 'Left wing', 'The term ‘left wing’ is sometimes used to describe political parties, politicians and policies. What does this term mean?', 0), split_task('right-wing', 'Right wing', 'The term ‘right wing’ is sometimes used to describe political parties, politicians and policies. What does this term mean?', 1)],
         '3(b)': [split_task('strength', 'Strength', 'Describe one strength of on-line surveys as a research method.', 0), split_task('limitation', 'Limitation', 'Describe one limitation of on-line surveys as a research method.', 1)],
@@ -835,7 +833,7 @@ REVIEWED[2024, 'ordinary'] = {
     'essayTopics': {'5': '2-8', '6': '0-9', '7': '0-6', '8': '1-2', '9': '0-0', '10': '3-7'},
     'criterionAllocations': {'2(b)': [(s+' way', 5) for s in ['First', 'Second', 'Third', 'Fourth']]},
     'permittedMarks': {'2(a)': {'Complete response': [0, 5]}, '2(b)': {s+' way': [0, 5] for s in ['First', 'Second', 'Third', 'Fourth']}, '2(c)': {'Complete response': [0, 5]}},
-    'stemOverrides': {'1(d)': 'Answer the questions on the Housing in Ireland infographic from the Central Statistics Office in the original question.'},
+    'stemOverrides': {},
     'promptOverrides': {
         '1(h)': 'What does the term ‘Globalisation’ mean?',
         '6': 'Discuss the influence/role of the media in society today.\n\nYou may refer to the following in your answer:\n• Control / ownership / business\n• Reporting the news\n• Disinformation / misinformation\n• Fake news / bias / opinion\n• Politics / democracy\n• Influencers\n• Key thinker e.g. Noam Chomsky.',
@@ -914,7 +912,7 @@ REVIEWED[2025, 'ordinary'] = {
         '4(a)': [('Similarity', 5), ('Difference', 5)],
     },
     'permittedMarks': {'1(e)': {'Right': [0, 2]}, '1(r)': {'Example': [0, 2]}, '2(a)': {'Complete response': [0, 5]}, '2(b)': {'Complete response': [0, 10]}, '2(d)': {'Country': [0, 2], 'Cause of hunger': [0, 8]}, '3(c)': {'Key information': [0, 2]}},
-    'stemOverrides': {'1(d)': 'Examine the 2023 Survey on Income and Living Conditions (SILC) infographic from the Central Statistics Office in the original question.'},
+    'stemOverrides': {},
     'splits': {
         '1(r)': [split_task('description', 'Description', 'Describe what a duty bearer is.', 0), split_task('example', 'Example', 'Give an example of a duty bearer.', 1)],
         '4(a)': [split_task('similarity', 'Similarity', 'From Document B, identify one similarity between the data from Haiti and the data from South Sudan.', 0), split_task('difference', 'Difference', 'From Document B, identify one difference between the data from Haiti and the data from South Sudan.', 1)],
@@ -993,3 +991,20 @@ REVIEWED[2021, 'ordinary']['boundaryNotes']['1(f)'] = ('Role and function are ea
     'organisation-specific content. The civil service (2.1) and NGOs/statutory bodies (5.5) sit under different syllabus topics, so one '
     'linked 10-mark card per topic, each with the printed question.')
 REVIEWED[2021, 'ordinary']['reviewedTaskCounts'] = {'A': 25, 'B': 15, 'C': 6}
+
+
+# Stems are the paper's own lead-ins too (2026-10-12). These had been retyped
+# to name the graphic "in the original question", or (2018 OL Q1(b)(ii)) to
+# supply the answer to the cloze in (i). The printed lines are lifted instead:
+# `keep` names the instruction lines (the rest are text inside the graphic);
+# `from` lifts a sibling part's printed text as the lead-in.
+for (_year, _level), _stems in {
+    (2018, 'ordinary'): {'1(b)(ii)': {'from': '1(b)(i)'}, '1(o)': {'keep': [(0, 3)]}},
+    (2021, 'ordinary'): {'1(q)': {'keep': [(0, 3)]}},
+    (2022, 'ordinary'): {'1(d)': {'keep': [(0, 2)]}},
+    (2023, 'ordinary'): {'1(h)': {'keep': [(0, 1)]}},
+    (2024, 'ordinary'): {'1(d)': {'keep': [(0, 2)]}},
+    (2025, 'ordinary'): {'1(d)': {'keep': [(0, 2)]}},
+    (2026, 'ordinary'): {'1(d)': {'keep': [(0, 1)]}},
+}.items():
+    REVIEWED[_year, _level].setdefault('liftedStems', {}).update(_stems)
