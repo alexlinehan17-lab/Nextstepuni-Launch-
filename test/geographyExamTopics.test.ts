@@ -107,8 +107,9 @@ describe('Geography exam-topic registry', () => {
     // earthquakes and volcanoes; and from the 2022 Higher review, Part One Q1
     // (plate tectonics, again new-course only in the reference) and options
     // 14, 15, 17, 18, 20, 21, 23 and 24, which the reference omitted; and from
-    // the 2021 Higher review, Part One Q1, Q6 and Q7, which it also omitted.
-    expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1332);
+    // the 2021 Higher review, Part One Q1, Q6 and Q7, and the 2021 Ordinary
+    // review, Part One Q6, Q7 and Q8, which it also omitted.
+    expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1335);
     const taxonomyById = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     for (const paper of papers) {
       for (const question of paper.q) {

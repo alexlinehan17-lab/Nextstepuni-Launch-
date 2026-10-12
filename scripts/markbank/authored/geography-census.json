@@ -12,10 +12,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 1365,
-  "includedBaseTasks": 1356,
-  "excludedBaseTasks": 9,
-  "authoredCards": 1457,
+  "paperBaseTasks": 1443,
+  "includedBaseTasks": 1443,
+  "excludedBaseTasks": 0,
+  "authoredCards": 1544,
   "baseTasks": [
     {
       "id": "geography-2021-hl-p1-q1",
@@ -1066,7 +1066,16 @@
       "year": 2021,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2021 OL Part 1 Q1",
+      "questionRef": "2021 OL Part 1 Q1(i)",
+      "title": "Karst Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q1-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q1(ii)",
       "title": "Karst Landscape",
       "status": "authored"
     },
@@ -1075,7 +1084,16 @@
       "year": 2021,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2021 OL Part 1 Q2",
+      "questionRef": "2021 OL Part 1 Q2(i)",
+      "title": "Coasts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q2-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q2(ii)",
       "title": "Coasts",
       "status": "authored"
     },
@@ -1084,7 +1102,16 @@
       "year": 2021,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2021 OL Part 1 Q3",
+      "questionRef": "2021 OL Part 1 Q3(i)",
+      "title": "Mass Movement",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q3-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q3(ii)",
       "title": "Mass Movement",
       "status": "authored"
     },
@@ -1111,34 +1138,106 @@
       "year": 2021,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2021 OL Part 1 Q6",
+      "questionRef": "2021 OL Part 1 Q6(i)",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q6-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q6(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
     },
     {
       "id": "geography-2021-ol-p1-q7",
       "year": 2021,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2021 OL Part 1 Q7",
+      "questionRef": "2021 OL Part 1 Q7(i)",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q7-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q7(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q7-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q7(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
     },
     {
       "id": "geography-2021-ol-p1-q8",
       "year": 2021,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2021 OL Part 1 Q8",
+      "questionRef": "2021 OL Part 1 Q8(i)",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q8-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q8(ii)",
+      "title": "Aerial Photograph",
+      "status": "authored"
     },
     {
       "id": "geography-2021-ol-p1-q9",
       "year": 2021,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2021 OL Part 1 Q9",
+      "questionRef": "2021 OL Part 1 Q9(i)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q9-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q9(ii)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q9-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q9(iii)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q9-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q9(iv)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q9-v",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q9(v)",
       "title": "Weather Charts",
       "status": "authored"
     },
@@ -1147,7 +1246,34 @@
       "year": 2021,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2021 OL Part 1 Q10",
+      "questionRef": "2021 OL Part 1 Q10(i)",
+      "title": "Economic Activities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q10-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q10(ii)",
+      "title": "Economic Activities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q10-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q10(iii)",
+      "title": "Economic Activities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q10-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q10(iv)",
       "title": "Economic Activities",
       "status": "authored"
     },
@@ -1156,7 +1282,43 @@
       "year": 2021,
       "level": "ordinary",
       "part": 1,
-      "questionRef": "2021 OL Part 1 Q11",
+      "questionRef": "2021 OL Part 1 Q11(i)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q11-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q11(ii)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q11-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q11(iii)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q11-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q11(iv)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p1-q11-v",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2021 OL Part 1 Q11(v)",
       "title": "Weather Statistics",
       "status": "authored"
     },
@@ -1176,14 +1338,32 @@
       "part": 2,
       "questionRef": "2021 OL Part 2 Q1A",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2021-ol-p2-q1b",
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q1B",
+      "questionRef": "2021 OL Part 2 Q1B(i)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q1b-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q1B(ii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q1b-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q1B(iii)",
       "title": "Volcanoes",
       "status": "authored"
     },
@@ -1192,7 +1372,16 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q1C",
+      "questionRef": "2021 OL Part 2 Q1C(i)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q1c-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q1C(ii)",
       "title": "Rocks",
       "status": "authored"
     },
@@ -1201,12 +1390,66 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q2A",
+      "questionRef": "2021 OL Part 2 Q2A(i)",
       "title": "Plate Tectonics",
       "status": "authored"
     },
     {
-      "id": "geography-2021-ol-p2-q2b",
+      "id": "geography-2021-ol-p2-q2a-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q2A(ii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q2a-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q2A(iii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q2a-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q2A(iv)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q2a-v",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q2A(v)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q2a-vi",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q2A(vi)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q2a-vii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q2A(vii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q2b-route-i",
       "year": 2021,
       "level": "ordinary",
       "part": 2,
@@ -1215,7 +1458,7 @@
       "status": "authored"
     },
     {
-      "id": "geography-2021-ol-p2-q2c",
+      "id": "geography-2021-ol-p2-q2c-quarrying",
       "year": 2021,
       "level": "ordinary",
       "part": 2,
@@ -1228,7 +1471,43 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q3A",
+      "questionRef": "2021 OL Part 2 Q3A(i)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q3a-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q3A(ii)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q3a-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q3A(iii)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q3a-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q3A(iv)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q3a-v",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q3A(v)",
       "title": "Surface Processes",
       "status": "authored"
     },
@@ -1237,12 +1516,30 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q3B",
+      "questionRef": "2021 OL Part 2 Q3B(i)",
       "title": "Earthquakes",
       "status": "authored"
     },
     {
-      "id": "geography-2021-ol-p2-q3c",
+      "id": "geography-2021-ol-p2-q3b-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q3B(ii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q3b-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q3B(iii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q3c-river-processes",
       "year": 2021,
       "level": "ordinary",
       "part": 2,
@@ -1264,7 +1561,25 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q4B",
+      "questionRef": "2021 OL Part 2 Q4B(i)",
+      "title": "Secondary Economic Activity in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q4b-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q4B(ii)",
+      "title": "Secondary Economic Activity in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q4b-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q4B(iii)",
       "title": "Secondary Economic Activity in an Irish Region",
       "status": "authored"
     },
@@ -1282,7 +1597,52 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q5A",
+      "questionRef": "2021 OL Part 2 Q5A(i)",
+      "title": "Forestry in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q5a-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q5A(ii)",
+      "title": "Forestry in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q5a-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q5A(iii)",
+      "title": "Forestry in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q5a-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q5A(iv)",
+      "title": "Forestry in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q5a-v",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q5A(v)",
+      "title": "Forestry in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q5a-vi",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q5A(vi)",
       "title": "Forestry in Ireland",
       "status": "authored"
     },
@@ -1300,7 +1660,25 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q5C",
+      "questionRef": "2021 OL Part 2 Q5C(i)",
+      "title": "Primary Economic Activity in a Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q5c-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q5C(ii)",
+      "title": "Primary Economic Activity in a Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q5c-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q5C(iii)",
       "title": "Primary Economic Activity in a Continental / Sub-Continental Region",
       "status": "authored"
     },
@@ -1309,12 +1687,66 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q6A",
+      "questionRef": "2021 OL Part 2 Q6A(i)",
       "title": "European Union – Agriculture",
       "status": "authored"
     },
     {
-      "id": "geography-2021-ol-p2-q6b",
+      "id": "geography-2021-ol-p2-q6a-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q6A(ii)",
+      "title": "European Union – Agriculture",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q6a-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q6A(iii)",
+      "title": "European Union – Agriculture",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q6a-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q6A(iv)",
+      "title": "European Union – Agriculture",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q6a-v",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q6A(v)",
+      "title": "European Union – Agriculture",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q6a-vi",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q6A(vi)",
+      "title": "European Union – Agriculture",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q6a-vii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q6A(vii)",
+      "title": "European Union – Agriculture",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q6b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
       "year": 2021,
       "level": "ordinary",
       "part": 2,
@@ -1336,7 +1768,16 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q7A",
+      "questionRef": "2021 OL Part 2 Q7A(i)",
+      "title": "Energy Use in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q7a-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q7A(ii)",
       "title": "Energy Use in Ireland",
       "status": "authored"
     },
@@ -1345,7 +1786,34 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q7B",
+      "questionRef": "2021 OL Part 2 Q7B(i)",
+      "title": "Multinational Company (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q7b-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q7B(ii)",
+      "title": "Multinational Company (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q7b-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q7B(iii)",
+      "title": "Multinational Company (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q7b-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q7B(iv)",
       "title": "Multinational Company (MNC)",
       "status": "authored"
     },
@@ -1365,19 +1833,37 @@
       "part": 2,
       "questionRef": "2021 OL Part 2 Q8A",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2021-ol-p2-q8b",
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q8B",
+      "questionRef": "2021 OL Part 2 Q8B(i)",
       "title": "Economic Activity – Environmental Pollution",
       "status": "authored"
     },
     {
-      "id": "geography-2021-ol-p2-q8c",
+      "id": "geography-2021-ol-p2-q8b-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q8B(ii)",
+      "title": "Economic Activity – Environmental Pollution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q8b-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q8B(iii)",
+      "title": "Economic Activity – Environmental Pollution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q8c-tourism",
       "year": 2021,
       "level": "ordinary",
       "part": 2,
@@ -1390,7 +1876,52 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q9A",
+      "questionRef": "2021 OL Part 2 Q9A(i)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q9a-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q9A(ii)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q9a-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q9A(iii)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q9a-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q9A(iv)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q9a-v",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q9A(v)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q9a-vi",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q9A(vi)",
       "title": "Human Development Index",
       "status": "authored"
     },
@@ -1399,16 +1930,43 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q9B",
+      "questionRef": "2021 OL Part 2 Q9B(i)",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q9b-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q9B(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q9b-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q9B(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
     },
     {
       "id": "geography-2021-ol-p2-q9c",
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q9C",
+      "questionRef": "2021 OL Part 2 Q9C(i)",
+      "title": "Colonialism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q9c-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q9C(ii)",
       "title": "Colonialism",
       "status": "authored"
     },
@@ -1419,14 +1977,32 @@
       "part": 2,
       "questionRef": "2021 OL Part 2 Q10A",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2021-ol-p2-q10b",
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q10B",
+      "questionRef": "2021 OL Part 2 Q10B(i)",
+      "title": "Migration – Rural to Urban",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q10b-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q10B(ii)",
+      "title": "Migration – Rural to Urban",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q10b-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q10B(iii)",
       "title": "Migration – Rural to Urban",
       "status": "authored"
     },
@@ -1435,7 +2011,16 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q10C",
+      "questionRef": "2021 OL Part 2 Q10C(i)",
+      "title": "Overpopulation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q10c-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q10C(ii)",
       "title": "Overpopulation",
       "status": "authored"
     },
@@ -1444,7 +2029,61 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q11A",
+      "questionRef": "2021 OL Part 2 Q11A(i)",
+      "title": "Population Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q11a-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q11A(ii)",
+      "title": "Population Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q11a-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q11A(iii)",
+      "title": "Population Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q11a-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q11A(iv)",
+      "title": "Population Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q11a-v",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q11A(v)",
+      "title": "Population Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q11a-vi",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q11A(vi)",
+      "title": "Population Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q11a-vii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q11A(vii)",
       "title": "Population Distribution",
       "status": "authored"
     },
@@ -1453,7 +2092,34 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q11B",
+      "questionRef": "2021 OL Part 2 Q11B(i)",
+      "title": "Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q11b-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q11B(ii)",
+      "title": "Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q11b-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q11B(iii)",
+      "title": "Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q11b-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q11B(iv)",
       "title": "Developing World City",
       "status": "authored"
     },
@@ -1464,14 +2130,23 @@
       "part": 2,
       "questionRef": "2021 OL Part 2 Q11C",
       "title": "Development of Urban Settlements",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2021-ol-p2-q12a",
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q12A",
+      "questionRef": "2021 OL Part 2 Q12A(i)",
+      "title": "Population Density",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q12a-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q12A(ii)",
       "title": "Population Density",
       "status": "authored"
     },
@@ -1480,7 +2155,25 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q12B",
+      "questionRef": "2021 OL Part 2 Q12B(i)",
+      "title": "Urban Functions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q12b-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q12B(ii)",
+      "title": "Urban Functions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q12b-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q12B(iii)",
       "title": "Urban Functions",
       "status": "authored"
     },
@@ -1489,9 +2182,18 @@
       "year": 2021,
       "level": "ordinary",
       "part": 2,
-      "questionRef": "2021 OL Part 2 Q12C",
+      "questionRef": "2021 OL Part 2 Q12C(i)",
       "title": "Rural Settlement Patterns",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-ol-p2-q12c-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2021 OL Part 2 Q12C(ii)",
+      "title": "Rural Settlement Patterns",
+      "status": "authored"
     },
     {
       "id": "geography-2022-hl-p1-q1",
@@ -12316,10 +13018,11 @@
     {
       "year": 2021,
       "level": "ordinary",
-      "paperBaseTasks": 48,
-      "includedBaseTasks": 39,
-      "excludedBaseTasks": 9,
-      "authoredCardsAfterFiniteExpansion": 47
+      "paperBaseTasks": 126,
+      "includedBaseTasks": 126,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 134,
+      "reviewed": true
     },
     {
       "year": 2022,
@@ -12479,7 +13182,7 @@
       "classification": "finite-expanded",
       "variants": 2,
       "kinds": [
-        "answer-i-or-ii"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -12487,7 +13190,7 @@
       "classification": "finite-expanded",
       "variants": 4,
       "kinds": [
-        "none+choose-1-of-4"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -12495,15 +13198,24 @@
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
-        "none+choose-1-of-3"
+        "reviewed-printed-route"
       ]
+    },
+    {
+      "questionRef": "2021 OL Part 2 Q4C",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 5
     },
     {
       "questionRef": "2021 OL Part 2 Q6B",
       "classification": "single-card-choice",
       "variants": 1,
       "kinds": [
-        "none+choose-2-of-3-one-card"
+        "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 2
     },
@@ -12512,7 +13224,7 @@
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
-        "none+choose-1-of-3"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -13102,80 +13814,7 @@
       ]
     }
   ],
-  "exclusions": [
-    {
-      "year": 2021,
-      "level": "ordinary",
-      "part": 1,
-      "questionRef": "6",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "ordinary",
-      "part": 1,
-      "questionRef": "7",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "ordinary",
-      "part": 1,
-      "questionRef": "8",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "1A",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "8A",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "9B",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "10A",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "11C",
-      "title": "Development of Urban Settlements",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "12C",
-      "title": "Rural Settlement Patterns",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    }
-  ],
+  "exclusions": [],
   "aliases": [
     {
       "id": "geography-2021-hl-p2-q14-fair-trade-justice-issues-self-reliance",

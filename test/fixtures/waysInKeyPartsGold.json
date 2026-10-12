@@ -2713,40 +2713,6 @@
 "conditions":[
 "in 2018"
 ]
-},
-{
-"action":"What was",
-"focus":"the gross national income per capita",
-"conditions":[
-"(in US$)",
-"for Australia in 2018"
-]
-},
-{
-"action":"Which",
-"count":"two countries",
-"focus":"the lowest life expectancy at birth",
-"conditions":[
-"in 2018"
-]
-},
-{
-"action":"Calculate",
-"focus":"the difference between the gross national income per capita",
-"conditions":[
-"(in US$)",
-"in Ireland and Mexico"
-]
-},
-{
-"action":"List",
-"count":"two reasons",
-"focus":"why some countries have a higher Human Development Index value than others"
-},
-{
-"action":"Explain briefly",
-"count":"one factor",
-"focus":"that influences life expectancy"
 }
 ]
 },
