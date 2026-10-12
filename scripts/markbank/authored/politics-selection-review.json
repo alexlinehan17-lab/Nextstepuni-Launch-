@@ -1,7 +1,7 @@
 {
   "v": 1,
   "reviewedAt": "2026-10-07",
-  "method": "All 34 PDFs visually swept; raw page scan independently pins choice wording, including source-only and administrative text. See politics_reviewed.py for boundary and route decisions.",
+  "method": "All 34 PDFs visually swept; raw page scan independently pins choice wording, including source-only and administrative text. See politics_reviewed.py for boundary and choice decisions.",
   "pages": [
     {
       "year": 2018,
@@ -37,7 +37,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -74,7 +74,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(l)"
       ],
@@ -111,7 +111,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2018,
@@ -125,7 +125,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "2(a)",
         "2(b)",
@@ -160,7 +160,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "2(f)"
       ],
@@ -201,7 +201,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "3",
         "4(a)",
@@ -264,7 +264,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "5(a)",
         "5(b)",
@@ -347,7 +347,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -382,7 +382,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(d)",
         "1(e)",
@@ -416,7 +416,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(f)",
         "1(g)",
@@ -459,7 +459,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(k)",
         "1(l)",
@@ -492,7 +492,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(n)",
         "1(o)",
@@ -539,7 +539,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(q)",
         "1(r)",
@@ -581,7 +581,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2018,
@@ -627,7 +627,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2018,
@@ -657,7 +657,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "5",
         "6",
@@ -706,7 +706,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "8",
         "9"
@@ -742,7 +742,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "10"
       ],
@@ -829,7 +829,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(h)#aspect, 6(a). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(h)#aspect, 6(a). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)"
@@ -860,7 +860,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(h)#aspect, 6(a). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(h)#aspect, 6(a). See linked per-task decisions.",
       "tasks": [
         "1(c)",
         "1(d)",
@@ -900,7 +900,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(h)#aspect, 6(a). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(h)#aspect, 6(a). See linked per-task decisions.",
       "tasks": [
         "1(f)",
         "1(g)",
@@ -933,7 +933,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(h)#aspect, 6(a). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(h)#aspect, 6(a). See linked per-task decisions.",
       "tasks": [
         "1(j)",
         "1(k)",
@@ -973,7 +973,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2019,
@@ -987,7 +987,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2019,
@@ -1001,7 +1001,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(h)#aspect, 6(a). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(h)#aspect, 6(a). See linked per-task decisions.",
       "tasks": [
         "2(d)",
         "2(e)",
@@ -1073,7 +1073,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(h)#aspect, 6(a). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(h)#aspect, 6(a). See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -1129,7 +1129,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(h)#aspect, 6(a). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(h)#aspect, 6(a). See linked per-task decisions.",
       "tasks": [
         "5",
         "6(a)",
@@ -1153,7 +1153,7 @@
       "year": 2019,
       "level": "higher",
       "page": 24,
-      "sha256": "be87e9ae72dfa46f4bf60cc4da7f950a84106f8bc7af54650e3149b3c968a034",
+      "sha256": "3d779c53c186da796ff8cba50e5b2c127a488de2173104375ba55011b985feaf",
       "signals": [
         {
           "signal": "or",
@@ -1165,11 +1165,11 @@
         },
         {
           "signal": "any",
-          "context": "than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certiβicate –"
+          "context": "than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate –"
         },
         {
           "signal": "or",
-          "context": "ability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certiβicate – Higher Level Politics and Society Tuesday 25 June Morning 9:30 – 12:00 2019L"
+          "context": "ability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Politics and Society Tuesday 25 June Morning 9:30 – 12:00 2019L"
         }
       ],
       "disposition": "administration",
@@ -1209,7 +1209,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 2(d), 4(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 2(d), 4(c). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -1242,7 +1242,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 2(d), 4(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 2(d), 4(c). See linked per-task decisions.",
       "tasks": [
         "1(d)",
         "1(e)",
@@ -1277,7 +1277,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 2(d), 4(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 2(d), 4(c). See linked per-task decisions.",
       "tasks": [
         "1(i)",
         "1(j)",
@@ -1315,7 +1315,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 2(d), 4(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 2(d), 4(c). See linked per-task decisions.",
       "tasks": [
         "1(t)",
         "1(u)",
@@ -1350,7 +1350,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2019,
@@ -1376,7 +1376,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2019,
@@ -1394,7 +1394,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 2(d), 4(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 2(d), 4(c). See linked per-task decisions.",
       "tasks": [
         "2(a)",
         "2(b)",
@@ -1434,7 +1434,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 2(d), 4(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 2(d), 4(c). See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -1477,7 +1477,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 2(d), 4(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 2(d), 4(c). See linked per-task decisions.",
       "tasks": [
         "4(a)",
         "4(b)",
@@ -1554,7 +1554,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 2(d), 4(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 2(d), 4(c). See linked per-task decisions.",
       "tasks": [
         "5",
         "6"
@@ -1598,7 +1598,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 2(d), 4(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 2(d), 4(c). See linked per-task decisions.",
       "tasks": [
         "7",
         "8",
@@ -1635,7 +1635,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 2(d), 4(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 2(d), 4(c). See linked per-task decisions.",
       "tasks": [
         "10"
       ],
@@ -1718,7 +1718,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(a)#argument, 1(g). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(a)#argument, 1(g). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -1750,7 +1750,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(a)#argument, 1(g). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(a)#argument, 1(g). See linked per-task decisions.",
       "tasks": [
         "1(d)",
         "1(e)",
@@ -1798,7 +1798,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(a)#argument, 1(g). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(a)#argument, 1(g). See linked per-task decisions.",
       "tasks": [
         "1(g)",
         "1(h)",
@@ -1830,7 +1830,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(a)#argument, 1(g). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(a)#argument, 1(g). See linked per-task decisions.",
       "tasks": [
         "1(j)",
         "1(k)",
@@ -1870,7 +1870,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2020,
@@ -1908,7 +1908,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(a)#argument, 1(g). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(a)#argument, 1(g). See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -1964,7 +1964,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(a)#argument, 1(g). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(a)#argument, 1(g). See linked per-task decisions.",
       "tasks": [
         "5",
         "6(a)",
@@ -2052,7 +2052,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -2079,7 +2079,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(h)",
         "1(i)",
@@ -2107,7 +2107,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(l)",
         "1(m)",
@@ -2138,7 +2138,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(o)"
       ],
@@ -2175,7 +2175,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2021,
@@ -2193,13 +2193,13 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2021,
       "level": "higher",
       "page": 14,
-      "sha256": "4b67419e50d296bb62b80e717713f634f4b818d634aad1589a3b9a24f67103c1",
+      "sha256": "0fb8a852fca842b079b50914be3bdae13878cf46ab3be4e2271cdce347f67909",
       "signals": [
         {
           "signal": "Answer one",
@@ -2239,7 +2239,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "3",
         "4(a)",
@@ -2278,7 +2278,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "5",
         "6",
@@ -2297,7 +2297,7 @@
       "year": 2021,
       "level": "higher",
       "page": 28,
-      "sha256": "2db960e33458337933b6ded37b2c79d091b67eb05b5e9f45cb9541bdef09a42e",
+      "sha256": "95af73aebbc623f0c29518ef5771bc1fb97f1e41d4097a1db7eda5bb88684a44",
       "signals": [
         {
           "signal": "or",
@@ -2309,11 +2309,11 @@
         },
         {
           "signal": "any",
-          "context": "than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certiβicate –"
+          "context": "than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate –"
         },
         {
           "signal": "or",
-          "context": "ability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certiβicate – Higher Level Politics and Society Tuesday 29 June Morning 9:30 – 12:00 Do no"
+          "context": "ability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Politics and Society Tuesday 29 June Morning 9:30 – 12:00 Do no"
         }
       ],
       "disposition": "administration",
@@ -2373,7 +2373,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 1(f)#role, 1(f)#function, 1(l). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 1(f), 1(l). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -2411,7 +2411,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 1(f)#role, 1(f)#function, 1(l). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 1(f), 1(l). See linked per-task decisions.",
       "tasks": [
         "1(d)",
         "1(e)",
@@ -2446,7 +2446,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 1(f)#role, 1(f)#function, 1(l). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 1(f), 1(l). See linked per-task decisions.",
       "tasks": [
         "1(h)",
         "1(i)",
@@ -2485,7 +2485,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 1(f)#role, 1(f)#function, 1(l). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 1(f), 1(l). See linked per-task decisions.",
       "tasks": [
         "1(l)",
         "1(m)",
@@ -2520,7 +2520,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 1(f)#role, 1(f)#function, 1(l). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 1(f), 1(l). See linked per-task decisions.",
       "tasks": [
         "1(p)",
         "1(q)",
@@ -2560,7 +2560,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2021,
@@ -2578,7 +2578,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2021,
@@ -2592,7 +2592,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 1(f)#role, 1(f)#function, 1(l). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 1(f), 1(l). See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -2640,7 +2640,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 1(f)#role, 1(f)#function, 1(l). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 1(f), 1(l). See linked per-task decisions.",
       "tasks": [
         "5",
         "6"
@@ -2677,7 +2677,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 1(f)#role, 1(f)#function, 1(l). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 1(f), 1(l). See linked per-task decisions.",
       "tasks": [
         "7",
         "8"
@@ -2722,7 +2722,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 1(f)#role, 1(f)#function, 1(l). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 1(f), 1(l). See linked per-task decisions.",
       "tasks": [
         "9",
         "10"
@@ -2819,7 +2819,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -2848,7 +2848,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(d)",
         "1(e)",
@@ -2881,7 +2881,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(g)",
         "1(h)",
@@ -2910,7 +2910,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(j)",
         "1(k)",
@@ -2931,7 +2931,7 @@
       "year": 2022,
       "level": "higher",
       "page": 8,
-      "sha256": "c256195cb56c343379711349735aa9d7d1382e33e0e16a6c7cd8fe16488d0ec4",
+      "sha256": "cc3b6d5c0f38900fdeb53cf030aedc3f1b41c2123a90bffab939f6ce9cff85b1",
       "signals": [
         {
           "signal": "or",
@@ -2943,7 +2943,7 @@
         },
         {
           "signal": "or",
-          "context": "ts where non- black attendees would oŌen assume I held a menial role, speaking down to me or dismissing me, to later find out that I was the one organising the event.” He says that we must work to remove the negative socia"
+          "context": "s where non- black attendees would often assume I held a menial role, speaking down to me or dismissing me, to later find out that I was the one organising the event.” He says that we must work to remove the negative socia"
         },
         {
           "signal": "or",
@@ -2959,7 +2959,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2022,
@@ -2985,7 +2985,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2022,
@@ -3023,7 +3023,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "2(g)"
       ],
@@ -3082,7 +3082,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "2(g)",
         "3",
@@ -3121,7 +3121,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "5",
         "6",
@@ -3214,7 +3214,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -3261,7 +3261,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(d)",
         "1(d)(i)",
@@ -3301,7 +3301,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(e)",
         "1(f)",
@@ -3345,7 +3345,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(i)",
         "1(j)",
@@ -3389,7 +3389,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(m)",
         "1(n)",
@@ -3424,7 +3424,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(p)",
         "1(q)",
@@ -3459,7 +3459,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(s)",
         "1(t)"
@@ -3497,7 +3497,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2022,
@@ -3515,7 +3515,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2022,
@@ -3537,7 +3537,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -3578,7 +3578,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "5",
         "6"
@@ -3612,7 +3612,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "7",
         "8"
@@ -3670,7 +3670,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(g), 1(i), 1(k), 1(r), 1(s), 3(d). See linked per-task decisions.",
       "tasks": [
         "9",
         "10"
@@ -3748,7 +3748,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(m). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(m). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -3769,7 +3769,7 @@
       "year": 2023,
       "level": "higher",
       "page": 7,
-      "sha256": "0842aa7bebdbf931808b14f71cd26d712be1ec0554a035de3274a5e3b451cc7d",
+      "sha256": "3e265d67de0b742671d3b7a8c0c35572586de8aa789ad69929c44e83d31814a3",
       "signals": [
         {
           "signal": "selected",
@@ -3781,7 +3781,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(m). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(m). See linked per-task decisions.",
       "tasks": [
         "1(n)",
         "1(o)"
@@ -3833,21 +3833,21 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2023,
       "level": "higher",
       "page": 9,
-      "sha256": "759aade7bcba9aaebd3731367e6d5ad9853d087287dd1f645ed5e911bb7674f8",
+      "sha256": "eef2c39db8fbafd9d456f5fa89f61fc6a986c471da3270e551028661c0f69202",
       "signals": [
         {
           "signal": "or",
-          "context": "nsequences of the crises we report on at The New Humanitarian. And oŌen, the governance – or mismanagement – of migration creates additional negative humanitarian and human rights consequences for those compelled to move. "
+          "context": "sequences of the crises we report on at The New Humanitarian. And often, the governance – or mismanagement – of migration creates additional negative humanitarian and human rights consequences for those compelled to move. "
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2023,
@@ -3881,7 +3881,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(m). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(m). See linked per-task decisions.",
       "tasks": [
         "3",
         "4(a)",
@@ -3934,7 +3934,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(m). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(m). See linked per-task decisions.",
       "tasks": [
         "5",
         "6",
@@ -4023,7 +4023,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -4064,7 +4064,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(d)",
         "1(e)",
@@ -4110,7 +4110,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(h)",
         "1(h)(i)",
@@ -4156,7 +4156,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(i)",
         "1(j)",
@@ -4205,7 +4205,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
       "tasks": [
         "1(p)",
         "1(q)",
@@ -4238,7 +4238,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2023,
@@ -4260,7 +4260,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2023,
@@ -4290,7 +4290,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -4333,7 +4333,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
       "tasks": [
         "4(a)",
         "4(b)",
@@ -4371,7 +4371,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
       "tasks": [
         "5",
         "6"
@@ -4419,7 +4419,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
       "tasks": [
         "7",
         "8"
@@ -4451,7 +4451,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(i), 1(q), 2(d), 4(d), 1(d), 1(h)(i), 1(j), 3(c), 3(d). See linked per-task decisions.",
       "tasks": [
         "9",
         "10"
@@ -4539,7 +4539,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(o). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(o). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -4572,7 +4572,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(o). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(o). See linked per-task decisions.",
       "tasks": [
         "1(k)",
         "1(l)"
@@ -4592,19 +4592,19 @@
       "year": 2024,
       "level": "higher",
       "page": 7,
-      "sha256": "cfc2f7156d57b030aff19db359469e2b909d14cf115b6957ea710a076ad778b7",
+      "sha256": "ba6fe48cc90df5cbc0187730066550e685cedfa19649cb4a66202c99be16f317",
       "signals": [
         {
           "signal": "either",
-          "context": "tistic suggest about society in Ireland today? (o) Briefly describe what it means to have either a left or right‐wing political viewpoint. https://heterodoxacademy.org/blog/right‐wing‐and‐leŌ‐wing‐authoritarians‐agree‐more‐tha"
+          "context": "tistic suggest about society in Ireland today? (o) Briefly describe what it means to have either a left or right‐wing political viewpoint. https://heterodoxacademy.org/blog/right‐wing‐and‐left‐wing‐authoritarians‐agree‐more‐th"
         },
         {
           "signal": "or",
-          "context": " about society in Ireland today? (o) Briefly describe what it means to have either a left or right‐wing political viewpoint. https://heterodoxacademy.org/blog/right‐wing‐and‐leŌ‐wing‐authoritarians‐agree‐more‐than‐they‐dis"
+          "context": " about society in Ireland today? (o) Briefly describe what it means to have either a left or right‐wing political viewpoint. https://heterodoxacademy.org/blog/right‐wing‐and‐left‐wing‐authoritarians‐agree‐more‐than‐they‐di"
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(o). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(o). See linked per-task decisions.",
       "tasks": [
         "1(m)",
         "1(n)",
@@ -4645,7 +4645,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2024,
@@ -4675,7 +4675,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2024,
@@ -4689,7 +4689,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(o). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(o). See linked per-task decisions.",
       "tasks": [
         "2(d)",
         "2(e)",
@@ -4750,7 +4750,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(o). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(o). See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -4783,7 +4783,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(o). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(o). See linked per-task decisions.",
       "tasks": [
         "5",
         "6",
@@ -4876,7 +4876,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -4923,7 +4923,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
       "tasks": [
         "1(d)",
         "1(d)(i)",
@@ -4959,7 +4959,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
       "tasks": [
         "1(i)",
         "1(j)",
@@ -4991,7 +4991,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2024,
@@ -5017,7 +5017,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2024,
@@ -5031,7 +5031,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -5080,7 +5080,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
       "tasks": [
         "4(a)",
         "4(b)",
@@ -5120,7 +5120,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
       "tasks": [
         "5",
         "6"
@@ -5154,7 +5154,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
       "tasks": [
         "7",
         "8"
@@ -5188,7 +5188,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(b), 1(d)(iii), 1(j). See linked per-task decisions.",
       "tasks": [
         "9",
         "10"
@@ -5290,7 +5290,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -5312,7 +5312,7 @@
       "year": 2025,
       "level": "higher",
       "page": 9,
-      "sha256": "dfc40ef6635100043f6f24175822823bcc719e6d08f6becb1918c54abb609cca",
+      "sha256": "aaf65f20eb063756792fc556e44cd4c53c2be6a9b041dbd719d5b7f47f771a6f",
       "signals": [
         {
           "signal": "following",
@@ -5324,7 +5324,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2025,
@@ -5366,7 +5366,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c). See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -5408,7 +5408,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c). See linked per-task decisions.",
       "tasks": [
         "5",
         "6",
@@ -5498,7 +5498,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 2(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 2(d). See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -5538,7 +5538,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 2(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 2(d). See linked per-task decisions.",
       "tasks": [
         "1(p)",
         "1(q)",
@@ -5575,7 +5575,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2025,
@@ -5589,7 +5589,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 2(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 2(d). See linked per-task decisions.",
       "tasks": [
         "2(a)",
         "2(b)",
@@ -5627,7 +5627,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 2(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 2(d). See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -5681,7 +5681,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 2(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 2(d). See linked per-task decisions.",
       "tasks": [
         "5",
         "6"
@@ -5728,7 +5728,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 2(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 2(d). See linked per-task decisions.",
       "tasks": [
         "7",
         "8"
@@ -5771,7 +5771,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: 1(c), 2(d). See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: 1(c), 2(d). See linked per-task decisions.",
       "tasks": [
         "9",
         "10"
@@ -5878,7 +5878,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -5897,7 +5897,7 @@
       "year": 2026,
       "level": "higher",
       "page": 7,
-      "sha256": "3a5a402eb80140cd33e6bda815649576d3baef14dcc093e4a51a68adffb860e6",
+      "sha256": "4874fd363276f0543e8e7b4c4230b9fad82b66fc3233b546b8db87ec513799cb",
       "signals": [
         {
           "signal": "selected",
@@ -5905,7 +5905,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(m)",
         "1(n)",
@@ -5924,7 +5924,7 @@
       "year": 2026,
       "level": "higher",
       "page": 8,
-      "sha256": "c4ef0c8d0d44ff18b08989aee16a59014022a63d874384d25f1499ff4a915cf7",
+      "sha256": "1ab805f62fc47c179f896c03229607e4b3b9a71486ab11472464dc21996ac6f7",
       "signals": [
         {
           "signal": "or",
@@ -5948,13 +5948,13 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2026,
       "level": "higher",
       "page": 9,
-      "sha256": "5e9cfd8b122186491217397e155c49834cbc3d6cece55f97287d0022988b9815",
+      "sha256": "98d50b5a96b5e53da193965dfd7833c43beaea4b852c5751e3bae7d978771de1",
       "signals": [
         {
           "signal": "or",
@@ -5966,7 +5966,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2026,
@@ -5992,7 +5992,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -6043,7 +6043,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "5",
         "6",
@@ -6126,7 +6126,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(a)",
         "1(b)",
@@ -6160,7 +6160,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(e)",
         "1(f)",
@@ -6191,7 +6191,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(m)",
         "1(n)",
@@ -6221,7 +6221,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "1(p)",
         "1(q)",
@@ -6255,7 +6255,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2026,
@@ -6273,7 +6273,7 @@
         }
       ],
       "disposition": "source-content",
-      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting this source’s finite categories is explicitly expanded in finiteRoutes."
+      "reason": "Document A/B is stimulus material. Survey response instructions and alternatives belong to the quoted research. Candidate tasks are classified separately; any task selecting among this source’s finite categories is declared in choices and stays one card."
     },
     {
       "year": 2026,
@@ -6287,7 +6287,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "3(a)",
         "3(b)",
@@ -6323,7 +6323,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "4(a)",
         "4(b)",
@@ -6366,7 +6366,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "5",
         "6"
@@ -6395,7 +6395,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "7",
         "8"
@@ -6428,7 +6428,7 @@
         }
       ],
       "disposition": "reviewed-tasks",
-      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. All closed task-internal menus are expanded after splitting: . See linked per-task decisions.",
+      "reason": "Page visually reviewed against its scheme. Section quotas select separate tasks; each printed essay OR is already a separate task. Optional evidence/thinkers, and/or coverage, single-correct factual choices and illustrative language do not enumerate independent answer routes. Closed task-internal choices are declared after splitting and each stays one card, because choice is not a route: none. See linked per-task decisions.",
       "tasks": [
         "9",
         "10"

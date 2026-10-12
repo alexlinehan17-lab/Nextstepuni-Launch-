@@ -292,13 +292,11 @@ REVIEWED[2019, 'higher'] = {
         '2(c)': [split_task('positive', 'Positive aspect', 'Give one positive aspect of the authorship of Document B.', 0),
                  split_task('negative', 'Negative aspect', 'Give one negative aspect of the authorship of Document B.', 1)],
     },
-    'finiteRoutes': {
+    'choices': {
         '1(h)#aspect': {'cue': 'one positive or one negative aspect', 'choose': 1,
-                       'pool': [('positive', 'positive'), ('negative', 'negative')],
-                       'prompt': 'Describe one {selection} aspect of the IMF’s role in the world.'},
+                       'pool': [('positive', 'positive'), ('negative', 'negative')]},
         '6(a)': {'cue': 'either Benedict Anderson or Thomas Hylland Eriksen', 'choose': 1,
-                 'pool': [('anderson', 'Benedict Anderson'), ('eriksen', 'Thomas Hylland Eriksen')],
-                 'prompt': 'In 2018, 200 residents in Wicklow opposed the transformation of the Grand Hotel into a Direct Provision centre which aimed to house 100 refugees.\n\nDiscuss the above incident with particular reference to the ideas of {selection}. Your answer should also include examples and evidence to support your position.'},
+                 'pool': [('anderson', 'Benedict Anderson'), ('eriksen', 'Thomas Hylland Eriksen')]},
     },
     'boundaryNotes': {
         '1(a)': 'First accurate explanation gets 2, the next 1: retain the two definitions under their shared 3-mark tariff. Each example has its own independent 1-mark tariff.',
@@ -306,12 +304,12 @@ REVIEWED[2019, 'higher'] = {
         '1(d)': 'Alternative positions in an evaluative question do not prescribe distinct examination routes; the student justifies a position.',
         '1(e),1(g)': 'The 3+2 tariff permits transfer to the second response; retain the shared 5-mark task.',
         '1(f),1(i),1(k)': 'Later descriptions refer to the candidate’s selected responsibilities, organisation or theory. Keep the dependent response with its explicit components.',
-        '1(h)': 'Role and evaluation have separate 3+2 tariffs. Split; expand the explicit positive-or-negative choice within the 2-mark task into two routes.',
+        '1(h)': 'Role and evaluation have separate 3+2 tariffs. Split. The positive-or-negative choice within the 2-mark task is marked by one shared grid with no option-specific content: one card.',
         '2(c)': 'Positive and negative authorship assessments have independent 10-mark tariffs; split.',
         '2(g)': 'Discussion and use of evidence assess the same argument; retain one 50-mark response.',
         '3,6': 'Each printed lettered essay alternative is a separate 100-mark route.',
         '4,5,6(b)': 'Required evidence and illustrative agreements/theorists allow open supporting material and geographic contexts; they do not offer a closed set of essay subjects.',
-        '6(a)': 'Explicit choice of two named thinkers: mechanically expand two distinct 100-mark essay routes.',
+        '6(a)': 'Either named thinker may be chosen; both routes are marked by the same 100-mark essay grid. One card with the printed question.',
     },
 }
 
@@ -332,7 +330,7 @@ REVIEWED[2019, 'ordinary'] = {
         '1(o)': [('First reason', 2), ('Second reason', 2), ('Third reason', 1)],
         '1(r)': [('Conclusion', 3), ('Advantage', 1), ('Disadvantage', 1)],
         '1(u)(iii)': [('Advantage', 1), ('Disadvantage', 1)],
-        '2(d)': [('First reason', 5), ('Second reason', 5)],
+        '2(d)': [('First reason you gave', 5), ('Second reason you gave', 5)],
         '2(e)': [('Five rights', 5), ('First description', 5), ('Second description', 5)],
         '3(c)': [('First piece of information', 5), ('Second piece of information', 5), ('Description', 5)],
         '3(d)': [('First reason', 5), ('Second reason', 5)],
@@ -356,14 +354,13 @@ REVIEWED[2019, 'ordinary'] = {
         '3(e)': [split_task('advantages', 'Advantages', 'Document A is produced by the United Nations. Name two advantages of UN agencies gathering, analysing and publishing research.', 0, 1),
                  split_task('disadvantage', 'Disadvantage', 'Document A is produced by the United Nations. Name one disadvantage of UN agencies gathering, analysing and publishing research.', 2)],
     },
-    'finiteRoutes': {
-        '2(d)': {'cue': 'Give two of these reasons.', 'choose': 2,
-                 'pool': [('first', 'first reason'), ('second', 'second reason'), ('third', 'third reason')],
-                 'prompt': 'Document B gives the reasons why the family have had to move twice in three months. Give the {selection} in the sentence explaining these moves.',
+    'choices': {
+        # The three reasons are named by the scheme; Document B prints them in one sentence.
+        '2(d)': {'cue': 'Give two of these reasons.', 'choose': 2, 'instruction': 'Give two of these reasons.',
+                 'pool': [('expensive', 'Houses are too expensive'), ('rent', 'Parents can’t afford the rent'), ('work', 'Parents can’t work there')],
                  'sourceEvidence': {'page': 10, 'text': "the houses are too expensive here and my parents cannot afford the rent, as our parents can't work here"}},
         '4(c)': {'cue': 'at local or national or international level', 'choose': 1,
-                 'pool': [('local', 'local'), ('national', 'national'), ('international', 'international')],
-                 'prompt': 'Identify and describe a citizenship project that responds to the needs of refugee populations at {selection} level.\n\nAction · Rationale · Description · Aims'},
+                 'pool': [('local', 'local'), ('national', 'national'), ('international', 'international')]},
     },
     'permittedMarks': {'1(j)': {'Example': [0, 2]}, '2(a)': {'Complete response': [0, 3, 5]}, '2(b)': {'Complete response': [0, 5]}, '2(c)': {'Complete response': [0, 5]}},
     'boundaryNotes': {
@@ -372,12 +369,12 @@ REVIEWED[2019, 'ordinary'] = {
         '1(e)': 'Description depends on a government department named by the candidate; preserve the linked 1+1+3 components.',
         '1(j),1(r),1(u)': 'Split independently priced definition/example, conclusion/advantage/disadvantage, and census subparts respectively.',
         '2(a)': 'Ordered allocation gives 3 for the first correct country and 2 for the second; two retrievals stay together because country-specific marks are not fixed.',
-        '2(d)': 'Document B prints three reasons and the task requires two of those: expand the three combinations mechanically, each worth 10.',
+        '2(d)': 'Document B gives three reasons and the task asks for any two. The scheme lists all three under one 5+5 tariff: one card with two slots, never one card per pair.',
         '2(e)': 'Roman i–v label blank answer slots, not five extra tasks. The two descriptions refer to rights selected by the candidate; keep the linked 15-mark task.',
         '3(c)': 'Open selection of two pieces of information from the infographic, not an enumerated finite answer menu. Their linked description stays with them.',
         '3(e)': 'Two advantages and one disadvantage have independent 10+5 tariffs; split.',
         '4(a)': 'The opening says Document A, but Walaa’s statement is on Document B, which the same question then explicitly directs the student to use. Retain the paper wording and both documents.',
-        '4(c)': 'The project has four linked 5-mark components. Expand the three explicitly offered project levels, retaining all components on every route.',
+        '4(c)': 'The project has four linked 5-mark components. The local, national or international level is the candidate’s choice inside the same four-component grid: one card.',
         '5-10': 'Optional images, words, prompts and examples are supporting suggestions, not closed choose-k tasks. And/or level wording remains flexible.',
     },
 }
@@ -425,8 +422,8 @@ for key in ['4(a)', '4(b)']:
 # These are not filled from the extractor or from generated deck lengths.
 REVIEWED[2018, 'higher']['reviewedTaskCounts'] = {'A': 16, 'B': 9, 'C': 6}
 REVIEWED[2018, 'ordinary']['reviewedTaskCounts'] = {'A': 31, 'B': 14, 'C': 6}
-REVIEWED[2019, 'higher']['reviewedTaskCounts'] = {'A': 16, 'B': 8, 'C': 7}
-REVIEWED[2019, 'ordinary']['reviewedTaskCounts'] = {'A': 27, 'B': 18, 'C': 6}
+REVIEWED[2019, 'higher']['reviewedTaskCounts'] = {'A': 15, 'B': 8, 'C': 6}
+REVIEWED[2019, 'ordinary']['reviewedTaskCounts'] = {'A': 27, 'B': 14, 'C': 6}
 REVIEWED[2026, 'higher']['reviewedTaskCounts'] = {'A': 16, 'B': 7, 'C': 6}
 REVIEWED[2026, 'ordinary']['reviewedTaskCounts'] = {'A': 23, 'B': 15, 'C': 6}
 
@@ -467,18 +464,16 @@ REVIEWED[2020, 'higher'] = {
         '2(f)': [split_task('circumstances', 'Socio-economic circumstances', 'Comparing the data in both documents what conclusions would you draw about the socio-economic circumstances of persons with disabilities?', 0),
                  split_task('challenges', 'Daily challenges', 'Comparing the data in both documents what conclusions would you draw about the challenges persons with disabilities face in their daily lives?', 1)],
     },
-    'finiteRoutes': {
+    'choices': {
         '1(a)#argument': {'cue': 'one argument in favour or against', 'choose': 1,
-                          'pool': [('favour', 'in favour of'), ('against', 'against')],
-                          'prompt': 'Give one argument {selection} the party whip system.'},
+                          'pool': [('favour', 'in favour'), ('against', 'against')]},
         '1(g)': {'cue': 'retained, abolished or reformed', 'choose': 1,
-                 'pool': [('retained', 'retained'), ('abolished', 'abolished'), ('reformed', 'reformed')],
-                 'prompt': 'Should Seanad Éireann be {selection}? Give two reasons for your opinion.'},
+                 'pool': [('retained', 'Retained'), ('abolished', 'Abolished'), ('reformed', 'Reformed')]},
     },
     'boundaryNotes': {
-        '1(a)': 'Role information has a distinct 4-mark allocation. Split the 1-mark argument and expand its explicit in-favour/against choice into two routes.',
+        '1(a)': 'Role information has a distinct 4-mark allocation. Split the 1-mark argument; its in-favour/against choice shares one grid, so it stays one card.',
         '1(b),1(c),1(f),1(g),1(i),1(j),1(k)': 'Two descriptions/reasons have a shared 5-mark cap with conditional transfer; keep each pair together.',
-        '1(g)': 'Three printed checkboxes explicitly require choosing retained, abolished or reformed. Expand all three 5-mark routes.',
+        '1(g)': 'Three printed checkboxes ask the candidate to choose retained, abolished or reformed. The scheme marks the two reasons supporting the option chosen with one grid: one 5-mark card.',
         '1(h)': 'Explanation and Irish example have independent 3+2 tariffs; split with the maximum-resources principle preserved.',
         '1(l)': 'The outline depends on the named theorist; keep the 1+4 components together. The paper supplies no closed list of theorists.',
         '2(a),2(c)': 'Required positive and negative critiques have independently priced tariffs, 5+5 and 10+10; split.',
@@ -488,7 +483,7 @@ REVIEWED[2020, 'higher'] = {
         '3(b)': 'Whether through positive buying or moral boycott describes the scope of the ethical-consumerism argument, not an instruction to select one route. And/or supporting theorists/agreements remain flexible.',
         '4,6(b)': 'These are evaluative questions inviting a justified conclusion, not closed selection menus.',
     },
-    'reviewedTaskCounts': {'A': 17, 'B': 10, 'C': 6},
+    'reviewedTaskCounts': {'A': 14, 'B': 10, 'C': 6},
 }
 
 REVIEWED[2020, 'higher']['alignmentReviews'] = {
@@ -527,7 +522,7 @@ REVIEWED[2021, 'ordinary'] = {
     'partMarks': {'1(q)(i)': 2, '1(q)(ii)': 4, '1(q)(iii)': 4},
     'dataTopics': {'2': '2-10', '3': '1-9', '4': '2-2'},
     'dataMarks': {'2': [5, 5, 15, 5, 20], '3': [10, 10, 10, 10, 10], '4': [10, 10, 20, 20]},
-    'topicOverrides': {'1(c)#capitalism': '0-6', '1(f)#role-ngo': '2-4', '1(f)#function-ngo': '2-4', '1(f)#role-statutory': '2-4', '1(f)#function-statutory': '2-4', '2(e)': '2-5', '4(a)': '1-1', '4(b)': '3-1', '4(c)': '0-6'},
+    'topicOverrides': {'2(e)': '2-5', '4(a)': '1-1', '4(b)': '3-1', '4(c)': '0-6'},
     'essayTopics': {'5': '0-9', '6': '2-2', '7': '3-7', '8': '3-5', '9': '0-5', '10': '2-5'},
     'criterionAllocations': {
         '1(a)': [('First department', 3), ('Second department', 3), ('Minister of one named department', 4)],
@@ -537,7 +532,7 @@ REVIEWED[2021, 'ordinary'] = {
         '1(h)': [('Conclusion', 5), ('Reason', 5)],
         '1(i)': [('First treaty or convention', 5), ('Second treaty or convention', 5)],
         '1(j)': [('First way', 5), ('Second way', 5)],
-        '1(l)': [('First acronym', 2), ('Second acronym', 2), ('Third acronym', 2), ('Fourth acronym', 2), ('Fifth acronym', 2)],
+        '1(l)': [(label + ' acronym you wrote out', 2) for label in ['First', 'Second', 'Third', 'Fourth', 'Fifth']],
         '1(o)': [('First opinion', 5), ('Second opinion', 5)],
         '1(q)(ii)': [('Advantage', 2), ('Disadvantage', 2)],
         '1(q)(iii)': [('First observation', 2), ('Second observation', 2)],
@@ -553,22 +548,20 @@ REVIEWED[2021, 'ordinary'] = {
     'permittedMarks': {
         '1(a)': {'First department': [0, 3], 'Second department': [0, 3], 'Minister of one named department': [0, 4]},
         '1(d)': {'Thinker': [0, 2]},
-        '1(l)': {label + ' acronym': [0, 2] for label in ['First', 'Second', 'Third', 'Fourth', 'Fifth']},
+        '1(l)': {label + ' acronym you wrote out': [0, 2] for label in ['First', 'Second', 'Third', 'Fourth', 'Fifth']},
         '1(q)(i)': {'Complete response': [0, 2]},
         '2(a)': {'Complete response': [0, 5]}, '2(b)': {'Complete response': [0, 5]}, '2(d)': {'Complete response': [0, 5]},
     },
     'stemOverrides': {'1(q)': 'Examine the Central Statistics Office graphic on respondents’ views of the current Level 5 response to managing COVID-19 in the original question.'},
     'splits': {
         '1(d)': [split_task('theory', 'Theory of government', 'Explain the theory of government in this image.', 0), split_task('thinker', 'Thinker', 'Name the thinker associated with the theory of government in this image.', 1)],
-        '1(f)': [split_task('role', 'Role', 'Explain the role of one of the following: Civil service; Non-governmental organisations; Statutory bodies.', 0), split_task('function', 'Function', 'Explain the function of one of the following: Civil service; Non-governmental organisations; Statutory bodies.', 1)],
         '1(q)(ii)': [split_task('advantage', 'Advantage', 'Give one advantage of surveying people’s opinions.', 0), split_task('disadvantage', 'Disadvantage', 'Give one disadvantage of surveying people’s opinions.', 1)],
         '3(e)': [split_task('advantage', 'Advantage', 'Both Documents A and B are extracts from larger documents. Name one advantage of using extracts like these.', 0), split_task('disadvantage', 'Disadvantage', 'Both Documents A and B are extracts from larger documents. Name one disadvantage of using extracts like these.', 1)],
     },
-    'finiteRoutes': {
-        '1(c)': {'cue': 'Explain one of the following three terms:', 'choose': 1, 'pool': [('capitalism', 'Capitalism'), ('social-class', 'Social class'), ('patriarchy', 'Patriarchy')], 'prompt': 'Explain the following term: {selection}.'},
-        '1(f)#role': {'cue': 'Explain the role and function of one of the following:', 'choose': 1, 'pool': [('civil-service', 'the Civil service'), ('ngo', 'Non-governmental organisations'), ('statutory', 'Statutory bodies')], 'prompt': 'Explain the role of {selection}.'},
-        '1(f)#function': {'cue': 'Explain the role and function of one of the following:', 'choose': 1, 'pool': [('civil-service', 'the Civil service'), ('ngo', 'Non-governmental organisations'), ('statutory', 'Statutory bodies')], 'prompt': 'Explain the function of {selection}.'},
-        '1(l)': {'cue': 'Write out in full five of the following acronyms:', 'choose': 5, 'pool': [(s.lower(), s) for s in ['UNCRC', 'EU', 'IHREC', 'IMF', 'UN', 'UDHR', 'WHO', 'ECHR', 'WTO']], 'prompt': 'Write out in full these five acronyms: {selection}.'},
+    'choices': {
+        '1(c)': {'cue': 'Explain one of the following three terms:', 'choose': 1, 'pool': [('capitalism', 'Capitalism'), ('social-class', 'Social class'), ('patriarchy', 'Patriarchy')]},
+        '1(f)': {'cue': 'Explain the role and function of one of the following:', 'choose': 1, 'pool': [('civil-service', 'Civil service'), ('ngo', 'Non-governmental organisations'), ('statutory', 'Statutory bodies')]},
+        '1(l)': {'cue': 'Write out in full five of the following acronyms:', 'choose': 5, 'instruction': 'Write out in full five of the following acronyms:', 'pool': [(s.lower(), s) for s in ['UNCRC', 'EU', 'IHREC', 'IMF', 'UN', 'UDHR', 'WHO', 'ECHR', 'WTO']]},
     },
     'markNotes': {
         '2(c)': 'The scheme gives three reasons at 5 marks each. Its individual allocations sum to 50 for Question 2, despite the 40-mark question heading. This card follows the explicit 15-mark allocation.',
@@ -576,11 +569,11 @@ REVIEWED[2021, 'ordinary'] = {
     },
     'boundaryNotes': {
         '1(a)': 'The minister must head one of the candidate’s named departments: keep the dependent 3+3+4 response. Preserve the historical 2021 scheme.',
-        '1(c)': 'One of three printed terms: expand three 10-mark routes.',
+        '1(c)': 'One of three printed terms, marked by one 10-mark grid (“Valid explanation of one term”): one card.',
         '1(d)': 'The image fixes the theory and thinker; independently priced 8+2 tasks, split with the image retained.',
-        '1(f)': 'Role and function have independent 5-mark allocations. Split first, then expand the three printed organisations inside each task: six 5-mark cards.',
+        '1(f)': 'Role and function are each worth 5, but both describe the one organisation the candidate chose, and the scheme gives no organisation-specific content. Keep one linked 10-mark card with Role and Function criteria.',
         '1(h)': 'The reason must justify the candidate’s own conclusion: retain the linked 5+5 response.',
-        '1(l)': 'Closed choose-five-of-nine pool. Generate all C(9,5)=126 ten-mark routes, each retaining five 2-mark acronym criteria.',
+        '1(l)': 'Write out any five of nine printed acronyms. One card with the printed list and five 2-mark slots; the scheme expands all nine, labelled by acronym.',
         '1(q)': 'Printed roman parts independently priced 2,4,4. Further split ii into its 2-mark advantage and 2-mark disadvantage.',
         '1(b),1(i),1(j),1(o),1(s),1(t)': 'Required pairs from an open domain, not a fixed printed pool. Retain each requested pair with both marking criteria.',
         '2(c)': 'The paper does not print a number or closed reason menu; scheme requires three freely identified reasons from a narrative. Retain one response with the published 3x5 allocation.',
@@ -589,7 +582,7 @@ REVIEWED[2021, 'ordinary'] = {
         '5-10': 'May-use/may-draw-on suggestions are optional support. Q7 permits one or more actors, not a fixed finite selection. Do-you-agree is an evaluative conclusion, not a printed menu.',
         'section-headings': 'Scheme p9 Q2 allocations total 50 rather than its 40 heading, making B total 160 rather than 150. Scheme p12 says Section C 150, while paper C is 100 for two 50-mark essays. Preserve individual published tariffs and record these discrepancies.',
     },
-    'reviewedTaskCounts': {'A': 156, 'B': 15, 'C': 6},
+    'reviewedTaskCounts': {'A': 24, 'B': 15, 'C': 6},
 }
 
 REVIEWED[2021, 'higher']['alignmentReviews'] = {
@@ -683,10 +676,10 @@ REVIEWED[2022, 'ordinary'] = {
         '9': 'What does the data from St Vincent de Paul in the original question tell us about the social contract in Ireland?',
         '10': 'The Universal Declaration of Human Rights states that ‘All human beings are born free and equal in dignity and rights’.\n\nDiscuss the issue of racism in society today.\n\nYou may use the infographic in the original question to support your answer.',
     },
-    'finiteRoutes': {},
+    'choices': {},
     'boundaryNotes': {
-        '1(b),1(d)(iii),1(g),1(i),1(k),1(r),1(s),3(d)': 'These tasks print Yes/No checkboxes and require a justified position. Preserve both explicit selectable argument routes, with the whole published tariff on each; they are not single-correct factual quizzes.',
-        '1(d)': 'Three printed roman parts have independent 2,3,5 tariffs. Keep the poll graphic with all three, then expand the third part’s Yes/No choice.',
+        '1(b),1(d)(iii),1(g),1(i),1(k),1(r),1(s),3(d)': 'These tasks print Yes/No checkboxes and require a justified position. Either answer is marked by the same explanation grid, so each is one card with the printed checkboxes; they are not single-correct factual quizzes.',
+        '1(d)': 'Three printed roman parts have independent 2,3,5 tariffs. Keep the poll graphic with all three; the third part’s Yes/No choice stays inside one card.',
         '1(e)': 'Five recalled grounds from the statutory nine: the paper does not print the answers as a route menu. Retain the recall task with five 2-mark criteria; do not put its answers in the prompt.',
         '1(n)': 'Mandela and Gandhi are illustrative: the paper expressly permits any individual of the candidate’s choice. Keep one open task.',
         '1(l),1(t),2(b),2(d)': 'Required pairs/triples of information, not choices of independent printed task or a choose-k menu. Retain the response with separate published criteria.',
@@ -696,22 +689,25 @@ REVIEWED[2022, 'ordinary'] = {
         '5-10': 'Optional infographic headings, survey questions and thinker suggestions support one holistic 50-mark essay each.',
         'section-heading': 'Scheme p16 labels Section C 150 marks, but the paper requires two 50-mark essays (100). Each practice essay retains its explicit 50-mark tariff.',
     },
-    'reviewedTaskCounts': {'A': 29, 'B': 15, 'C': 6},
+    'reviewedTaskCounts': {'A': 22, 'B': 14, 'C': 6},
 }
 
-# The printed checkbox menus require a reason for the selected answer.
-# Keep that original instruction and constrain only the chosen checkbox.
-for _key, _cue, _prompt in [
-    ('1(b)', 'Is it important to vote in an election?', 'Is it important to vote in an election? Give a reason for your answer.'),
-    ('1(d)(iii)', 'Is there a value to opinion polls?', 'Is there a value to opinion polls? Give a reason for your answer.'),
-    ('1(g)', 'Is it important for a school to have a student council?', 'Is it important for a school to have a student council? Explain your answer.'),
-    ('1(i)', 'Is the United Nations Convention', 'Is the United Nations Convention on the Rights of the Child (UNCRC) important? Give a reason for your answer.'),
-    ('1(k)', 'Is it important that the world unites', 'Is it important that the world unites to tackle climate change? Give a reason for your answer.'),
-    ('1(r)', 'are gender quotas the solution', 'Given the statistics in the original question, are gender quotas the solution to increase female representation in the world of business? Give a reason for your answer.'),
-    ('1(s)', 'Can universal human rights exist', 'Can universal human rights exist in a culturally diverse world? Give a reason for your answer.'),
-    ('3(d)', 'Is Document B a reliable source of data?', 'Is Document B a reliable source of data? Explain your answer.'),
+# The printed checkbox menus require a reason for the selected answer. The
+# scheme marks either answer with one grid, so each stays one card carrying
+# the printed question and its checkboxes. `dropLines` removes extracted text
+# that belongs to a graphic beside the question, never question wording.
+YES_NO = [('yes', 'Yes'), ('no', 'No')]
+for _key, _cue, _drop in [
+    ('1(b)', 'Is it important to vote in an election?', ['2018-united-states-midterm-elections']),
+    ('1(d)(iii)', 'Is there a value to opinion polls?', []),
+    ('1(g)', 'Is it important for a school to have a student council?', []),
+    ('1(i)', 'Is the United Nations Convention', []),
+    ('1(k)', 'Is it important that the world unites', []),
+    ('1(r)', 'are gender quotas the solution', ['An', 'Central', 'Phríomh-Oifig Statistics', 'Staidrimh', 'Office', '1 in 7', '22% of members of', 'Boards of Directors in', 'Ireland in 2021 were female']),
+    ('1(s)', 'Can universal human rights exist', []),
+    ('3(d)', 'Is Document B a reliable source of data?', []),
 ]:
-    REVIEWED[2022, 'ordinary']['finiteRoutes'][_key] = {'cue': _cue, 'choose': 1, 'pool': [('yes', 'Yes'), ('no', 'No')], 'prompt': _prompt + '\n\nSelected response: {selection}.'}
+    REVIEWED[2022, 'ordinary']['choices'][_key] = {'cue': _cue, 'choose': 1, 'pool': YES_NO, 'dropLines': _drop}
 
 REVIEWED[2022, 'ordinary']['alignmentReviews'] = {
     '1(b)': {'paper': 'Is it important to vote in an election?', 'scheme': 'Is it important to vote in an election?', 'reason': 'Paper p3 voting checkbox and reason match scheme p4 second block, with positive and protest arguments and one 10-mark explanation grid.'},
@@ -736,20 +732,21 @@ REVIEWED[2023, 'higher'] = {
         '2(g)': 'Drawing on both documents and the images in the original question, what conclusions can you draw about global migration and displacement?',
         '5': 'A report published by the Mercy Corps found that, “Social media has emerged as a powerful tool for communication, connection, community and, unfortunately, conflict.”\n\nCritically evaluate the changing nature of contemporary media.\n\n[Your answer should include contemporary examples and evidence from a local and/or global context to support your argument. You should also refer to the ideas of one named theorist you have studied.]',
     },
-    'finiteRoutes': {
-        '1(m)': {'cue': 'If you had been asked this question', 'choose': 1, 'pool': [('agree', 'Agree'), ('disagree', 'Disagree'), ('dont-know', 'Don’t know')], 'prompt': 'When asked if Ireland should remain a member of the European Union 88% of people surveyed agreed. If you had been asked this question what would your response have been? Explain your answer.\n\nSelected response from the printed poll: {selection}.'},
+    'choices': {
+        # The pie-chart labels print inside the question's text lines.
+        '1(m)': {'cue': 'If you had been asked this question', 'choose': 1, 'pool': [('agree', 'Agree'), ('disagree', 'Disagree'), ('dont-know', 'Don’t know')], 'dropLines': ['7% Disagree', '5% Don’t know']},
     },
     'boundaryNotes': {
         '1(a),1(c),1(f),1(n),1(o)': 'Paired points share a five-mark cap with conditional transfer. In o the solution also depends on the chosen cause. Keep these responses whole.',
         '1(h)': 'The named theorist must be associated with the theory the candidate explains. Keep the linked 3+2 response; the paper does not enumerate theories.',
         '1(l)': 'Open evaluation of a cartoon, without a printed answer menu. Keep the justified opinion as one task.',
-        '1(m)': 'The question invites the candidate to answer the displayed poll. Its three printed response categories are Agree, Disagree and Don’t know; expand three 5-mark justified-response routes.',
+        '1(m)': 'The question invites the candidate to answer the displayed poll (Agree, Disagree or Don’t know). The scheme marks any response with one 5-mark explanation grid: one card.',
         '2(c)': 'One holistic 20-mark critique; the top band requires both documents and the next permits one. Do not invent a 10+10 document split.',
         '2(g)': 'Conclusions and document use assess one 50-mark answer; preserve the p12 conflict/disaster maps.',
         '4': 'Both printed essay alternatives are separate 100-mark tasks.',
         '3-7': 'At-least, one-or-more and and/or supporting theorists, contexts and illustrative organisations are open choices, not closed route pools.',
     },
-    'reviewedTaskCounts': {'A': 17, 'B': 7, 'C': 6},
+    'reviewedTaskCounts': {'A': 15, 'B': 7, 'C': 6},
 }
 
 # The causes are the thirteen labelled rows of the first chart on paper p11.
@@ -770,44 +767,44 @@ REVIEWED[2023, 'ordinary'] = {
     'dataMarks': {'2': [5, 10, 10, 15, 10], '3': [10, 10, 10, 10, 10], '4': [10, 10, 15, 15]},
     'topicOverrides': {'4(b)': '1-1'},
     'essayTopics': {'5': '2-7', '6': '0-12', '7': '0-7', '8': '1-2', '9': '2-2', '10': '0-9'},
-    'criterionAllocations': {'1(b)': [('Left wing', 5), ('Right wing', 5)], '1(e)': [('First step', 5), ('Second step', 5)], '1(l)': [('First piece', 5), ('Second piece', 5)], '2(d)': [('First cause', 5), ('Second cause', 5), ('Third cause', 5)], '3(b)': [('Strength', 5), ('Limitation', 5)]},
-    'permittedMarks': {'1(n)': {'Complete response': [0, 1, 2, 3, 4, 5, 6, 8, 9, 10]}, '2(a)': {'Complete response': [0, 5]}, '2(b)': {'Complete response': [0, 10]}, '2(d)': {'First cause': [0, 5], 'Second cause': [0, 5], 'Third cause': [0, 5]}},
+    'criterionAllocations': {'1(b)': [('Left wing', 5), ('Right wing', 5)], '1(e)': [('First step', 5), ('Second step', 5)], '1(l)': [('First piece', 5), ('Second piece', 5)], '2(d)': [('First cause you named', 5), ('Second cause you named', 5), ('Third cause you named', 5)], '3(b)': [('Strength', 5), ('Limitation', 5)]},
+    'permittedMarks': {'1(n)': {'Complete response': [0, 1, 2, 3, 4, 5, 6, 8, 9, 10]}, '2(a)': {'Complete response': [0, 5]}, '2(b)': {'Complete response': [0, 10]}, '2(d)': {'First cause you named': [0, 5], 'Second cause you named': [0, 5], 'Third cause you named': [0, 5]}},
     'markNotes': {'1(n)': 'The published grid gives 0–3, 4–6 and 8–10, omitting 7. This practice score preserves those published values; consult the original scheme.', '3(d)': 'The paper asks about Document A. The scheme includes representative-sample and optional-answer guidance associated with Document B as well as webpage/authorship guidance. Keep the paper’s Document A wording and consult both documents and the original scheme.'},
     'stemOverrides': {'1(h)': 'Examine the Central Statistics Office infographic “Our Lives Outdoors: Protection of the Environment”, April–May 2022, in the original question.'},
     'splits': {
         '1(b)': [split_task('left-wing', 'Left wing', 'The term ‘left wing’ is sometimes used to describe political parties, politicians and policies. What does this term mean?', 0), split_task('right-wing', 'Right wing', 'The term ‘right wing’ is sometimes used to describe political parties, politicians and policies. What does this term mean?', 1)],
         '3(b)': [split_task('strength', 'Strength', 'Describe one strength of on-line surveys as a research method.', 0), split_task('limitation', 'Limitation', 'Describe one limitation of on-line surveys as a research method.', 1)],
     },
-    'finiteRoutes': {
-        '1(i)': {'cue': 'ethnic or language or religious diversity', 'choose': 1, 'pool': [('ethnic', 'ethnic'), ('language', 'language'), ('religious', 'religious')], 'prompt': 'Comment on {selection} diversity in one European country. Name the country.'},
-        '1(q)': {'cue': 'one of the following:', 'choose': 1, 'pool': [('imf', 'International Monetary Fund (IMF)'), ('wto', 'World Trade Organisation (WTO)')], 'prompt': 'Give a brief description of the {selection}.'},
-        '2(d)': {'cue': 'name three main causes of poverty', 'choose': 3, 'pool': [(key, 'row ' + str(i + 1)) for i, (key, _) in enumerate(CAUSES_2023_OL)], 'sourceEvidence': {'page': 11, 'text': 'Which of the following do you think are the main causes of poverty in developing countries?'}, 'prompt': 'According to Document B, name the three causes of poverty shown in {selection} of the first chart, counting from the top.'},
-        '4(d)': {'cue': 'What answer would you have chosen', 'choose': 1, 'pool': CAUSES_2023_OL, 'sourceEvidence': {'page': 11, 'text': 'Which of the following do you think are the main causes of poverty in developing countries?'}, 'prompt': 'What answer would you have chosen to the question in Document B about the main causes of poverty in developing countries? Give one reason for your choice.\n\nSelected answer: {selection}.'},
+    'choices': {
+        '1(i)': {'cue': 'ethnic or language or religious diversity', 'choose': 1, 'pool': [('ethnic', 'ethnic'), ('language', 'language'), ('religious', 'religious')]},
+        '1(q)': {'cue': 'one of the following:', 'choose': 1, 'pool': [('imf', 'International Monetary Fund (IMF)'), ('wto', 'World Trade Organisation (WTO)')]},
+        '2(d)': {'cue': 'name three main causes of poverty', 'choose': 3, 'instruction': 'According to Document B, name three main causes of poverty in developing countries.', 'pool': CAUSES_2023_OL, 'sourceEvidence': {'page': 11, 'text': 'Which of the following do you think are the main causes of poverty in developing countries?'}},
+        '4(d)': {'cue': 'What answer would you have chosen', 'choose': 1, 'pool': CAUSES_2023_OL, 'sourceEvidence': {'page': 11, 'text': 'Which of the following do you think are the main causes of poverty in developing countries?'}},
     },
     'boundaryNotes': {
         '1(b)': 'Independent definitions priced 5 each; split.',
-        '1(d),1(h)(i),1(j),3(c),3(d)': 'Explicit Yes/No checkbox choices with reasons: expand both selectable positions at the published tariff.',
-        '1(h)': 'Three separately priced printed parts, 3+3+4. Share the infographic and expand the first part’s Yes/No routes.',
-        '1(i)': 'Three explicit types of diversity separated by or, in an openly chosen country: three 10-mark routes; do not enumerate countries.',
-        '1(q)': 'Closed IMF/WTO choice: two 10-mark routes.',
+        '1(d),1(h)(i),1(j),3(c),3(d)': 'Explicit Yes/No checkbox choices with reasons. The scheme marks either position with one grid: one card each, with the printed checkboxes.',
+        '1(h)': 'Three separately priced printed parts, 3+3+4. Share the infographic; the first part’s Yes/No choice stays inside one card.',
+        '1(i)': 'Three types of diversity separated by or, in an openly chosen country, marked by one 10-mark grid: one card; do not enumerate countries.',
+        '1(q)': 'IMF/WTO choice. The scheme lists indicative points for each, labelled IMF and WTO, under one 10-mark grid: one card with both lists.',
         '1(e),1(l)': 'Required pairs from an open domain with two 5-mark criteria.',
-        '2(d)': 'The scheme explicitly accepts any three of the chart’s thirteen causes, not just the top three. Expand C(13,3)=286 retrieval routes. Use row numbers in prompts to avoid supplying the answers.',
+        '2(d)': 'The scheme names the top three causes “or any other point named in the piece”, 3 x 5 marks. One card with the printed question and three 5-mark slots, never one card per combination of chart rows.',
         '3(b)': 'Independent 5-mark strength and limitation: split.',
         '3(e)': 'Open selection of evidence from the whole mixed prose/chart Document A, not a closed enumerated answer pool.',
         '4(a)': 'The top three reasons are specified, not selected by the candidate. One holistic comment grid, 10 marks.',
-        '4(d)': 'Candidate chooses an answer to the first chart’s question: thirteen named causes, thirteen 15-mark justified routes. The second chart’s up-to-three instruction belongs to its original survey, not to the exam candidate.',
+        '4(d)': 'Candidate chooses an answer to the first chart’s question from its thirteen causes; any choice is marked by the one 15-mark reason grid: one card. The second chart’s up-to-three instruction belongs to its original survey, not to the exam candidate.',
         '5-10': 'Optional support and, in Q8, required headings assess one integrated essay. No fixed finite choice among these headings.',
     },
-    'reviewedTaskCounts': {'A': 29, 'B': 314, 'C': 6},
+    'reviewedTaskCounts': {'A': 23, 'B': 15, 'C': 6},
 }
-for _key, _cue, _prompt in [
-    ('1(d)', 'Choose to Refuse', 'Do you think that this Choose to Refuse single-use plastic campaign is a good example of an action that an individual could take to achieve sustainable development? Give a reason for your answer.'),
-    ('1(h)(i)', 'Would you be one of the 68%', 'Would you be one of the 68% who said they were concerned about climate change? Give a reason for your answer.'),
-    ('1(j)', 'Does the Irish system of elections', 'Does the Irish system of elections produce a government that is truly representative of the people? Give one reason for your answer.'),
-    ('3(c)', 'Is there a value to researching', 'Is there a value to researching people’s opinions and attitudes? Explain your answer.'),
-    ('3(d)', 'Is Document A a reliable source of data?', 'Is Document A a reliable source of data? Explain your answer.'),
+for _key, _cue in [
+    ('1(d)', 'Choose to Refuse'),
+    ('1(h)(i)', 'Would you be one of the 68%'),
+    ('1(j)', 'Does the Irish system of elections'),
+    ('3(c)', 'Is there a value to researching'),
+    ('3(d)', 'Is Document A a reliable source of data?'),
 ]:
-    REVIEWED[2023, 'ordinary']['finiteRoutes'][_key] = {'cue': _cue, 'choose': 1, 'pool': [('yes', 'Yes'), ('no', 'No')], 'prompt': _prompt + '\n\nSelected response: {selection}.'}
+    REVIEWED[2023, 'ordinary']['choices'][_key] = {'cue': _cue, 'choose': 1, 'pool': YES_NO}
 
 REVIEWED[2023, 'ordinary']['promptOverrides'] = {
     '5': 'Discuss the impact of climate change on human rights.\n\nYou may use the infographic in the original question to support your answer. You may also refer to a relevant key thinker you have studied.',
@@ -822,7 +819,7 @@ REVIEWED[2024, 'higher'] = {
     'topicOverrides': {'2(a)': '1-9', '2(b)': '1-9', '2(e)': '1-9'},
     'essayTopics': {'3(a)': '3-3', '3(b)': '2-7', '4': '0-9', '5': '2-9', '6': '0-8', '7': '3-8'},
     'criterionAllocations': {'2(g)': [('Critique', 30), ('Use of documents', 20)]},
-    'finiteRoutes': {'1(o)': {'cue': 'either a left or right‐wing', 'choose': 1, 'pool': [('left-wing', 'left-wing'), ('right-wing', 'right-wing')], 'prompt': 'Briefly describe what it means to have a {selection} political viewpoint.'}},
+    'choices': {'1(o)': {'cue': 'either a left or right‐wing', 'choose': 1, 'pool': [('left-wing', 'left'), ('right-wing', 'right‐wing')]}},
     'promptOverrides': {
         '1(c)': 'Key thinker Andre Gunder-Frank proposed Dependency Theory to try and explain why some countries remain underdeveloped. Briefly explain this theory.',
         '1(h)': 'Comment on the presentation of the message in this image in the context of the climate crisis.',
@@ -832,7 +829,7 @@ REVIEWED[2024, 'higher'] = {
     },
     'boundaryNotes': {
         '1(a),1(i),1(j),1(k),1(l)': 'Shared five-mark caps with conditional transfer between points. Keep whole, including a’s comparison of two rights categories.',
-        '1(o)': 'Explicit either left or right-wing choice: two 5-mark routes.',
+        '1(o)': 'Either left or right-wing, marked by one 5-mark description grid: one card.',
         '2(a)': 'Strengths and limitations share one holistic 10-mark grid. No independent component tariff; retain together.',
         '2(c),2(d),2(f)': 'One holistic 20-mark grid with conditions on use of both documents. Do not split by document.',
         '2(f)': 'Local, national or European describes the settings in which women may represent communities. The instruction is to discuss barriers from both documents, not to select one setting; no finite route expansion.',
@@ -840,7 +837,7 @@ REVIEWED[2024, 'higher'] = {
         '3': 'Both printed essay alternatives are separate 100-mark routes; and/or nationalism and cultural identity allows flexible coverage within 3(a).',
         '4-7': 'Open evaluative positions and supporting examples/theorists, not closed answer menus.',
     },
-    'reviewedTaskCounts': {'A': 16, 'B': 7, 'C': 6},
+    'reviewedTaskCounts': {'A': 15, 'B': 7, 'C': 6},
 }
 
 REVIEWED[2024, 'ordinary'] = {
@@ -860,9 +857,9 @@ REVIEWED[2024, 'ordinary'] = {
         '6': 'Discuss the influence/role of the media in society today.\n\nYou may refer to the following in your answer:\n• Control / ownership / business\n• Reporting the news\n• Disinformation / misinformation\n• Fake news / bias / opinion\n• Politics / democracy\n• Influencers\n• Key thinker e.g. Noam Chomsky.',
         '10': 'According to a 2023 European Union survey, 93% of European people believe climate change is a serious problem facing the world.\n\nDiscuss what actions are needed to achieve sustainable development in the modern world.\n\nYou may use the following in your answer:\n• Consumer purchases\n• Sustainable consumption\n• Industry e.g. fast fashion\n• Renewable resources\n• The role of corporations\n• International agreements e.g. COP 28\n• The role of governments e.g. Climate Action Plan for Ireland, 2023\n• Key thinkers e.g. Vandana Shiva, Fr Seán McDonagh.',
     },
-    'finiteRoutes': {},
+    'choices': {},
     'boundaryNotes': {
-        '1(b),1(d)(iii),1(j)': 'Printed Yes/No checkboxes invite a position; preserve both justified response routes at the full task tariff.',
+        '1(b),1(d)(iii),1(j)': 'Printed Yes/No checkboxes invite a position, marked by one grid either way: one card each, with the printed checkboxes.',
         '1(d)': 'Scheme independently prices the three roman parts at 4,3,3. First part asks a factual more/less rent comparison, with one data-supported answer, not alternative practicable argument routes.',
         '1(c),1(g),1(r)': 'Comparison or explanation and example assessed by a single holistic ten-mark grid. No separately priced components.',
         '2(b)': 'All four assistance services in the narrative are required: four 5-mark criteria, no choose-k selection.',
@@ -873,14 +870,14 @@ REVIEWED[2024, 'ordinary'] = {
         '4(c),4(d)': 'Open choices of issue, project, evidence and policy recommendations; either document permits evidence sources rather than enumerating a finite response menu.',
         '5-10': 'Six holistic 50-mark essays; optional headings and named thinkers support the answer and are not selectable tasks.',
     },
-    'reviewedTaskCounts': {'A': 25, 'B': 14, 'C': 6},
+    'reviewedTaskCounts': {'A': 22, 'B': 14, 'C': 6},
 }
-for _key, _cue, _prompt in [
-    ('1(b)', 'Is it important for people to vote', 'Is it important for people to vote in European Union Elections? Explain your answer.'),
-    ('1(d)(iii)', 'Is the census a reliable source of data?', 'Is the census a reliable source of data? Explain your answer.'),
-    ('1(j)', 'Is it important to have laws against online hate speech?', 'Is it important to have laws against online hate speech?'),
+for _key, _cue in [
+    ('1(b)', 'Is it important for people to vote'),
+    ('1(d)(iii)', 'Is the census a reliable source of data?'),
+    ('1(j)', 'Is it important to have laws against online hate speech?'),
 ]:
-    REVIEWED[2024, 'ordinary']['finiteRoutes'][_key] = {'cue': _cue, 'choose': 1, 'pool': [('yes', 'Yes'), ('no', 'No')], 'prompt': _prompt+'\n\nSelected response: {selection}.'}
+    REVIEWED[2024, 'ordinary']['choices'][_key] = {'cue': _cue, 'choose': 1, 'pool': YES_NO}
 
 REVIEWED[2025, 'higher'] = {
     'paperPagesReviewed': list(range(1, 29)), 'schemePagesReviewed': list(range(1, 21)),
@@ -898,14 +895,14 @@ REVIEWED[2025, 'higher'] = {
     },
     'permittedMarks': {'1(a)': {'Group': [0, 2]}, '1(l)': {'System': [0, 2]}, '1(o)': {'Key thinker': [0, 2]}},
     'splits': {'1(o)': [split_task('thinker', 'Key thinker', 'Name the key thinker associated with the Capabilities Approach.', 0), split_task('theory', 'Theory', 'Briefly explain the Capabilities Approach.', 1)]},
-    'finiteRoutes': {'1(c)': {'cue': 'Thomas Hobbes or John Locke', 'choose': 1, 'pool': [('hobbes', 'Thomas Hobbes'), ('locke', 'John Locke')], 'prompt': 'Explain the ‘State of Nature’ concept through the view of {selection}.'}},
+    'choices': {'1(c)': {'cue': 'Thomas Hobbes or John Locke', 'choose': 1, 'pool': [('hobbes', 'Thomas Hobbes'), ('locke', 'John Locke')]}},
     'promptOverrides': {
         '1(a)': 'Identify a group that may be under-represented in the decision-making processes in schools and suggest one way to increase their representation.',
         '4': '“A developed country is not a place where the poor have cars. It’s where the rich use public transportation.” — Gustavo Petro.\n\nDiscuss this statement from Gustavo Petro in the context of sustainable development.\n\n[Your answer should include contemporary examples and evidence such as COP 29 or other relevant national or international agreements to support your argument. You should also refer to the ideas of at least one theorist named on your course.]',
     },
     'boundaryNotes': {
         '1(a),1(l)': 'Open choice of group/system; suggestion or description must match that choice. Preserve each linked 2+3 response.',
-        '1(c)': 'Closed printed Hobbes/Locke alternatives yield two five-mark routes.',
+        '1(c)': 'Hobbes or Locke. The scheme gives one indicative point for each, labelled (Hobbes) and (Locke), under one 5-mark grid: one card.',
         '1(i),1(m)': 'Two required open responses with 3+2 allocations; retain together because they are unlabelled slots in a single selection of two distinct responses, not independent printed tasks.',
         '1(k)': 'One holistic five-mark comparison, no independently priced definitions.',
         '1(o)': 'Fixed Capabilities Approach has independent thinker identification (2) and theory explanation (3); split without supplying the thinker answer.',
@@ -914,7 +911,7 @@ REVIEWED[2025, 'higher'] = {
         '3': 'Both printed alternatives are separate 100-mark essays.',
         '3-7': 'Theorists, contexts, contemporary evidence and illustrative agreements are open or flexible supporting choices.',
     },
-    'reviewedTaskCounts': {'A': 17, 'B': 7, 'C': 6},
+    'reviewedTaskCounts': {'A': 16, 'B': 7, 'C': 6},
 }
 
 REVIEWED[2025, 'ordinary'] = {
@@ -938,9 +935,9 @@ REVIEWED[2025, 'ordinary'] = {
         '1(r)': [split_task('description', 'Description', 'Describe what a duty bearer is.', 0), split_task('example', 'Example', 'Give an example of a duty bearer.', 1)],
         '4(a)': [split_task('similarity', 'Similarity', 'From Document B, identify one similarity between the data from Haiti and the data from South Sudan.', 0), split_task('difference', 'Difference', 'From Document B, identify one difference between the data from Haiti and the data from South Sudan.', 1)],
     },
-    'finiteRoutes': {
-        '1(c)': {'cue': 'Is this a good example of an action to', 'choose': 1, 'pool': [('yes', 'Yes'), ('no', 'No')], 'prompt': 'In 2024 the Irish government introduced the Deposit Return Scheme for plastic bottles and aluminium or steel cans. Is this a good example of an action to achieve sustainable development? Explain your answer.\n\nSelected response: {selection}.'},
-        '2(d)': {'cue': 'Name one of these countries', 'choose': 1, 'pool': [('haiti', 'the first country column'), ('south-sudan', 'the second country column'), ('sudan', 'the third country column')], 'sourceEvidence': {'page': 11, 'text': 'Haiti'}, 'prompt': 'Document B outlines the main causes of hunger in three countries. Using {selection} in the table, name the country and identify its main cause of hunger.'},
+    'choices': {
+        '1(c)': {'cue': 'Is this a good example of an action to', 'choose': 1, 'pool': YES_NO},
+        '2(d)': {'cue': 'Name one of these countries', 'choose': 1, 'pool': [('haiti', 'Haiti'), ('south-sudan', 'South Sudan'), ('sudan', 'Sudan')], 'sourceEvidence': {'page': 11, 'text': 'Haiti'}},
     },
     'markNotes': {'2(e)': 'The printed task refers to Document B. The scheme’s top descriptor mentions both documents; both originals are available for reference.'},
     'promptOverrides': {
@@ -949,12 +946,12 @@ REVIEWED[2025, 'ordinary'] = {
     },
     'boundaryNotes': {
         '1(a),1(q)': 'Two required open reasons, each 5 marks; retain the paired recall task with two criteria, not a finite printed pool.',
-        '1(c)': 'Explicit Yes/No checkbox menu; two justified ten-mark answer routes. Aluminium or steel describes eligible materials, not a separate candidate choice.',
+        '1(c)': 'Explicit Yes/No checkbox menu, marked by one ten-mark explanation grid either way: one card. Aluminium or steel describes eligible materials, not a separate candidate choice.',
         '1(d)': 'Three independently priced roman parts: 4,3,3, all retain the CSO graphic.',
         '1(e)': 'The example must demonstrate the selected right being unmet; keep the linked 2+8 response. Rights are recalled, not a printed pool.',
         '1(p),1(s)': 'Open theory recall; and/or is flexible coverage. The State of Nature question does not print a Hobbes/Locke choice (unlike HL); retain one task.',
         '1(r)': 'Fixed duty-bearer concept has independent description (8) and example (2) tariffs; split.',
-        '2(d)': 'Three finite country columns: derive one route per column, keeping the linked 2+8 response. Prompt identifies the column position so the retrieval answer is not disclosed.',
+        '2(d)': 'Name any one of the three countries in Document B and its main cause. The scheme’s 2+8 allocation and “Haiti, South Sudan or Sudan” apply to whichever is chosen: one card.',
         '2(c)': 'All three drivers are required; scheme gives one 15-mark response, not an explicit per-driver tariff.',
         '2(e)': 'Paper refers to Document B; scheme top descriptor says both. Preserve paper wording, note discrepancy, include both sources.',
         '3(c)': 'Open choice of evidence from mixed narrative and infographic; key piece and link remain one linked 2+8 response.',
@@ -964,10 +961,10 @@ REVIEWED[2025, 'ordinary'] = {
         '4(c),4(d)': 'Open project and recommendations, not a finite menu.',
         '5-10': 'Six holistic essays with optional support headings, thinkers and flexible and/or contexts. Each remains 50 marks.',
     },
-    'reviewedTaskCounts': {'A': 24, 'B': 17, 'C': 6},
+    'reviewedTaskCounts': {'A': 23, 'B': 15, 'C': 6},
 }
 
 # NCCA Strands of Study, Topic 2.3 explicitly locates capitalism in social class.
 # https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/politics-and-society/strands-of-study/
 REVIEWED[2021, 'higher']['boundaryNotes']['1(b)-topic'] = 'Capitalism is Topic 2.3 Social Class and Gender in NCCA; the cartoon stays with that canonical node.'
-REVIEWED[2021, 'ordinary']['boundaryNotes']['1(c)-topic'] = 'Capitalism, social class and patriarchy are Topic 2.3 concepts; all three routes resolve to its canonical node.'
+REVIEWED[2021, 'ordinary']['boundaryNotes']['1(c)-topic'] = 'Capitalism, social class and patriarchy are Topic 2.3 concepts; the card resolves to its canonical node.'

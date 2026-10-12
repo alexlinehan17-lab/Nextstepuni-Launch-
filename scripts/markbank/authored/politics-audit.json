@@ -12,10 +12,10 @@
     "note": "Every indexed English-language Politics paper. The index contains 2020 Higher only; historical sample/deferred reference headings remain available but are outside this indexed paper corpus."
   },
   "coverage": {
-    "covered": 1086,
-    "denominator": 1086,
-    "higher": 272,
-    "ordinary": 814,
+    "covered": 622,
+    "denominator": 622,
+    "higher": 263,
+    "ordinary": 359,
     "open": 0,
     "orphan": 0,
     "unparsed": 0,
@@ -28,14 +28,15 @@
     "method": "Every page visually swept; paper boundaries checked against scheme allocations. Independently handwritten printed-boundary inventory and reviewed task census. Paper/scheme alignment uses wording and order, not matching labels. All earlier card identities preserved.",
     "selectionScan": "Every paper page scanned before task parsing; 610 raw signals on 186 pages pinned with written dispositions. Newly introduced or stale directives fail production generation.",
     "routeExamples": {
-      "2021 OL Q1(l)": "126 routes: choose 5 of 9 acronyms",
-      "2023 OL Q2(d)": "286 routes: choose 3 of 13 chart causes; row references keep answers hidden",
-      "2025 OL Q2(d)": "3 country-column routes; published 2+8 tariff"
+      "2021 OL Q1(l)": "One card: any 5 of 9 printed acronyms, five 2-mark slots, scheme expansions labelled by acronym",
+      "2023 OL Q2(d)": "One card: three 5-mark slots; scheme names three causes or any other point named in Document B",
+      "2025 OL Q2(d)": "One card: any one of three countries; published 2+8 tariff"
     },
     "boundaryDecisions": "scripts/markbank/authoring/politics_reviewed.py",
     "sourceHashes": "scripts/markbank/authored/politics-reconciliation.json",
     "independentCensus": "scripts/markbank/authored/politics-census.json",
-    "rawSelectionLedger": "scripts/markbank/authored/politics-selection-review.json"
+    "rawSelectionLedger": "scripts/markbank/authored/politics-selection-review.json",
+    "choicePolicy": "2026-10-12: choice is not a route. 34 choose-one and choose-N tasks are one card each with the printed question; 498 branch-only per-option and per-combination cards were withdrawn (none was ever on main)."
   },
   "validation": {
     "fullSuite": {

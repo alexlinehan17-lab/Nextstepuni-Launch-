@@ -3,7 +3,7 @@
 The raw selection ledger covers every PDF page, independently of the task
 extractor. It is pinned after the visual sweep, never rewritten by author.py.
 The handwritten printed-boundary census is an additional extraction guard;
-reviewedTaskCounts records the separate scheme/route census.
+reviewedTaskCounts records the separate scheme/choice census.
 """
 from __future__ import annotations
 import hashlib

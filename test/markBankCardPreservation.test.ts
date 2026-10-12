@@ -109,8 +109,14 @@ const decks = [
   // 2026-10-07: new Politics corpus, 17 paper/scheme pairs visually reviewed.
   // No prior Politics IDs existed. All prior subject preservation checks and
   // zero-open/zero-orphan Politics reconciliation passed before this addition.
-  ['politics-and-society:higher', POLITICS_HIGHER, 272, '2f2f922139088966fafe1f23d06528cca406c61e00e4a78c90cf81b2d9f5ebe7'],
-  ['politics-and-society:ordinary', POLITICS_ORDINARY, 814, '0a275116d0957b98225c44628398cbcce75bf1371d8c3a6054f74cb8e3a6304c'],
+  // 2026-10-12: 272/814 -> 263/359, deliberately. Choice is not a route: the
+  // 498 per-option and per-combination cards (286 for 2023 OL Q2(d) alone,
+  // 126 for 2021 OL Q1(l)) rewrote the SEC question and flooded sessions, so
+  // each of their 34 printed tasks is now ONE card. None of the 498 IDs was
+  // ever on main (checked against origin/main 6652f80cc), so they are removed
+  // rather than aliased; every one of the other 588 Politics cards is unchanged.
+  ['politics-and-society:higher', POLITICS_HIGHER, 263, '6a1acd6ec5281c832c38795ba97751babef5c5a93aa7653a0d0d4b44f79a6bfe'],
+  ['politics-and-society:ordinary', POLITICS_ORDINARY, 359, '9ae8b67318c107f351bca65a8050dfeb595e89171f846462137974e287f48878'],
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
@@ -788,7 +794,9 @@ describe('Mark Bank card preservation', () => {
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
     // Politics adds 1,086 tasks; all previous subjects retain their IDs.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(23_539);
+    // Politics then folds its branch-only choice routes into their printed
+    // tasks, 1,086 -> 622 (2026-10-12): 23,539 - 464.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(23_075);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

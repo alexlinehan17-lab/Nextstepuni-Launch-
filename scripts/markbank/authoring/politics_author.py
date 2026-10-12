@@ -10,7 +10,6 @@ from __future__ import annotations
 import argparse
 from copy import deepcopy
 import hashlib
-from itertools import combinations
 import json
 from pathlib import Path
 import re
@@ -39,6 +38,44 @@ def readable(text, question=False):
         line = re.sub(r'_{3,}', '_____', line)
         rows.append(line)
     return '\n'.join(rows)
+
+
+def lifted_question(task, rule):
+    """The printed question, line for line, for a task the candidate chooses within.
+
+    Only two things may happen to the extracted paper lines: lines that belong
+    to a graphic beside the question (named in the reviewed rule) are dropped,
+    and the PDF's line wraps are re-flowed so the question reads as the paper
+    prints it on a phone. No word is added, removed or reordered; the final
+    assertion proves it against the extracted text.
+    """
+    lines = readable(task['text'], True).splitlines()
+    for line in rule.get('dropLines', []):
+        assert line in lines, ('Stale dropped graphic line', task['key'], line)
+    lines = [line for line in lines if line not in rule.get('dropLines', [])]
+    flowed = []
+    for line in lines:
+        if flowed and flowed[-1] in ('•', '∗'):
+            flowed[-1] += ' ' + line            # a bullet glyph extracted onto its own line
+        elif flowed and len(flowed[-1]) >= 40 and not re.search(r'[.?!:]$', flowed[-1]) and line not in ('•', '∗'):
+            flowed[-1] += ' ' + line            # a wrapped sentence, not a printed list item
+        else:
+            flowed.append(line)
+    text = '\n'.join(flowed)
+    assert text.split() == ' '.join(lines).split(), ('Question wording changed', task['key'])
+    return text
+
+
+def scheme_labels(text):
+    """Re-join a scheme label printed in its own column ("EU:") with its wording."""
+    lines = text.splitlines()
+    result = []
+    for line in lines:
+        if result and re.fullmatch(r'[A-Z]{2,6}:', result[-1]):
+            result[-1] += ' ' + line
+        else:
+            result.append(line)
+    return '\n'.join(result)
 
 
 def groups(units):
@@ -159,29 +196,44 @@ def build_tasks(draft, review, matches):
                 tasks.append(child)
         else:
             tasks.append(task)
+    # Choice is not a route. When the candidate chooses which N of M printed
+    # items to answer, every Politics scheme marks the choice with one shared
+    # grid, so the task stays ONE card: the printed question with its whole
+    # list, and N slot criteria at the scheme's per-slot tariff. Writing a card
+    # per option or per combination rewrote the SEC wording and put the same
+    # question in a session up to 286 times (2023 OL Q2(d)). Split routes only
+    # where a scheme marks them differently; none in this corpus does.
+    assert 'finiteRoutes' not in review, 'Retired: route expansion; declare choices instead'
     expanded = []
     used_rules = set()
     for task in tasks:
         key = task['key'] + ('#' + task['suffix'] if task.get('suffix') else '')
-        rule = review.get('finiteRoutes', {}).get(key)
-        if not rule:
-            expanded.append(task)
-            continue
-        assert clean(rule['cue']) in clean(task['text']), ('Stale route cue', key)
-        if rule.get('sourceEvidence'):
-            evidence = rule['sourceEvidence']
-            page = fitz.open(ROOT / draft['source']['papers']['path'])[evidence['page'] - 1]
-            assert clean(evidence['text']) in clean(page.get_text()), ('Stale source route pool', key)
-        assert 0 < rule['choose'] <= len(rule['pool'])
-        used_rules.add(key)
-        for chosen in combinations(rule['pool'], rule['choose']):
-            route = deepcopy(task)
-            route['suffix'] = '-'.join(filter(None, [task.get('suffix'), *[item[0] for item in chosen]]))
-            route['focus'] = ' / '.join(item[1] for item in chosen)
-            route['prompt'] = rule['prompt'].replace('{selection}', ' and '.join(item[1] for item in chosen))
-            route['route'] = {'key': key, 'options': [item[0] for item in chosen], 'choose': rule['choose'], 'poolSize': len(rule['pool'])}
-            expanded.append(route)
-    assert used_rules == set(review.get('finiteRoutes', {})), ('Stale route rule', used_rules)
+        rule = review.get('choices', {}).get(key)
+        if rule:
+            assert clean(rule['cue']) in clean(task['text']), ('Stale choice cue', key)
+            evidence_text = clean(task['text'])
+            if task['parentKey'] in matches:
+                evidence_text += ' ' + clean(matches[task['parentKey']]['text'])
+            if rule.get('sourceEvidence'):
+                evidence = rule['sourceEvidence']
+                page = clean(fitz.open(ROOT / draft['source']['papers']['path'])[evidence['page'] - 1].get_text())
+                assert clean(evidence['text']) in page, ('Stale source choice pool', key)
+                evidence_text += ' ' + page
+            # Every pool item is printed on the paper or named by the scheme.
+            for _, label in rule['pool']:
+                assert clean(label).lower() in evidence_text.lower(), ('Unprinted pool item', key, label)
+            assert 0 < rule['choose'] < len(rule['pool']), key
+            assert rule['choose'] == 1 or len(task['allocation']) == rule['choose'], ('One slot per chosen item', key)
+            if rule.get('instruction'):
+                assert clean(rule['instruction']) in clean(task['text']), ('Unprinted choice instruction', key)
+            if not task.get('suffix'):
+                assert task['key'] not in review.get('promptOverrides', {}), ('Choice question must be lifted', key)
+                task['prompt'] = lifted_question(task, rule)
+            task['choice'] = {'key': key, 'choose': rule['choose'], 'poolSize': len(rule['pool']),
+                              'pool': [label for _, label in rule['pool']], 'instruction': rule.get('instruction')}
+            used_rules.add(key)
+        expanded.append(task)
+    assert used_rules == set(review.get('choices', {})), ('Stale choice rule', set(review.get('choices', {})) - used_rules)
     for task in expanded:
         key = task['key'] + ('#' + task['suffix'] if task.get('suffix') else '')
         task['topic'] = review.get('topicOverrides', {}).get(key, task['topic'])
@@ -206,6 +258,8 @@ def card_for(task, draft, review, matches):
         scheme = matches[task['parentKey']]
         scheme_pages = scheme['pages']
         guidance = [readable(scheme['text'])]
+        if task.get('choice'):
+            guidance = [scheme_labels(guidance[0])]
         criteria = [{'id': f'criterion-{i+1}', 'label': name, 'maxMarks': marks,
                      'permittedMarks': review.get('permittedMarks', {}).get(task['key'], {}).get(name, list(range(marks+1))), 'guidance': []}
                     for i, (name, marks) in enumerate(task['allocation'])]
@@ -233,12 +287,12 @@ def card_for(task, draft, review, matches):
         },
         'qa': {'gates': ['paper-scheme-visual-review', 'wording-order-alignment', 'published-tariff'],
                'humanReviewedBy': 'Codex source review; no human sign-off claimed', 'humanReviewedAt': '2026-10-07'},
-        'rubric': {'system': 'politics', 'taskRequirements': [task['focus']] if task.get('focus') else [],
+        'rubric': {'system': 'politics', 'taskRequirements': ([task['focus']] if task.get('focus') else []) + ([task['choice']['instruction']] if task.get('choice', {}).get('instruction') else []),
                    'criteria': criteria, 'schemeGuidance': guidance, 'markingGuideNote': note,
                    'schemePages': scheme_pages, 'schemeFileid': src['schemes']['fileid']},
         '_audit': {'paperKey': task['key'], 'parentKey': task['parentKey'], 'paperPages': pages,
                    'paperTextSha256': hashlib.sha256(task['text'].encode()).hexdigest(),
-                   'split': task.get('suffix'), 'route': task.get('route')},
+                   'split': task.get('suffix'), 'choice': task.get('choice')},
     }
 
 
