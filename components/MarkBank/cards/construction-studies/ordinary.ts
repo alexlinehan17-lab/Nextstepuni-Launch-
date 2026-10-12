@@ -2162,13 +2162,45 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q1-a", topicId: "cons-3-4", conceptId: "vertical-section-wall-lintel-and-doorframe",
+    id: "cons-2022-ol-q1-a", topicId: "cons-1-5", conceptId: "vertical-section-wall-lintel-and-doorframe",
     section: "B", questionRef: "2022 OL Q1(a)",
+    stem: "The sketch shows the front door of a dwelling house. The external wall is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The doorframe, which is fixed in the wall is 150 mm × 80 mm. The highly insulated wooden door is 90 mm in thickness with 15 mm vertical sheeting on both sides.",
     questionText: "To a scale of 1:5, draw a vertical section through the external wall, concrete lintels, doorframe and door. On your drawing show the typical construction details from 400 mm below to a level 400 mm above the concrete lintels. Include four typical dimensions.",
-    tariffModel: {"kind":"bestNofParts","notation":"7 x 5","answer":7,"ofParts":12,"perPart":5}, totalMarks: 35,
+    tariffModel: {"kind":"fixed"}, totalMarks: 47,
     rows: [
-    { id: "cons-2022-ol-q1-a-r1", kind: "anyN", verbatim: "Specification – typical detail", marks: 35, contextNote: "Specification – typical detail", openList: true, group: {"claimMax":7,"perOption":5,"options":["19 mm external render","Concrete block outer leaf 100 mm","Full fill insulated cavity 200 mm","Concrete block inner leaf 100 mm","15 mm internal plaster","Concrete lintels","Wall tie","Stepped DPC","Airtight tape","Cavity closer","Thermally broken doorframe 150 mm × 80 mm","Insulated external door 90 mm N.B. Any alternative detailing which complies with current Building Regulations is acceptable"]} },
+    { id: "details", kind: "criterion", verbatim: "Any 7 x 5 marks", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block inner leaf with 15 mm internal plaster; 200 mm full-fill cavity insulation; concrete block outer leaf with 19 mm render; wall ties; concrete lintels; stepped DPC; airtight tape; cavity closer; thermally broken door frame (150 × 80 mm); insulated external door (90 mm).", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "dimensions", kind: "criterion", verbatim: "Any 4 typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "External wall, lintels and front door section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the cavity-closer detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q1-original.png",
+          "srcHash": "a527ae503ffd658fa029a77ed2ea58bc",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 1: the printed question with a sketch of a sheeted front door in a cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q1-scheme.png",
+          "srcHash": "19ec4c63c90ef3181451f136ed9e1adb",
+          "alt": "SEC model section through the cavity wall, lintels, doorframe and door with the cavity closer marked (b), and the specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2177,12 +2209,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
     id: "cons-2022-ol-q2-b", topicId: "cons-5-2", conceptId: "insulating-a-tank-and-pipework-in-an-attic",
     section: "B", questionRef: "2022 OL Q2(b)",
+    stem: "The sketch shows the uninsulated attic space of a dwelling house. The homeowners wish to add insulation to the roof at ceiling joist level and around water storage tank. The ceiling joists are 200 mm × 40 mm.",
     questionText: "The water storage tank and pipework in the attic are also to be insulated. On a separate sketch show, using notes and freehand sketches, how the water tank and pipework could be insulated.",
-    tariffModel: {"kind":"fixed","notation":"1 x 9 + 1 x 9","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "cons-2022-ol-q2-b-r1", kind: "anyN", verbatim: "Water tank", marks: 9, contextNote: "Water tank", openList: true, group: {"claimMax":1,"perOption":9,"options":["Attic insulation at roof level is not placed under the water tank to allow heat to rise and prevent the tank from freezing during cold weather","Insulation is cut to size and positioned at the sides and the top of the water tank"]} },
-    { id: "cons-2022-ol-q2-b-r2", kind: "anyN", verbatim: "Pipework", marks: 9, contextNote: "Pipework", openList: true, group: {"claimMax":1,"perOption":9,"options":["Polyethylene foam tubes are placed around all pipework in the attic","Duct tape is used to join two foam tubes together where they meet","Reflective pipe lagging insulation can also be used to surround all pipework"]} },
+    { id: "tank", kind: "criterion", verbatim: "Method to insulating water tank note & sketch (5 + 4 marks)", marks: 9, contextNote: "Note 5 and sketch 4. Such as: no attic insulation under the tank, so heat rises and stops it freezing; insulation cut to size around the sides and top of the tank.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "pipework", kind: "criterion", verbatim: "Method of insulating pipework note & sketch (5 + 4 marks)", marks: 9, contextNote: "Note 5 and sketch 4. Such as: polyethylene foam tubes around all attic pipework, joined with duct tape; or reflective pipe lagging.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic, tank and pipework",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The insulation method and type are open choices; the scheme lists typical examples. Both the tank and the pipework in (b) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-original.png",
+          "srcHash": "7e9fd4ef02797dc6a6433a34d97d9f0d",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 2: the printed question with a sketch of an uninsulated attic with a water tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q2-tank",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-tank.png",
+          "srcHash": "6919d35729c206461ae9a683cc312273",
+          "alt": "SEC 2022 Ordinary marking scheme notes on insulating the water tank and pipework, with sketches of an insulated tank and foam pipe lagging.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2191,11 +2253,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
     id: "cons-2022-ol-q2-c", topicId: "cons-6-2", conceptId: "advantages-of-insulating-an-attic",
     section: "B", questionRef: "2022 OL Q2(c)",
+    stem: "The sketch shows the uninsulated attic space of a dwelling house. The homeowners wish to add insulation to the roof at ceiling joist level and around water storage tank. The ceiling joists are 200 mm × 40 mm.",
     questionText: "Discuss two advantages of highly insulating the attic space of a house.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "cons-2022-ol-q2-c-r1", kind: "anyN", verbatim: "Discuss two advantages of highly insulating the attic space of a house.", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["Reduced heat loss","Reduced energy bills","Increased thermal comfort","Improves the building energy rating (BER)","Better for the environment Any alternative detailing or answer which complies with current Building Regulations is acceptable"]} },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 5, contextNote: "Such as: reduced heat loss; reduced energy bills.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 5, contextNote: "A second, different advantage. Such as: more thermal comfort; a better BER; better for the environment.", permittedMarks: [0,1,2,3,4,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic, tank and pipework",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The insulation method and type are open choices; the scheme lists typical examples. Both the tank and the pipework in (b) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-original.png",
+          "srcHash": "7e9fd4ef02797dc6a6433a34d97d9f0d",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 2: the printed question with a sketch of an uninsulated attic with a water tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q2-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-advantages.png",
+          "srcHash": "d293f8d4f1d97e5ece85299c07ff16f9",
+          "alt": "SEC 2022 Ordinary marking scheme notes on the advantages of a highly insulated attic.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2204,24 +2297,88 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
     id: "cons-2022-ol-q3-a", topicId: "cons-5-4", conceptId: "an-underground-rainwater-storage-tank",
     section: "B", questionRef: "2022 OL Q3(a)",
+    stem: "Rainwater can be collected from the roof, stored and reused in a dwelling house.",
     questionText: "Draw a large freehand sketch of the given house and underground storage tank. On your sketch show the pipework necessary to collect the rainwater from the roof and carry it to the underground tank.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 4","answer":4,"ofParts":6,"perPart":4}, totalMarks: 16,
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "cons-2022-ol-q3-a-r1", kind: "anyN", verbatim: "Typical details", marks: 16, contextNote: "Typical details", openList: true, group: {"claimMax":4,"perOption":4,"options":["125 mm eaves gutter","65 mm downpipe","100 mm underground pipe to storage tank","Debris filter","Underground water storage tank","Overflow pipe"]} },
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "A large freehand sketch of the house and underground tank.", permittedMarks: [0,1,2,3,4] },
+    { id: "collection", kind: "criterion", verbatim: "Pipework to collect water from roof", marks: 4, contextNote: "Such as: a 125 mm eaves gutter and 65 mm downpipe.", permittedMarks: [0,1,2,3,4] },
+    { id: "to-tank", kind: "criterion", verbatim: "Pipework from roof to storage tank", marks: 4, contextNote: "Such as: a 100 mm underground pipe to the storage tank.", permittedMarks: [0,1,2,3,4] },
+    { id: "filters", kind: "criterion", verbatim: "Filters and overflow pipe", marks: 4, contextNote: "Such as: a debris filter and an overflow pipe from the underground tank.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Rainwater harvesting for flushing toilets",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The scheme diagrams are one acceptable layout; the best-six list in (b) is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-original.png",
+          "srcHash": "05e1d79d7ddcef41c3e03cc37ad26836",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 3: the printed question with a sketch of a house and an underground rainwater tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q3-collection",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-collection.png",
+          "srcHash": "229d262f8962c9edc1307fab75cefaa2",
+          "alt": "SEC model diagram of the gutter, downpipe and underground pipe to the rainwater tank, with the typical details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q3-b", topicId: "cons-5-6", conceptId: "pipework-for-flushing-with-rainwater",
+    id: "cons-2022-ol-q3-b", topicId: "cons-5-2", conceptId: "pipework-for-flushing-with-rainwater",
     section: "B", questionRef: "2022 OL Q3(b)",
+    stem: "Rainwater can be collected from the roof, stored and reused in a dwelling house.",
     questionText: "The stored rainwater is used for flushing toilets. On the sketch, show the pipework necessary to take rainwater from the underground tank to the storage tank in the attic. Show the pipework necessary to connect the toilet cistern to the storage tank in the attic. Include all necessary pumps and valves.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 4","answer":6,"ofParts":9,"perPart":4}, totalMarks: 24,
+    tariffModel: {"kind":"fixed"}, totalMarks: 28,
     rows: [
-    { id: "cons-2022-ol-q3-b-r1", kind: "anyN", verbatim: "Typical details", marks: 24, contextNote: "Typical details", openList: true, group: {"claimMax":6,"perOption":4,"options":["Submersible pump in water storage tank","12 mm pipe from storage tank to filter","In line filter","230 litre attic storage tank","Overflow pipe","Ball valve","12 mm feed to toilet cistern","Toilet","All necessary valves"]} },
+    { id: "items", kind: "criterion", verbatim: "Any 6 x 4 marks", marks: 24, contextNote: "Credit the best SIX acceptable items at 4 marks each, capped at 24. Marked items: pumps; pipework from the underground tank to the attic tank; filters; attic storage tank; ball valve; 28 mm overflow; pipework from the attic tank to the cistern; toilet cistern; valves. Typical details: a submersible pump, 12 mm pipe to an in-line filter, a 230 litre attic tank, 12 mm feed to the cistern.", permittedMarks: [0,4,8,12,16,20,24] },
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "The supply pipework drawn on the sketch.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Rainwater harvesting for flushing toilets",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The scheme diagrams are one acceptable layout; the best-six list in (b) is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-original.png",
+          "srcHash": "05e1d79d7ddcef41c3e03cc37ad26836",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 3: the printed question with a sketch of a house and an underground rainwater tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q3-supply",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-supply.png",
+          "srcHash": "cd7589a9f13293970152eb7de1e9a2e4",
+          "alt": "SEC model diagram of the pump, filter and pipework from the underground tank to the attic tank and toilet cistern, with the typical details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2230,11 +2387,41 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
     id: "cons-2022-ol-q3-c", topicId: "cons-5-4", conceptId: "advantages-of-reusing-rainwater",
     section: "B", questionRef: "2022 OL Q3(c)",
+    stem: "Rainwater can be collected from the roof, stored and reused in a dwelling house.",
     questionText: "Discuss one advantage of reusing rainwater in a dwelling house.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 6","answer":1,"ofParts":3,"perPart":6}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "cons-2022-ol-q3-c-r1", kind: "anyN", verbatim: "Discuss one advantage of reusing rainwater in a dwelling house.", marks: 6, openList: true, group: {"claimMax":1,"perOption":6,"options":["Sustainable living","Reduces flooding around property","Reduce the cost of water treatment due to reduced usage"]} },
+    { id: "advantage", kind: "criterion", verbatim: "Advantage", marks: 6, contextNote: "Such as: sustainable living; less flooding around the property; lower water treatment costs from reduced use.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Rainwater harvesting for flushing toilets",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The scheme diagrams are one acceptable layout; the best-six list in (b) is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-original.png",
+          "srcHash": "05e1d79d7ddcef41c3e03cc37ad26836",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 3: the printed question with a sketch of a house and an underground rainwater tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q3-advantage",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-advantage.png",
+          "srcHash": "b107379433ff6aef693b4ca75ca992c5",
+          "alt": "SEC 2022 Ordinary marking scheme notes on an advantage of reusing rainwater.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2243,154 +2430,530 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
     id: "cons-2022-ol-q4-a", topicId: "cons-4-5", conceptId: "construction-of-a-stud-partition",
     section: "B", questionRef: "2022 OL Q4(a)",
-    questionText: "Using notes and a freehand sketch, show the typical construction details of the stud partition required to separate the rooms.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 4","answer":6,"ofParts":6,"perPart":4}, totalMarks: 24,
+    stem: "The sketch shows an open-plan kitchen and living room. The homeowner has decided to construct a timber stud partition with a door to separate these areas.",
+    questionText: "Using notes and a freehand sketch, show the typical construction details of the stud partition required to separate the rooms. Include the following in your sketch: headplate; soleplate; timber studs; noggins; door lintel.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
-    { id: "cons-2022-ol-q4-a-r1", kind: "anyN", verbatim: "Using notes and a freehand sketch, show the typical construction details of the stud partition required to separate the ", marks: 24, openList: true, group: {"claimMax":6,"perOption":4,"options":["Sole plate at the base of the partition 100 mm × 45 mm","Head plate at the top of the partition 100 mm × 45 mm","Vertical studs between head and sole plate 100 mm × 45 mm","Noggins inserted between studs to increase rigidity 100 mm × 45 mm","Door head inserted above opening 100 mm × 45 mm","Door jambs to support door head 100 mm × 45 mm headplate"]} },
+    { id: "items", kind: "criterion", verbatim: "Typical construction details of the stud partition", marks: 20, contextNote: "All five printed items, 4 each: headplate; soleplate; timber studs; noggins; door lintel. The scheme specifies 100 × 45 mm sole plate, head plate, studs, noggins, door head and jambs.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] },
+    { id: "note", kind: "criterion", verbatim: "Note", marks: 4, contextNote: "Notes on the construction, such as noggins between the studs for rigidity and jambs supporting the door head.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketch: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Timber stud partition between kitchen and living room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All five printed items in (a) are required in one sketch, not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-original.png",
+          "srcHash": "b4fa313c3ee8f1bf03152160dacdad82",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 4: the printed question with a sketch of an open-plan kitchen and living room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q4-partition",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-partition.png",
+          "srcHash": "997009475dba3ef9d53bfcbdab1cff82",
+          "alt": "SEC model sketch of a stud partition with headplate, soleplate, studs, noggins and door lintel labelled, with the notes and sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q4-c", topicId: "cons-1-1", conceptId: "separating-a-living-room-from-a-kitchen",
+    id: "cons-2022-ol-q4-c", topicId: "cons-1-2", conceptId: "separating-a-living-room-from-a-kitchen",
     section: "B", questionRef: "2022 OL Q4(c)",
+    stem: "The sketch shows an open-plan kitchen and living room. The homeowner has decided to construct a timber stud partition with a door to separate these areas.",
     questionText: "Discuss two reasons for creating a living room which is separate from the kitchen.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "cons-2022-ol-q4-c-r1", kind: "anyN", verbatim: "Discuss two reasons for creating a living room which is separate from the kitchen.", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["To reduce noise pollution to the living room","Allow privacy to the occupants of either room","To reduce odours spreading to the living room","Smaller space will reduce echo","Separate spaces to eat and to relax"]} },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1", marks: 5, contextNote: "Such as: less noise in the living room; privacy for the occupants of each room.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2", marks: 5, contextNote: "A second, different reason. Such as: cooking odours kept from the living room; less echo in a smaller space; separate spaces to eat and to relax.", permittedMarks: [0,1,2,3,4,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Timber stud partition between kitchen and living room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All five printed items in (a) are required in one sketch, not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-original.png",
+          "srcHash": "b4fa313c3ee8f1bf03152160dacdad82",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 4: the printed question with a sketch of an open-plan kitchen and living room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q4-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-reasons.png",
+          "srcHash": "8dd1f4d8f4f3afc31f0c5a7b4a9cbc58",
+          "alt": "SEC 2022 Ordinary marking scheme notes on reasons for a living room separate from the kitchen.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q5-a", topicId: "cons-4-4", conceptId: "vertical-section-bottom-three-steps",
+    id: "cons-2022-ol-q5-a", topicId: "cons-1-5", conceptId: "vertical-section-bottom-three-steps",
     section: "B", questionRef: "2022 OL Q5(a)",
+    stem: "The sketch shows a portion of a closed-string wooden stairs in a dwelling house. The rise of each step is 170 mm.",
     questionText: "To a scale of 1:5, draw a vertical section through the centre of the bottom three steps of the stairs. Show the string, treads and risers. Include three typical dimensions on your drawing.",
-    tariffModel: {"kind":"bestNofParts","notation":"7 x 5","answer":7,"ofParts":9,"perPart":5}, totalMarks: 35,
+    tariffModel: {"kind":"fixed"}, totalMarks: 46,
     rows: [
-    { id: "cons-2022-ol-q5-a-r1", kind: "anyN", verbatim: "Specification – typical detail", marks: 35, contextNote: "Specification – typical detail", openList: true, group: {"claimMax":7,"perOption":5,"options":["String 250 mm × 50 mm","Tread 250 mm × 25 mm","Riser 170 mm x 20 mm","Joint between tread and riser","Nosing 16 mm minimum","Vertical wedge","Horizontal wedge","Glue blocks 60 mm × 60 mm","Pitch line (max 42⁰)"]} },
+    { id: "details", kind: "criterion", verbatim: "Any 7 x 5 marks", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 × 50 mm; tread 250 × 25 mm; riser 170 × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical wedge; horizontal wedge; glue blocks 60 × 60 mm; pitch line (maximum 42°).", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "dimensions", kind: "criterion", verbatim: "Any three typical dimensions 3 x 1 mark", marks: 3, contextNote: "Three appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Closed-string stairs section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction details, dimensions and draughting belong to part (a); the anti-creak detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q5-original.png",
+          "srcHash": "f21de975c50249775892a055fd4cf9a4",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 5: the printed question with a sketch of a closed-string wooden stairs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q5-scheme.png",
+          "srcHash": "39e9895ee6c17661371b56d97c290ef3",
+          "alt": "SEC model section through the bottom three steps with the wedges marked (b), the specification list and the anti-creak details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q6-b", topicId: "cons-9-4", conceptId: "risks-when-using-power-tools",
+    id: "cons-2022-ol-q6-b", topicId: "cons-1-8", conceptId: "risks-when-using-power-tools",
     section: "B", questionRef: "2022 OL Q6(b)",
+    stem: "The sketch shows a construction worker using a jackhammer on a public footpath.",
     questionText: "Describe two potential risks to a construction worker when using power tools on a construction site.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "cons-2022-ol-q6-b-r1", kind: "anyN", verbatim: "Possible Reasons", marks: 10, contextNote: "Possible Reasons", openList: true, group: {"claimMax":2,"perOption":5,"options":["Damage to hearing due to excessive noise","Electrical injury due to encountering exposed live cables","Exposure to dust and fumes if correct PPE is not used","Overuse of hammer action tools resulting in Hand-Arm Vibration Syndrome (HAVS)","Encountering underground services"]} },
+    { id: "risk-1", kind: "criterion", verbatim: "Risk 1", marks: 5, contextNote: "Such as: hearing damage from excessive noise; electrical injury from exposed live cables.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "risk-2", kind: "criterion", verbatim: "Risk 2", marks: 5, contextNote: "A second, different risk. Such as: dust and fumes without the correct PPE; hand-arm vibration syndrome from hammer-action tools; striking underground services.", permittedMarks: [0,1,2,3,4,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Jackhammer safety and PPE",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. PPE items, risks and precautions are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-original.png",
+          "srcHash": "941ecd8ce7426720ddbf3915c6aa1567",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 6: the printed question with a sketch of a worker using a jackhammer on a footpath.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q6-risks",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-risks.png",
+          "srcHash": "14a9b550f6347a9a076d075ef9853a78",
+          "alt": "SEC 2022 Ordinary marking scheme notes on risks to workers using power tools.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q6-c", topicId: "cons-9-4", conceptId: "safety-precautions-with-power-tools",
+    id: "cons-2022-ol-q6-c", topicId: "cons-1-8", conceptId: "safety-precautions-with-power-tools",
     section: "B", questionRef: "2022 OL Q6(c)",
+    stem: "The sketch shows a construction worker using a jackhammer on a public footpath.",
     questionText: "Using notes and a freehand sketch, describe one safety precaution that will reduce the risk to the public while the footpath is being replaced.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 13","answer":1,"ofParts":4,"perPart":13}, totalMarks: 13,
+    tariffModel: {"kind":"fixed"}, totalMarks: 13,
     rows: [
-    { id: "cons-2022-ol-q6-c-r1", kind: "anyN", verbatim: "Using notes and a freehand sketch, describe one safety precaution that will reduce the risk to the public while the foot", marks: 13, openList: true, group: {"claimMax":1,"perOption":13,"options":["Erect signage to direct the public away from the work zone","Ensure guard rails and exclusion zone notices are in place to limit the proximity of the public to the work area","Ensure building material is stored at a safe distance from the open public zones","Enclose work area with dust shelter to prevent dust particles being blown into the open public zones"]} },
+    { id: "precaution", kind: "criterion", verbatim: "Safety precaution note & sketch (7 + 6 marks)", marks: 13, contextNote: "Note 7 and sketch 6. Such as: signage directing the public away from the work zone; guard rails and exclusion zones; materials stored away from public areas; a dust shelter around the work area.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Jackhammer safety and PPE",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. PPE items, risks and precautions are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-original.png",
+          "srcHash": "941ecd8ce7426720ddbf3915c6aa1567",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 6: the printed question with a sketch of a worker using a jackhammer on a footpath.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q6-public",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-public.png",
+          "srcHash": "6bc90933b0ac9e9f0fd64f0e5fb45c4f",
+          "alt": "SEC 2022 Ordinary marking scheme notes on protecting the public near footpath works, with sketches of barriers, cones and signs.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q7-a", topicId: "cons-1-1", conceptId: "designing-a-garden-for-a-family",
+    id: "cons-2022-ol-q7-a", topicId: "cons-1-2", conceptId: "designing-a-garden-for-a-family",
     section: "B", questionRef: "2022 OL Q7(a)",
+    stem: "The draft design for a rear garden of a semi-detached house is shown. The homeowners wish to create a garden space to meet their family needs. The position of existing trees is shown.",
     questionText: "Discuss two reasons why it is important to create a garden space that meet the needs of the family.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":7,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "cons-2022-ol-q7-a-r1", kind: "anyN", verbatim: "Discuss two reasons why it is important to create a garden space that meet the needs of the family.", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["Safe area to socialise and entertain","Private area for the family to enjoy the outdoors","Promotes outdoor living","Allows a multi-purpose area for all age groups to enjoy and use","An extension to the home making it a usable space for the family","Well-designed gardens allow herbs and vegetables to be grown","Providing extra storage for homeowners"]} },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1", marks: 5, contextNote: "Such as: a safe area to socialise and entertain; a private area to enjoy the outdoors.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2", marks: 5, contextNote: "A second, different reason. Such as: outdoor living for all age groups; an extension of the home; space to grow herbs and vegetables; extra storage.", permittedMarks: [0,1,2,3,4,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Designing a family garden",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-original.png",
+          "srcHash": "798adb33d4f90ff2ed6b16fcf4d81542",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 7: the printed question with the draft plan of a rear garden with existing trees.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q7-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-reasons.png",
+          "srcHash": "34061a9fcde9d928314b72f2023b1c9c",
+          "alt": "SEC 2022 Ordinary marking scheme notes on why a garden should meet the family’s needs.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q7-b", topicId: "cons-1-1", conceptId: "laying-out-a-garden",
+    id: "cons-2022-ol-q7-b", topicId: "cons-1-2", conceptId: "laying-out-a-garden",
     section: "B", questionRef: "2022 OL Q7(b)",
-    questionText: "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden area: • outdoor dining/living space • garden storage • flower beds • lawn area.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 x 6","answer":5,"ofParts":12,"perPart":6}, totalMarks: 30,
+    stem: "The draft design for a rear garden of a semi-detached house is shown. The homeowners wish to create a garden space to meet their family needs. The position of existing trees is shown.",
+    questionText: "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden area: outdoor dining/living space; garden storage; flower beds; lawn area. Give one reason for selecting each location.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
-    { id: "cons-2022-ol-q7-b-r1", kind: "anyN", verbatim: "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garde", marks: 30, contextNote: "The scheme groups its answer under: Outdoor dining/living space; Garden storage; Flower beds; Lawn area", openList: true, group: {"claimMax":5,"perOption":6,"options":["Located close to dwelling to allow ease of indoor and outdoor living","Located to catch south facing sunlight","Located away from the house to prevent shading from dwelling","Located close to entrance gate to allow ease of use when storing garden supplies","Located at the back of the garden to allow freedom of movement around garden","Located close to a side fence to prevent shading the garden area","Located in sight of the dwelling for occupants to enjoy the view","Located to capture sunlight during the day","Located along a boundary fence to allow ease of movement around garden","Located in occupants’ line of vision","Located close to the dwelling to bring nature close in the indoors","Located at the rear of the garden to prevent occupants picking up dirt and water on a wet day"]} },
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 6, contextNote: "A large freehand sketch of the given garden design.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "outdoor", kind: "criterion", verbatim: "Location and valid reason for outdoor space (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: close to the house for indoor-outdoor living, or placed to catch south-facing sun.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "storage", kind: "criterion", verbatim: "Location and valid reason for garden storage (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: near the entrance gate for supplies, or at the back or side fence to keep the garden open and unshaded.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "flower-beds", kind: "criterion", verbatim: "Location and valid reason for flower beds (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: in sight of the house, in the sun, or along a boundary fence.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "lawn", kind: "criterion", verbatim: "Location and valid reason for lawn area (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: in the occupants’ line of vision, close to the house, or at the rear to keep dirt out of the house.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Designing a family garden",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-original.png",
+          "srcHash": "798adb33d4f90ff2ed6b16fcf4d81542",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 7: the printed question with the draft plan of a rear garden with existing trees.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q7-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-layout.png",
+          "srcHash": "c412dea0f4fb419f92c0ff4903deb904",
+          "alt": "SEC model garden layouts showing the outdoor dining space, storage, flower beds and lawn, with the reasons for each location (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q7-c", topicId: "cons-1-1", conceptId: "trees-and-plants-in-a-garden-design",
+    id: "cons-2022-ol-q7-c", topicId: "cons-1-2", conceptId: "trees-and-plants-in-a-garden-design",
     section: "B", questionRef: "2022 OL Q7(c)",
+    stem: "The draft design for a rear garden of a semi-detached house is shown. The homeowners wish to create a garden space to meet their family needs. The position of existing trees is shown.",
     questionText: "Discuss two advantages of incorporating trees and plants into a garden design.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":6,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "cons-2022-ol-q7-c-r1", kind: "anyN", verbatim: "Discuss two advantages of incorporating trees and plants into a garden design", marks: 10, contextNote: "Discuss two advantages of incorporating trees and plants into a garden design", openList: true, group: {"claimMax":2,"perOption":5,"options":["Promotes wellbeing","Improves air quality","Attracts pollinators to the garden","Improves the overall appearance of the garden","Natural shade and shelter for the dwelling house","Reduces flooding from rainwater run-off"]} },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 5, contextNote: "Such as: wellbeing; better air quality; pollinators attracted to the garden.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 5, contextNote: "A second, different advantage. Such as: a better appearance; natural shade and shelter for the house; less flooding from run-off.", permittedMarks: [0,1,2,3,4,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Designing a family garden",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-original.png",
+          "srcHash": "798adb33d4f90ff2ed6b16fcf4d81542",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 7: the printed question with the draft plan of a rear garden with existing trees.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q7-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-advantages.png",
+          "srcHash": "60351aa911daa848bfa220bd617e435f",
+          "alt": "SEC 2022 Ordinary marking scheme notes on the advantages of trees and plants in a garden.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q9-a", topicId: "cons-3-3", conceptId: "choosing-a-wood-for-external-cladding",
+    id: "cons-2022-ol-q9-a", topicId: "cons-3-2", conceptId: "choosing-a-wood-for-external-cladding",
     section: "B", questionRef: "2022 OL Q9(a)",
+    stem: "The sketch shows a detached rural house with a front porch. The porch is of timber frame construction with an external wooden cladding.",
     questionText: "Specify a suitable wood for the external cladding, and give two reasons for your choice.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 4","answer":3,"ofParts":9,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2022-ol-q9-a-r1", kind: "anyN", verbatim: "Suitable wood for external cladding,", marks: 12, contextNote: "Suitable wood for external cladding,", openList: true, group: {"claimMax":3,"perOption":4,"options":["Cedar","Larch","Douglas Fir","Oak","Teak Two reasons for your choice","Durable wood species","Do not require preservative treatment due to containing natural oils","Naturally resistant to insect attack","Naturally resistant to moisture"]} },
+    { id: "wood", kind: "criterion", verbatim: "Suitable wood", marks: 4, contextNote: "Such as: cedar, larch, Douglas fir, oak or teak.", permittedMarks: [0,1,2,3,4] },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1", marks: 4, contextNote: "A reason matching the wood. Such as: a durable species; no preservative needed because of its natural oils.", permittedMarks: [0,1,2,3,4] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2", marks: 4, contextNote: "A second, different reason. Such as: naturally resistant to insect attack or to moisture.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "A timber-clad front porch",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, modifications and reasons are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-original.png",
+          "srcHash": "5416e530ef8d7d41224fe5f6c1774f5b",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 9: the printed question with a sketch of a rural house with a timber-clad front porch.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q9-wood",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-wood.png",
+          "srcHash": "a24a525641b7223b424aa62a07a3d0ec",
+          "alt": "SEC 2022 Ordinary marking scheme notes on suitable woods for cladding and reasons, with a sketch of a timber-clad porch.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q9-b", topicId: "cons-7-4", conceptId: "bringing-natural-light-into-a-porch",
+    id: "cons-2022-ol-q9-b", topicId: "cons-3-5", conceptId: "bringing-natural-light-into-a-porch",
     section: "B", questionRef: "2022 OL Q9(b)",
+    stem: "The sketch shows a detached rural house with a front porch. The porch is of timber frame construction with an external wooden cladding.",
     questionText: "The owner wishes to modify the porch to allow more natural light into the house. Using notes and freehand sketches, show two modification to the porch that would allow more natural light to enter the house.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 13","answer":2,"ofParts":4,"perPart":13}, totalMarks: 26,
+    tariffModel: {"kind":"fixed"}, totalMarks: 26,
     rows: [
-    { id: "cons-2022-ol-q9-b-r1", kind: "anyN", verbatim: "The owner wishes to modify the porch to allow more natural light into the house. Using notes and freehand sketches, show", marks: 26, openList: true, group: {"claimMax":2,"perOption":13,"options":["Install roof lights","Insert a window in the entrance door","Install windows in the external walls","Replace the roof with a glass roof"]} },
+    { id: "modification-1", kind: "criterion", verbatim: "Modification 1 to porch notes + sketch (8 + 5 marks )", marks: 13, contextNote: "Notes and sketch, 8 + 5. Such as: roof lights; a window in the entrance door.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] },
+    { id: "modification-2", kind: "criterion", verbatim: "Modification 2 to porch notes + sketch (8 + 5 marks )", marks: 13, contextNote: "Notes and sketch, 8 + 5, for a second, different modification. Such as: windows in the external walls; a glass roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "A timber-clad front porch",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, modifications and reasons are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-original.png",
+          "srcHash": "5416e530ef8d7d41224fe5f6c1774f5b",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 9: the printed question with a sketch of a rural house with a timber-clad front porch.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q9-light",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-light.png",
+          "srcHash": "404b2a9fdd21a6b134b02f0449353e82",
+          "alt": "SEC 2022 Ordinary marking scheme notes on letting more light into the porch, with sketches of a roof light and a glazed porch.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q9-c", topicId: "cons-1-1", conceptId: "why-build-a-front-porch",
+    id: "cons-2022-ol-q9-c", topicId: "cons-1-2", conceptId: "why-build-a-front-porch",
     section: "B", questionRef: "2022 OL Q9(c)",
+    stem: "The sketch shows a detached rural house with a front porch. The porch is of timber frame construction with an external wooden cladding.",
     questionText: "Discuss two reasons why homeowners would wish to build a front porch to their house.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":6,"perPart":6}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2022-ol-q9-c-r1", kind: "anyN", verbatim: "Two reasons why homeowners would wish to build a front porch to their house", marks: 12, contextNote: "Two reasons why homeowners would wish to build a front porch to their house", openList: true, group: {"claimMax":2,"perOption":6,"options":["Increase the usable space","Create an extra draught barrier","Blend in with neighbouring properties","Additional security to home","Improved insulation of existing home","Increase the resale value of the property"]} },
+    { id: "reason-1", kind: "criterion", verbatim: "Advantage 1", marks: 6, contextNote: "Such as: more usable space; an extra draught barrier.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "reason-2", kind: "criterion", verbatim: "Advantage 2", marks: 6, contextNote: "A second, different reason. Such as: blending in with neighbouring houses; extra security; better insulation of the house; a higher resale value.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "A timber-clad front porch",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, modifications and reasons are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-original.png",
+          "srcHash": "5416e530ef8d7d41224fe5f6c1774f5b",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 9: the printed question with a sketch of a rural house with a timber-clad front porch.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q9-porch",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-porch.png",
+          "srcHash": "43767e43ffb8f7a97ffad30a71e4287d",
+          "alt": "SEC 2022 Ordinary marking scheme notes on reasons for a front porch, with a sketch of a porch.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q1-b", topicId: "cons-3-4", conceptId: "keeping-the-cavity-clear-of-mortar",
+    id: "cons-2022-ol-q1-b", topicId: "cons-3-3", conceptId: "keeping-the-cavity-clear-of-mortar",
     section: "B", questionRef: "2022 OL Q1(b)",
+    stem: "The sketch shows the front door of a dwelling house. The external wall is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The doorframe, which is fixed in the wall is 150 mm × 80 mm. The highly insulated wooden door is 90 mm in thickness with 15 mm vertical sheeting on both sides.",
     questionText: "On your drawing, show the typical design detailing to ensure that the cavity is closed at the door head.",
-    tariffModel: {"kind":"fixed","notation":"3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 3,
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "cons-2022-ol-q1-b-r1", kind: "point", verbatim: "Cavity closer", marks: 3, openList: true },
+    { id: "closer", kind: "criterion", verbatim: "Cavity closer", marks: 3, contextNote: "Show and identify the cavity closer at the door head, as in the scheme’s model section. Any alternative detail that complies with current Building Regulations is accepted.", permittedMarks: [0,3] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "External wall, lintels and front door section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the cavity-closer detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q1-original.png",
+          "srcHash": "a527ae503ffd658fa029a77ed2ea58bc",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 1: the printed question with a sketch of a sheeted front door in a cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q1-scheme.png",
+          "srcHash": "19ec4c63c90ef3181451f136ed9e1adb",
+          "alt": "SEC model section through the cavity wall, lintels, doorframe and door with the cavity closer marked (b), and the specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2399,128 +2962,85 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
     id: "cons-2022-ol-q6-a", topicId: "cons-1-8", conceptId: "safety-signs-on-a-construction-site",
     section: "B", questionRef: "2022 OL Q6(a)",
+    stem: "The sketch shows a construction worker using a jackhammer on a public footpath.",
     questionText: "Using a large freehand sketch, show three safety signs highlighting the use of personal protective equipment (PPE) that must be worn by workers while using a jackhammer. For each sign, state how the personal protective equipment protects workers while using the jackhammer.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 9","answer":3,"ofParts":3,"perPart":9}, totalMarks: 27,
+    tariffModel: {"kind":"fixed"}, totalMarks: 27,
     rows: [
-    { id: "cons-2022-ol-q6-a-r1", kind: "anyN", verbatim: "Using a large freehand sketch, show three safety signs highlighting the use of personal protective equipment (PPE) that ", marks: 27, openList: true, group: {"claimMax":3,"perOption":9,"options":["Sign 1 and specific reason","Sign 2 and specific reason","Sign 3 and specific reason"]} },
+    { id: "sign-1", kind: "criterion", verbatim: "Sign 1 and specific reason. (6 + 3 marks)", marks: 9, contextNote: "Sign 6 and specific reason 3. Such as: ear protectors, protecting hearing from the jackhammer’s high decibel levels.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "sign-2", kind: "criterion", verbatim: "Sign 2 and specific reason (6 + 3 marks)", marks: 9, contextNote: "A second, different sign: 6 + 3. Such as: safety boots, protecting feet from dropped or falling materials; safety glasses, protecting eyes from flying debris and dust.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "sign-3", kind: "criterion", verbatim: "Sign 3 and specific reason (6 + 3 marks)", marks: 9, contextNote: "A third, different sign: 6 + 3. Such as: a dust mask, protecting the lungs from dust; safety gloves, protecting hands when moving broken debris.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Jackhammer safety and PPE",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. PPE items, risks and precautions are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-original.png",
+          "srcHash": "941ecd8ce7426720ddbf3915c6aa1567",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 6: the printed question with a sketch of a worker using a jackhammer on a footpath.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q6-signs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-signs.png",
+          "srcHash": "00bb9c59bae40ea81d7b2ed84c278c5e",
+          "alt": "SEC model PPE signs for ear protectors, safety boots, safety glasses, a dust mask and safety gloves, each with how it protects the worker.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q8-None-strip-foundation", topicId: "cons-1-5", conceptId: "construction-terms-strip-foundation",
-    section: "B", questionRef: "2022 OL Q8 — Strip foundation",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • strip foundation.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    id: "cons-2022-ol-q8-None-strip-foundation", topicId: "cons-2-4", conceptId: "construction-terms-strip-foundation",
+    section: "B", questionRef: "2022 OL Q8",
+    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: strip foundation; fascia board; airtight tape; wind turbine; septic tank; dovetail joint; wall tie; cordless jigsaw; underfloor heating.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
     rows: [
-    { id: "cons-2022-ol-q8-None-strip-foundation-r1", kind: "anyN", verbatim: "Strip foundation", marks: 10, contextNote: "Strip foundation", openList: true, group: {"claimMax":2,"perOption":6,"options":["Simple and common type of foundation used for domestic homes","Sustainable and economic use of material","Concrete is reinforced with steel to improve the foundations tensile strength","Walls are placed centrally on the foundation and the loads are transmitted at 45⁰ to the supporting ground","Strip foundations are used where the surrounding soil has a good bearing capacity"],"perOptionSteps":[6,4]} },
+    { id: "terms", kind: "anyN", verbatim: "Construction Terms", marks: 50, contextNote: "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Strip foundation: a simple, common foundation for homes; concrete reinforced with steel for tensile strength; the wall placed centrally with loads spread at 45° to the ground; used where the soil has a good bearing capacity. Fascia board: gives a finished appearance and protects the house from the weather; part of the eaves with the soffit; carries the gutters; usually wood, PVC or aluminium. Airtight tape: a highly adhesive tape used with an airtight membrane at every junction of building elements and around door and window frames, preventing draughts and heat loss. Wind turbine: converts wind energy into mechanical energy that generates electricity; sustainable, reducing reliance on fossil fuels; commercial wind farms or smaller domestic turbines; horizontal- or vertical-axis. Septic tank: an underground chamber that collects, stores and treats domestic wastewater; anaerobic bacteria break down solids, which settle as sludge; treated water returns to the ground through the percolation area. Dovetail joint: a common joint in drawer and box construction and quality furniture; the slope of the tail (1:8 hardwood, 1:6 softwood) gives its tensile strength; cut by hand or with a router jig. Wall tie: ties the two leaves of a cavity wall into one stable unit, embedded in the mortar; stainless steel or basalt fibre (less thermal bridging); lengths to suit the cavity. Cordless jigsaw: cuts shapes and curves with a reciprocating blade; battery powered, portable and safer without a lead; the base rests on the work and is pushed along; used on a range of materials. Underfloor heating: polyethylene pipes beneath the floor carry water heated by a heat pump; the floor becomes a large heat source with no cold spots and a constant temperature, replacing radiators; efficient at low temperatures.", group: {"claimMax":5,"perOption":10,"options":["Strip foundation","Fascia board","Airtight tape","Wind turbine","Septic tank","Dovetail joint","Wall tie","Cordless jigsaw","Underfloor heating"]} },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q8-None-fascia-board", topicId: "cons-1-5", conceptId: "construction-terms-fascia-board",
-    section: "B", questionRef: "2022 OL Q8 — Fascia board",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • fascia board.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2022-ol-q8-None-fascia-board-r1", kind: "anyN", verbatim: "Fascia board", marks: 10, contextNote: "Fascia board", openList: true, group: {"claimMax":2,"perOption":6,"options":["Gives a finished appearance to the roof","Protects the interior of the dwelling from weather damage","Forms part of the eaves of a roof along with the soffit","Provided a surface for gutters to be fixed too","Made from a variety of material with wood, PVC and aluminium the most common"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q8-None-airtight-tape", topicId: "cons-1-5", conceptId: "construction-terms-airtight-tape",
-    section: "B", questionRef: "2022 OL Q8 — Airtight tape",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • airtight tape.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2022-ol-q8-None-airtight-tape-r1", kind: "anyN", verbatim: "Airtight tape", marks: 10, contextNote: "Airtight tape", openList: true, group: {"claimMax":2,"perOption":6,"options":["Highly adhesive tape which bonds to construction material","Used in conjunction with airtight membrane to form an airtight and windtight structure","Used to prevent draughts and to reduce heat loss from a structure","Used at all junctions where different building elements meet, ceiling to wall, floor to wall","Used to form an airtight seal at door and window frames"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q8-None-wind-turbine", topicId: "cons-1-5", conceptId: "construction-terms-wind-turbine",
-    section: "B", questionRef: "2022 OL Q8 — Wind turbine",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • wind turbine.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2022-ol-q8-None-wind-turbine-r1", kind: "anyN", verbatim: "Wind turbine", marks: 10, contextNote: "Wind turbine", openList: true, group: {"claimMax":2,"perOption":6,"options":["Sustainable and eco-friendly source of energy","Reduces the reliance on carbon emitting fossil fuel energy sources","Converts wind energy into mechanical energy which generates electricity","Wind turbines can be part of a commercial wind farm which provide energy to the National grid","Smaller domestic wind turbines provide additional energy to homes and farms","Wind turbines can be horizontal-axis or vertical-axis in form"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q8-None-septic-tank", topicId: "cons-1-5", conceptId: "construction-terms-septic-tank",
-    section: "B", questionRef: "2022 OL Q8 — Septic tank",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • septic tank.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2022-ol-q8-None-septic-tank-r1", kind: "anyN", verbatim: "Septic tank", marks: 10, contextNote: "Septic tank", openList: true, group: {"claimMax":2,"perOption":6,"options":["Underground chamber used to collect, store, and treat domestic wastewater","Designed to remove pollution and release treated water safely back into the environment","Works by using natural anaerobic bacteria to break down solid waste","As wastewater makes its way through the tank, solid waste sinks to the bottom and forms sludge","Water is returned to the ground by the connecting percolation area"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q8-None-dovetail-joint", topicId: "cons-1-5", conceptId: "construction-terms-dovetail-joint",
-    section: "B", questionRef: "2022 OL Q8 — Dovetail joint",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • dovetail joint.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2022-ol-q8-None-dovetail-joint-r1", kind: "anyN", verbatim: "Dovetail joint", marks: 10, contextNote: "Dovetail joint", openList: true, group: {"claimMax":2,"perOption":6,"options":["Common joint used in drawer and box construction","Used in high quality furniture manufacture","The slope of the tail gives the joint its tensile strength","The slope for hardwood is 1:8","The slope for softwood is 1:6","Can be constructed by hand or by a router jig"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q8-None-wall-tie", topicId: "cons-1-5", conceptId: "construction-terms-wall-tie",
-    section: "B", questionRef: "2022 OL Q8 — Wall tie",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • wall tie.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2022-ol-q8-None-wall-tie-r1", kind: "anyN", verbatim: "Wall tie", marks: 10, contextNote: "Wall tie", openList: true, group: {"claimMax":2,"perOption":6,"options":["Fitting used in the construction of cavity walls to create stability","Holds wall leaves together to form a strong and complete unit","Traditionally made from stainless steel but basalt fibre material is currently popular due to reduction in thermal bridging","Comes in a range of lengths depending on the width of the cavity","Wall ties are embedded in the mortar to ensure a grip is formed with the wall material"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q8-None-cordless-jigsaw", topicId: "cons-1-5", conceptId: "construction-terms-cordless-jigsaw",
-    section: "B", questionRef: "2022 OL Q8 — Cordless jigsaw",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • cordless jigsaw.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2022-ol-q8-None-cordless-jigsaw-r1", kind: "anyN", verbatim: "Cordless jigsaw", marks: 10, contextNote: "Cordless jigsaw", openList: true, group: {"claimMax":2,"perOption":6,"options":["Used to cut shapes and curves by the reciprocation action of a blade","Powered by a rechargeable D.C. battery rather than connection to the A.C. mains","Base of jigsaw rests on the work surface and pushed along by user","Versatile tool that can be used on a range of materials","Cordless nature allows for a safer work environment","Allows for portability and use away from power sources"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2022-ol-q8-None-underfloor-heating", topicId: "cons-1-5", conceptId: "construction-terms-underfloor-heating",
-    section: "B", questionRef: "2022 OL Q8 — Underfloor heating",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • underfloor heating.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2022-ol-q8-None-underfloor-heating-r1", kind: "anyN", verbatim: "Underfloor heating", marks: 10, contextNote: "Underfloor heating", openList: true, group: {"claimMax":2,"perOption":6,"options":["A circuit of polyethylene pipes are installed beneath the finished floor level","Water, heated by a heat pump, is circulated through the underfloor pipes","The floor acts as a large heat source which eliminates cold spots in rooms","Creates a more comfortable and constant indoor temperature","Replaces the need for wall hanging radiators","Energy and cost-effective due to the lower temperatures required to heat areas"],"perOptionSteps":[6,4]} },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Construction terms",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q8-original.png",
+          "srcHash": "ffc0e53030bb44dfe8c10d1a496b8a20",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q8-terms.png",
+          "srcHash": "594891fdae0f4a3a633a5bdcb70934b0",
+          "alt": "SEC marking-scheme notes and sketches for all nine Question 8 terms, in scheme order: strip foundation, fascia board, airtight tape, wind turbine, septic tank, dovetail joint, wall tie, cordless jigsaw and underfloor heating.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9919,6 +10439,533 @@ export const CARDS: SecCard[] = [
           "srcHash": "91cd5d8745f100cb5bcaf10465b0d1d4",
           "alt": "SEC 2023 Ordinary marking scheme notes on modifying the entrance for a person with limited mobility, with a sketch of an entrance opening in a brick wall.",
           "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q1-complete", topicId: "cons-1-5", conceptId: "door-head-section-complete",
+    section: "B", questionRef: "2022 OL Q1 — complete",
+    stem: "The sketch shows the front door of a dwelling house. The external wall is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The doorframe, which is fixed in the wall is 150 mm × 80 mm. The highly insulated wooden door is 90 mm in thickness with 15 mm vertical sheeting on both sides.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the external wall, concrete lintels, doorframe and door. On your drawing show the typical construction details from 400 mm below to a level 400 mm above the concrete lintels. Include four typical dimensions. (b) On your drawing, show the typical design detailing to ensure that the cavity is closed at the door head.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 x 5 marks", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block inner leaf with 15 mm internal plaster; 200 mm full-fill cavity insulation; concrete block outer leaf with 19 mm render; wall ties; concrete lintels; stepped DPC; airtight tape; cavity closer; thermally broken door frame (150 × 80 mm); insulated external door (90 mm).", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Any 4 typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-closer", kind: "criterion", verbatim: "Cavity closer", marks: 3, contextNote: "Show and identify the cavity closer at the door head, as in the scheme’s model section. Any alternative detail that complies with current Building Regulations is accepted.", permittedMarks: [0,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-ol-q1-a","label":"a","marks":47,"rowIds":["a-details","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2022-ol-q1-b","label":"b","marks":3,"rowIds":["b-closer"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "External wall, lintels and front door section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the cavity-closer detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q1-original.png",
+          "srcHash": "a527ae503ffd658fa029a77ed2ea58bc",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 1: the printed question with a sketch of a sheeted front door in a cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q1-scheme.png",
+          "srcHash": "19ec4c63c90ef3181451f136ed9e1adb",
+          "alt": "SEC model section through the cavity wall, lintels, doorframe and door with the cavity closer marked (b), and the specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q2-a", topicId: "cons-3-9", conceptId: "attic-insulation-a",
+    section: "B", questionRef: "2022 OL Q2(a)",
+    stem: "The sketch shows the uninsulated attic space of a dwelling house. The homeowners wish to add insulation to the roof at ceiling joist level and around water storage tank. The ceiling joists are 200 mm × 40 mm.",
+    questionText: "Using notes and freehand sketches, show one suitable method of insulating the roof at ceiling joist level. Specify the type and thickness of insulation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 22,
+    rows: [
+    { id: "method", kind: "criterion", verbatim: "Method of insulating attic note & sketch (7 + 7 marks)", marks: 14, contextNote: "Note 7 and sketch 7. Such as: insulation roll cut to the width between the ceiling joists and packed tightly above the plasterboard, with further layers laid crosswise on top.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "type", kind: "criterion", verbatim: "Preferred insulation type for attic", marks: 4, contextNote: "Such as: fibreglass, blown-in cellulose, spray foam or hemp insulation.", permittedMarks: [0,1,2,3,4] },
+    { id: "thickness", kind: "criterion", verbatim: "Thickness of insulation", marks: 4, contextNote: "At least 300 mm of insulation.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic, tank and pipework",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The insulation method and type are open choices; the scheme lists typical examples. Both the tank and the pipework in (b) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-original.png",
+          "srcHash": "7e9fd4ef02797dc6a6433a34d97d9f0d",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 2: the printed question with a sketch of an uninsulated attic with a water tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q2-method",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-method.png",
+          "srcHash": "8e5178c839f23f4b39d34159d1d2a9c7",
+          "alt": "SEC 2022 Ordinary marking scheme notes on insulating at ceiling joist level, with sketches of laying roll insulation, and the insulation types and thickness.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q2-complete", topicId: "cons-3-9", conceptId: "attic-insulation-complete",
+    section: "B", questionRef: "2022 OL Q2 — complete",
+    stem: "The sketch shows the uninsulated attic space of a dwelling house. The homeowners wish to add insulation to the roof at ceiling joist level and around water storage tank. The ceiling joists are 200 mm × 40 mm.",
+    questionText: "(a) Using notes and freehand sketches, show one suitable method of insulating the roof at ceiling joist level. Specify the type and thickness of insulation. (b) The water storage tank and pipework in the attic are also to be insulated. On a separate sketch show, using notes and freehand sketches, how the water tank and pipework could be insulated. (c) Discuss two advantages of highly insulating the attic space of a house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-method", kind: "criterion", verbatim: "Method of insulating attic note & sketch (7 + 7 marks)", marks: 14, contextNote: "Note 7 and sketch 7. Such as: insulation roll cut to the width between the ceiling joists and packed tightly above the plasterboard, with further layers laid crosswise on top.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "a-type", kind: "criterion", verbatim: "Preferred insulation type for attic", marks: 4, contextNote: "Such as: fibreglass, blown-in cellulose, spray foam or hemp insulation.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-thickness", kind: "criterion", verbatim: "Thickness of insulation", marks: 4, contextNote: "At least 300 mm of insulation.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-tank", kind: "criterion", verbatim: "Method to insulating water tank note & sketch (5 + 4 marks)", marks: 9, contextNote: "Note 5 and sketch 4. Such as: no attic insulation under the tank, so heat rises and stops it freezing; insulation cut to size around the sides and top of the tank.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "b-pipework", kind: "criterion", verbatim: "Method of insulating pipework note & sketch (5 + 4 marks)", marks: 9, contextNote: "Note 5 and sketch 4. Such as: polyethylene foam tubes around all attic pipework, joined with duct tape; or reflective pipe lagging.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 5, contextNote: "Such as: reduced heat loss; reduced energy bills.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 5, contextNote: "A second, different advantage. Such as: more thermal comfort; a better BER; better for the environment.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-ol-q2-a","label":"a","marks":22,"rowIds":["a-method","a-type","a-thickness"]},{"sourceCardId":"cons-2022-ol-q2-b","label":"b","marks":18,"rowIds":["b-tank","b-pipework"]},{"sourceCardId":"cons-2022-ol-q2-c","label":"c","marks":10,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic, tank and pipework",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The insulation method and type are open choices; the scheme lists typical examples. Both the tank and the pipework in (b) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-original.png",
+          "srcHash": "7e9fd4ef02797dc6a6433a34d97d9f0d",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 2: the printed question with a sketch of an uninsulated attic with a water tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q2-method",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-method.png",
+          "srcHash": "8e5178c839f23f4b39d34159d1d2a9c7",
+          "alt": "SEC 2022 Ordinary marking scheme notes on insulating at ceiling joist level, with sketches of laying roll insulation, and the insulation types and thickness.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q3-complete", topicId: "cons-5-4", conceptId: "rainwater-harvesting-complete",
+    section: "B", questionRef: "2022 OL Q3 — complete",
+    stem: "Rainwater can be collected from the roof, stored and reused in a dwelling house.",
+    questionText: "(a) Draw a large freehand sketch of the given house and underground storage tank. On your sketch show the pipework necessary to collect the rainwater from the roof and carry it to the underground tank. (b) The stored rainwater is used for flushing toilets. On the sketch, show the pipework necessary to take rainwater from the underground tank to the storage tank in the attic. Show the pipework necessary to connect the toilet cistern to the storage tank in the attic. Include all necessary pumps and valves. (c) Discuss one advantage of reusing rainwater in a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "A large freehand sketch of the house and underground tank.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-collection", kind: "criterion", verbatim: "Pipework to collect water from roof", marks: 4, contextNote: "Such as: a 125 mm eaves gutter and 65 mm downpipe.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-to-tank", kind: "criterion", verbatim: "Pipework from roof to storage tank", marks: 4, contextNote: "Such as: a 100 mm underground pipe to the storage tank.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-filters", kind: "criterion", verbatim: "Filters and overflow pipe", marks: 4, contextNote: "Such as: a debris filter and an overflow pipe from the underground tank.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-items", kind: "criterion", verbatim: "Any 6 x 4 marks", marks: 24, contextNote: "Credit the best SIX acceptable items at 4 marks each, capped at 24. Marked items: pumps; pipework from the underground tank to the attic tank; filters; attic storage tank; ball valve; 28 mm overflow; pipework from the attic tank to the cistern; toilet cistern; valves. Typical details: a submersible pump, 12 mm pipe to an in-line filter, a 230 litre attic tank, 12 mm feed to the cistern.", permittedMarks: [0,4,8,12,16,20,24] },
+    { id: "b-sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "The supply pipework drawn on the sketch.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-advantage", kind: "criterion", verbatim: "Advantage", marks: 6, contextNote: "Such as: sustainable living; less flooding around the property; lower water treatment costs from reduced use.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-ol-q3-a","label":"a","marks":16,"rowIds":["a-sketch","a-collection","a-to-tank","a-filters"]},{"sourceCardId":"cons-2022-ol-q3-b","label":"b","marks":28,"rowIds":["b-items","b-sketch"]},{"sourceCardId":"cons-2022-ol-q3-c","label":"c","marks":6,"rowIds":["c-advantage"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Rainwater harvesting for flushing toilets",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The scheme diagrams are one acceptable layout; the best-six list in (b) is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-original.png",
+          "srcHash": "05e1d79d7ddcef41c3e03cc37ad26836",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 3: the printed question with a sketch of a house and an underground rainwater tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q3-supply",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-supply.png",
+          "srcHash": "cd7589a9f13293970152eb7de1e9a2e4",
+          "alt": "SEC model diagram of the pump, filter and pipework from the underground tank to the attic tank and toilet cistern, with the typical details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q4-b", topicId: "cons-4-5", conceptId: "stud-partition-b",
+    section: "B", questionRef: "2022 OL Q4(b)",
+    stem: "The sketch shows an open-plan kitchen and living room. The homeowner has decided to construct a timber stud partition with a door to separate these areas.",
+    questionText: "Discuss one advantage and one disadvantage of using a timber stud partition to create separate rooms.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "advantage", kind: "criterion", verbatim: "Advantage", marks: 5, contextNote: "Such as: quick to install; cheaper than a block partition; services easily run in the wall; an environmentally friendly material.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "disadvantage", kind: "criterion", verbatim: "Disadvantage", marks: 5, contextNote: "Such as: sound travels through easily; shrinkage and swelling; heavy items hard to fix; easily damaged.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Timber stud partition between kitchen and living room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All five printed items in (a) are required in one sketch, not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-original.png",
+          "srcHash": "b4fa313c3ee8f1bf03152160dacdad82",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 4: the printed question with a sketch of an open-plan kitchen and living room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q4-pros-cons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-pros-cons.png",
+          "srcHash": "f7e4e590d706ff743927d9537a4a6853",
+          "alt": "SEC 2022 Ordinary marking scheme table of the advantages and disadvantages of a timber stud partition.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q4-complete", topicId: "cons-4-5", conceptId: "stud-partition-complete",
+    section: "B", questionRef: "2022 OL Q4 — complete",
+    stem: "The sketch shows an open-plan kitchen and living room. The homeowner has decided to construct a timber stud partition with a door to separate these areas.",
+    questionText: "(a) Using notes and a freehand sketch, show the typical construction details of the stud partition required to separate the rooms. Include the following in your sketch: headplate; soleplate; timber studs; noggins; door lintel. (b) Discuss one advantage and one disadvantage of using a timber stud partition to create separate rooms. (c) Discuss two reasons for creating a living room which is separate from the kitchen.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-items", kind: "criterion", verbatim: "Typical construction details of the stud partition", marks: 20, contextNote: "All five printed items, 4 each: headplate; soleplate; timber studs; noggins; door lintel. The scheme specifies 100 × 45 mm sole plate, head plate, studs, noggins, door head and jambs.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] },
+    { id: "a-note", kind: "criterion", verbatim: "Note", marks: 4, contextNote: "Notes on the construction, such as noggins between the studs for rigidity and jambs supporting the door head.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketch: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "b-advantage", kind: "criterion", verbatim: "Advantage", marks: 5, contextNote: "Such as: quick to install; cheaper than a block partition; services easily run in the wall; an environmentally friendly material.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-disadvantage", kind: "criterion", verbatim: "Disadvantage", marks: 5, contextNote: "Such as: sound travels through easily; shrinkage and swelling; heavy items hard to fix; easily damaged.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Reason 1", marks: 5, contextNote: "Such as: less noise in the living room; privacy for the occupants of each room.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Reason 2", marks: 5, contextNote: "A second, different reason. Such as: cooking odours kept from the living room; less echo in a smaller space; separate spaces to eat and to relax.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-ol-q4-a","label":"a","marks":30,"rowIds":["a-items","a-note","a-presentation"]},{"sourceCardId":"cons-2022-ol-q4-b","label":"b","marks":10,"rowIds":["b-advantage","b-disadvantage"]},{"sourceCardId":"cons-2022-ol-q4-c","label":"c","marks":10,"rowIds":["c-reason-1","c-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Timber stud partition between kitchen and living room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All five printed items in (a) are required in one sketch, not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-original.png",
+          "srcHash": "b4fa313c3ee8f1bf03152160dacdad82",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 4: the printed question with a sketch of an open-plan kitchen and living room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q4-partition",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-partition.png",
+          "srcHash": "997009475dba3ef9d53bfcbdab1cff82",
+          "alt": "SEC model sketch of a stud partition with headplate, soleplate, studs, noggins and door lintel labelled, with the notes and sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q5-b", topicId: "cons-4-4", conceptId: "stairs-section-b",
+    section: "B", questionRef: "2022 OL Q5(b)",
+    stem: "The sketch shows a portion of a closed-string wooden stairs in a dwelling house. The rise of each step is 170 mm.",
+    questionText: "On your drawing, show one design detail to prevent creaking when the stairs is in use.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "creaking", kind: "criterion", verbatim: "Block joint / Use of horizontal and vertical wedges / Tightly fitted connection between riser and tread.", marks: 4, contextNote: "One design detail shown and identified: a block joint, horizontal and vertical wedges, or a tightly fitted connection between riser and tread. Any other suitable detail is accepted.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Closed-string stairs section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction details, dimensions and draughting belong to part (a); the anti-creak detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q5-original.png",
+          "srcHash": "f21de975c50249775892a055fd4cf9a4",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 5: the printed question with a sketch of a closed-string wooden stairs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q5-scheme.png",
+          "srcHash": "39e9895ee6c17661371b56d97c290ef3",
+          "alt": "SEC model section through the bottom three steps with the wedges marked (b), the specification list and the anti-creak details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q5-complete", topicId: "cons-1-5", conceptId: "stairs-section-complete",
+    section: "B", questionRef: "2022 OL Q5 — complete",
+    stem: "The sketch shows a portion of a closed-string wooden stairs in a dwelling house. The rise of each step is 170 mm.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the centre of the bottom three steps of the stairs. Show the string, treads and risers. Include three typical dimensions on your drawing. (b) On your drawing, show one design detail to prevent creaking when the stairs is in use.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 x 5 marks", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 × 50 mm; tread 250 × 25 mm; riser 170 × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical wedge; horizontal wedge; glue blocks 60 × 60 mm; pitch line (maximum 42°).", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Any three typical dimensions 3 x 1 mark", marks: 3, contextNote: "Three appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-creaking", kind: "criterion", verbatim: "Block joint / Use of horizontal and vertical wedges / Tightly fitted connection between riser and tread.", marks: 4, contextNote: "One design detail shown and identified: a block joint, horizontal and vertical wedges, or a tightly fitted connection between riser and tread. Any other suitable detail is accepted.", permittedMarks: [0,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-ol-q5-a","label":"a","marks":46,"rowIds":["a-details","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2022-ol-q5-b","label":"b","marks":4,"rowIds":["b-creaking"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Closed-string stairs section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction details, dimensions and draughting belong to part (a); the anti-creak detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q5-original.png",
+          "srcHash": "f21de975c50249775892a055fd4cf9a4",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 5: the printed question with a sketch of a closed-string wooden stairs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q5-scheme.png",
+          "srcHash": "39e9895ee6c17661371b56d97c290ef3",
+          "alt": "SEC model section through the bottom three steps with the wedges marked (b), the specification list and the anti-creak details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q6-complete", topicId: "cons-1-8", conceptId: "jackhammer-safety-complete",
+    section: "B", questionRef: "2022 OL Q6 — complete",
+    stem: "The sketch shows a construction worker using a jackhammer on a public footpath.",
+    questionText: "(a) Using a large freehand sketch, show three safety signs highlighting the use of personal protective equipment (PPE) that must be worn by workers while using a jackhammer. For each sign, state how the personal protective equipment protects workers while using the jackhammer. (b) Describe two potential risks to a construction worker when using power tools on a construction site. (c) Using notes and a freehand sketch, describe one safety precaution that will reduce the risk to the public while the footpath is being replaced.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-sign-1", kind: "criterion", verbatim: "Sign 1 and specific reason. (6 + 3 marks)", marks: 9, contextNote: "Sign 6 and specific reason 3. Such as: ear protectors, protecting hearing from the jackhammer’s high decibel levels.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "a-sign-2", kind: "criterion", verbatim: "Sign 2 and specific reason (6 + 3 marks)", marks: 9, contextNote: "A second, different sign: 6 + 3. Such as: safety boots, protecting feet from dropped or falling materials; safety glasses, protecting eyes from flying debris and dust.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "a-sign-3", kind: "criterion", verbatim: "Sign 3 and specific reason (6 + 3 marks)", marks: 9, contextNote: "A third, different sign: 6 + 3. Such as: a dust mask, protecting the lungs from dust; safety gloves, protecting hands when moving broken debris.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "b-risk-1", kind: "criterion", verbatim: "Risk 1", marks: 5, contextNote: "Such as: hearing damage from excessive noise; electrical injury from exposed live cables.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-risk-2", kind: "criterion", verbatim: "Risk 2", marks: 5, contextNote: "A second, different risk. Such as: dust and fumes without the correct PPE; hand-arm vibration syndrome from hammer-action tools; striking underground services.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-precaution", kind: "criterion", verbatim: "Safety precaution note & sketch (7 + 6 marks)", marks: 13, contextNote: "Note 7 and sketch 6. Such as: signage directing the public away from the work zone; guard rails and exclusion zones; materials stored away from public areas; a dust shelter around the work area.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-ol-q6-a","label":"a","marks":27,"rowIds":["a-sign-1","a-sign-2","a-sign-3"]},{"sourceCardId":"cons-2022-ol-q6-b","label":"b","marks":10,"rowIds":["b-risk-1","b-risk-2"]},{"sourceCardId":"cons-2022-ol-q6-c","label":"c","marks":13,"rowIds":["c-precaution"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Jackhammer safety and PPE",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. PPE items, risks and precautions are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-original.png",
+          "srcHash": "941ecd8ce7426720ddbf3915c6aa1567",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 6: the printed question with a sketch of a worker using a jackhammer on a footpath.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q6-signs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-signs.png",
+          "srcHash": "00bb9c59bae40ea81d7b2ed84c278c5e",
+          "alt": "SEC model PPE signs for ear protectors, safety boots, safety glasses, a dust mask and safety gloves, each with how it protects the worker.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q7-complete", topicId: "cons-1-2", conceptId: "family-garden-complete",
+    section: "B", questionRef: "2022 OL Q7 — complete",
+    stem: "The draft design for a rear garden of a semi-detached house is shown. The homeowners wish to create a garden space to meet their family needs. The position of existing trees is shown.",
+    questionText: "(a) Discuss two reasons why it is important to create a garden space that meet the needs of the family. (b) Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden area: outdoor dining/living space; garden storage; flower beds; lawn area. Give one reason for selecting each location. (c) Discuss two advantages of incorporating trees and plants into a garden design.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-reason-1", kind: "criterion", verbatim: "Reason 1", marks: 5, contextNote: "Such as: a safe area to socialise and entertain; a private area to enjoy the outdoors.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "a-reason-2", kind: "criterion", verbatim: "Reason 2", marks: 5, contextNote: "A second, different reason. Such as: outdoor living for all age groups; an extension of the home; space to grow herbs and vegetables; extra storage.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-sketch", kind: "criterion", verbatim: "Sketch", marks: 6, contextNote: "A large freehand sketch of the given garden design.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-outdoor", kind: "criterion", verbatim: "Location and valid reason for outdoor space (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: close to the house for indoor-outdoor living, or placed to catch south-facing sun.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-storage", kind: "criterion", verbatim: "Location and valid reason for garden storage (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: near the entrance gate for supplies, or at the back or side fence to keep the garden open and unshaded.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-flower-beds", kind: "criterion", verbatim: "Location and valid reason for flower beds (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: in sight of the house, in the sun, or along a boundary fence.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-lawn", kind: "criterion", verbatim: "Location and valid reason for lawn area (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: in the occupants’ line of vision, close to the house, or at the rear to keep dirt out of the house.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 5, contextNote: "Such as: wellbeing; better air quality; pollinators attracted to the garden.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 5, contextNote: "A second, different advantage. Such as: a better appearance; natural shade and shelter for the house; less flooding from run-off.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-ol-q7-a","label":"a","marks":10,"rowIds":["a-reason-1","a-reason-2"]},{"sourceCardId":"cons-2022-ol-q7-b","label":"b","marks":30,"rowIds":["b-sketch","b-outdoor","b-storage","b-flower-beds","b-lawn"]},{"sourceCardId":"cons-2022-ol-q7-c","label":"c","marks":10,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Designing a family garden",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-original.png",
+          "srcHash": "798adb33d4f90ff2ed6b16fcf4d81542",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 7: the printed question with the draft plan of a rear garden with existing trees.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q7-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-layout.png",
+          "srcHash": "c412dea0f4fb419f92c0ff4903deb904",
+          "alt": "SEC model garden layouts showing the outdoor dining space, storage, flower beds and lawn, with the reasons for each location (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2022-ol-q9-complete", topicId: "cons-3-2", conceptId: "front-porch-complete",
+    section: "B", questionRef: "2022 OL Q9 — complete",
+    stem: "The sketch shows a detached rural house with a front porch. The porch is of timber frame construction with an external wooden cladding.",
+    questionText: "(a) Specify a suitable wood for the external cladding, and give two reasons for your choice. (b) The owner wishes to modify the porch to allow more natural light into the house. Using notes and freehand sketches, show two modification to the porch that would allow more natural light to enter the house. (c) Discuss two reasons why homeowners would wish to build a front porch to their house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-wood", kind: "criterion", verbatim: "Suitable wood", marks: 4, contextNote: "Such as: cedar, larch, Douglas fir, oak or teak.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-reason-1", kind: "criterion", verbatim: "Reason 1", marks: 4, contextNote: "A reason matching the wood. Such as: a durable species; no preservative needed because of its natural oils.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-reason-2", kind: "criterion", verbatim: "Reason 2", marks: 4, contextNote: "A second, different reason. Such as: naturally resistant to insect attack or to moisture.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-modification-1", kind: "criterion", verbatim: "Modification 1 to porch notes + sketch (8 + 5 marks )", marks: 13, contextNote: "Notes and sketch, 8 + 5. Such as: roof lights; a window in the entrance door.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] },
+    { id: "b-modification-2", kind: "criterion", verbatim: "Modification 2 to porch notes + sketch (8 + 5 marks )", marks: 13, contextNote: "Notes and sketch, 8 + 5, for a second, different modification. Such as: windows in the external walls; a glass roof.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Advantage 1", marks: 6, contextNote: "Such as: more usable space; an extra draught barrier.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Advantage 2", marks: 6, contextNote: "A second, different reason. Such as: blending in with neighbouring houses; extra security; better insulation of the house; a higher resale value.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-ol-q9-a","label":"a","marks":12,"rowIds":["a-wood","a-reason-1","a-reason-2"]},{"sourceCardId":"cons-2022-ol-q9-b","label":"b","marks":26,"rowIds":["b-modification-1","b-modification-2"]},{"sourceCardId":"cons-2022-ol-q9-c","label":"c","marks":12,"rowIds":["c-reason-1","c-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "A timber-clad front porch",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, modifications and reasons are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-original.png",
+          "srcHash": "5416e530ef8d7d41224fe5f6c1774f5b",
+          "alt": "Original SEC 2022 Ordinary Construction Studies Question 9: the printed question with a sketch of a rural house with a timber-clad front porch.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-OL-q9-light",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-light.png",
+          "srcHash": "404b2a9fdd21a6b134b02f0449353e82",
+          "alt": "SEC 2022 Ordinary marking scheme notes on letting more light into the porch, with sketches of a roof light and a glazed porch.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
           "solution": true,
           "lettersVisible": []
     },
