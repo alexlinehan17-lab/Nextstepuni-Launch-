@@ -327,7 +327,7 @@ describe('Physical Education independent paper review', () => {
     const get=(part:string)=>cards.find(card=>card.id===`pe-2025-ol-q${part}`)!;
     expect(cards).toHaveLength(77);
     expect(paper.taskCount).toBe(77);
-    const baseTasks=[...new Map(paper.cards.map(card=>[card.part,card])).values()];
+    const baseTasks=[...new Map(paper.cards.map(card=>[card.part,card] as const)).values()];
     for(let n=1;n<=18;n++) {
       const tasks=baseTasks.filter(card=>Number(card.part.match(/^\d+/)?.[0])===n);
       expect(tasks.reduce((total,card)=>total+card.totalMarks,0),`2025 OL Q${n}`).toBe(n<13?8:n===13?50:40);
@@ -371,7 +371,7 @@ describe('Physical Education independent paper review', () => {
       const paper=audit.reviewedPapers.find(paper=>paper.year===2026 && paper.level===level)!;
       expect(cards).toHaveLength(count);
       expect(paper.taskCount).toBe(tasks);
-      const baseTasks=[...new Map(paper.cards.map(card=>[card.part,card])).values()];
+      const baseTasks=[...new Map(paper.cards.map(card=>[card.part,card] as const)).values()];
       for(let n=1;n<=18;n++) {
         expect(baseTasks.filter(card=>Number(card.part.match(/^\d+/)?.[0])===n).reduce((sum,card)=>sum+card.totalMarks,0),`2026 ${short} Q${n}`).toBe(n<13?8:n===13?50:40);
       }
