@@ -108,7 +108,7 @@ print('source guard passed')
     const row=inventory.papers.find(p=>p.key==='2026|ordinary|LC001GLP100IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(cards.map(c=>c.id).sort());
     expect(row).toMatchObject({fullVisualReview:'complete',bankAtlasTaskParity:'complete',partAndSelectionReconciliation:'complete'});
-    expect(inventory.summary.papersPendingFullReview).toBe(61);
+    expect(inventory.summary.papersPendingFullReview).toBe(60);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

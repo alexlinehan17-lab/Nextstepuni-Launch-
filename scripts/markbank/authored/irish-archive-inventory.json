@@ -35,7 +35,7 @@
     "missingLocalPapers": [],
     "papersWithoutIndexedScheme": [],
     "missingLocalSchemes": [],
-    "papersPendingFullReview": 61,
+    "papersPendingFullReview": 60,
     "componentsWithSourceGaps": [
       "2010|foundation|LC001BLPA00IV.pdf"
     ]
@@ -2011,12 +2011,29 @@
         "4",
         "W-A",
         "W-B",
-        "W-C"
+        "W-C",
+        "L-A-F1",
+        "L-A-F2",
+        "L-C-P1",
+        "L-C-P2",
+        "L-B-C1-M1",
+        "L-B-C1-M2",
+        "L-B-C2-M1",
+        "L-B-C2-M2",
+        "W-A-a",
+        "W-A-b",
+        "W-A-c",
+        "W-A-d",
+        "W-A-e",
+        "W-B-a",
+        "W-B-b",
+        "W-C-a",
+        "W-C-b"
       ],
-      "questionCoverage": "unverified",
-      "fullVisualReview": "pending",
-      "partAndSelectionReconciliation": "pending",
-      "bankAtlasTaskParity": "pending"
+      "questionCoverage": "reviewed",
+      "fullVisualReview": "complete",
+      "partAndSelectionReconciliation": "complete",
+      "bankAtlasTaskParity": "complete"
     },
     {
       "key": "2023|higher|LC001ALP200IV.pdf",
