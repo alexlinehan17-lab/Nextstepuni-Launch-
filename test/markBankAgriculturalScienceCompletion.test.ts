@@ -38,7 +38,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(54);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(53);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -390,7 +390,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(17);
+    expect(review.paperReviews).toHaveLength(18);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -785,6 +785,42 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(units.find(check => check.question === 'Q15')!.rule).toBe('(a) with either (b) or (c)');
   });
 
+  it('reconciles all 96 original 2022 Higher cards and adds the five missing parts', () => {
+    const year = higher.filter(card => card.year === 2022);
+    expect(year).toHaveLength(101);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2022 HL'));
+    expect(tasks).toHaveLength(101);
+    const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
+    expect(states.filter(state => state === 'unchanged')).toHaveLength(89);
+    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(7);
+    expect(states.filter(state => state === 'added')).toHaveLength(5);
+    for (const key of ['q2a', 'q10b', 'q10c', 'q13aiii', 'q15ai', 'q18aii']) {
+      expect(review.tasks.find(task => task.cardIds.includes(`agsci-2022-hl-${key}`))!.selection).toMatchObject({ kind: 'closed', pooled: true });
+    }
+    // Named-crop and named-animal answers are routes, never one mixed pool.
+    const variantsOf = (id: string) => (get(id) as { answerVariants?: Array<{ id: string; rows: ReturnType<typeof get>['rows'] }> }).answerVariants ?? [];
+    expect(variantsOf('agsci-2022-hl-q10b').map(variant => variant.id)).toEqual(['kale', 'miscanthus', 'osr']);
+    expect(variantsOf('agsci-2022-hl-q10c').map(variant => variant.id)).toEqual(['kale', 'miscanthus', 'osr']);
+    expect(variantsOf('agsci-2022-hl-q15ai')).toHaveLength(5);
+    for (const id of ['agsci-2022-hl-q10b', 'agsci-2022-hl-q10c', 'agsci-2022-hl-q15ai']) {
+      for (const variant of variantsOf(id)) expect(tariffReconciles({ ...get(id), rows: variant.rows }), `${id} ${variant.id}`).toBe(true);
+    }
+    expect(get('agsci-2022-hl-q2b').rows[0].group?.options).toHaveLength(11);
+    expect(get('agsci-2022-hl-q16ci').totalMarks).toBe(11);
+    expect(get('agsci-2022-hl-q17bii').rows[1].verbatim).toContain('to those of both parents');
+    // Added: the drawn calf stomach, the growth stage, the seed comparison, the airflow arrows and the weed advice.
+    expect(get('agsci-2022-hl-q9ai').tariffModel.kind).toBe('questionTotal');
+    expect(get('agsci-2022-hl-q13aiv').rows[0].verbatim).toBe('Reproductive stage');
+    expect(get('agsci-2022-hl-q13biii').rows[0].group?.options).toHaveLength(12);
+    const airflow = get('agsci-2022-hl-q14cii');
+    expect((airflow as { questionFigure?: { src: string } }).questionFigure?.src).toContain('agsci-2022-hl-paper-calf-shed-airflow');
+    expect((airflow as { figure?: { solution?: boolean } }).figure?.solution).toBe(true);
+    expect(get('agsci-2022-hl-q18bii').rows[0].group?.options).toHaveLength(9);
+    const units = census.questionMarkChecks.filter(check => check.year === 2022 && check.level === 'higher');
+    expect(units).toHaveLength(18);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -870,7 +906,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(1031);
+    expect(atlas.markBankCards).toHaveLength(1132);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

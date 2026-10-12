@@ -3486,121 +3486,137 @@
         "sha256": "9e868b6c11ecf6bf71da03b8ced52b3be4aa80bbacb205b5fd418b555abd1a40",
         "pages": 35
       },
-      "authoredEnglishCardsForSitting": 96,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 101,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "b2cb14d3a9c56565",
           "page": 2,
           "cue": "Answer seven",
           "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer seven questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any three questions from this section. There is internal choice in two questions. Each question carries 50 ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section A, seven of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "dd29dfd56ce26f9b",
           "page": 2,
           "cue": "any three",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any three questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day and Month of Birth in the boxes on the front cover. Write your answers in blue or ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section B, three of six independent questions. Every question is retained."
         },
         {
           "id": "e934ac6fd6827f33",
           "page": 3,
           "cue": "any seven",
           "context": "tificate Examination 2022 3 Agricultural Science – Higher Level Section A 70 marks Answer any seven questions. Each question carries 10 marks. Question 1 Answer either (a) or (b). (a) An agricultural science student wanted to determine the amount of organic matter present in a soil sample. (i) Explain the underlined term. (ii) ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: seven independent 10-mark questions, all retained."
         },
         {
           "id": "7163b93debada842",
           "page": 3,
           "cue": "either",
           "context": " A 70 marks Answer any seven questions. Each question carries 10 marks. Question 1 Answer either (a) or (b). (a) An agricultural science student wanted to determine the amount of organic matter present in a soil sample. (i) Explain the underlined term. (ii) Briefly describe one advantage of the presence of organic matter in ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1 either (a) or (b): both independently marked alternatives are retained."
         },
         {
           "id": "ecc57706a12a1182",
           "page": 5,
           "cue": "any four",
           "context": "ertificate Examination 2022 5 Agricultural Science – Higher Level Question 2 (a) Identify any four of the following breeds of animals. A B C D E F (b) A farmer was looking to select a female replacement animal for breeding for his chosen animal enterprise. Describe characteristics he would be looking for when selecting the ani",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(a): identify any four of six photographed breeds A–F, 4(1). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
         },
         {
           "id": "40bc0418d913b508",
           "page": 5,
           "cue": "select",
           "context": "tify any four of the following breeds of animals. A B C D E F (b) A farmer was looking to select a female replacement animal for breeding for his chosen animal enterprise. Describe characteristics he would be looking for when selecting the animal. Named animal enterprise: A: B: C: D: E: F:",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"to select a female replacement animal\" in the Q2(b) stem is the farmer's task, not a response choice."
         },
         {
           "id": "394cec5f2f0e9a36",
           "page": 12,
           "cue": "either",
           "context": "ing Certificate Examination 2022 12 Agricultural Science – Higher Level Question 9 Answer either (a) or (b). (a) (i) Draw a labelled diagram of a calf’s stomach in its first week of life. (ii) Describe how the calf’s stomach in part (i) above differs from an adult ruminant stomach.",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "8755fac1ea415f47",
           "page": 13,
           "cue": "one of",
           "context": "questions which follow. SEASOLUTIONS PROJECT Reducing methane emissions from ruminants is one of the biggest challenges to face the agricultural sector in the last decade. The SEASOLUTIONS Project is committed to making a positive impact on methane emissions in agriculture. By using seaweeds and seaweed derived ingredients t",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q9(b) article (\"one of the biggest challenges\"); no response choice."
         },
         {
           "id": "393f1b1bde32d98d",
           "page": 15,
           "cue": "either",
           "context": "ng Certificate Examination 2022 15 Agricultural Science – Higher Level Question 11 Answer either (a) or (b). (a) A plant has specialised structures which absorb nutrients through a specific process from the soil solution. (i) Complete the table by stating the name of each of the following involved in nutrient absorption from",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q11 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "b6077383f474cd46",
           "page": 16,
           "cue": "either",
           "context": "ng Certificate Examination 2022 16 Agricultural Science – Higher Level Question 12 Answer either (a) or (b). (a) The results of silage analysis from a beef enterprise are presented in the table below. Silage Quality % Dry Matter Digestibility (DMD %) 75 70 65 60 Harvest date 20 May 2 June 15 June 28 June Silage tonne Dry Mat",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q12 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "2907202d35ecc76e",
           "page": 20,
           "cue": "any three",
           "context": "ficate Examination 2022 20 Agricultural Science – Higher Level Section B 150 marks Answer any three questions. Each question carries 50 marks. Question 13 (a) Maintaining a constant supply of high quality leafy grass can be easily achieved by managing and measuring the amount of grass on the farm. (i) Outline two advantages of ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: three of six independent 50-mark questions, all retained."
         },
         {
           "id": "1bd4570cfafa77cc",
           "page": 20,
           "cue": "any two",
           "context": "ii) A farmer identified different plants in the sward while measuring the grass. Identify any two of the following plants A, B or C from the sward. A: B: C: 1. 2. Calculation: kg DM/ha =",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q13(a)(iii): identify any two of three photographed plants A, B and C, 2(1). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
         },
         {
           "id": "0b8805db948e5e79",
           "page": 23,
           "cue": "either",
           "context": "tion 2022 23 Agricultural Science – Higher Level Question 14 Answer both (a) and (b) with either (c) or (d). (a) (i) Outline using scientific reasons why colostrum is fed to calves at birth. (ii) Explain why colostrum should be given as the first feed to calves within 4 hours of birth. (iii) Outline one reason why dried colo",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q14: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "33e063a1cca92586",
           "page": 24,
           "cue": "one of",
           "context": " Good 50 mg/ml Poor 30 mg/ml (Adapted from Teagasc, 2017) Alice tested the colostrum from one of her freshly calved cows using the refractometer and recorded a reading of 25 mg/ml. Describe briefly what advice you would give Alice in relation to feeding the cow’s new born calf. (b) The table shows the difference in nutrient ",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in Q14(a)(v) (\"one of her freshly calved cows\"); no response choice."
         },
         {
           "id": "2edd172b7c28c2ba",
           "page": 33,
           "cue": "either",
           "context": "tion 2022 33 Agricultural Science – Higher Level Question 17 Answer both (a) and (b) with either (c) or (d). (a) Earthworms are essential on all farms. (i) Describe using a labelled diagram the activity of earthworms in a soil. (ii) In relation to the activity of earthworms described in part (i) above, justify the benefits t",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q17: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "9c490ba4828a71cd",
           "page": 34,
           "cue": "select",
           "context": "cting the high yielding plants and breeding these. (i) Outline two reasons why scientists select the plants with the highest yield for breeding. Estimation: 1. 2. 178m 98m Low High Low High Yield Yield",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"why scientists select the plants\" in Q17(b)(i) is breeding vocabulary, not a response choice."
         }
       ]
     },
@@ -3619,7 +3635,7 @@
         "sha256": "995a1768be0a3888692d0ff51bc37ea435fa4ca79ae681ef5689076c82909ab2",
         "pages": 37
       },
-      "authoredEnglishCardsForSitting": 96,
+      "authoredEnglishCardsForSitting": 101,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

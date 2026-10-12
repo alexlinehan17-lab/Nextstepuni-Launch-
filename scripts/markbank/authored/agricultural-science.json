@@ -2800,62 +2800,6 @@
   "notes": "(iii) and (iv) are carded together because (iv) exists only to justify (iii); each carries 1 mark, so the card totals 2, and Q1(b) reconciles as 4 + 4 + 1 + 1 = 10. Row 1 is asterisked in the scheme and is therefore typed `gate` (exact term only), matching the convention used 171 times across the shipped decks. The justification pool item 'sward demand for N is high so N is used up by rapidly growing sward' is carried truncated at 'sward demand for N is high' because the marks cell splits it; the lost words are elaboration of the same alternative."
  },
  {
-  "id": "agsci-2022-hl-q2b",
-  "topicId": "agsci-4-3-3",
-  "conceptId": "selecting-a-female-replacement-for-breeding",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2022 HL Q2(b)",
-  "stem": "A farmer was looking to select a female replacement animal for breeding for his chosen animal enterprise. (The paper asks you to write your named animal enterprise first.)",
-  "questionText": "Describe characteristics he would be looking for when selecting the animal.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2(3)"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "moderate frame size to reduce amount of feed required to maintain body condition and fertility (increase sustainability of farm)",
-    "marks": 3,
-    "contextNote": "Any TWO well-described characteristics score, 3 marks each — and they must fit the enterprise you named.",
-    "openList": true,
-    "accepts": [
-     "long body or not too heavily muscled (pigs)",
-     "longevity to improve sustainability of enterprise",
-     "not a twin to a male calf (freemartin) as her reproductive tract may not have developed",
-     "good mouth – not over or undershot",
-     "4 well placed teats to ensure clusters attach or fit correctly",
-     "Records of parents to determine her milking potential or daughters of high yielding cows (dairy)",
-     "Cross bred gilt to allow for hybrid vigour (criss‐cross breeding)",
-     "Genotyped where parentage is verified and reduce risk of future inbreeding"
-    ]
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Docile (quiet temperament) for easy management",
-    "marks": 3,
-    "contextNote": "Any TWO well-described characteristics score, 3 marks each — and they must fit the enterprise you named.",
-    "openList": true,
-    "accepts": [
-     "long body or not too heavily muscled (pigs)",
-     "longevity to improve sustainability of enterprise",
-     "not a twin to a male calf (freemartin) as her reproductive tract may not have developed",
-     "good mouth – not over or undershot",
-     "4 well placed teats to ensure clusters attach or fit correctly",
-     "Records of parents to determine her milking potential or daughters of high yielding cows (dairy)",
-     "Cross bred gilt to allow for hybrid vigour (criss‐cross breeding)",
-     "Genotyped where parentage is verified and reduce risk of future inbreeding"
-    ]
-   }
-  ],
-  "notes": "Q2(a) (identify six breeds from photographs) is skipped — no figure. Q2(b) carries 2(3) = any TWO characteristics at 3 marks each = 6, which reconciles Q2 to 10 alongside (a)'s 4(1)=4. The scheme's answer is 'Details on next page', followed by a two-page table of characteristics — Good body conformation, Temperament, Good Health, Age and Weight, Good Udder, Good feet, Milk production, Genetics — broken down for Dairy heifer / Beef heifer / Ewe / Gilt. That table's PDF extraction interleaves its columns, so only clean, contiguous, self-contained fragments have been transcribed. The accepts list is a verified subset of a much larger printed pool, which is why openList is set on both rows: a student who named a different valid characteristic for their enterprise was right."
- },
- {
   "id": "agsci-2022-hl-q3a",
   "topicId": "agsci-1-2",
   "conceptId": "investigating-soil-temperature-and-germination",
@@ -3782,148 +3726,6 @@
    }
   ],
   "notes": "Plain 2-mark tariff, one row. The scheme's pool ends 'or other valid named catch or energy crop', hence openList — a student who named, say, forage rape or willow and matched the lifecycle correctly scores. Q10 reconciles as 2 + 4 + 4 = 10."
- },
- {
-  "id": "agsci-2022-hl-q10b",
-  "topicId": "agsci-3-3-1",
-  "conceptId": "planting-a-catch-or-energy-crop",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2022 HL Q10(b)",
-  "stem": "In relation to a named catch or energy crop you have studied answer the questions which follow.",
-  "questionText": "Describe the method of planting of your chosen crop.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2(2)"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "sown into a cultivated(plough and harrow) seedbed",
-    "marks": 2,
-    "contextNote": "Any two planting points score, 2 marks each — but they must belong to the crop you named. The scheme runs separate pools for Kale, Miscanthus and OSR; the rows here are the Kale route.",
-    "accepts": [
-     "direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed",
-     "seeding rate of 4‐5kg/ha or 70 plants per m2",
-     "rolled well after sowing to ensure good soil:seed contact",
-     "Grassland site spray with total herbicide for controlling perennial weeds",
-     "ploughed from January 15th to control perennial weeds or allow frost activity to break down the soil further or help prevent ‘ley’ pests such as the larvae of two moths (the common rustic moth or the ghost moth) attacking the newly established plants",
-     "(later in the spring from March to April) the site should be rotovated or power harrowed (immediately prior to planting to improve establishment by aiding good root development, good soil root contact or improved soil aeration)",
-     "a planting rate of 16,000 rhizomes per ha or an emergence of 10‐15,000 plants per ha",
-     "rhizomes need to be planted at a depth of 5‐10 cm (in March or April)",
-     "sown using automatic planting machine",
-     "preparing the seedbed min‐till or cultivate (plough and harrow) or one‐pass or strip‐till cultivation or in shallow stubble ploughing to remove residual compaction",
-     "sown at a seed rate of between 3.0‐4.0kg/ha (higher seed rates can be used to allow for winter losses or excellent emergence)",
-     "sown using a seed drill",
-     "25 cm spacing or depth of 20 mm",
-     "rolled to improve soil‐seed contact"
-    ]
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "maximum depth of 10mm (to ensure uniform germination)",
-    "marks": 2,
-    "contextNote": "Any two planting points score, 2 marks each — but they must belong to the crop you named. The scheme runs separate pools for Kale, Miscanthus and OSR; the rows here are the Kale route.",
-    "accepts": [
-     "direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed",
-     "seeding rate of 4‐5kg/ha or 70 plants per m2",
-     "rolled well after sowing to ensure good soil:seed contact",
-     "Grassland site spray with total herbicide for controlling perennial weeds",
-     "ploughed from January 15th to control perennial weeds or allow frost activity to break down the soil further or help prevent ‘ley’ pests such as the larvae of two moths (the common rustic moth or the ghost moth) attacking the newly established plants",
-     "(later in the spring from March to April) the site should be rotovated or power harrowed (immediately prior to planting to improve establishment by aiding good root development, good soil root contact or improved soil aeration)",
-     "a planting rate of 16,000 rhizomes per ha or an emergence of 10‐15,000 plants per ha",
-     "rhizomes need to be planted at a depth of 5‐10 cm (in March or April)",
-     "sown using automatic planting machine",
-     "preparing the seedbed min‐till or cultivate (plough and harrow) or one‐pass or strip‐till cultivation or in shallow stubble ploughing to remove residual compaction",
-     "sown at a seed rate of between 3.0‐4.0kg/ha (higher seed rates can be used to allow for winter losses or excellent emergence)",
-     "sown using a seed drill",
-     "25 cm spacing or depth of 20 mm",
-     "rolled to improve soil‐seed contact"
-    ]
-   }
-  ],
-  "notes": "2(2) = any two planting points at 2 marks each = 4 (L535). The scheme gives three crop-specific pools (Kale, Miscanthus, OSR); the two rows carry the Kale route and every Miscanthus and OSR point sits in accepts, with the contextNote telling the student their points must match the crop they named. All Miscanthus points are now carried, including the rotovating point reassembled across the marks cell. The paper prints 'choosen' for 'chosen' in this part; questionText normalises the typo."
- },
- {
-  "id": "agsci-2022-hl-q10c",
-  "topicId": "agsci-3-3-1",
-  "conceptId": "advantages-of-a-catch-or-energy-crop",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2022 HL Q10(c)",
-  "stem": "In relation to a named catch or energy crop you have studied answer the questions which follow.",
-  "questionText": "Outline advantages of sowing your chosen crop.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2(2)"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "high digestibility",
-    "marks": 2,
-    "contextNote": "Any two advantages score, 2 marks each — and they must belong to the crop you named. These rows carry the Kale route; the Miscanthus and OSR advantages are in the accepted list.",
-    "accepts": [
-     "fodder crop",
-     "can use used to extend grazing season",
-     "out‐winter animals (less housing or slurry storage requirement)",
-     "high protein",
-     "fast growing crop",
-     "renewable source of energy",
-     "perennial crop",
-     "carbon neutral fuel",
-     "reduction in GHG (carbon sinks)",
-     "low input crop (fertilisers or herbicides or pesticides)",
-     "increased biodiversity",
-     "Green manure crop (due to its developed root system to reaches the minerals located in the lower soil layers)",
-     "crop can be used for human consumption",
-     "retains moisture well",
-     "saturates fields with oxygen",
-     "provides a take‐all break",
-     "leaves high levels of residual nitrogen for subsequent crops",
-     "helps control annual or perennial grass weeds",
-     "spreads the harvest workload (normally be cut before winter wheat)"
-    ]
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "long utilisation period or use of idle land",
-    "marks": 2,
-    "contextNote": "Any two advantages score, 2 marks each — and they must belong to the crop you named. These rows carry the Kale route; the Miscanthus and OSR advantages are in the accepted list.",
-    "accepts": [
-     "fodder crop",
-     "can use used to extend grazing season",
-     "out‐winter animals (less housing or slurry storage requirement)",
-     "high protein",
-     "fast growing crop",
-     "renewable source of energy",
-     "perennial crop",
-     "carbon neutral fuel",
-     "reduction in GHG (carbon sinks)",
-     "low input crop (fertilisers or herbicides or pesticides)",
-     "increased biodiversity",
-     "Green manure crop (due to its developed root system to reaches the minerals located in the lower soil layers)",
-     "crop can be used for human consumption",
-     "retains moisture well",
-     "saturates fields with oxygen",
-     "provides a take‐all break",
-     "leaves high levels of residual nitrogen for subsequent crops",
-     "helps control annual or perennial grass weeds",
-     "spreads the harvest workload (normally be cut before winter wheat)"
-    ]
-   }
-  ],
-  "notes": "2(2) = any two advantages at 2 marks each = 4. As in (b), the scheme runs three crop-specific pools; the rows carry the Kale route and the Miscanthus and OSR advantages sit in accepts. The scheme prints 'can use used' — the SEC's own typo, transcribed as printed."
  },
  {
   "id": "agsci-2022-hl-q11ai",
@@ -16067,51 +15869,6 @@
   "notes": "The scheme prints '4 + 1' — by the SEC's own convention the first correct answer encountered takes 4 and the next takes 1, so no row has a defined value and both marks are null. 'information on amount of contamination in pasture' is reassembled across the '4 + 1' marks cell and so is an accept only."
  },
  {
-  "id": "agsci-2022-hl-q15ai",
-  "topicId": "agsci-4-3-2",
-  "conceptId": "oestrus-synchronisation-protocols",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2022 HL Q15(a)(i)",
-  "stem": "Section B, Question 15, part (a). The paper asks the candidate to name the animal they studied before describing the protocol.",
-  "questionText": "Animals maybe synchronised at breeding. Describe how this is carried out for a named animal you have studied.",
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2(3)",
-   "answer": 2,
-   "ofParts": 10,
-   "perPart": 3
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Flush ewes on good quality pasture or tupping dose // place progesterone sponge in vagina of ewe // Allow heifers to mate to natural heats for 7 days // observe heats, then if not in heat give prostaglandin (PG) injection // Give heifers first shot of PG 13 days before start of breeding season // another shot 11 days later // Progesterone (P4) based device (PRID or CEDAR) is placed in vagina of animal for 6 – 10 days // PG injection is given day prior to removal // P4 is given to sows for 14 – 18 days prior to insemination // GnRH day prior to service (AI)",
-    "marks": null,
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Flush ewes on good quality pasture or tupping dose",
-      "place progesterone sponge in vagina of ewe",
-      "Allow heifers to mate to natural heats for 7 days",
-      "observe heats, then if not in heat give prostaglandin (PG) injection",
-      "Give heifers first shot of PG 13 days before start of breeding season",
-      "another shot 11 days later",
-      "Progesterone (P4) based device (PRID or CEDAR) is placed in vagina of animal for 6 – 10 days",
-      "PG injection is given day prior to removal",
-      "P4 is given to sows for 14 – 18 days prior to insemination",
-      "GnRH day prior to service (AI)"
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme sets out five mutually exclusive protocols under the headings Ewes / Heifers or cow (Prostaglandin (PG), an alternative PG programme introduced by 'Or', and Progesterone (P4)) / Sow. A candidate names ONE animal, so the protocols are modelled as routes: claiming a step commits the card to that protocol and locks the rest, and each route sums to the 6-mark tariff (2 steps at 3 marks). Each route shows two claimable slots and carries that protocol's remaining steps in accepts, so nothing the scheme prints is hidden. REVIEWER CHECK: route labels are my wording, taken from the scheme's own headings; the step text is verbatim."
- },
- {
   "id": "agsci-2022-hl-q15aii",
   "topicId": "agsci-1-5",
   "conceptId": "breeding-season-handling-safety",
@@ -16698,67 +16455,6 @@
   "notes": "3(4) = three marking points at 4 marks each = 12, which is what Q16 needs to reconcile to 50. Eleven steps are printed and any three score, so three rows carry three concrete steps and the remaining eight sit in accepts on every row. The candidate draws the diagram, so no figure is required; the scheme's note that marks are awarded from the diagram is carried in the contextNote."
  },
  {
-  "id": "agsci-2022-hl-q17ai",
-  "topicId": "agsci-2-2-3",
-  "conceptId": "earthworm-activity-in-soil",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2022 HL Q17(a)(i)",
-  "stem": "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms.",
-  "questionText": "Describe using a labelled diagram the activity of earthworms in a soil.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "D ‐ 6, 3, 0 + L ‐ 3(1)"
-  },
-  "totalMarks": 9,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Diagram: A number of layers, presence of organic matter, earthworms",
-    "marks": 6,
-    "contextNote": "The marks column reads 'D ‐ 6, 3, 0 (showing layers)' — the diagram is banded at 6, 3 or 0. The scheme's sentence continues past the marks column with 'creating channels or mixing layers (indication of activity)', so a full-mark diagram shows the layers, the organic matter, the earthworms AND the channels or mixing."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Layer of organic matter (leaf litter) on top or decomposed organic matter",
-    "marks": 1,
-    "accepts": [
-     "layer of chalk or layer of compost or layer of sand or layer of gravel",
-     "mixing layers",
-     "wormery or soil profile"
-    ],
-    "contextNote": "The marks column reads 'Labels ‐ 3(1)': any three labelled parts at 1 mark each. Six acceptable labels are printed."
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "earthworms",
-    "marks": 1,
-    "accepts": [
-     "layer of chalk or layer of compost or layer of sand or layer of gravel",
-     "mixing layers",
-     "wormery or soil profile"
-    ]
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "create channels",
-    "marks": 1,
-    "accepts": [
-     "layer of chalk or layer of compost or layer of sand or layer of gravel",
-     "mixing layers",
-     "wormery or soil profile"
-    ]
-   }
-  ],
-  "notes": "The marks column splits into D ‐ 6, 3, 0 for the diagram and Labels ‐ 3(1) for the labelling, so 6 + 3 = 9. That is the value Q17 needs to reconcile to 50 (9 + 8 + 6 + 3 + 4 + 6 + 14, where the last 14 is (c) or (d)). Three label rows at 1 mark each carry three of the six printed labels and the other three sit in accepts. The candidate draws the diagram, so no figure is needed. REVIEWER CHECK: the marks-column text ('(showing layers)') is interleaved into the diagram sentence by the PDF extractor, which is why r-1's verbatim stops where it does; the remainder is quoted in its contextNote."
- },
- {
   "id": "agsci-2022-hl-q17aii",
   "topicId": "agsci-2-2-3",
   "conceptId": "earthworms-and-soil-productivity",
@@ -16919,40 +16615,6 @@
    }
   ],
   "notes": "2(2) = two reasons at 2 marks each = 4, matching the paper's 'two reasons'. Three reasons are printed; the two rows carry two of them and the third sits in accepts on both rows because the scheme does not require a particular two (the third is the one the marks column '2(2)' is printed through, so it could not be a row verbatim)."
- },
- {
-  "id": "agsci-2022-hl-q17bii",
-  "topicId": "agsci-3-1",
-  "conceptId": "genotype-and-hybrid-vigour",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2022 HL Q17(b)(ii)",
-  "stem": "Plant breeding is the science of changing the traits of plants in order to produce desired characteristics in a direction favourable to peoples' needs. Scientists work on selecting the high yielding plants and breeding these. In part (ii) the paper underlines two terms — genotype and hybrid vigour — and prints a separate answer box for each, headed 'Genotype:' and 'Hybrid vigour:'.",
-  "questionText": "Scientists genotype the plants and cross two high yielding plants to achieve good hybrid vigour. Explain the underlined terms.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 3"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Genotype genetic make‐up of an organism",
-    "marks": 3,
-    "contextNote": "Transcribed exactly as the scheme prints it; the dash between the term and its definition is lost in the PDF extraction."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Hybrid vigour ‐ a cross‐bred individual to shows qualities superior",
-    "marks": 3,
-    "contextNote": "The scheme's sentence runs on to the next line and finishes '...to those of both parents'. The marks column '3' is printed between the two halves in the extracted text, so only the first half is quoted here."
-   }
-  ],
-  "notes": "Two underlined terms, one 3 printed against each = 6 marks. The scheme's own grammatical slip ('a cross-bred individual to shows qualities superior') is kept as printed. r-2 is truncated at the marks column and its contextNote carries the missing clause. The stem names the two underlined terms because underlining cannot be rendered in the card, and the paper's own answer boxes ('Genotype:', 'Hybrid vigour:') confirm which two are meant."
  },
  {
   "id": "agsci-2022-hl-q17ci",
@@ -31773,31 +31435,6 @@
   ],
   "stem": "The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Vulva Bladder",
   "figureKey": "agricultural-science-2021-OL-paper-p13-i0"
- },
- {
-  "id": "agsci-2022-hl-q16ci",
-  "topicId": "agsci-3-2",
-  "conceptId": "named-grazing-systems",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2022 HL Q16(c)(i)",
-  "questionText": "Describe using a labelled diagram a named grazing system that could have been used to manage the swards in the trial in part (a).",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 for naming one, and 1 each thereafter"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Named grazing system – Paddock (rotational)",
-    "marks": 3
-   }
-  ],
-  "notes": "Block, strip grazing and the spokes-of-a-wheel layout also score. Zero grazing does not."
  },
  {
   "id": "agsci-2022-ol-q1a",
@@ -74618,6 +74255,1027 @@
    "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
   },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q2b",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "selecting-a-female-replacement-for-breeding",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 HL Q2(b)",
+  "stem": "A farmer was looking to select a female replacement animal for breeding for his chosen animal enterprise. (The paper asks you to write your named animal enterprise first.)",
+  "questionText": "Describe characteristics he would be looking for when selecting the animal.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(3)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Triangle shape (dairy) or block shape (beef) or smooth shoulders and straight backs (sheep) or long body with thick well‐muscled hams (to allow for weight of boar at breeding) (pigs) / moderate frame size to reduce amount of feed required to maintain body condition and fertility (increase sustainability of farm) / good pelvic width to reduce incidence of dystocia (difficult calving – dairy or beef)) / long body or not too heavily muscled (pigs) / mature vulva (pigs) / Docile (quiet temperament) for easy management / identified at birth (with tags) as lambing without difficulty or up suckling quickly / No signs of discharge or thriving / longevity to improve sustainability of enterprise / not a twin to a male calf (freemartin) as her reproductive tract may not have developed / good mouth – not over or undershot / tail docked properly (not too long or short) reduce incidence of flystrike or frost damage to vulva (ewe) / not too much muscle – cause difficult farrowing (gilt) / For increased fertility ‐ 60% of mature weight at mating or 300 ‐350 kg (dairy) or 370 ‐ 420kg (beef) at mating at 15 months of age to ensure she has reached puberty or will reach max body size when older (cows don’t reach mature weight until they are 5 years old)(dairy) or liveweight of 45kg (sheep) or 130 – 150 kg at 240 days for breeding(pigs) / time of year heifer was born – need to be 2 years at the start of the calving season (early born heifers) (as heifers should calve at the start of the calving season to ensure compact calving herds) / ewe lamb is at least 10 – 12 months of age for first breeding or at least 7 – 8 months of age to ensure puberty has been reached (pigs) / Not pendulous to ensure less mastitis or less udder injury or greater longevity or young can suckle easily or easy of cluster attachment (dairy) / 4 well placed teats to ensure clusters attach or fit correctly / 4 (cows) or 2 (sheep) or 12 (pigs) well placed teats to allow for ease of suckling / free of pin (underdeveloped) nipples or free of inverted nipples (as they take up space and) do not allow milk to flow / presence of good milk vein (dairy) / No sign of lameness or foot rot (sheep only) as can reduce milk yield or animal won’t thrive / strong straight legs with large even sized claws to avoid lameness (pigs only) / walk straight / Records of parents to determine her milking potential or daughters of high yielding cows (dairy) / daughters of low producing Friesian cows (or quarter bred Friesian) X good conformation beef bull to ensure good milk supply (not too much milk) for good growth rate of the calf (beef) / beef traits (conformation) and good growth potential from sire or Simmental breed can be used to maintain milk yield or good fertility to ensure a calf per cow per year / daughter of good mother or good mothering ability (good heritability) (sheep or pigs) / daughter of ewe with high milk yield (good heritability) / Daughters of top cows in herd and sired by bulls with strong maternal traits (genomically selected) / genotyped where parentage is verified and reduce risk of future inbreeding / high EBI – improved profitability or lower GHG emissions / genomically selected – the DNA of the heifer has been analysed and milk performance predicted / Genotyped where parentage is verified and reduce risk of future inbreeding / good beef merit (high EBI) to profitability and reduce GHG emissions / cross bred for hybrid vigour (best characteristics of both breeds) or pure bred heifer bred from a maternal bull (genotype) / daughters of top performing cows in herd (produce good quality calf with high weight gain from birth to weaning, fertile cows & have a tight calving interval, docile and easy calving) / Not a daughter of a ewe prone to prolapse / high genetic merit – perform well / was a twin or triplet for increased fertility / bred from 5 star ram / Cross bred gilt to allow for hybrid vigour (criss‐cross breeding) / daughter of good producing sow",
+    "marks": 6,
+    "contextNote": "Two characteristics for the enterprise you named, 3 marks each (2(3)). In order the options are the scheme's good body conformation, temperament, good health, age and weight, good udder, good feet, milk production, genetics, dairy heifer, genetics, beef heifer, genetics, ewe, genetics, gilt.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Triangle shape (dairy) or block shape (beef) or smooth shoulders and straight backs (sheep) or long body with thick well‐muscled hams (to allow for weight of boar at breeding) (pigs) / moderate frame size to reduce amount of feed required to maintain body condition and fertility (increase sustainability of farm) / good pelvic width to reduce incidence of dystocia (difficult calving – dairy or beef)) / long body or not too heavily muscled (pigs) / mature vulva (pigs)",
+      "Docile (quiet temperament) for easy management / identified at birth (with tags) as lambing without difficulty or up suckling quickly",
+      "No signs of discharge or thriving / longevity to improve sustainability of enterprise / not a twin to a male calf (freemartin) as her reproductive tract may not have developed / good mouth – not over or undershot / tail docked properly (not too long or short) reduce incidence of flystrike or frost damage to vulva (ewe) / not too much muscle – cause difficult farrowing (gilt)",
+      "For increased fertility ‐ 60% of mature weight at mating or 300 ‐350 kg (dairy) or 370 ‐ 420kg (beef) at mating at 15 months of age to ensure she has reached puberty or will reach max body size when older (cows don’t reach mature weight until they are 5 years old)(dairy) or liveweight of 45kg (sheep) or 130 – 150 kg at 240 days for breeding(pigs) / time of year heifer was born – need to be 2 years at the start of the calving season (early born heifers) (as heifers should calve at the start of the calving season to ensure compact calving herds) / ewe lamb is at least 10 – 12 months of age for first breeding or at least 7 – 8 months of age to ensure puberty has been reached (pigs)",
+      "Not pendulous to ensure less mastitis or less udder injury or greater longevity or young can suckle easily or easy of cluster attachment (dairy) / 4 well placed teats to ensure clusters attach or fit correctly / 4 (cows) or 2 (sheep) or 12 (pigs) well placed teats to allow for ease of suckling / free of pin (underdeveloped) nipples or free of inverted nipples (as they take up space and) do not allow milk to flow / presence of good milk vein (dairy)",
+      "No sign of lameness or foot rot (sheep only) as can reduce milk yield or animal won’t thrive / strong straight legs with large even sized claws to avoid lameness (pigs only) / walk straight",
+      "Records of parents to determine her milking potential or daughters of high yielding cows (dairy) / daughters of low producing Friesian cows (or quarter bred Friesian) X good conformation beef bull to ensure good milk supply (not too much milk) for good growth rate of the calf (beef) / beef traits (conformation) and good growth potential from sire or Simmental breed can be used to maintain milk yield or good fertility to ensure a calf per cow per year / daughter of good mother or good mothering ability (good heritability) (sheep or pigs) / daughter of ewe with high milk yield (good heritability)",
+      "Daughters of top cows in herd and sired by bulls with strong maternal traits (genomically selected) / genotyped where parentage is verified and reduce risk of future inbreeding / high EBI – improved profitability or lower GHG emissions / genomically selected – the DNA of the heifer has been analysed and milk performance predicted",
+      "Genotyped where parentage is verified and reduce risk of future inbreeding / good beef merit (high EBI) to profitability and reduce GHG emissions / cross bred for hybrid vigour (best characteristics of both breeds) or pure bred heifer bred from a maternal bull (genotype) / daughters of top performing cows in herd (produce good quality calf with high weight gain from birth to weaning, fertile cows & have a tight calving interval, docile and easy calving)",
+      "Not a daughter of a ewe prone to prolapse / high genetic merit – perform well / was a twin or triplet for increased fertility / bred from 5 star ram",
+      "Cross bred gilt to allow for hybrid vigour (criss‐cross breeding) / daughter of good producing sow"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-4-3-3"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q2(b)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q9ai",
+  "subjectId": "agricultural-science",
+  "year": 2022,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2022 HL Q9(a)(i)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agsci-4-1"
+  ],
+  "conceptId": "drawing-a-calfs-stomach",
+  "questionText": "Draw a labelled diagram of a calf’s stomach in its first week of life.",
+  "rows": [
+   {
+    "kind": "criterion",
+    "verbatim": "Candidates diagram must clearly show all four chambers, the abomasum being the largest stomach in comparison to others, especially the rumen or oesophageal groove directing the milk straight to the abomasum",
+    "marks": null,
+    "contextNote": "Drawing, D = 3, 2, 0.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Any three labels",
+    "marks": null,
+    "contextNote": "Labels, L = 3(1): any three correct labels, 1 mark each.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "D = 3, 2, 0 + L = 3(1)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q9(a)(i)",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer either (a) or (b).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q10b",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "planting-a-catch-or-energy-crop",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 HL Q10(b)",
+  "stem": "In relation to a named catch or energy crop you have studied answer the questions which follow.",
+  "questionText": "Describe the method of planting of your chosen crop.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "sown into a cultivated(plough and harrow) seedbed / direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed / maximum depth of 10mm (to ensure uniform germination) / seeding rate of 4‐5kg/ha or 70 plants per m2 / rolled well after sowing to ensure good soil:seed contact",
+    "marks": 4,
+    "contextNote": "Kale: any two planting points, 2 marks each (2(2)).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "sown into a cultivated(plough and harrow) seedbed",
+      "direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed",
+      "maximum depth of 10mm (to ensure uniform germination)",
+      "seeding rate of 4‐5kg/ha or 70 plants per m2",
+      "rolled well after sowing to ensure good soil:seed contact"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "answerVariants": [
+   {
+    "id": "kale",
+    "label": "Kale",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "sown into a cultivated(plough and harrow) seedbed / direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed / maximum depth of 10mm (to ensure uniform germination) / seeding rate of 4‐5kg/ha or 70 plants per m2 / rolled well after sowing to ensure good soil:seed contact",
+      "marks": 4,
+      "contextNote": "Kale: any two planting points, 2 marks each (2(2)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "sown into a cultivated(plough and harrow) seedbed",
+        "direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed",
+        "maximum depth of 10mm (to ensure uniform germination)",
+        "seeding rate of 4‐5kg/ha or 70 plants per m2",
+        "rolled well after sowing to ensure good soil:seed contact"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   },
+   {
+    "id": "miscanthus",
+    "label": "Miscanthus",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Grassland site spray with total herbicide for controlling perennial weeds / ploughed from January 15th to control perennial weeds or allow frost activity to break down the soil further or help prevent ‘ley’ pests such as the larvae of two moths (the common rustic moth or the ghost moth) attacking the newly established plants / (later in the spring from March to April) the site should be rotovated or power harrowed (immediately prior to planting to improve establishment by aiding good root development, good soil root contact or improved soil aeration) / a planting rate of 16,000 rhizomes per ha or an emergence of 10‐15,000 plants per ha / rhizomes need to be planted at a depth of 5‐10 cm (in March or April) / sown using automatic planting machine",
+      "marks": 4,
+      "contextNote": "Miscanthus: any two planting points, 2 marks each (2(2)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "Grassland site spray with total herbicide for controlling perennial weeds",
+        "ploughed from January 15th to control perennial weeds or allow frost activity to break down the soil further or help prevent ‘ley’ pests such as the larvae of two moths (the common rustic moth or the ghost moth) attacking the newly established plants",
+        "(later in the spring from March to April) the site should be rotovated or power harrowed (immediately prior to planting to improve establishment by aiding good root development, good soil root contact or improved soil aeration)",
+        "a planting rate of 16,000 rhizomes per ha or an emergence of 10‐15,000 plants per ha",
+        "rhizomes need to be planted at a depth of 5‐10 cm (in March or April)",
+        "sown using automatic planting machine"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   },
+   {
+    "id": "osr",
+    "label": "Oilseed rape (OSR)",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "preparing the seedbed min‐till or cultivate (plough and harrow) or one‐pass or strip‐till cultivation or in shallow stubble ploughing to remove residual compaction / sown at a seed rate of between 3.0‐4.0kg/ha (higher seed rates can be used to allow for winter losses or excellent emergence) / sown using a seed drill / 25 cm spacing or depth of 20 mm / rolled to improve soil‐seed contact",
+      "marks": 4,
+      "contextNote": "Oilseed rape (OSR): any two planting points, 2 marks each (2(2)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "preparing the seedbed min‐till or cultivate (plough and harrow) or one‐pass or strip‐till cultivation or in shallow stubble ploughing to remove residual compaction",
+        "sown at a seed rate of between 3.0‐4.0kg/ha (higher seed rates can be used to allow for winter losses or excellent emergence)",
+        "sown using a seed drill",
+        "25 cm spacing or depth of 20 mm",
+        "rolled to improve soil‐seed contact"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-3-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q10(b)",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q10c",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "advantages-of-a-catch-or-energy-crop",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 HL Q10(c)",
+  "stem": "In relation to a named catch or energy crop you have studied answer the questions which follow.",
+  "questionText": "Outline advantages of sowing your chosen crop.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "high digestibility / long utilisation period or use of idle land / fodder crop / can use used to extend grazing season / out‐winter animals (less housing or slurry storage requirement) / high protein / fast growing crop",
+    "marks": 4,
+    "contextNote": "Kale: any two advantages, 2 marks each (2(2)).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "high digestibility",
+      "long utilisation period or use of idle land",
+      "fodder crop",
+      "can use used to extend grazing season",
+      "out‐winter animals (less housing or slurry storage requirement)",
+      "high protein",
+      "fast growing crop"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "answerVariants": [
+   {
+    "id": "kale",
+    "label": "Kale",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "high digestibility / long utilisation period or use of idle land / fodder crop / can use used to extend grazing season / out‐winter animals (less housing or slurry storage requirement) / high protein / fast growing crop",
+      "marks": 4,
+      "contextNote": "Kale: any two advantages, 2 marks each (2(2)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "high digestibility",
+        "long utilisation period or use of idle land",
+        "fodder crop",
+        "can use used to extend grazing season",
+        "out‐winter animals (less housing or slurry storage requirement)",
+        "high protein",
+        "fast growing crop"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   },
+   {
+    "id": "miscanthus",
+    "label": "Miscanthus",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "renewable source of energy / perennial crop / carbon neutral fuel / reduction in GHG (carbon sinks) / low input crop (fertilisers or herbicides or pesticides) / increased biodiversity",
+      "marks": 4,
+      "contextNote": "Miscanthus: any two advantages, 2 marks each (2(2)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "renewable source of energy",
+        "perennial crop",
+        "carbon neutral fuel",
+        "reduction in GHG (carbon sinks)",
+        "low input crop (fertilisers or herbicides or pesticides)",
+        "increased biodiversity"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   },
+   {
+    "id": "osr",
+    "label": "Oilseed rape (OSR)",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Green manure crop (due to its developed root system to reaches the minerals located in the lower soil layers) / crop can be used for human consumption / retains moisture well / saturates fields with oxygen / provides a take‐all break / leaves high levels of residual nitrogen for subsequent crops / helps control annual or perennial grass weeds / spreads the harvest workload (normally be cut before winter wheat)",
+      "marks": 4,
+      "contextNote": "Oilseed rape (OSR): any two advantages, 2 marks each (2(2)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "Green manure crop (due to its developed root system to reaches the minerals located in the lower soil layers)",
+        "crop can be used for human consumption",
+        "retains moisture well",
+        "saturates fields with oxygen",
+        "provides a take‐all break",
+        "leaves high levels of residual nitrogen for subsequent crops",
+        "helps control annual or perennial grass weeds",
+        "spreads the harvest workload (normally be cut before winter wheat)"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-3-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q10(c)",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q13aiv",
+  "subjectId": "agricultural-science",
+  "year": 2022,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2022 HL Q13(a)(iv)",
+  "topicId": "agsci-3-1",
+  "curriculumNodeIds": [
+   "agsci-3-1"
+  ],
+  "conceptId": "reproductive-stage-of-sward-plants",
+  "questionText": "Identify the growth cycle stage of the plants in part (iii) and describe briefly what happens at this stage.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Reproductive stage",
+    "marks": 3,
+    "contextNote": "Stage: 3 marks.",
+    "id": "r-1"
+   },
+   {
+    "kind": "alt",
+    "verbatim": "Seed head develops or heading out or flowering",
+    "marks": 3,
+    "contextNote": "Description: 3 marks; any one of the scheme's descriptions.",
+    "accepts": [
+     "stem is strong enough to hold plant upright",
+     "wind pollination occurs in A or insect pollination occurs in B"
+    ],
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q13(a)(iv)",
+   "pages": [
+    20,
+    21
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Maintaining a constant supply of high quality leafy grass can be easily achieved by managing and measuring the amount of grass on the farm. In part (iii) a farmer identified different plants in the sward while measuring the grass: A Italian ryegrass, B chicory and C cocksfoot.",
+  "figureKey": "agricultural-science-2022-HL-paper-p20-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Left cell - a close-up of one upright, densely packed green seed head, broad flat leaf blades behind it",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Centre cell - several pale blue, daisy-like flowers on leafy stems, a bee on one of them",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Right cell - a branched, open seed head of greenish-purple clustered spikelets on fine stems",
+    "askedInThisQuestion": true
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q13biii",
+  "subjectId": "agricultural-science",
+  "year": 2022,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2022 HL Q13(b)(iii)",
+  "topicId": "agsci-3-3-1",
+  "curriculumNodeIds": [
+   "agsci-3-3-1"
+  ],
+  "conceptId": "certified-versus-uncertified-seed-crop",
+  "questionText": "Gerry was able to compare the plant uniformity of both batches of seed (certified and uncertified). Describe the characteristics Gerry would have observed to determine which batch was certified and which was uncertified.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Min. 85% of the plants had germination / Reduced weeds / plants were all similar height / plants were all the same colour / plants all had same stem or root structure or leaf / true variety / Less than 85% germinated / increased number of weeds present / plants varied in height / plants varied in colour / plants varied in stem or root or leaf / mix of other varieties",
+    "marks": 8,
+    "contextNote": "Two characteristics, 4 marks each (2(4)). The first six options are the scheme's certified-seed column and the last six its uncertified-seed column; a characteristic and its opposite are the same characteristic.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Min. 85% of the plants had germination",
+      "Reduced weeds",
+      "plants were all similar height",
+      "plants were all the same colour",
+      "plants all had same stem or root structure or leaf",
+      "true variety",
+      "Less than 85% germinated",
+      "increased number of weeds present",
+      "plants varied in height",
+      "plants varied in colour",
+      "plants varied in stem or root or leaf",
+      "mix of other varieties"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q13(b)(iii)",
+   "pages": [
+    21,
+    22
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Gerry wants to reseed his grassland pastures. He ordered two batches of seeds, certified and uncertified, which arrived unlabelled, and carried out a research trial in a small section of his field to distinguish between them.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q14cii",
+  "subjectId": "agricultural-science",
+  "year": 2022,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(ii)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agsci-4-3-3"
+  ],
+  "conceptId": "natural-airflow-in-a-calf-shed",
+  "questionText": "A farmer let off a smoke bomb in his calf shed to check the ventilation. Complete the diagram using arrows to show the natural airflow he should expect through the shed.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Correct indication of arrows coming in at side",
+    "marks": null,
+    "contextNote": "The scheme prints 4 + 1 for the arrows; its drawn answer shows after you reveal.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "going out through roof",
+    "marks": null,
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 1"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q14(c)(ii)",
+   "pages": [
+    25
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer both (a) and (b) with either (c) or (d). Part (c): analyse the picture of calf housing and answer the questions which follow.",
+  "figureKey": "agsci-2022-hl-scheme-calf-shed-airflow",
+  "questionFigureKey": "agsci-2022-hl-paper-calf-shed-airflow",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q15ai",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "oestrus-synchronisation-protocols",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q15(a)(i)",
+  "stem": "Animals maybe synchronised at breeding. The paper asks you to name the animal first.",
+  "questionText": "Animals maybe synchronised at breeding. Describe how this is carried out for a named animal you have studied.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(3)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Flush ewes on good quality pasture or tupping dose / place progesterone sponge in vagina of ewe / leave for 10 – 12 days / remove (in morning) and inject PMSG / inseminate (let rams out) 1‐2 days later / ram ratio 1:10 or ram effect",
+    "marks": 6,
+    "contextNote": "Ewes: any two steps, 3 marks each (2(3)).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Flush ewes on good quality pasture or tupping dose",
+      "place progesterone sponge in vagina of ewe",
+      "leave for 10 – 12 days",
+      "remove (in morning) and inject PMSG",
+      "inseminate (let rams out) 1‐2 days later",
+      "ram ratio 1:10 or ram effect"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "answerVariants": [
+   {
+    "id": "ewes",
+    "label": "Ewes",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Flush ewes on good quality pasture or tupping dose / place progesterone sponge in vagina of ewe / leave for 10 – 12 days / remove (in morning) and inject PMSG / inseminate (let rams out) 1‐2 days later / ram ratio 1:10 or ram effect",
+      "marks": 6,
+      "contextNote": "Ewes: any two steps, 3 marks each (2(3)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 3,
+       "options": [
+        "Flush ewes on good quality pasture or tupping dose",
+        "place progesterone sponge in vagina of ewe",
+        "leave for 10 – 12 days",
+        "remove (in morning) and inject PMSG",
+        "inseminate (let rams out) 1‐2 days later",
+        "ram ratio 1:10 or ram effect"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   },
+   {
+    "id": "heifers-pg-heats",
+    "label": "Heifers or cows: prostaglandin after natural heats",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Allow heifers to mate to natural heats for 7 days / observe heats, then if not in heat give prostaglandin (PG) injection / repeat PG injection 11 days later if not in heat / observe heat and AI with AM:PM rule",
+      "marks": 6,
+      "contextNote": "Heifers or cows: prostaglandin after natural heats: any two steps, 3 marks each (2(3)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 3,
+       "options": [
+        "Allow heifers to mate to natural heats for 7 days",
+        "observe heats, then if not in heat give prostaglandin (PG) injection",
+        "repeat PG injection 11 days later if not in heat",
+        "observe heat and AI with AM:PM rule"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   },
+   {
+    "id": "heifers-pg-two-shots",
+    "label": "Heifers or cows: two prostaglandin shots",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Give heifers first shot of PG 13 days before start of breeding season / another shot 11 days later / bull introduced 2 days prior to start of breeding season or AI 72‐96 hours later",
+      "marks": 6,
+      "contextNote": "Heifers or cows: two prostaglandin shots: any two steps, 3 marks each (2(3)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 3,
+       "options": [
+        "Give heifers first shot of PG 13 days before start of breeding season",
+        "another shot 11 days later",
+        "bull introduced 2 days prior to start of breeding season or AI 72‐96 hours later"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   },
+   {
+    "id": "heifers-p4",
+    "label": "Heifers or cows: progesterone (P4) device",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Progesterone (P4) based device (PRID or CEDAR) is placed in vagina of animal for 6 – 10 days / PG injection is given day prior to removal / gonadotrophin (GnRH) injection / AI (mating) 48 hours after removal of device",
+      "marks": 6,
+      "contextNote": "Heifers or cows: progesterone (P4) device: any two steps, 3 marks each (2(3)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 3,
+       "options": [
+        "Progesterone (P4) based device (PRID or CEDAR) is placed in vagina of animal for 6 – 10 days",
+        "PG injection is given day prior to removal",
+        "gonadotrophin (GnRH) injection",
+        "AI (mating) 48 hours after removal of device"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   },
+   {
+    "id": "sows",
+    "label": "Sows",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "P4 is given to sows for 14 – 18 days prior to insemination / GnRH day prior to service (AI) / located beside to boar (releases phermones) to bring sow into heat / double service (to increase litter size)",
+      "marks": 6,
+      "contextNote": "Sows: any two steps, 3 marks each (2(3)).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 3,
+       "options": [
+        "P4 is given to sows for 14 – 18 days prior to insemination",
+        "GnRH day prior to service (AI)",
+        "located beside to boar (releases phermones) to bring sow into heat",
+        "double service (to increase litter size)"
+       ]
+      },
+      "id": "r-1"
+     }
+    ]
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-4-3-2"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q15(a)(i)",
+   "pages": [
+    27
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q16ci",
+  "topicId": "agsci-3-2",
+  "conceptId": "named-grazing-systems",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q16(c)(i)",
+  "questionText": "Describe using a labelled diagram a named grazing system that could have been used to manage the swards in the trial in part (a).",
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "2 + D - 6, 3, 0 + L - 3(1)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Named grazing system – Paddock (rotational) / block / strip grazing / spokes of a wheel",
+    "marks": null,
+    "contextNote": "Named system: 2 marks. The scheme adds \"(Zero grazing is not accepted)\".",
+    "id": "r-1"
+   },
+   {
+    "kind": "criterion",
+    "verbatim": "For 6 marks: diagram must show fencing, water supply, indication of animal movement",
+    "marks": null,
+    "contextNote": "Drawing, D - 6, 3, 0: \"For 3 marks: diagram has one of the elements above missing\".",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Marks awarded for any 3 labelled parts",
+    "marks": null,
+    "contextNote": "Labels, L - 3(1).",
+    "id": "r-3"
+   }
+  ],
+  "stem": "An investigation looking at milk production from grass and white clover systems over the course of a year was carried out by Teagasc researchers in Moorepark.",
+  "curriculumNodeIds": [
+   "agsci-3-2"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q16(c)(i)",
+   "pages": [
+    31
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q17ai",
+  "topicId": "agsci-2-2-3",
+  "conceptId": "earthworm-activity-in-soil",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q17(a)(i)",
+  "stem": "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms.",
+  "questionText": "Describe using a labelled diagram the activity of earthworms in a soil.",
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "D - 6, 3, 0 + Labels - 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "kind": "criterion",
+    "verbatim": "Diagram: A number of layers, presence of organic matter, earthworms, creating channels or mixing layers (indication of activity)",
+    "marks": null,
+    "contextNote": "Drawing, D - 6, 3, 0 (showing layers).",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Layer of organic matter (leaf litter) on top or decomposed organic matter / layer of chalk or layer of compost or layer of sand or layer of gravel / earthworms /create channels / mixing layers / wormery or soil profile",
+    "marks": null,
+    "contextNote": "Labels - 3(1): any three of these labels, 1 mark each.",
+    "id": "r-2"
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-2-2-3"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q17(a)(i)",
+   "pages": [
+    33
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q17bii",
+  "topicId": "agsci-3-1",
+  "conceptId": "genotype-and-hybrid-vigour",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q17(b)(ii)",
+  "stem": "Plant breeding is the science of changing the traits of plants in order to produce desired characteristics in a direction favourable to peoples' needs. Scientists work on selecting the high yielding plants and breeding these. In part (ii) the paper underlines two terms — genotype and hybrid vigour — and prints a separate answer box for each, headed 'Genotype:' and 'Hybrid vigour:'.",
+  "questionText": "Scientists genotype the plants and cross two high yielding plants to achieve good hybrid vigour. Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Genotype genetic make‐up of an organism",
+    "marks": 3,
+    "contextNote": "Transcribed exactly as the scheme prints it; the dash between the term and its definition is lost in the PDF extraction."
+   },
+   {
+    "kind": "point",
+    "verbatim": "Hybrid vigour ‐ a cross‐bred individual to shows qualities superior to those of both parents",
+    "marks": 3,
+    "id": "r-2"
+   }
+  ],
+  "notes": "Two underlined terms, one 3 printed against each = 6 marks. The scheme's own grammatical slip ('a cross-bred individual to shows qualities superior') is kept as printed. r-2 is truncated at the marks column and its contextNote carries the missing clause. The stem names the two underlined terms because underlining cannot be rendered in the card, and the paper's own answer boxes ('Genotype:', 'Hybrid vigour:') confirm which two are meant.",
+  "curriculumNodeIds": [
+   "agsci-3-1"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q17(b)(ii)",
+   "pages": [
+    34,
+    35
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2022-hl-q18bii",
+  "subjectId": "agricultural-science",
+  "year": 2022,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2022 HL Q18(b)(ii)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-3-2"
+  ],
+  "conceptId": "integrated-weed-management-advice",
+  "questionText": "You have been asked to address a group of tillage farmers. Using the ‘Integrated Management System’ for controlling weeds (outlined on previous page), provide advice to them on the future of weed control on their farms.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Cultural control has to be the most important part of the IMS, and use of herbicides is less important / Increase use of pre‐emergent herbicides and decrease the use of post‐emergent herbicides / increase in plant numbers for increased competition with weeds so less chemical sprays required / increased competition for space or light or nutrients so less chemical sprays required or some cover crops– release chemicals that suppress weeds (allelopathic) (e.g. wheat, kale, cabbage) / hand pulling of weeds (prior to flowering) to reduce the chemical requirement / breaks lifecycle of weeds or weeds don’t get a chance to establish in an area / crop is deliberately destroyed by burning due to high incidence of weeds or disease / remove all weeds from farmyard to prevent seeds being spread on fields through FYM or slurry / ensure that all machinery is free from plants or seeds when moving fields to prevent cross contamination",
+    "marks": 12,
+    "contextNote": "Three pieces of advice, 4 marks each (3(4)). The scheme answers each heading of the diagram: integrated management, use of herbicides, increased seed rates and competitive crops (one answer for both), cover crops, rogueing, crop rotation and whole cropping (one answer for both), crop destruction, on-farm hygiene and machinery hygiene, in that order.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Cultural control has to be the most important part of the IMS, and use of herbicides is less important",
+      "Increase use of pre‐emergent herbicides and decrease the use of post‐emergent herbicides",
+      "increase in plant numbers for increased competition with weeds so less chemical sprays required",
+      "increased competition for space or light or nutrients so less chemical sprays required or some cover crops– release chemicals that suppress weeds (allelopathic) (e.g. wheat, kale, cabbage)",
+      "hand pulling of weeds (prior to flowering) to reduce the chemical requirement",
+      "breaks lifecycle of weeds or weeds don’t get a chance to establish in an area",
+      "crop is deliberately destroyed by burning due to high incidence of weeds or disease",
+      "remove all weeds from farmyard to prevent seeds being spread on fields through FYM or slurry",
+      "ensure that all machinery is free from plants or seeds when moving fields to prevent cross contamination"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2022 Higher — Q18(b)(ii)",
+   "pages": [
+    38,
+    39
+   ],
+   "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "The diagram below shows an ‘Integrated Management System’ for controlling weeds. Analyse the diagram and answer the questions which follow.",
+  "figureKey": "agricultural-science-2022-HL-paper-p38-i0",
   "qa": {
    "gates": [
     "verbatim",

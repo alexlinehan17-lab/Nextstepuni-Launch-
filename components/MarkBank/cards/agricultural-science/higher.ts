@@ -611,6 +611,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Organic matter contains the remains of plants and animals", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -625,6 +635,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Improves soil structure (microbes excrete compounds that act as a binding agent for soil particles)", marks: 2, accepts: ["improves drainage or aeration or root penetration or easier to till","increased water‐holding capacity of the soil","enhances root growth which results in better plant health","allows more movement of (mobile) nutrients (such as nitrates to the root) or improves soil’s capacity to store or supply nutrients (N, P, K, Ca, Mg)","improves cation exchange capacity","retains toxic elements or allows continuation of soil microbial activity or respiration to continue","allows soil to maintain a suitable pH (buffer)","acts as a carbon sink (sequestration)","soils with adequate levels of OM provide a good habitat for microbes or other living organism (which enhances soil biodiversity)"], contextNote: "One advantage only. Any one of the alternatives below scores the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -640,6 +660,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Weigh empty crucible (& record mass)", marks: 3, accepts: ["weigh dried soil (& record mass)","(humus will glow red) until no more smoke or constant mass","reweigh crucible","Soil mass lost after burning x 100* Soil mass before burning 1"], contextNote: "Any TWO of the scheme's six steps score, 3 marks each." },
     { id: "r-2", kind: "point", verbatim: "burn (on pipe clay triangle) on tripod over bunsen burner", marks: 3, accepts: ["weigh dried soil (& record mass)","(humus will glow red) until no more smoke or constant mass","reweigh crucible","Soil mass lost after burning x 100* Soil mass before burning 1"], contextNote: "Any TWO of the scheme's six steps score, 3 marks each." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -654,6 +684,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rich in nutrients (nitrogen to increase crop growth)", marks: 4, accepts: ["decreased need for chemical fertiliser","offset expensive chemical fertiliser costs","high in P & K for root development","(effective use on farms) can help balance soil fertility levels","pig slurry is better balanced than cattle slurry for grazed swards as the K content is lower (approx. values pig = 35% K and cattle = 68% K)","high organic matter"], contextNote: "One advantage only; any of the alternatives below carries the whole 4 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -669,6 +709,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Livestock type", marks: 2, accepts: ["dilution of slurry with water","type of storage","stage of growth (production stage)","length of storage"] },
     { id: "r-2", kind: "point", verbatim: "animal diet", marks: 2, accepts: ["dilution of slurry with water","type of storage","stage of growth (production stage)","length of storage"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -699,21 +749,6 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
-    id: "agsci-2022-hl-q2b", topicId: "agsci-4-3-3", conceptId: "selecting-a-female-replacement-for-breeding",
-    section: "A", questionRef: "2022 HL Q2(b)",
-    stem: "A farmer was looking to select a female replacement animal for breeding for his chosen animal enterprise. (The paper asks you to write your named animal enterprise first.)",
-    questionText: "Describe characteristics he would be looking for when selecting the animal.",
-    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "moderate frame size to reduce amount of feed required to maintain body condition and fertility (increase sustainability of farm)", marks: 3, accepts: ["long body or not too heavily muscled (pigs)","longevity to improve sustainability of enterprise","not a twin to a male calf (freemartin) as her reproductive tract may not have developed","good mouth – not over or undershot","4 well placed teats to ensure clusters attach or fit correctly","Records of parents to determine her milking potential or daughters of high yielding cows (dairy)","Cross bred gilt to allow for hybrid vigour (criss‐cross breeding)","Genotyped where parentage is verified and reduce risk of future inbreeding"], contextNote: "Any TWO well-described characteristics score, 3 marks each — and they must fit the enterprise you named.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "Docile (quiet temperament) for easy management", marks: 3, accepts: ["long body or not too heavily muscled (pigs)","longevity to improve sustainability of enterprise","not a twin to a male calf (freemartin) as her reproductive tract may not have developed","good mouth – not over or undershot","4 well placed teats to ensure clusters attach or fit correctly","Records of parents to determine her milking potential or daughters of high yielding cows (dairy)","Cross bred gilt to allow for hybrid vigour (criss‐cross breeding)","Genotyped where parentage is verified and reduce risk of future inbreeding"], contextNote: "Any TWO well-described characteristics score, 3 marks each — and they must fit the enterprise you named.", openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q3a", topicId: "agsci-1-2", conceptId: "investigating-soil-temperature-and-germination",
     section: "A", questionRef: "2022 HL Q3(a)",
     stem: "Eanna wanted to sow barley on his farm and decided to investigate the effect of soil temperature on the germination of the crop.",
@@ -723,6 +758,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "At least 2 trays of 100 (or specific no) of seeds", marks: 3, accepts: ["same amount of water to all or same soil type","allow 2 weeks (or specified time) for germination","count no. of seeds germinated or calculate percentage germination or compare number of seeds germinated in each tray"], contextNote: "Any TWO of the scheme's five steps score, 3 marks each." },
     { id: "r-2", kind: "point", verbatim: "put one tray in fridge and one at room temp or outside or propagator or heated propagator", marks: 3, accepts: ["same amount of water to all or same soil type","allow 2 weeks (or specified time) for germination","count no. of seeds germinated or calculate percentage germination or compare number of seeds germinated in each tray"], contextNote: "This is the method of varying temperature. Any TWO of the scheme's five steps score, 3 marks each." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -737,6 +782,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "gate", verbatim: "Quantitative* – number of seeds (that have germinated)", marks: 2, contextNote: "SEC asterisk on *Quantitative: only that exact term scores — no synonym — and the reason must be given with it." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -751,6 +806,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Seeds will not germinate at colder temperatures or warmer soils allow for germination as heat promotes growth", marks: 2, accepts: ["delay sowing until soil temperatures increase (above 6oC for barley or 10 – 12oC for grass)","important to measure the soil temperature prior to sowing to ensure correct temperature of the crop for germinating"], contextNote: "One point only; the alternatives below each carry the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -789,6 +854,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "TB", marks: 3, accepts: ["foot & mouth","scrapie","Newcastle disease","bovine viral diarrhoea (BVD)","BSE","equine viral arteritis","contagious equine metritis","Aujeszky’s disease","African swine fever","swine influenza","transmissible gastro‐enteritis (Porcine respiratory corona virus)","sheep scab","warble fly","rabies"], contextNote: "Any two named notifiable diseases score, 3 marks each. A surplus wrong disease cancels a correct one.", openList: true },
     { id: "r-2", kind: "point", verbatim: "brucellosis", marks: 3, accepts: ["foot & mouth","scrapie","Newcastle disease","bovine viral diarrhoea (BVD)","BSE","equine viral arteritis","contagious equine metritis","Aujeszky’s disease","African swine fever","swine influenza","transmissible gastro‐enteritis (Porcine respiratory corona virus)","sheep scab","warble fly","rabies"], contextNote: "Any two named notifiable diseases score, 3 marks each. A surplus wrong disease cancels a correct one.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -804,6 +879,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Lock up or fence or surround with netting flocks (to prevent birds mixing with wild birds or prevent area becoming contaminated with bird droppings or feathers)", marks: 1, accepts: ["restrict vehicles or visitors or wear protective clothing (to prevent any disease being carried on or off farm) or restriction signage","disinfect boots or vehicles or equipment on farms (to prevent any disease being carried onto or off farm)","don’t allow birds to drink from outside water sources (in case of any contamination from wild birds)","feeding troughs and drinks located inside (so not to attract wild birds which may infect domestic flock)","use bird scares or flutter tape or scarecrows to scare wild birds from area","report any sick or dead wild birds found on your holding to department (regional veterinary office) who will remove bird for testing and remove domestic flock from the area","all poultry houses should be bird and rodent proof (to prevent wild birds entering and spreading disease)","regular cleaning and disinfection( on all walkways, paths and at end of production cycle) to kill any diseases present or prevent disease entering the house","no other animals (e.g. pets) permitted into poultry house (to prevent disease entering the house)","equipment should not be shared between farms (as this may lead to spread of disease)","feed and bedding must not be stored where wild birds can access and contaminate with droppings (which could be source of disease)","only buy birds from a reputable source or isolate any newly introduced birds (for 2 weeks) or all‐in all‐out or closed flock","keep ducks and geese away from other birds as they may not show signs of disease but maybe carriers"], contextNote: "Any two measures score, 1 mark each — the part is worth only 2 despite the long answer pool." },
     { id: "r-2", kind: "point", verbatim: "vaccination", marks: 1, accepts: ["restrict vehicles or visitors or wear protective clothing (to prevent any disease being carried on or off farm) or restriction signage","disinfect boots or vehicles or equipment on farms (to prevent any disease being carried onto or off farm)","don’t allow birds to drink from outside water sources (in case of any contamination from wild birds)","feeding troughs and drinks located inside (so not to attract wild birds which may infect domestic flock)","use bird scares or flutter tape or scarecrows to scare wild birds from area","report any sick or dead wild birds found on your holding to department (regional veterinary office) who will remove bird for testing and remove domestic flock from the area","all poultry houses should be bird and rodent proof (to prevent wild birds entering and spreading disease)","regular cleaning and disinfection( on all walkways, paths and at end of production cycle) to kill any diseases present or prevent disease entering the house","no other animals (e.g. pets) permitted into poultry house (to prevent disease entering the house)","equipment should not be shared between farms (as this may lead to spread of disease)","feed and bedding must not be stored where wild birds can access and contaminate with droppings (which could be source of disease)","only buy birds from a reputable source or isolate any newly introduced birds (for 2 weeks) or all‐in all‐out or closed flock","keep ducks and geese away from other birds as they may not show signs of disease but maybe carriers"], contextNote: "Any two measures score, 1 mark each — the part is worth only 2 despite the long answer pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -819,6 +904,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Temperature (environment) of house or living environment", marks: 3, accepts: ["sex","health or welfare status","feeding practice or forage or feed quality","days in milk (production)","age of animal or growth stage of animal","walking distances (e.g. from field to parlour)","body weight or BCS","stocking density"], contextNote: "Any two factors score, 3 marks each." },
     { id: "r-2", kind: "point", verbatim: "genetics or breed", marks: 3, accepts: ["sex","health or welfare status","feeding practice or forage or feed quality","days in milk (production)","age of animal or growth stage of animal","walking distances (e.g. from field to parlour)","body weight or BCS","stocking density"], contextNote: "Any two factors score, 3 marks each." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -833,6 +928,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "gate", verbatim: "2020*", marks: 2, contextNote: "SEC asterisk: only this exact answer scores. A lower FCR means more efficient conversion, so the lowest figure (1.75) is the right year." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p08-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p08-i0.png",
@@ -856,6 +961,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Improved breeding (genetics) – increased growth rate of pigs", marks: 1, accepts: ["better management of stock by training of all staff in technical skills and management training will ensure lower FCR of pigs","better housing – appropriate, stable temperature (critical temperature) or ventilation (good air movement) or hygiene to achieve optimal FCR","better animal health ‐ good gut health to ensure well developed gut at weaning which ensures optimal feed conversion or good biosecurity or health management plan measures to prevent disease entry to farm (ensure healthy animals and optimise FCR)","lower stocking density lowers FCR (pigs finish faster with lower inputs)"], contextNote: "Any two reasons score, 1 mark each." },
     { id: "r-2", kind: "point", verbatim: "better feed quality or feed formulation – improved understanding of FCR (or FCE) and ration formulation allows for increased FCR (or feed losses)", marks: 1, accepts: ["better management of stock by training of all staff in technical skills and management training will ensure lower FCR of pigs","better housing – appropriate, stable temperature (critical temperature) or ventilation (good air movement) or hygiene to achieve optimal FCR","better animal health ‐ good gut health to ensure well developed gut at weaning which ensures optimal feed conversion or good biosecurity or health management plan measures to prevent disease entry to farm (ensure healthy animals and optimise FCR)","lower stocking density lowers FCR (pigs finish faster with lower inputs)"], contextNote: "Any two reasons score, 1 mark each." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p08-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p08-i0.png",
@@ -880,6 +995,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "prevent erosion – decreased sediment reaching watercourse or decrease pollution", marks: 2, accepts: ["improve soil health or vegetation growth","increased biodiversity","physical barrier","improve air quality by capturing pollution particles or act as barriers to windborne pests","food source for many species","wildlife corridors to allow wildlife to travel","sequester carbon (reduces amount of carbon in the atmosphere)","reduce flooding"], contextNote: "Any THREE reasons score, 2 marks each." },
     { id: "r-3", kind: "point", verbatim: "habitat for wildlife", marks: 2, accepts: ["improve soil health or vegetation growth","increased biodiversity","physical barrier","improve air quality by capturing pollution particles or act as barriers to windborne pests","food source for many species","wildlife corridors to allow wildlife to travel","sequester carbon (reduces amount of carbon in the atmosphere)","reduce flooding"], contextNote: "Any THREE reasons score, 2 marks each." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -894,6 +1019,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Increased use of traditional breeds", marks: 2, accepts: ["management of vulnerable habitats","restoring and maintaining grassland or heathland ecosystems","promote sustainable farming practices","increased biodiversity (of flora and fauna) or prevention of monoculture (dominance of one species)"], contextNote: "One purpose only; each alternative below carries the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -907,6 +1042,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Adapted to local conditions", marks: 2, accepts: ["good genetics for the future (genetic diversity)","suited to lower input farming systems","increased meat flavour or meat quality","suitable for niche market (cheese or meat) adding value to product","more tolerant to disease compared to commercial breeds","protect cultural heritage or prevent extinction"], contextNote: "One reason only; each alternative below carries the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -922,6 +1067,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "333÷698 x 100÷1", marks: 2, contextNote: "The working: calf's 200-day weight over the dam's weight, as a percentage." },
     { id: "r-2", kind: "point", verbatim: "= 47.7% (48%)", marks: 2, contextNote: "The scheme adds: (If a candidate just gives 47.7% or 48% then award 4m) — a correct answer with no working still takes the full 4." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p10-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p10-i0.png",
@@ -945,6 +1100,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "333 – 50 = 283 days", marks: 2, contextNote: "The weight gained: 200-day weight minus birth weight." },
     { id: "r-2", kind: "point", verbatim: "283÷200 = 1.4 kg ADG", marks: 2, contextNote: "The scheme adds: (If a candidate just gives 1.4kg then award 4m)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p10-i3",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p10-i3.png",
@@ -967,6 +1132,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(39% is less than target efficiency of 42%) ‐ less efficient at producing", marks: 2, accepts: ["cull cow","change bull","poor performance needs to be fully investigated","takes longer to finish","higher cost to finish"], contextNote: "One implication only; each alternative below carries the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -981,6 +1156,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Crop rotation to prevent build‐up of pests", marks: 3, accepts: ["resistant crop varieties so pests won’t stay on crop","biological control (e.g. ladybird eats aphids) to prey on crop pests","increased plant diversity on farm to support predator numbers","indirect control (companion crop, scarecrow) or vermin proof storage","use of certified seed"], contextNote: "One way only, explained — the explanation is part of the same 3-mark point." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -995,6 +1180,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Targeted treatment of cows with high SCC or cull cow", marks: 3, accepts: ["isolate sick animals or good hygiene or ‘all in all out’ policy or closed herd or restrict visitors or vehicles to prevent infection","reduce stocking density which decreases animal contact","good ventilation in animal housing to lessen risk of airborne pathogens","good vaccination programme","breed for genetic merit or EBI health index"], contextNote: "One way only, explained — the explanation is part of the same 3-mark point." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p11-i2",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p11-i2.png",
@@ -1018,6 +1213,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Healthier soil or plants or animals or humans – lack of chemicals added", marks: 2, accepts: ["more environmentally friendly as less chemicals used or preservation of natural resources or decreases nitrate leaching into water sources","lower antibiotic use so less chance of entering the food chain","increased biodiversity as chemicals may kill more than targeted pest","high animal welfare standards ‐ lower stocking density or must have loose straw bedding for animals to lie down","reduces soil erosion due to higher soil surface cover or higher SOM or reduction in intensive tillage practices","no chemical fertiliser required – very expensive or hard to get urea or CAN this year","increased grant incentives"], contextNote: "Any two benefits score, 2 marks each." },
     { id: "r-2", kind: "point", verbatim: "niche market commands higher price", marks: 2, accepts: ["more environmentally friendly as less chemicals used or preservation of natural resources or decreases nitrate leaching into water sources","lower antibiotic use so less chance of entering the food chain","increased biodiversity as chemicals may kill more than targeted pest","high animal welfare standards ‐ lower stocking density or must have loose straw bedding for animals to lie down","reduces soil erosion due to higher soil surface cover or higher SOM or reduction in intensive tillage practices","no chemical fertiliser required – very expensive or hard to get urea or CAN this year","increased grant incentives"], contextNote: "Any two benefits score, 2 marks each." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1033,6 +1238,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "(Smaller rumen) as the calf cannot digest cellulose", marks: 2, accepts: ["rumen is not fully developed","milk (food) goes straight to abomasum (via oesophageal groove and by passes the other 3 stomachs)","rennin (predominant enzyme) allows calf to digest proteins in milk"], contextNote: "Any two differences score, 2 marks each." },
     { id: "r-2", kind: "point", verbatim: "bigger abomasum (70% of digestive tract) (true stomach) digests the milk‐based diet of the calf (most efficiently)", marks: 2, accepts: ["rumen is not fully developed","milk (food) goes straight to abomasum (via oesophageal groove and by passes the other 3 stomachs)","rennin (predominant enzyme) allows calf to digest proteins in milk"], contextNote: "Any two differences score, 2 marks each." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1071,6 +1286,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Majority of feed in Irish system is pasture based in beef or dairy or sheep production system", marks: 3, accepts: ["extended grazing improves sustainability of farming so it is important to have animals out on pasture for as long as possible","important to test supplement in environment where animals will spend majority of time rather than relying on data generated from higher input grain‐based studies","to ensure no negative health aspects for animals","to ensure no negative impact on production"], contextNote: "One reason, developed; each alternative below carries the full 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1085,6 +1310,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "To ensure the safety of food", marks: 3, accepts: ["no residues from the seaweed would pass on in the meat"], contextNote: "One reason; either wording carries the full 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1108,36 +1343,6 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
-    id: "agsci-2022-hl-q10b", topicId: "agsci-3-3-1", conceptId: "planting-a-catch-or-energy-crop",
-    section: "A", questionRef: "2022 HL Q10(b)",
-    stem: "In relation to a named catch or energy crop you have studied answer the questions which follow.",
-    questionText: "Describe the method of planting of your chosen crop.",
-    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "sown into a cultivated(plough and harrow) seedbed", marks: 2, accepts: ["direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed","seeding rate of 4‐5kg/ha or 70 plants per m2","rolled well after sowing to ensure good soil:seed contact","Grassland site spray with total herbicide for controlling perennial weeds","ploughed from January 15th to control perennial weeds or allow frost activity to break down the soil further or help prevent ‘ley’ pests such as the larvae of two moths (the common rustic moth or the ghost moth) attacking the newly established plants","(later in the spring from March to April) the site should be rotovated or power harrowed (immediately prior to planting to improve establishment by aiding good root development, good soil root contact or improved soil aeration)","a planting rate of 16,000 rhizomes per ha or an emergence of 10‐15,000 plants per ha","rhizomes need to be planted at a depth of 5‐10 cm (in March or April)","sown using automatic planting machine","preparing the seedbed min‐till or cultivate (plough and harrow) or one‐pass or strip‐till cultivation or in shallow stubble ploughing to remove residual compaction","sown at a seed rate of between 3.0‐4.0kg/ha (higher seed rates can be used to allow for winter losses or excellent emergence)","sown using a seed drill","25 cm spacing or depth of 20 mm","rolled to improve soil‐seed contact"], contextNote: "Any two planting points score, 2 marks each — but they must belong to the crop you named. The scheme runs separate pools for Kale, Miscanthus and OSR; the rows here are the Kale route." },
-    { id: "r-2", kind: "point", verbatim: "maximum depth of 10mm (to ensure uniform germination)", marks: 2, accepts: ["direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed","seeding rate of 4‐5kg/ha or 70 plants per m2","rolled well after sowing to ensure good soil:seed contact","Grassland site spray with total herbicide for controlling perennial weeds","ploughed from January 15th to control perennial weeds or allow frost activity to break down the soil further or help prevent ‘ley’ pests such as the larvae of two moths (the common rustic moth or the ghost moth) attacking the newly established plants","(later in the spring from March to April) the site should be rotovated or power harrowed (immediately prior to planting to improve establishment by aiding good root development, good soil root contact or improved soil aeration)","a planting rate of 16,000 rhizomes per ha or an emergence of 10‐15,000 plants per ha","rhizomes need to be planted at a depth of 5‐10 cm (in March or April)","sown using automatic planting machine","preparing the seedbed min‐till or cultivate (plough and harrow) or one‐pass or strip‐till cultivation or in shallow stubble ploughing to remove residual compaction","sown at a seed rate of between 3.0‐4.0kg/ha (higher seed rates can be used to allow for winter losses or excellent emergence)","sown using a seed drill","25 cm spacing or depth of 20 mm","rolled to improve soil‐seed contact"], contextNote: "Any two planting points score, 2 marks each — but they must belong to the crop you named. The scheme runs separate pools for Kale, Miscanthus and OSR; the rows here are the Kale route." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
-    id: "agsci-2022-hl-q10c", topicId: "agsci-3-3-1", conceptId: "advantages-of-a-catch-or-energy-crop",
-    section: "A", questionRef: "2022 HL Q10(c)",
-    stem: "In relation to a named catch or energy crop you have studied answer the questions which follow.",
-    questionText: "Outline advantages of sowing your chosen crop.",
-    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "high digestibility", marks: 2, accepts: ["fodder crop","can use used to extend grazing season","out‐winter animals (less housing or slurry storage requirement)","high protein","fast growing crop","renewable source of energy","perennial crop","carbon neutral fuel","reduction in GHG (carbon sinks)","low input crop (fertilisers or herbicides or pesticides)","increased biodiversity","Green manure crop (due to its developed root system to reaches the minerals located in the lower soil layers)","crop can be used for human consumption","retains moisture well","saturates fields with oxygen","provides a take‐all break","leaves high levels of residual nitrogen for subsequent crops","helps control annual or perennial grass weeds","spreads the harvest workload (normally be cut before winter wheat)"], contextNote: "Any two advantages score, 2 marks each — and they must belong to the crop you named. These rows carry the Kale route; the Miscanthus and OSR advantages are in the accepted list." },
-    { id: "r-2", kind: "point", verbatim: "long utilisation period or use of idle land", marks: 2, accepts: ["fodder crop","can use used to extend grazing season","out‐winter animals (less housing or slurry storage requirement)","high protein","fast growing crop","renewable source of energy","perennial crop","carbon neutral fuel","reduction in GHG (carbon sinks)","low input crop (fertilisers or herbicides or pesticides)","increased biodiversity","Green manure crop (due to its developed root system to reaches the minerals located in the lower soil layers)","crop can be used for human consumption","retains moisture well","saturates fields with oxygen","provides a take‐all break","leaves high levels of residual nitrogen for subsequent crops","helps control annual or perennial grass weeds","spreads the harvest workload (normally be cut before winter wheat)"], contextNote: "Any two advantages score, 2 marks each — and they must belong to the crop you named. These rows carry the Kale route; the Miscanthus and OSR advantages are in the accepted list." },
-    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1177,6 +1382,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Active transport ‐ movement of nutrient (ions) from a region of low concentration to high concentration", marks: 2, contextNote: "The scheme adds '(against a concentration gradient)'. *Answer in part (ii) must relate to part (i)." },
     { id: "r-2", kind: "point", verbatim: "requiring energy", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1191,6 +1406,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Two organisms living together with mutual benefit", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1205,6 +1430,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Growth of side shoots", marks: 2, accepts: ["shoots arising from base of the stem"], contextNote: "Either wording carries the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1219,6 +1454,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Phosphorus deficiency", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1234,6 +1479,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "increased soil:root contact", marks: 2, accepts: ["(Hyphae (threads) increase surface area ‐) increased absorption of Phosphorus"], contextNote: "Any two of the scheme's three roles score, 2 marks each." },
     { id: "r-2", kind: "point", verbatim: "ability to solubilise P present in fixed form making it available to plants", marks: 2, accepts: ["(Hyphae (threads) increase surface area ‐) increased absorption of Phosphorus"], contextNote: "Any two of the scheme's three roles score, 2 marks each." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1248,6 +1503,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Crop rotation", marks: 2, accepts: ["polycultures (multi species swards)","min till or decrease compaction","limiting fertiliser (especially Phosphorus)","use soil micro additive","addition of organic fertilisers"], contextNote: "One way only; each alternative below carries the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1262,6 +1527,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The portion of the dry matter in a feed that is digested by animals", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p16-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p16-i1.png",
@@ -1284,6 +1559,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "As the harvest date is delayed after 20 May the DMD decreases (every 13 days)", marks: 4, accepts: ["DMD will drop 5% every 2 weeks or 0.38% per day","or by 15% over 39 days"], contextNote: "*Answers must refer to data in table. Any of the quantified versions below states the same point and carries the full 4 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p16-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p16-i0.png",
@@ -1307,6 +1592,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The higher the DMD of the silage the higher LWG or milk yield", marks: 2, accepts: ["High DMD silage (75%) will increase intake (9.0kg/day) (and decreased concentrate requirement)","shorter finishing period or reach target weight quicker as animals have a higher liveweight gain of 0.83kg per day with 75% DMD silage"], contextNote: "*Answers must refer to data in table (qualitative or quantitative). Any two benefits score, 2 marks each." },
     { id: "r-2", kind: "point", verbatim: "silage of 75% DMD has 0.83kg per day liveweight gain compared to DMD of 70% has 0.66kg per day liveweight gain", marks: 2, accepts: ["High DMD silage (75%) will increase intake (9.0kg/day) (and decreased concentrate requirement)","shorter finishing period or reach target weight quicker as animals have a higher liveweight gain of 0.83kg per day with 75% DMD silage"], contextNote: "*Answers must refer to data in table (qualitative or quantitative). Any two benefits score, 2 marks each." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p16-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p16-i0.png",
@@ -1329,6 +1624,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Chemical fertiliser still present in the grass", marks: 2, accepts: ["nor enough time has elapsed from the chemical fertiliser spreading date","didn’t wait 6 weeks (50 days) after fertiliser spreading to cut grass"], contextNote: "One reason; any of these wordings carries the full 2 marks. The scheme prints 'nor enough time' — the SEC's own typo for 'not enough time'." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1343,6 +1648,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Low leaf : stem ratio", marks: 2, accepts: ["cut early in the morning or on overcast day","poor weather or lack of sunshine in advance of cutting","grass not wilted prior to storage"], contextNote: "One reason; each alternative below carries the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1357,6 +1672,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Sugar provides feed for lactobacillus bacteria to feed off", marks: 4, accepts: ["produce lactic acid","need for fermentation","needed to reduce to pH 3.8 – 4.2"], contextNote: "The scheme's alternatives all describe the same fermentation chain — sugar feeds lactobacillus, which produce lactic acid, which drops the pH. Any one of them carries the full 4 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1371,6 +1696,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Add molasses or enzymes", marks: 2, accepts: ["cut in afternoon or evening on a sunny day","wilt grass (>28% DM) quickly","wait 6 weeks after fertilizing until nitrate levels are lower to cut grass"], contextNote: "One way; each alternative below carries the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4102,6 +4437,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Enabling farmers to determine grass supplies for good grassland management or achieve high pasture utilisation", marks: 4, accepts: ["improving grass quality","enhancing animal performance","matching grass supply with demand or maximising growth rates or manage seasonal variation","increasing stocking rate","composing a fertiliser plan","extended grazing season or increase proportion of grazed grass in the diet"], contextNote: "2(4) = any two advantages at 4 marks each. This row is a slot, not a required answer — any one of the seven advantages the scheme prints scores the 4 marks." },
     { id: "r-2", kind: "alt", verbatim: "improving grass quality", marks: 4, accepts: ["Enabling farmers to determine grass supplies for good grassland management or achieve high pasture utilisation","enhancing animal performance","matching grass supply with demand or maximising growth rates or manage seasonal variation","increasing stocking rate","composing a fertiliser plan","extended grazing season or increase proportion of grazed grass in the diet"], contextNote: "A second, different advantage." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4117,6 +4462,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "10 – 4 = 6cm", marks: 3, contextNote: "Subtract the 4cm residual post-grazing height from the 10cm sward height first — the grass above 4cm is what is available." },
     { id: "r-2", kind: "point", verbatim: "6 x 250 = 1500 kg DM / ha", marks: 3, contextNote: "The scheme adds: (If a candidate just gives 1500 kg DM / ha then award 6m). So a correct final answer with no working still carries both marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4133,6 +4488,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "increased palatability", marks: 4, accepts: ["Increased grass productivity or liveweight gain or milk yield","increased digestibility","increased stocking density","better nitrogen use efficiency or reduced nitrogen requirement","longer growing season or extended grazing","better silage quality","increased protein","less disease or weeds"] },
     { id: "r-3", kind: "alt", verbatim: "increased digestibility", marks: 4, accepts: ["Increased grass productivity or liveweight gain or milk yield","increased palatability","increased stocking density","better nitrogen use efficiency or reduced nitrogen requirement","longer growing season or extended grazing","better silage quality","increased protein","less disease or weeds"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4148,6 +4513,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Two sets of seeds of equal size (or mass) one labelled certified and one labelled uncertified in equal sized area or container", marks: 2, contextNote: "The scheme heads this 'Labelled diagram should contain the following' — it is the element the drawing itself must show." },
     { id: "r-2", kind: "alt", verbatim: "observe both sets of plants until they reached inflorescence (maturity)", marks: 2, accepts: ["both sets of seeds are all given same amount of water or nutrients or seedbed for both was prepared in the same way","note height of plants every 2 weeks (or period of growth) or look at colour of plants (is the crop a good colour or are there patches of off‐colour) or size and shape (is crop all tall and thick as each other) or look at crop as single plants (compare stem and roots of good and poor plants)"], contextNote: "The scheme calls the second mark 'Any other relevant point' and prints these examples, so any other valid detail of the trial scores here.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4163,6 +4538,17 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Less weeds ‐ less chemical herbicides required", marks: 2, accepts: ["higher yields or genetic improvement – less land required for produce or more nutrient absorption (less leaching)","lower seeding rate required – produce higher yields or less production required","disease or pest resistance – less chemical pesticide required","reduce biodiversity due to monoculture"], contextNote: "Each effect must be an effect ON SUSTAINABILITY, not just a benefit — the scheme pairs every cause with its environmental consequence." },
     { id: "r-2", kind: "alt", verbatim: "disease or pest resistance – less chemical pesticide required", marks: 2, accepts: ["Less weeds ‐ less chemical herbicides required","higher yields or genetic improvement – less land required for produce or more nutrient absorption (less leaching)","lower seeding rate required – produce higher yields or less production required","reduce biodiversity due to monoculture"], contextNote: "The scheme also credits a NEGATIVE effect — 'reduce biodiversity due to monoculture' — so a student who argued against certified seed here was not wrong." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                21,
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4178,6 +4564,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Laxative to clear out the digestive system", marks: 5, accepts: ["antibodies to provide immunity to diseases (present on farms)","warms up calf to increase body temperature after birth","provides energy for energy boost","high in protein for increased growth","high in fat for insulation or vitamins for body processes"], contextNote: "2(5) = two reasons at 5 marks each. 'Using scientific reasons' means the reason has to be stated, not just the property — 'antibodies' alone is not the same answer as 'antibodies to provide immunity to diseases'." },
     { id: "r-2", kind: "alt", verbatim: "antibodies to provide immunity to diseases (present on farms)", marks: 5, accepts: ["Laxative to clear out the digestive system","warms up calf to increase body temperature after birth","provides energy for energy boost","high in protein for increased growth","high in fat for insulation or vitamins for body processes"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4192,6 +4588,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Colostrum quality decreases (3.7%) every hour after birth", marks: 2, accepts: ["a calf’s ability to absorb antibodies directly into its bloodstream decreases with time","maximum absorption of antibodies occurs in this time"], contextNote: "A plain 2-mark tariff for one explanation, so any one of these wordings carries the whole mark. The two ideas are different: the colostrum itself deteriorates, AND the calf's gut stops absorbing whole antibodies." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4206,6 +4612,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Doesn’t contain antibodies to diseases present on the farm", marks: 3, contextNote: "The scheme prints exactly one answer here. The point is farm-specific immunity: the dam has met the pathogens on THIS farm, so her antibodies match them." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4220,6 +4636,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Prevent bacteria multiplying (doubles every 20 mins)", marks: 3, accepts: ["antibody levels decrease","prevent bacteria entering udder or mastitis","prevent microbial infection in calf"], contextNote: "One explanation for the full 3 marks; the solidus separates four wordings of the same point, not four separate marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4234,6 +4660,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Quality of the colostrum is very poor – it wouldn’t have all the necessary antibodies or provide the calf with good immunity", marks: 4, accepts: ["get good quality colostrum from another freshly calved cow (on the farm)","feed calf good quality frozen colostrum from farm (allowed to defrost naturally or not in microwave) to ensure good immunity to diseases on the farm","feed dried colostrum to calf"], contextNote: "25 mg/ml sits below the 30 mg/ml 'Poor' band, so the answer must read the data first and then act on it. The alternatives below are the actions the scheme credits instead." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p24-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p24-i1.png",
@@ -4258,6 +4694,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B = 6 ‐ 7%", marks: 2, contextNote: "B is the fat % of COLOSTRUM (first milking) — roughly double whole milk's 3.8%." },
     { id: "r-3", kind: "point", verbatim: "C = 14 ‐ 15%", marks: 2, contextNote: "C is the protein % of COLOSTRUM — far above whole milk's 3.3%, because of the immunoglobulins." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p24-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p24-i0.png",
@@ -4281,6 +4727,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Increased energy to support metabolism – stronger calf", marks: 4, accepts: ["higher protein levels for increased growth rate or ADG or less concentrates required","increased immunoglobulins for better immunity or increased immunity – good animal health","better development of digestive tract","more nutrition (than powdered milk)","would be wasted otherwise","no need to purchase powdered milk"], contextNote: "2(4) = two advantages at 4 marks each. 'Briefly explain' means the nutrient AND what it does for the heifer — the scheme pairs them every time." },
     { id: "r-2", kind: "alt", verbatim: "higher protein levels for increased growth rate or ADG or less concentrates required", marks: 4, accepts: ["Increased energy to support metabolism – stronger calf","increased immunoglobulins for better immunity or increased immunity – good animal health","better development of digestive tract","more nutrition (than powdered milk)","would be wasted otherwise","no need to purchase powdered milk"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4296,6 +4752,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Flock 1 – medium level of eggs – benefit from being dosed", marks: 3, contextNote: "430 eggs per gram falls in the Medium band (250 – 750). The mark needs the band read off the data AND the decision that follows from it." },
     { id: "r-2", kind: "point", verbatim: "Flock 2 – low level of eggs ‐ no need to dose", marks: 3, contextNote: "220 eggs per gram is below 250, so it is Low — and the creditable answer is to NOT dose. Dosing anyway is what drives resistance." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4310,6 +4776,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Parasites may have built up a resistance to dose ‐ change dose (anthelmintic) type", marks: 3, accepts: ["move to clean pasture after dosing to prevent reinfection","put sheep on a multi‐species sward (chicory is an anthelmintic)"], contextNote: "A plain 3 for one piece of advice. The diagnosis is resistance; the scheme then prints three alternative remedies, any one of which completes the answer." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4325,20 +4801,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Help to determine the need to treat (dose) animals or prevents blanket treatment of animals with chemicals", marks: null, accepts: ["reduce chemical use on farms","test efficacy of a treatment (resistance)","information on amount of contamination in pasture","reduces the risk of chemicals entering the food chain so only dosed if required","reduce cost of expensive worm drenches","identifies parasite present or use targeted dose (to prevent resistance)"], contextNote: "The scheme awards 4 for the first correct advantage it meets and 1 for the second, so a point's value depends on the order it was written in, not on which advantage it is. Any one of the seven pooled advantages scores here." },
     { id: "r-2", kind: "alt", verbatim: "reduce chemical use on farms", marks: null, accepts: ["Help to determine the need to treat (dose) animals or prevents blanket treatment of animals with chemicals","test efficacy of a treatment (resistance)","information on amount of contamination in pasture","reduces the risk of chemicals entering the food chain so only dosed if required","reduce cost of expensive worm drenches","identifies parasite present or use targeted dose (to prevent resistance)"], contextNote: "A second, different advantage." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
-    id: "agsci-2022-hl-q15ai", topicId: "agsci-4-3-2", conceptId: "oestrus-synchronisation-protocols",
-    section: "B", questionRef: "2022 HL Q15(a)(i)",
-    stem: "Section B, Question 15, part (a). The paper asks the candidate to name the animal they studied before describing the protocol.",
-    questionText: "Animals maybe synchronised at breeding. Describe how this is carried out for a named animal you have studied.",
-    tariffModel: {"kind":"bestNofParts","notation":"2(3)","answer":2,"ofParts":10,"perPart":3}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Flush ewes on good quality pasture or tupping dose // place progesterone sponge in vagina of ewe // Allow heifers to mate to natural heats for 7 days // observe heats, then if not in heat give prostaglandin (PG) injection // Give heifers first shot of PG 13 days before start of breeding season // another shot 11 days later // Progesterone (P4) based device (PRID or CEDAR) is placed in vagina of animal for 6 – 10 days // PG injection is given day prior to removal // P4 is given to sows for 14 – 18 days prior to insemination // GnRH day prior to service (AI)", marks: null, group: {"claimMax":2,"perOption":3,"options":["Flush ewes on good quality pasture or tupping dose","place progesterone sponge in vagina of ewe","Allow heifers to mate to natural heats for 7 days","observe heats, then if not in heat give prostaglandin (PG) injection","Give heifers first shot of PG 13 days before start of breeding season","another shot 11 days later","Progesterone (P4) based device (PRID or CEDAR) is placed in vagina of animal for 6 – 10 days","PG injection is given day prior to removal","P4 is given to sows for 14 – 18 days prior to insemination","GnRH day prior to service (AI)"]} },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4353,6 +4825,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Beware of bull or ram or boar or cows with calves", marks: 3, accepts: ["be careful when handling the cow or sow for insemination","wear gloves when inseminating","use animal handling facilities"], contextNote: "One precaution for the full 3 marks. The solidus separates four wordings of the same single mark, not four marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4368,6 +4850,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Choose the sex of the calf", marks: 4, accepts: ["increase in better dairy beef production ( less Jersey x bull calves)","decrease GHG from beef (finish < 24 months)","increased EBI of herd","(accelerate) herd expansion or less unwanted bull calves","less calving difficulty (with heifer calves)"], contextNote: "2(4) = two advantages at 4 marks each. Any one of the six pooled advantages fills a slot." },
     { id: "r-2", kind: "alt", verbatim: "increase in better dairy beef production ( less Jersey x bull calves)", marks: 4, accepts: ["Choose the sex of the calf","decrease GHG from beef (finish < 24 months)","increased EBI of herd","(accelerate) herd expansion or less unwanted bull calves","less calving difficulty (with heifer calves)"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4383,6 +4875,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "pH = 6.2 – 7.0", marks: 3, contextNote: "A range, not a single figure — the rumen microbes need close to neutral." },
     { id: "r-2", kind: "point", verbatim: "Prevent acidosis (especially in high concentrate diets)", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p28-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p28-i0.png",
@@ -4405,6 +4907,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Indicates when cow is calving and alerts farmer", marks: 3, contextNote: "The scheme prints one answer, and it has two halves — the sensor detects calving AND it tells the farmer. 'Detects calving' on its own is only half of what is printed." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4420,6 +4932,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Duration of oestrus = 18 – 24 hrs", marks: 3, contextNote: "Oestrus (standing heat), not the oestrous cycle — the cycle is about 21 days and is a different number." },
     { id: "r-2", kind: "point", verbatim: "12 hours after onset of oestrus (am:pm rule)", marks: 3, contextNote: "The am:pm rule: a cow seen in heat in the morning is served that evening, and one seen in the evening is served the next morning." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4435,6 +4957,17 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Identify cows with high cell count (mastitis)", marks: 3, accepts: ["allows for early detection of infection or to treat infected cows early to prevent it spreading to others","allows for detection of sub‐clinical mastitis","provides evidence of cow with high cell count for farmer to administer dry cow antibiotics","measure milk solids or yield or fat or protein or to identify productivity of cow"], contextNote: "2(3) = two advantages at 3 marks each. Any one of the five pooled advantages fills a slot." },
     { id: "r-2", kind: "alt", verbatim: "allows for early detection of infection or to treat infected cows early to prevent it spreading to others", marks: 3, accepts: ["Identify cows with high cell count (mastitis)","allows for detection of sub‐clinical mastitis","provides evidence of cow with high cell count for farmer to administer dry cow antibiotics","measure milk solids or yield or fat or protein or to identify productivity of cow"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28,
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4451,6 +4984,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "carbon dioxide or CO2", marks: 3, accepts: ["Ammonia or NH3","nitrous oxide or N2O","methane or CH4","carbon monoxide or CO","hydrogen sulphide or H2S"] },
     { id: "r-3", kind: "alt", verbatim: "nitrous oxide or N2O", marks: 3, accepts: ["Ammonia or NH3","carbon dioxide or CO2","methane or CH4","carbon monoxide or CO","hydrogen sulphide or H2S"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4465,6 +5008,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Rotating brushes – allow animals to scratch", marks: 3, accepts: ["fans to improve ventilation in house","automatic feeding systems to control feed dispensing or identify and alert farmer if animal is not eating and maybe sick","ability to feed wet feed to pigs – increase intake or improve digestibility","automatic scrappers to remove dung from the passages on a regular basis","temperature sensors in pig housing to ensure houses are kept at critical temperture for pigs to thrive"], contextNote: "One technology for the full 3 marks, and each printed answer is a PAIR — the technology plus the welfare benefit it delivers. Naming the brush without saying what it does for the animal is only half the printed point.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4481,6 +5034,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "DV = milk production (milk yield or % fat or % protein)", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "Control = post grazing height", marks: 3, accepts: ["same stocking rate or same number of cows per treatment","same level of concentrate feeding","milk yield, % fat and % protein was recorded for each cow"], contextNote: "Any one of the four controls printed by the scheme scores the 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4495,6 +5058,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Increase number of cows per treatment", marks: 3, accepts: ["use (calibrated) scales to measure concentrates or automatic feeding system","milk record regularly or computerised yield recording for each cow for accurate measurement","grass measuring (plate meter) and use of computer package to analyse data (Pasture base)","same breed of cow used"], contextNote: "One way only is asked for, and the scheme prints a single 3. The five solidus-separated items are alternative ways of earning that same 3 — not five separate points." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4509,6 +5082,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Yes ‐ as the investigation was carried out over a long period of time (a year)", marks: 3, accepts: ["study could be repeated","controlled variables were used"], contextNote: "One 3-mark unit: the verdict plus one reason. The scheme's line continues 'or study could be repeated or controlled variables were used' — those are alternative reasons, carried here in accepts." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4523,6 +5106,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Treatment 3", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p30-i3",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p30-i3.png",
@@ -4546,6 +5139,17 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Treatment 2", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Highest amount of fat and protein (A + B – C)", marks: 3, contextNote: "'(A + B – C)' is the scheme's own shorthand for the A+B-C milk pricing system, where the A and B components pay for kg of fat and protein and C is the processing charge." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30,
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p30-i3",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p30-i3.png",
@@ -4568,6 +5172,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Efficient use or spreading (spreader calibrated properly) or use of GPS when spreading or named technology to identify requirement", marks: 3, accepts: ["using low emission slurry spreading (LESS) or spread slurry or manure","grass measuring (budgeting) (and if growth surplus to demand reduced chemical N)","correct soil fertility or pH ( N use efficiency is great in soils with optimum fertility)","reseed poorly performing swards ( better N use efficiency)"], contextNote: "One way is asked for and one 3 is printed. The five solidus-separated items are alternative ways of earning that same 3." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4584,23 +5198,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "cut a (large pinkish) nodule off root", marks: 4, accepts: ["any named aseptic technique","wash in alcohol","rinse in sterile water (cooled boiled water)","crush nodule using (sterile) pestle and mortar or sterile glass rod","sterilise the inoculating loop in bunsen flame (or aseptic technique)( until it glows red and allow to cool)","using the loop add some of the root nodule to surface of nutrient agar plate and streak","incubate (upside down) for week at 20‐30oC","white colonies of bacteria"] },
     { id: "r-3", kind: "point", verbatim: "sterilise surface of root with Milton (mild bleach)", marks: 4, accepts: ["any named aseptic technique","wash in alcohol","rinse in sterile water (cooled boiled water)","crush nodule using (sterile) pestle and mortar or sterile glass rod","sterilise the inoculating loop in bunsen flame (or aseptic technique)( until it glows red and allow to cool)","using the loop add some of the root nodule to surface of nutrient agar plate and streak","incubate (upside down) for week at 20‐30oC","white colonies of bacteria"] },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
-    id: "agsci-2022-hl-q17ai", topicId: "agsci-2-2-3", conceptId: "earthworm-activity-in-soil",
-    section: "B", questionRef: "2022 HL Q17(a)(i)",
-    stem: "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms.",
-    questionText: "Describe using a labelled diagram the activity of earthworms in a soil.",
-    tariffModel: {"kind":"fixed","notation":"D ‐ 6, 3, 0 + L ‐ 3(1)"}, totalMarks: 9,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Diagram: A number of layers, presence of organic matter, earthworms", marks: 6, contextNote: "The marks column reads 'D ‐ 6, 3, 0 (showing layers)' — the diagram is banded at 6, 3 or 0. The scheme's sentence continues past the marks column with 'creating channels or mixing layers (indication of activity)', so a full-mark diagram shows the layers, the organic matter, the earthworms AND the channels or mixing." },
-    { id: "r-2", kind: "point", verbatim: "Layer of organic matter (leaf litter) on top or decomposed organic matter", marks: 1, accepts: ["layer of chalk or layer of compost or layer of sand or layer of gravel","mixing layers","wormery or soil profile"], contextNote: "The marks column reads 'Labels ‐ 3(1)': any three labelled parts at 1 mark each. Six acceptable labels are printed." },
-    { id: "r-3", kind: "point", verbatim: "earthworms", marks: 1, accepts: ["layer of chalk or layer of compost or layer of sand or layer of gravel","mixing layers","wormery or soil profile"] },
-    { id: "r-4", kind: "point", verbatim: "create channels", marks: 1, accepts: ["layer of chalk or layer of compost or layer of sand or layer of gravel","mixing layers","wormery or soil profile"] },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4616,6 +5223,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Creating channels for increased drainage", marks: 4, accepts: ["mixing layers leads to increased fertility or reduced compaction or increased nutrient availability","waste (castings) adds nutrients","castings form soil aggregates (by combining minerals and organic matter) or improve the soil structure","add organic matter"], contextNote: "2(4): any TWO of the six printed benefits score, 4 marks each." },
     { id: "r-2", kind: "point", verbatim: "channels increase aeration", marks: 4, accepts: ["mixing layers leads to increased fertility or reduced compaction or increased nutrient availability","waste (castings) adds nutrients","castings form soil aggregates (by combining minerals and organic matter) or improve the soil structure","add organic matter"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4632,6 +5249,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Average number of earthworms per quadrat = 28 + 45 + 23 + 19 = 115 ÷ 4 = 28.75", marks: 2, accepts: ["Average number of earthworms per m2 = 115  or 17444 ÷ 0.25 = 69,776 quadrats"], contextNote: "The scheme prints a second route with 'or': work in earthworms per m2 (115) or convert the field to 69,776 quadrats. Either route earns this mark." },
     { id: "r-3", kind: "point", verbatim: "Total number of earthworms = 115 x 17444 = 2,006,060", marks: 2, accepts: ["total 69,776 x 28.75 = 2,006,060"], contextNote: "The scheme adds: '(If a candidate just gives 2,006,060 earthworms then award 6m)' — the correct final answer on its own takes all six marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p34-i2",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p34-i2.png",
@@ -4654,6 +5281,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Area was close to dung pad or higher organic matter", marks: 3, accepts: ["area under clover"], contextNote: "One reason, one 3. The solidus separates two acceptable reasons; either alone scores the full 3." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p34-i2",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p34-i2.png",
@@ -4677,21 +5314,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Continually produce offspring with higher yields", marks: 2, accepts: ["more food produced with same amount of resources"], contextNote: "2(2): any TWO of the three printed reasons score, 2 marks each." },
     { id: "r-2", kind: "point", verbatim: "produce more of desired characteristics", marks: 2, accepts: ["more food produced with same amount of resources"] },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
-    id: "agsci-2022-hl-q17bii", topicId: "agsci-3-1", conceptId: "genotype-and-hybrid-vigour",
-    section: "B", questionRef: "2022 HL Q17(b)(ii)",
-    stem: "Plant breeding is the science of changing the traits of plants in order to produce desired characteristics in a direction favourable to peoples' needs. Scientists work on selecting the high yielding plants and breeding these. In part (ii) the paper underlines two terms — genotype and hybrid vigour — and prints a separate answer box for each, headed 'Genotype:' and 'Hybrid vigour:'.",
-    questionText: "Scientists genotype the plants and cross two high yielding plants to achieve good hybrid vigour. Explain the underlined terms.",
-    tariffModel: {"kind":"fixed","notation":"3 + 3"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Genotype genetic make‐up of an organism", marks: 3, contextNote: "Transcribed exactly as the scheme prints it; the dash between the term and its definition is lost in the PDF extraction." },
-    { id: "r-2", kind: "point", verbatim: "Hybrid vigour ‐ a cross‐bred individual to shows qualities superior", marks: 3, contextNote: "The scheme's sentence runs on to the next line and finishes '...to those of both parents'. The marks column '3' is printed between the two halves in the extracted text, so only the first half is quoted here." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4707,6 +5339,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "gate", verbatim: "Bazooka*", marks: 4, contextNote: "The SEC asterisk means only this exact variety scores; naming a second variety alongside it is a surplus wrong answer and cancels this row." },
     { id: "r-2", kind: "point", verbatim: "Higher protein content", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p35-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p35-i0.png",
@@ -4730,6 +5372,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Remove anther (from the male spikelet) for pollination (or male part of flower)", marks: 3, accepts: ["transfer pollen to stigma","using a sterile swab(brush)","cover female plant to prevent cross pollination or remove stamens to prevent self‐pollination","ensure both plants are in bloom at the same time"], contextNote: "2(3): any TWO of the six printed steps score, 3 marks each." },
     { id: "r-2", kind: "point", verbatim: "collect pollen from anther", marks: 3, accepts: ["transfer pollen to stigma","using a sterile swab(brush)","cover female plant to prevent cross pollination or remove stamens to prevent self‐pollination","ensure both plants are in bloom at the same time"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4795,6 +5447,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Animal Health – better health of the animal results in requirement for less antibiotic use", marks: null, accepts: ["benefit of less antibiotics ending up in food chain","animal health plan to minimise use of antibiotics or medications","routine testing to prevent transfer of disease (e.g. zoonotic)"] },
     { id: "r-4", kind: "point", verbatim: "Traceability – farm to fork to allow recall of product", marks: null, accepts: ["it is important that all animals are able to be traced back to original farm where animal health records are stored","to identify origin of food in case of recall"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p37-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p37-i0.png",
@@ -4820,6 +5482,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "Tillage enterprise: mintill reduces the number of passes on the land reducing energy (diesel) requirement", marks: 4, accepts: ["crop rotation or break crop reduces pests or diseases or weeds so less spraying requirement or less energy or lower emissions"], contextNote: "The tillage pool holds three ways; any two of them score 4 marks each.", route: "tillage-enterprise" },
     { id: "r-4", kind: "alt", verbatim: "energy crops provide alternative sources of energy that are more environmentally friendly and reduce emissions", marks: 4, accepts: ["crop rotation or break crop reduces pests or diseases or weeds so less spraying requirement or less energy or lower emissions"], route: "tillage-enterprise" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4834,6 +5506,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Weed killer used before you see weeds to prevent them growing", marks: 3, accepts: ["prevents germinating weed seedlings from becoming established","protective barrier contains chemical the inhibit growth of plants"], contextNote: "One 3-mark explanation. The three solidus-separated wordings are alternatives — any one alone scores the 3." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p38-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p38-i0.png",
@@ -4857,6 +5539,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "gate", verbatim: "Cattle rearing*", marks: 4, contextNote: "The SEC asterisk means only this exact enterprise scores; naming a second enterprise alongside it is a surplus wrong answer and cancels this row." },
     { id: "r-2", kind: "point", verbatim: "157% of income comes from direct payment", marks: 3, accepts: ["heavily dependent on market price at the time of selling","low margins in system","high input – fertiliser or concentrates or stock","small scale","long periods of time with no income"], contextNote: "One reason for 3 marks; the six solidus-separated reasons are alternatives, any one of which scores." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                40
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4872,6 +5564,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "gate", verbatim: "Dairy*", marks: 4, contextNote: "The SEC asterisk means only this exact enterprise scores; naming a second enterprise alongside it is a surplus wrong answer and cancels this row." },
     { id: "r-2", kind: "point", verbatim: "28% of income dervied from direct payment", marks: 3, accepts: ["high price per litre of milk","large scale","regular income"], contextNote: "'dervied' is the scheme's own typo, kept as printed. One reason for 3 marks; the four solidus-separated reasons are alternatives." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                40
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7837,6 +8539,16 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "E — Limousine", marks: 1, contextNote: "Photograph E, the tan beef cattle. The scheme's spelling is 'Limousine'; the breed is normally written Limousin. Both name the same animal." },
     { id: "r-6", kind: "point", verbatim: "F — (Holstein) Friesian", marks: 1, contextNote: "Photograph F, the black-and-white dairy cow. 'Holstein' is bracketed, so 'Friesian' alone takes the mark." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p05-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p05-i0.png",
@@ -7869,6 +8581,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B — Chicory", marks: 1, contextNote: "Photograph B, the pale blue flowers. Chicory is the odd one out here - a deep-rooting herb sown in multi-species swards, not a grass." },
     { id: "r-3", kind: "point", verbatim: "C — Cocksfoot", marks: 1, contextNote: "Photograph C, the branched, clumped seed head on fine stems." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p20-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p20-i0.png",
@@ -7898,6 +8620,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "board or concrete walls ensuring pen is draft free", marks: 3, accepts: ["Space sheeting or high roof ‐ good airflow (ventilation)","(clean) roof lights ‐ plenty of natural light","large area with adequate lying space","clean bedding or smooth surfaces for good hygiene or disease reduction","long feed barrier ‐ adequate feeding space"], contextNote: "A second, different aspect. Ventilation without draughts is the pairing the picture is built around: air moves in high through the spaced boarding, while the solid lower wall keeps it off the lying calves." },
     { id: "r-3", kind: "alt", verbatim: "(clean) roof lights ‐ plenty of natural light", marks: 3, accepts: ["Space sheeting or high roof ‐ good airflow (ventilation)","board or concrete walls ensuring pen is draft free","large area with adequate lying space","clean bedding or smooth surfaces for good hygiene or disease reduction","long feed barrier ‐ adequate feeding space"], contextNote: "A third, different aspect. 'Clean' is bracketed, so it is not required - naming the roof lights and giving natural light as the reason is enough." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2022-HL-paper-p25-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p25-i1.png",
@@ -8596,19 +9328,6 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"Suffolk","askedInThisQuestion":true},{"letter":"B","meaning":"Shorthorn","askedInThisQuestion":true},{"letter":"C","meaning":"Belgian blue","askedInThisQuestion":true},{"letter":"D","meaning":"Texel","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
-    id: "agsci-2022-hl-q16ci", topicId: "agsci-3-2", conceptId: "named-grazing-systems",
-    section: "B", questionRef: "2022 HL Q16(c)(i)",
-    questionText: "Describe using a labelled diagram a named grazing system that could have been used to manage the swards in the trial in part (a).",
-    tariffModel: {"kind":"fixed","notation":"3 for naming one, and 1 each thereafter"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Named grazing system – Paddock (rotational)", marks: 3 },
-    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -19505,6 +20224,628 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-4-3-3"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q2b", topicId: "agsci-4-3-3", conceptId: "selecting-a-female-replacement-for-breeding",
+    section: "A", questionRef: "2022 HL Q2(b)",
+    stem: "A farmer was looking to select a female replacement animal for breeding for his chosen animal enterprise. (The paper asks you to write your named animal enterprise first.)",
+    questionText: "Describe characteristics he would be looking for when selecting the animal.",
+    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Triangle shape (dairy) or block shape (beef) or smooth shoulders and straight backs (sheep) or long body with thick well‐muscled hams (to allow for weight of boar at breeding) (pigs) / moderate frame size to reduce amount of feed required to maintain body condition and fertility (increase sustainability of farm) / good pelvic width to reduce incidence of dystocia (difficult calving – dairy or beef)) / long body or not too heavily muscled (pigs) / mature vulva (pigs) / Docile (quiet temperament) for easy management / identified at birth (with tags) as lambing without difficulty or up suckling quickly / No signs of discharge or thriving / longevity to improve sustainability of enterprise / not a twin to a male calf (freemartin) as her reproductive tract may not have developed / good mouth – not over or undershot / tail docked properly (not too long or short) reduce incidence of flystrike or frost damage to vulva (ewe) / not too much muscle – cause difficult farrowing (gilt) / For increased fertility ‐ 60% of mature weight at mating or 300 ‐350 kg (dairy) or 370 ‐ 420kg (beef) at mating at 15 months of age to ensure she has reached puberty or will reach max body size when older (cows don’t reach mature weight until they are 5 years old)(dairy) or liveweight of 45kg (sheep) or 130 – 150 kg at 240 days for breeding(pigs) / time of year heifer was born – need to be 2 years at the start of the calving season (early born heifers) (as heifers should calve at the start of the calving season to ensure compact calving herds) / ewe lamb is at least 10 – 12 months of age for first breeding or at least 7 – 8 months of age to ensure puberty has been reached (pigs) / Not pendulous to ensure less mastitis or less udder injury or greater longevity or young can suckle easily or easy of cluster attachment (dairy) / 4 well placed teats to ensure clusters attach or fit correctly / 4 (cows) or 2 (sheep) or 12 (pigs) well placed teats to allow for ease of suckling / free of pin (underdeveloped) nipples or free of inverted nipples (as they take up space and) do not allow milk to flow / presence of good milk vein (dairy) / No sign of lameness or foot rot (sheep only) as can reduce milk yield or animal won’t thrive / strong straight legs with large even sized claws to avoid lameness (pigs only) / walk straight / Records of parents to determine her milking potential or daughters of high yielding cows (dairy) / daughters of low producing Friesian cows (or quarter bred Friesian) X good conformation beef bull to ensure good milk supply (not too much milk) for good growth rate of the calf (beef) / beef traits (conformation) and good growth potential from sire or Simmental breed can be used to maintain milk yield or good fertility to ensure a calf per cow per year / daughter of good mother or good mothering ability (good heritability) (sheep or pigs) / daughter of ewe with high milk yield (good heritability) / Daughters of top cows in herd and sired by bulls with strong maternal traits (genomically selected) / genotyped where parentage is verified and reduce risk of future inbreeding / high EBI – improved profitability or lower GHG emissions / genomically selected – the DNA of the heifer has been analysed and milk performance predicted / Genotyped where parentage is verified and reduce risk of future inbreeding / good beef merit (high EBI) to profitability and reduce GHG emissions / cross bred for hybrid vigour (best characteristics of both breeds) or pure bred heifer bred from a maternal bull (genotype) / daughters of top performing cows in herd (produce good quality calf with high weight gain from birth to weaning, fertile cows & have a tight calving interval, docile and easy calving) / Not a daughter of a ewe prone to prolapse / high genetic merit – perform well / was a twin or triplet for increased fertility / bred from 5 star ram / Cross bred gilt to allow for hybrid vigour (criss‐cross breeding) / daughter of good producing sow", marks: 6, contextNote: "Two characteristics for the enterprise you named, 3 marks each (2(3)). In order the options are the scheme's good body conformation, temperament, good health, age and weight, good udder, good feet, milk production, genetics, dairy heifer, genetics, beef heifer, genetics, ewe, genetics, gilt.", group: {"claimMax":2,"perOption":3,"options":["Triangle shape (dairy) or block shape (beef) or smooth shoulders and straight backs (sheep) or long body with thick well‐muscled hams (to allow for weight of boar at breeding) (pigs) / moderate frame size to reduce amount of feed required to maintain body condition and fertility (increase sustainability of farm) / good pelvic width to reduce incidence of dystocia (difficult calving – dairy or beef)) / long body or not too heavily muscled (pigs) / mature vulva (pigs)","Docile (quiet temperament) for easy management / identified at birth (with tags) as lambing without difficulty or up suckling quickly","No signs of discharge or thriving / longevity to improve sustainability of enterprise / not a twin to a male calf (freemartin) as her reproductive tract may not have developed / good mouth – not over or undershot / tail docked properly (not too long or short) reduce incidence of flystrike or frost damage to vulva (ewe) / not too much muscle – cause difficult farrowing (gilt)","For increased fertility ‐ 60% of mature weight at mating or 300 ‐350 kg (dairy) or 370 ‐ 420kg (beef) at mating at 15 months of age to ensure she has reached puberty or will reach max body size when older (cows don’t reach mature weight until they are 5 years old)(dairy) or liveweight of 45kg (sheep) or 130 – 150 kg at 240 days for breeding(pigs) / time of year heifer was born – need to be 2 years at the start of the calving season (early born heifers) (as heifers should calve at the start of the calving season to ensure compact calving herds) / ewe lamb is at least 10 – 12 months of age for first breeding or at least 7 – 8 months of age to ensure puberty has been reached (pigs)","Not pendulous to ensure less mastitis or less udder injury or greater longevity or young can suckle easily or easy of cluster attachment (dairy) / 4 well placed teats to ensure clusters attach or fit correctly / 4 (cows) or 2 (sheep) or 12 (pigs) well placed teats to allow for ease of suckling / free of pin (underdeveloped) nipples or free of inverted nipples (as they take up space and) do not allow milk to flow / presence of good milk vein (dairy)","No sign of lameness or foot rot (sheep only) as can reduce milk yield or animal won’t thrive / strong straight legs with large even sized claws to avoid lameness (pigs only) / walk straight","Records of parents to determine her milking potential or daughters of high yielding cows (dairy) / daughters of low producing Friesian cows (or quarter bred Friesian) X good conformation beef bull to ensure good milk supply (not too much milk) for good growth rate of the calf (beef) / beef traits (conformation) and good growth potential from sire or Simmental breed can be used to maintain milk yield or good fertility to ensure a calf per cow per year / daughter of good mother or good mothering ability (good heritability) (sheep or pigs) / daughter of ewe with high milk yield (good heritability)","Daughters of top cows in herd and sired by bulls with strong maternal traits (genomically selected) / genotyped where parentage is verified and reduce risk of future inbreeding / high EBI – improved profitability or lower GHG emissions / genomically selected – the DNA of the heifer has been analysed and milk performance predicted","Genotyped where parentage is verified and reduce risk of future inbreeding / good beef merit (high EBI) to profitability and reduce GHG emissions / cross bred for hybrid vigour (best characteristics of both breeds) or pure bred heifer bred from a maternal bull (genotype) / daughters of top performing cows in herd (produce good quality calf with high weight gain from birth to weaning, fertile cows & have a tight calving interval, docile and easy calving)","Not a daughter of a ewe prone to prolapse / high genetic merit – perform well / was a twin or triplet for increased fertility / bred from 5 star ram","Cross bred gilt to allow for hybrid vigour (criss‐cross breeding) / daughter of good producing sow"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q2(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-4-1"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q9ai", topicId: "agsci-4-1", conceptId: "drawing-a-calfs-stomach",
+    section: "A", questionRef: "2022 HL Q9(a)(i)",
+    stem: "Answer either (a) or (b).",
+    questionText: "Draw a labelled diagram of a calf’s stomach in its first week of life.",
+    tariffModel: {"kind":"questionTotal","notation":"D = 3, 2, 0 + L = 3(1)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Candidates diagram must clearly show all four chambers, the abomasum being the largest stomach in comparison to others, especially the rumen or oesophageal groove directing the milk straight to the abomasum", marks: null, contextNote: "Drawing, D = 3, 2, 0." },
+    { id: "r-2", kind: "point", verbatim: "Any three labels", marks: null, contextNote: "Labels, L = 3(1): any three correct labels, 1 mark each." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q9(a)(i)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-3-3-1"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q10b", topicId: "agsci-3-3-1", conceptId: "planting-a-catch-or-energy-crop",
+    section: "A", questionRef: "2022 HL Q10(b)",
+    stem: "In relation to a named catch or energy crop you have studied answer the questions which follow.",
+    questionText: "Describe the method of planting of your chosen crop.",
+    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "sown into a cultivated(plough and harrow) seedbed / direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed / maximum depth of 10mm (to ensure uniform germination) / seeding rate of 4‐5kg/ha or 70 plants per m2 / rolled well after sowing to ensure good soil:seed contact", marks: 4, contextNote: "Kale: any two planting points, 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["sown into a cultivated(plough and harrow) seedbed","direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed","maximum depth of 10mm (to ensure uniform germination)","seeding rate of 4‐5kg/ha or 70 plants per m2","rolled well after sowing to ensure good soil:seed contact"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "kale",
+                "label": "Kale",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "sown into a cultivated(plough and harrow) seedbed / direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed / maximum depth of 10mm (to ensure uniform germination) / seeding rate of 4‐5kg/ha or 70 plants per m2 / rolled well after sowing to ensure good soil:seed contact",
+                            "marks": 4,
+                            "contextNote": "Kale: any two planting points, 2 marks each (2(2)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "sown into a cultivated(plough and harrow) seedbed",
+                                        "direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed",
+                                        "maximum depth of 10mm (to ensure uniform germination)",
+                                        "seeding rate of 4‐5kg/ha or 70 plants per m2",
+                                        "rolled well after sowing to ensure good soil:seed contact"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "miscanthus",
+                "label": "Miscanthus",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Grassland site spray with total herbicide for controlling perennial weeds / ploughed from January 15th to control perennial weeds or allow frost activity to break down the soil further or help prevent ‘ley’ pests such as the larvae of two moths (the common rustic moth or the ghost moth) attacking the newly established plants / (later in the spring from March to April) the site should be rotovated or power harrowed (immediately prior to planting to improve establishment by aiding good root development, good soil root contact or improved soil aeration) / a planting rate of 16,000 rhizomes per ha or an emergence of 10‐15,000 plants per ha / rhizomes need to be planted at a depth of 5‐10 cm (in March or April) / sown using automatic planting machine",
+                            "marks": 4,
+                            "contextNote": "Miscanthus: any two planting points, 2 marks each (2(2)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "Grassland site spray with total herbicide for controlling perennial weeds",
+                                        "ploughed from January 15th to control perennial weeds or allow frost activity to break down the soil further or help prevent ‘ley’ pests such as the larvae of two moths (the common rustic moth or the ghost moth) attacking the newly established plants",
+                                        "(later in the spring from March to April) the site should be rotovated or power harrowed (immediately prior to planting to improve establishment by aiding good root development, good soil root contact or improved soil aeration)",
+                                        "a planting rate of 16,000 rhizomes per ha or an emergence of 10‐15,000 plants per ha",
+                                        "rhizomes need to be planted at a depth of 5‐10 cm (in March or April)",
+                                        "sown using automatic planting machine"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "osr",
+                "label": "Oilseed rape (OSR)",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "preparing the seedbed min‐till or cultivate (plough and harrow) or one‐pass or strip‐till cultivation or in shallow stubble ploughing to remove residual compaction / sown at a seed rate of between 3.0‐4.0kg/ha (higher seed rates can be used to allow for winter losses or excellent emergence) / sown using a seed drill / 25 cm spacing or depth of 20 mm / rolled to improve soil‐seed contact",
+                            "marks": 4,
+                            "contextNote": "Oilseed rape (OSR): any two planting points, 2 marks each (2(2)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "preparing the seedbed min‐till or cultivate (plough and harrow) or one‐pass or strip‐till cultivation or in shallow stubble ploughing to remove residual compaction",
+                                        "sown at a seed rate of between 3.0‐4.0kg/ha (higher seed rates can be used to allow for winter losses or excellent emergence)",
+                                        "sown using a seed drill",
+                                        "25 cm spacing or depth of 20 mm",
+                                        "rolled to improve soil‐seed contact"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q10(b)",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-3-3-1"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q10c", topicId: "agsci-3-3-1", conceptId: "advantages-of-a-catch-or-energy-crop",
+    section: "A", questionRef: "2022 HL Q10(c)",
+    stem: "In relation to a named catch or energy crop you have studied answer the questions which follow.",
+    questionText: "Outline advantages of sowing your chosen crop.",
+    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "high digestibility / long utilisation period or use of idle land / fodder crop / can use used to extend grazing season / out‐winter animals (less housing or slurry storage requirement) / high protein / fast growing crop", marks: 4, contextNote: "Kale: any two advantages, 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["high digestibility","long utilisation period or use of idle land","fodder crop","can use used to extend grazing season","out‐winter animals (less housing or slurry storage requirement)","high protein","fast growing crop"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "kale",
+                "label": "Kale",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "high digestibility / long utilisation period or use of idle land / fodder crop / can use used to extend grazing season / out‐winter animals (less housing or slurry storage requirement) / high protein / fast growing crop",
+                            "marks": 4,
+                            "contextNote": "Kale: any two advantages, 2 marks each (2(2)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "high digestibility",
+                                        "long utilisation period or use of idle land",
+                                        "fodder crop",
+                                        "can use used to extend grazing season",
+                                        "out‐winter animals (less housing or slurry storage requirement)",
+                                        "high protein",
+                                        "fast growing crop"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "miscanthus",
+                "label": "Miscanthus",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "renewable source of energy / perennial crop / carbon neutral fuel / reduction in GHG (carbon sinks) / low input crop (fertilisers or herbicides or pesticides) / increased biodiversity",
+                            "marks": 4,
+                            "contextNote": "Miscanthus: any two advantages, 2 marks each (2(2)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "renewable source of energy",
+                                        "perennial crop",
+                                        "carbon neutral fuel",
+                                        "reduction in GHG (carbon sinks)",
+                                        "low input crop (fertilisers or herbicides or pesticides)",
+                                        "increased biodiversity"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "osr",
+                "label": "Oilseed rape (OSR)",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Green manure crop (due to its developed root system to reaches the minerals located in the lower soil layers) / crop can be used for human consumption / retains moisture well / saturates fields with oxygen / provides a take‐all break / leaves high levels of residual nitrogen for subsequent crops / helps control annual or perennial grass weeds / spreads the harvest workload (normally be cut before winter wheat)",
+                            "marks": 4,
+                            "contextNote": "Oilseed rape (OSR): any two advantages, 2 marks each (2(2)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "Green manure crop (due to its developed root system to reaches the minerals located in the lower soil layers)",
+                                        "crop can be used for human consumption",
+                                        "retains moisture well",
+                                        "saturates fields with oxygen",
+                                        "provides a take‐all break",
+                                        "leaves high levels of residual nitrogen for subsequent crops",
+                                        "helps control annual or perennial grass weeds",
+                                        "spreads the harvest workload (normally be cut before winter wheat)"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q10(c)",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-3-1"]), kind: "diagram",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q13aiv", topicId: "agsci-3-1", conceptId: "reproductive-stage-of-sward-plants",
+    section: "B", questionRef: "2022 HL Q13(a)(iv)",
+    stem: "Maintaining a constant supply of high quality leafy grass can be easily achieved by managing and measuring the amount of grass on the farm. In part (iii) a farmer identified different plants in the sward while measuring the grass: A Italian ryegrass, B chicory and C cocksfoot.",
+    questionText: "Identify the growth cycle stage of the plants in part (iii) and describe briefly what happens at this stage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Reproductive stage", marks: 3, contextNote: "Stage: 3 marks." },
+    { id: "r-2", kind: "alt", verbatim: "Seed head develops or heading out or flowering", marks: 3, accepts: ["stem is strong enough to hold plant upright","wind pollination occurs in A or insect pollination occurs in B"], contextNote: "Description: 3 marks; any one of the scheme's descriptions." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q13(a)(iv)",
+          "pages": [
+                20,
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p20-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p20-i0.png",
+          "srcHash": "c339c00dccc5f1be58ee8ed155bc5f20",
+          "alt": "The plant identification panel for Question 13(a)(iii). Instruction above: '(iii) A farmer identified different plants in the sward while measuring the grass. Identify any two of the following plants A, B or C from the sward.' Below sits a three-column bordered table. The upper row of the table holds three colour photographs. Left photograph: a single upright grass flowering stem carrying pale green-yellow spikelets set alternately in two ranks directly against the stem axis, each spikelet with fine bristle-like tips, against a background of blurred green grass leaves. Centre photograph: four or five open flowers with pale blue-lilac strap-shaped ray florets whose tips are squared off and finely toothed, radiating around a paler centre with visible stamens, growing among coarse green leaves and stems. Right photograph: a grass flowering stem branching into several dense one-sided clumped clusters of purplish-green spikelets held on stiff spreading branches, against a blurred green background. The lower row of the table carries the bold labels 'A:', 'B:' and 'C:' beneath the left, centre and right photographs respectively, each followed by blank writing space. Below the table is empty page space and the running footer.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Left cell - a close-up of one upright, densely packed green seed head, broad flat leaf blades behind it","askedInThisQuestion":true},{"letter":"B","meaning":"Centre cell - several pale blue, daisy-like flowers on leafy stems, a bee on one of them","askedInThisQuestion":true},{"letter":"C","meaning":"Right cell - a branched, open seed head of greenish-purple clustered spikelets on fine stems","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-3-3-1"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q13biii", topicId: "agsci-3-3-1", conceptId: "certified-versus-uncertified-seed-crop",
+    section: "B", questionRef: "2022 HL Q13(b)(iii)",
+    stem: "Gerry wants to reseed his grassland pastures. He ordered two batches of seeds, certified and uncertified, which arrived unlabelled, and carried out a research trial in a small section of his field to distinguish between them.",
+    questionText: "Gerry was able to compare the plant uniformity of both batches of seed (certified and uncertified). Describe the characteristics Gerry would have observed to determine which batch was certified and which was uncertified.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Min. 85% of the plants had germination / Reduced weeds / plants were all similar height / plants were all the same colour / plants all had same stem or root structure or leaf / true variety / Less than 85% germinated / increased number of weeds present / plants varied in height / plants varied in colour / plants varied in stem or root or leaf / mix of other varieties", marks: 8, contextNote: "Two characteristics, 4 marks each (2(4)). The first six options are the scheme's certified-seed column and the last six its uncertified-seed column; a characteristic and its opposite are the same characteristic.", group: {"claimMax":2,"perOption":4,"options":["Min. 85% of the plants had germination","Reduced weeds","plants were all similar height","plants were all the same colour","plants all had same stem or root structure or leaf","true variety","Less than 85% germinated","increased number of weeds present","plants varied in height","plants varied in colour","plants varied in stem or root or leaf","mix of other varieties"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q13(b)(iii)",
+          "pages": [
+                21,
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-4-3-3"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q14cii", topicId: "agsci-4-3-3", conceptId: "natural-airflow-in-a-calf-shed",
+    section: "B", questionRef: "2022 HL Q14(c)(ii)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Part (c): analyse the picture of calf housing and answer the questions which follow.",
+    questionText: "A farmer let off a smoke bomb in his calf shed to check the ventilation. Complete the diagram using arrows to show the natural airflow he should expect through the shed.",
+    tariffModel: {"kind":"orderedSplit","notation":"4 + 1"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Correct indication of arrows coming in at side", marks: null, contextNote: "The scheme prints 4 + 1 for the arrows; its drawn answer shows after you reveal." },
+    { id: "r-2", kind: "point", verbatim: "going out through roof", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q14(c)(ii)",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    questionFigure: {
+          "candId": "agsci-2022-hl-paper-calf-shed-airflow",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2022-hl-paper-calf-shed-airflow.png",
+          "srcHash": "18985bf83b0108f51f1e520e94abdc9c",
+          "alt": "Original Question 14(c)(ii): a photograph of a farmer letting off a smoke bomb among calves in a shed, and below it a cross-section of a calf shed with an open ridge at the top of the pitched roof, open sides under the eaves, two pens of calves on straw and an arrow from the smoke bomb marked X on the floor between them.",
+          "lettersVisible": [],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper, PDF page 25 — © State Examinations Commission."
+    },
+    figure: {
+          "candId": "agsci-2022-hl-scheme-calf-shed-airflow",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2022-hl-scheme-calf-shed-airflow.png",
+          "srcHash": "8776f5413d25e0008f433d4878379ff4",
+          "alt": "Official marking-scheme answer for Question 14(c)(ii): the shed cross-section with arrows coming in at each side under the eaves, rising diagonally towards the centre and going out through the open ridge in the roof; \"Correct indication of arrows coming in at side / going out through roof\", 4 + 1.",
+          "attribution": "SEC Agricultural Science 2022 Higher Level marking scheme, PDF page 26 — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-4-3-2"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q15ai", topicId: "agsci-4-3-2", conceptId: "oestrus-synchronisation-protocols",
+    section: "B", questionRef: "2022 HL Q15(a)(i)",
+    stem: "Animals maybe synchronised at breeding. The paper asks you to name the animal first.",
+    questionText: "Animals maybe synchronised at breeding. Describe how this is carried out for a named animal you have studied.",
+    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Flush ewes on good quality pasture or tupping dose / place progesterone sponge in vagina of ewe / leave for 10 – 12 days / remove (in morning) and inject PMSG / inseminate (let rams out) 1‐2 days later / ram ratio 1:10 or ram effect", marks: 6, contextNote: "Ewes: any two steps, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Flush ewes on good quality pasture or tupping dose","place progesterone sponge in vagina of ewe","leave for 10 – 12 days","remove (in morning) and inject PMSG","inseminate (let rams out) 1‐2 days later","ram ratio 1:10 or ram effect"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "ewes",
+                "label": "Ewes",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Flush ewes on good quality pasture or tupping dose / place progesterone sponge in vagina of ewe / leave for 10 – 12 days / remove (in morning) and inject PMSG / inseminate (let rams out) 1‐2 days later / ram ratio 1:10 or ram effect",
+                            "marks": 6,
+                            "contextNote": "Ewes: any two steps, 3 marks each (2(3)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Flush ewes on good quality pasture or tupping dose",
+                                        "place progesterone sponge in vagina of ewe",
+                                        "leave for 10 – 12 days",
+                                        "remove (in morning) and inject PMSG",
+                                        "inseminate (let rams out) 1‐2 days later",
+                                        "ram ratio 1:10 or ram effect"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "heifers-pg-heats",
+                "label": "Heifers or cows: prostaglandin after natural heats",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Allow heifers to mate to natural heats for 7 days / observe heats, then if not in heat give prostaglandin (PG) injection / repeat PG injection 11 days later if not in heat / observe heat and AI with AM:PM rule",
+                            "marks": 6,
+                            "contextNote": "Heifers or cows: prostaglandin after natural heats: any two steps, 3 marks each (2(3)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Allow heifers to mate to natural heats for 7 days",
+                                        "observe heats, then if not in heat give prostaglandin (PG) injection",
+                                        "repeat PG injection 11 days later if not in heat",
+                                        "observe heat and AI with AM:PM rule"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "heifers-pg-two-shots",
+                "label": "Heifers or cows: two prostaglandin shots",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Give heifers first shot of PG 13 days before start of breeding season / another shot 11 days later / bull introduced 2 days prior to start of breeding season or AI 72‐96 hours later",
+                            "marks": 6,
+                            "contextNote": "Heifers or cows: two prostaglandin shots: any two steps, 3 marks each (2(3)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Give heifers first shot of PG 13 days before start of breeding season",
+                                        "another shot 11 days later",
+                                        "bull introduced 2 days prior to start of breeding season or AI 72‐96 hours later"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "heifers-p4",
+                "label": "Heifers or cows: progesterone (P4) device",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Progesterone (P4) based device (PRID or CEDAR) is placed in vagina of animal for 6 – 10 days / PG injection is given day prior to removal / gonadotrophin (GnRH) injection / AI (mating) 48 hours after removal of device",
+                            "marks": 6,
+                            "contextNote": "Heifers or cows: progesterone (P4) device: any two steps, 3 marks each (2(3)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Progesterone (P4) based device (PRID or CEDAR) is placed in vagina of animal for 6 – 10 days",
+                                        "PG injection is given day prior to removal",
+                                        "gonadotrophin (GnRH) injection",
+                                        "AI (mating) 48 hours after removal of device"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "sows",
+                "label": "Sows",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "P4 is given to sows for 14 – 18 days prior to insemination / GnRH day prior to service (AI) / located beside to boar (releases phermones) to bring sow into heat / double service (to increase litter size)",
+                            "marks": 6,
+                            "contextNote": "Sows: any two steps, 3 marks each (2(3)).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 3,
+                                  "options": [
+                                        "P4 is given to sows for 14 – 18 days prior to insemination",
+                                        "GnRH day prior to service (AI)",
+                                        "located beside to boar (releases phermones) to bring sow into heat",
+                                        "double service (to increase litter size)"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q15(a)(i)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-3-2"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q16ci", topicId: "agsci-3-2", conceptId: "named-grazing-systems",
+    section: "B", questionRef: "2022 HL Q16(c)(i)",
+    stem: "An investigation looking at milk production from grass and white clover systems over the course of a year was carried out by Teagasc researchers in Moorepark.",
+    questionText: "Describe using a labelled diagram a named grazing system that could have been used to manage the swards in the trial in part (a).",
+    tariffModel: {"kind":"questionTotal","notation":"2 + D - 6, 3, 0 + L - 3(1)"}, totalMarks: 11,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Named grazing system – Paddock (rotational) / block / strip grazing / spokes of a wheel", marks: null, contextNote: "Named system: 2 marks. The scheme adds \"(Zero grazing is not accepted)\"." },
+    { id: "r-2", kind: "criterion", verbatim: "For 6 marks: diagram must show fencing, water supply, indication of animal movement", marks: null, contextNote: "Drawing, D - 6, 3, 0: \"For 3 marks: diagram has one of the elements above missing\"." },
+    { id: "r-3", kind: "point", verbatim: "Marks awarded for any 3 labelled parts", marks: null, contextNote: "Labels, L - 3(1)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q16(c)(i)",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-2-2-3"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q17ai", topicId: "agsci-2-2-3", conceptId: "earthworm-activity-in-soil",
+    section: "B", questionRef: "2022 HL Q17(a)(i)",
+    stem: "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms.",
+    questionText: "Describe using a labelled diagram the activity of earthworms in a soil.",
+    tariffModel: {"kind":"questionTotal","notation":"D - 6, 3, 0 + Labels - 3(1)"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Diagram: A number of layers, presence of organic matter, earthworms, creating channels or mixing layers (indication of activity)", marks: null, contextNote: "Drawing, D - 6, 3, 0 (showing layers)." },
+    { id: "r-2", kind: "point", verbatim: "Layer of organic matter (leaf litter) on top or decomposed organic matter / layer of chalk or layer of compost or layer of sand or layer of gravel / earthworms /create channels / mixing layers / wormery or soil profile", marks: null, contextNote: "Labels - 3(1): any three of these labels, 1 mark each." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q17(a)(i)",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-3-1"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q17bii", topicId: "agsci-3-1", conceptId: "genotype-and-hybrid-vigour",
+    section: "B", questionRef: "2022 HL Q17(b)(ii)",
+    stem: "Plant breeding is the science of changing the traits of plants in order to produce desired characteristics in a direction favourable to peoples' needs. Scientists work on selecting the high yielding plants and breeding these. In part (ii) the paper underlines two terms — genotype and hybrid vigour — and prints a separate answer box for each, headed 'Genotype:' and 'Hybrid vigour:'.",
+    questionText: "Scientists genotype the plants and cross two high yielding plants to achieve good hybrid vigour. Explain the underlined terms.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Genotype genetic make‐up of an organism", marks: 3, contextNote: "Transcribed exactly as the scheme prints it; the dash between the term and its definition is lost in the PDF extraction." },
+    { id: "r-2", kind: "point", verbatim: "Hybrid vigour ‐ a cross‐bred individual to shows qualities superior to those of both parents", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q17(b)(ii)",
+          "pages": [
+                34,
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2022, ["agsci-3-3-2"]), kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q18bii", topicId: "agsci-3-3-2", conceptId: "integrated-weed-management-advice",
+    section: "B", questionRef: "2022 HL Q18(b)(ii)",
+    stem: "The diagram below shows an ‘Integrated Management System’ for controlling weeds. Analyse the diagram and answer the questions which follow.",
+    questionText: "You have been asked to address a group of tillage farmers. Using the ‘Integrated Management System’ for controlling weeds (outlined on previous page), provide advice to them on the future of weed control on their farms.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Cultural control has to be the most important part of the IMS, and use of herbicides is less important / Increase use of pre‐emergent herbicides and decrease the use of post‐emergent herbicides / increase in plant numbers for increased competition with weeds so less chemical sprays required / increased competition for space or light or nutrients so less chemical sprays required or some cover crops– release chemicals that suppress weeds (allelopathic) (e.g. wheat, kale, cabbage) / hand pulling of weeds (prior to flowering) to reduce the chemical requirement / breaks lifecycle of weeds or weeds don’t get a chance to establish in an area / crop is deliberately destroyed by burning due to high incidence of weeds or disease / remove all weeds from farmyard to prevent seeds being spread on fields through FYM or slurry / ensure that all machinery is free from plants or seeds when moving fields to prevent cross contamination", marks: 12, contextNote: "Three pieces of advice, 4 marks each (3(4)). The scheme answers each heading of the diagram: integrated management, use of herbicides, increased seed rates and competitive crops (one answer for both), cover crops, rogueing, crop rotation and whole cropping (one answer for both), crop destruction, on-farm hygiene and machinery hygiene, in that order.", group: {"claimMax":3,"perOption":4,"options":["Cultural control has to be the most important part of the IMS, and use of herbicides is less important","Increase use of pre‐emergent herbicides and decrease the use of post‐emergent herbicides","increase in plant numbers for increased competition with weeds so less chemical sprays required","increased competition for space or light or nutrients so less chemical sprays required or some cover crops– release chemicals that suppress weeds (allelopathic) (e.g. wheat, kale, cabbage)","hand pulling of weeds (prior to flowering) to reduce the chemical requirement","breaks lifecycle of weeds or weeds don’t get a chance to establish in an area","crop is deliberately destroyed by burning due to high incidence of weeds or disease","remove all weeds from farmyard to prevent seeds being spread on fields through FYM or slurry","ensure that all machinery is free from plants or seeds when moving fields to prevent cross contamination"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2022 Higher — Q18(b)(ii)",
+          "pages": [
+                38,
+                39
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p38-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p38-i0.png",
+          "srcHash": "510c3d52e49d20fc69e7e9a4333c606e",
+          "alt": "The complete 'Integrated Management System' weed control figure for Question 18(b). Stem above: '(b) The diagram below shows an Integrated Management System for controlling weeds.' and 'Analyse the diagram and answer the questions which follow.' The figure has two halves inside one outer border. LEFT: a table with a peach-coloured header cell reading 'Examples of Cultural Control Options' above nine single-column rows listing, from top to bottom: Increased seed rates; Cover crops; Competitive crops; Roguing; Crop rotation; Whole cropping; Crop destruction; On-farm hygiene; Machinery hygiene. RIGHT: a pale blue panel containing two stacked triangles. The upper one is captioned 'The Past' in a pale green banner and is an INVERTED grey triangle divided into three horizontal bands, widest at the top: 'Post-emergence' (widest band, at the top), 'Pre-emergence' (middle band) and 'Cultural Control' (narrowest band, at the point). Two thick red arrows point inward and down at this inverted triangle from either side. A thick blue arrow points straight down from it to the lower diagram. The lower one is captioned 'The Future' in a pale green banner and is an UPRIGHT green triangle divided into three horizontal bands, widest at the base: 'Post - emergence' (narrowest band, at the apex), 'Pre-emergence' (middle band) and 'Cultural Control' (widest band, at the base). Two thick red arrows point outward and down away from this triangle on either side. Right-aligned italic attribution beneath: '(Adapted from Teagasc, 2021)'. Below, '(i) Explain pre-emergence weed control.' with a three-line blank ruled answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {

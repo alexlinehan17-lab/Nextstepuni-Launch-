@@ -443,7 +443,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(569);
+    expect(additions.size).toBe(574);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length + withdrawnFor(live).length).toBe(10_495);
@@ -519,6 +519,13 @@ describe('Mark Bank card preservation', () => {
       'agsci-2023-ol-q15b': 'Restores the first-correct 6+4 instead of 6 pinned to label A.',
       'agsci-2023-ol-q16ai': 'Resazurin and bacterial-count methods as answer routes, every published point listed (3(4)).',
       'agsci-2023-ol-q18ci': 'Restores the whole first published point.',
+      'agsci-2022-hl-q2b': 'Lists every characteristic in the scheme\'s two-page table, any two at 3 (2(3)).',
+      'agsci-2022-hl-q10b': 'Kale, Miscanthus and OSR planting points as answer routes, not one mixed pool.',
+      'agsci-2022-hl-q10c': 'Kale, Miscanthus and OSR advantages as answer routes, not one mixed pool.',
+      'agsci-2022-hl-q15ai': 'Each synchronisation protocol (ewes, three for heifers or cows, sows) as an answer route, every step listed.',
+      'agsci-2022-hl-q16ci': 'Restores the published 11 marks: named system 2, drawing 6/3/0, labels 3(1).',
+      'agsci-2022-hl-q17ai': 'The earthworm drawing is banded D 6, 3, 0 plus labels 3(1), not one 6-mark row.',
+      'agsci-2022-hl-q17bii': 'Restores the end of the hybrid vigour definition ("to those of both parents").',
     };
     expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
     const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
@@ -544,6 +551,10 @@ describe('Mark Bank card preservation', () => {
     // 2023 Ordinary corrections keep each original's ID; the fused Q10(b)(i)-(iii) keeps part (i) at 3.
     for (const [id, marks] of [['agsci-2023-ol-q2a', 6], ['agsci-2023-ol-q4', 10], ['agsci-2023-ol-q8a', 10], ['agsci-2023-ol-q10b-i-iii', 3],
       ['agsci-2023-ol-q13aii', 12], ['agsci-2023-ol-q16ai', 12]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+    // 2022 Higher Q16(c)(i) regains its published 11 marks; the other corrections keep their totals.
+    for (const [id, marks] of [['agsci-2022-hl-q16ci', 11], ['agsci-2022-hl-q2b', 6], ['agsci-2022-hl-q15ai', 6], ['agsci-2022-hl-q17ai', 9]] as const) {
+      expect(live.get(id)?.totalMarks, id).toBe(marks);
+    }
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {

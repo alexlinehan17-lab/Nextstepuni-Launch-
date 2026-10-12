@@ -627,5 +627,39 @@
       0.502
     ],
     "reviewedAt": "2026-10-12"
+  },
+  "agsci-2022-hl-paper-calf-shed-airflow": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2022-hl-paper-calf-shed-airflow.png",
+    "md5": "18985bf83b0108f51f1e520e94abdc9c",
+    "alt": "Original Question 14(c)(ii): a photograph of a farmer letting off a smoke bomb among calves in a shed, and below it a cross-section of a calf shed with an open ridge at the top of the pitched roof, open sides under the eaves, two pens of calves on straw and an arrow from the smoke bomb marked X on the floor between them.",
+    "attribution": "SEC Agricultural Science 2022 Higher Level examination paper, PDF page 25 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2022/LC024ALP000EV.pdf",
+    "sourceSha256": "690cca40b2798863c397126cac71dc076d4fd3d6cb38395fee63c57625dc8f7f",
+    "pdfPage": 25,
+    "cropRect": [
+      0.1,
+      0.533,
+      0.92,
+      0.897
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2022-hl-scheme-calf-shed-airflow": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2022-hl-scheme-calf-shed-airflow.png",
+    "md5": "8776f5413d25e0008f433d4878379ff4",
+    "alt": "Official marking-scheme answer for Question 14(c)(ii): the shed cross-section with arrows coming in at each side under the eaves, rising diagonally towards the centre and going out through the open ridge in the roof; \"Correct indication of arrows coming in at side / going out through roof\", 4 + 1.",
+    "attribution": "SEC Agricultural Science 2022 Higher Level marking scheme, PDF page 26 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2022/LC024ALP000EV.pdf",
+    "sourceSha256": "9e868b6c11ecf6bf71da03b8ced52b3be4aa80bbacb205b5fd418b555abd1a40",
+    "pdfPage": 26,
+    "cropRect": [
+      0.08,
+      0.43,
+      0.95,
+      0.672
+    ],
+    "reviewedAt": "2026-10-12"
   }
 }

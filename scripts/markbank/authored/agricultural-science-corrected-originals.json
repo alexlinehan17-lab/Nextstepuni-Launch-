@@ -3176,5 +3176,396 @@
   },
   "originalSha256": "3c9c2aece6afd63810cc5604f02908628fea93f79c73cb693e20fe30ccd5e88d",
   "snapshotFrom": "codex/agricultural-science-completion-20261007 at cf022aa3 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-hl-q2b": {
+  "original": {
+   "id": "agsci-2022-hl-q2b",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "selecting-a-female-replacement-for-breeding",
+   "level": "higher",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 HL Q2(b)",
+   "stem": "A farmer was looking to select a female replacement animal for breeding for his chosen animal enterprise. (The paper asks you to write your named animal enterprise first.)",
+   "questionText": "Describe characteristics he would be looking for when selecting the animal.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(3)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "moderate frame size to reduce amount of feed required to maintain body condition and fertility (increase sustainability of farm)",
+     "marks": 3,
+     "contextNote": "Any TWO well-described characteristics score, 3 marks each — and they must fit the enterprise you named.",
+     "openList": true,
+     "accepts": [
+      "long body or not too heavily muscled (pigs)",
+      "longevity to improve sustainability of enterprise",
+      "not a twin to a male calf (freemartin) as her reproductive tract may not have developed",
+      "good mouth – not over or undershot",
+      "4 well placed teats to ensure clusters attach or fit correctly",
+      "Records of parents to determine her milking potential or daughters of high yielding cows (dairy)",
+      "Cross bred gilt to allow for hybrid vigour (criss‐cross breeding)",
+      "Genotyped where parentage is verified and reduce risk of future inbreeding"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Docile (quiet temperament) for easy management",
+     "marks": 3,
+     "contextNote": "Any TWO well-described characteristics score, 3 marks each — and they must fit the enterprise you named.",
+     "openList": true,
+     "accepts": [
+      "long body or not too heavily muscled (pigs)",
+      "longevity to improve sustainability of enterprise",
+      "not a twin to a male calf (freemartin) as her reproductive tract may not have developed",
+      "good mouth – not over or undershot",
+      "4 well placed teats to ensure clusters attach or fit correctly",
+      "Records of parents to determine her milking potential or daughters of high yielding cows (dairy)",
+      "Cross bred gilt to allow for hybrid vigour (criss‐cross breeding)",
+      "Genotyped where parentage is verified and reduce risk of future inbreeding"
+     ]
+    }
+   ],
+   "notes": "Q2(a) (identify six breeds from photographs) is skipped — no figure. Q2(b) carries 2(3) = any TWO characteristics at 3 marks each = 6, which reconciles Q2 to 10 alongside (a)'s 4(1)=4. The scheme's answer is 'Details on next page', followed by a two-page table of characteristics — Good body conformation, Temperament, Good Health, Age and Weight, Good Udder, Good feet, Milk production, Genetics — broken down for Dairy heifer / Beef heifer / Ewe / Gilt. That table's PDF extraction interleaves its columns, so only clean, contiguous, self-contained fragments have been transcribed. The accepts list is a verified subset of a much larger printed pool, which is why openList is set on both rows: a student who named a different valid characteristic for their enterprise was right."
+  },
+  "originalSha256": "71b8d6cce0528b023b87fdf4640e658a5234ceb62932aeabd3325a0cd608acba",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 937bb7f0 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-hl-q10b": {
+  "original": {
+   "id": "agsci-2022-hl-q10b",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "planting-a-catch-or-energy-crop",
+   "level": "higher",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 HL Q10(b)",
+   "stem": "In relation to a named catch or energy crop you have studied answer the questions which follow.",
+   "questionText": "Describe the method of planting of your chosen crop.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "sown into a cultivated(plough and harrow) seedbed",
+     "marks": 2,
+     "contextNote": "Any two planting points score, 2 marks each — but they must belong to the crop you named. The scheme runs separate pools for Kale, Miscanthus and OSR; the rows here are the Kale route.",
+     "accepts": [
+      "direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed",
+      "seeding rate of 4‐5kg/ha or 70 plants per m2",
+      "rolled well after sowing to ensure good soil:seed contact",
+      "Grassland site spray with total herbicide for controlling perennial weeds",
+      "ploughed from January 15th to control perennial weeds or allow frost activity to break down the soil further or help prevent ‘ley’ pests such as the larvae of two moths (the common rustic moth or the ghost moth) attacking the newly established plants",
+      "(later in the spring from March to April) the site should be rotovated or power harrowed (immediately prior to planting to improve establishment by aiding good root development, good soil root contact or improved soil aeration)",
+      "a planting rate of 16,000 rhizomes per ha or an emergence of 10‐15,000 plants per ha",
+      "rhizomes need to be planted at a depth of 5‐10 cm (in March or April)",
+      "sown using automatic planting machine",
+      "preparing the seedbed min‐till or cultivate (plough and harrow) or one‐pass or strip‐till cultivation or in shallow stubble ploughing to remove residual compaction",
+      "sown at a seed rate of between 3.0‐4.0kg/ha (higher seed rates can be used to allow for winter losses or excellent emergence)",
+      "sown using a seed drill",
+      "25 cm spacing or depth of 20 mm",
+      "rolled to improve soil‐seed contact"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "maximum depth of 10mm (to ensure uniform germination)",
+     "marks": 2,
+     "contextNote": "Any two planting points score, 2 marks each — but they must belong to the crop you named. The scheme runs separate pools for Kale, Miscanthus and OSR; the rows here are the Kale route.",
+     "accepts": [
+      "direct drilled or seed drill or one pass system or broadcast (require higher seed rate) or seeds should be sown into a fine (firm) seedbed",
+      "seeding rate of 4‐5kg/ha or 70 plants per m2",
+      "rolled well after sowing to ensure good soil:seed contact",
+      "Grassland site spray with total herbicide for controlling perennial weeds",
+      "ploughed from January 15th to control perennial weeds or allow frost activity to break down the soil further or help prevent ‘ley’ pests such as the larvae of two moths (the common rustic moth or the ghost moth) attacking the newly established plants",
+      "(later in the spring from March to April) the site should be rotovated or power harrowed (immediately prior to planting to improve establishment by aiding good root development, good soil root contact or improved soil aeration)",
+      "a planting rate of 16,000 rhizomes per ha or an emergence of 10‐15,000 plants per ha",
+      "rhizomes need to be planted at a depth of 5‐10 cm (in March or April)",
+      "sown using automatic planting machine",
+      "preparing the seedbed min‐till or cultivate (plough and harrow) or one‐pass or strip‐till cultivation or in shallow stubble ploughing to remove residual compaction",
+      "sown at a seed rate of between 3.0‐4.0kg/ha (higher seed rates can be used to allow for winter losses or excellent emergence)",
+      "sown using a seed drill",
+      "25 cm spacing or depth of 20 mm",
+      "rolled to improve soil‐seed contact"
+     ]
+    }
+   ],
+   "notes": "2(2) = any two planting points at 2 marks each = 4 (L535). The scheme gives three crop-specific pools (Kale, Miscanthus, OSR); the two rows carry the Kale route and every Miscanthus and OSR point sits in accepts, with the contextNote telling the student their points must match the crop they named. All Miscanthus points are now carried, including the rotovating point reassembled across the marks cell. The paper prints 'choosen' for 'chosen' in this part; questionText normalises the typo."
+  },
+  "originalSha256": "1c60f1a61a4a877d02233594b434562810887cc606530d30f93307aa29b3d884",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 937bb7f0 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-hl-q10c": {
+  "original": {
+   "id": "agsci-2022-hl-q10c",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "advantages-of-a-catch-or-energy-crop",
+   "level": "higher",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2022 HL Q10(c)",
+   "stem": "In relation to a named catch or energy crop you have studied answer the questions which follow.",
+   "questionText": "Outline advantages of sowing your chosen crop.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "high digestibility",
+     "marks": 2,
+     "contextNote": "Any two advantages score, 2 marks each — and they must belong to the crop you named. These rows carry the Kale route; the Miscanthus and OSR advantages are in the accepted list.",
+     "accepts": [
+      "fodder crop",
+      "can use used to extend grazing season",
+      "out‐winter animals (less housing or slurry storage requirement)",
+      "high protein",
+      "fast growing crop",
+      "renewable source of energy",
+      "perennial crop",
+      "carbon neutral fuel",
+      "reduction in GHG (carbon sinks)",
+      "low input crop (fertilisers or herbicides or pesticides)",
+      "increased biodiversity",
+      "Green manure crop (due to its developed root system to reaches the minerals located in the lower soil layers)",
+      "crop can be used for human consumption",
+      "retains moisture well",
+      "saturates fields with oxygen",
+      "provides a take‐all break",
+      "leaves high levels of residual nitrogen for subsequent crops",
+      "helps control annual or perennial grass weeds",
+      "spreads the harvest workload (normally be cut before winter wheat)"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "long utilisation period or use of idle land",
+     "marks": 2,
+     "contextNote": "Any two advantages score, 2 marks each — and they must belong to the crop you named. These rows carry the Kale route; the Miscanthus and OSR advantages are in the accepted list.",
+     "accepts": [
+      "fodder crop",
+      "can use used to extend grazing season",
+      "out‐winter animals (less housing or slurry storage requirement)",
+      "high protein",
+      "fast growing crop",
+      "renewable source of energy",
+      "perennial crop",
+      "carbon neutral fuel",
+      "reduction in GHG (carbon sinks)",
+      "low input crop (fertilisers or herbicides or pesticides)",
+      "increased biodiversity",
+      "Green manure crop (due to its developed root system to reaches the minerals located in the lower soil layers)",
+      "crop can be used for human consumption",
+      "retains moisture well",
+      "saturates fields with oxygen",
+      "provides a take‐all break",
+      "leaves high levels of residual nitrogen for subsequent crops",
+      "helps control annual or perennial grass weeds",
+      "spreads the harvest workload (normally be cut before winter wheat)"
+     ]
+    }
+   ],
+   "notes": "2(2) = any two advantages at 2 marks each = 4. As in (b), the scheme runs three crop-specific pools; the rows carry the Kale route and the Miscanthus and OSR advantages sit in accepts. The scheme prints 'can use used' — the SEC's own typo, transcribed as printed."
+  },
+  "originalSha256": "60240ec4b26c2f0f2032cdf931b6a43e1bec21a07b09781654dfdcce3968ac8c",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 937bb7f0 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-hl-q15ai": {
+  "original": {
+   "id": "agsci-2022-hl-q15ai",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "oestrus-synchronisation-protocols",
+   "level": "higher",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 HL Q15(a)(i)",
+   "stem": "Section B, Question 15, part (a). The paper asks the candidate to name the animal they studied before describing the protocol.",
+   "questionText": "Animals maybe synchronised at breeding. Describe how this is carried out for a named animal you have studied.",
+   "tariffModel": {
+    "kind": "bestNofParts",
+    "notation": "2(3)",
+    "answer": 2,
+    "ofParts": 10,
+    "perPart": 3
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "anyN",
+     "verbatim": "Flush ewes on good quality pasture or tupping dose // place progesterone sponge in vagina of ewe // Allow heifers to mate to natural heats for 7 days // observe heats, then if not in heat give prostaglandin (PG) injection // Give heifers first shot of PG 13 days before start of breeding season // another shot 11 days later // Progesterone (P4) based device (PRID or CEDAR) is placed in vagina of animal for 6 – 10 days // PG injection is given day prior to removal // P4 is given to sows for 14 – 18 days prior to insemination // GnRH day prior to service (AI)",
+     "marks": null,
+     "group": {
+      "claimMax": 2,
+      "perOption": 3,
+      "options": [
+       "Flush ewes on good quality pasture or tupping dose",
+       "place progesterone sponge in vagina of ewe",
+       "Allow heifers to mate to natural heats for 7 days",
+       "observe heats, then if not in heat give prostaglandin (PG) injection",
+       "Give heifers first shot of PG 13 days before start of breeding season",
+       "another shot 11 days later",
+       "Progesterone (P4) based device (PRID or CEDAR) is placed in vagina of animal for 6 – 10 days",
+       "PG injection is given day prior to removal",
+       "P4 is given to sows for 14 – 18 days prior to insemination",
+       "GnRH day prior to service (AI)"
+      ]
+     }
+    }
+   ],
+   "notes": "The scheme sets out five mutually exclusive protocols under the headings Ewes / Heifers or cow (Prostaglandin (PG), an alternative PG programme introduced by 'Or', and Progesterone (P4)) / Sow. A candidate names ONE animal, so the protocols are modelled as routes: claiming a step commits the card to that protocol and locks the rest, and each route sums to the 6-mark tariff (2 steps at 3 marks). Each route shows two claimable slots and carries that protocol's remaining steps in accepts, so nothing the scheme prints is hidden. REVIEWER CHECK: route labels are my wording, taken from the scheme's own headings; the step text is verbatim."
+  },
+  "originalSha256": "f2bfea93d8082a012e84701da97ef943085630d43083ab638429d59ac667255b",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 937bb7f0 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-hl-q16ci": {
+  "original": {
+   "id": "agsci-2022-hl-q16ci",
+   "topicId": "agsci-3-2",
+   "conceptId": "named-grazing-systems",
+   "level": "higher",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 HL Q16(c)(i)",
+   "questionText": "Describe using a labelled diagram a named grazing system that could have been used to manage the swards in the trial in part (a).",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3 for naming one, and 1 each thereafter"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Named grazing system – Paddock (rotational)",
+     "marks": 3
+    }
+   ],
+   "notes": "Block, strip grazing and the spokes-of-a-wheel layout also score. Zero grazing does not."
+  },
+  "originalSha256": "e5c073c64f8dcbf09bb4db6836666453c99bd2920ce21640136ccbee6aaa31dc",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 937bb7f0 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-hl-q17ai": {
+  "original": {
+   "id": "agsci-2022-hl-q17ai",
+   "topicId": "agsci-2-2-3",
+   "conceptId": "earthworm-activity-in-soil",
+   "level": "higher",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 HL Q17(a)(i)",
+   "stem": "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms.",
+   "questionText": "Describe using a labelled diagram the activity of earthworms in a soil.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "D ‐ 6, 3, 0 + L ‐ 3(1)"
+   },
+   "totalMarks": 9,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Diagram: A number of layers, presence of organic matter, earthworms",
+     "marks": 6,
+     "contextNote": "The marks column reads 'D ‐ 6, 3, 0 (showing layers)' — the diagram is banded at 6, 3 or 0. The scheme's sentence continues past the marks column with 'creating channels or mixing layers (indication of activity)', so a full-mark diagram shows the layers, the organic matter, the earthworms AND the channels or mixing."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Layer of organic matter (leaf litter) on top or decomposed organic matter",
+     "marks": 1,
+     "accepts": [
+      "layer of chalk or layer of compost or layer of sand or layer of gravel",
+      "mixing layers",
+      "wormery or soil profile"
+     ],
+     "contextNote": "The marks column reads 'Labels ‐ 3(1)': any three labelled parts at 1 mark each. Six acceptable labels are printed."
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "earthworms",
+     "marks": 1,
+     "accepts": [
+      "layer of chalk or layer of compost or layer of sand or layer of gravel",
+      "mixing layers",
+      "wormery or soil profile"
+     ]
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "create channels",
+     "marks": 1,
+     "accepts": [
+      "layer of chalk or layer of compost or layer of sand or layer of gravel",
+      "mixing layers",
+      "wormery or soil profile"
+     ]
+    }
+   ],
+   "notes": "The marks column splits into D ‐ 6, 3, 0 for the diagram and Labels ‐ 3(1) for the labelling, so 6 + 3 = 9. That is the value Q17 needs to reconcile to 50 (9 + 8 + 6 + 3 + 4 + 6 + 14, where the last 14 is (c) or (d)). Three label rows at 1 mark each carry three of the six printed labels and the other three sit in accepts. The candidate draws the diagram, so no figure is needed. REVIEWER CHECK: the marks-column text ('(showing layers)') is interleaved into the diagram sentence by the PDF extractor, which is why r-1's verbatim stops where it does; the remainder is quoted in its contextNote."
+  },
+  "originalSha256": "c22e128d9c88fd734b35671f7143971a08e05adc42066b82906d89f164a83be3",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 937bb7f0 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2022-hl-q17bii": {
+  "original": {
+   "id": "agsci-2022-hl-q17bii",
+   "topicId": "agsci-3-1",
+   "conceptId": "genotype-and-hybrid-vigour",
+   "level": "higher",
+   "year": 2022,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2022 HL Q17(b)(ii)",
+   "stem": "Plant breeding is the science of changing the traits of plants in order to produce desired characteristics in a direction favourable to peoples' needs. Scientists work on selecting the high yielding plants and breeding these. In part (ii) the paper underlines two terms — genotype and hybrid vigour — and prints a separate answer box for each, headed 'Genotype:' and 'Hybrid vigour:'.",
+   "questionText": "Scientists genotype the plants and cross two high yielding plants to achieve good hybrid vigour. Explain the underlined terms.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3 + 3"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Genotype genetic make‐up of an organism",
+     "marks": 3,
+     "contextNote": "Transcribed exactly as the scheme prints it; the dash between the term and its definition is lost in the PDF extraction."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Hybrid vigour ‐ a cross‐bred individual to shows qualities superior",
+     "marks": 3,
+     "contextNote": "The scheme's sentence runs on to the next line and finishes '...to those of both parents'. The marks column '3' is printed between the two halves in the extracted text, so only the first half is quoted here."
+    }
+   ],
+   "notes": "Two underlined terms, one 3 printed against each = 6 marks. The scheme's own grammatical slip ('a cross-bred individual to shows qualities superior') is kept as printed. r-2 is truncated at the marks column and its contextNote carries the missing clause. The stem names the two underlined terms because underlining cannot be rendered in the card, and the paper's own answer boxes ('Genotype:', 'Hybrid vigour:') confirm which two are meant."
+  },
+  "originalSha256": "ed064eefcfc4c869df7b4dc7d5fd8a091c3c778424c45b6162f14fc545310c34",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 937bb7f0 (unchanged since the original 869-card bank)"
  }
 }

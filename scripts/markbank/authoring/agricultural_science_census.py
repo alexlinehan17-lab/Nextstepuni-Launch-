@@ -1255,9 +1255,126 @@ POOLS_2023_ORDINARY = {
     'Q18(b)(iii)': (2, ['Impact on the environment', 'Effect on food chain', 'Increase in production']),
 }
 
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY}
+# 2022 Higher: Section A Q1-Q12 at 10 marks (any seven), Section B Q13-Q18 at 50 (any three).
+HIGHER_2022 = '''
+Q1(a)(i)|2|3|12|Organic matter contains the remains of plants and animals
+Q1(a)(ii)|2|3|12|increased water‐holding capacity of the soil
+Q1(a)(iii)|6|3|12|Weigh empty crucible
+Q1(b)(i)|4|4|12|Rich in nutrients
+Q1(b)(ii)|4|4|12|Livestock type / animal diet
+Q1(b)(iii)–(iv)|2|4|12|In spring on an overcast and misty day*
+Q2(a)|4|5|13|B = Blue Leicester
+Q2(b)|6|5|13|Details on next page
+Q3(a)|6|6|16|At least 2 trays of 100
+Q3(b)|2|6|16|Quantitative*
+Q3(c)|2|6|16|Seeds will not germinate at colder temperatures
+Q4(a)|2|7|16|Disease causing (organism)
+Q4(b)|6|7|16|TB / brucellosis
+Q4(c)|2|7|16|Lock up or fence or surround with netting flocks
+Q5(a)|6|8|17|genetics or breed / sex
+Q5(b)(i)|2|8|17|2020*
+Q5(b)(ii)|2|8|17|Improved breeding (genetics)
+Q6(a)|6|9|18|Shelter for animals or crops
+Q6(b)|2|9|18|Increased use of traditional breeds
+Q6(c)|2|9|18|Adapted to local conditions
+Q7(a)|4|10|18|333÷698 x 100÷1
+Q7(b)|4|10|18|283÷200 = 1.4 kg ADG
+Q7(c)|2|10|18|less efficient at
+Q8(a)(i)|3|11|19|Crop rotation to prevent build‐up of pests
+Q8(a)(ii)|3|11|19|Targeted treatment of cows with high SCC
+Q8(b)|4|11|19|niche market commands higher price
+Q9(a)(i)|6|12|20|D = 3, 2, 0
+Q9(a)(ii)|4|12|20|rumen is not fully developed
+Q9(b)(i)|4|13|20|Fibre (cellulose) degradation
+Q9(b)(ii)|3|13|20|Majority of feed in Irish system is pasture based
+Q9(b)(iii)|3|13|20|To ensure the safety of food
+Q10(a)|2|14|21|Miscanthus – perennial
+Q10(b)|4|14|21|rhizomes need to be planted at a depth
+Q10(c)|4|14|21|renewable source of energy
+Q11(a)(i)|4|15|22|Plant structure: Root hairs
+Q11(a)(ii)|4|15|22|requiring energy
+Q11(a)(iii)|2|15|22|Two organisms living together with mutual benefit
+Q11(b)(i)|2|15|22|Growth of side shoots
+Q11(b)(ii)|2|15|22|Phosphorus deficiency
+Q11(b)(iii)|4|15|22|increased soil:root contact
+Q11(b)(iv)|2|15|22|Crop rotation / polycultures
+Q12(a)(i)|2|16|23|The portion of the dry matter in a feed that is digested by animals
+Q12(a)(ii)|4|16|23|As the harvest date is delayed after 20 May
+Q12(a)(iii)|4|16|23|The higher the DMD of the silage the higher LWG
+Q12(b)(i)|2|17|23|Chemical fertiliser still present in the grass
+Q12(b)(ii)|2|17|23|Low leaf : stem ratio
+Q12(b)(iii)|4|17|23|Sugar provides feed for
+Q12(b)(iv)|2|17|23|Add molasses or enzymes
+Q13(a)(i)|8|20|24|Enabling farmers to determine grass supplies
+Q13(a)(ii)|6|20|24|6 x 250 = 1500 kg DM / ha
+Q13(a)(iii)|2|20|24|Italian ryegrass
+Q13(a)(iv)|6|21|24|Reproductive stage
+Q13(b)(i)|12|21|24|Increased grass productivity or liveweight gain or milk yield
+Q13(b)(ii)|4|21|24|Two sets of seeds of equal size
+Q13(b)(iii)|8|22|25|Less than 85% germinated
+Q13(b)(iv)|4|22|25|Less weeds ‐ less chemical herbicides required
+Q14(a)(i)|10|23|25|Laxative to clear out the digestive system
+Q14(a)(ii)|2|23|25|Colostrum quality decreases (3.7%) every hour after birth
+Q14(a)(iii)|3|23|25|Doesn’t contain antibodies to diseases present on the farm
+Q14(a)(iv)|3|23|25|Prevent bacteria multiplying
+Q14(a)(v)|4|24|25|Quality of the colostrum is very poor
+Q14(b)(i)|6|24|26|A = 12 ‐ 13%
+Q14(b)(ii)|8|24|26|Increased energy to support metabolism
+Q14(c)(i)|9|25|26|Space sheeting or high roof
+Q14(c)(ii)|5|25|26|Correct indication of arrows coming in at side
+Q14(d)(i)|6|26|26|Flock 1 – medium level of eggs
+Q14(d)(ii)|3|26|26|Parasites may have built up a resistance to dose
+Q14(d)(iii)|5|26|27|Help to determine the need to treat (dose) animals
+Q15(a)(i)|6|27|27|Flush ewes on good quality pasture or tupping dose
+Q15(a)(ii)|3|27|27|Beware of bull or ram or boar or cows with calves
+Q15(a)(iii)|8|27|27|Choose the sex of the calf
+Q15(b)(i)|6|28|28|pH = 6.2 – 7.0
+Q15(b)(ii)|3|28|28|Indicates when cow is calving and alerts farmer
+Q15(b)(iii)|6|28|28|Duration of oestrus = 18 – 24 hrs
+Q15(b)(iv)|6|29|28|Identify cows with high cell count (mastitis)
+Q15(c)(i)|9|29|28|Ammonia or NH
+Q15(c)(ii)|3|29|28|Rotating brushes – allow animals to scratch
+Q16(a)(i)|9|30|28|Sward composition / rate of N application
+Q16(a)(ii)|3|30|28|Increase number of cows per treatment
+Q16(a)(iii)|3|30|29|as the investigation was carried out over a long period of time
+Q16(b)(i)|3|30|29|Treatment 3
+Q16(b)(ii)|6|31|29|Highest amount of fat and protein (A + B – C)
+Q16(b)(iii)|3|31|29|Efficient use or spreading (spreader calibrated properly)
+Q16(c)(i)|11|31|29|Zero grazing is not accepted
+Q16(c)(ii)|12|32|29|Wash roots (remove soil)
+Q17(a)(i)|9|33|30|D ‐ 6, 3, 0 (showing layers)
+Q17(a)(ii)|8|33|30|Creating channels for increased drainage
+Q17(a)(iii)|6|34|30|Area of pasture = 98 x 178 = 17444m
+Q17(a)(iv)|3|34|30|Area was close to dung pad or higher organic matter
+Q17(b)(i)|4|34|30|Continually produce offspring with higher yields
+Q17(b)(ii)|6|35|30|genetic make‐up of an organism
+Q17(c)(i)|8|35|30|Bazooka*
+Q17(c)(ii)|6|35|30|collect pollen from anther
+Q17(d)(i)|6|36|31|Gene responsible for a specific trait is identified
+Q17(d)(ii)|8|36|31|Disease and pest resistant varieties would lead to increased yields
+Q18(a)(i)|13|37|31|4 + 4 + 3 +2
+Q18(a)(ii)|8|38|31|use renewable energy sources
+Q18(b)(i)|3|38|32|Weed killer used before you see weeds to prevent them growing
+Q18(b)(ii)|12|39|32|Cultural control has to be the most important part of the IMS
+Q18(c)(i)|7|40|33|Cattle rearing*
+Q18(c)(ii)|7|40|33|Dairy*
+'''
+
+POOLS_2022_HIGHER = {
+    'Q2(a)': (4, ['A', 'B', 'C', 'D', 'E', 'F']),
+    'Q10(b)': (1, ['Kale', 'Miscanthus', 'Oilseed rape (OSR)']),
+    'Q10(c)': (1, ['Kale', 'Miscanthus', 'Oilseed rape (OSR)']),
+    'Q13(a)(iii)': (2, ['A', 'B', 'C']),
+    'Q15(a)(i)': (1, ['Ewes', 'Heifers or cows: prostaglandin after natural heats', 'Heifers or cows: two prostaglandin shots', 'Heifers or cows: progesterone (P4) device', 'Sows']),
+    'Q18(a)(ii)': (1, ['Animal enterprise', 'Tillage enterprise']),
+}
+
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER}
 
 SOURCES = [
+    (2022, 'higher', 'A', HIGHER_2022,
+     '690cca40b2798863c397126cac71dc076d4fd3d6cb38395fee63c57625dc8f7f',
+     '9e868b6c11ecf6bf71da03b8ced52b3be4aa80bbacb205b5fd418b555abd1a40'),
     (2023, 'ordinary', 'G', ORDINARY_2023,
      '98bdf03549315bcde81f97140f8d530f1081839c7aa7014c1ac8d00fda548510',
      '64da1086feec80a142d752edffcb6104de0a1cd162367ecca6ebdf5d7695b0b1'),
@@ -1338,7 +1455,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -1389,6 +1506,8 @@ MODERN_LAYOUTS = {
                       'marks':lambda n: 10 if n<=12 else 50},
     (2025,'ordinary'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q15','Q17'},
                         'marks':lambda n: 10 if n<=12 else 50},
+    (2022,'higher'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q14','Q17'},
+                      'marks':lambda n: 10 if n<=12 else 50},
     (2023,'ordinary'): {'either':{'Q6','Q8','Q9','Q10'}, 'bothWithEither':{'Q13'}, 'oneWithEither':{'Q15'},
                         'marks':lambda n: 10 if n<=12 else 50},
     (2023,'higher'): {'either':{'Q1','Q7','Q9','Q10'}, 'bothWithEither':{'Q13','Q16'},
@@ -1475,7 +1594,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101. Remaining editions stay open.')
 
 
 if __name__=='__main__':

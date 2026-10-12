@@ -4,6 +4,1782 @@
   "method": "Independent English 2010 and 2011 Higher/Ordinary, English 2012 Higher, plus Irish 2011 Ordinary, paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.",
   "papers": [
     {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "sourceHashes": {
+        "exampapers": "690cca40b2798863c397126cac71dc076d4fd3d6cb38395fee63c57625dc8f7f",
+        "markingschemes": "9e868b6c11ecf6bf71da03b8ced52b3be4aa80bbacb205b5fd418b555abd1a40"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2022 HL Q1(a)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 3,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Organic matter contains the remains of plants and animals"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q1(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q1(a)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 3,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "increased water‐holding capacity of the soil"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q1(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q1(a)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 3,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Weigh empty crucible"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q1(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q1(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Rich in nutrients"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q1(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q1(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Livestock type / animal diet"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q1(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q1(b)(iii)–(iv)",
+          "marksPerResponse": 2,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "In spring on an overcast and misty day*"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q1(b)(iii)–(iv)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q2(a)",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "B = Blue Leicester"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 4,
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2022 HL Q2(a)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q2(b)",
+          "marksPerResponse": 6,
+          "paperPage": 5,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Details on next page"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q2(b)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q3(a)",
+          "marksPerResponse": 6,
+          "paperPage": 6,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "At least 2 trays of 100"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q3(a)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q3(b)",
+          "marksPerResponse": 2,
+          "paperPage": 6,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Quantitative*"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q3(b)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q3(c)",
+          "marksPerResponse": 2,
+          "paperPage": 6,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Seeds will not germinate at colder temperatures"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q3(c)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q4(a)",
+          "marksPerResponse": 2,
+          "paperPage": 7,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Disease causing (organism)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q4(a)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q4(b)",
+          "marksPerResponse": 6,
+          "paperPage": 7,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "TB / brucellosis"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q4(b)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q4(c)",
+          "marksPerResponse": 2,
+          "paperPage": 7,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Lock up or fence or surround with netting flocks"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q4(c)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q5(a)",
+          "marksPerResponse": 6,
+          "paperPage": 8,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "genetics or breed / sex"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q5(a)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q5(b)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 8,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "2020*"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q5(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q5(b)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 8,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 17,
+            "text": "Improved breeding (genetics)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q5(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q6(a)",
+          "marksPerResponse": 6,
+          "paperPage": 9,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "Shelter for animals or crops"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q6(a)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q6(b)",
+          "marksPerResponse": 2,
+          "paperPage": 9,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "Increased use of traditional breeds"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q6(b)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q6(c)",
+          "marksPerResponse": 2,
+          "paperPage": 9,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "Adapted to local conditions"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q6(c)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q7(a)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "333÷698 x 100÷1"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q7(a)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q7(b)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "283÷200 = 1.4 kg ADG"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q7(b)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q7(c)",
+          "marksPerResponse": 2,
+          "paperPage": 10,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 18,
+            "text": "less efficient at"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q7(c)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q8(a)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "Crop rotation to prevent build‐up of pests"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q8(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q8(a)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "Targeted treatment of cows with high SCC"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q8(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q8(b)",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 19,
+            "text": "niche market commands higher price"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q8(b)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q9(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 12,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "D = 3, 2, 0"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q9(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q9(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 12,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "rumen is not fully developed"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q9(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q9(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 13,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "Fibre (cellulose) degradation"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q9(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q9(b)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "Majority of feed in Irish system is pasture based"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q9(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q9(b)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 20,
+            "text": "To ensure the safety of food"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q9(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q10(a)",
+          "marksPerResponse": 2,
+          "paperPage": 14,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "Miscanthus – perennial"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q10(a)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q10(b)",
+          "marksPerResponse": 4,
+          "paperPage": 14,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "rhizomes need to be planted at a depth"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Kale",
+              "Miscanthus",
+              "Oilseed rape (OSR)"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2022 HL Q10(b)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q10(c)",
+          "marksPerResponse": 4,
+          "paperPage": 14,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 21,
+            "text": "renewable source of energy"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Kale",
+              "Miscanthus",
+              "Oilseed rape (OSR)"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2022 HL Q10(c)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q11(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 15,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "Plant structure: Root hairs"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q11(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q11(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 15,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "requiring energy"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q11(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q11(a)(iii)",
+          "marksPerResponse": 2,
+          "paperPage": 15,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "Two organisms living together with mutual benefit"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q11(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q11(b)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 15,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "Growth of side shoots"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q11(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q11(b)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 15,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "Phosphorus deficiency"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q11(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q11(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 15,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "increased soil:root contact"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q11(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q11(b)(iv)",
+          "marksPerResponse": 2,
+          "paperPage": 15,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 22,
+            "text": "Crop rotation / polycultures"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q11(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q12(a)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 16,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "The portion of the dry matter in a feed that is digested by animals"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q12(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q12(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 16,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "As the harvest date is delayed after 20 May"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q12(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q12(a)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 16,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "The higher the DMD of the silage the higher LWG"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q12(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q12(b)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 17,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Chemical fertiliser still present in the grass"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q12(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q12(b)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 17,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Low leaf : stem ratio"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q12(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q12(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 17,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Sugar provides feed for"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q12(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q12(b)(iv)",
+          "marksPerResponse": 2,
+          "paperPage": 17,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 23,
+            "text": "Add molasses or enzymes"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q12(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q13(a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 20,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Enabling farmers to determine grass supplies"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q13(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q13(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 20,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "6 x 250 = 1500 kg DM / ha"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q13(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q13(a)(iii)",
+          "marksPerResponse": 2,
+          "paperPage": 20,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Italian ryegrass"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 2,
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2022 HL Q13(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q13(a)(iv)",
+          "marksPerResponse": 6,
+          "paperPage": 21,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Reproductive stage"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q13(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q13(b)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 21,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Increased grass productivity or liveweight gain or milk yield"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q13(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q13(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 21,
+          "schemePage": 24,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 24,
+            "text": "Two sets of seeds of equal size"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q13(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q13(b)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 22,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "Less than 85% germinated"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q13(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q13(b)(iv)",
+          "marksPerResponse": 4,
+          "paperPage": 22,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "Less weeds ‐ less chemical herbicides required"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q13(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(a)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 23,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "Laxative to clear out the digestive system"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(a)(ii)",
+          "marksPerResponse": 2,
+          "paperPage": 23,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "Colostrum quality decreases (3.7%) every hour after birth"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(a)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 23,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "Doesn’t contain antibodies to diseases present on the farm"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(a)(iv)",
+          "marksPerResponse": 3,
+          "paperPage": 23,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "Prevent bacteria multiplying"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(a)(v)",
+          "marksPerResponse": 4,
+          "paperPage": 24,
+          "schemePage": 25,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 25,
+            "text": "Quality of the colostrum is very poor"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(a)(v)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(b)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 24,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "A = 12 ‐ 13%"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(b)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 24,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "Increased energy to support metabolism"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(c)(i)",
+          "marksPerResponse": 9,
+          "paperPage": 25,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "Space sheeting or high roof"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(c)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(c)(ii)",
+          "marksPerResponse": 5,
+          "paperPage": 25,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "Correct indication of arrows coming in at side"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(d)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 26,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "Flock 1 – medium level of eggs"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(d)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(d)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 26,
+          "schemePage": 26,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 26,
+            "text": "Parasites may have built up a resistance to dose"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q14(d)(iii)",
+          "marksPerResponse": 5,
+          "paperPage": 26,
+          "schemePage": 27,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 27,
+            "text": "Help to determine the need to treat (dose) animals"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q14(d)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q15(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 27,
+          "schemePage": 27,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 27,
+            "text": "Flush ewes on good quality pasture or tupping dose"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Ewes",
+              "Heifers or cows: prostaglandin after natural heats",
+              "Heifers or cows: two prostaglandin shots",
+              "Heifers or cows: progesterone (P4) device",
+              "Sows"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2022 HL Q15(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q15(a)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 27,
+          "schemePage": 27,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 27,
+            "text": "Beware of bull or ram or boar or cows with calves"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q15(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q15(a)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 27,
+          "schemePage": 27,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 27,
+            "text": "Choose the sex of the calf"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q15(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q15(b)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 28,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "pH = 6.2 – 7.0"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q15(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q15(b)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 28,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "Indicates when cow is calving and alerts farmer"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q15(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q15(b)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 28,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "Duration of oestrus = 18 – 24 hrs"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q15(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q15(b)(iv)",
+          "marksPerResponse": 6,
+          "paperPage": 29,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "Identify cows with high cell count (mastitis)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q15(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q15(c)(i)",
+          "marksPerResponse": 9,
+          "paperPage": 29,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "Ammonia or NH"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q15(c)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q15(c)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 29,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "Rotating brushes – allow animals to scratch"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q15(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q16(a)(i)",
+          "marksPerResponse": 9,
+          "paperPage": 30,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "Sward composition / rate of N application"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q16(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q16(a)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 30,
+          "schemePage": 28,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 28,
+            "text": "Increase number of cows per treatment"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q16(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q16(a)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 30,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "as the investigation was carried out over a long period of time"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q16(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q16(b)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 30,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "Treatment 3"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q16(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q16(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 31,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "Highest amount of fat and protein (A + B – C)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q16(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q16(b)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 31,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "Efficient use or spreading (spreader calibrated properly)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q16(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q16(c)(i)",
+          "marksPerResponse": 11,
+          "paperPage": 31,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "Zero grazing is not accepted"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q16(c)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q16(c)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 32,
+          "schemePage": 29,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 29,
+            "text": "Wash roots (remove soil)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q16(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q17(a)(i)",
+          "marksPerResponse": 9,
+          "paperPage": 33,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "D ‐ 6, 3, 0 (showing layers)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q17(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q17(a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 33,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "Creating channels for increased drainage"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q17(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q17(a)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 34,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "Area of pasture = 98 x 178 = 17444m"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q17(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q17(a)(iv)",
+          "marksPerResponse": 3,
+          "paperPage": 34,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "Area was close to dung pad or higher organic matter"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q17(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q17(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 34,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "Continually produce offspring with higher yields"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q17(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q17(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 35,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "genetic make‐up of an organism"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q17(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q17(c)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 35,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "Bazooka*"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q17(c)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q17(c)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 35,
+          "schemePage": 30,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 30,
+            "text": "collect pollen from anther"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q17(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q17(d)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 36,
+          "schemePage": 31,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 31,
+            "text": "Gene responsible for a specific trait is identified"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q17(d)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q17(d)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 36,
+          "schemePage": 31,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 31,
+            "text": "Disease and pest resistant varieties would lead to increased yields"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q17(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q18(a)(i)",
+          "marksPerResponse": 13,
+          "paperPage": 37,
+          "schemePage": 31,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 31,
+            "text": "4 + 4 + 3 +2"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q18(a)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q18(a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 38,
+          "schemePage": 31,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 31,
+            "text": "use renewable energy sources"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Animal enterprise",
+              "Tillage enterprise"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2022 HL Q18(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q18(b)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 38,
+          "schemePage": 32,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 32,
+            "text": "Weed killer used before you see weeds to prevent them growing"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q18(b)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q18(b)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 39,
+          "schemePage": 32,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 32,
+            "text": "Cultural control has to be the most important part of the IMS"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q18(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q18(c)(i)",
+          "marksPerResponse": 7,
+          "paperPage": 40,
+          "schemePage": 33,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 33,
+            "text": "Cattle rearing*"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q18(c)(i)"
+          ]
+        },
+        {
+          "ref": "2022 HL Q18(c)(ii)",
+          "marksPerResponse": 7,
+          "paperPage": 40,
+          "schemePage": 33,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 33,
+            "text": "Dairy*"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2022 HL Q18(c)(ii)"
+          ]
+        }
+      ]
+    },
+    {
       "year": 2023,
       "level": "ordinary",
       "lang": "ev",
@@ -19785,7 +21561,7 @@
       "level": "higher",
       "lang": "ev",
       "paperFileid": "LC024ALP000EV.pdf",
-      "independentCensus": "open"
+      "independentCensus": "boundary-reviewed"
     },
     {
       "year": 2022,
@@ -19922,6 +21698,306 @@
     }
   ],
   "questionMarkChecks": [
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "(a)": 4,
+        "(b)": 6
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q3",
+      "units": {
+        "(a)": 6,
+        "(b)": 2,
+        "(c)": 2
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "(a)": 2,
+        "(b)": 6,
+        "(c)": 2
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "(a)": 6,
+        "(b)": 4
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "(a)": 6,
+        "(b)": 2,
+        "(c)": 2
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "(a)": 4,
+        "(b)": 4,
+        "(c)": 2
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "(a)": 6,
+        "(b)": 4
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q10",
+      "units": {
+        "(a)": 2,
+        "(b)": 4,
+        "(c)": 4
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q11",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q12",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q13",
+      "units": {
+        "(a)": 22,
+        "(b)": 28
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q14",
+      "units": {
+        "(a)": 22,
+        "(b)": 14,
+        "(c)": 14,
+        "(d)": 14
+      },
+      "rule": "both (a) and (b) with either (c) or (d)",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q15",
+      "units": {
+        "(a)": 17,
+        "(b)": 21,
+        "(c)": 12
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q16",
+      "units": {
+        "(a)": 15,
+        "(b)": 12,
+        "(c)": 23
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q17",
+      "units": {
+        "(a)": 26,
+        "(b)": 10,
+        "(c)": 14,
+        "(d)": 14
+      },
+      "rule": "both (a) and (b) with either (c) or (d)",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q18",
+      "units": {
+        "(a)": 21,
+        "(b)": 15,
+        "(c)": 14
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null
+    },
     {
       "year": 2023,
       "level": "ordinary",
