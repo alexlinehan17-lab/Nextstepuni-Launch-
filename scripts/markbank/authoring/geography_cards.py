@@ -54,6 +54,7 @@ import geography_review_2022_hl as REVIEW_2022_HL
 import geography_review_2022_ol as REVIEW_2022_OL
 import geography_review_2021_hl as REVIEW_2021_HL
 import geography_review_2021_ol as REVIEW_2021_OL
+import geography_review_2020_hl as REVIEW_2020_HL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -92,6 +93,7 @@ REVIEWED = {
     (2022, 'ordinary'): REVIEW_2022_OL,
     (2021, 'higher'): REVIEW_2021_HL,
     (2021, 'ordinary'): REVIEW_2021_OL,
+    (2020, 'higher'): REVIEW_2020_HL,
 }
 
 # 2021-2026 are carded in full. An earlier sitting joins the corpus only once
@@ -942,6 +944,8 @@ COMPANIONS: dict[int, dict[str, str]] = {
     2022: {'place': 'Clonmel', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV.jpg',
            'aerial': 'LC005CLP004EV.jpg'},
     2021: {'place': 'Foxford', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    2020: {'place': 'Arklow', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
            'aerial': 'LC005CLP004EV.jpg'},
 }
 

@@ -1,6 +1,7 @@
 {
   "subjectId": "geography",
   "years": [
+    2020,
     2021,
     2022,
     2023,
@@ -12,11 +13,1037 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 1443,
-  "includedBaseTasks": 1443,
+  "paperBaseTasks": 1557,
+  "includedBaseTasks": 1557,
   "excludedBaseTasks": 0,
-  "authoredCards": 1544,
+  "authoredCards": 1669,
   "baseTasks": [
+    {
+      "id": "geography-2020-hl-p1-q1",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q1(i)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q1-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q1(ii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q1-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q1(iii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q1-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q1(iv)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q2",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q2(i)",
+      "title": "Sedimentary Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q2-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q2(ii)",
+      "title": "Sedimentary Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q3",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q3(i)",
+      "title": "Physical Features and Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q3-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q3(ii)",
+      "title": "Physical Features and Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q4",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q4(i)",
+      "title": "Glaciation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q4-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q4(ii)",
+      "title": "Glaciation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q5",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q5(i)",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q5-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q5(ii)",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q6",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q6(i)",
+      "title": "Landscape Identification",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q6-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q6(ii)",
+      "title": "Landscape Identification",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q7",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q7(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q7-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q7(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q7-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q7(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q7-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q7(iv)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q8",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q8",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q9",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q9(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q9-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q9(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q9-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q9(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q9-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q9(iv)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q10",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q10(i)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q10-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q10(ii)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q10-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q10(iii)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q10-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q10(iv)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q11",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q11(i)",
+      "title": "Population Statistics – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q11-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q11(ii)",
+      "title": "Population Statistics – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q11-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q11(iii)",
+      "title": "Population Statistics – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q11-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q11(iv)",
+      "title": "Population Statistics – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q12",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q12(i)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q12-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q12(ii)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q12-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q12(iii)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p1-q12-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2020 HL Part 1 Q12(iv)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q1a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q1A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q1b",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q1B",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q1c",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q1C",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q2a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q2A(i)",
+      "title": "Folding and Faulting",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q2a-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q2A(ii)",
+      "title": "Folding and Faulting",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q2a-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q2A(iii)",
+      "title": "Folding and Faulting",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q2a-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q2A(iv)",
+      "title": "Folding and Faulting",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q2a-v",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q2A(v)",
+      "title": "Folding and Faulting",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q2a-vi",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q2A(vi)",
+      "title": "Folding and Faulting",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q2a-vii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q2A(vii)",
+      "title": "Folding and Faulting",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q2b-route-i-fluvial-landform",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q2B",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q2c",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q2C",
+      "title": "Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q3a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q3A(i)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q3a-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q3A(ii)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q3a-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q3A(iii)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q3a-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q3A(iv)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q3a-v",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q3A(v)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q3a-vi",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q3A(vi)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q3a-vii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q3A(vii)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q3b",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q3B",
+      "title": "Isostasy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q3c-mining",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q3C",
+      "title": "Human Interaction with the Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q4a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q4A",
+      "title": "Map Skills",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q4b",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q4B",
+      "title": "Secondary Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q4c",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q4C",
+      "title": "Urban Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q5a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q5A(i)",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q5a-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q5A(ii)",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q5a-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q5A(iii)",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q5a-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q5A(iv)",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q5a-v",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q5A(v)",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q5b",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q5B",
+      "title": "Population Dynamics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q5c",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q5C",
+      "title": "Socio-Economic Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q6a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q6A(i)",
+      "title": "Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q6a-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q6A(ii)",
+      "title": "Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q6a-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q6A(iii)",
+      "title": "Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q6a-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q6A(iv)",
+      "title": "Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q6a-v",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q6A(v)",
+      "title": "Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q6b",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q6B",
+      "title": "Primary Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q6c-language",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q6C",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q7a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q7A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q7b",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q7B",
+      "title": "Multinational Company",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q7c",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q7C",
+      "title": "Ireland and the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q8a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q8A(i)",
+      "title": "Government Debt",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q8a-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q8A(ii)",
+      "title": "Government Debt",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q8b",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q8B",
+      "title": "Developing Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q8c",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q8C",
+      "title": "Location of Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q9a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q9A(i)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q9a-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q9A(ii)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q9a-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q9A(iii)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q9a-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q9A(iv)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q9a-v",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q9A(v)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q9a-vi",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q9A(vi)",
+      "title": "Measuring Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q9b-footloose-industries",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q9B",
+      "title": "Economic Activity in a Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q9c",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q9C",
+      "title": "Environmental Impact",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q10a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q10A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q10b",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q10B",
+      "title": "Future Urbanism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q10c",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q10C",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q11a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q11A(i)",
+      "title": "Irish Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q11a-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q11A(ii)",
+      "title": "Irish Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q11a-iii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q11A(iii)",
+      "title": "Irish Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q11a-iv",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q11A(iv)",
+      "title": "Irish Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q11a-v",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q11A(v)",
+      "title": "Irish Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q11b",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q11B",
+      "title": "Urban Expansion",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q11c",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q11C",
+      "title": "Rural Settlement Patterns",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q12a",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q12A(i)",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q12a-ii",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q12A(ii)",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q12b",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q12B",
+      "title": "Urban Planning",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q12c-income-levels",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q12C",
+      "title": "Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q13",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q13",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q14",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q14",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q15",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q15",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q16",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q16",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q17",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q17",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q18",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q18",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q19",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q19",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q20",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q20",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q21",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q21",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q22",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q22",
+      "title": "The Atmosphere – Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q23",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q23",
+      "title": "The Atmosphere – Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2020-hl-p2-q24",
+      "year": 2020,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2020 HL Part 2 Q24",
+      "title": "The Atmosphere – Ocean Environment",
+      "status": "authored"
+    },
     {
       "id": "geography-2021-hl-p1-q1",
       "year": 2021,
@@ -13007,6 +14034,15 @@
   ],
   "sittings": [
     {
+      "year": 2020,
+      "level": "higher",
+      "paperBaseTasks": 114,
+      "includedBaseTasks": 114,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 125,
+      "reviewed": true
+    },
+    {
       "year": 2021,
       "level": "higher",
       "paperBaseTasks": 116,
@@ -13116,6 +14152,64 @@
     }
   ],
   "selectionAudit": [
+    {
+      "questionRef": "2020 HL Part 2 Q2B",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2020 HL Part 2 Q3C",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2020 HL Part 2 Q4B",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 5
+    },
+    {
+      "questionRef": "2020 HL Part 2 Q6C",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2020 HL Part 2 Q9B",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2020 HL Part 2 Q12C",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2020 HL Part 2 Q14",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 5
+    },
     {
       "questionRef": "2021 HL Part 2 Q1B",
       "classification": "finite-expanded",
