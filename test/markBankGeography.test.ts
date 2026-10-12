@@ -7,7 +7,8 @@ import { GEOGRAPHY_STRANDS } from '../components/MarkBank/deck';
 import census from '../scripts/markbank/authored/geography-census.json';
 import reviewAudit from '../scripts/markbank/authored/geography-reviewed-audit.json';
 import reviewedRuntime from '../data/examTopics/geography-reviewed-question-runtime.json';
-import { examTopicIdsForQuestion } from '../data/examTopics/registry';
+import shippedRuntime from '../data/examTopics/geography-question-runtime.json';
+import { examTopicDefinition, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import {
   geographyMarks,
   geographyScoreId,
@@ -29,6 +30,13 @@ const isReviewed = (card: { year: number; level: string }) =>
 const LEGACY = ALL.filter(card => !isReviewed(card));
 const REVIEWED = ALL.filter(isReviewed);
 const authoredById = new Map(authored.cards.map(card => [card.id, card]));
+// The exact-question Atlas join that shipped before the review (English editions).
+const shippedAtlasTopics = (
+  level: string, year: number, paperKey: string, fileid: string, n: string,
+): Set<string> => new Set(shippedRuntime.questionMappings
+  .filter(row => row[0] === (level === 'higher' ? 'h' : 'o') && row[1] === 'e'
+    && row[2] === year && row[3] === paperKey && row[4] === fileid && String(row[5]) === n)
+  .flatMap(row => (row[6] as number[]).map(index => shippedRuntime.topicIds[index])));
 
 describe('complete answerable 2021–2026 Geography corpus', () => {
   it('accounts for every paper task before finite route expansion', () => {
@@ -584,8 +592,16 @@ describe('independently reviewed Geography sittings', () => {
     for (const [key, ids] of union) {
       const [part, n] = key.split('|');
       const fileid = part === '1' ? part1 : part2;
-      expect(examTopicIdsForQuestion('geography', level, year, 'main', n, `p${part}`, 'ev', fileid)
-        .sort(), `Part ${part} Q${n}`).toEqual([...ids].sort());
+      const filed = examTopicIdsForQuestion('geography', level, year, 'main', n, `p${part}`, 'ev', fileid);
+      // Every topic the reviewed tasks prove is filed.
+      expect(filed, `Part ${part} Q${n}`).toEqual(expect.arrayContaining([...ids]));
+      // The review adds and never removes: every current-course topic the
+      // shipped exact-question join gave this question is still filed, and
+      // nothing is filed that neither source gives.
+      const shipped = shippedAtlasTopics(level, year, `p${part}`, fileid, n);
+      expect(filed, `Part ${part} Q${n} keeps the shipped join`).toEqual(expect.arrayContaining(
+        [...shipped].filter(id => examTopicDefinition(id)?.course !== 'new')));
+      expect(filed.filter(id => !ids.has(id) && !shipped.has(id)), `Part ${part} Q${n}`).toEqual([]);
     }
     // The reference snapshot omitted Higher Part One Q5; the reviewed runtime adds it.
     expect(reviewedRuntime.questionMappings.some(row =>

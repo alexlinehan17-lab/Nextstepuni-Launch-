@@ -64,6 +64,12 @@ ATLAS_OUT = os.path.join(
     ROOT, 'data', 'examTopics', 'geography-reviewed-question-runtime.json')
 CROSSWALK = os.path.join(
     ROOT, 'data', 'examTopics', 'geography-curriculum-crosswalk.json')
+# The exact-question join the Atlas already ships. A reviewed question's row
+# replaces this one at runtime, so the reviewed row must carry every topic the
+# shipped join gave it: a review adds the topics its tasks prove and never
+# takes a question out of a topic a student already browses it under.
+REFERENCE_ATLAS = os.path.join(
+    ROOT, 'data', 'examTopics', 'geography-question-runtime.json')
 
 # Sittings whose every page and scheme allocation was independently reviewed.
 # Their cards come from the review ledger, not from the generic reader below.
@@ -1424,6 +1430,17 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
             '(geography-reviewed-audit.json) instead take one base task per '
             'separately priced printed part, from their review ledgers.'),
     }
+    with open(REFERENCE_ATLAS, encoding='utf-8') as handle:
+        reference = json.load(handle)
+    shipped: dict[tuple[str, int, str, str, str], set[str]] = {}
+    for level_code, lang_code, year, paper_key, fileid, n, indexes in reference['questionMappings']:
+        if lang_code != 'e':
+            continue
+        key = ('higher' if level_code == 'h' else 'ordinary', year, paper_key, fileid, str(n))
+        shipped.setdefault(key, set()).update(reference['topicIds'][i] for i in indexes)
+    for row in atlas_rows:
+        key = (row['level'], row['year'], row['paperKey'], row['fileid'], row['n'])
+        row['topicIds'] = sorted(set(row['topicIds']) | shipped.get(key, set()))
     topic_list = sorted({topic for row in atlas_rows for topic in row['topicIds']})
     atlas = {
         'schemaVersion': 1,
