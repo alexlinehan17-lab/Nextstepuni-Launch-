@@ -30,14 +30,14 @@
     "referenceOfficialAssociations": 690,
     "referenceMockAssociations": 609,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 575,
+    "matchedAssociations": 572,
     "sourceBlockedAssociations": 98,
-    "referenceAnomalyAssociations": 17,
-    "matchedLogicalCards": 527,
-    "reviewedLogicalCards": 14,
-    "reviewedOptionTopics": 56,
-    "reviewedSpecificTopics": 14,
-    "matchedQuestionTopicLinks": 567,
+    "referenceAnomalyAssociations": 20,
+    "matchedLogicalCards": 524,
+    "reviewedLogicalCards": 17,
+    "reviewedOptionTopics": 70,
+    "reviewedSpecificTopics": 19,
+    "matchedQuestionTopicLinks": 564,
     "retainedLocalLogicalCards": 536,
     "retainedWrittenLogicalCards": 144,
     "retainedPracticalLogicalCards": 392,
@@ -3984,7 +3984,7 @@
       "sitting": "main",
       "section": "2",
       "questionNumber": "10",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -3992,7 +3992,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP013EV.pdf",
         "questionNumber": "10"
-      }
+      },
+      "filedUnder": "art-higher-the-renaissance-c-1300-1600s",
+      "reason": "StudyClix files this 2018 higher heading under art-higher-the-baroque-c-1600-1700s. Decided 2026-10-12 from the SEC paper: Q10 is the altarpiece 'Assumption of the Virgin' by Titian (c.1488-1576), illustrated on the accompanying sheet: Titian is The Renaissance (c. 1300-1600s), not The Baroque (c. 1600-1700s). NextStepUni files the question under art-higher-the-renaissance-c-1300-1600s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-the-baroque-c-1600-1700s",
@@ -7464,7 +7466,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "6",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -7472,7 +7474,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "filedUnder": "art-ordinary-post-1960s-art-in-ireland",
+      "reason": "StudyClix files this 2018 ordinary heading under art-ordinary-section-a-todays-world. Decided 2026-10-12 from the SEC paper: Q6 is in Section 1 (Art in Ireland): the 'Dockers Monument' by Mike Duhan (b.1956), illustrated on the accompanying sheet, is Post 1960s Art in Ireland, not a Today's World question. NextStepUni files the question under art-ordinary-post-1960s-art-in-ireland, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-section-a-todays-world",
@@ -9792,7 +9796,7 @@
       "sitting": "main",
       "section": "2",
       "questionNumber": "11",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9800,7 +9804,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "11"
-      }
+      },
+      "filedUnder": "art-ordinary-the-baroque-c-1600-1700s",
+      "reason": "StudyClix files this 2018 ordinary heading under art-ordinary-europe-the-renaissance-c-1300-1600s. Decided 2026-10-12 from the SEC paper: Q11 is \"Choose one work by Caravaggio (1571-1610)\" with \"(b) Briefly describe and discuss Caravaggio's use of light\": Caravaggio is The Baroque (c. 1600-1700s), not The Renaissance. NextStepUni files the question under art-ordinary-the-baroque-c-1600-1700s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
@@ -12365,7 +12371,8 @@
       ],
       "topicIds": [
         "art-higher-artists-processes-and-media",
-        "art-higher-art-as-social-commentary-or-commentator"
+        "art-higher-art-as-social-commentary-or-commentator",
+        "art-higher-artists-theory-and-thinking"
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
@@ -20407,6 +20414,146 @@
   "reviewedOptionTopics": [
     {
       "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "Brunelleschi (1377-1446)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2018 - Question 14 - Brunelleschi (1377-1446)"
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "Peter Paul Rubens (1577-1640)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2018 - Question 14 - Peter Paul Rubens (1577-1640)"
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "Caravaggio (1571-1610)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2018 - Question 14 - Caravaggio (1571-1610)"
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "Auguste Rodin (1840-1917)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2018 - Question 14 - Auguste Rodin (1840-1917)"
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "Lucian Freud (1922-2011)",
+      "canonicalNodeId": "art-4-5",
+      "topicId": "art-higher-post-1960s-art",
+      "heading": "2018 - Question 14 - Lucian Freud (1922-2011)"
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Impressionism",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2018 - Question 15 - Impressionism"
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Fauvism",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2018 - Question 15 - Fauvism"
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Surrealism",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2018 - Question 15 - Surrealism"
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "De Stijl",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2018 - Question 15 - De Stijl"
+    },
+    {
+      "level": "ordinary",
+      "year": 2018,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Battle of San Romano” by Paolo Uccello (1397-1475)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2018 - Question 14 - “The Battle of San Romano” by Paolo Uccello (1397-1475)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2018,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“Creation of Adam” by Michelangelo Buonarroti (1475-1564)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2018 - Question 14 - “Creation of Adam” by Michelangelo Buonarroti (1475-1564)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2018,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“Lady Writing a Letter with her Maid” by Johannes Vermeer (1632-1675)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-ordinary-the-baroque-c-1600-1700s",
+      "heading": "2018 - Question 14 - “Lady Writing a Letter with her Maid” by Johannes Vermeer (1632-1675)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2018,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Dance Class” by Edgar Degas (1834-1917)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+      "heading": "2018 - Question 14 - “The Dance Class” by Edgar Degas (1834-1917)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2018,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“Soft Construction with Boiled Beans” by Salvador Dalí (1904-1989)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-ordinary-europe-modernism-c-1900-1960s",
+      "heading": "2018 - Question 14 - “Soft Construction with Boiled Beans” by Salvador Dalí (1904-1989)"
+    },
+    {
+      "level": "higher",
       "year": 2019,
       "fileid": "LC014ALP000EV.pdf",
       "questionNumber": "14",
@@ -21082,6 +21229,52 @@
       "questionNumber": "19",
       "topicIds": [
         "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "16",
+      "topicIds": [
+        "art-higher-artists-theory-and-thinking"
+      ],
+      "basis": "retained-local"
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "17",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2018,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "19",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "ordinary",
+      "year": 2018,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "9",
+      "topicIds": [
+        "art-ordinary-europe-the-renaissance-c-1300-1600s"
+      ]
+    },
+    {
+      "level": "ordinary",
+      "year": 2018,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "10",
+      "topicIds": [
+        "art-ordinary-europe-the-renaissance-c-1300-1600s"
       ]
     },
     {

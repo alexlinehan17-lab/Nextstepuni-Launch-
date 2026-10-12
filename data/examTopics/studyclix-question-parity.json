@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T23:13:44.688Z",
+  "generatedAt": "2026-10-12T23:24:57.824Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,9 +11,9 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 27230,
+    "matched": 27227,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 19,
+    "referenceAnomaly": 22,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
     "topicsWithGaps": 1341
@@ -3154,9 +3154,9 @@
       "totals": {
         "referenceTopics": 32,
         "referenceOfficialAssociations": 690,
-        "matched": 575,
+        "matched": 572,
         "sourceBlocked": 98,
-        "referenceAnomaly": 17,
+        "referenceAnomaly": 20,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
         "topicsWithGaps": 27
@@ -3487,9 +3487,9 @@
           "label": "The Baroque (c. 1600-1700s)",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/the-baroque-c-1600-1700s",
           "referenceOfficialAssociations": 8,
-          "matched": 6,
+          "matched": 5,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3499,6 +3499,10 @@
             {
               "heading": "2023 - Sample Paper - Section B - Question 9",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2018 - Section 2 - Question 10",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3711,9 +3715,9 @@
           "label": "Section A: Today's World",
           "sourcePath": "/leaving-certificate/art/ordinary/section-a-todays-world",
           "referenceOfficialAssociations": 118,
-          "matched": 107,
+          "matched": 106,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3759,6 +3763,10 @@
             {
               "heading": "2009 - Paper - Section 3 - Question 18",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2018 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3831,14 +3839,18 @@
           "label": "Europe - The Renaissance (c. 1300-1600s)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-the-renaissance-c-1300-1600s",
           "referenceOfficialAssociations": 28,
-          "matched": 24,
+          "matched": 23,
           "sourceBlocked": 1,
-          "referenceAnomaly": 3,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2008 - Paper - Section 2 - Question 10",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2018 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2019 - Section 2 - Question 11",

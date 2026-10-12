@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the complete Art Mark Bank corpus, 2019–2026.
+"""Build the complete Art Mark Bank corpus, 2018–2026.
 
 The question papers supply the exact prompts.  The marking schemes supply the
 published component allocations (to 2022) and descriptor bands (2023–2026).
@@ -19,10 +19,10 @@ files under its own heading.  A choose-N (N >= 2) list is always one card.  The
 four-criterion Section B/C essay remains intact because the SEC applies that
 rubric holistically.
 
-The complete corpus is therefore 684 cards across sixteen papers:
+The complete corpus is therefore 803 cards across eighteen papers:
 
-  * Higher Level:   62 (2019) + 62 (2020) + 62 + 62 + 26 + 26 + 26 + 26 = 352 cards
-  * Ordinary Level: 57 (2019) + 57 (2020) + 57 + 57 + 26 + 26 + 26 + 26 = 332 cards
+  * Higher Level:   62 a year 2018-2022 + 26 a year 2023-2026 = 414 cards
+  * Ordinary Level: 57 a year 2018-2022 + 26 a year 2023-2026 = 389 cards
 
 An audited year (AUDITED_YEARS) shows only the SEC's printed wording under the
 SEC's name: the descriptor bullets, criterion labels, scheme rows and marking
@@ -62,7 +62,7 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'art', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'art', 'authored.json')
 CENSUS_OUT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
 
-YEARS = tuple(range(2019, 2027))
+YEARS = tuple(range(2018, 2027))
 
 # A label printed inside an answer box ("Name of artwork:", "Heading 1:")
 # marks where an answer goes for an ask the question already makes, so it is
@@ -98,12 +98,14 @@ ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
 # Years whose SEC-attributed strings are all lifted from the printed page and
 # gated by tests/test_art_sec_wording.py: every year. The factory has no
 # written fallback, so a new year must join this tuple to build at all.
-AUDITED_YEARS = (2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
+AUDITED_YEARS = (2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
 
 EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
+    (2018, 'higher'): 20,
+    (2018, 'ordinary'): 21,
     (2019, 'higher'): 20,
     (2019, 'ordinary'): 21,
     (2020, 'higher'): 20,
@@ -123,6 +125,8 @@ EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
 }
 
 EXPECTED_CARDS_BY_YEAR_LEVEL = {
+    (2018, 'higher'): 62,
+    (2018, 'ordinary'): 57,
     (2019, 'higher'): 62,
     (2019, 'ordinary'): 57,
     (2020, 'higher'): 62,
@@ -148,6 +152,49 @@ EXPECTED_CARDS_BY_YEAR_LEVEL = {
 # label is printed in the question, and the first option's key keeps the
 # card's stable id (the withdrawn per-option ids are aliased in cardAliases.ts).
 PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
+    (2018, 'higher', 7): (
+        ('james-arthur-oconnor', 'James Arthur O’Connor (1792-1841)'),
+        ('frederic-william-burton', 'Frederic William Burton (1816-1900)'),
+        ('sarah-purser', 'Sarah Purser (1848-1943)'),
+        ('roderic-oconor', 'Roderic O’Conor (1860-1940)'),
+        ('john-behan', 'John Behan (b.1938)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+        ('geraldine-oneill', 'Geraldine O’Neill (b.1971)'),
+    ),
+    (2018, 'higher', 14): (
+        ('brunelleschi', 'Brunelleschi (1377-1446)'),
+        ('peter-paul-rubens', 'Peter Paul Rubens (1577-1640)'),
+        ('caravaggio', 'Caravaggio (1571-1610)'),
+        ('auguste-rodin', 'Auguste Rodin (1840-1917)'),
+        ('lucian-freud', 'Lucian Freud (1922-2011)'),
+    ),
+    (2018, 'higher', 15): (
+        ('impressionism', 'Impressionism'),
+        ('fauvism', 'Fauvism'),
+        ('surrealism', 'Surrealism'),
+        ('de-stijl', 'De Stijl'),
+    ),
+    # Two Georgian buildings: one heading, one card per part.
+    (2018, 'ordinary', 4): (
+        ('russborough-house', 'Russborough House'),
+        ('casino-at-marino', 'Casino at Marino'),
+    ),
+    (2018, 'ordinary', 7): (
+        ('daniel-maclise', 'Daniel Maclise (1806-1870)'),
+        ('sarah-purser', 'Sarah Purser (1848-1943)'),
+        ('paul-henry', 'Paul Henry (1876-1958)'),
+        ('sean-keating', 'Seán Keating (1889-1977)'),
+        ('nano-reid', 'Nano Reid (1900-1981)'),
+        ('rowan-gillespie', 'Rowan Gillespie (b.1953)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+    ),
+    (2018, 'ordinary', 14): (
+        ('battle-of-san-romano', '“The Battle of San Romano” by Paolo Uccello (1397-1475)'),
+        ('creation-of-adam', '“Creation of Adam” by Michelangelo Buonarroti (1475-1564)'),
+        ('lady-writing-a-letter', '“Lady Writing a Letter with her Maid” by Johannes Vermeer (1632-1675)'),
+        ('the-dance-class', '“The Dance Class” by Edgar Degas (1834-1917)'),
+        ('soft-construction-with-boiled-beans', '“Soft Construction with Boiled Beans” by Salvador Dalí (1904-1989)'),
+    ),
     # Two Georgian architects: one heading, one card.
     (2019, 'higher', 4): (
         ('edward-lovett-pearce', 'Edward Lovett Pearce (1699-1733)'),
@@ -342,6 +389,19 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
 # Irish Q7 artists, the Georgian buildings. A list in this table must span at
 # least two headings; the build fails on one that does not.
 OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
+    # 2018: Rodin (1840-1917) with the late 19th century; Lucian Freud as in
+    # 2020; Fauvism, Surrealism and De Stijl are Modernism.
+    (2018, 'higher', 14): {
+        'brunelleschi': 'art-4-1', 'peter-paul-rubens': 'art-4-2', 'caravaggio': 'art-4-2',
+        'auguste-rodin': 'art-4-3', 'lucian-freud': 'art-4-5',
+    },
+    (2018, 'higher', 15): {
+        'impressionism': 'art-4-3', 'fauvism': 'art-4-4', 'surrealism': 'art-4-4', 'de-stijl': 'art-4-4',
+    },
+    (2018, 'ordinary', 14): {
+        'battle-of-san-romano': 'art-4-1', 'creation-of-adam': 'art-4-1', 'lady-writing-a-letter': 'art-4-2',
+        'the-dance-class': 'art-4-3', 'soft-construction-with-boiled-beans': 'art-4-4',
+    },
     # 2019: Goya and Constable (Romanticism) have no heading of their own;
     # Nolde's Expressionism is Modernism; Op art is Post 1960s.
     (2019, 'higher', 14): {
@@ -427,6 +487,12 @@ REVIEWED_NON_ENUMERABLE_POOLS: dict[tuple[int, str, int], str] = {
 # cannot enter silently, while these reviewed open or logistical choices stay
 # faithful to the paper instead of being over-expanded.
 REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
+    (2018, 'ordinary', 9): (
+        '"Choose one work by Giotto": any work the candidate studied; the paper '
+        'prints no finite list to enumerate.'),
+    (2018, 'ordinary', 11): (
+        '"Choose one work by Caravaggio": any work the candidate studied; the '
+        'paper prints no finite list to enumerate.'),
     (2021, 'ordinary', 16): (
         '"Either online or in person" changes how the gallery was visited, '
         'not the knowledge or marked task.'),
@@ -441,6 +507,14 @@ REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
 # Page numbers are one-based within the separate official illustration PDF.
 # Every binding below was checked visually against the rendered sheet.
 ILLUSTRATION_PAGES: dict[tuple[int, str], dict[int, int]] = {
+    (2018, 'higher'): {
+        1: 1, 3: 1, 5: 1, 6: 1, 18: 1, 19: 1,
+        10: 2, 11: 2, 12: 2, 13: 2,
+    },
+    (2018, 'ordinary'): {
+        1: 1, 2: 1, 3: 1, 6: 1, 17: 1, 18: 1, 20: 1, 21: 1,
+        8: 2, 10: 2, 12: 2, 13: 2,
+    },
     (2019, 'higher'): {
         2: 1, 3: 1, 5: 1, 17: 1, 19: 1, 20: 1,
         9: 2, 11: 2, 12: 2, 13: 2,
@@ -522,6 +596,23 @@ for _year, _level, _topics in (
 # to give the question this heading; where the reference contradicts the
 # paper, the Atlas builder records a reviewed anomaly).
 LEGACY_QUESTION_TOPICS: dict[tuple[int, str], tuple[str, ...]] = {
+    (2018, 'higher'): (
+        # Q5 Foley's O'Connell Monument (completed 1882); Q7 the Irish-artist list.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-4',
+        # Q10 Titian (c.1488-1576), 'Assumption of the Virgin': High Renaissance.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-3',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        'art-6-0', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-3',
+    ),
+    (2018, 'ordinary'): (
+        # Q6 the "Dockers Monument" by Mike Duhan (b.1956), in Section 1.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        # Q9 Giotto and Q10 Donatello: the Renaissance (Proto, Early); Q11
+        # Caravaggio (1571-1610): Baroque.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-3',
+        'art-4-6',  # Q14: per option (OPTION_TOPICS)
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-3', 'art-6-1', 'art-6-3', 'art-6-1',
+    ),
     (2019, 'higher'): (
         # Q3 the 12th-century cross at Dysert O'Dea (Insular, c. 500-1100s);
         # Q6 works on the Great Famine; Q7 the Irish-artist list (one card).
@@ -1657,7 +1748,7 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
 
     runtime = {
         'subjectId': 'art',
-        'corpus': 'All separately marked written-examination tasks, 2019–2026; a printed choice is one card',
+        'corpus': 'All separately marked written-examination tasks, 2018–2026; a printed choice is one card',
         'cardCount': len(cards),
         'auditedYears': list(AUDITED_YEARS),
         # Lifted from each audited year's scheme by art_printed.py; the cards

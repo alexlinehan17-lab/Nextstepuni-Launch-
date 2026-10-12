@@ -768,6 +768,7 @@ const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 26, ordinary: 26 },
   2020: { higher: 62, ordinary: 57 },
   2019: { higher: 62, ordinary: 57 },
+  2018: { higher: 62, ordinary: 57 },
 };
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
 const artAdded = (level: 'higher' | 'ordinary') => Object.values(ART_ADDED)

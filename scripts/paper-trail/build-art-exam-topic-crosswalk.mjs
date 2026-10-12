@@ -311,6 +311,24 @@ const REVIEWED_REFERENCE_ANOMALIES = [
     topicId: 'art-ordinary-the-baroque-c-1600-1700s',
     evidence: "Q11 is 'The Supper at Emmaus' by Caravaggio (1571-1610), with \"(b) Briefly describe and discuss the Baroque style\": the paper itself places it in the Baroque (c. 1600-1700s), not The Renaissance.",
   },
+  {
+    level: 'higher', year: 2018, n: '10',
+    referenceTopicId: 'art-higher-the-baroque-c-1600-1700s',
+    topicId: 'art-higher-the-renaissance-c-1300-1600s',
+    evidence: "Q10 is the altarpiece 'Assumption of the Virgin' by Titian (c.1488-1576), illustrated on the accompanying sheet: Titian is The Renaissance (c. 1300-1600s), not The Baroque (c. 1600-1700s).",
+  },
+  {
+    level: 'ordinary', year: 2018, n: '6',
+    referenceTopicId: 'art-ordinary-section-a-todays-world',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is in Section 1 (Art in Ireland): the 'Dockers Monument' by Mike Duhan (b.1956), illustrated on the accompanying sheet, is Post 1960s Art in Ireland, not a Today's World question.",
+  },
+  {
+    level: 'ordinary', year: 2018, n: '11',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    evidence: "Q11 is \"Choose one work by Caravaggio (1571-1610)\" with \"(b) Briefly describe and discuss Caravaggio's use of light\": Caravaggio is The Baroque (c. 1600-1700s), not The Renaissance.",
+  },
 ];
 const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
   item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
@@ -618,6 +636,22 @@ for (const paper of localPapers) {
           .filter(Boolean)
           .map(nodeId => fallbackTopicForNode(paper.level, nodeId)),
       )];
+      // With no reference association, the local tags and the reviewed Mark
+      // Bank card are the evidence: the card's heading is always included.
+      const cardAdded = (WRITTEN_COMPONENTS.has(componentCode(paper.fileid))
+        ? cardTopicsByQuestion.get(exactKey) ?? []
+        : []).filter(index => !indexes.includes(index));
+      indexes = [...indexes, ...cardAdded];
+      if (paper.lang === 'ev' && cardAdded.length) {
+        reviewedSpecificTopics.push({
+          level: paper.level,
+          year: paper.year,
+          fileid: paper.fileid,
+          questionNumber: question.n,
+          topicIds: cardAdded.map(index => allTopics[index].id),
+          basis: 'retained-local',
+        });
+      }
       const logicalKey = logicalCardKey(paper, question.n);
       if (!retainedLogical.has(logicalKey)) {
         retainedLogical.add(logicalKey);
@@ -720,15 +754,15 @@ if (
   throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
 if (
-  matchedAssociations.length !== 575
+  matchedAssociations.length !== 572
   || sourceBlockedAssociations.length !== 98
-  || referenceAnomalyAssociations.length !== 17
-  || exactTopicsByCard.size !== 527
-  || reviewedTopicsByCard.size !== 16
-  || reviewedOnlyCards.length !== 14
-  || matchedQuestionTopicLinks !== 567
-  || reviewedOptionTopics.length !== 56
-  || reviewedSpecificTopics.length !== 14
+  || referenceAnomalyAssociations.length !== 20
+  || exactTopicsByCard.size !== 524
+  || reviewedTopicsByCard.size !== 19
+  || reviewedOnlyCards.length !== 17
+  || matchedQuestionTopicLinks !== 564
+  || reviewedOptionTopics.length !== 70
+  || reviewedSpecificTopics.length !== 19
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392
