@@ -24448,1043 +24448,1443 @@
   },
   {
     "id": "cons-2025-ol-q1-b",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-3-4",
     "conceptId": "preventing-rainwater-at-the-window-head",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2025 OL Q1(b)",
+    "stem": "The sketch shows the external wall and window of a dwelling house. The wall is a 400 mm concrete block wall with full-fill insulated cavity and is plastered on both sides. The fixed frame of the window is 120 mm × 80 mm and is thermally broken.",
     "questionText": "On your drawing, show the typical design detailing that prevents the penetration of rainwater at the window head.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
     "totalMarks": 4,
     "rows": [
       {
-        "id": "cons-2025-ol-q1-b-r1",
-        "kind": "point",
+        "id": "stepped-dpc",
+        "kind": "criterion",
         "verbatim": "Stepped DPC clearly identified",
         "marks": 4,
-        "openList": true,
-        "contextNote": ""
+        "contextNote": "Show and identify the stepped DPC over the concrete lintels at the window head, as in the scheme’s model section.",
+        "permittedMarks": [
+          0,
+          4
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2025-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q1-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "External wall and window head section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the window-head detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    }
   },
   {
     "id": "cons-2025-ol-q2-a",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-6-2",
     "conceptId": "advantages-of-insulating-a-sloped-ceiling",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2025 OL Q2(a)",
+    "stem": "The sketch shows a living area with a sloped ceiling under construction. The homeowners wish to have a high level of insulation in the sloped ceiling.",
     "questionText": "Discuss two advantages of highly insulating the sloped ceiling of the living area.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 6",
-      "answer": 2,
-      "ofParts": 7,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2025-ol-q2-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two advantages of highly insulating the sloped ceiling of the living area.",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Insulation will reduce heat loss in the house making it more energy efficient",
-            "To lower energy bills in the house",
-            "Reduces your carbon footprint",
-            "To increase comfort levels in the house",
-            "To reduce further the energy usage of the home and in turn reduce carbon emissions",
-            "Roof insulation can help reduce noise from outside",
-            "Insulation can help reduce the amount of condensation that forms in the roof"
-          ]
-        }
+        "id": "advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 6,
+        "contextNote": "Such as: less heat loss, so the house is more energy efficient; lower energy bills.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 6,
+        "contextNote": "A second, different advantage. Such as: a smaller carbon footprint and lower carbon emissions; more comfortable rooms; less noise from outside; less condensation in the roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2025-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Insulating a sloped ceiling",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The method, insulation type and the daylight feature are open choices; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2025-ol-q2-b",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-3-9",
     "conceptId": "insulating-a-sloped-ceiling",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2025 OL Q2(b)",
+    "stem": "The sketch shows a living area with a sloped ceiling under construction. The homeowners wish to have a high level of insulation in the sloped ceiling.",
     "questionText": "Using notes and freehand sketches, show one suitable method of highly insulating the sloped ceiling. Show on your sketch how the ceiling is to be finished internally. Specify the type and thickness of insulation.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 16",
-      "answer": 1,
-      "ofParts": 10,
-      "perPart": 16
+      "kind": "fixed"
     },
-    "totalMarks": 16,
+    "totalMarks": 24,
     "rows": [
       {
-        "id": "cons-2025-ol-q2-b-r1",
-        "kind": "anyN",
-        "verbatim": "Method of insulating the sloped ceiling note & sketch",
+        "id": "method",
+        "kind": "criterion",
+        "verbatim": "Method of insulating the sloped ceiling note & sketch (8 + 8 marks)",
         "marks": 16,
-        "openList": true,
-        "contextNote": "One suitable method of highly insulating the sloped ceiling",
-        "group": {
-          "claimMax": 1,
-          "perOption": 16,
-          "options": [
-            "Cut the insulation material to required width so it can fit between the rafters",
-            "Ensure adequate ventilation space is allowed between the breather membrane and insulation",
-            "Insulating materials – phenolic foam, wood fibre, sheep’s wool, EPS insulation",
-            "Cover the insulted rafters with an airtight membrane",
-            "Fix plasterboard/insulated plasterboard to the rafters",
-            "Plasterboard skim coated with plaster or taped and filled to provide a finish",
-            "Fix a ventilation card/spacer between the rafters",
-            "Spray foam insulation to the underside of the ventilation card",
-            "When insulation is set, trim flush with the rafters",
-            "Fix the plasterboard sheet to the rafters and skim over"
-          ]
-        }
+        "contextNote": "Note 8 and sketch 8 of one method, showing the internal finish. Such as: insulation cut to fit between the rafters with a ventilation space below the breather membrane, an airtight membrane over the insulated rafters, then plasterboard or insulated plasterboard fixed to the rafters and skimmed or taped and filled; or a ventilation card between the rafters with spray-foam insulation trimmed flush, then plasterboard and skim.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "type",
+        "kind": "criterion",
+        "verbatim": "Preferred insulation type for sloped ceiling",
+        "marks": 4,
+        "contextNote": "Such as: expanded polystyrene (EPS), phenolic, polyisocyanurate (PIR) or extruded polystyrene (XPS); the method notes also name wood fibre and sheep’s wool.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "thickness",
+        "kind": "criterion",
+        "verbatim": "Thickness of insulation",
+        "marks": 4,
+        "contextNote": "At least 200 mm of insulation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
       }
     ],
-    "notes": "The scheme awards 24 marks for this part. The 16 on this card are the marks it states answers for; the other 8 go to Preferred insulation type for sloped ceiling (4); Thickness of insulation (4) — the drawing itself and anything the scheme prices without saying what earns it."
+    "questionFigureKey": "construction-studies-2025-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q2-method",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Insulating a sloped ceiling",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The method, insulation type and the daylight feature are open choices; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2025-ol-q2-c",
-    "topicId": "cons-3-9",
-    "conceptId": "a-feature-for-a-sloped-ceiling",
-    "level": "ordinary",
-    "year": 2025,
     "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-3-5",
+    "conceptId": "a-feature-for-a-sloped-ceiling",
     "questionRef": "2025 OL Q2(c)",
+    "stem": "The sketch shows a living area with a sloped ceiling under construction. The homeowners wish to have a high level of insulation in the sloped ceiling.",
     "questionText": "Using notes and a freehand sketch, suggest one feature which could be included in the sloped ceiling to allow additional natural light into the living area.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 7",
-      "answer": 2,
-      "ofParts": 4,
-      "perPart": 7
+      "kind": "fixed"
     },
     "totalMarks": 14,
     "rows": [
       {
-        "id": "cons-2025-ol-q2-c-r1",
-        "kind": "anyN",
-        "verbatim": "Using notes and a freehand sketch, suggest one feature which could be included in the sloped ceiling to allow additional",
-        "marks": 14,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 7,
-          "options": [
-            "Skylight",
-            "Dormer window",
-            "Ridge roof-light",
-            "Sun tunnel"
-          ]
-        }
+        "id": "note",
+        "kind": "criterion",
+        "verbatim": "Note",
+        "marks": 7,
+        "contextNote": "Such as: a skylight, a dormer window, a ridge roof-light or a sun tunnel.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 7,
+        "contextNote": "Freehand sketch of the chosen feature in the sloped ceiling.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2025-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q2-light",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Insulating a sloped ceiling",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The method, insulation type and the daylight feature are open choices; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2025-ol-q3-a",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-5-3",
     "conceptId": "pipework-for-a-heating-system",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2025 OL Q3(a)",
-    "questionText": "Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply hot water from the stove to the radiators and to heat the water in the cylinder.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "A wood pellet stove is used to heat radiators and supply hot water in a dwelling house.",
+    "questionText": "Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply hot water from the stove to the radiators and to heat the water in the cylinder. Include the following in your sketch: wood pellet stove; hot water cylinder; pipework to and from the cylinder; expansion tank / vessel; pipework to radiators; all necessary pumps and valves.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "8 x 5",
-      "answer": 8,
-      "ofParts": 14,
-      "perPart": 5
+      "kind": "fixed"
     },
-    "totalMarks": 40,
+    "totalMarks": 45,
     "rows": [
       {
-        "id": "cons-2025-ol-q3-a-r1",
-        "kind": "anyN",
-        "verbatim": "Typical details",
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 8 x 5 marks",
         "marks": 40,
-        "openList": true,
-        "contextNote": "Typical details",
-        "group": {
-          "claimMax": 8,
-          "perOption": 5,
-          "options": [
-            "15mm rising main",
-            "Stop valve",
-            "Insulated storage tank",
-            "Expansion tank / vessel",
-            "Stove",
-            "Cold feed to stove",
-            "250 l cylinder",
-            "Ø22 mm primary flow to cylinder",
-            "Ø22 mm primary return to stove",
-            "Hot feed from cylinder",
-            "Ø22 mm expansion pipe",
-            "Radiators",
-            "Ø22 mm flow to radiators",
-            "Ø22 mm return from radiators"
-          ]
-        }
+        "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: draw the given sketch; 15 mm cold feed to stove; 22 mm flow to radiators; 22 mm return from radiators; radiators; cold feed to cylinder; 22 mm primary flow to cylinder; 22 mm primary return from cylinder; 22 mm expansion pipe; expansion tank/vessel; hot feed from cylinder; 22 mm overflow pipe; pump and valves.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      {
+        "id": "quality",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch",
+        "marks": 5,
+        "contextNote": "Quality of the sketch: excellent 5, good 3, fair 1.",
+        "permittedMarks": [
+          0,
+          1,
+          3,
+          5
+        ]
       }
     ],
-    "notes": "The scheme lists 15 acceptable points under \"Typical details\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+    "questionFigureKey": "construction-studies-2025-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q3-system",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Wood pellet stove heating and hot water",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are required content, not a choice. The scheme diagram is one acceptable layout; any alternative that complies with current Building Regulations is acceptable."
+    }
   },
   {
     "id": "cons-2025-ol-q3-b",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-5-3",
     "conceptId": "advantages-of-a-zoned-heating-system",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2025 OL Q3(b)",
+    "stem": "A wood pellet stove is used to heat radiators and supply hot water in a dwelling house.",
     "questionText": "Discuss one advantage of installing a zoned heating system so the radiators and hot water can be heated separately.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 5",
-      "answer": 1,
-      "ofParts": 6,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 5,
     "rows": [
       {
-        "id": "cons-2025-ol-q3-b-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss one advantage of installing a zoned heating system so the radiators and hot water can be heated separately.",
+        "id": "advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
         "marks": 5,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 1,
-          "perOption": 5,
-          "options": [
-            "It is more energy efficient to only heat the zone you need",
-            "Reduced cost to homeowner",
-            "Avoids unnecessary energy use",
-            "More user control over your heating system",
-            "Only heating the water may lead to less wear and tear on the heating system",
-            "A zoned heating system is a more modern system which may increase the value of the home"
-          ]
-        }
+        "contextNote": "One advantage. Such as: heating only the zone you need is more energy efficient and avoids unnecessary energy use; lower cost; more control over the heating; less wear when only the water is heated; a modern system may add value to the home.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2025-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q3-zoning",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Wood pellet stove heating and hot water",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are required content, not a choice. The scheme diagram is one acceptable layout; any alternative that complies with current Building Regulations is acceptable."
+    }
   },
   {
     "id": "cons-2025-ol-q4-a",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-1-3",
     "conceptId": "choosing-between-two-sites",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2025 OL Q4(a)",
+    "stem": "The image shows a portion of a site location map. A and B are two sites being considered for a new dwelling house in the countryside.",
     "questionText": "Select your preferred site A or B, and give two reasons for your choice.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "1 x 6 + 1 x 6",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 12,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q4-a-r1",
-        "kind": "anyN",
-        "verbatim": "Site A – Considerations",
-        "marks": 6,
-        "openList": true,
-        "contextNote": "Site A – Considerations",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "Allows for a south facing façade to the house for maximum solar gain",
-            "Has direct access to the main road for services",
-            "Close to existing houses for access to services",
-            "Existing hedgerow to one side of the site for shelter",
-            "Well-proportioned size and shape of site for home and garden"
-          ]
-        }
-      },
-      {
-        "id": "cons-2025-ol-q4-a-r2",
-        "kind": "anyN",
-        "verbatim": "Site B – Considerations",
-        "marks": 6,
-        "openList": true,
-        "contextNote": "Site B – Considerations",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "Allows for a south facing façade for maximum solar gain",
-            "Reduced risk when entering and exiting site as it is accessed from a secondary road",
-            "Close to existing houses for access to services",
-            "Off the main road for greater privacy",
-            "Less noise and air pollution as the site is away from the main road",
-            "Site is on the same side as other buildings for services, security Any other valid reason will be accepted"
-          ]
-        }
-      }
-    ],
-    "notes": "The scheme awards 14 marks for this part. The 12 on this card are the marks it states answers for; the other 2 go to Select site (2) — the drawing itself and anything the scheme prices without saying what earns it."
-  },
-  {
-    "id": "cons-2025-ol-q4-b",
-    "topicId": "cons-1-3",
-    "conceptId": "laying-out-a-chosen-site",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q4(b)",
-    "questionText": "Draw a large freehand sketch of your chosen site. On your sketch include your preferred:  house position  entrance to the site  driveway to the house.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "1 x 6 + 1 x 6 + 1 x 6 + 1 x 6",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 24,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q4-b-r1",
-        "kind": "anyN",
-        "verbatim": "Draw a large freehand sketch of your chosen site. On your sketch include your preferred",
-        "marks": 6,
-        "openList": true,
-        "contextNote": "Draw a large freehand sketch of your chosen site. On your sketch include your preferred",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "house position",
-            "entrance to the site",
-            "driveway to the house"
-          ]
-        }
-      },
-      {
-        "id": "cons-2025-ol-q4-b-r2",
-        "kind": "anyN",
-        "verbatim": "House position",
-        "marks": 6,
-        "openList": true,
-        "contextNote": "House position",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "House positioned to allow south facing façade",
-            "House position leaves room for a large front and rear garden",
-            "Existing trees utilised for shelter barrier",
-            "Positioned to allow maximum solar gain",
-            "House positioned for privacy",
-            "House set back from the road to minimise visual impact Site A"
-          ]
-        }
-      },
-      {
-        "id": "cons-2025-ol-q4-b-r3",
-        "kind": "anyN",
-        "verbatim": "Entrance to the site",
-        "marks": 6,
-        "openList": true,
-        "contextNote": "Entrance to the site",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "Entrance off secondary road for safe entry and exit",
-            "Position entry to minimise disturbance to existing trees",
-            "Entrance positioned to give clear line of sight in both directions",
-            "Sidewalls splayed at 45° for clear vision when exiting"
-          ]
-        }
-      },
-      {
-        "id": "cons-2025-ol-q4-b-r4",
-        "kind": "anyN",
-        "verbatim": "Driveway to the house",
-        "marks": 6,
-        "openList": true,
-        "contextNote": "Driveway to the house",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "Shorter driveways save on materials and cost",
-            "Driveway gently curved to minimise visual impact",
-            "Driveway positioned to the north of Site B house to limit obstruction of views",
-            "Driveway positioned to allow parking to the rear"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q4-c",
-    "topicId": "cons-1-3",
-    "conceptId": "building-a-house-in-the-countryside",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q4(c)",
-    "questionText": "Give one advantage and one disadvantage of building a house in the countryside.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "1 x 6 + 1 x 6",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 12,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q4-c-r1",
-        "kind": "anyN",
-        "verbatim": "Advantages",
-        "marks": 6,
-        "openList": true,
-        "contextNote": "Advantages",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "The countryside is generally much quieter than urban areas, with less noise pollution",
-            "Living in the countryside surrounded by nature can improve mental health",
-            "Sites in the countryside can be more affordable than in towns and cities",
-            "The countryside can provide beautiful views of the landscape",
-            "The air quality in rural areas is usually better due to less industrial activity and fewer vehicles",
-            "Rural areas often have lower housing costs compared to towns",
-            "You can get more space for your money, which may allow you to build a larger home or have a bigger garden",
-            "The countryside is less densely populated allowing for greater privacy"
-          ]
-        }
-      },
-      {
-        "id": "cons-2025-ol-q4-c-r2",
-        "kind": "anyN",
-        "verbatim": "Disadvantages",
-        "marks": 6,
-        "openList": true,
-        "contextNote": "Disadvantages",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "Amenities and services like healthcare, schools, and shopping may be far away",
-            "More dependence on a car in the countryside which increases your carbon footprint",
-            "The infrastructure in rural areas can be less developed, which means limited public transportation",
-            "Internet or phone connections can often be more restricted",
-            "For some, living in the countryside can be quite isolated compared to a town Any other suitable detail will be accepted"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q5-a",
-    "topicId": "cons-4-4",
-    "conceptId": "vertical-section-top-three-steps",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q5(a)",
-    "questionText": "To a scale of 1:5, draw a vertical section through the centre of the top three steps of the stairs and the landing. Show the steps, trimmer joist, and a portion of the landing. Show 600 mm length of the landing.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "7 x 5",
-      "answer": 7,
-      "ofParts": 11,
-      "perPart": 5
-    },
-    "totalMarks": 35,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q5-a-r1",
-        "kind": "anyN",
-        "verbatim": "Specification – typical detail",
-        "marks": 35,
-        "openList": true,
-        "contextNote": "Specification – typical detail",
-        "group": {
-          "claimMax": 7,
-          "perOption": 5,
-          "options": [
-            "String 250 mm x 50 mm",
-            "Tread 250 mm x 25 mm",
-            "Riser 170 mm x 20 mm",
-            "Joint between tread and riser",
-            "Nosing – 16 mm minimum",
-            "Vertical & horizontal wedge",
-            "Glue blocks 60 x 60 mm",
-            "Pitch line/ nosing line (max 42⁰)",
-            "Trimmer joist 225 mm x 75 mm",
-            "First floor joist 225 mm x 50 mm",
-            "Tongue & groove floor Note: Any alternative detailing which complies with current Building Regulations is acceptable"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q6-b",
-    "topicId": "cons-1-8",
-    "conceptId": "risks-when-working-at-height",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q6(b)",
-    "questionText": "Describe two potential risks to construction workers when working at height on a construction site.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 6",
-      "answer": 2,
-      "ofParts": 5,
-      "perPart": 6
-    },
-    "totalMarks": 12,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q6-b-r1",
-        "kind": "anyN",
-        "verbatim": "Describe two potential risks to construction workers when working at height on a construction site.",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Workers may slip and fall from a height when on scaffolding or rooftops",
-            "A ladder or platform could give way causing a worker to fall",
-            "Using power tools can be more challenging at a height leading to an injury",
-            "Tools or materials can fall from height and strike a construction worker below",
-            "Heavy rain or gusts of wind are often more severe at a height and could lead to a worker falling"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q6-c",
-    "topicId": "cons-1-8",
-    "conceptId": "safety-measures-when-working-at-height",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q6(c)",
-    "questionText": "Using notes and freehand sketches, describe one safety measure that should be in place to ensure construction workers can safely access a roof when installing solar panels.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 7",
-      "answer": 2,
-      "ofParts": 6,
-      "perPart": 7
+      "kind": "fixed"
     },
     "totalMarks": 14,
     "rows": [
       {
-        "id": "cons-2025-ol-q6-c-r1",
-        "kind": "anyN",
-        "verbatim": "Using notes and freehand sketches, describe one safety measure that should be in place to ensure construction workers ca",
-        "marks": 14,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 7,
-          "options": [
-            "Safe and stable scaffolding and ladders should be used to provide access to the roof",
-            "installing guardrails around the perimeter can prevent workers from accidentally falling off the roof",
-            "A safety harness which is attached to secure anchor points can be worn by workers",
-            "Ladders should be placed at the correct angle and extend adequately to provide a secure handhold when workers step onto the roof",
-            "A qualified construction worker should inspect the roof structure to ensure that it can safely support the weight of the workers and equipment",
-            "Proper non-slip boots should be worn to reduce the risk of slipping on the roof’s surface"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q7-a",
-    "topicId": "cons-3-3",
-    "conceptId": "timber-frame-for-a-garden-office",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q7(a)",
-    "questionText": "Discuss two advantages of using timber frame for the construction of the garden office.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 5",
-      "answer": 2,
-      "ofParts": 7,
-      "perPart": 5
-    },
-    "totalMarks": 10,
-    "rows": [
+        "id": "select",
+        "kind": "criterion",
+        "verbatim": "Select site",
+        "marks": 2,
+        "contextNote": "Select site A or site B.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      },
       {
-        "id": "cons-2025-ol-q7-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two advantages of using timber frame for the construction of the garden office.",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 5,
-          "options": [
-            "Timber frame can be quicker to construct than traditional concrete block construction",
-            "Timber is a renewable material",
-            "It is an environmentally friendly option with a low embodied energy",
-            "Timber is generally less expensive than other construction materials like steel or concrete",
-            "The office can be prefabricated in a factory leading to less time on site",
-            "The light weight of timber frame construction reduces the need for large concrete foundations",
-            "Timber can give an attractive aesthetic to the office"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q7-b",
-    "topicId": "cons-1-1",
-    "conceptId": "laying-out-a-garden-office",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q7(b)",
-    "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden office:  corner desk  two windows  bookcase unit  seating area.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "4 x 5",
-      "answer": 4,
-      "ofParts": 14,
-      "perPart": 5
-    },
-    "totalMarks": 20,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q7-b-r1",
-        "kind": "anyN",
-        "verbatim": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garde",
-        "marks": 20,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 4,
-          "perOption": 5,
-          "options": [
-            "corner desk",
-            "two windows",
-            "bookcase unit",
-            "seating area",
-            "Located close to a window for a view",
-            "Located in the brightest area of the office close to a window",
-            "Located away from the door for ease of entry two windows",
-            "Located close to the desk to provide a view while working",
-            "Located at the front to see people as they approach",
-            "Located on two different walls to provide dual aspect bookcase unit",
-            "Located on the back wall to allow adequate space for the desk",
-            "Located near the seating area for convenience when reading",
-            "Located away from the windows to not obstruct the light seating area",
-            "Located away from the desk to create a different zone within the office"
-          ]
-        }
-      }
-    ],
-    "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
-  },
-  {
-    "id": "cons-2025-ol-q7-c-advantage",
-    "topicId": "cons-1-1",
-    "conceptId": "a-garden-office-separate-from-the-home-advantage",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q7(c) — Advantage",
-    "questionText": "Discuss one advantage of constructing a garden office separate from the home.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 6",
-      "answer": 1,
-      "ofParts": 5,
-      "perPart": 6
-    },
-    "totalMarks": 6,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q7-c-advantage-r1",
-        "kind": "anyN",
-        "verbatim": "Advantage",
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
         "marks": 6,
-        "openList": true,
-        "contextNote": "Advantage",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "Creates a clear boundary between work and home life",
-            "Easier to concentrate when away from household noise and interruptions.",
-            "A garden office can increase the value of your home",
-            "Lessens the impact on the household",
-            "The office does not take up space within the house"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q7-c-disadvantage",
-    "topicId": "cons-1-1",
-    "conceptId": "a-garden-office-separate-from-the-home-disadvantage",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q7(c) — Disadvantage",
-    "questionText": "Discuss one disadvantage of constructing a garden office separate from the home.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 6",
-      "answer": 1,
-      "ofParts": 5,
-      "perPart": 6
-    },
-    "totalMarks": 6,
-    "rows": [
+        "contextNote": "One reason for the chosen site. Such as, for site A: a south-facing façade for solar gain; direct access to the main road for services; close to existing houses; hedgerow shelter; a well-proportioned site.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
       {
-        "id": "cons-2025-ol-q7-c-disadvantage-r1",
-        "kind": "anyN",
-        "verbatim": "Disadvantage",
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
         "marks": 6,
-        "openList": true,
-        "contextNote": "Disadvantage",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "It can be expensive to create the separate office and provide required services such as electricity, internet",
-            "May also require planning permission depending on size and location",
-            "Can be cold and uncomfortable to work in if not constructed to a high standard",
-            "Reduces the size of your garden",
-            "Will require on-going maintenance to keep it in good condition Any other valid reason will be accepted"
-          ]
-        }
+        "contextNote": "A second, different reason. Such as, for site B: safer access from a secondary road; off the main road for privacy, with less noise and air pollution; close to existing houses and services.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2025-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q4-sites",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Choosing a site in the countryside",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original site map retained. Choosing site A or B is part of the answer and is itself marked; reasons, positions and the sketch follow the chosen site."
+    }
   },
   {
-    "id": "cons-2025-ol-q9-b",
-    "topicId": "cons-1-1",
-    "conceptId": "modifying-the-rear-of-a-house",
-    "level": "ordinary",
-    "year": 2025,
+    "id": "cons-2025-ol-q4-b",
     "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q9(b)",
-    "questionText": "Using notes and freehand sketches, show two possible modifications that could be made at the rear of the house that would allow for the following:  access to the garden from the house  an outdoor dining/living space.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 13",
-      "answer": 2,
-      "ofParts": 6,
-      "perPart": 13
-    },
-    "totalMarks": 26,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q9-b-r1",
-        "kind": "anyN",
-        "verbatim": "Using notes and freehand sketches, show two possible modifications that could be made at the rear of the house that woul",
-        "marks": 26,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 13,
-          "options": [
-            "Replace windows with a large glazed door",
-            "Install a large sliding door",
-            "Install a bifold door",
-            "Patio area along back wall",
-            "Some grass area changed to decking or slabs",
-            "Create a BBQ area"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q9-c",
-    "topicId": "cons-1-1",
-    "conceptId": "family-uses-of-a-large-garden",
-    "level": "ordinary",
     "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q9(c)",
-    "questionText": "Discuss two other possible family uses of a large garden.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 6",
-      "answer": 2,
-      "ofParts": 7,
-      "perPart": 6
-    },
-    "totalMarks": 12,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q9-c-r1",
-        "kind": "anyN",
-        "verbatim": "Two other possible family uses of a large garden",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "Two other possible family uses of a large garden",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Provide a safe play area for kids",
-            "Space for slides, trampolines etc",
-            "A garden can allow you grow plants and flowers",
-            "Area to grow vegetables and herbs",
-            "You can get closer to nature by using bird feeders",
-            "Space for a garden shed or additional storage",
-            "A garden is ideal for a family pet"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q1-a",
-    "topicId": "cons-3-2",
-    "conceptId": "vertical-section-external-wall",
     "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
     "section": "B",
-    "questionRef": "2025 OL Q1(a)",
-    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and top portion of the window. Show the wall, the concrete lintels, and the top fixed frame of the window. On your drawing, show the typical construction details from a level 400 mm below to a level 400 mm above the concrete lintels. Include three typical dimensions on your drawing.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "topicId": "cons-1-3",
+    "conceptId": "laying-out-a-chosen-site",
+    "questionRef": "2025 OL Q4(b)",
+    "stem": "The image shows a portion of a site location map. A and B are two sites being considered for a new dwelling house in the countryside.",
+    "questionText": "Draw a large freehand sketch of your chosen site. On your sketch include your preferred: house position; entrance to the site; driveway to the house.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "7 x 5",
-      "answer": 7,
-      "ofParts": 12,
-      "perPart": 5
-    },
-    "totalMarks": 35,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q1-a-r1",
-        "kind": "anyN",
-        "verbatim": "To a scale of 1:5, draw a vertical section through the external wall and top portion of the window. Show the wall, the c",
-        "marks": 35,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 7,
-          "perOption": 5,
-          "options": [
-            "External render",
-            "Concrete block outer leaf",
-            "Full fill insulated cavity with wall tie",
-            "Concrete block inner leaf",
-            "Internal plaster",
-            "Cavity closer",
-            "Stepped DPC",
-            "Concrete lintels",
-            "Thermally broken window frame",
-            "Triple glazing",
-            "Airtightness",
-            "Any 3 typical dimensions"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q5-b",
-    "topicId": "cons-4-4",
-    "conceptId": "a-design-detail-for-a-safe-stairs",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q5(b)",
-    "questionText": "On your drawing, show one design detail which will ensure that the stairs will not creak when in use.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 4,
-    "rows": [
-      {
-        "id": "cons-2025-ol-q5-b-r1",
-        "kind": "point",
-        "verbatim": "Glue blocks",
-        "marks": 4,
-        "openList": true,
-        "contextNote": ""
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2025-ol-q6-a",
-    "topicId": "cons-1-8",
-    "conceptId": "safety-signs-on-a-construction-site",
-    "level": "ordinary",
-    "year": 2025,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2025 OL Q6(a)",
-    "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items:  high-visibility vest  safety boots  ear defenders. Give one specific reason why each item of personal protective equipment must be worn.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 8",
-      "answer": 3,
-      "ofParts": 3,
-      "perPart": 8
+      "kind": "fixed"
     },
     "totalMarks": 24,
     "rows": [
       {
-        "id": "cons-2025-ol-q6-a-r1",
-        "kind": "anyN",
-        "verbatim": "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items:",
-        "marks": 24,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 3,
-          "perOption": 8,
-          "options": [
-            "High-visibility vest sign and specific reason",
-            "Safety boots sign and specific reason",
-            "Ear defenders sign and specific reason"
-          ]
-        }
+        "id": "site",
+        "kind": "criterion",
+        "verbatim": "Site outline",
+        "marks": 6,
+        "contextNote": "A large freehand sketch outlining the chosen site.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "house",
+        "kind": "criterion",
+        "verbatim": "House position",
+        "marks": 6,
+        "contextNote": "Such as: placed for a south-facing façade and solar gain, with room for front and rear gardens, existing trees as shelter, privacy, set back from the road.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "entrance",
+        "kind": "criterion",
+        "verbatim": "Entrance to the site",
+        "marks": 6,
+        "contextNote": "Such as: off the secondary road for safe entry and exit, clear of existing trees, with a clear line of sight both ways and sidewalls splayed at 45°.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "driveway",
+        "kind": "criterion",
+        "verbatim": "Driveway to the house",
+        "marks": 6,
+        "contextNote": "Such as: short to save materials and cost, gently curved to reduce visual impact, to the north of the house, allowing parking to the rear.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2025-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q4-site-a",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Choosing a site in the countryside",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original site map retained. Choosing site A or B is part of the answer and is itself marked; reasons, positions and the sketch follow the chosen site."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q4-c",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-3",
+    "conceptId": "building-a-house-in-the-countryside",
+    "questionRef": "2025 OL Q4(c)",
+    "stem": "The image shows a portion of a site location map. A and B are two sites being considered for a new dwelling house in the countryside.",
+    "questionText": "Give one advantage and one disadvantage of building a house in the countryside.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: quieter, cleaner air, nature and views, more space and privacy for the money, more affordable sites.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 6,
+        "contextNote": "Such as: amenities and services far away; car dependence and a larger carbon footprint; limited public transport; weaker internet or phone connections; isolation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Choosing a site in the countryside",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original site map retained. Choosing site A or B is part of the answer and is itself marked; reasons, positions and the sketch follow the chosen site."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q5-a",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-top-three-steps",
+    "questionRef": "2025 OL Q5(a)",
+    "stem": "The sketch shows portion of a closed string wooden stairs and first floor landing. The rise of each step is 170 mm. The landing has a 20 mm tongue and groove floor on 225 mm × 50 mm timber joists.",
+    "questionText": "To a scale of 1:5, draw a vertical section through the centre of the top three steps of the stairs and the landing. Show the steps, trimmer joist, and a portion of the landing. Show 600 mm length of the landing. Include three typical dimensions on your drawing.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 46,
+    "rows": [
+      {
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 7 x 5 marks",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 mm × 50 mm; tread 250 mm × 25 mm; riser 170 mm × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical and horizontal wedges; glue blocks 60 mm × 60 mm; pitch line/nosing line (maximum 42°); trimmer joist 225 mm × 75 mm; first floor joist 225 mm × 50 mm; tongue and groove floor.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "Three typical dimensions",
+        "marks": 3,
+        "contextNote": "Three typical dimensions, 1 mark each.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q5-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Closed string stairs and landing section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the anti-creak detail in (b) is marked separately."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q6-b",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "risks-when-working-at-height",
+    "questionRef": "2025 OL Q6(b)",
+    "stem": "",
+    "questionText": "Describe two potential risks to construction workers when working at height on a construction site.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "risk-1",
+        "kind": "criterion",
+        "verbatim": "Risk 1",
+        "marks": 6,
+        "contextNote": "Such as: slipping and falling from scaffolding or a roof; a ladder or platform giving way.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "risk-2",
+        "kind": "criterion",
+        "verbatim": "Risk 2",
+        "marks": 6,
+        "contextNote": "A second, different risk. Such as: power tools harder to use safely at height; tools or materials falling on workers below; rain or gusts of wind causing a fall.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q6-risks",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Personal protective equipment and working at height",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "All three printed PPE items in (a) are required and separately marked. Risks and the safety measure are open; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q6-c",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "safety-measures-when-working-at-height",
+    "questionRef": "2025 OL Q6(c)",
+    "stem": "",
+    "questionText": "Using notes and freehand sketches, describe one safety measure that should be in place to ensure construction workers can safely access a roof when installing solar panels.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 14,
+    "rows": [
+      {
+        "id": "notes",
+        "kind": "criterion",
+        "verbatim": "Notes",
+        "marks": 7,
+        "contextNote": "Such as: safe, stable scaffolding and ladders for access; guardrails around the roof perimeter; a safety harness attached to secure anchor points; ladders at the correct angle extending enough to give a secure handhold onto the roof; an inspection of the roof structure by a qualified worker; non-slip boots.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 7,
+        "contextNote": "Freehand sketch of the chosen safety measure.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q6-access",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Personal protective equipment and working at height",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "All three printed PPE items in (a) are required and separately marked. Risks and the safety measure are open; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q7-a",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-3-3",
+    "conceptId": "timber-frame-for-a-garden-office",
+    "questionRef": "2025 OL Q7(a)",
+    "stem": "A draft design for a garden office room is shown. The office room is of timber frame construction and has an exterior timber decking.",
+    "questionText": "Discuss two advantages of using timber frame for the construction of the garden office.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 5,
+        "contextNote": "Such as: quicker to construct than concrete block; can be prefabricated in a factory, with less time on site.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 5,
+        "contextNote": "A second, different advantage. Such as: a renewable material with a low embodied energy; less expensive than steel or concrete; its light weight needs smaller foundations; an attractive appearance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Designing a garden office",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q7-b",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "laying-out-a-garden-office",
+    "questionRef": "2025 OL Q7(b)",
+    "stem": "A draft design for a garden office room is shown. The office room is of timber frame construction and has an exterior timber decking.",
+    "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden office: corner desk; two windows; bookcase unit; seating area. Give one reason for selecting each location.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 28,
+    "rows": [
+      {
+        "id": "sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 8,
+        "contextNote": "Large freehand sketch of the given design: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "corner-desk",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for corner desk (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: close to a window for a view and light, away from the door.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "two-windows",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for two windows (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: near the desk for a view while working; at the front to see people approach; on two walls for dual aspect.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "bookcase",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for bookcase unit (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: on the back wall, leaving space for the desk; near the seating area; away from the windows so it does not block light.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "seating",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for seating area (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: a separate zone away from the desk; near the door so as not to disturb the desk; leaving the brightest area for the desk.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q7-office-plan",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Designing a garden office",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q7-c-advantage",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "a-garden-office-separate-from-the-home-advantage",
+    "questionRef": "2025 OL Q7(c) — advantage",
+    "stem": "A draft design for a garden office room is shown. The office room is of timber frame construction and has an exterior timber decking.",
+    "questionText": "Discuss one advantage of constructing a garden office separate from the home.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: a clear boundary between work and home life; fewer household interruptions; adds value to the home; frees space in the house.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Designing a garden office",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q7-c-disadvantage",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "a-garden-office-separate-from-the-home-disadvantage",
+    "questionRef": "2025 OL Q7(c) — disadvantage",
+    "stem": "A draft design for a garden office room is shown. The office room is of timber frame construction and has an exterior timber decking.",
+    "questionText": "Discuss one disadvantage of constructing a garden office separate from the home.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 6,
+        "contextNote": "Such as: the cost of building it and providing electricity and internet; it may need planning permission; it can be cold if not built to a high standard; a smaller garden; ongoing maintenance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Designing a garden office",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q9-b",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-3-7",
+    "conceptId": "modifying-the-rear-of-a-house",
+    "questionRef": "2025 OL Q9(b)",
+    "stem": "The sketch shows the rear of a 1970’s bungalow. The bungalow overlooks a large rear garden. The homeowners wish to make better use of their large garden by adding an outdoor dining/living space.",
+    "questionText": "Using notes and freehand sketches, show two possible modifications that could be made at the rear of the house that would allow for the following: access to the garden from the house; an outdoor dining/living space.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 26,
+    "rows": [
+      {
+        "id": "modification-1",
+        "kind": "criterion",
+        "verbatim": "Modification 1 sketch + notes (8 + 5 marks )",
+        "marks": 13,
+        "contextNote": "Sketch 8 and notes 5. Such as: replace windows with a large glazed, sliding or bifold door for access to the garden.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "modification-2",
+        "kind": "criterion",
+        "verbatim": "Modification 2 sketch + notes (8 + 5 marks )",
+        "marks": 13,
+        "contextNote": "Sketch 8 and notes 5 for a second, different modification. Such as: a patio along the back wall; part of the lawn changed to decking or slabs; a BBQ area.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q9-modifications",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Outdoor living for a 1970s bungalow",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Reasons, modifications and uses are open responses; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q9-c",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "family-uses-of-a-large-garden",
+    "questionRef": "2025 OL Q9(c)",
+    "stem": "The sketch shows the rear of a 1970’s bungalow. The bungalow overlooks a large rear garden. The homeowners wish to make better use of their large garden by adding an outdoor dining/living space.",
+    "questionText": "Discuss two other possible family uses of a large garden.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "use-1",
+        "kind": "criterion",
+        "verbatim": "Suggested use 1",
+        "marks": 6,
+        "contextNote": "Such as: a safe play area for children, with slides or trampolines; growing plants and flowers.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "use-2",
+        "kind": "criterion",
+        "verbatim": "Suggested use 2",
+        "marks": 6,
+        "contextNote": "A second, different use. Such as: growing vegetables and herbs; bird feeders to bring nature closer; a shed or extra storage; space for a family pet.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q9-uses",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Outdoor living for a 1970s bungalow",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Reasons, modifications and uses are open responses; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q1-a",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-external-wall",
+    "questionRef": "2025 OL Q1(a)",
+    "stem": "The sketch shows the external wall and window of a dwelling house. The wall is a 400 mm concrete block wall with full-fill insulated cavity and is plastered on both sides. The fixed frame of the window is 120 mm × 80 mm and is thermally broken.",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and top portion of the window. Show the wall, the concrete lintels, and the top fixed frame of the window. On your drawing, show the typical construction details from a level 400 mm below to a level 400 mm above the concrete lintels. Include three typical dimensions on your drawing.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 46,
+    "rows": [
+      {
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 7 x 5 marks",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render; concrete block outer leaf; full-fill insulated cavity with wall tie; concrete block inner leaf; internal plaster; cavity closer; stepped DPC; concrete lintels; thermally broken window frame; triple glazing; airtightness. The model specifies 19 mm render, 100 mm leaves, a 200 mm insulated cavity, 100 mm × 75 mm concrete lintels, 15 mm plaster and airtightness tape.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "Any 3 typical dimensions",
+        "marks": 3,
+        "contextNote": "Three appropriate typical dimensions on the section.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy, and scale",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "External wall and window head section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the window-head detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q5-b",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-4-4",
+    "conceptId": "a-design-detail-for-a-safe-stairs",
+    "questionRef": "2025 OL Q5(b)",
+    "stem": "The sketch shows portion of a closed string wooden stairs and first floor landing. The rise of each step is 170 mm. The landing has a 20 mm tongue and groove floor on 225 mm × 50 mm timber joists.",
+    "questionText": "On your drawing, show one design detail which will ensure that the stairs will not creak when in use.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "glue-blocks",
+        "kind": "criterion",
+        "verbatim": "Glue blocks",
+        "marks": 4,
+        "contextNote": "Glue blocks in the angle between tread and riser, shown and identified. Any other suitable detail is accepted.",
+        "permittedMarks": [
+          0,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q5-glue-blocks",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Closed string stairs and landing section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the anti-creak detail in (b) is marked separately."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q6-a",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "safety-signs-on-a-construction-site",
+    "questionRef": "2025 OL Q6(a)",
+    "stem": "",
+    "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items: high-visibility vest; safety boots; ear defenders. Give one specific reason why each item of personal protective equipment must be worn.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "a-high-visibility-vest-sign-reason",
+        "kind": "criterion",
+        "verbatim": "High-visibility vest sign and specific reason (5+3 marks)",
+        "marks": 8,
+        "contextNote": "Sign 5 and reason 3. Such as: workers are clearly visible on site, so vehicle operators see them and avoid accidents.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "a-safety-boots-sign-reason",
+        "kind": "criterion",
+        "verbatim": "Safety boots sign and specific reason (5+3 marks)",
+        "marks": 8,
+        "contextNote": "Sign 5 and reason 3. Such as: protects the feet from heavy materials or objects being dropped; the sole protects against sharp objects.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "a-ear-defenders-sign-reason",
+        "kind": "criterion",
+        "verbatim": "Ear defenders sign and specific reason (5+3 marks)",
+        "marks": 8,
+        "contextNote": "Sign 5 and reason 3. Such as: protects workers’ hearing from the noise of machinery.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q6-signs",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Personal protective equipment and working at height",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "All three printed PPE items in (a) are required and separately marked. Risks and the safety measure are open; the scheme lists typical examples."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-ol-q6-a-high-visibility-vest",
+        "label": "high-visibility vest",
+        "marks": 8,
+        "rowIds": [
+          "a-high-visibility-vest-sign-reason"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q6-a-safety-boots",
+        "label": "safety boots",
+        "marks": 8,
+        "rowIds": [
+          "a-safety-boots-sign-reason"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q6-a-ear-defenders",
+        "label": "ear defenders",
+        "marks": 8,
+        "rowIds": [
+          "a-ear-defenders-sign-reason"
+        ]
+      }
+    ]
   },
   {
     "id": "cons-2015-hl-q1-a",
@@ -113974,6 +114374,1600 @@
           "b-guideline-1",
           "b-guideline-2",
           "b-guideline-3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-ol-q1-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "window-head-section-complete",
+    "questionRef": "2025 OL Q1 — complete",
+    "stem": "The sketch shows the external wall and window of a dwelling house. The wall is a 400 mm concrete block wall with full-fill insulated cavity and is plastered on both sides. The fixed frame of the window is 120 mm × 80 mm and is thermally broken.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the external wall and top portion of the window. Show the wall, the concrete lintels, and the top fixed frame of the window. On your drawing, show the typical construction details from a level 400 mm below to a level 400 mm above the concrete lintels. Include three typical dimensions on your drawing.\n\n(b) On your drawing, show the typical design detailing that prevents the penetration of rainwater at the window head.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 7 x 5 marks",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render; concrete block outer leaf; full-fill insulated cavity with wall tie; concrete block inner leaf; internal plaster; cavity closer; stepped DPC; concrete lintels; thermally broken window frame; triple glazing; airtightness. The model specifies 19 mm render, 100 mm leaves, a 200 mm insulated cavity, 100 mm × 75 mm concrete lintels, 15 mm plaster and airtightness tape.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "a-dimensions",
+        "kind": "criterion",
+        "verbatim": "Any 3 typical dimensions",
+        "marks": 3,
+        "contextNote": "Three appropriate typical dimensions on the section.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy, and scale",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-stepped-dpc",
+        "kind": "criterion",
+        "verbatim": "Stepped DPC clearly identified",
+        "marks": 4,
+        "contextNote": "Show and identify the stepped DPC over the concrete lintels at the window head, as in the scheme’s model section.",
+        "permittedMarks": [
+          0,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "External wall and window head section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the window-head detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-ol-q1-a",
+        "label": "a",
+        "marks": 46,
+        "rowIds": [
+          "a-details",
+          "a-dimensions",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q1-b",
+        "label": "b",
+        "marks": 4,
+        "rowIds": [
+          "b-stepped-dpc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-ol-q2-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "sloped-ceiling-insulation-complete",
+    "questionRef": "2025 OL Q2 — complete",
+    "stem": "The sketch shows a living area with a sloped ceiling under construction. The homeowners wish to have a high level of insulation in the sloped ceiling.",
+    "questionText": "(a) Discuss two advantages of highly insulating the sloped ceiling of the living area.\n\n(b) Using notes and freehand sketches, show one suitable method of highly insulating the sloped ceiling. Show on your sketch how the ceiling is to be finished internally. Specify the type and thickness of insulation.\n\n(c) Using notes and a freehand sketch, suggest one feature which could be included in the sloped ceiling to allow additional natural light into the living area.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 6,
+        "contextNote": "Such as: less heat loss, so the house is more energy efficient; lower energy bills.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 6,
+        "contextNote": "A second, different advantage. Such as: a smaller carbon footprint and lower carbon emissions; more comfortable rooms; less noise from outside; less condensation in the roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-method",
+        "kind": "criterion",
+        "verbatim": "Method of insulating the sloped ceiling note & sketch (8 + 8 marks)",
+        "marks": 16,
+        "contextNote": "Note 8 and sketch 8 of one method, showing the internal finish. Such as: insulation cut to fit between the rafters with a ventilation space below the breather membrane, an airtight membrane over the insulated rafters, then plasterboard or insulated plasterboard fixed to the rafters and skimmed or taped and filled; or a ventilation card between the rafters with spray-foam insulation trimmed flush, then plasterboard and skim.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "b-type",
+        "kind": "criterion",
+        "verbatim": "Preferred insulation type for sloped ceiling",
+        "marks": 4,
+        "contextNote": "Such as: expanded polystyrene (EPS), phenolic, polyisocyanurate (PIR) or extruded polystyrene (XPS); the method notes also name wood fibre and sheep’s wool.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-thickness",
+        "kind": "criterion",
+        "verbatim": "Thickness of insulation",
+        "marks": 4,
+        "contextNote": "At least 200 mm of insulation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-note",
+        "kind": "criterion",
+        "verbatim": "Note",
+        "marks": 7,
+        "contextNote": "Such as: a skylight, a dormer window, a ridge roof-light or a sun tunnel.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "c-sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 7,
+        "contextNote": "Freehand sketch of the chosen feature in the sloped ceiling.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q2-method",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Insulating a sloped ceiling",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The method, insulation type and the daylight feature are open choices; the scheme lists typical examples."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-ol-q2-a",
+        "label": "a",
+        "marks": 12,
+        "rowIds": [
+          "a-advantage-1",
+          "a-advantage-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q2-b",
+        "label": "b",
+        "marks": 24,
+        "rowIds": [
+          "b-method",
+          "b-type",
+          "b-thickness"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q2-c",
+        "label": "c",
+        "marks": 14,
+        "rowIds": [
+          "c-note",
+          "c-sketch"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-ol-q3-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-5-3",
+    "conceptId": "pellet-stove-heating-complete",
+    "questionRef": "2025 OL Q3 — complete",
+    "stem": "A wood pellet stove is used to heat radiators and supply hot water in a dwelling house.",
+    "questionText": "(a) Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply hot water from the stove to the radiators and to heat the water in the cylinder. Include the following in your sketch: wood pellet stove; hot water cylinder; pipework to and from the cylinder; expansion tank / vessel; pipework to radiators; all necessary pumps and valves.\n\n(b) Discuss one advantage of installing a zoned heating system so the radiators and hot water can be heated separately.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 8 x 5 marks",
+        "marks": 40,
+        "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: draw the given sketch; 15 mm cold feed to stove; 22 mm flow to radiators; 22 mm return from radiators; radiators; cold feed to cylinder; 22 mm primary flow to cylinder; 22 mm primary return from cylinder; 22 mm expansion pipe; expansion tank/vessel; hot feed from cylinder; 22 mm overflow pipe; pump and valves.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      {
+        "id": "a-quality",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch",
+        "marks": 5,
+        "contextNote": "Quality of the sketch: excellent 5, good 3, fair 1.",
+        "permittedMarks": [
+          0,
+          1,
+          3,
+          5
+        ]
+      },
+      {
+        "id": "b-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 5,
+        "contextNote": "One advantage. Such as: heating only the zone you need is more energy efficient and avoids unnecessary energy use; lower cost; more control over the heating; less wear when only the water is heated; a modern system may add value to the home.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q3-system",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Wood pellet stove heating and hot water",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are required content, not a choice. The scheme diagram is one acceptable layout; any alternative that complies with current Building Regulations is acceptable."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-ol-q3-a",
+        "label": "a",
+        "marks": 45,
+        "rowIds": [
+          "a-details",
+          "a-quality"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q3-b",
+        "label": "b",
+        "marks": 5,
+        "rowIds": [
+          "b-advantage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-ol-q4-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-3",
+    "conceptId": "countryside-site-complete",
+    "questionRef": "2025 OL Q4 — complete",
+    "stem": "The image shows a portion of a site location map. A and B are two sites being considered for a new dwelling house in the countryside.",
+    "questionText": "(a) Select your preferred site A or B, and give two reasons for your choice.\n\n(b) Draw a large freehand sketch of your chosen site. On your sketch include your preferred: house position; entrance to the site; driveway to the house.\n\n(c) Give one advantage and one disadvantage of building a house in the countryside.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-select",
+        "kind": "criterion",
+        "verbatim": "Select site",
+        "marks": 2,
+        "contextNote": "Select site A or site B.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "a-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 6,
+        "contextNote": "One reason for the chosen site. Such as, for site A: a south-facing façade for solar gain; direct access to the main road for services; close to existing houses; hedgerow shelter; a well-proportioned site.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 6,
+        "contextNote": "A second, different reason. Such as, for site B: safer access from a secondary road; off the main road for privacy, with less noise and air pollution; close to existing houses and services.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-site",
+        "kind": "criterion",
+        "verbatim": "Site outline",
+        "marks": 6,
+        "contextNote": "A large freehand sketch outlining the chosen site.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-house",
+        "kind": "criterion",
+        "verbatim": "House position",
+        "marks": 6,
+        "contextNote": "Such as: placed for a south-facing façade and solar gain, with room for front and rear gardens, existing trees as shelter, privacy, set back from the road.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-entrance",
+        "kind": "criterion",
+        "verbatim": "Entrance to the site",
+        "marks": 6,
+        "contextNote": "Such as: off the secondary road for safe entry and exit, clear of existing trees, with a clear line of sight both ways and sidewalls splayed at 45°.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-driveway",
+        "kind": "criterion",
+        "verbatim": "Driveway to the house",
+        "marks": 6,
+        "contextNote": "Such as: short to save materials and cost, gently curved to reduce visual impact, to the north of the house, allowing parking to the rear.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: quieter, cleaner air, nature and views, more space and privacy for the money, more affordable sites.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 6,
+        "contextNote": "Such as: amenities and services far away; car dependence and a larger carbon footprint; limited public transport; weaker internet or phone connections; isolation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q4-site-a",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Choosing a site in the countryside",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original site map retained. Choosing site A or B is part of the answer and is itself marked; reasons, positions and the sketch follow the chosen site."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-ol-q4-a",
+        "label": "a",
+        "marks": 14,
+        "rowIds": [
+          "a-select",
+          "a-reason-1",
+          "a-reason-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q4-b",
+        "label": "b",
+        "marks": 24,
+        "rowIds": [
+          "b-site",
+          "b-house",
+          "b-entrance",
+          "b-driveway"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q4-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-advantage",
+          "c-disadvantage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-ol-q5-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "closed-string-stairs-section-complete",
+    "questionRef": "2025 OL Q5 — complete",
+    "stem": "The sketch shows portion of a closed string wooden stairs and first floor landing. The rise of each step is 170 mm. The landing has a 20 mm tongue and groove floor on 225 mm × 50 mm timber joists.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the centre of the top three steps of the stairs and the landing. Show the steps, trimmer joist, and a portion of the landing. Show 600 mm length of the landing. Include three typical dimensions on your drawing.\n\n(b) On your drawing, show one design detail which will ensure that the stairs will not creak when in use.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 7 x 5 marks",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 mm × 50 mm; tread 250 mm × 25 mm; riser 170 mm × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical and horizontal wedges; glue blocks 60 mm × 60 mm; pitch line/nosing line (maximum 42°); trimmer joist 225 mm × 75 mm; first floor joist 225 mm × 50 mm; tongue and groove floor.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "a-dimensions",
+        "kind": "criterion",
+        "verbatim": "Three typical dimensions",
+        "marks": 3,
+        "contextNote": "Three typical dimensions, 1 mark each.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-glue-blocks",
+        "kind": "criterion",
+        "verbatim": "Glue blocks",
+        "marks": 4,
+        "contextNote": "Glue blocks in the angle between tread and riser, shown and identified. Any other suitable detail is accepted.",
+        "permittedMarks": [
+          0,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q5-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Closed string stairs and landing section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the anti-creak detail in (b) is marked separately."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-ol-q5-a",
+        "label": "a",
+        "marks": 46,
+        "rowIds": [
+          "a-details",
+          "a-dimensions",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q5-b",
+        "label": "b",
+        "marks": 4,
+        "rowIds": [
+          "b-glue-blocks"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-ol-q6-a-high-visibility-vest",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "ppe-working-at-height-a-high-visibility-vest",
+    "questionRef": "2025 OL Q6(a) — high-visibility vest",
+    "stem": "",
+    "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items: high-visibility vest. Give one specific reason why each item of personal protective equipment must be worn.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "sign-reason",
+        "kind": "criterion",
+        "verbatim": "High-visibility vest sign and specific reason (5+3 marks)",
+        "marks": 8,
+        "contextNote": "Sign 5 and reason 3. Such as: workers are clearly visible on site, so vehicle operators see them and avoid accidents.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q6-signs",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Personal protective equipment and working at height",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "All three printed PPE items in (a) are required and separately marked. Risks and the safety measure are open; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q6-a-safety-boots",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "ppe-working-at-height-a-safety-boots",
+    "questionRef": "2025 OL Q6(a) — safety boots",
+    "stem": "",
+    "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items: safety boots. Give one specific reason why each item of personal protective equipment must be worn.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "sign-reason",
+        "kind": "criterion",
+        "verbatim": "Safety boots sign and specific reason (5+3 marks)",
+        "marks": 8,
+        "contextNote": "Sign 5 and reason 3. Such as: protects the feet from heavy materials or objects being dropped; the sole protects against sharp objects.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q6-signs",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Personal protective equipment and working at height",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "All three printed PPE items in (a) are required and separately marked. Risks and the safety measure are open; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q6-a-ear-defenders",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "ppe-working-at-height-a-ear-defenders",
+    "questionRef": "2025 OL Q6(a) — ear defenders",
+    "stem": "",
+    "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items: ear defenders. Give one specific reason why each item of personal protective equipment must be worn.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "sign-reason",
+        "kind": "criterion",
+        "verbatim": "Ear defenders sign and specific reason (5+3 marks)",
+        "marks": 8,
+        "contextNote": "Sign 5 and reason 3. Such as: protects workers’ hearing from the noise of machinery.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q6-signs",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Personal protective equipment and working at height",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "All three printed PPE items in (a) are required and separately marked. Risks and the safety measure are open; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q6-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "ppe-working-at-height-complete",
+    "questionRef": "2025 OL Q6 — complete",
+    "stem": "",
+    "questionText": "(a) Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items: high-visibility vest; safety boots; ear defenders. Give one specific reason why each item of personal protective equipment must be worn.\n\n(b) Describe two potential risks to construction workers when working at height on a construction site.\n\n(c) Using notes and freehand sketches, describe one safety measure that should be in place to ensure construction workers can safely access a roof when installing solar panels.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-a-high-visibility-vest-sign-reason",
+        "kind": "criterion",
+        "verbatim": "High-visibility vest sign and specific reason (5+3 marks)",
+        "marks": 8,
+        "contextNote": "Sign 5 and reason 3. Such as: workers are clearly visible on site, so vehicle operators see them and avoid accidents.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "a-a-safety-boots-sign-reason",
+        "kind": "criterion",
+        "verbatim": "Safety boots sign and specific reason (5+3 marks)",
+        "marks": 8,
+        "contextNote": "Sign 5 and reason 3. Such as: protects the feet from heavy materials or objects being dropped; the sole protects against sharp objects.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "a-a-ear-defenders-sign-reason",
+        "kind": "criterion",
+        "verbatim": "Ear defenders sign and specific reason (5+3 marks)",
+        "marks": 8,
+        "contextNote": "Sign 5 and reason 3. Such as: protects workers’ hearing from the noise of machinery.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-risk-1",
+        "kind": "criterion",
+        "verbatim": "Risk 1",
+        "marks": 6,
+        "contextNote": "Such as: slipping and falling from scaffolding or a roof; a ladder or platform giving way.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-risk-2",
+        "kind": "criterion",
+        "verbatim": "Risk 2",
+        "marks": 6,
+        "contextNote": "A second, different risk. Such as: power tools harder to use safely at height; tools or materials falling on workers below; rain or gusts of wind causing a fall.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-notes",
+        "kind": "criterion",
+        "verbatim": "Notes",
+        "marks": 7,
+        "contextNote": "Such as: safe, stable scaffolding and ladders for access; guardrails around the roof perimeter; a safety harness attached to secure anchor points; ladders at the correct angle extending enough to give a secure handhold onto the roof; an inspection of the roof structure by a qualified worker; non-slip boots.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "c-sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 7,
+        "contextNote": "Freehand sketch of the chosen safety measure.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q6-signs",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Personal protective equipment and working at height",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "All three printed PPE items in (a) are required and separately marked. Risks and the safety measure are open; the scheme lists typical examples."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-ol-q6-a",
+        "label": "a",
+        "marks": 24,
+        "rowIds": [
+          "a-a-high-visibility-vest-sign-reason",
+          "a-a-safety-boots-sign-reason",
+          "a-a-ear-defenders-sign-reason"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q6-b",
+        "label": "b",
+        "marks": 12,
+        "rowIds": [
+          "b-risk-1",
+          "b-risk-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q6-c",
+        "label": "c",
+        "marks": 14,
+        "rowIds": [
+          "c-notes",
+          "c-sketch"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-ol-q7-c",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "garden-office-c",
+    "questionRef": "2025 OL Q7(c)",
+    "stem": "A draft design for a garden office room is shown. The office room is of timber frame construction and has an exterior timber decking.",
+    "questionText": "Discuss one advantage and one disadvantage of constructing a garden office separate from the home.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "c-advantage-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: a clear boundary between work and home life; fewer household interruptions; adds value to the home; frees space in the house.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-disadvantage-disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 6,
+        "contextNote": "Such as: the cost of building it and providing electricity and internet; it may need planning permission; it can be cold if not built to a high standard; a smaller garden; ongoing maintenance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Designing a garden office",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-ol-q7-c-advantage",
+        "label": "advantage",
+        "marks": 6,
+        "rowIds": [
+          "c-advantage-advantage"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q7-c-disadvantage",
+        "label": "disadvantage",
+        "marks": 6,
+        "rowIds": [
+          "c-disadvantage-disadvantage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-ol-q7-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-3-3",
+    "conceptId": "garden-office-complete",
+    "questionRef": "2025 OL Q7 — complete",
+    "stem": "A draft design for a garden office room is shown. The office room is of timber frame construction and has an exterior timber decking.",
+    "questionText": "(a) Discuss two advantages of using timber frame for the construction of the garden office.\n\n(b) Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden office: corner desk; two windows; bookcase unit; seating area. Give one reason for selecting each location.\n\n(c) Discuss one advantage and one disadvantage of constructing a garden office separate from the home.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 5,
+        "contextNote": "Such as: quicker to construct than concrete block; can be prefabricated in a factory, with less time on site.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "a-advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 5,
+        "contextNote": "A second, different advantage. Such as: a renewable material with a low embodied energy; less expensive than steel or concrete; its light weight needs smaller foundations; an attractive appearance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 8,
+        "contextNote": "Large freehand sketch of the given design: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-corner-desk",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for corner desk (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: close to a window for a view and light, away from the door.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-two-windows",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for two windows (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: near the desk for a view while working; at the front to see people approach; on two walls for dual aspect.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-bookcase",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for bookcase unit (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: on the back wall, leaving space for the desk; near the seating area; away from the windows so it does not block light.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-seating",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for seating area (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: a separate zone away from the desk; near the door so as not to disturb the desk; leaving the brightest area for the desk.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "c-c-advantage-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: a clear boundary between work and home life; fewer household interruptions; adds value to the home; frees space in the house.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-c-disadvantage-disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 6,
+        "contextNote": "Such as: the cost of building it and providing electricity and internet; it may need planning permission; it can be cold if not built to a high standard; a smaller garden; ongoing maintenance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q7-office-plan",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Designing a garden office",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-ol-q7-a",
+        "label": "a",
+        "marks": 10,
+        "rowIds": [
+          "a-advantage-1",
+          "a-advantage-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q7-b",
+        "label": "b",
+        "marks": 28,
+        "rowIds": [
+          "b-sketch",
+          "b-corner-desk",
+          "b-two-windows",
+          "b-bookcase",
+          "b-seating"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q7-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-c-advantage-advantage",
+          "c-c-disadvantage-disadvantage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2025-ol-q8",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-2-4",
+    "conceptId": "construction-terms",
+    "questionRef": "2025 OL Q8",
+    "stem": "",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: raft foundation; housing joint; rainwater butt; stud wall; laser level; damp-proof course; door threshold; baluster; room thermostat.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "terms",
+        "kind": "anyN",
+        "verbatim": "Construction Terms",
+        "marks": 50,
+        "contextNote": "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Raft foundation: a large, continuous reinforced concrete slab supporting the whole structure, \"floating\" like a raft; spreads the load over the whole footprint, reducing pressure on the soil; suits soils of low bearing capacity; needs more steel and concrete than a strip foundation. Housing joint: a groove or slot cut across the width of one piece receives the end of another; a medium gluing area; used for shelves, cabinets and bookcases; a through housing runs fully across and shows at both ends, a stopped housing hides the joint at the front edge. Rainwater butt: a container that collects and stores rainwater from the roof via gutters and downpipes; reuses water for plants, lawns or washing the car; reduces reliance on treated tap water and lowers metered water use. Stud wall: an internal wall framed with vertical timber or metal studs covered with plasterboard on both sides; lighter and faster to build than a block wall; load-bearing or non-load-bearing; houses electrical and plumbing services; poorer sound insulation and bearing capacity than a block wall. Laser level: a tool projecting a laser beam to give a straight, level reference line, vertical and/or horizontal; a rotary laser projects a 360° beam for large or outdoor work; more accurate than a spirit level; can be mounted on tripods or clamps. Damp-proof course: a barrier stopping moisture rising through walls and floors by capillary action; polythene, bitumen felt, lead or copper, or slate; laid horizontally between courses, typically 150 mm above ground level, and around window and door openings; protects finishes and reduces mould and decay. Door threshold: the strip of wood, metal or plastic at the bottom of a doorway where the door closes; bridges two floor surfaces and seals the doorway; external thresholds keep out weather and draughts; internal ones cover changes in floor level; must meet building regulations so they are not a trip hazard. Baluster: a short vertical post, often decorative, supporting the handrail of a stairs; a row of balusters is a balustrade; a safety element preventing falls, especially by children; also on balconies and terraces; wood, metal, glass or concrete. Room thermostat: controls room temperature by switching the heating on below the set point and off above it; keeps rooms comfortable efficiently; manual dial or digital models; smart thermostats connect to Wi-Fi and a smartphone.",
+        "group": {
+          "claimMax": 5,
+          "perOption": 10,
+          "options": [
+            "Raft foundation",
+            "Housing joint",
+            "Rainwater butt",
+            "Stud wall",
+            "Laser level",
+            "Damp-proof course",
+            "Door threshold",
+            "Baluster",
+            "Room thermostat"
+          ]
+        }
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Construction terms",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q9-a",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "bungalow-outdoor-living-a",
+    "questionRef": "2025 OL Q9(a)",
+    "stem": "The sketch shows the rear of a 1970’s bungalow. The bungalow overlooks a large rear garden. The homeowners wish to make better use of their large garden by adding an outdoor dining/living space.",
+    "questionText": "Discuss two reasons why the homeowners wish to create an outdoor dining/living space.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 6,
+        "contextNote": "Such as: extra usable living space without much cost; a space for entertaining, dining and relaxing in good weather, BBQs and parties.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 6,
+        "contextNote": "A second, different reason. Such as: adds value to the home; being outdoors reduces stress and supports mental health; easier to enjoy fresh air and greenery.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Outdoor living for a 1970s bungalow",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Reasons, modifications and uses are open responses; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2025-ol-q9-complete",
+    "subjectId": "construction-studies",
+    "year": 2025,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "bungalow-outdoor-living-complete",
+    "questionRef": "2025 OL Q9 — complete",
+    "stem": "The sketch shows the rear of a 1970’s bungalow. The bungalow overlooks a large rear garden. The homeowners wish to make better use of their large garden by adding an outdoor dining/living space.",
+    "questionText": "(a) Discuss two reasons why the homeowners wish to create an outdoor dining/living space.\n\n(b) Using notes and freehand sketches, show two possible modifications that could be made at the rear of the house that would allow for the following: access to the garden from the house; an outdoor dining/living space.\n\n(c) Discuss two other possible family uses of a large garden.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 6,
+        "contextNote": "Such as: extra usable living space without much cost; a space for entertaining, dining and relaxing in good weather, BBQs and parties.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 6,
+        "contextNote": "A second, different reason. Such as: adds value to the home; being outdoors reduces stress and supports mental health; easier to enjoy fresh air and greenery.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-modification-1",
+        "kind": "criterion",
+        "verbatim": "Modification 1 sketch + notes (8 + 5 marks )",
+        "marks": 13,
+        "contextNote": "Sketch 8 and notes 5. Such as: replace windows with a large glazed, sliding or bifold door for access to the garden.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "b-modification-2",
+        "kind": "criterion",
+        "verbatim": "Modification 2 sketch + notes (8 + 5 marks )",
+        "marks": 13,
+        "contextNote": "Sketch 8 and notes 5 for a second, different modification. Such as: a patio along the back wall; part of the lawn changed to decking or slabs; a BBQ area.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "c-use-1",
+        "kind": "criterion",
+        "verbatim": "Suggested use 1",
+        "marks": 6,
+        "contextNote": "Such as: a safe play area for children, with slides or trampolines; growing plants and flowers.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-use-2",
+        "kind": "criterion",
+        "verbatim": "Suggested use 2",
+        "marks": 6,
+        "contextNote": "A second, different use. Such as: growing vegetables and herbs; bird feeders to bring nature closer; a shed or extra storage; space for a family pet.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2025-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q9-modifications",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Outdoor living for a 1970s bungalow",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Reasons, modifications and uses are open responses; the scheme lists typical examples."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2025-ol-q9-a",
+        "label": "a",
+        "marks": 12,
+        "rowIds": [
+          "a-reason-1",
+          "a-reason-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q9-b",
+        "label": "b",
+        "marks": 26,
+        "rowIds": [
+          "b-modification-1",
+          "b-modification-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2025-ol-q9-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-use-1",
+          "c-use-2"
         ]
       }
     ]

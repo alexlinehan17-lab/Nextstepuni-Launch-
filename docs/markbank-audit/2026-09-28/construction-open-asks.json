@@ -1,24 +1,24 @@
 {
   "subjectId": "construction-studies",
-  "measuredAt": "2026-10-11T22:45:57.103427+00:00",
+  "measuredAt": "2026-10-12T02:54:42.314406+00:00",
   "command": "python3 scripts/markbank/authoring/reconcile.py construction-studies --baseline write",
   "baseline": {
-    "cards": 1070,
-    "contentHash": "662e95dbbb38f268",
-    "coveragePct": 62.9,
-    "covered": 530,
+    "cards": 1084,
+    "contentHash": "70058b1f9eaf5266",
+    "coveragePct": 63.1,
+    "covered": 532,
     "excluded": 0,
     "leaves": 843,
-    "open": 313,
+    "open": 311,
     "orphans": 0,
     "papers": {
       "count": 63,
       "hash": "7a382fe186c759ea"
     },
-    "refsHash": "157c8a766e0eee22"
+    "refsHash": "469afff908ac1df6"
   },
-  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2015 Higher, 2015 Ordinary, 2025 Higher, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
-  "openTotal": 313,
+  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2015 Higher, 2015 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
+  "openTotal": 311,
   "papers": [
     {
       "year": 2010,
@@ -580,11 +580,8 @@
       "year": 2025,
       "level": "ol",
       "leaves": 22,
-      "covered": 20,
-      "open": [
-        "Q8",
-        "Q9(a)"
-      ]
+      "covered": 22,
+      "open": []
     },
     {
       "year": 2026,

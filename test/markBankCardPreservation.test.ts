@@ -1,6 +1,6 @@
 import { CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS } from './fixtures/construction2015Reviewed';
 import { CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS } from './fixtures/construction2026Reviewed';
-import { CONSTRUCTION_2025_HIGHER_ADDED_IDS } from './fixtures/construction2025Reviewed';
+import { CONSTRUCTION_2025_HIGHER_ADDED_IDS, CONSTRUCTION_2025_ORDINARY_ADDED_IDS } from './fixtures/construction2025Reviewed';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -758,7 +758,7 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
 // Keep the original Construction count/hash frozen. Source-reviewed additions
 // have their own paper/tariff/route audit (scripts/markbank/authoring/
 // construction_*.py); never rebaseline missing IDs.
-const constructionAdditionIds = new Set([...CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2025_HIGHER_ADDED_IDS]);
+const constructionAdditionIds = new Set([...CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2025_HIGHER_ADDED_IDS, ...CONSTRUCTION_2025_ORDINARY_ADDED_IDS]);
 const frozenCards = (name: string, cards: readonly { id: string }[]) =>
   name.startsWith('construction-studies:') ? cards.filter(card => !constructionAdditionIds.has(card.id)) : cards;
 

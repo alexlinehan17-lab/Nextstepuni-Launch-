@@ -1230,5 +1230,180 @@
     "alt": "Original SEC 2025 Higher Construction Studies alternative Question 10: the printed Heritage Ireland 2030 quotation on reusing historic buildings and its two parts.",
     "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
     "solution": false
+  },
+  "construction-studies-2025-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q1-original.png",
+    "md5": "644ba795747705fd57f1f4c4a7f873d0",
+    "alt": "Original SEC 2025 Ordinary Construction Studies Question 1: the printed question with a sketch of a window in a rendered cavity wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q2-original.png",
+    "md5": "778a9c2318a5efc9a1769b42c0ebf2df",
+    "alt": "Original SEC 2025 Ordinary Construction Studies Question 2: the printed question with a sketch of a worker insulating a sloped ceiling from a scaffold.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q3-original.png",
+    "md5": "36ff80ab1601d53ef3eac600fb642619",
+    "alt": "Original SEC 2025 Ordinary Construction Studies Question 3: the printed question with a section of a two-storey house with a wood pellet stove, cylinder, radiators and tank.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q4-original.png",
+    "md5": "7cfacf72668a17bb64cc089cebc8e917",
+    "alt": "Original SEC 2025 Ordinary Construction Studies Question 4: the printed question with a site location map showing sites A and B beside a road.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q5-original.png",
+    "md5": "d051ba967e4d3fcdb41a2ef09841eae6",
+    "alt": "Original SEC 2025 Ordinary Construction Studies Question 5: the printed question with a sketch of a closed string wooden stairs meeting a landing.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q6-original.png",
+    "md5": "f9f3a27c64043bd4bb316248d472f189",
+    "alt": "Original SEC 2025 Ordinary Construction Studies Question 6: the printed question with a sketch of two workers installing solar panels on a roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q7-original.png",
+    "md5": "5e7ee683c7c6a347c4c2014d1e08ebeb",
+    "alt": "Original SEC 2025 Ordinary Construction Studies Question 7: the printed question with the plan of a garden office with decking.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q8-original.png",
+    "md5": "b6321ebf23a4c793498b06bd18318c27",
+    "alt": "Original SEC 2025 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q9-original.png",
+    "md5": "647d0897b6293c9736ebc14f77d62663",
+    "alt": "Original SEC 2025 Ordinary Construction Studies Question 9: the printed question with a sketch of the rear of a 1970s bungalow and its garden.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2025-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q1-scheme.png",
+    "md5": "5a98c1f4256fac0bdce6ec10b3c0374f",
+    "alt": "SEC 2025 Ordinary marking scheme page for Question 1: a section through the cavity wall and window head with lintels, stepped DPC and cavity closer, and the specification.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q1-section.png",
+    "md5": "ebb96f54e661bb043af2c45df6121c00",
+    "alt": "SEC model section through the window head marked (b), with the stepped DPC over the concrete lintels.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q2-method": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q2-method.png",
+    "md5": "7a31efb191be2377d7523240fcff3115",
+    "alt": "SEC 2025 Ordinary marking scheme notes on insulating a sloped ceiling, with a sketch of a worker fitting insulation between rafters, and the insulation types and thickness.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q2-light": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q2-light.png",
+    "md5": "da41286561a2b5df9841d7f2718728c2",
+    "alt": "SEC model sketches of roof windows set in a sloped roof, with the list of daylight features.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q3-system.png",
+    "md5": "c920ccd944127740e88c0b7ddf71bc75",
+    "alt": "SEC model diagram of the pellet stove heating and hot water system: tanks, cylinder, radiators, flow and return pipes, pump and valves, with typical details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q3-zoning": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q3-zoning.png",
+    "md5": "00cc58ddf2ab4da31d4988bcf147623c",
+    "alt": "SEC 2025 Ordinary marking scheme notes on zoned heating, with a sketch of a zone controller.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q4-sites": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q4-sites.png",
+    "md5": "91c21d8175ab196dc51e7fbd11940e02",
+    "alt": "SEC 2025 Ordinary marking scheme considerations for sites A and B, each with a map extract.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q4-site-a": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q4-site-a.png",
+    "md5": "12d875ac61fd283dc4ef780e64eb6867",
+    "alt": "SEC model sketch of site A with the house position, entrance and curved driveway, and the house-position notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q5-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q5-section.png",
+    "md5": "0c1f961541d0ea3d4157425a6d65c34b",
+    "alt": "SEC model section through the top three steps of a closed string stairs and the landing, with the 35° pitch and specification.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q5-glue-blocks": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q5-glue-blocks.png",
+    "md5": "8e59ad9c3fd700c19232a93df9f8ec2f",
+    "alt": "SEC model detail of a step with an arrow to the glue block between tread and riser.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q6-signs": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q6-signs.png",
+    "md5": "946d1ea64609e51538f68b91d89859e7",
+    "alt": "SEC model blue safety signs for a high-visibility vest, safety boots and ear defenders, each with a reason.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q6-risks": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q6-risks.png",
+    "md5": "e3271513ca71beffaee579067d1c239b",
+    "alt": "SEC 2025 Ordinary marking scheme notes on risks when working at height, with a sketch of a scaffold and ladder.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q6-access": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q6-access.png",
+    "md5": "490a0ac14763e4a0201dc016baae8688",
+    "alt": "SEC 2025 Ordinary marking scheme notes on safe roof access, with a sketch of a worker in a safety harness.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q7-office-plan": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q7-office-plan.png",
+    "md5": "7e41adf5f3b04baa781283ff5de0990e",
+    "alt": "SEC model plan of the garden office showing a corner desk, two windows, a bookcase and a seating area beside the decking.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q9-modifications": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q9-modifications.png",
+    "md5": "acbfc9bc5d8dc5f19ab29bcaaaeba76e",
+    "alt": "SEC model sketch of the bungalow rear with glazed doors opening onto a patio, and the list of modifications.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2025-OL-q9-uses": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2025-OL-q9-uses.png",
+    "md5": "05f838c64cf2ef6955fe23d5a4eb6147",
+    "alt": "SEC model sketch of raised garden planters, with the list of family uses of a garden.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }
