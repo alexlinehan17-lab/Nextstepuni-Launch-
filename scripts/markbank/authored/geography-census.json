@@ -12,10 +12,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 1309,
-  "includedBaseTasks": 1291,
-  "excludedBaseTasks": 18,
-  "authoredCards": 1392,
+  "paperBaseTasks": 1365,
+  "includedBaseTasks": 1356,
+  "excludedBaseTasks": 9,
+  "authoredCards": 1457,
   "baseTasks": [
     {
       "id": "geography-2021-hl-p1-q1",
@@ -24,14 +24,32 @@
       "part": 1,
       "questionRef": "2021 HL Part 1 Q1",
       "title": "Landscape Identification",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2021-hl-p1-q2",
       "year": 2021,
       "level": "higher",
       "part": 1,
-      "questionRef": "2021 HL Part 1 Q2",
+      "questionRef": "2021 HL Part 1 Q2(i)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q2-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q2(ii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q2-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q2(iii)",
       "title": "Plate Tectonics",
       "status": "authored"
     },
@@ -40,7 +58,16 @@
       "year": 2021,
       "level": "higher",
       "part": 1,
-      "questionRef": "2021 HL Part 1 Q3",
+      "questionRef": "2021 HL Part 1 Q3(i)",
+      "title": "The Physical Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q3-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q3(ii)",
       "title": "The Physical Environment",
       "status": "authored"
     },
@@ -49,7 +76,25 @@
       "year": 2021,
       "level": "higher",
       "part": 1,
-      "questionRef": "2021 HL Part 1 Q4",
+      "questionRef": "2021 HL Part 1 Q4(i)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q4-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q4(ii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q4-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q4(iii)",
       "title": "Rocks",
       "status": "authored"
     },
@@ -58,7 +103,16 @@
       "year": 2021,
       "level": "higher",
       "part": 1,
-      "questionRef": "2021 HL Part 1 Q5",
+      "questionRef": "2021 HL Part 1 Q5(i)",
+      "title": "Plate Tectonics - Hot Spot Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q5-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q5(ii)",
       "title": "Plate Tectonics - Hot Spot Activity",
       "status": "authored"
     },
@@ -67,7 +121,25 @@
       "year": 2021,
       "level": "higher",
       "part": 1,
-      "questionRef": "2021 HL Part 1 Q6",
+      "questionRef": "2021 HL Part 1 Q6(i)",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q6-ii-a",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q6(ii)(a)",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q6-ii-b",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q6(ii)(b)",
       "title": "Concept of a Region",
       "status": "authored"
     },
@@ -76,18 +148,72 @@
       "year": 2021,
       "level": "higher",
       "part": 1,
-      "questionRef": "2021 HL Part 1 Q7",
+      "questionRef": "2021 HL Part 1 Q7(i)",
       "title": "Map Skills",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q7-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q7(ii)",
+      "title": "Map Skills",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q7-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q7(iii)",
+      "title": "Map Skills",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q7-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q7(iv)",
+      "title": "Map Skills",
+      "status": "authored"
     },
     {
       "id": "geography-2021-hl-p1-q8",
       "year": 2021,
       "level": "higher",
       "part": 1,
-      "questionRef": "2021 HL Part 1 Q8",
+      "questionRef": "2021 HL Part 1 Q8(i)",
       "title": "Aerial Photograph and Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q8-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q8(ii)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q8-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q8(iii)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q8-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q8(iv)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
     },
     {
       "id": "geography-2021-hl-p1-q9",
@@ -96,14 +222,50 @@
       "part": 1,
       "questionRef": "2021 HL Part 1 Q9",
       "title": "Aerial Photographs",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2021-hl-p1-q10",
       "year": 2021,
       "level": "higher",
       "part": 1,
-      "questionRef": "2021 HL Part 1 Q10",
+      "questionRef": "2021 HL Part 1 Q10(i)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q10-ii-a",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q10(ii)(a)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q10-ii-b",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q10(ii)(b)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q10-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q10(iii)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q10-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q10(iv)",
       "title": "Weather Statistics",
       "status": "authored"
     },
@@ -112,7 +274,34 @@
       "year": 2021,
       "level": "higher",
       "part": 1,
-      "questionRef": "2021 HL Part 1 Q11",
+      "questionRef": "2021 HL Part 1 Q11(i)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q11-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q11(ii)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q11-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q11(iii)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q11-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q11(iv)",
       "title": "Statistical Interpretation",
       "status": "authored"
     },
@@ -121,7 +310,34 @@
       "year": 2021,
       "level": "higher",
       "part": 1,
-      "questionRef": "2021 HL Part 1 Q12",
+      "questionRef": "2021 HL Part 1 Q12(i)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q12-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q12(ii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q12-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q12(iii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p1-q12-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2021 HL Part 1 Q12(iv)",
       "title": "Graphical Interpretation",
       "status": "authored"
     },
@@ -132,10 +348,10 @@
       "part": 2,
       "questionRef": "2021 HL Part 2 Q1A",
       "title": "Ordnance Survey Map",
-      "status": "excluded"
+      "status": "authored"
     },
     {
-      "id": "geography-2021-hl-p2-q1b",
+      "id": "geography-2021-hl-p2-q1b-route-i-fluvial-landform",
       "year": 2021,
       "level": "higher",
       "part": 2,
@@ -157,7 +373,34 @@
       "year": 2021,
       "level": "higher",
       "part": 2,
-      "questionRef": "2021 HL Part 2 Q2A",
+      "questionRef": "2021 HL Part 2 Q2A(i)",
+      "title": "Coastal Landforms",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q2a-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q2A(ii)",
+      "title": "Coastal Landforms",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q2a-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q2A(iii)",
+      "title": "Coastal Landforms",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q2a-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q2A(iv)",
       "title": "Coastal Landforms",
       "status": "authored"
     },
@@ -171,7 +414,7 @@
       "status": "authored"
     },
     {
-      "id": "geography-2021-hl-p2-q2c",
+      "id": "geography-2021-hl-p2-q2c-the-impact-of-flood-control-measur",
       "year": 2021,
       "level": "higher",
       "part": 2,
@@ -184,7 +427,52 @@
       "year": 2021,
       "level": "higher",
       "part": 2,
-      "questionRef": "2021 HL Part 2 Q3A",
+      "questionRef": "2021 HL Part 2 Q3A(i)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q3a-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q3A(ii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q3a-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q3A(iii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q3a-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q3A(iv)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q3a-v",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q3A(v)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q3a-vi",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q3A(vi)",
       "title": "Volcanoes",
       "status": "authored"
     },
@@ -238,7 +526,43 @@
       "year": 2021,
       "level": "higher",
       "part": 2,
-      "questionRef": "2021 HL Part 2 Q5A",
+      "questionRef": "2021 HL Part 2 Q5A(i)",
+      "title": "Fishing in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q5a-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q5A(ii)",
+      "title": "Fishing in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q5a-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q5A(iii)",
+      "title": "Fishing in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q5a-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q5A(iv)",
+      "title": "Fishing in the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q5a-v",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q5A(v)",
       "title": "Fishing in the European Union",
       "status": "authored"
     },
@@ -265,12 +589,57 @@
       "year": 2021,
       "level": "higher",
       "part": 2,
-      "questionRef": "2021 HL Part 2 Q6A",
+      "questionRef": "2021 HL Part 2 Q6A(i)",
       "title": "Disposable Income of Irish Regions",
       "status": "authored"
     },
     {
-      "id": "geography-2021-hl-p2-q6b",
+      "id": "geography-2021-hl-p2-q6a-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q6A(ii)",
+      "title": "Disposable Income of Irish Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q6a-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q6A(iii)",
+      "title": "Disposable Income of Irish Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q6a-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q6A(iv)",
+      "title": "Disposable Income of Irish Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q6a-v",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q6A(v)",
+      "title": "Disposable Income of Irish Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q6a-vi",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q6A(vi)",
+      "title": "Disposable Income of Irish Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q6b-relief-climate",
       "year": 2021,
       "level": "higher",
       "part": 2,
@@ -294,10 +663,10 @@
       "part": 2,
       "questionRef": "2021 HL Part 2 Q7A",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
     },
     {
-      "id": "geography-2021-hl-p2-q7b",
+      "id": "geography-2021-hl-p2-q7b-the-product-life-cycle-corporate-strategies-influencing-t",
       "year": 2021,
       "level": "higher",
       "part": 2,
@@ -319,7 +688,61 @@
       "year": 2021,
       "level": "higher",
       "part": 2,
-      "questionRef": "2021 HL Part 2 Q8A",
+      "questionRef": "2021 HL Part 2 Q8A(i)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q8a-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q8A(ii)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q8a-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q8A(iii)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q8a-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q8A(iv)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q8a-v",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q8A(v)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q8a-vi",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q8A(vi)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q8a-vii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q8A(vii)",
       "title": "International Trade",
       "status": "authored"
     },
@@ -337,16 +760,34 @@
       "year": 2021,
       "level": "higher",
       "part": 2,
-      "questionRef": "2021 HL Part 2 Q8C",
+      "questionRef": "2021 HL Part 2 Q8C(i)",
       "title": "Location of Economic Activity",
-      "status": "excluded"
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q8c-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q8C(ii)",
+      "title": "Location of Economic Activity",
+      "status": "authored"
     },
     {
       "id": "geography-2021-hl-p2-q9a",
       "year": 2021,
       "level": "higher",
       "part": 2,
-      "questionRef": "2021 HL Part 2 Q9A",
+      "questionRef": "2021 HL Part 2 Q9A(i)",
+      "title": "Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q9a-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q9A(ii)",
       "title": "Economic Activity",
       "status": "authored"
     },
@@ -375,7 +816,7 @@
       "part": 2,
       "questionRef": "2021 HL Part 2 Q10A",
       "title": "Aerial Photograph",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2021-hl-p2-q10b",
@@ -400,7 +841,61 @@
       "year": 2021,
       "level": "higher",
       "part": 2,
-      "questionRef": "2021 HL Part 2 Q11A",
+      "questionRef": "2021 HL Part 2 Q11A(i)",
+      "title": "Population Change in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q11a-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q11A(ii)",
+      "title": "Population Change in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q11a-iii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q11A(iii)",
+      "title": "Population Change in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q11a-iv",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q11A(iv)",
+      "title": "Population Change in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q11a-v",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q11A(v)",
+      "title": "Population Change in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q11a-vi",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q11A(vi)",
+      "title": "Population Change in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q11a-vii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q11A(vii)",
       "title": "Population Change in Ireland",
       "status": "authored"
     },
@@ -420,14 +915,23 @@
       "part": 2,
       "questionRef": "2021 HL Part 2 Q11C",
       "title": "Urban Settlement",
-      "status": "excluded"
+      "status": "authored"
     },
     {
       "id": "geography-2021-hl-p2-q12a",
       "year": 2021,
       "level": "higher",
       "part": 2,
-      "questionRef": "2021 HL Part 2 Q12A",
+      "questionRef": "2021 HL Part 2 Q12A(i)",
+      "title": "Population Dynamics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2021-hl-p2-q12a-ii",
+      "year": 2021,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2021 HL Part 2 Q12A(ii)",
       "title": "Population Dynamics",
       "status": "authored"
     },
@@ -459,7 +963,7 @@
       "status": "authored"
     },
     {
-      "id": "geography-2021-hl-p2-q14",
+      "id": "geography-2021-hl-p2-q14-resource-use-fair-trade-justice-issues",
       "year": 2021,
       "level": "higher",
       "part": 2,
@@ -486,7 +990,7 @@
       "status": "authored"
     },
     {
-      "id": "geography-2021-hl-p2-q17",
+      "id": "geography-2021-hl-p2-q17-mineral-matter-air-water",
       "year": 2021,
       "level": "higher",
       "part": 2,
@@ -536,7 +1040,7 @@
       "level": "higher",
       "part": 2,
       "questionRef": "2021 HL Part 2 Q22",
-      "title": "The Atmosphere–Ocean Environment",
+      "title": "The Atmosphere – Ocean Environment",
       "status": "authored"
     },
     {
@@ -545,7 +1049,7 @@
       "level": "higher",
       "part": 2,
       "questionRef": "2021 HL Part 2 Q23",
-      "title": "The Atmosphere–Ocean Environment",
+      "title": "The Atmosphere – Ocean Environment",
       "status": "authored"
     },
     {
@@ -554,7 +1058,7 @@
       "level": "higher",
       "part": 2,
       "questionRef": "2021 HL Part 2 Q24",
-      "title": "The Atmosphere–Ocean Environment",
+      "title": "The Atmosphere – Ocean Environment",
       "status": "authored"
     },
     {
@@ -11803,10 +12307,11 @@
     {
       "year": 2021,
       "level": "higher",
-      "paperBaseTasks": 60,
-      "includedBaseTasks": 51,
-      "excludedBaseTasks": 9,
-      "authoredCardsAfterFiniteExpansion": 56
+      "paperBaseTasks": 116,
+      "includedBaseTasks": 116,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 121,
+      "reviewed": true
     },
     {
       "year": 2021,
@@ -11913,8 +12418,7 @@
       "classification": "finite-expanded",
       "variants": 4,
       "kinds": [
-        "answer-i-or-ii",
-        "answer-i-or-ii+inline-choice"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -11922,7 +12426,7 @@
       "classification": "finite-expanded",
       "variants": 3,
       "kinds": [
-        "none+choose-1-of-3"
+        "reviewed-printed-route"
       ]
     },
     {
@@ -11930,7 +12434,7 @@
       "classification": "single-card-choice",
       "variants": 1,
       "kinds": [
-        "none+choose-2-of-3-one-card"
+        "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 2
     },
@@ -11939,7 +12443,7 @@
       "classification": "single-card-choice",
       "variants": 1,
       "kinds": [
-        "none+choose-2-of-5-table-one-card"
+        "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 9
     },
@@ -11948,7 +12452,7 @@
       "classification": "single-card-choice",
       "variants": 1,
       "kinds": [
-        "none+choose-2-of-3-one-card"
+        "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 2
     },
@@ -11957,7 +12461,7 @@
       "classification": "single-card-choice",
       "variants": 1,
       "kinds": [
-        "none+choose-3-of-4-one-card"
+        "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 3
     },
@@ -11966,7 +12470,7 @@
       "classification": "single-card-choice",
       "variants": 1,
       "kinds": [
-        "none+choose-3-of-4-one-card"
+        "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 3
     },
@@ -12599,78 +13103,6 @@
     }
   ],
   "exclusions": [
-    {
-      "year": 2021,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "1",
-      "title": "Landscape Identification",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "7",
-      "title": "Map Skills",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "8",
-      "title": "Aerial Photograph and Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "9",
-      "title": "Aerial Photographs",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "1A",
-      "title": "Ordnance Survey Map",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "7A",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "8C",
-      "title": "Location of Economic Activity",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "10A",
-      "title": "Aerial Photograph",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
-    {
-      "year": 2021,
-      "level": "higher",
-      "part": 2,
-      "questionRef": "11C",
-      "title": "Urban Settlement",
-      "reason": "The printed task requires a separate Ordnance Survey map or aerial photograph that is not present in the official question-paper PDF held by Paper Trail."
-    },
     {
       "year": 2021,
       "level": "ordinary",
