@@ -9,7 +9,6 @@ mark up to the published maximum; printed excellent/good/fair bands are kept as 
 """
 import copy
 import hashlib
-import itertools
 import json
 from pathlib import Path
 
@@ -43,9 +42,6 @@ FIGURES = {
     'q3-option-1': (S, 11, PAGE, True),
     'q3-option-2': (S, 12, PAGE, True),
     'q4-original': (P, 3, [45, 420, 580, 765], False),
-    'q4-stone-wall': (S, 16, PAGE, True),
-    'q4-cut-roof': (S, 18, PAGE, True),
-    'q4-sash-windows': (S, 19, [48, 52, 568, 792], True),
     'q5-original': (P, 4, [45, 50, 575, 720], False),
     'q5-calculation': (S, 21, PAGE, True),
     'q5-moisture': (S, 22, PAGE, True),
@@ -58,10 +54,6 @@ FIGURES = {
     'q8-stack': (S, 30, [250, 320, 568, 778], True),
     'q8-traps': (S, 31, [284, 296, 586, 708], True),
     'q9-original': (P, 6, [45, 395, 575, 770], False),
-    'q9-wall-roof': (S, 33, [140, 115, 470, 300], True),
-    'q9-window-head': (S, 33, [140, 302, 470, 402], True),
-    'q9-window-cill': (S, 33, [140, 405, 470, 512], True),
-    'q9-wall-floor': (S, 33, [140, 530, 470, 740], True),
     'q9-details': (S, 33, [140, 100, 470, 752], True),
     'q10-original': (P, 7, [45, 50, 575, 400], False),
     'q10-areas': (S, 35, PAGE, True),
@@ -263,7 +255,7 @@ compose('3', 'complete', ' — complete', [A3, B3b, C3], 'q3-option-1', B3, S3, 
 
 # ---------------------------------------------------------------- Q4
 B4 = 'Scheme p46: (a) two selected areas, each notes 8 + sketches 12 = 20; (a) 40. (b) two selected principles, each discussion/notes 10; (b) 20. Complete 60.'
-S4 = 'Part (a) selects any two of three printed areas: C(3,2) = 3 pairs, plus each single area as a practicable 20-mark task. Part (b) selects any two of three printed principles: 3 pairs plus each single. Complete question: 3 × 3 = 9 routes.'
+S4 = 'Choice is not a route: part (a) (any two of three printed areas) and part (b) (any two of three printed principles) are each ONE card printing every item, with one any-two group over the scheme headings; the complete question composes the two.'
 AREAS = [
     ('stone-wall', '500 mm solid external wall of stone construction, uninsulated, with an internal lime render', 'stone wall',
      'Such as: keep the wall breathable, with layers more vapour-permeable towards the outside and no impermeable vapour barriers; use hygroscopic natural insulation (hemp/hempcrete, lime, wood fibre, cork, sheep’s wool); rake out and repoint with lime mortar by hand (joints raked to twice their width, dampened first, filled in stages, protected with hessian while it carbonates); apply hempcrete internally and allow 4–6 weeks to dry, then lime render, or a three-coat lime plaster (scud coat, haired scratch coat, float coat, lime-putty finish).',
@@ -289,33 +281,24 @@ PRINCIPLES = [
      'Such as: understand the building’s significance before work; preserve distinctive features and craftsmanship; make sympathetic alterations; follow conservation principles and guidelines; heritage buildings are irreplaceable cultural resources.',
      ['cons-1-1'], ['conservation-restoration'], 'Respect for historic buildings (1.1).'),
 ]
-a4 = {}
-for slug, item, short, content, nodes, topics, figure, review in AREAS:
-    a4[slug] = add('4', f'a-{slug}', f'(a) — {short}',
-                   f'A survey of the cottage reveals: {item}. Using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage.',
-                   [row('notes', 'Steps involved in upgrading the thermal performance of each area selected', 8, f'Notes on the steps for the {short}, respecting the cottage’s character. ' + content),
-                    row('sketches', 'Sketches', 12, f'Sketches showing the upgrade steps and construction for the {short}.')],
-                   nodes, topics, figure, review, B4, S4)
-b4 = {}
-for slug, item, content, nodes, topics, review in PRINCIPLES:
-    b4[slug] = add('4', f'b-{slug}', f'(b) — {item}',
-                   f'Discuss the importance of the following when restoring traditional heritage buildings: {item}.',
-                   [row('discussion', 'Discussion/notes 1', 10, f'Discuss the importance of {item} when restoring traditional heritage buildings. ' + content)],
-                   nodes, topics, None, review, B4, S4)
-a4_pairs, b4_pairs = {}, {}
-for (s1, i1, n1, *_), (s2, i2, n2, *_) in itertools.combinations(AREAS, 2):
-    a4_pairs[(s1, s2)] = compose('4', f'a-{s1}-and-{s2}', f'(a) — {n1} and {n2}', [a4[s1], a4[s2]], AREAS[[a[0] for a in AREAS].index(s1)][6], B4, S4,
-                                 f'A survey of the cottage reveals: {i1}; {i2}. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage.',
-                                 labels=[n1, n2])
-for (s1, i1, *_), (s2, i2, *_) in itertools.combinations(PRINCIPLES, 2):
-    b4_pairs[(s1, s2)] = compose('4', f'b-{s1}-and-{s2}', f'(b) — {i1} and {i2}', [b4[s1], b4[s2]], None, B4, S4,
-                                 f'Discuss the importance of any two of the following when restoring traditional heritage buildings: {i1}; {i2}.',
-                                 labels=[i1, i2])
-for (as1, as2), apair in a4_pairs.items():
-    for (bs1, bs2), bpair in b4_pairs.items():
-        compose('4', f'complete-{as1}-and-{as2}--{bs1}-and-{bs2}', f' — complete: {apair["questionRef"].split(" — ")[1]}; {bpair["questionRef"].split(" — ")[1]}',
-                [apair, bpair], apair.get('figureKey', '').removeprefix(FP) or None, B4, S4,
-                parts(apair, bpair), labels=['a', 'b'])
+AREA_HEADINGS = ['Thermal upgrading of solid stone external wall', 'Thermal upgrading of traditional cut roof',
+                 'Original sliding sash windows-softwood and single glazed']
+PRINCIPLE_HEADINGS = ['Conservation of Original Materials', 'Breathable Structure', 'Respect for Our Built Heritage']
+A4 = add('4', 'a', '(a)',
+         'A survey of the cottage reveals: ' + '; '.join(a[1] for a in AREAS) + '. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading the thermal performance of each area selected in a manner that respects the original character of the cottage.',
+         [dict(id='areas', kind='anyN', verbatim='Steps involved in upgrading the thermal performance of each area selected', marks=40,
+               contextNote='Any two of the three areas, each notes 8 and sketches 12 = 20, respecting the cottage’s character. ' + ' '.join(f'{a[2].capitalize()}: ' + a[3].removeprefix('Such as: ') for a in AREAS),
+               group=dict(claimMax=2, perOption=20, options=AREA_HEADINGS))],
+         list(dict.fromkeys(n for a in AREAS for n in a[4])), list(dict.fromkeys(t for a in AREAS for t in a[5])), None,
+         'The union of the three printed areas: ' + ' '.join(a[7] for a in AREAS), B4, S4)
+B4b = add('4', 'b', '(b)',
+          'Discuss the importance of any two of the following when restoring traditional heritage buildings: ' + '; '.join(p[1] for p in PRINCIPLES) + '.',
+          [dict(id='principles', kind='anyN', verbatim='Importance when restoring traditional heritage buildings', marks=20,
+                contextNote='Any two of the three principles, each discussion/notes 10. ' + ' '.join(f'{p[1].capitalize()}: ' + p[2].removeprefix('Such as: ') for p in PRINCIPLES),
+                group=dict(claimMax=2, perOption=10, options=PRINCIPLE_HEADINGS))],
+          list(dict.fromkeys(n for p in PRINCIPLES for n in p[3])), list(dict.fromkeys(t for p in PRINCIPLES for t in p[4])), None,
+          'The union of the three printed principles: ' + ' '.join(p[5] for p in PRINCIPLES), B4, S4)
+compose('4', 'complete', ' — complete', [A4, B4b], None, B4, S4, parts(A4, B4b))
 
 # ---------------------------------------------------------------- Q5
 B5 = 'Scheme p47: (a) tabulation 3, external and internal surface resistances 3 + 3, seven material/cavity resistances 7 × 3 = 21, total resistance 3, U-value 3 = 36; (b) heat-loss formula 3, heating duration 3, kJ per year 3, kg of pellets 3, annual cost 3 = 15; (c) notes/discussion 3 + sketch 6 = 9. Complete 60.'
@@ -402,7 +385,7 @@ compose('8', 'complete', ' — complete', [A8, B8b, C8], 'q8-stack', B8, S8, par
 
 # ---------------------------------------------------------------- Q9
 B9 = 'Scheme p51: (a) three selected locations, each note 8 + sketches 8 = 16; (a) 48. (b) two benefits × (3 point + 3 discussion) = 12. Complete 60.'
-S9 = 'Part (a) selects any three of the FOUR circled locations: C(4,3) = 4 routes, plus each location as a separate 16-mark task. Locations are named by the scheme headings. Complete question: 4 routes.'
+S9 = 'Choice is not a route: part (a) (any three of the FOUR circled locations) is ONE card with one any-three group over the four locations, named by the scheme headings; the complete question composes (a) and (b).'
 LOCATIONS = [
     ('wall-roof', 'Wall and roof junction', ['cons-6-2', 'cons-3-10', 'cons-3-3'], ['heat-loss-insulation', 'roofs', 'walls'],
      'Such as: wall and roof insulation meeting to keep the envelope continuous; a thermal break at the wallplate (insulated barrier or thermal blocks); cavity insulation continued and the eaves detailed to avoid a cold bridge; no direct structural or steel connections bridging the insulation.',
@@ -418,28 +401,19 @@ LOCATIONS = [
      'Thermal bridging (6.2) at the ground floor (4.2) to external wall (3.3) junction.'),
 ]
 STEM9A = 'Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at'
-a9 = {}
-for slug, label, nodes, topics, content, review in LOCATIONS:
-    a9[slug] = add('9', f'a-{slug}', f'(a) — {label.lower()}', f'{STEM9A} locations circled on the drawing — {label.lower()}',
-                   [row('note', 'Note', 8, f'Notes on best-practice detailing at the circled {label.lower()}. ' + content),
-                    row('sketches', 'Sketches', 8, f'Sketches of the {label.lower()} detail showing the continuous insulation line.')],
-                   nodes, topics, f'q9-{slug}', review, B9, S9)
-for combo in itertools.combinations(LOCATIONS, 3):
-    names = [c[1].lower() for c in combo]
-    compose('9', 'a-' + '-'.join(c[0] for c in combo), '(a) — ' + ', '.join(names), [a9[c[0]] for c in combo], 'q9-details', B9, S9,
-            f'{STEM9A} any three locations circled on the drawing — ' + '; '.join(names), labels=names)
+A9 = add('9', 'a', '(a)', STEM9A + ' any three locations circled on the drawing.',
+         [dict(id='locations', kind='anyN', verbatim='Best practice design detailing to prevent thermal bridging', marks=48,
+               contextNote='Any three of the four circled locations, each note 8 and sketches 8 = 16, showing the continuous insulation line. ' + ' '.join(f'{loc[1]}: ' + loc[4].removeprefix('Such as: ') for loc in LOCATIONS),
+               group=dict(claimMax=3, perOption=16, options=[loc[1] for loc in LOCATIONS]))],
+         list(dict.fromkeys(n for loc in LOCATIONS for n in loc[2])), list(dict.fromkeys(t for loc in LOCATIONS for t in loc[3])), 'q9-details',
+         'The union of the four circled locations: ' + ' '.join(loc[5] for loc in LOCATIONS), B9, S9)
 B9b = add('9', 'b', '(b)', 'Discuss in detail two benefits to the homeowner of eliminating thermal bridging.',
           [row(f'benefit-{i}', f'Benefit {i} (3 for point, 3 for discussion)', 6, note) for i, note in [
               (1, 'Point 3 and discussion 3. Such as: less heat loss at junctions and better thermal comfort; lower heating bills and fuel use.'),
               (2, 'A second, different benefit: point 3 and discussion 3. Such as: no cold-spot condensation, damp and mould, so a healthier home; lower carbon emissions; a better BER and market value; longer-lasting building materials; a more efficient heating system.')]],
           ['cons-6-2', 'cons-6-6'], ['heat-loss-insulation', 'condensation-air-tightness'], None,
           'Benefits of eliminating thermal bridges (6.2), including avoiding surface condensation (6.6).', B9, S9)
-for combo in itertools.combinations(LOCATIONS, 3):
-    triple = cards[f"{PREFIX}q9-a-{'-'.join(c[0] for c in combo)}"]
-    # Each selected location stays its own task group: a three-location group would exceed the five-row limit.
-    compose('9', 'complete-' + '-'.join(c[0] for c in combo), ' — complete: ' + ', '.join(c[1].lower() for c in combo),
-            [a9[c[0]] for c in combo] + [B9b], 'q9-details', B9, S9, parts(triple, B9b),
-            labels=[f'(a) {c[1].lower()}' for c in combo] + ['(b)'])
+compose('9', 'complete', ' — complete', [A9, B9b], 'q9-details', B9, S9, parts(A9, B9b))
 
 # ---------------------------------------------------------------- Q10
 B10 = 'Scheme p52: (a) three areas × (1 selection + 5 reason) = 18; (b) three retrofits × (notes 5 + sketches 5) = 30; (c) one test: notes 6 + sketches 6 = 12. Complete 60.'
@@ -483,10 +457,10 @@ compose('10', 'complete', ' — complete', [AA, AB], None, BALT, SALT, parts(AA,
 # ---------------------------------------------------------------- ledgers
 ledger_rows = [
     (1, 'Answer any', 'Whole-exam selection: any five of the ten questions; all question banks retained, no full-exam Cartesian cards.'),
-    (3, 'Select', 'Q4(a) closed choice: select any two of three printed areas — 3 pairs and 3 single-area tasks.'),
+    (3, 'Select', 'Q4(a) closed choose-two of three printed areas: one card with an any-two group (choice is not a route).'),
     (3, 'any two', 'Q4(a) closed choose-two of three printed areas (same directive as the preceding Select).'),
-    (3, 'any two', 'Q4(b) closed choose-two of three printed principles — 3 pairs and 3 single-principle tasks.'),
-    (6, 'any three', 'Q9(a) closed choose-three of the four circled locations — 4 triples and 4 single-location tasks.'),
+    (3, 'any two', 'Q4(b) closed choose-two of three printed principles: one card with an any-two group (choice is not a route).'),
+    (6, 'any three', 'Q9(a) closed choose-three of the four circled locations: one card with an any-three group (choice is not a route).'),
     (7, 'Select', 'Q10(a) open selection: "any three areas of the building fabric" prints no finite list; one open response.'),
     (7, 'any three', 'Q10(a) open selection (same directive as the preceding Select).'),
     (7, 'OR', 'Alternative Question 10: a separate whole 60-mark route under the same printed Question 10 anchor.'),
@@ -503,9 +477,9 @@ assert [(o[0], o[2]) for o in observed] == [(r[0], r[1]) for r in ledger_rows], 
 selection_ledger = dict(pattern=pattern, unclassified=0, sourceHashes=HASHES,
                         rows=[dict(page=o[0], start=o[1], match=o[2], context=o[3], classification=r[2]) for o, r in zip(observed, ledger_rows)],
                         finiteQuestionChoices={
-                            '4a': dict(choose=2, options=[a[0] for a in AREAS], routes=[list(c) for c in itertools.combinations([a[0] for a in AREAS], 2)]),
-                            '4b': dict(choose=2, options=[p[0] for p in PRINCIPLES], routes=[list(c) for c in itertools.combinations([p[0] for p in PRINCIPLES], 2)]),
-                            '9a': dict(choose=3, options=[loc[0] for loc in LOCATIONS], routes=[list(c) for c in itertools.combinations([loc[0] for loc in LOCATIONS], 3)])})
+                            '4a': dict(choose=2, options=[a[0] for a in AREAS], cardId=A4['id'], groupRowId='areas'),
+                            '4b': dict(choose=2, options=[p[0] for p in PRINCIPLES], cardId=B4b['id'], groupRowId='principles'),
+                            '9a': dict(choose=3, options=[loc[0] for loc in LOCATIONS], cardId=A9['id'], groupRowId='locations')})
 whole = {}
 for t in tasks:
     c = t['card']
