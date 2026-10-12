@@ -40,5 +40,8 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "he-2024-ol-sc-q4aii-condensed": "he-2024-ol-sc-q4aii-pasteurisation",
   "he-2024-ol-sc-q4aii-evaporated": "he-2024-ol-sc-q4aii-pasteurisation",
   "he-2024-ol-sc-q4aii-sterilisation": "he-2024-ol-sc-q4aii-pasteurisation",
-  "he-2024-ol-sc-q4aii-uht": "he-2024-ol-sc-q4aii-pasteurisation"
+  "he-2024-ol-sc-q4aii-uht": "he-2024-ol-sc-q4aii-pasteurisation",
+  // 2021 OL Paper 2 Q3(a): the scheme's second method ladder for the one 10D part,
+  // carded twice; both ladders are now quoted on the canonical card.
+  "maths-2021-ol-p2-q3": "maths-2021-ol-p2-q3-a"
 };

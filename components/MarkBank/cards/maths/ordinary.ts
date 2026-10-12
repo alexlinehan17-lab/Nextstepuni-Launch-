@@ -2233,36 +2233,6 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC003GLP200EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q3", topicId: "maths-2-2", conceptId: "line-passes-through-points-write-equation",
-    section: "B", questionRef: "2021 OL Paper 2 Q3",
-    questionText: "A line n passes through the points A(−1, 2) and B(0, −2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ.",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "maths-2021-ol-p2-q3-r1", kind: "anyN", verbatim: "Work of merit\nSome correct substitution into equation y = mx + c", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit\nSome correct substitution into equation y = mx + c","Full substitution into both A & B\nm or c found","Significant Work\nm and c found\nOne error and finishes correctly\nAnswer not in required format"],"perOptionSteps":[3,2,5]} },
-    ],
-    questionFigure: {
-          "candId": "maths-2021-OL-ask-p2-q3",
-          "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q3.png",
-          "srcHash": "d861e767ffe0ead1da25c6ba5144a2ce",
-          "alt": "The question as printed on the paper — A line n passes through the points A(–1, 2) and B(0, –2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ. The diagram below shows the line l: 3x−4y = 5 and the point P(6, −3). 5 y l 4 3 2 1 x -2 -1 1 2 3",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
-    },
-    figure: {
-          "candId": "maths-2021-OL-paper-p035-i0",
-          "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p035-i0.png",
-          "srcHash": "53141c0b54af8174d55c58100495ef44",
-          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q3, typeset as the State Examinations Commission set it. It reads: A: 2 = −m + c B: −2 = m(0) + c ⇒c = −2 From A: 2 = −m−2 ⇒m = −4 → y = −4x−2",
-          "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
     qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP200EV",

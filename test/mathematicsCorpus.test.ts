@@ -2,6 +2,7 @@ import { CARDS as ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
 import ordinary1 from '../scripts/markbank/mathematics/reviews/2025-ordinary-p1.json';
 import ordinary2 from '../scripts/markbank/mathematics/reviews/2025-ordinary-p2.json';
 import { describe, expect, it } from 'vitest';
+import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { logicalQuestionIdentity, topicsForPaper } from '../components/PaperTrail/topics';
 import { CARDS as FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
 import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-single.json';
@@ -856,9 +857,6 @@ describe('2023 Ordinary Mathematics Paper 2 marking-point repairs', () => {
   });
 });
 
-// A legacy card that duplicates a reviewed unit; it stays live until a progress-alias decision.
-const OUTSIDE_CENSUS = new Set(['maths-2021-ol-p2-q3']);
-
 // 2022 and 2021 Higher/Ordinary papers, reviewed from 2026-10-12. The 2022 papers were adjusted for
 // COVID-19 (220 marks to count) but every question is offered and retained.
 describe.each([
@@ -872,8 +870,7 @@ describe.each([
   { year: 2021, level: 'ordinary' as const, number: 2, count: 48, review: ordinary2021p2 },
 ])('$year $level Mathematics Paper $number independent source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
-  const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`)
-    && !OUTSIDE_CENSUS.has(card.id));
+  const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
 
   it('retains every published scale unit and all 380 offered marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
@@ -956,11 +953,11 @@ describe('2021 Ordinary Mathematics Paper 2 repairs', () => {
     expect(card('6-b-i').questionRef).toBe('2021 OL Paper 2 Q6(b)(i)');
   });
 
-  it('keeps the Q3(a) duplicate live with its printed prompt, outside the reviewed census', () => {
-    const duplicate = card('3');
-    expect(duplicate.questionRef).toBe('2021 OL Paper 2 Q3');
-    expect(duplicate.questionText).toBe(card('3-a').questionText);
-    expect('mathematicsScale' in duplicate && duplicate.mathematicsScale).toBeFalsy();
-    expect(ordinary2021p2.cards.some(task => task.id === duplicate.id)).toBe(false);
+  it('withdraws the Q3(a) duplicate onto the card that now quotes both method ladders', () => {
+    expect(ORDINARY.some(candidate => candidate.id === 'maths-2021-ol-p2-q3')).toBe(false);
+    expect(CARD_ID_ALIASES['maths-2021-ol-p2-q3']).toBe('maths-2021-ol-p2-q3-a');
+    const verbatims = card('3-a').rows.map(row => row.verbatim);
+    expect(verbatims).toContain('Method 1, Low Partial Credit — Slope formula with some substitution');
+    expect(verbatims).toContain('Method 2, High Partial Credit — m and c found');
   });
 });

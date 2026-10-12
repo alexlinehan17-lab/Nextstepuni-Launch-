@@ -948,6 +948,11 @@
         "stem": "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A random sample of 64 Galway players has a mean score of 3·74. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland. Players in Ireland have a mean score of 3·87 with a standard deviation of 0·36.",
         "questionText": "Carry out a hypothesis test at the 5% level of significance to test the newspaper’s claim that Galway players have a different mean score to players in Ireland. State your null hypothesis, state your alternative hypothesis, state your conclusion, and give a reason for your conclusion."
       }
+    },
+    "maths-2021-ol-p2-q3": {
+      "reason": "Duplicate of maths-2021-ol-p2-q3-a. The 2021 Ordinary Level Paper 2 scheme prints two method ladders (slope formula; y = mx + c) for the one 10D part Q3(a); this card carried the second ladder as if it were a separate task. Both ladders are now quoted on maths-2021-ol-p2-q3-a, which carries this card's progress.",
+      "drop": true,
+      "replacementId": "maths-2021-ol-p2-q3-a"
     }
   },
   "computer-science": {

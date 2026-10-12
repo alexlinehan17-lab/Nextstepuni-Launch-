@@ -462,13 +462,30 @@ const reviewedMathematicsPaperPrefixes = ['maths-2026-hl-p1-', 'maths-2026-hl-p2
 const baselineCards = <T extends { id: string }>(cards: readonly T[]) =>
   cards.filter(card => !reviewedMathematicsAdditions.has(card.id)
     && !reviewedMathematicsPaperPrefixes.some(prefix => card.id.startsWith(prefix)));
+const idHash = (ids: readonly string[]) => createHash('sha256')
+  .update([...ids].sort().join('\n'))
+  .digest('hex');
+/* Alias-aware additive form for the frozen Mathematics decks (the form Economics
+ * uses). A pre-review Mathematics card withdrawn as a duplicate keeps its ID as a
+ * CARD_ID_ALIASES key resolving in one step to a live card of the same year and
+ * level, so the frozen identity = live original IDs + Mathematics alias keys at
+ * that level, and its hash is byte-identical to the one recorded above. The live
+ * count is the frozen count less the aliased IDs, plus the reviewed additions. */
+const mathsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('maths-'));
+const mathsLevelToken = (name: string) => (name.endsWith(':higher') ? '-hl-' : '-ol-');
+const frozenIds = (name: string, cards: readonly { id: string }[]) => {
+  const ids = baselineCards(cards).map(card => card.id);
+  if (!name.startsWith('maths:')) return ids;
+  return [...ids, ...mathsAliasIds.filter(id => id.includes(mathsLevelToken(name)))];
+};
 
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    const original = baselineCards(cards);
-    expect(original.length, `${name}: historical card count changed`).toBe(count);
+    const frozen = frozenIds(name, cards);
+    expect(frozen.length, `${name}: historical card count changed`).toBe(count);
+    expect(new Set(frozen).size, `${name}: duplicate frozen card IDs`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
-    expect(identityHash(original), `${name}: a card ID was removed or replaced`).toBe(hash);
+    expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
   });
 
   it('retains the independently reviewed Foundation deck added on 2026-10-07', () => {
@@ -587,14 +604,40 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + baselineCards(cards).length, 0)).toBe(10_495);
+    // Frozen form: every frozen ID, live or aliased. Live form: the frozen bank less
+    // the Mathematics consolidations (reviewed additions are counted separately).
+    expect(decks.reduce((total, [name, cards]) => total + frozenIds(name, cards).length, 0)).toBe(10_495);
+    expect(decks.reduce((total, [, cards]) => total + baselineCards(cards).length, 0))
+      .toBe(10_495 - mathsAliasIds.length);
     const added = [...MATHS_HIGHER, ...MATHS_ORDINARY].filter(card => reviewedMathematicsAdditions.has(card.id));
     expect(new Set(added.map(card => card.id))).toEqual(reviewedMathematicsAdditions);
   });
 
+  it('withdraws each Mathematics duplicate onto a live card of the same year and level', () => {
+    const higher = new Set(MATHS_HIGHER.map(card => card.id));
+    const ordinary = new Set(MATHS_ORDINARY.map(card => card.id));
+    expect(mathsAliasIds).toEqual(['maths-2021-ol-p2-q3']);
+    for (const oldId of mathsAliasIds) {
+      const canonical = CARD_ID_ALIASES[oldId];
+      const deck = oldId.includes('-hl-') ? higher : ordinary;
+      expect(higher.has(oldId) || ordinary.has(oldId), `${oldId} should be withdrawn`).toBe(false);
+      expect(deck.has(canonical), `${oldId} -> ${canonical} must be live at the same level`).toBe(true);
+      expect(canonical in CARD_ID_ALIASES, `${oldId} must resolve in one step`).toBe(false);
+      expect(canonical.slice(0, 'maths-2021-ol-'.length), `${oldId} must stay in its year and level`)
+        .toBe(oldId.slice(0, 'maths-2021-ol-'.length));
+      expect(reviewedMathematicsAdditions.has(oldId), `${oldId} is not an addition`).toBe(false);
+    }
+    const aliased = (level: string) => mathsAliasIds.filter(id => id.includes(level)).length;
+    expect(baselineCards(MATHS_HIGHER)).toHaveLength(398 - aliased('-hl-'));
+    expect(baselineCards(MATHS_ORDINARY)).toHaveLength(435 - aliased('-ol-'));
+  });
+
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(34);
+    /* 34 pre-review aliases + 1 Mathematics consolidation from the 2021 review:
+     *   maths-2021-ol-p2-q3 -> maths-2021-ol-p2-q3-a (the scheme's second method
+     *   ladder for the one 10D part Q3(a), carded twice). */
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(35);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
