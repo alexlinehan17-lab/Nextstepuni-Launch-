@@ -88,6 +88,20 @@ AFFECTED = {
         'maths-2018-ol-p2-q8-e', 'maths-2018-ol-p2-q8-f', 'maths-2018-ol-p2-q9-a-i', 'maths-2018-ol-p2-q9-a-iii',
         'maths-2018-ol-p2-q9-b-i',
     ],
+    # 2017 Higher Paper 1: stacked fractions filtered as mark cells, the Q3(b)
+    # high partial credit whose f and g extract as unassigned code points, and
+    # model solutions printed as images (the Q5(a) long division, the Q6 and Q9(a)
+    # graphs).
+    (2017, 'hl'): [
+        'maths-2017-hl-p1-q1-c-ii', 'maths-2017-hl-p1-q3-b', 'maths-2017-hl-p1-q4-b', 'maths-2017-hl-p1-q5-a',
+        'maths-2017-hl-p1-q6-a', 'maths-2017-hl-p1-q6-b', 'maths-2017-hl-p1-q7-f', 'maths-2017-hl-p1-q8-a',
+        'maths-2017-hl-p1-q8-b-v', 'maths-2017-hl-p1-q9-a', 'maths-2017-hl-p1-q9-b-ii',
+    ],
+}
+# Labels the scheme prints differently from the paper's part label.
+PRINTED_LABEL = {
+    'maths-2017-hl-p1-q1-c-ii': 'c(ii)',  # printed without the brackets round c
+    'maths-2017-hl-p1-q8-b-v': '(v)',     # printed without its (b)
 }
 BANDS = ['Low Partial Credit', 'Mid Partial Credit', 'High Partial Credit', 'Partial Credit', 'Full Credit',
          'Zero Credit', 'No Credit', 'Note', 'Special Case', 'Misreading']
@@ -109,17 +123,18 @@ def part_label_long(printed):
     return '+'.join(re.sub(r'^Q\d+', '', p) for p in printed)
 
 
-def hsegments(page):
+def hsegments(page, min_width=60, max_width=None):
     segs = []
     for d in page.get_drawings():
         for it in d['items']:
             if it[0] == 'l':
                 p1, p2 = it[1], it[2]
-                if abs(p1.y - p2.y) < 0.6 and abs(p1.x - p2.x) > 60:
+                w = abs(p1.x - p2.x)
+                if abs(p1.y - p2.y) < 0.6 and w > min_width and (max_width is None or w <= max_width):
                     segs.append((round(p1.y, 1), min(p1.x, p2.x), max(p1.x, p2.x)))
             elif it[0] == 're':
                 r = it[1]
-                if r.height < 1.6 and r.width > 60:
+                if r.height < 1.6 and r.width > min_width and (max_width is None or r.width <= max_width):
                     segs.append((round((r.y0 + r.y1) / 2, 1), r.x0, r.x1))
     return segs
 
@@ -141,6 +156,18 @@ def rules(page):
             segs.append((y, a, b))
     top = min(y for y, _, _ in segs)
     bounds = sorted({round(x, 0) for y, a, b in segs if y <= top + 25 for x in (a, b)})
+    # A rule whose label-column piece is drawn as its own short segment (2017
+    # Higher Q1(c)(ii)'s bottom border) starts left of the long piece: a rule that
+    # misses a header boundary is extended by short segments that abut it.
+    shorts = hsegments(page, min_width=5, max_width=60)
+    def extend(y, a, b):
+        for y2, a2, b2 in shorts:
+            if abs(y2 - y) <= 0.3 and abs(b2 - a) <= 2:
+                a = a2
+            if abs(y2 - y) <= 0.3 and abs(a2 - b) <= 2:
+                b = b2
+        return y, a, b
+    segs = [seg if any(abs(seg[1] - x) < 3 for x in bounds) else extend(*seg) for seg in segs]
     on = lambda x: any(abs(x - b) < 3 for b in bounds)
     # The table can narrow below the header (2018 Ordinary P1 Q8 ends its lower
     # rows at a border left of the header's), so a rule may also END on any of the
@@ -226,7 +253,7 @@ def main():
         assert len(task['schemePages']) == 1, (cid, task['schemePages'])
         pno = task['schemePages'][0]
         page = doc[pno - 1]
-        label = part_label(task['printedParts'])
+        label = PRINTED_LABEL.get(cid) or part_label(task['printedParts'])
         top, bottom = find_row(page, label, part_label_long(task['printedParts']))
         x0, x1 = table_x(page)
         clip = pymupdf.Rect(x0 - 2, top - 2, x1 + 2, bottom + 2)

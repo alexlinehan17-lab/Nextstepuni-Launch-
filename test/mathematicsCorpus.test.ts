@@ -42,6 +42,7 @@ import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2
 import ordinary2021p1 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p1.json';
 import ordinary2021p2 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p2.json';
 import higher2020p1 from '../scripts/markbank/mathematics/reviews/2020-higher-p1.json';
+import higher2017p1 from '../scripts/markbank/mathematics/reviews/2017-higher-p1.json';
 import ordinary2018p2 from '../scripts/markbank/mathematics/reviews/2018-ordinary-p2.json';
 import ordinary2018p1 from '../scripts/markbank/mathematics/reviews/2018-ordinary-p1.json';
 import higher2018p2 from '../scripts/markbank/mathematics/reviews/2018-higher-p2.json';
@@ -991,6 +992,7 @@ describe.each([
   { year: 2018, level: 'higher' as const, number: 2, count: 32, review: higher2018p2 },
   { year: 2018, level: 'ordinary' as const, number: 1, count: 37, review: ordinary2018p1 },
   { year: 2018, level: 'ordinary' as const, number: 2, count: 39, review: ordinary2018p2 },
+  { year: 2017, level: 'higher' as const, number: 1, count: 33, review: higher2017p1 },
 ])('$year $level Mathematics Paper $number new-paper source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
   const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
@@ -1035,6 +1037,32 @@ describe('2019–2020 Mathematics scheme glyph repair', () => {
     expect(map['\u0754']).toBe('\u{1D465}');
     expect(map['\u074c']).toBe('\u{1D45D}');
     expect(map['\u07e0']).toBe('\u{1D703}');
+  });
+});
+
+describe('2017 Higher scheme rows that cannot be lifted as text', () => {
+  // Stacked fractions filtered as mark cells, glyphs with no repair, and model solutions
+  // printed as images (a long division, graphs): these parts carry the SEC's own print of
+  // their scheme row after the reveal.
+  const cards = HIGHER.filter(card => card.year === 2017 && card.id.startsWith('maths-2017-hl-'));
+  const withRow = cards.filter(card => 'figure' in card && card.figure?.candId.startsWith('maths-2017-HL-scheme-'));
+  const crops = schemeRowFigures.filter(entry => entry.file.startsWith('maths-2017-HL-scheme-'));
+
+  it('binds each printed scheme-row crop to exactly one card, held back until the reveal', () => {
+    expect(crops.length).toBeGreaterThanOrEqual(11);
+    expect(withRow).toHaveLength(crops.length);
+    expect(new Set(withRow.map(card => 'figure' in card && card.figure?.candId)))
+      .toEqual(new Set(crops.map(entry => entry.file.replace(/\.png$/, ''))));
+    for (const card of withRow) {
+      expect('figure' in card && card.figure?.solution, card.id).toBe(true);
+      expect('figure' in card && card.figure?.src, card.id).toMatch(/^\/exam-figures\/maths\/markbank\/maths-2017-HL-scheme-p\d{3}-i\d\.png$/);
+    }
+  });
+
+  it('covers the Paper 1 long division, the graphs, and the Q3(b) high partial credit that cannot be quoted', () => {
+    const ids = withRow.map(card => card.id);
+    expect(ids).toEqual(expect.arrayContaining(['maths-2017-hl-p1-q1-c-ii', 'maths-2017-hl-p1-q3-b', 'maths-2017-hl-p1-q5-a',
+      'maths-2017-hl-p1-q6-a', 'maths-2017-hl-p1-q6-b', 'maths-2017-hl-p1-q9-a']));
   });
 });
 

@@ -459,8 +459,8 @@ const reviewedMathematicsAdditions = new Set([
 // Whole Higher/Ordinary papers reviewed independently from 2026-10-11 onward.
 // Each paper's new tasks are pinned by their own identity hash below.
 const reviewedMathematicsPaperPrefixes = ['maths-2026-hl-p1-', 'maths-2026-hl-p2-', 'maths-2026-ol-p1-', 'maths-2026-ol-p2-',
-  // 2020, 2019 and 2018 Higher/Ordinary papers had no cards before their 2026-10-12 review.
-  'maths-2020-hl-p1-', 'maths-2020-hl-p2-', 'maths-2020-ol-p1-', 'maths-2020-ol-p2-', 'maths-2019-hl-p1-', 'maths-2019-hl-p2-', 'maths-2019-ol-p1-', 'maths-2019-ol-p2-', 'maths-2018-hl-p1-', 'maths-2018-hl-p2-', 'maths-2018-ol-p1-', 'maths-2018-ol-p2-'];
+  // 2020, 2019, 2018 and 2017 Higher/Ordinary papers had no cards before their 2026-10-12 review.
+  'maths-2020-hl-p1-', 'maths-2020-hl-p2-', 'maths-2020-ol-p1-', 'maths-2020-ol-p2-', 'maths-2019-hl-p1-', 'maths-2019-hl-p2-', 'maths-2019-ol-p1-', 'maths-2019-ol-p2-', 'maths-2018-hl-p1-', 'maths-2018-hl-p2-', 'maths-2018-ol-p1-', 'maths-2018-ol-p2-', 'maths-2017-hl-p1-'];
 const baselineCards = <T extends { id: string }>(cards: readonly T[]) =>
   cards.filter(card => !reviewedMathematicsAdditions.has(card.id)
     && !reviewedMathematicsPaperPrefixes.some(prefix => card.id.startsWith(prefix)));
@@ -687,6 +687,13 @@ describe('Mark Bank card preservation', () => {
     expect(added).toHaveLength(39);
     expect(added.every(card => card.year === 2018 && card.paperFileid === 'LC003GLP200EV')).toBe(true);
     expect(identityHash(added)).toBe('6a75d3533bbac8f3610a82916adc4305951f4f66c0755bcf586be6521a089ea1');
+  });
+
+  it('retains all 2017 Higher Level Paper 1 tasks as reviewed additions', () => {
+    const added = MATHS_HIGHER.filter(card => card.id.startsWith('maths-2017-hl-p1-'));
+    expect(added).toHaveLength(33);
+    expect(added.every(card => card.year === 2017 && card.paperFileid === 'LC003ALP100EV')).toBe(true);
+    expect(identityHash(added)).toBe('8afb7a13b9d444bf182682f45bea0cda262c548f6b8b14aba8d8264a8ac9db65');
   });
 
   it('protects the complete current bank', () => {
