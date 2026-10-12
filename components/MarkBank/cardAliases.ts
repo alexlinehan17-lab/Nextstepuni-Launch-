@@ -87,8 +87,8 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
    * printed question with every option; it keeps the first option's id, and
    * every withdrawn per-option id resolves here to the card for its own part.
    * A choose-one list whose options sit under different Topic Atlas headings
-   * (2021-2022 HL Q14/Q15, OL Q14), and the 2025 HL Q12 movements restored to
-   * match them, keep their per-option cards, so they have no aliases here. */
+   * (2021-2022 HL Q14/Q15, OL Q14) keeps its per-option cards, so it has no
+   * aliases here. */
   "art-2021-hl-q4-task1-casino-at-marino": "art-2021-hl-q4-task1-castletown-house",
   "art-2021-hl-q4-task1-custom-house-dublin": "art-2021-hl-q4-task1-castletown-house",
   "art-2021-hl-q4-task2-casino-at-marino": "art-2021-hl-q4-task2-castletown-house",
@@ -144,6 +144,10 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "art-2022-ol-q7-c-louis-le-brocquy": "art-2022-ol-q7-c-daniel-maclise",
   "art-2022-ol-q7-c-martin-gale": "art-2022-ol-q7-c-daniel-maclise",
   "art-2022-ol-q7-c-paul-henry": "art-2022-ol-q7-c-daniel-maclise",
+  "art-2025-hl-q12-bauhaus": "art-2025-hl-q12-fauvism",
+  "art-2025-hl-q12-cubism": "art-2025-hl-q12-fauvism",
+  "art-2025-hl-q12-expressionism": "art-2025-hl-q12-fauvism",
+  "art-2025-hl-q12-surrealism": "art-2025-hl-q12-fauvism",
   "art-2025-ol-q4-a-colour-line": "art-2025-ol-q4-a",
   "art-2025-ol-q4-a-colour-pattern": "art-2025-ol-q4-a",
   "art-2025-ol-q4-a-colour-shape": "art-2025-ol-q4-a",

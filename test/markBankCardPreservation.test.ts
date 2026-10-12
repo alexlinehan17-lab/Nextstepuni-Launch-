@@ -784,7 +784,7 @@ describe('Mark Bank card preservation', () => {
   it('collapses each Art printed choice to one card and resolves every withdrawn ID', () => {
     const higher = new Map(ART_HIGHER.map(card => [card.id, card]));
     const ordinary = new Map(ART_ORDINARY.map(card => [card.id, card]));
-    expect(artAliasIds).toHaveLength(64);
+    expect(artAliasIds).toHaveLength(68);
     for (const oldId of artAliasIds) {
       const canonical = CARD_ID_ALIASES[oldId];
       const deck = oldId.includes('-hl-') ? higher : ordinary;
@@ -794,7 +794,7 @@ describe('Mark Bank card preservation', () => {
       expect(canonical.slice(0, 12), `${oldId} must stay in its year and level`).toBe(oldId.slice(0, 12));
     }
     const aliased = (level: string) => artAliasIds.filter(id => id.includes(level)).length;
-    expect([aliased('-hl-'), aliased('-ol-')]).toEqual([16, 48]);
+    expect([aliased('-hl-'), aliased('-ol-')]).toEqual([20, 48]);
     expect(ART_HIGHER).toHaveLength(222 - aliased('-hl-') + ART_2026.higher);
     expect(ART_ORDINARY).toHaveLength(240 - aliased('-ol-') + ART_2026.ordinary);
   });
@@ -834,8 +834,8 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    // 54 earlier consolidations + 64 Art per-option cards (2026-10-12).
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(118);
+    // 54 earlier consolidations + 68 Art per-option cards (2026-10-12).
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(122);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);

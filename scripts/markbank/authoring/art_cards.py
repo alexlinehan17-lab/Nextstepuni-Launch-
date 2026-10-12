@@ -19,9 +19,9 @@ files under its own heading.  A choose-N (N >= 2) list is always one card.  The
 four-criterion Section B/C essay remains intact because the SEC applies that
 rubric holistically.
 
-The complete corpus is therefore 450 cards across twelve papers:
+The complete corpus is therefore 446 cards across twelve papers:
 
-  * Higher Level:   62 + 62 + 26 + 26 + 30 + 26 = 232 cards
+  * Higher Level:   62 + 62 + 26 + 26 + 26 + 26 = 228 cards
   * Ordinary Level: 57 + 57 + 26 + 26 + 26 + 26 = 218 cards
 
 An audited year (AUDITED_YEARS) shows only the SEC's printed wording under the
@@ -96,7 +96,7 @@ EXPECTED_CARDS_BY_YEAR_LEVEL = {
     (2023, 'ordinary'): 26,
     (2024, 'higher'): 26,
     (2024, 'ordinary'): 26,
-    (2025, 'higher'): 30,
+    (2025, 'higher'): 26,
     (2025, 'ordinary'): 26,
     (2026, 'higher'): 26,
     (2026, 'ordinary'): 26,
@@ -216,12 +216,11 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
 # the legacy Section II questions the Atlas can only file as "Section B:
 # Generic Questions" because their options span periods. Each option's heading
 # is editorial, from the dates and movements the paper prints; an option no
-# current heading covers (Neoclassicism, Romanticism) stays generic. 2025 HL
-# Q12's movements are restored the same way as the Q15 movements, so a student
-# filtering by a movement finds every printed option of it; each takes the
-# heading the Q15 restorations give that movement, else Modernism. Lists whose
-# options share one heading (the Irish Q7 artists; the Georgian buildings)
-# remain one card.
+# current heading covers (Neoclassicism, Romanticism) stays generic. Lists
+# whose options share one heading remain one card: 2025 HL Q12 and 2026 OL
+# Q12 (all Modernism, the only heading the Atlas gives either question), the
+# Irish Q7 artists, the Georgian buildings. A list in this table must span at
+# least two headings; the build fails on one that does not.
 OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
     (2021, 'higher', 14): {
         'jan-van-eyck': 'art-4-1', 'el-greco': 'art-4-1', 'ingres': 'art-4-6',
@@ -245,10 +244,6 @@ OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
     (2022, 'ordinary', 14): {
         'mary-magdalene': 'art-4-1', 'girl-with-a-pearl-earring': 'art-4-2',
         'death-of-marat': 'art-4-6', 'bar-at-the-folies-bergere': 'art-4-3', 'the-scream': 'art-4-4',
-    },
-    (2025, 'higher', 12): {
-        'fauvism': 'art-4-4', 'expressionism': 'art-4-4', 'cubism': 'art-4-4',
-        'bauhaus': 'art-4-4', 'surrealism': 'art-4-4',
     },
 }
 
@@ -1142,6 +1137,9 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
     if option_topics is not None:
         if set(option_topics) != {slug for slug, _ in choices}:
             raise AssertionError(f"{outer['id']}: option topics do not match the printed choices")
+        if len(set(option_topics.values())) < 2:
+            raise AssertionError(
+                f"{outer['id']}: every option files under one heading, so it is one card")
         # Options under different Atlas headings: one card per option, each
         # with the printed question verbatim and the option in its reference.
         variants: tuple[tuple[str | None, str | None], ...] = tuple(choices)

@@ -12,15 +12,15 @@ const CARDS = [...HIGHER, ...ORDINARY];
 
 describe('complete 2021–2026 Art corpus', () => {
   it('cards every separately marked task on all twelve papers', () => {
-    expect(HIGHER).toHaveLength(232);
+    expect(HIGHER).toHaveLength(228);
     expect(ORDINARY).toHaveLength(218);
-    expect(CARDS).toHaveLength(450);
-    expect(new Set(CARDS.map(card => card.id)).size).toBe(450);
+    expect(CARDS).toHaveLength(446);
+    expect(new Set(CARDS.map(card => card.id)).size).toBe(446);
 
     const censusIds = census.papers.flatMap(paper => paper.cards.map(card => card.cardId));
     expect([...CARDS.map(card => card.id)].sort()).toEqual([...censusIds].sort());
     expect(census.papers).toHaveLength(12);
-    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(450);
+    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(446);
   });
 
   it('keeps the audited task census for each paper', () => {
@@ -33,7 +33,7 @@ describe('complete 2021–2026 Art corpus', () => {
       '2023-ordinary': 26,
       '2024-higher': 26,
       '2024-ordinary': 26,
-      '2025-higher': 30,
+      '2025-higher': 26,
       '2025-ordinary': 26,
       '2026-higher': 26,
       '2026-ordinary': 26,
@@ -54,16 +54,14 @@ describe('complete 2021–2026 Art corpus', () => {
     expect(sectionA.map(card => card.id)).toEqual(['art-2023-hl-q1-a', 'art-2023-hl-q1-b']);
     expect(sectionA.map(card => card.totalMarks)).toEqual([5, 5]);
 
-    // One card per movement, as for the Q15 movements: the printed question
-    // verbatim, the movement in the reference, its heading (Modernism).
+    // The student chooses one movement, all five under Modernism: one card
+    // with the printed question, keeping the first movement's established id.
     const movements = HIGHER.filter(card => card.questionRef.startsWith('2025 HL Q12'));
-    expect(movements.map(card => card.questionRef.split(' · ')[1]))
-      .toEqual(['Fauvism', 'Expressionism', 'Cubism', 'Bauhaus', 'Surrealism']);
-    expect(movements.map(card => card.id)).toContain('art-2025-hl-q12-fauvism');
-    expect(new Set(movements.map(card => card.questionText)).size).toBe(1);
+    expect(movements.map(card => card.id)).toEqual(['art-2025-hl-q12-fauvism']);
+    expect(movements[0].questionRef).toBe('2025 HL Q12');
     expect(movements[0].questionText).toContain(
       'Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.');
-    expect(movements.every(card => card.topicId === 'art-4-4' && !card.stem)).toBe(true);
+    expect(movements[0].topicId).toBe('art-4-4');
 
     // Any two of five headings: one card with the printed instruction.
     const embroidery = ORDINARY.filter(card => card.questionRef.startsWith('2025 OL Q4(a)'));
