@@ -212,13 +212,12 @@ def build():
         ('P-2A-b', 'prose-2a-b', 'Prós 2A(b) · Dís', 'irish-4-4',
          'Freagair an cheist thíos ar an ngearrscéal Dís.\n\nDís\n‘Tugtar léiriú sa ghearrscéal Dís ar an gcineál saoil atá ag bean Sheáin agus ar an dearcadh atá aici ar an saol sin.’\nDéan plé ar an ráiteas sin. (30 marc)',
          [lit.chunk('(b) Freagair an cheist thíos ar an ngearrscéal Dís.', '2B. Prós Roghnach')]),
-        ('P-2B-a-scannan', 'prose-2b-a-scannan', 'Prós 2B(a) · Scannán roghnach', 'irish-4-7',
-         'Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.\n\nMaidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé ar an léargas a thugtar dúinn ar iompar an phríomhcharachtair (na príomhphearsan) agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an scannáin.\n\nNí mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)',
+        # The optional film and the optional play share one grid and one Atlas heading (irish-4-7),
+        # so one card carries both printed alternatives (choose-one refinement, 2026-10-12).
+        ('P-2B-a', 'prose-2b-a', 'Prós 2B(a) · Scannán nó dráma roghnach', 'irish-4-7',
+         'Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.\n\nMaidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé ar an léargas a thugtar dúinn ar iompar an phríomhcharachtair (na príomhphearsan) agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an scannáin.\n\nNí mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)\n\nnó\n\nMaidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé ar an léargas a thugtar dúinn ar iompar an phríomhcharachtair (na príomhphearsan) agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an dráma.\n\nNí mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)',
          [lit.chunk('Maidir leis an scannán roghnach', 'nó Maidir leis an dráma roghnach'),
-          lit.chunk('Treoir: Plé a dhéanamh ar iompar an phríomhcharachtair', 'nó (b) Freagair an cheist thíos ar an ngearrscéal roghnach.')]),
-        ('P-2B-a-drama', 'prose-2b-a-drama', 'Prós 2B(a) · Dráma roghnach', 'irish-4-7',
-         'Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.\n\nMaidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé ar an léargas a thugtar dúinn ar iompar an phríomhcharachtair (na príomhphearsan) agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an dráma.\n\nNí mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)',
-         [lit.chunk('Maidir leis an dráma roghnach', 'nó (b) Freagair an cheist thíos ar an ngearrscéal roghnach.')]),
+          lit.chunk('Maidir leis an dráma roghnach', 'nó (b) Freagair an cheist thíos ar an ngearrscéal roghnach.')]),
         ('P-2B-b', 'prose-2b-b', 'Prós 2B(b) · Gearrscéal roghnach', 'irish-4-7',
          'Freagair an cheist thíos ar an ngearrscéal roghnach.\n\nMaidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé ar an léargas a thugtar dúinn ar shaol agus ar mheon an phríomhcharachtair (na príomhphearsan) ó thús deireadh an ghearrscéil.\n\nNí mór teideal an ghearrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn. (30 marc)',
          [lit.chunk('nó (b) Freagair an cheist thíos ar an ngearrscéal roghnach.', '⟦32⟧')]),
@@ -232,7 +231,7 @@ def build():
         spages = sorted({p for _, ps in chunks for p in ps} | {26})
         section = ('2A. Prós Ainmnithe\nFreagair do rogha ceann amháin de (a) nó (b) thíos.' if key.startswith('P-2A') else
                    '2B. Prós Roghnach\nFreagair do rogha ceann amháin de (a) nó (b) thíos.\nNíl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.')
-        add(key, slug, ref, head2 + '\n\n' + section + '\n\n' + ('(a) ' if key[-1] != 'b' or key.endswith('scannan') else '(b) ') + prompt, topic, [8], spages,
+        add(key, slug, ref, head2 + '\n\n' + section + '\n\n' + ('(a) ' if key[-1] != 'b' else '(b) ') + prompt, topic, [8], spages,
             [criterion('eolas', 'Eolas', 25, guidance, 'indicative'), gaeilge()], lit_requirements,
             'One complete SEC response: 25 Eolas and a single shared 5-mark Gaeilge award. Supporting notes are indicative; other valid points are credited on their merits. '
             'With only one of the two required aspects discussed, the scheme marks the Eolas out of 18. Do not add alternative route tariffs together.')
@@ -314,8 +313,8 @@ def build():
                   source=('Dánta Breise', 'Colmáin', [12, 13]))
 
     decisions = selection_decisions(paper)
-    assert len(cards) == 72 and len({c['id'] for c in cards}) == 72, len(cards)
-    assert len({c['atlasQuestionId'] for c in cards}) == 72
+    assert len(cards) == 71 and len({c['id'] for c in cards}) == 71, len(cards)
+    assert len({c['atlasQuestionId'] for c in cards}) == 71
     assert sum(c['totalMarks'] for c in cards if re.fullmatch(r'R-[AB]-\d', c['atlasQuestionId'])) == 100
     for card in cards:
         for c in card['criteria']:

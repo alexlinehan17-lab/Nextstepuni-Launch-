@@ -83,16 +83,16 @@ describe('2024 Higher prescribed poetry and additional literature source review'
 
   it('reconciles every existing and added 2024 Higher Paper 2 card without deleting a whole question', () => {
     const all=authored.cards.filter(c=>c.year===2024 && c.level==='higher' && c.paper===2);
-    expect(all).toHaveLength(72);
+    expect(all).toHaveLength(71);
     expect(all.every(c=>'reviewedAt' in c && 'atlasQuestionId' in c && 'schemePages' in c)).toBe(true);
-    expect(new Set(all.map(c=>'atlasQuestionId' in c ? c.atlasQuestionId : '')).size).toBe(72);
+    expect(new Set(all.map(c=>'atlasQuestionId' in c ? c.atlasQuestionId : '')).size).toBe(71);
     expect(all.filter(c=>/-reading-[ab]-q[1-6]$/.test(c.id))).toHaveLength(12);
-    expect(all.filter(c=>c.id.includes('-prose-'))).toHaveLength(6);
+    expect(all.filter(c=>c.id.includes('-prose-'))).toHaveLength(5); // 2B(a) optional film or play is one card
     expect(all.filter(c=>c.id.includes('-poetry-'))).toHaveLength(4);
     expect(all.filter(c=>c.id.includes('-literature-'))).toHaveLength(6);
     const paper=papers.find(p=>p.year===2024 && p.level==='higher')!;
     expect(paper.cardIds.slice().sort()).toEqual(all.map(c=>c.id).sort());
-    expect(paper.atomicPracticeCardIds).toHaveLength(55);
+    expect(paper.atomicPracticeCardIds).toHaveLength(54);
     expect(paper.reviewedPaperPages).toEqual(Array.from({length:16},(_,i)=>i+1));
     expect(paper.openIssues).toEqual([]);
     expect(paper.examStructure.reading.marks + paper.examStructure.prose.marksPerRoute

@@ -804,11 +804,7 @@
         "primary": "irish-4-4"
       },
       {
-        "n": "P-2B-a-scannan",
-        "primary": "irish-4-7"
-      },
-      {
-        "n": "P-2B-a-drama",
+        "n": "P-2B-a",
         "primary": "irish-4-7"
       },
       {
@@ -1270,11 +1266,7 @@
         "primary": "irish-4-5"
       },
       {
-        "n": "P-2B-a-scannan",
-        "primary": "irish-4-7"
-      },
-      {
-        "n": "P-2B-a-drama",
+        "n": "P-2B-a",
         "primary": "irish-4-7"
       },
       {
@@ -3035,7 +3027,7 @@
         "primary": "irish-4-4"
       },
       {
-        "n": "P-2B-a-scannan",
+        "n": "P-2B-a",
         "primary": "irish-4-7"
       },
       {
@@ -3085,10 +3077,6 @@
       {
         "n": "P-2A-a-an-lasair-choille",
         "primary": "irish-4-8"
-      },
-      {
-        "n": "P-2B-a-drama",
-        "primary": "irish-4-7"
       },
       {
         "n": "R-A-1-a",
@@ -4708,7 +4696,7 @@
         "primary": "irish-4-5"
       },
       {
-        "n": "P-2B-a-scannan",
+        "n": "P-2B-a",
         "primary": "irish-4-7"
       },
       {
@@ -4726,10 +4714,6 @@
       {
         "n": "P-2A-a-an-lasair-choille",
         "primary": "irish-4-8"
-      },
-      {
-        "n": "P-2B-a-drama",
-        "primary": "irish-4-7"
       },
       {
         "n": "F-3B-a-iomhanna",

@@ -28,15 +28,15 @@
     },
     "matchedLocalCardLinks": 742,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 2431,
-    "distinctStudentFacingQuestions": 2431,
+    "localPhysicalMappings": 2427,
+    "distinctStudentFacingQuestions": 2427,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 1745,
+    "retainedLocalQuestions": 1741,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 2145,
+    "newlyAddedPhysicalMappings": 2141,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -32162,7 +32162,7 @@
       "fileid": "LC001ALP200IV.pdf",
       "paperKey": "p2",
       "kind": "p2",
-      "n": "P-2B-a-scannan",
+      "n": "P-2B-a",
       "topicIds": [
         "irish-higher-studied-prose-pros-roghnach"
       ],
@@ -32217,19 +32217,6 @@
       "n": "P-2A-a-an-lasair-choille",
       "topicIds": [
         "irish-higher-prescribed-prose-archive"
-      ],
-      "provenance": "retained-local"
-    },
-    {
-      "level": "higher",
-      "lang": "iv",
-      "year": 2022,
-      "fileid": "LC001ALP200IV.pdf",
-      "paperKey": "p2",
-      "kind": "p2",
-      "n": "P-2B-a-drama",
-      "topicIds": [
-        "irish-higher-studied-prose-pros-roghnach"
       ],
       "provenance": "retained-local"
     },
@@ -35561,7 +35548,7 @@
       "fileid": "LC001ALP200IV.pdf",
       "paperKey": "p2",
       "kind": "p2",
-      "n": "P-2B-a-scannan",
+      "n": "P-2B-a",
       "topicIds": [
         "irish-higher-studied-prose-pros-roghnach"
       ],
@@ -35721,19 +35708,6 @@
       "n": "P-2A-a-an-lasair-choille",
       "topicIds": [
         "irish-higher-prescribed-prose-archive"
-      ],
-      "provenance": "retained-local"
-    },
-    {
-      "level": "higher",
-      "lang": "iv",
-      "year": 2024,
-      "fileid": "LC001ALP200IV.pdf",
-      "paperKey": "p2",
-      "kind": "p2",
-      "n": "P-2B-a-drama",
-      "topicIds": [
-        "irish-higher-studied-prose-pros-roghnach"
       ],
       "provenance": "retained-local"
     },
@@ -43263,20 +43237,7 @@
       "fileid": "LC001ALP200IV.pdf",
       "paperKey": "p2",
       "kind": "p2",
-      "n": "P-2B-a-scannan",
-      "topicIds": [
-        "irish-higher-studied-prose-pros-roghnach"
-      ],
-      "provenance": "retained-local"
-    },
-    {
-      "level": "higher",
-      "lang": "iv",
-      "year": 2026,
-      "fileid": "LC001ALP200IV.pdf",
-      "paperKey": "p2",
-      "kind": "p2",
-      "n": "P-2B-a-drama",
+      "n": "P-2B-a",
       "topicIds": [
         "irish-higher-studied-prose-pros-roghnach"
       ],
@@ -45568,20 +45529,7 @@
       "fileid": "LC001GLP200IV.pdf",
       "paperKey": "p2",
       "kind": "p2",
-      "n": "P-2B-a-scannan",
-      "topicIds": [
-        "irish-ordinary-write-about-a-studied-prose-optional"
-      ],
-      "provenance": "retained-local"
-    },
-    {
-      "level": "ordinary",
-      "lang": "iv",
-      "year": 2026,
-      "fileid": "LC001GLP200IV.pdf",
-      "paperKey": "p2",
-      "kind": "p2",
-      "n": "P-2B-a-drama",
+      "n": "P-2B-a",
       "topicIds": [
         "irish-ordinary-write-about-a-studied-prose-optional"
       ],

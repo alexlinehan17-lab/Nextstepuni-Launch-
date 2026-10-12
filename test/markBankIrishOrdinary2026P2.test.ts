@@ -16,8 +16,8 @@ const topicsFor = (key: string) => examTopicIdsForQuestion('irish', 'ordinary', 
 
 describe('2026 Ordinary Paper 2 source reconciliation', () => {
   it('keeps all ten reading questions whole and each printed part at 5 marks', () => {
-    expect(cards).toHaveLength(72);
-    expect(new Set(cards.map(c => c.id)).size).toBe(72);
+    expect(cards).toHaveLength(71);
+    expect(new Set(cards.map(c => c.id)).size).toBe(71);
     for (const card of cards) expect(tariffReconciles(card), card.id).toBe(true);
     const wholes = authored.cards.filter(c => /^R-[AB]-\d$/.test(c.atlasQuestionId));
     expect(wholes.map(c => c.totalMarks)).toEqual(Array(10).fill(10));
@@ -44,18 +44,21 @@ describe('2026 Ordinary Paper 2 source reconciliation', () => {
   });
 
   it('expands every printed literature route with its own tariffs and one 0–4 Gaeilge deduction', () => {
-    const routes = authored.cards.filter(c => /^(P-2[AB]-[abc](-caca-milis|-an-lasair-choille|-scannan|-drama)?|F-3[AB]-[abc])$/.test(c.atlasQuestionId));
+    const routes = authored.cards.filter(c => /^(P-2[AB]-[abc](-caca-milis|-an-lasair-choille)?|F-3[AB]-[abc])$/.test(c.atlasQuestionId));
     expect(routes.map(c => [c.atlasQuestionId, c.totalMarks, c.topicId])).toEqual([
       ['P-2A-a-caca-milis', 25, 'irish-4-6'], ['P-2A-a-an-lasair-choille', 25, 'irish-4-8'], ['P-2A-b', 25, 'irish-4-4'], ['P-2A-c', 25, 'irish-4-5'],
-      ['P-2B-a-scannan', 25, 'irish-4-7'], ['P-2B-a-drama', 25, 'irish-4-7'], ['P-2B-b', 25, 'irish-4-7'], ['P-2B-c', 25, 'irish-4-7'],
+      ['P-2B-a', 25, 'irish-4-7'], ['P-2B-b', 25, 'irish-4-7'], ['P-2B-c', 25, 'irish-4-7'],
       ['F-3A-a', 25, 'irish-5-2'], ['F-3A-b', 25, 'irish-5-3'], ['F-3A-c', 25, 'irish-5-1'],
       ['F-3B-a', 25, 'irish-5-6'], ['F-3B-b', 25, 'irish-5-6'], ['F-3B-c', 25, 'irish-5-6'],
     ]);
     for (const c of routes) expect(c.criteria.at(-1), c.id).toMatchObject({ id: 'gaeilge-deduction', kind: 'deduction', maxMarks: 4 });
     for (const key of ['F-3A-a', 'F-3A-b', 'F-3A-c']) expect(get(key).criteria.map(c => c.maxMarks), key).toEqual([8, 8, 9, 4]);
     for (const key of ['F-3B-a', 'F-3B-b', 'F-3B-c']) expect(get(key).criteria.map(c => c.maxMarks), key).toEqual([9, 7, 7, 2, 4]);
-    for (const key of ['P-2B-a-scannan', 'P-2B-a-drama', 'P-2B-b', 'P-2B-c']) expect(get(key).criteria.map(c => c.maxMarks), key).toEqual([23, 2, 4]);
-    expect(get('P-2B-a-scannan').criteria[1].guidance).toEqual(['Teideal an scannáin = 1 mharc Ainm an scríbhneora = 1 mharc (2 mharc)']);
+    for (const key of ['P-2B-a', 'P-2B-b', 'P-2B-c']) expect(get(key).criteria.map(c => c.maxMarks), key).toEqual([23, 2, 4]);
+    // The optional film or play shares one grid and one Atlas heading: one card carries both printed alternatives.
+    expect(get('P-2B-a').criteria[1].guidance).toEqual(['Teideal an scannáin = 1 mharc Ainm an scríbhneora = 1 mharc (2 mharc)',
+      'Teideal an dráma = 1 mharc Ainm an scríbhneora = 1 mharc (2 mharc)']);
+    expect(get('P-2B-a').questionText).toContain('Maidir le dráma roghnach');
     expect(get('P-2B-c').criteria[1].guidance[0]).toContain('Ainm an údair = 1 mharc');
     expect(guide('P-2A-b')).toContain('2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt');
     expect(guide('F-3A-c-iii')).toContain('Tá/Níl = 1 mharc');
@@ -95,8 +98,8 @@ describe('2026 Ordinary Paper 2 source reconciliation', () => {
   it('treats each choose-two within 2A, 2B, 3A and 3B as a choice, not a route', () => {
     // Each printed route keeps its own 25-mark card and carries the instruction; no two-route combination cards.
     expect(authored.cards.filter(c => 'memberCardIds' in c)).toEqual([]);
-    const routes = authored.cards.filter(c => /^(P-2[AB]-[abc](-caca-milis|-an-lasair-choille|-scannan|-drama)?|F-3[AB]-[abc])$/.test(c.atlasQuestionId));
-    expect(routes).toHaveLength(14);
+    const routes = authored.cards.filter(c => /^(P-2[AB]-[abc](-caca-milis|-an-lasair-choille)?|F-3[AB]-[abc])$/.test(c.atlasQuestionId));
+    expect(routes).toHaveLength(13);
     for (const route of routes) {
       expect(route.totalMarks, route.id).toBe(25);
       expect(route.taskRequirements[0], route.id).toBe('Freagair do rogha dhá cheann as (a), (b) nó (c).');
