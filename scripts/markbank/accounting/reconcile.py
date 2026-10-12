@@ -6,7 +6,6 @@ The reviewed task boundaries remain the visual paper/scheme evidence; this
 checks their bidirectional correspondence to every shipped task and source.
 """
 import hashlib
-import itertools
 import json
 from pathlib import Path
 import fitz
@@ -73,7 +72,7 @@ def reconcile():
             check(False, f'{key}: missing fallback scheme')
         for directive in review['selectionReview']:
             classification = directive['classification']
-            check(classification in {'paper-level-choice', 'open-response', 'not-a-selection', 'finite-pool-expanded', 'closed-pool', 'comparison-required', 'equivalent-units'}, f'{key}: unclassified selection')
+            check(classification in {'paper-level-choice', 'open-response', 'not-a-selection', 'finite-pool-one-card', 'closed-pool', 'comparison-required', 'equivalent-units'}, f'{key}: unclassified selection')
             check(bool(directive['reason']), f'{key}: unexplained selection decision')
             selection_totals[classification] = selection_totals.get(classification, 0) + 1
     for review in reviews:
@@ -82,12 +81,12 @@ def reconcile():
         rows = [c for c in authored if c['year'] == year and c['paperFileid'] == fileid]
         source_tasks = []
         for task in review['tasks']:
-            pool = task.get('selectionPool')
+            # A printed choice is one task and one card (AGENTS.md, 2026-10-12).
+            pool = task.get('printedChoice')
+            check('selectionPool' not in task, f'{key}: {task["key"]}: retired route expansion')
             variants = [task['key']]
             if pool:
-                variants = [task['key'] + '-' + '-'.join(o['key'] for o in combination)
-                            for combination in itertools.combinations(pool['options'], pool['choose'])]
-                pools.append({'edition': key, 'task': task['key'], 'choose': pool['choose'], 'options': len(pool['options']), 'variants': variants, 'routeMarks': task['marks']})
+                pools.append({'edition': key, 'task': task['key'], 'choose': pool['choose'], 'options': len(pool['options']), 'cards': variants, 'marks': task['marks']})
             for variant in variants:
                 ident = f'acc-{year}-{"hl" if level == "higher" else "ol"}-q{variant}'
                 expected_ids.add(ident)
@@ -105,14 +104,8 @@ def reconcile():
                 source_tasks.append(variant)
         check(set(source_tasks) == {c['taskKey'] for c in rows}, f'{key}: task mismatch')
         # Published full-question tariffs, independently of the generated total.
-        # An expanded pool replaces one answered route with all practice routes.
         for number in range(1, 10):
             expected = (240 if year >= 2021 else 120) if number == 1 else 60 if number <= 4 else 100 if number <= 7 else 80
-            for task in review['tasks']:
-                if task['questionNumber'] == number and task.get('selectionPool'):
-                    pool = task['selectionPool']
-                    count = len(list(itertools.combinations(pool['options'], pool['choose'])))
-                    expected += (count - 1) * task['marks']
             group = [c for c in rows if c['questionNumber'] == number]
             check(bool(group) and sum(c['totalMarks'] for c in group) == expected, f'{key} Q{number}: unreconciled published tariff')
             parent_rows.append({'edition': key, 'question': number, 'tasks': [c['taskKey'] for c in group], 'allRouteMarks': expected})
@@ -141,7 +134,7 @@ def reconcile():
     check(expected_ids == set(cards), 'Uncovered or orphan Mark Bank task')
     check(set(mappings) == {(c['year'], c['paperFileid'], c['taskKey']) for c in authored}, 'Uncovered or orphan Atlas mapping')
     result = {'subjectId': 'accounting', 'scope': 'All local Paper Trail Accounting papers, 2010–2026, Higher and Ordinary, English and Irish',
-              'method': 'Independent reconciliation of visually reviewed boundaries against source files, published parent tariffs, preserved sidecars, route combinations and generated artifacts. Runtime Atlas and canonical-topic checks are in markBankAccounting.test.tsx.',
+              'method': 'Independent reconciliation of visually reviewed boundaries against source files, published parent tariffs, preserved sidecars, one-card printed choices and generated artifacts. Runtime Atlas and canonical-topic checks are in markBankAccounting.test.tsx.',
               'sourceReconciliationPassed': not issues, 'checks': checks, 'openIssues': issues,
               'sourceEditions': len(papers), 'visuallyReviewedPages': page_totals,
               'logicalTasks': len(cards), 'selectionClassifications': selection_totals,

@@ -77,8 +77,8 @@
   "markingGuidePages": [
     40
   ],
-  "expectedTaskCount": 45,
-  "allRouteMarks": 930,
+  "expectedTaskCount": 40,
+  "allRouteMarks": 880,
   "tasks": [
     {
       "key": "1A(a)",
@@ -1152,10 +1152,11 @@
         "accounting-higher-incomplete-records-b"
       ],
       "focus": null,
-      "boundaryReason": "The paper explicitly bounds the pool at four and requires two. The scheme identifies the four concepts; generate all C(4,2)=6 pairs, each retaining the full 10-mark tariff.",
-      "allocationEvidence": "The scheme awards 10 marks for a response explaining two concepts and applying them to McSharry. Each pair is an alternative 10-mark route.",
-      "selectionPool": {
+      "boundaryReason": "The paper bounds the pool at four fundamental concepts and asks for two. The scheme marks the explained pair as one 10-mark answer and explains all four concepts, so the printed task is one card (a printed choice is never one card per pair).",
+      "allocationEvidence": "The scheme awards 10 marks for explaining two fundamental accounting concepts with reference to McSharry; it does not divide the 10 between them. Its solution explains all four: Going Concern, Accruals (matching), Consistency and Prudence. Compare the two you chose.",
+      "printedChoice": {
         "choose": 2,
+        "instruction": "Explain two fundamental accounting concepts, with reference to how they apply to the accounts of McSharry.",
         "options": [
           {
             "key": "going-concern",
@@ -1181,8 +1182,7 @@
             "schemePage": 27,
             "schemeSourceText": "WƌƵĚĞŶĐĞ"
           }
-        ],
-        "focusTemplate": "Explain {selection}, with reference to how they apply to the accounts of McSharry."
+        ]
       }
     },
     {
@@ -1969,8 +1969,8 @@
       "page": 13,
       "text": "Explain two fundamental accounting concepts, with reference to how they",
       "taskKey": "6(c)",
-      "classification": "finite-pool-expanded",
-      "reason": "Q6(c) bounds four fundamental concepts and asks for two. All six scheme-confirmed pairs are generated mechanically at 10 marks each."
+      "classification": "finite-pool-one-card",
+      "reason": "Q6(c) bounds four fundamental concepts and asks for two. One 10-mark card with the printed question; the scheme explains all four concepts."
     },
     {
       "page": 16,

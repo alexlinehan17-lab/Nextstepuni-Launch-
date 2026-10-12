@@ -64,7 +64,7 @@ describe('Accounting corpus reconciliation', () => {
     }
   });
 
-  it('keeps missing Irish schemes explicit and all six translated concept routes accounted for', () => {
+  it('keeps missing Irish schemes explicit and the translated concept choice as one task', () => {
     for (const level of ['higher', 'ordinary']) {
       const review = json(`scripts/markbank/accounting/correspondence/2020-${level}-irish.json`);
       expect(review.visualSchemePages).toEqual([]);
@@ -76,7 +76,7 @@ describe('Accounting corpus reconciliation', () => {
     const review = json('scripts/markbank/accounting/correspondence/2022-higher-irish.json');
     expect(review.selectionReview.filter((d: { classification: string }) => d.classification === 'closed-pool')
       .every((d: { englishTaskKey: string }) => d.englishTaskKey === '6(c)')).toBe(true);
-    expect(review.taskCorrespondence.filter((t: { englishTaskKey: string }) => t.englishTaskKey.startsWith('6(c)-'))).toHaveLength(6);
+    expect(review.taskCorrespondence.filter((t: { englishTaskKey: string }) => t.englishTaskKey.startsWith('6(c)')).map((t: { englishTaskKey: string }) => t.englishTaskKey)).toEqual(['6(c)']);
   });
 
   it('retains the translated pagination corrections found in the visual sweep', () => {
@@ -219,24 +219,23 @@ describe('Accounting paper-specific allocations', () => {
     [2019, 'higher', 42], [2019, 'ordinary', 42],
     [2020, 'higher', 42], [2020, 'ordinary', 34],
     [2021, 'higher', 46], [2021, 'ordinary', 41],
-    [2022, 'higher', 45], [2022, 'ordinary', 38],
+    [2022, 'higher', 40], [2022, 'ordinary', 38],
     [2023, 'higher', 36], [2023, 'ordinary', 40],
     [2024, 'higher', 47], [2024, 'ordinary', 38],
     [2025, 'higher', 41], [2025, 'ordinary', 40],
     [2026, 'higher', 43], [2026, 'ordinary', 39],
-  ] as const)('retains every reviewed route in %s %s', (year, level, count) => {
+  ] as const)('retains every reviewed task in %s %s', (year, level, count) => {
     const cards = [...CARDS, ...ORDINARY].filter(card => card.year === year && card.level === level);
     expect(cards).toHaveLength(count);
     expect(cards.every(tariffReconciles)).toBe(true);
-    // Summed practice alternatives are not a candidate paper total.
-    const conceptAlternatives = year === 2022 && level === 'higher';
-    expect(cards.reduce((sum, card) => sum + card.totalMarks, 0)).toBe(conceptAlternatives ? 930 : year < 2021 ? 760 : 880);
+    // A printed choice is one card, so every paper sums to its published total.
+    expect(cards.reduce((sum, card) => sum + card.totalMarks, 0)).toBe(year < 2021 ? 760 : 880);
     const byQuestion = cards.reduce<Record<string, number>>((totals, card) => {
       const n = card.questionRef.match(/Q(\d+)/)![1];
       totals[n] = (totals[n] ?? 0) + card.totalMarks;
       return totals;
     }, {});
-    expect(byQuestion).toEqual({ 1: year < 2021 ? 120 : 240, 2: 60, 3: 60, 4: 60, 5: 100, 6: conceptAlternatives ? 150 : 100, 7: 100, 8: 80, 9: 80 });
+    expect(byQuestion).toEqual({ 1: year < 2021 ? 120 : 240, 2: 60, 3: 60, 4: 60, 5: 100, 6: 100, 7: 100, 8: 80, 9: 80 });
   });
 
   it('retains the repeated 2010 acid-test requirement within its only published allocation', () => {
@@ -261,26 +260,38 @@ describe('Accounting paper-specific allocations', () => {
     expect(graph.schemeRegions[0].p).toBe(19);
   });
 
-  it('retains all six 2022 Higher concept pairs with their original ten-mark tariff', () => {
-    const variants = authored.cards.filter(card => card.year === 2022 && card.level === 'higher' && card.taskKey.startsWith('6(c)'));
-    const expected = [
-      ['going-concern-accruals', 'Going Concern and Accruals (matching)'],
-      ['going-concern-consistency', 'Going Concern and Consistency'],
-      ['going-concern-prudence', 'Going Concern and Prudence'],
-      ['accruals-consistency', 'Accruals (matching) and Consistency'],
-      ['accruals-prudence', 'Accruals (matching) and Prudence'],
-      ['consistency-prudence', 'Consistency and Prudence'],
-    ];
-    expect(variants).toHaveLength(6);
-    expect(variants.map(card => card.id)).toEqual(expected.map(([key]) => `acc-2022-hl-q6(c)-${key}`));
-    for (const [index, card] of variants.entries()) {
-      expect(card.totalMarks).toBe(10);
-      expect(card.questionText).toContain('There are four fundamental accounting concepts');
-      expect(card.questionText).toContain('Explain two fundamental accounting concepts');
-      expect(card.taskFocus).toBe(`Explain ${expected[index][1]}, with reference to how they apply to the accounts of McSharry.`);
-      expect(card.paperPages).toEqual([12, 13]);
-      expect(card.schemeRegions.map(region => region.p)).toEqual([27, 40]);
-      expect(card.topicId).toBe('accounting-0-5');
+  it('keeps the 2022 Higher choose-two concept task as one ten-mark card', () => {
+    // A printed choice is one card (AGENTS.md, 2026-10-12): the printed question,
+    // the scheme's single 10-mark allocation, and all four concepts it explains.
+    const family = authored.cards.filter(card => card.year === 2022 && card.level === 'higher' && card.taskKey.startsWith('6(c)'));
+    expect(family.map(card => card.id)).toEqual(['acc-2022-hl-q6(c)']);
+    const [card] = family;
+    expect(card.totalMarks).toBe(10);
+    expect(card.questionText).toBe('There are four fundamental accounting concepts applied in the preparation of accounts.\nExplain two fundamental accounting concepts, with reference to how they apply to the accounts of McSharry.');
+    expect(card.taskFocus).toBeNull();
+    expect(card.title).toBe('Fundamental accounting concepts');
+    for (const concept of ['Going Concern', 'Accruals (matching)', 'Consistency', 'Prudence']) expect(card.allocationNote).toContain(concept);
+    expect(card.paperPages).toEqual([12, 13]);
+    expect(card.schemeRegions.map(region => region.p)).toEqual([27, 40]);
+    expect(card.topicId).toBe('accounting-0-5');
+  });
+
+  it('never publishes a printed choice as route siblings', () => {
+    // A printed task key appears once per paper edition, and no task key or
+    // focus carries a route suffix in place of the printed question.
+    const keys = authored.cards.map(card => `${card.year}|${card.level}|${card.taskKey}`);
+    expect(keys.filter((key, index) => keys.indexOf(key) !== index)).toEqual([]);
+    const reviewed = ['higher', 'ordinary'].flatMap(level => Array.from({ length: 17 }, (_, i) => 2010 + i)
+      .map(year => json(`scripts/markbank/accounting/reviewed/${year}-${level}.json`)));
+    const choices = reviewed.flatMap(review => review.tasks
+      .filter((task: { printedChoice?: unknown }) => task.printedChoice)
+      .map((task: { key: string }) => ({ review, key: task.key })));
+    expect(reviewed.some(review => review.tasks.some((task: { selectionPool?: unknown }) => task.selectionPool))).toBe(false);
+    expect(choices.map(({ review, key }) => `${review.year} ${review.level} ${key}`)).toEqual(['2022 higher 6(c)']);
+    for (const { review, key } of choices) {
+      const cards = authored.cards.filter(card => card.year === review.year && card.level === review.level &&
+        (card.taskKey === key || card.taskKey.startsWith(`${key}-`)));
+      expect(cards.map(card => card.taskKey)).toEqual([key]);
     }
   });
 

@@ -11,7 +11,6 @@ hash-pinned. The same task supplies Mark Bank and the exact Topic Atlas sidecar.
 """
 import argparse
 import hashlib
-import itertools
 import json
 import re
 import unicodedata
@@ -86,18 +85,23 @@ def validate_region(region, page_count):
     assert 0 <= x0 < x1 <= 1 and 0 <= y0 < y1 <= 1, region
 
 
-def expand_tasks(tasks, scheme):
-    """Expand a reviewer-pinned closed pool, retaining each route's full tariff."""
-    expanded = []
+def expand_tasks(tasks, scheme, paper):
+    """Check every reviewer-pinned printed choice; a choice stays ONE task.
+
+    A printed choice is one card, never one per option or combination
+    (AGENTS.md, 2026-10-12): the printed question with its whole pool, the
+    scheme's own tariff, and the printed "any N" instruction.
+    """
     for task in tasks:
-        pool = task.get('selectionPool')
+        assert 'selectionPool' not in task, f'{task["key"]}: retired route expansion; declare printedChoice'
+        pool = task.get('printedChoice')
         if not pool:
-            expanded.append(task)
             continue
         options, choose = pool['options'], pool['choose']
-        assert 1 <= choose <= len(options)
+        assert 1 <= choose < len(options)
         assert len({o['key'] for o in options}) == len(options)
-        assert '{selection}' in pool['focusTemplate']
+        assert any(text_key(pool['instruction']) in text_key(paper[f['page'] - 1].get_text())
+                   for f in task['promptFragments']), f'{task["key"]}: unprinted choice instruction'
         for option in options:
             source_text = scheme[option['schemePage'] - 1].get_text()
             # Some SEC PDFs have damaged text encodings. A visually transcribed
@@ -106,14 +110,7 @@ def expand_tasks(tasks, scheme):
                 assert option['schemeSourceText'].strip() and option['schemeSourceText'] in source_text, option
             else:
                 assert text_key(option['label']) in text_key(source_text), option
-        for selected in itertools.combinations(options, choose):
-            label = ' and '.join(o['label'] for o in selected)
-            expanded.append({**task,
-                'key': task['key'] + '-' + '-'.join(o['key'] for o in selected),
-                'title': task['title'] + ': ' + label,
-                'focus': pool['focusTemplate'].replace('{selection}', label),
-            })
-    return expanded
+    return tasks
 
 
 def validate_correspondences(cards):
@@ -157,7 +154,7 @@ def validate_correspondences(cards):
         ], f'{path}: unclassified or stale Irish selection directive'
         assert all(d['classification'] in ('paper-level-choice', 'open-response', 'not-a-selection', 'closed-pool')
                    and d['reason'] for d in review['selectionReview'])
-        closed_pool_keys = {t['key'] for t in english['tasks'] if t.get('selectionPool')}
+        closed_pool_keys = {t['key'] for t in english['tasks'] if t.get('printedChoice')}
         assert all(d.get('englishTaskKey') in closed_pool_keys
                    for d in review['selectionReview'] if d['classification'] == 'closed-pool'), \
             f'{path}: translated closed pool has no authored English expansion'
@@ -199,9 +196,9 @@ def build(finalize=False):
         directives = selection_directives(pd)
         assert directives == [dict(page=d['page'], text=d['text']) for d in review['selectionReview']], f'{path}: unclassified or stale selection directive'
         assert all(d['classification'] and d['reason'] for d in review['selectionReview'])
-        pooled_keys = {t['key'] for t in review['tasks'] if t.get('selectionPool')}
+        pooled_keys = {t['key'] for t in review['tasks'] if t.get('printedChoice')}
         classified_keys = {d['taskKey'] for d in review['selectionReview']
-                           if d['classification'] == 'finite-pool-expanded'}
+                           if d['classification'] == 'finite-pool-one-card'}
         assert pooled_keys == classified_keys, f'{path}: unclassified or orphaned finite pool'
         sidecar_path = ROOT / 'scripts/paper-trail/answers' / str(year) / (fileid + '.json')
         sidecar = read(sidecar_path)
@@ -211,7 +208,7 @@ def build(finalize=False):
             if correction:
                 q.update(correction)
         legacy = {q['n'] for q in sidecar['q']}
-        tasks = expand_tasks(review['tasks'], sd)
+        tasks = expand_tasks(review['tasks'], sd, pd)
         assert len(tasks) == review['expectedTaskCount']
         assert sum(t['marks'] for t in tasks) == review['allRouteMarks']
         assert {t['questionNumber'] for t in tasks} == set(range(1, 10))

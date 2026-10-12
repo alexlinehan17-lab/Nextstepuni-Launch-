@@ -3,7 +3,7 @@
   "level": "higher",
   "fileid": "LC032ALP000IV.pdf",
   "englishReview": "2022-higher.json",
-  "englishReviewSha256": "a816fc11419d3913b149f2d7277027bc307e6c71ecc7e672da182bdfeac01697",
+  "englishReviewSha256": "fb90ce425583b7e0b8112e0787986bfdbc7f33b97f75daab08c3da379d151b64",
   "reviewedAt": "2026-10-07",
   "reviewedBy": "Codex visual PDF audit",
   "paperSha256": "bd107b81b791ad6da121ba81be00c7a4cde9bc66750edac01ad8157873efc90f",
@@ -741,102 +741,7 @@
       "marks": 50
     },
     {
-      "englishTaskKey": "6(c)-going-concern-accruals",
-      "paperPages": [
-        12,
-        13
-      ],
-      "schemeRegions": [
-        {
-          "p": 27,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        }
-      ],
-      "marks": 10
-    },
-    {
-      "englishTaskKey": "6(c)-going-concern-consistency",
-      "paperPages": [
-        12,
-        13
-      ],
-      "schemeRegions": [
-        {
-          "p": 27,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        }
-      ],
-      "marks": 10
-    },
-    {
-      "englishTaskKey": "6(c)-going-concern-prudence",
-      "paperPages": [
-        12,
-        13
-      ],
-      "schemeRegions": [
-        {
-          "p": 27,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        }
-      ],
-      "marks": 10
-    },
-    {
-      "englishTaskKey": "6(c)-accruals-consistency",
-      "paperPages": [
-        12,
-        13
-      ],
-      "schemeRegions": [
-        {
-          "p": 27,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        }
-      ],
-      "marks": 10
-    },
-    {
-      "englishTaskKey": "6(c)-accruals-prudence",
-      "paperPages": [
-        12,
-        13
-      ],
-      "schemeRegions": [
-        {
-          "p": 27,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        }
-      ],
-      "marks": 10
-    },
-    {
-      "englishTaskKey": "6(c)-consistency-prudence",
+      "englishTaskKey": "6(c)",
       "paperPages": [
         12,
         13
@@ -1590,14 +1495,14 @@
       "page": 13,
       "text": "Feidhmítear ceithre choincheap bhunúsacha cuntasaíochta in ullmhú cuntas.",
       "classification": "closed-pool",
-      "reason": "The paper bounds four basic concepts and asks for two. The corresponding English task mechanically expands all six pairs, each worth the original 10 marks.",
+      "reason": "The paper bounds four basic concepts and asks for two. The corresponding English task is one 10-mark card with the printed question (a printed choice is never one card per pair).",
       "englishTaskKey": "6(c)"
     },
     {
       "page": 13,
       "text": "Mínigh dhá choincheap bhunúsacha cuntasaíochta, i dtaca leis an gcaoi a",
       "classification": "closed-pool",
-      "reason": "The paper bounds four basic concepts and asks for two. The corresponding English task mechanically expands all six pairs, each worth the original 10 marks.",
+      "reason": "The paper bounds four basic concepts and asks for two. The corresponding English task is one 10-mark card with the printed question (a printed choice is never one card per pair).",
       "englishTaskKey": "6(c)"
     },
     {

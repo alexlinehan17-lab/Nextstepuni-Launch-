@@ -1,5 +1,5 @@
 {
-  "complete": true,
+  "complete": false,
   "cards": [
     {
       "id": "acc-2010-hl-q1(a)",
@@ -38048,13 +38048,13 @@
       "reviewedAt": "2026-10-07"
     },
     {
-      "id": "acc-2022-hl-q6(c)-going-concern-accruals",
+      "id": "acc-2022-hl-q6(c)",
       "year": 2022,
       "level": "higher",
       "paperFileid": "LC032ALP000EV.pdf",
       "questionNumber": 6,
-      "taskKey": "6(c)-going-concern-accruals",
-      "title": "Fundamental accounting concepts: Going Concern and Accruals (matching)",
+      "taskKey": "6(c)",
+      "title": "Fundamental accounting concepts",
       "questionText": "There are four fundamental accounting concepts applied in the preparation of accounts.\nExplain two fundamental accounting concepts, with reference to how they apply to the accounts of McSharry.",
       "totalMarks": 10,
       "topicId": "accounting-0-5",
@@ -38085,218 +38085,8 @@
           ]
         }
       ],
-      "taskFocus": "Explain Going Concern and Accruals (matching), with reference to how they apply to the accounts of McSharry.",
-      "allocationNote": "The scheme awards 10 marks for a response explaining two concepts and applying them to McSharry. Each pair is an alternative 10-mark route.",
-      "reviewedAt": "2026-10-07"
-    },
-    {
-      "id": "acc-2022-hl-q6(c)-going-concern-consistency",
-      "year": 2022,
-      "level": "higher",
-      "paperFileid": "LC032ALP000EV.pdf",
-      "questionNumber": 6,
-      "taskKey": "6(c)-going-concern-consistency",
-      "title": "Fundamental accounting concepts: Going Concern and Consistency",
-      "questionText": "There are four fundamental accounting concepts applied in the preparation of accounts.\nExplain two fundamental accounting concepts, with reference to how they apply to the accounts of McSharry.",
-      "totalMarks": 10,
-      "topicId": "accounting-0-5",
-      "examTopicIds": [
-        "accounting-higher-incomplete-records-b"
-      ],
-      "paperPages": [
-        12,
-        13
-      ],
-      "schemeRegions": [
-        {
-          "p": 27,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        {
-          "p": 40,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        }
-      ],
-      "taskFocus": "Explain Going Concern and Consistency, with reference to how they apply to the accounts of McSharry.",
-      "allocationNote": "The scheme awards 10 marks for a response explaining two concepts and applying them to McSharry. Each pair is an alternative 10-mark route.",
-      "reviewedAt": "2026-10-07"
-    },
-    {
-      "id": "acc-2022-hl-q6(c)-going-concern-prudence",
-      "year": 2022,
-      "level": "higher",
-      "paperFileid": "LC032ALP000EV.pdf",
-      "questionNumber": 6,
-      "taskKey": "6(c)-going-concern-prudence",
-      "title": "Fundamental accounting concepts: Going Concern and Prudence",
-      "questionText": "There are four fundamental accounting concepts applied in the preparation of accounts.\nExplain two fundamental accounting concepts, with reference to how they apply to the accounts of McSharry.",
-      "totalMarks": 10,
-      "topicId": "accounting-0-5",
-      "examTopicIds": [
-        "accounting-higher-incomplete-records-b"
-      ],
-      "paperPages": [
-        12,
-        13
-      ],
-      "schemeRegions": [
-        {
-          "p": 27,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        {
-          "p": 40,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        }
-      ],
-      "taskFocus": "Explain Going Concern and Prudence, with reference to how they apply to the accounts of McSharry.",
-      "allocationNote": "The scheme awards 10 marks for a response explaining two concepts and applying them to McSharry. Each pair is an alternative 10-mark route.",
-      "reviewedAt": "2026-10-07"
-    },
-    {
-      "id": "acc-2022-hl-q6(c)-accruals-consistency",
-      "year": 2022,
-      "level": "higher",
-      "paperFileid": "LC032ALP000EV.pdf",
-      "questionNumber": 6,
-      "taskKey": "6(c)-accruals-consistency",
-      "title": "Fundamental accounting concepts: Accruals (matching) and Consistency",
-      "questionText": "There are four fundamental accounting concepts applied in the preparation of accounts.\nExplain two fundamental accounting concepts, with reference to how they apply to the accounts of McSharry.",
-      "totalMarks": 10,
-      "topicId": "accounting-0-5",
-      "examTopicIds": [
-        "accounting-higher-incomplete-records-b"
-      ],
-      "paperPages": [
-        12,
-        13
-      ],
-      "schemeRegions": [
-        {
-          "p": 27,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        {
-          "p": 40,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        }
-      ],
-      "taskFocus": "Explain Accruals (matching) and Consistency, with reference to how they apply to the accounts of McSharry.",
-      "allocationNote": "The scheme awards 10 marks for a response explaining two concepts and applying them to McSharry. Each pair is an alternative 10-mark route.",
-      "reviewedAt": "2026-10-07"
-    },
-    {
-      "id": "acc-2022-hl-q6(c)-accruals-prudence",
-      "year": 2022,
-      "level": "higher",
-      "paperFileid": "LC032ALP000EV.pdf",
-      "questionNumber": 6,
-      "taskKey": "6(c)-accruals-prudence",
-      "title": "Fundamental accounting concepts: Accruals (matching) and Prudence",
-      "questionText": "There are four fundamental accounting concepts applied in the preparation of accounts.\nExplain two fundamental accounting concepts, with reference to how they apply to the accounts of McSharry.",
-      "totalMarks": 10,
-      "topicId": "accounting-0-5",
-      "examTopicIds": [
-        "accounting-higher-incomplete-records-b"
-      ],
-      "paperPages": [
-        12,
-        13
-      ],
-      "schemeRegions": [
-        {
-          "p": 27,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        {
-          "p": 40,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        }
-      ],
-      "taskFocus": "Explain Accruals (matching) and Prudence, with reference to how they apply to the accounts of McSharry.",
-      "allocationNote": "The scheme awards 10 marks for a response explaining two concepts and applying them to McSharry. Each pair is an alternative 10-mark route.",
-      "reviewedAt": "2026-10-07"
-    },
-    {
-      "id": "acc-2022-hl-q6(c)-consistency-prudence",
-      "year": 2022,
-      "level": "higher",
-      "paperFileid": "LC032ALP000EV.pdf",
-      "questionNumber": 6,
-      "taskKey": "6(c)-consistency-prudence",
-      "title": "Fundamental accounting concepts: Consistency and Prudence",
-      "questionText": "There are four fundamental accounting concepts applied in the preparation of accounts.\nExplain two fundamental accounting concepts, with reference to how they apply to the accounts of McSharry.",
-      "totalMarks": 10,
-      "topicId": "accounting-0-5",
-      "examTopicIds": [
-        "accounting-higher-incomplete-records-b"
-      ],
-      "paperPages": [
-        12,
-        13
-      ],
-      "schemeRegions": [
-        {
-          "p": 27,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        {
-          "p": 40,
-          "r": [
-            0,
-            0,
-            1,
-            1
-          ]
-        }
-      ],
-      "taskFocus": "Explain Consistency and Prudence, with reference to how they apply to the accounts of McSharry.",
-      "allocationNote": "The scheme awards 10 marks for a response explaining two concepts and applying them to McSharry. Each pair is an alternative 10-mark route.",
+      "taskFocus": null,
+      "allocationNote": "The scheme awards 10 marks for explaining two fundamental accounting concepts with reference to McSharry; it does not divide the 10 between them. Its solution explains all four: Going Concern, Accruals (matching), Consistency and Prudence. Compare the two you chose.",
       "reviewedAt": "2026-10-07"
     },
     {

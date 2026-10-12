@@ -774,7 +774,11 @@ const decks = [
   ['physical-education:ordinary', PE_ORDINARY, 96, '9f4fab469becb01ab3ce73e4b6301a270e68ea5310bd0225322b0cb65a1ca23f'],
   // New Accounting decks, enrolled after the complete paper/scheme sweep,
   // zero-open reconciliation and legacy Atlas/answer-ID preservation passed.
-  ['accounting:higher', ACCOUNTING_HIGHER, 726, '711926a26f0abeb18a4c26f8b6be51263c7d69ac2738aff715f05b4f8431667f'],
+  // 2026-10-12: Higher 726 -> 721, deliberately. 2022 HL Q6(c) (explain two of
+  // four printed concepts) is one card, not six per-pair cards; Accounting has
+  // never been on main (checked against origin/main 6652f80cc), so the six
+  // withdrawn IDs are branch-only and are not aliased.
+  ['accounting:higher', ACCOUNTING_HIGHER, 721, 'c602456b31e6f07e77ce952d9724b599d8793622db3f6f80a371c23bed9a3132'],
   ['accounting:ordinary', ACCOUNTING_ORDINARY, 644, '0a35e37e0360979df909459b44024d1a62b749b268594b214bf620ebaf18db86'],
 ] as const;
 
@@ -833,8 +837,9 @@ describe('Mark Bank card preservation', () => {
     // Politics then folds its branch-only choice routes into their printed
     // tasks, 1,086 -> 622 (2026-10-12): 23,539 - 464.
     // Physical Education folds its 101 branch-only route cards into their
-    // printed tasks (2026-10-12): 23,075 - 101.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_974);
+    // printed tasks (2026-10-12): 23,075 - 101; Accounting folds 2022 HL
+    // Q6(c)'s six pair cards into one: - 5.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_969);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

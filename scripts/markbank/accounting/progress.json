@@ -1,10 +1,10 @@
 {
-  "complete": true,
-  "note": "All local paper editions visually reviewed; source reconciliation, runtime Atlas parity, preservation and Accounting UI checks passed. See reconciliation.json and verification.json, including the two explicit 2020 Irish scheme fallbacks.",
+  "complete": false,
+  "note": "Progress only. Counts do not establish full-corpus completeness. Remaining edition correspondence and final zero-open/zero-orphan reconciliation must pass.",
   "sourceEditions": 68,
   "reviewedEditions": 34,
   "correspondenceReviewedEditions": 34,
-  "reviewedTasks": 1370,
+  "reviewedTasks": 1365,
   "editions": [
     {
       "year": 2010,
@@ -347,7 +347,7 @@
       "level": "higher",
       "fileid": "LC032ALP000EV.pdf",
       "status": "tasks-reviewed",
-      "tasks": 45
+      "tasks": 40
     },
     {
       "year": 2022,

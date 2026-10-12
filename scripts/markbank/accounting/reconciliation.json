@@ -1,21 +1,21 @@
 {
   "subjectId": "accounting",
   "scope": "All local Paper Trail Accounting papers, 2010–2026, Higher and Ordinary, English and Irish",
-  "method": "Independent reconciliation of visually reviewed boundaries against source files, published parent tariffs, preserved sidecars, route combinations and generated artifacts. Runtime Atlas and canonical-topic checks are in markBankAccounting.test.tsx.",
+  "method": "Independent reconciliation of visually reviewed boundaries against source files, published parent tariffs, preserved sidecars, one-card printed choices and generated artifacts. Runtime Atlas and canonical-topic checks are in markBankAccounting.test.tsx.",
   "sourceReconciliationPassed": true,
-  "checks": 18624,
+  "checks": 19944,
   "openIssues": [],
   "sourceEditions": 68,
   "visuallyReviewedPages": {
     "paper": 1056,
     "scheme": 1630
   },
-  "logicalTasks": 1370,
+  "logicalTasks": 1365,
   "selectionClassifications": {
     "paper-level-choice": 441,
     "open-response": 105,
     "not-a-selection": 1129,
-    "finite-pool-expanded": 1,
+    "finite-pool-one-card": 1,
     "equivalent-units": 1,
     "comparison-required": 1,
     "closed-pool": 2
@@ -38,15 +38,10 @@
       "task": "6(c)",
       "choose": 2,
       "options": 4,
-      "variants": [
-        "6(c)-going-concern-accruals",
-        "6(c)-going-concern-consistency",
-        "6(c)-going-concern-prudence",
-        "6(c)-accruals-consistency",
-        "6(c)-accruals-prudence",
-        "6(c)-consistency-prudence"
+      "cards": [
+        "6(c)"
       ],
-      "routeMarks": 10
+      "marks": 10
     }
   ],
   "parentReconciliation": [
@@ -2587,14 +2582,9 @@
       "tasks": [
         "6(a)",
         "6(b)",
-        "6(c)-going-concern-accruals",
-        "6(c)-going-concern-consistency",
-        "6(c)-going-concern-prudence",
-        "6(c)-accruals-consistency",
-        "6(c)-accruals-prudence",
-        "6(c)-consistency-prudence"
+        "6(c)"
       ],
-      "allRouteMarks": 150
+      "allRouteMarks": 100
     },
     {
       "edition": "2022/LC032ALP000EV.pdf",

@@ -1,18 +1,18 @@
 {
   "accounting": {
-    "cards": 1370,
-    "contentHash": "4d54ebe2ad4a70d4",
+    "cards": 1365,
+    "contentHash": "9a1367a6bac236dd",
     "coveragePct": 100.0,
-    "covered": 1370,
+    "covered": 1365,
     "excluded": 0,
-    "leaves": 1370,
+    "leaves": 1365,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 68,
       "hash": "88fb291dee0789bc"
     },
-    "refsHash": "f48c96eaa74f1ab8"
+    "refsHash": "8606f8982dc6e154"
   },
   "agricultural-science": {
     "cards": 869,
