@@ -1,3 +1,43 @@
+## Current checkpoint — batch 3: 2026 complete, 2025 HL bridged, 2026-10-12
+
+Supersedes the counts below.
+
+- Published: 36 papers / 1,963 cards (2010-2015 all four, 2016 HL/OL P1, 2018
+  all four, 2026 all four, 2025 HL P1 + P2). Gate: 68 papers, 2,724 base tasks,
+  3,788 routes; pending taskSelections 10 / raw 1,016 / scheme 1,380 /
+  paperReviews 32. Coverage baseline 2,581/3,156, 575 open (declared).
+- Commits: a95c7a065 (reviewed answer maps hosted byte-identical in
+  public/paper-answers + HOSTED_ANSWER_OVERRIDES; OL P2 scheme crops repaired),
+  9b765abd7 (printed-case headings/titles; poet headings out of prompts; 2024
+  OL P2 "Reflective/Hopeful/combination" -> one open response), c1e3b35de (2026
+  OL P1, 22 tasks / 390 routes), 9d882850a (2025 HL P1 19/20, P2 27/27).
+- LEGACY BRIDGE: `scripts/markbank/authored/english-legacy-bridge.json`. A
+  2021-2025 paper publishes only when the ledger maps EXACTLY its legacy ids
+  (authored.json) to reviewed cards: `same-id` (published card keeps the id) or
+  `alias` (registered in components/MarkBank/cardAliases.ts — the publisher
+  refuses until it is). Ledger written by `tmp/english-audit/write-legacy-bridge.py`.
+  Manifests carry `bridgedPapers`, `bridgedLegacyIds`, `bridgeAliases`; the
+  factory stops generating bridged legacy cards; reconcile/paper_census count
+  the bridged paper by its published cards. authored.json never changes.
+  2025 HL: 42 legacy ids -> 37 same-id + 5 aliases (P1 Composing 2 -> route 1;
+  P2 Comparative A/B/C Q1 and Unseen Q1 -> part (a)). Lifted indicative
+  material (verbatim, publisher-checked against the scheme page) replaces the
+  old hand paraphrases on the six P1 QA(i)/(iii) cards.
+- Atlas archive topics are now append-only (english_publish.py keeps existing
+  order); re-run `node scripts/paper-trail/build-english-geography-exam-topic-runtime.mjs`
+  after publishing. 67 additive archive topics; 965 exact mappings.
+- KNOWN LEGACY DEFECT (fix when bridging): 2021, 2023 and 2024 HL schemes print
+  ONE combined row for Comparative Q1(a) 30 / Q1(b) 40, but the legacy cards
+  score them as discrete PCLM. Reviewed 2025/2026 cards use the combined row.
+- OPEN DECISION: 2026 OL P1 Q A(iii)(a) is printed identically under all
+  three texts; legacy 2022-2025 OL deduplicated such prompts via aliases, the
+  reviewed publish keeps three copies (6 cards). T3 A(i) choose-two-of-eight
+  plus one is 360 mechanical routes.
+- NEXT: 2025 OL P1/P2 (legacy bridge; 2025 OL P1 already has 2 withdrawn
+  aliases that the bridge must map), then 2024-2021, 2016 P2, 2017, 2019-2020.
+
+---
+
 ## Current checkpoint — runtime publisher shipped on branch, 2026-10-11
 
 Supersedes the counts below for runtime/Atlas state; review ledgers unchanged.
