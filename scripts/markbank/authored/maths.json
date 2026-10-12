@@ -65326,5 +65326,2830 @@
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "stem": "The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections: one spinner shows Left Hand, Right Hand, Left Foot and Right Foot; the other shows Yellow, Red, Blue and Green. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot."
+ },
+ {
+  "id": "maths-2020-hl-p1-q1-a-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q1-a-i",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q1(a)(i)",
+  "questionText": "Find the value of p for which x + 3 is a factor of f(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q1-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f(−3) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — f(−3) = −3² + 5(−3) + p = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 9 − 15 + p = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — p = 6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — x² + 5x + p = (x + 3)(x + a)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — a + 3 = 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — a = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-i-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — p = 3a",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-i-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Demonstrates understanding of x + 3 as factor or – 3 as root e.g. (x + 3), f(−3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-i-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Relevant equation in p (with p as only unknown)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "f(x) = x² + 5x + p where x ∈ ℝ, −3 ≤ p ≤ 8, and p ∈ ℤ."
+ },
+ {
+  "id": "maths-2020-hl-p1-q1-a-ii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q1-a-ii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q1(a)(ii)",
+  "questionText": "Find the value of p for which f(x) has roots which differ by 3.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x² + 5x + p = (x − α)(x − α − 3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — −2α − 3 = 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — α = −4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — p = 16 − 12",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — p = 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — α, α + 3 = roots",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — α + α + 3 = −5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — and α + 3 = −1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — p = (−1)(−4) = 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-10",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Demonstrates understanding of 3 as difference of roots e.g. α with α ± 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-11",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — x² − x(sum) + product = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-12",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct value for p",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-13",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — x² + 5x + p > 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-14",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Sketch of U-shaped quadratic with turning point above the x-axis",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-ii-solution-15",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Relevant equation in α (with α as only unknown)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "f(x) = x² + 5x + p where x ∈ ℝ, −3 ≤ p ≤ 8, and p ∈ ℤ."
+ },
+ {
+  "id": "maths-2020-hl-p1-q1-a-iii",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-q1-a-iii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q1(a)(iii)",
+  "questionText": "Find the two values of p for which the graph of f(x) will not cross the x-axis.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — b² − 4ac < 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 5² − 4(1)(p) < 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 25 − 4p < 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 4p > 25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — p > 6·25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — p = 7 and p = 8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — b² − 4ac",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct value for p",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — x² + 5x + p > 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Relevant inequality in p (with p as only unknown)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-a-iii-solution-11",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — p > 6·25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "f(x) = x² + 5x + p where x ∈ ℝ, −3 ≤ p ≤ 8, and p ∈ ℤ."
+ },
+ {
+  "id": "maths-2020-hl-p1-q1-b",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-q1-b",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q1(b)",
+  "questionText": "Find the range of values of x for which |2x + 5| − 1 ≤ 0, where x ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — −1 ≤ 2x + 5 ≤ 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — −6 ≤ 2x ≤ −4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — −3 ≤ x ≤ −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — (2x + 5)² ≤ 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 4x² + 20x + 24 ≤ 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — x² + 5x + 6 ≤ 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — (x + 2)(x + 3) ≤ 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (2x + 5)² ≤ 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — one linear inequality",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — −1 ≤ 2x + 5 ≤ 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-11",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Identifies both linear inequalities",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-12",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Quadratic inequality involving 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-13",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finding –3 and –2 in Methods 1 or 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-14",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Roots of quadratic found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-15",
+    "kind": "point",
+    "verbatim": "High Partial Credit — −6 ≤ 2x ≤ −4 or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q1-b-solution-16",
+    "kind": "point",
+    "verbatim": "Note — Accept −3 < x < −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-hl-p1-q2-a",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-a",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q2(a)",
+  "questionText": "Find the two complex numbers z₁ and z₂ that satisfy the following simultaneous equations, where i² = −1: iz₁ = −4 + 3i; 3z₁ − z₂ = 11 + 17i. Write your answers in the form a + bi where a, b ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — i(iz₁) = i(−4 + 3i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — −z₁ = −4i + 3i²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — z₁ = 3 + 4i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 3z₁ − z₂ = 3(3 + 4i) − z₂ = 11 + 17i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — z₂ = 9 + 12i − 11 − 17i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — z₂ = −2 − 5i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Either equation multiplied/divided by i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — z₁ found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — z₂ written in terms of z₁ with z₁ substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — z₁ eliminated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — z₁ found and substituted into second equation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-a-solution-12",
+    "kind": "point",
+    "verbatim": "High Partial Credit — z₂ found by elimination",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-hl-p1-q2-b-i",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-b-i",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q2(b)(i)",
+  "questionText": "Find r, the common ratio of the sequence. Write your answer in the form a + bi where a, b ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q2-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — r = T₂/T₁",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — r = (15 − 13i − 2)/(9 + 4)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — r = (13 − 13i)/13",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — r = 1 − i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — T₂/T₁",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The complex numbers 3 + 2i and 5 − i are the first two terms of a geometric sequence."
+ },
+ {
+  "id": "maths-2020-hl-p1-q2-b-ii",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-b-ii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q2(b)(ii)",
+  "questionText": "Use de Moivre’s Theorem to find T₉, the ninth term of the sequence. Write your answer in the form a + bi, where a, b ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — T₉ = ar⁸",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — T₉ = (3 + 2i)(1 − i)⁸",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — T₉ = (3 + 2i)(16)(cos 14π + i sin 14π)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — T₉ = (3 + 2i)(16)(1 + 0i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — T₉ = 48 + 32i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — T₉ = ar⁸",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct use of De Moivre",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some use of De Moivre’s Theorem on r",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Modulus and argument found for r",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Solution in polar form with some simplification",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q2-b-ii-solution-11",
+    "kind": "point",
+    "verbatim": "Note — Accept candidates r from (b)(i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The complex numbers 3 + 2i and 5 − i are the first two terms of a geometric sequence."
+ },
+ {
+  "id": "maths-2020-hl-p1-q3-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q3-a",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q3(a)",
+  "questionText": "f(x) = 6x − 5 and g(x) = (x + 5)/6. Investigate if f(g(x)) = g(f(x)).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — fg(x) = 6((x + 5)/6) − 5 = x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — gf(x) = g(6x − 5)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — g(6x − 5)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Particular case verification",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One correct composition simplified to x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-hl-p1-q3-b-i",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q3-b-i",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q3(b)(i)",
+  "questionText": "The equation y = 5x² can be rewritten in the form log₅ y = a + b log₅ x. Find the value of a and the value of b.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q3-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — log₅ y = log₅ 5x²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — log₅ y = log₅ 5 + log₅ x²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — log₅ y = 1 + 2 log₅ x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — a = 1 and b = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — log₅ 5x² = log₅ y",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — log₅ y = log₅ 5 + log₅ x²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The real variables y and x are related by y = 5x²."
+ },
+ {
+  "id": "maths-2020-hl-p1-q3-b-ii",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q3-b-ii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q3(b)(ii)",
+  "questionText": "Hence, or otherwise, find the real values of y for which log₅ y = 2 + log₅((126/25)x − 1).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q3-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 5x² = 126x − 25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 5x² − 126x + 25 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — (5x − 1)(x − 25) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — or y = 5(25)² = 3125",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant use of laws of logs",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Quadratic equation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — x values found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Note — If 2 is incorrectly (non log) dealt with then award MPC at most",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q3-b-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Note — If incorrect work leads to a non-quadratic equation then award MPC at most",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The real variables y and x are related by y = 5x²."
+ },
+ {
+  "id": "maths-2020-hl-p1-q4-a",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q4-a",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q4(a)",
+  "questionText": "Given that f′(3) = −12, show that k = −9, where f′(3) is the derivative of f(x) at x = 3.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f′(x) = 3x² + 2kx + 15",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 3(3)² + 2k(3) + 15 = −12",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 27 + 6k + 15 = −12",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 6k = −54",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — k = −9",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any relevant differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-a-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Expression fully differentiated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Derivative fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-a-solution-9",
+    "kind": "point",
+    "verbatim": "No Credit — No differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows two functions f(x) and g(x). The function f(x) is given by the formula f(x) = x³ + kx² + 15x + 8, where k ∈ ℤ, and x ∈ ℝ."
+ },
+ {
+  "id": "maths-2020-hl-p1-q4-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q4-b",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q4(b)",
+  "questionText": "The function g(x) is the line that passes through the two turning points of f(x) = x³ − 9x² + 15x + 8, as shown on the previous page. Find the equation of g(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f′(x) = 3x² + 2(−9)x + 15",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 3x² − 18x + 15 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x² − 6x + 5 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x = 1 x = 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — f(1) = 15 (1, 15)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — f(5) = −17 (5, −17)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — y − 15 = −8(x − 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution — g(x): 8x + y − 23 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any relevant differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Both x values found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-b-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Turning points found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows two functions f(x) and g(x). The function f(x) is given by the formula f(x) = x³ + kx² + 15x + 8, where k ∈ ℤ, and x ∈ ℝ."
+ },
+ {
+  "id": "maths-2020-hl-p1-q4-c",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q4-c",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q4(c)",
+  "questionText": "Show that the graph of g(x) contains the point of inflection of f(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q4-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f′′(x) = 6x − 18 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — f(3) = −1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — (3, −1) is the point of inflection",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-c-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — 8(3) + (−1) − 23 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-c-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ (3, −1) ∈ g(x).",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-c-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — f′′(x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-c-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — x coordinate of point of inflection found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-c-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Point of inflection found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q4-c-solution-10",
+    "kind": "point",
+    "verbatim": "Note — Accept candidates g(x) from (b) with relevant statement",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows two functions f(x) and g(x). The function f(x) is given by the formula f(x) = x³ + kx² + 15x + 8, where k ∈ ℤ, and x ∈ ℝ. The function g(x) is the line that passes through the two turning points of f(x) = x³ − 9x² + 15x + 8."
+ },
+ {
+  "id": "maths-2020-hl-p1-q5-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q5-a",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q5(a)",
+  "questionText": "A couple agree to take out a €250 000 mortgage in order to purchase a new home. The loan is to be paid back monthly over 25 years with the repayments due at the end of each month. The bank charges an annual percentage rate (APR) which is equivalent to a monthly rate of 0·287%. Using the amortisation formula, or otherwise, find the couples’ monthly repayment on the mortgage. Give your answer in euro correct to the nearest cent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A = 250000(0·00287)(1·00287)³⁰⁰ / ((1·00287)³⁰⁰ − 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — A = €1244·06",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q5-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 200·9544372 × A = 250000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q5-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Formula with some correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q5-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-hl-p1-q5-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q5-b",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q5(b)",
+  "questionText": "Another couple agree to take out a mortgage of €350 000, at a rate of 0·3% per month, in order to purchase a new home. This loan is also to be paid back monthly over 25 years with the repayments due at the end of each month. The amount of each repayment is €1771. After exactly 11 years of repayments, the couple receive a financial windfall. They decide to repay the remaining balance on the mortgage. Write down a series (including the first two and last two terms) which shows the total of the present values of all the remaining monthly repayments due over the remaining 14 years of the mortgage (after the last monthly repayment at the end of year 11). Hence, find how much the couple will need to repay in order to clear their mortgage entirely. Give your answer correct to the nearest cent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1771/1·003 + 1771/1·003² + ⋯ + 1771/1·003¹⁶⁷",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — + 1771/1·003¹⁶⁸",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = €233438·25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q5-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1771/1·003",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q5-b-solution-5",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — S₁₆₈ formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q5-b-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-hl-p1-q6-a",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q6-a",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q6(a)",
+  "questionText": "Differentiate (3x − 5)(2x + 4) with respect to x from first principles.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f(x) = (3x − 5)(2x + 4)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 6x² + 2x − 20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — f(x + ℎ) = 6(x + ℎ)² + 2(x + ℎ) − 20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 6x² + 12ℎx + 6ℎ² + 2x + 2ℎ − 20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — f(x + ℎ) − f(x) = 12ℎx + 6ℎ² + 2ℎ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — (f(x + ℎ) − f(x))/ℎ = 12x + 6ℎ + 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — lim ℎ→0 (f(x + ℎ) − f(x))/ℎ = 12x + 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution — f′(x) = 12x + 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some substitution into f(x + ℎ) or y + Δy",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — f(x + ℎ) − f(x) = 12ℎx + 6ℎ² + 2ℎ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-a-solution-11",
+    "kind": "point",
+    "verbatim": "No Credit — Not from first principles",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-hl-p1-q6-b-i",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q6-b-i",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q6(b)(i)",
+  "questionText": "Find h′(x), the derivative of h(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q6-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ′(x) = 1/2 (1/(2x + 3))(2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 1/(2x + 3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any relevant differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1/2 (1/(2x + 3))",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "h(x) = ½ ln(2x + 3) + C, where C is a constant."
+ },
+ {
+  "id": "maths-2020-hl-p1-q6-b-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q6-b-ii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2020 HL Paper 1 Q6(b)(ii)",
+  "questionText": "The diagram below shows part of the graph of the function h′(x). The shaded region in the diagram is between the graph and the x-axis, from x = 0 to x = A. This shaded region has an area of ln 3 square units. Find the value of A.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ½ (ln(2A + 3) − ln 3) = ln 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ((2A + 3)/3)^½ = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — (2A + 3)/3 = 9",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 2A + 3 = 27",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — 2A = 24",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — A = 12",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Integration indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Substitutes limits into integral and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Correct integration with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Integral evaluated at x = A only (i.e. omits ln 3 on LHS and finishes)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q6-b-ii-solution-11",
+    "kind": "point",
+    "verbatim": "Note — Must have integration to gain any credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "h(x) = ½ ln(2x + 3) + C, where C is a constant."
+ },
+ {
+  "id": "maths-2020-hl-p1-q7-a-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-a-i",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q7(a)(i)",
+  "questionText": "Complete the table below to list the next five triangular numbers.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 10 15 21 28 36",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct new entry",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Three correct new entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6."
+ },
+ {
+  "id": "maths-2020-hl-p1-q7-a-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-a-ii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q7(a)(ii)",
+  "questionText": "Is 1275 a triangular number? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (n/2)(n + 1) = 1275",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (n − 50)(n + 51) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — n = 50",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 1275 is the 50th triangular number",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (n/2)(n + 1) = 1275",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — n = 50",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Note — accept T₅₀ as valid reason",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6. The nth triangular number can be found directly using the formula Tₙ = n(n + 1)/2."
+ },
+ {
+  "id": "maths-2020-hl-p1-q7-b-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-b-i",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q7(b)(i)",
+  "questionText": "Write the expression n(n + 1)/2 + (n + 1) as a single fraction in its simplest form.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q7-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Tₙ₊₁ = Tₙ + (n + 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = (n/2)(n + 1) + (n + 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = (n(n + 1) + 2(n + 1))/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = (n + 1)(n + 2)/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 2 identified as C.D.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct numerator",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — = (n(n + 1) + 2(n + 1))/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6. The nth triangular number can be found directly using the formula Tₙ = n(n + 1)/2. The (n + 1)th triangular number can be written as Tₙ₊₁ = Tₙ + (n + 1), where n ∈ ℕ."
+ },
+ {
+  "id": "maths-2020-hl-p1-q7-b-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-b-ii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q7(b)(ii)",
+  "questionText": "Prove that the sum of any two consecutive triangular numbers will always be a square number (a number in the form k², where k ∈ ℕ).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q7-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Tₙ₊₁ + Tₙ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = (n + 1)(n + 2)/2 + (n/2)(n + 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = (n + 1)(2n + 2)/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 2(n + 1)(n + 1)/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — = (n + 1)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Tₙ₊₁ + Tₙ with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Particular case verification",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-ii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (n + 1)(n + 2)/2 + (n/2)(n + 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6. The nth triangular number can be found directly using the formula Tₙ = n(n + 1)/2. The (n + 1)th triangular number can be written as Tₙ₊₁ = Tₙ + (n + 1), where n ∈ ℕ."
+ },
+ {
+  "id": "maths-2020-hl-p1-q7-b-iii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-b-iii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q7(b)(iii)",
+  "questionText": "Two consecutive triangular numbers sum to 12 544. Find the smaller of these two numbers.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q7-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (n + 1)² = 12544",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — n + 1 = √12544 = 112",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — n = 111",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — T₁₁₁ is the smaller term",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — T₁₁₁ = 111(112)/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — T₁₁₁ = 6216",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-iii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (n + 1)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-b-iii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — n = 111, or n = 112",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6. The nth triangular number can be found directly using the formula Tₙ = n(n + 1)/2. The (n + 1)th triangular number can be written as Tₙ₊₁ = Tₙ + (n + 1), where n ∈ ℕ."
+ },
+ {
+  "id": "maths-2020-hl-p1-q7-c",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q7-c",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q7(c)",
+  "questionText": "Some numbers are both triangular and square, for example 36. Leonhard Euler (1778) discovered the following formula for these numbers: Nₖ = (((3 + 2√2)^k − (3 − 2√2)^k)/(4√2))², where Nₖ is the kth number that is both triangular and square. Use Euler’s formula to find N₃, the third number that is both triangular and square.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q7-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 1225",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-c-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-c-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-c-solution-4",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer with no work shown",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6."
+ },
+ {
+  "id": "maths-2020-hl-p1-q7-d",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q7-d",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q7(d)",
+  "questionText": "Prove using induction that, for all n ∈ ℕ, the sum of the first n square numbers can be found using the formula: 1² + 2² + 3² + 4² + ⋯ + n² = n(n + 1)(2n + 1)/6.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — P(1): 1 = 1(2)(3)/6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — P(k): 1 + 4 + 9 + ⋯ + k² = k(k + 1)(2k + 1)/6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — P(k + 1): 1 + 4 + 9 + ⋯ + k² + (k + 1)² = (k + 1)(k + 2)(2k + 3)/6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — LHS = k(k + 1)(2k + 1)/6 + (k + 1)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — LHS = (k + 1)[k(2k + 1) + 6(k + 1)]/6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — LHS = (k + 1)[2k² + 7k + 6]/6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — Thus the proposition is true for n = k + 1 provided it is true for n = k but it is true for n = 1 and therefore true for all positive integers.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Step P(1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Step P(k + 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Uses Step P(k) to prove Step P(k + 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-11",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Concluding statement missing",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q7-d-solution-12",
+    "kind": "point",
+    "verbatim": "Note — Accept Step P(1), Step P(k), Step P(k + 1) in any order",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-hl-p1-q8-a-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p1-q8-a-i",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q8(a)(i)",
+  "questionText": "The point R(x, y) can be written as (a cos θ, b sin θ), where a, b ∈ ℝ. Find the value of a and the value of b.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — cos θ = x/5 sin θ = y/5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 5 cos θ = x 5 sin θ = y",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — (x, y) = (5 cos θ, 5 sin θ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — ∴ a = 5, b = 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — cos θ = x/5 or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — a or b found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. Let θ be the angle between [OR] and the positive x-axis, where 0 ≤ θ ≤ π/2."
+ },
+ {
+  "id": "maths-2020-hl-p1-q8-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p1-q8-a-ii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q8(a)(ii)",
+  "questionText": "Show that A(θ), the area of the rectangle, measured in square units, can be written as A(θ) = 50 sin 2θ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A(θ) = (10 cos θ) × (10 sin θ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — A(θ) = 100 cos θ sin θ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 50 × 2 cos θ sin θ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 50(sin 2θ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — xy",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (10 cos θ) × (10 sin θ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 100 cos θ sin θ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. Let θ be the angle between [OR] and the positive x-axis, where 0 ≤ θ ≤ π/2."
+ },
+ {
+  "id": "maths-2020-hl-p1-q8-a-iii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-a-iii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q8(a)(iii)",
+  "questionText": "Use calculus to show that the rectangle with maximum area is a square.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A′(θ) = 50 cos 2θ × 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — A′(θ) = 100 cos 2θ = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — cos 2θ = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 2θ = π/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — θ = π/4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — 2x = 2(5 cos(π/4)) = 5√2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — 2y = 2(5 sin(π/4)) = 5√2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution — ⟹ Square",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — a′(θ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-10",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — States dy/dx = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-11",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-12",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Value of θ at maximum found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-13",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Value of x or y at maximum fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iii-solution-14",
+    "kind": "point",
+    "verbatim": "No Credit — No differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. Let θ be the angle between [OR] and the positive x-axis, where 0 ≤ θ ≤ π/2. A(θ), the area of the rectangle, measured in square units, can be written as A(θ) = 50 sin 2θ."
+ },
+ {
+  "id": "maths-2020-hl-p1-q8-a-iv",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-a-iv",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q8(a)(iv)",
+  "questionText": "Find this maximum area.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q8-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Max area = 5√2 × 5√2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 50 Square units",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iv-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — Max area = 50(sin 2θ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iv-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — xy",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iv-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — length × width",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iv-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 50(sin 2θ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-a-iv-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Area formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. Let θ be the angle between [OR] and the positive x-axis, where 0 ≤ θ ≤ π/2. A(θ), the area of the rectangle, measured in square units, can be written as A(θ) = 50 sin 2θ. Use calculus to show that the rectangle with maximum area is a square."
+ },
+ {
+  "id": "maths-2020-hl-p1-q8-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-b",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q8(b)",
+  "questionText": "A person who is 2 m tall is walking towards a streetlight of height 5 m at a speed of 1·5 m/s. Find the rate, in m/s, at which the length of the person’s shadow (x), cast by the streetlight, is changing.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — dx/dt = dx/dl ∙ dl/dt",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 2/5 = x/(l + x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 2l + 2x = 5x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x = (2/3)l",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — dx/dl = 2/3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — dx/dt = 2/3 × 3/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — dx/dt = 1 m/sec",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — dx/dt or dx/dl or dl/dt given",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Reference to similar triangles",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-10",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 2/5 or 5/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-11",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — dx/dt = dx/dl ∙ dl/dt or equivalent with one relevant substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-12",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — x = (2/3)l",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q8-b-solution-13",
+    "kind": "point",
+    "verbatim": "High Partial Credit — dx/dl and dl/dt found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2020-hl-p1-q9-a-i",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q9-a-i",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q9(a)(i)",
+  "questionText": "Find the number of bacteria in the colony after 4·5 hours. Give your answer correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — N(4·5) = 450e^(0·065(4·5))",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 602·89",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 603",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some substitution into function",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 450e^(0·065(4·5))",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t."
+ },
+ {
+  "id": "maths-2020-hl-p1-q9-a-ii",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q9-a-ii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q9(a)(ii)",
+  "questionText": "Find the time, in hours, that it takes the colony to grow to 790 bacteria. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q9-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — N(t)/450 = e^(0·065t)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Convert to log equation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ln(N(t)/450) = 0·065t",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — t = (ln(790) − ln 450)/0·065",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — t = 8·7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some substitution into function",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Full substitution and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-a-ii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Equation in t ( i.e. logs handled correctly)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t."
+ },
+ {
+  "id": "maths-2020-hl-p1-q9-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q9-b",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q9(b)",
+  "questionText": "Using the function N(t) = 450e^(0·065t), find the average number of bacteria in the colony during the period from t = 3 to t = 12. Give your answer correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 743·2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Average no. = 743",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Integration indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-b-solution-4",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Integration correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Substitutes limits into integral and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-b-solution-6",
+    "kind": "point",
+    "verbatim": "Note — Must have integration to gain any credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t."
+ },
+ {
+  "id": "maths-2020-hl-p1-q9-c",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q9-c",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q9(c)",
+  "questionText": "Find the rate at which N(t) = 450e^(0·065t) is changing when t = 12. Give your answer correct to one decimal place. Interpret this value in the context of the question.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — N′(t) = 450e^(0·065t) × 0·065",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — N′(12) = 29·25e^(0·065(12))",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 63·8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — At hour 12 the population is growing at a rate of 64 bacteria per hour",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-c-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — or At hour 12 the population is growing at a rate of 63·8 bacteria per hour",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — N′(t) stated or indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-c-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Derivative fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-c-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — N′(12) = 63·8 and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t."
+ },
+ {
+  "id": "maths-2020-hl-p1-q9-d",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q9-d",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q9(d)",
+  "questionText": "After k hours, the rate of increase of N(t) is greater than 90 bacteria per hour. Find the least value of k, where k ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — N′(t) = 29·25e^(0·065k) > 90",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — e^(0·065k) > 90/29·25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — k > 17·29",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-d-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — k = 18",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-d-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 29·25e^(0·065k) > 90",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-d-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Equation in k ( i.e. taking logs handled correctly)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-d-solution-7",
+    "kind": "point",
+    "verbatim": "No Credit — No differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-d-solution-8",
+    "kind": "point",
+    "verbatim": "Note — if k > 17·29 ⇒ k = 17 Award Full credit (–1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t."
+ },
+ {
+  "id": "maths-2020-hl-p1-q9-e",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q9-e",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2020 HL Paper 1 Q9(e)",
+  "questionText": "The number of bacteria in the early stages of a different colony of bacteria can be approximated using the function: P(t) = 220e^(0·17t), where P(t) is the number of bacteria and t is measured in hours. Assume that both colonies start growing at the same time. Find the time, to the nearest hour, at which the number of bacteria in both colonies will be equal.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2020-hl-p1-q9-e-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 450e^(0·065t) = 220e^(0·17t)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-e-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 450/220 = e^(0·105t)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-e-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ln(450/220) = 0·105t",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-e-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — t = 6·82",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-e-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — t = 7 hours",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-e-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 450e^(0·065t) = 220e^(0·17t)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2020-hl-p1-q9-e-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Equation in t ( i.e. taking logs handled correctly)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2020 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t."
  }
 ]

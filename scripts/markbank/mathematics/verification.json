@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1582,
-  "reviewedTasks": 1582,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1618,
+  "reviewedTasks": 1618,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 323,
+  "targetedRegressionTests": 327,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -1043,5 +1043,26 @@
     "preservation": "alias-aware additive form: frozen identity = live original IDs + Mathematics alias keys at that level; frozen hashes byte-identical",
     "runtimeCards": 1582,
     "validation": "Deck generation (1,582 built, 1 withdrawn, 0 rejects), Atlas --check, audit --check-reviewed, ten regression files (323/323), typecheck, markBankEnglish and markBankStore (56/56), diff whitespace check passed."
+  },
+  "higher2020p1": {
+    "paper": "2020 Higher Level Paper 1",
+    "paperFileid": "LC003ALP100EV.pdf",
+    "schemeFileid": "LC003ALP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "independentlyReviewedTasks": 36,
+    "existingRuntimeCardsReviewed": 0,
+    "newPaper": true,
+    "addedRuntimeCards": 36,
+    "glyphMapAdditions": "55 entries derived from glyph ids by derive_glyphs.py over the 2019 and 2020 Higher and Ordinary scheme PDFs; additions only, no existing entry changed",
+    "schemeMarkdownAdded": "examiner-reports/maths/schemes/2020-hl.md (pure extraction by the same page-text + block-order method)",
+    "historicalRejectsRemaining": 0,
+    "targetedRegressionTests": 327,
+    "previousRuntimeIdsRetained": 1582,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 28,
+    "schemePagesInspected": 24,
+    "coverageBaseline": "1195/3474 asks covered, 0 orphans, 0 excluded, 2279 open",
+    "validation": "Deck generation (1,618 built, 0 dropped), Atlas generation and --check (395 placements), audit --check-reviewed, scheme quote check of all 36 cards against the glyph-repaired scheme, ten regression files (327/327), typecheck and diff whitespace check passed."
   }
 }

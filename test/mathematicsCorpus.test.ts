@@ -41,6 +41,7 @@ import higher2021p1 from '../scripts/markbank/mathematics/reviews/2021-higher-p1
 import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2.json';
 import ordinary2021p1 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p1.json';
 import ordinary2021p2 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p2.json';
+import higher2020p1 from '../scripts/markbank/mathematics/reviews/2020-higher-p1.json';
 import glyphMap from '../scripts/markbank/authoring/glyphmap.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
@@ -959,5 +960,57 @@ describe('2021 Ordinary Mathematics Paper 2 repairs', () => {
     const verbatims = card('3-a').rows.map(row => row.verbatim);
     expect(verbatims).toContain('Method 1, Low Partial Credit — Slope formula with some substitution');
     expect(verbatims).toContain('Method 2, High Partial Credit — m and c found');
+  });
+});
+
+// 2020 and 2019 Higher/Ordinary papers: new papers reviewed from 2026-10-12. Every question was
+// required (300 marks per paper), so every published scale unit is a task. The 2020 examinations
+// were cancelled for Calculated Grades, but the SEC published both papers and their schemes.
+describe.each([
+  { year: 2020, level: 'higher' as const, number: 1, count: 36, review: higher2020p1 },
+])('$year $level Mathematics Paper $number new-paper source review', ({ year, level, number, count, review: census }) => {
+  const deck = level === 'higher' ? HIGHER : ORDINARY;
+  const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
+
+  it('ships every published scale unit and all 300 marks', () => {
+    expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
+    expect(cards).toHaveLength(count);
+    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(300);
+    for (const [question, marks] of Object.entries(census.printedQuestionMarks)) {
+      expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
+        .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
+    }
+  });
+
+  it('files every task in both taxonomies with repaired, labelled scheme lines', () => {
+    const specification = resolveCurriculumSpecification('mathematics', year)!;
+    for (const task of census.cards) {
+      const card = cards.find(candidate => candidate.id === task.id)!;
+      expect(card.stem ?? '', card.id).toBe((task as { stem?: string }).stem ?? '');
+      expect(card.questionText, card.id).toBe(task.questionText);
+      expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
+      expect(card.sourceMaterial?.sourceFileid, card.id).toBe(census.paperFileid);
+      expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
+      expect(card.topicId, card.id).toBe(task.topicId);
+      expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
+      const question = task.printedParts[0].match(/^Q(\d+)/)![1];
+      expect(examTopicIdsForQuestion('mathematics', level, year, 'main', question, `p${number}`, 'ev', census.paperFileid), card.id)
+        .toEqual(expect.arrayContaining(task.examTopicIds));
+      // The 2019–2020 schemes encode their equation font in Syriac, NKo and Tamil code points.
+      expect(JSON.stringify(card), card.id).not.toMatch(/[\u0700-\u08FF\u0A80-\u0DFF]/);
+      for (const row of card.rows) {
+        expect(row.verbatim, card.id).toMatch(/^[A-Z][A-Za-z0-9 ,()−-]+ — \S/);
+        expect(row.verbatim, card.id).not.toMatch(/Higher Level|Ordinary Level|Marking Scheme/);
+      }
+    }
+  });
+});
+
+describe('2019–2020 Mathematics scheme glyph repair', () => {
+  it('maps the Cambria Math italic run the 2020 schemes encode in Syriac code points', () => {
+    const map = glyphMap as Record<string, string>;
+    expect(map['\u0754']).toBe('\u{1D465}');
+    expect(map['\u074c']).toBe('\u{1D45D}');
+    expect(map['\u07e0']).toBe('\u{1D703}');
   });
 });
