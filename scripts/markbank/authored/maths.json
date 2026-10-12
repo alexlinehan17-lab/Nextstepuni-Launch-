@@ -77931,5 +77931,2087 @@
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "stem": "Norman windows consist of a rectangle topped by a semi-circle as shown above. Let the height of the rectangle be y metres and the radius of the semi-circle be x metres as shown. The perimeter of the window is P. Part (c)(i): The Norman window shown below has a perimeter of 12 metres and y = (12 − (2 + π)x)/2. Show that the function a(x) = (24x − (π + 4)x²)/2 represents the area of the window, in terms of x and π."
+ },
+ {
+  "id": "maths-2019-hl-p2-q1-a-i",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q1-a-i",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q1(a)(i)",
+  "questionText": "Two students are selected at random from the class. What is the probability that the two students selected will be a boy and a girl in any order?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q1-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 12/20 × 8/19 + 8/20 × 12/19 = 192/380 or 48/95",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 1 − [12/20 × 11/19 + 8/20 × 7/19] = 1 − 188/380",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 probability given e.g. 12/20 or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 combination indicated e.g. (12 1) or (8 1) or (20 2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 12/20 × 8/19 or 8/20 × 12/19 or equivalent and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 12/20 × 8/19 or 8/20 × 12/19 or equivalent and continues",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A class consists of 12 boys and 8 girls."
+ },
+ {
+  "id": "maths-2019-hl-p2-q1-a-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q1-a-ii",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q1(a)(ii)",
+  "questionText": "Four students are selected, one at a time, at random from the class. What is the probability that the first three students selected will be boys and the fourth will be a girl?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q1-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 12/20 × 11/19 × 10/18 × 8/17 = 10560/116280 or 88/969",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 probability given",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 combination indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 3 or 4 correct probabilities indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3 correct probabilities with multiplication completed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 4 probabilities with correct operator",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A class consists of 12 boys and 8 girls."
+ },
+ {
+  "id": "maths-2019-hl-p2-q1-b",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-q1-b",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q1(b)",
+  "questionText": "An examination paper is made up of two sections, Section A consisting of 7 questions and Section B consisting of 8 questions. The paper contains the following instruction: “From section A you must answer question 1 and any three other questions. From Section B you must also answer any four questions.” Find how many different combinations of questions may be answered if a candidate follows this instruction.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (6 3) × (8 4) = 1400",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — (1 1) × (6 3) × (8 4) = 1400",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (6 3) or (8 4) or (1 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q1-b-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (6 3) × (8 4) and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-hl-p2-q2-a",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q2-a",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q2(a)",
+  "questionText": "The line p makes an intercept on the x-axis at (a, 0) and on the y-axis at (0, b), where a, b ≠ 0. Show that the equation of p can be written as x/a + y/b = 1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — m = (b − 0)/(0 − a) = −b/a",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — y − 0 = −b/a (x − a)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ay = −bx + ab",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — bx + ay = ab",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — Now divide across by ab",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — x/a + y/b = 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-7",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — Slope formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-8",
+    "kind": "point",
+    "verbatim": "Method 1, High Partial Credit — Equation of line formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-9",
+    "kind": "point",
+    "verbatim": "Method 2, High Partial Credit — m expressed in terms of a and b, and c in terms of b",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-10",
+    "kind": "point",
+    "verbatim": "Method 3, Low Partial Credit — (a, 0) or ((0, b) correctly substituted e.g. a/a + 0/b",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-a-solution-11",
+    "kind": "point",
+    "verbatim": "Method 3, High Partial Credit — (a, 0) and (0, b) correctly substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-hl-p2-q2-b-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q2-b-i",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q2(b)(i)",
+  "questionText": "Write the equation of the line l in terms of m.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q2-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — y − 0 = m(x − 6) or y = m(x − 6)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — y = mx − 6m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Equation of line formula with some relevant substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The line l has a slope m, and contains the point A(6, 0)."
+ },
+ {
+  "id": "maths-2019-hl-p2-q2-b-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q2-b-ii",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q2(b)(ii)",
+  "questionText": "The line l cuts the line k: 4x + 3y = 25 at P. Find the co-ordinates of P in terms of m. Give each co-ordinate as a fraction in its simplest form.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q2-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — => 4x + 3m(x − 6) = 25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — =>x = (25 + 18m)/(3m + 4)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = m/(3m + 4)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — Indication of use of simultaneous equations",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Method 1, Mid Partial Credit — One relevant substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Method 1, High Partial Credit — x or y value found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q2-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Method 2, Mid Partial Credit — One successful elimination in equations",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The line l has a slope m, and contains the point A(6, 0). Part (b)(i): Write the equation of the line l in terms of m."
+ },
+ {
+  "id": "maths-2019-hl-p2-q3-a",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q3-a",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q3(a)",
+  "questionText": "The point (−2, k) is on the circle (x − 2)² + (y − 3)² = 65. Find the two possible values of k, where k ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (−2 − 2)² + (k − 3)² = 65",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (k − 3)² = 49",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — k − 3 = ±√49 = ±7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — k = 10 and k = −4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — k² − 6k − 40 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Centre or radius",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Equation in k²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-hl-p2-q3-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q3-b",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q3(b)",
+  "questionText": "The circle s is in the first quadrant. It touches both the x-axis and the y-axis. The line t: 3x − 4y + 6 = 0 is a tangent to s as shown. Find the equation of s.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Both axes are tangents to the circle.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — centre (-g,-g) and radius is g",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — g + 6 = ±5g",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — Centre (1, 1) and radius 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — Equation: (x − 1)² + (y − 1)² = 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 2g² − g − 3 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-7",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — centre (-g,-g) or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-8",
+    "kind": "point",
+    "verbatim": "Method 1, Mid Partial Credit — Substitution into perpendicular distance formula completed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-9",
+    "kind": "point",
+    "verbatim": "Method 1, Mid Partial Credit — Perpendicular distance of centre to tangent equals radius with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-10",
+    "kind": "point",
+    "verbatim": "Method 1, High Partial Credit — equation in g or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-11",
+    "kind": "point",
+    "verbatim": "Method 2, Low Partial Credit — c = g² or f²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-12",
+    "kind": "point",
+    "verbatim": "Method 2, Low Partial Credit — Effort to express x in terms of y or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-13",
+    "kind": "point",
+    "verbatim": "Method 2, Mid Partial Credit — Substitution into circle equation completed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q3-b-solution-14",
+    "kind": "point",
+    "verbatim": "Method 2, High Partial Credit — Quadratic equation in g or f",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-hl-p2-q4-a",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q4-a",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q4(a)",
+  "questionText": "Show that cos 2θ = 1 − 2 sin² θ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — cos(A + B) = cos A cos B − sin A sin B",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — cos 2A = cos²A − sin²A",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — cos 2A = (1 − sin²A) − sin²A",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — cos 2A = 1 − 2sin²A",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — (cos A + i sin A)² = cos 2A + i sin 2A",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-a-solution-6",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — cos(A + B) formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-a-solution-7",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — cos²A + sin²A = 1 indicated or clearly implied",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-a-solution-8",
+    "kind": "point",
+    "verbatim": "Method 1, High Partial Credit — cos 2A = cos²A − sin²A",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-a-solution-9",
+    "kind": "point",
+    "verbatim": "Method 3, Low Partial Credit — (cos A + i sin A)² expanded",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-hl-p2-q4-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q4-b",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q4(b)",
+  "questionText": "Find the cosine of the acute angle between two diagonals of a cube.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Let length of side be x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Diagonal of any face = √(x² + x²) = √2x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — cos A = 1/3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Length of any diagonal formulated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-b-solution-5",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Internal diagonal found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-b-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Fully substituted cosine rule",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-b-solution-7",
+    "kind": "point",
+    "verbatim": "Note — Accept and mark work where a consistent numerical value is assigned to one side of the cube.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q4-b-solution-8",
+    "kind": "point",
+    "verbatim": "Method 2, High Partial Credit — sin A/2 fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-hl-p2-q5-a",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q5-a",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q5(a)",
+  "questionText": "Construct and label the orthocentre of the triangle ABC in the diagram below. Show any construction lines or arcs clearly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Standard Orthocentre Construction",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some correct element of construction",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some evidence of understanding of term orthocentre",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-a-solution-4",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — One correct altitude",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Two correct altitudes but not intersecting.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-hl-p2-q5-b",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q5-b",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q5(b)",
+  "questionText": "In the diagram below O is the centre of circle s. [AB] is a diameter of s. BE is a tangent to s at point B. [CD] is a chord of circle s. |CD| = ½|AB| and CD is parallel to AB. Find, with justification, |∠BEA|.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |DC| = |OB| Given",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ |DC| = Radius",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ ∆ODC is equilateral",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ ∠AOD = 60 Alternate",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — |∠ABE| = 90° as BE tangent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — |∠BEA| = 180 − 90 − 60 = 30°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-b-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 relevant step listed or shown on diagram",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-b-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 3 relevant steps listed or shown on diagram",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q5-b-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — All valid steps included but with no justification",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-hl-p2-q6-a",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q6-a",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q6(a)",
+  "questionText": "Two independent events F and S are represented in the Venn diagram shown below. P(F \\ S) = 1/4, P(F ∩ S) = 1/5, P(S \\ F) = x, and P(F ∪ S)′ = y, where x, y ≠ 0. Find the value of x and the value of y.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — P(F ∩ S) = P(F) × P(S) since the events are independent.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — So P(S\\F) = 4/9 − 1/5 = 11/45 = x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — y = 1 − 11/45 − 1/5 − 1/4 = 11/36",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — P(F ∩ S) = P(F) × P(S) or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — P(F) = 1/4 + 1/5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — P(S) = x + 1/5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1/4 + 1/5 + x + y = 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — x found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-hl-p2-q6-b",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q6-b",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2019 HL Paper 2 Q6(b)",
+  "questionText": "In a club there are German, Irish and Spanish children only. There are 10 Spanish children. There are twice as many Irish children as German children. They are all in a group waiting to get on a swing. One child will be selected at random to go first and will not re-join the group. Then a second child will be selected at random to go next. The probability that the first child selected will be German and that the second child selected will not be German is 1/6. Find how many children are in the club.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — If n Germans then 2n Irish and 3n+10 children in total",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — n/(3n + 10) × (2n + 10)/(3n + 9) = 1/6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 3n² + 3n − 90 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — (n + 6)(n − 5) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — n = 5 German children.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — There are 10 Irish (and 10 Spanish) so 25 children in the club.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-7",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — 2n",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-8",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — 3n+10",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-9",
+    "kind": "point",
+    "verbatim": "Method 1, Low Partial Credit — One correct probability e.g. n/(3n+10)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-10",
+    "kind": "point",
+    "verbatim": "Method 1, High Partial Credit — n/(3n + 10) × (2n + 10)/(3n + 9) = 1/6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-11",
+    "kind": "point",
+    "verbatim": "Method 2, Low Partial Credit — Some correct element in approach",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-12",
+    "kind": "point",
+    "verbatim": "Method 2, Mid Partial Credit — Tests more than one value",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-13",
+    "kind": "point",
+    "verbatim": "Method 2, High Partial Credit — Correct number of each nationality but not verified that probability is 1/6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q6-b-solution-14",
+    "kind": "point",
+    "verbatim": "Method 2, High Partial Credit — Correct answer (25) with no supporting work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2019-hl-p2-q7-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-a-i",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q7(a)(i)",
+  "questionText": "Find |AD|. Give your answer in the form a√b cm, where a, b ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |AD|² = 90² − 60²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — |AD| = √(8100 − 3600) = √4500 = 30√5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — |OD| = 60",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Pythagoras formulated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Effort to find angle other than ∠ODA",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — √(8100 − 3600) or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB] ⊥ [AC]."
+ },
+ {
+  "id": "maths-2019-hl-p2-q7-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q7-a-ii",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q7(a)(ii)",
+  "questionText": "Find |∠DOA|. Give your answer in radians, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — cos(∠DOA) = 60/90",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — cos⁻¹(6/9) = 0·84",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — |∠DOA| = 0·84139 = 0·84",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant trigonometric ratio formulated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Relevant trigonometric ratio fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB] ⊥ [AC]."
+ },
+ {
+  "id": "maths-2019-hl-p2-q7-a-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-a-iii",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q7(a)(iii)",
+  "questionText": "Find the area of the segment ABC. Give your answer in m² correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q7-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Area of sector: 1/2 r²θ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 1/2(0·9)² × 2(0·84) = 0·6804 m²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Area of segment = 0·6804 – 0·40 = 0·28",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Formula for area of sector with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Formula for area of Δ ACO with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — One relevant area fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-iii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Both relevant areas fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-iii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Mishandling conversion of units",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB] ⊥ [AC]."
+ },
+ {
+  "id": "maths-2019-hl-p2-q7-a-iv",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-a-iv",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q7(a)(iv)",
+  "questionText": "Find the volume of the trough. Give your answer in m³, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q7-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Volume = 0·28 × 2·5 = 0·7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Formula for volume of trough with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-iv-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Indicates some relevant use of 2·5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-a-iv-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB] ⊥ [AC]."
+ },
+ {
+  "id": "maths-2019-hl-p2-q7-b-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-b-i",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q7(b)(i)",
+  "questionText": "The upper half of the timer is full of sand. Find the volume of sand in the upper half of the timer. Give your answer in cm³ correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q7-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 4·0906 + 17·1805 + 2·4544",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 23·73",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 volume formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 2 volumes fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3 volumes fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A sand timer for games is shown in the diagram. Each half of the timer consists of a hemisphere, a cylinder of height 3·5 cm and a cone of height 1·5 cm. All of the parts have a radius of 1·25 cm."
+ },
+ {
+  "id": "maths-2019-hl-p2-q7-b-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q7-b-ii",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q7(b)(ii)",
+  "questionText": "Sand flows from the top half of the timer into the bottom part. As it flows the top surfaces in both parts remain level. At a certain time, 98% of the sand has flowed into the bottom half of the timer. Find h, the height of the remaining sand (in the conical part of the top of the timer). Give your answer in cm, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q7-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 23·73 × 0 02 = 0·4746 cm³",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — r/ℎ = 1·25/1·5 = 5/6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ = 0·87",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — volume × 0·98 or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — volume multiplied by 2%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — effort at r : h",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q7-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Volume formula expressed in one variable",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A sand timer for games is shown in the diagram. Each half of the timer consists of a hemisphere, a cylinder of height 3·5 cm and a cone of height 1·5 cm. All of the parts have a radius of 1·25 cm. The upper half of the timer is full of sand."
+ },
+ {
+  "id": "maths-2019-hl-p2-q8-a-i",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q8-a-i",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q8(a)(i)",
+  "questionText": "The ages of the 800 cars were recorded. 174 of them were new (less than 1 year old). Find the 95% confidence interval for the proportion of new cars on this road. Give your answer correct to 4 significant figures.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 0·188913 < p < 0·246087",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 0·1889 < p < 0·2461",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 18·89% < p < 24·61%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 0·2175 or 174/800",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — CI formulated with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — CI fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded."
+ },
+ {
+  "id": "maths-2019-hl-p2-q8-a-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q8-a-ii",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q8(a)(ii)",
+  "questionText": "The data on the speeds of these 800 vehicles is normally distributed with an average speed of 87·3 km per hour and a standard deviation of 12 km per hour. What proportion of cars on this stretch of road would you expect to find travelling at over 95 km per hour?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (95 − 87·3)/12 = 0·64167 (z score)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — => p(Z ≤ 0·64167) = 0·7389",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — P(z ≥ 0·64) = 1 − 0·7389",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·2611 or 26·11%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — μ or σ identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — z found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — P(z < 0·64) and stops or continues incorrectly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded."
+ },
+ {
+  "id": "maths-2019-hl-p2-q8-a-iii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q8-a-iii",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q8(a)(iii)",
+  "questionText": "The driver of a car was told that 70% of all the speeds recorded were higher than his speed. Find the speed at which this driver was recorded. Give your answer correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q8-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — z = −0·52 = (x − 87·3)/12",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — => x = 81·06 km/h",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x = 81 km/h",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (x − 87·3)/12",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — z ∈ [0·52, 0·53] or z ∈ [−0·52, −0·53] and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-a-iii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula for x fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded. The data on the speeds of these 800 vehicles is normally distributed with an average speed of 87·3 km per hour and a standard deviation of 12 km per hour."
+ },
+ {
+  "id": "maths-2019-hl-p2-q8-b-i",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q8-b-i",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q8(b)(i)",
+  "questionText": "A road safety programme was carried out in the area using posters, signs and radio slots. After the programme the motoring magazine recorded the speeds of 100 passing cars. The magazine carried out a hypothesis test, at the 5% level of significance, to determine whether the average speed had changed. The p-value of the test was 0·024. What can the magazine conclude based on this p-value? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q8-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Average speed has changed",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — p-value < 0·05",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Answer or reason correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded."
+ },
+ {
+  "id": "maths-2019-hl-p2-q8-b-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q8-b-ii",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q8(b)(ii)",
+  "questionText": "The magazine found that the average speed of this sample was lower than the previously established average speed of 87·3 km per hour. Find the average speed of the cars in this sample, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q8-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 0·024 = 2(1 − P(z ≤ |T|))",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — => P(z ≤ |T|) = 0·988",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Therefore z = 2·26 or − 2·26.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — Because the mean has reduced z = −2·26",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — => x = 84·588 km/h",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — => x = 84·6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 0·024 = 2(0·012)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-b-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Value(s) of z found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q8-b-ii-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula for x fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded. The data on the speeds of these 800 vehicles is normally distributed with an average speed of 87·3 km per hour and a standard deviation of 12 km per hour. Part (b)(i): A road safety programme was carried out in the area using posters, signs and radio slots. After the programme the motoring magazine recorded the speeds of 100 passing cars. The magazine carried out a hypothesis test, at the 5% level of significance, to determine whether the average speed had changed. The p-value of the test was 0·024."
+ },
+ {
+  "id": "maths-2019-hl-p2-q9-a",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q9-a",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q9(a)",
+  "questionText": "Find |SG|. Give your answer in metres, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q9-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |SG|² = 30² + 58² − 2(30)(58)(cos 68)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 2960·369",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — |SG| = 54·409 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — |SG| = 54·4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into correct cosine formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-a-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P."
+ },
+ {
+  "id": "maths-2019-hl-p2-q9-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q9-b",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q9(b)",
+  "questionText": "Find |∠HSG|. Give your answer in degrees, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 54·4/sin 68 = 30/sin ∠HSG",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — sin ∠HSG = 0·51131",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — |∠HSG| = 30·75",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into relevant formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P."
+ },
+ {
+  "id": "maths-2019-hl-p2-q9-c",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q9-c",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q9(c)",
+  "questionText": "Find the area of ∆SGH. Give your answer in m², correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Area ∆GSH = 1/2(30)(58) sin 68 = 806·65",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-c-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some substitution into area formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-c-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P."
+ },
+ {
+  "id": "maths-2019-hl-p2-q9-d-i",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q9-d-i",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q9(d)(i)",
+  "questionText": "Find the area of ∆HSP, in terms of r, where r is the radius of the helicopter pad.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q9-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1/2 (58)(r) or 29r",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Right angle indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-d-i-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Relevant triangle indicated on diagram",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-d-i-solution-4",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Area of triangle formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P."
+ },
+ {
+  "id": "maths-2019-hl-p2-q9-d-ii",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q9-d-ii",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q9(d)(ii)",
+  "questionText": "Show that the area of ∆SGH, in terms of r, can be written as 71·2r m².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q9-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 15r + 27·2r + 29r = 71·2r",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant use of previous answer in this part",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-d-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Indication of 3 relevant triangle areas to be added",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-d-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Area of 1 additional triangle (in terms of r)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-d-ii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Addition of 2 areas ( each written in terms of r)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P."
+ },
+ {
+  "id": "maths-2019-hl-p2-q9-d-iii",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q9-d-iii",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q9(d)(iii)",
+  "questionText": "Find the value of r. Give your answer in metres, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q9-d-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 71·2r = 806·62",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-d-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 11·3289 = 11·3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-d-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Both relevant answers presented",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-d-iii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Areas equated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P."
+ },
+ {
+  "id": "maths-2019-hl-p2-q9-e",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q9-e",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2019 HL Paper 2 Q9(e)",
+  "questionText": "[ST] is a vertical pole at the point S. The angle of elevation of the top of the pole from the point P is 14°. Find the height of the pole. Give your answer, in metres, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2019-hl-p2-q9-e-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — tan 14 = |TS|/|PS|",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-e-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — => |PS| = 42·619",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-e-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — |TS| = 10·626 = 10·6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-e-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — |PS| = 42·73",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-e-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — |TS| = 10·653 = 10·7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-e-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2019-hl-p2-q9-e-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2019 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P."
  }
 ]

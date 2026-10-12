@@ -460,7 +460,7 @@ const reviewedMathematicsAdditions = new Set([
 // Each paper's new tasks are pinned by their own identity hash below.
 const reviewedMathematicsPaperPrefixes = ['maths-2026-hl-p1-', 'maths-2026-hl-p2-', 'maths-2026-ol-p1-', 'maths-2026-ol-p2-',
   // 2020 and 2019 Higher/Ordinary papers had no cards before their 2026-10-12 review.
-  'maths-2020-hl-p1-', 'maths-2020-hl-p2-', 'maths-2020-ol-p1-', 'maths-2020-ol-p2-', 'maths-2019-hl-p1-'];
+  'maths-2020-hl-p1-', 'maths-2020-hl-p2-', 'maths-2020-ol-p1-', 'maths-2020-ol-p2-', 'maths-2019-hl-p1-', 'maths-2019-hl-p2-'];
 const baselineCards = <T extends { id: string }>(cards: readonly T[]) =>
   cards.filter(card => !reviewedMathematicsAdditions.has(card.id)
     && !reviewedMathematicsPaperPrefixes.some(prefix => card.id.startsWith(prefix)));
@@ -638,6 +638,13 @@ describe('Mark Bank card preservation', () => {
     expect(added).toHaveLength(35);
     expect(added.every(card => card.year === 2019 && card.paperFileid === 'LC003ALP100EV')).toBe(true);
     expect(identityHash(added)).toBe('b8e1e46032daeee00f90d6c30edf712e26bb1815d8245e859dab0455c47f6315');
+  });
+
+  it('retains all 2019 Higher Mathematics Paper 2 tasks as reviewed additions', () => {
+    const added = MATHS_HIGHER.filter(card => card.id.startsWith('maths-2019-hl-p2-'));
+    expect(added).toHaveLength(32);
+    expect(added.every(card => card.year === 2019 && card.paperFileid === 'LC003ALP200EV')).toBe(true);
+    expect(identityHash(added)).toBe('d1855fd15b677400e396221cb834052c45e8a05364a95953687c8e5fe167b952');
   });
 
   it('protects the complete current bank', () => {
