@@ -2245,5 +2245,215 @@
     "alt": "SEC 2022 Higher marking scheme notes on thermal mass with sketches of solar gain stored and released, a concrete floor and suitable materials.",
     "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2022-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q1-original.png",
+    "md5": "a527ae503ffd658fa029a77ed2ea58bc",
+    "alt": "Original SEC 2022 Ordinary Construction Studies Question 1: the printed question with a sketch of a sheeted front door in a cavity wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-original.png",
+    "md5": "7e9fd4ef02797dc6a6433a34d97d9f0d",
+    "alt": "Original SEC 2022 Ordinary Construction Studies Question 2: the printed question with a sketch of an uninsulated attic with a water tank.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-original.png",
+    "md5": "05e1d79d7ddcef41c3e03cc37ad26836",
+    "alt": "Original SEC 2022 Ordinary Construction Studies Question 3: the printed question with a sketch of a house and an underground rainwater tank.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-original.png",
+    "md5": "b4fa313c3ee8f1bf03152160dacdad82",
+    "alt": "Original SEC 2022 Ordinary Construction Studies Question 4: the printed question with a sketch of an open-plan kitchen and living room.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q5-original.png",
+    "md5": "f21de975c50249775892a055fd4cf9a4",
+    "alt": "Original SEC 2022 Ordinary Construction Studies Question 5: the printed question with a sketch of a closed-string wooden stairs.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-original.png",
+    "md5": "941ecd8ce7426720ddbf3915c6aa1567",
+    "alt": "Original SEC 2022 Ordinary Construction Studies Question 6: the printed question with a sketch of a worker using a jackhammer on a footpath.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-original.png",
+    "md5": "798adb33d4f90ff2ed6b16fcf4d81542",
+    "alt": "Original SEC 2022 Ordinary Construction Studies Question 7: the printed question with the draft plan of a rear garden with existing trees.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q8-original.png",
+    "md5": "ffc0e53030bb44dfe8c10d1a496b8a20",
+    "alt": "Original SEC 2022 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-original.png",
+    "md5": "5416e530ef8d7d41224fe5f6c1774f5b",
+    "alt": "Original SEC 2022 Ordinary Construction Studies Question 9: the printed question with a sketch of a rural house with a timber-clad front porch.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q1-scheme.png",
+    "md5": "19ec4c63c90ef3181451f136ed9e1adb",
+    "alt": "SEC model section through the cavity wall, lintels, doorframe and door with the cavity closer marked (b), and the specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q2-method": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-method.png",
+    "md5": "8e5178c839f23f4b39d34159d1d2a9c7",
+    "alt": "SEC 2022 Ordinary marking scheme notes on insulating at ceiling joist level, with sketches of laying roll insulation, and the insulation types and thickness.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q2-tank": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-tank.png",
+    "md5": "6919d35729c206461ae9a683cc312273",
+    "alt": "SEC 2022 Ordinary marking scheme notes on insulating the water tank and pipework, with sketches of an insulated tank and foam pipe lagging.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q2-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q2-advantages.png",
+    "md5": "d293f8d4f1d97e5ece85299c07ff16f9",
+    "alt": "SEC 2022 Ordinary marking scheme notes on the advantages of a highly insulated attic.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q3-collection": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-collection.png",
+    "md5": "229d262f8962c9edc1307fab75cefaa2",
+    "alt": "SEC model diagram of the gutter, downpipe and underground pipe to the rainwater tank, with the typical details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q3-supply": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-supply.png",
+    "md5": "cd7589a9f13293970152eb7de1e9a2e4",
+    "alt": "SEC model diagram of the pump, filter and pipework from the underground tank to the attic tank and toilet cistern, with the typical details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q3-advantage": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q3-advantage.png",
+    "md5": "b107379433ff6aef693b4ca75ca992c5",
+    "alt": "SEC 2022 Ordinary marking scheme notes on an advantage of reusing rainwater.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q4-partition": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-partition.png",
+    "md5": "997009475dba3ef9d53bfcbdab1cff82",
+    "alt": "SEC model sketch of a stud partition with headplate, soleplate, studs, noggins and door lintel labelled, with the notes and sizes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q4-pros-cons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-pros-cons.png",
+    "md5": "f7e4e590d706ff743927d9537a4a6853",
+    "alt": "SEC 2022 Ordinary marking scheme table of the advantages and disadvantages of a timber stud partition.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q4-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q4-reasons.png",
+    "md5": "8dd1f4d8f4f3afc31f0c5a7b4a9cbc58",
+    "alt": "SEC 2022 Ordinary marking scheme notes on reasons for a living room separate from the kitchen.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q5-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q5-scheme.png",
+    "md5": "39e9895ee6c17661371b56d97c290ef3",
+    "alt": "SEC model section through the bottom three steps with the wedges marked (b), the specification list and the anti-creak details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q6-signs": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-signs.png",
+    "md5": "00bb9c59bae40ea81d7b2ed84c278c5e",
+    "alt": "SEC model PPE signs for ear protectors, safety boots, safety glasses, a dust mask and safety gloves, each with how it protects the worker.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q6-risks": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-risks.png",
+    "md5": "14a9b550f6347a9a076d075ef9853a78",
+    "alt": "SEC 2022 Ordinary marking scheme notes on risks to workers using power tools.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q6-public": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q6-public.png",
+    "md5": "6bc90933b0ac9e9f0fd64f0e5fb45c4f",
+    "alt": "SEC 2022 Ordinary marking scheme notes on protecting the public near footpath works, with sketches of barriers, cones and signs.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q7-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-reasons.png",
+    "md5": "34061a9fcde9d928314b72f2023b1c9c",
+    "alt": "SEC 2022 Ordinary marking scheme notes on why a garden should meet the family’s needs.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q7-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-layout.png",
+    "md5": "c412dea0f4fb419f92c0ff4903deb904",
+    "alt": "SEC model garden layouts showing the outdoor dining space, storage, flower beds and lawn, with the reasons for each location (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q7-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q7-advantages.png",
+    "md5": "60351aa911daa848bfa220bd617e435f",
+    "alt": "SEC 2022 Ordinary marking scheme notes on the advantages of trees and plants in a garden.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q8-terms.png",
+    "md5": "594891fdae0f4a3a633a5bdcb70934b0",
+    "alt": "SEC marking-scheme notes and sketches for all nine Question 8 terms, in scheme order: strip foundation, fascia board, airtight tape, wind turbine, septic tank, dovetail joint, wall tie, cordless jigsaw and underfloor heating.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q9-wood": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-wood.png",
+    "md5": "a24a525641b7223b424aa62a07a3d0ec",
+    "alt": "SEC 2022 Ordinary marking scheme notes on suitable woods for cladding and reasons, with a sketch of a timber-clad porch.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q9-light": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-light.png",
+    "md5": "404b2a9fdd21a6b134b02f0449353e82",
+    "alt": "SEC 2022 Ordinary marking scheme notes on letting more light into the porch, with sketches of a roof light and a glazed porch.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-OL-q9-porch": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-OL-q9-porch.png",
+    "md5": "43767e43ffb8f7a97ffad30a71e4287d",
+    "alt": "SEC 2022 Ordinary marking scheme notes on reasons for a front porch, with a sketch of a porch.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }

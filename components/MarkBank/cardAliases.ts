@@ -141,4 +141,14 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "cons-2023-ol-q8-None-bridle-joint": "cons-2023-ol-q8-None-concrete-mixer",
   "cons-2023-ol-q8-None-wood-pellet-stove": "cons-2023-ol-q8-None-concrete-mixer",
   "cons-2023-ol-q8-None-floor-screed": "cons-2023-ol-q8-None-concrete-mixer",
+  /* 2026-10-12. Construction Studies 2022 Ordinary: each printed choice is one card (choice is not a route); the
+   * pre-audit per-item cards are consolidated into cons-2022-ol-q8-None-strip-foundation and their progress goes to it. */
+  "cons-2022-ol-q8-None-fascia-board": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-airtight-tape": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-wind-turbine": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-septic-tank": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-dovetail-joint": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-wall-tie": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-cordless-jigsaw": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-underfloor-heating": "cons-2022-ol-q8-None-strip-foundation",
 };

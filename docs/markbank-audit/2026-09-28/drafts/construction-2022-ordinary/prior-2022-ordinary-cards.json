@@ -1,0 +1,1303 @@
+[
+  {
+    "id": "cons-2022-ol-q1-a",
+    "topicId": "cons-3-4",
+    "conceptId": "vertical-section-wall-lintel-and-doorframe",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q1(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall, concrete lintels, doorframe and door. On your drawing show the typical construction details from 400 mm below to a level 400 mm above the concrete lintels. Include four typical dimensions.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 12,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "Specification – typical detail",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "Specification – typical detail",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "19 mm external render",
+            "Concrete block outer leaf 100 mm",
+            "Full fill insulated cavity 200 mm",
+            "Concrete block inner leaf 100 mm",
+            "15 mm internal plaster",
+            "Concrete lintels",
+            "Wall tie",
+            "Stepped DPC",
+            "Airtight tape",
+            "Cavity closer",
+            "Thermally broken doorframe 150 mm × 80 mm",
+            "Insulated external door 90 mm N.B. Any alternative detailing which complies with current Building Regulations is acceptable"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q2-b",
+    "topicId": "cons-5-2",
+    "conceptId": "insulating-a-tank-and-pipework-in-an-attic",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q2(b)",
+    "questionText": "The water storage tank and pipework in the attic are also to be insulated. On a separate sketch show, using notes and freehand sketches, how the water tank and pipework could be insulated.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 9 + 1 x 9",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q2-b-r1",
+        "kind": "anyN",
+        "verbatim": "Water tank",
+        "marks": 9,
+        "openList": true,
+        "contextNote": "Water tank",
+        "group": {
+          "claimMax": 1,
+          "perOption": 9,
+          "options": [
+            "Attic insulation at roof level is not placed under the water tank to allow heat to rise and prevent the tank from freezing during cold weather",
+            "Insulation is cut to size and positioned at the sides and the top of the water tank"
+          ]
+        }
+      },
+      {
+        "id": "cons-2022-ol-q2-b-r2",
+        "kind": "anyN",
+        "verbatim": "Pipework",
+        "marks": 9,
+        "openList": true,
+        "contextNote": "Pipework",
+        "group": {
+          "claimMax": 1,
+          "perOption": 9,
+          "options": [
+            "Polyethylene foam tubes are placed around all pipework in the attic",
+            "Duct tape is used to join two foam tubes together where they meet",
+            "Reflective pipe lagging insulation can also be used to surround all pipework"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q2-c",
+    "topicId": "cons-6-2",
+    "conceptId": "advantages-of-insulating-an-attic",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q2(c)",
+    "questionText": "Discuss two advantages of highly insulating the attic space of a house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of highly insulating the attic space of a house.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Reduced heat loss",
+            "Reduced energy bills",
+            "Increased thermal comfort",
+            "Improves the building energy rating (BER)",
+            "Better for the environment Any alternative detailing or answer which complies with current Building Regulations is acceptable"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q3-a",
+    "topicId": "cons-5-4",
+    "conceptId": "an-underground-rainwater-storage-tank",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q3(a)",
+    "questionText": "Draw a large freehand sketch of the given house and underground storage tank. On your sketch show the pipework necessary to collect the rainwater from the roof and carry it to the underground tank.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 4",
+      "answer": 4,
+      "ofParts": 6,
+      "perPart": 4
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Typical details",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Typical details",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "125 mm eaves gutter",
+            "65 mm downpipe",
+            "100 mm underground pipe to storage tank",
+            "Debris filter",
+            "Underground water storage tank",
+            "Overflow pipe"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q3-b",
+    "topicId": "cons-5-6",
+    "conceptId": "pipework-for-flushing-with-rainwater",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q3(b)",
+    "questionText": "The stored rainwater is used for flushing toilets. On the sketch, show the pipework necessary to take rainwater from the underground tank to the storage tank in the attic. Show the pipework necessary to connect the toilet cistern to the storage tank in the attic. Include all necessary pumps and valves.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 4",
+      "answer": 6,
+      "ofParts": 9,
+      "perPart": 4
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Typical details",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "Typical details",
+        "group": {
+          "claimMax": 6,
+          "perOption": 4,
+          "options": [
+            "Submersible pump in water storage tank",
+            "12 mm pipe from storage tank to filter",
+            "In line filter",
+            "230 litre attic storage tank",
+            "Overflow pipe",
+            "Ball valve",
+            "12 mm feed to toilet cistern",
+            "Toilet",
+            "All necessary valves"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q3-c",
+    "topicId": "cons-5-4",
+    "conceptId": "advantages-of-reusing-rainwater",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q3(c)",
+    "questionText": "Discuss one advantage of reusing rainwater in a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 3,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q3-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss one advantage of reusing rainwater in a dwelling house.",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Sustainable living",
+            "Reduces flooding around property",
+            "Reduce the cost of water treatment due to reduced usage"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q4-a",
+    "topicId": "cons-4-5",
+    "conceptId": "construction-of-a-stud-partition",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q4(a)",
+    "questionText": "Using notes and a freehand sketch, show the typical construction details of the stud partition required to separate the rooms.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 4",
+      "answer": 6,
+      "ofParts": 6,
+      "perPart": 4
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and a freehand sketch, show the typical construction details of the stud partition required to separate the ",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 4,
+          "options": [
+            "Sole plate at the base of the partition 100 mm × 45 mm",
+            "Head plate at the top of the partition 100 mm × 45 mm",
+            "Vertical studs between head and sole plate 100 mm × 45 mm",
+            "Noggins inserted between studs to increase rigidity 100 mm × 45 mm",
+            "Door head inserted above opening 100 mm × 45 mm",
+            "Door jambs to support door head 100 mm × 45 mm headplate"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q4-c",
+    "topicId": "cons-1-1",
+    "conceptId": "separating-a-living-room-from-a-kitchen",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q4(c)",
+    "questionText": "Discuss two reasons for creating a living room which is separate from the kitchen.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q4-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons for creating a living room which is separate from the kitchen.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "To reduce noise pollution to the living room",
+            "Allow privacy to the occupants of either room",
+            "To reduce odours spreading to the living room",
+            "Smaller space will reduce echo",
+            "Separate spaces to eat and to relax"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q5-a",
+    "topicId": "cons-4-4",
+    "conceptId": "vertical-section-bottom-three-steps",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q5(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the centre of the bottom three steps of the stairs. Show the string, treads and risers. Include three typical dimensions on your drawing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 9,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q5-a-r1",
+        "kind": "anyN",
+        "verbatim": "Specification – typical detail",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "Specification – typical detail",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "String 250 mm × 50 mm",
+            "Tread 250 mm × 25 mm",
+            "Riser 170 mm x 20 mm",
+            "Joint between tread and riser",
+            "Nosing 16 mm minimum",
+            "Vertical wedge",
+            "Horizontal wedge",
+            "Glue blocks 60 mm × 60 mm",
+            "Pitch line (max 42⁰)"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q6-b",
+    "topicId": "cons-9-4",
+    "conceptId": "risks-when-using-power-tools",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q6(b)",
+    "questionText": "Describe two potential risks to a construction worker when using power tools on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Possible Reasons",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Possible Reasons",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Damage to hearing due to excessive noise",
+            "Electrical injury due to encountering exposed live cables",
+            "Exposure to dust and fumes if correct PPE is not used",
+            "Overuse of hammer action tools resulting in Hand-Arm Vibration Syndrome (HAVS)",
+            "Encountering underground services"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q6-c",
+    "topicId": "cons-9-4",
+    "conceptId": "safety-precautions-with-power-tools",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q6(c)",
+    "questionText": "Using notes and a freehand sketch, describe one safety precaution that will reduce the risk to the public while the footpath is being replaced.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 13",
+      "answer": 1,
+      "ofParts": 4,
+      "perPart": 13
+    },
+    "totalMarks": 13,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and a freehand sketch, describe one safety precaution that will reduce the risk to the public while the foot",
+        "marks": 13,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 13,
+          "options": [
+            "Erect signage to direct the public away from the work zone",
+            "Ensure guard rails and exclusion zone notices are in place to limit the proximity of the public to the work area",
+            "Ensure building material is stored at a safe distance from the open public zones",
+            "Enclose work area with dust shelter to prevent dust particles being blown into the open public zones"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q7-a",
+    "topicId": "cons-1-1",
+    "conceptId": "designing-a-garden-for-a-family",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q7(a)",
+    "questionText": "Discuss two reasons why it is important to create a garden space that meet the needs of the family.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why it is important to create a garden space that meet the needs of the family.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Safe area to socialise and entertain",
+            "Private area for the family to enjoy the outdoors",
+            "Promotes outdoor living",
+            "Allows a multi-purpose area for all age groups to enjoy and use",
+            "An extension to the home making it a usable space for the family",
+            "Well-designed gardens allow herbs and vegetables to be grown",
+            "Providing extra storage for homeowners"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q7-b",
+    "topicId": "cons-1-1",
+    "conceptId": "laying-out-a-garden",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q7(b)",
+    "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden area: • outdoor dining/living space • garden storage • flower beds • lawn area.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 6",
+      "answer": 5,
+      "ofParts": 12,
+      "perPart": 6
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garde",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "The scheme groups its answer under: Outdoor dining/living space; Garden storage; Flower beds; Lawn area",
+        "group": {
+          "claimMax": 5,
+          "perOption": 6,
+          "options": [
+            "Located close to dwelling to allow ease of indoor and outdoor living",
+            "Located to catch south facing sunlight",
+            "Located away from the house to prevent shading from dwelling",
+            "Located close to entrance gate to allow ease of use when storing garden supplies",
+            "Located at the back of the garden to allow freedom of movement around garden",
+            "Located close to a side fence to prevent shading the garden area",
+            "Located in sight of the dwelling for occupants to enjoy the view",
+            "Located to capture sunlight during the day",
+            "Located along a boundary fence to allow ease of movement around garden",
+            "Located in occupants’ line of vision",
+            "Located close to the dwelling to bring nature close in the indoors",
+            "Located at the rear of the garden to prevent occupants picking up dirt and water on a wet day"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q7-c",
+    "topicId": "cons-1-1",
+    "conceptId": "trees-and-plants-in-a-garden-design",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q7(c)",
+    "questionText": "Discuss two advantages of incorporating trees and plants into a garden design.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q7-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of incorporating trees and plants into a garden design",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Discuss two advantages of incorporating trees and plants into a garden design",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Promotes wellbeing",
+            "Improves air quality",
+            "Attracts pollinators to the garden",
+            "Improves the overall appearance of the garden",
+            "Natural shade and shelter for the dwelling house",
+            "Reduces flooding from rainwater run-off"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q9-a",
+    "topicId": "cons-3-3",
+    "conceptId": "choosing-a-wood-for-external-cladding",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q9(a)",
+    "questionText": "Specify a suitable wood for the external cladding, and give two reasons for your choice.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 9,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "Suitable wood for external cladding,",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Suitable wood for external cladding,",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Cedar",
+            "Larch",
+            "Douglas Fir",
+            "Oak",
+            "Teak Two reasons for your choice",
+            "Durable wood species",
+            "Do not require preservative treatment due to containing natural oils",
+            "Naturally resistant to insect attack",
+            "Naturally resistant to moisture"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q9-b",
+    "topicId": "cons-7-4",
+    "conceptId": "bringing-natural-light-into-a-porch",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q9(b)",
+    "questionText": "The owner wishes to modify the porch to allow more natural light into the house. Using notes and freehand sketches, show two modification to the porch that would allow more natural light to enter the house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 13",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 13
+    },
+    "totalMarks": 26,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "The owner wishes to modify the porch to allow more natural light into the house. Using notes and freehand sketches, show",
+        "marks": 26,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 13,
+          "options": [
+            "Install roof lights",
+            "Insert a window in the entrance door",
+            "Install windows in the external walls",
+            "Replace the roof with a glass roof"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q9-c",
+    "topicId": "cons-1-1",
+    "conceptId": "why-build-a-front-porch",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q9(c)",
+    "questionText": "Discuss two reasons why homeowners would wish to build a front porch to their house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Two reasons why homeowners would wish to build a front porch to their house",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Two reasons why homeowners would wish to build a front porch to their house",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Increase the usable space",
+            "Create an extra draught barrier",
+            "Blend in with neighbouring properties",
+            "Additional security to home",
+            "Improved insulation of existing home",
+            "Increase the resale value of the property"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q1-b",
+    "topicId": "cons-3-4",
+    "conceptId": "keeping-the-cavity-clear-of-mortar",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q1(b)",
+    "questionText": "On your drawing, show the typical design detailing to ensure that the cavity is closed at the door head.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "3",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Cavity closer",
+        "marks": 3,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q6-a",
+    "topicId": "cons-1-8",
+    "conceptId": "safety-signs-on-a-construction-site",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q6(a)",
+    "questionText": "Using a large freehand sketch, show three safety signs highlighting the use of personal protective equipment (PPE) that must be worn by workers while using a jackhammer. For each sign, state how the personal protective equipment protects workers while using the jackhammer.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 9",
+      "answer": 3,
+      "ofParts": 3,
+      "perPart": 9
+    },
+    "totalMarks": 27,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Using a large freehand sketch, show three safety signs highlighting the use of personal protective equipment (PPE) that ",
+        "marks": 27,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 9,
+          "options": [
+            "Sign 1 and specific reason",
+            "Sign 2 and specific reason",
+            "Sign 3 and specific reason"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q8-None-strip-foundation",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-strip-foundation",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q8 — Strip foundation",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • strip foundation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q8-None-strip-foundation-r1",
+        "kind": "anyN",
+        "verbatim": "Strip foundation",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Strip foundation",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Simple and common type of foundation used for domestic homes",
+            "Sustainable and economic use of material",
+            "Concrete is reinforced with steel to improve the foundations tensile strength",
+            "Walls are placed centrally on the foundation and the loads are transmitted at 45⁰ to the supporting ground",
+            "Strip foundations are used where the surrounding soil has a good bearing capacity"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q8-None-fascia-board",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-fascia-board",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q8 — Fascia board",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • fascia board.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q8-None-fascia-board-r1",
+        "kind": "anyN",
+        "verbatim": "Fascia board",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Fascia board",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Gives a finished appearance to the roof",
+            "Protects the interior of the dwelling from weather damage",
+            "Forms part of the eaves of a roof along with the soffit",
+            "Provided a surface for gutters to be fixed too",
+            "Made from a variety of material with wood, PVC and aluminium the most common"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q8-None-airtight-tape",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-airtight-tape",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q8 — Airtight tape",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • airtight tape.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q8-None-airtight-tape-r1",
+        "kind": "anyN",
+        "verbatim": "Airtight tape",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Airtight tape",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Highly adhesive tape which bonds to construction material",
+            "Used in conjunction with airtight membrane to form an airtight and windtight structure",
+            "Used to prevent draughts and to reduce heat loss from a structure",
+            "Used at all junctions where different building elements meet, ceiling to wall, floor to wall",
+            "Used to form an airtight seal at door and window frames"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q8-None-wind-turbine",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-wind-turbine",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q8 — Wind turbine",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • wind turbine.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q8-None-wind-turbine-r1",
+        "kind": "anyN",
+        "verbatim": "Wind turbine",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Wind turbine",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Sustainable and eco-friendly source of energy",
+            "Reduces the reliance on carbon emitting fossil fuel energy sources",
+            "Converts wind energy into mechanical energy which generates electricity",
+            "Wind turbines can be part of a commercial wind farm which provide energy to the National grid",
+            "Smaller domestic wind turbines provide additional energy to homes and farms",
+            "Wind turbines can be horizontal-axis or vertical-axis in form"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q8-None-septic-tank",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-septic-tank",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q8 — Septic tank",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • septic tank.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q8-None-septic-tank-r1",
+        "kind": "anyN",
+        "verbatim": "Septic tank",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Septic tank",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Underground chamber used to collect, store, and treat domestic wastewater",
+            "Designed to remove pollution and release treated water safely back into the environment",
+            "Works by using natural anaerobic bacteria to break down solid waste",
+            "As wastewater makes its way through the tank, solid waste sinks to the bottom and forms sludge",
+            "Water is returned to the ground by the connecting percolation area"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q8-None-dovetail-joint",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-dovetail-joint",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q8 — Dovetail joint",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • dovetail joint.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q8-None-dovetail-joint-r1",
+        "kind": "anyN",
+        "verbatim": "Dovetail joint",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Dovetail joint",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Common joint used in drawer and box construction",
+            "Used in high quality furniture manufacture",
+            "The slope of the tail gives the joint its tensile strength",
+            "The slope for hardwood is 1:8",
+            "The slope for softwood is 1:6",
+            "Can be constructed by hand or by a router jig"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q8-None-wall-tie",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-wall-tie",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q8 — Wall tie",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • wall tie.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q8-None-wall-tie-r1",
+        "kind": "anyN",
+        "verbatim": "Wall tie",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Wall tie",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Fitting used in the construction of cavity walls to create stability",
+            "Holds wall leaves together to form a strong and complete unit",
+            "Traditionally made from stainless steel but basalt fibre material is currently popular due to reduction in thermal bridging",
+            "Comes in a range of lengths depending on the width of the cavity",
+            "Wall ties are embedded in the mortar to ensure a grip is formed with the wall material"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q8-None-cordless-jigsaw",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-cordless-jigsaw",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q8 — Cordless jigsaw",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • cordless jigsaw.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q8-None-cordless-jigsaw-r1",
+        "kind": "anyN",
+        "verbatim": "Cordless jigsaw",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Cordless jigsaw",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Used to cut shapes and curves by the reciprocation action of a blade",
+            "Powered by a rechargeable D.C. battery rather than connection to the A.C. mains",
+            "Base of jigsaw rests on the work surface and pushed along by user",
+            "Versatile tool that can be used on a range of materials",
+            "Cordless nature allows for a safer work environment",
+            "Allows for portability and use away from power sources"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2022-ol-q8-None-underfloor-heating",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-underfloor-heating",
+    "level": "ordinary",
+    "year": 2022,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2022 OL Q8 — Underfloor heating",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • underfloor heating.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2022-ol-q8-None-underfloor-heating-r1",
+        "kind": "anyN",
+        "verbatim": "Underfloor heating",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Underfloor heating",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A circuit of polyethylene pipes are installed beneath the finished floor level",
+            "Water, heated by a heat pump, is circulated through the underfloor pipes",
+            "The floor acts as a large heat source which eliminates cold spots in rooms",
+            "Creates a more comfortable and constant indoor temperature",
+            "Replaces the need for wall hanging radiators",
+            "Energy and cost-effective due to the lower temperatures required to heat areas"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]
