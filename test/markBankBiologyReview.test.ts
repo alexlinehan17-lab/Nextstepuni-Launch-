@@ -141,6 +141,8 @@ describe('Biology 2026 Ordinary — reviewed sitting', () => {
     expect(exclusion.schemeRows).toEqual(['Rr', 'Rr']);
     expect(exclusion.evidence).toMatch(/both offspring boxes .* print "Rr"/);
     expect(exclusion.evidence).toMatch(/"White"/);
+    // Decided by Alex on 2026-10-12: it stays excluded, never carded or corrected.
+    expect(exclusion.reason).toMatch(/Decided by Alex 2026-10-12/);
   });
 
   it('pins the reviewed source PDFs', () => {

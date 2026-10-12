@@ -1,0 +1,242 @@
+"""Reviewer's tools for the Biology paper-by-paper review (bio_review.py).
+
+None of these write to the bank; they are how a reviewer reads the PDFs and
+checks a ledger before `bio_review.py <year> <level> --write`.
+
+  python3 bio_tools.py dump PDF FIRST-LAST          printed lines, page by page (the lifter's own text)
+  python3 bio_tools.py lines PDF PAGE Y0 Y1         line boxes in PDF points, for crop rectangles
+  python3 bio_tools.py images PDF PAGE [PAGE ...]   image blocks and drawing extents per page
+  python3 bio_tools.py sheet PDF NAME FIRST-LAST COLS ZOOM   contact sheet of rendered pages
+  python3 bio_tools.py scan YEAR LEVEL              selection directives, in SELECTION_SCAN order
+  python3 bio_tools.py existing YEAR LEVEL          the sitting's authored cards before review
+  python3 bio_tools.py cards YEAR LEVEL             the cards a ledger builds (check only)
+  python3 bio_tools.py pointers YEAR LEVEL          cards whose text points at a printed figure but carry none
+  python3 bio_tools.py crops YEAR LEVEL [KEY ...]   render the ledger's crops
+  python3 bio_tools.py montage [KEY ...]            four crops to a sheet, for viewing
+
+Output (sheets, crops, montages) goes to $BIO_REVIEW_OUT, default
+<tmpdir>/bio-review. Run from anywhere; paths resolve from this file.
+"""
+import importlib
+import json
+import os
+import re
+import sys
+import tempfile
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
+sys.path.insert(0, HERE)
+OUT = os.environ.get('BIO_REVIEW_OUT', os.path.join(tempfile.gettempdir(), 'bio-review'))
+
+
+def _pdf(path):
+    return path if os.path.isabs(path) else os.path.join(ROOT, path)
+
+
+def _pages(spec):
+    a, _, b = spec.partition('-')
+    return range(int(a), int(b or a) + 1)
+
+
+def _ledger(year, level):
+    return importlib.import_module(f'bio_review_{year}_{level}')
+
+
+def cmd_dump(path, pages):
+    import bio_review_lib as B
+    src = B.Src(_pdf(path), 'x')
+    for p in _pages(pages):
+        if p not in src.lines:
+            break
+        print(f'===== p{p}')
+        for i, line in enumerate(src.lines[p]):
+            print(f'{i:3d}| {line}')
+
+
+def cmd_lines(path, page, y0, y1):
+    import fitz
+    pg = fitz.open(_pdf(path))[int(page) - 1]
+    for b in pg.get_text('dict')['blocks']:
+        for ln in b.get('lines', []):
+            x0, ly0, x1, ly1 = ln['bbox']
+            if ly1 >= float(y0) and ly0 <= float(y1):
+                text = ''.join(s['text'] for s in ln['spans']).strip()
+                if text:
+                    print(f'{x0:5.0f}{ly0:5.0f}{x1:5.0f}{ly1:5.0f}  {text[:80]}')
+
+
+def cmd_images(path, *pages):
+    import fitz
+    doc = fitz.open(_pdf(path))
+    for p in pages:
+        pg = doc[int(p) - 1]
+        ims = [[round(v) for v in b['bbox']] for b in pg.get_text('dict')['blocks'] if b['type'] == 1]
+        big = [d['rect'] for d in pg.get_drawings() if d['rect'].width > 3 and d['rect'].height > 3]
+        print(f'p{p} images {ims}')
+        if big:
+            u = fitz.Rect(big[0])
+            for r in big:
+                u |= r
+            print(f'    drawings {len(big)} union {[round(v) for v in u]}')
+
+
+def cmd_sheet(path, name, pages, cols, zoom):
+    import fitz
+    doc = fitz.open(_pdf(path))
+    ps = list(_pages(pages))
+    pix = [doc[p - 1].get_pixmap(matrix=fitz.Matrix(float(zoom), float(zoom))) for p in ps]
+    w0, h0 = pix[0].width, pix[0].height
+    cols = int(cols)
+    rows = (len(pix) + cols - 1) // cols
+    canvas = fitz.Pixmap(fitz.csRGB, fitz.IRect(0, 0, cols * (w0 + 6), rows * (h0 + 6)), False)
+    canvas.clear_with(200)
+    for i, p in enumerate(pix):
+        p2 = fitz.Pixmap(fitz.csRGB, p) if p.alpha or p.colorspace.n != 3 else p
+        p2.set_origin((i % cols) * (w0 + 6), (i // cols) * (h0 + 6))
+        canvas.copy(p2, p2.irect)
+    os.makedirs(OUT, exist_ok=True)
+    out = os.path.join(OUT, f'{name}.png')
+    canvas.save(out)
+    print(out)
+
+
+def cmd_scan(year, level):
+    import bio_review as R
+    import bio_review_lib as B
+    L = _ledger(int(year), level)
+    n = 0
+    for doc, ps in L.SCAN_PAGES.items():
+        src = B.Src(os.path.join(ROOT, L.SOURCES[doc]['path']), doc)
+        for p in ps:
+            t = src.page_text(p)
+            for m in R.SCAN.finditer(t):
+                print(f"{n:3d} {doc} p{p} {m.group(0).lower()!r:24} ...{t[max(0, m.start() - 55):m.end() + 45]}...")
+                n += 1
+
+
+def cmd_existing(year, level):
+    tag = f'bio-{year}-{level}'
+    authored = json.load(open(os.path.join(ROOT, 'scripts/markbank/authored/biology.json')))
+    cards = authored['cards'] if isinstance(authored, dict) else authored
+    deck = open(os.path.join(ROOT, 'components/MarkBank/cards/biology',
+                             ('higher' if level == 'hl' else 'ordinary') + '.ts')).read()
+    shipped = set(re.findall(rf'^\s*id: "({tag}[^"]*)"', deck, re.M))
+    bind = json.load(open(os.path.join(ROOT, 'scripts/markbank/card-source-bindings.json'))).get('biology', {})
+    corr = json.load(open(os.path.join(ROOT, 'scripts/markbank/card-corrections.json'))).get('biology', {})
+    n = 0
+    for c in cards:
+        if not c['id'].startswith(tag + '-'):
+            continue
+        n += 1
+        flags = ['SHIP' if c['id'] in shipped else 'NOSHIP'] + (['BIND'] if c['id'] in bind else []) \
+            + (['CORR'] if c['id'] in corr else [])
+        rows = ' || '.join(f"{r.get('kind')}:{r.get('marks')}:{str(r.get('verbatim', ''))[:50]}" for r in c['rows'])
+        print(f"{c['id']} [{' '.join(flags)}] {c['questionRef']} | {c['totalMarks']} | "
+              f"{json.dumps(c.get('tariffModel'))} | {c['topicId']} | sec {c.get('section')} | "
+              f"fig={c.get('figureKey')} | {c['questionText'][:90]!r}\n     {rows[:300]}")
+    print(f'{n} authored, {len(shipped)} shipped')
+    for k, v in bind.items():
+        if k.startswith(tag + '-'):
+            print('BIND', k, v)
+    for k, v in corr.items():
+        if k.startswith(tag + '-'):
+            print('CORR', k, json.dumps(v)[:200])
+
+
+def _build(year, level):
+    import bio_review as R
+    L = _ledger(int(year), level)
+    return L, R.build(L, int(year), level)
+
+
+def cmd_cards(year, level):
+    _, (_, cards, _, checks) = _build(year, level)
+    for c in cards:
+        print('=' * 100)
+        print(c['id'], '|', c['questionRef'], '|', c['topicId'], c['conceptId'], '|', c['totalMarks'], '|',
+              c.get('figureKey'), '|', c.get('questionFigureKey'))
+        if c.get('stem'):
+            print('STEM:', c['stem'])
+        print('Q:', c['questionText'])
+        for r in c['rows']:
+            extra = ''
+            if r.get('group'):
+                extra = f" claim={r['group']['claimMax']} per={r['group']['perOption']} opts={r['group']['options']}"
+            print(f"  [{r['kind']}:{r['marks']}] {r['verbatim']}{extra}"
+                  + (f"  NOTE: {r['contextNote']}" if r.get('contextNote') else '')
+                  + (' OPEN' if r.get('openList') else ''))
+        if c.get('labelKey'):
+            print('  LABELS:', c['labelKey'])
+        print('  NOTES:', c['notes'])
+    for h in checks.get('excluded', []):
+        print('HELD', h)
+
+
+POINTS_AT_PRINT = re.compile(r'\b(the|this) (diagram|image|photograph|graph|table|food web|picture)s?\b'
+                             r'|\bdata table\b|\bword equation\b|\bpedigree chart\b|\bthe one shown\b', re.I)
+
+
+def cmd_pointers(year, level):
+    _, (_, cards, _, _) = _build(year, level)
+    for c in cards:
+        text = f"{c.get('stem') or ''} {c['questionText']}"
+        m = POINTS_AT_PRINT.search(text)
+        if m and not (c.get('figureKey') or c.get('questionFigureKey') or c.get('sourceMaterial')):
+            print('NEEDS FIG', c['id'], m.group(0))
+
+
+def cmd_crops(year, level, *only):
+    import bio_review as R
+    L = _ledger(int(year), level)
+    _, recs = R.figures(L, R.Lifter(L), int(year), level, False)
+    d = os.path.join(OUT, 'crops')
+    os.makedirs(d, exist_ok=True)
+    for k, png in recs:
+        if only and not any(o in k for o in only):
+            continue
+        open(os.path.join(d, f'{k}.png'), 'wb').write(png)
+        print(k, len(png))
+
+
+def cmd_montage(*names):
+    import glob
+    import fitz
+    d = os.path.join(OUT, 'crops')
+    files = sorted(glob.glob(os.path.join(d, '*.png')))
+    if names:
+        files = [f for f in files if any(n in f for n in names)]
+    for gi in range(0, len(files), 4):
+        grp = files[gi:gi + 4]
+        pix = [fitz.Pixmap(f) for f in grp]
+        scaled = [(p, min(1.0, 680 / p.width, 600 / p.height)) for p in pix]
+        rows = [scaled[0:2], scaled[2:4]]
+        height = sum(max((int(p.height * s) for p, s in r), default=0) + 30 for r in rows)
+        doc = fitz.open()
+        page = doc.new_page(width=1400, height=height)
+        y = 0
+        for r in rows:
+            x = rh = 0
+            for p, s in r:
+                w, h = int(p.width * s), int(p.height * s)
+                page.draw_rect(fitz.Rect(x, y + 20, x + w, y + 20 + h), color=(0.6, 0.6, 0.6), width=0.5)
+                page.insert_image(fitz.Rect(x, y + 20, x + w, y + 20 + h), pixmap=p)
+                page.insert_text((x + 2, y + 14), os.path.basename(grp[pix.index(p)]), fontsize=11)
+                x += 700
+                rh = max(rh, h)
+            y += rh + 30
+        out = os.path.join(OUT, f'montage-{gi // 4}.png')
+        page.get_pixmap().save(out)
+        print(out)
+
+
+COMMANDS = {k[4:]: v for k, v in globals().items() if k.startswith('cmd_')}
+
+if __name__ == '__main__':
+    if len(sys.argv) < 2 or sys.argv[1] not in COMMANDS:
+        print(__doc__)
+        sys.exit(2)
+    COMMANDS[sys.argv[1]](*sys.argv[2:])
+    sys.stdout.flush()
+    # PyMuPDF can crash in its exit-time cleanup after heavy page reads.
+    os._exit(0)

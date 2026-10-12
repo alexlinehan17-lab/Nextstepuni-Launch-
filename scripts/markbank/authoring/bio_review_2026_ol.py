@@ -35,12 +35,13 @@ Finite printed routes (one card each, at the route tariff): Q7(c) asthma or
 bronchitis; Q13(b)(vi) the electrons or the protons; Q16(c)(vi) smoking or
 diet or exercise; Q17(a)(iv) a disorder of the ear or the eye.
 
-EXCLUDED, pending a human decision: Q12(b)(ii)2. The scheme prints "Rr" in
+EXCLUDED, decided by Alex 2026-10-12: Q12(b)(ii)2. The scheme prints "Rr" in
 both offspring boxes of its Punnett square; the r-gamete row of a pink (Rr) x
 white (rr) cross gives rr, which the scheme's own matching phenotype for that
 row ("White") confirms. A card would teach the misprint, and the reviewer may
 not write the correction, so the task is reviewed, priced and excluded, with
-its reason and evidence recorded in the audit. (The census reads Q12(b)(ii)
+its reason and evidence recorded in the audit. Alex decided on 2026-10-12
+that it stays excluded: never carded and never corrected. (The census reads Q12(b)(ii)
 as one leaf, already covered by the (ii)1 and (ii)3 cards, so reconcile.py
 has no finer leaf for an exclusion entry to land on.)
 """
@@ -777,8 +778,9 @@ TASKS = [
       excluded='The scheme prints "Rr" in both offspring boxes, but the r-gamete row of a pink '
                '(Rr) x white (rr) cross is rr, as the scheme\'s own matching phenotype for that '
                'row ("White") shows. Carding the printed answer would teach the misprint, and '
-               'correcting it would be the reviewer writing an answer, so the task is excluded '
-               'pending a decision. Its siblings (ii)1 and (ii)3 are carded.',
+               'correcting it would be the reviewer writing an answer, so the task is excluded. '
+               'Decided by Alex 2026-10-12: it stays excluded, never carded or corrected. Its '
+               'siblings (ii)1 and (ii)3 are carded.',
       evidence='Scheme p.17, Q12(b)(ii) "2. Genotypes of the possible offspring.": both offspring '
                'boxes of the completed Punnett square print "Rr" (read from the glyphs at '
                '(165,535)-(192,553) and (165,556)-(192,575)); "3. Matching phenotypes of the '
