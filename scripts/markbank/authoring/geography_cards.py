@@ -94,7 +94,10 @@ REVIEWED = {
     (2021, 'ordinary'): REVIEW_2021_OL,
 }
 
-YEARS = tuple(range(2021, 2027))
+# 2021-2026 are carded in full. An earlier sitting joins the corpus only once
+# its own review ledger is in REVIEWED; the generic reader never reads it.
+CORE_YEARS = tuple(range(2021, 2027))
+YEARS = tuple(sorted({*CORE_YEARS, *(year for year, _level in REVIEWED)}))
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
@@ -616,7 +619,7 @@ def paper_fileids() -> dict[tuple[int, str, int], str]:
     source = """
 import { resolvePaperFileid } from './scripts/markbank/paperIndex.mjs';
 const out = {};
-for (const year of [2021, 2022, 2023, 2024, 2025, 2026]) {
+for (const year of YEARS_JSON) {
   for (const level of ['higher', 'ordinary']) {
     for (const part of [1, 2]) {
       out[`${year}:${level}:${part}`] = resolvePaperFileid(
@@ -627,7 +630,8 @@ for (const year of [2021, 2022, 2023, 2024, 2025, 2026]) {
 process.stdout.write(JSON.stringify(out));
 """
     result = subprocess.run(
-        ['node', '--input-type=module', '-e', source], cwd=ROOT,
+        ['node', '--input-type=module', '-e', source.replace('YEARS_JSON', json.dumps(list(YEARS)))],
+        cwd=ROOT,
         check=True, capture_output=True, text=True)
     raw = json.loads(result.stdout)
     out: dict[tuple[int, str, int], str] = {}
@@ -1279,6 +1283,8 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                 aliases.update(built['aliases'])
                 reviewed_audits.append(built['audit'])
                 atlas_rows.extend(built['atlas'])
+                continue
+            if year not in CORE_YEARS:
                 continue
             short_scheme = part_one_scheme(year, level)
             long_scheme = part_two_scheme(year, level)

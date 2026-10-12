@@ -31,6 +31,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
 PAPER_ROOT = os.path.join(ROOT, 'examiner-reports', 'geography', 'papers')
 SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'geography', 'schemes')
 CORPUS_ROOT = os.path.join(ROOT, 'paper-trail-corpus', 'exampapers')
+MARKING_ROOT = os.path.join(ROOT, 'paper-trail-corpus', 'markingschemes')
+LEVEL_CODE = {'higher': 'A', 'ordinary': 'G'}
 
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
@@ -392,13 +394,30 @@ class Sitting:
 
     @classmethod
     def open(cls, year: int, level: str) -> 'Sitting':
-        short = LEVEL_SHORT[level]
-        return cls(
-            year=year, level=level,
-            papers={part: Document(os.path.join(
-                PAPER_ROOT, f'{year}-{short}-04{part + 1}-paper.pdf')) for part in (1, 2)},
-            scheme=Document(os.path.join(SCHEME_ROOT, f'{year}-{short}.pdf')),
-        )
+        """The sitting's official documents: the examiner-reports copies where
+        they exist (2021-2026), else the harvested Paper Trail corpus. From 2020
+        Part One and Part Two are separate booklets (042, 043); before 2020 one
+        booklet (000) printed both, so both parts read the same document."""
+        short, code = LEVEL_SHORT[level], LEVEL_CODE[level]
+
+        def paper_path(part: int) -> str:
+            copy = os.path.join(PAPER_ROOT, f'{year}-{short}-04{part + 1}-paper.pdf')
+            if os.path.exists(copy):
+                return copy
+            booklet = os.path.join(CORPUS_ROOT, str(year), f'LC005{code}LP04{part + 1}EV.pdf')
+            if os.path.exists(booklet):
+                return booklet
+            return os.path.join(CORPUS_ROOT, str(year), f'LC005{code}LP000EV.pdf')
+
+        papers: dict[int, Document] = {}
+        for part in (1, 2):
+            path = paper_path(part)
+            shared = [document for document in papers.values() if document.path == path]
+            papers[part] = shared[0] if shared else Document(path)
+        scheme = os.path.join(SCHEME_ROOT, f'{year}-{short}.pdf')
+        if not os.path.exists(scheme):
+            scheme = os.path.join(MARKING_ROOT, str(year), f'LC005{code}LP000EV.pdf')
+        return cls(year=year, level=level, papers=papers, scheme=Document(scheme))
 
     def lift(self, part: int, item: Lift) -> str:
         if item.row:
