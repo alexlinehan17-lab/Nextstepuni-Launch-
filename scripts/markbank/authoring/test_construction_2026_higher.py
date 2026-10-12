@@ -51,6 +51,8 @@ class SourceGuard(unittest.TestCase):
             'missing Atlas association': lambda d: binding(d, 'q9-a')['atlasTopicIds'].pop(),
             'canonical node outside the crosswalk': lambda d: binding(d, 'q2-c')['canonicalTopicIds'].append('cons-1-7'),
             'broken composite topic union': lambda d: binding(d, 'q4-complete')['atlasTopicIds'].pop(),
+            'choice card q4-a loses its composite solution figure': lambda d: card(d, 'q4-a').pop('figureKey'),
+            'composite q4-areas loses an item panel': lambda d: next(f for f in d['questionFigures'] if f['key'] == m.FP + 'q4-areas')['panels'].pop(),
             'unreviewed source crop': lambda d: d['questionFigures'][1].update(visuallyInspected=False),
             'cut off drawing': lambda d: d['questionFigures'][1].update(rect=[48, 52, 568, 400]),
             'solution shown before reveal': lambda d: card(d, 'q5-a').update(questionFigureKey=m.FP + 'q5-calculation'),

@@ -13,6 +13,7 @@ replaces. Every other prior card stays byte-identical.
 import copy
 import hashlib
 import json
+import sys
 import re
 from pathlib import Path
 
@@ -63,8 +64,16 @@ FIGURES = {
     'q6-access': (S, 10, [48, 540, 578, 795], True), 'q7-office-plan': (S, 11, [48, 290, 578, 790], True),
     'q9-modifications': (S, 16, [48, 243, 578, 535], True), 'q9-uses': (S, 16, [48, 547, 578, 790], True),
 }
+sys.path.insert(0, str(R / 'scripts/markbank/authoring'))
+import construction_figures  # noqa: E402
+FIGURES['q8-terms'] = construction_figures.composite([(S, 13, [51, 58, 580, 754]), (S, 14, [51, 56, 566, 791]), (S, 15, [51, 57, 577, 780])])
+NEW_FIGURE_ALTS = {FP + k: v for k, v in {'q8-terms': 'SEC marking-scheme notes and sketches for all nine Question 8 terms, in scheme order: raft foundation, stud wall, door threshold, housing joint, laser level, baluster, rainwater butt, damp proof course and room thermostat.'}.items()}
 question_figures = []
-for key, (f, page, rect, solution) in FIGURES.items():
+for key, spec in FIGURES.items():
+    if construction_figures.is_composite(spec):  # every choice item's scheme panel, one solution figure
+        question_figures.append(construction_figures.entry(FP + key, spec, HERE / f'{FP}{key}.png'))
+        continue
+    f, page, rect, solution = spec
     with fitz.open(R / f) as pdf:
         px = pdf[page - 1].get_pixmap(matrix=fitz.Matrix(2, 2), clip=fitz.Rect(rect), alpha=False)
     path = HERE / f'{FP}{key}.png'
@@ -339,7 +348,7 @@ Q8 = add('8', '', '', 'Explain, with the aid of notes and freehand sketches, any
                contextNote='Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). '
                + ' '.join(f'{h}: ' + t[5].removeprefix('Such as: ') for h, t in zip(TERM_HEADINGS, TERMS)),
                group=dict(claimMax=5, perOption=10, options=TERM_HEADINGS))],
-         list(dict.fromkeys(n for t in TERMS for n in t[3])), list(dict.fromkeys(a for t in TERMS for a in t[4])), None,
+         list(dict.fromkeys(n for t in TERMS for n in t[3])), list(dict.fromkeys(a for t in TERMS for a in t[4])), 'q8-terms',
          'The union of the nine printed terms: ' + ' '.join(t[6] for t in TERMS), B8, S8, scheme_pages=[13, 14, 15, 24])
 
 # ---------------------------------------------------------------- Q9
@@ -425,7 +434,7 @@ for t in tasks:
 assert len(corrections) == 21
 out = dict(schemaVersion=1, subjectId='construction-studies', year=2025, level='ordinary', lang='ev', sitting='main', paperKey='single',
            fileid='LC029GLP000EV.pdf', component='theory', status='Q1–Q9 source-reviewed draft; integration pending.',
-           sourceHashes=HASHES, tasks=tasks, bindings=bindings, questionFigures=question_figures,
+           sourceHashes=HASHES, tasks=tasks, bindings=bindings, questionFigures=question_figures, newFigureAlts=NEW_FIGURE_ALTS,
            addedIds=[t['card']['id'] for t in tasks if not t['correction']], corrections=corrections,
            selectionLedger=selection_ledger, questionRouteLedgers={q: dict(wholeRoutes=w) for q, w in whole.items()},
            taxonomyGaps=taxonomy_gaps, questionsReviewed=list(QUESTIONS), unreviewedQuestions=[])

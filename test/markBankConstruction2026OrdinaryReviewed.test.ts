@@ -16,7 +16,7 @@ const review = JSON.parse(fs.readFileSync('scripts/markbank/authored/constructio
 describe('Construction Studies 2026 Ordinary source-reviewed Q1–Q9', () => {
   it('reconciles original wording, tariffs, every finite route, figures and selection directives', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2026_ordinary.py'], { encoding: 'utf8' }));
-    expect(result).toEqual({tasks: 32, leafTasks: 23, wholeQuestions: 9, q8AnyFiveOfNine: true, sourceFigures: 24, paperComplete: true});
+    expect(result).toEqual({tasks: 32, leafTasks: 23, wholeQuestions: 9, q8AnyFiveOfNine: true, sourceFigures: 25, paperComplete: true});
   });
 
   it('pins every reviewed card identity; the Q8 choice is one any-five card, not a route per combination', () => {

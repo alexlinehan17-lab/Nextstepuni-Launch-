@@ -19,7 +19,7 @@ describe('Construction Studies 2015 Higher source-reviewed Q1–Q10 and alternat
   it('reconciles lifted wording, tariffs, one card per printed choice, figures, selection directives and corrections', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2015_higher.py'], { encoding: 'utf8' }));
     expect(result).toEqual({tasks: 48, addedTasks: 11, correctedTasks: 37, withdrawnTasks: 65, leafTasks: 33, wholeQuestions: 11,
-      anyNChoiceCards: 5, sourceFigures: 25, paperComplete: true});
+      anyNChoiceCards: 5, sourceFigures: 27, paperComplete: true});
   });
 
   it('pins every reviewed card identity: one card per printed choice and one complete card per question', () => {

@@ -10,6 +10,7 @@ mark up to the published maximum; printed excellent/good/fair bands are kept as 
 import copy
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 import fitz
@@ -61,8 +62,16 @@ FIGURES = {
     'q10-blower-door': (S, 38, [240, 480, 552, 690], True),
     'q10-alt-original': (P, 7, [45, 440, 575, 705], False),
 }
+sys.path.insert(0, str(R / 'scripts/markbank/authoring'))
+import construction_figures  # noqa: E402
+FIGURES['q4-areas'] = construction_figures.composite([(S, 16, [51, 48, 584, 822]), (S, 17, [51, 48, 571, 693]), (S, 18, [51, 48, 576, 822]), (S, 19, [51, 48, 570, 822])])
+NEW_FIGURE_ALTS = {FP + k: v for k, v in {'q4-areas': 'SEC marking-scheme steps and sketches for all three Question 4(a) areas: the solid stone external wall (two pages), the traditional cut roof and the original sliding sash windows.'}.items()}
 question_figures = []
-for key, (f, page, rect, solution) in FIGURES.items():
+for key, spec in FIGURES.items():
+    if construction_figures.is_composite(spec):  # every choice item's scheme panel, one solution figure
+        question_figures.append(construction_figures.entry(FP + key, spec, HERE / f'{FP}{key}.png'))
+        continue
+    f, page, rect, solution = spec
     with fitz.open(R / f) as pdf:
         px = pdf[page - 1].get_pixmap(matrix=fitz.Matrix(2, 2), clip=fitz.Rect(rect), alpha=False)
     path = HERE / f'{FP}{key}.png'
@@ -289,7 +298,7 @@ A4 = add('4', 'a', '(a)',
          [dict(id='areas', kind='anyN', verbatim='Steps involved in upgrading the thermal performance of each area selected', marks=40,
                contextNote='Any two of the three areas, each notes 8 and sketches 12 = 20, respecting the cottage’s character. ' + ' '.join(f'{a[2].capitalize()}: ' + a[3].removeprefix('Such as: ') for a in AREAS),
                group=dict(claimMax=2, perOption=20, options=AREA_HEADINGS))],
-         list(dict.fromkeys(n for a in AREAS for n in a[4])), list(dict.fromkeys(t for a in AREAS for t in a[5])), None,
+         list(dict.fromkeys(n for a in AREAS for n in a[4])), list(dict.fromkeys(t for a in AREAS for t in a[5])), 'q4-areas',
          'The union of the three printed areas: ' + ' '.join(a[7] for a in AREAS), B4, S4)
 B4b = add('4', 'b', '(b)',
           'Discuss the importance of any two of the following when restoring traditional heritage buildings: ' + '; '.join(p[1] for p in PRINCIPLES) + '.',
@@ -298,7 +307,7 @@ B4b = add('4', 'b', '(b)',
                 group=dict(claimMax=2, perOption=10, options=PRINCIPLE_HEADINGS))],
           list(dict.fromkeys(n for p in PRINCIPLES for n in p[3])), list(dict.fromkeys(t for p in PRINCIPLES for t in p[4])), None,
           'The union of the three printed principles: ' + ' '.join(p[5] for p in PRINCIPLES), B4, S4)
-compose('4', 'complete', ' — complete', [A4, B4b], None, B4, S4, parts(A4, B4b))
+compose('4', 'complete', ' — complete', [A4, B4b], 'q4-areas', B4, S4, parts(A4, B4b))
 
 # ---------------------------------------------------------------- Q5
 B5 = 'Scheme p47: (a) tabulation 3, external and internal surface resistances 3 + 3, seven material/cavity resistances 7 × 3 = 21, total resistance 3, U-value 3 = 36; (b) heat-loss formula 3, heating duration 3, kJ per year 3, kg of pellets 3, annual cost 3 = 15; (c) notes/discussion 3 + sketch 6 = 9. Complete 60.'
@@ -487,7 +496,7 @@ for t in tasks:
         whole.setdefault('10-alt' if t['alternative'] else t['questionNumber'], []).append(dict(id=c['id'], parts=[g['label'] for g in c['taskGroups']], marks=c['totalMarks']))
 out = dict(schemaVersion=1, subjectId='construction-studies', year=2026, level='higher', lang='ev', sitting='main', paperKey='single',
            fileid='LC029ALP000EV.pdf', component='theory', status='Q1–Q10 and alternative Q10 source-reviewed draft; integration pending.',
-           sourceHashes=HASHES, tasks=tasks, bindings=bindings, questionFigures=question_figures,
+           sourceHashes=HASHES, tasks=tasks, bindings=bindings, questionFigures=question_figures, newFigureAlts=NEW_FIGURE_ALTS,
            addedIds=[t['card']['id'] for t in tasks], selectionLedger=selection_ledger,
            questionRouteLedgers={q: dict(wholeRoutes=w) for q, w in whole.items()}, taxonomyGaps=[],
            questionsReviewed=[str(n) for n in range(1, 11)], unreviewedQuestions=[], alternativeQuestions=['10'])

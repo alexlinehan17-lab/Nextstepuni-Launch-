@@ -16,6 +16,7 @@ import fitz
 from PIL import Image, ImageChops
 
 import construction_corrections
+import construction_figures
 
 R = Path(__file__).resolve().parents[3]
 REVIEW = R / 'scripts/markbank/authored/construction-studies-2015-ordinary-reviewed.json'
@@ -99,6 +100,7 @@ FIGURES = {
     'q9-original': (P, 3, [38, 622, 580, 790], False), 'q9-joint': (S, 15, [50, 388, 560, 779], True),
     'q9-table-features': (S, 16, [375, 89, 538, 214], True), 'q9-finish': (S, 16, [408, 400, 546, 745], True),
 }
+FIGURES['q8-terms'] = construction_figures.composite([(S, 12, [51, 351, 544, 705]), (S, 13, [51, 44, 558, 701]), (S, 14, [51, 49, 572, 748]), (S, 15, [51, 49, 543, 350])])
 SOLUTION_FIGURE = {
     'q1-a': 'q1-roof-section', 'q1-b': 'q1-roof-section', 'q1-complete': 'q1-roof-section',
     'q2-a-cavity-fill': 'q2-cavity-fill', 'q2-a-external-insulation': 'q2-external-insulation', 'q2-a': 'q2-scheme',
@@ -109,6 +111,7 @@ SOLUTION_FIGURE = {
     'q6-a-hand': 'q6-hand-sign', 'q6-a-ear': 'q6-ear-sign', 'q6-a-eye': 'q6-eye-sign', 'q6-a': 'q6-signs', 'q6-complete': 'q6-signs',
     'q7-a': 'q7-water-butt', 'q7-complete': 'q7-water-butt',
     'q9-a': 'q9-joint', 'q9-b': 'q9-table-features', 'q9-c': 'q9-finish', 'q9-complete': 'q9-joint',
+    'q8': 'q8-terms',
 }
 # Pinned leaf topic decisions (composites inherit the ordered union).
 TOPICS = {
@@ -195,7 +198,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     registry = set(re.findall(r"id: '(cons-\d+-\d+)'", (R / 'curriculumRegistry.ts').read_text()))
     library_nodes = {n for nodes in crosswalk.values() for n in nodes}
     figures = {f['key'].removeprefix(FP): f for f in d['questionFigures']}
-    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 26
+    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 27
 
     for key, c in cards.items():
         q = key[1]
@@ -303,17 +306,9 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         assert whole and all(cards[k]['totalMarks'] == 50 for k in whole)
         assert {r['id'] for r in d['questionRouteLedgers'][q]['wholeRoutes']} == {PREFIX + k for k in whole}
 
-    for key, f in figures.items():
-        assert (f['source'], f['page'], f['rect'], f['solution']) == FIGURES[key] and f['visuallyInspected'] and f['renderScale'] == 2
-        path = Path(figure_dir) / f"{f['key']}.png"
-        assert hashlib.sha256(path.read_bytes()).hexdigest() == f['sha256'], key
-        if images:
-            with fitz.open(R / f['source']) as pdf:
-                px = pdf[f['page'] - 1].get_pixmap(matrix=fitz.Matrix(2, 2), clip=fitz.Rect(f['rect']), alpha=False)
-            a = Image.frombytes('RGB', (px.width, px.height), px.samples)
-            saved = Image.open(path).convert('RGB')
-            assert a.size == saved.size and ImageChops.difference(a, saved).getbbox() is None, key
-    assert len({f['sha256'] for f in d['questionFigures']}) == 26
+    for key, f in figures.items():  # pixel-exact: a single crop, or a composite of every choice item's scheme panel
+        construction_figures.check(f, FIGURES[key], figure_dir, images)
+    assert len({f['sha256'] for f in d['questionFigures']}) == 27
 
     if integrated:
         # Runtime input carries exactly these cards after the 607 prior cards, which are byte-for-byte unchanged.
@@ -328,7 +323,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     assert gaps == GAPS
     assert d['questionsReviewed'] == list('123456789') and d['unreviewedQuestions'] == []
     return dict(tasks=42, leafTasks=len(LEAF), wholeQuestions=sum(1 for k in cards if '-complete' in k or k == 'q8'),
-                q8AnyFiveOfNine=True, sourceFigures=26, sharedDrawingAllowances=2, paperComplete=True)
+                q8AnyFiveOfNine=True, sourceFigures=27, sharedDrawingAllowances=2, paperComplete=True)
 
 
 if __name__ == '__main__':

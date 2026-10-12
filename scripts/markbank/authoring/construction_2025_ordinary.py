@@ -19,6 +19,7 @@ import fitz
 from PIL import Image, ImageChops
 
 import construction_corrections
+import construction_figures
 
 R = Path(__file__).resolve().parents[3]
 REVIEW = R / 'scripts/markbank/authored/construction-studies-2025-ordinary-reviewed.json'
@@ -101,13 +102,14 @@ FIGURES = {
     'q6-access': (S, 10, [48, 540, 578, 795], True), 'q7-office-plan': (S, 11, [48, 290, 578, 790], True),
     'q9-modifications': (S, 16, [48, 243, 578, 535], True), 'q9-uses': (S, 16, [48, 547, 578, 790], True),
 }
+FIGURES['q8-terms'] = construction_figures.composite([(S, 13, [51, 58, 580, 754]), (S, 14, [51, 56, 566, 791]), (S, 15, [51, 57, 577, 780])])
 SOLUTION = {'q1-a': 'q1-scheme', 'q1-b': 'q1-section', 'q1-complete': 'q1-scheme', 'q2-b': 'q2-method', 'q2-c': 'q2-light',
             'q2-complete': 'q2-method', 'q3-a': 'q3-system', 'q3-b': 'q3-zoning', 'q3-complete': 'q3-system',
             'q4-a': 'q4-sites', 'q4-b': 'q4-site-a', 'q4-complete': 'q4-site-a', 'q5-a': 'q5-section',
             'q5-b': 'q5-glue-blocks', 'q5-complete': 'q5-section', **{f'q6-a-{p}': 'q6-signs' for p in PPE},
             'q6-a': 'q6-signs', 'q6-b': 'q6-risks', 'q6-c': 'q6-access', 'q6-complete': 'q6-signs',
             'q7-b': 'q7-office-plan', 'q7-complete': 'q7-office-plan',
-            'q9-b': 'q9-modifications', 'q9-c': 'q9-uses', 'q9-complete': 'q9-modifications'}
+            'q9-b': 'q9-modifications', 'q9-c': 'q9-uses', 'q9-complete': 'q9-modifications', 'q8': 'q8-terms'}
 TOPICS = {
     'q1-a': (['cons-1-5', 'cons-3-3', 'cons-3-4', 'cons-3-6', 'cons-6-2'], ['question-one-drawing-questions', 'foundations-floors-walls', 'windows-doors', 'heat-loss-insulation']),
     'q1-b': (['cons-3-4', 'cons-3-6'], ['foundations-floors-walls', 'windows-doors']),
@@ -181,7 +183,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     registry = set(re.findall(r"id: '(cons-\d+-\d+)'", (R / 'curriculumRegistry.ts').read_text()))
     library_nodes = {n for nodes in crosswalk.values() for n in nodes}
     figures = {f['key'].removeprefix(FP): f for f in d['questionFigures']}
-    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 25
+    assert set(figures) == set(FIGURES) and len(d['questionFigures']) == 26
 
     for key, c in cards.items():
         q = key[1]
@@ -256,17 +258,9 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
         whole = ['q8'] if q == '8' else [k for k in cards if k.startswith(f'q{q}-complete')]
         assert whole and {w['id'] for w in d['questionRouteLedgers'][q]['wholeRoutes']} == {PREFIX + k for k in whole}
 
-    for key, f in figures.items():
-        assert (f['source'], f['page'], f['rect'], f['solution']) == FIGURES[key] and f['visuallyInspected'] and f['renderScale'] == 2
-        path = Path(figure_dir) / f"{f['key']}.png"
-        assert hashlib.sha256(path.read_bytes()).hexdigest() == f['sha256'], key
-        if images:
-            with fitz.open(R / f['source']) as pdf:
-                px = pdf[f['page'] - 1].get_pixmap(matrix=fitz.Matrix(2, 2), clip=fitz.Rect(f['rect']), alpha=False)
-            a = Image.frombytes('RGB', (px.width, px.height), px.samples)
-            saved = Image.open(path).convert('RGB')
-            assert a.size == saved.size and ImageChops.difference(a, saved).getbbox() is None, key
-    assert len({f['sha256'] for f in d['questionFigures']}) == 25
+    for key, f in figures.items():  # pixel-exact: a single crop, or a composite of every choice item's scheme panel
+        construction_figures.check(f, FIGURES[key], figure_dir, images)
+    assert len({f['sha256'] for f in d['questionFigures']}) == 26
 
     # In-place corrections: same ID and concept ID, hash-linked to the pre-audit card they replace.
     legacy = {c['id']: c for c in json.loads((DRAFTS / 'prior-2025-ordinary-cards.json').read_text())}
@@ -302,7 +296,7 @@ def validate(d, images=True, figure_dir=FIGURE_DIR, integrated=True):
     assert gaps == GAPS
     assert d['questionsReviewed'] == list('123456789') and d['unreviewedQuestions'] == []
     return dict(tasks=35, addedTasks=14, correctedTasks=21, leafTasks=len(LEAF),
-                wholeQuestions=sum(1 for k in cards if '-complete' in k or k == 'q8'), q8AnyFiveOfNine=True, sourceFigures=25, paperComplete=True)
+                wholeQuestions=sum(1 for k in cards if '-complete' in k or k == 'q8'), q8AnyFiveOfNine=True, sourceFigures=26, paperComplete=True)
 
 
 if __name__ == '__main__':

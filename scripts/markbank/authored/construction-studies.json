@@ -24023,6 +24023,7 @@
     ],
     "questionFigureKey": "construction-studies-2025-HL-q10-original",
     "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-HL-q10-items",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 10",
@@ -43220,6 +43221,7 @@
     ],
     "questionFigureKey": "construction-studies-2025-OL-q8-original",
     "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-OL-q8-terms",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 8",
@@ -43507,6 +43509,7 @@
     ],
     "questionFigureKey": "construction-studies-2026-OL-q8-original",
     "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2026-OL-q8-terms",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 8",
@@ -43560,6 +43563,7 @@
     ],
     "questionFigureKey": "construction-studies-2015-OL-q8-original",
     "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2015-OL-q8-terms",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 8",
@@ -43607,6 +43611,7 @@
     ],
     "questionFigureKey": "construction-studies-2026-HL-q4-original",
     "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2026-HL-q4-areas",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 4",
@@ -43717,6 +43722,7 @@
     ],
     "questionFigureKey": "construction-studies-2026-HL-q4-original",
     "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2026-HL-q4-areas",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 4",
@@ -44165,6 +44171,7 @@
     ],
     "questionFigureKey": "construction-studies-2025-HL-q8-original",
     "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-HL-q8-locations",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 8",
@@ -44245,6 +44252,7 @@
     ],
     "questionFigureKey": "construction-studies-2025-HL-q8-original",
     "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2025-HL-q8-locations",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 8",
@@ -44421,7 +44429,7 @@
     ],
     "questionFigureKey": "construction-studies-2025-HL-q10-original",
     "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2025-HL-q10-orientation",
+    "figureKey": "construction-studies-2025-HL-q10-scheme",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 10",
@@ -44899,6 +44907,7 @@
     ],
     "questionFigureKey": "construction-studies-2015-HL-q4-original",
     "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2015-HL-q4-discussion",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 4",
@@ -45010,7 +45019,7 @@
     ],
     "questionFigureKey": "construction-studies-2015-HL-q4-original",
     "questionFigureIncludesPrompt": true,
-    "figureKey": "construction-studies-2015-HL-q4-roof-windows",
+    "figureKey": "construction-studies-2015-HL-q4-scheme",
     "sourceMaterial": {
       "kind": "source-illustration",
       "label": "ORIGINAL QUESTION 4",

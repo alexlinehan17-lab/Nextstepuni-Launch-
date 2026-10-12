@@ -18,6 +18,7 @@ earlier review's pixel-exact crops, reused unchanged.
 import copy
 import hashlib
 import json
+import sys
 import re
 from pathlib import Path
 
@@ -75,6 +76,16 @@ FIGURE_KEYS = ['q1-original', 'q1-scheme', 'q1-access-scheme', 'q2-original', 'q
                'q7-original', 'q7-roof-section', 'q8-original', 'q8-system', 'q8-collector', 'q8-locations', 'q8-scheme',
                'q9-original', 'q9-scheme', 'q10-original', 'q10-alternative', 'q10-scheme']
 question_figures = [copy.deepcopy(OLD_FIGURES[FP + k]) for k in FIGURE_KEYS]
+# A printed choice is one card, so its solution figure must carry every item's scheme drawings: Q4(a) had none
+# attached, and the complete Q4 shows the whole scheme for the question.
+sys.path.insert(0, str(R / 'scripts/markbank/authoring'))
+import construction_figures  # noqa: E402
+NEW_FIGURES = {'q4-discussion': construction_figures.composite([(S, 11, [51, 49, 563, 761]), (S, 12, [51, 50, 559, 278])]),
+               'q4-scheme': construction_figures.composite([(S, 11, [51, 49, 563, 761]), (S, 12, [51, 50, 559, 770]),
+                                                           (S, 13, [51, 50, 570, 778]), (S, 14, [51, 50, 574, 791])])}
+NEW_FIGURE_ALTS = {FP + 'q4-discussion': 'SEC marking-scheme notes and sketches for all three Question 4(a) items: respect for local character, reuse of materials and breathable structure.',
+                   FP + 'q4-scheme': 'SEC marking-scheme notes and sketches for the whole of Question 4: the three eco-refurbishment principles and the upgrading of the roof, sliding sash windows and suspended timber floor.'}
+question_figures += [construction_figures.entry(FP + k, spec, HERE / f'{FP}{k}.png') for k, spec in NEW_FIGURES.items()]
 
 QUESTIONS = {
     '1': dict(page=2, title='Accessible high-performance entrance', concept='accessible-entrance',
@@ -242,7 +253,7 @@ A4 = add('4', 'a', '(a)', T4A, [any_n('items', 'Discussion - eco-refurbishment -
     'Breathable structure: moisture moves gradually from the inside through the walls and roof and is not trapped, preventing surface and interstitial condensation; natural, hygroscopic insulation and finishes (lime, hemp, cork, wood fibreboard, sheep’s wool, lime renders and plasters) let it move; vapour barriers and vapour-resistant materials are not usually appropriate in older buildings, and layers should become more permeable from inside to outside. '
     'Reuse of materials: examine the whole house to see what can be reused; replace only the decayed portions of roof members (splice rafter ends, wall plate in the same timber); replace decayed fascia and soffit to the identical profile; lift, number and store floorboards and skirtings for reuse, replacing damaged boards with similar salvaged ones to keep the patina of age.',
     ITEMS4A)],
-    ['cons-1-1', 'cons-1-2', 'cons-6-6', 'cons-6-2'], ['conservation-restoration', 'condensation-air-tightness', 'heat-loss-insulation'], None,
+    ['cons-1-1', 'cons-1-2', 'cons-6-6', 'cons-6-2'], ['conservation-restoration', 'condensation-air-tightness', 'heat-loss-insulation'], 'q4-discussion',
     'The union of the three printed items: conservation of vernacular buildings (1.1) and their setting (1.2), with breathable fabric and condensation control (6.6) and insulation (6.2).', B4, S4)
 ITEMS4B = ['Roof', 'Sliding sash windows', 'Suspended timber floor']
 B4b = add('4', 'b', '(b)', T4B, [any_n('areas', 'Two areas for upgrading - roof, windows, floor', 2, 20,
@@ -254,7 +265,7 @@ B4b = add('4', 'b', '(b)', T4B, [any_n('areas', 'Two areas for upgrading - roof,
     ['cons-1-1', 'cons-3-8', 'cons-3-9', 'cons-3-5', 'cons-3-6', 'cons-4-2', 'cons-4-3', 'cons-6-2'],
     ['conservation-restoration', 'roofs', 'windows-light', 'floors', 'heat-loss-insulation'], 'q4-roof-windows',
     'The union of the three surveyed areas, all conservation work (1.1): the cut roof and its covering (3.8, 3.9), sash windows (3.5, 3.6), the suspended timber floor (4.2, 4.3) and their insulation (6.2).', B4, S4)
-compose('4', 'complete', ' — complete', [A4, B4b], 'q4-roof-windows', B4, S4, parts(('a', T4A), ('b', T4B)))
+compose('4', 'complete', ' — complete', [A4, B4b], 'q4-scheme', B4, S4, parts(('a', T4A), ('b', T4B)))
 
 # ---------------------------------------------------------------- Q5
 B5 = 'Scheme p36 (Ceist 5): (a) 10 points × 3 = 30 (1 mark for the U-value formula); (b) five 2-mark steps for each house = 20; (c) notes/annotations 5 + sketches 5 = 10. Complete 60.'
@@ -455,7 +466,7 @@ assert len(corrections) == 37 and len(tasks) == 48
 out = dict(schemaVersion=1, subjectId='construction-studies', year=2015, level='higher', lang='ev', sitting='main', paperKey='single',
            fileid='LC029ALP000EV.pdf', component='theory',
            status='2015 Higher main English THEORY: 48 source-reviewed tasks with lifted wording; every printed choice is one card (choice is not a route).',
-           sourceHashes=HASHES, tasks=tasks, bindings=bindings, questionFigures=question_figures,
+           sourceHashes=HASHES, tasks=tasks, bindings=bindings, questionFigures=question_figures, newFigureAlts=NEW_FIGURE_ALTS,
            addedIds=[t['card']['id'] for t in tasks if not t['correction']], corrections=corrections,
            selectionLedger=selection_ledger, questionRouteLedgers={q: dict(wholeRoutes=w) for q, w in whole.items()}, taxonomyGaps=[],
            questionsReviewed=[str(n) for n in range(1, 11)], unreviewedQuestions=[], alternativeQuestions=['10'], paperComplete=True,

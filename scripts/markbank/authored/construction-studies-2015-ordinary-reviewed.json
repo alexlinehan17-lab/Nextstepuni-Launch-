@@ -4146,6 +4146,7 @@
         ],
         "questionFigureKey": "construction-studies-2015-OL-q8-original",
         "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-OL-q8-terms",
         "sourceMaterial": {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 8",
@@ -4205,7 +4206,9 @@
       "requiredQuestionFigures": [
         "construction-studies-2015-OL-q8-original"
       ],
-      "requiredSolutionFigures": []
+      "requiredSolutionFigures": [
+        "construction-studies-2015-OL-q8-terms"
+      ]
     },
     {
       "questionNumber": "9",
@@ -5721,6 +5724,56 @@
       "solution": true,
       "sha256": "720bbe624981a1cebee1d0760d8b565f2b498b2aaaaba6caa574532c279dbe3c",
       "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-OL-q8-terms",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 12,
+          "rect": [
+            51,
+            351,
+            544,
+            705
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 13,
+          "rect": [
+            51,
+            44,
+            558,
+            701
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 14,
+          "rect": [
+            51,
+            49,
+            572,
+            748
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 15,
+          "rect": [
+            51,
+            49,
+            543,
+            350
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "8818eaaa6ad8c89ca5e132aa46ba3bc23b2222a7576c062a7424aecfd34aeeb7",
+      "visuallyInspected": true
     }
   ],
   "addedIds": [
@@ -6774,5 +6827,13 @@
       "construction-studies-2015-OL-q8-solar-panel",
       "construction-studies-2015-OL-q8-triple-glazing"
     ]
-  }
+  },
+  "revisions": [
+    {
+      "cardId": "cons-2015-ol-q8",
+      "priorSha256": "89a9f37a7f4467ffe818f6a58855d1edd5f0fb6a253247f716e476049d6bcd15",
+      "correctedSha256": "22bed4f6964b9010c4a7c3d91d4708e0370b829e9846b36548ec0af632e2d5d2",
+      "reason": "Solution figure restored: a printed choice is one card, so its solution figure is now one composite of every item's scheme notes and sketches, shown only after reveal (the per-item crops left with the withdrawn per-item cards). Rows, tariff and topics unchanged."
+    }
+  ]
 }
