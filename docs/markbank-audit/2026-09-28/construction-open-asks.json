@@ -1,24 +1,24 @@
 {
   "subjectId": "construction-studies",
-  "measuredAt": "2026-10-12T15:35:08.668454+00:00",
+  "measuredAt": "2026-10-12T15:40:45.700534+00:00",
   "command": "python3 scripts/markbank/authoring/reconcile.py construction-studies --baseline write",
   "baseline": {
-    "cards": 806,
-    "contentHash": "5ccb87cb015808d7",
-    "coveragePct": 67.9,
-    "covered": 572,
+    "cards": 828,
+    "contentHash": "7508ba6f6ffacf59",
+    "coveragePct": 68.7,
+    "covered": 579,
     "excluded": 0,
     "leaves": 843,
-    "open": 271,
+    "open": 264,
     "orphans": 0,
     "papers": {
       "count": 63,
       "hash": "7a382fe186c759ea"
     },
-    "refsHash": "3eae1826d121965f"
+    "refsHash": "0ceb18dfed591473"
   },
-  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2015 Higher, 2015 Ordinary, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
-  "openTotal": 271,
+  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2015 Higher, 2015 Ordinary, 2020 Higher, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
+  "openTotal": 264,
   "papers": [
     {
       "year": 2010,
@@ -445,16 +445,8 @@
       "year": 2020,
       "level": "hl",
       "leaves": 29,
-      "covered": 22,
-      "open": [
-        "Q10-alt(a)",
-        "Q10-alt(b)",
-        "Q1(a)",
-        "Q10(b)",
-        "Q3(b)",
-        "Q5(c)",
-        "Q8(b)"
-      ]
+      "covered": 29,
+      "open": []
     },
     {
       "year": 2020,
